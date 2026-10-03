@@ -97,7 +97,9 @@ A: \(x^2 = 9\), so \(x = 3\) or \(x = -3\).
 > Electrons carry −1.60 × 10⁻¹⁹ C; protons are positive and neutrons are neutral.
 :::
 ```
-Marks: M = method, A = accuracy (depends on M), B = independent mark. Tables: Markdown pipes, short cells.
+Marks: M = method, A = accuracy (depends on M), B = independent mark. Put each mark at the end of the line
+(or right after the display maths) that earns it: in worked examples and answers the page moves marks into
+an examiner's margin level with that line, and the example's header shows the total. Tables: Markdown pipes, short cells.
 Bold a key word the first time if it has no `:::def` card.
 
 ## Figures, cheapest first

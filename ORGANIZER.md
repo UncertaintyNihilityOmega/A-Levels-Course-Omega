@@ -12,12 +12,12 @@ Organizer session instead, with STATUS.md and `node engine/status.js`.
 
 ## Phases (REORG-PLAN.md)
 - O1 restructure + engine: done 2026-10-03 (commits 433d97a..HEAD).
-- O2 redesign: load the frontend-design skill; redesign `engine/shell.html`, `style.css`, `app.js` and the widget
-  styling to an Artifact-quality look (typography, navigation, home, chapter page, every block type, widgets);
-  keep light/dark, phone layout, search and progress. Markdown stays unchanged (classes only). Show the user
-  Home, Quadratics and a widget in the browser pane; iterate until approved. Also: subset or self-host the
-  web fonts so the site is fully offline, and redo the home page's subject cards (Economics and Accounting
-  are now separate). Then freeze, `node engine/sync.js`, commit.
+- O2 redesign: done and approved 2026-10-03; the design is FROZEN (change it only if the user asks).
+  "The marked script": blue-black ink on white, red pen for marks/mistakes, highlighter for exam tips,
+  mark-scheme green for progress; dark mode is a chalkboard. Literata (reading) + Atkinson Hyperlegible Next
+  (UI), subset woff2 in `engine/fonts/` embedded by `assets.js` (fully offline). Marks are grouped by lib.js
+  and floated into an examiner's margin in `.eg-b`/`.ta-b`; worked examples are numbered with mark totals.
+  Home's subject list is built by app.js from course data (`c:1` in DATA.subjects).
 - O3 hand-off: full verification, then give the user the folder map, the model table and the first prompt
   (Math Specialist LEAD).
 
