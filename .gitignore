@@ -1,5 +1,8 @@
 node_modules/
 **/preview/
 **/scratch/
-dist/test.html
 *.log
+# build output (rebuild with: node engine/build.js)
+site/
+# synced copies of engine/kit-src (rebuild with: node engine/sync.js)
+courses/*/kit/

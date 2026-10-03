@@ -1,4 +1,3 @@
-@group Practice
 @chapter practice.quiz
 @title Practice quizzes
 @level tool

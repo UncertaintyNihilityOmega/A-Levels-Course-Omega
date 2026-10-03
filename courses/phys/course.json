@@ -1,0 +1,182 @@
+{
+  "id": "phys",
+  "title": "Physics",
+  "short": "Physics",
+  "code": "9702",
+  "board": "Cambridge International AS & A Level Physics (9702)",
+  "syllabus": "https://www.cambridgeinternational.org/Images/664565-2025-2027-syllabus.pdf",
+  "desc": "From measurement to quantum physics and cosmology",
+  "lead": true,
+  "chapters": [
+    {
+      "id": "phys.overview",
+      "title": "Physics: the course map",
+      "level": "guide",
+      "group": "Start here"
+    },
+    {
+      "id": "phys.f.basics",
+      "title": "Physics from zero",
+      "level": "pre",
+      "group": "Start here"
+    },
+    {
+      "id": "phys.units",
+      "title": "Physical quantities, units and uncertainty",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "phys.kinematics",
+      "title": "Kinematics",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "phys.dynamics",
+      "title": "Dynamics and momentum",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "phys.forces",
+      "title": "Forces, density and pressure",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "phys.energy",
+      "title": "Work, energy and power",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "phys.solids",
+      "title": "Deformation of solids",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "phys.waves",
+      "title": "Waves",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "phys.superposition",
+      "title": "Superposition",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "phys.electricity",
+      "title": "Electricity",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "phys.dc",
+      "title": "D.C. circuits",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "phys.particles",
+      "title": "Particle physics",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "phys.circular",
+      "title": "Motion in a circle",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "phys.gravity",
+      "title": "Gravitational fields",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "phys.temperature",
+      "title": "Temperature and thermal physics",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "phys.gases",
+      "title": "Ideal gases",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "phys.thermo",
+      "title": "Thermodynamics",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "phys.oscillations",
+      "title": "Oscillations",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "phys.efields",
+      "title": "Electric fields",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "phys.capacitance",
+      "title": "Capacitance",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "phys.magnetic",
+      "title": "Magnetic fields and electromagnetic induction",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "phys.ac",
+      "title": "Alternating currents",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "phys.quantum",
+      "title": "Quantum physics",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "phys.nuclear",
+      "title": "Nuclear physics",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "phys.medical",
+      "title": "Medical physics",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "phys.astro",
+      "title": "Astronomy and cosmology",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "phys.practical",
+      "title": "Practical skills and data analysis",
+      "level": "guide",
+      "group": "Practical physics"
+    }
+  ],
+  "aliases": {},
+  "packages": []
+}

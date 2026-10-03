@@ -1,0 +1,260 @@
+{
+  "id": "math",
+  "title": "Mathematics",
+  "short": "Maths",
+  "code": "9709",
+  "board": "Cambridge International AS & A Level Mathematics (9709); Further Mathematics (9231) in one tour chapter",
+  "syllabus": "https://www.cambridgeinternational.org/Images/697427-2026-2027-syllabus.pdf",
+  "desc": "Pure, Statistics and Mechanics from counting to calculus",
+  "lead": true,
+  "chapters": [
+    {
+      "id": "math.overview",
+      "title": "Mathematics: the course map",
+      "level": "guide",
+      "group": "Before you start"
+    },
+    {
+      "id": "math.f.numbers",
+      "title": "Numbers, fractions and percentages",
+      "level": "pre",
+      "group": "Before you start"
+    },
+    {
+      "id": "math.f.algebra",
+      "title": "Algebra from scratch",
+      "level": "pre",
+      "group": "Before you start"
+    },
+    {
+      "id": "math.f.powers",
+      "title": "Powers, roots, surds and standard form",
+      "level": "pre",
+      "group": "Before you start"
+    },
+    {
+      "id": "math.f.graphs",
+      "title": "Coordinates and straight lines",
+      "level": "pre",
+      "group": "Before you start"
+    },
+    {
+      "id": "math.f.geometry",
+      "title": "Geometry and basic trigonometry",
+      "level": "pre",
+      "group": "Before you start"
+    },
+    {
+      "id": "math.p1.quadratics",
+      "title": "Quadratics",
+      "level": "as",
+      "group": "Pure Mathematics 1"
+    },
+    {
+      "id": "math.p1.functions",
+      "title": "Functions",
+      "level": "as",
+      "group": "Pure Mathematics 1"
+    },
+    {
+      "id": "math.p1.coord",
+      "title": "Coordinate geometry",
+      "level": "as",
+      "group": "Pure Mathematics 1"
+    },
+    {
+      "id": "math.p1.circular",
+      "title": "Circular measure",
+      "level": "as",
+      "group": "Pure Mathematics 1"
+    },
+    {
+      "id": "math.p1.trig",
+      "title": "Trigonometry",
+      "level": "as",
+      "group": "Pure Mathematics 1"
+    },
+    {
+      "id": "math.p1.series",
+      "title": "Series",
+      "level": "as",
+      "group": "Pure Mathematics 1"
+    },
+    {
+      "id": "math.p1.diff",
+      "title": "Differentiation",
+      "level": "as",
+      "group": "Pure Mathematics 1"
+    },
+    {
+      "id": "math.p1.integ",
+      "title": "Integration",
+      "level": "as",
+      "group": "Pure Mathematics 1"
+    },
+    {
+      "id": "math.p3.algebra",
+      "title": "Algebra: modulus, polynomials and partial fractions",
+      "level": "as a2",
+      "group": "Pure Mathematics 2 and 3"
+    },
+    {
+      "id": "math.p3.logs",
+      "title": "Logarithms and exponentials",
+      "level": "as",
+      "group": "Pure Mathematics 2 and 3"
+    },
+    {
+      "id": "math.p3.trig",
+      "title": "Further trigonometry",
+      "level": "as",
+      "group": "Pure Mathematics 2 and 3"
+    },
+    {
+      "id": "math.p3.diff",
+      "title": "Further differentiation",
+      "level": "as",
+      "group": "Pure Mathematics 2 and 3"
+    },
+    {
+      "id": "math.p3.integ",
+      "title": "Further integration",
+      "level": "a2",
+      "group": "Pure Mathematics 2 and 3"
+    },
+    {
+      "id": "math.p3.numerical",
+      "title": "Numerical solution of equations",
+      "level": "as",
+      "group": "Pure Mathematics 2 and 3"
+    },
+    {
+      "id": "math.p3.vectors",
+      "title": "Vectors",
+      "level": "a2",
+      "group": "Pure Mathematics 2 and 3"
+    },
+    {
+      "id": "math.p3.diffeq",
+      "title": "Differential equations",
+      "level": "a2",
+      "group": "Pure Mathematics 2 and 3"
+    },
+    {
+      "id": "math.p3.complex",
+      "title": "Complex numbers",
+      "level": "a2",
+      "group": "Pure Mathematics 2 and 3"
+    },
+    {
+      "id": "math.s1.data",
+      "title": "Representing and summarising data",
+      "level": "as",
+      "group": "Probability and Statistics"
+    },
+    {
+      "id": "math.s1.perms",
+      "title": "Permutations and combinations",
+      "level": "as",
+      "group": "Probability and Statistics"
+    },
+    {
+      "id": "math.s1.prob",
+      "title": "Probability",
+      "level": "as",
+      "group": "Probability and Statistics"
+    },
+    {
+      "id": "math.s1.drv",
+      "title": "Discrete random variables: binomial and geometric",
+      "level": "as",
+      "group": "Probability and Statistics"
+    },
+    {
+      "id": "math.s1.normal",
+      "title": "The normal distribution",
+      "level": "as",
+      "group": "Probability and Statistics"
+    },
+    {
+      "id": "math.s.regression",
+      "title": "Correlation and regression (UK boards)",
+      "level": "as",
+      "group": "Probability and Statistics"
+    },
+    {
+      "id": "math.s2.poisson",
+      "title": "The Poisson distribution",
+      "level": "a2",
+      "group": "Probability and Statistics"
+    },
+    {
+      "id": "math.s2.linear",
+      "title": "Linear combinations of random variables",
+      "level": "a2",
+      "group": "Probability and Statistics"
+    },
+    {
+      "id": "math.s2.crv",
+      "title": "Continuous random variables",
+      "level": "a2",
+      "group": "Probability and Statistics"
+    },
+    {
+      "id": "math.s2.sampling",
+      "title": "Sampling and estimation",
+      "level": "a2",
+      "group": "Probability and Statistics"
+    },
+    {
+      "id": "math.s2.hypothesis",
+      "title": "Hypothesis testing",
+      "level": "a2",
+      "group": "Probability and Statistics"
+    },
+    {
+      "id": "math.m.forces",
+      "title": "Forces and equilibrium",
+      "level": "as",
+      "group": "Mechanics"
+    },
+    {
+      "id": "math.m.kinematics",
+      "title": "Kinematics: describing motion",
+      "level": "as",
+      "group": "Mechanics"
+    },
+    {
+      "id": "math.m.newton",
+      "title": "Newton's laws and connected particles",
+      "level": "as",
+      "group": "Mechanics"
+    },
+    {
+      "id": "math.m.momentum",
+      "title": "Momentum and collisions",
+      "level": "as",
+      "group": "Mechanics"
+    },
+    {
+      "id": "math.m.energy",
+      "title": "Work, energy and power",
+      "level": "as",
+      "group": "Mechanics"
+    },
+    {
+      "id": "math.m.projectiles",
+      "title": "Projectiles and moments (UK boards)",
+      "level": "a2",
+      "group": "Mechanics"
+    },
+    {
+      "id": "math.further",
+      "title": "Further Mathematics: a guided tour",
+      "level": "ext",
+      "group": "Further Mathematics"
+    }
+  ],
+  "aliases": {},
+  "packages": []
+}

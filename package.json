@@ -12,5 +12,8 @@
   "dependencies": {
     "katex": "^0.16.47",
     "markdown-it": "^14.3.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
   }
 }

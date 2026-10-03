@@ -1,4 +1,3 @@
-@group Mechanics
 @chapter math.m.forces
 @title Forces and equilibrium
 @level as

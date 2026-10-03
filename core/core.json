@@ -1,0 +1,271 @@
+{
+  "note": "Organizer-owned sections (core/) and the order of everything in the sidebar. Course chapter lists live in courses/<c>/course.json.",
+  "order": [
+    "start",
+    "road",
+    "math",
+    "phys",
+    "chem",
+    "bio",
+    "eng",
+    "bus",
+    "econ",
+    "acc",
+    "other",
+    "tools",
+    "practice"
+  ],
+  "sections": [
+    {
+      "id": "start",
+      "title": "Start Here",
+      "short": "Start",
+      "code": "GUIDE",
+      "desc": "What A Levels are, how they work, and how to choose subjects",
+      "chapters": [
+        {
+          "id": "home",
+          "title": "Home",
+          "level": "start",
+          "group": "Welcome"
+        },
+        {
+          "id": "start.what",
+          "title": "What are A Levels?",
+          "level": "start",
+          "group": "Welcome"
+        },
+        {
+          "id": "start.boards",
+          "title": "Exam boards and how the exams work",
+          "level": "start",
+          "group": "Welcome"
+        },
+        {
+          "id": "start.grades",
+          "title": "Grades, marks and UCAS points",
+          "level": "start",
+          "group": "Welcome"
+        },
+        {
+          "id": "start.choose",
+          "title": "Choosing your subjects",
+          "level": "start",
+          "group": "Welcome"
+        },
+        {
+          "id": "start.howto",
+          "title": "How to use this guide",
+          "level": "start",
+          "group": "Welcome"
+        }
+      ]
+    },
+    {
+      "id": "road",
+      "title": "Preparation Roadmap",
+      "short": "Roadmap",
+      "code": "ROAD",
+      "desc": "A step-by-step road from day one to results day",
+      "chapters": [
+        {
+          "id": "road.overview",
+          "title": "The preparation road at a glance",
+          "level": "guide",
+          "group": "The road to exam day"
+        },
+        {
+          "id": "road.planner",
+          "title": "Build your personal study plan",
+          "level": "tool",
+          "group": "The road to exam day"
+        },
+        {
+          "id": "road.foundations",
+          "title": "Phase 1: Fix your foundations",
+          "level": "guide",
+          "group": "The road to exam day"
+        },
+        {
+          "id": "road.learn",
+          "title": "Phase 2: Learn the content",
+          "level": "guide",
+          "group": "The road to exam day"
+        },
+        {
+          "id": "road.practice",
+          "title": "Phase 3: Practise and test yourself",
+          "level": "guide",
+          "group": "The road to exam day"
+        },
+        {
+          "id": "road.pastpapers",
+          "title": "Phase 4: Past papers and mark schemes",
+          "level": "guide",
+          "group": "The road to exam day"
+        },
+        {
+          "id": "road.final",
+          "title": "Phase 5: Final revision",
+          "level": "guide",
+          "group": "The road to exam day"
+        },
+        {
+          "id": "road.examday",
+          "title": "Phase 6: Exam day, results and resits",
+          "level": "guide",
+          "group": "The road to exam day"
+        },
+        {
+          "id": "road.methods",
+          "title": "Study methods that actually work",
+          "level": "guide",
+          "group": "Skills that raise grades"
+        },
+        {
+          "id": "road.technique",
+          "title": "Exam technique",
+          "level": "guide",
+          "group": "Skills that raise grades"
+        },
+        {
+          "id": "road.commands",
+          "title": "Command words decoded",
+          "level": "ref",
+          "group": "Skills that raise grades"
+        },
+        {
+          "id": "road.wellbeing",
+          "title": "Motivation, sleep and stress",
+          "level": "guide",
+          "group": "Skills that raise grades"
+        },
+        {
+          "id": "road.resources",
+          "title": "The best resources by subject",
+          "level": "ref",
+          "group": "Skills that raise grades"
+        },
+        {
+          "id": "road.private",
+          "title": "Studying as a private candidate",
+          "level": "guide",
+          "group": "Beyond the exams"
+        },
+        {
+          "id": "road.university",
+          "title": "University applications and admissions tests",
+          "level": "guide",
+          "group": "Beyond the exams"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Toolbox",
+      "short": "Toolbox",
+      "code": "TOOLS",
+      "desc": "Formula sheets, calculators, the periodic table and a glossary",
+      "chapters": [
+        {
+          "id": "tools.grapher",
+          "title": "Graph plotter",
+          "level": "tool",
+          "group": "Interactive tools"
+        },
+        {
+          "id": "tools.periodic",
+          "title": "Periodic table",
+          "level": "tool",
+          "group": "Interactive tools"
+        },
+        {
+          "id": "tools.calc",
+          "title": "Calculators",
+          "level": "tool",
+          "group": "Interactive tools"
+        },
+        {
+          "id": "tools.glossary",
+          "title": "Glossary",
+          "level": "tool",
+          "group": "Interactive tools"
+        },
+        {
+          "id": "tools.f.math",
+          "title": "Maths formula sheet",
+          "level": "ref",
+          "group": "Formula sheets"
+        },
+        {
+          "id": "tools.f.phys",
+          "title": "Physics formula and data sheet",
+          "level": "ref",
+          "group": "Formula sheets"
+        },
+        {
+          "id": "tools.f.chem",
+          "title": "Chemistry data and key equations",
+          "level": "ref",
+          "group": "Formula sheets"
+        },
+        {
+          "id": "tools.f.bio",
+          "title": "Biology key equations and statistics",
+          "level": "ref",
+          "group": "Formula sheets"
+        },
+        {
+          "id": "tools.f.eng",
+          "title": "Engineering formula sheet",
+          "level": "ref",
+          "group": "Formula sheets"
+        },
+        {
+          "id": "tools.f.bus",
+          "title": "Business, economics and accounting formulas",
+          "level": "ref",
+          "group": "Formula sheets"
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "title": "Practice",
+      "short": "Practice",
+      "code": "QUIZ",
+      "desc": "Mixed quizzes across every subject",
+      "chapters": [
+        {
+          "id": "practice.quiz",
+          "title": "Practice quizzes",
+          "level": "tool",
+          "group": "Practice"
+        }
+      ]
+    }
+  ],
+  "formulaSheets": {
+    "tools.f.math": [
+      "math"
+    ],
+    "tools.f.phys": [
+      "phys"
+    ],
+    "tools.f.chem": [
+      "chem"
+    ],
+    "tools.f.bio": [
+      "bio"
+    ],
+    "tools.f.eng": [
+      "eng"
+    ],
+    "tools.f.bus": [
+      "bus",
+      "econ",
+      "acc"
+    ]
+  },
+  "aliases": {}
+}

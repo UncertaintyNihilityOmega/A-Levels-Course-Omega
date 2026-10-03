@@ -1,0 +1,158 @@
+{
+  "id": "bio",
+  "title": "Biology",
+  "short": "Biology",
+  "code": "9700",
+  "board": "Cambridge International AS & A Level Biology (9700)",
+  "syllabus": "https://www.cambridgeinternational.org/Images/664560-2025-2027-syllabus.pdf",
+  "desc": "From molecules and cells to ecosystems and evolution",
+  "lead": true,
+  "chapters": [
+    {
+      "id": "bio.overview",
+      "title": "Biology: the course map",
+      "level": "guide",
+      "group": "Start here"
+    },
+    {
+      "id": "bio.f.basics",
+      "title": "Biology from zero",
+      "level": "pre",
+      "group": "Start here"
+    },
+    {
+      "id": "bio.cells",
+      "title": "Cell structure",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bio.molecules",
+      "title": "Biological molecules",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bio.enzymes",
+      "title": "Enzymes",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bio.membranes",
+      "title": "Cell membranes and transport",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bio.mitosis",
+      "title": "The mitotic cell cycle",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bio.dna",
+      "title": "Nucleic acids and protein synthesis",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bio.planttransport",
+      "title": "Transport in plants",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bio.mammaltransport",
+      "title": "Transport in mammals",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bio.gasexchange",
+      "title": "Gas exchange",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bio.disease",
+      "title": "Infectious diseases",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bio.immunity",
+      "title": "Immunity",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bio.respiration",
+      "title": "Energy and respiration",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bio.photosynthesis",
+      "title": "Photosynthesis",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bio.homeostasis",
+      "title": "Homeostasis",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bio.control",
+      "title": "Control and coordination",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bio.inheritance",
+      "title": "Inheritance",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bio.evolution",
+      "title": "Selection and evolution",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bio.classification",
+      "title": "Classification, biodiversity and conservation",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bio.genetech",
+      "title": "Genetic technology",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bio.ecology",
+      "title": "Ecosystems and nutrient cycles (UK boards)",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bio.stats",
+      "title": "Statistics for biologists",
+      "level": "as a2",
+      "group": "Skills"
+    },
+    {
+      "id": "bio.practical",
+      "title": "Practical skills: microscopy, experiments and planning",
+      "level": "guide",
+      "group": "Skills"
+    }
+  ],
+  "aliases": {},
+  "packages": []
+}

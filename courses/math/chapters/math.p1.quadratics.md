@@ -1,4 +1,3 @@
-@group Pure Mathematics 1
 @chapter math.p1.quadratics
 @title Quadratics
 @level as

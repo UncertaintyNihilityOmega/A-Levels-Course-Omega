@@ -1,0 +1,50 @@
+{
+  "id": "acc",
+  "title": "Accounting",
+  "short": "Accounting",
+  "code": "9706",
+  "board": "Cambridge International AS & A Level Accounting (9706)",
+  "syllabus": "https://www.cambridgeinternational.org/Images/697417-2026-2028-syllabus.pdf",
+  "desc": "Bookkeeping, financial statements and the numbers behind every business",
+  "lead": true,
+  "chapters": [
+    {
+      "id": "acc.overview",
+      "title": "Accounting: the course map",
+      "level": "guide",
+      "group": "Accounting"
+    },
+    {
+      "id": "acc.basics",
+      "title": "Double-entry bookkeeping",
+      "level": "as",
+      "group": "Accounting"
+    },
+    {
+      "id": "acc.statements",
+      "title": "Preparing financial statements",
+      "level": "as a2",
+      "group": "Accounting"
+    },
+    {
+      "id": "acc.control",
+      "title": "Reconciliations, control accounts and errors",
+      "level": "as",
+      "group": "Accounting"
+    },
+    {
+      "id": "acc.analysis",
+      "title": "Analysing and interpreting accounts",
+      "level": "as a2",
+      "group": "Accounting"
+    },
+    {
+      "id": "acc.costing",
+      "title": "Cost and management accounting",
+      "level": "as a2",
+      "group": "Accounting"
+    }
+  ],
+  "aliases": {},
+  "packages": []
+}

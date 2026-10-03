@@ -1,4 +1,3 @@
-@group Welcome
 @chapter home
 @title Home
 @level start

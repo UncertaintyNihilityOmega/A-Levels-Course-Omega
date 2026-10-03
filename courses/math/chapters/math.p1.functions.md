@@ -1,4 +1,3 @@
-@group Pure Mathematics 1
 @chapter math.p1.functions
 @title Functions
 @level as

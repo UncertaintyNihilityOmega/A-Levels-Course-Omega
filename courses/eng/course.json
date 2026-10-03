@@ -1,0 +1,98 @@
+{
+  "id": "eng",
+  "title": "Engineering",
+  "short": "Engineering",
+  "code": "ENG",
+  "board": "No Cambridge Engineering A Level: built on A Level Maths and Physics; OCR D&T Design Engineering H404, Eduqas Electronics, BTEC/T Levels as routes",
+  "syllabus": "",
+  "desc": "How Maths and Physics become bridges, engines and circuits",
+  "lead": true,
+  "chapters": [
+    {
+      "id": "eng.overview",
+      "title": "Engineering: routes and course map",
+      "level": "guide",
+      "group": "Engineering at A Level"
+    },
+    {
+      "id": "eng.what",
+      "title": "What engineers actually do",
+      "level": "pre",
+      "group": "Engineering at A Level"
+    },
+    {
+      "id": "eng.maths",
+      "title": "The engineer's maths toolkit",
+      "level": "as",
+      "group": "Engineering foundations"
+    },
+    {
+      "id": "eng.statics",
+      "title": "Statics: forces, moments and structures",
+      "level": "as",
+      "group": "Engineering foundations"
+    },
+    {
+      "id": "eng.materials",
+      "title": "Materials and their properties",
+      "level": "as",
+      "group": "Engineering foundations"
+    },
+    {
+      "id": "eng.mechanics",
+      "title": "Stress, beams and safety factors",
+      "level": "a2",
+      "group": "Engineering foundations"
+    },
+    {
+      "id": "eng.dynamics",
+      "title": "Dynamics and machines",
+      "level": "as",
+      "group": "Engineering foundations"
+    },
+    {
+      "id": "eng.fluids",
+      "title": "Fluid mechanics",
+      "level": "a2",
+      "group": "Engineering foundations"
+    },
+    {
+      "id": "eng.thermo",
+      "title": "Thermodynamics and energy systems",
+      "level": "a2",
+      "group": "Engineering foundations"
+    },
+    {
+      "id": "eng.electrical",
+      "title": "Electrical engineering",
+      "level": "as",
+      "group": "Engineering foundations"
+    },
+    {
+      "id": "eng.electronics",
+      "title": "Electronics and digital systems",
+      "level": "as",
+      "group": "Engineering foundations"
+    },
+    {
+      "id": "eng.control",
+      "title": "Control systems",
+      "level": "a2",
+      "group": "Engineering foundations"
+    },
+    {
+      "id": "eng.design",
+      "title": "Design, drawing and manufacturing",
+      "level": "as",
+      "group": "Engineering foundations"
+    },
+    {
+      "id": "eng.project",
+      "title": "Projects, competitions and your next steps",
+      "level": "guide",
+      "group": "Make it real"
+    }
+  ],
+  "aliases": {},
+  "packages": []
+}

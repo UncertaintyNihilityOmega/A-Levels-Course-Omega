@@ -1,0 +1,206 @@
+{
+  "id": "chem",
+  "title": "Chemistry",
+  "short": "Chemistry",
+  "code": "9701",
+  "board": "Cambridge International AS & A Level Chemistry (9701)",
+  "syllabus": "https://www.cambridgeinternational.org/Images/664563-2025-2027-syllabus.pdf",
+  "desc": "Atoms, reactions and the chemistry of carbon",
+  "lead": true,
+  "chapters": [
+    {
+      "id": "chem.overview",
+      "title": "Chemistry: the course map",
+      "level": "guide",
+      "group": "Start here"
+    },
+    {
+      "id": "chem.f.basics",
+      "title": "Chemistry from zero",
+      "level": "pre",
+      "group": "Start here"
+    },
+    {
+      "id": "chem.atoms",
+      "title": "Atomic structure",
+      "level": "as",
+      "group": "Physical chemistry"
+    },
+    {
+      "id": "chem.moles",
+      "title": "Moles and stoichiometry",
+      "level": "as",
+      "group": "Physical chemistry"
+    },
+    {
+      "id": "chem.bonding",
+      "title": "Chemical bonding",
+      "level": "as",
+      "group": "Physical chemistry"
+    },
+    {
+      "id": "chem.states",
+      "title": "States of matter",
+      "level": "as",
+      "group": "Physical chemistry"
+    },
+    {
+      "id": "chem.energetics",
+      "title": "Chemical energetics",
+      "level": "as",
+      "group": "Physical chemistry"
+    },
+    {
+      "id": "chem.redox",
+      "title": "Redox and oxidation numbers",
+      "level": "as",
+      "group": "Physical chemistry"
+    },
+    {
+      "id": "chem.equilibria",
+      "title": "Equilibria",
+      "level": "as",
+      "group": "Physical chemistry"
+    },
+    {
+      "id": "chem.kinetics",
+      "title": "Reaction kinetics",
+      "level": "as",
+      "group": "Physical chemistry"
+    },
+    {
+      "id": "chem.lattice",
+      "title": "Lattice energy and Born–Haber cycles",
+      "level": "a2",
+      "group": "Physical chemistry"
+    },
+    {
+      "id": "chem.entropy",
+      "title": "Entropy and Gibbs free energy",
+      "level": "a2",
+      "group": "Physical chemistry"
+    },
+    {
+      "id": "chem.electrochem",
+      "title": "Electrochemistry",
+      "level": "a2",
+      "group": "Physical chemistry"
+    },
+    {
+      "id": "chem.acids2",
+      "title": "Acids, bases, buffers and solubility",
+      "level": "a2",
+      "group": "Physical chemistry"
+    },
+    {
+      "id": "chem.rates2",
+      "title": "Rate equations and mechanisms",
+      "level": "a2",
+      "group": "Physical chemistry"
+    },
+    {
+      "id": "chem.periodicity",
+      "title": "Periodicity: Period 3",
+      "level": "as",
+      "group": "Inorganic chemistry"
+    },
+    {
+      "id": "chem.group2",
+      "title": "Group 2",
+      "level": "as",
+      "group": "Inorganic chemistry"
+    },
+    {
+      "id": "chem.group17",
+      "title": "Group 17: the halogens",
+      "level": "as",
+      "group": "Inorganic chemistry"
+    },
+    {
+      "id": "chem.nitrogen",
+      "title": "Nitrogen and sulfur",
+      "level": "as",
+      "group": "Inorganic chemistry"
+    },
+    {
+      "id": "chem.transition",
+      "title": "Transition elements",
+      "level": "a2",
+      "group": "Inorganic chemistry"
+    },
+    {
+      "id": "chem.org.intro",
+      "title": "Introduction to organic chemistry",
+      "level": "as",
+      "group": "Organic chemistry"
+    },
+    {
+      "id": "chem.org.hydrocarbons",
+      "title": "Hydrocarbons: alkanes and alkenes",
+      "level": "as",
+      "group": "Organic chemistry"
+    },
+    {
+      "id": "chem.org.halogen",
+      "title": "Halogenoalkanes",
+      "level": "as",
+      "group": "Organic chemistry"
+    },
+    {
+      "id": "chem.org.alcohols",
+      "title": "Alcohols and phenol",
+      "level": "as a2",
+      "group": "Organic chemistry"
+    },
+    {
+      "id": "chem.org.carbonyl",
+      "title": "Aldehydes and ketones",
+      "level": "as",
+      "group": "Organic chemistry"
+    },
+    {
+      "id": "chem.org.acids",
+      "title": "Carboxylic acids, esters and acyl chlorides",
+      "level": "as a2",
+      "group": "Organic chemistry"
+    },
+    {
+      "id": "chem.org.arenes",
+      "title": "Arenes: benzene and its compounds",
+      "level": "a2",
+      "group": "Organic chemistry"
+    },
+    {
+      "id": "chem.org.nitrogen",
+      "title": "Amines, amides and amino acids",
+      "level": "a2",
+      "group": "Organic chemistry"
+    },
+    {
+      "id": "chem.org.polymers",
+      "title": "Polymerisation",
+      "level": "as a2",
+      "group": "Organic chemistry"
+    },
+    {
+      "id": "chem.org.synthesis",
+      "title": "Organic synthesis",
+      "level": "as a2",
+      "group": "Organic chemistry"
+    },
+    {
+      "id": "chem.analysis",
+      "title": "Analytical techniques: IR, mass spectra, NMR and chromatography",
+      "level": "as a2",
+      "group": "Analysis and practical"
+    },
+    {
+      "id": "chem.practical",
+      "title": "Practical skills and tests for ions",
+      "level": "guide",
+      "group": "Analysis and practical"
+    }
+  ],
+  "aliases": {},
+  "packages": []
+}

@@ -1,4 +1,3 @@
-@group Probability and Statistics
 @chapter math.s2.poisson
 @title The Poisson distribution
 @level a2

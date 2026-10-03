@@ -1,0 +1,98 @@
+{
+  "id": "other",
+  "title": "Other Subjects",
+  "short": "Other",
+  "code": "ALL",
+  "board": "Short summaries of other popular A Levels (no single syllabus)",
+  "syllabus": "",
+  "desc": "Short guides to every other popular A Level",
+  "lead": false,
+  "chapters": [
+    {
+      "id": "other.overview",
+      "title": "All other subjects at a glance",
+      "level": "sum",
+      "group": "Subject summaries"
+    },
+    {
+      "id": "other.cs",
+      "title": "Computer Science",
+      "level": "sum",
+      "group": "Subject summaries"
+    },
+    {
+      "id": "other.english",
+      "title": "English Language and Literature",
+      "level": "sum",
+      "group": "Subject summaries"
+    },
+    {
+      "id": "other.history",
+      "title": "History",
+      "level": "sum",
+      "group": "Subject summaries"
+    },
+    {
+      "id": "other.geography",
+      "title": "Geography",
+      "level": "sum",
+      "group": "Subject summaries"
+    },
+    {
+      "id": "other.psychology",
+      "title": "Psychology",
+      "level": "sum",
+      "group": "Subject summaries"
+    },
+    {
+      "id": "other.sociology",
+      "title": "Sociology",
+      "level": "sum",
+      "group": "Subject summaries"
+    },
+    {
+      "id": "other.law",
+      "title": "Law",
+      "level": "sum",
+      "group": "Subject summaries"
+    },
+    {
+      "id": "other.politics",
+      "title": "Politics, Global Perspectives and Thinking Skills",
+      "level": "sum",
+      "group": "Subject summaries"
+    },
+    {
+      "id": "other.languages",
+      "title": "Modern languages",
+      "level": "sum",
+      "group": "Subject summaries"
+    },
+    {
+      "id": "other.arts",
+      "title": "Art, Design, Music, Drama and Media",
+      "level": "sum",
+      "group": "Subject summaries"
+    },
+    {
+      "id": "other.pe",
+      "title": "Physical Education",
+      "level": "sum",
+      "group": "Subject summaries"
+    },
+    {
+      "id": "other.humanities",
+      "title": "Religious Studies, Philosophy and Classics",
+      "level": "sum",
+      "group": "Subject summaries"
+    },
+    {
+      "id": "other.more",
+      "title": "Computing, environment and the rest",
+      "level": "sum",
+      "group": "Subject summaries"
+    }
+  ],
+  "aliases": {},
+  "packages": []
+}

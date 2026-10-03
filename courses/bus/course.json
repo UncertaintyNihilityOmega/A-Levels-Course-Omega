@@ -1,0 +1,188 @@
+{
+  "id": "bus",
+  "title": "Business",
+  "short": "Business",
+  "code": "9609",
+  "board": "Cambridge International AS & A Level Business (9609)",
+  "syllabus": "https://www.cambridgeinternational.org/Images/697371-2026-2028-syllabus.pdf",
+  "desc": "How organisations are run, marketed, staffed and financed",
+  "lead": true,
+  "chapters": [
+    {
+      "id": "bus.overview",
+      "title": "Business: the course map",
+      "level": "guide",
+      "group": "Start here"
+    },
+    {
+      "id": "bus.f.basics",
+      "title": "Business from zero",
+      "level": "pre",
+      "group": "Start here"
+    },
+    {
+      "id": "bus.enterprise",
+      "title": "Enterprise",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bus.structure",
+      "title": "Business structure",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bus.size",
+      "title": "Size of business",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bus.objectives",
+      "title": "Business objectives and stakeholders",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bus.hrm",
+      "title": "Human resource management",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bus.motivation",
+      "title": "Motivation",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bus.management",
+      "title": "Management",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bus.marketing",
+      "title": "The nature of marketing",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bus.research",
+      "title": "Market research",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bus.mix",
+      "title": "The marketing mix",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bus.operations",
+      "title": "Operations management",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bus.inventory",
+      "title": "Inventory, capacity and outsourcing",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bus.finance",
+      "title": "Business finance and sources of finance",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bus.cashflow",
+      "title": "Cash flow forecasting",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bus.costs",
+      "title": "Costs and break-even analysis",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bus.budgets",
+      "title": "Budgets and variances",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
+      "id": "bus.external",
+      "title": "External influences on business",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bus.strategy",
+      "title": "Business strategy and strategic tools",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bus.org",
+      "title": "Organisational structure and communication",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bus.leadership",
+      "title": "Leadership and HRM strategy",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bus.marketing2",
+      "title": "Marketing analysis and strategy",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bus.location",
+      "title": "Location, scale and quality",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bus.opsstrategy",
+      "title": "Operations strategy and critical path analysis",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bus.accounts",
+      "title": "Financial statements",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bus.ratios",
+      "title": "Ratio analysis",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bus.investment",
+      "title": "Investment appraisal",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bus.writing",
+      "title": "Writing top-band business answers",
+      "level": "guide",
+      "group": "Skills"
+    }
+  ],
+  "aliases": {},
+  "packages": []
+}
