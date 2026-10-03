@@ -263,15 +263,14 @@ A: (a) \(f(2) = 16 + 4a + 2b + 6 = 0\), so \(2a + b = -11\). [M1 A1] \(f(-1) = -
 - To solve a cubic: find one root by trial, divide, then solve the quadratic. Unknown coefficients: one equation per condition.
 :::
 
-:::note Learn more online
-- **Watch:** [Modulus inequalities](https://www.examsolutions.net/tutorials/modulus-inequalities/) · ExamSolutions · squaring both sides and the graphical method
-- **Watch:** [Exam questions: remainder theorem](https://www.examsolutions.net/tutorials/exam-questions-remainder-theorem/) · ExamSolutions · factor and remainder theorem questions on video
-- **Practise:** [CAIE Pure 3 modulus exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/algebra-and-functions/modulus-functions/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Practise:** [CAIE Pure 3 polynomials exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/algebra-and-functions/polynomials/exam-questions/) · Save My Exams · division, factor and remainder theorems *(some content paid)*
-- **Explore:** [Polynomials & Rational Functions](https://undergroundmathematics.org/polynomials) · Underground Mathematics · rich problems on polynomials
-- **Papers:** [9709 Paper 2 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-2/) · Physics & Maths Tutor · Paper 2 (AS) has this topic too *(unofficial archive)*
+:::links
+- watch: [Modulus inequalities](https://www.examsolutions.net/tutorials/modulus-inequalities/) · ExamSolutions · squaring both sides and the graphical method
+- watch: [Exam questions: remainder theorem](https://www.examsolutions.net/tutorials/exam-questions-remainder-theorem/) · ExamSolutions · factor and remainder theorem questions on video
+- practise: [CAIE Pure 3 modulus exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/algebra-and-functions/modulus-functions/exam-questions/) · Save My Exams · with mark schemes [paid]
+- practise: [CAIE Pure 3 polynomials exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/algebra-and-functions/polynomials/exam-questions/) · Save My Exams · division, factor and remainder theorems [paid]
+- explore: [Polynomials & Rational Functions](https://undergroundmathematics.org/polynomials) · Underground Mathematics · rich problems on polynomials
+- papers: [9709 Paper 2 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-2/) · Physics & Maths Tutor · Paper 2 (AS) has this topic too [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Logarithms and exponentials](#math.p3.logs).

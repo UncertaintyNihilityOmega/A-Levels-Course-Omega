@@ -8,7 +8,7 @@
 const fs = require('fs');
 const path = require('path');
 const esbuild = require('esbuild');
-const { readJson, loadCore } = require('./util');
+const { readJson, loadCore, courseWidgets } = require('./util');
 const { widgetNames } = require('./site');
 
 const ROOT = path.join(__dirname, '..');
@@ -32,8 +32,7 @@ for (const s of sections) {
 }
 links.widgets = {};   // widget name -> owning course, so each kit knows the names other courses use
 for (const c of courses) {
-  const wf = path.join(ROOT, 'courses', c.id, 'widgets.js');
-  if (fs.existsSync(wf)) for (const n of widgetNames(fs.readFileSync(wf, 'utf8'))) links.widgets[n] = links.widgets[n] || c.id;
+  for (const n of widgetNames(courseWidgets(path.join(ROOT, 'courses', c.id)))) links.widgets[n] = links.widgets[n] || c.id;
 }
 const isWritten = (s, id) => fs.existsSync(path.join(ROOT, s.core ? 'core' : `courses/${s.id}/chapters`, id + '.md'));
 

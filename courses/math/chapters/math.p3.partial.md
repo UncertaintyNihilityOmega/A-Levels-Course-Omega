@@ -219,14 +219,13 @@ A: (a) \(\dfrac{2}{x + 1} + \dfrac{3}{x - 2} + \dfrac{4}{(x - 2)^2}\). [M1 A1 A1
 - To expand a fraction: partial fractions, expand each part, add; the expansion is valid where all parts are valid.
 :::
 
-:::note Learn more online
-- **Watch:** [Partial fractions](https://www.examsolutions.net/tutorials/partial-fractions/) · ExamSolutions · linear and repeated factors
-- **Watch:** [Exam questions: binomial expansion](https://www.examsolutions.net/tutorials/exam-questions-binomial-expansion/) · ExamSolutions · rational powers and validity
-- **Practise:** [CAIE Pure 3 partial fractions exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/algebra-and-functions/partial-fractions/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Power Series](https://undergroundmathematics.org/power-series) · Underground Mathematics · series expansions explored deeply
-- **Read:** [Partial fractions](https://tutorial.math.lamar.edu/Classes/CalcII/PartialFractions.aspx) · Paul's Online Notes · every denominator type, worked
+:::links
+- watch: [Partial fractions](https://www.examsolutions.net/tutorials/partial-fractions/) · ExamSolutions · linear and repeated factors
+- watch: [Exam questions: binomial expansion](https://www.examsolutions.net/tutorials/exam-questions-binomial-expansion/) · ExamSolutions · rational powers and validity
+- practise: [CAIE Pure 3 partial fractions exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/algebra-and-functions/partial-fractions/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Power Series](https://undergroundmathematics.org/power-series) · Underground Mathematics · series expansions explored deeply
+- read: [Partial fractions](https://tutorial.math.lamar.edu/Classes/CalcII/PartialFractions.aspx) · Paul's Online Notes · every denominator type, worked
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Integration techniques](#math.p3.inttech).

@@ -330,15 +330,14 @@ Substitute: \(P\cos 30^\circ = 15 + 0.2(25.98 + 0.5P)\), so \(P(0.8660 - 0.1) = 
 - Newton's third law: the two forces of a pair are equal, opposite, of the same type, and act on different objects.
 :::
 
-:::note Learn more online
-- **Watch:** [Resolving forces](https://www.examsolutions.net/tutorials/resolving-forces/) · ExamSolutions · components in two directions
-- **Watch:** [Friction and limiting equilibrium](https://www.examsolutions.net/tutorials/friction-limiting-equilibrium-coefficient-friction/) · ExamSolutions · F = μR and "about to slip"
-- **Practise:** [CAIE Mechanics: resolving, slopes and friction exam questions](https://www.savemyexams.com/a-level/maths/cie/20/mechanics/topic-questions/forces-and-equilibrium/resolving-forces-inclined-planes-and-friction/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Forces and Motion: Basics](https://phet.colorado.edu/en/simulations/forces-and-motion-basics) · PhET · push, friction and net force
-- **Explore:** [Vector Addition](https://phet.colorado.edu/en/simulations/vector-addition) · PhET · add forces as vectors and read the components
-- **Papers:** [9709 Paper 4 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-4) · Physics & Maths Tutor · papers with mark schemes *(unofficial archive)*
+:::links
+- watch: [Resolving forces](https://www.examsolutions.net/tutorials/resolving-forces/) · ExamSolutions · components in two directions
+- watch: [Friction and limiting equilibrium](https://www.examsolutions.net/tutorials/friction-limiting-equilibrium-coefficient-friction/) · ExamSolutions · F = μR and "about to slip"
+- practise: [CAIE Mechanics: resolving, slopes and friction exam questions](https://www.savemyexams.com/a-level/maths/cie/20/mechanics/topic-questions/forces-and-equilibrium/resolving-forces-inclined-planes-and-friction/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Forces and Motion: Basics](https://phet.colorado.edu/en/simulations/forces-and-motion-basics) · PhET · push, friction and net force
+- explore: [Vector Addition](https://phet.colorado.edu/en/simulations/vector-addition) · PhET · add forces as vectors and read the components
+- papers: [9709 Paper 4 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-4) · Physics & Maths Tutor · papers with mark schemes [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Kinematics: describing motion](#math.m.kinematics) describes how an object moves, and [Newton's laws and connected particles](#math.m.newton) links forces to that motion.

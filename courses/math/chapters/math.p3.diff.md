@@ -292,15 +292,14 @@ A: (a) Product rule: \(x^2(-e^{-x}) + e^{-x}(2x) = e^{-x}(2x - x^2) = xe^{-x}(2 
 - Paper 3 only: \(\dfrac{d}{dx}\tan^{-1}x = \dfrac{1}{1 + x^2}\).
 :::
 
-:::note Learn more online
-- **Watch:** [Visualizing the chain rule and product rule](https://www.3blue1brown.com/lessons/chain-rule-and-product-rule) · 3Blue1Brown · why the rules are true
-- **Watch:** [What's so special about Euler's number e?](https://www.3blue1brown.com/lessons/eulers-number) · 3Blue1Brown · why eˣ is its own derivative
-- **Watch:** [Implicit differentiation, what's going on here?](https://www.3blue1brown.com/lessons/implicit-differentiation) · 3Blue1Brown · the idea behind the method
-- **Watch:** [Differentiating parametric functions](https://www.examsolutions.net/tutorials/differentiation-parametric-functions/) · ExamSolutions · dy/dx from dy/dt and dx/dt
-- **Practise:** [CAIE Pure 3 further differentiation exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/differentiation/further-differentiation/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Calculus of Trigonometry & Logarithms](https://undergroundmathematics.org/calculus-trig-log) · Underground Mathematics · rich problems on these derivatives
+:::links
+- watch: [Visualizing the chain rule and product rule](https://www.3blue1brown.com/lessons/chain-rule-and-product-rule) · 3Blue1Brown · why the rules are true
+- watch: [What's so special about Euler's number e?](https://www.3blue1brown.com/lessons/eulers-number) · 3Blue1Brown · why eˣ is its own derivative
+- watch: [Implicit differentiation, what's going on here?](https://www.3blue1brown.com/lessons/implicit-differentiation) · 3Blue1Brown · the idea behind the method
+- watch: [Differentiating parametric functions](https://www.examsolutions.net/tutorials/differentiation-parametric-functions/) · ExamSolutions · dy/dx from dy/dt and dx/dt
+- practise: [CAIE Pure 3 further differentiation exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/differentiation/further-differentiation/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Calculus of Trigonometry & Logarithms](https://undergroundmathematics.org/calculus-trig-log) · Underground Mathematics · rich problems on these derivatives
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Further integration](#math.p3.integ).

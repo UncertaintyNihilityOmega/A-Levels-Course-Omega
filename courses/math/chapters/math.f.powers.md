@@ -206,14 +206,13 @@ A: \(3\text{ mm} = 3 \times 10^{-3}\) m. Number \(= \dfrac{3 \times 10^{-3}}{1.2
 - Standard form is \(a \times 10^n\) with \(1 \le a < 10\); compute the number and the power of 10 separately.
 :::
 
-:::note Learn more online
-- **Watch:** [Introduction to surds](https://www.examsolutions.net/tutorials/surds-introduction-simplifying/) · ExamSolutions · simplifying surds step by step
-- **Watch:** [Fractional indices](https://www.examsolutions.net/tutorials/rational-fractional-indices/) · ExamSolutions · what a power of one half or two thirds means
-- **Practise:** [Algebra 2](https://www.khanacademy.org/math/algebra2) · Khan Academy · units on exponents and radicals
-- **Read:** [Algebra index](https://www.mathsisfun.com/algebra/index.html) · Maths is Fun · short pages on exponents, surds and standard form
-- **Read:** [Algebra and Trigonometry 2e (free textbook)](https://openstax.org/details/books/algebra-and-trigonometry-2e) · OpenStax · the prerequisites chapter covers exponents, radicals and scientific notation
+:::links
+- watch: [Introduction to surds](https://www.examsolutions.net/tutorials/surds-introduction-simplifying/) · ExamSolutions · simplifying surds step by step
+- watch: [Fractional indices](https://www.examsolutions.net/tutorials/rational-fractional-indices/) · ExamSolutions · what a power of one half or two thirds means
+- practise: [Algebra 2](https://www.khanacademy.org/math/algebra2) · Khan Academy · units on exponents and radicals
+- read: [Algebra index](https://www.mathsisfun.com/algebra/index.html) · Maths is Fun · short pages on exponents, surds and standard form
+- read: [Algebra and Trigonometry 2e (free textbook)](https://openstax.org/details/books/algebra-and-trigonometry-2e) · OpenStax · the prerequisites chapter covers exponents, radicals and scientific notation
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Graphs and straight lines](#math.f.graphs).

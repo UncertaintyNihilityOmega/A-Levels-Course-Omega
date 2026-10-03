@@ -148,22 +148,24 @@ New widgets (build in the package named; follow kit/WIDGETS.md):
 - Run `check <id>` for the chapter you just wrote, not `check` for the whole course.
 
 ## v2: exam-readiness upgrade (LEAD v2, 2026-10-03; packages P9–P18)
-The course teaches every outcome but is short of practice, exam training and proofs. v2 adds them. Engine
-blocks requested in REQUESTS.md (`:::links`, `:::proof`, `:::checklist`, `H:` hints, mock mode) are **not
-available until the Organizer ticks them**: use the fallbacks below and never an unknown block (check fails).
+The course teaches every outcome but is short of practice, exam training and proofs. v2 adds them. The engine
+blocks requested in REQUESTS.md all exist (Organizer, 2026-10-03; syntax in kit/STYLE.md): `:::links`,
+`:::proof`, `:::checklist`, `:::progress`, `H:` hints and `Q: [n marks] (#id)` in `:::try`, `@level mock`,
+practice by paper (`papers` in course.json), and the widget helpers, `widgets/<name>.js` files and `--probe`
+(kit/WIDGETS.md).
 
 ### Learn more online (every chapter; written by the Specialist)
-Every chapter ends `:::recap` → `:::note Learn more online` → `Next:`. Lines: `- **Watch:** [Title](https://…)
-· Site · one-line reason`, with kinds Watch / Practise / Explore / Read / Papers and the tags *(some content
-paid)* and *(unofficial archive)*. Writers keep this box when editing and never add unverified URLs. New links
-go in only after the Specialist's link check (HTTP 200, not a login or home page).
+Every chapter ends `:::recap` → `:::links` → `Next:`. Lines: `- watch: [Title](https://…) · Site · one-line
+reason`, kinds watch / practise / explore / read / papers, tags `[paid]` and `[unofficial]`; a last plain line
+"Links checked <date>." The boxes also build the page tools.l.math. Writers keep this box when editing and never
+add unverified URLs. New links go in only after the Specialist's link check (HTTP 200, not a login or home page).
 
 ### New sections in every topic chapter (P10–P16, Writers)
 Add them; don't rewrite the existing teaching. Order inside the chapter:
 1. **Warm-up** right after "Before you start": `:::try Warm-up` with 3 quick questions from *earlier*
    chapters (course.json order), answers one line each, each naming its chapter.
-2. **Proofs** in place, next to the rule they prove: `:::note Why it's true (not examined)` until `:::proof`
-   exists. Short (5–12 lines) at the student's level, a reason on every line, ending with what it shows.
+2. **Proofs** in place, next to the rule they prove: `:::proof <what it proves>` (folded, badged "Not examined
+   in 9709"; it never counts towards the checklist minimums). Short (5–12 lines) at the student's level, a reason on every line, ending with what it shows.
    Examinable proofs (trig identities, "show that" results) stay as `:::eg` with marks. The proof list per
    chapter is in the plan table below. Check each proof's algebra numerically in `checks/<id>.py` (identities
    at 3+ random values, sums against direct summation).
@@ -214,12 +216,12 @@ m.projectiles: trajectory is a parabola; 45° maximum range (embed `projectile`)
 - **math.proof** (ext, P16): deduction, exhaustion, counter-example, contradiction (√2, infinitely many
   primes), a taste of induction; board box: the UK A Level examines proof, 9231 examines induction.
 - **Mixed practice** `math.mixed.*` (ref, P17–P18): 25–35 short, interleaved questions ordered ★ → ★★★, each
-  `Q:` ending with the chapter link `(see [Quadratics](#math.p1.quadratics))`, answers with marks.
-- **Mocks** `math.mock.pNa` (ref until the mock level exists, P17–P18): one original full paper. Marks and
+  `Q: [n marks] (#math.p1.quadratics) …` (the page shows "Revise: Quadratics" under the answer), answers with marks.
+- **Mocks** `math.mock.pNa` (`@level mock`, P17–P18; kit/STYLE.md "Mock papers"): one original full paper. Marks and
   time **exactly** as FACTS (P1, P3 75 marks 1 h 50; P2, P4, P5, P6 50 marks 1 h 15) in `@time`; 9–11
   questions rising in difficulty, every syllabus area of the paper covered, the last two questions long and
   synoptic. Layout: `:::exam` instructions (MF19 allowed, calculator rules, 3 s.f.), then questions as one
-  `:::try` per question with `[n]` marks, the answer being the full mark scheme (M/A/B per line, accepted
+  `:::try` per question, `Q: [n marks] (#chapter-to-revise) …`, the answer being the full mark scheme (M/A/B per line, accepted
   alternatives in brackets). End with a table "Question → chapter to revise". The check asserts the marks
   total and recomputes every answer. Never reuse past-paper questions or numbers.
 

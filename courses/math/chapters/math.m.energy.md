@@ -250,15 +250,14 @@ A: At maximum speed \(F = 1200\) N, so \(P = 1200 \times 50 = 60\,000\) W = 60 k
 - Acceleration of a vehicle: \(\dfrac{P}{v} - \text{resistance} - mg\sin\theta = ma\).
 :::
 
-:::note Learn more online
-- **Watch:** [The work–energy principle](https://www.examsolutions.net/tutorials/conservation-of-energy-work-energy-principle/) · ExamSolutions · energy in, energy out, work against resistance
-- **Watch:** [Car accelerating on a hill](https://www.examsolutions.net/tutorials/car-accelerating-along-horizontal-hill/) · ExamSolutions · P = Fv and F = ma together
-- **Practise:** [CAIE Mechanics work and energy exam questions](https://www.savemyexams.com/a-level/maths/cie/20/mechanics/topic-questions/energy-work-and-power/work-and-energy/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Energy Skate Park](https://phet.colorado.edu/en/simulations/energy-skate-park) · PhET · KE and GPE trade places on a curved track
-- **Explore:** [The Ramp](https://phet.colorado.edu/en/simulations/the-ramp) · PhET · work done against friction on a slope
-- **Papers:** [9709 Paper 4 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-4) · Physics & Maths Tutor · papers with mark schemes *(unofficial archive)*
+:::links
+- watch: [The work–energy principle](https://www.examsolutions.net/tutorials/conservation-of-energy-work-energy-principle/) · ExamSolutions · energy in, energy out, work against resistance
+- watch: [Car accelerating on a hill](https://www.examsolutions.net/tutorials/car-accelerating-along-horizontal-hill/) · ExamSolutions · P = Fv and F = ma together
+- practise: [CAIE Mechanics work and energy exam questions](https://www.savemyexams.com/a-level/maths/cie/20/mechanics/topic-questions/energy-work-and-power/work-and-energy/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Energy Skate Park](https://phet.colorado.edu/en/simulations/energy-skate-park) · PhET · KE and GPE trade places on a curved track
+- explore: [The Ramp](https://phet.colorado.edu/en/simulations/the-ramp) · PhET · work done against friction on a slope
+- papers: [9709 Paper 4 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-4) · Physics & Maths Tutor · papers with mark schemes [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Projectiles and moments](#math.m.projectiles).

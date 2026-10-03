@@ -216,14 +216,13 @@ A: (a) \(\mathrm{f}(x) = 2\cos x - x\): \(\mathrm{f}(1) = 0.081 > 0\) and \(\mat
 - To find the equation from an iteration, set \(x_n = x_{n+1} = \alpha\) and rearrange.
 :::
 
-:::note Learn more online
-- **Watch:** [Solving equations by iteration](https://www.examsolutions.net/tutorials/solutions-of-equations-by-iteration/) · ExamSolutions · xₙ₊₁ = F(xₙ) step by step
-- **Watch:** [Exam questions: iteration](https://www.examsolutions.net/tutorials/exam-questions-iteration/) · ExamSolutions · sign change, iteration and accuracy
-- **Practise:** [CAIE Pure 3 numerical methods exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/numerical-methods/numerical-solutions-of-equations/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Desmos graphing calculator](https://www.desmos.com/calculator) · Desmos · plot y = x and y = F(x) and follow the staircase
-- **Papers:** [9709 Paper 3 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-3/) · Physics & Maths Tutor · papers with mark schemes *(unofficial archive)*
+:::links
+- watch: [Solving equations by iteration](https://www.examsolutions.net/tutorials/solutions-of-equations-by-iteration/) · ExamSolutions · xₙ₊₁ = F(xₙ) step by step
+- watch: [Exam questions: iteration](https://www.examsolutions.net/tutorials/exam-questions-iteration/) · ExamSolutions · sign change, iteration and accuracy
+- practise: [CAIE Pure 3 numerical methods exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/numerical-methods/numerical-solutions-of-equations/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Desmos graphing calculator](https://www.desmos.com/calculator) · Desmos · plot y = x and y = F(x) and follow the staircase
+- papers: [9709 Paper 3 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-3/) · Physics & Maths Tutor · papers with mark schemes [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Partial fractions and the binomial series](#math.p3.partial).

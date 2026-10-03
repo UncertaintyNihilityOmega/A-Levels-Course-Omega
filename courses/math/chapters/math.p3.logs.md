@@ -263,15 +263,14 @@ A: (a) \(\ln y = 1.609, 2.015, 2.420, 2.826\). [M1] Each step increases \(\ln y\
 - \(y = kx^n\): plot \(\ln y\) against \(\ln x\) (gradient \(n\), intercept \(\ln k\)). \(y = ka^x\): plot \(\ln y\) against \(x\) (gradient \(\ln a\), intercept \(\ln k\)).
 :::
 
-:::note Learn more online
-- **Watch:** [Rules of logarithms](https://www.examsolutions.net/tutorials/rules-logs/) · ExamSolutions · the three laws with examples
-- **Watch:** [Converting curves to linear form](https://www.examsolutions.net/tutorials/modelling-curves-converting-to-linear-form/) · ExamSolutions · y = kxⁿ and y = k(aˣ) from straight lines
-- **Practise:** [CAIE Pure 3 laws of logarithms exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/logarithms-and-exponentials/laws-of-logarithms/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Exponentials & Logarithms](https://undergroundmathematics.org/exp-and-log) · Underground Mathematics · rich problems on exponentials and logs
-- **Read:** [An intuitive guide to exponential functions and e](https://betterexplained.com/articles/an-intuitive-guide-to-exponential-functions-e/) · BetterExplained · where e comes from
-- **Read:** [Demystifying the natural logarithm](https://betterexplained.com/articles/demystifying-the-natural-logarithm-ln/) · BetterExplained · ln x as "time to grow"
+:::links
+- watch: [Rules of logarithms](https://www.examsolutions.net/tutorials/rules-logs/) · ExamSolutions · the three laws with examples
+- watch: [Converting curves to linear form](https://www.examsolutions.net/tutorials/modelling-curves-converting-to-linear-form/) · ExamSolutions · y = kxⁿ and y = k(aˣ) from straight lines
+- practise: [CAIE Pure 3 laws of logarithms exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/logarithms-and-exponentials/laws-of-logarithms/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Exponentials & Logarithms](https://undergroundmathematics.org/exp-and-log) · Underground Mathematics · rich problems on exponentials and logs
+- read: [An intuitive guide to exponential functions and e](https://betterexplained.com/articles/an-intuitive-guide-to-exponential-functions-e/) · BetterExplained · where e comes from
+- read: [Demystifying the natural logarithm](https://betterexplained.com/articles/demystifying-the-natural-logarithm-ln/) · BetterExplained · ln x as "time to grow"
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Further trigonometry](#math.p3.trig).

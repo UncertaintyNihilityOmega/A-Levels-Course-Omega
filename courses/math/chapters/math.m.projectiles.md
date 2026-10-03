@@ -236,14 +236,13 @@ A: Weight of plank 120 N at 2 m, load 80 N at 4 m. [B1] Moments about \(A\): \(3
 - Uniform rod: weight at the centre. About to tip: the reaction at the other support is zero.
 :::
 
-:::note Learn more online
-- **Watch:** [Projectiles](https://www.examsolutions.net/tutorials/projectiles/) · ExamSolutions · horizontal and vertical motion separately
-- **Watch:** [Equation of the trajectory](https://www.examsolutions.net/tutorials/equation-of-the-trajectory-of-a-projectile/) · ExamSolutions · why the path is a parabola
-- **Watch:** [Horizontal beams in equilibrium](https://www.examsolutions.net/tutorials/moments-horizontal-beams/) · ExamSolutions · taking moments about a point
-- **Practise:** [Isaac Science](https://isaacscience.org/) · Isaac Science · free problem-solving practice (free account)
-- **Explore:** [Projectile Motion](https://phet.colorado.edu/en/simulations/projectile-motion) · PhET · change angle and speed and compare paths
+:::links
+- watch: [Projectiles](https://www.examsolutions.net/tutorials/projectiles/) · ExamSolutions · horizontal and vertical motion separately
+- watch: [Equation of the trajectory](https://www.examsolutions.net/tutorials/equation-of-the-trajectory-of-a-projectile/) · ExamSolutions · why the path is a parabola
+- watch: [Horizontal beams in equilibrium](https://www.examsolutions.net/tutorials/moments-horizontal-beams/) · ExamSolutions · taking moments about a point
+- practise: [Isaac Science](https://isaacscience.org/) · Isaac Science · free problem-solving practice (free account)
+- explore: [Projectile Motion](https://phet.colorado.edu/en/simulations/projectile-motion) · PhET · change angle and speed and compare paths
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Further Mathematics: a guided tour](#math.further).

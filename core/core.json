@@ -226,6 +226,12 @@
           "title": "Business, economics and accounting formulas",
           "level": "ref",
           "group": "Formula sheets"
+        },
+        {
+          "id": "tools.l.math",
+          "title": "Maths: learn more online",
+          "level": "ref",
+          "group": "Learn more online"
         }
       ]
     },
@@ -267,5 +273,10 @@
       "acc"
     ]
   },
-  "aliases": {}
+  "aliases": {},
+  "linkSheets": {
+    "tools.l.math": [
+      "math"
+    ]
+  }
 }

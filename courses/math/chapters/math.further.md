@@ -220,15 +220,14 @@ A: The auxiliary equation \(m^2 + 4 = 0\) gives \(m = \pm 2i\), so \(y = A\cos 2
 - Polar area \(\tfrac12\int r^2\,d\theta\); hyperbolic functions follow \(\cosh^2 - \sinh^2 = 1\); Maclaurin series approximate a function by a polynomial; de Moivre handles powers; second-order DEs use the auxiliary equation.
 :::
 
-:::note Learn more online
-- **Watch:** [e^(iπ) in 3.14 minutes, using dynamics](https://www.3blue1brown.com/lessons/eulers-formula-dynamically) · 3Blue1Brown · a taste of complex exponentials
-- **Practise:** [NRICH for students](https://nrich.maths.org/students) · NRICH · problems for students who love maths
-- **Explore:** [Divisibility & Induction](https://undergroundmathematics.org/divisibility-and-induction) · Underground Mathematics · proof by induction, explored
-- **Explore:** [Hyperbolic Functions](https://undergroundmathematics.org/hyperbolic-functions) · Underground Mathematics · a first look at cosh and sinh
-- **Explore:** [Power Series](https://undergroundmathematics.org/power-series) · Underground Mathematics · towards Maclaurin series
-- **Papers:** [9231 Further Pure 1 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-fp1/) · Physics & Maths Tutor · see what Further Maths questions look like *(unofficial archive)*
+:::links
+- watch: [e^(iπ) in 3.14 minutes, using dynamics](https://www.3blue1brown.com/lessons/eulers-formula-dynamically) · 3Blue1Brown · a taste of complex exponentials
+- practise: [NRICH for students](https://nrich.maths.org/students) · NRICH · problems for students who love maths
+- explore: [Divisibility & Induction](https://undergroundmathematics.org/divisibility-and-induction) · Underground Mathematics · proof by induction, explored
+- explore: [Hyperbolic Functions](https://undergroundmathematics.org/hyperbolic-functions) · Underground Mathematics · a first look at cosh and sinh
+- explore: [Power Series](https://undergroundmathematics.org/power-series) · Underground Mathematics · towards Maclaurin series
+- papers: [9231 Further Pure 1 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-fp1/) · Physics & Maths Tutor · see what Further Maths questions look like [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Mathematics: the course map](#math.overview) to plan your path.

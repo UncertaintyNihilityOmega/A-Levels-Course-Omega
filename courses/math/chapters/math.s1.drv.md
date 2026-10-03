@@ -229,15 +229,14 @@ A: \(X \sim B(12, 0.25)\). [B1] \(P(X = 4) = \dbinom{12}{4}(0.25)^4(0.75)^8 = 49
 - State the model and parameters; comment on the conditions when asked.
 :::
 
-:::note Learn more online
-- **Watch:** [The binomial distribution](https://www.examsolutions.net/tutorials/binomial-distribution/) · ExamSolutions · B(n, p) probabilities step by step
-- **Watch:** [Binomial distributions](https://www.3blue1brown.com/lessons/binomial-distributions) · 3Blue1Brown · where the binomial formula comes from
-- **Watch:** [Exam questions: discrete random variables](https://www.examsolutions.net/tutorials/exam-questions-discrete-random-variables/) · ExamSolutions · tables, E(X) and Var(X)
-- **Practise:** [CAIE S1 binomial and geometric exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-1/topic-questions/statistical-distributions/binomial-and-geometric-distribution/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Plinko Probability](https://phet.colorado.edu/en/simulations/plinko-probability) · PhET · watch a binomial distribution build up ball by ball
-- **Explore:** [Probability distributions](https://seeing-theory.brown.edu/probability-distributions/index.html) · Seeing Theory · interactive discrete distributions
+:::links
+- watch: [The binomial distribution](https://www.examsolutions.net/tutorials/binomial-distribution/) · ExamSolutions · B(n, p) probabilities step by step
+- watch: [Binomial distributions](https://www.3blue1brown.com/lessons/binomial-distributions) · 3Blue1Brown · where the binomial formula comes from
+- watch: [Exam questions: discrete random variables](https://www.examsolutions.net/tutorials/exam-questions-discrete-random-variables/) · ExamSolutions · tables, E(X) and Var(X)
+- practise: [CAIE S1 binomial and geometric exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-1/topic-questions/statistical-distributions/binomial-and-geometric-distribution/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Plinko Probability](https://phet.colorado.edu/en/simulations/plinko-probability) · PhET · watch a binomial distribution build up ball by ball
+- explore: [Probability distributions](https://seeing-theory.brown.edu/probability-distributions/index.html) · Seeing Theory · interactive discrete distributions
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [The normal distribution](#math.s1.normal).

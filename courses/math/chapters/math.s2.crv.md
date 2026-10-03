@@ -264,14 +264,13 @@ A: \(P(X > 2) = \tfrac18\) [M1 A1]. The number of rejects \(R \sim B\!\left(50, 
 - A long right tail puts the mean above the median; a long left tail puts it below.
 :::
 
-:::note Learn more online
-- **Watch:** [Finding k in a pdf](https://www.examsolutions.net/tutorials/finding-constant-k-in-a-pdf/) · ExamSolutions · total area equals 1
-- **Watch:** [Median, quartiles and percentiles from a pdf](https://www.examsolutions.net/tutorials/finding-median-quartiles-percentiles/) · ExamSolutions · areas up to the median
-- **Practise:** [CAIE S2 continuous random variables exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-2/topic-questions/statistical-distributions/continuous-random-variables/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Probability distributions](https://seeing-theory.brown.edu/probability-distributions/index.html) · Seeing Theory · continuous distributions as areas
-- **Papers:** [9709 Paper 6 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-7/) · Physics & Maths Tutor · papers with mark schemes *(unofficial archive)*
+:::links
+- watch: [Finding k in a pdf](https://www.examsolutions.net/tutorials/finding-constant-k-in-a-pdf/) · ExamSolutions · total area equals 1
+- watch: [Median, quartiles and percentiles from a pdf](https://www.examsolutions.net/tutorials/finding-median-quartiles-percentiles/) · ExamSolutions · areas up to the median
+- practise: [CAIE S2 continuous random variables exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-2/topic-questions/statistical-distributions/continuous-random-variables/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Probability distributions](https://seeing-theory.brown.edu/probability-distributions/index.html) · Seeing Theory · continuous distributions as areas
+- papers: [9709 Paper 6 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-7/) · Physics & Maths Tutor · papers with mark schemes [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Sampling and estimation](#math.s2.sampling).

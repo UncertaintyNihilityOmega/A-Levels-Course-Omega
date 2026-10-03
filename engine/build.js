@@ -16,6 +16,7 @@ const courses = fs.readdirSync(path.join(ROOT, 'courses')).filter(d => fs.exists
 const res = buildSite([...coreSources, ...courses], {
   order: core.order,
   formulaSheets: core.formulaSheets,
+  linkSheets: core.linkSheets,
   assets: require('./assets'),
   fontFace: (chars) => mathFontFace(path.join(__dirname, 'latinmodern-math.otf'), chars)
 });

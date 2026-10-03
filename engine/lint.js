@@ -22,10 +22,25 @@ function blocks(text, type) {
   return out;
 }
 
+/** the file without any ":::type" blocks (nested blocks inside them go too) */
+function without(text, type) {
+  const lines = text.split('\n'), out = [];
+  for (let i = 0; i < lines.length; i++) {
+    if (!new RegExp(`^:::${type}(\\s|$)`).test(lines[i])) { out.push(lines[i]); continue; }
+    let depth = 1;
+    for (i++; i < lines.length; i++) {
+      if (/^:::\w+/.test(lines[i])) depth++;
+      else if (/^:::\s*$/.test(lines[i]) && --depth === 0) break;
+    }
+  }
+  return out.join('\n');
+}
+
 /** ch = rendered chapter from lib.renderFile; text = the raw file; ctx = { course, hasCheck } */
 function lintChapter(ch, text, ctx = {}) {
   const errors = [], notes = [];
   const m = ch.meta || {};
+  text = without(text, 'proof');   // proofs never count towards the checklist minimums
   const levels = String(m.level || '').toLowerCase().split(/[ ,]+/).filter(Boolean);
   const topic = levels.some(l => TOPIC.has(l));
   const course = ctx.course || ch.subject;
@@ -57,8 +72,15 @@ function lintChapter(ch, text, ctx = {}) {
     if (!blocks(text, 'recap').length) notes.push('end with a :::recap box');
     if (!/^Next: \[/m.test(text)) notes.push('finish with a "Next: [title](#id)" line');
     if (ctx.hasCheck === false && !ESSAY.has(course)) notes.push(`no checks/${ch.id}.py (recompute every number in the chapter)`);
-  } else if (levels.includes('guide') && !blocks(text, 'recap').length) notes.push('guide chapters usually end with a :::recap box');
+  } else if (levels.includes('mock')) {
+    // a mock paper: one :::try per question, every Q: with its marks, the time allowed in @time
+    if (!/\d/.test(m.time || '') || !/h|min/i.test(m.time || '')) notes.push('a mock needs @time with the time allowed, e.g. "1 h 50 min"');
+    const qs = blocks(text, 'try').join('\n').split('\n').filter(l => /^Q:/.test(l));
+    const unmarked = qs.filter(l => !/^Q:\s*\[\d+(\s*marks?)?\]/.test(l) && !/\[\d+ marks?\]\s*$/.test(l));
+    if (!qs.length) notes.push('a mock has one :::try per question (Q: [n marks] … A: mark scheme)');
+    if (unmarked.length) notes.push(`${unmarked.length} mock question(s) without "[n marks]" after Q:`);
+    if (ctx.hasCheck === false) notes.push(`no checks/${ch.id}.py (assert the marks total and recompute every answer)`);  } else if (levels.includes('guide') && !blocks(text, 'recap').length) notes.push('guide chapters usually end with a :::recap box');
   return { errors, notes };
 }
 
-module.exports = { lintChapter, blocks };
+module.exports = { lintChapter, blocks, without };

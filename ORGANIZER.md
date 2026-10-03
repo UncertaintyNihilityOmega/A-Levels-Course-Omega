@@ -47,5 +47,13 @@ Organizer session instead, with STATUS.md and `node engine/status.js`.
   core use `graph` (math), `periodic` and `molar` (chem), `units` (phys), `breakeven` and `npv` (bus).
 - The kit (`engine/kit-src/zta.js`) is bundled by `sync.js` with esbuild; `zta:assets` and `zta:links` are
   virtual modules (page files and all chapter ids). Kits are not in git; sync regenerates them.
+- Exam-practice features (Maths v2 requests, 2026-10-03), all in lib.js/site.js/app.js and documented in STYLE.md:
+  `:::links` (st.LINKS; core.json `linkSheets` builds pages like tools.l.math), `:::proof` (badge from course.json
+  `proofBadge`; lint ignores proofs), `:::checklist` (ticks in localStorage `ticks`, keyed by a hash of chapter +
+  text) and `:::progress [paper]` (filled by site.js from course.json `papers`), `Q: [n marks] (#id)` and `H:`
+  hints in `:::try`, `@level mock` (article `data-level/data-min/data-marks`; app.js `initMock`, state in
+  `mock:<id>`), practice by paper with interleaving (DATA.papers). Courses may split widgets into
+  `widgets/<name>.js` (util.courseWidgets). `kit/zta.js widget <name> --probe` uses headless Edge/Chrome
+  (`--dump-dom`) and reads a JSON report the test page writes into `<pre id="zta-probe">`.
 - Python: always `py` (the `python` command is the Windows Store alias), with PYTHONUTF8=1 (the console code
   page cannot print − or ²); `engine/util.js runPython` handles both.

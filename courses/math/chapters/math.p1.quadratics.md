@@ -344,15 +344,14 @@ A: Let \(u = \sqrt{x}\): \(u^2 - 6u + 8 = 0 \Rightarrow (u - 2)(u - 4) = 0 \Righ
 - Substitute a new letter for disguised quadratics such as \(x^4 - 5x^2 + 4 = 0\).
 :::
 
-:::note Learn more online
-- **Watch:** [Completing the square](https://www.examsolutions.net/tutorials/completing-the-square/) · ExamSolutions · the method shown slowly, with examples
-- **Watch:** [Exam questions: roots and the discriminant](https://www.examsolutions.net/tutorials/exam-questions-roots-and-discriminant/) · ExamSolutions · exam-style questions solved on video
-- **Practise:** [CAIE Pure 1 quadratics exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/algebra-and-functions/quadratics/exam-questions/) · Save My Exams · questions sorted by difficulty, with mark schemes *(some content paid)*
-- **Explore:** [Graphing Quadratics](https://phet.colorado.edu/en/simulations/graphing-quadratics) · PhET · move a, b and c and watch the vertex and roots
-- **Explore:** [Quadratics](https://undergroundmathematics.org/quadratics) · Underground Mathematics · rich problems for stretch
-- **Papers:** [9709 Paper 1 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-1/) · Physics & Maths Tutor · find the quadratics questions in real papers *(unofficial archive)*
+:::links
+- watch: [Completing the square](https://www.examsolutions.net/tutorials/completing-the-square/) · ExamSolutions · the method shown slowly, with examples
+- watch: [Exam questions: roots and the discriminant](https://www.examsolutions.net/tutorials/exam-questions-roots-and-discriminant/) · ExamSolutions · exam-style questions solved on video
+- practise: [CAIE Pure 1 quadratics exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/algebra-and-functions/quadratics/exam-questions/) · Save My Exams · questions sorted by difficulty, with mark schemes [paid]
+- explore: [Graphing Quadratics](https://phet.colorado.edu/en/simulations/graphing-quadratics) · PhET · move a, b and c and watch the vertex and roots
+- explore: [Quadratics](https://undergroundmathematics.org/quadratics) · Underground Mathematics · rich problems for stretch
+- papers: [9709 Paper 1 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-1/) · Physics & Maths Tutor · find the quadratics questions in real papers [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Functions](#math.p1.functions) builds on everything here, including the range of a quadratic.

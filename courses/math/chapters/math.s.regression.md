@@ -224,14 +224,13 @@ A: \(S_{xy} = 1300 - \dfrac{90 \times 120}{10} = 220\). \(S_{xx} = 1000 - \dfrac
 - Test for correlation: \(H_0: \rho = 0\). Reject if \(|r|\) exceeds the critical value for \(n\) and the significance level. Conclude in context.
 :::
 
-:::note Learn more online
-- **Watch:** [Regression](https://www.examsolutions.net/tutorials/regression/) · ExamSolutions · the least squares line from summary statistics
-- **Watch:** [Hypothesis testing for zero correlation](https://www.examsolutions.net/tutorials/hypothesis-testing-zero-correlation/) · ExamSolutions · the UK-board test
-- **Practise:** [Statistics and Probability](https://www.khanacademy.org/math/statistics-probability) · Khan Academy · units on scatter plots and correlation
-- **Explore:** [Least-Squares Regression](https://phet.colorado.edu/en/simulations/least-squares-regression) · PhET · place points and watch the line and r change
-- **Explore:** [Regression analysis](https://seeing-theory.brown.edu/regression-analysis/index.html) · Seeing Theory · interactive least squares
+:::links
+- watch: [Regression](https://www.examsolutions.net/tutorials/regression/) · ExamSolutions · the least squares line from summary statistics
+- watch: [Hypothesis testing for zero correlation](https://www.examsolutions.net/tutorials/hypothesis-testing-zero-correlation/) · ExamSolutions · the UK-board test
+- practise: [Statistics and Probability](https://www.khanacademy.org/math/statistics-probability) · Khan Academy · units on scatter plots and correlation
+- explore: [Least-Squares Regression](https://phet.colorado.edu/en/simulations/least-squares-regression) · PhET · place points and watch the line and r change
+- explore: [Regression analysis](https://seeing-theory.brown.edu/regression-analysis/index.html) · Seeing Theory · interactive least squares
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Forces and equilibrium](#math.m.forces).

@@ -234,15 +234,14 @@ A: \(v(t + 2) = 3t\). [M1] So \(vt + 2v = 3t\) and \(2v = 3t - vt\). [M1] Factor
 - Simultaneous equations: eliminate one letter, or substitute. When the new subject appears twice, collect, factorise, divide.
 :::
 
-:::note Learn more online
-- **Watch:** [Expanding two brackets](https://www.examsolutions.net/tutorials/expanding-two-brackets/) · ExamSolutions · short video with examples
-- **Watch:** [Linear inequalities](https://www.examsolutions.net/tutorials/linear-inequalities/) · ExamSolutions · why the sign flips when you divide by a negative
-- **Practise:** [Algebra 1](https://www.khanacademy.org/math/algebra) · Khan Academy · mastery practice with instant feedback
-- **Explore:** [Area Model Algebra](https://phet.colorado.edu/en/simulations/area-model-algebra) · PhET · see why brackets expand the way they do
-- **Explore:** [Thinking about Algebra](https://undergroundmathematics.org/thinking-about-algebra) · Underground Mathematics · problems that build fluency and insight
-- **Read:** [Algebra notes](https://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx) · Paul's Online Notes · clear notes with many worked examples
+:::links
+- watch: [Expanding two brackets](https://www.examsolutions.net/tutorials/expanding-two-brackets/) · ExamSolutions · short video with examples
+- watch: [Linear inequalities](https://www.examsolutions.net/tutorials/linear-inequalities/) · ExamSolutions · why the sign flips when you divide by a negative
+- practise: [Algebra 1](https://www.khanacademy.org/math/algebra) · Khan Academy · mastery practice with instant feedback
+- explore: [Area Model Algebra](https://phet.colorado.edu/en/simulations/area-model-algebra) · PhET · see why brackets expand the way they do
+- explore: [Thinking about Algebra](https://undergroundmathematics.org/thinking-about-algebra) · Underground Mathematics · problems that build fluency and insight
+- read: [Algebra notes](https://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx) · Paul's Online Notes · clear notes with many worked examples
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Indices, surds and standard form](#math.f.powers).

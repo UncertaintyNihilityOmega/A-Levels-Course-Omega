@@ -267,15 +267,14 @@ A: (a) \(R\cos\alpha = \sqrt3\), \(R\sin\alpha = 1\), so \(R = 2\) and \(\tan\al
 - Factorise instead of dividing by a trig function that might be zero. Change the interval when the angle is \(2x\) or \(\theta + \alpha\).
 :::
 
-:::note Learn more online
-- **Watch:** [The R-form (harmonic identities)](https://www.examsolutions.net/tutorials/harmonic-identities/) · ExamSolutions · a sin θ + b cos θ as R sin(θ + α)
-- **Watch:** [Exam questions: double angles](https://www.examsolutions.net/tutorials/exam-questions-double-angles/) · ExamSolutions · exam-style questions solved on video
-- **Practise:** [CAIE Pure 3 compound and double angle exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/trigonometry/compound-and-double-angle-formulae/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Practise:** [Trigonometry](https://www.khanacademy.org/math/trigonometry) · Khan Academy · units on identities and equations
-- **Explore:** [Trigonometry: Compound Angles](https://undergroundmathematics.org/trigonometry-compound-angles) · Underground Mathematics · where the addition formulae come from
-- **Papers:** [9709 Paper 3 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-3/) · Physics & Maths Tutor · papers with mark schemes *(unofficial archive)*
+:::links
+- watch: [The R-form (harmonic identities)](https://www.examsolutions.net/tutorials/harmonic-identities/) · ExamSolutions · a sin θ + b cos θ as R sin(θ + α)
+- watch: [Exam questions: double angles](https://www.examsolutions.net/tutorials/exam-questions-double-angles/) · ExamSolutions · exam-style questions solved on video
+- practise: [CAIE Pure 3 compound and double angle exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/trigonometry/compound-and-double-angle-formulae/exam-questions/) · Save My Exams · with mark schemes [paid]
+- practise: [Trigonometry](https://www.khanacademy.org/math/trigonometry) · Khan Academy · units on identities and equations
+- explore: [Trigonometry: Compound Angles](https://undergroundmathematics.org/trigonometry-compound-angles) · Underground Mathematics · where the addition formulae come from
+- papers: [9709 Paper 3 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-3/) · Physics & Maths Tutor · papers with mark schemes [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Further differentiation](#math.p3.diff).

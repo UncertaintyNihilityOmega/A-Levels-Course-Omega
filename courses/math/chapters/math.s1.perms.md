@@ -192,14 +192,13 @@ A: Together: block SSS with the T, T, T, I, I, A, C gives 8 items, so \(\dfrac{8
 - Always check: whole number, smaller than the total, and a check by a second method where possible.
 :::
 
-:::note Learn more online
-- **Watch:** [Permutations with items together](https://www.examsolutions.net/tutorials/permutations-with-restrictions-letters-items-together/) · ExamSolutions · the "glue them together" method
-- **Watch:** [Probability using permutations and combinations](https://www.examsolutions.net/tutorials/probability-using-permutations-and-combinations/) · ExamSolutions · counting to find probabilities
-- **Practise:** [CAIE S1 permutations and combinations exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-1/topic-questions/probability/permutations-and-combinations/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Counting & Binomials](https://undergroundmathematics.org/counting-and-binomials) · Underground Mathematics · rich counting problems
-- **Papers:** [9709 Paper 5 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-6/) · Physics & Maths Tutor · their page "cie-paper-6" holds Paper 5 *(unofficial archive)*
+:::links
+- watch: [Permutations with items together](https://www.examsolutions.net/tutorials/permutations-with-restrictions-letters-items-together/) · ExamSolutions · the "glue them together" method
+- watch: [Probability using permutations and combinations](https://www.examsolutions.net/tutorials/probability-using-permutations-and-combinations/) · ExamSolutions · counting to find probabilities
+- practise: [CAIE S1 permutations and combinations exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-1/topic-questions/probability/permutations-and-combinations/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Counting & Binomials](https://undergroundmathematics.org/counting-and-binomials) · Underground Mathematics · rich counting problems
+- papers: [9709 Paper 5 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-6/) · Physics & Maths Tutor · their page "cie-paper-6" holds Paper 5 [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Probability](#math.s1.prob).

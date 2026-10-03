@@ -47,10 +47,30 @@ are listed at the end of kit/LINKS.md: use them freely in chapters, but never re
 - `W.fmt(x, sf)`, `W.fix(x, dp)`, `W.money(x, '$')`, `W.sup('-3')`, `W.ticks(a, b, n)`, `W.shuffle(arr)`,
   `W.esc(str)`, `W.store.get/set`, `W.onTheme(fn)`.
 
+Use these instead of writing your own (shorter widgets, fewer bugs):
+- `W.sliderNum({label, min, max, step, value, oninput})` → `{el, get, set}`: slider plus a typed number box, in step.
+- `W.readout([['area', 'Area'], ['err', 'Error']])` → `{el, set(key, text)}`: a two-column readout table.
+- `W.palette(el)`: `W.colors` plus `series` (six theme colours for several curves, in order).
+- `W.drag(el, {hit(x, y), move(thing, x, y), end(thing)})`: pointer dragging (mouse, pen, touch). `hit` returns
+  what was grabbed (or null); x, y are CSS pixels inside `el` (use the canvas wrap `c.wrap`).
+- `W.animate((dt, t) => { …; return false to stop }, {still})` → `{start, stop, reset, running}`: pauses while the
+  page is hidden; under reduced motion `start()` calls `still()` once instead (draw the end state).
+- `W.reducedMotion()` → true when the reader asked for less motion.
+- `W.view3d({yaw, pitch, scale})` → `v` with `v.project(x, y, z, w, h)` → `[sx, sy, depth]` (x right, y into the
+  page, z up); `W.orbit(c.wrap, v, c.redraw)` lets the reader drag to rotate.
+- `W.rng(seed)` → `r()`, `r.int(lo, hi)`, `r.normal(mu, sd)`: seeded random numbers (same seed, same sequence).
+- `W.stepper(root, {steps, onstep(i), labels})` → `{el, go(i), i}`: Back / Next with "Step 2 of 6", plus ←/→ keys
+  while the widget has focus. Call `s.go(0)` once to draw the first step.
+
+## Files
+Small courses keep every widget in `widgets.js`. For many or large widgets, put each in its own file
+`widgets/<name>.js` (same IIFE pattern, one `W.register` per file): the build adds them after widgets.js in name
+order. Then a session only opens the file it is changing.
+
 ## Styled classes
 `.w-b` body, `.w-row` wrapping row, `.w-ctl` labelled control, `.w-lab` small label, `.w-out` stats row,
 `.w-stat` / `.w-stat.hi` output tiles, `.w-canvas` canvas frame, `.w-note` grey note, `.w-err` red error,
-`.w-tabs` + `.w-tab[aria-selected="true"]` segmented buttons, `.btn` / `.btn.btn-sec` / `.btn-sm`, plain
+`.w-tabs` + `.w-tab[aria-selected="true"]` segmented buttons, `.w-read` readout table, `.w-stepper`, `.btn` / `.btn.btn-sec` / `.btn-sm`, plain
 `table/th/td`. Inputs, selects and sliders inside `.w` are styled automatically. Inline style only for layout,
 with CSS variables for colour (`var(--sc)`, `var(--ink-2)`, `var(--card)`, `var(--rule)`, `var(--red)`, `var(--ok)`).
 
@@ -60,9 +80,11 @@ and one `.w-note` line saying what to try. Redraw on `input`, not only `change`.
 plot area. Course colour for the main curve, `sc2` for a second series, `red` for highlights.
 
 ## Testing (every widget, every change)
-1. `node kit/zta.js widget NAME 'data-a="1" data-b="2"'` writes `preview/widget.html`.
-2. Start the "preview" server (the browser pane's launch config, or `node kit/zta.js serve`) and open
-   `http://localhost:<port>/widget.html`, then `?dark&phone`. Errors print in red on the page; also read the
-   console. Check nothing is clipped, overlapping or unreadable.
-3. Try edge cases: empty and invalid input, extreme slider values (pass other attributes).
-4. `node kit/zta.js preview` and open the chapter that uses it.
+1. `node kit/zta.js widget NAME 'data-a="1" data-b="2"' --probe` writes `preview/widget.html` and loads it
+   headless (Edge or Chrome) in light, dark and phone width. It lists errors, text showing NaN / undefined /
+   Infinity, anything sticking out of the widget or widening the page, and blank canvases. Fix until it passes.
+   Probe edge cases too, by passing extreme or invalid attributes.
+2. Then look once: start the "preview" server (the browser pane's launch config, or `node kit/zta.js serve`)
+   and open `http://localhost:<port>/widget.html?dark&phone`. Check nothing is clipped, overlapping or
+   unreadable, and that dragging and buttons work. Screenshots are expensive: one per widget is enough.
+3. `node kit/zta.js preview` and open the chapter that uses it.

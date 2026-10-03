@@ -234,15 +234,14 @@ A: \(27 - 45 + 33 - 15 = 0\) ✓. Divide by \(z - 3\): \(z^3 - 5z^2 + 11z - 15 =
 - Loci: \(|z - a| = k\) circle; \(|z - a| = |z - b|\) perpendicular bisector; \(\arg(z - a) = \alpha\) half-line from \(a\).
 :::
 
-:::note Learn more online
-- **Watch:** [Square roots of a complex number](https://www.examsolutions.net/tutorials/square-roots-complex-number/) · ExamSolutions · equating real and imaginary parts
-- **Watch:** [Exam questions: loci in the complex plane](https://www.examsolutions.net/tutorials/exam-questions-loci-in-the-complex-plane/) · ExamSolutions · circles, bisectors and half-lines
-- **Watch:** [e^(iπ) in 3.14 minutes, using dynamics](https://www.3blue1brown.com/lessons/eulers-formula-dynamically) · 3Blue1Brown · why re^(iθ) is a point on a circle
-- **Practise:** [CAIE Pure 3 Argand diagram exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/complex-numbers/argand-diagrams/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [GeoGebra calculator](https://www.geogebra.org/calculator) · GeoGebra · draw loci and check your sketches
-- **Read:** [A visual, intuitive guide to imaginary numbers](https://betterexplained.com/articles/a-visual-intuitive-guide-to-imaginary-numbers/) · BetterExplained · multiplying by i as a rotation
+:::links
+- watch: [Square roots of a complex number](https://www.examsolutions.net/tutorials/square-roots-complex-number/) · ExamSolutions · equating real and imaginary parts
+- watch: [Exam questions: loci in the complex plane](https://www.examsolutions.net/tutorials/exam-questions-loci-in-the-complex-plane/) · ExamSolutions · circles, bisectors and half-lines
+- watch: [e^(iπ) in 3.14 minutes, using dynamics](https://www.3blue1brown.com/lessons/eulers-formula-dynamically) · 3Blue1Brown · why re^(iθ) is a point on a circle
+- practise: [CAIE Pure 3 Argand diagram exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/complex-numbers/argand-diagrams/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [GeoGebra calculator](https://www.geogebra.org/calculator) · GeoGebra · draw loci and check your sketches
+- read: [A visual, intuitive guide to imaginary numbers](https://betterexplained.com/articles/a-visual-intuitive-guide-to-imaginary-numbers/) · BetterExplained · multiplying by i as a rotation
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Representing and summarising data](#math.s1.data).

@@ -9,7 +9,19 @@ const CALLOUTS = {
   note: 'Note', board: 'Board differences', why: 'Why this matters', recap: 'Summary', story: 'Background', lab: 'Practical skills',
   formula: 'Formula', career: 'Where this leads'
 };
-const BLOCK_TYPES = new Set(['def', 'eg', 'try', 'quiz', 'html', 'plot', 'cols', 'col', 'steps', ...Object.keys(CALLOUTS)]);
+const BLOCK_TYPES = new Set(['def', 'eg', 'try', 'quiz', 'html', 'plot', 'cols', 'col', 'steps', 'links', 'proof', 'checklist', 'progress', ...Object.keys(CALLOUTS)]);
+
+// :::links kinds, in display order, each with a small line icon
+const LINK_KINDS = {
+  watch: { t: 'Watch', i: '<circle cx="8" cy="8" r="6.5"/><path d="M6.6 5.4v5.2L10.8 8z" fill="currentColor"/>' },
+  practise: { t: 'Practise', i: '<path d="M10.8 2.6l2.6 2.6-7.6 7.6-3.3.7.7-3.3z"/><path d="M9.3 4.1l2.6 2.6"/>' },
+  explore: { t: 'Explore', i: '<circle cx="8" cy="8" r="6.5"/><path d="M10.6 5.4L9.1 9.1 5.4 10.6 6.9 6.9z"/>' },
+  read: { t: 'Read', i: '<path d="M8 4.2C6.6 3.2 4.5 2.8 2 3v9.3c2.5-.2 4.6.2 6 1.2 1.4-1 3.5-1.4 6-1.2V3c-2.5-.2-4.6.2-6 1.2zM8 4.2v9.3"/>' },
+  papers: { t: 'Papers', i: '<path d="M4.5 2.5h5l2.5 2.5v8.5h-7.5z"/><path d="M9.5 2.5V5H12M6.5 8h3.5M6.5 10.5h3.5"/>' }
+};
+const LINK_TAGS = { paid: 'Some content paid', unofficial: 'Unofficial archive' };
+const icon = (paths) => `<svg class="ico" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round">${paths}</svg>`;
+const hash = (s) => { let h = 5381; for (const ch of String(s)) h = ((h * 33) ^ ch.codePointAt(0)) >>> 0; return h.toString(36); };
 
 function escapeHtml(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -73,8 +85,8 @@ function createRenderer(opts = {}) {
   const md = new MarkdownIt({ html: true, linkify: false, typographer: true, breaks: false });
   md.disable(['replacements']);
   const st = {
-    MATH: [], BLOCKS: [], GLOSSARY: [], QUIZ: [], KEYS: [], errors: [], warnings: [], mathChars: new Set(), mathCount: 0,
-    chapter: null, subject: null, line: 0
+    MATH: [], BLOCKS: [], GLOSSARY: [], QUIZ: [], KEYS: [], LINKS: [], CHECKS: [], errors: [], warnings: [], mathChars: new Set(), mathCount: 0,
+    chapter: null, subject: null, level: '', qn: 0, marks: 0, line: 0
   };
   const err = (msg) => st.errors.push(`[${st.chapter || '?'}] ${msg}`);
   const warn = (msg) => st.warnings.push(`[${st.chapter || '?'}] ${msg}`);
@@ -129,23 +141,96 @@ function createRenderer(opts = {}) {
   });
   const mdInline = (s) => md.renderInline(s);
 
+  // Q: [3 marks] (#chapter.id) question…   H: hint (any number, revealed one at a time)   A: answer
   function renderTry(body) {
     const items = [];
     let cur = null, mode = null;
     for (const line of body.split('\n')) {
       const mq = line.match(/^Q:\s?(.*)$/);
+      const mh = line.match(/^H:\s?(.*)$/);
       const ma = line.match(/^A:\s?(.*)$/);
-      if (mq) { cur = { q: mq[1], a: null }; items.push(cur); mode = 'q'; continue; }
+      if (mq) { cur = { q: mq[1], h: [], a: null }; items.push(cur); mode = 'q'; continue; }
+      if (mh && cur) {
+        if (mode === 'a') err(`H: hint after A: in :::try (hints go between Q: and A:) → "${mh[1].slice(0, 50)}"`);
+        else { cur.h.push(mh[1]); mode = 'h'; }
+        continue;
+      }
       if (ma && cur) { cur.a = ma[1]; mode = 'a'; continue; }
-      if (cur) { if (mode === 'q') cur.q += '\n' + line; else cur.a += '\n' + line; }
+      if (cur) { if (mode === 'q') cur.q += '\n' + line; else if (mode === 'h') cur.h[cur.h.length - 1] += '\n' + line; else cur.a += '\n' + line; }
       else if (line.trim()) err(`text before first Q: in :::try → "${line.slice(0, 50)}"`);
     }
     if (!items.length) err('empty :::try block (needs Q:/A: lines)');
     const lis = items.map(it => {
       if (it.a === null) err(`:::try question without A: → "${it.q.slice(0, 60)}"`);
-      return `<li><div class="tq">${processBlocks(it.q.trim())}</div><details class="ta"><summary>Show answer</summary><div class="ta-b">${addMarks(processBlocks((it.a || '').trim()))}</div></details></li>`;
+      let q = it.q.trim(), marks = 0, rev = '';
+      const m1 = q.match(/^\[(\d+)(?:\s*marks?)?\]\s*/);
+      if (m1) { marks = +m1[1]; q = q.slice(m1[0].length); }
+      const r1 = q.match(/^\(#([\w.-]+)\)\s*/);
+      if (r1) { rev = r1[1]; q = q.slice(r1[0].length); }
+      if (!marks) { const m2 = q.match(/\s*\[(\d+) marks?\]\s*$/); if (m2) { marks = +m2[1]; q = q.slice(0, q.length - m2[0].length); } }
+      st.marks += marks;
+      const badge = marks ? `<span class="tq-m" title="${marks} mark${marks === 1 ? '' : 's'}">[${marks}]</span>` : '';
+      let hints = '';
+      for (let k = it.h.length - 1; k >= 0; k--) {
+        hints = `<details class="th"><summary>${it.h.length > 1 ? `Hint ${k + 1} of ${it.h.length}` : 'Hint'}</summary><div class="th-b">${processBlocks(it.h[k].trim())}${hints}</div></details>`;
+      }
+      // the revise link's text is filled in by site.js ("Revise: <chapter title>")
+      const revLink = rev ? `<p class="ta-rev"><a href="#${rev}"></a></p>` : '';
+      return `<li${marks ? ` data-marks="${marks}"` : ''}${rev ? ` data-rev="${rev}"` : ''}><div class="tq">${badge}${processBlocks(q)}</div>${hints}<details class="ta"><summary>Show answer</summary><div class="ta-b">${addMarks(processBlocks((it.a || '').trim()))}${revLink}</div></details></li>`;
     }).join('\n');
     return `<ol class="try-list">${lis}</ol>`;
+  }
+
+  // :::links: "- watch: [Title](https://…) · Site · note [paid] [unofficial]"; other lines become a note underneath
+  function renderLinks(body, title) {
+    const groups = {}, notes = [];
+    for (const raw of body.split('\n')) {
+      const line = raw.trim();
+      if (!line) continue;
+      const m = line.match(/^-\s+(?:\*\*)?([A-Za-z]+):(?:\*\*)?\s+(.*)$/);
+      if (!m) {
+        if (/^-\s/.test(line)) err(`:::links line needs a kind ("- watch: [Title](https://…) · Site · note") → "${line.slice(0, 60)}"`);
+        else notes.push(line);
+        continue;
+      }
+      let kind = m[1].toLowerCase();
+      if (kind === 'practice') kind = 'practise';
+      if (!LINK_KINDS[kind]) { err(`:::links kind "${m[1]}" is not one of ${Object.keys(LINK_KINDS).join(', ')}`); continue; }
+      const tags = [];
+      const rest = m[2].replace(/\s*\[(paid|unofficial)\]/gi, (x, t) => { tags.push(t.toLowerCase()); return ''; })
+        .replace(/\s*\*\(some content paid\)\*/i, () => { tags.push('paid'); return ''; })
+        .replace(/\s*\*\(unofficial archive\)\*/i, () => { tags.push('unofficial'); return ''; });
+      const lm = rest.match(/^\[([^\]]+)\]\(([^)\s]+)\)\s*(.*)$/);
+      if (!lm) { err(`:::links line must start with [Title](https://…) after the kind → "${line.slice(0, 60)}"`); continue; }
+      if (!/^https:\/\/[^\s/]+\.[^\s]+$/.test(lm[2])) err(`:::links URL must be a full https:// address → ${lm[2].slice(0, 80)}`);
+      const parts = lm[3].replace(/^·\s*/, '').split(/\s+·\s+/).map(x => x.trim()).filter(Boolean);
+      const site = parts[0] || '', note = parts.slice(1).join(' · ');
+      const li = `<li><a class="lk-a" href="${escapeHtml(lm[2])}" target="_blank" rel="noopener noreferrer">${mdInline(lm[1])}</a>`
+        + (site ? `<span class="lk-site">${mdInline(site)}</span>` : '')
+        + (note ? `<span class="lk-n">${mdInline(note)}</span>` : '')
+        + (tags.length ? `<span class="lk-tags">${[...new Set(tags)].map(t => `<span class="lk-tag">${LINK_TAGS[t]}</span>`).join('')}</span>` : '') + '</li>';
+      (groups[kind] = groups[kind] || []).push(li);
+    }
+    if (!Object.keys(groups).length) err('empty :::links block');
+    const kinds = Object.keys(LINK_KINDS).filter(k => groups[k]);
+    for (const k of kinds) st.LINKS.push({ c: st.chapter, s: st.subject, kind: k, html: groups[k].join('') });
+    const inner = kinds.map(k => `<div class="lk-g lk-${k}" data-kind="${k}"><div class="lk-gt">${icon(LINK_KINDS[k].i)}${LINK_KINDS[k].t}</div><ul>${groups[k].join('')}</ul></div>`).join('');
+    return `<aside class="links"><div class="links-h"><span class="links-l">Learn more online</span>${title ? `<span class="links-t">${mdInline(title)}</span>` : ''}<span class="links-on">Needs the internet</span></div><div class="links-b">${inner}</div>${notes.length ? `<p class="links-foot">${notes.map(mdInline).join(' ')}</p>` : ''}</aside>`;
+  }
+
+  // :::checklist: "- [ ] I can …" lines; ticks are saved in the viewer's browser (app.js)
+  function renderChecklist(body, title) {
+    const items = [];
+    for (const raw of body.split('\n')) {
+      const line = raw.trim();
+      if (!line) continue;
+      const m = line.match(/^-\s+(?:\[[ xX]?\]\s+)?(.+)$/);
+      if (!m) { err(`:::checklist lines start with "- [ ] " → "${line.slice(0, 60)}"`); continue; }
+      items.push({ k: hash(st.chapter + '|' + m[1].trim()), html: mdInline(m[1].trim()) });
+    }
+    if (!items.length) err('empty :::checklist block');
+    st.CHECKS.push({ c: st.chapter, s: st.subject, keys: items.map(i => i.k) });
+    return `<div class="checklist"><div class="cl-h"><span class="cl-l">Checklist</span><span class="cl-t">${title ? mdInline(title) : 'Tick what you can do without your notes'}</span><span class="cl-n" data-clp="${items.map(i => i.k).join(',')}"></span></div><ul class="cl-list">${items.map(i => `<li><label><input type="checkbox" data-ck="${i.k}"><span>${i.html}</span></label></li>`).join('')}</ul></div>`;
   }
 
   function renderQuiz(body) {
@@ -204,6 +289,20 @@ function createRenderer(opts = {}) {
           const total = [...inner.matchAll(/\[(?:M|A|B|C|E)(\d)\]/g)].reduce((a, m) => a + +m[1], 0);
           const marks = total ? `<span class="eg-m">${total} mark${total === 1 ? '' : 's'}</span>` : '';
           html = `<div class="eg"><div class="eg-h"><span class="eg-l">Worked example</span>${title ? `<span class="eg-t">${mdInline(title)}</span>` : ''}${marks}</div><div class="eg-b">${addMarks(processBlocks(inner))}</div></div>`;
+        } else if (type === 'try' && /\bmock\b/.test(st.level)) {
+          html = `<div class="try try-mock"><div class="try-h"><span class="try-l">Question ${++st.qn}</span>${title ? `<span class="try-t">${mdInline(title)}</span>` : ''}</div>${renderTry(inner)}</div>`;
+        } else if (type === 'links') {
+          html = renderLinks(inner, title);
+        } else if (type === 'checklist') {
+          html = renderChecklist(inner, title);
+        } else if (type === 'progress') {
+          // filled in by site.js once every chapter is rendered (it needs the course's papers and all checklists)
+          html = `<div class="cl-prog" data-prog="${escapeHtml(st.subject)}|${escapeHtml(title)}"></div>`;
+        } else if (type === 'proof') {
+          const ex = /^examinable\b/i.test(title);
+          const t = title.replace(/^examinable\b\s*/i, '');
+          const badge = ex ? '' : `<span class="proof-badge">${escapeHtml(opts.proofBadge ? opts.proofBadge(st.subject) : 'Not examined')}</span>`;
+          html = `<details class="proof${ex ? ' proof-ex' : ''}"><summary><span class="proof-l">Why it's true</span>${t ? `<span class="proof-t">${mdInline(t)}</span>` : ''}${badge}</summary><div class="proof-b">${addMarks(processBlocks(inner))}</div></details>`;
         } else if (type === 'try') {
           html = `<div class="try"><div class="try-h"><span class="try-l">Try it yourself</span>${title ? `<span class="try-t">${mdInline(title)}</span>` : ''}</div>${renderTry(inner)}</div>`;
         } else if (type === 'quiz') {
@@ -287,6 +386,8 @@ function createRenderer(opts = {}) {
       }
       if (!group) { group = { title: 'Contents', chapters: [] }; groups.push(group); }
       st.chapter = meta.chapter;
+      st.level = String(meta.level || '').toLowerCase();
+      st.qn = 0; st.marks = 0;
       if (!meta.title) err('missing @title');
       const body = pl.slice(bodyStart).join('\n');
       if (/^# /m.test(body)) err('use ## for section headings (the chapter title is the only h1)');
@@ -296,7 +397,7 @@ function createRenderer(opts = {}) {
       if (meta.summary) inline(meta.summary);
       inline(meta.title || '');
       const words = stripTags(html).split(/\s+/).filter(Boolean).length;
-      const ch = { id: meta.chapter, title: meta.title || meta.chapter, subject: subjectId, group: group.title, meta, html, words };
+      const ch = { id: meta.chapter, title: meta.title || meta.chapter, subject: subjectId, group: group.title, meta, html, words, marks: st.marks };
       chapters.push(ch);
       group.chapters.push(ch);
     });
@@ -306,4 +407,4 @@ function createRenderer(opts = {}) {
   return { st, renderFile, inline, extractMath, subMath, mdInline, escapeHtml, stripTags };
 }
 
-module.exports = { createRenderer, escapeHtml, stripTags, CALLOUTS, BLOCK_TYPES };
+module.exports = { createRenderer, escapeHtml, stripTags, CALLOUTS, BLOCK_TYPES, LINK_KINDS };

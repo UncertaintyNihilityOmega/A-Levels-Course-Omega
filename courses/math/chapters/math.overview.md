@@ -128,16 +128,15 @@ Start with the official syllabus and past papers; [The best resources by subject
 - Follow the chapters in order, study 7 to 8 hours a week, and keep an error log.
 :::
 
-:::note Learn more online
-- **Watch:** [CAIE past papers with video solutions](https://www.examsolutions.net/international-exams/cie/pure-past-papers/) · ExamSolutions · attempt a paper first, then watch the worked solutions
-- **Practise:** [CAIE A Level Maths mock exams](https://www.savemyexams.com/a-level/maths/cie/20/mock-exams/) · Save My Exams · timed practice papers *(some content paid)*
-- **Explore:** [Desmos graphing calculator](https://www.desmos.com/calculator) · Desmos · check every sketch you draw while you study (not allowed in the exam)
-- **Read:** [9709 syllabus 2026–2027 (PDF)](https://www.cambridgeinternational.org/Images/697427-2026-2027-syllabus.pdf) · Cambridge International · every learning outcome, straight from the board
-- **Papers:** [Cambridge 9709 qualification page](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-mathematics-9709/) · Cambridge International · the official home of 9709: syllabus, specimen papers and the MF19 formula list
-- **Papers:** [9709 past papers, all sessions](https://pastpapers.papacambridge.com/papers/caie/as-and-a-level-mathematics-9709) · PapaCambridge · question papers, mark schemes and examiner reports *(unofficial archive)*
-- **Papers:** [9709 Paper 1 past papers (menu for the other papers)](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-1/) · Physics & Maths Tutor · papers with mark schemes, one page per paper *(unofficial archive)*
+:::links
+- watch: [CAIE past papers with video solutions](https://www.examsolutions.net/international-exams/cie/pure-past-papers/) · ExamSolutions · attempt a paper first, then watch the worked solutions
+- practise: [CAIE A Level Maths mock exams](https://www.savemyexams.com/a-level/maths/cie/20/mock-exams/) · Save My Exams · timed practice papers [paid]
+- explore: [Desmos graphing calculator](https://www.desmos.com/calculator) · Desmos · check every sketch you draw while you study (not allowed in the exam)
+- read: [9709 syllabus 2026–2027 (PDF)](https://www.cambridgeinternational.org/Images/697427-2026-2027-syllabus.pdf) · Cambridge International · every learning outcome, straight from the board
+- papers: [Cambridge 9709 qualification page](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-mathematics-9709/) · Cambridge International · the official home of 9709: syllabus, specimen papers and the MF19 formula list
+- papers: [9709 past papers, all sessions](https://pastpapers.papacambridge.com/papers/caie/as-and-a-level-mathematics-9709) · PapaCambridge · question papers, mark schemes and examiner reports [unofficial]
+- papers: [9709 Paper 1 past papers (menu for the other papers)](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-1/) · Physics & Maths Tutor · papers with mark schemes, one page per paper [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: start with [Numbers, fractions and percentages](#math.f.numbers), or go straight to [Quadratics](#math.p1.quadratics) if the foundations feel secure. If you love the subject, [Further Mathematics: a guided tour](#math.further) shows what comes after.

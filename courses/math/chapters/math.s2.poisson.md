@@ -249,14 +249,13 @@ A: (a) \(X \sim \mathrm{Po}(4)\). \(P(X > 7) = 1 - P(X \le 7) = 1 - 0.9489 = 0.0
 - In exam answers, state conditions in context and show the substituted formula before the calculator value.
 :::
 
-:::note Learn more online
-- **Watch:** [The Poisson distribution](https://www.examsolutions.net/tutorials/poisson-distribution/) · ExamSolutions · Po(λ) probabilities step by step
-- **Watch:** [Exam questions: Poisson distribution](https://www.examsolutions.net/tutorials/exam-questions-poisson-distribution/) · ExamSolutions · exam-style questions solved on video
-- **Practise:** [CAIE S2 Poisson exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-2/topic-questions/statistical-distributions/poisson-distribution/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Probability distributions](https://seeing-theory.brown.edu/probability-distributions/index.html) · Seeing Theory · interactive distributions
-- **Papers:** [9709 Paper 6 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-7/) · Physics & Maths Tutor · their page "cie-paper-7" holds Paper 6 (9709/6) *(unofficial archive)*
+:::links
+- watch: [The Poisson distribution](https://www.examsolutions.net/tutorials/poisson-distribution/) · ExamSolutions · Po(λ) probabilities step by step
+- watch: [Exam questions: Poisson distribution](https://www.examsolutions.net/tutorials/exam-questions-poisson-distribution/) · ExamSolutions · exam-style questions solved on video
+- practise: [CAIE S2 Poisson exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-2/topic-questions/statistical-distributions/poisson-distribution/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Probability distributions](https://seeing-theory.brown.edu/probability-distributions/index.html) · Seeing Theory · interactive distributions
+- papers: [9709 Paper 6 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-7/) · Physics & Maths Tutor · their page "cie-paper-7" holds Paper 6 (9709/6) [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Linear combinations of random variables](#math.s2.linear) shows how to add independent random variables, including Poisson ones.

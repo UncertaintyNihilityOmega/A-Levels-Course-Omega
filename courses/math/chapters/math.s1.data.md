@@ -240,15 +240,14 @@ A: Route A has the lower median (31 against 35), so its journeys are quicker on 
 - When comparing, give a measure of centre, a measure of spread and a sentence in context.
 :::
 
-:::note Learn more online
-- **Watch:** [Histograms](https://www.examsolutions.net/tutorials/histograms/) · ExamSolutions · frequency density and class widths
-- **Watch:** [Exam questions: mean and standard deviation](https://www.examsolutions.net/tutorials/exam-questions-calculating-the-mean-and-standard-deviation/) · ExamSolutions · from raw data and from Σx, Σx²
-- **Practise:** [CAIE S1 representation of data exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-1/topic-questions/data-presentation-and-interpretation/representation-of-data/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Practise:** [Statistics and Probability](https://www.khanacademy.org/math/statistics-probability) · Khan Academy · units on displaying and summarising data
-- **Read:** [Introductory Statistics 2e (free textbook)](https://openstax.org/details/books/introductory-statistics-2e) · OpenStax · the descriptive statistics chapter
-- **Papers:** [9709 Paper 5 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-6/) · Physics & Maths Tutor · their page "cie-paper-6" holds Paper 5 (9709/5) *(unofficial archive)*
+:::links
+- watch: [Histograms](https://www.examsolutions.net/tutorials/histograms/) · ExamSolutions · frequency density and class widths
+- watch: [Exam questions: mean and standard deviation](https://www.examsolutions.net/tutorials/exam-questions-calculating-the-mean-and-standard-deviation/) · ExamSolutions · from raw data and from Σx, Σx²
+- practise: [CAIE S1 representation of data exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-1/topic-questions/data-presentation-and-interpretation/representation-of-data/exam-questions/) · Save My Exams · with mark schemes [paid]
+- practise: [Statistics and Probability](https://www.khanacademy.org/math/statistics-probability) · Khan Academy · units on displaying and summarising data
+- read: [Introductory Statistics 2e (free textbook)](https://openstax.org/details/books/introductory-statistics-2e) · OpenStax · the descriptive statistics chapter
+- papers: [9709 Paper 5 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-6/) · Physics & Maths Tutor · their page "cie-paper-6" holds Paper 5 (9709/5) [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Permutations and combinations](#math.s1.perms).

@@ -277,6 +277,141 @@
       return { name: name.trim(), value: isFinite(v) ? v : 1, min: isFinite(mn) ? mn : -5, max: isFinite(mx) ? mx : 5, step: isFinite(st) ? st : 0.1 };
     });
   };
+
+  /* ---------------- helpers for building widgets quickly (documented in kit/WIDGETS.md) ---------------- */
+
+  /** Slider with a typed number box beside it, kept in step. Returns {el, get, set}. */
+  W.sliderNum = function ({ label, min, max, step, value, oninput }) {
+    const range = W.h('input', { type: 'range', min, max, step: step || 'any', value, 'aria-label': label });
+    const num = W.h('input', { type: 'number', min, max, step: step || 'any', value, 'aria-label': label + ' (type a value)', class: 'w-num' });
+    const fire = (v) => { oninput && oninput(v); };
+    range.addEventListener('input', () => { num.value = range.value; fire(+range.value); });
+    num.addEventListener('input', () => {
+      const v = +num.value;
+      if (num.value === '' || !isFinite(v)) return;
+      range.value = Math.min(+max, Math.max(+min, v));
+      fire(v);
+    });
+    const el = W.h('div', { class: 'w-ctl w-sn' }, W.h('label', {}, label), W.h('div', { class: 'w-sn-row' }, range, num));
+    return { el, get: () => +num.value, set: (v) => { range.value = v; num.value = v; } };
+  };
+
+  /** A small two-column readout table: W.readout([['area', 'Area'], ['err', 'Error']]) → {el, set(key, text)} */
+  W.readout = function (rows) {
+    const cells = {};
+    const tb = W.h('tbody', {}, rows.map(([k, label]) => { cells[k] = W.h('td', {}, '—'); return W.h('tr', {}, W.h('th', { scope: 'row' }, label), cells[k]); }));
+    return { el: W.h('table', { class: 'w-read' }, tb), set: (k, v) => { if (cells[k]) cells[k].textContent = v; } };
+  };
+
+  /** Theme colours plus a series palette for several curves: c.series[0], c.series[1], … */
+  W.palette = function (el) {
+    const c = W.colors(el);
+    c.series = [c.sc, c.sc2, c.red, c.ok, c.pen, c.ink2];
+    return c;
+  };
+
+  /** Pointer dragging on an element (works for mouse, pen and touch).
+   *  W.drag(el, { hit(x, y) → thing or null, move(thing, x, y), end(thing) }); x, y are CSS pixels inside el. */
+  W.drag = function (el, h) {
+    let thing = null;
+    const pos = (e) => { const r = el.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
+    el.style.touchAction = 'none';
+    el.addEventListener('pointerdown', (e) => {
+      const [x, y] = pos(e);
+      thing = h.hit ? h.hit(x, y) : true;
+      if (thing == null || thing === false) { thing = null; return; }
+      el.setPointerCapture(e.pointerId); e.preventDefault();
+      h.move && h.move(thing, x, y);
+    });
+    el.addEventListener('pointermove', (e) => { if (thing != null) { const [x, y] = pos(e); h.move && h.move(thing, x, y); } });
+    const stop = () => { if (thing != null) { h.end && h.end(thing); thing = null; } };
+    el.addEventListener('pointerup', stop);
+    el.addEventListener('pointercancel', stop);
+  };
+
+  /** True when the reader has asked for reduced motion. */
+  W.reducedMotion = function () { try { return window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) { return false; } };
+
+  /** Animation loop that respects reduced motion and stops while the page is hidden.
+   *  const a = W.animate((dt, t) => { …; return false to stop }); a.start(); a.stop(); a.running
+   *  Under reduced motion start() calls opts.still() once instead (draw the final frame). */
+  W.animate = function (step, opts) {
+    opts = opts || {};
+    let raf = 0, last = 0, t = 0;
+    const a = { running: false };
+    const frame = (now) => {
+      if (!a.running) return;
+      const dt = Math.min(0.05, last ? (now - last) / 1000 : 0);
+      last = now;
+      if (document.hidden) { raf = requestAnimationFrame(frame); return; }
+      t += dt;
+      if (step(dt, t) === false) { a.stop(); return; }
+      raf = requestAnimationFrame(frame);
+    };
+    a.start = () => {
+      if (W.reducedMotion()) { if (opts.still) opts.still(); return; }
+      if (a.running) return;
+      a.running = true; last = 0; raf = requestAnimationFrame(frame);
+    };
+    a.stop = () => { a.running = false; cancelAnimationFrame(raf); };
+    a.reset = () => { t = 0; };
+    return a;
+  };
+
+  /** 3D view: rotate (yaw about the vertical axis, then pitch) and project to the canvas.
+   *  const v = W.view3d({ yaw: 0.6, pitch: 0.35, scale: 40 }); v.project(x, y, z, w, h) → [sx, sy, depth]
+   *  W.orbit(canvasWrap, v, redraw) lets the reader drag to rotate. Axes: x right, y into the page, z up. */
+  W.view3d = function (o) {
+    const v = Object.assign({ yaw: 0.6, pitch: 0.35, scale: 40 }, o);
+    v.project = (x, y, z, w, h) => {
+      const cy = Math.cos(v.yaw), sy = Math.sin(v.yaw), cp = Math.cos(v.pitch), sp = Math.sin(v.pitch);
+      const x1 = x * cy - y * sy, y1 = x * sy + y * cy;
+      const z2 = z * cp - y1 * sp, d = z * sp + y1 * cp;
+      return [w / 2 + x1 * v.scale, h / 2 - z2 * v.scale, d];
+    };
+    return v;
+  };
+  W.orbit = function (el, v, redraw) {
+    let x0 = 0, y0 = 0;
+    W.drag(el, {
+      hit: (x, y) => { x0 = x; y0 = y; return true; },
+      move: (t, x, y) => { v.yaw += (x - x0) * 0.01; v.pitch = Math.max(-1.5, Math.min(1.5, v.pitch + (y - y0) * 0.01)); x0 = x; y0 = y; redraw(); }
+    });
+  };
+
+  /** Seeded random numbers (the same seed gives the same sequence): const r = W.rng(42); r(), r.int(1, 6), r.normal(0, 1) */
+  W.rng = function (seed) {
+    let a = (seed >>> 0) || 1;
+    const r = () => { a = (a + 0x6D2B79F5) >>> 0; let t = a; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+    r.int = (lo, hi) => lo + Math.floor(r() * (hi - lo + 1));
+    r.normal = (mu, sd) => { let u = 0; while (!u) u = r(); return (mu || 0) + (sd == null ? 1 : sd) * Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * r()); };
+    return r;
+  };
+
+  /** Back / Next step controller with "Step 2 of 6" and ←/→ keys while the widget has focus.
+   *  const s = W.stepper(root, { steps: 6, onstep(i) { … } }); body.append(s.el); s.go(0) */
+  W.stepper = function (root, { steps, onstep, labels }) {
+    let i = 0;
+    const back = W.h('button', { class: 'btn btn-sm btn-sec', type: 'button' }, 'Back');
+    const next = W.h('button', { class: 'btn btn-sm', type: 'button' }, 'Next');
+    const lab = W.h('span', { class: 'w-step', 'aria-live': 'polite' });
+    const s = { el: W.h('div', { class: 'w-row w-stepper' }, back, lab, next), get i() { return i; } };
+    s.go = (k) => {
+      i = Math.max(0, Math.min(steps - 1, k));
+      back.disabled = i === 0; next.disabled = i === steps - 1;
+      lab.textContent = labels && labels[i] ? labels[i] : `Step ${i + 1} of ${steps}`;
+      onstep && onstep(i);
+    };
+    back.addEventListener('click', () => s.go(i - 1));
+    next.addEventListener('click', () => s.go(i + 1));
+    root.setAttribute('tabindex', root.getAttribute('tabindex') || '0');
+    root.addEventListener('keydown', (e) => {
+      if (/input|select|textarea/i.test(e.target.tagName)) return;
+      if (e.key === 'ArrowRight') { e.preventDefault(); s.go(i + 1); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); s.go(i - 1); }
+    });
+    return s;
+  };
 })();
 
 /* Course chunks: each course lives in c/<course>.js, loaded on demand with a <script> tag (works from file://).

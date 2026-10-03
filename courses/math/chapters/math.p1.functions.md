@@ -284,15 +284,14 @@ Solving \(3x - 2 = \dfrac{x + 2}{3}\): \(9x - 6 = x + 2\), so \(8x = 8\) and \(x
 - For combined transformations, work in the order you would calculate: stretch first, then translate.
 :::
 
-:::note Learn more online
-- **Watch:** [The inverse of a function](https://www.examsolutions.net/tutorials/inverse-function/) · ExamSolutions · finding f⁻¹(x) and its domain
-- **Watch:** [Exam questions: functions](https://www.examsolutions.net/tutorials/functions-exam-questions/) · ExamSolutions · composite and inverse functions in exam style
-- **Practise:** [CAIE Pure 1 functions exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/algebra-and-functions/functions/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Practise:** [CAIE Pure 1 transformations exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/algebra-and-functions/transformations-of-functions/exam-questions/) · Save My Exams · translations, stretches and reflections *(some content paid)*
-- **Explore:** [Combining Functions](https://undergroundmathematics.org/combining-functions) · Underground Mathematics · composition and inverses explored deeply
-- **Explore:** [Desmos graphing calculator](https://www.desmos.com/calculator) · Desmos · add a slider to f(x + a) or af(x) and watch the graph move
+:::links
+- watch: [The inverse of a function](https://www.examsolutions.net/tutorials/inverse-function/) · ExamSolutions · finding f⁻¹(x) and its domain
+- watch: [Exam questions: functions](https://www.examsolutions.net/tutorials/functions-exam-questions/) · ExamSolutions · composite and inverse functions in exam style
+- practise: [CAIE Pure 1 functions exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/algebra-and-functions/functions/exam-questions/) · Save My Exams · with mark schemes [paid]
+- practise: [CAIE Pure 1 transformations exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/algebra-and-functions/transformations-of-functions/exam-questions/) · Save My Exams · translations, stretches and reflections [paid]
+- explore: [Combining Functions](https://undergroundmathematics.org/combining-functions) · Underground Mathematics · composition and inverses explored deeply
+- explore: [Desmos graphing calculator](https://www.desmos.com/calculator) · Desmos · add a slider to f(x + a) or af(x) and watch the graph move
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Coordinate geometry](#math.p1.coord) uses equations to describe straight lines and circles, and you will meet transformed circles again there.

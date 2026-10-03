@@ -45,6 +45,8 @@ Each syllabus has a code (for example 9709 for Cambridge Mathematics or 9702 for
 
 Most of these follow UK specifications, but the Pure Mathematics, Statistics and Mechanics content overlaps heavily with Cambridge 9709. Check the topic against your syllabus before you spend time on it.
 
+Every Maths chapter in this guide ends with a short "Learn more online" list picked for that topic. [Maths: learn more online](#tools.l.math) gathers all of them on one page, grouped by topic and by kind.
+
 ## Physics and Chemistry
 
 | Resource | Best for | Cost |

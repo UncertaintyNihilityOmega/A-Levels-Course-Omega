@@ -17,7 +17,7 @@ const { core, sources: coreSources } = loadCore(path.join(ROOT, 'core'));
 const courses = fs.readdirSync(path.join(ROOT, 'courses')).filter(d => fs.existsSync(path.join(ROOT, 'courses', d, 'course.json')))
   .map(d => loadCourse(path.join(ROOT, 'courses', d)));
 const sources = [...coreSources, ...courses].sort((a, b) => core.order.indexOf(a.id) - core.order.indexOf(b.id));
-const res = buildSite(sources, { order: core.order, formulaSheets: core.formulaSheets, assets: require('./assets'), write: false });
+const res = buildSite(sources, { order: core.order, formulaSheets: core.formulaSheets, linkSheets: core.linkSheets, assets: require('./assets'), write: false });
 
 let bad = res.errors.length;
 const rows = [];

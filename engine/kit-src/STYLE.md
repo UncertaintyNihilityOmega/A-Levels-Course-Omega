@@ -22,7 +22,8 @@ from course.json. Start with these lines, one per line, then a blank line:
     @time 5–7 hours
     @summary One or two plain sentences saying what the chapter covers. May contain \(x^2\).
 
-- `@level`: pre (foundations below A Level), as, a2, "as a2" (mark the A2 part inside), guide, ref, sum, ext.
+- `@level`: pre (foundations below A Level), as, a2, "as a2" (mark the A2 part inside), guide, ref, sum, ext,
+  mock (a full mock paper: see "Mock papers" below).
 - `@paper`: where it is examined, short. `@time`: realistic study time for a beginner.
 - The title is the only h1. Use `##` for sections, `###` for subsections.
 - Links: `[Quadratics](#math.p1.quadratics)`. Link only to ids in course.json or kit/LINKS.md. Links to
@@ -39,7 +40,8 @@ from course.json. Start with these lines, one per line, then a blank line:
 5. `:::board` (2–6 lines) when boards differ.
 6. `:::try`: practice from easy to exam style, each answer showing the key steps and the final answer.
 7. `:::quiz`: multiple-choice questions whose wrong options are real misconceptions.
-8. `:::recap`: the facts a student must remember. Then a last line `Next: [Title](#id)`.
+8. `:::recap`: the facts a student must remember. Then `:::links` (optional: verified online resources), then a
+   last line `Next: [Title](#id)`.
 
 Coverage: everything the syllabus lists for the topic (FACTS.md has the learning outcomes), at full
 exam depth. A student who masters the chapter can answer real exam questions on it.
@@ -80,6 +82,10 @@ application → analysis → evaluation), plus calculations where the topic has 
 | `:::try Title` | `Q:` starts a question, `A:` its answer; following lines continue them |
 | `:::quiz Title` | `? question`, `+ correct` (exactly one), `- wrong` (2–4), `> explanation` |
 | `:::recap` | end-of-chapter summary bullets |
+| `:::proof Title` | "Why it's true": a proof, folded away, badged "not examined"; `:::proof examinable Title` drops the badge. Never counts towards the checklist minimums |
+| `:::checklist Title` | "I can …" lines, `- [ ] I can …`; readers tick them (saved in their browser) |
+| `:::progress P1` | a live roll-up of the checklists in the chapters of paper P1 (`papers` in course.json); no id = every paper |
+| `:::links` | "Learn more online": `- watch: [Title](https://…) · Site · why it helps [paid] [unofficial]`; kinds watch, practise, explore, read, papers; https only; other lines become a small note. Collected on one page per course |
 | `:::plot Caption` | a function graph (see Figures) |
 | `:::html` | raw HTML: hand-drawn SVG figures and widgets |
 
@@ -97,10 +103,25 @@ A: \(x^2 = 9\), so \(x = 3\) or \(x = -3\).
 > Electrons carry −1.60 × 10⁻¹⁹ C; protons are positive and neutrons are neutral.
 :::
 ```
+In `:::try`, a question can carry its marks and a revise link, and hints that open one at a time before the answer:
+
+    Q: [3 marks] (#math.p1.quadratics) Solve \(2x^2 - 3x - 2 = 0\).
+    H: Multiply \(a\) and \(c\): you need two numbers with product −4 and sum −3.
+    H: Factorise as \((2x + 1)(x - 2)\).
+    A: \((2x + 1)(x - 2) = 0\) [M1] so \(x = -\tfrac12\) or \(x = 2\) [A1] [A1]
+
+`[n marks]` shows as `[n]` beside the question; `(#id)` adds "Revise: <chapter>" under the answer. Both are optional.
+
 Marks: M = method, A = accuracy (depends on M), B = independent mark. Put each mark at the end of the line
 (or right after the display maths) that earns it: in worked examples and answers the page moves marks into
 an examiner's margin level with that line, and the example's header shows the total. Tables: Markdown pipes, short cells.
 Bold a key word the first time if it has no `:::def` card.
+
+### Mock papers (`@level mock`)
+`@time` is the time allowed (`1 h 50 min`). Instructions go in a `:::exam` box, then **one `:::try` per question**
+(the page numbers them Question 1, 2, …), each `Q: [n marks] (#chapter-to-revise) …` and `A:` the full mark scheme.
+The page adds a clock, hides every answer until the reader presses Finish, then lets them enter their mark per
+question and lists the chapters to revise. The header shows the total marks: check it matches the real paper.
 
 ## Figures, cheapest first
 1. **Function graphs: `:::plot`.** The build draws it from one line of options; the title is the caption.

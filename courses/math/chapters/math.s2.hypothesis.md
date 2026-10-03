@@ -333,15 +333,14 @@ A: \(H_0: \mu = 50\), \(H_1: \mu > 50\) [B1]. \(\bar X \sim N(50, 1.5^2)\) [B1].
 - Type I error: rejecting a true \(H_0\); probability is the actual significance level. Type II: not rejecting a false \(H_0\); probability is found using a stated true parameter value and the acceptance region.
 :::
 
-:::note Learn more online
-- **Watch:** [Type I and Type II errors](https://www.examsolutions.net/tutorials/type-i-error-and-type-ii-errors/) · ExamSolutions · what each error means and its probability
-- **Watch:** [Exam questions: binomial hypothesis tests](https://www.examsolutions.net/tutorials/exam-questions-hypothesis-tests-binomial-distribution/) · ExamSolutions · exam-style questions solved on video
-- **Practise:** [CAIE S2 hypothesis testing exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-2/topic-questions/hypothesis-testing/hypothesis-testing/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Practise:** [Statistics and Probability](https://www.khanacademy.org/math/statistics-probability) · Khan Academy · the significance tests unit
-- **Explore:** [Frequentist inference](https://seeing-theory.brown.edu/frequentist-inference/index.html) · Seeing Theory · p-values and intervals you can simulate
-- **Papers:** [9709 Paper 6 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-7/) · Physics & Maths Tutor · papers with mark schemes *(unofficial archive)*
+:::links
+- watch: [Type I and Type II errors](https://www.examsolutions.net/tutorials/type-i-error-and-type-ii-errors/) · ExamSolutions · what each error means and its probability
+- watch: [Exam questions: binomial hypothesis tests](https://www.examsolutions.net/tutorials/exam-questions-hypothesis-tests-binomial-distribution/) · ExamSolutions · exam-style questions solved on video
+- practise: [CAIE S2 hypothesis testing exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-2/topic-questions/hypothesis-testing/hypothesis-testing/exam-questions/) · Save My Exams · with mark schemes [paid]
+- practise: [Statistics and Probability](https://www.khanacademy.org/math/statistics-probability) · Khan Academy · the significance tests unit
+- explore: [Frequentist inference](https://seeing-theory.brown.edu/frequentist-inference/index.html) · Seeing Theory · p-values and intervals you can simulate
+- papers: [9709 Paper 6 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-7/) · Physics & Maths Tutor · papers with mark schemes [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Correlation and regression](#math.s.regression).

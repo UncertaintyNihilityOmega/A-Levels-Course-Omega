@@ -2,9 +2,17 @@
 // plus c/<course>.js chunks that the page loads with <script> on demand, so it works from file://.
 // Used by engine/build.js (the whole guide), engine/check.js (validation only) and the course kit (preview).
 'use strict';
-const { createRenderer, escapeHtml, stripTags } = require('./lib');
+const { createRenderer, escapeHtml, stripTags, LINK_KINDS } = require('./lib');
 
-const LEVELS = { start: 'Start here', pre: 'Foundations', as: 'AS Level', a2: 'A Level (A2)', guide: 'Guide', tool: 'Interactive', ref: 'Reference', sum: 'Summary', ext: 'Beyond A Level' };
+const LEVELS = { start: 'Start here', pre: 'Foundations', as: 'AS Level', a2: 'A Level (A2)', guide: 'Guide', tool: 'Interactive', ref: 'Reference', sum: 'Summary', ext: 'Beyond A Level', mock: 'Mock paper' };
+/** "1 h 50 min", "1 hour 15", "75 minutes" → minutes (0 if none) */
+const parseMinutes = (t) => {
+  const s = String(t || '');
+  const h = s.match(/(\d+(?:\.\d+)?)\s*h(?:ours?|rs?)?\b\s*(\d+)?/i);
+  if (h) return Math.round(+h[1] * 60 + (+h[2] || 0));
+  const m = s.match(/(\d+)\s*min/i);
+  return m ? +m[1] : 0;
+};
 const REG_RE = /W\.register\(\s*['"]([a-z0-9-]+)['"]/g;
 const stripComments = (src) => String(src || '').replace(/\/\*[\s\S]*?\*\//g, '').replace(/^\s*\/\/.*$/gm, '');
 const widgetNames = (src) => [...stripComments(src).matchAll(REG_RE)].map(m => m[1]);
@@ -20,7 +28,7 @@ const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(
  * returns: { errors, warnings, files: { relPath: string }, chapters, stats }
  */
 function buildSite(sources, opts) {
-  const R = createRenderer();
+  const R = createRenderer({ proofBadge: (sid) => ((sources.find(s => s.id === sid) || {}).json || {}).proofBadge || 'Not examined' });
   const { st } = R;
   const errors = st.errors, warnings = st.warnings;
   const order = opts.order || [];
@@ -53,6 +61,18 @@ function buildSite(sources, opts) {
     aliases[from] = to;
   }
   for (const [from, to] of Object.entries(opts.externalAliases || {})) if (!aliases[from]) aliases[from] = to;
+
+  // ---------- papers (course.json "papers": [{id, title, chapters}]): practice sets and checklist roll-ups ----------
+  const papers = {};
+  for (const s of sources) {
+    const list = (s.json && s.json.papers) || [];
+    if (!Array.isArray(list)) { errors.push(`[${s.id}] "papers" in course.json must be a list`); continue; }
+    for (const p of list) {
+      if (!p.id || !p.title || !Array.isArray(p.chapters)) { errors.push(`[${s.id}] each paper needs id, title and chapters`); continue; }
+      for (const id of p.chapters) if (!planned.has(id) || planned.get(id).src !== s) errors.push(`[${s.id}] paper ${p.id} lists ${id}, which is not a chapter of this course`);
+    }
+    papers[s.id] = list.filter(p => p.id && Array.isArray(p.chapters));
+  }
 
   // ---------- render every chapter file ----------
   const written = new Map();
@@ -94,12 +114,61 @@ function buildSite(sources, opts) {
     sheet.html += html || '<p class="sheet-empty"><em>The formulas appear here as the chapters are written.</em></p>';
   }
 
+  // ---------- "Learn more online" pages from :::links boxes, grouped by course group, chapter and kind ----------
+  for (const [sheetId, courseIds] of Object.entries(opts.linkSheets || {})) {
+    const sheet = written.get(sheetId);
+    if (!sheet) continue;
+    let html = '', kinds = new Set(), n = 0;
+    for (const cid of courseIds) {
+      const s = sources.find(x => x.id === cid);
+      if (!s) continue;
+      let group = null;
+      for (const e of s.chapters) {
+        const links = st.LINKS.filter(l => l.c === e.id);
+        if (!links.length || !written.has(e.id)) continue;
+        const c = written.get(e.id);
+        if (c.group !== group) { group = c.group; html += `<h2 id="${sheetId}--${slug(group)}">${escapeHtml(group)}</h2>`; }
+        const t = R.inline(c.title);
+        html += `<h3 id="${sheetId}--${slug(e.id)}"><a href="#${e.id}">${t}</a></h3><div class="links-b">`
+          + links.map(l => { kinds.add(l.kind); n += (l.html.match(/<li>/g) || []).length; return `<div class="lk-g lk-${l.kind}" data-kind="${l.kind}"><div class="lk-gt">${LINK_KINDS[l.kind].t}</div><ul>${l.html}</ul></div>`; }).join('') + '</div>';
+      }
+    }
+    const order = Object.keys(LINK_KINDS).filter(k => kinds.has(k));
+    sheet.html += html
+      ? `<div class="lk-sheet"><div class="lk-filter" role="group" aria-label="Show links of one kind"><button type="button" data-k="" aria-pressed="true">All ${n}</button>${order.map(k => `<button type="button" data-k="${k}" aria-pressed="false">${LINK_KINDS[k].t}</button>`).join('')}</div>${html}</div>`
+      : '<p class="sheet-empty"><em>The links appear here as the chapters get their "Learn more online" boxes.</em></p>';
+  }
+
+  // ---------- :::progress roll-ups of the course's checklists, per paper ----------
+  const checksOf = (id) => written.has(id) ? st.CHECKS.filter(k => k.c === id).flatMap(k => k.keys) : [];
+  const row = (keys, label) => `<li data-clp="${keys.join(',')}"><span class="clp-t">${label}</span><span class="clp-n"></span><span class="clp-bar"><i></i></span></li>`;
+  const paperRows = (p) => p.chapters.map(id => [id, checksOf(id)]).filter(([, k]) => k.length).map(([id, k]) => row(k, `<a href="#${id}">${R.inline(written.get(id).title)}</a>`));
+  for (const c of written.values()) {
+    c.html = c.html.replace(/<div class="cl-prog" data-prog="([^"|]*)\|([^"]*)"><\/div>/g, (m, sid, pid) => {
+      const list = papers[sid] || [];
+      if (!list.length) { errors.push(`[${c.id}] :::progress needs "papers" in course.json`); return ''; }
+      let title, rows, all;
+      if (pid) {
+        const p = list.find(x => x.id === pid);
+        if (!p) { errors.push(`[${c.id}] :::progress ${pid}: no paper with that id in course.json (have ${list.map(x => x.id).join(', ')})`); return ''; }
+        title = escapeHtml(p.title); rows = paperRows(p).join(''); all = p.chapters.flatMap(checksOf);
+      } else {
+        title = 'All papers';
+        rows = list.map(p => { const k = p.chapters.flatMap(checksOf); return k.length ? `<li class="clp-p" data-clp="${k.join(',')}"><details><summary><span class="clp-t">${escapeHtml(p.title)}</span><span class="clp-n"></span><span class="clp-bar"><i></i></span></summary><ul>${paperRows(p).join('')}</ul></details></li>` : ''; }).join('');
+        all = [...new Set(list.flatMap(p => p.chapters.flatMap(checksOf)))];
+      }
+      return `<div class="cl-prog"><div class="cl-h"><span class="cl-l">Checklist progress</span><span class="cl-t">${title}</span><span class="cl-n" data-clp="${all.join(',')}"></span></div>${rows ? `<ul class="clp-list">${rows}</ul>` : '<p class="sheet-empty"><em>Checklists appear here as the chapters get them.</em></p>'}</div>`;
+    });
+  }
+
   // ---------- links: aliases, unknown ids, chapters not written yet ----------
   let soonLinks = 0;
   for (const c of written.values()) {
     c.html = c.html.replace(/<a href="#([^"]+)">([\s\S]*?)<\/a>/g, (m, href, txt) => {
       let [base, sec] = [href.split('--')[0], href.includes('--') ? href.slice(href.indexOf('--')) : ''];
       if (aliases[base]) { base = aliases[base]; sec = ''; }
+      // an empty link is a "revise" link from a :::try question: it shows the chapter's title
+      if (!txt) txt = 'Revise: ' + (written.has(base) ? R.inline(written.get(base).title) : planned.has(base) ? R.inline(planned.get(base).entry.title || base) : external.has(base) ? escapeHtml(external.get(base).t) : base);
       if (written.has(base)) return `<a href="#${base}${sec}">${txt}</a>`;
       if (planned.has(base) || external.has(base)) { soonLinks++; return `<span class="soon" title="Coming soon">${txt}</span>`; }
       errors.push(`[${c.id}] link to unknown chapter #${href}`);
@@ -146,7 +215,9 @@ function buildSite(sources, opts) {
       chips.push(`<span class="chip lv lv-${k}">${LEVELS[k] || escapeHtml(lv)}</span>`);
     }
     if (c.meta.paper) chips.push(`<span class="chip chip-paper"><span class="chip-k">Exams</span>${escapeHtml(c.meta.paper)}</span>`);
-    if (c.meta.time) chips.push(`<span class="chip chip-time"><span class="chip-k">Study time</span>${escapeHtml(c.meta.time)}</span>`);
+    const mock = /\bmock\b/i.test(c.meta.level || '');
+    if (mock && c.marks) chips.push(`<span class="chip chip-marks"><span class="chip-k">Total</span>${c.marks} marks</span>`);
+    if (c.meta.time) chips.push(`<span class="chip chip-time"><span class="chip-k">${mock ? 'Time allowed' : 'Study time'}</span>${escapeHtml(c.meta.time)}</span>`);
     const first = s.groups[0] && s.groups[0].chapters[0];
     const crumbs = `<nav class="crumbs" aria-label="Breadcrumb"><a href="#${first ? first.id : 'home'}">${escapeHtml(s.title)}</a><span aria-hidden="true">/</span><span>${escapeHtml(c.group)}</span></nav>`;
     const lede = c.meta.summary ? `<p class="lede">${R.inline(c.meta.summary)}</p>` : '';
@@ -159,7 +230,9 @@ function buildSite(sources, opts) {
 <button class="done-btn" type="button" data-done="${c.id}" aria-pressed="false"><span class="done-box" aria-hidden="true"></span><span class="done-txt">Mark as learned</span></button>
 <div class="pn">${prev ? `<a class="pn-prev" href="#${prev.id}"><small>Previous</small><span>${stripTags(titleOf(prev))}</span></a>` : '<span></span>'}${next ? `<a class="pn-next" href="#${next.id}"><small>Next</small><span>${stripTags(titleOf(next))}</span></a>` : '<span></span>'}</div></footer>`;
     const k = c.chunk || '';
-    articles[k] = (articles[k] || '') + `<article class="chapter s-${c.subject}" id="c-${c.id}" data-id="${c.id}" data-subject="${c.subject}" hidden>${header(c)}<div class="prose">${c.html}</div>${foot}</article>\n`;
+    const lv = (c.meta.level || '').split(/[ ,]+/)[0].toLowerCase();
+    const mockAttrs = lv === 'mock' ? ` data-level="mock" data-min="${parseMinutes(c.meta.time)}" data-marks="${c.marks}"` : '';
+    articles[k] = (articles[k] || '') + `<article class="chapter s-${c.subject}" id="c-${c.id}" data-id="${c.id}" data-subject="${c.subject}"${mockAttrs} hidden>${header(c)}<div class="prose">${c.html}</div>${foot}</article>\n`;
   });
 
   let nav = '';
@@ -194,6 +267,7 @@ function buildSite(sources, opts) {
     })),
     subjects: subjects.map(s => ({ id: s.id, c: s.kind === 'course' ? 1 : 0, t: s.title, short: s.short, code: s.code, desc: s.desc, n: s.groups.reduce((a, g) => a + g.chapters.length, 0), p: s.planned, first: s.groups[0] ? s.groups[0].chapters[0].id : null })),
     chunks,
+    papers: Object.fromEntries(Object.entries(papers).filter(([, l]) => l.length).map(([sid, l]) => [sid, l.map(p => ({ id: p.id, t: p.title, c: p.chapters.filter(id => written.has(id)) }))])),
     built: new Date().toISOString().slice(0, 10)
   };
 
@@ -225,4 +299,4 @@ function buildSite(sources, opts) {
   return { errors, warnings, files, chapters: ordered, written, planned, stats, R, regOwner };
 }
 
-module.exports = { buildSite, widgetNames, LEVELS };
+module.exports = { buildSite, widgetNames, LEVELS, parseMinutes };

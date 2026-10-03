@@ -188,14 +188,13 @@ A: \(P(RRR) = \dfrac6{10}\times\dfrac59\times\dfrac48 = \dfrac{120}{720}\) and \
 - Counting probabilities: favourable \(\div\) total, using combinations when order does not matter.
 :::
 
-:::note Learn more online
-- **Watch:** [Conditional probability with tree diagrams](https://www.examsolutions.net/tutorials/conditional-probability-tree-diagrams/) · ExamSolutions · P(A given B) from a tree
-- **Watch:** [Exam questions: tree diagrams](https://www.examsolutions.net/tutorials/exam-questions-tree-diagrams/) · ExamSolutions · exam-style questions solved on video
-- **Practise:** [CAIE S1 further probability exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-1/topic-questions/probability/further-probability/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Basic probability](https://seeing-theory.brown.edu/basic-probability/index.html) · Seeing Theory · simulate coins and dice and watch the long run
-- **Explore:** [Compound probability](https://seeing-theory.brown.edu/compound-probability/index.html) · Seeing Theory · Venn diagrams and conditional probability you can play with
+:::links
+- watch: [Conditional probability with tree diagrams](https://www.examsolutions.net/tutorials/conditional-probability-tree-diagrams/) · ExamSolutions · P(A given B) from a tree
+- watch: [Exam questions: tree diagrams](https://www.examsolutions.net/tutorials/exam-questions-tree-diagrams/) · ExamSolutions · exam-style questions solved on video
+- practise: [CAIE S1 further probability exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-1/topic-questions/probability/further-probability/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Basic probability](https://seeing-theory.brown.edu/basic-probability/index.html) · Seeing Theory · simulate coins and dice and watch the long run
+- explore: [Compound probability](https://seeing-theory.brown.edu/compound-probability/index.html) · Seeing Theory · Venn diagrams and conditional probability you can play with
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Discrete random variables: binomial and geometric](#math.s1.drv).

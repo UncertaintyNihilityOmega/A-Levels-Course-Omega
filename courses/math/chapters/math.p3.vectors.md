@@ -236,15 +236,14 @@ A: \(\overrightarrow{OF} = \begin{pmatrix}6\\4\\3\end{pmatrix}\) and \(\overrigh
 - Foot of a perpendicular: general point \(X\) on the line, then \(\overrightarrow{PX}\cdot\mathbf{b} = 0\). Distance is \(|\overrightarrow{PF}|\).
 :::
 
-:::note Learn more online
-- **Watch:** [Intersecting and skew lines](https://www.examsolutions.net/tutorials/vectors-intersecting-skew-lines/) · ExamSolutions · the three-equation test
-- **Watch:** [Exam questions: parallel, intersecting and skew lines](https://www.examsolutions.net/tutorials/exam-questions-parallel-intersecting-and-skew-lines/) · ExamSolutions · exam-style questions solved on video
-- **Practise:** [CAIE Pure 3 vector lines and scalar product exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/vectors/vector-equations-of-lines-and-the-scalar-product/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [GeoGebra 3D calculator](https://www.geogebra.org/3d) · GeoGebra · plot two lines in 3D and rotate them to see if they meet
-- **Explore:** [Vector Geometry](https://undergroundmathematics.org/vector-geometry) · Underground Mathematics · rich problems on lines and angles
-- **Read:** [Understanding the dot product](https://betterexplained.com/articles/vector-calculus-understanding-the-dot-product/) · BetterExplained · what a·b measures
+:::links
+- watch: [Intersecting and skew lines](https://www.examsolutions.net/tutorials/vectors-intersecting-skew-lines/) · ExamSolutions · the three-equation test
+- watch: [Exam questions: parallel, intersecting and skew lines](https://www.examsolutions.net/tutorials/exam-questions-parallel-intersecting-and-skew-lines/) · ExamSolutions · exam-style questions solved on video
+- practise: [CAIE Pure 3 vector lines and scalar product exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/vectors/vector-equations-of-lines-and-the-scalar-product/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [GeoGebra 3D calculator](https://www.geogebra.org/3d) · GeoGebra · plot two lines in 3D and rotate them to see if they meet
+- explore: [Vector Geometry](https://undergroundmathematics.org/vector-geometry) · Underground Mathematics · rich problems on lines and angles
+- read: [Understanding the dot product](https://betterexplained.com/articles/vector-calculus-understanding-the-dot-product/) · BetterExplained · what a·b measures
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Complex numbers](#math.p3.complex).

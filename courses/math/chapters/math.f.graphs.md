@@ -206,15 +206,14 @@ A: (a) Parallel lines have the same gradient, 3. [B1] Then \(-5 = 3(2) + c\), so
 - Graphs meet where their \(y\)-values are equal: set the right-hand sides equal and solve. Then find the \(y\)-coordinates.
 :::
 
-:::note Learn more online
-- **Watch:** [Equation of a line from a point and a gradient](https://www.examsolutions.net/tutorials/equation-of-a-line-given-the-gradient-and-point/) · ExamSolutions · the y − y₁ = m(x − x₁) form in action
-- **Practise:** [Algebra 1](https://www.khanacademy.org/math/algebra) · Khan Academy · units on linear equations and graphs
-- **Explore:** [Graphing Lines](https://phet.colorado.edu/en/simulations/graphing-lines) · PhET · drag a line and watch m and c change
-- **Explore:** [Graphing Quadratics](https://phet.colorado.edu/en/simulations/graphing-quadratics) · PhET · vertex, roots and axis of symmetry you can move
-- **Explore:** [Desmos graphing calculator](https://www.desmos.com/calculator) · Desmos · plot any graph from this chapter and test your sketches
-- **Explore:** [Geometry of Equations](https://undergroundmathematics.org/geometry-of-equations) · Underground Mathematics · connect equations to the shapes they draw
+:::links
+- watch: [Equation of a line from a point and a gradient](https://www.examsolutions.net/tutorials/equation-of-a-line-given-the-gradient-and-point/) · ExamSolutions · the y − y₁ = m(x − x₁) form in action
+- practise: [Algebra 1](https://www.khanacademy.org/math/algebra) · Khan Academy · units on linear equations and graphs
+- explore: [Graphing Lines](https://phet.colorado.edu/en/simulations/graphing-lines) · PhET · drag a line and watch m and c change
+- explore: [Graphing Quadratics](https://phet.colorado.edu/en/simulations/graphing-quadratics) · PhET · vertex, roots and axis of symmetry you can move
+- explore: [Desmos graphing calculator](https://www.desmos.com/calculator) · Desmos · plot any graph from this chapter and test your sketches
+- explore: [Geometry of Equations](https://undergroundmathematics.org/geometry-of-equations) · Underground Mathematics · connect equations to the shapes they draw
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Geometry and trigonometry basics](#math.f.geometry).

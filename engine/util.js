@@ -9,13 +9,21 @@ const readJson = (p) => JSON.parse(fs.readFileSync(p, 'utf8'));
 const readText = (p) => fs.existsSync(p) ? fs.readFileSync(p, 'utf8') : '';
 const mdFiles = (dir) => fs.existsSync(dir) ? fs.readdirSync(dir).filter(f => f.endsWith('.md')).sort().map(name => ({ name, text: fs.readFileSync(path.join(dir, name), 'utf8') })) : [];
 
+/** A course's widget code: widgets.js plus every widgets/<name>.js (one widget per file), in name order */
+function courseWidgets(dir) {
+  const parts = [readText(path.join(dir, 'widgets.js'))];
+  const wd = path.join(dir, 'widgets');
+  if (fs.existsSync(wd)) for (const f of fs.readdirSync(wd).filter(f => f.endsWith('.js')).sort()) parts.push(`/* widgets/${f} */\n` + fs.readFileSync(path.join(wd, f), 'utf8'));
+  return parts.filter(s => s.trim()).join('\n;\n');
+}
+
 /** A course folder → a source for site.buildSite */
 function loadCourse(dir) {
   const c = readJson(path.join(dir, 'course.json'));
   return {
     id: c.id, kind: 'course', title: c.title, short: c.short, code: c.code, desc: c.desc,
     chapters: c.chapters || [], aliases: c.aliases || {}, packages: c.packages || [], json: c,
-    files: mdFiles(path.join(dir, 'chapters')), widgets: readText(path.join(dir, 'widgets.js')), dir
+    files: mdFiles(path.join(dir, 'chapters')), widgets: courseWidgets(dir), dir
   };
 }
 
@@ -69,4 +77,4 @@ function writeSite(dir, files) {
   for (const [rel, content] of Object.entries(files)) fs.writeFileSync(path.join(dir, rel), content);
 }
 
-module.exports = { readJson, readText, mdFiles, loadCourse, loadCore, runPython, mathFontFace, writeSite };
+module.exports = { readJson, readText, mdFiles, courseWidgets, loadCourse, loadCore, runPython, mathFontFace, writeSite };

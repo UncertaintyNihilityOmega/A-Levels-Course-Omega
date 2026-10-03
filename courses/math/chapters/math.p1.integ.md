@@ -301,15 +301,14 @@ A: (a) \(\displaystyle\int_1^3 12x^{-2}\,dx = \Big[-12x^{-1}\Big]_1^3 = -4 + 12 
 - Volume about the \(x\)-axis \(\pi\int y^2\,dx\); about the \(y\)-axis \(\pi\int x^2\,dy\). With a hole, \(\pi\int(y_{\text{outer}}^2 - y_{\text{inner}}^2)\,dx\).
 :::
 
-:::note Learn more online
-- **Watch:** [Integration and the fundamental theorem of calculus](https://www.3blue1brown.com/lessons/integration) · 3Blue1Brown · why area and antiderivatives are linked
-- **Watch:** [What does area have to do with slope?](https://www.3blue1brown.com/lessons/area-and-slope) · 3Blue1Brown · the same link seen another way
-- **Watch:** [Exam questions: volume of revolution about the x-axis](https://www.examsolutions.net/tutorials/exam-questions-volume-of-revolution-about-the-x-axis/) · ExamSolutions · exam-style questions solved on video
-- **Practise:** [CAIE Pure 1 integration exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/integration/integration/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Read:** [Area between curves](https://tutorial.math.lamar.edu/Classes/CalcI/AreaBetweenCurves.aspx) · Paul's Online Notes · worked examples, including with respect to y
-- **Read:** [Volumes of solids of revolution (rings)](https://tutorial.math.lamar.edu/Classes/CalcI/VolumeWithRings.aspx) · Paul's Online Notes · the washer method with pictures
+:::links
+- watch: [Integration and the fundamental theorem of calculus](https://www.3blue1brown.com/lessons/integration) · 3Blue1Brown · why area and antiderivatives are linked
+- watch: [What does area have to do with slope?](https://www.3blue1brown.com/lessons/area-and-slope) · 3Blue1Brown · the same link seen another way
+- watch: [Exam questions: volume of revolution about the x-axis](https://www.examsolutions.net/tutorials/exam-questions-volume-of-revolution-about-the-x-axis/) · ExamSolutions · exam-style questions solved on video
+- practise: [CAIE Pure 1 integration exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/integration/integration/exam-questions/) · Save My Exams · with mark schemes [paid]
+- read: [Area between curves](https://tutorial.math.lamar.edu/Classes/CalcI/AreaBetweenCurves.aspx) · Paul's Online Notes · worked examples, including with respect to y
+- read: [Volumes of solids of revolution (rings)](https://tutorial.math.lamar.edu/Classes/CalcI/VolumeWithRings.aspx) · Paul's Online Notes · the washer method with pictures
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Modulus and polynomials](#math.p3.algebra).

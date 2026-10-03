@@ -285,15 +285,14 @@ A: (a) The sine rule gives \(\dfrac{\sin C}{12} = \dfrac{\sin 40^\circ}{9}\). [M
 - MF19 gives sphere and cone formulae; you must remember the cylinder and prism.
 :::
 
-:::note Learn more online
-- **Watch:** [Exact trig ratios for 30°, 45° and 60°](https://www.examsolutions.net/tutorials/trig-ratios-multiples-30-45-60/) · ExamSolutions · the two triangles you need to remember
-- **Practise:** [High School Geometry](https://www.khanacademy.org/math/geometry) · Khan Academy · Pythagoras and right-angled trigonometry with practice
-- **Practise:** [Trigonometry](https://www.khanacademy.org/math/trigonometry) · Khan Academy · includes the sine and cosine rules
-- **Explore:** [Thinking about Geometry](https://undergroundmathematics.org/thinking-about-geometry) · Underground Mathematics · geometry problems that need real thought
-- **Read:** [Trigonometry](https://www.mathsisfun.com/algebra/trigonometry.html) · Maths is Fun · SOH CAH TOA and beyond, with interactive diagrams
-- **Read:** [Geometry index](https://www.mathsisfun.com/geometry/index.html) · Maths is Fun · angles, circles, area and volume
+:::links
+- watch: [Exact trig ratios for 30°, 45° and 60°](https://www.examsolutions.net/tutorials/trig-ratios-multiples-30-45-60/) · ExamSolutions · the two triangles you need to remember
+- practise: [High School Geometry](https://www.khanacademy.org/math/geometry) · Khan Academy · Pythagoras and right-angled trigonometry with practice
+- practise: [Trigonometry](https://www.khanacademy.org/math/trigonometry) · Khan Academy · includes the sine and cosine rules
+- explore: [Thinking about Geometry](https://undergroundmathematics.org/thinking-about-geometry) · Underground Mathematics · geometry problems that need real thought
+- read: [Trigonometry](https://www.mathsisfun.com/algebra/trigonometry.html) · Maths is Fun · SOH CAH TOA and beyond, with interactive diagrams
+- read: [Geometry index](https://www.mathsisfun.com/geometry/index.html) · Maths is Fun · angles, circles, area and volume
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Quadratics](#math.p1.quadratics).

@@ -199,14 +199,13 @@ A: Total momentum is 0: \(0 = 2 \times 6 + 3v\) [M1 A1], so \(v = -4\), so \(B\)
 - No impulse or coefficient of restitution in the Cambridge syllabus.
 :::
 
-:::note Learn more online
-- **Practise:** [CAIE Mechanics momentum exam questions](https://www.savemyexams.com/a-level/maths/cie/20/mechanics/topic-questions/momentum/momentum-and-collisions/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Collision Lab](https://phet.colorado.edu/en/simulations/collision-lab) · PhET · collide two balls and check that momentum is conserved
-- **Read:** [Physics archive](https://www.khanacademy.org/science/physics) · Khan Academy · the impacts and linear momentum unit
-- **Read:** [University Physics Volume 1 (free textbook)](https://openstax.org/details/books/university-physics-volume-1) · OpenStax · the linear momentum and collisions chapter
-- **Papers:** [9709 Paper 4 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-4) · Physics & Maths Tutor · papers with mark schemes *(unofficial archive)*
+:::links
+- practise: [CAIE Mechanics momentum exam questions](https://www.savemyexams.com/a-level/maths/cie/20/mechanics/topic-questions/momentum/momentum-and-collisions/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Collision Lab](https://phet.colorado.edu/en/simulations/collision-lab) · PhET · collide two balls and check that momentum is conserved
+- read: [Physics archive](https://www.khanacademy.org/science/physics) · Khan Academy · the impacts and linear momentum unit
+- read: [University Physics Volume 1 (free textbook)](https://openstax.org/details/books/university-physics-volume-1) · OpenStax · the linear momentum and collisions chapter
+- papers: [9709 Paper 4 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-4) · Physics & Maths Tutor · papers with mark schemes [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Work, energy and power](#math.m.energy).

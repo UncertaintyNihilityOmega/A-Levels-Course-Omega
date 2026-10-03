@@ -255,14 +255,13 @@ A: \(E = 4 \times 1010 = 4040\) g [B1]. \(\mathrm{Var} = 4 \times 144 = 576\) [M
 - Independent Poissons: the sum is \(\mathrm{Po}(\lambda + \mu)\). Differences and multiples are not Poisson.
 :::
 
-:::note Learn more online
-- **Watch:** [Var(aX + bY) for independent X and Y](https://www.examsolutions.net/tutorials/varax-by-a2varx-b2vary-for-independent-x-and-y/) · ExamSolutions · why the variances add
-- **Practise:** [CAIE S2 linear combinations exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-2/topic-questions/statistical-distributions/linear-combinations-of-random-variables/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Practise:** [Statistics and Probability](https://www.khanacademy.org/math/statistics-probability) · Khan Academy · the random variables unit
-- **Read:** [Introductory Statistics 2e (free textbook)](https://openstax.org/details/books/introductory-statistics-2e) · OpenStax · random variables explained with exercises
-- **Papers:** [9709 Paper 6 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-7/) · Physics & Maths Tutor · their page "cie-paper-7" holds Paper 6 *(unofficial archive)*
+:::links
+- watch: [Var(aX + bY) for independent X and Y](https://www.examsolutions.net/tutorials/varax-by-a2varx-b2vary-for-independent-x-and-y/) · ExamSolutions · why the variances add
+- practise: [CAIE S2 linear combinations exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-2/topic-questions/statistical-distributions/linear-combinations-of-random-variables/exam-questions/) · Save My Exams · with mark schemes [paid]
+- practise: [Statistics and Probability](https://www.khanacademy.org/math/statistics-probability) · Khan Academy · the random variables unit
+- read: [Introductory Statistics 2e (free textbook)](https://openstax.org/details/books/introductory-statistics-2e) · OpenStax · random variables explained with exercises
+- papers: [9709 Paper 6 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-7/) · Physics & Maths Tutor · their page "cie-paper-7" holds Paper 6 [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Continuous random variables](#math.s2.crv).

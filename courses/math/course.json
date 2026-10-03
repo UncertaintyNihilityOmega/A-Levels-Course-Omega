@@ -7,6 +7,7 @@
   "syllabus": "https://www.cambridgeinternational.org/Images/697427-2026-2027-syllabus.pdf",
   "desc": "Pure, Statistics and Mechanics from counting to calculus",
   "lead": true,
+  "proofBadge": "Not examined in 9709",
   "chapters": [
     {
       "id": "math.overview",
@@ -347,37 +348,37 @@
     {
       "id": "math.mock.p1a",
       "title": "Mock paper: Pure 1 (A)",
-      "level": "ref",
+      "level": "mock",
       "group": "Exam preparation"
     },
     {
       "id": "math.mock.p2a",
       "title": "Mock paper: Pure 2 (A)",
-      "level": "ref",
+      "level": "mock",
       "group": "Exam preparation"
     },
     {
       "id": "math.mock.p3a",
       "title": "Mock paper: Pure 3 (A)",
-      "level": "ref",
+      "level": "mock",
       "group": "Exam preparation"
     },
     {
       "id": "math.mock.p4a",
       "title": "Mock paper: Mechanics (A)",
-      "level": "ref",
+      "level": "mock",
       "group": "Exam preparation"
     },
     {
       "id": "math.mock.p5a",
       "title": "Mock paper: Probability and Statistics 1 (A)",
-      "level": "ref",
+      "level": "mock",
       "group": "Exam preparation"
     },
     {
       "id": "math.mock.p6a",
       "title": "Mock paper: Probability and Statistics 2 (A)",
-      "level": "ref",
+      "level": "mock",
       "group": "Exam preparation"
     }
   ],
@@ -531,7 +532,7 @@
         "proof",
         "area"
       ],
-      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::note Why it's true until :::proof exists) and keep the Learn more online box. Do not rewrite the teaching. Build proof (scenes completesquare, inverse, perp, sector, apsum, gpsum, pascal, chordlimit, ftc, discs), area, and graph data-tangent / data-shade-between."
+      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::proof) and keep the :::links box. Do not rewrite the teaching. Build proof (scenes completesquare, inverse, perp, sector, apsum, gpsum, pascal, chordlimit, ftc, discs), area, and graph data-tangent / data-shade-between."
     },
     {
       "id": "P11",
@@ -545,7 +546,7 @@
         "math.p3.numerical"
       ],
       "widgets": [],
-      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::note Why it's true until :::proof exists) and keep the Learn more online box. Do not rewrite the teaching. Add proof scenes compound, expderiv, sinlimit, productrule."
+      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::proof) and keep the :::links box. Do not rewrite the teaching. Add proof scenes compound, expderiv, sinlimit, productrule."
     },
     {
       "id": "P12",
@@ -561,7 +562,7 @@
         "slopefield",
         "vectors3d"
       ],
-      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::note Why it's true until :::proof exists) and keep the Learn more online box. Do not rewrite the teaching. Thin chapters: at least two more fully marked long exam examples in inttech, diffeq, vectors, complex. Add proof scene dotcosine."
+      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::proof) and keep the :::links box. Do not rewrite the teaching. Thin chapters: at least two more fully marked long exam examples in inttech, diffeq, vectors, complex. Add proof scene dotcosine."
     },
     {
       "id": "P13",
@@ -574,7 +575,7 @@
         "math.s1.normal"
       ],
       "widgets": [],
-      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::note Why it's true until :::proof exists) and keep the Learn more online box. Do not rewrite the teaching. Thin chapters: at least two more fully marked exam examples in perms, prob, drv, normal. Add proof scene tree."
+      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::proof) and keep the :::links box. Do not rewrite the teaching. Thin chapters: at least two more fully marked exam examples in perms, prob, drv, normal. Add proof scene tree."
     },
     {
       "id": "P14",
@@ -590,7 +591,7 @@
       "widgets": [
         "sampling"
       ],
-      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::note Why it's true until :::proof exists) and keep the Learn more online box. Do not rewrite the teaching."
+      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::proof) and keep the :::links box. Do not rewrite the teaching."
     },
     {
       "id": "P15",
@@ -607,7 +608,7 @@
         "incline",
         "vt"
       ],
-      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::note Why it's true until :::proof exists) and keep the Learn more online box. Do not rewrite the teaching. Take g = 10."
+      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::proof) and keep the :::links box. Do not rewrite the teaching. Take g = 10."
     },
     {
       "id": "P16",
@@ -623,7 +624,7 @@
         "math.overview"
       ],
       "widgets": [],
-      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::note Why it's true until :::proof exists) and keep the Learn more online box. Do not rewrite the teaching. Foundations get Warm-up only from earlier foundations. Add proof scenes pythagoras, cosinerule. math.proof is new. Overview: readiness quiz routing to f.* chapters, and links to the guides, mocks and mixed sets."
+      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::proof) and keep the :::links box. Do not rewrite the teaching. Foundations get Warm-up only from earlier foundations. Add proof scenes pythagoras, cosinerule. math.proof is new. Overview: readiness quiz routing to f.* chapters, and links to the guides, mocks and mixed sets."
     },
     {
       "id": "P17",
@@ -651,6 +652,84 @@
       ],
       "widgets": [],
       "notes": "COURSE.md: Mocks and Mixed practice. Marks total 50 each; g = 10."
+    }
+  ],
+  "papers": [
+    {
+      "id": "P1",
+      "title": "Paper 1: Pure Mathematics 1",
+      "chapters": [
+        "math.p1.quadratics",
+        "math.p1.functions",
+        "math.p1.coord",
+        "math.p1.circular",
+        "math.p1.trig",
+        "math.p1.series",
+        "math.p1.diff",
+        "math.p1.integ"
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Paper 2: Pure Mathematics 2",
+      "chapters": [
+        "math.p3.algebra",
+        "math.p3.logs",
+        "math.p3.trig",
+        "math.p3.diff",
+        "math.p3.integ",
+        "math.p3.numerical"
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Paper 3: Pure Mathematics 3",
+      "chapters": [
+        "math.p3.algebra",
+        "math.p3.logs",
+        "math.p3.trig",
+        "math.p3.diff",
+        "math.p3.integ",
+        "math.p3.numerical",
+        "math.p3.partial",
+        "math.p3.inttech",
+        "math.p3.diffeq",
+        "math.p3.vectors",
+        "math.p3.complex"
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "Paper 4: Mechanics",
+      "chapters": [
+        "math.m.forces",
+        "math.m.kinematics",
+        "math.m.newton",
+        "math.m.momentum",
+        "math.m.energy"
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Paper 5: Probability & Statistics 1",
+      "chapters": [
+        "math.s1.data",
+        "math.s1.perms",
+        "math.s1.prob",
+        "math.s1.drv",
+        "math.s1.normal"
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Paper 6: Probability & Statistics 2",
+      "chapters": [
+        "math.s2.poisson",
+        "math.s2.linear",
+        "math.s2.crv",
+        "math.s2.sampling",
+        "math.s2.hypothesis"
+      ]
     }
   ]
 }

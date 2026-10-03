@@ -194,14 +194,13 @@ A: The rate is zero when \(P = 8\), and it is positive for \(0 < P < 8\), so \(P
 - Check the solution by differentiating, and say what happens in the long term in the words of the context.
 :::
 
-:::note Learn more online
-- **Watch:** [Differential equations, studying the unsolvable](https://www.3blue1brown.com/lessons/differential-equations) · 3Blue1Brown · what a differential equation describes
-- **Watch:** [General and particular solutions](https://www.examsolutions.net/tutorials/finding-general-solution-particular-solution/) · ExamSolutions · separating variables and using a condition
-- **Watch:** [Exam questions: forming differential equations](https://www.examsolutions.net/tutorials/exam-questions-forming-differential-equations/) · ExamSolutions · turning a rate statement into an equation
-- **Practise:** [CAIE Pure 3 differential equations exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/integration/differential-equations/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Read:** [Separable equations](https://tutorial.math.lamar.edu/Classes/DE/Separable.aspx) · Paul's Online Notes · worked examples
+:::links
+- watch: [Differential equations, studying the unsolvable](https://www.3blue1brown.com/lessons/differential-equations) · 3Blue1Brown · what a differential equation describes
+- watch: [General and particular solutions](https://www.examsolutions.net/tutorials/finding-general-solution-particular-solution/) · ExamSolutions · separating variables and using a condition
+- watch: [Exam questions: forming differential equations](https://www.examsolutions.net/tutorials/exam-questions-forming-differential-equations/) · ExamSolutions · turning a rate statement into an equation
+- practise: [CAIE Pure 3 differential equations exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/integration/differential-equations/exam-questions/) · Save My Exams · with mark schemes [paid]
+- read: [Separable equations](https://tutorial.math.lamar.edu/Classes/DE/Separable.aspx) · Paul's Online Notes · worked examples
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Vectors](#math.p3.vectors).

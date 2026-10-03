@@ -245,14 +245,13 @@ A: (a) \(h = 0.5\). Ordinates: \(1\), \(\sqrt{1.25} = 1.118034\), \(\sqrt2 = 1.4
 - Paper 3 only: \(\int\frac{1}{x^2 + a^2}\,dx = \tfrac1a\tan^{-1}\frac xa + c\).
 :::
 
-:::note Learn more online
-- **Watch:** [The trapezium rule](https://www.examsolutions.net/tutorials/trapezium-rule/) · ExamSolutions · the method and the table layout
-- **Watch:** [Exam questions: trapezium rule](https://www.examsolutions.net/tutorials/exam-questions-trapezium-rule/) · ExamSolutions · including over- and underestimates
-- **Practise:** [CAIE Pure 3 further integration exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/integration/further-integration/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Practise:** [Calculus 2](https://www.khanacademy.org/math/calculus-2) · Khan Academy · integration practice with instant feedback
-- **Papers:** [9709 Paper 2 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-2/) · Physics & Maths Tutor · the trapezium rule is examined on Paper 2 *(unofficial archive)*
+:::links
+- watch: [The trapezium rule](https://www.examsolutions.net/tutorials/trapezium-rule/) · ExamSolutions · the method and the table layout
+- watch: [Exam questions: trapezium rule](https://www.examsolutions.net/tutorials/exam-questions-trapezium-rule/) · ExamSolutions · including over- and underestimates
+- practise: [CAIE Pure 3 further integration exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/integration/further-integration/exam-questions/) · Save My Exams · with mark schemes [paid]
+- practise: [Calculus 2](https://www.khanacademy.org/math/calculus-2) · Khan Academy · integration practice with instant feedback
+- papers: [9709 Paper 2 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-2/) · Physics & Maths Tutor · the trapezium rule is examined on Paper 2 [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Numerical solution of equations](#math.p3.numerical).

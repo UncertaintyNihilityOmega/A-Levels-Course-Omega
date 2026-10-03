@@ -288,14 +288,13 @@ A: Up positive: \(-15 = 10t - 5t^2\), so \(t^2 - 2t - 3 = 0\). [M1 A1] \((t - 3)
 - Variable acceleration: \(v = \dfrac{ds}{dt}\), \(a = \dfrac{dv}{dt}\); integrate with constants from the given conditions. Split the integral where \(v\) changes sign to find distance.
 :::
 
-:::note Learn more online
-- **Watch:** [Constant acceleration (suvat)](https://www.examsolutions.net/tutorials/motion-straight-line-constant-acceleration-suvat/) · ExamSolutions · choosing the right equation
-- **Watch:** [Exam questions: velocity–time graphs](https://www.examsolutions.net/tutorials/velocity-time-graphs-exam-questions/) · ExamSolutions · areas and gradients in exam style
-- **Practise:** [CAIE Mechanics kinematics graphs exam questions](https://www.savemyexams.com/a-level/maths/cie/20/mechanics/topic-questions/kinematics-straight-line-motion/kinematics-graphs/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Practise:** [Isaac Science](https://isaacscience.org/) · Isaac Science · free problem-solving practice, including kinematics (free account)
-- **Read:** [University Physics Volume 1 (free textbook)](https://openstax.org/details/books/university-physics-volume-1) · OpenStax · the chapter on motion along a straight line
+:::links
+- watch: [Constant acceleration (suvat)](https://www.examsolutions.net/tutorials/motion-straight-line-constant-acceleration-suvat/) · ExamSolutions · choosing the right equation
+- watch: [Exam questions: velocity–time graphs](https://www.examsolutions.net/tutorials/velocity-time-graphs-exam-questions/) · ExamSolutions · areas and gradients in exam style
+- practise: [CAIE Mechanics kinematics graphs exam questions](https://www.savemyexams.com/a-level/maths/cie/20/mechanics/topic-questions/kinematics-straight-line-motion/kinematics-graphs/exam-questions/) · Save My Exams · with mark schemes [paid]
+- practise: [Isaac Science](https://isaacscience.org/) · Isaac Science · free problem-solving practice, including kinematics (free account)
+- read: [University Physics Volume 1 (free textbook)](https://openstax.org/details/books/university-physics-volume-1) · OpenStax · the chapter on motion along a straight line
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Newton's laws and connected particles](#math.m.newton).

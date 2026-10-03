@@ -306,15 +306,14 @@ A: \(x^2 + (kx + 5)^2 = 9\) gives \((1 + k^2)x^2 + 10kx + 16 = 0\). [M1] No inte
 - Circle through three points: two perpendicular bisectors meet at the centre.
 :::
 
-:::note Learn more online
-- **Watch:** [Equation of a straight line](https://www.examsolutions.net/tutorials/equation-of-a-straight-line/) · ExamSolutions · y = mx + c from two points
-- **Watch:** [Perpendicular bisector](https://www.examsolutions.net/tutorials/equation-perpendicular-bisector/) · ExamSolutions · a favourite step in circle questions
-- **Practise:** [CAIE Pure 1 straight-line exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/coordinate-geometry/equation-of-a-straight-line/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Practise:** [CAIE Pure 1 circles exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/coordinate-geometry/circles/exam-questions/) · Save My Exams · tangents, chords and intersections *(some content paid)*
-- **Explore:** [Circles](https://undergroundmathematics.org/circles) · Underground Mathematics · problems on circle geometry and equations
-- **Explore:** [GeoGebra calculator](https://www.geogebra.org/calculator) · GeoGebra · plot a line and a circle and find where they meet
+:::links
+- watch: [Equation of a straight line](https://www.examsolutions.net/tutorials/equation-of-a-straight-line/) · ExamSolutions · y = mx + c from two points
+- watch: [Perpendicular bisector](https://www.examsolutions.net/tutorials/equation-perpendicular-bisector/) · ExamSolutions · a favourite step in circle questions
+- practise: [CAIE Pure 1 straight-line exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/coordinate-geometry/equation-of-a-straight-line/exam-questions/) · Save My Exams · with mark schemes [paid]
+- practise: [CAIE Pure 1 circles exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/coordinate-geometry/circles/exam-questions/) · Save My Exams · tangents, chords and intersections [paid]
+- explore: [Circles](https://undergroundmathematics.org/circles) · Underground Mathematics · problems on circle geometry and equations
+- explore: [GeoGebra calculator](https://www.geogebra.org/calculator) · GeoGebra · plot a line and a circle and find where they meet
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Circular measure](#math.p1.circular).

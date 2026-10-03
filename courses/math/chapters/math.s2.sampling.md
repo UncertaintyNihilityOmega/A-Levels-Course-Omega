@@ -313,14 +313,13 @@ A: (a) \(\tfrac{6.5}{\sqrt{40}} = 1.0277\). \(52.4 \pm 2.576 \times 1.0277 = 52.
 - A higher confidence level or smaller \(n\) widens the interval. Round sample sizes up. Interpret as "about 95% of such intervals contain \(\mu\)".
 :::
 
-:::note Learn more online
-- **Watch:** [But what is the Central Limit Theorem?](https://www.3blue1brown.com/lessons/clt) · 3Blue1Brown · why sample means become normal
-- **Watch:** [The central limit theorem](https://www.examsolutions.net/tutorials/central-limit-theorem/) · ExamSolutions · the exam use of X̄ ~ N(μ, σ²/n)
-- **Watch:** [Confidence interval for a population mean](https://www.examsolutions.net/tutorials/confidence-interval-for-a-population-mean/) · ExamSolutions · building and reading an interval
-- **Practise:** [CAIE S2 sampling and estimation exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-2/topic-questions/statistical-sampling-and-estimation/sampling-and-estimation/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Frequentist inference](https://seeing-theory.brown.edu/frequentist-inference/index.html) · Seeing Theory · draw samples and watch confidence intervals hit or miss
+:::links
+- watch: [But what is the Central Limit Theorem?](https://www.3blue1brown.com/lessons/clt) · 3Blue1Brown · why sample means become normal
+- watch: [The central limit theorem](https://www.examsolutions.net/tutorials/central-limit-theorem/) · ExamSolutions · the exam use of X̄ ~ N(μ, σ²/n)
+- watch: [Confidence interval for a population mean](https://www.examsolutions.net/tutorials/confidence-interval-for-a-population-mean/) · ExamSolutions · building and reading an interval
+- practise: [CAIE S2 sampling and estimation exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-2/topic-questions/statistical-sampling-and-estimation/sampling-and-estimation/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Frequentist inference](https://seeing-theory.brown.edu/frequentist-inference/index.html) · Seeing Theory · draw samples and watch confidence intervals hit or miss
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Hypothesis testing](#math.s2.hypothesis).

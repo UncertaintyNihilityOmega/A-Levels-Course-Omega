@@ -298,14 +298,13 @@ A: (a) \(72 = 2^3 \times 3^2\) and \(108 = 2^2 \times 3^3\). HCF \(= 2^2 \times 
 - HCF uses the lowest powers of common primes; LCM uses the highest powers of all primes.
 :::
 
-:::note Learn more online
-- **Watch:** [Videos and worksheets by topic](https://corbettmaths.com/contents/) · Corbettmaths · a short video and a worksheet for every GCSE number skill
-- **Practise:** [Dr Frost Maths question bank](https://www.drfrost.org/) · Dr Frost Maths · free practice from GCSE upwards (free account)
-- **Explore:** [Thinking about Numbers](https://undergroundmathematics.org/thinking-about-numbers) · Underground Mathematics · rich problems that make number facts stick
-- **Read:** [The world of numbers](https://www.mathsisfun.com/numbers/index.html) · Maths is Fun · friendly pages on fractions, percentages and ratio
-- **Read:** [Prealgebra 2e (free textbook)](https://openstax.org/details/books/prealgebra-2e) · OpenStax · full chapters on fractions, decimals and percentages, with exercises and answers
+:::links
+- watch: [Videos and worksheets by topic](https://corbettmaths.com/contents/) · Corbettmaths · a short video and a worksheet for every GCSE number skill
+- practise: [Dr Frost Maths question bank](https://www.drfrost.org/) · Dr Frost Maths · free practice from GCSE upwards (free account)
+- explore: [Thinking about Numbers](https://undergroundmathematics.org/thinking-about-numbers) · Underground Mathematics · rich problems that make number facts stick
+- read: [The world of numbers](https://www.mathsisfun.com/numbers/index.html) · Maths is Fun · friendly pages on fractions, percentages and ratio
+- read: [Prealgebra 2e (free textbook)](https://openstax.org/details/books/prealgebra-2e) · OpenStax · full chapters on fractions, decimals and percentages, with exercises and answers
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Algebra from scratch](#math.f.algebra).

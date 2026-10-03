@@ -81,6 +81,149 @@
     saveDone(); renderProgress();
   });
 
+  /* ---------- checklists: ticks saved per viewer, rolled up by :::progress ---------- */
+  const ticks = store.get('ticks', {});
+  function renderTicks(scope) {
+    for (const cb of $$('input[data-ck]', scope)) cb.checked = !!ticks[cb.getAttribute('data-ck')];
+    for (const el of $$('[data-clp]', scope)) {
+      const keys = el.getAttribute('data-clp').split(',').filter(Boolean);
+      const d = keys.filter(k => ticks[k]).length, n = keys.length;
+      const out = el.classList.contains('cl-n') ? el : $('.clp-n', el);
+      if (out) out.textContent = n ? `${d} of ${n}` : '';
+      el.style.setProperty('--p', n ? (100 * d / n).toFixed(1) + '%' : '0%');
+      el.classList.toggle('all', n > 0 && d === n);
+    }
+  }
+  document.addEventListener('change', (e) => {
+    const cb = e.target.closest && e.target.closest('input[data-ck]');
+    if (!cb) return;
+    const k = cb.getAttribute('data-ck');
+    if (cb.checked) ticks[k] = 1; else delete ticks[k];
+    store.set('ticks', ticks);
+    renderTicks(document);
+  });
+
+  /* ---------- mock papers: clock, answers hidden until Finish, self-marking ---------- */
+  function initMock(art) {
+    const id = art.getAttribute('data-id'), total = +art.getAttribute('data-marks') || 0, mins = +art.getAttribute('data-min') || 0;
+    const key = 'mock:' + id;
+    let S = store.get(key, null) || { start: 0, spent: 0, done: false, marks: {} };
+    const save = () => store.set(key, S);
+    const qs = $$('.try-mock .try-list > li', art);
+    const prose = $('.prose', art);
+    const clock = W.h('b', { class: 'mock-clock', 'aria-live': 'off' });
+    const clockLab = W.h('span', { class: 'mock-k' }, mins ? 'Time left' : 'Time');
+    const runBtn = W.h('button', { class: 'btn btn-sm', type: 'button' });
+    const finBtn = W.h('button', { class: 'btn btn-sm btn-sec', type: 'button' }, 'Finish and mark');
+    const score = W.h('span', { class: 'mock-score' });
+    const note = W.h('span', { class: 'mock-note' });
+    const againBtn = W.h('button', { class: 'btn btn-sm btn-sec', type: 'button' }, 'Start again');
+    const bar = W.h('div', { class: 'mock-bar', role: 'region', 'aria-label': 'Mock paper controls' },
+      W.h('span', { class: 'mock-time' }, clockLab, clock), runBtn, finBtn, score, againBtn, note);
+    prose.prepend(bar);
+    const rev = W.h('div', { class: 'mock-rev' });
+    prose.append(rev);
+    let warned = false, confirmT = 0, iv = 0;
+    const elapsed = () => S.spent + (S.start ? Date.now() - S.start : 0);
+    const hms = (ms) => { const s = Math.floor(Math.abs(ms) / 1000); return `${Math.floor(s / 3600)}:${String(Math.floor(s / 60) % 60).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`; };
+    function tick() {
+      const e = elapsed(), left = mins * 60000 - e;
+      clockLab.textContent = S.done ? 'Time taken' : mins ? 'Time left' : 'Time';
+      if (!mins || S.done) clock.textContent = hms(e);
+      else if (left >= 0) clock.textContent = hms(left);
+      else clock.textContent = '+' + hms(left);
+      bar.classList.toggle('over', !!mins && left < 0);
+      if (mins && left < 0 && !warned && S.start && !art.hidden) { warned = true; toast('Time is up. Finish the question you are on, then mark the paper.'); }
+    }
+    function marksInputs() {
+      for (const [i, li] of qs.entries()) {
+        let box = $('.mock-mark', li);
+        if (!S.done) { if (box) box.remove(); continue; }
+        const n = +li.getAttribute('data-marks') || 0;
+        if (box || !n) continue;
+        const inp = W.h('input', { type: 'number', min: 0, max: n, step: 1, inputmode: 'numeric', 'aria-label': `Your mark for question ${i + 1}, out of ${n}` });
+        if (S.marks[i] != null) inp.value = S.marks[i];
+        inp.addEventListener('input', () => {
+          const v = Math.max(0, Math.min(n, Math.round(+inp.value)));
+          if (inp.value === '' || !isFinite(+inp.value)) delete S.marks[i]; else S.marks[i] = v;
+          save(); summary();
+        });
+        box = W.h('label', { class: 'mock-mark' }, W.h('span', {}, 'Your mark'), inp, W.h('span', {}, `out of ${n}`));
+        li.append(box);
+      }
+    }
+    function summary() {
+      const got = Object.values(S.marks).reduce((a, b) => a + b, 0);
+      const marked = Object.keys(S.marks).length;
+      score.textContent = S.done ? `${got} / ${total}${total ? ` · ${Math.round(100 * got / total)}%` : ''}` : '';
+      const weak = qs.map((li, i) => ({ li, i, n: +li.getAttribute('data-marks') || 0, m: S.marks[i] })).filter(q => q.m != null && q.m < q.n / 2);
+      rev.innerHTML = '';
+      if (!S.done) return;
+      if (marked < qs.filter(li => +li.getAttribute('data-marks')).length) { rev.append(W.h('p', { class: 'mock-note' }, 'Mark every question against the mark scheme to see what to revise.')); return; }
+      if (!weak.length) { rev.append(W.h('p', {}, W.h('b', {}, 'No weak questions.'), ' Every question earned at least half its marks.')); return; }
+      rev.append(W.h('h3', {}, 'Revise these next'));
+      const ul = W.h('ul', {});
+      for (const q of weak) {
+        const a = $('.ta-rev a', q.li);
+        ul.append(W.h('li', {}, `Question ${q.i + 1} (${q.m} of ${q.n}): `, a ? W.h('a', { href: a.getAttribute('href') }, a.textContent.replace(/^Revise:\s*/, '')) : 'see the mark scheme'));
+      }
+      rev.append(ul);
+    }
+    function render() {
+      art.classList.toggle('mock-done', S.done);
+      runBtn.hidden = S.done;
+      finBtn.hidden = S.done;
+      againBtn.hidden = !S.done;
+      runBtn.textContent = S.start ? 'Pause' : (S.spent ? 'Resume' : (mins ? `Start the clock (${mins} min)` : 'Start the clock'));
+      note.textContent = S.done ? 'Mark each question against the mark scheme under it.' : 'Answers and mark schemes appear when you finish.';
+      clearInterval(iv);
+      if (S.start && !S.done) iv = setInterval(tick, 1000);
+      tick(); marksInputs(); summary();
+    }
+    runBtn.addEventListener('click', () => {
+      if (S.start) { S.spent += Date.now() - S.start; S.start = 0; } else S.start = Date.now();
+      save(); render();
+    });
+    finBtn.addEventListener('click', () => {
+      if (!confirmT) { finBtn.textContent = 'Show the answers?'; confirmT = setTimeout(() => { confirmT = 0; finBtn.textContent = 'Finish and mark'; }, 3000); return; }
+      clearTimeout(confirmT); confirmT = 0; finBtn.textContent = 'Finish and mark';
+      if (S.start) { S.spent += Date.now() - S.start; S.start = 0; }
+      S.done = true; save(); render();
+      for (const d of $$('.try-mock details.ta', art)) d.open = true;
+      bar.scrollIntoView({ block: 'nearest' });
+    });
+    againBtn.addEventListener('click', () => {
+      S = { start: 0, spent: 0, done: false, marks: {} }; save(); warned = false;
+      for (const d of $$('.try-mock details.ta', art)) d.open = false;
+      render(); window.scrollTo(0, art.offsetTop);
+    });
+    render();
+  }
+
+  /* ---------- "Learn more online" page: show one kind of link ---------- */
+  function initLinkFilter(art) {
+    for (const f of $$('.lk-filter', art)) {
+      const sheet = f.closest('.lk-sheet');
+      f.addEventListener('click', (e) => {
+        const b = e.target.closest('button[data-k]');
+        if (!b) return;
+        const k = b.getAttribute('data-k');
+        for (const x of $$('button', f)) x.setAttribute('aria-pressed', x === b ? 'true' : 'false');
+        for (const g of $$('.lk-g', sheet)) g.hidden = !!k && g.getAttribute('data-kind') !== k;
+        for (const box of $$('.links-b', sheet)) {
+          const show = $$('.lk-g', box).some(g => !g.hidden);
+          box.hidden = !show;
+          if (box.previousElementSibling && box.previousElementSibling.tagName === 'H3') box.previousElementSibling.hidden = !show;
+        }
+        for (const h2 of $$('h2', sheet)) {
+          let el = h2.nextElementSibling, any = false;
+          while (el && el.tagName !== 'H2') { if (el.tagName === 'H3' && !el.hidden) any = true; el = el.nextElementSibling; }
+          h2.hidden = !any;
+        }
+      });
+    }
+  }
+
   /* ---------- sidebar ---------- */
   function openSubject(sid, only) {
     for (const sec of $$('.nav-subj')) {
@@ -147,6 +290,9 @@
       if (!fn) { el.innerHTML = `<div class="w"><div class="w-b"><div class="w-note">This interactive tool (${W.esc(name)}) is being built and will appear in a later update.</div></div></div>`; continue; }
       try { fn(el, Object.assign({}, el.dataset)); } catch (err) { console.error(err); el.innerHTML = `<div class="w"><div class="w-b"><div class="w-err">This tool could not start: ${W.esc(err.message)}</div></div></div>`; }
     }
+    renderTicks(art);
+    if (art.getAttribute('data-level') === 'mock') initMock(art);
+    if ($('.lk-filter', art)) initLinkFilter(art);
     if (art.id === 'c-practice.quiz') ZTA.loadAll().then(() => initPractice(art), loadFailed);
     if (art.id === 'c-tools.glossary') ZTA.loadAll().then(() => initGlossary(art), loadFailed);
   }
@@ -325,7 +471,7 @@
     ZTA.loadAll().then(() => { if (input.value.trim() && document.activeElement === input) showResults(); }, loadFailed);
     if (input.value.trim()) showResults();
   });
-  document.addEventListener('zta:chunk', () => { index = null; renderProgress(); });
+  document.addEventListener('zta:chunk', () => { index = null; renderProgress(); renderTicks(document); });
   input.addEventListener('keydown', (e) => {
     const items = $$('.sr', results);
     if (e.key === 'ArrowDown') { e.preventDefault(); sel = Math.min(items.length - 1, sel + 1); }
@@ -387,14 +533,34 @@
     const subjSel = W.h('select', { id: 'pqSubject', 'aria-label': 'Subject' }, W.h('option', { value: '' }, `All subjects (${all.length})`),
       ...subjects.map(s => W.h('option', { value: s.id }, `${s.t} (${all.filter(i => QUIZ[i].s === s.id).length})`)));
     const nSel = W.h('select', { id: 'pqCount', 'aria-label': 'Number of questions' }, ...[5, 10, 20, 40].map(n => W.h('option', { value: n, selected: n === 10 }, `${n} questions`)));
+    const setSel = W.h('select', { id: 'pqPaper', 'aria-label': 'Paper' });
+    const setCtl = W.h('div', { class: 'w-ctl', hidden: true }, W.h('label', {}, 'Paper'), setSel);
     const startBtn = W.h('button', { class: 'btn', type: 'button' }, 'Start a quiz');
     const area = W.h('div', {});
-    host.append(W.h('div', { class: 'w' }, W.h('div', { class: 'w-h' }, W.h('span', { class: 'w-t' }, 'Mixed practice'), W.h('span', { class: 'w-s' }, 'Questions are drawn at random from every chapter')),
-      W.h('div', { class: 'w-b' }, W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-ctl' }, W.h('label', {}, 'Subject'), subjSel), W.h('div', { class: 'w-ctl' }, W.h('label', {}, 'Length'), nSel), startBtn), area)));
+    host.append(W.h('div', { class: 'w' }, W.h('div', { class: 'w-h' }, W.h('span', { class: 'w-t' }, 'Mixed practice'), W.h('span', { class: 'w-s' }, 'Questions take turns between chapters, so you practise choosing the method')),
+      W.h('div', { class: 'w-b' }, W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-ctl' }, W.h('label', {}, 'Subject'), subjSel), setCtl, W.h('div', { class: 'w-ctl' }, W.h('label', {}, 'Length'), nSel), startBtn), area)));
     if (!all.length) { area.append(W.h('p', { class: 'w-note' }, 'Quizzes will appear here as chapters are added.')); return; }
+    const papersOf = (sid) => ((G.papers || {})[sid] || []).filter(p => p.c.some(c => all.some(i => QUIZ[i].c === c)));
+    function fillPapers() {
+      const ps = papersOf(subjSel.value);
+      setSel.innerHTML = '';
+      setSel.append(W.h('option', { value: '' }, 'All chapters'), ...ps.map(p => W.h('option', { value: p.id }, `${p.t} (${all.filter(i => p.c.includes(QUIZ[i].c)).length})`)));
+      setCtl.hidden = !ps.length;
+    }
+    subjSel.addEventListener('change', fillPapers);
+    fillPapers();
+    // interleave: shuffle each chapter's questions, then take one chapter at a time in turn
+    function interleave(pool, n) {
+      const by = new Map();
+      for (const i of W.shuffle(pool)) { const c = QUIZ[i].c; if (!by.has(c)) by.set(c, []); by.get(c).push(i); }
+      const lists = W.shuffle([...by.values()]), out = [];
+      while (out.length < n && lists.some(l => l.length)) for (const l of lists) if (l.length && out.length < n) out.push(l.shift());
+      return out;
+    }
     startBtn.addEventListener('click', () => {
-      const pool = all.filter(i => !subjSel.value || QUIZ[i].s === subjSel.value);
-      const pick = W.shuffle(pool).slice(0, +nSel.value);
+      const paper = papersOf(subjSel.value).find(p => p.id === setSel.value);
+      const pool = all.filter(i => (!subjSel.value || QUIZ[i].s === subjSel.value) && (!paper || paper.c.includes(QUIZ[i].c)));
+      const pick = interleave(pool, +nSel.value);
       let right = 0, answered = 0;
       const wrongCh = new Map();
       area.innerHTML = '';

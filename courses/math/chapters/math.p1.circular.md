@@ -212,14 +212,13 @@ A: (a) \(\theta = \dfrac{12.6}{9} = 1.4\). [M1 A1] (b) \(\tfrac12 \times 81 \tim
 - Calculator in radian mode when the angle has no degree sign.
 :::
 
-:::note Learn more online
-- **Watch:** [Arcs, sectors and segments](https://www.examsolutions.net/tutorials/arcs-sectors-segments/) · ExamSolutions · s = rθ and A = ½r²θ in use
-- **Watch:** [Exam questions: arcs, sectors and segments](https://www.examsolutions.net/tutorials/exam-questions-arcs-sectors-and-segments/) · ExamSolutions · exam-style questions solved on video
-- **Practise:** [CAIE Pure 1 radians exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/trigonometry/circular-measure-radians/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Practise:** [Trigonometry](https://www.khanacademy.org/math/trigonometry) · Khan Academy · the radians unit, with practice
-- **Papers:** [9709 Paper 1 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-1/) · Physics & Maths Tutor · circular measure appears in Paper 1 *(unofficial archive)*
+:::links
+- watch: [Arcs, sectors and segments](https://www.examsolutions.net/tutorials/arcs-sectors-segments/) · ExamSolutions · s = rθ and A = ½r²θ in use
+- watch: [Exam questions: arcs, sectors and segments](https://www.examsolutions.net/tutorials/exam-questions-arcs-sectors-and-segments/) · ExamSolutions · exam-style questions solved on video
+- practise: [CAIE Pure 1 radians exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/trigonometry/circular-measure-radians/exam-questions/) · Save My Exams · with mark schemes [paid]
+- practise: [Trigonometry](https://www.khanacademy.org/math/trigonometry) · Khan Academy · the radians unit, with practice
+- papers: [9709 Paper 1 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-1/) · Physics & Maths Tutor · circular measure appears in Paper 1 [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Trigonometry](#math.p1.trig).

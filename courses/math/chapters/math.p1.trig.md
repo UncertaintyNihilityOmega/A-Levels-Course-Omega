@@ -308,15 +308,14 @@ A: (a) Replace \(\sin^2\theta\) by \(1 - \cos^2\theta\): \(4 - 4\cos^2\theta = 3
 - Identities: \(\tan\theta \equiv \sin\theta/\cos\theta\) and \(\sin^2\theta + \cos^2\theta \equiv 1\). Prove from one side. Never divide by something that might be zero.
 :::
 
-:::note Learn more online
-- **Watch:** [Trig equations in different ranges](https://www.examsolutions.net/tutorials/trig-equations-different-ranges/) · ExamSolutions · finding every solution in an interval
-- **Watch:** [Exam questions: trig identities](https://www.examsolutions.net/tutorials/exam-questions-trigonometric-identities/) · ExamSolutions · prove-and-solve questions on video
-- **Practise:** [CAIE Pure 1 trig equations exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/trigonometry/trigonometric-equations/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Trig Tour](https://phet.colorado.edu/en/simulations/trig-tour) · PhET · the unit circle and the graphs move together
-- **Explore:** [Trigonometry: Triangles to Functions](https://undergroundmathematics.org/trigonometry-triangles-to-functions) · Underground Mathematics · from triangles to graphs, with rich problems
-- **Read:** [How to learn trigonometry intuitively](https://betterexplained.com/articles/intuitive-trigonometry/) · BetterExplained · a picture-first explanation of sin, cos and tan
+:::links
+- watch: [Trig equations in different ranges](https://www.examsolutions.net/tutorials/trig-equations-different-ranges/) · ExamSolutions · finding every solution in an interval
+- watch: [Exam questions: trig identities](https://www.examsolutions.net/tutorials/exam-questions-trigonometric-identities/) · ExamSolutions · prove-and-solve questions on video
+- practise: [CAIE Pure 1 trig equations exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/trigonometry/trigonometric-equations/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Trig Tour](https://phet.colorado.edu/en/simulations/trig-tour) · PhET · the unit circle and the graphs move together
+- explore: [Trigonometry: Triangles to Functions](https://undergroundmathematics.org/trigonometry-triangles-to-functions) · Underground Mathematics · from triangles to graphs, with rich problems
+- read: [How to learn trigonometry intuitively](https://betterexplained.com/articles/intuitive-trigonometry/) · BetterExplained · a picture-first explanation of sin, cos and tan
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Series](#math.p1.series).

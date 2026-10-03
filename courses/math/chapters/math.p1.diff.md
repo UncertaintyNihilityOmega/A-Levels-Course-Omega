@@ -399,16 +399,15 @@ Adding the two equations: \(3a = 6\), so \(a = 2\) and \(b = 4\). [A1]
 - Optimisation: one variable, differentiate, solve, reject impossible values, justify the maximum or minimum, answer the question.
 :::
 
-:::note Learn more online
-- **Watch:** [The Essence of Calculus](https://www.3blue1brown.com/lessons/essence-of-calculus) · 3Blue1Brown · the whole idea of calculus, visually
-- **Watch:** [The paradox of the derivative](https://www.3blue1brown.com/lessons/derivatives) · 3Blue1Brown · what "instantaneous rate of change" really means
-- **Watch:** [Exam questions: connected rates of change](https://www.examsolutions.net/tutorials/exam-questions-connected-rates-of-change/) · ExamSolutions · the chain rule in rates questions
-- **Practise:** [CAIE Pure 1 applications of differentiation](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/differentiation/applications-of-differentiation/exam-questions/) · Save My Exams · tangents, stationary points, rates *(some content paid)*
-- **Practise:** [Calculus 1](https://www.khanacademy.org/math/calculus-1) · Khan Academy · derivative skills with instant feedback
-- **Explore:** [Calculus Grapher](https://phet.colorado.edu/en/simulations/calculus-grapher) · PhET · draw a curve and see its derivative
-- **Explore:** [Calculus of Powers](https://undergroundmathematics.org/calculus-of-powers) · Underground Mathematics · rich problems on differentiating powers
+:::links
+- watch: [The Essence of Calculus](https://www.3blue1brown.com/lessons/essence-of-calculus) · 3Blue1Brown · the whole idea of calculus, visually
+- watch: [The paradox of the derivative](https://www.3blue1brown.com/lessons/derivatives) · 3Blue1Brown · what "instantaneous rate of change" really means
+- watch: [Exam questions: connected rates of change](https://www.examsolutions.net/tutorials/exam-questions-connected-rates-of-change/) · ExamSolutions · the chain rule in rates questions
+- practise: [CAIE Pure 1 applications of differentiation](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/differentiation/applications-of-differentiation/exam-questions/) · Save My Exams · tangents, stationary points, rates [paid]
+- practise: [Calculus 1](https://www.khanacademy.org/math/calculus-1) · Khan Academy · derivative skills with instant feedback
+- explore: [Calculus Grapher](https://phet.colorado.edu/en/simulations/calculus-grapher) · PhET · draw a curve and see its derivative
+- explore: [Calculus of Powers](https://undergroundmathematics.org/calculus-of-powers) · Underground Mathematics · rich problems on differentiating powers
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Integration](#math.p1.integ) reverses differentiation and uses it to find areas and volumes.

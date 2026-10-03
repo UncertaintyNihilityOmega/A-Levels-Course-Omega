@@ -279,15 +279,14 @@ A: The terms are \(2 + d\), \(2 + 4d\), \(2 + 13d\). [B1] \((2 + 4d)^2 = (2 + d)
 - For two progressions, write each condition as an equation in \(a\), \(d\) or \(r\) and solve simultaneously.
 :::
 
-:::note Learn more online
-- **Watch:** [Binomial expansion for positive integer powers](https://www.examsolutions.net/tutorials/binomial-expansion-for-positive-integer-powers/) · ExamSolutions · Pascal's triangle and ⁿCᵣ
-- **Watch:** [Exam questions: geometric series](https://www.examsolutions.net/tutorials/geometric-series-exam-questions/) · ExamSolutions · sums and sums to infinity in exam style
-- **Practise:** [CAIE Pure 1 binomial expansion exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/series/binomial-expansion/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Practise:** [CAIE Pure 1 geometric progressions exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/series/geometric-progressions/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Sequences](https://undergroundmathematics.org/sequences) · Underground Mathematics · problems on APs, GPs and beyond
-- **Explore:** [Counting & Binomials](https://undergroundmathematics.org/counting-and-binomials) · Underground Mathematics · why binomial coefficients count things
+:::links
+- watch: [Binomial expansion for positive integer powers](https://www.examsolutions.net/tutorials/binomial-expansion-for-positive-integer-powers/) · ExamSolutions · Pascal's triangle and ⁿCᵣ
+- watch: [Exam questions: geometric series](https://www.examsolutions.net/tutorials/geometric-series-exam-questions/) · ExamSolutions · sums and sums to infinity in exam style
+- practise: [CAIE Pure 1 binomial expansion exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/series/binomial-expansion/exam-questions/) · Save My Exams · with mark schemes [paid]
+- practise: [CAIE Pure 1 geometric progressions exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/series/geometric-progressions/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Sequences](https://undergroundmathematics.org/sequences) · Underground Mathematics · problems on APs, GPs and beyond
+- explore: [Counting & Binomials](https://undergroundmathematics.org/counting-and-binomials) · Underground Mathematics · why binomial coefficients count things
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Differentiation](#math.p1.diff) measures how fast a quantity changes.

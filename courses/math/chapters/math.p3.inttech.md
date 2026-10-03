@@ -235,15 +235,14 @@ A: \(\sin^3x = \sin^2x\cdot\sin x = (1 - u^2)\sin x\), and \(du = -\sin x\,dx\).
 - Exact answers keep \(\ln\), \(\pi\) and \(e\); give decimals only when asked for significant figures.
 :::
 
-:::note Learn more online
-- **Watch:** [Integration by parts](https://www.examsolutions.net/tutorials/integration-by-parts/) · ExamSolutions · choosing u and dv/dx
-- **Watch:** [Integration by substitution](https://www.examsolutions.net/tutorials/integration-substitution/) · ExamSolutions · changing the variable and the limits
-- **Practise:** [CAIE Pure 3 further integration exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/integration/further-integration/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Product Rule & Integration by Parts](https://undergroundmathematics.org/product-rule) · Underground Mathematics · rich problems linking the two
-- **Explore:** [Chain Rule & Integration by Substitution](https://undergroundmathematics.org/chain-rule) · Underground Mathematics · rich problems linking the two
-- **Read:** [Integration by parts](https://tutorial.math.lamar.edu/Classes/CalcII/IntegrationByParts.aspx) · Paul's Online Notes · many worked examples
+:::links
+- watch: [Integration by parts](https://www.examsolutions.net/tutorials/integration-by-parts/) · ExamSolutions · choosing u and dv/dx
+- watch: [Integration by substitution](https://www.examsolutions.net/tutorials/integration-substitution/) · ExamSolutions · changing the variable and the limits
+- practise: [CAIE Pure 3 further integration exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/integration/further-integration/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Product Rule & Integration by Parts](https://undergroundmathematics.org/product-rule) · Underground Mathematics · rich problems linking the two
+- explore: [Chain Rule & Integration by Substitution](https://undergroundmathematics.org/chain-rule) · Underground Mathematics · rich problems linking the two
+- read: [Integration by parts](https://tutorial.math.lamar.edu/Classes/CalcII/IntegrationByParts.aspx) · Paul's Online Notes · many worked examples
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Differential equations](#math.p3.diffeq).

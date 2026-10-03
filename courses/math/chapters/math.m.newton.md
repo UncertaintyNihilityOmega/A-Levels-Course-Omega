@@ -242,15 +242,14 @@ A: Vertically: \(R = 40 - T\sin\theta = 40 - 0.6T\). [M1 A1] Limiting friction: 
 - Car and trailer: whole system \(F - \text{resistances} = (m_1 + m_2)a\); trailer alone gives the tow-bar force; a rigid bar can be in thrust.
 :::
 
-:::note Learn more online
-- **Watch:** [Connected particles on inclined planes](https://www.examsolutions.net/tutorials/connected-particles-on-inclined-planes/) · ExamSolutions · string over a pulley on a slope
-- **Watch:** [Exam questions: tow-bars](https://www.examsolutions.net/tutorials/exam-questions-tow-bars/) · ExamSolutions · car and trailer, tension and thrust
-- **Practise:** [CAIE Mechanics Newton's second law exam questions](https://www.savemyexams.com/a-level/maths/cie/20/mechanics/topic-questions/forces-and-equilibrium/newtons-second-law/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [The Ramp](https://phet.colorado.edu/en/simulations/the-ramp) · PhET · forces on a slope, with friction
-- **Explore:** [Forces and Motion: Basics](https://phet.colorado.edu/en/simulations/forces-and-motion-basics) · PhET · net force and acceleration
-- **Papers:** [9709 Paper 4 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-4) · Physics & Maths Tutor · papers with mark schemes *(unofficial archive)*
+:::links
+- watch: [Connected particles on inclined planes](https://www.examsolutions.net/tutorials/connected-particles-on-inclined-planes/) · ExamSolutions · string over a pulley on a slope
+- watch: [Exam questions: tow-bars](https://www.examsolutions.net/tutorials/exam-questions-tow-bars/) · ExamSolutions · car and trailer, tension and thrust
+- practise: [CAIE Mechanics Newton's second law exam questions](https://www.savemyexams.com/a-level/maths/cie/20/mechanics/topic-questions/forces-and-equilibrium/newtons-second-law/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [The Ramp](https://phet.colorado.edu/en/simulations/the-ramp) · PhET · forces on a slope, with friction
+- explore: [Forces and Motion: Basics](https://phet.colorado.edu/en/simulations/forces-and-motion-basics) · PhET · net force and acceleration
+- papers: [9709 Paper 4 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-4) · Physics & Maths Tutor · papers with mark schemes [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [Momentum](#math.m.momentum).

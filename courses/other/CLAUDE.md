@@ -25,18 +25,18 @@ which session to run instead, and stop.
 | File | What | Edited by |
 |---|---|---|
 | COURSE.md | scope, syllabus, data values, depth guidance, chapter notes, widget specs, the gold chapter | Organizer |
-| course.json | chapter ids, titles, levels, groups, `aliases`, `packages` | Organizer |
+| course.json | chapter ids, titles, levels, groups, `aliases`, `packages`, `papers` | Organizer |
 | FACTS.md | verified exam facts and the syllabus learning outcomes | Organizer |
 | chapters/`<id>`.md | one chapter per file | Writer |
 | checks/`<id>`.py | recomputes every number in the chapter | Writer |
-| widgets.js | this course's interactive widgets | Writer |
+| widgets.js, widgets/`<name>`.js | this course's interactive widgets (one file per widget is fine) | Writer |
 | STATUS.md | one line per session (newest last) | everyone |
 | REVIEW.md | review findings: `- [ ]` open, `- [x]` done | Organizer writes, Writer closes |
 | REQUESTS.md | asks for the Organizer | everyone |
 | kit/STYLE.md · WIDGETS.md · EXAMPLE.md · LINKS.md | writing spec · widget spec · model chapter · ids in other courses | read-only |
 
 ## Commands (run in this folder)
-`node kit/zta.js status` · `check [id …]` · `preview` · `widget <name> 'data-…="…"'` · `serve`
+`node kit/zta.js status` · `check [id …]` · `preview` · `widget <name> 'data-…="…"' [--probe]` · `serve`
 To look at pages: start the **preview** launch config in the browser pane (port 5109), then open
 `http://localhost:5109/#<chapter-id>` (or `/widget.html?dark&phone`). Run `preview` again after edits.
 
@@ -47,8 +47,8 @@ To look at pages: start the **preview** launch config in the browser pane (port 
    chapters only when COURSE.md tells you to.
 3. For each chapter of the package, in order: write the whole chapter (Write tool) → write checks/`<id>`.py →
    `node kit/zta.js check <id>` → fix every error and checklist note with small Edits → next chapter.
-4. Build the package's widgets in widgets.js (kit/WIDGETS.md) and test each with `widget` in the browser pane:
-   light, dark and phone width.
+4. Build the package's widgets (kit/WIDGETS.md: use the W helpers). Test each with `widget <name> "…" --probe`
+   (headless light, dark and phone; fix every problem it lists), then look at it once in the browser pane.
 5. `preview`; open one or two of the new chapters in the browser pane and fix anything broken.
 6. STATUS line `- <date> · WRITE Pn · <chapters>; widgets <names> · next: <what status says>`. Report in 3 lines.
    

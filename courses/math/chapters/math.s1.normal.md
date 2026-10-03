@@ -195,15 +195,14 @@ A: \(P(X < 180) = 0.85\) so \(z = 1.0364\). [M1 A1] \(\dfrac{180 - 172}{\sigma} 
 - Approximating \(B(n, p)\): need \(np > 5\) and \(nq > 5\); use \(N(np, npq)\) with a continuity correction \(\pm 0.5\).
 :::
 
-:::note Learn more online
-- **Watch:** [Normal distribution probabilities](https://www.examsolutions.net/tutorials/probability-normal-distribution/) · ExamSolutions · standardising and using the table
-- **Watch:** [Normal approximation to the binomial](https://www.examsolutions.net/tutorials/normal-approximation-binomial-distribution/) · ExamSolutions · the continuity correction in action
-- **Watch:** [Why π is in the normal distribution](https://www.3blue1brown.com/lessons/gaussian-integral) · 3Blue1Brown · for the curious: the shape of the bell curve
-- **Practise:** [CAIE S1 normal distribution exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-1/topic-questions/statistical-distributions/normal-distribution/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
-- **Explore:** [Probability distributions](https://seeing-theory.brown.edu/probability-distributions/index.html) · Seeing Theory · change μ and σ and watch the curve
-- **Papers:** [9709 Paper 5 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-6/) · Physics & Maths Tutor · their page "cie-paper-6" holds Paper 5 *(unofficial archive)*
+:::links
+- watch: [Normal distribution probabilities](https://www.examsolutions.net/tutorials/probability-normal-distribution/) · ExamSolutions · standardising and using the table
+- watch: [Normal approximation to the binomial](https://www.examsolutions.net/tutorials/normal-approximation-binomial-distribution/) · ExamSolutions · the continuity correction in action
+- watch: [Why π is in the normal distribution](https://www.3blue1brown.com/lessons/gaussian-integral) · 3Blue1Brown · for the curious: the shape of the bell curve
+- practise: [CAIE S1 normal distribution exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-1/topic-questions/statistical-distributions/normal-distribution/exam-questions/) · Save My Exams · with mark schemes [paid]
+- explore: [Probability distributions](https://seeing-theory.brown.edu/probability-distributions/index.html) · Seeing Theory · change μ and σ and watch the curve
+- papers: [9709 Paper 5 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-6/) · Physics & Maths Tutor · their page "cie-paper-6" holds Paper 5 [unofficial]
 
-These sites open in your browser and need the internet. Links checked 3 October 2026.
+Links checked 3 October 2026.
 :::
-
 Next: [The Poisson distribution](#math.s2.poisson).
