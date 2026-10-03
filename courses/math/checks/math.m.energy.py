@@ -1,0 +1,43 @@
+# checks/math.m.energy.py: recomputes every number in the work, energy and power chapter.
+from math import isclose, sqrt, cos, sin, radians, asin, degrees
+
+def eq(label, got, want, tol=1e-9):
+    assert isclose(got, want, rel_tol=0, abs_tol=tol), f"{label}: computed {got}, chapter says {want}"
+
+def sf(x, n=3):
+    return float(f"{x:.{n}g}")
+
+eq("w1", 50 * 10 * cos(radians(60)), 250)
+w = 40 * 5 * cos(radians(30)); eq("w2", sf(w), 173); eq("net", sf(w - 60), 113)
+eq("KE", 0.5 * 800 * 625, 250000); eq("GPE", 60 * 10 * 30, 18000)
+# box
+eq("net", 180 - 60, 120); eq("v2", 120 * 2 / 4, 60); eq("v", sf(sqrt(60)), 7.75); eq("a", 20 / 4, 5); eq("chk", 2 * 5 * 6, 60)
+# slide
+eq("slide", sqrt(2 * 10 * 5), 10)
+# ball
+H = (112.5 + 20) / 10; eq("H", H, 13.25); eq("v2", 225 + 40, 265); eq("v", sf(sqrt(265)), 16.3); eq("112.5", 0.5 * 225, 112.5)
+# slope
+eq("h", 4 * 0.6, 2.4); eq("gpe", 5 * 10 * 2.4, 120); eq("F", 0.5 * (5 * 10 * 0.8), 20); eq("work", 80, 20 * 4); eq("v2", (120 - 80) * 2 / 5, 16); eq("a", (30 - 20) / 5, 2); eq("chk", 2 * 2 * 4, 16)
+# power
+eq("crane", 500 * 10 * 0.8, 4000); eq("30s", 4000 * 30, 120000)
+eq("vmax", 60000 / 1500, 40); eq("F30", 60000 / 30, 2000); eq("a30", sf((2000 - 1500) / 1200), 0.417)
+eq("wcomp", 1200 * 10 / 20, 600); eq("vmax hill", sf(60000 / 2100), 28.6); eq("F20", 60000 / 20, 3000); eq("a20", (3000 - 1500 - 600) / 1200, 0.75)
+# exam 1
+eq("vB2", 2 * 10 * 2.5, 50); eq("vB", sf(sqrt(50)), 7.07); eq("5", 0.5 * 10 * 2.5, 0.5 * 0.5 * 50 * 1.0 if False else 12.5)
+eq("F", 0.4 * 5, 2); eq("KE", 0.5 * 0.5 * 50, 12.5); eq("BC", 12.5 / 2, 6.25)
+# exam 2
+eq("w comp", 1500 * 10 / 30, 500); eq("F top", 900 + 500, 1400); eq("vmax hill2", sf(45000 / 1400), 32.1); eq("F15", 45000 / 15, 3000); eq("a15", sf((3000 - 900 - 500) / 1500), 1.07); eq("a level", (3000 - 900) / 1500, 1.4); eq("vmax level", 45000 / 900, 50)
+# try
+eq("t1", sf(40 * 5 * cos(radians(30))), 173)
+eq("t2 KE", 0.5 * 70 * 64, 2240); eq("t2 GPE", 70 * 10 * 12, 8400)
+eq("t3", sqrt(2 * 10 * 20), 20)
+eq("t4 KE", 0.5 * 3 * 64, 96); eq("t4 s", 96 / 15, 6.4); eq("t4 15", 3 * 10 * sin(radians(30)), 15)
+eq("t5 W", 0.5 * 2 * 36, 36); eq("t5 F", 36 / 9, 4); eq("t5 mu", 4 / 20, 0.2)
+eq("t6", 250 * 10 * 1.2, 3000)
+eq("t7 vmax", 50000 / 1250, 40); eq("t7 F", 50000 / 20, 2500); eq("t7 a", (2500 - 1250) / 1000, 1.25)
+eq("t8 F", 200 / 5, 40); eq("t8 sin", 25 / 800, 0.03125); eq("t8 th", sf(degrees(asin(25 / 800))), 1.79)
+eq("t9 res", 800 * 100, 80000); eq("t9 gpe", 2000 * 10 * 5, 100000); eq("t9 ke", 0.5 * 2000 * (225 - 100), 125000); eq("t9 D", (80000 + 100000 + 125000) / 100, 3050)
+eq("t10 P", 1200 * 50, 60000); eq("t10 F", 60000 / 30, 2000); eq("t10 a", sf((2000 - 1200) / 1500), 0.533)
+# quiz
+eq("q2", 0.5 * 4 * 9, 18); eq("q3", 2000 * 20, 40000); eq("q5", sqrt(2 * 10 * 3.2), 8)
+print("ok")

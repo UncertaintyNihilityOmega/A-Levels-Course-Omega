@@ -1,0 +1,258 @@
+@chapter math.p3.integ
+@title Further integration
+@level as a2
+@paper CAIE P2/P3 · Edexcel IAL P3–P4 · AQA/OCR/Edexcel Pure Year 2
+@time 8–10 hours
+@summary Integrals of \(e^{ax+b}\), \(\dfrac{1}{ax+b}\), \(\sin(ax+b)\), \(\cos(ax+b)\) and \(\sec^2(ax+b)\); using trigonometric identities to integrate \(\sin^2 x\), \(\cos^2 x\) and \(\tan^2 x\); areas and volumes with these functions; the trapezium rule; and \(\dfrac{1}{x^2+a^2}\) in Paper 3.
+
+:::why
+Integration reverses differentiation, so each new derivative from [Further differentiation](#math.p3.diff) gives a new integral. These integrals measure growth that is accumulated continuously, and the area under a wave. Some functions, such as \(e^{x^2}\), have no antiderivative you can write down. The trapezium rule estimates their integrals numerically, which is a method that scientists and engineers use daily.
+:::
+
+**Before you start**, you need [Integration](#math.p1.integ) (areas, definite integrals, volumes of revolution), the derivatives in [Further differentiation](#math.p3.diff), and the double angle formulae from [Further trigonometry](#math.p3.trig). Angles are in radians throughout.
+
+## Standard integrals
+
+Each result below is a derivative read backwards. For example, \(\dfrac{d}{dx}(\sin x) = \cos x\) means \(\displaystyle\int \cos x\,dx = \sin x + c\).
+
+:::key Standard integrals (radians)
+\[\int e^x\,dx = e^x + c \qquad \int \frac1x\,dx = \ln|x| + c\]
+\[\int \sin x\,dx = -\cos x + c \qquad \int \cos x\,dx = \sin x + c \qquad \int \sec^2 x\,dx = \tan x + c\]
+With a linear inside function \(ax + b\), divide by the coefficient \(a\):
+\[\int e^{ax+b}\,dx = \frac1a e^{ax+b} + c \qquad \int \frac{1}{ax+b}\,dx = \frac1a\ln|ax+b| + c\]
+\[\int \sin(ax+b)\,dx = -\frac1a\cos(ax+b) + c \qquad \int \cos(ax+b)\,dx = \frac1a\sin(ax+b) + c\]
+\[\int \sec^2(ax+b)\,dx = \frac1a\tan(ax+b) + c\]
+The basic forms are on MF19; the versions with \(ax + b\) follow from the chain rule. The modulus in \(\ln|x|\) allows for negative \(x\). Never forget \(+\,c\).
+:::
+
+:::warn Easy slips with signs and factors
+The integral of \(\sin x\) is \(-\cos x\), not \(\cos x\). The integral of \(\cos x\) is \(+\sin x\). Dividing by \(a\) is easy to forget: \(\int e^{3x}\,dx = \tfrac13 e^{3x}\), not \(e^{3x}\) or \(3e^{3x}\). Check every integral by differentiating your answer. Also \(\int \dfrac{1}{x}\,dx = \ln|x|\), not \(\dfrac{x^0}{0}\).
+:::
+
+:::eg Find (a) \(\displaystyle\int (3e^{2x} + 4)\,dx\), (b) \(\displaystyle\int \frac{6}{2x + 1}\,dx\), (c) \(\displaystyle\int \left(\sin 4x - 5\cos\tfrac x2\right)dx\), (d) \(\displaystyle\int \sec^2\left(\tfrac{x}{2}\right)dx\)
+(a) \(\dfrac32 e^{2x} + 4x + c\).
+
+(b) \(6 \times \dfrac12\ln|2x + 1| + c = 3\ln|2x + 1| + c\).
+
+(c) \(-\tfrac14\cos 4x - 5 \times 2\sin\tfrac x2 + c = -\tfrac14\cos 4x - 10\sin\tfrac x2 + c\).
+
+(d) \(2\tan\tfrac x2 + c\) (dividing by \(\tfrac12\) means multiplying by \(2\)).
+Check (b) by differentiating: \(3 \times \dfrac{2}{2x + 1} = \dfrac{6}{2x + 1}\). ✓
+:::
+
+Sometimes you must expand or divide before integrating. Never integrate a product or quotient term by term.
+
+:::eg Find (a) \(\displaystyle\int (1 + e^x)^2\,dx\), (b) \(\displaystyle\int \frac{x^2 + 1}{x}\,dx\)
+(a) Expand: \((1 + e^x)^2 = 1 + 2e^x + e^{2x}\). So the integral is \(x + 2e^x + \tfrac12 e^{2x} + c\).
+
+(b) Divide each term by \(x\): \(\dfrac{x^2 + 1}{x} = x + \dfrac1x\), so the integral is \(\tfrac12 x^2 + \ln|x| + c\).
+:::
+
+### Definite integrals with these functions
+
+Substitute the limits as before. Keep answers exact (in terms of \(\ln\), \(e\) and \(\pi\)) when asked.
+
+:::eg Evaluate exactly (a) \(\displaystyle\int_0^{\ln 2} e^{2x}\,dx\), (b) \(\displaystyle\int_1^3 \frac{1}{x}\,dx\), (c) \(\displaystyle\int_0^{\pi/4}\sec^2 x\,dx\), (d) \(\displaystyle\int_0^{\pi/2}\sin 2x\,dx\)
+(a) \(\Big[\tfrac12 e^{2x}\Big]_0^{\ln 2} = \tfrac12\left(e^{2\ln 2} - 1\right) = \tfrac12(4 - 1) = \tfrac32\), because \(e^{2\ln 2} = e^{\ln 4} = 4\).
+
+(b) \(\Big[\ln x\Big]_1^3 = \ln 3 - \ln 1 = \ln 3\).
+
+(c) \(\Big[\tan x\Big]_0^{\pi/4} = 1 - 0 = 1\).
+
+(d) \(\Big[-\tfrac12\cos 2x\Big]_0^{\pi/2} = -\tfrac12\cos\pi + \tfrac12\cos 0 = \tfrac12 + \tfrac12 = 1\).
+:::
+
+## Using trigonometric identities
+
+You cannot integrate \(\sin^2 x\) directly, but the double angle formulae rewrite it as a function you can integrate. From \(\cos 2x = 1 - 2\sin^2 x\) and \(\cos 2x = 2\cos^2 x - 1\):
+
+:::key Identities for integration
+\[\sin^2 x \equiv \tfrac12(1 - \cos 2x) \qquad \cos^2 x \equiv \tfrac12(1 + \cos 2x) \qquad \tan^2 x \equiv \sec^2 x - 1\]
+Also useful: \(\sin x\cos x \equiv \tfrac12\sin 2x\). These identities are the key step in many questions, so learn to spot them.
+:::
+
+:::eg Find (a) \(\displaystyle\int \sin^2 x\,dx\), (b) \(\displaystyle\int \cos^2 2x\,dx\), (c) \(\displaystyle\int \tan^2 x\,dx\), (d) \(\displaystyle\int_0^{\pi/4}\sin^2 x\,dx\)
+(a) \(\displaystyle\int \tfrac12(1 - \cos 2x)\,dx = \tfrac12 x - \tfrac14\sin 2x + c\).
+
+(b) Replace \(x\) by \(2x\) in the identity for \(\cos^2\): \(\cos^2 2x = \tfrac12(1 + \cos 4x)\). The integral is \(\tfrac12 x + \tfrac18\sin 4x + c\).
+
+(c) \(\displaystyle\int (\sec^2 x - 1)\,dx = \tan x - x + c\).
+
+(d) Using (a): \(\Big[\tfrac12 x - \tfrac14\sin 2x\Big]_0^{\pi/4} = \tfrac{\pi}{8} - \tfrac14\sin\tfrac\pi2 = \dfrac\pi8 - \dfrac14\).
+Check: \(\dfrac\pi8 - \dfrac14 = 0.1427\), which is a sensible small area under a curve rising from 0 to 0.5 over a width of 0.785. ✓
+:::
+
+## Areas and volumes
+
+The area and volume formulae from [Integration](#math.p1.integ) still apply: area \(= \int y\,dx\) (split at roots), and volume about the \(x\)-axis \(= \pi\int y^2\,dx\).
+
+:::eg Find the area under \(y = \dfrac{1}{2x + 1}\) between \(x = 0\) and \(x = 2\), and the volume generated when \(y = \sin x\) for \(0 \le x \le \pi\) is rotated about the \(x\)-axis.
+Area \(= \displaystyle\int_0^2 \frac{1}{2x + 1}\,dx = \Big[\tfrac12\ln(2x + 1)\Big]_0^2 = \tfrac12\ln 5 = 0.805\) (3 s.f.).
+
+Volume \(= \pi\displaystyle\int_0^\pi \sin^2 x\,dx = \pi\Big[\tfrac12 x - \tfrac14\sin 2x\Big]_0^\pi = \pi \times \tfrac\pi2 = \dfrac{\pi^2}{2} = 4.93\) (3 s.f.).
+:::
+
+:::eg A website's number of users \(N\) grows at a rate \(\dfrac{dN}{dt} = 5000e^{0.2t}\) users per month, where \(t\) is the time in months. There are 20 000 users at \(t = 0\). Find \(N\) in terms of \(t\), and \(N\) when \(t = 5\).
+\(N = \displaystyle\int 5000e^{0.2t}\,dt = \dfrac{5000}{0.2}e^{0.2t} + c = 25\,000e^{0.2t} + c\). At \(t = 0\): \(20\,000 = 25\,000 + c\), so \(c = -5000\). Therefore \(N = 25\,000e^{0.2t} - 5000\). When \(t = 5\): \(N = 25\,000e - 5000 = 62\,957\), which is \(63\,000\) users to 3 s.f.
+:::
+
+:::eg (Exam style) The region \(R\) is bounded by the curve \(y = \dfrac{3}{2x + 1}\), the \(x\)-axis and the lines \(x = 0\) and \(x = 2\). (a) Find the exact area of \(R\). (b) Find the exact volume generated when \(R\) is rotated through \(360^\circ\) about the \(x\)-axis.
+**(a)** Area \(= \displaystyle\int_0^2 \frac{3}{2x + 1}\,dx\) [M1]
+\[= \Big[\tfrac32\ln(2x + 1)\Big]_0^2 = \tfrac32\ln 5 - \tfrac32\ln 1 = \tfrac32\ln 5\] [A1 A1]
+
+**(b)** Volume \(= \pi\displaystyle\int_0^2 \frac{9}{(2x + 1)^2}\,dx = 9\pi\int_0^2 (2x + 1)^{-2}\,dx\) [M1]
+\[= 9\pi\Big[-\frac{1}{2(2x + 1)}\Big]_0^2 = 9\pi\left(-\frac1{10} + \frac12\right)\] [M1 A1]
+\[= 9\pi \times \tfrac25 = \tfrac{18\pi}{5}\] [A1]
+:::
+
+## The trapezium rule
+
+Many functions, such as \(e^{x^2}\) or \(\sqrt{1 + x^3}\), cannot be integrated in closed form. We estimate the area under the curve by splitting it into strips and approximating each strip by a trapezium. (This method is listed for Paper 2 in the Cambridge syllabus.)
+
+:::def Ordinate
+An ordinate is the \(y\)-value of a curve at a given \(x\). For the trapezium rule you need the ordinates at the ends of each of the \(n\) equal strips, so \(n\) strips need \(n + 1\) ordinates.
+:::
+
+:::formula Trapezium rule
+To estimate \(\displaystyle\int_a^b y\,dx\) with \(n\) strips of equal width \(h = \dfrac{b-a}{n}\), use the \(n + 1\) ordinates \(y_0, y_1, \ldots, y_n\):
+\[\int_a^b y\,dx \approx \tfrac12 h\Big[y_0 + 2\left(y_1 + y_2 + \cdots + y_{n-1}\right) + y_n\Big]\]
+The first and last ordinates are counted once, and every other ordinate twice. It is **not** on MF19, so learn it.
+:::
+
+:::eg Use the trapezium rule with 4 strips to estimate \(\displaystyle\int_0^1 e^{x^2}\,dx\), giving your answer to 4 significant figures.
+\(h = \dfrac{1 - 0}{4} = 0.25\). The ordinates are:
+
+| \(x\) | 0 | 0.25 | 0.5 | 0.75 | 1 |
+|---|---|---|---|---|---|
+| \(y = e^{x^2}\) | 1 | 1.064494 | 1.284025 | 1.755055 | 2.718282 |
+
+\[\text{Estimate} = \tfrac12(0.25)\Big[1 + 2.718282 + 2(1.064494 + 1.284025 + 1.755055)\Big] = 0.125 \times 11.92543 = 1.491\]
+:::
+
+### Overestimate or underestimate?
+
+On each strip the trapezium's top edge is a chord of the curve. If the curve bends **upwards** (convex, \(\dfrac{d^2y}{dx^2} > 0\)), the chord lies above the curve and the trapezium rule gives an **overestimate**. If the curve bends **downwards** (concave, \(\dfrac{d^2y}{dx^2} < 0\)), the chord lies below the curve and the rule gives an **underestimate**. You can show this with a sketch.
+
+:::html
+<figure class="fig wide"><svg viewBox="0 0 580 215" role="img" aria-label="Two graphs each with four trapezia. For y equals one over x squared the curve bends upwards and the trapezium tops lie above it, an overestimate. For y equals ln x the curve bends downwards and the trapezium tops lie below it, an underestimate."><path class="ax" d="M10 190.0H245" marker-end="url(#ahm)"/><path class="ax" d="M10.0 194.0V30.0" marker-end="url(#ahm)"/><path class="fi" d="M20.0 190.0L20.0 40.0L72.5 123.3L125.0 152.5L177.5 166.0L230.0 173.3L230.0 190.0Z"/><path class="ln thin" d="M20.0 190.0V40.0M72.5 190.0V123.3M125.0 190.0V152.5M177.5 190.0V166.0M230.0 190.0V173.3"/><path class="c1" d="M20.0 40.0L34.0 73.2L48.0 96.5L62.0 113.5L76.0 126.2L90.0 136.0L104.0 143.7L118.0 149.9L132.0 154.9L146.0 159.0L160.0 162.4L174.0 165.3L188.0 167.8L202.0 169.9L216.0 171.7L230.0 173.3"/><text class="ts tc" x="20.0" y="205.0">1</text><text class="ts tc" x="125.0" y="205.0">2</text><text class="ts tc" x="230.0" y="205.0">3</text><text class="tl ti" x="243" y="184.0" text-anchor="end">x</text><text class="tl tb halo" x="130" y="22" text-anchor="middle">overestimate</text><text class="tl halo" x="125" y="115.0">y = 1/x²</text><path class="ax" d="M320 190.0H555" marker-end="url(#ahm)"/><path class="ax" d="M320.0 194.0V30.0" marker-end="url(#ahm)"/><path class="fi" d="M330.0 190.0L382.5 139.3L435.0 103.4L487.5 75.5L540.0 52.7L540.0 190.0Z"/><path class="ln thin" d="M382.5 190.0V139.3M435.0 190.0V103.4M487.5 190.0V75.5M540.0 190.0V52.7"/><path class="c1" d="M330.0 190.0L344.0 174.4L358.0 160.5L372.0 147.9L386.0 136.6L400.0 126.1L414.0 116.5L428.0 107.6L442.0 99.3L456.0 91.4L470.0 84.1L484.0 77.1L498.0 70.6L512.0 64.3L526.0 58.4L540.0 52.7"/><text class="ts tc" x="330.0" y="205.0">1</text><text class="ts tc" x="435.0" y="205.0">2</text><text class="ts tc" x="540.0" y="205.0">3</text><text class="tl ti" x="553" y="184.0" text-anchor="end">x</text><text class="tl tb halo" x="440" y="22" text-anchor="middle">underestimate</text><text class="tl halo" x="440" y="71.2">y = ln x</text></svg><figcaption>Four trapezia under each curve. Where the curve bends upwards the chord tops lie above it (left), so the rule overestimates. Where it bends downwards they lie below it (right), so the rule underestimates.</figcaption></figure>
+:::
+
+The Cambridge syllabus (2.5) accepts a sketch of the curve as the reason, so you do not always need to find the second derivative.
+
+:::eg Explain why the estimate of \(\displaystyle\int_0^1 e^{x^2}\,dx\) above is an overestimate. Then use 4 strips to estimate \(\displaystyle\int_1^3 \ln x\,dx\) and say whether it is an over- or underestimate.
+For \(y = e^{x^2}\), \(\dfrac{dy}{dx} = 2xe^{x^2}\) and \(\dfrac{d^2y}{dx^2} = (2 + 4x^2)e^{x^2} > 0\). The curve bends upwards, so each chord is above the curve and the estimate is an overestimate. (The true value is \(1.463\).)
+
+For \(\ln x\): \(h = 0.5\) and the ordinates are \(0\), \(0.405465\), \(0.693147\), \(0.916291\), \(1.098612\):
+\[\tfrac12(0.5)\left[0 + 1.098612 + 2(0.405465 + 0.693147 + 0.916291)\right] = 0.25 \times 5.1284 = 1.282\]
+Since \(\dfrac{d^2y}{dx^2} = -\dfrac{1}{x^2} < 0\), the curve is concave and the rule gives an **underestimate**. (The true value is \(3\ln 3 - 2 = 1.296\).)
+:::
+
+:::eg (Exam style) Use the trapezium rule with 4 strips to estimate \(\displaystyle\int_0^\pi \sin x\,dx\), giving 3 significant figures, and state with a reason whether it is an overestimate or underestimate. Compare with the exact value.
+\(h = \dfrac{\pi}{4}\). The ordinates are \(0\), \(\tfrac{\sqrt2}{2}\), \(1\), \(\tfrac{\sqrt2}{2}\), \(0\). [B1]
+\[\text{Estimate} = \tfrac12\cdot\frac\pi4\left[0 + 2\left(\tfrac{\sqrt2}{2} + 1 + \tfrac{\sqrt2}{2}\right) + 0\right] = \frac\pi8 \times 4.8284 = 1.90\] [M1 A1]
+The curve \(y = \sin x\) is concave on \(0 < x < \pi\) (\(\dfrac{d^2y}{dx^2} = -\sin x < 0\)), so the chords lie below the curve and the estimate is an underestimate. [B1] The exact value is \(\displaystyle\int_0^\pi \sin x\,dx = \Big[-\cos x\Big]_0^\pi = 2\), so the estimate \(1.90\) is below it, as predicted. [B1]
+:::
+
+### Integrals of 1/(x² + a²) (Paper 3 only)
+
+The derivative \(\dfrac{d}{dx}\tan^{-1}x = \dfrac{1}{1 + x^2}\) gives the integral directly.
+
+:::key Integral of \(\dfrac{1}{x^2 + a^2}\) (Paper 3 only)
+\[\int \frac{1}{x^2 + a^2}\,dx = \frac1a\tan^{-1}\left(\frac xa\right) + c\]
+This is on MF19. For \(\dfrac{1}{px^2 + q}\), take out the factor \(p\) first: \(\dfrac{1}{p}\cdot\dfrac{1}{x^2 + q/p}\).
+:::
+
+:::eg Find (a) \(\displaystyle\int_0^1 \frac{1}{1 + x^2}\,dx\), (b) \(\displaystyle\int \frac{1}{4 + x^2}\,dx\), (c) \(\displaystyle\int \frac{1}{3 + 2x^2}\,dx\)
+(a) \(\Big[\tan^{-1}x\Big]_0^1 = \dfrac\pi4 - 0 = \dfrac\pi4\).
+
+(b) \(a = 2\): \(\tfrac12\tan^{-1}\left(\tfrac x2\right) + c\).
+
+(c) \(\dfrac{1}{3 + 2x^2} = \dfrac12\cdot\dfrac{1}{\tfrac32 + x^2}\), so \(a^2 = \tfrac32\) and \(a = \sqrt{\tfrac32}\):
+\[\frac12 \times \frac{1}{\sqrt{3/2}}\tan^{-1}\left(\frac{x}{\sqrt{3/2}}\right) + c = \frac{1}{\sqrt6}\tan^{-1}\left(\sqrt{\tfrac23}\,x\right) + c\]
+:::
+
+:::exam Integration technique
+- For a definite integral, write the integrated form in square brackets with the limits, then substitute. "Exact" answers contain \(\ln\), \(e\) or \(\pi\).
+- If the integrand looks like \(\sin^2 x\), \(\cos^2 x\) or \(\tan^2 x\), state the identity you use. If it is a product of two different functions of \(x\), it is a topic for [Integration techniques](#math.p3.inttech).
+- For the trapezium rule, write the table of ordinates, quote the rule, and give the answer to the requested accuracy. For "over or under?", give the reason in terms of the sign of \(\dfrac{d^2y}{dx^2}\) or a sketch of the chords.
+:::
+
+:::board Other boards
+Edexcel IAL covers these integrals and the trapezium rule across P2 and P3, and more integration in P4. UK A Levels (AQA, Edexcel, OCR) include them in Pure Year 2; the trapezium rule is part of their Year 2 numerical methods. Cambridge lists the trapezium rule for Paper 2 only, and \(\dfrac{1}{x^2 + a^2}\) for Paper 3 only.
+:::
+
+:::try Start easy, finish at exam standard
+Q: Find (a) \(\displaystyle\int 4e^{-2x}\,dx\), (b) \(\displaystyle\int \frac{5}{3x - 1}\,dx\), (c) \(\displaystyle\int 3\cos(2x + 1)\,dx\), (d) \(\displaystyle\int (\sec^2 3x + 2)\,dx\).
+A: (a) \(-2e^{-2x} + c\). (b) \(\tfrac53\ln|3x - 1| + c\). (c) \(\tfrac32\sin(2x + 1) + c\). (d) \(\tfrac13\tan 3x + 2x + c\).
+Q: Find (a) \(\displaystyle\int (e^x + 1)^2\,dx\), (b) \(\displaystyle\int \frac{2x^2 - 3}{x}\,dx\).
+A: (a) \(\displaystyle\int (e^{2x} + 2e^x + 1)\,dx = \tfrac12 e^{2x} + 2e^x + x + c\). (b) \(\displaystyle\int \left(2x - \frac3x\right)dx = x^2 - 3\ln|x| + c\).
+Q: Evaluate exactly (a) \(\displaystyle\int_0^1 e^{3x}\,dx\), (b) \(\displaystyle\int_2^5 \frac{3}{x}\,dx\), (c) \(\displaystyle\int_0^{\pi/3}\sin x\,dx\).
+A: (a) \(\tfrac13(e^3 - 1)\). (b) \(3\ln 5 - 3\ln 2 = 3\ln\tfrac52\). (c) \(\Big[-\cos x\Big]_0^{\pi/3} = -\tfrac12 + 1 = \tfrac12\).
+Q: Find (a) \(\displaystyle\int \cos^2 x\,dx\), (b) \(\displaystyle\int_0^{\pi/2}\sin^2 3x\,dx\).
+A: (a) \(\tfrac12 x + \tfrac14\sin 2x + c\). (b) \(\sin^2 3x = \tfrac12(1 - \cos 6x)\), so \(\Big[\tfrac12 x - \tfrac1{12}\sin 6x\Big]_0^{\pi/2} = \tfrac\pi4 - \tfrac{1}{12}\sin 3\pi = \dfrac\pi4\).
+Q: Find (a) \(\displaystyle\int (\tan^2 x + 1)\,dx\), (b) \(\displaystyle\int_0^{\pi/4} 4\tan^2 x\,dx\).
+A: (a) \(\tan^2 x + 1 = \sec^2 x\), so the integral is \(\tan x + c\). (b) \(4\Big[\tan x - x\Big]_0^{\pi/4} = 4\left(1 - \dfrac\pi4\right) = 4 - \pi\).
+Q: Use the trapezium rule with 4 strips to estimate \(\displaystyle\int_1^2 \frac1x\,dx\). State whether it is an over- or underestimate and compare with \(\ln 2\).
+A: \(h = 0.25\); ordinates \(1, 0.8, 0.666667, 0.571429, 0.5\). Estimate \(= 0.125\left[1.5 + 2(2.038095)\right] = 0.125 \times 5.576190 = 0.697\). The curve \(y = \tfrac1x\) is convex (\(y'' = \tfrac{2}{x^3} > 0\)), so this is an overestimate. \(\ln 2 = 0.693\). ✓
+Q: The region under \(y = e^{x/2}\) from \(x = 0\) to \(x = 2\) is rotated about the \(x\)-axis. Find the exact volume.
+A: \(V = \pi\displaystyle\int_0^2 e^x\,dx = \pi(e^2 - 1)\).
+Q: The rate of change of the value \(V\) of a machine is \(\dfrac{dV}{dt} = -4000e^{-0.25t}\) dollars per year, with \(V = 20\,000\) at \(t = 0\). Find \(V\) in terms of \(t\) and the value after 4 years.
+A: \(V = \dfrac{-4000}{-0.25}e^{-0.25t} + c = 16\,000e^{-0.25t} + c\). At \(t = 0\): \(20\,000 = 16\,000 + c\), so \(c = 4000\). After 4 years \(V = 16\,000e^{-1} + 4000 = 9886.07\), about $9890.
+Q: (Paper 3) Find (a) \(\displaystyle\int \frac{6}{9 + x^2}\,dx\), (b) \(\displaystyle\int_0^{\sqrt3}\frac{1}{3 + x^2}\,dx\).
+A: (a) \(6 \times \tfrac13\tan^{-1}\tfrac x3 = 2\tan^{-1}\tfrac x3 + c\). (b) \(\Big[\tfrac{1}{\sqrt3}\tan^{-1}\tfrac{x}{\sqrt3}\Big]_0^{\sqrt3} = \tfrac{1}{\sqrt3}\cdot\tfrac\pi4 = \dfrac{\pi}{4\sqrt3}\).
+Q: (Exam style) (a) Use the trapezium rule with 4 strips to estimate \(\displaystyle\int_0^2 \sqrt{1 + x^2}\,dx\) to 3 significant figures. (b) State, with a reason, whether your estimate is an overestimate or underestimate.
+A: (a) \(h = 0.5\). Ordinates: \(1\), \(\sqrt{1.25} = 1.118034\), \(\sqrt2 = 1.414214\), \(\sqrt{3.25} = 1.802776\), \(\sqrt5 = 2.236068\). [B1] Estimate \(= 0.25\left[1 + 2.236068 + 2(1.118034 + 1.414214 + 1.802776)\right] = 0.25 \times 11.906116 = 2.98\). [M1 A1] (b) \(y = \sqrt{1 + x^2}\) has \(\dfrac{d^2y}{dx^2} = (1 + x^2)^{-3/2} > 0\), so it is convex and the estimate is an overestimate. [B1 B1]
+:::
+
+:::quiz
+? What is \(\displaystyle\int e^{4x}\,dx\)?
+- \(4e^{4x} + c\)
++ \(\tfrac14 e^{4x} + c\)
+- \(e^{4x} + c\)
+- \(\dfrac{e^{4x+1}}{4x + 1} + c\)
+> Divide by the coefficient of \(x\): \(\tfrac14 e^{4x}\). Multiplying by 4 is differentiation. The last option misapplies the power rule.
+? What is \(\displaystyle\int \sin 3x\,dx\)?
+- \(3\cos 3x + c\)
+- \(-3\cos 3x + c\)
+- \(\tfrac13\cos 3x + c\)
++ \(-\tfrac13\cos 3x + c\)
+> The integral of \(\sin\) is \(-\cos\), and the inside coefficient 3 divides: \(-\tfrac13\cos 3x\). Dropping the minus sign is the most common error.
+? Which is a correct first step to integrate \(\sin^2 x\)?
+- \(\sin^2 x = \tfrac12(1 + \cos 2x)\)
++ \(\sin^2 x = \tfrac12(1 - \cos 2x)\)
+- \(\sin^2 x = 1 + \cos^2 x\)
+- \(\sin^2 x = \dfrac{\sin 2x}{2}\)
+> From \(\cos 2x = 1 - 2\sin^2 x\) we get \(\sin^2 x = \tfrac12(1 - \cos 2x)\). The plus version is for \(\cos^2 x\).
+? The trapezium rule is used to estimate \(\displaystyle\int_1^3 \dfrac{1}{x^2}\,dx\). Will the estimate be too high or too low?
++ Too high, because the curve is convex.
+- Too low, because the curve is decreasing.
+- Too high, because the curve is decreasing.
+- Exactly right, because the curve is smooth.
+> \(y = x^{-2}\) has \(y'' = 6x^{-4} > 0\), so it bends upwards and the chords lie above it: an overestimate. Whether the curve is increasing or decreasing is irrelevant. Only the curvature matters.
+? \(\displaystyle\int_0^1 \frac{1}{1 + x^2}\,dx\) equals
+- \(\ln 2\)
++ \(\dfrac\pi4\)
+- \(\dfrac12\)
+- \(\dfrac\pi2\)
+> The integral of \(\dfrac{1}{1 + x^2}\) is \(\tan^{-1}x\), and \(\tan^{-1}1 = \dfrac\pi4\). The answer \(\ln 2\) would come from treating it like \(\int \dfrac{1}{1 + x}\,dx\).
+:::
+
+:::recap
+- \(\int e^{ax+b}\,dx = \tfrac1a e^{ax+b}\); \(\int\frac{1}{ax+b}\,dx = \tfrac1a\ln|ax+b|\); \(\int\sin(ax+b)\,dx = -\tfrac1a\cos(ax+b)\); \(\int\cos(ax+b)\,dx = \tfrac1a\sin(ax+b)\); \(\int\sec^2(ax+b)\,dx = \tfrac1a\tan(ax+b)\). Add \(+\,c\).
+- Expand brackets and divide quotients before integrating; never integrate products term by term.
+- \(\sin^2 x = \tfrac12(1 - \cos 2x)\), \(\cos^2 x = \tfrac12(1 + \cos 2x)\), \(\tan^2 x = \sec^2 x - 1\).
+- Trapezium rule: \(\tfrac12 h[y_0 + 2(y_1 + \cdots + y_{n-1}) + y_n]\). Convex curve (\(y'' > 0\)): overestimate. Concave (\(y'' < 0\)): underestimate.
+- Paper 3 only: \(\int\frac{1}{x^2 + a^2}\,dx = \tfrac1a\tan^{-1}\frac xa + c\).
+:::
+
+:::note Learn more online
+- **Watch:** [The trapezium rule](https://www.examsolutions.net/tutorials/trapezium-rule/) · ExamSolutions · the method and the table layout
+- **Watch:** [Exam questions: trapezium rule](https://www.examsolutions.net/tutorials/exam-questions-trapezium-rule/) · ExamSolutions · including over- and underestimates
+- **Practise:** [CAIE Pure 3 further integration exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-3/topic-questions/integration/further-integration/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
+- **Practise:** [Calculus 2](https://www.khanacademy.org/math/calculus-2) · Khan Academy · integration practice with instant feedback
+- **Papers:** [9709 Paper 2 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-2/) · Physics & Maths Tutor · the trapezium rule is examined on Paper 2 *(unofficial archive)*
+
+These sites open in your browser and need the internet. Links checked 3 October 2026.
+:::
+
+Next: [Numerical solution of equations](#math.p3.numerical).

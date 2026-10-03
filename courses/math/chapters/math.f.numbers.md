@@ -117,9 +117,11 @@ Each place to the right of the decimal point is ten times smaller: tenths, hundr
 
 Some fractions never terminate. \(\tfrac13 = 0.333\ldots\) is written \(0.\dot{3}\), where the dot marks the repeating digit. For a block of digits, a dot goes over the first and last digit, so \(0.272727\ldots = 0.\dot{2}\dot{7}\). Every recurring decimal is a rational number, and there is a method to find its fraction.
 
-:::eg Write \(0.\dot{2}\dot{7}\) as a fraction in its simplest form.
-Let \(x = 0.272727\ldots\) Two digits repeat, so multiply by 100: \(100x = 27.272727\ldots\) Subtract the first line from the second so the repeating part disappears:
-\[99x = 27 \quad\Rightarrow\quad x = \frac{27}{99} = \frac{3}{11}\]
+:::eg (Exam style) Write \(0.\dot{2}\dot{7}\) as a fraction in its simplest form.
+Let \(x = 0.272727\ldots\) Two digits repeat, so multiply by 100: \(100x = 27.272727\ldots\) [M1]
+Subtract the first line from the second so the repeating part disappears:
+\[99x = 27\] [M1]
+\[x = \frac{27}{99} = \frac{3}{11}\] [A1]
 Check: \(3 \div 11 = 0.2727\ldots\) The same idea sums geometric series in [Series](#math.p1.series).
 :::
 
@@ -294,6 +296,16 @@ A: (a) \(72 = 2^3 \times 3^2\) and \(108 = 2^2 \times 3^3\). HCF \(= 2^2 \times 
 - Ratio and proportion: find the value of one part or one unit first.
 - Round to 3 significant figures unless told otherwise; round only at the end; estimate to check.
 - HCF uses the lowest powers of common primes; LCM uses the highest powers of all primes.
+:::
+
+:::note Learn more online
+- **Watch:** [Videos and worksheets by topic](https://corbettmaths.com/contents/) · Corbettmaths · a short video and a worksheet for every GCSE number skill
+- **Practise:** [Dr Frost Maths question bank](https://www.drfrost.org/) · Dr Frost Maths · free practice from GCSE upwards (free account)
+- **Explore:** [Thinking about Numbers](https://undergroundmathematics.org/thinking-about-numbers) · Underground Mathematics · rich problems that make number facts stick
+- **Read:** [The world of numbers](https://www.mathsisfun.com/numbers/index.html) · Maths is Fun · friendly pages on fractions, percentages and ratio
+- **Read:** [Prealgebra 2e (free textbook)](https://openstax.org/details/books/prealgebra-2e) · OpenStax · full chapters on fractions, decimals and percentages, with exercises and answers
+
+These sites open in your browser and need the internet. Links checked 3 October 2026.
 :::
 
 Next: [Algebra from scratch](#math.f.algebra).

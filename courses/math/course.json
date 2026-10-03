@@ -28,19 +28,19 @@
     },
     {
       "id": "math.f.powers",
-      "title": "Powers, roots, surds and standard form",
+      "title": "Indices, surds and standard form",
       "level": "pre",
       "group": "Before you start"
     },
     {
       "id": "math.f.graphs",
-      "title": "Coordinates and straight lines",
+      "title": "Graphs and straight lines",
       "level": "pre",
       "group": "Before you start"
     },
     {
       "id": "math.f.geometry",
-      "title": "Geometry and basic trigonometry",
+      "title": "Geometry and trigonometry basics",
       "level": "pre",
       "group": "Before you start"
     },
@@ -58,7 +58,7 @@
     },
     {
       "id": "math.p1.coord",
-      "title": "Coordinate geometry",
+      "title": "Coordinate geometry: lines and circles",
       "level": "as",
       "group": "Pure Mathematics 1"
     },
@@ -76,7 +76,7 @@
     },
     {
       "id": "math.p1.series",
-      "title": "Series",
+      "title": "Series: binomial expansion and progressions",
       "level": "as",
       "group": "Pure Mathematics 1"
     },
@@ -94,8 +94,8 @@
     },
     {
       "id": "math.p3.algebra",
-      "title": "Algebra: modulus, polynomials and partial fractions",
-      "level": "as a2",
+      "title": "Modulus and polynomials",
+      "level": "as",
       "group": "Pure Mathematics 2 and 3"
     },
     {
@@ -113,13 +113,13 @@
     {
       "id": "math.p3.diff",
       "title": "Further differentiation",
-      "level": "as",
+      "level": "as a2",
       "group": "Pure Mathematics 2 and 3"
     },
     {
       "id": "math.p3.integ",
       "title": "Further integration",
-      "level": "a2",
+      "level": "as a2",
       "group": "Pure Mathematics 2 and 3"
     },
     {
@@ -129,14 +129,26 @@
       "group": "Pure Mathematics 2 and 3"
     },
     {
-      "id": "math.p3.vectors",
-      "title": "Vectors",
+      "id": "math.p3.partial",
+      "title": "Partial fractions and the binomial series",
+      "level": "a2",
+      "group": "Pure Mathematics 2 and 3"
+    },
+    {
+      "id": "math.p3.inttech",
+      "title": "Integration techniques: parts, substitution and partial fractions",
       "level": "a2",
       "group": "Pure Mathematics 2 and 3"
     },
     {
       "id": "math.p3.diffeq",
       "title": "Differential equations",
+      "level": "a2",
+      "group": "Pure Mathematics 2 and 3"
+    },
+    {
+      "id": "math.p3.vectors",
+      "title": "Vectors",
       "level": "a2",
       "group": "Pure Mathematics 2 and 3"
     },
@@ -177,12 +189,6 @@
       "group": "Probability and Statistics"
     },
     {
-      "id": "math.s.regression",
-      "title": "Correlation and regression (UK boards)",
-      "level": "as",
-      "group": "Probability and Statistics"
-    },
-    {
       "id": "math.s2.poisson",
       "title": "The Poisson distribution",
       "level": "a2",
@@ -210,6 +216,12 @@
       "id": "math.s2.hypothesis",
       "title": "Hypothesis testing",
       "level": "a2",
+      "group": "Probability and Statistics"
+    },
+    {
+      "id": "math.s.regression",
+      "title": "Correlation and regression (UK boards)",
+      "level": "ext",
       "group": "Probability and Statistics"
     },
     {
@@ -245,16 +257,400 @@
     {
       "id": "math.m.projectiles",
       "title": "Projectiles and moments (UK boards)",
-      "level": "a2",
+      "level": "ext",
       "group": "Mechanics"
+    },
+    {
+      "id": "math.proof",
+      "title": "Proof: how mathematicians know",
+      "level": "ext",
+      "group": "Further Mathematics"
     },
     {
       "id": "math.further",
       "title": "Further Mathematics: a guided tour",
       "level": "ext",
       "group": "Further Mathematics"
+    },
+    {
+      "id": "math.calc",
+      "title": "Your calculator: exam skills",
+      "level": "guide",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.exam.skills",
+      "title": "Writing maths for marks",
+      "level": "guide",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.exam.p1",
+      "title": "Paper 1 survival guide",
+      "level": "guide",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.exam.p23",
+      "title": "Papers 2 and 3 survival guide",
+      "level": "guide",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.exam.p4",
+      "title": "Paper 4 survival guide",
+      "level": "guide",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.exam.p5",
+      "title": "Paper 5 survival guide",
+      "level": "guide",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.exam.p6",
+      "title": "Paper 6 survival guide",
+      "level": "guide",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.mixed.pure1",
+      "title": "Mixed practice: Pure 1",
+      "level": "ref",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.mixed.pure3",
+      "title": "Mixed practice: Pure 2 and 3",
+      "level": "ref",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.mixed.mech",
+      "title": "Mixed practice: Mechanics",
+      "level": "ref",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.mixed.stats1",
+      "title": "Mixed practice: Statistics 1",
+      "level": "ref",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.mixed.stats2",
+      "title": "Mixed practice: Statistics 2",
+      "level": "ref",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.mock.p1a",
+      "title": "Mock paper: Pure 1 (A)",
+      "level": "ref",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.mock.p2a",
+      "title": "Mock paper: Pure 2 (A)",
+      "level": "ref",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.mock.p3a",
+      "title": "Mock paper: Pure 3 (A)",
+      "level": "ref",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.mock.p4a",
+      "title": "Mock paper: Mechanics (A)",
+      "level": "ref",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.mock.p5a",
+      "title": "Mock paper: Probability and Statistics 1 (A)",
+      "level": "ref",
+      "group": "Exam preparation"
+    },
+    {
+      "id": "math.mock.p6a",
+      "title": "Mock paper: Probability and Statistics 2 (A)",
+      "level": "ref",
+      "group": "Exam preparation"
     }
   ],
   "aliases": {},
-  "packages": []
+  "packages": [
+    {
+      "id": "P1",
+      "title": "Foundations",
+      "chapters": [
+        "math.overview",
+        "math.f.numbers",
+        "math.f.algebra",
+        "math.f.powers",
+        "math.f.graphs",
+        "math.f.geometry"
+      ],
+      "widgets": [],
+      "notes": "math.overview and math.f.numbers are finished (LEAD): do not rewrite them. Write algebra, powers, graphs, geometry at IGCSE-to-A-Level bridge depth. Graphs uses the existing graph widget; geometry ends with sine rule, cosine rule and ½ab sin C because P1 circular measure and P4 need them."
+    },
+    {
+      "id": "P2",
+      "title": "Pure 1: functions to series",
+      "chapters": [
+        "math.p1.functions",
+        "math.p1.coord",
+        "math.p1.circular",
+        "math.p1.trig",
+        "math.p1.series"
+      ],
+      "widgets": [],
+      "notes": "math.p1.functions is finished (LEAD). Trig embeds the existing unitcircle widget; coord may embed graph. Series covers binomial (a+b)^n, AP, GP and sum to infinity in one chapter."
+    },
+    {
+      "id": "P3",
+      "title": "Pure 1 calculus and Pure 2/3 algebra",
+      "chapters": [
+        "math.p1.diff",
+        "math.p1.integ",
+        "math.p3.algebra",
+        "math.p3.logs",
+        "math.p3.trig"
+      ],
+      "widgets": [],
+      "notes": "math.p1.diff is the gold chapter (LEAD): do not rewrite it. Integration includes improper integrals and volumes of revolution. The three P2/P3 chapters are AS (P2 and P3 alike)."
+    },
+    {
+      "id": "P4",
+      "title": "Pure 2/3 calculus and numerical methods",
+      "chapters": [
+        "math.p3.diff",
+        "math.p3.integ",
+        "math.p3.numerical",
+        "math.p3.partial"
+      ],
+      "widgets": [
+        "iteration"
+      ],
+      "notes": "Mark P3-only parts with a '### … (Paper 3 only)' heading: tan⁻¹x in diff; 1/(x²+a²) in integ. The trapezium rule is P2 only. Numerical embeds the new iteration widget."
+    },
+    {
+      "id": "P5",
+      "title": "Pure 3: techniques, differential equations, vectors, complex numbers",
+      "chapters": [
+        "math.p3.inttech",
+        "math.p3.diffeq",
+        "math.p3.vectors",
+        "math.p3.complex"
+      ],
+      "widgets": [
+        "argand"
+      ],
+      "notes": "All Paper 3 only. Complex embeds the new argand widget (loci)."
+    },
+    {
+      "id": "P6",
+      "title": "Probability and Statistics 1",
+      "chapters": [
+        "math.s1.data",
+        "math.s1.perms",
+        "math.s1.prob",
+        "math.s1.drv",
+        "math.s1.normal"
+      ],
+      "widgets": [
+        "discrete",
+        "normal"
+      ],
+      "notes": "Data embeds the existing stats widget. drv embeds discrete (binomial, geometric); normal embeds normal. Probabilities to 3 s.f."
+    },
+    {
+      "id": "P7",
+      "title": "Probability and Statistics 2 and regression",
+      "chapters": [
+        "math.s2.poisson",
+        "math.s2.linear",
+        "math.s2.crv",
+        "math.s2.sampling",
+        "math.s2.hypothesis",
+        "math.s.regression"
+      ],
+      "widgets": [],
+      "notes": "math.s2.poisson is finished (LEAD); add a discrete widget (data-dist=\"poisson\") to it after P6 builds discrete. Hypothesis testing reuses discrete and normal. Regression is UK/Edexcel IAL only."
+    },
+    {
+      "id": "P8",
+      "title": "Mechanics and the Further Mathematics tour",
+      "chapters": [
+        "math.m.forces",
+        "math.m.kinematics",
+        "math.m.newton",
+        "math.m.momentum",
+        "math.m.energy",
+        "math.m.projectiles",
+        "math.further"
+      ],
+      "widgets": [
+        "projectile",
+        "resultant"
+      ],
+      "notes": "math.m.forces is finished (LEAD); add a resultant widget to it. Take g = 10. Projectiles and moments are Edexcel IAL M1/M2 and UK content (Cambridge has them in Further Mechanics): projectile widget there."
+    },
+    {
+      "id": "P9",
+      "title": "Exam skills: calculator, writing maths, paper guides",
+      "chapters": [
+        "math.calc",
+        "math.exam.skills",
+        "math.exam.p1",
+        "math.exam.p23",
+        "math.exam.p4",
+        "math.exam.p5",
+        "math.exam.p6"
+      ],
+      "widgets": [],
+      "notes": "Guides (prose-led, no :::try). Paper facts from FACTS.md only; no grade boundaries or frequency claims."
+    },
+    {
+      "id": "P10",
+      "title": "Deeper practice and proofs: Pure 1",
+      "chapters": [
+        "math.p1.quadratics",
+        "math.p1.functions",
+        "math.p1.coord",
+        "math.p1.circular",
+        "math.p1.trig",
+        "math.p1.series",
+        "math.p1.diff",
+        "math.p1.integ"
+      ],
+      "widgets": [
+        "proof",
+        "area"
+      ],
+      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::note Why it's true until :::proof exists) and keep the Learn more online box. Do not rewrite the teaching. Build proof (scenes completesquare, inverse, perp, sector, apsum, gpsum, pascal, chordlimit, ftc, discs), area, and graph data-tangent / data-shade-between."
+    },
+    {
+      "id": "P11",
+      "title": "Deeper practice and proofs: Pure 2/3 part 1",
+      "chapters": [
+        "math.p3.algebra",
+        "math.p3.logs",
+        "math.p3.trig",
+        "math.p3.diff",
+        "math.p3.integ",
+        "math.p3.numerical"
+      ],
+      "widgets": [],
+      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::note Why it's true until :::proof exists) and keep the Learn more online box. Do not rewrite the teaching. Add proof scenes compound, expderiv, sinlimit, productrule."
+    },
+    {
+      "id": "P12",
+      "title": "Deeper practice and proofs: Pure 3",
+      "chapters": [
+        "math.p3.partial",
+        "math.p3.inttech",
+        "math.p3.diffeq",
+        "math.p3.vectors",
+        "math.p3.complex"
+      ],
+      "widgets": [
+        "slopefield",
+        "vectors3d"
+      ],
+      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::note Why it's true until :::proof exists) and keep the Learn more online box. Do not rewrite the teaching. Thin chapters: at least two more fully marked long exam examples in inttech, diffeq, vectors, complex. Add proof scene dotcosine."
+    },
+    {
+      "id": "P13",
+      "title": "Deeper practice and proofs: Statistics 1",
+      "chapters": [
+        "math.s1.data",
+        "math.s1.perms",
+        "math.s1.prob",
+        "math.s1.drv",
+        "math.s1.normal"
+      ],
+      "widgets": [],
+      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::note Why it's true until :::proof exists) and keep the Learn more online box. Do not rewrite the teaching. Thin chapters: at least two more fully marked exam examples in perms, prob, drv, normal. Add proof scene tree."
+    },
+    {
+      "id": "P14",
+      "title": "Deeper practice and proofs: Statistics 2",
+      "chapters": [
+        "math.s2.poisson",
+        "math.s2.linear",
+        "math.s2.crv",
+        "math.s2.sampling",
+        "math.s2.hypothesis",
+        "math.s.regression"
+      ],
+      "widgets": [
+        "sampling"
+      ],
+      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::note Why it's true until :::proof exists) and keep the Learn more online box. Do not rewrite the teaching."
+    },
+    {
+      "id": "P15",
+      "title": "Deeper practice and proofs: Mechanics",
+      "chapters": [
+        "math.m.forces",
+        "math.m.kinematics",
+        "math.m.newton",
+        "math.m.momentum",
+        "math.m.energy",
+        "math.m.projectiles"
+      ],
+      "widgets": [
+        "incline",
+        "vt"
+      ],
+      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::note Why it's true until :::proof exists) and keep the Learn more online box. Do not rewrite the teaching. Take g = 10."
+    },
+    {
+      "id": "P16",
+      "title": "Foundations, proof chapter, overview",
+      "chapters": [
+        "math.f.numbers",
+        "math.f.algebra",
+        "math.f.powers",
+        "math.f.graphs",
+        "math.f.geometry",
+        "math.further",
+        "math.proof",
+        "math.overview"
+      ],
+      "widgets": [],
+      "notes": "Deeper practice (COURSE.md: v2 sections): add Warm-up, Exam practice ★–★★★, Stretch for A*, Spot the error, proofs (:::note Why it's true until :::proof exists) and keep the Learn more online box. Do not rewrite the teaching. Foundations get Warm-up only from earlier foundations. Add proof scenes pythagoras, cosinerule. math.proof is new. Overview: readiness quiz routing to f.* chapters, and links to the guides, mocks and mixed sets."
+    },
+    {
+      "id": "P17",
+      "title": "Mock papers P1, P2, P3 and mixed Pure",
+      "chapters": [
+        "math.mock.p1a",
+        "math.mock.p2a",
+        "math.mock.p3a",
+        "math.mixed.pure1",
+        "math.mixed.pure3"
+      ],
+      "widgets": [],
+      "notes": "COURSE.md: Mocks and Mixed practice. Marks must total 75 / 50 / 75; the check asserts it."
+    },
+    {
+      "id": "P18",
+      "title": "Mock papers P4, P5, P6 and mixed applied",
+      "chapters": [
+        "math.mock.p4a",
+        "math.mock.p5a",
+        "math.mock.p6a",
+        "math.mixed.mech",
+        "math.mixed.stats1",
+        "math.mixed.stats2"
+      ],
+      "widgets": [],
+      "notes": "COURSE.md: Mocks and Mixed practice. Marks total 50 each; g = 10."
+    }
+  ]
 }

@@ -69,6 +69,12 @@ Let \(X\) be the number of emails in an hour. Then \(X \sim \mathrm{Po}(4)\).
 \[P(X \ge 6) = 1 - e^{-4}\left(1 + 4 + 8 + \tfrac{32}{3} + \tfrac{32}{3} + \tfrac{128}{15}\right) = 1 - 0.7851 = 0.215\]
 :::
 
+The widget draws the distribution for any mean. Set \(\lambda = 4\) and the range 0 to 2 to check part (b), then raise \(\lambda\) and watch the shape become symmetric and bell-like. That is why a normal approximation works for large \(\lambda\).
+
+:::html
+<div class="widget" data-w="discrete" data-dist="poisson" data-lambda="4" data-range="0,2"></div>
+:::
+
 ## Changing the interval
 
 The mean \(\lambda\) belongs to one particular interval. Because the rate is constant, a longer or shorter interval has a proportionally larger or smaller mean.
@@ -77,7 +83,7 @@ The mean \(\lambda\) belongs to one particular interval. Because the rate is con
 If events occur at a constant average rate of \(k\) per unit of time (or length, or area), the number of events in an interval of size \(t\) has distribution \(\mathrm{Po}(kt)\).
 :::
 
-Always write down the new distribution before you calculate. Counts in separate intervals add, and so do their means: if the number of emails in one hour is \(\mathrm{Po}(4)\), the number in two hours is \(\mathrm{Po}(8)\). [Linear combinations of random variables](#math.s2.linear) proves this.
+Always write down the new distribution before you calculate. Counts in separate intervals add, and so do their means: if the number of emails in one hour is \(\mathrm{Po}(4)\), the number in two hours is \(\mathrm{Po}(8)\). [Linear combinations of random variables](#math.s2.linear) states this result for any two independent Poisson variables.
 
 :::warn Scale the mean, not the probability
 If \(P(\text{no flaws in 10 m}) = 0.449\), then \(P(\text{no flaws in 20 m})\) is **not** \(2 \times 0.449\). Double the mean to \(\lambda = 1.6\) and recalculate: \(e^{-1.6} = 0.202\). As a check, both 10 m halves must be flawless, and \(0.449^{2} = 0.202\).
@@ -241,6 +247,16 @@ A: (a) \(X \sim \mathrm{Po}(4)\). \(P(X > 7) = 1 - P(X \le 7) = 1 - 0.9489 = 0.0
 - If \(X \sim B(n, p)\) with \(n > 50\) and \(np < 5\), then \(X \approx \mathrm{Po}(np)\).
 - If \(X \sim \mathrm{Po}(\lambda)\) with \(\lambda > 15\), then \(X \approx N(\lambda, \lambda)\). Use the continuity correction of 0.5.
 - In exam answers, state conditions in context and show the substituted formula before the calculator value.
+:::
+
+:::note Learn more online
+- **Watch:** [The Poisson distribution](https://www.examsolutions.net/tutorials/poisson-distribution/) · ExamSolutions · Po(λ) probabilities step by step
+- **Watch:** [Exam questions: Poisson distribution](https://www.examsolutions.net/tutorials/exam-questions-poisson-distribution/) · ExamSolutions · exam-style questions solved on video
+- **Practise:** [CAIE S2 Poisson exam questions](https://www.savemyexams.com/a-level/maths/cie/20/probability-and-statistics-2/topic-questions/statistical-distributions/poisson-distribution/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
+- **Explore:** [Probability distributions](https://seeing-theory.brown.edu/probability-distributions/index.html) · Seeing Theory · interactive distributions
+- **Papers:** [9709 Paper 6 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-7/) · Physics & Maths Tutor · their page "cie-paper-7" holds Paper 6 (9709/6) *(unofficial archive)*
+
+These sites open in your browser and need the internet. Links checked 3 October 2026.
 :::
 
 Next: [Linear combinations of random variables](#math.s2.linear) shows how to add independent random variables, including Poisson ones.

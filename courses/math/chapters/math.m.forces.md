@@ -9,7 +9,7 @@
 Every bridge, crane, climbing rope and roof is designed so that the forces on it balance. If they do not, something moves, usually in the wrong direction. Mechanics is the mathematics of forces and motion. It is a short, high-scoring paper (Cambridge Paper 4) once you can draw a good force diagram, and this chapter teaches the skills that every later mechanics chapter uses: spotting forces, splitting them into components and writing equations.
 :::
 
-**Before you start**, you need right-angled triangle trigonometry from [Geometry and basic trigonometry](#math.f.geometry) and confident algebra from [Algebra from scratch](#math.f.algebra). Slopes use \(\sin\) and \(\cos\) of angles, as in [Trigonometry](#math.p1.trig).
+**Before you start**, you need right-angled triangle trigonometry from [Geometry and trigonometry basics](#math.f.geometry) and confident algebra from [Algebra from scratch](#math.f.algebra). Slopes use \(\sin\) and \(\cos\) of angles, as in [Trigonometry](#math.p1.trig).
 
 ## Forces and the mechanics model
 
@@ -34,6 +34,8 @@ Real objects are complicated, so mechanics replaces them with simple **models**.
 | rough | Friction may act. |
 | uniform (rod, plank) | The mass is spread evenly, so the weight acts at the midpoint. |
 | smooth pulley or peg | A string slides over it freely, so the tension is the same on both sides. |
+
+A model is a simplification, and Cambridge can ask about its limits. No real surface is perfectly smooth, so a "smooth" model predicts that an object starts to slide under the smallest push and never slows down by itself. It works well for ice or a polished, greased surface, but it overestimates speeds and underestimates the force needed to hold an object still on anything rougher.
 
 ## The forces you will meet
 
@@ -130,6 +132,12 @@ Totals: \(X = 12 - 5 = 7\) N and \(Y = 8.66\) N.
 \[\tan\alpha = \frac{8.66}{7} \quad\Rightarrow\quad \alpha = 51.1^\circ\]
 
 The resultant is 11.1 N, at \(51.1^\circ\) above the positive \(x\)-axis.
+:::
+
+The widget below holds this example: 12 N at \(0^\circ\) and 10 N at \(120^\circ\) (the angle of \(Q\) measured from the positive \(x\)-axis). Add a third force, change an angle, and watch \(\Sigma X\) and \(\Sigma Y\) change. Tick the box to draw the balancing force: it has the same size as the resultant and points the opposite way, which is what equilibrium needs.
+
+:::html
+<div class="widget" data-w="resultant" data-forces="12@0; 10@120"></div>
 :::
 
 ## Equilibrium
@@ -320,6 +328,17 @@ Substitute: \(P\cos 30^\circ = 15 + 0.2(25.98 + 0.5P)\), so \(P(0.8660 - 0.1) = 
 - Friction obeys \(F \leq \mu R\), with \(F = \mu R\) only when the object is about to slip or is sliding.
 - On a slope, the weight splits into \(mg\sin\theta\) down the slope and \(mg\cos\theta\) into it.
 - Newton's third law: the two forces of a pair are equal, opposite, of the same type, and act on different objects.
+:::
+
+:::note Learn more online
+- **Watch:** [Resolving forces](https://www.examsolutions.net/tutorials/resolving-forces/) · ExamSolutions · components in two directions
+- **Watch:** [Friction and limiting equilibrium](https://www.examsolutions.net/tutorials/friction-limiting-equilibrium-coefficient-friction/) · ExamSolutions · F = μR and "about to slip"
+- **Practise:** [CAIE Mechanics: resolving, slopes and friction exam questions](https://www.savemyexams.com/a-level/maths/cie/20/mechanics/topic-questions/forces-and-equilibrium/resolving-forces-inclined-planes-and-friction/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
+- **Explore:** [Forces and Motion: Basics](https://phet.colorado.edu/en/simulations/forces-and-motion-basics) · PhET · push, friction and net force
+- **Explore:** [Vector Addition](https://phet.colorado.edu/en/simulations/vector-addition) · PhET · add forces as vectors and read the components
+- **Papers:** [9709 Paper 4 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-4) · Physics & Maths Tutor · papers with mark schemes *(unofficial archive)*
+
+These sites open in your browser and need the internet. Links checked 3 October 2026.
 :::
 
 Next: [Kinematics: describing motion](#math.m.kinematics) describes how an object moves, and [Newton's laws and connected particles](#math.m.newton) links forces to that motion.

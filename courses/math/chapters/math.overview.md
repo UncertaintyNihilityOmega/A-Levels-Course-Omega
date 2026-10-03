@@ -48,7 +48,7 @@ Cambridge International AS & A Level Mathematics has syllabus code **9709**. It 
 **P1 + P2 is an AS-only route.** P2 belongs to no A Level combination, so a student who may want the full A Level should take P1 + P4 or P1 + P5 at AS. Also, **P4 and P6 cannot be combined**: route 2 has no Mechanics, and an AS that includes P4 can only continue by route 1.
 :::
 
-Paper 3 includes every topic of Paper 2. You can take the A Level in stages (AS first, the rest a year later) or all at the end; [Exam boards and how the exams work](#start.boards) explains sittings.
+Paper 3 includes every topic of Paper 2 except the trapezium rule, so a student who later moves from P2 to P3 loses nothing. You can take the A Level in stages (AS first, the rest a year later) or all at the end; [Exam boards and how the exams work](#start.boards) explains sittings.
 
 ## Which chapter covers what
 
@@ -56,15 +56,15 @@ Paper 3 includes every topic of Paper 2. You can take the A Level in stages (AS 
 |---|---|
 | Foundations (all papers) | [Numbers and fractions](#math.f.numbers); [Algebra from scratch](#math.f.algebra); [Powers and surds](#math.f.powers); [Straight lines](#math.f.graphs); [Geometry and trigonometry](#math.f.geometry) |
 | P1 Pure 1 | [Quadratics](#math.p1.quadratics); [Functions](#math.p1.functions); [Coordinate geometry](#math.p1.coord); [Circular measure](#math.p1.circular); [Trigonometry](#math.p1.trig); [Series](#math.p1.series); [Differentiation](#math.p1.diff); [Integration](#math.p1.integ) |
-| P2 and P3 | [Modulus, polynomials and partial fractions](#math.p3.algebra); [Logarithms and exponentials](#math.p3.logs); [Further trigonometry](#math.p3.trig); [Further differentiation](#math.p3.diff); [Numerical solution of equations](#math.p3.numerical) |
-| P3 only | [Further integration](#math.p3.integ); [Vectors](#math.p3.vectors); [Differential equations](#math.p3.diffeq); [Complex numbers](#math.p3.complex) |
+| P2 and P3 | [Modulus and polynomials](#math.p3.algebra); [Logarithms and exponentials](#math.p3.logs); [Further trigonometry](#math.p3.trig); [Further differentiation](#math.p3.diff); [Further integration](#math.p3.integ); [Numerical solution of equations](#math.p3.numerical) |
+| P3 only | [Partial fractions and the binomial series](#math.p3.partial); [Integration techniques](#math.p3.inttech); [Vectors](#math.p3.vectors); [Differential equations](#math.p3.diffeq); [Complex numbers](#math.p3.complex) |
 | P4 Mechanics | [Forces and equilibrium](#math.m.forces); [Kinematics](#math.m.kinematics); [Newton's laws](#math.m.newton); [Momentum](#math.m.momentum); [Work, energy and power](#math.m.energy) |
 | P5 Statistics 1 | [Data](#math.s1.data); [Permutations and combinations](#math.s1.perms); [Probability](#math.s1.prob); [Discrete random variables](#math.s1.drv); [The normal distribution](#math.s1.normal) |
 | P6 Statistics 2 | [Poisson distribution](#math.s2.poisson); [Linear combinations](#math.s2.linear); [Continuous random variables](#math.s2.crv); [Sampling and estimation](#math.s2.sampling); [Hypothesis testing](#math.s2.hypothesis) |
 | UK boards only | [Correlation and regression](#math.s.regression); [Projectiles and moments](#math.m.projectiles) |
 | After A Level | [Further Mathematics](#math.further) |
 
-Paper 2 has only the simplest integration, such as \(e^{2x+1}\) and \(\sin 3x\). Partial fractions, integration by substitution and by parts, vectors, differential equations and complex numbers are Paper 3 only.
+The P2 and P3 chapters mark their Paper 3-only parts clearly. Paper 2 has only the standard integrals, such as \(e^{2x+1}\) and \(\sin 3x\), integrals that use a trigonometric identity, and the trapezium rule. Differentiating \(\tan^{-1} x\), partial fractions, the binomial series for any rational power, integration by substitution and by parts, vectors, differential equations and complex numbers are Paper 3 only.
 
 ## The formula booklet
 
@@ -94,9 +94,20 @@ Follow the pure chapters in sidebar order, because each uses the one before. The
 Three 90-minute sessions on new material (read, redo each worked example without looking, then try the questions), one 90-minute mixed-practice session, and one hour redoing last week's mistakes. [Build your personal study plan](#road.planner) turns your exam date into a timetable.
 :::
 
+## What the examiners reward
+
+Cambridge marks every paper against two assessment objectives.
+
+| Objective | What it means | AS | A Level |
+|---|---|---|---|
+| AO1 Knowledge and understanding | know the ideas, notation and techniques, and carry them out accurately | 55% | 52% |
+| AO2 Application and communication | choose the right method, combine techniques to solve problems, and present clear, logical working | 45% | 48% |
+
+Paper 3 leans most towards problem solving: there AO2 is 55% of the marks. In practice this means that knowing a method is only half the job. You must also recognise when to use it and write the working so an examiner can follow every step.
+
 ## Calculators
 
-All 9709 papers allow a calculator, and a scientific one is enough. Check your board's current rules before buying, because calculators that do algebra, store text or connect to a network are not allowed. A calculator never replaces working: when a question says "show that" or "exact", you must show the algebra.
+Every 9709 paper expects a scientific calculator. Graphical calculators, and calculators that can do algebra, differentiation or integration symbolically, are not allowed. You also need a ruler, but not a protractor or compasses. A calculator never replaces working: Cambridge gives no marks for an answer that comes straight from a calculator with no method shown, and when a question says "show that" or "exact", you must show the algebra.
 
 ## How to reach an A*
 
@@ -115,6 +126,18 @@ Start with the official syllabus and past papers; [The best resources by subject
 - P1 + P2 cannot lead to the A Level, and P4 and P6 cannot be combined.
 - Learn what MF19 leaves out. Edexcel IAL has units P1 to P4 plus two applied units; the UK boards have three mixed 2-hour papers.
 - Follow the chapters in order, study 7 to 8 hours a week, and keep an error log.
+:::
+
+:::note Learn more online
+- **Watch:** [CAIE past papers with video solutions](https://www.examsolutions.net/international-exams/cie/pure-past-papers/) · ExamSolutions · attempt a paper first, then watch the worked solutions
+- **Practise:** [CAIE A Level Maths mock exams](https://www.savemyexams.com/a-level/maths/cie/20/mock-exams/) · Save My Exams · timed practice papers *(some content paid)*
+- **Explore:** [Desmos graphing calculator](https://www.desmos.com/calculator) · Desmos · check every sketch you draw while you study (not allowed in the exam)
+- **Read:** [9709 syllabus 2026–2027 (PDF)](https://www.cambridgeinternational.org/Images/697427-2026-2027-syllabus.pdf) · Cambridge International · every learning outcome, straight from the board
+- **Papers:** [Cambridge 9709 qualification page](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-mathematics-9709/) · Cambridge International · the official home of 9709: syllabus, specimen papers and the MF19 formula list
+- **Papers:** [9709 past papers, all sessions](https://pastpapers.papacambridge.com/papers/caie/as-and-a-level-mathematics-9709) · PapaCambridge · question papers, mark schemes and examiner reports *(unofficial archive)*
+- **Papers:** [9709 Paper 1 past papers (menu for the other papers)](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-paper-1/) · Physics & Maths Tutor · papers with mark schemes, one page per paper *(unofficial archive)*
+
+These sites open in your browser and need the internet. Links checked 3 October 2026.
 :::
 
 Next: start with [Numbers, fractions and percentages](#math.f.numbers), or go straight to [Quadratics](#math.p1.quadratics) if the foundations feel secure. If you love the subject, [Further Mathematics: a guided tour](#math.further) shows what comes after.

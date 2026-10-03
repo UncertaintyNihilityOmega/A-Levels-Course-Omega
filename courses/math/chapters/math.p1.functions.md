@@ -1,7 +1,7 @@
 @chapter math.p1.functions
 @title Functions
 @level as
-@paper CAIE P1 · Edexcel IAL P1/P2 · UK Pure Years 1–2
+@paper CAIE P1 · Edexcel IAL P1 and P3 · UK Pure Years 1–2
 @time 6–8 hours
 @summary A function is a rule that turns each input into exactly one output. You will learn domain and range, one-one and many-one functions, composite and inverse functions, how restricting a domain makes an inverse possible, and how changes to an equation move, stretch and reflect a graph.
 
@@ -9,7 +9,7 @@
 Every formula in science and business is a function: put in a time, get out a distance; put in a price, get out a profit. The language of functions (input, output, domain, range, inverse) lets you say exactly what a formula can and cannot do. It also gives you graph transformations, which let you sketch new curves from ones you already know, and it is the language that calculus is written in. Paper 1 regularly includes a multi-part functions question that combines a completed square, a range, an inverse and a composite function.
 :::
 
-**Before you start**, you should be comfortable with [Quadratics](#math.p1.quadratics), especially completing the square, and with graphs from [Coordinates and straight lines](#math.f.graphs).
+**Before you start**, you should be comfortable with [Quadratics](#math.p1.quadratics), especially completing the square, and with graphs from [Graphs and straight lines](#math.f.graphs).
 
 ## What is a function?
 
@@ -220,7 +220,7 @@ The minimum point moves \((2, -3) \to (2, -9) \to (4, -8)\). [B1]
 :::
 
 :::board
-Cambridge puts all of this in Paper 1 (AS). The UK boards (AQA, OCR, Pearson Edexcel) split it: graph transformations are in Year 1, but domain and range, composite and inverse functions, and modulus functions are A Level (Year 2) content. Edexcel IAL covers the same ideas across P1 and P2. Notation differs slightly: Cambridge often writes \(f : x \mapsto 2x + 3\), the UK boards usually write \(f(x) = 2x + 3\), and every board accepts both. Modulus functions such as \(y = |f(x)|\) are in Cambridge Paper 3; see [Algebra: modulus, polynomials and partial fractions](#math.p3.algebra).
+Cambridge puts all of this in Paper 1 (AS). The UK boards (AQA, OCR, Pearson Edexcel) split it: graph transformations are in Year 1, but domain and range, composite and inverse functions, and modulus functions are A Level (Year 2) content. Edexcel IAL puts simple transformations in P1 and functions in P3. Notation differs slightly: Cambridge often writes \(f : x \mapsto 2x + 3\), the UK boards usually write \(f(x) = 2x + 3\), and every board accepts both. The modulus function \(y = |ax + b|\) is in Cambridge Papers 2 and 3; see [Modulus and polynomials](#math.p3.algebra).
 :::
 
 :::try Start easy, finish at exam standard
@@ -282,6 +282,17 @@ Solving \(3x - 2 = \dfrac{x + 2}{3}\): \(9x - 6 = x + 2\), so \(8x = 8\) and \(x
 - To make a quadratic one-one, restrict its domain to one side of the vertex, which you find by completing the square. Choose the \(\pm\) in the inverse to match the original domain.
 - Outside the bracket, \(f(x) + a\) and \(af(x)\) act on \(y\) as expected. Inside, \(f(x + a)\) moves left by \(a\) and \(f(ax)\) stretches horizontally by \(\tfrac{1}{a}\). \(-f(x)\) reflects in the \(x\)-axis and \(f(-x)\) in the \(y\)-axis.
 - For combined transformations, work in the order you would calculate: stretch first, then translate.
+:::
+
+:::note Learn more online
+- **Watch:** [The inverse of a function](https://www.examsolutions.net/tutorials/inverse-function/) · ExamSolutions · finding f⁻¹(x) and its domain
+- **Watch:** [Exam questions: functions](https://www.examsolutions.net/tutorials/functions-exam-questions/) · ExamSolutions · composite and inverse functions in exam style
+- **Practise:** [CAIE Pure 1 functions exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/algebra-and-functions/functions/exam-questions/) · Save My Exams · with mark schemes *(some content paid)*
+- **Practise:** [CAIE Pure 1 transformations exam questions](https://www.savemyexams.com/a-level/maths/cie/20/pure-1/topic-questions/algebra-and-functions/transformations-of-functions/exam-questions/) · Save My Exams · translations, stretches and reflections *(some content paid)*
+- **Explore:** [Combining Functions](https://undergroundmathematics.org/combining-functions) · Underground Mathematics · composition and inverses explored deeply
+- **Explore:** [Desmos graphing calculator](https://www.desmos.com/calculator) · Desmos · add a slider to f(x + a) or af(x) and watch the graph move
+
+These sites open in your browser and need the internet. Links checked 3 October 2026.
 :::
 
 Next: [Coordinate geometry](#math.p1.coord) uses equations to describe straight lines and circles, and you will meet transformed circles again there.
