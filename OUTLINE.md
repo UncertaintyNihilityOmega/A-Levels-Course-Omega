@@ -1,0 +1,293 @@
+# Chapter ids (link only to these)
+
+## Start Here (subject id: start)
+- group: Welcome
+  - home — Home [start]
+  - start.what — What are A Levels? [start]
+  - start.boards — Exam boards and how the exams work [start]
+  - start.grades — Grades, marks and UCAS points [start]
+  - start.choose — Choosing your subjects [start]
+  - start.howto — How to use this guide [start]
+
+## Preparation Roadmap (subject id: road)
+- group: The road to exam day
+  - road.overview — The preparation road at a glance [guide]
+  - road.planner — Build your personal study plan [tool]
+  - road.foundations — Phase 1: Fix your foundations [guide]
+  - road.learn — Phase 2: Learn the content [guide]
+  - road.practice — Phase 3: Practise and test yourself [guide]
+  - road.pastpapers — Phase 4: Past papers and mark schemes [guide]
+  - road.final — Phase 5: Final revision [guide]
+  - road.examday — Phase 6: Exam day, results and resits [guide]
+- group: Skills that raise grades
+  - road.methods — Study methods that actually work [guide]
+  - road.technique — Exam technique [guide]
+  - road.commands — Command words decoded [ref]
+  - road.wellbeing — Motivation, sleep and stress [guide]
+  - road.resources — The best resources by subject [ref]
+- group: Beyond the exams
+  - road.private — Studying as a private candidate [guide]
+  - road.university — University applications and admissions tests [guide]
+
+## Mathematics (subject id: math)
+- group: Before you start
+  - math.overview — Mathematics: the course map [guide]
+  - math.f.numbers — Numbers, fractions and percentages [pre]
+  - math.f.algebra — Algebra from scratch [pre]
+  - math.f.powers — Powers, roots, surds and standard form [pre]
+  - math.f.graphs — Coordinates and straight lines [pre]
+  - math.f.geometry — Geometry and basic trigonometry [pre]
+- group: Pure Mathematics 1
+  - math.p1.quadratics — Quadratics [as]
+  - math.p1.functions — Functions [as]
+  - math.p1.coord — Coordinate geometry [as]
+  - math.p1.circular — Circular measure [as]
+  - math.p1.trig — Trigonometry [as]
+  - math.p1.series — Series [as]
+  - math.p1.diff — Differentiation [as]
+  - math.p1.integ — Integration [as]
+- group: Pure Mathematics 2 and 3
+  - math.p3.algebra — Algebra: modulus, polynomials and partial fractions [as a2]
+  - math.p3.logs — Logarithms and exponentials [as]
+  - math.p3.trig — Further trigonometry [as]
+  - math.p3.diff — Further differentiation [as]
+  - math.p3.integ — Further integration [a2]
+  - math.p3.numerical — Numerical solution of equations [as]
+  - math.p3.vectors — Vectors [a2]
+  - math.p3.diffeq — Differential equations [a2]
+  - math.p3.complex — Complex numbers [a2]
+- group: Probability and Statistics
+  - math.s1.data — Representing and summarising data [as]
+  - math.s1.perms — Permutations and combinations [as]
+  - math.s1.prob — Probability [as]
+  - math.s1.drv — Discrete random variables: binomial and geometric [as]
+  - math.s1.normal — The normal distribution [as]
+  - math.s.regression — Correlation and regression (UK boards) [as]
+  - math.s2.poisson — The Poisson distribution [a2]
+  - math.s2.linear — Linear combinations of random variables [a2]
+  - math.s2.crv — Continuous random variables [a2]
+  - math.s2.sampling — Sampling and estimation [a2]
+  - math.s2.hypothesis — Hypothesis testing [a2]
+- group: Mechanics
+  - math.m.forces — Forces and equilibrium [as]
+  - math.m.kinematics — Kinematics: describing motion [as]
+  - math.m.newton — Newton's laws and connected particles [as]
+  - math.m.momentum — Momentum and collisions [as]
+  - math.m.energy — Work, energy and power [as]
+  - math.m.projectiles — Projectiles and moments (UK boards) [a2]
+- group: Further Mathematics
+  - math.further — Further Mathematics: a guided tour [ext]
+
+## Physics (subject id: phys)
+- group: Start here
+  - phys.overview — Physics: the course map [guide]
+  - phys.f.basics — Physics from zero [pre]
+- group: AS Level
+  - phys.units — Physical quantities, units and uncertainty [as]
+  - phys.kinematics — Kinematics [as]
+  - phys.dynamics — Dynamics and momentum [as]
+  - phys.forces — Forces, density and pressure [as]
+  - phys.energy — Work, energy and power [as]
+  - phys.solids — Deformation of solids [as]
+  - phys.waves — Waves [as]
+  - phys.superposition — Superposition [as]
+  - phys.electricity — Electricity [as]
+  - phys.dc — D.C. circuits [as]
+  - phys.particles — Particle physics [as]
+- group: A Level (A2)
+  - phys.circular — Motion in a circle [a2]
+  - phys.gravity — Gravitational fields [a2]
+  - phys.temperature — Temperature and thermal physics [a2]
+  - phys.gases — Ideal gases [a2]
+  - phys.thermo — Thermodynamics [a2]
+  - phys.oscillations — Oscillations [a2]
+  - phys.efields — Electric fields [a2]
+  - phys.capacitance — Capacitance [a2]
+  - phys.magnetic — Magnetic fields and electromagnetic induction [a2]
+  - phys.ac — Alternating currents [a2]
+  - phys.quantum — Quantum physics [a2]
+  - phys.nuclear — Nuclear physics [a2]
+  - phys.medical — Medical physics [a2]
+  - phys.astro — Astronomy and cosmology [a2]
+- group: Practical physics
+  - phys.practical — Practical skills and data analysis [guide]
+
+## Chemistry (subject id: chem)
+- group: Start here
+  - chem.overview — Chemistry: the course map [guide]
+  - chem.f.basics — Chemistry from zero [pre]
+- group: Physical chemistry
+  - chem.atoms — Atomic structure [as]
+  - chem.moles — Moles and stoichiometry [as]
+  - chem.bonding — Chemical bonding [as]
+  - chem.states — States of matter [as]
+  - chem.energetics — Chemical energetics [as]
+  - chem.redox — Redox and oxidation numbers [as]
+  - chem.equilibria — Equilibria [as]
+  - chem.kinetics — Reaction kinetics [as]
+  - chem.lattice — Lattice energy and Born–Haber cycles [a2]
+  - chem.entropy — Entropy and Gibbs free energy [a2]
+  - chem.electrochem — Electrochemistry [a2]
+  - chem.acids2 — Acids, bases, buffers and solubility [a2]
+  - chem.rates2 — Rate equations and mechanisms [a2]
+- group: Inorganic chemistry
+  - chem.periodicity — Periodicity: Period 3 [as]
+  - chem.group2 — Group 2 [as]
+  - chem.group17 — Group 17: the halogens [as]
+  - chem.nitrogen — Nitrogen and sulfur [as]
+  - chem.transition — Transition elements [a2]
+- group: Organic chemistry
+  - chem.org.intro — Introduction to organic chemistry [as]
+  - chem.org.hydrocarbons — Hydrocarbons: alkanes and alkenes [as]
+  - chem.org.halogen — Halogenoalkanes [as]
+  - chem.org.alcohols — Alcohols and phenol [as a2]
+  - chem.org.carbonyl — Aldehydes and ketones [as]
+  - chem.org.acids — Carboxylic acids, esters and acyl chlorides [as a2]
+  - chem.org.arenes — Arenes: benzene and its compounds [a2]
+  - chem.org.nitrogen — Amines, amides and amino acids [a2]
+  - chem.org.polymers — Polymerisation [as a2]
+  - chem.org.synthesis — Organic synthesis [as a2]
+- group: Analysis and practical
+  - chem.analysis — Analytical techniques: IR, mass spectra, NMR and chromatography [as a2]
+  - chem.practical — Practical skills and tests for ions [guide]
+
+## Biology (subject id: bio)
+- group: Start here
+  - bio.overview — Biology: the course map [guide]
+  - bio.f.basics — Biology from zero [pre]
+- group: AS Level
+  - bio.cells — Cell structure [as]
+  - bio.molecules — Biological molecules [as]
+  - bio.enzymes — Enzymes [as]
+  - bio.membranes — Cell membranes and transport [as]
+  - bio.mitosis — The mitotic cell cycle [as]
+  - bio.dna — Nucleic acids and protein synthesis [as]
+  - bio.planttransport — Transport in plants [as]
+  - bio.mammaltransport — Transport in mammals [as]
+  - bio.gasexchange — Gas exchange [as]
+  - bio.disease — Infectious diseases [as]
+  - bio.immunity — Immunity [as]
+- group: A Level (A2)
+  - bio.respiration — Energy and respiration [a2]
+  - bio.photosynthesis — Photosynthesis [a2]
+  - bio.homeostasis — Homeostasis [a2]
+  - bio.control — Control and coordination [a2]
+  - bio.inheritance — Inheritance [a2]
+  - bio.evolution — Selection and evolution [a2]
+  - bio.classification — Classification, biodiversity and conservation [a2]
+  - bio.genetech — Genetic technology [a2]
+  - bio.ecology — Ecosystems and nutrient cycles (UK boards) [a2]
+- group: Skills
+  - bio.stats — Statistics for biologists [as a2]
+  - bio.practical — Practical skills: microscopy, experiments and planning [guide]
+
+## Engineering (subject id: eng)
+- group: Engineering at A Level
+  - eng.overview — Engineering: routes and course map [guide]
+  - eng.what — What engineers actually do [pre]
+- group: Engineering foundations
+  - eng.maths — The engineer's maths toolkit [as]
+  - eng.statics — Statics: forces, moments and structures [as]
+  - eng.materials — Materials and their properties [as]
+  - eng.mechanics — Stress, beams and safety factors [a2]
+  - eng.dynamics — Dynamics and machines [as]
+  - eng.fluids — Fluid mechanics [a2]
+  - eng.thermo — Thermodynamics and energy systems [a2]
+  - eng.electrical — Electrical engineering [as]
+  - eng.electronics — Electronics and digital systems [as]
+  - eng.control — Control systems [a2]
+  - eng.design — Design, drawing and manufacturing [as]
+- group: Make it real
+  - eng.project — Projects, competitions and your next steps [guide]
+
+## Business (subject id: bus)
+- group: Start here
+  - bus.overview — Business: the course map [guide]
+  - bus.f.basics — Business from zero [pre]
+- group: AS Level
+  - bus.enterprise — Enterprise [as]
+  - bus.structure — Business structure [as]
+  - bus.size — Size of business [as]
+  - bus.objectives — Business objectives and stakeholders [as]
+  - bus.hrm — Human resource management [as]
+  - bus.motivation — Motivation [as]
+  - bus.management — Management [as]
+  - bus.marketing — The nature of marketing [as]
+  - bus.research — Market research [as]
+  - bus.mix — The marketing mix [as]
+  - bus.operations — Operations management [as]
+  - bus.inventory — Inventory, capacity and outsourcing [as]
+  - bus.finance — Business finance and sources of finance [as]
+  - bus.cashflow — Cash flow forecasting [as]
+  - bus.costs — Costs and break-even analysis [as]
+  - bus.budgets — Budgets and variances [as]
+- group: A Level (A2)
+  - bus.external — External influences on business [a2]
+  - bus.strategy — Business strategy and strategic tools [a2]
+  - bus.org — Organisational structure and communication [a2]
+  - bus.leadership — Leadership and HRM strategy [a2]
+  - bus.marketing2 — Marketing analysis and strategy [a2]
+  - bus.location — Location, scale and quality [a2]
+  - bus.opsstrategy — Operations strategy and critical path analysis [a2]
+  - bus.accounts — Financial statements [a2]
+  - bus.ratios — Ratio analysis [a2]
+  - bus.investment — Investment appraisal [a2]
+- group: Skills
+  - bus.writing — Writing top-band business answers [guide]
+
+## Economics and Accounting (subject id: econ)
+- group: Economics
+  - econ.overview — Economics: the course map [guide]
+  - econ.basics — The basic economic problem [as]
+  - econ.demand — Demand, supply and prices [as]
+  - econ.elasticity — Elasticity [as]
+  - econ.intervention — Market failure and government intervention [as a2]
+  - econ.firms — Costs, revenue and market structures [a2]
+  - econ.labour — Labour markets [a2]
+  - econ.macro — Measuring the macroeconomy: AD and AS [as]
+  - econ.growth — Growth, unemployment and inflation [as a2]
+  - econ.policy — Fiscal, monetary and supply-side policy [as a2]
+  - econ.trade — Trade, the balance of payments and exchange rates [as a2]
+  - econ.development — Development and globalisation [a2]
+- group: Accounting
+  - acc.overview — Accounting: the course map [guide]
+  - acc.basics — Double-entry bookkeeping [as]
+  - acc.statements — Preparing financial statements [as a2]
+  - acc.control — Reconciliations, control accounts and errors [as]
+  - acc.analysis — Analysing and interpreting accounts [as a2]
+  - acc.costing — Cost and management accounting [as a2]
+
+## Other Subjects (subject id: other)
+- group: Subject summaries
+  - other.overview — All other subjects at a glance [sum]
+  - other.cs — Computer Science [sum]
+  - other.english — English Language and Literature [sum]
+  - other.history — History [sum]
+  - other.geography — Geography [sum]
+  - other.psychology — Psychology [sum]
+  - other.sociology — Sociology [sum]
+  - other.law — Law [sum]
+  - other.politics — Politics, Global Perspectives and Thinking Skills [sum]
+  - other.languages — Modern languages [sum]
+  - other.arts — Art, Design, Music, Drama and Media [sum]
+  - other.pe — Physical Education [sum]
+  - other.humanities — Religious Studies, Philosophy and Classics [sum]
+  - other.more — Computing, environment and the rest [sum]
+
+## Toolbox (subject id: tools)
+- group: Interactive tools
+  - tools.grapher — Graph plotter [tool]
+  - tools.periodic — Periodic table [tool]
+  - tools.calc — Calculators [tool]
+  - tools.glossary — Glossary [tool]
+- group: Formula sheets
+  - tools.f.math — Maths formula sheet [ref]
+  - tools.f.phys — Physics formula and data sheet [ref]
+  - tools.f.chem — Chemistry data and key equations [ref]
+  - tools.f.bio — Biology key equations and statistics [ref]
+  - tools.f.eng — Engineering formula sheet [ref]
+  - tools.f.bus — Business, economics and accounting formulas [ref]
+
+## Practice (subject id: practice)
+- group: Practice
+  - practice.quiz — Practice quizzes [tool]

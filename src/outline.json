@@ -1,0 +1,2031 @@
+{
+ "subjects": [
+  {
+   "id": "start",
+   "title": "Start Here",
+   "short": "Start",
+   "code": "GUIDE",
+   "files": [
+    "home.md",
+    "start.md"
+   ],
+   "desc": "What A Levels are, how they work, and how to choose subjects",
+   "chapters": [
+    {
+     "id": "home",
+     "title": "Home",
+     "level": "start",
+     "file": "home.md",
+     "owner": "ME",
+     "group": "Welcome"
+    },
+    {
+     "id": "start.what",
+     "title": "What are A Levels?",
+     "level": "start",
+     "file": "start.md",
+     "owner": "R1",
+     "group": "Welcome"
+    },
+    {
+     "id": "start.boards",
+     "title": "Exam boards and how the exams work",
+     "level": "start",
+     "file": "start.md",
+     "owner": "R1",
+     "group": "Welcome"
+    },
+    {
+     "id": "start.grades",
+     "title": "Grades, marks and UCAS points",
+     "level": "start",
+     "file": "start.md",
+     "owner": "R1",
+     "group": "Welcome"
+    },
+    {
+     "id": "start.choose",
+     "title": "Choosing your subjects",
+     "level": "start",
+     "file": "start.md",
+     "owner": "R1",
+     "group": "Welcome"
+    },
+    {
+     "id": "start.howto",
+     "title": "How to use this guide",
+     "level": "start",
+     "file": "start.md",
+     "owner": "R1",
+     "group": "Welcome"
+    }
+   ]
+  },
+  {
+   "id": "road",
+   "title": "Preparation Roadmap",
+   "short": "Roadmap",
+   "code": "ROAD",
+   "files": [
+    "roadmap-1.md",
+    "roadmap-2.md"
+   ],
+   "desc": "A step-by-step road from day one to results day",
+   "chapters": [
+    {
+     "id": "road.overview",
+     "title": "The preparation road at a glance",
+     "level": "guide",
+     "file": "roadmap-1.md",
+     "owner": "R1",
+     "group": "The road to exam day"
+    },
+    {
+     "id": "road.planner",
+     "title": "Build your personal study plan",
+     "level": "tool",
+     "file": "roadmap-1.md",
+     "owner": "R1",
+     "group": "The road to exam day"
+    },
+    {
+     "id": "road.foundations",
+     "title": "Phase 1: Fix your foundations",
+     "level": "guide",
+     "file": "roadmap-1.md",
+     "owner": "R1",
+     "group": "The road to exam day"
+    },
+    {
+     "id": "road.learn",
+     "title": "Phase 2: Learn the content",
+     "level": "guide",
+     "file": "roadmap-1.md",
+     "owner": "R1",
+     "group": "The road to exam day"
+    },
+    {
+     "id": "road.practice",
+     "title": "Phase 3: Practise and test yourself",
+     "level": "guide",
+     "file": "roadmap-1.md",
+     "owner": "R1",
+     "group": "The road to exam day"
+    },
+    {
+     "id": "road.pastpapers",
+     "title": "Phase 4: Past papers and mark schemes",
+     "level": "guide",
+     "file": "roadmap-1.md",
+     "owner": "R1",
+     "group": "The road to exam day"
+    },
+    {
+     "id": "road.final",
+     "title": "Phase 5: Final revision",
+     "level": "guide",
+     "file": "roadmap-1.md",
+     "owner": "R1",
+     "group": "The road to exam day"
+    },
+    {
+     "id": "road.examday",
+     "title": "Phase 6: Exam day, results and resits",
+     "level": "guide",
+     "file": "roadmap-1.md",
+     "owner": "R1",
+     "group": "The road to exam day"
+    },
+    {
+     "id": "road.methods",
+     "title": "Study methods that actually work",
+     "level": "guide",
+     "file": "roadmap-2.md",
+     "owner": "R2",
+     "group": "Skills that raise grades"
+    },
+    {
+     "id": "road.technique",
+     "title": "Exam technique",
+     "level": "guide",
+     "file": "roadmap-2.md",
+     "owner": "R2",
+     "group": "Skills that raise grades"
+    },
+    {
+     "id": "road.commands",
+     "title": "Command words decoded",
+     "level": "ref",
+     "file": "roadmap-2.md",
+     "owner": "R2",
+     "group": "Skills that raise grades"
+    },
+    {
+     "id": "road.wellbeing",
+     "title": "Motivation, sleep and stress",
+     "level": "guide",
+     "file": "roadmap-2.md",
+     "owner": "R2",
+     "group": "Skills that raise grades"
+    },
+    {
+     "id": "road.resources",
+     "title": "The best resources by subject",
+     "level": "ref",
+     "file": "roadmap-2.md",
+     "owner": "R2",
+     "group": "Skills that raise grades"
+    },
+    {
+     "id": "road.private",
+     "title": "Studying as a private candidate",
+     "level": "guide",
+     "file": "roadmap-2.md",
+     "owner": "R2",
+     "group": "Beyond the exams"
+    },
+    {
+     "id": "road.university",
+     "title": "University applications and admissions tests",
+     "level": "guide",
+     "file": "roadmap-2.md",
+     "owner": "R2",
+     "group": "Beyond the exams"
+    }
+   ]
+  },
+  {
+   "id": "math",
+   "title": "Mathematics",
+   "short": "Maths",
+   "code": "9709",
+   "files": [
+    "math-0.md",
+    "math-1a.md",
+    "math-1.md",
+    "math-2.md",
+    "math-3.md",
+    "math-3b.md",
+    "math-4.md"
+   ],
+   "desc": "Pure, Statistics and Mechanics from counting to calculus",
+   "chapters": [
+    {
+     "id": "math.overview",
+     "title": "Mathematics: the course map",
+     "level": "guide",
+     "file": "math-0.md",
+     "owner": "M1",
+     "group": "Before you start"
+    },
+    {
+     "id": "math.f.numbers",
+     "title": "Numbers, fractions and percentages",
+     "level": "pre",
+     "file": "math-0.md",
+     "owner": "M1",
+     "group": "Before you start"
+    },
+    {
+     "id": "math.f.algebra",
+     "title": "Algebra from scratch",
+     "level": "pre",
+     "file": "math-0.md",
+     "owner": "M1",
+     "group": "Before you start"
+    },
+    {
+     "id": "math.f.powers",
+     "title": "Powers, roots, surds and standard form",
+     "level": "pre",
+     "file": "math-0.md",
+     "owner": "M1",
+     "group": "Before you start"
+    },
+    {
+     "id": "math.f.graphs",
+     "title": "Coordinates and straight lines",
+     "level": "pre",
+     "file": "math-0.md",
+     "owner": "M1",
+     "group": "Before you start"
+    },
+    {
+     "id": "math.f.geometry",
+     "title": "Geometry and basic trigonometry",
+     "level": "pre",
+     "file": "math-0.md",
+     "owner": "M1",
+     "group": "Before you start"
+    },
+    {
+     "id": "math.p1.quadratics",
+     "title": "Quadratics",
+     "level": "as",
+     "file": "math-1a.md",
+     "owner": "ME",
+     "group": "Pure Mathematics 1"
+    },
+    {
+     "id": "math.p1.functions",
+     "title": "Functions",
+     "level": "as",
+     "file": "math-1.md",
+     "owner": "M1",
+     "group": "Pure Mathematics 1"
+    },
+    {
+     "id": "math.p1.coord",
+     "title": "Coordinate geometry",
+     "level": "as",
+     "file": "math-1.md",
+     "owner": "M1",
+     "group": "Pure Mathematics 1"
+    },
+    {
+     "id": "math.p1.circular",
+     "title": "Circular measure",
+     "level": "as",
+     "file": "math-1.md",
+     "owner": "M1",
+     "group": "Pure Mathematics 1"
+    },
+    {
+     "id": "math.p1.trig",
+     "title": "Trigonometry",
+     "level": "as",
+     "file": "math-1.md",
+     "owner": "M1",
+     "group": "Pure Mathematics 1"
+    },
+    {
+     "id": "math.p1.series",
+     "title": "Series",
+     "level": "as",
+     "file": "math-1.md",
+     "owner": "M1",
+     "group": "Pure Mathematics 1"
+    },
+    {
+     "id": "math.p1.diff",
+     "title": "Differentiation",
+     "level": "as",
+     "file": "math-1.md",
+     "owner": "M1",
+     "group": "Pure Mathematics 1"
+    },
+    {
+     "id": "math.p1.integ",
+     "title": "Integration",
+     "level": "as",
+     "file": "math-1.md",
+     "owner": "M1",
+     "group": "Pure Mathematics 1"
+    },
+    {
+     "id": "math.p3.algebra",
+     "title": "Algebra: modulus, polynomials and partial fractions",
+     "level": "as a2",
+     "file": "math-2.md",
+     "owner": "M2",
+     "group": "Pure Mathematics 2 and 3"
+    },
+    {
+     "id": "math.p3.logs",
+     "title": "Logarithms and exponentials",
+     "level": "as",
+     "file": "math-2.md",
+     "owner": "M2",
+     "group": "Pure Mathematics 2 and 3"
+    },
+    {
+     "id": "math.p3.trig",
+     "title": "Further trigonometry",
+     "level": "as",
+     "file": "math-2.md",
+     "owner": "M2",
+     "group": "Pure Mathematics 2 and 3"
+    },
+    {
+     "id": "math.p3.diff",
+     "title": "Further differentiation",
+     "level": "as",
+     "file": "math-2.md",
+     "owner": "M2",
+     "group": "Pure Mathematics 2 and 3"
+    },
+    {
+     "id": "math.p3.integ",
+     "title": "Further integration",
+     "level": "a2",
+     "file": "math-2.md",
+     "owner": "M2",
+     "group": "Pure Mathematics 2 and 3"
+    },
+    {
+     "id": "math.p3.numerical",
+     "title": "Numerical solution of equations",
+     "level": "as",
+     "file": "math-2.md",
+     "owner": "M2",
+     "group": "Pure Mathematics 2 and 3"
+    },
+    {
+     "id": "math.p3.vectors",
+     "title": "Vectors",
+     "level": "a2",
+     "file": "math-2.md",
+     "owner": "M2",
+     "group": "Pure Mathematics 2 and 3"
+    },
+    {
+     "id": "math.p3.diffeq",
+     "title": "Differential equations",
+     "level": "a2",
+     "file": "math-2.md",
+     "owner": "M2",
+     "group": "Pure Mathematics 2 and 3"
+    },
+    {
+     "id": "math.p3.complex",
+     "title": "Complex numbers",
+     "level": "a2",
+     "file": "math-2.md",
+     "owner": "M2",
+     "group": "Pure Mathematics 2 and 3"
+    },
+    {
+     "id": "math.s1.data",
+     "title": "Representing and summarising data",
+     "level": "as",
+     "file": "math-3.md",
+     "owner": "M3",
+     "group": "Probability and Statistics"
+    },
+    {
+     "id": "math.s1.perms",
+     "title": "Permutations and combinations",
+     "level": "as",
+     "file": "math-3.md",
+     "owner": "M3",
+     "group": "Probability and Statistics"
+    },
+    {
+     "id": "math.s1.prob",
+     "title": "Probability",
+     "level": "as",
+     "file": "math-3.md",
+     "owner": "M3",
+     "group": "Probability and Statistics"
+    },
+    {
+     "id": "math.s1.drv",
+     "title": "Discrete random variables: binomial and geometric",
+     "level": "as",
+     "file": "math-3.md",
+     "owner": "M3",
+     "group": "Probability and Statistics"
+    },
+    {
+     "id": "math.s1.normal",
+     "title": "The normal distribution",
+     "level": "as",
+     "file": "math-3.md",
+     "owner": "M3",
+     "group": "Probability and Statistics"
+    },
+    {
+     "id": "math.s.regression",
+     "title": "Correlation and regression (UK boards)",
+     "level": "as",
+     "file": "math-3.md",
+     "owner": "M3",
+     "group": "Probability and Statistics"
+    },
+    {
+     "id": "math.s2.poisson",
+     "title": "The Poisson distribution",
+     "level": "a2",
+     "file": "math-3b.md",
+     "owner": "M3b",
+     "group": "Probability and Statistics"
+    },
+    {
+     "id": "math.s2.linear",
+     "title": "Linear combinations of random variables",
+     "level": "a2",
+     "file": "math-3b.md",
+     "owner": "M3b",
+     "group": "Probability and Statistics"
+    },
+    {
+     "id": "math.s2.crv",
+     "title": "Continuous random variables",
+     "level": "a2",
+     "file": "math-3b.md",
+     "owner": "M3b",
+     "group": "Probability and Statistics"
+    },
+    {
+     "id": "math.s2.sampling",
+     "title": "Sampling and estimation",
+     "level": "a2",
+     "file": "math-3b.md",
+     "owner": "M3b",
+     "group": "Probability and Statistics"
+    },
+    {
+     "id": "math.s2.hypothesis",
+     "title": "Hypothesis testing",
+     "level": "a2",
+     "file": "math-3b.md",
+     "owner": "M3b",
+     "group": "Probability and Statistics"
+    },
+    {
+     "id": "math.m.forces",
+     "title": "Forces and equilibrium",
+     "level": "as",
+     "file": "math-4.md",
+     "owner": "M4",
+     "group": "Mechanics"
+    },
+    {
+     "id": "math.m.kinematics",
+     "title": "Kinematics: describing motion",
+     "level": "as",
+     "file": "math-4.md",
+     "owner": "M4",
+     "group": "Mechanics"
+    },
+    {
+     "id": "math.m.newton",
+     "title": "Newton's laws and connected particles",
+     "level": "as",
+     "file": "math-4.md",
+     "owner": "M4",
+     "group": "Mechanics"
+    },
+    {
+     "id": "math.m.momentum",
+     "title": "Momentum and collisions",
+     "level": "as",
+     "file": "math-4.md",
+     "owner": "M4",
+     "group": "Mechanics"
+    },
+    {
+     "id": "math.m.energy",
+     "title": "Work, energy and power",
+     "level": "as",
+     "file": "math-4.md",
+     "owner": "M4",
+     "group": "Mechanics"
+    },
+    {
+     "id": "math.m.projectiles",
+     "title": "Projectiles and moments (UK boards)",
+     "level": "a2",
+     "file": "math-4.md",
+     "owner": "M4",
+     "group": "Mechanics"
+    },
+    {
+     "id": "math.further",
+     "title": "Further Mathematics: a guided tour",
+     "level": "ext",
+     "file": "math-4.md",
+     "owner": "M4",
+     "group": "Further Mathematics"
+    }
+   ]
+  },
+  {
+   "id": "phys",
+   "title": "Physics",
+   "short": "Physics",
+   "code": "9702",
+   "files": [
+    "phys-1.md",
+    "phys-2.md",
+    "phys-3.md"
+   ],
+   "desc": "From measurement to quantum physics and cosmology",
+   "chapters": [
+    {
+     "id": "phys.overview",
+     "title": "Physics: the course map",
+     "level": "guide",
+     "file": "phys-1.md",
+     "owner": "P1",
+     "group": "Start here"
+    },
+    {
+     "id": "phys.f.basics",
+     "title": "Physics from zero",
+     "level": "pre",
+     "file": "phys-1.md",
+     "owner": "P1",
+     "group": "Start here"
+    },
+    {
+     "id": "phys.units",
+     "title": "Physical quantities, units and uncertainty",
+     "level": "as",
+     "file": "phys-1.md",
+     "owner": "P1",
+     "group": "AS Level"
+    },
+    {
+     "id": "phys.kinematics",
+     "title": "Kinematics",
+     "level": "as",
+     "file": "phys-1.md",
+     "owner": "P1",
+     "group": "AS Level"
+    },
+    {
+     "id": "phys.dynamics",
+     "title": "Dynamics and momentum",
+     "level": "as",
+     "file": "phys-1.md",
+     "owner": "P1",
+     "group": "AS Level"
+    },
+    {
+     "id": "phys.forces",
+     "title": "Forces, density and pressure",
+     "level": "as",
+     "file": "phys-1.md",
+     "owner": "P1",
+     "group": "AS Level"
+    },
+    {
+     "id": "phys.energy",
+     "title": "Work, energy and power",
+     "level": "as",
+     "file": "phys-1.md",
+     "owner": "P1",
+     "group": "AS Level"
+    },
+    {
+     "id": "phys.solids",
+     "title": "Deformation of solids",
+     "level": "as",
+     "file": "phys-1.md",
+     "owner": "P1",
+     "group": "AS Level"
+    },
+    {
+     "id": "phys.waves",
+     "title": "Waves",
+     "level": "as",
+     "file": "phys-1.md",
+     "owner": "P1",
+     "group": "AS Level"
+    },
+    {
+     "id": "phys.superposition",
+     "title": "Superposition",
+     "level": "as",
+     "file": "phys-1.md",
+     "owner": "P1",
+     "group": "AS Level"
+    },
+    {
+     "id": "phys.electricity",
+     "title": "Electricity",
+     "level": "as",
+     "file": "phys-1.md",
+     "owner": "P1",
+     "group": "AS Level"
+    },
+    {
+     "id": "phys.dc",
+     "title": "D.C. circuits",
+     "level": "as",
+     "file": "phys-1.md",
+     "owner": "P1",
+     "group": "AS Level"
+    },
+    {
+     "id": "phys.particles",
+     "title": "Particle physics",
+     "level": "as",
+     "file": "phys-1.md",
+     "owner": "P1",
+     "group": "AS Level"
+    },
+    {
+     "id": "phys.circular",
+     "title": "Motion in a circle",
+     "level": "a2",
+     "file": "phys-2.md",
+     "owner": "P2",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "phys.gravity",
+     "title": "Gravitational fields",
+     "level": "a2",
+     "file": "phys-2.md",
+     "owner": "P2",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "phys.temperature",
+     "title": "Temperature and thermal physics",
+     "level": "a2",
+     "file": "phys-2.md",
+     "owner": "P2",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "phys.gases",
+     "title": "Ideal gases",
+     "level": "a2",
+     "file": "phys-2.md",
+     "owner": "P2",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "phys.thermo",
+     "title": "Thermodynamics",
+     "level": "a2",
+     "file": "phys-2.md",
+     "owner": "P2",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "phys.oscillations",
+     "title": "Oscillations",
+     "level": "a2",
+     "file": "phys-2.md",
+     "owner": "P2",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "phys.efields",
+     "title": "Electric fields",
+     "level": "a2",
+     "file": "phys-2.md",
+     "owner": "P2",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "phys.capacitance",
+     "title": "Capacitance",
+     "level": "a2",
+     "file": "phys-2.md",
+     "owner": "P2",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "phys.magnetic",
+     "title": "Magnetic fields and electromagnetic induction",
+     "level": "a2",
+     "file": "phys-3.md",
+     "owner": "P3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "phys.ac",
+     "title": "Alternating currents",
+     "level": "a2",
+     "file": "phys-3.md",
+     "owner": "P3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "phys.quantum",
+     "title": "Quantum physics",
+     "level": "a2",
+     "file": "phys-3.md",
+     "owner": "P3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "phys.nuclear",
+     "title": "Nuclear physics",
+     "level": "a2",
+     "file": "phys-3.md",
+     "owner": "P3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "phys.medical",
+     "title": "Medical physics",
+     "level": "a2",
+     "file": "phys-3.md",
+     "owner": "P3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "phys.astro",
+     "title": "Astronomy and cosmology",
+     "level": "a2",
+     "file": "phys-3.md",
+     "owner": "P3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "phys.practical",
+     "title": "Practical skills and data analysis",
+     "level": "guide",
+     "file": "phys-3.md",
+     "owner": "P3",
+     "group": "Practical physics"
+    }
+   ]
+  },
+  {
+   "id": "chem",
+   "title": "Chemistry",
+   "short": "Chemistry",
+   "code": "9701",
+   "files": [
+    "chem-1.md",
+    "chem-2.md",
+    "chem-3.md",
+    "chem-4.md"
+   ],
+   "desc": "Atoms, reactions and the chemistry of carbon",
+   "chapters": [
+    {
+     "id": "chem.overview",
+     "title": "Chemistry: the course map",
+     "level": "guide",
+     "file": "chem-1.md",
+     "owner": "C1",
+     "group": "Start here"
+    },
+    {
+     "id": "chem.f.basics",
+     "title": "Chemistry from zero",
+     "level": "pre",
+     "file": "chem-1.md",
+     "owner": "C1",
+     "group": "Start here"
+    },
+    {
+     "id": "chem.atoms",
+     "title": "Atomic structure",
+     "level": "as",
+     "file": "chem-1.md",
+     "owner": "C1",
+     "group": "Physical chemistry"
+    },
+    {
+     "id": "chem.moles",
+     "title": "Moles and stoichiometry",
+     "level": "as",
+     "file": "chem-1.md",
+     "owner": "C1",
+     "group": "Physical chemistry"
+    },
+    {
+     "id": "chem.bonding",
+     "title": "Chemical bonding",
+     "level": "as",
+     "file": "chem-1.md",
+     "owner": "C1",
+     "group": "Physical chemistry"
+    },
+    {
+     "id": "chem.states",
+     "title": "States of matter",
+     "level": "as",
+     "file": "chem-1.md",
+     "owner": "C1",
+     "group": "Physical chemistry"
+    },
+    {
+     "id": "chem.energetics",
+     "title": "Chemical energetics",
+     "level": "as",
+     "file": "chem-1.md",
+     "owner": "C1",
+     "group": "Physical chemistry"
+    },
+    {
+     "id": "chem.redox",
+     "title": "Redox and oxidation numbers",
+     "level": "as",
+     "file": "chem-1.md",
+     "owner": "C1",
+     "group": "Physical chemistry"
+    },
+    {
+     "id": "chem.equilibria",
+     "title": "Equilibria",
+     "level": "as",
+     "file": "chem-1.md",
+     "owner": "C1",
+     "group": "Physical chemistry"
+    },
+    {
+     "id": "chem.kinetics",
+     "title": "Reaction kinetics",
+     "level": "as",
+     "file": "chem-1.md",
+     "owner": "C1",
+     "group": "Physical chemistry"
+    },
+    {
+     "id": "chem.lattice",
+     "title": "Lattice energy and Born–Haber cycles",
+     "level": "a2",
+     "file": "chem-2.md",
+     "owner": "C2",
+     "group": "Physical chemistry"
+    },
+    {
+     "id": "chem.entropy",
+     "title": "Entropy and Gibbs free energy",
+     "level": "a2",
+     "file": "chem-2.md",
+     "owner": "C2",
+     "group": "Physical chemistry"
+    },
+    {
+     "id": "chem.electrochem",
+     "title": "Electrochemistry",
+     "level": "a2",
+     "file": "chem-2.md",
+     "owner": "C2",
+     "group": "Physical chemistry"
+    },
+    {
+     "id": "chem.acids2",
+     "title": "Acids, bases, buffers and solubility",
+     "level": "a2",
+     "file": "chem-2.md",
+     "owner": "C2",
+     "group": "Physical chemistry"
+    },
+    {
+     "id": "chem.rates2",
+     "title": "Rate equations and mechanisms",
+     "level": "a2",
+     "file": "chem-2.md",
+     "owner": "C2",
+     "group": "Physical chemistry"
+    },
+    {
+     "id": "chem.periodicity",
+     "title": "Periodicity: Period 3",
+     "level": "as",
+     "file": "chem-2.md",
+     "owner": "C2",
+     "group": "Inorganic chemistry"
+    },
+    {
+     "id": "chem.group2",
+     "title": "Group 2",
+     "level": "as",
+     "file": "chem-2.md",
+     "owner": "C2",
+     "group": "Inorganic chemistry"
+    },
+    {
+     "id": "chem.group17",
+     "title": "Group 17: the halogens",
+     "level": "as",
+     "file": "chem-2.md",
+     "owner": "C2",
+     "group": "Inorganic chemistry"
+    },
+    {
+     "id": "chem.nitrogen",
+     "title": "Nitrogen and sulfur",
+     "level": "as",
+     "file": "chem-2.md",
+     "owner": "C2",
+     "group": "Inorganic chemistry"
+    },
+    {
+     "id": "chem.transition",
+     "title": "Transition elements",
+     "level": "a2",
+     "file": "chem-2.md",
+     "owner": "C2",
+     "group": "Inorganic chemistry"
+    },
+    {
+     "id": "chem.org.intro",
+     "title": "Introduction to organic chemistry",
+     "level": "as",
+     "file": "chem-3.md",
+     "owner": "C3",
+     "group": "Organic chemistry"
+    },
+    {
+     "id": "chem.org.hydrocarbons",
+     "title": "Hydrocarbons: alkanes and alkenes",
+     "level": "as",
+     "file": "chem-3.md",
+     "owner": "C3",
+     "group": "Organic chemistry"
+    },
+    {
+     "id": "chem.org.halogen",
+     "title": "Halogenoalkanes",
+     "level": "as",
+     "file": "chem-3.md",
+     "owner": "C3",
+     "group": "Organic chemistry"
+    },
+    {
+     "id": "chem.org.alcohols",
+     "title": "Alcohols and phenol",
+     "level": "as a2",
+     "file": "chem-3.md",
+     "owner": "C3",
+     "group": "Organic chemistry"
+    },
+    {
+     "id": "chem.org.carbonyl",
+     "title": "Aldehydes and ketones",
+     "level": "as",
+     "file": "chem-3.md",
+     "owner": "C3",
+     "group": "Organic chemistry"
+    },
+    {
+     "id": "chem.org.acids",
+     "title": "Carboxylic acids, esters and acyl chlorides",
+     "level": "as a2",
+     "file": "chem-3.md",
+     "owner": "C3",
+     "group": "Organic chemistry"
+    },
+    {
+     "id": "chem.org.arenes",
+     "title": "Arenes: benzene and its compounds",
+     "level": "a2",
+     "file": "chem-3.md",
+     "owner": "C3",
+     "group": "Organic chemistry"
+    },
+    {
+     "id": "chem.org.nitrogen",
+     "title": "Amines, amides and amino acids",
+     "level": "a2",
+     "file": "chem-3.md",
+     "owner": "C3",
+     "group": "Organic chemistry"
+    },
+    {
+     "id": "chem.org.polymers",
+     "title": "Polymerisation",
+     "level": "as a2",
+     "file": "chem-3.md",
+     "owner": "C3",
+     "group": "Organic chemistry"
+    },
+    {
+     "id": "chem.org.synthesis",
+     "title": "Organic synthesis",
+     "level": "as a2",
+     "file": "chem-3.md",
+     "owner": "C3",
+     "group": "Organic chemistry"
+    },
+    {
+     "id": "chem.analysis",
+     "title": "Analytical techniques: IR, mass spectra, NMR and chromatography",
+     "level": "as a2",
+     "file": "chem-3.md",
+     "owner": "C3",
+     "group": "Analysis and practical"
+    },
+    {
+     "id": "chem.practical",
+     "title": "Practical skills and tests for ions",
+     "level": "guide",
+     "file": "chem-4.md",
+     "owner": "C2",
+     "group": "Analysis and practical"
+    }
+   ]
+  },
+  {
+   "id": "bio",
+   "title": "Biology",
+   "short": "Biology",
+   "code": "9700",
+   "files": [
+    "bio-1.md",
+    "bio-2.md",
+    "bio-3.md",
+    "bio-4.md",
+    "bio-5.md"
+   ],
+   "desc": "From molecules and cells to ecosystems and evolution",
+   "chapters": [
+    {
+     "id": "bio.overview",
+     "title": "Biology: the course map",
+     "level": "guide",
+     "file": "bio-1.md",
+     "owner": "B1",
+     "group": "Start here"
+    },
+    {
+     "id": "bio.f.basics",
+     "title": "Biology from zero",
+     "level": "pre",
+     "file": "bio-1.md",
+     "owner": "B1",
+     "group": "Start here"
+    },
+    {
+     "id": "bio.cells",
+     "title": "Cell structure",
+     "level": "as",
+     "file": "bio-1.md",
+     "owner": "B1",
+     "group": "AS Level"
+    },
+    {
+     "id": "bio.molecules",
+     "title": "Biological molecules",
+     "level": "as",
+     "file": "bio-1.md",
+     "owner": "B1",
+     "group": "AS Level"
+    },
+    {
+     "id": "bio.enzymes",
+     "title": "Enzymes",
+     "level": "as",
+     "file": "bio-1.md",
+     "owner": "B1",
+     "group": "AS Level"
+    },
+    {
+     "id": "bio.membranes",
+     "title": "Cell membranes and transport",
+     "level": "as",
+     "file": "bio-1.md",
+     "owner": "B1",
+     "group": "AS Level"
+    },
+    {
+     "id": "bio.mitosis",
+     "title": "The mitotic cell cycle",
+     "level": "as",
+     "file": "bio-1.md",
+     "owner": "B1",
+     "group": "AS Level"
+    },
+    {
+     "id": "bio.dna",
+     "title": "Nucleic acids and protein synthesis",
+     "level": "as",
+     "file": "bio-1.md",
+     "owner": "B1",
+     "group": "AS Level"
+    },
+    {
+     "id": "bio.planttransport",
+     "title": "Transport in plants",
+     "level": "as",
+     "file": "bio-2.md",
+     "owner": "B2",
+     "group": "AS Level"
+    },
+    {
+     "id": "bio.mammaltransport",
+     "title": "Transport in mammals",
+     "level": "as",
+     "file": "bio-2.md",
+     "owner": "B2",
+     "group": "AS Level"
+    },
+    {
+     "id": "bio.gasexchange",
+     "title": "Gas exchange",
+     "level": "as",
+     "file": "bio-2.md",
+     "owner": "B2",
+     "group": "AS Level"
+    },
+    {
+     "id": "bio.disease",
+     "title": "Infectious diseases",
+     "level": "as",
+     "file": "bio-2.md",
+     "owner": "B2",
+     "group": "AS Level"
+    },
+    {
+     "id": "bio.immunity",
+     "title": "Immunity",
+     "level": "as",
+     "file": "bio-2.md",
+     "owner": "B2",
+     "group": "AS Level"
+    },
+    {
+     "id": "bio.respiration",
+     "title": "Energy and respiration",
+     "level": "a2",
+     "file": "bio-3.md",
+     "owner": "B2",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bio.photosynthesis",
+     "title": "Photosynthesis",
+     "level": "a2",
+     "file": "bio-3.md",
+     "owner": "B2",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bio.homeostasis",
+     "title": "Homeostasis",
+     "level": "a2",
+     "file": "bio-4.md",
+     "owner": "B3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bio.control",
+     "title": "Control and coordination",
+     "level": "a2",
+     "file": "bio-4.md",
+     "owner": "B3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bio.inheritance",
+     "title": "Inheritance",
+     "level": "a2",
+     "file": "bio-4.md",
+     "owner": "B3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bio.evolution",
+     "title": "Selection and evolution",
+     "level": "a2",
+     "file": "bio-4.md",
+     "owner": "B3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bio.classification",
+     "title": "Classification, biodiversity and conservation",
+     "level": "a2",
+     "file": "bio-4.md",
+     "owner": "B3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bio.genetech",
+     "title": "Genetic technology",
+     "level": "a2",
+     "file": "bio-4.md",
+     "owner": "B3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bio.ecology",
+     "title": "Ecosystems and nutrient cycles (UK boards)",
+     "level": "a2",
+     "file": "bio-4.md",
+     "owner": "B3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bio.stats",
+     "title": "Statistics for biologists",
+     "level": "as a2",
+     "file": "bio-5.md",
+     "owner": "B2",
+     "group": "Skills"
+    },
+    {
+     "id": "bio.practical",
+     "title": "Practical skills: microscopy, experiments and planning",
+     "level": "guide",
+     "file": "bio-5.md",
+     "owner": "B2",
+     "group": "Skills"
+    }
+   ]
+  },
+  {
+   "id": "eng",
+   "title": "Engineering",
+   "short": "Engineering",
+   "code": "ENG",
+   "files": [
+    "eng-1.md",
+    "eng-2.md"
+   ],
+   "desc": "How Maths and Physics become bridges, engines and circuits",
+   "chapters": [
+    {
+     "id": "eng.overview",
+     "title": "Engineering: routes and course map",
+     "level": "guide",
+     "file": "eng-1.md",
+     "owner": "E1",
+     "group": "Engineering at A Level"
+    },
+    {
+     "id": "eng.what",
+     "title": "What engineers actually do",
+     "level": "pre",
+     "file": "eng-1.md",
+     "owner": "E1",
+     "group": "Engineering at A Level"
+    },
+    {
+     "id": "eng.maths",
+     "title": "The engineer's maths toolkit",
+     "level": "as",
+     "file": "eng-1.md",
+     "owner": "E1",
+     "group": "Engineering foundations"
+    },
+    {
+     "id": "eng.statics",
+     "title": "Statics: forces, moments and structures",
+     "level": "as",
+     "file": "eng-1.md",
+     "owner": "E1",
+     "group": "Engineering foundations"
+    },
+    {
+     "id": "eng.materials",
+     "title": "Materials and their properties",
+     "level": "as",
+     "file": "eng-1.md",
+     "owner": "E1",
+     "group": "Engineering foundations"
+    },
+    {
+     "id": "eng.mechanics",
+     "title": "Stress, beams and safety factors",
+     "level": "a2",
+     "file": "eng-1.md",
+     "owner": "E1",
+     "group": "Engineering foundations"
+    },
+    {
+     "id": "eng.dynamics",
+     "title": "Dynamics and machines",
+     "level": "as",
+     "file": "eng-1.md",
+     "owner": "E1",
+     "group": "Engineering foundations"
+    },
+    {
+     "id": "eng.fluids",
+     "title": "Fluid mechanics",
+     "level": "a2",
+     "file": "eng-2.md",
+     "owner": "E2",
+     "group": "Engineering foundations"
+    },
+    {
+     "id": "eng.thermo",
+     "title": "Thermodynamics and energy systems",
+     "level": "a2",
+     "file": "eng-2.md",
+     "owner": "E2",
+     "group": "Engineering foundations"
+    },
+    {
+     "id": "eng.electrical",
+     "title": "Electrical engineering",
+     "level": "as",
+     "file": "eng-2.md",
+     "owner": "E2",
+     "group": "Engineering foundations"
+    },
+    {
+     "id": "eng.electronics",
+     "title": "Electronics and digital systems",
+     "level": "as",
+     "file": "eng-2.md",
+     "owner": "E2",
+     "group": "Engineering foundations"
+    },
+    {
+     "id": "eng.control",
+     "title": "Control systems",
+     "level": "a2",
+     "file": "eng-2.md",
+     "owner": "E2",
+     "group": "Engineering foundations"
+    },
+    {
+     "id": "eng.design",
+     "title": "Design, drawing and manufacturing",
+     "level": "as",
+     "file": "eng-2.md",
+     "owner": "E2",
+     "group": "Engineering foundations"
+    },
+    {
+     "id": "eng.project",
+     "title": "Projects, competitions and your next steps",
+     "level": "guide",
+     "file": "eng-2.md",
+     "owner": "E2",
+     "group": "Make it real"
+    }
+   ]
+  },
+  {
+   "id": "bus",
+   "title": "Business",
+   "short": "Business",
+   "code": "9609",
+   "files": [
+    "bus-1.md",
+    "bus-2.md",
+    "bus-3.md"
+   ],
+   "desc": "How organisations are run, marketed, staffed and financed",
+   "chapters": [
+    {
+     "id": "bus.overview",
+     "title": "Business: the course map",
+     "level": "guide",
+     "file": "bus-1.md",
+     "owner": "BU1",
+     "group": "Start here"
+    },
+    {
+     "id": "bus.f.basics",
+     "title": "Business from zero",
+     "level": "pre",
+     "file": "bus-1.md",
+     "owner": "BU1",
+     "group": "Start here"
+    },
+    {
+     "id": "bus.enterprise",
+     "title": "Enterprise",
+     "level": "as",
+     "file": "bus-1.md",
+     "owner": "BU1",
+     "group": "AS Level"
+    },
+    {
+     "id": "bus.structure",
+     "title": "Business structure",
+     "level": "as",
+     "file": "bus-1.md",
+     "owner": "BU1",
+     "group": "AS Level"
+    },
+    {
+     "id": "bus.size",
+     "title": "Size of business",
+     "level": "as",
+     "file": "bus-1.md",
+     "owner": "BU1",
+     "group": "AS Level"
+    },
+    {
+     "id": "bus.objectives",
+     "title": "Business objectives and stakeholders",
+     "level": "as",
+     "file": "bus-1.md",
+     "owner": "BU1",
+     "group": "AS Level"
+    },
+    {
+     "id": "bus.hrm",
+     "title": "Human resource management",
+     "level": "as",
+     "file": "bus-1.md",
+     "owner": "BU1",
+     "group": "AS Level"
+    },
+    {
+     "id": "bus.motivation",
+     "title": "Motivation",
+     "level": "as",
+     "file": "bus-1.md",
+     "owner": "BU1",
+     "group": "AS Level"
+    },
+    {
+     "id": "bus.management",
+     "title": "Management",
+     "level": "as",
+     "file": "bus-1.md",
+     "owner": "BU1",
+     "group": "AS Level"
+    },
+    {
+     "id": "bus.marketing",
+     "title": "The nature of marketing",
+     "level": "as",
+     "file": "bus-2.md",
+     "owner": "BU2",
+     "group": "AS Level"
+    },
+    {
+     "id": "bus.research",
+     "title": "Market research",
+     "level": "as",
+     "file": "bus-2.md",
+     "owner": "BU2",
+     "group": "AS Level"
+    },
+    {
+     "id": "bus.mix",
+     "title": "The marketing mix",
+     "level": "as",
+     "file": "bus-2.md",
+     "owner": "BU2",
+     "group": "AS Level"
+    },
+    {
+     "id": "bus.operations",
+     "title": "Operations management",
+     "level": "as",
+     "file": "bus-2.md",
+     "owner": "BU2",
+     "group": "AS Level"
+    },
+    {
+     "id": "bus.inventory",
+     "title": "Inventory, capacity and outsourcing",
+     "level": "as",
+     "file": "bus-2.md",
+     "owner": "BU2",
+     "group": "AS Level"
+    },
+    {
+     "id": "bus.finance",
+     "title": "Business finance and sources of finance",
+     "level": "as",
+     "file": "bus-2.md",
+     "owner": "BU2",
+     "group": "AS Level"
+    },
+    {
+     "id": "bus.cashflow",
+     "title": "Cash flow forecasting",
+     "level": "as",
+     "file": "bus-2.md",
+     "owner": "BU2",
+     "group": "AS Level"
+    },
+    {
+     "id": "bus.costs",
+     "title": "Costs and break-even analysis",
+     "level": "as",
+     "file": "bus-2.md",
+     "owner": "BU2",
+     "group": "AS Level"
+    },
+    {
+     "id": "bus.budgets",
+     "title": "Budgets and variances",
+     "level": "as",
+     "file": "bus-2.md",
+     "owner": "BU2",
+     "group": "AS Level"
+    },
+    {
+     "id": "bus.external",
+     "title": "External influences on business",
+     "level": "a2",
+     "file": "bus-3.md",
+     "owner": "BU3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bus.strategy",
+     "title": "Business strategy and strategic tools",
+     "level": "a2",
+     "file": "bus-3.md",
+     "owner": "BU3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bus.org",
+     "title": "Organisational structure and communication",
+     "level": "a2",
+     "file": "bus-3.md",
+     "owner": "BU3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bus.leadership",
+     "title": "Leadership and HRM strategy",
+     "level": "a2",
+     "file": "bus-3.md",
+     "owner": "BU3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bus.marketing2",
+     "title": "Marketing analysis and strategy",
+     "level": "a2",
+     "file": "bus-3.md",
+     "owner": "BU3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bus.location",
+     "title": "Location, scale and quality",
+     "level": "a2",
+     "file": "bus-3.md",
+     "owner": "BU3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bus.opsstrategy",
+     "title": "Operations strategy and critical path analysis",
+     "level": "a2",
+     "file": "bus-3.md",
+     "owner": "BU3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bus.accounts",
+     "title": "Financial statements",
+     "level": "a2",
+     "file": "bus-3.md",
+     "owner": "BU3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bus.ratios",
+     "title": "Ratio analysis",
+     "level": "a2",
+     "file": "bus-3.md",
+     "owner": "BU3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bus.investment",
+     "title": "Investment appraisal",
+     "level": "a2",
+     "file": "bus-3.md",
+     "owner": "BU3",
+     "group": "A Level (A2)"
+    },
+    {
+     "id": "bus.writing",
+     "title": "Writing top-band business answers",
+     "level": "guide",
+     "file": "bus-3.md",
+     "owner": "BU3",
+     "group": "Skills"
+    }
+   ]
+  },
+  {
+   "id": "econ",
+   "title": "Economics and Accounting",
+   "short": "Econ & Acc",
+   "code": "9708",
+   "files": [
+    "econ-1.md",
+    "acc-1.md"
+   ],
+   "desc": "Markets, the economy, and the language of money",
+   "chapters": [
+    {
+     "id": "econ.overview",
+     "title": "Economics: the course map",
+     "level": "guide",
+     "file": "econ-1.md",
+     "owner": "EC1",
+     "group": "Economics"
+    },
+    {
+     "id": "econ.basics",
+     "title": "The basic economic problem",
+     "level": "as",
+     "file": "econ-1.md",
+     "owner": "EC1",
+     "group": "Economics"
+    },
+    {
+     "id": "econ.demand",
+     "title": "Demand, supply and prices",
+     "level": "as",
+     "file": "econ-1.md",
+     "owner": "EC1",
+     "group": "Economics"
+    },
+    {
+     "id": "econ.elasticity",
+     "title": "Elasticity",
+     "level": "as",
+     "file": "econ-1.md",
+     "owner": "EC1",
+     "group": "Economics"
+    },
+    {
+     "id": "econ.intervention",
+     "title": "Market failure and government intervention",
+     "level": "as a2",
+     "file": "econ-1.md",
+     "owner": "EC1",
+     "group": "Economics"
+    },
+    {
+     "id": "econ.firms",
+     "title": "Costs, revenue and market structures",
+     "level": "a2",
+     "file": "econ-1.md",
+     "owner": "EC1",
+     "group": "Economics"
+    },
+    {
+     "id": "econ.labour",
+     "title": "Labour markets",
+     "level": "a2",
+     "file": "econ-1.md",
+     "owner": "EC1",
+     "group": "Economics"
+    },
+    {
+     "id": "econ.macro",
+     "title": "Measuring the macroeconomy: AD and AS",
+     "level": "as",
+     "file": "econ-1.md",
+     "owner": "EC1",
+     "group": "Economics"
+    },
+    {
+     "id": "econ.growth",
+     "title": "Growth, unemployment and inflation",
+     "level": "as a2",
+     "file": "econ-1.md",
+     "owner": "EC1",
+     "group": "Economics"
+    },
+    {
+     "id": "econ.policy",
+     "title": "Fiscal, monetary and supply-side policy",
+     "level": "as a2",
+     "file": "econ-1.md",
+     "owner": "EC1",
+     "group": "Economics"
+    },
+    {
+     "id": "econ.trade",
+     "title": "Trade, the balance of payments and exchange rates",
+     "level": "as a2",
+     "file": "econ-1.md",
+     "owner": "EC1",
+     "group": "Economics"
+    },
+    {
+     "id": "econ.development",
+     "title": "Development and globalisation",
+     "level": "a2",
+     "file": "econ-1.md",
+     "owner": "EC1",
+     "group": "Economics"
+    },
+    {
+     "id": "acc.overview",
+     "title": "Accounting: the course map",
+     "level": "guide",
+     "file": "acc-1.md",
+     "owner": "AC1",
+     "group": "Accounting"
+    },
+    {
+     "id": "acc.basics",
+     "title": "Double-entry bookkeeping",
+     "level": "as",
+     "file": "acc-1.md",
+     "owner": "AC1",
+     "group": "Accounting"
+    },
+    {
+     "id": "acc.statements",
+     "title": "Preparing financial statements",
+     "level": "as a2",
+     "file": "acc-1.md",
+     "owner": "AC1",
+     "group": "Accounting"
+    },
+    {
+     "id": "acc.control",
+     "title": "Reconciliations, control accounts and errors",
+     "level": "as",
+     "file": "acc-1.md",
+     "owner": "AC1",
+     "group": "Accounting"
+    },
+    {
+     "id": "acc.analysis",
+     "title": "Analysing and interpreting accounts",
+     "level": "as a2",
+     "file": "acc-1.md",
+     "owner": "AC1",
+     "group": "Accounting"
+    },
+    {
+     "id": "acc.costing",
+     "title": "Cost and management accounting",
+     "level": "as a2",
+     "file": "acc-1.md",
+     "owner": "AC1",
+     "group": "Accounting"
+    }
+   ]
+  },
+  {
+   "id": "other",
+   "title": "Other Subjects",
+   "short": "Other",
+   "code": "ALL",
+   "files": [
+    "other.md"
+   ],
+   "desc": "Short guides to every other popular A Level",
+   "chapters": [
+    {
+     "id": "other.overview",
+     "title": "All other subjects at a glance",
+     "level": "sum",
+     "file": "other.md",
+     "owner": "O1",
+     "group": "Subject summaries"
+    },
+    {
+     "id": "other.cs",
+     "title": "Computer Science",
+     "level": "sum",
+     "file": "other.md",
+     "owner": "O1",
+     "group": "Subject summaries"
+    },
+    {
+     "id": "other.english",
+     "title": "English Language and Literature",
+     "level": "sum",
+     "file": "other.md",
+     "owner": "O1",
+     "group": "Subject summaries"
+    },
+    {
+     "id": "other.history",
+     "title": "History",
+     "level": "sum",
+     "file": "other.md",
+     "owner": "O1",
+     "group": "Subject summaries"
+    },
+    {
+     "id": "other.geography",
+     "title": "Geography",
+     "level": "sum",
+     "file": "other.md",
+     "owner": "O1",
+     "group": "Subject summaries"
+    },
+    {
+     "id": "other.psychology",
+     "title": "Psychology",
+     "level": "sum",
+     "file": "other.md",
+     "owner": "O1",
+     "group": "Subject summaries"
+    },
+    {
+     "id": "other.sociology",
+     "title": "Sociology",
+     "level": "sum",
+     "file": "other.md",
+     "owner": "O1",
+     "group": "Subject summaries"
+    },
+    {
+     "id": "other.law",
+     "title": "Law",
+     "level": "sum",
+     "file": "other.md",
+     "owner": "O1",
+     "group": "Subject summaries"
+    },
+    {
+     "id": "other.politics",
+     "title": "Politics, Global Perspectives and Thinking Skills",
+     "level": "sum",
+     "file": "other.md",
+     "owner": "O1",
+     "group": "Subject summaries"
+    },
+    {
+     "id": "other.languages",
+     "title": "Modern languages",
+     "level": "sum",
+     "file": "other.md",
+     "owner": "O1",
+     "group": "Subject summaries"
+    },
+    {
+     "id": "other.arts",
+     "title": "Art, Design, Music, Drama and Media",
+     "level": "sum",
+     "file": "other.md",
+     "owner": "O1",
+     "group": "Subject summaries"
+    },
+    {
+     "id": "other.pe",
+     "title": "Physical Education",
+     "level": "sum",
+     "file": "other.md",
+     "owner": "O1",
+     "group": "Subject summaries"
+    },
+    {
+     "id": "other.humanities",
+     "title": "Religious Studies, Philosophy and Classics",
+     "level": "sum",
+     "file": "other.md",
+     "owner": "O1",
+     "group": "Subject summaries"
+    },
+    {
+     "id": "other.more",
+     "title": "Computing, environment and the rest",
+     "level": "sum",
+     "file": "other.md",
+     "owner": "O1",
+     "group": "Subject summaries"
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "Toolbox",
+   "short": "Toolbox",
+   "code": "TOOLS",
+   "files": [
+    "tools.md",
+    "formulas-math.md",
+    "formulas-phys.md",
+    "formulas-chem.md",
+    "formulas-bio.md",
+    "formulas-eng.md",
+    "formulas-bus.md"
+   ],
+   "desc": "Formula sheets, calculators, the periodic table and a glossary",
+   "chapters": [
+    {
+     "id": "tools.grapher",
+     "title": "Graph plotter",
+     "level": "tool",
+     "file": "tools.md",
+     "owner": "ME",
+     "group": "Interactive tools"
+    },
+    {
+     "id": "tools.periodic",
+     "title": "Periodic table",
+     "level": "tool",
+     "file": "tools.md",
+     "owner": "ME",
+     "group": "Interactive tools"
+    },
+    {
+     "id": "tools.calc",
+     "title": "Calculators",
+     "level": "tool",
+     "file": "tools.md",
+     "owner": "ME",
+     "group": "Interactive tools"
+    },
+    {
+     "id": "tools.glossary",
+     "title": "Glossary",
+     "level": "tool",
+     "file": "tools.md",
+     "owner": "ME",
+     "group": "Interactive tools"
+    },
+    {
+     "id": "tools.f.math",
+     "title": "Maths formula sheet",
+     "level": "ref",
+     "file": "formulas-math.md",
+     "owner": "M4",
+     "group": "Formula sheets"
+    },
+    {
+     "id": "tools.f.phys",
+     "title": "Physics formula and data sheet",
+     "level": "ref",
+     "file": "formulas-phys.md",
+     "owner": "P3",
+     "group": "Formula sheets"
+    },
+    {
+     "id": "tools.f.chem",
+     "title": "Chemistry data and key equations",
+     "level": "ref",
+     "file": "formulas-chem.md",
+     "owner": "C2",
+     "group": "Formula sheets"
+    },
+    {
+     "id": "tools.f.bio",
+     "title": "Biology key equations and statistics",
+     "level": "ref",
+     "file": "formulas-bio.md",
+     "owner": "B2",
+     "group": "Formula sheets"
+    },
+    {
+     "id": "tools.f.eng",
+     "title": "Engineering formula sheet",
+     "level": "ref",
+     "file": "formulas-eng.md",
+     "owner": "E2",
+     "group": "Formula sheets"
+    },
+    {
+     "id": "tools.f.bus",
+     "title": "Business, economics and accounting formulas",
+     "level": "ref",
+     "file": "formulas-bus.md",
+     "owner": "BU3",
+     "group": "Formula sheets"
+    }
+   ]
+  },
+  {
+   "id": "practice",
+   "title": "Practice",
+   "short": "Practice",
+   "code": "QUIZ",
+   "files": [
+    "practice.md"
+   ],
+   "desc": "Mixed quizzes across every subject",
+   "chapters": [
+    {
+     "id": "practice.quiz",
+     "title": "Practice quizzes",
+     "level": "tool",
+     "file": "practice.md",
+     "owner": "ME",
+     "group": "Practice"
+    }
+   ]
+  }
+ ]
+}

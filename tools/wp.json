@@ -1,0 +1,514 @@
+{
+ "syllabi": {
+  "9709": "https://www.cambridgeinternational.org/Images/697427-2026-2027-syllabus.pdf",
+  "9231": "https://www.cambridgeinternational.org/Images/697357-2026-2027-syllabus.pdf",
+  "9702": "https://www.cambridgeinternational.org/Images/664565-2025-2027-syllabus.pdf",
+  "9701": "https://www.cambridgeinternational.org/Images/664563-2025-2027-syllabus.pdf",
+  "9700": "https://www.cambridgeinternational.org/Images/664560-2025-2027-syllabus.pdf",
+  "9609": "https://www.cambridgeinternational.org/Images/697371-2026-2028-syllabus.pdf",
+  "9708": "https://www.cambridgeinternational.org/Images/697423-2026-2028-syllabus.pdf",
+  "9706": "https://www.cambridgeinternational.org/Images/697417-2026-2028-syllabus.pdf"
+ },
+ "packages": [
+  {
+   "id": "WP0",
+   "type": "engine",
+   "title": "Engine upgrade: one file per chapter, merges + aliases, :::plot, automatic formula sheets",
+   "spec": "WP0.md"
+  },
+  {
+   "id": "WP1",
+   "type": "content",
+   "title": "Maths: course map, foundations, Pure 1 part 1",
+   "chapters": [
+    "math.overview",
+    "math.f.numbers",
+    "math.f.algebra",
+    "math.f.graphs",
+    "math.p1.functions",
+    "math.p1.coord",
+    "math.p1.circular",
+    "math.p1.trig"
+   ],
+   "syllabus": "9709",
+   "topics": "Pure 1: 1.2 Functions, 1.3 Coordinate geometry, 1.4 Circular measure, 1.5 Trigonometry",
+   "notes": "math.overview: 9709 paper table, routes and MF19 from PLAN.md; link every maths chapter. Foundations are IGCSE level. Trig embeds the unitcircle widget; functions embeds a graph widget with transformation sliders. NOTE: math.f.numbers was written before the merge: append a '## Powers, roots, surds and standard form' section with an Edit instead of rewriting it. Chapters already done live in content/math-0.md and content/math-1.md (legacy multi-chapter files); write the missing ones as new per-chapter files."
+  },
+  {
+   "id": "WP2",
+   "type": "content",
+   "title": "Maths: Series, Differentiation, Integration, P2/P3 algebra, logs, trig",
+   "chapters": [
+    "math.p1.series",
+    "math.p1.diff",
+    "math.p1.integ",
+    "math.p3.algebra",
+    "math.p3.logs",
+    "math.p3.trig"
+   ],
+   "syllabus": "9709",
+   "topics": "1.6 Series, 1.7 Differentiation, 1.8 Integration; 2.1/3.1 Algebra, 2.2/3.2 Logarithmic and exponential functions, 2.3/3.3 Trigonometry",
+   "notes": "Chain rule and volumes of revolution are in P1. In P2/P3 chapters mark Paper 3-only parts clearly."
+  },
+  {
+   "id": "WP3",
+   "type": "content",
+   "title": "Maths: Pure 3",
+   "chapters": [
+    "math.p3.diff",
+    "math.p3.integ",
+    "math.p3.numerical",
+    "math.p3.vectors",
+    "math.p3.diffeq",
+    "math.p3.complex"
+   ],
+   "syllabus": "9709",
+   "topics": "3.4 Differentiation, 3.5 Integration, 3.6 Numerical solution of equations, 3.7 Vectors, 3.8 Differential equations, 3.9 Complex numbers",
+   "notes": "Newton-Raphson only as a UK-board note. Complex: one hand SVG for an Argand-diagram locus."
+  },
+  {
+   "id": "WP4",
+   "type": "content",
+   "title": "Maths: Probability and Statistics 1",
+   "chapters": [
+    "math.s1.data",
+    "math.s1.perms",
+    "math.s1.prob",
+    "math.s1.drv",
+    "math.s1.normal",
+    "math.s.regression"
+   ],
+   "syllabus": "9709",
+   "topics": "5.1 to 5.5 (Probability and Statistics 1)",
+   "notes": "Probabilities to 3 s.f. Widgets: stats, binomial, normal. Regression is Edexcel IAL S1 / UK only: say so; keep it 1,000-1,400 words."
+  },
+  {
+   "id": "WP5",
+   "type": "content",
+   "title": "Maths: Probability and Statistics 2, Further Maths tour",
+   "chapters": [
+    "math.s2.poisson",
+    "math.s2.linear",
+    "math.s2.crv",
+    "math.s2.sampling",
+    "math.s2.hypothesis",
+    "math.further"
+   ],
+   "syllabus": "9709",
+   "topics": "6.1 to 6.5 (Probability and Statistics 2)",
+   "notes": "math.further: 9231 paper table from PLAN.md and one mini worked example per Further topic (induction, matrices, roots, method of differences, polar, hyperbolic, Maclaurin, de Moivre, 2nd-order ODEs)."
+  },
+  {
+   "id": "WP6",
+   "type": "content",
+   "title": "Maths: Mechanics",
+   "chapters": [
+    "math.m.forces",
+    "math.m.kinematics",
+    "math.m.newton",
+    "math.m.momentum",
+    "math.m.energy",
+    "math.m.projectiles"
+   ],
+   "syllabus": "9709",
+   "topics": "4.1 to 4.5 (Mechanics)",
+   "notes": "Take g = 10 (Cambridge 9709). Projectiles and moments are Edexcel IAL M2 / UK (Cambridge has projectiles in Further Mechanics): say so; projectile widget. One force-diagram SVG per chapter at most."
+  },
+  {
+   "id": "WP7",
+   "type": "widgets",
+   "title": "Widgets: normal, binomial, projectile, wave, halflife",
+   "widgets": [
+    "normal",
+    "binomial",
+    "projectile",
+    "wave",
+    "halflife"
+   ],
+   "file": "src/widgets-math2.js",
+   "notes": "Read WIDGETS.md and src/core.js; match src/widgets-math.js style. normal: mu, sigma, a, b; shade between/below/above; probability to 4 s.f.; Phi via erf with error < 1e-7. binomial: n 1-50, p; bars; highlighted range with cumulative probability; mean np, variance np(1-p); optional normal overlay. projectile: speed, angle, launch height 0-20 m, g presets 9.81/9.8/10; range, time of flight, max height; components at a chosen time; launch animation (respect reduced motion); faint previous paths + clear. wave: data-mode single (A, wavelength, f, v = f lambda) | superpose (two waves + resultant) | stationary (string fixed at both ends, harmonic slider, nodes/antinodes); play/pause, paused under reduced motion. halflife: n0, half-life; dashed half-life markers; lambda = ln2/t_half; N at a chosen t; seeded random decay of up to 400 dots vs the smooth curve."
+  },
+  {
+   "id": "WP8",
+   "type": "content",
+   "title": "Physics: course map, from zero, AS topics 1-5",
+   "chapters": [
+    "phys.overview",
+    "phys.f.basics",
+    "phys.units",
+    "phys.kinematics",
+    "phys.dynamics",
+    "phys.forces",
+    "phys.energy"
+   ],
+   "syllabus": "9702",
+   "topics": "Topics 1 to 5",
+   "notes": "phys.overview: 9702 paper table from PLAN.md; Edexcel IAL units WPH11-WPH16 (WPH13 and WPH16 are written practical papers); AQA 7408 + Practical Endorsement. g = 9.81. units widget in phys.units; projectile widget in kinematics."
+  },
+  {
+   "id": "WP9",
+   "type": "content",
+   "title": "Physics: AS topics 6-11",
+   "chapters": [
+    "phys.solids",
+    "phys.waves",
+    "phys.superposition",
+    "phys.electricity",
+    "phys.dc",
+    "phys.particles"
+   ],
+   "syllabus": "9702",
+   "topics": "Topics 6 to 11",
+   "notes": "wave widget (single / stationary); ohm widget in electricity; one circuit SVG in d.c. circuits."
+  },
+  {
+   "id": "WP10",
+   "type": "content",
+   "title": "Physics: A Level topics 12-19",
+   "chapters": [
+    "phys.circular",
+    "phys.gravity",
+    "phys.temperature",
+    "phys.oscillations",
+    "phys.efields",
+    "phys.capacitance"
+   ],
+   "syllabus": "9702",
+   "topics": "Topics 12 to 19",
+   "notes": "phys.temperature covers topics 14, 15 and 16 (temperature, ideal gases, thermodynamics). Cambridge first law: dU = q + W with W the work done ON the system."
+  },
+  {
+   "id": "WP11",
+   "type": "content",
+   "title": "Physics: A Level topics 20-25 and practical skills",
+   "chapters": [
+    "phys.magnetic",
+    "phys.ac",
+    "phys.quantum",
+    "phys.nuclear",
+    "phys.medical",
+    "phys.astro",
+    "phys.practical"
+   ],
+   "syllabus": "9702",
+   "topics": "Topics 20 to 25; Paper 3 and Paper 5 skills",
+   "notes": "halflife widget in nuclear. Practical: uncertainties, log graphs, planning."
+  },
+  {
+   "id": "WP12",
+   "type": "content",
+   "title": "Chemistry: course map, from zero, topics 1-4",
+   "chapters": [
+    "chem.overview",
+    "chem.f.basics",
+    "chem.atoms",
+    "chem.moles",
+    "chem.bonding",
+    "chem.states"
+   ],
+   "syllabus": "9701",
+   "topics": "Topics 1 to 4",
+   "notes": "chem.overview: 9701 paper table from PLAN.md; Edexcel IAL WCH11-WCH16. molar widget in moles."
+  },
+  {
+   "id": "WP13",
+   "type": "content",
+   "title": "Chemistry: energetics, redox, equilibria, kinetics, lattice/entropy, electrochemistry",
+   "chapters": [
+    "chem.energetics",
+    "chem.redox",
+    "chem.equilibria",
+    "chem.kinetics",
+    "chem.lattice",
+    "chem.electrochem"
+   ],
+   "syllabus": "9701",
+   "topics": "Topics 5 to 8, 23 and 24",
+   "notes": "chem.lattice also covers entropy and Gibbs free energy. Nernst in Cambridge form E = E° + (0.059/z) log([oxidised]/[reduced])."
+  },
+  {
+   "id": "WP14",
+   "type": "content",
+   "title": "Chemistry: acids/buffers, rate equations, inorganic",
+   "chapters": [
+    "chem.acids2",
+    "chem.rates2",
+    "chem.periodicity",
+    "chem.group2",
+    "chem.group17",
+    "chem.nitrogen",
+    "chem.transition"
+   ],
+   "syllabus": "9701",
+   "topics": "Topics 25, 26, 9, 10 (+27), 11, 12, 28",
+   "notes": "Kw = 1.00 x 10^-14. UK boards add the Arrhenius equation: board box only."
+  },
+  {
+   "id": "WP15",
+   "type": "content",
+   "title": "Chemistry: organic part 1",
+   "chapters": [
+    "chem.org.intro",
+    "chem.org.hydrocarbons",
+    "chem.org.halogen",
+    "chem.org.alcohols",
+    "chem.org.carbonyl"
+   ],
+   "syllabus": "9701",
+   "topics": "Topics 13 to 17 (+ A Level 29 to 31)",
+   "notes": "At most one mechanism SVG per chapter (curly arrows: marker-end url(#ahr))."
+  },
+  {
+   "id": "WP16",
+   "type": "content",
+   "title": "Chemistry: organic part 2, analysis, practical",
+   "chapters": [
+    "chem.org.acids",
+    "chem.org.arenes",
+    "chem.org.nitrogen",
+    "chem.org.polymers",
+    "chem.org.synthesis",
+    "chem.analysis",
+    "chem.practical"
+   ],
+   "syllabus": "9701",
+   "topics": "Topics 18 to 22 and 32 to 37; practical skills",
+   "notes": "Synthesis: reaction-map table instead of a big SVG. Practical: ion and gas test tables."
+  },
+  {
+   "id": "WP17",
+   "type": "widgets",
+   "title": "Widgets: periodic, molar, ohm, punnett, chisq, units",
+   "widgets": [
+    "periodic",
+    "molar",
+    "ohm",
+    "punnett",
+    "chisq",
+    "units"
+   ],
+   "file": "src/widgets-sci.js",
+   "notes": "Do NOT type element data: pip install periodictable, write tools/make_elements.py that outputs src/elements.js (W.ELEMENTS: Z, symbol, British name, Ar to 1 d.p. or [mass number] if no stable isotope, group, period, block, category; configuration computed by Aufbau for Z <= 36 with Cr and Cu exceptions). periodic: 18-column grid + f-block rows, colour by category/block, detail panel, search, scrolls inside its own box on phones. molar: brackets, hydrates (. or ·), coefficients; Mr and % by mass table; friendly errors (Co vs CO). ohm: V, R, internal r; I, terminal p.d., power; simple circuit drawing; I-V line. punnett: monohybrid, dihybrid, X-linked (X^H X^h x X^H Y); gametes, grid, genotype and phenotype ratios. chisq: O/E or ratio like 9:3:3:1; chi-squared, df, critical value at 0.05 for df 1-10 (3.84 5.99 7.81 9.49 11.07 12.59 14.07 15.51 16.92 18.31), conclusion. units: SI prefix table + converter (length, mass, time, volume incl. dm3 and L, energy J/kJ/eV/kWh, pressure Pa/kPa/atm/mmHg, temperature C/K) + standard-form helper."
+  },
+  {
+   "id": "WP18",
+   "type": "content",
+   "title": "Biology: course map, from zero, topics 1-4",
+   "chapters": [
+    "bio.overview",
+    "bio.f.basics",
+    "bio.cells",
+    "bio.molecules",
+    "bio.enzymes",
+    "bio.membranes"
+   ],
+   "syllabus": "9700",
+   "topics": "Topics 1 to 4",
+   "notes": "bio.overview: 9700 paper table from PLAN.md; Edexcel IAL WBI11-WBI16."
+  },
+  {
+   "id": "WP19",
+   "type": "content",
+   "title": "Biology: topics 5-10",
+   "chapters": [
+    "bio.mitosis",
+    "bio.dna",
+    "bio.planttransport",
+    "bio.mammaltransport",
+    "bio.gasexchange",
+    "bio.disease"
+   ],
+   "syllabus": "9700",
+   "topics": "Topics 5 to 10",
+   "notes": "Named diseases: cholera, malaria, tuberculosis, HIV/AIDS (PLAN.md)."
+  },
+  {
+   "id": "WP20",
+   "type": "content",
+   "title": "Biology: topics 11-15",
+   "chapters": [
+    "bio.immunity",
+    "bio.respiration",
+    "bio.photosynthesis",
+    "bio.homeostasis",
+    "bio.control"
+   ],
+   "syllabus": "9700",
+   "topics": "Topics 11 to 15",
+   "notes": ""
+  },
+  {
+   "id": "WP21",
+   "type": "content",
+   "title": "Biology: topics 16-19, statistics, practical",
+   "chapters": [
+    "bio.inheritance",
+    "bio.evolution",
+    "bio.classification",
+    "bio.genetech",
+    "bio.stats",
+    "bio.practical"
+   ],
+   "syllabus": "9700",
+   "topics": "Topics 16 to 19; statistics (chi-squared, t-test, Spearman, Pearson, Simpson's index, Hardy-Weinberg, Lincoln index); practical skills",
+   "notes": "bio.classification also covers UK-board ecology (energy transfer, nutrient cycles). punnett widget in inheritance, chisq widget in stats."
+  },
+  {
+   "id": "WP22",
+   "type": "content",
+   "title": "Engineering part 1",
+   "chapters": [
+    "eng.overview",
+    "eng.maths",
+    "eng.statics",
+    "eng.materials",
+    "eng.dynamics",
+    "eng.fluids"
+   ],
+   "topics": "Engineering foundations built on A Level Maths and Physics",
+   "notes": "No Cambridge Engineering A Level. Routes: Maths + Further Maths + Physics; OCR A Level D&T Design Engineering (H404, NEA 50%); WJEC Eduqas A Level Electronics; BTEC Nationals, T Levels, V Levels (England, from Sept 2027); ESAT for top universities (all in PLAN.md). eng.materials covers stress, strain, Young modulus, beams, factor of safety."
+  },
+  {
+   "id": "WP23",
+   "type": "content",
+   "title": "Engineering part 2",
+   "chapters": [
+    "eng.thermo",
+    "eng.electrical",
+    "eng.electronics",
+    "eng.design",
+    "eng.project"
+   ],
+   "topics": "Engineering foundations",
+   "notes": "eng.electronics covers components, diodes, transistors as switches, op-amps, logic gates, sensors, feedback control (open/closed loop, PID intuition). eng.project: build-at-home projects, EPQ ideas, competitions, next steps."
+  },
+  {
+   "id": "WP24",
+   "type": "content",
+   "title": "Business: course map, from zero, topics 1-2",
+   "chapters": [
+    "bus.overview",
+    "bus.f.basics",
+    "bus.enterprise",
+    "bus.objectives",
+    "bus.hrm",
+    "bus.motivation"
+   ],
+   "syllabus": "9609",
+   "topics": "1.1 to 2.3",
+   "notes": "bus.overview: 9609 paper table (PLAN.md), assessment objectives (knowledge, application, analysis, evaluation); Edexcel IAL WBS11-WBS14. Worked examples = model paragraphs built step by step, plus calculations where relevant."
+  },
+  {
+   "id": "WP25",
+   "type": "content",
+   "title": "Business: marketing, operations, finance (AS)",
+   "chapters": [
+    "bus.marketing",
+    "bus.mix",
+    "bus.operations",
+    "bus.finance",
+    "bus.costs",
+    "bus.budgets"
+   ],
+   "syllabus": "9609",
+   "topics": "3.1 to 5.5",
+   "notes": "breakeven widget in bus.costs; cash-flow forecast table in bus.finance."
+  },
+  {
+   "id": "WP26",
+   "type": "content",
+   "title": "Business: A Level strategy, people, marketing, operations",
+   "chapters": [
+    "bus.external",
+    "bus.strategy",
+    "bus.org",
+    "bus.marketing2",
+    "bus.location",
+    "bus.opsstrategy"
+   ],
+   "syllabus": "9609",
+   "topics": "6.1 to 9.3",
+   "notes": "One critical-path network SVG in bus.opsstrategy; elasticity calculations in bus.marketing2."
+  },
+  {
+   "id": "WP27",
+   "type": "content",
+   "title": "Business: accounts, ratios, investment, writing",
+   "chapters": [
+    "bus.accounts",
+    "bus.ratios",
+    "bus.investment",
+    "bus.writing"
+   ],
+   "syllabus": "9609",
+   "topics": "10.1 to 10.4",
+   "notes": "ratios and npv widgets. bus.writing: how 9609 papers are marked, with model answers."
+  },
+  {
+   "id": "WP28",
+   "type": "widgets",
+   "title": "Widgets: supplydemand, breakeven, npv, ratios",
+   "widgets": [
+    "supplydemand",
+    "breakeven",
+    "npv",
+    "ratios"
+   ],
+   "file": "src/widgets-biz.js",
+   "notes": "supplydemand: shift and tilt demand/supply, equilibrium, consumer/producer surplus, optional price ceiling/floor and indirect tax incidence; axes Price ($) and Quantity. breakeven: data-fc, data-price, data-vc + planned output; contribution, break-even output rounded up, break-even revenue, margin of safety, profit; chart. npv: investment, cash flows years 1-6 (editable), rate; payback (years and months), ARR, NPV with discount factors to 3 d.p. ratios: gross and operating margin, ROCE, current ratio, acid test, inventory turnover, receivables and payables days, gearing, dividend yield, P/E; formula + one-line meaning each; realistic example pre-filled."
+  },
+  {
+   "id": "WP29",
+   "type": "content",
+   "title": "Economics part 1",
+   "chapters": [
+    "econ.overview",
+    "econ.basics",
+    "econ.demand",
+    "econ.elasticity",
+    "econ.intervention"
+   ],
+   "syllabus": "9708",
+   "topics": "Topics 1 to 3, 7.3, 7.4, 8.1, 8.2",
+   "notes": "Compact chapters (1,000-1,500 words). Diagrams via :::plot straight lines with --noticks; supplydemand widget in econ.demand."
+  },
+  {
+   "id": "WP30",
+   "type": "content",
+   "title": "Economics part 2",
+   "chapters": [
+    "econ.firms",
+    "econ.macro",
+    "econ.growth",
+    "econ.policy",
+    "econ.trade"
+   ],
+   "syllabus": "9708",
+   "topics": "Topics 4 to 6 and 7.5 to 11.6",
+   "notes": "econ.firms includes labour markets; econ.trade includes development and globalisation."
+  },
+  {
+   "id": "WP31",
+   "type": "content",
+   "title": "Accounting and Other subjects",
+   "chapters": [
+    "acc.overview",
+    "acc.basics",
+    "acc.statements",
+    "acc.costing",
+    "other.overview",
+    "other.cs",
+    "other.english"
+   ],
+   "syllabus": "9706",
+   "topics": "Accounting: sections 1 to 4",
+   "notes": "acc.* compact. other.overview: one big table of ~25 subjects; other.cs: Computer Science, Psychology, PE, IT, Marine Science, Environmental Management; other.english: English Language and Literature, History, Geography, Sociology, Law, Global Perspectives and Thinking Skills, languages, the arts, Religious Studies/Philosophy/Classics. About 250 words per subject: what it is, main topics, assessment style, who it suits, good combinations. Give a Cambridge syllabus code only if you have verified it."
+  },
+  {
+   "id": "WP32",
+   "type": "qa",
+   "title": "Final quality pass and publish",
+   "notes": "node build.js --warn: zero errors; status.py all done; no 'soon' links left; recompute 15 randomly sampled worked examples; 4 screenshots (home desktop, a maths chapter desktop, a chapter on phone, dark mode) and fix what they show; update the 'About this guide' note on the home page; publish; write DONE WP32 in STATUS.md."
+  }
+ ]
+}
