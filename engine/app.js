@@ -68,7 +68,7 @@
       tn += n; td += d;
       for (const el of $$(`[data-pc="${s.id}"]`)) el.textContent = n ? `${d}/${n}` : '';
       for (const el of $$(`[data-bar="${s.id}"]`)) el.style.width = n ? (100 * d / n).toFixed(1) + '%' : '0';
-      for (const el of $$(`[data-cnt="${s.id}"]`)) el.textContent = n ? `${d} of ${n} chapters learned` : 'Coming soon';
+      for (const el of $$(`[data-cnt="${s.id}"]`)) el.textContent = n ? `${d} of ${n} learned` : 'Being written';
     }
     $('#sideProgTxt').textContent = `${td} of ${tn} chapters learned`;
     $('#sideProgBar').style.width = tn ? (100 * td / tn).toFixed(1) + '%' : '0';
@@ -229,7 +229,21 @@
   }
 
   /* ---------- home ---------- */
+  let homeDrawn = false;
   function renderHome() {
+    const list = $('#subjects');
+    if (list && !list.children.length) {
+      list.innerHTML = G.subjects.filter(s => s.c).map(s => {
+        const open = s.first ? `<a class="subj" href="#${s.first}">` : '<div class="subj subj-soon">';
+        return `<li class="s-${s.id}">${open}`
+          + `<span class="subj-c">${W.esc(s.code === 'ALL' ? 'More' : s.code || '')}</span><span class="subj-t">${W.esc(s.t)}</span>`
+          + `<span class="subj-d">${W.esc(s.desc || '')}</span>`
+          + `<span class="subj-p"><span data-cnt="${s.id}"></span><span class="subj-bar"><span data-bar="${s.id}"></span></span>`
+          + (s.n ? `<span>${s.n} of ${s.p} chapters ready</span>` : '') + `</span>${s.first ? '</a>' : '</div>'}</li>`;
+      }).join('');
+    }
+    const road = $('#c-home .road');
+    if (road && !homeDrawn) { homeDrawn = true; road.classList.add('draw'); }
     renderProgress();
     const last = store.get('last', null);
     const box = $('#resume');

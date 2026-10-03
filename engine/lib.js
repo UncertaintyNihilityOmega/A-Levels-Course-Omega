@@ -121,7 +121,12 @@ function createRenderer(opts = {}) {
     }
     return html;
   }
-  const addMarks = (html) => html.replace(/\[(M|A|B|C|E)(\d)\]/g, '<span class="mk mk-$1">$1$2</span>');
+  // Examiner marks: a run like "[M1] [A1]" becomes one group. A group written after display maths moves in front
+  // of it, so the page's examiner margin can show the marks level with the line that earns them.
+  const addMarks = (html) => html.replace(/(@@D\d+@@)?\s*((?:\[(?:M|A|B|C|E)\d\]\s*)+)/g, (m, disp, run) => {
+    const group = `<span class="mks">${[...run.matchAll(/\[(M|A|B|C|E)(\d)\]/g)].map(x => `<span class="mk mk-${x[1]}">${x[1]}${x[2]}</span>`).join('')}</span>`;
+    return disp ? group + disp : ' ' + group + (/\s$/.test(run) ? ' ' : '');
+  });
   const mdInline = (s) => md.renderInline(s);
 
   function renderTry(body) {
@@ -196,7 +201,9 @@ function createRenderer(opts = {}) {
           st.GLOSSARY.push({ t: subMath(t), d: subMath(subBlocks(d)), c: st.chapter, s: st.subject });
           html = `<dl class="def"><dt>${t}</dt><dd>${d}</dd></dl>`;
         } else if (type === 'eg') {
-          html = `<div class="eg"><div class="eg-h"><span class="eg-l">Worked example</span>${title ? `<span class="eg-t">${mdInline(title)}</span>` : ''}</div><div class="eg-b">${addMarks(processBlocks(inner))}</div></div>`;
+          const total = [...inner.matchAll(/\[(?:M|A|B|C|E)(\d)\]/g)].reduce((a, m) => a + +m[1], 0);
+          const marks = total ? `<span class="eg-m">${total} mark${total === 1 ? '' : 's'}</span>` : '';
+          html = `<div class="eg"><div class="eg-h"><span class="eg-l">Worked example</span>${title ? `<span class="eg-t">${mdInline(title)}</span>` : ''}${marks}</div><div class="eg-b">${addMarks(processBlocks(inner))}</div></div>`;
         } else if (type === 'try') {
           html = `<div class="try"><div class="try-h"><span class="try-l">Try it yourself</span>${title ? `<span class="try-t">${mdInline(title)}</span>` : ''}</div>${renderTry(inner)}</div>`;
         } else if (type === 'quiz') {
