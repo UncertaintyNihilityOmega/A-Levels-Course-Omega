@@ -83,10 +83,11 @@
 .s-eng { --sc: var(--c-eng); --sc2: var(--c2-eng); }
 .s-bus { --sc: var(--c-bus); --sc2: var(--c2-bus); }
 .s-econ { --sc: var(--c-econ); --sc2: var(--c2-econ); }
+.s-acc { --sc: var(--c-acc, var(--c-econ)); --sc2: var(--c2-acc, var(--c2-econ)); --c-acc: var(--c-econ); --c2-acc: var(--c2-econ); }
 .s-other { --sc: var(--c-other); --sc2: var(--c2-other); }
 .s-tools { --sc: var(--c-tools); --sc2: var(--c2-tools); }
 .s-practice { --sc: var(--c-practice); --sc2: var(--c2-practice); }
-.s-start, .s-road, .s-math, .s-phys, .s-chem, .s-bio, .s-eng, .s-bus, .s-econ, .s-other, .s-tools, .s-practice, .app {
+.s-start, .s-road, .s-math, .s-phys, .s-chem, .s-bio, .s-eng, .s-bus, .s-econ, .s-acc, .s-other, .s-tools, .s-practice, .app {
   --sc-soft: color-mix(in srgb, var(--sc) 9%, var(--sheet));
   --sc-mid: color-mix(in srgb, var(--sc) 22%, var(--sheet));
   --sc2-soft: color-mix(in srgb, var(--sc2) 10%, var(--sheet));
@@ -594,3 +595,6 @@ math { font-family: var(--f-math); font-size: 1.13em; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+
+[hidden] { display: none !important; }
+body { margin: 0; }

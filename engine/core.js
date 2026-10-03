@@ -278,3 +278,40 @@
     });
   };
 })();
+
+/* Course chunks: each course lives in c/<course>.js, loaded on demand with a <script> tag (works from file://).
+   A chunk registers its widgets, then calls ZTA.chunk(id, {html, quiz, gloss}). */
+(function () {
+  'use strict';
+  const ZTA = window.ZTA = { loaded: {}, pending: {} };
+  ZTA.chunk = function (id, data) {
+    const main = document.getElementById('main');
+    if (main) main.insertAdjacentHTML('beforeend', data.html);
+    Object.assign(window.QUIZ, data.quiz);
+    window.GLOSSARY.push(...data.gloss);
+    ZTA.loaded[id] = true;
+    const p = ZTA.pending[id];
+    delete ZTA.pending[id];
+    if (p) p.resolve();
+    document.dispatchEvent(new CustomEvent('zta:chunk', { detail: id }));
+  };
+  ZTA.load = function (id) {
+    if (ZTA.loaded[id]) return Promise.resolve();
+    if (ZTA.pending[id]) return ZTA.pending[id].promise;
+    const p = ZTA.pending[id] = {};
+    p.promise = new Promise((resolve, reject) => { p.resolve = resolve; p.reject = reject; });
+    const s = document.createElement('script');
+    s.src = 'c/' + encodeURIComponent(id) + '.js';
+    s.onerror = () => { delete ZTA.pending[id]; s.remove(); p.reject(new Error('Could not load c/' + id + '.js')); };
+    document.head.appendChild(s);
+    return p.promise;
+  };
+  /** Load every chunk (search, glossary and practice need all of them). */
+  ZTA.loadAll = function () { return Promise.all(((window.GUIDE || {}).chunks || []).map(ZTA.load)); };
+  /** Chunks a chapter needs before it can be shown: its own and those owning widgets it uses. */
+  ZTA.needs = function (id) {
+    const c = ((window.GUIDE || {}).ch || {})[id];
+    if (!c) return [];
+    return [c.k].concat(c.n || []).filter(k => k && !ZTA.loaded[k]);
+  };
+})();

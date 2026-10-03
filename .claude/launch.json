@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "site", "runtimeExecutable": "node", "runtimeArgs": ["engine/serve.js", "site", "5100"], "port": 5100 }
+  ]
+}

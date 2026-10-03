@@ -1,0 +1,64 @@
+// lint.js — chapter structure checklist (STYLE.md) and figure rules. Returns { errors, notes }.
+// Errors break the page; notes are checklist items a reviewer will look at (fix them unless there is a reason).
+'use strict';
+
+const TOPIC = new Set(['pre', 'as', 'a2', 'ext']);
+const ESSAY = new Set(['bus', 'econ', 'other']);
+
+function blocks(text, type) {
+  // bodies of top-level-or-nested ":::type" blocks
+  const out = [];
+  const lines = text.split('\n');
+  for (let i = 0; i < lines.length; i++) {
+    if (!new RegExp(`^:::${type}(\\s|$)`).test(lines[i])) continue;
+    let depth = 1; const body = [];
+    for (i++; i < lines.length; i++) {
+      if (/^:::\w+/.test(lines[i])) depth++;
+      else if (/^:::\s*$/.test(lines[i]) && --depth === 0) break;
+      body.push(lines[i]);
+    }
+    out.push(body.join('\n'));
+  }
+  return out;
+}
+
+/** ch = rendered chapter from lib.renderFile; text = the raw file; ctx = { course, hasCheck } */
+function lintChapter(ch, text, ctx = {}) {
+  const errors = [], notes = [];
+  const m = ch.meta || {};
+  const levels = String(m.level || '').toLowerCase().split(/[ ,]+/).filter(Boolean);
+  const topic = levels.some(l => TOPIC.has(l));
+  const course = ctx.course || ch.subject;
+
+  // figures: the page restyles SVG classes for light/dark, so no hard-coded colours or private defs
+  const svgOpen = (ch.html.match(/<svg[\s>]/g) || []).length, svgClose = (ch.html.match(/<\/svg>/g) || []).length;
+  if (svgOpen !== svgClose) errors.push(`<svg> open/close count mismatch (${svgOpen}/${svgClose})`);
+  for (const svg of ch.html.match(/<svg[\s\S]*?<\/svg>/g) || []) {
+    if (/<svg[^>]*\sid=|\sid="/.test(svg)) errors.push('SVG figures must not use id attributes');
+    if (/<(defs|marker|style|script|foreignObject|image)\b/.test(svg)) errors.push('SVG figures must not contain defs, marker, style, script, foreignObject or image (use the shared arrowheads url(#ah) etc.)');
+    if (/\s(fill|stroke)="(#|rgb|red|blue|green|black|white)/i.test(svg) || /style="[^"]*(color|fill|stroke)\s*:/i.test(svg)) errors.push('SVG figures must use classes, never colours (fill/stroke/style)');
+  }
+  for (const w of ch.html.match(/<div class="widget"[^>]*>/g) || []) if (!/data-w="/.test(w)) errors.push('a widget div needs data-w="name"');
+
+  if (!m.summary) notes.push('add an @summary line');
+  if (!m.level) notes.push('add an @level line');
+  if (topic) {
+    if (!m.time) notes.push('add an @time line (realistic study time)');
+    if (!m.paper && !levels.includes('pre')) notes.push('add an @paper line (where it is examined)');
+    const eg = blocks(text, 'eg');
+    const tries = blocks(text, 'try').join('\n').split('\n').filter(l => /^Q:/.test(l)).length;
+    const quiz = blocks(text, 'quiz').join('\n').split('\n').filter(l => /^\? /.test(l)).length;
+    if (!blocks(text, 'why').length) notes.push('start with a :::why box');
+    if (!blocks(text, 'def').length) notes.push('no :::def cards (define the key terms)');
+    if (eg.length < 3) notes.push(`${eg.length} worked example(s): aim for at least 3, graded easy → exam style`);
+    else if (!ESSAY.has(course) && !eg.some(b => /\[(M|A|B)\d\]/.test(b))) notes.push('no exam-style worked example with [M1] [A1] [B1] marks');
+    if (tries < 5) notes.push(`${tries} :::try question(s): aim for at least 5, easy → exam style`);
+    if (quiz < 3) notes.push(`${quiz} :::quiz question(s): aim for at least 3`);
+    if (!blocks(text, 'recap').length) notes.push('end with a :::recap box');
+    if (!/^Next: \[/m.test(text)) notes.push('finish with a "Next: [title](#id)" line');
+    if (ctx.hasCheck === false && !ESSAY.has(course)) notes.push(`no checks/${ch.id}.py (recompute every number in the chapter)`);
+  } else if (levels.includes('guide') && !blocks(text, 'recap').length) notes.push('guide chapters usually end with a :::recap box');
+  return { errors, notes };
+}
+
+module.exports = { lintChapter, blocks };

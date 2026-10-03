@@ -1,14 +1,15 @@
-// Shared renderer for build.js and tools/check.js
+// Shared Markdown → HTML renderer (used by engine/build.js, engine/check.js and the course kit)
 const katex = require('katex');
 require('katex/contrib/mhchem');
 const MarkdownIt = require('markdown-it');
+const { plot } = require('./plot');
 
 const CALLOUTS = {
   tip: 'Tip', warn: 'Common mistake', exam: 'Exam technique', analogy: 'Think of it like this', key: 'Key facts',
   note: 'Note', board: 'Board differences', why: 'Why this matters', recap: 'Summary', story: 'Background', lab: 'Practical skills',
   formula: 'Formula', career: 'Where this leads'
 };
-const BLOCK_TYPES = new Set(['def', 'eg', 'try', 'quiz', 'html', 'cols', 'col', 'steps', ...Object.keys(CALLOUTS)]);
+const BLOCK_TYPES = new Set(['def', 'eg', 'try', 'quiz', 'html', 'plot', 'cols', 'col', 'steps', ...Object.keys(CALLOUTS)]);
 
 function escapeHtml(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -72,7 +73,7 @@ function createRenderer(opts = {}) {
   const md = new MarkdownIt({ html: true, linkify: false, typographer: true, breaks: false });
   md.disable(['replacements']);
   const st = {
-    MATH: [], BLOCKS: [], GLOSSARY: [], QUIZ: [], errors: [], warnings: [], mathChars: new Set(), mathCount: 0,
+    MATH: [], BLOCKS: [], GLOSSARY: [], QUIZ: [], KEYS: [], errors: [], warnings: [], mathChars: new Set(), mathCount: 0,
     chapter: null, subject: null, line: 0
   };
   const err = (msg) => st.errors.push(`[${st.chapter || '?'}] ${msg}`);
@@ -202,6 +203,9 @@ function createRenderer(opts = {}) {
           html = `<div class="quiz-wrap"><div class="quiz-h"><span class="quiz-l">Quick check</span>${title ? `<span class="quiz-t">${mdInline(title)}</span>` : ''}</div>${renderQuiz(inner)}</div>`;
         } else if (type === 'html') {
           html = inner;
+        } else if (type === 'plot') {
+          try { html = plot(inner.replace(/\s*\n\s*/g, ' ').trim(), title ? subMath(mdInline(title)) : ''); }
+          catch (e) { err(`:::plot: ${e.message}`); html = ''; }
         } else if (type === 'cols') {
           html = `<div class="cols">${processBlocks(inner)}</div>`;
         } else if (type === 'col') {
@@ -210,6 +214,8 @@ function createRenderer(opts = {}) {
           html = `<div class="steps">${processBlocks(inner)}</div>`;
         } else if (CALLOUTS[type]) {
           html = `<aside class="co co-${type}"><div class="co-h"><span class="co-l">${CALLOUTS[type]}</span>${title ? `<span class="co-t">${mdInline(title)}</span>` : ''}</div><div class="co-b">${processBlocks(inner)}</div></aside>`;
+          // key and formula boxes also feed the automatic formula sheets (math placeholders resolved later with subMath)
+          if (type === 'key' || type === 'formula') st.KEYS.push({ c: st.chapter, s: st.subject, html });
         } else {
           err(`unknown block type :::${type} (allowed: ${[...BLOCK_TYPES].join(', ')})`);
           html = processBlocks(inner);
@@ -260,8 +266,10 @@ function createRenderer(opts = {}) {
       for (let i = 0; i < pl.length; i++) {
         const mm = pl[i].match(/^@(\w+)\s+(.*)$/);
         if (mm) {
-          if (mm[1] === 'group') { group = { title: mm[2].trim(), chapters: [] }; groups.push(group); }
-          else meta[mm[1]] = mm[2].trim();
+          if (mm[1] === 'group') {
+            if (opts.groups) { group = { title: mm[2].trim(), chapters: [] }; groups.push(group); }
+            else st.warnings.push(`[${fileName}] @group lines are ignored: the group comes from course.json`);
+          } else meta[mm[1]] = mm[2].trim();
           bodyStart = i + 1;
         } else if (pl[i].trim() === '') { bodyStart = i + 1; if (Object.keys(meta).length) { /* blank after meta */ } }
         else break;

@@ -2,8 +2,9 @@
 (function () {
   'use strict';
   const G = window.GUIDE || { order: [], ch: {}, subjects: [] };
-  const QUIZ = window.QUIZ || [];
-  const GLOSS = window.GLOSSARY || [];
+  const QUIZ = window.QUIZ = window.QUIZ || {};   // index -> question; course chunks add theirs
+  const quizIds = () => Object.keys(QUIZ).map(Number).sort((a, b) => a - b);
+  const GLOSS = window.GLOSSARY = window.GLOSSARY || [];
   const $ = (s, r) => (r || document).querySelector(s);
   const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
   const root = document.documentElement;
@@ -47,7 +48,7 @@
 
   /* ---------- progress ---------- */
   let done = store.get('done', {});
-  const trackable = new Set($$('[data-done]').map(b => b.getAttribute('data-done')));
+  const trackable = new Set(G.order.filter(id => G.ch[id].f));
   function saveDone() { store.set('done', done); }
   function subjectStats(sid) {
     let n = 0, d = 0;
@@ -146,8 +147,8 @@
       if (!fn) { el.innerHTML = `<div class="w"><div class="w-b"><div class="w-note">This interactive tool (${W.esc(name)}) is being built and will appear in a later update.</div></div></div>`; continue; }
       try { fn(el, Object.assign({}, el.dataset)); } catch (err) { console.error(err); el.innerHTML = `<div class="w"><div class="w-b"><div class="w-err">This tool could not start: ${W.esc(err.message)}</div></div></div>`; }
     }
-    if (art.id === 'c-practice.quiz') initPractice(art);
-    if (art.id === 'c-tools.glossary') initGlossary(art);
+    if (art.id === 'c-practice.quiz') ZTA.loadAll().then(() => initPractice(art), loadFailed);
+    if (art.id === 'c-tools.glossary') ZTA.loadAll().then(() => initGlossary(art), loadFailed);
   }
 
   /* ---------- router ---------- */
@@ -161,6 +162,12 @@
     let cid = h, sec = null;
     const k = h.indexOf('--');
     if (k > 0) { cid = h.slice(0, k); sec = h; }
+    const need = ZTA.needs(cid);
+    if (need.length) {
+      const slow = setTimeout(() => toast('Loading…'), 250);
+      Promise.all(need.map(ZTA.load)).then(() => { clearTimeout(slow); route(); }, (e) => { clearTimeout(slow); loadFailed(e); });
+      return;
+    }
     let art = document.getElementById('c-' + cid);
     if (!art) { art = document.getElementById('c-home') || $('.chapter'); cid = art ? art.getAttribute('data-id') : ''; sec = null; }
     if (!art) return;
@@ -192,6 +199,7 @@
     if (cid === 'home') renderHome();
   }
   window.addEventListener('hashchange', route);
+  function loadFailed(e) { toast(e.message + ' — keep the c folder next to index.html.'); }
 
   function buildToc(art) {
     rail.innerHTML = '';
@@ -299,7 +307,11 @@
   }
   let st = 0;
   input.addEventListener('input', () => { clearTimeout(st); st = setTimeout(showResults, 120); });
-  input.addEventListener('focus', () => { if (input.value.trim()) showResults(); });
+  input.addEventListener('focus', () => {
+    ZTA.loadAll().then(() => { if (input.value.trim() && document.activeElement === input) showResults(); }, loadFailed);
+    if (input.value.trim()) showResults();
+  });
+  document.addEventListener('zta:chunk', () => { index = null; renderProgress(); });
   input.addEventListener('keydown', (e) => {
     const items = $$('.sr', results);
     if (e.key === 'ArrowDown') { e.preventDefault(); sel = Math.min(items.length - 1, sel + 1); }
@@ -356,17 +368,18 @@
   function initPractice(art) {
     const host = $('#practiceApp', art);
     if (!host) return;
-    const subjects = G.subjects.filter(s => QUIZ.some(q => q.s === s.id));
-    const subjSel = W.h('select', { id: 'pqSubject', 'aria-label': 'Subject' }, W.h('option', { value: '' }, `All subjects (${QUIZ.length})`),
-      ...subjects.map(s => W.h('option', { value: s.id }, `${s.t} (${QUIZ.filter(q => q.s === s.id).length})`)));
+    const all = quizIds();
+    const subjects = G.subjects.filter(s => all.some(i => QUIZ[i].s === s.id));
+    const subjSel = W.h('select', { id: 'pqSubject', 'aria-label': 'Subject' }, W.h('option', { value: '' }, `All subjects (${all.length})`),
+      ...subjects.map(s => W.h('option', { value: s.id }, `${s.t} (${all.filter(i => QUIZ[i].s === s.id).length})`)));
     const nSel = W.h('select', { id: 'pqCount', 'aria-label': 'Number of questions' }, ...[5, 10, 20, 40].map(n => W.h('option', { value: n, selected: n === 10 }, `${n} questions`)));
     const startBtn = W.h('button', { class: 'btn', type: 'button' }, 'Start a quiz');
     const area = W.h('div', {});
     host.append(W.h('div', { class: 'w' }, W.h('div', { class: 'w-h' }, W.h('span', { class: 'w-t' }, 'Mixed practice'), W.h('span', { class: 'w-s' }, 'Questions are drawn at random from every chapter')),
       W.h('div', { class: 'w-b' }, W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-ctl' }, W.h('label', {}, 'Subject'), subjSel), W.h('div', { class: 'w-ctl' }, W.h('label', {}, 'Length'), nSel), startBtn), area)));
-    if (!QUIZ.length) { area.append(W.h('p', { class: 'w-note' }, 'Quizzes will appear here as chapters are added.')); return; }
+    if (!all.length) { area.append(W.h('p', { class: 'w-note' }, 'Quizzes will appear here as chapters are added.')); return; }
     startBtn.addEventListener('click', () => {
-      const pool = QUIZ.map((q, i) => i).filter(i => !subjSel.value || QUIZ[i].s === subjSel.value);
+      const pool = all.filter(i => !subjSel.value || QUIZ[i].s === subjSel.value);
       const pick = W.shuffle(pool).slice(0, +nSel.value);
       let right = 0, answered = 0;
       const wrongCh = new Map();
