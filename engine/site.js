@@ -34,6 +34,10 @@ function buildSite(sources, opts) {
     if (regOwner[n] && regOwner[n] !== s.id) errors.push(`widget "${n}" is registered by both ${regOwner[n]} and ${s.id}: rename one`);
     else regOwner[n] = s.id;
   }
+  const extWidgets = opts.externalWidgets || {};   // name -> course, for widgets outside this build (the kit)
+  for (const [n, o] of Object.entries(extWidgets)) {
+    if (regOwner[n] && regOwner[n] !== o) errors.push(`widget "${n}" is already registered by the ${o} course: rename yours`);
+  }
 
   // ---------- planned ids and aliases ----------
   const planned = new Map();
@@ -123,7 +127,8 @@ function buildSite(sources, opts) {
     const need = new Set();
     for (const m of c.html.matchAll(/data-w="([^"]+)"/g)) {
       const owner = regOwner[m[1]];
-      if (!owner) warnings.push(`[${c.id}] widget "${m[1]}" is not built yet (it shows a placeholder until a widgets.js registers it)`);
+      if (!owner && extWidgets[m[1]]) warnings.push(`[${c.id}] widget "${m[1]}" comes from the ${extWidgets[m[1]]} course: it works in the full site; the preview shows a placeholder`);
+      else if (!owner) warnings.push(`[${c.id}] widget "${m[1]}" is not built yet (it shows a placeholder until a widgets.js registers it)`);
       else if (owner !== 'core' && owner !== c.chunk && chunks.includes(owner)) need.add(owner);
     }
     c.need = [...need];

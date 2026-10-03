@@ -25,7 +25,7 @@ session types; `node kit/zta.js status` tells it what to do next. The copy-paste
 4. Paste the one-line prompt from PROMPTS.md. When the chat reports back, close it: one session = one step.
 
 ## Recommended order
-1. Organizer O2: the redesign pass. Approve the look; after that the format is frozen.
+1. Organizer O1–O3 (done): restructure, the redesign (approved and frozen) and the hand-off.
 2. **Math Specialist LEAD** first, then Math Writer P1, to calibrate how much usage a package costs.
 3. Then run 2–3 courses side by side (for example Physics, Chemistry and Biology LEADs), each followed by
    its Writer packages, with a Specialist REVIEW after every two packages.

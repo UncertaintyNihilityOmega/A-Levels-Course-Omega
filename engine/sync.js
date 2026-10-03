@@ -9,6 +9,7 @@ const fs = require('fs');
 const path = require('path');
 const esbuild = require('esbuild');
 const { readJson, loadCore } = require('./util');
+const { widgetNames } = require('./site');
 
 const ROOT = path.join(__dirname, '..');
 const ENGINE = __dirname;
@@ -28,6 +29,11 @@ sections.sort((a, b) => core.order.indexOf(a.id) - core.order.indexOf(b.id));
 for (const s of sections) {
   for (const c of s.chapters) links.ids[c.id] = { t: c.title, s: s.id };
   Object.assign(links.aliases, s.aliases || {});
+}
+links.widgets = {};   // widget name -> owning course, so each kit knows the names other courses use
+for (const c of courses) {
+  const wf = path.join(ROOT, 'courses', c.id, 'widgets.js');
+  if (fs.existsSync(wf)) for (const n of widgetNames(fs.readFileSync(wf, 'utf8'))) links.widgets[n] = links.widgets[n] || c.id;
 }
 const isWritten = (s, id) => fs.existsSync(path.join(ROOT, s.core ? 'core' : `courses/${s.id}/chapters`, id + '.md'));
 
@@ -57,6 +63,9 @@ function linksMd(self) {
     out += `\n## ${s.title} (${s.id})\n`;
     for (const c of s.chapters) out += `- ${c.id} · ${c.title}${isWritten(s, c.id) ? ' ✓' : ''}\n`;
   }
+  const others = Object.entries(links.widgets).filter(([, o]) => o !== self.id);
+  out += `\n## Widgets built by other courses\nUse them in a chapter with \`data-w\` (they work in the full site; your preview shows a placeholder).\nNever register one of these names in your widgets.js: widget names are global.\n`;
+  out += others.length ? others.map(([n, o]) => `- ${n} (${o})`).join('\n') + '\n' : '- none yet\n';
   return out;
 }
 

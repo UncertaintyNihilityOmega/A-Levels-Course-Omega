@@ -33,7 +33,9 @@ function site(c, opts) {
   const ext = external(c);
   const extAliases = {};
   for (const [a, t] of Object.entries(LINKS.aliases)) if (!a.startsWith(c.id + '.')) extAliases[a] = t;
-  return buildSite([c], { external: ext, externalAliases: extAliases, assets: ASSETS, ...opts });
+  const extWidgets = {};
+  for (const [n, o] of Object.entries(LINKS.widgets || {})) if (o !== c.id) extWidgets[n] = o;
+  return buildSite([c], { external: ext, externalAliases: extAliases, externalWidgets: extWidgets, assets: ASSETS, ...opts });
 }
 
 // ---------- status ----------
@@ -110,6 +112,8 @@ function widget(name, attrs) {
   const c = course();
   if (!name) { console.log('usage: node kit/zta.js widget <name> ["data-a=\\"1\\" data-b=\\"2\\""]'); process.exitCode = 2; return; }
   const known = new Set([...widgetNames(ASSETS.study), ...widgetNames(c.widgets)]);
+  const owner = (LINKS.widgets || {})[name];
+  if (!known.has(name) && owner && owner !== c.id) { console.log(`✗ "${name}" belongs to the ${owner} course: test it there (you can still use it in your chapters)`); process.exitCode = 1; return; }
   if (!known.has(name)) { console.log(`✗ no W.register('${name}', ...) in widgets.js (known: ${[...known].join(', ') || 'none'})`); process.exitCode = 1; return; }
   attrs = attrs || '';
   const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Widget test: ${esc(name)}</title>

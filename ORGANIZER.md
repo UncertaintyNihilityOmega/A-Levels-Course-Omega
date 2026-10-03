@@ -18,8 +18,9 @@ Organizer session instead, with STATUS.md and `node engine/status.js`.
   (UI), subset woff2 in `engine/fonts/` embedded by `assets.js` (fully offline). Marks are grouped by lib.js
   and floated into an examiner's margin in `.eg-b`/`.ta-b`; worked examples are numbered with mark totals.
   Home's subject list is built by app.js from course data (`c:1` in DATA.subjects).
-- O3 hand-off: full verification, then give the user the folder map, the model table and the first prompt
-  (Math Specialist LEAD).
+- O3 hand-off: done 2026-10-03. Full verification passed (build, check --py, an isolated phys copy running
+  check/preview/widget/status, a throwaway :::plot chapter, the site in the browser pane). From here on, run
+  assembly sessions as courses progress.
 
 ## Assembly session (repeat whenever courses have progressed)
 1. `node engine/status.js` and `grep -n "\- \[ \]" courses/*/REQUESTS.md` (open requests).
@@ -39,7 +40,10 @@ Organizer session instead, with STATUS.md and `node engine/status.js`.
   `engine/plot.js`. `:::key`/`:::formula` boxes feed the formula sheets (`core.json` → `formulaSheets`).
 - Ids: course chapter ids start with `<course>.`; `aliases` in course.json/core.json map old ids to new ones and
   links are rewritten. Unknown ids are build errors; planned-but-unwritten links show as plain text.
-- Widget names are global (from `W.register` calls); a name registered twice is a build error. Tools pages in
+- Widget names are global (from `W.register` calls); a name registered twice is a build error. `sync.js` puts
+  every course's widget names in the kit (`zta:links` → `widgets`, and the end of LINKS.md), so a kit warns
+  instead of "not built yet" for another course's widget and errors if a course registers a taken name.
+  Re-sync after a course adds widgets so the other kits learn the new names. Tools pages in
   core use `graph` (math), `periodic` and `molar` (chem), `units` (phys), `breakeven` and `npv` (bus).
 - The kit (`engine/kit-src/zta.js`) is bundled by `sync.js` with esbuild; `zta:assets` and `zta:links` are
   virtual modules (page files and all chapter ids). Kits are not in git; sync regenerates them.

@@ -17,7 +17,8 @@ page calls your initialiser the first time a chapter that uses the widget is sho
 
 Widget names are global across the whole guide. Give every widget a clear lower-case name; if two courses
 need similar tools, use course-flavoured names (`phys-wave`, not `wave`) unless COURSE.md says otherwise.
-Shared study widgets that already exist everywhere: `planner`, `timer`, `ucas`.
+Shared study widgets that already exist everywhere: `planner`, `timer`, `ucas`. Widgets other courses have built
+are listed at the end of kit/LINKS.md: use them freely in chapters, but never register the same name.
 
 ## Hard rules
 - Plain modern JavaScript in the browser. No libraries, imports, network requests, `eval` or `new Function`,
