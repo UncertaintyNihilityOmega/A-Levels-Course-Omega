@@ -73,6 +73,10 @@ const writeIfMissing = (p, text) => { if (!fs.existsSync(p)) { fs.mkdirSync(path
   const kit = await bundle();
   const tpl = fs.readFileSync(path.join(ENGINE, 'templates', 'course-CLAUDE.md'), 'utf8');
   const example = `<!-- kit/EXAMPLE.md: the model chapter (${path.basename(EXAMPLE)}), copied by the Organizer. Match its tone, structure and formatting. -->\n\n` + fs.readFileSync(path.join(ROOT, EXAMPLE), 'utf8');
+  const exCheck = path.join(ROOT, 'courses/math/checks', path.basename(EXAMPLE).replace(/\.md$/, '.py'));
+  const exampleAll = example + (fs.existsSync(exCheck)
+    ? `\n\n<!-- Its number check, checks/${path.basename(exCheck)}: a model for every checks/<id>.py -->\n\n\`\`\`python\n${fs.readFileSync(exCheck, 'utf8')}\`\`\`\n`
+    : '');
   let n = 0;
   for (const c of courses) {
     if (only.length && !only.includes(c.id)) continue;
@@ -81,7 +85,7 @@ const writeIfMissing = (p, text) => { if (!fs.existsSync(p)) { fs.mkdirSync(path
     fs.mkdirSync(kd, { recursive: true });
     fs.writeFileSync(path.join(kd, 'zta.js'), kit);
     for (const f of ['STYLE.md', 'WIDGETS.md']) fs.copyFileSync(path.join(ENGINE, 'kit-src', f), path.join(kd, f));
-    fs.writeFileSync(path.join(kd, 'EXAMPLE.md'), example);
+    fs.writeFileSync(path.join(kd, 'EXAMPLE.md'), exampleAll);
     fs.writeFileSync(path.join(kd, 'LINKS.md'), linksMd(c));
     fs.copyFileSync(path.join(ENGINE, 'latinmodern-math.otf'), path.join(kd, 'math.otf'));
     const lead = c.lead !== false;

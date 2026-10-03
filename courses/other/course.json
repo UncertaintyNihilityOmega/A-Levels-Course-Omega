@@ -94,5 +94,44 @@
     }
   ],
   "aliases": {},
-  "packages": []
+  "packages": [
+    {
+      "id": "P1",
+      "title": "Overview and the sciences-adjacent subjects",
+      "chapters": [
+        "other.overview",
+        "other.cs",
+        "other.psychology",
+        "other.pe",
+        "other.more"
+      ],
+      "widgets": [],
+      "notes": "Write other.overview last in this package so its table can link every chapter."
+    },
+    {
+      "id": "P2",
+      "title": "English and the humanities",
+      "chapters": [
+        "other.english",
+        "other.history",
+        "other.geography",
+        "other.sociology",
+        "other.law"
+      ],
+      "widgets": [],
+      "notes": ""
+    },
+    {
+      "id": "P3",
+      "title": "Politics, languages, arts and beliefs",
+      "chapters": [
+        "other.politics",
+        "other.languages",
+        "other.arts",
+        "other.humanities"
+      ],
+      "widgets": [],
+      "notes": ""
+    }
+  ]
 }

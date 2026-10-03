@@ -130,7 +130,7 @@ Bold a key word the first time if it has no `:::def` card.
 
 ## Accuracy (non-negotiable)
 - Every number in the chapter (worked examples, try answers, quiz options, figure labels) is recomputed in
-  `checks/<id>.py`. The kit runs it on every check; it must print `ok` and exit 0. Pattern:
+  `checks/<id>.py`. The kit runs it on every check; it must print `ok` and exit 0. A full model is at the end of kit/EXAMPLE.md; the pattern:
 
   ```python
   # checks/math.p1.quadratics.py: recomputes every number in the chapter
