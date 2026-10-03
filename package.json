@@ -1,10 +1,13 @@
 {
-  "name": "alevels",
+  "name": "zero-to-a-star",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Zero to A*: offline interactive A Level guide",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node engine/build.js",
+    "check": "node engine/check.js",
+    "status": "node engine/status.js",
+    "sync": "node engine/sync.js",
+    "serve": "node engine/serve.js site 5100"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +18,6 @@
   },
   "devDependencies": {
     "esbuild": "^0.28.2"
-  }
+  },
+  "private": true
 }

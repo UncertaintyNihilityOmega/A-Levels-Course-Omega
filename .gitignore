@@ -6,3 +6,4 @@ node_modules/
 site/
 # synced copies of engine/kit-src (rebuild with: node engine/sync.js)
 courses/*/kit/
+courses/*/.claude/
