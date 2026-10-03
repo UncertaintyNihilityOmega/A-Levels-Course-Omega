@@ -11,7 +11,7 @@ Organizer session instead, with STATUS.md and `node engine/status.js`.
   Say what you changed in that course's REQUESTS.md.
 
 ## Phases (REORG-PLAN.md)
-- O1 restructure + engine: done 2026-10-03.
+- O1 restructure + engine: done 2026-10-03 (commits 433d97a..HEAD).
 - O2 redesign: load the frontend-design skill; redesign `engine/shell.html`, `style.css`, `app.js` and the widget
   styling to an Artifact-quality look (typography, navigation, home, chapter page, every block type, widgets);
   keep light/dark, phone layout, search and progress. Markdown stays unchanged (classes only). Show the user

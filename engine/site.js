@@ -5,8 +5,9 @@
 const { createRenderer, escapeHtml, stripTags } = require('./lib');
 
 const LEVELS = { start: 'Start here', pre: 'Foundations', as: 'AS Level', a2: 'A Level (A2)', guide: 'Guide', tool: 'Interactive', ref: 'Reference', sum: 'Summary', ext: 'Beyond A Level' };
-const REG_RE = /W\.register\(\s*['"]([a-z0-9]+)['"]/g;
-const widgetNames = (src) => [...String(src || '').matchAll(REG_RE)].map(m => m[1]);
+const REG_RE = /W\.register\(\s*['"]([a-z0-9-]+)['"]/g;
+const stripComments = (src) => String(src || '').replace(/\/\*[\s\S]*?\*\//g, '').replace(/^\s*\/\/.*$/gm, '');
+const widgetNames = (src) => [...stripComments(src).matchAll(REG_RE)].map(m => m[1]);
 const safeJson = (o) => JSON.stringify(o).replace(/</g, '\\u003c').replace(/-->/g, '--\\u003e').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029');
 const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 
