@@ -175,8 +175,9 @@ ${c.widgets}</script>
 </body></html>`;
   fs.mkdirSync(PREVIEW, { recursive: true });
   fs.writeFileSync(path.join(PREVIEW, 'widget.html'), html);
+  if (probe) fs.writeFileSync(path.join(PREVIEW, `probe-${process.pid}.html`), html);
   console.log(`wrote preview/widget.html — open http://localhost:${port()}/widget.html (add ?dark, ?phone or ?dark&phone)`);
-  if (probe) runProbe(name);
+  if (probe) { runProbe(name, `probe-${process.pid}.html`); fs.rmSync(path.join(PREVIEW, `probe-${process.pid}.html`), { force: true }); }
 }
 
 // ---------- widget probe: load the test page headless (Edge or Chrome) in light, dark and phone width ----------
@@ -221,11 +222,13 @@ function phone(ids) {
   if (!exe) { console.log('phone: no Edge or Chrome found (set ZTA_BROWSER to a Chromium browser).'); process.exitCode = 1; return; }
   const res = site(c, { inlineAll: true, fontFace: (chars) => mathFontFace(path.join(__dirname, 'math.otf'), chars) });
   fs.mkdirSync(PREVIEW, { recursive: true });
-  fs.writeFileSync(path.join(PREVIEW, 'phone.html'), res.files['index.html'].replace('</body>', () => `<style>html{scrollbar-width:none}</style><script>${PHONE_JS}</script></body>`));
+  const own = `phone-${process.pid}`;
+  fs.writeFileSync(path.join(PREVIEW, own + '.html'), res.files['index.html'].replace('</body>', () => `<style>html{scrollbar-width:none}</style><script>${PHONE_JS}</script></body>`));
   const want = ids.map(a => path.basename(a).replace(/\.md$/, ''));
-  fs.writeFileSync(path.join(PREVIEW, 'phone-frame.html'), PHONE_FRAME(`phone.html?phone-probe${want.length ? '&ids=' + encodeURIComponent(want.join(',')) : ''}`));
-  const R = headless('phone-frame.html', 800, 30000);
-  if (!R) { console.log('✗ phone: the page did not finish; open preview/phone.html in the browser pane instead'); process.exitCode = 1; return; }
+  fs.writeFileSync(path.join(PREVIEW, own + '-frame.html'), PHONE_FRAME(`${own}.html?phone-probe${want.length ? '&ids=' + encodeURIComponent(want.join(',')) : ''}`));
+  const R = headless(own + '-frame.html', 800, 30000);
+  for (const f of [own + '.html', own + '-frame.html']) fs.rmSync(path.join(PREVIEW, f), { force: true });
+  if (!R) { console.log('✗ phone: the page did not finish; run it again, or ask the Organizer'); process.exitCode = 1; return; }
   let bad = 0;
   for (const ch of R.ch) {
     const n = ch.inline.length + ch.other.length;
@@ -264,13 +267,13 @@ function findBrowser() {
     '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', '/usr/bin/google-chrome', '/usr/bin/chromium', '/usr/bin/microsoft-edge'];
   return list.find(p => p && fs.existsSync(p));
 }
-function runProbe(name) {
+function runProbe(name, file) {
   const exe = findBrowser();
   if (!exe) { console.log('probe: no Edge or Chrome found (set ZTA_BROWSER to a Chromium browser). Open the page in the browser pane instead.'); return; }
   const { spawnSync } = require('child_process');
   const { pathToFileURL } = require('url');
   const os = require('os');
-  const page = pathToFileURL(path.join(PREVIEW, 'widget.html')).href;
+  const page = pathToFileURL(path.join(PREVIEW, file)).href;
   const dec = (s) => s.replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
   let problems = 0;
   for (const [label, q, w] of [['light', '', 1000], ['dark', 'dark', 1000], ['phone', 'phone', 400]]) {
