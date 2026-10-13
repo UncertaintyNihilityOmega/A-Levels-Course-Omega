@@ -44,7 +44,7 @@ If a question says "hence", a solution that ignores the previous part and starts
 
 \[\begin{aligned} (2\cos\theta - 1)(\cos\theta + 2) &= 0 \quad [\text{M1}] \\ \cos\theta &= \tfrac12 \quad \text{or} \quad \cos\theta = -2 \end{aligned}\]
 
-\(\cos\theta = -2\) has no solution, because \(-1 \le \cos\theta \le 1\) [B1: say why it is rejected]. From \(\cos\theta = \tfrac12\), \(\theta = 60^\circ\) [A1] and \(\theta = 360^\circ - 60^\circ = 300^\circ\) [A1].
+\(\cos\theta = -2\) has no solution, because \(-1 \le \cos\theta \le 1\) [B1] (say why it is rejected). From \(\cos\theta = \tfrac12\), \(\theta = 60^\circ\) [A1] and \(\theta = 360^\circ - 60^\circ = 300^\circ\) [A1].
 
 *Why it earns the marks:* part (a) shows the identity used and arrives at the exact printed result. A common failure is to start from the answer and work back to \(2\sin^2\theta = 3\cos\theta\): "show that" needs the forward direction. Part (b) uses the form from (a), rejects the impossible root with a reason, and finds both solutions in the interval.
 :::

@@ -121,7 +121,7 @@ Although B makes fewer items, a defective item is slightly more likely to come f
 :::eg (Exam style) The probability that it rains on a given day is 0.3. When it rains, the probability that Karim is late for work is 0.4. When it does not rain, the probability that he is late is 0.1. Find the probability that Karim is late, and the probability that it rained given that he is late. [6 marks]
 Let \(R\) be rain and \(L\) be late. \(P(R \cap L) = 0.3\times 0.4 = 0.12\) [M1] and \(P(R' \cap L) = 0.7\times 0.1 = 0.07\). [M1]
 \(P(L) = 0.12 + 0.07 = 0.19\). [A1]
-\(P(R \mid L)\) \(= \dfrac{P(R \cap L)}{P(L)}\) \(= \dfrac{0.12}{0.19} [\text{M1 A1}]\) \(= 0.632\ \text{(3 s.f.)}\). [A1]
+\(P(R \mid L)\) \(= \dfrac{P(R \cap L)}{P(L)}\) \(= \dfrac{0.12}{0.19}\) [M1] [A1] \(= 0.632\ \text{(3 s.f.)}\). [A1]
 :::
 
 ## Probability using counting
@@ -215,7 +215,7 @@ A: \(P(C) = 0.2\times 0.7 + 0.8\times 0.1\) \(= 0.14 + 0.08 = 0.22\). \(P(R \mid
 Q: Three people are chosen at random from 7 boys and 5 girls. Find the probability that all are girls, and the probability that at least one is a boy.
 A: \(\dfrac{\dbinom53}{\dbinom{12}{3}}\) \(= \dfrac{10}{220} = \dfrac1{22}\) \(= 0.0455\). At least one boy: \(1 - \dfrac1{22} = \dfrac{21}{22}\) \(= 0.955\).
 Q: (Exam style) A bag contains 6 red and 4 blue counters. Three counters are drawn without replacement. Find the probability that all three are the same colour, and the probability that they are red given that all three are the same colour. [5 marks]
-A: \(P(RRR)\) \(= \dfrac6{10}\times\dfrac59\times\dfrac48\) \(= \dfrac{120}{720}\) and \(P(BBB)\) \(= \dfrac4{10}\times\dfrac39\times\dfrac28\) \(= \dfrac{24}{720}\). [M1 A1] \(P(\text{same}) = \dfrac{144}{720}\) \(= 0.2\). [A1] \(P(\text{red} \mid \text{same})\) \(= \dfrac{120/720}{144/720} [\text{M1}]\) \(= \dfrac{5}{6} = 0.833\). [A1]
+A: \(P(RRR)\) \(= \dfrac6{10}\times\dfrac59\times\dfrac48\) \(= \dfrac{120}{720}\) and \(P(BBB)\) \(= \dfrac4{10}\times\dfrac39\times\dfrac28\) \(= \dfrac{24}{720}\). [M1 A1] \(P(\text{same}) = \dfrac{144}{720}\) \(= 0.2\). [A1] \(P(\text{red} \mid \text{same})\) \(= \dfrac{120/720}{144/720}\) [M1] \(= \dfrac{5}{6} = 0.833\). [A1]
 :::
 
 :::try Exam practice ★ to ★★★

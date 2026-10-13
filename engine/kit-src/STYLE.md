@@ -31,17 +31,28 @@ from course.json. Start with these lines, one per line, then a blank line:
 
 ## What a topic chapter does (adapt, don't force)
 1. `:::why`: 2–3 sentences on why the topic matters.
-2. **Before you start**: one line linking the prerequisite chapters (optional).
+2. **Before you start**: one line linking the prerequisite chapters (optional), then a **warm-up**:
+   `:::try Warm-up` with 3 quick questions from *earlier* chapters, one-line answers, each naming its chapter.
 3. Sections (`##`), each building up in small steps:
    plain-English idea and a hook → `:::def` cards for key terms (exam-quality wording) → the rule in a
    `:::key` or `:::formula` box (these also build the formula sheets) → a figure where a picture helps →
-   `:::eg` worked examples, easy to exam level.
+   `:::eg` worked examples, easy to exam level, at least one in a real context. A `:::proof` (5–12 lines, a
+   reason on every line) sits next to a rule worth proving.
 4. `:::warn` for common mistakes and `:::exam` for exam technique, where they fit. `:::analogy` for abstract ideas.
-5. `:::board` (2–6 lines) when boards differ.
-6. `:::try`: practice from easy to exam style, each answer showing the key steps and the final answer.
-7. `:::quiz`: multiple-choice questions whose wrong options are real misconceptions.
-8. `:::recap`: the facts a student must remember. Then `:::links` (optional: verified online resources), then a
-   last line `Next: [Title](#id)`.
+5. `:::board` (2–6 lines) when boards differ. Never in the first person.
+6. **Spot the error**: `:::eg Spot the error`, a student's marked answer with one realistic slip; name the line,
+   the lost mark and the fix.
+7. `:::try`: practice from easy to exam style, each answer showing the key steps and the final answer. Then
+   `:::try Exam practice ★ to ★★★`: 6–8 original exam-style questions, `Q: [n marks] ★★ …` (★ one method,
+   ★★ two steps, ★★★ multi-part or synoptic, with 2–3 `H:` hints), answers marked line by line. Then
+   `:::try Stretch for A*`: 1–2 problems in an unfamiliar context, with hints and full solutions.
+8. `:::quiz`: multiple-choice questions whose wrong options are real misconceptions.
+9. `:::checklist What you can now do`: 5–10 `- [ ] I can …` lines, one per learning outcome in FACTS.md.
+10. `:::recap`: the facts a student must remember. Then `:::links` (optional: verified online resources), then a
+   last line `Next: [Title](#id)` to the next chapter in course.json order.
+
+Essay subjects (Business, Economics, the humanities) adapt 6–7: spot the weak paragraph, and model answers
+built up mark band by mark band instead of M/A/B lines.
 
 Coverage: everything the syllabus lists for the topic (FACTS.md has the learning outcomes), at full
 exam depth. A student who masters the chapter can answer real exam questions on it.
@@ -116,12 +127,25 @@ Marks: M = method, A = accuracy (depends on M), B = independent mark. Put each m
 (or right after the display maths) that earns it: in worked examples and answers the page moves marks into
 an examiner's margin level with that line, and the example's header shows the total. Tables: Markdown pipes, short cells.
 Bold a key word the first time if it has no `:::def` card.
+- Write marks as tokens: `[M1] [A1]` (or the shorthand `[M1 A1]`). Never a note inside the brackets
+  ("[M1 for two correct]") and never inside maths (`\(… [\text{M1}]\)`): those show as plain text. Put a note
+  after the marks in round brackets: `[M1] [A1] (M1 for any two correct)`.
+- `check` adds up the marks in every answer and worked example and fails when they differ from its `[n marks]`.
+- Spot-the-error marking: a wrong formula or method scores M0 (and so A0); a slip inside a right method keeps
+  the M1. Name each mark once, on the line that earns or loses it.
 
 ### Mock papers (`@level mock`)
 `@time` is the time allowed (`1 h 50 min`). Instructions go in a `:::exam` box, then **one `:::try` per question**
-(the page numbers them Question 1, 2, …), each `Q: [n marks] (#chapter-to-revise) …` and `A:` the full mark scheme.
-The page adds a clock, hides every answer until the reader presses Finish, then lets them enter their mark per
-question and lists the chapters to revise. The header shows the total marks: check it matches the real paper.
+(bare `:::try`, no title; the page numbers them Question 1, 2, …), each `Q: [n marks] (#chapter-to-revise) …` and
+`A:` the full mark scheme. Parts (a), (b), … need a blank line before them. The page adds a clock, hides every
+answer until the reader presses Finish, then lets them enter their mark per question and lists the chapters to
+revise. The header shows the total marks: it must match the real paper exactly.
+
+### Phones (375 px)
+`node kit/zta.js phone [id]` opens every chapter at phone width with all answers and hints open and lists
+anything wider than the screen. The page wraps a long inline chain after each relation (=, <, ≤, ⇒, ≈ …), but
+it cannot wrap a long sum with no relation in it, or a wide table cell: put those in `\[ … \]` (display
+maths scrolls on its own) or a `\[\begin{aligned} … \\ … \end{aligned}\]` with one step per row.
 
 ## Figures, cheapest first
 1. **Function graphs: `:::plot`.** The build draws it from one line of options; the title is the caption.
@@ -144,8 +168,10 @@ question and lists the chapters to revise. The header shows the total marks: che
    - Fills (every filled shape needs one): `f1`, `f2`, `f3`, `fm`, `fm2`, `fi`, `fa`, `fa2`, `fp`, `fr`, `fok`, `fh`.
      Outline plus fill: `<rect class="f1 s-acc sw2" …/>`.
    - Text: `tl`, `ts`, `tb`, `ti`, `tc`, `te`, `ta`, `ta2`, `tr`, `tp`, `halo`. Unicode maths in SVG text (x², θ, Δ, →).
+     Labels use `tl` (`ts` only for axis tick numbers), with `halo` where a label touches a line.
    - Arrowheads: `marker-end="url(#ah)"`, also `#ahm`, `#ahr`, `#ahok`, `#ah-<course>`, `#ah2-<course>`.
-   - viewBox about 560–680 wide so text stays readable on phones. Check coordinates with Python.
+   - viewBox about 560–680 wide so text stays readable on phones, cropped to the drawing plus about 15 px.
+     Check coordinates with Python.
    - `class="fig wide"` for wide multi-panel figures, `class="fig small"` for small ones.
 3. **Widgets** (interactive), inside `:::html`: `<div class="widget" data-w="NAME" data-…></div>`. The
    widgets this course has are in kit/WIDGETS.md and widgets.js. Text around a widget says what to try; the
@@ -165,11 +191,16 @@ question and lists the chapters to revise. The header shows the total marks: che
   print("ok")
   ```
   Use `fractions.Fraction` for exact answers, `statistics.NormalDist` for the normal distribution, `math.comb`
-  for binomial coefficients. Run Python as `py` (Windows); the kit sets UTF-8 output for you.
+  for binomial coefficients. Compute table values (critical values, percentage points) from exact inputs, never
+  from rounded ones. Run Python as `py` (Windows); the kit sets UTF-8 output for you.
+- Edit chapters only with the Write and Edit tools, never through a Python or shell script: heredocs eat
+  backslashes (`\tfrac` becomes a tab + "frac") and break the maths silently. Row breaks in `aligned` are `\\`.
 - Cambridge conventions: maths answers to 3 significant figures unless exact; angles to 1 d.p. The data
   values (g, physical constants, molar volume) for this course are in COURSE.md.
 - Exam facts (papers, durations, weightings, dates) only from FACTS.md. Never invent dates, fees or
-  paper details: if unsure, leave it out.
+  paper details: if unsure, leave it out. No claims about how often a topic comes up or how many marks it is
+  "worth" unless FACTS.md states them.
+- Refer to another chapter by its title, as a link: "as in [Further trigonometry](#math.p3.trig)".
 - Use the syllabus's own terms and definitions. If you are not sure of a fact, leave it out.
 - Original wording and original questions only. Never copy past papers, mark schemes or textbooks.
 

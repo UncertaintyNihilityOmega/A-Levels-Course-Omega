@@ -24,8 +24,9 @@ Organizer session instead, with STATUS.md and `node engine/status.js`.
 
 ## Assembly session (repeat whenever courses have progressed)
 1. `node engine/status.js` and `grep -n "\- \[ \]" courses/*/REQUESTS.md` (open requests).
-2. `node engine/check.js --py`, then `node engine/build.js --strict`. Fix engine problems; send course problems
-   back through that course's REVIEW.md (or REQUESTS.md answer).
+2. `node engine/check.js --py`, then `node engine/build.js --strict`, then `node courses/<c>/kit/zta.js phone`
+   for each course that changed (headless, 375 px, ~40 s for 60 chapters). Fix engine problems; send course
+   problems back through that course's REVIEW.md (or REQUESTS.md answer).
 3. Answer requests: engine changes go in `engine/`; re-run `node engine/sync.js` after any change to the
    engine, kit docs, templates or any course.json (LINKS.md lists every course's ids).
 4. Spot-check the site in the browser pane ("site" launch config): a new chapter per course, a widget, dark
@@ -55,5 +56,15 @@ Organizer session instead, with STATUS.md and `node engine/status.js`.
   `mock:<id>`), practice by paper with interleaving (DATA.papers). Courses may split widgets into
   `widgets/<name>.js` (util.courseWidgets). `kit/zta.js widget <name> --probe` uses headless Edge/Chrome
   (`--dump-dom`) and reads a JSON report the test page writes into `<pre id="zta-probe">`.
+- Course workflow (2026-10-13): STATUS.md is state, not a log: a `Last:` line plus one line per step
+  (`- LEAD: done`, `- P3: open|writing|written|reviewed`, `- FINAL: done`), written only by the kit
+  (`claim [Pn]`, `release Pn`, `done "<step>" "<summary>"`; logic in `engine/progress.js`, which status.js uses too).
+  Several Writers can work at once: each claims a package; at most `AHEAD` (4) packages past the last review.
+  LEAD plans packages of 2–3 chapters and writes `packages/Pn.md` notes, so a Writer reads COURSE.md + its own notes.
+- Marks and phones (2026-10-13): lib.js turns `[M1 A1]` shorthand into `[M1] [A1]` (`splitMarks`); lint.js fails a
+  try answer or `:::eg` whose marks differ from its `[n marks]`. Inline maths of 24+ characters is rendered as one
+  `<math>` per top-level relation joined by `<wbr>` (`splitRelations`), so chains wrap on phones. `kit phone`
+  builds preview/phone.html (all chapters inline) and measures it in a 375 px iframe (headless windows cannot be
+  narrower than ~480 px). The unary-sign rule no longer fires after a closing bracket or `!`.
 - Python: always `py` (the `python` command is the Windows Store alias), with PYTHONUTF8=1 (the console code
   page cannot print − or ²); `engine/util.js runPython` handles both.

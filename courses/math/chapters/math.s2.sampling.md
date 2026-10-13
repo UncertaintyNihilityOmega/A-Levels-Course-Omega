@@ -253,7 +253,7 @@ The interval is \(0.443 < p < 0.517\). It includes values both below and above 0
 \[30.5 \pm 1.96 \times 0.5786 = 30.5 \pm 1.13\] [M1]
 The interval is \(29.4 < \mu < 31.6\). [A1]
 
-(c) The value 30 is inside the interval, so the data are consistent with the claim \(\mu = 30\). [B1 B1: inside the interval, and "consistent", not "proves".]
+(c) The value 30 is inside the interval, so the data are consistent with the claim \(\mu = 30\). [B1] [B1] (one for "inside the interval", one for "consistent", not "proves")
 :::
 
 :::eg (Exam style) The mass of a certain type of biscuit has a population mean of 25 g and standard deviation 8 g, and a distribution that is not normal. A packet contains 64 biscuits, which you may treat as a random sample. Find the probability that the mean mass of the biscuits in a packet exceeds 26.5 g. Explain why you can use a normal distribution. [5 marks]

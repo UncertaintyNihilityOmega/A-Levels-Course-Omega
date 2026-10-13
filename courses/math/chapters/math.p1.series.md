@@ -308,7 +308,7 @@ A: The terms are \(2 + d\), \(2 + 4d\), \(2 + 13d\). [B1] \((2 + 4d)^2 = (2 + d)
 
 :::try Exam practice ★ to ★★★
 Q: [3 marks] ★ Find the first four terms in the expansion of \((1 + 2x)^5\) in ascending powers of \(x\).
-A: \((1 + 2x)^5 = 1 + \binom51(2x) + \binom52(2x)^2 + \binom53(2x)^3 + \cdots\) [M1] \(= 1 + 10x + 40x^2 + 80x^3 + \cdots\) [A1 A1]
+A: \[(1 + 2x)^5 = 1 + \binom51(2x) + \binom52(2x)^2 + \binom53(2x)^3 + \cdots\] [M1] \(= 1 + 10x + 40x^2 + 80x^3 + \cdots\) [A1 A1]
 Q: [3 marks] ★ The first three terms of an AP are 5, 9, 13. Find the 30th term and the sum of the first 30 terms.
 A: \(a = 5\), \(d = 4\), so \(u_{30} = 5 + 29 \times 4 = 121\). [B1] \(S_{30} = \tfrac{30}{2}(5 + 121)\) [M1] \(= 1890\). [A1]
 Q: [4 marks] ★★ A geometric progression has third term 12 and sixth term 96. Find the first term, the common ratio and the sum of the first 8 terms.

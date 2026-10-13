@@ -1,8 +1,13 @@
 // Zero to A* course kit. Bundled by engine/sync.js into courses/<c>/kit/zta.js (needs only Node, no installs).
 // Run from the course folder:
-//   node kit/zta.js status                 what to do next (LEAD / WRITE Pn / FIX / REVIEW / DONE)
+//   node kit/zta.js status                 what each role can do next (LEAD / WRITE Pn / FIX / REVIEW / DONE)
+//   node kit/zta.js claim [Pn]             a Writer takes a package (the first free one if none given)
+//   node kit/zta.js release Pn             give a claimed package back (the session stopped early)
+//   node kit/zta.js done "<step>" "<summary>"   record a finished session in STATUS.md (LEAD, WRITE Pn, FIX, REVIEW, REVIEW FINAL)
 //   node kit/zta.js check [id ...]         check chapters (all if none given): maths, blocks, links, figures,
 //                                          the STYLE checklist, and checks/<id>.py if it exists
+//   node kit/zta.js phone [id ...]         every chapter at phone width (375 px) with all answers open, headless:
+//                                          lists inline maths and anything else wider than the screen
 //   node kit/zta.js preview                build preview/index.html (this course only, final design)
 //   node kit/zta.js widget <name> ["attrs"] [--probe]   test page preview/widget.html for one widget;
 //                                          --probe also loads it headless (light, dark, phone) and reports problems
@@ -13,7 +18,7 @@ const path = require('path');
 const { buildSite, widgetNames } = require('../site');
 const { loadCourse, runPython, mathFontFace, writeSite } = require('../util');
 const { lintChapter, blocks, without } = require('../lint');
-const { courseProgress } = require('../progress');
+const { courseProgress, claim, release, done } = require('../progress');
 const { serve } = require('../serve');
 const ASSETS = require('zta:assets');
 const LINKS = require('zta:links');
@@ -43,9 +48,43 @@ function site(c, opts) {
 function status() {
   const c = course();
   const p = courseProgress(DIR, c.json);
-  console.log(`${c.title} (${c.id}) · chapters ${p.written}/${p.planned} · packages ${p.packagesDone}/${p.packages} · unreviewed ${p.unreviewed.length} · open fixes ${p.open}`);
+  console.log(`${c.title} (${c.id}) · chapters ${p.written}/${p.planned} · packages ${p.packagesDone}/${p.packages} written · unreviewed ${p.unreviewed.length} · being written ${p.writing.join(', ') || 'none'} · open fixes ${p.open}`);
+  if (p.last) console.log(`Last: ${p.last}`);
   for (const w of p.incomplete) console.log('  ! ' + w);
-  console.log(`NEXT: ${p.next}${p.why ? ' — ' + p.why : ''}`);
+  const show = (role, list) => { for (const s of list) console.log(`${role}: ${s.step}${s.why ? ' — ' + s.why : ''}`); };
+  show('Specialist', p.specialist);
+  show('Writer', p.writer);
+  if (p.writer.some(s => /^WRITE/.test(s.step))) console.log('A Writer starts with `node kit/zta.js claim` (takes the first free package; several Writers can work at once).');
+}
+
+function packageNotes(id) {
+  const f = path.join('packages', id + '.md');
+  return fs.existsSync(path.join(DIR, f)) ? f : `the ${id} notes in COURSE.md`;
+}
+function claimCmd(id) {
+  const c = course();
+  const r = claim(DIR, c.title, c.json, id);
+  if (!r.ok) { console.log(`✗ ${r.msg}`); process.exitCode = 1; return; }
+  const p = r.pkg;
+  console.log(`✓ ${r.msg}: ${p.title || ''}`);
+  console.log(`chapters: ${(p.chapters || []).join(', ')}${p.widgets && p.widgets.length ? `\nwidgets: ${p.widgets.join(', ')}` : ''}`);
+  if (p.notes) console.log(`notes: ${p.notes}`);
+  console.log(`read: COURSE.md, kit/STYLE.md, the gold chapter, and ${packageNotes(p.id)}`);
+  console.log(`when finished: node kit/zta.js done "WRITE ${p.id}" "<one-line summary>"`);
+}
+function releaseCmd(id) {
+  const c = course();
+  const r = release(DIR, c.title, c.json, id);
+  console.log(`${r.ok ? '✓' : '✗'} ${r.msg}`);
+  if (!r.ok) process.exitCode = 1;
+}
+function doneCmd(step, summary) {
+  const c = course();
+  if (!step || !summary) { console.log('usage: node kit/zta.js done "<LEAD | WRITE Pn | FIX | REVIEW | REVIEW FINAL>" "<one-line summary>"'); process.exitCode = 2; return; }
+  const r = done(DIR, c.title, c.json, step, summary);
+  if (!r.ok) { console.log(`✗ ${r.msg}`); process.exitCode = 1; return; }
+  console.log(`✓ ${r.msg}`);
+  status();
 }
 
 // ---------- check ----------
@@ -155,6 +194,68 @@ root.querySelectorAll('*').forEach(function(el){var r=el.getBoundingClientRect()
 root.querySelectorAll('canvas').forEach(function(cv){var x=cv.getContext('2d');if(!x||!cv.width||!cv.height)return;R.canvases++;var d=x.getImageData(0,0,cv.width,cv.height).data,any=false;for(var i=3;i<d.length;i+=4*97){if(d[i]){any=true;break;}}if(!any)R.blank++;});
 var pre=document.createElement('pre');pre.id='zta-probe';pre.textContent=JSON.stringify(R);document.body.appendChild(pre);},1500);}`;
 
+// ---------- phone width: every chapter at 375 px with all answers and hints open, measured headless ----------
+const PHONE_W = 375;
+const PHONE_JS = `if(/phone-probe/.test(location.search)){setTimeout(function(){
+var want=(new URLSearchParams(location.search).get('ids')||'').split(',').filter(Boolean);
+var all=[].slice.call(document.querySelectorAll('article.chapter[data-id]'));
+var W=document.documentElement.clientWidth,out=[];
+var scrolls=function(el){for(var p=el.parentElement;p;p=p.parentElement){var o=getComputedStyle(p).overflowX;if(o==='auto'||o==='scroll')return true;}return false;};
+var label=function(el){var t=(el.textContent||'').replace(/\\s+/g,' ').trim();return t.length>60?t.slice(0,57)+'…':t;};
+all.forEach(function(a){var id=a.getAttribute('data-id');if(id==='home'||(want.length&&want.indexOf(id)<0))return;
+all.forEach(function(x){x.hidden=x!==a;});a.querySelectorAll('details').forEach(function(d){d.open=true;});
+var R={id:id,width:document.documentElement.scrollWidth,inline:[],other:[]};
+a.querySelectorAll('.mi').forEach(function(m){var r=m.getBoundingClientRect();if(r.width&&r.right>W+1&&!scrolls(m)&&R.inline.length<12)R.inline.push([Math.round(r.right-W),label(m)]);});
+if(R.width>W+1)a.querySelectorAll('*').forEach(function(el){if(el.closest('.mi'))return;var r=el.getBoundingClientRect();if(!r.width||r.right<=W+1||scrolls(el))return;
+for(var c=el.firstElementChild;c;c=c.nextElementSibling){if(c.getBoundingClientRect().right>W+1)return;}
+if(R.other.length<6)R.other.push([Math.round(r.right-W),'<'+el.tagName.toLowerCase()+'> '+label(el)]);});
+out.push(R);});
+parent.postMessage(JSON.stringify({w:W,ch:out}),'*');},1500);}`;
+// the page runs in a phone-width frame (headless windows cannot be narrower than about 480 px)
+const PHONE_FRAME = (src) => `<!doctype html><meta charset="utf-8"><body style="margin:0"><iframe src="${src}" style="width:${PHONE_W}px;height:900px;border:0"></iframe>
+<script>addEventListener('message',function(e){var p=document.createElement('pre');p.id='zta-probe';p.textContent=e.data;document.body.appendChild(p);});</script>`;
+
+function phone(ids) {
+  const c = course();
+  const exe = findBrowser();
+  if (!exe) { console.log('phone: no Edge or Chrome found (set ZTA_BROWSER to a Chromium browser).'); process.exitCode = 1; return; }
+  const res = site(c, { inlineAll: true, fontFace: (chars) => mathFontFace(path.join(__dirname, 'math.otf'), chars) });
+  fs.mkdirSync(PREVIEW, { recursive: true });
+  fs.writeFileSync(path.join(PREVIEW, 'phone.html'), res.files['index.html'].replace('</body>', () => `<style>html{scrollbar-width:none}</style><script>${PHONE_JS}</script></body>`));
+  const want = ids.map(a => path.basename(a).replace(/\.md$/, ''));
+  fs.writeFileSync(path.join(PREVIEW, 'phone-frame.html'), PHONE_FRAME(`phone.html?phone-probe${want.length ? '&ids=' + encodeURIComponent(want.join(',')) : ''}`));
+  const R = headless('phone-frame.html', 800, 30000);
+  if (!R) { console.log('✗ phone: the page did not finish; open preview/phone.html in the browser pane instead'); process.exitCode = 1; return; }
+  let bad = 0;
+  for (const ch of R.ch) {
+    const n = ch.inline.length + ch.other.length;
+    if (!n && ch.width <= R.w + 1) continue;
+    bad++;
+    console.log(`✗ ${ch.id} · the page is ${ch.width} px wide in a ${R.w} px phone`);
+    for (const [px, t] of ch.inline) console.log(`   - inline maths ${px} px past the edge: ${t}`);
+    for (const [px, t] of ch.other) console.log(`   - ${px} px past the edge: ${t}`);
+  }
+  console.log(bad ? `phone: ${bad} of ${R.ch.length} chapter(s) too wide. Put long chains in \\[ … \\] (aligned for 3+ steps), then run phone again.`
+    : `phone: all ${R.ch.length} chapter(s) fit ${R.w} px with every answer open.`);
+  if (bad) process.exitCode = 1;
+}
+
+/** load preview/<page> headless at the given width and return the JSON it writes into <pre id="zta-probe"> */
+function headless(page, width, budget) {
+  const { spawnSync } = require('child_process');
+  const { pathToFileURL } = require('url');
+  const os = require('os');
+  const [file, query] = page.split('?');
+  const prof = fs.mkdtempSync(path.join(os.tmpdir(), 'zta-probe-'));
+  const r = spawnSync(findBrowser(), ['--headless=new', '--disable-gpu', '--no-first-run', '--no-default-browser-check', '--disable-extensions', `--user-data-dir=${prof}`,
+    `--window-size=${width},900`, `--virtual-time-budget=${budget}`, '--dump-dom', `${pathToFileURL(path.join(PREVIEW, file)).href}${query ? '?' + query : ''}`],
+  { encoding: 'utf8', timeout: 180000, maxBuffer: 256 * 1024 * 1024 });
+  try { fs.rmSync(prof, { recursive: true, force: true }); } catch (e) { /* the browser may still hold it */ }
+  const m = (r.stdout || '').match(/<pre id="zta-probe">([\s\S]*?)<\/pre>/);
+  if (!m) return null;
+  return JSON.parse(m[1].replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&'));
+}
+
 function findBrowser() {
   const pf = process.env['ProgramFiles'] || 'C:\\Program Files', pf86 = process.env['ProgramFiles(x86)'] || 'C:\\Program Files (x86)', la = process.env.LOCALAPPDATA || '';
   const list = [process.env.ZTA_BROWSER,
@@ -196,9 +297,13 @@ function runProbe(name) {
 
 switch (cmd) {
   case 'status': status(); break;
+  case 'claim': claimCmd(args[0]); break;
+  case 'release': releaseCmd(args[0]); break;
+  case 'done': doneCmd(args[0], args.slice(1).join(' ')); break;
   case 'check': check(args); break;
   case 'preview': preview(); break;
   case 'widget': widget(args[0], args.slice(1).filter(a => a !== '--probe').join(' '), args.includes('--probe')); break;
+  case 'phone': phone(args); break;
   case 'serve': fs.mkdirSync(PREVIEW, { recursive: true }); serve(PREVIEW, Number(args[0]) || port()); break;
-  default: console.log('commands: status | check [id ...] | preview | widget <name> ["attrs"] [--probe] | serve'); process.exitCode = cmd ? 2 : 0;
+  default: console.log('commands: status | claim [Pn] | release Pn | done "<step>" "<summary>" | check [id ...] | phone [id ...] | preview | widget <name> ["attrs"] [--probe] | serve'); process.exitCode = cmd ? 2 : 0;
 }

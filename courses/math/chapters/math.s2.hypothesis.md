@@ -236,7 +236,7 @@ The probability of a Type II error depends on how far the true value is from the
 (a) Let \(p\) be the probability that a parcel arrives late. \(H_0: p = 0.15\), \(H_1: p > 0.15\). [B1]
 Under \(H_0\), \(X \sim B(25, 0.15)\). [B1]
 \[P(X \ge 7) = 1 - P(X \le 6) = 0.0695\] [M1 A1]
-Since \(0.0695 > 0.05\), do not reject \(H_0\). There is insufficient evidence at the 5% level to suggest that the proportion of late parcels is more than 15%. [A1 for the comparison, B1 for the conclusion in context]
+Since \(0.0695 > 0.05\), do not reject \(H_0\). There is insufficient evidence at the 5% level to suggest that the proportion of late parcels is more than 15%. [A1] [B1] (A1 for the comparison, B1 for the conclusion in context)
 
 (b) \(P(X \ge 8) = 0.0255\) and \(P(X \ge 7) = 0.0695\). [M1] The critical region is \(X \ge 8\), and the actual significance level is \(2.55\%\). [A1]
 :::

@@ -334,7 +334,7 @@ A: (a) \(\displaystyle\int_1^3 12x^{-2}\,dx = \Big[-12x^{-1}\Big]_1^3 = -4 + 12 
 
 :::try Exam practice ★ to ★★★
 Q: [3 marks] ★ Find \(\displaystyle\int \left(4x^3 - \frac{3}{x^2} + 2\sqrt{x}\right)dx\).
-A: \(= x^4 - 3\left(\dfrac{x^{-1}}{-1}\right) + 2\left(\dfrac{x^{3/2}}{3/2}\right) + c\) [M1] \(= x^4 + \dfrac{3}{x} + \dfrac43 x^{3/2} + c\). [A1 A1 for the last two terms]
+A: \(= x^4 - 3\left(\dfrac{x^{-1}}{-1}\right) + 2\left(\dfrac{x^{3/2}}{3/2}\right) + c\) [M1] \(= x^4 + \dfrac{3}{x} + \dfrac43 x^{3/2} + c\). [A1] [A1] (one for each of the last two terms)
 Q: [3 marks] ★ Evaluate \(\displaystyle\int_1^4 (3\sqrt{x} - 2)\,dx\).
 A: \(\Big[2x^{3/2} - 2x\Big]_1^4\) [M1 A1] \(= (16 - 8) - (2 - 2) = 8\). [A1]
 Q: [5 marks] ★★ A curve has gradient \(\dfrac{dy}{dx} = \dfrac{8}{(2x + 1)^2}\) and passes through \((1, 3)\). Find the equation of the curve.

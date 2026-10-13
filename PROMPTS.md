@@ -29,6 +29,10 @@ For a review, use the Specialist prompt with REVIEW instead of LEAD:
 `<Course> Specialist: REVIEW session. Follow CLAUDE.md.`
 
 ## The cycle for one course
-LEAD (Specialist, once) → WRITE P1 → WRITE P2 → REVIEW → WRITE P3 (fixes first) → WRITE P4 → REVIEW → … →
-REVIEW FINAL. Not sure what is next? Any chat in the course folder can run `node kit/zta.js status`, and
-`node engine/status.js` at the root shows every course.
+LEAD (Specialist, once) → Writers claim packages (2–3 chapters each) → REVIEW when 2+ are written → FIX → … →
+REVIEW FINAL. Several Writer chats can run at the same time in the same course folder: each runs
+`node kit/zta.js claim` and gets a different package (up to 4 packages ahead of the last review). Use the same
+Writer prompt for each. Not sure what is next? Any chat in the course folder can run `node kit/zta.js status`,
+and `node engine/status.js` at the root shows every course.
+
+Start a fresh chat (or /clear) for every step: each message re-sends the whole chat, so long chats cost the most.

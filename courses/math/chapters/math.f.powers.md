@@ -227,7 +227,7 @@ A: \(3\text{ mm} = 3 \times 10^{-3}\) m. Number \(= \dfrac{3 \times 10^{-3}}{1.2
 Q: [2 marks] ★ Evaluate \(\left(\dfrac{27}{8}\right)^{-2/3}\).
 A: A negative index means the reciprocal, and \(\tfrac13\) means the cube root: \(\left(\dfrac{27}{8}\right)^{-2/3} = \left(\dfrac{8}{27}\right)^{2/3} = \left(\dfrac23\right)^2\). [M1] \(= \dfrac49\). [A1]
 Q: [3 marks] ★ Express \(\sqrt{75} + \sqrt{12} - \sqrt{27}\) in the form \(a\sqrt3\).
-A: \(\sqrt{75} = 5\sqrt3\), \(\sqrt{12} = 2\sqrt3\) and \(\sqrt{27} = 3\sqrt3\). [M1 for two correct, A1 for all three] So the sum is \(5\sqrt3 + 2\sqrt3 - 3\sqrt3 = 4\sqrt3\). [A1]
+A: \(\sqrt{75} = 5\sqrt3\), \(\sqrt{12} = 2\sqrt3\) and \(\sqrt{27} = 3\sqrt3\). [M1] [A1] (M1 for any two correct, A1 for all three) So the sum is \(5\sqrt3 + 2\sqrt3 - 3\sqrt3 = 4\sqrt3\). [A1]
 Q: [3 marks] ★★ Rationalise the denominator of \(\dfrac{6}{3 - \sqrt3}\), giving your answer in the form \(a + b\sqrt3\).
 A: Multiply top and bottom by the conjugate \(3 + \sqrt3\): \(\dfrac{6(3 + \sqrt3)}{(3 - \sqrt3)(3 + \sqrt3)}\). [M1] The denominator is \(9 - 3 = 6\). [A1] So the fraction is \(3 + \sqrt3\). [A1]
 Q: [3 marks] ★★ Solve \(4^{x+1} = 8^{x-1}\).

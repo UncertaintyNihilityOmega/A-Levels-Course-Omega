@@ -1,5 +1,9 @@
-# STATUS: Other Subjects (one line per session, newest last)
+# STATUS: Other Subjects
 
-Format: `- YYYY-MM-DD · STEP · what was done · next: …` where STEP is LEAD, WRITE Pn, FIX, REVIEW Pa–Pb or
-REVIEW FINAL. `node kit/zta.js status` reads these lines.
+Last: (nothing yet)
 
+## Steps
+The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
+- P1: open
+- P2: open
+- P3: open

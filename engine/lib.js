@@ -81,6 +81,41 @@ function fixTables(s) {
   return s.replace(/<(\/?)MTABLE/g, '<$1mtable').replace(/<(\/?)MTR>/g, '<$1mtr>').replace(/<MTD/g, '<mtd');
 }
 
+// "[M1 A1]" is written as shorthand for "[M1] [A1]"; the marks code only knows the separate form.
+const splitMarks = (s) => s.replace(/\[([MABCE]\d(?:[ ,]+[MABCE]\d)+)\]/g, (m, x) => x.split(/[ ,]+/).map(k => `[${k}]`).join(' '));
+
+// Split inline TeX after each relation at the top level (outside braces, brackets, \left…\right and environments).
+// Short formulas and anything with unbalanced brackets (e.g. the interval [0, 1)) stay whole.
+const RELATIONS = new Set(['le', 'leq', 'ge', 'geq', 'ne', 'neq', 'lt', 'gt', 'leqslant', 'geqslant', 'approx', 'equiv',
+  'Rightarrow', 'Leftarrow', 'Leftrightarrow', 'implies', 'iff', 'Longrightarrow', 'propto', 'cong']);
+const SPLIT_MIN = 24;
+function splitRelations(tex) {
+  if (tex.replace(/\s+/g, '').length < SPLIT_MIN) return [tex];
+  const cuts = [];
+  let depth = 0;
+  for (let i = 0; i < tex.length; i++) {
+    const c = tex[i];
+    if (c === '\\') {
+      const m = tex.slice(i + 1).match(/^[a-zA-Z]+|^./);
+      const name = m ? m[0] : '';
+      if (name === 'left' || name === 'begin') depth++;
+      else if (name === 'right' || name === 'end') depth--;
+      else if (depth === 0 && RELATIONS.has(name)) cuts.push(i + 1 + name.length);
+      i += name.length;
+    } else if ('{(['.includes(c)) depth++;
+    else if ('})]'.includes(c)) depth--;
+    else if (depth === 0 && '=<>'.includes(c)) cuts.push(i + 1);
+    if (depth < 0) return [tex];
+  }
+  if (depth !== 0 || !cuts.length) return [tex];
+  const parts = [];
+  let from = 0;
+  for (const at of cuts) { parts.push(tex.slice(from, at)); from = at; }
+  parts.push(tex.slice(from));
+  // never leave a piece that is only a relation or empty (e.g. "a = {}" at the end)
+  return parts.filter(p => p.trim()).length === parts.length ? parts : [tex];
+}
+
 function createRenderer(opts = {}) {
   const md = new MarkdownIt({ html: true, linkify: false, typographer: true, breaks: false });
   md.disable(['replacements']);
@@ -110,15 +145,24 @@ function createRenderer(opts = {}) {
     s = s.replace(/<mi mathvariant="double-struck">([A-Z])<\/mi>/g, (x, c) => `<mi mathvariant="normal">${DS[c] || c}</mi>`);
     s = s.replace(/<mo>\u2061<\/mo>(?!<mrow><mo[^>]*>[(\[|]|<mo[^>]*>[(\[|])/g, '<mo>\u2061</mo><mspace width="0.1667em"></mspace>');
     // unary minus/plus after an operator, an opening bracket or at the start: no extra spacing
-    s = s.replace(/(<mo[^>]*>[^<]*<\/mo>|<mrow>|<math[^>]*>|<mtd[^>]*>)<mo>([−+±∓])<\/mo>/g, '$1<mo lspace="0" rspace="0">$2</mo>');
+    // (not after a closing bracket or a factorial: "(x + 2) − 3" is a binary minus)
+    s = s.replace(/(<mo[^>]*>[^<)\]}⟩!]*<\/mo>|<mrow>|<math[^>]*>|<mtd[^>]*>)<mo>([−+±∓])<\/mo>/g, '$1<mo lspace="0" rspace="0">$2</mo>');
     s = fixTables(s);
     for (const tm of s.matchAll(/>([^<>]+)</g)) for (const ch of tm[1]) st.mathChars.add(ch);
     return display ? `<span class="mb">${s}</span>` : `<span class="mi">${s}</span>`;
   }
 
+  // A long inline chain is rendered as one piece per relation ("a =" "b =" "c"), with a break opportunity
+  // between pieces: browsers never wrap inside a <math>, so this is what lets it fit a phone.
+  function renderInline(tex) {
+    const parts = splitRelations(tex);
+    if (parts.length < 2) return renderMath(tex, false);
+    return parts.map((p, i) => renderMath(i < parts.length - 1 ? p + '{}' : p, false)).join('<wbr>');
+  }
+
   function extractMath(src) {
     src = src.replace(/\\\[([\s\S]+?)\\\]/g, (m, tex) => { st.MATH.push(renderMath(tex.trim(), true)); return `@@D${st.MATH.length - 1}@@`; });
-    src = src.replace(/\\\(([\s\S]+?)\\\)/g, (m, tex) => { st.MATH.push(renderMath(tex.trim(), false)); return `@@M${st.MATH.length - 1}@@`; });
+    src = src.replace(/\\\(([\s\S]+?)\\\)/g, (m, tex) => { st.MATH.push(renderInline(tex.trim())); return `@@M${st.MATH.length - 1}@@`; });
     if (/\\\(|\\\)|\\\[|\\\]/.test(src)) {
       const i = src.search(/\\\(|\\\)|\\\[|\\\]/);
       err(`unmatched math delimiter near: ${src.slice(Math.max(0, i - 40), i + 40).replace(/\n/g, ' ')}`);
@@ -393,7 +437,7 @@ function createRenderer(opts = {}) {
       if (/^# /m.test(body)) err('use ## for section headings (the chapter title is the only h1)');
       const dollar = body.match(/\$[a-zA-Z\\{^_]/);
       if (dollar && subjectId !== 'bus' && subjectId !== 'econ') warn('found "$" followed by a letter — math must use \\( \\) not $');
-      const html = finishChapterHtml(processBlocks(extractMath(body)), meta.chapter);
+      const html = finishChapterHtml(processBlocks(extractMath(splitMarks(body))), meta.chapter);
       if (meta.summary) inline(meta.summary);
       inline(meta.title || '');
       const words = stripTags(html).split(/\s+/).filter(Boolean).length;
@@ -407,4 +451,4 @@ function createRenderer(opts = {}) {
   return { st, renderFile, inline, extractMath, subMath, mdInline, escapeHtml, stripTags };
 }
 
-module.exports = { createRenderer, escapeHtml, stripTags, CALLOUTS, BLOCK_TYPES, LINK_KINDS };
+module.exports = { createRenderer, escapeHtml, stripTags, splitMarks, splitRelations, CALLOUTS, BLOCK_TYPES, LINK_KINDS };

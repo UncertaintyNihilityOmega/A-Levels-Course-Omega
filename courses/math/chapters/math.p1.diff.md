@@ -410,7 +410,7 @@ Adding the two equations: \(3a = 6\), so \(a = 2\) and \(b = 4\). [A1]
 
 :::try Exam practice ★ to ★★★
 Q: [3 marks] ★ Find \(\dfrac{dy}{dx}\) when \(y = 3x^4 - \dfrac{5}{x^2} + 6\sqrt{x}\).
-A: \(y = 3x^4 - 5x^{-2} + 6x^{1/2}\), so \(\dfrac{dy}{dx} = 12x^3 + 10x^{-3} + 3x^{-1/2}\), that is \(12x^3 + \dfrac{10}{x^3} + \dfrac{3}{\sqrt{x}}\). [B1 B1 B1, one for each term]
+A: \(y = 3x^4 - 5x^{-2} + 6x^{1/2}\), so \(\dfrac{dy}{dx} = 12x^3 + 10x^{-3} + 3x^{-1/2}\), that is \(12x^3 + \dfrac{10}{x^3} + \dfrac{3}{\sqrt{x}}\). [B1] [B1] [B1] (one for each term)
 Q: [3 marks] ★ \(f(x) = \sqrt{4x - 3}\). Find \(f'(3)\).
 A: \(f(x) = (4x - 3)^{1/2}\), so \(f'(x) = \tfrac12(4x - 3)^{-1/2} \times 4 = 2(4x - 3)^{-1/2}\). [M1 A1] \(f'(3) = 2 \times 9^{-1/2} = \tfrac23\). [A1]
 Q: [4 marks] ★★ \(f(x) = x^3 + 6x^2 + 15x - 4\). Show that \(f\) is an increasing function for all real \(x\).

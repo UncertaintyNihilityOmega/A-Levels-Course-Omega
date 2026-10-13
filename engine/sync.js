@@ -3,6 +3,7 @@
 //   - copies kit/STYLE.md, kit/WIDGETS.md, kit/EXAMPLE.md (the model chapter) and kit/math.otf
 //   - writes kit/LINKS.md (chapter ids of every other course) and CLAUDE.md (from engine/templates)
 //   - writes .claude/launch.json (the "preview" server) and creates missing STATUS/REVIEW/REQUESTS/widgets files
+//     (STATUS.md comes from progress.writeStatus: the kit keeps it up to date with claim/done)
 //   node engine/sync.js [course ...]
 'use strict';
 const fs = require('fs');
@@ -10,6 +11,7 @@ const path = require('path');
 const esbuild = require('esbuild');
 const { readJson, loadCore, courseWidgets } = require('./util');
 const { widgetNames } = require('./site');
+const { writeStatus } = require('./progress');
 
 const ROOT = path.join(__dirname, '..');
 const ENGINE = __dirname;
@@ -107,7 +109,8 @@ const writeIfMissing = (p, text) => { if (!fs.existsSync(p)) { fs.mkdirSync(path
       configurations: [{ name: 'preview', runtimeExecutable: 'node', runtimeArgs: ['kit/zta.js', 'serve', String(PORTS[c.id] || 5199)], port: PORTS[c.id] || 5199 }]
     }, null, 2) + '\n');
     for (const d of ['chapters', 'checks']) fs.mkdirSync(path.join(dir, d), { recursive: true });
-    for (const f of ['STATUS.md', 'REVIEW.md', 'REQUESTS.md', 'widgets.js']) {
+    if (!fs.existsSync(path.join(dir, 'STATUS.md'))) writeStatus(dir, c.title, c, { steps: {}, last: '' });
+    for (const f of ['REVIEW.md', 'REQUESTS.md', 'widgets.js']) {
       writeIfMissing(path.join(dir, f), fs.readFileSync(path.join(ENGINE, 'templates', f), 'utf8').replace(/\{\{TITLE\}\}/g, c.title).replace(/\{\{ID\}\}/g, c.id));
     }
     n++;

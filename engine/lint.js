@@ -1,6 +1,7 @@
 // lint.js — chapter structure checklist (STYLE.md) and figure rules. Returns { errors, notes }.
 // Errors break the page; notes are checklist items a reviewer will look at (fix them unless there is a reason).
 'use strict';
+const { splitMarks } = require('./lib');
 
 const TOPIC = new Set(['pre', 'as', 'a2', 'ext']);
 const ESSAY = new Set(['bus', 'econ', 'other']);
@@ -54,6 +55,20 @@ function lintChapter(ch, text, ctx = {}) {
     if (/\s(fill|stroke)="(#|rgb|red|blue|green|black|white)/i.test(svg) || /style="[^"]*(color|fill|stroke)\s*:/i.test(svg)) errors.push('SVG figures must use classes, never colours (fill/stroke/style)');
   }
   for (const w of ch.html.match(/<div class="widget"[^>]*>/g) || []) if (!/data-w="/.test(w)) errors.push('a widget div needs data-w="name"');
+
+  // marks: a "[n marks]" on a try question or a worked example must equal the [M1] [A1] [B1] … shown in its answer
+  const marked = splitMarks(text);
+  const sumMarks = (s) => [...s.matchAll(/\[(?:M|A|B|C|E)(\d)\]/g)].reduce((a, x) => a + +x[1], 0);
+  for (const b of blocks(marked, 'try')) for (const it of b.split(/\n(?=Q:)/)) {
+    const q = it.match(/^Q:\s*\[(\d+)(?:\s*marks?)?\]/) || it.match(/^Q:[^\n]*?\[(\d+) marks?\]\s*$/m);
+    const shown = sumMarks(it.split(/\nA:/)[1] || '');
+    if (q && shown && shown !== +q[1]) errors.push(`marks: a try question says [${q[1]} marks] but its answer shows ${shown} → "${it.slice(2, 60).replace(/\s+/g, ' ').trim()}"`);
+  }
+  for (const b of marked.matchAll(/^:::eg ([^\n]*)\n([\s\S]*?)\n:::\s*$/gm)) {
+    const q = b[1].match(/\[(\d+) marks?\]/);
+    const shown = sumMarks(b[2]);
+    if (q && shown !== +q[1]) errors.push(`marks: worked example "${b[1].slice(0, 50)}" says [${q[1]} marks] but shows ${shown}`);
+  }
 
   if (!m.summary) notes.push('add an @summary line');
   if (!m.level) notes.push('add an @level line');
