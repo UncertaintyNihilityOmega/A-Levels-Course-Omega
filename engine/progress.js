@@ -123,10 +123,15 @@ function done(dir, title, course, step, summary) {
     const miss = (pkg.chapters || []).filter(id => !fs.existsSync(path.join(dir, 'chapters', id + '.md')));
     if (miss.length) return { ok: false, msg: `${w[1]} still lacks ${miss.join(', ')}` };
     st.steps[w[1]] = { state: course.lead === false ? 'reviewed' : 'written', rest: date };
-  } else if (S === 'REVIEW') {
-    if (!p.unreviewed.length) return { ok: false, msg: 'no written package is waiting for review' };
-    label = `REVIEW ${p.unreviewed.join(', ')}`;
-    for (const id of p.unreviewed) st.steps[id] = { state: 'reviewed', rest: date };
+  } else if (/^REVIEW(\s+P\d+([\s,–-]+P\d+)*)?$/.test(S)) {
+    // "REVIEW P1, P2" marks just those (a package finished during the review stays unreviewed); bare "REVIEW" marks all
+    const named = S.match(/P\d+/g);
+    const list = named || p.unreviewed;
+    const bad = list.filter(id => !p.unreviewed.includes(id));
+    if (!list.length) return { ok: false, msg: 'no written package is waiting for review' };
+    if (bad.length) return { ok: false, msg: `${bad.join(', ')} not written or already reviewed (waiting: ${p.unreviewed.join(', ') || 'none'})` };
+    label = `REVIEW ${list.join(', ')}`;
+    for (const id of list) st.steps[id] = { state: 'reviewed', rest: date };
   } else if (S === 'REVIEW FINAL' || S === 'FINAL') {
     const notDone = (course.packages || []).filter(x => (st.steps[x.id] || {}).state !== 'reviewed').map(x => x.id);
     if (notDone.length) return { ok: false, msg: `not reviewed yet: ${notDone.join(', ')}` };

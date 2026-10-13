@@ -96,7 +96,8 @@ To look at pages: start the **preview** launch config in the browser pane (port 
    `- [ ] <id>: <exactly what to change>`.
 4. If tone, depth or structure is drifting, tighten the guidance in COURSE.md (or the notes of packages not
    written yet) for the next Writers.
-5. `node kit/zta.js done REVIEW "<n items in REVIEW.md; what you fixed>"`. Report in 3 lines.
+5. `node kit/zta.js done "REVIEW P1, P2" "<n items in REVIEW.md; what you fixed>"` naming the packages you reviewed
+   (a package finished during your review stays waiting). Report in 3 lines.
 REVIEW FINAL also checks that every chapter in course.json is written and passes `check` and `phone`, then runs
 `done "REVIEW FINAL" "<summary>"` and tells the user the course is ready for the Organizer.
 
