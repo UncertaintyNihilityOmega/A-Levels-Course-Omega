@@ -1,6 +1,7 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "site", "runtimeExecutable": "node", "runtimeArgs": ["engine/serve.js", "site", "5100"], "port": 5100 }
+    { "name": "site", "runtimeExecutable": "node", "runtimeArgs": ["engine/serve.js", "site", "5100"], "port": 5100 },
+    { "name": "phys-preview", "runtimeExecutable": "node", "runtimeArgs": ["courses/phys/kit/zta.js", "serve", "5102"], "port": 5102 }
   ]
 }

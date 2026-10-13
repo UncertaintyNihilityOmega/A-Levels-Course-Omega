@@ -8,175 +8,65 @@
   "desc": "From measurement to quantum physics and cosmology",
   "lead": true,
   "chapters": [
-    {
-      "id": "phys.overview",
-      "title": "Physics: the course map",
-      "level": "guide",
-      "group": "Start here"
-    },
-    {
-      "id": "phys.f.basics",
-      "title": "Physics from zero",
-      "level": "pre",
-      "group": "Start here"
-    },
-    {
-      "id": "phys.units",
-      "title": "Physical quantities, units and uncertainty",
-      "level": "as",
-      "group": "AS Level"
-    },
-    {
-      "id": "phys.kinematics",
-      "title": "Kinematics",
-      "level": "as",
-      "group": "AS Level"
-    },
-    {
-      "id": "phys.dynamics",
-      "title": "Dynamics and momentum",
-      "level": "as",
-      "group": "AS Level"
-    },
-    {
-      "id": "phys.forces",
-      "title": "Forces, density and pressure",
-      "level": "as",
-      "group": "AS Level"
-    },
-    {
-      "id": "phys.energy",
-      "title": "Work, energy and power",
-      "level": "as",
-      "group": "AS Level"
-    },
-    {
-      "id": "phys.solids",
-      "title": "Deformation of solids",
-      "level": "as",
-      "group": "AS Level"
-    },
-    {
-      "id": "phys.waves",
-      "title": "Waves",
-      "level": "as",
-      "group": "AS Level"
-    },
-    {
-      "id": "phys.superposition",
-      "title": "Superposition",
-      "level": "as",
-      "group": "AS Level"
-    },
-    {
-      "id": "phys.electricity",
-      "title": "Electricity",
-      "level": "as",
-      "group": "AS Level"
-    },
-    {
-      "id": "phys.dc",
-      "title": "D.C. circuits",
-      "level": "as",
-      "group": "AS Level"
-    },
-    {
-      "id": "phys.particles",
-      "title": "Particle physics",
-      "level": "as",
-      "group": "AS Level"
-    },
-    {
-      "id": "phys.circular",
-      "title": "Motion in a circle",
-      "level": "a2",
-      "group": "A Level (A2)"
-    },
-    {
-      "id": "phys.gravity",
-      "title": "Gravitational fields",
-      "level": "a2",
-      "group": "A Level (A2)"
-    },
-    {
-      "id": "phys.temperature",
-      "title": "Temperature and thermal physics",
-      "level": "a2",
-      "group": "A Level (A2)"
-    },
-    {
-      "id": "phys.gases",
-      "title": "Ideal gases",
-      "level": "a2",
-      "group": "A Level (A2)"
-    },
-    {
-      "id": "phys.thermo",
-      "title": "Thermodynamics",
-      "level": "a2",
-      "group": "A Level (A2)"
-    },
-    {
-      "id": "phys.oscillations",
-      "title": "Oscillations",
-      "level": "a2",
-      "group": "A Level (A2)"
-    },
-    {
-      "id": "phys.efields",
-      "title": "Electric fields",
-      "level": "a2",
-      "group": "A Level (A2)"
-    },
-    {
-      "id": "phys.capacitance",
-      "title": "Capacitance",
-      "level": "a2",
-      "group": "A Level (A2)"
-    },
-    {
-      "id": "phys.magnetic",
-      "title": "Magnetic fields and electromagnetic induction",
-      "level": "a2",
-      "group": "A Level (A2)"
-    },
-    {
-      "id": "phys.ac",
-      "title": "Alternating currents",
-      "level": "a2",
-      "group": "A Level (A2)"
-    },
-    {
-      "id": "phys.quantum",
-      "title": "Quantum physics",
-      "level": "a2",
-      "group": "A Level (A2)"
-    },
-    {
-      "id": "phys.nuclear",
-      "title": "Nuclear physics",
-      "level": "a2",
-      "group": "A Level (A2)"
-    },
-    {
-      "id": "phys.medical",
-      "title": "Medical physics",
-      "level": "a2",
-      "group": "A Level (A2)"
-    },
-    {
-      "id": "phys.astro",
-      "title": "Astronomy and cosmology",
-      "level": "a2",
-      "group": "A Level (A2)"
-    },
-    {
-      "id": "phys.practical",
-      "title": "Practical skills and data analysis",
-      "level": "guide",
-      "group": "Practical physics"
-    }
+    { "id": "phys.overview", "title": "Physics: the course map", "level": "guide", "group": "Start here" },
+    { "id": "phys.f.basics", "title": "Physics from zero", "level": "pre", "group": "Start here" },
+    { "id": "phys.units", "title": "Physical quantities, units and uncertainty", "level": "as", "group": "AS Level" },
+    { "id": "phys.kinematics", "title": "Kinematics", "level": "as", "group": "AS Level" },
+    { "id": "phys.dynamics", "title": "Dynamics and momentum", "level": "as", "group": "AS Level" },
+    { "id": "phys.forces", "title": "Forces, density and pressure", "level": "as", "group": "AS Level" },
+    { "id": "phys.energy", "title": "Work, energy and power", "level": "as", "group": "AS Level" },
+    { "id": "phys.solids", "title": "Deformation of solids", "level": "as", "group": "AS Level" },
+    { "id": "phys.waves", "title": "Waves", "level": "as", "group": "AS Level" },
+    { "id": "phys.superposition", "title": "Superposition", "level": "as", "group": "AS Level" },
+    { "id": "phys.electricity", "title": "Electricity", "level": "as", "group": "AS Level" },
+    { "id": "phys.dc", "title": "D.C. circuits", "level": "as", "group": "AS Level" },
+    { "id": "phys.particles", "title": "Particle physics", "level": "as", "group": "AS Level" },
+    { "id": "phys.circular", "title": "Motion in a circle", "level": "a2", "group": "A Level (A2)" },
+    { "id": "phys.gravity", "title": "Gravitational fields", "level": "a2", "group": "A Level (A2)" },
+    { "id": "phys.temperature", "title": "Temperature", "level": "a2", "group": "A Level (A2)" },
+    { "id": "phys.gases", "title": "Ideal gases", "level": "a2", "group": "A Level (A2)" },
+    { "id": "phys.thermo", "title": "Thermodynamics", "level": "a2", "group": "A Level (A2)" },
+    { "id": "phys.oscillations", "title": "Oscillations", "level": "a2", "group": "A Level (A2)" },
+    { "id": "phys.efields", "title": "Electric fields", "level": "a2", "group": "A Level (A2)" },
+    { "id": "phys.capacitance", "title": "Capacitance", "level": "a2", "group": "A Level (A2)" },
+    { "id": "phys.magnetic", "title": "Magnetic fields", "level": "a2", "group": "A Level (A2)" },
+    { "id": "phys.induction", "title": "Electromagnetic induction", "level": "a2", "group": "A Level (A2)" },
+    { "id": "phys.ac", "title": "Alternating currents", "level": "a2", "group": "A Level (A2)" },
+    { "id": "phys.quantum", "title": "Quantum physics", "level": "a2", "group": "A Level (A2)" },
+    { "id": "phys.nuclear", "title": "Nuclear physics", "level": "a2", "group": "A Level (A2)" },
+    { "id": "phys.medical", "title": "Medical physics", "level": "a2", "group": "A Level (A2)" },
+    { "id": "phys.astro", "title": "Astronomy and cosmology", "level": "a2", "group": "A Level (A2)" },
+    { "id": "phys.practical", "title": "Practical skills: measurement, tables, graphs and uncertainty", "level": "as", "group": "Practical physics" },
+    { "id": "phys.planning", "title": "Planning, analysis and evaluation", "level": "a2", "group": "Practical physics" },
+    { "id": "phys.exam.p1", "title": "Paper 1 survival guide: multiple choice", "level": "guide", "group": "Exam preparation" },
+    { "id": "phys.exam.p24", "title": "Papers 2 and 4 survival guide: structured questions", "level": "guide", "group": "Exam preparation" },
+    { "id": "phys.mixed.as", "title": "Mixed practice: AS Level", "level": "ref", "group": "Exam preparation" },
+    { "id": "phys.mixed.a2", "title": "Mixed practice: A Level", "level": "ref", "group": "Exam preparation" }
   ],
   "aliases": {},
-  "packages": []
+  "packages": [
+    { "id": "P1", "title": "Units and kinematics", "chapters": ["phys.units", "phys.kinematics"], "widgets": ["units"] },
+    { "id": "P2", "title": "Dynamics and forces", "chapters": ["phys.dynamics", "phys.forces"], "widgets": ["phys-collide"] },
+    { "id": "P3", "title": "Energy and solids", "chapters": ["phys.energy", "phys.solids"], "widgets": ["phys-stretch"] },
+    { "id": "P4", "title": "Waves and superposition", "chapters": ["phys.waves", "phys.superposition"], "widgets": ["phys-wave", "phys-fringes"] },
+    { "id": "P5", "title": "Electricity and particle physics", "chapters": ["phys.electricity", "phys.particles"], "widgets": ["phys-iv", "phys-quarks"] },
+    { "id": "P6", "title": "Circular motion and gravitation", "chapters": ["phys.circular", "phys.gravity"], "widgets": ["phys-orbit"] },
+    { "id": "P7", "title": "Thermal physics", "chapters": ["phys.temperature", "phys.gases", "phys.thermo"], "widgets": ["phys-gas"] },
+    { "id": "P8", "title": "Oscillations and electric fields", "chapters": ["phys.oscillations", "phys.efields"], "widgets": ["phys-shm"] },
+    { "id": "P9", "title": "Capacitance and magnetic fields", "chapters": ["phys.capacitance", "phys.magnetic"], "widgets": ["phys-rc"] },
+    { "id": "P10", "title": "Induction and alternating currents", "chapters": ["phys.induction", "phys.ac"], "widgets": ["phys-ac"] },
+    { "id": "P11", "title": "Quantum and nuclear physics", "chapters": ["phys.quantum", "phys.nuclear"], "widgets": ["phys-photo", "phys-halflife"] },
+    { "id": "P12", "title": "Medical physics and astronomy", "chapters": ["phys.medical", "phys.astro"], "widgets": ["phys-star"] },
+    { "id": "P13", "title": "Practical skills", "chapters": ["phys.practical", "phys.planning"], "widgets": ["phys-bestfit"] },
+    { "id": "P14", "title": "Course map and foundations", "chapters": ["phys.overview", "phys.f.basics"], "widgets": [] },
+    { "id": "P15", "title": "Exam guides", "chapters": ["phys.exam.p1", "phys.exam.p24"], "widgets": [] },
+    { "id": "P16", "title": "Mixed practice", "chapters": ["phys.mixed.as", "phys.mixed.a2"], "widgets": [] }
+  ],
+  "papers": [
+    { "id": "P1", "title": "Paper 1: Multiple choice (AS)", "chapters": ["phys.units", "phys.kinematics", "phys.dynamics", "phys.forces", "phys.energy", "phys.solids", "phys.waves", "phys.superposition", "phys.electricity", "phys.dc", "phys.particles"] },
+    { "id": "P2", "title": "Paper 2: AS Level structured questions", "chapters": ["phys.units", "phys.kinematics", "phys.dynamics", "phys.forces", "phys.energy", "phys.solids", "phys.waves", "phys.superposition", "phys.electricity", "phys.dc", "phys.particles"] },
+    { "id": "P3", "title": "Paper 3: Advanced practical skills", "chapters": ["phys.practical"] },
+    { "id": "P4", "title": "Paper 4: A Level structured questions", "chapters": ["phys.circular", "phys.gravity", "phys.temperature", "phys.gases", "phys.thermo", "phys.oscillations", "phys.efields", "phys.capacitance", "phys.magnetic", "phys.induction", "phys.ac", "phys.quantum", "phys.nuclear", "phys.medical", "phys.astro"] },
+    { "id": "P5", "title": "Paper 5: Planning, analysis and evaluation", "chapters": ["phys.planning"] }
+  ]
 }
