@@ -7,3 +7,7 @@ site/
 # synced copies of engine/kit-src (rebuild with: node engine/sync.js)
 courses/*/kit/
 courses/*/.claude/
+
+# Organizer-only local hooks (agent course guard)
+.claude/settings.local.json
+.claude/hooks/
