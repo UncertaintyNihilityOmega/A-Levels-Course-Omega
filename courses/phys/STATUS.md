@@ -1,14 +1,14 @@
 # STATUS: Physics
 
-Last: 2026-10-13 · WRITE P1 · phys.units (6957 words) and phys.kinematics (5756 words), both check ok and phone ok; widget units (convert/prefix/base tabs, probed light/dark/phone incl. bad attributes); embeds math widgets resultant, vt, projectile with no attributes. Figures (target panels, vector triangles, components, trolley v-t, g apparatus, projectile path) are hand SVGs checked only by coordinates and phone, not looked at in the browser. Computed values differ slightly from package suggestions: sprinter KE 3.5 kJ (v=10), g from data 9.79, Young modulus example uses its own numbers.
+Last: 2026-10-13 · WRITE P3 · phys.energy (4626 words) and phys.solids (4331 words), both check ok and phone ok; widget phys-stretch (probed clean for copper, steel, rubber, d=0, bad material, bad numbers; I did not view it in the browser pane as instructed, so the reviewer should look once). Notes: suggested values rounded to data s.f. (crate 831 J shown as 8.3e2 J, spring extension 0.123 m shown as 0.12 m); roller coaster, pendulum and slope examples use g=9.81; metal plastic strain range is shortened in the widget and noted in its w-note; rubber widget extension is shown in metres (qualitative).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
 - LEAD: done 2026-10-13
 - P1: written 2026-10-13
 - P2: written 2026-10-13
-- P3: writing 2026-10-13
-- P4: open
+- P3: written 2026-10-13
+- P4: writing 2026-10-13
 - P5: open
 - P6: open
 - P7: open
