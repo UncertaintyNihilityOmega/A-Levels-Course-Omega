@@ -115,4 +115,50 @@ assert -12 / 3 + 12 * 1 == 8
 # quiz
 assert 4 * 2 == 8 and F(1, 4) - F(1, 4) == 0 and 2 * F(1, 4) == F(1, 2)
 assert pint({2: 1, 0: -4}, -2, 2) == F(-32, 3) and pint({2: 1, 0: -4}, 0, 2) == F(-16, 3)
+def sf(x, n=3): return float(f'{x:.{n}g}')
+# v2: warm-up
+eq("w1", 3 * 2 ** 2 - 12 * 2, 0 + 3 * 4 - 24, 1e-9); eq("w3a", 4 - 10 + 6, 0); eq("w3b", 9 - 15 + 6, 0)
+
+# v2: proofs. Area function slope is f; discs approximate the volume
+def Afun(x): return simpson(lambda t: t * t + 1, 1, x, 4000)
+for x in (1.5, 2.2, 2.9):
+    h = 1e-4
+    eq("ftc slope", (Afun(x + h) - Afun(x - h)) / (2 * h), x * x + 1, 1e-5)
+for n in (10, 100, 1000):
+    w = 2 / n
+    disc = sum(pi * ((k + 0.5) * w) ** 4 * w for k in range(n))      # midpoint discs on y = x^2, 0..2
+    assert abs(disc - 32 * pi / 5) < 40 / n ** 2 + 1e-9, (n, disc)
+eq("discs exact", 32 * pi / 5, pi * 2 ** 5 / 5)
+
+# v2: spot the error: y = x + 1, 0..2, about the x-axis
+eq("spot bad", 14 * pi / 3, pi * (8 / 3 + 2)); eq("spot bad sf", sf(14 * pi / 3), 14.7)
+eq("spot good", simpson(lambda x: pi * (x + 1) ** 2, 0, 2), 26 * pi / 3, 1e-9); eq("spot sf", sf(26 * pi / 3), 27.2)
+eq("spot frustum", pi * 2 / 3 * (9 + 3 + 1), 26 * pi / 3); eq("spot frustum2", 1 / 3 * pi * 2 * (1 + 3 + 9), 26 * pi / 3)
+eq("spot (x+1)^2", (3 + 1) ** 2, 3 ** 2 + 2 * 3 + 1)
+
+# v2: exam practice
+F1 = lambda x: x ** 4 + 3 / x + 4 / 3 * x ** 1.5
+for x in (0.8, 1.7, 3.0): eq("x1 antiderivative", (F1(x + 1e-6) - F1(x - 1e-6)) / 2e-6, 4 * x ** 3 - 3 / x ** 2 + 2 * sqrt(x), 1e-4)
+eq("x2", simpson(lambda x: 3 * sqrt(x) - 2, 1, 4), 8, 1e-6); eq("x2 exact", (16 - 8) - (2 - 2), 8)
+Y3 = lambda x: 13 / 3 - 4 / (2 * x + 1)
+eq("x3 gradient", (Y3(1.3 + 1e-6) - Y3(1.3 - 1e-6)) / 2e-6, 8 / (2 * 1.3 + 1) ** 2, 1e-5); eq("x3 point", Y3(1), 3); eq("x3 c", 3 + 4 / 3, 13 / 3)
+eq("x4 area", -simpson(lambda x: x * x - 6 * x + 8, 2, 4), 4 / 3, 1e-9); eq("x4 roots", 2 * 2 - 12 + 8, 0); eq("x4 4", 16 - 24 + 8, 0)
+eq("x4 eval", (64 / 3 - 48 + 32) - (8 / 3 - 12 + 16), -4 / 3)
+eq("x5 roots", 4 * 4 - 3 * 4 - 4, 0); eq("x5 root2", 1 + 3 - 4, 0)
+eq("x5 area", simpson(lambda x: 3 * x + 4 - x * x, -1, 4), 125 / 6, 1e-9); eq("x5 eval", (24 + 16 - 64 / 3) - (3 / 2 - 4 + 1 / 3), 125 / 6)
+eq("x6", 0 - (-12 / 2), 6)
+eq("x7a", simpson(lambda x: pi * (2 * sqrt(x)) ** 2, 0, 4), 32 * pi, 1e-6); eq("x7a sf", sf(32 * pi), 101)
+eq("x7b", simpson(lambda y: pi * y, 0, 9), 81 * pi / 2, 1e-6); eq("x7b sf", sf(81 * pi / 2), 127)
+# x8
+Cc = lambda x: x ** 3 - 3 * x * x + 3
+eq("x8 point", Cc(2), -1); eq("x8 c", -1 - (8 - 12), 3); eq("x8 y0", Cc(0), 3); eq("x8 d2", 6 * 0 - 6, -6); eq("x8 y3", Cc(3), 3); eq("x8 y1", Cc(1), 1)
+eq("x8 area", simpson(lambda x: 3 - Cc(x), 0, 3), 27 / 4, 1e-9); eq("x8 eval", 27 - 81 / 4, 27 / 4)
+for x in (0.5, 1.2, 2.5): eq("x8 diff", 3 - Cc(x), 3 * x * x - x ** 3, 1e-12)
+# stretch
+eq("s1 vol", 9 * pi / 2, pi * (0 + 9 / 2)); eq("s1 sf", sf(9 * pi / 2), 14.1)
+for k in (6,):
+    eq("s2 area", simpson(lambda x: k * x - x * x, 0, k), 36, 1e-9); eq("s2 k3", k ** 3, 216); eq("s2 formula", k ** 3 / 6, 36)
+N = 40000
+eq("x6 improper", simpson(lambda x: 6 * x ** -1.5, 4, N, 400000), 12 / 2 - 12 / sqrt(N), 1e-4)
+eq("s1 area", simpson(lambda x: 3 * x ** -1.5, 1, N, 400000), 6 - 6 / sqrt(N), 1e-4)
 print("ok")

@@ -231,6 +231,20 @@ Check: \(\text{HCF} \times \text{LCM} = 6 \times 1260 = 7560 = 84 \times 90\). T
 
 The HCF simplifies fractions (\(\tfrac{84}{90} = \tfrac{14}{15}\)) and the LCM gives common denominators. It also solves timing problems: two lights that flash every 12 seconds and every 18 seconds flash together every \(\text{LCM}(12, 18) = 36\) seconds.
 
+:::eg Spot the error: a coat costs \(\pounds 60\). Its price rises by \(20\%\) and then falls by \(20\%\). Find the final price.
+The question is worth 3 marks. A student wrote this answer.
+
+Line 1: \(20\%\) of \(60 = 12\), so the price after the rise is \(60 + 12 = \pounds 72\)
+Line 2: \(20\%\) of \(60 = 12\), so the price after the fall is \(72 - 12 = \pounds 60\)
+Line 3: The coat is back to its original price, \(\pounds 60\).
+
+Line 1 is correct: the rise is found from the original price [B1]. **Line 2 is wrong.** The fall is \(20\%\) of the **new** price, \(\pounds 72\), not of the old price. Percentages always apply to the amount you start that step with. The student used the wrong base, which is a wrong method, so no method mark [M0] and no accuracy mark [A0]. The student scores 1 out of 3.
+
+Correct working: the fall is \(0.2 \times 72 = 14.40\), so the final price is \(72 - 14.40\) [M1] \(= \pounds 57.60\). [A1]
+
+Check with multipliers: \(60 \times 1.2 \times 0.8 = 60 \times 0.96 = 57.60\). A rise and a fall of the same percentage never cancel: the overall change here is a \(4\%\) fall.
+:::
+
 :::try Start easy, finish at exam standard
 Q: Work out \(8 - 2 \times (5 - 9)^2 + 12 \div 4\).
 A: Brackets: \(5 - 9 = -4\). Indices: \((-4)^2 = 16\). Multiplication and division: \(2 \times 16 = 32\) and \(12 \div 4 = 3\). So \(8 - 32 + 3 = -21\).
@@ -261,6 +275,38 @@ A: (a) \(72 = 2^3 \times 3^2\) and \(108 = 2^2 \times 3^3\). HCF \(= 2^2 \times 
 (b) The common denominator is the LCM, 216: \(\dfrac{17}{72} = \dfrac{51}{216}\) and \(\dfrac{11}{108} = \dfrac{22}{216}\). [M1] The sum is \(\dfrac{73}{216}\). [A1]
 :::
 
+:::try Exam practice ★ to ★★★
+Q: [2 marks] ★ Work out \(3 - 4 \times (-2)^2\).
+A: Brackets and powers first: \((-2)^2 = 4\). [M1] Then multiply before subtracting: \(3 - 16 = -13\). [A1]
+Q: [3 marks] ★ Work out \(2\tfrac13 + 1\tfrac34\), giving your answer as a mixed number.
+A: As improper fractions, \(\dfrac73 + \dfrac74\). [M1] With the common denominator 12: \(\dfrac{28}{12} + \dfrac{21}{12} = \dfrac{49}{12}\). [A1] As a mixed number, \(4\tfrac{1}{12}\). [A1]
+Q: [3 marks] ★ Write the recurring decimal \(0.\dot{4}\dot{5}\) (that is, \(0.454545\ldots\)) as a fraction in its lowest terms.
+A: Let \(x = 0.454545\ldots\). Then \(100x = 45.4545\ldots\), and subtracting gives \(99x = 45\). [M1 A1] So \(x = \dfrac{45}{99} = \dfrac{5}{11}\). [A1]
+Q: [3 marks] ★★ (a) By rounding each number to 1 significant figure, estimate \(\dfrac{4.87 \times 31.2}{0.52}\). (b) Use your calculator to decide whether your estimate is larger or smaller than the exact value.
+A: (a) \(\dfrac{5 \times 30}{0.5}\) [M1] \(= 300\). [A1] (b) The exact value is \(292.2\), so the estimate is slightly larger. [B1]
+Q: [5 marks] ★★ In a sale, all prices are reduced by \(15\%\). (a) A jacket costs \(\pounds 76.50\) in the sale. Find its original price. (b) After the sale, the sale prices are increased by \(15\%\). Find the new price of the jacket as a percentage of the original price, and state the overall percentage change.
+A: (a) The sale price is \(85\%\) of the original, so divide by \(0.85\). [M1] \(76.50 \div 0.85 = \pounds 90\). [A1] (b) The overall multiplier is \(0.85 \times 1.15\) [M1] \(= 0.9775\), which is \(97.75\%\) of the original price. [A1] That is a decrease of \(2.25\%\). [B1]
+Q: [4 marks] ★★ Ana, Ben and Cai share \(\pounds 1260\) in the ratio \(2 : 3 : 4\). Ben then gives \(\tfrac14\) of his share to Ana. Write Ana's new amount as a fraction of the total, in its lowest terms.
+A: There are \(2 + 3 + 4 = 9\) parts, so one part is \(1260 \div 9 = \pounds 140\). [M1] Ana has \(\pounds 280\) and Ben has \(\pounds 420\). [A1] Ben gives \(\tfrac14 \times 420 = \pounds 105\), so Ana has \(280 + 105 = \pounds 385\). [M1] The fraction is \(\dfrac{385}{1260} = \dfrac{11}{36}\). [A1]
+Q: [3 marks] ★★ Find the highest common factor and the lowest common multiple of \(84\) and \(126\).
+A: \(84 = 2^2 \times 3 \times 7\) and \(126 = 2 \times 3^2 \times 7\). [M1] HCF \(= 2 \times 3 \times 7 = 42\) (lowest power of each). [A1] LCM \(= 2^2 \times 3^2 \times 7 = 252\) (highest power of each). [A1] Check: \(42 \times 252 = 10\,584 = 84 \times 126\).
+Q: [5 marks] ★★★ \(\pounds 2000\) is invested at \(3\%\) compound interest per year, so each year's interest is added to the amount. (a) Find the value after \(5\) years, to the nearest penny. (b) Find the smallest whole number of years after which the value is more than \(\pounds 2500\).
+H: Each year the amount is multiplied by \(1.03\). After 5 years it is multiplied by \(1.03\) five times.
+H: For (b), try different numbers of years on your calculator until you cross \(2500\).
+A: (a) The multiplier is \(1.03\). [B1] Value \(= 2000 \times 1.03^5\) [M1] \(= \pounds 2318.55\). [A1] (b) After 7 years the value is \(2000 \times 1.03^7 = \pounds 2459.75\), which is less than \(2500\). [M1] After 8 years it is \(2000 \times 1.03^8 = \pounds 2533.54\), which is more. So the smallest number of years is \(8\). [A1]
+:::
+
+:::try Stretch for A*
+Q: [5 marks] ★★★ A clock chimes every \(18\) minutes, a bell rings every \(24\) minutes and a light flashes every \(30\) minutes. All three happen together at noon. (a) After how many minutes do all three next happen together? (b) How many times in total, counting noon today and noon tomorrow, do all three happen together between noon today and noon tomorrow?
+H: You are looking for the lowest common multiple of the three times. Use prime factors.
+H: Change the answer to (a) into hours, then count the times at that spacing in 24 hours.
+A: (a) \(18 = 2 \times 3^2\), \(24 = 2^3 \times 3\) and \(30 = 2 \times 3 \times 5\). [M1] The LCM takes the highest power of each prime: \(2^3 \times 3^2 \times 5 = 360\) minutes. [A1] That is \(6\) hours, so the next time is 18:00. [A1] (b) The times are 12:00, 18:00, 00:00, 06:00 and 12:00 the next day. [M1] That is \(5\) times. [A1]
+Q: [4 marks] ★★★ Two numbers are in the ratio \(5 : 3\). When \(6\) is added to each, the new numbers are in the ratio \(7 : 5\). Find the original numbers.
+H: Call the numbers \(5k\) and \(3k\).
+H: Ratios are fractions. Write \(\dfrac{5k + 6}{3k + 6} = \dfrac75\) and multiply across.
+A: Let the numbers be \(5k\) and \(3k\). [M1] Then \(5(5k + 6) = 7(3k + 6)\), so \(25k + 30 = 21k + 42\). [M1] So \(4k = 12\) and \(k = 3\). [A1] The numbers are \(15\) and \(9\). [A1] Check: \(21 : 15 = 7 : 5\). ✓
+:::
+
 :::quiz
 ? Which of these numbers is irrational?
 - \(\dfrac{22}{7}\)
@@ -286,6 +332,21 @@ A: (a) \(72 = 2^3 \times 3^2\) and \(108 = 2^2 \times 3^3\). HCF \(= 2^2 \times 
 + \(0.00707\)
 - \(0.01\)
 > The first significant figure is the 7 after the leading zeros. Three significant figures are \(7, 0, 6\), and the next digit is 8, so the 6 rounds up to 7, giving \(0.00707\).
+? After a \(20\%\) increase, a price is \(\pounds 90\). What was the price before the increase?
+- \(\pounds 72\)
++ \(\pounds 75\)
+- \(\pounds 108\)
+- \(\pounds 70\)
+> The new price is \(120\%\) of the old one, so divide: \(90 \div 1.2 = 75\). Taking \(20\%\) of \(90\) and subtracting gives \(72\), which finds \(20\%\) of the wrong amount. Multiplying by \(1.2\) gives \(108\), and subtracting \(20\) gives \(70\); both ignore that the percentage is of the original price.
+:::
+
+:::checklist What you can now do
+- [ ] I can calculate with negative numbers, fractions and mixed numbers, using the correct order of operations.
+- [ ] I can change between fractions, decimals and percentages, including recurring decimals.
+- [ ] I can use multipliers for percentage increase and decrease, including reverse percentages and repeated change.
+- [ ] I can divide an amount in a given ratio and solve simple proportion problems.
+- [ ] I can round to a given number of decimal places or significant figures, and estimate an answer.
+- [ ] I can find the HCF and LCM of numbers using prime factors.
 :::
 
 :::recap

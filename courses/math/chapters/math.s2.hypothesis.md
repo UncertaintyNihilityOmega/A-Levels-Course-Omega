@@ -11,6 +11,15 @@ Is a coin fair? Has a new fertiliser improved the yield? Is the factory still fi
 
 **Before you start**, you need the binomial distribution from [Discrete random variables](#math.s1.drv), the normal approximation from [The normal distribution](#math.s1.normal), the Poisson distribution from [The Poisson distribution](#math.s2.poisson), and the distribution of the sample mean from [Sampling and estimation](#math.s2.sampling).
 
+:::try Warm-up
+Q: \(X \sim B(15, 0.4)\). Find \(P(X \le 4)\). (from [Discrete random variables](#math.s1.drv))
+A: Add the five terms, or use the calculator's binomial function: \(P(X \le 4) = 0.217\).
+Q: \(X \sim \mathrm{Po}(2.5)\). Find \(P(X \ge 4)\). (from [The Poisson distribution](#math.s2.poisson))
+A: "At least 4" is the complement of "at most 3": \(P(X \ge 4) = 1 - P(X \le 3)\) \(= 1 - 0.7576 = 0.242\).
+Q: \(X \sim N(50, 8^2)\). Find the probability that the mean of a random sample of 16 observations is greater than 52. (from [Sampling and estimation](#math.s2.sampling))
+A: \(\bar X \sim N\!\left(50, \dfrac{8^2}{16}\right)\) \(= N(50, 2^2)\), so \(P(\bar X > 52) = P(Z > 1)\) \(= 0.159\).
+:::
+
 ## The idea of a hypothesis test
 
 :::analogy A trial
@@ -75,7 +84,7 @@ A critical region is found before you collect the data. You choose the values in
 :::eg \(X \sim B(20, 0.3)\) under \(H_0: p = 0.3\). Find the critical region for a 5% one-tailed test with (a) \(H_1: p < 0.3\) and (b) \(H_1: p > 0.3\), and state the actual significance level of each.
 (a) \(P(X \le 2) = 0.0355\) and \(P(X \le 3) = 0.1071\). The second is above 5%, so the critical region is \(X \le 2\). The actual significance level is \(3.55\%\).
 
-(b) \(P(X \ge 10) = 1 - P(X \le 9) = 0.0480\) and \(P(X \ge 9) = 0.1133\). The critical region is \(X \ge 10\). The actual significance level is \(4.80\%\).
+(b) \(P(X \ge 10) = 1 - P(X \le 9)\) \(= 0.0480\) and \(P(X \ge 9) = 0.1133\). The critical region is \(X \ge 10\). The actual significance level is \(4.80\%\).
 :::
 
 The **actual significance level** is the probability of being in the critical region when \(H_0\) is true. It is below the nominal 5% because a discrete variable cannot hit 5% exactly.
@@ -152,7 +161,7 @@ so you standardise with \(z = \dfrac{\bar x - \mu_0}{\sigma/\sqrt{n}}\) and use 
 
 :::eg Bags of flour are supposed to have mean mass 500 g, with standard deviation 12 g. A random sample of 36 bags has mean mass 496.5 g. Test at the 5% level whether the mean mass is lower than 500 g.
 Let \(\mu\) be the mean mass of a bag. \(H_0: \mu = 500\), \(H_1: \mu < 500\). Assume the standard deviation is still 12 g.
-Under \(H_0\), \(\bar X \sim N\!\left(500, \dfrac{12^2}{36}\right) = N(500, 2^2)\).
+Under \(H_0\), \(\bar X \sim N\!\left(500, \dfrac{12^2}{36}\right)\) \(= N(500, 2^2)\).
 \[P(\bar X < 496.5) = P\!\left(Z < \frac{496.5 - 500}{2}\right) = P(Z < -1.75) = 0.0401\]
 Since \(0.0401 < 0.05\), reject \(H_0\). There is sufficient evidence at the 5% level to suggest that the mean mass is below 500 g.
 :::
@@ -205,7 +214,7 @@ A **Type I error** is rejecting \(H_0\) when it is true. A **Type II error** is 
 :::
 
 :::eg In the component test (\(X \sim B(20, p)\), \(H_0: p = 0.3\), \(H_1: p < 0.3\), critical region \(X \le 2\)), find the probability of a Type I error, and the probability of a Type II error when in fact \(p = 0.1\).
-Type I: \(P(X \le 2 \mid p = 0.3) = 0.0355\).
+Type I: \(P(X \le 2 \mid p = 0.3)\) \(= 0.0355\).
 
 Type II: the test does not reject when \(X \ge 3\). If \(p = 0.1\), \(X \sim B(20, 0.1)\):
 \[P(X \ge 3) = 1 - P(X \le 2) = 1 - 0.6769 = 0.323\]
@@ -213,7 +222,7 @@ So there is a 32.3% chance that the test fails to detect the improvement.
 :::
 
 :::eg In the flour test (\(\bar X \sim N(500, 2^2)\) under \(H_0: \mu = 500\), \(H_1: \mu < 500\), 5% level), find the critical region for \(\bar X\) and the probability of a Type II error if the true mean is 495 g.
-Critical region: \(\bar x < 500 - 1.645 \times 2 = 496.71\). Type I probability is 5%.
+Critical region: \(\bar x < 500 - 1.645 \times 2\) \(= 496.71\). Type I probability is 5%.
 
 If \(\mu = 495\), \(\bar X \sim N(495, 2^2)\). A Type II error occurs when \(\bar X \ge 496.71\):
 \[P(\bar X \ge 496.71) = P\!\left(Z \ge \frac{496.71 - 495}{2}\right) = P(Z \ge 0.855) = 1 - 0.8037 = 0.196\]
@@ -243,12 +252,12 @@ Since \(0.0296 < 0.05\), reject \(H_0\): there is sufficient evidence at the 5% 
 \[P(X \ge 3) = 1 - P(X \le 2) = 1 - 0.2381 = 0.762\] [M1 A1]
 :::
 
-:::eg (Exam style) A machine fills tins with mean mass 400 g and standard deviation 5 g. A sample of 16 tins has mean mass 402.6 g. (a) Test at the 5% significance level whether the mean has changed. (b) Find the critical region and the probability of a Type II error if the true mean is 403 g. [9 marks]
+:::eg (Exam style) A machine fills tins with mean mass 400 g and standard deviation 5 g. A sample of 16 tins has mean mass 402.6 g. (a) Test at the 5% significance level whether the mean has changed. (b) Find the critical region and the probability of a Type II error if the true mean is 403 g. [10 marks]
 (a) \(H_0: \mu = 400\), \(H_1: \mu \ne 400\) [B1]. Under \(H_0\), \(\bar X \sim N\!\left(400, \dfrac{25}{16}\right)\), standard deviation \(1.25\). [B1]
 \[z = \frac{402.6 - 400}{1.25} = 2.08 \qquad P(Z > 2.08) = 0.0188\] [M1 A1]
 Since \(0.0188 < 0.025\) (two-tailed), reject \(H_0\). There is sufficient evidence at the 5% level to suggest that the mean mass of the tins has changed. [A1 B1]
 
-(b) Critical values: \(400 \pm 1.96 \times 1.25 = 400 \pm 2.45\). The critical region is \(\bar X < 397.55\) or \(\bar X > 402.45\). [M1 A1]
+(b) Critical values: \(400 \pm 1.96 \times 1.25\) \(= 400 \pm 2.45\). The critical region is \(\bar X < 397.55\) or \(\bar X > 402.45\). [M1 A1]
 If \(\mu = 403\), \(\bar X \sim N(403, 1.25^2)\), and a Type II error occurs for \(397.55 \le \bar X \le 402.45\):
 \[P = \Phi\!\left(\frac{402.45 - 403}{1.25}\right) - \Phi\!\left(\frac{397.55 - 403}{1.25}\right) = \Phi(-0.44) - \Phi(-4.36) = 0.330\] [M1 A1]
 :::
@@ -272,13 +281,13 @@ A: (a) \(H_0: p = 0.5\), \(H_1: p \ne 0.5\) (two-tailed). (b) \(H_0: p = 0.25\),
 Q: \(X \sim B(12, 0.5)\) under \(H_0: p = 0.5\), \(H_1: p > 0.5\). Observed \(X = 10\). Test at the 5% level.
 A: \(P(X \ge 10) = 0.0193\). This is less than 0.05, so reject \(H_0\). There is sufficient evidence at the 5% level to suggest \(p > 0.5\).
 Q: A die is rolled 30 times and shows a six 9 times. Test at the 10% level whether the probability of a six is greater than \(\tfrac16\).
-A: \(H_0: p = \tfrac16\), \(H_1: p > \tfrac16\), \(X \sim B(30, \tfrac16)\). \(P(X \ge 9) = 1 - P(X \le 8) = 0.0506\). Since \(0.0506 < 0.10\), reject \(H_0\). There is sufficient evidence at the 10% level to suggest the die is biased towards sixes.
+A: \(H_0: p = \tfrac16\), \(H_1: p > \tfrac16\), \(X \sim B(30, \tfrac16)\). \(P(X \ge 9) = 1 - P(X \le 8)\) \(= 0.0506\). Since \(0.0506 < 0.10\), reject \(H_0\). There is sufficient evidence at the 10% level to suggest the die is biased towards sixes.
 Q: \(X \sim B(25, 0.4)\) under \(H_0: p = 0.4\). Find the critical region for a 5% one-tailed test with \(H_1: p < 0.4\), and the actual significance level.
 A: \(P(X \le 5) = 0.0294\) and \(P(X \le 6) = 0.0736\). The critical region is \(X \le 5\), with actual significance level 2.94%.
 Q: A factory says that 8% of its bulbs are faulty. A random sample of 30 bulbs contains 5 faulty. Test at the 5% level whether the proportion is higher.
 A: \(H_0: p = 0.08\), \(H_1: p > 0.08\), \(X \sim B(30, 0.08)\). \(P(X \ge 5) = 0.0874\). This is greater than 0.05, so do not reject \(H_0\). There is insufficient evidence at the 5% level that the proportion of faulty bulbs is higher than 8%.
 Q: Emails arrive at a mean rate of 3 per hour. In a random hour 8 emails arrive. Test at the 5% level whether the rate has increased.
-A: \(H_0: \lambda = 3\), \(H_1: \lambda > 3\), \(X \sim \mathrm{Po}(3)\). \(P(X \ge 8) = 1 - P(X \le 7) = 0.0119\). This is less than 0.05, so reject \(H_0\): sufficient evidence to suggest the rate has increased.
+A: \(H_0: \lambda = 3\), \(H_1: \lambda > 3\), \(X \sim \mathrm{Po}(3)\). \(P(X \ge 8) = 1 - P(X \le 7)\) \(= 0.0119\). This is less than 0.05, so reject \(H_0\): sufficient evidence to suggest the rate has increased.
 Q: A coin is tossed 80 times and lands heads 50 times. Use a normal approximation to test at the 5% level whether the coin is biased towards heads.
 A: \(H_0: p = 0.5\), \(H_1: p > 0.5\). \(X \approx N(40, 20)\). \(P(X \ge 50) \approx P(Y > 49.5)\), \(z = \dfrac{9.5}{\sqrt{20}} = 2.124\), probability 0.0168. This is less than 0.05, so reject \(H_0\): sufficient evidence of a bias towards heads.
 Q: The mass of a sack is normal with standard deviation 2.4 kg. The claimed mean is 25 kg. A sample of 9 sacks has mean 23.9 kg. Test at the 5% level whether the mean is lower than claimed.
@@ -286,9 +295,54 @@ A: \(H_0: \mu = 25\), \(H_1: \mu < 25\). \(\bar X \sim N(25, 0.8^2)\). \(z = \df
 Q: Explain, in context, what a Type I error and a Type II error mean for a test of whether a new medicine is better than the old one.
 A: Type I: concluding that the new medicine is better when it is not (rejecting a true \(H_0\)). Type II: concluding there is not enough evidence that it is better when it really is (failing to reject a false \(H_0\)).
 Q: (Exam style) The proportion of seeds that germinate is claimed to be 0.7. A gardener plants 10 seeds and 4 germinate. (a) Test at the 5% level whether the proportion is less than claimed. (b) Find the critical region and the probability of a Type II error if the true proportion is 0.5. [8 marks]
-A: (a) \(H_0: p = 0.7\), \(H_1: p < 0.7\), \(X \sim B(10, 0.7)\) [B1 B1]. \(P(X \le 4) = 0.0473\) [M1 A1]. Since \(0.0473 < 0.05\), reject \(H_0\): sufficient evidence at the 5% level to suggest the proportion that germinate is less than 0.7. [A1] (b) \(P(X \le 3) = 0.0106\) and \(P(X \le 4) = 0.0473\), so the critical region is \(X \le 4\). [M1 A1] If \(p = 0.5\), \(X \sim B(10, 0.5)\), and a Type II error occurs for \(X \ge 5\): \(P(X \ge 5) = 1 - P(X \le 4) = 1 - 0.377 = 0.623\). [A1]
+A: (a) \(H_0: p = 0.7\), \(H_1: p < 0.7\), \(X \sim B(10, 0.7)\) [B1 B1]. \(P(X \le 4) = 0.0473\) [M1 A1]. Since \(0.0473 < 0.05\), reject \(H_0\): sufficient evidence at the 5% level to suggest the proportion that germinate is less than 0.7. [A1] (b) \(P(X \le 3) = 0.0106\) and \(P(X \le 4) = 0.0473\), so the critical region is \(X \le 4\). [M1 A1] If \(p = 0.5\), \(X \sim B(10, 0.5)\), and a Type II error occurs for \(X \ge 5\): \(P(X \ge 5) = 1 - P(X \le 4)\) \(= 1 - 0.377 = 0.623\). [A1]
 Q: (Exam style) A sample of 100 values from a population with standard deviation 15 has mean 53.5. Test at the 1% significance level whether the population mean is greater than 50, and state what a Type I error would mean here. [6 marks]
 A: \(H_0: \mu = 50\), \(H_1: \mu > 50\) [B1]. \(\bar X \sim N(50, 1.5^2)\) [B1]. \(z = \dfrac{3.5}{1.5} = 2.333\), \(P(Z > 2.333) = 0.00982\) [M1 A1]. Since \(0.00982 < 0.01\), reject \(H_0\): sufficient evidence at the 1% level that the mean exceeds 50. [A1] A Type I error would be concluding that the mean is greater than 50 when it is actually 50. [B1]
+:::
+
+:::eg Spot the error: one tail or two?
+A student answered this question [5 marks]: "A coin is thrown 30 times and lands heads 20 times. Test at the 5% significance level whether the coin is biased."
+
+Line 1: \(H_0: p = 0.5\), \(H_1: p \ne 0.5\), where \(p\) is the probability of heads.
+Line 2: Under \(H_0\), \(X \sim B(30, 0.5)\), and \(P(X \ge 20) = 0.0494\).
+Line 3: \(0.0494 < 0.05\), so reject \(H_0\). There is sufficient evidence that the coin is biased.
+
+**Line 1 earns [B1]** and **line 2 earns [M1 A1]**. **Line 3 scores [M0 A0]**. The alternative hypothesis is two-tailed, so the 5% must be split, with 2.5% in each tail, and the student compared the upper tail with the whole 5%. Since \(0.0494 > 0.025\), the result is not significant. The student scores 3 out of 5.
+
+Correct working: compare \(0.0494\) with \(0.025\). [M1] Since \(0.0494 > 0.025\), do not reject \(H_0\). There is insufficient evidence, at the 5% level, to suggest that the coin is biased. [A1]
+
+**Check:** 20 heads in 30 throws is a fairly common result for a fair coin. By symmetry, 10 or fewer heads is just as likely, so being "this far from 15 in either direction" has probability about \(2 \times 0.0494 = 0.099\), almost 10%.
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [4 marks] ★ A spinner is claimed to land on red with probability 0.25. Jo thinks the probability is lower. In 12 spins the spinner lands on red once. Test Jo's belief at the 5% significance level.
+A: Let \(p\) be the probability of red. \(H_0: p = 0.25\), \(H_1: p < 0.25\). [B1] Under \(H_0\), \(X \sim B(12, 0.25)\), and \(P(X \le 1) = 0.1584\). [M1 A1] Since \(0.158 > 0.05\), do not reject \(H_0\). There is insufficient evidence at the 5% level to suggest that the probability of red is less than 0.25. [B1]
+Q: [4 marks] ★ Rolls of cloth contain faults at random, with a mean of 3.5 faults per roll. A new supplier's roll contains 8 faults. Test, at the 5% significance level, whether the mean number of faults per roll has increased.
+A: Let \(\lambda\) be the mean number of faults per roll. \(H_0: \lambda = 3.5\), \(H_1: \lambda > 3.5\). [B1] Under \(H_0\), \(X \sim \mathrm{Po}(3.5)\). [B1] \(P(X \ge 8) = 1 - P(X \le 7)\) [M1] \(= 1 - 0.9733 = 0.0267\). Since \(0.0267 < 0.05\), reject \(H_0\). There is sufficient evidence at the 5% level to suggest that the mean number of faults per roll has increased. [A1]
+Q: [6 marks] ★★ \(X \sim B(25, p)\) is used to test \(H_0: p = 0.4\) against \(H_1: p \ne 0.4\) at the 5% significance level. Find the critical region, and the actual significance level of the test.
+A: Under \(H_0\), \(X \sim B(25, 0.4)\) and each tail has probability at most 0.025. [B1] Lower tail: \(P(X \le 4) = 0.0095\) and \(P(X \le 5) = 0.0294\), which is too big, [M1] so the lower region is \(X \le 4\). [A1] Upper tail: \(P(X \ge 16) = 0.0132\) and \(P(X \ge 15) = 0.0344\), which is too big, [M1] so the upper region is \(X \ge 16\). [A1] The critical region is \(X \le 4\) or \(X \ge 16\), and the actual significance level is \(0.00947 + 0.01317 = 0.0226\), that is 2.26%. [A1]
+Q: [6 marks] ★★ A company says that 20% of its emails are marked as spam. A manager believes the proportion is higher. In a random sample of 120 emails, 33 are marked as spam. Use a normal approximation to test the manager's belief at the 5% significance level.
+A: Let \(p\) be the proportion marked as spam. \(H_0: p = 0.2\), \(H_1: p > 0.2\). [B1] Under \(H_0\), \(X \sim B(120, 0.2)\), which is approximately \(N(24, 19.2)\), since \(np = 24 > 5\) and \(nq = 96 > 5\). [B1] \(P(X \ge 33) \approx P(Y > 32.5)\) [M1] with \(z = \dfrac{32.5 - 24}{\sqrt{19.2}} = 1.940\). [A1] \(1 - \Phi(1.940)\) \(= 0.0262 < 0.05\), so reject \(H_0\). [M1] There is sufficient evidence at the 5% level to suggest that the proportion of emails marked as spam is more than 20%. [A1]
+Q: [6 marks] ★★ A machine makes washers with thickness that is normally distributed with standard deviation 3.2 (in hundredths of a mm). The mean is supposed to be 30. A random sample of 40 washers has mean 31.1. Test, at the 5% significance level, whether the mean has changed.
+A: \(H_0: \mu = 30\), \(H_1: \mu \ne 30\), where \(\mu\) is the mean thickness. [B1] Under \(H_0\), \(\bar X \sim N\!\left(30, \dfrac{3.2^2}{40}\right)\). [B1] The standard deviation of \(\bar X\) is \(0.506\), so \(z = \dfrac{31.1 - 30}{0.506} = 2.174\). [M1 A1] This is a two-tailed test, so compare \(P(Z > 2.174) = 0.0149\) with 0.025 (or \(2.174\) with the critical value \(1.96\)). [M1] Reject \(H_0\): there is sufficient evidence at the 5% level to suggest that the mean thickness has changed. [A1]
+Q: [6 marks] ★★ A call centre receives complaints at random. A test of \(H_0: \lambda = 2\) against \(H_1: \lambda > 2\), where \(\lambda\) is the mean number of complaints in an hour, uses the critical region \(X \ge 6\) for the number \(X\) of complaints in a randomly chosen hour. (a) Find the probability of a Type I error. (b) Find the probability of a Type II error when the true mean is 4. (c) Explain in context what a Type II error means here.
+A: (a) Under \(H_0\), \(X \sim \mathrm{Po}(2)\). \(P(X \ge 6) = 1 - P(X \le 5)\) [M1] \(= 1 - 0.9834 = 0.0166\). [A1] (b) If \(\lambda = 4\), \(X \sim \mathrm{Po}(4)\). [B1] A Type II error is not rejecting, which means \(X \le 5\): [M1] \(P(X \le 5) = 0.785\). [A1] (c) The manager concludes that there is no evidence that the mean number of complaints per hour has increased, when it really has. [B1]
+Q: [10 marks] (#math.s2.sampling) ★★★ A machine fills packets with a normally distributed mass, with standard deviation 4 g. The mean is supposed to be 250 g. A manager suspects that the mean is lower, and tests \(H_0: \mu = 250\) against \(H_1: \mu < 250\) at the 5% level, using the mean of a random sample of 25 packets. (a) Find the critical region for the sample mean. (b) Find the probability of a Type II error if the true mean is 248 g. (c) The manager wants this Type II probability to be below 0.1 using a larger sample, with the same critical-region rule at the 5% level. Find the smallest sample size \(n\).
+H: Under \(H_0\), \(\bar X \sim N\!\left(250, \dfrac{4^2}{n}\right)\). The critical region is \(\bar X < 250 - 1.645\dfrac{4}{\sqrt{n}}\).
+H: A Type II error means the sample mean is not in the critical region, even though the true mean is 248. Use \(\bar X \sim N(248, \dots)\) with the same standard deviation.
+H: For (c), write the Type II probability as \(P(\bar X \ge c)\) for \(\bar X \sim N(248, 16/n)\), and require \(\dfrac{c - 248}{4/\sqrt{n}} > 1.282\). Test values of \(n\) near 34.
+A: (a) Under \(H_0\), \(\bar X \sim N\!\left(250, \dfrac{16}{25}\right)\), with standard deviation 0.8. [B1] The critical region is \(\bar X < 250 - 1.645 \times 0.8\) [M1] \(= 248.7\) (to 3 s.f.; exactly 248.68). [A1] (b) If \(\mu = 248\), \(\bar X \sim N(248, 0.8^2)\). [B1] A Type II error occurs when \(\bar X \ge 248.68\): \(P(\bar X \ge 248.68)\) \(= P\!\left(Z \ge \dfrac{0.684}{0.8}\right)\) [M1] \(= P(Z \ge 0.855) = 0.196\). [A1] (c) For general \(n\), the critical value is \(c = 250 - 1.645\dfrac{4}{\sqrt{n}}\), and the Type II probability is \(P\!\left(Z \ge \dfrac{c - 248}{4/\sqrt{n}}\right)\). [M1] We need \(\dfrac{c - 248}{4/\sqrt{n}} > 1.282\), that is \(\dfrac{\sqrt{n}}{4}\left(2 - \dfrac{6.58}{\sqrt{n}}\right) > 1.282\), so \(0.5\sqrt{n} - 1.645 > 1.282\). [M1] This gives \(\sqrt{n} > 5.854\), so \(n > 34.3\). [A1] The smallest sample size is \(n = 35\). [A1] Check: for \(n = 35\) the Type II probability is 0.0946, and for \(n = 34\) it is 0.1019.
+:::
+
+:::try Stretch for A*
+Q: [8 marks] ★★★ A coin is thrown \(n\) times and a one-tailed test at the 5% level is used for \(H_0: p = 0.5\) against \(H_1: p > 0.5\), where \(p\) is the probability of heads. (a) Show that the test can never reject \(H_0\) if \(n = 4\), and find the smallest \(n\) for which it can reject. (b) For \(n = 10\), find the critical region and the actual significance level. (c) For \(n = 10\), find the probability of a Type II error when the coin is in fact biased with \(p = 0.8\), and comment.
+H: The most extreme result for \(H_1: p > 0.5\) is that every throw is a head. What is its probability under \(H_0\)?
+H: For (b) and (c), use \(X \sim B(10, 0.5)\) under \(H_0\) and \(X \sim B(10, 0.8)\) when \(p = 0.8\).
+A: (a) The most extreme result is \(n\) heads out of \(n\), with probability \(0.5^n\). For \(n = 4\) this is \(0.0625 > 0.05\), so even four heads out of four is not significant. [M1 A1] For \(n = 5\) it is \(0.5^5 = 0.03125 < 0.05\), so the smallest \(n\) is 5. [A1] (b) \(P(X \ge 9) = 0.0107\) and \(P(X \ge 8) = 0.0547 > 0.05\). [M1] The critical region is \(X \ge 9\) and the actual significance level is 1.07%. [A1] (c) A Type II error occurs when \(X \le 8\). With \(p = 0.8\), \(P(X \le 8)\) \(= 1 - P(X = 9) - P(X = 10)\) \(= 1 - 0.3758 = 0.624\). [M1 A1] The test misses a coin this biased about 62% of the time. With only 10 throws the test is weak, and a larger \(n\) is needed to detect a bias of this size. [B1]
+Q: [4 marks] ★★★ A researcher carries out 20 independent hypothesis tests, each at the 5% significance level, on data where \(H_0\) is true every time. (a) State the distribution of the number of tests that reject \(H_0\). (b) Find the probability that at least one test rejects \(H_0\). (c) What does this suggest about a researcher who reports only the tests that "worked"?
+H: Each test rejects a true \(H_0\) with probability equal to the significance level, independently of the others.
+H: "At least one" is the complement of "none": find \(P(R = 0) = 0.95^{20}\) first.
+A: (a) The number of rejections is \(R \sim B(20, 0.05)\). [B1] (b) \(P(R \ge 1) = 1 - 0.95^{20}\) [M1] \(= 0.642\). [A1] (c) Even when nothing is going on, a "significant" result is more likely than not (about a 64% chance). Reporting only those tests gives a misleading picture of the evidence. [B1]
 :::
 
 :::quiz Check your understanding
@@ -322,6 +376,29 @@ A: \(H_0: \mu = 50\), \(H_1: \mu > 50\) [B1]. \(\bar X \sim N(50, 1.5^2)\) [B1].
 - rejecting \(H_1\) when \(H_1\) is true
 - accepting a result that is not significant
 > Type II means failing to detect a real effect. Rejecting a true \(H_0\) is a Type I error.
+? A two-tailed test at the 5% level gives an upper-tail probability of 0.04. What is the conclusion?
+- Reject \(H_0\), because \(0.04 < 0.05\).
++ Do not reject \(H_0\), because \(0.04 > 0.025\).
+- Reject \(H_0\), because \(0.04 < 0.10\).
+- Accept that \(H_0\) is true.
+> In a two-tailed test each tail gets half the significance level, 0.025. A tail probability of 0.04 is too large to reject, but that does not prove \(H_0\) is true.
+? To find the probability of a Type II error you calculate a probability using:
+- the null value of the parameter, \(H_0\)
++ a specific value of the parameter for which \(H_1\) is true, and the acceptance region
+- the observed value of the test statistic
+- the significance level only
+> A Type II error is not rejecting when \(H_0\) is false, so you need a particular true value (given in the question) and the probability of landing in the acceptance region under it. Using the null value gives the probability of a correct decision, not an error.
+:::
+
+:::checklist What you can now do
+- [ ] I can write \(H_0\) and \(H_1\) correctly, define the parameter, and decide between a one-tailed and a two-tailed test.
+- [ ] I can test a binomial probability from one observation, using a direct probability or a critical region.
+- [ ] I can test a Poisson mean, rescaling \(\lambda\) to the interval observed.
+- [ ] I can use a normal approximation, with a continuity correction, in a binomial or Poisson test.
+- [ ] I can test a population mean for a normal population with known variance, or with a large sample.
+- [ ] I can find a critical region and its actual significance level, halving the level for a two-tailed test.
+- [ ] I can write a conclusion in context, using "sufficient evidence" or "insufficient evidence", and never "accept \(H_0\) as true".
+- [ ] I can explain Type I and Type II errors in context and find the probability of each.
 :::
 
 :::recap

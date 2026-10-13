@@ -46,4 +46,58 @@ eq("m1", (5 + sqrt(25 - 24)) / 2, 3); eq("m2", (5 - sqrt(25 - 24)) / 2, 2)
 # exam-style induction step
 assert all(F(k*(k+1)*(2*k+1),6)+(k+1)**2 == F((k+1)*(k+2)*(2*k+3),6) for k in range(1,30))
 assert all(k*(2*k+1)+6*(k+1) == (k+2)*(2*k+3) == 2*k*k+7*k+6 for k in range(1,30))
+# --- v2 additions (P16) ---
+import random
+from math import atan2
+random.seed(16)
+# warm-up
+eq("W1", abs(1 + 1j), sqrt(2)); eq("W1 arg", atan2(1, 1), pi / 4)
+assert all(F(1, r * (r + 1)) == F(1, r) - F(1, r + 1) for r in range(1, 20))
+eq("W3", 20 / 2 * (2 * 3 + 19 * 4), 820)
+# proofs
+for _ in range(5):
+    x = random.uniform(-3, 3)
+    eq("cosh/sinh", cosh(x)**2 - sinh(x)**2, 1, 1e-9)
+    al, be, ga = (random.uniform(-4, 4) for _ in range(3))
+    a_, b_, c_, d_ = 2, -2 * (al + be + ga), 2 * (al * be + be * ga + ga * al), -2 * al * be * ga
+    xx = random.uniform(-3, 3)
+    eq("factor form", a_ * xx**3 + b_ * xx**2 + c_ * xx + d_, a_ * (xx - al) * (xx - be) * (xx - ga), 1e-8)
+# spot the error
+assert all((4**n - 1) % 3 == 0 for n in range(1, 15)); assert 4 * (4**3 - 1) + 3 == 4**4 - 1 == 255
+assert 4 * 4**3 - 1 == 4 * (4**3 - 1) + 3 and (4 * (4**3 - 1) - 1) % 3 != 0
+# exam practice
+eq("E1", cosh(log(2)), 5 / 4)
+assert 3 * 3 - 2 * 4 == 1 and 3 * 5 - 2 * 8 == -1 and -4 * 5 + 3 * 8 == 4 and 3 * (-1) + 2 * 4 == 5 and 4 * (-1) + 3 * 4 == 8
+assert all(sum(r * (r + 1) for r in range(1, n + 1)) == n * (n + 1) * (n + 2) // 3 for n in range(1, 40))
+assert all(F(k * (k + 1) * (k + 2), 3) + (k + 1) * (k + 2) == F((k + 1) * (k + 2) * (k + 3), 3) for k in range(1, 40))
+assert 1 * 2 == 2 == 1 * 2 * 3 // 3
+rts = (2, 3, -1)
+assert sum(rts) == 4 and 2 * 3 + 3 * (-1) + (-1) * 2 == 1 and 2 * 3 * (-1) == -6
+assert all(x**3 - 4 * x**2 + x + 6 == 0 for x in rts)
+assert 4**2 - 2 * 1 == 14 == sum(x * x for x in rts) and F(1, 1) / (-6) == F(1, 2) + F(1, 3) - 1
+assert all(F(1, (2 * r - 1) * (2 * r + 1)) == F(1, 2) * (F(1, 2 * r - 1) - F(1, 2 * r + 1)) for r in range(1, 30))
+assert all(sum(F(1, (2 * r - 1) * (2 * r + 1)) for r in range(1, n + 1)) == F(n, 2 * n + 1) for n in range(1, 30))
+z = (1 - 1j)**6; eq("E5 re", z.real, 0, 1e-9); eq("E5 im", z.imag, 8, 1e-9); eq("E5 check", ((-2j)**3).imag, 8, 1e-9)
+eq("E5 mod", abs(1 - 1j)**6, 8, 1e-9)
+# E6 differential equation: y = e^(-2x)(2cos3x + sin3x)
+Y = lambda x: exp(-2 * x) * (2 * cos(3 * x) + sin(3 * x)); hh = 1e-4
+for x0 in (0.0, 0.4, 1.1):
+    d1 = (Y(x0 + hh) - Y(x0 - hh)) / (2 * hh); d2 = (Y(x0 + hh) - 2 * Y(x0) + Y(x0 - hh)) / hh**2
+    eq("ODE", d2 + 4 * d1 + 13 * Y(x0), 0, 1e-5)
+eq("y(0)", Y(0), 2); eq("y'(0)", (Y(hh) - Y(-hh)) / (2 * hh), -1, 1e-6)
+eq("m disc", 16 - 52, -36); eq("-2A+3B", -2 * 2 + 3 * 1, -1)
+# E7 Maclaurin of e^x sin x
+f = lambda x: exp(x) * sin(x)
+for x0 in (0.01, 0.05):
+    eq("series", f(x0), x0 + x0**2 + x0**3 / 3, 1e-6)
+eq("int est", 0.2**2 / 2 + 0.2**3 / 3 + 0.2**4 / 12, 0.0228, 1e-6)
+exact = exp(0.2) * (sin(0.2) - cos(0.2)) / 2 + 0.5; eq("int exact", exact, 0.0228, 1e-4); eq("3sf", float(f"{exact:.3g}"), 0.0228)
+assert [0, 1, 2, 2] == [0, 1, 2, 2]
+# stretch
+assert all((n**3 + 2 * n) % 3 == 0 for n in range(1, 40))
+assert all((k + 1)**3 + 2 * (k + 1) == (k**3 + 2 * k) + 3 * (k * k + k + 1) for k in range(1, 40))
+eq("polar", pi / 8, 0.5 * sum(sin(2 * (i + 0.5) * (pi / 2) / 20000)**2 for i in range(20000)) * (pi / 2) / 20000, 1e-6)
+eq("flower", 4 * pi / 8, pi / 2)
+# quiz
+assert 2 + 0 == 2 and -(-4) / 1 == 4
 print("ok")

@@ -11,6 +11,15 @@ The identities in this chapter let you rewrite one trigonometric expression as a
 
 **Before you start**, you need [Trigonometry](#math.p1.trig): exact values, the unit circle, the graphs of sine, cosine and tangent, and solving equations in an interval. Factorising quadratics from [Quadratics](#math.p1.quadratics) is used in the equations.
 
+:::try Warm-up
+Q: Solve \(2s^2 + s - 1 = 0\). (from [Quadratics](#math.p1.quadratics))
+A: \((2s - 1)(s + 1) = 0\), so \(s = \tfrac12\) or \(s = -1\).
+Q: Solve \(\cos x = -\tfrac12\) for \(0^\circ \le x \le 360^\circ\). (from [Trigonometry](#math.p1.trig))
+A: The related acute angle is \(60^\circ\), and cosine is negative in the second and third quadrants: \(x = 120^\circ\) or \(240^\circ\).
+Q: Angle \(\theta\) is acute with \(\sin\theta = \tfrac45\). Find \(\cos\theta\) and \(\tan\theta\). (from [Trigonometry](#math.p1.trig))
+A: \(\cos^2\theta = 1 - \tfrac{16}{25}\) \(= \tfrac{9}{25}\), so \(\cos\theta = \tfrac35\) and \(\tan\theta = \tfrac43\).
+:::
+
 ## Secant, cosecant and cotangent
 
 The three reciprocal functions are defined from the main ones.
@@ -20,7 +29,7 @@ The three reciprocal functions are defined from the main ones.
 Each is undefined where its denominator is zero: \(\sec\theta\) when \(\cos\theta = 0\) (at \(90^\circ, 270^\circ, \ldots\)), \(\operatorname{cosec}\theta\) and \(\cot\theta\) when \(\sin\theta = 0\) (at \(0^\circ, 180^\circ, 360^\circ, \ldots\)).
 :::
 
-The calculator has no sec, cosec or cot keys: use the reciprocal. So \(\sec 40^\circ = \dfrac{1}{\cos 40^\circ} = 1.305\). To solve \(\sec\theta = 3\), solve \(\cos\theta = \dfrac13\).
+The calculator has no sec, cosec or cot keys: use the reciprocal. So \(\sec 40^\circ\) \(= \dfrac{1}{\cos 40^\circ} = 1.305\). To solve \(\sec\theta = 3\), solve \(\cos\theta = \dfrac13\).
 
 :::plot The graphs of \(y = \sec x\) and \(y = \operatorname{cosec} x\). Each has vertical asymptotes where the matching sine or cosine is zero, and no values between −1 and 1.
 --f "1/cos(x)" --f "1/sin(x)" --label "y = sec x" --label "y = cosec x" --deg --x 0 360 --y -4 4 --xstep 90 --legend tr
@@ -39,7 +48,7 @@ The calculator has no sec, cosec or cot keys: use the reciprocal. So \(\sec 40^\
 
 ### Two more Pythagorean identities
 
-Divide \(\sin^2\theta + \cos^2\theta = 1\) by \(\cos^2\theta\) to get \(\tan^2\theta + 1 = \sec^2\theta\). Divide by \(\sin^2\theta\) to get \(1 + \cot^2\theta = \operatorname{cosec}^2\theta\).
+Divide \(\sin^2\theta + \cos^2\theta = 1\) by \(\cos^2\theta\) to get \(\tan^2\theta + 1 = \sec^2\theta\). Divide by \(\sin^2\theta\) to get \(1 + \cot^2\theta\) \(= \operatorname{cosec}^2\theta\).
 
 :::key Identities
 \[\sec^2\theta \equiv 1 + \tan^2\theta \qquad \operatorname{cosec}^2\theta \equiv 1 + \cot^2\theta\]
@@ -52,21 +61,39 @@ Replace \(\tan^2 x\) by \(\sec^2 x - 1\):
 So \(\sec x = 1\) or \(\sec x = -\tfrac32\). Take reciprocals: \(\cos x = 1\) gives \(x = 0^\circ, 360^\circ\). \(\cos x = -\tfrac23\) gives \(x = 131.8^\circ\) and \(360^\circ - 131.8^\circ = 228.2^\circ\). The solutions are \(0^\circ, 131.8^\circ, 228.2^\circ, 360^\circ\).
 :::
 
-:::eg Solve \(\cot^2\theta + 3\operatorname{cosec}\theta - 3 = 0\) for \(0^\circ < \theta < 360^\circ\).
-Replace \(\cot^2\theta\) by \(\operatorname{cosec}^2\theta - 1\): \(\operatorname{cosec}^2\theta + 3\operatorname{cosec}\theta - 4 = 0\), so \((\operatorname{cosec}\theta + 4)(\operatorname{cosec}\theta - 1) = 0\).
+:::eg Solve \(\cot^2\theta + 3\operatorname{cosec}\theta - 3\) \(= 0\) for \(0^\circ < \theta < 360^\circ\).
+Replace \(\cot^2\theta\) by \(\operatorname{cosec}^2\theta - 1\): \(\operatorname{cosec}^2\theta + 3\operatorname{cosec}\theta - 4\) \(= 0\), so \((\operatorname{cosec}\theta + 4)(\operatorname{cosec}\theta - 1)\) \(= 0\).
 
-\(\operatorname{cosec}\theta = 1\) gives \(\sin\theta = 1\), so \(\theta = 90^\circ\). \(\operatorname{cosec}\theta = -4\) gives \(\sin\theta = -\tfrac14\), so \(\theta = 180^\circ + 14.5^\circ = 194.5^\circ\) or \(360^\circ - 14.5^\circ = 345.5^\circ\).
+\(\operatorname{cosec}\theta = 1\) gives \(\sin\theta = 1\), so \(\theta = 90^\circ\). \(\operatorname{cosec}\theta = -4\) gives \(\sin\theta = -\tfrac14\), so \(\theta = 180^\circ + 14.5^\circ\) \(= 194.5^\circ\) or \(360^\circ - 14.5^\circ = 345.5^\circ\).
 :::
 
 ## Compound angle formulae
 
-A common mistake is to believe \(\sin(A + B) = \sin A + \sin B\). Test it: \(\sin 90^\circ = 1\), but \(\sin 60^\circ + \sin 30^\circ = 0.866 + 0.5 = 1.366\). The correct formulae are:
+A common mistake is to believe \(\sin(A + B) = \sin A + \sin B\). Test it: \(\sin 90^\circ = 1\), but \(\sin 60^\circ + \sin 30^\circ\) \(= 0.866 + 0.5 = 1.366\). The correct formulae are:
 
 :::formula Compound angles
 \[\sin(A \pm B) = \sin A\cos B \pm \cos A\sin B\]
 \[\cos(A \pm B) = \cos A\cos B \mp \sin A\sin B\]
 \[\tan(A \pm B) = \frac{\tan A \pm \tan B}{1 \mp \tan A\tan B}\]
 Take care with the signs: in the cosine formula the sign in the middle is **opposite** to the sign in the bracket (\(\cos(A + B)\) has a minus). All three are on MF19.
+:::
+
+:::proof Where \(\sin(A + B)\) and \(\cos(A + B)\) come from
+Take acute angles \(A\) and \(B\). Put the point \(P\) on the unit circle at angle \(A + B\), so \(P\) \(= \big(\cos(A + B),\ \sin(A + B)\big)\). Draw the line \(OR\) at angle \(A\), and drop a perpendicular from \(P\) to it, meeting it at \(Q\).
+
+Triangle \(OQP\) has a right angle at \(Q\), hypotenuse \(OP = 1\) and angle \(B\) at \(O\). So \(OQ = \cos B\) and \(QP = \sin B\).
+
+\(Q\) is on \(OR\), a distance \(\cos B\) from \(O\), in the direction of angle \(A\):
+\[Q = (\cos B\cos A,\ \cos B\sin A)\]
+Going from \(Q\) to \(P\) is a move of length \(\sin B\) at right angles to \(OR\), which is the direction of angle \(A + 90^\circ\). That direction has components \((-\sin A,\ \cos A)\). So
+\[P = (\cos B\cos A - \sin B\sin A,\ \cos B\sin A + \sin B\cos A)\]
+Comparing the two descriptions of \(P\) gives \(\cos(A + B)\) \(= \cos A\cos B - \sin A\sin B\) and \(\sin(A + B)\) \(= \sin A\cos B + \cos A\sin B\).
+
+For \(A - B\), replace \(B\) by \(-B\), using \(\cos(-B) = \cos B\) and \(\sin(-B) = -\sin B\). For tangent, divide \(\sin(A + B)\) by \(\cos(A + B)\), then divide the top and bottom by \(\cos A\cos B\).
+
+:::html
+<div class="widget" data-w="proof" data-proof="compound"></div>
+:::
 :::
 
 The main uses are exact values for angles that are sums or differences of \(30^\circ\), \(45^\circ\), \(60^\circ\), \(90^\circ\), and rewriting expressions to solve equations.
@@ -85,7 +112,7 @@ Draw or use \(\sin^2 + \cos^2 = 1\): \(\cos A = \tfrac45\) (positive, acute) and
 :::
 
 :::eg Solve \(\sin(x + 30^\circ) = 2\cos x\) for \(0^\circ \le x \le 360^\circ\).
-Expand the left side: \(\sin x\cos 30^\circ + \cos x\sin 30^\circ = 2\cos x\), so \(\dfrac{\sqrt3}{2}\sin x + \dfrac12\cos x = 2\cos x\). Collect: \(\dfrac{\sqrt3}{2}\sin x = \dfrac32\cos x\). Divide by \(\cos x\). This is safe, because if \(\cos x\) were zero the equation would force \(\sin x = 0\) too, which is impossible:
+Expand the left side: \(\sin x\cos 30^\circ + \cos x\sin 30^\circ\) \(= 2\cos x\), so \(\dfrac{\sqrt3}{2}\sin x + \dfrac12\cos x\) \(= 2\cos x\). Collect: \(\dfrac{\sqrt3}{2}\sin x\) \(= \dfrac32\cos x\). Divide by \(\cos x\). This is safe, because if \(\cos x\) were zero the equation would force \(\sin x = 0\) too, which is impossible:
 \[\tan x = \frac{3}{\sqrt3} = \sqrt3\]
 So \(x = 60^\circ\) or \(240^\circ\).
 :::
@@ -101,9 +128,17 @@ Put \(B = A\) in the compound formulae.
 There are three forms of \(\cos 2A\). Choose the one that leaves the same function as the rest of your equation. All are on MF19.
 :::
 
+:::proof Where the double angle formulae come from
+Put \(B = A\) in the compound angle formulae.
+\[\sin 2A = \sin A\cos A + \cos A\sin A = 2\sin A\cos A\]
+\[\cos 2A = \cos A\cos A - \sin A\sin A = \cos^2 A - \sin^2 A\]
+Now use \(\sin^2 A + \cos^2 A = 1\) to remove one of the two terms. Replacing \(\sin^2 A\) by \(1 - \cos^2 A\) gives \(\cos 2A = 2\cos^2 A - 1\). Replacing \(\cos^2 A\) by \(1 - \sin^2 A\) gives \(\cos 2A = 1 - 2\sin^2 A\).
+For tangent, \(\tan 2A\) \(= \dfrac{\tan A + \tan A}{1 - \tan A\tan A}\) \(= \dfrac{2\tan A}{1 - \tan^2 A}\).
+:::
+
 :::eg Given \(\sin\theta = \tfrac35\) with \(\theta\) acute, find \(\sin 2\theta\), \(\cos 2\theta\) and \(\tan 2\theta\).
-\(\cos\theta = \tfrac45\), so \(\sin 2\theta = 2 \times \tfrac35 \times \tfrac45 = \tfrac{24}{25}\). Using \(\cos 2\theta = 1 - 2\sin^2\theta = 1 - 2 \times \tfrac{9}{25} = \tfrac{7}{25}\). Then \(\tan 2\theta = \dfrac{24/25}{7/25} = \tfrac{24}{7}\).
-Check: \(\left(\tfrac{24}{25}\right)^2 + \left(\tfrac7{25}\right)^2 = \tfrac{576 + 49}{625} = 1\). ✓
+\(\cos\theta = \tfrac45\), so \(\sin 2\theta\) \(= 2 \times \tfrac35 \times \tfrac45\) \(= \tfrac{24}{25}\). Using \(\cos 2\theta = 1 - 2\sin^2\theta\) \(= 1 - 2 \times \tfrac{9}{25}\) \(= \tfrac{7}{25}\). Then \(\tan 2\theta = \dfrac{24/25}{7/25}\) \(= \tfrac{24}{7}\).
+Check: \(\left(\tfrac{24}{25}\right)^2 + \left(\tfrac7{25}\right)^2\) \(= \tfrac{576 + 49}{625} = 1\). ✓
 :::
 
 :::eg Solve (a) \(\cos 2x + 3\sin x = 2\) for \(0^\circ \le x \le 360^\circ\), (b) \(\sin 2x = \cos x\) for \(-\pi \le x \le \pi\).
@@ -111,7 +146,7 @@ Check: \(\left(\tfrac{24}{25}\right)^2 + \left(\tfrac7{25}\right)^2 = \tfrac{576
 \[\begin{aligned} 1 - 2\sin^2 x + 3\sin x &= 2 \\ 2\sin^2 x - 3\sin x + 1 &= 0 \\ (2\sin x - 1)(\sin x - 1) &= 0 \end{aligned}\]
 So \(\sin x = \tfrac12\) gives \(x = 30^\circ, 150^\circ\), and \(\sin x = 1\) gives \(x = 90^\circ\). The solutions are \(30^\circ, 90^\circ, 150^\circ\).
 
-(b) \(2\sin x\cos x = \cos x\), so \(\cos x(2\sin x - 1) = 0\). Do **not** divide by \(\cos x\). Either \(\cos x = 0\), giving \(x = \pm\dfrac{\pi}{2}\), or \(\sin x = \tfrac12\), giving \(x = \dfrac{\pi}{6}\) and \(\dfrac{5\pi}{6}\). Four solutions: \(x = -\dfrac{\pi}{2}, \dfrac{\pi}{6}, \dfrac{\pi}{2}, \dfrac{5\pi}{6}\).
+(b) \(2\sin x\cos x = \cos x\), so \(\cos x(2\sin x - 1) = 0\). Do **not** divide by \(\cos x\). Either \(\cos x = 0\), giving \(x = \pm\dfrac{\pi}{2}\), or \(\sin x = \tfrac12\), giving \(x = \dfrac{\pi}{6}\) and \(\dfrac{5\pi}{6}\). Four solutions: \(x\) \(= -\dfrac{\pi}{2}, \dfrac{\pi}{6}, \dfrac{\pi}{2}, \dfrac{5\pi}{6}\).
 :::
 
 ### Proving identities with the new formulae
@@ -125,22 +160,22 @@ Use \(1 + \cos 2\theta = 2\cos^2\theta\) and \(\sin 2\theta = 2\sin\theta\cos\th
 \[= \frac{2\cos^2\theta}{2\sin\theta\cos\theta}\] [M1 A1]
 \[= \frac{\cos\theta}{\sin\theta} = \cot\theta\] ∎ [A1]
 
-**(b)** Put \(\theta = 15^\circ\): \(\cot 15^\circ = \operatorname{cosec}30^\circ + \cot 30^\circ = 2 + \sqrt3\). [M1 A1]
+**(b)** Put \(\theta = 15^\circ\): \(\cot 15^\circ\) \(= \operatorname{cosec}30^\circ + \cot 30^\circ\) \(= 2 + \sqrt3\). [M1 A1]
 Check: \(\tan 15^\circ = 0.2679\) and \(1 \div 0.2679 = 3.732 = 2 + \sqrt3\). ✓
 :::
 
 :::eg (Exam style) (a) Show that \(\tan(\theta + 45^\circ) \equiv \dfrac{1 + \tan\theta}{1 - \tan\theta}\). (b) Hence solve \(\tan(\theta + 45^\circ) = 6\tan\theta\) for \(0^\circ \le \theta \le 180^\circ\).
-**(a)** \(\tan(\theta + 45^\circ) = \dfrac{\tan\theta + \tan 45^\circ}{1 - \tan\theta\tan 45^\circ}\) [M1] and \(\tan 45^\circ = 1\), so the result is \(\dfrac{1 + \tan\theta}{1 - \tan\theta}\). ∎ [A1]
+**(a)** \(\tan(\theta + 45^\circ)\) \(= \dfrac{\tan\theta + \tan 45^\circ}{1 - \tan\theta\tan 45^\circ}\) [M1] and \(\tan 45^\circ = 1\), so the result is \(\dfrac{1 + \tan\theta}{1 - \tan\theta}\). ∎ [A1]
 
 **(b)** Let \(t = \tan\theta\). Then \(\dfrac{1 + t}{1 - t} = 6t\), so \(1 + t = 6t - 6t^2\). [M1]
 \[6t^2 - 5t + 1 = 0 \implies (2t - 1)(3t - 1) = 0\] [M1 A1]
 So \(\tan\theta = \tfrac12\) or \(\tan\theta = \tfrac13\), giving \(\theta = 26.6^\circ\) or \(18.4^\circ\). [A1]
-Check \(t = \tfrac12\): \(\dfrac{1.5}{0.5} = 3 = 6 \times \tfrac12\). ✓
+Check \(t = \tfrac12\): \(\dfrac{1.5}{0.5} = 3\) \(= 6 \times \tfrac12\). ✓
 :::
 
 ## The form \(R\sin(\theta \pm \alpha)\)
 
-Two waves of the same frequency, \(a\sin\theta\) and \(b\cos\theta\), add up to a single wave. Compare \(R\sin(\theta + \alpha) = R\sin\theta\cos\alpha + R\cos\theta\sin\alpha\) with \(a\sin\theta + b\cos\theta\). Matching coefficients gives \(R\cos\alpha = a\) and \(R\sin\alpha = b\). Squaring and adding gives \(R^2 = a^2 + b^2\); dividing gives \(\tan\alpha = \dfrac{b}{a}\).
+Two waves of the same frequency, \(a\sin\theta\) and \(b\cos\theta\), add up to a single wave. Compare \(R\sin(\theta + \alpha)\) \(= R\sin\theta\cos\alpha + R\cos\theta\sin\alpha\) with \(a\sin\theta + b\cos\theta\). Matching coefficients gives \(R\cos\alpha = a\) and \(R\sin\alpha = b\). Squaring and adding gives \(R^2 = a^2 + b^2\); dividing gives \(\tan\alpha = \dfrac{b}{a}\).
 
 :::key Harmonic form
 For \(a > 0\) and \(b > 0\):
@@ -149,10 +184,18 @@ For \(a > 0\) and \(b > 0\):
 With a minus sign in the expression, expand \(R\sin(\theta - \alpha)\) or \(R\cos(\theta + \alpha)\) and match in the same way. Choose \(R > 0\) and an acute \(\alpha\). To get \(\alpha\) right, write \(R\cos\alpha = \dots\) and \(R\sin\alpha = \dots\) first, then check the quadrant.
 :::
 
+:::proof Why \(a\sin\theta + b\cos\theta\) is a single wave
+Draw a right-angled triangle with shorter sides \(a\) and \(b\). By Pythagoras the hypotenuse is \(R = \sqrt{a^2 + b^2}\). Let \(\alpha\) be the angle between the side \(a\) and the hypotenuse, so that
+\[a = R\cos\alpha \qquad b = R\sin\alpha \qquad \tan\alpha = \frac ba\]
+Substitute these into the expression and use the compound angle formula backwards:
+\[\begin{aligned} a\sin\theta + b\cos\theta &= R\cos\alpha\sin\theta + R\sin\alpha\cos\theta \\ &= R(\sin\theta\cos\alpha + \cos\theta\sin\alpha) \\ &= R\sin(\theta + \alpha) \end{aligned}\]
+A sine wave goes between \(-1\) and \(1\), so \(R\sin(\theta + \alpha)\) has greatest value \(R\) and least value \(-R\). That is why the form is the way to find maximum and minimum values.
+:::
+
 :::eg Express \(3\sin\theta + 4\cos\theta\) in the form \(R\sin(\theta + \alpha)\), and \(2\sin\theta - \cos\theta\) in the form \(R\sin(\theta - \alpha)\).
-Match \(3\sin\theta + 4\cos\theta = R\sin\theta\cos\alpha + R\cos\theta\sin\alpha\): \(R\cos\alpha = 3\), \(R\sin\alpha = 4\). Then \(R = \sqrt{9 + 16} = 5\) and \(\tan\alpha = \tfrac43\), so \(\alpha = 53.13^\circ\):
+Match \(3\sin\theta + 4\cos\theta\) \(= R\sin\theta\cos\alpha + R\cos\theta\sin\alpha\): \(R\cos\alpha = 3\), \(R\sin\alpha = 4\). Then \(R = \sqrt{9 + 16} = 5\) and \(\tan\alpha = \tfrac43\), so \(\alpha = 53.13^\circ\):
 \[3\sin\theta + 4\cos\theta = 5\sin(\theta + 53.13^\circ)\]
-For the second, \(R\sin(\theta - \alpha) = R\sin\theta\cos\alpha - R\cos\theta\sin\alpha\). Match: \(R\cos\alpha = 2\), \(R\sin\alpha = 1\). So \(R = \sqrt5\) and \(\tan\alpha = \tfrac12\), \(\alpha = 26.57^\circ\):
+For the second, \(R\sin(\theta - \alpha)\) \(= R\sin\theta\cos\alpha - R\cos\theta\sin\alpha\). Match: \(R\cos\alpha = 2\), \(R\sin\alpha = 1\). So \(R = \sqrt5\) and \(\tan\alpha = \tfrac12\), \(\alpha = 26.57^\circ\):
 \[2\sin\theta - \cos\theta = \sqrt5\sin(\theta - 26.57^\circ)\]
 :::
 
@@ -169,13 +212,13 @@ The greatest value is \(5\), when \(\sin(\theta + 53.13^\circ) = 1\): \(\theta +
 :::
 
 :::eg Two alternating currents in the same circuit are \(I_1 = 3\sin\theta\) amperes and \(I_2 = 4\cos\theta\) amperes, where \(\theta\) is the phase angle. Find the amplitude of the total current \(I = I_1 + I_2\).
-\(I = 3\sin\theta + 4\cos\theta = 5\sin(\theta + 53.13^\circ)\). The amplitude, the greatest value of \(I\), is \(5\) amperes, which is not \(3 + 4 = 7\) because the two currents peak at different times.
+\(I = 3\sin\theta + 4\cos\theta\) \(= 5\sin(\theta + 53.13^\circ)\). The amplitude, the greatest value of \(I\), is \(5\) amperes, which is not \(3 + 4 = 7\) because the two currents peak at different times.
 :::
 
 :::eg (Exam style) (a) Express \(7\cos\theta - 24\sin\theta\) in the form \(R\cos(\theta + \alpha)\), where \(R > 0\) and \(0^\circ < \alpha < 90^\circ\). (b) Solve \(7\cos\theta - 24\sin\theta = 10\) for \(0^\circ \le \theta \le 360^\circ\). (c) Find the least value of \(\dfrac{40}{30 + 7\cos\theta - 24\sin\theta}\).
-**(a)** \(R\cos(\theta + \alpha) = R\cos\theta\cos\alpha - R\sin\theta\sin\alpha\). Match: \(R\cos\alpha = 7\), \(R\sin\alpha = 24\). [M1]
+**(a)** \(R\cos(\theta + \alpha)\) \(= R\cos\theta\cos\alpha - R\sin\theta\sin\alpha\). Match: \(R\cos\alpha = 7\), \(R\sin\alpha = 24\). [M1]
 \[R = \sqrt{49 + 576} = 25, \quad \tan\alpha = \tfrac{24}{7} \implies \alpha = 73.74^\circ\] [A1 A1]
-So \(7\cos\theta - 24\sin\theta = 25\cos(\theta + 73.74^\circ)\).
+So \(7\cos\theta - 24\sin\theta\) \(= 25\cos(\theta + 73.74^\circ)\).
 
 **(b)** \(25\cos(\theta + 73.74^\circ) = 10\), so \(\cos(\theta + 73.74^\circ) = 0.4\). [M1] The angle \(u = \theta + 73.74^\circ\) is between \(73.74^\circ\) and \(433.74^\circ\). The principal value is \(66.42^\circ\) (too small), and other solutions are \(360^\circ - 66.42^\circ = 293.58^\circ\) and \(360^\circ + 66.42^\circ = 426.42^\circ\). [M1]
 \[\theta = 219.8^\circ \text{ or } 352.7^\circ\] [A1 A1]
@@ -186,7 +229,7 @@ So \(7\cos\theta - 24\sin\theta = 25\cos(\theta + 73.74^\circ)\).
 :::warn Trig traps in this chapter
 - \(\sin(A + B) \ne \sin A + \sin B\), and \(\cos 2A \ne 2\cos A\). Use the formulae.
 - The sign in \(\cos(A \pm B)\) is the opposite of the one in the bracket.
-- In \(a\sin\theta + b\cos\theta = R\sin(\theta + \alpha)\), \(\tan\alpha = \dfrac ba\) (b over a, not a over b). Check the final form by putting in \(\theta = 0\).
+- In \(a\sin\theta + b\cos\theta\) \(= R\sin(\theta + \alpha)\), \(\tan\alpha = \dfrac ba\) (b over a, not a over b). Check the final form by putting in \(\theta = 0\).
 - When the equation reads \(\sin 2x = \cos x\) or \(\tan 2x = 3\tan x\), factorise rather than dividing, otherwise you lose the solutions where the divisor is zero.
 - Work with the whole angle: for \(R\sin(\theta + \alpha) = k\), change the interval to \(\alpha\) to \(360^\circ + \alpha\).
 :::
@@ -202,27 +245,77 @@ So \(7\cos\theta - 24\sin\theta = 25\cos(\theta + 73.74^\circ)\).
 Edexcel IAL covers sec, cosec, cot, the compound and double angle formulae and the \(R\)-form in P3, and the UK A Levels (AQA, Edexcel, OCR) cover them in Pure Year 2. Small-angle approximations appear in UK specifications but are not in the Cambridge syllabus. In Cambridge 9709 the compound angle, double angle and Pythagorean identities are all on MF19, but the \(R\)-form is not: you derive it each time.
 :::
 
+:::eg Spot the error: solve \(\sin 2x = \sin x\) for \(0^\circ \le x \le 360^\circ\)
+A student wrote this answer.
+
+Line 1: \(2\sin x\cos x = \sin x\)
+Line 2: divide by \(\sin x\): \(2\cos x = 1\), so \(\cos x = \tfrac12\)
+Line 3: \(x = 60^\circ\) or \(x = 300^\circ\)
+
+Line 1 uses the double angle formula correctly. [B1] **Line 2 scores [M0], and so Line 3 earns no accuracy marks [A0 A0]:** dividing by \(\sin x\) throws away every solution where \(\sin x = 0\), which are \(x = 0^\circ\), \(180^\circ\) and \(360^\circ\). Never divide by a trigonometric expression; move everything to one side and factorise.
+
+Correct working: \(2\sin x\cos x - \sin x = 0\), so \(\sin x(2\cos x - 1) = 0\). [M1] \(\sin x = 0\) gives \(x = 0^\circ\), \(180^\circ\), \(360^\circ\). [A1] \(\cos x = \tfrac12\) gives \(x = 60^\circ\), \(300^\circ\). [A1]
+
+**Check:** a graph of \(y = \sin 2x\) and \(y = \sin x\) on the same axes meets five times in this interval. The student found only two.
+:::
+
 :::try Start easy, finish at exam standard
 Q: Find, to 3 significant figures, (a) \(\sec 50^\circ\), (b) \(\cot 20^\circ\), (c) \(\operatorname{cosec} 1.2\) (radians).
 A: (a) \(\dfrac{1}{\cos 50^\circ} = 1.56\). (b) \(\dfrac{1}{\tan 20^\circ} = 2.75\). (c) \(\dfrac{1}{\sin 1.2} = 1.07\).
 Q: Solve \(\sec\theta = -2.5\) for \(0^\circ \le \theta \le 360^\circ\).
 A: \(\cos\theta = -0.4\), so \(\theta = 113.6^\circ\) or \(246.4^\circ\).
 Q: Solve \(\tan^2\theta = 3 + \sec\theta\) for \(0^\circ \le \theta \le 360^\circ\).
-A: \(\sec^2\theta - 1 = 3 + \sec\theta\), so \(\sec^2\theta - \sec\theta - 4 = 0\). That does not factorise: \(\sec\theta = \dfrac{1 \pm \sqrt{17}}{2} = 2.562\) or \(-1.562\). Then \(\cos\theta = 0.3903\) gives \(\theta = 67.0^\circ, 293.0^\circ\), and \(\cos\theta = -0.6402\) gives \(\theta = 129.8^\circ, 230.2^\circ\).
+A: \(\sec^2\theta - 1 = 3 + \sec\theta\), so \(\sec^2\theta - \sec\theta - 4 = 0\). That does not factorise: \(\sec\theta\) \(= \dfrac{1 \pm \sqrt{17}}{2} = 2.562\) or \(-1.562\). Then \(\cos\theta = 0.3904\) gives \(\theta = 67.0^\circ, 293.0^\circ\), and \(\cos\theta = -0.6404\) gives \(\theta = 129.8^\circ, 230.2^\circ\).
 Q: Find the exact value of \(\cos 15^\circ\) using \(15^\circ = 60^\circ - 45^\circ\).
-A: \(\cos 15^\circ = \cos 60^\circ\cos 45^\circ + \sin 60^\circ\sin 45^\circ = \dfrac12\cdot\dfrac{\sqrt2}{2} + \dfrac{\sqrt3}{2}\cdot\dfrac{\sqrt2}{2} = \dfrac{\sqrt2 + \sqrt6}{4}\).
+A: \(\cos 15^\circ\) \(= \cos 60^\circ\cos 45^\circ + \sin 60^\circ\sin 45^\circ\) \(= \dfrac12\cdot\dfrac{\sqrt2}{2} + \dfrac{\sqrt3}{2}\cdot\dfrac{\sqrt2}{2}\) \(= \dfrac{\sqrt2 + \sqrt6}{4}\).
 Q: Given \(\cos A = \tfrac{12}{13}\) with \(A\) acute and \(\sin B = \tfrac{3}{5}\) with \(B\) acute, find \(\cos(A - B)\).
-A: \(\sin A = \tfrac{5}{13}\), \(\cos B = \tfrac45\). \(\cos(A - B) = \tfrac{12}{13}\cdot\tfrac45 + \tfrac5{13}\cdot\tfrac35 = \tfrac{48 + 15}{65} = \tfrac{63}{65}\).
+A: \(\sin A = \tfrac{5}{13}\), \(\cos B = \tfrac45\). \(\cos(A - B)\) \(= \tfrac{12}{13}\cdot\tfrac45 + \tfrac5{13}\cdot\tfrac35\) \(= \tfrac{48 + 15}{65} = \tfrac{63}{65}\).
 Q: (a) Given that \(\sin\theta = \tfrac{3}{5}\) and \(\theta\) is acute, find the exact values of \(\sin 2\theta\) and \(\cos 2\theta\). (b) Solve \(\sin 2x = \sin x\) for \(0^\circ \le x \le 360^\circ\).
 A: (a) \(\sin 2\theta = \tfrac{24}{25}\), \(\cos 2\theta = \tfrac{7}{25}\). (b) \(2\sin x\cos x = \sin x\), so \(\sin x(2\cos x - 1) = 0\). Then \(\sin x = 0\) gives \(0^\circ, 180^\circ, 360^\circ\) and \(\cos x = \tfrac12\) gives \(60^\circ, 300^\circ\).
 Q: Solve \(2\cos 2x + 3\cos x + 1 = 0\) for \(0^\circ \le x \le 360^\circ\).
 A: \(2(2\cos^2 x - 1) + 3\cos x + 1 = 0\), so \(4\cos^2 x + 3\cos x - 1 = 0\), \((4\cos x - 1)(\cos x + 1) = 0\). \(\cos x = \tfrac14\) gives \(75.5^\circ, 284.5^\circ\); \(\cos x = -1\) gives \(180^\circ\).
 Q: Prove that \(\dfrac{\sin 2\theta}{1 + \cos 2\theta} \equiv \tan\theta\).
-A: \(\dfrac{2\sin\theta\cos\theta}{2\cos^2\theta} = \dfrac{\sin\theta}{\cos\theta} = \tan\theta\). ∎
+A: \(\dfrac{2\sin\theta\cos\theta}{2\cos^2\theta}\) \(= \dfrac{\sin\theta}{\cos\theta}\) \(= \tan\theta\). ∎
 Q: Express \(5\sin\theta + 12\cos\theta\) in the form \(R\sin(\theta + \alpha)\), and state its greatest value. Solve \(5\sin\theta + 12\cos\theta = 6.5\) for \(0^\circ \le \theta \le 360^\circ\).
 A: \(R = 13\), \(\tan\alpha = \tfrac{12}{5}\), \(\alpha = 67.38^\circ\). Greatest value \(13\). Solve \(\sin(\theta + 67.38^\circ) = 0.5\): \(u = 150^\circ\) or \(390^\circ\) (and \(30^\circ\) is too small), so \(\theta = 82.6^\circ\) or \(322.6^\circ\).
 Q: (Exam style) (a) Express \(\sqrt3\cos\theta + \sin\theta\) in the form \(R\cos(\theta - \alpha)\) with exact \(R\) and \(\alpha\) in radians. (b) Hence solve \(\sqrt3\cos\theta + \sin\theta = \sqrt2\) for \(0 \le \theta \le 2\pi\).
-A: (a) \(R\cos\alpha = \sqrt3\), \(R\sin\alpha = 1\), so \(R = 2\) and \(\tan\alpha = \dfrac{1}{\sqrt3}\), \(\alpha = \dfrac{\pi}{6}\). [M1 A1 A1] The form is \(2\cos\left(\theta - \dfrac{\pi}{6}\right)\). (b) \(\cos\left(\theta - \dfrac\pi6\right) = \dfrac{\sqrt2}{2}\). [M1] The angle \(u = \theta - \dfrac{\pi}{6}\) lies between \(-\dfrac{\pi}{6}\) and \(\dfrac{11\pi}{6}\). The values with \(\cos u = \dfrac{\sqrt2}{2}\) are \(u = \dfrac\pi4\) and \(u = \dfrac{7\pi}{4}\) (the value \(-\dfrac\pi4\) is below \(-\dfrac\pi6\), so it is out of range). [M1] Add \(\dfrac\pi6\): \(\theta = \dfrac{5\pi}{12}\) or \(\theta = \dfrac{23\pi}{12}\). [A1]
+A: (a) \(R\cos\alpha = \sqrt3\), \(R\sin\alpha = 1\), so \(R = 2\) and \(\tan\alpha = \dfrac{1}{\sqrt3}\), \(\alpha = \dfrac{\pi}{6}\). [M1 A1 A1] The form is \(2\cos\left(\theta - \dfrac{\pi}{6}\right)\). (b) \(\cos\left(\theta - \dfrac\pi6\right)\) \(= \dfrac{\sqrt2}{2}\). [M1] The angle \(u = \theta - \dfrac{\pi}{6}\) lies between \(-\dfrac{\pi}{6}\) and \(\dfrac{11\pi}{6}\). The values with \(\cos u = \dfrac{\sqrt2}{2}\) are \(u = \dfrac\pi4\) and \(u = \dfrac{7\pi}{4}\) (the value \(-\dfrac\pi4\) is below \(-\dfrac\pi6\), so it is out of range). [M1] Add \(\dfrac\pi6\): \(\theta = \dfrac{5\pi}{12}\) or \(\theta = \dfrac{23\pi}{12}\). [A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ Angle \(A\) is acute and \(\sin A = \tfrac{5}{13}\). Find the exact value of \(\sin 2A\).
+A: \(\cos A = \sqrt{1 - \tfrac{25}{169}}\) \(= \tfrac{12}{13}\). [B1] \(\sin 2A = 2\sin A\cos A\) [M1] \(= 2 \times \tfrac{5}{13} \times \tfrac{12}{13}\) \(= \tfrac{120}{169}\). [A1]
+Q: [3 marks] ★ Express \(5\sin\theta + 12\cos\theta\) in the form \(R\sin(\theta + \alpha)\), where \(R > 0\) and \(0^\circ < \alpha < 90^\circ\).
+A: \(R = \sqrt{25 + 144} = 13\). [B1] \(R\cos\alpha = 5\) and \(R\sin\alpha = 12\), so \(\tan\alpha = \tfrac{12}{5}\). [M1] \(\alpha = 67.4^\circ\). [A1]
+Q: [5 marks] ★★ Solve \(3\cos 2\theta + 5\cos\theta + 2 = 0\) for \(0^\circ \le \theta \le 360^\circ\).
+A: Use \(\cos 2\theta = 2\cos^2\theta - 1\): \(6\cos^2\theta + 5\cos\theta - 1 = 0\). [M1 A1] \((6\cos\theta - 1)(\cos\theta + 1) = 0\). [M1] \(\cos\theta = \tfrac16\) gives \(\theta = 80.4^\circ\) or \(279.6^\circ\). [A1] \(\cos\theta = -1\) gives \(\theta = 180^\circ\). [A1]
+Q: [4 marks] ★★ Show that \(\dfrac{\sin 2x}{1 + \cos 2x} \equiv \tan x\).
+A: \(\sin 2x = 2\sin x\cos x\). [B1] \(1 + \cos 2x = 1 + (2\cos^2 x - 1)\) \(= 2\cos^2 x\). [B1] So the fraction is \(\dfrac{2\sin x\cos x}{2\cos^2 x}\) [M1] \(= \dfrac{\sin x}{\cos x} = \tan x\). [A1]
+Q: [5 marks] ★★ Solve \(\sin(\theta + 60^\circ) = 2\cos\theta\) for \(0^\circ \le \theta \le 360^\circ\).
+A: \(\sin\theta\cos 60^\circ + \cos\theta\sin 60^\circ\) \(= 2\cos\theta\). [M1] \(\tfrac12\sin\theta + \tfrac{\sqrt3}{2}\cos\theta\) \(= 2\cos\theta\). [A1] \(\tfrac12\sin\theta\) \(= \left(2 - \tfrac{\sqrt3}{2}\right)\cos\theta\), so \(\tan\theta = 4 - \sqrt3\). [M1] \(\theta = 66.2^\circ\) [A1] or \(246.2^\circ\). [A1]
+Q: [6 marks] ★★ (a) Express \(8\sin\theta - 15\cos\theta\) in the form \(R\sin(\theta - \alpha)\), where \(R > 0\) and \(0^\circ < \alpha < 90^\circ\). (b) Hence solve \(8\sin\theta - 15\cos\theta = 6\) for \(0^\circ \le \theta \le 360^\circ\).
+A: (a) \(R = \sqrt{64 + 225} = 17\). [B1] \(R\cos\alpha = 8\) and \(R\sin\alpha = 15\), so \(\tan\alpha = \tfrac{15}{8}\). [M1] \(\alpha = 61.9^\circ\). [A1] (b) \(\sin(\theta - 61.9^\circ)\) \(= \tfrac{6}{17}\). [M1] \(\theta - 61.9^\circ = 20.7^\circ\) or \(159.3^\circ\), so \(\theta = 82.6^\circ\) [A1] or \(221.3^\circ\). [A1]
+Q: [8 marks] (#math.p1.trig) ★★★ (a) Show that \(\dfrac{1 - \cos 2\theta}{\sin 2\theta} \equiv \tan\theta\). (b) Hence show that \(\tan 15^\circ = 2 - \sqrt3\). (c) Hence solve \(\dfrac{1 - \cos 2\theta}{\sin 2\theta}\) \(= 2\) for \(0^\circ \le \theta \le 180^\circ\).
+H: Rewrite \(1 - \cos 2\theta\) with the form of \(\cos 2\theta\) that contains only \(\sin\theta\), and \(\sin 2\theta\) with the sine double angle formula.
+H: For (b), let \(\theta = 15^\circ\) in the identity. You then need the exact values of \(\cos 30^\circ\) and \(\sin 30^\circ\).
+H: For (c), the left side is \(\tan\theta\) by part (a).
+A: (a) \(1 - \cos 2\theta\) \(= 1 - (1 - 2\sin^2\theta)\) \(= 2\sin^2\theta\) [B1] and \(\sin 2\theta = 2\sin\theta\cos\theta\). [B1] The fraction is \(\dfrac{2\sin^2\theta}{2\sin\theta\cos\theta}\) \(= \dfrac{\sin\theta}{\cos\theta}\) \(= \tan\theta\). [M1 A1] (b) With \(\theta = 15^\circ\): \(\tan 15^\circ\) \(= \dfrac{1 - \cos 30^\circ}{\sin 30^\circ}\) [M1] \(= \dfrac{1 - \frac{\sqrt3}{2}}{\frac12}\) \(= 2 - \sqrt3\). [A1] (c) \(\tan\theta = 2\), so \(\theta = 63.4^\circ\). [M1 A1]
+Q: [10 marks] ★★★ The height \(h\) metres of the water at a harbour entrance, \(t\) hours after midnight, is modelled by \(h\) \(= 6 + 3\sin 30t^\circ + 2\cos 30t^\circ\), for \(0 \le t \le 12\). (a) Express \(3\sin\theta + 2\cos\theta\) in the form \(R\sin(\theta + \alpha)\), giving \(R\) and \(\alpha\) to 3 significant figures. (b) Find the greatest height of the water, and the first time it occurs. (c) Find the times when the height is 8.5 metres.
+H: Write \(30t\) as \(\theta\), so the height is \(6 + R\sin(\theta + \alpha)\). The greatest value of a sine is 1.
+H: The height is greatest when \(\theta + \alpha = 90^\circ\). Then change back to \(t\).
+H: For (c), solve \(R\sin(\theta + \alpha) = 2.5\). Find the first angle, then use \(180^\circ - \) it for the second, and check which values of \(t\) are at most 12.
+A: (a) \(R = \sqrt{13} = 3.61\). [B1] \(\tan\alpha = \tfrac23\), so \(\alpha = 33.7^\circ\). [M1 A1] (b) Greatest height \(= 6 + \sqrt{13} = 9.61\) m. [B1] This needs \(30t + 33.7 = 90\) [M1], so \(t = 1.88\) hours. [A1] (c) \(\sqrt{13}\sin(30t + 33.7^\circ) = 2.5\), so \(\sin(30t + 33.7^\circ) = 0.693\). [M1] \(30t + 33.7^\circ = 43.9^\circ\) or \(136.1^\circ\). [M1] \(t = 0.34\) hours [A1] or \(t = 3.41\) hours. [A1] (The next solution, \(t = 12.34\), is outside the range.)
+:::
+
+:::try Stretch for A*
+Q: [6 marks] ★★★ (a) Show that \(\sin 3\theta \equiv 3\sin\theta - 4\sin^3\theta\). (b) Hence solve \(\sin 3\theta = \sin\theta\) for \(0^\circ \le \theta \le 180^\circ\).
+H: Write \(3\theta = 2\theta + \theta\) and use the compound angle formula. Then replace \(\cos 2\theta\) and \(\cos^2\theta\) so only \(\sin\theta\) is left.
+H: For (b), the equation is a cubic in \(\sin\theta\) with no constant term. Factorise.
+A: (a) \(\sin 3\theta\) \(= \sin 2\theta\cos\theta + \cos 2\theta\sin\theta\) [M1] \(= 2\sin\theta\cos^2\theta + (1 - 2\sin^2\theta)\sin\theta\). [M1] \(= 2\sin\theta(1 - \sin^2\theta) + \sin\theta - 2\sin^3\theta\) \(= 3\sin\theta - 4\sin^3\theta\). [A1] (b) \(3\sin\theta - 4\sin^3\theta\) \(= \sin\theta\), so \(2\sin\theta - 4\sin^3\theta = 0\) and \(2\sin\theta(1 - 2\sin^2\theta) = 0\). [M1] \(\sin\theta = 0\) gives \(\theta = 0^\circ, 180^\circ\). [A1] \(\sin\theta = \tfrac{1}{\sqrt2}\) gives \(\theta = 45^\circ, 135^\circ\). [A1] (The value \(\sin\theta = -\tfrac{1}{\sqrt2}\) gives no angle in the range.)
+Q: [5 marks] ★★★ Find the greatest and least values of \(\dfrac{1}{7 + 3\sin\theta + 4\cos\theta}\).
+H: First write \(3\sin\theta + 4\cos\theta\) as \(R\sin(\theta + \alpha)\), and find its greatest and least values.
+H: A fraction is greatest when its denominator is least.
+A: \(3\sin\theta + 4\cos\theta\) \(= 5\sin(\theta + 53.1^\circ)\), so \(R = 5\). [B1] The denominator lies between \(7 - 5 = 2\) and \(7 + 5 = 12\). [M1] The fraction is greatest when the denominator is 2: greatest value \(\tfrac12\). [A1] It is least when the denominator is 12: least value \(\tfrac{1}{12}\). [M1 A1]
 :::
 
 :::quiz
@@ -231,25 +324,25 @@ A: (a) \(R\cos\alpha = \sqrt3\), \(R\sin\alpha = 1\), so \(R = 2\) and \(\tan\al
 + \(\dfrac{\sqrt6 - \sqrt2}{4}\)
 - \(\dfrac{\sqrt3 - 1}{2}\)
 - \(\dfrac{1}{2}\sin 30^\circ\)
-> \(\sin 15^\circ = \sin(45^\circ - 30^\circ) = \tfrac{\sqrt2}{2}\cdot\tfrac{\sqrt3}{2} - \tfrac{\sqrt2}{2}\cdot\tfrac12 = \dfrac{\sqrt6 - \sqrt2}{4}\). The plus version is \(\sin 75^\circ\). Halving \(\sin 30^\circ\) is not valid: \(\sin\) of half an angle is not half the sine.
+> \(\sin 15^\circ\) \(= \sin(45^\circ - 30^\circ)\) \(= \tfrac{\sqrt2}{2}\cdot\tfrac{\sqrt3}{2} - \tfrac{\sqrt2}{2}\cdot\tfrac12\) \(= \dfrac{\sqrt6 - \sqrt2}{4}\). The plus version is \(\sin 75^\circ\). Halving \(\sin 30^\circ\) is not valid: \(\sin\) of half an angle is not half the sine.
 ? Which expression equals \(\cos 2\theta\)?
 - \(2\cos\theta - 1\)
 - \(\cos^2\theta + \sin^2\theta\)
 + \(1 - 2\sin^2\theta\)
 - \(2\sin\theta\cos\theta\)
-> \(\cos 2\theta = 1 - 2\sin^2\theta = 2\cos^2\theta - 1 = \cos^2\theta - \sin^2\theta\). The option with a single \(\cos\theta\) forgets the square. \(\cos^2\theta + \sin^2\theta = 1\) is the Pythagorean identity, and \(2\sin\theta\cos\theta\) is \(\sin 2\theta\).
+> \(\cos 2\theta = 1 - 2\sin^2\theta\) \(= 2\cos^2\theta - 1\) \(= \cos^2\theta - \sin^2\theta\). The option with a single \(\cos\theta\) forgets the square. \(\cos^2\theta + \sin^2\theta = 1\) is the Pythagorean identity, and \(2\sin\theta\cos\theta\) is \(\sin 2\theta\).
 ? \(\cos(A + B)\) is equal to
 - \(\cos A\cos B + \sin A\sin B\)
 + \(\cos A\cos B - \sin A\sin B\)
 - \(\sin A\cos B + \cos A\sin B\)
 - \(\cos A + \cos B\)
 > For cosine the sign in the middle is the opposite of the sign in the bracket, so \(\cos(A + B)\) has a minus. The first option is \(\cos(A - B)\), the third is \(\sin(A + B)\).
-? In \(3\sin\theta + 4\cos\theta = R\sin(\theta + \alpha)\), the value of \(\tan\alpha\) is
+? In \(3\sin\theta + 4\cos\theta\) \(= R\sin(\theta + \alpha)\), the value of \(\tan\alpha\) is
 - \(\tfrac34\)
 + \(\tfrac43\)
 - \(5\)
 - \(\tfrac35\)
-> Matching \(R\cos\alpha = 3\) and \(R\sin\alpha = 4\) gives \(\tan\alpha = \dfrac{R\sin\alpha}{R\cos\alpha} = \tfrac43\). Inverting this to \(\tfrac34\) is the common slip. \(R = 5\), and \(\tfrac35\) is \(\cos\alpha\).
+> Matching \(R\cos\alpha = 3\) and \(R\sin\alpha = 4\) gives \(\tan\alpha\) \(= \dfrac{R\sin\alpha}{R\cos\alpha}\) \(= \tfrac43\). Inverting this to \(\tfrac34\) is the common slip. \(R = 5\), and \(\tfrac35\) is \(\cos\alpha\).
 ? What is the greatest value of \(\dfrac{1}{4 + 3\sin\theta}\)?
 - \(\tfrac17\)
 + \(1\)
@@ -258,12 +351,22 @@ A: (a) \(R\cos\alpha = \sqrt3\), \(R\sin\alpha = 1\), so \(R = 2\) and \(\tan\al
 > The fraction is greatest when the denominator is smallest, which is \(4 - 3 = 1\), so the greatest value is \(1\). Using \(4 + 3 = 7\) gives the least value, \(\tfrac17\).
 :::
 
+:::checklist What you can now do
+- [ ] I can define sec, cosec and cot, and sketch the graphs of all six trigonometric functions.
+- [ ] I can use \(\sec^2\theta \equiv 1 + \tan^2\theta\) and \(\operatorname{cosec}^2\theta \equiv 1 + \cot^2\theta\) to solve equations.
+- [ ] I can use the compound angle formulae to find exact values and to solve equations.
+- [ ] I can use the double angle formulae, choosing the right form of \(\cos 2A\).
+- [ ] I can prove identities and use "hence" to find an exact value or to solve an equation.
+- [ ] I can write \(a\sin\theta + b\cos\theta\) as \(R\sin(\theta \pm \alpha)\) or \(R\cos(\theta \pm \alpha)\).
+- [ ] I can use the \(R\) form to solve equations and to find greatest and least values.
+:::
+
 :::recap
-- \(\sec\theta = \dfrac1{\cos\theta}\), \(\operatorname{cosec}\theta = \dfrac1{\sin\theta}\), \(\cot\theta = \dfrac1{\tan\theta}\); the calculator has no keys, so use the reciprocal. \(|\sec|\) and \(|\operatorname{cosec}| \ge 1\).
+- \(\sec\theta = \dfrac1{\cos\theta}\), \(\operatorname{cosec}\theta\) \(= \dfrac1{\sin\theta}\), \(\cot\theta = \dfrac1{\tan\theta}\); the calculator has no keys, so use the reciprocal. \(|\sec|\) and \(|\operatorname{cosec}| \ge 1\).
 - \(\sec^2\theta \equiv 1 + \tan^2\theta\) and \(\operatorname{cosec}^2\theta \equiv 1 + \cot^2\theta\) turn mixed equations into quadratics.
-- \(\sin(A \pm B) = \sin A\cos B \pm \cos A\sin B\); \(\cos(A \pm B) = \cos A\cos B \mp \sin A\sin B\); \(\tan(A \pm B) = \dfrac{\tan A \pm \tan B}{1 \mp \tan A\tan B}\).
-- \(\sin 2A = 2\sin A\cos A\); \(\cos 2A = \cos^2 A - \sin^2 A = 2\cos^2 A - 1 = 1 - 2\sin^2 A\); \(\tan 2A = \dfrac{2\tan A}{1 - \tan^2 A}\).
-- \(a\sin\theta + b\cos\theta = R\sin(\theta + \alpha)\) with \(R = \sqrt{a^2 + b^2}\), \(\tan\alpha = \dfrac ba\). The greatest value is \(R\), the least \(-R\).
+- \(\sin(A \pm B)\) \(= \sin A\cos B \pm \cos A\sin B\); \(\cos(A \pm B)\) \(= \cos A\cos B \mp \sin A\sin B\); \(\tan(A \pm B)\) \(= \dfrac{\tan A \pm \tan B}{1 \mp \tan A\tan B}\).
+- \(\sin 2A = 2\sin A\cos A\); \(\cos 2A = \cos^2 A - \sin^2 A\) \(= 2\cos^2 A - 1 = 1 - 2\sin^2 A\); \(\tan 2A\) \(= \dfrac{2\tan A}{1 - \tan^2 A}\).
+- \(a\sin\theta + b\cos\theta\) \(= R\sin(\theta + \alpha)\) with \(R = \sqrt{a^2 + b^2}\), \(\tan\alpha = \dfrac ba\). The greatest value is \(R\), the least \(-R\).
 - Factorise instead of dividing by a trig function that might be zero. Change the interval when the angle is \(2x\) or \(\theta + \alpha\).
 :::
 

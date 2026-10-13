@@ -66,4 +66,40 @@ eq("t11 se", round(se, 4), 1.0277); eq("t11 margin", round(2.576 * 1.0277, 3), 2
 eq("t11 lo", sf(52.4 - 2.576 * se), 49.8); eq("t11 hi", sf(52.4 + 2.576 * se), 55.0); assert 52.4 + 2.576 * se < 56
 # quiz
 eq("q1", 30 / 4, 7.5); eq("q2", 12 / sqrt(16), 3); eq("q2 wrong", 12 / 16, 0.75)
+
+# ---- P14 additions ----
+from math import comb as _comb
+from statistics import NormalDist as _ND
+_N = _ND()
+# warm-up
+eq("w1 mean", 85 / 10, 8.5); eq("w1 var", 762 / 10 - 8.5 ** 2, 3.95); eq("w1 sd", sf(sqrt(3.95)), 1.99)
+eq("w2a", 3 * 7, 21); eq("w2b", 9 * 7, 63); eq("w3 z", sf(_N.inv_cdf(0.9), 4), 1.282); eq("w3", sf(40 + 1.282 * 6), 47.7)
+# proof check: population {0, 2}
+import itertools as _it
+vals = [0, 2]; tot_n1 = tot_n = 0
+for pair in _it.product(vals, repeat=2):
+    m = sum(pair) / 2; ss = sum((v - m) ** 2 for v in pair); tot_n1 += ss / 1; tot_n += ss / 2
+eq("proof n-1", tot_n1 / 4, 1); eq("proof n", tot_n / 4, 0.5)
+# spot the error
+eq("sp se", 10 / sqrt(25), 2); eq("sp wrong lo", sf(64 - 19.6), 44.4); eq("sp wrong hi", sf(64 + 19.6), 83.6)
+eq("sp lo", sf(64 - 3.92), 60.1); eq("sp hi", sf(64 + 3.92), 67.9)
+# exam practice
+eq("e1 mean", 465 / 30, 15.5); eq("e1 num", round(7482 - 465 ** 2 / 30, 1), 274.5); eq("e1", sf(274.5 / 29), 9.47)
+eq("e2 sd", 30 / 4, 7.5); eq("e2 z", round(-10 / 7.5, 3), -1.333); eq("e2", sf(_N.cdf(-10 / 7.5)), 0.0912)
+eq("e3 se", 2.4 / 6, 0.4); eq("e3 m", sf(2.576 * 0.4, 3), 1.03); eq("e3 lo", sf(18.7 - 2.576 * .4), 17.7); eq("e3 hi", sf(18.7 + 2.576 * .4), 19.7)
+se = 4.2 / sqrt(70); eq("e4 sd", sf(se), 0.502); eq("e4 z", round(1 / se, 3), 1.992); eq("e4", sf(1 - _N.cdf(1 / se)), 0.0232)
+ph = 148 / 400; s5 = sqrt(ph * (1 - ph) / 400)
+eq("e5 p", ph, 0.37); eq("e5 se", round(s5, 5), 0.02414); eq("e5 m", round(1.96 * s5, 4), 0.0473)
+eq("e5 lo", sf(ph - 1.96 * s5), 0.323); eq("e5 hi", sf(ph + 1.96 * s5), 0.417); assert 0.323 < 0.40 < 0.417
+eq("e6 mean", (21.4 + 24.6) / 2, 23); eq("e6 m", 24.6 - 23, 1.6); eq("e6 z", round(_N.inv_cdf(0.99), 3), 2.326)
+eq("e6 s", sf(1.6 * sqrt(50) / _N.inv_cdf(0.99)), 4.86)
+eq("e7 E", 2 ** 3 / 6, 4 / 3); eq("e7 E2", 2 ** 4 / 8, 2); eq("e7 V", 2 - 16 / 9, 2 / 9)
+eq("e7 var", 2 / 9 / 40, 1 / 180); eq("e7 sd", sf(sqrt(1 / 180), 3), 0.0745)
+z7 = (1.4 - 4 / 3) / sqrt(1 / 180); eq("e7 z", round(z7, 3), 0.894); eq("e7", sf(1 - _N.cdf(z7)), 0.186)
+# stretch
+a_ = 10 / 40; eq("s1 a", a_, 0.25)
+eq("s1 var", a_ ** 2 * 16 / 10 + (1 - a_) ** 2 * 16 / 30, 0.4); eq("s1 parts", 1 / 16 * 16 / 10, 0.1); eq("s1 parts2", 9 / 16 * 16 / 30, 0.3)
+best = min((x / 1000 for x in range(1001)), key=lambda t: t ** 2 * 16 / 10 + (1 - t) ** 2 * 16 / 30); eq("s1 argmin", best, 0.25)
+eq("s2 b", sf(0.95 ** 20), 0.358); eq("s2 b4", round(0.95 ** 20, 4), 0.3585); eq("s2 mid", round(20 * 0.05 * 0.95 ** 19, 4), 0.3774)
+eq("s2 c", sf(1 - 0.95 ** 20 - 20 * 0.05 * 0.95 ** 19), 0.264)
 print("ok")

@@ -81,4 +81,54 @@ eq("T10 max", 4 * exp(-2), 0.5413, 1e-4); eq("T10 d2 at 2", exp(-2) * (4 - 8 + 2
 # quiz
 chk("Q1", lambda x: exp(5 * x), lambda x: 5 * exp(5 * x), xs=(0.2, 0.5)); chk("Q2", lambda x: log(3 * x), lambda x: 1 / x)
 chk("Q3", lambda x: x * sin(x), lambda x: sin(x) + x * cos(x)); assert 2 / (2 * 3) == 1 / 3
+
+# ---- v2 additions: warm-up, proofs, spot the error, exam practice, stretch ----
+chk("warm-up chain", lambda x: (3 * x + 1) ** 5, lambda x: 15 * (3 * x + 1) ** 4, xs=(0.1, -0.2, 0.3))
+eq("warm-up x", 0.5 * log(5), log(5) / 2); eq("warm-up e^2x", exp(2 * 0.5 * log(5)), 5)
+for x in (0.3, 1.1): eq("warm-up sin2x", sin(x) * cos(x), 0.5 * sin(2 * x))
+eq("proof k(2)", log(2), 0.693, 5e-4); eq("proof k(3)", log(3), 1.099, 5e-4)       # proof of e^x
+for a in (2, 3, e): eq("proof limit (a^h-1)/h", (a ** 1e-7 - 1) / 1e-7, log(a), 1e-6)
+chk("proof ln x", log, lambda x: 1 / x)
+for h in (1e-4, 1e-6):                                                              # proof of sin x
+    eq("sin limit", sin(h) / h, 1, 1e-7); eq("1 - cos limit", (cos(h) - 1) / h, 0, 1e-3)
+    eq("identity cos h - 1", cos(h) - 1, -sin(h) ** 2 / (1 + cos(h)), 1e-12)
+for h in (0.2, 0.7, 1.2): assert sin(h) < h < tan(h) and cos(h) < sin(h) / h < 1
+chk("proof sin", sin, cos)
+u = lambda x: x * x + 1; v = lambda x: x + 1                                       # product rule widget numbers
+assert u(1) == 2 and v(1) == 2 and 2 * 2 + 2 * 1 == 6 and 3 * 1 + 2 * 1 + 1 == 6
+for h in (0.05, 0.5, 1.0):
+    eq("widget dy/h", (u(1 + h) * v(1 + h) - u(1) * v(1)) / h, 6 + 4 * h + h * h)
+    du = u(1 + h) - u(1); dv = v(1 + h) - v(1)
+    eq("widget split", u(1 + h) * v(1 + h) - 4, v(1) * du + u(1) * dv + du * dv)
+chk("proof product", lambda x: u(x) * v(x), lambda x: 2 * x * v(x) + u(x) * 1)
+chk("proof quotient", lambda x: sin(x) / (x + 2), lambda x: ((x + 2) * cos(x) - sin(x)) / (x + 2) ** 2)
+chk("spot", lambda x: x * x * sin(3 * x), lambda x: 3 * x * x * cos(3 * x) + 2 * x * sin(3 * x))
+eq("spot correct", d(lambda x: x * x * sin(3 * x), 0.7), 0.4664, 5e-5)
+eq("spot wrong", 0.7 ** 2 * cos(2.1) + 2 * 0.7 * sin(2.1), 0.9611, 5e-5)
+chk("Q1", lambda x: 3 * exp(-2 * x) + 5 * log(4 * x), lambda x: -6 * exp(-2 * x) + 5 / x)  # exam practice
+chk("Q2", lambda x: x ** 3 * log(x), lambda x: x * x + 3 * x * x * log(x))
+chk("Q3", lambda x: sin(x) / (1 + cos(x)), lambda x: 1 / (1 + cos(x)), xs=(0.4, 1.3, 2.2))
+for t in (0.3, 1.4, -2.0):                                                          # Q4 parametric
+    dydx = (6 * t * t - 6) / (6 * t); eq("Q4 dy/dx", dydx, (t * t - 1) / t)
+    eq("Q4 numeric", ((2 * (t + 1e-6) ** 3 - 6 * (t + 1e-6)) - (2 * (t - 1e-6) ** 3 - 6 * (t - 1e-6))) / ((3 * (t + 1e-6) ** 2) - (3 * (t - 1e-6) ** 2)), dydx, 1e-4)
+assert (3 * 1, 2 - 6) == (3, -4) and (3 * 1, -2 + 6) == (3, 4)
+assert 1 + 2 + 4 == 7                                                               # Q5 implicit
+Fx = lambda x, y: 2 * x + y; Fy = lambda x, y: x + 2 * y
+eq("Q5 gradient", -Fx(1, 2) / Fy(1, 2), -0.8); assert 4 * 1 + 5 * 2 == 14
+chk("Q6", lambda x: log(x) / x ** 2, lambda x: (1 - 2 * log(x)) / x ** 3)
+eq("Q6 x", sqrt(e), e ** 0.5); eq("Q6 y", log(sqrt(e)) / e, 1 / (2 * e)); eq("Q6 zero", (1 - 2 * log(sqrt(e))), 0)
+chk("Q7a", lambda x: exp(2 * x) * sin(x), lambda x: exp(2 * x) * (2 * sin(x) + cos(x)))   # Q7
+R = sqrt(5); al = atan(1 / 2); eq("Q7 R", R, sqrt(2 ** 2 + 1)); eq("Q7 alpha", al, 0.464, 5e-4)
+for x in (0.2, 1.5, 3.0): eq("Q7 form", 2 * sin(x) + cos(x), R * sin(x + al))
+eq("Q7 x", pi - al, 2.68, 5e-3); eq("Q7 stat", 2 * sin(pi - al) + cos(pi - al), 0, 1e-12)
+assert 2 ** 3 + 4 ** 3 == 9 * 2 * 4 == 72                                          # Q8 folium
+Fx = lambda x, y: 3 * x * x - 9 * y; Fy = lambda x, y: 3 * y * y - 9 * x
+eq("Q8 gradient", -Fx(2, 4) / Fy(2, 4), 0.8); eq("Q8 formula", (3 * 4 - 2 ** 2) / (4 ** 2 - 3 * 2), 0.8)
+assert 4 * 2 - 5 * 4 + 12 == 0
+x = 54 ** (1 / 3); y = x * x / 3; eq("Q8 x", x, 3.78, 5e-3); eq("Q8 on curve", x ** 3 + y ** 3, 9 * x * y, 1e-9); eq("Q8 numerator", 3 * y - x * x, 0)
+for x in (0.5, 1.7, 3.0): eq("S1 identity", x ** x, exp(x * log(x)))                     # stretch
+chk("S1", lambda x: x ** x, lambda x: x ** x * (log(x) + 1), xs=(0.5, 1.2, 2.5))
+eq("S1 min", exp(-1 / e), 0.692, 5e-4); eq("S1 min check", (1 / e) ** (1 / e), exp(-1 / e))
+assert all((1 / e) ** (1 / e) <= x ** x for x in [i / 100 for i in range(1, 400)])
+eq("S2 tangent", log(e) - (1 / e) * e, 0)
 print("ok")

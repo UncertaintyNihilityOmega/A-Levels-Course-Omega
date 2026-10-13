@@ -138,9 +138,13 @@ New widgets (build in the package named; follow kit/WIDGETS.md):
   statistics, use the IAL S1/S2/S3 split above (the binomial distribution is IAL S2, not S1).
 
 ## Saving tokens (Writers: follow these, every message re-sends the whole session)
-- **widgets.js is about 100 KB: never Read it whole.** Find the end with `grep -n "W.register" widgets.js`
-  and `tail -n 15 widgets.js`, then add a new widget with one Edit just before the closing lines. To copy a
-  pattern, Read only that widget's range (offset/limit).
+- **New widgets go in their own file `widgets/<name>.js`** (one `W.register` each, kit/WIDGETS.md), built on
+  the `W` helpers (`W.axes`, `W.sliderNum`, `W.readout`, `W.palette`, `W.drag`, `W.animate`, `W.view3d`,
+  `W.rng`, `W.stepper`). New `proof` scenes are Edits to `widgets/proof.js`. **widgets.js (≈100 KB) is for the
+  old widgets only: never Read it whole**; for the new `graph` options, grep for the graph widget and Read only
+  that range (offset/limit).
+- Test widgets with `node kit/zta.js widget <name> '…' --probe` first (errors, NaN, overflow in light, dark and
+  phone, as text). Take one `scale: 0.5` screenshot per widget only after the probe is clean.
 - FACTS.md: grep the topic number (`grep -n "^- 5.4" FACTS.md`) instead of reading it. Never open other chapters.
 - Browser: test with `javascript_tool` probes first (scrollWidth vs innerWidth, text containing NaN or
   undefined, `merror` count). Take screenshots only at `scale: 0.5`, at most one per widget per mode
@@ -172,14 +176,50 @@ Add them; don't rewrite the existing teaching. Order inside the chapter:
 3. **Spot the error** before the try block: `:::eg Spot the error` showing a student's marked answer with
    one realistic slip; the working names the line, the lost mark (e.g. "A0: sign error") and the fix.
 4. **Exam practice** after the existing try block: `:::try Exam practice ★ to ★★★` with 6–8 original
-   exam-style questions (★ one method, ★★ two steps, ★★★ multi-part or synoptic), [n marks] in each `Q:`,
-   and answers with M/A/B marks on the line that earns them. At least one ★★★ uses an earlier chapter's skill.
+   exam-style questions (★ one method, ★★ two steps, ★★★ multi-part or synoptic), each written
+   `Q: [n marks] ★★ …`, and answers with M/A/B marks on the line that earns them. At least one ★★★ uses an
+   earlier chapter's skill and then also carries `(#that-chapter)`. Every ★★★ question gets 2–3 `H:` hints
+   (the first names the method, the last nearly gives the first line).
 5. **Stretch for A\***: `:::try Stretch for A*`, 1–2 problems in an unfamiliar context (P3 is 55% AO2), with
-   full solutions.
-6. Leave the quiz, recap, links box and Next line as they are (add 1–2 quiz items if the chapter has < 5).
+   `H:` hints and full solutions.
+6. **I can…** checklist just before `:::recap`: `:::checklist What you can now do` with 5–10 lines
+   `- [ ] I can …`, one per learning outcome of this chapter in FACTS.md (in the student's words, concrete:
+   "I can find the set of values of k for which a line meets a curve"). Foundations: 4–6 lines from the chapter.
+7. Leave the quiz, recap, links box and Next line as they are (add 1–2 quiz items if the chapter has < 5).
 - Thin chapters (inttech, diffeq, vectors, complex, perms, prob, drv, normal): at least two more fully marked
   long exam examples (`:::eg (Exam style)`, 8–12 marks, several parts).
 - Every new number goes into `checks/<id>.py`. Expect +1200–2000 words per chapter.
+- (REVIEW P9–P10) **Phone width:** inline \( … \) does not wrap on phones. Keep each inline piece short (one
+  relation, about 30 characters): write "\(a = b\), so \(c = d\)" rather than one long \(a = b = c = d\) chain,
+  and put chains of three or more steps in `\[\begin{aligned} … \end{aligned}\]`. This matters most in try answers.
+- (REVIEW P9–P10) **Spot the error marks:** a wrong formula or wrong method scores M0 (and so A0); an arithmetic
+  slip inside a right method keeps the M1. Say which, and let later parts earn follow-through (ft) marks.
+- (REVIEW P11–P12) **Spot the error mark count:** name each mark of the scheme once, on the line that earns or loses
+  it, so the marks shown add up to the `[n marks]` in the question and the "scores k out of n" sentence. Don't
+  write "[M1]" and then "[M0 A0]" for the same step.
+- (REVIEW P11–P12) **Measure phone width before finishing.** P11–P12 still had about 55 inline chains wider than a
+  375 px phone. In the browser pane, set the mobile viewport, open the chapter, and run this in the page:
+  `document.querySelectorAll('details').forEach(d=>d.open=true); [...document.querySelectorAll('math:not([display=block])')].filter(m=>m.getBoundingClientRect().right>377).map(m=>m.textContent.slice(0,50))`
+  Split every inline chain it lists (one relation per `\( … \)`, or a `\[\begin{aligned} … \end{aligned}\]` line).
+
+- (REVIEW P13–P14) **Mark totals in older examples too:** when you add sections, also re-add the marks of every existing
+  `:::eg (Exam style)` and try answer; the `[n marks]` must equal the marks shown (P14 had one at [9] showing 10).
+- (REVIEW P13–P14) **Table values from exact inputs:** compute critical values, z-values and percentage points in
+  `checks/<id>.py` from exact quantiles (e.g. `NormalDist().inv_cdf`), never from 3-d.p. inputs; P14 had two
+  correlation critical values wrong in the 4th decimal. For mechanics, recompute with g = 10 exactly.
+
+- (REVIEW P15–P16) **Count the marks before you finish.** A mark count over every chapter found five `[n marks]`
+  that did not match the marks shown (m.newton showed 11 under [10], m.energy 9 under [8], f.algebra 7 under [8],
+  p3.numerical 4 under [3], s1.drv 6 under [5]). For mocks and mixed practice this matters most: the paper total must be
+  exact. Write every mark as a separate `[M1]`, `[A1]`, `[B1]` token on its line (not "[M1 for two correct]" and not
+  inside `\( … \)`), so that a count of the tokens in each answer equals its `[n marks]`.
+- (REVIEW P15–P16) **Name chapters by their title and link them**: "as in [Further trigonometry](#math.p3.trig)",
+  never "the Trigonometry chapter" when two chapters could be meant.
+- (REVIEW P17–P18) **Mocks: one `:::try` per question** (bare `:::try`, no title). All six mocks had been written as
+  one `:::try Questions 1 to n`, which the page shows as a single "Question 1" with every question unnumbered.
+  Question parts (a), (b), … and stem lines between them need a **blank line** before them, or they run together.
+- (REVIEW P17–P18) **Row breaks are `\\`**: five `aligned` blocks (f.algebra, p3.integ, mixed.mech) had ` \ `
+  (a space) between rows, so the rows ran into one line. Check any script that writes LaTeX for lost backslashes.
 
 ### Proofs per chapter (★ = embed the `proof` widget scene)
 f.geometry: Pythagoras ★pythagoras, angle sum, sine rule, cosine rule ★cosinerule, ½ab sin C ·
@@ -211,8 +251,13 @@ m.projectiles: trajectory is a parabola; 45° maximum range (embed `projectile`)
   presenting long answers; links to road.commands and road.technique.
 - **math.exam.p1 / p23 / p4 / p5 / p6** (guide, P9): duration and marks (FACTS) → minutes per mark; which
   routes include the paper; the paper's MF19 entries and what must be learned; a topic list linking each
-  chapter; the top lost marks gathered from the chapters' `:::warn` boxes; a 10-item final-week checklist.
+  chapter; the top lost marks gathered from the chapters' `:::warn` boxes; a 10-item final-week checklist
+  as `:::checklist Final week`; and `:::progress P1` (p23 has both `:::progress P2` and `:::progress P3`) so
+  the student sees their ticked outcomes for that paper. The `:::warn` lines may be gathered with grep
+  (`grep -A4 "^:::warn" chapters/math.p1.*.md`), not by reading whole chapters. Link the mock paper for the
+  paper (math.mock.p1a etc.) as "coming soon" text: the links show once the mocks exist.
   **No** grade boundaries, question-position or frequency claims.
+- **math.overview** (P16): add `:::progress` (all papers) under "How to reach an A*".
 - **math.proof** (ext, P16): deduction, exhaustion, counter-example, contradiction (√2, infinitely many
   primes), a taste of induction; board box: the UK A Level examines proof, 9231 examines induction.
 - **Mixed practice** `math.mixed.*` (ref, P17–P18): 25–35 short, interleaved questions ordered ★ → ★★★, each
@@ -226,6 +271,18 @@ m.projectiles: trajectory is a parabola; 45° maximum range (embed `projectile`)
   total and recomputes every answer. Never reuse past-paper questions or numbers.
 
 ### New widgets (kit/WIDGETS.md; test light, dark, phone, bad input)
+- **BUILT in P10** (do not rebuild): `widgets/proof.js` (scenes completesquare, inverse, perp, sector, apsum,
+  gpsum, pascal, chordlimit, ftc, discs; to add a scene write one `S.<name> = {title, height, sliders, lines,
+  result, live, draw(g)}` object, copy a short one such as `S.sector`; use `axes(g, …, true)` for equal scales),
+  `widgets/area.js` (`data-f`, `data-x "a,b"`, `data-n`, `data-mode riemann|trapezium|volume`, optional
+  `data-y`; embedded in p1.integ; reuse `trapezium` in p3.numerical), and the graph options in widgets.js:
+  `data-tangent="x0"` with `data-chord="h"` (draggable red point, tangent vs chord gradients; p1.diff) and
+  `data-shade-between="f; g"` with optional `data-shade-x "a,b"` (shows the enclosed area; p1.integ).
+- **BUILT in P12** (do not rebuild): `widgets/slopefield.js` (`data-f "x/y"`, `data-x`, `data-y`, `data-start`; click or drag draws the
+  RK4 solution; editable f; in p3.diffeq twice), `widgets/vectors3d.js` (`data-lines "a|d; a|d"`, optional `data-point`
+  and `data-skew`; editable numbers, drag to rotate, verdict, acute angle, foot of the perpendicular; in p3.vectors),
+  and the proof scene `dotcosine` (p3.vectors). In P12 try answers, chains of integrals went into `\[ … \]` lines
+  inside the `A:` text (the page renders them; inline chains widen the page at 375 px).
 - **proof** (P10, scenes added in P11–P16): `data-proof="<scene>"`. An SVG diagram plus a list of algebra
   lines; Back/Next buttons (and ←/→ keys) step through them, highlighting the part of the diagram each line uses.
   Sliders where a limit is involved (h → 0 for chordlimit/sinlimit/expderiv, n → ∞ for gpsum, strips for

@@ -67,4 +67,42 @@ eq("t8c", sf(comb(5, 2) * 0.0511 ** 2 * 0.9489 ** 3), 0.0223)
 
 # Quiz
 eq("20 s mean", 6 / 3, 2); eq("np 200", 200 * 0.01, 2)
+
+# ---- P14 additions ----
+from math import log
+# warm-up
+eq("w1", sf(comb(10, 2) * 0.2 ** 2 * 0.8 ** 8), 0.302)
+eq("w2", sf(1 - Z.cdf(1.5), 3), 0.0668); eq("w3", sf(log(7) / 2), 0.973)
+# proof check: B(n, 3/n) -> Po(3), r = 2
+for n, want in ((100, 0.2252), (1000, 0.2242)):
+    eq(f"proof n={n}", round(comb(n, 2) * (3 / n) ** 2 * (1 - 3 / n) ** (n - 2), 4), want)
+eq("proof Po", round(po(3, 2), 4), 0.2240)
+bb = sum(comb(100, k) * 0.03 ** k * 0.97 ** (100 - k) for k in range(3)); eq("widget B(100,.03)", sf(bb), 0.42)
+eq("po3 le2", sf(cdf(3, 2)), 0.423)
+# spot the error
+eq("sp z", round((35.5 - 30) / sqrt(30), 3), 1.004); eq("sp good", sf(1 - Z.cdf((35.5 - 30) / sqrt(30))), 0.158)
+eq("sp exact", sf(1 - cdf(30, 35)), 0.157)
+eq("sp wrong z", round((34.5 - 30) / sqrt(30), 3), 0.822); eq("sp wrong", sf(1 - Z.cdf((34.5 - 30) / sqrt(30))), 0.206)
+# exam practice
+eq("e1a", sf(po(2.5, 3)), 0.214); eq("e1b", sf(1 - exp(-2.5)), 0.918)
+eq("e2a", sf(exp(-3)), 0.0498); eq("e2b in", round(exp(-1.5) * 2.5, 4), 0.5578); eq("e2b", sf(1 - exp(-1.5) * 2.5), 0.442)
+eq("e4b", sf(cdf(1.8, 1)), 0.463)
+ex = 0.985 ** 120 + 120 * 0.015 * 0.985 ** 119; eq("e4c", sf(ex), 0.461)
+z1, z2 = (14.5 - 18) / sqrt(18), (20.5 - 18) / sqrt(18)
+eq("e5 z1", round(z1, 3), -0.825); eq("e5 z2", round(z2, 3), 0.589); eq("e5", sf(Z.cdf(z2) - Z.cdf(z1)), 0.517)
+p8 = 1 - cdf(6, 8); eq("e6 cdf", round(cdf(6, 8), 4), 0.8472); eq("e6a", sf(p8), 0.153); eq("e6 p", round(p8, 4), 0.1528)
+eq("e6b", sf(1 - exp(-1.5) * 2.5), 0.442); eq("e6c", sf(comb(5, 2) * p8 ** 2 * (1 - p8) ** 3), 0.142)
+pa = 1 - exp(-0.9) * 1.9; eq("e7a", round(pa, 4), 0.2275)
+eq("e7b", sf(comb(10, 3) * pa ** 3 * (1 - pa) ** 7), 0.232)
+z = (33.5 - 27) / sqrt(27); eq("e7 z", round(z, 3), 1.251); eq("e7c", sf(1 - Z.cdf(z)), 0.105)
+# stretch
+eq("s1 po", round(po(4, 2), 4), 0.1465); eq("s1a", sf(po(4, 2) * 0.75 ** 2), 0.0824)
+eq("s1b", exp(-4) * exp(1), exp(-3))
+eq("s1b series", sum(exp(-4) * 4 ** n / factorial(n) * 0.25 ** n for n in range(60)), exp(-3))
+xs = [2, 5, 0, 7, 1, 6, 3, 9, 0, 4]
+eq("s2 sum", sum(xs), 37); eq("s2 sumsq", sum(a * a for a in xs), 221)
+eq("s2 var", sum(a * a for a in xs) / 10 - 3.7 ** 2, 8.41)
+# quiz
+eq("q1 a", sf(1 - 8.5 * exp(-3)), 0.577); eq("q1 b", sf(1 - 4.5 * exp(-3)), 0.776)
+eq("q1 c", sf(1 - 4 * exp(-3)), 0.801); eq("q1 d", sf(4 * exp(-3)), 0.199)
 print("ok")

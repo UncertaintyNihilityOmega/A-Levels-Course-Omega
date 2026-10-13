@@ -11,6 +11,15 @@ A graph turns an equation into a picture, and many A Level questions are easier 
 
 **Before you start**, you need [Algebra from scratch](#math.f.algebra) and [Indices, surds and standard form](#math.f.powers). This chapter ends at the point where [Coordinate geometry](#math.p1.coord) begins.
 
+:::try Warm-up
+Q: Solve \(2x - 7 < 5\). (from [Algebra from scratch](#math.f.algebra))
+A: \(2x < 12\), so \(x < 6\).
+Q: Evaluate \(4^{-1/2}\). (from [Indices, surds and standard form](#math.f.powers))
+A: \(4^{-1/2} = \dfrac{1}{4^{1/2}} = \dfrac{1}{2}\).
+Q: Rearrange \(3x + 2y = 12\) to the form \(y = \ldots\). (from [Algebra from scratch](#math.f.algebra))
+A: \(2y = 12 - 3x\), so \(y = 6 - \tfrac32 x\).
+:::
+
 ## Coordinates and plotting
 
 A point is located by its **coordinates** \((x, y)\): go \(x\) units along the horizontal axis (right if positive) and \(y\) units up the vertical axis (up if positive). The axes cross at the **origin** \(O(0, 0)\) and divide the plane into four quadrants. The point where a graph crosses the \(y\)-axis is the **\(y\)-intercept** (there \(x = 0\)). Where it crosses the \(x\)-axis the point is an **\(x\)-intercept** (there \(y = 0\)). The \(x\)-intercepts of a curve are its **roots**.
@@ -149,6 +158,19 @@ Check in the curve: \(3^2 = 9\) and \((-1)^2 = 1\). ✓
 After you find the \(x\)-values, the question asks for **coordinates**. A solution with only \(x\)-values loses the final mark. Substitute into the line (the simpler equation) and check in the curve.
 :::
 
+:::eg Spot the error: find the equation of the line through \(A(2, -1)\) and \(B(5, 8)\).
+The question is worth 4 marks: one method and one accuracy mark for the gradient, and the same for the equation. A student wrote this answer.
+
+Line 1: gradient \(= \dfrac{x_2 - x_1}{y_2 - y_1} = \dfrac{5 - 2}{8 - (-1)} = \dfrac{3}{9} = \dfrac13\) [M0] [A0]
+Line 2: \(y - (-1) = \tfrac13(x - 2)\), so \(y = \tfrac13 x - \tfrac53\) [M1] [A0]
+
+**Line 1 is wrong.** The student divided the change in \(x\) by the change in \(y\): the gradient is the other way up, "up over along". Using the wrong formula is a wrong method, so there is no method mark and no accuracy mark for the gradient. Line 2 is a correct method applied to the student's gradient, so the second method mark is earned, but the equation itself is wrong. The student scores 1 out of 4.
+
+Correct working: gradient \(= \dfrac{8 - (-1)}{5 - 2} = \dfrac93 = 3\) [M1 A1]. Then \(y - (-1) = 3(x - 2)\) [M1], which gives \(y = 3x - 7\). [A1]
+
+Check: put the other point into the equation. At \(B\), \(x = 5\): \(3(5) - 7 = 8\). ✓ The student's line gives \(\tfrac53 - \tfrac53 = 0\) at \(x = 5\), not \(8\), so this check would have shown the error at once.
+:::
+
 :::try Start easy, finish at exam standard
 Q: Find the gradient of the line through (a) \((2, 1)\) and \((6, 9)\), (b) \((-1, 7)\) and \((3, 1)\).
 A: (a) \(\dfrac{9 - 1}{6 - 2} = 2\). (b) \(\dfrac{1 - 7}{3 - (-1)} = \dfrac{-6}{4} = -\dfrac32\).
@@ -170,6 +192,38 @@ Q: (Exam style) The line \(l\) is parallel to \(y = 3x - 1\) and passes through 
 A: (a) Parallel lines have the same gradient, 3. [B1] Then \(-5 = 3(2) + c\), so \(c = -11\). [M1] The line is \(y = 3x - 11\). [A1]
 
 (b) \(x^2 - 2x - 5 = 3x - 11\), so \(x^2 - 5x + 6 = 0\). [M1] Then \((x - 2)(x - 3) = 0\). The root \(x = 2\) is point \(A\), so \(B\) has \(x = 3\) and \(y = 3(3) - 11 = -2\). [A1] \(B = (3, -2)\). Check in the curve: \(9 - 6 - 5 = -2\). ✓
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ The line \(l\) has equation \(4x + 3y = 24\). Write down its gradient and where it crosses the \(y\)-axis, and find where it crosses the \(x\)-axis.
+A: Rearrange to \(y = -\tfrac43 x + 8\). The gradient is \(-\tfrac43\) [B1] and it crosses the \(y\)-axis at \((0, 8)\). [B1] When \(y = 0\), \(4x = 24\), so it crosses the \(x\)-axis at \((6, 0)\). [B1]
+Q: [2 marks] ★ Find the equation of the line through \((-1, 4)\) with gradient \(3\).
+A: \(y - 4 = 3(x + 1)\) [M1] so \(y = 3x + 7\). [A1]
+Q: [3 marks] ★★ Find the equation of the line parallel to \(y = 3 - 2x\) that passes through \((4, -1)\).
+A: Parallel lines have the same gradient, so \(m = -2\). [B1] Then \(y - (-1) = -2(x - 4)\) [M1] so \(y = -2x + 7\). [A1]
+Q: [5 marks] ★★ The points \(P(-2, 1)\) and \(Q(4, 10)\) lie on a line \(l\). (a) Find the equation of \(l\). (b) Show that the point \((-6, -5)\) lies on \(l\).
+A: (a) Gradient \(= \dfrac{10 - 1}{4 - (-2)} = \dfrac96 = \dfrac32\). [M1 A1] Then \(y - 1 = \tfrac32(x + 2)\) [M1], so \(y = \tfrac32 x + 4\). [A1] (b) When \(x = -6\), \(y = \tfrac32(-6) + 4 = -5\), which is the \(y\)-value of the point. [B1]
+Q: [5 marks] ★★ Find the coordinates of the points where the line \(y = x + 1\) meets the curve \(y = x^2 - 2x - 3\).
+A: Equate: \(x^2 - 2x - 3 = x + 1\). [M1] Rearrange: \(x^2 - 3x - 4 = 0\). [A1] Factorise: \((x - 4)(x + 1) = 0\) [M1] so \(x = 4\) or \(x = -1\). [A1] Use the line to find \(y\): the points are \((4, 5)\) and \((-1, 0)\). [A1]
+Q: [4 marks] ★★ A mobile phone plan A costs \(\pounds C\) in a month, where \(C = 12 + 0.05n\) and \(n\) is the number of minutes used. Plan B is \(C = 5 + 0.09n\). (a) For how many minutes are the two plans the same price, and what is that price? (b) Which plan is cheaper for more minutes than this?
+A: (a) Equate: \(12 + 0.05n = 5 + 0.09n\) [M1], so \(7 = 0.04n\) and \(n = 175\) minutes. [A1] The price is \(12 + 0.05(175) = \pounds 20.75\). [B1] (b) Plan B's cost rises faster (\(0.09\) against \(0.05\) per minute), so beyond \(175\) minutes plan A is cheaper. [B1]
+Q: [6 marks] (#math.f.algebra) ★★★ The line \(l_1\) has equation \(y = 2x + 1\) and the line \(l_2\) has equation \(x + y = 10\). (a) Find the coordinates of the point \(P\) where the lines meet. (b) The lines cross the \(x\)-axis at \(A\) and \(B\). Find the area of triangle \(ABP\).
+H: To find \(P\), solve the two equations as simultaneous equations. Substitute \(y = 2x + 1\) into the second.
+H: Find where each line meets \(y = 0\). The distance between those two points is the base of the triangle.
+H: The height of the triangle is the \(y\)-coordinate of \(P\).
+A: (a) \(x + (2x + 1) = 10\) [M1] so \(x = 3\) and \(y = 7\): \(P = (3, 7)\). [A1] (b) \(l_1\): \(0 = 2x + 1\) gives \(A = (-0.5, 0)\). [B1] \(l_2\): \(x = 10\) gives \(B = (10, 0)\). [B1] The base is \(AB = 10 - (-0.5) = 10.5\) and the height is \(7\), so the area is \(\tfrac12 \times 10.5 \times 7\) [M1] \(= 36.75\). [A1]
+:::
+
+:::try Stretch for A*
+Q: [7 marks] ★★★ Cyclist \(X\) leaves town \(A\) at 09:00 and rides along a straight road towards town \(B\), \(60\) km away, at a steady \(15\) km per hour. Cyclist \(Y\) leaves \(B\) at 09:30 and rides towards \(A\) at a steady \(20\) km per hour. Let \(t\) be the number of hours after 09:00 and \(d\) the distance from \(A\) in km. (a) Write an equation for \(d\) in terms of \(t\) for each cyclist. (b) When and where do they meet? (c) How far apart are they at 10:00?
+H: Cyclist \(Y\) starts half an hour late, so their journey time is \(t - 0.5\).
+H: \(Y\) is moving towards \(A\), so their distance from \(A\) goes down as time passes.
+A: (a) For \(X\): \(d = 15t\). [B1] For \(Y\): \(d = 60 - 20(t - 0.5)\) [M1], which simplifies to \(d = 70 - 20t\). [A1] (b) Equate: \(15t = 70 - 20t\), so \(35t = 70\). [M1] \(t = 2\), which is 11:00. [A1] The distance from \(A\) is \(15 \times 2 = 30\) km. [A1] (c) At \(t = 1\), \(X\) is at \(15\) km and \(Y\) is at \(70 - 20 = 50\) km from \(A\), so they are \(35\) km apart. [B1]
+Q: [7 marks] ★★★ A line passes through the point \((2, 3)\) and has a negative gradient \(m\). It meets the \(x\)-axis at \(P\) and the \(y\)-axis at \(Q\). The area of triangle \(OPQ\), where \(O\) is the origin, is \(12\). Find the equation of the line.
+H: Write the line as \(y - 3 = m(x - 2)\). Find where it crosses each axis in terms of \(m\).
+H: The area is \(\tfrac12 \times OP \times OQ\). You will get an equation with \(m\) and \(\tfrac1m\): multiply through by \(m\).
+H: The quadratic you reach is a perfect square.
+A: The line is \(y = mx + 3 - 2m\). It crosses the \(y\)-axis at \(Q = (0, 3 - 2m)\) and, putting \(y = 0\), the \(x\)-axis at \(P = \left(2 - \dfrac3m, 0\right)\). [M1 A1] Both are positive because \(m < 0\). The area is \(\tfrac12\left(2 - \dfrac3m\right)(3 - 2m)\) [M1] \(= \tfrac12\left(12 - 4m - \dfrac9m\right)\). Setting this equal to \(12\) gives \(-4m - \dfrac9m = 12\). Multiply by \(m\): \(-4m^2 - 9 = 12m\), that is \(4m^2 + 12m + 9 = 0\). [A1] This is \((2m + 3)^2 = 0\) [M1], so \(m = -\tfrac32\). [A1] The line is \(y = -\tfrac32 x + 6\). [A1] Check: it crosses the axes at \((4, 0)\) and \((0, 6)\), and \(\tfrac12 \times 4 \times 6 = 12\). ✓ Because the equation has only one solution, no line through \((2, 3)\) cuts off a smaller triangle: \(12\) is the least possible area.
 :::
 
 :::quiz
@@ -197,6 +251,21 @@ A: (a) Parallel lines have the same gradient, 3. [B1] Then \(-5 = 3(2) + c\), so
 + \(x = 3\) and \(x = -2\)
 - \(x = 1\) and \(x = -6\)
 > \(x^2 = x + 6\) gives \(x^2 - x - 6 = 0\), so \((x - 3)(x + 2) = 0\). The signs in the factors are easy to swap: \(x = -3\) and \(x = 2\) come from \((x + 3)(x - 2) = x^2 + x - 6\), which is a different equation.
+? What is the gradient of the line \(2y - 6x = 5\)?
+- \(-3\)
++ \(3\)
+- \(6\)
+- \(\dfrac52\)
+> Make \(y\) the subject: \(2y = 6x + 5\), so \(y = 3x + \tfrac52\) and the gradient is \(3\). The option \(6\) reads the coefficient of \(x\) before dividing by 2, \(-3\) loses a sign when moving \(6x\), and \(\tfrac52\) is the \(y\)-intercept.
+:::
+
+:::checklist What you can now do
+- [ ] I can find the gradient of a line from two points, and write its equation in the form \(y = mx + c\).
+- [ ] I can write the equation of a line through a given point with a given gradient.
+- [ ] I can tell when two lines are parallel, and find a line parallel to a given one.
+- [ ] I can rearrange an equation such as \(4x + 3y = 24\) and read off its gradient and intercepts.
+- [ ] I can recognise the shape of the standard graphs from their equations.
+- [ ] I can find where two graphs meet by solving their equations together, and give the answer as coordinates.
 :::
 
 :::recap

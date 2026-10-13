@@ -86,4 +86,53 @@ for x in (-41.8, -138.2): eq("3sin=-2", 3 * sin(rad(x)), -2, 0.01)
 xs = [pi / 6, -pi / 6, 5 * pi / 6, -5 * pi / 6]
 for x in xs: eq("2cos2x=1", 2 * cos(2 * x), 1)
 assert len([x for x in range(-180, 181) if abs(sin(rad(x)) + 2 / 3) < 0.01]) >= 2
+# v2: warm-up
+eq("w1", 10 * sin(rad(30)), 5); eq("w2", 120 * pi / 180, 2 * pi / 3)
+
+# v2: proofs. exact values from the triangles, and the two identities at random angles
+eq("45 hyp", sqrt(1 + 1), sqrt(2)); eq("sin45", sin(rad(45)), 1 / sqrt(2)); eq("tan45", tan(rad(45)), 1)
+eq("30 height", sqrt(4 - 1), sqrt(3)); eq("sin30", sin(rad(30)), 0.5); eq("cos30", cos(rad(30)), sqrt(3) / 2); eq("tan30", tan(rad(30)), 1 / sqrt(3))
+eq("sin60", sin(rad(60)), sqrt(3) / 2); eq("cos60", cos(rad(60)), 0.5); eq("tan60", tan(rad(60)), sqrt(3))
+for t in (-200, -45, 10, 130, 250, 333, 500):
+    eq("pyth", sin(rad(t)) ** 2 + cos(rad(t)) ** 2, 1); eq("tan id", sin(rad(t)) / cos(rad(t)), tan(rad(t)), 1e-9)
+
+# v2: spot the error: cos 2x = -0.6 on [0, 360]
+a = deg(acos(-0.6))
+eq("spot a", round(a, 1), 126.9); eq("spot b", round(360 - a, 1), 233.1)
+vals = [a, 360 - a, a + 360, 360 - a + 360]
+xs = [round(v / 2, 1) for v in vals]
+assert xs == [63.4, 116.6, 243.4, 296.6], xs
+for x in xs: eq("spot root", cos(rad(2 * x)), -0.6, 5e-3)
+# four crossings of y = -0.6 by cos 2x on [0, 360]
+cnt = sum(1 for i in range(0, 3600) if (cos(rad(2 * i / 10)) + 0.6) * (cos(rad(2 * (i + 1) / 10)) + 0.6) < 0)
+eq("spot crossings", cnt, 4)
+
+# v2: exam practice
+eq("x1a", sin(rad(135)), sqrt(2) / 2); eq("x1b", cos(rad(240)), -0.5); eq("x1c", tan(rad(330)), -1 / sqrt(3)); eq("x1c2", -1 / sqrt(3), -sqrt(3) / 3)
+eq("x2", round(deg(acos(-0.75)), 1), 138.6); eq("x2b", round(360 - deg(acos(-0.75)), 1), 221.4)
+t0 = deg(atan(1.5)); eq("x3 a", round(t0, 1), 56.3); eq("x3 b", round(t0 + 180, 1), 236.3)
+eq("x3 x1", round((t0 + 30) / 2, 1), 43.2); eq("x3 x2", round((t0 + 180 + 30) / 2, 1), 133.2)
+for x in (43.155, 133.155): eq("x3 check", tan(rad(2 * x - 30)), 1.5, 1e-3)
+for th, ok in ((90, True), (210, True), (330, True)): eq("x4", 2 * cos(rad(th)) ** 2 + sin(rad(th)), 1, 1e-9)
+for s in (-2, 0.3, 1): eq("x4 poly", 2 - 2 * s * s + s - 1, -(2 * s * s - s - 1))
+eq("x4 fact", (2 * -0.5 + 1) * (-0.5 - 1), 0)
+for t in (10, 100, 250): eq("x5", tan(rad(t)) + 1 / tan(rad(t)), 1 / (sin(rad(t)) * cos(rad(t))), 1e-9)
+f6 = lambda x: 3 - 2 * cos(rad(2 * x))
+eq("x6 max", max(f6(i) for i in range(0, 361)), 5); eq("x6 min", min(f6(i) for i in range(0, 361)), 1)
+for x in (60, 120, 240, 300): eq("x6 f=4", f6(x), 4, 1e-9)
+cnt = sum(1 for i in range(0, 3600) if (f6(i / 10) - 4) * (f6((i + 1) / 10) - 4) < 0); eq("x6 count", cnt, 4)
+for x in (-pi, -pi / 3, pi / 3, pi): eq("x7", 2 * sin(x) ** 2, 1 + cos(x), 1e-9)
+for c in (-0.9, 0.2, 1.4): eq("x7 poly", 2 * (1 - c * c) - (1 + c), -(2 * c * c + c - 1))
+for t in (30, 150, 199.47122, 340.52878):
+    eq("x8", 6 * cos(rad(t)) ** 2 + sin(rad(t)), 5, 1e-6)
+eq("x8 199.5", round(180 + deg(asin(1 / 3)), 1), 199.5); eq("x8 340.5", round(360 - deg(asin(1 / 3)), 1), 340.5)
+for s in (-1, 0.4, 2): eq("x8 poly", 6 * (1 - s * s) + s - 5, -(6 * s * s - s - 1)); eq("x8 fact", (3 * s + 1) * (2 * s - 1), 6 * s * s - s - 1)
+# stretch 1
+good = [x for x in (0, 90, 180, 270, 360) if abs(sin(rad(x)) + cos(rad(x)) - 1) < 1e-9]
+assert good == [0, 90, 360], good
+eq("s1 identity", (sin(rad(33)) + cos(rad(33))) ** 2, 1 + sin(rad(66)))
+# stretch 2
+for x in (26.565051, 45):
+    eq("s2", 2 * sin(rad(x)) ** 2 - 3 * sin(rad(x)) * cos(rad(x)) + cos(rad(x)) ** 2, 0, 1e-8)
+eq("s2 a", round(deg(atan(0.5)), 1), 26.6); eq("s2 cos0", 2 * 1 - 0 + 0, 2)
 print("ok")

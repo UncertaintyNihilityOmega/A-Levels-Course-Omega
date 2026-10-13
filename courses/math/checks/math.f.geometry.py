@@ -72,4 +72,45 @@ B = 180 - 40 - dp(C1); eq("T9 B", B, 81.0); eq("T9 area", sf(0.5 * 12 * 9 * sin(
 eq("Q1", tan(rad(60)), sqrt(3))
 eq("Q4 slant", sqrt(9 + 16), 5); eq("Q4 CSA", pi * 3 * 5, 15 * pi)
 eq("Q5", 25 + 49 - 2 * 5 * 7 * 0.2, 60); eq("Q5 plus", 74 + 14, 88); eq("Q5 no 2", 74 - 35 * 0.2, 67); eq("Q5 wrong", 74 * 0.8, 59.2)
+# --- v2 additions (P16) ---
+import random
+# warm-up
+eq("W1", sqrt(48), 4 * sqrt(3)); eq("W3", (8 - 2) / (4 - 1), 2)
+# proofs: Pythagoras by areas, cosine rule from the altitude, sine rule, area
+random.seed(16)
+for _ in range(5):
+    a, b = random.uniform(1, 9), random.uniform(1, 9); c = sqrt(a * a + b * b)
+    eq("pyth areas", (a + b) ** 2, 4 * 0.5 * a * b + c * c, 1e-9)
+    bb, cc, A = random.uniform(1, 9), random.uniform(1, 9), rad(random.uniform(20, 160))
+    a2 = (bb * sin(A)) ** 2 + (cc - bb * cos(A)) ** 2
+    eq("cosine from altitude", a2, bb * bb + cc * cc - 2 * bb * cc * cos(A), 1e-9)
+    aa = sqrt(a2); B = asin(bb * sin(A) / aa) if bb * sin(A) / aa <= 1 else 0
+    eq("sine rule h", bb * sin(A), aa * sin(asin(bb * sin(A) / aa)), 1e-9)
+    C = rad(random.uniform(20, 160)); eq("area", 0.5 * aa * (bb * sin(C)), 0.5 * aa * bb * sin(C), 1e-9)
+# spot the error
+c2 = 136 - 120 * cos(rad(48)); eq("spot c2", round(c2, 2), 55.70); eq("spot c", dp(sqrt(c2), 2), 7.46)
+eq("spot student", round(16 * cos(rad(48)), 2), 10.71); eq("spot student c", dp(sqrt(16 * cos(rad(48))), 2), 3.27)
+# exam practice
+eq("E1", 360 / (180 - 162), 20)
+eq("E2a", sqrt(17**2 - 8**2), 15); eq("E2b", 8 * 15, 120); eq("E2c", dp(deg(acos(8 / 17))), 61.9)
+eq("E3", sin(rad(60)) * cos(rad(30)) + sin(rad(30)) * cos(rad(60)), 1); eq("E3 frac", 3 / 4 + 1 / 4, 1)
+R = 180 - 48 - 67; eq("E4 R", R, 65)
+eq("E4 QR", dp(9.2 * sin(rad(48)) / sin(rad(65)), 2), 7.54); eq("E4 PR", dp(9.2 * sin(rad(67)) / sin(rad(65)), 2), 9.34)
+cC = (49 + 81 - 144) / (2 * 7 * 9); eq("E5 cos", cC, -1 / 9); eq("E5 C", dp(deg(acos(cC))), 96.4)
+eq("E5 area", dp(0.5 * 7 * 9 * sin(acos(cC))), 31.3)
+for x in (5, -3): assert x * x - 2 * x - 15 == 0 or x == -3 and (x - 5) * (x + 3) == 0
+assert 5**2 + 12**2 == 13**2; assert 5**2 + (5 + 7)**2 == (5 + 8)**2
+assert 2 * 5**2 + 14 * 5 + 49 == 5**2 + 16 * 5 + 64
+eq("E6 area", 0.5 * 5 * 12, 30)
+BT = 60 * sin(rad(20)) / sin(rad(15)); eq("E7 BT", dp(BT, 1), 79.3); eq("E7 h", dp(BT * sin(rad(35)), 1), 45.5)
+eq("E7 check", dp(60 / (1 / tan(rad(20)) - 1 / tan(rad(35))), 1), 45.5); eq("E7 angle", 35 - 20, 15)
+# stretch 1: cosine rule gives a^2 - 8a + 15 = 0
+for a in (3, 5):
+    eq("S1 quad", a * a - 8 * a + 15, 0); eq("S1 cos rule", a * a + 64 - 2 * a * 8 * cos(rad(60)), 49)
+    eq("S1 area", 0.5 * 8 * a * sin(rad(60)), 2 * sqrt(3) * a)
+assert 3 + 7 > 8 and 3 + 8 > 7 and 7 + 8 > 3
+eq("S1 areas", 6 * sqrt(3), 0.5 * 8 * 3 * sin(rad(60)))
+# stretch 2: cone from a sector
+r = (90 / 360 * 2 * pi * 12) / (2 * pi); eq("S2 r", r, 3); h = sqrt(144 - 9); eq("S2 h", h, 3 * sqrt(15))
+V = pi * r * r * h / 3; eq("S2 V", V, 9 * pi * sqrt(15)); eq("S2 V 3sf", sf(V), 110)
 print("ok")

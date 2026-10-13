@@ -83,4 +83,57 @@ assert S(24000, 1500, 12) == 387000 and 6 * 64500 == 387000
 v = lambda n: 18000 * 0.85**n
 eq("v6", round(v(6), 2), 6788.69); eq("v7", round(v(7), 2), 5770.39); assert v(6) > 6000 > v(7)
 assert 2 * 18 == 36 and 6**2 == 36 and 18 - 2 == 16 and 18 / 6 == 6 / 2 == 3
+# v2: warm-up
+eq("w1", F(4 + 12 + 9), 25); eq("w2", 2 ** -3 * 16 ** 0.5, 0.5); eq("w3", 7 * 7 + 7 - 56, 0)
+
+# v2: proofs. Pascal's rule, AP and GP sums against direct summation, S_infinity as a limit
+for n in range(1, 12):
+    for r in range(0, n):
+        eq("pascal", comb(n, r) + comb(n, r + 1), comb(n + 1, r + 1))
+        eq("pascal fact", factorial(n) // (factorial(r) * factorial(n - r)) + F(factorial(n), factorial(r + 1) * factorial(n - r - 1)), comb(n + 1, r + 1))
+for a, d, n in ((7, 3, 15), (-2, 5, 11), (1.5, 0.25, 40)):
+    terms = [a + k * d for k in range(n)]
+    eq("ap sum direct", sum(terms), n / 2 * (2 * a + (n - 1) * d), 1e-9); eq("ap sum l", sum(terms), n / 2 * (terms[0] + terms[-1]), 1e-9)
+    eq("ap pairs", terms[1] + terms[-2], a + terms[-1], 1e-9)
+for a, r, n in ((6, 2, 8), (3, 0.5, 12), (5, -0.6, 9), (1, 3, 5)):
+    terms = [a * r ** k for k in range(n)]
+    eq("gp sum direct", sum(terms), a * (1 - r ** n) / (1 - r), 1e-9)
+    eq("gp rS", sum(terms) - r * sum(terms), a - a * r ** n, 1e-9)
+eq("sinf 0.5", sum(0.5 ** k for k in range(1, 40)), 1.0, 1e-9)
+eq("sinf limit", sum(10 * 0.6 ** k for k in range(200)), 25, 1e-9)
+
+# v2: spot the error
+eq("spot ok u15", 7 + 14 * 3, 49); eq("spot ok S15", 15 / 2 * (7 + 49), 420); eq("spot bad u15", 7 + 15 * 3, 52); eq("spot bad S15", 15 / 2 * (7 + 52), 442.5)
+eq("spot n=1", 7 + 1 * 3, 10)
+assert sum(7 + 3 * k for k in range(15)) == 420
+
+# v2: exam practice
+eq("x1 c1", comb(5, 1) * 2, 10); eq("x1 c2", comb(5, 2) * 4, 40); eq("x1 c3", comb(5, 3) * 8, 80)
+eq("x2 u30", 5 + 29 * 4, 121); eq("x2 S30", 15 * (5 + 121), 1890); assert sum(5 + 4 * k for k in range(30)) == 1890
+eq("x3 r", 96 / 12, 8); eq("x3 a", 12 / 4, 3); eq("x3 S8", 3 * (2 ** 8 - 1) / (2 - 1), 765); eq("x3 direct", sum(3 * 2 ** k for k in range(8)), 765); eq("x3 u6", 3 * 2 ** 5, 96)
+eq("x4 c1", comb(4, 1) * -3, -12); eq("x4 c2", comb(4, 2) * 9, 54); eq("x4 coef", 2 * 54 + 1 * -12, 96); eq("x4 sub", 108 - 12, 96)
+# check x4 by full expansion
+poly = [1]
+for _ in range(4):
+    poly = [(poly[i] if i < len(poly) else 0) + (-3 * poly[i - 1] if i > 0 else 0) for i in range(len(poly) + 1)]
+assert poly == [1, -12, 54, -108, 81], poly
+prod = [2 * poly[i] + (poly[i - 1] if i > 0 else 0) for i in range(len(poly))]
+eq("x4 full", prod[2], 96)
+eq("x5 S15", 15 * 31, 465); eq("x5 S16", 16 * 33, 528); assert sum(3 + 4 * k for k in range(15)) == 465 and sum(3 + 4 * k for k in range(16)) == 528
+eq("x5 formula", 15 / 2 * (6 + 4 * 14), 465); eq("x5 leastn", min(n for n in range(1, 100) if n * (2 * n + 1) > 500), 16)
+eq("x6 1-r", 10 / 25, 0.4); eq("x6 r2", 1 - 0.4, 0.6); eq("x6 S3", 10 * (1 - 0.6 ** 3) / 0.4, 19.6); eq("x6 direct", 10 + 6 + 3.6, 19.6)
+# x7: AP 3, 3+d, 3+4d in GP with d = 6
+d_ = 6
+eq("x7 sq", (3 + d_) ** 2, 3 * (3 + 4 * d_)); eq("x7 quad", d_ ** 2 - 6 * d_, 0)
+eq("x7 S10 AP", 5 * (6 + 9 * 6), 300); assert sum(3 + 6 * k for k in range(10)) == 300
+eq("x7 GP terms", 3 * 3 ** 1, 9); eq("x7 GP 3rd", 3 + 4 * d_, 27); eq("x7 S10", 3 * (3 ** 10 - 1) / 2, 88572); assert sum(3 * 3 ** k for k in range(10)) == 88572
+eq("x7 S12", 3 * (3 ** 12 - 1) / 2, 797160); eq("x7 S13", 3 * (3 ** 13 - 1) / 2, 2391483)
+eq("x7 least", min(n for n in range(1, 40) if 3 * (3 ** n - 1) / 2 > 1e6), 13)
+# stretch 1
+from math import sqrt
+for r in ((3 + sqrt(3)) / 6, (3 - sqrt(3)) / 6):
+    eq("s1 eq", 6 * r * r - 6 * r + 1, 0, 1e-9); eq("s1 S", 1 / (1 - r), 6 * r, 1e-9); assert abs(r) < 1
+eq("s1 r1", round((3 + sqrt(3)) / 6, 3), 0.789); eq("s1 r2", round((3 - sqrt(3)) / 6, 3), 0.211)
+# stretch 2
+eq("s2 c3", comb(6, 3), 20); eq("s2 c2", comb(6, 2), 15); eq("s2 a", 60 / 20, 3); eq("s2 rel", comb(6, 3) * 3 ** 3, 4 * comb(6, 2) * 3 ** 2); eq("s2 x4", comb(6, 4) * 3 ** 4, 1215)
 print("ok")

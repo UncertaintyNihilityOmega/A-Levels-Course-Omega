@@ -11,6 +11,15 @@ Quadratics are the first topic in Paper 1 and they come back everywhere: in coor
 
 **Before you start**, you should be comfortable with [Algebra from scratch](#math.f.algebra) (expanding brackets, factorising, rearranging) and with [Powers, roots, surds and standard form](#math.f.powers).
 
+:::try Warm-up
+Q: Expand and simplify \((x - 3)^2 + 4\). (from [Algebra from scratch](#math.f.algebra))
+A: \((x - 3)^2 = x^2 - 6x + 9\), so the answer is \(x^2 - 6x + 13\).
+Q: Simplify \(\sqrt{50} - \sqrt{18}\). (from [Indices, surds and standard form](#math.f.powers))
+A: \(\sqrt{50} = 5\sqrt{2}\) and \(\sqrt{18} = 3\sqrt{2}\), so the answer is \(2\sqrt{2}\).
+Q: Where does the line \(y = 2x - 6\) cross the axes? (from [Graphs and straight lines](#math.f.graphs))
+A: Put \(y = 0\): \(x = 3\). Put \(x = 0\): \(y = -6\). It crosses at \((3, 0)\) and \((0, -6)\).
+:::
+
 ## What is a quadratic?
 
 Start with an expression you already know, like \(3x + 5\). The highest power of \(x\) is \(x^1\), so we call it **linear**: its graph is a straight line. Now allow an \(x^2\) term, for example \(x^2 - 2x - 3\). The graph is no longer straight. It bends into a symmetrical U-shape called a **parabola**, and the expression is called a **quadratic**.
@@ -166,6 +175,26 @@ The solutions of \(ax^2 + bx + c = 0\) are
 \[x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]
 :::
 
+:::proof Where the quadratic formula comes from
+Start with \(ax^2 + bx + c = 0\) and complete the square, exactly as above.
+
+Divide every term by \(a\), which is allowed because \(a \neq 0\):
+\[x^2 + \frac{b}{a}x + \frac{c}{a} = 0\]
+Halve the coefficient of \(x\) and complete the square:
+\[\left(x + \frac{b}{2a}\right)^2 - \frac{b^2}{4a^2} + \frac{c}{a} = 0\]
+Move the constants to the right and use the common denominator \(4a^2\):
+\[\left(x + \frac{b}{2a}\right)^2 = \frac{b^2}{4a^2} - \frac{c}{a} = \frac{b^2 - 4ac}{4a^2}\]
+Take square roots, remembering \(\pm\). Note \(\sqrt{4a^2} = 2a\) (or \(-2a\), which the \(\pm\) covers):
+\[x + \frac{b}{2a} = \pm\frac{\sqrt{b^2 - 4ac}}{2a}\]
+Subtract \(\dfrac{b}{2a}\) from both sides:
+\[x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]
+So the formula is just "complete the square" done once for every quadratic. The step-by-step scene below shows the same working beside the picture of a square being completed.
+
+:::html
+<div class="widget" data-w="proof" data-proof="completesquare"></div>
+:::
+:::
+
 :::eg Solve \(3x^2 - 4x - 2 = 0\), giving your answers correct to 3 significant figures.
 Identify the coefficients carefully, signs included: \(a = 3\), \(b = -4\), \(c = -2\).
 \[x = \frac{-(-4) \pm \sqrt{(-4)^2 - 4(3)(-2)}}{2(3)} = \frac{4 \pm \sqrt{16 + 24}}{6} = \frac{4 \pm \sqrt{40}}{6}\] [M1]
@@ -196,10 +225,30 @@ The quantity \(b^2 - 4ac\) for the quadratic \(ax^2 + bx + c\). Its sign tells y
 <figure class="fig wide"><svg viewBox="0 0 600 230" role="img" aria-label="Three parabolas: one crossing the x-axis twice, one touching it once, one not meeting it"><rect class="fm" x="0" y="0" width="190" height="230" rx="10"/><path class="ax" d="M8 107.5H182"/><path class="ax" d="M95.0 14V170.0"/><path class="c1" d="M10.0 45.0L11.4 48.7L12.8 52.4L14.2 56.0L15.7 59.5L17.1 63.0L18.5 66.4L19.9 69.7L21.3 73.0L22.8 76.2L24.2 79.4L25.6 82.5L27.0 85.5L28.4 88.5L29.8 91.4L31.2 94.2L32.7 97.0L34.1 99.7L35.5 102.4L36.9 105.0L38.3 107.5L39.8 110.0L41.2 112.4L42.6 114.7L44.0 117.0L45.4 119.2L46.8 121.4L48.2 123.5L49.7 125.5L51.1 127.5L52.5 129.4L53.9 131.2L55.3 133.0L56.7 134.7L58.2 136.4L59.6 138.0L61.0 139.5L62.4 141.0L63.8 142.4L65.2 143.7L66.7 145.0L68.1 146.2L69.5 147.4L70.9 148.5L72.3 149.5L73.8 150.5L75.2 151.4L76.6 152.2L78.0 153.0L79.4 153.7L80.8 154.4L82.2 155.0L83.7 155.5L85.1 156.0L86.5 156.4L87.9 156.7L89.3 157.0L90.8 157.2L92.2 157.4L93.6 157.5L95.0 157.5L96.4 157.5L97.8 157.4L99.2 157.2L100.7 157.0L102.1 156.7L103.5 156.4L104.9 156.0L106.3 155.5L107.8 155.0L109.2 154.4L110.6 153.7L112.0 153.0L113.4 152.2L114.8 151.4L116.2 150.5L117.7 149.5L119.1 148.5L120.5 147.4L121.9 146.2L123.3 145.0L124.7 143.7L126.2 142.4L127.6 141.0L129.0 139.5L130.4 138.0L131.8 136.4L133.2 134.7L134.7 133.0L136.1 131.2L137.5 129.4L138.9 127.5L140.3 125.5L141.8 123.5L143.2 121.4L144.6 119.2L146.0 117.0L147.4 114.7L148.8 112.4L150.2 110.0L151.7 107.5L153.1 105.0L154.5 102.4L155.9 99.7L157.3 97.0L158.8 94.2L160.2 91.4L161.6 88.5L163.0 85.5L164.4 82.5L165.8 79.4L167.2 76.2L168.7 73.0L170.1 69.7L171.5 66.4L172.9 63.0L174.3 59.5L175.8 56.0L177.2 52.4L178.6 48.7L180.0 45.0"/><circle class="fr" cx="38.3" cy="107.5" r="5"/><circle class="fr" cx="151.7" cy="107.5" r="5"/><text class="tc tb" x="95.0" y="194">b² − 4ac > 0</text><text class="tl tc" x="95.0" y="214">two distinct real roots</text><rect class="fm" x="205" y="0" width="190" height="230" rx="10"/><path class="ax" d="M213 107.5H387"/><path class="ax" d="M300.0 14V170.0"/><path class="c1" d="M226.3 23.0L227.8 26.2L229.2 29.4L230.6 32.5L232.0 35.5L233.4 38.5L234.8 41.4L236.2 44.2L237.7 47.0L239.1 49.7L240.5 52.4L241.9 55.0L243.3 57.5L244.8 60.0L246.2 62.4L247.6 64.7L249.0 67.0L250.4 69.2L251.8 71.4L253.2 73.5L254.7 75.5L256.1 77.5L257.5 79.4L258.9 81.2L260.3 83.0L261.8 84.7L263.2 86.4L264.6 88.0L266.0 89.5L267.4 91.0L268.8 92.4L270.2 93.7L271.7 95.0L273.1 96.2L274.5 97.4L275.9 98.5L277.3 99.5L278.8 100.5L280.2 101.4L281.6 102.2L283.0 103.0L284.4 103.7L285.8 104.4L287.2 105.0L288.7 105.5L290.1 106.0L291.5 106.4L292.9 106.7L294.3 107.0L295.8 107.2L297.2 107.4L298.6 107.5L300.0 107.5L301.4 107.5L302.8 107.4L304.2 107.2L305.7 107.0L307.1 106.7L308.5 106.4L309.9 106.0L311.3 105.5L312.8 105.0L314.2 104.4L315.6 103.7L317.0 103.0L318.4 102.2L319.8 101.4L321.2 100.5L322.7 99.5L324.1 98.5L325.5 97.4L326.9 96.2L328.3 95.0L329.8 93.7L331.2 92.4L332.6 91.0L334.0 89.5L335.4 88.0L336.8 86.4L338.2 84.7L339.7 83.0L341.1 81.2L342.5 79.4L343.9 77.5L345.3 75.5L346.8 73.5L348.2 71.4L349.6 69.2L351.0 67.0L352.4 64.7L353.8 62.4L355.2 60.0L356.7 57.5L358.1 55.0L359.5 52.4L360.9 49.7L362.3 47.0L363.8 44.2L365.2 41.4L366.6 38.5L368.0 35.5L369.4 32.5L370.8 29.4L372.2 26.2L373.7 23.0"/><circle class="fr" cx="300.0" cy="107.5" r="5"/><text class="tc tb" x="300.0" y="194">b² − 4ac = 0</text><text class="tl tc" x="300.0" y="214">one repeated root</text><rect class="fm" x="410" y="0" width="190" height="230" rx="10"/><path class="ax" d="M418 107.5H592"/><path class="ax" d="M505.0 14V170.0"/><path class="c1" d="M442.7 22.0L444.1 24.7L445.5 27.4L446.9 30.0L448.3 32.5L449.8 35.0L451.2 37.4L452.6 39.7L454.0 42.0L455.4 44.2L456.8 46.4L458.2 48.5L459.7 50.5L461.1 52.5L462.5 54.4L463.9 56.2L465.3 58.0L466.8 59.7L468.2 61.4L469.6 63.0L471.0 64.5L472.4 66.0L473.8 67.4L475.2 68.7L476.7 70.0L478.1 71.2L479.5 72.4L480.9 73.5L482.3 74.5L483.8 75.5L485.2 76.4L486.6 77.2L488.0 78.0L489.4 78.7L490.8 79.4L492.2 80.0L493.7 80.5L495.1 81.0L496.5 81.4L497.9 81.7L499.3 82.0L500.8 82.2L502.2 82.4L503.6 82.5L505.0 82.5L506.4 82.5L507.8 82.4L509.2 82.2L510.7 82.0L512.1 81.7L513.5 81.4L514.9 81.0L516.3 80.5L517.8 80.0L519.2 79.4L520.6 78.7L522.0 78.0L523.4 77.2L524.8 76.4L526.2 75.5L527.7 74.5L529.1 73.5L530.5 72.4L531.9 71.2L533.3 70.0L534.8 68.7L536.2 67.4L537.6 66.0L539.0 64.5L540.4 63.0L541.8 61.4L543.2 59.7L544.7 58.0L546.1 56.2L547.5 54.4L548.9 52.5L550.3 50.5L551.8 48.5L553.2 46.4L554.6 44.2L556.0 42.0L557.4 39.7L558.8 37.4L560.2 35.0L561.7 32.5L563.1 30.0L564.5 27.4L565.9 24.7L567.3 22.0"/><text class="tc tb" x="505.0" y="194">b² − 4ac < 0</text><text class="tl tc" x="505.0" y="214">no real roots</text></svg><figcaption>The discriminant tells you how many times the parabola meets the x-axis, without solving anything. Red dots mark the real roots.</figcaption></figure>
 :::
 
+:::proof Why the discriminant counts the roots
+The proof of the formula reached the line
+\[\left(x + \frac{b}{2a}\right)^2 = \frac{b^2 - 4ac}{4a^2}\]
+The left side is a square, so it is never negative. The denominator \(4a^2\) is always positive. So the sign of the right side is the sign of \(b^2 - 4ac\).
+- If \(b^2 - 4ac < 0\), the right side is negative, which no square can equal. There is no real \(x\): no real roots.
+- If \(b^2 - 4ac = 0\), the right side is 0, so \(x + \dfrac{b}{2a} = 0\). There is exactly one value, \(x = -\dfrac{b}{2a}\): a repeated root.
+- If \(b^2 - 4ac > 0\), the right side is positive and has two square roots, \(+\) and \(-\). That gives two different values of \(x\).
+This is why the sign of \(b^2 - 4ac\) is all you need.
+:::
+
 :::eg Find the values of \(k\) for which \(x^2 + kx + 9 = 0\) has equal roots.
 Equal roots means the discriminant is zero: \(a = 1\), \(b = k\), \(c = 9\).
 \[k^2 - 4(1)(9) = 0 \quad\Rightarrow\quad k^2 = 36 \quad\Rightarrow\quad k = \pm 6\]
 **Check:** with \(k = 6\), \(x^2 + 6x + 9 = (x + 3)^2\), which does have a repeated root.
+:::
+
+:::proof The sum and product of the roots
+Suppose \(ax^2 + bx + c = 0\) has roots \(\alpha\) and \(\beta\). Then \(x - \alpha\) and \(x - \beta\) are factors, so
+\[ax^2 + bx + c = a(x - \alpha)(x - \beta) = a\big[x^2 - (\alpha + \beta)x + \alpha\beta\big]\]
+This is true for every \(x\), so the coefficients on the two sides must match:
+\[b = -a(\alpha + \beta) \quad\text{and}\quad c = a\alpha\beta\]
+Divide by \(a\):
+\[\alpha + \beta = -\frac{b}{a} \qquad \alpha\beta = \frac{c}{a}\]
+Check with \(x^2 - 5x + 6 = 0\), roots 2 and 3: the sum is \(5 = -\dfrac{-5}{1}\) and the product is \(6 = \dfrac{6}{1}\). Both match.
 :::
 
 ### Lines meeting curves
@@ -280,6 +329,21 @@ Then \(x = u^2\), so \(x = \tfrac{1}{4}\) or \(x = 9\). Because \(\sqrt{x}\) can
 All boards teach the same quadratics content in their first Pure paper (Cambridge P1, Edexcel IAL P1, and Year 1 Pure for AQA, OCR and Edexcel in the UK). The UK boards also expect you to use the discriminant inside **proof** questions ("prove that the equation has no real roots for all values of \(k\)"). Cambridge mostly tests it through line-and-curve intersections and the range of a function.
 :::
 
+:::eg Spot the error: express \(3x^2 + 12x + 5\) in the form \(a(x + p)^2 + q\).
+A student wrote this answer.
+
+Line 1: \(3x^2 + 12x + 5 = 3(x^2 + 4x) + 5\)
+Line 2: \(= 3\big[(x + 2)^2 - 4\big] + 5\)
+Line 3: \(= 3(x + 2)^2 - 4 + 5\)
+Line 4: \(= 3(x + 2)^2 + 1\)
+
+Lines 1 and 2 are correct [M1]. **Line 3 is wrong: the \(-4\) is still inside the square bracket, so multiplying out by the 3 gives \(3 \times (-4) = -12\), not \(-4\). The accuracy mark is lost [A0].**
+
+Correct working: \(3\big[(x + 2)^2 - 4\big] + 5 = 3(x + 2)^2 - 12 + 5 = 3(x + 2)^2 - 7\). [A1]
+
+Check: at \(x = 0\) the original gives 5, and \(3(2)^2 - 7 = 5\). The student's answer gives \(3(4) + 1 = 13\), so a one-line check would have caught it.
+:::
+
 :::try Start easy, finish at exam standard
 Q: Solve \(x^2 + 7x + 10 = 0\) by factorising.
 A: Two numbers that multiply to 10 and add to 7 are 2 and 5. \((x + 2)(x + 5) = 0\), so \(x = -2\) or \(x = -5\).
@@ -308,6 +372,41 @@ Q: Solve \(x - 6\sqrt{x} + 8 = 0\).
 A: Let \(u = \sqrt{x}\): \(u^2 - 6u + 8 = 0 \Rightarrow (u - 2)(u - 4) = 0 \Rightarrow u = 2\) or \(4\). So \(x = 4\) or \(x = 16\).
 :::
 
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ Solve \(x^2 + 3x - 5 = 0\), giving your answers correct to 3 significant figures.
+A: \(x = \dfrac{-3 \pm \sqrt{9 + 20}}{2} = \dfrac{-3 \pm \sqrt{29}}{2}\) [M1 A1] so \(x = 1.19\) or \(x = -4.19\). [A1]
+Q: [4 marks] ★ Express \(2x^2 + 8x + 11\) in the form \(a(x + p)^2 + q\), and state the minimum value of \(2x^2 + 8x + 11\).
+A: \(2x^2 + 8x + 11 = 2(x^2 + 4x) + 11 = 2\big[(x + 2)^2 - 4\big] + 11\) [M1] \(= 2(x + 2)^2 + 3\). [A1 A1] The minimum value is 3, when \(x = -2\). [B1]
+Q: [4 marks] ★★ Find the set of values of \(x\) for which \(2x^2 > 9x - 4\).
+A: Rearrange: \(2x^2 - 9x + 4 > 0\), so \((2x - 1)(x - 4) > 0\). [M1] The critical values are \(\tfrac12\) and 4. [A1] The graph is ∪-shaped and we want the part above the axis: \(x < \tfrac12\) [A1] or \(x > 4\). [A1]
+Q: [6 marks] ★★ The line \(y = 2x + k\) is a tangent to the curve \(y = x^2 - 3x + 6\). (a) Find the value of \(k\). (b) Find the coordinates of the point where the line touches the curve.
+A: (a) Equate: \(x^2 - 3x + 6 = 2x + k\), so \(x^2 - 5x + (6 - k) = 0\). [M1 A1] A tangent means equal roots, so \(b^2 - 4ac = 0\): \(25 - 4(6 - k) = 0\). [M1] \(1 + 4k = 0\), so \(k = -\tfrac14\). [A1] (b) The repeated root is \(x = -\dfrac{b}{2a} = \dfrac52\). [M1] Then \(y = 2 \times \dfrac52 - \dfrac14 = \dfrac{19}{4}\), so the point is \(\left(\dfrac52, \dfrac{19}{4}\right)\). [A1]
+Q: [5 marks] ★★ Solve the simultaneous equations \(y = x - 2\) and \(x^2 + y^2 = 20\).
+A: Substitute: \(x^2 + (x - 2)^2 = 20\) [M1] so \(2x^2 - 4x - 16 = 0\), that is \(x^2 - 2x - 8 = 0\). [A1] \((x - 4)(x + 2) = 0\), so \(x = 4\) or \(x = -2\). [M1 A1] Then \(y = 2\) and \(y = -4\): the solutions are \((4, 2)\) and \((-2, -4)\). [A1]
+Q: [4 marks] ★★ Show that \(x^2 - 2kx + 3k^2 + 1 = 0\) has no real roots for any real value of \(k\).
+A: \(b^2 - 4ac = (-2k)^2 - 4(1)(3k^2 + 1)\) [M1] \(= 4k^2 - 12k^2 - 4 = -8k^2 - 4\). [A1] Since \(k^2 \geq 0\), \(-8k^2 \leq 0\), so \(-8k^2 - 4 \leq -4 < 0\). [M1] The discriminant is always negative, so there are no real roots. [A1]
+Q: [10 marks] (#math.f.geometry) ★★★ A rectangle has perimeter 34 cm and a diagonal of length 13 cm. (a) Find the length and width of the rectangle. (b) Another rectangle has the same perimeter, 34 cm. By completing the square, find its greatest possible area and the length and width that give it.
+H: Let the length and width be \(l\) and \(w\). The perimeter gives \(l + w = 17\); Pythagoras gives another equation.
+H: Eliminate \(w\) to get a quadratic in \(l\) alone, and divide through to make it simple before factorising.
+H: For (b), write the area as \(l(17 - l)\), expand, and complete the square to find its largest value.
+A: (a) \(l + w = 17\) [B1] and \(l^2 + w^2 = 13^2 = 169\) by Pythagoras. [B1] Substitute \(w = 17 - l\): \(l^2 + (17 - l)^2 = 169\) [M1] so \(2l^2 - 34l + 120 = 0\), that is \(l^2 - 17l + 60 = 0\). [A1] \((l - 5)(l - 12) = 0\) [M1] so the sides are 5 cm and 12 cm. [A1] (b) \(A = l(17 - l) = 17l - l^2\). [B1] \(= -\left(l - \dfrac{17}{2}\right)^2 + \dfrac{289}{4}\). [M1 A1] The greatest area is \(\dfrac{289}{4} = 72.25\,\mathrm{cm^2}\), a square of side \(8.5\) cm. [A1]
+Q: [9 marks] ★★★ \(f(x) = 2x^2 - 12x + 21\) for \(x \in \mathbb{R}\). (a) Express \(f(x)\) in the form \(a(x - p)^2 + q\) and write down the coordinates of the vertex of the curve \(y = f(x)\). (b) State the range of \(f\). (c) The line \(y = mx\) is a tangent to the curve \(y = f(x)\). Find the two possible values of \(m\), giving exact answers.
+H: In (c), equate \(mx\) to \(f(x)\) and collect everything on one side.
+H: A tangent means the discriminant of that quadratic is zero. The unknown in the discriminant is \(m\).
+A: (a) \(2(x^2 - 6x) + 21 = 2\big[(x - 3)^2 - 9\big] + 21\) [M1] \(= 2(x - 3)^2 + 3\). [A1] The vertex is \((3, 3)\). [B1] (b) The curve opens upwards, so the range is \(f(x) \geq 3\). [B1] (c) \(2x^2 - 12x + 21 = mx\), so \(2x^2 - (12 + m)x + 21 = 0\). [M1 A1] Tangent: \((12 + m)^2 - 4(2)(21) = 0\), so \((12 + m)^2 = 168\). [M1 A1] \(m = -12 \pm \sqrt{168} = -12 \pm 2\sqrt{42}\). [A1] These are \(0.961\) and \(-25.0\) to 3 s.f.
+:::
+
+:::try Stretch for A*
+Q: [6 marks] ★★★ Find the equations of the two tangents to the curve \(y = x^2 + 1\) that pass through the point \((0, -3)\), and the coordinates of the two points where they touch the curve.
+H: A line through \((0, -3)\) with gradient \(k\) is \(y = kx - 3\).
+H: For it to be a tangent, \(x^2 + 1 = kx - 3\) must have equal roots. Use the discriminant to find \(k\).
+A: A line through \((0, -3)\) has equation \(y = kx - 3\). [B1] Equating to the curve: \(x^2 - kx + 4 = 0\). [M1] Tangency needs \(k^2 - 16 = 0\), so \(k = 4\) or \(k = -4\). [M1 A1] The tangents are \(y = 4x - 3\) and \(y = -4x - 3\). The repeated root is \(x = \dfrac{k}{2}\), so they touch at \(x = 2\) and \(x = -2\); in both cases \(y = 5\), so the points are \((2, 5)\) and \((-2, 5)\). [A1 A1]
+Q: [6 marks] ★★★ Find the set of values of \(k\) for which \(x^4 - 6x^2 + k = 0\) has exactly four distinct real roots.
+H: Let \(u = x^2\). Each positive value of \(u\) gives two values of \(x\); \(u = 0\) gives one; a negative \(u\) gives none.
+H: So you need the quadratic \(u^2 - 6u + k = 0\) to have two distinct roots that are both positive.
+A: Let \(u = x^2\): \(u^2 - 6u + k = 0\). [B1] Its roots are \(u = 3 \pm \sqrt{9 - k}\). Two distinct real roots need \(36 - 4k > 0\), so \(k < 9\). [M1 A1] Four distinct values of \(x\) need both \(u\) positive. The larger root is positive when \(k < 9\); the smaller is positive when \(3 - \sqrt{9 - k} > 0\), that is \(\sqrt{9 - k} < 3\), so \(9 - k < 9\) and \(k > 0\). [M1 A1] Therefore \(0 < k < 9\). [A1] (At \(k = 0\) the roots are \(u = 0\) and \(6\), giving only three values of \(x\); at \(k = 9\) there is one \(u\), giving two values of \(x\).)
+:::
+
 :::quiz
 ? How many real roots does \(2x^2 + 3x + 5 = 0\) have?
 - Two
@@ -332,6 +431,28 @@ A: Let \(u = \sqrt{x}\): \(u^2 - 6u + 8 = 0 \Rightarrow (u - 2)(u - 4) = 0 \Righ
 - \(x < -3\) or \(x > 3\)
 - \(x < \pm 3\)
 > The graph of \(y = x^2 - 9\) is below the axis between its roots \(-3\) and \(3\). "\(x < 3\)" alone would wrongly include values like \(-10\).
+? For which values of \(k\) does \(x^2 + kx + 4 = 0\) have equal roots?
++ \(k = 4\) or \(k = -4\)
+- \(k = 4\) only
+- \(k = 16\)
+- \(k = 2\) or \(k = -2\)
+> Equal roots need \(k^2 - 4(1)(4) = 0\), so \(k^2 = 16\) and \(k = \pm 4\). Dropping the negative root gives "\(k = 4\) only", stopping at \(k^2 = 16\) gives 16, and square-rooting the 4 instead of the 16 gives \(\pm 2\).
+? What is the solution of \(x^2 - 2x - 8 > 0\)?
++ \(x < -2\) or \(x > 4\)
+- \(-2 < x < 4\)
+- \(x > 4\)
+- \(x < -2\) and \(x > 4\)
+> \((x + 2)(x - 4) > 0\), and the ∪-shaped graph is above the axis outside the roots. "\(-2 < x < 4\)" is where it is below the axis. "And" would need both at once, which is impossible: write "or".
+:::
+
+:::checklist What you can now do
+- [ ] I can solve a quadratic equation by factorising, by completing the square and by the formula.
+- [ ] I can complete the square and read off the vertex, the minimum or maximum value and the range.
+- [ ] I can use the discriminant to say how many real roots a quadratic has, including a repeated root.
+- [ ] I can find the values of \(k\) for which a line meets, touches or misses a curve.
+- [ ] I can solve quadratic inequalities and write the answer as a set of values of \(x\).
+- [ ] I can solve simultaneous equations when one is linear and one is quadratic.
+- [ ] I can solve equations that are quadratic in disguise, such as \(x^4 - 5x^2 + 4 = 0\) or equations in \(\sqrt{x}\).
 :::
 
 :::recap

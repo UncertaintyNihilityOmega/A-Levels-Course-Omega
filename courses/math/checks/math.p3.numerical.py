@@ -80,4 +80,45 @@ for a, b in zip(xs, (1.0806, 0.9416, 1.1770, 0.7674, 1.4395, 0.2619)): eq("2cos 
 assert 0**3 - 6 * 0 + 2 == 2 and 1 - 6 + 2 == -3
 eq("mid", (1.335 + 1.345) / 2, 1.34, 1e-12)
 assert 3**2 - 3 - 6 == 0 and sqrt(3 + 6) == 3
+
+# ---- v2 additions: warm-up, proofs, spot the error, exam practice, stretch ----
+T = 5e-5                                                                    # 4 d.p. tolerance
+def sf(x, n=3): return float(f"{x:.{n}g}")
+for x in (1.5, 2.7): eq("warm-up", cbrt(2 * x + 5) ** 3, 2 * x + 5, 1e-9)
+eq("warm-up e^1.5", exp(1.5), 4.48, 5e-3); eq("warm-up grad", log(e) + 1, 2)
+f = lambda x: x ** 3 - x - 3                                               # spot the error
+eq("spot f(1.67)", f(1.67), -0.0125, 5e-5); eq("spot f(1.68)", f(1.68), 0.0616, 5e-5)
+eq("spot f(1.665)", f(1.665), -0.0492, 5e-5); eq("spot f(1.675)", f(1.675), 0.0244, 5e-5)
+assert f(1.665) < 0 < f(1.675) and round(1.676, 2) == 1.68 and round(1.6717, 2) == 1.67
+eq("spot root", bis(f, 1, 2), 1.6717, 5e-5)
+g = lambda x: x ** 3 + 2 * x - 7; assert g(1) == -4 and g(2) == 5            # exam practice Q1
+xs = iterate(lambda x: sqrt(3 * x + 4), 3, 3)                              # Q2
+eq("Q2 x1", sf(xs[0], 4), 3.606, 5e-4); eq("Q2 x2", sf(xs[1], 4), 3.849, 5e-4); eq("Q2 x3", sf(xs[2], 4), 3.943, 5e-4)
+h = lambda x: exp(x) + x - 4                                               # Q3
+eq("Q3 f(1)", h(1), -0.282, 5e-4); eq("Q3 f(1.5)", h(1.5), 1.98, 5e-3); assert h(1) < 0 < h(1.5)
+k = lambda x: 2 * x ** 3 - 3 * x - 4                                       # Q4
+r4 = bis(k, 1, 2); eq("Q4 fixed point", cbrt((3 * r4 + 4) / 2), r4, 1e-9)
+xs = iterate(lambda x: cbrt((3 * x + 4) / 2), 1.5, 3)
+for i, w in enumerate((1.6198, 1.6423, 1.6465)): eq(f"Q4 x{i+1}", xs[i], w, T)
+eq("Q4 g(1.645)", k(1.645), -0.0322, 5e-5); eq("Q4 g(1.655)", k(1.655), 0.1012, 5e-5); assert k(1.645) < 0 < k(1.655)
+m = lambda x: log(x) + 2 * x - 5                                           # Q5
+eq("Q5 f(2)", m(2), -0.307, 5e-4); eq("Q5 f(2.5)", m(2.5), 0.916, 5e-4)
+xs = iterate(lambda x: (5 - log(x)) / 2, 2, 3)
+for i, w in enumerate((2.1534, 2.1165, 2.1251)): eq(f"Q5 x{i+1}", xs[i], w, T)
+eq("Q5 f(2.115)", m(2.115), -0.0209, 5e-5); eq("Q5 f(2.125)", m(2.125), 0.0038, 5e-5); assert m(2.115) < 0 < m(2.125)
+p = lambda x: 2 ** x - 5 * x                                               # Q6
+assert p(4) == -4 and p(5) == 7
+xs = iterate(lambda x: log(5 * x) / log(2), 4.5, 3)
+for i, w in enumerate((4.4919, 4.4892, 4.4884)): eq(f"Q6 x{i+1}", xs[i], w, T)
+eq("Q6 f(4.485)", p(4.485), -0.0316, 5e-5); eq("Q6 f(4.495)", p(4.495), 0.0741, 5e-5); assert p(4.485) < 0 < p(4.495)
+for x in (3.3, 4.8): eq("Q6 rearrange", log(2 ** x) / log(2), x)
+q = lambda x: x ** 3 - 3 * x - 1                                           # stretch 1
+assert [q(t) for t in (-2, -1, 0, 1, 2)] == [-3, 1, -1, -3, 1]
+xs = iterate(lambda x: (x ** 3 - 1) / 3, 0, 4)
+for i, w in enumerate((-0.3333, -0.3457, -0.3471, -0.3473)): eq(f"S1 x{i+1}", xs[i], w, T)
+eq("S1 root", bis(q, -1, 0), -0.3473, 5e-5)
+xs = iterate(lambda x: (x ** 3 - 1) / 3, 2, 3)
+eq("S1 d1", xs[0], 2.333, 5e-4); eq("S1 d2", xs[1], 3.901, 5e-4); eq("S1 d3", xs[2], 19.46, 5e-3); assert xs[2] > xs[1] > xs[0] > 2
+a = 3; assert a ** 2 - 2 * a - 3 == 0 and 2 + 3 / a == a                    # stretch 2
+xs = iterate(lambda x: 2 + 3 / x, 1, 40); assert all(x > 0 for x in xs); eq("S2 limit", xs[-1], 3, 1e-6)
 print("ok")

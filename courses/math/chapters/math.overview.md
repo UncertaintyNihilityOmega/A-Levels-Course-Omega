@@ -61,7 +61,10 @@ Paper 3 includes every topic of Paper 2 except the trapezium rule, so a student 
 | P4 Mechanics | [Forces and equilibrium](#math.m.forces); [Kinematics](#math.m.kinematics); [Newton's laws](#math.m.newton); [Momentum](#math.m.momentum); [Work, energy and power](#math.m.energy) |
 | P5 Statistics 1 | [Data](#math.s1.data); [Permutations and combinations](#math.s1.perms); [Probability](#math.s1.prob); [Discrete random variables](#math.s1.drv); [The normal distribution](#math.s1.normal) |
 | P6 Statistics 2 | [Poisson distribution](#math.s2.poisson); [Linear combinations](#math.s2.linear); [Continuous random variables](#math.s2.crv); [Sampling and estimation](#math.s2.sampling); [Hypothesis testing](#math.s2.hypothesis) |
-| UK boards only | [Correlation and regression](#math.s.regression); [Projectiles and moments](#math.m.projectiles) |
+| UK boards only | [Correlation and regression](#math.s.regression); [Projectiles and moments](#math.m.projectiles); [Proof: how mathematicians know](#math.proof) |
+| Exam preparation | [Your calculator](#math.calc); [Writing maths for marks](#math.exam.skills); paper guides for [Paper 1](#math.exam.p1), [Papers 2 and 3](#math.exam.p23), [Paper 4](#math.exam.p4), [Paper 5](#math.exam.p5) and [Paper 6](#math.exam.p6) |
+| Mixed practice | [Pure 1](#math.mixed.pure1); [Pure 2 and 3](#math.mixed.pure3); [Mechanics](#math.mixed.mech); [Statistics 1](#math.mixed.stats1); [Statistics 2](#math.mixed.stats2) |
+| Mock papers | [Pure 1](#math.mock.p1a); [Pure 2](#math.mock.p2a); [Pure 3](#math.mock.p3a); [Mechanics](#math.mock.p4a); [Statistics 1](#math.mock.p5a); [Statistics 2](#math.mock.p6a) |
 | After A Level | [Further Mathematics](#math.further) |
 
 The P2 and P3 chapters mark their Paper 3-only parts clearly. Paper 2 has only the standard integrals, such as \(e^{2x+1}\) and \(\sin 3x\), integrals that use a trigonometric identity, and the trapezium rule. Differentiating \(\tan^{-1} x\), partial fractions, the binomial series for any rational power, integration by substitution and by parts, vectors, differential equations and complex numbers are Paper 3 only.
@@ -76,6 +79,43 @@ Every 9709 paper comes with the booklet **MF19**, the List of Formulae and Table
 **AQA 7357, Edexcel 9MA0 and OCR H240** (the UK A Levels) have three 2-hour papers, each worth one third of the grade, with pure, statistics and mechanics mixed through all three. Everyone studies all strands, and the statistics questions use a **large data set** that you explore in advance. There is no Poisson distribution or complex numbers, but the UK courses add proof, regression, projectiles and moments.
 :::
 
+## Check your starting point
+
+Five questions, one for each foundation chapter. Answer them without a calculator, then read the explanation. If you miss a question, the explanation names the chapter to read first; if you get all five, you can go straight to [Quadratics](#math.p1.quadratics).
+
+:::quiz Readiness check
+? What is \(\dfrac56 - \dfrac14\)?
++ \(\dfrac{7}{12}\)
+- \(\dfrac{4}{2}\)
+- \(\dfrac{1}{12}\)
+- \(\dfrac{5}{24}\)
+> Use a common denominator: \(\dfrac{10}{12} - \dfrac{3}{12} = \dfrac{7}{12}\). Subtracting the tops and the bottoms separately gives the first wrong option, and multiplying the fractions gives the last. If you missed this, start with [Numbers, fractions and percentages](#math.f.numbers).
+? Expand and simplify \((x + 3)(x - 5)\).
++ \(x^2 - 2x - 15\)
+- \(x^2 - 15\)
+- \(x^2 + 8x - 15\)
+- \(x^2 + 2x - 15\)
+> Multiply every term by every term: \(x^2 - 5x + 3x - 15 = x^2 - 2x - 15\). Multiplying only the first and last terms gives \(x^2 - 15\). If you missed this, read [Algebra from scratch](#math.f.algebra).
+? What is \(8^{2/3}\)?
++ \(4\)
+- \(\dfrac{16}{3}\)
+- \(\dfrac14\)
+- \(16\)
+> The denominator of the index is a root and the numerator is a power: \(8^{2/3} = \left(\sqrt[3]{8}\right)^2 = 2^2 = 4\). Multiplying \(8\) by \(\tfrac23\) gives the second option. If you missed this, read [Indices, surds and standard form](#math.f.powers).
+? What is the gradient of the line \(2y - 4x = 6\)?
++ \(2\)
+- \(4\)
+- \(-2\)
+- \(3\)
+> Make \(y\) the subject: \(2y = 4x + 6\), so \(y = 2x + 3\) and the gradient is \(2\). The option \(4\) forgets to divide by the coefficient of \(y\), and \(3\) is the \(y\)-intercept. If you missed this, read [Graphs and straight lines](#math.f.graphs).
+? A right-angled triangle has a hypotenuse of \(10\) cm and an angle of \(30^\circ\). How long is the side opposite the \(30^\circ\) angle?
++ \(5\) cm
+- \(8.66\) cm
+- \(11.5\) cm
+- \(20\) cm
+> The side opposite is \(10\sin 30^\circ = 10 \times \tfrac12 = 5\) cm. Using cosine gives \(8.66\) (the adjacent side). If you missed this, read [Geometry and trigonometry basics](#math.f.geometry).
+:::
+
 ## Recommended order and pace
 
 Follow the pure chapters in sidebar order, because each uses the one before. These weeks assume 7 to 8 hours of study a week.
@@ -85,10 +125,10 @@ Follow the pure chapters in sidebar order, because each uses the one before. The
 | 1 | Foundations: try each "Try it yourself" first and study only your gaps | 2 to 4 |
 | 2 | P1: Quadratics to Integration, in order | 14 to 16 |
 | 3 | First applied paper (Mechanics or Statistics 1) | 8 to 10 |
-| 4 | AS revision and past papers | 3 to 4 |
+| 4 | AS revision: the paper guide, mixed practice and past papers | 3 to 4 |
 | 5 | P3 chapters, which include all of P2 | 14 to 16 |
 | 6 | Second applied paper | 8 to 10 |
-| 7 | Whole-course revision and timed papers | 8 to 10 |
+| 7 | Whole-course revision, mock papers and timed papers | 8 to 10 |
 
 :::tip A week that works
 Three 90-minute sessions on new material (read, redo each worked example without looking, then try the questions), one 90-minute mixed-practice session, and one hour redoing last week's mistakes. [Build your personal study plan](#road.planner) turns your exam date into a timetable.
@@ -112,11 +152,16 @@ Every 9709 paper expects a scientific calculator. Graphical calculators, and cal
 ## How to reach an A*
 
 1. **Treat Pure Mathematics as the core.** It carries 60% of the marks, and every applied topic uses its algebra and calculus.
-2. **Practise, do not only read.** After each chapter do every "Try it yourself" question, then past-paper questions on the topic, then full timed papers in the final months. [Past papers and mark schemes](#road.pastpapers) shows how.
+2. **Practise, do not only read.** After each chapter do every "Try it yourself" question and the exam practice, then the mixed practice sets ([Pure 1](#math.mixed.pure1) is the first) and past-paper questions on the topic, then full timed papers in the final months: this course's own [mock papers](#math.mock.p1a) and real ones. [Past papers and mark schemes](#road.pastpapers) shows how.
 3. **Keep an error log.** For each lost mark, note the cause: knowledge, method, arithmetic or misreading. Redo the question a week later.
 4. **Show every step and obey the accuracy rule.** Give 3 significant figures (angles to 1 decimal place) unless the question asks for an exact answer, and work to at least 4 so that the last digit is right.
 5. **Learn the language of mark schemes.** Method marks (M) reward the right approach even after a slip; accuracy marks (A) depend on the method. [Exam technique](#road.technique) has more.
 6. **Aim above the line.** Thresholds change every session ([how the A* is awarded](#start.grades)), so a score near 85% in timed practice leaves a safe margin.
+
+Each chapter ends with an "I can" checklist. Tick the boxes as you master each outcome and they add up here, paper by paper:
+
+:::progress
+:::
 
 Start with the official syllabus and past papers; [The best resources by subject](#road.resources) lists good free extras.
 

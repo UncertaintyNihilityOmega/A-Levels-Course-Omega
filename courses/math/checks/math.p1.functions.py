@@ -95,4 +95,57 @@ eq("f(1)=f^-1(1)", f(1), fi(1)); eq("f(x)=x", f(1), 1)
 f = lambda x: 2 * x + 1; g = lambda x: x - 4
 same("quiz fg", lambda x: f(g(x)), lambda x: 2 * x - 7)
 same("quiz gf", lambda x: g(f(x)), lambda x: 2 * x - 3)
+# v2: warm-up
+for y in (-2, 0, 7): eq("w1", 3 * ((y + 5) / 3) - 5, y)
+for x in (-1, 0, 3): eq("w2", (x - 4) ** 2 - 13, x * x - 8 * x + 3)
+for x in (-1, 0, 3): eq("w3", (2 * x + 1) ** 2 - 3, 4 * x * x + 4 * x - 2)
+
+# v2: proof of the reflection: (a, b) -> (b, a); midpoint on y = x; joining gradient -1
+for a, b in ((1, 4), (-2, 3), (5, -1.5)):
+    eq("mid", (a + b) / 2, (b + a) / 2); eq("grad", (a - b) / (b - a), -1)
+
+# v2: spot the error
+fs = lambda x: (x - 2) ** 2 + 3
+inv = lambda x: 2 + sqrt(x - 3)
+for x in (2, 3.5, 6): eq("spot inverse", inv(fs(x)), x)
+for y in (3, 4, 10): eq("spot inverse2", fs(inv(y)), y)
+eq("spot range min", fs(2), 3)
+
+# v2: exam practice
+f1 = lambda x: x * x - 6 * x + 4
+eq("x1 min", f1(3), -5); eq("x1 f0", f1(0), 4); eq("x1 f5", f1(5), -1)
+assert max(f1(i / 100) for i in range(0, 501)) == 4 and min(f1(i / 100) for i in range(0, 501)) == -5
+gg = lambda x: 2 * x * x - 1
+eq("x2 gf(0)", gg(0 + 3), 17); eq("x2 gf(-6)", gg(-6 + 3), 17)
+f3 = lambda x: (3 * x - 1) / (x + 2)
+f3i = lambda x: (2 * x + 1) / (3 - x)
+for x in (-5, -1, 0, 4): eq("x3 inverse", f3i(f3(x)), x, 1e-9)
+for x in (-2.5, 0, 2, 5): eq("x3 form", f3(x), 3 - 7 / (x + 2), 1e-9)
+for x in (-1, 0, 7): eq("x4 form", x * x - 10 * x + 31, (x - 5) ** 2 + 6)
+f4i = lambda x: 5 + sqrt(x - 6)
+for x in (5, 6.5, 9): eq("x4 inverse", f4i(x * x - 10 * x + 31), x)
+# x5: transformations of the maximum (-1, 5)
+eq("x5a", -1 / 2, -0.5); eq("x5b", 3 * 5 - 2, 13); eq("x5c", -1 - 4, -5); eq("x5d", -5, -5)
+# x6
+fg = lambda x: 1 / ((x * x - 1) - 2)
+eq("x6 fg(2)", fg(2), 1); eq("x6 fg(-2)", fg(-2), 1); eq("x6 sq", 3 + 1, 4)
+# x7: transformed curve
+base = lambda x: x * x + 2 * x - 3
+for x in (-2, 0, 1.5, 4):
+    eq("x7 translation", base(x - 2) + 1, x * x - 2 * x - 2); eq("x7 stretch", 3 * (base(x - 2) + 1), 3 * x * x - 6 * x - 6)
+eq("x7 min", 3 * 1 - 6 * 1 - 6, -9); eq("x7 orig min", base(-1), -4); eq("x7 after translation", -4 + 1, -3)
+# x8
+for x in (-1, 0, 3): eq("x8 square", (x - 2) ** 2 + 5, x * x - 4 * x + 9)
+f8i = lambda x: 2 + sqrt(x - 5)
+for x in (2, 4, 7): eq("x8 inverse", f8i(x * x - 4 * x + 9), x)
+eq("x8 disc", 25 - 36, -11)
+# stretch 1: self-inverse
+fsi = lambda x: (x + 3) / (x - 1)
+for x in (-4, 0, 2, 7, 11): eq("s1 ff", fsi(fsi(x)), x, 1e-9); eq("s1 form", fsi(x), 1 + 4 / (x - 1), 1e-9)
+eq("s1 ff(7)", fsi(fsi(7)), 7)
+# stretch 2
+for a, b in ((3, -2), (-3, 4)):
+    for x in (-2, 0, 3.5): eq("s2 ff", a * (a * x + b) + b, 9 * x - 8)
+assert {a for a in (-3, 3)} == {a for a in range(-10, 11) if a * a == 9}
+eq("quiz fg", (lambda x: 3 * x + 2)(4), 3 * 4 + 2); eq("quiz gf", 3 * (4 + 2), 18)
 print("ok")

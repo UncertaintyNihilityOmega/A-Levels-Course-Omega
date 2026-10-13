@@ -11,6 +11,15 @@ Kinematics describes motion; Newton's laws explain it. Every engineer who works 
 
 **Before you start**, you need force diagrams, resolving and friction from [Forces and equilibrium](#math.m.forces), and the constant acceleration equations from [Kinematics](#math.m.kinematics).
 
+:::try Warm-up
+Q: A car accelerates uniformly from \(8\ \mathrm{m\,s^{-1}}\) to \(20\ \mathrm{m\,s^{-1}}\) over 84 m. Find its acceleration. (from [Kinematics](#math.m.kinematics))
+A: \(v^2 = u^2 + 2as\), so \(400 = 64 + 168a\) and \(a = 2\ \mathrm{m\,s^{-2}}\).
+Q: A block of mass 6 kg is on a smooth slope at \(30^\circ\) to the horizontal. Find the component of its weight down the slope and the normal reaction. Take \(g = 10\). (from [Forces and equilibrium](#math.m.forces))
+A: Down the slope: \(60\sin 30^\circ = 30\) N. Normal reaction: \(R = 60\cos 30^\circ = 52.0\) N.
+Q: Solve \(T - 12 = 3a\) and \(40 - T = 4a\) for \(a\) and \(T\). (from [Algebra from scratch](#math.f.algebra))
+A: Add the equations: \(28 = 7a\), so \(a = 4\). Then \(T = 12 + 12 = 24\). Check: \(40 - 24 = 16 = 4 \times 4\).
+:::
+
 ## Newton's laws of motion
 
 :::key Newton's laws
@@ -24,8 +33,8 @@ Kinematics describes motion; Newton's laws explain it. Every engineer who works 
 One **newton** (N) is the force that gives a mass of 1 kg an acceleration of \(1\ \mathrm{m\,s^{-2}}\). The **weight** of an object is the force of gravity on it, \(W = mg\), acting vertically downwards.
 :::
 
-- \(F\) is the **resultant** (net) force in newtons (N), \(m\) is the mass in kilograms and \(a\) is the acceleration in \(\mathrm{m\,s^{-2}}\). One newton is the force that gives a mass of 1 kg an acceleration of \(1\ \mathrm{m\,s^{-2}}\).
-- **Weight** is the force of gravity on an object: \(W = mg\), with \(g = 10\ \mathrm{m\,s^{-2}}\) in Cambridge questions that say so. A 5 kg mass has weight 50 N.
+- \(F\) is the **resultant** (net) force in newtons (N), \(m\) is the mass in kilograms and \(a\) is the acceleration in \(\mathrm{m\,s^{-2}}\).
+- Weight \(W = mg\), with \(g = 10\ \mathrm{m\,s^{-2}}\) in Cambridge questions that say so. A 5 kg mass has weight 50 N.
 - The mass is **constant** in this course, and the force is constant unless the question says otherwise. Constant force gives constant acceleration, so the suvat equations apply.
 
 :::steps
@@ -118,11 +127,31 @@ Add the equations to eliminate \(T\): \(20 = 8a\), so \(a = 2.5\ \mathrm{m\,s^{-
 Check in the first equation: \(50 - 37.5 = 12.5 = 5 \times 2.5\). ✓
 :::
 
+:::proof Why a pulley system accelerates at \(\dfrac{(m_1 - m_2)g}{m_1 + m_2}\)
+Let particle 1 (mass \(m_1\)) be the heavier one. The string is light and inextensible and the pulley is smooth, so the tension \(T\) is the same everywhere and both particles have acceleration \(a\): particle 1 downwards, particle 2 upwards.
+
+Particle 1, resultant force downwards: \(m_1g - T = m_1a\).
+
+Particle 2, resultant force upwards: \(T - m_2g = m_2a\).
+
+Add the two equations. The tension cancels:
+\[m_1g - m_2g = (m_1 + m_2)a \quad\Rightarrow\quad a = \frac{(m_1 - m_2)g}{m_1 + m_2}\]
+Put this back into particle 2's equation:
+\[T = m_2(g + a) = \frac{2m_1m_2g}{m_1 + m_2}\]
+This shows two facts. If \(m_1 = m_2\) then \(a = 0\), which is balance. If \(m_2\) is tiny, \(a \to g\) and \(T \to 0\), which is free fall. For 5 kg and 3 kg with \(g = 10\): \(a = \dfrac{2 \times 10}{8} = 2.5\) and \(T = \dfrac{2 \times 15 \times 10}{8} = 37.5\) N, as in the example.
+:::
+
 :::eg A 4 kg block sits on a rough horizontal table (coefficient of friction 0.25) and is joined by a light string over a smooth pulley at the table edge to a 2 kg block hanging freely. The system is released from rest. Find the acceleration and the tension in the string. Take \(g = 10\).
 Friction on the table block: \(F = 0.25 \times 40 = 10\) N (since \(R = 40\) N).
 \[\text{4 kg (along the table):}\quad T - 10 = 4a\]
 \[\text{2 kg (down):}\quad 20 - T = 2a\]
 Adding: \(10 = 6a\), so \(a = \tfrac53 = 1.67\ \mathrm{m\,s^{-2}}\). Then \(T = 20 - 2 \times \tfrac53 = \tfrac{50}{3} = 16.7\) N.
+:::
+
+The widget below puts a 4 kg block on a rough slope at \(30^\circ\) (\(\mu = 0.25\)), joined over a pulley at the top to a hanging 3 kg mass. It shows the forces and says whether the block stays still or slides, with the acceleration (the start is from rest). Check its answer by hand: the hanging mass pulls the block up the slope with \(3 \times 10 = 30\) N and the block's weight pulls down with 20 N, so the net pull up the slope is 10 N, more than the greatest friction 8.66 N. Then change the angle or the hanging mass and predict the result before you read it.
+
+:::html
+<div class="widget" data-w="incline" data-angle="30" data-mu="0.25" data-mass="4" data-m2="3"></div>
 :::
 
 ### When a particle hits the ground
@@ -136,7 +165,7 @@ Stage 2: the string goes slack. The 3 kg particle moves up freely with decelerat
 The 3 kg particle has risen \(2 + 0.5 = 2.5\) m above its starting position.
 :::
 
-:::eg (Exam style) Particle \(P\) of mass 4 kg is on a smooth plane inclined at \(30^\circ\) to the horizontal. A light inextensible string joins \(P\) to a particle \(Q\) of mass 2.5 kg, passing over a smooth pulley at the top of the plane so that \(Q\) hangs vertically. The system is released from rest with the string taut. (a) Find the acceleration of \(Q\) and the tension in the string. (b) \(Q\) hits the ground after falling 1.2 m. Find the speed of \(P\) at that moment and the further distance \(P\) moves up the plane before it first stops. Take \(g = 10\). [10 marks]
+:::eg (Exam style) Particle \(P\) of mass 4 kg is on a smooth plane inclined at \(30^\circ\) to the horizontal. A light inextensible string joins \(P\) to a particle \(Q\) of mass 2.5 kg, passing over a smooth pulley at the top of the plane so that \(Q\) hangs vertically. The system is released from rest with the string taut. (a) Find the acceleration of \(Q\) and the tension in the string. (b) \(Q\) hits the ground after falling 1.2 m. Find the speed of \(P\) at that moment and the further distance \(P\) moves up the plane before it first stops. Take \(g = 10\). [11 marks]
 (a) For \(Q\) (down): \(25 - T = 2.5a\). [M1 A1] For \(P\) (up the slope): \(T - 4 \times 10 \times \sin 30^\circ = 4a\), that is \(T - 20 = 4a\). [M1 A1]
 Adding: \(5 = 6.5a\), so \(a = \tfrac{10}{13} = 0.769\ \mathrm{m\,s^{-2}}\). [M1 A1] \(T = 20 + 4a = 23.1\) N. [A1]
 
@@ -177,6 +206,21 @@ If the driving force is removed and the car brakes, the car may slow faster than
 - **CAIE** does not use vector notation for forces in P4, and always tells you the value of \(g\) to use.
 :::
 
+:::eg Spot the error: friction on a slope
+A student answered this question [6 marks]: "A box of mass 5 kg slides from rest down a rough plane inclined at \(30^\circ\) to the horizontal. The coefficient of friction is 0.2. Find the acceleration of the box. Take \(g = 10\)."
+
+Line 1: \(R = 5 \times 10 = 50\) N.
+Line 2: \(F = \mu R = 0.2 \times 50 = 10\) N.
+Line 3: \(50\sin 30^\circ - 10 = 5a\), so \(25 - 10 = 5a\).
+Line 4: \(a = 3\ \mathrm{m\,s^{-2}}\).
+
+**Line 1 scores [M0 A0]**: on a slope the normal reaction balances only the component of weight into the slope, so \(R = mg\cos\theta\), not \(mg\). **Line 2 earns [M1]**: the method \(F = \mu R\) is right, and it is followed through from the student's own \(R\). **Line 3 earns [M1 A0]**: a correct three-term equation of motion, but the friction value in it is wrong. **Line 4 scores [A0]**. The student scores 2 out of 6.
+
+Correct working: \(R = 50\cos 30^\circ = 43.30\) N. [M1 A1] \(F = 0.2 \times 43.30 = 8.660\) N. [M1] Along the slope: \(50\sin 30^\circ - 8.660 = 5a\). [M1 A1] \(a = \dfrac{16.34}{5} = 3.27\ \mathrm{m\,s^{-2}}\). [A1]
+
+**Check:** a smooth slope would give \(a = 10\sin 30^\circ = 5\). Friction slows the box, so the answer must be below 5, and 3.27 is. The student's 3 is also below 5, so the check does not catch this slip: the friction value has to be checked on its own, since \(\mu mg\) is bigger than \(\mu mg\cos\theta\) on every slope.
+:::
+
 :::try Start easy, finish at exam standard
 Q: A car of mass 1200 kg has a resultant force of 3000 N acting on it. Find its acceleration.
 A: \(a = \dfrac{F}{m} = \dfrac{3000}{1200} = 2.5\ \mathrm{m\,s^{-2}}\).
@@ -198,6 +242,42 @@ Q: (Exam style) Particles \(A\) (mass 6 kg) and \(B\) (mass 2 kg) are joined by 
 A: (a) \(A\): \(60 - T = 6a\). \(B\): \(T - 20 = 2a\). [M1 A1 A1] Adding: \(40 = 8a\), so \(a = 5\ \mathrm{m\,s^{-2}}\), and \(T = 20 + 10 = 30\) N. [A1] (b) \(v^2 = 2 \times 5 \times 1.6 = 16\), so \(v = 4\ \mathrm{m\,s^{-1}}\). [M1 A1] (c) After \(A\) lands the string is slack and \(B\) decelerates at 10: \(0 = 16 - 20s\), so \(s = 0.8\) m. [M1 A1] The greatest height above the start is \(1.6 + 0.8 = 2.4\) m. [A1]
 Q: (Exam style) A 4 kg block is on a rough horizontal floor. A string at \(\theta\) above the horizontal, with \(\sin\theta = \tfrac35\), pulls it with tension \(T\). The coefficient of friction is 0.3. Find the least \(T\) for which the block is about to move. Take \(g = 10\). [6 marks]
 A: Vertically: \(R = 40 - T\sin\theta = 40 - 0.6T\). [M1 A1] Limiting friction: \(F = 0.3R\). Horizontally: \(T\cos\theta = F\), so \(0.8T = 0.3(40 - 0.6T)\). [M1 A1] \(0.8T = 12 - 0.18T\), so \(0.98T = 12\) and \(T = 12.2\) N. [M1 A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ A woman of mass 60 kg stands on the floor of a lift. The lift accelerates downwards at \(1.2\ \mathrm{m\,s^{-2}}\). Find the force that the floor exerts on her. Take \(g = 10\).
+A: Taking down as positive: \(600 - R = 60 \times 1.2\). [M1 A1] \(R = 528\) N. [A1]
+Q: [5 marks] ★ A box of mass 8 kg is pulled from rest along rough horizontal ground by a horizontal force of 40 N. The coefficient of friction is 0.3. Find the acceleration of the box and the distance it travels in the first 3 seconds. Take \(g = 10\).
+A: \(R = 80\) N, so \(F = 0.3 \times 80 = 24\) N. [B1] \(40 - 24 = 8a\), [M1] so \(a = 2\ \mathrm{m\,s^{-2}}\). [A1] \(s = \tfrac12 \times 2 \times 3^2\) [M1] \(= 9\) m. [A1]
+Q: [3 marks] ★ A particle of mass 2 kg is released from rest on a smooth plane inclined at \(25^\circ\) to the horizontal. Find its speed after 3 seconds. Take \(g = 10\).
+A: Down the slope: \(2 \times 10\sin 25^\circ = 2a\), [M1] so \(a = 10\sin 25^\circ = 4.226\ \mathrm{m\,s^{-2}}\). [A1] \(v = 4.226 \times 3 = 12.7\ \mathrm{m\,s^{-1}}\). [A1]
+Q: [7 marks] ★★ Particles \(A\) of mass 6 kg and \(B\) of mass 2 kg are attached to the ends of a light inextensible string that passes over a smooth fixed pulley. Both particles hang freely and the string is taut. The system is released from rest. Find the acceleration of the particles and the tension in the string. Find also the speed of \(A\) after it has descended 1.5 m. Take \(g = 10\).
+A: For \(A\) (down): \(60 - T = 6a\). [M1 A1] For \(B\) (up): \(T - 20 = 2a\). [M1 A1] Adding: \(40 = 8a\), so \(a = 5\ \mathrm{m\,s^{-2}}\) and \(T = 30\) N. [A1] \(v^2 = 2 \times 5 \times 1.5 = 15\), [M1] so \(v = 3.87\ \mathrm{m\,s^{-1}}\). [A1]
+Q: [7 marks] ★★ A block \(P\) of mass 5 kg rests on a rough horizontal table. The coefficient of friction is 0.4. \(P\) is joined by a light inextensible string over a smooth pulley at the edge of the table to a particle \(Q\) of mass 3 kg, which hangs freely. The system is released from rest. Find the acceleration of \(P\) and the tension in the string. Take \(g = 10\).
+A: \(R = 50\) N, so friction \(F = 0.4 \times 50 = 20\) N. [B1] For \(P\): \(T - 20 = 5a\). [M1 A1] For \(Q\): \(30 - T = 3a\). [M1 A1] Adding: \(10 = 8a\), so \(a = 1.25\ \mathrm{m\,s^{-2}}\). [A1] \(T = 20 + 5 \times 1.25 = 26.25\), so \(T = 26.3\) N. [A1]
+Q: [5 marks] ★★ A block of mass 4 kg is pushed up a rough plane inclined at \(30^\circ\) to the horizontal by a force of 50 N acting parallel to a line of greatest slope. The coefficient of friction is 0.3. Find the acceleration of the block. Take \(g = 10\).
+A: \(R = 40\cos 30^\circ = 34.64\) N. [B1] \(F = 0.3 \times 34.64 = 10.39\) N. [M1] Up the slope: \(50 - 40\sin 30^\circ - 10.39 = 4a\). [M1 A1] \(a = \dfrac{19.61}{4} = 4.90\ \mathrm{m\,s^{-2}}\). [A1]
+Q: [9 marks] (#math.m.kinematics) ★★★ A car of mass 900 kg tows a trailer of mass 300 kg along a straight horizontal road, by a light rigid tow-bar. The driving force on the car is 3000 N. The resistances to motion are 400 N on the car and 200 N on the trailer. (a) Find the acceleration of the car and the tension in the tow-bar. (b) When the speed is \(20\ \mathrm{m\,s^{-1}}\) the tow-bar breaks. The resistance on the trailer is still 200 N. Find the distance the trailer travels before it stops.
+H: Treat the car and trailer as one body for the acceleration, then look at the trailer alone for the tension.
+H: After the bar breaks, the only horizontal force on the trailer is its resistance. Find the deceleration it causes.
+H: Use \(v^2 = u^2 + 2as\) with \(v = 0\), \(u = 20\) and the deceleration you found.
+A: (a) Whole system: \(3000 - 400 - 200 = 1200a\), [M1 A1] so \(a = 2\ \mathrm{m\,s^{-2}}\). [A1] Trailer: \(T - 200 = 300 \times 2\), [M1] so \(T = 800\) N. [A1] (b) The trailer's deceleration is \(\dfrac{200}{300} = \dfrac23\ \mathrm{m\,s^{-2}}\). [M1 A1] Then \(0 = 400 - 2 \times \dfrac23 s\), [M1] so \(s = 300\) m. [A1] Check on the car: \(3000 - 400 - 800 = 1800 = 900 \times 2\). ✓
+Q: [11 marks] (#math.m.kinematics) ★★★ Particles \(A\) of mass 4 kg and \(B\) of mass \(m\) kg, with \(m < 4\), are attached to the ends of a light inextensible string that passes over a smooth fixed pulley. Both particles hang freely with the string taut, and \(A\) is 1.6 m above a horizontal floor. The system is released from rest and \(A\) reaches the floor 0.8 s later. (a) Find the acceleration of the particles, the tension in the string and the value of \(m\). (b) \(B\) does not reach the pulley. Find the greatest height above its starting position reached by \(B\). Take \(g = 10\).
+H: Use the distance and time for \(A\) to find the acceleration with a constant acceleration equation, before you use Newton's law.
+H: Write \(F = ma\) for \(A\) to find the tension, then for \(B\) to find \(m\).
+H: When \(A\) hits the floor the string goes slack. What is \(B\)'s acceleration after that, and what is its speed at that moment?
+A: (a) \(1.6 = \tfrac12 a(0.8)^2\), [M1] so \(a = 5\ \mathrm{m\,s^{-2}}\). [A1] For \(A\): \(40 - T = 4 \times 5\), [M1 A1] so \(T = 20\) N. For \(B\): \(T - 10m = 5m\), [M1 A1] so \(20 = 15m\) and \(m = \tfrac43 = 1.33\). [A1] (b) When \(A\) lands, the speed is \(5 \times 0.8 = 4\ \mathrm{m\,s^{-1}}\). [B1] The string goes slack and \(B\) moves freely upwards with deceleration 10, so it rises a further \(\dfrac{4^2}{2 \times 10} = 0.8\) m. [M1 A1] The greatest height is \(1.6 + 0.8 = 2.4\) m. [A1] Check: \(a = \dfrac{(4 - \frac43) \times 10}{4 + \frac43} = \dfrac{80/3}{16/3} = 5\). ✓
+:::
+
+:::try Stretch for A*
+Q: [10 marks] ★★★ A block is projected with speed \(8\ \mathrm{m\,s^{-1}}\) up a line of greatest slope of a rough plane. The plane is inclined at angle \(\theta\) to the horizontal, where \(\sin\theta = 0.6\) and \(\cos\theta = 0.8\). The coefficient of friction is 0.5. (a) Show that the deceleration of the block while it moves up the plane is \(10\ \mathrm{m\,s^{-2}}\). (b) Find the greatest distance the block travels up the plane. (c) Show that the block slides back down, and find its speed when it returns to its starting point. Take \(g = 10\).
+H: Call the mass \(m\): it cancels. Friction acts against the motion, so it acts down the plane while the block moves up, and up the plane while it slides down.
+H: For (c), compare \(mg\sin\theta\) with the greatest friction \(\mu mg\cos\theta\) when the block is momentarily at rest at the top.
+A: (a) \(R = 0.8mg = 8m\) and \(F = 0.5R = 4m\). [B1] Up the plane, both friction and the weight component act down the plane: \(-(6m + 4m) = ma\), [M1] so \(a = -10\): the deceleration is \(10\ \mathrm{m\,s^{-2}}\). [A1] (b) \(0 = 8^2 - 2 \times 10 \times s\), [M1] so \(s = 3.2\) m. [A1] (c) At the top the weight component \(6m\) is greater than the greatest friction \(4m\), so the block slides back. [B1] Down the plane, friction acts up the plane: \(6m - 4m = ma\), so \(a = 2\ \mathrm{m\,s^{-2}}\). [M1 A1] \(v^2 = 2 \times 2 \times 3.2 = 12.8\), [M1] so \(v = 3.58\ \mathrm{m\,s^{-1}}\). [A1] Check: it returns slower than the \(8\ \mathrm{m\,s^{-1}}\) it left with, as friction removed energy.
+Q: [6 marks] ★★★ A particle \(P\) of mass 3 kg is on a rough plane inclined at \(30^\circ\) to the horizontal, with coefficient of friction 0.5. \(P\) is joined by a light inextensible string, passing over a smooth pulley at the top of the plane, to a particle \(Q\) of mass \(m\) kg which hangs freely. The system is at rest. Find the set of values of \(m\) for which \(P\) stays at rest. Take \(g = 10\).
+H: Friction can act either way. Find the two limiting cases: \(P\) about to slide down, then \(P\) about to slide up.
+H: At rest, the tension equals the weight of \(Q\), \(T = 10m\).
+A: \(R = 30\cos 30^\circ = 25.98\) N, so the greatest friction is \(0.5 \times 25.98 = 12.99\) N. [B1] The weight component down the plane is \(30\sin 30^\circ = 15\) N. About to slide down (friction acts up the plane): \(T + 12.99 = 15\), [M1 A1] so \(10m = 2.01\) and \(m = 0.201\). [A1] About to slide up (friction acts down the plane): \(T = 15 + 12.99\), [M1] so \(10m = 27.99\) and \(m = 2.80\). [A1] \(P\) stays at rest for \(0.201 \le m \le 2.80\).
 :::
 
 :::quiz Check your understanding
@@ -231,6 +311,16 @@ A: Vertically: \(R = 40 - T\sin\theta = 40 - 0.6T\). [M1 A1] Limiting friction: 
 + zero
 - double
 > A slack string cannot pull. The other particle then moves under its own forces only.
+:::
+
+:::checklist What you can now do
+- [ ] I can write \(F = ma\) using the resultant force in the direction of the acceleration, with the right sign for each force.
+- [ ] I can find the reaction on a person or object in a lift that is accelerating up or down.
+- [ ] I can solve motion on a smooth or rough slope, and see why the acceleration is different up and down.
+- [ ] I can write a separate equation of motion for each particle in a pulley system and solve for the acceleration and the tension.
+- [ ] I can handle a car towing a trailer, with driving force, resistances, and a tow-bar in tension or thrust.
+- [ ] I can tell when a string goes slack and start a second stage of motion.
+- [ ] I can combine Newton's second law with the constant acceleration equations in one problem.
 :::
 
 :::recap

@@ -1,5 +1,5 @@
 # checks/math.p3.vectors.py: recomputes every number in the Vectors chapter.
-from math import isclose, sqrt, acos, degrees
+from math import isclose, sqrt, acos, degrees, radians, cos
 
 def eq(label, got, want, tol=1e-9):
     assert isclose(got, want, rel_tol=0, abs_tol=tol), f"{label}: computed {got}, chapter says {want}"
@@ -74,4 +74,64 @@ for t in (0.0, 5.0): eq("3t-6", dot(sub(X8(t), P8), (1, 1, 1)), 3 * t - 6)
 same("Q1", sub((3, 1, 4), (1, 4, -2)), (2, -3, 6))
 q1 = lambda t: add((1, 2, 3), mul(t, (1, 1, 2))); same("Q5", q1(1), (2, 3, 5))
 assert q1(1) != (2, 3, 4)
+
+# ---- v2 additions ----
+# warm-up
+eq("W1", sqrt(3**2 + 4**2), 5); eq("W3", degrees(acos((25 + 64 - 49) / 80)), 60, 1e-9); assert 2 - 2 * 1 == -1 + 1 and 2 - 2 == 0
+# proof: dot product forms agree at random vectors, and |b-a|^2 expansion
+import random
+random.seed(5)
+for _ in range(5):
+    a = tuple(random.randint(-5, 5) for _ in range(3)); b = tuple(random.randint(-5, 5) for _ in range(3))
+    if mag(a) == 0 or mag(b) == 0: continue
+    th = acos(dot(a, b) / (mag(a) * mag(b)))
+    eq("cosine rule", mag(sub(b, a))**2, mag(a)**2 + mag(b)**2 - 2 * mag(a) * mag(b) * cos(th), 1e-9)
+    eq("expansion", mag(sub(b, a))**2, mag(a)**2 + mag(b)**2 - 2 * dot(a, b), 1e-9)
+th = radians(60); eq("proof live", 25 - 24 * cos(th), 13, 1e-9); eq("proof a.b", 12 * cos(th), 6, 1e-9)
+# long example A
+a1, d1, a2, d2 = (2, -1, 4), (1, 2, -2), (-1, 3, -2), (2, -1, 2)
+assert add(a1, mul(1, d1)) == add(a2, mul(2, d2)) == (3, 1, 2)
+assert 2 + 1 == -1 + 2 * 2 and -1 + 2 * 1 == 3 - 2 and 4 - 2 * 1 == -2 + 2 * 2
+assert dot(d1, d2) == -4 and mag(d1) == mag(d2) == 3; eq("A angle", sf(acute(d1, d2), 3), 63.6)
+P = (2, 4, 0); X = lambda t: add(a2, mul(t, d2)); PX = lambda t: sub(X(t), P)
+assert [dot(PX(t), d2) for t in (0, 1, 2)] == [-9, 0, 9]; assert X(1) == (1, 2, 0) and sub(X(1), P) == (-1, -2, 0)
+eq("A dist", sf(mag(sub(X(1), P)), 3), 2.24)
+# long example B
+Vv, O, Aa, Bb = (4, 3, 5), (0, 0, 0), (8, 0, 0), (8, 6, 0)
+VO, VB, VA = sub(O, Vv), sub(Bb, Vv), sub(Aa, Vv)
+assert VO == (-4, -3, -5) and VB == (4, 3, -5) and dot(VO, VO) == dot(VB, VB) == 50
+assert dot(VO, VB) == 0 and dot(VO, VA) == 18 and VA == (4, -3, -5); eq("B angle", sf(ang(VO, VA), 3), 68.9); eq("B cos", 18 / 50, 0.36)
+M = tuple((x + y) / 2 for x, y in zip(Aa, Bb)); assert M == (8, 3, 0) and sub(M, Vv) == (4, 0, -5) and add(Vv, mul(1, (4, 0, -5))) == M
+# spot the error
+A_, B_, C_ = (2, 1, 0), (1, 3, 2), (4, 3, 3)
+AB, BC, BA = sub(B_, A_), sub(C_, B_), sub(A_, B_)
+assert AB == (-1, 2, 2) and BC == (3, 0, 1) and dot(AB, BC) == -1 and mag(AB) == 3
+eq("SE wrong", sf(ang(AB, BC), 3), 96.1); eq("SE right", sf(ang(BA, BC), 3), 83.9); eq("SE cos", sf(1 / (3 * sqrt(10)), 4), 0.1054)
+assert BA == (1, -2, -2) and dot(BA, BC) == 1; eq("SE sum", ang(AB, BC) + ang(BA, BC), 180, 1e-9)
+# exam practice
+assert sub((4, -2, 11), (1, 2, -1)) == (3, -4, 12) and mag((3, -4, 12)) == 13
+assert dot((-5, 2, 4), (2, -1, 3)) == 0
+l1, e1, l2, e2 = (1, 0, 2), (2, 1, -1), (2, 2, 0), (1, -1, 2)
+assert 1 + 2 * 1 == 2 + 1 and 1 == 2 - 1 and 2 - 1 != 2 * 1 and all(e1[0] * k != e2[0] for k in (1,)) and dot(e1, e2) != mag(e1) * mag(e2)
+Ab, Bb2, Cb = (1, 2, 0), (3, 0, 1), (2, 3, 3); u, v = sub(Ab, Bb2), sub(Cb, Bb2)
+assert u == (-2, 2, -1) and v == (-1, 3, 2) and dot(u, v) == 6 and mag(u) == 3; eq("E4", sf(ang(u, v), 3), 57.7); eq("E4 cos", sf(6 / (3 * sqrt(14)), 4), 0.5345)
+la, ld, Pp = (1, -2, 3), (2, 1, 2), (6, 0, 6); Xq = lambda t: add(la, mul(t, ld))
+assert [dot(sub(Xq(t), Pp), ld) for t in (1, 2, 3)] == [-9, 0, 9] and Xq(2) == (5, 0, 7) and sub(Xq(2), Pp) == (-1, 0, 1); eq("E5", sf(sqrt(2), 3), 1.41)
+OF, OA, AG = (2, 3, 6), (2, 0, 0), sub((0, 3, 6), (2, 0, 0))
+assert mag(OF) == 7 and dot(OF, OA) == 4 and AG == (-2, 3, 6) and dot(OF, AG) == 41 and mag(AG) == 7
+eq("E6 b", sf(ang(OF, OA), 3), 73.4); eq("E6 c", sf(acute(OF, AG), 3), 33.2)
+rA = lambda t: add((1, 2, 5), mul(t, (3, 1, 0))); rB = lambda t: add((7, 2, 2), mul(t, (1, 2, 2)))
+for t in (0, 1, 2.5, 4):
+    AB_ = sub(rB(t), rA(t)); assert AB_ == (6 - 2 * t, t, 2 * t - 3) and isclose(dot(AB_, AB_), 9 * t * t - 36 * t + 45)
+assert min((9 * t * t - 36 * t + 45, t) for t in [i / 100 for i in range(0, 600)]) == (9, 2.0) and mag((1, 2, 2)) == 3
+# stretch
+a, p = (1, 2, 2), (2, 1, -2); PA, PB = sub(a, p), sub(mul(-1, a), p)
+assert mag(a) == mag(p) == 3 and PA == (-1, 1, 4) and PB == (-3, -3, 0) and dot(PA, PB) == 0
+for _ in range(5):
+    av = tuple(random.randint(-4, 4) for _ in range(3)); pv = (av[1], av[2], av[0])     # same magnitude
+    assert dot(sub(av, pv), sub(mul(-1, av), pv)) == 0
+q1_, f1, q2_ = (1, 1, 2), (2, -1, 1), (0, 12, 5); g = (1, 1, 1)
+s_, t_ = -4, -7
+assert add(q1_, mul(s_, f1)) == add(q2_, mul(t_, g)) == (-7, 5, -2) and 1 + 2 * s_ == t_ and 2 + s_ == 5 + t_ and 1 - s_ == 12 + t_
+eq("S2", sf(acute(f1, g), 3), 61.9); eq("S2 cos", sf(2 / sqrt(18), 4), 0.4714)
 print("ok")

@@ -11,6 +11,15 @@ Every formula in science and business is a function: put in a time, get out a di
 
 **Before you start**, you should be comfortable with [Quadratics](#math.p1.quadratics), especially completing the square, and with graphs from [Graphs and straight lines](#math.f.graphs).
 
+:::try Warm-up
+Q: Make \(x\) the subject of \(y = 3x - 5\). (from [Algebra from scratch](#math.f.algebra))
+A: \(y + 5 = 3x\), so \(x = \dfrac{y + 5}{3}\).
+Q: Write \(x^2 - 8x + 3\) in the form \((x + p)^2 + q\). (from [Quadratics](#math.p1.quadratics))
+A: Half of \(-8\) is \(-4\): \((x - 4)^2 - 16 + 3 = (x - 4)^2 - 13\).
+Q: Expand and simplify \((2x + 1)^2 - 3\). (from [Algebra from scratch](#math.f.algebra))
+A: \(4x^2 + 4x + 1 - 3 = 4x^2 + 4x - 2\).
+:::
+
 ## What is a function?
 
 A function is a machine. You feed in a number, the machine follows a fixed rule, and out comes a new number. The square-root button on a calculator is a function: feed in 25 and you always get 5, never two different answers. That "one answer only" property is the heart of the definition.
@@ -140,6 +149,20 @@ Because \(f\) takes \(a\) to \(b\) and \(f^{-1}\) takes \(b\) back to \(a\), eve
 <figure class="fig"><svg viewBox="0 0 470 450" role="img" aria-label="A curve and its inverse reflected in the line y equals x"><path class="gr" d="M34.0 14V424 M86.2 14V424 M138.5 14V424 M190.8 14V424 M243.0 14V424 M295.2 14V424 M347.5 14V424 M399.8 14V424 M452.0 14V424 M34 424.0H452 M34 372.8H452 M34 321.5H452 M34 270.2H452 M34 219.0H452 M34 167.8H452 M34 116.5H452 M34 65.2H452 M34 14.0H452"/><path class="ax" d="M86.2 428V8" marker-end="url(#ahm)"/><path class="ax" d="M30 372.8H458" marker-end="url(#ahm)"/><text class="tl ti" x="454" y="366" text-anchor="end">x</text><text class="tl ti" x="93" y="18">y</text><text class="ts tc" x="34.0" y="388">−1</text><text class="ts tc" x="138.5" y="388">1</text><text class="ts tc" x="190.8" y="388">2</text><text class="ts tc" x="243.0" y="388">3</text><text class="ts tc" x="295.2" y="388">4</text><text class="ts tc" x="347.5" y="388">5</text><text class="ts tc" x="399.8" y="388">6</text><text class="ts tc" x="452.0" y="388">7</text><text class="ts te" x="81" y="428.0">−1</text><text class="ts te" x="81" y="325.5">1</text><text class="ts te" x="81" y="274.2">2</text><text class="ts te" x="81" y="223.0">3</text><text class="ts te" x="81" y="171.8">4</text><text class="ts te" x="81" y="120.5">5</text><text class="ts te" x="81" y="69.2">6</text><text class="ts te" x="81" y="18.0">7</text><text class="ts te" x="81" y="387">0</text><path class="c1" d="M190.8 321.5L192.1 321.5L193.4 321.4L194.7 321.2L196.0 321.0L197.3 320.7L198.6 320.3L199.9 319.9L201.2 319.4L202.5 318.9L203.8 318.3L205.1 317.6L206.4 316.9L207.7 316.1L209.0 315.2L210.3 314.3L211.7 313.3L213.0 312.2L214.3 311.1L215.6 309.9L216.9 308.7L218.2 307.4L219.5 306.0L220.8 304.6L222.1 303.1L223.4 301.5L224.7 299.8L226.0 298.1L227.3 296.4L228.6 294.6L229.9 292.7L231.2 290.7L232.5 288.7L233.9 286.6L235.2 284.5L236.5 282.3L237.8 280.0L239.1 277.6L240.4 275.2L241.7 272.8L243.0 270.2L244.3 267.7L245.6 265.0L246.9 262.3L248.2 259.5L249.5 256.6L250.8 253.7L252.1 250.7L253.5 247.7L254.8 244.6L256.1 241.4L257.4 238.2L258.7 234.9L260.0 231.5L261.3 228.1L262.6 224.6L263.9 221.0L265.2 217.4L266.5 213.7L267.8 210.0L269.1 206.2L270.4 202.3L271.7 198.4L273.0 194.4L274.4 190.3L275.7 186.2L277.0 182.0L278.3 177.7L279.6 173.4L280.9 169.0L282.2 164.5L283.5 160.0L284.8 155.5L286.1 150.8L287.4 146.1L288.7 141.3L290.0 136.5L291.3 131.6L292.6 126.6L293.9 121.6L295.2 116.5L296.6 111.3L297.9 106.1L299.2 100.8L300.5 95.5L301.8 90.1L303.1 84.6L304.4 79.1L305.7 73.4L307.0 67.8L308.3 62.0L309.6 56.2L310.9 50.4L312.2 44.5L313.5 38.5L314.8 32.4L316.2 26.3L317.5 20.1L318.7 14.0"/><path class="c2" d="M138.5 270.2L139.8 262.1L141.1 258.8L142.4 256.2L143.7 254.0L145.0 252.1L146.3 250.4L147.6 248.8L148.9 247.3L150.3 245.9L151.6 244.6L152.9 243.4L154.2 242.2L155.5 241.0L156.8 239.9L158.1 238.9L159.4 237.8L160.7 236.8L162.0 235.9L163.3 234.9L164.6 234.0L165.9 233.1L167.2 232.2L168.5 231.4L169.8 230.6L171.2 229.7L172.5 228.9L173.8 228.1L175.1 227.4L176.4 226.6L177.7 225.9L179.0 225.1L180.3 224.4L181.6 223.7L182.9 223.0L184.2 222.3L185.5 221.6L186.8 221.0L188.1 220.3L189.4 219.6L190.8 219.0L192.1 218.4L193.4 217.7L194.7 217.1L196.0 216.5L197.3 215.9L198.6 215.3L199.9 214.7L201.2 214.1L202.5 213.5L203.8 213.0L205.1 212.4L206.4 211.8L207.7 211.3L209.0 210.7L210.3 210.2L211.7 209.6L213.0 209.1L214.3 208.5L215.6 208.0L216.9 207.5L218.2 207.0L219.5 206.4L220.8 205.9L222.1 205.4L223.4 204.9L224.7 204.4L226.0 203.9L227.3 203.4L228.6 202.9L229.9 202.5L231.2 202.0L232.5 201.5L233.9 201.0L235.2 200.5L236.5 200.1L237.8 199.6L239.1 199.1L240.4 198.7L241.7 198.2L243.0 197.8L244.3 197.3L245.6 196.9L246.9 196.4L248.2 196.0L249.5 195.5L250.8 195.1L252.1 194.7L253.5 194.2L254.8 193.8L256.1 193.4L257.4 192.9L258.7 192.5L260.0 192.1L261.3 191.7L262.6 191.3L263.9 190.9L265.2 190.4L266.5 190.0L267.8 189.6L269.1 189.2L270.4 188.8L271.7 188.4L273.0 188.0L274.4 187.6L275.7 187.2L277.0 186.8L278.3 186.4L279.6 186.0L280.9 185.6L282.2 185.3L283.5 184.9L284.8 184.5L286.1 184.1L287.4 183.7L288.7 183.4L290.0 183.0L291.3 182.6L292.6 182.2L293.9 181.9L295.2 181.5L296.6 181.1L297.9 180.7L299.2 180.4L300.5 180.0L301.8 179.7L303.1 179.3L304.4 178.9L305.7 178.6L307.0 178.2L308.3 177.9L309.6 177.5L310.9 177.1L312.2 176.8L313.5 176.4L314.8 176.1L316.2 175.7L317.5 175.4L318.8 175.1L320.1 174.7L321.4 174.4L322.7 174.0L324.0 173.7L325.3 173.3L326.6 173.0L327.9 172.7L329.2 172.3L330.5 172.0L331.8 171.7L333.1 171.3L334.4 171.0L335.7 170.7L337.1 170.3L338.4 170.0L339.7 169.7L341.0 169.4L342.3 169.0L343.6 168.7L344.9 168.4L346.2 168.1L347.5 167.8L348.8 167.4L350.1 167.1L351.4 166.8L352.7 166.5L354.0 166.2L355.3 165.8L356.6 165.5L357.9 165.2L359.3 164.9L360.6 164.6L361.9 164.3L363.2 164.0L364.5 163.7L365.8 163.4L367.1 163.1L368.4 162.7L369.7 162.4L371.0 162.1L372.3 161.8L373.6 161.5L374.9 161.2L376.2 160.9L377.5 160.6L378.8 160.3L380.2 160.0L381.5 159.7L382.8 159.4L384.1 159.1L385.4 158.8L386.7 158.6L388.0 158.3L389.3 158.0L390.6 157.7L391.9 157.4L393.2 157.1L394.5 156.8L395.8 156.5L397.1 156.2L398.4 155.9L399.8 155.7L401.1 155.4L402.4 155.1L403.7 154.8L405.0 154.5L406.3 154.2L407.6 153.9L408.9 153.7L410.2 153.4L411.5 153.1L412.8 152.8L414.1 152.5L415.4 152.3L416.7 152.0L418.0 151.7L419.3 151.4L420.7 151.2L422.0 150.9L423.3 150.6L424.6 150.3L425.9 150.1L427.2 149.8L428.5 149.5L429.8 149.2L431.1 149.0L432.4 148.7L433.7 148.4L435.0 148.2L436.3 147.9L437.6 147.6L438.9 147.4L440.2 147.1L441.6 146.8L442.9 146.6L444.2 146.3L445.5 146.0L446.8 145.8L448.1 145.5L449.4 145.2L450.7 145.0L452.0 144.7"/><path class="ln-m dash" d="M34.0 424.0L35.3 422.7L36.6 421.4L37.9 420.2L39.2 418.9L40.5 417.6L41.8 416.3L43.1 415.0L44.4 413.8L45.8 412.5L47.1 411.2L48.4 409.9L49.7 408.6L51.0 407.3L52.3 406.1L53.6 404.8L54.9 403.5L56.2 402.2L57.5 400.9L58.8 399.7L60.1 398.4L61.4 397.1L62.7 395.8L64.0 394.5L65.3 393.2L66.7 392.0L68.0 390.7L69.3 389.4L70.6 388.1L71.9 386.8L73.2 385.6L74.5 384.3L75.8 383.0L77.1 381.7L78.4 380.4L79.7 379.2L81.0 377.9L82.3 376.6L83.6 375.3L84.9 374.0L86.2 372.8L87.6 371.5L88.9 370.2L90.2 368.9L91.5 367.6L92.8 366.3L94.1 365.1L95.4 363.8L96.7 362.5L98.0 361.2L99.3 359.9L100.6 358.7L101.9 357.4L103.2 356.1L104.5 354.8L105.8 353.5L107.1 352.2L108.5 351.0L109.8 349.7L111.1 348.4L112.4 347.1L113.7 345.8L115.0 344.6L116.3 343.3L117.6 342.0L118.9 340.7L120.2 339.4L121.5 338.2L122.8 336.9L124.1 335.6L125.4 334.3L126.7 333.0L128.1 331.8L129.4 330.5L130.7 329.2L132.0 327.9L133.3 326.6L134.6 325.3L135.9 324.1L137.2 322.8L138.5 321.5L139.8 320.2L141.1 318.9L142.4 317.7L143.7 316.4L145.0 315.1L146.3 313.8L147.6 312.5L148.9 311.2L150.3 310.0L151.6 308.7L152.9 307.4L154.2 306.1L155.5 304.8L156.8 303.6L158.1 302.3L159.4 301.0L160.7 299.7L162.0 298.4L163.3 297.2L164.6 295.9L165.9 294.6L167.2 293.3L168.5 292.0L169.8 290.8L171.2 289.5L172.5 288.2L173.8 286.9L175.1 285.6L176.4 284.3L177.7 283.1L179.0 281.8L180.3 280.5L181.6 279.2L182.9 277.9L184.2 276.7L185.5 275.4L186.8 274.1L188.1 272.8L189.4 271.5L190.8 270.2L192.1 269.0L193.4 267.7L194.7 266.4L196.0 265.1L197.3 263.8L198.6 262.6L199.9 261.3L201.2 260.0L202.5 258.7L203.8 257.4L205.1 256.2L206.4 254.9L207.7 253.6L209.0 252.3L210.3 251.0L211.7 249.7L213.0 248.5L214.3 247.2L215.6 245.9L216.9 244.6L218.2 243.3L219.5 242.1L220.8 240.8L222.1 239.5L223.4 238.2L224.7 236.9L226.0 235.7L227.3 234.4L228.6 233.1L229.9 231.8L231.2 230.5L232.5 229.2L233.9 228.0L235.2 226.7L236.5 225.4L237.8 224.1L239.1 222.8L240.4 221.6L241.7 220.3L243.0 219.0L244.3 217.7L245.6 216.4L246.9 215.2L248.2 213.9L249.5 212.6L250.8 211.3L252.1 210.0L253.5 208.8L254.8 207.5L256.1 206.2L257.4 204.9L258.7 203.6L260.0 202.3L261.3 201.1L262.6 199.8L263.9 198.5L265.2 197.2L266.5 195.9L267.8 194.7L269.1 193.4L270.4 192.1L271.7 190.8L273.0 189.5L274.4 188.3L275.7 187.0L277.0 185.7L278.3 184.4L279.6 183.1L280.9 181.8L282.2 180.6L283.5 179.3L284.8 178.0L286.1 176.7L287.4 175.4L288.7 174.2L290.0 172.9L291.3 171.6L292.6 170.3L293.9 169.0L295.2 167.8L296.6 166.5L297.9 165.2L299.2 163.9L300.5 162.6L301.8 161.3L303.1 160.1L304.4 158.8L305.7 157.5L307.0 156.2L308.3 154.9L309.6 153.7L310.9 152.4L312.2 151.1L313.5 149.8L314.8 148.5L316.2 147.2L317.5 146.0L318.8 144.7L320.1 143.4L321.4 142.1L322.7 140.8L324.0 139.6L325.3 138.3L326.6 137.0L327.9 135.7L329.2 134.4L330.5 133.2L331.8 131.9L333.1 130.6L334.4 129.3L335.7 128.0L337.1 126.8L338.4 125.5L339.7 124.2L341.0 122.9L342.3 121.6L343.6 120.3L344.9 119.1L346.2 117.8L347.5 116.5L348.8 115.2L350.1 113.9L351.4 112.7L352.7 111.4L354.0 110.1L355.3 108.8L356.6 107.5L357.9 106.2L359.3 105.0L360.6 103.7L361.9 102.4L363.2 101.1L364.5 99.8L365.8 98.6L367.1 97.3L368.4 96.0L369.7 94.7L371.0 93.4L372.3 92.2L373.6 90.9L374.9 89.6L376.2 88.3L377.5 87.0L378.8 85.8L380.2 84.5L381.5 83.2L382.8 81.9L384.1 80.6L385.4 79.3L386.7 78.1L388.0 76.8L389.3 75.5L390.6 74.2L391.9 72.9L393.2 71.7L394.5 70.4L395.8 69.1L397.1 67.8L398.4 66.5L399.8 65.2L401.1 64.0L402.4 62.7L403.7 61.4L405.0 60.1L406.3 58.8L407.6 57.6L408.9 56.3L410.2 55.0L411.5 53.7L412.8 52.4L414.1 51.2L415.4 49.9L416.7 48.6L418.0 47.3L419.3 46.0L420.7 44.7L422.0 43.5L423.3 42.2L424.6 40.9L425.9 39.6L427.2 38.3L428.5 37.1L429.8 35.8L431.1 34.5L432.4 33.2L433.7 31.9L435.0 30.7L436.3 29.4L437.6 28.1L438.9 26.8L440.2 25.5L441.6 24.3L442.9 23.0L444.2 21.7L445.5 20.4L446.8 19.1L448.1 17.8L449.4 16.6L450.7 15.3L452.0 14.0"/><circle class="fi" cx="190.8" cy="321.5" r="4"/><text class="tl halo" x="197.8" y="338.5" text-anchor="start">(2, 1)</text><circle class="fi" cx="138.5" cy="270.2" r="4"/><text class="tl halo" x="131.5" y="261.2" text-anchor="end">(1, 2)</text><circle class="fi" cx="295.2" cy="116.5" r="4"/><text class="tl halo" x="302.2" y="133.5" text-anchor="start">(4, 5)</text><circle class="fi" cx="347.5" cy="167.8" r="4"/><text class="tl halo" x="354.5" y="184.8" text-anchor="start">(5, 4)</text><text class="tl halo ta" x="324" y="45">y = f(x)</text><text class="tl halo ta2" x="366" y="124">y = f⁻¹(x)</text><text class="tl halo" x="452" y="64" text-anchor="end">y = x</text></svg><figcaption>The graph of f(x) = (x − 2)² + 1 for x ≥ 2 and its inverse f⁻¹(x) = 2 + √(x − 1) for x ≥ 1 are mirror images in the dashed line y = x. Each point swaps its coordinates, and the domain and range swap places.</figcaption></figure>
 :::
 
+:::proof Why the graph of the inverse is the reflection in y = x
+Take any point \((a, b)\) on the graph of \(y = f(x)\). Then \(b = f(a)\), so \(f^{-1}(b) = a\), which means \((b, a)\) lies on the graph of \(y = f^{-1}(x)\).
+
+Now compare the two points \((a, b)\) and \((b, a)\) with the line \(y = x\):
+- The midpoint is \(\left(\dfrac{a + b}{2}, \dfrac{a + b}{2}\right)\). Its coordinates are equal, so it lies on \(y = x\).
+- The gradient of the line joining them is \(\dfrac{a - b}{b - a} = -1\). The line \(y = x\) has gradient 1, and \(1 \times (-1) = -1\), so the joining line is perpendicular to \(y = x\).
+
+A point and its image are joined by a line that is perpendicular to the mirror and cut in half by it. That is exactly what a reflection in \(y = x\) does. This is true for every point, so the whole graph of \(f^{-1}\) is the reflection of the graph of \(f\).
+
+:::html
+<div class="widget" data-w="proof" data-proof="inverse"></div>
+:::
+:::
+
 If a question asks you to solve \(f(x) = f^{-1}(x)\) and \(f\) is an increasing function, the two graphs meet on the line \(y = x\), so it is enough to solve \(f(x) = x\).
 
 ## Restricting a domain
@@ -223,6 +246,19 @@ The minimum point moves \((2, -3) \to (2, -9) \to (4, -8)\). [B1]
 Cambridge puts all of this in Paper 1 (AS). The UK boards (AQA, OCR, Pearson Edexcel) split it: graph transformations are in Year 1, but domain and range, composite and inverse functions, and modulus functions are A Level (Year 2) content. Edexcel IAL puts simple transformations in P1 and functions in P3. Notation differs slightly: Cambridge often writes \(f : x \mapsto 2x + 3\), the UK boards usually write \(f(x) = 2x + 3\), and every board accepts both. The modulus function \(y = |ax + b|\) is in Cambridge Papers 2 and 3; see [Modulus and polynomials](#math.p3.algebra).
 :::
 
+:::eg Spot the error: \(f(x) = (x - 2)^2 + 3\) for \(x \geq 2\). Find \(f^{-1}(x)\) and state its domain.
+A student wrote this answer.
+
+Line 1: \(y = (x - 2)^2 + 3\), so \((x - 2)^2 = y - 3\)
+Line 2: Since \(x \geq 2\), \(x - 2 = +\sqrt{y - 3}\), so \(x = 2 + \sqrt{y - 3}\)
+Line 3: \(f^{-1}(x) = 2 + \sqrt{x - 3}\)
+Line 4: The domain of \(f^{-1}\) is \(x \geq 2\).
+
+Lines 1 to 3 are correct, including the choice of the positive square root, because the domain \(x \geq 2\) makes \(x - 2\) non-negative [M1 A1]. **Line 4 loses the last mark [B0].** The student copied the domain of \(f\). The domain of \(f^{-1}\) is the **range** of \(f\). The curve has its lowest point at \((2, 3)\), so \(f(x) \geq 3\).
+
+Correct line 4: the domain of \(f^{-1}\) is \(x \geq 3\). [B1] This also matches \(\sqrt{x - 3}\), which only exists for \(x \geq 3\).
+:::
+
 :::try Start easy, finish at exam standard
 Q: Let \(f(x) = 3x - 5\). Find \(f(4)\), \(f(-2)\) and the value of \(x\) for which \(f(x) = 10\).
 A: \(f(4) = 12 - 5 = 7\) and \(f(-2) = -6 - 5 = -11\). Solving \(3x - 5 = 10\) gives \(3x = 15\), so \(x = 5\).
@@ -245,6 +281,38 @@ A: (a) \(gf(x) = (3x - 2)^2 + 1 = 9x^2 - 12x + 5\). [M1 A1]
 (b) \((3x - 2)^2 + 1 = 10\), so \((3x - 2)^2 = 9\) and \(3x - 2 = \pm 3\). Hence \(x = \tfrac{5}{3}\) or \(x = -\tfrac{1}{3}\). [M1 A1]
 (c) From \(y = 3x - 2\) we get \(x = \dfrac{y + 2}{3}\), so \(f^{-1}(x) = \dfrac{x + 2}{3}\). [B1]
 Solving \(3x - 2 = \dfrac{x + 2}{3}\): \(9x - 6 = x + 2\), so \(8x = 8\) and \(x = 1\). [M1 A1] (Because \(f\) is increasing, solving \(f(x) = x\) gives the same answer: \(3x - 2 = x\), \(x = 1\).)
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ \(f(x) = x^2 - 6x + 4\) for \(0 \leq x \leq 5\). Find the range of \(f\).
+A: \(f(x) = (x - 3)^2 - 5\), so the least value is \(-5\) at \(x = 3\), which is in the domain. [M1 A1] The ends: \(f(0) = 4\) and \(f(5) = -1\), so the greatest value is 4. The range is \(-5 \leq f(x) \leq 4\). [A1]
+Q: [4 marks] ★ \(f(x) = x + 3\) and \(g(x) = 2x^2 - 1\) for \(x \in \mathbb{R}\). Find \(gf(x)\) and solve \(gf(x) = 17\).
+A: \(gf(x) = g(x + 3) = 2(x + 3)^2 - 1\). [M1 A1] \(2(x + 3)^2 = 18\), so \((x + 3)^2 = 9\) and \(x + 3 = \pm 3\). [M1] \(x = 0\) or \(x = -6\). [A1]
+Q: [5 marks] ★★ \(f(x) = \dfrac{3x - 1}{x + 2}\) for \(x \neq -2\). Find \(f^{-1}(x)\) and state its domain.
+A: \(y(x + 2) = 3x - 1\), so \(xy + 2y = 3x - 1\). [M1] \(xy - 3x = -1 - 2y\), so \(x(y - 3) = -(1 + 2y)\). [M1] \(f^{-1}(x) = \dfrac{2x + 1}{3 - x}\). [A1] Since \(f(x) = 3 - \dfrac{7}{x + 2}\), the value 3 is never reached, so the range of \(f\) is \(f(x) \neq 3\). [M1] The domain of \(f^{-1}\) is \(x \neq 3\). [A1]
+Q: [6 marks] ★★ \(f(x) = x^2 - 10x + 31\) for \(x \geq k\). (a) Express \(f(x)\) in the form \((x - p)^2 + q\). (b) Find the smallest value of \(k\) for which \(f\) has an inverse. (c) For this value of \(k\), find \(f^{-1}(x)\) and state its domain.
+A: (a) \(f(x) = (x - 5)^2 + 6\). [M1 A1] (b) \(f\) is one-one only to the right of its vertex, so \(k = 5\). [B1] (c) \(y - 6 = (x - 5)^2\), and \(x \geq 5\) means we take the positive root: \(f^{-1}(x) = 5 + \sqrt{x - 6}\). [M1 A1] The domain is the range of \(f\): \(x \geq 6\). [B1]
+Q: [4 marks] ★★ The curve \(y = f(x)\) has a maximum point at \((-1, 5)\). Write down the coordinates of the maximum or minimum point on each of the curves (a) \(y = f(2x)\), (b) \(y = 3f(x) - 2\), (c) \(y = f(x + 4)\), (d) \(y = -f(x)\), and say whether it is a maximum or a minimum.
+A: (a) Stretch parallel to the \(x\)-axis, scale factor \(\tfrac12\): maximum at \(\left(-\tfrac12, 5\right)\). [B1] (b) Stretch by 3 in the \(y\)-direction, then down 2: maximum at \((-1, 13)\). [B1] (c) Translation \(\begin{pmatrix}-4\\0\end{pmatrix}\): maximum at \((-5, 5)\). [B1] (d) Reflection in the \(x\)-axis: **minimum** at \((-1, -5)\). [B1]
+Q: [5 marks] ★★ \(f(x) = \dfrac{1}{x - 2}\) for \(x \neq 2\) and \(g(x) = x^2 - 1\) for \(x \in \mathbb{R}\). (a) Find \(fg(x)\) and state the values of \(x\) for which it is not defined. (b) Solve \(fg(x) = 1\).
+A: (a) \(fg(x) = f(x^2 - 1) = \dfrac{1}{x^2 - 3}\). [M1 A1] It is not defined when \(x^2 = 3\), that is \(x = \pm\sqrt{3}\). [B1] (b) \(x^2 - 3 = 1\), so \(x^2 = 4\) [M1] and \(x = \pm 2\). [A1]
+Q: [6 marks] ★★ The curve \(y = x^2 + 2x - 3\) is translated by \(\begin{pmatrix}2\\1\end{pmatrix}\), and the image is then stretched parallel to the \(y\)-axis with scale factor 3. (a) Find the equation of the final curve in the form \(y = ax^2 + bx + c\). (b) Find the coordinates of its minimum point.
+A: (a) Translation: replace \(x\) by \(x - 2\) and add 1: \(y = (x - 2)^2 + 2(x - 2) - 3 + 1 = x^2 - 2x - 2\). [M1 A1] Stretch: multiply \(y\) by 3: \(y = 3x^2 - 6x - 6\). [M1 A1] (b) The original minimum is \((-1, -4)\). The translation takes it to \((1, -3)\) and the stretch to \((1, -9)\). [B1 B1] (Check: \(3 - 6 - 6 = -9\).)
+Q: [9 marks] (#math.p1.quadratics) ★★★ \(f(x) = x^2 - 4x + 9\) for \(x \geq k\). (a) Express \(f(x)\) in the form \((x - p)^2 + q\). (b) State the least value of \(k\) for which \(f\) has an inverse. (c) For this \(k\), find \(f^{-1}(x)\) and its domain. (d) Show that the equation \(f(x) = f^{-1}(x)\) has no real solutions.
+H: For (d), \(f\) is increasing for \(x \geq k\), so the graphs of \(f\) and \(f^{-1}\) can only meet on the line \(y = x\).
+H: Solve \(f(x) = x\) instead. Collect everything on one side and look at the discriminant.
+A: (a) \(f(x) = (x - 2)^2 + 5\). [M1 A1] (b) \(k = 2\). [B1] (c) \(y - 5 = (x - 2)^2\), so \(f^{-1}(x) = 2 + \sqrt{x - 5}\). [M1 A1] Its domain is \(x \geq 5\). [B1] (d) \(f\) is increasing, so \(f(x) = f^{-1}(x)\) has the same solutions as \(f(x) = x\): \(x^2 - 5x + 9 = 0\). [M1] The discriminant is \(25 - 36 = -11 < 0\). [M1] So there are no real solutions. [A1]
+:::
+
+:::try Stretch for A*
+Q: [6 marks] ★★★ \(f(x) = \dfrac{x + 3}{x - 1}\) for \(x \neq 1\). (a) Show that \(f^{-1}(x) = f(x)\). (b) Hence write down \(ff(7)\) and find the range of \(f\).
+H: Find \(f^{-1}\) in the usual way. Compare it with \(f\).
+H: If a function is its own inverse, then applying it twice returns the starting value.
+A: (a) \(y(x - 1) = x + 3\), so \(xy - x = y + 3\). [M1] \(x(y - 1) = y + 3\), so \(x = \dfrac{y + 3}{y - 1}\). [M1] Hence \(f^{-1}(x) = \dfrac{x + 3}{x - 1} = f(x)\). [A1] (b) \(ff(x) = f^{-1}f(x) = x\), so \(ff(7) = 7\). [B1] Writing \(f(x) = 1 + \dfrac{4}{x - 1}\), the value 1 is never reached, so the range is \(f(x) \neq 1\). [M1 A1]
+Q: [5 marks] ★★★ \(f(x) = ax + b\), where \(a\) and \(b\) are constants, and \(ff(x) = 9x - 8\). Find the two possible functions \(f\).
+H: Work out \(ff(x)\) in terms of \(a\) and \(b\), then compare the coefficient of \(x\) and the constant term with \(9x - 8\).
+H: The coefficient of \(x\) gives \(a^2 = 9\), so there are two values of \(a\). Find \(b\) for each.
+A: \(ff(x) = a(ax + b) + b = a^2 x + ab + b\). [M1 A1] Comparing: \(a^2 = 9\) and \(ab + b = -8\). [M1] If \(a = 3\): \(4b = -8\), so \(b = -2\) and \(f(x) = 3x - 2\). [A1] If \(a = -3\): \(-2b = -8\), so \(b = 4\) and \(f(x) = -3x + 4\). [A1]
 :::
 
 :::quiz
@@ -272,6 +340,28 @@ Solving \(3x - 2 = \dfrac{x + 2}{3}\): \(9x - 6 = x + 2\), so \(8x = 8\) and \(x
 - \(x \geq 0\)
 - all real numbers
 > The domain of \(f^{-1}\) is the range of \(f\). The least value of \(f\) is 1, so the domain of \(f^{-1}\) is \(x \geq 1\). The value 2 is the domain of \(f\), which becomes the range of \(f^{-1}\).
+? \(f(x) = x + 2\) and \(g(x) = 3x\). What is \(fg(x)\)?
++ \(3x + 2\)
+- \(3x + 6\)
+- \(4x + 2\)
+- \(3x^2 + 6x\)
+> \(fg(x) = f(g(x)) = f(3x) = 3x + 2\). Reading from the left, \(g(f(x))\), gives \(3(x + 2) = 3x + 6\), which is \(gf(x)\), the other order.
+? The graph of \(y = f(x)\) is reflected in the line \(y = x\). Which function has this graph?
+- \(\dfrac{1}{f(x)}\)
+- \(-f(x)\)
++ \(f^{-1}(x)\)
+- \(f(-x)\)
+> The reflection in \(y = x\) swaps \(x\) and \(y\) coordinates, which is the graph of the inverse function. \(\dfrac{1}{f}\) is a reciprocal, \(-f(x)\) is a reflection in the \(x\)-axis and \(f(-x)\) is a reflection in the \(y\)-axis.
+:::
+
+:::checklist What you can now do
+- [ ] I can state the domain and range of a function and find the range from a completed square or a sketch.
+- [ ] I can say whether a function is one-one or many-one.
+- [ ] I can find a composite function such as \(fg(x)\), read from the right, and say when it exists.
+- [ ] I can find the inverse of a function and state its domain.
+- [ ] I can choose a restricted domain so a function has an inverse.
+- [ ] I can sketch a function and its inverse as reflections in \(y = x\).
+- [ ] I can describe and apply the transformations \(f(x) + a\), \(f(x + a)\), \(af(x)\) and \(f(ax)\), and combinations of them.
 :::
 
 :::recap

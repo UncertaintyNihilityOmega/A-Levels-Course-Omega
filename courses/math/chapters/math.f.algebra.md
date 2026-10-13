@@ -11,6 +11,15 @@ Algebra is the language of A Level Mathematics. A formula, a graph, a rate of ch
 
 **Before you start**, you need the arithmetic in [Numbers, fractions and percentages](#math.f.numbers): fractions, negatives and BIDMAS. The next chapter, [Indices, surds and standard form](#math.f.powers), adds powers to the rules below.
 
+:::try Warm-up
+Q: Work out \(\dfrac35 - \dfrac14\). (from [Numbers, fractions and percentages](#math.f.numbers))
+A: Use the common denominator 20: \(\dfrac{12}{20} - \dfrac{5}{20} = \dfrac{7}{20}\).
+Q: Increase \(\pounds 80\) by \(15\%\). (from [Numbers, fractions and percentages](#math.f.numbers))
+A: The multiplier is \(1.15\), so \(80 \times 1.15 = \pounds 92\).
+Q: Write \(72\) as a product of prime factors. (from [Numbers, fractions and percentages](#math.f.numbers))
+A: \(72 = 8 \times 9 = 2^3 \times 3^2\).
+:::
+
 ## Letters stand for numbers
 
 A letter in algebra is a number that is unknown or that can change. Every rule of arithmetic still holds, so you can test any algebra rule by replacing the letters with numbers.
@@ -112,7 +121,7 @@ Many exam questions give the information in words. Choose a letter for the unkno
 
 :::eg A rectangle is \(3\) cm longer than it is wide. Its perimeter is \(34\) cm. Find its length and width.
 Let the width be \(w\) cm, so the length is \((w + 3)\) cm. The perimeter is twice the sum of the sides:
-\[\begin{aligned} 2\big(w + (w + 3)\big) &= 34 \ 4w + 6 &= 34 \ w &= 7 \end{aligned}\]
+\[\begin{aligned} 2\big(w + (w + 3)\big) &= 34 \\ 4w + 6 &= 34 \\ w &= 7 \end{aligned}\]
 The width is \(7\) cm and the length is \(10\) cm. Check: \(2(7 + 10) = 34\). ✓
 :::
 
@@ -173,6 +182,20 @@ Check with \(x = 4\): \(y = \dfrac{9}{1} = 9\). The answer gives \(\dfrac{28}{7}
 "Show that" and "make \(x\) the subject" questions award a method mark for each valid step, so write one change per line. If the mark scheme says "factorise", the step with the bracket is the mark: do not jump from \(yx - 2x = 1 + 3y\) straight to the answer. Check numerically on scrap paper if you have time.
 :::
 
+:::eg Spot the error: solve the inequality \(3(x - 2) \geq 5x + 4\).
+The question is worth 3 marks. A student wrote this answer.
+
+Line 1: \(3x - 6 \geq 5x + 4\)
+Line 2: \(-2x \geq 10\)
+Line 3: \(x \geq -5\)
+
+Lines 1 and 2 are correct: the bracket is expanded, and the \(x\) terms and numbers are collected [M1] [A1]. **Line 3 is wrong.** Dividing both sides by \(-2\) reverses the inequality, so \(\geq\) must become \(\leq\). The final accuracy mark is lost [A0], and the student scores 2 out of 3.
+
+Correct line 3: \(x \leq -5\). [A1]
+
+Check with numbers. Test \(x = -6\), which is in the correct answer: the left side is \(3(-8) = -24\) and the right side is \(5(-6) + 4 = -26\), and \(-24 \geq -26\) is true. Now test \(x = 0\), which is in the student's answer: the left side is \(-6\) and the right side is \(4\), and \(-6 \geq 4\) is false. A one-minute check of a value from each side of the boundary catches the slip.
+:::
+
 :::try Start easy, finish at exam standard
 Q: Simplify \(4(2x - 3) - 3(x - 5)\).
 A: \(8x - 12 - 3x + 15 = 5x + 3\).
@@ -181,7 +204,8 @@ A: (a) \(2x^2 + 10x - 3x - 15 = 2x^2 + 7x - 15\).
 
 (b) \(x^2 - 8x + 16\).
 
-(c) \((x - 1)(x + 2) = x^2 + x - 2\), then \((x^2 + x - 2)(x - 3) = x^3 - 3x^2 + x^2 - 3x - 2x + 6 = x^3 - 2x^2 - 5x + 6\).
+(c) \((x - 1)(x + 2) = x^2 + x - 2\), then
+\[\begin{aligned} (x^2 + x - 2)(x - 3) &= x^3 - 3x^2 + x^2 - 3x - 2x + 6 \\ &= x^3 - 2x^2 - 5x + 6 \end{aligned}\]
 Q: Factorise (a) \(15x^2 - 10x\), (b) \(4x^2 - 25\), (c) \(x^2 - 3x - 28\).
 A: (a) \(5x(3x - 2)\). (b) \((2x - 5)(2x + 5)\). (c) Numbers with product \(-28\) and sum \(-3\) are \(-7\) and \(4\): \((x - 7)(x + 4)\).
 Q: Simplify \(\dfrac{x^2 - x - 12}{x^2 - 16}\).
@@ -196,6 +220,46 @@ Q: Solve the simultaneous equations \(3x - 2y = 11\), \(x + 4y = 6\).
 A: From the second, \(x = 6 - 4y\). Then \(3(6 - 4y) - 2y = 11\), so \(18 - 14y = 11\) and \(y = \tfrac12\). Then \(x = 6 - 2 = 4\). Check: \(12 - 1 = 11\). ✓
 Q: (Exam style) Make \(t\) the subject of \(v = \dfrac{3t}{t + 2}\).
 A: \(v(t + 2) = 3t\). [M1] So \(vt + 2v = 3t\) and \(2v = 3t - vt\). [M1] Factorise: \(2v = t(3 - v)\). [M1] So \(t = \dfrac{2v}{3 - v}\). [A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [5 marks] ★ (a) Factorise fully \(6x^2y - 9xy^2\). (b) Expand and simplify \((2x - 3)(x + 4) - (x - 1)^2\).
+A: (a) The common factor is \(3xy\): \(6x^2y - 9xy^2 = 3xy(2x - 3y)\). [M1 A1] (b) \((2x - 3)(x + 4) = 2x^2 + 5x - 12\). [M1] \((x - 1)^2 = x^2 - 2x + 1\), and this whole bracket is subtracted: \(2x^2 + 5x - 12 - x^2 + 2x - 1\). [M1] \(= x^2 + 7x - 13\). [A1]
+Q: [3 marks] ★ The volume of a cone is \(V = \tfrac13\pi r^2 h\). Make \(r\) the subject of the formula.
+A: Multiply by 3: \(3V = \pi r^2 h\). [M1] Divide by \(\pi h\): \(r^2 = \dfrac{3V}{\pi h}\). [M1] Take the square root: \(r = \sqrt{\dfrac{3V}{\pi h}}\). [A1]
+Q: [4 marks] ★★ Solve \(\dfrac{3x - 1}{4} - \dfrac{x + 2}{3} = 1\).
+A: Multiply every term by 12: \(3(3x - 1) - 4(x + 2) = 12\). [M1] Expand: \(9x - 3 - 4x - 8 = 12\). [M1] So \(5x = 23\) [A1] and \(x = 4.6\). [A1] Check: \(\dfrac{3(4.6) - 1}{4} = 3.2\) and \(\dfrac{4.6 + 2}{3} = 2.2\); the difference is \(1\). ✓
+Q: [4 marks] ★★ Solve the simultaneous equations \(3x + 2y = 4\) and \(5x - 3y = 13\).
+A: Multiply the first by 3 and the second by 2 to match the \(y\) coefficients: \(9x + 6y = 12\) and \(10x - 6y = 26\). [M1] Add: \(19x = 38\), so \(x = 2\). [A1 A1] Substitute: \(6 + 2y = 4\), so \(y = -1\). [A1] Check in the second equation: \(10 + 3 = 13\). ✓
+Q: [4 marks] ★★ Simplify \(\dfrac{2x^2 + x - 6}{x^2 - 4}\).
+A: Factorise the numerator: \((2x - 3)(x + 2)\). [B1] Factorise the denominator (difference of two squares): \((x - 2)(x + 2)\). [B1] Cancel the common factor \((x + 2)\): [M1] \(\dfrac{2x - 3}{x - 2}\). [A1]
+Q: [3 marks] ★★ Show that the sum of the squares of any two consecutive integers is always odd.
+A: Let the integers be \(n\) and \(n + 1\). The sum of squares is
+\[\begin{aligned} n^2 + (n + 1)^2 &= n^2 + n^2 + 2n + 1 \\ &= 2n^2 + 2n + 1 \end{aligned}\] [M1 A1]
+This equals \(2(n^2 + n) + 1\), which is one more than a multiple of \(2\), so it is odd. [B1]
+Q: [4 marks] (#math.f.numbers) ★★★ The numbers of boys and girls in a club are in the ratio \(3 : 2\). When \(6\) boys leave and \(4\) girls join, the numbers of boys and girls are equal. How many members did the club have at the start?
+H: Write the numbers of boys and girls as \(3k\) and \(2k\).
+H: Use the sentence about equal numbers to write an equation in \(k\).
+A: Boys \(= 3k\) and girls \(= 2k\). [M1] After the change they are equal: \(3k - 6 = 2k + 4\). [M1] So \(k = 10\) [A1] and the club had \(3k + 2k = 50\) members. [A1] Check: \(30 - 6 = 24 = 20 + 4\). ✓
+Q: [7 marks] ★★★ A rectangular garden has a perimeter of \(40\) m and an area of \(91\) m². (a) Show that the width \(w\) m satisfies \(w^2 - 20w + 91 = 0\). (b) Find the length and width of the garden. (c) A path \(1\) m wide goes all the way round the outside of the garden. Find the area of the path.
+H: If the perimeter is 40, then length plus width is 20. So the length is \(20 - w\).
+H: Write the area as \(w(20 - w)\) and set it equal to \(91\).
+H: For (c), the garden plus the path is a larger rectangle. How much longer and wider is it?
+A: (a) Length \(+\) width \(= 20\), so the length is \((20 - w)\). [B1] The area gives \(w(20 - w) = 91\) [M1], so \(20w - w^2 = 91\) and \(w^2 - 20w + 91 = 0\). [A1] (b) \((w - 7)(w - 13) = 0\) [M1] so the sides are \(7\) m and \(13\) m. [A1] (c) The path adds \(1\) m on each side, so the outer rectangle is \(15\) m by \(9\) m with area \(135\) m². [M1] The path has area \(135 - 91 = 44\) m². [A1]
+:::
+
+:::try Stretch for A*
+Q: [5 marks] ★★★ Given that \(x + \dfrac1x = 5\), find (a) the value of \(x^2 + \dfrac{1}{x^2}\), (b) the value of \(x^3 + \dfrac{1}{x^3}\).
+H: Square both sides of \(x + \dfrac1x = 5\). What does the middle term of the expansion become?
+H: For (b), expand \(\left(x + \dfrac1x\right)^3\). The two middle terms are both multiples of \(x + \dfrac1x\).
+A: (a) \(\left(x + \dfrac1x\right)^2 = x^2 + 2 + \dfrac{1}{x^2}\) [M1], so \(25 = x^2 + 2 + \dfrac{1}{x^2}\) and \(x^2 + \dfrac1{x^2} = 23\). [A1] (b)
+\[\begin{aligned} \left(x + \dfrac1x\right)^3 &= x^3 + 3x + \dfrac3x + \dfrac1{x^3} \\ &= x^3 + \dfrac{1}{x^3} + 3\left(x + \dfrac1x\right) \end{aligned}\] [M1]
+So \(125 = x^3 + \dfrac1{x^3} + 15\) [M1], giving \(x^3 + \dfrac1{x^3} = 110\). [A1] Check: \(x = \dfrac{5 + \sqrt{21}}{2} = 4.791\); then \(x^3 = 109.98\) and \(\dfrac{1}{x^3} = 0.009\), which add to \(110\).
+Q: [5 marks] ★★★ Find the values of \(k\) for which the simultaneous equations \(kx + 3y = 6\) and \(4x + (k + 1)y = 9\) have no solution.
+H: Eliminate \(y\): multiply the first equation by \((k + 1)\) and the second by 3, then subtract.
+H: You get an equation of the form (something)\(\,x =\) (something). When can it have no solution?
+H: It has none when the coefficient of \(x\) is zero but the right-hand side is not. Check that second condition for each value of \(k\).
+A: Multiply the first by \((k + 1)\) and the second by 3: \(k(k + 1)x + 3(k + 1)y = 6(k + 1)\) and \(12x + 3(k + 1)y = 27\). Subtract: \((k^2 + k - 12)x = 6k - 21\). [M1 A1] There is no solution when the coefficient of \(x\) is zero but the right-hand side is not. [M1] \(k^2 + k - 12 = (k + 4)(k - 3) = 0\), so \(k = 3\) or \(k = -4\). [A1] For \(k = 3\) the right-hand side is \(-3\), and for \(k = -4\) it is \(-45\); neither is zero, so both values give no solution. [A1] Meaning: the two lines are parallel but different.
 :::
 
 :::quiz
@@ -223,6 +287,21 @@ A: \(v(t + 2) = 3t\). [M1] So \(vt + 2v = 3t\) and \(2v = 3t - vt\). [M1] Factor
 + \(x = \dfrac{y + 1}{y - 1}\)
 - \(x = \dfrac{y}{y - 1}\)
 > \(y(x - 1) = x + 1\), so \(yx - x = y + 1\) and \(x(y - 1) = y + 1\). The answer has the same form as the original, which is a feature of this formula. The option \(\tfrac{y - 1}{y + 1}\) is the reciprocal, which comes from dividing by the wrong bracket. The option \(y - 2\) comes from treating the fraction as if it had no denominator.
+? Solve \(-3x < 12\).
+- \(x < -4\)
++ \(x > -4\)
+- \(x < 4\)
+- \(x > 4\)
+> Dividing both sides by \(-3\) reverses the inequality, so \(x > -4\). The option \(x < -4\) divides correctly but keeps the sign. The options with \(4\) lose the minus sign.
+:::
+
+:::checklist What you can now do
+- [ ] I can simplify expressions, expand single and double brackets, and factorise common factors, differences of two squares and quadratics \(x^2 + bx + c\).
+- [ ] I can add, simplify and divide algebraic fractions.
+- [ ] I can solve linear equations, including ones with fractions, and linear inequalities (reversing the sign when I multiply or divide by a negative).
+- [ ] I can solve a pair of simultaneous equations by elimination or by substitution.
+- [ ] I can change the subject of a formula, including when the subject is squared.
+- [ ] I can turn a worded problem into an equation and check my answer in the original problem.
 :::
 
 :::recap

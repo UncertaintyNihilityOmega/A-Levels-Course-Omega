@@ -11,6 +11,15 @@ Every bridge, crane, climbing rope and roof is designed so that the forces on it
 
 **Before you start**, you need right-angled triangle trigonometry from [Geometry and trigonometry basics](#math.f.geometry) and confident algebra from [Algebra from scratch](#math.f.algebra). Slopes use \(\sin\) and \(\cos\) of angles, as in [Trigonometry](#math.p1.trig).
 
+:::try Warm-up
+Q: Write down the exact values of \(\sin 30^\circ\), \(\cos 30^\circ\) and \(\tan 60^\circ\). (from [Trigonometry](#math.p1.trig))
+A: \(\sin 30^\circ = \tfrac12\), \(\cos 30^\circ = \dfrac{\sqrt3}{2}\), \(\tan 60^\circ = \sqrt3\).
+Q: Solve \(2x + 3y = 12\) and \(x - y = 1\). (from [Algebra from scratch](#math.f.algebra))
+A: From the second, \(x = y + 1\). Then \(2y + 2 + 3y = 12\), so \(y = 2\) and \(x = 3\). Check: \(6 + 6 = 12\) and \(3 - 2 = 1\).
+Q: A right-angled triangle has hypotenuse 13 and one other side 5. Find the third side and the angle opposite the side of length 5. (from [Geometry and trigonometry basics](#math.f.geometry))
+A: Third side \(= \sqrt{13^2 - 5^2}\) \(= 12\). The angle is \(\sin^{-1}\dfrac{5}{13}\) \(= 22.6^\circ\).
+:::
+
 ## Forces and the mechanics model
 
 A **force** is a push or a pull. Forces are measured in **newtons** (N). They have both a size and a direction, so they are vectors: a force of 10 N means nothing until you say which way it acts.
@@ -234,6 +243,22 @@ On a slope, resolve **along** the slope and **perpendicular** to it. Gravity doe
 - A block just about to slide down a rough slope, with no other forces, has \(\mu = \tan\theta\).
 :::
 
+:::proof Why the weight splits into \(mg\sin\theta\) and \(mg\cos\theta\)
+Tilt a flat surface through angle \(\theta\). The normal to the surface is perpendicular to it, so the normal tilts through the same angle \(\theta\) from the vertical. The weight \(mg\) points straight down, so the angle between the weight and the line into the slope is \(\theta\).
+
+Resolve \(mg\) along that line: the component is \(mg\cos\theta\), because the component along a line at angle \(\theta\) is \(\cos\theta\) times the force.
+
+The line down the slope is at \(90^\circ\) to the line into the slope, so it makes angle \(90^\circ - \theta\) with the weight. The component down the slope is \(mg\cos(90^\circ - \theta) = mg\sin\theta\).
+
+Check the two ends. On a flat surface (\(\theta = 0\)) the components are 0 down the surface and \(mg\) into it. On a vertical wall (\(\theta = 90^\circ\)) they are \(mg\) along the wall and 0 into it. For \(mg = 50\) N and \(\sin\theta = 0.6\) the components are 30 N and 40 N, and \(30^2 + 40^2 = 50^2\), as they must be.
+:::
+
+Try the slope widget. With no pull, raise the angle until the block starts to slide and compare that angle with \(\tan^{-1}\mu\). Then add a pull up the slope and find the range of \(P\) that keeps the block at rest, as in the exam example below.
+
+:::html
+<div class="widget" data-w="incline" data-angle="30" data-mu="0.4" data-mass="5"></div>
+:::
+
 :::eg (Exam style) A block of mass 5 kg rests on a rough plane inclined at angle \(\theta\) to the horizontal, where \(\sin\theta = 0.6\) and \(\cos\theta = 0.8\). The coefficient of friction between the block and the plane is 0.5. A force of magnitude \(P\) N acts on the block up the plane, parallel to a line of greatest slope. Find the set of values of \(P\) for which the block stays in equilibrium. Take \(g = 10\).
 Perpendicular to the plane: \(R = 50\cos\theta = 50 \times 0.8 = 40\) N. [M1 A1]
 
@@ -266,6 +291,20 @@ Cambridge 9709 Paper 4 and Edexcel IAL Mechanics 1 treat this topic in the same 
 Draw the force diagram before writing any equation, and mark the positive direction. Examiners give a method mark for each correct resolving equation, so write one equation for each direction. Give the full working for \(R\) before using \(F = \mu R\). State "limiting equilibrium" when you use \(F = \mu R\), and give answers to 3 significant figures.
 :::
 
+:::eg Spot the error: friction is not always \(\mu R\)
+A student answered this question [5 marks]: "A block of mass 6 kg rests on a rough plane inclined at \(30^\circ\) to the horizontal. The coefficient of friction is 0.6. Show that the block does not slide down the plane, and find the friction force. Take \(g = 10\)."
+
+Line 1: \(R = 60\cos 30^\circ = 52.0\) N.
+Line 2: \(F = \mu R = 0.6 \times 52.0 = 31.2\) N.
+Line 3: The friction force is 31.2 N.
+
+**Line 1 earns [M1 A1]**: the normal reaction is correct. **Line 2 scores [M0 A0]**: the student wrote \(F = \mu R\) without checking that the block is on the point of slipping, and never compared anything with the weight component down the plane, so nothing shows that the block stays still. **Line 3 scores [B0]**: the friction force is only as big as it needs to be, and here that is not 31.2 N. The student scores 2 out of 5.
+
+Correct working: \(R = 60\cos 30^\circ = 51.96\) N. [M1 A1] The weight component down the plane is \(60\sin 30^\circ = 30\) N. [M1] The greatest friction is \(0.6 \times 51.96 = 31.18\) N, which is more than 30 N, so the block does not slide. [A1] It is in equilibrium, so the friction force equals the 30 N pulling it down the plane. [B1]
+
+**Check:** the friction force is 30 N, a little less than the limit of 31.2 N. The block is close to slipping, which fits \(\tan 30^\circ = 0.577\) being just below \(\mu = 0.6\).
+:::
+
 :::try Start easy, finish at exam standard
 Q: A force of 50 N acts at \(40^\circ\) above the horizontal. Find its horizontal and vertical components.
 A: Horizontal: \(50\cos 40^\circ = 38.3\) N. Vertical: \(50\sin 40^\circ = 32.1\) N.
@@ -293,6 +332,39 @@ Substitute: \(P\cos 30^\circ = 15 + 0.2(25.98 + 0.5P)\), so \(P(0.8660 - 0.1) = 
 \(P = \dfrac{20.196}{0.7660} = 26.4\) N. [A1]
 :::
 
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ A box of mass 12 kg rests on rough horizontal ground. The coefficient of friction is 0.35. A horizontal force of 36 N is applied to the box. Show that the box does not move, and state the friction force. Take \(g = 10\).
+A: \(R = 12 \times 10 = 120\) N, so the greatest friction is \(0.35 \times 120 = 42\) N. [B1 M1] The applied force 36 N is less than 42 N, so the box does not move. [A1] The box is in equilibrium, so the friction force is 36 N, not 42 N.
+Q: [4 marks] ★ Forces of 7 N and 24 N act at right angles to each other on a particle. Find the magnitude of their resultant and the angle it makes with the 24 N force.
+A: \(\sqrt{7^2 + 24^2} = 25\) N. [M1 A1] The angle is \(\tan^{-1}\dfrac{7}{24}\) [M1] \(= 16.3^\circ\). [A1]
+Q: [3 marks] ★ A block rests on a rough slope. The slope is raised until the block is about to slide, which happens when the slope is at \(35^\circ\) to the horizontal. Find the coefficient of friction between the block and the slope, and state whether it would slide at \(30^\circ\).
+A: When it is about to slide, \(F = mg\sin\theta\) and \(R = mg\cos\theta\), and \(F = \mu R\), so \(\mu = \tan\theta\). [M1] \(\mu = \tan 35^\circ = 0.700\). [A1] At \(30^\circ\), \(\tan 30^\circ = 0.577 < 0.700\), so it would not slide. [B1]
+Q: [4 marks] ★★ A particle of mass 4 kg hangs in equilibrium from a light string attached to a fixed point. A horizontal force of magnitude \(P\) N pulls the particle sideways until the string makes \(30^\circ\) with the vertical. Find \(P\) and the tension \(T\) in the string. Take \(g = 10\).
+A: Vertically: \(T\cos 30^\circ = 40\), [M1] so \(T = 46.2\) N. [A1] Horizontally: \(P = T\sin 30^\circ\) [M1] \(= 23.1\) N. [A1]
+Q: [6 marks] ★★ A block of mass 5 kg rests on a smooth plane inclined at \(40^\circ\) to the horizontal. It is held in equilibrium by a force of \(P\) N acting up the plane at \(20^\circ\) above a line of greatest slope, away from the plane. Find \(P\) and the normal reaction \(R\). Take \(g = 10\).
+A: Along the plane: \(P\cos 20^\circ = 50\sin 40^\circ\). [M1 A1] \(P = \dfrac{32.14}{0.9397} = 34.2\) N. [A1] Perpendicular to the plane: \(R + P\sin 20^\circ = 50\cos 40^\circ\). [M1 A1] \(R = 38.30 - 11.70 = 26.6\) N. [A1]
+Q: [6 marks] ★★ A crate of mass 15 kg rests on rough horizontal ground with coefficient of friction 0.3. A rope pulls the crate at \(20^\circ\) above the horizontal. The crate is about to slide. Find the tension \(T\) in the rope and the normal reaction \(R\). Take \(g = 10\).
+A: Vertically: \(R = 150 - T\sin 20^\circ\). [M1 A1] Horizontally, in limiting equilibrium: \(T\cos 20^\circ = 0.3R\). [M1 A1] Substitute for \(R\):
+\[T(\cos 20^\circ + 0.3\sin 20^\circ) = 45\]
+\(T = \dfrac{45}{1.0423} = 43.2\) N [A1] and \(R = 150 - 14.77 = 135\) N. [A1]
+Q: [5 marks] ★★ Three forces act on a particle at \(O\) and the particle is in equilibrium. A force of 8 N acts along the positive \(x\)-axis. A force of 6 N acts at \(120^\circ\) to the positive \(x\)-axis. Find the magnitude of the third force and the angle it makes with the negative \(x\)-axis.
+A: Sum of the first two forces: \(x\)-component \(8 + 6\cos 120^\circ = 5\), [B1] \(y\)-component \(6\sin 120^\circ = 5.196\). [B1] The third force is equal and opposite. Its magnitude is \(\sqrt{5^2 + 5.196^2} = 7.21\) N. [M1 A1] It points in the direction \((-5, -5.196)\), at \(\tan^{-1}\dfrac{5.196}{5} = 46.1^\circ\) below the negative \(x\)-axis. [A1]
+Q: [9 marks] (#math.p1.trig) ★★★ A block of mass 4 kg rests on a rough plane inclined at angle \(\theta\) to the horizontal. The coefficient of friction is 0.5. A horizontal force of \(P\) N, in the vertical plane through a line of greatest slope, pushes the block up the plane, and the block is about to slide up. (a) Show that \(P(\cos\theta - 0.5\sin\theta) = 40\sin\theta + 20\cos\theta\). (b) Given that \(P = 40\), show that \(\tan\theta = \tfrac13\) and find \(\theta\). Take \(g = 10\).
+H: Resolve perpendicular to the plane first. A horizontal force pushing towards the plane has a component into the plane as well as a component up it.
+H: The block is about to slide up, so friction acts down the plane and \(F = 0.5R\). Write both resolving equations before you substitute.
+H: For (b), collect the \(\cos\theta\) terms on one side and the \(\sin\theta\) terms on the other, then divide by \(\cos\theta\).
+A: (a) Perpendicular: \(R = 40\cos\theta + P\sin\theta\). [M1 A1] Along the plane: \(P\cos\theta = 40\sin\theta + F\). [M1 A1] With \(F = 0.5R\) [M1] this gives
+\[P\cos\theta = 40\sin\theta + 20\cos\theta + 0.5P\sin\theta\]
+so \(P(\cos\theta - 0.5\sin\theta) = 40\sin\theta + 20\cos\theta\). [A1] (b) With \(P = 40\): \(40\cos\theta - 20\sin\theta = 40\sin\theta + 20\cos\theta\), [M1] so \(20\cos\theta = 60\sin\theta\) and \(\tan\theta = \tfrac13\). [A1] Then \(\theta = \tan^{-1}\tfrac13 = 18.4^\circ\). [A1] Check: \(R = 40\cos\theta + 40\sin\theta = 50.6\) N, and along the plane \(40\cos\theta = 37.9\) equals \(40\sin\theta + 0.5R = 12.6 + 25.3\). ✓
+:::
+
+:::try Stretch for A*
+Q: [8 marks] ★★★ A crate of mass 20 kg rests on rough horizontal ground, with coefficient of friction 0.4. A rope pulls it at angle \(\theta\) above the horizontal, and the crate is about to slide. (a) Show that the tension is \(T = \dfrac{80}{\cos\theta + 0.4\sin\theta}\). (b) The rope can be held at any angle. Find the angle \(\theta\) for which \(T\) is least, and the least value of \(T\). Take \(g = 10\).
+H: For (a), resolve vertically to find \(R\) in terms of \(T\) and \(\theta\), then use \(F = 0.4R\) horizontally.
+H: \(T\) is least when the denominator \(\cos\theta + 0.4\sin\theta\) is greatest. Write it in the form \(k\cos(\theta - \alpha)\), as in [Further trigonometry](#math.p3.trig) (or differentiate it).
+A: (a) Vertically: \(R + T\sin\theta = 200\). [M1 A1] Horizontally: \(T\cos\theta = 0.4R\). [M1 A1] So \(T\cos\theta = 0.4(200 - T\sin\theta)\), that is \(T(\cos\theta + 0.4\sin\theta) = 80\), which gives the result. (b) \(\cos\theta + 0.4\sin\theta = \sqrt{1.16}\,\cos(\theta - \alpha)\) with \(\tan\alpha = 0.4\). [M1] Its greatest value is \(\sqrt{1.16}\), when \(\theta = \alpha = \tan^{-1}0.4 = 21.8^\circ\). [A1] The least tension is \(T = \dfrac{80}{\sqrt{1.16}} = 74.3\) N. [M1 A1] Check: at \(\theta = 0^\circ\) the tension is 80 N, and at \(30^\circ\) it is \(\dfrac{80}{0.866 + 0.2} = 75.0\) N, both larger than 74.3 N. At the best angle the rope is perpendicular to the contact force, which makes angle \(\tan^{-1}0.4\) with the vertical.
+:::
+
 :::quiz
 ? A 6 kg box rests on a rough horizontal floor with \(\mu = 0.5\). A horizontal force of 20 N is applied and the box does not move. Take \(g = 10\). What is the friction force?
 - 30 N
@@ -317,6 +389,29 @@ Substitute: \(P\cos 30^\circ = 15 + 0.2(25.98 + 0.5P)\), so \(P(0.8660 - 0.1) = 
 - The three forces have equal magnitudes.
 - Each force is perpendicular to the other two.
 > Equilibrium means zero resultant force. The particle could be at rest or moving at constant velocity, and the forces can have any magnitudes that balance.
+? A 10 kg crate on rough horizontal ground is pulled by a rope at \(30^\circ\) above the horizontal. Compared with a horizontal pull, the normal reaction is
+- the same, 100 N
++ less than 100 N
+- more than 100 N
+- \(100\cos 30^\circ\) N
+> The vertical part of the tension, \(T\sin 30^\circ\), helps to hold the crate up, so \(R = 100 - T\sin 30^\circ\). Less normal reaction also means less friction available.
+? A 5 kg block rests in equilibrium on a rough slope at \(20^\circ\) to the horizontal. Take \(g = 10\). What is the friction force?
+- \(\mu \times 50\cos 20^\circ\) N, because \(F = \mu R\)
++ \(50\sin 20^\circ\) N, because it balances the weight component down the slope
+- \(50\cos 20^\circ\) N
+- \(50\tan 20^\circ\) N
+> The block is not known to be about to slip, so \(F = \mu R\) does not apply. Friction balances the 17.1 N component of weight down the slope.
+:::
+
+:::checklist What you can now do
+- [ ] I can draw a force diagram that shows every force on a particle: weight, normal reaction, friction, tension or thrust, and any driving force.
+- [ ] I can resolve a force into components along and perpendicular to any direction, including along a slope.
+- [ ] I can find the magnitude and direction of the resultant of several forces by adding their components.
+- [ ] I can use "the components add to zero in two directions" to find unknown forces on a particle in equilibrium.
+- [ ] I can find the contact force between two surfaces from its normal and frictional components.
+- [ ] I can use \(F \le \mu R\), and use \(F = \mu R\) only for limiting equilibrium or sliding.
+- [ ] I can find a friction force, or the range of an applied force, for a block on a rough slope.
+- [ ] I can state Newton's third law and pick out a pair of forces that obey it.
 :::
 
 :::recap

@@ -255,6 +255,31 @@
     const note = W.h('div', { class: 'w-note' });
     body.append(note);
 
+    /* ---- optional: draggable tangent and chord (data-tangent="x0" data-chord="h"), shaded region (data-shade-between="f; g") ---- */
+    const tanOn = o.tangent != null && String(o.tangent).trim() !== '' && !deg;
+    let tx = tanOn ? num(o.tangent, 1) : NaN;
+    let th = clamp(num(o.chord, 1), 0.001, 5);
+    let tanDrag = null, tanSl = null, chSl = null;
+    const tanBox = W.h('div', { class: 'w-row' });
+    const tanInfo = W.h('div', { class: 'w-val', style: { minHeight: '1.5em' } });
+    body.append(tanBox, tanInfo);
+    show(tanBox, tanOn); show(tanInfo, tanOn);
+    let shade = null;
+    const shadeSrc = o.shadeBetween != null ? o.shadeBetween : o['shade-between'];
+    const shadeX = pair(o.shadeX != null ? o.shadeX : o['shade-x']);
+    const shadeInfo = W.h('div', { class: 'w-val', style: { minHeight: '1.5em' } });
+    body.append(shadeInfo);
+    show(shadeInfo, false);
+    if (shadeSrc != null && String(shadeSrc).trim() !== '') {
+      const parts = String(shadeSrc).split(';').map((s) => s.trim()).filter(Boolean);
+      if (parts.length === 2) {
+        try {
+          const a = W.parse(stripLhs(parts[0]), { degrees: deg }), b = W.parse(stripLhs(parts[1]), { degrees: deg });
+          shade = { f: a.f, g: b.f, vars: new Set([...a.vars, ...b.vars]) };
+        } catch (e) { warn.push(`data-shade-between: ${e.message}`); }
+      } else warn.push('data-shade-between should look like "f; g" (two expressions).');
+    }
+
     /* ---- parsing ---- */
     function parseFn(i) {
       const s = F[i];
@@ -305,6 +330,7 @@
       const used = new Set();
       for (const s of F) if (s.vars) for (const v of s.vars) if (v !== 'x') used.add(v);
       for (const p of pts) for (const v of p.vars) if (v !== 'x') used.add(v);
+      if (shade) for (const v of shade.vars) if (v !== 'x') used.add(v);
       for (const name of used) if (!params[name]) addParam(name);
       for (const name of Object.keys(params).sort()) { sliderRow.append(params[name].ui.el); show(params[name].ui.el, used.has(name)); }
       show(sliderRow, used.size > 0);
@@ -361,6 +387,19 @@
     };
     let view = homeView();
     let geom = null, hover = null;
+    function setTx(v) {
+      tx = clamp(Math.round(v * 100) / 100, home0.x0, home0.x1);
+      if (tanSl) tanSl.set(tx);
+      cv.redraw();
+    }
+    if (tanOn) {
+      tx = clamp(tx, home0.x0, home0.x1);
+      tanSl = W.slider({ label: 'x₀', min: home0.x0, max: home0.x1, step: 0.01, value: tx, fmt: (v) => W.fix(v, 2), oninput: (v) => { tx = v; cv.redraw(); } });
+      tanSl.input.setAttribute('aria-label', 'Point of tangency x0');
+      chSl = W.slider({ label: 'h', min: 0.001, max: 3, step: 0.001, value: th, fmt: (v) => W.fix(v, 3), oninput: (v) => { th = v; cv.redraw(); } });
+      chSl.input.setAttribute('aria-label', 'Chord width h: the second point is at x0 + h');
+      tanBox.append(tanSl.el, chSl.el);
+    }
 
     function setDeg(on) {
       if (on === deg) return;
@@ -396,12 +435,19 @@
       if (e.button != null && e.button > 0) return;
       try { wrap.setPointerCapture(e.pointerId); } catch (err) { /* ignore */ }
       const p = ptPos(cv, e);
+      if (tanOn && ptrs.size === 0 && geom && geom.X && F[0] && F[0].f) {
+        const yv = evalFn(F[0].f)(tx);
+        if (isFinite(yv) && Math.hypot(p.x - geom.X(tx), p.y - geom.Y(yv)) < 18) {
+          tanDrag = e.pointerId; ptrs.set(e.pointerId, p); wrap.style.cursor = 'grabbing'; hover = null; return;
+        }
+      }
       ptrs.set(e.pointerId, p);
       if (ptrs.size === 1) { start = p; dragged = false; }
       if (ptrs.size === 2) { dragged = true; pinch = null; hover = null; }
     });
     wrap.addEventListener('pointermove', (e) => {
       const p = ptPos(cv, e);
+      if (tanDrag === e.pointerId && geom) { setTx(view.x0 + (p.x - geom.L) / (geom.R - geom.L) * (view.x1 - view.x0)); return; }
       if (!ptrs.has(e.pointerId)) {
         if (e.pointerType === 'mouse' || e.pointerType === 'pen') { hover = p; cv.redraw(); }
         return;
@@ -421,6 +467,7 @@
     const endPtr = (e) => {
       if (!ptrs.has(e.pointerId)) return;
       ptrs.delete(e.pointerId);
+      if (tanDrag === e.pointerId) { tanDrag = null; wrap.style.cursor = 'crosshair'; return; }
       if (ptrs.size < 2) pinch = null;
       if (ptrs.size === 0) {
         wrap.style.cursor = 'crosshair';
@@ -468,17 +515,19 @@
       const A = W.axes(ctx, w, h, av, c, { pad, xlabel: deg ? 'x (°)' : 'x', ylabel: 'y', fx: fxl });
       const X = (x) => A.X(x / sx), Y = A.Y;
       const L = pad.l, R = w - pad.r, T = pad.t, B = h - pad.b;
-      geom = { L, R, T, B };
+      geom = { L, R, T, B, X, Y };
       ctx.save();
       ctx.beginPath(); ctx.rect(L, T, R - L, B - T); ctx.clip();
       const N = Math.max(60, Math.round(R - L));
       ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+      if (shade) drawShade(ctx, c, X, Y);
       F.forEach((s, i) => {
         if (!s.f) return;
         ctx.beginPath();
         traceCurve(ctx, evalFn(s.f), view.x0, span / N, N, X, Y);
         ctx.strokeStyle = c[COLV[i]]; ctx.lineWidth = 2.4; ctx.stroke();
       });
+      if (tanOn) drawTangent(ctx, c, X, Y, L, R);
       ctx.restore();
       topLabels(ctx, c, A, av, w, h, fxl, null);
       ctx.save();
@@ -522,6 +571,70 @@
       }
       ctx.restore();
       renderReadout(hv);
+    }
+    /** tangent (red) and chord (second colour, dashed) at x0; the readout compares their gradients */
+    function drawTangent(ctx, c, X, Y, L, R) {
+      const fn = F[0] && F[0].f ? evalFn(F[0].f) : null;
+      if (!fn) { tanInfo.textContent = ''; return; }
+      const y0 = fn(tx), x1 = tx + th, y1 = fn(x1);
+      if (!isFinite(y0)) { tanInfo.textContent = 'The curve is not defined at x₀.'; return; }
+      const d = 1e-5 * Math.max(1, Math.abs(tx));
+      const m = (fn(tx + d) - fn(tx - d)) / (2 * d);
+      const line = (slope, colour, dash, lw) => {
+        const xa = view.x0, xb = view.x1;
+        ctx.beginPath(); ctx.moveTo(X(xa), Y(y0 + slope * (xa - tx))); ctx.lineTo(X(xb), Y(y0 + slope * (xb - tx)));
+        ctx.setLineDash(dash); ctx.strokeStyle = colour; ctx.lineWidth = lw; ctx.stroke(); ctx.setLineDash([]);
+      };
+      let mc = NaN;
+      if (isFinite(y1)) { mc = (y1 - y0) / th; line(mc, c.sc2, [7, 5], 2); }
+      if (isFinite(m)) line(m, c.red, [], 2.2);
+      if (isFinite(y1)) dot(ctx, c, X(x1), Y(y1), 4.5, c.sc2);
+      dot(ctx, c, X(tx), Y(y0), 6, c.red);
+      tanInfo.textContent = '';
+      tanInfo.append(
+        W.h('span', { style: { color: 'var(--red)', fontWeight: 600 } }, `tangent at x = ${W.fix(tx, 2)}: gradient ${isFinite(m) ? W.fmt(m, 4) : 'undefined'}`),
+        W.h('span', { style: { margin: '0 10px', color: 'var(--ink-3)' } }, '·'),
+        W.h('span', { style: { color: 'var(--sc2)', fontWeight: 600 } }, `chord to x = ${W.fix(x1, 3)}: gradient ${isFinite(mc) ? W.fmt(mc, 4) : 'undefined'}`));
+    }
+    /** fills the region between two curves, between their outermost crossings (or data-shade-x) */
+    function drawShade(ctx, c, X, Y) {
+      const f = evalFn(shade.f), g = evalFn(shade.g);
+      let a = xr[0], b = xr[1];
+      if (shadeX && shadeX !== 'bad') { a = shadeX[0]; b = shadeX[1]; } else {
+        const M = 600, d = (xr[1] - xr[0]) / M;
+        let first = null, last = null, pv = f(a) - g(a);
+        for (let i = 1; i <= M; i++) {
+          const x = xr[0] + i * d, v = f(x) - g(x);
+          if (isFinite(pv) && isFinite(v) && pv * v <= 0 && pv !== v) {
+            let lo = x - d, hi = x, flo = pv;
+            for (let k = 0; k < 40; k++) { const mid = (lo + hi) / 2, fm = f(mid) - g(mid); if (flo * fm <= 0) hi = mid; else { lo = mid; flo = fm; } }
+            const r = (lo + hi) / 2;
+            if (first === null) first = r;
+            last = r;
+          }
+          pv = v;
+        }
+        if (first !== null && last > first) { a = first; b = last; }
+      }
+      const n = 240;
+      const top = [], bot = [];
+      let area = 0;
+      for (let i = 0; i <= n; i++) {
+        const x = a + (b - a) * i / n, yf = f(x), yg = g(x);
+        if (!isFinite(yf) || !isFinite(yg)) continue;
+        top.push([x, yf]); bot.push([x, yg]);
+        const w = (i === 0 || i === n ? 0.5 : 1) * (b - a) / n;
+        area += Math.abs(yf - yg) * w;
+      }
+      if (top.length > 1) {
+        ctx.beginPath();
+        top.forEach(([x, y], i) => (i ? ctx.lineTo(X(x), Y(y)) : ctx.moveTo(X(x), Y(y))));
+        for (let i = bot.length - 1; i >= 0; i--) ctx.lineTo(X(bot[i][0]), Y(bot[i][1]));
+        ctx.closePath();
+        ctx.globalAlpha = 0.22; ctx.fillStyle = c.sc; ctx.fill(); ctx.globalAlpha = 1;
+      }
+      shadeInfo.textContent = `Shaded area between the curves, from x = ${W.fmt(a, 4)} to x = ${W.fmt(b, 4)}: ${W.fmt(area, 4)} square units`;
+      show(shadeInfo, true);
     }
     function renderReadout(hv) {
       readout.textContent = '';

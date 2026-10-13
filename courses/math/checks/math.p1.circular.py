@@ -63,4 +63,46 @@ eq("cos", -2 / 98, (49 + 49 - 100) / (2 * 49)); eq("th", round(th, 3), 1.591); a
 eq("arc", sf(7 * round(th, 3)), 11.1); eq("sector", sf(0.5 * 49 * round(th, 3)), 39.0)
 eq("sin", round(sin(round(th, 3)), 4), 0.9998); eq("tri", sf(0.5 * 49 * sin(th)), 24.5)
 eq("seg", sf(39.0 - 24.5), 14.5); eq("seg full", round(0.5 * 49 * (th - sin(th)), 2), 14.49)
+# v2: warm-up
+eq("w1", sf(60 / 360 * 2 * pi * 6), 6.28); eq("w1 exact", 2 * pi, 6.283185307179586); eq("w2", 0.5 * 7 * 10 * sin(radians(30)), 17.5); eq("w3", 4 * 4 + 2 * 4 - 24, 0)
+
+# v2: proofs: sector area as a fraction of the circle, A = 1/2 r s, chord = 2 r sin(theta/2)
+for r, t in ((6, 1.1), (3, 2.5), (10, 0.4), (2, 5.0)):
+    eq("proof A", t / (2 * pi) * pi * r * r, 0.5 * r * r * t, 1e-9)
+    eq("proof A=rs/2", 0.5 * r * (r * t), 0.5 * r * r * t)
+for r, t in ((7, 1.2), (5, 2.0), (3, 0.5)):
+    # chord from the cosine rule
+    eq("proof chord", sqrt(r * r + r * r - 2 * r * r * cos(t)), 2 * r * sin(t / 2), 1e-9)
+
+# v2: spot the error
+r, t = 6, 1.1
+eq("spot sector", 0.5 * r * r * t, 19.8); eq("spot triangle", 0.5 * r * r * sin(t), 16.04, 5e-3); eq("spot sin", sf(sin(t), 4), 0.8912)
+eq("spot wrong sin", sf(sin(radians(1.1)), 3), 0.0192)
+eq("spot student", sf(18 * (1.1 - sin(radians(1.1))), 3), 19.5)
+eq("spot right", sf(18 * (1.1 - sin(1.1))), 3.76); eq("spot diff", sf(1.1 - sin(1.1), 4), 0.2088)
+eq("spot student triangle", 19.8 - 19.5, 0.3); eq("spot tri 0.8912", 0.5 * 36 * 0.8912, 16.04, 1e-2)
+
+# v2: exam practice
+eq("x1a", 150 * pi / 180, 5 * pi / 6); eq("x1b", round(1.8 * 180 / pi, 1), 103.1)
+eq("x2 arc", 9 * 0.8, 7.2); eq("x2 per", 18 + 7.2, 25.2); eq("x2 area", sf(0.5 * 81 * 0.8), 32.4)
+eq("x3 theta", 40 * 2 / 64, 1.25); eq("x3 arc", 8 * 1.25, 10); eq("x3 per", 16 + 10, 26)
+eq("x4 r", 36 * 2 / 12, 6); eq("x4 theta", 12 / 6, 2)
+eq("x5 seg", sf(0.5 * 49 * (1.2 - sin(1.2))), 6.57); eq("x5 diff", sf(1.2 - sin(1.2), 4), 0.2680)
+eq("x5 arc", 7 * 1.2, 8.4); eq("x5 chord", sf(14 * sin(0.6), 4), 7.905); eq("x5 chord cosine", sqrt(98 - 98 * cos(1.2)), 14 * sin(0.6), 1e-9)
+eq("x5 per", sf(8.4 + 14 * sin(0.6)), 16.3)
+for r in (1, 3, 5, 8): eq("x6 A", 0.5 * r * (20 - 2 * r), 10 * r - r * r); eq("x6 square", 10 * r - r * r, 25 - (r - 5) ** 2)
+eq("x6 max", 25 - 0, 25); eq("x6 s", 20 - 2 * 5, 10); eq("x6 theta", 10 / 5, 2)
+assert max(10 * (i / 100) - (i / 100) ** 2 for i in range(0, 1001)) == 25
+eq("x7 TA", sqrt(13 ** 2 - 5 ** 2), 12); a = acos(5 / 13)
+eq("x7 AOT", sf(a, 4), 1.176); eq("x7 AOB", sf(2 * a), 2.35); eq("x7 sector", sf(0.5 * 25 * 2 * a, 3), 29.4)
+eq("x7 kite", 2 * 0.5 * 5 * 12, 60); eq("x7 region", sf(60 - 0.5 * 25 * 2 * a), 30.6)
+# stretch 1: cone from a sector
+R, th = 12, 4 * pi / 3
+eq("s1 arc", R * th, 16 * pi); eq("s1 r", R * th / (2 * pi), 8); eq("s1 h", sf(sqrt(144 - 64)), 8.94); eq("s1 csa", 0.5 * R * R * th, 96 * pi); eq("s1 csa pi r l", pi * 8 * 12, 96 * pi)
+eq("s1 csa sf", sf(96 * pi), 302)
+# stretch 2
+for r in (1, 2.5, 4):
+    eq("s2 seg", 0.5 * r * r * (pi / 2 - sin(pi / 2)), r * r * (pi - 2) / 4); eq("s2 chord", 2 * r * sin(pi / 4), r * sqrt(2), 1e-9)
+    eq("s2 pct", sf(100 * ((pi - 2) / 4) / pi), 9.08); eq("s2 frac", (r * r * (pi - 2) / 4) / (pi * r * r), (pi - 2) / (4 * pi))
+eq("quiz arc", 36 - 20, 16); eq("quiz area", 0.5 * 16 * pi / 2, 4 * pi); eq("quiz arc2", 4 * pi / 2, 2 * pi)
 print("ok")

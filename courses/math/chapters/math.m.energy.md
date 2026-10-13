@@ -11,6 +11,15 @@ Forces and acceleration become hard when the motion is complicated, such as a ro
 
 **Before you start**, you need Newton's second law and friction from [Newton's laws and connected particles](#math.m.newton), and the constant acceleration equations from [Kinematics](#math.m.kinematics). Resolving forces is in [Forces and equilibrium](#math.m.forces).
 
+:::try Warm-up
+Q: A car of mass 1000 kg has a driving force of 2500 N and a resistance of 700 N. Find its acceleration. (from [Newton's laws and connected particles](#math.m.newton))
+A: Resultant \(= 2500 - 700 = 1800\) N, so \(a = \dfrac{1800}{1000} = 1.8\ \mathrm{m\,s^{-2}}\).
+Q: A particle starts from rest and accelerates at \(2\ \mathrm{m\,s^{-2}}\) over 25 m. Find its final speed. (from [Kinematics](#math.m.kinematics))
+A: \(v^2 = 0 + 2 \times 2 \times 25 = 100\), so \(v = 10\ \mathrm{m\,s^{-1}}\).
+Q: Find \(30\cos 40^\circ\) to 3 significant figures. (from [Trigonometry](#math.p1.trig))
+A: \(30 \times 0.7660 = 23.0\).
+:::
+
 ## Work done by a force
 
 :::def Work done
@@ -64,6 +73,18 @@ The total work done on a particle equals the change in its kinetic energy. Inclu
 that is, energy put in, less energy lost to resistances, equals the energy gained.
 - With **no** driving force and **no** resistance (smooth surface, no friction or air resistance), energy is **conserved**: \(\text{KE} + \text{GPE}\) stays constant.
 - It is the same principle whether the path is straight or curved, because only the change in height matters for GPE.
+:::
+
+:::proof Why the work–energy principle is true
+Take a particle of mass \(m\) with a constant resultant force \(F\) along its line of motion. It has constant acceleration \(a = \dfrac{F}{m}\) (Newton's second law). Over a displacement \(s\) its speed changes from \(u\) to \(v\), and the constant acceleration equation gives
+\[v^2 = u^2 + 2as\]
+Multiply both sides by \(\tfrac12 m\):
+\[\tfrac12 mv^2 = \tfrac12 mu^2 + mas\]
+Now \(ma = F\), so \(mas = Fs\), which is the work done by the resultant force. Therefore
+\[Fs = \tfrac12 mv^2 - \tfrac12 mu^2\]
+The work done by the resultant force equals the change in kinetic energy. When the weight is one of the forces, its work on a rise \(h\) is \(-mgh\), and moving that term to the other side gives the form with GPE.
+
+Check with \(m = 3\) kg, \(u = 4\), \(a = 2\) and \(s = 32\) m. Then \(v^2 = 16 + 128 = 144\), \(F = 6\) N, \(Fs = 192\) J and \(\tfrac12 \times 3 \times (144 - 16) = 192\) J.
 :::
 
 :::steps
@@ -164,7 +185,7 @@ The work done against friction equals the kinetic energy lost:
 \[BC = 6.25\ \text{m}\] [A1]
 :::
 
-:::eg (Exam style) A car of mass 1500 kg is driven up a straight hill inclined at \(\theta\) to the horizontal, where \(\sin\theta = \tfrac1{30}\). The engine works at a constant rate of 45 kW and the resistance to motion is 900 N. Take \(g = 10\). (a) Show that the maximum speed up the hill is about \(32.1\ \mathrm{m\,s^{-1}}\). (b) Find the acceleration when the speed is \(15\ \mathrm{m\,s^{-1}}\). (c) The car reaches the top of the hill and moves on level ground with the same power and resistance. State its acceleration at \(15\ \mathrm{m\,s^{-1}}\) and its maximum speed. [8 marks]
+:::eg (Exam style) A car of mass 1500 kg is driven up a straight hill inclined at \(\theta\) to the horizontal, where \(\sin\theta = \tfrac1{30}\). The engine works at a constant rate of 45 kW and the resistance to motion is 900 N. Take \(g = 10\). (a) Show that the maximum speed up the hill is about \(32.1\ \mathrm{m\,s^{-1}}\). (b) Find the acceleration when the speed is \(15\ \mathrm{m\,s^{-1}}\). (c) The car reaches the top of the hill and moves on level ground with the same power and resistance. State its acceleration at \(15\ \mathrm{m\,s^{-1}}\) and its maximum speed. [9 marks]
 (a) At maximum speed, \(a = 0\) so the driving force is \(F = 900 + 1500 \times 10 \times \tfrac1{30} = 1400\) N. [M1 A1] \(v = \dfrac{P}{F} = \dfrac{45\,000}{1400} = 32.1\ \mathrm{m\,s^{-1}}\). [A1]
 
 (b) \(F = \dfrac{45\,000}{15} = 3000\) N. [B1] \(3000 - 900 - 500 = 1500a\), so \(a = 1.07\ \mathrm{m\,s^{-2}}\). [M1 A1]
@@ -183,6 +204,20 @@ The work done against friction equals the kinetic energy lost:
 :::board
 - **Edexcel IAL and UK boards** use \(g = 9.8\). Work, energy and power are in IAL M2 and in UK A Level Mechanics.
 - Cambridge P4 uses \(Fd\cos\theta\) and does not use the scalar product.
+:::
+
+:::eg Spot the error: power is not the resultant force
+A student answered this question [4 marks]: "A car of mass 1000 kg travels along a horizontal road. The engine works at a constant 40 kW and the resistance to motion is 900 N. Find the acceleration when the speed is \(25\ \mathrm{m\,s^{-1}}\)."
+
+Line 1: Driving force \(F = \dfrac{P}{v} = \dfrac{40\,000}{25} = 1600\) N.
+Line 2: \(1600 = 1000a\).
+Line 3: \(a = 1.6\ \mathrm{m\,s^{-2}}\).
+
+**Line 1 earns [B1]**: the driving force is correct. **Line 2 scores [M0 A0]**: \(F = ma\) uses the **resultant** force, and the student has used the driving force alone, forgetting the 900 N resistance that opposes it. **Line 3 scores [A0]**. The student scores 1 out of 4.
+
+Correct working: \(F = \dfrac{40\,000}{25} = 1600\) N. [B1] Resultant force \(= 1600 - 900 = 700\) N, so \(1600 - 900 = 1000a\). [M1 A1] \(a = 0.7\ \mathrm{m\,s^{-2}}\). [A1]
+
+**Check:** at the top speed the acceleration is zero. Here the driving force 1600 N is well above the resistance 900 N, and the top speed would be \(\dfrac{40\,000}{900} = 44.4\ \mathrm{m\,s^{-1}}\), so a small positive acceleration at \(25\ \mathrm{m\,s^{-1}}\) makes sense.
 :::
 
 :::try Start easy, finish at exam standard
@@ -206,6 +241,37 @@ Q: (Exam style) A lorry of mass 2000 kg goes up a straight road 100 m long, risi
 A: Work by the driving force \(= 100D\). Work against resistance \(= 800 \times 100 = 80\,000\) J. GPE gained \(= 2000 \times 10 \times 5 = 100\,000\) J. KE gained \(= \tfrac12 \times 2000 \times (225 - 100) = 125\,000\) J. [B1 B1 B1] \(100D - 80\,000 = 100\,000 + 125\,000\) [M1], so \(D = 3050\) N. [A1]
 Q: (Exam style) A car of mass 1500 kg has a maximum speed of \(50\ \mathrm{m\,s^{-1}}\) on a level road with resistance 1200 N. Find the power of the engine, and the acceleration at \(30\ \mathrm{m\,s^{-1}}\). [5 marks]
 A: At maximum speed \(F = 1200\) N, so \(P = 1200 \times 50 = 60\,000\) W = 60 kW. [M1 A1] At \(30\ \mathrm{m\,s^{-1}}\): \(F = \dfrac{60\,000}{30} = 2000\) N. [B1] \(2000 - 1200 = 1500a\), so \(a = 0.533\ \mathrm{m\,s^{-2}}\). [M1 A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [4 marks] ★ A force of 60 N, at \(25^\circ\) above the horizontal, drags a crate 8 m along rough horizontal ground. The friction force on the crate is a constant 20 N. Find the work done by the 60 N force and the kinetic energy gained by the crate.
+A: Work done by the force \(= 60 \times 8 \times \cos 25^\circ\) [M1] \(= 435\) J. [A1] Work done against friction \(= 20 \times 8 = 160\) J. [B1] Kinetic energy gained \(= 435 - 160 = 275\) J. [A1]
+Q: [3 marks] ★ A ball of mass 0.4 kg is dropped from rest from a point 12 m above the ground. Use energy to find its speed when it hits the ground. Take \(g = 10\).
+A: \(\tfrac12(0.4)v^2 = 0.4 \times 10 \times 12\), [M1] so \(v^2 = 240\). [A1] \(v = 15.5\ \mathrm{m\,s^{-1}}\). [A1]
+Q: [3 marks] ★ A crane lifts a load of mass 800 kg at a constant speed of \(0.5\ \mathrm{m\,s^{-1}}\). Find the power of the crane. Take \(g = 10\).
+A: At constant speed the lifting force equals the weight, 8000 N. [B1] \(P = Fv\) [M1] \(= 8000 \times 0.5 = 4000\) W. [A1]
+Q: [5 marks] ★★ A particle of mass 2 kg slides from rest down a rough plane of length 5 m, inclined at \(30^\circ\) to the horizontal. Its speed at the bottom is \(4\ \mathrm{m\,s^{-1}}\). Find the friction force, assumed constant. Take \(g = 10\).
+A: Loss of GPE \(= 2 \times 10 \times 5\sin 30^\circ = 50\) J. [M1 A1] Gain of KE \(= \tfrac12 \times 2 \times 16 = 16\) J. [B1] Work done against friction \(= 5F\), so \(50 - 5F = 16\). [M1] \(F = 6.8\) N. [A1]
+Q: [5 marks] ★★ A car of mass 1000 kg has an engine of constant power 40 kW. It drives up a straight hill inclined at \(\theta\) to the horizontal, where \(\sin\theta = \tfrac{1}{25}\). The resistance to motion is 800 N. Find the maximum speed of the car on the hill, and its acceleration when its speed is \(20\ \mathrm{m\,s^{-1}}\). Take \(g = 10\).
+A: The weight component down the hill is \(1000 \times 10 \times \tfrac{1}{25} = 400\) N. [B1] At maximum speed \(F = 800 + 400 = 1200\) N, [M1] so \(v = \dfrac{40\,000}{1200} = 33.3\ \mathrm{m\,s^{-1}}\). [A1] At \(20\ \mathrm{m\,s^{-1}}\): \(F = \dfrac{40\,000}{20} = 2000\) N, and \(2000 - 800 - 400 = 1000a\). [M1] \(a = 0.8\ \mathrm{m\,s^{-2}}\). [A1]
+Q: [6 marks] ★★ A particle of mass 0.5 kg is released from rest at a point \(A\) on a smooth curved track. \(A\) is 3.2 m above the lowest point \(B\) of the track. The particle then slides along a rough horizontal section \(BC\) of length 4 m and comes to rest at \(C\). Find the speed of the particle at \(B\) and the coefficient of friction on \(BC\). Take \(g = 10\).
+A: Energy from \(A\) to \(B\): \(\tfrac12(0.5)v^2 = 0.5 \times 10 \times 3.2\), [M1] so \(v = 8\ \mathrm{m\,s^{-1}}\). [A1] On \(BC\): \(R = 0.5 \times 10 = 5\) N, so \(F = 5\mu\). [B1] Work against friction \(= 5\mu \times 4 = 20\mu\), [M1] and this equals the kinetic energy at \(B\), \(\tfrac12(0.5)(64) = 16\) J. [M1] \(\mu = 0.8\). [A1]
+Q: [9 marks] (#math.m.newton) ★★★ A car of mass 1200 kg travels up a straight road inclined at angle \(\theta\) to the horizontal, where \(\sin\theta = \tfrac{1}{20}\). It moves at a constant speed of \(15\ \mathrm{m\,s^{-1}}\) with the engine working at 24 kW. The resistance to motion is a constant \(R\) N. (a) Find \(R\). (b) The car now travels down the same road at the same constant speed. Find the power of the engine. (c) The car then travels down the road with the engine switched off, at \(15\ \mathrm{m\,s^{-1}}\). Find its deceleration. Take \(g = 10\).
+H: At constant speed the resultant force along the road is zero. Going up the hill, the driving force balances the resistance and the weight component.
+H: Going down the hill, the weight component helps the motion. The driving force plus the weight component balances the resistance.
+H: With the engine off, there is no driving force. Use \(F = ma\) along the road.
+A: (a) The weight component along the road is \(1200 \times 10 \times \tfrac{1}{20} = 600\) N. [B1] \(F = \dfrac{24\,000}{15} = 1600\) N. [M1] \(1600 = R + 600\), [M1] so \(R = 1000\) N. [A1] (b) \(F + 600 = 1000\), [M1] so \(F = 400\) N. [A1] \(P = 400 \times 15 = 6000\) W \(= 6\) kW. [A1] (c) With no driving force, \(600 - 1000 = 1200a\). [M1] \(a = -\tfrac13\), a deceleration of \(0.333\ \mathrm{m\,s^{-2}}\). [A1] Check: the car slows because the resistance (1000 N) exceeds the pull of gravity along the road (600 N).
+:::
+
+:::try Stretch for A*
+Q: [6 marks] ★★★ A car of mass 1000 kg has an engine of constant power \(P\) W and a constant resistance of \(R\) N. On a level road its maximum speed is \(40\ \mathrm{m\,s^{-1}}\). Up a hill inclined at \(\theta\) to the horizontal, where \(\sin\theta = \tfrac{1}{20}\), its maximum speed is \(25\ \mathrm{m\,s^{-1}}\). Find \(R\) and \(P\). Take \(g = 10\).
+H: At maximum speed the acceleration is zero, so the driving force \(\dfrac{P}{v}\) equals the total resistance. Write this as an equation for each road.
+H: On the hill, the total resistance is \(R\) plus the weight component \(1000 \times 10 \times \tfrac{1}{20}\). Eliminate \(P\).
+A: Level: \(\dfrac{P}{40} = R\), so \(P = 40R\). [M1 A1] Hill: the weight component is 500 N, so \(\dfrac{P}{25} = R + 500\), that is \(P = 25(R + 500)\). [M1 A1] Equate: \(40R = 25R + 12\,500\), [M1] so \(R = 833\) N and \(P = 33\,300\) W \(= 33.3\) kW. [A1] Check: on the level, \(R \times 40 = 33\,333\), and on the hill \((833.3 + 500) \times 25 = 33\,333\). ✓
+Q: [5 marks] ★★★ A ball is projected from the top of a cliff 25 m above the sea, with speed \(15\ \mathrm{m\,s^{-1}}\). Air resistance is ignored. Show that the speed with which the ball reaches the sea does not depend on the direction of projection, and find this speed. Take \(g = 10\).
+H: Write the energy equation for a ball of mass \(m\) between the top of the cliff and the sea. Does the angle of projection appear in it?
+H: Divide every term by \(m\): \(\tfrac12 v^2 = \tfrac12(15)^2 + 10 \times 25\).
+A: Let the mass be \(m\). Only gravity does work, so \(\tfrac12 mv^2 = \tfrac12 m(15)^2 + mg(25)\). [M1 A1] \(v^2 = 225 + 500 = 725\). [A1] The angle of projection does not appear: the energy gained depends only on the vertical drop, not on the path. [B1] \(v = 26.9\ \mathrm{m\,s^{-1}}\). [A1] Check: thrown straight down, \(v^2 = 225 + 2 \times 10 \times 25 = 725\) as well, by the constant acceleration equation.
 :::
 
 :::quiz Check your understanding
@@ -239,6 +305,15 @@ A: At maximum speed \(F = 1200\) N, so \(P = 1200 \times 50 = 60\,000\) W = 60 k
 - 64
 - 32
 > \(v^2 = 2gh = 2 \times 10 \times 3.2 = 64\), so \(v = 8\). Stopping at \(v^2 = 64\) without taking the square root is the usual slip.
+:::
+
+:::checklist What you can now do
+- [ ] I can find the work done by a force, \(Fd\cos\theta\), including when the force is at an angle to the motion.
+- [ ] I can find kinetic energy and gravitational potential energy and say which formulas are not on MF19.
+- [ ] I can use the work–energy principle for motion with a driving force and resistances, on level ground or a slope.
+- [ ] I can use conservation of energy for motion on a smooth curved path, where only the change in height matters.
+- [ ] I can find average power as work done divided by time, and use \(P = Fv\).
+- [ ] I can find the maximum speed of a car on a level road or a hill, and its acceleration at a given speed.
 :::
 
 :::recap

@@ -57,4 +57,48 @@ eq("t10 E", 4 * 1010, 4040); eq("t10 var", 4 * 144, 576); eq("t10 sd", sqrt(576)
 # Quiz
 eq("q1", 9 * 5, 45); eq("q2", 4 + 1, 5); eq("q3", 4 + 4, 8); eq("q3b", 4 * 4, 16)
 eq("q4 var2X", 4 * 3, 12); eq("q5", sqrt(9 + 16), 5)
+
+# ---- P14 additions ----
+from math import comb
+def po(l, r): return exp(-l) * l ** r / factorial(r)
+def cdf(l, r): return sum(po(l, k) for k in range(r + 1))
+# warm-up
+w = {1: 0.5, 2: 0.3, 4: 0.2}
+m = sum(k * q for k, q in w.items()); m2 = sum(k * k * q for k, q in w.items())
+eq("w1 E", m, 1.9); eq("w1 E2", m2, 4.9); eq("w1 Var", m2 - m * m, 1.29)
+eq("w2", sf(Phi(2) - Phi(-1)), 0.819); eq("w3 coef", 1 + 3.5 + 3.5 ** 2 / 2, 10.625); eq("w3", sf(cdf(3.5, 2)), 0.321)
+# proofs: aX+b and variance formula on the table 1,2,3 / 0.2,0.5,0.3
+eq("proof 3X-2 values", sum((3 * k - 2) * q for k, q in p.items()), 4.3)
+eq("proof mu^2", 2.1 ** 2, 4.41)
+# variance of sum with independence: brute force over a joint table
+import itertools
+px = {1: 0.2, 2: 0.5, 3: 0.3}; py = {0: 0.4, 5: 0.6}
+mx = sum(k * q for k, q in px.items()); my = sum(k * q for k, q in py.items())
+vs = sum(((a + b) - (mx + my)) ** 2 * qa * qb for (a, qa), (b, qb) in itertools.product(px.items(), py.items()))
+vx = sum((a - mx) ** 2 * q for a, q in px.items()); vy = sum((b - my) ** 2 * q for b, q in py.items())
+eq("indep var adds", vs, vx + vy)
+# spot the error
+eq("sp E", 3 * 150, 450); eq("sp wrong var", 9 * 400, 3600); eq("sp wrong p", sf(1 - Phi(0.5)), 0.309)
+eq("sp z", round(30 / sqrt(1200), 3), 0.866); eq("sp good", sf(1 - Phi(30 / sqrt(1200))), 0.193)
+# exam practice
+eq("e1 E", 3 * 8 - 4, 20); eq("e1 V", 9 * 5, 45); eq("e1 sd", sf(sqrt(4 * 5)), 4.47)
+eq("e2 E", 2 * 12 - 3 * 7, 3); eq("e2 V", 4 * 3 + 9 * 2, 30)
+eq("e3", sf(po(5.5, 4)), 0.156)
+eq("e4 E", 4 * 1008, 4032); eq("e4 V", 4 * 25, 100); eq("e4", sf(Phi(-1.2)), 0.115)
+eq("e5 E", 60 - 56, 4); eq("e5 V", 16 + 4 * 9, 52); eq("e5 z", round(4 / sqrt(52), 3), 0.555); eq("e5", sf(Phi(4 / sqrt(52))), 0.710)
+eq("e6 cdf", round(cdf(10, 11), 4), 0.6968); eq("e6", sf(1 - cdf(10, 11)), 0.303)
+eq("e6b m", 2 * 4, 8); eq("e6b v", 4 * 4, 16)
+eq("e7 E", 4 * 72, 288); eq("e7 V", 4 * 81, 324); eq("e7 z", round(32 / 18, 3), 1.778); eq("e7a", sf(1 - Phi(32 / 18)), 0.0377)
+zz = Z.inv_cdf(0.99); eq("e7 zz", round(zz, 3), 2.326); eq("e7 coef", round(9 * zz, 2), 20.94)
+a, b, c = 72, 9 * zz, -500
+s = (-b + sqrt(b * b - 4 * a * c)) / (2 * a); eq("e7 sqrt n", round(s, 3), 2.494); eq("e7 n", round(s * s, 2), 6.22)
+n6 = (500 - 72 * 6) / (9 * sqrt(6)); eq("e7 n6 sd", round(9 * sqrt(6), 2), 22.05); eq("e7 n6 z", round(n6, 2), 3.08)
+eq("e7 n6 p", sf(1 - Phi(n6)), 0.00102); assert 72 * 7 > 500
+n5 = (500 - 72 * 7) / (9 * sqrt(7)); assert 1 - Phi(n5) > 0.5
+# stretch
+eq("s1 z", round(Z.inv_cdf(0.975), 2), 1.96); eq("s1 n", round((1.96 * 4) ** 2, 2), 61.47)
+assert (1.96 * 4) ** 2 > 61 and 62 >= (1.96 * 4) ** 2
+sx = {1: .25, 2: .5, 3: .25}; ex = sum(k * q for k, q in sx.items()); ex2 = sum(k * k * q for k, q in sx.items())
+eq("s2 E", ex, 2); eq("s2 E2", ex2, 4.5); eq("s2 Var", ex2 - ex * ex, 0.5)
+assert all(4 - x + x == 4 for x in sx)
 print("ok")

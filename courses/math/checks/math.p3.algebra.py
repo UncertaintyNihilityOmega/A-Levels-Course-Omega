@@ -88,4 +88,46 @@ assert 4 + 6 == 10 and 4 - 6 == -2
 assert 2 - 3 == -1 and 2 + 3 == 5
 assert 2**3 + 4 - 5 == 7 and -5 == 0 + 0 - 5 and (-2)**3 + 2 * -2 - 5 == -17
 assert 27 - 27 + 3 * -2 + 6 == 0
+# ---- v2 additions: warm-up, proof, spot the error, exam practice, stretch ----
+import random
+assert (7 - 7) * (7 + 2) == 0 and (-2 - 7) * (-2 + 2) == 0          # warm-up roots of x^2 - 5x - 14
+assert (1, -5) == (2 - 1, -3 - 2)
+for x in (-3, 0.5, 2, 7):
+    eq("warm-up factorise", (3 * x + 2) * (2 * x - 1), 6 * x * x + x - 2)
+for _ in range(20):                                                   # proof: |a| = |b| <=> a^2 = b^2
+    a, b = random.randint(-9, 9), random.randint(-9, 9)
+    assert (abs(a) == abs(b)) == (a * a == b * b)
+    assert (a * a - b * b) == (a - b) * (a + b)
+f = lambda x: F(x) ** 3 + 2 * F(x) ** 2 - 5 * F(x) + 1               # spot the error
+assert f(F(3, 2)) == F(11, 8) and f(F(-3, 2)) == F(77, 8)
+assert F(27, 8) + F(9, 2) - F(15, 2) + 1 == F(11, 8) and -F(27, 8) + F(9, 2) + F(15, 2) + 1 == F(77, 8)
+assert 3 * 4 - 2 == 10 and 3 * F(-8, 3) - 2 == -10                   # Q1
+assert 2 * (-2) ** 3 - (-2) ** 2 + 5 == -15                           # Q2
+for x in (-6, F(2, 3)):                                               # Q3 critical values: equality holds
+    assert (x - 4) ** 2 == 4 * (x + 1) ** 2
+assert (3 * F(2, 3) - 2 == 0) and (-6 + 6 == 0)
+for x in (-7, -6, 0, F(2, 3), 1):                                     # sign of 3x^2 + 16x - 12 matches the inequality
+    assert (abs(x - 4) >= 2 * abs(x + 1)) == (3 * x * x + 16 * x - 12 <= 0)
+assert 2 * 9 - 6 == 9 + 3 and -(2 * 1 - 6) == 1 + 3                   # Q4
+for x in (F(1, 2), 1, 2, 3, 8, 9, 10):
+    assert (abs(2 * x - 6) < x + 3) == (1 < x < 9)
+p, q = 2, 4                                                           # Q5
+assert 1 + p - 7 + q == 0 and -8 + 4 * p + 14 + q == 18 and p + q == 6 and 4 * p + q == 12
+for x in (-4, 0, 1, 2, 5):
+    eq("Q5 factorised", (x - 1) ** 2 * (x + 4), x ** 3 + 2 * x ** 2 - 7 * x + 4)
+k = 1                                                                 # Q6
+assert -27 + 18 - 3 * k + 12 == 0
+for x in (-2, 0, 1, 3, 5):
+    eq("Q6 factorised", (x + 3) * (x * x - x + 4), x ** 3 + 2 * x ** 2 + x + 12)
+assert 1 - 16 == -15
+g = lambda x: x ** 3 + 2 * x ** 2 + x + 12
+assert g(1) == 16 and g(-1) == 12 and 2 * 14 == 16 + 12 and 2 * 2 == 16 - 12
+for kk in (F(-1, 2), F(-1), F(0), F(2)):                                    # stretch 1: number of solutions of |2x-1| = x+k
+    sols = set()
+    for x in (kk + 1, F(1 - kk) / 3):
+        if abs(2 * x - 1) == x + kk: sols.add(x)
+    assert len(sols) == (2 if kk > F(-1, 2) else 1 if kk == F(-1, 2) else 0)
+assert (F(1, 2) + 1) == (1 - F(-1, 2)) / 3 + 1 and F(-1, 2) + 1 == F(1, 2) and (1 + F(1, 2)) / 3 == F(1, 2)
+a_, b_ = F(6, 2), F(1)                                                # stretch 2: remainder 3x + 1
+assert a_ + b_ == 4 and 3 * a_ + b_ == 10
 print("ok")

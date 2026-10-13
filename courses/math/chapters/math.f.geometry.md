@@ -11,6 +11,15 @@ Trigonometry is the tool for every problem that involves angles: forces in Mecha
 
 **Before you start**, you need [Algebra from scratch](#math.f.algebra) (rearranging formulas) and [Indices, surds and standard form](#math.f.powers) (square roots and exact answers). The next chapter after this one is [Quadratics](#math.p1.quadratics) in the Pure 1 course.
 
+:::try Warm-up
+Q: Write \(\sqrt{48}\) in the form \(a\sqrt3\). (from [Indices, surds and standard form](#math.f.powers))
+A: \(\sqrt{48} = \sqrt{16}\,\sqrt3 = 4\sqrt3\).
+Q: Make \(b\) the subject of \(\dfrac{a}{\sin A} = \dfrac{b}{\sin B}\). (from [Algebra from scratch](#math.f.algebra))
+A: Multiply both sides by \(\sin B\): \(b = \dfrac{a\sin B}{\sin A}\).
+Q: Find the gradient of the line through \((1, 2)\) and \((4, 8)\). (from [Graphs and straight lines](#math.f.graphs))
+A: \(\dfrac{8 - 2}{4 - 1} = 2\).
+:::
+
 ## Angle facts
 
 Angles are measured in degrees: a full turn is \(360^\circ\). These facts need no proof in an exam, but you need to quote them as reasons.
@@ -22,6 +31,17 @@ Angles are measured in degrees: a full turn is \(360^\circ\). These facts need n
 - With parallel lines: **alternate** angles (a Z shape) are equal, **corresponding** angles (an F shape) are equal, and **co-interior** angles (a C shape) add up to \(180^\circ\).
 - An **isosceles** triangle has two equal sides and two equal base angles. An **equilateral** triangle has three equal sides and three angles of \(60^\circ\).
 - The interior angles of a polygon with \(n\) sides add up to \((n - 2) \times 180^\circ\). The exterior angles of any polygon add up to \(360^\circ\), so each exterior angle of a **regular** polygon is \(\dfrac{360^\circ}{n}\).
+:::
+
+:::proof The angles of a triangle add up to 180°
+Take any triangle \(ABC\). Through the vertex \(A\), draw a straight line \(DE\) parallel to the side \(BC\), with \(D\) on the \(B\) side and \(E\) on the \(C\) side.
+
+The angle \(DAB\) and the angle \(ABC\) are alternate angles between the parallel lines \(DE\) and \(BC\), so \(\angle DAB = \angle ABC\).
+In the same way, \(\angle EAC = \angle ACB\).
+The angles \(DAB\), \(BAC\) and \(EAC\) fit together along the straight line \(DE\), so they add up to \(180^\circ\).
+Replace the first and third by the equal angles above:
+\[\angle ABC + \angle BAC + \angle ACB = 180^\circ\]
+This proves it for every triangle, because nothing in the argument depends on the shape of \(ABC\).
 :::
 
 :::eg Each interior angle of a regular polygon is \(156^\circ\). How many sides has the polygon? Also find the sum of the interior angles of a hexagon.
@@ -36,6 +56,23 @@ For a hexagon, \(n = 6\): the sum is \((6 - 2) \times 180^\circ = 720^\circ\).
 In a right-angled triangle the square on the **hypotenuse** (the side opposite the right angle, always the longest) equals the sum of the squares on the other two sides:
 \[c^2 = a^2 + b^2\]
 The converse is also true: if three sides satisfy \(c^2 = a^2 + b^2\), the triangle has a right angle. The triples \(3, 4, 5\), \(5, 12, 13\), \(8, 15, 17\) and \(7, 24, 25\) are worth recognising.
+:::
+
+:::proof Why a² + b² = c² (Pythagoras' theorem)
+Take a right-angled triangle with legs \(a\) and \(b\) and hypotenuse \(c\). Make four copies and fit them inside a square of side \(a + b\), as the diagram below shows.
+
+The big square has area \((a + b)^2\).
+The four hypotenuses form a tilted square of side \(c\). Its corners are right angles, because the two acute angles of the triangle add up to \(90^\circ\) and angles on a straight line add up to \(180^\circ\). So its area is \(c^2\).
+The big square is the four triangles plus the tilted square:
+\[(a + b)^2 = 4 \times \tfrac12 ab + c^2\]
+Expand the left side and simplify the right side: \(a^2 + 2ab + b^2 = 2ab + c^2\).
+Subtract \(2ab\) from both sides:
+\[a^2 + b^2 = c^2\]
+This holds for every right-angled triangle, because we used no particular values of \(a\) and \(b\).
+
+:::html
+<div class="widget" data-w="proof" data-proof="pythagoras"></div>
+:::
 :::
 
 :::eg An isosceles triangle has sides \(13\) cm, \(13\) cm and \(10\) cm. Find its height and its area.
@@ -125,6 +162,35 @@ For any triangle, label the vertices \(A\), \(B\), \(C\) and call the side oppos
 \[a^2 = b^2 + c^2 - 2bc\cos A \qquad \cos A = \frac{b^2 + c^2 - a^2}{2bc}\]
 \[\text{Area} = \tfrac12 ab\sin C\]
 Use the **sine rule** when you know a side and its opposite angle (a "matching pair") and one more piece. Use the **cosine rule** when you know two sides and the angle **between** them, or all three sides. The area formula needs two sides and the **included** angle. None of these is on MF19, so learn them.
+:::
+
+:::proof The sine rule and the area formula
+In triangle \(ABC\), drop a perpendicular \(CD\) from \(C\) to the line \(AB\). Call its length \(h\).
+
+In the right-angled triangle \(ACD\), \(\sin A = \dfrac{h}{b}\), so \(h = b\sin A\).
+In the right-angled triangle \(BCD\), \(\sin B = \dfrac{h}{a}\), so \(h = a\sin B\).
+Both equal \(h\), so \(b\sin A = a\sin B\). Divide both sides by \(\sin A \sin B\):
+\[\frac{a}{\sin A} = \frac{b}{\sin B}\]
+Dropping a perpendicular from \(A\) instead gives \(\dfrac{b}{\sin B} = \dfrac{c}{\sin C}\), which completes the sine rule. If an angle is obtuse the foot of the perpendicular lies outside the triangle, but \(\sin(180^\circ - x) = \sin x\), so the same equations hold.
+
+For the area, take \(BC = a\) as the base. The perpendicular from \(A\) to the line \(BC\) has length \(b\sin C\) (right-angled triangle with hypotenuse \(AC = b\) and angle \(C\)). So
+\[\text{Area} = \tfrac12 \times \text{base} \times \text{height} = \tfrac12\, a\,(b\sin C) = \tfrac12 ab\sin C\]
+:::
+
+:::proof Where the cosine rule comes from
+Take triangle \(ABC\) with \(AB = c\), \(AC = b\) and angle \(A\). Drop the perpendicular \(CD\) from \(C\) to the line \(AB\), as the diagram shows.
+
+In the right-angled triangle \(ACD\), \(AD = b\cos A\) and \(CD = b\sin A\).
+Then \(DB = c - b\cos A\).
+Apply Pythagoras in the right-angled triangle \(CDB\):
+\[\begin{aligned} a^2 &= (b\sin A)^2 + (c - b\cos A)^2 \\ &= b^2\sin^2 A + c^2 - 2bc\cos A + b^2\cos^2 A \end{aligned}\]
+Take \(b^2\) out of the two terms that contain it, and use \(\sin^2 A + \cos^2 A = 1\):
+\[a^2 = b^2(\sin^2 A + \cos^2 A) + c^2 - 2bc\cos A = b^2 + c^2 - 2bc\cos A\]
+When \(A\) is obtuse, \(\cos A\) is negative and \(D\) lies on the other side of \(A\): the algebra is identical. When \(A = 90^\circ\), \(\cos A = 0\) and the rule becomes Pythagoras.
+
+:::html
+<div class="widget" data-w="proof" data-proof="cosinerule"></div>
+:::
 :::
 
 :::eg In triangle \(ABC\), \(A = 42^\circ\), \(B = 71^\circ\) and \(a = 8.5\) cm. Find \(b\). Then find \(c\).
@@ -220,6 +286,22 @@ For a cone, \(l^2 = r^2 + h^2\) (Pythagoras). The curved surface area excludes t
 Edexcel IAL and the UK A Levels assume most of this from IGCSE or GCSE. The sine rule, cosine rule and \(\tfrac12 ab\sin C\) are used in their Pure Year 1 content too. Cambridge gives none of them on MF19, so check your own board's formula booklet to see what you must memorise.
 :::
 
+:::eg Spot the error: in triangle \(ABC\), \(a = 6\) cm, \(b = 10\) cm and angle \(C = 48^\circ\). Find \(c\).
+The question is worth 3 marks. A student wrote this answer.
+
+Line 1: \(c^2 = 6^2 + 10^2 - 2(6)(10)\cos 48^\circ\)
+Line 2: \(c^2 = (136 - 120)\cos 48^\circ\), which is \(16 \times 0.669 = 10.71\)
+Line 3: \(c = \sqrt{10.71} = 3.27\) cm
+
+**Line 1 is correct: the right rule with the right values [M1].** **Line 2 is wrong.** The student subtracted \(120\) from \(136\) first and then multiplied by \(\cos 48^\circ\), as if the formula had brackets around \(136 - 120\). It does not: only the \(120\) is multiplied by the cosine. That is an arithmetic slip inside the right method, so the \(M1\) stays but the accuracy mark is lost [A0], and the final answer is also wrong [A0]. The student scores 1 out of 3.
+
+Correct working:
+\[\begin{aligned} c^2 &= 136 - 120\cos 48^\circ \\ &= 136 - 80.30 = 55.70 \end{aligned}\] [A1]
+So \(c = 7.46\) cm. [A1]
+
+Check: the third side of a triangle with sides \(6\) and \(10\) must be between \(10 - 6 = 4\) and \(10 + 6 = 16\). The student's \(3.27\) is outside that range and \(7.46\) is inside it, so a quick sanity check would have caught the slip.
+:::
+
 :::try Start easy, finish at exam standard
 Q: Find the interior and exterior angle of a regular octagon.
 A: Exterior \(= 360 \div 8 = 45^\circ\). Interior \(= 180 - 45 = 135^\circ\).
@@ -241,6 +323,42 @@ Q: (Exam style) In triangle \(ABC\), \(AB = 12\) cm, \(BC = 9\) cm and angle \(B
 A: (a) The sine rule gives \(\dfrac{\sin C}{12} = \dfrac{\sin 40^\circ}{9}\). [M1] \(\sin C = 0.857\ldots\), so \(C = 59.0^\circ\) [A1] or \(C = 180^\circ - 59.0^\circ = 121.0^\circ\). [A1]
 
 (b) For \(C = 59.0^\circ\), angle \(B = 180 - 40 - 59.0 = 81.0^\circ\). [M1] Area \(= \tfrac12 \times 12 \times 9 \times \sin 81.0^\circ = 53.3\) cm². [A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [2 marks] ★ Each interior angle of a regular polygon is \(162^\circ\). How many sides does the polygon have?
+A: The exterior angle is \(180^\circ - 162^\circ = 18^\circ\). [M1] The exterior angles add up to \(360^\circ\), so \(n = \dfrac{360}{18} = 20\) sides. [A1]
+Q: [5 marks] ★ The diagonal of a rectangle is \(17\) cm and one side is \(8\) cm. (a) Find the other side. (b) Find the area. (c) Find the angle between the diagonal and the side of length \(8\) cm.
+A: (a) The diagonal is the hypotenuse: other side \(= \sqrt{17^2 - 8^2} = \sqrt{225}\) [M1] \(= 15\) cm. [A1] (b) Area \(= 8 \times 15 = 120\) cm². [B1] (c) The \(8\) cm side is adjacent to the angle \(\theta\), so \(\cos\theta = \dfrac{8}{17}\). [M1] \(\theta = 61.9^\circ\). [A1]
+Q: [3 marks] ★★ Show that \(\sin 60^\circ\cos 30^\circ + \sin 30^\circ\cos 60^\circ = 1\).
+A: From the special triangles, \(\sin 60^\circ = \cos 30^\circ = \dfrac{\sqrt3}{2}\). [B1] Also \(\sin 30^\circ = \cos 60^\circ = \dfrac12\). [B1] So the left side is \(\dfrac{\sqrt3}{2} \times \dfrac{\sqrt3}{2} + \dfrac12 \times \dfrac12 = \dfrac34 + \dfrac14 = 1\). [A1]
+Q: [5 marks] ★★ In triangle \(PQR\), \(PQ = 9.2\) cm, angle \(P = 48^\circ\) and angle \(Q = 67^\circ\). Find \(QR\) and \(PR\).
+A: Angle \(R = 180^\circ - 48^\circ - 67^\circ = 65^\circ\). [B1] \(QR\) is opposite \(P\) and \(PQ\) is opposite \(R\), so \(\dfrac{QR}{\sin 48^\circ} = \dfrac{9.2}{\sin 65^\circ}\). [M1] \(QR = 7.54\) cm. [A1] Similarly \(PR = \dfrac{9.2\sin 67^\circ}{\sin 65^\circ}\) [M1] \(= 9.34\) cm. [A1]
+Q: [4 marks] ★★ A triangle has sides \(7\) cm, \(9\) cm and \(12\) cm. Find (a) its largest angle, (b) its area.
+A: (a) The largest angle \(C\) is opposite \(12\): \(\cos C = \dfrac{7^2 + 9^2 - 12^2}{2 \times 7 \times 9} = -\dfrac{14}{126} = -\dfrac19\). [M1] \(C = 96.4^\circ\). [A1] (b) Area \(= \tfrac12 \times 7 \times 9 \times \sin 96.38^\circ\) [M1] \(= 31.3\) cm². [A1]
+Q: [6 marks] (#math.f.algebra) ★★★ A right-angled triangle has sides of length \(x\) cm, \((x + 7)\) cm and \((x + 8)\) cm, where \((x + 8)\) cm is the hypotenuse. (a) Show that \(x^2 - 2x - 15 = 0\). (b) Find \(x\). (c) Find the area of the triangle.
+H: The hypotenuse is the longest side. Write Pythagoras with \((x + 8)^2\) on one side.
+H: Expand \((x + 7)^2\) and \((x + 8)^2\) carefully, then collect everything on one side.
+H: In (b), factorise \(x^2 - 2x - 15\) and reject any value that cannot be a length.
+A: (a) \(x^2 + (x + 7)^2 = (x + 8)^2\) [M1] so \(x^2 + x^2 + 14x + 49 = x^2 + 16x + 64\). [A1] Collect terms: \(x^2 - 2x - 15 = 0\). [A1] (b) \((x - 5)(x + 3) = 0\) [M1] so \(x = 5\), because a length cannot be \(-3\). [A1] (c) The sides are \(5\), \(12\), \(13\), so the area is \(\tfrac12 \times 5 \times 12 = 30\) cm². [B1]
+Q: [5 marks] ★★★ From a point \(A\) on level ground, the angle of elevation of the top \(T\) of a vertical tower is \(20^\circ\). From a point \(B\), \(60\) m closer to the tower on the same line, the angle of elevation is \(35^\circ\). (a) Show that angle \(ATB = 15^\circ\). (b) Find the distance \(BT\). (c) Find the height of the tower.
+H: Triangle \(ABT\) is not right-angled, so use the sine rule. First find an angle you need.
+H: The angle of elevation at \(B\) is an exterior angle of triangle \(ABT\).
+H: Use the sine rule for \(BT\); then the height is the side of a right-angled triangle with hypotenuse \(BT\).
+A: (a) The exterior angle at \(B\) equals the sum of the two opposite interior angles: \(35^\circ = 20^\circ + \angle ATB\), so \(\angle ATB = 15^\circ\). [B1] (b) \(\dfrac{BT}{\sin 20^\circ} = \dfrac{60}{\sin 15^\circ}\) [M1] so \(BT = 79.3\) m. [A1] (c) Height \(= BT\sin 35^\circ\) [M1] \(= 45.5\) m. [A1]
+:::
+
+:::try Stretch for A*
+Q: [7 marks] ★★★ In triangle \(ABC\), \(AB = 8\) cm, \(AC = 7\) cm and angle \(ABC = 60^\circ\). Let \(BC = a\) cm. (a) Show that \(a^2 - 8a + 15 = 0\). (b) Hence find the two possible values of \(a\). (c) Find the exact area of each of the two possible triangles.
+H: You know an angle and the side opposite it, but not the side between them. Which rule has the unknown side squared?
+H: Write the cosine rule for the side \(AC\). Remember \(\cos 60^\circ = \tfrac12\).
+H: In (c), use \(\tfrac12 \times AB \times BC \times \sin 60^\circ\) for each value of \(a\).
+A: (a) The cosine rule for the side opposite \(B\): \(7^2 = a^2 + 8^2 - 2(a)(8)\cos 60^\circ\). [M1 A1] So \(49 = a^2 + 64 - 8a\), that is \(a^2 - 8a + 15 = 0\). [A1] (b) \((a - 3)(a - 5) = 0\) [M1] so \(a = 3\) or \(a = 5\). [A1] Both give a real triangle (for \(a = 3\) the sides are \(3\), \(7\), \(8\), and \(3 + 7 > 8\)). This is the two-solution case in the cosine-rule form. (c) Area \(= \tfrac12 \times 8 \times a \times \sin 60^\circ = 2\sqrt3\,a\) [M1], giving \(6\sqrt3\) cm² for \(a = 3\) and \(10\sqrt3\) cm² for \(a = 5\). [A1]
+Q: [7 marks] ★★★ A sector of a circle of radius \(12\) cm and angle \(90^\circ\) is bent round so that its two straight edges meet, forming the curved surface of a cone. Find (a) the base radius of the cone, (b) its vertical height in exact form, (c) its volume to 3 significant figures.
+H: The arc of the sector becomes the circumference of the cone's circular base.
+H: The radius of the sector becomes the slant height of the cone.
+H: Use Pythagoras with the slant height, base radius and vertical height. Then use \(V = \tfrac13\pi r^2 h\).
+A: (a) Arc length \(= \dfrac{90}{360} \times 2\pi \times 12 = 6\pi\). [M1] This is the base circumference: \(2\pi r = 6\pi\), so \(r = 3\) cm. [A1] (b) The slant height is the sector radius, \(l = 12\). [B1] \(h = \sqrt{12^2 - 3^2} = \sqrt{135}\) [M1] \(= 3\sqrt{15}\) cm. [A1] (c) \(V = \tfrac13\pi(3)^2(3\sqrt{15}) = 9\pi\sqrt{15}\) [M1] \(= 110\) cm³ (3 s.f.). [A1]
 :::
 
 :::quiz
@@ -274,6 +392,15 @@ A: (a) The sine rule gives \(\dfrac{\sin C}{12} = \dfrac{\sin 40^\circ}{9}\). [M
 - \(67\)
 - \(59.2\)
 > \(c^2 = a^2 + b^2 - 2ab\cos C = 25 + 49 - 70(0.2) = 60\). Using a plus sign gives \(88\), leaving out the factor \(2\) gives \(67\), and \(59.2\) comes from multiplying \(74\) by \(1 - 0.2\), which is not in the formula.
+:::
+
+:::checklist What you can now do
+- [ ] I can use angle facts about lines, triangles and polygons, and quote the reason for each step.
+- [ ] I can use Pythagoras' theorem and its converse, and SOH CAH TOA for sides and angles of right-angled triangles, including elevation and depression.
+- [ ] I can write the exact values of sine, cosine and tangent for 30°, 45° and 60° from the two special triangles.
+- [ ] I can choose between the sine rule, the cosine rule and ½ab sin C, and spot the ambiguous case.
+- [ ] I can use the tangent, semicircle and chord facts for circles, and find arc length and sector area in degrees.
+- [ ] I can find the volume and surface area of prisms, cylinders, cones and spheres.
 :::
 
 :::recap

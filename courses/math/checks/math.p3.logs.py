@@ -68,4 +68,43 @@ eq("T10 g", log(1.5), 0.405, 6e-4); eq("T10 a", sf(exp(0.405)), 1.5, 1e-2); eq("
 eq("Q1", log2(8) + log2(4), 5); eq("Q2", log(12) - log(4), log(3)); eq("Q3", sf(log(9) / log(2)), 3.17); eq("Q3w", sf(log(9) - log(2)), 1.50)
 
 assert (5 - 1) * (5 + 3) == 32
+# ---- v2 additions: warm-up, proof, spot the error, exam practice, stretch ----
+import random
+from math import log, exp
+eq("warm-up 16^(3/4) x 2^-5", 16 ** 0.75 * 2 ** -5, 0.25)
+assert (3 - 3) * (3 - 4) == 0 and 3 * 4 == 12 and 3 + 4 == 7
+f_inv = lambda x: (x + 1) / 3
+for x in (-2, 0.5, 7):
+    eq("warm-up inverse", 3 * f_inv(x) - 1, x)
+for _ in range(10):                                                   # proof: the three laws
+    a = random.uniform(1.5, 6); x, y, k = random.uniform(0.5, 9), random.uniform(0.5, 9), random.uniform(-3, 3)
+    la = lambda t: log(t) / log(a)
+    eq("product law", la(x * y), la(x) + la(y)); eq("quotient law", la(x / y), la(x) - la(y)); eq("power law", la(x ** k), k * la(x))
+eq("spot: correct x", log(2) / (log(5) - log(2)), 0.756, 0.0005)       # spot the error
+eq("spot: wrong x", log(2, 10) / (log(5, 10) - 1), -1.0)
+assert 2 ** 0 == 1 and 5 ** -1 == 0.2
+eq("spot check LHS", 2 ** (0.756 + 1), 3.38, 0.005); eq("spot check RHS", 5 ** 0.756, 3.38, 0.005)
+eq("Q1", log(30) / log(5), 2.11, 0.005)                               # exam practice
+eq("Q2", 2 * log(6, 3) - log(4, 3), 2)
+for x in (2, 3):
+    eq("Q3", 2 * log(x), log(5 * x - 6))
+assert [(x - 2) * (x - 3) for x in (2, 3)] == [0, 0]
+for x in (log(2), log(5)):
+    eq("Q4", exp(2 * x) - 7 * exp(x) + 10, 0)
+eq("Q5a", 80 * exp(-0.5), 48.5, 0.05); eq("Q5b", log(4) / 0.05, 27.7, 0.05); eq("Q5c", log(2) / 0.05, 13.9, 0.05)
+eq("Q5b check", 80 * exp(-0.05 * log(4) / 0.05), 20); eq("Q5c check", 80 * exp(-0.05 * log(2) / 0.05), 40)
+m = (7.3 - 2.5) / 3; eq("Q6 grad", m, 1.6); eq("Q6 b", exp(m), 4.95, 0.005); eq("Q6 c", 2.5 - m, 0.9); eq("Q6 A", exp(0.9), 2.46, 0.005)
+assert abs(2 ** 3 - 6) == 2 and abs(2 ** 2 - 6) == 2                  # Q7
+for x in (-3, 0, 1, 2.5):
+    eq("Q8a", 2 ** (2 * x + 1), 2 * (2 ** x) ** 2)
+for x in (-1, 2):
+    u = 2 ** x; eq("Q8b", 2 * u * u - 9 * u + 4, 0)
+for x in (-3, -1.5, 0, 1, 1.9, 2.5, 4):                               # Q8c sign of the expression
+    assert (2 ** (2 * x + 1) - 9 * 2 ** x + 4 < 0) == (-1 < x < 2)
+x = log(15) / log(25 / 6)                                             # stretch 1
+eq("S1", x, 1.90, 0.005); eq("S1 check", 2 ** x * 3 ** (x + 1), 5 ** (2 * x - 1), 1e-9)
+r = (5 + 17 ** 0.5) / 2                                               # stretch 2
+eq("S2 lhs", log(r - 2) + log(r + 1), log(4 * r - 4))
+r2 = (5 - 17 ** 0.5) / 2
+assert r2 - 2 < 0 and 25 - 8 == 17
 print("ok")

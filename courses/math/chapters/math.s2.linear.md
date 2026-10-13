@@ -11,6 +11,15 @@ Real quantities are built from other quantities. The mass of a parcel is the mas
 
 **Before you start**, you need \(E(X)\) and \(\mathrm{Var}(X)\) from [Discrete random variables](#math.s1.drv), the normal distribution from [The normal distribution](#math.s1.normal) and the Poisson distribution from [The Poisson distribution](#math.s2.poisson).
 
+:::try Warm-up
+Q: \(X\) takes the values 1, 2, 4 with probabilities 0.5, 0.3, 0.2. Find \(E(X)\) and \(\mathrm{Var}(X)\). (from [Discrete random variables](#math.s1.drv))
+A: \(E(X) = 0.5 + 0.6 + 0.8\) \(= 1.9\). \(E(X^2) = 0.5 + 1.2 + 3.2\) \(= 4.9\). \(\mathrm{Var}(X) = 4.9 - 1.9^2 = 1.29\).
+Q: \(X \sim N(30, 5^2)\). Find \(P(25 < X < 40)\). (from [The normal distribution](#math.s1.normal))
+A: \(z\) runs from \(-1\) to \(2\), so the probability is \(\Phi(2) - \Phi(-1)\) \(= 0.9772 - 0.1587 = 0.819\).
+Q: \(X \sim \mathrm{Po}(3.5)\). Find \(P(X \le 2)\). (from [The Poisson distribution](#math.s2.poisson))
+A: \(P(X \le 2)\) \(= e^{-3.5}\left(1 + 3.5 + \dfrac{3.5^2}{2}\right)\) \(= 10.625\,e^{-3.5} = 0.321\).
+:::
+
 ## Changing a variable: \(aX + b\)
 
 Suppose \(C\) is the temperature in a classroom in degrees Celsius, with mean 18 and variance 4. The temperature in degrees Fahrenheit is \(F = 1.8C + 32\). What are the mean and variance of \(F\)?
@@ -29,6 +38,24 @@ For any random variable \(X\) and constants \(a\) and \(b\):
 You may use these results without proof. Learn them: MF19 does not give the rule for \(\mathrm{Var}(aX + bY)\).
 :::
 
+:::proof Why \(E(aX + b) = aE(X) + b\) and \(\mathrm{Var}(aX + b) = a^2\,\mathrm{Var}(X)\)
+Take a discrete variable with values \(x\) and probabilities \(p\), so \(\sum p = 1\) and \(E(X) = \sum xp\). The variable \(aX + b\) takes the value \(ax + b\) with the same probability \(p\). So
+\[E(aX + b) = \sum (ax + b)p = a\sum xp + b\sum p = aE(X) + b\]
+Write \(\mu = E(X)\). The mean of \(aX + b\) is \(a\mu + b\), so its distance from its mean is
+\[(aX + b) - (a\mu + b) = a(X - \mu)\]
+The variance is the mean of the square of this distance:
+\[\mathrm{Var}(aX + b) = E\big[a^2(X - \mu)^2\big] = a^2E\big[(X - \mu)^2\big] = a^2\,\mathrm{Var}(X)\]
+The \(b\) cancelled in the line above, which is why a constant never changes the spread. Check with \(X = 1, 2, 3\) and probabilities 0.2, 0.5, 0.3: the mean is 2.1 and the variance is 0.49, and \(3X - 2\) has mean \(3(2.1) - 2 = 4.3\) and variance \(9(0.49) = 4.41\).
+:::
+
+:::proof Why \(\mathrm{Var}(X) = E(X^2) - [E(X)]^2\)
+Start from the definition \(\mathrm{Var}(X) = E\big[(X - \mu)^2\big]\) and expand the bracket:
+\[(X - \mu)^2 = X^2 - 2\mu X + \mu^2\]
+Take the mean of each term. The mean of a sum is the sum of the means, and \(\mu\) is a constant, so
+\[\mathrm{Var}(X) = E(X^2) - 2\mu E(X) + \mu^2\]
+Since \(E(X) = \mu\), the middle term is \(-2\mu^2\), and \(-2\mu^2 + \mu^2 = -\mu^2\). So \(\mathrm{Var}(X) = E(X^2) - \mu^2\). This is the form you use with a table: for \(X = 1, 2, 3\) with probabilities 0.2, 0.5, 0.3, \(E(X^2) = 4.9\) and \(\mu^2 = 4.41\), which gives 0.49.
+:::
+
 :::eg \(C\) has mean 18 and variance 4. Find the mean, variance and standard deviation of \(F = 1.8C + 32\).
 \[E(F) = 1.8 \times 18 + 32 = 64.4\]
 \[\mathrm{Var}(F) = 1.8^2 \times 4 = 12.96\]
@@ -45,9 +72,9 @@ The mean postage is \(£7.90\) and the standard deviation is \(£1.53\) (3 s.f.)
 For a **discrete** variable you can test the rule with a table.
 
 :::eg \(X\) takes the values 1, 2, 3 with probabilities 0.2, 0.5, 0.3. Find \(E(3X - 2)\) and \(\mathrm{Var}(3X - 2)\), and check by listing the values of \(3X - 2\).
-\(E(X) = 0.2 + 1.0 + 0.9 = 2.1\), \(E(X^2) = 0.2 + 2.0 + 2.7 = 4.9\), so \(\mathrm{Var}(X) = 4.9 - 2.1^2 = 0.49\).
+\(E(X) = 0.2 + 1.0 + 0.9\) \(= 2.1\), \(E(X^2) = 0.2 + 2.0 + 2.7\) \(= 4.9\), so \(\mathrm{Var}(X) = 4.9 - 2.1^2 = 0.49\).
 
-\(E(3X - 2) = 3 \times 2.1 - 2 = 4.3\) and \(\mathrm{Var}(3X - 2) = 9 \times 0.49 = 4.41\).
+\(E(3X - 2) = 3 \times 2.1 - 2\) \(= 4.3\) and \(\mathrm{Var}(3X - 2) = 9 \times 0.49\) \(= 4.41\).
 
 Check: \(3X - 2\) takes the values 1, 4, 7 with the same probabilities. Its mean is \(0.2 + 2.0 + 2.1 = 4.3\). Its mean of squares is \(0.2 + 8 + 14.7 = 22.9\), and \(22.9 - 4.3^2 = 4.41\). The rule agrees.
 :::
@@ -67,11 +94,21 @@ If \(X\) and \(Y\) are **independent**, then
 \[\mathrm{Var}(aX + bY) = a^2\,\mathrm{Var}(X) + b^2\,\mathrm{Var}(Y)\]
 - The mean rule always holds, independent or not.
 - The variance rule needs independence. Knowing the value of one variable must tell you nothing about the other.
-- **Variances add even when you subtract the variables**: \(\mathrm{Var}(X - Y) = \mathrm{Var}(X) + \mathrm{Var}(Y)\), because \((-1)^2 = 1\).
+- **Variances add even when you subtract the variables**: \(\mathrm{Var}(X - Y)\) \(= \mathrm{Var}(X) + \mathrm{Var}(Y)\), because \((-1)^2 = 1\).
 - Both rules extend to three or more variables.
 :::
 
 Why do the variances add for a difference? A difference such as \(X - Y\) can be unusually large if \(X\) is high and \(Y\) is low, or unusually small if \(X\) is low and \(Y\) is high. Two sources of variation make the result less predictable, not more.
+
+:::proof Why the variances add when \(X\) and \(Y\) are independent
+Let \(\mu_X = E(X)\) and \(\mu_Y = E(Y)\). The mean of \(X + Y\) is \(\mu_X + \mu_Y\), so
+\[\mathrm{Var}(X + Y) = E\big[\big((X - \mu_X) + (Y - \mu_Y)\big)^2\big]\]
+Expand the square and take the mean of each term:
+\[\mathrm{Var}(X + Y) = \mathrm{Var}(X) + \mathrm{Var}(Y) + 2E\big[(X - \mu_X)(Y - \mu_Y)\big]\]
+When \(X\) and \(Y\) are independent, the mean of the product is the product of the means. Each of those means is zero, because the average distance from the mean is zero:
+\[E\big[(X - \mu_X)(Y - \mu_Y)\big] = E(X - \mu_X)\,E(Y - \mu_Y) = 0\]
+So \(\mathrm{Var}(X + Y)\) \(= \mathrm{Var}(X) + \mathrm{Var}(Y)\). Replacing \(Y\) by \(-Y\) leaves \(\mathrm{Var}(Y)\) unchanged, so the same is true for \(X - Y\). If the variables are not independent, the extra term need not be zero: see the last stretch question.
+:::
 
 :::eg \(E(X) = 5\), \(E(Y) = 2\), \(\mathrm{Var}(X) = 4\), \(\mathrm{Var}(Y) = 9\), and \(X\) and \(Y\) are independent. Find the mean and variance of \(2X - 3Y + 1\).
 \[E(2X - 3Y + 1) = 2 \times 5 - 3 \times 2 + 1 = 5\]
@@ -99,7 +136,7 @@ Both have mean \(1000\), but the spread differs:
 --f "exp(-((x-1000)**2)/(2*32))/sqrt(2*pi*32)" --f "exp(-((x-1000)**2)/(2*64))/sqrt(2*pi*64)" --label "X₁ + X₂ (variance 32)" --label "2X (variance 64)" --x 975 1025 --y 0 0.08 --vline 1010 --legend tl --xlabel "total volume (ml)"
 :::
 
-The tail beyond 1010 ml shows the difference. For \(X_1 + X_2\), \(P(\text{total} > 1010) = P\!\left(Z > \dfrac{10}{\sqrt{32}}\right) = P(Z > 1.768) = 0.0385\). For \(2X\), \(P(2X > 1010) = P\!\left(Z > \dfrac{10}{8}\right) = 0.106\). Treating two bottles as one doubled bottle nearly triples the chance of a large total.
+The tail beyond 1010 ml shows the difference. For \(X_1 + X_2\), \(P(\text{total} > 1010)\) \(= P\!\left(Z > \dfrac{10}{\sqrt{32}}\right)\) \(= P(Z > 1.768) = 0.0385\). For \(2X\), \(P(2X > 1010) = P\!\left(Z > \dfrac{10}{8}\right)\) \(= 0.106\). Treating two bottles as one doubled bottle nearly triples the chance of a large total.
 
 :::warn Two bottles or one doubled?
 Look for the word "independent" and for how the quantities are described. "The total mass of 2 bags" means \(X_1 + X_2\) (variance \(2\sigma^2\)). "A bag is weighed and the result doubled", or "twice the mass of one bag", means \(2X\) (variance \(4\sigma^2\)). Using \(2X\) when you need \(X_1 + X_2\) loses every accuracy mark after the variance.
@@ -169,7 +206,7 @@ Let \(T = A + B\). Then \(T \sim \mathrm{Po}(5)\).
 
 (a) \(P(T = 6) = e^{-5}\dfrac{5^6}{6!} = 0.146\).
 
-(b) \(P(T \ge 3) = 1 - P(T \le 2) = 1 - e^{-5}\left(1 + 5 + \dfrac{25}{2}\right) = 1 - 18.5e^{-5} = 0.875\).
+(b) \(P(T \ge 3) = 1 - P(T \le 2)\) \(= 1 - e^{-5}\left(1 + 5 + \dfrac{25}{2}\right)\) \(= 1 - 18.5e^{-5} = 0.875\).
 :::
 
 Take care. Only a **sum** of independent Poissons is Poisson. A difference and a multiple are not.
@@ -191,6 +228,20 @@ Define each new variable with a letter, state "independent" where the question a
 - The rules \(E(aX + b)\) and \(\mathrm{Var}(aX + b)\) are standard everywhere.
 :::
 
+:::eg Spot the error: three apples or one apple tripled?
+A student answered this question [5 marks]: "The mass of an apple is \(X \sim N(150, 20^2)\) g. Find the probability that the total mass of 3 randomly chosen apples is more than 480 g."
+
+Line 1: Let \(T = 3X\). Then \(E(T) = 450\).
+Line 2: \(\mathrm{Var}(T) = 3^2 \times 400 = 3600\), so \(T \sim N(450, 3600)\).
+Line 3: \(P(T > 480)\) \(= P\!\left(Z > \dfrac{480 - 450}{60}\right)\) \(= P(Z > 0.5) = 0.309\).
+
+**Line 1 earns [B1]** because the mean \(3 \times 150\) is correct either way. **Line 2 scores [M0 A0]**: three different apples are \(X_1 + X_2 + X_3\), whose variance is \(3 \times 400\), not \(3^2 \times 400\). The student has treated the three apples as one apple tripled. **Line 3 earns [M1]** for standardising correctly with the student's own variance, but **[A0]** because the answer is wrong. The student scores 2 out of 5.
+
+Correct working: \(T\) \(= X_1 + X_2 + X_3 \sim N(450, 1200)\), [M1 A1] so \(z = \dfrac{480 - 450}{\sqrt{1200}} = 0.866\) [M1] and \(P(T > 480) = 1 - \Phi(0.866)\) \(= 0.193\). [A1]
+
+**Check:** three separate apples partly average out, so the total is less spread out than a tripled apple. The correct probability of a large total (0.193) is smaller than the student's (0.309).
+:::
+
 :::try Start easy, finish at exam standard
 Q: \(E(X) = 10\) and \(\mathrm{Var}(X) = 3\). Find \(E(4X - 1)\), \(\mathrm{Var}(4X - 1)\) and \(\mathrm{Var}(-2X)\).
 A: \(E(4X - 1) = 40 - 1 = 39\). \(\mathrm{Var}(4X - 1) = 16 \times 3 = 48\). \(\mathrm{Var}(-2X) = (-2)^2 \times 3 = 12\).
@@ -199,19 +250,50 @@ A: \(E = 18 - 9 = 9\). \(\mathrm{Var} = 9 \times 2 + 1 \times 5 = 23\).
 Q: \(X\) has mean 12 and variance 9. Find the mean and variance of \(X_1 + X_2 + X_3\), three independent observations of \(X\), and of \(3X\).
 A: \(E(X_1 + X_2 + X_3) = 36\) and \(\mathrm{Var} = 27\). \(E(3X) = 36\) and \(\mathrm{Var}(3X) = 9 \times 9 = 81\).
 Q: \(X \sim N(50, 6^2)\) and \(Y \sim N(40, 8^2)\) are independent. State the distribution of \(X + Y\) and find \(P(X + Y > 100)\).
-A: \(X + Y \sim N(90, 100)\). \(P(X + Y > 100) = P(Z > 1) = 1 - 0.8413 = 0.159\).
+A: \(X + Y \sim N(90, 100)\). \(P(X + Y > 100) = P(Z > 1)\) \(= 1 - 0.8413 = 0.159\).
 Q: With \(X\) and \(Y\) as in the previous question, find \(P(X > Y + 5)\).
-A: \(X - Y - 5 \sim N(50 - 40 - 5,\ 36 + 64) = N(5, 100)\). \(P(X - Y - 5 > 0) = P\!\left(Z > \dfrac{0 - 5}{10}\right) = P(Z > -0.5) = \Phi(0.5) = 0.691\).
+A: \(X - Y - 5 \sim N(50 - 40 - 5,\ 36 + 64)\) \(= N(5, 100)\). \(P(X - Y - 5 > 0)\) \(= P\!\left(Z > \dfrac{0 - 5}{10}\right)\) \(= P(Z > -0.5) = \Phi(0.5)\) \(= 0.691\).
 Q: Apples have mass \(X \sim N(150, 20^2)\) grams. Find the probability that 6 randomly chosen apples have a total mass of more than 1 kg.
-A: \(T \sim N(900, 6 \times 400 = 2400)\), sd \(= 48.99\). \(P(T > 1000) = P(Z > 2.041) = 0.0206\).
+A: \(T \sim N(900, 6 \times 400 = 2400)\), sd \(= 48.99\). \(P(T > 1000) = P(Z > 2.041)\) \(= 0.0206\).
 Q: \(X \sim \mathrm{Po}(2.5)\) and \(Y \sim \mathrm{Po}(1.5)\) are independent. Find \(P(X + Y = 2)\) and explain why \(X - Y\) is not Poisson.
-A: \(X + Y \sim \mathrm{Po}(4)\), so \(P(X + Y = 2) = e^{-4}\dfrac{4^2}{2} = 8e^{-4} = 0.147\). \(X - Y\) can take negative values, and a Poisson variable cannot.
+A: \(X + Y \sim \mathrm{Po}(4)\), so \(P(X + Y = 2) = e^{-4}\dfrac{4^2}{2}\) \(= 8e^{-4}\) \(= 0.147\). \(X - Y\) can take negative values, and a Poisson variable cannot.
 Q: Boxes of tea have mass \(X \sim N(250, 3^2)\) g. A carton holds 12 boxes (independent) and the empty carton has mass \(M \sim N(80, 2^2)\) g, independent of the boxes. Find the probability that a full carton has mass less than 3070 g.
-A: \(T = X_1 + \dots + X_{12} + M\). \(E(T) = 3000 + 80 = 3080\). \(\mathrm{Var}(T) = 12 \times 9 + 4 = 112\). \(P(T < 3070) = P\!\left(Z < \dfrac{-10}{\sqrt{112}}\right) = \Phi(-0.945) = 0.172\).
+A: \(T = X_1 + \dots + X_{12} + M\). \(E(T) = 3000 + 80 = 3080\). \(\mathrm{Var}(T) = 12 \times 9 + 4 = 112\). \(P(T < 3070)\) \(= P\!\left(Z < \dfrac{-10}{\sqrt{112}}\right)\) \(= \Phi(-0.945) = 0.172\).
 Q: (Exam style) The time \(A\) minutes for Anna to run 5 km is \(N(27, 2.5^2)\) and the time \(B\) minutes for Ben is \(N(26, 3^2)\), independent. (a) Find the probability that Anna beats Ben. (b) Find the probability that the combined time of Anna and Ben is under 50 minutes. [7 marks]
-A: (a) \(A - B \sim N(1, 6.25 + 9 = 15.25)\) [M1 A1]. Anna wins if \(A - B < 0\): \(P = \Phi\!\left(\dfrac{-1}{3.905}\right) = \Phi(-0.256) = 0.399\). [M1 A1] (b) \(A + B \sim N(53, 15.25)\) [B1]. \(P(A + B < 50) = \Phi\!\left(\dfrac{-3}{3.905}\right) = \Phi(-0.768) = 0.221\). [M1 A1]
+A: (a) \(A - B \sim N(1, 6.25 + 9 = 15.25)\) [M1 A1]. Anna wins if \(A - B < 0\): \(P = \Phi\!\left(\dfrac{-1}{3.905}\right) = \Phi(-0.256)\) \(= 0.399\). [M1 A1] (b) \(A + B \sim N(53, 15.25)\) [B1]. \(P(A + B < 50) = \Phi\!\left(\dfrac{-3}{3.905}\right)\) \(= \Phi(-0.768) = 0.221\). [M1 A1]
 Q: (Exam style) Packets of sugar have mass \(X\) with mean 1010 g and standard deviation 12 g. Packets are put into bags of 4, and a bag's mass is the total of 4 independent packets. Find the mean and standard deviation of the mass of a bag. A shop owner says "the standard deviation of a bag is \(4 \times 12 = 48\) g". Explain the mistake. [4 marks]
 A: \(E = 4 \times 1010 = 4040\) g [B1]. \(\mathrm{Var} = 4 \times 144 = 576\) [M1], so the standard deviation is \(24\) g [A1]. The owner multiplied the standard deviation by 4. That treats the four packets as copies of one packet (\(4X\), standard deviation 48). The packets are independent, so their errors partly cancel and the variances add. [B1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ \(E(X) = 8\) and \(\mathrm{Var}(X) = 5\). Find \(E(3X - 4)\), \(\mathrm{Var}(3X - 4)\) and the standard deviation of \(-2X\).
+A: \(E(3X - 4) = 3 \times 8 - 4 = 20\). [B1] \(\mathrm{Var}(3X - 4) = 3^2 \times 5 = 45\). [B1] \(\mathrm{Var}(-2X) = (-2)^2 \times 5 = 20\), so the standard deviation is \(\sqrt{20} = 4.47\). [B1]
+Q: [4 marks] ★ \(X\) and \(Y\) are independent, with \(E(X) = 12\), \(\mathrm{Var}(X) = 3\), \(E(Y) = 7\) and \(\mathrm{Var}(Y) = 2\). Find the mean and variance of \(2X - 3Y\).
+A: \(E(2X - 3Y)\) \(= 2 \times 12 - 3 \times 7\) [M1] \(= 3\). [A1] \(\mathrm{Var}(2X - 3Y)\) \(= 2^2 \times 3 + (-3)^2 \times 2\) [M1] \(= 12 + 18 = 30\). [A1]
+Q: [3 marks] ★ Calls to a helpline in the morning follow \(\mathrm{Po}(2.4)\) and calls in the afternoon follow \(\mathrm{Po}(3.1)\), independently. Find the probability that exactly 4 calls are received in a day.
+A: The total \(T\) is the sum of independent Poisson variables, so \(T \sim \mathrm{Po}(5.5)\). [B1] \(P(T = 4) = \dfrac{e^{-5.5} \times 5.5^4}{4!}\) [M1] \(= 0.156\). [A1]
+Q: [5 marks] ★★ Packets of rice have mass \(X \sim N(1008, 5^2)\) g. Four packets are chosen at random and packed together. Find the probability that their total mass is less than 4020 g.
+A: Let \(T = X_1 + X_2 + X_3 + X_4\). Then \(E(T) = 4 \times 1008 = 4032\). [B1] \(\mathrm{Var}(T) = 4 \times 25 = 100\), [M1 A1] so \(T \sim N(4032, 100)\). \(P(T < 4020)\) \(= P\!\left(Z < \dfrac{4020 - 4032}{10}\right)\) [M1] \(= \Phi(-1.2) = 0.115\). [A1]
+Q: [6 marks] ★★ \(X \sim N(60, 4^2)\) and \(Y \sim N(28, 3^2)\) are independent. Find \(P(X > 2Y)\).
+A: Let \(D = X - 2Y\). Because \(X\) and \(Y\) are independent and normal, \(D\) is normal. [B1] \(E(D) = 60 - 2 \times 28 = 4\). [B1] \(\mathrm{Var}(D) = 4^2 + (-2)^2 \times 3^2\) [M1] \(= 16 + 36 = 52\). [A1] \(P(X > 2Y) = P(D > 0)\) \(= P\!\left(Z > \dfrac{0 - 4}{\sqrt{52}}\right)\) [M1] \(= P(Z > -0.555) = 0.710\). [A1]
+Q: [6 marks] ★★ \(X \sim \mathrm{Po}(4)\) and \(Y \sim \mathrm{Po}(6)\) are independent. (a) Find \(P(X + Y \ge 12)\). (b) Show that \(2X\) does not have a Poisson distribution.
+A: (a) \(X + Y \sim \mathrm{Po}(10)\). [B1] \(P(X + Y \ge 12)\) \(= 1 - P(X + Y \le 11)\) [M1] \(= 1 - 0.6968 = 0.303\). [A1] (b) \(E(2X) = 2 \times 4 = 8\). [B1] \(\mathrm{Var}(2X) = 2^2 \times 4 = 16\). [B1] The mean and variance of a Poisson variable are equal, and 8 is not 16, so \(2X\) is not Poisson. [B1]
+Q: [9 marks] (#math.s1.normal) ★★★ The mass of a passenger on a ferry is \(X \sim N(72, 9^2)\) kg, independently for each passenger. (a) Find the probability that the total mass of 4 passengers is more than 320 kg. (b) A lift is limited to 500 kg. Find the largest number \(n\) of passengers for which the probability that their total mass exceeds 500 kg is less than 0.01.
+H: For (a), the total of 4 separate passengers is \(X_1 + X_2 + X_3 + X_4\), not \(4X\). Find its mean and variance first.
+H: For (b), for \(n\) passengers the total is \(N(72n, 81n)\). Use the inverse normal: \(P(T > 500) < 0.01\) means \(\dfrac{500 - 72n}{9\sqrt{n}} > 2.326\).
+H: Either solve the inequality as a quadratic in \(\sqrt{n}\), or test \(n = 5, 6, 7\) and say what happens to the mean as \(n\) grows.
+A: (a) Let \(T = X_1 + X_2 + X_3 + X_4\). \(E(T) = 4 \times 72 = 288\). [B1] \(\mathrm{Var}(T) = 4 \times 81 = 324\), [M1 A1] so \(T \sim N(288, 18^2)\). \(P(T > 320)\) \(= P\!\left(Z > \dfrac{320 - 288}{18}\right)\) [M1] \(= P(Z > 1.778) = 0.0377\). [A1] (b) For \(n\) passengers \(T_n \sim N(72n, 81n)\). We need \(P(T_n > 500) < 0.01\), so [M1] \(\dfrac{500 - 72n}{9\sqrt{n}} > 2.326\). [B1] Then \(72n + 20.94\sqrt{n} - 500 < 0\), [M1] which gives \(\sqrt{n} < 2.494\) and \(n < 6.22\). So the largest number is \(n = 6\). [A1] Check: for \(n = 6\) the mean is 432 and the standard deviation is 22.05, so \(z = 3.08\) and the probability is 0.00102. For \(n = 7\) the mean 504 already exceeds 500, so the probability is above one half.
+:::
+
+:::try Stretch for A*
+Q: [7 marks] ★★★ A rod has a true length \(\mu\) mm, which is unknown. Each measurement of the rod equals \(\mu\) plus an independent error with distribution \(N(0, 0.4^2)\). A technician takes \(n\) measurements \(X_1, \dots, X_n\) and uses their mean \(\bar{X}\) as the estimate. (a) Show that \(\bar{X}\) has mean \(\mu\) and variance \(\dfrac{0.16}{n}\). (b) Find the least \(n\) for which the estimate is within 0.1 mm of \(\mu\) with probability at least 0.95.
+H: Write \(\bar{X} = \dfrac{1}{n}(X_1 + \dots + X_n)\) and use the rules for \(aX\) and for sums of independent variables.
+H: \(\bar{X} \sim N\!\left(\mu, \dfrac{0.16}{n}\right)\). "Within 0.1 mm" means \(|\bar{X} - \mu| < 0.1\). By symmetry, you need \(\dfrac{0.1}{0.4/\sqrt{n}} \ge z\) where \(\Phi(z) = 0.975\).
+A: (a) \(E(X_1 + \dots + X_n) = n\mu\) and \(\mathrm{Var}(X_1 + \dots + X_n)\) \(= n \times 0.16\). [B1] With the multiplier \(\dfrac{1}{n}\), \(E(\bar{X}) = \dfrac{n\mu}{n} = \mu\) [M1] and \(\mathrm{Var}(\bar{X}) = \dfrac{1}{n^2} \times 0.16n\) \(= \dfrac{0.16}{n}\). [A1] (b) \(\bar{X} - \mu \sim N\!\left(0, \dfrac{0.16}{n}\right)\), and we need \(P(|\bar{X} - \mu| < 0.1) \ge 0.95\). [M1] By symmetry this means \(\Phi\!\left(\dfrac{0.1\sqrt{n}}{0.4}\right) \ge 0.975\), so \(\dfrac{\sqrt{n}}{4} \ge 1.960\). [M1] Then \(\sqrt{n} \ge 7.84\) and \(n \ge 61.5\), [A1] so the least value is \(n = 62\). [A1]
+Q: [5 marks] ★★★ The random variable \(X\) takes the values 1, 2, 3 with probabilities 0.25, 0.5, 0.25, and \(Y = 4 - X\). (a) Show that \(Y\) has the same distribution as \(X\), and find \(\mathrm{Var}(X)\). (b) Find \(\mathrm{Var}(X + Y)\) directly. (c) Compare it with \(\mathrm{Var}(X) + \mathrm{Var}(Y)\) and explain the difference.
+H: List the values of \(Y\) when \(X = 1, 2, 3\) and read off their probabilities.
+H: What is \(X + Y\) equal to every time?
+A: (a) When \(X = 1, 2, 3\), \(Y = 3, 2, 1\) with probabilities 0.25, 0.5, 0.25, so \(Y\) takes 1, 2, 3 with the same probabilities as \(X\). [B1] \(E(X) = 2\) and \(E(X^2) = 0.25 + 2 + 2.25\) \(= 4.5\), so \(\mathrm{Var}(X) = 4.5 - 4 = 0.5\). [B1] (b) \(X + Y = 4\) every time, so it never varies and \(\mathrm{Var}(X + Y) = 0\). [B1] (c) \(\mathrm{Var}(X) + \mathrm{Var}(Y) = 1\), which is not 0. [B1] The rule "variances add" needs independence. Here \(Y\) is completely determined by \(X\): a high \(X\) always comes with a low \(Y\), so the two cancel exactly. [B1]
 :::
 
 :::quiz Check your understanding
@@ -247,9 +329,19 @@ A: \(E = 4 \times 1010 = 4040\) g [B1]. \(\mathrm{Var} = 4 \times 144 = 576\) [M
 > The variance of the total is \(9 + 16 = 25\), so the standard deviation is \(\sqrt{25} = 5\). Adding the standard deviations (7) or the variances without square-rooting (25) are the usual errors.
 :::
 
+:::checklist What you can now do
+- [ ] I can find \(E(aX + b)\) and \(\mathrm{Var}(aX + b)\) and explain why the constant does not change the variance.
+- [ ] I can find the mean and variance of \(aX + bY\) for independent \(X\) and \(Y\), including a difference.
+- [ ] I can tell \(X_1 + X_2\) (two observations) from \(2X\) (one observation doubled) and give both variances.
+- [ ] I can find the mean and variance of a sum of \(n\) independent observations, and a total made of different kinds of item.
+- [ ] I can state the distribution of a combination of independent normal variables and find a probability from it.
+- [ ] I can turn "A is quicker than B" or "X is more than twice Y" into an inequality about a new normal variable.
+- [ ] I can find the distribution of a sum of independent Poisson variables, and say why a difference or a multiple is not Poisson.
+:::
+
 :::recap
 - \(E(aX + b) = aE(X) + b\) and \(\mathrm{Var}(aX + b) = a^2\mathrm{Var}(X)\): the constant moves the mean only; the multiplier is squared.
-- \(E(aX + bY) = aE(X) + bE(Y)\) always. For independent \(X, Y\): \(\mathrm{Var}(aX + bY) = a^2\mathrm{Var}(X) + b^2\mathrm{Var}(Y)\). Variances add for a difference.
+- \(E(aX + bY) = aE(X) + bE(Y)\) always. For independent \(X, Y\): \(\mathrm{Var}(aX + bY)\) \(= a^2\mathrm{Var}(X) + b^2\mathrm{Var}(Y)\). Variances add for a difference.
 - \(X_1 + X_2\) (two independent observations) has variance \(2\sigma^2\). \(2X\) has variance \(4\sigma^2\). For \(n\) observations the sum has mean \(n\mu\) and variance \(n\sigma^2\).
 - Independent normals: any linear combination is normal. Find the mean and variance, then standardise.
 - Independent Poissons: the sum is \(\mathrm{Po}(\lambda + \mu)\). Differences and multiples are not Poisson.

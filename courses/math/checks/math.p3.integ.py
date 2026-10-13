@@ -77,4 +77,39 @@ assert all((1 + x * x)**-1.5 > 0 for x in (0, 1, 2))
 # quiz
 chk("Q1", lambda x: exp(4 * x) / 4, lambda x: exp(4 * x), xs=(0.2, 0.5)); chk("Q2", lambda x: -cos(3 * x) / 3, lambda x: sin(3 * x))
 eq("Q5", pi / 4, simpson(lambda x: 1 / (1 + x * x), 0, 1), 1e-9)
+
+# ---- v2 additions: warm-up, proofs, spot the error, exam practice, stretch ----
+chk("warm-up", lambda x: x ** 4 + 3 / x, lambda x: 4 * x ** 3 - 3 / x ** 2, xs=(0.5, 1.3, 2.2))
+for x in (0.3, 1.2): eq("warm-up cos^2", cos(x) ** 2, 0.5 * (1 + cos(2 * x)))
+eq("warm-up e^(2 ln 3)", exp(2 * log(3)), 9)
+for n in (1, 2, 4, 10):                                                     # proof of the trapezium rule
+    f = lambda x: exp(x * x); h = 1 / n; ys = [f(k * h) for k in range(n + 1)]
+    areas = sum(0.5 * h * (ys[k] + ys[k + 1]) for k in range(n))
+    eq("trapezium proof", areas, 0.5 * h * (ys[0] + 2 * sum(ys[1:-1]) + ys[-1]))
+for a in (0.5, 2, 3):
+    chk("tan^-1 proof", lambda x, a=a: atan(x / a) / a, lambda x, a=a: 1 / (x * x + a * a))
+    eq("proof algebra", (1 / a) * (1 / (1 + 0.7 ** 2 / a ** 2)) * (1 / a), 1 / (a * a + 0.7 ** 2))
+chk("spot", lambda x: sin(3 * x) / 3, lambda x: cos(3 * x), xs=(0.1, 0.4))      # spot the error
+eq("spot correct", (sin(pi / 2) - sin(0)) / 3, 1 / 3); eq("spot wrong", sin(3 * pi / 6) - sin(0), 1)
+eq("spot numeric", simpson(lambda x: cos(3 * x), 0, pi / 6), 1 / 3)
+chk("Q1 e", lambda x: 2 * exp(3 * x), lambda x: 6 * exp(3 * x), xs=(0.2, 0.5))       # exam practice
+chk("Q1 ln", lambda x: 2.5 * log(2 * x + 1), lambda x: 5 / (2 * x + 1))
+eq("Q2", simpson(lambda x: sin(2 * x), 0, pi / 4), 0.5)
+chk("Q3", lambda x: tan(x) - x, lambda x: tan(x) ** 2, xs=(0.2, 0.5)); eq("Q3", simpson(lambda x: tan(x) ** 2, 0, pi / 4), 1 - pi / 4)
+eq("Q4 V", pi * simpson(lambda x: 1 / (2 * x + 1), 0, 4), pi * log(3), 1e-8); eq("Q4 ln9", 0.5 * log(9), log(3))
+f = lambda x: 1 / (1 + x ** 3); ys = [f(k / 4) for k in range(5)]                      # Q5
+eq("Q5 y1", sf(ys[1], 4), 0.9846); eq("Q5 y2", sf(ys[2], 4), 0.8889); eq("Q5 y3", sf(ys[3], 4), 0.7033)
+eq("Q5", sf(trap(f, 0, 1, 4), 3), 0.832)
+eq("Q6a", simpson(lambda t: 12 * exp(-0.3 * t), 0, 5), 31.1, 0.05); eq("Q6a exact", 40 * (1 - exp(-1.5)), 31.07, 0.005)
+eq("Q6b", simpson(lambda t: 12 * exp(-0.3 * t), 0, 200), 40, 1e-6)
+eq("Q7", simpson(lambda x: 6 / (4 + x * x), 0, 2), 3 * pi / 4, 1e-8)
+chk("Q8a", lambda x: x * exp(2 * x), lambda x: exp(2 * x) * (2 * x + 1), xs=(0.2, 0.7))   # Q8
+chk("Q8b", lambda x: 0.5 * x * exp(2 * x) - 0.25 * exp(2 * x), lambda x: x * exp(2 * x), xs=(0.2, 0.7))
+eq("Q8c", simpson(lambda x: x * exp(2 * x), 0, 1), (exp(2) + 1) / 4, 1e-8)
+eq("S1 a", sin(2 * pi / 3), sin(pi / 3)); assert sin(2 * pi / 6) > sin(pi / 6)           # stretch
+eq("S1 area", simpson(lambda x: sin(2 * x) - sin(x), 0, pi / 3), 0.25, 1e-8)
+eq("S1 antiderivative", (-0.5 * cos(2 * pi / 3) + cos(pi / 3)) - (-0.5 + 1), 0.25)
+f = lambda x: 1 / (1 + x * x); ys = [f(k / 4) for k in range(5)]
+eq("S2 a", simpson(f, 0, 1), pi / 4, 1e-9); eq("S2 y1", sf(ys[1], 4), 0.9412)
+eq("S2 est", sf(trap(f, 0, 1, 4), 4), 0.7828); eq("S2 pi", sf(4 * trap(f, 0, 1, 4), 3), 3.13)
 print("ok")

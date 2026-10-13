@@ -11,6 +11,15 @@ Before you can explain why things move, you need a precise way to say how they m
 
 **Before you start**, you need rearranging formulae and solving quadratics from [Quadratics](#math.p1.quadratics), and differentiation and integration of powers of \(x\) from [Differentiation](#math.p1.diff) and [Integration](#math.p1.integ). Force diagrams and resolving are in [Forces and equilibrium](#math.m.forces).
 
+:::try Warm-up
+Q: Solve \(3t^2 - 7t - 6 = 0\). (from [Quadratics](#math.p1.quadratics))
+A: \((3t + 2)(t - 3) = 0\), so \(t = 3\) or \(t = -\tfrac23\).
+Q: Differentiate \(s = 2t^3 - 9t^2 + 12t\) with respect to \(t\). (from [Differentiation](#math.p1.diff))
+A: \(\dfrac{ds}{dt} = 6t^2 - 18t + 12\).
+Q: Evaluate \(\displaystyle\int_0^2 (3t^2 - 4t + 1)\,dt\). (from [Integration](#math.p1.integ))
+A: \(\left[t^3 - 2t^2 + t\right]_0^2 = 8 - 8 + 2 = 2\).
+:::
+
 ## Distance, displacement, speed, velocity, acceleration
 
 Mechanics treats an object as a **particle**: a point with mass but no size. This chapter is about motion in a straight line, so every vector quantity has a direction that is simply "positive" or "negative". Choose which direction is positive and keep to it.
@@ -63,6 +72,12 @@ Total distance is the area under the graph, in three parts:
 The total time is \(8 + 30 + 12 = 50\) s, so the average speed is \(\dfrac{800}{50} = 16\ \mathrm{m\,s^{-1}}\).
 :::
 
+The widget below holds this graph. The top graph is \(v\)–\(t\), and the lower one is the \(s\)–\(t\) graph of the same motion. Drag the last point left to shorten the braking time and watch the deceleration rise and the distance fall. Drag a point below the axis: the car now reverses, the displacement drops but the distance still grows.
+
+:::html
+<div class="widget" data-w="vt" data-segs="0,0; 8,20; 38,20; 50,0"></div>
+:::
+
 ## The constant acceleration equations
 
 When the acceleration is **constant**, five quantities describe the motion: \(s\), \(u\), \(v\), \(a\) and \(t\).
@@ -84,6 +99,25 @@ When the acceleration is **constant**, five quantities describe the motion: \(s\
 :::
 
 These come from the \(v\)–\(t\) graph of a straight line from \(u\) to \(v\): the gradient is \(a = \dfrac{v - u}{t}\), which gives the first equation, and the area of the trapezium is \(s = \tfrac12(u + v)t\).
+
+:::proof Why the four equations are true
+Take a particle with constant acceleration \(a\). Its \(v\)–\(t\) graph is a straight line from height \(u\) at \(t = 0\) to height \(v\) at time \(t\).
+
+**Equation 1.** The gradient of the line is the acceleration, so \(a = \dfrac{v - u}{t}\). Rearranging gives \(v = u + at\).
+
+**Equation 2.** The area under the line is the displacement. The area is a trapezium with parallel sides \(u\) and \(v\) and width \(t\), so \(s = \tfrac12(u + v)t\).
+
+**Equation 3.** Put \(v = u + at\) into equation 2:
+\[s = \tfrac12(u + u + at)t = ut + \tfrac12 at^2\]
+
+**Equation 4.** From equation 1, \(t = \dfrac{v - u}{a}\). Put this into equation 2:
+\[s = \tfrac12(u + v)\cdot\frac{v - u}{a} = \frac{v^2 - u^2}{2a}\]
+so \(v^2 = u^2 + 2as\).
+
+**By calculus.** If \(a\) is constant, \(v = \int a\,dt = at + c\). At \(t = 0\), \(v = u\), so \(c = u\) and \(v = u + at\). Integrating again, \(s = \int (u + at)\,dt = ut + \tfrac12 at^2 + k\), and \(s = 0\) at \(t = 0\) gives \(k = 0\). This is equation 3 again, so graph and calculus agree.
+
+Check with \(u = 5\), \(a = 2\), \(t = 8\): equation 1 gives \(v = 21\), equation 3 gives \(s = 104\), and equation 4 gives \(21^2 - 5^2 = 416 = 2 \times 2 \times 104\).
+:::
 
 :::steps
 1. Draw a sketch, mark the positive direction and write down the values you know with their signs.
@@ -223,13 +257,27 @@ The velocity is positive for \(0 < t < 2\) and negative for \(2 < t < 4\), so th
 - **UK A Level (AQA, Edexcel 9MA0, OCR)**: kinematics is part of the Mechanics content, with \(g = 9.8\) and vector notation (\(\mathbf{i}\), \(\mathbf{j}\)) in two-dimensional motion. Cambridge 9709 has no vector notation in P4, and this chapter is one-dimensional.
 :::
 
+:::eg Spot the error: displacement is not distance
+A student answered this question [5 marks]: "A particle moves on a straight line with velocity \(v = 3t^2 - 18t + 24\ \mathrm{m\,s^{-1}}\) at time \(t\) seconds. Find the distance travelled in the first 5 seconds."
+
+Line 1: \(s = \displaystyle\int (3t^2 - 18t + 24)\,dt = t^3 - 9t^2 + 24t\).
+Line 2: \(s(5) = 125 - 225 + 120 = 20\).
+Line 3: The distance travelled is 20 m.
+
+**Line 1 earns [M1 A1]**: the integration is correct, and \(s = 0\) when \(t = 0\). **Line 2 and Line 3 score [M0 M0 A0]**: \(s(5)\) is the displacement from the start, not the distance. The velocity \(3(t - 2)(t - 4)\) changes sign at \(t = 2\) and \(t = 4\), so the particle turns round twice, and the student never found out where. The student scores 2 out of 5.
+
+Correct working: \(s = t^3 - 9t^2 + 24t\). [M1 A1] \(v = 3(t - 2)(t - 4) = 0\) at \(t = 2\) and \(t = 4\). [M1] The positions are \(s(2) = 8 - 36 + 48 = 20\), \(s(4) = 64 - 144 + 96 = 16\) and \(s(5) = 20\). The particle goes out 20 m, comes back 4 m, then goes out 4 m again, so the distance is \(20 + 4 + 4 = 28\) m. [M1 A1]
+
+**Check:** the displacement (20 m) can never be more than the distance. Here the distance is bigger because of the 4 m the particle travelled back and then forward again.
+:::
+
 :::try Start easy, finish at exam standard
 Q: A runner completes one lap of a 400 m track in 80 s, finishing where she started. Find her average speed and average velocity.
 A: Average speed \(= \dfrac{400}{80} = 5\ \mathrm{m\,s^{-1}}\). Her displacement is 0, so her average velocity is 0.
 Q: A car accelerates uniformly from rest to \(12\ \mathrm{m\,s^{-1}}\) in 6 s, travels at that speed for 10 s, then decelerates uniformly to rest in 4 s. Find the total distance and the average speed.
-A: Distance \(= \tfrac12 \times 6 \times 12 + 10 \times 12 + \tfrac12 \times 4 \times 12 = 36 + 120 + 24 = 180\) m. Time \(= 20\) s, so the average speed is \(9\ \mathrm{m\,s^{-1}}\).
+A: Distance \(= \tfrac12 \times 6 \times 12 + 10 \times 12\) \(+ \tfrac12 \times 4 \times 12\) \(= 36 + 120 + 24 = 180\) m. Time \(= 20\) s, so the average speed is \(9\ \mathrm{m\,s^{-1}}\).
 Q: A particle has \(u = 5\ \mathrm{m\,s^{-1}}\), constant acceleration \(2\ \mathrm{m\,s^{-2}}\) and moves for 8 s. Find its displacement and final velocity.
-A: \(s = 5 \times 8 + \tfrac12 \times 2 \times 64 = 40 + 64 = 104\) m. \(v = 5 + 2 \times 8 = 21\ \mathrm{m\,s^{-1}}\).
+A: \(s = 5 \times 8 + \tfrac12 \times 2 \times 64\) \(= 40 + 64 = 104\) m. \(v = 5 + 2 \times 8 = 21\ \mathrm{m\,s^{-1}}\).
 Q: A motorbike accelerates uniformly from rest to \(30\ \mathrm{m\,s^{-1}}\) over 225 m. Find the acceleration and the time taken.
 A: \(900 = 0 + 2a(225)\), so \(a = 2\ \mathrm{m\,s^{-2}}\). \(t = \dfrac{30}{2} = 15\) s.
 Q: A car travelling at \(20\ \mathrm{m\,s^{-1}}\) brakes uniformly and stops in 50 m. Find the deceleration and the time taken.
@@ -244,6 +292,39 @@ Q: (Exam style) Particle A passes a point \(O\) with constant speed \(5\ \mathrm
 A: A is at \(5t\) from \(O\). B is at \(60 - \tfrac12(1.5)t^2 = 60 - 0.75t^2\). [M1 A1] They meet when \(5t = 60 - 0.75t^2\), so \(3t^2 + 20t - 240 = 0\). [M1] \(t = \dfrac{-20 + \sqrt{400 + 2880}}{6} = 6.21\) s (the negative root is rejected). [M1 A1]
 Q: (Exam style) A ball is thrown vertically upwards from a point 15 m above the ground with speed \(10\ \mathrm{m\,s^{-1}}\). Find the time it takes to reach the ground and its speed on impact. Take \(g = 10\). [5 marks]
 A: Up positive: \(-15 = 10t - 5t^2\), so \(t^2 - 2t - 3 = 0\). [M1 A1] \((t - 3)(t + 1) = 0\), so \(t = 3\) s. [A1] \(v = 10 - 30 = -20\), so the speed is \(20\ \mathrm{m\,s^{-1}}\). [M1 A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [4 marks] ★ A cyclist accelerates uniformly from \(4\ \mathrm{m\,s^{-1}}\) to \(10\ \mathrm{m\,s^{-1}}\) over a distance of 35 m. Find the acceleration and the time taken.
+A: \(v^2 = u^2 + 2as\) gives \(100 = 16 + 70a\), [M1] so \(a = 1.2\ \mathrm{m\,s^{-2}}\). [A1] \(v = u + at\) gives \(10 = 4 + 1.2t\), [M1] so \(t = 5\) s. [A1]
+Q: [4 marks] ★ A train's velocity increases uniformly from 0 to \(15\ \mathrm{m\,s^{-1}}\) in 8 s. It then moves at \(15\ \mathrm{m\,s^{-1}}\) until \(t = 20\) s and slows uniformly to rest at \(t = 26\) s. Find the total distance travelled and the average speed for the journey.
+A: Distance \(= \tfrac12 \times 8 \times 15 + 12 \times 15 + \tfrac12 \times 6 \times 15\) [M1] \(= 60 + 180 + 45 = 285\) m. [A1] Average speed \(= \dfrac{285}{26}\) [M1] \(= 11.0\ \mathrm{m\,s^{-1}}\). [A1]
+Q: [3 marks] ★ A stone is dropped from a bridge and hits the water after 2.4 s. Find the height of the bridge and the speed of the stone as it hits the water. Take \(g = 10\).
+A: \(s = \tfrac12 \times 10 \times 2.4^2\) [M1] \(= 28.8\) m. [A1] \(v = 10 \times 2.4 = 24\ \mathrm{m\,s^{-1}}\). [B1]
+Q: [5 marks] ★★ Car \(A\) passes a point \(O\) with constant speed \(10\ \mathrm{m\,s^{-1}}\). Three seconds later car \(B\) leaves \(O\) from rest in the same direction with constant acceleration \(2\ \mathrm{m\,s^{-2}}\). Find the time after \(A\) passes \(O\) at which \(B\) catches \(A\), and the distance from \(O\) at which this happens.
+A: \(A\) has travelled \(10t\) m. [B1] \(B\) has been moving for \(t - 3\) s, so it has travelled \(\tfrac12(2)(t - 3)^2 = (t - 3)^2\) m. [B1] They meet when \(10t = (t - 3)^2\), so \(t^2 - 16t + 9 = 0\). [M1] \(t = 8 + \sqrt{55} = 15.4\) s (the root \(t = 0.584\) is before \(B\) starts). [A1] Distance \(= 10 \times 15.42 = 154\) m. [A1]
+Q: [6 marks] ★★ A particle starts at \(O\) with velocity \(9\ \mathrm{m\,s^{-1}}\) along a straight line. At time \(t\) seconds its acceleration is \((6 - 2t)\ \mathrm{m\,s^{-2}}\). (a) Show that \(v = 9 + 6t - t^2\). (b) Find the greatest velocity. (c) Find the time at which the particle is next at instantaneous rest.
+A: (a) \(v = \displaystyle\int (6 - 2t)\,dt = 6t - t^2 + c\), [M1] and \(v = 9\) at \(t = 0\) gives \(c = 9\). [A1] (b) The velocity is greatest when \(a = 0\), so \(t = 3\). [M1] \(v = 9 + 18 - 9 = 18\ \mathrm{m\,s^{-1}}\). [A1] (c) \(v = 0\): \(t^2 - 6t - 9 = 0\), [M1] \(t = 3 + \sqrt{18} = 7.24\) s (the negative root is rejected). [A1]
+Q: [6 marks] ★★ A ball is thrown vertically upwards at \(20\ \mathrm{m\,s^{-1}}\) from a platform 25 m above level ground. Find the time taken to reach the ground and the speed with which it hits the ground. Take \(g = 10\).
+A: Up is positive, so \(s = -25\), \(u = 20\) and \(a = -10\). \(-25 = 20t - 5t^2\), [M1] so \(t^2 - 4t - 5 = 0\). [A1] \((t - 5)(t + 1) = 0\), [M1] so \(t = 5\) s. [A1] \(v = 20 - 10 \times 5\) \(= -30\), [M1] so the speed is \(30\ \mathrm{m\,s^{-1}}\). [A1]
+Q: [6 marks] ★★ A train accelerates uniformly from rest for 20 s, travels at constant speed \(V\ \mathrm{m\,s^{-1}}\) for 100 s, then decelerates uniformly to rest in 30 s. The total distance travelled is 3000 m. Sketch the velocity–time graph, find \(V\), and find the deceleration.
+A: The graph is a trapezium: a line up to \((20, V)\), a horizontal line to \((120, V)\), a line down to \((150, 0)\). [B1] Area: \(\tfrac12 \times 20V + 100V\) \(+ \tfrac12 \times 30V\) \(= 125V = 3000\), [M1 A1] so \(V = 24\). [A1] Deceleration \(= \dfrac{24}{30}\) [M1] \(= 0.8\ \mathrm{m\,s^{-2}}\). [A1]
+Q: [9 marks] (#math.p1.quadratics) ★★★ A car passes a point \(O\) with constant speed \(20\ \mathrm{m\,s^{-1}}\). At the same instant a motorbike starts from rest at \(O\), moving in the same direction with constant acceleration \(2\ \mathrm{m\,s^{-2}}\). (a) Find the time at which the motorbike overtakes the car. (b) Show that, until it does, the car is ahead by \(20t - t^2\) metres at time \(t\) seconds, and use completing the square to find the greatest distance by which the car is ahead and the time at which this happens. (c) Find the speed of the motorbike when it overtakes the car.
+H: Write the distance from \(O\) of the car and of the motorbike as functions of \(t\), then equate them.
+H: The gap is car minus motorbike. Write \(20t - t^2\) as \(a - (t - b)^2\), and read off its greatest value.
+H: For (c), you know the motorbike's acceleration and the time it has been moving.
+A: (a) Car: \(20t\). [B1] Motorbike: \(\tfrac12(2)t^2 = t^2\). [B1] Equal when \(t^2 = 20t\), [M1] so \(t = 20\) s (the root \(t = 0\) is the start). [A1] (b) The gap is \(20t - t^2\). [M1] Completing the square: \(20t - t^2 = 100 - (t - 10)^2\). [M1] This is greatest when \(t = 10\) s, [A1] and the greatest gap is 100 m. [A1] (c) \(v = 0 + 2 \times 20 = 40\ \mathrm{m\,s^{-1}}\). [B1] Check: at \(t = 10\) the motorbike's speed is \(20\ \mathrm{m\,s^{-1}}\), the same as the car's, which is why the gap stops growing at that moment.
+:::
+
+:::try Stretch for A*
+Q: [9 marks] ★★★ A train travels between two stations 2400 m apart. It accelerates uniformly from rest at \(0.5\ \mathrm{m\,s^{-2}}\), then decelerates uniformly at \(0.8\ \mathrm{m\,s^{-2}}\) to rest at the second station. (a) The train never cruises. Find its greatest speed and the time for the journey. (b) The speed limit is \(30\ \mathrm{m\,s^{-1}}\), so the train accelerates to \(30\ \mathrm{m\,s^{-1}}\), cruises at that speed, then decelerates. Find the time for the journey.
+H: Sketch the \(v\)–\(t\) graph: a triangle in (a), a trapezium in (b). The distance covered while speeding up from 0 to \(V\) at acceleration \(a\) is \(\dfrac{V^2}{2a}\).
+H: In (a) the two distances add to 2400 m. In (b), find the two distances at \(30\ \mathrm{m\,s^{-1}}\) first, then what is left for cruising.
+A: (a) Let the greatest speed be \(V\). Accelerating: distance \(\dfrac{V^2}{2(0.5)} = V^2\). Decelerating: distance \(\dfrac{V^2}{2(0.8)} = \dfrac{V^2}{1.6}\). [M1] Then \(V^2 + \dfrac{V^2}{1.6} = 2400\), so \(1.625V^2 = 2400\). [A1] \(V = 38.4\ \mathrm{m\,s^{-1}}\). [A1] Time \(= \dfrac{V}{0.5} + \dfrac{V}{0.8}\) [M1] \(= 76.9 + 48.0 = 125\) s. [A1] (b) The limit of 30 is below 38.4, so it applies. Accelerating: \(\dfrac{900}{1} = 900\) m. [B1] Decelerating: \(\dfrac{900}{1.6} = 562.5\) m. [B1] Cruising: \(2400 - 900 - 562.5 = 937.5\) m, which takes \(\dfrac{937.5}{30} = 31.25\) s. [M1] The accelerating and decelerating times are \(\dfrac{30}{0.5} = 60\) s and \(\dfrac{30}{0.8} = 37.5\) s. The total is \(60 + 31.25 + 37.5 = 129\) s. [A1] Check: the limit makes the journey longer (129 s against 125 s), as it should.
+Q: [6 marks] ★★★ A stone is dropped from the top of a tall tower. One second later a second stone is thrown vertically downwards from the same point at \(15\ \mathrm{m\,s^{-1}}\). (a) Show that the second stone catches the first stone when \(t = 2\), where \(t\) is the time in seconds since the first stone was dropped. (b) Find the distance fallen at that moment and the speed of each stone. Take \(g = 10\).
+H: Measure downwards from the top, and use the same clock for both stones. The second stone has been moving for \(t - 1\) seconds.
+H: Look at the \(t^2\) terms when you put the two distances equal.
+A: (a) First stone: \(s_1 = 5t^2\). [B1] Second stone: \(s_2 = 15(t - 1) + 5(t - 1)^2\). [B1] Equal: \(5t^2 = 15t - 15 + 5t^2 - 10t + 5\), [M1] so \(0 = 5t - 10\) and \(t = 2\). [A1] (b) \(s = 5 \times 4 = 20\) m. [B1] Speeds: first \(= 10 \times 2 = 20\ \mathrm{m\,s^{-1}}\), second \(= 15 + 10 \times 1 = 25\ \mathrm{m\,s^{-1}}\). [B1] The \(t^2\) terms cancel because both stones have the same acceleration, so the equation is linear. The second stone is faster, so after \(t = 2\) it stays ahead.
 :::
 
 :::quiz Check your understanding
@@ -277,6 +358,23 @@ A: Up positive: \(-15 = 10t - 5t^2\), so \(t^2 - 2t - 3 = 0\). [M1 A1] \((t - 3)
 - 0
 - 4
 > \(a = \dfrac{dv}{dt} = 6t = 12\) when \(t = 2\). Substituting into \(v\) gives 8, the velocity.
+? A particle moves along a line with \(v = t^2 - 4t\) for \(0 \le t \le 4\). Which is true of the distance travelled and the displacement from \(t = 0\) to \(t = 4\)?
+- both are \(\displaystyle\int_0^4 (t^2 - 4t)\,dt\)
++ the displacement is negative, and the distance is its size because \(v\) never changes sign
+- the displacement is positive because \(t^2\) is positive
+- the distance is zero because \(v = 0\) at \(t = 0\) and \(t = 4\)
+> The integral is \(\tfrac{64}{3} - 32 = -\tfrac{32}{3}\). On \(0 < t < 4\), \(v = t(t - 4)\) is negative throughout, so the particle moves backwards and the distance is \(\tfrac{32}{3}\) m. The distance is the integral of the speed, here \(-v\).
+:::
+
+:::checklist What you can now do
+- [ ] I can tell distance from displacement and speed from velocity, and use signs for direction in a straight line.
+- [ ] I can sketch and read displacement–time and velocity–time graphs, using gradient and area.
+- [ ] I can find distance, displacement and average speed from a velocity–time graph made of straight lines.
+- [ ] I can choose the right constant acceleration equation, and use several of them in one problem.
+- [ ] I can solve vertical motion under gravity, keeping the signs of \(u\), \(a\) and \(s\) consistent.
+- [ ] I can solve a two-particle problem by writing both displacements from one origin and one clock.
+- [ ] I can use differentiation and integration with respect to time, finding constants from the given conditions.
+- [ ] I can find the distance travelled when the velocity changes sign.
 :::
 
 :::recap

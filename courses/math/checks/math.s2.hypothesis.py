@@ -61,4 +61,42 @@ eq("t7 z", sf(9.5 / sqrt(20), 4), 2.124); eq("t7", sf(1 - Phi(9.5 / sqrt(20)), 3
 eq("t8 se", 2.4 / 3, 0.8); eq("t8 z", -1.1 / 0.8, -1.375); eq("t8", sf(Phi(-1.375), 3), 0.0846)
 eq("t10 P4", sf(bcdf(10, .7, 4), 3), 0.0473); eq("t10 P3", sf(bcdf(10, .7, 3), 3), 0.0106); eq("t10 II", sf(1 - bcdf(10, .5, 4), 3), 0.623); eq("t10 cdf5", sf(bcdf(10, .5, 4), 3), 0.377)
 eq("t11 se", 15 / 10, 1.5); eq("t11 z", sf(3.5 / 1.5, 4), 2.333); eq("t11", sf(1 - Phi(3.5 / 1.5), 3), 0.00982)
+
+# ---- P14 additions ----
+from math import comb as _cb, exp as _ex, factorial as _fa, sqrt as _sq
+from statistics import NormalDist as _ND
+_N = _ND()
+def _b(n, p, r): return _cb(n, r) * p ** r * (1 - p) ** (n - r)
+def _bc(n, p, r): return sum(_b(n, p, k) for k in range(r + 1))
+def _po(l, r): return _ex(-l) * l ** r / _fa(r)
+def _pc(l, r): return sum(_po(l, k) for k in range(r + 1))
+def sf4(x): return float(f"{x:.4g}")
+# warm-up
+eq("w1", sf(_bc(15, .4, 4)), 0.217); eq("w2 cdf", sf4(_pc(2.5, 3)), 0.7576); eq("w2", sf(1 - _pc(2.5, 3)), 0.242)
+eq("w3", sf(1 - _N.cdf(1)), 0.159)
+# spot the error
+eq("sp tail", sf(1 - _bc(30, .5, 19)), 0.0494); eq("sp both", sf(2 * (1 - _bc(30, .5, 19))), 0.0987)
+# exam practice
+eq("e1", sf4(_bc(12, .25, 1)), 0.1584)
+eq("e2 cdf", sf4(_pc(3.5, 7)), 0.9733); eq("e2", sf(1 - _pc(3.5, 7)), 0.0267)
+eq("e3 l4", round(_bc(25, .4, 4), 4), 0.0095); eq("e3 l5", round(_bc(25, .4, 5), 4), 0.0294)
+eq("e3 u16", round(1 - _bc(25, .4, 15), 4), 0.0132); eq("e3 u15", round(1 - _bc(25, .4, 14), 4), 0.0344)
+assert _bc(25, .4, 4) <= .025 < _bc(25, .4, 5) and 1 - _bc(25, .4, 15) <= .025 < 1 - _bc(25, .4, 14)
+eq("e3 act", round(_bc(25, .4, 4) + 1 - _bc(25, .4, 15), 4), 0.0226)
+eq("e4 var", 120 * .2 * .8, 19.2); eq("e4 z", round((32.5 - 24) / _sq(19.2), 3), 1.940); eq("e4", sf(1 - _N.cdf((32.5 - 24) / _sq(19.2))), 0.0262)
+se5 = 3.2 / _sq(40); z5 = 1.1 / se5
+eq("e5 se", round(se5, 3), 0.506); eq("e5 z", round(z5, 3), 2.174); eq("e5 p", sf(1 - _N.cdf(z5)), 0.0149)
+eq("e6 a", sf(1 - _pc(2, 5)), 0.0166); eq("e6 b", sf(_pc(4, 5)), 0.785)
+se = 4 / 5; c = 250 - 1.645 * se; c0 = 250 - _N.inv_cdf(.95) * se
+eq("e7 c", round(c0, 2), 248.68); eq("e7 c3", sf(c0, 4), 248.7); eq("e7 z", round((c0 - 248) / se, 3), 0.855); eq("e7 b", sf(1 - _N.cdf((c0 - 248) / se)), 0.196)
+eq("e7 zinv", round(_N.inv_cdf(.9), 3), 1.282); eq("e7 root", round((1.282 + 1.645) / .5, 3), 5.854); eq("e7 n", round(((1.282 + 1.645) / .5) ** 2, 1), 34.3)
+def _t2(n):
+    s = 4 / _sq(n); cc = 250 - _N.inv_cdf(.95) * s; return 1 - _N.cdf((cc - 248) / s)
+eq("e7 n35", round(_t2(35), 4), 0.0946); eq("e7 n34", round(_t2(34), 4), 0.1019)
+assert _t2(35) < .1 < _t2(34)
+# stretch
+eq("s1 a4", .5 ** 4, 0.0625); eq("s1 a5", .5 ** 5, 0.03125)
+eq("s1 b9", round(1 - _bc(10, .5, 8), 4), 0.0107); eq("s1 b8", round(1 - _bc(10, .5, 7), 4), 0.0547)
+eq("s1 c", sf(_bc(10, .8, 8)), 0.624); eq("s1 c9", sf(_b(10, .8, 9) + _b(10, .8, 10)), 0.376); eq("s1 c9b", round(_b(10, .8, 9) + _b(10, .8, 10), 4), 0.3758)
+eq("s2", sf(1 - .95 ** 20), 0.642); eq("s2 pct", round(.95 ** 20, 4), 0.3585)
 print("ok")

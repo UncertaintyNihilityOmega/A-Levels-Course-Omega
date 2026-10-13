@@ -82,4 +82,60 @@ assert -pi / 6 > -pi / 4 and 7 * pi / 4 < 11 * pi / 6
 eq("sin15", sin(rad(15)), (sqrt(6) - sqrt(2)) / 4)
 for t in (30, 100): eq("cos2", cos(rad(2 * t)), 1 - 2 * sin(rad(t))**2)
 eq("Q4", 4 / 3, 4 / 3); eq("Q5", 1 / (4 - 3), 1); eq("Q5b", 1 / (4 + 3), 1 / 7)
+
+# ---- v2 additions: warm-up, proofs, spot the error, exam practice, stretch ----
+import random
+from math import hypot, atan2
+for s in (0.5, -1):
+    eq("warm-up quadratic", 2 * s * s + s - 1, 0)
+eq("warm-up cos 120", cos(rad(120)), -0.5); eq("warm-up cos 240", cos(rad(240)), -0.5)
+eq("warm-up cos", sqrt(1 - 0.8 ** 2), 0.6); eq("warm-up tan", 0.8 / 0.6, 4 / 3)
+for _ in range(12):                                                  # proof: compound angles via the unit-circle construction
+    A, B = random.uniform(0.1, 1.4), random.uniform(0.1, 1.4)
+    Q = (cos(B) * cos(A), cos(B) * sin(A))
+    P = (Q[0] + sin(B) * -sin(A), Q[1] + sin(B) * cos(A))
+    eq("proof P_x", P[0], cos(A + B)); eq("proof P_y", P[1], sin(A + B))
+    eq("proof OQ", hypot(*Q), cos(B))
+    eq("double sin", sin(2 * A), 2 * sin(A) * cos(A))
+    eq("double cos 1", cos(2 * A), 2 * cos(A) ** 2 - 1); eq("double cos 2", cos(2 * A), 1 - 2 * sin(A) ** 2)
+    eq("double tan", tan(2 * A), 2 * tan(A) / (1 - tan(A) ** 2))
+    a, b = random.uniform(0.5, 9), random.uniform(0.5, 9); R = hypot(a, b); al = atan2(b, a)
+    th = random.uniform(0, 6)
+    eq("proof R form", a * sin(th) + b * cos(th), R * sin(th + al))
+    eq("tan alpha", tan(al), b / a)
+sols = [0, 60, 180, 300, 360]                                         # spot the error
+for x in sols: eq("spot", sin(rad(2 * x)), sin(rad(x)), 1e-9)
+assert len(sols) == 5
+cA = sqrt(1 - (5 / 13) ** 2); eq("Q1 cos", cA, 12 / 13); eq("Q1", 2 * (5 / 13) * cA, 120 / 169)  # exam practice
+eq("Q2 R", hypot(5, 12), 13); eq("Q2 alpha", r1(deg(atan(12 / 5))), 67.4)
+for t in (deg(acos(1 / 6)), 360 - deg(acos(1 / 6)), 180):             # Q3
+    eq("Q3", 3 * cos(rad(2 * t)) + 5 * cos(rad(t)) + 2, 0, 1e-9)
+eq("Q3a", r1(deg(acos(1 / 6))), 80.4); eq("Q3b", r1(360 - deg(acos(1 / 6))), 279.6)
+for x in (0.3, 1.1, 2.0): eq("Q4", sin(2 * x) / (1 + cos(2 * x)), tan(x))
+for t in (deg(atan(4 - sqrt(3))), deg(atan(4 - sqrt(3))) + 180):      # Q5
+    eq("Q5", sin(rad(t + 60)), 2 * cos(rad(t)), 1e-9)
+eq("Q5a", r1(deg(atan(4 - sqrt(3)))), 66.2); eq("Q5b", r1(deg(atan(4 - sqrt(3))) + 180), 246.2)
+al = deg(atan(15 / 8)); eq("Q6 R", hypot(8, 15), 17); eq("Q6 alpha", r1(al), 61.9)  # Q6
+for t in (82.5948295576597, 221.26019657063438):
+    eq("Q6", 8 * sin(rad(t)) - 15 * cos(rad(t)), 6, 1e-9)
+t1 = al + deg(asin(6 / 17)); t2 = al + 180 - deg(asin(6 / 17))
+eq("Q6 s1", r1(deg(asin(6 / 17))), 20.7); eq("Q6 s2", r1(180 - deg(asin(6 / 17))), 159.3)
+eq("Q6 t1", r1(t1), 82.6); eq("Q6 t2", r1(t2), 221.3)
+for x in (0.4, 1.0): eq("Q7a", (1 - cos(2 * x)) / sin(2 * x), tan(x))
+eq("Q7b", (1 - cos(rad(30))) / sin(rad(30)), 2 - sqrt(3)); eq("Q7b tan15", tan(rad(15)), 2 - sqrt(3)); eq("Q7c", r1(deg(atan(2))), 63.4)
+R = sqrt(13); al = deg(atan(2 / 3)); eq("Q8 R", sf(R), 3.61); eq("Q8 alpha", r1(al), 33.7)   # tide
+eq("Q8 max", sf(6 + R, 3), 9.61); eq("Q8 t", sf((90 - al) / 30, 3), 1.88)
+h = lambda t: 6 + 3 * sin(rad(30 * t)) + 2 * cos(rad(30 * t))
+eq("Q8 max check", h((90 - al) / 30), 6 + R)
+phi = deg(asin(2.5 / R)); eq("Q8 sin", sf(2.5 / R, 3), 0.693); eq("Q8 phi", r1(phi), 43.9); eq("Q8 phi2", r1(180 - phi), 136.1)
+ts = [(phi - al) / 30, (180 - phi - al) / 30]
+eq("Q8 t1", round(ts[0], 2), 0.34); eq("Q8 t2", round(ts[1], 2), 3.41)
+for t in ts: eq("Q8 h=8.5", h(t), 8.5, 1e-9)
+eq("Q8 next", round((360 + phi - al) / 30, 2), 12.34)
+for x in (0.3, 1.2, 2.5): eq("S1a", sin(3 * x), 3 * sin(x) - 4 * sin(x) ** 3)   # stretch
+for t in (0, 45, 135, 180): eq("S1b", sin(rad(3 * t)), sin(rad(t)), 1e-9)
+assert len([t for t in range(0, 181) if abs(sin(rad(3 * t)) - sin(rad(t))) < 1e-9]) == 4
+eq("S2 R", hypot(3, 4), 5); eq("S2 alpha", r1(deg(atan(4 / 3))), 53.1)
+vals = [1 / (7 + 3 * sin(rad(t)) + 4 * cos(rad(t))) for t in range(0, 3600)]
+eq("S2 max", max(vals), 1 / 2, 1e-4); eq("S2 min", min(vals), 1 / 12, 1e-4)
 print("ok")

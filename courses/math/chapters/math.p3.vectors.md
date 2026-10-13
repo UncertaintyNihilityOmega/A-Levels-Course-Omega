@@ -11,6 +11,15 @@ A single number cannot say where a drone is, how a force pulls, or which way a s
 
 **Before you start**, you need Pythagoras' theorem and the cosine rule from [Geometry from scratch](#math.f.geometry), coordinate geometry from [Coordinate geometry: lines and circles](#math.p1.coord) and simultaneous equations from [Algebra from scratch](#math.f.algebra).
 
+:::try Warm-up
+Q: Find the distance between \((1, 2)\) and \((4, 6)\). (from [Coordinate geometry: lines and circles](#math.p1.coord))
+A: \(\sqrt{3^2 + 4^2} = 5\).
+Q: Solve \(s = 2t\) and \(2 - s = -1 + t\). (from [Algebra from scratch](#math.f.algebra))
+A: Substitute: \(2 - 2t = -1 + t\), so \(t = 1\) and \(s = 2\).
+Q: A triangle has sides \(5\), \(7\) and \(8\). Find the angle opposite the side of length \(7\). (from [Geometry from scratch](#math.f.geometry))
+A: Cosine rule: \(\cos\theta = \dfrac{5^2 + 8^2 - 7^2}{2 \times 5 \times 8} = \dfrac{40}{80} = \tfrac12\), so \(\theta = 60^\circ\).
+:::
+
 ## Vectors and components
 
 :::def Vector and scalar
@@ -97,6 +106,14 @@ From \(x\): \(s = 2t\). Put in \(y\): \(2 - 2t = -1 + t\), so \(t = 1\) and \(s 
 The directions \(\begin{pmatrix}1\\-1\\2\end{pmatrix}\) and \(\begin{pmatrix}2\\1\\-1\end{pmatrix}\) are not multiples of each other. Equate: \(x\): \(s = 2u\); \(y\): \(2 - s = -1 + u\) gives \(u = 1\), \(s = 2\). The \(z\)-equation \(3 + 2s = -u\) would need \(7 = -1\), which is false. So there is no common point and the lines are skew.
 :::
 
+Here is a tool to explore the three cases. It starts with the two lines of the intersecting example above; change any number, or press a button to load the skew pair.
+
+:::html
+<div class="widget" data-w="vectors3d" data-lines="1,2,3|1,-1,2; 1,-1,8|2,1,-1" data-skew="1,-1,0|2,1,-1"></div>
+:::
+
+Drag the picture to turn it. Does the verdict match the working in the examples? Try making the direction vectors multiples of each other to get parallel lines.
+
 ## The scalar product
 
 :::def Scalar product
@@ -106,6 +123,20 @@ where \(\theta\) is the angle between the vectors when both point away from the 
 :::
 
 Two results follow at once. The angle is found from \(\cos\theta = \dfrac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}||\mathbf{b}|}\). And two non-zero vectors are **perpendicular** exactly when \(\mathbf{a}\cdot\mathbf{b} = 0\), because \(\cos 90^\circ = 0\).
+
+:::proof Why the two forms of the scalar product agree
+Take two vectors \(\mathbf{a}\) and \(\mathbf{b}\) from the origin \(O\), with angle \(\theta\) between them. They form a triangle \(OAB\) with \(\overrightarrow{AB} = \mathbf{b} - \mathbf{a}\).
+The cosine rule in this triangle gives \(|\mathbf{b} - \mathbf{a}|^2 = |\mathbf{a}|^2 + |\mathbf{b}|^2 - 2|\mathbf{a}||\mathbf{b}|\cos\theta\).
+Now work out the same length from components:
+\[|\mathbf{b} - \mathbf{a}|^2 = (b_1 - a_1)^2 + (b_2 - a_2)^2 + (b_3 - a_3)^2\]
+Expanding, the squares make \(|\mathbf{a}|^2 + |\mathbf{b}|^2\), and what is left is \(-2(a_1b_1 + a_2b_2 + a_3b_3)\).
+The two expressions for \(|\mathbf{b} - \mathbf{a}|^2\) are equal. Cancel \(|\mathbf{a}|^2 + |\mathbf{b}|^2\) and divide by \(-2\): \(a_1b_1 + a_2b_2 + a_3b_3 = |\mathbf{a}||\mathbf{b}|\cos\theta\).
+Step through the diagram below to see each line used.
+
+:::html
+<div class="widget" data-w="proof" data-proof="dotcosine"></div>
+:::
+:::
 
 :::eg Find the angle between \(\mathbf{a} = 2\mathbf{i} - \mathbf{j} + 2\mathbf{k}\) and \(\mathbf{b} = \mathbf{i} + 2\mathbf{j} - 2\mathbf{k}\). Then find \(\angle ABC\) for \(A(1, 0, 2)\), \(B(3, 1, 0)\), \(C(2, 3, 1)\).
 \(\mathbf{a}\cdot\mathbf{b} = 2 - 2 - 4 = -4\) and \(|\mathbf{a}| = |\mathbf{b}| = 3\), so \(\cos\theta = -\dfrac49\) and \(\theta = 116.4^\circ\) (1 d.p.). The angle is obtuse because the product is negative.
@@ -162,6 +193,49 @@ With these axes, \(A(6,0,0)\), \(B(6,4,0)\), \(C(0,4,0)\), \(D(0,0,3)\), \(E(6,0
 (c) \(\overrightarrow{AG} = \begin{pmatrix}0\\4\\3\end{pmatrix} - \begin{pmatrix}6\\0\\0\end{pmatrix} = \begin{pmatrix}-6\\4\\3\end{pmatrix}\). Then \(\overrightarrow{OF}\cdot\overrightarrow{AG} = -36 + 16 + 9 = -11\), and \(|\overrightarrow{AG}| = \sqrt{61}\) too. [M1] So \(\cos\theta = \dfrac{|-11|}{61}\) and the acute angle is \(79.6^\circ\). [A1]
 :::
 
+## Long exam questions
+
+A long vector question usually follows one picture through several parts: a line equation, an intersection, an angle, a perpendicular distance. Write each result down clearly, because the next part often uses it.
+
+:::eg (Exam style) The lines \(l_1\) and \(l_2\) have equations \(l_1: \mathbf{r} = \begin{pmatrix}2\\-1\\4\end{pmatrix} + s\begin{pmatrix}1\\2\\-2\end{pmatrix}\) and \(l_2: \mathbf{r} = \begin{pmatrix}-1\\3\\-2\end{pmatrix} + t\begin{pmatrix}2\\-1\\2\end{pmatrix}\). (a) Show that \(l_1\) and \(l_2\) intersect, and find the position vector of the point of intersection. (b) Find the acute angle between the lines. (c) The point \(P\) is \((2, 4, 0)\). Find the foot of the perpendicular from \(P\) to \(l_2\), and the perpendicular distance from \(P\) to \(l_2\).
+**(a)** The directions are not multiples of each other, so the lines are not parallel. Equate components:
+\[x: 2 + s = -1 + 2t \qquad y: -1 + 2s = 3 - t \qquad z: 4 - 2s = -2 + 2t \quad [M1]\]
+From \(x\): \(s = 2t - 3\). Put in \(y\): \(-1 + 4t - 6 = 3 - t\), so \(5t = 10\), \(t = 2\) and \(s = 1\). [M1 A1]
+Check in \(z\): left side \(4 - 2 = 2\), right side \(-2 + 4 = 2\) ✓. [B1] The lines intersect at \(\begin{pmatrix}3\\1\\2\end{pmatrix}\). [A1]
+
+**(b)** \(\mathbf{d}_1 \cdot \mathbf{d}_2 = 2 - 2 - 4 = -4\) and \(|\mathbf{d}_1| = |\mathbf{d}_2| = 3\). [M1] For the acute angle use \(|{-4}|\): \(\cos\theta = \dfrac{4}{9}\). [M1] So \(\theta = 63.6^\circ\). [A1]
+
+**(c)** A general point on \(l_2\) is \(X(-1 + 2t,\ 3 - t,\ -2 + 2t)\), so \(\overrightarrow{PX} = \begin{pmatrix}2t - 3\\-1 - t\\-2 + 2t\end{pmatrix}\). [M1]
+\[\overrightarrow{PX}\cdot\mathbf{d}_2 = 2(2t - 3) - (-1 - t) + 2(-2 + 2t) = 9t - 9 = 0\]
+So \(t = 1\). [M1 A1]
+The foot is \(F(1, 2, 0)\). \(\overrightarrow{PF} = \begin{pmatrix}-1\\-2\\0\end{pmatrix}\), so the distance is \(\sqrt5 = 2.24\). [A1]
+:::
+
+:::eg (Exam style) The pyramid \(VOABC\) has a rectangular base \(OABC\), where \(O\) is the origin, \(A = (8, 0, 0)\), \(B = (8, 6, 0)\) and \(C = (0, 6, 0)\). The apex is \(V = (4, 3, 5)\). (a) Find \(\overrightarrow{VO}\) and \(\overrightarrow{VB}\), and show that \(VO = VB\). (b) Show that angle \(OVB = 90^\circ\). (c) Find angle \(OVA\), to 1 decimal place. (d) \(M\) is the midpoint of \(AB\). Find a vector equation of the line \(VM\).
+**(a)** \(\overrightarrow{VO} = \begin{pmatrix}-4\\-3\\-5\end{pmatrix}\) and \(\overrightarrow{VB} = \begin{pmatrix}8 - 4\\6 - 3\\0 - 5\end{pmatrix} = \begin{pmatrix}4\\3\\-5\end{pmatrix}\). [B1 B1] Both have magnitude \(\sqrt{16 + 9 + 25} = \sqrt{50}\), so \(VO = VB\). [B1]
+
+**(b)** \(\overrightarrow{VO}\cdot\overrightarrow{VB} = -16 - 9 + 25 = 0\). [M1 A1] The scalar product is zero, so the vectors are perpendicular and angle \(OVB = 90^\circ\). [A1]
+
+**(c)** \(\overrightarrow{VA} = \begin{pmatrix}4\\-3\\-5\end{pmatrix}\). \(\overrightarrow{VO}\cdot\overrightarrow{VA} = -16 + 9 + 25 = 18\). [M1] Both magnitudes are \(\sqrt{50}\), so \(\cos\angle OVA = \dfrac{18}{50} = 0.36\). [A1] So angle \(OVA = 68.9^\circ\). [A1]
+
+**(d)** \(M = (8, 3, 0)\). [B1] \(\overrightarrow{VM} = \begin{pmatrix}4\\0\\-5\end{pmatrix}\), so \(\mathbf{r} = \begin{pmatrix}4\\3\\5\end{pmatrix} + t\begin{pmatrix}4\\0\\-5\end{pmatrix}\). [B1]
+Check: at \(t = 1\) the line is at \((8, 3, 0)\), which is \(M\). ✓
+:::
+
+:::eg Spot the error: the angle at the wrong vertex
+A student answered "The points are \(A(2, 1, 0)\), \(B(1, 3, 2)\) and \(C(4, 3, 3)\). Find angle \(ABC\) to 1 decimal place" [4 marks].
+
+Line 1: \(\overrightarrow{AB} = \begin{pmatrix}-1\\2\\2\end{pmatrix}\) and \(\overrightarrow{BC} = \begin{pmatrix}3\\0\\1\end{pmatrix}\).
+Line 2: \(\overrightarrow{AB}\cdot\overrightarrow{BC} = -3 + 0 + 2 = -1\), with \(|\overrightarrow{AB}| = 3\) and \(|\overrightarrow{BC}| = \sqrt{10}\).
+Line 3: \(\cos\theta = \dfrac{-1}{3\sqrt{10}}\), so \(\theta = 96.1^\circ\).
+
+**Line 1 scores [M0].** The angle at \(B\) is the angle between the two vectors that **leave** \(B\): \(\overrightarrow{BA}\) and \(\overrightarrow{BC}\). The student used \(\overrightarrow{AB}\), which arrives at \(B\). Line 2 uses the scalar product correctly on the vectors chosen [M1], but with one vector reversed the cosine has the wrong sign, so Lines 2 and 3 cannot earn the accuracy marks [A0 A0]. The student scores 1 out of 4.
+
+Correct working: \(\overrightarrow{BA} = \begin{pmatrix}1\\-2\\-2\end{pmatrix}\), so \(\overrightarrow{BA}\cdot\overrightarrow{BC} = 3 + 0 - 2 = 1\) and \(\cos\angle ABC = \dfrac{1}{3\sqrt{10}} = 0.1054\). The angle is \(83.9^\circ\).
+
+**Check:** \(96.1^\circ + 83.9^\circ = 180^\circ\). Reversing one vector replaces the angle by its supplement, which is the signature of this slip.
+:::
+
 :::exam What earns marks
 - **Show the vector subtraction** (\(\overrightarrow{AB} = \mathbf{b} - \mathbf{a}\)) with the numbers written out; the method mark is for the correct subtraction.
 - For **intersection**, show all three component equations, solve two of them, and **check the third** (a mark). A "skew" conclusion needs the contradiction stated.
@@ -192,6 +266,41 @@ Q: The line \(\mathbf{r} = \begin{pmatrix}0\\1\\2\end{pmatrix} + t\begin{pmatrix
 A: \(X = (t, 1 + t, 2 + t)\), so \(\overrightarrow{PX} = \begin{pmatrix}t - 3\\t\\t - 3\end{pmatrix}\). The dot product with the direction: \(3t - 6 = 0\), so \(t = 2\). The foot is \((2, 3, 4)\) and the distance is \(\left|\begin{pmatrix}-1\\2\\-1\end{pmatrix}\right| = \sqrt6 = 2.45\).
 Q: (Exam style) In the cuboid \(OABCDEFG\) of the figure, find the acute angle between \(OF\) and \(BD\).
 A: \(\overrightarrow{OF} = \begin{pmatrix}6\\4\\3\end{pmatrix}\) and \(\overrightarrow{BD} = \begin{pmatrix}-6\\-4\\3\end{pmatrix}\). The dot product is \(-36 - 16 + 9 = -43\), and each magnitude is \(\sqrt{61}\). So \(\cos\theta = \dfrac{43}{61}\) and the acute angle is \(45.2^\circ\).
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ The points \(A\) and \(B\) have coordinates \((1, 2, -1)\) and \((4, -2, 11)\). Find \(\overrightarrow{AB}\) and the distance \(AB\).
+A: \(\overrightarrow{AB} = \begin{pmatrix}4 - 1\\-2 - 2\\11 - (-1)\end{pmatrix}\). [M1] This is \(\begin{pmatrix}3\\-4\\12\end{pmatrix}\). [A1] \(AB = \sqrt{9 + 16 + 144} = 13\). [A1]
+Q: [3 marks] ★ Find the value of \(\lambda\) for which \(\lambda\mathbf{i} + 2\mathbf{j} + 4\mathbf{k}\) is perpendicular to \(2\mathbf{i} - \mathbf{j} + 3\mathbf{k}\).
+A: The scalar product is zero: \(2\lambda - 2 + 12 = 0\). [M1 A1] So \(\lambda = -5\). [A1]
+Q: [5 marks] ★★ Show that the lines \(\mathbf{r} = \begin{pmatrix}1\\0\\2\end{pmatrix} + s\begin{pmatrix}2\\1\\-1\end{pmatrix}\) and \(\mathbf{r} = \begin{pmatrix}2\\2\\0\end{pmatrix} + t\begin{pmatrix}1\\-1\\2\end{pmatrix}\) are skew.
+A: The directions are not multiples of each other, so the lines are not parallel. [B1] Equate components: \(x\): \(1 + 2s = 2 + t\); \(y\): \(s = 2 - t\); \(z\): \(2 - s = 2t\). [M1] From \(x\) and \(y\): \(1 + 2(2 - t) = 2 + t\), so \(t = 1\) and \(s = 1\). [A1] In \(z\): left side \(2 - 1 = 1\), right side \(2(1) = 2\). [M1] These differ, so there is no common point, and the lines are skew. [A1]
+Q: [5 marks] ★★ The points \(A\), \(B\) and \(C\) are \((1, 2, 0)\), \((3, 0, 1)\) and \((2, 3, 3)\). Find angle \(ABC\), correct to 1 decimal place.
+A: \(\overrightarrow{BA} = \begin{pmatrix}-2\\2\\-1\end{pmatrix}\) and \(\overrightarrow{BC} = \begin{pmatrix}-1\\3\\2\end{pmatrix}\). [B1 B1] \(\overrightarrow{BA}\cdot\overrightarrow{BC} = 2 + 6 - 2 = 6\), \(|\overrightarrow{BA}| = 3\) and \(|\overrightarrow{BC}| = \sqrt{14}\). [M1] \(\cos\angle ABC = \dfrac{6}{3\sqrt{14}} = 0.5345\). [M1] So angle \(ABC = 57.7^\circ\). [A1]
+Q: [6 marks] ★★ The line \(l\) has equation \(\mathbf{r} = \begin{pmatrix}1\\-2\\3\end{pmatrix} + t\begin{pmatrix}2\\1\\2\end{pmatrix}\) and \(P\) is the point \((6, 0, 6)\). Find the foot of the perpendicular from \(P\) to \(l\), and the perpendicular distance.
+A: A point on \(l\) is \(X(1 + 2t,\ -2 + t,\ 3 + 2t)\), so \(\overrightarrow{PX} = \begin{pmatrix}2t - 5\\t - 2\\2t - 3\end{pmatrix}\). [M1 A1]
+\[\overrightarrow{PX}\cdot\begin{pmatrix}2\\1\\2\end{pmatrix} = 2(2t - 5) + (t - 2) + 2(2t - 3) = 9t - 18 = 0\]
+[M1] So \(t = 2\) and the foot is \((5, 0, 7)\). [A1] \(\overrightarrow{PF} = \begin{pmatrix}-1\\0\\1\end{pmatrix}\), so the distance is \(\sqrt2 = 1.41\). [M1 A1]
+Q: [7 marks] ★★ The cuboid \(OABCDEFG\) has \(O = (0, 0, 0)\), \(A = (2, 0, 0)\), \(C = (0, 3, 0)\) and \(D = (0, 0, 6)\), with \(B\), \(E\), \(F\) and \(G\) placed as in the earlier figure, so \(F = (2, 3, 6)\) and \(G = (0, 3, 6)\). (a) Find \(|\overrightarrow{OF}|\). (b) Find the angle between \(OF\) and the edge \(OA\). (c) Find the acute angle between the diagonals \(OF\) and \(AG\).
+A: (a) \(|\overrightarrow{OF}| = \sqrt{4 + 9 + 36} = 7\). [B1] (b) \(\overrightarrow{OF}\cdot\overrightarrow{OA} = 4\), \(|\overrightarrow{OA}| = 2\), so \(\cos\theta = \dfrac{4}{7 \times 2} = \dfrac27\). [M1] So \(\theta = 73.4^\circ\). [A1] (c) \(\overrightarrow{AG} = \begin{pmatrix}-2\\3\\6\end{pmatrix}\), so \(\overrightarrow{OF}\cdot\overrightarrow{AG} = -4 + 9 + 36 = 41\). [M1 A1] \(|\overrightarrow{AG}| = 7\), so \(\cos\theta = \dfrac{41}{49}\). [M1] The acute angle is \(33.2^\circ\). [A1]
+Q: [9 marks] (#math.p1.quadratics) ★★★ Two drones fly in straight lines. At time \(t\) seconds the position vectors, in metres, of drones \(A\) and \(B\) are \(\mathbf{r}_A = \begin{pmatrix}1\\2\\5\end{pmatrix} + t\begin{pmatrix}3\\1\\0\end{pmatrix}\) and \(\mathbf{r}_B = \begin{pmatrix}7\\2\\2\end{pmatrix} + t\begin{pmatrix}1\\2\\2\end{pmatrix}\). (a) Show that \(\overrightarrow{AB} = \begin{pmatrix}6 - 2t\\t\\2t - 3\end{pmatrix}\). (b) Show that \(AB^2 = 9t^2 - 36t + 45\). (c) Find the least distance between the drones, and the time when it occurs. (d) Find the speed of drone \(B\).
+H: For (a), \(\overrightarrow{AB} = \mathbf{r}_B - \mathbf{r}_A\). Subtract the constant parts and the \(t\) parts separately.
+H: For (b), square each component of \(\overrightarrow{AB}\) and add.
+H: For (c), complete the square: \(9t^2 - 36t + 45 = 9(t - 2)^2 + \ldots\)
+A: (a) \(\overrightarrow{AB} = \mathbf{r}_B - \mathbf{r}_A = \begin{pmatrix}6\\0\\-3\end{pmatrix} + t\begin{pmatrix}-2\\1\\2\end{pmatrix}\). [M1] This is \(\begin{pmatrix}6 - 2t\\t\\2t - 3\end{pmatrix}\). [A1] (b) \(AB^2 = (6 - 2t)^2 + t^2 + (2t - 3)^2\). [M1] \(= 36 - 24t + 4t^2 + t^2 + 4t^2 - 12t + 9\). [A1] \(= 9t^2 - 36t + 45\). [A1] (c) \(9t^2 - 36t + 45 = 9(t - 2)^2 + 9\). [M1 A1] The least value of \(AB^2\) is \(9\), at \(t = 2\), so the least distance is \(3\) m, at \(t = 2\) s. [A1] (d) The speed of \(B\) is \(\left|\begin{pmatrix}1\\2\\2\end{pmatrix}\right| = 3\ \mathrm{m\,s^{-1}}\). [B1]
+:::
+
+:::try Stretch for A*
+Q: [6 marks] ★★★ \(O\) is the origin. The points \(A\) and \(B\) have position vectors \(\mathbf{a}\) and \(-\mathbf{a}\), so \(AB\) is a diameter of the sphere with centre \(O\) and radius \(|\mathbf{a}|\). The point \(P\) is any point on the sphere, with position vector \(\mathbf{p}\), so \(|\mathbf{p}| = |\mathbf{a}|\). (a) Write \(\overrightarrow{PA}\) and \(\overrightarrow{PB}\) in terms of \(\mathbf{a}\) and \(\mathbf{p}\). (b) Show that \(\overrightarrow{PA}\cdot\overrightarrow{PB} = 0\). (c) What does this show about angle \(APB\)? (d) Check this when \(\mathbf{a} = \begin{pmatrix}1\\2\\2\end{pmatrix}\) and \(\mathbf{p} = \begin{pmatrix}2\\1\\-2\end{pmatrix}\).
+H: In (a), \(\overrightarrow{PA} = \mathbf{a} - \mathbf{p}\). Write \(\overrightarrow{PB}\) the same way.
+H: In (b), expand the product like a pair of brackets. Remember \(\mathbf{a}\cdot\mathbf{p} = \mathbf{p}\cdot\mathbf{a}\) and \(\mathbf{x}\cdot\mathbf{x} = |\mathbf{x}|^2\).
+A: (a) \(\overrightarrow{PA} = \mathbf{a} - \mathbf{p}\) and \(\overrightarrow{PB} = -\mathbf{a} - \mathbf{p}\). [B1 B1] (b)
+\[(\mathbf{a} - \mathbf{p})\cdot(-\mathbf{a} - \mathbf{p}) = -\mathbf{a}\cdot\mathbf{a} - \mathbf{a}\cdot\mathbf{p} + \mathbf{p}\cdot\mathbf{a} + \mathbf{p}\cdot\mathbf{p}\]
+[M1] The middle terms cancel, leaving \(|\mathbf{p}|^2 - |\mathbf{a}|^2 = 0\). [A1] (c) The scalar product is zero, so \(PA\) and \(PB\) are perpendicular and angle \(APB = 90^\circ\). Any angle in a semicircle (here, in a sphere's diameter) is a right angle. [B1] (d) \(|\mathbf{a}| = 3\) and \(|\mathbf{p}| = \sqrt{4 + 1 + 4} = 3\). \(\overrightarrow{PA} = \begin{pmatrix}-1\\1\\4\end{pmatrix}\), \(\overrightarrow{PB} = \begin{pmatrix}-3\\-3\\0\end{pmatrix}\), and the scalar product is \(3 - 3 + 0 = 0\). [B1]
+Q: [9 marks] ★★★ The lines \(l_1: \mathbf{r} = \begin{pmatrix}1\\1\\2\end{pmatrix} + s\begin{pmatrix}2\\-1\\1\end{pmatrix}\) and \(l_2: \mathbf{r} = \begin{pmatrix}0\\p\\5\end{pmatrix} + t\begin{pmatrix}1\\1\\1\end{pmatrix}\) intersect. (a) Find the value of \(p\) and the position vector of the point of intersection. (b) Find the acute angle between the lines.
+H: Use the \(x\) and \(z\) equations first, because they do not contain \(p\). Then use the \(y\) equation to find \(p\).
+H: For (b), use only the two direction vectors in \(\cos\theta = \dfrac{\mathbf{d}_1\cdot\mathbf{d}_2}{|\mathbf{d}_1||\mathbf{d}_2|}\), not the position vectors.
+A: (a) \(x\): \(1 + 2s = t\); \(y\): \(1 - s = p + t\); \(z\): \(2 + s = 5 + t\). [M1] Put \(t = 1 + 2s\) in the \(z\) equation: \(2 + s = 6 + 2s\), so \(s = -4\) and \(t = -7\). [A1 A1] In \(y\): \(1 + 4 = p - 7\), so \(p = 12\). [M1 A1] The point is \(\begin{pmatrix}-7\\5\\-2\end{pmatrix}\). [A1] (b) \(\mathbf{d}_1\cdot\mathbf{d}_2 = 2 - 1 + 1 = 2\), \(|\mathbf{d}_1| = \sqrt6\) and \(|\mathbf{d}_2| = \sqrt3\). [M1] \(\cos\theta = \dfrac{2}{\sqrt{18}} = 0.4714\). [M1] The acute angle is \(61.9^\circ\). [A1]
 :::
 
 :::quiz
@@ -225,6 +334,16 @@ A: \(\overrightarrow{OF} = \begin{pmatrix}6\\4\\3\end{pmatrix}\) and \(\overrigh
 - \(\mathbf{r} = \begin{pmatrix}2\\3\\4\end{pmatrix} + s\begin{pmatrix}1\\1\\2\end{pmatrix}\)
 - \(\mathbf{r} = \begin{pmatrix}1\\1\\2\end{pmatrix} + t\begin{pmatrix}1\\2\\3\end{pmatrix}\)
 > \((2, 3, 5)\) is on the line (at \(t = 1\)) and \((2, 2, 4)\) is twice the direction. In the third option the point \((2, 3, 4)\) is not on the line, as \(t = 1\) gives \(z = 5\).
+:::
+
+:::checklist What you can now do
+- [ ] I can add, subtract and scale vectors in column or \(\mathbf{i}\), \(\mathbf{j}\), \(\mathbf{k}\) form, and find a magnitude and a unit vector.
+- [ ] I can find \(\overrightarrow{AB}\) from position vectors, a midpoint, and the fourth vertex of a parallelogram.
+- [ ] I can write a vector equation of a line through a point or through two points, and test whether a point lies on it.
+- [ ] I can decide whether two lines are parallel, intersecting or skew, and find the point of intersection.
+- [ ] I can use the scalar product to find the angle between two vectors, an angle \(\angle ABC\) in a solid, or the acute angle between two lines.
+- [ ] I can find the foot of the perpendicular from a point to a line and the perpendicular distance.
+- [ ] I can put axes on a cuboid or pyramid, write coordinates for every vertex and solve problems about its lines and angles.
 :::
 
 :::recap

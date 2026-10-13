@@ -11,6 +11,15 @@ Heights, masses of packed goods, measurement errors and exam marks all pile up a
 
 **Before you start**, you need the probability rules in [Probability](#math.s1.prob), the mean and standard deviation in [Representing and summarising data](#math.s1.data), the binomial distribution in [Discrete random variables: binomial and geometric](#math.s1.drv), and solving simultaneous equations from [Algebra from scratch](#math.f.algebra).
 
+:::try Warm-up
+Q: Find the mean and standard deviation of 2, 4, 6. (from [Representing and summarising data](#math.s1.data))
+A: The mean is 4. \(\sum x^2 = 4 + 16 + 36 = 56\), so the variance is \(\dfrac{56}{3} - 16 = 2.667\) and the standard deviation is \(1.63\).
+Q: \(X \sim B(10, 0.3)\). Write down \(E(X)\) and \(\mathrm{Var}(X)\). (from [Discrete random variables: binomial and geometric](#math.s1.drv))
+A: \(E(X) = np = 3\) and \(\mathrm{Var}(X) = npq\) \(= 10 \times 0.3 \times 0.7 = 2.1\).
+Q: Solve \(a + 2b = 7\) and \(a + 4b = 13\). (from [Algebra from scratch](#math.f.algebra))
+A: Subtract the first from the second: \(2b = 6\), so \(b = 3\) and \(a = 1\). You will use exactly this elimination to find \(\mu\) and \(\sigma\).
+:::
+
 ## The normal curve
 
 A **continuous random variable** takes any value in a range, and its probabilities are **areas under a curve** (the probability density curve). For a continuous variable \(P(X = a) = 0\), so \(P(X < a)\) and \(P(X \le a)\) are the same.
@@ -30,16 +39,28 @@ All normal curves have the same shape; they differ only in centre and scale. To 
 \(\Phi(z) = P(Z \le z)\) is the area to the left of \(z\). The normal table gives \(\Phi(z)\) for \(z \ge 0\). By symmetry, \(\Phi(-z) = 1 - \Phi(z)\) and \(P(Z > z) = 1 - \Phi(z)\).
 :::
 
+:::proof Why \(Z = \dfrac{X - \mu}{\sigma}\) has mean 0 and standard deviation 1
+Use what you know about coding data from [Representing and summarising data](#math.s1.data). Subtracting the constant \(\mu\) from every value moves the mean from \(\mu\) to \(\mu - \mu = 0\), and does not change the standard deviation, which stays \(\sigma\).
+Dividing every value by the constant \(\sigma\) divides the mean by \(\sigma\), so the mean stays \(0\), and divides the standard deviation by \(\sigma\), so it becomes \(\dfrac{\sigma}{\sigma} = 1\).
+Shifting and rescaling slide and stretch the bell curve without changing its shape, so \(Z\) is still normal. A normal variable with mean 0 and standard deviation 1 is \(N(0, 1)\), the one that the table covers.
+:::
+
+:::proof Why \(\Phi(-z) = 1 - \Phi(z)\)
+The curve of \(N(0, 1)\) is symmetrical about \(z = 0\), so the area to the left of \(-z\) is the same as the area to the right of \(+z\). That is,
+\[P(Z < -z) = P(Z > z)\]
+The total area under the curve is 1, so the area to the right of \(z\) is \(1 - P(Z \le z) = 1 - \Phi(z)\). Therefore \(\Phi(-z) = 1 - \Phi(z)\). Check with \(z = 1\): \(\Phi(-1) = 0.1587\) and \(1 - \Phi(1) = 1 - 0.8413 = 0.1587\).
+:::
+
 The \(z\)-value says how many standard deviations a value is from the mean. Always sketch the curve and shade the area you want; this shows whether to subtract from 1.
 
-:::plot The standard normal curve with the area \(P(-1 < Z < 1.25)\) shaded. It equals \(\Phi(1.25) - \Phi(-1) = 0.8944 - 0.1587 = 0.7357\).
+:::plot The standard normal curve with the area \(P(-1 < Z < 1.25)\) shaded. It equals \(\Phi(1.25) - \Phi(-1)\) \(= 0.8944 - 0.1587 = 0.7357\).
 --f "0.39894*exp(-(x**2)/2)" --label "N(0, 1)" --x -4 4 --y 0 0.45 --shade "0,-1,1.25" --vline 0 --legend tr
 :::
 
 :::eg \(X \sim N(50, 8^2)\). Find (a) \(P(X < 58)\), (b) \(P(X > 45)\), (c) \(P(42 < X < 60)\).
 (a) \(z = \dfrac{58 - 50}{8} = 1\), so \(P(X < 58) = \Phi(1) = 0.8413\).
-(b) \(z = \dfrac{45 - 50}{8} = -0.625\). \(P(X > 45) = P(Z > -0.625) = \Phi(0.625) = 0.734\).
-(c) \(z\)-values \(\dfrac{42 - 50}{8} = -1\) and \(\dfrac{60 - 50}{8} = 1.25\). \(P(-1 < Z < 1.25) = \Phi(1.25) - \Phi(-1) = 0.8944 - 0.1587 = 0.736\).
+(b) \(z = \dfrac{45 - 50}{8} = -0.625\). \(P(X > 45) = P(Z > -0.625)\) \(= \Phi(0.625) = 0.734\).
+(c) \(z\)-values \(\dfrac{42 - 50}{8} = -1\) and \(\dfrac{60 - 50}{8} = 1.25\). \(P(-1 < Z < 1.25)\) \(= \Phi(1.25) - \Phi(-1)\) \(= 0.8944 - 0.1587 = 0.736\).
 :::
 
 The widget shades the area between any two values, or below or above one, for any mean and standard deviation, and shows the \(z\)-values. Use it to check your table answers.
@@ -49,7 +70,7 @@ The widget shades the area between any two values, or below or above one, for an
 :::
 
 :::eg (Real context) Bags of flour are filled with mass \(X\) grams, where \(X \sim N(500, 6^2)\). Find the proportion of bags with mass below 490 g, and the mass exceeded by 10% of bags.
-\(z = \dfrac{490 - 500}{6} = -1.667\), so \(P(X < 490) = \Phi(-1.667) = 1 - \Phi(1.667) = 0.0478\): about 4.8% of bags.
+\(z = \dfrac{490 - 500}{6} = -1.667\), so \(P(X < 490) = \Phi(-1.667)\) \(= 1 - \Phi(1.667) = 0.0478\): about 4.8% of bags.
 For the mass \(m\) exceeded by 10% of bags, \(P(X > m) = 0.1\), so \(P(X < m) = 0.9\). The table (inverse) gives \(z = 1.2816\). Then \(m = 500 + 1.2816\times 6 = 507.7\) g.
 :::
 
@@ -60,7 +81,7 @@ Her second mark is the better performance, even though it is the lower mark, bec
 :::
 
 :::eg A machine makes rods whose lengths, in cm, are \(N(20.0, 0.15^2)\). Rods are rejected if the length is outside the range 19.7 cm to 20.3 cm. What proportion is rejected, and how many rejects would you expect in a batch of 500?
-The limits are \(\dfrac{19.7 - 20}{0.15} = -2\) and \(\dfrac{20.3 - 20}{0.15} = 2\). \(P(\text{accepted}) = \Phi(2) - \Phi(-2) = 0.9772 - 0.0228 = 0.9545\).
+The limits are \(\dfrac{19.7 - 20}{0.15} = -2\) and \(\dfrac{20.3 - 20}{0.15} = 2\). \(P(\text{accepted})\) \(= \Phi(2) - \Phi(-2) = 0.9772 - 0.0228\) \(= 0.9545\).
 Proportion rejected \(= 1 - 0.9545 = 0.0455\). In a batch of 500 you expect \(500\times 0.0455 = 22.75\), so about 23 rods.
 :::
 
@@ -84,7 +105,7 @@ When both \(\mu\) and \(\sigma\) are unknown, two probabilities give two equatio
 :::eg (Exam style) The random variable \(X \sim N(\mu, \sigma^2)\). It is given that \(P(X < 30) = 0.2\) and \(P(X > 50) = 0.1\). Find \(\mu\) and \(\sigma\). [6 marks]
 \(P(X < 30) = 0.2\) gives \(\dfrac{30 - \mu}{\sigma} = -0.8416\). [M1 A1]
 \(P(X > 50) = 0.1\) means \(P(X < 50) = 0.9\), so \(\dfrac{50 - \mu}{\sigma} = 1.2816\). [M1 A1]
-Subtract the first equation from the second: \(\dfrac{20}{\sigma} = 1.2816 + 0.8416 = 2.1232\), so \(\sigma = 9.42\). [M1]
+Subtract the first equation from the second: \(\dfrac{20}{\sigma} = 1.2816 + 0.8416\) \(= 2.1232\), so \(\sigma = 9.42\). [M1]
 Then \(\mu = 30 + 0.8416\times 9.42 = 37.9\). [A1]
 Check: \(50 - 37.9 = 12.1\) and \(12.1/9.42 = 1.28\) ✓.
 :::
@@ -107,6 +128,11 @@ Because \(X\) is **discrete** and \(Y\) is continuous, apply a **continuity corr
 | \(P(X > r)\) | \(P(Y > r + 0.5)\) |
 | \(P(X = r)\) | \(P(r - 0.5 < Y < r + 0.5)\) |
 
+:::proof Why the continuity correction uses 0.5
+Draw the binomial probabilities as a bar chart. The bar for \(X = r\) is centred on \(r\) and has width 1, so it runs from \(r - 0.5\) to \(r + 0.5\), and its area is \(P(X = r)\). The normal curve passes through the tops of these bars, so the area under the curve between \(r - 0.5\) and \(r + 0.5\) is close to the area of the bar. That is why \(P(X = r)\) is approximately \(P(r - 0.5 < Y < r + 0.5)\).
+For \(P(X \le r)\), you want the bars for \(0, 1, \ldots, r\). The last of them ends at \(r + 0.5\), so the area is \(P(Y < r + 0.5)\). For \(P(X \ge r)\), you want the bars from \(r\) upwards, and the first starts at \(r - 0.5\), so the area is \(P(Y > r - 0.5)\). Using \(r\) itself as the boundary would cut a bar in half and lose half of its probability.
+:::
+
 :::eg \(X \sim B(40, 0.3)\). Use a normal approximation to find \(P(X \le 15)\) and \(P(X = 10)\). Compare with the exact values.
 \(np = 12 > 5\) and \(nq = 28 > 5\), so use \(Y \sim N(12, 8.4)\), with \(\sigma = \sqrt{8.4} = 2.898\).
 \(P(X \le 15) \approx P(Y < 15.5)\); \(z = \dfrac{15.5 - 12}{2.898} = 1.208\), so the probability is \(\Phi(1.208) = 0.886\). The exact binomial value is \(0.885\).
@@ -117,8 +143,34 @@ The approximation is good for probabilities near the middle of the distribution.
 :::eg (Exam style) A drug cures a patient with probability 0.4. It is given to 80 patients independently. Use a normal approximation to find the probability that at least 36 are cured. [5 marks]
 \(X \sim B(80, 0.4)\). \(np = 32\) and \(nq = 48\), both greater than 5, so \(X \approx Y \sim N(32, 19.2)\). [B1 B1]
 \(P(X \ge 36) \approx P(Y > 35.5)\) (continuity correction). [M1]
-\(z = \dfrac{35.5 - 32}{\sqrt{19.2}} = \dfrac{3.5}{4.382} = 0.799\). [M1]
+\(z = \dfrac{35.5 - 32}{\sqrt{19.2}}\) \(= \dfrac{3.5}{4.382} = 0.799\). [M1]
 \(P(Z > 0.799) = 1 - \Phi(0.799) = 0.212\). [A1]
+:::
+
+## Long exam questions
+
+:::eg (Exam style) The masses of apples from an orchard are normally distributed with mean 160 g and standard deviation 12 g. (a) Find the probability that an apple chosen at random has a mass between 150 g and 175 g. (b) The heaviest 20% of apples are sold as "large". Find the least mass of a large apple. (c) A box contains 6 apples chosen at random. Find the probability that at least 2 of them are large. [10 marks]
+(a) \(X \sim N(160, 12^2)\). The \(z\)-values are \(\dfrac{150 - 160}{12} = -0.8333\) and \(\dfrac{175 - 160}{12} = 1.25\). [M1]
+\[P(150 < X < 175) = \Phi(1.25) - \Phi(-0.8333)\]
+[M1] \(= 0.8944 - 0.2023 = 0.692\). [A1]
+(b) Let \(m\) be the least mass of a large apple, so \(P(X > m) = 0.2\) and \(P(X < m) = 0.8\). [M1] The inverse table gives \(z = 0.8416\). [B1] Then \(m = 160 + 0.8416 \times 12 = 170.1\), so the least mass is about 170 g. [A1]
+(c) The probability that an apple is large is \(0.2\), so the number of large apples \(L \sim B(6, 0.2)\). [B1]
+\[P(L \ge 2) = 1 - P(L = 0) - P(L = 1)\]
+[M1]
+\[= 1 - 0.8^6 - 6(0.2)(0.8)^5 = 1 - 0.2621 - 0.3932 = 0.345\]
+[M1 A1]
+:::
+
+:::eg (Exam style) In a multiple-choice paper there are 100 questions, each with five options of which exactly one is correct. A candidate answers every question by guessing, independently. (a) Explain why the number of correct answers can be approximated by a normal distribution, and state its mean and variance. (b) Use the approximation to find the probability that the candidate gets at least 25 correct. (c) Use the approximation to find the probability that the candidate gets between 15 and 25 correct, inclusive. [10 marks]
+(a) Let \(X\) be the number of correct answers. \(X \sim B(100, 0.2)\). [B1] Here \(np = 20 > 5\) and \(nq = 80 > 5\), so a normal approximation is suitable. [B1] It is \(Y \sim N(20, 16)\), with mean \(np = 20\) and variance \(npq = 100 \times 0.2 \times 0.8 = 16\), so \(\sigma = 4\). [B1]
+(b) With the continuity correction, \(P(X \ge 25) \approx P(Y > 24.5)\). [M1]
+\[z = \frac{24.5 - 20}{4} = 1.125\]
+[M1 A1]
+\[P(Z > 1.125) = 1 - \Phi(1.125) = 0.130\]
+[A1]
+(c) "Between 15 and 25 inclusive" is \(P(15 \le X \le 25) \approx P(14.5 < Y < 25.5)\). [M1] The \(z\)-values are \(\dfrac{14.5 - 20}{4} = -1.375\) and \(\dfrac{25.5 - 20}{4} = 1.375\). [M1] By symmetry the probability is
+\[2\Phi(1.375) - 1 = 2(0.9154) - 1 = 0.831\]
+[A1]
 :::
 
 :::exam What earns marks
@@ -133,9 +185,25 @@ The approximation is good for probabilities near the middle of the distribution.
 Edexcel IAL S1 and the UK A Level courses (AQA, OCR, Edexcel) also cover the normal distribution, standardising and the inverse problem. Cambridge Paper 5 gives you a normal table in the exam, so you work by standardising and reading the table. If your board lets you use the normal function on a calculator, the method (sketch, \(z\)-values, conclusion) is the same.
 :::
 
+:::eg Spot the error: the continuity correction
+A student wrote this answer to "\(X \sim B(50, 0.4)\). Use a normal approximation to find \(P(X \ge 24)\)" [4 marks].
+
+Line 1: \(np = 20\) and \(npq = 12\), so \(X \approx Y \sim N(20, 12)\).
+Line 2: \(P(X \ge 24) \approx P(Y > 24.5)\).
+Line 3: \(z = \dfrac{24.5 - 20}{\sqrt{12}}\) \(= 1.299\), so the probability is \(1 - \Phi(1.299) = 0.0970\).
+
+**Line 1 is correct [B1].** **Line 2 scores [M0]:** the value 24 must be **included**, and it occupies the interval from 23.5 to 24.5, so the boundary is \(23.5\). Using 24.5 leaves out the whole bar for 24. **Line 3 scores [M1 A0]:** the standardising method is right, so the method mark is earned, but the accuracy mark is lost because the \(z\)-value comes from the wrong boundary. The student scores 2 out of 4.
+
+Correct working: \(P(X \ge 24) \approx P(Y > 23.5)\) [M1] and
+\[z = \frac{23.5 - 20}{\sqrt{12}} = 1.010 \qquad 1 - \Phi(1.010) = 0.156\]
+[M1 A1]
+
+**Check:** the rule "\(\ge\) means move the boundary **down** by 0.5" gives \(23.5\) here. A "greater than or equal to" probability must be a little larger than the "greater than" one, and \(0.156 > 0.0970\). ✓
+:::
+
 :::try Start easy, finish at exam standard
 Q: \(X \sim N(65, 5^2)\). Find \(P(X > 72)\), \(P(X < 60)\) and \(P(60 < X < 72)\).
-A: \(P(X > 72) = 1 - \Phi(1.4) = 0.0808\). \(P(X < 60) = \Phi(-1) = 0.159\). \(P(60 < X < 72) = \Phi(1.4) - \Phi(-1) = 0.9192 - 0.1587 = 0.761\).
+A: \(P(X > 72) = 1 - \Phi(1.4) = 0.0808\). \(P(X < 60) = \Phi(-1) = 0.159\). \(P(60 < X < 72) = \Phi(1.4) - \Phi(-1)\) \(= 0.9192 - 0.1587 = 0.761\).
 Q: \(X \sim N(24, 4^2)\). Find \(P(X > 30)\).
 A: \(z = \dfrac{30 - 24}{4} = 1.5\), so \(P = 1 - \Phi(1.5) = 0.0668\).
 Q: \(X \sim N(70, 12^2)\). Find the lower quartile of \(X\).
@@ -152,6 +220,42 @@ Q: \(X \sim B(60, 0.5)\). Use a normal approximation to find \(P(X > 35)\).
 A: \(Y \sim N(30, 15)\). \(P(Y > 35.5)\): \(z = \dfrac{5.5}{3.873} = 1.420\), so \(P = 1 - \Phi(1.420) = 0.0778\).
 Q: (Exam style) Heights of adult men in a town are normally distributed with mean 172 cm. 15% of men are taller than 180 cm. Find the standard deviation, and then the proportion of men shorter than 165 cm. [6 marks]
 A: \(P(X < 180) = 0.85\) so \(z = 1.0364\). [M1 A1] \(\dfrac{180 - 172}{\sigma} = 1.0364\), so \(\sigma = 7.72\). [M1 A1] \(z = \dfrac{165 - 172}{7.72} = -0.907\), so \(P(X < 165) = \Phi(-0.907) = 0.182\), about 18.2%. [M1 A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ \(X \sim N(100, 15^2)\). Find \(P(X > 120)\).
+A: \(z = \dfrac{120 - 100}{15} = 1.333\). [B1] \(P(X > 120) = 1 - \Phi(1.333)\) [M1] \(= 1 - 0.9088 = 0.0912\). [A1]
+Q: [3 marks] ★ \(X \sim N(100, 15^2)\). Find \(P(85 < X < 110)\).
+A: The \(z\)-values are \(\dfrac{85 - 100}{15} = -1\) and \(\dfrac{110 - 100}{15} = 0.6667\). [B1] The probability is \(\Phi(0.6667) - \Phi(-1)\) [M1] \(= 0.7475 - 0.1587 = 0.589\). [A1]
+Q: [3 marks] ★ \(X \sim N(40, 6^2)\). Find the value \(k\) such that \(P(X < k) = 0.95\).
+A: \(\Phi(z) = 0.95\) gives \(z = 1.645\). [B1] Then \(k = 40 + 1.645 \times 6\) [M1] \(= 49.9\). [A1]
+Q: [4 marks] ★★ \(X \sim N(80, \sigma^2)\) and \(P(X > 90) = 0.15\). Find \(\sigma\).
+A: \(P(X < 90) = 0.85\), so \(z = 1.0364\). [M1 A1] Then \(\dfrac{90 - 80}{\sigma} = 1.0364\) [M1] and \(\sigma = \dfrac{10}{1.0364} = 9.65\). [A1]
+Q: [4 marks] ★★ \(X \sim N(200, 10^2)\). Find the value \(a\) such that \(P(200 - a < X < 200 + a) = 0.9\).
+A: By symmetry, 5% lies above \(200 + a\), so \(P(X < 200 + a) = 0.95\). [M1] Then \(z = 1.6449\) [A1] and \(a = 1.6449 \times 10\) [M1] \(= 16.4\). [A1]
+Q: [6 marks] ★★ \(X \sim N(\mu, \sigma^2)\), with \(P(X < 35) = 0.3\) and \(P(X > 65) = 0.2\). Find \(\mu\) and \(\sigma\).
+A: \(P(X < 35) = 0.3\) gives \(\dfrac{35 - \mu}{\sigma} = -0.5244\). [M1 A1] \(P(X < 65) = 0.8\) gives \(\dfrac{65 - \mu}{\sigma} = 0.8416\). [M1 A1] Subtracting, \(\dfrac{30}{\sigma} = 1.3660\), so \(\sigma = 22.0\). [M1] Then \(\mu = 35 + 0.5244 \times 21.96 = 46.5\). [A1]
+Q: [4 marks] ★★ \(X \sim B(60, 0.35)\). Use a normal approximation to find \(P(X \le 18)\).
+A: \(np = 21\) and \(npq = 13.65\), both conditions \(np > 5\) and \(nq > 5\) hold, so \(Y \sim N(21, 13.65)\). [B1] With the continuity correction \(P(X \le 18) \approx P(Y < 18.5)\). [M1] Then
+\[z = \frac{18.5 - 21}{\sqrt{13.65}} = -0.677\]
+[M1] so the probability is \(\Phi(-0.677) = 0.249\). [A1]
+Q: [9 marks] (#math.p3.logs) ★★★ The masses of loaves are normally distributed. 4% of loaves have a mass below 400 g and 8% have a mass above 440 g. (a) Find the mean and standard deviation of the masses. (b) A customer buys \(n\) loaves chosen at random. Find the least \(n\) for which the probability that at least one loaf has mass below 400 g is greater than 0.5.
+H: Write both facts as equations: \(\dfrac{400 - \mu}{\sigma} = -1.7507\) and \(\dfrac{440 - \mu}{\sigma} = 1.4051\). The second needs \(P(X < 440) = 0.92\).
+H: Subtract the first equation from the second to find \(\sigma\) first.
+H: For (b), the probability that one loaf is below 400 g is 0.04. "At least one" is \(1 - 0.96^n\). Take logarithms and watch the direction of the inequality.
+A: (a) \(P(X < 400) = 0.04\) gives \(\dfrac{400 - \mu}{\sigma} = -1.7507\). [M1 A1] \(P(X < 440) = 0.92\) gives \(\dfrac{440 - \mu}{\sigma} = 1.4051\). [M1 A1] Subtracting, \(\dfrac{40}{\sigma} = 3.1558\), so \(\sigma = 12.7\). [M1] Then \(\mu = 400 + 1.7507 \times 12.675 = 422\). [A1] (b) \(1 - 0.96^n > 0.5\), so \(0.96^n < 0.5\). [M1] Taking logarithms, \(n\ln 0.96 < \ln 0.5\). Since \(\ln 0.96 < 0\), dividing reverses the inequality: [M1] \(n > \dfrac{\ln 0.5}{\ln 0.96} = 16.98\). The least \(n\) is 17. [A1]
+:::
+
+:::try Stretch for A*
+Q: [7 marks] (#math.s1.data) ★★★ A value is called an outlier if it is more than \(1.5 \times \text{IQR}\) above \(Q_3\) or below \(Q_1\). For a normal distribution \(N(\mu, \sigma^2)\): (a) find the lower and upper quartiles in terms of \(\mu\) and \(\sigma\), (b) show that the IQR is about \(1.349\sigma\), (c) find the proportion of values that would be flagged as outliers.
+H: The upper quartile has \(P(X < Q_3) = 0.75\). Find the \(z\)-value, then convert with \(x = \mu + z\sigma\). The lower quartile is symmetrical.
+H: The upper fence is \(Q_3 + 1.5\,\text{IQR}\). Write it as \(\mu + k\sigma\) and find \(k\).
+H: Find \(P(X > \mu + k\sigma)\) from \(\Phi(k)\). The lower fence is symmetrical, so double it.
+A: (a) \(\Phi(z) = 0.75\) gives \(z = 0.6745\). [M1] So \(Q_3 = \mu + 0.6745\sigma\) and \(Q_1 = \mu - 0.6745\sigma\). [A1] (b) \(\text{IQR} = 2 \times 0.6745\sigma\) \(= 1.349\sigma\). [A1] (c) The upper fence is \(Q_3 + 1.5\,\text{IQR}\) \(= \mu + (0.6745 + 2.0235)\sigma\) \(= \mu + 2.698\sigma\). [M1 A1] The proportion above it is \(1 - \Phi(2.698) = 0.00349\). [M1] The lower fence is symmetrical, so the total proportion flagged is about \(2 \times 0.00349 = 0.00698\), or about 0.7%. [A1]
+Q: [6 marks] ★★★ The heights of 400 boys are recorded to the nearest centimetre. They are normally distributed with mean 170 cm and standard deviation 7 cm. Estimate how many boys have a recorded height of exactly 175 cm.
+H: A recorded height of 175 cm means a true height from 174.5 cm to 175.5 cm. This is the same idea as a continuity correction.
+H: Standardise both ends, find the probability of that interval, then multiply by 400.
+A: A recorded height of 175 cm means the true height lies in \(174.5 < X < 175.5\). [B1] The \(z\)-values are \(\dfrac{174.5 - 170}{7} = 0.6429\) and \(\dfrac{175.5 - 170}{7} = 0.7857\). [M1 A1] The probability is \(\Phi(0.7857) - \Phi(0.6429)\) [M1] \(= 0.7840 - 0.7399 = 0.0441\). [A1] The expected number is \(400 \times 0.0441 = 17.6\), so about 18 boys. [A1]
 :::
 
 :::quiz
@@ -187,9 +291,19 @@ A: \(P(X < 180) = 0.85\) so \(z = 1.0364\). [M1 A1] \(\dfrac{180 - 172}{\sigma} 
 > The normal approximation works when both the expected number of successes and the expected number of failures are greater than 5.
 :::
 
+:::checklist What you can now do
+- [ ] I can sketch a normal curve, shade the area I need, and say what \(N(\mu, \sigma^2)\) means.
+- [ ] I can standardise with \(Z = \dfrac{X - \mu}{\sigma}\) and find probabilities, including negative \(z\)-values, from the normal table.
+- [ ] I can find a value \(x\) from a given probability using the table in reverse.
+- [ ] I can find an unknown \(\mu\), an unknown \(\sigma\), or both from given probabilities, showing the standardising.
+- [ ] I can approximate a binomial distribution by a normal one, check the conditions, and apply the continuity correction.
+- [ ] I can compare two results from different normal distributions using \(z\)-values.
+- [ ] I can combine a normal probability with a binomial or geometric calculation in one question.
+:::
+
 :::recap
 - \(X \sim N(\mu, \sigma^2)\): symmetric bell, mean \(\mu\), standard deviation \(\sigma\). Areas are probabilities; \(P(X = a) = 0\).
-- Standardise: \(Z = \dfrac{X - \mu}{\sigma} \sim N(0, 1)\). Use \(\Phi(-z) = 1 - \Phi(z)\); sketch to decide what to subtract.
+- Standardise: \(Z\) \(= \dfrac{X - \mu}{\sigma} \sim N(0, 1)\). Use \(\Phi(-z) = 1 - \Phi(z)\); sketch to decide what to subtract.
 - Inverse: find \(z\) from \(\Phi(z) = p\) (negative for \(p < 0.5\)), then \(x = \mu + z\sigma\).
 - Two unknowns: standardise both probabilities and solve the two equations simultaneously.
 - Approximating \(B(n, p)\): need \(np > 5\) and \(nq > 5\); use \(N(np, npq)\) with a continuity correction \(\pm 0.5\).

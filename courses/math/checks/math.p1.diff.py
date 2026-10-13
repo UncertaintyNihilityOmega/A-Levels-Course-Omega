@@ -128,4 +128,54 @@ eq("t11 numeric gradient", d(f, 1), 0, 1e-6); eq("t11 d2", 2 * a + 2 * b, 12); e
 same_deriv("q1", lambda x: 4 / x ** 2, lambda x: -8 / x ** 3)
 same_deriv("q2", lambda x: (2 * x + 3) ** 4, lambda x: 8 * (2 * x + 3) ** 3, tol=1e-3)
 eq("q5 dA/dr", 2 * pi * 3, 6 * pi); eq("q5 dA/dt", 6 * pi * 2, 12 * pi)
+# v2: warm-up
+eq("w2 root", 3 * 3 ** 2 - 6 * 3 - 9, 0); eq("w2 root2", 3 * (-1) ** 2 - 6 * (-1) - 9, 0); eq("w3 grad", -3 / 4 * 4 / 3, -1)
+
+# v2: proof of x^n: chord = n x^(n-1) + C(n,2) x^(n-2) h + ... + h^(n-1), checked for several n
+from math import comb
+for n in (2, 3, 5, 7):
+    for x, h in ((1.3, 0.2), (-0.7, 0.05), (2.0, 0.5)):
+        eq(f"proof n={n}", ((x + h) ** n - x ** n) / h, sum(comb(n, k) * x ** (n - k) * h ** (k - 1) for k in range(1, n + 1)), 1e-8)
+eq("proof n=3 chord", ((2 + 0.1) ** 3 - 8) / 0.1, 12 + 6 * 0.1 + 0.1 ** 2, 1e-9)
+
+# v2: spot the error
+f = lambda x: x * x - 4 * x + 7
+eq("spot y", f(3), 4); eq("spot m", d(f, 3), 2, 1e-6)
+eq("spot normal", 3 + 2 * 4 - 11, 0); eq("spot wrong y", 9 - 12 + 7, 4)
+
+# v2: exam practice
+same_deriv("x1", lambda x: 3 * x ** 4 - 5 / x ** 2 + 6 * sqrt(x), lambda x: 12 * x ** 3 + 10 / x ** 3 + 3 / sqrt(x))
+same_deriv("x2", lambda x: sqrt(4 * x - 3), lambda x: 2 * (4 * x - 3) ** -0.5, xs=(1.5, 3.0, 5.2))
+eq("x2 f'(3)", 2 * 9 ** -0.5, 2 / 3)
+g = lambda x: x ** 3 + 6 * x ** 2 + 15 * x - 4
+same_deriv("x3", g, lambda x: 3 * x * x + 12 * x + 15, xs=(-3.0, 0.5, 2.0))
+for x in (-5, -2, 0, 3): eq("x3 square", 3 * x * x + 12 * x + 15, 3 * (x + 2) ** 2 + 3)
+h4 = lambda x: x ** 3 - 6 * x ** 2 + 9 * x + 2
+same_deriv("x4", h4, lambda x: 3 * x * x - 12 * x + 9)
+eq("x4 y1", h4(1), 6); eq("x4 y3", h4(3), 2); eq("x4 d2 at 1", 6 * 1 - 12, -6); eq("x4 d2 at 3", 6 * 3 - 12, 6)
+eq("x5 y", 2 * sqrt(4), 4); eq("x5 grad", 4 ** -0.5, 0.5); eq("x5 xint", 0 - 2 / 0.5, -4)
+eq("x5 area", 0.5 * 4 * 2, 4)
+eq("x6 dx/dt", 6 / 24, 0.25); eq("x6 dP/dt", 4 * 0.25, 1)
+S = lambda r: 2 * pi * r * r + 2 * pi * r * (250 / r ** 2)
+eq("x7 S form", S(3.3), 2 * pi * 3.3 ** 2 + 500 * pi / 3.3, 1e-9)
+eq("x7 dS", d(S, 5), 0, 1e-5); eq("x7 r3", 5 ** 3, 125); eq("x7 d2", 4 * pi + 1000 * pi / 125, 12 * pi); eq("x7 d2 num", d2(S, 5), 12 * pi, 1e-3)
+eq("x7 S min", S(5), 150 * pi); eq("x7 S sf", sf(S(5)), 471)
+for a in (0.5, 1.0, 3.0, 7.0):
+    m = -12 / a ** 2
+    xi = a - (12 / a) / m
+    yi = 12 / a - m * a
+    eq("x8 xint", xi, 2 * a, 1e-9); eq("x8 yint", yi, 24 / a, 1e-9); eq("x8 area", 0.5 * xi * yi, 24, 1e-9)
+gg = lambda x: x ** 3 - 3 * x * x - 9 * x
+eq("s1 max", gg(-1), 5); eq("s1 min", gg(3), -27)
+# number of real roots of x^3 - 3x^2 - 9x + k by scanning for sign changes
+def nroots(k):
+    xs = [i / 1000 for i in range(-6000, 6000)]
+    v = [gg(x) + k for x in xs]
+    return sum(1 for i in range(len(v) - 1) if v[i] * v[i + 1] < 0)
+for k, want in ((-6, 1), (-4.9, 3), (0.3, 3), (26.9, 3), (28, 1)):
+    assert nroots(k) == want, (k, nroots(k))
+for a in (0.5, 1.0, 2.0, -1.5):
+    for x in (-2.3, 0.4, 1.9):
+        eq("s2 factor", x ** 3 - 3 * a * a * x + 2 * a ** 3, (x - a) ** 2 * (x + 2 * a), 1e-9)
+    eq("s2 grad", 3 * (-2 * a) ** 2, 4 * 3 * a * a)
 print("ok")

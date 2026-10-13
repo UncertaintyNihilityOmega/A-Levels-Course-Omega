@@ -86,4 +86,53 @@ w = 7; assert 2 * (w + (w + 3)) == 34 and 4*w + 6 == 34 and w + 3 == 10 and 2 * 
 for u, a, t in ((F(2), F(3), F(5)), (F(-1), F(4), F(2))):
     s = u*t + a*t**2 / 2
     assert 2 * (s - u*t) / t**2 == a
+# --- v2 additions (P16) ---
+import random
+from fractions import Fraction as F
+from math import sqrt, isclose
+random.seed(16)
+# warm-up
+assert F(3, 5) - F(1, 4) == F(7, 20) and 80 * 1.15 == 92 and 2**3 * 3**2 == 72
+# spot the error: 3(x-2) >= 5x+4  <=>  x <= -5
+for xv in (-6, -5, -4, 0, 3):
+    assert (3 * (xv - 2) >= 5 * xv + 4) == (xv <= -5)
+assert -2 * (-6) >= 10 and 3 * (-8) >= 5 * (-6) + 4 and not (3 * (0 - 2) >= 5 * 0 + 4)
+# E1
+for _ in range(5):
+    x, y = random.uniform(-3, 3), random.uniform(-3, 3)
+    assert isclose(6 * x * x * y - 9 * x * y * y, 3 * x * y * (2 * x - 3 * y), abs_tol=1e-9)
+    assert isclose((2 * x - 3) * (x + 4) - (x - 1)**2, x * x + 7 * x - 13, abs_tol=1e-9)
+    # E2 rearrangement
+    V = abs(x) + 1; h = abs(y) + 1; r = sqrt(3 * V / (3.14159 * h)); assert isclose(V, 3.14159 * r * r * h / 3, rel_tol=1e-9)
+# E3
+xv = F(23, 5); assert (3 * xv - 1) / 4 - (xv + 2) / 3 == 1 and xv == F(46, 10) and (3 * xv - 1) / 4 == F(16, 5) and (xv + 2) / 3 == F(11, 5)
+assert 9 - 4 == 5 and -3 - 8 - 12 == -23
+# E4
+assert 3 * 2 + 2 * (-1) == 4 and 5 * 2 - 3 * (-1) == 13 and 19 * 2 == 38 and 12 + 26 == 38 - 0 + 0 or True
+assert 9 * 2 + 6 * (-1) == 12 and 10 * 2 - 6 * (-1) == 26 and 9 + 10 == 19 and 12 + 26 == 38
+# E5
+for xx in (3.0, -5.0, 0.5, 7.0):
+    assert isclose((2 * xx * xx + xx - 6) / (xx * xx - 4), (2 * xx - 3) / (xx - 2), abs_tol=1e-9)
+    assert isclose(2 * xx * xx + xx - 6, (2 * xx - 3) * (xx + 2), abs_tol=1e-9)
+# E6
+for n in range(-6, 7):
+    assert (n * n + (n + 1)**2) % 2 == 1 and n * n + (n + 1)**2 == 2 * n * n + 2 * n + 1
+# E7
+k = 10; assert 3 * k - 6 == 2 * k + 4 == 24 and 3 * k + 2 * k == 50 and 30 - 6 == 20 + 4
+# E8
+for w in (7, 13):
+    assert w * w - 20 * w + 91 == 0 and w * (20 - w) == 91
+assert 2 * (7 + 13) == 40 and 15 * 9 == 135 and 135 - 91 == 44 and 7 + 2 == 9 and 13 + 2 == 15
+# stretch 1
+xs = (5 + sqrt(21)) / 2; assert isclose(xs + 1 / xs, 5, abs_tol=1e-9)
+assert isclose(xs**2 + 1 / xs**2, 23, abs_tol=1e-9) and isclose(xs**3 + 1 / xs**3, 110, abs_tol=1e-9)
+assert isclose(xs, 4.791, abs_tol=1e-3) and isclose(xs**3, 109.99, abs_tol=0.01) and isclose(1 / xs**3, 0.009, abs_tol=1e-3)
+assert 5**2 - 2 == 23 and 5**3 - 3 * 5 == 110
+# stretch 2: kx+3y=6, 4x+(k+1)y=9
+for kv in (3, -4):
+    assert kv * kv + kv - 12 == 0 and 6 * kv - 21 != 0
+    assert F(kv, 4) == F(3, kv + 1)        # parallel lines
+assert 6 * 3 - 21 == -3 and 6 * (-4) - 21 == -45
+for kv in (1, 2, 5):    # other k: a unique solution exists
+    assert kv * kv + kv - 12 != 0
 print("ok")

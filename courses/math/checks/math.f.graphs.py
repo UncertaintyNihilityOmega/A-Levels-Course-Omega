@@ -55,4 +55,36 @@ assert grad((1, 2), (3, 8)) == 3 and F(3 - 1, 8 - 2) == F(1, 3) and F(8 + 2, 3 +
 for x in (3, -2):
     assert x**2 == x + 6
 assert (x := -3, 2) and (-3 + 3) * (-3 - 2) == 0 and (lambda x: (x + 3) * (x - 2) == x**2 + x - 6)(5)
+# --- v2 additions (P16) ---
+from fractions import Fraction as F
+# warm-up
+assert 2 * 5 - 7 < 5 and not (2 * 6 - 7 < 5); assert 4**-0.5 == 0.5; eq_ = None
+assert F(12 - 3 * 2, 2) == 3 and F(3, 2) * 4 == 6
+# spot the error
+m = F(8 + 1, 5 - 2); assert m == 3 and 3 * 2 - 7 == -1 and 3 * 5 - 7 == 8
+ms = F(5 - 2, 8 + 1); assert ms == F(1, 3) and ms * 5 - F(5, 3) - ms * 2 + F(5, 3) == 1  # student line has slope 1/3
+assert ms * (5 - 2) - 1 != 8 and F(1, 3) * 5 - F(5, 3) == 0
+# exam practice
+assert (24 - 4 * 0) / 3 == 8 and 24 / 4 == 6 and F(-4, 3) * 3 + 8 == 4
+assert 3 * (-1) + 7 == 4
+assert -2 * 4 + 7 == -1 and -2 == -2  # y = 3 - 2x has gradient -2
+g = F(10 - 1, 4 + 2); assert g == F(3, 2) and g * (4 + 2) + 1 - 6 * 0 == 10 and 1 + g * (-2 + 2) == 1
+assert F(3, 2) * 4 + 4 == 10 and F(3, 2) * (-2) + 4 == 1 and F(3, 2) * (-6) + 4 == -5
+for x, y in ((4, 5), (-1, 0)):
+    assert y == x + 1 and y == x * x - 2 * x - 3
+assert (4 - 4) * (4 + 1) == 0 and (-1 - 4) * (-1 + 1) == 0 and 4 + (-1) == 3 and 4 * -1 == -4
+n = F(7, 4 * 1) / 1; n = F(7) / F(4, 100); assert n == 175
+assert 12 + F(5, 100) * 175 == F(2075, 100) == 5 + F(9, 100) * 175 == F(2075, 100) and 20.75 == float(F(2075, 100))
+assert 0.09 > 0.05 and 12 + 0.05 * 200 < 5 + 0.09 * 200
+x = F(3); assert 2 * x + 1 == 7 and x + 7 == 10 and 2 * x + 1 == 10 - x
+A, B = F(-1, 2), F(10); assert 2 * A + 1 == 0 and A + 0 == A and B - A == F(21, 2) and F(1, 2) * (B - A) * 7 == F(147, 4) == 36.75
+# stretch
+assert 15 * 2 == 30 and 70 - 20 * 2 == 30 and 60 - 20 * (2 - 0.5) == 30 and 15 * 1 == 15 and 70 - 20 * 1 == 50 and 50 - 15 == 35
+mm = F(-3, 2); assert 4 * mm**2 + 12 * mm + 9 == 0 and (2 * mm + 3) == 0
+assert 3 - 2 * mm == 6 and 2 - 3 / mm == 4 and F(1, 2) * 4 * 6 == 12
+for mv in (F(-1, 2), F(-1), F(-3, 2), F(-2), F(-3), F(-5)):   # area never below 12
+    assert F(1, 2) * (2 - 3 / mv) * (3 - 2 * mv) >= 12
+assert F(1, 2) * (2 - 3 / mm) * (3 - 2 * mm) == 12 and 12 - 4 * mm - 9 / mm == 24
+# quiz
+assert F(6, 2) == 3 and F(5, 2) == 2.5
 print("ok")

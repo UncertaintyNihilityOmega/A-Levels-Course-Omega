@@ -69,4 +69,47 @@ eq("T9", 2 / 3, simpson(lambda x: sin(x)**3, 0, pi / 2), 1e-8)
 chk("Q1", lambda x: 0.5 * log(x * x + 1), lambda x: x / (x * x + 1)); chk("Q4", lambda x: x * log(x) - x, lambda x: log(x))
 eq("Q3", 1 / 3, simpson(lambda x: sin(x)**2 * cos(x), 0, pi / 2), 1e-8)
 for x in (1.5, 4.0): eq("Q5", (x * x + 3) / (x * x - 1), 1 + 4 / (x * x - 1))
+
+# ---- v2 additions ----
+# warm-up
+chk("W1", lambda x: x * exp(2 * x), lambda x: (1 + 2 * x) * exp(2 * x))
+for x in (0.3, 1.9, 4.0): eq("W2", 3 / ((x - 1) * (x + 2)), 1 / (x - 1) - 1 / (x + 2))
+eq("W3", tan(pi / 4), 1, 1e-12)
+# proofs: ln|f| derivative for f<0, product rule by parts check
+chk("P1 f<0", lambda x: log(abs(x**2 - 9)), lambda x: 2 * x / (x**2 - 9), xs=(0.4, 1.1, 2.2))
+# long example A
+for x in (0.3, 1.1, 2.7): eq("A pf", (6 * x + 7) / ((x + 1) * (2 * x + 3)), 1 / (x + 1) + 4 / (2 * x + 3))
+assert 6 * -1 + 7 == 1 and 6 * -1.5 + 7 == -2 == -0.5 * 4
+fa = lambda x: (6 * x + 7) / ((x + 1) * (2 * x + 3))
+eq("A area", simpson(fa, 0, 2), log(49 / 3), 1e-8); eq("A area exact", 2 * log(7) - log(3), log(49 / 3)); eq("A 3sf", sf(log(49 / 3)), 2.79)
+eq("A y0", fa(0), 7 / 3, 1e-12); eq("A y0 dp", sf(fa(0), 3), 2.33); eq("A y2", sf(fa(2), 2), 0.90)
+chk("A gradient", fa, lambda x: -1 / (x + 1)**2 - 8 / (2 * x + 3)**2)
+# long example B
+eq("B (a)", simpson(lambda x: exp(sqrt(x)), 0, 4, 20000), simpson(lambda u: 2 * u * exp(u), 0, 2), 1e-4)
+eq("B (b)", simpson(lambda u: 2 * u * exp(u), 0, 2), 2 * e**2 + 2, 1e-8)
+eq("B (c)", simpson(lambda x: 1 + exp(sqrt(x)), 0, 4, 20000), 2 * e**2 + 6, 1e-4)
+eq("B 16.8", sf(2 * e**2 + 2), 16.8); eq("B avg", sf((2 * e**2 + 2) / 4, 2), 4.2); eq("B e2", sf(e**2, 3), 7.39)
+# spot the error
+eq("SE value", simpson(lambda x: x * sqrt(x * x + 1), 0, 2), (5 * sqrt(5) - 1) / 3, 1e-8); eq("SE 3sf", sf((5 * sqrt(5) - 1) / 3), 3.39)
+eq("SE wrong", sf(2**1.5 / 3), 0.943); eq("SE x1", sf(sqrt(2)), 1.41); eq("SE x2", sf(2 * sqrt(5)), 4.47)
+assert 1 + 1 + 1 == 3 and 1 + 1 + 1 + 1 + 1 == 5
+# exam practice
+eq("E1", simpson(lambda x: 3 * x * x / (x**3 + 1), 0, 2), log(9), 1e-8)
+eq("E2", simpson(lambda x: x * exp(-2 * x), 0, 1), 0.25 - 0.75 * exp(-2), 1e-9)
+eq("E3", simpson(lambda x: 1 / (1 + sqrt(x)), 0, 4), 4 - 2 * log(3), 1e-4); eq("E3 3sf", sf(4 - 2 * log(3)), 1.80)
+for x in (0.5, 2.0, 7.0): eq("E4 pf", (5 * x + 7) / ((x + 1) * (x + 3)), 1 / (x + 1) + 4 / (x + 3))
+eq("E4", simpson(lambda x: (5 * x + 7) / ((x + 1) * (x + 3)), 0, 2), log(625 / 27), 1e-8); eq("E4 alt", 4 * log(5) - 3 * log(3), log(625 / 27))
+assert 5 * -1 + 7 == 2 and 5 * -3 + 7 == -8
+eq("E5", simpson(lambda x: x**3 * log(x), 1, e), (3 * e**4 + 1) / 16, 1e-8)
+chk("E6 dy", lambda x: x * exp(-x), lambda x: (1 - x) * exp(-x)); chk("E6 d2y", lambda x: (1 - x) * exp(-x), lambda x: (x - 2) * exp(-x))
+eq("E6 area", simpson(lambda x: x * exp(-x), 0, 1), 1 - 2 / e, 1e-9)
+eq("E7", simpson(lambda x: exp(x) / (exp(2 * x) + 3 * exp(x) + 2), 0, log(3)), log(6 / 5), 1e-9)
+eq("E7 u", simpson(lambda u: 1 / ((u + 1) * (u + 2)), 1, 3), log(6 / 5), 1e-9); assert -1 + 2 == 1 and -2 + 1 == -1 and (u := 3) and (u**2 + 3 * u + 2) == (u + 1) * (u + 2)
+eq("E7 comb", log(4 * 3 / (5 * 2)), log(6 / 5))
+# stretch
+In = lambda n: simpson(lambda x: x**n * exp(x), 0, 1)
+eq("S1 I0", In(0), e - 1, 1e-9); eq("S1 I1", In(1), 1, 1e-9); eq("S1 I2", In(2), e - 2, 1e-9); eq("S1 I3", In(3), 6 - 2 * e, 1e-9)
+for n in (1, 2, 3, 4): eq("S1 recurrence", In(n), e - n * In(n - 1), 1e-9)
+eq("S2 I", simpson(lambda x: exp(x) * sin(x), 0, pi / 2), 0.5 * (exp(pi / 2) + 1), 1e-9)
+eq("S2 J", simpson(lambda x: exp(x) * cos(x), 0, pi / 2), 0.5 * (exp(pi / 2) + 1) - 1, 1e-9)
 print("ok")

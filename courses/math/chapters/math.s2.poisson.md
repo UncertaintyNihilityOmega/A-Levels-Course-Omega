@@ -11,6 +11,15 @@ How many calls will a rescue centre receive between 2 am and 3 am? How many flaw
 
 **Before you start**, you should know the binomial distribution from [Discrete random variables](#math.s1.drv) and the normal distribution from [The normal distribution](#math.s1.normal). You will also use the number \(e \approx 2.718\) from [Logarithms and exponentials](#math.p3.logs).
 
+:::try Warm-up
+Q: \(X \sim B(10, 0.2)\). Find \(P(X = 2)\). (from [Discrete random variables](#math.s1.drv))
+A: \(P(X = 2) = \dbinom{10}{2}(0.2)^2(0.8)^8\) \(= 45 \times 0.04 \times 0.16777\) \(= 0.302\).
+Q: \(X \sim N(50, 4^2)\). Find \(P(X > 56)\). (from [The normal distribution](#math.s1.normal))
+A: \(z = \dfrac{56 - 50}{4} = 1.5\), so \(P(X > 56) = 1 - \Phi(1.5)\) \(= 0.0668\).
+Q: Solve \(e^{2x} = 7\), giving \(x\) to 3 significant figures. (from [Logarithms and exponentials](#math.p3.logs))
+A: Take natural logarithms: \(2x = \ln 7\), so \(x = \dfrac{\ln 7}{2} = 0.973\).
+:::
+
 ## Counting random events
 
 The binomial distribution counts successes in a fixed number of trials, so its count can never exceed \(n\). Many real counts have no trials and no upper limit: emails arriving in an hour, typing errors on a page, atoms decaying in a second. The count could be \(0, 1, 2, 3, \dots\) and, in principle, anything larger. The Poisson distribution models counts like these.
@@ -46,7 +55,7 @@ The mean and the variance are equal. That is unusual and useful: if data have a 
 :::
 
 :::tip Building probabilities step by step
-Each probability comes from the one before: \(P(X = r + 1) = \dfrac{\lambda}{r + 1}\,P(X = r)\). For \(\lambda = 4\): \(P(0) = e^{-4} = 0.0183\), then \(P(1) = 4 \times 0.0183 = 0.0733\), then \(P(2) = \frac{4}{2} \times 0.0733 = 0.1465\). Keep full calculator accuracy and round only at the end.
+Each probability comes from the one before: \(P(X = r + 1)\) \(= \dfrac{\lambda}{r + 1}\,P(X = r)\). For \(\lambda = 4\): \(P(0) = e^{-4} = 0.0183\), then \(P(1) = 4 \times 0.0183 = 0.0733\), then \(P(2) = \frac{4}{2} \times 0.0733\) \(= 0.1465\). Keep full calculator accuracy and round only at the end.
 :::
 
 Poisson counts have no upper limit, so "at least" and "more than" need the complement.
@@ -61,9 +70,9 @@ Poisson counts have no upper limit, so "at least" and "more than" need the compl
 :::eg Emails arrive at random, with a mean of 4 per hour. Find the probability that in a given hour (a) exactly 3 arrive, (b) at most 2 arrive, (c) at least 6 arrive.
 Let \(X\) be the number of emails in an hour. Then \(X \sim \mathrm{Po}(4)\).
 
-(a) \(P(X = 3) = \dfrac{e^{-4}\,4^{3}}{3!} = \dfrac{32}{3}e^{-4} = 0.195\)
+(a) \(P(X = 3) = \dfrac{e^{-4}\,4^{3}}{3!}\) \(= \dfrac{32}{3}e^{-4}\) \(= 0.195\)
 
-(b) \(P(X \le 2) = e^{-4}\left(1 + 4 + \dfrac{4^{2}}{2}\right) = 13e^{-4} = 0.238\)
+(b) \(P(X \le 2)\) \(= e^{-4}\left(1 + 4 + \dfrac{4^{2}}{2}\right)\) \(= 13e^{-4} = 0.238\)
 
 (c) "At least 6" is the opposite of "at most 5", so
 \[P(X \ge 6) = 1 - e^{-4}\left(1 + 4 + 8 + \tfrac{32}{3} + \tfrac{32}{3} + \tfrac{128}{15}\right) = 1 - 0.7851 = 0.215\]
@@ -86,7 +95,7 @@ If events occur at a constant average rate of \(k\) per unit of time (or length,
 Always write down the new distribution before you calculate. Counts in separate intervals add, and so do their means: if the number of emails in one hour is \(\mathrm{Po}(4)\), the number in two hours is \(\mathrm{Po}(8)\). [Linear combinations of random variables](#math.s2.linear) states this result for any two independent Poisson variables.
 
 :::warn Scale the mean, not the probability
-If \(P(\text{no flaws in 10 m}) = 0.449\), then \(P(\text{no flaws in 20 m})\) is **not** \(2 \times 0.449\). Double the mean to \(\lambda = 1.6\) and recalculate: \(e^{-1.6} = 0.202\). As a check, both 10 m halves must be flawless, and \(0.449^{2} = 0.202\).
+If \(P(\text{no flaws in 10 m})\) \(= 0.449\), then \(P(\text{no flaws in 20 m})\) is **not** \(2 \times 0.449\). Double the mean to \(\lambda = 1.6\) and recalculate: \(e^{-1.6} = 0.202\). As a check, both 10 m halves must be flawless, and \(0.449^{2} = 0.202\).
 :::
 
 :::eg Flaws occur at random in a cable at an average rate of 0.8 per 10 m. Find the probability that (a) a 25 m length has no flaws, (b) a 5 m length has at least 2 flaws.
@@ -111,12 +120,33 @@ A binomial \(B(n, p)\) with large \(n\) and small \(p\) counts rare events among
 If \(X \sim B(n, p)\) with \(n > 50\) and \(np < 5\), then \(X\) is approximately \(\mathrm{Po}(np)\).
 :::
 
+:::proof Why \(B(n, \lambda/n)\) becomes \(\mathrm{Po}(\lambda)\) as \(n\) grows
+Keep the mean fixed at \(\lambda\) by taking \(p = \dfrac{\lambda}{n}\), and fix a whole number \(r\). The binomial formula gives
+\[P(X = r) = \binom{n}{r}\left(\frac{\lambda}{n}\right)^{r}\left(1 - \frac{\lambda}{n}\right)^{n-r}\]
+Write \(\dbinom{n}{r} = \dfrac{n(n-1)\cdots(n-r+1)}{r!}\) and share the powers of \(n\) out:
+\[P(X = r) = \frac{\lambda^{r}}{r!} \times \frac{n(n-1)\cdots(n-r+1)}{n^{r}} \times \left(1 - \frac{\lambda}{n}\right)^{n} \times \left(1 - \frac{\lambda}{n}\right)^{-r}\]
+Now let \(n\) grow while \(\lambda\) and \(r\) stay fixed:
+- The fraction has \(r\) factors \(\dfrac{n}{n} \cdot \dfrac{n-1}{n} \cdots\), and each tends to 1.
+- \(\left(1 - \dfrac{\lambda}{n}\right)^{n} \to e^{-\lambda}\), which is the standard limit for \(e^{x}\) with \(x = -\lambda\).
+- \(\left(1 - \dfrac{\lambda}{n}\right)^{-r} \to 1\), because \(\dfrac{\lambda}{n} \to 0\) and \(r\) is fixed.
+
+So \(P(X = r) \to \dfrac{\lambda^{r} e^{-\lambda}}{r!}\), the Poisson probability. Check with \(\lambda = 3\) and \(r = 2\): \(B(100, 0.03)\) gives 0.2252, \(B(1000, 0.003)\) gives 0.2242, and \(\mathrm{Po}(3)\) gives 0.2240.
+:::
+
+The widget below shows \(B(100, 0.03)\), which has mean 3. Set the range to 0 to 2 and compare \(P(X \le 2) = 0.420\) with the Poisson value \(0.423\) in the next example: the two distributions are almost the same shape.
+
+:::html
+<div class="widget" data-w="discrete" data-dist="binomial" data-n="100" data-p="0.03" data-range="0,2"></div>
+:::
+
 :::eg In a factory 2% of light bulbs are faulty, independently of each other. A random sample of 150 bulbs is tested. (a) Explain why a Poisson distribution is a suitable approximation. (b) Use it to find the probability that at most 2 bulbs are faulty. (c) Find the exact probability and comment.
 (a) Let \(X\) be the number of faulty bulbs, so \(X \sim B(150, 0.02)\). Here \(n = 150 > 50\) and \(np = 3 < 5\). [B1] So \(X\) is approximately \(\mathrm{Po}(3)\). [B1]
 
-(b) \(P(X \le 2) \approx e^{-3}\left(1 + 3 + \dfrac{9}{2}\right) = 8.5e^{-3}\) [M1] \(= 0.423\) [A1]
+(b) \(P(X \le 2) \approx e^{-3}\left(1 + 3 + \dfrac{9}{2}\right)\) \(= 8.5e^{-3}\) [M1] \(= 0.423\) [A1]
 
-(c) Exactly, \(P(X \le 2) = 0.98^{150} + 150(0.02)(0.98)^{149} + \binom{150}{2}(0.02)^{2}(0.98)^{148} = 0.421\). [B1] The two answers differ by only 0.002, so the approximation is very good. [B1]
+(c) Exactly,
+\[P(X \le 2) = 0.98^{150} + 150(0.02)(0.98)^{149} + \binom{150}{2}(0.02)^{2}(0.98)^{148} = 0.421\]
+[B1] The two answers differ by only 0.002, so the approximation is very good. [B1]
 :::
 
 ## The normal approximation to the Poisson
@@ -167,7 +197,7 @@ For \(N(\lambda, \lambda)\) the second number is the **variance**. Divide by \(\
 :::eg Cars pass a speed camera at random, at a constant average rate of 3.2 per minute. (a) State two conditions needed for a Poisson model. (b) Find the probability that exactly 2 cars pass in a given minute. (c) Find the probability that fewer than 3 cars pass in a 30-second period. (d) Use a suitable approximation to find the probability that more than 20 cars pass in a 5-minute period.
 (a) Cars pass singly (never two at exactly the same instant) and independently of each other. [B1 B1]
 
-(b) \(X \sim \mathrm{Po}(3.2)\), so \(P(X = 2) = \dfrac{e^{-3.2}\,3.2^{2}}{2!} = 0.209\). [M1 A1]
+(b) \(X \sim \mathrm{Po}(3.2)\), so \(P(X = 2) = \dfrac{e^{-3.2}\,3.2^{2}}{2!}\) \(= 0.209\). [M1 A1]
 
 (c) In 30 seconds the mean is 1.6, so \(Y \sim \mathrm{Po}(1.6)\). [B1]
 \[P(Y < 3) = P(Y \le 2) = e^{-1.6}\left(1 + 1.6 + \frac{1.6^{2}}{2}\right) = 0.783\] [M1 A1]
@@ -181,10 +211,24 @@ For \(N(\lambda, \lambda)\) the second number is the **variance**. Divide by \(\
 **Cambridge 9709** examines the Poisson distribution only in Paper 6 (Probability and Statistics 2) and states the conditions \(n > 50\), \(np < 5\) and \(\lambda > 15\). **Edexcel IAL** covers it in Statistics 2 with the same two approximations, but describes the conditions loosely ("\(n\) large, \(p\) small", "\(\lambda\) large"), so follow the wording of the question. **AQA, OCR and Edexcel A Level Mathematics** in the UK do not include the Poisson distribution; it appears in their A Level Further Mathematics statistics options.
 :::
 
+:::eg Spot the error: the continuity correction
+A student answered this question [3 marks]: "\(X \sim \mathrm{Po}(30)\). Use a normal approximation to find \(P(X > 35)\)."
+
+Line 1: \(X\) is approximately \(Y \sim N(30, 30)\).
+Line 2: \(P(X > 35) \approx P(Y > 34.5)\), so \(z = \dfrac{34.5 - 30}{\sqrt{30}} = 0.822\).
+Line 3: \(1 - \Phi(0.822) = 0.206\).
+
+**Line 1 earns [B1]** for \(\lambda > 15\) and the right normal model, with variance 30. **Line 2 scores [M0 A0]**. "\(X > 35\)" means \(X \ge 36\), and the bar for 36 starts at 35.5, not at 34.5. The student treated "more than 35" as "35 or more", so the correction is wrong and the answer mark is lost. Line 3 follows through correctly from the wrong value, but there is no mark left to earn. The student scores 1 out of 3.
+
+Correct working: \(P(X > 35) = P(X \ge 36)\) \(\approx P(Y > 35.5)\), [M1] so \(z = \dfrac{35.5 - 30}{\sqrt{30}} = 1.004\) and \(1 - \Phi(1.004) = 0.158\). [A1]
+
+**Check:** the exact Poisson value is \(0.157\). The student's \(0.206\) is much too large, and \(0.158\) agrees with it.
+:::
+
 :::try Start easy, finish at exam standard
 Q: \(X \sim \mathrm{Po}(1.5)\). Find (a) \(P(X = 2)\), (b) \(P(X \ge 1)\).
-A: (a) \(P(X = 2) = \dfrac{e^{-1.5} \times 1.5^{2}}{2} = 0.251\).
-(b) \(P(X \ge 1) = 1 - P(X = 0) = 1 - e^{-1.5} = 0.777\).
+A: (a) \(P(X = 2) = \dfrac{e^{-1.5} \times 1.5^{2}}{2}\) \(= 0.251\).
+(b) \(P(X \ge 1) = 1 - P(X = 0)\) \(= 1 - e^{-1.5} = 0.777\).
 Q: Say whether a Poisson model is reasonable in each case. If not, state which condition fails or why the variable is not Poisson. (a) The number of texts you receive in each hour of a whole day. (b) The number of sixes in 12 rolls of a die. (c) The number of accidents per day on a motorway, when one crash in fog is usually followed by several more.
 A: (a) Not reasonable: the rate is not constant (many more texts in the evening than at 4 am), and conversations make texts dependent.
 (b) Not Poisson: there are a fixed number of trials (12), so the count cannot exceed 12. It is binomial, \(B(12, \tfrac16)\).
@@ -194,22 +238,60 @@ A: (a) \(X \sim \mathrm{Po}(2)\): \(P(X = 0) = e^{-2} = 0.135\).
 (b) In 3 pages the mean is 6: \(P(Y \ge 1) = 1 - e^{-6} = 0.998\).
 (c) In 2 pages the mean is 4: \(P(W = 4) = \dfrac{e^{-4}\,4^{4}}{4!} = 0.195\).
 Q: \(X \sim \mathrm{Po}(\lambda)\) and \(P(X = 0) = 0.2\). Find \(\lambda\) and hence \(P(X = 1)\).
-A: \(e^{-\lambda} = 0.2\), so \(\lambda = \ln 5 = 1.609\). Then \(P(X = 1) = \lambda e^{-\lambda} = 1.609 \times 0.2 = 0.322\).
+A: \(e^{-\lambda} = 0.2\), so \(\lambda = \ln 5 = 1.609\). Then \(P(X = 1) = \lambda e^{-\lambda}\) \(= 1.609 \times 0.2\) \(= 0.322\).
 Q: \(Y \sim \mathrm{Po}(\lambda)\) and \(P(Y = 3) = 2P(Y = 2)\). Find \(\lambda\) and \(P(Y \le 4)\).
 A: \(\dfrac{P(Y = 3)}{P(Y = 2)} = \dfrac{\lambda}{3}\), so \(\dfrac{\lambda}{3} = 2\) and \(\lambda = 6\). [M1 A1]
-\(P(Y \le 4) = e^{-6}\left(1 + 6 + 18 + 36 + 54\right) = 115e^{-6} = 0.285\). [M1 A1]
+\(P(Y \le 4)\) \(= e^{-6}\left(1 + 6 + 18 + 36 + 54\right)\) \(= 115e^{-6} = 0.285\). [M1 A1]
 Q: \(X \sim B(80, 0.03)\). Show that a Poisson approximation is suitable and use it to find \(P(X \ge 3)\).
 A: \(n = 80 > 50\) and \(np = 2.4 < 5\), so \(X\) is approximately \(\mathrm{Po}(2.4)\).
-\(P(X \ge 3) = 1 - e^{-2.4}\left(1 + 2.4 + \dfrac{2.4^{2}}{2}\right) = 1 - 0.5697 = 0.430\).
+\(P(X \ge 3)\) \(= 1 - e^{-2.4}\left(1 + 2.4 + \dfrac{2.4^{2}}{2}\right)\) \(= 1 - 0.5697 = 0.430\).
 Q: \(X \sim \mathrm{Po}(20)\). Use a normal approximation to find \(P(X < 15)\).
-A: \(X\) is approximately \(Y \sim N(20, 20)\). \(P(X < 15) = P(X \le 14) \approx P(Y < 14.5)\). [M1]
+A: \(X\) is approximately \(Y \sim N(20, 20)\). \(P(X < 15) = P(X \le 14)\) \(\approx P(Y < 14.5)\). [M1]
 \(z = \dfrac{14.5 - 20}{\sqrt{20}} = -1.230\), so the probability is \(\Phi(-1.230) = 0.109\). [M1 A1]
 Q: (Exam style) A bakery sells a speciality loaf at random, at a mean rate of 4 loaves per day. (a) The bakery bakes 7 loaves each day. Find the probability that it runs out, meaning demand is more than 7. (b) The bakery wants the probability of running out to be less than 1%. What is the smallest number of loaves it should bake each day? (c) Baking 7 loaves a day, find the probability that it runs out on exactly 2 of the next 5 days.
-A: (a) \(X \sim \mathrm{Po}(4)\). \(P(X > 7) = 1 - P(X \le 7) = 1 - 0.9489 = 0.0511\). [M1 A1]
+A: (a) \(X \sim \mathrm{Po}(4)\). \(P(X > 7) = 1 - P(X \le 7)\) \(= 1 - 0.9489 = 0.0511\). [M1 A1]
 (b) We need \(P(X > n) < 0.01\), that is \(P(X \le n) > 0.99\). [M1]
 \(P(X \le 8) = 0.9786\), which is too small, but \(P(X \le 9) = 0.9919\). The bakery should bake 9 loaves. [A1]
 (c) The days are independent, so the number of run-out days is \(B(5, 0.0511)\). [M1]
-\(P(\text{exactly 2}) = \binom{5}{2}(0.0511)^{2}(0.9489)^{3} = 0.0223\). [A1]
+\(P(\text{exactly 2})\) \(= \binom{5}{2}(0.0511)^{2}(0.9489)^{3}\) \(= 0.0223\). [A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ \(X \sim \mathrm{Po}(2.5)\). Find \(P(X = 3)\) and \(P(X \ge 1)\).
+A: \(P(X = 3) = \dfrac{e^{-2.5} \times 2.5^3}{3!}\) [M1] \(= 0.214\). [A1] \(P(X \ge 1) = 1 - P(X = 0)\) \(= 1 - e^{-2.5} = 0.918\). [A1]
+Q: [4 marks] ★ Calls arrive at a switchboard at random, at a mean rate of 1.5 per minute. Find the probability of (a) no calls in a 2-minute period, (b) at least 2 calls in a 1-minute period.
+A: (a) In 2 minutes the mean is 3, so \(X \sim \mathrm{Po}(3)\). [B1] \(P(X = 0) = e^{-3} = 0.0498\). [A1] (b) Let \(Y\) be the number of calls in 1 minute, so \(Y \sim \mathrm{Po}(1.5)\). \(P(Y \ge 2) = 1 - P(Y \le 1)\) [M1] \(= 1 - e^{-1.5}(1 + 1.5)\) \(= 1 - 0.5578\) \(= 0.442\). [A1]
+Q: [3 marks] ★ The number of customers who enter a shop in each minute is modelled by a Poisson distribution. (a) State two conditions needed for this model to be valid. (b) Explain why the model is unlikely to fit the number of customers per minute over a whole day, from opening to closing.
+A: (a) Customers enter singly, [B1] and independently of one another, at a constant average rate. [B1] (b) The rate is not constant: it is much higher at lunchtime and after work than early in the morning, so the constant average rate condition fails. [B1]
+Q: [5 marks] ★★ A drug causes a side effect in 1.5% of patients, independently of each other. A trial gives the drug to 120 patients. (a) Explain why a Poisson distribution is a suitable approximation for the number of patients with the side effect. (b) Use it to find the probability that at most 1 patient has the side effect. (c) Calculate the exact probability and comment.
+A: (a) Let \(X\) be the number of patients with the side effect, so \(X \sim B(120, 0.015)\). Here \(n = 120 > 50\) and \(np = 1.8 < 5\), [B1] so \(X\) is approximately \(\mathrm{Po}(1.8)\). [B1] (b) \(P(X \le 1) \approx e^{-1.8}(1 + 1.8)\) [M1] \(= 0.463\). [A1] (c) Exactly, \(P(X \le 1)\) \(= 0.985^{120} + 120(0.015)(0.985)^{119}\) \(= 0.461\), so the approximation is very close. [B1]
+Q: [4 marks] ★★ \(X \sim \mathrm{Po}(18)\). Use a normal approximation to find \(P(15 \le X \le 20)\).
+A: \(\lambda = 18 > 15\), so \(X\) is approximately \(Y \sim N(18, 18)\). [B1] "15 to 20 inclusive" runs from the lower edge of the bar for 15 to the upper edge of the bar for 20, so \(P(14.5 < Y < 20.5)\). [M1] The standard deviation is \(\sqrt{18}\), so
+\[z_1 = \frac{14.5 - 18}{\sqrt{18}} = -0.825, \qquad z_2 = \frac{20.5 - 18}{\sqrt{18}} = 0.589\]
+[M1] and the probability is \(\Phi(0.589) - \Phi(-0.825)\) \(= 0.517\). [A1]
+Q: [7 marks] ★★ Emails arrive at random at a mean rate of 6 per hour. (a) Find the probability that more than 8 emails arrive in one hour. (b) Find the probability that at least 2 emails arrive in a 15-minute period. (c) Over 5 independent hours, find the probability that exactly 2 of the hours have more than 8 emails.
+A: (a) \(X \sim \mathrm{Po}(6)\). "More than 8" is \(X \ge 9\), so \(P(X > 8) = 1 - P(X \le 8)\) [M1] \(= 1 - 0.8472 = 0.153\). [A1] (b) In 15 minutes the mean is 1.5, so \(Y \sim \mathrm{Po}(1.5)\). [B1] \(P(Y \ge 2)\) \(= 1 - e^{-1.5}(1 + 1.5)\) [M1] \(= 0.442\). [A1] (c) The number of busy hours is \(W \sim B(5, 0.1528)\), using the unrounded probability from (a). [M1] \(P(W = 2)\) \(= \dbinom52(0.1528)^2(0.8472)^3\) \(= 0.142\). [A1]
+Q: [9 marks] (#math.s1.drv) ★★★ Calls to a helpline arrive at random, at a mean rate of 0.9 per minute. (a) Find the probability that at least 2 calls arrive in a given minute. (b) In 10 independent one-minute periods, find the probability that exactly 3 of them have at least 2 calls. (c) Use a normal approximation to find the probability that more than 33 calls arrive in a 30-minute period.
+H: For (a), the number of calls in a minute is \(\mathrm{Po}(0.9)\). "At least 2" is \(1 - P(X \le 1)\).
+H: For (b), each minute either has at least 2 calls or it does not, with the probability from (a), independently. What distribution counts the number of such minutes?
+H: For (c), find the mean for 30 minutes first. Then "more than 33" means \(X \ge 34\), so the cut-off is 33.5.
+A: (a) \(X \sim \mathrm{Po}(0.9)\). \(P(X \ge 2) = 1 - P(X \le 1)\) [M1] \(= 1 - e^{-0.9}(1 + 0.9)\) \(= 0.2275\). [A1] (b) The number of such minutes is \(W \sim B(10, 0.2275)\). [B1] \(P(W = 3)\) \(= \dbinom{10}{3}(0.2275)^3(0.7725)^7\) [M1] \(= 0.232\). [A1] (c) In 30 minutes the mean is 27, so \(Y \sim \mathrm{Po}(27)\). Since \(27 > 15\), \(Y\) is approximately \(V \sim N(27, 27)\). [B1] \(P(Y > 33) = P(Y \ge 34)\) \(\approx P(V > 33.5)\), [M1] with
+\[z = \frac{33.5 - 27}{\sqrt{27}} = 1.251\]
+[M1] so the probability is \(1 - \Phi(1.251) = 0.105\). [A1]
+:::
+
+:::try Stretch for A*
+Q: [7 marks] ★★★ A source emits particles at random, at a mean rate of 4 per second. A detector records each emitted particle independently with probability 0.75 and misses it otherwise. (a) Find the probability that exactly 2 particles are emitted in a second and the detector records both. (b) Let \(Y\) be the number of particles recorded in a second. Show that \(P(Y = 0) = e^{-3}\). (c) What does the result suggest about the distribution of \(Y\)?
+H: For (a), the number emitted is \(\mathrm{Po}(4)\). Given 2 emitted, each is recorded with probability 0.75, independently.
+H: For (b), \(Y = 0\) happens when \(n\) particles are emitted and all \(n\) are missed, for \(n = 0, 1, 2, \dots\). Add these cases.
+H: You will need \(\sum_{n=0}^{\infty}\dfrac{x^n}{n!} = e^{x}\).
+A: (a) \(P(\text{2 emitted}) = \dfrac{e^{-4} 4^2}{2!}\) \(= 0.1465\). [B1] Both recorded has probability \(0.75^2\), [M1] so the probability is \(0.1465 \times 0.5625 = 0.0824\). [A1] (b) If \(n\) particles are emitted, all are missed with probability \(0.25^n\). Adding over all \(n\), [M1]
+\[P(Y = 0) = \sum_{n=0}^{\infty} \frac{e^{-4}4^n}{n!}(0.25)^n = e^{-4}\sum_{n=0}^{\infty}\frac{1^n}{n!}\]
+[M1] \(= e^{-4} \times e^{1} = e^{-3}\). [A1] (c) \(e^{-3}\) is \(P(X = 0)\) for \(\mathrm{Po}(3)\), and \(3 = 4 \times 0.75\) is the mean number recorded. This suggests \(Y \sim \mathrm{Po}(3)\): a Poisson stream, thinned at random, is still a Poisson stream. [B1]
+Q: [4 marks] ★★★ The number of faults in 1 m of cable is counted in each of 10 pieces: 2, 5, 0, 7, 1, 6, 3, 9, 0, 4. A technician suggests a Poisson model. Find the mean and the variance of these counts (use divisor 10 for the variance), and say whether the data support the suggestion.
+H: A Poisson distribution has its mean equal to its variance. Calculate both for the data.
+H: Use \(\sum x\) and \(\sum x^2\), and \(\text{variance} = \dfrac{\sum x^2}{n} - \bar{x}^2\).
+A: \(\sum x = 37\), so the mean is \(3.7\). [B1] \(\sum x^2 = 221\), [M1] so the variance is \(\dfrac{221}{10} - 3.7^2 = 8.41\). [A1] A Poisson model needs the variance to be close to the mean, but this variance is more than double the mean, so the data do not support it. Faults may come in clusters or the rate may vary along the cable, which breaks independence or the constant rate. [B1]
 :::
 
 :::quiz Quick check
@@ -237,6 +319,28 @@ A: (a) \(X \sim \mathrm{Po}(4)\). \(P(X > 7) = 1 - P(X \le 7) = 1 - 0.9489 = 0.0
 - \(N(200, 0.01)\)
 - \(\mathrm{Po}(0.01)\)
 > Here \(n = 200 > 50\) and \(np = 2 < 5\), so use \(\mathrm{Po}(np) = \mathrm{Po}(2)\).
+? \(X \sim \mathrm{Po}(3)\). What is \(P(X \ge 2)\)?
+- \(1 - 8.5e^{-3} = 0.577\)
+- \(1 - 4.5e^{-3} = 0.776\)
++ \(1 - 4e^{-3} = 0.801\)
+- \(4e^{-3} = 0.199\)
+> "At least 2" is the complement of "at most 1", so subtract \(P(0) + P(1) = e^{-3}(1 + 3)\) \(= 4e^{-3}\) from 1. The first option removes \(P(X \le 2)\), which is the answer to "at least 3".
+? A sample of hourly counts has mean 5.1 and variance 5.3. What does this suggest about a Poisson model?
++ It is plausible, because a Poisson distribution has its mean equal to its variance.
+- It is not plausible, because the mean and variance are not exactly equal.
+- It is not plausible, because the variance of a Poisson distribution is the square of the mean.
+- It must be binomial, because the variance is close to the mean.
+> The mean and variance of a Poisson variable are equal, so values this close support the model. Sample values are never exactly equal, and a similar mean and variance does not by itself make a variable binomial.
+:::
+
+:::checklist What you can now do
+- [ ] I can state the conditions for a Poisson model and say, in context, which one fails.
+- [ ] I can find \(P(X = r)\), \(P(X \le r)\) and "at least" probabilities for \(X \sim \mathrm{Po}(\lambda)\).
+- [ ] I can state that the mean and the variance of a Poisson variable are both \(\lambda\), and use this to find \(\lambda\).
+- [ ] I can rescale the mean to a longer or shorter interval and write down the new distribution first.
+- [ ] I can say when \(B(n, p)\) can be replaced by \(\mathrm{Po}(np)\) and use the approximation.
+- [ ] I can say when \(\mathrm{Po}(\lambda)\) can be replaced by \(N(\lambda, \lambda)\) and apply the continuity correction correctly.
+- [ ] I can combine a Poisson probability with a binomial one, for example counting the busy hours in a day.
 :::
 
 :::recap

@@ -11,6 +11,15 @@ A straight line has one gradient, but almost everything that changes in the real
 
 **Before you start**, you need negative and fractional indices from [Indices, surds and standard form](#math.f.powers), the equation of a line and perpendicular gradients from [Coordinate geometry](#math.p1.coord), and composite functions from [Functions](#math.p1.functions). Factorising and solving quadratics, from [Quadratics](#math.p1.quadratics), appear in almost every example.
 
+:::try Warm-up
+Q: Write \(\dfrac{5}{\sqrt{x}}\) as a power of \(x\). (from [Indices, surds and standard form](#math.f.powers))
+A: \(\sqrt{x} = x^{1/2}\), so \(\dfrac{5}{\sqrt{x}} = 5x^{-1/2}\).
+Q: Solve \(3x^2 - 6x - 9 = 0\). (from [Quadratics](#math.p1.quadratics))
+A: Divide by 3: \(x^2 - 2x - 3 = 0\), so \((x - 3)(x + 1) = 0\) and \(x = 3\) or \(x = -1\).
+Q: Find the gradient of any line perpendicular to \(3x + 4y = 8\). (from [Coordinate geometry](#math.p1.coord))
+A: The line is \(y = -\tfrac34 x + 2\), gradient \(-\tfrac34\). The perpendicular gradient is \(\tfrac43\).
+:::
+
 ## The gradient of a curve
 
 The gradient of a straight line is the same everywhere: it rises by the same amount for every step to the right. A curve is different. On \(y = x^3\) the graph is almost flat near the origin and very steep at \(x = 3\). So for a curve we can only talk about its gradient **at a particular point**.
@@ -67,6 +76,20 @@ Repeating the chord method for other powers reveals a pattern: \(x^2\) has deriv
 - Differentiate a sum or difference term by term.
 - A constant on its own differentiates to 0 (the graph \(y = c\) is flat).
 - In particular \(\dfrac{d}{dx}(kx) = k\): the gradient of a straight line.
+:::
+
+:::proof Why the power rule works (positive whole-number powers)
+Take the point \(P(x, x^n)\) and a second point \(Q\) at \(x + h\). The chord \(PQ\) has gradient
+\[\frac{(x + h)^n - x^n}{h}\]
+Expand \((x + h)^n\) with the binomial theorem from [Series](#math.p1.series):
+\[(x + h)^n = x^n + nx^{n-1}h + \binom{n}{2}x^{n-2}h^2 + \dots + h^n\]
+The first term cancels \(x^n\), and every other term has a factor \(h\), so dividing by \(h\) gives
+\[\text{gradient of } PQ = nx^{n-1} + \binom{n}{2}x^{n-2}h + \dots + h^{n-1}\]
+Now let \(h\) tend to 0. Every term that still contains \(h\) tends to 0, and only \(nx^{n-1}\) is left. The gradient of the curve at \(P\) is therefore \(nx^{n-1}\). For \(n = 3\) this is the \(3x^2 + 3xh + h^2 \to 3x^2\) you met above.
+
+:::html
+<div class="widget" data-w="proof" data-proof="chordlimit"></div>
+:::
 :::
 
 :::eg Differentiate \(y = 4x^3 - 5x^2 + 7x - 2\).
@@ -128,6 +151,15 @@ For powers of a bracket this gives the shortcut
 "Differentiate the outside, keep the inside, then multiply by the derivative of the inside."
 :::
 
+:::proof Why the chain rule works (the idea)
+Change \(x\) by a small amount \(\delta x\). Then \(u\) changes by \(\delta u\), and \(y\) changes by \(\delta y\), because \(y\) depends on \(u\).
+For any such small changes the fractions can be multiplied, since \(\delta u\) cancels:
+\[\frac{\delta y}{\delta x} = \frac{\delta y}{\delta u} \times \frac{\delta u}{\delta x}\]
+Now let \(\delta x \to 0\). Then \(\delta u \to 0\) as well, and each fraction tends to its derivative:
+\[\frac{dy}{dx} = \frac{dy}{du} \times \frac{du}{dx}\]
+This is the idea, not a full proof: it assumes \(\delta u \neq 0\). A complete proof handles the case where \(u\) does not change.
+:::
+
 :::eg Differentiate \(y = (3x - 1)^5\).
 Let \(u = 3x - 1\), so \(y = u^5\).
 \[\frac{dy}{du} = 5u^4 \qquad \frac{du}{dx} = 3\]
@@ -169,6 +201,12 @@ The straight line through a point on a curve that is perpendicular to the tangen
 - Gradient of the tangent: \(m = \dfrac{dy}{dx}\) evaluated at \(x = x_1\).
 - Gradient of the normal: \(-\dfrac{1}{m}\) (perpendicular gradients multiply to \(-1\)).
 - Equation of either line: \(y - y_1 = (\text{gradient})(x - x_1)\).
+:::
+
+In the graph below the red line is the tangent at the red point and the dashed line is a chord from that point to a second point a distance \(h\) to the right. Drag the red point along the curve, and shrink \(h\) with its slider: the chord gradient closes in on the tangent gradient. Where is the tangent horizontal?
+
+:::html
+<div class="widget" data-w="graph" data-fns="x^3 - 3*x" data-x="-2.5,3" data-y="-5,6" data-tangent="1.5" data-chord="1"></div>
 :::
 
 :::eg (Exam style) The curve \(y = x^2 - \dfrac{4}{x}\) passes through \(P(2, 2)\). (a) Find the equations of the tangent and the normal to the curve at \(P\). (b) The tangent meets the \(x\)-axis at \(A\) and the normal meets the \(x\)-axis at \(B\). Find the area of triangle \(PAB\).
@@ -325,6 +363,21 @@ Cambridge P1 covers everything in this chapter, including the chain rule and con
 MF19 lists the derivative of \(x^n\) but not the chain rule, the conditions for maximum and minimum, or the formulas for areas and volumes used in rates questions (except the sphere and the cone). Learn them. Give a reason, such as "\(\dfrac{d^2y}{dx^2} < 0\) so maximum", every time you state the nature of a point: the mark depends on it.
 :::
 
+:::eg Spot the error: find the equation of the normal to \(y = x^2 - 4x + 7\) at the point where \(x = 3\).
+A student wrote this answer.
+
+Line 1: \(\dfrac{dy}{dx} = 2x - 4\)
+Line 2: At \(x = 3\), \(\dfrac{dy}{dx} = 2\)
+Line 3: The normal has gradient \(-\tfrac12\)
+Line 4: \(y - 2 = -\tfrac12(x - 3)\), so \(x + 2y - 7 = 0\)
+
+Lines 1 to 3 are correct and earn the first three marks [M1 A1 M1]. **Line 4 loses the last mark [A0].** The student used the gradient, 2, as the \(y\)-coordinate of the point. The point on the curve comes from the equation of the **curve**: \(y = 9 - 12 + 7 = 4\), so the point is \((3, 4)\).
+
+Correct line 4: \(y - 4 = -\tfrac12(x - 3)\), so \(2y - 8 = -x + 3\) and \(x + 2y - 11 = 0\). [A1]
+
+Always find the \(y\)-coordinate by substituting into \(y = f(x)\), never into \(f'(x)\).
+:::
+
 :::try Start easy, finish at exam standard
 Q: Differentiate \(y = 5x^4 - 3x^2 + 8x - 7\).
 A: \(\dfrac{dy}{dx} = 20x^3 - 6x + 8\).
@@ -353,6 +406,42 @@ A: The point lies on the curve: \(a + b = 6\). [B1]
 \(\dfrac{dy}{dx} = 2ax - \dfrac{b}{x^2}\), which is 0 at \(x = 1\): \(2a - b = 0\). [M1 A1]
 Adding the two equations: \(3a = 6\), so \(a = 2\) and \(b = 4\). [A1]
 \(\dfrac{d^2y}{dx^2} = 2a + \dfrac{2b}{x^3} = 4 + 8 = 12 > 0\) at \(x = 1\), so it is a minimum point. [M1 A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ Find \(\dfrac{dy}{dx}\) when \(y = 3x^4 - \dfrac{5}{x^2} + 6\sqrt{x}\).
+A: \(y = 3x^4 - 5x^{-2} + 6x^{1/2}\), so \(\dfrac{dy}{dx} = 12x^3 + 10x^{-3} + 3x^{-1/2}\), that is \(12x^3 + \dfrac{10}{x^3} + \dfrac{3}{\sqrt{x}}\). [B1 B1 B1, one for each term]
+Q: [3 marks] ★ \(f(x) = \sqrt{4x - 3}\). Find \(f'(3)\).
+A: \(f(x) = (4x - 3)^{1/2}\), so \(f'(x) = \tfrac12(4x - 3)^{-1/2} \times 4 = 2(4x - 3)^{-1/2}\). [M1 A1] \(f'(3) = 2 \times 9^{-1/2} = \tfrac23\). [A1]
+Q: [4 marks] ★★ \(f(x) = x^3 + 6x^2 + 15x - 4\). Show that \(f\) is an increasing function for all real \(x\).
+A: \(f'(x) = 3x^2 + 12x + 15\). [B1] \(= 3(x^2 + 4x + 5) = 3\big[(x + 2)^2 + 1\big]\). [M1 A1] A square is never negative, so \(f'(x) \geq 3 > 0\) for all \(x\), and \(f\) is increasing. [A1]
+Q: [6 marks] ★★ The curve \(y = x^3 - 6x^2 + 9x + 2\) has two stationary points. Find their coordinates and determine their nature.
+A: \(\dfrac{dy}{dx} = 3x^2 - 12x + 9\). [B1] Setting it to 0: \(3(x - 1)(x - 3) = 0\), so \(x = 1\) or \(x = 3\). [M1 A1] \(y = 1 - 6 + 9 + 2 = 6\) and \(y = 27 - 54 + 27 + 2 = 2\), so the points are \((1, 6)\) and \((3, 2)\). [A1] \(\dfrac{d^2y}{dx^2} = 6x - 12\). [M1] It is \(-6 < 0\) at \(x = 1\), a maximum, and \(6 > 0\) at \(x = 3\), a minimum. [A1]
+Q: [6 marks] ★★ The tangent to the curve \(y = 2\sqrt{x}\) at the point \(P\) where \(x = 4\) meets the \(x\)-axis at \(A\) and the \(y\)-axis at \(B\). Find the area of triangle \(OAB\), where \(O\) is the origin.
+A: At \(x = 4\), \(y = 4\). [B1] \(\dfrac{dy}{dx} = x^{-1/2}\), so the gradient at \(P\) is \(\tfrac12\). [M1 A1] Tangent: \(y - 4 = \tfrac12(x - 4)\), so \(y = \tfrac12 x + 2\). [A1] It meets the axes at \(A(-4, 0)\) and \(B(0, 2)\). [M1] Area \(= \tfrac12 \times 4 \times 2 = 4\). [A1]
+Q: [4 marks] ★★ The side \(x\) cm of a square increases at a constant rate. When \(x = 12\), the area of the square is increasing at \(6\,\mathrm{cm^2\,s^{-1}}\). Find the rate at which (a) \(x\) is increasing, (b) the perimeter is increasing.
+A: \(A = x^2\), so \(\dfrac{dA}{dx} = 2x = 24\) at \(x = 12\). [M1] \(\dfrac{dA}{dt} = \dfrac{dA}{dx} \times \dfrac{dx}{dt}\) gives \(6 = 24 \times \dfrac{dx}{dt}\), so \(\dfrac{dx}{dt} = 0.25\,\mathrm{cm\,s^{-1}}\). [A1] (b) \(P = 4x\), so \(\dfrac{dP}{dt} = 4 \times 0.25 = 1\,\mathrm{cm\,s^{-1}}\). [M1 A1]
+Q: [10 marks] (#math.f.geometry) ★★★ A closed cylindrical tin has radius \(r\) cm and height \(h\) cm. Its volume is \(250\pi\,\mathrm{cm^3}\). (a) Show that the total surface area is \(S = 2\pi r^2 + \dfrac{500\pi}{r}\). (b) Find the value of \(r\) for which \(S\) has a stationary value. (c) Show that this is a minimum and find the minimum surface area, to 3 s.f.
+H: Use the volume \(\pi r^2 h = 250\pi\) to write \(h\) in terms of \(r\), so the area has only one variable.
+H: The surface area is two circles plus the curved surface: \(S = 2\pi r^2 + 2\pi r h\). Substitute \(h\).
+H: Write \(\dfrac{500\pi}{r}\) as \(500\pi r^{-1}\) before you differentiate.
+A: (a) \(h = \dfrac{250}{r^2}\). [B1] \(S = 2\pi r^2 + 2\pi r h\) [M1] \(= 2\pi r^2 + 2\pi r \times \dfrac{250}{r^2} = 2\pi r^2 + \dfrac{500\pi}{r}\). [A1] (b) \(\dfrac{dS}{dr} = 4\pi r - 500\pi r^{-2}\). [M1 A1] Setting it to 0: \(r^3 = 125\) [M1], so \(r = 5\). [A1] (c) \(\dfrac{d^2S}{dr^2} = 4\pi + 1000\pi r^{-3}\), which is \(4\pi + 8\pi = 12\pi > 0\) at \(r = 5\), so it is a minimum. [M1 A1] \(S = 50\pi + 100\pi = 150\pi = 471\,\mathrm{cm^2}\) (3 s.f.). [A1]
+Q: [7 marks] (#math.p1.coord) ★★★ The point \(P\left(a, \dfrac{12}{a}\right)\) lies on the curve \(y = \dfrac{12}{x}\), where \(a > 0\). The tangent to the curve at \(P\) meets the \(x\)-axis at \(A\) and the \(y\)-axis at \(B\). Show that the area of triangle \(OAB\) is 24, whatever the value of \(a\).
+H: Write \(y = 12x^{-1}\) and find the gradient at \(x = a\).
+H: Use \(y - y_1 = m(x - x_1)\) at \(P\), then put \(y = 0\) and \(x = 0\) in turn.
+H: The intercepts come out as \(x = 2a\) and \(y = \dfrac{24}{a}\).
+A: \(\dfrac{dy}{dx} = -12x^{-2}\), so the gradient at \(P\) is \(-\dfrac{12}{a^2}\). [M1 A1] Tangent: \(y - \dfrac{12}{a} = -\dfrac{12}{a^2}(x - a)\). [M1] When \(y = 0\): \(-\dfrac{12}{a} = -\dfrac{12}{a^2}(x - a)\), so \(x - a = a\) and \(A = (2a, 0)\). [A1] When \(x = 0\): \(y = \dfrac{12}{a} + \dfrac{12}{a} = \dfrac{24}{a}\), so \(B = \left(0, \dfrac{24}{a}\right)\). [A1] Area \(= \tfrac12 \times 2a \times \dfrac{24}{a}\) [M1] \(= 24\). [A1]
+:::
+
+:::try Stretch for A*
+Q: [6 marks] ★★★ Find the set of values of \(k\) for which the equation \(x^3 - 3x^2 - 9x + k = 0\) has three distinct real roots.
+H: Rewrite as \(x^3 - 3x^2 - 9x = -k\). The roots are the points where the horizontal line \(y = -k\) meets the curve \(y = x^3 - 3x^2 - 9x\).
+H: Find the stationary points of that curve. A horizontal line meets a ∪∩-shaped cubic three times only if it lies between the two turning values.
+A: Let \(g(x) = x^3 - 3x^2 - 9x\). Then \(g'(x) = 3(x - 3)(x + 1)\), so the stationary points are at \(x = -1\) and \(x = 3\). [M1 A1] \(g(-1) = 5\), a maximum, and \(g(3) = -27\), a minimum. [A1 A1] The line \(y = -k\) meets the curve three times exactly when it lies strictly between the minimum and the maximum: \(-27 < -k < 5\). [M1] So \(-5 < k < 27\). [A1]
+Q: [7 marks] ★★★ The tangent to \(y = x^3\) at the point \(A(a, a^3)\), where \(a \neq 0\), meets the curve again at \(B\). Show that the gradient of the curve at \(B\) is four times its gradient at \(A\).
+H: Find the tangent at \(A\), then put its equation equal to \(y = x^3\) to find where they meet.
+H: You get a cubic in \(x\) with a repeated root at \(x = a\) (the tangent touches there). Expand \((x - a)^2(x + 2a)\) to check the cubic.
+A: The gradient at \(A\) is \(3a^2\), so the tangent is \(y - a^3 = 3a^2(x - a)\), that is \(y = 3a^2 x - 2a^3\). [M1 A1] Meeting the curve: \(x^3 - 3a^2 x + 2a^3 = 0\). [M1] This factorises as \((x - a)^2(x + 2a) = 0\). [M1 A1] The repeated root \(x = a\) is the point of contact, so \(B\) has \(x = -2a\). [A1] The gradient at \(B\) is \(3(-2a)^2 = 12a^2 = 4 \times 3a^2\). [A1]
 :::
 
 :::quiz
@@ -386,6 +475,18 @@ Adding the two equations: \(3a = 6\), so \(a = 2\) and \(b = 4\). [A1]
 + \(12\pi\) cm² s⁻¹
 - \(36\pi\) cm² s⁻¹
 > \(\dfrac{dA}{dr} = 2\pi r = 6\pi\) when \(r = 3\), and \(\dfrac{dA}{dt} = 6\pi \times 2 = 12\pi\). Stopping at \(6\pi\) forgets to multiply by \(\dfrac{dr}{dt}\).
+:::
+
+:::checklist What you can now do
+- [ ] I can explain the gradient of a curve as the limit of chord gradients.
+- [ ] I can differentiate sums of powers of \(x\), including roots and fractions I first rewrite as powers.
+- [ ] I can use the chain rule to differentiate a bracket raised to a power.
+- [ ] I can find the second derivative and use it to tell a maximum from a minimum.
+- [ ] I can find the equation of a tangent or a normal at a given point.
+- [ ] I can find where a function is increasing or decreasing, and show that it is increasing for all \(x\).
+- [ ] I can find stationary points and justify their nature.
+- [ ] I can solve connected rates of change problems with the chain rule.
+- [ ] I can set up and solve a maximum or minimum problem in one variable.
 :::
 
 :::recap

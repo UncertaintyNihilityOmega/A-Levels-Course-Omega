@@ -11,6 +11,15 @@ A footballer's free kick, a water jet, and the arc of a thrown javelin all follo
 
 **Before you start**, you need the constant acceleration equations from [Kinematics](#math.m.kinematics), resolving forces from [Forces and equilibrium](#math.m.forces) and trigonometry from [Trigonometry](#math.p1.trig). Quadratics are in [Quadratics](#math.p1.quadratics).
 
+:::try Warm-up
+Q: A ball is thrown vertically upwards at \(15\ \mathrm{m\,s^{-1}}\). Find the greatest height above the launch point. Take \(g = 10\). (from [Kinematics](#math.m.kinematics))
+A: \(0 = 15^2 - 2 \times 10 \times s\), so \(s = \dfrac{225}{20} = 11.25\) m.
+Q: Solve \(\sin 2\alpha = 0.6\) for \(0^\circ < \alpha < 90^\circ\). (from [Trigonometry](#math.p1.trig))
+A: \(2\alpha = 36.87^\circ\) or \(180^\circ - 36.87^\circ = 143.13^\circ\), so \(\alpha = 18.4^\circ\) or \(71.6^\circ\).
+Q: Find the greatest value of \(y = 4x - \tfrac{x^2}{10}\) and the value of \(x\) at which it occurs. (from [Quadratics](#math.p1.quadratics))
+A: \(y = -\tfrac{1}{10}(x^2 - 40x)\) \(= -\tfrac{1}{10}(x - 20)^2 + 40\). The greatest value is 40, at \(x = 20\).
+:::
+
 ## Projectile motion
 
 :::def Projectile
@@ -33,6 +42,20 @@ A projectile is launched with speed \(u\) at angle \(\alpha\) above the horizont
 - Trajectory: \(y = x\tan\alpha - \dfrac{gx^2}{2u^2\cos^2\alpha}\), a parabola
 - Speed at time \(t\): \(\sqrt{(u\cos\alpha)^2 + (u\sin\alpha - gt)^2}\); direction \(\tan\theta = \dfrac{u\sin\alpha - gt}{u\cos\alpha}\)
 Do not memorise these without understanding them: in exams, it is safer to build each result from the table.
+:::
+
+:::proof Why the path is a parabola, and why \(45^\circ\) gives the longest range
+**The path.** From the table, \(x = ut\cos\alpha\) and \(y = ut\sin\alpha - \tfrac12 gt^2\). From the first, \(t = \dfrac{x}{u\cos\alpha}\). Put this into the second:
+\[y = x\tan\alpha - \frac{gx^2}{2u^2\cos^2\alpha}\]
+The right-hand side is \(ax - bx^2\) with \(b = \dfrac{g}{2u^2\cos^2\alpha} > 0\), which is a quadratic in \(x\) with a negative \(x^2\) term. Its graph is a parabola that opens downwards, so the path is a parabola.
+
+**The range.** The ball is back at launch height when \(y = 0\). Factorising out \(x\): \(x\left(\tan\alpha - \dfrac{gx}{2u^2\cos^2\alpha}\right) = 0\). So \(x = 0\) (the launch) or
+\[R = \frac{2u^2\cos^2\alpha\tan\alpha}{g} = \frac{2u^2\sin\alpha\cos\alpha}{g} = \frac{u^2\sin 2\alpha}{g}\]
+using \(\sin 2\alpha = 2\sin\alpha\cos\alpha\).
+
+**The best angle.** For a given speed \(u\), \(R\) is largest when \(\sin 2\alpha\) is largest. The largest value of a sine is 1, when \(2\alpha = 90^\circ\), so \(\alpha = 45^\circ\). Also \(\sin 2\alpha = \sin(180^\circ - 2\alpha)\), so \(\alpha\) and \(90^\circ - \alpha\) give the same range.
+
+Check with \(u = 20\) and \(g = 10\): \(30^\circ\) and \(60^\circ\) both give \(R = 40\sin 60^\circ = 34.6\) m, and \(45^\circ\) gives 40 m. Launch at \(30^\circ\) and then \(60^\circ\) in the widget below to see the same range with different heights.
 :::
 
 :::steps
@@ -79,7 +102,9 @@ Energy check: \(v^2 = 20^2 + 2 \times 10 \times 30 = 1000\), so \(v = 31.6\). �
 \(\sin\alpha = 0.6\), \(\cos\alpha = 0.8\), so the components are \(u\cos\alpha = 20\) and \(u\sin\alpha = 15\).
 At the wall \(x = 20\), so \(t = 1\) s. Then
 \[y = 15(1) - 5(1)^2 = 10\ \text{m}\]
-Using the trajectory equation: \(y = 20 \times 0.75 - \dfrac{10 \times 400}{2 \times 25^2 \times 0.64} = 15 - 5 = 10\) m. ✓
+Using the trajectory equation:
+\[y = 20 \times 0.75 - \dfrac{10 \times 400}{2 \times 25^2 \times 0.64} = 15 - 5 = 10\ \text{m}\]
+The two methods agree. ✓
 At the wall the ball is 10 m high, which is above 4 m, so the ball clears the wall.
 :::
 
@@ -172,6 +197,20 @@ About to tip about \(C\): \(R_A = 0\). Moments about \(C\): the load \(W\) at \(
 - **CAIE 9709**: neither topic is in Paper 4.
 :::
 
+:::eg Spot the error: sine and cosine swapped
+A student answered this question [6 marks]: "A ball is projected from level ground with speed \(25\ \mathrm{m\,s^{-1}}\) at an angle \(\alpha\) above the horizontal, where \(\tan\alpha = \tfrac34\). Find (a) the greatest height, (b) the time of flight. Take \(g = 10\)."
+
+Line 1: \(\sin\alpha = 0.6\) and \(\cos\alpha = 0.8\). The vertical component is \(25 \times 0.8 = 20\).
+Line 2: Greatest height: \(0 = 20^2 - 2 \times 10 \times H\), so \(H = 20\) m.
+Line 3: Time of flight \(= \dfrac{2 \times 20}{10} = 4\) s.
+
+**Line 1 scores [B0 B0]**: the student has the right \(\sin\alpha\) and \(\cos\alpha\), but the vertical component is \(u\sin\alpha = 15\) and the horizontal one is \(u\cos\alpha = 20\). They have used the horizontal component as the vertical one. **Line 2 earns [M1 A0]**: the vertical equation is a correct method, but it uses the wrong starting velocity. **Line 3 earns [M1 A0]**, for the same reason. The student scores 2 out of 6.
+
+Correct working: the components are \(u\cos\alpha = 20\) horizontally and \(u\sin\alpha = 15\) vertically. [B1 B1] \(0 = 15^2 - 2 \times 10 \times H\), [M1] so \(H = 11.25\) m. [A1] \(T = \dfrac{2 \times 15}{10}\) [M1] \(= 3\) s. [A1]
+
+**Check:** \(\tan\alpha = \tfrac34\) is less than 1, so the angle is below \(45^\circ\) and the ball starts out moving more horizontally than vertically. The vertical component must be the smaller one, 15, not 20.
+:::
+
 :::try Start easy, finish at exam standard
 Q: A ball is launched at \(40\ \mathrm{m\,s^{-1}}\) at \(60^\circ\) above the horizontal. Find the horizontal and vertical components of the velocity.
 A: Horizontal \(40\cos 60^\circ = 20\ \mathrm{m\,s^{-1}}\). Vertical \(40\sin 60^\circ = 34.6\ \mathrm{m\,s^{-1}}\).
@@ -193,6 +232,39 @@ Q: (Exam style) A ball is projected from the top of a cliff 20 m high at \(15\ \
 A: Components: horizontal 9, vertical 12. [B1] \(-20 = 12t - 5t^2\), so \(5t^2 - 12t - 20 = 0\). [M1 A1] \(t = \dfrac{12 + \sqrt{544}}{10} = 3.53\) s. [A1] Horizontal distance \(= 9 \times 3.532 = 31.8\) m. [A1] Speed: \(v^2 = 15^2 + 2 \times 10 \times 20 = 625\), so \(v = 25\ \mathrm{m\,s^{-1}}\). [M1 A1]
 Q: (Exam style) A uniform plank \(AB\) of length 4 m and mass 12 kg rests on supports at \(A\) and \(C\) with \(AC = 3\) m. A load of mass 8 kg is at \(B\). Find the reaction at \(C\). [4 marks]
 A: Weight of plank 120 N at 2 m, load 80 N at 4 m. [B1] Moments about \(A\): \(3R_C = 120 \times 2 + 80 \times 4 = 560\). [M1 A1] \(R_C = 187\) N. [A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [5 marks] ★ A stone is thrown horizontally at \(8\ \mathrm{m\,s^{-1}}\) from a bridge 20 m above the water. Find (a) the time taken to reach the water, (b) the horizontal distance travelled, (c) the speed of the stone as it hits the water. Take \(g = 10\).
+A: (a) \(20 = 5t^2\), [M1] so \(t = 2\) s. [A1] (b) \(8 \times 2 = 16\) m. [B1] (c) The vertical speed is \(10 \times 2 = 20\ \mathrm{m\,s^{-1}}\), so the speed is \(\sqrt{8^2 + 20^2}\) [M1] \(= 21.5\ \mathrm{m\,s^{-1}}\). [A1]
+Q: [3 marks] ★ A light rod \(AB\) of length 3 m carries a mass of 2 kg at \(A\) and a mass of 4 kg at \(B\). The rod balances horizontally on a pivot at a point \(C\). Find \(AC\).
+A: Let \(AC = x\). Moments about \(C\): \(2gx = 4g(3 - x)\). [M1 A1] \(2x = 12 - 4x\), so \(x = 2\) m. [A1]
+Q: [3 marks] ★ A ball is projected from level ground at \(26\ \mathrm{m\,s^{-1}}\) at an angle \(\alpha\) above the horizontal, where \(\sin\alpha = \tfrac{5}{13}\). Find the greatest height reached. Take \(g = 10\).
+A: Vertical component \(= 26 \times \tfrac{5}{13} = 10\ \mathrm{m\,s^{-1}}\). [B1] \(0 = 10^2 - 2 \times 10 \times H\), [M1] so \(H = 5\) m. [A1]
+Q: [6 marks] ★★ A ball is hit from level ground with speed \(20\ \mathrm{m\,s^{-1}}\) at \(40^\circ\) above the horizontal. A fence 2 m high stands 30 m from the point where the ball is hit, on level ground. Show that the ball clears the fence. Take \(g = 10\).
+A: Horizontal component \(= 20\cos 40^\circ = 15.32\). [B1] The ball reaches the fence when \(t = \dfrac{30}{15.32}\) [M1] \(= 1.958\) s. [A1] Its height then is \(20\sin 40^\circ \times 1.958 - 5 \times 1.958^2\) [M1] \(= 25.17 - 19.17 = 6.00\) m. [A1] Since \(6.00 > 2\), the ball clears the fence, by about 4 m. [A1]
+Q: [6 marks] ★★ A uniform plank \(AB\) of length 5 m and mass 16 kg rests horizontally on supports at \(A\) and at \(C\), where \(AC = 4\) m. A man of mass 64 kg stands on the plank at \(B\). (a) Show that the plank would tip. (b) Find the greatest distance from \(A\) at which the man can stand without the plank tipping. Take \(g = 10\).
+A: (a) Moments about \(A\): \(4R_C = 160 \times 2.5 + 640 \times 5\), [M1 A1] so \(R_C = 900\) N. The total weight is 800 N, so \(R_A = 800 - 900 = -100\) N. A support cannot pull, so the plank tips. [A1] (b) The plank is about to tip when \(R_A = 0\). The man is at distance \(x\) from \(A\). Moments about \(C\): \(640(x - 4) = 160 \times 1.5\). [M1 A1] \(x = 4.375\) m. [A1]
+Q: [6 marks] ★★ A uniform rod \(AB\) of length 3 m and mass 8 kg is hinged to a vertical wall at \(A\). It is held horizontally by a light string from \(B\) to a point on the wall above \(A\), and the string makes \(40^\circ\) with the rod. Find the tension in the string and the magnitude of the force of the wall on the rod at the hinge. Take \(g = 10\).
+A: Moments about \(A\): \(T\sin 40^\circ \times 3 = 80 \times 1.5\). [M1 A1] \(T = 62.2\) N. [A1] Hinge force: horizontal component \(X = T\cos 40^\circ = 47.7\) N. [M1] Vertical component \(Y = 80 - T\sin 40^\circ = 40\) N. [A1] Magnitude \(= \sqrt{47.7^2 + 40^2} = 62.2\) N. [A1]
+Q: [9 marks] (#math.p3.trig) ★★★ A ball is projected from a point \(O\) on level ground with speed \(20\ \mathrm{m\,s^{-1}}\) at an angle \(\alpha\) above the horizontal. It passes through a point \(P\) which is 30 m horizontally from \(O\) and 5 m above the ground. Take \(g = 10\). (a) Show that \(9\tan^2\alpha - 24\tan\alpha + 13 = 0\). (b) Find the two possible values of \(\alpha\).
+H: Write \(x\) and \(y\) in terms of \(t\) and eliminate \(t\) using \(x = 30\), or use the trajectory equation directly.
+H: The equation will contain \(\dfrac{1}{\cos^2\alpha}\). Replace it using \(\sec^2\alpha = 1 + \tan^2\alpha\), from [Further trigonometry](#math.p3.trig).
+H: Collect all terms on one side, and multiply by a number to get whole-number coefficients.
+A: (a) \(x = 20t\cos\alpha\) and \(y = 20t\sin\alpha - 5t^2\). [B1] At \(P\), \(30 = 20t\cos\alpha\), so \(t = \dfrac{1.5}{\cos\alpha}\). [M1] Then
+\[5 = 20\sin\alpha\cdot\frac{1.5}{\cos\alpha} - 5\cdot\frac{2.25}{\cos^2\alpha} = 30\tan\alpha - 11.25\sec^2\alpha\] [M1 A1]
+Using \(\sec^2\alpha = 1 + \tan^2\alpha\): \(5 = 30\tan\alpha - 11.25 - 11.25\tan^2\alpha\), [M1] so \(11.25\tan^2\alpha - 30\tan\alpha + 16.25 = 0\). Multiplying by 0.8 gives \(9\tan^2\alpha - 24\tan\alpha + 13 = 0\). [A1] (b) \(\tan\alpha = \dfrac{24 \pm \sqrt{576 - 468}}{18}\) [M1] \(= 1.911\) or \(0.756\). [A1] \(\alpha = 62.4^\circ\) or \(37.1^\circ\). [A1] Check: \(30(1.911) - 11.25(1 + 1.911^2) = 5.00\). ✓
+:::
+
+:::try Stretch for A*
+Q: [7 marks] ★★★ A ball is projected from level ground and lands at distance \(R\) from the point of projection, having reached a greatest height \(H\). The angle of projection is \(\alpha\). (a) Use the results for \(H\) and \(R\) to show that \(\tan\alpha = \dfrac{4H}{R}\). (b) A ball lands 60 m away and reaches a greatest height of 20 m. Find \(\alpha\) and the speed of projection. Take \(g = 10\).
+H: Write \(H = \dfrac{u^2\sin^2\alpha}{2g}\) and \(R = \dfrac{2u^2\sin\alpha\cos\alpha}{g}\). Divide one by the other.
+H: For (b), once you have \(\alpha\), use the height equation to find \(u\).
+A: (a) \(H = \dfrac{u^2\sin^2\alpha}{2g}\) and \(R = \dfrac{2u^2\sin\alpha\cos\alpha}{g}\). [B1] \(\dfrac{H}{R} = \dfrac{\sin^2\alpha}{2g}\times\dfrac{g}{2\sin\alpha\cos\alpha}\) [M1] \(= \dfrac{\tan\alpha}{4}\), so \(\tan\alpha = \dfrac{4H}{R}\). [A1] (b) \(\tan\alpha = \dfrac{80}{60} = \dfrac43\), so \(\alpha = 53.1^\circ\). [M1 A1] Then \(\sin\alpha = 0.8\) and \(20 = \dfrac{u^2(0.64)}{20}\), [M1] so \(u^2 = 625\) and \(u = 25\ \mathrm{m\,s^{-1}}\). [A1] Check: \(R = \dfrac{u^2\sin 2\alpha}{g} = \dfrac{625 \times 0.96}{10} = 60\). ✓
+Q: [6 marks] ★★★ A dart is fired from a point \(O\) with speed \(25\ \mathrm{m\,s^{-1}}\) at an angle \(\alpha\) above the horizontal, where \(\tan\alpha = \tfrac34\), straight at a target. The target is 40 m horizontally from \(O\) and 30 m above it. At the instant the dart is fired, the target is released and falls freely. Show that the dart hits the target, and find the time and the height at which it does so. Take \(g = 10\).
+H: Find the dart's velocity components, then the time at which it has travelled 40 m horizontally.
+H: At that time, compare the height of the dart with the height of the target. Both have fallen the same \(5t^2\) below the straight-line path.
+A: The components are \(25\cos\alpha = 20\) and \(25\sin\alpha = 15\). [B1] The dart has travelled 40 m horizontally when \(20t = 40\), [M1] so \(t = 2\) s. [A1] The dart's height then is \(15 \times 2 - 5 \times 4 = 10\) m. [M1] The target's height is \(30 - 5 \times 4 = 10\) m, so they are at the same point: the dart hits the target at \(t = 2\) s, 10 m above \(O\). [A1] This works for any speed: the dart's height is \(d\tan\alpha - 5t^2\) and the target's is \(h - 5t^2\), and aiming straight at the target means \(d\tan\alpha = h\). Gravity pulls both down by the same amount, provided the target has not reached the ground first. [B1]
 :::
 
 :::quiz Check your understanding
@@ -228,6 +300,16 @@ A: Weight of plank 120 N at 2 m, load 80 N at 4 m. [B1] Moments about \(A\): \(3
 > \(3 \times 2 = 4 \times d\), so \(d = 1.5\) m. The rod's own weight is at the pivot and has no moment.
 :::
 
+:::checklist What you can now do
+- [ ] I can resolve a launch velocity and treat the horizontal and vertical motions separately.
+- [ ] I can find the time of flight, greatest height and range of a projectile, from level ground or from a height.
+- [ ] I can find the position, speed and direction of a projectile at a given time.
+- [ ] I can use the trajectory equation, for example to decide whether a ball clears a wall or to find the angles that hit a target.
+- [ ] I can find the moment of a force about a point using the perpendicular distance.
+- [ ] I can take moments to find the forces on a uniform rod or beam in equilibrium.
+- [ ] I can tell when a beam is about to tip, because a support reaction becomes zero.
+:::
+
 :::recap
 - Projectile: horizontal constant velocity \(u\cos\alpha\); vertical acceleration \(-g\) with initial velocity \(u\sin\alpha\). Time links the two.
 - Level ground: \(T = \dfrac{2u\sin\alpha}{g}\), \(H = \dfrac{u^2\sin^2\alpha}{2g}\), \(R = \dfrac{u^2\sin 2\alpha}{g}\) (greatest at \(45^\circ\)). Trajectory \(y = x\tan\alpha - \dfrac{gx^2}{2u^2\cos^2\alpha}\).
@@ -245,4 +327,4 @@ A: Weight of plank 120 N at 2 m, load 80 N at 4 m. [B1] Moments about \(A\): \(3
 
 Links checked 3 October 2026.
 :::
-Next: [Further Mathematics: a guided tour](#math.further).
+Next: [Proof: how mathematicians know](#math.proof), then [Further Mathematics: a guided tour](#math.further).

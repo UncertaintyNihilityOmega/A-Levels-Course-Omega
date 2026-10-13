@@ -11,6 +11,15 @@ The modulus gives the size of a number without its sign, which is how we describ
 
 **Before you start**, you need quadratics and inequalities from [Quadratics](#math.p1.quadratics), the transformations of graphs in [Functions](#math.p1.functions), and expanding and factorising in [Algebra from scratch](#math.f.algebra).
 
+:::try Warm-up
+Q: Solve \(x^2 - 5x - 14 \ge 0\). (from [Quadratics](#math.p1.quadratics))
+A: \((x - 7)(x + 2) \ge 0\), so \(x \le -2\) or \(x \ge 7\).
+Q: The graph of \(y = f(x)\) has its vertex at \((2, -3)\). Where is the vertex of \(y = f(x + 1) - 2\)? (from [Functions](#math.p1.functions))
+A: \(x + 1\) shifts the graph 1 unit left and \(-2\) shifts it 2 units down: \((1, -5)\).
+Q: Factorise \(6x^2 + x - 2\). (from [Algebra from scratch](#math.f.algebra))
+A: \((3x + 2)(2x - 1)\). Check: \(6x^2 - 3x + 4x - 2\). ✓
+:::
+
 ## The modulus
 
 :::def Modulus
@@ -42,6 +51,13 @@ When both sides contain a variable, the most reliable method is to **square both
 :::key Squaring with a modulus
 \[|a| = |b| \iff a^2 = b^2\]
 For \(|a| = b\), where \(b\) may contain \(x\), square both sides to get \(a^2 = b^2\), then **check every solution** in the original equation: squaring can add false answers (those where \(b < 0\)).
+:::
+
+:::proof Why \(|a| = |b|\) means \(a^2 = b^2\)
+The modulus only removes a sign, so \(|a|^2 = a^2\): if \(a = -5\) then \(|a|^2 = 25 = a^2\). Now suppose \(|a| = |b|\). Squaring both sides gives
+\[a^2 = |a|^2 = |b|^2 = b^2\]
+Going back, suppose \(a^2 = b^2\). Then \(a^2 - b^2 = 0\), which factorises as \((a - b)(a + b) = 0\). So \(a = b\) or \(a = -b\). Either way \(a\) and \(b\) are the same distance from zero, so \(|a| = |b|\).
+The two statements are equivalent, which is why squaring is safe when **both** sides are moduli. It can add false answers when one side is a modulus and the other side can be negative.
 :::
 
 :::eg Solve (a) \(|x - 2| = |3x + 4|\), (b) \(|x + 1| = 2x - 4\)
@@ -130,7 +146,7 @@ Use long division. Divide the leading term of what is left by the leading term o
 
 The quotient is \(2x^2 - x - 1\) and the remainder is \(4\):
 \[2x^3 - 5x^2 + x + 6 = (x - 2)(2x^2 - x - 1) + 4\]
-Check: \((x - 2)(2x^2 - x - 1) = 2x^3 - 5x^2 + x + 2\), and adding 4 gives \(2x^3 - 5x^2 + x + 6\). ✓
+Check: \((x - 2)(2x^2 - x - 1)\) \(= 2x^3 - 5x^2 + x + 2\), and adding 4 gives \(2x^3 - 5x^2 + x + 6\). ✓
 :::
 
 :::eg Divide \(x^4 + 2x^3 - 7x^2 + 3x + 5\) by \(x^2 + x - 1\).
@@ -164,11 +180,11 @@ Reason: \(f(x) = (x - a)q(x) + r\). Put \(x = a\) and the bracket vanishes, leav
 To solve a cubic \(f(x) = 0\): try small factors of the constant term (\(\pm1, \pm2, \pm3, \ldots\)) until \(f(a) = 0\); that gives a factor \((x - a)\). Divide to get a quadratic, then factorise or use the formula. For a leading coefficient other than 1, the possible rational roots are \(\dfrac{\text{factor of constant}}{\text{factor of leading coefficient}}\).
 
 :::eg Solve (a) \(x^3 - 4x^2 + x + 6 = 0\), (b) \(2x^3 - 3x^2 - 11x + 6 = 0\), (c) \(x^3 - x^2 - 3x - 1 = 0\) giving exact answers.
-(a) \(f(2) = 8 - 16 + 2 + 6 = 0\), so \((x - 2)\) is a factor. Dividing: \(x^3 - 4x^2 + x + 6 = (x - 2)(x^2 - 2x - 3) = (x - 2)(x - 3)(x + 1)\). The solutions are \(x = 2, 3, -1\).
+(a) \(f(2) = 8 - 16 + 2 + 6 = 0\), so \((x - 2)\) is a factor. Dividing: \(x^3 - 4x^2 + x + 6\) \(= (x - 2)(x^2 - 2x - 3)\) \(= (x - 2)(x - 3)(x + 1)\). The solutions are \(x = 2, 3, -1\).
 
-(b) From the earlier example \(f(3) = 0\). Dividing by \((x - 3)\): \(2x^3 - 3x^2 - 11x + 6 = (x - 3)(2x^2 + 3x - 2) = (x - 3)(2x - 1)(x + 2)\). The solutions are \(x = 3, \tfrac12, -2\).
+(b) From the earlier example \(f(3) = 0\). Dividing by \((x - 3)\): \(2x^3 - 3x^2 - 11x + 6\) \(= (x - 3)(2x^2 + 3x - 2)\) \(= (x - 3)(2x - 1)(x + 2)\). The solutions are \(x = 3, \tfrac12, -2\).
 
-(c) Try \(x = -1\): \(-1 - 1 + 3 - 1 = 0\), so \((x + 1)\) is a factor. Dividing: \((x + 1)(x^2 - 2x - 1)\). The quadratic has discriminant \(4 + 4 = 8\), so \(x = \dfrac{2 \pm \sqrt8}{2} = 1 \pm \sqrt2\). The solutions are \(x = -1\), \(1 + \sqrt2\), \(1 - \sqrt2\).
+(c) Try \(x = -1\): \(-1 - 1 + 3 - 1 = 0\), so \((x + 1)\) is a factor. Dividing: \((x + 1)(x^2 - 2x - 1)\). The quadratic has discriminant \(4 + 4 = 8\), so \(x = \dfrac{2 \pm \sqrt8}{2}\) \(= 1 \pm \sqrt2\). The solutions are \(x = -1\), \(1 + \sqrt2\), \(1 - \sqrt2\).
 :::
 
 A polynomial with an unknown coefficient can be found by substituting a known root or remainder. Write one equation for each piece of information, then solve them together.
@@ -191,7 +207,7 @@ Divide by 4: \(x^3 - 25x^2 + 150x - 252 = 0\). [A1]
 
 **(b)** \(f(3) = 27 - 225 + 450 - 252 = 0\), so \(x = 3\) is a solution and \((x - 3)\) is a factor. [M1]
 \[x^3 - 25x^2 + 150x - 252 = (x - 3)(x^2 - 22x + 84)\] [M1]
-The quadratic has discriminant \(484 - 336 = 148\), so \(x = \dfrac{22 \pm \sqrt{148}}{2} = 11 \pm \sqrt{37}\), which is \(17.08\) or \(4.917\). [M1]
+The quadratic has discriminant \(484 - 336 = 148\), so \(x = \dfrac{22 \pm \sqrt{148}}{2}\) \(= 11 \pm \sqrt{37}\), which is \(17.08\) or \(4.917\). [M1]
 The width \(20 - 2x\) must be positive, so \(x < 10\). The other possible value is \(x = 11 - \sqrt{37} = 4.92\) cm (3 s.f.). [A1]
 :::
 
@@ -205,6 +221,20 @@ The width \(20 - 2x\) must be positive, so \(x < 10\). The other possible value 
 Edexcel IAL covers the modulus and the factor and remainder theorems in P2 and P3 (modulus functions with graphs and inequalities appear in P3). UK A Levels (AQA, Edexcel, OCR) include the factor theorem in Pure Year 1 and the modulus function in Year 2. Cambridge restricts the modulus graph to linear expressions, so do not expect \(|f(x)|\) for other functions in a Cambridge paper.
 :::
 
+:::eg Spot the error: find the remainder when \(f(x) = x^3 + 2x^2 - 5x + 1\) is divided by \((2x + 3)\), and say whether \((2x + 3)\) is a factor
+A student wrote this answer.
+
+Line 1: remainder \(= f\left(\tfrac32\right)\)
+Line 2: \(f\left(\tfrac32\right)\) \(= \tfrac{27}{8} + \tfrac{9}{2} - \tfrac{15}{2} + 1\) \(= \tfrac{11}{8}\)
+Line 3: the remainder is not zero, so \((2x + 3)\) is not a factor.
+
+**Line 1 scores [M0]:** \((2x + 3)\) is zero when \(x = -\tfrac32\), not \(+\tfrac32\). Substituting the wrong value is a wrong method, so Line 2 earns no accuracy mark [A0]. Line 3 draws a correct conclusion from the student's own non-zero remainder, so it keeps its mark [B1 ft].
+
+Correct working: \(f\left(-\tfrac32\right)\) \(= -\tfrac{27}{8} + \tfrac{9}{2} + \tfrac{15}{2} + 1\) \(= \tfrac{77}{8}\) [M1 A1]. Still not zero, so \((2x + 3)\) is not a factor. [B1]
+
+**Check:** to find the number to substitute, solve "divisor \(= 0\)": \(2x + 3 = 0\) gives \(x = -\tfrac32\). Do this every time and the sign slip cannot happen.
+:::
+
 :::try Start easy, finish at exam standard
 Q: Solve (a) \(|3x - 1| = 8\), (b) \(|x - 4| = |x + 2|\).
 A: (a) \(3x - 1 = 8\) gives \(x = 3\); \(3x - 1 = -8\) gives \(x = -\tfrac73\). (b) Square: \(x^2 - 8x + 16 = x^2 + 4x + 4\), so \(12 = 12x\) and \(x = 1\). Check: \(|-3| = 3 = |3|\). ✓
@@ -215,17 +245,46 @@ A: (a) \(-7 < 2x + 1 < 7\) gives \(-4 < x < 3\). (b) \(x - 3 \ge 4\) or \(x - 3 
 Q: Solve \(|x - 1| = 3x + 5\), and check your answers.
 A: Square: \(x^2 - 2x + 1 = 9x^2 + 30x + 25\), so \(8x^2 + 32x + 24 = 0\) and \(x^2 + 4x + 3 = 0\), giving \(x = -1\) or \(x = -3\). Check \(x = -1\): \(|-2| = 2\) and \(3(-1) + 5 = 2\). ✓ Check \(x = -3\): \(|-4| = 4\) but \(3(-3) + 5 = -4\). ✗ So \(x = -1\) only.
 Q: Find the remainder when \(f(x) = x^3 - 5x + 3\) is divided by (a) \(x - 2\), (b) \(x + 1\), (c) \(2x - 1\).
-A: (a) \(f(2) = 8 - 10 + 3 = 1\). (b) \(f(-1) = -1 + 5 + 3 = 7\). (c) \(f\left(\tfrac12\right) = \tfrac18 - \tfrac52 + 3 = \tfrac58\).
+A: (a) \(f(2) = 8 - 10 + 3 = 1\). (b) \(f(-1) = -1 + 5 + 3 = 7\). (c) \(f\left(\tfrac12\right)\) \(= \tfrac18 - \tfrac52 + 3 = \tfrac58\).
 Q: Divide \(x^3 + 3x^2 - 4x - 12\) by \(x + 3\), and hence solve \(x^3 + 3x^2 - 4x - 12 = 0\).
 A: The quotient is \(x^2 - 4\) and the remainder is \(0\) (since \(f(-3) = -27 + 27 + 12 - 12 = 0\)). So \(f(x) = (x + 3)(x - 2)(x + 2)\) and \(x = -3, 2, -2\).
 Q: Show that \((x + 2)\) is a factor of \(x^3 + 4x^2 + x - 6\) and solve the equation \(x^3 + 4x^2 + x - 6 = 0\).
-A: \(f(-2) = -8 + 16 - 2 - 6 = 0\), so \((x + 2)\) is a factor. Dividing: \((x + 2)(x^2 + 2x - 3) = (x + 2)(x + 3)(x - 1)\). The solutions are \(x = -2, -3, 1\).
+A: \(f(-2) = -8 + 16 - 2 - 6 = 0\), so \((x + 2)\) is a factor. Dividing: \((x + 2)(x^2 + 2x - 3)\) \(= (x + 2)(x + 3)(x - 1)\). The solutions are \(x = -2, -3, 1\).
 Q: Divide \(2x^4 - x^3 + 3x - 1\) by \(x^2 - x + 1\) and state the quotient and remainder.
-A: \(2x^2 \cdot (x^2 - x + 1) = 2x^4 - 2x^3 + 2x^2\), leaving \(x^3 - 2x^2 + 3x - 1\). Next \(x(x^2 - x + 1) = x^3 - x^2 + x\), leaving \(-x^2 + 2x - 1\). Next \(-1(x^2 - x + 1) = -x^2 + x - 1\), leaving \(x\). The quotient is \(2x^2 + x - 1\) and the remainder is \(x\).
+A: \(2x^2 \cdot (x^2 - x + 1)\) \(= 2x^4 - 2x^3 + 2x^2\), leaving \(x^3 - 2x^2 + 3x - 1\). Next \(x(x^2 - x + 1) = x^3 - x^2 + x\), leaving \(-x^2 + 2x - 1\). Next \(-1(x^2 - x + 1) = -x^2 + x - 1\), leaving \(x\). The quotient is \(2x^2 + x - 1\) and the remainder is \(x\).
 Q: Solve the inequality \(|x + 1| < |2x - 5|\).
 A: Square both sides: \(x^2 + 2x + 1 < 4x^2 - 20x + 25\), so \(3x^2 - 22x + 24 > 0\). Factorise: \((3x - 4)(x - 6) > 0\), with critical values \(\tfrac43\) and \(6\). So \(x < \tfrac43\) or \(x > 6\). Check \(x = 0\): \(1 < 5\) ✓; \(x = 3\): \(4 < 1\) false, and \(3\) is between the roots ✓.
 Q: (Exam style) The polynomial \(f(x) = 2x^3 + ax^2 + bx + 6\) is divisible by \((x - 2)\) and leaves remainder \(18\) when divided by \((x + 1)\). (a) Find \(a\) and \(b\). (b) Factorise \(f(x)\) completely and solve \(f(x) = 0\).
-A: (a) \(f(2) = 16 + 4a + 2b + 6 = 0\), so \(2a + b = -11\). [M1 A1] \(f(-1) = -2 + a - b + 6 = 18\), so \(a - b = 14\). [M1 A1] Adding: \(3a = 3\), so \(a = 1\) and \(b = -13\). [A1] (b) \(f(x) = 2x^3 + x^2 - 13x + 6 = (x - 2)(2x^2 + 5x - 3)\). [M1] \(= (x - 2)(2x - 1)(x + 3)\), so \(x = 2, \tfrac12, -3\). [A1 A1]
+A: (a) \(f(2) = 16 + 4a + 2b + 6 = 0\), so \(2a + b = -11\). [M1 A1] \(f(-1) = -2 + a - b + 6 = 18\), so \(a - b = 14\). [M1 A1] Adding: \(3a = 3\), so \(a = 1\) and \(b = -13\). [A1] (b) \(f(x) = 2x^3 + x^2 - 13x + 6\) \(= (x - 2)(2x^2 + 5x - 3)\). [M1] \(= (x - 2)(2x - 1)(x + 3)\), so \(x = 2, \tfrac12, -3\). [A1 A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ Solve the equation \(|3x - 2| = 10\).
+A: \(3x - 2 = 10\) gives \(x = 4\). [M1 A1] \(3x - 2 = -10\) gives \(x = -\tfrac83\). [A1]
+Q: [2 marks] ★ Find the remainder when \(2x^3 - x^2 + 5\) is divided by \((x + 2)\).
+A: The remainder is \(f(-2)\). [M1] \(f(-2) = -16 - 4 + 5 = -15\). [A1]
+Q: [5 marks] ★★ Solve the inequality \(|x - 4| \ge 2|x + 1|\).
+A: Both sides are non-negative, so square: \((x - 4)^2 \ge 4(x + 1)^2\). [M1] \(x^2 - 8x + 16 \ge 4x^2 + 8x + 4\), so \(3x^2 + 16x - 12 \le 0\). [A1] \((3x - 2)(x + 6) \le 0\). [M1] Critical values \(x = \tfrac23\) and \(x = -6\). [A1] The quadratic is \(\le 0\) between them: \(-6 \le x \le \tfrac23\). [A1]
+Q: [5 marks] ★★ (a) Solve the equation \(|2x - 6| = x + 3\). (b) Hence solve the inequality \(|2x - 6| < x + 3\).
+A: (a) \(2x - 6 = x + 3\) gives \(x = 9\). [M1 A1] \(-(2x - 6) = x + 3\) gives \(x = 1\). [A1] Check both: \(|12| = 12\) and \(|-4| = 4\). (b) The V-shaped graph is below the line between the two intersections, so \(1 < x < 9\). [B1 B1] Check \(x = 3\): \(0 < 6\). ✓
+Q: [8 marks] ★★ The polynomial \(f(x) = x^3 + px^2 - 7x + q\) has a factor \((x - 1)\) and leaves remainder \(18\) when divided by \((x + 2)\). (a) Find \(p\) and \(q\). (b) Factorise \(f(x)\) completely and solve \(f(x) = 0\).
+A: (a) \(f(1) = 0\): \(1 + p - 7 + q = 0\), so \(p + q = 6\). [M1 A1] \(f(-2) = 18\): \(-8 + 4p + 14 + q = 18\), so \(4p + q = 12\). [M1 A1] Subtracting gives \(3p = 6\), so \(p = 2\) and \(q = 4\). [A1] (b) \(f(x) = x^3 + 2x^2 - 7x + 4\) \(= (x - 1)(x^2 + 3x - 4)\). [M1 A1] \(= (x - 1)^2(x + 4)\), so \(x = 1\) (repeated) or \(x = -4\). [A1]
+Q: [10 marks] (#math.p1.quadratics) ★★★ The polynomial \(g(x) = x^3 + 2x^2 + kx + 12\) has a factor \((x + 3)\). (a) Find the value of \(k\). (b) Show that the equation \(g(x) = 0\) has only one real root. (c) When \(g(x)\) is divided by \((x^2 - 1)\), the remainder is \(px + q\). Find \(p\) and \(q\).
+H: Use the factor theorem: what must \(g(-3)\) equal? Then divide, and look at the quadratic factor.
+H: A quadratic has no real roots when its discriminant \(b^2 - 4ac\) is negative.
+H: Write \(g(x) = (x^2 - 1)Q(x) + px + q\). The bracket \((x^2 - 1)\) is zero when \(x = 1\) and when \(x = -1\): substitute both.
+A: (a) \(g(-3) = -27 + 18 - 3k + 12 = 0\) [M1], so \(3 - 3k = 0\) and \(k = 1\). [A1] (b) \(g(x) = x^3 + 2x^2 + x + 12\) \(= (x + 3)(x^2 - x + 4)\). [M1 A1] For the quadratic, \(b^2 - 4ac = 1 - 16 = -15 < 0\). [M1] So it has no real roots, and the only real root of \(g(x) = 0\) is \(x = -3\). [A1] (c) \(g(1) = p + q\) and \(g(-1) = -p + q\). [M1] \(g(1) = 1 + 2 + 1 + 12 = 16\) and \(g(-1) = -1 + 2 - 1 + 12 = 12\). [A1] Adding: \(2q = 28\), so \(q = 14\). [M1] Subtracting: \(2p = 4\), so \(p = 2\). [A1]
+:::
+
+:::try Stretch for A*
+Q: [5 marks] ★★★ Find the set of values of \(k\) for which the equation \(|2x - 1| = x + k\) has two distinct solutions.
+H: Sketch \(y = |2x - 1|\), a V with its vertex at \(\left(\tfrac12, 0\right)\), and the line \(y = x + k\), which has gradient 1. Think about where the line must pass.
+H: Or solve the two linear equations \(2x - 1 = x + k\) and \(1 - 2x = x + k\), then work out when each solution is valid.
+A: \(2x - 1 = x + k\) gives \(x = k + 1\), and \(1 - 2x = x + k\) gives \(x = \dfrac{1 - k}{3}\). [M1 A1 A1] The first needs \(2x - 1 \ge 0\), so \(x \ge \tfrac12\), which gives \(k \ge -\tfrac12\). The second needs \(x \le \tfrac12\), which also gives \(k \ge -\tfrac12\). [M1] At \(k = -\tfrac12\) both solutions equal \(\tfrac12\) (one solution). For \(k > -\tfrac12\) they are different. So there are two distinct solutions when \(k > -\tfrac12\). [A1]
+Q: [5 marks] ★★★ A polynomial \(p(x)\) leaves remainder 4 when divided by \((x - 1)\) and remainder 10 when divided by \((x - 3)\). Find the remainder when \(p(x)\) is divided by \((x - 1)(x - 3)\).
+H: Dividing by a quadratic leaves a remainder of the form \(ax + b\). Write the division as an identity.
+H: Put \(x = 1\) and \(x = 3\) in your identity: the bracket \((x - 1)(x - 3)\) becomes zero both times.
+A: \(p(x) = (x - 1)(x - 3)Q(x) + ax + b\). [M1] \(p(1) = 4\) gives \(a + b = 4\). [M1 A1] \(p(3) = 10\) gives \(3a + b = 10\). [A1] Subtracting: \(2a = 6\), so \(a = 3\) and \(b = 1\). The remainder is \(3x + 1\). [A1]
 :::
 
 :::quiz
@@ -253,12 +312,29 @@ A: (a) \(f(2) = 16 + 4a + 2b + 6 = 0\), so \(2a + b = -11\). [M1 A1] \(f(-1) = -
 - \(k = 2\)
 - \(k = 0\)
 > \(f(3) = 27 - 27 + 3k + 6 = 3k + 6 = 0\), so \(k = -2\). Forgetting that the terms \(27\) and \(-27\) cancel, or dropping the constant 6, gives the other values.
+? To find the remainder when \(f(x)\) is divided by \((3x - 2)\), which value do you substitute?
++ \(x = \tfrac23\)
+- \(x = -\tfrac23\)
+- \(x = \tfrac32\)
+- \(x = 2\)
+> The divisor is zero when \(3x - 2 = 0\), so \(x = \tfrac23\). Using \(-\tfrac23\) is a sign slip, \(\tfrac32\) turns the fraction upside down, and \(2\) ignores the \(3\).
+:::
+
+:::checklist What you can now do
+- [ ] I can sketch \(y = |ax + b|\) and mark its vertex and intercepts.
+- [ ] I can solve \(|ax + b| = c\) and \(|ax + b| = |cx + d|\).
+- [ ] I can solve \(|ax + b| = cx + d\) and reject the false answers that squaring creates.
+- [ ] I can solve inequalities such as \(|x - a| < b\) and \(|ax + b| > |cx + d|\).
+- [ ] I can divide a polynomial of degree 4 or less by a linear or quadratic expression.
+- [ ] I can use the remainder theorem, including divisors such as \((2x + 3)\).
+- [ ] I can use the factor theorem to factorise a cubic and solve the equation.
+- [ ] I can find unknown coefficients from facts about a factor and a remainder.
 :::
 
 :::recap
 - \(|x|\) is the size of \(x\). \(|ax + b| = c\) gives \(ax + b = \pm c\) (none if \(c < 0\)). \(|a| = |b| \iff a^2 = b^2\); check answers after squaring.
 - \(|x - a| < b \iff a - b < x < a + b\), and \(|x - a| > b\) is two pieces. The graph of \(y = |ax + b|\) is a V with vertex \(\left(-\tfrac ba, 0\right)\).
-- Polynomial division: \(f(x) = \text{divisor} \times \text{quotient} + \text{remainder}\), remainder of lower degree than the divisor. Write missing powers as \(0x^n\).
+- Polynomial division: \(f(x)\) \(= \text{divisor} \times \text{quotient} + \text{remainder}\), remainder of lower degree than the divisor. Write missing powers as \(0x^n\).
 - Remainder theorem: the remainder on dividing by \((x - a)\) is \(f(a)\); by \((ax + b)\) it is \(f(-b/a)\). Factor theorem: \(f(a) = 0 \iff (x - a)\) is a factor.
 - To solve a cubic: find one root by trial, divide, then solve the quadratic. Unknown coefficients: one equation per condition.
 :::

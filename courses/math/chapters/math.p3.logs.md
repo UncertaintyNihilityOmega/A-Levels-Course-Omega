@@ -11,6 +11,15 @@ Many real quantities change by a constant factor in equal steps: money at compou
 
 **Before you start**, you need the index laws from [Indices, surds and standard form](#math.f.powers), the idea of an inverse function and the reflection in \(y = x\) from [Functions](#math.p1.functions), and quadratics from [Quadratics](#math.p1.quadratics).
 
+:::try Warm-up
+Q: Evaluate \(16^{3/4} \times 2^{-5}\). (from [Indices, surds and standard form](#math.f.powers))
+A: \(16^{3/4} = 8\) and \(2^{-5} = \tfrac1{32}\), so the product is \(\tfrac{8}{32} = \tfrac14\).
+Q: Solve \(u^2 - 7u + 12 = 0\). (from [Quadratics](#math.p1.quadratics))
+A: \((u - 3)(u - 4) = 0\), so \(u = 3\) or \(u = 4\).
+Q: Find the inverse function of \(f(x) = 3x - 1\). (from [Functions](#math.p1.functions))
+A: \(y = 3x - 1\) gives \(x = \dfrac{y + 1}{3}\), so \(f^{-1}(x) = \dfrac{x + 1}{3}\).
+:::
+
 ## Logarithms
 
 The equation \(2^3 = 8\) says "2 to the power 3 is 8". A logarithm asks the question the other way round: "to what power must I raise 2 to get 8?" The answer is \(3\), and we write \(\log_2 8 = 3\).
@@ -35,7 +44,7 @@ So \(\log_{10} 1000 = 3\), \(\log_2 \tfrac18 = -3\), \(\log_9 3 = \tfrac12\) (si
 
 ### Laws of logarithms
 
-The laws of logarithms are the index laws read backwards. If \(a^p = x\) and \(a^q = y\), then \(xy = a^{p+q}\), which says \(\log_a xy = p + q = \log_a x + \log_a y\).
+The laws of logarithms are the index laws read backwards. If \(a^p = x\) and \(a^q = y\), then \(xy = a^{p+q}\), which says \(\log_a xy = p + q\) \(= \log_a x + \log_a y\).
 
 :::key Laws of logarithms (any valid base)
 \[\log_a x + \log_a y = \log_a (xy) \qquad \log_a x - \log_a y = \log_a \left(\frac{x}{y}\right)\]
@@ -44,16 +53,28 @@ The laws of logarithms are the index laws read backwards. If \(a^p = x\) and \(a
 The laws work only when the **bases are the same**. They are not on MF19. There is no law for \(\log_a(x + y)\).
 :::
 
+:::proof Where the three laws of logarithms come from
+Let \(p = \log_a x\) and \(q = \log_a y\). By the definition of a logarithm, \(x = a^p\) and \(y = a^q\).
+
+**Product law.** \(xy = a^p \times a^q = a^{p + q}\), because index laws say add the powers when you multiply. Written as a logarithm, \(\log_a(xy) = p + q\) \(= \log_a x + \log_a y\).
+
+**Quotient law.** \(\dfrac{x}{y} = \dfrac{a^p}{a^q}\) \(= a^{p - q}\), because you subtract the powers when you divide. So \(\log_a\dfrac xy = p - q\) \(= \log_a x - \log_a y\).
+
+**Power law.** \(x^k = (a^p)^k = a^{pk}\), because you multiply the powers when you raise a power to a power. So \(\log_a(x^k) = pk = k\log_a x\).
+
+Each law is one index law, with "the power is the logarithm" at the end. This is also why the laws need the same base \(a\) throughout.
+:::
+
 :::warn What the laws do not say
-\(\log(x + y)\) is not \(\log x + \log y\). \(\dfrac{\log x}{\log y}\) is not \(\log x - \log y\), and \((\log x)^2\) is not \(2\log x\). Test with numbers: \(\log_{10}(10 + 90) = \log_{10}100 = 2\), but \(\log_{10}10 + \log_{10}90 = 1 + 1.954 = 2.954\). The product law would need \(\log_{10}(10 \times 90) = \log_{10} 900\).
+\(\log(x + y)\) is not \(\log x + \log y\). \(\dfrac{\log x}{\log y}\) is not \(\log x - \log y\), and \((\log x)^2\) is not \(2\log x\). Test with numbers: \(\log_{10}(10 + 90) = \log_{10}100 = 2\), but \(\log_{10}10 + \log_{10}90 = 1 + 1.954\) \(= 2.954\). The product law would need \(\log_{10}(10 \times 90)\) \(= \log_{10} 900\).
 :::
 
 :::eg Write as a single logarithm: (a) \(2\log 3 + \log 5 - \log 15\), (b) \(\log_2 40 - \log_2 5\). Express \(\log \dfrac{a^2 b}{\sqrt{c}}\) in terms of \(p = \log a\), \(q = \log b\) and \(r = \log c\).
-(a) \(2\log 3 = \log 9\), so \(\log 9 + \log 5 - \log 15 = \log\dfrac{9 \times 5}{15} = \log 3\).
+(a) \(2\log 3 = \log 9\), so \(\log 9 + \log 5 - \log 15\) \(= \log\dfrac{9 \times 5}{15} = \log 3\).
 
 (b) \(\log_2\dfrac{40}{5} = \log_2 8 = 3\).
 
-For the third, split using the laws: \(\log a^2 + \log b - \log c^{1/2} = 2p + q - \tfrac12 r\).
+For the third, split using the laws: \(\log a^2 + \log b - \log c^{1/2}\) \(= 2p + q - \tfrac12 r\).
 :::
 
 Equations with logs: combine into a single log on each side, then remove the logs; or write the equation as an index equation. **Always check** that every log argument is positive for your answer.
@@ -106,7 +127,7 @@ To solve \(a^x = b\), take logarithms of both sides, then use \(\log a^x = x\log
 :::eg Solve (a) \(3^x = 20\), (b) \(2^{x+1} = 5^x\), (c) \(e^{2x} = 7\), (d) \(\ln(2x - 1) = 3\)
 (a) \(x\ln 3 = \ln 20\), so \(x = \dfrac{\ln 20}{\ln 3} = 2.73\) (3 s.f.).
 
-(b) \((x + 1)\ln 2 = x\ln 5\), so \(x\ln 2 + \ln 2 = x\ln 5\), giving \(\ln 2 = x(\ln 5 - \ln 2)\). Then \(x = \dfrac{\ln 2}{\ln 5 - \ln 2} = \dfrac{\ln 2}{\ln 2.5} = 0.756\) (3 s.f.).
+(b) \((x + 1)\ln 2 = x\ln 5\), so \(x\ln 2 + \ln 2 = x\ln 5\), giving \(\ln 2 = x(\ln 5 - \ln 2)\). Then \(x = \dfrac{\ln 2}{\ln 5 - \ln 2}\) \(= \dfrac{\ln 2}{\ln 2.5} = 0.756\) (3 s.f.).
 
 (c) \(2x = \ln 7\), so \(x = \tfrac12 \ln 7 = 0.973\).
 
@@ -171,7 +192,7 @@ Experimental data often follows a law of the form \(y = kx^n\) (a power law) or 
 | \(\ln x\) | 0 | 0.693 | 1.386 | 2.197 |
 | \(\ln y\) | 0.693 | 1.733 | 2.773 | 3.989 |
 
-The gradient between the first two points is \(\dfrac{1.733 - 0.693}{0.693 - 0} = 1.50\), and between the last two is \(\dfrac{3.989 - 2.773}{2.197 - 1.386} = 1.50\). The gradient is constant, so the points lie on a straight line and the law \(y = kx^n\) fits, with \(n = 1.5\). The intercept is \(\ln k = 0.693\), so \(k = e^{0.693} = 2\). The law is \(y = 2x^{1.5}\).
+The gradient between the first two points is \(\dfrac{1.733 - 0.693}{0.693 - 0}\) \(= 1.50\), and between the last two is \(\dfrac{3.989 - 2.773}{2.197 - 1.386}\) \(= 1.50\). The gradient is constant, so the points lie on a straight line and the law \(y = kx^n\) fits, with \(n = 1.5\). The intercept is \(\ln k = 0.693\), so \(k = e^{0.693} = 2\). The law is \(y = 2x^{1.5}\).
 :::
 
 :::plot Plotting \(\ln y\) against \(\ln x\) for the data above gives a straight line of gradient 1.5 and intercept 0.693, so \(n = 1.5\) and \(k = e^{0.693} = 2\).
@@ -198,11 +219,25 @@ The intercept: \(3.1 = 0.5(2) + \ln K\), so \(\ln K = 2.1\) and \(K = e^{2.1} = 
 Edexcel IAL covers exponentials and logarithms in P2 and \(e^x\) and \(\ln x\) in P3. UK A Levels (AQA, Edexcel, OCR) include the laws of logs, \(e^x\) and \(\ln x\), and reduction of exponential and power laws to linear form in Pure Year 1 and Year 2. The change of base formula is not in the Cambridge syllabus; check whether your board includes it.
 :::
 
+:::eg Spot the error: solve \(2^{x+1} = 5^x\), giving \(x\) to 3 significant figures
+A student wrote this answer.
+
+Line 1: \((x + 1)\log 2 = x\log 5\)
+Line 2: \(x + \log 2 = x\log 5\)
+Line 3: \(x(\log 5 - 1) = \log 2\), so \(x = \dfrac{\log 2}{\log 5 - 1} = -1.00\)
+
+Line 1 is correct: the student took logs and brought the power down. [M1] **Line 2 loses the accuracy mark [A0]:** multiplying out \((x + 1)\log 2\) gives \(x\log 2 + \log 2\), not \(x + \log 2\). The student forgot that \(\log 2\) multiplies the \(x\) too. The method is still right, so Line 3, which collects the \(x\) terms and divides, earns [M1], but the answer is wrong [A0].
+
+Correct working: \(x\log 2 + \log 2 = x\log 5\), so \(x(\log 5 - \log 2) = \log 2\). [M1 A1] \(x = \dfrac{\log 2}{\log 5 - \log 2}\) \(= 0.756\). [A1]
+
+**Check:** put \(x = -1.00\) into the original equation. The left side is \(2^0 = 1\) and the right side is \(5^{-1} = 0.2\), so it is wrong. For the true answer, \(2^{1.756} = 3.38\) and \(5^{0.756} = 3.38\).
+:::
+
 :::try Start easy, finish at exam standard
 Q: Evaluate (a) \(\log_3 81\), (b) \(\log_{10} 0.001\), (c) \(\log_8 2\), (d) \(\ln e^5\).
 A: (a) \(4\). (b) \(-3\). (c) \(\tfrac13\), since \(8^{1/3} = 2\). (d) \(5\).
 Q: Write \(3\log 2 + \log 5 - \log 4\) as a single logarithm, and simplify.
-A: \(\log 8 + \log 5 - \log 4 = \log\dfrac{8 \times 5}{4} = \log 10 = 1\) (base 10).
+A: \(\log 8 + \log 5 - \log 4\) \(= \log\dfrac{8 \times 5}{4} = \log 10\) \(= 1\) (base 10).
 Q: Solve \(\log_2 (x - 1) + \log_2 (x + 3) = 5\).
 A: \(\log_2 (x - 1)(x + 3) = 5\), so \((x - 1)(x + 3) = 32\) and \(x^2 + 2x - 35 = 0\), giving \((x + 7)(x - 5) = 0\). Reject \(x = -7\). So \(x = 5\).
 Q: Solve (a) \(5^x = 12\), (b) \(e^{3x - 1} = 10\), (c) \(\ln(x + 4) = 2\), giving answers to 3 significant figures.
@@ -219,6 +254,39 @@ Q: Sketch \(y = e^{-x} + 1\), marking the intercept and the asymptote.
 A: The graph is \(y = e^{-x}\) moved up by 1. The \(y\)-intercept is \((0, 2)\) and the asymptote is \(y = 1\). It decreases, approaching \(y = 1\) as \(x \to \infty\).
 Q: (Exam style) The table shows measured values of \(x\) and \(y\), which are related by \(y = ka^x\): \((0, 5)\), \((1, 7.5)\), \((2, 11.25)\), \((3, 16.875)\). (a) Show that \(\ln y\) against \(x\) is a straight line and find its gradient and intercept. (b) Hence state the values of \(k\) and \(a\).
 A: (a) \(\ln y = 1.609, 2.015, 2.420, 2.826\). [M1] Each step increases \(\ln y\) by \(0.405\), so the gradient is constant \(= 0.405\). The intercept is \(1.609\). [A1 A1] (b) \(\ln a = 0.405\), so \(a = e^{0.405} = 1.5\), and \(\ln k = 1.609\), so \(k = 5\). [M1 A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ Solve the equation \(5^x = 30\), giving your answer to 3 significant figures.
+A: \(x\ln 5 = \ln 30\) [M1] so \(x = \dfrac{\ln 30}{\ln 5}\) [A1] \(= 2.11\). [A1]
+Q: [3 marks] ★ Simplify \(2\log_3 6 - \log_3 4\), giving your answer as an integer.
+A: \(2\log_3 6 = \log_3 36\). [M1] \(\log_3 36 - \log_3 4 = \log_3 9\). [A1] \(= 2\), since \(3^2 = 9\). [A1]
+Q: [5 marks] ★★ Solve the equation \(2\ln x = \ln(5x - 6)\).
+A: \(\ln x^2 = \ln(5x - 6)\), so \(x^2 = 5x - 6\). [M1 A1] \(x^2 - 5x + 6 = 0\) gives \((x - 2)(x - 3) = 0\). [M1] \(x = 2\) or \(x = 3\). [A1] Both give \(x > 0\) and \(5x - 6 > 0\), so both are valid. [A1]
+Q: [5 marks] ★★ Solve the equation \(e^{2x} - 7e^x + 10 = 0\), giving exact answers.
+A: Let \(u = e^x\): \(u^2 - 7u + 10 = 0\). [M1 A1] \((u - 2)(u - 5) = 0\), so \(e^x = 2\) or \(e^x = 5\). [A1] \(x = \ln 2\) or \(x = \ln 5\). [M1 A1]
+Q: [6 marks] ★★ The mass \(M\) grams of a radioactive sample after \(t\) days is \(M = 80e^{-0.05t}\). (a) Find the mass after 10 days. (b) Find the time taken for the mass to fall to 20 grams. (c) Find the half-life of the sample.
+A: (a) \(M = 80e^{-0.5}\) [M1] \(= 48.5\) g. [A1] (b) \(e^{-0.05t} = \tfrac14\) [M1] so \(t = \dfrac{\ln 4}{0.05} = 27.7\) days. [A1] (c) \(e^{-0.05t} = \tfrac12\), so \(t = \dfrac{\ln 2}{0.05}\) [M1] \(= 13.9\) days. [A1]
+Q: [5 marks] ★★ The variables \(x\) and \(y\) satisfy \(y = Ab^x\). When \(\ln y\) is plotted against \(x\), the points \((1, 2.5)\) and \((4, 7.3)\) lie on the straight line. Find \(A\) and \(b\).
+A: \(\ln y = (\ln b)x + \ln A\). [B1] The gradient is \(\ln b = \dfrac{7.3 - 2.5}{4 - 1} = 1.6\), so \(b = e^{1.6} = 4.95\). [M1 A1] The intercept is \(\ln A = 2.5 - 1.6 = 0.9\), so \(A = e^{0.9} = 2.46\). [M1 A1]
+Q: [4 marks] ★★ (#math.p3.algebra) Solve the equation \(|2^x - 6| = 2\).
+A: Either \(2^x - 6 = 2\) or \(2^x - 6 = -2\). [M1] \(2^x = 8\), so \(x = 3\). [A1] \(2^x = 4\), so \(x = 2\). [A1] Check: \(|8 - 6| = 2\) and \(|4 - 6| = 2\). [B1]
+Q: [9 marks] (#math.p1.quadratics) ★★★ (a) Show that the equation \(2^{2x+1} - 9 \times 2^x + 4 = 0\) can be written as \(2u^2 - 9u + 4 = 0\), where \(u = 2^x\). (b) Hence solve the equation. (c) Hence solve the inequality \(2^{2x+1} - 9 \times 2^x + 4 < 0\).
+H: Use an index law to split \(2^{2x+1}\) into \(2 \times (2^x)^2\).
+H: Factorise the quadratic in \(u\), then turn each value of \(u\) back into \(x\) using \(2^x = u\).
+H: The quadratic \(2u^2 - 9u + 4\) is negative between its roots. Say what that means for \(2^x\), then for \(x\).
+A: (a) \(2^{2x+1} = 2 \times (2^x)^2 = 2u^2\). [M1] So the equation is \(2u^2 - 9u + 4 = 0\). [A1] (b) \((2u - 1)(u - 4) = 0\). [M1] \(u = \tfrac12\) or \(u = 4\). [A1] \(2^x = \tfrac12\) gives \(x = -1\), and \(2^x = 4\) gives \(x = 2\). [M1 A1] (c) The quadratic is negative for \(\tfrac12 < u < 4\). [M1] So \(\tfrac12 < 2^x < 4\). [A1] Since \(2^x\) is increasing, \(-1 < x < 2\). [A1]
+:::
+
+:::try Stretch for A*
+Q: [5 marks] ★★★ Find the exact solution of \(2^x \times 3^{x+1} = 5^{2x-1}\), and give it to 3 significant figures.
+H: Take logs of both sides, using the law \(\log(ab) = \log a + \log b\) on the left.
+H: Collect every term containing \(x\) on one side and factorise out \(x\).
+A: \(x\ln 2 + (x + 1)\ln 3 = (2x - 1)\ln 5\). [M1 A1] \(x(\ln 2 + \ln 3 - 2\ln 5)\) \(= -\ln 5 - \ln 3\). [M1] \(x\) \(= \dfrac{\ln 5 + \ln 3}{2\ln 5 - \ln 6}\) \(= \dfrac{\ln 15}{\ln\frac{25}{6}}\) [A1] \(= 1.90\). [A1]
+Q: [5 marks] ★★★ Solve the equation \(\ln(x - 2) + \ln(x + 1) = \ln(4x - 4)\), giving your answer in exact form.
+H: Combine the left side into one logarithm, then remove the logarithms.
+H: A logarithm needs a positive argument. Decide which root of the quadratic breaks that rule.
+A: \(\ln\big((x - 2)(x + 1)\big)\) \(= \ln(4x - 4)\), so \((x - 2)(x + 1) = 4x - 4\). [M1 A1] \(x^2 - 5x + 2 = 0\). [M1] \(x = \dfrac{5 \pm \sqrt{17}}{2}\). [A1] For \(\ln(x - 2)\) to exist, \(x > 2\). The root \(\dfrac{5 - \sqrt{17}}{2} \approx 0.44\) is rejected, so \(x = \dfrac{5 + \sqrt{17}}{2}\). [A1]
 :::
 
 :::quiz
@@ -252,6 +320,18 @@ A: (a) \(\ln y = 1.609, 2.015, 2.420, 2.826\). [M1] Each step increases \(\ln y\
 - \(x = 8\)
 - \(x = 22\)
 > \(x - 2 = 5^2 = 25\), so \(x = 27\). The value \(12\) comes from \(5 \times 2 + 2\), and \(8\) from \(2^3\), both common wrong routes.
+:::
+
+:::checklist What you can now do
+- [ ] I can change between index form and logarithm form.
+- [ ] I can use the laws of logarithms to simplify and to combine logarithms into one.
+- [ ] I can sketch \(y = e^{kx}\) for positive and negative \(k\), and \(y = \ln x\) as its inverse.
+- [ ] I can solve \(a^x = b\) and \(a^{px+q} = b^{rx+s}\) by taking logarithms.
+- [ ] I can solve equations that are quadratics in \(e^x\) or \(a^x\).
+- [ ] I can solve equations with logarithms and reject values that make a logarithm undefined.
+- [ ] I can solve inequalities with the unknown in an index, such as \(1.05^n > 2\).
+- [ ] I can reduce \(y = kx^n\) and \(y = ka^x\) to straight-line form and read \(k\), \(n\) and \(a\) from a graph.
+- [ ] I can build and use an exponential model in a real context.
 :::
 
 :::recap

@@ -11,6 +11,15 @@ How many different four-digit PIN codes are there? How many ways can a team of f
 
 **Before you start**, you need confident arithmetic with fractions and powers from [Numbers from scratch](#math.f.numbers), and the idea of a factorial from the binomial coefficients in [Series](#math.p1.series).
 
+:::try Warm-up
+Q: Evaluate \(2^3 \times 3^2\). (from [Indices, surds and standard form](#math.f.powers))
+A: \(8 \times 9 = 72\).
+Q: Find the coefficient of \(x^2\) in the expansion of \((1 + x)^5\). (from [Series](#math.p1.series))
+A: It is the binomial coefficient \(\dbinom52\) \(= \dfrac{5 \times 4}{2 \times 1} = 10\), the middle of the row 1, 5, 10, 10, 5, 1.
+Q: Work out \(\dfrac{7 \times 6 \times 5 \times 4}{4 \times 3 \times 2 \times 1}\). (from [Numbers from scratch](#math.f.numbers))
+A: Cancel the 4: \(\dfrac{7 \times 6 \times 5}{3 \times 2 \times 1}\) \(= \dfrac{210}{6} = 35\). This is \(\dbinom74\), which you will meet in the first example below.
+:::
+
 ## The multiplication principle
 
 :::key Multiplication principle
@@ -38,8 +47,25 @@ Each selection of \(r\) objects can be arranged in \(r!\) orders, so \({}^{n}P_r
 
 Ask yourself: if I swap two of the chosen things, is it a different outcome? A president and a secretary (yes, order matters: permutation). A committee of two (no: combination). The formula for \(\binom{n}{r}\) is on MF19; the permutation formula is not, but you can always build it from the slots: \({}^{n}P_r\) is \(r\) factors starting from \(n\) and counting down.
 
+:::proof Why there are \(n!\) arrangements, and where \({}^{n}P_r = \dfrac{n!}{(n-r)!}\) comes from
+Fill \(r\) places in a line from \(n\) different objects. The first place can take any of the \(n\) objects. Whichever is used, \(n - 1\) remain for the second place, then \(n - 2\) for the third, and so on. The \(r^{\text{th}}\) place has \(n - r + 1\) choices left. By the multiplication principle the number of arrangements is
+\[{}^{n}P_r = n(n - 1)(n - 2)\cdots(n - r + 1)\]
+Multiply and divide by \((n - r)(n - r - 1)\cdots 2 \times 1\) \(= (n - r)!\). The top becomes \(n!\), so
+\[{}^{n}P_r = \frac{n!}{(n - r)!}\]
+Putting \(r = n\) (arranging all the objects) gives \(\dfrac{n!}{0!}\), which is \(n!\) only if \(0! = 1\). That is why \(0!\) is defined as 1. Check: \({}^{10}P_3 = 10 \times 9 \times 8\) \(= 720\), and \(\dfrac{10!}{7!} = 720\) too.
+:::
+
+:::proof Why \(\dbinom{n}{r} = \dfrac{{}^{n}P_r}{r!}\)
+Count the arrangements of \(r\) objects chosen from \(n\) in two ways.
+First way: there are \({}^{n}P_r\) of them, as above.
+Second way: first choose which \(r\) objects are used, in \(\dbinom{n}{r}\) ways. Then arrange those \(r\) objects in a line, in \(r!\) ways. By the multiplication principle there are \(\dbinom{n}{r} \times r!\) arrangements.
+Both counts are of the same arrangements, so \({}^{n}P_r = \dbinom{n}{r}\, r!\). Divide by \(r!\) and use the formula for \({}^{n}P_r\):
+\[\binom{n}{r} = \frac{{}^{n}P_r}{r!} = \frac{n!}{r!\,(n - r)!}\]
+Check with the squad of 4 from 7: \({}^{7}P_4 = 840\) and \(\dfrac{840}{4!} = 35\).
+:::
+
 :::eg In a race with 10 runners, how many ways can the gold, silver and bronze medals be awarded? How many ways can a squad of 4 be chosen from 7 players? In how many of those squads is Priya included?
-Medals: order matters, so \({}^{10}P_3 = 10 \times 9 \times 8 = 720\).
+Medals: order matters, so \({}^{10}P_3 = 10 \times 9 \times 8\) \(= 720\).
 Squad: order does not matter, so \(\binom{7}{4} = \dfrac{7!}{4!\,3!} = 35\).
 Priya included: she fills one place, and 3 more are chosen from the other 6: \(\binom{6}{3} = 20\).
 :::
@@ -53,10 +79,16 @@ The number of arrangements of \(n\) items, of which \(p\) are identical of one k
 \[\frac{n!}{p!\,q!\cdots}\]
 :::
 
+:::proof Why we divide by \(p!\,q!\)
+Suppose \(n\) items include \(p\) identical items of one kind and \(q\) of another. Pretend for a moment that every item has its own label (A₁, A₂, A₃, N₁, N₂ and so on). Then all the items are different and there are \(n!\) arrangements.
+Now remove the labels. Take one arrangement that you can actually see, such as BANANA. Swapping the three A's among themselves gives \(3!\) labelled arrangements that look the same, and swapping the two N's gives \(2!\) more. So every visible arrangement was counted \(p! \times q!\) times in the \(n!\).
+The number of visible arrangements is therefore \(\dfrac{n!}{p!\,q!}\). Check with BANANA: \(\dfrac{720}{3! \times 2!} = 60\), the value found below.
+:::
+
 :::eg Find the number of arrangements of the letters of (a) BANANA, (b) MISSISSIPPI. For STATISTICS, find the number of arrangements in which the three S's are together.
-(a) BANANA has 6 letters: B once, A three times, N twice. \(\dfrac{6!}{3!\,2!} = \dfrac{720}{12} = 60\).
-(b) MISSISSIPPI has 11 letters: M once, I four times, S four times, P twice. \(\dfrac{11!}{4!\,4!\,2!} = \dfrac{39\,916\,800}{1152} = 34\,650\).
-STATISTICS has 10 letters: S three times, T three times, I twice, A once, C once. Treat SSS as a single block. There are then 8 items: the block, T, T, T, I, I, A, C, with T three times and I twice. The number of arrangements is \(\dfrac{8!}{3!\,2!} = \dfrac{40\,320}{12} = 3360\).
+(a) BANANA has 6 letters: B once, A three times, N twice. \(\dfrac{6!}{3!\,2!} = \dfrac{720}{12}\) \(= 60\).
+(b) MISSISSIPPI has 11 letters: M once, I four times, S four times, P twice. \(\dfrac{11!}{4!\,4!\,2!}\) \(= \dfrac{39\,916\,800}{1152} = 34\,650\).
+STATISTICS has 10 letters: S three times, T three times, I twice, A once, C once. Treat SSS as a single block. There are then 8 items: the block, T, T, T, I, I, A, C, with T three times and I twice. The number of arrangements is \(\dfrac{8!}{3!\,2!}\) \(= \dfrac{40\,320}{12} = 3360\).
 :::
 
 ## Restrictions: together, apart, at the ends
@@ -75,7 +107,7 @@ STATISTICS has 10 letters: S three times, T three times, I twice, A once, C once
 :::
 
 :::eg Four-digit numbers are formed from the digits 1, 2, 3, 4, 5, 6, 7, each used at most once. How many numbers are there, and how many are (a) even, (b) odd, (c) greater than 5000?
-Total: \({}^{7}P_4 = 7\times 6\times 5\times 4 = 840\).
+Total: \({}^{7}P_4 = 7\times 6\times 5\times 4\) \(= 840\).
 (a) Even: the last digit is 2, 4 or 6, so 3 choices. Fill that slot first, then the other three slots in \(6\times 5\times 4 = 120\) ways. Total \(3 \times 120 = 360\).
 (b) Odd: the last digit is 1, 3, 5 or 7, so \(4 \times 120 = 480\) (check: \(360 + 480 = 840\)).
 (c) Greater than 5000: the first digit is 5, 6 or 7, so \(3 \times 6\times 5\times 4 = 360\).
@@ -117,6 +149,36 @@ Letters: \({}^{8}P_3 = 8\times 7\times 6 = 336\). Digits: \({}^{9}P_2 = 9\times 
 Codes containing the letter A: choose the position of A in the three letter slots (3 ways), then fill the other two letter slots from the remaining 7 letters in \({}^{7}P_2 = 42\) ways. So there are \(3\times 42 = 126\) letter arrangements containing A, and \(126\times 72 = 9072\) codes.
 :::
 
+## Long exam questions
+
+Real questions have several parts, and each part often reuses the last. Work through these, then cover the working and try them again.
+
+:::eg (Exam style) The digits 1, 2, 3, 4, 5, 6, 7 and 8 are used to make five-digit numbers. No digit is used more than once in a number. (a) How many five-digit numbers can be made? (b) How many of them are even? (c) How many of them are even and greater than 60 000? (d) How many of them contain both of the digits 1 and 2? [10 marks]
+(a) The number is a permutation of 5 digits from 8:
+\[{}^{8}P_5 = 8 \times 7 \times 6 \times 5 \times 4 = 6720\]
+[B1]
+(b) Fill the restricted slot first. The last digit is 2, 4, 6 or 8, which is 4 choices. [M1] The other four slots are filled from the remaining 7 digits in \(7 \times 6 \times 5 \times 4 = 840\) ways. So there are \(4 \times 840 = 3360\) even numbers. [A1] (Half of the total, as expected.)
+(c) Greater than 60 000 means the first digit is 6, 7 or 8, so split by the first digit. [M1]
+First digit 6 or 8 (these are both even, so the last digit cannot be the same one): the last digit is an even digit other than the first. That is 3 choices. The three middle slots are filled from the remaining 6 digits in \(6 \times 5 \times 4 = 120\) ways. So each of these first digits gives \(3 \times 120 = 360\) numbers, and together \(720\). [A1]
+First digit 7: the last digit can be any of the 4 even digits, and the middle slots give 120 ways, so \(4 \times 120 = 480\). [A1]
+Total even and greater than 60 000: \(720 + 480 = 1200\). [A1]
+(d) Choose the positions for the digits 1 and 2: the digit 1 can go in any of 5 places and the digit 2 in any of the other 4, which is \({}^{5}P_2 = 20\) ways. [M1] The other three places are filled from the remaining 6 digits in \({}^{6}P_3 = 120\) ways. [M1] Total \(20 \times 120 = 2400\). [A1]
+:::
+
+:::eg (Exam style) A school council of 6 members is chosen from 5 teachers and 8 students. (a) How many different councils are possible? (b) How many have exactly 2 teachers? (c) How many have at least 2 teachers? (d) Mr Rao and Ms Lee are two of the teachers. How many councils do not contain both of them? (e) A council is chosen at random from all the possible councils. Find the probability that it has exactly 2 teachers. [11 marks]
+(a) There are 13 people and order does not matter:
+\[\binom{13}{6} = 1716\]
+[B1]
+(b) Choose 2 teachers from 5 and 4 students from 8:
+\[\binom52\binom84 = 10 \times 70 = 700\]
+[M1 A1]
+(c) "At least 2" is easiest as the total minus the cases with 0 or 1 teacher. [M1] With no teacher, all 6 come from the 8 students: \(\dbinom86 = 28\). [B1] With one teacher: \(\dbinom51\dbinom85 = 5 \times 56 = 280\). [B1] So the number is \(1716 - 28 - 280 = 1408\). [A1]
+(d) Count the councils that contain both, then subtract. If Mr Rao and Ms Lee are both in, the other 4 places are chosen from the remaining 11 people: \(\dbinom{11}{4} = 330\). [M1] So \(1716 - 330 = 1386\) councils do not contain both. [A1]
+(e) The probability is the favourable count over the total count:
+\[\frac{700}{1716} = \frac{175}{429} = 0.408\]
+[M1 A1]
+:::
+
 :::exam What earns marks
 - **State what is being counted** and whether order matters ("order matters, so permutations"). The method mark follows the model, not the arithmetic.
 - **For "together"**, show the block and the inside arrangements; **for "apart"**, show the total and the subtraction.
@@ -129,9 +191,24 @@ Codes containing the letter A: choose the position of A in the three letter slot
 The UK A Level courses (AQA, OCR, Edexcel) use \(\binom{n}{r}\) in the binomial distribution and in probability. Arrangements with restrictions are a Cambridge Paper 5 topic, and Edexcel IAL S1 does not include them. If you are not taking Cambridge, check your specification before spending long on the harder sections.
 :::
 
+:::eg Spot the error: arrangements of COMMITTEE
+A student wrote this answer to "Find the number of arrangements of the letters of COMMITTEE" [3 marks].
+
+Line 1: There are 9 letters. M, T and E each appear twice.
+Line 2: Number of arrangements \(= \dfrac{9!}{2! + 2! + 2!}\) \(= \dfrac{362\,880}{6}\) \(= 60\,480\).
+
+**Line 1 is correct [B1].** It finds the length of the word and the three repeated letters. **Line 2 scores [M0]:** the repeats must be divided out **one after another**, so the denominator is the **product** \(2! \times 2! \times 2!\), not the sum. A wrong denominator is a wrong method, so the method mark is lost, and the answer mark is lost too [A0]. The student scores 1 out of 3.
+
+Correct working:
+\[\frac{9!}{2!\,2!\,2!} = \frac{362\,880}{8} = 45\,360\]
+[M1 A1]
+
+**Check:** each pair of identical letters halves the count, because swapping the two copies gives an arrangement that looks the same. Three pairs halve it three times, so the divisor is \(2 \times 2 \times 2 = 8\), not \(6\). ✓
+:::
+
 :::try Start easy, finish at exam standard
 Q: Evaluate \(\dfrac{6!}{4!}\) and \(\dbinom94\).
-A: \(\dfrac{6!}{4!} = 6\times 5 = 30\). \(\dbinom94 = \dfrac{9\times 8\times 7\times 6}{4\times 3\times 2\times 1} = 126\).
+A: \(\dfrac{6!}{4!} = 6\times 5 = 30\). \(\dbinom94\) \(= \dfrac{9\times 8\times 7\times 6}{4\times 3\times 2\times 1}\) \(= 126\).
 Q: How many arrangements are there of the letters of LETTER?
 A: 6 letters with E twice and T twice: \(\dfrac{6!}{2!\,2!} = 180\).
 Q: How many arrangements are there of the letters of MISSISSIPPI?
@@ -148,6 +225,45 @@ Q: Five boys and three girls stand in a row so that no two girls are next to eac
 A: Arrange the 5 boys first: \(5! = 120\). This leaves 6 gaps (the four between boys and the two ends), and the 3 girls take 3 different gaps in \({}^{6}P_3 = 120\) ways. Total \(120\times 120 = 14\,400\).
 Q: (Exam style) The 10 letters of STATISTICS are arranged in a line. Find the number of arrangements in which the three S's are together. Find also the number of arrangements which begin and end with a T. [5 marks]
 A: Together: block SSS with the T, T, T, I, I, A, C gives 8 items, so \(\dfrac{8!}{3!\,2!} = 3360\). [M1 A1] Begin and end with T: use two of the three T's at the ends, leaving 8 letters S, S, S, T, I, I, A, C in the middle, with S three times and I twice: \(\dfrac{8!}{3!\,2!} = 3360\). [M1 A1 A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [2 marks] ★ A club has 9 members. (a) In how many ways can a president and a treasurer be chosen? (b) In how many ways can a committee of 3 be chosen?
+A: (a) The order matters, so \({}^{9}P_2 = 9 \times 8 = 72\). [B1] (b) The order does not matter, so \(\dbinom93 = 84\). [B1]
+Q: [4 marks] ★ The 6 letters of the word STATIC are arranged in a line. Find the number of arrangements (a) in total, (b) that begin with S.
+A: (a) The letter T appears twice, so the number is \(\dfrac{6!}{2!} = 360\). [M1 A1] (b) With S fixed first, arrange the other five letters T, A, T, I, C: \(\dfrac{5!}{2!} = 60\). [M1 A1]
+Q: [5 marks] ★★ Four-digit numbers are formed from the digits 0 to 9. A number cannot start with 0 and no digit is used twice. How many of these numbers are even?
+A: Split by the last digit. [M1] If the last digit is 0, the first three slots take \(9 \times 8 \times 7 = 504\) ways. [A1] If the last digit is 2, 4, 6 or 8 (4 choices), the first digit cannot be 0 or the last digit, so it has 8 choices. [M1] The second slot has 8 choices (0 is now allowed) and the third has 7, so this case gives \(4 \times 8 \times 8 \times 7 = 1792\). [A1] The total is \(504 + 1792 = 2296\). [A1]
+Q: [4 marks] ★★ A team of 4 is chosen from 6 juniors and 5 seniors. The team must contain at least one junior and at least one senior. How many teams are there?
+A: Without restriction there are \(\dbinom{11}{4} = 330\) teams. [B1] Remove the all-junior teams, \(\dbinom64 = 15\), [B1] and the all-senior teams, \(\dbinom54 = 5\). [B1] The number is \(330 - 15 - 5 = 310\). [A1]
+Q: [5 marks] ★★ Seven people stand in a row. Dev must stand at one of the two ends, and Eva and Fay must stand next to each other. How many arrangements are there?
+A: Dev can take either end, which is 2 choices. [B1] With Dev fixed, treat Eva and Fay as one block: the block and the other four people make 5 items. [M1] These can be arranged in \(5! = 120\) ways, and Eva and Fay can swap inside the block, so \(120 \times 2 = 240\). [M1 A1] The total is \(2 \times 240 = 480\). [A1]
+Q: [4 marks] ★★ A committee of 4 is chosen at random from 5 men and 3 women. Find the probability that it contains exactly 2 women.
+A: The number of possible committees is \(\dbinom84 = 70\). [B1] The number with exactly 2 women is
+\[\binom32\binom52 = 3 \times 10 = 30\]
+[M1 A1] so the probability is \(\dfrac{30}{70} = \dfrac37\). [A1]
+Q: [8 marks] (#math.p1.quadratics) ★★★ A club has \(n\) members. The number of ways of choosing a president and a secretary is 45 more than the number of ways of choosing a committee of 2. (a) Find \(n\). (b) Four of the members are left-handed. How many committees of 3 contain at least one left-handed member?
+H: Write both counts in terms of \(n\): the posts give \(n(n - 1)\), and the committee gives \(\dfrac{n(n - 1)}{2}\).
+H: The difference of the two counts is \(\dfrac{n(n - 1)}{2}\), so you get \(n(n - 1) = 90\), which is a quadratic.
+H: Factorise \(n^2 - n - 90\), then say why one root is rejected. For (b), count all committees and subtract those with no left-handed member.
+A: (a) The posts: \({}^{n}P_2 = n(n - 1)\). The committee: \(\dbinom n2 = \dfrac{n(n - 1)}{2}\). [M1] The difference is \(\dfrac{n(n - 1)}{2} = 45\), so \(n^2 - n - 90 = 0\). [A1] Then \((n - 10)(n + 9) = 0\). [M1] So \(n = 10\). [A1] The root \(n = -9\) is rejected because a number of members cannot be negative. [B1] (b) All committees: \(\dbinom{10}{3} = 120\). [B1] Committees with no left-handed member, chosen from the other 6: \(\dbinom63 = 20\). [B1] So \(120 - 20 = 100\). [A1]
+Q: [8 marks] ★★★ The 10 letters of the word BOOKKEEPER are arranged in a line. Find the number of arrangements (a) in total, (b) in which the three E's are together, (c) in which no two E's are next to each other.
+H: The word has O twice, K twice and E three times. In (a) divide out each repeated letter.
+H: For (b), glue EEE into one block and count the arrangements of the 8 items, remembering the O's and K's.
+H: For (c), arrange the 7 letters that are not E first. They leave 8 gaps (including both ends). Choose 3 different gaps for the E's.
+A: (a) \(\dfrac{10!}{2!\,2!\,3!}\) [M1] \(= \dfrac{3\,628\,800}{24} = 151\,200\). [A1] (b) The block EEE with B, O, O, K, K, P, R makes 8 items. [M1] The O's and K's are repeated: \(\dfrac{8!}{2!\,2!} = 10\,080\). [M1 A1] (c) The 7 letters B, O, O, K, K, P, R can be arranged in \(\dfrac{7!}{2!\,2!} = 1260\) ways. [B1] They leave 8 gaps, and the three identical E's go into 3 different gaps in \(\dbinom83 = 56\) ways. [M1] The total is \(1260 \times 56 = 70\,560\). [A1]
+:::
+
+:::try Stretch for A*
+Q: [8 marks] ★★★ A convex polygon has 12 sides and so 12 vertices. (a) Find the number of diagonals. (b) Find the number of triangles that can be drawn with their vertices at three of the 12 vertices. (c) Find the number of those triangles that have none of their sides along a side of the polygon.
+H: A diagonal joins two vertices that are not neighbours. Count all pairs of vertices, then remove the sides.
+H: For (c), count the triangles that do use polygon sides and subtract. A triangle can have two polygon sides (three consecutive vertices) or exactly one.
+H: For exactly one side: pick the side (12 ways). The third vertex cannot be either end of that side or a neighbour of either end.
+A: (a) Every pair of vertices is joined by a side or a diagonal, so the diagonals number \(\dbinom{12}{2} - 12 = 66 - 12 = 54\). [M1 A1] (b) Any three vertices make a triangle: \(\dbinom{12}{3} = 220\). [B1] (c) Triangles with two polygon sides use three consecutive vertices, and there are 12 of them. [B1] Triangles with exactly one polygon side: choose the side in 12 ways. The third vertex cannot be one of the 4 vertices at or next to the ends of that side, so it has \(12 - 4 = 8\) choices. [M1] That gives \(12 \times 8 = 96\). [A1] The number of triangles using at least one side is \(12 + 96 = 108\), so the number using none is \(220 - 108 = 112\). [M1 A1]
+Q: [6 marks] ★★★ A walker goes from \((0, 0)\) to \((6, 4)\) on a grid, moving one unit right or one unit up at each step. (a) How many different routes are there? (b) How many routes pass through the point \((3, 2)\)? (c) How many routes avoid \((3, 2)\)?
+H: Every route is a sequence of 10 steps, 6 of them "right" and 4 of them "up". Which steps are "up"?
+H: A route through \((3, 2)\) is a route from \((0, 0)\) to \((3, 2)\) followed by a route from \((3, 2)\) to \((6, 4)\). Multiply the two counts.
+A: (a) Choose which 4 of the 10 steps are "up": \(\dbinom{10}{4} = 210\). [M1 A1] (b) From \((0, 0)\) to \((3, 2)\) there are 3 rights and 2 ups: \(\dbinom52 = 10\) routes. [M1] From \((3, 2)\) to \((6, 4)\) the steps are the same, so there are also \(\dbinom52 = 10\) routes. [M1] Together \(10 \times 10 = 100\). [A1] (c) \(210 - 100 = 110\). [A1]
 :::
 
 :::quiz
@@ -181,6 +297,17 @@ A: Together: block SSS with the T, T, T, I, I, A, C gives 8 items, so \(\dfrac{8
 - \(\dbinom nr = r!\times {}^{n}P_r\)
 - \({}^{n}P_r = \dbinom{n}{r} \div n!\)
 > Each combination of \(r\) items can be arranged in \(r!\) orders, so there are \(r!\) times as many permutations as combinations.
+:::
+
+:::checklist What you can now do
+- [ ] I can use the multiplication principle, filling the restricted slots first, and add the counts when the cases are alternatives.
+- [ ] I can say whether a question is about a permutation (order matters) or a combination (order does not matter).
+- [ ] I can calculate \({}^{n}P_r\) and \(\dbinom{n}{r}\) and use \(n!\).
+- [ ] I can count the arrangements of a word or set of items with repeated letters.
+- [ ] I can count arrangements in which some items must be together, apart, or at the ends.
+- [ ] I can count numbers formed from digits under conditions such as even, odd or greater than a given value.
+- [ ] I can count selections with conditions such as "exactly", "at least one" and "must include", by cases or by subtracting the complement.
+- [ ] I can count the ways of seating people in two or more rows.
 :::
 
 :::recap

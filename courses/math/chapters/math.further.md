@@ -11,6 +11,15 @@ If you enjoy the Pure chapters of this course and want more, Further Mathematics
 
 **Before you start**, it helps to have worked through [Differentiation](#math.p1.diff), [Integration](#math.p1.integ), [Complex numbers](#math.p3.complex), [Series](#math.p1.series) and [Differential equations](#math.p3.diffeq). Nothing here is needed for the other chapters.
 
+:::try Warm-up
+Q: Find the modulus and argument of \(1 + i\). (from [Complex numbers](#math.p3.complex))
+A: \(|1 + i| = \sqrt{1^2 + 1^2} = \sqrt2\), and the point \((1, 1)\) makes an angle of \(\tfrac\pi4\) with the real axis, so \(\arg(1 + i) = \tfrac\pi4\).
+Q: Write \(\dfrac{1}{r(r + 1)}\) as partial fractions. (from [Partial fractions and the binomial series](#math.p3.partial))
+A: \(\dfrac{1}{r(r + 1)} = \dfrac{A}{r} + \dfrac{B}{r + 1}\) gives \(1 = A(r + 1) + Br\). Put \(r = 0\): \(A = 1\). Put \(r = -1\): \(B = -1\). So it equals \(\dfrac1r - \dfrac1{r + 1}\).
+Q: Find the sum of the first \(20\) terms of the arithmetic series \(3 + 7 + 11 + \ldots\). (from [Series](#math.p1.series))
+A: \(S_{20} = \dfrac{20}{2}\big[2(3) + 19(4)\big]\), which is \(10 \times 82 = 820\).
+:::
+
 ## What Further Mathematics is
 
 Cambridge International **Further Mathematics 9231** is a separate qualification from 9709 Mathematics. It has four papers.
@@ -42,7 +51,7 @@ Take it if you enjoy proving things and solving problems that have no template, 
 A method of proving that a statement holds for every positive integer \(n\): show that it is true for \(n = 1\), and show that whenever it is true for \(n = k\) it must also be true for \(n = k + 1\).
 :::
 
-Induction is like a line of dominoes: the first falls, and each one knocks over the next.
+Induction is like a line of dominoes: the first falls, and each one knocks over the next. The other proof methods (deduction, exhaustion, counter-example and contradiction) are in [Proof: how mathematicians know](#math.proof).
 
 :::steps
 1. **Basis**: show the statement is true for \(n = 1\).
@@ -91,6 +100,18 @@ If \(\alpha, \beta, \gamma\) are the roots of \(ax^3 + bx^2 + cx + d = 0\), then
 \[\alpha + \beta + \gamma = -\frac{b}{a} \qquad \alpha\beta + \beta\gamma + \gamma\alpha = \frac{c}{a} \qquad \alpha\beta\gamma = -\frac{d}{a}\]
 You can find expressions in the roots without solving the equation.
 
+:::proof Where the sum and product of the roots come from
+If \(\alpha\), \(\beta\) and \(\gamma\) are the roots of \(ax^3 + bx^2 + cx + d = 0\), the cubic factorises as \(a(x - \alpha)(x - \beta)(x - \gamma)\) (the factor theorem, three times).
+
+Expand the brackets, two at a time:
+\[(x - \alpha)(x - \beta) = x^2 - (\alpha + \beta)x + \alpha\beta\]
+Multiply by \((x - \gamma)\) and collect terms:
+\[x^3 - (\alpha + \beta + \gamma)x^2 + (\alpha\beta + \beta\gamma + \gamma\alpha)x - \alpha\beta\gamma\]
+So \(ax^3 + bx^2 + cx + d\) equals \(a\) times this. Compare coefficients with \(ax^3 + bx^2 + cx + d\), dividing by \(a\):
+\[\frac{b}{a} = -(\alpha + \beta + \gamma) \qquad \frac{c}{a} = \alpha\beta + \beta\gamma + \gamma\alpha \qquad \frac{d}{a} = -\alpha\beta\gamma\]
+Rearranged, these are the three results above. The same idea gives the sum \(-\dfrac{b}{a}\) and product \(\dfrac{c}{a}\) of the roots of a quadratic.
+:::
+
 :::eg The roots of \(x^3 - 5x^2 + 8x - 3 = 0\) are \(\alpha, \beta, \gamma\). Find \(\alpha^2 + \beta^2 + \gamma^2\), and the cubic with roots \(2\alpha, 2\beta, 2\gamma\).
 \(\alpha + \beta + \gamma = 5\), \(\alpha\beta + \beta\gamma + \gamma\alpha = 8\), \(\alpha\beta\gamma = 3\).
 \[\alpha^2 + \beta^2 + \gamma^2 = (\alpha + \beta + \gamma)^2 - 2(\alpha\beta + \beta\gamma + \gamma\alpha) = 25 - 16 = 9\]
@@ -123,6 +144,16 @@ using \(\cos^2\theta = \tfrac12(1 + \cos 2\theta)\). The \(\cos\theta\) and \(\c
 
 \[\sinh x = \frac{e^x - e^{-x}}{2} \qquad \cosh x = \frac{e^x + e^{-x}}{2}\]
 They behave like \(\sin\) and \(\cos\) but with an important sign change: \(\cosh^2 x - \sinh^2 x = 1\), \(\dfrac{d}{dx}\sinh x = \cosh x\) and \(\dfrac{d}{dx}\cosh x = \sinh x\). A hanging chain takes the shape of a cosh curve.
+
+:::proof Why \(\cosh^2 x - \sinh^2 x = 1\)
+Use the definitions \(\cosh x = \dfrac{e^x + e^{-x}}{2}\) and \(\sinh x = \dfrac{e^x - e^{-x}}{2}\).
+
+Square each, using \((e^x)(e^{-x}) = e^0 = 1\):
+\[\cosh^2 x = \frac{e^{2x} + 2 + e^{-2x}}{4} \qquad \sinh^2 x = \frac{e^{2x} - 2 + e^{-2x}}{4}\]
+Subtract. The \(e^{2x}\) and \(e^{-2x}\) terms cancel:
+\[\cosh^2 x - \sinh^2 x = \frac{2 - (-2)}{4} = 1\]
+Compare \(\cos^2 x + \sin^2 x = 1\): the sign is different because \(\cosh\) and \(\sinh\) come from the hyperbola \(X^2 - Y^2 = 1\), while \(\cos\) and \(\sin\) come from the circle \(X^2 + Y^2 = 1\).
+:::
 
 :::eg Solve \(\sinh x = \dfrac34\).
 Let \(\sinh x = \tfrac34\). Then \(\cosh x = \sqrt{1 + \sinh^2 x} = \sqrt{1 + \tfrac9{16}} = \tfrac54\), and \(e^x = \sinh x + \cosh x = \tfrac34 + \tfrac54 = 2\), so \(x = \ln 2 = 0.693\).
@@ -165,11 +196,29 @@ where \(A\) and \(B\) are constants fixed by two initial conditions.
 Further Mathematics rewards the habits that A Level Mathematics already trains: write every step, state your method, check answers by substitution, and learn the proofs. A grade in A Level Mathematics is a good indicator that the extra pace is manageable.
 :::
 
+:::eg Spot the error: prove by induction that \(4^n - 1\) is divisible by \(3\) for all positive integers \(n\).
+The question is worth 5 marks. A student wrote this answer.
+
+Line 1: For \(n = 1\), \(4^1 - 1 = 3\), which is divisible by \(3\). [B1]
+Line 2: Assume that \(4^k - 1\) is divisible by \(3\). [B1]
+Line 3: Then \(4^{k+1} - 1 = 4 \cdot 4^k - 1 = 4(4^k - 1) - 1\). [M1]
+Line 4: \(4(4^k - 1)\) is divisible by \(3\), so \(4^{k+1} - 1\) is divisible by \(3\). [A0] [A0]
+
+Lines 1 to 3 start well: a correct basis, a correct assumption, and a plan to pull out the assumed factor \(4^k - 1\). **Line 3 contains an arithmetic slip.** \(4(4^k - 1) = 4 \cdot 4^k - 4\), so to get back to \(4 \cdot 4^k - 1\) you must **add 3**, not subtract 1. Line 4 then claims the result without noticing that the leftover \(-1\) is not a multiple of \(3\): the argument as written proves nothing, so both accuracy marks are lost. The student scores 3 out of 5.
+
+Correct step: \(4^{k+1} - 1 = 4 \cdot 4^k - 1 = 4(4^k - 1) + 3\). [A1] The first part is divisible by \(3\) by the assumption, and \(3\) is divisible by \(3\), so \(4^{k+1} - 1\) is divisible by \(3\). It is true for \(n = 1\), and true for \(k + 1\) whenever it is true for \(k\), so it is true for all positive integers \(n\) by induction. [A1]
+
+Check: \(k = 3\) gives \(4^4 - 1 = 255\) and \(4(4^3 - 1) + 3 = 4(63) + 3 = 255\). ✓
+:::
+
 :::try Test yourself on the tour
 Q: Complete the inductive step to prove \(\displaystyle\sum_{r=1}^{n} r = \frac{n(n+1)}{2}\), given that it is true for \(n = k\).
-A: For \(n = k + 1\): \(\dfrac{k(k+1)}{2} + (k + 1) = (k + 1)\left(\dfrac{k}{2} + 1\right) = \dfrac{(k+1)(k+2)}{2}\), which is the formula with \(n = k + 1\).
+A: For \(n = k + 1\):
+\[\dfrac{k(k+1)}{2} + (k + 1) = (k + 1)\left(\dfrac{k}{2} + 1\right) = \dfrac{(k+1)(k+2)}{2}\]
+This is the formula with \(n = k + 1\).
 Q: Find the determinant and the inverse of \(\begin{pmatrix}1 & 2\\ 3 & 4\end{pmatrix}\).
-A: \(\det = 4 - 6 = -2\). Inverse \(= \dfrac{1}{-2}\begin{pmatrix}4 & -2\\ -3 & 1\end{pmatrix} = \begin{pmatrix}-2 & 1\\ 1.5 & -0.5\end{pmatrix}\).
+A: \(\det = 4 - 6 = -2\). Inverse:
+\[\dfrac{1}{-2}\begin{pmatrix}4 & -2\\ -3 & 1\end{pmatrix} = \begin{pmatrix}-2 & 1\\ 1.5 & -0.5\end{pmatrix}\]
 Q: The roots of \(x^3 - 6x^2 + 11x - 6 = 0\) are \(\alpha, \beta, \gamma\). Find \(\alpha^2 + \beta^2 + \gamma^2\) and check against the actual roots 1, 2, 3.
 A: \(\alpha + \beta + \gamma = 6\) and \(\alpha\beta + \beta\gamma + \gamma\alpha = 11\), so the sum of squares is \(36 - 22 = 14\). Check: \(1 + 4 + 9 = 14\). ✓
 Q: Use the method of differences to find \(\displaystyle\sum_{r=1}^{9}\frac{1}{r(r+1)}\).
@@ -182,6 +231,54 @@ Q: Find \((\sqrt3 + i)^6\).
 A: \(|\sqrt3 + i| = 2\) and the argument is \(\tfrac\pi6\), so the result is \(2^6(\cos\pi + i\sin\pi) = -64\).
 Q: Solve \(y'' + 4y = 0\).
 A: The auxiliary equation \(m^2 + 4 = 0\) gives \(m = \pm 2i\), so \(y = A\cos 2x + B\sin 2x\).
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [2 marks] ★ Find the exact value of \(\cosh(\ln 2)\).
+A: \(\cosh(\ln 2) = \dfrac{e^{\ln 2} + e^{-\ln 2}}{2}\) [M1] \(= \dfrac{2 + \tfrac12}{2} = \dfrac54\). [A1]
+Q: [4 marks] ★ Let \(\mathbf{A} = \begin{pmatrix}3 & 2\\ 4 & 3\end{pmatrix}\). Find \(\mathbf{A}^{-1}\) and use it to solve \(3x + 2y = 5\) and \(4x + 3y = 8\).
+A: \(\det\mathbf{A} = 3(3) - 2(4) = 1\), so [M1] \(\mathbf{A}^{-1} = \begin{pmatrix}3 & -2\\ -4 & 3\end{pmatrix}\). [A1] Then \(\begin{pmatrix}x\\ y\end{pmatrix} = \begin{pmatrix}3 & -2\\ -4 & 3\end{pmatrix}\begin{pmatrix}5\\ 8\end{pmatrix}\) [M1] \(= \begin{pmatrix}-1\\ 4\end{pmatrix}\), so \(x = -1\) and \(y = 4\). [A1]
+Q: [5 marks] ★★ Prove by induction that \(\displaystyle\sum_{r=1}^{n} r(r + 1) = \frac{n(n + 1)(n + 2)}{3}\) for all positive integers \(n\).
+A: For \(n = 1\), the left side is \(1 \times 2 = 2\) and the right side is \(\dfrac{1 \times 2 \times 3}{3} = 2\). ✓ [B1] Assume it is true for \(n = k\): \(\displaystyle\sum_{r=1}^{k} r(r + 1) = \dfrac{k(k + 1)(k + 2)}{3}\). [B1] For \(n = k + 1\) add the next term: \(\dfrac{k(k + 1)(k + 2)}{3} + (k + 1)(k + 2)\) [M1] \(= \dfrac{(k + 1)(k + 2)(k + 3)}{3}\), [A1] which is the formula with \(n = k + 1\). It is true for \(n = 1\) and true for \(k + 1\) whenever it is true for \(k\), so it is true for all positive integers \(n\). [A1]
+Q: [4 marks] ★★ The roots of \(x^3 - 4x^2 + x + 6 = 0\) are \(\alpha\), \(\beta\) and \(\gamma\). Without solving the equation, find (a) \(\alpha^2 + \beta^2 + \gamma^2\), (b) \(\dfrac1\alpha + \dfrac1\beta + \dfrac1\gamma\).
+A: \(\alpha + \beta + \gamma = 4\), \(\alpha\beta + \beta\gamma + \gamma\alpha = 1\) and \(\alpha\beta\gamma = -6\). (a) \(\alpha^2 + \beta^2 + \gamma^2 = 4^2 - 2(1)\) [M1] \(= 14\). [A1] (b) \(\dfrac1\alpha + \dfrac1\beta + \dfrac1\gamma = \dfrac{\alpha\beta + \beta\gamma + \gamma\alpha}{\alpha\beta\gamma}\) [M1] \(= -\dfrac16\). [A1] Check with the actual roots \(2, 3, -1\): \(4 + 9 + 1 = 14\) and \(\tfrac12 + \tfrac13 - 1 = -\tfrac16\). ✓
+Q: [5 marks] ★★ (a) Express \(\dfrac{1}{(2r - 1)(2r + 1)}\) in partial fractions. (b) Use the method of differences to show that \(\displaystyle\sum_{r=1}^{n}\frac{1}{(2r - 1)(2r + 1)} = \frac{n}{2n + 1}\). (c) Find the sum to infinity.
+A: (a)
+\[\dfrac{1}{(2r - 1)(2r + 1)} = \dfrac12\left(\dfrac{1}{2r - 1} - \dfrac{1}{2r + 1}\right)\] [M1 A1]
+(b) Writing out the terms,
+\[\tfrac12\left(1 - \tfrac13\right) + \tfrac12\left(\tfrac13 - \tfrac15\right) + \dots + \tfrac12\left(\tfrac{1}{2n - 1} - \tfrac{1}{2n + 1}\right)\]
+everything cancels except the first and last parts. [M1] The sum is \(\tfrac12\left(1 - \dfrac{1}{2n + 1}\right) = \dfrac{n}{2n + 1}\). [A1] (c) As \(n \to \infty\), \(\dfrac{n}{2n + 1} \to \dfrac12\). [B1]
+Q: [4 marks] ★★ Find \((1 - i)^6\).
+A: \(|1 - i| = \sqrt2\) and \(\arg(1 - i) = -\tfrac\pi4\), so
+\[1 - i = \sqrt2\left(\cos\left(-\tfrac\pi4\right) + i\sin\left(-\tfrac\pi4\right)\right)\] [M1 A1]
+By de Moivre,
+\[(1 - i)^6 = (\sqrt2)^6\left(\cos\left(-\tfrac{3\pi}{2}\right) + i\sin\left(-\tfrac{3\pi}{2}\right)\right)\] [M1]
+This is \(8(0 + i) = 8i\). [A1] Check: \((1 - i)^2 = -2i\), and \((-2i)^3 = -8i^3 = 8i\). ✓
+Q: [7 marks] (#math.p3.diffeq) ★★★ Solve \(\dfrac{d^2y}{dx^2} + 4\dfrac{dy}{dx} + 13y = 0\), given that \(y = 2\) and \(\dfrac{dy}{dx} = -1\) when \(x = 0\).
+H: Write the auxiliary equation \(m^2 + 4m + 13 = 0\). Are its roots real?
+H: Complex roots \(p \pm qi\) give \(y = e^{px}(A\cos qx + B\sin qx)\).
+H: Use \(y(0) = 2\) first to find \(A\). Then differentiate the product to use the second condition.
+A: The auxiliary equation is \(m^2 + 4m + 13 = 0\). [M1] Then \(m = \dfrac{-4 \pm \sqrt{16 - 52}}{2} = -2 \pm 3i\). [A1] So \(y = e^{-2x}(A\cos 3x + B\sin 3x)\). [A1] When \(x = 0\), \(y = A = 2\). [B1] Differentiating (product rule):
+\[\dfrac{dy}{dx} = e^{-2x}\big[-2(A\cos 3x + B\sin 3x) - 3A\sin 3x + 3B\cos 3x\big]\] [M1] At \(x = 0\): \(-2A + 3B = -1\), so \(-4 + 3B = -1\) and \(B = 1\). [A1] The solution is \(y = e^{-2x}(2\cos 3x + \sin 3x)\). [A1]
+Q: [7 marks] (#math.p3.diff) ★★★ (a) Find the first three non-zero terms of the Maclaurin series of \(e^x\sin x\). (b) Use your series to estimate \(\displaystyle\int_0^{0.2} e^x\sin x\,dx\), giving your answer to 3 significant figures.
+H: Use the product rule to find the first three derivatives of \(f(x) = e^x\sin x\), then evaluate each at \(x = 0\).
+H: In the Maclaurin series the coefficient of \(x^n\) is \(\dfrac{f^{(n)}(0)}{n!}\), starting with \(f(0)\).
+A: (a) \(f = e^x\sin x\), so \(f(0) = 0\). \(f' = e^x(\sin x + \cos x)\), so \(f'(0) = 1\). [M1 A1] \(f'' = 2e^x\cos x\), so \(f''(0) = 2\). \(f''' = 2e^x(\cos x - \sin x)\), so \(f'''(0) = 2\). [M1 A1] The series is \(x + \dfrac{2}{2}x^2 + \dfrac{2}{6}x^3 = x + x^2 + \dfrac{x^3}{3} + \dots\) [A1] (b)
+\[\int_0^{0.2}\left(x + x^2 + \tfrac{x^3}{3}\right)dx = \left[\tfrac{x^2}{2} + \tfrac{x^3}{3} + \tfrac{x^4}{12}\right]_0^{0.2}\] [M1]
+\[= 0.02 + 0.002667 + 0.000133 = 0.0228\] [A1] The exact value is \(0.02280\ldots\), so the estimate is accurate to 3 significant figures.
+:::
+
+:::try Stretch for A*
+Q: [5 marks] ★★★ Prove by induction that \(n^3 + 2n\) is divisible by \(3\) for every positive integer \(n\).
+H: In the step, expand \((k + 1)^3 + 2(k + 1)\) and look for the expression \(k^3 + 2k\) inside it.
+H: What is left over should be a multiple of 3.
+A: For \(n = 1\): \(1 + 2 = 3\), which is divisible by \(3\). [B1] Assume that \(k^3 + 2k\) is divisible by \(3\). [B1] Then
+\[\begin{aligned} (k + 1)^3 + 2(k + 1) &= k^3 + 3k^2 + 3k + 1 + 2k + 2 \\ &= (k^3 + 2k) + 3(k^2 + k + 1) \end{aligned}\] [M1 A1] The first bracket is divisible by \(3\) by the assumption and the second term is a multiple of \(3\), so the sum is divisible by \(3\). It is true for \(n = 1\) and true for \(k + 1\) whenever it is true for \(k\), so it is true for all positive integers \(n\). [A1]
+Q: [4 marks] ★★★ The curve \(r = \sin 2\theta\) for \(0 \le \theta \le \dfrac\pi2\) is one petal of a four-petal flower. Find the exact area of that petal.
+H: Use the polar area formula \(A = \tfrac12\int r^2\,d\theta\) with the given limits.
+H: Write \(\sin^2 2\theta\) using the double-angle identity \(\cos 4\theta = 1 - 2\sin^2 2\theta\).
+A: \(A = \tfrac12\int_0^{\pi/2}\sin^2 2\theta\,d\theta\). [M1] Since \(\sin^2 2\theta = \dfrac{1 - \cos 4\theta}{2}\), [M1]
+\[A = \tfrac14\int_0^{\pi/2}(1 - \cos 4\theta)\,d\theta = \tfrac14\left[\theta - \dfrac{\sin 4\theta}{4}\right]_0^{\pi/2}\] [A1] At \(\theta = \tfrac\pi2\), \(\sin 2\pi = 0\), so \(A = \tfrac14\cdot\tfrac\pi2 = \dfrac\pi8\). [A1] Check: four petals have total area \(4 \times \dfrac\pi8 = \dfrac\pi2\), which is half the area \(\pi\) of the unit circle \(r = 1\). The flower lies inside that circle, so this is plausible.
 :::
 
 :::quiz Check your understanding
@@ -209,6 +306,31 @@ A: The auxiliary equation \(m^2 + 4 = 0\) gives \(m = \pm 2i\), so \(y = A\cos 2
 - the direction of the stretch
 - the length of the diagonal
 > The determinant is the area scale factor. A zero determinant means the matrix has no inverse.
+? A student proves the inductive step \(n = k \Rightarrow n = k + 1\) for a statement but never checks \(n = 1\). What has been proved?
+- the statement is true for every positive integer
+- the statement is true for \(n = 1\) only
++ nothing: the dominoes are lined up, but the first one has not been pushed
+- the statement is false
+> Without the basis case, the step only says "if it is true for one value, it is true for the next". Nothing says it is true for any value at all. For example, "\(n = n + 1\)" passes the step (add 1 to both sides) but is never true.
+? The roots of \(x^3 - 2x^2 + 3x - 4 = 0\) are \(\alpha\), \(\beta\), \(\gamma\). What is \(\alpha\beta\gamma\)?
+- \(-4\)
++ \(4\)
+- \(2\)
+- \(3\)
+> The product of the roots is \(-\dfrac{d}{a} = -\dfrac{-4}{1} = 4\). The option \(-4\) forgets the minus sign in the formula, \(2\) is the sum of the roots, and \(3\) is the sum of the products in pairs.
+:::
+
+:::checklist What you can now do
+- [ ] I can say what the four 9231 papers are and who Further Mathematics suits.
+- [ ] I can write a proof by induction with a basis, an assumption, a step and a conclusion.
+- [ ] I can find the determinant and inverse of a 2 × 2 matrix and use them to solve equations.
+- [ ] I can use the sum and product of the roots of a polynomial to find other expressions in the roots.
+- [ ] I can sum a series with the method of differences and say what it tends to.
+- [ ] I can find the area enclosed by a polar curve.
+- [ ] I can work with sinh and cosh from their definitions and use cosh² x − sinh² x = 1.
+- [ ] I can find a Maclaurin series from derivatives and use it to approximate a value or an integral.
+- [ ] I can use de Moivre's theorem to find a power of a complex number.
+- [ ] I can solve a second-order differential equation using the auxiliary equation, including initial conditions.
 :::
 
 :::recap

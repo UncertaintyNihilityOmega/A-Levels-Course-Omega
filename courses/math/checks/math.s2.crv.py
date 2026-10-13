@@ -84,4 +84,37 @@ eq("t9 area", integ(t9, 0, 4), 1, 1e-6); eq("t9 E", integ(lambda x: x * t9(x), 0
 eq("t9 Var", 48 / 7 - 2.4 ** 2, 192 / 175); eq("t9 Var 3sf", sf(192 / 175), 1.10); eq("t9 med", solve(lambda m: integ(t9, 0, m) - 0.5, 0, 4), 4 ** (2 / 3), 1e-5); eq("t9 med 3sf", sf(4 ** (2 / 3)), 2.52)
 eq("t9 coef", 3 / 16 * 64 / 5, 2.4); eq("t9 coef2", 3 / 16 * 256 / 7, 48 / 7)
 eq("t10 E", 50 / 8, 6.25); eq("t10 P", sf(comb(50, 5) * (1 / 8) ** 5 * (7 / 8) ** 45), 0.159)
+
+# ---- P14 additions ----
+from fractions import Fraction as Fr
+from math import sqrt as _sq, log as _ln
+# warm-up
+eq("w1", (4 ** 3 - 4 ** 2) - (1 - 1), 48); eq("w2 E", 8 * .25, 2); eq("w2 V", 8 * .25 * .75, 1.5)
+eq("w3 E", 2 * 5 - 3, 7); eq("w3 V", 4 * 2, 8)
+# spot the error
+eq("sp k", Fr(9, 2) - Fr(1, 2), 4); eq("sp wrong m", _sq(4), 2); eq("sp m", round(_sq(5), 2), 2.24)
+# exam practice
+eq("e1 area", 6 * 4 - 4 ** 2 / 2, 16); eq("e1 P", (6 * 2 - 2 * 2 / 2) / 16, 0.625)
+eq("e2 area", 3 ** 2 / 9, 1); eq("e2 E", 2 * 27 / 27, 2); eq("e2 E2", 3 ** 4 / 18, 4.5); eq("e2 V", 4.5 - 4, 0.5)
+eq("e3 a", sf(1 / 9), 0.111); eq("e3 b", sf(_sq(2)), 1.41)
+lq = (26 * .25 + 1) ** (1 / 3); uq = (26 * .75 + 1) ** (1 / 3)
+eq("e4 lq3", 26 * .25 + 1, 7.5); eq("e4 uq3", 26 * .75 + 1, 20.5)
+eq("e4 lq", sf(lq), 1.96); eq("e4 uq", sf(uq), 2.74); eq("e4 iqr", sf(uq - lq), 0.779)
+eq("e4 uq4", round(uq, 4), 2.7369); eq("e4 lq4", round(lq, 4), 1.9574)
+F5 = lambda x: -x ** 3 / 3 + 3 * x ** 2 - 5 * x
+eq("e5 area", F5(5) - F5(1), 32 / 3); eq("e5 form", 25 / 3 + 7 / 3, 32 / 3)
+eq("e5 c", sf(3 / 32 * (F5(5) - F5(4))), 0.156); eq("e5 c form", F5(5) - F5(4), 5 / 3)
+eq("e6 E", 5 / 4, 1.25); eq("e6 E2", 5 / 3, 5 / 3); eq("e6 V", sf(5 / 3 - 25 / 16), 0.104); eq("e6 Vf", 5 / 3 - 25 / 16, 5 / 48)
+eq("e6 m", sf(2 ** .2), 1.15)
+a, b = 0.2, 0.3
+eq("e7 area", 2 * a + 2 * b, 1); eq("e7 E", 2 * a + 8 * b / 3, 1.2)
+eq("e7 P", 0.2 * 2 + 0.15 * 4 - (0.2 + 0.15), 0.65)
+E2 = 0.2 * 8 / 3 + 0.3 * 4; eq("e7 E2", round(E2, 4), 1.7333); eq("e7 V", sf(E2 - 1.44), 0.293)
+eq("e7 c", sf(2 * (E2 - 1.44)), 0.587); eq("e7 cv", round(E2 - 1.44, 4), 0.2933)
+# stretch
+eq("s1 P", integ(lambda x: 2 * x, 0, _sq(0.3)), 0.3, 1e-6); eq("s1 EY", integ(lambda y: y, 0, 1), 0.5, 1e-6); eq("s1 EX2", integ(lambda x: x * x * 2 * x, 0, 1), 0.5, 1e-6)
+eq("s2 area", 1, 1)
+for bb in (10, 1000, 10 ** 6):
+    assert _ln(bb) > 2
+eq("s2 m", 1 / (1 - 0.5), 2)
 print("ok")

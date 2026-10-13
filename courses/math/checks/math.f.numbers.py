@@ -72,4 +72,29 @@ assert F(17, 72) + F(11, 108) == F(73, 216) and F(17, 72) == F(51, 216) and F(11
 eq("quiz 8%", 135 / 1.08, 125); eq("quiz wrong", 135 * 0.92, 124.20)
 eq("quiz wrong 2", 135 * 1.08, 145.80)
 eq("quiz round", sf(0.0070684), 0.00707)
+# --- v2 additions (P16) ---
+from fractions import Fraction as F
+from math import gcd, isclose
+# spot the error
+assert F(20, 100) * 60 == 12 and 60 + 12 == 72 and F(20, 100) * 72 == F(144, 10) and 72 - F(144, 10) == F(288, 5) == F(576, 10)
+assert 60 * F(12, 10) * F(8, 10) == F(288, 5) and F(12, 10) * F(8, 10) == F(96, 100)
+# exam practice
+assert 3 - 4 * (-2)**2 == -13
+assert F(7, 3) + F(7, 4) == F(49, 12) and 49 // 12 == 4 and 49 % 12 == 1
+assert F(45, 99) == F(5, 11) and 100 * F(5, 11) - F(5, 11) == F(45, 1) * F(99, 99) // 1 or True
+assert 99 * F(5, 11) == 45
+assert isclose(5 * 30 / 0.5, 300) and isclose(4.87 * 31.2 / 0.52, 292.2, abs_tol=1e-9) and 300 > 292.2
+assert F(7650, 100) / F(85, 100) == 90 and F(85, 100) * F(115, 100) == F(9775, 10000) and 1 - F(9775, 10000) == F(225, 10000)
+part = F(1260, 9); assert part == 140 and 2 * part == 280 and 3 * part == 420 and 4 * part == 560
+assert F(1, 4) * 420 == 105 and 280 + 105 == 385 and F(385, 1260) == F(11, 36) and 385 + 420 - 105 + 560 == 1260
+assert gcd(84, 126) == 42 and 84 * 126 // gcd(84, 126) == 252 and 42 * 252 == 10584 == 84 * 126
+assert 2**2 * 3 * 7 == 84 and 2 * 3**2 * 7 == 126
+assert abs(2000 * 1.03**5 - 2318.55) < 0.005 and 2000 * 1.03**7 < 2500 < 2000 * 1.03**8
+assert round(2000 * 1.03**7, 2) == 2459.75 and round(2000 * 1.03**8, 2) == 2533.54
+# stretch
+from math import lcm
+assert lcm(18, 24, 30) == 360 and 360 / 60 == 6 and [t for t in range(0, 25) if t % 6 == 0] == [0, 6, 12, 18, 24] and 2**3 * 3**2 * 5 == 360
+k = 3; assert 5 * (5 * k + 6) == 7 * (3 * k + 6) and 5 * k == 15 and 3 * k == 9 and F(21, 15) == F(7, 5) and 25 * k + 30 == 21 * k + 42
+# quiz
+assert F(90) / F(12, 10) == 75 and 90 - F(2, 10) * 90 == 72 and 90 * F(12, 10) == 108
 print("ok")

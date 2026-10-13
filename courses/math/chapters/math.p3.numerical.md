@@ -11,6 +11,15 @@ Most equations that come from real problems have no neat algebraic solution. \(e
 
 **Before you start**, you need graph sketching ([Graphs and straight lines](#math.f.graphs)), logarithms and exponentials ([Logarithms and exponentials](#math.p3.logs)), and a calculator with an **ANS** (answer) key. Work in radians for anything with \(\sin\), \(\cos\) or \(\tan\).
 
+:::try Warm-up
+Q: Make \(x\) the subject of \(x^3 = 2x + 5\). (from [Algebra from scratch](#math.f.algebra))
+A: Take the cube root of both sides: \(x = \sqrt[3]{2x + 5}\).
+Q: Solve \(2\ln x = 3\), giving \(x\) to 3 significant figures. (from [Logarithms and exponentials](#math.p3.logs))
+A: \(\ln x = 1.5\), so \(x = e^{1.5} = 4.48\).
+Q: Find the gradient of \(y = x\ln x\) at \(x = e\). (from [Further differentiation](#math.p3.diff))
+A: \(\dfrac{dy}{dx} = \ln x + 1\), so at \(x = e\) the gradient is \(2\).
+:::
+
 ## Locating a root
 
 :::def Root of an equation
@@ -39,6 +48,12 @@ A sign change always means a root **if the function is continuous**. But the tes
 - **No sign change but a root.** \(\mathrm{f}(x) = (x - 1)^2\) touches the axis at \(x = 1\) without crossing it. \(\mathrm{f}(0) = 1\) and \(\mathrm{f}(2) = 1\) have the same sign, yet \(x = 1\) is a root.
 - **Two roots in the interval.** If the curve crosses the axis twice between \(a\) and \(b\), the signs at the ends are the same and you miss both roots. For example, \(\mathrm{f}(x) = x^2 - 4\) has \(\mathrm{f}(-3) = 5\) and \(\mathrm{f}(3) = 5\), yet there are roots at \(\pm 2\).
 Use a narrow interval and a sketch to avoid these.
+:::
+
+:::proof Why a sign change means a root
+Suppose \(\mathrm{f}\) is continuous on the interval from \(a\) to \(b\), with \(\mathrm{f}(a) < 0\) and \(\mathrm{f}(b) > 0\). A continuous graph can be drawn without lifting the pen. To get from below the \(x\)-axis at \(x = a\) to above it at \(x = b\), the pen must cross the axis at least once, and at that point \(\mathrm{f}(x) = 0\). So there is a root between \(a\) and \(b\).
+Continuity is needed. If the graph jumps, as \(\dfrac1x\) does at \(x = 0\), the pen is lifted and the curve can skip over the axis.
+The same idea proves a root "to 2 decimal places". If \(\mathrm{f}(1.665) < 0\) and \(\mathrm{f}(1.675) > 0\), the root is somewhere in that interval. Every number from \(1.665\) to \(1.675\) rounds to \(1.67\), so the root is \(1.67\) to 2 d.p. This is why the test points are half a unit in the last place either side of the claimed value.
 :::
 
 ### Locating roots with a graph
@@ -130,6 +145,13 @@ An iteration may **converge** (the staircase or the cobweb closes in on the root
 
 A common question gives the iteration and asks which equation it solves. Replace \(x_n\) and \(x_{n+1}\) by \(\alpha\) and rearrange.
 
+:::proof Why the limit of an iteration solves the equation
+Suppose \(x_{n+1} = \mathrm{F}(x_n)\) and the terms get closer and closer to a number \(\alpha\). Then \(x_n \to \alpha\), and \(x_{n+1} \to \alpha\) too, because it is the same list of numbers shifted along by one place.
+If \(\mathrm{F}\) is continuous, \(\mathrm{F}(x_n) \to \mathrm{F}(\alpha)\). Both sides of \(x_{n+1} = \mathrm{F}(x_n)\) tend to a limit, so
+\[\alpha = \mathrm{F}(\alpha)\]
+The number \(\alpha\) is a solution of \(x = \mathrm{F}(x)\), and that equation is a rearrangement of the original equation \(\mathrm{f}(x) = 0\). This is why, in the next example, you replace both \(x_n\) and \(x_{n+1}\) by \(\alpha\).
+:::
+
 :::eg The iteration \(x_{n+1} = \sqrt{3 + x_n}\) converges to \(\alpha\). Find the equation that \(\alpha\) satisfies, and show that \(\alpha = 2.30\) to 2 decimal places.
 \(\alpha = \sqrt{3 + \alpha}\), so \(\alpha^2 = 3 + \alpha\), that is \(\alpha^2 - \alpha - 3 = 0\). The positive solution is \(\alpha = \dfrac{1 + \sqrt{13}}{2} = 2.303\), so \(\alpha = 2.30\) to 2 d.p.
 :::
@@ -139,7 +161,7 @@ A common question gives the iteration and asks which equation it solves. Replace
 :::eg A spherical tank of radius \(1\) m is filled with water to depth \(h\) m. The volume of water is \(V = \dfrac{\pi h^2(3 - h)}{3}\) cubic metres. Find the depth when \(V = 2\).
 \(\dfrac{\pi h^2(3 - h)}{3} = 2\) gives \(h^2(3 - h) = \dfrac{6}{\pi}\), so \(h^3 - 3h^2 + \dfrac6\pi = 0\) with \(\dfrac6\pi = 1.9099\). Let \(\mathrm{f}(h) = h^3 - 3h^2 + 1.9099\). Then \(\mathrm{f}(0.9) = 0.209 > 0\) and \(\mathrm{f}(1) = -0.090 < 0\), so the depth is between \(0.9\) m and \(1\) m.
 
-Rearrange \(3h^2 = h^3 + 1.9099\) as \(h_{n+1} = \sqrt{\dfrac{h_n^3 + 1.9099}{3}}\). Starting at \(h_0 = 0.9\): \(0.9379, 0.9548, 0.9627, 0.9664, 0.9683, 0.9691, 0.9695, \ldots\), approaching \(0.970\). Check the sign change: \(\mathrm{f}(0.965) = 0.0148 > 0\) and \(\mathrm{f}(0.975) = -0.0152 < 0\), so \(h = 0.97\) m to 2 d.p.
+Rearrange \(3h^2 = h^3 + 1.9099\) as \(h_{n+1} = \sqrt{\dfrac{h_n^3 + 1.9099}{3}}\). Starting at \(h_0 = 0.9\): \(0.9379, 0.9548, 0.9627, 0.9664,\) \(0.9683, 0.9691, 0.9695, \ldots\), approaching \(0.970\). Check the sign change: \(\mathrm{f}(0.965) = 0.0148 > 0\) and \(\mathrm{f}(0.975) = -0.0152 < 0\), so \(h = 0.97\) m to 2 d.p.
 :::
 
 :::eg (Exam style) The equation \(x^3 - x - 3 = 0\) has one real root \(\alpha\). (a) Show that \(\alpha\) lies between \(1\) and \(2\). (b) Show that \(\alpha\) is a root of \(x = \sqrt[3]{x + 3}\). (c) Use \(x_{n+1} = \sqrt[3]{x_n + 3}\) with \(x_0 = 1.5\) to find \(\alpha\) correct to 3 decimal places, showing your values. (d) Show that your value is correct to 3 decimal places by considering a sign change.
@@ -156,6 +178,19 @@ Rearrange \(3h^2 = h^3 + 1.9099\) as \(h_{n+1} = \sqrt{\dfrac{h_n^3 + 1.9099}{3}
 Edexcel IAL covers locating roots, iteration and the sign change test in P3. UK A Levels (AQA, Edexcel, OCR) include the same in Pure Year 2, and also cover Newton-Raphson, which is not on the Cambridge 9709 syllabus. Cambridge asks how an iteration relates to the equation, and that it may fail to converge, but not the condition for convergence.
 :::
 
+:::eg Spot the error: show that the root of \(x^3 - x - 3 = 0\) is \(1.67\) correct to 2 decimal places
+A student wrote this answer.
+
+Line 1: \(\mathrm{f}(x) = x^3 - x - 3\). \(\mathrm{f}(1.67) = -0.0125\) and \(\mathrm{f}(1.68) = 0.0616\).
+Line 2: There is a change of sign, so the root lies between \(1.67\) and \(1.68\), and \(\alpha = 1.67\) to 2 d.p.
+
+**Line 1 scores [M0], so Line 2 scores [A0].** The arithmetic is right, but the interval is wrong. A root between \(1.67\) and \(1.68\) could round to \(1.67\) or to \(1.68\), and the student has not shown which. To prove a value correct to 2 d.p., test the two numbers half a unit in the last place either side of it: \(1.665\) and \(1.675\).
+
+Correct working: \(\mathrm{f}(1.665) = -0.0492\) and \(\mathrm{f}(1.675) = 0.0244\). [M1 A1] There is a change of sign and \(\mathrm{f}\) is continuous, so the root is in \((1.665, 1.675)\), which means \(\alpha = 1.67\) to 2 d.p. [A1]
+
+**Check:** every number in \((1.665, 1.675)\) rounds to \(1.67\). Every number in \((1.67, 1.68)\) does not: \(1.676\) rounds to \(1.68\).
+:::
+
 :::try Start easy, finish at exam standard
 Q: Show that \(x^3 - 4x + 1 = 0\) has a root between \(1\) and \(2\).
 A: Let \(\mathrm{f}(x) = x^3 - 4x + 1\). \(\mathrm{f}(1) = 1 - 4 + 1 = -2 < 0\) and \(\mathrm{f}(2) = 8 - 8 + 1 = 1 > 0\). The sign changes and \(\mathrm{f}\) is continuous, so there is a root in \([1, 2]\).
@@ -168,11 +203,40 @@ A: \(\mathrm{f}(1.5) = 3.375 + 1.5 - 5 = -0.125 < 0\) and \(\mathrm{f}(1.6) = 4.
 Q: The iteration \(x_{n+1} = \dfrac{4}{x_n^2 + 1}\) converges to \(\alpha\). Find the cubic equation satisfied by \(\alpha\).
 A: \(\alpha = \dfrac{4}{\alpha^2 + 1}\), so \(\alpha(\alpha^2 + 1) = 4\), giving \(\alpha^3 + \alpha - 4 = 0\).
 Q: Show that \(2\ln x + x = 6\) can be written \(x = 6 - 2\ln x\). Use this with \(x_0 = 3\) to find the first six values, say what you notice, and show by a sign change that the root is \(3.50\) to 2 decimal places.
-A: \(2\ln x = 6 - x\) gives \(x = 6 - 2\ln x\). The values are \(3.8028, 3.3285, 3.5949, 3.4410, 3.5285, 3.4783\). They alternate above and below the root and close in on it slowly, so a sign change check is better for the final accuracy. Let \(\mathrm{f}(x) = 2\ln x + x - 6\): \(\mathrm{f}(3.495) = -0.0023 < 0\) and \(\mathrm{f}(3.505) = 0.0134 > 0\). The root is in \([3.495, 3.505]\), so \(3.50\) to 2 d.p.
+A: \(2\ln x = 6 - x\) gives \(x = 6 - 2\ln x\). The values are \(3.8028, 3.3285, 3.5949,\) \(3.4410, 3.5285, 3.4783\). They alternate above and below the root and close in on it slowly, so a sign change check is better for the final accuracy. Let \(\mathrm{f}(x) = 2\ln x + x - 6\): \(\mathrm{f}(3.495) = -0.0023 < 0\) and \(\mathrm{f}(3.505) = 0.0134 > 0\). The root is in \([3.495, 3.505]\), so \(3.50\) to 2 d.p.
 Q: A student uses \(x_{n+1} = \dfrac{x_n^3 - 5}{2}\) with \(x_0 = 2\) for \(x^3 - 2x - 5 = 0\). Describe what happens and suggest what to do.
 A: The values are \(1.5, -0.8125, -2.768, -13.1, \ldots\), growing without limit: the iteration diverges. Rearrange the equation differently, for example \(x = \sqrt[3]{2x + 5}\).
 Q: (Exam style) The equation \(2\cos x = x\) (with \(x\) in radians) has one root \(\alpha\). (a) Show that \(\alpha\) lies between \(1\) and \(1.5\). (b) Show that the equation can be written \(x = \cos^{-1}\left(\dfrac x2\right)\). (c) Use \(x_{n+1} = \cos^{-1}\left(\dfrac{x_n}{2}\right)\) with \(x_0 = 1\) to find \(\alpha\) to 2 decimal places. (d) Show by a sign change that your answer is correct. (e) A student uses \(x_{n+1} = 2\cos x_n\) with \(x_0 = 1\). What happens?
-A: (a) \(\mathrm{f}(x) = 2\cos x - x\): \(\mathrm{f}(1) = 0.081 > 0\) and \(\mathrm{f}(1.5) = -1.359 < 0\). [M1 A1] (b) \(\cos x = \dfrac x2\), so \(x = \cos^{-1}\dfrac x2\). [B1] (c) \(x_1 = 1.0472\), \(x_2 = 1.0197\), \(x_3 = 1.0358\), \(x_4 = 1.0264\), \(x_5 = 1.0319\), \(x_6 = 1.0287\), \(x_7 = 1.0306\). [M1 A1] The values settle near \(1.03\), so \(\alpha = 1.03\). [A1] (d) \(\mathrm{f}(1.025) = 0.0132 > 0\) and \(\mathrm{f}(1.035) = -0.0139 < 0\), so the root is in \([1.025, 1.035]\). [M1 A1] (e) The values are \(1.0806, 0.9416, 1.1770, 0.7674, 1.4395, 0.2619, \ldots\) and jump about with growing size: the iteration does not converge. [B1]
+A: (a) \(\mathrm{f}(x) = 2\cos x - x\): \(\mathrm{f}(1) = 0.081 > 0\) and \(\mathrm{f}(1.5) = -1.359 < 0\). [M1 A1] (b) \(\cos x = \dfrac x2\), so \(x = \cos^{-1}\dfrac x2\). [B1] (c) \(x_1 = 1.0472\), \(x_2 = 1.0197\), \(x_3 = 1.0358\), \(x_4 = 1.0264\), \(x_5 = 1.0319\), \(x_6 = 1.0287\), \(x_7 = 1.0306\). [M1 A1] The values settle near \(1.03\), so \(\alpha = 1.03\). [A1] (d) \(\mathrm{f}(1.025) = 0.0132 > 0\) and \(\mathrm{f}(1.035) = -0.0139 < 0\), so the root is in \([1.025, 1.035]\). [M1 A1] (e) The values are \(1.0806, 0.9416, 1.1770,\) \(0.7674, 1.4395, 0.2619, \ldots\) and jump about with growing size: the iteration does not converge. [B1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [2 marks] ★ Show that the equation \(x^3 + 2x - 7 = 0\) has a root between \(1\) and \(2\).
+A: Let \(\mathrm{f}(x) = x^3 + 2x - 7\). \(\mathrm{f}(1) = -4\) and \(\mathrm{f}(2) = 5\). [M1] There is a change of sign and \(\mathrm{f}\) is continuous, so there is a root in the interval. [A1]
+Q: [4 marks] ★ The sequence is defined by \(x_{n+1} = \sqrt{3x_n + 4}\) with \(x_0 = 3\). Find \(x_1\), \(x_2\) and \(x_3\), correct to 4 significant figures.
+A: \(x_1 = \sqrt{13} = 3.606\). [M1 A1] \(x_2 = \sqrt{3(3.6056) + 4} = 3.849\). [A1] \(x_3 = \sqrt{3(3.8492) + 4} = 3.943\). [A1]
+Q: [4 marks] ★★ By sketching the graphs of \(y = e^x\) and \(y = 4 - x\) on the same axes, show that the equation \(e^x + x - 4 = 0\) has exactly one real root, and show that the root lies between \(1\) and \(1.5\).
+A: The curve \(y = e^x\) is increasing and always positive, and the line \(y = 4 - x\) is decreasing, so they meet exactly once. [B1 B1] Let \(\mathrm{f}(x) = e^x + x - 4\). \(\mathrm{f}(1) = -0.282\) and \(\mathrm{f}(1.5) = 1.98\). [M1] There is a change of sign, so the root lies between \(1\) and \(1.5\). [A1]
+Q: [7 marks] ★★ (a) Show that the equation \(2x^3 - 3x - 4 = 0\) can be written \(x = \sqrt[3]{\dfrac{3x + 4}{2}}\). (b) Use the iteration \(x_{n+1} = \sqrt[3]{\dfrac{3x_n + 4}{2}}\) with \(x_0 = 1.5\) to find \(x_1\), \(x_2\) and \(x_3\) to 4 decimal places. (c) By considering a change of sign, show that the root is \(1.65\) to 2 decimal places.
+A: (a) \(2x^3 = 3x + 4\), [M1] so \(x^3 = \dfrac{3x + 4}{2}\) and \(x = \sqrt[3]{\dfrac{3x + 4}{2}}\). [A1] (b) \(x_1 = 1.6198\), \(x_2 = 1.6423\), \(x_3 = 1.6465\). [M1 A1 A1] (c) Let \(\mathrm{g}(x) = 2x^3 - 3x - 4\). \(\mathrm{g}(1.645) = -0.0322\) and \(\mathrm{g}(1.655) = 0.1012\). [M1] There is a change of sign, so the root is in \((1.645, 1.655)\) and is \(1.65\) to 2 d.p. [A1]
+Q: [8 marks] ★★ (a) Show that the equation \(\ln x + 2x - 5 = 0\) has a root \(\alpha\) between \(2\) and \(2.5\). (b) Show that the equation can be written \(x = \dfrac{5 - \ln x}{2}\). (c) Use the iteration \(x_{n+1} = \dfrac{5 - \ln x_n}{2}\) with \(x_0 = 2\) to find \(x_1\), \(x_2\) and \(x_3\) to 4 decimal places. (d) Show that \(\alpha = 2.12\) to 2 decimal places.
+A: (a) \(\mathrm{f}(x) = \ln x + 2x - 5\): \(\mathrm{f}(2) = -0.307\) and \(\mathrm{f}(2.5) = 0.916\). [M1] A change of sign, so the root is in the interval. [A1] (b) \(2x = 5 - \ln x\), so \(x = \dfrac{5 - \ln x}{2}\). [M1 A1] (c) \(x_1 = 2.1534\), \(x_2 = 2.1165\), \(x_3 = 2.1251\). [M1 A1] (d) \(\mathrm{f}(2.115) = -0.0209\) and \(\mathrm{f}(2.125) = 0.0038\). [M1] A change of sign, so \(\alpha\) is in \((2.115, 2.125)\) and \(\alpha = 2.12\) to 2 d.p. [A1]
+Q: [10 marks] (#math.p3.logs) ★★★ (a) Show that the equation \(2^x = 5x\) has a root between \(4\) and \(5\). (b) Show that the equation can be written \(x = \dfrac{\ln(5x)}{\ln 2}\). (c) Use the iteration \(x_{n+1} = \dfrac{\ln(5x_n)}{\ln 2}\) with \(x_0 = 4.5\) to find \(x_3\), correct to 4 decimal places. (d) Show that the root is \(4.49\) to 2 decimal places.
+H: Use \(\mathrm{f}(x) = 2^x - 5x\) and substitute \(x = 4\) and \(x = 5\).
+H: Take natural logarithms of both sides, then use the power law \(\ln(2^x) = x\ln 2\).
+H: For (d), the root is about \(4.488\). Choose the two test values half a unit in the second decimal place either side of the claimed value.
+A: (a) \(\mathrm{f}(x) = 2^x - 5x\): \(\mathrm{f}(4) = 16 - 20 = -4\) and \(\mathrm{f}(5) = 32 - 25 = 7\). [M1 A1] There is a change of sign, so there is a root between \(4\) and \(5\). [A1] (b) \(\ln(2^x) = \ln(5x)\), so \(x\ln 2 = \ln(5x)\). [M1 A1] Divide by \(\ln 2\): \(x = \dfrac{\ln(5x)}{\ln 2}\). [A1] (c) \(x_1 = 4.4919\), \(x_2 = 4.4892\), \(x_3 = 4.4884\). [M1 A1] (d) \(\mathrm{f}(4.485) = -0.0316\) and \(\mathrm{f}(4.495) = 0.0741\). [M1] A change of sign, so the root is between \(4.485\) and \(4.495\), and it is \(4.49\) to 2 d.p. [A1]
+:::
+
+:::try Stretch for A*
+Q: [6 marks] ★★★ The equation \(x^3 - 3x - 1 = 0\) has three real roots. (a) Show that one root lies in each of the intervals \((-2, -1)\), \((-1, 0)\) and \((1, 2)\). (b) The iteration \(x_{n+1} = \dfrac{x_n^3 - 1}{3}\) is used with \(x_0 = 0\). Find \(x_1\), \(x_2\), \(x_3\) and \(x_4\) to 4 decimal places, and say which root the sequence appears to approach. (c) Show that the same iteration with \(x_0 = 2\) does not approach any root.
+H: Evaluate \(\mathrm{f}(x) = x^3 - 3x - 1\) at \(-2\), \(-1\), \(0\), \(1\) and \(2\) and look at the signs.
+H: In (c), work out \(x_1\), \(x_2\) and \(x_3\) and look at what the numbers do.
+A: (a) \(\mathrm{f}(-2) = -3\), \(\mathrm{f}(-1) = 1\), \(\mathrm{f}(0) = -1\), \(\mathrm{f}(1) = -3\), \(\mathrm{f}(2) = 1\). [M1] There are changes of sign in \((-2, -1)\), \((-1, 0)\) and \((1, 2)\), and \(\mathrm{f}\) is continuous. [A1] (b) \(x_1 = -0.3333\), \(x_2 = -0.3457\), \(x_3 = -0.3471\), \(x_4 = -0.3473\). [M1 A1] The sequence approaches the root in \((-1, 0)\), \(\alpha \approx -0.347\). [A1] (c) With \(x_0 = 2\): \(x_1 = 2.333\), \(x_2 = 3.901\), \(x_3 = 19.46\). The terms grow without limit, so the sequence diverges. [A1] (The same iteration finds one root and misses the others.)
+Q: [4 marks] ★★★ The sequence \(x_{n+1} = 2 + \dfrac{3}{x_n}\) with \(x_0 = 1\) converges to \(\alpha\). Find an equation for \(\alpha\) and hence find the exact value of \(\alpha\). Explain why one solution of the equation is rejected.
+H: Replace both \(x_n\) and \(x_{n+1}\) by \(\alpha\), then multiply through by \(\alpha\).
+H: The quadratic has two roots. Look at the sign of every term of the sequence, starting from \(x_0 = 1\).
+A: \(\alpha = 2 + \dfrac3\alpha\), so \(\alpha^2 = 2\alpha + 3\), that is \(\alpha^2 - 2\alpha - 3 = 0\). [M1 A1] \((\alpha - 3)(\alpha + 1) = 0\), so \(\alpha = 3\) or \(\alpha = -1\). [M1] Every term is positive, because \(x_0 > 0\) and each term is \(2\) plus a positive number. A limit of positive terms cannot be negative, so \(\alpha = 3\). [A1]
 :::
 
 :::quiz
@@ -206,6 +270,16 @@ A: (a) \(\mathrm{f}(x) = 2\cos x - x\): \(\mathrm{f}(1) = 0.081 > 0\) and \(\mat
 + The iteration diverges, so a different rearrangement is needed.
 - The equation has no root.
 > Terms that grow without limit mean the iteration is moving away from a root. The root may exist; this rearrangement simply fails to find it.
+:::
+
+:::checklist What you can now do
+- [ ] I can locate a root by sketching a graph or by finding a change of sign.
+- [ ] I can say when a change of sign does not prove a root, for example at a discontinuity.
+- [ ] I can show that a root is correct to a given number of decimal places.
+- [ ] I can use an iteration \(x_{n+1} = \mathrm{F}(x_n)\) with the ANS key and write down the sequence.
+- [ ] I can show that an equation can be rearranged into the form \(x = \mathrm{F}(x)\).
+- [ ] I can find the equation that the limit of an iteration satisfies.
+- [ ] I can say that an iteration may fail to converge, and show it.
 :::
 
 :::recap

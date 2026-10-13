@@ -11,6 +11,15 @@ Trigonometry describes anything that repeats: sound waves, tides, orbits and alt
 
 **Before you start**, you need right-angled trigonometry and exact values from [Geometry and trigonometry basics](#math.f.geometry), radians from [Circular measure](#math.p1.circular), and graph transformations from [Functions](#math.p1.functions). Factorising quadratics ([Quadratics](#math.p1.quadratics)) is used in the equations.
 
+:::try Warm-up
+Q: A right-angled triangle has hypotenuse 10 cm and an angle of \(30^\circ\). How long is the side opposite that angle? (from [Geometry and trigonometry basics](#math.f.geometry))
+A: \(10 \sin 30^\circ = 10 \times \tfrac12 = 5\) cm.
+Q: Write \(120^\circ\) in radians. (from [Circular measure](#math.p1.circular))
+A: \(120 \times \dfrac{\pi}{180} = \dfrac{2\pi}{3}\).
+Q: Which transformation maps \(y = f(x)\) onto \(y = f(2x)\)? (from [Functions](#math.p1.functions))
+A: A stretch parallel to the \(x\)-axis with scale factor \(\tfrac12\).
+:::
+
 ## Trigonometric functions of any angle
 
 In a right-angled triangle, angles are below \(90^\circ\). To define \(\sin\theta\), \(\cos\theta\) and \(\tan\theta\) for any angle, use the **unit circle**: a circle of radius 1 centred at the origin. Measure the angle \(\theta\) anticlockwise from the positive \(x\)-axis and let \(P\) be the point where the arm meets the circle.
@@ -40,6 +49,13 @@ Reflecting the point in the axes gives the relations between angles. These relat
 \[\sin(180^\circ - \theta) = \sin\theta \qquad \cos(360^\circ - \theta) = \cos\theta \qquad \tan(180^\circ + \theta) = \tan\theta\]
 \[\sin(-\theta) = -\sin\theta \qquad \cos(-\theta) = \cos\theta \qquad \tan(-\theta) = -\tan\theta\]
 The values repeat every \(360^\circ\) for sine and cosine, and every \(180^\circ\) for tangent. In radians replace \(180^\circ\) by \(\pi\) and \(360^\circ\) by \(2\pi\).
+:::
+
+:::proof Where the exact values for 30°, 45° and 60° come from
+**45°.** Take a square of side 1 and cut it along a diagonal. You get a right-angled triangle with two angles of \(45^\circ\), two sides of 1 and, by Pythagoras, a hypotenuse of \(\sqrt{1 + 1} = \sqrt2\). So \(\sin 45^\circ = \dfrac{1}{\sqrt2}\), \(\cos 45^\circ = \dfrac{1}{\sqrt2}\) and \(\tan 45^\circ = 1\).
+
+**30° and 60°.** Take an equilateral triangle of side 2 and cut it in half down the middle. You get a right-angled triangle with angles \(30^\circ\), \(60^\circ\), \(90^\circ\). The hypotenuse is 2, the short side is 1 (half the base), and the height is \(\sqrt{4 - 1} = \sqrt3\). So
+\[\sin 30^\circ = \frac12 \quad \cos 30^\circ = \frac{\sqrt3}{2} \quad \tan 30^\circ = \frac{1}{\sqrt3} \qquad \sin 60^\circ = \frac{\sqrt3}{2} \quad \cos 60^\circ = \frac12 \quad \tan 60^\circ = \sqrt3\]
 :::
 
 :::eg Find the exact values of \(\sin 150^\circ\), \(\cos 240^\circ\), \(\tan 135^\circ\) and \(\cos\dfrac{5\pi}{6}\).
@@ -178,6 +194,19 @@ An **identity** is true for every value of the variable. It is written with \(\e
 Rearranged: \(\sin^2\theta \equiv 1 - \cos^2\theta\) and \(\cos^2\theta \equiv 1 - \sin^2\theta\). Both are on MF19. The second is Pythagoras on the unit circle: \(\cos\theta\) and \(\sin\theta\) are the legs of a right-angled triangle with hypotenuse \(1\).
 :::
 
+:::proof Where the two identities come from
+**\(\tan\theta \equiv \dfrac{\sin\theta}{\cos\theta}\).** On the unit circle the point at angle \(\theta\) is \(P(\cos\theta, \sin\theta)\). The line from the origin to \(P\) has gradient "rise over run", which is \(\dfrac{\sin\theta}{\cos\theta}\). That gradient is \(\tan\theta\) by definition.
+
+**\(\sin^2\theta + \cos^2\theta \equiv 1\).** The point \(P(\cos\theta, \sin\theta)\) is on the circle \(x^2 + y^2 = 1\), because the radius is 1. Substituting its coordinates gives
+\[(\cos\theta)^2 + (\sin\theta)^2 = 1\]
+For an acute angle this is Pythagoras in the right-angled triangle with hypotenuse 1. For any other angle, \(P\) is still on the circle, so the equation still holds. That is why it is true for every \(\theta\), including negative angles and angles above \(90^\circ\).
+
+:::html
+<div class="widget" data-w="unitcircle" data-angle="130"></div>
+:::
+Drag the point round the circle. At any angle, square the sine and the cosine shown and add them: the total is always 1.
+:::
+
 :::eg Simplify (a) \(\dfrac{\sin\theta\cos\theta}{\tan\theta}\) and (b) \(\dfrac{\sin^2\theta}{1 - \cos^2\theta}\). Then prove that \(\sin^4\theta - \cos^4\theta \equiv \sin^2\theta - \cos^2\theta\).
 (a) Replace \(\tan\theta\): \(\dfrac{\sin\theta\cos\theta}{\sin\theta/\cos\theta} = \sin\theta\cos\theta \times \dfrac{\cos\theta}{\sin\theta} = \cos^2\theta\).
 
@@ -245,6 +274,20 @@ Use \(\cos^2\theta = 1 - \sin^2\theta\): \(3\sin\theta = 2 - 2\sin^2\theta\). [M
 Edexcel IAL, AQA, OCR and Edexcel (UK) cover the same graphs, exact values, identities and equations in their first Pure year, usually both in degrees and radians. UK Further Maths and some boards add general solutions such as \(x = 30^\circ + 360^\circ n\); Cambridge 9709 asks only for solutions in a given interval. Secant, cosecant, cotangent and compound angles come later: see [Further trigonometry](#math.p3.trig).
 :::
 
+:::eg Spot the error: solve \(\cos 2x = -0.6\) for \(0^\circ \le x \le 360^\circ\).
+A student wrote this answer.
+
+Line 1: \(2x = \cos^{-1}(-0.6) = 126.9^\circ\)
+Line 2: The other angle is \(360^\circ - 126.9^\circ = 233.1^\circ\)
+Line 3: \(x = 63.4^\circ\) or \(x = 116.6^\circ\)
+
+Lines 1 to 3 are correct as far as they go [M1 A1]. **The student loses the last three marks [M0 A0 A0].** The interval is for \(x\), not for \(2x\). If \(0^\circ \le x \le 360^\circ\) then \(0^\circ \le 2x \le 720^\circ\), so two more values of \(2x\) are needed.
+
+Correct working: add \(360^\circ\) to both angles. \(2x = 126.9^\circ, 233.1^\circ, 486.9^\circ, 593.1^\circ\). [M1] Halving: \(x = 63.4^\circ, 116.6^\circ, 243.4^\circ, 296.6^\circ\). [A1 A1]
+
+**Check:** the graph of \(y = \cos 2x\) completes two full cycles in \(0^\circ\) to \(360^\circ\), so the line \(y = -0.6\) cuts it four times. Two answers is a warning sign.
+:::
+
 :::try Start easy, finish at exam standard
 Q: Write down the exact value of (a) \(\sin 300^\circ\), (b) \(\cos\dfrac{2\pi}{3}\), (c) \(\tan 210^\circ\).
 A: (a) \(-\sin 60^\circ = -\dfrac{\sqrt3}{2}\). (b) \(-\cos\dfrac{\pi}{3} = -\dfrac12\). (c) \(\tan 30^\circ = \dfrac{\sqrt3}{3}\) (quadrant 3, tangent positive).
@@ -264,6 +307,39 @@ Q: Simplify \(\dfrac{\cos^2\theta}{1 - \sin\theta}\) and hence solve \(\dfrac{\c
 A: \(\dfrac{1 - \sin^2\theta}{1 - \sin\theta} = 1 + \sin\theta\). Then \(1 + \sin\theta = 1.5\), so \(\sin\theta = 0.5\) and \(\theta = 30^\circ\) or \(150^\circ\).
 Q: (Exam style) (a) Show that the equation \(4\sin^2\theta = 3 - 4\cos\theta\) can be written \(4\cos^2\theta - 4\cos\theta - 1 = 0\). (b) Hence solve it for \(0^\circ \le \theta \le 360^\circ\).
 A: (a) Replace \(\sin^2\theta\) by \(1 - \cos^2\theta\): \(4 - 4\cos^2\theta = 3 - 4\cos\theta\). [M1] Rearranging gives \(4\cos^2\theta - 4\cos\theta - 1 = 0\). [A1] (b) The formula gives \(\cos\theta = \dfrac{4 \pm \sqrt{32}}{8} = \dfrac{1 \pm \sqrt2}{2}\), so \(\cos\theta = 1.207\) (impossible) or \(-0.2071\). [M1 A1] Then \(\theta = 102.0^\circ\) or \(258.0^\circ\). [A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ Write down the exact values of (a) \(\sin 135^\circ\), (b) \(\cos 240^\circ\), (c) \(\tan 330^\circ\).
+A: (a) \(\sin 135^\circ = \sin 45^\circ = \dfrac{\sqrt2}{2}\). [B1] (b) \(\cos 240^\circ = -\cos 60^\circ = -\dfrac12\). [B1] (c) \(\tan 330^\circ = -\tan 30^\circ = -\dfrac{1}{\sqrt3}\), or \(-\dfrac{\sqrt3}{3}\). [B1]
+Q: [3 marks] ★ Solve \(4\cos x + 3 = 0\) for \(0^\circ \le x \le 360^\circ\).
+A: \(\cos x = -0.75\), so the principal value is \(x = 138.6^\circ\). [M1 A1] The other solution is \(360^\circ - 138.6^\circ = 221.4^\circ\). [A1]
+Q: [5 marks] ★★ Solve \(\tan(2x - 30^\circ) = 1.5\) for \(0^\circ \le x \le 180^\circ\).
+A: The range of \(2x - 30^\circ\) is \(-30^\circ\) to \(330^\circ\). [M1] \(\tan^{-1}1.5 = 56.3^\circ\), and adding \(180^\circ\) gives \(236.3^\circ\). [A1] Both lie in the range: \(2x = 86.3^\circ\) or \(266.3^\circ\). [M1] \(x = 43.2^\circ\) [A1] or \(x = 133.2^\circ\). [A1]
+Q: [6 marks] ★★ Solve \(2\cos^2\theta + \sin\theta = 1\) for \(0^\circ \le \theta \le 360^\circ\).
+A: Replace \(\cos^2\theta\) by \(1 - \sin^2\theta\): \(2 - 2\sin^2\theta + \sin\theta = 1\). [M1] \(2\sin^2\theta - \sin\theta - 1 = 0\). [A1] \((2\sin\theta + 1)(\sin\theta - 1) = 0\). [M1] \(\sin\theta = 1\) gives \(\theta = 90^\circ\). [A1] \(\sin\theta = -\tfrac12\) gives \(\theta = 210^\circ\) or \(330^\circ\). [A1 A1]
+Q: [4 marks] ★★ Prove the identity \(\tan\theta + \dfrac{1}{\tan\theta} \equiv \dfrac{1}{\sin\theta\cos\theta}\).
+A: \(\tan\theta + \dfrac{1}{\tan\theta} = \dfrac{\sin\theta}{\cos\theta} + \dfrac{\cos\theta}{\sin\theta}\). [M1] \(= \dfrac{\sin^2\theta + \cos^2\theta}{\sin\theta\cos\theta}\). [M1 A1] \(= \dfrac{1}{\sin\theta\cos\theta}\), using \(\sin^2\theta + \cos^2\theta \equiv 1\). [A1]
+Q: [6 marks] ★★ \(f(x) = 3 - 2\cos 2x\) for \(0^\circ \le x \le 360^\circ\). (a) State the greatest and least values of \(f(x)\). (b) State the period of \(f\). (c) Solve \(f(x) = 4\).
+A: (a) \(\cos 2x\) lies between \(-1\) and 1, so \(f(x)\) lies between \(1\) and \(5\): greatest 5, least 1. [B1 B1] (b) The period is \(180^\circ\). [B1] (c) \(3 - 2\cos 2x = 4\), so \(\cos 2x = -\tfrac12\). [M1] \(2x = 120^\circ, 240^\circ, 480^\circ, 600^\circ\), so \(x = 60^\circ, 120^\circ, 240^\circ, 300^\circ\). [A1 A1]
+Q: [6 marks] ★★ Solve \(2\sin^2 x = 1 + \cos x\) for \(-\pi \le x \le \pi\), giving exact answers.
+A: \(2(1 - \cos^2 x) = 1 + \cos x\). [M1] \(2\cos^2 x + \cos x - 1 = 0\), so \((2\cos x - 1)(\cos x + 1) = 0\). [A1 M1] \(\cos x = \tfrac12\) gives \(x = \pm\dfrac{\pi}{3}\). [A1 A1] \(\cos x = -1\) gives \(x = \pm\pi\) (both ends of the interval). [A1]
+Q: [8 marks] (#math.p1.quadratics) ★★★ (a) Show that the equation \(6\cos^2\theta + \sin\theta = 5\) can be written as \(6\sin^2\theta - \sin\theta - 1 = 0\). (b) Hence solve \(6\cos^2\theta + \sin\theta = 5\) for \(0^\circ \le \theta \le 360^\circ\).
+H: Use \(\cos^2\theta \equiv 1 - \sin^2\theta\) to leave an equation in \(\sin\theta\) only.
+H: Treat \(\sin\theta\) as one unknown, as in a quadratic in \(u\). It factorises as \((3\sin\theta + 1)(2\sin\theta - 1)\).
+H: Each value of \(\sin\theta\) gives two angles in the interval. For a negative value, they are in the third and fourth quadrants.
+A: (a) \(6(1 - \sin^2\theta) + \sin\theta = 5\) [M1] gives \(6 - 6\sin^2\theta + \sin\theta - 5 = 0\), that is \(6\sin^2\theta - \sin\theta - 1 = 0\). [A1] (b) \((3\sin\theta + 1)(2\sin\theta - 1) = 0\). [M1] \(\sin\theta = \tfrac12\) gives \(\theta = 30^\circ\) or \(150^\circ\). [A1 A1] \(\sin\theta = -\tfrac13\) gives \(\theta = 199.5^\circ\) or \(340.5^\circ\). [M1 A1 A1]
+:::
+
+:::try Stretch for A*
+Q: [6 marks] ★★★ Solve \(\sin x + \cos x = 1\) for \(0^\circ \le x \le 360^\circ\).
+H: Square both sides. Then use \(\sin^2 x + \cos^2 x \equiv 1\) and look at what is left.
+H: Squaring can introduce solutions that do not satisfy the original equation. Check every answer in \(\sin x + \cos x = 1\).
+A: Squaring: \(\sin^2 x + 2\sin x\cos x + \cos^2 x = 1\). [M1] This gives \(1 + \sin 2x = 1\), so \(\sin 2x = 0\). [A1] \(2x = 0^\circ, 180^\circ, 360^\circ, 540^\circ, 720^\circ\), so \(x = 0^\circ, 90^\circ, 180^\circ, 270^\circ, 360^\circ\). [M1 A1] Checking in the original equation: \(x = 180^\circ\) gives \(-1\) and \(x = 270^\circ\) gives \(-1\), so both are rejected. [M1] The solutions are \(x = 0^\circ\), \(90^\circ\) and \(360^\circ\). [A1]
+Q: [6 marks] ★★★ Solve \(2\sin^2 x - 3\sin x\cos x + \cos^2 x = 0\) for \(0^\circ \le x \le 180^\circ\).
+H: Divide every term by \(\cos^2 x\). First check that \(\cos x = 0\) is not a solution, so that no solution is lost.
+H: You get a quadratic in \(\tan x\).
+A: If \(\cos x = 0\), then \(\sin^2 x = 1\) and the left side is \(2 \neq 0\), so \(\cos x \neq 0\) and we may divide by \(\cos^2 x\). [B1] \(2\tan^2 x - 3\tan x + 1 = 0\). [M1 A1] \((2\tan x - 1)(\tan x - 1) = 0\). [M1] \(\tan x = \tfrac12\) gives \(x = 26.6^\circ\). [A1] \(\tan x = 1\) gives \(x = 45^\circ\). [A1] (Tangent is positive only in the first quadrant for \(0^\circ \le x \le 180^\circ\), so there are no others.)
 :::
 
 :::quiz
@@ -297,6 +373,15 @@ A: (a) Replace \(\sin^2\theta\) by \(1 - \cos^2\theta\): \(4 - 4\cos^2\theta = 3
 - \(\cos x\) cannot equal 1.
 - You must divide by \(\cos x\) instead.
 > Dividing by \(\sin x\) assumes it is not zero. Instead write \(\sin x(\cos x - 1) = 0\): then \(\sin x = 0\) or \(\cos x = 1\), and you keep every solution.
+:::
+
+:::checklist What you can now do
+- [ ] I can sketch and describe the graphs of sine, cosine and tangent in degrees and radians, with their transformations.
+- [ ] I can write the exact values of sine, cosine and tangent for \(30^\circ\), \(45^\circ\), \(60^\circ\) and their related angles.
+- [ ] I can use the inverse functions \(\sin^{-1}\), \(\cos^{-1}\), \(\tan^{-1}\) and state their principal values.
+- [ ] I can use \(\tan\theta \equiv \dfrac{\sin\theta}{\cos\theta}\) and \(\sin^2\theta + \cos^2\theta \equiv 1\) to prove identities and simplify expressions.
+- [ ] I can solve trigonometric equations and give all the solutions in a given interval, including negative intervals and radians.
+- [ ] I can solve equations that need an identity first, or that are quadratic in \(\sin\theta\), \(\cos\theta\) or \(\tan\theta\).
 :::
 
 :::recap

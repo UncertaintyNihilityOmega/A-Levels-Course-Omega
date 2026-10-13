@@ -11,6 +11,15 @@ When a lorry hits a car, or a billiard ball hits another, you could never follow
 
 **Before you start**, you need velocity and direction signs from [Kinematics](#math.m.kinematics) and Newton's third law from [Forces and equilibrium](#math.m.forces).
 
+:::try Warm-up
+Q: A particle of mass 3 kg speeds up from \(2\ \mathrm{m\,s^{-1}}\) to \(8\ \mathrm{m\,s^{-1}}\) in 3 s. Find the resultant force on it. (from [Newton's laws and connected particles](#math.m.newton))
+A: \(a = \dfrac{8 - 2}{3} = 2\ \mathrm{m\,s^{-2}}\), so \(F = ma = 3 \times 2 = 6\) N.
+Q: Solve \(3(5) + 2(-4) = 3v + 2(2)\) for \(v\). (from [Algebra from scratch](#math.f.algebra))
+A: \(15 - 8 = 3v + 4\), so \(3v = 3\) and \(v = 1\).
+Q: A tug pulls a barge with a force of 500 N. What force does the barge exert on the tug, and why? (from [Forces and equilibrium](#math.m.forces))
+A: 500 N, in the opposite direction. By Newton's third law the two forces are equal and opposite, and they act on different objects.
+:::
+
 ## Momentum
 
 :::def Momentum
@@ -36,6 +45,18 @@ total momentum before = total momentum after, where \(u\) is the velocity before
 - Momentum is a vector, so **signs matter**. A particle moving in the negative direction has a negative \(u\) or \(v\).
 - If the particles **coalesce** (stick together), they move with a common velocity \(V\) afterwards and the mass of the combined body is \(m_A + m_B\): \(m_Au_A + m_Bu_B = (m_A + m_B)V\).
 - Kinetic energy is generally **not** conserved in a collision, so do not use it as an equation here.
+:::
+
+:::proof Why momentum is conserved
+Two particles \(A\) and \(B\) collide. During the collision, which lasts a time \(t\), \(B\) pushes \(A\) with a force \(F\). By Newton's third law \(A\) pushes \(B\) with a force \(-F\): equal in size, opposite in direction, and acting for the same time \(t\).
+
+Newton's second law says the force is mass times acceleration, and the acceleration is the change in velocity divided by the time. For a constant force:
+\[F = m_A\,\frac{v_A - u_A}{t} \qquad -F = m_B\,\frac{v_B - u_B}{t}\]
+Add the two equations. The forces cancel, so
+\[0 = m_A(v_A - u_A) + m_B(v_B - u_B)\]
+Rearranging gives \(m_Au_A + m_Bu_B = m_Av_A + m_Bv_B\): the total momentum after the collision equals the total before. This works for any force that is equal and opposite on the two particles, constant or not, and it needs no outside force during the collision.
+
+Check with the 2 kg particle at \(6\ \mathrm{m\,s^{-1}}\) that coalesces with a stationary 3 kg particle at \(2.4\ \mathrm{m\,s^{-1}}\). The 2 kg particle's momentum changes by \(2(2.4 - 6) = -7.2\), and the 3 kg particle's changes by \(3(2.4 - 0) = +7.2\). One loses what the other gains.
 :::
 
 :::steps
@@ -134,6 +155,20 @@ The track exerts a vertical force when the sandbag lands, so vertical momentum i
 - The conservation equation is the same in every board.
 :::
 
+:::eg Spot the error: a minus sign goes missing
+A student answered this question [4 marks]: "A particle \(A\) of mass 3 kg moves east at \(6\ \mathrm{m\,s^{-1}}\) and a particle \(B\) of mass 5 kg moves west at \(2\ \mathrm{m\,s^{-1}}\). They collide head on and coalesce. Find the speed and direction of the combined particle."
+
+Line 1: \(3 \times 6 + 5 \times 2 = 8V\).
+Line 2: \(V = 3.5\ \mathrm{m\,s^{-1}}\).
+Line 3: The combined particle moves east.
+
+**Line 1 earns [M1 A0]**: the structure is right (momentum before equals momentum after, with the combined mass 8 kg), but \(B\) moves west, so with east as positive its velocity is \(-2\) and its momentum is \(-10\), not \(+10\). **Line 2 scores [A0]**. **Line 3 earns [B1]**: east is the right direction, because \(A\) has more momentum than \(B\). The mark is independent of the wrong value in line 2, so a wrong sign can still leave this mark. The student scores 2 out of 4.
+
+Correct working, east positive: \(3 \times 6 + 5 \times (-2) = 8V\). [M1 A1] \(18 - 10 = 8V\), so \(V = 1\ \mathrm{m\,s^{-1}}\). [A1] \(V\) is positive, so the combined particle moves east. [B1]
+
+**Check:** the momenta before are \(+18\) and \(-10\), partly cancelling, so the combined particle must move slower than \(A\) did. The student's 3.5 is far too big for two particles that were moving towards each other.
+:::
+
 :::try Start easy, finish at exam standard
 Q: Find the momentum of a 0.5 kg ball moving at \(12\ \mathrm{m\,s^{-1}}\) to the left. Take right as positive.
 A: \(0.5 \times (-12) = -6\ \mathrm{kg\,m\,s^{-1}}\), that is 6 kg m s⁻¹ to the left.
@@ -144,7 +179,7 @@ A: \(14 = 0 + 3v\), so \(v = 4.67\ \mathrm{m\,s^{-1}}\) in the original directio
 Q: A 5 kg particle at \(3\ \mathrm{m\,s^{-1}}\) and a 3 kg particle at \(5\ \mathrm{m\,s^{-1}}\) move towards each other and coalesce. Find their velocity afterwards.
 A: Taking the direction of the 5 kg particle as positive: \(15 - 15 = 8V\), so \(V = 0\). They stop.
 Q: Two particles of mass 2 kg and 4 kg are moving in the same direction at \(9\ \mathrm{m\,s^{-1}}\) and \(3\ \mathrm{m\,s^{-1}}\), the lighter one behind. They collide and coalesce. Find the speed afterwards and the kinetic energy lost.
-A: \(18 + 12 = 6V\), so \(V = 5\ \mathrm{m\,s^{-1}}\). KE before \(= \tfrac12 \times 2 \times 81 + \tfrac12 \times 4 \times 9 = 81 + 18 = 99\) J. After: \(\tfrac12 \times 6 \times 25 = 75\) J. Loss \(= 24\) J.
+A: \(18 + 12 = 6V\), so \(V = 5\ \mathrm{m\,s^{-1}}\). KE before \(= \tfrac12 \times 2 \times 81\) \(+ \tfrac12 \times 4 \times 9\) \(= 81 + 18 = 99\) J. After: \(\tfrac12 \times 6 \times 25 = 75\) J. Loss \(= 24\) J.
 Q: A boy of mass 40 kg stands on a stationary trolley of mass 8 kg on smooth ground and jumps off horizontally at \(1.2\ \mathrm{m\,s^{-1}}\) relative to the ground. Find the velocity of the trolley.
 A: \(0 = 40 \times 1.2 + 8V\), so \(V = -6\ \mathrm{m\,s^{-1}}\): the trolley moves at \(6\ \mathrm{m\,s^{-1}}\) in the opposite direction.
 Q: Particle \(A\) of mass 0.4 kg moving at \(5\ \mathrm{m\,s^{-1}}\) collides with particle \(B\) of mass 0.6 kg moving in the opposite direction at \(3\ \mathrm{m\,s^{-1}}\). After the collision \(A\) moves at \(2\ \mathrm{m\,s^{-1}}\) in its original direction. Find the velocity of \(B\).
@@ -155,6 +190,37 @@ Q: (Exam style) Particles \(P\) (mass 0.5 kg) and \(Q\) (mass 0.3 kg) are moving
 A: (a) \(0.5 \times 4 + 0.3 \times 2 = 0.5 \times 1.5 + 0.3v\) [M1 A1], so \(2.6 = 0.75 + 0.3v\) and \(v = 6.17\ \mathrm{m\,s^{-1}}\). [A1] (b) \(2.6 = 0.8V\) [M1 A1], so \(V = 3.25\ \mathrm{m\,s^{-1}}\). [A1]
 Q: (Exam style) Two particles \(A\) (mass 2 kg) and \(B\) (mass 3 kg) are at rest on a smooth horizontal surface with a compressed light spring between them. The spring is released and \(A\) moves off at \(6\ \mathrm{m\,s^{-1}}\). Find the speed of \(B\) and the total kinetic energy given to the particles. [5 marks]
 A: Total momentum is 0: \(0 = 2 \times 6 + 3v\) [M1 A1], so \(v = -4\), so \(B\) moves at \(4\ \mathrm{m\,s^{-1}}\) in the opposite direction. [A1] KE \(= \tfrac12 \times 2 \times 36 + \tfrac12 \times 3 \times 16 = 36 + 24\) [M1] \(= 60\) J. [A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [4 marks] ★ A particle \(A\) of mass 0.4 kg moves at \(5\ \mathrm{m\,s^{-1}}\) on a smooth horizontal surface and collides with a stationary particle \(B\) of mass 0.6 kg. They coalesce. Find their common speed and the kinetic energy lost in the collision.
+A: \(0.4 \times 5 = 1.0V\), [M1] so \(V = 2\ \mathrm{m\,s^{-1}}\). [A1] KE before \(= \tfrac12 \times 0.4 \times 25 = 5\) J and KE after \(= \tfrac12 \times 1.0 \times 4 = 2\) J. [M1] The loss is 3 J. [A1]
+Q: [3 marks] ★ A rifle of mass 3.5 kg fires a bullet of mass 0.015 kg at \(600\ \mathrm{m\,s^{-1}}\). The rifle is free to move. Find the speed of recoil of the rifle.
+A: Before, the total momentum is 0. Taking the bullet's direction as positive: \(0 = 0.015 \times 600 + 3.5v\). [M1 A1] \(v = -2.57\), so the rifle recoils at \(2.57\ \mathrm{m\,s^{-1}}\). [A1]
+Q: [3 marks] ★ A particle of mass 2 kg moves at \(7\ \mathrm{m\,s^{-1}}\) and collides with a stationary particle of mass 5 kg. After the collision the 5 kg particle moves at \(3\ \mathrm{m\,s^{-1}}\) in the original direction of motion of the 2 kg particle. Find the velocity of the 2 kg particle after the collision and describe its motion.
+A: \(2 \times 7 = 2v + 5 \times 3\), [M1 A1] so \(v = -0.5\ \mathrm{m\,s^{-1}}\). The 2 kg particle rebounds, moving back at \(0.5\ \mathrm{m\,s^{-1}}\). [A1]
+Q: [4 marks] ★★ A particle \(P\) of mass 3 kg moves at \(4\ \mathrm{m\,s^{-1}}\) and catches up with a particle \(Q\) of mass \(m\) kg moving in the same direction at \(1\ \mathrm{m\,s^{-1}}\). They coalesce and move on at \(2\ \mathrm{m\,s^{-1}}\). Find \(m\).
+A: \(3 \times 4 + m \times 1 = (3 + m) \times 2\). [M1 A1] \(12 + m = 6 + 2m\), [M1] so \(m = 6\). [A1] Check: \(12 + 6 = 18 = 9 \times 2\). ✓
+Q: [6 marks] ★★ A particle of mass 2 kg moves east at \(6\ \mathrm{m\,s^{-1}}\) and collides head on with a particle of mass 3 kg moving west at \(4\ \mathrm{m\,s^{-1}}\). After the collision the 2 kg particle moves west at \(2\ \mathrm{m\,s^{-1}}\). Find the velocity of the 3 kg particle after the collision, and the kinetic energy lost.
+A: East positive: \(2 \times 6 + 3 \times (-4) = 2 \times (-2) + 3v\). [M1 A1] \(0 = -4 + 3v\), so \(v = \tfrac43 = 1.33\ \mathrm{m\,s^{-1}}\) east. [A1] KE before \(= \tfrac12(2)(36) + \tfrac12(3)(16) = 60\) J. KE after \(= \tfrac12(2)(4) + \tfrac12(3)\left(\tfrac43\right)^2 = 6.67\) J. [M1 A1] The loss is \(60 - 6.67 = 53.3\) J. [A1]
+Q: [4 marks] ★★ A truck \(A\) of mass 6000 kg moves at \(4\ \mathrm{m\,s^{-1}}\) and couples to a stationary truck \(B\) of mass 4000 kg. The pair then couples to a stationary truck \(C\) of mass 10 000 kg. Find the speed after each coupling, and show that the final speed can also be found in one step.
+A: First coupling: \(6000 \times 4 = 10\,000V_1\), [M1] so \(V_1 = 2.4\ \mathrm{m\,s^{-1}}\). Second coupling: \(10\,000 \times 2.4 = 20\,000V_2\), [M1] so \(V_2 = 1.2\ \mathrm{m\,s^{-1}}\). [A1] In one step, the total momentum \(24\,000\) is shared by the total mass 20 000 kg, which gives \(1.2\ \mathrm{m\,s^{-1}}\). [A1]
+Q: [10 marks] (#math.m.newton) ★★★ A block \(A\) of mass 3 kg slides on a rough horizontal floor, with coefficient of friction 0.3. It has speed \(8\ \mathrm{m\,s^{-1}}\) when it passes a point \(O\), and it hits a stationary block \(B\) of mass 2 kg, 5 m from \(O\). The blocks coalesce. The coefficient of friction between \(B\) and the floor is also 0.3. Take \(g = 10\). (a) Find the speed of \(A\) just before the collision. (b) Find the speed of the combined block just after the collision. (c) Find the distance the combined block slides before it stops.
+H: For (a), find the friction force on \(A\), then its deceleration, then use \(v^2 = u^2 + 2as\) over 5 m.
+H: For (b), conserve momentum, with the combined mass 5 kg.
+H: For (c), find the friction force and deceleration of the 5 kg block. Does the mass change the deceleration?
+A: (a) \(R = 30\) N, so \(F = 0.3 \times 30 = 9\) N, [B1] and \(3a = -9\) gives \(a = -3\ \mathrm{m\,s^{-2}}\). [M1 A1] \(v^2 = 64 - 2 \times 3 \times 5 = 34\), [M1] so \(v = 5.83\ \mathrm{m\,s^{-1}}\). [A1] (b) \(3 \times 5.831 = 5V\), [M1] so \(V = 3.50\ \mathrm{m\,s^{-1}}\). [A1] (c) For the combined block \(F = 0.3 \times 50 = 15\) N, so \(5a = -15\) and \(a = -3\). [B1] The deceleration is the same because friction and mass both scale with the weight. \(0 = V^2 - 2 \times 3 \times s\), [M1] so \(s = \dfrac{12.24}{6} = 2.04\) m. [A1]
+:::
+
+:::try Stretch for A*
+Q: [6 marks] ★★★ A man of mass 80 kg stands on a trolley of mass 120 kg that is at rest on smooth horizontal rails. He walks along the trolley at \(1.5\ \mathrm{m\,s^{-1}}\) relative to the trolley. Find the velocity of the trolley and the velocity of the man relative to the ground.
+H: The man's speed in the question is relative to the trolley. If the trolley moves at \(v\), the man moves at \(v + 1.5\) relative to the ground, taking his walking direction as positive.
+H: The total momentum was zero before he started to walk, and no outside horizontal force acts.
+A: Let the trolley's velocity be \(v\) (positive in the man's walking direction). The man's velocity relative to the ground is \(v + 1.5\). [B1] The momentum was 0 before, so \(80(v + 1.5) + 120v = 0\). [M1 A1] \(200v = -120\), so \(v = -0.6\). [A1] The trolley moves backwards at \(0.6\ \mathrm{m\,s^{-1}}\). [A1] The man's velocity is \(-0.6 + 1.5 = 0.9\ \mathrm{m\,s^{-1}}\) forwards. [B1] Check: \(80 \times 0.9 = 72\) and \(120 \times (-0.6) = -72\), so the total is 0. ✓
+Q: [6 marks] ★★★ A bullet of mass 0.02 kg is fired horizontally into a stationary block of mass 1.98 kg that rests on a rough horizontal floor, and it stays inside the block. The coefficient of friction between the block and the floor is 0.5. The block slides 2 m before it stops. Find the speed of the bullet when it hit the block. Take \(g = 10\).
+H: Work backwards. First find the speed of the block (with the bullet) just after the impact, using the sliding distance and the deceleration from friction.
+H: Then use conservation of momentum for the impact, where the combined mass is 2 kg.
+A: The combined mass is 2 kg, so \(F = 0.5 \times 20 = 10\) N and the deceleration is \(\dfrac{10}{2} = 5\ \mathrm{m\,s^{-2}}\). [M1 A1] Just after the impact, \(0 = V^2 - 2 \times 5 \times 2\), [M1] so \(V = \sqrt{20} = 4.47\ \mathrm{m\,s^{-1}}\). [A1] Conservation of momentum: \(0.02u = 2 \times 4.472\), [M1] so \(u = 447\ \mathrm{m\,s^{-1}}\). [A1] Check: the bullet carries momentum \(0.02 \times 447 = 8.94\), the same as the \(2 \times 4.47\) of the block and bullet together.
 :::
 
 :::quiz Check your understanding
@@ -188,6 +254,16 @@ A: Total momentum is 0: \(0 = 2 \times 6 + 3v\) [M1 A1], so \(v = -4\), so \(B\)
 - moves forwards
 - recoils with the same speed as the bullet
 > Total momentum stays zero, so the gun's momentum is equal and opposite. Its speed is much smaller because its mass is much larger.
+:::
+
+:::checklist What you can now do
+- [ ] I can define momentum, state that it is a vector, and use a sign for its direction.
+- [ ] I can write the conservation of momentum equation for a direct impact of two bodies, with all the signs right.
+- [ ] I can solve a collision in which the two particles coalesce.
+- [ ] I can solve collisions where the particles move towards each other or one rebounds.
+- [ ] I can find the recoil of a gun, or the motion after a body breaks apart from rest.
+- [ ] I can find an unknown mass or an unknown speed from a collision.
+- [ ] I can find the kinetic energy lost in a collision.
 :::
 
 :::recap

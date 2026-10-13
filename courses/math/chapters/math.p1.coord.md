@@ -11,6 +11,15 @@ Coordinate geometry turns shapes into algebra, so a geometric question can be se
 
 **Before you start**, you need gradient and \(y = mx + c\) from [Graphs and straight lines](#math.f.graphs), Pythagoras from [Geometry and trigonometry basics](#math.f.geometry) and quadratics from [Quadratics](#math.p1.quadratics). Write every answer in the form the question asks for.
 
+:::try Warm-up
+Q: A right-angled triangle has legs 5 cm and 12 cm. Find the hypotenuse. (from [Geometry and trigonometry basics](#math.f.geometry))
+A: \(\sqrt{25 + 144} = \sqrt{169} = 13\) cm.
+Q: Find the gradient of the line through \((1, 2)\) and \((4, 11)\). (from [Graphs and straight lines](#math.f.graphs))
+A: \(\dfrac{11 - 2}{4 - 1} = 3\).
+Q: Solve \(x^2 - 4x - 5 = 0\). (from [Quadratics](#math.p1.quadratics))
+A: \((x - 5)(x + 1) = 0\), so \(x = 5\) or \(x = -1\).
+:::
+
 ## Distance, midpoint and gradient
 
 Take two points \(A(x_1, y_1)\) and \(B(x_2, y_2)\). The horizontal step from \(A\) to \(B\) is \(x_2 - x_1\), and the vertical step is \(y_2 - y_1\). These are the two legs of a right-angled triangle whose hypotenuse is \(AB\). Pythagoras gives the distance, and the average of the coordinates gives the midpoint.
@@ -20,6 +29,14 @@ For \(A(x_1, y_1)\) and \(B(x_2, y_2)\):
 \[AB = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\]
 \[\text{midpoint} = \left(\frac{x_1 + x_2}{2},\ \frac{y_1 + y_2}{2}\right) \qquad \text{gradient} = \frac{y_2 - y_1}{x_2 - x_1}\]
 These are **not** on MF19. Learn them.
+:::
+
+:::proof Where the distance formula comes from
+Draw a right-angled triangle with \(AB\) as the hypotenuse and its other two sides parallel to the axes.
+- The horizontal side has length \(|x_2 - x_1|\) and the vertical side has length \(|y_2 - y_1|\).
+- Pythagoras says \(AB^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2\). Squaring removes the modulus signs, because \(|a|^2 = a^2\).
+- Taking the positive square root gives \(AB = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\).
+For the midpoint, the point halfway between \(x_1\) and \(x_2\) is their mean \(\dfrac{x_1 + x_2}{2}\), and the same is true for \(y\).
 :::
 
 :::eg Find the distance, midpoint and gradient of \(AB\) where \(A\) is \((-2, 1)\) and \(B\) is \((4, 5)\).
@@ -65,6 +82,22 @@ Parallel lines have equal gradients. Perpendicular lines have gradients that mul
 :::key Parallel and perpendicular
 - Parallel: \(m_1 = m_2\).
 - Perpendicular: \(m_1 m_2 = -1\), so \(m_2 = -\dfrac{1}{m_1}\). A gradient of \(\tfrac23\) becomes \(-\tfrac32\), and a gradient of \(-4\) becomes \(\tfrac14\).
+:::
+
+:::proof Why perpendicular gradients multiply to −1
+Take two lines through the origin \(O\). The first has gradient \(m_1\), so it passes through \(A(1, m_1)\). The second has gradient \(m_2\), so it passes through \(B(1, m_2)\).
+The lines are perpendicular exactly when angle \(AOB\) is a right angle. By Pythagoras and its converse, that happens exactly when
+\[OA^2 + OB^2 = AB^2\]
+Work out each length squared with the distance formula:
+\[OA^2 = 1 + m_1^2 \qquad OB^2 = 1 + m_2^2 \qquad AB^2 = (m_1 - m_2)^2 = m_1^2 - 2m_1 m_2 + m_2^2\]
+Substitute:
+\[2 + m_1^2 + m_2^2 = m_1^2 - 2m_1 m_2 + m_2^2\]
+The squares cancel, leaving \(2 = -2m_1 m_2\), so \(m_1 m_2 = -1\).
+Moving a line without turning it does not change its gradient, so the result holds for any two perpendicular lines.
+
+:::html
+<div class="widget" data-w="proof" data-proof="perp"></div>
+:::
 :::
 
 :::eg Find the equation of the line through \((2, 5)\) that is perpendicular to \(3x + 4y = 12\).
@@ -113,6 +146,14 @@ A circle is the set of all points at a fixed distance \(r\) (the **radius**) fro
 Centre \((a, b)\), radius \(r\):
 \[(x - a)^2 + (y - b)^2 = r^2\]
 Expanded: \(x^2 + y^2 + 2gx + 2fy + c = 0\), with centre \((-g, -f)\) and radius \(\sqrt{g^2 + f^2 - c}\). The \(x^2\) and \(y^2\) terms must have the same coefficient and there is no \(xy\) term. The circle equation is **not** on MF19.
+:::
+
+:::proof Where the general form and its centre come from
+Expand \((x - a)^2 + (y - b)^2 = r^2\) and move everything to the left:
+\[x^2 + y^2 - 2ax - 2by + (a^2 + b^2 - r^2) = 0\]
+Compare with \(x^2 + y^2 + 2gx + 2fy + c = 0\). Matching the coefficients of \(x\), of \(y\) and the constants:
+\[2g = -2a \qquad 2f = -2b \qquad c = a^2 + b^2 - r^2\]
+So \(a = -g\) and \(b = -f\): the centre is \((-g, -f)\). Then \(r^2 = a^2 + b^2 - c = g^2 + f^2 - c\), so the radius is \(\sqrt{g^2 + f^2 - c}\). If \(g^2 + f^2 - c\) is not positive, no circle exists.
 :::
 
 :::eg Write down the equation of the circle with centre \((3, -2)\) and radius \(5\), and expand it.
@@ -240,6 +281,20 @@ The centre is where they meet: \(3x - 11 = -2x + 4\), so \(x = 3\) and \(y = -2\
 Edexcel IAL has straight lines in P1 and circles in P2; the UK A Levels (AQA, Edexcel, OCR) include both in Pure Year 1. UK specifications usually give the circle only as \((x - a)^2 + (y - b)^2 = r^2\) and rely on completing the square for the expanded form. Parametric forms of lines and circles belong to later chapters in every board.
 :::
 
+:::eg Spot the error: find the centre and radius of the circle \(x^2 + y^2 + 6x - 4y - 12 = 0\).
+A student wrote this answer.
+
+Line 1: Compare with \(x^2 + y^2 + 2gx + 2fy + c = 0\): \(g = 3\), \(f = -2\), \(c = -12\).
+Line 2: The centre is \((g, f) = (3, -2)\).
+Line 3: The radius is \(\sqrt{g^2 + f^2 - c} = \sqrt{9 + 4 + 12} = 5\).
+
+Line 1 is correct [M1]. **Line 2 loses a mark [B0]: the centre is \((-g, -f)\), not \((g, f)\).** Line 3 is correct [M1 A1], because squaring removes the sign slip.
+
+Correct line 2: the centre is \((-3, 2)\). [B1]
+
+**Check:** complete the square: \((x + 3)^2 + (y - 2)^2 = 12 + 9 + 4 = 25\). The brackets \((x + 3)\) and \((y - 2)\) show the centre is \((-3, 2)\) and the radius is 5.
+:::
+
 :::try Start easy, finish at exam standard
 Q: Find the distance and midpoint of \(A(-3, 4)\) and \(B(5, -2)\).
 A: Steps \(8\) and \(-6\): \(AB = \sqrt{64 + 36} = 10\). Midpoint \((1, 1)\).
@@ -269,6 +324,40 @@ Q: (Exam style) Find the values of \(k\) for which the line \(y = kx + 5\) does 
 A: \(x^2 + (kx + 5)^2 = 9\) gives \((1 + k^2)x^2 + 10kx + 16 = 0\). [M1] No intersection needs \(100k^2 - 64(1 + k^2) < 0\). [M1] So \(36k^2 < 64\), \(k^2 < \tfrac{16}{9}\), and \(-\tfrac43 < k < \tfrac43\). [A1]
 :::
 
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ \(A\) is \((1, -2)\) and \(B\) is \((5, 1)\). Find (a) the length \(AB\), (b) the midpoint of \(AB\), (c) the gradient of \(AB\).
+A: (a) \(AB = \sqrt{4^2 + 3^2} = 5\). [B1] (b) Midpoint \(\left(3, -\tfrac12\right)\). [B1] (c) Gradient \(\tfrac34\). [B1]
+Q: [4 marks] ★ Find the equation of the line through \((3, -2)\) that is parallel to \(2x + 5y = 7\), giving your answer in the form \(ax + by + c = 0\) with integer \(a\), \(b\), \(c\).
+A: \(5y = -2x + 7\), so the gradient is \(-\tfrac25\). [M1 A1] \(y + 2 = -\tfrac25(x - 3)\), so \(5y + 10 = -2x + 6\). [M1] \(2x + 5y + 4 = 0\). [A1]
+Q: [5 marks] ★★ \(A\) is \((-2, 3)\) and \(B\) is \((4, 7)\). Find the equation of the perpendicular bisector of \(AB\), in the form \(ax + by + c = 0\).
+A: Midpoint \((1, 5)\). [B1] Gradient of \(AB = \dfrac{4}{6} = \tfrac23\). [B1] The perpendicular gradient is \(-\tfrac32\). [M1] \(y - 5 = -\tfrac32(x - 1)\) [M1] gives \(3x + 2y - 13 = 0\). [A1]
+Q: [7 marks] ★★ The circle \(C\) has equation \(x^2 + y^2 - 10x + 4y + 4 = 0\). (a) Find the centre and radius of \(C\). (b) Show that \(P(8, 2)\) lies on \(C\) and find the equation of the tangent to \(C\) at \(P\), in the form \(ax + by + c = 0\).
+A: (a) \((x - 5)^2 + (y + 2)^2 = 25 + 4 - 4 = 25\). [M1] The centre is \((5, -2)\) and the radius is 5. [A1 A1] (b) \((8 - 5)^2 + (2 + 2)^2 = 9 + 16 = 25\), so \(P\) is on \(C\). [B1] The radius from \((5, -2)\) to \(P\) has gradient \(\dfrac{4}{3}\). [M1] The tangent is perpendicular to the radius, so its gradient is \(-\tfrac34\). [M1] \(y - 2 = -\tfrac34(x - 8)\), so \(3x + 4y - 32 = 0\). [A1]
+Q: [5 marks] ★★ The line \(y = 2x + k\) is a tangent to the circle \(x^2 + y^2 = 20\). Find the two possible values of \(k\).
+A: Substitute: \(x^2 + (2x + k)^2 = 20\), so \(5x^2 + 4kx + k^2 - 20 = 0\). [M1 A1] A tangent means the discriminant is zero: \(16k^2 - 20(k^2 - 20) = 0\). [M1] \(-4k^2 + 400 = 0\), so \(k^2 = 100\) [A1] and \(k = \pm 10\). [A1]
+Q: [9 marks] (#math.f.geometry) ★★★ The points \(A(1, 1)\), \(B(4, 2)\) and \(C(3, 5)\) are the vertices of a triangle. (a) Show that angle \(ABC\) is a right angle. (b) Find the area of triangle \(ABC\). (c) Find the equation of the circle that passes through \(A\), \(B\) and \(C\).
+H: Find the gradients of \(BA\) and \(BC\) and multiply them.
+H: For (c), a right angle in a semicircle means the hypotenuse \(AC\) is a diameter of the circle through the three points.
+H: The centre is the midpoint of \(AC\); the radius is half the length of \(AC\).
+A: (a) Gradient of \(BA = \dfrac{1 - 2}{1 - 4} = \tfrac13\) and gradient of \(BC = \dfrac{5 - 2}{3 - 4} = -3\). [M1 A1] The product is \(-1\), so \(BA \perp BC\) and angle \(ABC = 90^\circ\). [A1] (b) \(BA = \sqrt{9 + 1} = \sqrt{10}\) and \(BC = \sqrt{1 + 9} = \sqrt{10}\). [M1 A1] Area \(= \tfrac12 \times \sqrt{10} \times \sqrt{10} = 5\). [A1] (c) The angle in a semicircle is a right angle, so \(AC\) is a diameter. [B1] The centre is the midpoint of \(AC\), which is \((2, 3)\). [B1] The radius is \(\tfrac12 AC = \tfrac12\sqrt{4 + 16} = \sqrt5\). The equation is \((x - 2)^2 + (y - 3)^2 = 5\). [B1]
+Q: [10 marks] (#math.p1.quadratics) ★★★ The circle \(C\) has equation \(x^2 + y^2 - 2x + 4y - 13 = 0\). (a) Find the centre and radius of \(C\). (b) Show that the line \(y = x + k\) meets \(C\) at two distinct points when \(-9 < k < 3\). (c) For \(k = 1\), find the exact length of the chord cut off by the line.
+H: Substitute \(y = x + k\) into the circle equation and collect terms to get a quadratic in \(x\).
+H: Two distinct points means the discriminant is positive. It factorises as \(-4(k + 9)(k - 3)\).
+H: For (c), the two points lie on a line of gradient 1, so the \(x\)- and \(y\)-differences between them are equal.
+A: (a) \((x - 1)^2 + (y + 2)^2 = 13 + 1 + 4 = 18\). The centre is \((1, -2)\) and the radius is \(\sqrt{18} = 3\sqrt2\). [M1 A1 A1] (b) \(x^2 + (x + k)^2 - 2x + 4(x + k) - 13 = 0\) gives \(2x^2 + (2k + 2)x + k^2 + 4k - 13 = 0\). [M1 A1] The discriminant is \((2k + 2)^2 - 8(k^2 + 4k - 13) = -4k^2 - 24k + 108 = -4(k + 9)(k - 3)\). [M1 A1] This is positive when \((k + 9)(k - 3) < 0\), that is \(-9 < k < 3\). [A1] (c) With \(k = 1\): \(2x^2 + 4x - 8 = 0\), so \(x^2 + 2x - 4 = 0\) and \(x = -1 \pm \sqrt5\). [M1] The two points differ by \(2\sqrt5\) in both \(x\) and \(y\), so the chord length is \(\sqrt{(2\sqrt5)^2 + (2\sqrt5)^2} = 2\sqrt{10}\). [A1]
+:::
+
+:::try Stretch for A*
+Q: [6 marks] ★★★ \(A\) is the point \((0, 0)\) and \(B\) is the point \((3, 0)\). The point \(P(x, y)\) moves so that \(PA = 2PB\). Show that the path of \(P\) is a circle, and find its centre and radius.
+H: Write \(PA^2\) and \(PB^2\) with the distance formula. Squaring both sides of \(PA = 2PB\) removes the square roots.
+H: Expand, collect the terms and complete the square in \(x\).
+A: \(PA^2 = x^2 + y^2\) and \(PB^2 = (x - 3)^2 + y^2\). [B1] \(PA = 2PB\) gives \(PA^2 = 4PB^2\): \(x^2 + y^2 = 4\big[(x - 3)^2 + y^2\big]\). [M1] \(x^2 + y^2 = 4x^2 - 24x + 36 + 4y^2\), so \(3x^2 + 3y^2 - 24x + 36 = 0\) and \(x^2 + y^2 - 8x + 12 = 0\). [A1] Completing the square: \((x - 4)^2 + y^2 = 4\). [M1] This is a circle with centre \((4, 0)\) [A1] and radius 2. [A1]
+Q: [5 marks] ★★★ A circle touches the \(x\)-axis at the point \((4, 0)\) and passes through the point \((0, 2)\). Find its equation.
+H: A circle that touches the \(x\)-axis at \((4, 0)\) has its centre directly above that point, at \((4, r)\), where \(r\) is the radius.
+H: The distance from the centre to \((0, 2)\) must also equal \(r\).
+A: The radius to the point of contact is perpendicular to the axis, so the centre is \((4, r)\). [B1] The distance from \((4, r)\) to \((0, 2)\) is \(r\): \(16 + (r - 2)^2 = r^2\). [M1] \(16 + r^2 - 4r + 4 = r^2\), so \(4r = 20\) and \(r = 5\). [M1 A1] The equation is \((x - 4)^2 + (y - 5)^2 = 25\). [A1]
+:::
+
 :::quiz
 ? What is the gradient of a line perpendicular to \(2x - 5y = 10\)?
 - \(\dfrac25\)
@@ -294,6 +383,29 @@ A: \(x^2 + (kx + 5)^2 = 9\) gives \((1 + k^2)x^2 + 10kx + 16 = 0\). [M1] No inte
 + \(k = \pm 5\)
 - \(k = \pm\sqrt5\)
 > Substituting gives \(5x^2 + 4kx + k^2 - 5 = 0\). The discriminant is \(16k^2 - 20(k^2 - 5) = 100 - 4k^2\), which is zero when \(k^2 = 25\), so \(k = \pm 5\). The value \(\sqrt5\) is the radius, which is not the same thing.
+? \(AB\) is a diameter of a circle and \(C\) is another point on the circle. What is the size of angle \(ACB\)?
+- \(60^\circ\)
+- \(45^\circ\)
++ \(90^\circ\)
+- It depends on where \(C\) is
+> The angle in a semicircle is a right angle wherever \(C\) lies on the circle. In coordinate questions, show it by finding that the gradients of \(CA\) and \(CB\) multiply to \(-1\).
+? The line through the centre of a circle and a point \(P\) on the circle has gradient \(\tfrac25\). What is the gradient of the tangent at \(P\)?
+- \(\dfrac25\)
+- \(-\dfrac25\)
++ \(-\dfrac52\)
+- \(\dfrac52\)
+> The tangent is perpendicular to the radius, so its gradient is the negative reciprocal, \(-\tfrac52\). Using the radius gradient itself, or changing only its sign, are the usual slips.
+:::
+
+:::checklist What you can now do
+- [ ] I can find the distance, midpoint and gradient for two points.
+- [ ] I can write the equation of a line in the forms \(y = mx + c\), \(y - y_1 = m(x - x_1)\) and \(ax + by + c = 0\).
+- [ ] I can use parallel and perpendicular gradients, including the equation of a perpendicular bisector.
+- [ ] I can find where two lines meet.
+- [ ] I can write the equation of a circle and find the centre and radius from either form of the equation.
+- [ ] I can find the tangent or normal to a circle at a point, using that a tangent is perpendicular to the radius.
+- [ ] I can find the values of \(k\) for which a line meets, touches or misses a circle.
+- [ ] I can use circle properties (angle in a semicircle, the perpendicular from the centre to a chord) to find a circle through given points.
 :::
 
 :::recap

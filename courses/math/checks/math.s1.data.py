@@ -60,4 +60,45 @@ T8 = [12, 14, 15, 15, 16, 17, 18, 19, 40]; a, b, c = quart(T8)
 eq("T8 q1", a, 14.5); eq("T8 q3", c, 18.5); eq("T8 med", b, 16); eq("fence", c + 1.5 * (c - a), 24.5); assert 40 > 24.5
 # quiz
 eq("Q1 a", 20 / 10, 2); eq("Q1 b", 20 / 20, 1)
+# ---- v2 additions (P13) ----
+# warm-up
+eq("w1", 7 / 40 * 100, 17.5); eq("w2", 8 * 12.5, 100); eq("w3", (42 - 12) / (20 - 10), 3)
+# proof check (4,6,8,10,12)
+P = [4, 6, 8, 10, 12]; eq("proof dev", sum((x - 8) ** 2 for x in P), 40); eq("proof var", 40 / 5, 8)
+for P2 in ([3, 9, 4, 4, 10, 1], [2.5, 7, 1, 9.5]):
+    m_ = mean(P2); eq("def vs quick", sum((x - m_) ** 2 for x in P2) / len(P2), sum(x * x for x in P2) / len(P2) - m_ ** 2, 1e-9)
+# spot the error
+eq("se mean", 56 / 8, 7); eq("se wrong", 436 / 8 - 7, 47.5); eq("se wrong sd", sf(sqrt(47.5)), 6.89)
+eq("se var", 436 / 8 - 49, 5.5); eq("se sd", sf(sqrt(5.5)), 2.35); eq("se imply", 47.5 + 49, 96.5); eq("se ms", 436 / 8, 54.5)
+D = [3, 4, 6, 7, 8, 9, 9, 10]; eq("se data sum", sum(D), 56); eq("se data sq", sum(x * x for x in D), 436)
+# exam practice
+E1 = [14, 17, 17, 19, 22, 23, 25, 28, 29, 31, 36]; a, b, c = quart(E1)
+eq("e1 med", b, 23); eq("e1 q1", a, 17); eq("e1 q3", c, 29); eq("e1 iqr", c - a, 12)
+eq("e2 mean", 260 / 20, 13); eq("e2 var", 3600 / 20 - 169, 11); eq("e2 sd", sf(sqrt(11)), 3.32)
+k = 4; fs3 = [6, 11, k, 5, 2]; xs3 = [0, 1, 2, 3, 4]
+eq("e3 sum f", sum(fs3), 28); eq("e3 sfx", sum(x * f for x, f in zip(xs3, fs3)), 42); eq("e3 mean", 42 / 28, 1.5)
+eq("e3 eq", 34 + 2 * k, 1.5 * (24 + k)); eq("e3 lin", 34 + 2 * 4, 36 + 1.5 * 4)
+eq("e3 sfx2", sum(x * x * f for x, f in zip(xs3, fs3)), 104); v3 = 104 / 28 - 2.25; eq("e3 var", round(v3, 3), 1.464); eq("e3 sd", sf(sqrt(v3)), 1.21)
+fd4 = [1.4, 3.5, 2, 0.5]; w4 = [10, 10, 20, 30]; f4 = [d * w for d, w in zip(fd4, w4)]
+eq("e4 f", f4[0], 14); eq("e4 f", f4[1], 35); eq("e4 f", f4[2], 40); eq("e4 f", f4[3], 15); eq("e4 n", sum(f4), 104)
+eq("e4 cum", f4[0] + f4[1], 49); eq("e4 cum2", f4[0] + f4[1] + f4[2], 89); eq("e4 med", 20 + (52 - 49) / 40 * 20, 21.5)
+eq("e5 mean", 30 - 50 / 25, 28); eq("e5 var", 4 ** 2, 16); eq("e5 sum", 25 * (16 + 4), 500)
+eq("e6 a", 11 * 12.5 - 120, 17.5); eq("e6 sq", 1550 + 17.5 ** 2, 1856.25); eq("e6 var", 1856.25 / 11 - 12.5 ** 2, 12.5)
+eq("e6 first", 1856.25 / 11, 168.75); eq("e6 sd", sf(sqrt(12.5)), 3.54)
+eq("e7 med", 30 + (35 - 26) / (52 - 26) * 10, 30 + 90 / 26); eq("e7 med r", sf(30 + 90 / 26, 3), 33.5); eq("e7 raw", round(30 + 90 / 26, 2), 33.46)
+cf50 = 52 + 10 / 20 * (64 - 52); eq("e7 cf50", cf50, 58); eq("e7 more", 70 - cf50, 12)
+# e8 AP: seven terms
+d = 3; terms = [20 + k * d for k in range(-3, 4)]
+eq("e8 sum", sum(terms), 140); eq("e8 sq", sum(t * t for t in terms), 3052); eq("e8 k2", sum(k * k for k in range(-3, 4)), 28)
+eq("e8 base", 7 * 400 + 28 * 9, 3052); eq("e8 min", min(terms), 11); eq("e8 d2", (3052 - 2800) / 28, 9)
+a_, d_ = 11, 3; eq("e8 S7", 7 / 2 * (2 * a_ + 6 * d_), 140)
+# stretch 1: depot
+X = [2, 5, 6, 9, 13]; mu = mean(X); eq("s1 mean", mu, 7); eq("s1 sumsq", sum(x * x for x in X), 315)
+eq("s1 var", 315 / 5 - 49, 14); eq("s1 least", 5 * 14, 70); eq("s1 direct", sum((x - 7) ** 2 for x in X), 70)
+eq("s1 at10", sum((x - 10) ** 2 for x in X), 115); eq("s1 formula10", 70 + 5 * 9, 115)
+for a_ in (0, 4.2, 11):
+    eq("s1 identity", sum((x - a_) ** 2 for x in X), 5 * 14 + 5 * (7 - a_) ** 2, 1e-9)
+# stretch 2: removed reading
+n = 13; eq("s2 n", (10 * n - 16) / (n - 1), 9.5); eq("s2 orig sq", n * (4 + 100), 1352); eq("s2 sq", 1352 - 256, 1096)
+v = 1096 / 12 - 9.5 ** 2; eq("s2 var", round(v, 3), 1.083); eq("s2 v1", round(1096 / 12, 2), 91.33); eq("s2 sd", sf(sqrt(v)), 1.04); eq("s2 z", (16 - 10) / 2, 3)
 print("ok")

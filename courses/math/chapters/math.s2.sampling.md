@@ -11,6 +11,15 @@ Opinion polls, quality checks and medical trials all work the same way. Nobody c
 
 **Before you start**, you need \(E(X)\) and \(\mathrm{Var}(X)\) from [Discrete random variables](#math.s1.drv), the normal distribution from [The normal distribution](#math.s1.normal), and the rules for sums and multiples of random variables from [Linear combinations of random variables](#math.s2.linear). Mean and standard deviation of data are in [Representing and summarising data](#math.s1.data).
 
+:::try Warm-up
+Q: A data set has \(n = 10\), \(\sum x = 85\) and \(\sum x^2 = 762\). Find the mean and the standard deviation (divisor \(n\)). (from [Representing and summarising data](#math.s1.data))
+A: The mean is \(\dfrac{85}{10} = 8.5\). The variance is \(\dfrac{762}{10} - 8.5^2 = 3.95\), so the standard deviation is \(\sqrt{3.95} = 1.99\).
+Q: \(\mathrm{Var}(X) = 7\). Find \(\mathrm{Var}(X_1 + X_2 + X_3)\) for three independent observations of \(X\), and \(\mathrm{Var}(3X)\). (from [Linear combinations of random variables](#math.s2.linear))
+A: \(\mathrm{Var}(X_1 + X_2 + X_3) = 3 \times 7\) \(= 21\), but \(\mathrm{Var}(3X) = 3^2 \times 7 = 63\).
+Q: \(X \sim N(40, 6^2)\). Find \(a\) such that \(P(X > a) = 0.1\). (from [The normal distribution](#math.s1.normal))
+A: \(\Phi(z) = 0.9\) gives \(z = 1.282\), so \(a = 40 + 1.282 \times 6 = 47.7\).
+:::
+
 ## Populations and samples
 
 :::def Population and sample
@@ -74,10 +83,16 @@ The result \(\bar X \sim N(\mu, \sigma^2/n)\) is on MF19. The sentence "the samp
 --f "exp(-((x-100)**2)/(2*225))/sqrt(2*pi*225)" --f "exp(-((x-100)**2)/(2*25))/sqrt(2*pi*25)" --label "X, standard deviation 15" --label "mean of 9, standard deviation 5" --x 55 145 --y 0 0.09 --legend tl
 :::
 
-:::eg \(X \sim N(100, 15^2)\). Find (a) \(P(X > 105)\) and (b) the probability that the mean of a random sample of 9 observations exceeds 105.
-(a) \(P(X > 105) = P\!\left(Z > \dfrac{105 - 100}{15}\right) = P(Z > 0.333) = 0.369\).
+The widget lets you watch this happen. It draws random samples from a population, records each sample mean, and piles the means into a histogram. Start with the skewed population and \(n = 1\): the means copy the skewed shape. Raise \(n\) to 10, then 30, and draw 100 samples each time. The pile gets narrower, becomes bell-shaped, and stays centred on \(\mu\), close to the curve \(N(\mu, \sigma^2/n)\). That is the central limit theorem at work.
 
-(b) \(\bar X \sim N\!\left(100, \dfrac{15^2}{9}\right) = N(100, 5^2)\), so
+:::html
+<div class="widget" data-w="sampling" data-mode="means" data-pop="skewed" data-n="10"></div>
+:::
+
+:::eg \(X \sim N(100, 15^2)\). Find (a) \(P(X > 105)\) and (b) the probability that the mean of a random sample of 9 observations exceeds 105.
+(a) \(P(X > 105)\) \(= P\!\left(Z > \dfrac{105 - 100}{15}\right)\) \(= P(Z > 0.333) = 0.369\).
+
+(b) \(\bar X \sim N\!\left(100, \dfrac{15^2}{9}\right)\) \(= N(100, 5^2)\), so
 \[P(\bar X > 105) = P\!\left(Z > \frac{105 - 100}{5}\right) = P(Z > 1) = 0.159\]
 A mean of 9 values is much less likely than a single value to be far from \(\mu\).
 :::
@@ -112,6 +127,20 @@ For a sample \(x_1, \dots, x_n\):
 - The sample variance with divisor \(n\) is **not** the unbiased estimate.
 - Both estimators are on MF19. On a calculator, \(s\) is the "\(\sigma_{n-1}\)" or "\(s_x\)" key.
 - Use \(s^2\) in place of \(\sigma^2\) when \(\sigma^2\) is unknown (for large samples).
+:::
+
+:::proof Why we divide by \(n - 1\)
+Let \(X_1, \dots, X_n\) be independent with mean \(\mu\) and variance \(\sigma^2\), and let \(\bar X\) be their mean. Write each distance from \(\bar X\) as a distance from \(\mu\), less the distance of \(\bar X\) from \(\mu\):
+\[X_i - \bar X = (X_i - \mu) - (\bar X - \mu)\]
+Square and add over all \(i\). The middle term uses \(\sum (X_i - \mu) = n(\bar X - \mu)\):
+\[\sum (X_i - \bar X)^2 = \sum (X_i - \mu)^2 - 2(\bar X - \mu)\,n(\bar X - \mu) + n(\bar X - \mu)^2 = \sum (X_i - \mu)^2 - n(\bar X - \mu)^2\]
+Now take the mean of each side:
+- \(E\big[(X_i - \mu)^2\big] = \sigma^2\), so the first sum has mean \(n\sigma^2\).
+- \(E\big[(\bar X - \mu)^2\big] = \mathrm{Var}(\bar X)\) \(= \dfrac{\sigma^2}{n}\), so the second term has mean \(n \times \dfrac{\sigma^2}{n} = \sigma^2\).
+
+So \(E\Big[\sum (X_i - \bar X)^2\Big]\) \(= n\sigma^2 - \sigma^2\) \(= (n - 1)\sigma^2\). Dividing by \(n - 1\) therefore gives \(\sigma^2\) on average, and dividing by \(n\) would give too little. The sample sits closer to its own mean than to \(\mu\), which is why the sum falls short by exactly \(\sigma^2\).
+
+Check with a population of 0 and 2, equally likely, so \(\mu = 1\) and \(\sigma^2 = 1\). The four equally likely samples of size 2 are (0, 0), (0, 2), (2, 0), (2, 2), with \(\sum (x - \bar x)^2 = 0, 2, 2, 0\). Dividing by \(n - 1 = 1\) gives an average of \(\dfrac{0 + 2 + 2 + 0}{4} = 1 = \sigma^2\), while dividing by \(n = 2\) gives an average of 0.5.
 :::
 
 :::eg Find unbiased estimates of the population mean and variance from the sample 12, 15, 11, 18, 14.
@@ -163,6 +192,12 @@ The 98% confidence interval is \(32.7 < \mu < 35.7\).
 
 :::warn What "95% confident" means
 The population mean \(\mu\) is a fixed number. It is the interval that changes from sample to sample. A 95% confidence interval means: **if you took many samples and made an interval from each in the same way, about 95% of the intervals would contain \(\mu\)**. Do not say "95% of the population is in the interval", and avoid "there is a 95% chance \(\mu\) is in this interval" in an exam unless you phrase it as the method's success rate.
+:::
+
+The widget below makes the meaning concrete. Each press draws new samples, and for each one it draws the 95% interval \(\bar x \pm 1.96\,\sigma/\sqrt{n}\). The dashed line is the true \(\mu\), which the widget knows and a real statistician does not. An interval that misses \(\mu\) turns red. Draw 20 intervals several times: the count of misses changes, but about 1 in 20 is red. Switch to 99% and every interval widens, with fewer misses.
+
+:::html
+<div class="widget" data-w="sampling" data-mode="ci" data-pop="normal" data-n="25" data-level="95"></div>
 :::
 
 How the width changes:
@@ -229,7 +264,7 @@ The sample is large (64), so by the central limit theorem \(\bar X\) is approxim
 :::
 
 :::eg (Exam style) A machine fills bags of nuts. The mass \(X\) g is normally distributed with standard deviation 9 g. A sample of 16 bags has mean 502.5 g. (a) Find a 95% confidence interval for the mean mass. (b) Find the smallest sample size for which the width of a 95% confidence interval is less than 4 g. [6 marks]
-(a) \(\dfrac{9}{\sqrt{16}} = 2.25\), so \(502.5 \pm 1.96 \times 2.25 = 502.5 \pm 4.41\). [M1 A1] The interval is \((498, 507)\). [A1]
+(a) \(\dfrac{9}{\sqrt{16}} = 2.25\), so \(502.5 \pm 1.96 \times 2.25\) \(= 502.5 \pm 4.41\). [M1 A1] The interval is \((498, 507)\). [A1]
 
 (b) \(2 \times 1.96 \times \dfrac{9}{\sqrt{n}} < 4\) [M1], so \(\sqrt{n} > 8.82\) and \(n > 77.8\). [A1] The smallest sample size is \(n = 78\). [A1]
 :::
@@ -246,29 +281,74 @@ The sample is large (64), so by the central limit theorem \(\bar X\) is approxim
 - **UK A Level (AQA 7357, Edexcel 9MA0, OCR H240)**: the single A Level covers sampling methods by name and hypothesis tests, but not confidence intervals or the central limit theorem. Those are in UK Further Maths.
 :::
 
+:::eg Spot the error: the standard error
+A student answered this question [3 marks]: "The masses of eggs are normally distributed with standard deviation 10 g. A random sample of 25 eggs has mean mass 64 g. Find a 95% confidence interval for the population mean."
+
+Line 1: For 95%, \(z = 1.96\).
+Line 2: The interval is \(64 \pm 1.96 \times 10\).
+Line 3: So \(44.4 < \mu < 83.6\).
+
+**Line 1 earns [B1]**. **Line 2 scores [M0 A0]**: the formula needs the standard deviation of the sample mean, \(\dfrac{\sigma}{\sqrt{n}} = \dfrac{10}{5} = 2\), not the standard deviation \(\sigma\) of a single egg. Line 3 is correct for the student's line 2, but the method was wrong, so there is no mark. The student scores 1 out of 3.
+
+Correct working: \(\dfrac{\sigma}{\sqrt{n}} = 2\) and \(64 \pm 1.96 \times 2 = 64 \pm 3.92\), [M1] so \(60.1 < \mu < 67.9\). [A1]
+
+**Check:** a mean of 25 eggs is much steadier than one egg, so the interval for \(\mu\) should be much narrower than the range in which single eggs lie. A width of nearly 40 g is far too wide.
+:::
+
 :::try Start easy, finish at exam standard
 Q: A radio phone-in asks listeners "Do you think the council wastes money?". Give two reasons why the result is not representative of all residents.
 A: Listeners who phone in choose themselves, and tend to be those with strong views, so the sample is self-selected. Not all residents listen to that station, so some have no chance of being included.
 Q: Describe how to use random numbers to choose a sample of 4 pupils from a list of 60.
 A: Number the pupils 01 to 60. Generate two-digit random numbers. Ignore 00, numbers above 60 and repeats. Continue until four different numbers from 01 to 60 are found, and choose those pupils.
 Q: \(X \sim N(50, 12^2)\). Find the distribution of the mean \(\bar X\) of 9 independent observations, and \(P(\bar X > 54)\).
-A: \(\bar X \sim N\!\left(50, \tfrac{144}{9}\right) = N(50, 16)\). \(P(\bar X > 54) = P\!\left(Z > \tfrac{4}{4}\right) = P(Z > 1) = 0.159\).
+A: \(\bar X \sim N\!\left(50, \tfrac{144}{9}\right)\) \(= N(50, 16)\). \(P(\bar X > 54) = P\!\left(Z > \tfrac{4}{4}\right)\) \(= P(Z > 1)\) \(= 0.159\).
 Q: A population has mean 20 and standard deviation 6 (shape unknown). The mean \(\bar X\) of a sample of 100 is taken. Find \(P(\bar X < 19)\) and explain why a normal distribution can be used.
-A: \(n = 100\) is large, so by the central limit theorem \(\bar X \approx N(20, 0.36)\). \(P(\bar X < 19) = P\!\left(Z < \tfrac{-1}{0.6}\right) = \Phi(-1.667) = 0.0478\).
+A: \(n = 100\) is large, so by the central limit theorem \(\bar X \approx N(20, 0.36)\). \(P(\bar X < 19) = P\!\left(Z < \tfrac{-1}{0.6}\right)\) \(= \Phi(-1.667) = 0.0478\).
 Q: Find unbiased estimates of the population mean and variance from the sample 8, 11, 9, 14, 13, 10.
-A: \(\sum x = 65\), \(\bar x = 10.83\). \(\sum x^2 = 731\). \(s^2 = \tfrac15\left(731 - \tfrac{65^2}{6}\right) = \tfrac{26.83}{5} = 5.37\).
+A: \(\sum x = 65\), \(\bar x = 10.83\). \(\sum x^2 = 731\). \(s^2 = \tfrac15\left(731 - \tfrac{65^2}{6}\right)\) \(= \tfrac{26.83}{5}\) \(= 5.37\).
 Q: A sample of 50 values has \(\sum x = 620\) and \(\sum x^2 = 8100\). Find unbiased estimates of \(\mu\) and \(\sigma^2\).
-A: \(\bar x = 12.4\). \(s^2 = \tfrac{1}{49}\left(8100 - \tfrac{620^2}{50}\right) = \tfrac{412}{49} = 8.41\).
+A: \(\bar x = 12.4\). \(s^2 = \tfrac{1}{49}\left(8100 - \tfrac{620^2}{50}\right)\) \(= \tfrac{412}{49}\) \(= 8.41\).
 Q: A normal population has standard deviation 5. A sample of 25 has mean 48. Find a 90% confidence interval for the population mean.
-A: \(\tfrac{5}{\sqrt{25}} = 1\). \(48 \pm 1.645 \times 1 = 48 \pm 1.645\), so \(46.4 < \mu < 49.6\).
+A: \(\tfrac{5}{\sqrt{25}} = 1\). \(48 \pm 1.645 \times 1\) \(= 48 \pm 1.645\), so \(46.4 < \mu < 49.6\).
 Q: A large sample of 64 has mean 120 and unbiased variance estimate \(16^2\). Find a 99% confidence interval for the population mean, and say what happens to its width if the sample size is quadrupled.
-A: \(\tfrac{16}{\sqrt{64}} = 2\). \(120 \pm 2.576 \times 2 = 120 \pm 5.152\), so \(114.8 < \mu < 125.2\). The width is proportional to \(1/\sqrt{n}\). Quadrupling \(n\) doubles \(\sqrt{n}\), so the width is halved.
+A: \(\tfrac{16}{\sqrt{64}} = 2\). \(120 \pm 2.576 \times 2\) \(= 120 \pm 5.152\), so \(114.8 < \mu < 125.2\). The width is proportional to \(1/\sqrt{n}\). Quadrupling \(n\) doubles \(\sqrt{n}\), so the width is halved.
 Q: In a random sample of 250 customers, 100 say they are satisfied. Find an approximate 95% confidence interval for the proportion of all customers who are satisfied.
-A: \(\hat p = 0.4\). \(\sqrt{\tfrac{0.4 \times 0.6}{250}} = 0.03098\). \(0.4 \pm 1.96 \times 0.03098 = 0.4 \pm 0.0607\), so \(0.339 < p < 0.461\).
+A: \(\hat p = 0.4\). \(\sqrt{\tfrac{0.4 \times 0.6}{250}} = 0.03098\). \(0.4 \pm 1.96 \times 0.03098\) \(= 0.4 \pm 0.0607\), so \(0.339 < p < 0.461\).
 Q: A student says "A 95% confidence interval for the mean is \((40, 44)\), so 95% of all the values in the population lie between 40 and 44". Explain the mistake.
 A: The interval is for the **mean** of the population, not for individual values. Individual values vary far more than the mean of a sample. The correct meaning is that 95% of intervals constructed in this way would contain the true mean.
 Q: (Exam style) The heights of a type of plant are normally distributed with standard deviation 6.5 cm. A sample of 40 plants has mean height 52.4 cm. (a) Find a 99% confidence interval for the mean height. (b) A gardener says the mean height is 56 cm. Comment. [5 marks]
-A: (a) \(\tfrac{6.5}{\sqrt{40}} = 1.0277\). \(52.4 \pm 2.576 \times 1.0277 = 52.4 \pm 2.647\), so \(49.8 < \mu < 55.0\). [M1 A1 A1] (b) 56 is outside the interval, so the data do not support the gardener's claim. [B1 B1]
+A: (a) \(\tfrac{6.5}{\sqrt{40}} = 1.0277\). \(52.4 \pm 2.576 \times 1.0277\) \(= 52.4 \pm 2.647\), so \(49.8 < \mu < 55.0\). [M1 A1 A1] (b) 56 is outside the interval, so the data do not support the gardener's claim. [B1 B1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ A random sample of 30 values has \(\sum x = 465\) and \(\sum x^2 = 7482\). Find unbiased estimates of the population mean and variance.
+A: \(\bar x = \dfrac{465}{30} = 15.5\). [B1] \(s^2 = \dfrac{1}{29}\left(7482 - \dfrac{465^2}{30}\right)\) [M1] \(= \dfrac{274.5}{29} = 9.47\). [A1]
+Q: [4 marks] ★ \(X \sim N(200, 30^2)\). A random sample of 16 observations is taken. State the distribution of the sample mean \(\bar X\) and find \(P(\bar X < 190)\).
+A: \(\bar X \sim N\!\left(200, \dfrac{30^2}{16}\right)\) \(= N(200, 7.5^2)\). [B1 B1] \(P(\bar X < 190)\) \(= P\!\left(Z < \dfrac{190 - 200}{7.5}\right)\) [M1] \(= \Phi(-1.333) = 0.0912\). [A1]
+Q: [4 marks] ★ A normal population has standard deviation 2.4. A random sample of 36 has mean 18.7. Find a 99% confidence interval for the population mean.
+A: For 99%, \(z = 2.576\). [B1] \(\dfrac{\sigma}{\sqrt{n}} = \dfrac{2.4}{6} = 0.4\), [M1] so the margin is \(2.576 \times 0.4 = 1.03\). [A1] The interval is \(17.7 < \mu < 19.7\). [A1]
+Q: [4 marks] ★★ A population has mean 12.5 and standard deviation 4.2, and is not normal. A random sample of 70 is taken. Find the probability that the sample mean is greater than 13.5.
+A: The sample is large, so by the central limit theorem \(\bar X\) is approximately normal. [B1] \(\bar X \approx N\!\left(12.5, \dfrac{4.2^2}{70}\right)\), with standard deviation 0.502. [B1] \(z = \dfrac{13.5 - 12.5}{0.502}\) \(= 1.992\), [M1] so \(P(\bar X > 13.5)\) \(= 1 - \Phi(1.992)\) \(= 0.0232\). [A1]
+Q: [6 marks] ★★ In a random sample of 400 voters, 148 say they will vote for a candidate. (a) Find an approximate 95% confidence interval for the proportion of all voters who support the candidate. (b) The candidate claims 40% support. Comment on the claim.
+A: (a) \(\hat p = \dfrac{148}{400} = 0.37\). [B1] \(\sqrt{\dfrac{0.37 \times 0.63}{400}} = 0.02414\), [M1 A1] so the interval is \(0.37 \pm 1.96 \times 0.02414\) \(= 0.37 \pm 0.0473\), that is \(0.323 < p < 0.417\). [A1] (b) The value 0.40 lies inside the interval, [B1] so the sample is consistent with the claim, although it does not prove it. [B1]
+Q: [5 marks] ★★ A 98% confidence interval for a population mean, based on a random sample of 50 and using the sample's unbiased variance estimate, is \((21.4, 24.6)\). Find the sample mean and the unbiased estimate of the population standard deviation.
+A: The interval is symmetrical about the sample mean, so \(\bar x = \dfrac{21.4 + 24.6}{2} = 23\). [B1] The margin of error is \(24.6 - 23 = 1.6\), and for 98% \(z = 2.326\). [B1] So \(2.326 \times \dfrac{s}{\sqrt{50}} = 1.6\), [M1] giving \(s = \dfrac{1.6 \times \sqrt{50}}{2.326}\) [M1] \(= 4.86\). [A1]
+Q: [10 marks] (#math.s2.crv) ★★★ The random variable \(X\) has pdf \(f(x) = \dfrac{x}{2}\) for \(0 \le x \le 2\) and 0 otherwise. (a) Show that \(E(X) = \dfrac43\) and \(\mathrm{Var}(X) = \dfrac29\). (b) A random sample of 40 observations of \(X\) is taken. Find the probability that the sample mean exceeds 1.4. (c) Explain why the distribution of \(X\) need not be normal for your answer to (b) to be reasonable.
+H: In (a), use the integrals for \(E(X)\) and \(E(X^2)\) from [Continuous random variables](#math.s2.crv), then \(\mathrm{Var}(X) = E(X^2) - [E(X)]^2\).
+H: In (b), the sample is large, so \(\bar X\) is approximately normal with mean \(\dfrac43\) and variance \(\dfrac{2/9}{40}\).
+H: In (c), look at the shape of the pdf: it is a straight line, not a bell.
+A: (a) \(E(X) = \displaystyle\int_0^2 \frac{x^2}{2}\,dx = \left[\frac{x^3}{6}\right]_0^2\) [M1] \(= \dfrac43\). [A1] \(E(X^2) = \displaystyle\int_0^2 \frac{x^3}{2}\,dx\) \(= \left[\frac{x^4}{8}\right]_0^2 = 2\), [M1] so \(\mathrm{Var}(X) = 2 - \dfrac{16}{9} = \dfrac29\). [A1] (b) \(\bar X\) is approximately normal, with mean \(\dfrac43\) and variance \(\dfrac{2/9}{40} = \dfrac{1}{180}\). [B1 B1] The standard deviation is \(0.0745\), so \(z = \dfrac{1.4 - 4/3}{0.0745}\) \(= 0.894\) [M1] and \(P(\bar X > 1.4)\) \(= 1 - \Phi(0.894)\) \(= 0.186\). [A1] (c) The pdf is a straight line, so \(X\) is clearly not normal. [B1] By the central limit theorem, the mean of a large sample (here 40) is approximately normal whatever the shape of the population. [B1]
+:::
+
+:::try Stretch for A*
+Q: [8 marks] ★★★ Two independent random samples, of sizes \(n_1\) and \(n_2\), are taken from a population with mean \(\mu\) and variance \(\sigma^2\), with sample means \(\bar X_1\) and \(\bar X_2\). An estimator of \(\mu\) is \(T = a\bar X_1 + (1 - a)\bar X_2\). (a) Show that \(T\) is unbiased for every value of \(a\). (b) Find \(\mathrm{Var}(T)\). (c) Find the value of \(a\) that makes \(\mathrm{Var}(T)\) as small as possible. (d) For \(n_1 = 10\), \(n_2 = 30\) and \(\sigma = 4\), find the smallest variance.
+H: Use \(E(\bar X_1) = E(\bar X_2) = \mu\) and \(\mathrm{Var}(\bar X_i) = \dfrac{\sigma^2}{n_i}\), with the rules for \(aX + bY\) from [Linear combinations](#math.s2.linear).
+H: Differentiate \(\mathrm{Var}(T)\) with respect to \(a\) and set the derivative to zero.
+A: (a) \(E(T) = a\mu + (1 - a)\mu = \mu\) [M1 A1] for every \(a\), so \(T\) is unbiased. (b) The samples are independent, so \(\mathrm{Var}(T)\) \(= a^2\dfrac{\sigma^2}{n_1} + (1 - a)^2\dfrac{\sigma^2}{n_2}\). [M1 A1] (c) \(\dfrac{d}{da}\mathrm{Var}(T)\) \(= \dfrac{2a\sigma^2}{n_1} - \dfrac{2(1 - a)\sigma^2}{n_2}\) \(= 0\) [M1] gives \(a\,n_2 = (1 - a)\,n_1\), so \(a = \dfrac{n_1}{n_1 + n_2}\). [A1 A1] This is a minimum because \(\mathrm{Var}(T)\) is a quadratic in \(a\) with positive coefficient of \(a^2\). Each sample is weighted by its size, so \(T\) is the mean of all \(n_1 + n_2\) values. (d) With \(a = \dfrac{10}{40} = \dfrac14\): \(\mathrm{Var}(T)\) \(= \dfrac{1}{16} \times \dfrac{16}{10} + \dfrac{9}{16} \times \dfrac{16}{30}\) \(= 0.1 + 0.3 = 0.4\), which equals \(\dfrac{\sigma^2}{n_1 + n_2} = \dfrac{16}{40}\). [B1]
+Q: [5 marks] ★★★ A 95% confidence interval is calculated from each of 20 independent random samples, all from the same population. (a) State the distribution of the number of intervals that contain the population mean. (b) Find the probability that all 20 intervals contain the mean. (c) Find the probability that at least 2 of the 20 intervals do not contain the mean.
+H: Each interval contains the mean with probability 0.95, independently of the others, so the number that contain it is binomial.
+H: For (c), count the intervals that miss: that number is \(B(20, 0.05)\). Use the complement.
+A: (a) Let \(C\) be the number of intervals that contain \(\mu\). Then \(C \sim B(20, 0.95)\). [B1] (b) \(P(C = 20) = 0.95^{20}\) [M1] \(= 0.358\). [A1] (c) The number that miss is \(M \sim B(20, 0.05)\), and \(P(M \ge 2)\) \(= 1 - P(M = 0) - P(M = 1)\) [M1] \(= 1 - 0.95^{20} - 20(0.05)(0.95)^{19}\) \(= 1 - 0.3585 - 0.3774\) \(= 0.264\). [A1]
 :::
 
 :::quiz Check your understanding
@@ -304,11 +384,23 @@ A: (a) \(\tfrac{6.5}{\sqrt{40}} = 1.0277\). \(52.4 \pm 2.576 \times 1.0277 = 52.
 > The central limit theorem makes \(\bar X\) approximately normal for large \(n\), with variance \(\sigma^2/n\). The population's skew disappears in the mean.
 :::
 
+:::checklist What you can now do
+- [ ] I can explain the difference between a population and a sample, and say why a sampling method is unsatisfactory.
+- [ ] I can describe how to use random numbers to select a random sample from a numbered list.
+- [ ] I can state \(E(\bar X) = \mu\) and \(\mathrm{Var}(\bar X) = \sigma^2/n\), and use \(\bar X \sim N(\mu, \sigma^2/n)\) for a normal population.
+- [ ] I can use the central limit theorem for a large sample from any population, and say why it applies.
+- [ ] I can find unbiased estimates of the population mean and variance from raw data or from \(\sum x\) and \(\sum x^2\).
+- [ ] I can find a confidence interval for a mean (known \(\sigma\), or a large sample) at 90%, 95%, 98% or 99%.
+- [ ] I can find a confidence interval for a proportion from a large sample.
+- [ ] I can interpret a confidence interval correctly, and say how its width changes with \(n\) and the confidence level.
+- [ ] I can find the sample size needed for an interval of a given width, rounding up.
+:::
+
 :::recap
 - A random sample gives every member an equal chance and independent selection; convenient or self-selected samples are biased. Use random numbers: number the list, ignore out-of-range numbers and repeats.
 - \(E(\bar X) = \mu\) and \(\mathrm{Var}(\bar X) = \sigma^2/n\). \(\bar X\) is exactly \(N(\mu, \sigma^2/n)\) for a normal population and approximately so for large \(n\) (central limit theorem).
-- Unbiased estimates: \(\bar x\) for \(\mu\) and \(s^2 = \dfrac{1}{n - 1}\left(\sum x^2 - \dfrac{(\sum x)^2}{n}\right)\) for \(\sigma^2\).
-- Confidence interval for a mean: \(\bar x \pm z\sigma/\sqrt{n}\) (known \(\sigma\), or large \(n\) with \(s\)). \(z = 1.645, 1.960, 2.326, 2.576\) for 90%, 95%, 98%, 99%.
+- Unbiased estimates: \(\bar x\) for \(\mu\) and \(s^2\) \(= \dfrac{1}{n - 1}\left(\sum x^2 - \dfrac{(\sum x)^2}{n}\right)\) for \(\sigma^2\).
+- Confidence interval for a mean: \(\bar x \pm z\sigma/\sqrt{n}\) (known \(\sigma\), or large \(n\) with \(s\)). \(z\) \(= 1.645, 1.960, 2.326, 2.576\) for 90%, 95%, 98%, 99%.
 - Confidence interval for a proportion: \(\hat p \pm z\sqrt{\hat p(1 - \hat p)/n}\) for large \(n\).
 - A higher confidence level or smaller \(n\) widens the interval. Round sample sizes up. Interpret as "about 95% of such intervals contain \(\mu\)".
 :::

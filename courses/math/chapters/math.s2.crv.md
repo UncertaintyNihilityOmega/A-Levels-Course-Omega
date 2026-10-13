@@ -11,6 +11,15 @@ Waiting times, masses, lengths and temperatures can take any value in a range, s
 
 **Before you start**, you need integration of powers of \(x\) and definite integrals from [Integration](#math.p1.integ), and \(E(X)\) and \(\mathrm{Var}(X)\) for discrete variables from [Discrete random variables](#math.s1.drv). The normal distribution in [The normal distribution](#math.s1.normal) is the best-known example of what follows.
 
+:::try Warm-up
+Q: Evaluate \(\displaystyle\int_1^4 (3x^2 - 2x)\,dx\). (from [Integration](#math.p1.integ))
+A: \(\left[x^3 - x^2\right]_1^4\) \(= (64 - 16) - (1 - 1)\) \(= 48\).
+Q: \(X \sim B(8, 0.25)\). Write down \(E(X)\) and \(\mathrm{Var}(X)\). (from [Discrete random variables](#math.s1.drv))
+A: \(E(X) = np = 8 \times 0.25 = 2\) and \(\mathrm{Var}(X) = npq\) \(= 8 \times 0.25 \times 0.75\) \(= 1.5\).
+Q: \(E(X) = 5\) and \(\mathrm{Var}(X) = 2\). Find \(E(2X - 3)\) and \(\mathrm{Var}(2X - 3)\). (from [Linear combinations of random variables](#math.s2.linear))
+A: \(E(2X - 3) = 2 \times 5 - 3 = 7\) and \(\mathrm{Var}(2X - 3) = 2^2 \times 2 = 8\).
+:::
+
 ## Probability as area
 
 A **discrete** random variable takes separate values, such as the score on a die. A **continuous** random variable can take any value in an interval, such as the time you wait for a bus.
@@ -114,7 +123,7 @@ Then solve for \(m\) or \(q\). The median is **not** the midpoint of the interva
 :::
 
 :::eg \(X\) has pdf \(f(x) = \dfrac{1}{2\sqrt{x}}\) for \(1 \le x \le 4\). Show that this is a valid pdf, then find \(E(X)\) and the median.
-Write \(f(x) = \tfrac12 x^{-1/2}\). Area: \(\displaystyle\int_1^4 \tfrac12 x^{-1/2}\,dx = \left[x^{1/2}\right]_1^4 = 2 - 1 = 1\), so it is valid.
+Write \(f(x) = \tfrac12 x^{-1/2}\). Area: \(\displaystyle\int_1^4 \tfrac12 x^{-1/2}\,dx = \left[x^{1/2}\right]_1^4\) \(= 2 - 1\) \(= 1\), so it is valid.
 
 \[E(X) = \int_1^4 \tfrac12 x^{1/2}\,dx = \left[\tfrac13 x^{3/2}\right]_1^4 = \tfrac13(8 - 1) = \tfrac73 = 2.33\]
 
@@ -177,9 +186,9 @@ The median (1.59) is larger than the mean (1.5). The pdf rises towards \(x = 2\)
 :::
 
 :::eg (Exam style) \(X\) has pdf \(f(x) = \dfrac{k}{x^5}\) for \(x \ge 1\) and 0 otherwise. (a) Find \(k\). (b) Find \(E(X)\) and \(\mathrm{Var}(X)\). (c) Find the median. [8 marks]
-(a) \(\displaystyle\int_1^\infty kx^{-5}\,dx = k\left[-\frac{x^{-4}}{4}\right]_1^\infty = \frac{k}{4}\) [M1], so \(k = 4\). [A1]
+(a) \(\displaystyle\int_1^\infty kx^{-5}\,dx = k\left[-\frac{x^{-4}}{4}\right]_1^\infty\) \(= \frac{k}{4}\) [M1], so \(k = 4\). [A1]
 
-(b) \(\displaystyle E(X) = \int_1^\infty 4x^{-4}\,dx = \left[-\frac43 x^{-3}\right]_1^\infty = \frac43\) [M1 A1]
+(b) \(\displaystyle E(X) = \int_1^\infty 4x^{-4}\,dx\) \(= \left[-\frac43 x^{-3}\right]_1^\infty\) \(= \frac43\) [M1 A1]
 \[E(X^2) = \int_1^\infty 4x^{-3}\,dx = \left[-2x^{-2}\right]_1^\infty = 2\] [M1]
 \[\mathrm{Var}(X) = 2 - \frac{16}{9} = \frac29 = 0.222\] [A1]
 
@@ -199,27 +208,73 @@ The median (1.59) is larger than the mean (1.5). The pdf rises towards \(x = 2\)
 - **UK A Level (AQA 7357, Edexcel 9MA0, OCR H240)**: continuous random variables defined by a pdf are not in the single A Level. They appear in Further Maths statistics.
 :::
 
+:::eg Spot the error: where the median integral starts
+A student answered this question [4 marks]: "\(X\) has pdf \(f(x) = kx\) for \(1 \le x \le 3\) and 0 otherwise. (a) Find \(k\). (b) Find the median of \(X\)."
+
+Line 1: \(\displaystyle\int_1^3 kx\,dx = k\left[\frac{x^2}{2}\right]_1^3 = 4k\) \(= 1\), so \(k = \dfrac14\).
+Line 2: For the median, \(\displaystyle\int_0^m \frac{x}{4}\,dx = \frac{m^2}{8} = 0.5\).
+Line 3: \(m^2 = 4\), so the median is \(m = 2\).
+
+**Line 1 earns [M1 A1]**. **Lines 2 and 3 score [M0 A0]**. The median equation must integrate from the lower end of the interval, which is 1, not from 0, because there is no probability below 1. Starting at 0 adds an area that does not exist, so the equation is wrong from the start. The student scores 2 out of 4.
+
+Correct working: \(\displaystyle\int_1^m \frac{x}{4}\,dx = \frac{m^2 - 1}{8} = 0.5\), [M1] so \(m^2 = 5\) and \(m = 2.24\). [A1]
+
+**Check:** the pdf rises from 1 to 3, so more probability lies on the right and the median should be above the midpoint 2. The student's 2 is not, and \(2.24\) is.
+:::
+
 :::try Start easy, finish at exam standard
 Q: \(X\) has pdf \(f(x) = kx\) for \(0 \le x \le 4\). Find \(k\), \(P(X < 2)\), \(E(X)\) and the lower and upper quartiles.
-A: \(\int_0^4 kx\,dx = 8k = 1\), so \(k = \tfrac18\). \(P(X < 2) = \tfrac{x^2}{16}\Big|_0^2 = \tfrac14\). \(E(X) = \int_0^4 \tfrac{x^2}{8}\,dx = \tfrac{64}{24} = \tfrac83\). For a quartile \(q\): \(\tfrac{q^2}{16} = 0.25\) gives \(q = 2\); \(\tfrac{q^2}{16} = 0.75\) gives \(q = \sqrt{12} = 3.46\).
+A: \(\int_0^4 kx\,dx = 8k = 1\), so \(k = \tfrac18\). \(P(X < 2) = \tfrac{x^2}{16}\Big|_0^2 = \tfrac14\). \(E(X) = \int_0^4 \tfrac{x^2}{8}\,dx = \tfrac{64}{24}\) \(= \tfrac83\). For a quartile \(q\): \(\tfrac{q^2}{16} = 0.25\) gives \(q = 2\); \(\tfrac{q^2}{16} = 0.75\) gives \(q = \sqrt{12} = 3.46\).
 Q: \(X\) has pdf \(f(x) = k(x + 1)\) for \(0 \le x \le 2\). Find \(k\) and \(E(X)\).
-A: \(\int_0^2 k(x + 1)\,dx = k\left[\tfrac{x^2}{2} + x\right]_0^2 = 4k = 1\), so \(k = \tfrac14\). \(E(X) = \tfrac14\int_0^2 (x^2 + x)\,dx = \tfrac14\left(\tfrac83 + 2\right) = \tfrac76\).
+A: \(\int_0^2 k(x + 1)\,dx\) \(= k\left[\tfrac{x^2}{2} + x\right]_0^2 = 4k\) \(= 1\), so \(k = \tfrac14\). \(E(X) = \tfrac14\int_0^2 (x^2 + x)\,dx\) \(= \tfrac14\left(\tfrac83 + 2\right) = \tfrac76\).
 Q: \(f(x) = \dfrac{3}{16}(4 - x^2)\) for \(0 \le x \le 2\). Show that it is a valid pdf, then find \(P(X > 1)\) and \(E(X)\).
-A: Area: \(\tfrac{3}{16}\left[4x - \tfrac{x^3}{3}\right]_0^2 = \tfrac{3}{16}\left(8 - \tfrac83\right) = 1\). \(P(X > 1) = \tfrac{3}{16}\left[4x - \tfrac{x^3}{3}\right]_1^2 = \tfrac{3}{16}\left(\tfrac{16}{3} - \tfrac{11}{3}\right) = \tfrac{5}{16}\). \(E(X) = \tfrac{3}{16}\left[2x^2 - \tfrac{x^4}{4}\right]_0^2 = \tfrac{3}{16}(8 - 4) = \tfrac34\).
+A: Area: \(\tfrac{3}{16}\left[4x - \tfrac{x^3}{3}\right]_0^2\) \(= \tfrac{3}{16}\left(8 - \tfrac83\right) = 1\). \(P(X > 1) = \tfrac{3}{16}\left[4x - \tfrac{x^3}{3}\right]_1^2\) \(= \tfrac{3}{16}\left(\tfrac{16}{3} - \tfrac{11}{3}\right) = \tfrac{5}{16}\). \(E(X) = \tfrac{3}{16}\left[2x^2 - \tfrac{x^4}{4}\right]_0^2\) \(= \tfrac{3}{16}(8 - 4) = \tfrac34\).
 Q: \(f(x) = \tfrac12\sin x\) for \(0 \le x \le \pi\) (radians). Show that it is a valid pdf, then find \(P\left(X < \tfrac\pi3\right)\) and the median.
-A: \(\int_0^\pi \tfrac12\sin x\,dx = \tfrac12\left[-\cos x\right]_0^\pi = \tfrac12(1 + 1) = 1\). \(P\left(X < \tfrac\pi3\right) = \tfrac12\left[-\cos x\right]_0^{\pi/3} = \tfrac12\left(1 - \tfrac12\right) = \tfrac14\). The pdf is symmetrical about \(x = \tfrac\pi2\), so the median is \(\tfrac\pi2 = 1.57\).
+A: \(\int_0^\pi \tfrac12\sin x\,dx = \tfrac12\left[-\cos x\right]_0^\pi\) \(= \tfrac12(1 + 1) = 1\). \(P\left(X < \tfrac\pi3\right) = \tfrac12\left[-\cos x\right]_0^{\pi/3}\) \(= \tfrac12\left(1 - \tfrac12\right) = \tfrac14\). The pdf is symmetrical about \(x = \tfrac\pi2\), so the median is \(\tfrac\pi2 = 1.57\).
 Q: \(X\) has pdf \(f(x) = \dfrac{24}{x^4}\) for \(x \ge 2\). Show that the area is 1, then find \(E(X)\), \(\mathrm{Var}(X)\), the median and \(P(X > 5)\).
-A: Area: \(\left[-8x^{-3}\right]_2^\infty = 0 + 1 = 1\). \(E(X) = \int_2^\infty 24x^{-3}\,dx = \left[-12x^{-2}\right]_2^\infty = 3\). \(E(X^2) = \int_2^\infty 24x^{-2}\,dx = \left[-24x^{-1}\right]_2^\infty = 12\), so \(\mathrm{Var}(X) = 12 - 9 = 3\). Median: \(1 - 8m^{-3} = 0.5\), so \(m^3 = 16\) and \(m = 2.52\). \(P(X > 5) = 8 \times 5^{-3} = 0.064\).
+A: Area: \(\left[-8x^{-3}\right]_2^\infty = 0 + 1 = 1\). \(E(X) = \int_2^\infty 24x^{-3}\,dx\) \(= \left[-12x^{-2}\right]_2^\infty\) \(= 3\). \(E(X^2) = \int_2^\infty 24x^{-2}\,dx\) \(= \left[-24x^{-1}\right]_2^\infty\) \(= 12\), so \(\mathrm{Var}(X) = 12 - 9 = 3\). Median: \(1 - 8m^{-3} = 0.5\), so \(m^3 = 16\) and \(m = 2.52\). \(P(X > 5) = 8 \times 5^{-3} = 0.064\).
 Q: The pdf of \(X\) is symmetrical about \(x = 6\) on \(2 \le x \le 10\). State \(E(X)\) and the median, and explain why. The variance is known to be 3.2. Find \(E(X^2)\).
-A: Both equal 6, because the area is balanced either side of the line of symmetry. \(E(X^2) = \mathrm{Var}(X) + [E(X)]^2 = 3.2 + 36 = 39.2\).
+A: Both equal 6, because the area is balanced either side of the line of symmetry. \(E(X^2) = \mathrm{Var}(X) + [E(X)]^2\) \(= 3.2 + 36 = 39.2\).
 Q: \(X\) has pdf \(f(x) = \dfrac{k}{\sqrt{x}}\) for \(1 \le x \le 9\). Find \(k\), then find \(P(X < 4)\).
-A: \(\int_1^9 kx^{-1/2}\,dx = k\left[2\sqrt{x}\right]_1^9 = 4k = 1\), so \(k = \tfrac14\). \(P(X < 4) = \tfrac14\left[2\sqrt{x}\right]_1^4 = \tfrac14(4 - 2) = \tfrac12\).
+A: \(\int_1^9 kx^{-1/2}\,dx = k\left[2\sqrt{x}\right]_1^9\) \(= 4k = 1\), so \(k = \tfrac14\). \(P(X < 4) = \tfrac14\left[2\sqrt{x}\right]_1^4\) \(= \tfrac14(4 - 2)\) \(= \tfrac12\).
 Q: Explain why \(f(x) = x - 1\) for \(0 \le x \le 3\) cannot be a pdf, even though \(\int_0^3 (x - 1)\,dx\) can be made equal to 1 by multiplying by a constant.
 A: \(f(x)\) is negative for \(0 \le x < 1\), and a pdf must satisfy \(f(x) \ge 0\) everywhere. No positive constant \(k\) can fix that, because \(k(x - 1)\) is still negative on that part. (If \(k\) were negative, the pdf would be negative on \(1 < x \le 3\).)
 Q: (Exam style) \(X\) has pdf \(f(x) = k\sqrt{x}\) for \(0 \le x \le 4\) and 0 otherwise. (a) Show that \(k = \tfrac{3}{16}\). (b) Find \(E(X)\) and \(\mathrm{Var}(X)\). (c) Find the median. [8 marks]
-A: (a) \(\int_0^4 kx^{1/2}\,dx = k\left[\tfrac23 x^{3/2}\right]_0^4 = \tfrac{16k}{3}\) [M1], so \(k = \tfrac{3}{16}\). [A1] (b) \(E(X) = \tfrac{3}{16}\int_0^4 x^{3/2}\,dx = \tfrac{3}{16}\left[\tfrac25 x^{5/2}\right]_0^4 = \tfrac{3}{16} \times \tfrac{64}{5} = 2.4\). [M1 A1] \(E(X^2) = \tfrac{3}{16}\left[\tfrac27 x^{7/2}\right]_0^4 = \tfrac{3}{16} \times \tfrac{256}{7} = \tfrac{48}{7}\). [M1] \(\mathrm{Var}(X) = \tfrac{48}{7} - 2.4^2 = \tfrac{192}{175} = 1.10\). [A1] (c) \(\tfrac{3}{16} \times \tfrac23 m^{3/2} = \tfrac18 m^{3/2} = 0.5\), so \(m^{3/2} = 4\) and \(m = 4^{2/3} = 2.52\). [M1 A1]
+A: (a) \(\int_0^4 kx^{1/2}\,dx = k\left[\tfrac23 x^{3/2}\right]_0^4\) \(= \tfrac{16k}{3}\) [M1], so \(k = \tfrac{3}{16}\). [A1] (b) \(E(X) = \tfrac{3}{16}\int_0^4 x^{3/2}\,dx\) \(= \tfrac{3}{16}\left[\tfrac25 x^{5/2}\right]_0^4\) \(= \tfrac{3}{16} \times \tfrac{64}{5} = 2.4\). [M1 A1] \(E(X^2) = \tfrac{3}{16}\left[\tfrac27 x^{7/2}\right]_0^4\) \(= \tfrac{3}{16} \times \tfrac{256}{7} = \tfrac{48}{7}\). [M1] \(\mathrm{Var}(X) = \tfrac{48}{7} - 2.4^2\) \(= \tfrac{192}{175}\) \(= 1.10\). [A1] (c) \(\tfrac{3}{16} \times \tfrac23 m^{3/2} = \tfrac18 m^{3/2}\) \(= 0.5\), so \(m^{3/2} = 4\) and \(m = 4^{2/3} = 2.52\). [M1 A1]
 Q: (Exam style) A machine part has length \(X\) cm with pdf \(f(x) = \dfrac{3}{x^4}\) for \(x \ge 1\), as in the worked example. A part is rejected if \(X > 2\). A batch of 50 independent parts is made. Find the expected number of rejects, and the probability that exactly 5 are rejected. [4 marks]
-A: \(P(X > 2) = \tfrac18\) [M1 A1]. The number of rejects \(R \sim B\!\left(50, \tfrac18\right)\), so \(E(R) = 6.25\). \(P(R = 5) = \binom{50}{5}\left(\tfrac18\right)^5\left(\tfrac78\right)^{45} = 0.159\). [M1 A1]
+A: \(P(X > 2) = \tfrac18\) [M1 A1]. The number of rejects \(R \sim B\!\left(50, \tfrac18\right)\), so \(E(R) = 6.25\). \(P(R = 5) = \binom{50}{5}\left(\tfrac18\right)^5\left(\tfrac78\right)^{45}\) \(= 0.159\). [M1 A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [4 marks] ★ The random variable \(X\) has pdf \(f(x) = k(6 - x)\) for \(0 \le x \le 4\) and 0 otherwise. Find \(k\) and \(P(X < 2)\).
+A: \(\displaystyle\int_0^4 k(6 - x)\,dx\) \(= k\left[6x - \frac{x^2}{2}\right]_0^4\) \(= 16k\) [M1] so \(k = \dfrac{1}{16}\). [A1] \(P(X < 2) = \dfrac{1}{16}\left[6x - \dfrac{x^2}{2}\right]_0^2\) [M1] \(= \dfrac{10}{16} = 0.625\). [A1]
+Q: [6 marks] ★ \(f(x) = \dfrac{2x}{9}\) for \(0 \le x \le 3\) and 0 otherwise. (a) Show that \(f\) is a valid pdf. (b) Find \(E(X)\). (c) Find \(\mathrm{Var}(X)\).
+A: (a) \(f(x) \ge 0\) on the interval, and \(\displaystyle\int_0^3 \frac{2x}{9}\,dx = \left[\frac{x^2}{9}\right]_0^3\) [M1] \(= 1\), so \(f\) is a valid pdf. [A1] (b) \(E(X) = \displaystyle\int_0^3 \frac{2x^2}{9}\,dx\) \(= \left[\frac{2x^3}{27}\right]_0^3\) [M1] \(= 2\). [A1] (c) \(E(X^2) = \displaystyle\int_0^3 \frac{2x^3}{9}\,dx\) \(= \left[\frac{x^4}{18}\right]_0^3\) \(= 4.5\), [M1] so \(\mathrm{Var}(X) = 4.5 - 2^2 = 0.5\). [A1]
+Q: [5 marks] ★★ \(X\) has pdf \(f(x) = \dfrac{2}{x^3}\) for \(x \ge 1\) and 0 otherwise. (a) Find \(P(X > 3)\). (b) Find the median of \(X\).
+A: (a) \(P(X > 3) = \displaystyle\int_3^\infty 2x^{-3}\,dx\) \(= \left[-x^{-2}\right]_3^\infty\) [M1] \(= 0 + \dfrac19 = 0.111\), using \(x^{-2} \to 0\) as \(x \to \infty\). [A1] (b) \(\displaystyle\int_1^m 2x^{-3}\,dx = 1 - m^{-2}\) [M1] \(= 0.5\), [A1] so \(m^2 = 2\) and \(m = 1.41\). [A1]
+Q: [5 marks] ★★ \(f(x) = \dfrac{3x^2}{26}\) for \(1 \le x \le 3\) and 0 otherwise. Find the lower quartile, the upper quartile and the interquartile range.
+A: For a quartile \(q\): \(\displaystyle\int_1^q \frac{3x^2}{26}\,dx = \frac{q^3 - 1}{26}\). [M1] Lower quartile: \(\dfrac{q^3 - 1}{26} = 0.25\), so \(q^3 = 7.5\) and \(q = 1.96\). [A1] Upper quartile: \(\dfrac{q^3 - 1}{26} = 0.75\), [M1] so \(q^3 = 20.5\) and \(q = 2.74\). [A1] The interquartile range is \(2.7369 - 1.9574 = 0.779\). [A1]
+Q: [6 marks] ★★ \(X\) has pdf \(f(x) = k(x - 1)(5 - x)\) for \(1 \le x \le 5\) and 0 otherwise. (a) Show that \(k = \dfrac{3}{32}\). (b) Write down \(E(X)\), giving a reason. (c) Find \(P(X > 4)\).
+A: (a) \(f(x) = k(-x^2 + 6x - 5)\), so \(\displaystyle\int_1^5 k(-x^2 + 6x - 5)\,dx\) \(= k\left[-\frac{x^3}{3} + 3x^2 - 5x\right]_1^5\) [M1] \(= k\left(\frac{25}{3} + \frac{7}{3}\right) = \frac{32k}{3} = 1\), so \(k = \dfrac{3}{32}\). [A1] (b) The graph is a parabola that is symmetrical about \(x = 3\), the midpoint of 1 and 5, [B1] so \(E(X) = 3\). [B1] (c) \(P(X > 4)\) \(= \dfrac{3}{32}\left[-\dfrac{x^3}{3} + 3x^2 - 5x\right]_4^5\) [M1] \(= \dfrac{3}{32}\left(\dfrac{25}{3} - \dfrac{20}{3}\right) = \dfrac{5}{32}\) \(= 0.156\). [A1]
+Q: [8 marks] ★★ \(X\) has pdf \(f(x) = \dfrac{k}{x^6}\) for \(x \ge 1\) and 0 otherwise. (a) Show that \(k = 5\). (b) Find \(E(X)\) and \(\mathrm{Var}(X)\). (c) Find the median.
+A: (a) \(\displaystyle\int_1^\infty kx^{-6}\,dx = k\left[-\frac{x^{-5}}{5}\right]_1^\infty\) [M1] \(= \dfrac{k}{5} = 1\), so \(k = 5\). [A1] (b) \(E(X) = \displaystyle\int_1^\infty 5x^{-5}\,dx\) \(= \left[-\frac54 x^{-4}\right]_1^\infty\) \(= \frac54\). [M1 A1] \(E(X^2) = \displaystyle\int_1^\infty 5x^{-4}\,dx\) \(= \left[-\frac53 x^{-3}\right]_1^\infty\) \(= \frac53\), [M1] so \(\mathrm{Var}(X) = \dfrac53 - \dfrac{25}{16} = \dfrac{5}{48}\) \(= 0.104\). [A1] (c) \(\displaystyle\int_1^m 5x^{-6}\,dx = 1 - m^{-5} = 0.5\), so \(m^5 = 2\) and \(m = 1.15\). [M1 A1]
+Q: [11 marks] (#math.s2.linear) ★★★ The random variable \(X\) has pdf \(f(x) = a + bx\) for \(0 \le x \le 2\) and 0 otherwise, where \(a\) and \(b\) are constants. It is given that \(E(X) = 1.2\). (a) Find \(a\) and \(b\). (b) Find \(P(X > 1)\) and \(\mathrm{Var}(X)\). (c) \(X_1\) and \(X_2\) are independent observations of \(X\). Find \(E(X_1 - X_2)\) and \(\mathrm{Var}(X_1 - X_2)\).
+H: You have two unknowns, so you need two equations: one from total area 1 and one from \(E(X) = 1.2\).
+H: Total area: \(\displaystyle\int_0^2 (a + bx)\,dx = 2a + 2b\). For the mean, integrate \(x(a + bx)\) over the same interval.
+H: In (c), variances of independent variables add for a difference, as in [Linear combinations](#math.s2.linear).
+A: (a) \(\displaystyle\int_0^2 (a + bx)\,dx = 2a + 2b\) \(= 1\). [M1 A1] \(E(X) = \displaystyle\int_0^2 (ax + bx^2)\,dx\) \(= 2a + \frac{8b}{3}\) \(= 1.2\). [M1] Subtracting \(2a + 2b = 1\) gives \(\dfrac{2b}{3} = 0.2\), so \(b = 0.3\) and \(a = 0.2\). [A1] (b) \(P(X > 1)\) \(= \displaystyle\int_1^2 (0.2 + 0.3x)\,dx\) \(= \left[0.2x + 0.15x^2\right]_1^2\) [M1] \(= 0.65\). [A1] \(E(X^2)\) \(= \displaystyle\int_0^2 (0.2x^2 + 0.3x^3)\,dx\) \(= \dfrac{0.2 \times 8}{3} + 0.3 \times 4\) \(= 1.7333\), so \(\mathrm{Var}(X) = 1.7333 - 1.2^2\) \(= 0.293\). [M1 A1] (c) \(E(X_1 - X_2) = 1.2 - 1.2 = 0\). [B1] The variables are independent, so \(\mathrm{Var}(X_1 - X_2)\) \(= 0.2933 + 0.2933\) [M1] \(= 0.587\). [A1]
+:::
+
+:::try Stretch for A*
+Q: [6 marks] ★★★ \(X\) has pdf \(f(x) = 2x\) for \(0 \le x \le 1\) and 0 otherwise, and \(Y = X^2\). (a) For \(0 \le y \le 1\), show that \(P(Y \le y) = y\). (b) What does this tell you about the pdf of \(Y\)? (c) Find \(E(Y)\) in two ways and check that they agree.
+H: \(Y \le y\) is the same event as \(X \le \sqrt{y}\), because \(X\) is never negative. Integrate the pdf of \(X\) up to \(\sqrt{y}\).
+H: If \(P(Y \le y) = y\), the area under the pdf of \(Y\) up to \(y\) is \(y\). What height gives that?
+H: One way uses the pdf of \(Y\). The other uses \(E(Y) = E(X^2) = \int x^2 f(x)\,dx\).
+A: (a) \(Y \le y\) means \(X^2 \le y\), that is \(X \le \sqrt{y}\). [M1] \(P(X \le \sqrt{y}) = \displaystyle\int_0^{\sqrt{y}} 2x\,dx\) \(= \left[x^2\right]_0^{\sqrt{y}}\) \(= y\). [A1] (b) The area up to \(y\) grows at rate 1, so the pdf of \(Y\) is the constant \(1\) on \(0 \le y \le 1\): \(Y\) is uniformly spread. [B1] (c) Using the pdf of \(Y\): \(E(Y) = \displaystyle\int_0^1 y \times 1\,dy = \frac12\). [M1] Using \(X\): \(E(Y) = E(X^2)\) \(= \displaystyle\int_0^1 x^2 \times 2x\,dx\) \(= \left[\frac{x^4}{2}\right]_0^1 = \frac12\). [M1] The two answers agree. [A1]
+Q: [5 marks] ★★★ (a) Show that \(f(x) = \dfrac{1}{x^2}\) for \(x \ge 1\) is a valid pdf. (b) Show that \(E(X)\) cannot be found. (c) Find the median, and explain how the median can exist when the mean does not.
+H: For (b), write \(E(X) = \displaystyle\int_1^b x \times \frac{1}{x^2}\,dx\) and see what happens as \(b\) gets large.
+H: The median only needs probabilities (areas), not the average of very large values.
+A: (a) \(f(x) \ge 0\) and \(\displaystyle\int_1^\infty x^{-2}\,dx = \left[-x^{-1}\right]_1^\infty\) \(= 0 + 1 = 1\). [M1 A1] (b) \(\displaystyle\int_1^b \frac{1}{x}\,dx = \ln b\), which grows without limit as \(b \to \infty\), [M1] so the integral for \(E(X)\) does not settle on a number. [A1] (c) \(\displaystyle\int_1^m x^{-2}\,dx = 1 - \frac{1}{m} = 0.5\), so \(m = 2\). The median is found from areas, which are finite, whereas the mean depends on very large values and these occur often enough, with a tail this heavy, to prevent the average settling. [B1]
 :::
 
 :::quiz Check your understanding
@@ -246,13 +301,23 @@ A: \(P(X > 2) = \tfrac18\) [M1 A1]. The number of rejects \(R \sim B\!\left(50, 
 - 13
 - 91
 + 1
-> \(\mathrm{Var}(X) = E(X^2) - [E(X)]^2 = 10 - 9 = 1\). Taking \(10 - 3 = 7\) forgets to square the mean.
+> \(\mathrm{Var}(X) = E(X^2) - [E(X)]^2\) \(= 10 - 9\) \(= 1\). Taking \(10 - 3 = 7\) forgets to square the mean.
 ? The median \(m\) of a continuous variable on \(a \le x \le b\) is found by solving:
 - \(m = \dfrac{a + b}{2}\)
 - \(f(m) = 0.5\)
 + \(\displaystyle\int_a^m f(x)\,dx = 0.5\)
 - \(\displaystyle\int_a^b x f(x)\,dx = m\)
 > The median has half the area below it. The midpoint only works for a symmetrical pdf, \(f(m) = 0.5\) confuses height with area, and the last option is the mean.
+:::
+
+:::checklist What you can now do
+- [ ] I can check that a function is a valid pdf: non-negative, with total area 1.
+- [ ] I can find an unknown constant \(k\) (or two constants) in a pdf by integrating.
+- [ ] I can find \(P(a < X < b)\) by integrating the pdf, and explain why \(P(X = a) = 0\).
+- [ ] I can find \(E(X)\), \(E(X^2)\) and \(\mathrm{Var}(X)\) by integration.
+- [ ] I can find the median, quartiles and other percentiles by integrating from the lower limit of the domain.
+- [ ] I can work with a pdf on an infinite interval, such as \(\dfrac{3}{x^4}\) for \(x \ge 1\), and show the limit step.
+- [ ] I can use symmetry and the shape of the pdf to say where the mean and the median lie.
 :::
 
 :::recap

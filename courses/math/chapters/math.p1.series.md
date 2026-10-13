@@ -11,6 +11,15 @@ Series let you add up long lists of numbers with a formula instead of a calculat
 
 **Before you start**, you need expanding brackets and indices ([Algebra from scratch](#math.f.algebra), [Indices, surds and standard form](#math.f.powers)), and simultaneous and quadratic equations ([Quadratics](#math.p1.quadratics)). A recurring decimal in [Numbers, fractions and percentages](#math.f.numbers) is a geometric series in disguise.
 
+:::try Warm-up
+Q: Expand \((2 + 3x)^2\). (from [Algebra from scratch](#math.f.algebra))
+A: \(4 + 12x + 9x^2\).
+Q: Evaluate \(2^{-3} \times 16^{1/2}\). (from [Indices, surds and standard form](#math.f.powers))
+A: \(\dfrac18 \times 4 = \dfrac12\).
+Q: Solve \(n^2 + n - 56 = 0\) for positive \(n\). (from [Quadratics](#math.p1.quadratics))
+A: \((n + 8)(n - 7) = 0\), so \(n = 7\) (reject \(-8\)).
+:::
+
 ## Factorials and binomial coefficients
 
 :::def Factorial
@@ -37,6 +46,20 @@ On a calculator use the \(\mathrm{nCr}\) key. By hand, cancel: \(\dbinom{7}{3} =
 | 4 | 1 4 6 4 1 |
 | 5 | 1 5 10 10 5 1 |
 | 6 | 1 6 15 20 15 6 1 |
+
+:::proof Why each number in Pascal's triangle is the sum of the two above it
+The claim is \(\dbinom{n}{r} + \dbinom{n}{r + 1} = \dbinom{n + 1}{r + 1}\). Write both terms on the left with factorials:
+\[\frac{n!}{r!\,(n - r)!} + \frac{n!}{(r + 1)!\,(n - r - 1)!}\]
+Give them a common denominator \((r + 1)!\,(n - r)!\). The first fraction needs a factor \((r + 1)\) on top and the second needs \((n - r)\):
+\[\frac{n!\,(r + 1) + n!\,(n - r)}{(r + 1)!\,(n - r)!} = \frac{n!\,(n + 1)}{(r + 1)!\,(n - r)!}\]
+Since \(n!\,(n + 1) = (n + 1)!\), and \((n + 1) - (r + 1) = n - r\), this is
+\[\frac{(n + 1)!}{(r + 1)!\,\big((n + 1) - (r + 1)\big)!} = \binom{n + 1}{r + 1}\]
+So two neighbouring numbers in row \(n\) add up to the number between them in row \(n + 1\).
+
+:::html
+<div class="widget" data-w="proof" data-proof="pascal"></div>
+:::
+:::
 
 ## The binomial theorem
 
@@ -104,6 +127,18 @@ The \(n\)th term is \(u_n = a + (n-1)d\). To find the sum of the first \(n\) ter
 \(a\) is the first term, \(d\) the common difference, \(n\) the number of terms and \(l\) the last term. Both are on MF19. Three numbers \(a, b, c\) are in AP if and only if \(b - a = c - b\), that is \(2b = a + c\).
 :::
 
+:::proof Where the sum of an arithmetic series comes from
+Write the sum of the first \(n\) terms, then write it again in reverse order, and add the two lines term by term.
+\[\begin{aligned} S_n &= a + (a + d) + \dots + (l - d) + l \\ S_n &= l + (l - d) + \dots + (a + d) + a \end{aligned}\]
+Every pair in a column adds to the same value, \(a + l\): for example \((a + d) + (l - d) = a + l\). There are \(n\) columns, so
+\[2S_n = n(a + l) \qquad\text{and}\qquad S_n = \frac{n}{2}(a + l)\]
+The last term is \(l = a + (n - 1)d\), so \(S_n = \dfrac{n}{2}\big(2a + (n - 1)d\big)\).
+
+:::html
+<div class="widget" data-w="proof" data-proof="apsum"></div>
+:::
+:::
+
 :::eg Find the 20th term and the sum of the first 20 terms of the AP \(7, 11, 15, \ldots\)
 Here \(a = 7\) and \(d = 4\).
 \[u_{20} = 7 + 19 \times 4 = 83\]
@@ -137,6 +172,19 @@ The \(n\)th term is \(u_n = ar^{n-1}\). For the sum, subtract \(rS_n\) from \(S_
 Use the first form when \(|r| < 1\) and the second when \(r > 1\), which avoids negatives. Three numbers \(a, b, c\) are in GP if \(\dfrac ba = \dfrac cb\), that is \(b^2 = ac\). All are on MF19.
 :::
 
+:::proof Where the sum of a geometric series comes from
+Write \(S_n\), multiply it by \(r\), and subtract:
+\[\begin{aligned} S_n &= a + ar + ar^2 + \dots + ar^{n-1} \\ rS_n &= \phantom{a + {}} ar + ar^2 + \dots + ar^{n-1} + ar^n \end{aligned}\]
+Almost every term appears in both lines and cancels. Only the first term of the top line and the last term of the bottom line are left:
+\[S_n - rS_n = a - ar^n\]
+Factorise both sides: \(S_n(1 - r) = a(1 - r^n)\). Dividing by \(1 - r\), which is allowed when \(r \neq 1\), gives
+\[S_n = \frac{a(1 - r^n)}{1 - r}\]
+
+:::html
+<div class="widget" data-w="proof" data-proof="gpsum"></div>
+:::
+:::
+
 :::eg Find the 8th term and the sum of the first 8 terms of the GP \(6, 12, 24, \ldots\)
 \(a = 6\) and \(r = 2\). \(u_8 = 6 \times 2^7 = 768\).
 \[S_8 = \frac{6(2^8 - 1)}{2 - 1} = 6 \times 255 = 1530\]
@@ -154,6 +202,12 @@ If \(|r| < 1\), the terms \(ar^n\) get smaller and smaller, and the sum of the f
 A geometric series converges if and only if \(-1 < r < 1\), and then
 \[S_\infty = \frac{a}{1 - r}\]
 If \(|r| \ge 1\), the series does not converge and \(S_\infty\) does not exist. The formula is on MF19, but you must state or check \(|r| < 1\).
+:::
+
+:::proof Why the sum to infinity is a/(1 − r)
+Start from \(S_n = \dfrac{a(1 - r^n)}{1 - r}\). Suppose \(-1 < r < 1\). Then \(r^n\) is a number between \(-1\) and 1 raised to a bigger and bigger power, so it shrinks towards 0. For \(r = 0.5\): \(0.5, 0.25, 0.125, 0.0625, \dots\).
+As \(n\) grows, \(1 - r^n\) gets closer and closer to \(1\), so \(S_n\) gets closer and closer to \(\dfrac{a}{1 - r}\). That limit is \(S_\infty\).
+If \(|r| \geq 1\), \(r^n\) does not shrink to 0 (it stays at size 1 or grows), so \(S_n\) has no limit.
 :::
 
 :::eg Find the sum to infinity of \(40, -20, 10, -5, \ldots\) For which values of \(x\) does the series \(3 + 3\left(\dfrac x4\right) + 3\left(\dfrac x4\right)^2 + \cdots\) converge?
@@ -213,6 +267,20 @@ Check: \(48 \times \tfrac14 = 12\) and \(16 \times \tfrac34 = 12\). ✓
 Edexcel IAL, AQA, OCR and Edexcel (UK) all include the binomial theorem for positive integers, APs, GPs and the sum to infinity in their first Pure year. Several UK boards also expect sigma notation \(\sum_{r=1}^{n}\) and sequences defined by a recurrence relation \(u_{n+1} = f(u_n)\). Cambridge 9709 uses the formulae in the form above, and the binomial series for fractional or negative \(n\) is in [Partial fractions and the binomial series](#math.p3.partial).
 :::
 
+:::eg Spot the error: find the 15th term and the sum of the first 15 terms of the AP \(7, 10, 13, \ldots\)
+A student wrote this answer.
+
+Line 1: \(a = 7\), \(d = 3\)
+Line 2: \(u_{15} = a + nd = 7 + 15 \times 3 = 52\)
+Line 3: \(S_{15} = \tfrac{15}{2}(a + l) = \tfrac{15}{2}(7 + 52) = 442.5\)
+
+Line 1 is correct [B1]. **Line 2 scores [M0 A0]:** the formula is \(u_n = a + (n - 1)d\), not \(a + nd\), so the method mark is lost as well as the accuracy mark. The student has counted one step too many. Line 3 uses the right sum formula with the student's own last term, so the follow-through method mark is still earned [M1], but the answer is wrong [A0].
+
+Correct working: \(u_{15} = 7 + 14 \times 3 = 49\) [M1 A1], and \(S_{15} = \tfrac{15}{2}(7 + 49) = 420\). [M1 A1]
+
+**Check:** the first term is \(u_1 = 7\). Putting \(n = 1\) into the student's formula gives \(7 + 3 = 10\), which is the second term. A check on \(n = 1\) exposes the slip in seconds.
+:::
+
 :::try Start easy, finish at exam standard
 Q: Evaluate (a) \(\dbinom83\), (b) \(\dfrac{7!}{5!\,2!}\), (c) \(\dbinom{10}{10}\).
 A: (a) \(\dfrac{8 \times 7 \times 6}{3 \times 2 \times 1} = 56\). (b) \(\dfrac{7 \times 6}{2} = 21\). (c) \(1\).
@@ -236,6 +304,37 @@ Q: (Exam style) In the expansion of \((2 + ax)^6\), the coefficient of \(x\) equ
 A: Coefficient of \(x\): \(\dbinom61 2^5 a = 192a\). Coefficient of \(x^2\): \(\dbinom62 2^4 a^2 = 240a^2\). [M1 A1] Equal: \(192a = 240a^2\), so \(a = \dfrac{192}{240} = 0.8\). [M1 A1] The \(x^3\) coefficient is \(\dbinom63 2^3 a^3 = 160 \times 0.512 = 81.92\). This is exact, so give it in full. [M1 A1]
 Q: (Exam style) The first term of an AP is \(2\) and the common difference is \(d\ (d \neq 0)\). The 2nd, 5th and 14th terms of the AP are in GP. Find \(d\), the common ratio of the GP and the sum of the first 20 terms of the AP.
 A: The terms are \(2 + d\), \(2 + 4d\), \(2 + 13d\). [B1] \((2 + 4d)^2 = (2 + d)(2 + 13d)\) gives \(4 + 16d + 16d^2 = 4 + 28d + 13d^2\). [M1 A1] So \(3d^2 = 12d\) and \(d = 4\). [A1] The terms are \(6, 18, 54\), so \(r = 3\). [A1] \(S_{20} = 10(4 + 19 \times 4) = 800\). [A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ Find the first four terms in the expansion of \((1 + 2x)^5\) in ascending powers of \(x\).
+A: \((1 + 2x)^5 = 1 + \binom51(2x) + \binom52(2x)^2 + \binom53(2x)^3 + \cdots\) [M1] \(= 1 + 10x + 40x^2 + 80x^3 + \cdots\) [A1 A1]
+Q: [3 marks] ★ The first three terms of an AP are 5, 9, 13. Find the 30th term and the sum of the first 30 terms.
+A: \(a = 5\), \(d = 4\), so \(u_{30} = 5 + 29 \times 4 = 121\). [B1] \(S_{30} = \tfrac{30}{2}(5 + 121)\) [M1] \(= 1890\). [A1]
+Q: [4 marks] ★★ A geometric progression has third term 12 and sixth term 96. Find the first term, the common ratio and the sum of the first 8 terms.
+A: \(ar^2 = 12\) and \(ar^5 = 96\), so \(r^3 = 8\) [M1] and \(r = 2\). [A1] \(a = \dfrac{12}{4} = 3\). [A1] \(S_8 = \dfrac{3(2^8 - 1)}{2 - 1} = 765\). [A1]
+Q: [5 marks] ★★ Find the coefficient of \(x^2\) in the expansion of \((2 + x)(1 - 3x)^4\).
+A: \((1 - 3x)^4 = 1 + 4(-3x) + 6(-3x)^2 + \cdots\) [M1] \(= 1 - 12x + 54x^2 - \cdots\) [A1 A1] The \(x^2\) term of the product comes from \(2 \times 54x^2\) and \(x \times (-12x)\). [M1] Coefficient \(= 108 - 12 = 96\). [A1]
+Q: [5 marks] ★★ The first term of an AP is 3 and the common difference is 4. Find the least value of \(n\) for which the sum of the first \(n\) terms exceeds 500.
+A: \(S_n = \tfrac{n}{2}\big(6 + 4(n - 1)\big) = n(2n + 1)\). [M1 A1] \(S_{15} = 15 \times 31 = 465 < 500\) [M1] and \(S_{16} = 16 \times 33 = 528 > 500\). [A1] So the least value is \(n = 16\). [A1]
+Q: [4 marks] ★★ A geometric series has first term 10 and sum to infinity 25. Find the common ratio and the sum of the first three terms.
+A: \(\dfrac{10}{1 - r} = 25\), so \(1 - r = 0.4\). [M1] \(r = 0.6\). [A1] \(S_3 = \dfrac{10(1 - 0.6^3)}{1 - 0.6}\) [M1] \(= 19.6\). [A1]
+Q: [10 marks] (#math.p1.quadratics) ★★★ The 1st, 2nd and 5th terms of an arithmetic progression are the first three terms of a geometric progression. The AP has first term 3 and common difference \(d\), where \(d \neq 0\). (a) Show that \(d = 6\). (b) Find the sum of the first 10 terms of the AP. (c) Find the sum of the first 10 terms of the GP. (d) Find the least number of terms of the GP for which the sum exceeds one million.
+H: The terms of the AP are \(3, 3 + d, 3 + 2d, \ldots\) The 5th term is \(3 + 4d\). For a GP, the middle term squared equals the product of the other two.
+H: You get a quadratic in \(d\) with a factor \(d\). The condition \(d \neq 0\) removes one root.
+H: The GP is \(3, 9, 27, \ldots\) For (d), try values of \(n\) in \(S_n\) rather than using logarithms.
+A: (a) \((3 + d)^2 = 3(3 + 4d)\). [M1] \(9 + 6d + d^2 = 9 + 12d\), so \(d^2 - 6d = 0\). [A1] \(d(d - 6) = 0\), and \(d \neq 0\), so \(d = 6\). [A1] (b) \(S_{10} = \tfrac{10}{2}(2 \times 3 + 9 \times 6) = 300\). [M1 A1] (c) The GP is \(3, 9, 27, \ldots\) with \(r = 3\), so \(S_{10} = \dfrac{3(3^{10} - 1)}{3 - 1} = 88\,572\). [M1 A1] (d) \(S_n = \dfrac{3(3^n - 1)}{2}\). \(S_{12} = 797\,160 < 10^6\). [M1 A1] \(S_{13} = 2\,391\,483 > 10^6\), so the least number of terms is 13. [A1]
+:::
+
+:::try Stretch for A*
+Q: [5 marks] ★★★ A geometric series has first term \(a\) and common ratio \(r\), where \(|r| < 1\). The sum to infinity is six times the second term. Find the two possible values of \(r\), in exact form.
+H: The second term is \(ar\). Write the condition as an equation containing \(a\) and \(r\), then divide by \(a\).
+H: You get a quadratic in \(r\). Both roots must satisfy \(|r| < 1\); check.
+A: \(\dfrac{a}{1 - r} = 6ar\). [M1] Dividing by \(a\) (\(a \neq 0\)): \(1 = 6r(1 - r)\), so \(6r^2 - 6r + 1 = 0\). [A1] \(r = \dfrac{6 \pm \sqrt{36 - 24}}{12} = \dfrac{6 \pm 2\sqrt3}{12} = \dfrac{3 \pm \sqrt3}{6}\). [M1 A1] The values are 0.789 and 0.211, both between \(-1\) and 1, so both are valid. [A1]
+Q: [4 marks] ★★★ In the expansion of \((1 + ax)^6\), where \(a \neq 0\), the coefficient of \(x^3\) is 4 times the coefficient of \(x^2\). Find \(a\), and the coefficient of \(x^4\).
+H: The coefficient of \(x^2\) is \(\binom62 a^2\). Write the coefficient of \(x^3\) similarly and form the equation.
+H: Divide both sides by \(20a^2\); you may, because \(a \neq 0\).
+A: \(\dbinom63 a^3 = 4\dbinom62 a^2\), so \(20a^3 = 60a^2\). [M1] Dividing by \(20a^2\) (\(a \neq 0\)): \(a = 3\). [A1] The coefficient of \(x^4\) is \(\dbinom64 \times 3^4 = 15 \times 81\) [M1] \(= 1215\). [A1]
 :::
 
 :::quiz
@@ -269,6 +368,16 @@ A: The terms are \(2 + d\), \(2 + 4d\), \(2 + 13d\). [B1] \((2 + 4d)^2 = (2 + d)
 + \(6\)
 - \(36\)
 > In a GP, \(k^2 = 2 \times 18 = 36\), so \(k = 6\) (the common ratio is \(3\)). The value \(10\) is the middle of an AP, found by averaging. The value \(36\) is \(k^2\) before taking the square root, and \(16\) is \(18 - 2\).
+:::
+
+:::checklist What you can now do
+- [ ] I can use factorials and \(\binom{n}{r}\), and read coefficients from Pascal's triangle.
+- [ ] I can expand \((a + b)^n\) for positive integer \(n\), and find a particular term or coefficient.
+- [ ] I can find the \(n\)th term and the sum of the first \(n\) terms of an arithmetic progression.
+- [ ] I can find the \(n\)th term and the sum of the first \(n\) terms of a geometric progression.
+- [ ] I can say when a geometric series converges and find its sum to infinity.
+- [ ] I can use "in AP" (\(2b = a + c\)) and "in GP" (\(b^2 = ac\)).
+- [ ] I can solve problems that involve more than one progression, or a progression in a real context.
 :::
 
 :::recap

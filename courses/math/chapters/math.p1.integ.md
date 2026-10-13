@@ -11,6 +11,15 @@ Differentiation breaks a quantity into its rate of change. Integration goes the 
 
 **Before you start**, you need fractional and negative indices from [Indices, surds and standard form](#math.f.powers) and the rules of [Differentiation](#math.p1.diff). Integration is differentiation run backwards, so every answer can be checked by differentiating it.
 
+:::try Warm-up
+Q: Differentiate \(y = x^3 - 6x^2\). (from [Differentiation](#math.p1.diff))
+A: \(\dfrac{dy}{dx} = 3x^2 - 12x\).
+Q: Write \(\dfrac{6}{\sqrt{x}}\) as a power of \(x\). (from [Indices, surds and standard form](#math.f.powers))
+A: \(6x^{-1/2}\).
+Q: Solve \(x^2 - 5x + 6 = 0\). (from [Quadratics](#math.p1.quadratics))
+A: \((x - 2)(x - 3) = 0\), so \(x = 2\) or \(x = 3\).
+:::
+
 ## Reversing differentiation
 
 If \(\dfrac{dy}{dx} = 3x^2\), then \(y = x^3\) is one answer. But \(x^3 + 5\) and \(x^3 - 2\) also differentiate to \(3x^2\), because the derivative of a constant is zero. So a whole family of curves has the same gradient function, and they differ only by a constant.
@@ -107,6 +116,30 @@ If \(y = f(x)\) is above the \(x\)-axis for \(a \le x \le b\), the area between 
 --f "x**2+1" --label "y = x² + 1" --x -0.5 4 --y -1 11 --shade "0,1,3" --legend tl
 :::
 
+To see why an area is a limit of thin strips, use the strips below: more strips give a better estimate, and the exact area is the value of the integral.
+
+:::html
+<div class="widget" data-w="area" data-f="x^2 + 1" data-x="1,3" data-n="4" data-mode="riemann"></div>
+:::
+
+:::proof Why integration gives area, and why it reverses differentiation
+Let \(A(x)\) be the area under the curve \(y = f(x)\) from a fixed starting point \(a\) up to \(x\). As \(x\) increases, \(A(x)\) grows.
+
+Move from \(x\) to \(x + h\). The area added is a thin strip of width \(h\) whose height is close to \(f(x)\), so
+\[A(x + h) - A(x) \approx f(x) \times h\]
+Divide by \(h\):
+\[\frac{A(x + h) - A(x)}{h} \approx f(x)\]
+As \(h \to 0\) the strip gets thinner and the approximation gets exact. The left side becomes the derivative of \(A\), so
+\[A'(x) = f(x)\]
+The area function is an integral of \(f\): \(A(x) = F(x) + c\) for any \(F\) with \(F' = f\). At the start \(A(a) = 0\), which fixes \(c = -F(a)\). The area up to \(b\) is
+\[A(b) = F(b) - F(a)\]
+That is the rule for a definite integral.
+
+:::html
+<div class="widget" data-w="proof" data-proof="ftc"></div>
+:::
+:::
+
 :::eg Find the area bounded by \(y = x^2 + 1\), the \(x\)-axis and the lines \(x = 1\) and \(x = 3\).
 \[\int_1^3 (x^2 + 1)\,dx = \Big[\tfrac{x^3}{3} + x\Big]_1^3 = (9 + 3) - \left(\tfrac13 + 1\right) = \tfrac{32}{3}\]
 The area is \(\tfrac{32}{3}\) square units.
@@ -137,6 +170,12 @@ To find the area between a curve and a line, or between two curves, find where t
 1. Set the equations equal and solve for the \(x\)-values of the intersections.
 2. Sketch, and decide which graph is above in between.
 3. Area \(= \displaystyle\int_a^b (y_{\text{top}} - y_{\text{bottom}})\,dx\).
+:::
+
+The picture below shades the region enclosed by the line \(y = 2x + 3\) and the curve \(y = x^2\), and works out its area from the two functions. The line is the upper curve between the crossing points, so the area is the integral of "top minus bottom".
+
+:::html
+<div class="widget" data-w="graph" data-fns="2*x + 3; x^2" data-x="-2,4" data-y="-1,12" data-shade-between="2*x + 3; x^2"></div>
 :::
 
 :::eg Find the area enclosed by the line \(y = 2x + 3\) and the curve \(y = x^2\).
@@ -184,11 +223,31 @@ About the \(y\)-axis (from \(y = c\) to \(y = d\)): \(\displaystyle V = \pi\int_
 Square the **function** before integrating (\(y^2\) is not \(2y\)); the factor \(\pi\) stays outside. These are not on MF19.
 :::
 
+:::proof Why the volume of revolution is π∫y² dx
+Cut the solid into thin slices, each of thickness \(\delta x\), by planes at right angles to the \(x\)-axis. Each slice is almost a cylinder. At position \(x\) its radius is \(y\), the distance from the axis to the curve.
+
+The volume of a cylinder is \(\pi r^2 h\), so the volume of the slice is about \(\pi y^2\,\delta x\). Adding all the slices from \(x = a\) to \(x = b\):
+\[V \approx \sum \pi y^2\,\delta x\]
+As the slices get thinner the approximation gets better, and the sum becomes the integral
+\[V = \pi\int_a^b y^2\,dx\]
+The discs below show the same thing. Increase the number of discs and watch the stack's volume close in on the exact value.
+
+:::html
+<div class="widget" data-w="proof" data-proof="discs"></div>
+:::
+:::
+
 :::eg The region under \(y = x^2\) for \(0 \le x \le 2\) is rotated about the \(x\)-axis. Find the volume. The region bounded by \(y = x^2\), the \(y\)-axis and \(y = 4\) is rotated about the \(y\)-axis. Find the volume.
 About the \(x\)-axis: \(V = \pi\displaystyle\int_0^2 x^4\,dx = \pi\Big[\tfrac{x^5}{5}\Big]_0^2 = \tfrac{32\pi}{5} = 20.1\) (3 s.f.).
 
 About the \(y\)-axis: \(x^2 = y\), so \(V = \pi\displaystyle\int_0^4 y\,dy = \pi\Big[\tfrac{y^2}{2}\Big]_0^4 = 8\pi = 25.1\) (3 s.f.).
 Check with a cone: rotating \(y = 2x\) for \(0 \le x \le 3\) gives \(\pi\int_0^3 4x^2\,dx = 36\pi\), the volume of a cone with \(r = 6\), \(h = 3\), since \(\tfrac13\pi(36)(3) = 36\pi\). ✓
+:::
+
+Here is the solid from the first part, built from discs. Increase the number of discs and compare the stack's volume with the exact value \(\dfrac{32\pi}{5}\).
+
+:::html
+<div class="widget" data-w="area" data-f="x^2" data-x="0,2" data-n="6" data-mode="volume"></div>
 :::
 
 If the region is **not bounded by the axis** you rotate about, the solid has a hole. Use the outer curve squared minus the inner curve squared (the washer method).
@@ -236,6 +295,20 @@ At \(P\): \(10 = 2(8) + 1 + c\), so \(c = -7\). [M1] The curve is \(y = 2x^{3/2}
 Edexcel IAL covers integration of powers in P1 and definite integrals and areas in P2; check its specification for volumes of revolution and improper integrals. UK A Levels (AQA, Edexcel, OCR) include integration of powers, definite integrals and areas in Pure Year 1. Volumes of revolution and improper integrals are in UK Further Maths, so a student on a UK Maths A Level can skip those two sections.
 :::
 
+:::eg Spot the error: the region under \(y = x + 1\) for \(0 \le x \le 2\) is rotated through \(360^\circ\) about the \(x\)-axis. Find the volume.
+A student wrote this answer.
+
+Line 1: \(V = \pi\displaystyle\int_0^2 y^2\,dx = \pi\int_0^2 (x^2 + 1)\,dx\)
+Line 2: \(= \pi\Big[\tfrac{x^3}{3} + x\Big]_0^2\)
+Line 3: \(= \pi\left(\tfrac83 + 2\right) = \tfrac{14\pi}{3} = 14.7\)
+
+The formula \(V = \pi\int y^2\,dx\) and the limits are correct [M1]. **Line 1 loses the next marks [A0 A0]:** \((x + 1)^2\) is not \(x^2 + 1\). Squaring a bracket means multiplying it by itself: \((x + 1)^2 = x^2 + 2x + 1\). The middle term has been lost.
+
+Correct working: \(V = \pi\displaystyle\int_0^2 (x + 1)^2\,dx = \pi\Big[\tfrac{(x + 1)^3}{3}\Big]_0^2\) [A1] \(= \pi\left(\tfrac{27}{3} - \tfrac13\right) = \tfrac{26\pi}{3} = 27.2\). [A1]
+
+**Check:** rotating \(y = x + 1\) gives a cone with a flat top removed (a frustum), with radii 1 and 3 and height 2. Its volume is \(\tfrac13\pi \times 2 \times (1 + 3 + 9) = \tfrac{26\pi}{3}\), which agrees.
+:::
+
 :::try Start easy, finish at exam standard
 Q: Find (a) \(\displaystyle\int (4x^3 - 6x + 1)\,dx\), (b) \(\displaystyle\int \left(\frac{2}{x^3} + \sqrt{x}\right)dx\).
 A: (a) \(x^4 - 3x^2 + x + c\). (b) \(\displaystyle\int (2x^{-3} + x^{1/2})\,dx = -x^{-2} + \tfrac23 x^{3/2} + c = -\dfrac{1}{x^2} + \tfrac23 x^{3/2} + c\).
@@ -257,6 +330,39 @@ Q: The region under \(y = \sqrt{x}\) for \(0 \le x \le 4\) is rotated about the 
 A: \(V = \pi\displaystyle\int_0^4 x\,dx = \pi\Big[\tfrac{x^2}{2}\Big]_0^4 = 8\pi\). For the second the curves meet at \(0\) and \(1\) with \(y = x\) above: \(V = \pi\displaystyle\int_0^1 (x^2 - x^4)\,dx = \pi\left(\tfrac13 - \tfrac15\right) = \tfrac{2\pi}{15}\).
 Q: (Exam style) The curve \(y = \dfrac{12}{x^2}\) is shown for \(x > 0\). The region \(R\) is bounded by the curve, the \(x\)-axis and the lines \(x = 1\) and \(x = 3\). (a) Find the area of \(R\). (b) Find the volume when \(R\) is rotated about the \(x\)-axis, giving the exact value. (c) The region under the curve for \(x \ge 1\) is infinite in length: find its area.
 A: (a) \(\displaystyle\int_1^3 12x^{-2}\,dx = \Big[-12x^{-1}\Big]_1^3 = -4 + 12 = 8\). [M1 A1] (b) \(V = \pi\displaystyle\int_1^3 144x^{-4}\,dx = \pi\Big[-48x^{-3}\Big]_1^3 = \pi\left(-\tfrac{48}{27} + 48\right) = \tfrac{416\pi}{9}\). [M1 A1 A1] (c) \(\displaystyle\int_1^\infty 12x^{-2}\,dx = \Big[-12x^{-1}\Big]_1^\infty = 0 + 12 = 12\), using the limit as \(t \to \infty\). [M1 A1]
+:::
+
+:::try Exam practice ★ to ★★★
+Q: [3 marks] ★ Find \(\displaystyle\int \left(4x^3 - \frac{3}{x^2} + 2\sqrt{x}\right)dx\).
+A: \(= x^4 - 3\left(\dfrac{x^{-1}}{-1}\right) + 2\left(\dfrac{x^{3/2}}{3/2}\right) + c\) [M1] \(= x^4 + \dfrac{3}{x} + \dfrac43 x^{3/2} + c\). [A1 A1 for the last two terms]
+Q: [3 marks] ★ Evaluate \(\displaystyle\int_1^4 (3\sqrt{x} - 2)\,dx\).
+A: \(\Big[2x^{3/2} - 2x\Big]_1^4\) [M1 A1] \(= (16 - 8) - (2 - 2) = 8\). [A1]
+Q: [5 marks] ★★ A curve has gradient \(\dfrac{dy}{dx} = \dfrac{8}{(2x + 1)^2}\) and passes through \((1, 3)\). Find the equation of the curve.
+A: \(\dfrac{dy}{dx} = 8(2x + 1)^{-2}\), so \(y = 8 \times \dfrac{(2x + 1)^{-1}}{-1 \times 2} + c\) [M1 A1] \(= -\dfrac{4}{2x + 1} + c\). Substituting \((1, 3)\): \(3 = -\dfrac43 + c\) [M1] so \(c = \dfrac{13}{3}\). [A1] \(y = \dfrac{13}{3} - \dfrac{4}{2x + 1}\). [A1]
+Q: [5 marks] ★★ Find the area of the region between the curve \(y = x^2 - 6x + 8\) and the \(x\)-axis, from \(x = 2\) to \(x = 4\).
+A: The curve crosses the axis at \(x = 2\) and \(x = 4\) (\((x - 2)(x - 4) = 0\)), and is below it between them. [B1] \(\displaystyle\int_2^4 (x^2 - 6x + 8)\,dx = \Big[\tfrac{x^3}{3} - 3x^2 + 8x\Big]_2^4\) [M1 A1] \(= \left(\tfrac{64}{3} - 48 + 32\right) - \left(\tfrac83 - 12 + 16\right) = -\tfrac43\). [M1] The area is \(\tfrac43\), because an area is positive. [A1]
+Q: [6 marks] ★★ The line \(y = 3x + 4\) meets the curve \(y = x^2\) at two points. Find the area of the region enclosed between the line and the curve.
+A: \(x^2 = 3x + 4\), so \((x - 4)(x + 1) = 0\), and \(x = -1\) or \(x = 4\). [M1 A1] The line is above the curve between these points, so the area is \(\displaystyle\int_{-1}^{4} (3x + 4 - x^2)\,dx\). [M1] \(= \Big[\tfrac{3x^2}{2} + 4x - \tfrac{x^3}{3}\Big]_{-1}^{4}\) [A1] \(= \left(24 + 16 - \tfrac{64}{3}\right) - \left(\tfrac32 - 4 + \tfrac13\right)\) [M1] \(= \dfrac{125}{6}\). [A1]
+Q: [4 marks] ★★ Find the exact value of \(\displaystyle\int_4^\infty 6x^{-3/2}\,dx\).
+A: \(\displaystyle\int 6x^{-3/2}\,dx = -12x^{-1/2}\). [M1 A1] As \(x \to \infty\), \(-12x^{-1/2} \to 0\). [B1] The value is \(0 - \left(-\dfrac{12}{2}\right) = 6\). [A1]
+Q: [6 marks] ★★ (a) The region under \(y = 2\sqrt{x}\) for \(0 \le x \le 4\) is rotated through \(360^\circ\) about the \(x\)-axis. Find the volume. (b) The region bounded by \(y = x^2\), the \(y\)-axis and the line \(y = 9\) is rotated through \(360^\circ\) about the \(y\)-axis. Find the volume. Give both answers to 3 significant figures.
+A: (a) \(V = \pi\displaystyle\int_0^4 4x\,dx = \pi\Big[2x^2\Big]_0^4\) [M1 A1] \(= 32\pi = 101\). [A1] (b) \(x^2 = y\), so \(V = \pi\displaystyle\int_0^9 y\,dy = \pi\Big[\tfrac{y^2}{2}\Big]_0^9\) [M1 A1] \(= \tfrac{81\pi}{2} = 127\). [A1]
+Q: [10 marks] (#math.p1.diff) ★★★ A curve \(C\) has gradient \(\dfrac{dy}{dx} = 3x^2 - 6x\) and has a stationary point at \((2, -1)\). (a) Find the equation of \(C\). (b) Show that \(C\) has a maximum point at \((0, 3)\). (c) The line \(y = 3\) meets \(C\) again at \(x = 3\). Find the area of the region enclosed between \(C\) and the line \(y = 3\).
+H: Integrate \(\dfrac{dy}{dx}\), then use the point \((2, -1)\) to find \(c\).
+H: For (b), show \(\dfrac{dy}{dx} = 0\) at \(x = 0\) and find the sign of \(\dfrac{d^2y}{dx^2}\).
+H: For (c), decide which of the curve and the line is higher between \(x = 0\) and \(x = 3\). Test a value such as \(x = 1\).
+A: (a) \(y = x^3 - 3x^2 + c\). [M1 A1] At \((2, -1)\): \(-1 = 8 - 12 + c\) [M1] so \(c = 3\), and \(y = x^3 - 3x^2 + 3\). [A1] (b) At \(x = 0\), \(\dfrac{dy}{dx} = 0\) and \(y = 3\). [B1] \(\dfrac{d^2y}{dx^2} = 6x - 6 = -6 < 0\), so \((0, 3)\) is a maximum. [B1] (c) At \(x = 1\) the curve is at \(y = 1\), below the line \(y = 3\), so the line is above the curve between \(x = 0\) and \(x = 3\). [B1] Area \(= \displaystyle\int_0^3 \big(3 - (x^3 - 3x^2 + 3)\big)\,dx = \int_0^3 (3x^2 - x^3)\,dx\) [M1] \(= \Big[x^3 - \tfrac{x^4}{4}\Big]_0^3\) [A1] \(= 27 - \tfrac{81}{4} = \tfrac{27}{4}\). [A1]
+:::
+
+:::try Stretch for A*
+Q: [6 marks] ★★★ The region \(R\) lies under the curve \(y = 3x^{-3/2}\) and above the \(x\)-axis for \(x \ge 1\). (a) Find the area of \(R\). (b) The region \(R\) is rotated through \(360^\circ\) about the \(x\)-axis. Find the exact volume of the solid.
+H: Treat the upper limit as \(\infty\): integrate first, then see what happens to the antiderivative as \(x\) grows.
+H: For (b), square \(y\) first: \(y^2 = 9x^{-3}\).
+A: (a) \(\displaystyle\int_1^\infty 3x^{-3/2}\,dx = \Big[-6x^{-1/2}\Big]_1^\infty\) [M1 A1] \(= 0 - (-6) = 6\). [A1] (b) \(V = \pi\displaystyle\int_1^\infty 9x^{-3}\,dx = \pi\Big[-\dfrac{9}{2}x^{-2}\Big]_1^\infty\) [M1 A1] \(= \pi\left(0 + \dfrac92\right) = \dfrac{9\pi}{2}\). [A1]
+Q: [5 marks] ★★★ The line \(y = kx\), where \(k > 0\), meets the curve \(y = x^2\) at the origin and at a second point \(P\). The area of the region enclosed between the line and the curve is 36. Find \(k\).
+H: Find the \(x\)-coordinate of \(P\) in terms of \(k\); it is the upper limit of the integral.
+H: The area comes out as a multiple of \(k^3\). Set it equal to 36.
+A: \(x^2 = kx\) gives \(x = 0\) or \(x = k\). [B1] Between these, the line is above the curve: area \(= \displaystyle\int_0^k (kx - x^2)\,dx\). [M1] \(= \Big[\tfrac{kx^2}{2} - \tfrac{x^3}{3}\Big]_0^k = \tfrac{k^3}{2} - \tfrac{k^3}{3} = \tfrac{k^3}{6}\). [M1 A1] \(\tfrac{k^3}{6} = 36\), so \(k^3 = 216\) and \(k = 6\). [A1]
 :::
 
 :::quiz
@@ -290,6 +396,16 @@ A: (a) \(\displaystyle\int_1^3 12x^{-2}\,dx = \Big[-12x^{-1}\Big]_1^3 = -4 + 12 
 + \(\tfrac{32}{3}\)
 - \(\tfrac{16}{3}\)
 > The curve is below the axis on the whole interval, so the integral is \(-\tfrac{32}{3}\) and the area is its size, \(\tfrac{32}{3}\). The value \(\tfrac{16}{3}\) is the area for \(0 \le x \le 2\) only.
+:::
+
+:::checklist What you can now do
+- [ ] I can integrate powers of \(x\), including roots and fractions, and sums of them.
+- [ ] I can integrate \((ax + b)^n\) for any rational \(n \neq -1\).
+- [ ] I can find the constant of integration from a given point.
+- [ ] I can evaluate a definite integral, including a simple improper integral with an infinite limit or a limit where the function is undefined.
+- [ ] I can find the area under a curve, including parts below the \(x\)-axis.
+- [ ] I can find the area between a curve and a line, or between two curves.
+- [ ] I can find the volume formed by rotating a region about the \(x\)-axis or the \(y\)-axis.
 :::
 
 :::recap
