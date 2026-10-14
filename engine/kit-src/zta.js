@@ -287,10 +287,15 @@ function runProbe(name, file) {
   const dec = (s) => s.replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
   let problems = 0;
   for (const [label, q, w] of [['light', '', 1000], ['dark', 'dark', 1000], ['phone', 'phone', 400]]) {
-    const r = dumpDom(`${page}?probe${q ? '&' + q : ''}`, w, 6000, 60000);
-    const m = (r.stdout || '').match(/<pre id="zta-probe">([\s\S]*?)<\/pre>/);
+    let r, m, R;
+    // the first headless run after a widget file changes can report blank canvases (cold cache); retry once before flagging
+    for (let tries = 0; tries < 2; tries++) {
+      r = dumpDom(`${page}?probe${q ? '&' + q : ''}`, w, 6000, 60000);
+      m = (r.stdout || '').match(/<pre id="zta-probe">([\s\S]*?)<\/pre>/);
+      R = m && JSON.parse(dec(m[1]));
+      if (R && !R.blank) break;
+    }
     if (!m) { problems++; console.log(`✗ ${label}: the page did not finish (${r.error ? r.error.message : 'no report'}); open it in the browser pane`); continue; }
-    const R = JSON.parse(dec(m[1]));
     const out = [];
     const errs = [...new Set(R.errors.flatMap(e => e.split('\n')).map(e => e.trim()).filter(e => e && !/^at\s/.test(e)))];
     for (const e of errs) out.push('error: ' + e.slice(0, 160));
