@@ -49,6 +49,8 @@ there, tell the user which session to run instead, and stop. (A Writer never doe
 `phone` loads chapters headless at 375 px with every answer open and lists anything wider than the screen.
 To look at pages: start the **preview** launch config in the browser pane (port 5103), then open
 `http://localhost:5103/#<chapter-id>` (or `/widget.html?dark&phone`). Run `preview` again after edits.
+`shot <id> [--dark] [--phone]` saves the chapter's figures and widgets as PNGs in preview/shots/ (headless, no
+browser pane needed); look at them with the Read tool. Use it when the pane cannot draw (the app window is hidden).
 
 ## LEAD (Specialist): once, at the start
 1. Read COURSE.md (the Organizer's starting notes), course.json, FACTS.md and kit/STYLE.md.
@@ -91,7 +93,7 @@ To look at pages: start the **preview** launch config in the browser pane (port 
 1. `status` (it names the packages to review), `check` (all chapters), `phone`, `preview`.
 2. Read the new packages: at least every worked example and try answer of two chapters, and the opening,
    key boxes and quiz of the rest. Verify facts against FACTS.md and numbers by recomputing them. Look at the
-   figures and widgets in the preview (light, dark, phone).
+   figures and widgets in the preview, or with `shot <id>`, `--dark`, `--phone` (light, dark, phone).
 3. Fix serious problems yourself (wrong facts or numbers, broken pages). List everything else in REVIEW.md as
    `- [ ] <id>: <exactly what to change>`.
 4. If tone, depth or structure is drifting, tighten the guidance in COURSE.md (or the notes of packages not

@@ -69,7 +69,8 @@ and follow its "Rules for every session" and "<STEP> (<ROLE>)" steps, with these
 ```
 - Do not use the browser tools at all: another agent uses the browser. Your checks are `node kit/zta.js check <id>`,
   `phone <ids>` and `widget <name> "…" --probe`. Check every SVG figure's coordinates and label positions with Python,
-  since nobody looks at them until review.
+  then look at them once with `node kit/zta.js shot <id>` (headless PNGs in preview/shots/; open them with Read) and fix
+  what you see.
 - Other agents work on other packages at the same time. Touch only <Pn>'s files: its chapters, their checks and the
   widgets/<name>.js files it builds. Never edit COURSE.md, course.json, FACTS.md, widgets.js, REVIEW.md, another
   package's files, or STATUS.md (the kit writes it).
@@ -95,6 +96,8 @@ Reply in at most 6 lines: chapters with word counts and check results, widgets a
   config with preview_start). Run `node kit/zta.js preview`, then open `http://localhost:<port>/#<chapter-id>` with
   the browser tools (you are the only agent using the browser). Prefer get_page_text, read_page and javascript_tool
   probes; screenshots only at scale 0.5; resize_window preset mobile for phone width, then reset it to desktop.
+  If the pane does not draw (the app window is hidden while the user is away), use `node kit/zta.js shot <id>`
+  (`--dark`, `--phone`) and open the PNGs in preview/shots/ with Read.
 - Writer agents are writing other packages at the same time: do not touch their files. You may tighten COURSE.md
   or the notes of packages nobody has claimed yet.
 ```

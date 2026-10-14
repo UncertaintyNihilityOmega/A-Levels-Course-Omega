@@ -11,6 +11,8 @@
 //   node kit/zta.js preview                build preview/index.html (this course only, final design)
 //   node kit/zta.js widget <name> ["attrs"] [--probe]   test page preview/widget.html for one widget;
 //                                          --probe also loads it headless (light, dark, phone) and reports problems
+//   node kit/zta.js shot <id> [--dark] [--phone]   the chapter's figures and widgets as PNGs in preview/shots/,
+//                                          headless (look at them with the Read tool; no browser pane needed)
 //   node kit/zta.js serve                  serve preview/ for the browser pane (http://localhost:<port>/)
 'use strict';
 const fs = require('fs');
@@ -310,8 +312,76 @@ function runProbe(name, file) {
   console.log(problems ? `probe: ${problems} problem(s) in "${name}". Fix them, then probe again.` : `probe: "${name}" passed. Still look at it once in the browser pane (light, dark, phone).`);
 }
 
+// ---------- shot: a chapter's figures and widgets as PNGs, headless (no browser pane needed) ----------
+// The page shows the chapter (route + hydrate), then hides everything but its figures and widgets (answers open),
+// numbers them, and either reports their heights (measure) or shows the range from..to for a screenshot.
+const SHOT_JS = `if(/[?&]shot/.test(location.search)){setTimeout(function(){
+var P=new URLSearchParams(location.search),id=location.hash.slice(1);
+if(P.has('dark'))document.documentElement.setAttribute('data-theme','dark');else document.documentElement.setAttribute('data-theme','light');
+var out=function(R){var s=JSON.stringify(R);if(parent!==window)parent.postMessage(s,'*');else{var p=document.createElement('pre');p.id='zta-probe';p.textContent=s;document.body.appendChild(p);}};
+var a=document.querySelector('article.chapter[data-id="'+id+'"]');if(!a){out({error:'no chapter '+id});return;}
+a.querySelectorAll('details').forEach(function(d){d.open=true;});
+var T=[].slice.call(a.querySelectorAll('figure,.widget')).filter(function(t){return !t.parentElement.closest('figure,.widget');});
+var from=+(P.get('from')||0),to=P.has('to')?+P.get('to'):T.length,K=T.slice(from,to);
+document.body.querySelectorAll('*').forEach(function(el){if(/^(SCRIPT|STYLE|PRE)$/.test(el.tagName))return;
+if(K.some(function(t){return t===el||t.contains(el)||el.contains(t);}))return;el.style.display='none';});
+var css=document.createElement('style');css.textContent='html,body{overflow:visible!important}body *{margin-top:0}.zshot{font:600 13px system-ui;color:var(--ink-2);padding:14px 0 4px}';document.head.appendChild(css);
+var R={n:T.length,items:[]};
+K.forEach(function(t,i){var k=from+i,lab=document.createElement('div');lab.className='zshot';
+var name=t.classList.contains('widget')?'widget '+t.getAttribute('data-w'):'figure: '+((t.querySelector('figcaption')||{}).textContent||'').replace(/\\s+/g,' ').trim().slice(0,70);
+lab.textContent='#'+(k+1)+' '+name;t.parentNode.insertBefore(lab,t);R.items.push(name);});
+scrollTo(0,0);setTimeout(function(){R.h=K.map(function(t){return Math.ceil(t.getBoundingClientRect().height)+40;});R.total=document.documentElement.scrollHeight;out(R);},300);},1800);}`;
+const SHOT_FRAME = (src, w, h) => `<!doctype html><meta charset="utf-8"><body style="margin:0"><iframe src="${src}" style="width:${w}px;height:${h}px;border:0;display:block"></iframe>
+<script>addEventListener('message',function(e){var p=document.createElement('pre');p.id='zta-probe';p.textContent=e.data;document.body.appendChild(p);});</script>`;
+
+function shot(id, dark, phoneW) {
+  const c = course();
+  if (!id) { console.log('usage: node kit/zta.js shot <chapter-id> [--dark] [--phone]'); process.exitCode = 2; return; }
+  id = path.basename(id).replace(/\.md$/, '');
+  if (!findBrowser()) { console.log('shot: no Edge or Chrome found (set ZTA_BROWSER to a Chromium browser).'); process.exitCode = 1; return; }
+  const res = site(c, { inlineAll: true, fontFace: (chars) => mathFontFace(path.join(__dirname, 'math.otf'), chars) });
+  fs.mkdirSync(path.join(PREVIEW, 'shots'), { recursive: true });
+  const own = `shot-${process.pid}`, W = phoneW ? PHONE_W : 800;
+  fs.writeFileSync(path.join(PREVIEW, own + '.html'), res.files['index.html'].replace('</body>', () => `<script>${SHOT_JS}</script></body>`));
+  const { pathToFileURL } = require('url');
+  const base = pathToFileURL(path.join(PREVIEW, own + '.html')).href;
+  const q = (extra) => `${base}?shot${dark ? '&dark' : ''}${extra}#${id}`;
+  // pass 1: measure every figure in a frame of the target width
+  fs.writeFileSync(path.join(PREVIEW, own + '-frame.html'), SHOT_FRAME(q(''), W, 900));
+  const m = (dumpDom(pathToFileURL(path.join(PREVIEW, own + '-frame.html')).href, W + 100, 8000, 120000).stdout || '').match(/<pre id="zta-probe">([\s\S]*?)<\/pre>/);
+  const R = m && JSON.parse(m[1].replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&'));
+  const clean = () => { for (const f of [own + '.html', own + '-frame.html']) fs.rmSync(path.join(PREVIEW, f), { force: true }); };
+  if (!R || R.error) { clean(); console.log(`✗ shot: ${R ? R.error : 'the page did not finish'}`); process.exitCode = 1; return; }
+  if (!R.n) { clean(); console.log(`shot: ${id} has no figures or widgets`); return; }
+  // pass 2: one PNG per group of figures up to about 1400 px tall
+  const groups = [];
+  R.h.forEach((h, i) => { const g = groups[groups.length - 1]; if (g && g.h + h <= 1400) { g.to = i + 1; g.h += h; } else groups.push({ from: i, to: i + 1, h }); });
+  const { spawnSync } = require('child_process');
+  const os = require('os');
+  const tag = `${id}${dark ? '-dark' : ''}${phoneW ? '-phone' : ''}`;
+  for (const old of fs.readdirSync(path.join(PREVIEW, 'shots'))) if (old.startsWith(tag + '-')) fs.rmSync(path.join(PREVIEW, 'shots', old), { force: true });
+  const made = [];
+  for (const g of groups) {
+    const H = g.h + 120;
+    fs.writeFileSync(path.join(PREVIEW, own + '-frame.html'), SHOT_FRAME(q(`&from=${g.from}&to=${g.to}`), W, H));
+    const file = path.join(PREVIEW, 'shots', `${tag}-${g.from + 1}.png`);
+    const prof = fs.mkdtempSync(path.join(os.tmpdir(), 'zta-shot-'));
+    spawnSync(goodBrowser || findBrowser(), ['--headless=new', '--disable-gpu', '--no-first-run', '--no-default-browser-check', '--disable-extensions', '--hide-scrollbars',
+      `--user-data-dir=${prof}`, `--window-size=${Math.max(W, 500)},${H}`, '--virtual-time-budget=8000', `--screenshot=${file}`,
+      pathToFileURL(path.join(PREVIEW, own + '-frame.html')).href], { timeout: 120000 });
+    try { fs.rmSync(prof, { recursive: true, force: true }); } catch (e) { /* still held */ }
+    made.push(fs.existsSync(file) ? `${path.relative(DIR, file).replace(/\\/g, '/')}  (#${g.from + 1}–#${g.to})` : `✗ #${g.from + 1}–#${g.to}: no image`);
+  }
+  clean();
+  console.log(`shot: ${id}${dark ? ' dark' : ''}${phoneW ? ' phone' : ''} · ${R.n} figure(s)/widget(s):`);
+  R.items.forEach((t, i) => console.log(`  #${i + 1} ${t}`));
+  console.log('images (open them with the Read tool):');
+  for (const f of made) console.log('  ' + f);
+}
+
 switch (cmd) {
   case 'status': status(); break;
+  case 'shot': shot(args.find(a => !a.startsWith('--')), args.includes('--dark'), args.includes('--phone')); break;
   case 'claim': claimCmd(args[0]); break;
   case 'release': releaseCmd(args[0]); break;
   case 'done': doneCmd(args[0], args.slice(1).join(' ')); break;
@@ -320,5 +390,5 @@ switch (cmd) {
   case 'widget': widget(args[0], args.slice(1).filter(a => a !== '--probe').join(' '), args.includes('--probe')); break;
   case 'phone': phone(args); break;
   case 'serve': fs.mkdirSync(PREVIEW, { recursive: true }); serve(PREVIEW, Number(args[0]) || port()); break;
-  default: console.log('commands: status | claim [Pn] | release Pn | done "<step>" "<summary>" | check [id ...] | phone [id ...] | preview | widget <name> ["attrs"] [--probe] | serve'); process.exitCode = cmd ? 2 : 0;
+  default: console.log('commands: status | claim [Pn] | release Pn | done "<step>" "<summary>" | check [id ...] | phone [id ...] | preview | widget <name> ["attrs"] [--probe] | shot <id> [--dark] [--phone] | serve'); process.exitCode = cmd ? 2 : 0;
 }

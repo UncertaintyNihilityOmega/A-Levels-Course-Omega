@@ -48,6 +48,8 @@ there, tell the user which session to run instead, and stop.
 `phone` loads chapters headless at 375 px with every answer open and lists anything wider than the screen.
 To look at pages: start the **preview** launch config in the browser pane (port 5109), then open
 `http://localhost:5109/#<chapter-id>` (or `/widget.html?dark&phone`). Run `preview` again after edits.
+`shot <id> [--dark] [--phone]` saves the chapter's figures and widgets as PNGs in preview/shots/ (headless, no
+browser pane needed); look at them with the Read tool. Use it when the pane cannot draw (the app window is hidden).
 
 ## WRITE (Writer): one package per session
 1. `status`. If it lists FIX: close every open item in REVIEW.md, mark each `[x]`, run
