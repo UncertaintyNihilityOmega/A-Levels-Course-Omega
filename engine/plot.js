@@ -130,16 +130,18 @@ function plot(line, caption) {
   out.push(`<path class="ax" d="M${ml - 4} ${f1(axY)}H${W - mr + 6}" marker-end="url(#ahm)"/>`);
   out.push(`<text class="tl ti" x="${f0(W - mr + 2)}" y="${f0(axY - 7)}" text-anchor="end">${esc(a.xlabel)}</text>`);
   out.push(`<text class="tl ti" x="${f0(axX + 7)}" y="${f0(mt + 4)}">${esc(a.ylabel)}</text>`);
+  // tick labels go on top of the curves (pushed after them), with a halo so a curve never crosses them
+  const ticks = [];
   if (!a.noticks) {
     for (let k = Math.ceil(x0 / xs); k * xs <= x1 + 1e-9; k++) {
       const v = k * xs;
-      if (Math.abs(v) > 1e-9) out.push(`<text class="ts tc" x="${f1(px(v))}" y="${f0(axY + 15)}">${fmt(v)}</text>`);
+      if (Math.abs(v) > 1e-9) ticks.push(`<text class="ts tc halo" x="${f1(px(v))}" y="${f0(axY + 15)}">${fmt(v)}</text>`);
     }
     for (let k = Math.ceil(y0 / ys); k * ys <= y1 + 1e-9; k++) {
       const v = k * ys;
-      if (Math.abs(v) > 1e-9) out.push(`<text class="ts te" x="${f0(axX - 5)}" y="${f1(py(v) + 4)}">${fmt(v)}</text>`);
+      if (Math.abs(v) > 1e-9) ticks.push(`<text class="ts te halo" x="${f0(axX - 5)}" y="${f1(py(v) + 4)}">${fmt(v)}</text>`);
     }
-    out.push(`<text class="ts te" x="${f0(axX - 5)}" y="${f0(axY + 14)}">0</text>`);
+    ticks.push(`<text class="ts te halo" x="${f0(axX - 5)}" y="${f0(axY + 14)}">0</text>`);
   }
   if (a.shade) {
     const [i, sa, sb] = a.shade.split(',').map(Number);
@@ -155,7 +157,9 @@ function plot(line, caption) {
   }
   for (const v of a.vline) out.push(`<path class="ln-m dash" d="M${f1(px(v))} ${mt}V${H - mb}"/>`);
   for (const v of a.hline) out.push(`<path class="ln-m dash" d="M${ml} ${f1(py(v))}H${W - mr}"/>`);
-  const cls = ['c1', 'c2', 'c3', 'c4'];
+  // series colours: course colour, its second colour, ink, red (in dark mode the second colour and red are both pink)
+  const cls = ['c1', 'c2', 'c4', 'c3'];
+  const textCls = ['ta', 'ta2', '', 'tr'];
   fns.forEach((fn, idx) => {
     const segs = [];
     let cur = [], prev = null;
@@ -189,8 +193,9 @@ function plot(line, caption) {
     const d = segs.filter(s => s.length > 1).map(s => 'M' + s.map(([X, Y]) => `${f1(X)} ${f1(Y)}`).join('L')).join(' ');
     out.push(`<path class="${cls[idx % 4]}" d="${d}"/>`);
   });
+  out.push(...ticks);
   a.label.forEach((lab, idx) => {
-    const c = idx === 0 ? 'ta' : 'ta2';
+    const c = textCls[idx % 4];
     if (a.legend === 'tl') out.push(`<text class="tl halo ${c}" x="${ml + 8}" y="${mt + 16 + idx * 18}">${esc(lab)}</text>`);
     else out.push(`<text class="tl halo ${c}" x="${W - mr - 6}" y="${mt + 16 + idx * 18}" text-anchor="end">${esc(lab)}</text>`);
   });
