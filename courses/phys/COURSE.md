@@ -84,6 +84,10 @@ the gold chapter). "Explain" questions score one B1 per link in the chain of rea
 - **Graphs**: physics lives on graphs. Every relationship the syllabus says to "sketch" or "analyse graphically"
   gets a figure, and you state what the gradient and the area under the graph mean wherever they mean something.
 - Real contexts: cars, phones, sport, medicine, power stations, space missions, with realistic numbers.
+- Short topics still need every exam angle (the P3 review had to add them): each relationship on its graph (what
+  the gradient and the area mean, e.g. stress–strain gradient = E, energy against height), the standard variants of a
+  formula that questions use (E_K = p²/2m), and a `:::lab` for a practical that fits even when no outcome says
+  "describe an experiment".
 - Long chapters are fine; padding is not. Big topics (kinematics, waves, superposition, electricity, fields,
   magnetic fields, quantum) will run to 5000–7000 words, small ones (temperature, thermodynamics) 3000–4000.
 
@@ -124,6 +128,23 @@ the gold chapter). "Explain" questions score one B1 per link in the chain of rea
     `--xstep` and `@se`/`@ne`.
   - Crop the viewBox to the drawing (+ about 15 px). A `fig small` drawn in a 400-wide viewBox with 100 px of empty
     space shows tiny on desktop and huge on a phone.
+- Lessons from the P3–P4 review:
+  - `thin` and `thick` do **not** change `c1`/`c2`/`c3` (their own stroke width wins). For a "thin wave + thicker sum" figure use
+    `c1 sw2`, `c2 sw2 dash` and `c3 sw3`. `thin`/`thick` work on `ln`.
+  - Draw the physical situation completely: a stationary wave fills the whole length L (vibrator to bridge), not one loop
+    and a straight remainder; a slit seen side-on needs a small face-on inset; barriers as filled `fi` rects, not lines
+    that look like wavefronts.
+  - `:::plot` labels: `--label` text sits at the end of its curve and `@n`/`@ne` point labels sit next to the curve, so
+    leave headroom (`--y` about 30% above the top of the curves) and never put two point labels within ~100 px of each
+    other. Avoid three series in one plot (the 2nd and 3rd colours look alike in dark mode); label crests, not zero
+    crossings on a mid-height axis (they sit on the tick numbers).
+  - `fig small` only for drawings about 300 wide; a 400-wide viewBox in `fig small` makes 13 px labels unreadable.
+  - Arrows shorter than about 20 px (a dimension `a` of 26 px split in two) show only arrowheads: enlarge the drawing.
+- Widgets (P3–P4 lessons): never name colours in notes ("the red line"): say "the dashed line". Axis ranges must follow
+  the values: a fixed window that squeezes the interesting region into a few per cent of the axis, or turns a pattern
+  into a flat average, is a bug (zoom or pick from a few window sizes). Keep legends and labels off the curves (bottom
+  strip or a corner the curves cannot reach). Do not stroke very short, thick canvas arcs (Chrome leaves stray marks):
+  draw short chords instead.
 - Rounding: never reuse a rounded intermediate (a gradient 0.452, a time 10.10 s) in a later step; the check
   script must compute from the unrounded value (g from the P1 data is 9.78, not 9.79).
 

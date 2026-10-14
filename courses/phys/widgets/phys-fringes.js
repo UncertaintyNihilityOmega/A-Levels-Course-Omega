@@ -62,7 +62,9 @@
 
     // ======================================================================
     function buildDouble() {
-      const WIN = 15;                                   // the screen window is -15 mm to +15 mm
+      // the screen window (mm each side) adapts so that at least about 5 fringes are visible and none are too close to draw
+      let WIN = 15;
+      const pickWin = (x) => { for (const v of [1.5, 5, 15, 50]) if (v >= 2.5 * x) return v; return 50; };
       const xsep = () => st.lam * 1e-9 * st.D / (st.a * 1e-3) * 1e3;   // mm
       const sA = W.sliderNum({ label: 'Slit separation a / mm', min: 0.1, max: 1.0, step: 0.01, value: st.a, oninput: (v) => { st.a = num(v, 0.5, 0.1, 1); update(); } });
       const sD = W.sliderNum({ label: 'Slit-to-screen distance D / m', min: 0.5, max: 4, step: 0.1, value: st.D, oninput: (v) => { st.D = num(v, 2, 0.5, 4); update(); } });
@@ -75,7 +77,7 @@
         draw(ctx, w, h, col) {
           const x = xsep();
           const ax = W.axes(ctx, w, h, { x0: -WIN, x1: WIN, y0: 0, y1: 1.4 }, col,
-            { pad: { l: 46, r: 14, t: 14, b: 34 }, xlabel: 'distance from the centre of the screen / mm', ylabel: 'I / I₀' });
+            { pad: { l: 46, r: 14, t: 14, b: 34 }, xlabel: 'y / mm', ylabel: 'I / I₀' });
           const { X, Y } = ax;
           ctx.save();
           ctx.beginPath(); ctx.rect(ax.pad.l, ax.pad.t, w - ax.pad.l - ax.pad.r, h - ax.pad.t - ax.pad.b); ctx.clip();
@@ -94,10 +96,10 @@
           if (x <= WIN) {
             const yy = Y(1.22);
             ctx.strokeStyle = col.ink; ctx.fillStyle = col.ink; ctx.lineWidth = 1.5;
-            ctx.setLineDash([3, 3]); ctx.beginPath(); ctx.moveTo(X(0), Y(1)); ctx.lineTo(X(0), yy - 2); ctx.moveTo(X(x), Y(1)); ctx.lineTo(X(x), yy - 2); ctx.stroke(); ctx.setLineDash([]);
-            const m = (X(0) + X(x)) / 2;
-            arrow(ctx, m - 1, X(0), yy); arrow(ctx, m + 1, X(x), yy);
-            if (X(x) - X(0) > 36) { ctx.font = '600 13px ' + col.font; ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic'; ctx.fillText('x', m, yy - 5); }
+            ctx.setLineDash([3, 3]); ctx.beginPath(); ctx.moveTo(X(0), Y(1)); ctx.lineTo(X(0), yy - 2); ctx.moveTo(X(-x), Y(1)); ctx.lineTo(X(-x), yy - 2); ctx.stroke(); ctx.setLineDash([]);
+            const m = (X(0) + X(-x)) / 2;
+            arrow(ctx, m + 1, X(0), yy); arrow(ctx, m - 1, X(-x), yy);
+            if (X(0) - X(-x) > 36) { ctx.font = '600 13px ' + col.font; ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic'; ctx.fillText('x', m, yy - 5); }
           }
           ctx.restore();
         }
@@ -114,7 +116,7 @@
             ctx.fillStyle = css(st.lam, I); ctx.fillRect(pl + i, 4, 1, h - 22);
           }
           ctx.fillStyle = col.ink2; ctx.font = '12px ' + col.font; ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
-          ctx.fillText('the pattern on the screen (' + colourName(st.lam) + ', ' + Math.round(st.lam) + ' nm)', pl, h - 3);
+          ctx.fillText('screen: ' + colourName(st.lam) + ', ' + Math.round(st.lam) + ' nm', pl, h - 3);
         }
       });
 
@@ -127,14 +129,14 @@
 
       function update() {
         const x = xsep();
+        WIN = pickWin(x);
         ro.set('x', W.fmt(x, 3) + ' mm  (= ' + W.fmt(st.lam, 3) + ' nm × ' + W.fmt(st.D, 3) + ' m ÷ ' + W.fmt(st.a, 3) + ' mm)');
         ro.set('col', colourName(st.lam) + ', ' + Math.round(st.lam) + ' nm');
         ro.set('ten', W.fmt(10 * x, 3) + ' mm');
         const nb = Math.floor(WIN / x) * 2 + 1;
         ro.set('n', x > 2 * WIN ? '1 (only the central fringe)' : String(nb));
-        msg.textContent = x < 0.4 ? 'These fringes are less than 0.4 mm apart and are too close to draw on this scale (the graph shows the average level). Increase λ or D, or reduce a.' :
-          x > WIN ? 'The fringe separation is bigger than the window shown (15 mm each side), so only the central fringe is in view.' :
-            'Bright fringes are at 0, ±x, ±2x, … where the path difference a sin θ is a whole number of wavelengths; dark fringes are halfway between.';
+        msg.textContent = x > WIN ? 'The fringe separation is bigger than the window shown (' + WIN + ' mm each side), so only the central fringe is in view.' :
+            'Bright fringes are at 0, ±x, ±2x, … where the path difference a sin θ is a whole number of wavelengths; dark fringes are halfway between. y is the distance from the centre of the screen; the window shows ±' + WIN + ' mm, so watch the numbers on the axis.';
         cG.redraw(); cS.redraw();
       }
       update();
@@ -155,22 +157,23 @@
       const thetaOf = (n, lam) => Math.asin(Math.min(1, n * lam / dnm()));
 
       const c = W.canvas(body, {
-        height: 300,
+        height: 340,
         draw(ctx, w, h, col) {
-          const cx = 56, cy = h / 2;
-          const R = Math.max(60, Math.min(w - cx - 66, h / 2 - 28));
+          const cy = h / 2, cx0 = w < 420 ? 40 : 56;
+          const R = Math.max(60, Math.min(w - cx0 - 58, h / 2 - 28));
+          const cx = Math.max(cx0, Math.round((w - R - 66) / 2));    // centre the drawing on wide screens
           ctx.textBaseline = 'alphabetic';
           // screen (a semicircle round the grating)
           ctx.strokeStyle = col.ink3; ctx.lineWidth = 1.5; ctx.setLineDash([5, 4]);
           ctx.beginPath(); ctx.arc(cx, cy, R, -Math.PI / 2, Math.PI / 2); ctx.stroke(); ctx.setLineDash([]);
           // incoming beam, grating
           ctx.strokeStyle = col.ink2; ctx.fillStyle = col.ink2; ctx.lineWidth = 2;
-          arrow(ctx, 8, cx - 5, cy);
+          arrow(ctx, Math.max(4, cx - 48), cx - 5, cy);
           ctx.strokeStyle = col.ink; ctx.lineWidth = 5;
           ctx.beginPath(); ctx.moveTo(cx, cy - 34); ctx.lineTo(cx, cy + 34); ctx.stroke();
           ctx.fillStyle = col.ink2; ctx.font = '12px ' + col.font; ctx.textAlign = 'center';
           ctx.fillText('grating', cx, cy - 40);
-          ctx.fillText('screen', cx + R * 0.7, cy - R * 0.72 - 6);
+          ctx.textAlign = 'left'; ctx.fillText('screen', cx + 6, cy - R - 8);
           const at = (th, r) => [cx + r * Math.cos(th), cy - r * Math.sin(th)];
           const lbl = (txt, th, r) => {
             const p = at(th, r + 8);
@@ -190,9 +193,11 @@
                 ctx.lineWidth = 9; ctx.lineCap = 'butt';
                 for (let wl = 400; wl < 700; wl += 5) {
                   if (k * wl >= dnm()) break;
-                  const t1 = thetaOf(k, wl), t2 = thetaOf(k, Math.min(700, wl + 5));
+                  const t1 = thetaOf(k, wl); let t2 = thetaOf(k, Math.min(700, wl + 5));
+                  if (!(t2 <= Math.PI / 2)) t2 = Math.PI / 2;     // the last step may pass 90°
                   ctx.strokeStyle = css(wl);
-                  ctx.beginPath(); ctx.arc(cx, cy, rr, -sgn * t2, -sgn * t1, sgn < 0); ctx.stroke();
+                  const p1 = at(sgn * t1, rr), p2 = at(sgn * t2, rr);   // short chords (tiny thick arcs leave stray marks in Chrome)
+                  ctx.beginPath(); ctx.moveTo(p1[0], p1[1]); ctx.lineTo(p2[0], p2[1]); ctx.stroke();
                 }
               }
               if (k <= 3 && k * 400 < dnm()) lbl('n = ' + k, thetaOf(k, 700) * 0.5 + thetaOf(k, 400) * 0.5, R);

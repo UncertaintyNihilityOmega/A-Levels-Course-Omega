@@ -120,14 +120,17 @@
         const M = model();
         const mm = M.xb < 1;
         const xu = mm ? 1e3 : 1;
-        const view = { x0: 0, x1: M.xb * xu * 1.08, y0: 0, y1: M.Fb * 1.12 };
+        const Fmax = st.p * M.Fb;
+        // metals: zoom the extension axis so the straight part, P and E are visible; it widens as the load passes E
+        const xEnd = M.m.rubber ? M.xb : Math.min(M.xb, Math.max(2.5 * M.xOf(M.m.se * M.A), 1.15 * M.xOf(Fmax)));
+        const view = { x0: 0, x1: xEnd * xu * 1.08, y0: 0, y1: M.Fb * 1.12 };
         const ax = W.axes(ctx, w, h, view, col, {
           pad: { l: 52, r: 14, t: 16, b: 34 },
           xlabel: 'extension / ' + (mm ? 'mm' : 'm'),
           ylabel: 'force / N'
         });
         const { X, Y } = ax;
-        const Fmax = st.p * M.Fb;
+        const back = permExt(M, Fmax) === 0;           // elastic: unloading retraces the loading curve
         const snapped = st.p >= 0.995;
         ctx.save();
         ctx.beginPath(); ctx.rect(ax.pad.l, ax.pad.t, w - ax.pad.l - ax.pad.r, h - ax.pad.t - ax.pad.b); ctx.clip();
@@ -145,7 +148,7 @@
           pts.forEach((p) => ctx.lineTo(X(p[0]), Y(p[1])));
           ctx.lineTo(X(pts[n][0]), Y(0)); ctx.closePath(); ctx.fill();
           ctx.globalAlpha = 1;
-          if (st.unl) {                                   // energy recovered on unloading
+          if (st.unl && !back) {                          // energy recovered on unloading
             const xp = permExt(M, Fmax) * xu;
             ctx.globalAlpha = 0.35; ctx.fillStyle = col.sc2;
             ctx.beginPath(); ctx.moveTo(X(xp), Y(0)); ctx.lineTo(X(pts[n][0]), Y(Fmax)); ctx.lineTo(X(pts[n][0]), Y(0)); ctx.closePath(); ctx.fill();
@@ -167,7 +170,10 @@
         if (st.unl) {
           const xp = permExt(M, Fmax) * xu;
           ctx.strokeStyle = col.red; ctx.lineWidth = 2; ctx.setLineDash([6, 4]);
-          ctx.beginPath(); ctx.moveTo(X(pts[n][0]), Y(Fmax)); ctx.lineTo(X(xp), Y(0)); ctx.stroke();
+          ctx.beginPath(); ctx.moveTo(X(pts[n][0]), Y(Fmax));
+          if (back) for (let i = n - 1; i >= 0; i--) ctx.lineTo(X(pts[i][0]), Y(pts[i][1]));
+          else ctx.lineTo(X(xp), Y(0));
+          ctx.stroke();
           ctx.setLineDash([]);
           dotX = xp; dotY = 0;
         }
@@ -188,7 +194,7 @@
         ctx.fillStyle = col.red; ctx.beginPath(); ctx.arc(X(dotX), Y(dotY), 5, 0, 2 * Math.PI); ctx.fill();
         ctx.restore();
         ctx.fillStyle = col.ink2; ctx.font = '12px ' + col.font; ctx.textBaseline = 'alphabetic'; ctx.textAlign = 'right';
-        const lx = w - ax.pad.r - 8, ly = h - ax.pad.b - 10;
+        const lx = w - ax.pad.r - 8, ly = h - ax.pad.b - 30;
         if (!M.m.rubber) { ctx.fillText('P: limit of proportionality', lx, ly - 16); ctx.fillText('E: elastic limit', lx, ly); }
         else ctx.fillText('qualitative curve only', lx, ly);
         ctx.textAlign = 'left';
@@ -226,8 +232,8 @@
       else if (s <= m.sp) ro.set('E', sci(s / eps, 3) + ' Pa');
       else ro.set('E', 'beyond the limit of proportionality');
       if (st.unl) {
-        const W0 = energyArea(M, Fmax), Wr = 0.5 * Fmax * (M.xOf(Fmax) - xperm);
-        ro.set('en', 'work done ' + sci(W0, 3) + ' J, recovered ' + sci(m.rubber ? W0 : Wr, 3) + ' J');
+        const W0 = energyArea(M, Fmax), Wr = xperm === 0 ? W0 : 0.5 * Fmax * (M.xOf(Fmax) - xperm);
+        ro.set('en', 'work done ' + sci(W0, 3) + ' J, recovered ' + sci(Wr, 3) + ' J');
       } else if (F === 0) ro.set('en', '0 J');
       else if (!m.rubber && s <= m.sp) ro.set('en', '½Fx = ' + sci(0.5 * F * x, 3) + ' J');
       else ro.set('en', 'area under the curve = ' + sci(energyArea(M, F), 3) + ' J');
@@ -238,13 +244,13 @@
       rmBtn.disabled = st.p === 0;
       if (snapped) note.textContent = 'The wire broke at the breaking stress. Slide the load back to fit a fresh wire.';
       else if (st.unl) note.textContent = m.rubber
-        ? 'Rubber returns to its original length: the red line retraces the loading curve. Move the load slider to load it again.'
+        ? 'Rubber returns to its original length: in this simple model the dashed line retraces the loading curve. Move the load slider to load it again.'
         : (px === 0
-          ? 'You stayed within the elastic limit, so the wire went back to its original length. Move the load slider to load it again.'
-          : 'The red line is parallel to the straight part of the graph and leaves a permanent extension. The area between the two lines is the energy dissipated as thermal energy.');
+          ? 'You stayed within the elastic limit, so the wire went back along the loading curve (dashed) to its original length. Move the load slider to load it again.'
+          : 'The dashed unloading line is parallel to the straight part of the graph and leaves a permanent extension. The area between the two lines is the energy dissipated as thermal energy.');
       else note.textContent = m.rubber
         ? 'Typical values; rubber is a qualitative curve. Slide the load up: the extension is not proportional to the force, but there is no permanent extension.'
-        : 'Typical values; the plastic region is shortened to fit. Slide the load past P and E, then press Remove load and see what is left over.';
+        : 'Typical values; the plastic region is shortened, and the extension axis widens as you load past E. Slide the load past P and E, then press Remove load and see what is left over.';
       c.redraw();
     }
     update();

@@ -57,7 +57,7 @@ When the force and the displacement are in the same direction, \(W = Fs\). Often
 :::
 
 :::html
-<figure class="fig"><svg viewBox="0 0 560 230" role="img" aria-label="A crate on the floor pulled by a rope at 30 degrees above the horizontal. The force F of 120 newtons is shown with dashed horizontal component F cos theta and vertical component F sin theta, and the displacement s of 8.0 metres is drawn below the floor."><path class="ln" d="M30 170H540"/><rect class="f1 s-acc sw2" x="200" y="110" width="100" height="60"/><text class="tl tc" x="250" y="145">crate</text><circle class="fi" cx="300" cy="140" r="4"/><path class="c1" d="M300 140L429.9 65" marker-end="url(#ah-phys)"/><path class="c3 dash thin" d="M300 140H430M430 140V65"/><path class="ln thin" d="M340 140A40 40 0 0 0 334.6 120"/><text class="tl" x="346" y="132">θ = 30°</text><text class="tl" x="444" y="60">F = 120 N</text><text class="tl" x="440" y="112">F sin θ</text><text class="tl tc" x="365" y="162">F cos θ</text><path class="c2" d="M170 202H500" marker-end="url(#ah2-phys)"/><text class="tl tc" x="335" y="222">displacement s = 8.0 m</text></svg><figcaption>Only the component F cos θ along the displacement does work. The vertical component F sin θ lifts the rope slightly but moves nothing upwards, so it does no work.</figcaption></figure>
+<figure class="fig"><svg viewBox="15 35 540 200" role="img" aria-label="A crate on the floor pulled by a rope at 30 degrees above the horizontal. The force F of 120 newtons is shown with dashed horizontal component F cos theta and vertical component F sin theta, and the displacement s of 8.0 metres is drawn below the floor."><path class="ln" d="M30 170H540"/><rect class="f1 s-acc sw2" x="200" y="110" width="100" height="60"/><text class="tl tc" x="250" y="145">crate</text><circle class="fi" cx="300" cy="140" r="4"/><path class="c1" d="M300 140L429.9 65" marker-end="url(#ah-phys)"/><path class="c3 dash thin" d="M300 140H430M430 140V65"/><path class="ln thin" d="M340 140A40 40 0 0 0 334.6 120"/><text class="tl" x="346" y="132">θ = 30°</text><text class="tl" x="444" y="60">F = 120 N</text><text class="tl" x="440" y="112">F sin θ</text><text class="tl tc" x="365" y="162">F cos θ</text><path class="c2" d="M170 202H500" marker-end="url(#ah2-phys)"/><text class="tl tc" x="335" y="222">displacement s = 8.0 m</text></svg><figcaption>Only the component F cos θ along the displacement does work. The vertical component F sin θ is perpendicular to the displacement, so it does no work.</figcaption></figure>
 :::
 
 :::eg A crate of mass 25 kg is pulled 8.0 m along a level floor by a rope. The rope pulls with a force of 120 N at 30° above the horizontal. Calculate the work done by the rope.
@@ -77,8 +77,8 @@ Three consequences of \(W = Fs\cos\theta\) appear again and again.
 
 When the force changes during the motion, you cannot just multiply. The work done is the **area under the force–displacement graph**, a fact that returns in [Deformation of solids](#phys.solids) for stretched springs and wires.
 
-:::plot A box is pushed with a force that rises steadily from 20 N to 60 N over 4.0 m. The shaded area is the work done.
---f "20+10*x" --x 0 5 --y 0 70 --shade "0,0,4" --pt "4,60,(4.0 m, 60 N)@ne" --xlabel "s / m" --ylabel "F / N" --label "F = 20 + 10s"
+:::plot A box is pushed with a force that rises steadily from 20 N to 60 N over 4.0 m (F = 20 + 10s). The shaded area is the work done.
+--f "20+10*x" --x 0 5 --y 0 80 --shade "0,0,4" --pt "4,60,(4.0 m, 60 N)@se" --xlabel "s / m" --ylabel "F / N"
 :::
 
 :::eg Find the work done on the box by the force shown in the graph above.
@@ -155,12 +155,27 @@ Therefore \(E_\mathrm{K} = \tfrac12 mv^2\).
 \(E_\mathrm{K}\): kinetic energy (J) · \(m\): mass (kg) · \(v\): speed (\(\mathrm{m\,s^{-1}}\)). Energy is a scalar, so it has no direction.
 :::
 
-The speed is **squared**. Doubling the speed of a car makes its kinetic energy four times as large, which is why a car at 60 km/h is far more dangerous than one at 30 km/h.
+The speed is **squared**. Doubling the speed of a car makes its kinetic energy four times as large, which is why a car at \(60\,\mathrm{km\,h^{-1}}\) is far more dangerous than one at \(30\,\mathrm{km\,h^{-1}}\).
 
 :::eg A car of mass 1400 kg travels at 30 m s⁻¹. Calculate its kinetic energy, and the kinetic energy at twice that speed.
 \[E_\mathrm{K} = \tfrac12 mv^2 = \tfrac12 \times 1400 \times 30^2\] [C1]
 \[E_\mathrm{K} = 6.3 \times 10^{5}\,\mathrm{J}\] [A1]
 At \(60\,\mathrm{m\,s^{-1}}\), the kinetic energy is \(\tfrac12 \times 1400 \times 60^2 = 2.52 \times 10^{6}\,\mathrm{J}\): four times larger, because \(v\) is squared.
+:::
+
+### Kinetic energy and momentum
+
+Collision questions often give you the momentum \(p = mv\) from [Dynamics and momentum](#phys.dynamics) and ask for the kinetic energy. Substitute \(v = p/m\) into \(\tfrac12 mv^2\):
+
+:::formula Kinetic energy from momentum
+\[E_\mathrm{K} = \frac12 m\left(\frac{p}{m}\right)^2 = \frac{p^2}{2m}\]
+\(p\): momentum (\(\mathrm{kg\,m\,s^{-1}}\)) · \(m\): mass (kg). For the same momentum, the **lighter** object has the **larger** kinetic energy.
+:::
+
+:::eg A car of mass 1200 kg and a cyclist and bicycle of total mass 60 kg each have a momentum of \(6.0 \times 10^{2}\,\mathrm{kg\,m\,s^{-1}}\). Calculate the kinetic energy of each.
+Car: \(E_\mathrm{K} = \dfrac{p^2}{2m} = \dfrac{(6.0 \times 10^{2})^2}{2 \times 1200}\) [C1] \(= 150\,\mathrm{J}\). [A1]
+Cyclist: \(E_\mathrm{K} = \dfrac{(6.0 \times 10^{2})^2}{2 \times 60} = 3.0 \times 10^{3}\,\mathrm{J}\). [A1]
+The car is crawling at \(0.50\,\mathrm{m\,s^{-1}}\) and the cyclist is moving at \(10\,\mathrm{m\,s^{-1}}\): equal momenta, but twenty times the kinetic energy for the object with one-twentieth of the mass.
 :::
 
 ## Solving energy problems
@@ -179,7 +194,7 @@ When the only force doing work is gravity, **kinetic energy gained = gravitation
 That is why a feather and a hammer fall at the same rate in a vacuum, and why the speed at the bottom of a pendulum swing does not depend on the mass of the bob.
 
 :::html
-<figure class="fig"><svg viewBox="0 0 600 340" role="img" aria-label="A roller coaster track descending from A at the top, through B halfway down, to C at the bottom, with a bar chart of gravitational and kinetic energy at each point. The two bars always add to the same total."><path class="ln dash thin" d="M30 150H570"/><path class="ln-m" d="M30 40H90C150 40 170 150 260 150C340 150 380 70 470 70H570"/><path class="c3 dash thin" d="M70 46V144" marker-end="url(#ahr)"/><circle class="fa" cx="70" cy="40" r="6"/><circle class="fa" cx="163.75" cy="95" r="6"/><circle class="fa" cx="260" cy="150" r="6"/><text class="tl tc" x="70" y="28">A</text><text class="tl" x="176" y="86">B</text><text class="tl tc" x="260" y="172">C</text><text class="tl" x="78" y="100">h = 35 m</text><path class="ln dash thin" d="M40 210H560"/><text class="tl tc" x="100" y="198">at A</text><rect class="f1 s-acc sw2" x="70" y="210" width="26" height="90"/><text class="tl tc" x="83" y="322">GPE</text><text class="tl tc" x="117" y="322">KE</text><text class="tl tc" x="300" y="198">at B</text><rect class="f1 s-acc sw2" x="270" y="255" width="26" height="45"/><rect class="f2 s-acc sw2" x="304" y="255" width="26" height="45"/><text class="tl tc" x="283" y="322">GPE</text><text class="tl tc" x="317" y="322">KE</text><text class="tl tc" x="500" y="198">at C</text><rect class="f2 s-acc sw2" x="504" y="210" width="26" height="90"/><text class="tl tc" x="483" y="322">GPE</text><text class="tl tc" x="517" y="322">KE</text><text class="tl" x="34" y="205">total</text><path class="ln" d="M40 300H560"/></svg><figcaption>With no friction, the bars at A, B and C always add to the same total (dashed line). At A, all the energy is gravitational. At B, half has become kinetic. At C, all of it is kinetic.</figcaption></figure>
+<figure class="fig"><svg viewBox="0 0 600 340" role="img" aria-label="A roller coaster track descending from A at the top, through B halfway down, to C at the bottom, with a bar chart of gravitational and kinetic energy at each point. The two bars always add to the same total."><path class="ln dash thin" d="M30 150H570"/><path class="ln-m" d="M30 40H90C150 40 170 150 260 150C340 150 380 70 470 70H570"/><path class="c3 dash thin" d="M70 46V144" marker-end="url(#ahr)"/><circle class="fa" cx="70" cy="40" r="6"/><circle class="fa" cx="163.75" cy="95" r="6"/><circle class="fa" cx="260" cy="150" r="6"/><text class="tl tc" x="70" y="28">A</text><text class="tl" x="176" y="86">B</text><text class="tl tc" x="260" y="172">C</text><text class="tl" x="78" y="100">h = 35 m</text><path class="ln dash thin" d="M40 210H560"/><text class="tl tc" x="100" y="198">at A</text><rect class="f1 s-acc sw2" x="70" y="210" width="26" height="90"/><text class="tl tc" x="83" y="322">GPE</text><text class="tl tc" x="117" y="322">KE</text><text class="tl tc" x="300" y="198">at B</text><rect class="f1 s-acc sw2" x="270" y="255" width="26" height="45"/><rect class="f2 s-acc sw2" x="304" y="255" width="26" height="45"/><text class="tl tc" x="283" y="322">GPE</text><text class="tl tc" x="317" y="322">KE</text><text class="tl tc" x="500" y="198">at C</text><rect class="f2 s-acc sw2" x="504" y="210" width="26" height="90"/><text class="tl tc" x="483" y="322">GPE</text><text class="tl tc" x="517" y="322">KE</text><text class="tl" x="34" y="205">total</text><path class="ln" d="M40 300H560"/></svg><figcaption>With no friction, the heights of the two bars at A, at B and at C always add up to the same total, the height of the dashed line. At A, all the energy is gravitational. At B, half has become kinetic. At C, all of it is kinetic.</figcaption></figure>
 :::
 
 :::eg A roller-coaster car starts from rest at the top of a track 35 m above the lowest point. Ignore friction. (a) Calculate its speed at the bottom. (b) In a second run, 20% of the energy it starts with is dissipated by friction and air resistance before the bottom. Calculate its speed at the bottom.
@@ -197,6 +212,16 @@ Only gravity does work on the bob (the tension is always perpendicular to the mo
 \[v = \sqrt{2g\Delta h} = \sqrt{2 \times 9.81 \times 0.20} = 2.0\,\mathrm{m\,s^{-1}}\]
 The result does not depend on the mass of the bob, or on the length of the string. Only the height matters.
 :::
+
+### Energy on graphs
+
+Exam questions often ask you to sketch how the energies change during a fall. Take a ball of mass 0.50 kg dropped from rest from a height of 20 m, with no air resistance. Its gravitational potential energy is \(mgh\), which is proportional to its height \(h\) above the ground, and the total is always \(mg \times 20 = 98.1\,\mathrm{J}\), so its kinetic energy is \(98.1 - mgh\).
+
+:::plot Energy against height for a 0.50 kg ball falling from 20 m with no air resistance. Read the graph from right to left as the ball falls: the gravitational potential energy line goes down and the kinetic energy line goes up, and at every height the two add up to 98.1 J.
+--f "4.905*x" --f "4.905*(20-x)" --x 0 20 --y 0 140 --xstep 5 --xlabel "h / m" --ylabel "E / J" --label "gravitational potential energy" --label "kinetic energy" --legend tr
+:::
+
+Both graphs against **height** are straight lines with gradients \(+mg\) and \(-mg\). Against **time** they are curves: the speed grows in proportion to time, so the kinetic energy \(\tfrac12 mv^2\) grows in proportion to \(t^2\) (a parabola starting flat at \(t = 0\)). With air resistance, the kinetic energy at each height is less than the line shows: the total falls below \(98.1\,\mathrm{J}\), and the shortfall is the work done against air resistance so far. At terminal velocity the kinetic energy stops changing, and all of the gravitational potential energy lost is dissipated as thermal energy, at the rate \(mgv\).
 
 :::eg A car of mass 1200 kg travelling at 20 m s⁻¹ brakes to rest. The total resistive force (brakes plus air resistance) is a constant 6000 N. Calculate the stopping distance.
 Kinetic energy at the start:
@@ -232,7 +257,7 @@ Give it as a ratio (0 to 1) or multiply by 100 for a percentage. It has no unit.
 Efficiency can never be above 1 (100%), because that would mean a machine produces more energy than it receives, which breaks the conservation of energy. Useful output plus dissipated energy always equals the input.
 
 :::html
-<figure class="fig"><svg viewBox="0 0 620 235" role="img" aria-label="A Sankey diagram for an electric motor: 200 joules of electrical energy in, 150 joules useful output lifting a load, 30 joules thermal in the windings and 20 joules thermal and sound elsewhere. The band widths are proportional to the energy."><path class="fm s-mute sw1" d="M30 60H130V160H30Z"/><text class="tl tc" x="80" y="115">200 J in</text><path class="fok s-mute sw1" d="M130 60H440V135H130Z"/><path class="fr s-mute sw1" d="M130 135C250 135 260 170 400 170V185C260 185 250 150 130 150Z"/><path class="fr s-mute sw1" d="M130 150C260 150 260 205 400 205V215C260 215 260 160 130 160Z"/><text class="tl" x="450" y="102">150 J useful (lifting)</text><text class="tl" x="410" y="182">30 J thermal (windings)</text><text class="tl" x="410" y="214">20 J thermal and sound</text><text class="tl tc" x="285" y="97">useful output</text></svg><figcaption>A Sankey diagram draws energy as bands whose widths are proportional to the energy. Here the efficiency is 150/200 = 0.75, or 75%.</figcaption></figure>
+<figure class="fig"><svg viewBox="15 45 565 188" role="img" aria-label="A Sankey diagram for an electric motor: 200 joules of electrical energy in, 150 joules useful output lifting a load, 30 joules thermal in the windings and 20 joules thermal and sound elsewhere. The band widths are proportional to the energy."><path class="fm s-mute sw1" d="M30 60H130V160H30Z"/><text class="tl tc" x="80" y="115">200 J in</text><path class="fok s-mute sw1" d="M130 60H440V135H130Z"/><path class="fr s-mute sw1" d="M130 135C250 135 260 170 400 170V185C260 185 250 150 130 150Z"/><path class="fr s-mute sw1" d="M130 150C260 150 260 205 400 205V215C260 215 260 160 130 160Z"/><text class="tl" x="450" y="102">150 J useful (lifting)</text><text class="tl" x="410" y="182">30 J thermal (windings)</text><text class="tl" x="410" y="214">20 J thermal and sound</text><text class="tl tc" x="285" y="97">useful output</text></svg><figcaption>A Sankey diagram draws energy as bands whose widths are proportional to the energy. Here the efficiency is 150/200 = 0.75, or 75%.</figcaption></figure>
 :::
 
 :::eg A lift motor raises a load of mass 800 kg through a height of 20 m in 25 s. The motor is 65% efficient. Calculate the electrical power it needs.
@@ -362,6 +387,8 @@ Q: [2 marks] ★ A child pulls a sledge a distance of 12 m across level snow wit
 A: \(W = Fs\cos\theta = 80 \times 12 \times \cos 35^\circ\) [C1] \(= 7.9 \times 10^{2}\,\mathrm{J}\). [A1]
 Q: [3 marks] ★★ A constant force \(F\) moves an object through a displacement \(s\) in time \(t\), along the direction of the force. Derive the equation \(P = Fv\) for the power \(P\), where \(v\) is the velocity of the object.
 A: Power \(P = W/t\), where \(W\) is the work done. [B1] The work done is \(W = Fs\), so \(P = Fs/t\). [B1] Since \(s/t = v\), \(P = Fv\). [B1]
+Q: [3 marks] ★★ (a) Show that the kinetic energy of an object of mass \(m\) and momentum \(p\) is \(p^2/2m\). (b) An alpha particle of mass \(6.64 \times 10^{-27}\,\mathrm{kg}\) has a momentum of \(1.0 \times 10^{-19}\,\mathrm{kg\,m\,s^{-1}}\). Calculate its kinetic energy.
+A: (a) \(v = p/m\), so \(E_\mathrm{K} = \tfrac12 m(p/m)^2 = p^2/2m\). [M1] (b) \(E_\mathrm{K} = \dfrac{(1.0 \times 10^{-19})^2}{2 \times 6.64 \times 10^{-27}}\) [C1] \(= 7.5 \times 10^{-13}\,\mathrm{J}\). [A1]
 Q: [3 marks] ★★ An electric motor is supplied with a p.d. of 12 V and a current of 2.5 A. It lifts a load of mass 3.0 kg through 1.2 m in 4.0 s. Calculate the efficiency of the motor.
 A: Useful power \(= mg\Delta h/t = 3.0 \times 9.81 \times 1.2/4.0 = 8.83\,\mathrm{W}\). [C1] Input power \(= VI = 12 \times 2.5 = 30\,\mathrm{W}\). [C1] Efficiency \(= 8.83/30 = 0.29\) (29%). [A1]
 Q: [6 marks] ★★ A cyclist and bicycle have a total mass of 85 kg. They freewheel from rest down a hill and reach a speed of \(15\,\mathrm{m\,s^{-1}}\) at the bottom, which is 24 m lower than the start. (a) Calculate the loss of gravitational potential energy. (b) Calculate the gain in kinetic energy. (c) Calculate the energy dissipated. (d) State the main form into which this energy is transferred.
@@ -436,7 +463,7 @@ A: (a) The volume of air per second is \(Av\), so the mass per second is \(\rho 
 :::checklist What you can now do
 - [ ] I can define work done and the joule, and use \(W = Fs\cos\theta\) for a force at an angle to the displacement.
 - [ ] I can state the principle of conservation of energy and use it to solve problems with friction, slopes and falling objects.
-- [ ] I can derive and use \(\Delta E_\mathrm{P} = mg\Delta h\) and \(E_\mathrm{K} = \tfrac12 mv^2\).
+- [ ] I can derive and use \(\Delta E_\mathrm{P} = mg\Delta h\) and \(E_\mathrm{K} = \tfrac12 mv^2\), use \(E_\mathrm{K} = p^2/2m\), and sketch how the energies change during a fall.
 - [ ] I can define efficiency and use it to find input or output energy and power.
 - [ ] I can define power and use \(P = W/t\), and derive and use \(P = Fv\).
 - [ ] I can use the area under a force–displacement graph as work done.
@@ -447,7 +474,7 @@ A: (a) The volume of air per second is \(Av\), so the mass per second is \(\rho 
 - Work done = force × displacement in the direction of the force: \(W = Fs\cos\theta\). Perpendicular force: zero work. Opposing force: negative work. Area under a force–displacement graph = work done. 1 J = 1 N m.
 - Energy is conserved: it is transferred between stores, never created or destroyed. "Lost" energy is dissipated as thermal energy.
 - \(\Delta E_\mathrm{P} = mg\Delta h\) (vertical height, uniform field) and \(E_\mathrm{K} = \tfrac12 mv^2\), both derived from \(W = Fs\).
-- Falling with no friction: \(v = \sqrt{2gh}\), independent of mass.
+- Falling with no friction: \(v = \sqrt{2gh}\), independent of mass. Kinetic energy from momentum: \(E_\mathrm{K} = p^2/2m\).
 - Efficiency = useful output / total input (energy or power), never above 1.
 - Power \(P = W/t\) (1 W = 1 J s⁻¹) and \(P = Fv\). At constant velocity, driving force = resistive force.
 - 1 kW h = \(3.6 \times 10^{6}\) J.

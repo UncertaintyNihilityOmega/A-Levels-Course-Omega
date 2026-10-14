@@ -150,4 +150,15 @@ eq("wind P", sf(Pw, 2), 3.0e6)
 eq("wind x8", 2**3, 8)
 eq("wind elec", sf(0.40 * 3.0e6, 2), 1.2e6)
 
+# Review additions: kinetic energy from momentum
+p_ = 6.0e2
+eq("pKE car", p_**2 / (2 * 1200), 150)
+eq("pKE cyc", p_**2 / (2 * 60), 3.0e3)
+eq("v car", p_ / 1200, 0.50); eq("v cyc", p_ / 60, 10)
+eq("ratio", (p_**2 / 120) / (p_**2 / 2400), 20)
+eq("alpha KE", sf((1.0e-19)**2 / (2 * 6.64e-27), 2), 7.5e-13, 1e-20)
+# Energy on graphs: 0.50 kg from 20 m
+eq("mg", 0.50 * g, 4.905)
+eq("total", sf(0.50 * g * 20, 3), 98.1)
+
 print("ok")

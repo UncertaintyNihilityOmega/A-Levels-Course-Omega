@@ -133,4 +133,14 @@ eq("s2 E", 0.5 * 12 * 0.20, 1.2)
 eq("quiz E", 0.5 * 100 * 0.10**2, 0.50)
 eq("quiz 4", 2**2, 4)
 
+# Review additions: stress-strain graph, energy on unloading
+eq("ss steel", 1.0e8 / 0.50e-3, 2.0e11, 1)
+eq("ss copper", 1.2 * 0.50, 0.60)
+eq("ss copper E", 0.60e8 / 0.50e-3, 1.2e11, 1)
+eq("try ss", sf(1.8e8 / 1.5e-3, 2), 1.2e11, 1)
+Er = 0.5 * 60 * (6.0 - 3.6) * 1e-3
+eq("unload rec", Er, 0.072)
+eq("unload diss 2sf", sf(0.25 - Er, 2), 0.18)
+assert Er / 0.25 < 1 / 3
+
 print("ok")

@@ -223,8 +223,8 @@
             ctx.fillStyle = color; ctx.beginPath(); ctx.arc(X(tm), Y(yAt(x, tm)), 5, 0, TAU); ctx.fill();
           });
           ctx.restore();
-          label(ctx, col, 'P (solid)', w - geo.pr - 6, ax.pad.t + 14, 'right', col.red);
-          label(ctx, col, 'Q (dashed)', w - geo.pr - 6, ax.pad.t + 32, 'right', col.sc2);
+          label(ctx, col, 'P (solid)', geo.pl, h - 2, 'left', col.red);
+          label(ctx, col, 'Q (dashed)', geo.pl + 84, h - 2, 'left', col.sc2);
         }
       });
 
@@ -312,7 +312,7 @@
         draw(ctx, w, h, col) {
           const k = st.n * Math.PI / L, om = TAU / TD;
           const ax = W.axes(ctx, w, h, { x0: 0, x1: L, y0: -YM, y1: YM }, col,
-            { pad: { l: 46, r: 14, t: 18, b: 34 }, xlabel: 'distance along the string / m', ylabel: 'y / cm' });
+            { pad: { l: 46, r: 14, t: 18, b: 34 }, xlabel: 'x / m', ylabel: 'y / cm' });
           const { X, Y } = ax;
           ctx.save();
           ctx.beginPath(); ctx.rect(ax.pad.l, ax.pad.t, w - ax.pad.l - ax.pad.r, h - ax.pad.t - ax.pad.b); ctx.clip();
@@ -333,7 +333,7 @@
           for (let m = 0; m <= st.n; m++) {
             const x = m * L / st.n;
             ctx.fillStyle = col.ink; ctx.beginPath(); ctx.arc(X(x), Y(0), 4, 0, TAU); ctx.fill();
-            label(ctx, col, 'N', Math.min(w - 20, Math.max(ax.pad.l + 10, X(x))), Y(0) + 20, 'center', col.ink);
+            label(ctx, col, 'N', Math.min(w - 20, Math.max(ax.pad.l + 10, X(x))), h - ax.pad.b - 6, 'center', col.ink);
           }
           for (let m = 0; m < st.n; m++) {
             const x = (m + 0.5) * L / st.n;

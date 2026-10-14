@@ -135,12 +135,30 @@ Rearrange \(E = \dfrac{FL}{Ax}\) for the extension:
 The strain is only \(1.9 \times 10^{-3}/3.0 = 6.4 \times 10^{-4}\). Metals stretch by tiny fractions of their length, and that is why measuring \(E\) needs a long wire and careful readings.
 :::
 
+### Stress–strain graphs
+
+A force–extension graph describes one particular sample. Plot **stress against strain** instead and the graph describes the **material**: a thick and a thin wire of the same metal give the same line. Within the limit of proportionality the line is straight, and
+
+\[\text{gradient of the stress–strain graph} = \frac{\sigma}{\varepsilon} = E\]
+
+so the steeper line belongs to the stiffer material. (On a force–extension graph the gradient is the spring constant \(k = EA/L\) of that sample instead.)
+
+:::plot Stress against strain for steel and copper, within their limits of proportionality. The steeper line is the stiffer material. Note the powers of ten in the axis labels.
+--f "2.0*x" --f "1.2*x" --x 0 0.5 --y 0 1.4 --xstep 0.1 --xlabel "ε / 10⁻³" --ylabel "σ / 10⁸ Pa" --label "steel" --label "copper" --legend tr
+:::
+
+:::eg Use the graph to find the Young modulus of each metal.
+Steel: at \(\varepsilon = 0.50 \times 10^{-3}\), \(\sigma = 1.0 \times 10^{8}\,\mathrm{Pa}\), so \(E = \dfrac{1.0 \times 10^{8}}{0.50 \times 10^{-3}}\) [C1] \(= 2.0 \times 10^{11}\,\mathrm{Pa}\). [A1]
+Copper: at \(\varepsilon = 0.50 \times 10^{-3}\), \(\sigma = 0.60 \times 10^{8}\,\mathrm{Pa}\), so \(E = 1.2 \times 10^{11}\,\mathrm{Pa}\). [A1]
+Read the powers of ten from the axis labels: "\(\varepsilon / 10^{-3}\)" means that a reading of 0.50 is a strain of \(0.50 \times 10^{-3}\). The line passes through the origin, so one point far along it is enough; for a line that does not, take two points far apart.
+:::
+
 ## Measuring the Young modulus of a metal wire
 
 Because the extension is so small, the experiment uses a **long, thin wire**: a long wire has a larger extension for the same strain, and a thin wire has a larger stress (and hence strain) for the same load. Both make the extension easier to measure, which reduces its percentage uncertainty.
 
 :::html
-<figure class="fig"><svg viewBox="0 0 620 240" role="img" aria-label="Apparatus for the Young modulus of a wire: a long horizontal wire clamped at the left, passing over a pulley at the right with slotted masses hanging from it, a marker on the wire next to a fixed metre rule, and the original length L measured from the clamp to the marker."><rect class="f1 s-acc sw2" x="30" y="70" width="30" height="60"/><text class="tl tc" x="45" y="150">clamp</text><path class="ln" d="M60 100H520"/><text class="tl tc" x="160" y="92">test wire</text><path class="c1" d="M210 70H62" marker-end="url(#ah-phys)"/><path class="c1" d="M210 70H358" marker-end="url(#ah-phys)"/><text class="tl ti tc" x="210" y="62">L</text><path class="fa" d="M354 100H366L360 116Z"/><rect class="fm s-mute sw1" x="300" y="132" width="140" height="16"/><path class="ln-m thin" d="M314 132V140M328 132V140M342 132V140M356 132V140M370 132V140M384 132V140M398 132V140M412 132V140M426 132V140"/><text class="tl tc" x="370" y="172">marker and fixed metre rule</text><circle class="fp s-ink sw2" cx="520" cy="118" r="18"/><text class="tl tc" x="520" y="84">pulley</text><path class="ln" d="M538 118V188"/><rect class="f1 s-acc sw2" x="526" y="188" width="24" height="12"/><rect class="f1 s-acc sw2" x="526" y="200" width="24" height="12"/><rect class="f1 s-acc sw2" x="526" y="212" width="24" height="12"/><text class="tl te" x="516" y="212">slotted masses</text></svg><figcaption>The marker moves along the metre rule as masses are added. The original length L is measured from the clamp to the marker with the load on its first (small) value, and the extension is read from the rule.</figcaption></figure>
+<figure class="fig"><svg viewBox="15 30 550 208" role="img" aria-label="Apparatus for the Young modulus of a wire: a long horizontal wire clamped at the left, passing over a pulley at the right with slotted masses hanging from it, a marker on the wire next to a fixed metre rule, and the original length L measured from the clamp to the marker."><rect class="f1 s-acc sw2" x="30" y="70" width="30" height="60"/><text class="tl tc" x="45" y="150">clamp</text><path class="ln" d="M60 100H520"/><text class="tl tc" x="160" y="92">test wire</text><path class="ln thin dash" d="M360 52V96"/><path class="c1" d="M210 56H62" marker-end="url(#ah-phys)"/><path class="c1" d="M210 56H358" marker-end="url(#ah-phys)"/><text class="tl ti tc" x="210" y="48">L</text><path class="fa" d="M354 100H366L360 116Z"/><rect class="fm s-mute sw1" x="300" y="132" width="140" height="16"/><path class="ln-m thin" d="M314 132V140M328 132V140M342 132V140M356 132V140M370 132V140M384 132V140M398 132V140M412 132V140M426 132V140"/><text class="tl tc" x="370" y="172">marker and fixed metre rule</text><circle class="fp s-ink sw2" cx="520" cy="118" r="18"/><text class="tl tc" x="520" y="84">pulley</text><path class="ln" d="M538 118V188"/><rect class="f1 s-acc sw2" x="526" y="188" width="24" height="12"/><rect class="f1 s-acc sw2" x="526" y="200" width="24" height="12"/><rect class="f1 s-acc sw2" x="526" y="212" width="24" height="12"/><text class="tl te" x="516" y="212">slotted masses</text></svg><figcaption>The marker moves along the metre rule as masses are added. The original length L is measured from the clamp to the marker with the load on its first (small) value, and the extension is read from the rule.</figcaption></figure>
 :::
 
 :::lab Measuring the Young modulus of a metal wire
@@ -183,7 +201,7 @@ The maximum load (or stress) beyond which the object will not return to its orig
 For many metals, the limit of proportionality and the elastic limit are close together, and the elastic limit may be slightly further along. A material can be elastic but not proportional, such as rubber. The graph shows what happens to a ductile metal wire as the load rises.
 
 :::html
-<figure class="fig"><svg viewBox="0 0 580 300" role="img" aria-label="Force against extension graph for a metal wire. The line is straight from the origin O to P, the limit of proportionality. The curve continues through E, the elastic limit, into the plastic region and reaches the breaking point. If unloaded from U, the line returns parallel to OP and meets the extension axis at a permanent extension."><path class="ax" d="M70 250V25" marker-end="url(#ah)"/><path class="ax" d="M70 250H555" marker-end="url(#ah)"/><text class="tl" x="78" y="26">F</text><text class="tl te" x="572" y="272">x</text><path class="c1" d="M70 250L170 120Q200 81 270 60Q340 40 400 44Q430 46 445 80"/><path class="c2" d="M337.5 46L180.6 250" marker-end="url(#ah2-phys)"/><circle class="fa" cx="170" cy="120" r="5"/><circle class="fa" cx="187.5" cy="101.6" r="5"/><circle class="fa" cx="337.5" cy="46" r="5"/><circle class="fa" cx="445" cy="80" r="5"/><text class="tl te" x="160" y="120">P</text><text class="tl te" x="180" y="94">E</text><text class="tl tc" x="337" y="32">U</text><text class="tl" x="454" y="84">breaks</text><text class="tl" x="268" y="176">unloading line,</text><text class="tl" x="268" y="194">parallel to OP</text><path class="c1" d="M125.3 270H72" marker-end="url(#ah-phys)"/><path class="c1" d="M125.3 270H178.6" marker-end="url(#ah-phys)"/><text class="tl tc" x="125" y="292">permanent extension</text></svg><figcaption>P is the limit of proportionality and E the elastic limit. Past E the wire deforms plastically. Unloading from U, the extension falls along a line parallel to OP, and the wire is left with a permanent extension.</figcaption></figure>
+<figure class="fig"><svg viewBox="45 5 535 295" role="img" aria-label="Force against extension graph for a metal wire. The line is straight from the origin O to P, the limit of proportionality. The curve continues through E, the elastic limit, into the plastic region and reaches the breaking point. If unloaded from U, the line returns parallel to OP and meets the extension axis at a permanent extension."><path class="ax" d="M70 250V25" marker-end="url(#ah)"/><path class="ax" d="M70 250H555" marker-end="url(#ah)"/><text class="tl" x="78" y="26">F</text><text class="tl te" x="64" y="266">O</text><text class="tl te" x="572" y="272">x</text><path class="c1" d="M70 250L170 120Q200 81 270 60Q340 40 400 44Q430 46 445 80"/><path class="c2" d="M337.5 46L180.6 250" marker-end="url(#ah2-phys)"/><circle class="fa" cx="170" cy="120" r="5"/><circle class="fa" cx="187.5" cy="101.6" r="5"/><circle class="fa" cx="337.5" cy="46" r="5"/><circle class="fa" cx="445" cy="80" r="5"/><text class="tl te" x="160" y="120">P</text><text class="tl te" x="180" y="94">E</text><text class="tl tc" x="337" y="32">U</text><text class="tl" x="454" y="84">breaks</text><text class="tl" x="268" y="176">unloading line,</text><text class="tl" x="268" y="194">parallel to OP</text><path class="c1" d="M125.3 270H72" marker-end="url(#ah-phys)"/><path class="c1" d="M125.3 270H178.6" marker-end="url(#ah-phys)"/><text class="tl tc" x="125" y="292">permanent extension</text></svg><figcaption>P is the limit of proportionality and E the elastic limit. Past E the wire deforms plastically. Unloading from U, the extension falls along a line parallel to OP, and the wire is left with a permanent extension.</figcaption></figure>
 :::
 
 Read the graph from the origin outwards.
@@ -192,6 +210,16 @@ Read the graph from the origin outwards.
 - **P to E**: the curve bends, so extension is no longer proportional to load, but the wire still returns to its original length when the load is removed.
 - **Beyond E**: plastic deformation. The extension keeps growing, and when the load is removed the wire is left permanently longer.
 - **Unloading from U**: the force falls along a line **parallel** to the original straight line OP. When the force reaches zero, the extension left is the permanent extension.
+
+Energy is not all given back when a wire is stretched past its elastic limit. The work done in loading is the area under the loading curve from O to U. On unloading, the wire gives back only the area under the unloading line (a triangle). The **area between the loading curve and the unloading line** is the energy that stays in the wire: it has gone into rearranging the metal's structure and heating it.
+
+:::eg A copper wire is loaded beyond its elastic limit to a force of 60 N, where its extension is 6.0 mm. The area under the loading curve is 0.25 J. When the load is removed, the wire is left with a permanent extension of 3.6 mm. Calculate the energy recovered on unloading and the energy dissipated in the wire.
+The unloading line is straight, from (6.0 mm, 60 N) down to (3.6 mm, 0), so the energy recovered is a triangle:
+\[E = \tfrac12 \times 60 \times (6.0 - 3.6) \times 10^{-3}\] [C1]
+\[E = 0.072\,\mathrm{J}\] [A1]
+Energy dissipated \(= 0.25 - 0.072 = 0.18\,\mathrm{J}\). [A1]
+Less than a third of the work done comes back. This is why a car's crumple zone is made of metal that deforms plastically: it absorbs the kinetic energy instead of returning it.
+:::
 
 Different materials behave differently.
 
@@ -232,7 +260,7 @@ Using \(F = kx\) gives \(E_\mathrm{P} = \tfrac12 (kx)x = \tfrac12 kx^2\).
 :::
 
 :::plot The graph of force against extension for the spring in the earlier example (\(k = 40\,\mathrm{N\,m^{-1}}\)) is a straight line. The shaded triangle is the energy stored when the extension is 0.123 m.
---f "40*x" --x 0 0.2 --y 0 8 --shade "0,0,0.1226" --pt "0.1226,4.905,(0.123 m, 4.9 N)@nw" --xlabel "x / m" --ylabel "F / N" --label "F = 40x"
+--f "40*x" --x 0 0.2 --y 0 10 --xstep 0.05 --shade "0,0,0.1226" --pt "0.1226,4.905,(0.123 m, 4.9 N)@nw" --xlabel "x / m" --ylabel "F / N" --label "F = 40x"
 :::
 
 :::eg Calculate the energy stored in the spring with \(k = 40\,\mathrm{N\,m^{-1}}\) when it supports the 0.50 kg mass (extension 0.123 m). Then find the energy stored if the extension is doubled.
@@ -290,6 +318,8 @@ Q: Two identical springs, each with \(k = 80\,\mathrm{N\,m^{-1}}\), are joined e
 A: In series, \(\dfrac{1}{k} = \dfrac{1}{80} + \dfrac{1}{80} = \dfrac{2}{80}\), so \(k = 40\,\mathrm{N\,m^{-1}}\).
 Q: A wire of Young modulus \(2.0 \times 10^{11}\,\mathrm{Pa}\) has a strain of \(1.5 \times 10^{-3}\). Calculate the stress.
 A: \(\sigma = E\varepsilon = 2.0 \times 10^{11} \times 1.5 \times 10^{-3} = 3.0 \times 10^{8}\,\mathrm{Pa}\).
+Q: The straight part of a stress–strain graph passes through the origin and the point (strain \(1.5 \times 10^{-3}\), stress \(1.8 \times 10^{8}\,\mathrm{Pa}\)). Find the Young modulus of the material.
+A: \(E = \text{gradient} = \dfrac{1.8 \times 10^{8}}{1.5 \times 10^{-3}} = 1.2 \times 10^{11}\,\mathrm{Pa}\) (a value typical of copper).
 Q: A wire is replaced by another of the same material and length but double the diameter. The same load is applied. How does the extension change?
 A: The area is four times larger (\(A \propto d^2\)), and \(x = FL/(AE)\) so the extension is four times smaller.
 Q: Explain the difference between the limit of proportionality and the elastic limit.
@@ -385,19 +415,19 @@ A: (a) The parallel pair has \(k = 60 + 90 = 150\,\mathrm{N\,m^{-1}}\). [C1] In 
 :::checklist What you can now do
 - [ ] I can explain that deformation is caused by tensile or compressive forces, and use the terms load, extension, compression and limit of proportionality.
 - [ ] I can state and use Hooke's law and the spring constant \(k = F/x\).
-- [ ] I can define and use stress, strain and the Young modulus.
+- [ ] I can define and use stress, strain and the Young modulus, and find \(E\) from the gradient of a stress–strain graph.
 - [ ] I can describe an experiment to determine the Young modulus of a metal wire.
 - [ ] I can distinguish elastic from plastic deformation and the elastic limit from the limit of proportionality.
-- [ ] I can explain that the area under a force–extension graph is the work done.
+- [ ] I can explain that the area under a force–extension graph is the work done, and find the energy dissipated when a wire is loaded past its elastic limit and unloaded.
 - [ ] I can find elastic potential energy from the area under a graph and use \(E_\mathrm{P} = \tfrac12 Fx = \tfrac12 kx^2\).
 :::
 
 :::recap
 - Load causes extension (tension) or compression. Hooke's law: extension is proportional to load up to the limit of proportionality; \(F = kx\), and \(k\) (N m⁻¹) belongs to the object.
-- Stress \(\sigma = F/A\) (Pa). Strain \(\varepsilon = x/L\) (no unit). Young modulus \(E = \sigma/\varepsilon = FL/(Ax)\) (Pa), a property of the material.
+- Stress \(\sigma = F/A\) (Pa). Strain \(\varepsilon = x/L\) (no unit). Young modulus \(E = \sigma/\varepsilon = FL/(Ax)\) (Pa), a property of the material: the gradient of a stress–strain graph.
 - Young modulus experiment: a long thin wire, \(L\) with a rule, \(d\) with a micrometer in several places, add loads in steps, plot \(F\) against \(x\), \(E = \text{gradient} \times L/A\).
 - Elastic: returns to its original length when the load is removed. Plastic: permanent extension. Beyond the elastic limit, unloading follows a line parallel to the original straight line.
-- Area under the force–extension graph = work done. Within the limit of proportionality: \(E_\mathrm{P} = \tfrac12 Fx = \tfrac12 kx^2\).
+- Area under the force–extension graph = work done. Past the elastic limit, the area between the loading curve and the unloading line is dissipated. Within the limit of proportionality: \(E_\mathrm{P} = \tfrac12 Fx = \tfrac12 kx^2\).
 - Springs: series \(1/k = 1/k_1 + 1/k_2\); parallel \(k = k_1 + k_2\).
 :::
 
