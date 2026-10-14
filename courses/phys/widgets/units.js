@@ -79,7 +79,8 @@
     }
     function sci(x) {
       if (x === 0) return { m: '0.000', e: 0 };
-      const p = x.toExponential(3).split('e');
+      // nudge by 1e-13 so that halves stored just below (298.15) round up, as on a calculator
+      const p = (x * (1 + 1e-13)).toExponential(3).split('e');
       return { m: p[0], e: parseInt(p[1], 10) };
     }
     function sciStr(x, unit) {
@@ -104,7 +105,9 @@
     function ratioStr(r) {
       const l = Math.log10(r);
       if (Math.abs(l - Math.round(l)) < 1e-9) { const k = Math.round(l); return k === 0 ? '1' : '10' + supStr(k); }
-      return sciStr(r, '');
+      if (Number.isInteger(r) && r < 1e5) return String(r);
+      const q = Number(r.toPrecision(4)).toExponential().split('e');
+      return q[0] + ' × 10' + supStr(parseInt(q[1], 10));
     }
     function expStr(v) {
       const names = ['kg', 'm', 's', 'A'];

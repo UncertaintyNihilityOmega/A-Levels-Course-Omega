@@ -97,7 +97,7 @@ Gradient = rise over run = (change in the \(y\) quantity) / (change in the \(x\)
 On an \(s\)–\(t\) graph, a horizontal line means the object is at rest, and a straight sloping line means constant velocity. A steeper line means a larger speed. A line sloping downwards means the object is moving in the negative direction. A curve means the velocity is changing.
 
 :::plot A car accelerating from rest has displacement \(s = 5t^{2}\). The gradient of the tangent at \(t = 2\,\mathrm{s}\) is its velocity at that moment.
---f "5*x**2" --f "20*x-20" --x 0 4 --y 0 80 --pt "2,20,(2.0 s, 20 m)@nw" --pt "1,0,(1.0 s, 0)@s" --pt "3,40,(3.0 s, 40 m)@se" --xlabel "t / s" --ylabel "s / m" --label "s = 5t²" --label "tangent at t = 2 s" --legend tl
+--f "5*x**2" --f "20*x-20" --x 0 4 --y 0 100 --xstep 1 --pt "2,20,(2.0 s, 20 m)@nw" --pt "1,0,(1.0 s, 0)@se" --pt "3,40,(3.0 s, 40 m)@se" --xlabel "t / s" --ylabel "s / m" --label "s = 5t²" --label "tangent at t = 2 s" --legend tr
 :::
 
 :::eg Use the tangent in the graph above to find the velocity of the car at \(t = 2.0\,\mathrm{s}\).
@@ -166,7 +166,7 @@ The five quantities are \(s\), \(u\), \(v\), \(a\) and \(t\). Each equation leav
 The first equation is the definition of acceleration rearranged. To see where the others come from, look at a \(v\)–\(t\) graph for constant acceleration, which is a straight line.
 
 :::html
-<figure class="fig small"><svg viewBox="30 10 360 215" role="img" aria-label="A velocity–time graph with a straight line from velocity u at time 0 to velocity v at time t. A rectangle of height u below the line has area u times t, and a triangle on top has area one half of (v minus u) times t."><path class="f1 s-acc sw1" d="M60 130H300V190H60Z"/><path class="f2 s-acc2 sw1" d="M60 130H300V50Z"/><path class="ax" d="M60 190H340"/><path class="ax" d="M60 190V25"/><path class="c1" d="M60 130L300 50"/><path class="ln-m dash thin" d="M300 190V50"/><text class="tl ti te" x="52" y="134">u</text><text class="tl ti" x="310" y="54">v</text><text class="tl ti tc" x="300" y="208">t</text><text class="tl tc" x="60" y="208">0</text><text class="tl tc" x="180" y="168">area = ut</text><text class="tl tc" x="212" y="118">area = ½(v − u)t</text><text class="tl" x="68" y="22">v</text><text class="tl" x="346" y="194">t</text><text class="tl" x="100" y="94">gradient = a</text></svg><figcaption>For constant acceleration, the area under the line is a rectangle (u × t) plus a triangle (½ × (v − u) × t). The gradient of the line is a.</figcaption></figure>
+<figure class="fig small"><svg viewBox="30 10 360 215" role="img" aria-label="A velocity–time graph with a straight line from velocity u at time 0 to velocity v at time t. A rectangle of height u below the line has area u times t, and a triangle on top has area one half of (v minus u) times t."><path class="f1 s-acc sw1" d="M60 130H300V190H60Z"/><path class="f2 s-acc2 sw1" d="M60 130H300V50Z"/><path class="ax" d="M60 190H340"/><path class="ax" d="M60 190V25"/><path class="c1" d="M60 130L300 50"/><path class="ln-m dash thin" d="M300 190V50"/><text class="tl ti te" x="52" y="134">u</text><text class="tl ti" x="310" y="54">v</text><text class="tl ti tc" x="300" y="208">t</text><text class="tl tc" x="60" y="208">0</text><text class="tl tc" x="180" y="168">area = ut</text><text class="tl tc" x="212" y="118">area = ½(v − u)t</text><text class="tl" x="68" y="22">v</text><text class="tl" x="346" y="194">t</text><text class="tl" x="78" y="82">gradient = a</text></svg><figcaption>For constant acceleration, the area under the line is a rectangle (u × t) plus a triangle (½ × (v − u) × t). The gradient of the line is a.</figcaption></figure>
 :::
 
 :::proof examinable Deriving the equations of uniformly accelerated motion
@@ -226,7 +226,7 @@ Near the Earth's surface, an object that is let go falls with an acceleration th
 The four equations apply to free fall with \(a = \pm g\). **Choose up or down as positive and stay with it.** If up is positive, then \(a = -9.81\,\mathrm{m\,s^{-2}}\). If down is positive, then \(a = +9.81\,\mathrm{m\,s^{-2}}\), and an upward initial velocity must then be negative. This is where most marks are lost.
 
 :::plot Velocity–time graph for a ball thrown upwards at 15 m s⁻¹ (up is positive). The gradient is −9.81 m s⁻² throughout, including at the top, where v = 0.
---f "15-9.81*x" --x 0 3.2 --y -17 17 --pt "1.53,0,top: v = 0 at 1.53 s@ne" --pt "0,15,15 m s⁻¹@ne" --xlabel "t / s" --ylabel "v / m s⁻¹" --label "v = 15 − 9.81t" --legend tr
+--f "15-9.81*x" --x 0 3.2 --y -20 20 --pt "1.53,0,top: v = 0 at 1.53 s@ne" --pt "0,15,15 m s⁻¹@ne" --xlabel "t / s" --ylabel "v / m s⁻¹" --label "v = 15 − 9.81t" --legend tr
 :::
 
 Two facts follow from the graph. First, at the highest point the velocity is zero **but the acceleration is not**: the line has the same slope there as everywhere else. Second, the ball returns to its starting level with the same speed it had when it left, but moving downwards, because the areas above and below the axis cancel when it is back at the start.
@@ -288,7 +288,7 @@ If there is a release delay \(\delta\), the measured time is \(t = t_\mathrm{fal
 
 Gradient \(= \dfrac{0.507 - 0.214}{1.095 - 0.447} = 0.452\,\mathrm{s\,m^{-1/2}}\). [C1]
 
-The gradient is \(\sqrt{2/g}\), so \(g = \dfrac{2}{0.452^{2}} = 9.79\,\mathrm{m\,s^{-2}}\). [A1]
+The gradient is \(\sqrt{2/g}\). Keep the unrounded gradient (0.4522) in your calculator, so \(g = \dfrac{2}{0.4522^{2}} = 9.78\,\mathrm{m\,s^{-2}}\). [A1]
 
 The intercept is \(c = 0.214 - 0.452 \times 0.447 = 0.012\,\mathrm{s}\), a delay of about 12 ms. [A1]
 :::
@@ -306,7 +306,7 @@ The two motions are **independent** and share only the time. Find the time from 
 :::
 
 :::html
-<figure class="fig wide"><svg viewBox="0 40 590 255" role="img" aria-label="A parabolic path from launch to landing on level ground, with arrows at five points. The horizontal velocity arrow has the same length at every point. The vertical velocity arrow points up and gets shorter, is zero at the top, then points down and grows again."><path class="ln-m dash thin" d="M40 230H580"/><path class="ln" d="M60 230Q280 -30 500 230"/><circle class="fi" cx="60" cy="230" r="4"/><circle class="fi" cx="170" cy="132.5" r="4"/><circle class="fi" cx="280" cy="100" r="4"/><circle class="fi" cx="390" cy="132.5" r="4"/><circle class="fi" cx="500" cy="230" r="4"/><path class="c1" d="M60 230H120" marker-end="url(#ah-phys)"/><path class="c2" d="M60 230V160" marker-end="url(#ah2-phys)"/><path class="c1" d="M170 132.5H230" marker-end="url(#ah-phys)"/><path class="c2" d="M170 132.5V97.5" marker-end="url(#ah2-phys)"/><path class="c1" d="M280 100H340" marker-end="url(#ah-phys)"/><path class="c1" d="M390 132.5H450" marker-end="url(#ah-phys)"/><path class="c2" d="M390 132.5V167.5" marker-end="url(#ah2-phys)"/><path class="c1" d="M500 230H560" marker-end="url(#ah-phys)"/><path class="c2" d="M500 230V280" marker-end="url(#ah2-phys)"/><text class="tl ta" x="66" y="248">u cos θ</text><text class="tl te ta2" x="52" y="196">u sin θ</text><text class="tl tc" x="280" y="86">highest point: vertical component is zero</text><text class="tl te" x="492" y="262">same vertical speed as at launch</text></svg><figcaption>The horizontal arrow (blue) is the same at every point because no horizontal force acts. The vertical arrow (green) shrinks as the projectile rises, vanishes at the top and grows again as it falls. At the top the velocity is not zero: it is the horizontal component.</figcaption></figure>
+<figure class="fig wide"><svg viewBox="0 40 590 255" role="img" aria-label="A parabolic path from launch to landing on level ground, with arrows at five points. The horizontal velocity arrow has the same length at every point. The vertical velocity arrow points up and gets shorter, is zero at the top, then points down and grows again."><path class="ln-m dash thin" d="M40 230H580"/><path class="ln" d="M60 230Q280 -30 500 230"/><circle class="fi" cx="60" cy="230" r="4"/><circle class="fi" cx="170" cy="132.5" r="4"/><circle class="fi" cx="280" cy="100" r="4"/><circle class="fi" cx="390" cy="132.5" r="4"/><circle class="fi" cx="500" cy="230" r="4"/><path class="c1" d="M60 230H120" marker-end="url(#ah-phys)"/><path class="c2" d="M60 230V160" marker-end="url(#ah2-phys)"/><path class="c1" d="M170 132.5H230" marker-end="url(#ah-phys)"/><path class="c2" d="M170 132.5V97.5" marker-end="url(#ah2-phys)"/><path class="c1" d="M280 100H340" marker-end="url(#ah-phys)"/><path class="c1" d="M390 132.5H450" marker-end="url(#ah-phys)"/><path class="c2" d="M390 132.5V167.5" marker-end="url(#ah2-phys)"/><path class="c1" d="M500 230H560" marker-end="url(#ah-phys)"/><path class="c2" d="M500 230V280" marker-end="url(#ah2-phys)"/><text class="tl ta" x="66" y="248">u cos θ</text><text class="tl te ta2" x="52" y="196">u sin θ</text><text class="tl tc" x="280" y="86">highest point: vertical component is zero</text><text class="tl te" x="492" y="262">same vertical speed as at launch</text></svg><figcaption>The horizontal arrow is the same at every point because no horizontal force acts. The vertical arrow shrinks as the projectile rises, vanishes at the top and grows again as it falls. At the top the velocity is not zero: it is the horizontal component.</figcaption></figure>
 :::
 
 ### Horizontal launch
@@ -318,11 +318,11 @@ Take **down as positive**. Vertical: \(u_y = 0\), \(a = +9.81\,\mathrm{m\,s^{-2}
 
 (a) \(s_y = u_y t + \tfrac12 at^{2}\) gives \(500 = \tfrac12 \times 9.81 \times t^{2}\), so
 \[t = \sqrt{\frac{2 \times 500}{9.81}} = 10.1\,\mathrm{s}\] [C1 A1]
-(b) \(s_x = u_x t = 60 \times 10.10 = 606\,\mathrm{m}\), about \(6.1 \times 10^{2}\,\mathrm{m}\). [A1]
+(b) \(s_x = u_x t = 60 \times 10.096 = 606\,\mathrm{m}\), about \(6.1 \times 10^{2}\,\mathrm{m}\). [A1]
 
-(c) Vertical velocity on landing: \(v_y = u_y + at = 9.81 \times 10.10 = 99.1\,\mathrm{m\,s^{-1}}\). The horizontal component is still \(60\,\mathrm{m\,s^{-1}}\).
-\[v = \sqrt{60^{2} + 99.1^{2}} = 116\,\mathrm{m\,s^{-1}}\] [C1 A1]
-\[\theta = \tan^{-1}\frac{99.1}{60} = 58.8^\circ \text{ below the horizontal}\] [A1]
+(c) Vertical velocity on landing: \(v_y = u_y + at = 9.81 \times 10.096 = 99.0\,\mathrm{m\,s^{-1}}\). The horizontal component is still \(60\,\mathrm{m\,s^{-1}}\).
+\[v = \sqrt{60^{2} + 99.0^{2}} = 116\,\mathrm{m\,s^{-1}}\] [C1 A1]
+\[\theta = \tan^{-1}\frac{99.0}{60} = 58.8^\circ \text{ below the horizontal}\] [A1]
 The parcel lands about 600 m *ahead of* the point where it was released. It stays directly below the plane (if the plane keeps its velocity) all the way down.
 :::
 
@@ -415,7 +415,7 @@ A: (a) \(u_y = 20\sin 40^\circ = 12.9\,\mathrm{m\,s^{-1}}\). [A1] (b) \(3.0 = 12
 Q: [6 marks] ★★★ In an experiment to find \(g\), a student drops a ball from heights \(h\) and records the time \(t\) for it to reach a trapdoor switch. Her graph of \(t\) against \(\sqrt{h}\) has the points \((0.447, 0.214)\) and \((1.095, 0.507)\) on the best-fit line, with \(\sqrt{h}\) in \(\mathrm{m^{1/2}}\) and \(t\) in seconds. (a) Show that the graph should be a straight line with gradient \(\sqrt{2/g}\). (b) Calculate \(g\). (c) The line does not pass through the origin. Calculate the intercept and suggest a cause.
 H: Start from \(h = \tfrac12 gt^{2}\) and make \(t\) the subject.
 H: A time that is always too long by the same amount is a systematic error.
-A: (a) \(h = \tfrac12 gt^{2}\) so \(t = \sqrt{2/g}\,\sqrt{h}\), which has the form \(y = mx\) with gradient \(\sqrt{2/g}\). [B1] (b) Gradient \(= (0.507 - 0.214)/(1.095 - 0.447) = 0.452\) [C1] so \(g = 2/0.452^{2}\) [C1] \(= 9.79\,\mathrm{m\,s^{-2}}\). [A1] (c) Intercept \(= 0.214 - 0.452 \times 0.447 = 0.012\,\mathrm{s}\). [B1] This could be a delay of about 12 ms between the timer starting and the ball being released (a systematic error in every time). [B1]
+A: (a) \(h = \tfrac12 gt^{2}\) so \(t = \sqrt{2/g}\,\sqrt{h}\), which has the form \(y = mx\) with gradient \(\sqrt{2/g}\). [B1] (b) Gradient \(= (0.507 - 0.214)/(1.095 - 0.447) = 0.452\) [C1] so \(g = 2/0.4522^{2}\) [C1] \(= 9.78\,\mathrm{m\,s^{-2}}\). [A1] (c) Intercept \(= 0.214 - 0.452 \times 0.447 = 0.012\,\mathrm{s}\). [B1] This could be a delay of about 12 ms between the timer starting and the ball being released (a systematic error in every time). [B1]
 :::
 
 :::try Stretch for A*

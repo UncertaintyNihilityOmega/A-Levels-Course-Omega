@@ -148,7 +148,7 @@
           ctx.beginPath(); ctx.moveTo(tip, ay); ctx.lineTo(tip - dir * 8, ay - 5); ctx.lineTo(tip - dir * 8, ay + 5); ctx.closePath(); ctx.fill();
         }
         ctx.fillStyle = col.ink2; ctx.font = '12px ' + col.font; ctx.textAlign = 'center';
-        ctx.fillText('v' + it.name + ' = ' + W.fmt(clean(it.v), 3) + ' m/s', ax, ay - 12);
+        ctx.fillText('v' + it.name + ' = ' + W.fmt(clean(it.v), 3) + ' m s⁻¹', ax, ay - 12);
       });
       if (label) {
         ctx.fillStyle = col.ink2; ctx.font = '600 11px ' + col.font; ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
@@ -184,25 +184,25 @@
       const k0 = 0.5 * st.m1 * b1 * b1 + 0.5 * st.m2 * b2 * b2;
       const k1 = 0.5 * st.m1 * R.v1 * R.v1 + 0.5 * st.m2 * R.v2 * R.v2;
       const dk = k1 - k0;
-      ro.set('p0', W.fmt(clean(p0), 3) + ' kg m/s');
-      ro.set('p1', W.fmt(clean(p1), 3) + ' kg m/s');
+      ro.set('p0', W.fmt(clean(p0), 3) + ' kg m s⁻¹');
+      ro.set('p1', W.fmt(clean(p1), 3) + ' kg m s⁻¹');
       ro.set('k0', W.fmt(clean(k0), 3) + ' J');
       ro.set('k1', W.fmt(clean(k1), 3) + ' J');
       if (st.type === 'explode') {
         ro.set('dk', '+' + W.fmt(clean(dk), 3) + ' J (energy released)');
-        ro.set('ap', '0 m/s');
-        ro.set('sp', W.fmt(clean(R.v2 - R.v1), 3) + ' m/s');
+        ro.set('ap', '0 m s⁻¹');
+        ro.set('sp', W.fmt(clean(R.v2 - R.v1), 3) + ' m s⁻¹');
         msg.textContent = 'Both trolleys start at rest, so the total momentum is zero: they leave with equal and opposite momenta. The lighter trolley gets the greater speed and most of the kinetic energy.';
       } else if (!R.collides) {
         ro.set('dk', '0 J (no collision)');
-        ro.set('ap', W.fmt(clean(st.u1 - st.u2), 3) + ' m/s');
+        ro.set('ap', W.fmt(clean(st.u1 - st.u2), 3) + ' m s⁻¹');
         ro.set('sp', 'no collision');
         msg.textContent = 'Trolley 1 never catches trolley 2 (u1 is not greater than u2), so they do not collide. Give trolley 1 a greater velocity than trolley 2.';
       } else {
         const pc = k0 > 1e-9 ? ' (' + W.fmt(100 * dk / k0, 3) + '%)' : '';
         ro.set('dk', W.fmt(clean(dk), 3) + ' J' + pc);
-        ro.set('ap', W.fmt(clean(st.u1 - st.u2), 3) + ' m/s');
-        ro.set('sp', W.fmt(clean(R.v2 - R.v1), 3) + ' m/s');
+        ro.set('ap', W.fmt(clean(st.u1 - st.u2), 3) + ' m s⁻¹');
+        ro.set('sp', W.fmt(clean(R.v2 - R.v1), 3) + ' m s⁻¹');
         msg.textContent = st.type === 'stick'
           ? 'The trolleys stick together and move with one velocity, so the speed of separation is zero. This loses the most kinetic energy.'
           : 'Elastic: the kinetic energy is unchanged and the relative speed of separation equals the relative speed of approach.';

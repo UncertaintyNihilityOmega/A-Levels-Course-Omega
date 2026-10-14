@@ -109,6 +109,23 @@ the gold chapter). "Explain" questions score one B1 per link in the chain of rea
   chapter's figures have no empty margins). Labels 13 px (`tl`) need room: keep the drawing compact so text stays
   readable at phone width.
 - Every figure has a `figcaption` that says what to notice, and an `aria-label` that describes it.
+- Lessons from the P1–P2 review (Writers cannot see the figures, so check these with coordinates before `check`):
+  - A 13 px label is about 7 px per character wide and 13 px tall (baseline at `y`, top at `y − 10`). Work out
+    each label's box and keep it at least 4 px clear of every line, arrow and other label it sits near, including
+    the line it names ("gradient = a" was drawn on top of its own line; "120°" sat on "θ").
+  - Never name colours in captions or text ("the blue arrow"): the palette changes between light and dark. Refer
+    to arrows by their labels.
+  - `marker-end` on a path with several `M…` subpaths draws **one** arrowhead: one `<path>` per arrow.
+  - Free-body diagrams: label every force with its value when the text gives one ("drag 1.2 kN"), and keep a short
+    force (friction) at least 30 px long so its arrowhead shows. Don't put a label across the body or another arrow.
+  - Collisions: draw both bodies before and after, each with its own velocity arrow.
+  - `:::plot`: the y-axis label sits at the top left, so `--legend tl` collides with it; use `--legend tr` and widen
+    `--y` so the legend clears the curves. A point label `@s` on the x-axis collides with the tick numbers; use
+    `--xstep` and `@se`/`@ne`.
+  - Crop the viewBox to the drawing (+ about 15 px). A `fig small` drawn in a 400-wide viewBox with 100 px of empty
+    space shows tiny on desktop and huge on a phone.
+- Rounding: never reuse a rounded intermediate (a gradient 0.452, a time 10.10 s) in a later step; the check
+  script must compute from the unrounded value (g from the P1 data is 9.78, not 9.79).
 
 ## Widgets
 - Names are global: this course's widgets are `phys-…`, except `units` (the Toolbox page expects that name).

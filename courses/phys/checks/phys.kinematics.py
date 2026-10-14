@@ -100,17 +100,17 @@ for hh, s_, tm in zip([0.20, 0.40, 0.60, 0.80, 1.00, 1.20], sh, [214, 298, 362, 
     eq(f"t {hh}", round((math.sqrt(2 * hh / g) + 0.012) * 1000), tm, 1e-9)
 grad = (0.507 - 0.214) / (1.095 - 0.447)
 eq("grad", sf(grad, 3), 0.452)
-eq("g exp", sf(2 / 0.452**2, 3), 9.79)
+eq("g exp", sf(2 / grad**2, 3), 9.78)
 eq("intercept", sf(0.214 - 0.452 * 0.447, 2), 0.012)
 
 # Parcel
 tp = sqrt(2 * 500 / g)
 eq("parcel t", sf(tp, 3), 10.1)
-eq("parcel x", sf(60 * 10.10, 3), 606)
-vy = g * 10.10
-eq("parcel vy", sf(vy, 3), 99.1)
-eq("parcel v", sf(sqrt(60**2 + 99.1**2), 3), 116)
-eq("parcel angle", sf(degrees(atan(99.1 / 60)), 3), 58.8)
+eq("parcel x", sf(60 * tp, 3), 606)
+vy = g * tp
+eq("parcel vy", sf(vy, 3), 99.0)
+eq("parcel v", sf(sqrt(60**2 + vy**2), 3), 116)
+eq("parcel angle", sf(degrees(atan(vy / 60)), 3), 58.8)
 
 # Kick
 ux, uy = 25 * cos(radians(35)), 25 * sin(radians(35))

@@ -100,6 +100,7 @@ dp = 1030 * g * 30
 eq("sea dp", sf(dp, 3), 3.03e5)
 eq("sea total", sf(sf(dp, 3) + 1.01e5, 3), 4.04e5)
 eq("sea F", sf(4.04e5 * 0.20, 3), 8.08e4)
+eq("sea net F", sf(3.03e5 * 0.20, 3), 6.06e4)
 
 # Floating cube
 Wc = 700 * 0.10**3 * g
