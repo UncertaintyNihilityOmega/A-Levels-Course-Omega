@@ -187,4 +187,4 @@ What to revise next, in the order the questions above exposed it:
 - Most synoptic questions need one idea carried from one chapter into the next, often one from AS: for every question, name the chapters before you start the arithmetic.
 :::
 
-Next: [Physics: the course map](#phys.overview)
+Next: [Mock paper: Paper 1 multiple choice](#phys.mock.p1)

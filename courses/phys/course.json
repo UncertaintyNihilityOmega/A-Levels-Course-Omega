@@ -41,7 +41,12 @@
     { "id": "phys.exam.p1", "title": "Paper 1 survival guide: multiple choice", "level": "guide", "group": "Exam preparation" },
     { "id": "phys.exam.p24", "title": "Papers 2 and 4 survival guide: structured questions", "level": "guide", "group": "Exam preparation" },
     { "id": "phys.mixed.as", "title": "Mixed practice: AS Level", "level": "ref", "group": "Exam preparation" },
-    { "id": "phys.mixed.a2", "title": "Mixed practice: A Level", "level": "ref", "group": "Exam preparation" }
+    { "id": "phys.mixed.a2", "title": "Mixed practice: A Level", "level": "ref", "group": "Exam preparation" },
+    { "id": "phys.mock.p1", "title": "Mock paper: Paper 1 multiple choice", "level": "mock", "group": "Exam preparation" },
+    { "id": "phys.mock.p2", "title": "Mock paper: Paper 2 AS structured questions", "level": "mock", "group": "Exam preparation" },
+    { "id": "phys.mock.p3", "title": "Mock paper: Paper 3 practical skills (written)", "level": "mock", "group": "Exam preparation" },
+    { "id": "phys.mock.p4", "title": "Mock paper: Paper 4 A Level structured questions", "level": "mock", "group": "Exam preparation" },
+    { "id": "phys.mock.p5", "title": "Mock paper: Paper 5 planning, analysis and evaluation", "level": "mock", "group": "Exam preparation" }
   ],
   "aliases": {},
   "packages": [
@@ -60,13 +65,15 @@
     { "id": "P13", "title": "Practical skills", "chapters": ["phys.practical", "phys.planning"], "widgets": ["phys-bestfit"] },
     { "id": "P14", "title": "Course map and foundations", "chapters": ["phys.overview", "phys.f.basics"], "widgets": [] },
     { "id": "P15", "title": "Exam guides", "chapters": ["phys.exam.p1", "phys.exam.p24"], "widgets": [] },
-    { "id": "P16", "title": "Mixed practice", "chapters": ["phys.mixed.as", "phys.mixed.a2"], "widgets": [] }
+    { "id": "P16", "title": "Mixed practice", "chapters": ["phys.mixed.as", "phys.mixed.a2"], "widgets": [] },
+    { "id": "P17", "title": "Mock papers: AS (Papers 1, 2 and 3)", "chapters": ["phys.mock.p1", "phys.mock.p2", "phys.mock.p3"], "widgets": [] },
+    { "id": "P18", "title": "Mock papers: A Level (Papers 4 and 5)", "chapters": ["phys.mock.p4", "phys.mock.p5"], "widgets": [] }
   ],
   "papers": [
-    { "id": "P1", "title": "Paper 1: Multiple choice (AS)", "chapters": ["phys.units", "phys.kinematics", "phys.dynamics", "phys.forces", "phys.energy", "phys.solids", "phys.waves", "phys.superposition", "phys.electricity", "phys.dc", "phys.particles"] },
-    { "id": "P2", "title": "Paper 2: AS Level structured questions", "chapters": ["phys.units", "phys.kinematics", "phys.dynamics", "phys.forces", "phys.energy", "phys.solids", "phys.waves", "phys.superposition", "phys.electricity", "phys.dc", "phys.particles"] },
-    { "id": "P3", "title": "Paper 3: Advanced practical skills", "chapters": ["phys.practical"] },
-    { "id": "P4", "title": "Paper 4: A Level structured questions", "chapters": ["phys.circular", "phys.gravity", "phys.temperature", "phys.gases", "phys.thermo", "phys.oscillations", "phys.efields", "phys.capacitance", "phys.magnetic", "phys.induction", "phys.ac", "phys.quantum", "phys.nuclear", "phys.medical", "phys.astro"] },
-    { "id": "P5", "title": "Paper 5: Planning, analysis and evaluation", "chapters": ["phys.planning"] }
+    { "id": "P1", "title": "Paper 1: Multiple choice (AS)", "chapters": ["phys.units", "phys.kinematics", "phys.dynamics", "phys.forces", "phys.energy", "phys.solids", "phys.waves", "phys.superposition", "phys.electricity", "phys.dc", "phys.particles", "phys.mock.p1"] },
+    { "id": "P2", "title": "Paper 2: AS Level structured questions", "chapters": ["phys.units", "phys.kinematics", "phys.dynamics", "phys.forces", "phys.energy", "phys.solids", "phys.waves", "phys.superposition", "phys.electricity", "phys.dc", "phys.particles", "phys.mock.p2"] },
+    { "id": "P3", "title": "Paper 3: Advanced practical skills", "chapters": ["phys.practical", "phys.mock.p3"] },
+    { "id": "P4", "title": "Paper 4: A Level structured questions", "chapters": ["phys.circular", "phys.gravity", "phys.temperature", "phys.gases", "phys.thermo", "phys.oscillations", "phys.efields", "phys.capacitance", "phys.magnetic", "phys.induction", "phys.ac", "phys.quantum", "phys.nuclear", "phys.medical", "phys.astro", "phys.mock.p4"] },
+    { "id": "P5", "title": "Paper 5: Planning, analysis and evaluation", "chapters": ["phys.planning", "phys.mock.p5"] }
   ]
 }
