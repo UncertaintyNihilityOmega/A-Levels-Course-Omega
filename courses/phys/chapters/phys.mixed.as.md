@@ -219,13 +219,13 @@ A: (a) gradient \(= \dfrac{32}{2.5 \times 10^{-3}}\) [C1] \(= 1.3 \times 10^{4}\
 (b) \(E = \dfrac{\text{stress}}{\text{strain}} = \dfrac{F/A}{x/L} = \dfrac{F}{x} \times \dfrac{L}{A}\), and \(F/x\) is the gradient. [M1] \(A = \pi \times (0.20 \times 10^{-3})^2 = 1.257 \times 10^{-7}\,\mathrm{m^2}\), so \(E = \dfrac{12\,800 \times 2.000}{1.257 \times 10^{-7}}\) [C1] \(= 2.0 \times 10^{11}\,\mathrm{Pa}\). [A1]
 (c) \(E_P = \tfrac12 Fx = \tfrac12 \times 32 \times 2.5 \times 10^{-3}\) [C1] \(= 0.040\,\mathrm{J}\). [A1]
 Also revise: [Work, energy and power](#phys.energy).
-Q: [8 marks] (#phys.dynamics) ★★★ A bullet of mass 10 g is fired horizontally into a block of mass 2.0 kg that hangs from long light strings. The bullet embeds in the block, and the block and bullet swing up together to a maximum height of 0.10 m above the starting level. (a) Calculate the speed of the block and bullet immediately after the impact. (b) Calculate the speed of the bullet before the impact. (c) Calculate the kinetic energy of the bullet before the impact and the percentage of it that is transferred to other forms during the impact. (d) State what forms the energy is transferred to.
+Q: [8 marks] (#phys.dynamics) ★★★ A bullet of mass 10 g is fired horizontally into a block of mass 2.0 kg that hangs from long light strings. The bullet embeds in the block, and the block and bullet swing up together to a maximum height of 0.10 m above the starting level. (a) Calculate the speed of the block and bullet immediately after the impact. (b) Calculate the speed of the bullet before the impact. (c) Calculate the kinetic energy of the bullet before the impact and the percentage of it that is transferred to other forms during the impact. (d) State two forms that the lost energy is transferred to.
 H: After the impact, kinetic energy changes into gravitational potential energy as the block rises 0.10 m. Use the total mass 2.01 kg.
 H: During the impact (which is very short) momentum is conserved, but kinetic energy is not.
 A: (a) \(\tfrac12 (M + m)v^2 = (M + m)gh\) [C1] so \(v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 0.10} = 1.4\,\mathrm{m\,s^{-1}}\). [A1]
 (b) Momentum is conserved in the impact: \(0.010\,u = 2.01 \times 1.40\) [C1] so \(u = 2.8 \times 10^{2}\,\mathrm{m\,s^{-1}}\). [A1]
 (c) \(E_K = \tfrac12 \times 0.010 \times 281.5^2 = 4.0 \times 10^{2}\,\mathrm{J}\). [C1] After the impact the kinetic energy is \(\tfrac12 \times 2.01 \times 1.40^2 = 1.97\,\mathrm{J}\), so \(\dfrac{396 - 1.97}{396} = 99.5\%\) is transferred to other forms. [A1]
-(d) Thermal energy (heating of the bullet and block) and sound, and the work done deforming the block. [B1]
+(d) Thermal energy (heating of the bullet and block). [B1] Sound, or work done deforming the block. [B1]
 Also revise: [Work, energy and power](#phys.energy).
 :::
 

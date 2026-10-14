@@ -56,7 +56,7 @@ eq("mcq stretch", 2 * 2, 4)
 eq("mcq P1", 6.0**2 / 4.0, 9.0)
 eq("mcq P2", 6.0**2 / 12, 3.0)
 eq("mcq Ptot", 6.0**2 / 4.0 + 6.0**2 / 12, 12)
-eq("mcq series", sf(6.0**2 / 16, 2), 2.3)
+eq("mcq series", 6.0**2 / 16, 2.25)  # 2.25 W rounds to 2.3 W (2 s.f., half up)
 
 # ---- Set A
 # A1 car
@@ -129,7 +129,7 @@ T = 3.2 * 0.50e-3
 eq("B1 T", T, 1.6e-3)
 f = 1 / T
 eq("B1 f", f, 625)
-eq("B1 f sf", sf(f, 2), 6.3e2)
+eq("B1 f sf", f, 625)  # 625 Hz is 6.3 x 10^2 Hz (2 s.f., half up)
 eq("B1 pp", 4.0 * 0.20, 0.80)
 eq("B1 amp", 4.0 * 0.20 / 2, 0.40)
 fo = f * 340 / (340 - 20)
