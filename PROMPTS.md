@@ -10,7 +10,12 @@ reports back.
 | O2 redesign | `Project Organizer session: phase O2. Read ORGANIZER.md and REORG-PLAN.md and carry out "O2 — Redesign pass".` |
 | O3 hand-off | `Project Organizer session: phase O3. Read ORGANIZER.md and REORG-PLAN.md and carry out "O3 — Hand-off".` |
 | Assemble | `Project Organizer session: assembly. Read ORGANIZER.md and STATUS.md and run the assembly session.` |
+| Agent run | `Project Organizer session: agent run for <Course>. Read ORGANIZER.md and AGENT-RUN.md and build the course with agents until it is done or the usage limit stops it.` |
+| Continue a run | `Continue the agent run.` (in the same chat, after a usage-limit stop) |
 | A problem | `Project Organizer session. Read ORGANIZER.md. <describe the problem>` |
+
+Classic method or agent method? See PROJECT.md, "Two ways to build a course". The course prompts below are the
+classic method. An agent run uses only the "Agent run" prompt above, in one Organizer chat at the project root.
 
 ## Courses (folder: `A Levels Course\courses\<c>`)
 | Course | Folder | Specialist (Opus) | Writer (Sonnet) |

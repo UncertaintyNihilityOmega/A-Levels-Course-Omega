@@ -1,7 +1,105 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "site", "runtimeExecutable": "node", "runtimeArgs": ["engine/serve.js", "site", "5100"], "port": 5100 },
-    { "name": "phys-preview", "runtimeExecutable": "node", "runtimeArgs": ["courses/phys/kit/zta.js", "serve", "5102"], "port": 5102 }
+    {
+      "name": "site",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "engine/serve.js",
+        "site",
+        "5100"
+      ],
+      "port": 5100
+    },
+    {
+      "name": "phys-preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "courses/phys/kit/zta.js",
+        "serve",
+        "5102"
+      ],
+      "port": 5102
+    },
+    {
+      "name": "math-preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "courses/math/kit/zta.js",
+        "serve",
+        "5101"
+      ],
+      "port": 5101
+    },
+    {
+      "name": "chem-preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "courses/chem/kit/zta.js",
+        "serve",
+        "5103"
+      ],
+      "port": 5103
+    },
+    {
+      "name": "bio-preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "courses/bio/kit/zta.js",
+        "serve",
+        "5104"
+      ],
+      "port": 5104
+    },
+    {
+      "name": "eng-preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "courses/eng/kit/zta.js",
+        "serve",
+        "5105"
+      ],
+      "port": 5105
+    },
+    {
+      "name": "bus-preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "courses/bus/kit/zta.js",
+        "serve",
+        "5106"
+      ],
+      "port": 5106
+    },
+    {
+      "name": "econ-preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "courses/econ/kit/zta.js",
+        "serve",
+        "5107"
+      ],
+      "port": 5107
+    },
+    {
+      "name": "acc-preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "courses/acc/kit/zta.js",
+        "serve",
+        "5108"
+      ],
+      "port": 5108
+    },
+    {
+      "name": "other-preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "courses/other/kit/zta.js",
+        "serve",
+        "5109"
+      ],
+      "port": 5109
+    }
   ]
 }

@@ -8,6 +8,6 @@ site/
 courses/*/kit/
 courses/*/.claude/
 
-# Organizer-only local hooks (agent course guard)
+# agent method (AGENT-RUN.md): the course guard is on while guard-course.txt names a course
 .claude/settings.local.json
-.claude/hooks/
+.claude/hooks/*.txt

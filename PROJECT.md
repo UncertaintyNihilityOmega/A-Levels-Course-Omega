@@ -24,19 +24,35 @@ session types; `node kit/zta.js status` tells it what to do next. The copy-paste
 3. If it offers a worktree, decline it, so the files land in the real folder.
 4. Paste the one-line prompt from PROMPTS.md. When the chat reports back, close it: one session = one step.
 
+## Two ways to build a course
+Both use the same course kit: `status`, `claim`, `done`, STATUS.md, REVIEW.md and the package notes. So a course
+can switch between them at any point. For example, an agent run can stop at the usage limit and classic chats can
+carry on the next day, or the other way round.
+
+| | **Classic method** (the default) | **Agent method** (when you have usage to spare) |
+|---|---|---|
+| Who runs it | You: one chat per step, opened in `courses/<c>` (PROMPTS.md) | One Organizer chat at the root runs the steps as agents: 1 Opus Specialist + up to 2 Sonnet Writers at once |
+| Your effort | Open a chat, paste the prompt, close it when it reports; repeat | One prompt; leave it open (overnight is fine) and say "continue" after a usage-limit stop |
+| Speed | One package per chat, at your pace | About 3 packages per Pro 5-hour window, around the clock |
+| Usage | Spread out; you choose when each step runs | Burns a Pro 5-hour window in about 1–1.5 hours (about 30–45k tokens a minute); best just before a window resets, or when spare usage would otherwise go unused |
+| Checks | Writers look at their pages in the browser pane | Writers check headless; the Specialist reviews every figure in the browser; a guard keeps agents inside the one course folder |
+| Commits | The Organizer commits at assembly | The Organizer commits each package as it lands |
+
+The agent method's playbook (prompts, loop, recovery after a usage-limit stop, costs) is in **AGENT-RUN.md**. To
+start one, see PROMPTS.md.
+
 ## Recommended order
 1. Organizer O1–O3 (done): restructure, the redesign (approved and frozen) and the hand-off.
-2. **Math Specialist LEAD** first, then Math Writer P1, to calibrate how much usage a package costs.
-3. Then run 2–3 courses side by side (for example Physics, Chemistry and Biology LEADs), each followed by
-   its Writer packages, with a Specialist REVIEW after every two packages.
-4. After a few packages, or when any REQUESTS.md has items, open an Organizer session to assemble:
-   it builds and checks the site, answers requests, re-syncs the kits and commits.
+2. Mathematics (done, classic method). Physics LEAD and P1–P6 were done by the agent method (2026-10-14).
+3. Then run courses one or two at a time, by either method. A Specialist REVIEW follows every two packages.
+4. After a few packages, or when any REQUESTS.md has items, open an Organizer session to assemble: it builds
+   and checks the site, answers requests, re-syncs the kits and commits.
 
 ## Usage tips
-- All chats share one usage pool. Running 1–3 course chats at a time is plenty.
-- With no word limits, cost grows with chapter length. Ask the first Math Writer chat for its package's
-  cost (the share of your usage window it took) and plan from that.
-- Keep each chat to its one step. A fresh chat is cheaper than a long one.
+- All chats and agents share one usage pool. Running 1–3 course chats at a time is plenty.
+- Measured costs: a Writer package costs about 230–280k tokens, a review 300–380k, and a LEAD about 400k.
+- Keep each chat to its one step. A fresh chat is cheaper than a long one (the agent method does the same: one
+  new agent per package).
 
 ## Map
 | Path | What |
@@ -47,6 +63,8 @@ session types; `node kit/zta.js status` tells it what to do next. The copy-paste
 | `engine/` | build.js, check.js, status.js, sync.js, serve.js, lib/site/plot/lint, page template and styles, kit sources |
 | `FACTS.md` | verified exam facts shared by every course |
 | `ORGANIZER.md` | the Organizer's own procedures |
+| `AGENT-RUN.md` | the agent method: how the Organizer runs a course with Specialist and Writer agents |
+| `.claude/` | launch configs (site and each course's preview) and the agent guard hook (asleep unless an agent run is on) |
 | `REORG-PLAN.md` | the approved plan this structure comes from |
 | `archive/` | the old docs, tools and builds (history only) |
 

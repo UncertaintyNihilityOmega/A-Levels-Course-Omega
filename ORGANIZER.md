@@ -22,6 +22,13 @@ Organizer session instead, with STATUS.md and `node engine/status.js`.
   check/preview/widget/status, a throwaway :::plot chapter, the site in the browser pane). From here on, run
   assembly sessions as courses progress.
 
+## Agent method (only when the user asks for an agent run)
+Courses are built in one of two ways (PROJECT.md, "Two ways to build a course"). In the classic method the user
+runs course chats. In the **agent method** the Organizer runs the course's Specialist and Writers as subagents,
+following **AGENT-RUN.md**: read it whole before starting a run. It covers the guard (`.claude/hooks/guard-course.txt`
+names the course while a run is on; delete it at the end), the loop, per-package commits, recovery after a usage-limit
+stop, and the prompt templates. Outside a run, never spawn course agents: course work belongs to course chats.
+
 ## Assembly session (repeat whenever courses have progressed)
 1. `node engine/status.js` and `grep -n "\- \[ \]" courses/*/REQUESTS.md` (open requests).
 2. `node engine/check.js --py`, then `node engine/build.js --strict`, then `node courses/<c>/kit/zta.js phone`
