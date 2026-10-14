@@ -143,4 +143,12 @@ eq("s2 v", 3.0 * c, 9.0e8, 1e-3)
 eq("quiz 2d", 1 / 2**2, 0.25)
 eq("quiz T x2", 2**4, 16)
 
+# Exam: redshift, Hubble distance, age
+vq = c * (670.1 - 656.3) / 656.3
+eq("xh dl", sf(670.1 - 656.3, 3), 13.8, 1e-9)
+eq("xh v", sf(vq, 2), 6.3e6, 1e3)
+eq("xh d", sf(vq / H0, 2), 2.7e24, 1e22)
+eq("xh t s", sf(1 / H0, 3), 4.35e17, 1e14)
+eq("xh t yr", sf(1 / H0 / 3.16e7, 2), 1.4e10, 1e7)
+
 print("ok")

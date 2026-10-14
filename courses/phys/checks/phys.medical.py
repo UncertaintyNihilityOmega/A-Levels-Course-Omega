@@ -185,4 +185,10 @@ eq("q lmin halves", (h * c / (e * 2 * 80e3)) / (h * c / (e * 80e3)), 0.5)
 eq("q total ann MeV", sf(2 * E_ann / e / 1e6, 3), 1.02, 1e-9)
 eq("q half ann MeV", sf(E_ann / e / 1e6 / 2, 2), 0.26, 1e-9)
 
+# Exam: X-ray contrast question (arm 6.0 cm)
+eq("xq IA", sf(exp(-30 * 0.060), 2), 0.17, 1e-9)
+eq("xq exponent B", 150 * 0.020 + 30 * 0.040, 4.2, 1e-9)
+eq("xq IB", sf(exp(-4.2), 2), 0.015, 1e-9)
+eq("xq ratio", sf(exp(4.2 - 1.8), 2), 11, 1e-9)
+
 print("ok")
