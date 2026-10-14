@@ -272,7 +272,7 @@ The difference \(m_1 - m_2\) is small, so a balance reading to 0.1 g matters: ta
 AQA and OCR include the same content: the same definitions, temperature scales, specific heat capacity and latent heat. AQA writes the specific heat capacity equation as \(Q = mc\Delta\theta\) and describes the continuous-flow method of measuring \(c\) for a liquid; that method is not on the Cambridge syllabus.
 :::
 
-:::eg Spot the error: a 2.0 kg block of water is heated through 15 °C. Calculate the energy needed. (\(c = 4200\,\mathrm{J\,kg^{-1}\,K^{-1}}\))
+:::eg Spot the error: 2.0 kg of water is heated through 15 °C. Calculate the energy needed. (\(c = 4200\,\mathrm{J\,kg^{-1}\,K^{-1}}\))
 A student wrote this answer.
 
 Line 1: \(\Delta T = 15 + 273 = 288\,\mathrm{K}\)

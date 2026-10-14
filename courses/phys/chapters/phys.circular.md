@@ -51,7 +51,7 @@ Check: 150° is a little less than \(180^\circ = \pi \approx 3.14\,\mathrm{rad}\
 :::
 
 :::eg A bicycle wheel of radius 0.34 m rolls through 2.5 complete turns without slipping. Find the angular displacement of a point on the rim and the distance the bicycle travels.
-Each turn is \(2\pi\) rad, so \(\theta = 2.5 \times 2\pi = 15.7\,\mathrm{rad}\). [C1]
+Each turn is \(2\pi\) rad, so \(\theta = 2.5 \times 2\pi = 15.7\,\mathrm{rad}\). [A1]
 
 A rolling wheel lays down a length of tyre equal to the arc it turns through, so the distance is \(s = r\theta = 0.34 \times 15.7\) [C1] \(= 5.3\,\mathrm{m}\). [A1]
 :::

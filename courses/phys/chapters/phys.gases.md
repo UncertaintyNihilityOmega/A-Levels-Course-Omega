@@ -278,7 +278,7 @@ The left-hand side is the mean translational kinetic energy of one molecule.
 \(T\): thermodynamic temperature (K) · \(m\): mass of one molecule (kg) · \(k = 1.38 \times 10^{-23}\,\mathrm{J\,K^{-1}}\). The mean kinetic energy per molecule depends only on \(T\), not on the gas. For \(n\) moles the total translational kinetic energy is \(\tfrac32 nRT\).
 :::
 
-Two points matter. At the same temperature, every ideal gas has the same mean kinetic energy per molecule, so a **lighter** molecule is moving **faster**: \(c_\text{r.m.s.} \propto 1/\sqrt{m}\). Helium atoms are fast, oxygen molecules are slow. And since the kinetic energy is proportional to \(T\), temperature is a measure of the average random kinetic energy of the molecules. At absolute zero, the molecules have no kinetic energy.
+Two points matter. At the same temperature, every ideal gas has the same mean kinetic energy per molecule, so a **lighter** molecule is moving **faster**: \(c_\text{r.m.s.} \propto 1/\sqrt{m}\). Helium atoms are fast, oxygen molecules are slow. And since the kinetic energy is proportional to \(T\), temperature is a measure of the average random kinetic energy of the molecules. In this model the mean kinetic energy would fall to zero at absolute zero; real substances keep a minimum internal energy there (see [Temperature](#phys.temperature)).
 
 The total translational kinetic energy of the \(N\) molecules is \(N \times \tfrac32 kT = \tfrac32 nRT\), because \(Nk = nR\). In an ideal gas there are no forces between molecules and so there is no potential energy: this total is the **internal energy** of a monatomic ideal gas, a point you will use in [Thermodynamics](#phys.thermo).
 

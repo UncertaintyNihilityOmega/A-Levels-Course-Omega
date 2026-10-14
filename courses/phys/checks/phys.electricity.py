@@ -176,5 +176,6 @@ eq("I-t area", 0.5 * 10 * 4.0 + 5.0 * 4.0, 40)
 eq("I-t average", sf(40 / 15, 2), 2.7)
 eq("I-t plot at 10 s", (0.4 * 10 + 4 - abs(0.4 * 10 - 4)) / 2, 4.0)
 eq("I-t plot at 5 s", (0.4 * 5 + 4 - abs(0.4 * 5 - 4)) / 2, 2.0)
+eq("I-t area triangle", 0.5 * 30 * 6.0e-3, 0.090, 1e-12)
 
 print("ok")

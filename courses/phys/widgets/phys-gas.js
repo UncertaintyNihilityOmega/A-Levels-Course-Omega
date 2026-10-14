@@ -234,7 +234,7 @@
     // ---- readout -----------------------------------------------------------------
     const ro = W.readout([
       ['N', 'Number of molecules N'], ['V', 'Volume V'], ['T', 'Temperature T'], ['p', 'Pressure p = NkT / V'],
-      ['m', 'Mass of one molecule m = M / N_A'], ['c', 'r.m.s. speed √(3kT/m)'], ['ek', 'Mean kinetic energy 3kT/2'], ['hits', 'Wall hits per second (drawn particles)']
+      ['m', 'Mass of one molecule m = M / (Avogadro constant)'], ['c', 'r.m.s. speed √(3kT/m)'], ['ek', 'Mean kinetic energy 3kT/2'], ['hits', 'Wall hits per second (drawn particles)']
     ]);
     const note = W.h('div', { class: 'w-note' });
     body.append(ro.el, note, err);

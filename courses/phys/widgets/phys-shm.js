@@ -315,7 +315,7 @@
         draw(ctx, w, h, col) {
           const ym = ymaxNow();
           const ax = W.axes(ctx, w, h, { x0: 0, x1: 3, y0: 0, y1: ym }, col, {
-            pad: { l: 44, r: 12, t: 20, b: 38 }, xlabel: 'f / f₀', ylabel: 'A / A₀', nx: 6
+            pad: { l: 44, r: 12, t: 20, b: 56 }, xlabel: 'f / f₀', ylabel: 'A / A₀', nx: 6
           });
           const { X, Y } = ax;
           ctx.save();
@@ -333,8 +333,8 @@
           ctx.beginPath(); ctx.moveTo(X(0), Y(a)); ctx.lineTo(X(st.r), Y(a)); ctx.lineTo(X(st.r), Y(0)); ctx.stroke(); ctx.setLineDash([]);
           ctx.fillStyle = col.red; ctx.beginPath(); ctx.arc(X(st.r), Y(a), 5.5, 0, TAU); ctx.fill();
           ctx.restore();
-          label(ctx, col, 'bold: your damping', w - ax.pad.r - 4, ax.pad.t + 14, 'right', col.sc, 12);
-          label(ctx, col, 'faint: 0.1, 0.3, 0.8', w - ax.pad.r - 4, ax.pad.t + 30, 'right', col.ink2, 12);
+          label(ctx, col, w > 330 ? 'bold: your damping' : 'bold: yours', ax.pad.l, h - 6, 'left', col.sc, 12);
+          label(ctx, col, 'faint: 0.1, 0.3, 0.8', w - ax.pad.r, h - 6, 'right', col.ink2, 12);
         }
       });
       const cAn = W.canvas(wrapR, {

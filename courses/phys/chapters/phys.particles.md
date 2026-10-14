@@ -26,6 +26,10 @@ Around 1909, most scientists pictured an atom as a ball of positive charge with 
 
 The apparatus has a source of α-particles and a narrow beam, a very thin gold foil, and a detector that can be moved round to any angle. Everything is in a **vacuum**, because α-particles are stopped by a few centimetres of air.
 
+:::html
+<figure class="fig"><svg viewBox="0 0 580 200" role="img" aria-label="Apparatus of the alpha-scattering experiment inside a box labelled vacuum. On the left a radioactive source sits in a lead block with a narrow channel, which gives a narrow beam of alpha-particles travelling right to a very thin gold foil. A dashed arc of detector positions is centred on the foil. A detector, a zinc sulfide screen with a microscope, sits on the arc at angle theta above the straight-through direction, and one alpha-particle is shown scattered through that angle."><rect class="fp s-mute sw1 dash" x="10" y="10" width="560" height="180"/><rect class="fm s-ink sw2" x="30" y="60" width="80" height="80"/><rect class="fp" x="60" y="98" width="54" height="4"/><circle class="fi" cx="66" cy="100" r="5"/><text class="tl tc" x="70" y="158">α source in</text><text class="tl tc" x="70" y="172">lead block</text><path class="c1" d="M114 100H295" marker-end="url(#ah-phys)"/><text class="tl tc" x="205" y="90">narrow α beam</text><rect class="fi" x="298" y="80" width="4" height="40"/><text class="tl tc" x="300" y="140">thin gold foil</text><path class="ln-m thin dash" d="M251.8 157.5A75 75 0 1 0 251.8 42.5"/><path class="ln-m thin dash" d="M304 100H378"/><text class="tl" x="386" y="104">straight on</text><path class="c2" d="M302 100L344 47.5" marker-end="url(#ah2-phys)"/><path class="ln-m thin" d="M340 100A40 40 0 0 0 325.7 69.4"/><text class="tl" x="345" y="82">θ</text><path class="ln thick" d="M340.5 36.1L355.9 48.9"/><rect class="fp s-ink sw2" transform="translate(362.3 25.7) rotate(-50)" x="-14" y="-7" width="28" height="14"/><text class="tl" x="392" y="30">zinc sulfide screen</text><text class="tl" x="392" y="44">and microscope</text><text class="tl" x="380" y="140">detector moves round</text><text class="tl" x="380" y="154">the dashed arc to any θ</text><text class="tl te" x="558" y="182">vacuum</text></svg><figcaption>The α-scattering apparatus. The lead block and its narrow channel make a thin beam, the foil is thin enough for most α-particles to cross it, the detector (a screen that flashes where an α-particle strikes, viewed through a microscope) moves round an arc centred on the foil to count particles at each angle θ, and the whole apparatus is in a vacuum so that air does not stop the α-particles.</figcaption></figure>
+:::
+
 | Observation | Conclusion |
 |---|---|
 | Most α-particles went straight through the foil with almost no deflection. | Most of the atom is empty space. |
@@ -139,6 +143,11 @@ The particles use the same notation: α is \(^{4}_{2}\mathrm{He}\), an electron 
 - **β⁻ decay:** a neutron changes into a proton. \(A\) stays the same and \(Z\) increases by 1.
 - **β⁺ decay:** a proton changes into a neutron. \(A\) stays the same and \(Z\) decreases by 1.
 - **γ emission:** an excited nucleus (written \(X^{*}\)) drops to a lower energy level and emits a photon. Neither \(A\) nor \(Z\) changes.
+
+:::eg Technetium-99m is an excited nucleus (the "m" means it stays excited for a while). Write the equation for its γ emission and say what changes.
+\(^{99m}_{\;43}\mathrm{Tc} \rightarrow {}^{99}_{\;43}\mathrm{Tc} + \gamma\). [B1]
+The nucleon number (99) and the proton number (43) are the same on both sides: the nucleus is the same nuclide, and only energy leaves, carried away by the photon. Tc-99m is the commonest medical tracer, because its γ-rays pass out of the body to a detector; see [Medical physics](#phys.medical).
+:::
 
 :::eg Complete the decay equations for (a) α decay of radium-226, (b) β⁻ decay of carbon-14 and (c) β⁺ decay of fluorine-18.
 (a) \(^{226}_{\;88}\mathrm{Ra} \rightarrow {}^{222}_{\;86}\mathrm{Rn} + {}^{4}_{2}\alpha\). Nucleon number: \(226 = 222 + 4\). Charge: \(88 = 86 + 2\). [B1]
@@ -293,6 +302,12 @@ Q: A carbon-12 atom has a mass of exactly 12 u. Find this mass in kg.
 A: \(12 \times 1.66 \times 10^{-27} = 1.99 \times 10^{-26}\,\mathrm{kg}\).
 :::
 
+The question about three tracks uses this sketch of radiation between two charged plates.
+
+:::html
+<figure class="fig small"><svg viewBox="0 20 320 148" role="img" aria-label="Two horizontal parallel plates, the top one marked plus and the bottom one marked minus. Radiation enters from a source on the left in the middle of the gap. Track A bends strongly upwards towards the top plate. Track B is straight. Track C bends slightly downwards."><rect class="fi" x="40" y="30" width="240" height="8"/><rect class="fi" x="40" y="150" width="240" height="8"/><text class="ts tc" x="20" y="40">+</text><text class="ts tc" x="20" y="160">−</text><circle class="fi" cx="28" cy="94" r="4"/><text class="tl tc" x="28" y="118">source</text><path class="c1" d="M40 94Q120 94 200 48" marker-end="url(#ah-phys)"/><path class="c3" d="M40 94H276" marker-end="url(#ahr)"/><path class="c2" d="M40 94Q160 94 276 114" marker-end="url(#ah2-phys)"/><text class="tl" x="210" y="58">A</text><text class="tl" x="290" y="98">B</text><text class="tl" x="290" y="118">C</text></svg><figcaption>Three kinds of radiation entering the gap between two charged plates. The tracks are labelled A, B and C.</figcaption></figure>
+:::
+
 :::try Exam practice ★ to ★★★
 Q: [2 marks] ★ Define isotopes.
 A: Nuclei of the same element, with the same number of protons, [B1] but different numbers of neutrons. [B1]
@@ -302,8 +317,8 @@ Q: [2 marks] ★ A nucleus of carbon-14, \(^{14}_{\;6}\mathrm{C}\), decays by β
 A: \(^{14}_{\;6}\mathrm{C} \rightarrow {}^{14}_{\;7}\mathrm{N} + {}^{\;0}_{-1}\mathrm{e} + \bar{\nu}\). The nitrogen-14 nucleus with correct numbers [B1] and the electron with the antineutrino. [B1]
 Q: [2 marks] ★★ Explain why the β-particles emitted from a sample of one isotope have a continuous range of energies.
 A: The energy released in each decay is shared between the β-particle and the antineutrino, [B1] in different proportions in different decays, so the kinetic energy of the β-particle can have any value from zero to a maximum. [B1]
-Q: [2 marks] ★ State the quark composition of a neutron and use it to show that the neutron has zero charge.
-A: A neutron is udd. [B1] Charge \(= +\tfrac23 - \tfrac13 - \tfrac13 = 0\). [B1]
+Q: [3 marks] ★★ α, β⁻ and γ radiation pass together between two parallel charged plates, as in the sketch. The top plate is positive. (a) Identify tracks A, B and C. (b) Explain why α-particles and β⁻-particles bend in opposite directions. (c) Explain why the β⁻ track bends much more than the α track, although β⁻-particles usually move faster.
+A: (a) A is β⁻, B is γ and C is α. [B1] (b) The α-particle is positive and is pulled towards the negative plate, but the β⁻ particle is negative and is pulled towards the positive plate: opposite charges give forces in opposite directions. [B1] (c) The force on each is of the same order (charge \(2e\) or \(e\)), but the β⁻ mass is thousands of times smaller, so its acceleration is far larger: its charge-to-mass ratio is about 3600 times larger. [B1]
 Q: [2 marks] ★★ Describe the change in quark composition that takes place in β⁺ decay.
 A: An up quark changes into a down quark, [B1] so a proton (uud) becomes a neutron (udd), with a positron and a neutrino emitted. [B1]
 Q: [5 marks] ★★★ A nucleus of uranium-238, \(^{238}_{\;92}\mathrm{U}\), decays through a series of α and β⁻ decays to the stable nucleus lead-206, \(^{206}_{\;82}\mathrm{Pb}\). Determine the number of α-decays and the number of β⁻ decays in the series.

@@ -413,8 +413,8 @@ Q: A lamp is marked "230 V, 60 W". Find its operating resistance and current.
 A: \(R = V^{2}/P = 230^{2}/60 = 880\,\Omega\) and \(I = P/V = 60/230 = 0.26\,\mathrm{A}\).
 Q: Find the resistance of a copper wire of length 2.0 m and diameter 0.60 mm. Take \(\rho = 1.7 \times 10^{-8}\,\Omega\,\mathrm{m}\).
 A: \(A = \pi \times (0.30 \times 10^{-3})^{2} = 2.83 \times 10^{-7}\,\mathrm{m^{2}}\). \(R = \dfrac{\rho L}{A} = \dfrac{1.7 \times 10^{-8} \times 2.0}{2.83 \times 10^{-7}} = 0.12\,\Omega\).
-Q: Convert \(3.6 \times 10^{6}\,\mathrm{J}\) into kW h.
-A: \(1\,\mathrm{kW\,h} = 3.6 \times 10^{6}\,\mathrm{J}\), so the energy is exactly 1.0 kW h.
+Q: A current falls steadily from 6.0 mA to zero in 30 s. How much charge passes in that time?
+A: The charge is the area under the current–time graph, a triangle: \(Q = \tfrac12 \times 30 \times 6.0 \times 10^{-3} = 0.090\,\mathrm{C}\).
 Q: Electrons drift very slowly along a wire. Explain why a lamp still lights almost at once when a switch is closed.
 A: The wire and the filament already contain free electrons. The electric field travels along the circuit at close to the speed of light, so all the electrons start drifting at about the same moment.
 Q: State what happens to the resistance of an LDR when the light gets brighter, and of an NTC thermistor when it is heated.
@@ -513,6 +513,7 @@ A: (a) Copper: \(v = \dfrac{I}{Anq} = \dfrac{1.0 \times 10^{-3}}{2.0 \times 10^{
 
 :::checklist What you can now do
 - [ ] I can explain that current is a flow of charge carriers, define it as rate of flow of charge, and use \(Q = It\) and the coulomb.
+- [ ] I can find the charge from the area under a current–time graph.
 - [ ] I can explain that charge is quantised and use \(Q = ne\) to count electrons.
 - [ ] I can derive and use \(I = Anvq\) and compare drift speeds in different wires.
 - [ ] I can define p.d. and the volt, and use \(V = W/Q\).

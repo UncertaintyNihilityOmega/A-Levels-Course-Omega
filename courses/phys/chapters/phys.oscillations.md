@@ -56,7 +56,8 @@ The data in a question may give \(f\), \(T\) or \(\omega\). Every equation in th
 :::
 
 :::eg A guitar string vibrates at 440 Hz. Find its period and angular frequency.
-\[T = \frac{1}{f} = \frac{1}{440} = 2.27 \times 10^{-3}\,\mathrm{s} \qquad \omega = 2\pi f = 2\pi \times 440 = 2.76 \times 10^{3}\,\mathrm{rad\,s^{-1}}\]
+\(T = \dfrac{1}{f} = \dfrac{1}{440}\) [C1] \(= 2.27 \times 10^{-3}\,\mathrm{s}\) [A1]
+\(\omega = 2\pi f = 2\pi \times 440\) [C1] \(= 2.76 \times 10^{3}\,\mathrm{rad\,s^{-1}}\) [A1]
 The string completes 440 oscillations every second, so each takes about 2.3 ms.
 :::
 
@@ -72,7 +73,7 @@ Two oscillators of the same frequency need not move together. One may reach its 
 A general oscillation is written \(x = x_0 \sin(\omega t + \phi)\), where \(\phi\) is the phase of the oscillator compared with a reference that has \(\phi = 0\).
 
 :::eg Two identical pendulums have a period of 0.80 s. Pendulum B passes through its equilibrium position, moving the same way, 0.10 s after pendulum A. Find the phase difference.
-\[\Delta\phi = 2\pi \times \frac{0.10}{0.80} = \frac{\pi}{4} = 0.785\,\mathrm{rad}\]
+\(\Delta\phi = 2\pi \times \dfrac{0.10}{0.80}\) [C1] \(= \dfrac{\pi}{4} = 0.785\,\mathrm{rad}\) [A1]
 That is \(45^\circ\). Pendulum B lags pendulum A by one eighth of a cycle.
 :::
 
