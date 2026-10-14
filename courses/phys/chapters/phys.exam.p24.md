@@ -373,11 +373,11 @@ An electron enters, at right angles to the field, the uniform electric field bet
 The field strength between the plates is
 \[E = \frac{V}{d} = \frac{250}{0.020} = 1.25 \times 10^{4}\,\mathrm{V\,m^{-1}}\] [C1]
 The force is \(F = eE\), so the acceleration (perpendicular to the plates) is
-\[a = \frac{eE}{m} = \frac{1.60 \times 10^{-19} \times 1.25 \times 10^{4}}{9.11 \times 10^{-31}} = 2.2 \times 10^{15}\,\mathrm{m\,s^{-2}}\] [C1] [A1]
+\[a = \frac{eE}{m} = \frac{1.60 \times 10^{-19} \times 1.25 \times 10^{4}}{9.11 \times 10^{-31}} = 2.195 \times 10^{15}\,\mathrm{m\,s^{-2}}\] [C1] [A1]
 There is no horizontal force, so the horizontal speed is constant and the time between the plates is \(t = L/v\): [B1]
 \[t = \frac{0.050}{3.0 \times 10^{7}} = 1.67 \times 10^{-9}\,\mathrm{s}\]
 Starting with no vertical velocity, the deflection is
-\[y = \tfrac12 at^2 = \tfrac12 \times 2.20 \times 10^{15} \times (1.67 \times 10^{-9})^2 = 3.0 \times 10^{-3}\,\mathrm{m}\] [C1] [A1]
+\[y = \tfrac12 at^2 = \tfrac12 \times 2.195 \times 10^{15} \times (1.667 \times 10^{-9})^2 = 3.05 \times 10^{-3}\,\mathrm{m}\] [C1] [A1]
 This is 3.0 mm, less than half the plate separation (10 mm), so the electron does leave the plates. This is projectile motion again, with the electric force in place of the weight.
 :::
 
