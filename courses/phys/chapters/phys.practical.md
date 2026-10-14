@@ -377,7 +377,7 @@ In Question 2 the method is deliberately poor, and you must find the faults and 
 
 Headings are quantity / unit, all raw values keep two decimal places, and the calculated values have 4 s.f. [B1] [B1] [B1]
 
-**The graph**: \(T^2\) / s² on the \(y\)-axis against \(l\) / m on the \(x\)-axis, scales of \(0.1\,\mathrm{m}\) and \(0.5\,\mathrm{s^2}\) per large square from zero, so the points fill more than half the grid. Six crosses, and a thin best-fit line with the points balanced about it. [B1] [B1] [B1]
+**The graph**: \(T^2\) / s² on the \(y\)-axis against \(l\) / m on the \(x\)-axis, scales of \(0.1\,\mathrm{m}\) and \(0.5\,\mathrm{s^2}\) per large square from zero, so the points fill at least half the grid in each direction (here the origin is wanted on the grid, to see whether the line passes through it). Six crosses, and a thin best-fit line with the points balanced about it. [B1] [B1] [B1]
 
 :::plot The pendulum data. The line passes close to the origin, so \(T^2\) is proportional to \(l\).
 --f "4.04*x+0*sqrt(0.84-x)" --x 0 1 --y 0 4 --pt "0.3,1.21" --pt "0.4,1.61" --pt "0.5,2.011" --pt "0.6,2.421" --pt "0.7,2.819" --pt "0.8,3.229" --xlabel "l / m" --ylabel "T² / s²" --xstep 0.1
@@ -539,7 +539,7 @@ A: (a) \(\dfrac{0.2}{1.57} \times 100\% = 12.7\%\). [A1] (b) The time for \(N\) 
 - Resolution is the smallest reading an instrument shows. Subtract a positive zero error from every reading (add back a negative one). Micrometer: sleeve + thimble \(\times\,0.01\,\mathrm{mm}\). Vernier: main scale + aligned line \(\times\) resolution.
 - Time 20 oscillations from a fiducial marker at the centre of the swing, repeat, and divide: this cuts the percentage uncertainty in the period by a factor of 20 compared with timing one.
 - Tables: headings quantity / unit; raw readings to the instrument's resolution with the same decimal places; calculated values to \(n\) or \(n + 1\) s.f.
-- Graphs: labelled axes; scales of 1, 2 or 5; data fill more than half the grid (false origin if needed); small crosses; balanced best-fit line; circle one anomalous point; gradient from two points on the line, more than half the line apart; with a false origin find the intercept by substituting a point.
+- Graphs: labelled axes; scales of 1, 2 or 5; data fill at least half the grid (false origin if needed); small crosses; balanced best-fit line; circle one anomalous point; gradient from two points on the line, more than half the line apart; with a false origin find the intercept by substituting a point.
 - Uncertainty: half the range for repeats; percentage = \(\Delta x/x \times 100\%\); add percentages for products and quotients, multiply by the power for powers, add absolute values for sums and differences.
 - A constant is supported if the percentage difference between two values is less than the percentage uncertainty. Proportional: a straight line through the origin.
 - Evaluation: name the quantity, give the reason, and suggest a specific improvement (other apparatus or procedure, not a different experiment). "Human error" and "repeat the readings" score nothing.

@@ -102,14 +102,14 @@ The syllabus has 25 topics. Topics 1 to 11 are AS and topics 12 to 25 are A Leve
 | [Mixed practice: AS Level](#phys.mixed.as) | questions that mix AS topics, as exams do | 1, 2 |
 | [Mixed practice: A Level](#phys.mixed.a2) | questions that mix A Level topics with AS ones | 4 |
 
-Each topic chapter follows the same shape: a warm-up, short sections that build from the idea to exam depth, worked examples with marks, practice from easy to hard, an A\* stretch, a quiz and a checklist. Progress through the checklists is shown at the end of this chapter.
+Each topic chapter follows the same shape: a warm-up, short sections that build from the idea to exam depth, worked examples with marks, practice from easy to hard, an A\* stretch, a quiz and a checklist. Your progress through the checklists is shown under "Study order and pace" below.
 
 ## How Cambridge compares with other boards
 
 Most of the physics is shared between boards. One clear difference is in how practical skills are assessed.
 
 :::board
-**AQA (7408)** has no timed practical exam: laboratory work is assessed by the teacher as a practical endorsement, reported separately from the A Level grade. In Cambridge 9702, practical skills are examined in Papers 3 and 5, and those marks count towards the grade.
+**AQA (7408)** has no timed practical exam: laboratory work is assessed by the teacher as a practical endorsement, reported separately from the A Level grade (its written papers also ask questions about practical work). In Cambridge 9702, practical skills are examined in Papers 3 and 5, and those marks count towards the grade.
 :::
 
 If you are studying for a different board, this course covers the physics, but follow your own board's paper structure and use its specification for the exact content list.

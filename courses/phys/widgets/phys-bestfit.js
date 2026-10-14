@@ -152,7 +152,7 @@
       tbody.append(W.h('tr', {}, W.h('td', {}, r[0]), W.h('td', {}, r[1]), W.h('td', {}, r[2])));
     }
     rows.forEach(addRow);
-    const table = W.h('table', { style: { width: '100%', tableLayout: 'fixed' } }, W.h('thead', {}, W.h('tr', {}, head(xh), head(yh), head(yn.u ? 'Δy / ' + yn.u : 'Δy'))), tbody);
+    const table = W.h('table', { style: { width: '100%', tableLayout: 'fixed' } }, W.h('thead', {}, W.h('tr', {}, head(xh), head(yh), head('Δ' + (yn.q.length <= 2 ? yn.q : 'y') + (yn.u ? ' / ' + yn.u : '')))), tbody);
     const addBtn = W.h('button', { class: 'btn btn-sec btn-sm', type: 'button', onclick: () => { if (inputs.length < 10) { const last = inputs[inputs.length - 1]; addRow(['', '', last ? last[2].value : '']); update(); } } }, 'Add row');
     const delBtn = W.h('button', { class: 'btn btn-sec btn-sm', type: 'button', onclick: () => { if (inputs.length > 3) { inputs.pop(); tbody.lastChild.remove(); update(); } } }, 'Remove row');
     const resetBtn = W.h('button', { class: 'btn btn-sec btn-sm', type: 'button', onclick: () => { while (inputs.length) { inputs.pop(); tbody.lastChild.remove(); } rows.forEach(addRow); update(); } }, 'Reset');
@@ -181,7 +181,8 @@
         let ylo = Infinity, yhi = -Infinity;
         const see = (v) => { ylo = Math.min(ylo, v); yhi = Math.max(yhi, v); };
         for (let i = 0; i < nX; i++) { see(m.lo[i]); see(m.hi[i]); }
-        [m.best, m.worst].forEach((L) => { if (L) { see(L.c + L.m * x0); see(L.c + L.m * x1); } });
+        const xe = xmax + 0.02 * span;                                             // lines stop just past the last point, so they do not run through the x-axis tick labels
+        [m.best, m.worst].forEach((L) => { if (L) { see(L.c + L.m * x0); see(L.c + L.m * xe); } });
         const ys = (yhi - ylo) || 1;
         const view = { x0: x0, x1: x1, y0: ylo - 0.08 * ys, y1: yhi + 0.10 * ys };
         const names2 = labels();
@@ -195,7 +196,7 @@
         // best fit and worst acceptable lines
         const line = (L, colr, dash, wd) => {
           ctx.strokeStyle = colr; ctx.lineWidth = wd; ctx.setLineDash(dash);
-          ctx.beginPath(); ctx.moveTo(X(x0), Y(L.c + L.m * x0)); ctx.lineTo(X(x1), Y(L.c + L.m * x1)); ctx.stroke();
+          ctx.beginPath(); ctx.moveTo(X(x0), Y(L.c + L.m * x0)); ctx.lineTo(X(xe), Y(L.c + L.m * xe)); ctx.stroke();
           ctx.setLineDash([]);
         };
         if (m.worst) line(m.worst, col.sc2, [6, 4], 2);

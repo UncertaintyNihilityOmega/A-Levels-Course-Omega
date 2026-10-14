@@ -35,7 +35,7 @@ A large number has a positive \(n\) (move the decimal point to the left to get \
 
 0.0000072: move the point 6 places right to get 7.2, so \(7.2 \times 10^{-6}\).
 
-The last number is the Avogadro constant: 6.02, then 23 more digits, so \(6.02 \times 10^{23}\).
+The last number is the Avogadro constant. Its first digit, 6, is followed by 23 more digits, so the point moves 23 places left to give \(6.02 \times 10^{23}\).
 :::
 
 Two values you will use all through the course are the speed of light, \(c = 3.00 \times 10^{8}\,\mathrm{m\,s^{-1}}\), and the charge of one proton, \(e = 1.60 \times 10^{-19}\,\mathrm{C}\). To multiply standard-form numbers, multiply the front numbers and add the powers: \((3.00 \times 10^{8}) \times (2.0 \times 10^{-3}) = 6.0 \times 10^{5}\). Your calculator has an EXP or \(\times 10^{x}\) key for this: press it instead of typing \(\times 10\) and a power, or the answer will be wrong. The full rules for powers are in [Indices, surds and standard form](#math.f.powers).
@@ -518,8 +518,8 @@ A: \(\lambda = v/f = 340/512\) [C1] \(= 0.66\,\mathrm{m}\). [A1] The wavelength 
 - 35 N
 - 40 N
 + 20 N
-- 69 N
-> The vertical component is opposite the \(30^\circ\) angle, so it is \(40\sin30^\circ = 20\,\mathrm{N}\). 35 N is the horizontal component, \(40\cos30^\circ\). 69 N is \(80\sin60^\circ\), which belongs to a different question, and 40 N is the whole force, which only equals the vertical component if the force is vertical.
+- 23 N
+> The vertical component is opposite the \(30^\circ\) angle, so it is \(40\sin30^\circ = 20\,\mathrm{N}\). 35 N is the horizontal component, \(40\cos30^\circ\). 23 N is \(40\tan30^\circ\), but tan is opposite over adjacent and the 40 N force is the hypotenuse. 40 N is the whole force, which only equals the vertical component if the force is vertical.
 :::
 
 :::checklist What you can now do
