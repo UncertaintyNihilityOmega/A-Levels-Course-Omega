@@ -1,6 +1,6 @@
 # STATUS: Physics
 
-Last: 2026-10-14 · REVIEW P5, P6 · 5 items in REVIEW.md; fixed figures (vertical circle, g-r and phi-r plots, car plot label), phys-orbit (minus signs, planet colour, legend), semiconductor stretch Q (+A* part), marks in circular/gravity/electricity; depth: I-t area plot+eg (electricity), whirling-bung lab+eg (circular), alpha/beta/gamma deflection (particles); COURSE.md P5-P6 figure lessons. check passes; headless phone/probe broken for every page (REQUESTS.md), phone width checked by hand in the pane
+Last: 2026-10-14 · WRITE P8 · phys.oscillations (6496 w) and phys.efields (7208 w, 6 figures incl. field lines, plates, electron path, equipotentials, sphere V/E graphs) pass check and phone; widget phys-shm (shm + resonance modes) probes clean in light/dark/phone incl. bad attributes and data-f=0 (blank-canvas flags seen once were transient and passed on rerun). Both oscillations embeds of phys-shm are in place. Not looked at in the browser pane (no browser tools allowed): reviewer should eyeball the efields figures and the widget layout. Values: efields uses 449.5 V/4495 sphere coefficient from k=8.99e9; plot E_P coefficient 2.30.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -11,8 +11,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P4: reviewed 2026-10-14
 - P5: reviewed 2026-10-14
 - P6: reviewed 2026-10-14
-- P7: writing 2026-10-14
-- P8: writing 2026-10-14
+- P7: written 2026-10-14
+- P8: written 2026-10-14
 - P9: open
 - P10: open
 - P11: open
