@@ -341,7 +341,7 @@ Flux change does not need a wire. Any lump of conductor in a changing field has 
 :::
 
 :::board
-Other boards teach these laws in the same way, and AQA and OCR also use the e.m.f. of a rotating coil and the transformer equation, \(N_s/N_p = V_s/V_p\). Cambridge's learning outcomes for this topic are the flux, flux linkage, experiments, Faraday's law and Lenz's law covered here. Some UK specifications write the combined law as \(\varepsilon = -N\,\mathrm{d}\Phi/\mathrm{d}t\); it is the same law with a different symbol for e.m.f.
+AQA also asks for the e.m.f. of a rotating coil, \(\varepsilon = BAN\omega\sin\omega t\), and the transformer equation \(N_s/N_p = V_s/V_p\). Neither is a Cambridge 9702 learning outcome: here the outcomes are flux, flux linkage, the experiments, Faraday's law and Lenz's law, which is why this chapter derives the rotating-coil e.m.f. only as an extra and explains the transformer in terms of flux.
 :::
 
 :::eg Spot the error: the flux through each turn of a 100-turn coil falls uniformly from 5.0 × 10⁻³ Wb to 1.0 × 10⁻³ Wb in 0.20 s. Calculate the induced e.m.f.
@@ -392,7 +392,7 @@ Q: [5 marks] ★★★ A bar magnet is released from rest above a coil and falls
 H: Think of the flux linkage first: where is it increasing, constant and decreasing?
 H: The magnet accelerates under gravity as it falls. What does that do to the two peaks?
 A: There are two pulses, of opposite sign (one positive, one negative). [B1] The e.m.f. is zero when the magnet is at the centre of the coil, where the flux linkage is at its maximum and not changing. [B1] The pulses have opposite signs because the flux linkage first increases and then decreases. [B1] The second pulse has a larger peak and is shorter, because the magnet is moving faster. [B1] The areas under the two pulses are equal, because each equals the same change in flux linkage. [B1]
-Q: [6 marks] (#phys.magnetic) ★★★ A rectangular coil of 120 turns, 5.0 cm by 8.0 cm, rotates at 25 revolutions per second in a uniform field of flux density 0.20 T. (a) Calculate the angular speed of the coil. (b) Calculate the maximum e.m.f. induced. (c) State the position of the coil, relative to the field, at which the e.m.f. is a maximum, and explain why it is a maximum there.
+Q: [6 marks] (#phys.circular) ★★★ A rectangular coil of 120 turns, 5.0 cm by 8.0 cm, rotates at 25 revolutions per second in a uniform field of flux density 0.20 T. (a) Calculate the angular speed of the coil. (b) Calculate the maximum e.m.f. induced. (c) State the position of the coil, relative to the field, at which the e.m.f. is a maximum, and explain why it is a maximum there.
 H: The maximum e.m.f. is \(E_0 = BAN\omega\), from the proof in the chapter.
 H: At the maximum e.m.f. the flux through the coil is not at a maximum.
 A: (a) \(\omega = 2\pi f = 2\pi \times 25\) [C1] \(= 157\,\mathrm{rad\,s^{-1}}\). [A1] (b) \(A = 0.050 \times 0.080 = 4.0 \times 10^{-3}\,\mathrm{m^2}\), so \(E_0 = BAN\omega = 0.20 \times 4.0 \times 10^{-3} \times 120 \times 157\) [C1] \(= 15\,\mathrm{V}\). [A1] (c) The plane of the coil is parallel to the field. [B1] The flux through it is zero there, but is changing at its greatest rate (the sides cut straight across the field lines), and the e.m.f. is the rate of change of flux linkage. [B1]

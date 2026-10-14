@@ -159,6 +159,12 @@ the gold chapter). "Explain" questions score one B1 per link in the chain of rea
     belongs in `fig small` (in `fig` its labels come out twice the size of the text).
   - If a caption says equipotentials (or field lines) are "further apart where the field is weaker", draw them at
     equal steps of potential, or say what steps you drew.
+- Lessons from the P9–P10 review: work out the display scale before choosing the class. `fig` is about 625 px wide, so a
+  410-wide viewBox in `fig` shows 13 px labels at 20 px; `fig small` is about 360 px, so a 240-wide viewBox there is just as
+  oversized and a 410-wide one shrinks labels to 11 px. Aim for 520–640 in `fig` and about 300–350 in `fig small` (move
+  side labels in rather than widening the drawing). Don't put label text across grid crosses (⊗ fields) or arrowheads:
+  leave those crosses out. Canvas legends: one item per line from the second row down, never one long line (it ran off
+  the canvas at phone width). `(#id)` on a question names the chapter it revises (ω = 2πf → phys.circular), not the one before.
 - `:::board` boxes: the P7 and P8 notes and Writers added claims nobody could verify (OCR's sign convention, OCR's
   pendulum derivation, Edexcel IAL coverage). Name one board and one content difference you are sure of (AQA's
   Q = ΔU + W; AQA's formula booklet lists T = 2π√(m/k) and T = 2π√(l/g)), or write only about Cambridge.

@@ -69,8 +69,9 @@
         const t = i * dt;
         const v = s.v0 * Math.sin(2 * Math.PI * s.f * t);
         let o = s.mode === 'none' ? v : s.mode === 'half' ? Math.max(v - dropV, 0) : Math.max(Math.abs(v) - dropV, 0);
+        const rect = o;   // the rectified p.d. before smoothing (drawn faint, so every pulse that tops up C shows)
         if (smooth) { vc = Math.max(o, vc * Math.exp(-dt / RC)); o = vc; }
-        if (i >= pre * spc) { tt.push((t - pre * T) * 1000); vin.push(v); vout.push(o); }
+        if (i >= pre * spc) { tt.push((t - pre * T) * 1000); vin.push(rect); vout.push(o); }
       }
       const last = vout.slice((win - 1) * spc);
       const hi = Math.max.apply(null, last), lo = Math.min.apply(null, last);
@@ -84,7 +85,7 @@
         if (!s) return;
         const v0 = st.v0;
         const none = st.mode === 'none';
-        const view = { x0: 0, x1: 4 * s.T * 1000, y0: none ? -1.15 * v0 : 0, y1: (none ? 1.7 : 1.45) * v0 };
+        const view = { x0: 0, x1: 4 * s.T * 1000, y0: none ? -1.15 * v0 : 0, y1: (none ? 1.7 : 1.6) * v0 };
         const pad = { l: 44, r: 14, t: 14, b: 44 };
         const ax = W.axes(ctx, w, h, view, col, { pad, ylabel: 'V / V', fx: () => '', ny: 5, nx: 4 });
         const { X, Y } = ax;
@@ -116,8 +117,10 @@
 
         ctx.save();
         ctx.fillStyle = col.ink2; ctx.font = '11px ' + (col.font || 'sans-serif'); ctx.textAlign = 'left'; ctx.textBaseline = 'top';
-        ctx.fillText(none ? 'bold line: p.d. across the load (the supply itself)' : 'faint line: supply · bold line: across the load', pad.l + 8, pad.t + 22);
-        if (s.smooth) ctx.fillText('dashed lines: ripple ΔV', pad.l + 8, pad.t + 36);
+        // one legend item per line, so it fits at phone width (the y range leaves room above the peaks)
+        const leg = none ? ['bold line: p.d. across the load'] : ['faint line: rectified supply', 'bold line: p.d. across the load'];
+        if (s.smooth) leg.push('dashed lines: ripple ΔV');
+        leg.forEach((t, i) => ctx.fillText(t, pad.l + 8, pad.t + 20 + 13 * i));
         ctx.restore();
       }
     });

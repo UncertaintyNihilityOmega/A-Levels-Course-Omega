@@ -1,6 +1,6 @@
 # STATUS: Physics
 
-Last: 2026-10-14 · WRITE P9 · phys.capacitance (5295 words), phys.magnetic (6418 words); widget phys-rc (extra optional data-show attribute; own axes with tau labels, probes clean incl. charge mode and bad attributes). Reviewer: 10 hand-SVG figures in phys.magnetic and 2 in phys.capacitance were generated from coordinates and checked numerically for label clearance, nobody has looked at them or phys-rc visually. Board boxes: capacitance names AQA charging equation only; magnetic speaks only about Cambridge content.
+Last: 2026-10-14 · REVIEW P9, P10 · 2 items in REVIEW.md (capacitance I-t exam question; magnetic Fleming/electron-path question). Fixed: velocity-selector crosses under labels, capacitor plate figure crop, phys-ac faint line = rectified supply + legend one item per line (overflowed at phone), capacitance dielectric wording + Q-t gradient + quiz note, board boxes (capacitance AQA Q form; induction AQA only, OCR claims removed), generator revise tag. Writers' 2.1 ms, 1200 uF, transformer-as-background, data-show confirmed. phys-shm legend, alpha and plates figures OK. COURSE.md: P9-P10 lessons (fig scale, legends, revise tags). Browser pane mostly would not render (window hidden): figures checked by bbox probes and coordinates.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -13,10 +13,10 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P6: reviewed 2026-10-14
 - P7: reviewed 2026-10-14
 - P8: reviewed 2026-10-14
-- P9: written 2026-10-14
-- P10: written 2026-10-14
+- P9: reviewed 2026-10-14
+- P10: reviewed 2026-10-14
 - P11: writing 2026-10-14
-- P12: open
+- P12: writing 2026-10-14
 - P13: open
 - P14: open
 - P15: open

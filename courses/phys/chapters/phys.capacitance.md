@@ -25,7 +25,7 @@ A: Take natural logs: \(-x = \ln 0.25\), so \(x = \ln 4 = 1.39\).
 A **capacitor** is two conducting plates separated by an insulator. The insulator is called the **dielectric**. It might be air, a vacuum, plastic film or a thin layer of oxide. Because the dielectric is an insulator, no charge can cross from one plate to the other inside the capacitor.
 
 :::html
-<figure class="fig small"><svg viewBox="25 30 410 100" role="img" aria-label="Side view of a parallel plate capacitor: two horizontal metal plates, the upper marked plus and the lower marked minus, with an insulating dielectric layer between them. A double dimension arrow shows the separation d between the plates."><rect class="fm" x="60" y="48" width="200" height="62"/><rect class="fi" x="60" y="40" width="200" height="8"/><rect class="fi" x="60" y="110" width="200" height="8"/><text class="tl tc" x="80" y="62">+</text><text class="tl tc" x="120" y="62">+</text><text class="tl tc" x="160" y="62">+</text><text class="tl tc" x="200" y="62">+</text><text class="tl tc" x="240" y="62">+</text><text class="tl tc" x="80" y="106">−</text><text class="tl tc" x="120" y="106">−</text><text class="tl tc" x="160" y="106">−</text><text class="tl tc" x="200" y="106">−</text><text class="tl tc" x="240" y="106">−</text><path class="c1" d="M40 79V50" marker-end="url(#ah-phys)"/><path class="c1" d="M40 79V108" marker-end="url(#ah-phys)"/><text class="tl ti" x="48" y="83">d</text><text class="tl" x="272" y="50">metal plate, charge +Q</text><text class="tl" x="272" y="84">dielectric (insulator)</text><text class="tl" x="272" y="118">metal plate, charge −Q</text></svg><figcaption>A parallel plate capacitor. The plates carry equal and opposite charges and the insulating dielectric keeps them apart. The two charges attract each other across the gap.</figcaption></figure>
+<figure class="fig small"><svg viewBox="25 30 350 100" role="img" aria-label="Side view of a parallel plate capacitor: two horizontal metal plates, the upper marked plus and the lower marked minus, with an insulating dielectric layer between them. A double dimension arrow shows the separation d between the plates."><rect class="fm" x="60" y="48" width="140" height="62"/><rect class="fi" x="60" y="40" width="140" height="8"/><rect class="fi" x="60" y="110" width="140" height="8"/><text class="tl tc" x="80" y="62">+</text><text class="tl tc" x="113" y="62">+</text><text class="tl tc" x="147" y="62">+</text><text class="tl tc" x="180" y="62">+</text><text class="tl tc" x="80" y="106">−</text><text class="tl tc" x="113" y="106">−</text><text class="tl tc" x="147" y="106">−</text><text class="tl tc" x="180" y="106">−</text><path class="c1" d="M40 79V50" marker-end="url(#ah-phys)"/><path class="c1" d="M40 79V108" marker-end="url(#ah-phys)"/><text class="tl ti" x="48" y="83">d</text><text class="tl" x="212" y="50">metal plate, charge +Q</text><text class="tl" x="212" y="84">dielectric (insulator)</text><text class="tl" x="212" y="118">metal plate, charge −Q</text></svg><figcaption>A parallel plate capacitor. The plates carry equal and opposite charges and the insulating dielectric keeps them apart. The two charges attract each other across the gap.</figcaption></figure>
 :::
 
 To **charge** a capacitor you connect it to a source, such as a cell. The source does not add charge to the capacitor. It moves electrons from one plate, through the circuit, to the other. The plate that loses electrons becomes positive, with charge \(+Q\), and the plate that gains them becomes negative, with charge \(-Q\). So the **net charge on a capacitor is always zero**. When a question says "the charge on the capacitor", it means \(Q\), the magnitude of the charge on **one** plate.
@@ -61,7 +61,7 @@ The farad is a huge unit. Real capacitors are measured in microfarads (\(1\,\mu\
 That is about 5.6 mC. The negative plate carries \(-5.64\,\mathrm{mC}\), so the capacitor as a whole is neutral.
 :::
 
-For a parallel plate capacitor, the capacitance depends on three things. It is **larger for a bigger plate area**, **larger for a smaller separation**, and **larger when the dielectric is a better insulating material than air**. Charge on one plate attracts the opposite charge on the other, so plates that are large and close together can hold more charge for the same p.d. You are not asked for a formula here, only for this reasoning: it explains why practical capacitors are often long strips of metal foil rolled up with thin plastic between them.
+For a parallel plate capacitor, the capacitance depends on three things. It is **larger for a bigger plate area**, **larger for a smaller separation**, and **larger when the gap is filled with a suitable dielectric (such as plastic or ceramic) instead of air**. Charge on one plate attracts the opposite charge on the other, so plates that are large and close together can hold more charge for the same p.d. You are not asked for a formula here, only for this reasoning: it explains why practical capacitors are often long strips of metal foil rolled up with thin plastic between them.
 
 ### Capacitance of an isolated sphere
 
@@ -227,7 +227,7 @@ After about five time constants the capacitor is, for practical purposes, discha
 --f "exp(-x)+0*sqrt(5-x)" --x 0 5.8 --y 0 1.15 --pt "1,0.368,(τ, 0.37 V₀)@ne" --vline 1 --hline 0.368 --xlabel "t / τ" --ylabel "V / V₀"
 :::
 
-The curve has the same shape for \(Q\), \(V\) and \(I\). The current starts at \(I_0 = V_0/R\), where \(V_0\) is the starting p.d., and decays by the same factor. The **area under the current–time graph** is the charge that flowed, so it equals the initial charge \(Q_0\). This gives a useful check: since \(I_0 = V_0/R\) and \(\tau = RC\), the area under an exponential curve from \(t=0\) to infinity is \(I_0\tau = (V_0/R) \times RC = CV_0 = Q_0\).
+The curve has the same shape for \(Q\), \(V\) and \(I\). On a charge–time graph, the **gradient** at any instant is minus the current, \(I = -\mathrm{d}Q/\mathrm{d}t\), so the steep start of the curve is where the current is largest. The current starts at \(I_0 = V_0/R\), where \(V_0\) is the starting p.d., and decays by the same factor. The **area under the current–time graph** is the charge that flowed, so it equals the initial charge \(Q_0\). This gives a useful check: since \(I_0 = V_0/R\) and \(\tau = RC\), the area under an exponential curve from \(t=0\) to infinity is \(I_0\tau = (V_0/R) \times RC = CV_0 = Q_0\).
 
 :::eg A \(100\,\mu\mathrm{F}\) capacitor charged to 9.0 V discharges through a \(50\,\mathrm{k\Omega}\) resistor. Find the time constant, the initial current and the p.d. after 3.0 s.
 \[\tau = RC = 50 \times 10^{3} \times 100 \times 10^{-6} = 5.0\,\mathrm{s}\] [C1] [A1]
@@ -297,7 +297,7 @@ For comparison only, when a capacitor **charges** through a resistor the p.d. ac
 :::
 
 :::board
-AQA also covers charging a capacitor through a resistor, with \(V = V_0(1 - e^{-t/RC})\). Cambridge asks only for discharge through a resistor, as above, and for the definitions and formulae in this chapter.
+AQA also covers charging a capacitor through a resistor, with \(Q = Q_0(1 - e^{-t/RC})\). Cambridge asks only for discharge through a resistor, as above, and for the definitions and formulae in this chapter.
 :::
 
 :::eg Spot the error: A \(100\,\mu\mathrm{F}\) capacitor is charged to 12 V and discharged through a \(20\,\mathrm{k\Omega}\) resistor. Calculate the p.d. across the capacitor 3.0 ms after discharge begins.
@@ -395,7 +395,7 @@ A: (a) The charges are \(4.0 \times 10 = 40\,\mu\mathrm{C}\) and \(6.0 \times 5.
 - 37%
 - 33%
 - 10%
-> After three time constants \(e^{-3} = 0.050\). 37% is the fraction left after one time constant, and 33% is what you would get by treating one third as the fraction after three.
+> After three time constants \(e^{-3} = 0.050\). 37% is the fraction left after one time constant. 33% divides 1 by 3 instead of calculating \(e^{-3}\), and 10% is a guess: always work out \(e^{-n}\) for \(n\) time constants.
 ? The resistance in a discharging circuit is doubled and the capacitance is unchanged. What happens to the time constant and to the initial current?
 + The time constant doubles and the initial current halves.
 - The time constant doubles and the initial current doubles.
