@@ -159,7 +159,7 @@
           draw(ctx, w, hh, col) {
             const arr = sim[arrKey], amax = nice(Math.max(sim[arrKey === 'x' ? 'xm' : arrKey === 'v' ? 'vm' : 'am'], 1e-12) * 1.12);
             const color = col[colorKey];
-            const axo = { pad: { l: 50, r: 8, t: 16, b: showX ? 32 : 6 }, xlabel: showX ? 't / s' : '', ylabel: name + ' / ' + unit, nx: 4, ny: 2 };
+            const axo = { pad: { l: 50, r: 8, t: 16, b: showX ? 32 : 6 }, xlabel: showX ? 't / s' : '', ylabel: name + ' / ' + unit, nx: 4, ny: W.ticks(-amax, amax, 3).length >= 3 ? 3 : 4 };   // always label ±a value, not just 0
             if (!showX) axo.fx = () => '';
             const ax = W.axes(ctx, w, hh, { x0: 0, x1: sim.Tw, y0: -amax, y1: amax }, col, axo);
             const { X, Y } = ax;
@@ -283,7 +283,7 @@
       st.b = read('b', st.b, 0.05, 2, 'damping');
       const amp = (r, b) => 1 / Math.sqrt(Math.pow(1 - r * r, 2) + b * b * r * r);
       const phase = (r, b) => Math.atan2(b * r, 1 - r * r);               // lag of the mass behind the driver, 0 to π
-      const peakOf = (b) => { let m = 0, at = 0; for (let i = 0; i <= 600; i++) { const r = 3 * i / 600, a = amp(r, b); if (a > m) { m = a; at = r; } } return { a: m, r: at }; };
+      const peakOf = (b) => { const r = b * b < 2 ? Math.sqrt(1 - b * b / 2) : 0; return { a: amp(r, b), r }; };   // exact peak of amp(r, b)
       const ymaxNow = () => nice(1.12 * Math.max(peakOf(REFS[0]).a, peakOf(st.b).a));
       const word = (b) => (b < 0.15 ? 'light' : b < 0.5 ? 'moderate' : b < 1.2 ? 'heavy' : 'very heavy');
 
@@ -315,7 +315,7 @@
         draw(ctx, w, h, col) {
           const ym = ymaxNow();
           const ax = W.axes(ctx, w, h, { x0: 0, x1: 3, y0: 0, y1: ym }, col, {
-            pad: { l: 44, r: 12, t: 20, b: 38 }, xlabel: 'f / f₀ (driving ÷ natural frequency)', ylabel: 'A / A₀', nx: 6
+            pad: { l: 44, r: 12, t: 20, b: 38 }, xlabel: 'f / f₀', ylabel: 'A / A₀', nx: 6
           });
           const { X, Y } = ax;
           ctx.save();

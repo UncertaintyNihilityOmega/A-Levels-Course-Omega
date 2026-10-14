@@ -94,7 +94,7 @@ Both halves of the definition matter. "Proportional" alone describes a car whose
 To prove that a system is SHM, you must show that the net force (and so the acceleration) is proportional to the displacement and opposite to it. You do not need the solution of the equation for that. The two standard cases are below.
 
 :::html
-<figure class="fig"><svg viewBox="8 10 630 248" role="img" aria-label="Two oscillators. Panel (a): a block on a horizontal spring displaced a distance x to the right of its dashed equilibrium line, with the force F equal to minus k x pointing left. Panel (b): a simple pendulum displaced by an angle theta from the vertical, with the weight mg pointing down and its two components along the string and at right angles to it."><rect class="fi" x="20" y="80" width="8" height="70"/><path class="ln" d="M28 150H290"/><path class="ln" d="M28 128L50 128L55.6 116L66.7 140L77.8 116L88.9 140L100 116L111.1 140L122.2 116L133.3 140L144.4 116L150 128L172 128"/><rect class="fp s-ink sw2" x="172" y="106" width="56" height="44"/><text class="tl tc" x="200" y="132">m</text><path class="gr dash" d="M160 36V176"/><text class="tl tc" x="160" y="30">equilibrium</text><path class="gr dash" d="M200 106V70"/><path class="c2" d="M200 70H140" marker-end="url(#ah2-phys)"/><text class="tl ta2" x="208" y="74">F = −kx</text><path class="gr dash" d="M200 150V176"/><path class="c1" d="M160 170H200" marker-end="url(#ah-phys)"/><text class="tl tc" x="180" y="190">x</text><rect class="fi" x="420" y="22" width="60" height="8"/><path class="gr dash" d="M450 30V200"/><path class="ln" d="M450 30L525 159.9"/><path class="ln thin" d="M450 75A45 45 0 0 0 472.5 69"/><text class="tl ti tc" x="468" y="100">θ</text><circle class="fp s-ink sw2" cx="525" cy="160" r="12"/><path class="c1" d="M525 160V240" marker-end="url(#ah-phys)"/><text class="tl ta" x="531" y="222">mg</text><path class="c2 dash" d="M525 160L559.6 220" marker-end="url(#ah2-phys)"/><text class="tl ta2" x="566" y="230">mg cos θ</text><path class="c2" d="M525 160L490.4 180" marker-end="url(#ah2-phys)"/><text class="tl ta2 tc" x="490" y="202">mg sin θ</text><text class="tl tc" x="155" y="246">(a) Mass on a horizontal spring</text><text class="tl tc" x="500" y="246">(b) Simple pendulum</text></svg><figcaption>(a) When the block is displaced a distance x from equilibrium, the spring exerts a force of size kx back towards equilibrium. (b) The component of the weight at right angles to the string, mg sin θ, always points back towards the vertical. The component along the string is balanced by the tension at the ends of the swing.</figcaption></figure>
+<figure class="fig"><svg viewBox="8 10 630 258" role="img" aria-label="Two oscillators. Panel (a): a block on a horizontal spring displaced a distance x to the right of its dashed equilibrium line, with the force F equal to minus k x pointing left. Panel (b): a simple pendulum displaced by an angle theta from the vertical, with the weight mg pointing down and its two components along the string and at right angles to it."><rect class="fi" x="20" y="80" width="8" height="70"/><path class="ln" d="M28 150H290"/><path class="ln" d="M28 128L50 128L55.6 116L66.7 140L77.8 116L88.9 140L100 116L111.1 140L122.2 116L133.3 140L144.4 116L150 128L172 128"/><rect class="fp s-ink sw2" x="172" y="106" width="56" height="44"/><text class="tl tc" x="200" y="132">m</text><path class="ln-m thin dash" d="M160 36V176"/><text class="tl tc" x="160" y="30">equilibrium</text><path class="gr dash" d="M200 106V70"/><path class="c2" d="M200 70H140" marker-end="url(#ah2-phys)"/><text class="tl ta2" x="208" y="74">F = −kx</text><path class="gr dash" d="M200 150V176"/><path class="c1" d="M160 170H200" marker-end="url(#ah-phys)"/><text class="tl tc" x="180" y="190">x</text><rect class="fi" x="420" y="22" width="60" height="8"/><path class="ln-m thin dash" d="M450 30V200"/><path class="ln" d="M450 30L525 159.9"/><path class="ln thin" d="M450 75A45 45 0 0 0 472.5 69"/><text class="tl ti tc" x="468" y="100">θ</text><circle class="fp s-ink sw2" cx="525" cy="160" r="12"/><path class="c1" d="M525 160V240" marker-end="url(#ah-phys)"/><text class="tl ta te" x="518" y="236">mg</text><path class="c2 dash" d="M525 160L559.6 220" marker-end="url(#ah2-phys)"/><text class="tl ta2" x="566" y="230">mg cos θ</text><path class="c2" d="M525 160L490.4 180" marker-end="url(#ah2-phys)"/><text class="tl ta2 tc" x="490" y="202">mg sin θ</text><text class="tl tc" x="155" y="262">(a) Mass on a horizontal spring</text><text class="tl tc" x="500" y="262">(b) Simple pendulum</text></svg><figcaption>(a) When the block is displaced a distance x from equilibrium, the spring exerts a force of size kx back towards equilibrium. (b) The component of the weight at right angles to the string, mg sin θ, always points back towards the vertical. The component along the string is balanced by the tension at the ends of the swing.</figcaption></figure>
 :::
 
 :::proof examinable A mass on a spring moves with SHM
@@ -204,15 +204,15 @@ It is moving towards equilibrium, which is the negative direction here, so \(v =
 The three graphs below are drawn for the same oscillator as the example above (amplitude 4.0 cm, period 0.40 s, \(x = x_0\sin\omega t\)), over two periods.
 
 :::plot Displacement against time. The amplitude is 4.0 cm and the period is 0.40 s. The gradient of this graph at any time is the velocity.
---f "4*sin(5*pi*x)" --x 0 0.8 --y -5.5 5.5 --xstep 0.1 --xlabel "t / s" --ylabel "x / cm" --pt "0.1,4,x₀ = 4.0 cm@n" --pt "0.3,-4,−x₀@s"
+--f "4*sin(5*pi*x)+0*sqrt(0.8-x)" --x 0 0.9 --y -5.5 5.5 --xstep 0.1 --xlabel "t / s" --ylabel "x / cm" --pt "0.1,4,x₀ = 4.0 cm@n" --pt "0.3,-4,−x₀@s"
 :::
 
 :::plot Velocity against time. It is a cosine curve with maximum \(\omega x_0 = 0.63\,\mathrm{m\,s^{-1}}\). It is zero when x is at an extreme and greatest when the oscillator passes through equilibrium. The gradient is the acceleration.
---f "0.6283*cos(5*pi*x)" --x 0 0.8 --y -0.8 0.8 --xstep 0.1 --xlabel "t / s" --ylabel "v / m s⁻¹" --pt "0,0.628,v₀ = 0.63 m s⁻¹@ne" --pt "0.2,-0.628,−v₀@se"
+--f "0.6283*cos(5*pi*x)+0*sqrt(0.8-x)" --x 0 0.9 --y -0.8 0.8 --xstep 0.1 --xlabel "t / s" --ylabel "v / m s⁻¹" --pt "0,0.628,v₀ = 0.63 m s⁻¹@ne" --pt "0.2,-0.628,−v₀@se"
 :::
 
 :::plot Acceleration against time. It is a negative sine curve with maximum \(\omega^2 x_0 = 9.87\,\mathrm{m\,s^{-2}}\): the acceleration is greatest at the extremes of the motion, where the restoring force is greatest.
---f "-9.870*sin(5*pi*x)" --x 0 0.8 --y -13 13 --xstep 0.1 --xlabel "t / s" --ylabel "a / m s⁻²" --pt "0.3,9.87,a₀ = 9.87 m s⁻²@n" --pt "0.1,-9.87,−a₀@s"
+--f "-9.870*sin(5*pi*x)+0*sqrt(0.8-x)" --x 0 0.9 --y -13 13 --xstep 0.1 --xlabel "t / s" --ylabel "a / m s⁻²" --pt "0.3,9.87,a₀ = 9.87 m s⁻²@n" --pt "0.1,-9.87,−a₀@s"
 :::
 
 Compare the three graphs at the same time:
@@ -243,7 +243,7 @@ The gradient is \(-\omega^2\), so \(\omega = \sqrt{247} = 15.7\,\mathrm{rad\,s^{
 Plotting \(v\) against \(x\) gives a closed loop. Because \(\omega^2 x^2 + v^2 = \omega^2 x_0^2\) (the equation in the proof above), the loop is an **ellipse**, with semi-axes \(x_0\) along the \(x\)-axis and \(\omega x_0\) along the \(v\)-axis.
 
 :::html
-<figure class="fig small"><svg viewBox="150 20 350 260" role="img" aria-label="Velocity against displacement for SHM: an ellipse centred on the origin, crossing the x axis at plus and minus x0 and the v axis at plus and minus omega x0, travelled clockwise."><path class="ax" d="M165 150H445M300 36V268"/><path class="c1" d="M180 150A120 100 0 0 1 420 150A120 100 0 0 1 180 150"/><path class="c1" d="M290 50H310" marker-end="url(#ah-phys)"/><path class="c1" d="M310 250H290" marker-end="url(#ah-phys)"/><text class="tl" x="450" y="155">x / cm</text><text class="tl" x="308" y="32">v / m s⁻¹</text><text class="tl tc" x="420" y="168">x₀</text><text class="tl tc" x="180" y="168">−x₀</text><text class="tl te" x="294" y="44">ωx₀</text><text class="tl te" x="294" y="266">−ωx₀</text></svg><figcaption>The ellipse is travelled clockwise. At the right-hand end the oscillator is momentarily at rest; at the top it passes through the centre at its greatest speed.</figcaption></figure>
+<figure class="fig small"><svg viewBox="140 20 365 260" role="img" aria-label="Velocity against displacement for SHM: an ellipse centred on the origin, crossing the x axis at plus and minus x0 and the v axis at plus and minus omega x0, travelled clockwise."><path class="ax" d="M165 150H445M300 36V268"/><path class="c1" d="M180 150A120 100 0 0 1 420 150A120 100 0 0 1 180 150"/><path class="c1" d="M290 50H310" marker-end="url(#ah-phys)"/><path class="c1" d="M310 250H290" marker-end="url(#ah-phys)"/><text class="tl" x="450" y="155">x / cm</text><text class="tl" x="308" y="32">v / m s⁻¹</text><text class="tl" x="426" y="170">x₀</text><text class="tl te" x="174" y="170">−x₀</text><text class="tl te" x="294" y="44">ωx₀</text><text class="tl te" x="294" y="266">−ωx₀</text></svg><figcaption>The ellipse is travelled clockwise. At the right-hand end the oscillator is momentarily at rest; at the top it passes through the centre at its greatest speed.</figcaption></figure>
 :::
 
 ## Energy in SHM
@@ -258,7 +258,7 @@ Energy is conserved in an undamped oscillator. At the ends of the motion the obj
 The kinetic energy comes straight from \(v = \pm\omega\sqrt{x_0^2 - x^2}\). The total is the kinetic energy at \(x = 0\): \(\tfrac12 m(\omega x_0)^2\). The potential energy is whatever is left over, \(E - E_K\).
 
 :::plot Energy against displacement for a 0.20 kg mass with \(\omega = 10\,\mathrm{rad\,s^{-1}}\) and amplitude 5.0 cm. The potential energy is a parabola with its minimum at the centre, the kinetic energy is an upside-down parabola, and they add to a constant.
---f "x**2" --f "25-x**2" --x -5 5 --y 0 38 --xlabel "x / cm" --ylabel "energy / mJ" --label "potential" --label "kinetic" --hline 25 --pt "0,25,total E = 25 mJ@n" --legend tr
+--f "x**2+0*sqrt(25-x**2)" --f "25-x**2+0*sqrt(25-x**2)" --x -6 6 --y 0 38 --xlabel "x / cm" --ylabel "energy / mJ" --label "potential" --label "kinetic" --hline 25 --pt "3.4,25,total E = 25 mJ@n" --legend tr
 :::
 
 The curves meet at \(x = \pm x_0/\sqrt2\), where kinetic and potential energies are equal.
@@ -266,7 +266,7 @@ The curves meet at \(x = \pm x_0/\sqrt2\), where kinetic and potential energies 
 Against **time**, both energies still add to a constant, but each oscillates at **twice** the frequency of the motion. The energies are proportional to \(\sin^2\omega t\) and \(\cos^2\omega t\), and these repeat every half period. The object passes through the centre twice per cycle (once each way) and reaches an end twice, so the kinetic energy peaks twice per cycle.
 
 :::plot Energy against time over two periods. The kinetic and potential energies each have a period of half the period of the motion, and their sum stays at 25 mJ.
---f "25*sin(2*pi*x)**2" --f "25*cos(2*pi*x)**2" --x 0 2 --y 0 38 --xstep 0.25 --xlabel "t / T" --ylabel "energy / mJ" --label "potential" --label "kinetic" --hline 25 --pt "0.375,25,E = 25 mJ@n" --legend tr
+--f "25*sin(2*pi*x)**2+0*sqrt(2-x)" --f "25*cos(2*pi*x)**2+0*sqrt(2-x)" --x 0 2.3 --y 0 38 --xstep 0.25 --xlabel "t / T" --ylabel "energy / mJ" --label "potential" --label "kinetic" --hline 25 --pt "0.375,25,E = 25 mJ@n" --legend tr
 :::
 
 :::eg A 0.20 kg mass oscillates with \(\omega = 10\,\mathrm{rad\,s^{-1}}\) and amplitude 0.050 m. Find the total energy, and the kinetic energy, potential energy and speed when the displacement is 0.030 m.
@@ -362,7 +362,7 @@ The large increase in amplitude of a forced oscillation that occurs when the dri
 :::
 
 :::plot Amplitude of a forced oscillator against driving frequency, in units of the natural frequency \(f_0\). With light damping the peak is tall and narrow; with heavier damping it is lower and broader, and slightly to the left of \(f_0\).
---f "1/sqrt((1-x**2)**2+(0.2*x)**2)" --f "1/sqrt((1-x**2)**2+(0.6*x)**2)" --x 0 2.5 --y 0 6.5 --xstep 0.5 --xlabel "f / f₀" --ylabel "A / A₀" --label "light damping" --label "heavier damping" --legend tr --vline 1 --pt "0.99,5,peak at about f₀@nw"
+--f "1/sqrt((1-x**2)**2+(0.2*x)**2)+0*sqrt(2.2-x)" --f "1/sqrt((1-x**2)**2+(0.6*x)**2)+0*sqrt(2.2-x)" --x 0 2.5 --y 0 6.5 --xstep 0.5 --xlabel "f / f₀" --ylabel "A / A₀" --label "light damping" --label "heavier damping" --legend tr --vline 1 --pt "0.99,5,peak at about f₀@nw"
 :::
 
 Here \(A_0\) is the amplitude at a very low driving frequency (the displacement the force alone would produce). The shape of the curve is the one to remember.
@@ -405,7 +405,7 @@ Now try the resonance simulation. Sweep the driving frequency through the natura
 :::
 
 :::board
-AQA and OCR give \(T = 2\pi\sqrt{m/k}\) and \(T = 2\pi\sqrt{l/g}\) as required equations and include the derivation of the pendulum's SHM. Cambridge gives them in questions when needed, but expects you to be able to show the SHM argument. Edexcel IAL covers the same SHM equations, energy and the resonance curve.
+AQA's formula booklet lists \(T = 2\pi\sqrt{m/k}\) for a mass on a spring and \(T = 2\pi\sqrt{l/g}\) for a simple pendulum, and writes the displacement as \(x = A\cos\omega t\), with \(A\) for the amplitude. Cambridge's data sheet has neither period formula: a question gives them when it needs them, or asks you to show that \(a = -\omega^2 x\) as above.
 :::
 
 :::eg Spot the error: a mass oscillates with \(x = 5.0\sin\omega t\) (in cm) at a frequency of 2.0 Hz. A student calculates its displacement at \(t = 0.30\) s.

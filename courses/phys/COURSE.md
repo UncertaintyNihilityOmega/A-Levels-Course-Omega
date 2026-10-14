@@ -147,11 +147,29 @@ the gold chapter). "Explain" questions score one B1 per link in the chain of rea
   - A force along a string (tension) is drawn **on** the string line, with the string as `ln-m thin` so the arrow reads as the
     force; put a second force at the same point (weight) at least 12 px to the side.
   - Paired arrows next to each other look like one more line: never draw a third line between them.
+- Lessons from the P7–P8 review (most fixes were plot ends running through the axis labels):
+  - The `--xlabel` sits above the right end of the x-axis and the `--ylabel` at the top left. A curve that ends near the
+    x-axis (p = 300/V, a decay, a resonance tail, a line falling to zero) or starts near the top left runs through them.
+    Cut the curve short with a domain trick and extend `--x` about 15%: `--f "300/x+0*sqrt(x-1)+0*sqrt(7.2-x)" --x 0 8`
+    draws the curve only for 1 ≤ x ≤ 7.2. The same for oscillating curves: `+0*sqrt(2-x)` with `--x 0 2.3`.
+  - Start `--y` at 0 (or below) unless the origin is far off: `--y 10 45` prints "10" on top of the x tick "0".
+  - Hand SVG: `gr` is the faint grid class and nearly vanishes; draw reference lines (equilibrium, extrapolations,
+    envelopes) with `ln-m thin dash`. A tick number that sits on a line needs `halo`.
+  - Panel captions inside an SVG ("(b) Simple pendulum") need 15 px below the lowest arrowhead; a 340-wide viewBox
+    belongs in `fig small` (in `fig` its labels come out twice the size of the text).
+  - If a caption says equipotentials (or field lines) are "further apart where the field is weaker", draw them at
+    equal steps of potential, or say what steps you drew.
+- `:::board` boxes: the P7 and P8 notes and Writers added claims nobody could verify (OCR's sign convention, OCR's
+  pendulum derivation, Edexcel IAL coverage). Name one board and one content difference you are sure of (AQA's
+  Q = ΔU + W; AQA's formula booklet lists T = 2π√(m/k) and T = 2π√(l/g)), or write only about Cambridge.
 - Widgets (P3–P4 lessons): never name colours in notes ("the red line"): say "the dashed line". Axis ranges must follow
   the values: a fixed window that squeezes the interesting region into a few per cent of the axis, or turns a pattern
   into a flat average, is a bug (zoom or pick from a few window sizes). Keep legends and labels off the curves (bottom
   strip or a corner the curves cannot reach). Do not stroke very short, thick canvas arcs (Chrome leaves stray marks):
-  draw short chords instead.
+  draw short chords instead. (P7–P8 lessons:) `W.axes` puts the y-axis label in the top-left corner: start canvas
+  labels (mean, r.m.s., legends) on a second row. With `ny: 2`, `W.ticks` often returns only 0 (±0.06, ±0.6): use
+  `ny: 3`, or 4 when 3 also gives only 0, so the amplitude is labelled. Draw transient markers (wall-hit flashes)
+  inside the clip of the box, not as discs that sit half outside it, and not in the colour of a tracked particle.
 - Rounding: never reuse a rounded intermediate (a gradient 0.452, a time 10.10 s) in a later step; the check
   script must compute from the unrounded value (g from the P1 data is 9.78, not 9.79).
 

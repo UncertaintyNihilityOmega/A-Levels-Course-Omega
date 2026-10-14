@@ -111,7 +111,7 @@ The work done by a gas as its volume changes equals the **area under the p–V g
 :::
 
 :::plot An isothermal expansion of an ideal gas with pV = 300 J. The shaded area under the curve from 2.0 L to 6.0 L is the work done by the gas.
---f "300/x" --x 1 8 --y 0 400 --shade "0,2,6" --pt "2,150,A (2.0 L, 150 kPa)@ne" --pt "6,50,B (6.0 L, 50 kPa)@ne" --xlabel "V / L" --ylabel "p / kPa" --label "pV = 300 J"
+--f "300/x+0*sqrt(x-1)+0*sqrt(7.2-x)" --x 0 8 --y 0 400 --shade "0,2,6" --pt "2,150,A (2.0 L, 150 kPa)@ne" --pt "6,50,B (6.0 L, 50 kPa)@ne" --xlabel "V / L" --ylabel "p / kPa" --label "pV = 300 J"
 :::
 
 :::eg Estimate the work done by the gas in the graph above as the volume increases from 2.0 L to 6.0 L, using the trapezium rule with two strips of width 2.0 L. The pressure is 150 kPa at 2.0 L, 75 kPa at 4.0 L and 50 kPa at 6.0 L.

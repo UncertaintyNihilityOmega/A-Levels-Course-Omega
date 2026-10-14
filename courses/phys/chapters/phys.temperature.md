@@ -155,7 +155,7 @@ Using the gradient of a line averages out random errors, and a graph shows strai
 :::
 
 :::plot Temperature of a 1.0 kg block heated by a 50 W heater. The gradient is \(P/(mc)\).
---f "20+0.050*x" --x 0 400 --y 10 45 --pt "0,20,θ = 20 °C at t = 0@ne" --pt "300,35,(300 s, 35 °C)@se" --xlabel "t / s" --ylabel "θ / °C"
+--f "20+0.050*x" --x 0 400 --y 0 45 --pt "0,20,θ = 20 °C at t = 0@se" --pt "300,35,(300 s, 35 °C)@se" --xlabel "t / s" --ylabel "θ / °C"
 :::
 
 :::eg In an experiment, a 50 W heater warms a 1.0 kg aluminium block. The graph of temperature against time is a straight line of gradient \(0.050\,\mathrm{K\,s^{-1}}\). Calculate the specific heat capacity, and say why the true value is lower than the result.

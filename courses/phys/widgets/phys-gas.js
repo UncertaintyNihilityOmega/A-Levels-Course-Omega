@@ -116,9 +116,9 @@
     let dragging = false;
     const reduced = W.reducedMotion();
     const box = W.canvas(body, {
-      height: 190,
+      height: 230,
       draw(ctx, w, h, col) {
-        const s = Math.max(6, Math.min(14, (w - 36) / 20));
+        const s = Math.max(6, Math.min(18, (w - 36) / 20));
         const Hb = HEIGHT * s;
         const left = Math.max(14, (w - 20 * s) / 2), top = (h - Hb) / 2 - 4;
         geo.s = s; geo.left = left; geo.top = top;
@@ -136,17 +136,17 @@
         ctx.strokeStyle = col.card; ctx.lineWidth = 1.5;
         ctx.beginPath(); ctx.moveTo(left + bw + 2.5, top + Hb / 2 - 9); ctx.lineTo(left + bw + 2.5, top + Hb / 2 + 9);
         ctx.moveTo(left + bw + 5.5, top + Hb / 2 - 9); ctx.lineTo(left + bw + 5.5, top + Hb / 2 + 9); ctx.stroke();
-        // flashes where particles hit a wall
-        for (const f of flashes) {
-          ctx.globalAlpha = Math.max(0, f.life) * 0.9;
-          ctx.fillStyle = col.red;
-          ctx.beginPath(); ctx.arc(left + f.x * s, top + f.y * s, 6, 0, 2 * Math.PI); ctx.fill();
-        }
-        ctx.globalAlpha = 1;
-        // particles
+        // particles (and the wall flashes) clipped to the inside of the box
         const r = Math.max(2, Math.min(4, RAD * s));
         ctx.save();
         ctx.beginPath(); ctx.rect(left, top, bw, Hb); ctx.clip();
+        // flashes where particles hit a wall: half-discs on the inside of the wall
+        for (const f of flashes) {
+          ctx.globalAlpha = Math.max(0, f.life) * 0.8;
+          ctx.fillStyle = col.hl;
+          ctx.beginPath(); ctx.arc(left + f.x * s, top + f.y * s, 7, 0, 2 * Math.PI); ctx.fill();
+        }
+        ctx.globalAlpha = 1;
         for (let i = st.n - 1; i >= 0; i--) {
           const X = left + px[i] * s, Y = top + py[i] * s;
           if (reduced) {
@@ -225,8 +225,8 @@
         ctx.lineWidth = 2.5; ctx.strokeStyle = col.red;
         ctx.beginPath(); ctx.moveTo(X(crms), Y(0)); ctx.lineTo(X(crms), ax.pad.t); ctx.stroke();
         ctx.fillStyle = col.ink; ctx.font = '12px ' + col.font; ctx.textBaseline = 'alphabetic';
-        ctx.textAlign = 'right'; ctx.fillText('mean', X(mean) - 5, ax.pad.t + 12);
-        ctx.fillStyle = col.red; ctx.textAlign = 'left'; ctx.fillText('r.m.s.', X(crms) + 5, ax.pad.t + 12);
+        ctx.textAlign = 'right'; ctx.fillText('mean', X(mean) - 5, ax.pad.t + 28);   // second row: the y-axis label owns the top row
+        ctx.fillStyle = col.red; ctx.textAlign = 'left'; ctx.fillText('r.m.s.', X(crms) + 5, ax.pad.t + 28);
         ctx.restore();
       }
     });
