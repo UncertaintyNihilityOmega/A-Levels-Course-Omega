@@ -143,4 +143,12 @@ eq("unload rec", Er, 0.072)
 eq("unload diss 2sf", sf(0.25 - Er, 2), 0.18)
 assert Er / 0.25 < 1 / 3
 
+# Review fix: femur in compression
+sig = 700 / 3.0e-4
+eq("femur sigma", sf(sig, 2), 2.3e6, 1e3); eq("femur sigma raw", sf(sig, 3), 2.33e6, 1e3)
+eps = sig / 1.8e10
+eq("femur eps", sf(eps, 2), 1.3e-4, 1e-9); eq("femur eps raw", sf(eps, 3), 1.30e-4, 1e-9)
+eq("femur x", sf(eps * 0.45, 2), 5.8e-5, 1e-9); eq("femur x mm", sf(eps * 0.45 * 1e3, 2), 0.058, 1e-6)
+assert 1e-4 * 1 == 1e-4
+
 print("ok")

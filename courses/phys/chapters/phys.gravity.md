@@ -113,7 +113,7 @@ This agrees with the measured acceleration of free fall. (The product \(GM = 3.9
 :::eg The International Space Station orbits 408 km above the Earth's surface. Calculate the field strength there and compare it with the value at the surface.
 \(r = 6.37 \times 10^{6} + 4.08 \times 10^{5} = 6.778 \times 10^{6}\,\mathrm{m}\). [C1]
 
-\[g = \frac{GM}{r^2} = \frac{3.98 \times 10^{14}}{\left(6.778 \times 10^{6}\right)^2} = 8.67\,\mathrm{N\,kg^{-1}}\] [C1] [A1]
+\[g = \frac{GM}{r^2} = \frac{3.98 \times 10^{14}}{\left(6.778 \times 10^{6}\right)^2} = 8.66\,\mathrm{N\,kg^{-1}}\] [C1] [A1]
 This is 88% of the surface value. Gravity is still strong at the height of the station: it is certainly not "zero gravity".
 :::
 
@@ -259,7 +259,7 @@ Near the surface, \(\phi(R+h) - \phi(R) = GM\left(\dfrac{1}{R} - \dfrac{1}{R+h}\
 :::eg Calculate the gravitational potential at the surface of the Earth and at the geostationary radius \(4.22 \times 10^{7}\,\mathrm{m}\). Use \(GM = 3.98 \times 10^{14}\,\mathrm{m^3\,s^{-2}}\) and \(R = 6.37 \times 10^{6}\,\mathrm{m}\).
 At the surface: \(\phi = -\dfrac{GM}{R} = -\dfrac{3.98 \times 10^{14}}{6.37 \times 10^{6}}\) [C1] \(= -6.25 \times 10^{7}\,\mathrm{J\,kg^{-1}}\). [A1]
 
-At the geostationary radius: \(\phi = -\dfrac{3.98 \times 10^{14}}{4.22 \times 10^{7}} = -9.44 \times 10^{6}\,\mathrm{J\,kg^{-1}}\). [A1]
+At the geostationary radius: \(\phi = -\dfrac{3.98 \times 10^{14}}{4.22 \times 10^{7}} = -9.43 \times 10^{6}\,\mathrm{J\,kg^{-1}}\). [A1]
 
 Both are negative, and the second is closer to zero, the value at infinity.
 :::

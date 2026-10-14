@@ -135,6 +135,16 @@ Rearrange \(E = \dfrac{FL}{Ax}\) for the extension:
 The strain is only \(1.9 \times 10^{-3}/3.0 = 6.4 \times 10^{-4}\). Metals stretch by tiny fractions of their length, and that is why measuring \(E\) needs a long wire and careful readings.
 :::
 
+Stress, strain and \(E\) work for **compression** exactly as for tension: the force squashes the material, \(x\) is the decrease in length, and the same Young modulus applies (for the small deformations of this chapter). Bones, building columns and the legs of a table are all in compression.
+
+:::eg A femur (thigh bone) of length 0.45 m and cross-sectional area \(3.0\,\mathrm{cm^2}\) carries a compressive load of 0.70 kN. Take \(E = 1.8 \times 10^{10}\,\mathrm{Pa}\). Calculate the stress, the strain and the amount by which the bone is shortened.
+Change the units first: \(A = 3.0\,\mathrm{cm^2} = 3.0 \times 10^{-4}\,\mathrm{m^2}\) and \(F = 700\,\mathrm{N}\). [C1]
+\[\sigma = \frac{F}{A} = \frac{700}{3.0 \times 10^{-4}} = 2.3 \times 10^{6}\,\mathrm{Pa}\] [A1]
+\[\varepsilon = \frac{\sigma}{E} = \frac{2.33 \times 10^{6}}{1.8 \times 10^{10}} = 1.3 \times 10^{-4}\] [A1] (no unit)
+The decrease in length is \(x = \varepsilon L = (1.30 \times 10^{-4}) \times 0.45 = 5.8 \times 10^{-5}\,\mathrm{m}\) (0.058 mm). [A1]
+There is one square centimetre of conversion to watch: \(1\,\mathrm{cm^2} = 10^{-4}\,\mathrm{m^2}\), not \(10^{-2}\,\mathrm{m^2}\). The bone shortens by less than the thickness of a hair, so it stays well inside its elastic region.
+:::
+
 ### Stress–strain graphs
 
 A force–extension graph describes one particular sample. Plot **stress against strain** instead and the graph describes the **material**: a thick and a thin wire of the same metal give the same line. Within the limit of proportionality the line is straight, and

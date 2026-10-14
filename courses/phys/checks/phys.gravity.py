@@ -37,7 +37,7 @@ eq("g surface", sf(GM / R_E**2, 3), 9.81)
 r_iss = R_E + 4.08e5
 eq("r ISS", sf(r_iss, 4), 6.778e6)
 g_iss = GM / r_iss**2
-eq("g ISS", sf(g_iss, 3), 8.67)
+eq("g ISS (GM given as 3.98e14)", sf(3.98e14 / r_iss**2, 3), 8.66)
 eq("g ISS pct", round(g_iss / (GM / R_E**2) * 100), 88)
 
 # near the surface
@@ -89,7 +89,7 @@ eq("geo scale", sf(r_g / R_E, 2), 6.6)
 
 # potential
 eq("phi surface", sf(-GM / R_E, 3), -6.25e7)
-eq("phi geo (r given as 4.22e7)", sf(-GM / 4.22e7, 3), -9.44e6)
+eq("phi geo (GM 3.98e14, r 4.22e7 given)", sf(-3.98e14 / 4.22e7, 3), -9.43e6)
 
 # potential energy change to ISS height
 dE = GM * 1000 * (1 / R_E - 1 / r_iss)

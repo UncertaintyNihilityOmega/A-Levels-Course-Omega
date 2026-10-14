@@ -1,7 +1,7 @@
 @chapter phys.energy
 @title Work, energy and power
 @level as
-@paper CAIE P1 · P2 (AS)
+@paper CAIE P1 · P2 · P3 (AS)
 @time 5–7 hours
 @summary Work done by a force, the conservation of energy, gravitational potential energy and kinetic energy (with both formulae derived), efficiency, and power including P = Fv, with worked problems on falling objects, slopes, braking cars and power stations.
 
@@ -265,6 +265,17 @@ Useful power output = rate of gain of GPE:
 \[P_\text{out} = \frac{mg\Delta h}{t} = \frac{800 \times 9.81 \times 20}{25} = 6.3 \times 10^{3}\,\mathrm{W}\] [C1]
 \[P_\text{in} = \frac{P_\text{out}}{\text{efficiency}} = \frac{6278}{0.65} = 9.7 \times 10^{3}\,\mathrm{W}\] [A1]
 Always divide the useful output by the efficiency to find the input. Multiplying instead gives an input smaller than the output, which is impossible.
+:::
+
+:::lab Measuring the efficiency of an electric motor
+:::steps
+1. Clamp a small d.c. motor above the bench. Wind a thread from its spindle and hang a known mass \(m\) (for example 0.50 kg) on the end, so the motor lifts the mass as the thread winds up.
+2. Connect the motor to a power supply through a joulemeter (or an ammeter and a voltmeter, with a switch). Mark two points on the thread a measured height \(h\) apart, using a metre rule (for example 1.20 m).
+3. Switch on and start a stopwatch as the mass passes the lower mark. Stop it as the mass passes the upper mark and switch off. Read the electrical energy supplied \(E_\text{in}\) from the joulemeter, or calculate \(E_\text{in} = VIt\) from the meter readings and the time \(t\).
+4. Calculate the useful energy output, the gain in gravitational potential energy: \(E_\text{out} = mgh\). The efficiency is \(\dfrac{mgh}{VIt}\).
+5. Repeat for the same height at least three times, and then for other masses. Average the efficiencies, and plot \(mgh\) against \(VIt\): the gradient is the efficiency.
+:::
+Why lift at a steady speed? If the mass speeds up, the motor also supplies kinetic energy to it, so \(mgh\) is no longer the whole of the useful output. Starting the stopwatch only after the mass is moving steadily removes that term. Sample readings: \(m = 0.50\,\mathrm{kg}\), \(h = 1.20\,\mathrm{m}\) and a joulemeter reading of 11.8 J give \(mgh = 0.50 \times 9.81 \times 1.20 = 5.9\,\mathrm{J}\) and an efficiency of \(5.886/11.8 = 0.50\), or 50%. The rest of the input is dissipated, mainly as thermal energy in the windings (the resistance of the coils) and by friction in the bearings and between the thread and the spindle. Measure the height with a metre rule held vertical next to the thread, and use a long enough lift (about a metre) that the percentage uncertainty in \(h\) and \(t\) is small.
 :::
 
 ## Power

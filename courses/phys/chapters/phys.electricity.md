@@ -330,8 +330,8 @@ A diameter in millimetres must be changed into metres **before** it is squared: 
 :::
 :::
 
-:::plot Resistance against length for a nichrome wire. The gradient is \(\rho/A\).
---f "17.75*x+0.05" --x 0 1.1 --y 0 20 --pt "0.2,3.6,(0.200, 3.6)@se" --pt "1,17.8,(1.000, 17.8)@nw" --xlabel "L / m" --ylabel "R / Ω" --label "best-fit line"
+:::plot The best-fit line of resistance against length for a nichrome wire. Its gradient is \(\rho/A\).
+--f "17.75*x+0.05" --x 0 1.1 --y 0 22 --pt "0.2,3.6,(0.200, 3.6)@se" --pt "1,17.8,(1.000, 17.8)@nw" --xlabel "L / m" --ylabel "R / Ω"
 :::
 
 :::eg The graph above was drawn for a wire of diameter 0.28 mm. Use the two marked points to find the resistivity of the wire.
@@ -350,11 +350,11 @@ A **light-dependent resistor (LDR)** is a semiconductor whose resistance **decre
 A **thermistor** in this syllabus is a negative temperature coefficient (NTC) thermistor, a semiconductor whose resistance **decreases as its temperature increases**. Warming the material releases more carriers.
 
 :::plot Resistance of a typical NTC thermistor against temperature. The resistance falls steeply when the thermistor is cold, then more slowly.
---f "10*exp(3950*(1/(x+273.15)-1/298.15))" --x 0 100 --y 0 40 --pt "25,10,10 kΩ at 25 °C@ne" --pt "50,3.59,3.6 kΩ at 50 °C@ne" --xlabel "θ / °C" --ylabel "R / kΩ" --label "NTC thermistor"
+--f "10*exp(3950*(1/(x+273.15)-1/298.15))" --x 0 60 --y 0 36 --pt "25,10,10 kΩ at 25 °C@ne" --pt "50,3.59,3.6 kΩ at 50 °C@ne" --xlabel "θ / °C" --ylabel "R / kΩ" --label "NTC thermistor"
 :::
 
 :::plot Resistance of a typical LDR against light intensity. The resistance is large in dim light and small in bright light.
---f "100*(10/x)**0.8" --x 5 200 --y 0 180 --pt "10,100,100 kΩ at 10 lux@ne" --pt "100,15.8,16 kΩ at 100 lux@ne" --xlabel "light intensity / lux" --ylabel "R / kΩ" --label "LDR"
+--f "100*(10/x)**0.8" --x 5 100 --y 0 200 --pt "10,100,100 kΩ at 10 lux@ne" --pt "50,27.6,28 kΩ at 50 lux@ne" --xlabel "light intensity / lux" --ylabel "R / kΩ" --label "LDR"
 :::
 
 :::eg A thermistor of resistance \(10\,\mathrm{k\Omega}\) at 25 °C is connected across a 5.0 V supply. Its resistance at 100 °C is \(0.70\,\mathrm{k\Omega}\). Find the current at each temperature.
@@ -370,7 +370,7 @@ A common question says "explain why the resistance of a thermistor decreases whe
 Both sensors become really useful in a **potential divider**, which turns a change in resistance into a change in p.d. That is the topic of [D.C. circuits](#phys.dc).
 
 :::board
-Edexcel IAL, AQA and OCR teach the same current, p.d., resistance, power, resistivity and I–V characteristics, with the same equations. AQA and OCR also cover superconductivity (zero resistivity below a critical temperature); Cambridge does not. Some UK courses write the drift equation as \(I = nAve\) and the p.d. definition with the symbol \(V\) or \(E\), but the physics is identical.
+AQA also teaches superconductivity (a material whose resistivity becomes zero below its critical temperature); Cambridge does not. OCR A writes the drift-speed equation as \(I = Anev\), with the carriers taken to be electrons. The physics is the same.
 :::
 
 :::eg Spot the error: the I–V graph of a filament lamp is a curve. At the point V = 6.0 V, I = 0.25 A, the tangent has gradient 0.025 A V⁻¹. Calculate the resistance of the lamp at this point.

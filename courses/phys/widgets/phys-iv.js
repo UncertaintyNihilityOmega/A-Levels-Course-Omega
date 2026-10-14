@@ -1,7 +1,7 @@
 /* phys-iv: I–V characteristics of a resistor, a filament lamp, a diode and a thermistor (phys.electricity).
    data-c="resistor|lamp|diode|thermistor"  (anything else falls back to resistor)
-   Models: resistor 100 Ω; lamp I = 0.25 sign(V) (|V|/6)^0.6 A; diode I = 1e-9 (e^(V/0.05) - 1) A capped at 0.5 A;
-   thermistor R = 10 kΩ exp(3950 (1/T - 1/298.15)). The diode slider covers ±2 V so the 0.6 V knee is visible. */
+   Models: resistor 100 Ω; lamp I = 0.25 sign(V) (|V|/6)^0.6 A; diode I = 1.2e-8 (e^(V/0.05) - 1) A (2.0 mA at 0.60 V, 39 mA at 0.75 V, as in the chapter's example);
+   thermistor R = 10 kΩ exp(3950 (1/T - 1/298.15)). The diode slider covers ±0.8 V and the current axis ±120 mA, so the knee near 0.6 V fills the plot and the curve is never clipped. */
 (function () {
   'use strict';
   W.register('phys-iv', function (el, opts) {
@@ -10,7 +10,7 @@
     const M = {
       resistor:   { tab: 'Resistor',       vmax: 6, imax: 0.065, def: 3,   h: 0.05,  I: (v) => v / 100 },
       lamp:       { tab: 'Filament lamp',  vmax: 6, imax: 0.30,  def: 3,   h: 0.05,  I: (v) => 0.25 * Math.sign(v) * Math.pow(Math.abs(v) / 6, 0.6) },
-      diode:      { tab: 'Diode',          vmax: 2, imax: 0.55,  def: 0.7, h: 0.002, I: (v) => Math.min(0.5, 1e-9 * (Math.exp(v / 0.05) - 1)) },
+      diode:      { tab: 'Diode',          vmax: 0.8, imax: 0.12, def: 0.7, h: 0.002, I: (v) => Math.min(0.5, 1.2e-8 * (Math.exp(v / 0.05) - 1)) },
       thermistor: { tab: 'Thermistor',     vmax: 6, imax: 0.010, def: 3,   h: 0.05,  I: (v, s) => v / rTherm(s.temp) }
     };
     const rTherm = (t) => 1e4 * Math.exp(3950 * (1 / (t + 273.15) - 1 / 298.15));   // ohms
@@ -87,12 +87,12 @@
         ctx.textAlign = 'center'; ctx.textBaseline = 'top';
         for (let v = Math.ceil(-vmax / sx) * sx; v <= vmax + 1e-9; v += sx) {
           ctx.beginPath(); ctx.moveTo(X(v), pad.t); ctx.lineTo(X(v), pad.t + ph); ctx.stroke();
-          ctx.fillText(W.fmt(v, 2).replace(/^-/, '−'), X(v), pad.t + ph + 4);
+          ctx.fillText(W.fmt(Math.round(v / sx) * sx, 2).replace(/^-/, '−'), X(v), pad.t + ph + 4);
         }
         ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
         for (let i = Math.ceil(-imax * 1000 / sy) * sy; i <= imax * 1000 + 1e-9; i += sy) {
           ctx.beginPath(); ctx.moveTo(pad.l, Y(i / 1000)); ctx.lineTo(pad.l + pw, Y(i / 1000)); ctx.stroke();
-          ctx.fillText(W.fmt(i, 3).replace(/^-/, '−'), pad.l - 6, Y(i / 1000));
+          ctx.fillText(W.fmt(Math.round(i / sy) * sy, 3).replace(/^-/, '−'), pad.l - 6, Y(i / 1000));
         }
         ctx.strokeStyle = col.ink2; ctx.lineWidth = 1.5;
         ctx.beginPath(); ctx.moveTo(pad.l, Y(0)); ctx.lineTo(pad.l + pw, Y(0)); ctx.moveTo(X(0), pad.t); ctx.lineTo(X(0), pad.t + ph); ctx.stroke();

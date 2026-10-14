@@ -161,4 +161,9 @@ eq("alpha KE", sf((1.0e-19)**2 / (2 * 6.64e-27), 2), 7.5e-13, 1e-20)
 eq("mg", 0.50 * g, 4.905)
 eq("total", sf(0.50 * g * 20, 3), 98.1)
 
+# Review fix: motor-efficiency lab sample readings
+mgh = 0.50 * g * 1.20
+eq("motor mgh", sf(mgh, 2), 5.9, 1e-9); eq("motor mgh raw", sf(mgh, 4), 5.886, 1e-9)
+eq("motor eff", sf(mgh / 11.8, 2), 0.50)
+
 print("ok")

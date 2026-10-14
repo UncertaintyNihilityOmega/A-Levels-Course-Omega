@@ -59,7 +59,7 @@ eq("F kN", 5400 / 1000, 5.4)
 w2 = 2 * pi * 1.5
 eq("w table", sf(w2, 3), 9.42)
 eq("T table", sf(0.25 * 0.80 * w2**2, 2), 18)
-eq("T table x2", 4 * 18.0, 72)
+eq("T table x2", sf(4 * 0.25 * 0.80 * w2**2, 2), 71)
 
 # Conical pendulum
 th = radians(30)

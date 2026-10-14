@@ -196,7 +196,7 @@ The mass appears in both \(F_\text{max}\) and \(mv^2/r\) here only because the f
 The tension is the only horizontal force, so it is the centripetal force:
 \[T = mr\omega^2 = 0.25 \times 0.80 \times 9.42^2\] [C1] \(= 18\,\mathrm{N}\). [A1]
 
-Because \(\omega\) enters squared, spinning the mass twice as fast would need four times the tension (72 N).
+Because \(\omega\) enters squared, spinning the mass twice as fast would need four times the tension (71 N, from the unrounded 17.8 N).
 :::
 
 :::warn There is no "centrifugal force"

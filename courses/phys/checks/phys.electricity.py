@@ -126,6 +126,7 @@ eq("ratio R", sf(10 / 0.70, 2), 14)
 R_ldr = lambda x: 100 * (10 / x) ** 0.8
 eq("ldr 10", R_ldr(10), 100, 1e-9)
 eq("ldr 100", sf(R_ldr(100), 3), 15.8, 1e-9)
+eq("ldr 50", sf(R_ldr(50), 3), 27.6, 1e-9)
 
 # Easy questions
 eq("easy Q", 4.0e-3 * 5.0, 2.0e-2, 1e-12)
