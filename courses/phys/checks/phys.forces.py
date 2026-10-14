@@ -43,6 +43,7 @@ eq("foot y", round(190 - 100 * s(60), 1), 103.4, 0.05)
 
 # Couple
 eq("steering", 12 * 0.36, 4.32, 1e-9)
+eq("steering 2sf", round(12 * 0.36, 1), 4.3, 1e-9)
 eq("steering centre", 12 * 0.18 + 12 * 0.18, 4.32)
 
 # Beam on two supports

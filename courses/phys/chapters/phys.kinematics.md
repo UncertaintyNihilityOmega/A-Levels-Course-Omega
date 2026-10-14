@@ -66,8 +66,8 @@ Speed is a scalar and never negative. Velocity is a vector and averages to zero 
 :::eg A car accelerates uniformly from rest to \(100\,\mathrm{km\,h^{-1}}\) in 8.0 s. Calculate its acceleration.
 Change to base units: \(100\,\mathrm{km\,h^{-1}} = \dfrac{100 \times 10^{3}}{3600} = 27.8\,\mathrm{m\,s^{-1}}\). [C1]
 
-\[a = \frac{v - u}{t} = \frac{27.8 - 0}{8.0} = 3.47\,\mathrm{m\,s^{-2}}\] [A1]
-Keep the unrounded speed in your calculator until the end: \(27.78/8.0 = 3.47\). To 2 significant figures, the same as the data, the answer is \(3.5\,\mathrm{m\,s^{-2}}\).
+\[a = \frac{v - u}{t} = \frac{27.8 - 0}{8.0} = 3.5\,\mathrm{m\,s^{-2}}\] [A1]
+Keep the unrounded speed in your calculator until the end: \(27.78/8.0 = 3.47\) unrounded. The answer is given to 2 significant figures, the same as the data.
 :::
 
 :::eg A ball hits a wall at \(8.0\,\mathrm{m\,s^{-1}}\) and rebounds at \(6.0\,\mathrm{m\,s^{-1}}\). The contact lasts 0.020 s. Find its average acceleration.

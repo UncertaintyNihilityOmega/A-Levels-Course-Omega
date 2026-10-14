@@ -59,7 +59,7 @@ Notice that the **kilogram**, not the gram, is the base unit of mass. This matte
 Every other unit is a **derived unit**: it is made by multiplying or dividing base units.
 
 :::def Derived unit
-A unit formed by multiplying and/or dividing base units (and possibly using no other units). Some derived units have a special name, such as the newton or the joule.
+A unit formed by multiplying and/or dividing base units, such as \(\mathrm{m\,s^{-1}}\) or \(\mathrm{kg\,m^{-3}}\). Some derived units have a special name, such as the newton or the joule.
 :::
 
 You do not need to memorise a list. You need one method, which works for every quantity in the syllabus.
@@ -188,7 +188,7 @@ A prefix belongs to the unit it is written on, so it is part of the unit symbol.
 Beginners who write \(1\,\mathrm{mm^2} = 10^{-3}\,\mathrm{m^2}\) are wrong by a factor of a thousand. A cubic centimetre is 10⁻⁶ of a cubic metre, not 10⁻².
 
 :::warn mm and m s
-A space changes the meaning. "ms" is a millisecond, one thousandth of a second. "m s" is a metre multiplied by a second. Likewise "mm" is millimetre but "m m" would be a metre squared. Also keep apart the lower-case m (milli), the capital M (mega) and the capital T (tera, \(10^{12}\), not the tesla): \(5\,\mathrm{mN}\) is a small force and \(5\,\mathrm{MN}\) is a huge one.
+A space changes the meaning. "ms" is a millisecond, one thousandth of a second. "m s" is a metre multiplied by a second. Likewise "mm" is millimetre but "m m" would be a metre squared. Also keep apart the lower-case m (milli), the capital M (mega) and the capital T (as a prefix it is tera, \(10^{12}\); on its own, T is the tesla): \(5\,\mathrm{mN}\) is a small force and \(5\,\mathrm{MN}\) is a huge one.
 :::
 
 :::eg Convert (a) 0.35 mm² to m², (b) 2.4 cm³ to m³ and (c) a density of 8.96 g cm⁻³ to kg m⁻³. Give each answer in standard form.

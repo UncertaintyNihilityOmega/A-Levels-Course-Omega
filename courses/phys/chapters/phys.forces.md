@@ -104,8 +104,8 @@ The product of one of the forces and the perpendicular distance between the line
 
 :::eg A driver turns a steering wheel of diameter 0.36 m by pushing with a force of 12 N with one hand and pulling with 12 N with the other, at opposite ends of a diameter. Find the torque of the couple. Show that the same answer comes from adding the moments of the two forces about the centre.
 The forces are parallel, \(0.36\,\mathrm{m}\) apart:
-\[\text{torque} = F \times d = 12 \times 0.36 = 4.32\,\mathrm{N\,m}\] [C1] [A1]
-About the centre, each force is \(0.18\,\mathrm{m}\) from the axis, and both turn the wheel the same way. The moments add: \(12 \times 0.18 + 12 \times 0.18 = 4.32\,\mathrm{N\,m}\). The two views agree: "two forces, each at distance \(d/2\)" is the same as "one force, at distance \(d\)".
+\[\text{torque} = F \times d = 12 \times 0.36 = 4.3\,\mathrm{N\,m}\] [C1] [A1]
+The unrounded value is \(4.32\,\mathrm{N\,m}\); the answer is given to 2 significant figures, like the data. About the centre, each force is \(0.18\,\mathrm{m}\) from the axis, and both turn the wheel the same way. The moments add: \(12 \times 0.18 + 12 \times 0.18 = 4.32\,\mathrm{N\,m}\). The two views agree: "two forces, each at distance \(d/2\)" is the same as "one force, at distance \(d\)".
 :::
 
 :::proof Why the torque of a couple does not depend on the pivot

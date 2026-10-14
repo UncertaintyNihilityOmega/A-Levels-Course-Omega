@@ -1,6 +1,6 @@
 # STATUS: Physics
 
-Last: 2026-10-13 · REVIEW P1, P2 · 6 items in REVIEW.md; fixed figure layout in all 4 chapters (overlapping labels, single-arrowhead multipath, collision and car FBD redrawn, viewBox crops, plot legends), g from data 9.78 (was 9.79 from rounded gradient) and parcel vy 99.0, dynamics quiz/spot-error mark text, forces window net force, units widget sci rounding/ratio text, phys-collide units m s-1; COURSE.md figure and rounding lessons
+Last: 2026-10-14 · WRITE P4 · phys.waves (6796 words) and phys.superposition (6975 words); checks ok, phone ok; widgets phys-wave (progressive with transverse/longitudinal view, draggable P and Q, displacement-time graph, stationary mode with string length fixed at 2.00 m and slow-motion display) and phys-fringes (double slit with idealised cos^2 pattern over a fixed +-15 mm window; grating with white-light toggle). Reviewer: widgets were probed headless only (browser not used); figure label positions were checked with coordinates and several fixed (superposition: legend/A labels, double-slit a/O/P labels, grating S1/S2/d/theta, viewBox heights; waves: s label, spectrum and rope viewBoxes, halo on CRO label). Stretch Q on loudspeakers now has its 6th mark; coherence condition wording corrected to polarised in the same plane.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -8,8 +8,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P1: reviewed 2026-10-13
 - P2: reviewed 2026-10-13
 - P3: written 2026-10-13
-- P4: writing 2026-10-13
-- P5: open
+- P4: written 2026-10-14
+- P5: writing 2026-10-14
 - P6: open
 - P7: open
 - P8: open
