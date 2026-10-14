@@ -63,6 +63,11 @@ browser pane needed); look at them with the Read tool. Use it when the pane cann
    chat short, which costs far less, and let several Writers work at once):
    `{"id": "P1", "title": "…", "chapters": ["…"], "widgets": ["…"]}`. Also `"papers"`: one entry per
    exam paper, `{"id": "P1", "title": "Paper 1: …", "chapters": ["…"]}` (practice by paper and `:::progress` use it).
+   **Exam readiness is part of every plan** (packages after the topic chapters): a guide per exam paper, mixed
+   practice, and **one mock paper per written exam paper** (`@level mock`, kit/STYLE.md "Mock papers": the real
+   paper's time, total marks, number and style of questions, e.g. multiple choice; for a hands-on practical paper,
+   a written paper with supplied readings to analyse). Questions are original, in the board's style and mark-scheme
+   language; the paper guides also send readers to the board's real past papers.
 4. Rewrite COURSE.md with what every Writer needs: scope and board notes, data values and conventions, depth
    and tone guidance, course-wide rules, and the gold chapter's id. Then write **packages/`Pn`.md** for each
    package: per chapter what to cover (the FACTS.md outcomes), pitfalls, figures and which widget; the spec of
