@@ -1,6 +1,6 @@
 # STATUS: Physics
 
-Last: 2026-10-14 · REVIEW P9, P10 · 2 items in REVIEW.md (capacitance I-t exam question; magnetic Fleming/electron-path question). Fixed: velocity-selector crosses under labels, capacitor plate figure crop, phys-ac faint line = rectified supply + legend one item per line (overflowed at phone), capacitance dielectric wording + Q-t gradient + quiz note, board boxes (capacitance AQA Q form; induction AQA only, OCR claims removed), generator revise tag. Writers' 2.1 ms, 1200 uF, transformer-as-background, data-show confirmed. phys-shm legend, alpha and plates figures OK. COURSE.md: P9-P10 lessons (fig scale, legends, revise tags). Browser pane mostly would not render (window hidden): figures checked by bbox probes and coordinates.
+Last: 2026-10-14 · FIX · 2 REVIEW items: phys.capacitance I-t exam question [4], phys.magnetic electron-path Fleming question [3], numbers in checks. Shot pass P9-P10 + particles + oscillations: velocity-selector label no longer crossed by the too-slow path, parallel-wires forces both c1, alpha-paths large-deflection and downward arrows shortened (no longer end on a label/path). REQUESTS: shot has no arrowheads; light shots draw canvases in dark palette. COURSE.md: shot-pass figure lesson.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -15,10 +15,10 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P8: reviewed 2026-10-14
 - P9: reviewed 2026-10-14
 - P10: reviewed 2026-10-14
-- P11: writing 2026-10-14
-- P12: writing 2026-10-14
-- P13: open
-- P14: open
+- P11: written 2026-10-14
+- P12: written 2026-10-14
+- P13: writing 2026-10-14
+- P14: writing 2026-10-14
 - P15: open
 - P16: open
 - FINAL: open

@@ -109,5 +109,12 @@ gr = (1.80e-3 - 0.37e-3) / (5.0 - 1.0)
 eq("st2 grad", sf(gr, 4), 3.575e-4, 1e-9)
 eq("st2 grad 2sf", sf(gr, 2), 3.6e-4, 1e-9)
 eq("st2 B", sf(g * gr / 0.060, 2), 5.8e-2, 1e-9)
+# Exam practice: electron moving right (+x) into a field into the page (-z); y is up the page
+def cross(a, b):
+    return (a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0])
+Fe = tuple(-1 * c for c in cross((1, 0, 0), (0, 0, -1)))
+eq("ex electron force down", Fe[1], -1)
+eq("ex electron force no x", Fe[0], 0)
+eq("ex force . v = 0 (no work)", Fe[0] * 1 + Fe[1] * 0 + Fe[2] * 0, 0)
 
 print("ok")

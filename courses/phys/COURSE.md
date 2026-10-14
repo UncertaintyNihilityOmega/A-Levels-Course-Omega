@@ -165,6 +165,11 @@ the gold chapter). "Explain" questions score one B1 per link in the chain of rea
   side labels in rather than widening the drawing). Don't put label text across grid crosses (⊗ fields) or arrowheads:
   leave those crosses out. Canvas legends: one item per line from the second row down, never one long line (it ran off
   the canvas at phone width). `(#id)` on a question names the chapter it revises (ω = 2πf → phys.circular), not the one before.
+- Shot pass (P9–P10): a label beside a straight path must clear every curved path that branches off it (the velocity
+  selector's "too slow" curve ran through "undeflected: v = E/B"; shorten the label or put it before the paths diverge);
+  end each arrow at least 10 px short of any other path or label, or its head lands on it and seems to name it; give
+  every arrow of the same quantity the same class (both forces `c1`, both fields `c3`). Before `done`, run
+  `shot <id>` and `shot <id> --dark --phone` and look at every image.
 - `:::board` boxes: the P7 and P8 notes and Writers added claims nobody could verify (OCR's sign convention, OCR's
   pendulum derivation, Edexcel IAL coverage). Name one board and one content difference you are sure of (AQA's
   Q = ΔU + W; AQA's formula booklet lists T = 2π√(m/k) and T = 2π√(l/g)), or write only about Cambridge.

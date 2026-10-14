@@ -192,5 +192,10 @@ Ea2 = 0.5 * 10.0 * 7.0**2
 eq("st E after", Ea2, 245)
 eq("st lost", Eb2 - Ea2, 30)
 eq("st half time ratio", (0.5 * log(2)) / log(2), 0.5)
+# Exam practice: current-time question (22 kOhm, 0.50 mA -> 0.18 mA at 2.2 s)
+eq("ex It I/e", sf(0.50 / exp(1), 2), 0.18)
+eq("ex It tau from data", sf(-2.2 / log(0.18 / 0.50), 2), 2.2)
+eq("ex It C", sf(2.2 / 22e3, 2), 1.0e-4, 1e-12)
+eq("ex It Q0", sf(0.50e-3 * 2.2, 2), 1.1e-3, 1e-12)
 
 print("ok")
