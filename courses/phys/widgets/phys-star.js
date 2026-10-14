@@ -85,8 +85,9 @@
     const cbS = W.h('input', { type: 'checkbox' });
     cbS.checked = st.same;
     cbS.addEventListener('change', () => { st.same = cbS.checked; update(); });
-    const labD = W.h('label', { class: 'w-ctl' }, cbD, ' Set a distance (shows the flux F)');
-    const labS = W.h('label', { class: 'w-ctl' }, cbS, ' Same scale as the Sun (hotter stars are higher)');
+    const rowStyle = { display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '8px' };   // .w-ctl is a grid: make it a row
+    const labD = W.h('label', { class: 'w-ctl', style: rowStyle }, cbD, W.h('span', { class: 'w-lab' }, 'Set a distance (shows the flux F)'));
+    const labS = W.h('label', { class: 'w-ctl', style: rowStyle }, cbS, W.h('span', { class: 'w-lab' }, 'Same scale as the Sun (hotter stars are higher)'));
     function showD() { sD.el.style.display = st.useD ? '' : 'none'; }
     showD();
 
@@ -109,9 +110,12 @@
       draw(ctx, w, h, col) {
         const pkSelf = peakOf(st.T), pkSun = peakOf(SUN_T);
         const rel = pkSelf / pkSun;                                 // peak height relative to the Sun's peak
-        const ymax = st.same ? 1.12 * Math.max(rel, 1) : 1.12;
+        // 30% headroom keeps the peak (often near the left edge) below the y-axis label in the top-left corner
+        const ymax = st.same ? 1.3 * Math.max(rel, 1) : 1.3;
         const scale = st.same ? 1 / pkSun : 1 / pkSelf;             // curve value → plot units
-        const view = { x0: 0, x1: 3000, y0: 0, y1: ymax };
+        // the wavelength axis follows the peak (about 6 λmax, 1000–3000 nm), so a hot star's curve is not squeezed into the corner
+        const XMAX = Math.min(3000, Math.max(1000, Math.ceil(6 * WIEN / st.T * 1e9 / 500) * 500));
+        const view = { x0: 0, x1: XMAX, y0: 0, y1: ymax };
         const ax = W.axes(ctx, w, h, view, col, {
           pad: { l: 46, r: 14, t: 18, b: 32 },
           xlabel: 'λ / nm',
@@ -136,7 +140,7 @@
         if (st.same && st.T !== SUN_T) {
           ctx.strokeStyle = col.ink3; ctx.lineWidth = 1.5; ctx.setLineDash([5, 4]); ctx.beginPath();
           for (let i = 0; i <= 200; i++) {
-            const nm = 20 + (3000 - 20) * i / 200;
+            const nm = 20 + (XMAX - 20) * i / 200;
             const y = planck(nm, SUN_T) / pkSun;
             if (i === 0) ctx.moveTo(X(nm), Y(y)); else ctx.lineTo(X(nm), Y(y));
           }
@@ -145,7 +149,7 @@
         // the star's curve
         ctx.strokeStyle = col.sc; ctx.lineWidth = 2.5; ctx.beginPath();
         for (let i = 0; i <= 300; i++) {
-          const nm = 10 + (3000 - 10) * i / 300;
+          const nm = 10 + (XMAX - 10) * i / 300;
           const y = planck(nm, st.T) * scale;
           if (i === 0) ctx.moveTo(X(nm), Y(y)); else ctx.lineTo(X(nm), Y(y));
         }
@@ -159,7 +163,7 @@
         ctx.restore();
         // labels on a second row, inside the plot, away from the curve
         ctx.font = '12px ' + col.font; ctx.fillStyle = col.ink2; ctx.textBaseline = 'alphabetic';
-        const tx = X(3000) - 8;
+        const tx = X(XMAX) - 8;
         ctx.textAlign = 'right';
         ctx.fillText('λmax = ' + W.fmt(lmax, 3) + ' nm', tx, y0p + 30);
         if (st.same && st.T !== SUN_T) ctx.fillText('dashed: the Sun', tx, y0p + 46);

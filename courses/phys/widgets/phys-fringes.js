@@ -149,7 +149,7 @@
       const cb = mk('input', { type: 'checkbox', 'aria-label': 'White light (400 to 700 nm)' });
       cb.checked = st.white;
       cb.onchange = () => { st.white = cb.checked; update(); };
-      const cbLab = mk('label', { class: 'w-ctl', style: { flexDirection: 'row', alignItems: 'center', gap: '8px' } }, cb, mk('span', { class: 'w-lab' }, 'White light (400–700 nm)'));
+      const cbLab = mk('label', { class: 'w-ctl', style: { display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '8px' } }, cb, mk('span', { class: 'w-lab' }, 'White light (400–700 nm)'));
       body.append(mk('div', { class: 'w-row' }, sN.el, sL.el, cbLab));
 
       const dnm = () => 1e6 / st.N;                        // slit spacing in nm

@@ -318,7 +318,7 @@ After **two** half-lives a quarter is left, not nothing, and not half. The half-
 :::
 
 :::board
-AQA's specification also covers the nuclear radius, \(R = R_0 A^{1/3}\), and the structure of a nuclear reactor in more detail. Cambridge 9702 covers the content in this chapter, which includes the equations above but not the radius formula.
+AQA's specification includes the nuclear radius formula, \(R = R_0 A^{1/3}\). The Cambridge 9702 syllabus does not, so you will not be asked to use it; everything you need for Cambridge is in this chapter.
 :::
 
 :::eg Spot the error: the half-life of a nuclide is 12 hours. Calculate its decay constant.

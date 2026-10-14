@@ -118,8 +118,9 @@
     const graph = W.canvas(body, {
       height: 250,
       draw(ctx, w, h, col) {
+        // the axis runs 15% past the 5 half-lives drawn, so the curve's tail stays clear of the x-axis label
         const th = st.th, n0 = st.n0, lm = lam(), T = 5 * th;
-        const ax = W.axes(ctx, w, h, { x0: 0, x1: T, y0: 0, y1: n0 * 1.08 }, col, { pad: { l: 48, r: 14, t: 24, b: 36 }, xlabel: 't / time units', ylabel: 'N' });
+        const ax = W.axes(ctx, w, h, { x0: 0, x1: 5.75 * th, y0: 0, y1: n0 * 1.08 }, col, { pad: { l: 48, r: 14, t: 24, b: 36 }, xlabel: 't / time units', ylabel: 'N' });
         const { X, Y } = ax;
         ctx.save();
         ctx.beginPath(); ctx.rect(ax.pad.l, ax.pad.t, w - ax.pad.l - ax.pad.r, h - ax.pad.t - ax.pad.b); ctx.clip();

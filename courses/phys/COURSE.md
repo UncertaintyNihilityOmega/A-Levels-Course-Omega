@@ -170,9 +170,17 @@ the gold chapter). "Explain" questions score one B1 per link in the chain of rea
   end each arrow at least 10 px short of any other path or label, or its head lands on it and seems to name it; give
   every arrow of the same quantity the same class (both forces `c1`, both fields `c3`). Before `done`, run
   `shot <id>` and `shot <id> --dark --phone` and look at every image.
+- Lessons from the P11–P12 review: `fi` (ink) and `fp` (paper) swap brightness in dark mode, so never let them mean
+  "dark" and "bright" (an emission spectrum drawn as `fp` lines on an `fi` strip became dark lines on a bright strip in
+  dark mode). Draw "light present" with `fa` and "no light" as blank paper, and say so in the caption. A 280–420-wide
+  viewBox in `fig` doubles the label size: use `fig small` for those. In widgets, a checkbox row needs
+  `style: {display: 'flex', alignItems: 'center', gap: '8px'}` on its `.w-ctl` label (the class is a grid, so the box
+  sat above its text), with the text in a `.w-lab` span; a canvas spectrum or curve whose peak can sit near the left
+  edge needs about 30% headroom to clear the y-axis label.
 - `:::board` boxes: the P7 and P8 notes and Writers added claims nobody could verify (OCR's sign convention, OCR's
   pendulum derivation, Edexcel IAL coverage). Name one board and one content difference you are sure of (AQA's
-  Q = ΔU + W; AQA's formula booklet lists T = 2π√(m/k) and T = 2π√(l/g)), or write only about Cambridge.
+  Q = ΔU + W; AQA's formula booklet lists T = 2π√(m/k) and T = 2π√(l/g)), or write only about Cambridge. P11–P12
+  still named two boards (AQA and OCR) or "other specifications": one board, one difference, every time.
 - Widgets (P3–P4 lessons): never name colours in notes ("the red line"): say "the dashed line". Axis ranges must follow
   the values: a fixed window that squeezes the interesting region into a few per cent of the axis, or turns a pattern
   into a flat average, is a bug (zoom or pick from a few window sizes). Keep legends and labels off the curves (bottom

@@ -35,10 +35,19 @@
     if (l < 620) return 'orange';
     return 'red';
   }
-  function beamColour(l, fallback) {
+  function isDarkBg(c) {
+    // luminance of the card colour (hex or rgb()); dark mode needs lighter beam colours
+    const s = String(c || '').trim();
+    let r = 255, g = 255, b = 255, m;
+    if ((m = s.match(/^#([0-9a-f]{6})$/i))) { const n = parseInt(m[1], 16); r = n >> 16; g = (n >> 8) & 255; b = n & 255; }
+    else if ((m = s.match(/^#([0-9a-f]{3})$/i))) { r = parseInt(m[1][0] + m[1][0], 16); g = parseInt(m[1][1] + m[1][1], 16); b = parseInt(m[1][2] + m[1][2], 16); }
+    else if ((m = s.match(/rgba?\(\s*(\d+)[\s,]+(\d+)[\s,]+(\d+)/))) { r = +m[1]; g = +m[2]; b = +m[3]; }
+    return 0.299 * r + 0.587 * g + 0.114 * b < 128;
+  }
+  function beamColour(l, fallback, dark) {
     if (l < 380 || l > 750) return fallback;
     const hue = l < 400 ? 275 : Math.max(0, 270 - (Math.min(l, 700) - 400) / 300 * 270);
-    const light = l > 700 ? 40 : 48;
+    const light = dark ? (l < 460 || l > 640 ? 70 : 60) : (l > 700 ? 40 : 48);
     return 'hsl(' + Math.round(hue) + ', 85%, ' + light + '%)';
   }
 
@@ -165,7 +174,7 @@
         const tx = 12, ty = 38, tw = w - 24, th = h - 62;
         geo.tx = tx; geo.ty = ty; geo.tw = tw; geo.th = th; geo.w = w;
         geo.px = tx + tw * 0.22; geo.cx = tx + tw * 0.82;
-        const beam = beamColour(st.lam, col.ink2);
+        const beam = beamColour(st.lam, col.ink2, isDarkBg(col.card));
         const visible = st.lam >= 380 && st.lam <= 750;
         // light label
         const name = colourName(st.lam);
@@ -224,7 +233,10 @@
     const gradEv = H * 1e14 / E;             // slope of KEmax against f in eV per 10^14 Hz
     function view(p) {
       const f14 = p.f / 1e14;
-      const x1 = Math.max(14, Math.ceil(f14 * 1.12));
+      // both threshold points sit in the left two thirds, so neither line runs through the x-axis label
+      const other = st.metal === 'zinc' ? 'caesium' : 'zinc';
+      const fMax = Math.max(METALS[st.metal].phi, METALS[other].phi) / gradEv;
+      const x1 = Math.max(14, Math.ceil(fMax * 1.5), Math.ceil(f14 * 1.12));
       const top = Math.max(1.2, (gradEv * x1 - METALS[st.metal].phi) * 1.06);
       return { x0: 0, x1, y0: 0, y1: top };
     }
@@ -260,9 +272,9 @@
         ctx.beginPath(); ctx.moveTo(X(f0), Y(0) - 7); ctx.lineTo(X(f0) + 5, Y(0)); ctx.lineTo(X(f0) - 5, Y(0)); ctx.closePath(); ctx.fill();
         ctx.restore();
         // legend on rows below the y label
-        label(ctx, col, 'solid: ' + METALS[st.metal].name + ', f₀ = ' + W.fmt(f0, 3) + ' × 10¹⁴ Hz', ax.pad.l + 8, ax.pad.t + 16, 'left', col.sc);
-        label(ctx, col, 'dashed: ' + METALS[other].name + ' (same gradient)', ax.pad.l + 8, ax.pad.t + 32, 'left', col.ink3);
-        if (keEv <= 0) label(ctx, col, 'below threshold: no emission', ax.pad.l + 8, ax.pad.t + 48, 'left', col.red);
+        label(ctx, col, 'solid: ' + METALS[st.metal].name + ', f₀ = ' + W.fmt(f0, 3) + ' × 10¹⁴ Hz', ax.pad.l + 8, ax.pad.t + 30, 'left', col.sc);
+        label(ctx, col, 'dashed: ' + METALS[other].name + ' (same gradient)', ax.pad.l + 8, ax.pad.t + 46, 'left', col.ink3);
+        if (keEv <= 0) label(ctx, col, 'below threshold: no emission', ax.pad.l + 8, ax.pad.t + 62, 'left', col.red);
       }
     });
 
