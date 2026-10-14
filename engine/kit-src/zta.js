@@ -317,20 +317,21 @@ function runProbe(name, file) {
 // numbers them, and either reports their heights (measure) or shows the range from..to for a screenshot.
 const SHOT_JS = `if(/[?&]shot/.test(location.search)){setTimeout(function(){
 var P=new URLSearchParams(location.search),id=location.hash.slice(1);
-if(P.has('dark'))document.documentElement.setAttribute('data-theme','dark');else document.documentElement.setAttribute('data-theme','light');
+document.documentElement.setAttribute('data-theme',P.has('dark')?'dark':'light');if(window.W&&W.themeChanged)W.themeChanged();
 var out=function(R){var s=JSON.stringify(R);if(parent!==window)parent.postMessage(s,'*');else{var p=document.createElement('pre');p.id='zta-probe';p.textContent=s;document.body.appendChild(p);}};
 var a=document.querySelector('article.chapter[data-id="'+id+'"]');if(!a){out({error:'no chapter '+id});return;}
 a.querySelectorAll('details').forEach(function(d){d.open=true;});
 var T=[].slice.call(a.querySelectorAll('figure,.widget')).filter(function(t){return !t.parentElement.closest('figure,.widget');});
 var from=+(P.get('from')||0),to=P.has('to')?+P.get('to'):T.length,K=T.slice(from,to);
 document.body.querySelectorAll('*').forEach(function(el){if(/^(SCRIPT|STYLE|PRE)$/.test(el.tagName))return;
-if(K.some(function(t){return t===el||t.contains(el)||el.contains(t);}))return;el.style.display='none';});
+if(K.some(function(t){return t===el||t.contains(el)||el.contains(t);}))return;
+if(el.closest('.svgdefs')||el.querySelector('.svgdefs'))return;el.style.display='none';});
 var css=document.createElement('style');css.textContent='html,body{overflow:visible!important}body *{margin-top:0}.zshot{font:600 13px system-ui;color:var(--ink-2);padding:14px 0 4px}';document.head.appendChild(css);
 var R={n:T.length,items:[]};
 K.forEach(function(t,i){var k=from+i,lab=document.createElement('div');lab.className='zshot';
 var name=t.classList.contains('widget')?'widget '+t.getAttribute('data-w'):'figure: '+((t.querySelector('figcaption')||{}).textContent||'').replace(/\\s+/g,' ').trim().slice(0,70);
 lab.textContent='#'+(k+1)+' '+name;t.parentNode.insertBefore(lab,t);R.items.push(name);});
-scrollTo(0,0);setTimeout(function(){R.h=K.map(function(t){return Math.ceil(t.getBoundingClientRect().height)+40;});R.total=document.documentElement.scrollHeight;out(R);},300);},1800);}`;
+scrollTo(0,0);if(window.W&&W.themeChanged)W.themeChanged();setTimeout(function(){R.h=K.map(function(t){return Math.ceil(t.getBoundingClientRect().height)+40;});R.total=document.documentElement.scrollHeight;out(R);},300);},1800);}`;
 const SHOT_FRAME = (src, w, h) => `<!doctype html><meta charset="utf-8"><body style="margin:0"><iframe src="${src}" style="width:${w}px;height:${h}px;border:0;display:block"></iframe>
 <script>addEventListener('message',function(e){var p=document.createElement('pre');p.id='zta-probe';p.textContent=e.data;document.body.appendChild(p);});</script>`;
 
