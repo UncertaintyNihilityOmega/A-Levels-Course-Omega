@@ -239,4 +239,10 @@ eq("quiz micro", round(3.45 - 0.02, 2), 3.43)
 eq("quiz pdiff", sf(pdiff(10.0, 10.5), 2), 4.9)
 eq("quiz pdiff den", 0.5 / 10.25 * 100, 4.878, 1e-3)
 
+
+# Review additions: tangent example and the 0.06 m scale in "Choosing scales"
+eq("tangent gradient", (14.0 - 2.0) / (7.0 - 1.0), 2.0)
+eq("tangent span", 7.0 - 1.0, 6.0)
+eq("scale 0.06 covers", round(10 * 0.06, 2), 0.60)
+assert 10 * 0.06 >= 0.78 - 0.32
 print("ok")

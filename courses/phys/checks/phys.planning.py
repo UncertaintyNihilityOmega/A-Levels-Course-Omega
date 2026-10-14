@@ -166,6 +166,11 @@ eq("lamp n", sf(gb, 2), 0.58)
 cb_l = 2.080 - gb * 0.100
 eq("lamp c", round(cb_l, 3), 2.022)
 eq("lamp k", sf(10**cb_l, 3), 105)
+cw_l = 2.070 - gw * 0.100
+eq("lamp worst c", round(cw_l, 3), 2.010)
+eq("lamp worst k", sf(10**cw_l, 3), 102)
+eq("lamp dk", sf(10**cb_l - 10**cw_l, 1), 3)
+eq("lamp marks", 2 + 3 + 1 + 4 + 3 + 2, 15)
 
 # Stretch 1: cell with false origin
 eq("st1 r", -(1.02 - 1.34) / (0.60 - 0.20), 0.80, 1e-12)

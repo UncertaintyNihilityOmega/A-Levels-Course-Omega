@@ -106,10 +106,10 @@ Each topic chapter follows the same shape: a warm-up, short sections that build 
 
 ## How Cambridge compares with other boards
 
-The physics itself is the same everywhere: the content overlaps heavily between boards. The differences are in how it is assessed.
+Most of the physics is shared between boards. One clear difference is in how practical skills are assessed.
 
 :::board
-**Edexcel International A Level** is taken in units (not as a few big papers) and includes written practical-skills units. **AQA (7408)** and **OCR (Physics A, H556)** report practical skills separately from the written-paper grade, as a teacher-assessed practical endorsement, so there is no practical exam like Cambridge Paper 3. Cambridge Paper 3 is a timed laboratory practical, and Papers 3 and 5 count towards the grade. AQA 7408 also includes a choice of an optional topic, while in Cambridge medical physics and astronomy are required for everyone. Boards' specifications change, so check your own board's current specification.
+**AQA (7408)** has no timed practical exam: laboratory work is assessed by the teacher as a practical endorsement, reported separately from the A Level grade. In Cambridge 9702, practical skills are examined in Papers 3 and 5, and those marks count towards the grade.
 :::
 
 If you are studying for a different board, this course covers the physics, but follow your own board's paper structure and use its specification for the exact content list.

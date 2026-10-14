@@ -1,6 +1,6 @@
 # STATUS: Physics
 
-Last: 2026-10-14 · REVIEW P11, P12 · 3 items in REVIEW.md (quantum absorption-lines exam Q, medical X-ray contrast exam Q, astro redshift-Hubble-age exam Q). Fixed: quantum spectra figure inverted in dark mode (now fa = light, blank = none), energy levels and inverse-square figures to fig small, phys-photo legend/y-label clash + x range + dark beam colour, phys-halflife curve tail through x label, medical A-scan t=0 spike and CT label clash, phys-star checkbox layout (also phys-fringes), peak headroom and λ axis following the peak; four board boxes cut to one AQA difference each. Writers' deviations confirmed (BE/A values, 934 MeV from data sheet, X-ray/ultrasound mu, z=0.030, Sun 3.9e26 W). All numbers recomputed. COURSE.md: P11-P12 figure/widget/board lessons.
+Last: 2026-10-14 · WRITE P13 · phys.practical (7362 words, check ok, phone ok) and phys.planning (5359 words, check ok, phone ok); widget phys-bestfit (probed clean in light, dark, phone and with bad attributes). Notes for the reviewer: hand SVGs in both chapters were coordinate-checked and viewed with shot (micrometer, vernier, spring graph with false origin, oscilloscope screen, light-gate plan view, terminal-speed apparatus, error-bar graph); the widget's worst acceptable line is an exact search for the steepest or shallowest line through every error bar (says so when none exists) and uses least squares for the best fit, so its discharge numbers (gradient -0.0399, worst -0.0417) differ slightly from the chapter's read-off values (-0.0400, -0.0416); error bars use the max-minus-value rule; Dy is y-only (no x error bars); Q1 and Q2 mark totals are 15 B1 each in the planning model answer and Paper 5 style questions.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -17,8 +17,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P10: reviewed 2026-10-14
 - P11: reviewed 2026-10-14
 - P12: reviewed 2026-10-14
-- P13: writing 2026-10-14
+- P13: written 2026-10-14
 - P14: written 2026-10-14
-- P15: open
-- P16: open
+- P15: writing 2026-10-14
+- P16: writing 2026-10-14
 - FINAL: open

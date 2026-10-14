@@ -176,7 +176,7 @@
         for (let i = 0; i < nX; i++) { xmin = Math.min(xmin, m.X[i]); xmax = Math.max(xmax, m.X[i]); }
         const span = (xmax - xmin) || 1;
         let x0 = xmin - 0.08 * span, x1 = xmax + 0.08 * span;
-        if (x0 > 0 && x0 <= 1.2 * span + 0.0) x0 = -0.04 * span;                 // show the vertical axis when it is near the data
+        if (x0 > 0 && x0 <= 1.2 * span + 0.0) x0 = 0;                            // show the vertical axis at the left edge when it is near the data (its tick labels then sit outside the plot, clear of the lines)
         if (x1 < 0 && -x1 <= 1.2 * span) x1 = 0.04 * span;
         let ylo = Infinity, yhi = -Infinity;
         const see = (v) => { ylo = Math.min(ylo, v); yhi = Math.max(yhi, v); };
@@ -238,7 +238,15 @@
       return { x: pair(q(xn), u(xn)), y: pair(q(yn), u(yn)) };
     }
     const fmtU = (v, d) => (isFinite(v) ? W.fmt(v, d) : '—');
-    const pm = (v, dv) => W.fmt(v, 3) + ' ± ' + W.fmt(dv, 2);
+    // value ± uncertainty: the uncertainty to 2 s.f., the value to the same decimal place (25.0 ± 1.1, not 25 ± 1.1)
+    const pm = (v, dv) => {
+      if (!isFinite(v) || !isFinite(dv) || dv <= 0) return W.fmt(v, 3);
+      const e = Math.floor(Math.log10(dv)) - 1;
+      const sgn = (s) => s.replace('-', '−');
+      if (e < 0) return sgn(v.toFixed(-e)) + ' ± ' + dv.toFixed(-e);
+      const r = Math.pow(10, e);
+      return sgn(String(Math.round(v / r) * r)) + ' ± ' + String(Math.round(dv / r) * r);
+    };
 
     function readRows() {
       const out = [], bad = [];

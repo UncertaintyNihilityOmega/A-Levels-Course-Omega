@@ -101,7 +101,7 @@ The zero error is positive, so every reading is too large by \(0.03\,\mathrm{mm}
 A vernier scale lets you read between the lines of the main scale. On the common type, ten vernier divisions together span 9 mm, so each is 0.9 mm long, and each is 0.1 mm shorter than a main-scale division. Slide the jaws open, and the vernier line that lines up exactly with a main-scale line tells you the extra tenths of a millimetre.
 
 :::html
-<figure class="fig"><svg viewBox="20 30 580 170" role="img" aria-label="A vernier scale. The upper main scale is marked in millimetres from 20 to 33. The vernier zero lies between the 23 and 24 millimetre lines. The fourth vernier line is lined up with the 27 millimetre line, so the reading is 23 millimetres plus 0.4 millimetres, which is 23.4 millimetres."><rect class="fm s-mute sw1" x="30" y="36" width="394" height="48"/><rect class="f1 s-acc sw1" x="123.2" y="84" width="276" height="54"/><path class="ln thin" d="M40 84V62M68 84V70M96 84V70M124 84V70M152 84V70M180 84V62M208 84V70M236 84V70M264 84V70M292 84V70M320 84V62M348 84V70M376 84V70M404 84V70"/><text class="ts tc" x="40" y="54">20</text><text class="ts tc" x="180" y="54">25</text><text class="ts tc" x="320" y="54">30</text><path class="ln thin" d="M135.2 84V106M160.4 84V98M185.6 84V98M210.8 84V98M236 84V98M261.2 84V106M286.4 84V98M311.6 84V98M336.8 84V98M362 84V98M387.2 84V106"/><text class="ts tc" x="135.2" y="120">0</text><text class="ts tc" x="261.2" y="120">5</text><text class="ts tc" x="387.2" y="120">10</text><path class="c3" d="M236 62V106"/><text class="tl" x="436" y="60">main scale: 23 mm</text><text class="tl" x="436" y="88">4th line aligned</text><text class="tl" x="436" y="106">= 4 × 0.1 mm = 0.4 mm</text><text class="tl tc" x="230" y="184">reading = 23 mm + 0.4 mm = 23.4 mm</text></svg><figcaption>The upper scale is the main scale (in millimetres) and the lower scale is the vernier. The vernier zero is just past the 23 mm line, and the fourth vernier line is the one that lines up with a main-scale line (27 mm). Every other vernier line is out of line by a visible amount.</figcaption></figure>
+<figure class="fig"><svg viewBox="20 30 414 172" role="img" aria-label="A vernier scale. The upper main scale is marked in millimetres from 20 to 33. The vernier zero lies between the 23 and 24 millimetre lines. The fourth vernier line is lined up with the 27 millimetre line, so the reading is 23 millimetres plus 0.4 millimetres, which is 23.4 millimetres."><rect class="fm s-mute sw1" x="30" y="36" width="394" height="48"/><rect class="f1 s-acc sw1" x="123.2" y="84" width="276" height="54"/><path class="ln thin" d="M40 84V62M68 84V70M96 84V70M124 84V70M152 84V70M180 84V62M208 84V70M236 84V70M264 84V70M292 84V70M320 84V62M348 84V70M376 84V70M404 84V70"/><text class="ts tc" x="40" y="54">20</text><text class="ts tc" x="180" y="54">25</text><text class="ts tc" x="320" y="54">30</text><path class="ln thin" d="M135.2 84V106M160.4 84V98M185.6 84V98M210.8 84V98M236 84V98M261.2 84V106M286.4 84V98M311.6 84V98M336.8 84V98M362 84V98M387.2 84V106"/><text class="ts tc" x="135.2" y="120">0</text><text class="ts tc" x="261.2" y="120">5</text><text class="ts tc" x="387.2" y="120">10</text><path class="c3" d="M236 62V106"/><text class="tl tc" x="227" y="160">main scale 23 mm, 4th vernier line aligned</text><text class="tl tc" x="227" y="186">reading = 23 mm + 4 × 0.1 mm = 23.4 mm</text></svg><figcaption>The upper scale is the main scale (in millimetres) and the lower scale is the vernier. The vernier zero is just past the 23 mm line, and the fourth vernier line is the one that lines up with a main-scale line (27 mm). Every other vernier line is out of line by a visible amount.</figcaption></figure>
 :::
 
 :::steps
@@ -177,7 +177,7 @@ A table is marked on a short list of rules, and each is easy to satisfy.
 2. The heading \(T\) has no unit: it must be \(T\) / s. [B1]
 3. The lengths \(0.3\), \(0.4\), \(0.5\) are given to 0.1 m, but a millimetre rule reads to 0.001 m: they should be \(0.300\), \(0.400\), \(0.500\). [B1]
 4. In the \(t_2\) column, \(28.3\) has one decimal place while the others have two: it should be \(28.27\) (the reading as taken). [B1]
-5. The \(T^2\) values have 2 significant figures, but the times have 3 or 4, so \(T^2\) should be given to 3 or 4 significant figures: \(1.210\), \(1.610\), \(2.011\). [B1]
+5. The \(T^2\) values have 2 significant figures, but the times have 4, so \(T^2\) should be given to 4 (or 5) significant figures: \(1.210\), \(1.610\), \(2.011\). [B1]
 :::
 
 The corrected table:
@@ -218,7 +218,7 @@ For \(l\): the data range is \(0.78 - 0.32 = 0.46\,\mathrm{m}\). A scale of \(0.
 
 For \(T^2\): a scale of \(0.1\,\mathrm{s^2}\) per square covers only \(1.4\,\mathrm{s^2}\), too little for the data. A scale of \(0.5\,\mathrm{s^2}\) per square covers \(7.0\,\mathrm{s^2}\), so the data fill only 26%. A scale of \(0.2\,\mathrm{s^2}\) per square covers \(14 \times 0.2 = 2.8\,\mathrm{s^2}\): start at \(1.2\,\mathrm{s^2}\), so the axis runs from 1.2 to 4.0 and the data fill \(1.85/2.8 = 66\%\). [B1]
 
-A scale of \(0.04\,\mathrm{m}\) per square would also fit, but it is not allowed: scales are 1, 2 or 5 (times a power of ten). [B1]
+A scale of \(0.06\,\mathrm{m}\) per square would also cover the data (\(0.60\,\mathrm{m}\) of axis), but it is not allowed: scales are 1, 2 or 5 (times a power of ten). [B1]
 :::
 
 ### Plotting and drawing the line
@@ -258,6 +258,16 @@ The intercept \(l_0 = 12.5\,\mathrm{cm}\) is the natural length of the spring. T
 
 :::warn Graph marks lost every year
 A tiny gradient triangle (the uncertainty in \(\Delta y/\Delta x\) is then huge). Gradient points taken from the table, not the line. A line forced through the origin when the data do not go there. A scale of 3 units per square. Plotted points that are blobs. A missing unit on an axis label. All of these are easy to avoid, and every one costs a mark.
+:::
+
+### Tangents to curves
+
+When the graph is a curve, the gradient at a point is the gradient of the **tangent** there: a straight line that touches the curve at that point without crossing it nearby. Lay a transparent ruler against the curve, turn it until the gaps between the ruler and the curve look the same on both sides of the point, and draw the tangent long. Then read its gradient from a large triangle, exactly as for a straight line.
+
+:::eg A curve of distance \(s\) against time \(t\) has a tangent drawn at \(t = 4.0\,\mathrm{s}\). The tangent passes through \((1.0\,\mathrm{s},\ 2.0\,\mathrm{m})\) and \((7.0\,\mathrm{s},\ 14.0\,\mathrm{m})\). Find the speed at \(t = 4.0\,\mathrm{s}\).
+The speed is the gradient of the tangent: [C1]
+\[\frac{14.0 - 2.0}{7.0 - 1.0} = 2.0\,\mathrm{m\,s^{-1}}\] [A1]
+The two points are read from the tangent, not from the curve, and they are 6.0 s apart, so the reading errors are small compared with \(\Delta s\) and \(\Delta t\).
 :::
 
 ## Uncertainties
@@ -370,7 +380,7 @@ Headings are quantity / unit, all raw values keep two decimal places, and the ca
 **The graph**: \(T^2\) / s² on the \(y\)-axis against \(l\) / m on the \(x\)-axis, scales of \(0.1\,\mathrm{m}\) and \(0.5\,\mathrm{s^2}\) per large square from zero, so the points fill more than half the grid. Six crosses, and a thin best-fit line with the points balanced about it. [B1] [B1] [B1]
 
 :::plot The pendulum data. The line passes close to the origin, so \(T^2\) is proportional to \(l\).
---f "4.04*x+0*sqrt(0.84-x)+0*sqrt(x-0.27)" --x 0 1 --y 0 4 --pt "0.3,1.21" --pt "0.4,1.61" --pt "0.5,2.011" --pt "0.6,2.421" --pt "0.7,2.819" --pt "0.8,3.229" --xlabel "l / m" --ylabel "T² / s²" --xstep 0.1
+--f "4.04*x+0*sqrt(0.84-x)" --x 0 1 --y 0 4 --pt "0.3,1.21" --pt "0.4,1.61" --pt "0.5,2.011" --pt "0.6,2.421" --pt "0.7,2.819" --pt "0.8,3.229" --xlabel "l / m" --ylabel "T² / s²" --xstep 0.1
 :::
 
 **The gradient.** The line passes through \((0.300,\ 1.21)\) and \((0.800,\ 3.23)\), which are the ends of the data, the full length of the line. [B1]
@@ -398,7 +408,7 @@ Percentage uncertainties: \(h\): \(\dfrac{0.002}{1.500} = 0.13\%\); \(t\): \(\df
 :::
 
 :::board
-AQA, OCR and Edexcel (UK) assess practical skills partly through a separate practical endorsement in the laboratory, and partly through written questions on methods, data and uncertainty. Edexcel IAL has written practical papers. The skills in this chapter (resolution, zero error, tables, graphs, uncertainties, evaluation) are the same everywhere; what differs is how they are assessed.
+AQA (7408) has no timed practical exam like Paper 3: laboratory work is assessed by the teacher as a practical endorsement, reported separately from the A Level grade, and the skills are also tested in written questions. The skills in this chapter (resolution, zero error, tables, graphs, uncertainties, evaluation) are the same; what differs is how they are assessed.
 :::
 
 :::eg Spot the error: the gradient of the spring graph. The graph of spring length \(l\) against load \(F\) (earlier in this chapter) has a best-fit line of gradient \(0.80\,\mathrm{cm\,N^{-1}}\). A student wrote this answer.
