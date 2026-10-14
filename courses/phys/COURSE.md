@@ -140,6 +140,13 @@ the gold chapter). "Explain" questions score one B1 per link in the chain of rea
     crossings on a mid-height axis (they sit on the tick numbers).
   - `fig small` only for drawings about 300 wide; a 400-wide viewBox in `fig small` makes 13 px labels unreadable.
   - Arrows shorter than about 20 px (a dimension `a` of 26 px split in two) show only arrowheads: enlarge the drawing.
+- Lessons from the P5–P6 review:
+  - `:::plot` of a negative function (φ = −GM/r): the x-axis and its label sit at the **top**, so a `--label` at the end of the
+    curve lands on the tick numbers and the axis label. Leave `--label` out (name the curve in the caption) and put point labels
+    below the curve (`@s`). Extend `--x` about 15% past the last labelled point so the `--xlabel` at the right end stays clear.
+  - A force along a string (tension) is drawn **on** the string line, with the string as `ln-m thin` so the arrow reads as the
+    force; put a second force at the same point (weight) at least 12 px to the side.
+  - Paired arrows next to each other look like one more line: never draw a third line between them.
 - Widgets (P3–P4 lessons): never name colours in notes ("the red line"): say "the dashed line". Axis ranges must follow
   the values: a fixed window that squeezes the interesting region into a few per cent of the axis, or turns a pattern
   into a flat average, is a bug (zoom or pick from a few window sizes). Keep legends and labels off the curves (bottom

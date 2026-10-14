@@ -62,6 +62,18 @@ The unrounded value is \(5.625 \times 10^{21}\); the answer is given to 2 signif
 That is 75 kA. The current is huge because the time is tiny. Always convert milliseconds to seconds before dividing.
 :::
 
+When the current changes, \(Q = It\) still holds for each short interval, so the charge is the **area under the current–time graph**. For a steady current the area is a rectangle, \(I \times t\); for a changing current, add up the areas of the simple shapes (or count squares).
+
+:::plot The current in a motor as it starts: it rises steadily to 4.0 A in 10 s, then stays at 4.0 A. The charge that has passed is the area under the line.
+--f "(0.4*x + 4 - abs(0.4*x - 4))/2" --x 0 16 --y 0 5.5 --pt "10,4,(10 s, 4.0 A)@n" --xlabel "t / s" --ylabel "I / A"
+:::
+
+:::eg Use the graph above to find the charge that passes in the first 15 s.
+The area is a triangle for the first 10 s and a rectangle for the next 5 s:
+\[Q = \tfrac12 \times 10 \times 4.0 + 5.0 \times 4.0\] [C1] \(= 20 + 20 = 40\,\mathrm{C}\). [A1]
+The average current over the 15 s is \(40/15 = 2.7\,\mathrm{A}\), not the 4.0 A at the end: when the current varies, \(Q = It\) needs the average current.
+:::
+
 Charge comes in lumps. The smallest charge you can isolate is the charge of one electron or one proton, the **elementary charge** \(e = 1.60 \times 10^{-19}\,\mathrm{C}\). Every charge you can measure is a whole-number multiple of it. We say charge is **quantised**.
 
 :::key Quantisation of charge
@@ -442,10 +454,10 @@ A: (a) \(I = P/V = 1500/230\) [C1] \(= 6.5\,\mathrm{A}\). [A1] (b) \(R = V^{2}/P
 :::try Stretch for A*
 Q: [4 marks] ★★★ A uniform wire is stretched to 1.1 times its original length. Its volume stays constant and its resistivity is unchanged. (a) Show that its resistance increases by a factor of \(1.1^{2}\). (b) Find the percentage increase in resistance.
 H: Volume \(= AL\) is constant, so if \(L\) becomes \(1.1L\), what happens to \(A\)?
-A: (a) The new area is \(A' = A/1.1\) because \(A'L' = AL\). [B1] Then \(R' = \dfrac{\rho L'}{A'} = \dfrac{\rho \times 1.1L}{A/1.1} = 1.1^{2}\,\dfrac{\rho L}{A} = 1.1^{2}R\). [M1] (b) \(1.1^{2} = 1.21\), so the resistance increases by 21%. [A1] [A1]
-Q: [5 marks] ★★★ A copper wire and a rod of a semiconductor, both of cross-sectional area \(2.0\,\mathrm{mm^{2}}\), each carry a current of 1.0 mA. Copper has \(n = 8.5 \times 10^{28}\,\mathrm{m^{-3}}\) and the semiconductor \(n = 2.0 \times 10^{22}\,\mathrm{m^{-3}}\); in both the carriers are electrons. (a) Calculate the drift speed of the carriers in each. (b) Calculate the ratio of the semiconductor speed to the copper speed. (c) Explain, using \(I = Anvq\), why the ratio is so large.
+A: (a) The new area is \(A' = A/1.1\) because \(A'L' = AL\). [B1] Then \(R' = \dfrac{\rho L'}{A'} = \dfrac{\rho \times 1.1L}{A/1.1} = 1.1^{2}\,\dfrac{\rho L}{A} = 1.1^{2}R\). [M1] (b) \(R'/R = 1.1^{2} = 1.21\) [C1], so the resistance increases by 21%. [A1]
+Q: [6 marks] ★★★ A copper wire and a rod of a semiconductor, both of cross-sectional area \(2.0\,\mathrm{mm^{2}}\), each carry a current of 1.0 mA. Copper has \(n = 8.5 \times 10^{28}\,\mathrm{m^{-3}}\) and the semiconductor \(n = 2.0 \times 10^{22}\,\mathrm{m^{-3}}\); in both the carriers are electrons. (a) Calculate the drift speed of the carriers in each. (b) Calculate the ratio of the semiconductor speed to the copper speed. (c) Explain, using \(I = Anvq\), why the ratio is so large. (d) The carriers in the semiconductor move far faster, yet the rod needs a much larger p.d. than the copper wire to carry the same current. Explain why.
 H: \(2.0\,\mathrm{mm^{2}} = 2.0 \times 10^{-6}\,\mathrm{m^{2}}\).
-A: (a) Copper: \(v = \dfrac{I}{Anq} = \dfrac{1.0 \times 10^{-3}}{2.0 \times 10^{-6} \times 8.5 \times 10^{28} \times 1.60 \times 10^{-19}}\) [C1] \(= 3.7 \times 10^{-8}\,\mathrm{m\,s^{-1}}\). [A1] Semiconductor: the same working with \(n = 2.0 \times 10^{22}\) gives \(0.16\,\mathrm{m\,s^{-1}}\). [A1] (b) Using the unrounded speeds, the ratio is \(\dfrac{v_\text{semi}}{v_\text{Cu}} = \dfrac{8.5 \times 10^{28}}{2.0 \times 10^{22}} = 4.25 \times 10^{6}\). [A1] (c) For the same \(I\), \(A\) and \(q\), \(v \propto 1/n\). The semiconductor has about \(4 \times 10^{6}\) times fewer carriers per unit volume, so each carrier must drift that much faster to carry the same current. [B1]
+A: (a) Copper: \(v = \dfrac{I}{Anq} = \dfrac{1.0 \times 10^{-3}}{2.0 \times 10^{-6} \times 8.5 \times 10^{28} \times 1.60 \times 10^{-19}}\) [C1] \(= 3.7 \times 10^{-8}\,\mathrm{m\,s^{-1}}\). [A1] Semiconductor: the same working with \(n = 2.0 \times 10^{22}\) gives \(0.16\,\mathrm{m\,s^{-1}}\). [A1] (b) Using the unrounded speeds, the ratio is \(\dfrac{v_\text{semi}}{v_\text{Cu}} = \dfrac{8.5 \times 10^{28}}{2.0 \times 10^{22}} = 4.3 \times 10^{6}\) (2 s.f., like the data). [A1] (c) For the same \(I\), \(A\) and \(q\), \(v \propto 1/n\). The semiconductor has about \(4 \times 10^{6}\) times fewer carriers per unit volume, so each carrier must drift that much faster to carry the same current. [B1] (d) The p.d. depends on the resistance, not on the drift speed. With so few carriers, the semiconductor's resistivity is many orders of magnitude larger than copper's, so \(R = \rho L/A\) is far larger for the same shape and \(V = IR\) is far larger for the same current. [B1]
 :::
 
 :::quiz

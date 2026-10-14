@@ -245,42 +245,49 @@ function phone(ids) {
 
 /** load preview/<page> headless at the given width and return the JSON it writes into <pre id="zta-probe"> */
 function headless(page, width, budget) {
-  const { spawnSync } = require('child_process');
   const { pathToFileURL } = require('url');
-  const os = require('os');
   const [file, query] = page.split('?');
-  const prof = fs.mkdtempSync(path.join(os.tmpdir(), 'zta-probe-'));
-  const r = spawnSync(findBrowser(), ['--headless=new', '--disable-gpu', '--no-first-run', '--no-default-browser-check', '--disable-extensions', `--user-data-dir=${prof}`,
-    `--window-size=${width},900`, `--virtual-time-budget=${budget}`, '--dump-dom', `${pathToFileURL(path.join(PREVIEW, file)).href}${query ? '?' + query : ''}`],
-  { encoding: 'utf8', timeout: 180000, maxBuffer: 256 * 1024 * 1024 });
-  try { fs.rmSync(prof, { recursive: true, force: true }); } catch (e) { /* the browser may still hold it */ }
+  const r = dumpDom(`${pathToFileURL(path.join(PREVIEW, file)).href}${query ? '?' + query : ''}`, width, budget, 180000);
   const m = (r.stdout || '').match(/<pre id="zta-probe">([\s\S]*?)<\/pre>/);
   if (!m) return null;
   return JSON.parse(m[1].replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&'));
 }
 
-function findBrowser() {
+function browsers() {
   const pf = process.env['ProgramFiles'] || 'C:\\Program Files', pf86 = process.env['ProgramFiles(x86)'] || 'C:\\Program Files (x86)', la = process.env.LOCALAPPDATA || '';
   const list = [process.env.ZTA_BROWSER,
     path.join(pf86, 'Microsoft/Edge/Application/msedge.exe'), path.join(pf, 'Microsoft/Edge/Application/msedge.exe'),
     path.join(pf, 'Google/Chrome/Application/chrome.exe'), path.join(pf86, 'Google/Chrome/Application/chrome.exe'), path.join(la, 'Google/Chrome/Application/chrome.exe'),
     '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', '/usr/bin/google-chrome', '/usr/bin/chromium', '/usr/bin/microsoft-edge'];
-  return list.find(p => p && fs.existsSync(p));
+  return [...new Set(list.filter(p => p && fs.existsSync(p)))];
+}
+const findBrowser = () => browsers()[0];
+// A browser can be installed but broken headless (Edge 155 on 2026-10-14 printed nothing at all), so try each
+// one until it returns a page, and remember the one that worked.
+let goodBrowser = null;
+function dumpDom(url, width, budget, timeout) {
+  const { spawnSync } = require('child_process');
+  const os = require('os');
+  let last = null;
+  for (const exe of goodBrowser ? [goodBrowser] : browsers()) {
+    const prof = fs.mkdtempSync(path.join(os.tmpdir(), 'zta-probe-'));
+    const r = spawnSync(exe, ['--headless=new', '--disable-gpu', '--no-first-run', '--no-default-browser-check', '--disable-extensions', `--user-data-dir=${prof}`,
+      `--window-size=${width},900`, `--virtual-time-budget=${budget}`, '--dump-dom', url], { encoding: 'utf8', timeout, maxBuffer: 256 * 1024 * 1024 });
+    try { fs.rmSync(prof, { recursive: true, force: true }); } catch (e) { /* the browser may still hold it */ }
+    last = r;
+    if (/<html/i.test(r.stdout || '')) { goodBrowser = exe; return r; }
+  }
+  return last || { stdout: '', error: new Error('no Edge or Chrome found (set ZTA_BROWSER)') };
 }
 function runProbe(name, file) {
   const exe = findBrowser();
   if (!exe) { console.log('probe: no Edge or Chrome found (set ZTA_BROWSER to a Chromium browser). Open the page in the browser pane instead.'); return; }
-  const { spawnSync } = require('child_process');
   const { pathToFileURL } = require('url');
-  const os = require('os');
   const page = pathToFileURL(path.join(PREVIEW, file)).href;
   const dec = (s) => s.replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
   let problems = 0;
   for (const [label, q, w] of [['light', '', 1000], ['dark', 'dark', 1000], ['phone', 'phone', 400]]) {
-    const prof = fs.mkdtempSync(path.join(os.tmpdir(), 'zta-probe-'));
-    const r = spawnSync(exe, ['--headless=new', '--disable-gpu', '--no-first-run', '--no-default-browser-check', '--disable-extensions', `--user-data-dir=${prof}`,
-      `--window-size=${w},900`, '--virtual-time-budget=6000', '--dump-dom', `${page}?probe${q ? '&' + q : ''}`], { encoding: 'utf8', timeout: 60000, maxBuffer: 64 * 1024 * 1024 });
-    try { fs.rmSync(prof, { recursive: true, force: true }); } catch (e) { /* the browser may still hold it */ }
+    const r = dumpDom(`${page}?probe${q ? '&' + q : ''}`, w, 6000, 60000);
     const m = (r.stdout || '').match(/<pre id="zta-probe">([\s\S]*?)<\/pre>/);
     if (!m) { problems++; console.log(`✗ ${label}: the page did not finish (${r.error ? r.error.message : 'no report'}); open it in the browser pane`); continue; }
     const R = JSON.parse(dec(m[1]));

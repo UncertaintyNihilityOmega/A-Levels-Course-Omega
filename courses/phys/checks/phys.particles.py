@@ -112,4 +112,9 @@ r = k * (2 * e) * (79 * e) / 8.0e-13
 eq("closest approach", sf(r, 2), 4.5e-14, 1e-16)
 eq("times nuclear radius", sf(4.5e-14 / 7e-15, 1), 6)
 
+# Deflection paragraph (REVIEW P5-P6): specific charges and their ratio
+eq("e/me", sf(e / me, 3), 1.76e11, 1e8)
+eq("alpha Q/m", sf(2 * e / (4.00 * u), 2), 4.8e7, 1e5)
+eq("ratio about 3600", round((e / me) / (2 * e / (4.00 * u)), -2), 3600, 1)
+
 print("ok")

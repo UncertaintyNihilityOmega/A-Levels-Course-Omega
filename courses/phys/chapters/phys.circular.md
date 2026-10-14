@@ -98,7 +98,7 @@ Revolutions per minute become revolutions per second: \(f = 7200/60 = 120\,\math
 
 \(v = r\omega = 0.040 \times 754 = 30\,\mathrm{m\,s^{-1}}\). [A1]
 
-A point at the rim, twice as far out, moves twice as fast, but the platter still turns once in the same time.
+A point twice as far from the axis moves twice as fast, but it still goes round once in the same time: every point of the platter has the same \(\omega\).
 :::
 
 :::warn Radians only
@@ -174,7 +174,7 @@ A force of constant size, always perpendicular to the velocity, therefore produc
 | Bob of a conical pendulum | horizontal component of the tension |
 
 :::plot The centripetal force on a 1200 kg car on a bend of radius 50 m rises with the square of the speed: doubling the speed needs four times the force.
---f "24*x**2" --x 0 25 --y 0 15000 --pt "15,5400,(15 m/s, 5400 N)@se" --xlabel "v / m s⁻¹" --ylabel "F / N" --label "F = mv²/r"
+--f "24*x**2" --x 0 25 --y 0 15000 --pt "15,5400,(15 m s⁻¹, 5400 N)@se" --xlabel "v / m s⁻¹" --ylabel "F / N" --label "F = mv²/r"
 :::
 
 :::eg A car of mass 1200 kg takes a flat bend of radius 50 m at \(15\,\mathrm{m\,s^{-1}}\). What friction force do the tyres need? What is the greatest speed if the road can supply at most 7200 N?
@@ -205,6 +205,24 @@ Passengers in a turning car feel pushed outwards, so many students draw an outwa
 
 :::warn Do not draw the centripetal force as an extra arrow
 On a free-body diagram, draw only real forces: weight, tension, friction, normal contact force, and so on. Then say that their **resultant** towards the centre equals \(mv^2/r\). A "centripetal force" arrow drawn in addition to the real ones counts the same force twice.
+:::
+
+:::lab Checking F = mrω² with a whirling bung
+:::steps
+1. Thread a nylon cord through a short glass tube. Tie a rubber bung of mass \(m\) to the top end and hang a mass \(M\) from the bottom end. The tension in the cord is then \(Mg\), and it is the centripetal force on the bung.
+2. Fix a paper-clip marker on the cord just below the tube, so that the length of cord from the top of the tube to the centre of the bung is a measured \(r\) (metre rule).
+3. Whirl the bung in a horizontal circle above your head, adjusting the speed so that the marker stays just below the tube. Then \(r\) stays constant.
+4. Time 20 revolutions with a stopwatch, repeat and average, and divide by 20 to find the period \(T\). Timing many turns makes your reaction time small compared with the time measured.
+5. Repeat for at least five values of \(r\) between about 0.3 m and 0.9 m, with the same \(m\) and \(M\).
+6. From \(Mg = mr\omega^2 = mr(2\pi/T)^2\) you get \(T^2 = \dfrac{4\pi^2 m}{Mg}\,r\). Plot \(T^2\) against \(r\). A straight line through the origin confirms the relationship, and the gradient is \(4\pi^2 m/(Mg)\).
+:::
+The main problems are friction between the cord and the tube (so the tension at the bung is not exactly \(Mg\)) and the marker drifting up or down during a run. If the cord slopes downwards, measure \(r\) along the cord: the horizontal component of the tension and the radius of the circle both shrink by the same factor, so the result is unchanged.
+:::
+
+:::eg In the whirling-bung experiment the bung has mass 0.020 kg and the hanging mass is 0.100 kg. The gradient of the graph of \(T^2\) against \(r\) is \(0.80\,\mathrm{s^2\,m^{-1}}\). Find the tension from the gradient and compare it with the weight of the hanging mass.
+The gradient is \(4\pi^2 m/F\), so \(F = \dfrac{4\pi^2 m}{\text{gradient}} = \dfrac{4\pi^2 \times 0.020}{0.80}\) [C1] \(= 0.99\,\mathrm{N}\). [A1]
+
+The weight of the hanging mass is \(Mg = 0.100 \times 9.81 = 0.981\,\mathrm{N}\). [B1] The two agree to within about 1%, which supports \(F = mr\omega^2\). A tension a little below \(Mg\) would point to friction at the tube.
 :::
 
 ## Worked problems with real forces
@@ -241,7 +259,7 @@ The mass cancelled out of \(\omega\): a heavier bob at the same angle would go r
 In a vertical circle the weight points the same way at every point, but the centre moves from "above" to "below" the ball, so the tension needed changes round the circle. Energy also changes: the ball is slowest at the top and fastest at the bottom, so use energy conservation to find the speed at one point from the other.
 
 :::html
-<figure class="fig small"><svg viewBox="150 10 220 300" role="img" aria-label="A ball on a string moving in a vertical circle, anticlockwise. At the top the tension T and the weight W both point down, towards the centre. At the bottom the tension T points up, towards the centre, and the weight W points down. The velocity v is along the tangent at each point."><path class="ln-m thin dash" d="M260 50A100 100 0 1 0 260 250A100 100 0 1 0 260 50"/><path class="ln thin" d="M260 60V240"/><circle class="fi" cx="260" cy="150" r="3.5"/><circle class="fp s-ink sw2" cx="260" cy="50" r="10"/><circle class="fp s-ink sw2" cx="260" cy="250" r="10"/><path class="c1" d="M254 60V105" marker-end="url(#ah-phys)"/><path class="c1" d="M268 60V95" marker-end="url(#ah-phys)"/><path class="c2" d="M248 50H200" marker-end="url(#ah2-phys)"/><path class="c1" d="M254 240V180" marker-end="url(#ah-phys)"/><path class="c1" d="M268 260V295" marker-end="url(#ah-phys)"/><path class="c2" d="M272 250H320" marker-end="url(#ah2-phys)"/><text class="tl ti te" x="246" y="88">T</text><text class="tl" x="276" y="82">W</text><text class="tl ti tc" x="224" y="42">v</text><text class="tl ti te" x="246" y="214">T</text><text class="tl" x="276" y="290">W</text><text class="tl ti tc" x="296" y="268">v</text></svg><figcaption>Top and bottom of the circle. At the top, tension and weight both point to the centre. At the bottom, the tension must exceed the weight, because their difference is the centripetal force. The arrow lengths show only that T is largest at the bottom.</figcaption></figure>
+<figure class="fig small"><svg viewBox="150 10 220 300" role="img" aria-label="A ball on a string moving in a vertical circle, anticlockwise. At the top the tension T and the weight W both point down, towards the centre. At the bottom the tension T points up, towards the centre, and the weight W points down. The velocity v is along the tangent at each point."><path class="ln-m thin dash" d="M260 50A100 100 0 1 0 260 250A100 100 0 1 0 260 50"/><path class="ln-m thin" d="M260 60V240"/><circle class="fi" cx="260" cy="150" r="3.5"/><circle class="fp s-ink sw2" cx="260" cy="50" r="10"/><circle class="fp s-ink sw2" cx="260" cy="250" r="10"/><path class="c1" d="M260 60V105" marker-end="url(#ah-phys)"/><path class="c1" d="M273 57V92" marker-end="url(#ah-phys)"/><path class="c2" d="M248 50H200" marker-end="url(#ah2-phys)"/><path class="c1" d="M260 240V180" marker-end="url(#ah-phys)"/><path class="c1" d="M260 260V295" marker-end="url(#ah-phys)"/><path class="c2" d="M272 250H320" marker-end="url(#ah2-phys)"/><text class="tl ti te" x="252" y="92">T</text><text class="tl" x="282" y="84">W</text><text class="tl ti tc" x="224" y="42">v</text><text class="tl ti te" x="252" y="214">T</text><text class="tl" x="268" y="292">W</text><text class="tl ti tc" x="296" y="268">v</text></svg><figcaption>Top and bottom of the circle. At the top, tension and weight both point to the centre. At the bottom, the tension must exceed the weight, because their difference is the centripetal force. The arrow lengths show only that T is largest at the bottom.</figcaption></figure>
 :::
 
 :::formula Vertical circle (ball of mass m on a string, radius r)
@@ -293,7 +311,7 @@ A student wrote this answer.
 Line 1: \(\omega = 33\) revolutions per minute
 Line 2: \(v = r\omega = 0.15 \times 33 = 5.0\,\mathrm{m\,s^{-1}}\)
 
-**Line 2 is wrong: \(v = r\omega\) needs \(\omega\) in radians per second, and 33 rpm is not that. The method mark is lost because the wrong quantity was substituted.** [M0] [A0]
+**Line 2 is wrong: \(v = r\omega\) needs \(\omega\) in radians per second, and 33 rpm is not that. The substitution mark is lost because the wrong quantity was substituted.** [C0] [A0]
 
 Correct working: \(\omega = 33 \times \dfrac{2\pi}{60}\) [C1] \(= 3.46\,\mathrm{rad\,s^{-1}}\), so \(v = 0.15 \times 3.46 = 0.52\,\mathrm{m\,s^{-1}}\). [A1]
 

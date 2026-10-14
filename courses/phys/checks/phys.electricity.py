@@ -168,6 +168,13 @@ eq("v cu", sf(vcu, 2), 3.7e-8, 1e-12)
 eq("v semi", sf(vsm, 2), 0.16, 1e-9)
 eq("v semi 3sf", sf(vsm, 3), 0.156, 1e-9)
 eq("ratio", 8.5e28 / 2.0e22, 4.25e6, 1)
+eq("ratio 2sf (4.25 rounds half up)", 8.5e28 / 2.0e22, 4.3e6, 0.05e6 + 1)
 eq("ratio unrounded speeds", vsm / vcu, 4.25e6, 1e3)
+
+# Area under the I-t graph (REVIEW P5-P6)
+eq("I-t area", 0.5 * 10 * 4.0 + 5.0 * 4.0, 40)
+eq("I-t average", sf(40 / 15, 2), 2.7)
+eq("I-t plot at 10 s", (0.4 * 10 + 4 - abs(0.4 * 10 - 4)) / 2, 4.0)
+eq("I-t plot at 5 s", (0.4 * 5 + 4 - abs(0.4 * 5 - 4)) / 2, 2.0)
 
 print("ok")

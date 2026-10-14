@@ -126,7 +126,7 @@ The astronauts on the station weigh almost as much as on the ground, in the sens
 The graph of \(g\) against \(r\) falls steeply, but near the surface it is almost flat.
 
 :::plot Gravitational field strength of the Earth against distance from its centre. It falls as 1/r² outside the surface, reaching one quarter of its surface value at r = 2R.
---f "398.2/x**2" --x 6.37 45 --y 0 12 --pt "6.37,9.81,surface: 9.81 N kg⁻¹@ne" --pt "12.74,2.45,r = 2R: 2.45@ne" --pt "42.2,0.22,geostationary orbit@nw" --xlabel "r / 10⁶ m" --ylabel "g / N kg⁻¹" --label "g = GM/r²"
+--f "398.2/x**2" --x 6.37 50 --y 0 12 --pt "6.37,9.81,surface: 9.81 N kg⁻¹@ne" --pt "12.74,2.45,r = 2R: 2.45@ne" --pt "42.2,0.22,geostationary orbit@nw" --xlabel "r / 10⁶ m" --ylabel "g / N kg⁻¹" --label "g = GM/r²"
 :::
 
 If you climb 1.0 km, \(r\) changes from \(6.37 \times 10^{6}\) m to \(6.371 \times 10^{6}\) m, a change of only 0.016%. Because \(g\) depends on \(1/r^2\), it changes by about twice that, 0.031%. Even the top of Mount Everest, at about 8.8 km, has \(g\) smaller by only 0.28%. For heights that are a tiny fraction of the Earth's radius, the radial field lines are indistinguishable from parallel ones, \(g\) is constant, and the potential energy change is \(mg\Delta h\). Over larger distances, as for a satellite, \(g\) varies greatly and you must use \(GM/r^2\).
@@ -239,8 +239,8 @@ Adding up the work over all the small steps from \(x = \infty\) to \(x = r\) (th
 The work done per unit mass is this divided by \(m\), so \(\phi = -\dfrac{GM}{r}\).
 :::
 
-:::plot Gravitational potential of the Earth against distance from its centre. It is negative everywhere, and its gradient at any point is the field strength there.
---f "-398.2/x" --x 6.37 45 --y -70 5 --pt "6.37,-62.5,surface: −62.5 MJ kg⁻¹@se" --pt "42.2,-9.4,geostationary: −9.4 MJ kg⁻¹@nw" --xlabel "r / 10⁶ m" --ylabel "φ / MJ kg⁻¹" --label "φ = −GM/r"
+:::plot Gravitational potential of the Earth against distance from its centre. It follows \(\phi = -GM/r\): it is negative everywhere, and its gradient at any point is the field strength there.
+--f "-398.2/x" --x 6.37 50 --y -70 5 --pt "6.37,-62.5,surface: −62.5 MJ kg⁻¹@se" --pt "42.2,-9.4,geostationary@s" --xlabel "r / 10⁶ m" --ylabel "φ / MJ kg⁻¹"
 :::
 
 The gradient of the \(\phi\)–\(r\) graph is \(d\phi/dr = +GM/r^2\), the field strength. So the field strength is minus the potential gradient, with the direction pointing towards decreasing potential: \(g = -\dfrac{d\phi}{dr}\). Steep slope near the planet means strong field. (The units agree: \(\mathrm{MJ\,kg^{-1}}\) per \(10^{6}\,\mathrm{m}\) is \(\mathrm{N\,kg^{-1}}\).)
@@ -372,7 +372,7 @@ A: (a) Gravity provides the centripetal force: \(\dfrac{GMm}{r^2} = \dfrac{mv^2}
 Q: [5 marks] ★★★ At some point on the line between the Earth and the Moon, the resultant gravitational field strength is zero. The distance between their centres is \(3.84 \times 10^{8}\,\mathrm{m}\). The mass of the Earth is \(5.97 \times 10^{24}\,\mathrm{kg}\) and the mass of the Moon is \(7.35 \times 10^{22}\,\mathrm{kg}\). Calculate the distance of this point from the centre of the Earth.
 H: Let the distance from the Earth be \(x\), so the distance from the Moon is \(d - x\). The two field strengths must be equal in size.
 H: Take the square root of both sides to avoid a quadratic equation.
-A: Between the two bodies the fields point in opposite directions, so the resultant is zero when their sizes are equal. [B1] \(\dfrac{GM_\text{E}}{x^2} = \dfrac{GM_\text{M}}{(d-x)^2}\) [C1] so \(\dfrac{d - x}{x} = \sqrt{\dfrac{M_\text{M}}{M_\text{E}}} = 0.111\) [M1] giving \(x = \dfrac{d}{1.111}\) [A1] \(= 3.46 \times 10^{8}\,\mathrm{m}\) from the centre of the Earth. [A1]
+A: Between the two bodies the fields point in opposite directions, so the resultant is zero when their sizes are equal. [B1] \(\dfrac{GM_\text{E}}{x^2} = \dfrac{GM_\text{M}}{(d-x)^2}\) [C1] so \(\dfrac{d - x}{x} = \sqrt{\dfrac{M_\text{M}}{M_\text{E}}} = 0.111\) [M1] giving \(x = \dfrac{d}{1.111}\) [M1] \(= 3.46 \times 10^{8}\,\mathrm{m}\) from the centre of the Earth. [A1]
 :::
 
 :::try Stretch for A*

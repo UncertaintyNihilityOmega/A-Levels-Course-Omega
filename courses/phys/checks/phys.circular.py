@@ -166,4 +166,10 @@ eq("quiz factor", (20 / 10)**2, 4)
 eq("rad deg", sf(180 / pi, 3), 57.3)
 eq("quiz bridge", sf(900 * g - 900 * 15**2 / 40, 2), 3.8e3)
 
+# Whirling-bung lab example (REVIEW P5-P6)
+eq("bung F", sf(4 * pi**2 * 0.020 / 0.80, 2), 0.99)
+eq("bung Mg", sf(0.100 * g, 3), 0.981)
+eq("bung agree 1%", abs(4 * pi**2 * 0.020 / 0.80 - 0.981) / 0.981 < 0.01, True)
+eq("bung gradient model", sf(4 * pi**2 * 0.020 / 0.981, 2), 0.80)
+
 print("ok")

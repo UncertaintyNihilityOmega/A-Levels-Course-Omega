@@ -95,6 +95,8 @@ Some nuclei are unstable and **decay** by emitting radiation. Three types were d
 | β⁺ | fast **positron** | \(+e\) | \(5.5 \times 10^{-4}\) u | a few mm of aluminium, then it annihilates |
 | γ | photon of high-energy electromagnetic radiation | 0 | 0 | intensity reduced, never fully stopped, by thick lead; weakly ionising |
 
+The charges show up when the radiations pass through an electric field (between two charged plates) or a magnetic field. α and β⁻ are deflected in **opposite** directions, because their charges have opposite signs; β⁺ is deflected the same way as α; γ is not deflected at all. β-particles are deflected far more than α-particles, even though they usually move faster, because their charge-to-mass ratio is about 3600 times larger (\(1.76 \times 10^{11}\,\mathrm{C\,kg^{-1}}\) against \(4.8 \times 10^{7}\,\mathrm{C\,kg^{-1}}\), found in the example on the unified atomic mass unit below). A favourite Paper 1 question shows three tracks between two plates and asks you to name each one.
+
 ### Antiparticles and neutrinos
 
 Every particle has an **antiparticle**, and the **positron** is the antiparticle of the electron.
@@ -246,7 +248,7 @@ The widget lets you build hadrons from quarks. Try uud and udd first, then a pai
 
 Charge is conserved. In β⁻ decay, the d quark has charge \(-\tfrac13\), and on the right-hand side we have \(+\tfrac23 + (-1) + 0 = -\tfrac13\). In β⁺ decay, the u quark has \(+\tfrac23\), and afterwards \(-\tfrac13 + 1 + 0 = +\tfrac23\). The nucleon number of the whole nucleus is unchanged because a nucleon turns into another nucleon. In nuclei β⁺ decay can happen, but a free proton does not decay this way, because a neutron has more mass than a proton.
 
-:::eg The neutron \(\mathrm{n} \rightarrow \mathrm{p} + \mathrm{e}^{-} + \bar{\nu}\) is a β⁻ decay. Describe the change in quark composition and show that charge is conserved.
+:::eg The decay of a free neutron, \(\mathrm{n} \rightarrow \mathrm{p} + \mathrm{e}^{-} + \bar{\nu}\), is a β⁻ decay. Describe the change in quark composition and show that charge is conserved.
 The neutron is udd and the proton is uud, so one down quark changes into an up quark. [B1]
 Charge before: \(0\). Charge after: \(+1\) (proton) \(+ (-1)\) (electron) \(+ 0\) (antineutrino) \(= 0\). Charge is conserved. [B1]
 :::

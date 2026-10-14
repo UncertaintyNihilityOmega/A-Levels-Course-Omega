@@ -17,7 +17,8 @@
     const FACTORS = [[1000, '×1 000'], [8640, '×8 640'], [86400, '×86 400']];
     const SUP = { '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴', '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹', '-': '⁻' };
     const sup = (e) => String(e).split('').map((ch) => SUP[ch] || ch).join('');
-    function sci(x, sf) {
+    const sci = (x, sf) => sci0(x, sf).replace(/^-/, '−');
+    function sci0(x, sf) {
       if (!isFinite(x)) return '–';
       if (x === 0) return '0';
       let e = Math.floor(Math.log10(Math.abs(x)));
@@ -94,7 +95,7 @@
       return row;
     }
     const bodyTabs = tabs(Object.keys(BODIES).map((k) => [k, BODIES[k].name]), () => key, (k) => { key = k; mkRadius(); showEarth(); update(); }, 'Body');
-    const viewTabs = tabs([['orbit', 'Orbit'], ['kepler', 'T² against r³']], () => st.view, (v) => { st.view = v; update(); }, 'Graph');
+    const viewTabs = tabs([['orbit', 'Orbit'], ['kepler', 'T² against r³']], () => st.view, (v) => { st.view = v; showEarth(); update(); }, 'Graph');
     const speedTabs = tabs(FACTORS.map((f, i) => [i, f[1]]), () => st.f, (i) => { st.f = i; update(); }, 'Time-lapse factor');
 
     let rs = null;
@@ -134,7 +135,7 @@
     } }, 'Snap to geostationary');
     function showEarth() {
       snapBtn.style.display = key === 'earth' ? '' : 'none';
-      if (typeof legend !== 'undefined') legend.style.display = key === 'earth' ? 'flex' : 'none';
+      if (typeof legend !== 'undefined') legend.style.display = key === 'earth' && st.view === 'orbit' ? 'flex' : 'none';
     }
     if (reduced) playBtn.style.display = 'none';
 
@@ -162,7 +163,7 @@
       ctx.save();
       ctx.strokeStyle = col.ink3; ctx.lineWidth = 1.2; ctx.setLineDash([5, 5]);
       ctx.beginPath(); ctx.arc(cx, cy, rp, 0, TAU); ctx.stroke(); ctx.setLineDash([]);
-      ctx.globalAlpha = 0.35; ctx.fillStyle = col.sc2; ctx.beginPath(); ctx.arc(cx, cy, pr, 0, TAU); ctx.fill(); ctx.globalAlpha = 1;
+      ctx.globalAlpha = 0.22; ctx.fillStyle = col.sc; ctx.beginPath(); ctx.arc(cx, cy, pr, 0, TAU); ctx.fill(); ctx.globalAlpha = 1;
       ctx.strokeStyle = col.sc; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(cx, cy, pr, 0, TAU); ctx.stroke();
       const a = TAU * simT / m.T;
       const sx = cx + rp * Math.cos(a), sy = cy - rp * Math.sin(a);
