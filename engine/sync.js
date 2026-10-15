@@ -16,7 +16,7 @@ const { writeStatus } = require('./progress');
 const ROOT = path.join(__dirname, '..');
 const ENGINE = __dirname;
 const EXAMPLE = 'courses/math/chapters/math.p1.quadratics.md';
-const PORTS = { math: 5101, phys: 5102, chem: 5103, bio: 5104, eng: 5105, bus: 5106, econ: 5107, acc: 5108, other: 5109 };
+const PORTS = { math: 5101, phys: 5102, chem: 5103, bio: 5104, eng: 5105, bus: 5106, econ: 5107, acc: 5108, other: 5109, cs: 5110, psych: 5111 };
 const only = process.argv.slice(2);
 
 const { core } = loadCore(path.join(ROOT, 'core'));

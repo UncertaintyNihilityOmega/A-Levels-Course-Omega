@@ -381,6 +381,192 @@
       "title": "Mock paper: Probability and Statistics 2 (A)",
       "level": "mock",
       "group": "Exam preparation"
+    },
+    {
+      "id": "math.fm.overview",
+      "title": "Further Mathematics: the course map",
+      "level": "guide",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.roots",
+      "title": "Roots of polynomial equations",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.rational",
+      "title": "Rational functions and their graphs",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.series",
+      "title": "Summation of series",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.matrices",
+      "title": "Matrices and transformations",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.polar",
+      "title": "Polar coordinates",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.vectors",
+      "title": "Vectors: lines and planes",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.induction",
+      "title": "Proof by induction",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.hyperbolic",
+      "title": "Hyperbolic functions",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.matrices2",
+      "title": "Eigenvalues and eigenvectors",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.diff",
+      "title": "Further differentiation",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.integ",
+      "title": "Further integration",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.complex",
+      "title": "Complex numbers: de Moivre and roots of unity",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.de",
+      "title": "Differential equations",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.projectiles",
+      "title": "Projectiles",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.rigid",
+      "title": "Equilibrium of a rigid body",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.circular",
+      "title": "Circular motion",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.elastic",
+      "title": "Hooke's law and elastic energy",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.variable",
+      "title": "Linear motion under a variable force",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.impulse",
+      "title": "Momentum and oblique impact",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.crv",
+      "title": "Continuous random variables",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.inference",
+      "title": "Inference with the normal and t-distributions",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.chisq",
+      "title": "Chi-squared tests",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.nonpar",
+      "title": "Non-parametric tests",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.pgf",
+      "title": "Probability generating functions",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.exam",
+      "title": "Further Maths papers: what each one asks",
+      "level": "guide",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.mixed",
+      "title": "Mixed practice: Further Mathematics",
+      "level": "guide",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.mock.p1",
+      "title": "Mock Paper 1: Further Pure Mathematics 1",
+      "level": "mock",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.mock.p2",
+      "title": "Mock Paper 2: Further Pure Mathematics 2",
+      "level": "mock",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.mock.p3",
+      "title": "Mock Paper 3: Further Mechanics",
+      "level": "mock",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.mock.p4",
+      "title": "Mock Paper 4: Further Probability and Statistics",
+      "level": "mock",
+      "group": "Further Mathematics"
     }
   ],
   "aliases": {},

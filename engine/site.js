@@ -4,7 +4,7 @@
 'use strict';
 const { createRenderer, escapeHtml, stripTags, LINK_KINDS } = require('./lib');
 
-const LEVELS = { start: 'Start here', pre: 'Foundations', as: 'AS Level', a2: 'A Level (A2)', guide: 'Guide', tool: 'Interactive', ref: 'Reference', sum: 'Summary', ext: 'Beyond A Level', mock: 'Mock paper' };
+const LEVELS = { start: 'Start here', pre: 'Foundations', as: 'AS Level', a2: 'A Level (A2)', guide: 'Guide', tool: 'Interactive', ref: 'Reference', sum: 'Summary', ext: 'Beyond A Level', mock: 'Mock paper', fm: 'Further Maths' };
 /** "1 h 50 min", "1 hour 15", "75 minutes" → minutes (0 if none) */
 const parseMinutes = (t) => {
   const s = String(t || '');

@@ -23,7 +23,8 @@ and keep these ids where you can (aliases for any you rename or merge).
   plans packages of 2–3 chapters, and reviews like the other courses.
 - Each chapter adds to the old list below: **a first study week** (what to do in the first 5 sessions if self-taught),
   the 3–5 hardest topics and why, a short `:::quiz` on what the subject is like, and a "Learn more online" box.
-- Further Mathematics is a summary chapter for now; it can become a full course if the user asks.
+- Computer Science, Psychology and Further Mathematics are full courses now (`cs`, `psych`, and `math.fm.*` in the
+  Maths course): other.overview lists them with links, and there are no summary chapters for them here.
 
 ## Purpose
 Many readers take one or two A Levels outside the big sciences and business. Each chapter is an honest,
@@ -52,11 +53,8 @@ No `:::try` or `:::quiz` blocks are required, but one short `:::quiz` per chapte
 | id | Covers |
 |---|---|
 | other.overview | One large table of every subject in this course and the big courses (what it is in one line, assessment style, pairs well with, chapter link), then how to choose. Written last. |
-| other.cs | Computer Science |
 | other.it | Information Technology |
-| other.psychology | Psychology |
 | other.envm | Environmental Management and Marine Science |
-| other.furthermaths | Further Mathematics: what it adds to Maths, who needs it (some university courses ask for it), how to study it alongside the Maths course |
 | other.pe | Physical Education |
 | other.english | English Literature |
 | other.englang | English Language (and the combined English Language and Literature) |

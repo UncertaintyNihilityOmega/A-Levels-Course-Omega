@@ -5,6 +5,7 @@
   "code": "9701",
   "board": "Cambridge International AS & A Level Chemistry (9701)",
   "syllabus": "https://www.cambridgeinternational.org/Images/664563-2025-2027-syllabus.pdf",
+  "years": "2025–2027",
   "desc": "Atoms, reactions and the chemistry of carbon",
   "lead": true,
   "chapters": [
@@ -24,183 +25,638 @@
       "id": "chem.atoms",
       "title": "Atomic structure",
       "level": "as",
-      "group": "Physical chemistry"
+      "group": "AS physical chemistry"
     },
     {
       "id": "chem.moles",
       "title": "Moles and stoichiometry",
       "level": "as",
-      "group": "Physical chemistry"
+      "group": "AS physical chemistry"
     },
     {
       "id": "chem.bonding",
       "title": "Chemical bonding",
       "level": "as",
-      "group": "Physical chemistry"
+      "group": "AS physical chemistry"
+    },
+    {
+      "id": "chem.shapes",
+      "title": "Shapes of molecules and intermolecular forces",
+      "level": "as",
+      "group": "AS physical chemistry"
     },
     {
       "id": "chem.states",
       "title": "States of matter",
       "level": "as",
-      "group": "Physical chemistry"
+      "group": "AS physical chemistry"
     },
     {
       "id": "chem.energetics",
       "title": "Chemical energetics",
       "level": "as",
-      "group": "Physical chemistry"
+      "group": "AS physical chemistry"
     },
     {
       "id": "chem.redox",
       "title": "Redox and oxidation numbers",
       "level": "as",
-      "group": "Physical chemistry"
+      "group": "AS physical chemistry"
     },
     {
       "id": "chem.equilibria",
-      "title": "Equilibria",
+      "title": "Chemical equilibria",
       "level": "as",
-      "group": "Physical chemistry"
+      "group": "AS physical chemistry"
+    },
+    {
+      "id": "chem.acids",
+      "title": "Acids and bases",
+      "level": "as",
+      "group": "AS physical chemistry"
     },
     {
       "id": "chem.kinetics",
       "title": "Reaction kinetics",
       "level": "as",
-      "group": "Physical chemistry"
-    },
-    {
-      "id": "chem.lattice",
-      "title": "Lattice energy and Born–Haber cycles",
-      "level": "a2",
-      "group": "Physical chemistry"
-    },
-    {
-      "id": "chem.entropy",
-      "title": "Entropy and Gibbs free energy",
-      "level": "a2",
-      "group": "Physical chemistry"
-    },
-    {
-      "id": "chem.electrochem",
-      "title": "Electrochemistry",
-      "level": "a2",
-      "group": "Physical chemistry"
-    },
-    {
-      "id": "chem.acids2",
-      "title": "Acids, bases, buffers and solubility",
-      "level": "a2",
-      "group": "Physical chemistry"
-    },
-    {
-      "id": "chem.rates2",
-      "title": "Rate equations and mechanisms",
-      "level": "a2",
-      "group": "Physical chemistry"
+      "group": "AS physical chemistry"
     },
     {
       "id": "chem.periodicity",
       "title": "Periodicity: Period 3",
       "level": "as",
-      "group": "Inorganic chemistry"
+      "group": "AS inorganic chemistry"
     },
     {
       "id": "chem.group2",
       "title": "Group 2",
-      "level": "as",
-      "group": "Inorganic chemistry"
+      "level": "as a2",
+      "group": "AS inorganic chemistry"
     },
     {
       "id": "chem.group17",
       "title": "Group 17: the halogens",
       "level": "as",
-      "group": "Inorganic chemistry"
+      "group": "AS inorganic chemistry"
     },
     {
       "id": "chem.nitrogen",
       "title": "Nitrogen and sulfur",
       "level": "as",
-      "group": "Inorganic chemistry"
-    },
-    {
-      "id": "chem.transition",
-      "title": "Transition elements",
-      "level": "a2",
-      "group": "Inorganic chemistry"
+      "group": "AS inorganic chemistry"
     },
     {
       "id": "chem.org.intro",
       "title": "Introduction to organic chemistry",
       "level": "as",
-      "group": "Organic chemistry"
+      "group": "AS organic chemistry and analysis"
+    },
+    {
+      "id": "chem.org.isomerism",
+      "title": "Isomerism",
+      "level": "as a2",
+      "group": "AS organic chemistry and analysis"
     },
     {
       "id": "chem.org.hydrocarbons",
       "title": "Hydrocarbons: alkanes and alkenes",
       "level": "as",
-      "group": "Organic chemistry"
+      "group": "AS organic chemistry and analysis"
     },
     {
       "id": "chem.org.halogen",
       "title": "Halogenoalkanes",
       "level": "as",
-      "group": "Organic chemistry"
+      "group": "AS organic chemistry and analysis"
     },
     {
       "id": "chem.org.alcohols",
-      "title": "Alcohols and phenol",
-      "level": "as a2",
-      "group": "Organic chemistry"
+      "title": "Alcohols",
+      "level": "as",
+      "group": "AS organic chemistry and analysis"
     },
     {
       "id": "chem.org.carbonyl",
       "title": "Aldehydes and ketones",
       "level": "as",
-      "group": "Organic chemistry"
+      "group": "AS organic chemistry and analysis"
     },
     {
       "id": "chem.org.acids",
-      "title": "Carboxylic acids, esters and acyl chlorides",
-      "level": "as a2",
-      "group": "Organic chemistry"
+      "title": "Carboxylic acids, esters and nitriles",
+      "level": "as",
+      "group": "AS organic chemistry and analysis"
+    },
+    {
+      "id": "chem.org.synthesis",
+      "title": "Organic synthesis (AS)",
+      "level": "as",
+      "group": "AS organic chemistry and analysis"
+    },
+    {
+      "id": "chem.analysis",
+      "title": "Infrared spectroscopy and mass spectrometry",
+      "level": "as",
+      "group": "AS organic chemistry and analysis"
+    },
+    {
+      "id": "chem.lattice",
+      "title": "Lattice energy, entropy and Gibbs free energy",
+      "level": "a2",
+      "group": "A Level physical chemistry"
+    },
+    {
+      "id": "chem.electrochem",
+      "title": "Electrochemistry: electrolysis and electrode potentials",
+      "level": "a2",
+      "group": "A Level physical chemistry"
+    },
+    {
+      "id": "chem.acids2",
+      "title": "pH, buffers, solubility product and partition",
+      "level": "a2",
+      "group": "A Level physical chemistry"
+    },
+    {
+      "id": "chem.rates2",
+      "title": "Rate equations and catalysis",
+      "level": "a2",
+      "group": "A Level physical chemistry"
+    },
+    {
+      "id": "chem.transition",
+      "title": "Transition elements",
+      "level": "a2",
+      "group": "A Level inorganic chemistry"
+    },
+    {
+      "id": "chem.complexes",
+      "title": "Complexes: colour, isomerism and stability",
+      "level": "a2",
+      "group": "A Level inorganic chemistry"
     },
     {
       "id": "chem.org.arenes",
       "title": "Arenes: benzene and its compounds",
       "level": "a2",
-      "group": "Organic chemistry"
+      "group": "A Level organic chemistry and analysis"
+    },
+    {
+      "id": "chem.org.phenol",
+      "title": "Phenol and the acidity of organic compounds",
+      "level": "a2",
+      "group": "A Level organic chemistry and analysis"
+    },
+    {
+      "id": "chem.org.acyl",
+      "title": "Acyl chlorides and A Level carboxylic acids",
+      "level": "a2",
+      "group": "A Level organic chemistry and analysis"
     },
     {
       "id": "chem.org.nitrogen",
       "title": "Amines, amides and amino acids",
       "level": "a2",
-      "group": "Organic chemistry"
+      "group": "A Level organic chemistry and analysis"
     },
     {
       "id": "chem.org.polymers",
       "title": "Polymerisation",
-      "level": "as a2",
-      "group": "Organic chemistry"
+      "level": "a2",
+      "group": "A Level organic chemistry and analysis"
     },
     {
-      "id": "chem.org.synthesis",
-      "title": "Organic synthesis",
-      "level": "as a2",
-      "group": "Organic chemistry"
+      "id": "chem.org.synthesis2",
+      "title": "Organic synthesis (A Level)",
+      "level": "a2",
+      "group": "A Level organic chemistry and analysis"
     },
     {
-      "id": "chem.analysis",
-      "title": "Analytical techniques: IR, mass spectra, NMR and chromatography",
-      "level": "as a2",
-      "group": "Analysis and practical"
+      "id": "chem.analysis2",
+      "title": "Chromatography and NMR spectroscopy",
+      "level": "a2",
+      "group": "A Level organic chemistry and analysis"
     },
     {
       "id": "chem.practical",
-      "title": "Practical skills and tests for ions",
+      "title": "Practical skills and qualitative analysis",
+      "level": "as",
+      "group": "Practical skills"
+    },
+    {
+      "id": "chem.planning",
+      "title": "Planning, analysis and evaluation",
+      "level": "a2",
+      "group": "Practical skills"
+    },
+    {
+      "id": "chem.exam.p1",
+      "title": "Paper 1 survival guide: multiple choice",
       "level": "guide",
-      "group": "Analysis and practical"
+      "group": "Exam practice"
+    },
+    {
+      "id": "chem.exam.p24",
+      "title": "Papers 2 and 4 survival guide: structured questions",
+      "level": "guide",
+      "group": "Exam practice"
+    },
+    {
+      "id": "chem.mixed.as",
+      "title": "Mixed practice: AS Level",
+      "level": "guide",
+      "group": "Exam practice"
+    },
+    {
+      "id": "chem.mixed.a2",
+      "title": "Mixed practice: A Level",
+      "level": "guide",
+      "group": "Exam practice"
+    },
+    {
+      "id": "chem.mock.p1",
+      "title": "Mock paper: Paper 1 multiple choice",
+      "level": "mock",
+      "group": "Exam practice"
+    },
+    {
+      "id": "chem.mock.p2",
+      "title": "Mock paper: Paper 2 AS structured questions",
+      "level": "mock",
+      "group": "Exam practice"
+    },
+    {
+      "id": "chem.mock.p3",
+      "title": "Mock paper: Paper 3 practical skills (written)",
+      "level": "mock",
+      "group": "Exam practice"
+    },
+    {
+      "id": "chem.mock.p4",
+      "title": "Mock paper: Paper 4 A Level structured questions",
+      "level": "mock",
+      "group": "Exam practice"
+    },
+    {
+      "id": "chem.mock.p5",
+      "title": "Mock paper: Paper 5 planning, analysis and evaluation",
+      "level": "mock",
+      "group": "Exam practice"
     }
   ],
-  "aliases": {},
-  "packages": []
+  "aliases": {
+    "chem.entropy": "chem.lattice"
+  },
+  "packages": [
+    {
+      "id": "P1",
+      "title": "Course map and chemistry from zero",
+      "chapters": [
+        "chem.overview",
+        "chem.f.basics"
+      ],
+      "widgets": [
+        "periodic"
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Atomic structure and moles",
+      "chapters": [
+        "chem.atoms",
+        "chem.moles"
+      ],
+      "widgets": [
+        "chem-config",
+        "molar"
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Bonding and shapes",
+      "chapters": [
+        "chem.bonding",
+        "chem.shapes"
+      ],
+      "widgets": [
+        "chem-vsepr"
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "States of matter and energetics",
+      "chapters": [
+        "chem.states",
+        "chem.energetics"
+      ],
+      "widgets": [
+        "chem-profile"
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Redox and equilibria",
+      "chapters": [
+        "chem.redox",
+        "chem.equilibria"
+      ],
+      "widgets": [
+        "chem-equilibrium"
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Acids and kinetics",
+      "chapters": [
+        "chem.acids",
+        "chem.kinetics"
+      ],
+      "widgets": [
+        "chem-titration",
+        "chem-boltzmann"
+      ]
+    },
+    {
+      "id": "P7",
+      "title": "Period 3 and Group 2",
+      "chapters": [
+        "chem.periodicity",
+        "chem.group2"
+      ],
+      "widgets": [
+        "chem-trend"
+      ]
+    },
+    {
+      "id": "P8",
+      "title": "Group 17, nitrogen and sulfur",
+      "chapters": [
+        "chem.group17",
+        "chem.nitrogen"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P9",
+      "title": "Organic basics and isomerism",
+      "chapters": [
+        "chem.org.intro",
+        "chem.org.isomerism"
+      ],
+      "widgets": [
+        "chem-chiral"
+      ]
+    },
+    {
+      "id": "P10",
+      "title": "Hydrocarbons and alcohols",
+      "chapters": [
+        "chem.org.hydrocarbons",
+        "chem.org.alcohols"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P11",
+      "title": "Carbonyls, acids and esters",
+      "chapters": [
+        "chem.org.carbonyl",
+        "chem.org.acids"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P12",
+      "title": "AS synthesis and analysis",
+      "chapters": [
+        "chem.org.synthesis",
+        "chem.analysis"
+      ],
+      "widgets": [
+        "chem-orgmap",
+        "chem-ms"
+      ]
+    },
+    {
+      "id": "P13",
+      "title": "Lattice energy, entropy and electrochemistry",
+      "chapters": [
+        "chem.lattice",
+        "chem.electrochem"
+      ],
+      "widgets": [
+        "chem-bornhaber",
+        "chem-cell"
+      ]
+    },
+    {
+      "id": "P14",
+      "title": "pH, buffers and rate equations",
+      "chapters": [
+        "chem.acids2",
+        "chem.rates2"
+      ],
+      "widgets": [
+        "chem-order"
+      ]
+    },
+    {
+      "id": "P15",
+      "title": "Transition elements and complexes",
+      "chapters": [
+        "chem.transition",
+        "chem.complexes"
+      ],
+      "widgets": [
+        "chem-dsplit"
+      ]
+    },
+    {
+      "id": "P16",
+      "title": "Arenes and phenol",
+      "chapters": [
+        "chem.org.arenes",
+        "chem.org.phenol"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P17",
+      "title": "Acyl chlorides and nitrogen compounds",
+      "chapters": [
+        "chem.org.acyl",
+        "chem.org.nitrogen"
+      ],
+      "widgets": [
+        "chem-electrophoresis"
+      ]
+    },
+    {
+      "id": "P18",
+      "title": "Polymers and A Level synthesis",
+      "chapters": [
+        "chem.org.polymers",
+        "chem.org.synthesis2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P19",
+      "title": "NMR, chromatography and practical skills",
+      "chapters": [
+        "chem.analysis2",
+        "chem.practical"
+      ],
+      "widgets": [
+        "chem-nmr",
+        "chem-qa"
+      ]
+    },
+    {
+      "id": "P20",
+      "title": "Planning and the practical mock papers",
+      "chapters": [
+        "chem.planning",
+        "chem.mock.p3",
+        "chem.mock.p5"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P21",
+      "title": "Paper guides and the Paper 1 mock",
+      "chapters": [
+        "chem.exam.p1",
+        "chem.exam.p24",
+        "chem.mock.p1"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P22",
+      "title": "AS mixed practice and the Paper 2 mock",
+      "chapters": [
+        "chem.mixed.as",
+        "chem.mock.p2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P23",
+      "title": "A Level mixed practice and the Paper 4 mock",
+      "chapters": [
+        "chem.mixed.a2",
+        "chem.mock.p4"
+      ],
+      "widgets": []
+    }
+  ],
+  "papers": [
+    {
+      "id": "P1",
+      "title": "Paper 1: Multiple Choice",
+      "chapters": [
+        "chem.atoms",
+        "chem.moles",
+        "chem.bonding",
+        "chem.shapes",
+        "chem.states",
+        "chem.energetics",
+        "chem.redox",
+        "chem.equilibria",
+        "chem.acids",
+        "chem.kinetics",
+        "chem.periodicity",
+        "chem.group2",
+        "chem.group17",
+        "chem.nitrogen",
+        "chem.org.intro",
+        "chem.org.isomerism",
+        "chem.org.hydrocarbons",
+        "chem.org.halogen",
+        "chem.org.alcohols",
+        "chem.org.carbonyl",
+        "chem.org.acids",
+        "chem.org.synthesis",
+        "chem.analysis",
+        "chem.exam.p1",
+        "chem.mock.p1"
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Paper 2: AS Level Structured Questions",
+      "chapters": [
+        "chem.atoms",
+        "chem.moles",
+        "chem.bonding",
+        "chem.shapes",
+        "chem.states",
+        "chem.energetics",
+        "chem.redox",
+        "chem.equilibria",
+        "chem.acids",
+        "chem.kinetics",
+        "chem.periodicity",
+        "chem.group2",
+        "chem.group17",
+        "chem.nitrogen",
+        "chem.org.intro",
+        "chem.org.isomerism",
+        "chem.org.hydrocarbons",
+        "chem.org.halogen",
+        "chem.org.alcohols",
+        "chem.org.carbonyl",
+        "chem.org.acids",
+        "chem.org.synthesis",
+        "chem.analysis",
+        "chem.exam.p24",
+        "chem.mock.p2"
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Paper 3: Advanced Practical Skills",
+      "chapters": [
+        "chem.practical",
+        "chem.moles",
+        "chem.energetics",
+        "chem.acids",
+        "chem.kinetics",
+        "chem.mock.p3"
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "Paper 4: A Level Structured Questions",
+      "chapters": [
+        "chem.lattice",
+        "chem.electrochem",
+        "chem.acids2",
+        "chem.rates2",
+        "chem.group2",
+        "chem.transition",
+        "chem.complexes",
+        "chem.org.isomerism",
+        "chem.org.arenes",
+        "chem.org.phenol",
+        "chem.org.acyl",
+        "chem.org.nitrogen",
+        "chem.org.polymers",
+        "chem.org.synthesis2",
+        "chem.analysis2",
+        "chem.exam.p24",
+        "chem.mock.p4"
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Paper 5: Planning, Analysis and Evaluation",
+      "chapters": [
+        "chem.planning",
+        "chem.practical",
+        "chem.mock.p5"
+      ]
+    }
+  ]
 }

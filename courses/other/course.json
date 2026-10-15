@@ -15,32 +15,14 @@
       "group": "Start here"
     },
     {
-      "id": "other.cs",
-      "title": "Computer Science",
-      "level": "sum",
-      "group": "Sciences and technology"
-    },
-    {
       "id": "other.it",
       "title": "Information Technology",
       "level": "sum",
       "group": "Sciences and technology"
     },
     {
-      "id": "other.psychology",
-      "title": "Psychology",
-      "level": "sum",
-      "group": "Sciences and technology"
-    },
-    {
       "id": "other.envm",
       "title": "Environmental Management and Marine Science",
-      "level": "sum",
-      "group": "Sciences and technology"
-    },
-    {
-      "id": "other.furthermaths",
-      "title": "Further Mathematics",
       "level": "sum",
       "group": "Sciences and technology"
     },
@@ -147,5 +129,9 @@
       "group": "Creative subjects"
     }
   ],
-  "aliases": {}
+  "aliases": {
+    "other.cs": "cs.overview",
+    "other.psychology": "psych.overview",
+    "other.furthermaths": "math.fm.overview"
+  }
 }

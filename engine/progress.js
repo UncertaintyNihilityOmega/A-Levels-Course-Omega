@@ -49,7 +49,7 @@ function courseProgress(dir, course) {
   const state = (id) => (steps[id] || { state: 'open' }).state;
   const hadLead = !lead || state('LEAD') === 'done';
   const finalDone = state('FINAL') === 'done';
-  const readerDone = !lead || state('READER') === 'done';
+  const readerDone = !lead || (state('READER') === 'done' && !unread(dir, course).length);
   const byState = (s) => pk.filter(p => state(p.id) === s).map(p => p.id);
   const writing = byState('writing'), free = byState('open');
   const unreviewed = lead ? byState('written') : [];
@@ -82,10 +82,12 @@ function courseProgress(dir, course) {
   };
 }
 
-/** chapters the Reader has not read yet: course.json order, mock papers left out; READER.md has one "## <id>" per chapter read */
+/** chapters the Reader has not read yet: course.json order, mock papers left out, only chapters some package
+ *  holds (a sketched extension such as Further Maths waits until its LEAD packages it); READER.md has one "## <id>" per chapter read */
 function unread(dir, course) {
   const seen = new Set(readLines(path.join(dir, 'READER.md')).map(l => (l.match(/^## (\S+)/) || [])[1]).filter(Boolean));
-  return (course.chapters || []).filter(c => !/\bmock\b/i.test(c.level || '') && !seen.has(c.id)).map(c => c.id);
+  const packaged = new Set((course.packages || []).flatMap(p => p.chapters || []));
+  return (course.chapters || []).filter(c => packaged.has(c.id) && !/\bmock\b/i.test(c.level || '') && !seen.has(c.id)).map(c => c.id);
 }
 
 /** claim a package for a Writer: the given id, or the first free one. Returns { ok, msg, pkg }. */

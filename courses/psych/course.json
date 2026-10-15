@@ -1,0 +1,213 @@
+{
+  "id": "psych",
+  "title": "Psychology",
+  "short": "Psychology",
+  "code": "9990",
+  "board": "Cambridge International AS & A Level Psychology (9990)",
+  "syllabus": "https://www.cambridgeinternational.org/Images/744686-2028-2030-syllabus.pdf",
+  "years": "2028–2030",
+  "desc": "How psychologists study the mind and behaviour, from core studies to applications",
+  "lead": true,
+  "chapters": [
+    {
+      "id": "psych.overview",
+      "title": "Psychology: the course map",
+      "level": "guide",
+      "group": "Start here"
+    },
+    {
+      "id": "psych.f.basics",
+      "title": "Psychology from zero: reading a study",
+      "level": "pre",
+      "group": "Start here"
+    },
+    {
+      "id": "psych.methods.experiments",
+      "title": "Experiments",
+      "level": "as",
+      "group": "Research methods"
+    },
+    {
+      "id": "psych.methods.other",
+      "title": "Self-reports, observations, case studies and correlations",
+      "level": "as",
+      "group": "Research methods"
+    },
+    {
+      "id": "psych.methods.sampling",
+      "title": "Sampling, ethics, reliability and validity",
+      "level": "as",
+      "group": "Research methods"
+    },
+    {
+      "id": "psych.methods.data",
+      "title": "Data and its analysis",
+      "level": "as",
+      "group": "Research methods"
+    },
+    {
+      "id": "psych.methods.design",
+      "title": "Designing your own study",
+      "level": "as",
+      "group": "Research methods"
+    },
+    {
+      "id": "psych.biological",
+      "title": "The biological approach and its core studies",
+      "level": "as",
+      "group": "Approaches and core studies"
+    },
+    {
+      "id": "psych.cognitive",
+      "title": "The cognitive approach and its core studies",
+      "level": "as",
+      "group": "Approaches and core studies"
+    },
+    {
+      "id": "psych.learning",
+      "title": "The learning approach and its core studies",
+      "level": "as",
+      "group": "Approaches and core studies"
+    },
+    {
+      "id": "psych.social",
+      "title": "The social approach and its core studies",
+      "level": "as",
+      "group": "Approaches and core studies"
+    },
+    {
+      "id": "psych.issues",
+      "title": "Issues and debates",
+      "level": "as",
+      "group": "Approaches and core studies"
+    },
+    {
+      "id": "psych.options",
+      "title": "Choosing your two A Level options",
+      "level": "guide",
+      "group": "A Level options"
+    },
+    {
+      "id": "psych.clinical.1",
+      "title": "Clinical psychology 1",
+      "level": "a2",
+      "group": "Clinical psychology"
+    },
+    {
+      "id": "psych.clinical.2",
+      "title": "Clinical psychology 2",
+      "level": "a2",
+      "group": "Clinical psychology"
+    },
+    {
+      "id": "psych.clinical.3",
+      "title": "Clinical psychology 3",
+      "level": "a2",
+      "group": "Clinical psychology"
+    },
+    {
+      "id": "psych.consumer.1",
+      "title": "Consumer psychology 1",
+      "level": "a2",
+      "group": "Consumer psychology"
+    },
+    {
+      "id": "psych.consumer.2",
+      "title": "Consumer psychology 2",
+      "level": "a2",
+      "group": "Consumer psychology"
+    },
+    {
+      "id": "psych.consumer.3",
+      "title": "Consumer psychology 3",
+      "level": "a2",
+      "group": "Consumer psychology"
+    },
+    {
+      "id": "psych.health.1",
+      "title": "Health psychology 1",
+      "level": "a2",
+      "group": "Health psychology"
+    },
+    {
+      "id": "psych.health.2",
+      "title": "Health psychology 2",
+      "level": "a2",
+      "group": "Health psychology"
+    },
+    {
+      "id": "psych.health.3",
+      "title": "Health psychology 3",
+      "level": "a2",
+      "group": "Health psychology"
+    },
+    {
+      "id": "psych.org.1",
+      "title": "Organisational psychology 1",
+      "level": "a2",
+      "group": "Organisational psychology"
+    },
+    {
+      "id": "psych.org.2",
+      "title": "Organisational psychology 2",
+      "level": "a2",
+      "group": "Organisational psychology"
+    },
+    {
+      "id": "psych.org.3",
+      "title": "Organisational psychology 3",
+      "level": "a2",
+      "group": "Organisational psychology"
+    },
+    {
+      "id": "psych.exam.p12",
+      "title": "Papers 1 and 2: approaches and research methods",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "psych.exam.p34",
+      "title": "Papers 3 and 4: the options",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "psych.mixed.as",
+      "title": "Mixed practice: AS",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "psych.mixed.a2",
+      "title": "Mixed practice: A Level",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "psych.mock.p1",
+      "title": "Mock Paper 1",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "psych.mock.p2",
+      "title": "Mock Paper 2",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "psych.mock.p3",
+      "title": "Mock Paper 3",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "psych.mock.p4",
+      "title": "Mock Paper 4",
+      "level": "mock",
+      "group": "Exam readiness"
+    }
+  ],
+  "aliases": {},
+  "packages": []
+}

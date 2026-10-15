@@ -1,0 +1,231 @@
+{
+  "id": "cs",
+  "title": "Computer Science",
+  "short": "Comp Sci",
+  "code": "9618",
+  "board": "Cambridge International AS & A Level Computer Science (9618)",
+  "syllabus": "https://www.cambridgeinternational.org/Images/721397-2027-2029-syllabus.pdf",
+  "years": "2027–2029",
+  "desc": "From binary and logic gates to algorithms, programming and AI",
+  "lead": true,
+  "chapters": [
+    {
+      "id": "cs.overview",
+      "title": "Computer Science: the course map",
+      "level": "guide",
+      "group": "Start here"
+    },
+    {
+      "id": "cs.f.basics",
+      "title": "Programming from zero: Python and pseudocode",
+      "level": "pre",
+      "group": "Start here"
+    },
+    {
+      "id": "cs.data",
+      "title": "Information representation",
+      "level": "as",
+      "group": "AS theory"
+    },
+    {
+      "id": "cs.networks",
+      "title": "Communication and networks",
+      "level": "as",
+      "group": "AS theory"
+    },
+    {
+      "id": "cs.hardware",
+      "title": "Hardware",
+      "level": "as",
+      "group": "AS theory"
+    },
+    {
+      "id": "cs.logic",
+      "title": "Logic gates and logic circuits",
+      "level": "as",
+      "group": "AS theory"
+    },
+    {
+      "id": "cs.processor",
+      "title": "Processor fundamentals",
+      "level": "as",
+      "group": "AS theory"
+    },
+    {
+      "id": "cs.assembly",
+      "title": "Assembly language and bit manipulation",
+      "level": "as",
+      "group": "AS theory"
+    },
+    {
+      "id": "cs.software",
+      "title": "System software",
+      "level": "as",
+      "group": "AS theory"
+    },
+    {
+      "id": "cs.security",
+      "title": "Security, privacy and data integrity",
+      "level": "as",
+      "group": "AS theory"
+    },
+    {
+      "id": "cs.ethics",
+      "title": "Ethics and ownership",
+      "level": "as",
+      "group": "AS theory"
+    },
+    {
+      "id": "cs.databases",
+      "title": "Databases and normalisation",
+      "level": "as",
+      "group": "AS theory"
+    },
+    {
+      "id": "cs.sql",
+      "title": "SQL",
+      "level": "as",
+      "group": "AS theory"
+    },
+    {
+      "id": "cs.algorithms",
+      "title": "Algorithm design and problem-solving",
+      "level": "as",
+      "group": "AS programming"
+    },
+    {
+      "id": "cs.datatypes",
+      "title": "Data types, arrays, records and files",
+      "level": "as",
+      "group": "AS programming"
+    },
+    {
+      "id": "cs.programming",
+      "title": "Programming: constructs, procedures and functions",
+      "level": "as",
+      "group": "AS programming"
+    },
+    {
+      "id": "cs.development",
+      "title": "Software development and testing",
+      "level": "as",
+      "group": "AS programming"
+    },
+    {
+      "id": "cs.datarep2",
+      "title": "User-defined types, file organisation and floating point",
+      "level": "a2",
+      "group": "A Level theory"
+    },
+    {
+      "id": "cs.networks2",
+      "title": "Protocols and packet switching",
+      "level": "a2",
+      "group": "A Level theory"
+    },
+    {
+      "id": "cs.hardware2",
+      "title": "Processors, parallelism, virtual machines and Boolean algebra",
+      "level": "a2",
+      "group": "A Level theory"
+    },
+    {
+      "id": "cs.software2",
+      "title": "Operating systems and translators",
+      "level": "a2",
+      "group": "A Level theory"
+    },
+    {
+      "id": "cs.security2",
+      "title": "Encryption and digital certificates",
+      "level": "a2",
+      "group": "A Level theory"
+    },
+    {
+      "id": "cs.ai",
+      "title": "Artificial intelligence: graphs, search and machine learning",
+      "level": "a2",
+      "group": "A Level theory"
+    },
+    {
+      "id": "cs.algorithms2",
+      "title": "Searching, sorting and Big O",
+      "level": "a2",
+      "group": "A Level programming"
+    },
+    {
+      "id": "cs.adts",
+      "title": "Abstract data types: stacks, queues, lists, trees",
+      "level": "a2",
+      "group": "A Level programming"
+    },
+    {
+      "id": "cs.recursion",
+      "title": "Recursion",
+      "level": "a2",
+      "group": "A Level programming"
+    },
+    {
+      "id": "cs.oop",
+      "title": "Object-oriented programming",
+      "level": "a2",
+      "group": "A Level programming"
+    },
+    {
+      "id": "cs.paradigms",
+      "title": "Programming paradigms, files and exceptions",
+      "level": "a2",
+      "group": "A Level programming"
+    },
+    {
+      "id": "cs.exam.p13",
+      "title": "Papers 1 and 3: theory",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "cs.exam.p24",
+      "title": "Papers 2 and 4: problem-solving and programming",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "cs.mixed.as",
+      "title": "Mixed practice: AS",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "cs.mixed.a2",
+      "title": "Mixed practice: A Level",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "cs.mock.p1",
+      "title": "Mock Paper 1",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "cs.mock.p2",
+      "title": "Mock Paper 2",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "cs.mock.p3",
+      "title": "Mock Paper 3",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "cs.mock.p4",
+      "title": "Mock Paper 4",
+      "level": "mock",
+      "group": "Exam readiness"
+    }
+  ],
+  "aliases": {},
+  "packages": []
+}
