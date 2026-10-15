@@ -12,8 +12,10 @@ Rebuild it with `node engine/build.js`.
 | `<Course>` Writer | Sonnet | `courses/<c>` | **WRITE**: one package of 2–3 chapters per chat, plus its widgets and number checks; several Writer chats can run at once (each claims a package) |
 | `<Course>` Reader | Sonnet | `courses/<c>` | **READER**: after every package is reviewed, reads the course in order as a beginner (6–8 chapters per chat) and files `(reader)` items in REVIEW.md where a student would get lost |
 
-Courses, in build order (re-planned 2026-10-15 to cover each syllabus in full): `math`, `phys`, `chem`, `bio`,
-`econ`, `bus`, `acc`, `eng`, `other`. Biology follows Chemistry so it can link chemistry chapters; Economics,
+Courses, in build order (re-planned 2026-10-15 to cover each syllabus in full; the queue with its state is
+**ROADMAP.md**): `math`, `phys`, `chem`, `bio`, then a Reader pass on Maths and Physics, Further Maths (`math.fm.*`,
+an extension of the Maths course), `cs` (Computer Science), `psych` (Psychology), `econ`, `bus`, `acc`, `eng`, `other`.
+Since 2026-10-15 the Organizer runs the whole queue by the agent method (the user handed it over). Biology follows Chemistry so it can link chemistry chapters; Economics,
 Business and Accounting share topics, so their COURSE.md files say which course owns each one (Economics first).
 `eng` has no Cambridge syllabus, so its Specialist plans from the routes listed in its COURSE.md. `other` (summaries
 of other A Levels) has a Specialist too since the re-plan.

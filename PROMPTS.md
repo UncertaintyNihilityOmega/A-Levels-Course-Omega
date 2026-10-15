@@ -24,6 +24,8 @@ classic method. An agent run uses only the "Agent run" prompt above, in one Orga
 | Physics | `courses\phys` | `Physics Specialist: LEAD session. Follow CLAUDE.md.` | `Physics Writer: WRITE session. Follow CLAUDE.md.` |
 | Chemistry | `courses\chem` | `Chemistry Specialist: LEAD session. Follow CLAUDE.md.` | `Chemistry Writer: WRITE session. Follow CLAUDE.md.` |
 | Biology | `courses\bio` | `Biology Specialist: LEAD session. Follow CLAUDE.md.` | `Biology Writer: WRITE session. Follow CLAUDE.md.` |
+| Computer Science | `courses\cs` | `Computer Science Specialist: LEAD session. Follow CLAUDE.md.` | `Computer Science Writer: WRITE session. Follow CLAUDE.md.` |
+| Psychology | `courses\psych` | `Psychology Specialist: LEAD session. Follow CLAUDE.md.` | `Psychology Writer: WRITE session. Follow CLAUDE.md.` |
 | Economics | `courses\econ` | `Economics Specialist: LEAD session. Follow CLAUDE.md.` | `Economics Writer: WRITE session. Follow CLAUDE.md.` |
 | Business | `courses\bus` | `Business Specialist: LEAD session. Follow CLAUDE.md.` | `Business Writer: WRITE session. Follow CLAUDE.md.` |
 | Accounting | `courses\acc` | `Accounting Specialist: LEAD session. Follow CLAUDE.md.` | `Accounting Writer: WRITE session. Follow CLAUDE.md.` |
