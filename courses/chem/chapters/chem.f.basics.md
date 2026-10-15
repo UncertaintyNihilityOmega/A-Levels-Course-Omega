@@ -155,7 +155,7 @@ The electrostatic attraction between oppositely charged ions.
 
 Because an ionic compound is a huge lattice and not a small molecule, its formula gives only the simplest ratio of the ions. The formula \(\ce{NaCl}\) means one \(\ce{Na+}\) for each \(\ce{Cl-}\).
 
-### Ions made of more than one atom
+### Polyatomic ions, and other ions to learn
 
 Some ions contain several atoms joined together and carry one charge between them. These **polyatomic ions** stay together in reactions. Learn this list now: you will use it in every chapter.
 
@@ -168,7 +168,7 @@ Some ions contain several atoms joined together and carry one charge between the
 | sulfate | \(\ce{SO4^2-}\) | hydrogen | \(\ce{H+}\) |
 | phosphate | \(\ce{PO4^3-}\) | | |
 
-Zinc and silver are not polyatomic, but their charges are fixed and they are easy to forget, so they are in the list. Names help: a single non-metal atom's ion ends in "-ide" (chloride, oxide), and an ion with oxygen in it usually ends in "-ate" (sulfate, nitrate, carbonate, phosphate). The hydroxide ion is the exception that ends in "-ide" yet contains oxygen.
+The ions in the right-hand column below ammonium (zinc, silver, copper(II) and hydrogen) are single atoms, not polyatomic ions, but their charges are easy to forget, so they are in the list. Names help: a single non-metal atom's ion ends in "-ide" (chloride, oxide), and an ion with oxygen in it usually ends in "-ate" (sulfate, nitrate, carbonate, phosphate). The hydroxide ion is the exception that ends in "-ide" yet contains oxygen.
 
 ### Writing the formula of an ionic compound
 
@@ -555,7 +555,7 @@ A: (a) \(\ce{Ca3(PO4)2 + 3H2SO4 -> 3CaSO4 + 2H3PO4}\). Correct formulas [B1]. Co
 :::links
 - read: [Ionic bonding](https://www.chemguide.co.uk/atoms/bonding/ionic.html) · Chemguide · how atoms form ions and how the ions pack into a lattice, in plain English
 - read: [Covalent bonding](https://www.chemguide.co.uk/atoms/bonding/covalent.html) · Chemguide · shared pairs and the number of bonds each atom makes
-- watch: [Atomic structure and properties](https://www.khanacademy.org/science/chemistry/atomic-structure-and-properties) · Khan Academy · video lessons on atoms, the mole and electron configurations (written for a US course, so the order differs)
+- watch: [Atoms, compounds, and ions](https://www.khanacademy.org/science/chemistry/atomic-structure-and-properties) · Khan Academy · video lessons on atoms, electron configurations, the Periodic Table and ionic formulas (written for a US course, so the order differs)
 - explore: [Build an Atom](https://phet.colorado.edu/en/simulations/build-an-atom) · PhET · add protons, neutrons and electrons and watch the element, charge and mass change
 - practise: [Balancing Chemical Equations](https://phet.colorado.edu/en/simulations/balancing-chemical-equations) · PhET · balance equations with instant feedback, from easy to harder
 - papers: [CAIE IGCSE Chemistry revision](https://www.physicsandmathstutor.com/chemistry-revision/igcse-cie/) · Physics & Maths Tutor · IGCSE questions sorted by topic, for extra practice at this level [unofficial]

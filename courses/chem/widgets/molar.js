@@ -144,7 +144,7 @@
     const tabMass = W.h('button', { class: 'w-tab', type: 'button', text: 'mass → moles', onclick: () => setMode('mass') });
     const tabMol = W.h('button', { class: 'w-tab', type: 'button', text: 'moles → mass', onclick: () => setMode('mol') });
     const valField = W.field({ label: 'Mass / g', value: value, type: 'text', width: '8em', oninput: () => { value = valField.get(); conv(); } });
-    const labEl = valField.el.querySelector('.w-lab') || valField.el.querySelector('span');
+    const labEl = valField.el.querySelector('label') || valField.el.querySelector('.w-lab');
     const conv1 = W.h('div', { style: { margin: '6px 0 2px' } });
     const conv2 = W.h('div', { class: 'w-lab', style: { margin: '2px 0' } });
     const convErr = W.h('div', { class: 'w-err', role: 'status' });
@@ -160,7 +160,9 @@
       mode = m;
       tabMass.setAttribute('aria-selected', m === 'mass' ? 'true' : 'false');
       tabMol.setAttribute('aria-selected', m === 'mol' ? 'true' : 'false');
-      if (labEl) labEl.textContent = m === 'mass' ? 'Mass / g' : 'Amount / mol';
+      const labTxt = m === 'mass' ? 'Mass / g' : 'Amount / mol';
+      if (labEl) labEl.textContent = labTxt;
+      if (valField.input) valField.input.setAttribute('aria-label', labTxt);
       valField.input.value = m === 'mass' ? '5.00' : '0.100';
       value = valField.input.value;
       conv();
@@ -215,7 +217,7 @@
         tbl.appendChild(W.h('tr', {}, td('Total'), td(''), td(''), td(mr.toFixed(1)), td('100')));
         const lines = [];
         if (parts.length > 1 || parts[0].k > 1) {
-          lines.push(parts.map(p => (p.k > 1 ? p.k + ' × ' : '') + p.text + ' (' + p.mr.toFixed(1) + ')').join(' + ') + ' = ' + mr.toFixed(1));
+          lines.push(parts.map(p => (p.k > 1 ? p.k + ' × ' : '') + p.text + ' (' + p.mr.toFixed(1) + ')').join(' + ') + ' = ' + mr.toFixed(1) + '.');
         }
         parts.forEach((p, idx) => {
           if (parts.length > 1 && p.comp.size === 2 && p.comp.get('H') === 2 && p.comp.get('O') === 1) {

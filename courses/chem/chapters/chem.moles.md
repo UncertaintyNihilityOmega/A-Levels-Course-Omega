@@ -81,10 +81,10 @@ To find \(M_r\), add up the \(A_r\) values for every atom in the formula. Water,
 A glass of water contains about \(10^{25}\) molecules, a number too large to use as a unit. So chemists count in a large bundle called the **mole**.
 
 :::def Mole
-The amount of substance that contains the same number of particles as there are atoms in 12 g of carbon-12. This number is the Avogadro constant, \(L = 6.022 \times 10^{23}\,\mathrm{mol^{-1}}\). The particles can be atoms, molecules, ions or electrons.
+The amount of substance that contains \(6.022 \times 10^{23}\) particles. This number of particles per mole is the Avogadro constant, \(L = 6.022 \times 10^{23}\,\mathrm{mol^{-1}}\). The particles can be atoms, molecules, ions or electrons.
 :::
 
-The reason for this definition is that it connects the two scales. The mass of one mole of a substance, in grams, is numerically equal to its relative mass: 12.0 g of carbon (\(A_r = 12.0\)), 18.0 g of water (\(M_r = 18.0\)), 58.5 g of sodium chloride (\(M_r = 58.5\)). So a mole is a known mass and a known number of particles at once.
+The number was chosen so that 12 g of carbon-12 contains one mole of atoms, and that connects the two scales. The mass of one mole of a substance, in grams, is numerically equal to its relative mass: 12.0 g of carbon (\(A_r = 12.0\)), 18.0 g of water (\(M_r = 18.0\)), 58.5 g of sodium chloride (\(M_r = 58.5\)). So a mole is a known mass and a known number of particles at once.
 
 :::formula The mole equations
 \[n = \frac{m}{M} \qquad\qquad N = nL\]
@@ -579,7 +579,7 @@ A: \(M_r(\mathrm{AgCl}) = 107.9 + 35.5 = 143.4\) [B1]
 + 0.200
 - 5.00
 - 320
-> \(n = m / M = 8.00 / 40.0 = 0.200\). 0.125 inverts the formula, and 320 multiplies mass by molar mass.
+> \(n = m / M = 8.00 / 40.0 = 0.200\). 5.00 inverts the formula (\(M/m\)), 0.125 is \(1/8.00\) with the molar mass left out, and 320 multiplies mass by molar mass.
 ? 2.00 g of sodium hydroxide is dissolved in water and made up to 500 cm³. What is the concentration?
 - 0.0250 mol dm⁻³
 - 1.00 × 10⁻⁴ mol dm⁻³

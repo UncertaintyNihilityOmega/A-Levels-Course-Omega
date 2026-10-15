@@ -32,8 +32,8 @@
   const NOTES = {
     Sc: 'Scandium is a d-block element but not a transition element: its only ion, Sc³⁺, has no electrons in the 3d sub-shell.',
     Zn: 'Zinc is a d-block element but not a transition element: its only ion, Zn²⁺, has a full 3d sub-shell.',
-    Cr: 'Chromium is 3d⁵ 4s¹, not 3d⁴ 4s²: a half-filled 3d sub-shell is more stable.',
-    Cu: 'Copper is 3d¹⁰ 4s¹, not 3d⁹ 4s²: a full 3d sub-shell is more stable.'
+    Cr: 'Chromium is 3d⁵ 4s¹, not 3d⁴ 4s²: six electrons in six separate orbitals repel less, so this arrangement has the lower energy.',
+    Cu: 'Copper is 3d¹⁰ 4s¹, not 3d⁹ 4s²: a full 3d sub-shell gives the lower energy.'
   };
 
   function find(q) {
@@ -74,27 +74,33 @@
       node.style.gridColumn = span ? c + ' / span ' + span : String(c);
       grid.appendChild(node);
     }
-    function tiny(text, r, c, span, extra) {
+    const labels = [];           // {d, wide, narrow}: text that changes in the compact (phone) layout
+    function tiny(text, r, c, span, extra, narrow) {
       const d = W.h('div', { text, style: Object.assign({ fontSize: '10px', color: 'var(--ink-2)', textAlign: 'center', alignSelf: 'center', lineHeight: '1.1' }, extra || {}) });
       d.setAttribute('aria-hidden', 'true');
       place(d, r, c, span);
+      labels.push({ d, wide: text, narrow: narrow == null ? text : narrow });
+      return d;
     }
     for (let g = 1; g <= 18; g++) tiny(String(g), 1, g + 1);
     for (let p = 1; p <= 7; p++) tiny(String(p), p + 1, 1);
-    tiny('57–71', 7, 4, 0, { border: '1px dashed var(--rule)', borderRadius: '4px', fontSize: '9px', height: '44px', display: 'flex', alignItems: 'center', justifyContent: 'center' });
-    tiny('89–103', 8, 4, 0, { border: '1px dashed var(--rule)', borderRadius: '4px', fontSize: '9px', height: '44px', display: 'flex', alignItems: 'center', justifyContent: 'center' });
-    tiny('lanthanoids', 10, 2, 2, { textAlign: 'right', paddingRight: '4px' });
-    tiny('actinoids', 11, 2, 2, { textAlign: 'right', paddingRight: '4px' });
+    const slots = [
+      tiny('57–71', 7, 4, 0, { border: '1px dashed var(--rule)', borderRadius: '4px', fontSize: '9px', height: '44px', display: 'flex', alignItems: 'center', justifyContent: 'center' }, '*'),
+      tiny('89–103', 8, 4, 0, { border: '1px dashed var(--rule)', borderRadius: '4px', fontSize: '9px', height: '44px', display: 'flex', alignItems: 'center', justifyContent: 'center' }, '**')];
+    tiny('lanthanoids', 10, 2, 2, { textAlign: 'right', paddingRight: '4px' }, '*');
+    tiny('actinoids', 11, 2, 2, { textAlign: 'right', paddingRight: '4px' }, '**');
+    const small = [];            // the number and mass lines of each cell, hidden in the compact layout
 
     EL.forEach(e => {
       let r, c;
       if (e.group) { r = e.period + 1; c = e.group + 1; }
       else if (e.z >= 57 && e.z <= 71) { r = 10; c = 4 + (e.z - 57); }
       else { r = 11; c = 4 + (e.z - 89); }
-      const b = W.h('button', { type: 'button', class: 'pt-cell', onclick: () => choose(e, true) },
-        W.h('span', { text: String(e.z), style: { fontSize: '9px', lineHeight: '1', color: 'var(--ink-2)' } }),
-        W.h('span', { text: e.sym, style: { fontSize: '14px', fontWeight: '700', lineHeight: '1.15' } }),
-        W.h('span', { text: e.ar == null ? '–' : String(e.ar), style: { fontSize: '9px', lineHeight: '1', color: 'var(--ink-2)' } }));
+      const zs = W.h('span', { text: String(e.z), style: { fontSize: '9px', lineHeight: '1', color: 'var(--ink-2)' } });
+      const ss = W.h('span', { text: e.sym, style: { fontSize: '14px', fontWeight: '700', lineHeight: '1.15' } });
+      const as = W.h('span', { text: e.ar == null ? '–' : e.ar.toFixed(1), style: { fontSize: '9px', lineHeight: '1', color: 'var(--ink-2)' } });
+      small.push({ zs, ss, as });
+      const b = W.h('button', { type: 'button', class: 'pt-cell', onclick: () => choose(e, true) }, zs, ss, as);
       b.setAttribute('aria-label', cap(e.name) + ', ' + e.sym + ', atomic number ' + e.z);
       b.setAttribute('tabindex', '-1');
       b.dataset.r = r; b.dataset.c = c;
@@ -103,6 +109,30 @@
       const cell = { e, b, r, c };
       cells.push(cell); at[r + ',' + c] = cell;
     });
+
+    // ---------- compact layout on narrow screens (no sideways scrolling) ----------
+    const narrowNote = W.h('div', { class: 'w-note', text: 'Narrow screen: the cells show symbols only. Tap an element for its number, mass and configuration.', style: { display: 'none' } });
+    body.appendChild(narrowNote);
+    let compact = null;
+    function layout() {
+      const w = wrap.clientWidth || body.clientWidth || 0;
+      const c = w > 0 && w < 600;
+      if (c === compact) return;
+      compact = c;
+      grid.style.gridTemplateColumns = c ? '9px repeat(18, minmax(0, 1fr))' : '16px repeat(18, minmax(32px, 1fr))';
+      grid.style.minWidth = c ? '0' : '611px';
+      labels.forEach(l => { l.d.textContent = c ? l.narrow : l.wide; l.d.style.fontSize = c ? '8px' : (l.wide.length > 3 ? (l.d.style.height ? '9px' : '10px') : '10px'); });
+      slots.forEach(d => { d.style.height = c ? '30px' : '44px'; });
+      small.forEach(({ zs, ss, as }) => {
+        zs.style.display = c ? 'none' : ''; as.style.display = c ? 'none' : '';
+        ss.style.fontSize = c ? '10px' : '14px';
+      });
+      cells.forEach(({ b }) => { b.style.height = c ? '30px' : '44px'; });
+      narrowNote.style.display = c ? '' : 'none';
+    }
+    layout();
+    if (typeof ResizeObserver !== 'undefined') new ResizeObserver(layout).observe(wrap);
+    else window.addEventListener('resize', layout);
 
     // ---------- legend, note, details ----------
     const legend = W.h('div', { class: 'w-row', style: { gap: '6px 14px', marginTop: '8px' } });
@@ -174,7 +204,7 @@
       head.appendChild(W.h('span', { text: cap(e.name), style: { fontSize: '16px' } }));
       read.set('name', cap(e.name) + ' (' + e.sym + ')');
       read.set('z', String(e.z));
-      read.set('ar', e.ar == null ? 'not given in the Cambridge table' : String(e.ar));
+      read.set('ar', e.ar == null ? 'not given in the Cambridge table' : e.ar.toFixed(1));
       read.set('group', e.group ? String(e.group) : 'none (f-block)');
       read.set('period', String(e.period));
       read.set('block', e.block + '-block');

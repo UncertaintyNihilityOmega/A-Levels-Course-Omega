@@ -1,14 +1,14 @@
 # STATUS: Chemistry
 
-Last: 2026-10-15 · WRITE P2 · chem.atoms (7315 words, 12 eg, 22 try, 8 quiz, checks ok) and chem.moles (5881 words, 25 eg, 23 try, 8 quiz, checks ok); widgets chem-config and molar built (probes clean light/dark/phone, bad attributes handled; viewed via shot). Notes: chem.atoms embeds chem-trend (P7, placeholder until built); links use only checked Chemguide/PMT/chemguideforcie URLs (Khan Academy skipped: bot challenge); free-radical note in chem-config also fires for ions with unpaired electrons per the syllabus definition; chem.moles board box is the AQA atom-economy one; widget sources are scratch/chem-config.tpl.js and scratch/molar.tpl.js (built by scratch/mk_*.py).
+Last: 2026-10-16 · REVIEW P1, P2 · 3 items in REVIEW.md (atoms successive-IE sketch, moles C/H/O combustion question, f.basics harder stretch). Fixed: overview phenol row; f.basics Khan link (checked in browser) and ion list; atoms Cu2+ colour cause, IE wording, P sixth IE, free radicals vs transition-metal ions; moles mole definition via Avogadro constant, quiz explanation; widgets periodic (Ar 1 d.p., compact phone layout without sideways scroll, Cr/Cu notes), chem-config (free-radical note only for non-d-block, Sc-Zn wording), molar (moles->mass relabels field); templates in data/ and generators rerun; COURSE.md lessons added
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
 - LEAD: done 2026-10-15
-- P1: written 2026-10-15
-- P2: written 2026-10-15
+- P1: reviewed 2026-10-16
+- P2: reviewed 2026-10-16
 - P3: writing 2026-10-15
-- P4: open
+- P4: writing 2026-10-16
 - P5: open
 - P6: open
 - P7: open

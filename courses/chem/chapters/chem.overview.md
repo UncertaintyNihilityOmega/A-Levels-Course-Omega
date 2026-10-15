@@ -104,7 +104,7 @@ These chapters assume the AS course. Each one carries the AS skills it needs int
 | [Complexes: colour, isomerism and stability](#chem.complexes) | 28.3–28.5 | d orbital splitting and colour, stereoisomerism, stability constants |
 | [Isomerism](#chem.org.isomerism) (A Level part) | 29.4 | optical isomerism and chiral centres |
 | [Arenes: benzene and its compounds](#chem.org.arenes) | 29.1–29.3, 30, 31 | the structure of benzene, electrophilic substitution, halogenoarenes |
-| [Phenol and the acidity of organic compounds](#chem.org.phenol) | 32.2, 33.1 | phenol, its reactions, and comparing acidities |
+| [Phenol and the acidity of organic compounds](#chem.org.phenol) | 32.2, 33.1 (acidities) | phenol, its reactions, and comparing the acidities of carboxylic acids, phenols and alcohols |
 | [Acyl chlorides and A Level carboxylic acids](#chem.org.acyl) | 32.1, 33 | acyl chlorides, esters from phenols and alcohols, benzoic acid |
 | [Amines, amides and amino acids](#chem.org.nitrogen) | 34 | amines, phenylamine and azo dyes, amides, amino acids and peptides |
 | [Polymerisation](#chem.org.polymers) | 35 | condensation polymers, predicting the type of polymer, degradable polymers |

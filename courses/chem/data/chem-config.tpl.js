@@ -171,9 +171,10 @@
       const u = unpaired(cfg);
       const notes = [];
       if ((z === 24 || z === 29) && q <= 0) notes.push(cap1(nm) + ' is an exception: one 4s electron moves into 3d to give a ' + (z === 24 ? 'half-filled 3d⁵' : 'full 3d¹⁰') + ' sub-shell.');
-      if (q > 0 && z >= 21 && z <= 30) notes.push('Transition elements lose their 4s electrons before their 3d electrons.');
+      if (q > 0 && z >= 21 && z <= 30) notes.push('From Sc to Zn, the 4s electrons are lost before the 3d electrons.');
       if (NOBLE[e]) notes.push(q === 0 ? 'A noble gas: a full outer shell.' : 'Same configuration as ' + NOBLE[e] + ' (isoelectronic): a full outer shell.');
-      if (u > 0) notes.push('It has unpaired electrons, so it fits the definition of a free radical.');
+      if (u > 0 && z >= 21 && z <= 30) notes.push('Unpaired 3d electrons are normal in d-block atoms and ions. The term free radical is kept for reactive species such as Cl• and CH₃•, not for transition-metal atoms and ions.');
+      else if (u > 0) notes.push('It has unpaired electrons, so it is a free radical (as a Cl• atom is).');
       if (e === 0) notes.push('All the electrons have been removed.');
       read.set('e', String(e));
       read.set('full', fullText(cfg));

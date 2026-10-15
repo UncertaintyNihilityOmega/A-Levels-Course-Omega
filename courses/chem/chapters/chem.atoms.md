@@ -245,7 +245,7 @@ Copper has proton number 29 and is one of the exceptions: the atom is 1s² 2s² 
 
 The \(\ce{Cu^2+}\) ion has 29 − 2 = 27 electrons. The first electron comes from the 4s, which empties it. The second comes from the 3d, because 4s is empty and 3d is next. So the 3d sub-shell loses one electron, from 3d¹⁰ to 3d⁹.
 
-\(\ce{Cu^2+}\): 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁹, shorthand [Ar] 3d⁹. It has one unpaired electron, which makes copper(II) compounds coloured.
+\(\ce{Cu^2+}\): 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁹, shorthand [Ar] 3d⁹. It has one unpaired electron. Its partly filled 3d sub-shell is also why copper(II) compounds are coloured, as [Complexes: colour, isomerism and stability](#chem.complexes) explains.
 :::
 
 ### Free radicals
@@ -254,7 +254,7 @@ The \(\ce{Cu^2+}\) ion has 29 − 2 = 27 electrons. The first electron comes fro
 A species with one or more unpaired electrons.
 :::
 
-A chlorine atom has the configuration [Ne] 3s² 3p⁵. In the 3p sub-shell, two orbitals hold pairs and the third holds a single electron, so it has one unpaired electron: it is a free radical, written \(\ce{Cl^.}\) The dot represents the unpaired electron. Free radicals are very reactive, and you will meet them as the reactive intermediates in the substitution of alkanes in [Hydrocarbons: alkanes and alkenes](#chem.org.hydrocarbons). An atom of hydrogen, with 1s¹, is also a free radical. So is an oxygen atom, with two unpaired 2p electrons.
+A chlorine atom has the configuration [Ne] 3s² 3p⁵. In the 3p sub-shell, two orbitals hold pairs and the third holds a single electron, so it has one unpaired electron: it is a free radical, written \(\ce{Cl^.}\) The dot represents the unpaired electron. Free radicals are very reactive, and you will meet them as the reactive intermediates in the substitution of alkanes in [Hydrocarbons: alkanes and alkenes](#chem.org.hydrocarbons). An atom of hydrogen, with 1s¹, is also a free radical. So is an oxygen atom, with two unpaired 2p electrons. Transition-metal atoms and ions such as \(\ce{Fe^3+}\) also have unpaired electrons, but in practice chemists do not call them free radicals: the term is used for reactive species such as \(\ce{Cl^.}\) and \(\ce{CH3^.}\).
 
 ## Atomic and ionic radius
 
@@ -381,7 +381,7 @@ You can explore all of these trends with the interactive chart below. It shows m
 
 ### Successive ionisation energies
 
-An atom with several electrons has several ionisation energies. The \(n\)th ionisation energy is for removing the \(n\)th electron, one at a time. Each one is **larger than the last**, because the electron is being pulled from an ion with a higher positive charge: the same electrons are now attracted by the same number of protons, but there are fewer electrons to repel each other, and the ion is smaller.
+An atom with several electrons has several ionisation energies. The \(n\)th ionisation energy is for removing the \(n\)th electron, one at a time. Each one is **larger than the last**, because the electron is being pulled from an ion with a higher positive charge: the same number of protons now attracts fewer electrons, there is less repulsion between the remaining electrons, and the ion is smaller.
 
 The increases are not smooth. When the next electron has to come from an **inner shell**, the ionisation energy jumps, because the inner shell is closer to the nucleus and has less shielding. The jump shows how many electrons are in the outer shell. Aluminium has the configuration 1s² 2s² 2p⁶ 3s² 3p¹: three electrons in the outer shell, which are removed first, and then one from the second shell.
 
@@ -430,7 +430,7 @@ The student scores 2 out of 3. Correct line 2: calcium has an extra inner shell,
 
 Two kinds of question appear often.
 
-**Explain a pattern.** Choose from the four factors, naming the sub-shell of the electron removed. Never say "more protons" as a reason for a *decrease*, and never say "stable" without saying what it means: a full or half-full sub-shell is lower in energy and has more repulsion removed.
+**Explain a pattern.** Choose from the four factors, naming the sub-shell of the electron removed. Never say "more protons" as a reason for a *decrease*, and never give "a half-full sub-shell is stable" as the reason for the dip at oxygen or sulfur: name the cause, spin-pair repulsion between the two electrons in one orbital.
 
 **Deduce from data.** Look for the biggest jump in a list of successive ionisation energies. The electrons removed before the jump are the outer shell. For a first ionisation energy list, check whether a dip happens at the start of a p sub-shell (B, Al) or at the pairing of electrons in p orbitals (O, S).
 
@@ -504,7 +504,7 @@ A: The electron removed from gallium is in a 4p sub-shell, but the one removed f
 Q: [4 marks] ★★★ The first four ionisation energies of phosphorus are 1060, 1900, 2920 and 4960 kJ mol⁻¹. A student says that phosphorus must be in Group 14 because there is no big jump in the first four values. (a) Explain why the student is wrong to draw this conclusion. (b) Which ionisation energy would show the big jump for phosphorus, and why?
 H: A phosphorus atom has the configuration [Ne] 3s² 3p³. How many electrons are in its outer shell?
 A: (a) A big jump appears only after all the outer electrons have been removed. [B1] No jump in the first four values shows only that there are at least four outer electrons, not exactly four. [B1]
-(b) The fifth: phosphorus has five outer electrons (3s² 3p³). [B1] The sixth electron comes from the second shell, which is much closer to the nucleus, so the jump is between the fifth and sixth. [B1]
+(b) The sixth ionisation energy: phosphorus has five outer electrons (3s² 3p³), so the first five come from the third shell. [B1] The sixth electron comes from the second shell, which is much closer to the nucleus and less shielded, so the big jump is between the fifth and the sixth. [B1]
 :::
 
 :::quiz

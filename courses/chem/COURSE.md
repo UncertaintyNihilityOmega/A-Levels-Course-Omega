@@ -132,6 +132,19 @@ Writers cannot see their figures. Plan coordinates in Python, then `shot <id>` a
   STYLE.md; draw chords, not very short thick canvas arcs.
 - One board and one difference in `:::board`; never reuse a rounded intermediate.
 
+### Lessons from REVIEW P1, P2 (16 Oct 2026)
+- Widget data values: show Ar and other table values with their printed decimals (`ar.toFixed(1)` gives 23.0, not 23).
+  `W.field` builds a `<label>` element: to relabel a field, change `el.querySelector('label')`.
+- A widget must fit 375 px with no sideways scrolling. Grids and tables switch to a compact layout below ~600 px
+  (a `ResizeObserver` on the wrapper; see the `periodic` template data/periodic.template.js).
+- Sc and Zn are d-block elements but not transition elements: write "d-block" or "Sc to Zn" in any statement
+  that includes them. Do not call transition-metal atoms and ions free radicals (the term is for Cl•, CH₃• …).
+- Explanations: the O and S dips are spin-pair repulsion, never "a half-filled sub-shell is stable"; colour of
+  complexes comes from a partly filled d sub-shell (chem.complexes), not from "unpaired electrons".
+- The mole is defined through the Avogadro constant (6.022 × 10²³ particles), not "the atoms in 12 g of carbon-12".
+- `:::links` descriptions must match what the page actually contains (look at its headings, not only the HTTP code).
+  Khan Academy answers curl with a bot challenge, so Writers leave it out; the one in chem.f.basics was checked in the browser.
+
 ### Chemistry figure conventions (copy the gold chapter's SVG)
 - **Skeletal formulas**: zigzag `<path class="ln thick">` with 35 px horizontal steps and ±20 px vertical (bond
   ~40 px, 120° angles); heteroatom labels as `tl` text (`tc` to centre), bond ends ~5 px short of the label box.
