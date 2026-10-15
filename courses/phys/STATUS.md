@@ -1,6 +1,6 @@
 # STATUS: Physics
 
-Last: 2026-10-15 · FIX · mixed.as: momentum principle, Young modulus definition and v-t sketch parts added (trolley/wire/ball now 10 marks), new Set C Kirchhoff 3-branch question with hand SVG circuit [7]; mixed.a2: Define/State parts on satellite [12], F-18 [11], generator [11], new Set C point-charge [8] and capacitor-network [5] questions; checks extended; 7 items closed
+Last: 2026-10-15 · WRITE P17 · phys.mock.p1: 40 MCQ, 40 marks (keys A10 B9 C11 D10; 17 figures); phys.mock.p2: 7 questions, 60 marks (6+9+9+9+10+11+6; 6 figures); phys.mock.p3: 2 x 20 marks, written lab paper with supplied readings (6 figures: circuit, ammeter, micrometer, set-up, stopwatch, vernier). For the reviewer: Q8 of P1 and a few options were reordered so keys are spread; the P3 Q1 data are generated from E 3.00 V, 2.10 ohm fixed, constantan wire d 0.400 mm (least-squares P 1.29, Q 0.70) and Q2 data support t = kh (3.5% difference against about 9% uncertainty). The P2 Q7(b) uses sodium-22 beta+ decay. Shot images could not show the last figure of each long chunk, so P1 box/slope/springs/pipe, P2 beam and P3 cone were viewed via a temporary chapter swap (restored).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -21,6 +21,6 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P14: reviewed 2026-10-15
 - P15: reviewed 2026-10-15
 - P16: reviewed 2026-10-15
-- P17: writing 2026-10-15
-- P18: writing 2026-10-15
+- P17: written 2026-10-15
+- P18: written 2026-10-15
 - FINAL: open
