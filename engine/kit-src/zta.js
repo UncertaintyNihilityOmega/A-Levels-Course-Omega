@@ -356,14 +356,18 @@ function shot(id, dark, phoneW) {
   if (!R.n) { clean(); console.log(`shot: ${id} has no figures or widgets`); return; }
   // pass 2: one PNG per group of figures up to about 1400 px tall
   const groups = [];
-  R.h.forEach((h, i) => { const g = groups[groups.length - 1]; if (g && g.h + h <= 1400) { g.to = i + 1; g.h += h; } else groups.push({ from: i, to: i + 1, h }); });
+  R.h.forEach((h, i) => { const g = groups[groups.length - 1]; if (g && g.h + h <= 1100) { g.to = i + 1; g.h += h; } else groups.push({ from: i, to: i + 1, h }); });
   const { spawnSync } = require('child_process');
   const os = require('os');
   const tag = `${id}${dark ? '-dark' : ''}${phoneW ? '-phone' : ''}`;
   for (const old of fs.readdirSync(path.join(PREVIEW, 'shots'))) if (old.startsWith(tag + '-')) fs.rmSync(path.join(PREVIEW, 'shots', old), { force: true });
   const made = [];
   for (const g of groups) {
-    const H = g.h + 120;
+    // the boxes around each figure (question cards, padding) add height, so measure this group as it will be shown
+    fs.writeFileSync(path.join(PREVIEW, own + '-frame.html'), SHOT_FRAME(q(`&from=${g.from}&to=${g.to}`), W, 900));
+    const gm = (dumpDom(pathToFileURL(path.join(PREVIEW, own + '-frame.html')).href, W + 100, 8000, 120000).stdout || '').match(/<pre id="zta-probe">([\s\S]*?)<\/pre>/);
+    const total = gm ? JSON.parse(gm[1].replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&')).total : 0;
+    const H = Math.max(g.h + 120, (total || 0) + 20);
     fs.writeFileSync(path.join(PREVIEW, own + '-frame.html'), SHOT_FRAME(q(`&from=${g.from}&to=${g.to}`), W, H));
     const file = path.join(PREVIEW, 'shots', `${tag}-${g.from + 1}.png`);
     const prof = fs.mkdtempSync(path.join(os.tmpdir(), 'zta-shot-'));
