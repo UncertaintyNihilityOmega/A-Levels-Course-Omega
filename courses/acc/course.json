@@ -13,37 +13,217 @@
       "id": "acc.overview",
       "title": "Accounting: the course map",
       "level": "guide",
-      "group": "Accounting"
+      "group": "Start here"
+    },
+    {
+      "id": "acc.f.basics",
+      "title": "Accounting from zero: the accounting equation",
+      "level": "pre",
+      "group": "Start here"
+    },
+    {
+      "id": "acc.books",
+      "title": "Business documents and books of prime entry",
+      "level": "as",
+      "group": "AS financial accounting"
     },
     {
       "id": "acc.basics",
-      "title": "Double-entry bookkeeping",
+      "title": "Double entry and the ledger",
       "level": "as",
-      "group": "Accounting"
+      "group": "AS financial accounting"
     },
     {
-      "id": "acc.statements",
-      "title": "Preparing financial statements",
-      "level": "as a2",
-      "group": "Accounting"
+      "id": "acc.errors",
+      "title": "The trial balance, errors and suspense accounts",
+      "level": "as",
+      "group": "AS financial accounting"
     },
     {
       "id": "acc.control",
-      "title": "Reconciliations, control accounts and errors",
+      "title": "Bank reconciliation and control accounts",
       "level": "as",
-      "group": "Accounting"
+      "group": "AS financial accounting"
+    },
+    {
+      "id": "acc.principles",
+      "title": "Accounting principles and concepts",
+      "level": "as",
+      "group": "AS financial accounting"
+    },
+    {
+      "id": "acc.assets",
+      "title": "Non-current assets and depreciation",
+      "level": "as",
+      "group": "AS financial accounting"
+    },
+    {
+      "id": "acc.adjustments",
+      "title": "Accruals, prepayments and irrecoverable debts",
+      "level": "as",
+      "group": "AS financial accounting"
+    },
+    {
+      "id": "acc.inventory",
+      "title": "Inventory valuation",
+      "level": "as",
+      "group": "AS financial accounting"
+    },
+    {
+      "id": "acc.statements",
+      "title": "Financial statements of sole traders",
+      "level": "as",
+      "group": "AS financial accounting"
+    },
+    {
+      "id": "acc.incomplete",
+      "title": "Incomplete records",
+      "level": "as",
+      "group": "AS financial accounting"
+    },
+    {
+      "id": "acc.partnerships",
+      "title": "Partnership accounts",
+      "level": "as",
+      "group": "AS financial accounting"
+    },
+    {
+      "id": "acc.companies",
+      "title": "Limited company accounts",
+      "level": "as",
+      "group": "AS financial accounting"
+    },
+    {
+      "id": "acc.clubs",
+      "title": "Clubs and societies",
+      "level": "as",
+      "group": "AS financial accounting"
+    },
+    {
+      "id": "acc.manufacturing",
+      "title": "Manufacturing accounts",
+      "level": "as",
+      "group": "AS financial accounting"
     },
     {
       "id": "acc.analysis",
-      "title": "Analysing and interpreting accounts",
-      "level": "as a2",
-      "group": "Accounting"
+      "title": "Analysing and interpreting accounts: ratios",
+      "level": "as",
+      "group": "AS financial accounting"
     },
     {
       "id": "acc.costing",
-      "title": "Cost and management accounting",
-      "level": "as a2",
-      "group": "Accounting"
+      "title": "Costing materials and labour",
+      "level": "as",
+      "group": "AS cost and management accounting"
+    },
+    {
+      "id": "acc.absorption",
+      "title": "Absorption costing",
+      "level": "as",
+      "group": "AS cost and management accounting"
+    },
+    {
+      "id": "acc.marginal",
+      "title": "Marginal costing and break-even",
+      "level": "as",
+      "group": "AS cost and management accounting"
+    },
+    {
+      "id": "acc.partnerships2",
+      "title": "Partnership changes and dissolution",
+      "level": "a2",
+      "group": "A Level financial accounting"
+    },
+    {
+      "id": "acc.purchase",
+      "title": "Business purchase and mergers",
+      "level": "a2",
+      "group": "A Level financial accounting"
+    },
+    {
+      "id": "acc.companies2",
+      "title": "Company accounts in depth: share issues and IAS 1",
+      "level": "a2",
+      "group": "A Level financial accounting"
+    },
+    {
+      "id": "acc.cashflow",
+      "title": "Statements of cash flows",
+      "level": "a2",
+      "group": "A Level financial accounting"
+    },
+    {
+      "id": "acc.standards",
+      "title": "International accounting standards, auditing and ethics",
+      "level": "a2",
+      "group": "A Level financial accounting"
+    },
+    {
+      "id": "acc.analysis2",
+      "title": "Interpreting accounts in depth",
+      "level": "a2",
+      "group": "A Level financial accounting"
+    },
+    {
+      "id": "acc.abc",
+      "title": "Activity-based costing",
+      "level": "a2",
+      "group": "A Level cost and management accounting"
+    },
+    {
+      "id": "acc.budgets",
+      "title": "Budgeting and budgetary control",
+      "level": "a2",
+      "group": "A Level cost and management accounting"
+    },
+    {
+      "id": "acc.standard",
+      "title": "Standard costing and variance analysis",
+      "level": "a2",
+      "group": "A Level cost and management accounting"
+    },
+    {
+      "id": "acc.investment",
+      "title": "Investment appraisal",
+      "level": "a2",
+      "group": "A Level cost and management accounting"
+    },
+    {
+      "id": "acc.exam.guide",
+      "title": "The papers: what each one asks",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "acc.mixed.as",
+      "title": "Mixed practice: AS",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "acc.mixed.a2",
+      "title": "Mixed practice: A Level",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "acc.mock.p1",
+      "title": "Mock Paper 1",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "acc.mock.p2",
+      "title": "Mock Paper 2",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "acc.mock.p3",
+      "title": "Mock Paper 3",
+      "level": "mock",
+      "group": "Exam readiness"
     }
   ],
   "aliases": {},

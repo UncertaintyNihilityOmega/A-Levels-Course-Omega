@@ -10,87 +10,147 @@
   "chapters": [
     {
       "id": "eng.overview",
-      "title": "Engineering: routes and course map",
+      "title": "Engineering: the course map",
       "level": "guide",
-      "group": "Engineering at A Level"
+      "group": "Start here"
     },
     {
       "id": "eng.what",
-      "title": "What engineers actually do",
+      "title": "What engineers do",
       "level": "pre",
-      "group": "Engineering at A Level"
+      "group": "Start here"
+    },
+    {
+      "id": "eng.routes",
+      "title": "Routes into engineering",
+      "level": "guide",
+      "group": "Start here"
     },
     {
       "id": "eng.maths",
       "title": "The engineer's maths toolkit",
       "level": "as",
-      "group": "Engineering foundations"
+      "group": "Foundations"
+    },
+    {
+      "id": "eng.units",
+      "title": "Units, estimation and engineering drawings",
+      "level": "as",
+      "group": "Foundations"
     },
     {
       "id": "eng.statics",
-      "title": "Statics: forces, moments and structures",
+      "title": "Statics: forces, moments and trusses",
       "level": "as",
-      "group": "Engineering foundations"
+      "group": "Mechanics and structures"
+    },
+    {
+      "id": "eng.beams",
+      "title": "Beams: shear force and bending moment",
+      "level": "a2",
+      "group": "Mechanics and structures"
     },
     {
       "id": "eng.materials",
-      "title": "Materials and their properties",
+      "title": "Materials: properties and selection",
       "level": "as",
-      "group": "Engineering foundations"
+      "group": "Mechanics and structures"
     },
     {
-      "id": "eng.mechanics",
-      "title": "Stress, beams and safety factors",
+      "id": "eng.failure",
+      "title": "Why things break: fatigue, creep and fracture",
       "level": "a2",
-      "group": "Engineering foundations"
+      "group": "Mechanics and structures"
     },
     {
       "id": "eng.dynamics",
-      "title": "Dynamics and machines",
+      "title": "Dynamics for engineers",
       "level": "as",
-      "group": "Engineering foundations"
+      "group": "Mechanics and structures"
+    },
+    {
+      "id": "eng.mechanics",
+      "title": "Machines and mechanisms",
+      "level": "a2",
+      "group": "Mechanics and structures"
     },
     {
       "id": "eng.fluids",
       "title": "Fluid mechanics",
       "level": "a2",
-      "group": "Engineering foundations"
+      "group": "Thermofluids"
     },
     {
       "id": "eng.thermo",
-      "title": "Thermodynamics and energy systems",
+      "title": "Thermodynamics and heat transfer",
       "level": "a2",
-      "group": "Engineering foundations"
+      "group": "Thermofluids"
+    },
+    {
+      "id": "eng.energy",
+      "title": "Energy systems and sustainability",
+      "level": "a2",
+      "group": "Thermofluids"
     },
     {
       "id": "eng.electrical",
-      "title": "Electrical engineering",
+      "title": "Electrical circuits and power",
       "level": "as",
-      "group": "Engineering foundations"
+      "group": "Electrical and electronic"
     },
     {
       "id": "eng.electronics",
-      "title": "Electronics and digital systems",
+      "title": "Analogue electronics",
       "level": "as",
-      "group": "Engineering foundations"
+      "group": "Electrical and electronic"
+    },
+    {
+      "id": "eng.digital",
+      "title": "Digital electronics and microcontrollers",
+      "level": "a2",
+      "group": "Electrical and electronic"
     },
     {
       "id": "eng.control",
-      "title": "Control systems",
+      "title": "Control systems and feedback",
       "level": "a2",
-      "group": "Engineering foundations"
+      "group": "Electrical and electronic"
     },
     {
       "id": "eng.design",
-      "title": "Design, drawing and manufacturing",
+      "title": "The design process",
       "level": "as",
-      "group": "Engineering foundations"
+      "group": "Design and making"
+    },
+    {
+      "id": "eng.manufacturing",
+      "title": "Manufacturing and quality",
+      "level": "a2",
+      "group": "Design and making"
     },
     {
       "id": "eng.project",
-      "title": "Projects, competitions and your next steps",
+      "title": "Your own engineering project",
       "level": "guide",
-      "group": "Make it real"
+      "group": "Design and making"
+    },
+    {
+      "id": "eng.university",
+      "title": "Applying for engineering: admissions tests and interviews",
+      "level": "guide",
+      "group": "Next steps"
+    },
+    {
+      "id": "eng.problems",
+      "title": "Mixed engineering problems",
+      "level": "guide",
+      "group": "Next steps"
+    },
+    {
+      "id": "eng.mock.admissions",
+      "title": "Practice admissions-test paper",
+      "level": "mock",
+      "group": "Next steps"
     }
   ],
   "aliases": {},

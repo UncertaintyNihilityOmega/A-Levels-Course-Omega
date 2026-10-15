@@ -1,7 +1,29 @@
 # COURSE: Other Subjects (other)
 
-Planned by the Organizer (2026-10-03). There is no Specialist for this course: a Writer works through the
-packages in course.json, and the Organizer reviews the result when assembling the site.
+Planned by the Organizer (2026-10-03). Re-planned on 2026-10-15: the course now has a Specialist who verifies facts, plans packages and reviews (see below).
+
+## Scope (Organizer re-plan, 2026-10-15)
+The user wants every course **comprehensive and really helpful**, at the depth of the finished Maths and Physics
+courses. course.json now holds a fuller chapter sketch (23 chapters) built from the syllabus structure. It is a
+sketch: check it against the syllabus in LEAD step 2, split any chapter that is still too big, add what is missing,
+and keep these ids where you can (aliases for any you rename or merge).
+- **Depth:** every topic chapter has every kit/STYLE.md section: worked examples with marks, exam practice ★ to ★★★,
+  stretch, quiz, checklist, recap, and a "Learn more online" box.
+- **Exam readiness** (the last packages): a guide per paper (or pair of papers), mixed practice for AS and A Level,
+  and one mock per written paper, in the real paper's time, marks and question style.
+- **Links:** students revise on other sites and apps too, so each topic chapter's `:::links` box sends them to the
+  best free ones. LEAD builds the verified link list in COURSE.md (template LEAD step 4).
+- **Syllabus years** are in course.json `"years"`. Plan for that syllabus; if the board has published a newer one
+  for later exams, add a short note in the overview chapter about what changes.
+- **One board** in `:::board` boxes: one board and one content difference you are sure of, or none.
+
+## Notes for this course (re-plan)
+- This course now has a **Specialist** (`"lead": true`): LEAD verifies each subject's facts from the boards' own
+  subject pages (Cambridge codes and paper structure may be named once they are in FACTS.md with their source),
+  plans packages of 2–3 chapters, and reviews like the other courses.
+- Each chapter adds to the old list below: **a first study week** (what to do in the first 5 sessions if self-taught),
+  the 3–5 hardest topics and why, a short `:::quiz` on what the subject is like, and a "Learn more online" box.
+- Further Mathematics is a summary chapter for now; it can become a full course if the user asks.
 
 ## Purpose
 Many readers take one or two A Levels outside the big sciences and business. Each chapter is an honest,
@@ -29,20 +51,29 @@ No `:::try` or `:::quiz` blocks are required, but one short `:::quiz` per chapte
 ## Chapter scope
 | id | Covers |
 |---|---|
-| other.overview | One large table of about 25 subjects (subject, what it is in one line, assessment style, pairs well with, chapter link), then how to choose. Write it last in P1. |
+| other.overview | One large table of every subject in this course and the big courses (what it is in one line, assessment style, pairs well with, chapter link), then how to choose. Written last. |
 | other.cs | Computer Science |
+| other.it | Information Technology |
 | other.psychology | Psychology |
+| other.envm | Environmental Management and Marine Science |
+| other.furthermaths | Further Mathematics: what it adds to Maths, who needs it (some university courses ask for it), how to study it alongside the Maths course |
 | other.pe | Physical Education |
-| other.more | Information Technology, Environmental Management, Marine Science, Travel and Tourism, the Extended Project (EPQ) and other less common choices |
-| other.english | English Language, English Literature, and English Language and Literature |
+| other.english | English Literature |
+| other.englang | English Language (and the combined English Language and Literature) |
+| other.languages | Modern foreign languages (and first-language options) |
+| other.classics | Classics, Classical Civilisation and Latin |
 | other.history | History |
 | other.geography | Geography |
 | other.sociology | Sociology |
 | other.law | Law |
-| other.politics | Politics, Global Perspectives and Thinking Skills |
-| other.languages | Modern foreign languages (and first-language options) |
-| other.arts | Art and Design, Music, Drama and Theatre, Media Studies |
-| other.humanities | Religious Studies, Philosophy and Classics |
+| other.politics | Politics and Government |
+| other.humanities | Religious Studies and Philosophy |
+| other.global | Global Perspectives, Thinking Skills and the Extended Project (EPQ) |
+| other.arts | Art and Design |
+| other.music | Music |
+| other.drama | Drama and Theatre |
+| other.media | Media Studies and Film Studies |
+| other.more | Less common choices at a glance (Travel and Tourism, Design and Technology, Digital Media, and others), one paragraph each |
 
 ## Links
 Link to the big courses where a subject overlaps (e.g. Computer Science → Mathematics course map,

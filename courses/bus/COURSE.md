@@ -6,11 +6,50 @@
 ## Course
 - Cambridge International AS & A Level Business (9609)
 - Syllabus: https://www.cambridgeinternational.org/Images/697371-2026-2028-syllabus.pdf
-- Main board Cambridge International; Edexcel IAL, AQA and OCR differences go in :::board boxes.
+- Main board Cambridge International. `:::board` boxes: one other board and one difference you are sure of, or none.
 
 ## Data values and conventions
 - Money in $ (written as text, e.g. $4.50, never in maths delimiters).
 - Assessment objectives: knowledge, application, analysis, evaluation. Worked examples are model answers built step by step, plus calculations.
+
+## Scope (Organizer re-plan, 2026-10-15)
+The user wants every course **comprehensive and really helpful**, at the depth of the finished Maths and Physics
+courses. course.json now holds a fuller chapter sketch (43 chapters) built from the syllabus structure. It is a
+sketch: check it against the syllabus in LEAD step 2, split any chapter that is still too big, add what is missing,
+and keep these ids where you can (aliases for any you rename or merge).
+- **Depth:** every topic chapter has every kit/STYLE.md section: worked examples with marks, exam practice ★ to ★★★,
+  stretch, quiz, checklist, recap, and a "Learn more online" box.
+- **Exam readiness** (the last packages): a guide per paper (or pair of papers), mixed practice for AS and A Level,
+  and one mock per written paper, in the real paper's time, marks and question style.
+- **Links:** students revise on other sites and apps too, so each topic chapter's `:::links` box sends them to the
+  best free ones. LEAD builds the verified link list in COURSE.md (template LEAD step 4).
+- **Syllabus years** are in course.json `"years"`. Plan for that syllabus; if the board has published a newer one
+  for later exams, add a short note in the overview chapter about what changes.
+- **One board** in `:::board` boxes: one board and one content difference you are sure of, or none.
+
+## Shared topics with Business, Economics and Accounting (Organizer, 2026-10-15)
+Students sit one board's exam, so every course keeps each topic its own syllabus needs, with examples and
+questions in its own exam style. The **owner** writes the deepest treatment and builds the widget; the others write
+their exam's angle in their own chapter and link to the owner for depth (ids in kit/LINKS.md). Build order:
+Economics, then Business, then Accounting, so a widget exists before the later courses embed it.
+
+| Topic | Owner (full chapter, widget) | Others |
+|---|---|---|
+| Demand, supply, equilibrium, surplus | econ.demand, econ.prices (`supplydemand`) | bus.marketing links |
+| Elasticity (PED, YED, XED, PES) | econ.elasticity | bus.mix: pricing decisions, own short section + link |
+| Market structures, competition policy | econ.firms, econ.efficiency | bus.external links |
+| Inflation, unemployment, interest and exchange rates, the business cycle | econ.inflation, econ.unemployment, econ.money, econ.exchange | bus.external: the effect on firms |
+| Labour markets and wages | econ.labour | bus.hrm, bus.motivation link |
+| Costs, contribution, break-even | bus.costs (`breakeven`) | acc.marginal: CVP in accounting layout, embeds `breakeven`; econ.costs: cost theory |
+| Investment appraisal (payback, ARR, NPV) | bus.investment (`npv`) | acc.investment: the full accounting treatment (and any extra methods 9706 lists), embeds `npv` |
+| Ratio analysis | bus.ratios (`ratios`) | acc.analysis, acc.analysis2: accounting depth, embed `ratios` |
+| Financial statements | acc.statements, acc.companies | bus.accounts: reading them for decisions, links |
+| Budgets and variances | acc.budgets, acc.standard | bus.budgets: the AS business angle |
+
+## Notes for this course
+- Papers (verify in the syllabus): 1 and 2 at AS (short answers, essays, data response), 3 and 4 at A Level (case
+  studies: decision-making and strategy). One mock per paper; the case-study mocks come with their own case.
+- `breakeven`, `npv` (the Toolbox calculators page expects these names) and `ratios` are built here.
 
 ## What exists
 - No chapters yet.
@@ -26,21 +65,5 @@
 (The Specialist lists them in course.json "packages" and describes them here.)
 
 ## Ideas from the old plan
-### Suggested merges (old ids become aliases in course.json)
-| Keep | New title | Absorbs |
-|---|---|---|
-| bus.enterprise | Enterprise, business structure and size | bus.structure, bus.size |
-| bus.hrm | Human resource management and management | bus.management |
-| bus.marketing | Marketing and market research | bus.research |
-| bus.operations | Operations, inventory, capacity and outsourcing | bus.inventory |
-| bus.finance | Business finance, sources of finance and cash flow | bus.cashflow |
-| bus.org | Organisation, communication, leadership and HRM strategy | bus.leadership |
-
-### Old packages (chapter groups, topics, notes)
-- **WP24** Business: course map, from zero, topics 1-2: bus.overview, bus.f.basics, bus.enterprise, bus.objectives, bus.hrm, bus.motivation. Topics: 1.1 to 2.3. Notes: bus.overview: 9609 paper table (PLAN.md), assessment objectives (knowledge, application, analysis, evaluation); Edexcel IAL WBS11-WBS14. Worked examples = model paragraphs built step by step, plus calculations where relevant.
-- **WP25** Business: marketing, operations, finance (AS): bus.marketing, bus.mix, bus.operations, bus.finance, bus.costs, bus.budgets. Topics: 3.1 to 5.5. Notes: breakeven widget in bus.costs; cash-flow forecast table in bus.finance.
-- **WP26** Business: A Level strategy, people, marketing, operations: bus.external, bus.strategy, bus.org, bus.marketing2, bus.location, bus.opsstrategy. Topics: 6.1 to 9.3. Notes: One critical-path network SVG in bus.opsstrategy; elasticity calculations in bus.marketing2.
-- **WP27** Business: accounts, ratios, investment, writing: bus.accounts, bus.ratios, bus.investment, bus.writing. Topics: 10.1 to 10.4. Notes: ratios and npv widgets. bus.writing: how 9609 papers are marked, with model answers.
-
 ### Old widget specs
 - supplydemand: shift and tilt demand/supply, equilibrium, consumer/producer surplus, optional price ceiling/floor and indirect tax incidence; axes Price ($) and Quantity. breakeven: data-fc, data-price, data-vc + planned output; contribution, break-even output rounded up, break-even revenue, margin of safety, profit; chart. npv: investment, cash flows years 1-6 (editable), rate; payback (years and months), ARR, NPV with discount factors to 3 d.p. ratios: gross and operating margin, ROCE, current ratio, acid test, inventory turnover, receivables and payables days, gearing, dividend yield, P/E; formula + one-line meaning each; realistic example pre-filled.

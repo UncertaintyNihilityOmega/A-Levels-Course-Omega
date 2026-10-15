@@ -38,7 +38,8 @@ stop, and the prompt templates. Outside a run, never spawn course agents: course
    engine, kit docs, templates or any course.json (LINKS.md lists every course's ids).
 4. Spot-check the site in the browser pane ("site" launch config): a new chapter per course, a widget, dark
    mode, phone width, search.
-5. Update STATUS.md (one line), commit with a clear message.
+5. Update STATUS.md (one line), commit with a clear message, and `git push` (origin = the user's private GitHub repo
+   UncertaintyNihilityOmega/A-Levels-Course-Omega, the backup; push after every commit).
 
 ## Engine facts
 - `engine/site.js` builds `site/index.html` (core chapters + nav + data) and `site/c/<course>.js` chunks that the
@@ -75,3 +76,11 @@ stop, and the prompt templates. Outside a run, never spawn course agents: course
   narrower than ~480 px). The unary-sign rule no longer fires after a closing bracket or `!`.
 - Python: always `py` (the `python` command is the Windows Store alias), with PYTHONUTF8=1 (the console code
   page cannot print − or ²); `engine/util.js runPython` handles both.
+- 2026-10-15 additions: **practice.next** ("What to revise next", app.js renderNext) ranks chapters from marked mocks
+  (DATA.mocks: each mock question as [marks, revise id], parsed by site.js from the mock html), the last 10 quiz answers
+  per chapter (localStorage `quizlog`, written by renderQuizInto) and unticked checklist lines (DATA.ck) in chapters marked
+  learned. **READER** step (progress.js: after every package is reviewed, before REVIEW FINAL; READER.md has one
+  `## <id>` per chapter read; `done READER` needs every non-mock chapter). **years** in course.json (status.js warns in a
+  syllabus's last exam year; home cards show it). `:::links` is required in topic chapters, from COURSE.md's verified
+  list; link pages tools.l.<c> are added in core.json (`linkSheets`) when a course starts. Build order (core.json order):
+  math, phys, chem, bio, econ, bus, acc, eng, other; econ/bus/acc COURSE.md files carry a shared-topics ownership table.

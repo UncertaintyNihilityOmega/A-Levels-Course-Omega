@@ -6,132 +6,146 @@
   "board": "Short summaries of other popular A Levels (no single syllabus)",
   "syllabus": "",
   "desc": "Short guides to every other popular A Level",
-  "lead": false,
+  "lead": true,
   "chapters": [
     {
       "id": "other.overview",
-      "title": "All other subjects at a glance",
+      "title": "Other A Levels: the map and how to choose",
       "level": "sum",
-      "group": "Subject summaries"
+      "group": "Start here"
     },
     {
       "id": "other.cs",
       "title": "Computer Science",
       "level": "sum",
-      "group": "Subject summaries"
+      "group": "Sciences and technology"
     },
     {
-      "id": "other.english",
-      "title": "English Language and Literature",
+      "id": "other.it",
+      "title": "Information Technology",
       "level": "sum",
-      "group": "Subject summaries"
-    },
-    {
-      "id": "other.history",
-      "title": "History",
-      "level": "sum",
-      "group": "Subject summaries"
-    },
-    {
-      "id": "other.geography",
-      "title": "Geography",
-      "level": "sum",
-      "group": "Subject summaries"
+      "group": "Sciences and technology"
     },
     {
       "id": "other.psychology",
       "title": "Psychology",
       "level": "sum",
-      "group": "Subject summaries"
+      "group": "Sciences and technology"
     },
     {
-      "id": "other.sociology",
-      "title": "Sociology",
+      "id": "other.envm",
+      "title": "Environmental Management and Marine Science",
       "level": "sum",
-      "group": "Subject summaries"
+      "group": "Sciences and technology"
     },
     {
-      "id": "other.law",
-      "title": "Law",
+      "id": "other.furthermaths",
+      "title": "Further Mathematics",
       "level": "sum",
-      "group": "Subject summaries"
-    },
-    {
-      "id": "other.politics",
-      "title": "Politics, Global Perspectives and Thinking Skills",
-      "level": "sum",
-      "group": "Subject summaries"
-    },
-    {
-      "id": "other.languages",
-      "title": "Modern languages",
-      "level": "sum",
-      "group": "Subject summaries"
-    },
-    {
-      "id": "other.arts",
-      "title": "Art, Design, Music, Drama and Media",
-      "level": "sum",
-      "group": "Subject summaries"
+      "group": "Sciences and technology"
     },
     {
       "id": "other.pe",
       "title": "Physical Education",
       "level": "sum",
-      "group": "Subject summaries"
+      "group": "Sciences and technology"
+    },
+    {
+      "id": "other.english",
+      "title": "English Literature",
+      "level": "sum",
+      "group": "English and languages"
+    },
+    {
+      "id": "other.englang",
+      "title": "English Language",
+      "level": "sum",
+      "group": "English and languages"
+    },
+    {
+      "id": "other.languages",
+      "title": "Modern languages",
+      "level": "sum",
+      "group": "English and languages"
+    },
+    {
+      "id": "other.classics",
+      "title": "Classics and Latin",
+      "level": "sum",
+      "group": "English and languages"
+    },
+    {
+      "id": "other.history",
+      "title": "History",
+      "level": "sum",
+      "group": "Humanities and social sciences"
+    },
+    {
+      "id": "other.geography",
+      "title": "Geography",
+      "level": "sum",
+      "group": "Humanities and social sciences"
+    },
+    {
+      "id": "other.sociology",
+      "title": "Sociology",
+      "level": "sum",
+      "group": "Humanities and social sciences"
+    },
+    {
+      "id": "other.law",
+      "title": "Law",
+      "level": "sum",
+      "group": "Humanities and social sciences"
+    },
+    {
+      "id": "other.politics",
+      "title": "Politics and Government",
+      "level": "sum",
+      "group": "Humanities and social sciences"
     },
     {
       "id": "other.humanities",
-      "title": "Religious Studies, Philosophy and Classics",
+      "title": "Religious Studies and Philosophy",
       "level": "sum",
-      "group": "Subject summaries"
+      "group": "Humanities and social sciences"
+    },
+    {
+      "id": "other.global",
+      "title": "Global Perspectives, Thinking Skills and the EPQ",
+      "level": "sum",
+      "group": "Humanities and social sciences"
+    },
+    {
+      "id": "other.arts",
+      "title": "Art and Design",
+      "level": "sum",
+      "group": "Creative subjects"
+    },
+    {
+      "id": "other.music",
+      "title": "Music",
+      "level": "sum",
+      "group": "Creative subjects"
+    },
+    {
+      "id": "other.drama",
+      "title": "Drama and Theatre",
+      "level": "sum",
+      "group": "Creative subjects"
+    },
+    {
+      "id": "other.media",
+      "title": "Media and Film Studies",
+      "level": "sum",
+      "group": "Creative subjects"
     },
     {
       "id": "other.more",
-      "title": "Computing, environment and the rest",
+      "title": "More subjects at a glance",
       "level": "sum",
-      "group": "Subject summaries"
+      "group": "Creative subjects"
     }
   ],
-  "aliases": {},
-  "packages": [
-    {
-      "id": "P1",
-      "title": "Overview and the sciences-adjacent subjects",
-      "chapters": [
-        "other.overview",
-        "other.cs",
-        "other.psychology",
-        "other.pe",
-        "other.more"
-      ],
-      "widgets": [],
-      "notes": "Write other.overview last in this package so its table can link every chapter."
-    },
-    {
-      "id": "P2",
-      "title": "English and the humanities",
-      "chapters": [
-        "other.english",
-        "other.history",
-        "other.geography",
-        "other.sociology",
-        "other.law"
-      ],
-      "widgets": [],
-      "notes": ""
-    },
-    {
-      "id": "P3",
-      "title": "Politics, languages, arts and beliefs",
-      "chapters": [
-        "other.politics",
-        "other.languages",
-        "other.arts",
-        "other.humanities"
-      ],
-      "widgets": [],
-      "notes": ""
-    }
-  ]
+  "aliases": {}
 }

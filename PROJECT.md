@@ -10,10 +10,13 @@ Rebuild it with `node engine/build.js`.
 | Project Organizer | Opus | this folder (the project root) | engine, design, kits, hard problems, assembling and checking the whole site, commits |
 | `<Course>` Specialist | Opus | `courses/<c>` | **LEAD**: plans the course, writes the gold chapter. **REVIEW**: after every 2 Writer packages, and a final review |
 | `<Course>` Writer | Sonnet | `courses/<c>` | **WRITE**: one package of 2–3 chapters per chat, plus its widgets and number checks; several Writer chats can run at once (each claims a package) |
+| `<Course>` Reader | Sonnet | `courses/<c>` | **READER**: after every package is reviewed, reads the course in order as a beginner (6–8 chapters per chat) and files `(reader)` items in REVIEW.md where a student would get lost |
 
-Courses: `math`, `phys`, `chem`, `bio`, `eng`, `bus`, `econ`, `acc`, `other`.
-`other` has no Specialist: the Organizer planned it and a Writer does it. `eng` has no Cambridge syllabus,
-so its Specialist plans from the routes listed in its COURSE.md.
+Courses, in build order (re-planned 2026-10-15 to cover each syllabus in full): `math`, `phys`, `chem`, `bio`,
+`econ`, `bus`, `acc`, `eng`, `other`. Biology follows Chemistry so it can link chemistry chapters; Economics,
+Business and Accounting share topics, so their COURSE.md files say which course owns each one (Economics first).
+`eng` has no Cambridge syllabus, so its Specialist plans from the routes listed in its COURSE.md. `other` (summaries
+of other A Levels) has a Specialist too since the re-plan.
 
 Each course chat reads only its own folder. Its `CLAUDE.md` is loaded automatically and explains the three
 session types; `node kit/zta.js status` tells it what to do next. The copy-paste prompts are in **PROMPTS.md**.
@@ -44,7 +47,9 @@ start one, see PROMPTS.md.
 ## Recommended order
 1. Organizer O1–O3 (done): restructure, the redesign (approved and frozen) and the hand-off.
 2. Mathematics (done, classic method). Physics LEAD and P1–P6 were done by the agent method (2026-10-14).
-3. Then run courses one or two at a time, by either method. A Specialist REVIEW follows every two packages.
+3. Then run courses one or two at a time, in the build order above, by either method. A Specialist REVIEW follows
+   every two packages; when all are reviewed, Reader sessions read the course as a beginner, then FIX and REVIEW FINAL.
+   Maths and Physics get their READER pass too (`status` lists it).
 4. After a few packages, or when any REQUESTS.md has items, open an Organizer session to assemble: it builds
    and checks the site, answers requests, re-syncs the kits and commits.
 

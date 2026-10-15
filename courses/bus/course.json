@@ -22,6 +22,12 @@
       "group": "Start here"
     },
     {
+      "id": "bus.casestudy",
+      "title": "Case studies: reading, numbers and evaluation",
+      "level": "guide",
+      "group": "Start here"
+    },
+    {
       "id": "bus.enterprise",
       "title": "Enterprise",
       "level": "as",
@@ -94,6 +100,12 @@
       "group": "AS Level"
     },
     {
+      "id": "bus.capacity",
+      "title": "Capacity utilisation and outsourcing",
+      "level": "as",
+      "group": "AS Level"
+    },
+    {
       "id": "bus.finance",
       "title": "Business finance and sources of finance",
       "level": "as",
@@ -125,7 +137,19 @@
     },
     {
       "id": "bus.strategy",
-      "title": "Business strategy and strategic tools",
+      "title": "Strategic management and strategic analysis",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bus.choice",
+      "title": "Strategic choice",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bus.implementation",
+      "title": "Strategic implementation",
       "level": "a2",
       "group": "A Level (A2)"
     },
@@ -160,6 +184,18 @@
       "group": "A Level (A2)"
     },
     {
+      "id": "bus.lean",
+      "title": "Lean production and quality",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
+      "id": "bus.projects",
+      "title": "Project management and critical path analysis",
+      "level": "a2",
+      "group": "A Level (A2)"
+    },
+    {
       "id": "bus.accounts",
       "title": "Financial statements",
       "level": "a2",
@@ -182,6 +218,54 @@
       "title": "Writing top-band business answers",
       "level": "guide",
       "group": "Skills"
+    },
+    {
+      "id": "bus.exam.p12",
+      "title": "Papers 1 and 2: short answers, essays and data response",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "bus.exam.p34",
+      "title": "Papers 3 and 4: case studies",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "bus.mixed.as",
+      "title": "Mixed practice: AS",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "bus.mixed.a2",
+      "title": "Mixed practice: A Level",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "bus.mock.p1",
+      "title": "Mock Paper 1",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "bus.mock.p2",
+      "title": "Mock Paper 2",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "bus.mock.p3",
+      "title": "Mock Paper 3",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "bus.mock.p4",
+      "title": "Mock Paper 4",
+      "level": "mock",
+      "group": "Exam readiness"
     }
   ],
   "aliases": {},

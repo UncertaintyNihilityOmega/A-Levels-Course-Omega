@@ -25,121 +25,163 @@
       "id": "bio.cells",
       "title": "Cell structure",
       "level": "as",
-      "group": "AS Level"
+      "group": "Cells and molecules"
+    },
+    {
+      "id": "bio.microscopy",
+      "title": "Microscopy and magnification",
+      "level": "as",
+      "group": "Cells and molecules"
     },
     {
       "id": "bio.molecules",
-      "title": "Biological molecules",
+      "title": "Carbohydrates, lipids and water",
       "level": "as",
-      "group": "AS Level"
+      "group": "Cells and molecules"
+    },
+    {
+      "id": "bio.proteins",
+      "title": "Proteins",
+      "level": "as",
+      "group": "Cells and molecules"
     },
     {
       "id": "bio.enzymes",
       "title": "Enzymes",
       "level": "as",
-      "group": "AS Level"
+      "group": "Cells and molecules"
     },
     {
       "id": "bio.membranes",
       "title": "Cell membranes and transport",
       "level": "as",
-      "group": "AS Level"
+      "group": "Cells and molecules"
     },
     {
       "id": "bio.mitosis",
       "title": "The mitotic cell cycle",
       "level": "as",
-      "group": "AS Level"
+      "group": "Genetics at AS"
     },
     {
       "id": "bio.dna",
-      "title": "Nucleic acids and protein synthesis",
+      "title": "DNA structure and replication",
       "level": "as",
-      "group": "AS Level"
+      "group": "Genetics at AS"
+    },
+    {
+      "id": "bio.synthesis",
+      "title": "Protein synthesis and mutation",
+      "level": "as",
+      "group": "Genetics at AS"
     },
     {
       "id": "bio.planttransport",
       "title": "Transport in plants",
       "level": "as",
-      "group": "AS Level"
+      "group": "Transport and exchange"
     },
     {
       "id": "bio.mammaltransport",
-      "title": "Transport in mammals",
+      "title": "Blood vessels and blood",
       "level": "as",
-      "group": "AS Level"
+      "group": "Transport and exchange"
+    },
+    {
+      "id": "bio.heart",
+      "title": "The heart",
+      "level": "as",
+      "group": "Transport and exchange"
     },
     {
       "id": "bio.gasexchange",
       "title": "Gas exchange",
       "level": "as",
-      "group": "AS Level"
+      "group": "Transport and exchange"
     },
     {
       "id": "bio.disease",
       "title": "Infectious diseases",
       "level": "as",
-      "group": "AS Level"
+      "group": "Infection and immunity"
+    },
+    {
+      "id": "bio.antibiotics",
+      "title": "Antibiotics and resistance",
+      "level": "as",
+      "group": "Infection and immunity"
     },
     {
       "id": "bio.immunity",
       "title": "Immunity",
       "level": "as",
-      "group": "AS Level"
+      "group": "Infection and immunity"
     },
     {
       "id": "bio.respiration",
       "title": "Energy and respiration",
       "level": "a2",
-      "group": "A Level (A2)"
+      "group": "Energy"
     },
     {
       "id": "bio.photosynthesis",
       "title": "Photosynthesis",
       "level": "a2",
-      "group": "A Level (A2)"
+      "group": "Energy"
     },
     {
       "id": "bio.homeostasis",
       "title": "Homeostasis",
       "level": "a2",
-      "group": "A Level (A2)"
+      "group": "Control and coordination"
     },
     {
       "id": "bio.control",
-      "title": "Control and coordination",
+      "title": "Nerves, synapses and muscles",
       "level": "a2",
-      "group": "A Level (A2)"
+      "group": "Control and coordination"
+    },
+    {
+      "id": "bio.hormones",
+      "title": "Hormones and control in plants",
+      "level": "a2",
+      "group": "Control and coordination"
     },
     {
       "id": "bio.inheritance",
-      "title": "Inheritance",
+      "title": "Meiosis and inheritance",
       "level": "a2",
-      "group": "A Level (A2)"
+      "group": "Inheritance and evolution"
+    },
+    {
+      "id": "bio.genecontrol",
+      "title": "Control of gene expression",
+      "level": "a2",
+      "group": "Inheritance and evolution"
     },
     {
       "id": "bio.evolution",
       "title": "Selection and evolution",
       "level": "a2",
-      "group": "A Level (A2)"
+      "group": "Inheritance and evolution"
     },
     {
       "id": "bio.classification",
-      "title": "Classification, biodiversity and conservation",
+      "title": "Classification",
       "level": "a2",
-      "group": "A Level (A2)"
+      "group": "Ecology and genetic technology"
+    },
+    {
+      "id": "bio.ecology",
+      "title": "Biodiversity and conservation",
+      "level": "a2",
+      "group": "Ecology and genetic technology"
     },
     {
       "id": "bio.genetech",
       "title": "Genetic technology",
       "level": "a2",
-      "group": "A Level (A2)"
-    },
-    {
-      "id": "bio.ecology",
-      "title": "Ecosystems and nutrient cycles (UK boards)",
-      "level": "a2",
-      "group": "A Level (A2)"
+      "group": "Ecology and genetic technology"
     },
     {
       "id": "bio.stats",
@@ -149,9 +191,69 @@
     },
     {
       "id": "bio.practical",
-      "title": "Practical skills: microscopy, experiments and planning",
+      "title": "Practical skills (Paper 3)",
       "level": "guide",
       "group": "Skills"
+    },
+    {
+      "id": "bio.planning",
+      "title": "Planning, analysis and evaluation (Paper 5)",
+      "level": "guide",
+      "group": "Skills"
+    },
+    {
+      "id": "bio.exam.p1",
+      "title": "Paper 1: multiple choice",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "bio.exam.p24",
+      "title": "Papers 2 and 4: structured questions",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "bio.mixed.as",
+      "title": "Mixed practice: AS",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "bio.mixed.a2",
+      "title": "Mixed practice: A Level",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "bio.mock.p1",
+      "title": "Mock Paper 1",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "bio.mock.p2",
+      "title": "Mock Paper 2",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "bio.mock.p3",
+      "title": "Mock Paper 3",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "bio.mock.p4",
+      "title": "Mock Paper 4",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "bio.mock.p5",
+      "title": "Mock Paper 5",
+      "level": "mock",
+      "group": "Exam readiness"
     }
   ],
   "aliases": {},

@@ -13,73 +13,229 @@
       "id": "econ.overview",
       "title": "Economics: the course map",
       "level": "guide",
-      "group": "Economics"
+      "group": "Start here"
+    },
+    {
+      "id": "econ.f.basics",
+      "title": "Economics from zero: graphs, percentages and index numbers",
+      "level": "pre",
+      "group": "Start here"
+    },
+    {
+      "id": "econ.essays",
+      "title": "Writing economics: data response and essays",
+      "level": "guide",
+      "group": "Start here"
     },
     {
       "id": "econ.basics",
-      "title": "The basic economic problem",
+      "title": "Scarcity, choice and economic systems",
       "level": "as",
-      "group": "Economics"
+      "group": "AS microeconomics"
     },
     {
       "id": "econ.demand",
-      "title": "Demand, supply and prices",
+      "title": "Demand, supply and equilibrium",
       "level": "as",
-      "group": "Economics"
+      "group": "AS microeconomics"
     },
     {
       "id": "econ.elasticity",
       "title": "Elasticity",
       "level": "as",
-      "group": "Economics"
+      "group": "AS microeconomics"
+    },
+    {
+      "id": "econ.prices",
+      "title": "The price mechanism and welfare",
+      "level": "as",
+      "group": "AS microeconomics"
+    },
+    {
+      "id": "econ.failure",
+      "title": "Market failure",
+      "level": "as",
+      "group": "AS microeconomics"
     },
     {
       "id": "econ.intervention",
-      "title": "Market failure and government intervention",
-      "level": "as a2",
-      "group": "Economics"
+      "title": "Government intervention in markets",
+      "level": "as",
+      "group": "AS microeconomics"
+    },
+    {
+      "id": "econ.macro",
+      "title": "National income, aggregate demand and supply",
+      "level": "as",
+      "group": "AS macroeconomics"
+    },
+    {
+      "id": "econ.growth",
+      "title": "Economic growth",
+      "level": "as",
+      "group": "AS macroeconomics"
+    },
+    {
+      "id": "econ.unemployment",
+      "title": "Employment and unemployment",
+      "level": "as",
+      "group": "AS macroeconomics"
+    },
+    {
+      "id": "econ.inflation",
+      "title": "Inflation and deflation",
+      "level": "as",
+      "group": "AS macroeconomics"
+    },
+    {
+      "id": "econ.bop",
+      "title": "The balance of payments",
+      "level": "as",
+      "group": "AS macroeconomics"
+    },
+    {
+      "id": "econ.exchange",
+      "title": "Exchange rates",
+      "level": "as",
+      "group": "AS macroeconomics"
+    },
+    {
+      "id": "econ.trade",
+      "title": "International trade and protectionism",
+      "level": "as",
+      "group": "AS macroeconomics"
+    },
+    {
+      "id": "econ.policy",
+      "title": "Fiscal, monetary and supply-side policy",
+      "level": "as",
+      "group": "AS macroeconomics"
+    },
+    {
+      "id": "econ.utility",
+      "title": "Consumer behaviour and behavioural economics",
+      "level": "a2",
+      "group": "A Level microeconomics"
+    },
+    {
+      "id": "econ.costs",
+      "title": "Costs, revenue and profit",
+      "level": "a2",
+      "group": "A Level microeconomics"
     },
     {
       "id": "econ.firms",
-      "title": "Costs, revenue and market structures",
+      "title": "Market structures",
       "level": "a2",
-      "group": "Economics"
+      "group": "A Level microeconomics"
+    },
+    {
+      "id": "econ.growthfirms",
+      "title": "Growth and objectives of firms",
+      "level": "a2",
+      "group": "A Level microeconomics"
+    },
+    {
+      "id": "econ.efficiency",
+      "title": "Efficiency and government policy for markets",
+      "level": "a2",
+      "group": "A Level microeconomics"
     },
     {
       "id": "econ.labour",
       "title": "Labour markets",
       "level": "a2",
-      "group": "Economics"
+      "group": "A Level microeconomics"
     },
     {
-      "id": "econ.macro",
-      "title": "Measuring the macroeconomy: AD and AS",
-      "level": "as",
-      "group": "Economics"
+      "id": "econ.inequality",
+      "title": "Inequality and redistribution",
+      "level": "a2",
+      "group": "A Level microeconomics"
     },
     {
-      "id": "econ.growth",
-      "title": "Growth, unemployment and inflation",
-      "level": "as a2",
-      "group": "Economics"
+      "id": "econ.circular",
+      "title": "The circular flow and the multiplier",
+      "level": "a2",
+      "group": "A Level macroeconomics"
     },
     {
-      "id": "econ.policy",
-      "title": "Fiscal, monetary and supply-side policy",
-      "level": "as a2",
-      "group": "Economics"
+      "id": "econ.money",
+      "title": "Money, banking and interest rates",
+      "level": "a2",
+      "group": "A Level macroeconomics"
     },
     {
-      "id": "econ.trade",
-      "title": "Trade, the balance of payments and exchange rates",
-      "level": "as a2",
-      "group": "Economics"
+      "id": "econ.macro2",
+      "title": "Unemployment and inflation in depth",
+      "level": "a2",
+      "group": "A Level macroeconomics"
+    },
+    {
+      "id": "econ.policy2",
+      "title": "Macroeconomic policy: aims and conflicts",
+      "level": "a2",
+      "group": "A Level macroeconomics"
     },
     {
       "id": "econ.development",
-      "title": "Development and globalisation",
+      "title": "Economic development",
       "level": "a2",
-      "group": "Economics"
+      "group": "A Level macroeconomics"
+    },
+    {
+      "id": "econ.globalisation",
+      "title": "Globalisation and exchange rate policy",
+      "level": "a2",
+      "group": "A Level macroeconomics"
+    },
+    {
+      "id": "econ.exam.p13",
+      "title": "Papers 1 and 3: multiple choice",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "econ.exam.p24",
+      "title": "Papers 2 and 4: data response and essays",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "econ.mixed.as",
+      "title": "Mixed practice: AS",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "econ.mixed.a2",
+      "title": "Mixed practice: A Level",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "econ.mock.p1",
+      "title": "Mock Paper 1",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "econ.mock.p2",
+      "title": "Mock Paper 2",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "econ.mock.p3",
+      "title": "Mock Paper 3",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "econ.mock.p4",
+      "title": "Mock Paper 4",
+      "level": "mock",
+      "group": "Exam readiness"
     }
   ],
   "aliases": {},
