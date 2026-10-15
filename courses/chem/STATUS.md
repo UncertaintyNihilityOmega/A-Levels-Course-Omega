@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-16 · WRITE P3 · chem.bonding (7057 words) and chem.shapes (7921 words), both pass check and phone; widget chem-vsepr (3D VSEPR, presets and bp/lp, probed clean in light, dark, phone and bad attributes); generator and clearance checker for the shapes figures in data/mk_shapes_figs.py. Reviewer: shapes quotes b.p. values (hydrides, alkane isomers) and ice density 0.917 from memory, all asserted for ordering only in checks; the SF4 and ClF3 shapes and the see-saw/T-shaped table go slightly beyond the syllabus list (marked as unfamiliar species).
+Last: 2026-10-16 · FIX · atoms: sodium log(IE) sketch + Al try; moles: C,H,O by-difference combustion question; f.basics: dichromate and ionic-equation stretch question; checks extended
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -8,8 +8,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P1: reviewed 2026-10-16
 - P2: reviewed 2026-10-16
 - P3: written 2026-10-16
-- P4: writing 2026-10-16
-- P5: open
+- P4: written 2026-10-16
+- P5: writing 2026-10-16
 - P6: open
 - P7: open
 - P8: open
