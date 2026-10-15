@@ -404,7 +404,7 @@ With \(d = 3.33\,\mathrm{\mu m}\): third-order violet \(\sin\theta = 1200/3333 =
 :::
 
 :::board
-AQA and OCR use the same equations. AQA writes the double-slit equation as \(w = \lambda D/s\), with fringe width \(w\) and slit separation \(s\). AQA also uses the equation for the speed of a wave on a string, \(c = \sqrt{T/\mu}\), which Cambridge does not require.
+AQA writes the double-slit equation as \(w = \lambda D/s\), with fringe spacing \(w\) and slit separation \(s\); Cambridge writes \(\lambda = ax/D\). It is the same equation with different letters, so read the symbols in the question before you substitute.
 :::
 
 :::eg Spot the error: the distance between adjacent minima of a stationary microwave pattern is 1.4 cm. The speed of microwaves is \(3.00 \times 10^{8}\,\mathrm{m\,s^{-1}}\). Find the frequency.

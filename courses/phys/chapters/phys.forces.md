@@ -349,7 +349,7 @@ Name your pivot, draw the forces, and write one clear equation: "clockwise momen
 :::
 
 :::board
-AQA and OCR use "moment" and "couple" in the same way. Hydrostatic pressure and upthrust are in the Edexcel IAL and OCR specifications and appear less on AQA, so check yours. The equations are the same on every board.
+Cambridge prints \(\Delta p = \rho g \Delta h\) and the upthrust \(F = \rho g V\) on the data sheet, but the syllabus also asks you to derive \(\Delta p = \rho g \Delta h\) from the definitions of pressure and density, so learn where it comes from.
 :::
 
 :::eg Spot the error: a spanner is used with a force of 50 N applied at a point 0.30 m from the nut, at \(40^\circ\) to the spanner. Calculate the moment of the force about the nut.

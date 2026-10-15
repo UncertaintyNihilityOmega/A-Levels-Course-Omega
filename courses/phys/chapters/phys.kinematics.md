@@ -354,7 +354,7 @@ Try the simulation: change the angle and the speed, and watch the horizontal and
 :::
 
 :::board
-All boards teach the same kinematics. AQA and OCR use the same four equations, and some UK textbooks add a fifth, \(s = vt - \tfrac12 at^{2}\), which is the same as the third equation written from the final velocity.
+AQA prints all four equations of motion on its formula sheet. The Cambridge data sheet gives only \(s = ut + \tfrac12 at^{2}\) and \(v^{2} = u^{2} + 2as\), so recall \(v = u + at\) and \(s = \tfrac12(u + v)t\) yourself.
 :::
 
 :::eg Spot the error: a stone is thrown vertically upwards at \(12\,\mathrm{m\,s^{-1}}\) from the edge of a cliff 30 m above the sea. Find the time it takes to reach the sea.

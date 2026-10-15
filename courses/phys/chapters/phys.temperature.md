@@ -269,7 +269,7 @@ The difference \(m_1 - m_2\) is small, so a balance reading to 0.1 g matters: ta
 :::
 
 :::board
-AQA and OCR include the same content: the same definitions, temperature scales, specific heat capacity and latent heat. AQA writes the specific heat capacity equation as \(Q = mc\Delta\theta\) and describes the continuous-flow method of measuring \(c\) for a liquid; that method is not on the Cambridge syllabus.
+AQA writes the energy equations as \(Q = mc\Delta\theta\) and \(Q = ml\), always with \(Q\) for the energy transferred; this chapter writes \(E\) or \(Q\), as Cambridge papers do. The definitions of specific heat capacity and specific latent heat are the same.
 :::
 
 :::eg Spot the error: 2.0 kg of water is heated through 15 °C. Calculate the energy needed. (\(c = 4200\,\mathrm{J\,kg^{-1}\,K^{-1}}\))

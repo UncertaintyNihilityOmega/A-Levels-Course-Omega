@@ -443,7 +443,7 @@ You have now met two fields that obey inverse-square laws. Everything that you l
 Gravitational fields cannot be screened, because there is no negative mass to cancel them. Electric fields can be, which is why a metal box shields its contents from an external electric field.
 
 :::board
-AQA and OCR use the same Coulomb law and the same definition of electric potential as Cambridge. Many textbooks shorten \(1/(4\pi\varepsilon_0)\) to \(k\) and write \(F = kQ_1Q_2/r^2\); on a Cambridge paper write \(1/(4\pi\varepsilon_0)\) or use its value \(8.99 \times 10^{9}\,\mathrm{m\,F^{-1}}\), because \(k\) is the Boltzmann constant on the data sheet.
+Many textbooks shorten \(1/(4\pi\varepsilon_0)\) to \(k\) and write \(F = kQ_1Q_2/r^2\); on a Cambridge paper write \(1/(4\pi\varepsilon_0)\) or use its value \(8.99 \times 10^{9}\,\mathrm{m\,F^{-1}}\), because \(k\) is the Boltzmann constant on the data sheet.
 :::
 
 :::eg Spot the error: find the electric field strength at the midpoint between a charge of \(+5.0\,\mathrm{nC}\) and a charge of \(-5.0\,\mathrm{nC}\), which are \(0.40\,\mathrm{m}\) apart.

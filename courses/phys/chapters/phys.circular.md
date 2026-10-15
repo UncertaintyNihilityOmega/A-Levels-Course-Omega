@@ -302,7 +302,7 @@ At \(15\,\mathrm{m\,s^{-1}}\) the passengers feel lighter, because the road push
 Two later chapters need only the equation you have just met. A charged particle of charge \(q\) moving at speed \(v\) at right angles to a magnetic field of flux density \(B\) feels a force \(Bqv\) at right angles to its velocity, so it moves in a circle with \(Bqv = mv^2/r\). An electron of speed \(2.0 \times 10^{7}\,\mathrm{m\,s^{-1}}\) in a field of \(1.0\,\mathrm{mT}\) moves on a circle of radius \(r = mv/(Be) = 0.11\,\mathrm{m}\) (more in [Magnetic fields](#phys.magnetic)). A satellite orbits because the Earth's gravitational pull is the centripetal force: the whole of [Gravitational fields](#phys.gravity) is this chapter with a particular force in place of \(F\).
 
 :::board
-Cambridge, AQA, Edexcel IAL and OCR all teach circular motion with the same equations. Some textbooks write \(\omega = v/r\) first and \(v = r\omega\) second; they are the same equation. UK specifications use "centripetal force" and "centripetal acceleration" in the same way as above.
+AQA teaches circular motion with the same equations, and its formula sheet prints them (\(\omega = v/r\), \(a = v^2/r = \omega^2 r\), \(F = mv^2/r\)). On a Cambridge paper they are not on the data sheet: recall \(v = r\omega\) and \(a = v^2/r = r\omega^2\) yourself.
 :::
 
 :::eg Spot the error: a turntable of radius 0.15 m turns at 33 revolutions per minute. Calculate the speed of a point on its edge.

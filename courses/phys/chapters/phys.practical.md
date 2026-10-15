@@ -421,6 +421,8 @@ The substitution in line 2 is correct, so the method mark stays. [C1] **Line 1 i
 Correct working: use two points on the line, far apart, such as \((1.0, 13.3)\) and \((6.0, 17.3)\): gradient \(= 4.0/5.0 = 0.80\,\mathrm{cm\,N^{-1}}\), so \(k = 1.25\,\mathrm{N\,cm^{-1}}\). [A1]
 :::
 
+**Your mock paper.** Paper 3 is done in a laboratory, so the [Mock paper: Paper 3 practical skills (written)](#phys.mock.p3) gives you the readings instead: you table them, plot the graph, find the gradient and intercept, estimate the uncertainties and evaluate the method, in 2 hours for 40 marks. Sit it when you have finished this chapter, then mark it against the scheme and take any real past Paper 3 you can do in a laboratory.
+
 :::try Start easy, finish at exam standard
 Q: Give the resolution of a millimetre rule, a micrometer, and a digital stopwatch.
 A: Millimetre rule: \(1\,\mathrm{mm}\). Micrometer: \(0.01\,\mathrm{mm}\). Digital stopwatch: \(0.01\,\mathrm{s}\) (but a hand timing is uncertain by about the reaction time, \(0.1\)–\(0.2\,\mathrm{s}\)).

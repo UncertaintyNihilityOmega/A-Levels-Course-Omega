@@ -117,7 +117,7 @@ When a nucleus decays by emitting an α-particle, only two bodies are produced, 
 
 :::eg A stationary radium-226 nucleus decays by α emission into radon-222. Show that the α-particle takes about 98% of the kinetic energy released. Use nucleon numbers in place of masses.
 The nucleus is at rest, so the total momentum afterwards is zero. The α-particle (mass 4) and the radon nucleus (mass 222) have equal and opposite momenta of magnitude \(p\). [B1]
-Kinetic energy is \(E_k = p^{2}/2m\), so for the same \(p\), \(E_k \propto 1/m\). The α-particle has the smaller mass, so it takes the larger share. The ratio of energies is \(E_\alpha/E_\text{Rn} = 222/4 = 55.5\). [C1]
+Kinetic energy is \(E_K = p^{2}/2m\), so for the same \(p\), \(E_K \propto 1/m\). The α-particle has the smaller mass, so it takes the larger share. The ratio of energies is \(E_\alpha/E_\text{Rn} = 222/4 = 55.5\). [C1]
 \[\text{fraction taken by } \alpha = \frac{222}{222 + 4} = 0.98\] [A1]
 Because the fraction is fixed, every α-particle from this decay has the same energy.
 :::
@@ -263,7 +263,7 @@ Charge before: \(0\). Charge after: \(+1\) (proton) \(+ (-1)\) (electron) \(+ 0\
 :::
 
 :::board
-AQA and OCR teach a wider particle zoo: strangeness, lepton number, baryon number and Feynman diagrams. Cambridge asks only for the six quarks, their charges, hadrons (baryons and mesons), leptons, and the quark changes in β decay. If your specification asks for conservation of lepton or baryon number, use that language there; here, conservation of charge and nucleon number is enough.
+AQA teaches a wider particle zoo, with strangeness, lepton number and baryon number. Cambridge asks only for the six quarks, their charges, hadrons (baryons and mesons), leptons, and the quark changes in β decay. If your specification asks for conservation of lepton or baryon number, use that language there; here, conservation of charge and nucleon number is enough.
 :::
 
 :::eg Spot the error: complete the equation for the β⁻ decay of carbon-14.
@@ -334,7 +334,7 @@ A: (a) \(+\tfrac23 + \tfrac13\) [C1] \(= +1\). [A1] (b) It has one quark and one
 Q: [6 marks] ★★★ A 5.0 MeV α-particle is fired directly at a gold nucleus (79 protons). The α-particle stops momentarily at its distance of closest approach and then rebounds. (a) Show that its kinetic energy is \(8.0 \times 10^{-13}\,\mathrm{J}\). (b) Use energy conservation to estimate the distance of closest approach. The electric potential energy of two charges is \(\dfrac{Q_1 Q_2}{4\pi\varepsilon_0 r}\), with \(\dfrac{1}{4\pi\varepsilon_0} = 8.99 \times 10^{9}\,\mathrm{m\,F^{-1}}\). (c) The radius of a gold nucleus is about \(7 \times 10^{-15}\,\mathrm{m}\). Comment on your answer.
 H: \(1\,\mathrm{eV} = 1.60 \times 10^{-19}\,\mathrm{J}\), so \(1\,\mathrm{MeV} = 1.60 \times 10^{-13}\,\mathrm{J}\).
 H: At closest approach all the kinetic energy has become electric potential energy. The charges are \(2e\) and \(79e\).
-A: (a) \(E_k = 5.0 \times 1.60 \times 10^{-13}\) [C1] \(= 8.0 \times 10^{-13}\,\mathrm{J}\). [A1] (b) \(\dfrac{(2e)(79e)}{4\pi\varepsilon_0 r} = 8.0 \times 10^{-13}\) [M1] so
+A: (a) \(E_K = 5.0 \times 1.60 \times 10^{-13}\) [C1] \(= 8.0 \times 10^{-13}\,\mathrm{J}\). [A1] (b) \(\dfrac{(2e)(79e)}{4\pi\varepsilon_0 r} = 8.0 \times 10^{-13}\) [M1] so
 \[r = \frac{8.99 \times 10^{9} \times 2 \times 79 \times (1.60 \times 10^{-19})^{2}}{8.0 \times 10^{-13}} = 4.5 \times 10^{-14}\,\mathrm{m}\] [A1]
 (c) This is about six times the nuclear radius, so the α-particle stays outside the nucleus. [B1] The nucleus must therefore be smaller than \(4.5 \times 10^{-14}\,\mathrm{m}\), which supports the conclusion that it is very small. [B1]
 Q: [4 marks] ★★★ Decide whether each of these nuclear reactions conserves both charge and nucleon number, and identify any that does not. (i) \(^{239}_{\;93}\mathrm{Np} \rightarrow {}^{239}_{\;94}\mathrm{Pu} + {}^{\;0}_{-1}\mathrm{e} + \bar{\nu}\). (ii) \(^{15}_{\;8}\mathrm{O} \rightarrow {}^{15}_{\;7}\mathrm{N} + {}^{\;0}_{+1}\mathrm{e} + \nu\). (iii) \(^{210}_{\;84}\mathrm{Po} \rightarrow {}^{206}_{\;82}\mathrm{Pb} + {}^{4}_{2}\alpha\). (iv) \(^{238}_{\;92}\mathrm{U} \rightarrow {}^{236}_{\;90}\mathrm{Th} + {}^{4}_{2}\alpha\).

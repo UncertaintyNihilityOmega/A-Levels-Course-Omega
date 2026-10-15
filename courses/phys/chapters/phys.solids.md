@@ -295,7 +295,7 @@ The graph is not a straight line, so use the area under it. Split it into five s
 For a wire, stress is force per area and strain is extension per length, so the energy per unit volume works out as \(\tfrac12 \sigma\varepsilon\). You may see this, but Cambridge does not require it.
 
 :::board
-AQA and OCR also use the terms "yield point", "breaking stress" and "ultimate tensile strength", and AQA expects the energy per unit volume \(\tfrac12 \sigma\varepsilon\). The Cambridge syllabus needs only the terms in this chapter. All boards agree on Hooke's law, the Young modulus and \(\tfrac12 Fx\).
+AQA also uses the term "breaking stress", the greatest stress a material can take before it breaks. The Cambridge syllabus needs only the terms in this chapter; Hooke's law, the Young modulus and \(\tfrac12 Fx\) are the same.
 :::
 
 :::exam Describing the Young modulus experiment

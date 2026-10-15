@@ -381,6 +381,15 @@ Starting with no vertical velocity, the deflection is
 This is 3.0 mm, less than half the plate separation (10 mm), so the electron does leave the plates. This is projectile motion again, with the electric force in place of the weight.
 :::
 
+## Your mock papers
+
+Two original papers in the style of the real ones let you practise everything in this guide against the clock:
+
+- [Mock paper: Paper 2 AS structured questions](#phys.mock.p2): the AS topics, 60 marks in 1 hour 15 minutes.
+- [Mock paper: Paper 4 A Level structured questions](#phys.mock.p4): the A Level topics with AS ideas used throughout, 100 marks in 2 hours.
+
+Sit each one in one go, with a calculator and no notes: the page runs a clock and hides the mark scheme until you press Finish. Then mark your script against the scheme as an examiner would: a C1 for the method shown, an A1 only for the right answer with its unit, one B1 per link in an explanation. Enter your mark for each question, and use the "Revise" link under each answer to go back to the right chapter. Sit the Paper 2 mock after [Mixed practice: AS Level](#phys.mixed.as) and the Paper 4 mock after [Mixed practice: A Level](#phys.mixed.a2).
+
 ## Check yourself: exam technique
 
 :::quiz Which answer would score full marks?

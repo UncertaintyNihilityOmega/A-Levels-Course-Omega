@@ -356,7 +356,7 @@ In "calculate the speed" questions, write the energy equation in words first: "l
 :::
 
 :::board
-All the specifications cover the same content. Some UK specifications write the work done as \(W = Fs\cos\theta\) explicitly and give efficiency and power in the same forms; the Cambridge syllabus asks you to derive \(P = Fv\), \(\Delta E_\mathrm{P} = mg\Delta h\) and \(E_\mathrm{K} = \tfrac12 mv^2\).
+The Cambridge syllabus asks you to derive \(\Delta E_\mathrm{P} = mg\Delta h\) from \(W = Fs\), \(E_\mathrm{K} = \tfrac12 mv^2\) from the equations of motion, and \(P = Fv\) from \(P = W/t\). These derivations can be asked for on their own, so learn them as well as the formulae.
 :::
 
 :::eg Spot the error: a lawnmower is pushed 15 m across a lawn by a force of 90 N directed 40° below the horizontal. Calculate the work done by the person.

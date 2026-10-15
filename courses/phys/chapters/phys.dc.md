@@ -330,7 +330,7 @@ If the galvanometer deflects the same way wherever the jockey touches, either th
 :::
 
 :::board
-Edexcel IAL, AQA and OCR all teach e.m.f., internal resistance, Kirchhoff's laws and potential dividers with sensors, with the same equations. The slide-wire potentiometer and galvanometer null methods are part of the Cambridge syllabus; most UK specifications do not require them, so check your own specification. Some UK textbooks call the lost volts the "lost p.d." and write \(\varepsilon\) for e.m.f. instead of \(E\).
+The slide-wire potentiometer and the galvanometer null method are part of the Cambridge 9702 syllabus (outcomes 10.3.2 and 10.3.3), so they can be examined: know how a balance length compares two p.d.s and why no current flows in the galvanometer at balance. Some textbooks write \(\varepsilon\) for e.m.f. instead of \(E\); the physics is the same.
 :::
 
 :::eg Spot the error: a battery of e.m.f. 6.0 V and internal resistance 0.50 Ω is connected to a 2.5 Ω resistor. Calculate the terminal p.d.

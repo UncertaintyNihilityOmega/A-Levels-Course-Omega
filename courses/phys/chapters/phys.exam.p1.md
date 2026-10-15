@@ -299,11 +299,15 @@ Spend about 45 minutes a day. Keep an **error log**: for each question you miss,
 | 8–9 | [Electricity](#phys.electricity), [D.C. circuits](#phys.dc) | circuit questions (technique 8); definitions (technique 6) |
 | 10 | [Particle physics](#phys.particles) | quark and decay questions (technique 10) |
 | 11 | your error log | redo every question you missed, without looking at the answer |
-| 12 | a full paper, timed: 40 questions in 75 minutes | follow the two-pass plan; mark flagged questions |
+| 12 | a full paper, timed: 40 questions in 75 minutes (the [mock Paper 1](#phys.mock.p1) or a past paper) | follow the two-pass plan; mark flagged questions |
 | 13 | review of the full paper | add every slip to the error log; fix the weakest topic |
 | 14 | light review | read the error log and the traps table; stop early |
 
 Past Paper 1 questions are the best material once you have worked through the chapters (see the links below). When you have finished the Paper 1 plan, go to [Papers 2 and 4: structured questions](#phys.exam.p24).
+
+## Your mock paper
+
+[Mock paper: Paper 1 multiple choice](#phys.mock.p1) is an original 40-question paper on all the AS topics, in the style of the real Paper 1. Sit it in one go, in 1 hour 15 minutes, with a calculator and no notes: the page runs a clock and hides the key until you press Finish. Then mark it, note every miss in your error log, and use the "Revise" link under each answer to go back to the right chapter. Save it for day 12 of the plan, so it tests you rather than teaches you.
 
 ## Check yourself: ten Paper 1 style questions
 

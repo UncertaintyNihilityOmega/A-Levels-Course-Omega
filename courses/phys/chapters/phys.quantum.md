@@ -387,7 +387,7 @@ So the rings move closer to the centre: their radii decrease. [B1]
 :::
 
 :::warn Momentum, not energy
-In \(\lambda = h/p\), \(p\) is the **momentum**. If you know the kinetic energy \(E_k\), find \(p = \sqrt{2mE_k}\) first. Using \(h/E_k\) gives a wavelength with the wrong unit.
+In \(\lambda = h/p\), \(p\) is the **momentum**. If you know the kinetic energy \(E_K\), find \(p = \sqrt{2mE_K}\) first. Using \(h/E_K\) gives a wavelength with the wrong unit.
 :::
 
 ## Energy levels and line spectra
@@ -476,12 +476,12 @@ AQA's specification names the **stopping potential** in its photoelectric-effect
 :::eg Spot the error: calculate the de Broglie wavelength of an electron accelerated from rest through 150 V.
 A student wrote this answer.
 
-Line 1: kinetic energy \(E_k = eV = 1.60 \times 10^{-19} \times 150 = 2.4 \times 10^{-17}\,\mathrm{J}\)
-Line 2: \(\lambda = \dfrac{h}{E_k} = \dfrac{6.63 \times 10^{-34}}{2.4 \times 10^{-17}} = 2.8 \times 10^{-17}\,\mathrm{m}\)
+Line 1: kinetic energy \(E_K = eV = 1.60 \times 10^{-19} \times 150 = 2.4 \times 10^{-17}\,\mathrm{J}\)
+Line 2: \(\lambda = \dfrac{h}{E_K} = \dfrac{6.63 \times 10^{-34}}{2.4 \times 10^{-17}} = 2.8 \times 10^{-17}\,\mathrm{m}\)
 
 Line 1 is correct. [C1] **Line 2 is wrong: the de Broglie formula uses the momentum \(p\), not the energy.** The answer mark is lost. [A0]
 
-Correct working: \(p = \sqrt{2mE_k} = \sqrt{2 \times 9.11 \times 10^{-31} \times 2.4 \times 10^{-17}} = 6.61 \times 10^{-24}\,\mathrm{kg\,m\,s^{-1}}\), so \(\lambda = h/p = 1.0 \times 10^{-10}\,\mathrm{m}\). [A1]
+Correct working: \(p = \sqrt{2mE_K} = \sqrt{2 \times 9.11 \times 10^{-31} \times 2.4 \times 10^{-17}} = 6.61 \times 10^{-24}\,\mathrm{kg\,m\,s^{-1}}\), so \(\lambda = h/p = 1.0 \times 10^{-10}\,\mathrm{m}\). [A1]
 
 Check: a wavelength of \(10^{-17}\,\mathrm{m}\) is far smaller than a nucleus, so it should have looked wrong immediately.
 :::
@@ -534,9 +534,9 @@ A: (a) gradient \(= \dfrac{(1.84 - 0.19) \times 1.60 \times 10^{-19}}{(10.0 - 6.
 
 :::try Stretch for A*
 Q: [6 marks] ★★★ A photon and an electron both have a wavelength of 0.10 nm. (a) Show that their momenta are equal and calculate it. (b) Calculate the energy of the photon, in keV. (c) Calculate the kinetic energy of the electron, in eV. (d) Suggest why electrons are better than X-rays for probing very small structures with a short wavelength, if energy damage is to be small.
-H: Both obey \(p = h/\lambda\), so the momenta match. For the electron use \(E_k = p^2/2m\).
+H: Both obey \(p = h/\lambda\), so the momenta match. For the electron use \(E_K = p^2/2m\).
 H: For (d), compare the energies delivered to the sample for the same wavelength.
-A: (a) For both, \(p = h/\lambda\) [M1] \(= \dfrac{6.63 \times 10^{-34}}{0.10 \times 10^{-9}} = 6.6 \times 10^{-24}\,\mathrm{kg\,m\,s^{-1}}\), so the momenta are equal. [A1] (b) \(E = pc = 6.63 \times 10^{-24} \times 3.00 \times 10^{8} = 1.99 \times 10^{-15}\,\mathrm{J}\) [C1] \(= 12.4\,\mathrm{keV}\). [A1] (c) \(E_k = \dfrac{p^2}{2m} = \dfrac{(6.63 \times 10^{-24})^2}{2 \times 9.11 \times 10^{-31}} = 2.41 \times 10^{-17}\,\mathrm{J} = 151\,\mathrm{eV}\). [A1] (d) For the same wavelength (and so the same detail), the electron carries about 80 times less energy than the photon, so electrons deposit much less energy in the sample. [B1]
+A: (a) For both, \(p = h/\lambda\) [M1] \(= \dfrac{6.63 \times 10^{-34}}{0.10 \times 10^{-9}} = 6.6 \times 10^{-24}\,\mathrm{kg\,m\,s^{-1}}\), so the momenta are equal. [A1] (b) \(E = pc = 6.63 \times 10^{-24} \times 3.00 \times 10^{8} = 1.99 \times 10^{-15}\,\mathrm{J}\) [C1] \(= 12.4\,\mathrm{keV}\). [A1] (c) \(E_K = \dfrac{p^2}{2m} = \dfrac{(6.63 \times 10^{-24})^2}{2 \times 9.11 \times 10^{-31}} = 2.41 \times 10^{-17}\,\mathrm{J} = 151\,\mathrm{eV}\). [A1] (d) For the same wavelength (and so the same detail), the electron carries about 80 times less energy than the photon, so electrons deposit much less energy in the sample. [B1]
 Q: [6 marks] ★★★ A laser of power 20 W and wavelength 532 nm is directed straight at a small, perfectly reflecting mirror, which reflects the beam straight back. (a) Calculate the number of photons reaching the mirror per second. (b) Show that the force on the mirror is \(2P/c\) and calculate it. (c) Calculate the greatest mass the light could support against gravity.
 H: Each photon's momentum changes from \(+p\) to \(-p\).
 H: Use the acceleration of free fall, \(g = 9.81\,\mathrm{m\,s^{-2}}\).

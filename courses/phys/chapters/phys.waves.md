@@ -453,7 +453,7 @@ The angle in the second step is between the **axes of the two filters**, which i
 The syllabus does not ask you to calculate what a filter does to **unpolarised** light. (For reference, an ideal filter passes half of the intensity of unpolarised light and polarises what it passes.)
 
 :::board
-Cambridge examines Malus's law only for light that is already plane polarised. Edexcel IAL and AQA also state that an ideal filter halves the intensity of unpolarised light, which Cambridge does not examine. AQA and OCR treat the Doppler effect for light (\(\Delta f / f = v/c\)) in their astrophysics options; Cambridge AS covers only sound with a moving source.
+Cambridge examines Malus's law only for light that is already plane polarised: the effect of a filter on unpolarised light is not required. The Doppler effect at AS is for sound from a moving source; the Doppler shift of light, \(\Delta\lambda/\lambda \approx v/c\), comes at A Level in [Astronomy and cosmology](#phys.astro).
 :::
 
 :::eg Spot the error: an ambulance siren of frequency 700 Hz approaches a stationary observer at \(25\,\mathrm{m\,s^{-1}}\). The speed of sound is \(340\,\mathrm{m\,s^{-1}}\). Find the observed frequency.

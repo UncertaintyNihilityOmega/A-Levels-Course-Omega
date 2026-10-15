@@ -317,7 +317,7 @@ The mass \(m\) cancelled, so the escape speed is the same for a grain of sand an
 :::
 
 :::board
-AQA writes the gravitational potential as \(V_\text{grav} = -GM/r\) and gives \(g = -\Delta V/\Delta r\) explicitly; Edexcel IAL and OCR use the same results with their own symbols. The content is the same as in Cambridge.
+AQA writes the gravitational potential as \(V = -GM/r\), where Cambridge writes \(\phi\), and gives \(g = -\Delta V/\Delta r\) explicitly on its formula sheet. The physics is the same as in Cambridge.
 :::
 
 :::eg Spot the error: calculate the gravitational force on a satellite of mass 1000 kg when it is 600 km above the surface of the Earth. Use \(M = 5.97 \times 10^{24}\,\mathrm{kg}\) and \(R = 6.37 \times 10^{6}\,\mathrm{m}\).

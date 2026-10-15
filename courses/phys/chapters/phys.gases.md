@@ -303,7 +303,7 @@ The speed increases by a factor of 1.41. Using the Celsius numbers instead (327/
 :::
 
 :::board
-AQA and OCR use the same equations and assumptions, including \(pV = \tfrac13 Nm\langle c^2\rangle\) and \(\tfrac32 kT\). AQA also asks for the historical development of the gas laws and for Brownian motion as evidence for molecular motion. Some specifications write the mean-square speed as \(\overline{c^2}\).
+AQA uses the same equations and assumptions, including \(pV = \tfrac13 Nm\langle c^2\rangle\) and \(\tfrac32 kT\), and also asks for Brownian motion as evidence for molecules, which Cambridge does not. Some textbooks write the mean-square speed as \(\overline{c^2}\).
 :::
 
 :::eg Spot the error: a flask of volume \(5.0 \times 10^{-3}\,\mathrm{m^3}\) contains 0.20 mol of an ideal gas at 27 °C. Calculate the pressure.

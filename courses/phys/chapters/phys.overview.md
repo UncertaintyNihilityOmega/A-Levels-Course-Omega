@@ -101,6 +101,11 @@ The syllabus has 25 topics. Topics 1 to 11 are AS and topics 12 to 25 are A Leve
 | [Papers 2 and 4 survival guide: structured questions](#phys.exam.p24) | how to read, set out and mark-hunt in long questions | 2, 4 |
 | [Mixed practice: AS Level](#phys.mixed.as) | questions that mix AS topics, as exams do | 1, 2 |
 | [Mixed practice: A Level](#phys.mixed.a2) | questions that mix A Level topics with AS ones | 4 |
+| [Mock paper: Paper 1 multiple choice](#phys.mock.p1) | a timed 40-question AS paper; see the mock section of the [Paper 1 guide](#phys.exam.p1) | 1 |
+| [Mock paper: Paper 2 AS structured questions](#phys.mock.p2) | a timed 60-mark AS paper; see the mock section of the [Papers 2 and 4 guide](#phys.exam.p24) | 2 |
+| [Mock paper: Paper 3 practical skills (written)](#phys.mock.p3) | supplied readings to table, graph and evaluate; see the mock note in [Practical skills](#phys.practical) | 3 |
+| [Mock paper: Paper 4 A Level structured questions](#phys.mock.p4) | a timed 100-mark A Level paper; see the mock section of the [Papers 2 and 4 guide](#phys.exam.p24) | 4 |
+| [Mock paper: Paper 5 planning, analysis and evaluation](#phys.mock.p5) | a plan and a data analysis, timed; see the mock note in [Planning, analysis and evaluation](#phys.planning) | 5 |
 
 Each topic chapter follows the same shape: a warm-up, short sections that build from the idea to exam depth, worked examples with marks, practice from easy to hard, an A\* stretch, a quiz and a checklist. Your progress through the checklists is shown under "Study order and pace" below.
 
@@ -127,10 +132,10 @@ Follow the order in the tables above. Each chapter assumes the ones before it, a
 | 10–13 | [Waves](#phys.waves), [Superposition](#phys.superposition) |
 | 14–16 | [Electricity](#phys.electricity), [D.C. circuits](#phys.dc) |
 | 17 | [Particle physics](#phys.particles) |
-| 18–20 | AS revision, [Mixed practice: AS Level](#phys.mixed.as), the Paper 1 and Paper 2 guides, timed past papers |
+| 18–20 | AS revision, [Mixed practice: AS Level](#phys.mixed.as), the Paper 1 and Paper 2 guides, the [Paper 1](#phys.mock.p1), [Paper 2](#phys.mock.p2) and [Paper 3](#phys.mock.p3) mocks, timed past papers |
 | 21–29 | [Motion in a circle](#phys.circular) to [Electric fields](#phys.efields): circular motion, gravity, thermal physics, oscillations, electric fields |
 | 30–39 | [Capacitance](#phys.capacitance) to [Astronomy and cosmology](#phys.astro): capacitors, magnetic fields, induction, quantum, nuclear, medical, astronomy; [Planning, analysis and evaluation](#phys.planning) alongside |
-| 40–44 | A Level revision, [Mixed practice: A Level](#phys.mixed.a2), the Paper 4 guide, timed past papers |
+| 40–44 | A Level revision, [Mixed practice: A Level](#phys.mixed.a2), the Paper 4 guide, the [Paper 4](#phys.mock.p4) and [Paper 5](#phys.mock.p5) mocks, timed past papers |
 
 Within a chapter, work through it in order: read a section, try its examples yourself before reading the working, then do the practice questions without looking at the answers. Reread anything that you got wrong a day later, then a week later.
 

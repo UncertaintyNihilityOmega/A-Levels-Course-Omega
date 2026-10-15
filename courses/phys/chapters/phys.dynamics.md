@@ -447,7 +447,7 @@ Do not assume kinetic energy is conserved. Only a collision described as **elast
 :::
 
 :::board
-AQA and OCR use the term "impulse" explicitly (impulse = \(F\Delta t\) = change of momentum) and examine areas under force–time graphs; Cambridge states force as the rate of change of momentum, which gives the same physics. All boards: the same three Newton's laws and conservation of momentum, including collisions in two dimensions.
+AQA uses the term "impulse" explicitly (impulse = \(F\Delta t\) = change of momentum) and examines it as the area under a force–time graph; Cambridge states force as the rate of change of momentum, which gives the same physics.
 :::
 
 :::eg Spot the error: a 0.15 kg ball hits a wall at \(20\,\mathrm{m\,s^{-1}}\) and rebounds at \(15\,\mathrm{m\,s^{-1}}\). The contact time is 0.010 s. Calculate the average force on the ball.

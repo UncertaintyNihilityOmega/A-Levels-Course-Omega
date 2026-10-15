@@ -331,6 +331,8 @@ Do the parts in the order the question sets them, and show each stage on its own
 AQA (7408) has no separate planning paper like Paper 5: it tests planning, data analysis and uncertainty through written questions inside its exam papers. The skills in this chapter carry over; the question style does not.
 :::
 
+**Your mock paper.** The [Mock paper: Paper 5 planning, analysis and evaluation](#phys.mock.p5) is an original Paper 5: a plan in an unfamiliar context, then a data set to analyse with error bars, a worst acceptable line and uncertainties, in 1 hour 15 minutes for 30 marks. Sit it in one go when you have finished this chapter, then mark it against the scheme and use the "Revise" links to go back to the sections you need.
+
 :::try Start easy, finish at exam standard
 Q: A student investigates how the period of a pendulum depends on its length. State the independent variable, the dependent variable, and one variable to be kept constant.
 A: Independent: the length \(l\). Dependent: the period \(T\). Control: the mass of the bob (or the amplitude of the swing).

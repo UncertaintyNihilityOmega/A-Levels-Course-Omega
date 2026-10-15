@@ -382,7 +382,7 @@ A common question says "explain why the resistance of a thermistor decreases whe
 Both sensors become really useful in a **potential divider**, which turns a change in resistance into a change in p.d. That is the topic of [D.C. circuits](#phys.dc).
 
 :::board
-AQA also teaches superconductivity (a material whose resistivity becomes zero below its critical temperature); Cambridge does not. OCR A writes the drift-speed equation as \(I = Anev\), with the carriers taken to be electrons. The physics is the same.
+AQA also teaches superconductivity (a material whose resistivity becomes zero below its critical temperature); Cambridge does not.
 :::
 
 :::eg Spot the error: the I–V graph of a filament lamp is a curve. At the point V = 6.0 V, I = 0.25 A, the tangent has gradient 0.025 A V⁻¹. Calculate the resistance of the lamp at this point.

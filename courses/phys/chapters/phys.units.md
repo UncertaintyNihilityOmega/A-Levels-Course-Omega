@@ -447,7 +447,7 @@ Correct working: \(\Delta = 0.5 + 0.4 = 0.9\,\mathrm{cm}\), so the difference is
 :::
 
 :::board
-AQA, OCR and Edexcel IAL teach the same SI system, the same prefixes and the same meanings of systematic error, random error, precision and accuracy. UK boards also usually combine uncertainties at A Level by simple addition, as above.
+The Cambridge syllabus combines uncertainties by simple addition of absolute or percentage uncertainties, as above. You are never asked to combine them in quadrature (the square root of the sum of squares), which some university courses use.
 :::
 
 ## Scalars and vectors
