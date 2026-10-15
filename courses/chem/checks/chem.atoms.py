@@ -185,4 +185,12 @@ same("Mg and Be outer shell electrons", (by_sym['Mg']['z'] - 10, by_sym['Be']['z
 # bar chart heights (chart: 12000 -> 190 px)
 for v, h in ((577, 9.1), (1820, 28.8), (2740, 43.4), (11600, 183.7)):
     eq(f"bar {v}", round(v / 12000 * 190, 1), h)
+# ---- sodium sketch (REVIEW fix): shell populations 1 | 8 | 2 and the Al try question 3 | 8 | 2
+na_cfg = (1, 8, 2); al_cfg = (3, 8, 2)
+same("Na electrons in sketch", sum(na_cfg), 11); same("Na z", by_sym['Na']['z'], 11)
+same("Na jumps after electron", (na_cfg[0], na_cfg[0] + na_cfg[1]), (1, 9))
+same("Al electrons", sum(al_cfg), by_sym['Al']['z'])
+same("Al jumps after electron", (al_cfg[0], al_cfg[0] + al_cfg[1]), (3, 11))
+same("Al shells 12 and 13 inner", (13 - 11), 2)
+
 print("ok")

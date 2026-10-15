@@ -176,6 +176,14 @@ eq("S2 Mr AgCl", round(MrAgCl, 1), 143.4); eq("S2 n AgCl", round(2.87 / MrAgCl, 
 eq("S2 x", round(2.87 / MrAgCl / 0.0100), 2)
 eq("S2 Mr MCl2", 1.11 / 0.0100, 111); eq("S2 Ar M", 111 - 2 * A['Cl'], 40.0)
 
+# ---- stretch: C, H, O by difference (REVIEW fix)
+mC = 2.200 * A['C'] / (A['C'] + 2 * A['O']); mH = 0.900 * 2 * A['H'] / (2 * A['H'] + A['O'])
+eq("S3 mass C", round(mC, 3), 0.600); eq("S3 mass H", round(mH, 3), 0.100)
+mO = round(1.50 - mC - mH, 3)
+eq("S3 mass O", mO, 0.800)
+eq("S3 n C", round(mC / A['C'], 4), 0.0500); eq("S3 n H", round(mH / A['H'], 4), 0.100); eq("S3 n O", round(mO / A['O'], 4), 0.0500)
+eq("S3 emp mass", A['C'] + 2 * A['H'] + A['O'], 30.0); eq("S3 multiple", 180 / 30.0, 6)
+
 # ---- quiz
 eq("quiz NaOH 2.00 g n", 2.00 / 40.0, 0.0500); eq("quiz c", 0.0500 / 0.500, 0.100); eq("quiz wrong 1e-4", 0.0500 / 500, 1.00e-4, 1e-12)
 eq("quiz CO2", 0.0500 * 24.0, 1.20); eq("quiz CO2 stp wrong", 0.0500 * 22.4, 1.12)

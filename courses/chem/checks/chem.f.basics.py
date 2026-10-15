@@ -163,4 +163,9 @@ eq("M CaCO3", M_CaCO3, 100.1)
 eq("n CaCO3", sf(25.0 / M_CaCO3, 3), 0.250)
 eq("n Mg", sf(12.0 / AR['Mg'], 3), 0.494)
 
+# ---------- stretch: dichromate and ionic equation ----------
+eq("K2Cr2O7 charge", 2 * (+1) + (-2), 0)
+eq("ionic eq left charge", 2 * (+3) + 0, 6); eq("ionic eq right charge", 2 * (+2) + (+2), 6)
+eq("electrons Zn loses", 2, 2 * 1)
+
 print("ok")

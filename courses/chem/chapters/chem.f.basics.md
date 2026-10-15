@@ -477,6 +477,11 @@ Q: [3 marks] ★★★ Calcium phosphate, \(\ce{Ca3(PO4)2}\), is treated with su
 H: Balance calcium first, then the phosphate ions as a group, then count sulfate.
 A: (a) \(\ce{Ca3(PO4)2 + 3H2SO4 -> 3CaSO4 + 2H3PO4}\). Correct formulas [B1]. Correct balancing: 3 \(\ce{H2SO4}\), 3 \(\ce{CaSO4}\), 2 \(\ce{H3PO4}\) [B1]
 (b) \(\ce{X2Y3}\), because \(2(+3) + 3(-2) = 0\). [B1]
+Q: [5 marks] ★★★ (a) Potassium dichromate(VI) contains the ions \(\ce{K+}\) and \(\ce{Cr2O7^2-}\). Write its formula. (b) Balance the ionic equation \(\ce{Fe^3+(aq) + Zn(s) -> Fe^2+(aq) + Zn^2+(aq)}\), showing that the charges balance as well as the atoms.
+H: In (a), find how many \(\ce{K+}\) cancel the charge of one dichromate ion; do not change the formula of the dichromate ion. In (b), count the charge on each side as well as the atoms.
+A: (a) Two \(\ce{K+}\) (total +2) cancel one \(\ce{Cr2O7^2-}\) (−2): \(\ce{K2Cr2O7}\). [B1] [B1]
+(b) Zinc loses 2 electrons but each iron(III) ion gains only 1, so two iron ions are needed for each zinc atom: \(\ce{2Fe^3+(aq) + Zn(s) -> 2Fe^2+(aq) + Zn^2+(aq)}\). [M1] [A1]
+Charge check: left \(2(+3) + 0 = +6\); right \(2(+2) + (+2) = +6\). The atoms and the charges both balance. [B1]
 :::
 
 :::quiz

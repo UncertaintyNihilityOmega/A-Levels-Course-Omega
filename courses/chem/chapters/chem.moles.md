@@ -549,6 +549,13 @@ A: (a) \(n(\mathrm{Mg}) = 0.486 / 24.3 = 0.0200\) mol and \(n(\mathrm{HCl}) = 0.
 Magnesium needs 0.0400 mol of HCl to react completely, but only 0.0200 mol is present, so HCl is limiting. [M1]
 (b) \(n(\ce{H2}) = 0.0200 / 2 = 0.0100\) mol [M1], and \(V = 0.0100 \times 24.0 = 0.240\,\mathrm{dm^3} = 240\,\mathrm{cm^3}\) [A1]
 (c) Magnesium reacted = 0.0100 mol, so 0.0100 mol is left: \(0.0100 \times 24.3 = 0.243\) g. [A1]
+Q: [6 marks] ★★★ 1.50 g of a compound containing only carbon, hydrogen and oxygen is burned completely in excess oxygen. The only products are 2.200 g of carbon dioxide and 0.900 g of water. The relative molecular mass of the compound is 180. Deduce its molecular formula.
+H: Find the mass of carbon in the carbon dioxide and the mass of hydrogen in the water. Oxygen is not measured directly: how can you find its mass?
+A: Mass of C = \(2.200 \times 12.0 / 44.0 = 0.600\) g, and mass of H = \(0.900 \times 2.0 / 18.0 = 0.100\) g [M1] [M1]
+Mass of O = 1.50 − 0.600 − 0.100 = 0.800 g (by difference: most of the oxygen in the products came from the air, so it cannot be read from them) [M1]
+Moles: C = 0.600 / 12.0 = 0.0500; H = 0.100 / 1.0 = 0.100; O = 0.800 / 16.0 = 0.0500 [M1]
+Ratio C : H : O = 1 : 2 : 1, so the empirical formula is \(\ce{CH2O}\) [A1]
+Empirical mass = 30.0 and 180 / 30.0 = 6, so the molecular formula is \(\ce{C6H12O6}\). [A1]
 :::
 
 :::try Stretch for A*
