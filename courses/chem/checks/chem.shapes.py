@@ -123,14 +123,18 @@ eq("Mr butane", round(mr('C4H10'), 1), 58.0)
 eq("Mr propan-1-ol", round(mr('C3H8O'), 1), 60.0)
 
 # ---------- boiling points quoted (ordering claims) ----------
+# Values checked by the Specialist (REVIEW P3) against standard data (CRC Handbook; Atkins' data tables),
+# rounded as quoted: CH4 -161.5, SiH4 -111.9, GeH4 -88.5, SnH4 -52; H2O 100, H2S -60.3, H2Se -41.3, H2Te -2.2;
+# C2H6 -88.6, C3H8 -42.1, C4H10 -0.5; pentane 36.1, 2-methylbutane 27.8, 2,2-dimethylpropane 9.5;
+# NH3 -33.3; propanone 56.1; propan-1-ol 97.2; ice density at 0 °C 0.9167 g cm-3.
 bp14 = [-162, -112, -88, -52]; bp16 = [100, -60, -41, -2]
 assert bp14 == sorted(bp14) and bp16[1:] == sorted(bp16[1:])
 assert bp16[0] > bp16[-1]                      # water anomalous
 eq("water vs methane", bp16[0] - bp14[0], 262)
-assert -162 < -89 < -42 < -1                    # CH4, C2H6, C3H8, C4H10
+assert -162 < -89 < -42 < -0.5                  # CH4, C2H6, C3H8, C4H10
 assert 36 > 28 > 9.5                           # pentane, 2-methylbutane, neopentane
 assert -162 < -33 < 100                         # methane, ammonia, water
-assert 56 > -1 and 97 > 56                      # butane < propanone < propan-1-ol
+assert 56 > -0.5 and 97 > 56                    # butane < propanone < propan-1-ol
 
 # ---------- covalent bond versus intermolecular force ----------
 oh = 460  # kJ per mol O-H bond (FACTS.md)

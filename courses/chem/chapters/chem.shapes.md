@@ -268,7 +268,7 @@ Attractions between molecules caused by a temporary (instantaneous) dipole in on
 :::
 
 :::html
-<figure class="fig small"><svg viewBox="-1 33 301 131" role="img" aria-label="Two atoms, the first with an instantaneous dipole, the second with a dipole induced by the first, attracting each other"><path class="ln" d="M66 70a29 29 0 1 0 58 0a29 29 0 1 0 -58 0"/><path class="ln" d="M196 70a29 29 0 1 0 58 0a29 29 0 1 0 -58 0"/><text class="tl tc ta" x="80" y="75">δ−</text><text class="tl tc ta" x="110" y="75">δ+</text><text class="tl tc ta" x="210" y="75">δ−</text><text class="tl tc ta" x="240" y="75">δ+</text><path class="ln" d="M134 70L186 70" marker-end="url(#ah)"/><text class="tl tc" x="160" y="58">attract</text><text class="tl tc" x="95" y="128">instantaneous</text><text class="tl tc" x="95" y="146">dipole</text><text class="tl tc" x="225" y="128">induced</text><text class="tl tc" x="225" y="146">dipole</text></svg><figcaption>An instantaneous dipole in one particle (electrons momentarily on the left) pushes the electrons of its neighbour away from it. The δ+ end of the first is attracted to the δ− end of the second.</figcaption></figure>
+<figure class="fig small"><svg viewBox="-1 33 301 131" role="img" aria-label="Two atoms, the first with an instantaneous dipole, the second with a dipole induced by the first, attracting each other"><path class="ln" d="M66 70a29 29 0 1 0 58 0a29 29 0 1 0 -58 0"/><path class="ln" d="M196 70a29 29 0 1 0 58 0a29 29 0 1 0 -58 0"/><text class="tl tc ta" x="80" y="75">δ−</text><text class="tl tc ta" x="110" y="75">δ+</text><text class="tl tc ta" x="210" y="75">δ−</text><text class="tl tc ta" x="240" y="75">δ+</text><path class="ln" d="M134 70L186 70" marker-end="url(#ah)"/><text class="tl tc" x="160" y="58">attract</text><text class="tl tc" x="95" y="128">instantaneous</text><text class="tl tc" x="95" y="146">dipole</text><text class="tl tc" x="225" y="128">induced</text><text class="tl tc" x="225" y="146">dipole</text></svg><figcaption>An instantaneous dipole in one particle (electrons momentarily on the left) attracts the electrons of its neighbour towards its δ+ end, so the neighbour becomes an induced dipole. The δ+ end of the first then attracts the δ− end of the second.</figcaption></figure>
 :::
 
 The strength of id–id forces depends on two things.
@@ -282,7 +282,7 @@ The strength of id–id forces depends on two things.
 | \(\ce{Br2}\) | 70 | liquid |
 | \(\ce{I2}\) | 106 | solid |
 
-The same pattern appears in the alkanes. Methane (10 electrons) boils at about −162 °C, ethane (18) at −89 °C, propane (26) at −42 °C and butane (34) at about −1 °C. Each \(\ce{CH2}\) added to the chain adds 8 electrons and raises the boiling point.
+The same pattern appears in the alkanes. Methane (10 electrons) boils at about −162 °C, ethane (18) at −89 °C, propane (26) at −42 °C and butane (34) at −0.5 °C. Each \(\ce{CH2}\) added to the chain adds 8 electrons and raises the boiling point.
 
 **2. The surface area of contact.** Id–id forces act only where molecules touch. A long, straight molecule can lie alongside its neighbours and touches them over a large area. A compact, branched molecule of the same \(M_r\) is more ball-like, touches its neighbours at fewer points, and so has weaker forces.
 
@@ -304,9 +304,9 @@ Polar molecules have a dipole all the time. The δ+ end of one molecule is attra
 Attractions between the δ+ end of one polar molecule and the δ− end of a neighbouring polar molecule.
 :::
 
-A good test case is propanone, \(\ce{CH3COCH3}\), and butane, \(\ce{CH3CH2CH2CH3}\). Both have \(M_r\) = 58.0 and similar numbers of electrons (32 and 34), so their id–id forces are almost the same. But propanone has a polar C=O bond and the molecule is polar, so it also has pd–pd forces. Propanone boils at 56 °C and butane at about −1 °C.
+A good test case is propanone, \(\ce{CH3COCH3}\), and butane, \(\ce{CH3CH2CH2CH3}\). Both have \(M_r\) = 58.0 and similar numbers of electrons (32 and 34), so their id–id forces are almost the same. But propanone has a polar C=O bond and the molecule is polar, so it also has pd–pd forces. Propanone boils at 56 °C and butane at −0.5 °C.
 
-:::eg Explain why propanone (b.p. 56 °C) has a higher boiling point than butane (b.p. about −1 °C), although both have \(M_r\) = 58.0. [3 marks]
+:::eg Explain why propanone (b.p. 56 °C) has a higher boiling point than butane (b.p. −0.5 °C), although both have \(M_r\) = 58.0. [3 marks]
 Butane is non-polar, so its molecules are held together only by id–id forces. [B1]
 
 Propanone has a polar C=O bond (O is more electronegative than C) and the molecule is polar, so it has pd–pd forces as well as id–id forces. [B1]
@@ -472,7 +472,7 @@ H: The mass does not change when water freezes. Volume = mass ÷ density.
 A: Mass of water = 500 cm³ × 1.00 g cm⁻³ = 500 g. [B1]
 \(V(\text{ice}) = 500 / 0.917\) [M1] \(= 545\,\mathrm{cm^3}\) [A1]
 In ice each molecule forms four hydrogen bonds in an open lattice with empty space, so the molecules are further apart than in liquid water. [B1]
-Q: [6 marks] ★★★ Propanone, \(\ce{CH3COCH3}\) (\(M_r\) = 58.0), butane (\(M_r\) = 58.0) and propan-1-ol, \(\ce{CH3CH2CH2OH}\) (\(M_r\) = 60.0), have boiling points of 56 °C, about −1 °C and 97 °C. Explain the order of boiling points by naming the forces in each substance.
+Q: [6 marks] ★★★ Propanone, \(\ce{CH3COCH3}\) (\(M_r\) = 58.0), butane (\(M_r\) = 58.0) and propan-1-ol, \(\ce{CH3CH2CH2OH}\) (\(M_r\) = 60.0), have boiling points of 56 °C, −0.5 °C and 97 °C. Explain the order of boiling points by naming the forces in each substance.
 H: Which has a polar C=O bond? Which has an O–H bond?
 A: Butane is non-polar: it has only id–id forces, the weakest, so it has the lowest boiling point. [B1] [B1]
 Propanone is polar (C=O): it has pd–pd forces in addition to id–id forces. [B1] The stronger attraction raises the boiling point above that of butane. [B1]

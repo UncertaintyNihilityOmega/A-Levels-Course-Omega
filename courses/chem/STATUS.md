@@ -1,14 +1,14 @@
 # STATUS: Chemistry
 
-Last: 2026-10-16 · WRITE P5 · chem.redox (5169 words) and chem.equilibria (6534 words), both pass check and phone; widget chem-equilibrium (Le Chatelier explorer plus Kc-from-data ICE calculator, embedded twice in equilibria; probed clean light/dark/phone and with bad system/tab attributes); generators data/mk_fig_redox.py and data/mk_fig_haber.py. Reviewer: Haber/Contact conditions are the package values (about 450 C, 200 atm, V2O5, 1-2 atm) with no yield numbers; the NH3-yield plot is a labelled sketch with no axis numbers; Kc/Kp examples use no quadratics (perfect squares); links are chemguide pages checked 16 Oct (redox menu, Le Chatelier, Kc, Kp).
+Last: 2026-10-16 · REVIEW P3, P4 · 2 items in REVIEW.md (shapes hydride b.p. plot; energetics extrapolation question). Fixed: bonding dot-and-cross labels off circle lines, CO2 redrawn, sigma/pi nuclei; shapes id-id caption (was wrong), butane -0.5 C, all b.p./ice data verified with sources in checks; vsepr note (symmetric shapes, no colour word); states 22.4 wording, graphite electrons along layers; energetics graph, bond-level diagram and 3 Hess cycles redrawn as fig small (13 px on phones); COURSE.md lessons
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
 - LEAD: done 2026-10-15
 - P1: reviewed 2026-10-16
 - P2: reviewed 2026-10-16
-- P3: written 2026-10-16
-- P4: written 2026-10-16
+- P3: reviewed 2026-10-16
+- P4: reviewed 2026-10-16
 - P5: written 2026-10-16
 - P6: writing 2026-10-16
 - P7: open

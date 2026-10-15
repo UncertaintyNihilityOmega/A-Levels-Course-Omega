@@ -145,6 +145,19 @@ Writers cannot see their figures. Plan coordinates in Python, then `shot <id>` a
 - `:::links` descriptions must match what the page actually contains (look at its headings, not only the HTTP code).
   Khan Academy answers curl with a bot challenge, so Writers leave it out; the one in chem.f.basics was checked in the browser.
 
+### Lessons from REVIEW P3, P4 (16 Oct 2026)
+- Dot-and-cross figures: put each element symbol inside its own circle, at least ~8 px from any other circle's line
+  (for overlapping shells the centre of one circle sits on the other's line, so move the label outwards, e.g. halfway
+  between the outer edge and the overlap). Outer atoms (H, F, Cl) round a central atom: label at ~1.3 × the centre
+  distance, not at the outer circle's centre. Leave the overlap for the shared electrons; a double bond's four
+  electrons go in one column (dot, cross, dot, cross) when the overlap is narrow.
+- Energy cycles and level diagrams in a `fig` are 8 px text on a phone. Draw them as `fig small` (viewBox ~340 wide):
+  short arrow labels "(1) ΔHf" and "ΔHf (2)" beside the arrows, and the values as lines of text under the cycle
+  ("(1) ΔHf of reactants: −824 + 3(−111) = −1157"). See chem.energetics. The same goes for simple sketch graphs.
+- Quote physical data (boiling points, densities) only from a standard table, rounded as printed (butane −0.5 °C,
+  not "about −1"), and say in the checks file where the values come from.
+- Never name a colour in a widget `.w-note` either ("the labelled arcs", not "red arcs").
+
 ### Chemistry figure conventions (copy the gold chapter's SVG)
 - **Skeletal formulas**: zigzag `<path class="ln thick">` with 35 px horizontal steps and ±20 px vertical (bond
   ~40 px, 120° angles); heteroatom labels as `tl` text (`tc` to centre), bond ends ~5 px short of the label box.

@@ -26,7 +26,7 @@ eq("Vm 298 K", sf(R * 298 / 101000, 4), 0.02452, 1e-9)
 eq("Vm 298 dm3", sf(R * 298 / 101000 * 1000), 24.5)
 assert abs(R * 293 / 101000 * 1000 - 24.0) < 0.15      # 24.0 matches about 20 C
 eq("Vm stp", sf(R * 273 / 101000 * 1000), 22.5)
-assert abs(R * 273 / 101000 * 1000 - 22.4) < 0.15      # data section rounds to 22.4
+eq("Vm stp precise", sf(8.314 * 273.15 / 101325 * 1000), 22.4)   # Data section value from precise R, T, p
 
 # ---- worked example: flask, 0.608 g, 250 cm3, 300 K, 152 kPa
 n = 152000 * 250e-6 / (R * 300)

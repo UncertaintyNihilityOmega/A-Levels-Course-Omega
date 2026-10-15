@@ -202,7 +202,7 @@
 
     const read = W.readout([['pairs', 'Electron pairs'], ['arr', 'Arrangement of the pairs'], ['shape', 'Shape'], ['angle', 'Bond angle'], ['ex', 'Examples'], ['note', 'Note']]);
     body.appendChild(read.el);
-    body.appendChild(W.h('div', { class: 'w-note', text: 'Add a lone pair to CH₄ and watch the angle close. Shaded lobes with two dots are lone pairs; red arcs show bond angles. With six pairs, add a lone pair, then a second one, and see where it goes.' }));
+    body.appendChild(W.h('div', { class: 'w-note', text: 'Add a lone pair to CH₄ and watch the angle close. Shaded lobes with two dots are lone pairs; the labelled arcs show bond angles. With six pairs, add a lone pair, then a second one, and see where it goes.' }));
 
     function update() {
       const key = bp + ',' + lp;
@@ -227,7 +227,7 @@
       read.set('shape', s.shape);
       read.set('angle', preset && preset[6] ? preset[6] : s.angle);
       read.set('ex', nm ? nm + (s.ex && s.ex.indexOf(nm) < 0 ? '  (also ' + s.ex + ')' : '') : s.ex);
-      read.set('note', preset && preset[7] ? preset[7] : (lp === 0 ? 'No lone pairs: the shape has the same name as the arrangement.' : 'Lone pairs repel more than bonding pairs, so the angles close a little.'));
+      read.set('note', preset && preset[7] ? preset[7] : (lp === 0 ? 'No lone pairs: the shape has the same name as the arrangement.' : (s.shape === 'linear' || s.shape === 'square planar') ? 'The lone pairs are spread symmetrically, so their pushes balance and the bond angles are not squeezed.' : 'Lone pairs repel more than bonding pairs, so the angles close a little.'));
       err.textContent = msg;
       cvs.cv.setAttribute('aria-label', '3D model with ' + bp + ' bonding pairs and ' + lp + ' lone pairs: ' + s.shape + ', bond angle ' + (preset && preset[6] ? preset[6] : s.angle) + '.');
       cvs.redraw();
