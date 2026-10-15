@@ -4,7 +4,7 @@
 const { splitMarks } = require('./lib');
 
 const TOPIC = new Set(['pre', 'as', 'a2', 'ext']);
-const ESSAY = new Set(['bus', 'econ', 'other']);
+const ESSAY = new Set(['bus', 'econ', 'other', 'psych']);
 
 function blocks(text, type) {
   // bodies of top-level-or-nested ":::type" blocks

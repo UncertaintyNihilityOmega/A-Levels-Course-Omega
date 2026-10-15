@@ -172,7 +172,7 @@ maths scrolls on its own) or a `\[\begin{aligned} … \\ … \end{aligned}\]` wi
      Outline plus fill: `<rect class="f1 s-acc sw2" …/>`.
    - Text: `tl`, `ts`, `tb`, `ti`, `tc`, `te`, `ta`, `ta2`, `tr`, `tp`, `halo`. Unicode maths in SVG text (x², θ, Δ, →).
      Labels use `tl` (`ts` only for axis tick numbers), with `halo` where a label touches a line.
-   - Arrowheads: `marker-end="url(#ah)"`, also `#ahm`, `#ahr`, `#ahok`, `#ah-<course>`, `#ah2-<course>`.
+   - Arrowheads: `marker-end="url(#ah)"`, also `#ahm`, `#ahr`, `#ahok`, `#ah-<course>`, `#ah2-<course>`; small heads for curly arrows in mechanisms: `#ahs` (ink) and `#ahs-red`.
    - viewBox about 520–640 wide so text stays readable on phones, cropped to the drawing plus about 15 px.
      Check coordinates with Python.
    - `class="fig wide"` for wide multi-panel figures, `class="fig small"` for small ones.

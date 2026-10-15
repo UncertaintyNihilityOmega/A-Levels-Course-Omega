@@ -55,11 +55,12 @@ apparatus). Copy its SVG patterns instead of inventing new ones.
   `\(\ce{[Cu(H2O)6]^2+}\)`, `\(\ce{N2(g) + 3H2(g) <=> 2NH3(g)}\)`, `\(\ce{CuSO4.5H2O}\)`, gas/precipitate arrows are
   not needed (write state symbols instead). Dipoles: `\(\ce{C^{\delta+}-Br^{\delta-}}\)`; in running text write
   plain "δ+" (`\(\delta+\)` renders with a gap).
-- **Isotopes**: `\({}^{37}_{17}\mathrm{Cl}\)` or `\(\mathrm{^{35}Cl}\)`. Never `\ce{^{35}Cl}` (it renders broken).
+- **Isotopes**: `\(\ce{^{35}Cl}\)`, `\(\ce{^{37}_{17}Cl}\)` (the engine rewrites them so they render correctly), or
+  `\({}^{37}_{17}\mathrm{Cl}\)`.
 - **Conditions on arrows**: `\(\ce{A ->[H2SO4][heat] B}\)` (above and below). Keep them short; "conc." inside
   mhchem becomes a dot, so write "concentrated" in the sentence instead.
-- **Long equations go in display maths** `\[\ce{…}\]`. Inline `\ce` does not wrap on phones: anything longer than
-  about 30 characters (e.g. `CH3CH2CH2OH + PCl5 -> …`) must be on its own `\[ … \]` line. Run `phone` after every chapter.
+- **Long equations**: an inline `\(\ce{…}\)` wraps on phones before each arrow and after each ` + ` (write them with
+  spaces: `A + B -> C`). Put the key equation of a section in display maths `\[\ce{…}\]`. Run `phone` after every chapter.
 - Electron configurations as plain text with Unicode superscripts: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s², [Ar] 3d⁶ 4s²
   (3d written before 4s, the Cambridge order).
 - Standard sign: `\(\Delta H^{\ominus}_{\mathrm{f}}\)`, `\(E^{\ominus}_{\mathrm{cell}}\)`, `\(S^{\ominus}\)`.
@@ -138,8 +139,8 @@ Writers cannot see their figures. Plan coordinates in Python, then `shot <id>` a
   never draw benzene as alternating double bonds.
 - **Displayed formulas**: atoms as `tl tc` text, bonds as `ln` lines that stop ~6 px short of each label. Double bond:
   two parallel lines 5 px apart. Draw all bonds; a displayed formula shows every atom and bond.
-- **Curly-arrow mechanisms**: arrows `<path class="c1 sw2" d="M x0 y0 Q cx cy x1 y1" marker-end="url(#ahr)"/>`,
-  one path per arrow, at least ~40 px long (the head is ~12 px), starting **at a lone pair or the middle of a
+- **Curly-arrow mechanisms**: arrows `<path class="c1 sw2" d="M x0 y0 Q cx cy x1 y1" marker-end="url(#ahs-red)"/>`,
+  one path per arrow, at least ~30 px long (the small head #ahs-red is ~7 px), starting **at a lone pair or the middle of a
   bond** and ending ~5–8 px from the atom (or bond middle) that receives the pair. Lone pairs: two
   `<circle class="fi" r="1.7">` dots 6 px apart beside the atom. Dipoles: `δ+`/`δ−` labels in `tl ta`. Charges in
   the text (`C⁺`, `HO⁻`, `Br⁻`). Transition states in square brackets drawn as `ln` paths, partial bonds `ln dash`,

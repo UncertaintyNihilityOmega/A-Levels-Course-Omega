@@ -116,6 +116,61 @@ function splitRelations(tex) {
   return parts.filter(p => p.trim()).length === parts.length ? parts : [tex];
 }
 
+// mhchem: find each \ce{…} with its matching brace and replace it with fn(content)
+function mapCe(tex, fn) {
+  let out = '', i = 0;
+  for (;;) {
+    const at = tex.indexOf('\\ce{', i);
+    if (at < 0) return out + tex.slice(i);
+    let depth = 0, j = at + 3;
+    for (; j < tex.length; j++) { if (tex[j] === '{') depth++; else if (tex[j] === '}' && --depth === 0) break; }
+    if (j >= tex.length) return out + tex.slice(i);
+    out += tex.slice(i, at) + fn(tex.slice(at + 4, j));
+    i = j + 1;
+  }
+}
+// mhchem draws isotopes (\ce{^{35}_{17}Cl}) with the numbers over the symbol in MathML, so each isotope is taken
+// out of the \ce and written as {}^{35}_{17}\ce{Cl} (with its subscripts and charge), the rest stays in \ce{}.
+const ISOTOPE = /(^|[\s(])\^\{?(\d+)\}?(?:_\{?(-?\d+)\}?)?([A-Z][a-z]?(?:\d+)?(?:\^\{?\d*[+-]\}?|[+-](?=\s|$))?)/g;
+function fixIsotopes(tex) {
+  if (!tex.includes('\\ce{') || !/\^/.test(tex)) return tex;
+  return mapCe(tex, (c) => {
+    if (!ISOTOPE.test(c)) { ISOTOPE.lastIndex = 0; return `\\ce{${c}}`; }
+    ISOTOPE.lastIndex = 0;
+    let out = '', from = 0;
+    for (const m of c.matchAll(ISOTOPE)) {
+      const pre = c.slice(from, m.index) + m[1];
+      if (pre.trim()) out += `\\ce{${pre}}`;
+      out += `{}^{${m[2]}}${m[3] != null ? `_{${m[3]}}` : ''}\\ce{${m[4]}}`;
+      from = m.index + m[0].length;
+    }
+    const rest = c.slice(from);
+    return out + (rest.trim() ? `\\ce{${rest}}` : '');
+  });
+}
+// A long inline \ce{…} equation is cut before each arrow and after each " + " at its top level, so it can wrap on phones.
+function splitCe(tex) {
+  const m = tex.match(/^\\ce\{([\s\S]*)\}$/);
+  if (!m || mapCe(tex, () => '') !== '' || m[1].replace(/\s+/g, '').length < SPLIT_MIN) return [tex];
+  const c = m[1], cuts = [];
+  let depth = 0;
+  for (let i = 0; i < c.length; i++) {
+    const ch = c[i];
+    if ('{['.includes(ch)) depth++;
+    else if ('}]'.includes(ch)) depth--;
+    else if (depth === 0 && ch === ' ') {
+      if (/^ (<=>>|<<=>|<=>|<-->|<->|->|<-)/.test(c.slice(i))) cuts.push(i);
+      else if (c.slice(i, i + 3) === ' + ') cuts.push(i + 2);
+    }
+  }
+  if (!cuts.length) return [tex];
+  const parts = [];
+  let from = 0;
+  for (const at of cuts) { parts.push(c.slice(from, at)); from = at; }
+  parts.push(c.slice(from));
+  return parts.filter(p => p.trim()).map(p => `\\ce{${p.trim()}}`);
+}
+
 function createRenderer(opts = {}) {
   const md = new MarkdownIt({ html: true, linkify: false, typographer: true, breaks: false });
   md.disable(['replacements']);
@@ -129,6 +184,7 @@ function createRenderer(opts = {}) {
   function renderMath(tex, display) {
     st.mathCount++;
     let out;
+    tex = fixIsotopes(tex);
     try {
       out = katex.renderToString(tex, { output: 'mathml', displayMode: display, throwOnError: true, strict: 'ignore', trust: false });
     } catch (e) {
@@ -155,6 +211,8 @@ function createRenderer(opts = {}) {
   // A long inline chain is rendered as one piece per relation ("a =" "b =" "c"), with a break opportunity
   // between pieces: browsers never wrap inside a <math>, so this is what lets it fit a phone.
   function renderInline(tex) {
+    const ce = splitCe(tex);
+    if (ce.length > 1) return ce.map(p => renderMath(p, false)).join('<wbr>');
     const parts = splitRelations(tex);
     if (parts.length < 2) return renderMath(tex, false);
     return parts.map((p, i) => renderMath(i < parts.length - 1 ? p + '{}' : p, false)).join('<wbr>');
@@ -451,4 +509,4 @@ function createRenderer(opts = {}) {
   return { st, renderFile, inline, extractMath, subMath, mdInline, escapeHtml, stripTags };
 }
 
-module.exports = { createRenderer, escapeHtml, stripTags, splitMarks, splitRelations, CALLOUTS, BLOCK_TYPES, LINK_KINDS };
+module.exports = { createRenderer, escapeHtml, stripTags, splitMarks, splitRelations, splitCe, fixIsotopes, CALLOUTS, BLOCK_TYPES, LINK_KINDS };
