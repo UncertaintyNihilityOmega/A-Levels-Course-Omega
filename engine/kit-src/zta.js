@@ -320,7 +320,7 @@ var P=new URLSearchParams(location.search),id=location.hash.slice(1);
 document.documentElement.setAttribute('data-theme',P.has('dark')?'dark':'light');if(window.W&&W.themeChanged)W.themeChanged();
 var out=function(R){var s=JSON.stringify(R);if(parent!==window)parent.postMessage(s,'*');else{var p=document.createElement('pre');p.id='zta-probe';p.textContent=s;document.body.appendChild(p);}};
 var a=document.querySelector('article.chapter[data-id="'+id+'"]');if(!a){out({error:'no chapter '+id});return;}
-a.querySelectorAll('details').forEach(function(d){d.open=true;});
+a.querySelectorAll('details').forEach(function(d){d.open=true;});a.classList.add('mock-done');
 var T=[].slice.call(a.querySelectorAll('figure,.widget')).filter(function(t){return !t.parentElement.closest('figure,.widget');});
 var from=+(P.get('from')||0),to=P.has('to')?+P.get('to'):T.length,K=T.slice(from,to);
 document.body.querySelectorAll('*').forEach(function(el){if(/^(SCRIPT|STYLE|PRE)$/.test(el.tagName))return;
