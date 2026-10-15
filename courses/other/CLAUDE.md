@@ -38,6 +38,7 @@ there, tell the user which session to run instead, and stop.
 | checks/`<id>`.py | recomputes every number in the chapter | Writer |
 | widgets/`<name>`.js | one widget per file (widgets.js holds older ones) | Writer |
 | STATUS.md | the current state: the last session and each step's state | the kit |
+| READER.md | what each chapter teaches, written by the Reader in course order | Reader |
 | REVIEW.md | review findings: `- [ ]` open, `- [x]` done | Organizer writes, Writer closes |
 | REQUESTS.md | asks for the Organizer | everyone |
 | kit/STYLE.md · WIDGETS.md · EXAMPLE.md · LINKS.md | writing spec · widget spec · model chapter · ids in other courses | read-only |

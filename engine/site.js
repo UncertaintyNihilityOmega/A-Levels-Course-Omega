@@ -180,7 +180,7 @@ function buildSite(sources, opts) {
   const ordered = [];
   const subjects = [];
   for (const s of sources) {
-    const sub = { id: s.id, kind: s.kind, title: s.title, short: s.short, code: s.code, desc: s.desc, groups: [], planned: s.chapters.length };
+    const sub = { id: s.id, kind: s.kind, title: s.title, short: s.short, code: s.code, years: s.years, desc: s.desc, groups: [], planned: s.chapters.length };
     subjects.push(sub);
     for (const e of s.chapters) {
       const c = written.get(e.id);
@@ -265,7 +265,7 @@ function buildSite(sources, opts) {
       if (c.meta.foot !== 'none') o.f = 1;
       return [c.id, o];
     })),
-    subjects: subjects.map(s => ({ id: s.id, c: s.kind === 'course' ? 1 : 0, t: s.title, short: s.short, code: s.code, desc: s.desc, n: s.groups.reduce((a, g) => a + g.chapters.length, 0), p: s.planned, first: s.groups[0] ? s.groups[0].chapters[0].id : null })),
+    subjects: subjects.map(s => ({ id: s.id, c: s.kind === 'course' ? 1 : 0, t: s.title, short: s.short, code: s.code, y: s.years, desc: s.desc, n: s.groups.reduce((a, g) => a + g.chapters.length, 0), p: s.planned, first: s.groups[0] ? s.groups[0].chapters[0].id : null })),
     chunks,
     papers: Object.fromEntries(Object.entries(papers).filter(([, l]) => l.length).map(([sid, l]) => [sid, l.map(p => ({ id: p.id, t: p.title, c: p.chapters.filter(id => written.has(id)) }))])),
     // "What to revise next" (practice.next): each mock's questions in page order as [marks, chapter it revises],

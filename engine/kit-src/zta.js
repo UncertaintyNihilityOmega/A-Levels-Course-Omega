@@ -3,7 +3,7 @@
 //   node kit/zta.js status                 what each role can do next (LEAD / WRITE Pn / FIX / REVIEW / DONE)
 //   node kit/zta.js claim [Pn]             a Writer takes a package (the first free one if none given)
 //   node kit/zta.js release Pn             give a claimed package back (the session stopped early)
-//   node kit/zta.js done "<step>" "<summary>"   record a finished session in STATUS.md (LEAD, WRITE Pn, FIX, REVIEW, REVIEW FINAL)
+//   node kit/zta.js done "<step>" "<summary>"   record a finished session in STATUS.md (LEAD, WRITE Pn, FIX, REVIEW, READER, REVIEW FINAL)
 //   node kit/zta.js check [id ...]         check chapters (all if none given): maths, blocks, links, figures,
 //                                          the STYLE checklist, and checks/<id>.py if it exists
 //   node kit/zta.js phone [id ...]         every chapter at phone width (375 px) with all answers open, headless:
@@ -82,7 +82,7 @@ function releaseCmd(id) {
 }
 function doneCmd(step, summary) {
   const c = course();
-  if (!step || !summary) { console.log('usage: node kit/zta.js done "<LEAD | WRITE Pn | FIX | REVIEW | REVIEW FINAL>" "<one-line summary>"'); process.exitCode = 2; return; }
+  if (!step || !summary) { console.log('usage: node kit/zta.js done "<LEAD | WRITE Pn | FIX | REVIEW | READER | REVIEW FINAL>" "<one-line summary>"'); process.exitCode = 2; return; }
   const r = done(DIR, c.title, c.json, step, summary);
   if (!r.ok) { console.log(`✗ ${r.msg}`); process.exitCode = 1; return; }
   console.log(`✓ ${r.msg}`);

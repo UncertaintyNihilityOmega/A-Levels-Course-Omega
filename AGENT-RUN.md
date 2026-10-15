@@ -35,7 +35,10 @@ Only run it when the user asks for it in that chat. It is not the default.
 - After a review: give its REVIEW.md items to the next Writer as **FIX + WRITE Pn** (only one agent at a time does FIX).
 - **Each time an agent reports**: run `check` on its chapters yourself, then commit only that package's files
   (`git add` named paths, because other agents are mid-work). Answer REQUESTS.md lines (engine fixes are yours),
-  and re-sync the kits after any engine change.
+  and re-sync the kits after any engine change. After each commit, `git push` (the backup on GitHub).
+- When every package is reviewed: **READER** (Sonnet, template below), one batch of 6–8 chapters per agent, one
+  agent at a time (each batch builds on the "Taught" lines the batch before wrote in READER.md). Writers can do
+  the open FIX items meanwhile. After the last batch, a Writer does **FIX** for the `(reader)` items.
 - At the end: Specialist **REVIEW FINAL**, then the assembly session from ORGANIZER.md.
 
 ## When the usage limit stops agents
@@ -89,6 +92,17 @@ Reply in at most 6 lines: chapters with word counts and check results, widgets a
   chapters, then `done FIX "<what changed>"`. Part 2 is the WRITE steps.
 - **Resume**: "<Pn> is already claimed: do not run `claim`. Done and passing check: <files>. Missing: <files>.
   Do not reread the finished chapters whole; grep them only for links, widget embeds and the Next line."
+
+### Reader additions (READER: Sonnet, high effort)
+```
+- Do not use the browser tools. Never edit chapters, checks, widgets or any file except READER.md and REVIEW.md
+  (append only: other agents may be closing REVIEW.md items at the same time).
+- Your batch: <ids> (in this order). Follow CLAUDE.md "READER (Reader)" exactly: read READER.md first, then each
+  chapter of your batch whole, as a student who knows only what the "Taught" lines say.
+- If READER.md then covers every chapter, run `done READER "<n reader items>"`; otherwise do not run `done`.
+Reply in at most 5 lines: chapters read, how many (reader) items you filed, the worst one.
+```
+A batch of 7 chapters is about 50–60k words of chapter text (Physics averaged 8k words a chapter), so expect about 150–250k agent tokens per batch.
 
 ### Specialist additions (LEAD, REVIEW, REVIEW FINAL)
 ```

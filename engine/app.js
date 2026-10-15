@@ -388,7 +388,7 @@
       list.innerHTML = G.subjects.filter(s => s.c).map(s => {
         const open = s.first ? `<a class="subj" href="#${s.first}">` : '<div class="subj subj-soon">';
         return `<li class="s-${s.id}">${open}`
-          + `<span class="subj-c">${W.esc(s.code === 'ALL' ? 'More' : s.code || '')}</span><span class="subj-t">${W.esc(s.t)}</span>`
+          + `<span class="subj-c">${W.esc(s.code === 'ALL' ? 'More' : s.code || '')}${s.y ? ` · ${W.esc(s.y)} syllabus` : ''}</span><span class="subj-t">${W.esc(s.t)}</span>`
           + `<span class="subj-d">${W.esc(s.desc || '')}</span>`
           + `<span class="subj-p"><span data-cnt="${s.id}"></span><span class="subj-bar"><span data-bar="${s.id}"></span></span>`
           + (s.n ? `<span>${s.n} of ${s.p} chapters ready</span>` : '') + `</span>${s.first ? '</a>' : '</div>'}</li>`;

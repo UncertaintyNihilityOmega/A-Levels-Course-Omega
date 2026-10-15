@@ -5,6 +5,7 @@
 //   - LEAD: done 2026-10-03
 //   - P1: reviewed 2026-10-05        (open → writing → written → reviewed)
 //   - P2: writing 2026-10-06
+//   - READER: open                  (a beginner's read of the whole course, after every package is reviewed)
 //   - FINAL: open
 // A package with no line is open. REVIEW.md: open items are lines starting "- [ ]".
 // Several Writers may work at once, each on its own claimed package, up to AHEAD packages past the last review.
@@ -13,7 +14,7 @@ const fs = require('fs');
 const path = require('path');
 
 const AHEAD = 4;
-const STEP_RE = /^- (LEAD|FINAL|P\d+): (open|writing|written|reviewed|done)\b(.*)$/;
+const STEP_RE = /^- (LEAD|READER|FINAL|P\d+): (open|writing|written|reviewed|done)\b(.*)$/;
 const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
 const readLines = (p) => fs.existsSync(p) ? fs.readFileSync(p, 'utf8').split(/\r?\n/) : [];
 
@@ -35,7 +36,7 @@ function writeStatus(dir, title, course, { steps, last }) {
     '## Steps', 'The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.'];
   if (course.lead !== false) out.push(line('LEAD', 'open'));
   for (const p of pk) out.push(line(p.id, 'open'));
-  if (course.lead !== false) out.push(line('FINAL', 'open'));
+  if (course.lead !== false) out.push(line('READER', 'open'), line('FINAL', 'open'));
   fs.writeFileSync(path.join(dir, 'STATUS.md'), out.join('\n') + '\n');
 }
 
@@ -48,6 +49,7 @@ function courseProgress(dir, course) {
   const state = (id) => (steps[id] || { state: 'open' }).state;
   const hadLead = !lead || state('LEAD') === 'done';
   const finalDone = state('FINAL') === 'done';
+  const readerDone = !lead || state('READER') === 'done';
   const byState = (s) => pk.filter(p => state(p.id) === s).map(p => p.id);
   const writing = byState('writing'), free = byState('open');
   const unreviewed = lead ? byState('written') : [];
@@ -68,15 +70,22 @@ function courseProgress(dir, course) {
         writer.push({ step: `WRITE ${p.id}`, why: describe(p) + (free.length > 1 ? ` (also free: ${free.slice(1).join(', ')})` : '') });
       } else writer.push({ step: 'WAIT', why: `${AHEAD} packages are written or being written past the last review: the Specialist reviews first` });
     } else if (writing.length && !open.length) writer.push({ step: 'WAIT', why: `${writing.join(', ')} being written; no free package` });
-    if (lead && allWritten && !unreviewed.length && !open.length && !finalDone) specialist.push({ step: 'REVIEW FINAL', why: 'every package written and reviewed' });
-    if ((lead ? finalDone : allWritten) && !open.length) writer.push({ step: 'DONE', why: 'course complete: tell the Organizer' });
+    if (lead && allWritten && !unreviewed.length && !readerDone) writer.push({ step: 'READER', why: `every package is reviewed: a Reader reads the course in order as a beginner (${unread(dir, course).length} chapter(s) not in READER.md yet; next: ${unread(dir, course).slice(0, 8).join(", ")})` });
+    if (lead && allWritten && !unreviewed.length && readerDone && !open.length && !finalDone) specialist.push({ step: 'REVIEW FINAL', why: 'every package written, reviewed and read' });
+    if ((lead ? finalDone && readerDone : allWritten) && !open.length) writer.push({ step: 'DONE', why: 'course complete: tell the Organizer' });
   }
-  const first = specialist.find(s => s.step === 'LEAD') || writer.find(s => s.step === 'FIX') || specialist[0] || writer[0] || { step: 'DONE', why: '' };
+  const first = specialist.find(s => s.step === 'LEAD') || writer.find(s => s.step === 'FIX') || writer.find(s => s.step === 'READER') || specialist[0] || writer[0] || { step: 'DONE', why: '' };
   return {
     next: first.step, why: first.why, writer, specialist, last, steps, open: open.length, unreviewed, writing, free, incomplete, hadLead,
     packages: pk.length, packagesDone: pk.filter(p => ['written', 'reviewed'].includes(state(p.id))).length,
     planned: (course.chapters || []).length, written: (course.chapters || []).filter(c => written.has(c.id)).length
   };
+}
+
+/** chapters the Reader has not read yet: course.json order, mock papers left out; READER.md has one "## <id>" per chapter read */
+function unread(dir, course) {
+  const seen = new Set(readLines(path.join(dir, 'READER.md')).map(l => (l.match(/^## (\S+)/) || [])[1]).filter(Boolean));
+  return (course.chapters || []).filter(c => !/\bmock\b/i.test(c.level || '') && !seen.has(c.id)).map(c => c.id);
 }
 
 /** claim a package for a Writer: the given id, or the first free one. Returns { ok, msg, pkg }. */
@@ -135,13 +144,18 @@ function done(dir, title, course, step, summary) {
   } else if (S === 'REVIEW FINAL' || S === 'FINAL') {
     const notDone = (course.packages || []).filter(x => (st.steps[x.id] || {}).state !== 'reviewed').map(x => x.id);
     if (notDone.length) return { ok: false, msg: `not reviewed yet: ${notDone.join(', ')}` };
+    if (course.lead !== false && (st.steps.READER || {}).state !== 'done') return { ok: false, msg: 'the READER step is not done yet' };
     if (p.open) return { ok: false, msg: `${p.open} open item(s) in REVIEW.md` };
     label = 'REVIEW FINAL';
     st.steps.FINAL = { state: 'done', rest: date };
-  } else if (S !== 'FIX') return { ok: false, msg: 'step must be LEAD, "WRITE Pn", FIX, REVIEW or "REVIEW FINAL"' };
+  } else if (S === 'READER') {
+    const left = unread(dir, course);
+    if (left.length) return { ok: false, msg: `READER.md has no section for ${left.length} chapter(s); next: ${left.slice(0, 8).join(', ')}` };
+    st.steps.READER = { state: 'done', rest: date };
+  } else if (S !== 'FIX') return { ok: false, msg: 'step must be LEAD, "WRITE Pn", FIX, REVIEW, READER or "REVIEW FINAL"' };
   st.last = `${date} · ${label} · ${String(summary || '').replace(/\s+/g, ' ').trim()}`;
   writeStatus(dir, title, course, st);
   return { ok: true, msg: `recorded ${label}` };
 }
 
-module.exports = { courseProgress, claim, release, done, writeStatus, readStatus, AHEAD };
+module.exports = { courseProgress, claim, release, done, writeStatus, readStatus, unread, AHEAD };

@@ -48,8 +48,11 @@ from course.json. Start with these lines, one per line, then a blank line:
    `:::try Stretch for A*`: 1–2 problems in an unfamiliar context, with hints and full solutions.
 8. `:::quiz`: multiple-choice questions whose wrong options are real misconceptions.
 9. `:::checklist What you can now do`: 5–10 `- [ ] I can …` lines, one per learning outcome in FACTS.md.
-10. `:::recap`: the facts a student must remember. Then `:::links` (optional: verified online resources), then a
-   last line `Next: [Title](#id)` to the next chapter in course.json order.
+10. `:::recap`: the facts a student must remember. Then `:::links` "Learn more online" (**every topic chapter**:
+   students review on other sites and apps, so send them to the best ones): 3–6 links for this chapter's topic,
+   at least one `practise` link (topic questions, flashcards, past-paper questions by topic) and one `watch` or
+   `read` link for a second explanation. Use only URLs from COURSE.md's verified list, and end the block with its
+   "Links checked …" line. Then a last line `Next: [Title](#id)` to the next chapter in course.json order.
 
 Essay subjects (Business, Economics, the humanities) adapt 6–7: spot the weak paragraph, and model answers
 built up mark band by mark band instead of M/A/B lines.

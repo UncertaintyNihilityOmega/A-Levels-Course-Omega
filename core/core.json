@@ -232,6 +232,18 @@
           "title": "Maths: learn more online",
           "level": "ref",
           "group": "Learn more online"
+        },
+        {
+          "id": "tools.l.phys",
+          "title": "Physics: learn more online",
+          "level": "ref",
+          "group": "Learn more online"
+        },
+        {
+          "id": "tools.l.chem",
+          "title": "Chemistry: learn more online",
+          "level": "ref",
+          "group": "Learn more online"
         }
       ]
     },
@@ -283,6 +295,12 @@
   "linkSheets": {
     "tools.l.math": [
       "math"
+    ],
+    "tools.l.phys": [
+      "phys"
+    ],
+    "tools.l.chem": [
+      "chem"
     ]
   }
 }

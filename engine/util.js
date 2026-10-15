@@ -21,7 +21,7 @@ function courseWidgets(dir) {
 function loadCourse(dir) {
   const c = readJson(path.join(dir, 'course.json'));
   return {
-    id: c.id, kind: 'course', title: c.title, short: c.short, code: c.code, desc: c.desc,
+    id: c.id, kind: 'course', title: c.title, short: c.short, code: c.code, years: c.years, desc: c.desc,
     chapters: c.chapters || [], aliases: c.aliases || {}, packages: c.packages || [], json: c,
     files: mdFiles(path.join(dir, 'chapters')), widgets: courseWidgets(dir), dir
   };
