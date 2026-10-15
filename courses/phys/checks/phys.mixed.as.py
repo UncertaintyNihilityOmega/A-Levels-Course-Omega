@@ -282,4 +282,26 @@ KE1 = 0.5 * (mb + M) * vf**2
 eq("D5 KE1", sf(KE1, 3), 1.97)
 eq("D5 loss", sf((KE0 - KE1) / KE0 * 100, 3), 99.5)
 
+# C5 Kirchhoff: three parallel branches (9.0 V + 2.0 ohm, 3.0 V + 1.0 ohm, 4.0 ohm)
+# (9 - V)/2 + (3 - V)/1 = V/4  ->  7.5 = 1.75 V
+VA = 7.5 / 1.75
+eq("C5 V exact", VA, 30 / 7)
+eq("C5 V 4", sf(VA, 4), 4.286)
+eq("C5 V", sf(VA, 2), 4.3)
+eq("C5 V 3", sf(VA, 3), 4.29)
+I1k = (9.0 - VA) / 2.0
+I2k = (3.0 - VA) / 1.0
+I3k = VA / 4.0
+eq("C5 I1 4", sf(I1k, 4), 2.357)
+eq("C5 I1 3", sf(I1k, 3), 2.36)
+eq("C5 I2 4", sf(I2k, 4), -1.286)
+eq("C5 I2", sf(I2k, 2), -1.3)
+eq("C5 I2 3", sf(I2k, 3), -1.29)
+eq("C5 I3 4", sf(I3k, 4), 1.071)
+eq("C5 I3", sf(I3k, 2), 1.1)
+eq("C5 junction", sf(2.36 - 1.29, 3), 1.07)
+eq("C5 sum", I1k + I2k, I3k)
+eq("C5 7.5", 9.0 / 2.0 + 3.0 / 1.0, 7.5)
+eq("C5 1.75", 1 / 2.0 + 1 / 1.0 + 1 / 4.0, 1.75)
+
 print("ok")

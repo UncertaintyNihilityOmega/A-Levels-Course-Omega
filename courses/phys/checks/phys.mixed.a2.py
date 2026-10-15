@@ -286,4 +286,30 @@ age = 1 / H0
 eq("E3 age s", sf(age, 2), 4.5e17)
 eq("E3 age yr", sf(age / 3.16e7, 2), 1.4e10)
 
+# C5 point charges +4.0 nC at A, -2.0 nC at B, 0.30 m apart; M midpoint
+kC = 8.99e9
+rM = 0.30 / 2
+eq("C5 r", rM, 0.15)
+VM = kC * (4.0e-9 - 2.0e-9) / rM
+eq("C5 V 4", sf(VM, 4), 119.9)
+eq("C5 V", sf(VM, 2), 1.2e2)
+EM = kC * (4.0e-9 + 2.0e-9) / rM**2
+eq("C5 E 4", sf(EM, 4), 2397)
+eq("C5 E", sf(EM, 2), 2.4e3, 1e-6)
+eq("C5 0.15^2", sf(rM**2, 3), 0.0225)
+WM = 1.0e-9 * VM
+eq("C5 W 4", sf(WM, 4), 1.199e-7, 1e-15)
+eq("C5 W", sf(WM, 2), 1.2e-7, 1e-15)
+
+# C6 capacitor network: (3.0 series 6.0) parallel 4.0, 12 V
+Cs = 1 / (1 / 3.0e-6 + 1 / 6.0e-6)
+eq("C6 Cs", sf(Cs, 3), 2.0e-6, 1e-15)
+Ct = Cs + 4.0e-6
+eq("C6 Ct", sf(Ct, 3), 6.0e-6, 1e-15)
+Q3 = Cs * 12
+eq("C6 Q", sf(Q3, 2), 2.4e-5, 1e-15)
+W4 = 0.5 * 4.0e-6 * 12**2
+eq("C6 W 3", sf(W4, 3), 2.88e-4, 1e-15)
+eq("C6 W", sf(W4, 2), 2.9e-4, 1e-15)
+
 print("ok")

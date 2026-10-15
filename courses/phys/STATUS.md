@@ -1,6 +1,6 @@
 # STATUS: Physics
 
-Last: 2026-10-15 · REVIEW P15, P16 · 7 items in REVIEW.md (mixed.as: Define/State/Sketch parts, Kirchhoff question; mixed.a2: point-charge and capacitor-network questions, Define parts). Fixed: exam.p1 two 3-option quiz questions; mixed.as 3 MCQs duplicating exam.p1 replaced (impulse, elastic energy, Malus), steel-wire 160->320 Hz so v matches sqrt(T/mu); mixed.a2 ripple line, tip data list. Confirmed all 81 p24 definitions match topic chapters, electron/satellite demos, bullet 8 marks, 2 s.f. answers, given non-data-sheet values, Next to mock.p1; all facts, numbers, mark totals, revise links OK.
+Last: 2026-10-15 · FIX · mixed.as: momentum principle, Young modulus definition and v-t sketch parts added (trolley/wire/ball now 10 marks), new Set C Kirchhoff 3-branch question with hand SVG circuit [7]; mixed.a2: Define/State parts on satellite [12], F-18 [11], generator [11], new Set C point-charge [8] and capacitor-network [5] questions; checks extended; 7 items closed
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
