@@ -7,10 +7,10 @@
     "phys",
     "chem",
     "bio",
-    "eng",
-    "bus",
     "econ",
+    "bus",
     "acc",
+    "eng",
     "other",
     "tools",
     "practice"
@@ -245,6 +245,12 @@
         {
           "id": "practice.quiz",
           "title": "Practice quizzes",
+          "level": "tool",
+          "group": "Practice"
+        },
+        {
+          "id": "practice.next",
+          "title": "What to revise next",
           "level": "tool",
           "group": "Practice"
         }

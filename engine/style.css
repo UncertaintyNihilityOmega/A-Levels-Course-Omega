@@ -581,6 +581,14 @@ a.subj:hover .subj-t { color: var(--sc); }
 /* practice page, glossary, formula sheets */
 .pq-bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; margin: 1em 0; }
 .pq-score { font-family: var(--f-ui); font-size: 1.6rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+.rn-list { margin: .4em 0 0; padding-left: 1.6em; font-family: var(--f-ui); }
+.rn-list li { padding: 10px 0; border-bottom: 1px solid var(--rule-2); }
+.rn-list li::marker { font-weight: 800; color: var(--red); }
+.rn-t { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; font-weight: 800; }
+.rn-s { font-size: .8rem; font-weight: 700; color: var(--ink-3); }
+.rn-why { font-size: .88rem; color: var(--ink-2); margin-top: 2px; }
+.rn-bar { display: block; height: 4px; margin-top: 6px; border-radius: 2px; background: var(--rule-2); overflow: hidden; }
+.rn-bar i { display: block; height: 100%; background: var(--red); }
 .gl-letters { display: flex; flex-wrap: wrap; gap: 4px; margin: .6em 0 1em; font-family: var(--f-ui); }
 .gl-letters a { font-size: .85rem; font-weight: 700; width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid var(--rule); border-radius: 6px; text-decoration: none; color: var(--ink-2); }
 .gl-letters a:hover { border-color: var(--pen); color: var(--pen); }

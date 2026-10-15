@@ -268,6 +268,11 @@ function buildSite(sources, opts) {
     subjects: subjects.map(s => ({ id: s.id, c: s.kind === 'course' ? 1 : 0, t: s.title, short: s.short, code: s.code, desc: s.desc, n: s.groups.reduce((a, g) => a + g.chapters.length, 0), p: s.planned, first: s.groups[0] ? s.groups[0].chapters[0].id : null })),
     chunks,
     papers: Object.fromEntries(Object.entries(papers).filter(([, l]) => l.length).map(([sid, l]) => [sid, l.map(p => ({ id: p.id, t: p.title, c: p.chapters.filter(id => written.has(id)) }))])),
+    // "What to revise next" (practice.next): each mock's questions in page order as [marks, chapter it revises],
+    // and each chapter's checklist keys
+    mocks: Object.fromEntries([...written.values()].filter(c => /\bmock\b/i.test(c.meta.level || ''))
+      .map(c => [c.id, [...c.html.matchAll(/<li(?: data-marks="(\d+)")?(?: data-rev="([^"]+)")?><div class="tq">/g)].map(m => [+m[1] || 0, m[2] || 0])])),
+    ck: Object.fromEntries([...written.keys()].map(id => [id, checksOf(id)]).filter(([, k]) => k.length)),
     built: new Date().toISOString().slice(0, 10)
   };
 

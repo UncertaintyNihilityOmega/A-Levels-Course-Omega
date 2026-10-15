@@ -168,6 +168,7 @@
         ul.append(W.h('li', {}, `Question ${q.i + 1} (${q.m} of ${q.n}): `, a ? W.h('a', { href: a.getAttribute('href') }, a.textContent.replace(/^Revise:\s*/, '')) : 'see the mark scheme'));
       }
       rev.append(ul);
+      if (G.ch['practice.next']) rev.append(W.h('p', {}, 'All your mocks, quizzes and checklists together: ', W.h('a', { href: '#practice.next' }, 'What to revise next'), '.'));
     }
     function render() {
       art.classList.toggle('mock-done', S.done);
@@ -269,6 +270,10 @@
           if (!right) b.classList.add('wrong');
           const ex = W.h('div', { class: 'qz-e ' + (right ? 'ok' : 'no'), html: `<b>${right ? 'Correct.' : 'Not quite.'}</b>${q.e || ''}` });
           box.append(ex);
+          // the last 10 answers per chapter feed "What to revise next"
+          const log = store.get('quizlog', {});
+          log[q.c] = ((log[q.c] || '') + (right ? '1' : '0')).slice(-10);
+          store.set('quizlog', log);
           if (opts.onAnswer) opts.onAnswer(right, qi);
         });
         btns.push({ b, oi });
@@ -343,6 +348,7 @@
       if (target) { requestAnimationFrame(() => target.scrollIntoView({ block: 'start' })); }
     } else if (changed) window.scrollTo(0, 0);
     if (cid === 'home') renderHome();
+    if (cid === 'practice.next') renderNext(art);
   }
   window.addEventListener('hashchange', route);
   function loadFailed(e) { toast(e.message + ' — keep the c folder next to index.html.'); }
@@ -579,6 +585,75 @@
       });
       score.scrollIntoView({ block: 'nearest' });
     });
+  }
+
+  /* ---------- "What to revise next": marks lost in mocks, recent quiz misses, unticked checklists ---------- */
+  // Re-drawn each time the page is shown, from what this browser has saved. Scores: each mark lost in the latest
+  // marking of a mock counts 1, each wrong answer among a chapter's last 10 quiz answers 2, and each unticked
+  // checklist line in a chapter marked as learned 0.5.
+  let nextSubj = '';
+  function renderNext(art) {
+    const host = $('#nextApp', art);
+    if (!host) return;
+    const T = {};
+    const get = (c) => T[c] || (T[c] = { c, lost: 0, of: 0, mocks: new Set(), qw: 0, qn: 0, ul: 0, un: 0 });
+    let mocksMarked = 0, answers = 0, learned = 0;
+    for (const [mid, qs] of Object.entries(G.mocks || {})) {
+      const S = store.get('mock:' + mid, null);
+      if (!S || !S.done || !S.marks) continue;
+      let any = false;
+      qs.forEach(([n, rev], i) => {
+        if (!n || !rev || !G.ch[rev] || S.marks[i] == null) return;
+        any = true;
+        const t = get(rev); t.lost += n - S.marks[i]; t.of += n; t.mocks.add(mid);
+      });
+      if (any) mocksMarked++;
+    }
+    for (const [c, s] of Object.entries(store.get('quizlog', {}))) {
+      if (!G.ch[c] || !s) continue;
+      const t = get(c); t.qn = s.length; t.qw = s.replace(/1/g, '').length; answers += s.length;
+    }
+    for (const [c, keys] of Object.entries(G.ck || {})) {
+      if (!done[c]) continue;
+      learned++;
+      const un = keys.filter(k => !ticks[k]).length;
+      if (un) { const t = get(c); t.ul = un; t.un = keys.length; }
+    }
+    const rows = Object.values(T).map(t => Object.assign(t, { score: t.lost + 2 * t.qw + 0.5 * t.ul })).filter(t => t.score > 0);
+    const subjects = G.subjects.filter(s => rows.some(t => G.ch[t.c].s === s.id));
+    if (!subjects.some(s => s.id === nextSubj)) nextSubj = '';
+    const list = rows.filter(t => !nextSubj || G.ch[t.c].s === nextSubj).sort((a, b) => b.score - a.score || a.c.localeCompare(b.c));
+    const top = list.length ? list[0].score : 1;
+
+    host.innerHTML = '';
+    const sel = W.h('select', { 'aria-label': 'Subject' }, W.h('option', { value: '' }, 'All subjects'),
+      ...subjects.map(s => W.h('option', { value: s.id, selected: s.id === nextSubj }, s.t)));
+    sel.addEventListener('change', () => { nextSubj = sel.value; renderNext(art); });
+    const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`;
+    const basis = `From ${plural(mocksMarked, 'marked mock paper')}, ${plural(answers, 'recent quiz answer')} and the checklists of ${plural(learned, 'chapter')} you marked as learned.`;
+    const body = W.h('div', { class: 'w-b' });
+    host.append(W.h('div', { class: 'w' }, W.h('div', { class: 'w-h' }, W.h('span', { class: 'w-t' }, 'What to revise next'), W.h('span', { class: 'w-s' }, 'Your weakest chapters first')), body));
+    if (subjects.length > 1) body.append(W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-ctl' }, W.h('label', {}, 'Subject'), sel)));
+    body.append(W.h('p', { class: 'w-note' }, basis));
+    if (!list.length) {
+      body.append(W.h('p', {}, W.h('b', {}, 'Nothing to revise yet. '), rows.length ? 'Pick another subject.' : 'Mark a mock paper, do a few ',
+        ...(rows.length ? [] : [W.h('a', { href: '#practice.quiz' }, 'practice quizzes'), ', or tick the checklists in chapters you have learned. Then come back here.'])));
+      return;
+    }
+    const ol = W.h('ol', { class: 'rn-list' });
+    for (const t of list.slice(0, 15)) {
+      const why = [];
+      if (t.of) why.push(`lost ${t.lost} of ${t.of} marks in ${plural(t.mocks.size, 'mock')}`);
+      if (t.qw) why.push(`${t.qw} of your last ${t.qn} quiz answers wrong`);
+      if (t.ul) why.push(`${t.ul} of ${t.un} checklist lines not ticked`);
+      const info = G.ch[t.c], subj = G.subjects.find(s => s.id === info.s);
+      ol.append(W.h('li', {},
+        W.h('div', { class: 'rn-t' }, W.h('a', { href: '#' + t.c }, info.t), subj && !nextSubj ? W.h('span', { class: 'rn-s' }, subj.short || subj.t) : ''),
+        W.h('div', { class: 'rn-why' }, why.join(' · ')),
+        W.h('span', { class: 'rn-bar', 'aria-hidden': 'true' }, W.h('i', { style: { width: (100 * t.score / top).toFixed(1) + '%' } }))));
+    }
+    body.append(ol);
+    if (list.length > 15) body.append(W.h('p', { class: 'w-note' }, `${list.length - 15} more after these. Revise the top ones, then redo the questions you lost marks on.`));
   }
 
   /* ---------- start ---------- */
