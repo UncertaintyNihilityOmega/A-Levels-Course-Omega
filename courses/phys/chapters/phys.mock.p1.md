@@ -159,12 +159,12 @@ Which force forms a Newton's third law pair with \(P\)?
 
 **A** \(Q\)
 
-**B** the force of the box on the table
+**B** the force of the box on the Earth
 
 **C** the force of the Earth on the table
 
-**D** the force of the box on the Earth
-A: **D**. A third-law pair acts on two different bodies, is of the same type and is equal and opposite: \(P\) is the Earth pulling the box, so its pair is the box pulling the Earth (**A** is equal and opposite but is not of the same type). [B1]
+**D** the force of the box on the table
+A: **B**. A third-law pair acts on two different bodies, is of the same type and is equal and opposite: \(P\) is the Earth pulling the box, so its pair is the box pulling the Earth (**A** is equal and opposite but is not of the same type). [B1]
 :::
 
 :::try
@@ -207,7 +207,7 @@ A: **D**. In an elastic collision the relative speed of separation equals the re
 :::
 
 :::try
-Q: [1 mark] (#phys.forces) A uniform rod of length \(0.80\,\mathrm{m}\) is held at \(30^\circ\) to the horizontal by two vertical forces of \(12\,\mathrm{N}\) acting at its ends, as shown. The forces are equal and opposite.
+Q: [1 mark] (#phys.forces) A uniform rod of length \(0.80\,\mathrm{m}\) lies at \(30^\circ\) to the horizontal. Two vertical forces of \(12\,\mathrm{N}\), equal and opposite, act at its ends, as shown.
 
 :::html
 <figure class="fig small"><svg viewBox="55 25 290 165" role="img" aria-label="A rod rising to the right at 30 degrees to a dashed horizontal line. At the lower end an arrow of 12 newtons points upwards, and at the upper end an arrow of 12 newtons points downwards."><path class="ln-m thin dash" d="M80 170H320"/><path class="ln thick" d="M80 170L288 50"/><path class="ln-m thin" d="M140 170A60 60 0 0 0 132 140"/><text class="tl" x="152" y="164">30°</text><circle class="fi" cx="80" cy="170" r="4"/><circle class="fi" cx="288" cy="50" r="4"/><path class="c1" d="M80 170V108" marker-end="url(#ah-phys)"/><path class="c1" d="M288 50V112" marker-end="url(#ah-phys)"/><text class="tl" x="92" y="128">12 N</text><text class="tl" x="298" y="92">12 N</text></svg><figcaption>A uniform rod acted on by two vertical forces at its ends.</figcaption></figure>
@@ -556,7 +556,7 @@ A: **C**. The resistance at a point is \(V/I = 8.0/0.80 = 10\,\Omega\), not the 
 Q: [1 mark] (#phys.dc) A cell of e.m.f. \(9.0\,\mathrm{V}\) and internal resistance \(2.0\,\Omega\) is connected to a resistor R of resistance \(7.0\,\Omega\), as shown.
 
 :::html
-<figure class="fig"><svg viewBox="85 40 535 140" role="img" aria-label="A cell of e.m.f. 9.0 volts with internal resistance 2.0 ohms inside a dashed box, connected in a loop to an external resistor R of 7.0 ohms."><rect class="fm" x="110" y="52" width="220" height="66" rx="6"/><rect class="fp s-mute sw1 dash" x="110" y="52" width="220" height="66" rx="6"/><path class="ln" d="M100 170V90H195M205 90H520V170H100"/><path class="ln" d="M205 70V110"/><path class="ln thick" d="M195 80V100"/><rect class="fp s-ink sw2" x="245" y="82" width="50" height="16"/><text class="tl tc" x="270" y="74">r = 2.0 Ω</text><text class="tl te" x="188" y="75">E = 9.0 V</text><rect class="fp s-ink sw2" x="512" y="110" width="16" height="40"/><text class="tl" x="538" y="135">R = 7.0 Ω</text></svg><figcaption>The dashed box contains the cell and its internal resistance.</figcaption></figure>
+<figure class="fig"><svg viewBox="85 40 430 140" role="img" aria-label="A cell of e.m.f. 9.0 volts with internal resistance 2.0 ohms inside a dashed box, connected in a loop to an external resistor R of 7.0 ohms."><rect class="fm" x="110" y="52" width="220" height="66" rx="6"/><rect class="fp s-mute sw1 dash" x="110" y="52" width="220" height="66" rx="6"/><path class="ln" d="M100 170V90H195M205 90H420V170H100"/><path class="ln" d="M205 70V110"/><path class="ln thick" d="M195 80V100"/><rect class="fp s-ink sw2" x="245" y="82" width="50" height="16"/><text class="tl tc" x="270" y="74">r = 2.0 Ω</text><text class="tl te" x="188" y="75">E = 9.0 V</text><rect class="fp s-ink sw2" x="412" y="110" width="16" height="40"/><text class="tl" x="438" y="135">R = 7.0 Ω</text></svg><figcaption>The dashed box contains the cell and its internal resistance.</figcaption></figure>
 :::
 
 What is the power dissipated in R?

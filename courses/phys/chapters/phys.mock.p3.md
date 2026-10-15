@@ -195,7 +195,7 @@ A: (a)(i) \(t = 1.06\,\mathrm{s}\) (the display reads 00:01.06) [B1]
 
 (a)(ii) Main scale 78 mm, and the 7th vernier line is aligned, so the diameter is \(78 + 7 \times 0.1 = 78.7\,\mathrm{mm}\) [B1] (allow 78.6 to 78.8 mm; the unit must be given)
 
-(a)(iii) Mean at 0.400 m: \(\dfrac{0.52 + 0.47 + 0.55}{3} = 0.513\,\mathrm{s}\). Mean at 0.800 m: \(\dfrac{1.06 + 1.00 + 1.13}{3} = 1.06\,\mathrm{s}\). [B1] (unrounded values 0.5133 and 1.0633 are accepted)
+(a)(iii) Mean at 0.400 m: \(\dfrac{0.52 + 0.47 + 0.55}{3} = 0.51\,\mathrm{s}\) (0.513 before rounding). Mean at 0.800 m: \(\dfrac{1.06 + 1.00 + 1.13}{3} = 1.06\,\mathrm{s}\). [B1] (unrounded values 0.513 and 1.063 are accepted here; the recorded values in (b) are to 0.01 s)
 
 (a)(iv) Half the range \(= \dfrac{0.55 - 0.47}{2} = 0.04\,\mathrm{s}\) and the percentage uncertainty \(= \dfrac{0.04}{0.513} \times 100\% = 7.8\%\) [B1]
 
@@ -224,7 +224,7 @@ The values are given to 0.01 s, the same number of decimal places as the raw rea
 
 (Generic answers such as "human error", "do it more carefully" or "repeat more times" score nothing: a limitation must name a specific source of error, and an improvement must be a specific change that deals with it.)
 
-(d)(i) The times have 2 significant figures (0.51 s, 1.06 s) and \(h\) has 3; \(k\) is given to 2 or 3 significant figures, the same as or one more than the least precise raw quantity. [B1]
+(d)(i) The raw times are to 0.01 s, so they have 2 significant figures at 0.400 m (0.52 s) and 3 at 0.800 m (1.06 s), and \(h\) has 3; \(k\) is given to 2 or 3 significant figures, the same as or one more than the least precise raw quantity. [B1]
 
 (d)(ii) The time \(t\): its percentage uncertainty (7.8%) is much larger than that of \(h\) (1.3%). [B1]
 

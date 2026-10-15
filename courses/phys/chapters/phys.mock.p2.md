@@ -91,7 +91,7 @@ Q: [9 marks] (#phys.dynamics) A trolley A of mass \(0.50\,\mathrm{kg}\) moves at
 The graph shows how the force on trolley B varies with time \(t\) during the collision, which lasts \(0.060\,\mathrm{s}\).
 
 :::html
-<figure class="fig small"><svg viewBox="30 5 300 190" role="img" aria-label="A force–time graph. The force rises in a straight line from zero at time zero to a maximum, then falls in a straight line to zero at 0.060 seconds."><path class="ax" d="M60 150H295"/><path class="ax" d="M60 150V20"/><path class="f1 s-acc sw1" d="M60 150L160 45L260 150Z"/><path class="c1" d="M60 150L160 45L260 150"/><path class="ln-m thin" d="M260 146V154"/><text class="ts tc" x="60" y="167">0</text><text class="ts tc" x="260" y="167">0.060</text><text class="tl tc" x="160" y="188">t / s</text><text class="tl" x="68" y="18">F</text><text class="tl tc" x="160" y="35">F max</text></svg><figcaption>The force on trolley B during the collision. The peak force is not given.</figcaption></figure>
+<figure class="fig small"><svg viewBox="30 5 300 190" role="img" aria-label="A force–time graph. The force rises in a straight line from zero at time zero to a maximum, then falls in a straight line to zero at 0.060 seconds."><path class="ax" d="M60 150H295"/><path class="ax" d="M60 150V20"/><path class="f1 s-acc sw1" d="M60 150L160 45L260 150Z"/><path class="c1" d="M60 150L160 45L260 150"/><path class="ln-m thin" d="M260 146V154"/><text class="ts tc" x="60" y="167">0</text><text class="ts tc" x="260" y="167">0.060</text><text class="tl tc" x="160" y="188">t / s</text><text class="tl" x="68" y="18">F / N</text><text class="tl tc" x="160" y="35">F max</text></svg><figcaption>The force on trolley B during the collision. The peak force is not given.</figcaption></figure>
 :::
 
 (a) State the principle of conservation of momentum. (1 mark)
@@ -103,7 +103,7 @@ The graph shows how the force on trolley B varies with time \(t\) during the col
 (d) Show that the collision is inelastic. (2 marks)
 
 (e) Compare the force that A exerts on B with the force that B exerts on A, and give a reason for your answer. (2 marks)
-A: (a) The total momentum of a system of interacting bodies is constant [B1] provided no resultant external force acts on the system. (the mark needs both parts: "constant" and "no external force")
+A: (a) The total momentum of a system of interacting bodies is constant provided no resultant external force acts on the system. [B1] (the mark needs both parts: "constant" and "no external force")
 
 (b) \(0.50 \times 2.4 = (0.50 + 0.30)\,v\) [C1]
 
@@ -225,9 +225,9 @@ A: (a) The energy converted from other forms (for example chemical) into electri
 
 (b) Total resistance \(= 15 + 20 + 1.0 = 36\,\Omega\) and \(I = \dfrac{E}{R + r} = \dfrac{12.0}{36}\) [C1]
 
-\(I = 0.33\,\mathrm{A}\) and the terminal p.d. \(V = E - Ir = 12.0 - 0.333 \times 1.0\) [C1]
+\(I = 0.33\,\mathrm{A}\) [A1]
 
-\(V = 11.7\,\mathrm{V}\) [A1] (the current need not be stated separately; allow \(V = I \times 35 = 11.7\,\mathrm{V}\))
+Terminal p.d. \(V = E - Ir = 12.0 - 0.333 \times 1.0 = 11.7\,\mathrm{V}\) [A1] (allow \(V = I \times 35 = 11.7\,\mathrm{V}\); allow error carried forward from a wrong current)
 
 (c) \(V_\text{th} = IR_\text{th} = 0.333 \times 20\) [C1]
 

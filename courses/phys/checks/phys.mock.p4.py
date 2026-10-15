@@ -169,6 +169,9 @@ eq("Q11b check", exp(-mu11 * x11), 0.12, 1e-12)
 Eg = me * c**2
 eq("Q11c(i) E photon", sf(Eg, 2), 8.2e-14, 1e-16)
 eq("Q11c(i) in MeV", sf(Eg / 1.60e-13, 2), 0.51, 1e-9)
+lam11 = h / (me * c)
+eq("Q11c(i) photon wavelength", sf(lam11, 2), 2.4e-12, 1e-15)
+eq("Q11c(i) hc/E agrees", sf(h * c / Eg, 2), 2.4e-12, 1e-15)
 
 # ---- Q12 astrophysics -----------------------------------------------------
 T12 = 2.90e-3 / 450e-9
@@ -205,6 +208,7 @@ for q, parts in marks.items():
     assert sum(parts.values()) == want[q], f"Q{q}: parts sum to {sum(parts.values())}, header says {want[q]}"
 total = sum(sum(p.values()) for p in marks.values())
 assert total == 100, f"paper total {total}"
-syn = {"Q1(b)": 2, "Q4(c)": 2, "Q5(d)": 2, "Q7(b)": 2, "Q8(c)": 3, "Q9(c)": 2, "Q11(c)(ii)": 1}
+# AS-synoptic parts (dagger): circular motion is A Level (topic 12), so Q1(b) and Q7(b) are not daggered
+syn = {"Q4(c)": 2, "Q5(c)": 2, "Q5(d)": 2, "Q8(c)": 3, "Q9(c)": 2, "Q11(c)(ii)": 1}
 assert sum(syn.values()) >= 12, sum(syn.values())
 print("ok")

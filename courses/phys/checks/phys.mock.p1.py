@@ -122,7 +122,7 @@ eq("Q9 v(T)", u - g * T, -10, 1e-9)
 st(9, "A")
 
 # ---- Q10 third-law pair: the pair of the weight (Earth on box) is box on Earth
-st(10, "D")
+st(10, "B")
 
 # ---- Q11 sticking collision
 v = (0.60 * 4.0 + 0.40 * 1.0) / (0.60 + 0.40)

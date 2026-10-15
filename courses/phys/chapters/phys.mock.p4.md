@@ -17,12 +17,12 @@
 Q: [9 marks] (#phys.gravity) (also revise [Motion in a circle](#phys.circular)) A planet of mass \(M\) has a moon in a circular orbit of radius \(r\) and period \(T\). The planet turns once on its axis in 14.0 hours.
 
 :::html
-<figure class="fig small"><svg viewBox="20 20 300 275" role="img" aria-label="A planet at the centre of two circular orbits. A larger orbit carries a moon, with an arrow from the planet's centre to the moon labelled r. A smaller dashed orbit carries a satellite."><path class="ln-m thin" d="M30 150A120 120 0 1 0 270 150A120 120 0 1 0 30 150Z"/><path class="ln-m thin dash" d="M88 150A62 62 0 1 0 212 150A62 62 0 1 0 88 150Z"/><circle class="f2 s-ink sw2" cx="150" cy="150" r="24"/><text class="tl tc" x="150" y="192">planet</text><circle class="fi" cx="270" cy="150" r="7"/><text class="tl" x="281" y="154">moon</text><path class="c1" d="M176 150H254" marker-end="url(#ah-phys)"/><text class="tl ti tc" x="224" y="138">r</text><rect class="fa" x="176" y="91" width="10" height="10"/><text class="tl" x="194" y="94">satellite</text><text class="tl tc" x="150" y="237">orbit of satellite</text><text class="tl tc" x="150" y="288">orbit of moon</text></svg><figcaption>Not to scale. The moon's orbit has radius r. The dashed circle is the orbit of a satellite of mass 640 kg.</figcaption></figure>
+<figure class="fig small"><svg viewBox="20 20 300 275" role="img" aria-label="A planet at the centre of two circular orbits. A larger orbit carries a moon, with an arrow from the planet's centre to the moon labelled r. A smaller dashed orbit carries a satellite."><path class="ln-m thin" d="M30 150A120 120 0 1 0 270 150A120 120 0 1 0 30 150Z"/><path class="ln-m thin dash" d="M88 150A62 62 0 1 0 212 150A62 62 0 1 0 88 150Z"/><circle class="f2 s-ink sw2" cx="150" cy="150" r="24"/><text class="tl tc" x="150" y="192">planet</text><circle class="fi" cx="270" cy="150" r="7"/><text class="tl" x="281" y="154">moon</text><circle class="fi" cx="150" cy="150" r="3"/><path class="c1" d="M150 150H254" marker-end="url(#ah-phys)"/><text class="tl ti tc" x="224" y="138">r</text><rect class="fa" x="176" y="91" width="10" height="10"/><text class="tl" x="194" y="94">satellite</text><text class="tl tc" x="150" y="237">orbit of satellite</text><text class="tl tc" x="150" y="288">orbit of moon</text></svg><figcaption>Not to scale. The moon's orbit has radius r. The dashed circle is the orbit of a satellite of mass 640 kg.</figcaption></figure>
 :::
 
 (a) Define gravitational field strength. (1 mark)
 
-(b) \(\dagger\) Show that for a circular orbit \(T^2 = \dfrac{4\pi^2}{GM}\,r^3\). (2 marks)
+(b) Show that for a circular orbit \(T^2 = \dfrac{4\pi^2}{GM}\,r^3\). (2 marks)
 
 (c) The moon has \(r = 4.20 \times 10^{8}\,\mathrm{m}\) and \(T = 6.30\) days. Calculate \(M\). (2 marks)
 
@@ -161,7 +161,7 @@ Q: [9 marks] (#phys.efields) (also revise [Kinematics](#phys.kinematics)) An ele
 
 (b) Calculate the electric field strength between the plates. (2 marks)
 
-(c) Calculate the acceleration of the electron between the plates. (2 marks)
+(c) \(\dagger\) Calculate the acceleration of the electron between the plates. (2 marks)
 
 (d) \(\dagger\) Calculate the vertical deflection of the electron as it leaves the plates. (2 marks)
 
@@ -172,7 +172,7 @@ A: (a) The force per unit positive charge acting on a small stationary test char
 
 \(E = 1.5 \times 10^{4}\,\mathrm{V\,m^{-1}}\) [A1] (allow \(\mathrm{N\,C^{-1}}\))
 
-(c) \(a = \dfrac{eE}{m} = \dfrac{1.60 \times 10^{-19} \times 1.5 \times 10^{4}}{9.11 \times 10^{-31}}\) [C1]
+(c) \(F = eE\) and Newton's second law \(F = ma\) give \(a = \dfrac{eE}{m} = \dfrac{1.60 \times 10^{-19} \times 1.5 \times 10^{4}}{9.11 \times 10^{-31}}\) [C1]
 
 \(a = 2.6 \times 10^{15}\,\mathrm{m\,s^{-2}}\) [A1]
 
@@ -209,7 +209,7 @@ A: (a) The charge stored (on one plate) per unit potential difference (between t
 
 \(E = 3.7 \times 10^{-2}\,\mathrm{J}\) [A1]
 
-(c)(i) \(\tau = RC = 47 \times 10^{3} \times 330 \times 10^{-6} = 15.5\,\mathrm{s}\) [C1]
+(c)(i) \(\tau = RC = 47 \times 10^{3} \times 330 \times 10^{-6} = 15.5\,\mathrm{s}\) [A1]
 
 (ii) \(V = V_0 e^{-t/RC}\), so \(3.0 = 15\,e^{-t/15.5}\) [C1]
 
@@ -225,7 +225,7 @@ Q: [8 marks] (#phys.magnetic) (also revise [Motion in a circle](#phys.circular))
 
 (a) Define the tesla. (2 marks)
 
-(b) \(\dagger\) A particle of mass \(m\) and charge \(q\) moves at speed \(v\) at right angles to a uniform magnetic field of flux density \(B\). Show that the particle moves in a circle of radius \(r = \dfrac{mv}{Bq}\). (2 marks)
+(b) A particle of mass \(m\) and charge \(q\) moves at speed \(v\) at right angles to a uniform magnetic field of flux density \(B\). Show that the particle moves in a circle of radius \(r = \dfrac{mv}{Bq}\). (2 marks)
 
 :::html
 <figure class="fig"><svg viewBox="20 30 520 185" role="img" aria-label="Two horizontal parallel plates with an electric field E pointing downwards between them and a magnetic field into the page shown by crosses. A beam of ions travels straight through between the plates from left to right."><rect class="fi" x="120" y="50" width="300" height="8"/><rect class="fi" x="120" y="170" width="300" height="8"/><path class="ln-m thin" d="M186 74L194 82M194 74L186 82M246 74L254 82M254 74L246 82M306 74L314 82M314 74L306 82M366 74L374 82M374 74L366 82M186 146L194 154M194 146L186 154M246 146L254 154M254 146L246 154M306 146L314 154M314 146L306 154M366 146L374 154M374 146L366 154"/><path class="c1" d="M40 114H480" marker-end="url(#ah-phys)"/><text class="tl" x="40" y="104">ions, speed v</text><path class="c2" d="M146 70V100" marker-end="url(#ah2-phys)"/><text class="tl ti" x="166" y="92">E</text><text class="tl" x="104" y="60">+</text><text class="tl" x="104" y="180">−</text><text class="tl" x="430" y="60">p.d. = 1.2 kV</text><text class="tl tc" x="270" y="204">magnetic field B into the page</text></svg><figcaption>The magnetic field points into the page (crosses). The ions move to the right, so the electric force and the magnetic force on them point in opposite directions.</figcaption></figure>
@@ -281,7 +281,7 @@ A: (a)(i) The magnitude of the induced e.m.f. is proportional (equal) to the rat
 
 \(\mathcal{E} = 0.18\,\mathrm{V}\) [A1]
 
-(c)(i) \(V_{r.m.s.} = \dfrac{V_0}{\sqrt{2}} = \dfrac{24}{\sqrt{2}} = 17\,\mathrm{V}\) [C1]
+(c)(i) \(V_{r.m.s.} = \dfrac{V_0}{\sqrt{2}} = \dfrac{24}{\sqrt{2}} = 17\,\mathrm{V}\) [A1]
 
 (ii) \(P = \dfrac{V_{r.m.s.}^2}{R} = \dfrac{(24/\sqrt{2})^2}{12}\) [C1]
 
@@ -369,9 +369,9 @@ Q: [8 marks] (#phys.medical) (also revise [Dynamics and momentum](#phys.dynamics
 
 (c) In a PET scan a positron annihilates with an electron. Both are at rest just before the annihilation and two photons are produced.
 
-(i) Calculate the energy of each photon, in joules. (1 mark)
+(i) Calculate the wavelength of each photon. (1 mark)
 
-(ii) \(\dagger\) Explain why the two photons travel in opposite directions. (1 mark)
+(ii) \(\dagger\) Explain why the annihilation cannot produce just one photon. (1 mark)
 A: (a)(i) \(\dfrac{I_R}{I_0} = \dfrac{(Z_2 - Z_1)^2}{(Z_2 + Z_1)^2}\) [C1]
 
 \(= \dfrac{(1.70 \times 10^{6} - 1.38 \times 10^{6})^2}{(1.70 \times 10^{6} + 1.38 \times 10^{6})^2}\) [C1]
@@ -384,9 +384,9 @@ A: (a)(i) \(\dfrac{I_R}{I_0} = \dfrac{(Z_2 - Z_1)^2}{(Z_2 + Z_1)^2}\) [C1]
 
 \(x = 3.3 \times 10^{-2}\,\mathrm{m}\) (3.3 cm) [A1]
 
-(c)(i) \(E = m_e c^2 = 9.11 \times 10^{-31} \times (3.00 \times 10^{8})^2 = 8.2 \times 10^{-14}\,\mathrm{J}\) [B1] (each photon carries the rest energy of one particle)
+(c)(i) Each photon carries the rest energy of one particle, \(E = m_e c^2 = 8.2 \times 10^{-14}\,\mathrm{J}\), so \(\lambda = \dfrac{hc}{E} = \dfrac{h}{m_e c} = \dfrac{6.63 \times 10^{-34}}{9.11 \times 10^{-31} \times 3.00 \times 10^{8}} = 2.4 \times 10^{-12}\,\mathrm{m}\) [B1]
 
-(ii) The total momentum before the annihilation is zero and momentum is conserved, so the two photons have equal and opposite momenta. [B1]
+(ii) The total momentum before the annihilation is zero and momentum is conserved, but a single photon always has momentum (\(p = h/\lambda\)), so at least two photons with equal and opposite momenta must be produced. [B1]
 :::
 
 :::try
