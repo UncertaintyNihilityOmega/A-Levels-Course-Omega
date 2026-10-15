@@ -29,22 +29,28 @@ eq("mcq 4v/g", sf(4 * 14 / g, 2), 5.7)
 eq("mcq dist", 0.5 * 20 * 5.0, 50)
 eq("mcq vt", 20 * 5.0, 100)
 eq("mcq decel", 20 / 5.0, 4.0)
-# Q6 collision
-v = 2.0 * 3.0 / 3.0
-eq("mcq v", v, 2.0)
-eq("mcq KE0", 0.5 * 2.0 * 3.0**2, 9.0)
-eq("mcq KE1", 0.5 * 3.0 * v**2, 6.0)
-eq("mcq loss", 9.0 - 6.0, 3.0)
+# Q6 rebound (REVIEW: replaced the trolley question that duplicated phys.exam.p1)
+dp = 0.15 * (6.0 - (-8.0))
+eq("mcq dp", dp, 2.1)
+eq("mcq F", dp / 0.020, 105)
+eq("mcq F wrong sub", 0.15 * (8.0 - 6.0) / 0.020, 15)
+eq("mcq F arriving", 0.15 * 8.0 / 0.020, 60)
 # Q7 floating
 eq("mcq floating", 600 / 1000, 0.60)
 # Q8 power
 eq("mcq power", 1200 * 25, 30000)
 eq("mcq F/v", 1200 / 25, 48)
 eq("mcq half", 0.5 * 1200 * 25, 15000)
-# Q9 wire
-eq("mcq wire", 2 / (2**2), 0.5)
-# Q10 intensity
-eq("mcq intensity", 3**2, 9)
+# Q9 elastic energy (REVIEW: replaced the wire question that duplicated phys.exam.p1)
+eq("mcq EPE", 0.5 * 40 * 8.0e-3, 0.16)
+eq("mcq EPE no half", 40 * 8.0e-3, 0.32)
+eq("mcq EPE mm", 0.5 * 40 * 8.0, 160)
+eq("mcq k", 40 / 8.0e-3, 5000)
+# Q10 Malus (REVIEW: replaced the intensity question that duplicated phys.exam.p1)
+from math import cos
+eq("mcq malus", cos(radians(60))**2, 0.25)
+eq("mcq malus sin2", sin(radians(60))**2, 0.75)
+eq("mcq malus sin", sf(sin(radians(60)), 2), 0.87)
 # Q11 stationary
 eq("mcq wavelength", 2 * 1.2 / 3, 0.80)
 eq("mcq loop", 1.2 / 3, 0.40)
@@ -121,7 +127,10 @@ ext = sigma * L / E
 eq("A5 ext", ext, 1.8e-3)
 lam = 2 * L / 4
 eq("A5 lambda", lam, 0.60)
-eq("A5 v", 160 * lam, 96)
+# REVIEW: 320 Hz (not 160 Hz) so that v agrees with sqrt(T/mu) for this steel wire (rho 7800 kg/m3)
+eq("A5 v", sf(320 * lam, 2), 190)
+mu = 7800 * 0.30e-6
+assert abs(sqrt(90 / mu) - 320 * lam) / (320 * lam) < 0.05
 
 # ---- Set B
 # B1 CRO

@@ -44,12 +44,12 @@ Do each set in one sitting, without notes, at about 1.25 minutes per mark (a 7-m
 + The gravitational pull of the book on the Earth.
 - The weight of the table.
 > A third-law pair acts on two different bodies and is the same type of force. The pull of the Earth on the book pairs with the pull of the book on the Earth. The contact force of the table balances the weight, but that is a coincidence of equilibrium, not a third-law pair. Revise [Dynamics and momentum](#phys.dynamics).
-? A trolley of mass 2.0 kg moving at \(3.0\,\mathrm{m\,s^{-1}}\) hits a stationary trolley of mass 1.0 kg and the two stick together. How much kinetic energy is lost?
-- 0
-+ 3.0 J
-- 6.0 J
-- 9.0 J
-> Momentum: \(2.0 \times 3.0 = 3.0v\), so \(v = 2.0\,\mathrm{m\,s^{-1}}\). The kinetic energy falls from \(\tfrac12 \times 2.0 \times 3.0^2 = 9.0\,\mathrm{J}\) to \(\tfrac12 \times 3.0 \times 2.0^2 = 6.0\,\mathrm{J}\), a loss of 3.0 J. Zero would be an elastic collision, and 6.0 J is the energy that is left. Revise [Dynamics and momentum](#phys.dynamics).
+? A ball of mass 0.15 kg hits a wall at right angles at \(8.0\,\mathrm{m\,s^{-1}}\) and rebounds along the same line at \(6.0\,\mathrm{m\,s^{-1}}\). It is in contact with the wall for 0.020 s. What is the average force of the wall on the ball?
+- 2.1 N
+- 15 N
+- 60 N
++ \(1.1 \times 10^{2}\,\mathrm{N}\)
+> Velocity is a vector: taking the rebound direction as positive, \(\Delta p = 0.15 \times (6.0 - (-8.0)) = 2.1\,\mathrm{kg\,m\,s^{-1}}\), and \(F = \Delta p/\Delta t = 2.1/0.020 = 105\,\mathrm{N}\), which is \(1.1 \times 10^{2}\,\mathrm{N}\). 15 N subtracts the speeds as if the ball kept going the same way. 60 N uses only the arriving momentum. 2.1 N is the change of momentum, not the force. Revise [Dynamics and momentum](#phys.dynamics).
 ? A block of density \(600\,\mathrm{kg\,m^{-3}}\) floats in water of density \(1000\,\mathrm{kg\,m^{-3}}\). What fraction of its volume is below the water surface?
 - 0.40
 + 0.60
@@ -62,18 +62,18 @@ Do each set in one sitting, without notes, at about 1.25 minutes per mark (a 7-m
 - 15 kW
 + 30 kW
 > At constant speed \(P = Fv = 1200 \times 25 = 30\,000\,\mathrm{W} = 30\,\mathrm{kW}\). Dividing force by speed gives 48 (and the wrong unit), 1.2 kW forgets the speed, and 15 kW wrongly halves it as in kinetic energy. Revise [Work, energy and power](#phys.energy).
-? Wire Y is made of the same material as wire X, is twice as long and has twice the diameter. The same load hangs from each. The extension of X is \(x\). What is the extension of Y?
-- \(x/4\)
-+ \(x/2\)
-- \(x\)
-- \(2x\)
-> The extension is \(FL/(AE)\). Doubling the length doubles it, and doubling the diameter makes the area four times larger, so the extension is divided by four. The net effect is \(2/4 = \tfrac12\). Answering \(2x\) ignores the diameter, and \(x\) treats the area as only doubling. Revise [Deformation of solids](#phys.solids).
-? The amplitude of a progressive wave is tripled. By what factor does its intensity change?
-- 3
-- 6
-+ 9
-- 27
-> Intensity is proportional to the square of the amplitude, so tripling the amplitude multiplies the intensity by \(3^2 = 9\). Revise [Waves](#phys.waves).
+? The force–extension graph of a spring is a straight line through the origin up to a force of 40 N at an extension of 8.0 mm. How much elastic potential energy is stored at this point?
++ 0.16 J
+- 0.32 J
+- 160 J
+- \(5.0 \times 10^{3}\,\mathrm{J}\)
+> The energy is the area under the graph, a triangle: \(\tfrac12 Fx = \tfrac12 \times 40 \times 8.0 \times 10^{-3} = 0.16\,\mathrm{J}\). 0.32 J leaves out the \(\tfrac12\) (it is the area of the rectangle). 160 J forgets to change millimetres to metres. \(5.0 \times 10^{3}\) is the gradient \(F/x\), the spring constant in \(\mathrm{N\,m^{-1}}\), not an energy. Revise [Deformation of solids](#phys.solids).
+? Vertically polarised light of intensity \(I_0\) passes through a polarising filter whose transmission axis is at 60° to the vertical. What is the intensity of the light that passes through?
++ \(0.25\,I_0\)
+- \(0.50\,I_0\)
+- \(0.75\,I_0\)
+- \(0.87\,I_0\)
+> Malus's law: \(I = I_0\cos^2\theta = I_0\cos^2 60^\circ = 0.25\,I_0\). \(0.50\,I_0\) forgets to square the cosine. \(0.75\,I_0\) uses \(\sin^2\theta\), and \(0.87\,I_0\) is \(\sin 60^\circ\), with no square. Revise [Waves](#phys.waves).
 ? A stretched string is fixed at both ends and vibrates in a stationary wave with three loops. The string is 1.2 m long. What is the wavelength?
 - 0.40 m
 + 0.80 m
@@ -135,12 +135,12 @@ A: (a) The block is in equilibrium, so there is no resultant force: the upthrust
 (c) \(p = \rho g h = 1000 \times 9.81 \times 0.080\) [C1] \(= 7.8 \times 10^{2}\,\mathrm{Pa}\). [A1]
 (d) The lower face is deeper than the upper face (which is above the water), so the pressure on it is larger. [B1] The resultant upward force is \(pA = 785 \times 0.040 = 31\,\mathrm{N}\), the same as the weight, which is the upthrust. [B1]
 Also revise: [Dynamics and momentum](#phys.dynamics).
-Q: [9 marks] (#phys.superposition) ★★★ A steel wire of length 1.200 m and cross-sectional area \(0.30\,\mathrm{mm^2}\) is held between two fixed points by a tension of 90 N. The Young modulus of steel is \(2.0 \times 10^{11}\,\mathrm{Pa}\). (a) Calculate the stress in the wire and its extension. (b) A vibrator drives the wire at 160 Hz and the wire forms a stationary wave with four loops between the fixed ends. Take the length of the wire as 1.200 m. Calculate the wavelength and the speed of the waves on the wire. (c) Explain how the stationary wave is formed.
+Q: [9 marks] (#phys.superposition) ★★★ A steel wire of length 1.200 m and cross-sectional area \(0.30\,\mathrm{mm^2}\) is held between two fixed points by a tension of 90 N. The Young modulus of steel is \(2.0 \times 10^{11}\,\mathrm{Pa}\). (a) Calculate the stress in the wire and its extension. (b) A vibrator drives the wire at 320 Hz and the wire forms a stationary wave with four loops between the fixed ends. Take the length of the wire as 1.200 m. Calculate the wavelength and the speed of the waves on the wire. (c) Explain how the stationary wave is formed.
 H: Stress is force divided by area, and the area must be in \(\mathrm{m^2}\): \(0.30\,\mathrm{mm^2} = 0.30 \times 10^{-6}\,\mathrm{m^2}\).
 H: Strain is extension divided by original length, and the Young modulus is stress divided by strain.
 H: Each loop of a stationary wave is half a wavelength.
 A: (a) Stress \(= F/A = \dfrac{90}{0.30 \times 10^{-6}}\) [C1] \(= 3.0 \times 10^{8}\,\mathrm{Pa}\). [A1] Extension \(x = \dfrac{\sigma L}{E} = \dfrac{3.0 \times 10^{8} \times 1.200}{2.0 \times 10^{11}}\) [C1] \(= 1.8 \times 10^{-3}\,\mathrm{m}\) (1.8 mm). [A1]
-(b) Four loops fill the wire, so \(4 \times \tfrac{\lambda}{2} = 1.200\) [C1] and \(\lambda = 0.60\,\mathrm{m}\). [A1] \(v = f\lambda = 160 \times 0.60 = 96\,\mathrm{m\,s^{-1}}\). [A1]
+(b) Four loops fill the wire, so \(4 \times \tfrac{\lambda}{2} = 1.200\) [C1] and \(\lambda = 0.60\,\mathrm{m}\). [A1] \(v = f\lambda = 320 \times 0.60 = 1.9 \times 10^{2}\,\mathrm{m\,s^{-1}}\). [A1]
 (c) The wave from the vibrator travels along the wire and reflects at the fixed end. The incident and reflected waves, with the same frequency and speed but travelling in opposite directions, superpose. [B1] The ends cannot move, so there is a node at each end, and nodes and antinodes form at fixed positions along the wire. [B1]
 Also revise: [Deformation of solids](#phys.solids).
 :::

@@ -126,5 +126,8 @@ I = 6.0 / (5.0 + 1.0)
 eq("q9 I", I, 1.0)
 eq("q9 V", I * 5.0, 5.0)
 eq("q9 lost", I * 1.0, 1.0)
+# REVIEW: fourth options added to the crane and cell questions
+eq("q4 KE option", 0.5 * 400 * 0.50**2, 50)
+eq("q9 E/R slip", 6.0 - (6.0 / 5.0) * 1.0, 4.8)
 
 print("ok")

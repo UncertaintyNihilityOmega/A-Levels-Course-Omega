@@ -330,10 +330,11 @@ Past Paper 1 questions are the best material once you have worked through the ch
 > The weight of the rule acts at its centre, the 0.50 m mark, which is 0.20 m from the pivot: \(W \times 0.30 = 1.2 \times 0.20\), so \(W = 0.80\,\mathrm{N}\). 1.8 N swaps the two distances. 0.36 N is \(1.2 \times 0.30\) with no division. 1.2 N assumes equal weights balance. Revise [Forces, density and pressure](#phys.forces).
 
 ? A crane lifts a 400 kg load at a steady speed of 0.50 m s⁻¹. What is the useful power output of the crane?
+- \(50\,\mathrm{W}\)
 - \(2.0 \times 10^{2}\,\mathrm{W}\)
 + \(2.0 \times 10^{3}\,\mathrm{W}\)
 - \(7.8 \times 10^{3}\,\mathrm{W}\)
-> At steady speed the lifting force equals the weight, so \(P = Fv = mgv = 400 \times 9.81 \times 0.50 = 1.96 \times 10^{3}\,\mathrm{W}\), which is \(2.0 \times 10^{3}\,\mathrm{W}\) to 2 s.f. \(2.0 \times 10^{2}\,\mathrm{W}\) is \(mv\), with \(g\) forgotten. \(7.8 \times 10^{3}\,\mathrm{W}\) divides by the speed. Revise [Work, energy and power](#phys.energy).
+> At steady speed the lifting force equals the weight, so \(P = Fv = mgv = 400 \times 9.81 \times 0.50 = 1.96 \times 10^{3}\,\mathrm{W}\), which is \(2.0 \times 10^{3}\,\mathrm{W}\) to 2 s.f. 50 W is the kinetic energy \(\tfrac12 mv^2\), which does not change at steady speed. \(2.0 \times 10^{2}\,\mathrm{W}\) is \(mv\), with \(g\) forgotten. \(7.8 \times 10^{3}\,\mathrm{W}\) divides by the speed. Revise [Work, energy and power](#phys.energy).
 
 ? A wire extends by \(x\) under a load \(F\). A second wire of the same material, with twice the length and twice the diameter, carries the same load. What is its extension?
 - \(x/4\)
@@ -365,9 +366,10 @@ Past Paper 1 questions are the best material once you have worked through the ch
 
 ? A cell of e.m.f. 6.0 V and internal resistance 1.0 Ω is connected to a resistor of resistance 5.0 Ω. What is the p.d. across the resistor?
 - 1.0 V
+- 4.8 V
 + 5.0 V
 - 6.0 V
-> The current is \(I = E/(R + r) = 6.0/6.0 = 1.0\,\mathrm{A}\), so the p.d. across the resistor is \(IR = 5.0\,\mathrm{V}\). 6.0 V ignores the internal resistance. 1.0 V is the lost volts \(Ir\). Revise [D.C. circuits](#phys.dc).
+> The current is \(I = E/(R + r) = 6.0/6.0 = 1.0\,\mathrm{A}\), so the p.d. across the resistor is \(IR = 5.0\,\mathrm{V}\). 6.0 V ignores the internal resistance. 1.0 V is the lost volts \(Ir\). 4.8 V finds the current as \(E/R = 1.2\,\mathrm{A}\), leaving out \(r\), and then subtracts \(Ir = 1.2\,\mathrm{V}\). Revise [D.C. circuits](#phys.dc).
 
 ? Which row describes what happens to the nucleon number \(A\) and the proton number \(Z\) of a nucleus that undergoes β⁻ decay?
 - \(A\) decreases by 4, \(Z\) decreases by 2
