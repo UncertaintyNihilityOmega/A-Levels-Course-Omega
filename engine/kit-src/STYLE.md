@@ -170,12 +170,40 @@ maths scrolls on its own) or a `\[\begin{aligned} … \\ … \end{aligned}\]` wi
    - Text: `tl`, `ts`, `tb`, `ti`, `tc`, `te`, `ta`, `ta2`, `tr`, `tp`, `halo`. Unicode maths in SVG text (x², θ, Δ, →).
      Labels use `tl` (`ts` only for axis tick numbers), with `halo` where a label touches a line.
    - Arrowheads: `marker-end="url(#ah)"`, also `#ahm`, `#ahr`, `#ahok`, `#ah-<course>`, `#ah2-<course>`.
-   - viewBox about 560–680 wide so text stays readable on phones, cropped to the drawing plus about 15 px.
+   - viewBox about 520–640 wide so text stays readable on phones, cropped to the drawing plus about 15 px.
      Check coordinates with Python.
    - `class="fig wide"` for wide multi-panel figures, `class="fig small"` for small ones.
 3. **Widgets** (interactive), inside `:::html`: `<div class="widget" data-w="NAME" data-…></div>`. The
    widgets this course has are in kit/WIDGETS.md and widgets.js. Text around a widget says what to try; the
    page must make sense without it.
+
+### Figure and widget lessons from earlier courses (most review fixes were these)
+Writers cannot see their figures, so check these with coordinates (Python) before `check`, then look once with
+`shot <id>` and `shot <id> --dark --phone`.
+- **Label boxes.** A 13 px `tl` label is about 7 px per character wide and 13 px tall (baseline at `y`, top at `y − 10`).
+  Keep every label box at least 4 px clear of every line, arrow and other label, including the line it names. End each
+  arrow at least 10 px short of any other path or label, or its head seems to name it. Arrows under ~20 px show only a head.
+- **Scale.** `fig` shows about 625 px wide, `fig small` about 360 px. Use a 520–640-wide viewBox in `fig` and about
+  300–350 in `fig small`; anything between (280–420 in `fig`) shows labels at double size. Crop the viewBox to the
+  drawing + about 15 px.
+- **Classes.** Never name colours in captions, text or widget notes ("the blue arrow"): the palette changes in dark mode;
+  name things by their labels or by "dashed". `fi` (ink) and `fp` (paper) swap brightness in dark mode, so never let them
+  mean "dark" and "bright". `thin`/`thick` change `ln` only, not `c1`–`c3` (use `sw2`, `sw3`). `gr` nearly vanishes: draw
+  reference lines with `ln-m thin dash`. `marker-end` on a path with several `M…` subpaths draws one head: one path per arrow.
+  Give every arrow of the same quantity the same class.
+- **`:::plot`.** The `--ylabel` sits at the top left and the `--xlabel` above the right end of the x-axis: a curve that ends
+  near the x-axis or starts near the top left runs through them. Cut it short with a domain trick
+  (`--f "300/x+0*sqrt(x-1)+0*sqrt(7.2-x)" --x 0 8`) and extend `--x` about 15%. Use `--legend tr`, not `tl`. Leave about
+  30% headroom above the curves for `--label` and point labels; keep point labels ~100 px apart and off the tick numbers
+  (`@se`/`@ne`, not `@s`, on the x-axis). Start `--y` at 0 unless the origin is far off. At most two series per plot.
+- **Widgets.** Axis ranges must follow the values (a fixed window that squeezes the interesting part is a bug). Keep
+  legends off the curves, one item per line from the second row down (the first row holds the `W.axes` y-label).
+  `W.ticks` with `ny: 2` often returns only 0: use 3 or 4. A checkbox row needs
+  `style: {display: 'flex', alignItems: 'center', gap: '8px'}` on its `.w-ctl` label with the text in a `.w-lab` span.
+  Don't stroke very short thick canvas arcs (Chrome leaves marks): draw chords.
+- **`:::board` boxes.** One board and one content difference you are sure of, every time. Never claims about a board you
+  cannot verify ("other specifications", two boards at once); otherwise write only about the main board.
+- **Rounding.** Never reuse a rounded intermediate in a later step; the check script computes from unrounded values.
 
 ## Accuracy (non-negotiable)
 - Every number in the chapter (worked examples, try answers, quiz options, figure labels) is recomputed in
