@@ -1,13 +1,13 @@
 # STATUS: Chemistry
 
-Last: 2026-10-16 · REVIEW P1, P2 · 3 items in REVIEW.md (atoms successive-IE sketch, moles C/H/O combustion question, f.basics harder stretch). Fixed: overview phenol row; f.basics Khan link (checked in browser) and ion list; atoms Cu2+ colour cause, IE wording, P sixth IE, free radicals vs transition-metal ions; moles mole definition via Avogadro constant, quiz explanation; widgets periodic (Ar 1 d.p., compact phone layout without sideways scroll, Cr/Cu notes), chem-config (free-radical note only for non-d-block, Sc-Zn wording), molar (moles->mass relabels field); templates in data/ and generators rerun; COURSE.md lessons added
+Last: 2026-10-16 · WRITE P3 · chem.bonding (7057 words) and chem.shapes (7921 words), both pass check and phone; widget chem-vsepr (3D VSEPR, presets and bp/lp, probed clean in light, dark, phone and bad attributes); generator and clearance checker for the shapes figures in data/mk_shapes_figs.py. Reviewer: shapes quotes b.p. values (hydrides, alkane isomers) and ice density 0.917 from memory, all asserted for ordering only in checks; the SF4 and ClF3 shapes and the see-saw/T-shaped table go slightly beyond the syllabus list (marked as unfamiliar species).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
 - LEAD: done 2026-10-15
 - P1: reviewed 2026-10-16
 - P2: reviewed 2026-10-16
-- P3: writing 2026-10-15
+- P3: written 2026-10-16
 - P4: writing 2026-10-16
 - P5: open
 - P6: open
