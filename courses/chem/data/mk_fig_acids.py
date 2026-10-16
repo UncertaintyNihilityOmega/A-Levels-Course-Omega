@@ -22,7 +22,7 @@ def titr():
     f = Fig()
     out = []
     for k, (name, a, b, steep, eq1, eq2) in enumerate(CASES):
-        ox, oy = (k % 2) * 305 + 5, (k // 2) * 240
+        ox, oy = 5, k * 230
         pts, X, Y = curve_pts(a, b, ox, oy)
         x0, x1 = ox + 36, ox + 240
         yb, yt = oy + 175, oy + 30
@@ -49,26 +49,27 @@ def titr():
 
 def ind():
     f = Fig()
-    X = lambda p: 190 + 400 * p / 14.0
+    X = lambda p: 20 + 300 * p / 14.0
+    YA = 352
     for p in range(0, 15, 2):
-        f.add(f'<path class="ln" d="M{X(p):.0f} 292V298"/>')
-        f.add(f'<text class="ts tc" x="{X(p):.0f}" y="310">{p}</text>')
-    f.add('<path class="ax" d="M190 292H600" marker-end="url(#ahm)"/>')
-    f.label(390, 332, 'pH', 'middle')
+        f.add(f'<path class="ln" d="M{X(p):.0f} {YA}V{YA+6}"/>')
+        f.add(f'<text class="ts tc" x="{X(p):.0f}" y="{YA+20}">{p}</text>')
+    f.add(f'<path class="ax" d="M20 {YA}H336" marker-end="url(#ahm)"/>')
+    f.label(170, YA + 44, 'pH', 'middle')
     rows = [('methyl orange', 2.9, 4.6, 'fa'), ('bromophenol blue', 3.0, 4.5, 'fa'), ('thymol blue', 8.0, 9.6, 'fa'), ('thymolphthalein', 9.3, 10.5, 'fa')]
-    f.label(10, 18, 'indicator ranges', 'start')
+    f.label(10, 16, 'indicator ranges', 'start')
     for i, (n, a, b, c) in enumerate(rows):
-        y = 50 + 32 * i
-        f.add(f'<text class="tl" x="180" y="{y+5}" text-anchor="end">{n}</text>')
-        f.add(f'<rect class="{c}" x="{X(a):.0f}" y="{y-9}" width="{X(b)-X(a):.0f}" height="18" rx="3"/>')
-        f.label(round(X(b) + 8), y + 5, f'{a}–{b}', 'start', 'tl', False)
-    f.label(10, 184, 'steep part of the curve', 'start')
+        y = 40 + 40 * i
+        f.label(20, y, n, 'start')
+        f.add(f'<rect class="{c}" x="{X(a):.0f}" y="{y+6}" width="{X(b)-X(a):.0f}" height="16" rx="3"/>')
+        f.label(round(X(b) + 8), y + 19, f'{a}–{b}', 'start', 'tl', False)
+    f.label(10, 210, 'steep part of the curve', 'start')
     rows2 = [('strong acid + strong base', 3.0, 11.0, '3–11'), ('weak acid + strong base', 6.5, 11.0, '6.5–11'), ('strong acid + weak base', 3.0, 7.5, '3–7.5')]
     for i, (n, a, b, t) in enumerate(rows2):
-        y = 216 + 32 * i
-        f.add(f'<text class="tl" x="180" y="{y+5}" text-anchor="end">{n}</text>')
-        f.add(f'<rect class="fm s-acc" x="{X(a):.0f}" y="{y-9}" width="{X(b)-X(a):.0f}" height="18" rx="3"/>')
-        f.label(round(X(b) + 8), y + 5, t, 'start', 'tl', False)
+        y = 234 + 40 * i
+        f.label(20, y, n, 'start')
+        f.add(f'<rect class="fm s-acc" x="{X(a):.0f}" y="{y+6}" width="{X(b)-X(a):.0f}" height="16" rx="3"/>')
+        f.label(round(X(b) + 8), y + 19, t, 'start', 'tl', False)
     return f
 
 if __name__ == "__main__":

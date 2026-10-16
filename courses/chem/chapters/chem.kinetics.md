@@ -262,8 +262,8 @@ A catalyst does take part: the reactants may stick to its surface or form an int
 
 The effect on the Boltzmann distribution is that **the distribution does not change** (the temperature is the same), but the activation energy moves to the left. A larger area now lies to the right of it. A much larger proportion of the molecules has enough energy to react, so the frequency of effective collisions rises.
 
-:::plot The same Boltzmann distribution with two activation energies. The catalyst lowers Eₐ, so the area to the right of the line marked Eₐ (catalyst) is much larger than the area to the right of the line marked Eₐ.
---f "2/sqrt(pi)*sqrt(x)*exp(-x)+0*sqrt(6.6-x)" --x 0 7.5 --y 0 0.6 --vline 3 --vline 1.8 --pt "1.8,0.4,Eₐ (catalyst)@w" --pt "3,0.25,Eₐ@e" --xlabel "energy" --ylabel "number of molecules" --noticks
+:::plot The same Boltzmann distribution with two activation energies. The catalyst lowers Eₐ, so the area to the right of the line marked Eₐ (catalyst) (shaded) is much larger than the area to the right of the line marked Eₐ.
+--f "2/sqrt(pi)*sqrt(x)*exp(-x)+0*sqrt(6.6-x)" --x 0 7.5 --y 0 0.75 --shade "0,2.1,6.6" --vline 2.1 --vline 3.4 --pt "2.1,0.55,Eₐ (catalyst)@w" --pt "3.4,0.55,Eₐ@e" --xlabel "energy" --ylabel "number of molecules" --noticks
 :::
 
 The numbers are striking. At 300 K, lowering Eₐ from 50 to 30 kJ mol⁻¹ increases the fraction of molecules that can react by a factor of about 2400.
