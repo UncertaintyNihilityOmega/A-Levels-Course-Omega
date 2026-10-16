@@ -159,4 +159,20 @@ q = 100 * c * 5.0
 eq("quiz q", q, 2090)
 eq("quiz dH", sf(q / 1000 / 0.0500, 3), 41.8)
 eq("quiz forgot n", sf(q / 1000, 3), 2.09)
+# ---- try: extrapolating a temperature-time table (REVIEW P3, P4)
+temps = {5: 27.4, 6: 27.2, 7: 27.0, 8: 26.8, 9: 26.6}
+fall = temps[5] - temps[6]
+assert all(isclose(temps[t] - temps[t + 1], fall) for t in range(5, 9))
+eq("cooling per minute", round(fall, 1), 0.2)
+T4 = temps[5] + fall * (5 - 4)
+eq("extrapolated T at 4 min", round(T4, 1), 27.6)
+dT_try = round(T4 - 21.0, 1)
+eq("dT", dT_try, 6.6)
+q_try = 50.0 * c * dT_try
+eq("q", round(q_try), 1379)
+n_try = 1.00 * 25.0 / 1000
+eq("n", n_try, 0.0250)
+eq("dH J", round(-q_try / n_try), -55176)
+eq("dH kJ", sf(-q_try / n_try / 1000, 3), -55.2)
+
 print("ok")

@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-16 · REVIEW P3, P4 · 2 items in REVIEW.md (shapes hydride b.p. plot; energetics extrapolation question). Fixed: bonding dot-and-cross labels off circle lines, CO2 redrawn, sigma/pi nuclei; shapes id-id caption (was wrong), butane -0.5 C, all b.p./ice data verified with sources in checks; vsepr note (symmetric shapes, no colour word); states 22.4 wording, graphite electrons along layers; energetics graph, bond-level diagram and 3 Hess cycles redrawn as fig small (13 px on phones); COURSE.md lessons
+Last: 2026-10-16 · WRITE P7 · chem.periodicity (7650 words, 20 eg) and chem.group2 (6208 words, 16 eg; A Level section last); widget chem-trend built by data/mk_trend.py from FACTS.md (modes first/en/successive, all sets, probed clean light/dark/phone/bad attributes; chem.atoms attrs still work). Figures from data/mk_fig_period3.py and data/mk_fig_group2.py. Reviewer notes: node kit/zta.js shot chem.periodicity returns no image for its two hand figures (they render fine when pasted into chem.group2 and shot there; phone check passes). Check pH/range wording 'about', the Group 1 stretch question (Li) and the A Level sulfate/hydroxide solubility argument; one A Level eg uses data for this question (dHsol -120).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -10,8 +10,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P3: reviewed 2026-10-16
 - P4: reviewed 2026-10-16
 - P5: written 2026-10-16
-- P6: writing 2026-10-16
-- P7: open
+- P6: written 2026-10-16
+- P7: written 2026-10-16
 - P8: open
 - P9: open
 - P10: open

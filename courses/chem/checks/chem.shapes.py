@@ -131,6 +131,8 @@ bp14 = [-162, -112, -88, -52]; bp16 = [100, -60, -41, -2]
 assert bp14 == sorted(bp14) and bp16[1:] == sorted(bp16[1:])
 assert bp16[0] > bp16[-1]                      # water anomalous
 eq("water vs methane", bp16[0] - bp14[0], 262)
+# ---- boiling point against period plot (REVIEW P3, P4): data/mk_fig_hydrides.py plots exactly these eight values
+eq("water above H2S", bp16[0] - bp16[1], 160)
 assert -162 < -89 < -42 < -0.5                  # CH4, C2H6, C3H8, C4H10
 assert 36 > 28 > 9.5                           # pentane, 2-methylbutane, neopentane
 assert -162 < -33 < 100                         # methane, ammonia, water

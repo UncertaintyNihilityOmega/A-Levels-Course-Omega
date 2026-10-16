@@ -169,6 +169,16 @@ Amount of water formed = amount of acid = \(1.00 \times 25.0/1000 = 0.0250\) mol
 The temperature rose, so the reaction is exothermic and the sign is negative.
 :::
 
+:::try Reading the temperature rise from a table
+Q: [5 marks] ★★ 25.0 cm³ of 1.00 mol dm⁻³ hydrochloric acid is in a polystyrene cup. Its temperature is 21.0 °C at 0, 1, 2 and 3 minutes. At 4 minutes 25.0 cm³ of 1.00 mol dm⁻³ sodium hydroxide solution, also at 21.0 °C, is added and the mixture is stirred. The temperature is then 27.4 °C at 5 minutes, 27.2 °C at 6, 27.0 °C at 7, 26.8 °C at 8 and 26.6 °C at 9 minutes. (a) Extrapolate the cooling line back to 4 minutes and state the temperature change ΔT. (b) Calculate the enthalpy change of neutralisation, in kJ mol⁻¹. Assume the density is 1.00 g cm⁻³ and \(c = 4.18\) J g⁻¹ K⁻¹.
+H: Look at how much the temperature falls in each minute after mixing, and carry that pattern backwards.
+A: (a) The temperature falls by 0.2 °C every minute, so at 4 minutes it would have been 27.4 + 0.2 = 27.6 °C. [B1]
+ΔT = 27.6 − 21.0 = 6.6 K [A1]
+(b) \(q = mc\Delta T = 50.0 \times 4.18 \times 6.6 = 1379\) J [M1]
+Amount of water formed = amount of acid = \(1.00 \times 25.0/1000 = 0.0250\) mol. [B1]
+\(\Delta H = -1379/0.0250 = -55\,176\) J mol⁻¹ = −55.2 kJ mol⁻¹ [A1]
+:::
+
 :::eg 25.0 cm³ of 0.200 mol dm⁻³ copper(II) sulfate solution is added to excess zinc powder in a polystyrene cup. The temperature rises by 10.4 K. Calculate the enthalpy change for \(\ce{Zn + CuSO4 -> ZnSO4 + Cu}\).
 Zinc is in excess, so copper(II) sulfate is the limiting reactant: \(n = 0.200 \times 25.0/1000 = 0.00500\) mol. [B1]
 The mass of solution is 25.0 g.
