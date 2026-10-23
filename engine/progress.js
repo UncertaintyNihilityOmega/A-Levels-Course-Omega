@@ -134,6 +134,9 @@ function done(dir, title, course, step, summary) {
     const miss = (pkg.chapters || []).filter(id => !fs.existsSync(path.join(dir, 'chapters', id + '.md')));
     if (miss.length) return { ok: false, msg: `${w[1]} still lacks ${miss.join(', ')}` };
     st.steps[w[1]] = { state: course.lead === false ? 'reviewed' : 'written', rest: date };
+    // STATUS.md keeps only the latest Last: line, so the Writer's notes also go into the package file for the reviewer
+    const notes = path.join(dir, 'packages', w[1] + '.md');
+    if (fs.existsSync(notes)) fs.appendFileSync(notes, `\n\n## Writer's notes (${date}, written by the kit)\n${String(summary || '').replace(/\s+/g, ' ').trim()}\n`);
   } else if (/^REVIEW(\s+P\d+([\s,–-]+P\d+)*)?$/.test(S)) {
     // "REVIEW P1, P2" marks just those (a package finished during the review stays unreviewed); bare "REVIEW" marks all
     const named = S.match(/P\d+/g);
