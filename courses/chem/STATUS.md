@@ -15,8 +15,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P8: reviewed 2026-10-23
 - P9: written 2026-10-23
 - P10: written 2026-10-23
-- P11: open
-- P12: open
+- P11: writing 2026-10-23
+- P12: writing 2026-10-23
 - P13: open
 - P14: open
 - P15: open

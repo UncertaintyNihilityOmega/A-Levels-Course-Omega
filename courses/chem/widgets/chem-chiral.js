@@ -48,15 +48,17 @@
     return quatToMat([Math.cos(t * th), q[1] * k, q[2] * k, q[3] * k]);
   }
 
-  // tetrahedral directions (unit vectors): one up, three below at azimuths 330, 210 and 90 degrees
+  // tetrahedral directions (unit vectors): one up, three below at azimuths 315, 195 and 75 degrees
+  // (turned off the symmetric "cross" view so the model reads as 3D: one group near, one far)
   const RL = Math.sqrt(8 / 9);
   const az = a => a * Math.PI / 180;
   const DIRS = [
     [0, 0, 1],
-    [RL * Math.cos(az(330)), RL * Math.sin(az(330)), -1 / 3],
-    [RL * Math.cos(az(210)), RL * Math.sin(az(210)), -1 / 3],
-    [RL * Math.cos(az(90)), RL * Math.sin(az(90)), -1 / 3]
+    [RL * Math.cos(az(315)), RL * Math.sin(az(315)), -1 / 3],
+    [RL * Math.cos(az(195)), RL * Math.sin(az(195)), -1 / 3],
+    [RL * Math.cos(az(75)), RL * Math.sin(az(75)), -1 / 3]
   ];
+  const PITCH = 0.35;
   const MIRROR = d => [-d[0], d[1], d[2]];
 
   W.register('chem-chiral', function (el, opts) {
@@ -82,7 +84,7 @@
     let target = IDENT, targetQ = [1, 0, 0, 0];
     let verdict = '';
     let t0 = 0;
-    const view = W.view3d({ yaw: 0, pitch: 0.6, scale: 60 });
+    const view = W.view3d({ yaw: 0, pitch: PITCH, scale: 60 });
 
     function groups() { return MOLS[key].groups; }
     function rightDirs() { return DIRS.map(MIRROR); }
@@ -118,7 +120,7 @@
         const pal = W.palette(el), series = pal.series || [];
         const g = groups();
         const half = w / 2;
-        view.scale = Math.max(10, Math.min(half, h) * 0.34);
+        view.scale = Math.max(10, Math.min((w / 4 - 20) / 0.95, h * 0.34));   // the widest group stays inside its half
         ctx.textBaseline = 'alphabetic';
 
         // mirror line and titles
@@ -144,14 +146,20 @@
             items.push({ d: P[2], i, x: P[0] + shift, y: P[1] + dy });
           });
           items.push({ d: C[2], centre: true });
-          ctx.lineWidth = 3; ctx.strokeStyle = col.ink3;
+          // depth cue, as in wedge and hashed bonds: near bonds thick, far bonds thin and dashed
+          ctx.strokeStyle = col.ink3;
           items.forEach(it => {
             if (it.centre) return;
+            const dz = it.d - C[2];
+            ctx.save();
+            ctx.lineWidth = dz < -0.5 ? 5 : dz > 0.5 ? 2 : 3;
+            if (dz > 0.5) ctx.setLineDash([4, 4]);
             ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(it.x, it.y); ctx.stroke();
+            ctx.restore();
           });
           items.sort((a, b) => b.d - a.d).forEach(it => {
             if (it.centre) {
-              ctx.lineWidth = 3; ctx.strokeStyle = col.sc; ctx.fillStyle = col.card;
+              ctx.lineWidth = 3; ctx.strokeStyle = col.ink2; ctx.fillStyle = col.card;
               ctx.beginPath(); ctx.arc(cx, cy, 11, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
               ctx.fillStyle = col.ink; ctx.font = '600 13px ' + col.font; ctx.textAlign = 'center';
               ctx.fillText('C', cx, cy + 5);
@@ -159,7 +167,7 @@
             }
             const label = g[it.i];
             const dd = Math.max(-1, Math.min(1, (it.d - C[2]) / 1.5));      // nearer groups are drawn larger
-            const r = Math.max(11, (6 + 3.3 * label.length) * (1 - 0.14 * dd));
+            const r = Math.max(11, (6 + 3.3 * label.length) * (1 - 0.2 * dd));
             ctx.lineWidth = 3; ctx.strokeStyle = series[it.i % series.length] || col.ink2; ctx.fillStyle = col.card;
             ctx.beginPath(); ctx.arc(it.x, it.y, r, 0, 2 * Math.PI); ctx.fill(); ctx.stroke();
             ctx.fillStyle = col.ink; ctx.font = '600 ' + (label.length > 3 ? 11 : 12) + 'px ' + col.font; ctx.textAlign = 'center';
@@ -179,7 +187,7 @@
     body.appendChild(W.h('div', { class: 'w-row' }, turn, reset, left, right));
     const read = W.readout([['centre', 'Chiral centre?'], ['groups', 'Groups on the carbon'], ['test', 'Result of the test']]);
     body.appendChild(read.el);
-    body.appendChild(W.h('div', { class: 'w-note', text: 'The right-hand model is the mirror image of the left. Press the first button to turn it so that two of its groups sit on the same groups of the left model, then see whether the other two match. Drag the picture to turn both models together.' }));
+    body.appendChild(W.h('div', { class: 'w-note', text: 'The right-hand model is the mirror image of the left. Press the first button to turn it so that two of its groups sit on the same groups of the left model, then see whether the other two match. A thick bond points towards you and a dashed bond points away, like a wedge and a hashed bond. Drag the picture to turn both models together.' }));
 
     const anim = W.animate(() => {
       const p = Math.min(1, (performance.now() - t0) / 1400);
@@ -215,7 +223,7 @@
       anim.stop();
       anim.start();
     });
-    reset.addEventListener('click', () => { anim.stop(); view.yaw = 0; view.pitch = 0.6; update(); });
+    reset.addEventListener('click', () => { anim.stop(); view.yaw = 0; view.pitch = PITCH; update(); });
     left.addEventListener('click', () => { view.yaw -= 0.4; cvs.redraw(); });
     right.addEventListener('click', () => { view.yaw += 0.4; cvs.redraw(); });
     update();
