@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-23 · REVIEW P7, P8 · 0 new items in REVIEW.md. Fixed: 6 full-width figures redrawn as fig small (period 3 radius and m.p. sketches, S oxidation-number line with I- arrows grouped, silver halide tubes, NH4+ formation, catalytic converter as a vertical flow); chem-trend readout and aria-label decimals were inverted (494.0 kJ/mol, EN '3'), fixed in widget and template; periodicity: Na2O pH 12.60 wrongly said to lie in the 13-14 range, AS pH calcs marked (A Level link) or turned into [H+] (PCl5 try, SiCl4 quiz), 'about' added to summary-table pH values, S2- radius mark and group-number sentence corrected; group2: QA-notes wording for Ba2+, dHsol/dHhyd definitions, the ambiguous 'hydroxides go up' tip; group17: 2 s.f. answers, chlorate(I)/hypochlorite note; nitrogen: two exam-practice tries repeated worked-example data (new: NH4Cl vs urea %N, hydrazine dH +96). All numbers recomputed and right. COURSE.md: lessons P7, P8. REQUESTS.md: FACTS Br electronegativity 2.6 to recheck.
+Last: 2026-10-23 · WRITE P9 · chem.org.intro (5972 words) and chem.org.isomerism (5849 words, A Level section last); widget chem-chiral (probed clean: 5 presets, bad attribute, light/dark/phone). Reviewer: 9 skeletal/displayed/mechanism figures made with scripted coordinates (scratch/fig.py), nested :::html inside :::eg used twice; C4H9Br/C5H12/C4H8/C5H10 isomer counts checked by enumeration; links checked 23 Oct (chemguide names/structural/geometric/optical pages); chem-chiral 3D view is a flat-looking cross (drag to turn); animated test only checked by maths, not clicked.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -13,8 +13,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P6: reviewed 2026-10-23
 - P7: reviewed 2026-10-23
 - P8: reviewed 2026-10-23
-- P9: writing 2026-10-23
-- P10: writing 2026-10-23
+- P9: written 2026-10-23
+- P10: written 2026-10-23
 - P11: open
 - P12: open
 - P13: open
