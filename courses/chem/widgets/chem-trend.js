@@ -149,7 +149,7 @@
       ctx.fillStyle = col.ink2; ctx.textAlign = 'center';
       const perUnit = pw / (x1 - x0);
       let tstep = 1;
-      if (set.axis === 'z') while (perUnit * tstep < 22) tstep = tstep === 1 ? 2 : tstep === 2 ? 5 : tstep + 5;
+      if (set.axis === 'z' && perUnit > 0) while (perUnit * tstep < 22) tstep = tstep === 1 ? 2 : tstep === 2 ? 5 : tstep + 5;
       xs.forEach(v => {
         if (set.axis === 'z' && (v - xs[0]) % tstep !== 0) return;
         ctx.strokeStyle = col.ink2; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(X(v), padT + ph); ctx.lineTo(X(v), padT + ph + 4); ctx.stroke();

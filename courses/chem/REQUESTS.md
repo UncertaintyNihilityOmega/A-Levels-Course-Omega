@@ -17,3 +17,8 @@ Engine bugs, new block types, design changes, or anything that needs another cou
   - Organizer 2026-10-15: sync never touches scratch/, but scratch/ is not in git, so a fresh copy would lose them.
     elements.py and elements.json moved to **data/** (tracked); elements.py still reads scratch/syl.txt (kept, untracked:
     syllabus text). COURSE.md, FACTS.md, P1, P2, P7 and the gold check script now say data/elements.json.
+- [x] 2026-10-23 · (Organizer change, from the P7 note) `shot chem.periodicity` gave no image for its two hand figures
+  - Organizer 2026-10-23: the figures were fine. widgets/chem-trend.js looped forever when drawn at zero width
+    (`while (perUnit * tstep < 22)` with perUnit 0): `shot` hides the widget while it photographs the figures, and on the
+    site a hidden widget redrawn on a theme change would freeze the page. Now guarded (`perUnit > 0`); shot and probe pass.
+    Widget rule: never loop on a measured size without checking it is positive.
