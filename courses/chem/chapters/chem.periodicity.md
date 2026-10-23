@@ -49,7 +49,7 @@ The ions follow a pattern with a break in the middle.
 - Silicon does not form a simple ion in compounds: gaining or losing four electrons takes far too much energy.
 
 :::html
-<figure class="fig"><svg viewBox="40 4 560 280" role="img" aria-label="Sketch of the radius of the atoms Na to Cl, which falls steadily, and of their simple ions: Na+, Mg2+ and Al3+ are smaller than their atoms and get smaller, then the negative ions P3-, S2- and Cl- are larger than their atoms and get smaller. There is a big jump up between Al3+ and P3-. Silicon has no simple ion"><path class="ax" d="M70 250H585" marker-end="url(#ahm)"/><path class="ax" d="M70 250V22" marker-end="url(#ahm)"/><text class="tl" x="78" y="16">radius (not to scale)</text><path class="ax" d="M100 250v4"/><text class="tl tc" x="100" y="271">Na</text><path class="ax" d="M175 250v4"/><text class="tl tc" x="175" y="271">Mg</text><path class="ax" d="M250 250v4"/><text class="tl tc" x="250" y="271">Al</text><path class="ax" d="M325 250v4"/><text class="tl tc" x="325" y="271">Si</text><path class="ax" d="M400 250v4"/><text class="tl tc" x="400" y="271">P</text><path class="ax" d="M475 250v4"/><text class="tl tc" x="475" y="271">S</text><path class="ax" d="M550 250v4"/><text class="tl tc" x="550" y="271">Cl</text><path class="c1 sw2" d="M100 73.3 L175 98 L250 114.2 L325 137.9 L400 145.5 L475 151.2 L550 155.9"/><circle class="fi" cx="100" cy="73.3" r="4.5"/><circle class="fi" cx="175" cy="98" r="4.5"/><circle class="fi" cx="250" cy="114.2" r="4.5"/><circle class="fi" cx="325" cy="137.9" r="4.5"/><circle class="fi" cx="400" cy="145.5" r="4.5"/><circle class="fi" cx="475" cy="151.2" r="4.5"/><circle class="fi" cx="550" cy="155.9" r="4.5"/><path class="c2 sw2 dash" d="M100 153.1 L175 181.6 L250 198.7"/><path class="c2 sw2 dash" d="M400 48.6 L475 75.2 L550 78.1"/><circle class="fp s-acc sw2" cx="100" cy="153.1" r="4.5"/><text class="tl tc" x="100" y="173.1">Na⁺</text><circle class="fp s-acc sw2" cx="175" cy="181.6" r="4.5"/><text class="tl tc" x="175" y="201.6">Mg²⁺</text><circle class="fp s-acc sw2" cx="250" cy="198.7" r="4.5"/><text class="tl tc" x="250" y="218.7">Al³⁺</text><circle class="fp s-acc sw2" cx="400" cy="48.6" r="4.5"/><text class="tl tc" x="400" y="37.6">P³⁻</text><circle class="fp s-acc sw2" cx="475" cy="75.2" r="4.5"/><text class="tl tc" x="475" y="95.2">S²⁻</text><circle class="fp s-acc sw2" cx="550" cy="78.1" r="4.5"/><text class="tl tc" x="550" y="67.1">Cl⁻</text><text class="tl tc" x="325" y="236">Si: no simple ion</text><path class="c1 sw2" d="M170 44h26"/><circle class="fi" cx="183" cy="44" r="4.5"/><text class="tl" x="204" y="48">atom</text><path class="c2 sw2 dash" d="M170 66h26"/><circle class="fp s-acc sw2" cx="183" cy="66" r="4.5"/><text class="tl" x="204" y="70">simple ion</text></svg><figcaption>A sketch (not to scale) of the radius of the Period 3 atoms and their simple ions. Atomic radius falls across the period. The positive ions are smaller than their atoms, the negative ions are larger, and each set of ions also gets smaller from left to right.</figcaption></figure>
+<figure class="fig small"><svg viewBox="0 4 340 232" role="img" aria-label="Sketch of the radius of the atoms Na to Cl, which falls steadily, and of their simple ions: Na+, Mg2+ and Al3+ are smaller than their atoms and get smaller, then the negative ions P3-, S2- and Cl- are larger than their atoms and get smaller. There is a big jump up between Al3+ and P3-. Silicon has no simple ion"><path class="ax" d="M26 210H335" marker-end="url(#ahm)"/><path class="ax" d="M26 210V28" marker-end="url(#ahm)"/><text class="tl" x="34" y="18">radius (not to scale)</text><path class="ax" d="M50 210v4"/><text class="tl tc" x="50" y="228">Na</text><path class="ax" d="M95 210v4"/><text class="tl tc" x="95" y="228">Mg</text><path class="ax" d="M140 210v4"/><text class="tl tc" x="140" y="228">Al</text><path class="ax" d="M185 210v4"/><text class="tl tc" x="185" y="228">Si</text><path class="ax" d="M230 210v4"/><text class="tl tc" x="230" y="228">P</text><path class="ax" d="M275 210v4"/><text class="tl tc" x="275" y="228">S</text><path class="ax" d="M320 210v4"/><text class="tl tc" x="320" y="228">Cl</text><path class="c1 sw2" d="M50 70.5 L95 90 L140 102.8 L185 121.5 L230 127.4 L275 132 L320 135.7"/><circle class="fi" cx="50" cy="70.5" r="4"/><circle class="fi" cx="95" cy="90" r="4"/><circle class="fi" cx="140" cy="102.8" r="4"/><circle class="fi" cx="185" cy="121.5" r="4"/><circle class="fi" cx="230" cy="127.4" r="4"/><circle class="fi" cx="275" cy="132" r="4"/><circle class="fi" cx="320" cy="135.7" r="4"/><path class="c2 sw2 dash" d="M50 133.4 L95 155.9 L140 169.4"/><path class="c2 sw2 dash" d="M230 51 L275 72 L320 74.3"/><circle class="fp s-acc sw2" cx="50" cy="133.4" r="4"/><text class="tl tc" x="50" y="152">Na⁺</text><circle class="fp s-acc sw2" cx="95" cy="155.9" r="4"/><text class="tl tc" x="95" y="175">Mg²⁺</text><circle class="fp s-acc sw2" cx="140" cy="169.4" r="4"/><text class="tl tc" x="140" y="189">Al³⁺</text><circle class="fp s-acc sw2" cx="230" cy="51" r="4"/><text class="tl tc" x="230" y="40">P³⁻</text><circle class="fp s-acc sw2" cx="275" cy="72" r="4"/><text class="tl tc" x="275" y="91">S²⁻</text><circle class="fp s-acc sw2" cx="320" cy="74.3" r="4"/><text class="tl tc" x="320" y="63">Cl⁻</text><text class="tl tc" x="210" y="166">Si: no simple ion</text><path class="c1 sw2" d="M96 36h22"/><circle class="fi" cx="107" cy="36" r="4"/><text class="tl" x="126" y="40">atom</text><path class="c2 sw2 dash" d="M96 56h22"/><circle class="fp s-acc sw2" cx="107" cy="56" r="4"/><text class="tl" x="126" y="60">simple ion</text></svg><figcaption>A sketch (not to scale) of the radius of the Period 3 atoms and their simple ions. Atomic radius falls across the period. The positive ions are smaller than their atoms, the negative ions are larger, and each set of ions also gets smaller from left to right.</figcaption></figure>
 :::
 
 :::key Radius across Period 3
@@ -63,7 +63,7 @@ Atomic radius **decreases** from Na to Cl: more protons, the same shell, about t
 
 \(\ce{S^2-}\) has electrons in the third shell (1s² 2s² 2p⁶ 3s² 3p⁶), but \(\ce{Mg^2+}\) has only two shells. [B1]
 
-\(\ce{S^2-}\) has an extra shell of electrons and fewer protons than the number needed to pull a third shell in tightly, so it is larger. [B1]
+The third shell is further from the nucleus and shielded by the two inner shells, so \(\ce{S^2-}\) is larger, even though it has more protons (16 against 12). [B1]
 :::
 
 ## Melting point
@@ -71,7 +71,7 @@ Atomic radius **decreases** from Na to Cl: more protons, the same shell, about t
 The melting point is not a smooth trend. It rises, peaks at silicon, falls steeply, and then stays low. The shape comes straight from the structure of each element, so this is the place to use [States of matter](#chem.states).
 
 :::html
-<figure class="fig"><svg viewBox="40 4 560 312" role="img" aria-label="Sketch of the melting points of the Period 3 elements: sodium lowest of the three metals, then magnesium and aluminium higher, silicon the highest of all, then a sharp fall to the simple molecular P4, S8, Cl2 and Ar, in the order S8 above P4 above Cl2 above Ar"><path class="ax" d="M60 250H590" marker-end="url(#ahm)"/><path class="ax" d="M60 250V22" marker-end="url(#ahm)"/><text class="tl" x="68" y="16">melting point (not to scale)</text><rect class="fa" x="68" y="203.6" width="44" height="46.4"/><text class="tl tc" x="90" y="268">Na</text><rect class="fa" x="136" y="134.6" width="44" height="115.4"/><text class="tl tc" x="158" y="268">Mg</text><rect class="fa" x="204" y="133.4" width="44" height="116.6"/><text class="tl tc" x="226" y="268">Al</text><rect class="fa2" x="272" y="39.6" width="44" height="210.4"/><text class="tl tc" x="294" y="268">Si</text><rect class="f1 s-acc sw2" x="340" y="210.4" width="44" height="39.6"/><text class="tl tc" x="362" y="268">P₄</text><rect class="f1 s-acc sw2" x="408" y="201.5" width="44" height="48.5"/><text class="tl tc" x="430" y="268">S₈</text><rect class="f1 s-acc sw2" x="476" y="228.5" width="44" height="21.5"/><text class="tl tc" x="498" y="268">Cl₂</text><rect class="f1 s-acc sw2" x="544" y="239.5" width="44" height="10.5"/><text class="tl tc" x="566" y="268">Ar</text><path class="ln-m" d="M68 280v4H248v-4"/><text class="tl tc" x="158.0" y="302">giant metallic</text><path class="ln-m" d="M272 280v4H316v-4"/><text class="tl tc" x="294.0" y="302">giant covalent</text><path class="ln-m" d="M340 280v4H588v-4"/><text class="tl tc" x="464.0" y="302">simple molecular</text></svg><figcaption>A sketch (not to scale) of the melting points of the Period 3 elements. The metals rise from Na to Al, silicon (a giant covalent structure) is the highest, and the simple molecular substances are much lower: S₈ > P₄ > Cl₂ > Ar.</figcaption></figure>
+<figure class="fig small"><svg viewBox="0 4 340 266" role="img" aria-label="Sketch of the melting points of the Period 3 elements: sodium lowest of the three metals, then magnesium and aluminium higher, silicon the highest of all, then a sharp fall to the simple molecular P4, S8, Cl2 and Ar, in the order S8 above P4 above Cl2 above Ar"><path class="ax" d="M24 200H336" marker-end="url(#ahm)"/><path class="ax" d="M24 200V24" marker-end="url(#ahm)"/><text class="tl" x="32" y="18">melting point (not to scale)</text><rect class="fa" x="30" y="163.6" width="28" height="36.4"/><text class="tl tc" x="44" y="216">Na</text><rect class="fa" x="69" y="109.5" width="28" height="90.5"/><text class="tl tc" x="83" y="216">Mg</text><rect class="fa" x="108" y="108.6" width="28" height="91.4"/><text class="tl tc" x="122" y="216">Al</text><rect class="fa2" x="147" y="35" width="28" height="165"/><text class="tl tc" x="161" y="216">Si</text><rect class="f1 s-acc sw2" x="186" y="169" width="28" height="31"/><text class="tl tc" x="200" y="216">P₄</text><rect class="f1 s-acc sw2" x="225" y="162" width="28" height="38"/><text class="tl tc" x="239" y="216">S₈</text><rect class="f1 s-acc sw2" x="264" y="183.1" width="28" height="16.9"/><text class="tl tc" x="278" y="216">Cl₂</text><rect class="f1 s-acc sw2" x="303" y="191.8" width="28" height="8.2"/><text class="tl tc" x="317" y="216">Ar</text><path class="ln-m" d="M30 226v4H136v-4"/><text class="tl tc" x="83" y="246">giant metallic</text><path class="ln-m" d="M147 226v4H175v-4"/><path class="ln-m" d="M161 230v20"/><text class="tl tc" x="161" y="266">giant covalent</text><path class="ln-m" d="M186 226v4H331v-4"/><text class="tl tc" x="258" y="246">simple molecular</text></svg><figcaption>A sketch (not to scale) of the melting points of the Period 3 elements. The metals rise from Na to Al, silicon (a giant covalent structure) is the highest, and the simple molecular substances are much lower: S₈ > P₄ > Cl₂ > Ar.</figcaption></figure>
 :::
 
 ### Sodium, magnesium and aluminium: giant metallic
@@ -213,7 +213,7 @@ In every reaction above, the element is **oxidised**: its oxidation number rises
 |---|---|---|---|---|---|
 | Oxidation number of the element | +1 | +2 | +3 | +4 | +5 |
 
-Oxygen is −2 and chlorine −1 in these compounds. Sulfur has two oxides because it can use 4 of its 6 outer electrons (SO₂) or all 6 (SO₃). The highest oxidation number an element reaches in these compounds is its number of outer electrons, which is its group number (apart from the last three elements, whose outer shells are nearly full).
+Oxygen is −2 and chlorine −1 in these compounds. Sulfur has two oxides because it can use 4 of its 6 outer electrons (SO₂) or all 6 (SO₃). The highest oxidation number an element reaches in these compounds is its number of outer electrons: +1 for sodium up to +6 for sulfur (in \(\ce{SO3}\)).
 
 :::eg Use the outer electrons to deduce the oxidation number of the Period 3 element in (a) \(\ce{MgCl2}\), (b) \(\ce{P4O10}\), (c) \(\ce{SO3}\). Check by balancing the charges.
 (a) Magnesium has 2 outer electrons and loses both: Mg is +2. Check: \(+2 + 2(-1) = 0\).
@@ -283,7 +283,8 @@ The pH values are typical. The exact pH depends on the concentration, so write "
 \(\ce{SiO2}\) is a giant covalent structure and is insoluble in water, so the pH stays at 7. It is acidic because it reacts with bases (below), not because it dissolves in water.
 :::
 
-:::eg A student dissolves 0.310 g of sodium oxide in water and makes the solution up to 250 cm³. Calculate the pH, taking \(K_w = 1.00 \times 10^{-14}\) mol² dm⁻⁶ at room temperature.
+:::eg (A Level link) A student dissolves 0.310 g of sodium oxide in water and makes the solution up to 250 cm³. Calculate the pH, taking \(K_w = 1.00 \times 10^{-14}\) mol² dm⁻⁶ at room temperature.
+At AS you need only the likely pH of each oxide. Calculating a pH from a concentration is A Level work, taught in [pH, buffers, solubility product and partition](#chem.acids2); this example shows where the "about" values come from.
 \(M_r(\ce{Na2O}) = 2(23.0) + 16.0 = 62.0\), so \(n = 0.310/62.0 = 0.005000\) mol. [B1]
 
 Each \(\ce{Na2O}\) gives 2 \(\ce{OH-}\), so \(n(\ce{OH-}) = 0.01000\) mol, and \(c(\ce{OH-}) = 0.01000/0.250 = 0.04000\) mol dm⁻³. [M1]
@@ -291,7 +292,7 @@ Each \(\ce{Na2O}\) gives 2 \(\ce{OH-}\), so \(n(\ce{OH-}) = 0.01000\) mol, and \
 \[[\ce{H+}] = \frac{K_w}{[\ce{OH-}]} = \frac{1.00 \times 10^{-14}}{0.04000} = 2.50 \times 10^{-13}\,\mathrm{mol\,dm^{-3}}\] [M1]
 \[\mathrm{pH} = -\log_{10}(2.50 \times 10^{-13}) = 12.60\] [A1]
 
-This lies in the range given in the table. (See [Acids and bases](#chem.acids) for the method.)
+This is a little below the "about 13 to 14" in the table, because this solution is fairly dilute: the "about" values assume a more concentrated solution, and the pH falls by 1 for every tenfold dilution.
 :::
 
 ### Acid–base behaviour
@@ -390,7 +391,8 @@ Silicon tetrachloride reacts vigorously with water, giving steamy white fumes of
 The solution is strongly acidic (pH about 1 to 2) because of the hydrogen chloride. [B1]
 :::
 
-:::eg 0.0100 mol of silicon tetrachloride is added to water and the mixture is made up to 1.00 dm³. Calculate the pH, assuming that the hydrogen chloride is fully ionised.
+:::eg (A Level link) 0.0100 mol of silicon tetrachloride is added to water and the mixture is made up to 1.00 dm³. Calculate the pH, assuming that the hydrogen chloride is fully ionised.
+The first two lines are AS moles; the last step, \(\mathrm{pH} = -\log_{10}[\ce{H+}]\), is taught in [pH, buffers, solubility product and partition](#chem.acids2).
 \(\ce{SiCl4(l) + 2H2O(l) -> SiO2(s) + 4HCl(aq)}\): 1 mol of \(\ce{SiCl4}\) gives 4 mol of HCl.
 
 \(n(\ce{HCl}) = 4 \times 0.0100 = 0.0400\) mol, so \([\ce{H+}] = 0.0400\) mol dm⁻³, as HCl is a strong acid. [M1]
@@ -418,10 +420,10 @@ The table sums it up.
 |---|---|---|---|---|---|---|
 | Oxide | \(\ce{Na2O}\) | \(\ce{MgO}\) | \(\ce{Al2O3}\) | \(\ce{SiO2}\) | \(\ce{P4O10}\) | \(\ce{SO2}\), \(\ce{SO3}\) |
 | Bonding | ionic | ionic | ionic (some covalent) | covalent | covalent | covalent |
-| With water | alkaline, pH 13 to 14 | weakly alkaline, pH 9 to 10 | insoluble | insoluble | acid, pH about 2 | acid, pH 1 to 3 |
+| With water | alkaline, pH about 13 to 14 | weakly alkaline, pH about 9 to 10 | insoluble (pH 7) | insoluble (pH 7) | acid, pH about 2 | acid, pH about 1 to 3 |
 | Acid–base nature | basic | basic | amphoteric | acidic | acidic | acidic |
 | Chloride | NaCl | \(\ce{MgCl2}\) | \(\ce{AlCl3}\) | \(\ce{SiCl4}\) | \(\ce{PCl5}\) | |
-| Chloride with water | dissolves, pH 7 | dissolves, pH 6.5 | hydrolysed, pH 3 | hydrolysed, pH 1 to 2 | hydrolysed, pH 1 to 2 | |
+| Chloride with water | dissolves, pH 7 | dissolves, pH about 6.5 | hydrolysed, pH about 3 | hydrolysed, pH about 1 to 2 | hydrolysed, pH about 1 to 2 | |
 
 :::warn Aluminium chloride is not ionic
 The electronegativity difference between Al (1.5) and Cl (3.0) is small, and the properties confirm it: \(\ce{AlCl3}\) sublimes easily, it does not conduct when molten, and the vapour is made of \(\ce{Al2Cl6}\) molecules (see [Chemical bonding](#chem.bonding)). Writing "ionic aluminium chloride" loses the mark. For the oxide, "ionic with some covalent character" is the safe answer.
@@ -584,13 +586,13 @@ A: MgO has a giant ionic lattice of \(\ce{Mg^2+}\) and \(\ce{O^2-}\) ions held b
 A lot of energy is needed to overcome this attraction, so the melting point is very high. [B1]
 When molten, the ions are free to move, so it conducts. [B1]
 \(\ce{SO2}\) is simple molecular, with only weak forces between the molecules and no ions or free electrons, so it melts at a very low temperature and does not conduct. [B1]
-Q: [4 marks] ★★ (#chem.moles) Phosphorus pentachloride reacts with water: \(\ce{PCl5 + 4H2O -> H3PO4 + 5HCl}\). 4.17 g of \(\ce{PCl5}\) is added to water and the solution is made up to 500 cm³. Calculate the pH of the solution, assuming the HCl is fully ionised and ignoring the phosphoric acid.
+Q: [4 marks] ★★ (#chem.moles) Phosphorus pentachloride reacts with water: \(\ce{PCl5 + 4H2O -> H3PO4 + 5HCl}\). 4.17 g of \(\ce{PCl5}\) is added to water and the solution is made up to 500 cm³. Calculate the concentration of hydrogen ions in the solution, assuming the HCl is fully ionised and ignoring the phosphoric acid.
 H: Find the moles of \(\ce{PCl5}\) first, using \(M_r = 31.0 + 5(35.5)\).
 A: \(M_r(\ce{PCl5}) = 31.0 + 5(35.5) = 208.5\). [B1]
 \(n(\ce{PCl5}) = 4.17/208.5 = 0.0200\) mol. [M1]
-\(n(\ce{HCl}) = 5 \times 0.0200 = 0.100\) mol, so \([\ce{H+}] = 0.100/0.500 = 0.200\) mol dm⁻³. [M1]
-pH \(= -\log_{10}(0.200) = 0.70\) [A1]
-(The real pH is slightly lower, because \(\ce{H3PO4}\) also ionises, so the value from the HCl alone is an approximation.)
+\(n(\ce{HCl}) = 5 \times 0.0200 = 0.100\) mol [M1]
+\([\ce{H+}] = 0.100/0.500 = 0.200\) mol dm⁻³ [A1]
+(At A Level you would go on to the pH: \(-\log_{10}(0.200) = 0.70\). The real value is slightly lower, because \(\ce{H3PO4}\) also ionises.)
 Q: [6 marks] ★★★ The chlorides \(\ce{MgCl2}\), \(\ce{AlCl3}\) and \(\ce{SiCl4}\) are each added to water. (a) State the likely pH of each resulting solution. (b) Write an equation for the reaction of \(\ce{SiCl4}\) with water. (c) Explain why \(\ce{SiCl4}\) reacts with water but \(\ce{MgCl2}\) does not.
 H: One of the two is ionic and one is covalent: which is attacked by water?
 A: (a) \(\ce{MgCl2}\) about 6.5 (about 7), \(\ce{AlCl3}\) about 3, \(\ce{SiCl4}\) about 1 to 2. [B1] [B1]
@@ -663,12 +665,12 @@ Silicon has a giant covalent structure, so many strong covalent bonds must be br
 + It dissolves in hydrochloric acid and in an excess of aqueous sodium hydroxide.
 - It dissolves in water and gives a neutral solution.
 > An amphoteric compound reacts with both an acid and a base. Aluminium hydroxide neutralises acids and also dissolves in excess alkali to form \(\ce{[Al(OH)4]-}\).
-? 0.0200 mol of \(\ce{SiCl4}\) is added to water and made up to 2.00 dm³. Assuming the HCl formed is fully ionised, what is the pH?
-- 1.00
-+ 1.40
-- 2.00
-- 1.70
-> \(\ce{SiCl4 + 2H2O -> SiO2 + 4HCl}\) gives 0.0800 mol of HCl, so \([\ce{H+}] = 0.0800/2.00 = 0.0400\) mol dm⁻³ and pH = 1.40. Using 0.0200 mol of HCl instead gives pH 2.00.
+? 0.0200 mol of \(\ce{SiCl4}\) is added to water and made up to 2.00 dm³. Assuming the HCl formed is fully ionised, what is the concentration of hydrogen ions?
+- 0.0100 mol dm⁻³
++ 0.0400 mol dm⁻³
+- 0.0800 mol dm⁻³
+- 0.160 mol dm⁻³
+> \(\ce{SiCl4 + 2H2O -> SiO2 + 4HCl}\) gives 0.0800 mol of HCl, so \([\ce{H+}] = 0.0800/2.00 = 0.0400\) mol dm⁻³. 0.0100 forgets the 4 : 1 ratio, 0.0800 forgets to divide by the volume, and 0.160 multiplies by it.
 ? Which of the following chlorides is hydrolysed by water?
 - \(\ce{NaCl}\)
 - \(\ce{MgCl2}\)
@@ -695,7 +697,7 @@ Silicon has a giant covalent structure, so many strong covalent bonds must be br
 - Melting point: rises Na < Mg < Al (stronger metallic bonding), highest for giant covalent Si, then low for simple molecular S₈ > P₄ > Cl₂ > Ar (id-id forces rise with electrons). Na, Mg and Al conduct; Si is a semiconductor; the rest do not conduct.
 - Oxygen: 4Na + O₂ → 2Na₂O; 2Mg + O₂ → 2MgO; 4Al + 3O₂ → 2Al₂O₃; P₄ + 5O₂ → P₄O₁₀; S + O₂ → SO₂. Chlorine gives NaCl, MgCl₂, AlCl₃, SiCl₄, PCl₅. Water: Na vigorously (NaOH + H₂), Mg slowly (Mg(OH)₂) or in steam (MgO).
 - Oxidation numbers equal the outer electrons used: +1, +2, +3, +4, +5, +4 (SO₂), +6 (SO₃); Cl is −1 in chlorides.
-- Oxides in water: Na₂O pH 13 to 14, MgO 9 to 10, Al₂O₃ and SiO₂ insoluble (pH 7), P₄O₁₀ about 2, SO₂ about 2 to 3, SO₃ about 1. Basic: Na₂O, MgO. Amphoteric: Al₂O₃, Al(OH)₃ (dissolve in acids and in excess NaOH to give NaAl(OH)₄). Acidic: SiO₂, P₄O₁₀, SO₂, SO₃.
+- Oxides in water: Na₂O pH about 13 to 14, MgO about 9 to 10, Al₂O₃ and SiO₂ insoluble (pH 7), P₄O₁₀ about 2, SO₂ about 2 to 3, SO₃ about 1. Basic: Na₂O, MgO. Amphoteric: Al₂O₃, Al(OH)₃ (dissolve in acids and in excess NaOH to give NaAl(OH)₄). Acidic: SiO₂, P₄O₁₀, SO₂, SO₃.
 - Chlorides in water: NaCl pH 7; MgCl₂ about 6.5; AlCl₃ about 3; SiCl₄ and PCl₅ about 1 to 2 (hydrolysed, give HCl).
 - The bonding changes from ionic to covalent because the electronegativity difference falls; the properties (melting point, conductivity when molten, reaction with water) show which it is.
 :::

@@ -124,6 +124,8 @@ eq("pool mass g", m2, 100)
 n2 = m2 / Mr_Cl2
 eq("pool n", round(n2, 3), 1.408)
 eq("pool V", sf(n2 * 24.0), 33.8)
+eq("dose V 2 s.f.", sf(nd * 24.0, 2), 340)
+eq("pool V 2 s.f.", sf(n2 * 24.0, 2), 34)
 
 # ---- exam: moles quiz 0.250 mol Cl2
 eq("quiz V", 0.250 * 24.0, 6.00)

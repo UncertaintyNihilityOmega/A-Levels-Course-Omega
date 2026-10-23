@@ -26,3 +26,10 @@ Engine bugs, new block types, design changes, or anything that needs another cou
   - Organizer 2026-10-23: `done "WRITE Pn"` now also appends the summary to packages/Pn.md ("## Writer's notes"), so a
     reviewer reads it there. Headless runs (probe, phone, shot) now pass `--lang=en-GB`, so number inputs use a decimal point.
     The black unchecked checkbox in shots is headless drawing only; ignore it.
+- [x] 2026-10-23 · (from REVIEW P7, P8) FACTS.md "Pauling electronegativity" lists Br 2.6 (same as Se) and no I. The
+  usual Pauling values are Br 3.0 (2.96) and I 2.7 (2.66). Please recheck that line against the syllabus Data section;
+  chem-trend (en mode, group17 and 1-36 sets) shows it. Chapters do not quote it.
+  - Organizer 2026-10-23: rechecked against the syllabus PDF (p. 87, "5 Pauling electronegativity values"): it prints
+    Br 2.6 and has no I, so FACTS.md matched the board. Kept (students use these values in the exam); FACTS.md line 49
+    now says so. chem-trend may keep showing 2.6; a chapter that compares halogen electronegativities should use the
+    trend in words, or note that the data booklet gives 2.6.

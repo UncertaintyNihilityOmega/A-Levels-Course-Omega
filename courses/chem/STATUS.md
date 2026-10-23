@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-23 · REVIEW P5, P6 · 4 items in REVIEW.md (chem.redox 2, chem.equilibria 2: new data for try questions that repeat worked examples; one Kc-to-concentration try). Fixed: 6 hand figures redrawn as phone-size fig small (redox x2, Haber flow, acid particle boxes, collisions, gas syringe), kinetics tangent plot headroom, equilibria AS wording for why T changes K, acids spot-the-error ending; widgets chem-boltzmann (zoom-panel label overlap, Ea in range), chem-titration (3 s.f. equivalence volume), chem-equilibrium (ester temperature wording, gap before dH). All numbers recomputed and right. COURSE.md: lessons P5, P6 (fig small by default, new numbers in try questions, no A Level terms in AS explanations).
+Last: 2026-10-23 · REVIEW P7, P8 · 0 new items in REVIEW.md. Fixed: 6 full-width figures redrawn as fig small (period 3 radius and m.p. sketches, S oxidation-number line with I- arrows grouped, silver halide tubes, NH4+ formation, catalytic converter as a vertical flow); chem-trend readout and aria-label decimals were inverted (494.0 kJ/mol, EN '3'), fixed in widget and template; periodicity: Na2O pH 12.60 wrongly said to lie in the 13-14 range, AS pH calcs marked (A Level link) or turned into [H+] (PCl5 try, SiCl4 quiz), 'about' added to summary-table pH values, S2- radius mark and group-number sentence corrected; group2: QA-notes wording for Ba2+, dHsol/dHhyd definitions, the ambiguous 'hydroxides go up' tip; group17: 2 s.f. answers, chlorate(I)/hypochlorite note; nitrogen: two exam-practice tries repeated worked-example data (new: NH4Cl vs urea %N, hydrazine dH +96). All numbers recomputed and right. COURSE.md: lessons P7, P8. REQUESTS.md: FACTS Br electronegativity 2.6 to recheck.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -11,10 +11,10 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P4: reviewed 2026-10-16
 - P5: reviewed 2026-10-23
 - P6: reviewed 2026-10-23
-- P7: written 2026-10-16
-- P8: written 2026-10-23
-- P9: open
-- P10: open
+- P7: reviewed 2026-10-23
+- P8: reviewed 2026-10-23
+- P9: writing 2026-10-23
+- P10: writing 2026-10-23
 - P11: open
 - P12: open
 - P13: open

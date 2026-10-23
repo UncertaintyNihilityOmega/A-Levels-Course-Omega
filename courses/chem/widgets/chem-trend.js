@@ -285,7 +285,7 @@
       if (st.sel < 0) return 'Tap or hover over a point (or focus the graph and use the arrow keys) to read its value.';
       const s = set.syms[st.sel], E = EL[s], v = E[M.key];
       if (v === null || v === undefined) return s + ' (' + E.name + ', Z = ' + E.z + ') has no value in the Data booklet.';
-      return s + ' (' + E.name + ', Z = ' + E.z + ', Group ' + E.group + ', Period ' + E.period + '): ' + M.name.toLowerCase() + ' ' + (M.dec ? thou(v) : v.toFixed(1)) + M.unit + '.';
+      return s + ' (' + E.name + ', Z = ' + E.z + ', Group ' + E.group + ', Period ' + E.period + '): ' + M.name.toLowerCase() + ' ' + (M.dec ? v.toFixed(1) : thou(v)) + M.unit + '.';
     }
 
     function update() {
@@ -308,7 +308,7 @@
         note.textContent = (missing.length ? 'Not in the Data booklet, so left out: ' + missing.join(', ') + '. ' : '') +
           (set.sep && set.sep.length ? 'Dashed lines separate the periods. ' : '') +
           (st.mode === 'first' ? firstNote(st.set) : 'Electronegativity measures how strongly an atom pulls on the shared electrons in a bond. Noble gases have no value.');
-        const vs = set.syms.filter(s => EL[s][M.key] !== null && EL[s][M.key] !== undefined).map(s => s + ' ' + (M.dec ? EL[s][M.key] : EL[s][M.key].toFixed(1)));
+        const vs = set.syms.filter(s => EL[s][M.key] !== null && EL[s][M.key] !== undefined).map(s => s + ' ' + (M.dec ? EL[s][M.key].toFixed(1) : thou(EL[s][M.key])));
         cvs.cv.setAttribute('aria-label', M.name + ' for ' + set.label + ': ' + vs.join(', ') + '.');
       }
       cvs.redraw();

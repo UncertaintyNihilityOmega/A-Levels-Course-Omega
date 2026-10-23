@@ -168,6 +168,17 @@ Writers cannot see their figures. Plan coordinates in Python, then `shot <id>` a
   example's 1.50 g tablet or its Kc = 4.00 ester tests memory, not method). A quiz may echo a try question.
 - Do not use A Level terms (rate constant, Ka, conjugate pair) to explain an AS idea; say it in AS words or link forward.
 
+### Lessons from REVIEW P7, P8 (23 Oct 2026)
+- Six more full-width figures had to be redrawn as `fig small` (radius and m.p. sketches, S number line, silver halide
+  tubes, NH₄⁺ formation, catalytic converter). A figure script (data/mk_fig_*.py) must emit a 300–350-wide viewBox
+  too; data/mk_fig_period3.py is now stale (the chapter SVGs were edited by hand), so do not rerun it.
+- pH from a concentration (−log₁₀[H⁺], Kw) is A Level (25.1). In an AS chapter ask for [H⁺] or the concentration of
+  acid, and mark any pH calculation "(A Level link)" with a link to chem.acids2.
+- When a calculated value is compared with a table ("about 13 to 14"), check that it really agrees, and say why if not.
+- Data given to 2 s.f. give an answer to 2 s.f. (338 → 340 dm³).
+- Widgets: read the value readout in every mode with the arrow keys (chem-trend printed 494.0 kJ mol⁻¹ and an
+  electronegativity of "3": an inverted decimals flag).
+
 ### Chemistry figure conventions (copy the gold chapter's SVG)
 - **Skeletal formulas**: zigzag `<path class="ln thick">` with 35 px horizontal steps and ±20 px vertical (bond
   ~40 px, 120° angles); heteroatom labels as `tl` text (`tc` to centre), bond ends ~5 px short of the label box.

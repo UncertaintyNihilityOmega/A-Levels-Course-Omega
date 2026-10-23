@@ -235,12 +235,12 @@ Two solubility trends are in the syllabus, and they go in opposite directions.
 | Sulfate, \(\ce{MSO4}\) | soluble | slightly soluble | almost insoluble | insoluble |
 
 :::tip A way to remember the two trends
-"Hydroxides go up, sulfates go down": the hydroxide solutions get more alkaline going down the group, while the sulfate precipitate (barium sulfate, at the bottom) is the one used in the test.
+Think of barium, at the bottom: barium hydroxide is the most soluble hydroxide (its solution is the most alkaline), and barium sulfate is the least soluble sulfate (the white precipitate in the sulfate test).
 :::
 
 The carbonates are all insoluble in water.
 
-The hydroxide trend explains why the solutions of the oxides become more alkaline down the group, and it shows in the tests for cations in the Data booklet notes: with aqueous sodium hydroxide, \(\ce{Mg^2+}\) gives a white precipitate that is insoluble in excess (magnesium hydroxide is the least soluble), \(\ce{Ca^2+}\) gives a white precipitate unless its concentration is very low, and \(\ce{Ba^2+}\) gives only a faint white precipitate, if any (see [Practical skills and qualitative analysis](#chem.practical)).
+The hydroxide trend explains why the solutions of the oxides become more alkaline down the group, and it shows in the tests for cations in the qualitative analysis notes: with aqueous sodium hydroxide, \(\ce{Mg^2+}\) gives a white precipitate that is insoluble in excess (magnesium hydroxide is the least soluble), \(\ce{Ca^2+}\) gives a white precipitate unless its concentration is very low, and \(\ce{Ba^2+}\) gives only a faint white precipitate (none if its concentration is very low) (see [Practical skills and qualitative analysis](#chem.practical)).
 
 ### Uses
 
@@ -347,10 +347,10 @@ So less heat energy is needed to break it down into MgO and \(\ce{CO2}\), and it
 
 ### Solubility, ΔHsol, ΔHhyd and lattice energy
 
-Whether a compound dissolves depends on an energy balance, summed up in a cycle. The enthalpy change of solution is the energy change when 1 mol of the solid dissolves completely in water. It can be split into two steps: breaking up the lattice into gaseous ions, and hydrating the ions.
+Whether a compound dissolves depends on an energy balance, summed up in a cycle. The enthalpy change of solution, ΔHsol, is the enthalpy change when 1 mol of an ionic solid dissolves in enough water to give a very dilute solution. It can be split into two steps: breaking up the lattice into gaseous ions, and hydrating the ions.
 
 :::def Enthalpy change of hydration, ΔHhyd
-The enthalpy change when 1 mol of a gaseous ion dissolves in water to form aqueous ions, to a very large amount of water. It is exothermic, because water molecules are attracted to the ion.
+The enthalpy change when 1 mol of a gaseous ion dissolves in enough water to give a very dilute solution. It is exothermic, because polar water molecules are attracted to the ion.
 :::
 
 :::html

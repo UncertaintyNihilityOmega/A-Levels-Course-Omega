@@ -103,6 +103,9 @@ eq("quiz pH", round(-log10(0.04), 2), 1.40)
 eq("quiz wrong 1.70", round(-log10(0.0200), 2), 1.70)
 eq("quiz wrong 2.00", round(-log10(0.0200 / 2.00), 2), 2.00)
 eq("quiz wrong 1.00", round(-log10(0.1), 2), 1.00)
+# quiz now asks for [H+]: distractors 0.0100 (no 4:1), 0.0800 (no volume), 0.160 (times volume)
+eq("quiz wrong 0.0100", 0.0200 / 2.00, 0.01)
+eq("quiz wrong 0.160", 4 * 0.0200 * 2.00, 0.16)
 
 # ---- Al + O2
 eq("Al2O3 Mr", 2 * A['Al'] + 3 * A['O'], 102.0)

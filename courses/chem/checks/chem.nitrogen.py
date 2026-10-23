@@ -36,13 +36,12 @@ made = 6 * 390
 eq("broken", broken, 2252)
 eq("made", made, 2340)
 eq("dH Haber", broken - made, -88)
-# exam: 1/2 N2 + 3/2 H2 -> NH3
-b2 = 0.5 * 944 + 1.5 * 436
-eq("half N2", 0.5 * 944, 472)
-eq("3/2 H2", 1.5 * 436, 654)
-eq("broken per NH3", b2, 1126)
-eq("made per NH3", 3 * 390, 1170)
-eq("dH per NH3", b2 - 3 * 390, -44)
+# exam: N2 + 2H2 -> N2H4 (hydrazine), N-N 160 average bond energy (Data booklet)
+b2 = 944 + 2 * 436
+m2 = 160 + 4 * 390
+eq("broken N2H4", b2, 1816)
+eq("made N2H4", m2, 1720)
+eq("dH N2H4", b2 - m2, 96)
 
 # ---- percentage of N in the fertilisers
 Mr_AN = 2 * A['N'] + 4 * A['H'] + 3 * A['O']
@@ -54,6 +53,13 @@ eq("%N (NH4)2SO4", sf(2 * A['N'] / Mr_AS * 100), 21.2)
 eq("quiz wrong 17.5", sf(A['N'] / Mr_AN * 100), 17.5)
 eq("quiz wrong 70.0", sf(Mr_AN * 0 + 2 * 2 * A['N'] / Mr_AN * 100), 70.0)
 assert 2 * A['N'] / Mr_AN > 2 * A['N'] / Mr_AS
+# exam practice: NH4Cl and urea CO(NH2)2
+Mr_AC = A['N'] + 4 * A['H'] + A['Cl']
+Mr_U = A['C'] + A['O'] + 2 * (A['N'] + 2 * A['H'])
+eq("Mr NH4Cl", Mr_AC, 53.5)
+eq("Mr urea", Mr_U, 60.0)
+eq("%N NH4Cl", sf(A['N'] / Mr_AC * 100), 26.2)
+eq("%N urea", sf(2 * A['N'] / Mr_U * 100), 46.7)
 
 # ---- sulfur to sulfuric acid
 Mr_H2SO4 = 2 * A['H'] + A['S'] + 4 * A['O']
