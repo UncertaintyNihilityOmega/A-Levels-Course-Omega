@@ -8,7 +8,7 @@ Rebuild it with `node engine/build.js`.
 | Role | Model | Chat opened in | Does |
 |---|---|---|---|
 | Project Organizer | Opus | this folder (the project root) | engine, design, kits, hard problems, assembling and checking the whole site, commits |
-| `<Course>` Specialist | Opus | `courses/<c>` | **LEAD**: plans the course, writes the gold chapter. **REVIEW**: after every 2 Writer packages, and a final review |
+| `<Course>` Specialist | Opus | `courses/<c>` | **LEAD**: plans the course, writes the gold chapter. **REVIEW**: after every 3 Writer packages, and a final review |
 | `<Course>` Writer | Sonnet | `courses/<c>` | **WRITE**: one package of 2–3 chapters per chat, plus its widgets and number checks; several Writer chats can run at once (each claims a package) |
 | `<Course>` Reader | Sonnet | `courses/<c>` | **READER**: after every package is reviewed, reads the course in order as a beginner (6–8 chapters per chat) and files `(reader)` items in REVIEW.md where a student would get lost |
 

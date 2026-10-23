@@ -13,7 +13,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const AHEAD = 4;
+const AHEAD = 6; // reviews take 3 packages at a time (2026-10-23), so 2 Writers keep going during a review
 const STEP_RE = /^- (LEAD|READER|FINAL|P\d+): (open|writing|written|reviewed|done)\b(.*)$/;
 const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
 const readLines = (p) => fs.existsSync(p) ? fs.readFileSync(p, 'utf8').split(/\r?\n/) : [];
@@ -63,7 +63,7 @@ function courseProgress(dir, course) {
   else {
     if (open.length) writer.push({ step: 'FIX', why: `${open.length} open item(s) in REVIEW.md` });
     const allWritten = !free.length && !writing.length;
-    if (lead && (unreviewed.length >= 2 || (allWritten && unreviewed.length))) specialist.push({ step: `REVIEW ${unreviewed.join(', ')}`, why: `${unreviewed.length} written package(s) not reviewed yet` });
+    if (lead && (unreviewed.length >= 3 || (allWritten && unreviewed.length))) specialist.push({ step: `REVIEW ${unreviewed.join(', ')}`, why: `${unreviewed.length} written package(s) not reviewed yet` });
     if (free.length) {
       if (unreviewed.length + writing.length < AHEAD || !lead) {
         const p = pk.find(x => x.id === free[0]);

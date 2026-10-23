@@ -67,7 +67,7 @@ stop, and the prompt templates. Outside a run, never spawn course agents: course
 - Course workflow (2026-10-13): STATUS.md is state, not a log: a `Last:` line plus one line per step
   (`- LEAD: done`, `- P3: open|writing|written|reviewed`, `- FINAL: done`), written only by the kit
   (`claim [Pn]`, `release Pn`, `done "<step>" "<summary>"`; logic in `engine/progress.js`, which status.js uses too).
-  Several Writers can work at once: each claims a package; at most `AHEAD` (4) packages past the last review.
+  Several Writers can work at once: each claims a package; at most `AHEAD` (6) packages past the last review; reviews take 3 packages (2026-10-23).
   LEAD plans packages of 2–3 chapters and writes `packages/Pn.md` notes, so a Writer reads COURSE.md + its own notes.
 - Marks and phones (2026-10-13): lib.js turns `[M1 A1]` shorthand into `[M1] [A1]` (`splitMarks`); lint.js fails a
   try answer or `:::eg` whose marks differ from its `[n marks]`. Inline maths of 24+ characters is rendered as one

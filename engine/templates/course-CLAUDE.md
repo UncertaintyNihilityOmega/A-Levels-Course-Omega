@@ -107,7 +107,7 @@ browser pane needed); look at them with the Read tool. Use it when the pane cann
 7. `node kit/zta.js done "WRITE Pn" "<chapters; widgets; anything the reviewer should know>"`. Report in 3 lines.
    {{#LEAD}}If `status` now lists a REVIEW, tell the user to run the Specialist REVIEW.{{/LEAD}}
 {{#LEAD}}
-## REVIEW (Specialist): when 2 or more packages are written, and REVIEW FINAL at the end
+## REVIEW (Specialist): when 3 or more packages are written (or the last ones), and REVIEW FINAL at the end
 1. `status` (it names the packages to review), `check` (all chapters), `phone`, `preview`.
 2. Read the new packages: at least every worked example and try answer of two chapters, and the opening,
    key boxes and quiz of the rest. Verify facts against FACTS.md and numbers by recomputing them. Look at the

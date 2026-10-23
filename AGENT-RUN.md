@@ -29,7 +29,7 @@ Only run it when the user asks for it in that chat. It is not the default.
 - Course not planned → Specialist **LEAD** alone. Then answer its REQUESTS.md lines, `node engine/sync.js`, and commit.
 - Then keep **2 Writers** busy, each with one named package (in `status` order). Start a new agent for each
   package: a fresh context is cheaper than a long one.
-- When `status` lists a REVIEW (2+ packages written), start the **Specialist REVIEW** for exactly those
+- When `status` lists a REVIEW (3+ packages written, or the last ones), start the **Specialist REVIEW** for exactly those
   packages, while the Writers go on. The kit allows at most 4 packages past the last review (`AHEAD` in
   engine/progress.js). When it says WAIT, wait for the review.
 - After a review: give its REVIEW.md items to the next Writer as **FIX + WRITE Pn** (only one agent at a time does FIX).
@@ -66,14 +66,18 @@ and follow its "Rules for every session" and "<STEP> (<ROLE>)" steps, with these
 - A guard blocks every file access and command outside the course folder (and `..` and git). That is intended;
   never work around it.
 - No subagents, no git. Python is `py`. Edit chapters only with Write/Edit (never a script: heredocs eat backslashes).
+- Save tokens without lowering quality: every tool call re-sends your whole context, so bundle commands (check and
+  phone in one Bash call, one Python script per chapter's figures), and open screenshots only when you need to look.
+- Do not leave background processes running when you finish.
 ```
 
 ### Writer additions (WRITE, FIX + WRITE, resume)
 ```
 - Do not use the browser tools at all: another agent uses the browser. Your checks are `node kit/zta.js check <id>`,
   `phone <ids>` and `widget <name> "…" --probe`. Check every SVG figure's coordinates and label positions with Python,
-  then look at them once with `node kit/zta.js shot <id>` (headless PNGs in preview/shots/; open them with Read) and fix
-  what you see.
+  then look at them once, at the end, with `node kit/zta.js shot <id>` and `shot <id> --phone` (headless PNGs in
+  preview/shots/; open them with Read) and fix what you see. Dark shots only for a widget whose probe flagged something
+  (the reviewer looks at dark mode).
 - Other agents work on other packages at the same time. Touch only <Pn>'s files: its chapters, their checks and the
   widgets/<name>.js files it builds. Never edit COURSE.md, course.json, FACTS.md, widgets.js, REVIEW.md, another
   package's files, or STATUS.md (the kit writes it).
@@ -120,8 +124,8 @@ A batch of 7 chapters is about 50–60k words of chapter text (Physics averaged 
   Each widget belongs to exactly one package. The gold chapter has every STYLE section and passes check and phone.
   Finish with `done LEAD`, then reply: a 3-line summary, the package list (`P1: ids (widgets: …)`), the gold
   chapter's check and phone results, and anything for the Organizer.
-- **REVIEW <Pa>, <Pb>**: Writers cannot use the browser, so nobody has looked at their figures or widgets yet.
+- **REVIEW <Pa>, <Pb>, <Pc>** (3 packages from 2026-10-23): Writers cannot use the browser, so nobody has looked at their figures or widgets yet.
   Look at every figure and widget (light, dark, phone, interactions), fix layout yourself, then read and recompute
   at CLAUDE.md's step 2 depth. Judge depth and add what is missing, or list precise additions. List the Writers'
-  reported deviations for the reviewer to confirm. Finish with `done "REVIEW <Pa>, <Pb>"` (exactly those packages).
+  reported deviations for the reviewer to confirm. Finish with `done "REVIEW <Pa>, <Pb>, <Pc>"` (exactly those packages).
   Reply in at most 8 lines.
