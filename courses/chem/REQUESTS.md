@@ -22,3 +22,7 @@ Engine bugs, new block types, design changes, or anything that needs another cou
     (`while (perUnit * tstep < 22)` with perUnit 0): `shot` hides the widget while it photographs the figures, and on the
     site a hidden widget redrawn on a theme change would freeze the page. Now guarded (`perUnit > 0`); shot and probe pass.
     Widget rule: never loop on a measured size without checking it is positive.
+- [x] 2026-10-23 · (from REVIEW P5, P6) keep a history of Writers' notes; headless shots show number inputs as "0,1"
+  - Organizer 2026-10-23: `done "WRITE Pn"` now also appends the summary to packages/Pn.md ("## Writer's notes"), so a
+    reviewer reads it there. Headless runs (probe, phone, shot) now pass `--lang=en-GB`, so number inputs use a decimal point.
+    The black unchecked checkbox in shots is headless drawing only; ignore it.

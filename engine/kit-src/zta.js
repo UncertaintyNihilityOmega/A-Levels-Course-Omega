@@ -273,7 +273,7 @@ function dumpDom(url, width, budget, timeout) {
   let last = null;
   for (const exe of goodBrowser ? [goodBrowser] : browsers()) {
     const prof = fs.mkdtempSync(path.join(os.tmpdir(), 'zta-probe-'));
-    const r = spawnSync(exe, ['--headless=new', '--disable-gpu', '--no-first-run', '--no-default-browser-check', '--disable-extensions', `--user-data-dir=${prof}`,
+    const r = spawnSync(exe, ['--headless=new', '--disable-gpu', '--no-first-run', '--no-default-browser-check', '--disable-extensions', '--lang=en-GB', `--user-data-dir=${prof}`,
       `--window-size=${width},900`, `--virtual-time-budget=${budget}`, '--dump-dom', url], { encoding: 'utf8', timeout, maxBuffer: 256 * 1024 * 1024 });
     try { fs.rmSync(prof, { recursive: true, force: true }); } catch (e) { /* the browser may still hold it */ }
     last = r;
@@ -371,7 +371,7 @@ function shot(id, dark, phoneW) {
     fs.writeFileSync(path.join(PREVIEW, own + '-frame.html'), SHOT_FRAME(q(`&from=${g.from}&to=${g.to}`), W, H));
     const file = path.join(PREVIEW, 'shots', `${tag}-${g.from + 1}.png`);
     const prof = fs.mkdtempSync(path.join(os.tmpdir(), 'zta-shot-'));
-    spawnSync(goodBrowser || findBrowser(), ['--headless=new', '--disable-gpu', '--no-first-run', '--no-default-browser-check', '--disable-extensions', '--hide-scrollbars',
+    spawnSync(goodBrowser || findBrowser(), ['--headless=new', '--disable-gpu', '--no-first-run', '--no-default-browser-check', '--disable-extensions', '--lang=en-GB', '--hide-scrollbars',
       `--user-data-dir=${prof}`, `--window-size=${Math.max(W, 500)},${H}`, '--virtual-time-budget=8000', `--screenshot=${file}`,
       pathToFileURL(path.join(PREVIEW, own + '-frame.html')).href], { timeout: 120000 });
     try { fs.rmSync(prof, { recursive: true, force: true }); } catch (e) { /* still held */ }
