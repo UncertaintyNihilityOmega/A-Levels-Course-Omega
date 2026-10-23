@@ -275,6 +275,12 @@ Take the square root of both sides: \(\dfrac{x}{1.00 - x} = 2.00\) [M1]
 So \(x = 2.00 - 2.00x\), giving \(3.00x = 2.00\) and \(x = 0.667\) mol of ester. [A1]
 :::
 
+:::try Now you try
+Q: ★★ For \(\ce{H2(g) + I2(g) <=> 2HI(g)}\), \(K_c = 49.0\) at a certain temperature. At equilibrium \([\ce{H2}] = [\ce{I2}] = 0.0200\) mol dm⁻³. Calculate \([\ce{HI}]\).
+H: Write the Kc expression first, then rearrange for \([\ce{HI}]^2\).
+A: \(K_c = \dfrac{[\ce{HI}]^2}{[\ce{H2}][\ce{I2}]}\), so \([\ce{HI}]^2 = 49.0 \times 0.0200 \times 0.0200 = 0.0196\). Taking the square root, \([\ce{HI}] = 0.140\) mol dm⁻³.
+:::
+
 ### Reversing the equation
 
 A final point, which is often asked as a short calculation: writing the reaction in the opposite direction inverts K. If \(K_c = 4.00\) for the esterification, then for the hydrolysis \(\ce{CH3COOC2H5 + H2O <=> CH3COOH + C2H5OH}\), \(K_c = 1/4.00 = 0.250\). The same equilibrium mixture is described, only with the labels reversed.
@@ -521,13 +527,13 @@ A: (a) A lower temperature would give a higher equilibrium yield but the rate wo
 (b) Higher pressure raises the yield but needs stronger, more expensive vessels and more energy for compression, so the extra cost is not justified. [B1]
 (c) Removing ammonia moves the position to the right, making more ammonia. [B1] Unreacted nitrogen and hydrogen are returned to the reactor, so none is wasted. [B1]
 (d) The catalyst has no effect on the equilibrium yield, but it increases the rate so equilibrium is reached faster. [B1]
-Q: [6 marks] ★★★ The esterification \(\ce{CH3COOH + C2H5OH <=> CH3COOC2H5 + H2O}\) has \(K_c = 4.00\) at a certain temperature. 1.00 mol of ethanoic acid is mixed with 1.00 mol of ethanol. (a) Write the expression for Kc. (b) Calculate the amount of ethyl ethanoate at equilibrium. (c) Calculate the mass of ethyl ethanoate formed, given \(M_r = 88.0\).
-H: Let \(x\) mol of ester form, and take the square root of both sides.
+Q: [6 marks] ★★★ The esterification \(\ce{CH3COOH + C2H5OH <=> CH3COOC2H5 + H2O}\) has \(K_c = 9.00\) at a certain temperature. 1.50 mol of ethanoic acid is mixed with 1.50 mol of ethanol. (a) Write the expression for Kc. (b) Calculate the amount of ethyl ethanoate at equilibrium. (c) Calculate the mass of ethyl ethanoate formed, given \(M_r = 88.0\).
+H: Let \(x\) mol of ester form, and take the square root of both sides: the square root of 9.00 is 3.00.
 A: (a) \(K_c = \dfrac{[\ce{CH3COOC2H5}][\ce{H2O}]}{[\ce{CH3COOH}][\ce{C2H5OH}]}\) [B1]
-(b) At equilibrium: ester = \(x\), water = \(x\), acid = ethanol = \(1.00 - x\). The volume cancels. [M1]
-\(K_c = x^2/(1.00 - x)^2 = 4.00\), so \(x/(1.00 - x) = 2.00\) [M1]
-\(x = 0.667\) mol [A1]
-(c) Mass \(= 0.667 \times 88.0 = 58.7\) g [M1] [A1]
+(b) At equilibrium: ester = \(x\), water = \(x\), acid = ethanol = \(1.50 - x\). The volume cancels. [M1]
+\(K_c = x^2/(1.50 - x)^2 = 9.00\), so \(x/(1.50 - x) = 3.00\) [M1]
+\(x = 1.125\) mol, given as 1.13 mol [A1]
+(c) Mass \(= 1.125 \times 88.0 = 99.0\) g (use the unrounded \(x\)) [M1] [A1]
 :::
 
 :::try Stretch for A*

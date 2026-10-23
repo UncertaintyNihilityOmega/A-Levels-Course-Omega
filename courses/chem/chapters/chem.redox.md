@@ -437,12 +437,12 @@ Q: [3 marks] ★ Deduce the oxidation number of (a) manganese in \(\ce{MnO4^2-}\
 A: (a) \(x + 4(-2) = -2\), so +6. [B1]
 (b) \(x + 3(-2) = -1\), so +5. [B1]
 (c) Hydrogen is −1 in a metal hydride (sodium is +1). [B1]
-Q: [4 marks] ★★ In acid solution, \(\ce{MnO4-}\) is reduced to \(\ce{Mn^2+}\) and \(\ce{H2O2}\) is oxidised to \(\ce{O2}\). Write both half-equations and combine them into the overall ionic equation.
+Q: [4 marks] ★★ In acid solution, \(\ce{MnO4-}\) is reduced to \(\ce{Mn^2+}\) and ethanedioate ions, \(\ce{C2O4^2-}\), are oxidised to \(\ce{CO2}\). Write both half-equations and combine them into the overall ionic equation.
 H: Multiply the half-equations so that both involve ten electrons.
 A: \(\ce{MnO4- + 8H+ + 5e- -> Mn^2+ + 4H2O}\) [B1]
-\(\ce{H2O2 -> O2 + 2H+ + 2e-}\) [B1]
-Multiply the first by 2 and the second by 5 so that the electrons cancel. [M1]
-\(\ce{2MnO4- + 6H+ + 5H2O2 -> 2Mn^2+ + 8H2O + 5O2}\) [A1]
+\(\ce{C2O4^2- -> 2CO2 + 2e-}\) [B1]
+Multiply the first by 2 and the second by 5 so that the 10 electrons cancel. [M1]
+\(\ce{2MnO4- + 16H+ + 5C2O4^2- -> 2Mn^2+ + 8H2O + 10CO2}\) [A1]
 Q: [4 marks] ★★ Chlorine reacts with hot concentrated aqueous sodium hydroxide to form sodium chloride and sodium chlorate(V). (a) Write the equation. (b) Use oxidation numbers to show that the reaction is a disproportionation.
 A: (a) \(\ce{3Cl2 + 6NaOH -> 5NaCl + NaClO3 + 3H2O}\) [B1]
 (b) Chlorine goes from 0 to −1 in \(\ce{NaCl}\): reduction. [B1]
@@ -455,13 +455,13 @@ A: (a) Colourless to (permanent) pale pink; the first drop of excess manganate(V
 \(n(\ce{H2O2}) = 4.00 \times 10^{-4} \times \tfrac52 = 1.00 \times 10^{-3}\) mol [M1]
 \(c = 1.00 \times 10^{-3} / 0.0250 = 0.0400\) mol dm⁻³ [A1]
 \(M_r(\ce{H2O2}) = 34.0\), so \(0.0400 \times 34.0 = 1.36\) g dm⁻³ [A1]
-Q: [5 marks] ★★ 1.50 g of a tablet containing iron(II) sulfate is dissolved in dilute sulfuric acid and made up to 250 cm³. 25.0 cm³ portions need a mean titre of 14.40 cm³ of 0.0100 mol dm⁻³ potassium manganate(VII). Calculate the percentage by mass of \(\ce{FeSO4}\) in the tablet.
-H: The portion is one tenth of the whole solution.
-A: \(n(\ce{MnO4-}) = 0.0100 \times 0.01440 = 1.44 \times 10^{-4}\) mol [M1]
-\(n(\ce{Fe^2+})\) in the portion \(= 5 \times 1.44 \times 10^{-4} = 7.20 \times 10^{-4}\) mol [M1]
-In 250 cm³: \(7.20 \times 10^{-3}\) mol [M1]
-\(M_r(\ce{FeSO4}) = 151.9\), so the mass is 1.094 g [B1]
-Percentage \(= 1.094 / 1.50 \times 100 = 72.9\,\%\) [A1]
+Q: [5 marks] ★★ An iron tablet of mass 0.800 g is dissolved in dilute sulfuric acid and made up to 100 cm³. 20.0 cm³ portions need a mean titre of 12.80 cm³ of 0.00500 mol dm⁻³ potassium manganate(VII). Calculate the percentage by mass of iron in the tablet.
+H: The portion is one fifth of the solution.
+A: \(n(\ce{MnO4-}) = 0.00500 \times 0.01280 = 6.40 \times 10^{-5}\) mol [M1]
+\(n(\ce{Fe^2+})\) in 20.0 cm³ \(= 5 \times 6.40 \times 10^{-5} = 3.20 \times 10^{-4}\) mol [M1]
+In 100 cm³: \(1.60 \times 10^{-3}\) mol [M1]
+Mass of Fe \(= 1.60 \times 10^{-3} \times 55.8 = 0.0893\) g [B1]
+Percentage \(= 0.0893 / 0.800 \times 100 = 11.2\,\%\) [A1]
 Q: [6 marks] ★★★ Copper reacts with concentrated nitric acid: \(\ce{Cu + 4HNO3 -> Cu(NO3)2 + 2NO2 + 2H2O}\). (a) Use oxidation numbers to identify the oxidising agent and the element oxidised. (b) State the two roles of nitric acid in this reaction. (c) Calculate the volume of nitrogen dioxide formed, at room temperature and pressure, when 0.635 g of copper reacts.
 H: In (b), count the nitrogen that is reduced and the nitrogen that is not.
 A: (a) Cu goes from 0 to +2: copper is oxidised. [B1]

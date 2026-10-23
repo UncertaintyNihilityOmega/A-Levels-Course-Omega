@@ -98,6 +98,12 @@ import json
 Ar = {e['sym']: e['ar'] for e in json.load(open('data/elements.json', encoding='utf-8'))}
 Mr = 4 * Ar['C'] + 8 * Ar['H'] + 2 * Ar['O']
 eq("ester Mr", Mr, 88.0); eq("ester mass", sf(2.00 / 3.00 * Mr), 58.7)
+# exam practice: Kc = 9.00, 1.50 mol each
+x2 = 1.50 * 3.00 / 4.00
+eq("ester2 x", x2, 1.125, 1e-12); eq("ester2 x 3sf", round(x2 + 1e-9, 2), 1.13); eq("ester2 K", x2 ** 2 / (1.50 - x2) ** 2, 9.00, 1e-9)
+eq("ester2 sqrt", sqrt(9.00), 3.00); eq("ester2 mass", sf(x2 * Mr), 99.0)
+# try: H2 + I2 <=> 2HI, Kc = 49.0
+eq("HI sq", 49.0 * 0.0200 * 0.0200, 0.0196, 1e-12); eq("HI", sqrt(0.0196), 0.140, 1e-9)
 
 # ---- stretch: N2O4 dissociation, alpha = 0.200 at 2.00 atm, then 4.00 atm
 a = 0.200
