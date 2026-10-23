@@ -27,6 +27,8 @@ are listed at the end of kit/LINKS.md: use them freely in chapters, but never re
 - Works at phone width (360–400 px) without horizontal scrolling; controls wrap (`.w-row` already wraps).
 - Looks right in light **and** dark mode: never hard-code colours. DOM: use the classes below. Canvas: read
   colours with the `colors` argument of `W.canvas` draw (it redraws on theme change automatically).
+- Draw must survive zero size: a hidden widget is redrawn on theme change with width and height 0. Never loop
+  on a measured size (`while (perUnit * step < 22)`) without checking it is positive first, or the page freezes.
 - Every control has a label (`<label>` or `aria-label`). A widget can appear twice on a page: no fixed ids.
 - State lives inside the widget's closure. `W.store` only for small conveniences.
 - Respect `prefers-reduced-motion` for any animation.
