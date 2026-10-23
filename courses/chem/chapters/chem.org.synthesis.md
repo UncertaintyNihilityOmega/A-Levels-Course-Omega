@@ -181,7 +181,7 @@ Using NaOH *in ethanol* in step 1 would be the common slip: it gives propene by 
 
 Some questions hand you the route and ask what is going on. For each step you may be asked for the reagent, the type of reaction, the mechanism and the by-products. Treat each arrow as its own small question. A route is only as good as its worst step: ask of each step what else could happen in the flask.
 
-:::eg The route below is used to make 2-methylpropanoic acid from propan-1-ol. (a) Identify the type of reaction in each step. (b) Suggest the reagent for steps 1 and 2. (c) Name an organic by-product of step 2 and say why it forms.
+:::eg The route below is used to make 2-methylpropanoic acid from propan-1-ol. (a) Identify the type of reaction in each step. (b) Suggest the reagent for steps 1 and 2. (c) Name an organic by-product of step 2 and say why it forms. (d) State at which step the number of carbon atoms changes.
 \[\ce{CH3CH2CH2OH ->[1] CH3CH=CH2 ->[2] CH3CHBrCH3 ->[3] CH3CH(CN)CH3 ->[4] CH3CH(CH3)COOH}\]
 
 (a) Step 1 is elimination (dehydration), step 2 is electrophilic addition, step 3 is nucleophilic substitution and step 4 is hydrolysis. [B1] [B1]
@@ -192,7 +192,7 @@ Some questions hand you the route and ask what is going on. For each step you ma
 
 (d) The carbon count goes from three (propan-1-ol, propene, 2-bromopropane) to four at step 3, where KCN adds one carbon. [B1]
 
-The route works because the *middle* bromine ends up on the middle carbon, giving a branched acid. A route to straight-chain butanoic acid could not use this addition step. [B1]
+The route gives a *branched* acid because the bromine ends up on the middle carbon. A route to straight-chain butanoic acid could not use this addition step. [B1]
 :::
 
 ### Possible by-products at each kind of step
@@ -303,7 +303,7 @@ No silver mirror rules out an aldehyde, so X is a ketone. [B1]
 
 The yellow precipitate shows a \(\ce{CH3CO-}\) group. [B1]
 
-The ketones with formula \(\ce{C4H8O}\) are butanone only (the other isomer, cyclobutanone, is not on the syllabus). Butanone is \(\ce{CH3COCH2CH3}\): it has the \(\ce{CH3CO-}\) group, which pentan-3-one and other ketones with the C=O flanked by two longer chains lack. X is butanone. [B1]
+The only straight-chain or branched ketone with the formula \(\ce{C4H8O}\) is butanone, \(\ce{CH3COCH2CH3}\), and it does have the \(\ce{CH3CO-}\) group. X is butanone. (Its aldehyde isomer, butanal, would have given a silver mirror and no yellow precipitate.) [B1]
 :::
 
 :::eg Describe a test to distinguish each pair, stating the result for each compound: (a) propan-1-ol and propan-2-ol; (b) propanal and propanone; (c) ethanoic acid and ethyl ethanoate; (d) butan-2-ol and 2-methylpropan-2-ol.
