@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-23 · WRITE P12 · chem.org.synthesis (5.8k words, 11 eg, 53 marks), chem.analysis (5.7k words, 11 eg, 44 marks); checks ok, phone ok. Widgets chem-orgmap (AS+A Level map, route finder with carbon-adding filter; aliases so data-focus=alcohol opens primary alcohol) and chem-ms (molecular ion cluster, Ar calculator), probes clean. Reviewer: hand IR/MS sketches are schematic (ranges from FACTS), check figure label clearances in the shots; compound Z and R/Q/S examples are invented; links checked 23 Oct.
+Last: 2026-10-23 · WRITE P13 · chem.lattice (6.1k words, 13 eg) and chem.electrochem (6.0k words, 19 eg): check ok, phone ok, no checklist notes. Widgets chem-bornhaber (NaCl, KCl, MgO, MgCl2, CaO, Na2O, custom; any term unknown; example data from the chapter, IE from FACTS) and chem-cell (cell tab and Nernst tab, E values generated from FACTS) probed clean in light, dark, phone and with bad attributes. Reviewer notes: Born-Haber data are labelled data for this question (NaCl lattice -785 uses dHat(Cl) +122); hydration enthalpies, S values, electron affinities and ionic radii are standard data-book values given as data in questions; the plot of E against log[Cu2+] was dropped in favour of the chem-cell Nernst tab; the Gibbs plot uses dS 160.6 (T = 1108 K); no board box in chem.lattice, AQA fuel-cell board box in chem.electrochem; links checked 23 Oct 2026.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -17,8 +17,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P10: reviewed 2026-10-23
 - P11: written 2026-10-23
 - P12: written 2026-10-23
-- P13: writing 2026-10-23
-- P14: open
+- P13: written 2026-10-23
+- P14: writing 2026-10-23
 - P15: open
 - P16: open
 - P17: open
