@@ -22,7 +22,7 @@ A: Water molecules form hydrogen bonds (O–H···O), which are much stronger t
 
 ## What is an alcohol?
 
-An alcohol is an organic compound in which a hydrogen atom of a hydrocarbon has been replaced by an **hydroxyl group**, –OH, attached to a carbon atom that has only single bonds.
+An alcohol is an organic compound in which a hydrogen atom of a hydrocarbon has been replaced by a **hydroxyl group**, –OH, attached to a carbon atom that has only single bonds.
 
 :::def Alcohol
 A compound containing the hydroxyl functional group, –OH, bonded to a saturated carbon atom. With one OH group the general formula is \(\ce{C_nH_{2n+1}OH}\), written R–OH.

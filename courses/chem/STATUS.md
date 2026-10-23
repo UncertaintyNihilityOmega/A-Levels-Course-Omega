@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-23 · WRITE P9 · chem.org.intro (5972 words) and chem.org.isomerism (5849 words, A Level section last); widget chem-chiral (probed clean: 5 presets, bad attribute, light/dark/phone). Reviewer: 9 skeletal/displayed/mechanism figures made with scripted coordinates (scratch/fig.py), nested :::html inside :::eg used twice; C4H9Br/C5H12/C4H8/C5H10 isomer counts checked by enumeration; links checked 23 Oct (chemguide names/structural/geometric/optical pages); chem-chiral 3D view is a flat-looking cross (drag to turn); animated test only checked by maths, not clicked.
+Last: 2026-10-23 · REVIEW P9, P10 · 0 open items; fixed chem-chiral 3D view (asymmetric start, depth cue, phone scale; animation clicked, all presets right), redrew butan-2-ol enantiomer figure, small text fixes in intro/isomerism/alcohols; all numbers recomputed; COURSE.md lessons merged into its sections (21 KB to 15 KB) plus 3D-widget rule
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -13,8 +13,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P6: reviewed 2026-10-23
 - P7: reviewed 2026-10-23
 - P8: reviewed 2026-10-23
-- P9: written 2026-10-23
-- P10: written 2026-10-23
+- P9: reviewed 2026-10-23
+- P10: reviewed 2026-10-23
 - P11: writing 2026-10-23
 - P12: writing 2026-10-23
 - P13: open

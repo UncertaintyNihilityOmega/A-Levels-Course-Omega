@@ -102,7 +102,7 @@ For propan-1-ol the molecular formula is \(\ce{C3H8O}\), the general formula of 
 :::key Reading a skeletal formula
 - Each **corner** and each **line end** is a carbon atom.
 - Each line is a bond. A double bond is two parallel lines, a triple bond is three.
-- Hydrogen atoms attached to carbon are **not drawn**. Each carbon makes four bonds in total, so count the bonds shown and add enough hydrogen atoms to make four.
+- Hydrogen atoms attached to carbon are **not drawn**. Each carbon makes four bonds in total, so count the bonds shown and add enough hydrogen atoms to make four. (The one common exception: the H of an aldehyde group is often drawn, as –CHO, to make the group clear.)
 - Atoms other than carbon and hydrogen are drawn as their symbols (O, N, Cl, Br). A hydrogen atom attached to one of these **is** drawn: write OH and NH₂, not just O and N.
 - Draw the zigzag so that bond angles look about 120°. An alkyne or nitrile unit (\(\ce{C#C}\), \(\ce{C#N}\)) is drawn as a straight line with its neighbours.
 :::
@@ -334,10 +334,12 @@ A quick check on counting: for a molecule with no ring, the number of σ bonds i
 :::eg Identify the type of hybridisation, the shape and the bond angle around each carbon atom in \(\ce{CH2=CH-CH2-C#N}\) (but-3-enenitrile).
 Count the regions of electron density around each carbon; a multiple bond counts as one region.
 
-- Carbon 1 (\(\ce{CH2=}\)): two H and one double bond is 3 regions: **sp²**, trigonal planar, 120°.
-- Carbon 2 (\(\ce{=CH-}\)): one H, one double bond and one single bond is 3 regions: **sp²**, trigonal planar, 120°.
-- Carbon 3 (\(\ce{-CH2-}\)): two H and two single bonds is 4 regions: **sp³**, tetrahedral, 109.5°.
-- Carbon 4 (\(\ce{-C#N}\)): one single bond and one triple bond is 2 regions: **sp**, linear, 180° (the C–C≡N unit is a straight line).
+Work from left to right. (In the name the nitrile carbon is carbon 1, so the \(\ce{CH2=}\) carbon is carbon 4; the left-to-right order here is only for counting.)
+
+- The \(\ce{CH2=}\) carbon: two H and one double bond is 3 regions: **sp²**, trigonal planar, 120°.
+- The \(\ce{=CH-}\) carbon: one H, one double bond and one single bond is 3 regions: **sp²**, trigonal planar, 120°.
+- The \(\ce{-CH2-}\) carbon: two H and two single bonds is 4 regions: **sp³**, tetrahedral, 109.5°.
+- The \(\ce{-C#N}\) carbon: one single bond and one triple bond is 2 regions: **sp**, linear, 180° (the C–C≡N unit is a straight line).
 :::
 
 :::exam Shapes in an exam answer
@@ -351,9 +353,9 @@ Line 1: The longest chain containing the OH group has four carbons, so the stem 
 Line 2: Number from the \(\ce{CH3}\) end of the chain, so the methyl branch is on carbon 3 and the OH is on carbon 4.
 Line 3: The name is 3-methylbutan-4-ol.
 
-Line 1 is correct: stem and ending [B1]. **Line 2 is wrong: the chain must be numbered from the end that gives the functional group the lowest number, so the carbon with the OH is carbon 1, and the methyl branch is then on carbon 2 [B0].** Line 3 names the branch correctly as methyl [B1] but the locants follow the wrong numbering.
+Line 1 is correct: stem and ending [B1]. Line 3 names the branch correctly as methyl [B1]. **Line 2 is wrong: the chain must be numbered from the end that gives the functional group the lowest number, so the carbon with the OH is carbon 1, and the methyl branch is then on carbon 2. The locant mark is lost [B0].**
 
-The student scores 2 out of 3. The correct name is 2-methylbutan-1-ol, and the third mark is for the correct locants [B1].
+The student scores 2 out of 3. The correct name is 2-methylbutan-1-ol, which earns the locant mark [B1].
 :::
 
 :::try Start easy, finish at exam standard
