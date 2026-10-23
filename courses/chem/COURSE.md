@@ -158,6 +158,16 @@ Writers cannot see their figures. Plan coordinates in Python, then `shot <id>` a
   not "about −1"), and say in the checks file where the values come from.
 - Never name a colour in a widget `.w-note` either ("the labelled arcs", not "red arcs").
 
+### Lessons from REVIEW P5, P6 (23 Oct 2026)
+- **Hand SVGs are `fig small` by default** (viewBox 300–350 wide, 13 px text on a phone). A full-width `fig` with
+  wide empty space prints 7–8 px text on a phone: six figures in P5–P6 had to be redrawn (half-equations, number line,
+  Haber flow chart, particle boxes, collisions, gas syringe). Stack a flow chart vertically (boxes ~150 wide, the
+  recycle loop down the side, its label in 2–3 short lines); put multi-panel pictures in rows; split long labels
+  ("oxidation:" / "electrons lost"). Use `fig` only when the drawing really needs ~600 px.
+- Exam-practice questions must use **new numbers**, never a worked example's data again (a try question that repeats the
+  example's 1.50 g tablet or its Kc = 4.00 ester tests memory, not method). A quiz may echo a try question.
+- Do not use A Level terms (rate constant, Ka, conjugate pair) to explain an AS idea; say it in AS words or link forward.
+
 ### Chemistry figure conventions (copy the gold chapter's SVG)
 - **Skeletal formulas**: zigzag `<path class="ln thick">` with 35 px horizontal steps and ±20 px vertical (bond
   ~40 px, 120° angles); heteroatom labels as `tl` text (`tc` to centre), bond ends ~5 px short of the label box.

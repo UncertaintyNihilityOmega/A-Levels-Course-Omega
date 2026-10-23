@@ -153,7 +153,7 @@
       switch (action) {
         case 't+': case 't-': {
           const up = action === 't+';
-          if (!thermo) return { dir: 0, k: 'same', why: 'The enthalpy change of this reaction is close to zero, so a change of temperature hardly moves the position and Kc hardly changes.' };
+          if (!thermo) return { dir: 0, k: 'tiny', why: 'The enthalpy change of this reaction is close to zero, so a change of temperature hardly moves the position and Kc hardly changes.' };
           const dirUp = exo ? -1 : 1;                        // raising T: left if the forward reaction is exothermic
           const dir = up ? dirUp : -dirUp;
           const towards = dir > 0 ? 'right' : 'left';
@@ -198,8 +198,8 @@
         kline.textContent = '';
         why.textContent = '';
       } else {
-        arrow.textContent = r.dir > 0 ? 'Position moves to the right → (more products)' : (r.dir < 0 ? 'Position moves to the left ← (more reactants)' : 'No change in the position of equilibrium');
-        kline.textContent = r.k === 'up' ? 'Kc increases (only a change of temperature changes Kc).' : (r.k === 'down' ? 'Kc decreases (only a change of temperature changes Kc).' : 'Kc is unchanged.');
+        arrow.textContent = r.dir > 0 ? 'Position moves to the right → (more products)' : (r.dir < 0 ? 'Position moves to the left ← (more reactants)' : (r.k === 'tiny' ? 'The position hardly moves' : 'No change in the position of equilibrium'));
+        kline.textContent = r.k === 'up' ? 'Kc increases (only a change of temperature changes Kc).' : (r.k === 'down' ? 'Kc decreases (only a change of temperature changes Kc).' : (r.k === 'tiny' ? 'Kc hardly changes (ΔH is close to zero).' : 'Kc is unchanged.'));
         why.textContent = r.why;
       }
       if (!cvs) return;
@@ -307,7 +307,7 @@
     // ---------- switching system and tab
     function setSystem(k) {
       key = k; sys = SYSTEMS[k];
-      eqLine.textContent = eqString(sys, sys.co, sys.sp, phase(sys)) + (sys.dh < 0 ? '    ΔH negative (forward reaction exothermic)' : (sys.dh > 0 ? '    ΔH positive' : '    ΔH close to zero'));
+      eqLine.textContent = eqString(sys, sys.co, sys.sp, phase(sys)) + (sys.dh < 0 ? ' ΔH negative (forward reaction exothermic)' : (sys.dh > 0 ? ' ΔH positive' : ' ΔH close to zero'));
       infoLine.textContent = sys.gas ? 'Moles of gas: ' + gasL() + ' on the left, ' + gasR() + ' on the right.' : 'All the species are liquids, so pressure has little effect.';
       st.p = sys.p0; st.before = sys.p0; st.last = null;
       btns['p+'].disabled = !sys.gas; btns['p-'].disabled = !sys.gas;

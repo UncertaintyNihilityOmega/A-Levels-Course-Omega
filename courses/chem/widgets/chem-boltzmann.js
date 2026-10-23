@@ -131,7 +131,8 @@
           tk.forEach(v => { if (v < x0 - 1e-9 || v > x1 + 1e-9) return; ctx.strokeStyle = col.ink2; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(X(v), bot); ctx.lineTo(X(v), bot + 4); ctx.stroke(); ctx.fillText(W.fmt(v, 3), X(v), bot + 16); });
           ctx.textAlign = 'right'; ctx.fillStyle = col.ink2; ctx.fillText('energy / kJ mol⁻¹', right, bot + 31);
           ctx.save(); ctx.translate(10, (top + bot) / 2); ctx.rotate(-Math.PI / 2); ctx.textAlign = 'center'; ctx.fillText('number of molecules', 0, 0); ctx.restore();
-          halo(ctx, col, label, left + 8, top + 8, 'left', col.ink2);
+          if (zoom) halo(ctx, col, label, left + 8, top - 10, 'left', col.ink2);
+          else halo(ctx, col, label, left + 8, top + 8, 'left', col.ink2);
 
           // shaded tails
           const shade = (from, T, alpha, c) => {
@@ -171,7 +172,7 @@
         // lower panel: the tail enlarged
         const e0 = ec !== null ? ec : ea;
         const ymax2 = Math.max.apply(null, temps.map(t => dens(e0, t.T))) * 1.2;
-        const x1b = Math.min(xmax, e0 + Math.max(0.6 * e0, 10 * R * Tmax));
+        const x1b = Math.min(xmax, Math.max(e0 + Math.max(0.6 * e0, 10 * R * Tmax), ec !== null ? 1.12 * ea : 0));
         const top2 = Math.round(h * 0.47) + 62, bot2 = h - 40;
         panel(top2, bot2, e0, Math.max(x1b, e0 + 1), ymax2, 'the tail beyond Eₐ, enlarged', true);
       }

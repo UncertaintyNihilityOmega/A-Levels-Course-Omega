@@ -248,7 +248,7 @@
       sVb.set(state.vb);
       const pv = phAt(state.vb, model.s);
       const ind = INDICATORS.find(i => i.id === state.ind);
-      read.set('eq', W.fmt(model.veq, 3) + ' cm³');
+      read.set('eq', (model.veq >= 1000 ? String(Math.round(model.veq)) : Number(model.veq).toPrecision(3)) + ' cm³');
       read.set('pheq', W.fix(model.phEq, 2) + (model.phEq > 7.05 ? ' (above 7)' : (model.phEq < 6.95 ? ' (below 7)' : ' (neutral)')));
       read.set('ph0', W.fix(model.ph0, 2));
       read.set('steep', model.sharp ? 'pH ' + W.fix(model.steepLo, 1) + ' to ' + W.fix(model.steepHi, 1) : 'none: pH changes only from ' + W.fix(model.steepLo, 1) + ' to ' + W.fix(model.steepHi, 1));

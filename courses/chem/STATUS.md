@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-23 · WRITE P8 · chem.group17 (6181 words, 10 eg, 3 figures incl. silver-halide test tubes, sulfur oxidation-number line, chem-trend group17 embed) and chem.nitrogen (5081 words, 10 eg, 3 figures: NH4+ formation, catalytic converter, NO2 catalytic cycle); no new widgets. Reviewer: b.p. values and pH 5.6 are standard-table values (noted in checks); conc H2SO4/halide and AgX facts follow FACTS.md; links checked 23 Oct 2026 (chemguide group7menu, halideions, haber, contact, catalysis intro).
+Last: 2026-10-23 · REVIEW P5, P6 · 4 items in REVIEW.md (chem.redox 2, chem.equilibria 2: new data for try questions that repeat worked examples; one Kc-to-concentration try). Fixed: 6 hand figures redrawn as phone-size fig small (redox x2, Haber flow, acid particle boxes, collisions, gas syringe), kinetics tangent plot headroom, equilibria AS wording for why T changes K, acids spot-the-error ending; widgets chem-boltzmann (zoom-panel label overlap, Ea in range), chem-titration (3 s.f. equivalence volume), chem-equilibrium (ester temperature wording, gap before dH). All numbers recomputed and right. COURSE.md: lessons P5, P6 (fig small by default, new numbers in try questions, no A Level terms in AS explanations).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -9,8 +9,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P2: reviewed 2026-10-16
 - P3: reviewed 2026-10-16
 - P4: reviewed 2026-10-16
-- P5: written 2026-10-16
-- P6: written 2026-10-16
+- P5: reviewed 2026-10-23
+- P6: reviewed 2026-10-23
 - P7: written 2026-10-16
 - P8: written 2026-10-23
 - P9: open
