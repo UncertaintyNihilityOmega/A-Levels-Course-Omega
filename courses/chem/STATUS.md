@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-23 · REVIEW P9, P10 · 0 open items; fixed chem-chiral 3D view (asymmetric start, depth cue, phone scale; animation clicked, all presets right), redrew butan-2-ol enantiomer figure, small text fixes in intro/isomerism/alcohols; all numbers recomputed; COURSE.md lessons merged into its sections (21 KB to 15 KB) plus 3D-widget rule
+Last: 2026-10-23 · WRITE P11 · chem.org.carbonyl (5.2k words) and chem.org.acids (4.7k words); no new widgets (chem-orgmap embedded with data-focus carbonyl and acid, placeholder until P12). Reviewer: 5 figures made with scratch/p11_carbonyl.py and p11_acids.py (scratch/fig.py helper), HCN mechanism drawn as a stacked fig small and checked by shot --phone; links checked 23 Oct (chemguide carbonyl, acid, ester, nitrile pages); no board boxes; ethyl ethanoate/yield and titration numbers differ from chem.org.alcohols examples; hydrolysis flow chart G2 and methyl propanoate figure not seen in dark mode.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -15,7 +15,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P8: reviewed 2026-10-23
 - P9: reviewed 2026-10-23
 - P10: reviewed 2026-10-23
-- P11: writing 2026-10-23
+- P11: written 2026-10-23
 - P12: writing 2026-10-23
 - P13: open
 - P14: open
