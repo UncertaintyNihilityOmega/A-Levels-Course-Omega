@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-24 · WRITE P19 · chem.analysis2 (7.8k words, 7 figures, chem-nmr), chem.practical (6.9k words, 3 figures, chem-qa); both check and phone clean; generator data/mk_fig_p19.py. Reviewer notes: no board box in analysis2 (none sure); NMR shifts are typical values inside the FACTS ranges (butanone CH3CO 2.2, ethyl ethanoate OCH2 3.9, 1-chloropropane middle CH2 1.7 at range edge); chem-qa test mode uses separate cation and anion unknowns, anion tests treat unlisted results as no change, cations show not listed; thiosulfate/KMnO4/CaCO3/thermometric numbers are original and recomputed in checks; links checked 24 Oct 2026.
+Last: 2026-10-24 · WRITE P21 · chem.exam.p1 (2.8k words, 8 worked MCQs + 6 quiz), chem.exam.p24 (3.7k words), chem.mock.p1 (40 questions, 40 marks, answer key balanced 10 each, 12 calculations, 4 statement items, 5 data items, 2 Data booklet items). No widgets. Reviewer: mock options rely on one-per-line rendering inside :::try; guide p1 worked MCQs use :::try in a guide; Paper 1 'Data booklet allowed' and 'wrong answer scores zero' follow the package notes (not in FACTS).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -25,8 +25,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P18: written 2026-10-24
 - P19: written 2026-10-24
 - P20: written 2026-10-24
-- P21: writing 2026-10-24
-- P22: open
+- P21: written 2026-10-24
+- P22: writing 2026-10-24
 - P23: open
 - READER: open
 - FINAL: open
