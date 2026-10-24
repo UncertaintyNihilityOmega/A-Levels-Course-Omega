@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-24 · READER · 82 reader items (15 in the last batch, chem.org.polymers to chem.mixed.a2)
+Last: 2026-10-24 · FIX · READER 15 items: polymers (question reworded, dioyl chloride and HO-/H2N- explained), synthesis2 (13C symmetry explained, H2/Ni rule, five routes), analysis2 (upfield/downfield, multiplet rule, Q elements), practical, planning (ln equation, percentage error), exam.p24 ecf text, mixed.as m/z, mixed.a2 PET unit
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

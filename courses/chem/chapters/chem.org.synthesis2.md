@@ -136,7 +136,7 @@ Use **\(\ce{NaBH4}\) when you want to reduce a C=O of an aldehyde or ketone and 
 
 (a) \(\ce{NaBH4}\) in water or ethanol. [B1] It reduces the aldehyde C=O to an alcohol but does not reduce C=C. [B1]
 
-(b) Two reductions are needed: \(\ce{NaBH4}\) for the C=O as in (a), then \(\ce{H2}\) with Ni (or Pt) catalyst, heat, for the C=C. [B1] (Both groups can be reduced to give the saturated alcohol, and the C=C needs the hydrogen and the metal catalyst because \(\ce{NaBH4}\) leaves it alone.) [B1]
+(b) Two reductions are needed, with two different reagents: \(\ce{NaBH4}\) for the C=O as in (a), then \(\ce{H2}\) with Ni (or Pt) catalyst, heat, for the C=C. [B1] (\(\ce{H2}\)/Ni is the reagent that reduces C=C, and \(\ce{NaBH4}\) leaves C=C alone, so neither reagent does both jobs. The two steps can be done in either order, and together they give the saturated alcohol.) [B1]
 
 (c) Hot Sn with concentrated HCl, then NaOH(aq). [B1] \(\ce{LiAlH4}\) would also reduce the COOH group; Sn/HCl reduces the nitro group and leaves the COOH group alone. [B1]
 :::
@@ -229,7 +229,7 @@ Ethylamine is itself a nucleophile, so it also reacts with bromoethane and gives
 
 ## Making amines: the choice of route
 
-You now have four ways to make an amine. Choosing the right one depends on what carbon skeleton you need and how pure the product must be.
+You now have five ways to make an amine. Choosing the right one depends on what carbon skeleton you need and how pure the product must be.
 
 | Route | Gives | Notes |
 |---|---|---|
@@ -353,7 +353,7 @@ The AS tests (2,4-DNPH, Tollens' and Fehling's reagents, alkaline iodine, \(\ce{
 - **¹³C NMR:** the number of peaks is the number of different carbon environments. Their shifts (Data section) show the type: 160–185 carboxyl; 190–220 aldehyde or ketone; 110–160 ring or C=C; 100–125 nitrile; 0–50 alkyl. See [Chromatography and NMR spectroscopy](#chem.analysis2) and [Infrared spectroscopy and mass spectrometry](#chem.analysis).
 :::
 
-Symmetry matters for ¹³C NMR. A benzene ring with two identical or opposite groups in the 1,4-positions has two pairs of equivalent carbons, so it gives fewer peaks than the ring carbons it contains.
+Symmetry matters for ¹³C NMR. Carbons that are in exactly the same surroundings (equivalent by symmetry) give one peak between them. A benzene ring with a group at each of the 1,4-positions (for example 4-nitrobenzoic acid) has a mirror plane through the two substituted carbons, so the four other ring carbons form two equivalent pairs: the ring gives 4 peaks (two substituted carbons and two pairs), not 6. A ring with one substituent (such as benzamide) has the same kind of mirror plane, so its ring gives 4 peaks. A 1,3-disubstituted ring has no such symmetry, so all 6 ring carbons give separate peaks. Count a peak for each substituent carbon as well (the C of a COOH group, for example, is a peak of its own). The spectrum is taught fully, with practice, in [Chromatography and NMR spectroscopy](#chem.analysis2), which comes next; the shift ranges above are all you need for the unknown-compound questions here.
 
 :::eg Compound A is a white solid with the molecular ion peak at m/e 121, and an [M+1]⁺ peak with 7.7% of the height of the M⁺ peak. Its IR spectrum has absorptions at 3350 and 1660 cm⁻¹. Warming A with NaOH(aq) gives a gas that turns damp red litmus paper blue and a solution that gives a white precipitate with dilute acid. A has 5 peaks in its ¹³C NMR spectrum. Identify A. [7 marks]
 Number of carbon atoms: \(n = 100 \times 7.7 / (1.1 \times 100) = 7.0\), so A has 7 carbon atoms. [M1] [A1]

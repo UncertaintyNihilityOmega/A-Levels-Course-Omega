@@ -110,7 +110,7 @@ A **standard solution** has an accurately known concentration. Make one by disso
 5. Add distilled water until the bottom of the meniscus is on the line, adding the last of the water by dropper. Put in the stopper and invert the flask many times to mix.
 :::
 
-:::eg A student wants 250.0 cm³ of 0.0500 mol dm⁻³ anhydrous sodium carbonate, \(\ce{Na2CO3}\). (a) What mass is needed? (b) The student actually weighs a bottle at 25.62 g, tips the solid in, and reweighs the empty bottle at 24.28 g. What is the real concentration of the solution?
+:::eg A student wants 250.0 cm³ of 0.0500 mol dm⁻³ anhydrous sodium carbonate, \(\ce{Na2CO3}\). (a) What mass is needed? (b) The student actually weighs a bottle containing the solid (25.62 g), tips the solid into the beaker, and reweighs the bottle (24.28 g). What is the real concentration of the solution?
 (a) \(M_r(\ce{Na2CO3}) = 2(23.0) + 12.0 + 3(16.0) = 106.0\). [B1]
 \(n = 0.0500 \times 0.2500 = 0.01250\) mol, so mass \(= 0.01250 \times 106.0 = 1.325\) g. [M1] [A1]
 (b) The mass transferred is \(25.62 - 24.28 = 1.34\) g, so \(n = 1.34 / 106.0 = 0.01264\) mol and

@@ -607,7 +607,7 @@ Q: [5 marks] (#chem.org.polymers) ★★ Poly(ethylene terephthalate) is made fr
 (d) Explain why this polymer can be broken down by hydrolysis but poly(ethene) cannot. (1 mark)
 A: (a) condensation polymerisation; ester link [B1]
 
-(b) the repeat unit is \(\ce{-OCH2CH2OOC-C6H4-CO}{-}\) (the ring is 1,4-substituted) [B1] with an ester link joining the diol and acid parts [B1]
+(b) the repeat unit is \(\ce{-O-CH2CH2-O-CO-C6H4-CO}{-}\) (the ring is 1,4-substituted) [B1] with an ester link joining the diol and acid parts [B1]
 
 (c) water [B1]
 

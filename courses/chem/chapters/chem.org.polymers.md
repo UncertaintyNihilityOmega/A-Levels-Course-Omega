@@ -32,11 +32,10 @@ Three facts from [Hydrocarbons: alkanes and alkenes](#chem.org.hydrocarbons) car
 - The chain (the **backbone**) is made only of carbon atoms. Other groups (H, Cl, CH₃) hang off it as side groups.
 - Poly(ethene), poly(propene) and poly(chloroethene) (PVC) are examples.
 
-:::eg Draw the repeat unit of the polymer made from propenenitrile, \(\ce{CH2=CHCN}\), and name the monomer of the section below.
-\[\ce{-CH2-CH(CN)-CH2-CH(CN)-CH2-CH(CN)}{-}\]
-Open the double bond. The two carbons of the chain keep their groups, and a bond goes out of each end: \(\ce{-[CH2-CH(CN)]_n}{-}\). The CN group is a side group, not part of the chain. [B1]
+:::eg (a) Draw the repeat unit of the polymer made from propenenitrile, \(\ce{CH2=CHCN}\). (b) Name the monomer of this section of polymer: \(\ce{-CH2-CH(CN)-CH2-CH(CN)}{-}\)
+(a) Open the double bond. The two carbons of the chain keep their groups, and a bond goes out of each end: \(\ce{-[CH2-CH(CN)]_n}{-}\). The CN group is a side group, not part of the chain. [B1]
 
-In the section the unit \(\ce{-CH2-CH(CN)}{-}\) repeats. Put a double bond between its two chain carbons and remove the outgoing bonds: \(\ce{CH2=CHCN}\), propenenitrile. [B1]
+(b) In the section the unit \(\ce{-CH2-CH(CN)}{-}\) repeats. Put a double bond between its two chain carbons and remove the outgoing bonds: \(\ce{CH2=CHCN}\), propenenitrile. [B1]
 :::
 
 Condensation polymers are different, because they form by a different kind of reaction.
@@ -91,7 +90,7 @@ The polyester and polyamide families differ only in which link joins the units. 
 A **polyester** is a polymer in which the units are joined by ester links.
 
 :::def Polyester
-A condensation polymer whose monomer units are joined by ester links, \(\ce{-COO-}\). It is made from a diol and a dicarboxylic acid (or dioyl chloride), or from a hydroxycarboxylic acid.
+A condensation polymer whose monomer units are joined by ester links, \(\ce{-COO-}\). It is made from a diol and a dicarboxylic acid (or dioyl chloride), or from a hydroxycarboxylic acid. (A dioyl chloride is the acyl chloride of the diacid: each COOH is replaced by COCl. The name is explained in the tip "Where the acid end came from" below.)
 :::
 
 ### A diol and a dicarboxylic acid: PET
@@ -392,6 +391,8 @@ Some polymers are made to break down in sunlight. Their chains contain bonds or 
 Condensation polymers contain **polar** links. In an ester link or an amide link the carbon of the C=O is δ+, because it is bonded to two electronegative atoms (O and O, or O and N). Water, hydroxide ions, acid or enzymes can attack that carbon and break the link. This is the reverse of the reaction that made the polymer, and it is **hydrolysis**.
 
 \[\ce{-CO-O}{-} + \ce{H2O -> -COOH} + \ce{HO}{-}\qquad\ce{-CO-NH}{-} + \ce{H2O -> -COOH} + \ce{H2N}{-}\]
+
+The dash after HO and H2N is the bond to the rest of the chain, not a charge: the product ends are an alcohol group, \(\ce{-OH}\), and an amine group, \(\ce{-NH2}\).
 
 Because of this, polyesters and polyamides are **biodegradable** (they can be broken down by acidic or alkaline hydrolysis, and by microorganisms). The conditions decide the products, exactly as for the hydrolysis of esters and amides.
 

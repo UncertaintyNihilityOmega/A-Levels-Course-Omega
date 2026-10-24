@@ -69,4 +69,7 @@ r2 = 0.520 * 0.700
 eq("route 1", round(r1, 3), 0.360); eq("route 2", round(r2, 3), 0.364)
 eq("m Z route 2", round(24.0 / 120.0 * r2 * 150.0, 1), 10.9)
 
+# 13C peak counts used in the symmetry paragraph: 1,4 ring = 2 substituted + 2 pairs = 4 ring peaks; mono = 4
+eq("1,4 ring peaks", 2 + 2, 4); eq("4-nitrobenzoic acid peaks", 4 + 1, 5)
+
 print("ok")

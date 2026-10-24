@@ -293,7 +293,7 @@ A relationship is easiest to test when the graph is a straight line, \(y = mx + 
 | titre / cm³ | 24.00 | 17.80 | 13.15 | 9.75 | 7.25 | 5.35 |
 | ln(titre) | 3.178 | 2.879 | 2.576 | 2.277 | 1.981 | 1.677 |
 
-For a first-order reaction, \(\ln [\ce{H2O2}] = \ln [\ce{H2O2}]_0 - kt\). The titre is proportional to \([\ce{H2O2}]\), so \(\ln(\text{titre}) = \ln(\text{titre})_0 - kt\): a straight line with gradient \(-k\). [B1]
+For a first-order reaction, \(\ln [\ce{H2O2}] = \ln [\ce{H2O2}]_0 - kt\). This is the integrated form of the first-order rate law (the half-life equation \(t_{\frac12} = \ln 2/k\) in [Rate equations and catalysis](#chem.rates2) comes from it); you are not asked to derive it. Taking ln (the natural-logarithm button on the calculator) of a first-order concentration turns the exponential curve into a straight line of gradient \(-k\). The titre is proportional to \([\ce{H2O2}]\), so \(\ln(\text{titre}) = \ln(\text{titre})_0 - kt\): a straight line with gradient \(-k\). [B1]
 
 :::plot The graph of ln(titre) against time is a straight line. Two points on the line, far apart, give the gradient.
 --f "3.178-0.0300*x" --x 0 56 --y 0 4.5 --pt "0,3.18,A (0, 3.18)@ne" --pt "50,1.68,B (50, 1.68)@ne" --xlabel "time / min" --ylabel "ln(titre)" --label "line of best fit" --legend tr
@@ -317,6 +317,8 @@ The **unit of a gradient** is the unit of y divided by the unit of x. Here \(\ln
 Each measuring instrument has a maximum uncertainty (the table above). The **percentage error** in a measurement is
 
 \[\text{percentage error} = \frac{\text{uncertainty}}{\text{value measured}} \times 100\]
+
+This is the same quantity that [Practical skills and qualitative analysis](#chem.practical) called percentage uncertainty; Paper 5 says percentage error.
 
 If the quantity is found from two readings (a titre, a temperature change, weighing by difference), the uncertainties add. A small value measured with a coarse instrument has a large percentage error.
 

@@ -31,6 +31,7 @@ Each set below mixes at least five topics, with the easier questions (★) first
 3. Mark yourself honestly with the answer open, one mark token ([B1], [M1], [A1]) at a time. A mark you give yourself for "the idea was roughly right" is a mark the examiner will not give.
 4. For every question that lost marks, open the **Revise** link under the answer, fix the gap, and write the correction in one line.
 5. Return to a set after a week and redo only the questions that lost marks.
+6. Mass spectra: m/z and m/e are two names for the same thing, the mass-to-charge ratio of the ion (for a 1+ ion, its mass). This page uses m/z, the name on the real papers; the earlier chapters wrote m/e.
 
 :::tip
 Use the Revise link as a diagnosis. If you lose marks on a question linked to a chapter you have not finished, go and finish it. If you lose them on a chapter you know well, the mistake is probably about the question (a missing unit, "mol dm⁻³" for a mass, a state symbol) and the fix is a habit, not more reading.

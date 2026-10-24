@@ -200,7 +200,7 @@ The surroundings of an atom in a molecule. Two atoms are in the same chemical en
 The position of an NMR signal relative to the signal of the standard, tetramethylsilane (TMS). It is given the symbol δ and is measured in parts per million (ppm).
 :::
 
-The electrons give you a rule that explains every shift in the Data table. An atom next to an **electronegative** atom such as O or Cl has electron density pulled away from it. It is less shielded, and its signal appears at a **larger δ** (the left of the spectrum). An atom far from electronegative atoms is well shielded and appears at a smaller δ (the right). So the shift is a clue to what the atom is next to.
+The electrons give you a rule that explains every shift in the Data table. An atom next to an **electronegative** atom such as O or Cl has electron density pulled away from it. It is less shielded, and its signal appears at a **larger δ** (the left of the spectrum). An atom far from electronegative atoms is well shielded and appears at a smaller δ (the right). The right of the spectrum (small δ) is called **upfield** and the left (large δ) is called **downfield**. So the shift is a clue to what the atom is next to.
 
 Two NMR spectra are on your syllabus: ¹³C NMR, which shows the carbon atoms, and ¹H NMR, which shows the hydrogen atoms. Only about 1.1 % of carbon atoms are \(^{13}\)C; the same figure gave the [M+1] peak in mass spectrometry. The more common \(^{12}\)C has no magnetic behaviour and gives no signal. At A Level you only need to count and read the lines, not to explain why \(^{13}\)C is weak.
 
@@ -340,7 +340,7 @@ Four rules decide which hydrogens split which signals.
 
 - **Only hydrogens on adjacent carbon atoms split a signal.** Hydrogens on the same carbon do not split each other. A \(\ce{CH3}\) group with no hydrogen on the next carbon (such as \(\ce{CH3-C=O}\) or \(\ce{CH3-O}\)–) is a singlet.
 - **Equivalent hydrogens do not split each other.** The three hydrogens of one \(\ce{CH3}\) group give a single signal, not a multiplet.
-- **A group that sits between two others splits both ways.** Add up the hydrogens on both neighbours, if they are equivalent or look alike. In \(\ce{CH3CH2CH2OH}\) the middle \(\ce{CH2}\) has 3 + 2 = 5 neighbours and gives 6 lines, which you call a multiplet.
+- **A group that sits between two others splits both ways.** When the two neighbouring carbons carry different groups, the exact pattern is complicated. In \(\ce{CH3CH2CH2OH}\) the middle \(\ce{CH2}\) sits between \(\ce{CH3}\) and \(\ce{CH2}\): count all 3 + 2 = 5 neighbouring hydrogens (n + 1 = 6) and call the signal a multiplet.
 - **O–H and N–H hydrogens are usually not split, and do not split their neighbours.** They exchange rapidly with other molecules, and appear as singlets.
 
 :::warn n + 1, not n
@@ -430,7 +430,7 @@ Check: two carbon environments for the methyl groups plus a C=O makes three, so 
 
 :::eg (Exam style, combined evidence) Compound Q has these properties. Mass spectrum: M⁺ at m/e 72 with abundance 20.0 %, [M+1]⁺ abundance 0.88 %, and fragments at m/e 57, 43 and 29. IR: strong absorption at 1715 cm⁻¹ and no O–H absorption (between 2500 and 3600 cm⁻¹ only the C–H absorption near 2900 cm⁻¹). ¹H NMR: δ 1.0 (triplet, 3H), δ 2.2 (singlet, 3H), δ 2.4 (quartet, 2H). ¹³C NMR: four peaks, at δ 8, 30, 37 and 209. Identify Q.
 **Carbons.** \(n = \dfrac{100 \times 0.88}{1.1 \times 20.0} = 4.0\), so four carbon atoms. [M1] [A1]
-**Formula.** Four carbons weigh 48, leaving 24. IR shows a C=O (one oxygen, 16), leaving 8 for hydrogen, so Q is \(\ce{C4H8O}\). [M1] The areas 3 + 3 + 2 = 8 match. [B1]
+**Formula.** Q contains only C, H and O (the IR and NMR evidence shows no other element). Four carbons weigh 48, leaving 24. IR shows a C=O (one oxygen, 16), leaving 8 for hydrogen, so Q is \(\ce{C4H8O}\). [M1] The areas 3 + 3 + 2 = 8 match. [B1]
 **Groups.** The IR absorption at 1715 cm⁻¹ is in the carbonyl range, and there is no O–H, so it is an aldehyde or ketone. The ¹³C peak at 209 is in the 190–220 range for C=O. [B1]
 **¹H signals.** δ 2.2 singlet 3H is \(\ce{CH3-C=O}\) with no neighbouring hydrogens. [B1] δ 2.4 quartet 2H is \(\ce{CH2}\) next to C=O with three neighbours, so it is next to a \(\ce{CH3}\); δ 1.0 triplet 3H is that \(\ce{CH3}\), next to a \(\ce{CH2}\). [B1] So the pieces are \(\ce{CH3CO}\)– and \(\ce{-CH2CH3}\).
 **Fragments.** m/e 43 is \(\ce{CH3CO+}\); 57 is \(\ce{CH3CH2CO+}\) (72 − 15, loss of \(\ce{CH3}\)); 29 is \(\ce{CH3CH2+}\). [B1]
