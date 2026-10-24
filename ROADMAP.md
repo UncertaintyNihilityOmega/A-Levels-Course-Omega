@@ -19,7 +19,7 @@
 ## Done
 - Mathematics (A Level, 62 chapters), Physics (39), Chemistry (49): complete.
 - GitHub Pages: every push to `main` checks, builds and publishes the site.
-- About pages for every unbuilt course (`core/about.<c>.md`), linked from the home cards.
+- About pages for every unbuilt course (`core/about.<c>.md`): each is its course's only sidebar entry until the first chapter is written.
 
 ## Queue
 1. [ ] **Phone, Mac and accessibility**: installable web app (manifest, icons, service worker for offline use, add to
