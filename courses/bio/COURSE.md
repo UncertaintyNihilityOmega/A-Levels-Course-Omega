@@ -7,10 +7,8 @@ Your package file already holds the full outcome wording for your chapters.
 
 ## Gold chapter
 **`bio.enzymes`** (Enzymes) is the model: copy its structure, tone, depth, mark style and figure style. It has every
-kit/STYLE.md section. Read it whole before you write anything. (It is written by the LEAD session before any Writer
-starts; its plan is in packages/P4.md. Chosen because it has every kind of biology content at once: explanation in
-mark-scheme language, a mechanism figure, graphs to describe and explain, rate calculations from tangents, two
-named practicals and the colorimeter, so every later chapter can copy one of its patterns.)
+kit/STYLE.md section. Read it whole before you write anything. Its plan is in packages/P4.md; the LEAD session
+writes it before any Writer starts.
 
 ## Scope and papers (from FACTS.md)
 - AS = topics 1–11 (Papers 1, 2, 3). A Level = topics 1–19 (adds Papers 4 and 5). AS content is assumed in Paper 4.

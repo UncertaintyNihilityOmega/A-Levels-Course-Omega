@@ -79,7 +79,8 @@ application → analysis → evaluation), plus calculations where the topic has 
   Units upright with thin spaces: `\(9.81\,\mathrm{m\,s^{-2}}\)`. Multi-line working:
   `\[\begin{aligned} a &= b \\ c &= d \end{aligned}\]`.
 - Chemistry: `\(\ce{2H2 + O2 -> 2H2O}\)`, `\(\ce{Cu^2+(aq)}\)`, `\(\ce{CH3COOH <=> CH3COO- + H+}\)`,
-  conditions `\ce{->[\text{heat}]}`.
+  conditions `\ce{->[\text{heat}]}`. A final `-` inside `\ce{}` is a negative charge: write a group's open bond
+  outside it, `\(\ce{CH3CO}{-}\)`, never `\ce{CH3CO-}` (`check` flags `\ce{-CO-NH-}` and `\ce{[…]n-}`).
 - Vectors: `\mathbf{a}`, `\overrightarrow{AB}`, `\begin{pmatrix}3\\-1\end{pmatrix}`. Never `\vec`, `\overline`,
   `\cancel`, `\boxed`.
 - Blocks: a line `:::type Title` at column 0, a line `:::` to close, blank lines around. Blocks can nest
@@ -175,14 +176,16 @@ maths scrolls on its own) or a `\[\begin{aligned} … \\ … \end{aligned}\]` wi
    - Text: `tl`, `ts`, `tb`, `ti`, `tc`, `te`, `ta`, `ta2`, `tr`, `tp`, `halo`. Unicode maths in SVG text (x², θ, Δ, →).
      Labels use `tl` (`ts` only for axis tick numbers), with `halo` where a label touches a line.
    - Arrowheads: `marker-end="url(#ah)"`, also `#ahm`, `#ahr`, `#ahok`, `#ah-<course>`, `#ah2-<course>`; small heads for curly arrows in mechanisms: `#ahs` (ink) and `#ahs-red`.
-   - viewBox about 520–640 wide so text stays readable on phones, cropped to the drawing plus about 15 px.
+   - Default `class="fig small"` with a viewBox about 300–350 wide: labels stay readable on phones. Use `fig`
+     (viewBox 520–640) only when the drawing needs the width, and stack panels vertically rather than side by side.
+     `class="fig wide"` only for wide multi-panel figures. Crop the viewBox to the drawing plus about 15 px.
      Check coordinates with Python.
-   - `class="fig wide"` for wide multi-panel figures, `class="fig small"` for small ones.
+   - Pale fills (`fm`, `fm2`, `fp`) need an outline (`s-acc sw2` or a line class), or they vanish in dark mode.
 3. **Widgets** (interactive), inside `:::html`: `<div class="widget" data-w="NAME" data-…></div>`. The
    widgets this course has are in kit/WIDGETS.md and widgets.js. Text around a widget says what to try; the
    page must make sense without it.
 
-### Figure and widget lessons from earlier courses (most review fixes were these)
+### Figure and widget rules (most review fixes were these)
 Writers cannot see their figures, so check these with coordinates (Python) before `check`, then look once with
 `shot <id>` and `shot <id> --dark --phone`.
 - **Label boxes.** A 13 px `tl` label is about 7 px per character wide and 13 px tall (baseline at `y`, top at `y − 10`).
@@ -230,6 +233,10 @@ Writers cannot see their figures, so check these with coordinates (Python) befor
   backslashes (`\tfrac` becomes a tab + "frac") and break the maths silently. Row breaks in `aligned` are `\\`.
 - Cambridge conventions: maths answers to 3 significant figures unless exact; angles to 1 d.p. The data
   values (g, physical constants, molar volume) for this course are in COURSE.md.
+- Practice questions never reuse a worked example's data or wording: new numbers, new compound, new context.
+- Exam-style questions give data the way the real paper does (FACTS.md: what each paper prints and allows). Never
+  tell students to look a value up in a booklet the paper does not supply.
+- AS chapters use only AS terms. A Level parts are labelled "(A Level)" and come last.
 - Exam facts (papers, durations, weightings, dates) only from FACTS.md. Never invent dates, fees or
   paper details: if unsure, leave it out. No claims about how often a topic comes up or how many marks it is
   "worth" unless FACTS.md states them.

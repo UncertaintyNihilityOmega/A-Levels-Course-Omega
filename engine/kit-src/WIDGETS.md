@@ -1,8 +1,9 @@
 # WIDGETS: building interactive tools for this course
 
 A widget is a small interactive tool inside a chapter: `<div class="widget" data-w="NAME" data-…></div>` in a
-`:::html` block. This course's widgets live in **widgets.js** in the course folder, and only there. The
-page calls your initialiser the first time a chapter that uses the widget is shown.
+`:::html` block. Each new widget lives in its own file, **widgets/<name>.js** in the course folder (widgets.js holds
+older ones; never edit it). A script that generates the widget's data goes in data/. The page calls your initialiser
+the first time a chapter that uses the widget is shown.
 
 ```js
 (function () {
@@ -33,6 +34,10 @@ are listed at the end of kit/LINKS.md: use them freely in chapters, but never re
 - State lives inside the widget's closure. `W.store` only for small conveniences.
 - Respect `prefers-reduced-motion` for any animation.
 - Start in a useful example state from the data attributes or sensible defaults, never an empty shell.
+- State facts (values, colours, names) only from FACTS.md or the chapter. A simplified model says so on screen.
+- 3D views start at an asymmetric angle with depth cues (near bonds thicker, far ones dashed, near objects larger).
+- The probe only checks drawing. Writers test every interaction's logic (a small Node script on the widget's
+  functions); the reviewer clicks every animation and control in the browser.
 
 ## Helpers in `window.W`
 - `W.frame(el, title, subtitle)` → `{root, body}`: the standard card with a header.
