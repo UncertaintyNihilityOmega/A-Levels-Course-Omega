@@ -87,7 +87,8 @@ chemistry figure (skeletal formulas, curly-arrow mechanisms, apparatus). Copy it
 - **Board boxes**: one board and one content difference you are sure of, never two boards, never "other
   specifications", never first person. Safe examples (packages say which goes where): AQA's Arrhenius equation
   (chem.rates2), atom economy (chem.moles), ozone depletion by CFCs (gold chapter), time-of-flight mass spectrometer
-  (chem.analysis). If unsure, leave it out.
+  (chem.analysis), NaBH₄ reduction mechanism (chem.org.carbonyl), biodiesel (chem.org.acids), fuel cells
+  (chem.electrochem). Most chapters can have one: look for a safe one before leaving it out.
 - **Links**: only ids in course.json or kit/LINKS.md (`grep -i "<word>" kit/LINKS.md`); planned chapters freely.
   Cross-course ids: phys.gases, phys.units, math.f.algebra, math.f.powers (grep first).
 - **:::links**: only URLs you have checked, with descriptions that match the page's actual headings (not only the HTTP
@@ -149,6 +150,9 @@ Writers cannot see their figures. Plan coordinates in Python, then `shot <id>` a
   use it. Names: `periodic`, `molar` (exact, used by the Toolbox), the rest `chem-…`.
 - Element data: `py data/elements.py` writes data/elements.json; embed it with a Python script that writes the JS
   file. Never type element data. Values keep their printed decimals (`ar.toFixed(1)` gives 23.0).
+- **Keep every generator in data/** (scratch/ is not backed up): a widget built from data is `data/mk_<name>.py` +
+  `data/<name>.tpl.js` (e.g. data/mk_cell.py, data/mk_bornhaber.py); a figure script is `data/mk_fig_<topic>.py`
+  (helper data/fig.py; write outputs to scratch/). Fix a generated widget in its template too, then rerun the script.
 - Other courses' widgets that fit: `phys-gas`, `units`, `graph` (never register them).
 - Owners: periodic P1; chem-config, molar P2; chem-vsepr P3; chem-profile P4; chem-equilibrium P5; chem-titration,
   chem-boltzmann P6; chem-trend P7; chem-chiral P9; chem-orgmap, chem-ms P12; chem-bornhaber, chem-cell P13;

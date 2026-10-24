@@ -39,6 +39,7 @@ out = []
 for (i, key, label, lhs, rhs, z, kind, elec, sol) in S:
     out.append({'id': i, 'label': label, 'E': E[key], 'z': z, 'kind': kind, 'lhs': lhs, 'rhs': rhs, 'elec': elec, 'sol': sol,
                 'nernst': kind in ('metal', 'ions')})
+out.sort(key=lambda d: d['E'])  # most negative first, as in the chapter's table
 js = 'const HC = ' + json.dumps(out, ensure_ascii=False, separators=(',', ':')) + ';'
 t = open('data/chem-cell.tpl.js', encoding='utf-8').read()
 assert '/*HC*/' in t

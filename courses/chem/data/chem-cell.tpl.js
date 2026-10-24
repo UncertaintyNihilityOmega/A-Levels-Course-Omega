@@ -257,7 +257,7 @@
           read.set('neg', q.label + '  (E⦵ ' + sgnV(q.E) + ', oxidation)');
           read.set('flow', 'in the wire, from the ' + q.label + ' half-cell to the ' + p.label + ' half-cell');
           read.set('ecell', sgnV(p.E) + ' − (' + sgnV(q.E) + ') = ' + sgnV(ec));
-          read.set('eq', o.eq + '   (n = ' + o.n + ' electrons)');
+          read.set('eq', o.eq + '   (n = ' + o.n + (o.n === 1 ? ' electron)' : ' electrons)'));
           const dg = -o.n * F * ec / 1000;
           read.set('dg', ec === 0 ? '0 kJ mol⁻¹' : (dg < 0 ? MINUS : '+') + W.fmt(Math.abs(dg), 3) + ' kJ mol⁻¹   (n = ' + o.n + ', F = 9.65 × 10⁴ C mol⁻¹)');
           read.set('feas', ec > 0 ? 'yes under standard conditions (E⦵cell is positive), though it may be slow' : 'the two E⦵ values are equal, so neither direction is favoured');
@@ -271,7 +271,7 @@
         solidNote.style.display = isMetal ? '' : 'none';
         const redLog = isMetal ? 0 : st.lred;
         const E = hc.E + k * (st.lox - redLog);
-        read2.set('eq', side(hc.lhs) + ' + ' + hc.z + 'e⁻ ⇌ ' + side(hc.rhs));
+        read2.set('eq', side(hc.lhs) + ' + ' + (hc.z === 1 ? '' : hc.z) + 'e⁻ ⇌ ' + side(hc.rhs));
         read2.set('e0', sgnV(hc.E) + '   (z = ' + hc.z + ')');
         read2.set('ratio', W.fmt(Math.pow(10, st.lox), 3) + ' / ' + (isMetal ? '1 (solid)' : W.fmt(Math.pow(10, redLog), 3)));
         read2.set('e', sgnV3(E) + '   (' + sgnV(hc.E) + ' + ' + W.fmt(k, 3) + ' × ' + W.fix(st.lox - redLog, 1).replace('-', MINUS) + ')');
