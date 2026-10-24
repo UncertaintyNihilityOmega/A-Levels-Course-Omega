@@ -251,12 +251,12 @@ Add the carbonyl compound to Fehling's solution in a test tube and warm it in a 
 
 ### Test 5: the iodoform (tri-iodomethane) reaction
 
-Ethanal and the ketones that have a **methyl group next to the C=O**, written \(\ce{CH3CO-}\), react with alkaline aqueous iodine (iodine with sodium hydroxide) to give a **pale yellow precipitate of tri-iodomethane**, \(\ce{CHI3}\), together with the carboxylate ion \(\ce{RCOO-}\). The same test detects \(\ce{CH3CH(OH)-}\) groups in alcohols, because the alkaline iodine oxidises them to \(\ce{CH3CO-}\) first ([Alcohols](#chem.org.alcohols)).
+Ethanal and the ketones that have a **methyl group next to the C=O**, written \(\ce{CH3CO}{-}\), react with alkaline aqueous iodine (iodine with sodium hydroxide) to give a **pale yellow precipitate of tri-iodomethane**, \(\ce{CHI3}\), together with the carboxylate ion \(\ce{RCOO-}\). The same test detects \(\ce{CH3CH(OH)}{-}\) groups in alcohols, because the alkaline iodine oxidises them to \(\ce{CH3CO}{-}\) first ([Alcohols](#chem.org.alcohols)).
 
 \[\ce{CH3COCH3 + 3I2 + 4OH- -> CHI3 + CH3COO- + 3I- + 3H2O}\]
 \[\ce{CH3CHO + 3I2 + 4OH- -> CHI3 + HCOO- + 3I- + 3H2O}\]
 
-| Compound | Has \(\ce{CH3CO-}\)? | Yellow precipitate? |
+| Compound | Has \(\ce{CH3CO}{-}\)? | Yellow precipitate? |
 |---|---|---|
 | ethanal, \(\ce{CH3CHO}\) | yes (R = H) | yes |
 | propanone | yes | yes |
@@ -281,8 +281,8 @@ In infrared spectroscopy, the C=O of an aldehyde or ketone absorbs strongly at 1
 :::eg Compound X has the molecular formula \(\ce{C4H8O}\). It gives an orange precipitate with 2,4-DNPH, no change with Tollens' reagent, and a pale yellow precipitate with alkaline aqueous iodine. Identify X.
 The orange precipitate with 2,4-DNPH shows that X has a C=O group (an aldehyde or ketone). [B1]
 No silver mirror with Tollens' reagent means X is a ketone, not an aldehyde. [B1]
-The yellow precipitate shows a \(\ce{CH3CO-}\) group. [B1]
-The ketone with four carbons is butanone, \(\ce{CH3COCH2CH3}\), which has \(\ce{CH3CO-}\). (The other \(\ce{C4H8O}\) carbonyl compounds are aldehydes: butanal and 2-methylpropanal.) [B1]
+The yellow precipitate shows a \(\ce{CH3CO}{-}\) group. [B1]
+The ketone with four carbons is butanone, \(\ce{CH3COCH2CH3}\), which has \(\ce{CH3CO}{-}\). (The other \(\ce{C4H8O}\) carbonyl compounds are aldehydes: butanal and 2-methylpropanal.) [B1]
 :::
 
 :::eg (Exam style) Describe how you would distinguish, in the laboratory, between propanal and propanone. State the reagent, the conditions and the observation for each.
@@ -337,7 +337,7 @@ A: \(\ce{CH3CH2C(CH3)(OH)CN}\) is 2-hydroxy-2-methylbutanenitrile. Carbon 2 hold
 Q: Which of these give a silver mirror with Tollens' reagent: ethanal, propanone, butanal, pentan-2-one?
 A: Ethanal and butanal. They are aldehydes. Ketones do not react.
 Q: Which of these give a yellow precipitate with alkaline aqueous iodine: ethanal, propanal, butanone, pentan-3-one?
-A: Ethanal and butanone, because both contain \(\ce{CH3CO-}\). Propanal has \(\ce{CH3CH2}\) beside the C=O, and pentan-3-one has two ethyl groups.
+A: Ethanal and butanone, because both contain \(\ce{CH3CO}{-}\). Propanal has \(\ce{CH3CH2}\) beside the C=O, and pentan-3-one has two ethyl groups.
 Q: Why is a little KCN added to the mixture of HCN and an aldehyde?
 A: HCN is a weak acid and gives very few \(\ce{CN-}\) ions. The nucleophile is \(\ce{CN-}\), so KCN supplies cyanide ions and speeds up step 1.
 Q: Write the equation for the reaction of propanal with Fehling's solution, using \(\ce{RCHO}\) with R = \(\ce{CH3CH2}\).
@@ -379,8 +379,8 @@ Q: [8 marks] ★★★ Compound X is an unbranched carbonyl compound with the fo
 H: List the three unbranched isomers of \(\ce{C5H10O}\) that contain C=O before you use the tests.
 A: (a) The 2,4-DNPH result shows a C=O group, so X is an aldehyde or ketone. [B1]
 No silver mirror shows X is a ketone. [B1]
-The yellow precipitate shows a \(\ce{CH3CO-}\) group. [B1]
-Of the unbranched ketones (pentan-2-one and pentan-3-one) only pentan-2-one has \(\ce{CH3CO-}\), so X is pentan-2-one, \(\ce{CH3COCH2CH2CH3}\). [B1]
+The yellow precipitate shows a \(\ce{CH3CO}{-}\) group. [B1]
+Of the unbranched ketones (pentan-2-one and pentan-3-one) only pentan-2-one has \(\ce{CH3CO}{-}\), so X is pentan-2-one, \(\ce{CH3COCH2CH2CH3}\). [B1]
 Y is pentan-2-ol, \(\ce{CH3CH(OH)CH2CH2CH3}\). [B1]
 (b) Y is a secondary alcohol (oxidised to a ketone). [B1]
 (c) \(\ce{CH3COCH2CH2CH3 + 2[H] -> CH3CH(OH)CH2CH2CH3}\) [B1]
@@ -398,11 +398,11 @@ Equal amounts of the two enantiomers form (a racemic mixture), and their effects
 
 :::try Stretch for A*
 Q: [4 marks] ★★★ Butane-2,3-dione, \(\ce{CH3COCOCH3}\), gives the smell of butter. Predict, with a reason, whether it gives (i) an orange precipitate with 2,4-DNPH, (ii) a silver mirror with Tollens' reagent and (iii) a yellow precipitate with alkaline aqueous iodine. Give the structure of the product with an excess of \(\ce{NaBH4}\).
-H: Look for a C=O group, a CHO group and a \(\ce{CH3CO-}\) group.
+H: Look for a C=O group, a CHO group and a \(\ce{CH3CO}{-}\) group.
 H: Each C=O group in the molecule can accept two [H].
 A: (i) Yes: it contains C=O (both are ketone groups). [B1]
 (ii) No: it has no CHO group, so it is not an aldehyde. [B1]
-(iii) Yes: it contains the \(\ce{CH3CO-}\) group. [B1]
+(iii) Yes: it contains the \(\ce{CH3CO}{-}\) group. [B1]
 Excess \(\ce{NaBH4}\) reduces both C=O groups to give butane-2,3-diol, \(\ce{CH3CH(OH)CH(OH)CH3}\). [B1]
 Q: [4 marks] ★★★ HCN adds to propanone quickly when a little KCN is present. A student adds a few drops of concentrated sulfuric acid to the mixture and finds that the reaction becomes much slower. Explain this observation.
 H: What happens to \(\ce{CN-}\) ions when acid is added?
@@ -449,7 +449,7 @@ Fewer nucleophiles means fewer successful attacks on the δ+ carbon in the slow 
 - pentan-3-one
 - butanal
 + pentan-2-one
-> The test needs \(\ce{CH3CO-}\). Pentan-2-one has a methyl group next to the C=O. Propanal and butanal are aldehydes with CH₂ beside the CHO, and pentan-3-one has ethyl groups on both sides.
+> The test needs \(\ce{CH3CO}{-}\). Pentan-2-one has a methyl group next to the C=O. Propanal and butanal are aldehydes with CH₂ beside the CHO, and pentan-3-one has ethyl groups on both sides.
 ? Which statement about Fehling's solution is correct?
 - The blue solution turns to a red solution with an aldehyde.
 + The blue solution gives an orange-red precipitate with an aldehyde.
@@ -475,7 +475,7 @@ Fewer nucleophiles means fewer successful attacks on the δ+ carbon in the slow 
 - Reduced by NaBH₄ or LiAlH₄ (dry ether): aldehyde to primary alcohol, ketone to secondary alcohol; \(\ce{RCHO + 2[H] -> RCH2OH}\).
 - HCN with a KCN catalyst, heat: nucleophilic addition giving a hydroxynitrile (ethanal gives 2-hydroxypropanenitrile, propanone gives 2-hydroxy-2-methylpropanenitrile). The nucleophile is \(\ce{CN-}\), which attacks the δ+ carbon and is regenerated. A new product with four different groups is racemic.
 - 2,4-DNPH: orange precipitate with any aldehyde or ketone. Tollens': silver mirror with an aldehyde only. Fehling's: blue solution gives orange-red precipitate with an aldehyde only. Acidified dichromate: orange to green with an aldehyde only.
-- Alkaline aqueous iodine: yellow \(\ce{CHI3}\) with ethanal and methyl ketones (\(\ce{CH3CO-}\)).
+- Alkaline aqueous iodine: yellow \(\ce{CHI3}\) with ethanal and methyl ketones (\(\ce{CH3CO}{-}\)).
 :::
 
 :::links

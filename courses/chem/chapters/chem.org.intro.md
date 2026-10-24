@@ -337,8 +337,8 @@ Count the regions of electron density around each carbon; a multiple bond counts
 Work from left to right. (In the name the nitrile carbon is carbon 1, so the \(\ce{CH2=}\) carbon is carbon 4; the left-to-right order here is only for counting.)
 
 - The \(\ce{CH2=}\) carbon: two H and one double bond is 3 regions: **sp²**, trigonal planar, 120°.
-- The \(\ce{=CH-}\) carbon: one H, one double bond and one single bond is 3 regions: **sp²**, trigonal planar, 120°.
-- The \(\ce{-CH2-}\) carbon: two H and two single bonds is 4 regions: **sp³**, tetrahedral, 109.5°.
+- The \(\ce{=CH}{-}\) carbon: one H, one double bond and one single bond is 3 regions: **sp²**, trigonal planar, 120°.
+- The \(\ce{-CH2}{-}\) carbon: two H and two single bonds is 4 regions: **sp³**, tetrahedral, 109.5°.
 - The \(\ce{-C#N}\) carbon: one single bond and one triple bond is 2 regions: **sp**, linear, 180° (the C–C≡N unit is a straight line).
 :::
 

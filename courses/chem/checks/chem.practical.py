@@ -96,6 +96,26 @@ sy = 160 / 30
 eq("fig y 46.5", round(200 - sy * (46.5 - 20), 1), 58.7)
 eq("fig y 21", round(200 - sy * 1, 1), 194.7)
 
+# Hess's law by experiment: MgSO4(s) + 7H2O(l) -> MgSO4.7H2O(s)
+Mr_Mg = Mg + S + 4 * O
+eq("Mr MgSO4", Mr_Mg, 120.4, 1e-9)
+eq("mass MgSO4", round(0.0250 * Mr_Mg, 2), 3.01)
+Mr_Mg7 = Mr_Mg + 7 * 18.0
+eq("Mr MgSO4.7H2O", Mr_Mg7, 246.4, 1e-9)
+eq("mass MgSO4.7H2O", round(0.0250 * Mr_Mg7, 2), 6.16)
+q1 = 50.0 * 4.18 * 10.8
+eq("q1 J", round(q1), 2257)
+dH1 = -q1 / 1000 / 0.0250
+eq("dH1", round(dH1, 1), -90.3)
+q2 = 50.0 * 4.18 * 1.6
+eq("q2 J", round(q2), 334)
+dH2 = q2 / 1000 / 0.0250
+eq("dH2", round(dH2, 1), 13.4)
+eq("dH hess", round(dH1 - dH2), -104)
+eq("dH hess from rounded", round(-90.3 - 13.4), -104)
+eq("pct dT1", round(1.0 / 10.8 * 100, 1), 9.3)
+eq("pct dT2", round(1.0 / 1.6 * 100, 1), 62.5)
+
 # gas collection
 n_co2 = 84.0 / 24000
 eq("n CO2", n_co2, 0.00350, 1e-12)

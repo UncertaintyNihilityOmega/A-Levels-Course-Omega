@@ -189,6 +189,25 @@ Measure the temperature of a solution for a few minutes, add the second reagent,
 Each temperature reading has an uncertainty of ±0.5 °C, so \(\Delta T\) (a difference of two readings) has ±1.0 °C. \(\text{percentage uncertainty} = \dfrac{1.0}{25.5} \times 100 = 3.92\,\%\). [B1]
 :::
 
+### Hess's law by experiment
+
+Some enthalpy changes cannot be measured directly. Adding water to anhydrous magnesium sulfate to make the heptahydrate is slow and incomplete, so the temperature rise cannot be read. **Hess's law** gets round this: measure two enthalpy changes that *can* be measured, and combine them. Here each solid is dissolved in water in its own experiment, and both give the same solution, \(\ce{MgSO4(aq)}\).
+
+:::steps
+1. **Experiment 1.** Dissolve anhydrous \(\ce{MgSO4(s)}\) in 50.0 cm³ of water. This gives \(\Delta H_1\), for \(\ce{MgSO4(s) + aq -> MgSO4(aq)}\).
+2. **Experiment 2.** Dissolve hydrated \(\ce{MgSO4.7H2O(s)}\) in 50.0 cm³ of water. This gives \(\Delta H_2\), for \(\ce{MgSO4.7H2O(s) + aq -> MgSO4(aq)}\).
+3. **The cycle.** Going from \(\ce{MgSO4(s)}\) to \(\ce{MgSO4(aq)}\) by the direct route (\(\Delta H_1\)) must equal going by the other route: first \(\ce{MgSO4(s) + 7H2O(l) -> MgSO4.7H2O(s)}\) (the \(\Delta H\) we want), then \(\ce{MgSO4.7H2O(s) + aq -> MgSO4(aq)}\) (\(\Delta H_2\)). So \(\Delta H_1 = \Delta H + \Delta H_2\).
+4. **Rearrange.** \(\Delta H = \Delta H_1 - \Delta H_2\).
+:::
+
+:::eg 3.01 g of anhydrous magnesium sulfate, \(\ce{MgSO4}\) (0.0250 mol), is dissolved in 50.0 cm³ of water at 21.0 °C in a polystyrene cup, and the extrapolated temperature rise is 10.8 °C. In a second experiment 6.16 g of \(\ce{MgSO4.7H2O}\) (0.0250 mol) is dissolved in 50.0 cm³ of water at 21.0 °C and the temperature falls by 1.6 °C. Use \(c = 4.18\) J g⁻¹ K⁻¹ and take the mass of the solution to be 50.0 g. (a) Calculate \(\Delta H_1\) and \(\Delta H_2\). (b) Calculate \(\Delta H\) for \(\ce{MgSO4(s) + 7H2O(l) -> MgSO4.7H2O(s)}\). (c) Give the percentage uncertainty in each temperature change for a thermometer read to ±0.5 °C, and say which experiment limits the accuracy. (d) Suggest how water from the air makes the result inaccurate.
+(a) Experiment 1: \(q = 50.0 \times 4.18 \times 10.8 = 2257\) J. The temperature rose, so \(\Delta H_1 = -\dfrac{2.257}{0.0250} = -90.3\) kJ mol⁻¹. [M1] [A1]
+Experiment 2: \(q = 50.0 \times 4.18 \times 1.6 = 334\) J. The temperature fell, so \(\Delta H_2 = +\dfrac{0.334}{0.0250} = +13.4\) kJ mol⁻¹. [M1] [A1]
+(b) \(\Delta H = \Delta H_1 - \Delta H_2 = -90.3 - (+13.4) = -104\) kJ mol⁻¹. [M1] [A1]
+(c) Each \(\Delta T\) has ±1.0 °C (two readings). Experiment 1: \(\dfrac{1.0}{10.8} \times 100 = 9.3\,\%\). Experiment 2: \(\dfrac{1.0}{1.6} \times 100 = 62.5\,\%\). [B1] Experiment 2 limits the accuracy, because its temperature change is so small. [B1]
+(d) Anhydrous magnesium sulfate absorbs water from the air, so some of the sample is already hydrated before it is weighed. Less of the solid is anhydrous than the mass suggests, so the temperature rise is too small, \(\Delta H_1\) is less negative than it should be, and the calculated \(\Delta H\) is less negative (smaller in size) than the true value. [B1] Weigh it quickly from a sealed container. [B1]
+:::
+
 ### Gas collection
 
 When a carbonate reacts with acid, carbon dioxide is released. Collect it in a **gas syringe** (or by displacement of water in an upturned measuring cylinder, remembering that some \(\ce{CO2}\) dissolves). Read the volume of gas when the reaction has stopped. At room temperature and pressure one mole of gas has a volume of 24.0 dm³.
@@ -231,7 +250,7 @@ An error that changes unpredictably from one measurement to the next, for exampl
 |---|---|---|
 | heat lost to the surroundings in calorimetry | \(\Delta T\) too small | insulate the cup and use a lid; extrapolate the cooling line |
 | not heating the hydrate to constant mass | water lost too small, x too low | heat, cool and weigh again until constant |
-| balance reads 0.00 with the pan empty only after drifting | a systematic error in every mass | zero the balance and weigh by difference |
+| balance not zeroed before weighing (zero error) | every mass too high or too low by the same amount: systematic | zero (tare) the balance before each weighing, or weigh by difference |
 | reading a burette from above | random and systematic reading error | eye level with the meniscus |
 | judging the cross disappearing by eye | random error in t | repeat, and use the same observer and the same cross |
 

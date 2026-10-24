@@ -81,7 +81,7 @@ A few groups change the stem, and the carbon that holds them is carbon 1:
 | –COCH₃ | 1-phenylethanone | (the ring is a **phenyl** group on an ethanone chain) |
 
 :::def Phenyl group
-The group \(\ce{C6H5-}\): a benzene ring that has lost one hydrogen atom and is bonded to something else. It is used in names where the ring is a branch, such as phenylamine (\(\ce{C6H5NH2}\)) and 1-phenylethanone (\(\ce{C6H5COCH3}\)).
+The group \(\ce{C6H5}{-}\): a benzene ring that has lost one hydrogen atom and is bonded to something else. It is used in names where the ring is a branch, such as phenylamine (\(\ce{C6H5NH2}\)) and 1-phenylethanone (\(\ce{C6H5COCH3}\)).
 :::
 
 :::html

@@ -279,7 +279,7 @@ A bottle with no label is a standard organic question: use test-tube reactions t
 | 2,4-dinitrophenylhydrazine (2,4-DNPH) | orange precipitate | C=O of an aldehyde or ketone |
 | Tollens' reagent, warm | silver mirror (or black precipitate) | aldehyde (ketone: no reaction) |
 | Fehling's solution, heat | orange or red precipitate (copper(I) oxide) | aldehyde (ketone: no reaction) |
-| alkaline aqueous iodine, warm | yellow precipitate of \(\ce{CHI3}\) | \(\ce{CH3CO-}\) or \(\ce{CH3CH(OH)-}\) |
+| alkaline aqueous iodine, warm | yellow precipitate of \(\ce{CHI3}\) | \(\ce{CH3CO}{-}\) or \(\ce{CH3CH(OH)}{-}\) |
 | \(\ce{Na2CO3(aq)}\) (or any carbonate) | bubbles of \(\ce{CO2}\) (limewater turns milky) | carboxylic acid |
 | sodium metal | bubbles of \(\ce{H2}\) (lighted splint pops) | O–H: alcohol or carboxylic acid |
 | \(\ce{AgNO3(aq)}\) in ethanol, warm | white (AgCl), cream (AgBr) or pale yellow (AgI) precipitate | halogen in a halogenoalkane |
@@ -301,13 +301,13 @@ Do the 2,4-DNPH test with a few drops of sample only: the reagent is a skin irri
 
 No silver mirror rules out an aldehyde, so X is a ketone. [B1]
 
-The yellow precipitate shows a \(\ce{CH3CO-}\) group. [B1]
+The yellow precipitate shows a \(\ce{CH3CO}{-}\) group. [B1]
 
-The only straight-chain or branched ketone with the formula \(\ce{C4H8O}\) is butanone, \(\ce{CH3COCH2CH3}\), and it does have the \(\ce{CH3CO-}\) group. X is butanone. (Its aldehyde isomer, butanal, would have given a silver mirror and no yellow precipitate.) [B1]
+The only straight-chain or branched ketone with the formula \(\ce{C4H8O}\) is butanone, \(\ce{CH3COCH2CH3}\), and it does have the \(\ce{CH3CO}{-}\) group. X is butanone. (Its aldehyde isomer, butanal, would have given a silver mirror and no yellow precipitate.) [B1]
 :::
 
 :::eg Describe a test to distinguish each pair, stating the result for each compound: (a) propan-1-ol and propan-2-ol; (b) propanal and propanone; (c) ethanoic acid and ethyl ethanoate; (d) butan-2-ol and 2-methylpropan-2-ol.
-(a) Warm with alkaline aqueous iodine. Propan-2-ol, \(\ce{CH3CH(OH)CH3}\), gives a yellow precipitate. Propan-1-ol has no \(\ce{CH3CH(OH)-}\) group and gives none. [B1]
+(a) Warm with alkaline aqueous iodine. Propan-2-ol, \(\ce{CH3CH(OH)CH3}\), gives a yellow precipitate. Propan-1-ol has no \(\ce{CH3CH(OH)}{-}\) group and gives none. [B1]
 
 (b) Warm with Tollens' reagent. Propanal gives a silver mirror; propanone gives none. (Alkaline iodine also works the other way round: propanone gives the yellow precipitate, propanal does not.) [B1]
 
@@ -398,10 +398,10 @@ A: (a) A is propan-1-ol. [B1] B is propanal. [B1] C is 2-hydroxybutanenitrile, \
 (b) Nucleophilic addition. [B1]
 (c) NaOH in ethanol, heat. [B1]
 Q: [6 marks] ★★ Three compounds J, K and L all have the formula \(\ce{C5H10O}\) and all give an orange precipitate with 2,4-DNPH. Only J gives a silver mirror with Tollens' reagent. Only K gives a yellow precipitate with alkaline aqueous iodine. Identify the group present in all three, and suggest a structure for each of J, K and L.
-H: K is a ketone with a \(\ce{CH3CO-}\) group; L is a ketone without one.
+H: K is a ketone with a \(\ce{CH3CO}{-}\) group; L is a ketone without one.
 A: All three contain the C=O group of an aldehyde or ketone. [B1]
 J is an aldehyde (silver mirror); for example pentanal, \(\ce{CH3CH2CH2CH2CHO}\). [B1] [B1]
-K is a methyl ketone, \(\ce{CH3CO-}\) present: pentan-2-one, \(\ce{CH3COCH2CH2CH3}\) (or 3-methylbutan-2-one). [B1] [B1]
+K is a methyl ketone, \(\ce{CH3CO}{-}\) present: pentan-2-one, \(\ce{CH3COCH2CH2CH3}\) (or 3-methylbutan-2-one). [B1] [B1]
 L is a ketone with no methyl group on the C=O: pentan-3-one, \(\ce{CH3CH2COCH2CH3}\). [B1]
 Q: [4 marks] ★★ (#chem.moles) 7.40 g of butan-2-ol, \(\ce{C4H9OH}\), is oxidised to butanone, \(\ce{C4H8O}\), with a yield of 78.0 %. Calculate the mass of butanone formed.
 H: Both compounds contain four carbon atoms and one mole of alcohol gives one mole of ketone.
@@ -481,7 +481,7 @@ Esterification: ethane-1,2-diol with at least two moles of ethanoic acid per mol
 - propanal
 + propan-2-ol
 - 2-methylpropan-2-ol
-> Propan-2-ol contains \(\ce{CH3CH(OH)-}\), which is oxidised to \(\ce{CH3CO-}\) and then gives \(\ce{CHI3}\). Propan-1-ol, propanal and the tertiary alcohol do not have either group.
+> Propan-2-ol contains \(\ce{CH3CH(OH)}{-}\), which is oxidised to \(\ce{CH3CO}{-}\) and then gives \(\ce{CHI3}\). Propan-1-ol, propanal and the tertiary alcohol do not have either group.
 :::
 
 :::checklist What you can now do

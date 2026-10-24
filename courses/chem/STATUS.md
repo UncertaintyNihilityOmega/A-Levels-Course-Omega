@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-24 · FIX · Closed 23 reader items in f.basics, atoms, moles, bonding, shapes, states, energetics, redox, equilibria, acids, periodicity, group2, plus kinetics addition (higher Ea for endothermic direction); checks added in moles, redox, equilibria
+Last: 2026-10-24 · FIX · 5 Specialist items closed: false charges in CH3CO-/CH3CH(OH)- group fragments (org.carbonyl/synthesis/alcohols/acids/intro/arenes, mock.p3); analysis IR wording; practical Hess's law example and errors-table row; exam.p24 try + quiz
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

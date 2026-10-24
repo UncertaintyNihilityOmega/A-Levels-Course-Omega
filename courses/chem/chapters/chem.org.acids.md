@@ -58,7 +58,7 @@ The name starts with the group on the **oxygen** atom (from the alcohol) and end
 :::eg Name (a) \(\ce{CH3CH2CH2COOCH3}\), (b) \(\ce{CH3COOCH2CH2CH3}\), (c) the ester made from propan-1-ol and ethanoic acid, and draw (c) as a displayed structural formula in words.
 (a) The C=O carbon is on the left with three carbons before the oxygen: butanoate. The group on the oxygen is \(\ce{CH3}\): methyl butanoate. [B1]
 
-(b) The acid part is \(\ce{CH3CO-}\), ethanoate. The group on the oxygen is propyl: propyl ethanoate. [B1]
+(b) The acid part is \(\ce{CH3CO}{-}\), ethanoate. The group on the oxygen is propyl: propyl ethanoate. [B1]
 
 (c) Propan-1-ol gives the "propyl" and ethanoic acid gives "ethanoate": propyl ethanoate, \(\ce{CH3COOCH2CH2CH3}\). The same ester as (b). [B1]
 \[\ce{CH3COOH + CH3CH2CH2OH <=>[H2SO4] CH3COOCH2CH2CH3 + H2O}\]
@@ -374,7 +374,7 @@ H: Which acid has \(M_r\) 60.0? Subtract it from the ester formula to find Q.
 H: Which type of alcohol is oxidised to a compound that does not give a silver mirror?
 A: (a) P is ethanoic acid, \(\ce{CH3COOH}\) (\(M_r = 60.0\)). [B1]
 The alcohol has 3 carbons (X has 5, P has 2): \(\ce{C3H7OH}\). [B1]
-The yellow precipitate shows Q contains \(\ce{CH3CH(OH)-}\), so Q is propan-2-ol. [B1]
+The yellow precipitate shows Q contains \(\ce{CH3CH(OH)}{-}\), so Q is propan-2-ol. [B1]
 R is propanone: the orange precipitate shows C=O, and no silver mirror shows a ketone. [B1]
 X is propan-2-yl ethanoate, \(\ce{CH3COOCH(CH3)2}\). [B1]
 (b) The acid-catalysed hydrolysis is reversible, [B1] so acid, alcohol, ester and water are all present at equilibrium. [B1]

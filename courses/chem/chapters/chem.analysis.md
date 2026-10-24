@@ -349,7 +349,7 @@ The student scores 0 out of 2. Always ask which peak has the highest m/e before 
 :::try Start easy, finish at exam standard
 Q: Use the Data table to say which bond absorbs at (a) 1720 cm⁻¹, (b) 3400 cm⁻¹ (broad), (c) 2230 cm⁻¹.
 A: (a) C=O (carbonyl, 1670–1740). (b) O–H of an alcohol (3200–3600), or N–H (3300–3500) if the absorption were sharper. (c) C≡N (2200–2250), a nitrile.
-Q: The IR spectrum of an unknown liquid has a strong absorption at 1740 cm⁻¹ and one at 1240 cm⁻¹, with no absorption between 2500 and 3600 cm⁻¹. Suggest the functional group.
+Q: The IR spectrum of an unknown liquid has a strong absorption at 1740 cm⁻¹ and one at 1240 cm⁻¹, with no broad O–H absorption (between 2500 and 3600 cm⁻¹ only the C–H absorption near 2900 cm⁻¹). Suggest the functional group.
 A: An ester. C=O in the ester range 1710–1750, C–O in 1040–1300, and no O–H.
 Q: Calculate the m/e value of the fragment \(\ce{CH3CH2CO+}\).
 A: The fragment is \(\ce{C3H5O+}\): \(36 + 5 + 16 = 57\).
@@ -387,7 +387,7 @@ H: Subtract the mass of chlorine from 92, then find the alkyl group.
 A: (a) Q contains one chlorine atom: \(^{35}\)Cl and \(^{37}\)Cl in a 3 : 1 ratio. [B1]
 (b) \(92 - 35 = 57\), which is \(\ce{C4H9}\) (48 + 9). [M1] The formula is \(\ce{C4H9Cl}\). [A1]
 (c) The fragment \(\ce{C4H9+}\) (57) has lost the chlorine atom [B1], so it contains no chlorine and has no isotope pair. [B1]
-Q: [8 marks] ★★★ Compound R has the following data. Mass spectrum: M⁺ at m/e 88 with an abundance of 12.5 %, an [M+1]⁺ peak of 0.55 % and a base peak at m/e 43. IR spectrum: strong absorptions at 1735 cm⁻¹ and 1240 cm⁻¹; no absorption between 2500 and 3600 cm⁻¹. Deduce the number of carbon atoms, the molecular formula, the functional group and a structure for R.
+Q: [8 marks] ★★★ Compound R has the following data. Mass spectrum: M⁺ at m/e 88 with an abundance of 12.5 %, an [M+1]⁺ peak of 0.55 % and a base peak at m/e 43. IR spectrum: strong absorptions at 1735 cm⁻¹ and 1240 cm⁻¹; no broad O–H absorption (between 2500 and 3600 cm⁻¹ only the C–H absorption near 2900 cm⁻¹). Deduce the number of carbon atoms, the molecular formula, the functional group and a structure for R.
 H: Use the carbon count and the IR to find the oxygen atoms. An ester has two oxygens.
 H: Look at the fragment at 43: which fragment containing C, H and O has m/e 43?
 A: Carbons: \(n = 100 \times 0.55 / (1.1 \times 12.5) = 55 / 13.75 = 4.0\). [M1] [A1]

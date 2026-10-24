@@ -204,6 +204,64 @@ A Level questions often start from a new substance or a data table and mix topic
 5. **Equilibrium and rate**: Le Chatelier's principle, Kc and Kp, the Boltzmann distribution.
 :::
 
+Try each question below on paper first. Then compare your answer with the mark scheme point by point and count the marks you would really have earned.
+
+:::try Write for the mark scheme
+Q: [2 marks] (#chem.lattice) Define the first electron affinity of an element.
+H: A definition names the quantity, the amount of substance, the state of the particles and the sign of the ion formed.
+A: The enthalpy change when one mole of electrons is added to one mole of gaseous atoms [B1] to form one mole of gaseous 1− ions [B1]. Leaving out "gaseous", or "one mole", loses a mark.
+
+Q: [3 marks] (#chem.bonding) Explain why the boiling point of HF is higher than that of HCl.
+H: Three linked points: what forces HF has, what HCl has instead, and what that does to the energy needed.
+A: HF has hydrogen bonds between its molecules, because H is bonded to the very electronegative F, which has a lone pair. [B1] HCl has only permanent dipole–dipole and instantaneous dipole–induced dipole forces between its molecules, because Cl is not small and electronegative enough for hydrogen bonding. [B1] Hydrogen bonds are stronger, so more energy is needed to overcome the forces between HF molecules. [B1] "Hydrogen bonds are broken" is wrong: the covalent H–F bond stays intact when the liquid boils.
+
+Q: [3 marks] (#chem.moles) (a) Calculate the amount, in mol, of NaOH in 25.0 cm³ of 0.200 mol dm⁻³ sodium hydroxide solution. [1] (b) The solution just neutralises sulfuric acid of concentration 0.125 mol dm⁻³, \(\ce{H2SO4 + 2NaOH -> Na2SO4 + 2H2O}\). Calculate the volume of acid in cm³. [2] A student writes (a) "25.0 × 0.200 = 5.00 mol" and (b) "5.00 ÷ 2 = 2.50 mol of acid; volume = 2.50 ÷ 0.125 = 20.0 dm³ = 20 000 cm³". Mark the student's answer.
+H: Mark part (a) alone first. Then mark part (b) using the student's own answer to (a), not the correct one.
+A: Correct answers: (a) \(25.0/1000 \times 0.200 = 5.00 \times 10^{-3}\) mol [B1]; (b) \(n(\ce{H2SO4}) = 5.00 \times 10^{-3}/2 = 2.50 \times 10^{-3}\) mol [M1], volume \(= 2.50 \times 10^{-3}/0.125 = 0.0200\) dm³ \(= 20.0\) cm³ [A1].
+Student: (a) 0 marks, because the volume was not converted to dm³. (b) The student divides by 2 for the 1 : 2 ratio, which earns the method mark. The volume is worked out correctly from the student's own 2.50 mol, and the dm³ to cm³ conversion is correct, which earns the answer mark by **error carried forward** (ecf). The final 20 000 cm³ is wrong, but the method after the first error is right, so the student gets 2 of 3 marks.
+
+Q: [4 marks] (#chem.org.halogen) Describe, in words, the SN1 mechanism of the hydrolysis of 2-bromo-2-methylpropane, \(\ce{(CH3)3CBr}\), with hydroxide ions.
+H: Use the mark scheme words: curly arrow, from where to where, the intermediate, and which step is the slowest.
+A: A curly arrow goes from the C–Br bond to the Br atom [B1], so the bond breaks heterolytically and forms a tertiary carbocation, \(\ce{(CH3)3C+}\), and a bromide ion, \(\ce{Br-}\). [B1] This is the slow, rate-determining step, and it involves only the halogenoalkane, so the rate depends only on its concentration. [B1] A curly arrow goes from the lone pair on the \(\ce{OH-}\) ion to the positively charged carbon [B1], forming 2-methylpropan-2-ol, \(\ce{(CH3)3COH}\). A bare "OH⁻ attacks the C–Br carbon" does not earn the arrow mark.
+:::
+
+:::quiz Command words
+? A question begins "State". What does it want?
+- A fact and the reason for it.
++ One fact, with no reason.
+- A full definition with an example.
+- Several linked points.
+> "State" asks for a single fact, such as "pyramidal" for the shape of ammonia. A reason is wasted time here; it belongs to "explain".
+
+? "Explain why the boiling point of HF is higher than that of HCl." Which answer has the structure the question wants?
+- HF has a higher boiling point because it has a higher boiling point.
+- HF is a smaller molecule than HCl.
++ HF has hydrogen bonds, which are stronger than the forces between HCl molecules, so more energy is needed to separate the molecules.
+- Hydrogen bonds between HF molecules are broken when it boils, which is hard.
+> "Explain" needs a cause linked to its effect: the type of force, how its strength compares, and the energy needed. The last option is close, but it says the bond is "hard" to break instead of linking strength to energy, and it does not compare with HCl.
+
+? "Deduce the formula of the compound" is followed by data in the question. Where should the answer come from?
+- From memory of the compound's formula alone.
+- From a guess based on the name.
++ From the information given in the question, with the reasoning shown.
+- From any similar compound you know.
+> "Deduce" means reach a conclusion from the information provided. A remembered answer without the reasoning from the data does not earn the marks.
+
+? A question asks you to "suggest" why a compound you have never studied has a high melting point. What do you do?
+- Leave it blank, because it is not in the syllabus.
+- Write everything you know about melting points.
++ Apply the bonding and structure ideas you know to this compound; several answers may be accepted.
+- Give the definition of melting point.
+> "Suggest" tests whether you can apply known chemistry to a new situation. Use the clues in the question, and write an answer even if the compound is unfamiliar.
+
+? "Compare the boiling points of HF and HCl." Which answer earns the mark?
+- HF has hydrogen bonds.
+- The boiling points are different.
++ HF has a higher boiling point than HCl.
+- HCl has instantaneous dipole–induced dipole forces.
+> A comparison uses both substances in the same statement and says how they differ. The other options describe only one substance, or say nothing about which is higher.
+:::
+
 ## Your practice plan
 
 :::steps

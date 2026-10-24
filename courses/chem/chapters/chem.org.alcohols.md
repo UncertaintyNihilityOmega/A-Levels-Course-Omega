@@ -307,7 +307,7 @@ With sodium, the product is sodium propoxide, \(\ce{CH3CH2CH2ONa}\), with hydrog
 
 **Classifying by oxidation.** Warm the alcohol with acidified dichromate(VI): 1° and 2° alcohols turn the orange solution green; a 3° alcohol does not. This is how a breathalyser worked in its first form: breath passed over orange dichromate crystals, and ethanol vapour turned them green. Modern breath testers use a fuel cell or infrared absorption instead.
 
-**The tri-iodomethane (iodoform) test.** Some alcohols contain the group \(\ce{CH3CH(OH)-}\), a methyl group and an H atom on the carbon with the OH. Alkaline aqueous iodine oxidises them to a compound with the \(\ce{CH3CO-}\) group, then replaces the three hydrogen atoms of the methyl group by iodine atoms and splits the molecule. The products are a pale **yellow precipitate of tri-iodomethane**, \(\ce{CHI3}\), and the salt of a carboxylic acid, \(\ce{RCO2-}\).
+**The tri-iodomethane (iodoform) test.** Some alcohols contain the group \(\ce{CH3CH(OH)}{-}\), a methyl group and an H atom on the carbon with the OH. Alkaline aqueous iodine oxidises them to a compound with the \(\ce{CH3CO}{-}\) group, then replaces the three hydrogen atoms of the methyl group by iodine atoms and splits the molecule. The products are a pale **yellow precipitate of tri-iodomethane**, \(\ce{CHI3}\), and the salt of a carboxylic acid, \(\ce{RCO2-}\).
 
 \[\ce{CH3CH(OH)R + 4I2 + 6OH- -> CHI3 + RCOO- + 5I- + 5H2O}\]
 
@@ -315,9 +315,9 @@ With sodium, the product is sodium propoxide, \(\ce{CH3CH2CH2ONa}\), with hydrog
 Add a few drops of the alcohol to a test tube with aqueous iodine, then add sodium hydroxide solution drop by drop until the brown colour of the iodine fades to pale yellow. Warm gently in a water bath. A pale yellow precipitate of \(\ce{CHI3}\), which has a medicinal ("antiseptic") smell, is a positive result. Do not smell the tube directly; waft the vapour towards you.
 :::
 
-Which alcohols give a positive result? Only those with \(\ce{CH3CH(OH)-}\), and so only **ethanol** (the one primary alcohol, where R is H) and **secondary alcohols with a methyl group on the OH carbon**, such as propan-2-ol and butan-2-ol:
+Which alcohols give a positive result? Only those with \(\ce{CH3CH(OH)}{-}\), and so only **ethanol** (the one primary alcohol, where R is H) and **secondary alcohols with a methyl group on the OH carbon**, such as propan-2-ol and butan-2-ol:
 
-| Alcohol | Has \(\ce{CH3CH(OH)-}\)? | Yellow precipitate? |
+| Alcohol | Has \(\ce{CH3CH(OH)}{-}\)? | Yellow precipitate? |
 |---|---|---|
 | ethanol, \(\ce{CH3CH2OH}\) | yes (R = H) | yes |
 | propan-1-ol | no | no |
@@ -325,16 +325,16 @@ Which alcohols give a positive result? Only those with \(\ce{CH3CH(OH)-}\), and 
 | butan-2-ol, \(\ce{CH3CH(OH)CH2CH3}\) | yes | yes |
 | 2-methylpropan-2-ol | no (no H on the C–OH carbon) | no |
 
-For ethanol, the equation is \(\ce{CH3CH2OH + 4I2 + 6OH- -> CHI3 + HCOO- + 5I- + 5H2O}\), with methanoate as the \(\ce{RCOO-}\). The same test also detects the \(\ce{CH3CO-}\) group in aldehydes and ketones (ethanal and propanone give it; see [Aldehydes and ketones](#chem.org.carbonyl)).
+For ethanol, the equation is \(\ce{CH3CH2OH + 4I2 + 6OH- -> CHI3 + HCOO- + 5I- + 5H2O}\), with methanoate as the \(\ce{RCOO-}\). The same test also detects the \(\ce{CH3CO}{-}\) group in aldehydes and ketones (ethanal and propanone give it; see [Aldehydes and ketones](#chem.org.carbonyl)).
 
 :::warn Not every secondary alcohol gives the test
-Pentan-3-ol, \(\ce{CH3CH2CH(OH)CH2CH3}\), is a secondary alcohol, but there is no methyl group next to the C–OH carbon, so it gives no yellow precipitate. The group \(\ce{CH3CH(OH)-}\) must be present.
+Pentan-3-ol, \(\ce{CH3CH2CH(OH)CH2CH3}\), is a secondary alcohol, but there is no methyl group next to the C–OH carbon, so it gives no yellow precipitate. The group \(\ce{CH3CH(OH)}{-}\) must be present.
 :::
 
 :::eg Four isomers have the formula \(\ce{C4H9OH}\). (a) Draw (describe) all four and classify them. (b) Which gives a yellow precipitate with alkaline aqueous iodine?
 (a) Butan-1-ol, \(\ce{CH3CH2CH2CH2OH}\), primary; butan-2-ol, \(\ce{CH3CH(OH)CH2CH3}\), secondary; 2-methylpropan-1-ol, \(\ce{(CH3)2CHCH2OH}\), primary; 2-methylpropan-2-ol, \(\ce{(CH3)3COH}\), tertiary. [B1]
 
-(b) Look for \(\ce{CH3CH(OH)-}\). Only butan-2-ol has it: the OH carbon carries a methyl group, a hydrogen and an ethyl group. [B1] The primary alcohols and the tertiary alcohol give no precipitate. [B1]
+(b) Look for \(\ce{CH3CH(OH)}{-}\). Only butan-2-ol has it: the OH carbon carries a methyl group, a hydrogen and an ethyl group. [B1] The primary alcohols and the tertiary alcohol give no precipitate. [B1]
 
 Butan-2-ol gives \(\ce{CHI3}\) and propanoate: \(\ce{CH3CH(OH)CH2CH3 + 4I2 + 6OH- -> CHI3 + CH3CH2COO- + 5I- + 5H2O}\).
 :::
@@ -400,7 +400,7 @@ A: (a) propanal. (b) propanoic acid. In distillation the aldehyde leaves the mix
 Q: Write the equation for the reaction between ethanol and ethanoic acid. Name the ester and the catalyst.
 A: \(\ce{CH3COOH + CH3CH2OH <=> CH3COOCH2CH3 + H2O}\). Ethyl ethanoate. Concentrated sulfuric acid.
 Q: Which of propan-1-ol and propan-2-ol gives a yellow precipitate with alkaline aqueous iodine? Explain.
-A: Propan-2-ol. It contains the group \(\ce{CH3CH(OH)-}\). Propan-1-ol does not have a methyl group on the carbon with the OH.
+A: Propan-2-ol. It contains the group \(\ce{CH3CH(OH)}{-}\). Propan-1-ol does not have a methyl group on the carbon with the OH.
 Q: Give the reagent that converts (a) ethanal into ethanol and (b) ethanoic acid into ethanol, and state why one of them needs a stronger reagent.
 A: (a) \(\ce{NaBH4}\) or \(\ce{LiAlH4}\). (b) \(\ce{LiAlH4}\) in dry ether. A carboxylic acid is harder to reduce than an aldehyde, and \(\ce{NaBH4}\) is not strong enough.
 :::
@@ -423,7 +423,7 @@ A: Test 1: warm each with acidified potassium dichromate(VI). [B1]
 2-methylbutan-2-ol (tertiary) gives no change: the solution stays orange. [B1]
 Pentan-2-ol and pentan-3-ol (both secondary) turn the solution green. [B1]
 Test 2: warm each of the other two with alkaline aqueous iodine. [B1]
-Pentan-2-ol, which contains \(\ce{CH3CH(OH)-}\), gives a pale yellow precipitate of \(\ce{CHI3}\); pentan-3-ol gives no precipitate. [B1]
+Pentan-2-ol, which contains \(\ce{CH3CH(OH)}{-}\), gives a pale yellow precipitate of \(\ce{CHI3}\); pentan-3-ol gives no precipitate. [B1]
 Q: [4 marks] ★★ 2-methylbutan-2-ol, \(\ce{(CH3)2C(OH)CH2CH3}\), is heated with concentrated sulfuric acid. Name the type of reaction, name the two alkenes formed and say whether either shows geometrical isomerism.
 H: The OH carbon has neighbouring carbons that are a methyl group (two of them) and a \(\ce{CH2}\) group.
 A: Dehydration (elimination of water). [B1]
@@ -442,10 +442,10 @@ A: \(n(\ce{Cr2O7^2-}) = 0.0200 \times 0.0500 = 1.000 \times 10^{-3}\) mol [M1]
 Mass \(= 1.500 \times 10^{-3} \times 46.0 = 0.0690\) g [A1]
 Q: [8 marks] ★★★ Compound P, \(\ce{C4H10O}\), is a liquid. It is oxidised by hot acidified potassium dichromate(VI) to a compound Q, \(\ce{C4H8O}\), which is not oxidised further. P gives a pale yellow precipitate with alkaline aqueous iodine. P is dehydrated by concentrated sulfuric acid to a mixture of three isomeric alkenes. (a) Identify P and Q, explaining your reasoning. (b) Name the yellow precipitate. (c) Name the three alkenes. (d) State why P cannot be a tertiary alcohol.
 H: Which type of alcohol is oxidised to a compound that cannot be oxidised again?
-H: The yellow precipitate shows the presence of \(\ce{CH3CH(OH)-}\). List the alcohols \(\ce{C4H9OH}\) that contain it.
+H: The yellow precipitate shows the presence of \(\ce{CH3CH(OH)}{-}\). List the alcohols \(\ce{C4H9OH}\) that contain it.
 H: Count the alkenes, including cis and trans forms.
 A: (a) Q is not oxidised further, so it is a ketone, which means P is a secondary alcohol. [B1]
-The iodine test shows the group \(\ce{CH3CH(OH)-}\); of the C₄ alcohols only butan-2-ol has it, so P is butan-2-ol, \(\ce{CH3CH(OH)CH2CH3}\). [B1] [B1]
+The iodine test shows the group \(\ce{CH3CH(OH)}{-}\); of the C₄ alcohols only butan-2-ol has it, so P is butan-2-ol, \(\ce{CH3CH(OH)CH2CH3}\). [B1] [B1]
 Q is butanone, \(\ce{CH3COCH2CH3}\). [B1]
 (b) tri-iodomethane, \(\ce{CHI3}\) [B1]
 (c) but-1-ene, cis-but-2-ene and trans-but-2-ene [B1] [B1]
@@ -454,9 +454,9 @@ Q is butanone, \(\ce{CH3COCH2CH3}\). [B1]
 
 :::try Stretch for A*
 Q: [5 marks] ★★★ Alcohol R, \(\ce{C5H12O}\), gives a pale yellow precipitate with alkaline aqueous iodine. When R is dehydrated it gives exactly two alkenes, and neither shows geometrical isomerism. Identify R and the two alkenes. Explain why pentan-2-ol is not R.
-H: R contains \(\ce{CH3CH(OH)-}\). There are two such alcohols with five carbons: pentan-2-ol and one branched one.
+H: R contains \(\ce{CH3CH(OH)}{-}\). There are two such alcohols with five carbons: pentan-2-ol and one branched one.
 H: Draw the alkenes each could give. Remember that cis and trans isomers count as different alkenes.
-A: R contains \(\ce{CH3CH(OH)-}\) (the yellow precipitate), so it is pentan-2-ol or 3-methylbutan-2-ol, \(\ce{CH3CH(OH)CH(CH3)2}\). [B1]
+A: R contains \(\ce{CH3CH(OH)}{-}\) (the yellow precipitate), so it is pentan-2-ol or 3-methylbutan-2-ol, \(\ce{CH3CH(OH)CH(CH3)2}\). [B1]
 Pentan-2-ol gives pent-1-ene and pent-2-ene, and pent-2-ene has cis and trans isomers, so it would give three alkenes. [B1]
 3-methylbutan-2-ol gives, by removing H from the \(\ce{CH3}\), 3-methylbut-1-ene, \(\ce{CH2=CHCH(CH3)2}\); [B1]
 and, by removing H from the CH on the other side, 2-methylbut-2-ene, \(\ce{(CH3)2C=CHCH3}\). [B1]
@@ -500,7 +500,7 @@ A more stable anion is formed more easily, so \(\ce{CCl3CH2OH}\) loses \(\ce{H+}
 - pentan-3-ol
 - 2-methylpropan-2-ol
 + butan-2-ol
-> Only alcohols containing \(\ce{CH3CH(OH)-}\) give the test (plus ethanol). Butan-2-ol has it. Pentan-3-ol is secondary, but the carbons next to the OH carbon are \(\ce{CH2}\) groups, not \(\ce{CH3}\).
+> Only alcohols containing \(\ce{CH3CH(OH)}{-}\) give the test (plus ethanol). Butan-2-ol has it. Pentan-3-ol is secondary, but the carbons next to the OH carbon are \(\ce{CH2}\) groups, not \(\ce{CH3}\).
 ? 4.60 g of ethanol reacts with excess ethanoic acid. What is the maximum mass of ethyl ethanoate, \(\ce{CH3COOC2H5}\) (\(M_r\) = 88.0)?
 - 4.40 g
 - 4.60 g
@@ -542,7 +542,7 @@ A more stable anion is formed more easily, so \(\ce{CCl3CH2OH}\) loses \(\ce{H+}
 - Oxidation (acidified \(\ce{K2Cr2O7}\), orange → green; or \(\ce{KMnO4}\), purple → colourless): 1° → aldehyde (distil off as formed) → carboxylic acid (excess oxidant, reflux); 2° → ketone; 3° no reaction.
 - Dehydration: heated \(\ce{Al2O3}\) or concentrated \(\ce{H2SO4}\) → alkene (elimination). Butan-2-ol gives but-1-ene, cis- and trans-but-2-ene.
 - Esterification: alcohol + carboxylic acid, concentrated \(\ce{H2SO4}\) catalyst, heat under reflux, reversible; ester named alkyl alkanoate (ethyl ethanoate).
-- Alkaline aqueous iodine gives yellow \(\ce{CHI3}\) with \(\ce{CH3CH(OH)-}\) (ethanol, propan-2-ol, butan-2-ol) but not propan-1-ol or tertiary alcohols.
+- Alkaline aqueous iodine gives yellow \(\ce{CHI3}\) with \(\ce{CH3CH(OH)}{-}\) (ethanol, propan-2-ol, butan-2-ol) but not propan-1-ol or tertiary alcohols.
 - Alcohols are weaker acids than water: the alkyl group donates electrons and destabilises \(\ce{RO-}\).
 :::
 

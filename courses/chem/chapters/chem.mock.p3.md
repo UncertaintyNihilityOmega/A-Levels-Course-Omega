@@ -148,7 +148,7 @@ the purple colour disappears (decolourised), as \(\ce{Fe^2+}\) is oxidised [B1]
 (d) \(\ce{Fe^2+(aq) + 2OH-(aq) -> Fe(OH)2(s)}\): correct species [B1], balanced with state symbols [B1]
 
 (e) FB 3 is propanal, because the orange/red ppt. with Fehling's solution shows an aldehyde [B1]
-FB 4 is propanone, because it gives a yellow ppt. with alkaline aqueous iodine (the \(\ce{CH3CO-}\) group) and does not react with Fehling's solution [B1]
+FB 4 is propanone, because it gives a yellow ppt. with alkaline aqueous iodine (the \(\ce{CH3CO}{-}\) group) and does not react with Fehling's solution [B1]
 :::
 
 Next: [Mock paper: Paper 5 planning, analysis and evaluation](#chem.mock.p5)
