@@ -54,5 +54,7 @@ eq("quiz Kstab", sf(0.100 / (1.0e-6 * 0.500 ** 2), 2), 4.0e5, 1e2)
 eq("Pt ox state", 0 - 2 * -1, 2)
 # stereoisomer count for [Co(en)2Cl2]+: cis (2 enantiomers) + trans (1)
 eq("isomers Co(en)2Cl2", 2 + 1, 3)
+# fix: Planck constant quoted in the colour section
+eq("Planck constant mantissa", 6.626e-34 / 1e-34, 6.63, 0.005)
 
 print("ok")

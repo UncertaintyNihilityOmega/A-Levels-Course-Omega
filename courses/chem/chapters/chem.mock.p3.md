@@ -18,7 +18,7 @@ The real Paper 3 is a laboratory exam. In this written version you do not handle
 :::
 
 :::try
-Q: [16 marks] (#chem.practical) **Question 1: titration.**
+Q: [16 marks] (#chem.practical) **Titration.**
 
 FA 1 is an acidified aqueous solution containing 13.90 g dm⁻³ of hydrated iron(II) sulfate, \(\ce{FeSO4.xH2O}\). FA 2 is 0.0100 mol dm⁻³ potassium manganate(VII), \(\ce{KMnO4}\).
 
@@ -68,7 +68,7 @@ titre \(= 2.515 \times 10^{-4} / 0.00600 \times 1000 = 41.9\) cm³, so the perce
 :::
 
 :::try
-Q: [10 marks] (#chem.energetics) **Question 2: thermometric experiment.**
+Q: [10 marks] (#chem.energetics) **Thermometric experiment.**
 
 A student measured the enthalpy change for the reaction
 
@@ -108,7 +108,7 @@ use a thermometer reading to 0.1 °C: the uncertainty of \(2 \times 0.05 = 0.10\
 :::
 
 :::try
-Q: [14 marks] (#chem.practical) **Question 3: qualitative analysis.**
+Q: [14 marks] (#chem.practical) **Qualitative analysis.**
 
 FB 1 and FB 2 are two salts. Each contains one cation and one anion. A student dissolved a sample of each in water and carried out the tests below. The observations are given.
 

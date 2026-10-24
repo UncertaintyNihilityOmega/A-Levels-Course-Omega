@@ -17,7 +17,7 @@ Paper 2 is a written paper of structured questions on the AS Level topics. Write
 :::
 
 :::try
-Q: [11 marks] (#chem.atoms) **Question 1: atomic structure and moles.**
+Q: [11 marks] (#chem.atoms) **Atomic structure and moles.**
 
 (a) Define the term *isotopes*. (2 marks)
 
@@ -55,7 +55,7 @@ the empirical formula is \(\ce{Cu2O}\) [A1]
 :::
 
 :::try
-Q: [13 marks] (#chem.energetics) **Question 2: energetics and equilibria.**
+Q: [13 marks] (#chem.energetics) **Energetics and equilibria.**
 
 (a) 50.0 cm³ of 1.00 mol dm⁻³ hydrochloric acid at 20.5 °C was mixed with 50.0 cm³ of 1.00 mol dm⁻³ sodium hydroxide, also at 20.5 °C, in a polystyrene cup. The highest temperature reached was 27.3 °C. Assume that the density of the solutions is 1.00 g cm⁻³ and that their specific heat capacity is 4.18 J g⁻¹ K⁻¹.
 
@@ -88,7 +88,7 @@ a change in pressure has no effect on the position, because there are 2 mol of g
 :::
 
 :::try
-Q: [12 marks] (#chem.periodicity) **Question 3: inorganic chemistry.**
+Q: [12 marks] (#chem.periodicity) **Inorganic chemistry.**
 
 (a) Magnesium oxide and sulfur dioxide are each added to separate samples of water. For each oxide, write an equation for the reaction and state the approximate pH of the resulting mixture. (4 marks)
 
@@ -123,7 +123,7 @@ the C–O bond in the carbonate ion is weakened less, so more energy (a higher t
 :::
 
 :::try
-Q: [12 marks] (#chem.org.hydrocarbons) **Question 4: organic chemistry.**
+Q: [12 marks] (#chem.org.hydrocarbons) **Organic chemistry.**
 
 Propene can be converted into propanone in three steps.
 
@@ -154,7 +154,7 @@ orange to green [B1] (allow purple to colourless if acidified manganate(VII) is 
 :::
 
 :::try
-Q: [12 marks] (#chem.analysis) **Question 5: analysis and synthesis.**
+Q: [12 marks] (#chem.analysis) **Analysis and synthesis.**
 
 Compound W has the molecular formula \(\ce{C_xH_yO}\). Its properties are:
 

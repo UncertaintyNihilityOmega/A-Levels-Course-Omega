@@ -96,6 +96,8 @@ Reflux 1 g of methylbenzene with a solution of \(\ce{KMnO4}\) in dilute \(\ce{Na
 
 All the reactions in this section have the same pattern: a nucleophile with an N–H or O–H bond replaces the Cl, and hydrogen chloride is made. They happen at **room temperature**, without a catalyst. Acylation is the name for this type of change: the acyl group \(\ce{RCO}{-}\) is transferred to the nucleophile.
 
+Two terms from the next chapter appear in the table. An **amide** has a C=O group bonded directly to a nitrogen atom, \(\ce{-CONH2}\). A **primary amine**, \(\ce{RNH2}\), has one carbon group on the nitrogen and a **secondary amine**, \(\ce{R2NH}\), has two (see [Amines, amides and amino acids](#chem.org.nitrogen)).
+
 | Reactant | Product | Equation (ethanoyl chloride) |
 |---|---|---|
 | water | carboxylic acid | \(\ce{CH3COCl + H2O -> CH3COOH + HCl}\) |

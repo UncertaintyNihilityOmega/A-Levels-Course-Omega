@@ -126,4 +126,7 @@ eq("quiz k", sf(LN2 / 40.0), 1.73e-2)
 eq("quiz wrong 27.7", sf(0.693 * 40.0), 27.7)
 eq("quiz wrong option", sf(40.0 / 0.693), 57.7)
 
+# ---- fixes
+eq("bigger table B", 18 / 2, 3 ** 2)
+eq("A and B x2 x3 rate", 2 * 3 ** 2, 18)
 print("ok")

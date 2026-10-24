@@ -90,6 +90,8 @@ The group \(\ce{C6H5}{-}\): a benzene ring that has lost one hydrogen atom and i
 
 When there are several groups, list the prefixes in alphabetical order (bromo before nitro), with a number for each and di-, tri- for repeats. Positions are given by number only: 2 is next to carbon 1, 3 is one further round, and 4 is opposite. The syllabus names methylbenzene products as 2-chloromethylbenzene and 4-chloromethylbenzene, and this course follows that style. You may also meet 1-chloro-2-methylbenzene in other books: it describes the same molecule.
 
+Brackets show that a group is one unit: (chloromethyl)benzene is \(\ce{C6H5CH2Cl}\) (a \(\ce{CH2Cl}\) group on the ring, so the Cl is in the side chain), whereas 2-chloromethylbenzene is a Cl on carbon 2 of methylbenzene (the Cl is on the ring). In the same way (nitromethyl)benzene would be \(\ce{C6H5CH2NO2}\), but 2-nitromethylbenzene has the \(\ce{NO2}\) on ring carbon 2 next to the \(\ce{CH3}\).
+
 :::eg Name (a) \(\ce{C6H5Cl}\); (b) the ring with an OH group on carbon 1 and an \(\ce{NO2}\) group on carbon 4; (c) the ring with a COOH group on carbon 1 and a Br atom on carbon 3; (d) \(\ce{C6H5COCH3}\).
 (a) A chlorine atom on a benzene ring: chlorobenzene.
 
@@ -284,6 +286,8 @@ Once a ring carries one substituent, a second one does not go in at random. The 
 |---|---|---|
 | \(\ce{-NH2}\), \(\ce{-OH}\), alkyl (\(\ce{-R}\), such as \(\ce{-CH3}\)) | the 2- and 4-positions (and 6) | activates: the ring reacts faster |
 | \(\ce{-NO2}\), \(\ce{-COOH}\), \(\ce{-COR}\) (such as \(\ce{-COCH3}\)) | the 3-position (and 5) | deactivates: the ring reacts more slowly |
+
+Positions are counted from the carbon that already carries the group (carbon 1): 2 is next to it, 3 is two bonds away, 4 is opposite, and 6 is the other carbon next to it.
 :::
 
 The reason is the electron density of the ring. A group that **donates** electrons to the ring (\(\ce{-NH2}\) and \(\ce{-OH}\) through lone pairs on N and O, alkyl groups by the inductive effect) makes the π system richer in electrons, particularly at the 2-, 4- and 6-positions. A richer ring is attacked more readily by an electrophile, so the group is **activating**. A group that **withdraws** electrons (\(\ce{-NO2}\), \(\ce{-COOH}\) and \(\ce{-COR}\) have electronegative atoms attached to the ring carbon) makes the ring poorer in electrons and harder to attack. It is **deactivating**, and the new group goes where the ring has been least depleted, which is the 3-position.
@@ -303,7 +307,7 @@ Methylbenzene nitrates more easily than benzene, at a lower temperature. Nitrobe
 :::
 
 :::eg (Real context) TNT, the explosive, is 2,4,6-trinitromethylbenzene, made by nitrating methylbenzene three times. Explain (a) why the three \(\ce{NO2}\) groups end up in the 2-, 4- and 6-positions, and (b) why each nitration needs harsher conditions than the one before.
-(a) The \(\ce{CH3}\) group directs to the 2-, 4- and 6-positions. Each \(\ce{NO2}\) group already on the ring directs to the 3- and 5-positions relative to itself, and after the first nitro group goes in at position 2 these are positions 4 and 6, the same ones. [B1] So both kinds of group agree, and the product is 2,4,6-trinitromethylbenzene. [B1]
+(a) The \(\ce{CH3}\) group directs to the 2-, 4- and 6-positions. Each \(\ce{NO2}\) group already on the ring directs to the 3- and 5-positions relative to itself. Renumber from the nitro group: with \(\ce{CH3}\) on carbon 1 and the first \(\ce{NO2}\) on carbon 2, "the 3-position relative to the \(\ce{NO2}\)" is two bonds round the ring from carbon 2 in either direction, which is carbon 4 (2 to 3 to 4) or carbon 6 (2 to 1 to 6). So both groups direct to carbons 4 and 6, the same ones. [B1] So both kinds of group agree, and the product is 2,4,6-trinitromethylbenzene. [B1]
 
 (b) Each \(\ce{NO2}\) group withdraws electron density and deactivates the ring, so the ring is less attractive to the \(\ce{NO2+}\) electrophile and a higher temperature or stronger mixture is needed. [B1]
 :::

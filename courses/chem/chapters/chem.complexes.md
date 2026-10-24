@@ -37,7 +37,7 @@ White light is a mixture of all the colours of the spectrum. A solution looks co
 
 This is a simple colour wheel: each colour is paired with the one opposite it. The frequency of visible light rises from red (lowest) through orange, yellow, green and blue to violet (highest).
 
-The energy of the light absorbed is linked to its frequency by
+Light arrives in packets of energy called photons. A photon of frequency \(f\) has energy \(E = hf\), where \(h\) is the Planck constant (\(6.63 \times 10^{-34}\) J s). You will not need to calculate with it here. The energy of the light absorbed is linked to its frequency by
 
 \[\Delta E = hf\]
 
@@ -53,7 +53,7 @@ Orbitals that have the same energy.
 
 When ligands bond to the ion, their lone pairs repel the electrons in the d orbitals. The repulsion is not the same for every d orbital, because the orbitals point in different directions. The five orbitals are no longer degenerate: they split into two sets with different energies, separated by an energy gap \(\Delta E\).
 
-**Octahedral complexes.** Six ligands approach along the x, y and z axes. Two orbitals, \(d_{z^2}\) and \(d_{x^2-y^2}\), have lobes pointing along the axes, straight at the ligands, so they are repelled more strongly and rise in energy. The other three, \(d_{xy}\), \(d_{xz}\) and \(d_{yz}\), have lobes between the axes, so they are repelled less. The result is **two higher orbitals and three lower orbitals**.
+**Octahedral complexes.** Six ligands approach along the x, y and z axes. Two orbitals, \(d_{z^2}\) and \(d_{x^2-y^2}\), have lobes pointing along the axes, straight at the ligands, so they are repelled more strongly and rise in energy. (\(d_{x^2-y^2}\) has four lobes too, but they lie along the x and y axes, not between them; \(d_{z^2}\) has two lobes on the z axis and a ring round the middle.) The other three, \(d_{xy}\), \(d_{xz}\) and \(d_{yz}\), have lobes between the axes, so they are repelled less. The result is **two higher orbitals and three lower orbitals**.
 
 **Tetrahedral complexes.** Four ligands approach between the axes. Now \(d_{xy}\), \(d_{xz}\) and \(d_{yz}\) are the ones that point closer to the ligands. The splitting is **upside down: three higher orbitals and two lower orbitals**, and the gap \(\Delta E\) is smaller (there are only four ligands, and none points straight at an orbital).
 
@@ -201,6 +201,8 @@ Two complexes in the syllabus are chiral:
 
 Try turning one of the pair in your mind: you cannot make it match the other, just as a left hand cannot become a right hand by turning it.
 
+The test used below is the **plane of symmetry**: an imaginary flat mirror through the middle of the complex that makes one half the mirror image of the other half. A complex that has one is not chiral.
+
 :::eg Is cis-\(\ce{[Ni(en)2(H2O)2]^2+}\) chiral? Is the trans isomer?
 In the cis isomer the two water ligands are adjacent. The two en ligands then wrap round the nickel ion in a twisted, propeller-like arrangement, and its mirror image cannot be superposed on it. The cis isomer is chiral and exists as two optical isomers.
 
@@ -214,7 +216,7 @@ In the trans isomer the two water ligands are opposite each other, 180° apart. 
 
 In the cis isomer the two water ligands are adjacent, 90° apart. [B1]
 
-Neither is chiral, because neither lacks a plane of symmetry: there are no optical isomers.
+Neither is chiral, because each has a plane of symmetry: there are no optical isomers.
 :::
 
 ### Polarity
@@ -299,7 +301,7 @@ Suppose a ligand L′ is added to a complex of ligand L. The exchange is
 
 \[\ce{[ML] + L' <=> [ML'] + L}\]
 
-and its equilibrium constant is the ratio \(K_{\text{stab}}(\ce{ML'}) \div K_{\text{stab}}(\ce{ML})\). If the new complex has the larger \(K_{\text{stab}}\), that ratio is greater than 1 and the exchange goes ahead.
+and its equilibrium constant is \(K = \dfrac{[\ce{ML'}][\ce{L}]}{[\ce{ML}][\ce{L'}]}\). Write the two stability constants, \(K_{\text{stab}}(\ce{ML}) = \dfrac{[\ce{ML}]}{[\ce{M}][\ce{L}]}\) and \(K_{\text{stab}}(\ce{ML'}) = \dfrac{[\ce{ML'}]}{[\ce{M}][\ce{L'}]}\). Divide the second by the first: the free metal ion \([\ce{M}]\) cancels, leaving exactly \(K\). So the equilibrium constant is the ratio \(K_{\text{stab}}(\ce{ML'}) \div K_{\text{stab}}(\ce{ML})\). If the new complex has the larger \(K_{\text{stab}}\), that ratio is greater than 1 and the exchange goes ahead.
 
 :::eg (Real context) In black-and-white photography the unused silver bromide on the film is removed by thiosulfate ions ("fixing"). Use \(K_{\text{stab}}\) values to show that thiosulfate ions replace ammonia in the silver complex, and calculate the equilibrium constant for \(\ce{[Ag(NH3)2]+ + 2S2O3^2- <=> [Ag(S2O3)2]^3- + 2NH3}\).
 \(K_{\text{stab}}\) for \(\ce{[Ag(S2O3)2]^3-}\) is \(2.9 \times 10^{13}\) and for \(\ce{[Ag(NH3)2]+}\) it is \(1.6 \times 10^{7}\). The thiosulfate complex has the larger \(K_{\text{stab}}\), so it is the more stable and thiosulfate replaces ammonia.

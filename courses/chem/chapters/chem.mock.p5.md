@@ -15,7 +15,7 @@
 :::
 
 :::try
-Q: [14 marks] (#chem.planning) **Question 1: planning.**
+Q: [14 marks] (#chem.planning) **Planning.**
 
 The enthalpy change of combustion, \(\Delta_c H\), of a substance is the enthalpy change when one mole of the substance burns completely in oxygen. A student wants to find out how the enthalpy change of combustion of alcohols changes along the series methanol, ethanol, propan-1-ol and butan-1-ol, by heating water in a metal calorimeter with a spirit burner.
 
@@ -51,7 +51,7 @@ heat absorbed by the water \(q = mc\Delta T\), with \(m\) = mass of water (100 g
 :::
 
 :::try
-Q: [16 marks] (#chem.planning) **Question 2: analysis and evaluation.**
+Q: [16 marks] (#chem.planning) **Analysis and evaluation.**
 
 Hydrogen peroxide decomposes in the presence of iodide ions as a catalyst:
 

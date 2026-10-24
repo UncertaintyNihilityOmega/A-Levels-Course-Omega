@@ -156,10 +156,10 @@ For a **first-order** reaction the half-life does not depend on the concentratio
 
 :::formula First-order half-life and rate constant
 \[t_{\frac12} = \frac{\ln 2}{k} = \frac{0.693}{k}\qquad\text{so}\qquad k = \frac{0.693}{t_{\frac12}}\]
-\(k\) is in s⁻¹ if \(t_{\frac12}\) is in seconds. Convert minutes or hours to seconds first. This applies to first-order reactions only.
+\(k\) is in s⁻¹ if \(t_{\frac12}\) is in seconds. Convert minutes or hours to seconds first. This applies to first-order reactions only. (ln 2 is just the number 0.693; you do not need the ln button.)
 :::
 
-Why is it constant? In a first-order reaction the rate is proportional to [A], so when the concentration has halved the rate has halved too, and exactly the same time is needed to lose the next half. In second order, a lower concentration means a rate that falls even faster, so the time grows.
+Why is it constant? In a first-order reaction the rate is proportional to [A], so when the concentration has halved the rate has halved too, and exactly the same time is needed to lose the next half. In second order the rate is proportional to [A]², so when [A] has halved the rate is only a quarter, and the next half-life takes longer.
 
 :::eg (Exam style) The concentration of a reactant A changed as follows. Deduce the order with respect to A and calculate \(k\). [4 marks]
 
@@ -219,7 +219,7 @@ Check by using experiment 2: \(4.0 \times 10^{-5}/((0.0100)^2 \times 0.0020) = 2
 
 ### Clock reactions
 
-In a clock reaction you measure the **time** for a small fixed amount of reaction to happen (a colour appears). The amount is the same in each run, so the rate is proportional to 1/time.
+In a clock reaction you measure the **time** for a small fixed amount of reaction to happen (a colour appears). The amount is made fixed like this: a small, fixed amount of sodium thiosulfate is added at the start; it removes the first iodine formed, so the starch turns blue only when that fixed amount of iodine has been made. The amount is the same in each run, so the rate is proportional to 1/time.
 
 :::eg (Exam style) In the reaction \(\ce{S2O8^2-(aq) + 2I-(aq) -> 2SO4^2-(aq) + I2(aq)}\), the time for a fixed amount of iodine to form (a blue colour appearing with starch) was measured. [4 marks]
 
@@ -237,6 +237,11 @@ Experiments 1 and 3: [I⁻] doubles and the rate doubles, so first order in \(\c
 
 :::tip A bigger table
 In an exam table, more than one concentration may change at once. Choose the pairs where only one changes first. If none exist, work out what the change in the first reactant's concentration should do to the rate (using the order you have found), and see what is left for the second.
+
+For example, if [A] × 2 and [B] × 3 together make the rate × 18, and A is already known to be first order:
+- [A] × 2 accounts for a rate × 2.
+- What is left is 18 ÷ 2 = 9, and it must come from [B] × 3.
+- 3² = 9, so B is second order.
 :::
 
 :::eg (Exam style) The reaction \(\ce{A + B -> C}\) gave these initial rates. Find the rate equation and \(k\). [5 marks]
@@ -292,6 +297,8 @@ The reasoning is the same in both directions.
 The rate equation contains the species that take part in the rate-determining step (and any steps before it). Species that only react **after** the slow step do not appear in the rate equation, however much of them is needed overall. The power of each species in the rate equation is the number of its particles in that step.
 :::
 
+Why "and any steps before it"? A slow step can only use particles that have already been made. If an earlier (fast) step makes an intermediate that the slow step then uses, the amount of that intermediate depends on the reactants of the earlier step, so those reactants count too. Example: \(\ce{2NO + O2 -> 2NO2}\) goes in two steps. Step 1 (fast): \(\ce{NO + NO -> N2O2}\). Step 2 (slow): \(\ce{N2O2 + O2 -> 2NO2}\). The slow step uses \(\ce{N2O2}\) and \(\ce{O2}\), and the more NO there is, the more \(\ce{N2O2}\) is made, so the rate depends on both \([\ce{NO}]\) and \([\ce{O2}]\). Here the slow step is the second one, and the NO still appears in the rate equation. (You will not be asked to derive the exact powers for a case like this at AS; just recognise why the earlier reactants appear.)
+
 A mechanism must (1) add up to the overall equation, with intermediates cancelling, and (2) have a slow step that matches the rate equation.
 
 :::eg Deduce the rate equation for each: (a) \(\ce{CH3CH2Br + OH- -> CH3CH2OH + Br-}\) by SN2 (one step), (b) \(\ce{(CH3)3CBr + OH- -> (CH3)3COH + Br-}\) by SN1 (two steps, the first slow).
@@ -321,7 +328,7 @@ B is zero order, because it reacts only after the slow step. In mechanism 1 the 
 
 :::eg (Real context) Propanone reacts with iodine in aqueous acid: \(\ce{CH3COCH3 + I2 -> CH3COCH2I + HI}\). The rate equation is \(\text{rate} = k[\ce{CH3COCH3}][\ce{H+}]\). (a) State the order with respect to iodine and what it shows. (b) What is the role of \(\ce{H+}\)? [4 marks]
 (a) Zero order with respect to \(\ce{I2}\). [B1] Iodine is not in the rate-determining step; it reacts in a fast step after it. [B1]
-(b) \(\ce{H+}\) appears in the rate equation but not in the overall equation, so it is used in the slow step and regenerated later: it is a catalyst. [B1] The slow step involves propanone and \(\ce{H+}\) forming the enol, \(\ce{CH3C(OH)=CH2}\); the iodine reacts with the enol in the fast step. [B1]
+(b) \(\ce{H+}\) appears in the rate equation but not in the overall equation, so it is used in the slow step and regenerated later: it is a catalyst. [B1] The slow step involves propanone and \(\ce{H+}\) forming the enol, \(\ce{CH3C(OH)=CH2}\) (an enol is a compound with an OH group on a carbon of a C=C double bond; it is an isomer of the carbonyl compound); the iodine reacts with the enol in the fast step. [B1]
 :::
 
 :::eg Spot the error: The hydrolysis of 2-bromo-2-methylpropane by aqueous sodium hydroxide has the rate equation \(\text{rate} = k[\ce{(CH3)3CBr}]\). Deduce the order with respect to hydroxide ions and explain what this tells you about the mechanism. [3 marks]
