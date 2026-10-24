@@ -105,6 +105,7 @@ chemistry figure (skeletal formulas, curly-arrow mechanisms, apparatus). Copy it
   https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-chemistry-9701/past-papers/
   (title "Past Papers and Examiner Reports", checked 24 Oct 2026: use it for `papers:` lines in the paper guides).
   Khan Academy answers curl with a bot challenge: leave it out (the one in chem.f.basics was checked in a browser).
+  PhET simulations (https://phet.colorado.edu/en/simulations/<name>) are also good. All 102 chapter URLs returned 200 on 24 Oct 2026 (REVIEW FINAL).
 - **Facts**: outcomes and data from FACTS.md; colours, observations and test results from its qualitative-analysis
   notes, in their words. Unsure of a fact (melting point, colour, condition)? Leave it out or say it qualitatively.
 - **Numbers**: every number in `checks/<id>.py`; Ar from data/elements.json (`json.load`) or the values above.

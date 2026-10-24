@@ -151,4 +151,4 @@ the purple colour disappears (decolourised), as \(\ce{Fe^2+}\) is oxidised [B1]
 FB 4 is propanone, because it gives a yellow ppt. with alkaline aqueous iodine (the \(\ce{CH3CO}{-}\) group) and does not react with Fehling's solution [B1]
 :::
 
-Next: [Mock paper: Paper 5 planning, analysis and evaluation](#chem.mock.p5)
+Next: [Mock paper: Paper 4 A Level structured questions](#chem.mock.p4)

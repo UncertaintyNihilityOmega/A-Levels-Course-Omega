@@ -600,3 +600,5 @@ Q: [1 mark] (#chem.analysis) In the mass spectrum of a hydrocarbon the molecular
 
 A: **B**. \(n = 100 \times 1.76/(1.1 \times 32.0) = 5.0\), so five carbon atoms. C comes from leaving out the 1.1 factor (5.5, rounded up). D divides the M abundance by the [M+1] abundance (32.0/1.76 = 18.2), the ratio upside down.
 :::
+
+Next: [Mock paper: Paper 2 AS structured questions](#chem.mock.p2)

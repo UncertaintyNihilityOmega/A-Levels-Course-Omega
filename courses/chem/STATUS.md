@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-24 · FIX · READER 15 items: polymers (question reworded, dioyl chloride and HO-/H2N- explained), synthesis2 (13C symmetry explained, H2/Ni rule, five routes), analysis2 (upfield/downfield, multiplet rule, Q elements), practical, planning (ln equation, percentage error), exam.p24 ecf text, mixed.as m/z, mixed.a2 PET unit
+Last: 2026-10-24 · REVIEW FINAL · 49/49 chapters pass check and phone; Data-section wording matches FACTS (questions give their data); false-charge fixes render as baseline bonds; rates2 RDS, synthesis2 13C bridge, transition dx2-y2 caption, isomerism A Level block, exam.p24 practice verified and recomputed; Next chain fixed (mock.p1 added, mock.p3->p4, mock.p5 ends course); mocks match FACTS times/marks; all 102 link URLs 200
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -29,4 +29,4 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P22: reviewed 2026-10-24
 - P23: reviewed 2026-10-24
 - READER: done 2026-10-24
-- FINAL: open
+- FINAL: done 2026-10-24

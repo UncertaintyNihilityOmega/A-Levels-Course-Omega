@@ -110,4 +110,4 @@ repeat each experiment (replicate) and use the mean of consistent results [B1]
 use a burette: two readings of ±0.05 cm³ give \(0.10/10.00 \times 100 = 1.0\%\), which is smaller [B1]
 :::
 
-Next: [Paper 1 survival guide: multiple choice](#chem.exam.p1)
+This is the last mock paper and the end of the course. To plan more practice, go back to the [Paper 1 survival guide](#chem.exam.p1) and the [Papers 2 and 4 survival guide](#chem.exam.p24).

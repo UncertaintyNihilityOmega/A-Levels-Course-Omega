@@ -349,7 +349,7 @@ The student scores 2 out of 3. The distinction between "not involved" and "not i
 
 :::steps
 1. **Overall equation from a mechanism**: add the steps and cancel anything that appears on both sides. What cancels is an intermediate or a catalyst.
-2. **Rate equation from a mechanism**: find the slowest step and write a concentration term for each species in it (squared for two identical particles).
+2. **Rate equation from a mechanism**: find the slowest step and write a concentration term for each species in it (squared for two identical particles). If the slow step uses an intermediate, write the reactants of the fast step that made it instead.
 3. **Mechanism from a rate equation**: put the species of the rate equation into the slow step, then add fast steps to complete the overall equation.
 4. **Intermediate or catalyst?** Both appear in the mechanism but not in the overall equation. An intermediate is made first and used later; a catalyst is used first and regenerated later.
 5. **Rate-determining step**: the step whose reactants match the rate equation; on a pathway diagram, the step with the highest activation energy.
