@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-24 · WRITE P22 · chem.mixed.as (6 sets x 8 questions, 263 marks, 10 MCQs; 6.2k words) and chem.mock.p2 (60 marks exactly: 11+13+12+12+12; 1.7k words). check and phone pass for both, no figures or widgets. Reviewer: mixed.as quiz uses +/- syntax, not lettered options; set 4 Q4 and set 6 Q3 use different Group 2 salts from mock Q3; mock Q5 IR value 1700 cm-1 chosen to sit in the carbonyl range but outside the ester range.
+Last: 2026-10-24 · WRITE P23 · chem.mixed.a2 (6.2k words, 6 sets x 8 questions = 48 Qs, 227 marks, 10-MCQ quiz, 3 checklists, recap, links; no figures/widgets) and chem.mock.p4 (9 Qs, exactly 100 marks, 2 h; synoptic AS parts: Group 2 polarisation Q2e, SN1 rate equation Q5, moles/titrations Q4b Q6c). Reviewer: Born-Haber/entropy/Kstab/Ksp data are supplied in each question (not from Data booklet); Q8b mock repeats the arenes chapter's methylbenzene chlorination idea; Set 6 links use only the COURSE.md verified URLs.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -27,6 +27,6 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P20: reviewed 2026-10-24
 - P21: written 2026-10-24
 - P22: written 2026-10-24
-- P23: writing 2026-10-24
+- P23: written 2026-10-24
 - READER: open
 - FINAL: open
