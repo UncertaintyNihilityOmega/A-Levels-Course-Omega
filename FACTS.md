@@ -7,6 +7,7 @@ The source for exam facts across the guide. Course folders hold their own copies
 - CAIE 9709: P1 1h50/75 (AS60/AL30), P2 1h15/50 (AS only), P3 1h50/75 (AL30), P4 Mech 1h15/50, P5 S1 1h15/50, P6 S2 1h15/50 (each AS40/AL20)
   AS routes P1+P2, P1+P4, P1+P5; AL: 1,3,4,5 or 1,3,5,6 (not 4+6). Formula list MF19.
 - CAIE 9702/9701/9700: P1 MCQ 1h15/40 (31/15.5), P2 AS structured 1h15/60 (46/23), P3 practical 2h/40 (23/11.5), P4 AL structured 2h/100 (38.5), P5 planning 1h15/30 (11.5)
+- What the papers print (real question papers): 9701 (Nov 2024, 9701/11 and /41) the Periodic Table and "Important values, constants and standards" only, no Data booklet, other data given in the question; 9700 (June 2024) no data booklet or formula sheet, statistics formulae and critical values printed in the questions. Paper 1 MCQ: one mark per correct answer, no penalty for wrong answers. Check each new syllabus the same way.
 - 9702 topics 1-11 AS, 12-25 AL incl. medical physics + astronomy & cosmology
 - 9701 topics 1-22 AS, 23-37 AL; Nernst E = E° + (0.059/z) log([ox]/[red])
 - 9700 AS 1-11, AL 12-19; diseases: cholera, malaria, TB, HIV/AIDS; stats: chi2, t-test, Spearman, Pearson, Simpson's D, Hardy-Weinberg, Lincoln index

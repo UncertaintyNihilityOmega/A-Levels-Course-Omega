@@ -1,61 +1,54 @@
 # AGENT-RUN: building a course with agents (Organizer only)
 
-The **agent method** is the second way to build a course (PROJECT.md, "Two ways to build a course"). The user starts
-it when they have usage to spare, typically before a usage window resets. One Organizer chat at the project root
-runs the course's sessions as subagents: **1 Opus Specialist and up to 2 Sonnet Writers at a time**. It uses the
-same kit, STATUS.md and packages as the classic method, so a course can switch methods at any point.
+Use only when the user asks for an agent run. One Organizer chat at the project root runs the course's steps as
+subagents: **1 Opus Specialist and up to 2 Sonnet Writers/Readers at a time**. Same kit, STATUS.md and packages as
+the classic method, so a course can switch methods at any point.
 
-Only run it when the user asks for it in that chat. It is not the default.
-
-## What it costs (Physics night, 2026-10-13/14)
-- A Writer package costs 230–280k agent tokens and takes 15–25 minutes. A review costs 300–380k tokens and
-  takes 15–30 minutes. LEAD took 400k tokens and 38 minutes.
-- About 14k tokens per agent-minute, or 30–45k per minute with 2–3 agents running.
-- **A Pro 5-hour window lasts about 1–1.5 hours** this way, which is about 3 packages (6 chapters), or a
-  package plus a review. The whole night used about 16% of the weekly allowance.
-- Tell the user these numbers when they ask how far a run will get.
+## Cost (Chemistry, 2026)
+- Writer package 220–390k agent tokens (15–35 min); review 200–380k; Reader batch 250–320k; FIX round 100–140k;
+  LEAD ~400k.
+- 3 agents use a 5-hour window in about 2–3 packages plus a review. Chemistry (49 chapters) took about 7–8 windows.
 
 ## Start
-1. `git status` must be clean. Read the course's `status` (`node courses/<c>/kit/zta.js status`).
-2. **Guard on**: write the course id into `.claude/hooks/guard-course.txt` (e.g. `phys`). The PreToolUse hook in
-   `.claude/settings.json` then refuses any subagent file access or command outside `courses/<c>` (and `..` and
-   git). The Organizer's own calls are never checked. Without that file the guard does nothing.
-3. Start the course's preview server: launch config `<c>-preview` (port 5101–5109), so the Specialist can look
-   at pages. Only the Specialist uses the browser; Writers never do.
-4. Launch agents with the templates below: `subagent_type` general-purpose, `model` opus (Specialist) or
-   sonnet (Writer), `effort` high (the user's choice), `run_in_background` true.
+1. `git status` clean; `node courses/<c>/kit/zta.js status`.
+2. Guard on: write the course id into `.claude/hooks/guard-course.txt`. The PreToolUse hook in `.claude/settings.json`
+   then blocks any subagent file access or command outside `courses/<c>` (and `..` and git). The Organizer's own
+   calls are not checked.
+3. Start the course preview: launch config `<c>-preview`.
+4. Scheduled check: CronCreate, hourly, off the hour (prompt: "Scheduled hourly check …": if agents run, do nothing;
+   if a usage limit stopped them, checkpoint and resume; if none runs, continue the loop). It lives only in this
+   session and expires after 7 days.
+5. Launch agents with the templates below: `subagent_type` general-purpose, `model` opus (Specialist) or sonnet
+   (Writer, Reader), `effort` high, `run_in_background` true.
 
-## The loop (until the course is done or the usage limit stops it)
-- Course not planned → Specialist **LEAD** alone. Then answer its REQUESTS.md lines, `node engine/sync.js`, and commit.
-- Then keep **2 Writers** busy, each with one named package (in `status` order). Start a new agent for each
-  package: a fresh context is cheaper than a long one.
-- When `status` lists a REVIEW (3+ packages written, or the last ones), start the **Specialist REVIEW** for exactly those
-  packages, while the Writers go on. The kit allows at most 4 packages past the last review (`AHEAD` in
-  engine/progress.js). When it says WAIT, wait for the review.
-- After a review: give its REVIEW.md items to the next Writer as **FIX + WRITE Pn** (only one agent at a time does FIX).
-- **Each time an agent reports**: run `check` on its chapters yourself, then commit only that package's files
-  (`git add` named paths, because other agents are mid-work). Answer REQUESTS.md lines (engine fixes are yours),
-  and re-sync the kits after any engine change. After each commit, `git push` (the backup on GitHub).
-- When every package is reviewed: **READER** (Sonnet, template below), one batch of 6–8 chapters per agent, one
-  agent at a time (each batch builds on the "Taught" lines the batch before wrote in READER.md). Writers can do
-  the open FIX items meanwhile. After the last batch, a Writer does **FIX** for the `(reader)` items.
-- At the end: Specialist **REVIEW FINAL**, then the assembly session from ORGANIZER.md.
+## Loop
+- No plan yet → Specialist LEAD alone; then answer its REQUESTS.md lines, sync, commit.
+- Keep 2 Writers busy, one named package each, in `status` order. A fresh agent per package.
+- When 3 packages are written (or the last ones), start the Specialist REVIEW for exactly those, while Writers go on
+  (the kit allows 6 packages past the last review; at WAIT, wait).
+- After a review: the next Writer does **FIX + WRITE Pn** (one FIX at a time; give FIX Writers disjoint chapters).
+- Each time an agent reports: `check` its chapters, commit only its files (`git add` named paths), push, answer
+  REQUESTS.md (engine fixes are the Organizer's), re-sync after engine changes.
+- READER: batches of 7–9 chapters in course order, one Reader at a time. Early batches may start while late packages
+  are still in review (their chapters are final). Give the Reader items to a FIX Writer every ~25 items, on chapters
+  no other agent is editing.
+- End: Specialist **REVIEW FINAL** (targeted: check/phone all, spot-check the FIX rounds, Next chain, mock totals,
+  links), then the assembly session (ORGANIZER.md).
 
-## When the usage limit stops agents
-The agents fail with a rate-limit error. Nothing on disk is lost.
-1. When the user says to continue: `git status`, then `status`. Run `check` on every changed chapter, and commit a checkpoint.
-2. For each interrupted session, start a **resume** agent (template below). Tell it which files exist and
-   pass `check`, and which are missing. A claimed package stays `writing`, so the resume agent must not `claim`.
-3. An interrupted review is re-run whole (it keeps the earlier edits).
+## Usage-limit stop
+- Agents fail with a rate-limit error; nothing on disk is lost.
+- After the reset: `git status`, `status`, `check` every changed chapter, commit a checkpoint, push.
+- Resume each stopped agent with **SendMessage** (it keeps its context): say the limit reset, what is on disk, and
+  "do not claim again". Start a fresh resume agent only if one cannot be resumed.
 
 ## End of the run
-- Let running agents finish (stopping them wastes what they have spent), check and commit their work.
-- **Guard off**: delete `.claude/hooks/guard-course.txt`. Stop the preview server.
-- Add a root STATUS.md line: what was done, chapters, the next step.
+- Let running agents finish; check and commit their work.
+- Guard off: delete `.claude/hooks/guard-course.txt`. Stop the preview. Delete the scheduled check.
+- Update ROADMAP.md "Now"; tick the course.
 
 ## Prompt templates
-Replace `<C>` (course id), `<TITLE>` (course title), `<PATH>` (`C:\Users\Uncertainty\Desktop\Claude_Test\A Levels Course\courses\<C>`),
-`<SHPATH>` (the same with forward slashes) and `<Pn>`. Every template starts with the **common block**.
+Replace `<C>` (course id), `<PATH>` (`C:\Users\Uncertainty\Desktop\Claude_Test\A Levels Course\courses\<C>`),
+`<SHPATH>` (the same with forward slashes), `<port>` and `<Pn>`. Every template starts with the common block.
 
 ### Common block (all agents)
 ```
@@ -71,7 +64,7 @@ and follow its "Rules for every session" and "<STEP> (<ROLE>)" steps, with these
 - Do not leave background processes running when you finish.
 ```
 
-### Writer additions (WRITE, FIX + WRITE, resume)
+### Writer additions (WRITE, FIX + WRITE)
 ```
 - Do not use the browser tools at all: another agent uses the browser. Your checks are `node kit/zta.js check <id>`,
   `phone <ids>` and `widget <name> "…" --probe`. Check every SVG figure's coordinates and label positions with Python,
@@ -79,53 +72,48 @@ and follow its "Rules for every session" and "<STEP> (<ROLE>)" steps, with these
   preview/shots/; open them with Read) and fix what you see. Dark shots only for a widget whose probe flagged something
   (the reviewer looks at dark mode).
 - Other agents work on other packages at the same time. Touch only <Pn>'s files: its chapters, their checks and the
-  widgets/<name>.js files it builds. Never edit COURSE.md, course.json, FACTS.md, widgets.js, REVIEW.md, another
-  package's files, or STATUS.md (the kit writes it).
+  widgets/<name>.js files it builds (generator scripts in data/, not scratch/). Never edit COURSE.md, course.json,
+  FACTS.md, widgets.js, REVIEW.md, another package's files, or STATUS.md (the kit writes it).
 Steps:
 1. `node kit/zta.js claim <Pn>`. If it fails, report the message and stop.
-2. Read COURSE.md (follow every rule under Figures, which the reviews add), kit/STYLE.md, the gold chapter and
-   packages/<Pn>.md. Your package file has the learning outcomes; grep FACTS.md only for a specific fact.
+2. Read COURSE.md (follow every rule), kit/STYLE.md, the gold chapter and packages/<Pn>.md. Your package file has the
+   learning outcomes; grep FACTS.md only for a specific fact; grep earlier chapters only for specific terms.
 3. Write each chapter in full, at the depth and with every section the gold chapter shows, then its checks file;
-   `check <id>` must pass with no checklist notes. Then build the package's widgets and probe them clean
-   (light, dark, phone, bad attributes).
+   `check <id>` must pass with no checklist notes. Save each chapter as soon as it is written. Then build the package's
+   widgets and probe them clean (light, dark, phone, bad attributes; they must survive zero size).
 4. `phone` for your chapters must pass. Then `node kit/zta.js done "WRITE <Pn>" "<chapters; widgets; notes for the reviewer>"`.
 Reply in at most 6 lines: chapters with word counts and check results, widgets and probe results, anything left undone.
 ```
-- **FIX + WRITE**: put a "Part 1: FIX" first. REVIEW.md has n open items in <chapters>. Make each change
-  exactly as written, with small Edits, add new numbers to the checks, mark each `[x]`, check and phone those
-  chapters, then `done FIX "<what changed>"`. Part 2 is the WRITE steps.
-- **Resume**: "<Pn> is already claimed: do not run `claim`. Done and passing check: <files>. Missing: <files>.
-  Do not reread the finished chapters whole; grep them only for links, widget embeds and the Next line."
+- **FIX + WRITE**: put "Part 1: FIX" first: the open REVIEW.md items and their chapters; make each change exactly as
+  written, add new numbers to the checks, mark each `[x]`, check and phone those chapters, `done FIX "<what changed>"`.
+- **FIX only** (Reader items): name the REVIEW.md headings to close, the chapters other agents are editing (never
+  touch), "grep for the section each item names, then Read just that range".
 
-### Reader additions (READER: Sonnet, high effort)
+### Reader additions (READER)
 ```
 - Do not use the browser tools. Never edit chapters, checks, widgets or any file except READER.md and REVIEW.md
-  (append only: other agents may be closing REVIEW.md items at the same time).
-- Your batch: <ids> (in this order). Follow CLAUDE.md "READER (Reader)" exactly: read READER.md first, then each
-  chapter of your batch whole, as a student who knows only what the "Taught" lines say.
+  (append only to REVIEW.md: re-read its end just before each append; if an Edit fails because the file changed,
+  re-read and retry).
+- Your batch: <ids> (in this order). Read READER.md first, then each chapter whole, as a student who knows only what
+  the "Taught" lines say. File items under a heading "READER: <first id> to <last id>".
 - If READER.md then covers every chapter, run `done READER "<n reader items>"`; otherwise do not run `done`.
 Reply in at most 5 lines: chapters read, how many (reader) items you filed, the worst one.
 ```
-A batch of 7 chapters is about 50–60k words of chapter text (Physics averaged 8k words a chapter), so expect about 150–250k agent tokens per batch.
 
 ### Specialist additions (LEAD, REVIEW, REVIEW FINAL)
 ```
-- Preview: the course preview is served at http://localhost:<port> (if it is down, start the "<C>-preview" launch
-  config with preview_start). Run `node kit/zta.js preview`, then open `http://localhost:<port>/#<chapter-id>` with
-  the browser tools (you are the only agent using the browser). Prefer get_page_text, read_page and javascript_tool
-  probes; screenshots only at scale 0.5; resize_window preset mobile for phone width, then reset it to desktop.
-  If the pane does not draw (the app window is hidden while the user is away), use `node kit/zta.js shot <id>`
-  (`--dark`, `--phone`) and open the PNGs in preview/shots/ with Read.
-- Writer agents are writing other packages at the same time: do not touch their files. You may tighten COURSE.md
-  or the notes of packages nobody has claimed yet.
+- Preview: http://localhost:<port> (if it is down, start the "<C>-preview" launch config with preview_start; stop it
+  when you finish). Run `node kit/zta.js preview`, then open `http://localhost:<port>/#<chapter-id>`. Prefer
+  get_page_text, read_page and javascript_tool probes; screenshots only at scale 0.5. If the pane does not draw
+  (the app window is hidden), use `node kit/zta.js shot <id>` (`--dark`, `--phone`) and Read the PNGs.
+- Writer agents are writing other packages at the same time: do not touch their files. You may tighten COURSE.md or
+  the notes of packages nobody has claimed yet.
 ```
-- **LEAD**: the plan has packages of 2–3 chapters (core topics first, extras after). Every `packages/Pn.md` is
-  self-sufficient (copy in the outcome numbers and text, pitfalls, example ideas, figures, proofs, widget specs).
-  Each widget belongs to exactly one package. The gold chapter has every STYLE section and passes check and phone.
-  Finish with `done LEAD`, then reply: a 3-line summary, the package list (`P1: ids (widgets: …)`), the gold
-  chapter's check and phone results, and anything for the Organizer.
-- **REVIEW <Pa>, <Pb>, <Pc>** (3 packages from 2026-10-23): Writers cannot use the browser, so nobody has looked at their figures or widgets yet.
-  Look at every figure and widget (light, dark, phone, interactions), fix layout yourself, then read and recompute
-  at CLAUDE.md's step 2 depth. Judge depth and add what is missing, or list precise additions. List the Writers'
-  reported deviations for the reviewer to confirm. Finish with `done "REVIEW <Pa>, <Pb>, <Pc>"` (exactly those packages).
-  Reply in at most 8 lines.
+- **LEAD**: packages of 2–3 chapters (core topics first, then skills, then exam readiness: a guide per paper, mixed
+  practice, one mock per written paper with the real time, marks and question style). Every `packages/Pn.md` is
+  self-sufficient. Each widget belongs to one package. FACTS.md records what each real paper prints and allows (from a
+  recent question paper's front page). The gold chapter has every STYLE section and passes check and phone.
+  `done LEAD`; reply with a 3-line summary, the package list, the gold chapter's results and REQUESTS.md lines.
+- **REVIEW <Pa>, <Pb>, <Pc>**: look at every figure and widget (light, dark, phone, interactions), fix layout
+  yourself, read and recompute at CLAUDE.md step 2 depth, judge depth, list the Writers' notes to confirm (end of
+  each packages/Pn.md). `done "REVIEW <Pa>, <Pb>, <Pc>"`. Reply in at most 8 lines.
