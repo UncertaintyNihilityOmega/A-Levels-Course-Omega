@@ -180,27 +180,27 @@ def fig_pi(oxygen=False):
     F = Fig("pi_o" if oxygen else "pi")
     cx, cy = 130 if oxygen else 170, 112
     a, b = 70, 26
+    LX, LY, LO = 13, 16, 20
     pts = [(cx + a*math.cos(math.radians(t)), cy + b*math.sin(math.radians(t))) for t in (0, 60, 120, 180, 240, 300)]
-    # back vertices (y smaller) lobes first, then ring, then front
     order = sorted(range(6), key=lambda i: pts[i][1])
     for i in order:
         x, y = pts[i]
-        F.raw(f'<ellipse class="fa" cx="{f(x)}" cy="{f(y-19)}" rx="12" ry="18"/>')
-        F.raw(f'<ellipse class="fa" cx="{f(x)}" cy="{f(y+19)}" rx="12" ry="18"/>')
-        F.pts += [(x-12, y-37), (x+12, y+37)]
+        F.raw(f'<ellipse class="fa" cx="{f(x)}" cy="{f(y-LO)}" rx="{LX}" ry="{LY}"/>')
+        F.raw(f'<ellipse class="fa" cx="{f(x)}" cy="{f(y+LO)}" rx="{LX}" ry="{LY}"/>')
+        F.pts += [(x-LX, y-LO-LY), (x+LX, y+LO+LY)]
     F.line(pts, "ln thick", closed=True, ok=True)
     if oxygen:
-        ox, oy = pts[0][0] + 52, pts[0][1]
-        F.line([pts[0], (ox - 8, oy)], "ln thick", ok=True)
-        F.raw(f'<ellipse class="fa2" cx="{f(ox)}" cy="{f(oy-19)}" rx="12" ry="18"/>')
-        F.raw(f'<ellipse class="fa2" cx="{f(ox)}" cy="{f(oy+19)}" rx="12" ry="18"/>')
-        F.text(ox + 20, oy + 4, "OH", "start")
-        F.dots(ox, oy - 20);
-        F.pts += [(ox-12, oy-37), (ox+12, oy+37), (ox+20, oy-6), (ox+48, oy+6)]
-        F.text(ox, oy + 56, "lone pair in a", "middle")
-        F.text(ox, oy + 72, "p orbital on O", "middle")
-    F.text(cx, cy - 56, "π electrons above", "middle")
-    F.text(cx, cy + 70, "π electrons below", "middle")
+        ox, oy = pts[0][0] + 56, pts[0][1]
+        F.line([pts[0], (ox - 12, oy)], "ln thick", ok=True)
+        F.raw(f'<ellipse class="fa2" cx="{f(ox)}" cy="{f(oy-24)}" rx="{LX}" ry="{LY}"/>')
+        F.raw(f'<ellipse class="fa2" cx="{f(ox)}" cy="{f(oy+24)}" rx="{LX}" ry="{LY}"/>')
+        F.text(ox, oy + 4, "OH", "middle")
+        F.dots(ox, oy - 24)
+        F.pts += [(ox-LX, oy-24-LY), (ox+LX, oy+24+LY)]
+        F.text(ox, oy + 62, "lone pair in a", "middle")
+        F.text(ox, oy + 78, "p orbital on O", "middle")
+    F.text(cx, cy - 68, "π electrons above", "middle")
+    F.text(cx, cy + 80, "π electrons below", "middle")
     F.check()
     cap = ("Benzene seen from slightly above. Each carbon has one p orbital at right angles to the flat ring; neighbouring p orbitals overlap sideways, so the π electrons form one ring above and one below the plane of the σ bonds."
            if not oxygen else
