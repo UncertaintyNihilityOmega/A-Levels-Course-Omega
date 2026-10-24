@@ -1,6 +1,7 @@
 @chapter about.psych
 @title About Psychology
 @level start
+@foot none
 @time 10 minutes
 @summary What psychology is, what psychologists do, why it matters, what the Cambridge International AS & A Level Psychology (9990) course covers, and who it suits. The full course in this guide is planned.
 

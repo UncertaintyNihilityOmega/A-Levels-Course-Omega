@@ -1,6 +1,7 @@
 @chapter about.other
 @title About Other subjects
 @level start
+@foot none
 @time 5 minutes
 @summary What the "Other subjects" section of this guide will be: short, honest guides to other popular A Levels (what each subject is, what it involves, who it suits and what it leads to), to help you choose. It is planned.
 

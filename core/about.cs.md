@@ -1,6 +1,7 @@
 @chapter about.cs
 @title About Computer Science
 @level start
+@foot none
 @time 10 minutes
 @summary What computer science is, what computer scientists do, why it matters, what the Cambridge International AS & A Level Computer Science (9618) course covers, and who it suits. The full course in this guide is planned.
 

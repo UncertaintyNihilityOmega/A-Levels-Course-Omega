@@ -1,6 +1,7 @@
 @chapter about.eng
 @title About Engineering
 @level start
+@foot none
 @time 10 minutes
 @summary What engineering is, what engineers do, why it matters, how to prepare for it at A Level (there is no Cambridge Engineering A Level), and what this guide's Engineering course will cover. The full course is planned.
 

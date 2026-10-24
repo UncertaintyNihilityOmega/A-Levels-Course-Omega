@@ -179,12 +179,25 @@ function buildSite(sources, opts) {
   // ---------- order, groups, chunks ----------
   const ordered = [];
   const subjects = [];
+  // A course with no written chapter shows its core page about.<id> as its only entry ("About this course"), in its
+  // own section; once its first chapter is written the page drops out and the course has its normal structure.
+  const isAbout = (id) => id.startsWith('about.');
+  const realCount = (sub) => sub.groups.reduce((a, g) => a + g.chapters.filter(c => !isAbout(c.id)).length, 0);
+  const aboutOf = (s) => s.kind === 'course' && !s.chapters.some(e => written.has(e.id)) ? written.get('about.' + s.id) : null;
   for (const s of sources) {
-    const sub = { id: s.id, kind: s.kind, title: s.title, short: s.short, code: s.code, years: s.years, desc: s.desc, groups: [], planned: s.chapters.length };
+    const sub = { id: s.id, kind: s.kind, title: s.title, short: s.short, code: s.code, years: s.years, desc: s.desc, groups: [], planned: s.chapters.filter(e => !isAbout(e.id)).length };
     subjects.push(sub);
+    const about = aboutOf(s);
+    if (about) {
+      Object.assign(about, { subject: s.id, group: 'About this course', chunk: null });
+      sub.groups.push({ title: about.group, chapters: [about] });
+      sub.about = about.id;
+      ordered.push(about);
+      continue;
+    }
     for (const e of s.chapters) {
       const c = written.get(e.id);
-      if (!c) continue;
+      if (!c || (s.kind === 'core' && isAbout(e.id))) continue;
       const last = sub.groups[sub.groups.length - 1];
       if (last && last.title === c.group) last.chapters.push(c); else sub.groups.push({ title: c.group, chapters: [c] });
       ordered.push(c);
@@ -265,7 +278,7 @@ function buildSite(sources, opts) {
       if (c.meta.foot !== 'none') o.f = 1;
       return [c.id, o];
     })),
-    subjects: subjects.map(s => ({ id: s.id, c: s.kind === 'course' ? 1 : 0, t: s.title, short: s.short, code: s.code, y: s.years, desc: s.desc, n: s.groups.reduce((a, g) => a + g.chapters.length, 0), p: s.planned, first: s.groups[0] ? s.groups[0].chapters[0].id : null, ab: written.has('about.' + s.id) ? 'about.' + s.id : null })),
+    subjects: subjects.map(s => ({ id: s.id, c: s.kind === 'course' ? 1 : 0, t: s.title, short: s.short, code: s.code, y: s.years, desc: s.desc, n: realCount(s), p: s.planned, first: s.about ? null : s.groups[0] ? s.groups[0].chapters[0].id : null, ab: s.about || null })),
     chunks,
     papers: Object.fromEntries(Object.entries(papers).filter(([, l]) => l.length).map(([sid, l]) => [sid, l.map(p => ({ id: p.id, t: p.title, c: p.chapters.filter(id => written.has(id)) }))])),
     // "What to revise next" (practice.next): each mock's questions in page order as [marks, chapter it revises],
@@ -299,7 +312,7 @@ function buildSite(sources, opts) {
   const stats = {
     chapters: ordered.length, planned: planned.size, words: ordered.reduce((a, c) => a + c.words, 0), math: st.mathCount,
     quiz: st.QUIZ.length, glossary: st.GLOSSARY.length, soonLinks,
-    by: Object.fromEntries(subjects.map(s => [s.id, `${s.groups.reduce((a, g) => a + g.chapters.length, 0)}/${s.planned}`]))
+    by: Object.fromEntries(subjects.map(s => [s.id, `${realCount(s)}/${s.planned}`]))
   };
   return { errors, warnings, files, chapters: ordered, written, planned, stats, R, regOwner };
 }

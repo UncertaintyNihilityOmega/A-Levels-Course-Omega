@@ -3,6 +3,7 @@
 @level start
 @hero none
 @foot none
+@summary The front page of Zero to A*: start from zero, build a study plan, or pick a subject.
 
 :::html
 <section class="hero">

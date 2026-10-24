@@ -1,6 +1,7 @@
 @chapter about.bio
 @title About Biology
 @level start
+@foot none
 @time 10 minutes
 @summary What biology is, what biologists do, why it matters, what the Cambridge International AS & A Level Biology (9700) course covers, and who it suits. The full Biology course in this guide is being built.
 

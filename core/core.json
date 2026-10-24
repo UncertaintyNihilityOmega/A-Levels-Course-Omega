@@ -65,49 +65,49 @@
           "id": "about.bio",
           "title": "About Biology",
           "level": "start",
-          "group": "About the subjects"
+          "group": "About this course"
         },
         {
           "id": "about.cs",
           "title": "About Computer Science",
           "level": "start",
-          "group": "About the subjects"
+          "group": "About this course"
         },
         {
           "id": "about.eng",
           "title": "About Engineering",
           "level": "start",
-          "group": "About the subjects"
+          "group": "About this course"
         },
         {
           "id": "about.econ",
           "title": "About Economics",
           "level": "start",
-          "group": "About the subjects"
+          "group": "About this course"
         },
         {
           "id": "about.bus",
           "title": "About Business",
           "level": "start",
-          "group": "About the subjects"
+          "group": "About this course"
         },
         {
           "id": "about.acc",
           "title": "About Accounting",
           "level": "start",
-          "group": "About the subjects"
+          "group": "About this course"
         },
         {
           "id": "about.psych",
           "title": "About Psychology",
           "level": "start",
-          "group": "About the subjects"
+          "group": "About this course"
         },
         {
           "id": "about.other",
           "title": "About Other subjects",
           "level": "start",
-          "group": "About the subjects"
+          "group": "About this course"
         }
       ]
     },

@@ -1,6 +1,7 @@
 @chapter about.acc
 @title About Accounting
 @level start
+@foot none
 @time 10 minutes
 @summary What accounting is, what accountants do, why it matters, what the Cambridge International AS & A Level Accounting (9706) course covers, and who it suits. The full course in this guide is planned.
 

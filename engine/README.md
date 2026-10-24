@@ -26,8 +26,8 @@
   each question's maximum). Practice by paper with interleaving (`DATA.papers`).
 - `practice.next` ("What to revise next", `app.js` `renderNext`) ranks chapters from marked mocks (`DATA.mocks`),
   the last 10 quiz answers per chapter (localStorage `quizlog`) and unticked checklist lines.
-- Home: `app.js` `renderHome` lists courses from `DATA.subjects`; a course with no chapters links to its
-  `about.<id>` page (`ab`).
+- Home: `app.js` `renderHome` lists courses from `DATA.subjects`. A course with no written chapter shows its core page
+  `about.<id>` as its only sidebar entry ("About this course"; `ab`, `@foot none`); it drops out once a chapter exists.
 - Long inline maths is split into one `<math>` per relation joined by `<wbr>`, so chains wrap on phones.
 - `course.json` `years`: `status.js` warns in a syllabus's last exam year; home cards show it.
 

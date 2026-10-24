@@ -23,7 +23,7 @@ let bad = res.errors.length;
 const rows = [];
 for (const s of sources) {
   const group = s.kind === 'core' ? 'core' : s.id;
-  const chs = res.chapters.filter(c => c.subject === s.id);
+  const chs = res.chapters.filter(c => c.src === s); // by source file (core about.<c> pages show in a course section)
   let notes = 0, pyFail = 0, pyRun = 0;
   const detail = [];
   for (const c of chs) {

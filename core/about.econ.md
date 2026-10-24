@@ -1,6 +1,7 @@
 @chapter about.econ
 @title About Economics
 @level start
+@foot none
 @time 10 minutes
 @summary What economics is, what economists do, why it matters, what the Cambridge International AS & A Level Economics (9708) course covers, and who it suits. The full course in this guide is planned.
 
