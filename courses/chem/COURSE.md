@@ -56,6 +56,8 @@ chemistry figure (skeletal formulas, curly-arrow mechanisms, apparatus). Copy it
 - Electron configurations as plain text: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s², [Ar] 3d⁶ 4s² (3d before 4s).
 - `\(\Delta H^{\ominus}_{\mathrm{f}}\)`, `\(K_c = \dfrac{[\ce{NH3}]^2}{[\ce{N2}][\ce{H2}]^3}\)`, `\(p_{\ce{NH3}}\)`.
   ICE tables: a Markdown table with short cells.
+- Never put a name inside `\ce` (`\ce{-> 2-nitromethylbenzene}` prints italic letters): give the formula in `\ce` and the
+  name in `\text{…}` or in the sentence. Captions use Unicode formulas ([Cu(H₂O)₆]²⁺), not `\ce`.
 - Organic: condensed formulas in `\ce` (`CH3CH(OH)CH3`, `(CH3)3CBr`); [O] and [H] allowed for organic redox;
   radicals `\(\ce{Cl^.}\)`. In a worked example, number carbons as the name does (or say "the CH₂= carbon").
 - Reagents and conditions: the reagent **and** the solvent and conditions every time ("NaOH in ethanol, heat";
@@ -81,7 +83,9 @@ chemistry figure (skeletal formulas, curly-arrow mechanisms, apparatus). Copy it
   (e.g. chem.acids2).
 - Facts that went wrong before: Sc and Zn are d-block but not transition elements (write "d-block" or "Sc to Zn");
   transition-metal atoms and ions are not "free radicals"; the O and S ionisation-energy dips are spin-pair repulsion,
-  never "a half-filled sub-shell is stable"; complex colour comes from a partly filled d sub-shell, not "unpaired electrons".
+  never "a half-filled sub-shell is stable"; complex colour comes from a partly filled d sub-shell, not "unpaired electrons"
+  (so never give MnO₄⁻, a d⁰ ion, as an example of d–d colour); observations in FACTS.md words ("dark blue solution",
+  not "deep blue"); a data value used in two chapters keeps the same digits (chloroethanoic acid pKa 2.86 everywhere).
 
 ## Course-wide rules
 - **Board boxes**: one board and one content difference you are sure of, never two boards, never "other
@@ -123,8 +127,8 @@ Writers cannot see their figures. Plan coordinates in Python, then `shot <id>` a
   (the aldehyde H may be). Wedge = filled `fi` triangle, hash = `ln` strokes of growing length; bonds ≥ 25 px so
   wedges read. Benzene: a regular hexagon of side ~28 px with an inner circle of radius ~17 px, never alternating
   double bonds.
-- **Displayed formulas**: atoms `tl tc`, bonds `ln` stopping ~6 px short of each label; double bond two lines 5 px
-  apart; every atom and bond.
+- **Displayed formulas**: atoms `tl tc`, bonds `ln` stopping ~6 px short of each label; double bond two **parallel** lines
+  5 px apart (offset both ends by the same perpendicular vector; data/mk_fig_p15_review.py); every atom and bond.
 - **Curly-arrow mechanisms**: `<path class="c1 sw2" d="M x0 y0 Q cx cy x1 y1" marker-end="url(#ahs-red)"/>`, one path
   per arrow, ≥ ~30 px long, starting **at a lone pair or the middle of a bond**, ending ~5–8 px from the receiving
   atom or bond. Lone pairs: two `<circle class="fi" r="1.7">` 6 px apart. Dipoles `δ+`/`δ−` in `tl ta`; charges in
@@ -163,6 +167,9 @@ Writers cannot see their figures. Plan coordinates in Python, then `shot <id>` a
   `W.field` builds a `<label>`: relabel via `el.querySelector('label')`.
 - Axis ranges follow the values; legends off the curves; `W.ticks` with `ny` 3 or 4; checkbox rows as in STYLE.md;
   draw chords, not very short thick canvas arcs.
+- A widget never prints a fact the theory cannot give: name a real colour, value or observation only for the cases
+  FACTS.md or the chapter states (chem-dsplit names colours only for the Cu(II) and Co(II) complexes); otherwise show the trend.
+- Dark mode: `sc` (course colour) and `red` look alike, so never use them for two different things in one plot.
 - Test every mode: read the readout after each control and arrow key (chem-trend once printed 494.0 kJ mol⁻¹ and an
   electronegativity of "3"); for an animation, press the button in a probe and read the result.
 - 3D models (`W.view3d`): start from an asymmetric view (a symmetric projection of a tetrahedron looks like a flat

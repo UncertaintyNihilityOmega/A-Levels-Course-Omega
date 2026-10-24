@@ -435,16 +435,16 @@ In mass terms, \(M_r(\ce{AgCl}) = 107.9 + 35.5 = 143.4\), so about \(1.34 \times
 Units: mol dm⁻³ × (mol dm⁻³)² = mol³ dm⁻⁹. [A1]
 :::
 
-:::eg (Real context) A barium meal, a suspension of barium sulfate, is swallowed so that the digestive tract shows up on an X-ray. Barium ions are poisonous, so the sulfate must be very insoluble. For \(\ce{BaSO4}\), \(K_{sp} = 1.1 \times 10^{-10}\) mol² dm⁻⁶. Calculate the solubility in mol dm⁻³ and in g dm⁻³. [4 marks]
+:::eg (Real context) A barium meal, a suspension of barium sulfate, is swallowed so that the digestive tract shows up on an X-ray. Barium ions are poisonous, so the sulfate must be very insoluble. For \(\ce{BaSO4}\), \(K_{sp} = 1.10 \times 10^{-10}\) mol² dm⁻⁶. Calculate the solubility in mol dm⁻³ and in g dm⁻³. [4 marks]
 \(\ce{BaSO4(s) <=> Ba^2+ + SO4^2-}\), so \(K_{sp} = s^2\). [B1]
-\[s = \sqrt{1.1 \times 10^{-10}} = 1.05 \times 10^{-5}\ \mathrm{mol\,dm^{-3}}\] [M1 A1]
+\[s = \sqrt{1.10 \times 10^{-10}} = 1.05 \times 10^{-5}\ \mathrm{mol\,dm^{-3}}\] [M1 A1]
 \(M_r(\ce{BaSO4}) = 137.3 + 32.1 + 4(16.0) = 233.4\), so the mass is \(1.049 \times 10^{-5} \times 233.4 = 2.45 \times 10^{-3}\) g dm⁻³. [A1]
 Only about 2 mg of barium sulfate dissolves per dm³, which is too little to harm the patient.
 :::
 
-:::eg (Exam style) Magnesium hydroxide, the active ingredient of milk of magnesia (an antacid), has \(K_{sp} = 5.6 \times 10^{-12}\) mol³ dm⁻⁹. Calculate the solubility of \(\ce{Mg(OH)2}\) and the pH of its saturated solution at 298 K. [6 marks]
+:::eg (Exam style) Magnesium hydroxide, the active ingredient of milk of magnesia (an antacid), has \(K_{sp} = 5.60 \times 10^{-12}\) mol³ dm⁻⁹. Calculate the solubility of \(\ce{Mg(OH)2}\) and the pH of its saturated solution at 298 K. [6 marks]
 \(\ce{Mg(OH)2(s) <=> Mg^2+ + 2OH-}\): \([\ce{Mg^2+}] = s\), \([\ce{OH-}] = 2s\). [B1]
-\[K_{sp} = s(2s)^2 = 4s^3\quad\text{so}\quad s = \sqrt[3]{\frac{5.6 \times 10^{-12}}{4}}\] [M1]
+\[K_{sp} = s(2s)^2 = 4s^3\quad\text{so}\quad s = \sqrt[3]{\frac{5.60 \times 10^{-12}}{4}}\] [M1]
 \[s = 1.12 \times 10^{-4}\ \mathrm{mol\,dm^{-3}}\] [A1]
 \([\ce{OH-}] = 2s = 2.237 \times 10^{-4}\) mol dm⁻³. [B1]
 \[[\ce{H+}] = \frac{K_w}{[\ce{OH-}]} = \frac{1.00 \times 10^{-14}}{2.237 \times 10^{-4}} = 4.47 \times 10^{-11}\ \mathrm{mol\,dm^{-3}}\] [M1]
@@ -506,7 +506,7 @@ Shake iodine solution in water with hexane in a separating funnel and the two so
 :::
 
 :::def Partition coefficient, Kpc
-For a solute X that dissolves in two immiscible solvents, \(K_{pc} = \dfrac{[\ce{X}]_{\text{solvent 1}}}{[\ce{X}]_{\text{solvent 2}}}\) at equilibrium, at a stated temperature. The solvent that is on top of the fraction must be stated.
+For a solute X that dissolves in two immiscible solvents, \(K_{pc} = \dfrac{[\ce{X}]_{\text{solvent 1}}}{[\ce{X}]_{\text{solvent 2}}}\) at equilibrium, at a stated temperature, where the two solvents are immiscible (they do not mix). Always say which solvent's concentration is on the top of the fraction.
 :::
 
 A few conditions apply. \(K_{pc}\) is constant at constant temperature. The solute must be in the **same state** in both solvents: it must not dissociate or associate in one of them, or the ratio changes with concentration. And there is no unit if the concentrations are in the same units (a ratio). If asked, state which solvent is on top of the fraction: \(K_{pc}\) for water-over-hexane is the reciprocal of hexane-over-water.
@@ -596,11 +596,11 @@ H: In (b) the common ion is \(\ce{Pb^2+}\): its concentration is 0.0100 mol dm�
 A: (a) \(K_{sp} = [\ce{Pb^2+}][\ce{I-}]^2\) [B1]; \([\ce{I-}] = 2.70 \times 10^{-3}\), \(K_{sp} = (1.35 \times 10^{-3})(2.70 \times 10^{-3})^2 = 9.84 \times 10^{-9}\) mol³ dm⁻⁹ [M1 A1]
 (b) \([\ce{I-}]^2 = K_{sp}/[\ce{Pb^2+}] = 9.84 \times 10^{-9}/0.0100\), so \([\ce{I-}] = 9.92 \times 10^{-4}\) mol dm⁻³ [M1]
 Solubility \(= [\ce{I-}]/2 = 4.96 \times 10^{-4}\) mol dm⁻³ [A1]
-Q: [5 marks] ★★★ A solution contains 0.0200 mol dm⁻³ magnesium ions. Dilute sodium hydroxide is added slowly. Calculate the pH at which magnesium hydroxide first starts to precipitate. \(K_{sp}(\ce{Mg(OH)2}) = 5.6 \times 10^{-12}\) mol³ dm⁻⁹; \(K_w = 1.00 \times 10^{-14}\) mol² dm⁻⁶.
+Q: [5 marks] ★★★ A solution contains 0.0200 mol dm⁻³ magnesium ions. Dilute sodium hydroxide is added slowly. Calculate the pH at which magnesium hydroxide first starts to precipitate. \(K_{sp}(\ce{Mg(OH)2}) = 5.60 \times 10^{-12}\) mol³ dm⁻⁹; \(K_w = 1.00 \times 10^{-14}\) mol² dm⁻⁶.
 H: A precipitate starts when the ionic product just equals \(K_{sp}\).
 H: Find \([\ce{OH-}]\) first, then \([\ce{H+}]\) using \(K_w\).
 A: Precipitation begins when \([\ce{Mg^2+}][\ce{OH-}]^2 = K_{sp}\). [M1]
-\([\ce{OH-}]^2 = 5.6 \times 10^{-12}/0.0200 = 2.8 \times 10^{-10}\) [M1]
+\([\ce{OH-}]^2 = 5.60 \times 10^{-12}/0.0200 = 2.80 \times 10^{-10}\) [M1]
 \([\ce{OH-}] = 1.67 \times 10^{-5}\) mol dm⁻³ [A1]
 \([\ce{H+}] = 1.00 \times 10^{-14}/1.673 \times 10^{-5} = 5.98 \times 10^{-10}\) mol dm⁻³ [M1]
 pH = 9.22 [A1]

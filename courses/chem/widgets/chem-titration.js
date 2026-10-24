@@ -85,7 +85,7 @@
       sel.onchange = () => onchange(sel.value);
       return { sel, el: W.h('label', { class: 'w-ctl' }, W.h('span', { class: 'w-lab', text: label }), sel) };
     }
-    const selAcid = makeSelect('Acid in the flask', [['strong', 'strong (like HCl)'], ['weak', hasPka ? 'weak (set the pKa below)' : 'weak (like ethanoic acid)']], state.aStrong ? 'strong' : 'weak', v => { state.aStrong = v === 'strong'; update(); });
+    const selAcid = makeSelect('Acid in the flask', [['strong', 'strong (like HCl)'], ['weak', hasPka ? 'weak (pKa below)' : 'weak (like ethanoic acid)']], state.aStrong ? 'strong' : 'weak', v => { state.aStrong = v === 'strong'; update(); });
     const selBase = makeSelect('Base in the burette', [['strong', 'strong (like NaOH)'], ['weak', 'weak (like ammonia)']], state.bStrong ? 'strong' : 'weak', v => { state.bStrong = v === 'strong'; update(); });
     const selInd = makeSelect('Indicator', INDICATORS.map(i => [i.id, i.id === 'none' ? 'none' : i.name + ' (' + i.lo + '–' + i.hi + ')']), 'none', v => { state.ind = v; update(); });
 

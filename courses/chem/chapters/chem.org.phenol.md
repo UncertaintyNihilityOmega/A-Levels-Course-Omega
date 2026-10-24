@@ -141,7 +141,7 @@ Replace hydrogen atoms in the \(\ce{CH3}\) group of ethanoic acid with chlorine,
 | Acid | pKa (approximate) |
 |---|---|
 | ethanoic acid, \(\ce{CH3COOH}\) | 4.76 |
-| chloroethanoic acid, \(\ce{CH2ClCOOH}\) | 2.87 |
+| chloroethanoic acid, \(\ce{CH2ClCOOH}\) | 2.86 |
 | dichloroethanoic acid, \(\ce{CHCl2COOH}\) | about 1.3 |
 | trichloroethanoic acid, \(\ce{CCl3COOH}\) | about 0.7 |
 
@@ -153,10 +153,10 @@ Only the order matters for the exam, and it follows from the stability of the ca
 
 Notice that this is the opposite of the alkyl group, which donates electrons and makes an acid weaker: ethanoic acid is weaker than methanoic acid for the same reason that ethanol is weaker than water.
 
-:::eg (Exam style) Chloroethanoic acid has pKa 2.87 and ethanoic acid has pKa 4.76. Calculate by what factor chloroethanoic acid has the larger \(K_a\), and explain why it is the stronger acid.
-\(K_a = 10^{-\mathrm{p}K_a}\), so the ratio is \(\dfrac{K_a(\ce{CH2ClCOOH})}{K_a(\ce{CH3COOH})} = 10^{4.76 - 2.87} = 10^{1.89}\). [M1]
+:::eg (Exam style) Chloroethanoic acid has pKa 2.86 and ethanoic acid has pKa 4.76. Calculate by what factor chloroethanoic acid has the larger \(K_a\), and explain why it is the stronger acid.
+\(K_a = 10^{-\mathrm{p}K_a}\), so the ratio is \(\dfrac{K_a(\ce{CH2ClCOOH})}{K_a(\ce{CH3COOH})} = 10^{4.76 - 2.86} = 10^{1.90}\). [M1]
 
-The ratio is 78, so chloroethanoic acid has a \(K_a\) about 78 times as large. [A1]
+The ratio is 79, so chloroethanoic acid has a \(K_a\) about 79 times as large. [A1]
 
 The electronegative chlorine atom withdraws electron density, spreading the negative charge on the carboxylate ion and stabilising it, so the acid ionises more. [B1]
 :::
@@ -239,6 +239,15 @@ The syllabus asks you to apply this to other phenols. 2-Naphthol has two fused r
 
 :::html
 <figure class="fig small"><svg viewBox="-8 11 300 102" role="img" aria-label="Skeletal formula of 2-naphthol, two fused benzene rings with an OH group on carbon 2 and carbon 1 marked next to it"><path class="ln thick" d="M60 42L84.2 56L84.2 84L60 98L35.8 84L35.8 56Z"/><circle class="ln" cx="60" cy="70" r="17"/><path class="ln thick" d="M108.5 42L132.7 56L132.7 84L108.5 98L84.2 84L84.2 56Z"/><circle class="ln" cx="108.5" cy="70" r="17"/><path class="ln thick" d="M132.7 56L148.3 47"/><text class="tl" x="152.3" y="51">OH</text><text class="tl ta" x="116.5" y="36">1</text><text class="tl" x="178.5" y="74">2-naphthol</text></svg><figcaption>2-Naphthol: two fused rings with OH on carbon 2. The diazonium ion attacks carbon 1, next to the OH group.</figcaption></figure>
+:::
+
+The same reasoning works for any phenol: find the free 2-, 4- and 6-positions relative to each OH group, and remember that the OH group still makes the compound a weak acid.
+
+:::eg (Exam style) Predict the organic product when (a) 4-methylphenol, \(\ce{CH3C6H4OH}\), is shaken with excess bromine water, (b) 2-naphthol is shaken with NaOH(aq), and (c) the solution from (b) is added to benzenediazonium chloride below 10 °C. [5 marks]
+(a) The OH group activates the 2-, 4- and 6-positions, but position 4 already carries the \(\ce{CH3}\) group, so only positions 2 and 6 are substituted. The product is 2,6-dibromo-4-methylphenol. [B1] The bromine water is decolourised. [B1]
+\[\ce{CH3C6H4OH + 2Br2 -> CH3C6H2Br2OH + 2HBr}\] [B1]
+(b) 2-Naphthol is a phenol, so it is acidic enough to react with the alkali: it dissolves as sodium 2-naphthoxide, \(\ce{C10H7ONa}\), and water. [B1]
+(c) The diazonium ion attacks carbon 1, next to the OH group, and an orange-red azo dye forms, \(\ce{C6H5N=NC10H6OH}\). [B1]
 :::
 
 :::key Azo coupling

@@ -104,7 +104,7 @@
       legend.textContent = '';
       legend.appendChild(W.h('span', {}, swatch('var(--sc)'), 'T₁ = ' + state.t1 + ' K'));
       if (state.two) legend.appendChild(W.h('span', {}, swatch('var(--sc2)'), 'T₂ = ' + state.t2 + ' K'));
-      legend.appendChild(W.h('span', {}, swatch('var(--red)'), 'Eₐ' + (state.cat ? ' (solid) and Eₐ with the catalyst (dashed)' : '')));
+      legend.appendChild(W.h('span', {}, swatch('var(--ink-2)'), 'Eₐ' + (state.cat ? ' (solid) and Eₐ with the catalyst (dashed)' : '')));
     }
 
     const cvs = W.canvas(body, {
@@ -156,11 +156,12 @@
           });
           ctx.restore();
           // Ea lines
-          ctx.strokeStyle = col.red; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(X(ea), bot); ctx.lineTo(X(ea), top); ctx.stroke();
-          halo(ctx, col, 'Eₐ', zoom ? X(ea) + 5 : X(ea) - 5, top + (zoom && ec !== null ? 30 : 12), zoom ? 'left' : 'right', col.red);
+          // neutral ink: in dark mode red and the course colour of the T1 curve look alike
+          ctx.strokeStyle = col.ink2; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(X(ea), bot); ctx.lineTo(X(ea), top); ctx.stroke();
+          halo(ctx, col, 'Eₐ', zoom ? X(ea) + 5 : X(ea) - 5, top + (zoom && ec !== null ? 30 : 12), zoom ? 'left' : 'right', col.ink2);
           if (ec !== null) {
             ctx.setLineDash([6, 4]); ctx.beginPath(); ctx.moveTo(X(ec), bot); ctx.lineTo(X(ec), top); ctx.stroke(); ctx.setLineDash([]);
-            halo(ctx, col, 'Eₐ (catalyst)', zoom ? X(ec) + 5 : X(ec) - 5, top + 12, zoom ? 'left' : 'right', col.red);
+            halo(ctx, col, 'Eₐ (catalyst)', zoom ? X(ec) + 5 : X(ec) - 5, top + 12, zoom ? 'left' : 'right', col.ink2);
           }
           return { X, Y };
         }

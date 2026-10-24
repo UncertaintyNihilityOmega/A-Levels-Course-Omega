@@ -67,7 +67,7 @@
     return { M: M, peaks: peaks, nHal: counts.Cl + counts.Br };
   }
 
-  function fmtH(h) { return h >= 100 ? '100' : W.fmt(h, 3); }
+  function fmtH(h) { if (!(h > 0)) return '0'; return h >= 99.95 ? '100' : h.toPrecision(3); }
   function fmtAr(x) { return W.fix(x, 1); }
 
   W.register('chem-ms', function (el, opts) {
@@ -154,9 +154,14 @@
         sc.bars.forEach(b => {
           const x = X(b.mz);
           const y = Y(Math.max(0, b.h));
+          const yt = b.h > 0 ? Math.min(y, padT + ph - (sc.minBar || 1)) : padT + ph;
           ctx.strokeStyle = b.kind === 'iso' ? col.ink3 : col.sc;
           ctx.lineWidth = 4; ctx.lineCap = 'butt';
-          ctx.beginPath(); ctx.moveTo(x, padT + ph); ctx.lineTo(x, Math.min(y, padT + ph - 1)); ctx.stroke();
+          ctx.beginPath(); ctx.moveTo(x, padT + ph); ctx.lineTo(x, yt); ctx.stroke();
+          if (sc.valueLabels && b.h > 0 && perUnit >= 13) {
+            ctx.fillStyle = col.ink2; ctx.font = '10px ' + col.font; ctx.textAlign = 'center';
+            ctx.fillText(fmtH(b.h), x, Math.max(10, yt - 3));
+          }
           ctx.fillStyle = col.ink;
           if (b.kind === 'main' || showAll) {
             ctx.font = '11px ' + col.font; ctx.textAlign = 'center';
@@ -184,7 +189,7 @@
       const cl = cluster(c);
       const main = cl.peaks.filter(x => x.kind === 'main');
       const lo = cl.M - 1.5, hi = cl.M + 2 * cl.nHal + (c.C > 0 ? 2.5 : 1.5);
-      scene = { bars: cl.peaks, xmin: lo, xmax: hi, ymax: 100, ylabel: 'relative abundance / %' };
+      scene = { bars: cl.peaks, xmin: lo, xmax: hi, ymax: 100, ylabel: 'relative abundance / %', minBar: 6, valueLabels: true };
       const f = [];
       ['C', 'H', 'N', 'O', 'Cl', 'Br'].forEach(k => { if (c[k] > 0) f.push(k + (c[k] > 1 ? c[k] : '')); });
       ionRead.set('formula', f.join(''));

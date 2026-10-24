@@ -2,7 +2,8 @@
    Attributes: data-geom="oct" | "tet", data-ion="Cu2+" (Sc3+ Ti3+ V3+ Cr3+ Mn2+ Fe2+ Fe3+ Co2+ Ni2+ Cu2+ Zn2+),
    data-ligand="H2O" | "NH3" | "Cl-" | "CN-".
    The d-electron count is computed from Z and the charge (4s electrons leave first). The gap is a relative scale only
-   ("relative units, not to scale"); the colour words are illustrative and come from the gap alone. */
+   ("relative units, not to scale"). The colour seen is given only for the syllabus Cu(II) and Co(II) complexes (SEEN);
+   otherwise the readout gives the direction of the change in frequency absorbed. */
 (function () {
   'use strict';
 
@@ -33,16 +34,16 @@
     return Math.max(0, Math.min(10, nd));
   }
 
-  // illustrative bands from the relative gap
-  const BANDS = [
-    { max: 0.45, abs: 'infrared (little visible light)', seen: 'pale or colourless in this model' },
-    { max: 1.10, abs: 'red / orange', seen: 'blue / blue-green' },
-    { max: 1.40, abs: 'orange / yellow', seen: 'blue / violet' },
-    { max: 1.80, abs: 'yellow / green', seen: 'violet / red' },
-    { max: 2.30, abs: 'green / blue', seen: 'red / orange' },
-    { max: 99, abs: 'blue / violet', seen: 'orange / yellow' }
-  ];
-  const band = r => BANDS.find(b => r < b.max) || BANDS[BANDS.length - 1];
+  // observed colours only for the syllabus complexes (chem.transition); every other case shows the direction of the change only,
+  // because the real colour depends on the metal ion as well as on the gap
+  const SEEN = {
+    'Cu2+|oct|H2O': 'blue, [Cu(H₂O)₆]²⁺ (it absorbs red and orange light)',
+    'Cu2+|oct|NH3': 'dark blue, [Cu(NH₃)₄(H₂O)₂]²⁺',
+    'Cu2+|tet|Cl-': 'yellow-green, [CuCl₄]²⁻',
+    'Co2+|oct|H2O': 'pink, [Co(H₂O)₆]²⁺',
+    'Co2+|oct|NH3': 'brown, [Co(NH₃)₆]²⁺',
+    'Co2+|tet|Cl-': 'blue, [CoCl₄]²⁻'
+  };
 
   // fill n electrons into k orbitals: singly first, then pair. Returns [{up, down}] per orbital
   function fill(n, k) {
@@ -168,9 +169,9 @@
     cvs.cv.setAttribute('role', 'img');
 
     const read = W.readout([['d', 'd electrons'], ['sets', 'Electrons in lower / higher set'], ['col', 'Coloured?'],
-      ['de', 'Relative ΔE'], ['abs', 'Light absorbed (illustrative)'], ['seen', 'Colour seen (illustrative)']]);
+      ['de', 'Relative ΔE'], ['abs', 'Light absorbed'], ['seen', 'Colour seen']]);
     body.appendChild(read.el);
-    body.appendChild(W.h('div', { class: 'w-note', text: 'Try Cu²⁺ with water, then ammonia, then tetrahedral with chloride, then Zn²⁺. Electrons fill the lower set first. A larger ΔE means higher-frequency light is absorbed. The scale is relative (not to scale), and the colours are illustrative: they come from the gap alone, so they fit copper(II) with water best and show the trend rather than the exact colour of every ion.' }));
+    body.appendChild(W.h('div', { class: 'w-note', text: 'Try Cu²⁺ with water, then ammonia, then tetrahedral with chloride, then the same for Co²⁺, then Zn²⁺. With water, ammonia or chloride the gap is small, so the electrons occupy all five orbitals singly before they pair; with cyanide the gap is large and the lower set fills first. A larger ΔE means higher-frequency light is absorbed. The scale is relative (not to scale). The colour seen is given for the copper(II) and cobalt(II) complexes of the syllabus; for other ions it depends on the metal ion as well as the ligand, so only the direction of the change is shown.' }));
 
     function update() {
       const z = ion[1], q = ion[2];
@@ -178,8 +179,19 @@
       const oct = geom === 'oct';
       const nL = oct ? 3 : 2, nU = oct ? 2 : 3;
       const free = fill(d, 5);
-      const low = fill(d, nL);
-      const up = fill(Math.max(0, d - 2 * nL), nU);
+      // small gap (H2O, NH3, Cl-, every tetrahedral complex): one electron in each of the five orbitals before any pairs up;
+      // large gap (octahedral with CN-): the lower set fills first
+      const spread = !(oct && lig.key === 'CN-');
+      let low, up;
+      if (spread) {
+        low = fill(0, nL); up = fill(0, nU);
+        const all = low.orbs.concat(up.orbs);
+        for (let e = 0; e < d; e++) { if (e < 5) all[e].up = true; else all[e - 5].down = true; }
+      } else {
+        low = fill(d, nL);
+        up = fill(Math.max(0, d - 2 * nL), nU);
+      }
+      const count = s => s.orbs.reduce((a, o) => a + (o.up ? 1 : 0) + (o.down ? 1 : 0), 0);
       // promotion: from the highest-numbered occupied orbital of the lower set to the first upper orbital with a free place
       let promo = null;
       if (d > 0 && d < 10) {
@@ -193,15 +205,17 @@
       const rel = lig.rel * (oct ? 1 : TET);
       const coloured = d > 0 && d < 10;
       model = { nU, nL, free, low, up, promo: coloured ? promo : null, rel };
-      const lowN = Math.min(d, 2 * nL), upN = Math.max(0, d - 2 * nL);
-      const b = band(rel);
+      const lowN = count(low), upN = count(up);
+      const seen = SEEN[ionKey(ion) + '|' + geom + '|' + lig.key];
+      const dir = rel > 1.001 ? 'higher frequency than octahedral with water (larger ΔE)'
+        : (rel < 0.999 ? 'lower frequency than octahedral with water (smaller ΔE)' : 'the reference case: octahedral with water');
       title.textContent = ionLabel(ion) + ' with ' + lig.label.split(' ')[0] + ', ' + (oct ? 'octahedral' : 'tetrahedral');
       read.set('d', String(d));
       read.set('sets', lowN + ' / ' + upN);
       read.set('col', coloured ? 'yes (a partly filled d sub-shell lets an electron be promoted)' : (d === 0 ? 'no (d⁰: no d electrons to promote)' : 'no (d¹⁰: no vacant place in the higher set)'));
       read.set('de', rel.toFixed(2) + ' (relative units, not to scale)');
-      read.set('abs', coloured ? b.abs : 'none in the visible');
-      read.set('seen', coloured ? b.seen : 'colourless');
+      read.set('abs', coloured ? dir : 'none in the visible');
+      read.set('seen', coloured ? (seen || 'not shown: it depends on the metal ion as well as on ΔE') : 'colourless');
       cvs.cv.setAttribute('aria-label', 'Energy level diagram for ' + title.textContent + ': ' + d + ' d electrons; ' + (coloured ? 'an electron can be promoted across the gap' : 'no electron can be promoted') + '.');
       selG.value = geom; selI.value = String(IONS.indexOf(ion)); selL.value = String(LIGANDS.indexOf(lig));
       err.textContent = msgs.join(' ');
