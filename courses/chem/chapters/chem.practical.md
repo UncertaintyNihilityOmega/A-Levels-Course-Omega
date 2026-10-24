@@ -301,7 +301,7 @@ Add a few drops of aqueous sodium hydroxide, then excess. In a second tube add a
 | \(\ce{Mn^2+}\) | off-white ppt., rapidly turning brown on contact with air, insoluble in excess | the same as with NaOH(aq) |
 | \(\ce{Zn^2+}\) | white ppt., soluble in excess | white ppt., soluble in excess |
 
-Look for pairs that the first test cannot tell apart and use the second test. \(\ce{Al^3+}\) and \(\ce{Zn^2+}\) both give a white precipitate that dissolves in excess NaOH(aq), but only the zinc precipitate dissolves in excess NH₃(aq). \(\ce{Mg^2+}\) and \(\ce{Ca^2+}\) both give a white precipitate with NaOH(aq), but only magnesium gives one with NH₃(aq). For why precipitates dissolve in excess (complex ions) see [Transition elements](#chem.transition).
+Look for pairs that the first test cannot tell apart and use the second test. \(\ce{Al^3+}\) and \(\ce{Zn^2+}\) both give a white precipitate that dissolves in excess NaOH(aq), but only the zinc precipitate dissolves in excess NH₃(aq). \(\ce{Mg^2+}\) and \(\ce{Ca^2+}\) both give a white precipitate with NaOH(aq), but only magnesium gives one with NH₃(aq). \(\ce{Ba^2+}\) and \(\ce{Ca^2+}\) cannot be told apart reliably by these two tests: both give a white precipitate with NaOH(aq) (faint for barium) and none with NH₃(aq). The sulfate test in the anion table below helps, used the other way round: add dilute sulfuric acid, and a white precipitate forms with \(\ce{Ba^2+}\), but with \(\ce{Ca^2+}\) only when its concentration is high. For why precipitates dissolve in excess (complex ions) see [Transition elements](#chem.transition).
 
 ### Anions and gases
 
@@ -334,7 +334,7 @@ Iodine, \(\ce{I2}\), gives a **blue-black** colour with starch.
 |---|---|---|
 | Fehling's solution, warm | orange or red precipitate | an aldehyde |
 | Tollens' reagent, warm | silver mirror or black precipitate | an aldehyde |
-| alkaline aqueous iodine | yellow precipitate | \(\ce{CH3CO-}\) or \(\ce{CH3CH(OH)-}\) |
+| alkaline aqueous iodine | yellow precipitate | \(\ce{CH3CO}\)– or \(\ce{CH3CH(OH)}\)– |
 | acidified \(\ce{KMnO4}\)(aq), warm | purple to colourless | a compound that can be oxidised (such as an alcohol or aldehyde) |
 
 These are explained in [Aldehydes and ketones](#chem.org.carbonyl) and [Alcohols](#chem.org.alcohols).

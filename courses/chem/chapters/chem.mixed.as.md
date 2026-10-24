@@ -266,7 +266,7 @@ Q: [6 marks] ★★ (#chem.org.synthesis) Devise a three-step synthesis of butan
 A: Step 1: \(\ce{PCl5}\) (or \(\ce{SOCl2}\), or \(\ce{PCl3}\) and heat) [B1], giving 1-chloropropane [B1]
 Step 2: KCN in ethanol, heat [B1], giving butanenitrile [B1]
 Step 3: heat under reflux with dilute hydrochloric acid (or with dilute NaOH(aq), then acidify) [B1], giving butanoic acid [B1]
-Q: [11 marks] ★★★ (#chem.analysis) Compound Z contains only carbon, hydrogen and oxygen: 54.5% C, 9.1% H and 36.4% O by mass. In its mass spectrum the molecular ion peak is at m/z 88, the peak at m/z 89 is 4.4% of the height of the molecular ion peak, and the base peak is at m/z 43. Its infrared spectrum has strong absorptions at 1740 and 1240 cm⁻¹, and no absorption between 2500 and 3600 cm⁻¹. (a) Calculate the empirical formula. (b) Deduce the molecular formula. (c) Show that the m/z 89 peak agrees with your molecular formula. (d) Use the infrared data to name the functional group present and to rule out others. (e) The m/z 43 peak is the ion \(\ce{CH3CO+}\). Suggest the structure of Z.
+Q: [11 marks] ★★★ (#chem.analysis) Compound Z contains only carbon, hydrogen and oxygen: 54.5% C, 9.1% H and 36.4% O by mass. In its mass spectrum the molecular ion peak is at m/z 88, the peak at m/z 89 is 4.4% of the height of the molecular ion peak, and the base peak is at m/z 43. Its infrared spectrum has strong absorptions at 1740 and 1240 cm⁻¹, and between 2500 and 3600 cm⁻¹ only the C–H absorption near 2900 cm⁻¹. (a) Calculate the empirical formula. (b) Deduce the molecular formula. (c) Show that the m/z 89 peak agrees with your molecular formula. (d) Use the infrared data to name the functional group present and to rule out others. (e) The m/z 43 peak is the ion \(\ce{CH3CO+}\). Suggest the structure of Z.
 H: For (a) divide each percentage by the relative atomic mass, then divide by the smallest answer.
 H: For (c) the number of carbon atoms is 100 × abundance of M+1 / (1.1 × abundance of M⁺).
 H: Look at the Data booklet ranges for C=O, C–O and O–H.
@@ -280,8 +280,8 @@ Empirical formula \(\ce{C2H4O}\) [A1]
 Q: [6 marks] ★★ (#chem.group2) 2.00 g of impure limestone (mainly \(\ce{CaCO3}\)) was heated strongly until it stopped losing mass. It gave 0.390 dm³ of carbon dioxide at room conditions. The impurities do not give off gas. (a) Write the equation. (b) Calculate the percentage by mass of \(\ce{CaCO3}\) in the limestone. (c) The solid residue is added to water. Write an equation and state whether the solution is acidic or alkaline.
 A: (a) \(\ce{CaCO3(s) -> CaO(s) + CO2(g)}\) [B1]
 (b) \(n(\ce{CO2}) = 0.390/24.0 = 0.01625\) mol, which is also \(n(\ce{CaCO3})\) [M1]
-\(m(\ce{CaCO3}) = 0.01625 \times 100.1 = 1.63\) g [M1]
-Percentage \(= 1.63/2.00 \times 100 = 81.3\%\) [A1]
+\(m(\ce{CaCO3}) = 0.01625 \times 100.1 = 1.627\) g [M1]
+Percentage \(= 1.627/2.00 \times 100 = 81.3\%\) [A1] (rounding the mass to 1.63 g first gives 81.5%, also accepted)
 (c) \(\ce{CaO + H2O -> Ca(OH)2}\) [B1]; the solution is alkaline. [B1]
 Q: [5 marks] ★★★ (#chem.org.hydrocarbons) A section of an addition polymer is –CH₂–CH(CH₃)–CH₂–CH(CH₃)–CH₂–CH(CH₃)–. (a) Draw or write the repeat unit and give the name and structure of the monomer. (b) Explain why this is addition polymerisation. (c) State two problems with the disposal of poly(chloroethene) (PVC).
 A: (a) Repeat unit –CH₂–CH(CH₃)– [B1]; the monomer is propene, \(\ce{CH2=CHCH3}\). [B1]

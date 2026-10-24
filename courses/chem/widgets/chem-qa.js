@@ -3,12 +3,13 @@
    Explore: pick an ion (optionally a second one to compare) and read the results of every test.
    Test: an unknown cation solution and an unknown anion solution; apply tests one at a time, then answer.
    Observations are never invented: where the notes give no result, the tool says so. For cations an unlisted result is "not listed"
-   (the notes give "–" or nothing); for anions the notes list only the positive tests, so no listed result is shown as "no change". */
+   (the notes give "–" or nothing); for anions the notes list only the positive tests, so an unlisted result is "no change" only where
+   nothing happens in the laboratory, and "no result listed" where a reaction does happen that the notes do not describe. */
 (function () {
   'use strict';
 
   const NOTLISTED = 'no result listed in the notes';
-  const NOCHANGE = 'no change (not a result listed for this ion)';
+  const NOCHANGE = 'no change';
 
   const CTESTS = ['NaOH(aq), a few drops', 'NaOH(aq), then excess', 'NaOH(aq), warm gently', 'NH₃(aq), a few drops', 'NH₃(aq), then excess'];
   // [text, key] per test, null = not listed
@@ -28,17 +29,20 @@
 
   const ATESTS = ['dilute acid', 'Ag⁺(aq) (after acidifying with dilute nitric acid)', 'NH₃(aq) added to that silver precipitate', 'Ba²⁺(aq)',
     'excess dilute strong acid added to that barium precipitate', 'OH⁻(aq) and aluminium foil, warm', 'acidified KMnO₄(aq)', 'Ca²⁺(aq) at a high concentration'];
+  // A test missing from an anion's object gives "no change" (true in the laboratory); null marks a test where a reaction does
+  // happen (e.g. BaCO₃ precipitates, SO₂ leaves sulfite with acid, I⁻ and S₂O₃²⁻ decolourise KMnO₄) but the notes list no result.
   const ANIONS = [
-    ['CO₃²⁻', { 0: ['CO₂ liberated', 'co2'] }],
+    ['CO₃²⁻', { 0: ['CO₂ liberated', 'co2'], 3: null, 4: null, 6: ['effervescence (CO₂ from the acid), but the purple colour stays', 'fizz'], 7: null }],
     ['Cl⁻', { 1: ['white ppt.', 'white'], 2: ['ppt. soluble in NH₃(aq)', 'sol'] }],
-    ['Br⁻', { 1: ['cream or off-white ppt.', 'cream'], 2: ['ppt. partially soluble in NH₃(aq)', 'part'] }],
-    ['I⁻', { 1: ['pale yellow ppt.', 'yellow'], 2: ['ppt. insoluble in NH₃(aq)', 'insol'] }],
+    ['Br⁻', { 1: ['cream or off-white ppt.', 'cream'], 2: ['ppt. partially soluble in NH₃(aq)', 'part'], 6: null }],
+    ['I⁻', { 1: ['pale yellow ppt.', 'yellow'], 2: ['ppt. insoluble in NH₃(aq)', 'insol'], 6: null }],
     ['NO₃⁻', { 5: ['NH₃ liberated', 'nh3'] }],
-    ['NO₂⁻', { 5: ['NH₃ liberated', 'nh3'], 6: ['decolourises acidified KMnO₄(aq)', 'decol'] }],
+    ['NO₂⁻', { 0: null, 1: null, 2: null, 5: ['NH₃ liberated', 'nh3'], 6: ['decolourises acidified KMnO₄(aq)', 'decol'] }],
     ['SO₄²⁻', { 3: ['white ppt.', 'white'], 4: ['ppt. insoluble in excess dilute strong acids', 'insol'], 7: ['white ppt.', 'white'] }],
-    ['SO₃²⁻', { 3: ['white ppt.', 'white'], 4: ['ppt. soluble in excess dilute strong acids', 'sol'], 6: ['decolourises acidified KMnO₄(aq)', 'decol'] }],
-    ['S₂O₃²⁻', { 0: ['off-white or pale yellow ppt. forms slowly with H⁺', 'slow'] }]
+    ['SO₃²⁻', { 0: ['no precipitate; on warming a gas is given off (sulfur dioxide, which decolourises acidified KMnO₄(aq))', 'so2'], 1: null, 2: null, 3: ['white ppt.', 'white'], 4: ['ppt. soluble in excess dilute strong acids', 'sol'], 6: ['decolourises acidified KMnO₄(aq)', 'decol'], 7: null }],
+    ['S₂O₃²⁻', { 0: ['off-white or pale yellow ppt. forms slowly with H⁺', 'slow'], 1: null, 2: null, 3: null, 4: null, 6: null }]
   ];
+  const NEG = { 5: 'no ammonia given off: damp red litmus paper stays red' };
   const GASES = [['NH₃', 'turns damp red litmus paper blue'], ['CO₂', 'gives a white precipitate with limewater'], ['H₂', '"pops" with a lighted splint'], ['O₂', 'relights a glowing splint'],
     ['I₂ (an element)', 'blue-black with starch']];
 
@@ -49,7 +53,8 @@
       return r ? { t: r[0], k: r[1], listed: true } : { t: NOTLISTED, k: 'none', listed: false };
     }
     const r = ion[1][i];
-    return r ? { t: r[0], k: r[1], listed: true } : { t: NOCHANGE, k: 'none', listed: true };
+    if (r === null) return { t: NOTLISTED, k: 'nl', listed: false };
+    return r ? { t: r[0], k: r[1], listed: true } : { t: NEG[i] || NOCHANGE, k: 'none', listed: true };
   }
   function ntests(kind) { return kind === 'c' ? CTESTS.length : ATESTS.length; }
   function tests(kind) { return kind === 'c' ? CTESTS : ATESTS; }

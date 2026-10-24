@@ -123,6 +123,8 @@ Mr_cc = Ca + C + 3 * O
 eq("6.3 Mr", Mr_cc, 100.1)
 eq("6.3 mass", sf(n_co2 * Mr_cc), 1.63)
 eq("6.3 pct", sf(n_co2 * Mr_cc / 2.00 * 100), 81.3)
+eq("6.3 mass 4 s.f.", round(n_co2 * Mr_cc, 3), 1.627)
+eq("6.3 pct from rounded mass", sf(1.63 / 2.00 * 100), 81.5)
 eq("6.6 C3H7", 3 * 12 + 7, 43)
 eq("6.6 M", 43 + 79, 122)
 eq("6.7 broken", 610 + 460, 1070)

@@ -206,7 +206,7 @@ Q: [1 mark] (#chem.equilibria) 0.100 mol of \(\ce{N2O4}\) is placed in a closed 
 
 **D** 50.0 mol⁻¹ dm³
 
-A: **B**. \(\ce{N2O4}\) used = 0.0400/2 = 0.0200 mol dm⁻³, so \([\ce{N2O4}]\) at equilibrium = 0.0800. \(K_c = (0.0400)^2/0.0800 = 0.0200\) mol dm⁻³. A uses the initial 0.100 instead of the equilibrium value. C multiplies by the coefficient 2 instead of squaring. D is the inverted expression.
+A: **B**. \(\ce{N2O4}\) used = 0.0400/2 = 0.0200 mol dm⁻³, so \([\ce{N2O4}]\) at equilibrium = 0.0800. \(K_c = (0.0400)^2/0.0800 = 0.0200\) mol dm⁻³. A uses the initial 0.100 instead of the equilibrium value. C multiplies by the coefficient 2 as well as squaring: \(2 \times (0.0400)^2/0.0800\). D is the inverted expression.
 :::
 
 :::try
@@ -508,7 +508,7 @@ Q: [1 mark] (#chem.org.carbonyl) Which compound does **not** give a yellow preci
 
 **D** propanal
 
-A: **D**. The test needs a \(\ce{CH3CO-}\) group or a \(\ce{CH3CH(OH)-}\) group. Ethanal and propanone contain \(\ce{CH3CO-}\); propan-2-ol contains \(\ce{CH3CH(OH)-}\). Propanal, \(\ce{CH3CH2CHO}\), has neither.
+A: **D**. The test needs a \(\ce{CH3CO}\)– group or a \(\ce{CH3CH(OH)}\)– group. Ethanal and propanone contain \(\ce{CH3CO}\)–; propan-2-ol contains \(\ce{CH3CH(OH)}\)–. Propanal, \(\ce{CH3CH2CHO}\), has neither.
 :::
 
 :::try
@@ -598,5 +598,5 @@ Q: [1 mark] (#chem.analysis) In the mass spectrum of a hydrocarbon the molecular
 
 **D** 18
 
-A: **B**. \(n = 100 \times 1.76/(1.1 \times 32.0) = 5.0\), so five carbon atoms. C comes from leaving out the 1.1 factor (5.5, rounded up). D inverts the ratio of the peaks.
+A: **B**. \(n = 100 \times 1.76/(1.1 \times 32.0) = 5.0\), so five carbon atoms. C comes from leaving out the 1.1 factor (5.5, rounded up). D divides the M abundance by the [M+1] abundance (32.0/1.76 = 18.2), the ratio upside down.
 :::

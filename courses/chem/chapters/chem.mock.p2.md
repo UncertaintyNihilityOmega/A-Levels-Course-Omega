@@ -160,7 +160,7 @@ Compound W has the molecular formula \(\ce{C_xH_yO}\). Its properties are:
 
 - the mass spectrum has a molecular ion peak at m/z 72 (relative abundance 100) and a peak at m/z 73 (relative abundance 4.4)
 - the mass spectrum also has peaks at m/z 57 and m/z 43
-- the infrared spectrum has a strong absorption at 1700 cm⁻¹ and no absorption between 2500 and 3600 cm⁻¹ or between 1040 and 1300 cm⁻¹
+- the infrared spectrum has a strong absorption at 1700 cm⁻¹ and C–H absorptions at 2850–2950 cm⁻¹, but no other absorption between 2500 and 3600 cm⁻¹
 - it does not react with Fehling's solution
 
 (a) Use the peak at m/z 73 to calculate the number of carbon atoms in one molecule of W. (2 marks)
@@ -178,8 +178,8 @@ A: (a) number of carbon atoms \(= 100 \times 4.4/(1.1 \times 100)\) [M1] \(= 4\)
 \(\ce{C4H8O}\) [A1]
 
 (c) the absorption at 1700 cm⁻¹ is a C=O bond (carbonyl, 1670–1740 cm⁻¹) [B1]
-there is no broad absorption between 2500 and 3600 cm⁻¹, so no O–H bond: W is not a carboxylic acid or an alcohol [B1]
-1700 cm⁻¹ is below the ester range (1710–1750 cm⁻¹) and there is no C–O absorption (1040–1300 cm⁻¹), so W is not an ester: it is an aldehyde or a ketone [B1]
+there is no broad O–H absorption (2500–3000 or 3200–3600 cm⁻¹), so W is not a carboxylic acid or an alcohol [B1]
+W has only one oxygen atom, so it cannot be an ester (which needs two, and whose C=O range 1710–1750 cm⁻¹ does not include 1700 cm⁻¹): W is an aldehyde or a ketone [B1]
 
 (d) it does not react with Fehling's solution, so it is a ketone and not an aldehyde [B1]
 the peak at m/z 57 is \(\ce{CH3CH2CO+}\) and the peak at m/z 43 is \(\ce{CH3CO+}\), so W is butanone, \(\ce{CH3COCH2CH3}\) [B1]

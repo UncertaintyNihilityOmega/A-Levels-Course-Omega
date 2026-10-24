@@ -65,8 +65,9 @@ eq("c13 x175", round(296 - 175 * sx, 1), 76.5)
 eq("c13 x52", round(296 - 52 * sx, 1), 230.8)
 # shifts inside Data booklet ranges
 def inside(v, lo, hi): assert lo <= v <= hi, (v, lo, hi)
-inside(175, 160, 185); inside(52, 50, 70); inside(27, 0, 50); inside(9, 0, 50)
-inside(209, 190, 220); inside(30, 0, 50); inside(37, 30, 65); inside(8, 0, 50)
+eq("c13 x31", round(296 - 31 * sx, 1), 257.1)
+inside(175, 160, 185); inside(52, 50, 70); inside(31, 30, 65); inside(9, 0, 50)   # CH2 next to C=O: 30-65
+inside(209, 190, 220); inside(30, 30, 65); inside(37, 30, 65); inside(8, 0, 50)
 
 # --- 1H
 eq("integration ratio", 12.0 / 4.0, 3); eq("integration ratio2", 8.0 / 4.0, 2)

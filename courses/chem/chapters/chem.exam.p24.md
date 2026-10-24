@@ -185,7 +185,7 @@ Step 3: link the factors to the energy. The electrostatic attraction between the
 
 ## Practical-style questions in Papers 2 and 4
 
-Paper 2 and Paper 4 are written papers, but they include questions about experiments, because practical skills are part of the assessment objectives. Expect to:
+Paper 2 and Paper 4 test AO1 and AO2 only (AO3, experimental skills, belongs to Papers 3 and 5), but many of their questions are set around experiments: test results to describe, data to process, a method to comment on. Expect to:
 
 - **describe a test and its observation**, such as the reagent and the colour of a precipitate for a halide ion, or the colour change when an alcohol is oxidised (see [Practical skills and qualitative analysis](#chem.practical)). Give the reagent, the condition and the observation in the syllabus's own words.
 - **use data from an experiment**: a titration result, a temperature change, a mass loss. Show the working with units; titre readings are to the nearest 0.05 cm³ and concordant results are within 0.10 cm³.

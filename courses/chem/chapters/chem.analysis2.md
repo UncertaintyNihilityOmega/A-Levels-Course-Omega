@@ -12,7 +12,7 @@ Almost every new medicine, food additive and forensic sample passes through two 
 **Before you start**, you should know how to read an infrared spectrum and a mass spectrum from [Infrared spectroscopy and mass spectrometry](#chem.analysis), the intermolecular forces from [Shapes of molecules and intermolecular forces](#chem.shapes), and how organic formulas are written from [Introduction to organic chemistry](#chem.org.intro).
 
 :::try Warm-up
-Q: A compound's IR spectrum has a strong, sharp absorption at 1715 cm⁻¹ and nothing between 2500 and 3600 cm⁻¹. What can you say about it? (from [Infrared spectroscopy and mass spectrometry](#chem.analysis))
+Q: A compound's IR spectrum has a strong, sharp absorption at 1715 cm⁻¹ and, between 2500 and 3600 cm⁻¹, only the C–H absorption near 2900 cm⁻¹. What can you say about it? (from [Infrared spectroscopy and mass spectrometry](#chem.analysis))
 A: The 1715 cm⁻¹ absorption is a C=O bond (carbonyl range 1670–1740). With no O–H absorption, it is not an alcohol or a carboxylic acid: it is a carbonyl compound such as an aldehyde, ketone or ester.
 Q: What is the strongest type of intermolecular force between propanone molecules? (from [Shapes of molecules and intermolecular forces](#chem.shapes))
 A: Permanent dipole–dipole forces. The C=O bond is polar, but propanone has no H bonded to O, so it cannot form hydrogen bonds with itself.
@@ -56,7 +56,7 @@ In TLC the stationary phase is a thin layer of a solid powder, such as **silica*
 :::
 
 :::html
-<figure class="fig small"><svg viewBox="0 0 340 262" role="img" aria-label="A TLC plate standing in solvent. Three lanes labelled X, mixture and Y. Spot X is 4.5 cm above the baseline, spot Y is lower, and the mixture lane shows both. The solvent front is 7.5 cm above the baseline."><path class="ln thick" d="M120 26L250 26L250 246L120 246Z"/><rect class="fa" x="114" y="222" width="142" height="30"/><path class="ln-m thin dash" d="M120 200L250 200"/><path class="ln-m thin dash" d="M120 50L250 50"/><ellipse class="fm2" cx="145" cy="110" rx="8" ry="5"/><circle class="fi" cx="145" cy="200" r="1.8"/><ellipse class="fm2" cx="185" cy="110" rx="8" ry="5"/><ellipse class="fm2" cx="185" cy="146" rx="8" ry="5"/><circle class="fi" cx="185" cy="200" r="1.8"/><ellipse class="fm2" cx="225" cy="146" rx="8" ry="5"/><circle class="fi" cx="225" cy="200" r="1.8"/><text class="tl tc" x="145" y="18">X</text><text class="tl tc" x="185" y="18">mixture</text><text class="tl tc" x="225" y="18">Y</text><text class="tl" x="110" y="54" text-anchor="end">solvent front</text><text class="tl" x="110" y="204" text-anchor="end">pencil baseline</text><text class="tl" x="110" y="238" text-anchor="end">solvent level</text><path class="ln-m thin dash" d="M250 110L282 110"/><path class="ln" d="M282 200L282 114" marker-end="url(#ah)"/><path class="ln-m thin dash" d="M250 50L312 50"/><path class="ln" d="M312 200L312 54" marker-end="url(#ah)"/><text class="tl halo tc" x="282" y="168">4.5 cm</text><text class="tl halo tc" x="312" y="124">7.5 cm</text></svg><figcaption>A developed TLC plate. The small dots on the baseline show where the three samples were placed. The mixture has separated into two spots, which match the standards X and Y. Distances are measured from the baseline to the solvent front and to the centre of each spot.</figcaption></figure>
+<figure class="fig small"><svg viewBox="0 0 340 262" role="img" aria-label="A TLC plate standing in solvent. Three lanes labelled X, mixture and Y. Spot X is 4.5 cm above the baseline, spot Y is lower, and the mixture lane shows both. The solvent front is 7.5 cm above the baseline."><path class="ln thick" d="M120 26L250 26L250 246L120 246Z"/><rect class="fa" x="114" y="222" width="142" height="30"/><path class="ln-m thin dash" d="M120 200L250 200"/><path class="ln-m thin dash" d="M120 50L250 50"/><ellipse class="fm2" cx="145" cy="110" rx="8" ry="5"/><circle class="fi" cx="145" cy="200" r="1.8"/><ellipse class="fm2" cx="185" cy="110" rx="8" ry="5"/><ellipse class="fm2" cx="185" cy="146" rx="8" ry="5"/><circle class="fi" cx="185" cy="200" r="1.8"/><ellipse class="fm2" cx="225" cy="146" rx="8" ry="5"/><circle class="fi" cx="225" cy="200" r="1.8"/><text class="tl tc" x="145" y="18">X</text><text class="tl tc" x="185" y="18">mixture</text><text class="tl tc" x="225" y="18">Y</text><text class="tl" x="110" y="54" text-anchor="end">solvent front</text><text class="tl" x="110" y="204" text-anchor="end">pencil baseline</text><text class="tl" x="110" y="238" text-anchor="end">solvent level</text><path class="ln-m thin dash" d="M250 110L282 110"/><path class="ln" d="M282 200L282 114" marker-end="url(#ah)"/><path class="ln-m thin dash" d="M250 50L312 50"/><path class="ln" d="M312 200L312 54" marker-end="url(#ah)"/><text class="tl tc" x="297" y="152">4.5</text><text class="tl tc" x="297" y="167">cm</text><text class="tl tc" x="327" y="120">7.5</text><text class="tl tc" x="327" y="135">cm</text></svg><figcaption>A developed TLC plate. The small dots on the baseline show where the three samples were placed. The mixture has separated into two spots, which match the standards X and Y. Distances are measured from the baseline to the solvent front and to the centre of each spot.</figcaption></figure>
 :::
 
 ### Making colourless spots visible
@@ -244,7 +244,7 @@ The shift of each line tells you what kind of carbon it is. These ranges are in 
 The ranges overlap, so a shift narrows the possibilities and does not always name the group. The big gaps do help: a line near 200 ppm can only be an aldehyde or ketone C=O, one near 170 ppm an acid or ester, and a line from 110 to 160 ppm comes from a C=C or a benzene ring.
 
 :::html
-<figure class="fig small"><svg viewBox="0 0 322 176" role="img" aria-label="A sketch of the 13C NMR spectrum of methyl propanoate with four single lines at 175, 52, 27 and 9 ppm, on a scale from 220 on the left to 0 on the right"><path class="ax" d="M14 130H310"/><path class="ln-m thin" d="M45.1 130L45.1 134"/><text class="ts tc" x="45.1" y="147">200</text><path class="ln-m thin" d="M107.8 130L107.8 134"/><text class="ts tc" x="107.8" y="147">150</text><path class="ln-m thin" d="M170.5 130L170.5 134"/><text class="ts tc" x="170.5" y="147">100</text><path class="ln-m thin" d="M233.3 130L233.3 134"/><text class="ts tc" x="233.3" y="147">50</text><path class="ln-m thin" d="M296 130L296 134"/><text class="ts tc" x="296" y="147">0</text><text class="tl tc" x="158" y="168">δ / ppm</text><path class="c1 sw3" d="M76.5 130L76.5 88"/><path class="c1 sw3" d="M230.8 130L230.8 30"/><path class="c1 sw3" d="M262.1 130L262.1 56"/><path class="c1 sw3" d="M284.7 130L284.7 82"/><text class="tl tc" x="76.5" y="81">175 C=O</text><text class="tl tc" x="230.8" y="23">52 OCH₃</text><text class="tl tc" x="262.1" y="49">27 CH₂</text><text class="tl tc" x="284.7" y="75">9 CH₃</text></svg><figcaption>A sketch of the ¹³C NMR spectrum of methyl propanoate. The scale runs from high δ on the left to low δ on the right. Four carbon environments give four lines: the ester C=O is in the 160–185 range, the OCH₃ carbon in the 50–70 range, and the two alkyl carbons in the 0–50 range. Line heights are not used in this course.</figcaption></figure>
+<figure class="fig small"><svg viewBox="0 0 322 176" role="img" aria-label="A sketch of the 13C NMR spectrum of methyl propanoate with four single lines at 175, 52, 31 and 9 ppm, on a scale from 220 on the left to 0 on the right"><path class="ax" d="M14 130H310"/><path class="ln-m thin" d="M45.1 130L45.1 134"/><text class="ts tc" x="45.1" y="147">200</text><path class="ln-m thin" d="M107.8 130L107.8 134"/><text class="ts tc" x="107.8" y="147">150</text><path class="ln-m thin" d="M170.5 130L170.5 134"/><text class="ts tc" x="170.5" y="147">100</text><path class="ln-m thin" d="M233.3 130L233.3 134"/><text class="ts tc" x="233.3" y="147">50</text><path class="ln-m thin" d="M296 130L296 134"/><text class="ts tc" x="296" y="147">0</text><text class="tl tc" x="158" y="168">δ / ppm</text><path class="c1 sw3" d="M76.5 130L76.5 88"/><path class="c1 sw3" d="M230.8 130L230.8 30"/><path class="c1 sw3" d="M257.1 130L257.1 56"/><path class="c1 sw3" d="M284.7 130L284.7 82"/><text class="tl tc" x="76.5" y="81">175 C=O</text><text class="tl tc" x="230.8" y="23">52 OCH₃</text><text class="tl tc" x="257.1" y="49">31 CH₂</text><text class="tl tc" x="284.7" y="75">9 CH₃</text></svg><figcaption>A sketch of the ¹³C NMR spectrum of methyl propanoate. The scale runs from high δ on the left to low δ on the right. Four carbon environments give four lines: the ester C=O is in the 160–185 range, the OCH₃ carbon in the 50–70 range, the CH₂ next to the C=O in the 30–65 range, and the end CH₃ in the 0–50 range. The shifts are chosen inside the Data booklet range for each kind of carbon; a real spectrum can differ by a few ppm. Line heights are not used in this course.</figcaption></figure>
 :::
 
 :::eg How many peaks are there in the ¹³C NMR spectrum of each of the four alcohols of formula \(\ce{C4H10O}\)? Butan-1-ol, butan-2-ol, 2-methylpropan-1-ol and 2-methylpropan-2-ol.
@@ -287,7 +287,7 @@ The same electron rule applies: hydrogens next to electronegative atoms or group
 
 | Type of hydrogen | δ / ppm |
 |---|---|
-| alkane \(\ce{-CH3}\), \(\ce{-CH2-}\), \(\ce{>CH-}\) | 0.9–1.7 |
+| alkane \(\ce{-CH3}\), \(\ce{-CH2-}\), >\(\ce{CH}\)– | 0.9–1.7 |
 | alkyl next to C=O | 2.2–3.0 |
 | alkyl next to an aromatic ring | 2.3–3.0 |
 | alkyl next to an electronegative atom (\(\ce{CH3-O}\), \(\ce{-CH2-O}\), \(\ce{-CH2-Cl}\)) | 3.2–4.0 |
@@ -338,7 +338,7 @@ The heights follow Pascal's triangle, where each number is the sum of the two ab
 
 Four rules decide which hydrogens split which signals.
 
-- **Only hydrogens on adjacent carbon atoms split a signal.** Hydrogens on the same carbon do not split each other. A \(\ce{CH3}\) group with no hydrogen on the next carbon (such as \(\ce{CH3-C=O}\) or \(\ce{CH3-O-}\)) is a singlet.
+- **Only hydrogens on adjacent carbon atoms split a signal.** Hydrogens on the same carbon do not split each other. A \(\ce{CH3}\) group with no hydrogen on the next carbon (such as \(\ce{CH3-C=O}\) or \(\ce{CH3-O}\)–) is a singlet.
 - **Equivalent hydrogens do not split each other.** The three hydrogens of one \(\ce{CH3}\) group give a single signal, not a multiplet.
 - **A group that sits between two others splits both ways.** Add up the hydrogens on both neighbours, if they are equivalent or look alike. In \(\ce{CH3CH2CH2OH}\) the middle \(\ce{CH2}\) has 3 + 2 = 5 neighbours and gives 6 lines, which you call a multiplet.
 - **O–H and N–H hydrogens are usually not split, and do not split their neighbours.** They exchange rapidly with other molecules, and appear as singlets.
@@ -353,7 +353,7 @@ A few patterns turn up again and again, and recognising them speeds up every str
 |---|---|
 | \(\ce{CH3CH2-X}\) (X with no hydrogens on its first atom) | \(\ce{CH2}\): quartet (2H); \(\ce{CH3}\): triplet (3H) |
 | \(\ce{(CH3)2CH-X}\) | \(\ce{CH3}\): doublet (6H); \(\ce{CH}\): multiplet (1H) |
-| \(\ce{CH3-C=O}\) or \(\ce{CH3-O-}\) with nothing on the next atom | singlet (3H) |
+| \(\ce{CH3-C=O}\) or \(\ce{CH3-O}\)– with nothing on the next atom | singlet (3H) |
 | \(\ce{-CH2CH2-}\) between two different groups | two triplets (2H each) |
 
 ### Predicting a spectrum
@@ -366,7 +366,7 @@ There are three hydrogen environments: \(\ce{CH3CO}\), \(\ce{OCH2}\) and \(\ce{C
 | Hydrogens | δ range | Area | Neighbouring H | Splitting |
 |---|---|---|---|---|
 | \(\ce{CH3-C=O}\) | 2.2–3.0 | 3 | 0 | singlet |
-| \(\ce{-O-CH2-}\) | 3.2–4.0 | 2 | 3 | quartet |
+| \(\ce{O-CH2}\) | 3.2–4.0 | 2 | 3 | quartet |
 | \(\ce{CH3-CH2}\) | 0.9–1.7 | 3 | 2 | triplet |
 
 The \(\ce{CH3CO}\) signal is a singlet in the range for alkyl next to C=O. [B1]
@@ -428,11 +428,11 @@ Putting \(\ce{CH3-C=O}\) and \(\ce{CH3-O}\) together with the two oxygen atoms g
 Check: two carbon environments for the methyl groups plus a C=O makes three, so ¹³C should show three peaks. An isomer, propanoic acid \(\ce{CH3CH2COOH}\), would show a triplet and a quartet and a very downfield acid signal, so it does not fit.
 :::
 
-:::eg (Exam style, combined evidence) Compound Q has these properties. Mass spectrum: M⁺ at m/e 72 with abundance 20.0 %, [M+1]⁺ abundance 0.88 %, and fragments at m/e 57, 43 and 29. IR: strong absorption at 1715 cm⁻¹ and nothing between 2500 and 3600 cm⁻¹. ¹H NMR: δ 1.0 (triplet, 3H), δ 2.2 (singlet, 3H), δ 2.4 (quartet, 2H). ¹³C NMR: four peaks, at δ 8, 30, 37 and 209. Identify Q.
+:::eg (Exam style, combined evidence) Compound Q has these properties. Mass spectrum: M⁺ at m/e 72 with abundance 20.0 %, [M+1]⁺ abundance 0.88 %, and fragments at m/e 57, 43 and 29. IR: strong absorption at 1715 cm⁻¹ and no O–H absorption (between 2500 and 3600 cm⁻¹ only the C–H absorption near 2900 cm⁻¹). ¹H NMR: δ 1.0 (triplet, 3H), δ 2.2 (singlet, 3H), δ 2.4 (quartet, 2H). ¹³C NMR: four peaks, at δ 8, 30, 37 and 209. Identify Q.
 **Carbons.** \(n = \dfrac{100 \times 0.88}{1.1 \times 20.0} = 4.0\), so four carbon atoms. [M1] [A1]
 **Formula.** Four carbons weigh 48, leaving 24. IR shows a C=O (one oxygen, 16), leaving 8 for hydrogen, so Q is \(\ce{C4H8O}\). [M1] The areas 3 + 3 + 2 = 8 match. [B1]
 **Groups.** The IR absorption at 1715 cm⁻¹ is in the carbonyl range, and there is no O–H, so it is an aldehyde or ketone. The ¹³C peak at 209 is in the 190–220 range for C=O. [B1]
-**¹H signals.** δ 2.2 singlet 3H is \(\ce{CH3-C=O}\) with no neighbouring hydrogens. [B1] δ 2.4 quartet 2H is \(\ce{CH2}\) next to C=O with three neighbours, so it is next to a \(\ce{CH3}\); δ 1.0 triplet 3H is that \(\ce{CH3}\), next to a \(\ce{CH2}\). [B1] So the pieces are \(\ce{CH3CO-}\) and \(\ce{-CH2CH3}\).
+**¹H signals.** δ 2.2 singlet 3H is \(\ce{CH3-C=O}\) with no neighbouring hydrogens. [B1] δ 2.4 quartet 2H is \(\ce{CH2}\) next to C=O with three neighbours, so it is next to a \(\ce{CH3}\); δ 1.0 triplet 3H is that \(\ce{CH3}\), next to a \(\ce{CH2}\). [B1] So the pieces are \(\ce{CH3CO}\)– and \(\ce{-CH2CH3}\).
 **Fragments.** m/e 43 is \(\ce{CH3CO+}\); 57 is \(\ce{CH3CH2CO+}\) (72 − 15, loss of \(\ce{CH3}\)); 29 is \(\ce{CH3CH2+}\). [B1]
 Q is **butanone**, \(\ce{CH3COCH2CH3}\). [A1]
 Check: four different carbons give four ¹³C peaks, which agrees. The aldehyde isomer butanal, \(\ce{CH3CH2CH2CHO}\), has a signal at δ 9.3–10.5, which Q does not.
@@ -518,7 +518,7 @@ Q: [4 marks] ★★ (a) Give two reasons why TMS is used as the standard in NMR 
 A: (a) Any two: one sharp signal because all the hydrogens are equivalent; inert; volatile so easily removed; signal at δ = 0, away from other signals. [B1] [B1]
 (b) \(\ce{CHCl3}\) would give its own ¹H signal, and deuterium does not absorb in the ¹H region, so \(\ce{CDCl3}\) gives no ¹H signal. [B1]
 (c) The O–H hydrogen exchanges with deuterium and its signal disappears. [B1]
-Q: [6 marks] ★★ Compound R has the formula \(\ce{C4H8O2}\). Its IR spectrum has a strong absorption at 1740 cm⁻¹ and one at 1190 cm⁻¹, and no absorption between 2500 and 3600 cm⁻¹. Its ¹H NMR spectrum has three signals: δ 1.1 (triplet, 3H), δ 2.3 (quartet, 2H) and δ 3.7 (singlet, 3H). Deduce the structure of R and explain your reasoning.
+Q: [6 marks] ★★ Compound R has the formula \(\ce{C4H8O2}\). Its IR spectrum has a strong absorption at 1740 cm⁻¹ and one at 1190 cm⁻¹, and no O–H absorption (between 2500 and 3600 cm⁻¹ only the C–H absorption near 2900 cm⁻¹). Its ¹H NMR spectrum has three signals: δ 1.1 (triplet, 3H), δ 2.3 (quartet, 2H) and δ 3.7 (singlet, 3H). Deduce the structure of R and explain your reasoning.
 H: Decide the functional group first. Then use splitting to join the pieces.
 A: 1740 cm⁻¹ is C=O in the ester range (1710–1750) and 1190 is C–O; there is no broad O–H, so R is an ester. [B1]
 δ 3.7, singlet, 3H: \(\ce{CH3-O}\) (range 3.2–4.0) with no neighbouring hydrogens. [B1]

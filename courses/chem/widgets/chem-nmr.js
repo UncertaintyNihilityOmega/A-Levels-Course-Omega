@@ -3,7 +3,7 @@
    Every shift is a typical value inside the Cambridge Data booklet range for that environment (FACTS.md, "Data booklet values"):
    ¹H: alkane 0.9-1.7; next to C=O 2.2-3.0; next to ring 2.3-3.0; next to O or Cl 3.2-4.0; ArH 6.0-9.0; aldehyde 9.3-10.5;
        ROH 0.5-6.0; RCOOH 9.0-13.0.
-   ¹³C: alkyl 0-50; next to halogen 30-60; next to O 50-70; arene 110-160; ester/acid C=O 160-185; ketone/aldehyde C=O 190-220.
+   ¹³C: alkyl 0-50; next to a ring 25-50; next to C=O 30-65; next to halogen 30-60; next to O 50-70; arene 110-160; ester/acid C=O 160-185; ketone/aldehyde C=O 190-220.
    Splitting follows the n + 1 rule with n = hydrogens on adjacent carbons (O-H hydrogens neither split nor are split). The gap between
    the lines of a multiplet is drawn far wider than in a real spectrum. Line heights in the ¹³C view carry no meaning. */
 (function () {
@@ -30,32 +30,32 @@
     ethanal: {
       name: 'ethanal', segs: [['CH₃', 0, 0], ['CHO', 1, 1]],
       h: [{ g: 'CH₃', d: 2.2, n: 3, adj: 1, r: '2.2–3.0' }, { g: 'CHO', d: 9.8, n: 1, adj: 3, r: '9.3–10.5' }],
-      c: [{ g: 'CH₃', d: 31, k: 1, r: '0–50' }, { g: 'CHO', d: 200, k: 1, r: '190–220' }]
+      c: [{ g: 'CH₃', d: 31, k: 1, r: '30–65' }, { g: 'CHO', d: 200, k: 1, r: '190–220' }]
     },
     propanone: {
       name: 'propanone', segs: [['(', null, null], ['CH₃', 0, 0], [')₂', null, null], ['CO', null, 1]],
       h: [{ g: 'two CH₃', d: 2.2, n: 6, adj: 0, r: '2.2–3.0' }],
-      c: [{ g: 'two CH₃', d: 30, k: 2, r: '0–50' }, { g: 'C=O', d: 205, k: 1, r: '190–220' }]
+      c: [{ g: 'two CH₃', d: 30, k: 2, r: '30–65' }, { g: 'C=O', d: 205, k: 1, r: '190–220' }]
     },
     butanone: {
       name: 'butanone', segs: [['CH₃', 1, 1], ['CO', null, 3], ['CH₂', 2, 2], ['CH₃', 0, 0]],
       h: [{ g: 'CH₃ of ethyl', d: 1.0, n: 3, adj: 2, r: '0.9–1.7' }, { g: 'CH₃CO', d: 2.2, n: 3, adj: 0, r: '2.2–3.0' }, { g: 'CH₂CO', d: 2.4, n: 2, adj: 3, r: '2.2–3.0' }],
-      c: [{ g: 'CH₃ of ethyl', d: 8, k: 1, r: '0–50' }, { g: 'CH₃CO', d: 30, k: 1, r: '0–50' }, { g: 'CH₂', d: 37, k: 1, r: '30–65' }, { g: 'C=O', d: 209, k: 1, r: '190–220' }]
+      c: [{ g: 'CH₃ of ethyl', d: 8, k: 1, r: '0–50' }, { g: 'CH₃CO', d: 30, k: 1, r: '30–65' }, { g: 'CH₂', d: 37, k: 1, r: '30–65' }, { g: 'C=O', d: 209, k: 1, r: '190–220' }]
     },
     'ethanoic acid': {
       name: 'ethanoic acid', segs: [['CH₃', 0, 0], ['COOH', 1, 1]],
       h: [{ g: 'CH₃', d: 2.3, n: 3, adj: 0, r: '2.2–3.0' }, { g: 'COOH', d: 11.5, n: 1, adj: 0, r: '9.0–13.0', ex: true }],
-      c: [{ g: 'CH₃', d: 21, k: 1, r: '0–50' }, { g: 'COOH', d: 178, k: 1, r: '160–185' }]
+      c: [{ g: 'CH₃', d: 30, k: 1, r: '30–65' }, { g: 'COOH', d: 178, k: 1, r: '160–185' }]
     },
     'ethyl ethanoate': {
       name: 'ethyl ethanoate', segs: [['CH₃', 1, 1], ['COO', null, 3], ['CH₂', 2, 2], ['CH₃', 0, 0]],
       h: [{ g: 'CH₃ of ethyl', d: 1.3, n: 3, adj: 2, r: '0.9–1.7' }, { g: 'CH₃CO', d: 2.3, n: 3, adj: 0, r: '2.2–3.0' }, { g: 'OCH₂', d: 3.9, n: 2, adj: 3, r: '3.2–4.0' }],
-      c: [{ g: 'CH₃ of ethyl', d: 14, k: 1, r: '0–50' }, { g: 'CH₃CO', d: 21, k: 1, r: '0–50' }, { g: 'OCH₂', d: 60, k: 1, r: '50–70' }, { g: 'C=O', d: 171, k: 1, r: '160–185' }]
+      c: [{ g: 'CH₃ of ethyl', d: 14, k: 1, r: '0–50' }, { g: 'CH₃CO', d: 30, k: 1, r: '30–65' }, { g: 'OCH₂', d: 60, k: 1, r: '50–70' }, { g: 'C=O', d: 171, k: 1, r: '160–185' }]
     },
     'methyl propanoate': {
       name: 'methyl propanoate', segs: [['CH₃', 0, 0], ['CH₂', 1, 1], ['COO', null, 3], ['CH₃', 2, 2]],
       h: [{ g: 'CH₃ of ethyl', d: 1.1, n: 3, adj: 2, r: '0.9–1.7' }, { g: 'CH₂CO', d: 2.3, n: 2, adj: 3, r: '2.2–3.0' }, { g: 'OCH₃', d: 3.7, n: 3, adj: 0, r: '3.2–4.0' }],
-      c: [{ g: 'CH₃ of ethyl', d: 9, k: 1, r: '0–50' }, { g: 'CH₂', d: 27, k: 1, r: '0–50' }, { g: 'OCH₃', d: 52, k: 1, r: '50–70' }, { g: 'C=O', d: 175, k: 1, r: '160–185' }]
+      c: [{ g: 'CH₃ of ethyl', d: 9, k: 1, r: '0–50' }, { g: 'CH₂', d: 31, k: 1, r: '30–65' }, { g: 'OCH₃', d: 52, k: 1, r: '50–70' }, { g: 'C=O', d: 175, k: 1, r: '160–185' }]
     },
     '1-chloropropane': {
       name: '1-chloropropane', segs: [['CH₃', 0, 0], ['CH₂', 1, 1], ['CH₂Cl', 2, 2]],
@@ -65,12 +65,12 @@
     methylbenzene: {
       name: 'methylbenzene', segs: [['C₆H₅', 1, [1, 2, 3, 4]], ['CH₃', 0, 0]],
       h: [{ g: 'CH₃', d: 2.3, n: 3, adj: 0, r: '2.3–3.0' }, { g: 'ring H', d: 7.2, n: 5, adj: 4, r: '6.0–9.0', pat: [1, 2, 3, 2, 1] }],
-      c: [{ g: 'CH₃', d: 21, k: 1, r: '0–50' }, { g: 'ring C para to CH₃', d: 125, k: 1, r: '110–160' }, { g: 'ring C meta (two)', d: 128, k: 2, r: '110–160' }, { g: 'ring C ortho (two)', d: 129, k: 2, r: '110–160' }, { g: 'ring C bonded to CH₃', d: 138, k: 1, r: '110–160' }]
+      c: [{ g: 'CH₃', d: 25, k: 1, r: '25–50' }, { g: 'ring C para to CH₃', d: 125, k: 1, r: '110–160' }, { g: 'ring C meta (two)', d: 128, k: 2, r: '110–160' }, { g: 'ring C ortho (two)', d: 129, k: 2, r: '110–160' }, { g: 'ring C bonded to CH₃', d: 138, k: 1, r: '110–160' }]
     },
     'propanoic acid': {
       name: 'propanoic acid', segs: [['CH₃', 0, 0], ['CH₂', 1, 1], ['COOH', 2, 2]],
       h: [{ g: 'CH₃', d: 1.1, n: 3, adj: 2, r: '0.9–1.7' }, { g: 'CH₂CO', d: 2.4, n: 2, adj: 3, r: '2.2–3.0' }, { g: 'COOH', d: 11.5, n: 1, adj: 0, r: '9.0–13.0', ex: true }],
-      c: [{ g: 'CH₃', d: 9, k: 1, r: '0–50' }, { g: 'CH₂', d: 28, k: 1, r: '0–50' }, { g: 'COOH', d: 181, k: 1, r: '160–185' }]
+      c: [{ g: 'CH₃', d: 9, k: 1, r: '0–50' }, { g: 'CH₂', d: 31, k: 1, r: '30–65' }, { g: 'COOH', d: 181, k: 1, r: '160–185' }]
     },
     benzene: {
       name: 'benzene', segs: [['C₆H₆', 0, 0]],

@@ -88,7 +88,7 @@ These are the mistakes that the wrong options in Paper 1 questions are made from
 | [Group 17](#chem.group17) | Mixing up which halide ion reduces concentrated sulfuric acid furthest | Reducing power increases down the group: Cl⁻ < Br⁻ < I⁻ |
 | [Organic](#chem.org.intro) | Counting isomers twice or missing branched ones; confusing a reagent with a condition | Systematically build from the longest chain; write reagent and condition separately |
 | [Halogenoalkanes](#chem.org.halogen) | Believing the most polar bond (C–Cl) reacts fastest | Reactivity follows bond strength: C–I is the weakest, so the fastest |
-| [Analysis](#chem.analysis) | Reading the IR region wrongly or forgetting the [M+1] peak formula | Use the Data booklet tables; the formula is in the booklet's notes on mass spectra |
+| [Analysis](#chem.analysis) | Reading the IR region wrongly or forgetting the [M+1] peak formula | Use the Data booklet IR table; learn \(n = \dfrac{100 \times \text{abundance of } [\text{M}+1]^+}{1.1 \times \text{abundance of M}^+}\) for the number of carbon atoms |
 
 ## Eight questions worked in full
 
@@ -132,7 +132,7 @@ Q: [1 mark] (#chem.energetics) Use the Data booklet. What is the enthalpy change
 **D** +818
 
 H: Bonds broken: 4 C–H and 2 O=O. Bonds made: 2 C=O (in CO₂) and 4 O–H.
-A: **B**. Broken: \(4 \times 410 + 2 \times 496 = 2632\) kJ. Made: \(2 \times 805 + 4 \times 460 = 3450\) kJ (the C=O value in CO₂ is 805). \(\Delta H = 2632 - 3450 = -818\) kJ mol⁻¹. A breaks only one O=O bond. C uses the average C=O value (740) instead of the CO₂ value. D has the sign wrong: it is bonds made minus bonds broken, but breaking costs energy and making releases it, so the answer for this exothermic reaction must be negative.
+A: **B**. Broken: \(4 \times 410 + 2 \times 496 = 2632\) kJ. Made: \(2 \times 805 + 4 \times 460 = 3450\) kJ (the C=O value in CO₂ is 805). \(\Delta H = 2632 - 3450 = -818\) kJ mol⁻¹. A breaks only one O=O bond. C uses the average C=O value (740) instead of the CO₂ value. D has the sign wrong: it comes from bonds made minus bonds broken. Breaking bonds costs energy and making them releases it, so ΔH = bonds broken − bonds made, which is negative for this exothermic reaction.
 
 Q: [1 mark] (#chem.equilibria) The equilibrium \(\ce{2SO2(g) + O2(g) <=> 2SO3(g)}\) is exothermic in the forward direction. Which change increases the equilibrium amount of \(\ce{SO3}\)?
 
@@ -205,7 +205,8 @@ You are expected to use the Data booklet in this paper, so learn where things ar
 - bond energies (exact for diatomic molecules, average for the rest)
 - standard electrode potentials
 - ¹H and ¹³C NMR chemical shifts, and infrared absorptions
-- the formula for working out the number of carbon atoms from a mass spectrum, in its notes
+
+Do not rely on the booklet for formulas such as the [M+1] carbon count: learn them.
 
 :::tip
 Paper 1 questions that need the booklet usually say so, or give you an unfamiliar bond or element. Check which state the question wants: bond energies for **gaseous** molecules, and the C=O value in carbon dioxide is different from the average C=O value. Looking up the wrong row is a very common reason for a wrong answer.
