@@ -89,7 +89,7 @@ Note that the **volume** of acid is controlled, not the "amount" of acid: the am
 A prediction connects the variables with chemistry. Use the pattern *as [independent] increases, [dependent] increases/decreases, because …*.
 
 :::eg Write a prediction for the magnesium and acid investigation, and sketch the expected graph.
-As the concentration of hydrochloric acid increases, the time taken for the magnesium to disappear decreases. [B1] There are more hydrogen ions in each cm³, so more collisions per second between \(\ce{H+}\) ions and magnesium atoms on the surface, and a greater proportion of these successful collisions each second, so the reaction is faster. [B1]
+As the concentration of hydrochloric acid increases, the time taken for the magnesium to disappear decreases. [B1] There are more hydrogen ions in each cm³, so more collisions per second between \(\ce{H+}\) ions and magnesium atoms on the surface, and so more successful collisions each second. The reaction is faster. [B1]
 
 If the rate is proportional to the concentration, the time is inversely proportional to it, so the graph of time against concentration is a falling curve that flattens out (shown below). [B1]
 :::
@@ -327,7 +327,7 @@ Pipette: \(0.06 / 25.0 \times 100 = 0.24\%\) [B1]
 
 The concentration comes from \(c = 0.100 \times 23.45 / 25.0 = 0.0938\) mol dm⁻³. The final result combines the errors by adding the percentages: \(0.426 + 0.24 = 0.67\%\) [M1]
 
-Absolute uncertainty: \(0.0938 \times 0.67/100 = 6.2 \times 10^{-4}\), so the concentration is \((0.0938 \pm 0.0006)\) mol dm⁻³. [A1]
+Absolute uncertainty: \(0.0938 \times 0.67/100 = 6.3 \times 10^{-4}\), so the concentration is \((0.0938 \pm 0.0006)\) mol dm⁻³. [A1]
 :::
 
 :::eg The temperature of a solution rises from 21.5 °C to 35.5 °C. The thermometer is read to the nearest 0.5 °C. Calculate the percentage error in the temperature change.
@@ -357,7 +357,7 @@ An **anomalous** result is one that does not fit the pattern of the others. To d
 3. **Treat** it: leave it out of the mean and the line of best fit (never delete it from the table), repeat the experiment if possible, and say that you did.
 
 :::eg In an experiment the time for 30.0 cm³ of gas at 1.20 mol dm⁻³ was recorded three times: 41.2 s, 40.6 s and 49.8 s. Identify the anomaly, suggest a cause and give the mean to use.
-The result 49.8 s is anomalous: the other two agree within 0.6 s, and it is 8.6 s longer than the mean of those two. [B1]
+The result 49.8 s is anomalous: the other two agree within 0.6 s, and it is 8.9 s longer than the mean of those two. [B1]
 
 A possible cause is that the bung was fitted late, or loosely, so that some gas escaped and the syringe reached 30.0 cm³ later. [B1]
 
@@ -428,11 +428,14 @@ A: Independent: temperature of the water / °C. Dependent: the mass of potassium
 Q: Calculate the volumes of 0.500 mol dm⁻³ sodium hydroxide and water needed to make 50.0 cm³ of each of 0.100, 0.200, 0.300 and 0.400 mol dm⁻³ solutions.
 A: \(V = c \times 50.0 / 0.500\): 10.0, 20.0, 30.0 and 40.0 cm³ of sodium hydroxide, with 40.0, 30.0, 20.0 and 10.0 cm³ of water.
 Q: Calculate the mass of ethanedioic acid dihydrate, \(\ce{H2C2O4.2H2O}\), needed to make 250.0 cm³ of a 0.0400 mol dm⁻³ solution.
-A: \(M_r = 2(1.0) + 2(12.0) + 4(16.0) + 2(18.0) = 126.0\). \(n = 0.0400 \times 0.2500 = 0.01000\) mol. \(m = 0.01000 \times 126.0 = 1.260\) g.
+A: \[M_r = 2(1.0) + 2(12.0) + 4(16.0) + 2(18.0) = 126.0\]
+\(n = 0.0400 \times 0.2500 = 0.01000\) mol. \(m = 0.01000 \times 126.0 = 1.260\) g.
 Q: Calculate the percentage error in a titre of 18.40 cm³ and in a temperature change of 8.5 °C measured with a thermometer reading to the nearest 0.5 °C. Which is larger?
 A: Titre: \(0.10 / 18.40 \times 100 = 0.543\%\). Temperature change: \(1.0 / 8.5 \times 100 = 11.8\%\). The temperature change has the larger percentage error.
 Q: The line of best fit on a graph of initial rate (mol dm⁻³ s⁻¹) against \([\ce{A}]\) (mol dm⁻³) passes through (0.050, \(1.10 \times 10^{-4}\)) and (0.250, \(5.50 \times 10^{-4}\)). Calculate the gradient with its unit, and state what the intercept shows.
-A: Gradient \(= (5.50 \times 10^{-4} - 1.10 \times 10^{-4}) / (0.250 - 0.050) = 2.20 \times 10^{-3}\) s⁻¹. Intercept at \([\ce{A}] = 0\): \(1.10 \times 10^{-4} - 2.20 \times 10^{-3} \times 0.050 = 0\): the line passes through the origin, so rate is proportional to \([\ce{A}]\) (first order) and \(k = 2.20 \times 10^{-3}\) s⁻¹.
+A: Gradient:
+\[\frac{5.50 \times 10^{-4} - 1.10 \times 10^{-4}}{0.250 - 0.050} = 2.20 \times 10^{-3}\ \text{s}^{-1}\]
+Intercept at \([\ce{A}] = 0\): \(1.10 \times 10^{-4} - 2.20 \times 10^{-3} \times 0.050 = 0\): the line passes through the origin, so rate is proportional to \([\ce{A}]\) (first order) and \(k = 2.20 \times 10^{-3}\) s⁻¹.
 Q: Powdered zinc is used in place of the same mass of zinc granules in a reaction with excess acid. State and explain the effect on the rate and on the total gas volume.
 A: The rate increases because the surface area is greater, so there are more collisions per second. The total volume is unchanged because the amount of zinc is the same and the acid is in excess.
 Q: Give a hazard and a precaution for (a) heating ethanol under reflux, (b) a reaction that produces sulfur dioxide.
@@ -476,7 +479,7 @@ Hazard: sulfur dioxide is toxic (and the acid irritates the eyes). [B1]
 Precaution: carry out the experiments in a fume cupboard or well-ventilated room, and wear goggles. [B1]
 Results table: temperature / °C, time / s (two runs), mean time / s, 1/time / s⁻¹. [B1]
 Processing: plot 1/t (a measure of rate) against temperature and describe the trend (or plot time against temperature and draw a smooth curve). [B1]
-Q: [6 marks] ★★★ A student plots the points (0, 2.00), (10, 1.60), (20, 1.20), (30, 0.80) for a graph of [A] against time for a reaction that is first order in A, and joins them with a straight line. (a) Explain how the data show that the reaction is not first order. (b) State the order suggested by the data. (c) Calculate the rate constant from the graph.
+Q: [6 marks] ★★★ A student plots a graph of [A] / mol dm⁻³ against time / s for a reaction. The points (0, 2.00), (10, 1.60), (20, 1.20) and (30, 0.80) lie on a straight line. (a) Explain how the data show that the reaction is not first order. (b) State the order suggested by the data. (c) Calculate the rate constant from the graph.
 H: Look at the half-life: the time for [A] to halve. Zero order has a constant gradient.
 A: (a) For a first-order reaction the half-life is constant. Here, [A] falls from 2.00 to 1.00 in 25 s but from 1.00 to 0.50 in 12.5 s, so the half-life is not constant. [M1 A1]
 (b) The concentration falls by the same amount (0.40 mol dm⁻³) every 10 s, so the rate is constant: zero order. [B1]
@@ -487,7 +490,7 @@ A: (a) For a first-order reaction the half-life is constant. Here, [A] falls fro
 Q: [6 marks] A student wants to know which of two antacid tablets, X and Y, neutralises more acid. Tablets are insoluble in water, and the tablets contain carbonates. Using a back titration, plan how to find the moles of hydrochloric acid neutralised by one tablet. You are provided with 1.00 mol dm⁻³ hydrochloric acid, 0.200 mol dm⁻³ sodium hydroxide, a suitable indicator, a balance, and common laboratory apparatus.
 H: Add an excess of acid first. Then ask what is left.
 H: The unused acid is titrated with alkali. The acid used by the tablet is the difference.
-H: Choose a methyl orange-type indicator: the end point of strong acid with strong base can be anywhere in the range pH 4 to 10.
+H: The titration is strong acid with strong alkali, so methyl orange is suitable.
 A: Weigh one tablet (by difference) and crush it, so that the reaction is fast. [B1]
 Add it to a conical flask with a measured excess of hydrochloric acid, for example 50.0 cm³ of 1.00 mol dm⁻³ (from a burette or pipette), and warm gently or swirl until the effervescence stops. [B1]
 Transfer to a 250.0 cm³ volumetric flask, rinsing the conical flask into it, and make up to the mark with distilled water; mix. [B1]

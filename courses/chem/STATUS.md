@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-24 · WRITE P18 · chem.org.polymers (6.6k words, 16 eg) and chem.org.synthesis2 (6.9k words, 13 eg); no new widgets (chem-orgmap a2 embedded in both). Reviewer: figure script data/mk_fig_p18.py (imports data/mk_fig_p16.py; PET, Kevlar, PLA and the methylbenzene routes are fig small, the nylon-6,6 cut figure is a 640-wide fig and prints small on phones); no board boxes (none sure); 2n vs 2n-1 water molecules explained once in the polyester section; Kevlar is an extension beyond the syllabus examples; links checked 24 Oct (chemguide polyesters, polyamides, alkene polymerisation, elsubmenu, aminemenu, amidemenu); paracetamol route and benzamide unknown are original worked examples (check the 4-aminophenol N-acylation wording).
+Last: 2026-10-24 · WRITE P20 · chem.planning (6.8k words, 48 marks in examples; apparatus SVG + 2 plots, checks ok), chem.mock.p3 (40 marks), chem.mock.p5 (30 marks); no widgets. Mocks assume chem.practical (P19) exists for revise links. Reviewer: planning uses a plot-with-two-labelled-points for the gradient example; bung/plunger in the apparatus figure use the light fm fill.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -24,7 +24,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P17: written 2026-10-24
 - P18: written 2026-10-24
 - P19: writing 2026-10-24
-- P20: writing 2026-10-24
+- P20: written 2026-10-24
 - P21: open
 - P22: open
 - P23: open
