@@ -22,20 +22,32 @@
       "group": "Start here"
     },
     {
-      "id": "bio.cells",
-      "title": "Cell structure",
-      "level": "as",
-      "group": "Cells and molecules"
-    },
-    {
       "id": "bio.microscopy",
       "title": "Microscopy and magnification",
       "level": "as",
       "group": "Cells and molecules"
     },
     {
-      "id": "bio.molecules",
-      "title": "Carbohydrates, lipids and water",
+      "id": "bio.cells",
+      "title": "Eukaryotic cells and organelles",
+      "level": "as",
+      "group": "Cells and molecules"
+    },
+    {
+      "id": "bio.prokaryotes",
+      "title": "Prokaryotes and viruses",
+      "level": "as",
+      "group": "Cells and molecules"
+    },
+    {
+      "id": "bio.carbs",
+      "title": "Carbohydrates",
+      "level": "as",
+      "group": "Cells and molecules"
+    },
+    {
+      "id": "bio.lipids",
+      "title": "Lipids and water",
       "level": "as",
       "group": "Cells and molecules"
     },
@@ -46,56 +58,86 @@
       "group": "Cells and molecules"
     },
     {
+      "id": "bio.foodtests",
+      "title": "Testing for biological molecules",
+      "level": "as",
+      "group": "Cells and molecules"
+    },
+    {
       "id": "bio.enzymes",
       "title": "Enzymes",
       "level": "as",
       "group": "Cells and molecules"
     },
     {
+      "id": "bio.enzymes2",
+      "title": "Enzyme kinetics, inhibitors and immobilised enzymes",
+      "level": "as",
+      "group": "Cells and molecules"
+    },
+    {
       "id": "bio.membranes",
-      "title": "Cell membranes and transport",
+      "title": "Membrane structure and cell signalling",
+      "level": "as",
+      "group": "Cells and molecules"
+    },
+    {
+      "id": "bio.movement",
+      "title": "Movement into and out of cells",
       "level": "as",
       "group": "Cells and molecules"
     },
     {
       "id": "bio.mitosis",
-      "title": "The mitotic cell cycle",
+      "title": "Chromosomes and the mitotic cell cycle",
       "level": "as",
       "group": "Genetics at AS"
     },
     {
       "id": "bio.dna",
-      "title": "DNA structure and replication",
+      "title": "Nucleic acids and DNA replication",
       "level": "as",
       "group": "Genetics at AS"
     },
     {
       "id": "bio.synthesis",
-      "title": "Protein synthesis and mutation",
+      "title": "Protein synthesis and gene mutation",
       "level": "as",
       "group": "Genetics at AS"
     },
     {
       "id": "bio.planttransport",
-      "title": "Transport in plants",
+      "title": "Plant tissues and water transport",
+      "level": "as",
+      "group": "Transport and exchange"
+    },
+    {
+      "id": "bio.translocation",
+      "title": "Translocation in phloem",
       "level": "as",
       "group": "Transport and exchange"
     },
     {
       "id": "bio.mammaltransport",
-      "title": "Blood vessels and blood",
+      "title": "Blood vessels, blood and tissue fluid",
+      "level": "as",
+      "group": "Transport and exchange"
+    },
+    {
+      "id": "bio.oxygen",
+      "title": "Transport of oxygen and carbon dioxide",
       "level": "as",
       "group": "Transport and exchange"
     },
     {
       "id": "bio.heart",
-      "title": "The heart",
+      "title": "The heart and the cardiac cycle",
       "level": "as",
       "group": "Transport and exchange"
     },
     {
       "id": "bio.gasexchange",
-      "title": "Gas exchange",
+      "title": "The gas exchange system",
       "level": "as",
       "group": "Transport and exchange"
     },
@@ -113,13 +155,49 @@
     },
     {
       "id": "bio.immunity",
-      "title": "Immunity",
+      "title": "The immune response",
       "level": "as",
       "group": "Infection and immunity"
     },
     {
+      "id": "bio.antibodies",
+      "title": "Antibodies and vaccination",
+      "level": "as",
+      "group": "Infection and immunity"
+    },
+    {
+      "id": "bio.maths",
+      "title": "Maths skills for biology",
+      "level": "as",
+      "group": "AS skills"
+    },
+    {
+      "id": "bio.practical",
+      "title": "Practical skills: investigations (Paper 3)",
+      "level": "as",
+      "group": "AS skills"
+    },
+    {
+      "id": "bio.practical2",
+      "title": "Practical skills: microscopy and drawing (Paper 3)",
+      "level": "as",
+      "group": "AS skills"
+    },
+    {
+      "id": "bio.energy",
+      "title": "Energy, ATP and respiratory quotient",
+      "level": "a2",
+      "group": "Energy"
+    },
+    {
       "id": "bio.respiration",
-      "title": "Energy and respiration",
+      "title": "Aerobic respiration",
+      "level": "a2",
+      "group": "Energy"
+    },
+    {
+      "id": "bio.anaerobic",
+      "title": "Anaerobic respiration and investigating respiration",
       "level": "a2",
       "group": "Energy"
     },
@@ -130,38 +208,80 @@
       "group": "Energy"
     },
     {
+      "id": "bio.limiting",
+      "title": "Limiting factors in photosynthesis",
+      "level": "a2",
+      "group": "Energy"
+    },
+    {
       "id": "bio.homeostasis",
-      "title": "Homeostasis",
+      "title": "Homeostasis and the kidney",
       "level": "a2",
       "group": "Control and coordination"
     },
     {
-      "id": "bio.control",
-      "title": "Nerves, synapses and muscles",
+      "id": "bio.glucose",
+      "title": "Blood glucose, cell signalling and biosensors",
+      "level": "a2",
+      "group": "Control and coordination"
+    },
+    {
+      "id": "bio.nerves",
+      "title": "Neurones and action potentials",
+      "level": "a2",
+      "group": "Control and coordination"
+    },
+    {
+      "id": "bio.synapses",
+      "title": "Synapses and muscle contraction",
       "level": "a2",
       "group": "Control and coordination"
     },
     {
       "id": "bio.hormones",
-      "title": "Hormones and control in plants",
+      "title": "Control and coordination in plants",
       "level": "a2",
       "group": "Control and coordination"
     },
     {
+      "id": "bio.meiosis",
+      "title": "Meiosis and genetic variation",
+      "level": "a2",
+      "group": "Inheritance and evolution"
+    },
+    {
       "id": "bio.inheritance",
-      "title": "Meiosis and inheritance",
+      "title": "Monohybrid inheritance",
+      "level": "a2",
+      "group": "Inheritance and evolution"
+    },
+    {
+      "id": "bio.dihybrid",
+      "title": "Dihybrid crosses and the chi-squared test",
       "level": "a2",
       "group": "Inheritance and evolution"
     },
     {
       "id": "bio.genecontrol",
-      "title": "Control of gene expression",
+      "title": "Genes, phenotype and gene control",
+      "level": "a2",
+      "group": "Inheritance and evolution"
+    },
+    {
+      "id": "bio.variation",
+      "title": "Variation and the t-test",
+      "level": "a2",
+      "group": "Inheritance and evolution"
+    },
+    {
+      "id": "bio.selection",
+      "title": "Natural and artificial selection",
       "level": "a2",
       "group": "Inheritance and evolution"
     },
     {
       "id": "bio.evolution",
-      "title": "Selection and evolution",
+      "title": "Evolution and speciation",
       "level": "a2",
       "group": "Inheritance and evolution"
     },
@@ -172,34 +292,46 @@
       "group": "Ecology and genetic technology"
     },
     {
-      "id": "bio.ecology",
-      "title": "Biodiversity and conservation",
+      "id": "bio.biodiversity",
+      "title": "Biodiversity and sampling",
+      "level": "a2",
+      "group": "Ecology and genetic technology"
+    },
+    {
+      "id": "bio.conservation",
+      "title": "Conservation",
       "level": "a2",
       "group": "Ecology and genetic technology"
     },
     {
       "id": "bio.genetech",
-      "title": "Genetic technology",
+      "title": "Tools of genetic technology",
+      "level": "a2",
+      "group": "Ecology and genetic technology"
+    },
+    {
+      "id": "bio.genetech2",
+      "title": "Genetic technology in medicine and agriculture",
       "level": "a2",
       "group": "Ecology and genetic technology"
     },
     {
       "id": "bio.stats",
       "title": "Statistics for biologists",
-      "level": "as a2",
-      "group": "Skills"
-    },
-    {
-      "id": "bio.practical",
-      "title": "Practical skills (Paper 3)",
-      "level": "guide",
-      "group": "Skills"
+      "level": "a2",
+      "group": "A Level skills"
     },
     {
       "id": "bio.planning",
-      "title": "Planning, analysis and evaluation (Paper 5)",
-      "level": "guide",
-      "group": "Skills"
+      "title": "Planning investigations (Paper 5)",
+      "level": "a2",
+      "group": "A Level skills"
+    },
+    {
+      "id": "bio.evaluation",
+      "title": "Analysis, conclusions and evaluation (Paper 5)",
+      "level": "a2",
+      "group": "A Level skills"
     },
     {
       "id": "bio.exam.p1",
@@ -210,6 +342,12 @@
     {
       "id": "bio.exam.p24",
       "title": "Papers 2 and 4: structured questions",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "bio.exam.p35",
+      "title": "Papers 3 and 5: the practical skills papers",
       "level": "guide",
       "group": "Exam readiness"
     },
@@ -256,6 +394,398 @@
       "group": "Exam readiness"
     }
   ],
-  "aliases": {},
-  "packages": []
+  "aliases": {
+    "bio.molecules": "bio.carbs",
+    "bio.control": "bio.nerves",
+    "bio.ecology": "bio.biodiversity"
+  },
+  "packages": [
+    {
+      "id": "P1",
+      "title": "Start here",
+      "chapters": [
+        "bio.overview",
+        "bio.f.basics"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P2",
+      "title": "Cells and microscopes",
+      "chapters": [
+        "bio.microscopy",
+        "bio.cells",
+        "bio.prokaryotes"
+      ],
+      "widgets": [
+        "bio-magnify"
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Biological molecules",
+      "chapters": [
+        "bio.carbs",
+        "bio.lipids",
+        "bio.proteins"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P4",
+      "title": "Food tests and enzymes",
+      "chapters": [
+        "bio.foodtests",
+        "bio.enzymes",
+        "bio.enzymes2"
+      ],
+      "widgets": [
+        "bio-enzyme"
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Membranes and transport across them",
+      "chapters": [
+        "bio.membranes",
+        "bio.movement"
+      ],
+      "widgets": [
+        "bio-sav"
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Cell cycle, DNA and protein synthesis",
+      "chapters": [
+        "bio.mitosis",
+        "bio.dna",
+        "bio.synthesis"
+      ],
+      "widgets": [
+        "bio-mitosis",
+        "bio-codon"
+      ]
+    },
+    {
+      "id": "P7",
+      "title": "Transport in plants",
+      "chapters": [
+        "bio.planttransport",
+        "bio.translocation"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P8",
+      "title": "Transport in mammals",
+      "chapters": [
+        "bio.mammaltransport",
+        "bio.oxygen",
+        "bio.heart"
+      ],
+      "widgets": [
+        "bio-odc",
+        "bio-cardiac"
+      ]
+    },
+    {
+      "id": "P9",
+      "title": "Gas exchange, disease and antibiotics",
+      "chapters": [
+        "bio.gasexchange",
+        "bio.disease",
+        "bio.antibiotics"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P10",
+      "title": "Immunity",
+      "chapters": [
+        "bio.immunity",
+        "bio.antibodies"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P11",
+      "title": "Energy and respiration",
+      "chapters": [
+        "bio.energy",
+        "bio.respiration",
+        "bio.anaerobic"
+      ],
+      "widgets": [
+        "bio-rq"
+      ]
+    },
+    {
+      "id": "P12",
+      "title": "Photosynthesis",
+      "chapters": [
+        "bio.photosynthesis",
+        "bio.limiting"
+      ],
+      "widgets": [
+        "bio-limiting"
+      ]
+    },
+    {
+      "id": "P13",
+      "title": "Homeostasis and plant control",
+      "chapters": [
+        "bio.homeostasis",
+        "bio.glucose",
+        "bio.hormones"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P14",
+      "title": "Nerves and muscles",
+      "chapters": [
+        "bio.nerves",
+        "bio.synapses"
+      ],
+      "widgets": [
+        "bio-actionpot",
+        "bio-sarcomere"
+      ]
+    },
+    {
+      "id": "P15",
+      "title": "Meiosis and genetic crosses",
+      "chapters": [
+        "bio.meiosis",
+        "bio.inheritance",
+        "bio.dihybrid"
+      ],
+      "widgets": [
+        "bio-punnett",
+        "bio-chisq"
+      ]
+    },
+    {
+      "id": "P16",
+      "title": "Gene control, variation and selection",
+      "chapters": [
+        "bio.genecontrol",
+        "bio.variation",
+        "bio.selection"
+      ],
+      "widgets": [
+        "bio-ttest",
+        "bio-hardy"
+      ]
+    },
+    {
+      "id": "P17",
+      "title": "Evolution, classification and biodiversity",
+      "chapters": [
+        "bio.evolution",
+        "bio.classification",
+        "bio.biodiversity"
+      ],
+      "widgets": [
+        "bio-diversity"
+      ]
+    },
+    {
+      "id": "P18",
+      "title": "Conservation and genetic technology",
+      "chapters": [
+        "bio.conservation",
+        "bio.genetech",
+        "bio.genetech2"
+      ],
+      "widgets": [
+        "bio-gel"
+      ]
+    },
+    {
+      "id": "P19",
+      "title": "AS skills: maths and Paper 3",
+      "chapters": [
+        "bio.maths",
+        "bio.practical",
+        "bio.practical2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P20",
+      "title": "A Level skills: statistics and Paper 5",
+      "chapters": [
+        "bio.stats",
+        "bio.planning",
+        "bio.evaluation"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P21",
+      "title": "Paper guides",
+      "chapters": [
+        "bio.exam.p1",
+        "bio.exam.p24",
+        "bio.exam.p35"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P22",
+      "title": "AS mixed practice and AS mocks",
+      "chapters": [
+        "bio.mixed.as",
+        "bio.mock.p1",
+        "bio.mock.p2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P23",
+      "title": "A Level mixed practice and Mock Paper 4",
+      "chapters": [
+        "bio.mixed.a2",
+        "bio.mock.p4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P24",
+      "title": "Practical mocks",
+      "chapters": [
+        "bio.mock.p3",
+        "bio.mock.p5"
+      ],
+      "widgets": []
+    }
+  ],
+  "papers": [
+    {
+      "id": "P1",
+      "title": "Paper 1: Multiple Choice",
+      "chapters": [
+        "bio.microscopy",
+        "bio.cells",
+        "bio.prokaryotes",
+        "bio.carbs",
+        "bio.lipids",
+        "bio.proteins",
+        "bio.foodtests",
+        "bio.enzymes",
+        "bio.enzymes2",
+        "bio.membranes",
+        "bio.movement",
+        "bio.mitosis",
+        "bio.dna",
+        "bio.synthesis",
+        "bio.planttransport",
+        "bio.translocation",
+        "bio.mammaltransport",
+        "bio.oxygen",
+        "bio.heart",
+        "bio.gasexchange",
+        "bio.disease",
+        "bio.antibiotics",
+        "bio.immunity",
+        "bio.antibodies",
+        "bio.maths",
+        "bio.exam.p1",
+        "bio.mixed.as"
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Paper 2: AS Level Structured Questions",
+      "chapters": [
+        "bio.microscopy",
+        "bio.cells",
+        "bio.prokaryotes",
+        "bio.carbs",
+        "bio.lipids",
+        "bio.proteins",
+        "bio.foodtests",
+        "bio.enzymes",
+        "bio.enzymes2",
+        "bio.membranes",
+        "bio.movement",
+        "bio.mitosis",
+        "bio.dna",
+        "bio.synthesis",
+        "bio.planttransport",
+        "bio.translocation",
+        "bio.mammaltransport",
+        "bio.oxygen",
+        "bio.heart",
+        "bio.gasexchange",
+        "bio.disease",
+        "bio.antibiotics",
+        "bio.immunity",
+        "bio.antibodies",
+        "bio.maths",
+        "bio.exam.p24",
+        "bio.mixed.as"
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Paper 3: Advanced Practical Skills",
+      "chapters": [
+        "bio.microscopy",
+        "bio.foodtests",
+        "bio.enzymes",
+        "bio.movement",
+        "bio.maths",
+        "bio.practical",
+        "bio.practical2",
+        "bio.exam.p35"
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "Paper 4: A Level Structured Questions",
+      "chapters": [
+        "bio.energy",
+        "bio.respiration",
+        "bio.anaerobic",
+        "bio.photosynthesis",
+        "bio.limiting",
+        "bio.homeostasis",
+        "bio.glucose",
+        "bio.nerves",
+        "bio.synapses",
+        "bio.hormones",
+        "bio.meiosis",
+        "bio.inheritance",
+        "bio.dihybrid",
+        "bio.genecontrol",
+        "bio.variation",
+        "bio.selection",
+        "bio.evolution",
+        "bio.classification",
+        "bio.biodiversity",
+        "bio.conservation",
+        "bio.genetech",
+        "bio.genetech2",
+        "bio.stats",
+        "bio.exam.p24",
+        "bio.mixed.a2"
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Paper 5: Planning, Analysis and Evaluation",
+      "chapters": [
+        "bio.practical",
+        "bio.stats",
+        "bio.variation",
+        "bio.biodiversity",
+        "bio.planning",
+        "bio.evaluation",
+        "bio.exam.p35"
+      ]
+    }
+  ]
 }

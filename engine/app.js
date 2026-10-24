@@ -68,7 +68,7 @@
       tn += n; td += d;
       for (const el of $$(`[data-pc="${s.id}"]`)) el.textContent = n ? `${d}/${n}` : '';
       for (const el of $$(`[data-bar="${s.id}"]`)) el.style.width = n ? (100 * d / n).toFixed(1) + '%' : '0';
-      for (const el of $$(`[data-cnt="${s.id}"]`)) el.textContent = n ? `${d} of ${n} learned` : 'Being written';
+      for (const el of $$(`[data-cnt="${s.id}"]`)) el.textContent = n ? `${d} of ${n} learned` : 'Coming soon';
     }
     $('#sideProgTxt').textContent = `${td} of ${tn} chapters learned`;
     $('#sideProgBar').style.width = tn ? (100 * td / tn).toFixed(1) + '%' : '0';
@@ -388,12 +388,14 @@
     const list = $('#subjects');
     if (list && !list.children.length) {
       list.innerHTML = G.subjects.filter(s => s.c).map(s => {
-        const open = s.first ? `<a class="subj" href="#${s.first}">` : '<div class="subj subj-soon">';
+        // a course with no chapters yet links to its About page (core about.<id>) until its first chapter is written
+        const href = s.first || s.ab;
+        const open = href ? `<a class="subj${s.first ? '' : ' subj-soon'}" href="#${href}">` : '<div class="subj subj-soon">';
         return `<li class="s-${s.id}">${open}`
           + `<span class="subj-c">${W.esc(s.code === 'ALL' ? 'More' : s.code || '')}${s.y ? ` · ${W.esc(s.y)} syllabus` : ''}</span><span class="subj-t">${W.esc(s.t)}</span>`
           + `<span class="subj-d">${W.esc(s.desc || '')}</span>`
           + `<span class="subj-p"><span data-cnt="${s.id}"></span><span class="subj-bar"><span data-bar="${s.id}"></span></span>`
-          + (s.n ? `<span>${s.n} of ${s.p} chapters ready</span>` : '') + `</span>${s.first ? '</a>' : '</div>'}</li>`;
+          + (s.n ? `<span>${s.n} of ${s.p} chapters ready</span>` : s.ab ? '<span>Read what this subject is about</span>' : '') + `</span>${href ? '</a>' : '</div>'}</li>`;
       }).join('');
     }
     const road = $('#c-home .road');

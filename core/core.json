@@ -8,11 +8,11 @@
     "chem",
     "bio",
     "cs",
-    "psych",
+    "eng",
     "econ",
     "bus",
     "acc",
-    "eng",
+    "psych",
     "other",
     "tools",
     "practice"
@@ -60,6 +60,54 @@
           "title": "How to use this guide",
           "level": "start",
           "group": "Welcome"
+        },
+        {
+          "id": "about.bio",
+          "title": "About Biology",
+          "level": "start",
+          "group": "About the subjects"
+        },
+        {
+          "id": "about.cs",
+          "title": "About Computer Science",
+          "level": "start",
+          "group": "About the subjects"
+        },
+        {
+          "id": "about.eng",
+          "title": "About Engineering",
+          "level": "start",
+          "group": "About the subjects"
+        },
+        {
+          "id": "about.econ",
+          "title": "About Economics",
+          "level": "start",
+          "group": "About the subjects"
+        },
+        {
+          "id": "about.bus",
+          "title": "About Business",
+          "level": "start",
+          "group": "About the subjects"
+        },
+        {
+          "id": "about.acc",
+          "title": "About Accounting",
+          "level": "start",
+          "group": "About the subjects"
+        },
+        {
+          "id": "about.psych",
+          "title": "About Psychology",
+          "level": "start",
+          "group": "About the subjects"
+        },
+        {
+          "id": "about.other",
+          "title": "About Other subjects",
+          "level": "start",
+          "group": "About the subjects"
         }
       ]
     },
