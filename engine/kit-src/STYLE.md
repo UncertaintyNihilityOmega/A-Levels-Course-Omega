@@ -143,6 +143,8 @@ Bold a key word the first time if it has no `:::def` card.
 `A:` the full mark scheme. Parts (a), (b), … need a blank line before them. The page adds a clock, hides every
 answer until the reader presses Finish, then lets them enter their mark per question and lists the chapters to
 revise. The header shows the total marks: it must match the real paper exactly.
+Multiple-choice options: one paragraph each, with a blank line between them and a bold letter (`**A** …`).
+Lines are not kept as line breaks, so options written on consecutive lines run together into one line.
 
 ### Phones (375 px)
 `node kit/zta.js phone [id]` opens every chapter at phone width with all answers and hints open and lists
