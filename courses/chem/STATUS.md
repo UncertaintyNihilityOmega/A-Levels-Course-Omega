@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-24 · REVIEW P17, P18, P20 · 0 open items. Fixed: 40 trailing-bond-as-charge renderings (polymers, nitrogen, hydrocarbons; COURSE rule added); nylon-6,6 redrawn as fig small; dark-mode outlines (planning bung/plunger, electrophoresis strip); acyl ethanedioic warning box fact; planning zero-order mark line; P3 mock Q2(e) wording; polymers text vs orgmap (no hydrolysis edges); AQA board boxes in acyl, nitrogen, polymers; Cambridge past-papers URL verified and added to COURSE links. All numbers recomputed; widgets and mock clock/self-marking checked.
+Last: 2026-10-24 · WRITE P22 · chem.mixed.as (6 sets x 8 questions, 263 marks, 10 MCQs; 6.2k words) and chem.mock.p2 (60 marks exactly: 11+13+12+12+12; 1.7k words). check and phone pass for both, no figures or widgets. Reviewer: mixed.as quiz uses +/- syntax, not lettered options; set 4 Q4 and set 6 Q3 use different Group 2 salts from mock Q3; mock Q5 IR value 1700 cm-1 chosen to sit in the carbonyl range but outside the ester range.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -26,7 +26,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P19: written 2026-10-24
 - P20: reviewed 2026-10-24
 - P21: written 2026-10-24
-- P22: writing 2026-10-24
-- P23: open
+- P22: written 2026-10-24
+- P23: writing 2026-10-24
 - READER: open
 - FINAL: open
