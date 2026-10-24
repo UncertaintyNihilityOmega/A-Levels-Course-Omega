@@ -117,6 +117,10 @@ Reagent: \(\ce{NaBH4}\) or \(\ce{LiAlH4}\) (dry ether). Two hydrogen atoms add a
 
 The reducing agent works by donating a hydride ion, \(\ce{H-}\), which is a nucleophile that attacks the δ+ carbon. You do not need to draw this mechanism at AS. The reaction links the families: oxidation takes you from alcohol to carbonyl, and reduction takes you back.
 
+:::board
+AQA also asks for the mechanism of reduction by NaBH₄: a nucleophilic addition drawn like the HCN mechanism below, with the hydride ion, H⁻, as the nucleophile. Cambridge 9701 asks only for the reagents, the products and the equation with [H].
+:::
+
 :::warn NaBH₄ is not an oxidising agent
 Examiners often see "NaBH₄ oxidises the ketone". The carbonyl compound gains hydrogen, so it is **reduced**, and NaBH₄ is the **reducing agent**. Dichromate and permanganate are the oxidising agents (they turn alcohols into carbonyl compounds).
 :::
@@ -271,7 +275,7 @@ Look at the two carbon atoms either side of C=O. If one of them is a \(\ce{CH3}\
 The reaction map above links alcohols, aldehydes, ketones, carboxylic acids and hydroxynitriles. Follow the arrows from reagent to product.
 
 :::note Spectra
-In infrared spectroscopy, the C=O of an aldehyde or ketone absorbs strongly at 1670–1740 cm⁻¹, and in ¹³C NMR the carbonyl carbon is at 190–220 ppm. Both are covered in [Analytical techniques](#chem.analysis).
+In infrared spectroscopy, the C=O of an aldehyde or ketone absorbs strongly at 1670–1740 cm⁻¹, and in ¹³C NMR (A Level) the carbonyl carbon is at 190–220 ppm. IR is covered in [Infrared spectroscopy and mass spectrometry](#chem.analysis), NMR in [Chromatography and NMR spectroscopy](#chem.analysis2).
 :::
 
 :::eg Compound X has the molecular formula \(\ce{C4H8O}\). It gives an orange precipitate with 2,4-DNPH, no change with Tollens' reagent, and a pale yellow precipitate with alkaline aqueous iodine. Identify X.

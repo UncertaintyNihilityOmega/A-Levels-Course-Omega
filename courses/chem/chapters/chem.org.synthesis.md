@@ -252,7 +252,7 @@ Z has three groups: a ketone (C=O, with a \(\ce{CH3CO}\) end), an alkene (C=C) a
 | Reagent | What happens | Product or observation |
 |---|---|---|
 | \(\ce{Br2(aq)}\) | C=C reacts (electrophilic addition) | orange to colourless; \(\ce{CH3COCH2CHBrCHBrCH2OH}\) [B1] |
-| \(\ce{NaBH4}\) | ketone is reduced; C=C and OH untouched | \(\ce{CH3CH(OH)CH2CH=CHCH2OH}\), hex-4-ene-2,6-diol [B1] |
+| \(\ce{NaBH4}\) | ketone is reduced; C=C and OH untouched | \(\ce{CH3CH(OH)CH2CH=CHCH2OH}\), hex-2-ene-1,5-diol (numbered from the \(\ce{CH2OH}\) end, which gives the OH groups the lower numbers) [B1] |
 | acidified \(\ce{K2Cr2O7}\), heat under reflux | primary alcohol is oxidised to the acid; ketone and C=C untouched | orange to green; \(\ce{CH3COCH2CH=CHCOOH}\) [B1] |
 | 2,4-DNPH | ketone C=O reacts | orange precipitate [B1] |
 | Tollens' reagent | a ketone is not oxidised | no silver mirror [B1] |
@@ -372,7 +372,7 @@ Q: A student wants butan-2-one from but-1-ene in two steps. Suggest the steps.
 A: But-1-ene with steam and \(\ce{H3PO4}\) gives butan-2-ol (the OH goes on the middle carbon, by Markovnikov addition). Warm with acidified \(\ce{K2Cr2O7}\) and distil to give butanone.
 Q: A compound gives a silver mirror with Tollens' reagent and decolourises bromine water. Which two groups are present?
 A: An aldehyde (silver mirror) and a C=C group (bromine water).
-Q: Which of ethanol, propanone and ethanal decolourises warm acidified dichromate(VI)? Explain.
+Q: Which of ethanol, propanone and ethanal turns warm acidified dichromate(VI) from orange to green? Explain.
 A: Ethanol and ethanal. A primary alcohol and an aldehyde are oxidised, which turns orange \(\ce{Cr2O7^2-}\) to green \(\ce{Cr^3+}\). A ketone is not oxidised.
 Q: Write an equation for the hydrolysis of propanenitrile with dilute hydrochloric acid.
 A: \[\ce{CH3CH2CN + HCl + 2H2O -> CH3CH2COOH + NH4Cl}\]
@@ -413,7 +413,7 @@ Q: [7 marks] ★★★ Compound M is \(\ce{HOOCCH2CH=CHCH2CH2OH}\). State what y
 H: List the three groups in M first: carboxylic acid, alkene, primary alcohol.
 H: \(\ce{LiAlH4}\) reduces a carboxylic acid but leaves C=C alone; dichromate oxidises a primary alcohol but at this level leaves C=C alone.
 A: (a) Effervescence (\(\ce{CO2}\)). [B1] The product is the sodium salt, \(\ce{NaOOCCH2CH=CHCH2CH2OH}\). [B1]
-(b) The orange colour disappears. [B1]
+(b) The orange colour disappears, giving \(\ce{HOOCCH2CHBrCHBrCH2CH2OH}\). [B1]
 (c) The carboxylic acid is reduced to a primary alcohol: \(\ce{HOCH2CH2CH=CHCH2CH2OH}\), hex-3-ene-1,6-diol. [B1] [B1]
 (d) The primary alcohol is oxidised to a carboxylic acid: \(\ce{HOOCCH2CH=CHCH2COOH}\), hex-3-enedioic acid, and the solution turns from orange to green. [B1] [B1]
 Q: [8 marks] ★★★ Devise a route from ethene to 2-hydroxypropanoic acid, \(\ce{CH3CH(OH)COOH}\), in four steps. Give the reagents and conditions and name each intermediate, and name the mechanism of the step that adds the extra carbon.
@@ -426,7 +426,7 @@ Step 4: heat with dilute acid (hydrolysis) [B1] to give 2-hydroxypropanoic acid.
 :::
 
 :::try Stretch for A*
-Q: [7 marks] ★★★ Butanedioic acid, \(\ce{HOOCCH2CH2COOH}\), can be made from ethene. (a) Suggest a two-reagent route with an intermediate that contains two bromine atoms, giving reagents and conditions, the intermediate and the type of reaction in each step. (b) A chemist needs 10.0 g of butanedioic acid and the overall yield of the route is 40.0 %. Calculate the mass of ethene needed.
+Q: [7 marks] ★★★ Butanedioic acid, \(\ce{HOOCCH2CH2COOH}\), can be made from ethene. (a) Suggest a three-step route with an intermediate that contains two bromine atoms, giving reagents and conditions, the intermediate and the type of reaction in each step. (b) A chemist needs 10.0 g of butanedioic acid and the overall yield of the route is 40.0 %. Calculate the mass of ethene needed.
 H: The product has four carbons and two COOH groups. Each COOH comes from a CN group, and each CN group replaces a bromine atom.
 H: Ethene with \(\ce{Br2}\) gives 1,2-dibromoethane. Hydrolysing a dinitrile makes two acid groups.
 A: (a) Ethene with \(\ce{Br2}\) at room temperature gives 1,2-dibromoethane (electrophilic addition). [B1]

@@ -46,7 +46,7 @@ Carboxylic acids are named with the ending **-oic acid**, and the carbon of the 
 An ester has two parts. It is made from an acid and an alcohol, and its name has two words in the same order: the **alkyl group of the alcohol** first, then the **-oate** from the acid. The acid part contains the C=O carbon.
 
 :::html
-<figure class="fig small"><svg viewBox="0 25 330 190" role="img" aria-label="Skeletal formula of methyl propanoate with the left part, from the acid, marked propanoate and the right part, from the alcohol, marked methyl"><text class="tl tc" x="125" y="104">O</text><text class="tl tc" x="90" y="48">O</text><path class="ln thick" d="M20 80L55 100"/><path class="ln thick" d="M55 100L90 80"/><path class="ln thick" d="M90 80L118 96"/><path class="ln thick" d="M132 96L160 80"/><path class="ln thick" d="M87.4 80L87.4 56M92.6 80L92.6 56"/><path class="ln-m thin" d="M12 126V132H105V126"/><path class="ln-m thin" d="M114 126V132H168V126"/><text class="tl tc ta" x="58" y="153">acid part</text><text class="tl tc" x="58" y="169">propanoate</text><text class="tl tc ta" x="145" y="153">alcohol part</text><text class="tl tc" x="145" y="169">methyl</text><text class="tl tc" x="100" y="200">methyl propanoate</text></svg><figcaption>Methyl propanoate. The part with the C=O carbon comes from propanoic acid and gives the ending -oate. The part on the single-bonded oxygen comes from methanol and is named first, as methyl.</figcaption></figure>
+<figure class="fig small"><svg viewBox="-75 25 330 190" role="img" aria-label="Skeletal formula of methyl propanoate with the left part, from the acid, marked propanoate and the right part, from the alcohol, marked methyl"><text class="tl tc" x="125" y="104">O</text><text class="tl tc" x="90" y="48">O</text><path class="ln thick" d="M20 80L55 100"/><path class="ln thick" d="M55 100L90 80"/><path class="ln thick" d="M90 80L118 96"/><path class="ln thick" d="M132 96L160 80"/><path class="ln thick" d="M87.4 80L87.4 56M92.6 80L92.6 56"/><path class="ln-m thin" d="M12 126V132H105V126"/><path class="ln-m thin" d="M114 126V132H168V126"/><text class="tl tc ta" x="58" y="153">acid part</text><text class="tl tc" x="58" y="169">propanoate</text><text class="tl tc ta" x="145" y="153">alcohol part</text><text class="tl tc" x="145" y="169">methyl</text><text class="tl tc" x="100" y="200">methyl propanoate</text></svg><figcaption>Methyl propanoate. The part with the C=O carbon comes from propanoic acid and gives the ending -oate. The part on the single-bonded oxygen comes from methanol and is named first, as methyl.</figcaption></figure>
 :::
 
 So \(\ce{CH3COOCH2CH3}\) is **ethyl ethanoate** (ethanoic acid part, ethyl from ethanol), \(\ce{CH3CH2COOCH3}\) is methyl propanoate and \(\ce{HCOOCH2CH2CH3}\) is propyl methanoate. Reading the formula backwards gives a different ester: \(\ce{CH3CH2COOCH3}\) and \(\ce{CH3COOCH2CH3}\) are isomers (both \(\ce{C4H8O2}\)), but methyl propanoate and ethyl ethanoate are different compounds.
@@ -191,7 +191,7 @@ The breaking of a bond in a molecule by reaction with water. Hydrolysis of an es
 
 :::cols
 :::col With dilute acid, heat under reflux
-The reverse of esterification. It is **reversible** and does not go to completion, because the water used is also present in the reaction. The products are the **carboxylic acid** and the alcohol. A large excess of water pushes the equilibrium to the right.
+The reverse of esterification. It is **reversible** and does not go to completion, because the acid and alcohol formed react back to give ester and water. The products are the **carboxylic acid** and the alcohol. A large excess of water pushes the equilibrium to the right.
 \[\ce{CH3COOCH2CH3 + H2O <=>[H+] CH3COOH + CH3CH2OH}\]
 :::
 :::col With dilute alkali, heat under reflux
@@ -223,6 +223,10 @@ To obtain the free acid after alkaline hydrolysis, **acidify** the mixture with 
 Hydrolysis of a fat or vegetable oil with hot aqueous sodium hydroxide is called **saponification**. Each molecule of fat has three ester links, so three \(\ce{OH-}\) ions are used per molecule. The products are propane-1,2,3-triol (glycerol) and the sodium salts of three long-chain carboxylic acids. These sodium salts are soap.
 
 \[\ce{(RCOO)3C3H5 + 3NaOH -> 3RCOONa + C3H5(OH)3}\]
+
+:::board
+AQA also teaches biodiesel: a mixture of methyl esters of long-chain carboxylic acids, made by reacting vegetable oils with methanol in the presence of a catalyst. Biodiesel is not in the Cambridge 9701 syllabus.
+:::
 
 ## Nitriles and amines from halogenoalkanes
 

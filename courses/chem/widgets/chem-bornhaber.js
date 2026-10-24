@@ -59,14 +59,17 @@
       const g = gcd(st.cm, st.cx);
       const nM = st.cx / g, nX = st.cm / g;
       const formula = st.m + sub(nM) + (st.x.length > 0 ? st.x : '') + sub(nX);
+      // equations show the amounts used for one mole of compound (2Na(s) → 2Na(g) for Na₂O)
+      const cm = nM > 1 ? String(nM) : '', cx = nX > 1 ? String(nX) : '';
+      const halfX = nX === 1 ? '½' : (nX === 2 ? '' : nX / 2);
       const terms = [
-        { k: 'at_m', mult: nM, name: 'ΔHat(' + st.m + ')', eq: st.m + '(s) → ' + st.m + '(g)' },
-        { k: 'at_x', mult: nX, name: 'ΔHat(' + st.x + ')', eq: '½' + st.x + '₂(g) → ' + st.x + '(g)' },
-        { k: 'ie1', mult: nM, name: 'IE₁(' + st.m + ')', eq: st.m + '(g) → ' + st.m + '⁺(g) + e⁻' }
+        { k: 'at_m', mult: nM, name: 'ΔHat(' + st.m + ')', eq: cm + st.m + '(s) → ' + cm + st.m + '(g)' },
+        { k: 'at_x', mult: nX, name: 'ΔHat(' + st.x + ')', eq: halfX + st.x + '₂(g) → ' + cx + st.x + '(g)' },
+        { k: 'ie1', mult: nM, name: 'IE₁(' + st.m + ')', eq: cm + st.m + '(g) → ' + cm + st.m + '⁺(g) + ' + cm + 'e⁻' }
       ];
-      if (st.cm >= 2) terms.push({ k: 'ie2', mult: nM, name: 'IE₂(' + st.m + ')', eq: st.m + '⁺(g) → ' + st.m + '²⁺(g) + e⁻' });
-      terms.push({ k: 'ea1', mult: nX, name: 'EA₁(' + st.x + ')', eq: st.x + '(g) + e⁻ → ' + st.x + '⁻(g)' });
-      if (st.cx >= 2) terms.push({ k: 'ea2', mult: nX, name: 'EA₂(' + st.x + ')', eq: st.x + '⁻(g) + e⁻ → ' + st.x + '²⁻(g)' });
+      if (st.cm >= 2) terms.push({ k: 'ie2', mult: nM, name: 'IE₂(' + st.m + ')', eq: cm + st.m + '⁺(g) → ' + cm + st.m + '²⁺(g) + ' + cm + 'e⁻' });
+      terms.push({ k: 'ea1', mult: nX, name: 'EA₁(' + st.x + ')', eq: cx + st.x + '(g) + ' + cx + 'e⁻ → ' + cx + st.x + '⁻(g)' });
+      if (st.cx >= 2) terms.push({ k: 'ea2', mult: nX, name: 'EA₂(' + st.x + ')', eq: cx + st.x + '⁻(g) + ' + cx + 'e⁻ → ' + cx + st.x + '²⁻(g)' });
       terms.push({ k: 'latt', mult: 1, name: 'ΔHlatt', eq: (nM > 1 ? nM : '') + st.m + SUP[st.cm] + '⁺(g) + ' + (nX > 1 ? nX : '') + st.x + SUP[st.cx] + '⁻(g) → ' + formula + '(s)' });
       const hfEq = (nM > 1 ? nM : '') + st.m + '(s) + ' + (nX === 1 ? '½' : (nX > 2 ? nX / 2 : '')) + st.x + '₂(g) → ' + formula + '(s)';
       return { nM, nX, formula, terms, hfEq };

@@ -356,7 +356,7 @@ Use this for the minimum temperature of a reaction with positive ΔH and positiv
 The graph of \(\Delta G\) against \(T\) is a straight line, because \(\Delta G = \Delta H - T\Delta S\) has the form \(y = c + mx\): the intercept (at \(T = 0\)) is \(\Delta H\) and the gradient is \(-\Delta S\). Thermal decomposition of calcium carbonate, \(\ce{CaCO3(s) -> CaO(s) + CO2(g)}\), with \(\Delta H^{\ominus} = +178\) kJ mol⁻¹ and \(\Delta S^{\ominus} = +160.6\) J K⁻¹ mol⁻¹ (worked out in the next example), shows the case with both positive.
 
 :::plot Gibbs free energy change for the decomposition of calcium carbonate against temperature. The line crosses ΔG = 0 at 1108 K: below that temperature the reaction is not feasible, above it the reaction is feasible.
---f "178-0.1606*x" --label "ΔG = ΔH − TΔS" --x 0 1700 --y -120 260 --pt "1108,0,T = 1108 K@ne" --pt "298,130.1,ΔG = +130 kJ mol⁻¹ at 298 K@ne" --xlabel "T / K" --ylabel "ΔG / kJ mol⁻¹" --legend tr
+--f "178-0.1606*x" --label "ΔG = ΔH − TΔS" --x 0 1700 --y -120 260 --pt "1108,0,T = 1108 K@ne" --pt "298,130.1,ΔG = +130 kJ mol⁻¹ at 298 K@ne" --xlabel "T / K" --ylabel "ΔG / kJ mol⁻¹" --legend tr --xstep 500
 :::
 
 :::eg (Exam style) For \(\ce{CaCO3(s) -> CaO(s) + CO2(g)}\), \(\Delta H^{\ominus} = +178\) kJ mol⁻¹. Use \(S^{\ominus}\) values (data for this question) in J K⁻¹ mol⁻¹: \(\ce{CaCO3}\) 92.9, \(\ce{CaO}\) 39.7, \(\ce{CO2}\) 213.8. Calculate the minimum temperature at which the decomposition is feasible, and say why it is not feasible at room temperature.

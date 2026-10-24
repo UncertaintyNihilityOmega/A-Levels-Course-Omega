@@ -66,7 +66,9 @@
     amines: 'amine', 'primary amine': 'amine', 'secondary amine': 'amine2', alkenes: 'alkene', alkanes: 'alkane',
     halogenoalkane: 'halo', halogenoalkanes: 'halo', haloalkane: 'halo', arenes: 'arene', benzene: 'arene', 'acyl chloride': 'acylcl',
     phenols: 'phenol', 'amino acid': 'aminoacid', 'diazonium': 'diazo', 'diazonium salt': 'diazo', 'hydroxynitrile': 'hnitrile',
-    'poly(alkene)': 'polyalkene', polymer: 'polyalkene', 'carboxylate': 'salt', 'carboxylate salt': 'salt', diols: 'diol'
+    'poly(alkene)': 'polyalkene', polymer: 'polyalkene', 'carboxylate': 'salt', 'carboxylate salt': 'salt', diols: 'diol',
+    carbonyl: 'ald', carbonyls: 'ald', 'carbonyl compound': 'ald', 'carbonyl compounds': 'ald', acids: 'acid',
+    'acyl chlorides': 'acylcl', amides: 'amide', 'halogenoarenes': 'haloarene'
   };
   ALIASES['tertiary alcohol'] = 'alc3';
 

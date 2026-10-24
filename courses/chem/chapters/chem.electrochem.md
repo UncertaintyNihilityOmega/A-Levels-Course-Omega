@@ -150,7 +150,7 @@ The calculation: \(Q = It\) (using the mean current), moles of copper \(= \Delta
 \[Q = 0.350 \times (45.0 \times 60) = 945\ \mathrm{C}\] [M1]
 \(n(\ce{Cu}) = 0.312 / 63.5 = 4.913 \times 10^{-3}\) mol, so \(n(\mathrm{e^-}) = 2 \times 4.913 \times 10^{-3} = 9.827 \times 10^{-3}\) mol. [M1]
 \[L = \frac{Q}{n(\mathrm{e^-})\,e} = \frac{945}{9.827 \times 10^{-3} \times 1.60 \times 10^{-19}} = 6.01 \times 10^{23}\ \mathrm{mol^{-1}}\] [A1]
-This is within 1% of the accepted value, \(6.022 \times 10^{23}\). The main errors are the mass difference (the balance reads to 0.01 g, so 0.312 g is uncertain by about 3%) and the current drifting; a longer run gives a larger mass change and a smaller percentage error.
+This is within 1% of the accepted value, \(6.022 \times 10^{23}\). The main errors are the mass difference (with a balance reading to 0.01 g, a gain of about 0.31 g is uncertain by about 3%) and the current drifting; a longer run gives a larger mass change and a smaller percentage error.
 :::
 
 ## Electrode potentials
@@ -352,7 +352,13 @@ For zinc, \(z = 2\): \(E = -0.76 + 0.0295 \times \log_{10}(0.100) = -0.76 - 0.02
 Diluting the \(\ce{Zn^2+}\) makes zinc a stronger reducing agent, and the cell voltage rises above the standard 1.10 V.
 :::
 
-A graph of E against \(\log_{10}[\ce{Cu^2+}]\) is a straight line with a gradient of 0.0295 V per tenfold change, passing through +0.34 V at 1.00 mol dm⁻³. The widget's second tab draws it: choose a half-cell, set the concentrations on a logarithmic slider and read E.
+A graph of E against \(\log_{10}[\ce{Cu^2+}]\) is a straight line with a gradient of 0.0295 V per tenfold change, passing through +0.34 V at 1.00 mol dm⁻³.
+
+:::plot Electrode potential of the Cu²⁺/Cu half-cell against log₁₀[Cu²⁺]. The line rises by 0.0295 V for each tenfold increase in concentration and passes through E⦵ = +0.34 V at 1.00 mol dm⁻³, where the logarithm is 0.
+--f "0.34+0.0295*x" --label "E = 0.34 + 0.0295 log[Cu²⁺]" --x -4 1 --y 0.2 0.4 --pt "0,0.34,E⦵@se" --pt "-2,0.281,+0.28 V at 0.0100 mol dm⁻³@se" --xlabel "log₁₀[Cu²⁺]" --ylabel "E / V" --legend tl --xstep 1 --ystep 0.05
+:::
+
+The widget's second tab draws the same line for any half-cell: choose a half-cell, set the concentrations on a logarithmic slider and read E.
 
 :::html
 <div class="widget" data-w="chem-cell" data-tab="nernst" data-left="Cu" data-right="Ag"></div>
