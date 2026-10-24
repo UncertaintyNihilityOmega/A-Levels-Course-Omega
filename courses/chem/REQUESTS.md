@@ -34,3 +34,10 @@ Engine bugs, new block types, design changes, or anything that needs another cou
     now says so. chem-trend may keep showing 2.6; a chapter that compares halogen electronegativities should use the
     trend in words, or note that the data booklet gives 2.6.
 - chem Specialist (REVIEW P19, P21, P22, 24 Oct 2026): (1) the false-charge lint only catches `\ce{}` fragments that start with "-" (e.g. -O-CH2-); it misses `\ce{CH3CO-}`, `\ce{CH3CH(OH)-}`, `\ce{>CH-}`, `\ce{CH3-O-}` (≈40 cases in organic chapters, listed in REVIEW.md). Rule that would catch them: a fragment ending in "-" after a letter or ")" that is not a known anion. (2) FACTS.md does not state that the Data booklet is used in Papers 1, 2 and 4, or that a wrong Paper 1 answer scores zero (no penalty). Both are standard on 9701 papers ("Use of the Data Booklet may be appropriate"; no mark deducted for a wrong answer) and the chapters rely on them; please confirm against the syllabus and add a line to FACTS.md "papers in detail". I could not open the syllabus from inside the course folder. (3) Engine, minor: in a mock's self-marking, a number above a question's maximum (e.g. 5 in a 1-mark box) stays displayed although the total counts only the maximum; clamp the field.
+  - Organizer 2026-10-24: (1) A rule that flags `CH3CO-` would also flag real anions such as `CH3COO-` or `RO-`, so the lint
+    stays as it is (fragments open at both ends, and `]n-`). The FIX Writer closes the ~40 listed cases by hand; COURSE.md's
+    rule (end bond outside `\ce`) stands. (2) Checked on the Nov 2024 question papers 9701/11 and 9701/41: there is **no
+    Data booklet**. Each paper prints the Periodic Table and "Important values, constants and standards"; other data are
+    given in the question. Paper 1: "Each correct answer will score one mark" (no deduction for wrong answers). FACTS.md
+    "What the papers supply" and COURSE.md now say so; REVIEW.md has an item to fix the ~40 "Data booklet" mentions in 16
+    chapters. (3) Mock self-marking now clamps a mark to the question's maximum (engine app.js).

@@ -22,7 +22,7 @@ condition, arrow), calculation marks (B1 Mr, M1, M1, A1), spot-the-error format,
 chemistry figure (skeletal formulas, curly-arrow mechanisms, apparatus). Copy its SVG patterns.
 
 ## Data values and conventions
-- Data booklet values only (FACTS.md): R = 8.31 J K⁻¹ mol⁻¹, F = 9.65 × 10⁴ C mol⁻¹, L = 6.022 × 10²³ mol⁻¹
+- Syllabus Data section values only (FACTS.md; there is no Data booklet in the exam: papers print only the Periodic Table and important values, other data come in the question): R = 8.31 J K⁻¹ mol⁻¹, F = 9.65 × 10⁴ C mol⁻¹, L = 6.022 × 10²³ mol⁻¹
   (6.02 × 10²³ only when 3 s.f. is clearly enough), e = 1.60 × 10⁻¹⁹ C, molar gas volume 24.0 dm³ mol⁻¹ at room
   conditions (22.4 at s.t.p.), Kw = 1.00 × 10⁻¹⁴ mol² dm⁻⁶ at 298 K, c = 4.18 J g⁻¹ K⁻¹; standard conditions 298 K,
   101 kPa. Bond energies, E⦵, electronegativities, IR, NMR shifts and ionisation energies: only the FACTS.md values.

@@ -148,6 +148,8 @@
           if (inp.value === '' || !isFinite(+inp.value)) delete S.marks[i]; else S.marks[i] = v;
           save(); summary();
         });
+        // show the mark that counts: a number above the maximum (or below 0) is put back in range when the field is left
+        inp.addEventListener('change', () => { if (S.marks[i] != null && +inp.value !== S.marks[i]) inp.value = S.marks[i]; });
         box = W.h('label', { class: 'mock-mark' }, W.h('span', {}, 'Your mark'), inp, W.h('span', {}, `out of ${n}`));
         li.append(box);
       }
