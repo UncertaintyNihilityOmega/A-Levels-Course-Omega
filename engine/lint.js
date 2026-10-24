@@ -69,6 +69,12 @@ function lintChapter(ch, text, ctx = {}) {
     const shown = sumMarks(b[2]);
     if (q && shown !== +q[1]) errors.push(`marks: worked example "${b[1].slice(0, 50)}" says [${q[1]} marks] but shows ${shown}`);
   }
+  // mhchem reads a final "-" as a negative charge, so a bond fragment like \ce{-CO-NH-} or \ce{[...]n-} shows a false charge
+  // Only the last term counts, and only a bond fragment open at both ends with an inner bond (-CO-NH-) or a polymer
+  // bracket (]n-): ions such as Cl-, CH3O- or -COO- are left alone.
+  const falseCharge = [...text.matchAll(/\\ce\{([^{}]*)\}/g)].map(x => x[1].trim().split(/\s+/).pop())
+    .filter(s => /[\])]n-$/.test(s) || (/^-/.test(s) && /-$/.test(s) && /[A-Za-z0-9)]-[A-Za-z([]/.test(s)));
+  if (falseCharge.length) notes.push(`${falseCharge.length} \\ce{} bond fragment(s) ending in "-" show a false negative charge (put the end bond outside \\ce): ${falseCharge.slice(0, 3).join(', ')}`);
 
   if (!m.summary) notes.push('add an @summary line');
   if (!m.level) notes.push('add an @level line');
