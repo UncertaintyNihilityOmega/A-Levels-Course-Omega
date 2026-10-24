@@ -1,23 +1,45 @@
-# AGENT-RUN: building a course with agents (Organizer only)
+# AGENT-RUN: building a course with agents (Organizer)
 
-Use only when the user asks for an agent run. One Organizer chat at the project root runs the course's steps as
-subagents: **1 Opus Specialist and up to 2 Sonnet Writers/Readers at a time**. Same kit, STATUS.md and packages as
-the classic method, so a course can switch methods at any point.
+The default way to work down ROADMAP.md. An Organizer session at the project root runs the course's steps as
+subagents: **1 Opus Specialist and up to 2 Sonnet Writers/Readers at a time**. Same kit, course STATUS.md and
+packages as the classic method, so a course can switch methods at any point.
 
 ## Cost (Chemistry, 2026)
 - Writer package 220–390k agent tokens (15–35 min); review 200–380k; Reader batch 250–320k; FIX round 100–140k;
   LEAD ~400k.
 - 3 agents use a 5-hour window in about 2–3 packages plus a review. Chemistry (49 chapters) took about 7–8 windows.
 
-## Start
+## Automatic runs (default)
+Runs are driven by an app **scheduled task**, so every step starts in a fresh session with an empty context and no
+chat has to stay open. Set up once (ROADMAP queue item 1); the user then only keeps the desktop app open and the PC
+awake (Windows: Sleep "Never" when plugged in).
+- Task: `mcp__scheduled-tasks__create_scheduled_task`, taskId `zta-agent-run`, hourly off the hour
+  (`23 * * * *`), saved in Auto permissions. Its prompt is self-contained: work in the project root, read
+  ORGANIZER.md, ROADMAP.md and this file, then follow "Each run" below.
+- Lock: `.claude/run.lock` (git-ignored) holds `{"session": "<time started>", "beat": "<last update>"}`. A lock whose
+  `beat` is under 90 minutes old means another session is running: stop at once. Older = stale (that session hit a
+  usage limit or died): take over.
+- Each run:
+  1. Lock check (above). Write the lock.
+  2. `git status`; `check` every changed chapter; commit a checkpoint and push.
+  3. The current course is ROADMAP "Now". Guard on that course. Read `status`; started-but-unfinished packages
+     (`writing`) get resume agents; an interrupted review is re-run whole.
+  4. Run the loop below until the course step is done or the usage limit stops the agents. Update the lock `beat`
+     each time an agent reports.
+  5. Course finished: REVIEW FINAL, assembly, tick ROADMAP, set "Now" to the next item, start it in the same run.
+     Queue empty or a step needs the user (a decision, a manual setting): write it in "Now", delete the lock, stop.
+- Pause: the user disables the task in the app (or says "pause the runs"); set "Now" to say so.
+- Manual runs (an Organizer chat the user keeps open, with a CronCreate hourly check) stay possible: use the same
+  lock so the two never overlap.
+
+## Start (manual run, or the first steps of an automatic run)
 1. `git status` clean; `node courses/<c>/kit/zta.js status`.
 2. Guard on: write the course id into `.claude/hooks/guard-course.txt`. The PreToolUse hook in `.claude/settings.json`
    then blocks any subagent file access or command outside `courses/<c>` (and `..` and git). The Organizer's own
    calls are not checked.
 3. Start the course preview: launch config `<c>-preview`.
-4. Scheduled check: CronCreate, hourly, off the hour (prompt: "Scheduled hourly check …": if agents run, do nothing;
-   if a usage limit stopped them, checkpoint and resume; if none runs, continue the loop). It lives only in this
-   session and expires after 7 days.
+4. Manual runs only: a CronCreate check, hourly, off the hour (if agents run, do nothing; if a usage limit stopped
+   them, checkpoint and resume with SendMessage; if none runs, continue the loop). It lives only in this session.
 5. Launch agents with the templates below: `subagent_type` general-purpose, `model` opus (Specialist) or sonnet
    (Writer, Reader), `effort` high, `run_in_background` true.
 
@@ -43,7 +65,7 @@ the classic method, so a course can switch methods at any point.
 
 ## End of the run
 - Let running agents finish; check and commit their work.
-- Guard off: delete `.claude/hooks/guard-course.txt`. Stop the preview. Delete the scheduled check.
+- Guard off: delete `.claude/hooks/guard-course.txt`. Stop the preview. Delete the CronCreate check and the lock.
 - Update ROADMAP.md "Now"; tick the course.
 
 ## Prompt templates

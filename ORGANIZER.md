@@ -29,12 +29,14 @@ There is no CLAUDE.md at the root: course sessions would load it. Start every Or
   never cut to save tokens.
 - User decisions: chapters stay long and comprehensive; Writers run at high effort and read the whole gold chapter;
   every course plan includes paper guides, mixed practice and one mock per written paper; no in-site flashcards
-  (`:::links` send students to verified external sites); the user tests with a student only after the whole project.
+  (`:::links` send students to verified external sites); the user studies the guide themself and sends feedback
+  (turn it into REVIEW.md items); testing with real students comes after the whole project.
 
 ## Building a course
 
-- **Classic method** (default): the user runs one chat per step in `courses/<c>`, with PROMPTS.md.
-- **Agent method** (only when the user asks): the Organizer runs the steps as agents, following AGENT-RUN.md.
+- **Classic method** (when the user wants to drive a course by hand): one chat per step in `courses/<c>` (PROMPTS.md).
+- **Agent method** (the user's default for the roadmap): an hourly app scheduled task starts a fresh Organizer
+  session that runs the next steps as agents (AGENT-RUN.md "Automatic runs").
 - Cycle: LEAD → Writers claim packages → REVIEW every 3 packages → FIX → READER batches → FIX → REVIEW FINAL.
 
 ## Assembly session

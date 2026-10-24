@@ -9,7 +9,7 @@
     "sync": "node engine/sync.js",
     "serve": "node engine/serve.js site 5100"
   },
-  "license": "Unlicense",
+  "license": "(CC-BY-4.0 AND MIT)",
   "dependencies": {
     "katex": "^0.16.47",
     "markdown-it": "^14.3.2"

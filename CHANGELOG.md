@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+- Licence: content CC BY 4.0, code MIT, credit to UncertaintyNihilityOmega (was the Unlicense).
+- About pages sit in each unbuilt course's own sidebar section until its first chapter is written.
+- Docs rewritten as rules; automatic agent runs (hourly scheduled task, fresh session, lock file) are the default plan.
+
 ## 0.5.0 (2026-10-24)
 - Chemistry complete: 49 chapters (Cambridge 9701), 23 widgets, five mock papers; read through by a beginner Reader.
 - About pages for every course still to be built, linked from the home page.

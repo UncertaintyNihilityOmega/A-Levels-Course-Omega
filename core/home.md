@@ -62,4 +62,6 @@ Every chapter is written for someone meeting the topic for the first time. It st
 
 :::note About this guide
 Facts about syllabuses, exam papers and university admissions were checked in October 2026 against the official Cambridge International syllabuses and university admissions pages. Exam boards update their syllabuses every few years, so always confirm the details for your exam year in the official syllabus for your board. Your progress is saved in this browser only.
+
+Zero to A* by [UncertaintyNihilityOmega](https://github.com/UncertaintyNihilityOmega/A-Levels-Course-Omega). Free to use, share and change with credit: content under CC BY 4.0, code under the MIT License.
 :::

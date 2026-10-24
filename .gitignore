@@ -11,3 +11,6 @@ courses/*/.claude/
 # agent method (AGENT-RUN.md): the course guard is on while guard-course.txt names a course
 .claude/settings.local.json
 .claude/hooks/*.txt
+
+# automatic agent runs (AGENT-RUN.md): one session at a time
+.claude/run.lock

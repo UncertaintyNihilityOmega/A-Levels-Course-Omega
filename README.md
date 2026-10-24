@@ -64,5 +64,7 @@ the board's syllabus and real question papers.
 
 ## Licence
 
-[The Unlicense](LICENSE): public domain. The embedded fonts are under the SIL Open Font License
-(`engine/fonts/`).
+Free to use, copy, change, share and sell, with credit: "Zero to A* by UncertaintyNihilityOmega" and a link to this
+repository. Content (chapters, pages, questions, figures) is under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/);
+code (engine, widgets, checks) is under the MIT License. Details: [LICENSE](LICENSE). The embedded fonts keep the
+SIL Open Font License (`engine/fonts/`).

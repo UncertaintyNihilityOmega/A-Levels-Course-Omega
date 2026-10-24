@@ -1,18 +1,18 @@
 # ROADMAP: build queue and current state
 
 ## Now
-- No run active. Guard off (`.claude/hooks/guard-course.txt` absent). No scheduled check.
+- No run active. Guard off (`.claude/hooks/guard-course.txt` absent). No scheduled task yet, no lock.
 - Next step: queue item 1 (phone and Mac).
 - Biology is planned (64 chapters, 24 packages). Its next LEAD session writes the gold chapter `bio.enzymes`, then
   runs `done LEAD`.
 - Per-course numbers: `node engine/status.js`.
 
 ## Rules
-- Work down the queue with agent runs (AGENT-RUN.md): 1 Opus Specialist + up to 2 Sonnet Writers, one course at a time,
-  guard on that course. A fresh Organizer chat per course run.
+- Work down the queue with automatic agent runs (AGENT-RUN.md "Automatic runs"): an hourly scheduled task starts a
+  fresh Organizer session; 1 Opus Specialist + up to 2 Sonnet Writers, one course at a time, guard on that course.
 - After each step: check, commit, push, update "Now". Tick a line when its item is done.
 - A course ends with: REVIEW FINAL, the assembly session (ORGANIZER.md), guard off, preview stopped.
-- A scheduled check (CronCreate, hourly) resumes a run after a usage-limit stop.
+- A run stopped by a usage limit leaves a stale lock; the next hourly session checkpoints and continues.
 - From 2027 `status.js` warns about syllabuses in their last exam year (math, phys, chem and bio end in 2027): plan
   update passes for the new syllabuses then.
 
@@ -26,7 +26,8 @@
    home screen), tested in Safari on iPhone and Mac; build and kit tools work on macOS (Python and browser paths).
    Accessibility pass: keyboard-only use of every page and widget, screen-reader labels (figures, widgets, maths),
    colour contrast in light and dark (WCAG AA), focus outlines, text zoom to 200%, reduced motion.
-   Automation: a scheduled task (app scheduled tasks, hourly, fresh session each run, lock file) continues agent runs.
+   Automation: create the `zta-agent-run` scheduled task and the lock (AGENT-RUN.md "Automatic runs"), test one run,
+   then let it continue the queue from item 2.
 2. [ ] **Biology** (`bio`): gold chapter + `done LEAD` → packages → reviews → READER → FIX → REVIEW FINAL.
 3. [ ] **Reader pass** on Mathematics, then Physics (READER batches → FIX), as its own run.
 4. [ ] **Further Mathematics** (`math.fm.*`, an extension of the Maths course): LEAD for the extension
