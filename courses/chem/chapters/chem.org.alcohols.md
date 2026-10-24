@@ -214,7 +214,7 @@ For heating under reflux, with the condenser vertical and the vapour returning t
 (b) The aldehyde cannot escape and is oxidised further, so the product is propanoic acid, \(\ce{CH3CH2COOH}\). [B1] The orange mixture turns green as \(\ce{Cr2O7^2-}\) is reduced to \(\ce{Cr^3+}\). [B1]
 \[\ce{CH3CH2CH2OH + 2[O] -> CH3CH2COOH + H2O}\]
 
-(c) Half-equations: \(\ce{Cr2O7^2- + 14H+ + 6e- -> 2Cr^3+ + 7H2O}\) and \(\ce{CH3CH2CH2OH -> CH3CH2CHO + 2H+ + 2e-}\). The second is multiplied by 3 so that both involve 6 electrons. [M1]
+(c) Half-equations: \(\ce{Cr2O7^2- + 14H+ + 6e- -> 2Cr^3+ + 7H2O}\) and \(\ce{CH3CH2CH2OH -> CH3CH2CHO + 2H+ + 2e-}\). Balance the organic one like the inorganic ones: C and O are already equal; add \(\ce{2H+}\) to balance hydrogen, then \(\ce{2e-}\) to balance the charge. The second is multiplied by 3 so that both involve 6 electrons. [M1]
 \[\ce{3CH3CH2CH2OH + Cr2O7^2- + 8H+ -> 3CH3CH2CHO + 2Cr^3+ + 7H2O}\] [A1]
 
 (The \(\ce{H+}\) cancel: \(14 - 6 = 8\) on the left.)

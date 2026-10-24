@@ -162,7 +162,7 @@ For the dissociation \(\ce{HA <=> H+ + A-}\), \(K_a = \dfrac{[\ce{H+}][\ce{A-}]}
 | ethanoic acid, \(\ce{CH3COOH}\) | \(1.74 \times 10^{-5}\) | 4.76 |
 | propanoic acid, \(\ce{CH3CH2COOH}\) | \(1.35 \times 10^{-5}\) | 4.87 |
 
-Chloroethanoic acid is the strongest of the four because the electronegative chlorine atom pulls electron density away from the carboxylate group, which stabilises the \(\ce{CH2ClCOO-}\) ion and makes the acid release \(\ce{H+}\) more readily (see [Carboxylic acids, esters and nitriles](#chem.org.acids)).
+Chloroethanoic acid is the strongest of the four because the electronegative chlorine atom pulls electron density away from the carboxylate group, which stabilises the \(\ce{CH2ClCOO-}\) ion and makes the acid release \(\ce{H+}\) more readily (see [Phenol and the acidity of organic compounds](#chem.org.phenol)).
 
 ### The pH of a weak acid
 
@@ -539,7 +539,7 @@ A fixed volume of solvent removes more solute if it is used in several small por
 :::
 
 :::lab Using a separating funnel
-Pour the mixture into the funnel with the tap closed and put in the stopper. Invert the funnel, open the tap to release the pressure (point the stem away from everyone), close it, shake, then let the layers settle and run the lower layer into a flask. Check which layer is which by adding a drop of water: it joins the aqueous layer. Dry the organic layer with a drying agent such as anhydrous magnesium sulfate and distil off the solvent. (See [Organic synthesis (AS)](#chem.org.synthesis).)
+Pour the mixture into the funnel with the tap closed and put in the stopper. Invert the funnel, open the tap to release the pressure (point the stem away from everyone), close it, shake, then let the layers settle and run the lower layer into a flask. Check which layer is which by adding a drop of water: it joins the aqueous layer. Dry the organic layer with a drying agent such as anhydrous magnesium sulfate and distil off the solvent. (Distillation is described in [Alcohols](#chem.org.alcohols).)
 :::
 
 :::try Start easy, finish at exam standard

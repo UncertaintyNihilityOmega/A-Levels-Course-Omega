@@ -157,5 +157,8 @@ eq("charge NH4+ + OH-", +1 - 1, 0)
 eq("N electrons gained per N", 2 - 0, 2)
 eq("C electrons lost per C", 4 - 2, 2)
 eq("2CO+2NO electrons", 2 * 2, 2 * 2)
+eq("200 atm in MPa (about 20)", round(200 * 101.325 / 1000), 20)
+eq("1 atm in kPa (about 101)", round(101.325), 101)
+eq("2 atm in kPa (about 200)", round(2 * 101.325, -2), 200)
 
 print("ok")

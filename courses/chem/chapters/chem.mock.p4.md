@@ -3,27 +3,25 @@
 @level mock
 @paper CAIE 9701 Paper 4
 @time 2 h
-@summary A full-length mock of Paper 4: nine structured questions on the A Level topics, with AS knowledge assumed, set out like the real paper. Total 100 marks, with a complete mark scheme in examiner language.
+@summary A full-length mock of Paper 4: ten structured questions on the A Level topics, with AS knowledge assumed, set out like the real paper. Total 100 marks, with a complete mark scheme in examiner language.
 
 :::exam
 **Time allowed: 2 hours. Total: 100 marks.**
 
-This mock follows the layout of the real Paper 4: a booklet of structured questions with a Periodic Table and the Data booklet, covering the A Level topics and assuming the AS topics.
+This mock follows the layout of the real Paper 4: a booklet of structured questions, covering the A Level topics and assuming the AS topics. The paper prints a Periodic Table and a page of important values, constants and standards; any other data you need (energy values, electrode potentials, NMR shifts) is given in the question.
 
 - Answer **all** questions.
 - Show your working. Give numerical answers to an appropriate number of significant figures (usually 3) and always give units.
-- Use the Periodic Table and the Data booklet values: \(R = 8.31\) J K⁻¹ mol⁻¹, \(F = 9.65 \times 10^{4}\) C mol⁻¹, \(e = 1.60 \times 10^{-19}\) C, \(K_w = 1.00 \times 10^{-14}\) mol² dm⁻⁶ at 298 K, molar gas volume 24.0 dm³ mol⁻¹ at room conditions.
+- Use the Periodic Table and these important values: \(R = 8.31\) J K⁻¹ mol⁻¹, \(F = 9.65 \times 10^{4}\) C mol⁻¹, \(e = 1.60 \times 10^{-19}\) C, \(K_w = 1.00 \times 10^{-14}\) mol² dm⁻⁶ at 298 K, molar gas volume 24.0 dm³ mol⁻¹ at room conditions.
 - The number of marks for each part is in brackets. Press **Finish** when you have answered every question to see the mark schemes, then enter your mark for each question.
 :::
 
 :::try
-Q: [10 marks] (#chem.lattice) **Question 1.** This question is about sodium oxide, \(\ce{Na2O}\).
+Q: [8 marks] (#chem.lattice) This question is about sodium oxide, \(\ce{Na2O}\).
 
-(a) Define the term *first electron affinity*. (2 marks)
+(a) Explain why the second electron affinity of oxygen is endothermic. (2 marks)
 
-(b) Explain why the second electron affinity of oxygen is endothermic. (2 marks)
-
-(c) Use these data (data for this question), all in kJ mol⁻¹, to calculate the lattice energy of sodium oxide. (4 marks)
+(b) Use these data (data for this question), all in kJ mol⁻¹, to calculate the lattice energy of sodium oxide. (4 marks)
 
 - enthalpy change of formation of \(\ce{Na2O(s)}\) = −414
 - enthalpy change of atomisation of sodium = +107
@@ -32,79 +30,65 @@ Q: [10 marks] (#chem.lattice) **Question 1.** This question is about sodium oxid
 - first electron affinity of oxygen = −141
 - second electron affinity of oxygen = +798
 
-(d) The lattice energy of magnesium oxide, \(\ce{MgO}\), is −3842 kJ mol⁻¹. Explain why it is much more exothermic than the lattice energy of sodium oxide. (2 marks)
-A: (a) the enthalpy change when one mole of electrons is added to one mole of gaseous atoms [B1]
-to form one mole of gaseous 1− ions [B1]
-
-(b) the second electron is added to an ion that is already negative (\(\ce{O-}\)) [B1]
+(c) The lattice energy of magnesium oxide, \(\ce{MgO}\), is −3842 kJ mol⁻¹. Explain why it is much more exothermic than the lattice energy of sodium oxide. (2 marks)
+A: (a) the second electron is added to an ion that is already negative (\(\ce{O-}\)) [B1]
 there is repulsion between the \(\ce{O-}\) ion and the incoming electron, so energy must be supplied [B1]
 
-(c) two moles of Na are needed per mole of \(\ce{Na2O}\): \(2 \times (+107)\) and \(2 \times (+494)\) [B1]
+(b) two moles of Na are needed per mole of \(\ce{Na2O}\): \(2 \times (+107)\) and \(2 \times (+494)\) [B1]
 \(\Delta H_{\mathrm{f}} = 2\Delta H_{\mathrm{at}}(\mathrm{Na}) + 2\,\mathrm{IE}_1 + \Delta H_{\mathrm{at}}(\mathrm O) + \mathrm{EA}_1 + \mathrm{EA}_2 + \Delta H_{\mathrm{latt}}\) [M1]
 \(\Delta H_{\mathrm{latt}} = -414 - (214 + 988 + 249 - 141 + 798) = -414 - 2108\) [M1]
 \(= -2522\) kJ mol⁻¹ [A1]
 
-(d) \(\ce{Mg^2+}\) has a higher charge and a smaller ionic radius than \(\ce{Na+}\), so a higher charge density [B1]
+(c) \(\ce{Mg^2+}\) has a higher charge and a smaller ionic radius than \(\ce{Na+}\), so a higher charge density [B1]
 the electrostatic attraction between the ions is stronger (and there is one \(\ce{Mg^2+}\) for each \(\ce{O^2-}\), not two \(\ce{Na+}\)), so the lattice energy is more exothermic [B1]
 :::
 
 :::try
-Q: [10 marks] (#chem.lattice) **Question 2.** Sodium hydrogencarbonate decomposes on heating: \(\ce{2NaHCO3(s) -> Na2CO3(s) + H2O(g) + CO2(g)}\), \(\Delta H^{\ominus} = +130\) kJ mol⁻¹ (for the equation as written). Standard entropies, in J K⁻¹ mol⁻¹: \(\ce{NaHCO3(s)}\) 102; \(\ce{Na2CO3(s)}\) 135; \(\ce{H2O(g)}\) 189; \(\ce{CO2(g)}\) 214.
+Q: [8 marks] (#chem.lattice) Sodium hydrogencarbonate decomposes on heating: \(\ce{2NaHCO3(s) -> Na2CO3(s) + H2O(g) + CO2(g)}\), \(\Delta H^{\ominus} = +130\) kJ mol⁻¹ (for the equation as written). Standard entropies, in J K⁻¹ mol⁻¹: \(\ce{NaHCO3(s)}\) 102; \(\ce{Na2CO3(s)}\) 135; \(\ce{H2O(g)}\) 189; \(\ce{CO2(g)}\) 214.
 
-(a) Predict the sign of \(\Delta S^{\ominus}\) for the reaction and explain your answer. (2 marks)
+(a) Calculate \(\Delta S^{\ominus}\), and explain why its sign is what you would expect. (2 marks)
 
-(b) Calculate \(\Delta S^{\ominus}\). (2 marks)
+(b) Calculate \(\Delta G^{\ominus}\) at 298 K and state whether the reaction is feasible at this temperature. (2 marks)
 
-(c) Calculate \(\Delta G^{\ominus}\) at 298 K and state whether the reaction is feasible at this temperature. (2 marks)
+(c) Calculate the minimum temperature at which the reaction is feasible. (2 marks)
 
-(d) Calculate the minimum temperature at which the reaction is feasible. (2 marks)
+(d) Barium carbonate must be heated to a much higher temperature than magnesium carbonate to decompose it. Explain this difference. (2 marks)
+A: (a) \(\Delta S^{\ominus} = (135 + 189 + 214) - 2(102) = +334\) J K⁻¹ mol⁻¹ [B1]
+positive, as expected: a solid forms two gases, so the number of ways of arranging the particles and their energy increases [B1]
 
-(e) Barium carbonate must be heated to a much higher temperature than magnesium carbonate to decompose it. Explain this difference. (2 marks)
-A: (a) positive [B1]
-the solid forms two gases, so the number of ways of arranging the particles and their energy increases [B1]
-
-(b) \(\Delta S^{\ominus} = (135 + 189 + 214) - 2(102)\) [M1]
-\(= +334\) J K⁻¹ mol⁻¹ [A1]
-
-(c) \(\Delta G^{\ominus} = 130 - 298 \times 0.334 = +30.5\) kJ mol⁻¹ [M1]
+(b) \(\Delta G^{\ominus} = 130 - 298 \times 0.334 = +30.5\) kJ mol⁻¹ [M1]
 \(\Delta G^{\ominus}\) is positive, so the reaction is not feasible at 298 K [A1]
 
-(d) feasible when \(\Delta G \le 0\): \(T = \Delta H / \Delta S = 130\,000 / 334\) [M1]
+(c) feasible when \(\Delta G \le 0\): \(T = \Delta H / \Delta S = 130\,000 / 334\) [M1]
 \(= 389\) K [A1]
 
-(e) \(\ce{Ba^2+}\) has a larger ionic radius (lower charge density) than \(\ce{Mg^2+}\), so it polarises the carbonate ion less [B1]
+(d) \(\ce{Ba^2+}\) has a larger ionic radius (lower charge density) than \(\ce{Mg^2+}\), so it polarises the carbonate ion less [B1]
 the C–O bond in the carbonate ion is weakened less, so a higher temperature is needed to decompose \(\ce{BaCO3}\) [B1]
 :::
 
 :::try
-Q: [12 marks] (#chem.electrochem) **Question 3.** This question is about electrolysis and electrode potentials.
+Q: [9 marks] (#chem.electrochem) This question is about electrolysis and electrode potentials.
 
 (a) In an experiment to find the Avogadro constant, a current of 0.400 A was passed for 50.0 minutes through aqueous copper(II) sulfate using copper electrodes. The cathode gained 0.395 g of copper. Use \(e = 1.60 \times 10^{-19}\) C to calculate a value for the Avogadro constant, \(L\). (4 marks)
 
-(b) Describe how the standard electrode potential of the \(\ce{Fe^3+}/\ce{Fe^2+}\) system is measured. Include the conditions. (3 marks)
+(b) A half-cell contains a silver electrode in 0.0500 mol dm⁻³ silver nitrate. \(E^{\ominus}(\ce{Ag+}/\ce{Ag}) = +0.80\) V and \(E^{\ominus}(\ce{Zn^2+}/\ce{Zn}) = -0.76\) V. Calculate the electrode potential of this half-cell and the cell potential when it is connected to a standard zinc half-cell. (3 marks)
 
-(c) A half-cell contains a silver electrode in 0.0500 mol dm⁻³ silver nitrate. \(E^{\ominus}(\ce{Ag+}/\ce{Ag}) = +0.80\) V and \(E^{\ominus}(\ce{Zn^2+}/\ce{Zn}) = -0.76\) V. Calculate the electrode potential of this half-cell and the cell potential when it is connected to a standard zinc half-cell. (3 marks)
-
-(d) Calculate \(\Delta G^{\ominus}\), in kJ mol⁻¹, for the reaction \(\ce{Zn(s) + 2Ag+(aq) -> Zn^2+(aq) + 2Ag(s)}\). (2 marks)
+(c) Calculate \(\Delta G^{\ominus}\), in kJ mol⁻¹, for the reaction \(\ce{Zn(s) + 2Ag+(aq) -> Zn^2+(aq) + 2Ag(s)}\). (2 marks)
 A: (a) \(Q = It = 0.400 \times 50.0 \times 60 = 1200\) C [M1]
 number of electrons \(= 1200 / 1.60 \times 10^{-19} = 7.50 \times 10^{21}\); two electrons per \(\ce{Cu}\) atom, so \(3.75 \times 10^{21}\) atoms of Cu [M1]
 \(n(\ce{Cu}) = 0.395 / 63.5 = 6.22 \times 10^{-3}\) mol [M1]
 \(L = 3.75 \times 10^{21} / 6.22 \times 10^{-3} = 6.03 \times 10^{23}\) mol⁻¹ [A1]
 
-(b) a platinum electrode dipping in a solution containing \(\ce{Fe^3+}\) and \(\ce{Fe^2+}\), each at 1.00 mol dm⁻³ [B1]
-connected through a salt bridge to a standard hydrogen electrode (platinum, hydrogen gas at 101 kPa, \(\ce{H+}\) at 1.00 mol dm⁻³) [B1]
-at 298 K, with the potential difference read on a high-resistance voltmeter; this reading is \(E^{\ominus}\) [B1]
-
-(c) \(E = 0.80 + 0.059 \log(0.0500)\) [M1]
+(b) \(E = 0.80 + 0.059 \log(0.0500)\) [M1]
 \(= +0.72\) V (0.723 V) [A1]
 \(E_{\mathrm{cell}} = 0.723 - (-0.76) = 1.48\) V [A1]
 
-(d) \(E^{\ominus}_{\mathrm{cell}} = 0.80 - (-0.76) = +1.56\) V, and \(\Delta G^{\ominus} = -nFE^{\ominus} = -2 \times 9.65 \times 10^{4} \times 1.56\) [M1]
+(c) \(E^{\ominus}_{\mathrm{cell}} = 0.80 - (-0.76) = +1.56\) V, and \(\Delta G^{\ominus} = -nFE^{\ominus} = -2 \times 9.65 \times 10^{4} \times 1.56\) [M1]
 \(= -301\) kJ mol⁻¹ [A1]
 :::
 
 :::try
-Q: [11 marks] (#chem.acids2) **Question 4.** This question is about acids and solubility. \(K_a\) for methanoic acid, HCOOH, is \(1.78 \times 10^{-4}\) mol dm⁻³.
+Q: [11 marks] (#chem.acids2) This question is about acids and solubility. \(K_a\) for methanoic acid, HCOOH, is \(1.78 \times 10^{-4}\) mol dm⁻³.
 
 (a) Calculate the pH of 0.0500 mol dm⁻³ methanoic acid. (3 marks)
 
@@ -130,7 +114,7 @@ lower because of the common ion effect: the extra \(\ce{CO3^2-}\) shifts the equ
 :::
 
 :::try
-Q: [11 marks] (#chem.rates2) **Question 5.** The rate of hydrolysis of 2-bromo-2-methylbutane, RBr, by aqueous sodium hydroxide was studied by measuring initial rates at constant temperature.
+Q: [8 marks] (#chem.rates2) The rate of hydrolysis of 2-bromo-2-methylbutane, RBr, by aqueous sodium hydroxide was studied by measuring initial rates at constant temperature.
 
 | Experiment | [RBr] / mol dm⁻³ | [\(\ce{OH-}\)] / mol dm⁻³ | initial rate / mol dm⁻³ s⁻¹ |
 |---|---|---|---|
@@ -143,8 +127,6 @@ Q: [11 marks] (#chem.rates2) **Question 5.** The rate of hydrolysis of 2-bromo-2
 (b) Write the rate equation and calculate the rate constant, with units. (3 marks)
 
 (c) Name the mechanism consistent with these data and describe the rate-determining step. (2 marks)
-
-(d) In the Haber process an iron catalyst is used. Describe how a heterogeneous catalyst increases the rate of reaction. (3 marks)
 A: (a) experiments 1 and 2: [RBr] doubles with [\(\ce{OH-}\)] constant and the rate doubles, so first order in RBr [M1] [A1]
 experiments 1 and 3: [\(\ce{OH-}\)] × 3 with [RBr] constant and the rate is unchanged, so zero order in \(\ce{OH-}\) [A1]
 
@@ -154,14 +136,10 @@ experiments 1 and 3: [\(\ce{OH-}\)] × 3 with [RBr] constant and the rate is unc
 
 (c) \(\mathrm{S_N1}\) [B1]
 the rate-determining step is the slow ionisation of RBr to a carbocation and a bromide ion; hydroxide ions react in a later, fast step [B1]
-
-(d) reactant molecules (\(\ce{N2}\) and \(\ce{H2}\)) are adsorbed onto the surface of the iron [B1]
-the bonds in the adsorbed molecules are weakened, so the activation energy is lower [B1]
-the product (\(\ce{NH3}\)) is desorbed, freeing the surface for more reactant molecules [B1]
 :::
 
 :::try
-Q: [12 marks] (#chem.transition) **Question 6.** This question is about transition elements.
+Q: [12 marks] (#chem.transition) This question is about transition elements.
 
 (a) Write the full electronic configuration of a chromium atom and the configuration of a \(\ce{Cr^3+}\) ion in the form [Ar] 3dⁿ. (2 marks)
 
@@ -173,7 +151,7 @@ Q: [12 marks] (#chem.transition) **Question 6.** This question is about transiti
 
 (ii) Calculate the percentage by mass of iron in the alloy. (4 marks)
 
-(d) Hydrochloric acid cannot be used to acidify the solution in (c). Use data from the Data booklet to explain why. (2 marks)
+(d) Hydrochloric acid cannot be used to acidify the solution in (c). Use these data to explain why: \(E^{\ominus}(\ce{MnO4-}/\ce{Mn^2+}) = +1.52\) V; \(E^{\ominus}(\ce{Cl2}/\ce{Cl-}) = +1.36\) V. (2 marks)
 A: (a) chromium atom: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁵ 4s¹ [B1]
 \(\ce{Cr^3+}\): [Ar] 3d³ [B1]
 
@@ -193,7 +171,7 @@ this is positive, so manganate(VII) would also oxidise chloride ions to chlorine
 :::
 
 :::try
-Q: [8 marks] (#chem.complexes) **Question 7.** This question is about complex ions.
+Q: [8 marks] (#chem.complexes) This question is about complex ions.
 
 (a) The ion \(\ce{[Co(H2O)6]^2+}\) is pink and \(\ce{[Co(NH3)6]^2+}\) is brown. Explain why they are coloured and why the colours differ. (4 marks)
 
@@ -213,11 +191,11 @@ units: mol⁻⁶ dm¹⁸ [B1]
 :::
 
 :::try
-Q: [13 marks] (#chem.org.arenes) **Question 8.** This question is about arenes and phenol.
+Q: [13 marks] (#chem.org.arenes) This question is about arenes and phenol.
 
 (a) Describe the mechanism of the nitration of benzene, naming the electrophile and showing how it is formed. Describe the movement of electrons in each step in words. (5 marks)
 
-(b) Methylbenzene reacts with chlorine under two different sets of conditions to give different products. For each, state the conditions, the type of reaction and the organic product(s). (3 marks)
+(b) Benzene can be converted into 1-phenylethanol, \(\ce{C6H5CH(OH)CH3}\), in two steps. Give the reagents and conditions for each step, and explain why the 1-phenylethanol formed does not rotate plane-polarised light. (3 marks)
 
 (c) Outline how benzene can be converted into phenylamine in two steps, giving the reagents and conditions. (3 marks)
 
@@ -228,9 +206,9 @@ this gives a positively charged intermediate in which the delocalisation is part
 the C–H bond breaks and its pair of electrons returns to the ring, restoring the delocalised system; a proton is lost [B1]
 \(\ce{H+ + HSO4- -> H2SO4}\): the sulfuric acid is regenerated, so it acts as a catalyst [B1]
 
-(b) chlorine with ultraviolet light: free-radical substitution in the side chain, giving (chloromethyl)benzene, \(\ce{C6H5CH2Cl}\) [B1]
-chlorine with aluminium chloride, no ultraviolet light, room temperature: electrophilic substitution in the ring [B1]
-giving 2-chloromethylbenzene and 4-chloromethylbenzene [B1]
+(b) step 1: ethanoyl chloride, \(\ce{CH3COCl}\), with anhydrous \(\ce{AlCl3}\), heat (Friedel–Crafts acylation), giving 1-phenylethanone, \(\ce{C6H5COCH3}\) [B1]
+step 2: reduction with \(\ce{NaBH4}\) (or \(\ce{LiAlH4}\) in dry ether) [B1]
+the C=O group is planar, so the hydride ion attacks it equally from either side; equal amounts of the two enantiomers form (a racemic mixture) and their rotations cancel [B1]
 
 (c) step 1: concentrated nitric acid and concentrated sulfuric acid at 25–60 °C gives nitrobenzene [B1]
 step 2: tin and concentrated hydrochloric acid, heated [B1]
@@ -241,7 +219,7 @@ a lone pair on the oxygen of the OH group delocalises into the ring, so the ring
 :::
 
 :::try
-Q: [13 marks] (#chem.org.nitrogen) **Question 9.** This question is about nitrogen compounds.
+Q: [13 marks] (#chem.org.nitrogen) This question is about nitrogen compounds.
 
 (a) Alanine is \(\ce{CH3CH(NH2)COOH}\). Give the structure of alanine as a zwitterion and in strongly acidic solution, and state the direction in which alanine moves in electrophoresis at a pH well above its isoelectric point. (3 marks)
 
@@ -254,6 +232,8 @@ Q: [13 marks] (#chem.org.nitrogen) **Question 9.** This question is about nitrog
 - δ 1.1 (3), a triplet
 - δ 2.2 (2), a quartet
 - δ 6.0 (2), a broad singlet
+
+Chemical shifts, δ / ppm: alkane \(\ce{CH3}\) and \(\ce{CH2}\) 0.9–1.7; alkyl next to C=O 2.2–3.0; amide N–H 5.0–12.0.
 
 (i) Write an equation for the formation of W. (1 mark)
 
@@ -281,6 +261,36 @@ hydrogen chloride, \(\ce{HCl}\) [B1]
 (iii) the signal disappears, because the N–H hydrogens exchange with deuterium from D₂O, and deuterium does not appear in a ¹H spectrum [B1]
 
 (iv) three peaks (three carbon environments) [B1]
+:::
+
+:::try
+Q: [10 marks] (#chem.org.acyl) This question is about 4-hydroxybenzoic acid, \(\ce{HOC6H4COOH}\), and its methyl ester, methyl 4-hydroxybenzoate, \(\ce{HOC6H4COOCH3}\), which is used as a food preservative.
+
+(a) 4-hydroxybenzoic acid is added (i) to an excess of aqueous sodium hydroxide and (ii) to aqueous sodium carbonate. Give the formula of the organic product in each case, and explain the difference. (3 marks)
+
+(b) Methyl 4-hydroxybenzoate reacts with ethanoyl chloride at room temperature, but it does not react with ethanoic acid under the same conditions.
+
+(i) Give the structural formula of the organic product formed with ethanoyl chloride. (1 mark)
+
+(ii) Explain why ethanoyl chloride reacts with the phenol group but ethanoic acid does not. (2 marks)
+
+(c) State the number of peaks in the ¹³C NMR spectrum of methyl 4-hydroxybenzoate, and explain your answer. (2 marks)
+
+(d) A mixture of 4-hydroxybenzoic acid and methyl 4-hydroxybenzoate is separated by thin-layer chromatography on a polar stationary phase (aluminium oxide). State which compound has the larger \(R_f\) value and explain why. (2 marks)
+A: (a)(i) \(\ce{NaOC6H4COONa}\): both the COOH group and the phenol OH group lose \(\ce{H+}\) [B1]
+(ii) \(\ce{HOC6H4COONa}\) (with effervescence of \(\ce{CO2}\)): only the COOH group reacts [B1]
+the phenol group is too weak an acid to react with carbonate: in the phenoxide ion the negative charge is spread into the ring of carbon atoms, but in the carboxylate ion it is shared by two electronegative oxygen atoms, which stabilises it more [B1]
+
+(b)(i) \(\ce{CH3COOC6H4COOCH3}\) (an ester; \(\ce{HCl}\) is also formed) [B1]
+
+(ii) the carbonyl carbon of ethanoyl chloride is bonded to two electronegative atoms, O and Cl, so it is strongly \(\delta+\) [B1]
+the oxygen of a phenol is a weak nucleophile because its lone pair is delocalised into the ring, so it attacks only this very \(\delta+\) carbon, not the less \(\delta+\) carbon of ethanoic acid [B1]
+
+(c) six peaks [B1]
+the ring has a line of symmetry through C1 and C4, so its six carbons give four environments (C1, C2 and C6, C3 and C5, C4); add the C=O carbon and the \(\ce{OCH3}\) carbon [B1]
+
+(d) methyl 4-hydroxybenzoate has the larger \(R_f\) value [B1]
+4-hydroxybenzoic acid is more polar (its COOH group forms more hydrogen bonds), so it is held more strongly by the polar stationary phase and moves a shorter distance [B1]
 :::
 
 Next: [Mock paper: Paper 5 planning, analysis and evaluation](#chem.mock.p5)

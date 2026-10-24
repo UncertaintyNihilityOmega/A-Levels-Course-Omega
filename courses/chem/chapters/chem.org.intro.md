@@ -147,6 +147,8 @@ Nine homologous series besides the alkanes are needed at AS. Each is named after
 
 In the general formulas for the amines and nitriles, n counts the carbon atoms of the alkyl group R only. The carbon of the nitrile group is extra.
 
+At AS a primary amine is named from its alkyl group, as in ethylamine, \(\ce{CH3CH2NH2}\), and propylamine, \(\ce{CH3CH2CH2NH2}\) (propan-1-amine is the systematic name).
+
 :::html
 <figure class="fig small"><svg viewBox="0 0 345 356" role="img" aria-label="Skeletal formulas of propene, 1-chloropropane, propan-1-ol, propylamine and propanenitrile, each labelled with its functional group"><path class="ln thick" d="M18.7 71.7L53.7 51.7M21.3 76.3L56.3 56.3"/><path class="ln thick" d="M55 54L90 74"/><text class="tl tc" x="82" y="96">propene</text><text class="tl tc ta" x="82" y="111">alkene</text><path class="ln thick" d="M190 74L225 54"/><path class="ln thick" d="M225 54L260 74"/><text class="tl tc" x="295" y="58">Cl</text><path class="ln thick" d="M260 74L286.3 59"/><text class="tl tc" x="252" y="96">1-chloropropane</text><text class="tl tc ta" x="252" y="111">halogenoalkane</text><path class="ln thick" d="M20 192L55 172"/><path class="ln thick" d="M55 172L90 192"/><text class="tl tc" x="125" y="176">OH</text><path class="ln thick" d="M90 192L114.5 178"/><text class="tl tc" x="82" y="214">propan-1-ol</text><text class="tl tc ta" x="82" y="229">alcohol</text><path class="ln thick" d="M190 192L225 172"/><path class="ln thick" d="M225 172L260 192"/><text class="tl tc" x="295" y="176">NH₂</text><path class="ln thick" d="M260 192L281.8 179.6"/><text class="tl tc" x="252" y="214">propylamine</text><text class="tl tc ta" x="252" y="229">amine (primary)</text><path class="ln thick" d="M20 290L55 310"/><path class="ln thick" d="M55 310L90 290"/><text class="tl tc" x="125" y="274">N</text><path class="ln" d="M88.2 286.8L114.9 271.6M90 290L116.7 274.7M91.8 293.2L118.5 277.9"/><text class="tl tc" x="82" y="332">propanenitrile</text><text class="tl tc ta" x="82" y="347">nitrile</text></svg><figcaption>Five of the AS functional groups, each with a three-carbon example. Each corner or line end is a carbon atom. The C≡N group is a straight line (180°).</figcaption></figure>
 :::
@@ -281,6 +283,8 @@ Organic equations are classified by what happens to the atoms. Learn each term w
 | **condensation** | two molecules join, and a small molecule such as water is lost | \(\ce{CH3COOH + CH3CH2OH -> CH3COOCH2CH3 + H2O}\) |
 | **oxidation** | gain of oxygen or loss of hydrogen | \(\ce{CH3CH2OH + [O] -> CH3CHO + H2O}\) |
 | **reduction** | gain of hydrogen or loss of oxygen | \(\ce{CH3CHO + 2[H] -> CH3CH2OH}\) |
+
+Some reactions fit two labels: \(\ce{CH3CH2Br + OH-}\) is a hydrolysis (water or OH⁻ breaks the molecule) and also a substitution (OH replaces Br). Give the label the question asks for; if it lists both, "substitution" describes what happens to the atoms and "hydrolysis" what does the breaking.
 
 In organic equations, [O] stands for oxygen supplied by an oxidising agent, and [H] for hydrogen supplied by a reducing agent. They let you balance the equation without writing the reagent.
 

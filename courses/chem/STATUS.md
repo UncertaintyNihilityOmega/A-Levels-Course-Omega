@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-24 · FIX · 5 Specialist items closed: false charges in CH3CO-/CH3CH(OH)- group fragments (org.carbonyl/synthesis/alcohols/acids/intro/arenes, mock.p3); analysis IR wording; practical Hess's law example and errors-table row; exam.p24 try + quiz
+Last: 2026-10-24 · FIX · 26 reader items closed (group17, nitrogen, org.intro, org.isomerism, org.hydrocarbons, org.halogen, org.alcohols, org.carbonyl, org.acids, org.synthesis, analysis, electrochem, acids2): A Level questions moved into the A Level block, bridge sentences (rate-determining, complex ion, atm units, E-standard, amine naming, multi-group naming), pentan-2-one name fix, reworded questions, link targets
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

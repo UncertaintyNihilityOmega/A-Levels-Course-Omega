@@ -301,7 +301,7 @@ The pattern is \((3 + 1)^2 = 9 + 6 + 1\), and the same method gives 1 : 2 : 1 fo
 :::eg The mass spectrum of a halogenoalkane has peaks at m/e 78 (relative height 75), 80 (25) and 43 (100). Identify the compound.
 The peaks at 78 and 80 are in the ratio 75 : 25 = 3 : 1, two mass units apart, so the molecule contains one chlorine atom (\(^{35}\)Cl and \(^{37}\)Cl). [B1]
 
-\(M_r = 78\) (for the \(^{35}\)Cl molecule). Subtracting chlorine, \(78 - 35 = 43\), which is \(\ce{C3H7}\) (\(36 + 7\)). The formula is \(\ce{C3H7Cl}\). [B1]
+\(M_r = 78\) (for the \(^{35}\)Cl molecule). Subtracting chlorine, \(78 - 35 = 43\), which is \(\ce{C3H7}\) (\(36 + 7\)). For an alkyl group \(\ce{C_nH_{2n+1}}\) the mass is \(14n + 1\), so 43 gives \(n = 3\): \(\ce{C3H7}\). The formula is \(\ce{C3H7Cl}\). [B1]
 
 The peak at 43 is the base peak, \(\ce{C3H7+}\), formed by loss of a chlorine atom. It has no chlorine in it, so it appears as a single peak, not a pair. [B1]
 

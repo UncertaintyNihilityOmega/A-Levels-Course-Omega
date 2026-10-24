@@ -346,6 +346,8 @@ A bromine molecule is non-polar, so how can it be an electrophile? When a \(\ce{
 1. The π electrons of ethene repel the bonding electrons of the nearby \(\ce{Br2}\), giving an induced dipole \(\ce{Br^{\delta+}-Br^{\delta-}}\).
 2. Step 1 (slow): the pair of electrons of the π bond forms a bond to the \(\delta+\) bromine atom. At the same time the Br–Br bond breaks heterolytically, and the \(\delta-\) bromine leaves as \(\ce{Br-}\) with both electrons. The other carbon atom is left with only six electrons in its outer shell and a positive charge: a **carbocation**.
 3. Step 2 (fast): a lone pair on \(\ce{Br-}\) forms a bond to the positive carbon, giving 1,2-dibromoethane.
+
+Slow means this step controls how fast the whole reaction goes (it has the higher activation energy); fast means the carbocation is used up as soon as it forms.
 :::
 
 :::html

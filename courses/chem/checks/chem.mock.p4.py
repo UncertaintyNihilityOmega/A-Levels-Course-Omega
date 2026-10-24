@@ -15,8 +15,10 @@ def sf(x, k=3):
 F = 9.65e4
 Cu, Fe = AR['Cu'], AR['Fe']
 
-# Marks: 10 + 10 + 12 + 11 + 11 + 12 + 8 + 13 + 13 = 100
-assert 10 + 10 + 12 + 11 + 11 + 12 + 8 + 13 + 13 == 100
+# Marks: 8 + 8 + 9 + 11 + 8 + 12 + 8 + 13 + 13 + 10 = 100
+assert 8 + 8 + 9 + 11 + 8 + 12 + 8 + 13 + 13 + 10 == 100
+# Q10 13C: methyl 4-hydroxybenzoate, ring 4 environments + C=O + OCH3
+assert 4 + 1 + 1 == 6
 
 # Q1 Na2O Born-Haber
 steps = 2 * 107 + 2 * 494 + 249 + (-141) + 798

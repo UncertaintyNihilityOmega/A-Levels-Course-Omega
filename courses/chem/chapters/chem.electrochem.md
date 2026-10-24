@@ -42,6 +42,8 @@ The solid or liquid that carries the current in and out is an **electrode**. The
 
 **An aqueous solution** contains two kinds of cation (the metal ion and \(\ce{H+}\) from water) and two kinds of anion (the negative ion and \(\ce{OH-}\) from water). Now there is a competition at each electrode, and the standard electrode potentials in the table later in this chapter decide it.
 
+E⦵ (electrode potential, defined later in this chapter) is a number in volts: the more positive it is, the more easily that ion or molecule gains electrons. Use it now as a ranking. "Discharged" means turned into the neutral element at the electrode.
+
 - **At the cathode, the species with the more positive E⦵ is reduced first.** The metal ion is reduced to metal if its E⦵ is more positive than that of water, \(\ce{2H2O + 2e- <=> H2 + 2OH-}\) (E⦵ = −0.83 V). Copper (+0.34 V) and silver (+0.80 V) are deposited. Sodium (−2.71 V), potassium and magnesium (−2.38 V) are not: hydrogen gas forms instead, and the solution becomes alkaline. In an acid solution the \(\ce{H+}\) ions themselves are reduced: \(\ce{2H+ + 2e- -> H2}\).
 - **At the anode, the species with the more negative E⦵ is oxidised first** (it loses electrons more easily). The half-equation for oxygen is \(\ce{O2 + 4H+ + 4e- <=> 2H2O}\) (E⦵ = +1.23 V), so bromide (+1.07 V) and iodide (+0.54 V) are oxidised before water and give bromine and iodine. Sulfate and nitrate ions are not discharged: their elements are already in their highest oxidation states. Water is oxidised instead: \(\ce{2H2O -> O2 + 4H+ + 4e-}\).
 - **Concentration** matters for chloride. On E⦵ alone water (+1.23 V) should be oxidised before chloride (+1.36 V). In a **concentrated** solution of chloride ions, the high concentration makes chloride much easier to oxidise, and the formation of oxygen is a slow process, so chlorine is the main product. In a **dilute** solution, mainly oxygen forms.
@@ -196,7 +198,7 @@ Four parts of the apparatus need a reason:
 | a non-metal and its ions | platinum, in 1.00 mol dm⁻³ of the ions, with the gas at 101 kPa bubbled over it | \(\ce{Cl2 + 2e- <=> 2Cl-}\) |
 | ions of the same element in different oxidation states | platinum, in a solution with **both** ions at 1.00 mol dm⁻³ | \(\ce{Fe^3+ + e- <=> Fe^2+}\) |
 
-When the half-cell is joined to the standard hydrogen electrode, the voltage reading is its E⦵. The sign comes from the direction in which the electrons flow.
+When the half-cell is joined to the standard hydrogen electrode, the voltage reading is its E⦵. The sign comes from the direction in which the electrons flow. If electrons flow from the hydrogen electrode to the half-cell (so the half-cell is the positive terminal), its E⦵ is positive (copper, +0.34 V); if they flow to the hydrogen electrode, its E⦵ is negative (zinc, −0.76 V).
 
 ## The table of standard electrode potentials
 

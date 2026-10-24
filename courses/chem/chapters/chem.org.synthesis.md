@@ -96,7 +96,7 @@ The widget below holds the same map. Click any group to see what makes it and wh
 <div class="widget" data-w="chem-orgmap" data-level="as"></div>
 :::
 
-Try it now. Click **alkene**, then use the route finder to go from **alkene** to **carboxylic acid**. The shortest route is not the only route: look at how many routes the map offers and note which ones keep the carbon count the same. Then find a route from **primary alcohol** to **carboxylic acid** with one *more* carbon atom. You will find that every such route passes through the **nitrile** (or the hydroxynitrile), which is the reason the cyanide reactions matter so much.
+Try it now. Click **alkene**, then use the route finder to go from **alkene** to **carboxylic acid**. The shortest route is not the only route: look at how many routes the map offers and note which ones keep the carbon count the same. Then find a route from **primary alcohol** to **carboxylic acid** with one *more* carbon atom. To check a route, read the reagents on each arrow of the routes the finder lists: the routes that add a carbon are the ones with a KCN or HCN arrow. Every such route passes through the **nitrile** (or the hydroxynitrile), which is the reason the cyanide reactions matter so much.
 
 :::warn A route on the map is not always a route for your molecule
 The map shows what is possible between *groups*. Your molecule has a particular carbon skeleton. A ketone, for instance, can only come from a *secondary* alcohol, so a route to propanone must pass through propan-2-ol, not propan-1-ol. Always check that the position of the group in your molecule matches the route.
@@ -246,6 +246,8 @@ Two kinds of question follow. In the first you are given a molecule and a reagen
 - Acidified \(\ce{K2Cr2O7}\) oxidises primary and secondary alcohols and aldehydes. At this level treat it as leaving C=C and ketones untouched.
 - \(\ce{HBr(g)}\) adds to C=C and also replaces an OH group, so it acts on both.
 
+Molecules with two or three groups need a naming rule that the earlier chapters did not need. The group highest in the order acid, aldehyde, ketone, alcohol, alkene gets the ending and the lowest number. An alcohol that loses out becomes the prefix hydroxy-, and a C=C becomes -en- inside the name, with its own number. So \(\ce{CH3COCH2CH=CHCH2OH}\) is 6-hydroxyhex-4-en-2-one: the ketone wins (carbon 2), the C=C starts at carbon 4 and the OH is on carbon 6.
+
 :::eg Compound Z is \(\ce{CH3COCH2CH=CHCH2OH}\), 6-hydroxyhex-4-en-2-one. Predict what happens when Z reacts with each reagent, and name or draw the organic product where there is one.
 Z has three groups: a ketone (C=O, with a \(\ce{CH3CO}\) end), an alkene (C=C) and a primary alcohol (–OH on the end carbon).
 
@@ -369,7 +371,7 @@ A: Five. The product is 2-methylbutanenitrile, \(\ce{CH3CH2CH(CH3)CN}\): four ca
 Q: Name the type of reaction in each: (a) propene + HBr; (b) bromoethane + NaOH(aq); (c) propanal + HCN; (d) ethanol → ethene.
 A: (a) electrophilic addition. (b) nucleophilic substitution. (c) nucleophilic addition. (d) elimination (dehydration).
 Q: A student wants butan-2-one from but-1-ene in two steps. Suggest the steps.
-A: But-1-ene with steam and \(\ce{H3PO4}\) gives butan-2-ol (the OH goes on the middle carbon, by Markovnikov addition). Warm with acidified \(\ce{K2Cr2O7}\) and distil to give butanone.
+A: But-1-ene with steam and \(\ce{H3PO4}\) gives butan-2-ol (the OH goes on the middle carbon because the secondary carbocation is more stable; see [Hydrocarbons: alkanes and alkenes](#chem.org.hydrocarbons)). Warm with acidified \(\ce{K2Cr2O7}\) and distil to give butanone.
 Q: A compound gives a silver mirror with Tollens' reagent and decolourises bromine water. Which two groups are present?
 A: An aldehyde (silver mirror) and a C=C group (bromine water).
 Q: Which of ethanol, propanone and ethanal turns warm acidified dichromate(VI) from orange to green? Explain.

@@ -144,7 +144,7 @@ A **mechanism** shows how the electrons move. Curly arrows show the movement of 
 <figure class="fig"><svg viewBox="0 34 600 140" role="img" aria-label="SN2 mechanism: hydroxide ion attacks the delta-plus carbon of bromoethane, a transition state with partial bonds to both oxygen and bromine forms, then ethanol and bromide ion"><text class="tl" x="20" y="105">HO⁻</text><circle class="fi" cx="29" cy="91" r="1.7"/><circle class="fi" cx="35" cy="91" r="1.7"/><path class="c1 sw2" d="M34 86Q72 50 106 92" marker-end="url(#ahs-red)"/><text class="tl tc" x="120" y="105">C</text><path class="ln" d="M120 93V68"/><text class="tl tc" x="120" y="62">H</text><path class="ln" d="M115 111L103 128"/><text class="tl tc" x="99" y="143">H</text><path class="ln" d="M125 111L137 128"/><text class="tl tc" x="148" y="143">CH₃</text><path class="ln" d="M128 101H160"/><text class="tl" x="163" y="105">Br</text><text class="tl ta" x="128" y="89">δ+</text><text class="tl ta" x="165" y="89">δ−</text><path class="c1 sw2" d="M144 104Q160 134 176 117" marker-end="url(#ahs-red)"/><path class="ln" d="M195 101H228" marker-end="url(#ah)"/><path class="ln" d="M250 48H242V158H250"/><text class="tl" x="256" y="105">HO</text><path class="ln dash" d="M276 101H318"/><text class="tl tc" x="330" y="105">C</text><path class="ln" d="M330 93V68"/><text class="tl tc" x="330" y="62">H</text><path class="ln" d="M325 111L313 128"/><text class="tl tc" x="309" y="143">H</text><path class="ln" d="M335 111L347 128"/><text class="tl tc" x="358" y="143">CH₃</text><path class="ln dash" d="M338 101H380"/><text class="tl" x="384" y="105">Br</text><path class="ln" d="M406 48H414V158H406"/><text class="tl" x="418" y="54">−</text><path class="ln" d="M432 101H464" marker-end="url(#ah)"/><text class="tl" x="474" y="105">CH₃CH₂OH + Br⁻</text></svg><figcaption>The SN2 mechanism for OH⁻ with bromoethane. One curly arrow runs from a lone pair on O to the δ+ carbon, the other from the C–Br bond to Br. Dashed lines in the transition state are bonds that are half formed or half broken.</figcaption></figure>
 :::
 
-The name describes the mechanism: **S**ubstitution, **N**ucleophilic, **2** molecules (the halogenoalkane and the nucleophile) taking part in the single, rate-determining step.
+The name describes the mechanism: **S**ubstitution, **N**ucleophilic, **2** molecules (the halogenoalkane and the nucleophile) taking part in the single, rate-determining step. (The rate-determining step is the slowest step of a mechanism; it sets the speed of the whole reaction. See the slow and fast steps in [Hydrocarbons: alkanes and alkenes](#chem.org.hydrocarbons).)
 
 :::analogy
 Think of an umbrella turned inside out by the wind. The nucleophile pushes in from one side, the three other groups on the carbon flip over like the umbrella's spokes, and the bromine is pushed out of the other side. The attack has to come from the back, which is why crowded carbons resist SN2.
@@ -312,7 +312,7 @@ Q: 1-bromopropane is heated with KCN in ethanol. Name the product and state how 
 A: Butanenitrile, \(\ce{CH3CH2CH2CN}\). It has four carbon atoms: the three of the chain plus the carbon of the CN group.
 Q: State the two curly arrows in the SN2 mechanism for \(\ce{CN-}\) with bromomethane.
 A: One from the lone pair on the carbon of \(\ce{CN-}\) to the δ+ carbon of \(\ce{CH3Br}\); one from the C–Br bond to the Br atom.
-Q: Suggest why 2-bromo-2-methylpropane cannot form an alkene with three different names on elimination, while 2-bromobutane gives three alkenes.
+Q: Suggest why elimination from 2-bromo-2-methylpropane gives only one alkene, while 2-bromobutane gives three (counting cis and trans).
 A: In 2-bromo-2-methylpropane the three carbons next to C2 are all identical methyl groups, so whichever one loses \(\ce{H+}\), the product is the same: 2-methylpropene, which has no cis/trans isomers. In 2-bromobutane, C1 and C3 are different, giving but-1-ene and but-2-ene, and but-2-ene exists as cis and trans isomers.
 :::
 
@@ -367,7 +367,8 @@ A: The \(\ce{CH3O-}\) ion is a nucleophile and replaces Br, giving methoxyethane
 \[\ce{CH3CH2Br + CH3O- -> CH3CH2OCH3 + Br-}\] [B1]
 Bromoethane is primary, so the mechanism is SN2. [B1]
 Curly arrows: from a lone pair on the O of \(\ce{CH3O-}\) to the δ+ carbon, and from the C–Br bond to Br, through a transition state with partial C–O and C–Br bonds. [B1]
-Q: [4 marks] ★★★ 3-bromo-3-methylhexane, \(\ce{CH3CH2C(CH3)BrCH2CH2CH3}\), has a chiral centre. A single optical isomer of it is hydrolysed by NaOH(aq). Predict whether the alcohol formed is optically active, and explain using the shape of the intermediate.
+Q: [4 marks] ★★★ (A Level: see the last section of [Isomerism](#chem.org.isomerism)) 3-bromo-3-methylhexane, \(\ce{CH3CH2C(CH3)BrCH2CH2CH3}\), has a chiral centre. A single optical isomer of it is hydrolysed by NaOH(aq). Predict whether the alcohol formed is optically active, and explain using the shape of the intermediate.
+H: A racemic mixture has equal amounts of both enantiomers, so it does not rotate plane-polarised light.
 H: The compound is tertiary. Which mechanism does it follow, and what is the intermediate?
 H: A carbocation's positive carbon has three bonds in a plane. From which sides can \(\ce{OH-}\) attack?
 A: The compound is tertiary, so it reacts by SN1 through a carbocation. [B1]

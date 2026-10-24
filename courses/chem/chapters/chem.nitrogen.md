@@ -103,7 +103,7 @@ It turns blue, showing that the gas is alkaline ammonia. [B1]
 
 ## Making ammonia and fertilisers
 
-Ammonia is made industrially by the Haber process, \(\ce{N2(g) + 3H2(g) <=> 2NH3(g)}\) with ΔH = −92 kJ mol⁻¹, at about 200 atm and 400–450 °C with an iron catalyst. The conditions are explained fully in [Chemical equilibria](#chem.equilibria). A rough estimate of the energy change comes from bond energies. The reaction breaks one N≡N and three H–H bonds and forms six N–H bonds.
+Ammonia is made industrially by the Haber process, \(\ce{N2(g) + 3H2(g) <=> 2NH3(g)}\) with ΔH = −92 kJ mol⁻¹, at about 200 atm (1 atm is about 101 kPa, so 200 atm is about 20 MPa) and 400–450 °C with an iron catalyst. The conditions are explained fully in [Chemical equilibria](#chem.equilibria). A rough estimate of the energy change comes from bond energies. The reaction breaks one N≡N and three H–H bonds and forms six N–H bonds.
 
 :::eg (Exam style) Use bond energies to estimate ΔH for \(\ce{N2 + 3H2 -> 2NH3}\). The bond energies in kJ mol⁻¹ are N≡N 944, H–H 436, N–H 390. The accepted value is −92 kJ mol⁻¹: suggest why your answer is not exactly this.
 Bonds broken: \(944 + 3 \times 436 = 2252\) kJ. [M1]
@@ -250,7 +250,7 @@ The syllabus topic title is "Nitrogen and sulfur", but sulfur appears only in co
 
 \[\ce{2SO2(g) + O2(g) <=> 2SO3(g)}\]
 
-using a vanadium(V) oxide catalyst at about 400–450 °C and 1–2 atm. The sulfur trioxide is dissolved in concentrated sulfuric acid (not water, which would react too violently) to make oleum, \(\ce{H2S2O7}\), and the oleum is then diluted to the required strength of sulfuric acid.
+using a vanadium(V) oxide catalyst at about 400–450 °C and 1–2 atm (1 atm is about 101 kPa, so this is about 100–200 kPa). The sulfur trioxide is dissolved in concentrated sulfuric acid (not water, which would react too violently) to make oleum, \(\ce{H2S2O7}\), and the oleum is then diluted to the required strength of sulfuric acid.
 
 \[\ce{SO3 + H2SO4 -> H2S2O7}\]
 \[\ce{H2S2O7 + H2O -> 2H2SO4}\]

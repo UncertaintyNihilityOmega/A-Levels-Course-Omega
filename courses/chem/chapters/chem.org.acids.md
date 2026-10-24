@@ -49,13 +49,13 @@ An ester has two parts. It is made from an acid and an alcohol, and its name has
 <figure class="fig small"><svg viewBox="-75 25 330 190" role="img" aria-label="Skeletal formula of methyl propanoate with the left part, from the acid, marked propanoate and the right part, from the alcohol, marked methyl"><text class="tl tc" x="125" y="104">O</text><text class="tl tc" x="90" y="48">O</text><path class="ln thick" d="M20 80L55 100"/><path class="ln thick" d="M55 100L90 80"/><path class="ln thick" d="M90 80L118 96"/><path class="ln thick" d="M132 96L160 80"/><path class="ln thick" d="M87.4 80L87.4 56M92.6 80L92.6 56"/><path class="ln-m thin" d="M12 126V132H105V126"/><path class="ln-m thin" d="M114 126V132H168V126"/><text class="tl tc ta" x="58" y="153">acid part</text><text class="tl tc" x="58" y="169">propanoate</text><text class="tl tc ta" x="145" y="153">alcohol part</text><text class="tl tc" x="145" y="169">methyl</text><text class="tl tc" x="100" y="200">methyl propanoate</text></svg><figcaption>Methyl propanoate. The part with the C=O carbon comes from propanoic acid and gives the ending -oate. The part on the single-bonded oxygen comes from methanol and is named first, as methyl.</figcaption></figure>
 :::
 
-So \(\ce{CH3COOCH2CH3}\) is **ethyl ethanoate** (ethanoic acid part, ethyl from ethanol), \(\ce{CH3CH2COOCH3}\) is methyl propanoate and \(\ce{HCOOCH2CH2CH3}\) is propyl methanoate. Reading the formula backwards gives a different ester: \(\ce{CH3CH2COOCH3}\) and \(\ce{CH3COOCH2CH3}\) are isomers (both \(\ce{C4H8O2}\)), but methyl propanoate and ethyl ethanoate are different compounds.
+So \(\ce{CH3COOCH2CH3}\) is **ethyl ethanoate** (ethanoic acid part, ethyl from ethanol), \(\ce{CH3CH2COOCH3}\) is methyl propanoate and \(\ce{HCOOCH2CH2CH3}\) is propyl methanoate. A branched alkyl group on the oxygen is named from its alcohol in the same way: propan-2-ol gives propan-2-yl, written \(\ce{CH(CH3)2}\), so \(\ce{CH3COOCH(CH3)2}\) is propan-2-yl ethanoate. Reading the formula backwards gives a different ester: \(\ce{CH3CH2COOCH3}\) and \(\ce{CH3COOCH2CH3}\) are isomers (both \(\ce{C4H8O2}\)), but methyl propanoate and ethyl ethanoate are different compounds.
 
 :::warn Esters the wrong way round
 The name starts with the group on the **oxygen** atom (from the alcohol) and ends with the part that contains the C=O (from the acid). \(\ce{CH3COOCH2CH3}\) is ethyl ethanoate, never "ethanoyl ethanoate" or "ethanoate ethyl". To check, ask which side of the \(\ce{-COO-}\) the C=O carbon is on: that side is the acid.
 :::
 
-:::eg Name (a) \(\ce{CH3CH2CH2COOCH3}\), (b) \(\ce{CH3COOCH2CH2CH3}\), (c) the ester made from propan-1-ol and ethanoic acid, and draw (c) as a displayed structural formula in words.
+:::eg Name (a) \(\ce{CH3CH2CH2COOCH3}\), (b) \(\ce{CH3COOCH2CH2CH3}\), (c) the ester made from propan-1-ol and ethanoic acid.
 (a) The C=O carbon is on the left with three carbons before the oxygen: butanoate. The group on the oxygen is \(\ce{CH3}\): methyl butanoate. [B1]
 
 (b) The acid part is \(\ce{CH3CO}{-}\), ethanoate. The group on the oxygen is propyl: propyl ethanoate. [B1]
@@ -242,7 +242,7 @@ The other route to a carbon–carbon bond is in [Aldehydes and ketones](#chem.or
 
 \[\ce{CH3CH2Br + 2NH3 -> CH3CH2NH2 + NH4Br}\]
 
-The product, ethylamine, is a **primary amine**. The excess of ammonia gives the amine a better chance of surviving, because most of the halogenoalkane then meets ammonia and not the amine product. Classifying amines as primary, secondary and tertiary and their properties are A Level topics ([Nitrogen compounds](#chem.org.nitrogen)).
+The product, ethylamine, is a **primary amine** (a primary amine has one carbon group on the nitrogen: \(\ce{RNH2}\)). The second \(\ce{NH3}\) in the equation takes the \(\ce{H+}\) given out, forming \(\ce{NH4+}\): that is why \(\ce{2NH3}\) appears. The excess of ammonia gives the amine a better chance of surviving, because most of the halogenoalkane then meets ammonia and not the amine product. Classifying amines as primary, secondary and tertiary and their properties are A Level topics ([Nitrogen compounds](#chem.org.nitrogen)).
 
 ### Hydrolysis of nitriles
 

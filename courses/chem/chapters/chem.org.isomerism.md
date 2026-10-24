@@ -325,11 +325,6 @@ Q: [5 marks] ★★★ Three isomers of molecular formula \(\ce{C4H8O}\) are car
 H: Two of them are aldehydes (a carbonyl at the end of the chain) and one is a ketone.
 A: (a) butanal, \(\ce{CH3CH2CH2CHO}\) [B1]; 2-methylpropanal, \(\ce{(CH3)2CHCHO}\) [B1]; butanone, \(\ce{CH3COCH2CH3}\) [B1]
 (b) Butanal and 2-methylpropanal are chain isomers. [B1] Butanal and butanone are functional-group isomers. [B1]
-Q: [4 marks] ★★ (A Level) Explain why a racemic mixture of 2-hydroxypropanoic acid does not rotate plane-polarised light, although each enantiomer on its own does.
-A: Each enantiomer rotates the plane of polarised light by the same angle [B1] in opposite directions. [B1] A racemic mixture contains equal amounts of the two [B1], so the rotations cancel and there is no net rotation. [B1]
-Q: [4 marks] ★★★ (A Level) Ethanal reacts with hydrogen cyanide to give 2-hydroxypropanenitrile, \(\ce{CH3CH(OH)CN}\), which has a chiral centre. The product is optically inactive. Explain why.
-H: The carbon of the C=O is planar (trigonal planar). From which sides can \(\ce{CN-}\) attack?
-A: The C=O carbon is trigonal planar. [B1] The cyanide ion can attack from either side of the plane with equal probability. [B1] This makes equal amounts of the two enantiomers: a racemic mixture. [B1] The enantiomers rotate plane-polarised light equally in opposite directions, so there is no net rotation. [B1]
 :::
 
 :::try Stretch for A*
@@ -339,9 +334,6 @@ H: 2,2-dimethylpropane cannot contain a C=C: its central carbon already has four
 A: (a) pent-1-ene, pent-2-ene, 2-methylbut-1-ene, 3-methylbut-1-ene, 2-methylbut-2-ene (five structural isomers) [B1] [B1] (B1 for 3 correct, B1 for all 5)
 (b) Pent-2-ene shows cis–trans isomerism. [B1] Counting cis and trans, there are \(5 + 1 = 6\) alkene stereoisomers. [B1]
 (c) Every sp³ carbon in these alkenes is bonded to two identical groups (two H atoms or two CH₃ groups), so none is bonded to four different groups. [B1]
-Q: [4 marks] ★★★ (A Level) A student measures the rotation of plane-polarised light by a solution of an organic compound and finds it is zero. She concludes that the compound is not chiral. Evaluate her conclusion, and suggest an experiment that would test whether the compound is chiral.
-H: Think about what a racemic mixture would give.
-A: A zero reading is also what an equal mixture of two enantiomers (a racemic mixture) gives, because their rotations cancel. [B1] So the compound could be achiral or a racemic mixture of a chiral compound: the conclusion is not justified. [B1] A test: react the sample with a single enantiomer of another chiral substance, such as an enzyme or a chiral reagent. [B1] Only one enantiomer of the compound reacts or reacts faster, so the remaining sample would rotate the plane of polarised light if it were a racemic mixture. [B1]
 :::
 
 ## Optical isomers in medicine and the lab (A Level)
@@ -408,6 +400,14 @@ Q: (A Level) A sample of a chiral compound has a measured rotation of zero. Give
 A: The sample is a racemic mixture (equal amounts of the two enantiomers, so rotations cancel), or the compound is not chiral (no chiral centre), so it is not optically active.
 Q: (A Level) State two advantages of using a chiral catalyst, rather than separating a racemic mixture, to make a single-enantiomer drug.
 A: Any two of: no wasted half of the product, no costly separation, smaller doses needed, fewer side effects, less waste.
+Q: [4 marks] ★★ (A Level) Explain why a racemic mixture of 2-hydroxypropanoic acid does not rotate plane-polarised light, although each enantiomer on its own does.
+A: Each enantiomer rotates the plane of polarised light by the same angle [B1] in opposite directions. [B1] A racemic mixture contains equal amounts of the two [B1], so the rotations cancel and there is no net rotation. [B1]
+Q: [4 marks] ★★★ (A Level) Ethanal reacts with hydrogen cyanide to give 2-hydroxypropanenitrile, \(\ce{CH3CH(OH)CN}\), which has a chiral centre. The product is optically inactive. Explain why.
+H: The carbon of the C=O is planar (trigonal planar). From which sides can \(\ce{CN-}\) attack?
+A: The C=O carbon is trigonal planar. [B1] The cyanide ion can attack from either side of the plane with equal probability. [B1] This makes equal amounts of the two enantiomers: a racemic mixture. [B1] The enantiomers rotate plane-polarised light equally in opposite directions, so there is no net rotation. [B1]
+Q: [4 marks] ★★★ (A Level) A student measures the rotation of plane-polarised light by a solution of an organic compound and finds it is zero. She concludes that the compound is not chiral. Evaluate her conclusion, and suggest an experiment that would test whether the compound is chiral.
+H: Think about what a racemic mixture would give.
+A: A zero reading is also what an equal mixture of two enantiomers (a racemic mixture) gives, because their rotations cancel. [B1] So the compound could be achiral or a racemic mixture of a chiral compound: the conclusion is not justified. [B1] A test: react the sample with a single enantiomer of another chiral substance, such as an enzyme or a chiral reagent. [B1] Only one enantiomer of the compound reacts or reacts faster, so the remaining sample would rotate the plane of polarised light if it were a racemic mixture. [B1]
 :::
 
 :::quiz

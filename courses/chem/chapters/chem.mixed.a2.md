@@ -14,7 +14,7 @@ A topic chapter tells you which topic you are in. Paper 4 does not. One question
 Each set has eight questions from at least five different topics, from ★ (one method) to ★★★ (several steps or synoptic). Every question names the chapter to revise, and the answers show the mark scheme line by line.
 
 :::tip How to get the most from a set
-1. **Do the set in one sitting**, with a Periodic Table and the Data booklet values open, and a stopwatch: about 1 minute per mark.
+1. **Do the set in one sitting**, with a Periodic Table and the important values (\(R\), \(F\), \(K_w\), the molar gas volume) to hand, as the real paper prints them, and a stopwatch. Any other data (bond energies, \(E^{\ominus}\) values, NMR shifts) is given in the question, as in the exam. Allow about 1 minute per mark.
 2. **Write every answer in full** before you open the hints or the answer. Look at a hint only when you have been stuck for two minutes.
 3. **Mark yourself like an examiner.** Give a mark only for a creditworthy point that is written down. Copy the lost marks into a list of "my usual slips": units, significant figures, missing state symbols, explanations without a cause.
 4. **Redo the questions you lost marks on** after two days, without the answer. Then go to the revise link under the answer.
@@ -131,7 +131,7 @@ A: (a) \(\Delta S^{\ominus} = 2(193) - [192 + 3(131)]\) [M1]
 :::
 
 :::try
-Q: [4 marks] (#chem.energetics) ★★ Use bond energies from the Data booklet to calculate the enthalpy change of combustion of methane, \(\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)}\), taking \(\ce{C=O}\) in \(\ce{CO2}\) as 805 kJ mol⁻¹. Then suggest why the experimental value, −802 kJ mol⁻¹, is slightly different.
+Q: [4 marks] (#chem.energetics) ★★ Use these bond energies, in kJ mol⁻¹, to calculate the enthalpy change of combustion of methane, \(\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)}\): C–H 410; O=O 496; C=O in \(\ce{CO2}\) 805; O–H 460. Then suggest why the experimental value, −802 kJ mol⁻¹, is slightly different.
 A: bonds broken: \(4(410) + 2(496) = 2632\) kJ [M1]
 bonds formed: \(2(805) + 4(460) = 3450\) kJ [M1]
 \(\Delta H = 2632 - 3450 = -818\) kJ mol⁻¹ [A1]
@@ -194,7 +194,7 @@ percentage \(= 0.1562 / 0.500 \times 100 = 31.2\%\) [A1]
 :::
 
 :::try
-Q: [4 marks] (#chem.electrochem) ★★ Aqueous copper(II) sulfate is electrolysed using graphite electrodes. Name the product at each electrode, write the half-equation for each, and explain why that product forms at the cathode.
+Q: [4 marks] (#chem.electrochem) ★★ Aqueous copper(II) sulfate is electrolysed using graphite electrodes. Name the product at each electrode, write the half-equation for each, and explain why that product forms at the cathode. \(E^{\ominus}\) values: \(\ce{Cu^2+}/\ce{Cu}\) +0.34 V; \(\ce{H+}/\ce{H2}\) 0.00 V; \(\ce{2H2O + 2e- <=> H2 + 2OH-}\) −0.83 V.
 A: cathode: copper forms, because \(\ce{Cu^2+}\) (\(E^{\ominus} = +0.34\) V) is much more easily reduced than \(\ce{H+}\) or water (\(E^{\ominus} = 0.00\) V and −0.83 V) [B1]
 \(\ce{Cu^2+ + 2e- -> Cu}\) [B1]
 anode: oxygen forms, because water is oxidised in preference to the sulfate ion [B1]
@@ -552,18 +552,23 @@ A: (a) a covalent bond in which both shared electrons come from the same atom (h
 ## Set 6: A Level organic chemistry and analysis, with synthesis and polymers
 
 :::try Set 6: Organic chemistry and analysis
-Q: [3 marks] (#chem.org.arenes) ★ State the reagents and the temperature range for the nitration of benzene, and write an equation for the formation of the electrophile.
-A: concentrated nitric acid and concentrated sulfuric acid [B1]
-temperature between 25 °C and 60 °C [B1]
-\(\ce{HNO3 + H2SO4 -> NO2+ + HSO4- + H2O}\) [B1]
+Q: [3 marks] (#chem.org.arenes) ★ Benzene is converted into ethylbenzene, \(\ce{C6H5CH2CH3}\), which is then heated with hot alkaline potassium manganate(VII) and acidified.
+
+(a) Give the reagent and the catalyst for making ethylbenzene, and write an equation for the formation of the electrophile. (2 marks)
+
+(b) Name the organic product of the oxidation. (1 mark)
+A: (a) chloroethane, \(\ce{CH3CH2Cl}\), with anhydrous \(\ce{AlCl3}\), heat (Friedel–Crafts alkylation) [B1]
+\(\ce{CH3CH2Cl + AlCl3 -> CH3CH2+ + AlCl4-}\) [B1]
+
+(b) benzoic acid, \(\ce{C6H5COOH}\): the whole side chain, whatever its length, is oxidised to a COOH group [B1]
 :::
 
 :::try
-Q: [4 marks] (#chem.org.arenes) ★★ Methylbenzene is nitrated more easily than benzene and gives mainly two isomeric products. Nitrobenzene is nitrated much less easily. Name the two main products from methylbenzene and explain the difference in ease and in position of substitution.
-A: 2-nitromethylbenzene and 4-nitromethylbenzene [B1]
+Q: [4 marks] (#chem.org.arenes) ★★ Methylbenzene and benzoic acid are each brominated with bromine and aluminium bromide. Methylbenzene reacts faster than benzene, and benzoic acid reacts more slowly. Name the main organic product(s) from each, and explain the differences in ease and in position of substitution.
+A: methylbenzene gives 2-bromomethylbenzene and 4-bromomethylbenzene [B1]
+benzoic acid gives 3-bromobenzoic acid [B1]
 the methyl group donates electron density into the ring, so it is activating and directs substitution to the 2- and 4-positions [B1]
-the nitro group withdraws electron density from the ring, so it is deactivating [B1]
-and directs the next substituent to the 3-position, giving 1,3-dinitrobenzene [B1]
+the COOH group withdraws electron density from the ring, so it is deactivating and directs the bromine to the 3-position [B1]
 :::
 
 :::try
@@ -616,6 +621,8 @@ Q: [7 marks] (#chem.analysis2) ★★★ Compound X has the molecular formula \(
 - δ 2.3, relative area 2, a quartet
 - δ 3.7, relative area 3, a singlet
 
+Data: IR / cm⁻¹: C=O in esters 1710–1750; O–H in carboxylic acids 2500–3000, in alcohols 3200–3600. ¹H NMR δ / ppm: alkane \(\ce{CH3}\) and \(\ce{CH2}\) 0.9–1.7; alkyl next to C=O 2.2–3.0; alkyl next to O (\(\ce{CH3}\)–O) 3.2–4.0.
+
 (a) What does the infrared spectrum show? (1 mark)
 
 (b) Explain each ¹H NMR signal. (3 marks)
@@ -625,7 +632,7 @@ Q: [7 marks] (#chem.analysis2) ★★★ Compound X has the molecular formula \(
 (d) How many peaks are there in the ¹³C NMR spectrum of X? (1 mark)
 
 (e) State why tetramethylsilane (TMS) is added to the sample. (1 mark)
-H: Use the Data booklet shift table: CH₃–O is 3.2–4.0, a CH₂ next to C=O is 2.2–3.0.
+H: Match each shift to the data: CH₃–O is 3.2–4.0, a CH₂ next to C=O is 2.2–3.0.
 H: A triplet means two H on the next carbon; a quartet means three.
 A: (a) C=O of an ester (1710–1750 cm⁻¹); no O–H, so it is not a carboxylic acid [B1]
 

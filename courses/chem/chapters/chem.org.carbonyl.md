@@ -62,7 +62,7 @@ The final -e of the alkane name is dropped before the ending (butane becomes but
 :::eg Name (a) \(\ce{CH3CH2CH2CH2CHO}\), (b) \(\ce{CH3CH2CH2COCH3}\), (c) \(\ce{CH3CH(CH3)CH2CHO}\).
 (a) The CHO carbon is carbon 1, and the chain has five carbons: pentanal. [B1]
 
-(b) Six carbons, with the C=O on the second carbon when numbered from the right-hand \(\ce{CH3}\): hexan-2-one. [B1]
+(b) Five carbons, with the C=O on the second carbon when numbered from the right-hand \(\ce{CH3}\): pentan-2-one. [B1]
 
 (c) The chain through the CHO carbon has four carbons (\(\ce{CHO-CH2-CH-CH3}\)). The methyl branch is on carbon 3: 3-methylbutanal. [B1]
 :::
@@ -202,7 +202,7 @@ The same reasoning applies to every aldehyde except methanal and to every unsymm
 
 ## Telling aldehydes and ketones apart
 
-Chemical tests are exam favourites because each one separates a pair of compounds with a clear observation. Four tests work with the carbonyl group, and a fifth idea, ease of oxidation, separates aldehydes from ketones.
+Chemical tests are exam favourites because each one separates a pair of compounds with a clear observation. Five tests work with the carbonyl group; the fourth, ease of oxidation, separates aldehydes from ketones.
 
 ### Test 1: 2,4-DNPH (is there a C=O?)
 
@@ -210,7 +210,7 @@ Chemical tests are exam favourites because each one separates a pair of compound
 
 ### Test 2: Tollens' reagent (aldehyde or ketone?)
 
-Tollens' reagent is aqueous silver nitrate made alkaline and then treated with just enough dilute ammonia to dissolve the precipitate, so that it contains the diamminesilver(I) ion, \(\ce{[Ag(NH3)2]+}\). Warm the carbonyl compound with it in a water bath. An **aldehyde** gives a **silver mirror** (or a black precipitate); a ketone gives no change. The silver ions are reduced to silver metal, and the aldehyde is oxidised to a carboxylate ion:
+Tollens' reagent is aqueous silver nitrate made alkaline and then treated with just enough dilute ammonia to dissolve the precipitate, so that it contains the diamminesilver(I) ion, \(\ce{[Ag(NH3)2]+}\). This is a complex ion: an \(\ce{Ag+}\) ion with two \(\ce{NH3}\) molecules attached by their lone pairs. The equation below writes it simply as \(\ce{Ag+}\), which is all you need at this stage. Warm the carbonyl compound with it in a water bath. An **aldehyde** gives a **silver mirror** (or a black precipitate); a ketone gives no change. The silver ions are reduced to silver metal, and the aldehyde is oxidised to a carboxylate ion:
 
 \[\ce{RCHO + 2Ag+ + 3OH- -> RCOO- + 2Ag + 2H2O}\]
 
@@ -258,14 +258,14 @@ Ethanal and the ketones that have a **methyl group next to the C=O**, written \(
 
 | Compound | Has \(\ce{CH3CO}{-}\)? | Yellow precipitate? |
 |---|---|---|
-| ethanal, \(\ce{CH3CHO}\) | yes (R = H) | yes |
+| ethanal, \(\ce{CH3CHO}\) | yes (CH₃CO–H: the C=O has a CH₃ on one side and an H on the other) | yes |
 | propanone | yes | yes |
 | butanone, pentan-2-one | yes | yes |
 | propanal, butanal | no | no |
 | pentan-3-one | no (the two groups next to C=O are ethyl groups) | no |
 
 :::tip Reading the group
-Look at the two carbon atoms either side of C=O. If one of them is a \(\ce{CH3}\) group, the compound passes the iodoform test. Ethanal passes because its second "group" is the hydrogen of the aldehyde and the other is \(\ce{CH3}\). Propanal does not, because it has \(\ce{CH3CH2}\), not \(\ce{CH3}\), beside the C=O.
+Look at the two carbon atoms either side of C=O. If one of them is a \(\ce{CH3}\) group, the compound passes the iodoform test. Ethanal passes because it is CH₃CO–H: the C=O has a \(\ce{CH3}\) on one side and an H on the other, so it contains \(\ce{CH3CO}{-}\). Propanal does not, because it has \(\ce{CH3CH2}\), not \(\ce{CH3}\), beside the C=O.
 :::
 
 :::html

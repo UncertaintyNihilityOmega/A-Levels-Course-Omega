@@ -135,7 +135,7 @@ To oxidise something a halogen atom must pull an electron into its outer shell. 
 - the iodine atom has more inner shells of electrons, so the outer shell is more shielded from the nuclear charge;
 - the attraction between the nucleus and the incoming electron is therefore greater for chlorine than for iodine.
 
-The same two factors, distance and shielding, make the first ionisation energy fall down the group, which you can see below.
+The same two factors, distance and shielding, make the first ionisation energy fall down the group, which you can see below. The chart shows the first ionisation energies of F, Cl, Br and I: look at how the value falls as the atoms get larger.
 
 :::html
 <div class="widget" data-w="chem-trend" data-mode="first" data-set="group17"></div>
@@ -293,7 +293,7 @@ Silver ions react with halide ions to form silver halides, which are insoluble i
 | \(\ce{Br-}\) | cream precipitate | partially soluble |
 | \(\ce{I-}\) | pale yellow precipitate | insoluble |
 
-Ammonia dissolves silver chloride because its molecules bond to the silver ion and make a soluble complex ion. You are not required to know its formula, but you may meet it: \(\ce{AgCl(s) + 2NH3(aq) -> [Ag(NH3)2]+(aq) + Cl-(aq)}\). Silver bromide is less soluble to begin with and dissolves only partly. Silver iodide is the least soluble of the three and ammonia cannot dissolve it.
+Ammonia dissolves silver chloride because its molecules bond to the silver ion and make a soluble complex ion (a complex ion is a metal ion with molecules or ions, called ligands, bonded to it by dative bonds: here two \(\ce{NH3}\) around \(\ce{Ag+}\)). You are not required to know its formula, but you may meet it: \(\ce{AgCl(s) + 2NH3(aq) -> [Ag(NH3)2]+(aq) + Cl-(aq)}\). Silver bromide is less soluble to begin with and dissolves only partly. Silver iodide is the least soluble of the three and ammonia cannot dissolve it.
 
 :::story Silver bromide and photography
 Light turns silver ions in silver bromide into tiny specks of silver metal. Black-and-white photographic film is a layer of silver bromide crystals in gelatin: where light falls on the film, specks of silver form and, after developing, make the dark parts of the picture. The same test tube chemistry (a cream precipitate that is only partly soluble in ammonia) is behind the film.
