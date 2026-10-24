@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-24 · WRITE P17 · chem.org.acyl (5.2k words, 9 eg) and chem.org.nitrogen (6.5k words, 13 eg); widget chem-electrophoresis probed clean (light, dark, phone, bad attributes: ph abc/99, mix xyz/qq). Reviewer: charges in the widget come from typical group pKa values (approximate model, pI as table data; gly pI 5.97, ala 6.00, lys 9.74, asp 2.77, glu 3.22); static strip figure in chem.org.nitrogen is illustrative; figure script data/mk_fig_p17.py (imports data/p15_lib.py); azo coupling and phenol-from-diazonium are also in chem.org.phenol, nitrogen chapter cross-links; no board boxes (none sure); Kevlar/nylon left for chem.org.polymers; links checked 24 Oct (chemguide acylclmenu, amidemenu, aminemenu, anilinemenu, aminoacidmenu).
+Last: 2026-10-24 · WRITE P18 · chem.org.polymers (6.6k words, 16 eg) and chem.org.synthesis2 (6.9k words, 13 eg); no new widgets (chem-orgmap a2 embedded in both). Reviewer: figure script data/mk_fig_p18.py (imports data/mk_fig_p16.py; PET, Kevlar, PLA and the methylbenzene routes are fig small, the nylon-6,6 cut figure is a 640-wide fig and prints small on phones); no board boxes (none sure); 2n vs 2n-1 water molecules explained once in the polyester section; Kevlar is an extension beyond the syllabus examples; links checked 24 Oct (chemguide polyesters, polyamides, alkene polymerisation, elsubmenu, aminemenu, amidemenu); paracetamol route and benzamide unknown are original worked examples (check the 4-aminophenol N-acylation wording).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -22,8 +22,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P15: reviewed 2026-10-24
 - P16: reviewed 2026-10-24
 - P17: written 2026-10-24
-- P18: writing 2026-10-24
-- P19: open
+- P18: written 2026-10-24
+- P19: writing 2026-10-24
 - P20: open
 - P21: open
 - P22: open
