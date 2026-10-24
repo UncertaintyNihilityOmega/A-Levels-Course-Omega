@@ -47,7 +47,7 @@ def tlc():
     X0, X1, YT, YB = 120, 250, 26, 246
     BASE, FRONT = 200, 50           # baseline and solvent front (y); 20 px per cm
     P(f, [(X0, YT), (X1, YT), (X1, YB), (X0, YB)], 'ln thick', closed=True, tag='plate')
-    f.parts.append('<rect class="fa" x="100" y="222" width="170" height="30"/>')
+    f.parts.append('<rect class="fa" x="114" y="222" width="142" height="30"/>')
     L(f, X0, BASE, X1, BASE, 'ln-m thin dash', tag='baseline')
     L(f, X0, FRONT, X1, FRONT, 'ln-m thin dash', tag='front')
     lanes = [145, 185, 225]
@@ -173,7 +173,7 @@ def h1_ee():
         L(f, xd(d), Y0, xd(d), Y0 + 4, 'ln-m thin', tag='tick')
         T(f, xd(d), Y0 + 17, str(d), 'm', 'ts')
     T(f, (X0 + X1) / 2, Y0 + 54, 'δ / ppm', 'm')
-    K, SP = 30.0, 5.0       # px per unit of area; spacing between lines of a multiplet
+    K, SP = 36.0, 5.0       # px per unit of area; spacing between lines of a multiplet
     sigs = [(3.9, 2, [1, 3, 3, 1], '2H', 'q'), (2.3, 3, [1], '3H', 's'), (1.3, 3, [1, 2, 1], '3H', 't')]
     for d, nh, pat, lab, nm in sigs:
         k = len(pat); tot = float(sum(pat))
