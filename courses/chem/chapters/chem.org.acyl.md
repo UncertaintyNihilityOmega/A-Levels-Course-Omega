@@ -94,7 +94,7 @@ Reflux 1 g of methylbenzene with a solution of \(\ce{KMnO4}\) in dilute \(\ce{Na
 
 ## The reactions of acyl chlorides
 
-All the reactions in this section have the same pattern: a nucleophile with an N–H or O–H bond replaces the Cl, and hydrogen chloride is made. They happen at **room temperature**, without a catalyst. Acylation is the name for this type of change: the acyl group \(\ce{RCO-}\) is transferred to the nucleophile.
+All the reactions in this section have the same pattern: a nucleophile with an N–H or O–H bond replaces the Cl, and hydrogen chloride is made. They happen at **room temperature**, without a catalyst. Acylation is the name for this type of change: the acyl group \(\ce{RCO}{-}\) is transferred to the nucleophile.
 
 | Reactant | Product | Equation (ethanoyl chloride) |
 |---|---|---|
