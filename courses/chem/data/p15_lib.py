@@ -163,7 +163,7 @@ def link(fig, a, b, kind="plain", gap=6.0, owner=None, w=7.0):
     x1, y1 = b[1] - ux * sb, b[2] - uy * sb
     o = owner or ('link%.0f_%.0f' % (a[1], a[2]))
     if kind == 'plain': fig.line(x0, y0, x1, y1, 'ln thick', owner=o)
-    elif kind == 'thin': fig.line(x0, y0, x1, y1, 'ln', owner=o)
+    elif kind == 'thin': fig.line(x0, y0, x1, y1, 'ln thin', owner=o)
     elif kind == 'wedge': fig.wedge(x0, y0, x1, y1, w, owner=o)
     else: fig.hash(x0, y0, x1, y1, 5, w, owner=o)
     return (x0, y0, x1, y1)

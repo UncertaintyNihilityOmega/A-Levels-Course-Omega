@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-24 · REVIEW P11, P12, P13 · 1 item in REVIEW.md (chem-ms [M+1] bars). Fixed: orgmap carbonyl focus alias; board boxes added (AQA NaBH4 mechanism, biodiesel), fuel-cell box kept; synthesis diol name and 3 wording slips; carbonyl NMR link; acids hydrolysis reason and figure centring; IR label clearances; Gibbs plot ticks; Nernst :::plot restored; bornhaber equations for 1 mol of compound; chem-cell sorted by E and grammar; all numbers recomputed (1108 K and NaCl -785 consistent); generators moved scratch -> data and rerun; COURSE.md: generators-in-data rule and more board-box examples.
+Last: 2026-10-24 · WRITE P15 · chem.transition (7.1k words, 13 eg) and chem.complexes (4.8k words, 12 eg), checks ok, phone ok; widget chem-dsplit probed clean (light, dark, phone, bad attributes). Reviewer: chem-dsplit colour words are an ion-independent illustrative model, anchored to copper(II)+water; optical-isomer figure (chem.complexes #6) is small, look at it; chelate figure double bonds drawn crudely; Kstab values are rounded textbook data (Cu NH3 1.1e13, Cu EDTA 6.3e18, Ag NH3 1.6e7, Ag S2O3 2.9e13), worth a source check; figure scripts in data/mk_fig_p15a.py, mk_fig_p15b.py, p15_lib.py.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -19,7 +19,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P12: reviewed 2026-10-24
 - P13: reviewed 2026-10-24
 - P14: written 2026-10-23
-- P15: writing 2026-10-23
+- P15: written 2026-10-24
 - P16: writing 2026-10-23
 - P17: open
 - P18: open

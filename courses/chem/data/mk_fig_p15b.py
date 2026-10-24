@@ -90,7 +90,7 @@ def fig_promote():
     g.line(130, y_low - 8, 130, y_up + 2, 'ln', extra=' marker-end="url(#ah)"', owner='prom')
     g.text(122, (y_low + y_up) / 2 + 4, 'promotion', 'tl', anchor='end', owner='promlab')
     g.path(wavy(36, 52, 104, 52, 3.0, 3), 'c3 sw2', ' marker-end="url(#ah)"')
-    g.text(36, 38, 'light absorbed', 'tl', owner='light')
+    g.text(36, 33, 'light absorbed', 'tl', owner='light')
     g.text(36, 76, 'ΔE = hf', 'tl', owner='dE')
     return g
 
@@ -189,7 +189,7 @@ def donor_dot(g, cx, cy, d, scale):
     g.circle(x, y, r, 'fi')
     return x, y
 
-def chelate_panel(g, cx, cy, pairs, waters, mirror, tag, scale=0.8):
+def chelate_panel(g, cx, cy, pairs, waters, mirror, tag, scale=1.0):
     sgn = -1 if mirror else 1
     def P(d):
         dx, dy, depth = VEC[d]
