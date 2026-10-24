@@ -5,7 +5,7 @@ down this list with agent runs (AGENT-RUN.md): 1 Opus Specialist + up to 2 Sonne
 guard on that course. After each step: check, commit, push, tick the line, add a STATUS.md line, start the next.
 A scheduled check (CronCreate, every 30 min) resumes the run after a usage-limit stop.
 
-1. [ ] **Chemistry** (`chem`): LEAD done 2026-10-15; P1–P23 → reviews → READER → FIX → REVIEW FINAL.
+1. [x] **Chemistry** (`chem`): complete 2026-10-24 (49/49 chapters, 23 packages, READER 82 items fixed, REVIEW FINAL).
 2. [ ] **Biology** (`bio`): LEAD → packages → reviews → READER → FIX → REVIEW FINAL.
 3. [ ] **Reader pass on the finished courses**, as its own run: Maths, then Physics (READER batches → FIX).
    Chemistry and Biology have theirs inside their own runs.

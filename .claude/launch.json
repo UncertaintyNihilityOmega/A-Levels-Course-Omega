@@ -100,6 +100,26 @@
         "5109"
       ],
       "port": 5109
+    },
+    {
+      "name": "cs-preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "courses/cs/kit/zta.js",
+        "serve",
+        "5110"
+      ],
+      "port": 5110
+    },
+    {
+      "name": "psych-preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "courses/psych/kit/zta.js",
+        "serve",
+        "5111"
+      ],
+      "port": 5111
     }
   ]
 }
