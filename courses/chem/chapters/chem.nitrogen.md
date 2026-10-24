@@ -24,7 +24,7 @@ A: It falls. The position of equilibrium moves in the endothermic direction, to 
 
 Nitrogen gas, \(\ce{N2}\), is the main gas in the air, and you can breathe it in and out without any change. It does not burn, it does not react with water and it does not react with most metals at room temperature. Compare it with oxygen, which makes up about a fifth of the air and which reacts with almost everything. Two facts about the \(\ce{N2}\) molecule explain the difference.
 
-**A very strong bond.** The two nitrogen atoms are joined by a triple bond, \(\ce{N#N}\). The Data booklet gives bond energies of N–N 160, N=N 410 and N≡N 944 kJ mol⁻¹. The triple bond is much more than three times the single bond, and nearly twice the strength of the double bond in oxygen (O=O 496 kJ mol⁻¹). Breaking \(\ce{N2}\) into atoms, which a reaction usually needs to do, takes a huge amount of energy.
+**A very strong bond.** The two nitrogen atoms are joined by a triple bond, \(\ce{N#N}\). The syllabus Data section gives bond energies of N–N 160, N=N 410 and N≡N 944 kJ mol⁻¹. The triple bond is much more than three times the single bond, and nearly twice the strength of the double bond in oxygen (O=O 496 kJ mol⁻¹). Breaking \(\ce{N2}\) into atoms, which a reaction usually needs to do, takes a huge amount of energy.
 
 **No polarity.** Both atoms are the same, so the shared electrons are equally shared and there is no δ+ or δ− on the molecule. A reagent that is attracted to charge (for example a nucleophile looking for a δ+ atom, or an electrophile looking for electron-rich regions) has nothing to attack. The only attractions between \(\ce{N2}\) molecules are weak id–id forces, which is why nitrogen is a gas down to −196 °C.
 

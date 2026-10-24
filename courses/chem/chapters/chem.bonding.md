@@ -45,7 +45,7 @@ Electronegativity is measured on the **Pauling scale**. It has no units. Fluorin
 | 2 | Li 1.0 | Be 1.6 | B 2.0 | C 2.5 | N 3.0 | O 3.5 | F 4.0 |
 | 3 | Na 0.9 | Mg 1.3 | Al 1.5 | Si 1.9 | P 2.2 | S 2.6 | Cl 3.0 |
 
-Other values you need: H 2.1, K 0.8, Ca 1.0 and Br 2.6. You are given these values in the Data section of the exam.
+Other values you need: H 2.1, K 0.8, Ca 1.0 and Br 2.6. These values are in the Data section of the syllabus; an exam question gives the ones it needs.
 
 ### What decides electronegativity
 
@@ -415,7 +415,7 @@ So HI breaks down most easily and HF least easily. [B1]
 Q: [3 marks] ★★ Use the bond energies C–C 350 kJ mol⁻¹ and C=C 610 kJ mol⁻¹ to estimate the energy of the π bond in ethene and comment on its strength.
 A: π bond energy = C=C − C–C [M1] = 610 − 350 = 260 kJ mol⁻¹ [A1]
 This is less than the σ bond (350), so the π bond is weaker than the σ bond. [B1]
-Q: [4 marks] ★★ Use electronegativity values from the Data section to predict the type of bonding in (a) \(\ce{CaF2}\), (b) \(\ce{SiCl4}\), (c) \(\ce{Cl2}\). Explain your rule.
+Q: [4 marks] ★★ Use the electronegativity values Ca 1.0, F 4.0, Si 1.9 and Cl 3.0 to predict the type of bonding in (a) \(\ce{CaF2}\), (b) \(\ce{SiCl4}\), (c) \(\ce{Cl2}\). Explain your rule.
 A: Ca 1.0 and F 4.0: Δχ = 3.0, large, so ionic. [B1]
 Si 1.9 and Cl 3.0: Δχ = 1.1, small, so polar covalent. [B1]
 Cl–Cl: Δχ = 0, so non-polar covalent. [B1]

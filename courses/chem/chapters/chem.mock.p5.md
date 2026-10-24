@@ -10,7 +10,7 @@
 
 - Answer both questions. There is no laboratory work: this paper tests planning, analysis and evaluation.
 - Show your working. Give answers to an appropriate number of significant figures, with units.
-- Data booklet values are allowed (\(A_r\) from the Periodic Table, \(c = 4.18\) J g⁻¹ K⁻¹).
+- The Periodic Table and important values are printed in this paper (\(A_r\) from the Periodic Table, \(c = 4.18\) J g⁻¹ K⁻¹); any other data you need is given in the question.
 - The number of marks for each part is in brackets. Press **Finish** when you have answered both questions to see the mark schemes.
 :::
 

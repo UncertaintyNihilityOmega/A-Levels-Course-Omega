@@ -227,7 +227,7 @@ In propan-2-ol the two methyl groups are equivalent but the central carbon is di
 
 ### Reading the shift
 
-The shift of each line tells you what kind of carbon it is. These ranges are in the Data booklet.
+The shift of each line tells you what kind of carbon it is. These ranges are in the Data section of the syllabus; in an exam, the question gives the ones you need.
 
 | Type of carbon | δ / ppm |
 |---|---|
@@ -244,7 +244,7 @@ The shift of each line tells you what kind of carbon it is. These ranges are in 
 The ranges overlap, so a shift narrows the possibilities and does not always name the group. The big gaps do help: a line near 200 ppm can only be an aldehyde or ketone C=O, one near 170 ppm an acid or ester, and a line from 110 to 160 ppm comes from a C=C or a benzene ring.
 
 :::html
-<figure class="fig small"><svg viewBox="0 0 322 176" role="img" aria-label="A sketch of the 13C NMR spectrum of methyl propanoate with four single lines at 175, 52, 31 and 9 ppm, on a scale from 220 on the left to 0 on the right"><path class="ax" d="M14 130H310"/><path class="ln-m thin" d="M45.1 130L45.1 134"/><text class="ts tc" x="45.1" y="147">200</text><path class="ln-m thin" d="M107.8 130L107.8 134"/><text class="ts tc" x="107.8" y="147">150</text><path class="ln-m thin" d="M170.5 130L170.5 134"/><text class="ts tc" x="170.5" y="147">100</text><path class="ln-m thin" d="M233.3 130L233.3 134"/><text class="ts tc" x="233.3" y="147">50</text><path class="ln-m thin" d="M296 130L296 134"/><text class="ts tc" x="296" y="147">0</text><text class="tl tc" x="158" y="168">δ / ppm</text><path class="c1 sw3" d="M76.5 130L76.5 88"/><path class="c1 sw3" d="M230.8 130L230.8 30"/><path class="c1 sw3" d="M257.1 130L257.1 56"/><path class="c1 sw3" d="M284.7 130L284.7 82"/><text class="tl tc" x="76.5" y="81">175 C=O</text><text class="tl tc" x="230.8" y="23">52 OCH₃</text><text class="tl tc" x="257.1" y="49">31 CH₂</text><text class="tl tc" x="284.7" y="75">9 CH₃</text></svg><figcaption>A sketch of the ¹³C NMR spectrum of methyl propanoate. The scale runs from high δ on the left to low δ on the right. Four carbon environments give four lines: the ester C=O is in the 160–185 range, the OCH₃ carbon in the 50–70 range, the CH₂ next to the C=O in the 30–65 range, and the end CH₃ in the 0–50 range. The shifts are chosen inside the Data booklet range for each kind of carbon; a real spectrum can differ by a few ppm. Line heights are not used in this course.</figcaption></figure>
+<figure class="fig small"><svg viewBox="0 0 322 176" role="img" aria-label="A sketch of the 13C NMR spectrum of methyl propanoate with four single lines at 175, 52, 31 and 9 ppm, on a scale from 220 on the left to 0 on the right"><path class="ax" d="M14 130H310"/><path class="ln-m thin" d="M45.1 130L45.1 134"/><text class="ts tc" x="45.1" y="147">200</text><path class="ln-m thin" d="M107.8 130L107.8 134"/><text class="ts tc" x="107.8" y="147">150</text><path class="ln-m thin" d="M170.5 130L170.5 134"/><text class="ts tc" x="170.5" y="147">100</text><path class="ln-m thin" d="M233.3 130L233.3 134"/><text class="ts tc" x="233.3" y="147">50</text><path class="ln-m thin" d="M296 130L296 134"/><text class="ts tc" x="296" y="147">0</text><text class="tl tc" x="158" y="168">δ / ppm</text><path class="c1 sw3" d="M76.5 130L76.5 88"/><path class="c1 sw3" d="M230.8 130L230.8 30"/><path class="c1 sw3" d="M257.1 130L257.1 56"/><path class="c1 sw3" d="M284.7 130L284.7 82"/><text class="tl tc" x="76.5" y="81">175 C=O</text><text class="tl tc" x="230.8" y="23">52 OCH₃</text><text class="tl tc" x="257.1" y="49">31 CH₂</text><text class="tl tc" x="284.7" y="75">9 CH₃</text></svg><figcaption>A sketch of the ¹³C NMR spectrum of methyl propanoate. The scale runs from high δ on the left to low δ on the right. Four carbon environments give four lines: the ester C=O is in the 160–185 range, the OCH₃ carbon in the 50–70 range, the CH₂ next to the C=O in the 30–65 range, and the end CH₃ in the 0–50 range. The shifts are chosen inside the syllabus Data section range for each kind of carbon; a real spectrum can differ by a few ppm. Line heights are not used in this course.</figcaption></figure>
 :::
 
 :::eg How many peaks are there in the ¹³C NMR spectrum of each of the four alcohols of formula \(\ce{C4H10O}\)? Butan-1-ol, butan-2-ol, 2-methylpropan-1-ol and 2-methylpropan-2-ol.
@@ -283,7 +283,7 @@ Ethanol, \(\ce{CH3CH2OH}\), has three environments: the \(\ce{CH3}\) hydrogens, 
 
 ### The chemical shift
 
-The same electron rule applies: hydrogens next to electronegative atoms or groups appear at a larger δ. The values to use are those in the Data booklet.
+The same electron rule applies: hydrogens next to electronegative atoms or groups appear at a larger δ. The values to use are those in the Data section of the syllabus (in an exam, the question gives the ones you need).
 
 | Type of hydrogen | δ / ppm |
 |---|---|
@@ -360,7 +360,7 @@ A few patterns turn up again and again, and recognising them speeds up every str
 
 To predict a ¹H NMR spectrum, go through the molecule environment by environment.
 
-:::eg (Exam style) Predict the ¹H NMR spectrum of ethyl ethanoate, \(\ce{CH3COOCH2CH3}\). Give the number of signals, the shift range from the Data booklet, the relative area and the splitting of each.
+:::eg (Exam style) Predict the ¹H NMR spectrum of ethyl ethanoate, \(\ce{CH3COOCH2CH3}\). Give the number of signals, the shift range (from the syllabus Data section), the relative area and the splitting of each.
 There are three hydrogen environments: \(\ce{CH3CO}\), \(\ce{OCH2}\) and \(\ce{CH3CH2}\), so three signals. [B1]
 
 | Hydrogens | δ range | Area | Neighbouring H | Splitting |
@@ -376,7 +376,7 @@ The areas are in the ratio 3 : 2 : 3. The oxygen atom of the ester stops the \(\
 :::
 
 :::html
-<figure class="fig small"><svg viewBox="0 0 330 196" role="img" aria-label="A sketch of the 1H NMR spectrum of ethyl ethanoate on a scale from 12 on the left to 0 on the right: a quartet at 3.9 with area 2H, a singlet at 2.3 with area 3H, a triplet at 1.3 with area 3H, and the TMS line at 0"><path class="ax" d="M12 134H322"/><path class="ln-m thin" d="M304 134L304 138"/><text class="ts tc" x="304" y="151">0</text><path class="ln-m thin" d="M256.7 134L256.7 138"/><text class="ts tc" x="256.7" y="151">2</text><path class="ln-m thin" d="M209.3 134L209.3 138"/><text class="ts tc" x="209.3" y="151">4</text><path class="ln-m thin" d="M162 134L162 138"/><text class="ts tc" x="162" y="151">6</text><path class="ln-m thin" d="M114.7 134L114.7 138"/><text class="ts tc" x="114.7" y="151">8</text><path class="ln-m thin" d="M67.3 134L67.3 138"/><text class="ts tc" x="67.3" y="151">10</text><path class="ln-m thin" d="M20 134L20 138"/><text class="ts tc" x="20" y="151">12</text><text class="tl tc" x="162" y="188">δ / ppm</text><path class="c1 sw2" d="M204.2 134L204.2 125"/><path class="c1 sw2" d="M209.2 134L209.2 107"/><path class="c1 sw2" d="M214.2 134L214.2 107"/><path class="c1 sw2" d="M219.2 134L219.2 125"/><text class="tl tc" x="211.7" y="170">2H</text><path class="c1 sw2" d="M249.6 134L249.6 26"/><text class="tl tc" x="249.6" y="170">3H</text><path class="c1 sw2" d="M268.2 134L268.2 107"/><path class="c1 sw2" d="M273.2 134L273.2 80"/><path class="c1 sw2" d="M278.2 134L278.2 107"/><text class="tl tc" x="273.2" y="170">3H</text><path class="c1 sw2" d="M304 134L304 94"/><text class="tl tc" x="304" y="87">TMS</text></svg><figcaption>A sketch of the ¹H NMR spectrum of ethyl ethanoate. From the left: the OCH₂ quartet (2H), the CH₃CO singlet (3H) and the CH₃ triplet (3H), then the TMS line at δ = 0. The shifts are typical values inside the Data booklet ranges; real spectra differ by a few tenths of a ppm.</figcaption></figure>
+<figure class="fig small"><svg viewBox="0 0 330 196" role="img" aria-label="A sketch of the 1H NMR spectrum of ethyl ethanoate on a scale from 12 on the left to 0 on the right: a quartet at 3.9 with area 2H, a singlet at 2.3 with area 3H, a triplet at 1.3 with area 3H, and the TMS line at 0"><path class="ax" d="M12 134H322"/><path class="ln-m thin" d="M304 134L304 138"/><text class="ts tc" x="304" y="151">0</text><path class="ln-m thin" d="M256.7 134L256.7 138"/><text class="ts tc" x="256.7" y="151">2</text><path class="ln-m thin" d="M209.3 134L209.3 138"/><text class="ts tc" x="209.3" y="151">4</text><path class="ln-m thin" d="M162 134L162 138"/><text class="ts tc" x="162" y="151">6</text><path class="ln-m thin" d="M114.7 134L114.7 138"/><text class="ts tc" x="114.7" y="151">8</text><path class="ln-m thin" d="M67.3 134L67.3 138"/><text class="ts tc" x="67.3" y="151">10</text><path class="ln-m thin" d="M20 134L20 138"/><text class="ts tc" x="20" y="151">12</text><text class="tl tc" x="162" y="188">δ / ppm</text><path class="c1 sw2" d="M204.2 134L204.2 125"/><path class="c1 sw2" d="M209.2 134L209.2 107"/><path class="c1 sw2" d="M214.2 134L214.2 107"/><path class="c1 sw2" d="M219.2 134L219.2 125"/><text class="tl tc" x="211.7" y="170">2H</text><path class="c1 sw2" d="M249.6 134L249.6 26"/><text class="tl tc" x="249.6" y="170">3H</text><path class="c1 sw2" d="M268.2 134L268.2 107"/><path class="c1 sw2" d="M273.2 134L273.2 80"/><path class="c1 sw2" d="M278.2 134L278.2 107"/><text class="tl tc" x="273.2" y="170">3H</text><path class="c1 sw2" d="M304 134L304 94"/><text class="tl tc" x="304" y="87">TMS</text></svg><figcaption>A sketch of the ¹H NMR spectrum of ethyl ethanoate. From the left: the OCH₂ quartet (2H), the CH₃CO singlet (3H) and the CH₃ triplet (3H), then the TMS line at δ = 0. The shifts are typical values inside the syllabus Data section ranges; real spectra differ by a few tenths of a ppm.</figcaption></figure>
 :::
 
 ### TMS, and the solvent
@@ -411,7 +411,7 @@ Real problems give you a mixture of evidence. Work through it in this order, so 
 
 :::steps
 1. **Molecular formula.** Use the molecular ion in the mass spectrum (and the [M+1] and [M+2] peaks if given) to get the formula. Count the hydrogen atoms: you need this to check the integration.
-2. **Functional groups from IR.** Use the Data table for C=O, O–H, N–H, C≡N and so on.
+2. **Functional groups from IR.** Use the IR ranges (given in the question; syllabus Data section) for C=O, O–H, N–H, C≡N and so on.
 3. **Count the ¹³C signals.** This tells you how many carbon environments, so how symmetric the molecule is. Check the shifts for C=O, C=C or ring carbons.
 4. **¹H shifts.** Match each signal to a group using the table.
 5. **Integration.** Turn the step heights into whole numbers adding up to the number of hydrogens.

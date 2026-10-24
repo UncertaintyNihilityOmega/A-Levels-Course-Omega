@@ -12,7 +12,7 @@ The real Paper 3 is a laboratory exam. In this written version you do not handle
 
 - Answer all three questions.
 - Show your working. Give answers to an appropriate number of significant figures, with units.
-- Data booklet values are allowed (\(A_r\) from the Periodic Table, \(c = 4.18\) J g⁻¹ K⁻¹).
+- The Periodic Table and important values are printed in this paper (\(A_r\) from the Periodic Table, \(c = 4.18\) J g⁻¹ K⁻¹); any other data you need is given in the question.
 - Burette readings are to the nearest 0.05 cm³ and the thermometer is read to the nearest 0.5 °C.
 - The number of marks for each part is in brackets. Press **Finish** when you have answered every question to see the mark schemes.
 :::

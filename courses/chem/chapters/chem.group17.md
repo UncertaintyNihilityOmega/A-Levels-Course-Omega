@@ -73,7 +73,7 @@ More energy is needed to overcome the id–id forces between \(\ce{I2}\) molecul
 
 ### The strength of the X–X bond
 
-The bond energy of a halogen molecule is the energy needed to break one mole of X–X bonds in the gas phase. The Data booklet values are:
+The bond energy of a halogen molecule is the energy needed to break one mole of X–X bonds in the gas phase. The values, from the Data section of the syllabus, are:
 
 | Bond | F–F | Cl–Cl | Br–Br | I–I |
 |---|---|---|---|---|
@@ -142,7 +142,7 @@ The same two factors, distance and shielding, make the first ionisation energy f
 :::
 
 :::note The numbers behind it
-The Data booklet gives the standard electrode potential for each \(\ce{X2/X-}\) pair: \(\ce{F2}\) +2.87 V, \(\ce{Cl2}\) +1.36 V, \(\ce{Br2}\) +1.07 V, \(\ce{I2}\) +0.54 V. The more positive the value, the stronger the oxidising agent, so the order is the same. You will use these values properly in [Electrochemistry: electrolysis and electrode potentials](#chem.electrochem). Fluorine (+2.87 V) is the strongest oxidising agent of all: it even oxidises water, and it is too dangerous to use in school.
+The Data section of the syllabus gives the standard electrode potential for each \(\ce{X2/X-}\) pair: \(\ce{F2}\) +2.87 V, \(\ce{Cl2}\) +1.36 V, \(\ce{Br2}\) +1.07 V, \(\ce{I2}\) +0.54 V. The more positive the value, the stronger the oxidising agent, so the order is the same. You will use these values properly in [Electrochemistry: electrolysis and electrode potentials](#chem.electrochem). Fluorine (+2.87 V) is the strongest oxidising agent of all: it even oxidises water, and it is too dangerous to use in school.
 :::
 
 :::eg Chlorine water is added to aqueous potassium iodide. Describe what you see, write an ionic equation and explain why the reaction happens.
@@ -169,7 +169,7 @@ You can explain the pattern with bond energies. The reaction breaks one H–H bo
 
 \[\Delta H = (\text{H–H} + \text{X–X}) - 2(\text{H–X})\]
 
-Using the Data booklet values (H–H 436, H–F 562, H–Cl 431, H–Br 366, H–I 299) gives the table below. A negative value means that the reaction gives out heat. The formation of HF releases a great deal of energy, which is why fluorine is so violent. The formation of HI is only just exothermic, so little energy is released to keep the reaction going and the equilibrium mixture contains a lot of unreacted \(\ce{H2}\) and \(\ce{I2}\).
+Using the syllabus Data section values (H–H 436, H–F 562, H–Cl 431, H–Br 366, H–I 299) gives the table below. A negative value means that the reaction gives out heat. The formation of HF releases a great deal of energy, which is why fluorine is so violent. The formation of HI is only just exothermic, so little energy is released to keep the reaction going and the equilibrium mixture contains a lot of unreacted \(\ce{H2}\) and \(\ce{I2}\).
 
 | \(\ce{H2 + X2 -> 2HX}\) | \(\Delta H\) / kJ mol⁻¹ (per mole of equation) |
 |---|---|

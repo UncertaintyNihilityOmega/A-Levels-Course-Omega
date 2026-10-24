@@ -35,7 +35,7 @@ All of them have **two outer electrons** in an s sub-shell. They lose both of th
 
 ### Why +2, and why reactivity increases down the group
 
-The successive ionisation energies from the Data booklet show why the ions are 2+. The third ionisation energy is much bigger than the second: the third electron would have to come from the inner shell, which is much closer to the nucleus.
+The successive ionisation energies (from the syllabus Data section) show why the ions are 2+. The third ionisation energy is much bigger than the second: the third electron would have to come from the inner shell, which is much closer to the nucleus.
 
 | Element | 1st IE | 2nd IE | 3rd IE | 1st + 2nd |
 |---|---|---|---|---|

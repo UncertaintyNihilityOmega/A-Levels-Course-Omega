@@ -161,7 +161,7 @@ A long "explain" question earns marks for linked points. Use one of two shapes.
 For "explain" questions, ask three questions before you write: what structure or bonding does each substance have? What factor makes them different? How does that change the energy needed? The answer is these three points in order.
 :::
 
-:::eg Spot the weak answer: explain why the first ionisation energy of sulfur is lower than that of phosphorus. The Data booklet gives 1060 kJ mol⁻¹ for phosphorus and 1000 kJ mol⁻¹ for sulfur. [3 marks]
+:::eg Spot the weak answer: explain why the first ionisation energy of sulfur is lower than that of phosphorus. The question gives 1060 kJ mol⁻¹ for phosphorus and 1000 kJ mol⁻¹ for sulfur. [3 marks]
 A student wrote this answer.
 
 Line 1: The fourth 3p electron in sulfur has to pair up with another electron in the same 3p orbital, and the two electrons in that orbital repel each other.

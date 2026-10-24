@@ -174,7 +174,7 @@ The syllabus uses the same words in every paper: analyse, calculate, compare, co
 
 ## Resources
 
-The **Data booklet** values for Chemistry (the Periodic Table with relative atomic masses, constants, bond energies, electrode potentials, infrared and NMR tables) come with the exam papers, and they appear in the Data section of the syllabus. Learn where each table is, because you will need them under time pressure.
+There is no Data booklet in the Chemistry exams. Each paper prints the Periodic Table (with relative atomic masses) and a list of important values and constants, and any other data a question needs (bond energies, electrode potentials, infrared and NMR values) is given in that question. The same tables appear in the **Data section** of the syllabus: get to know them, so that the values look familiar and you can tell when an answer is sensible.
 
 Useful tools inside this guide:
 

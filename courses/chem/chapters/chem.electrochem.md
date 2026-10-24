@@ -295,7 +295,7 @@ A reaction is feasible when its E⦵cell is positive, since that is when the ove
 A reaction is feasible under standard conditions if E⦵cell is positive, where E⦵cell = E⦵(the half-equation being reduced) − E⦵(the half-equation being oxidised). The oxidising agent is on the left of the more positive half-equation.
 :::
 
-:::eg (Exam style) Use the table to decide whether (a) \(\ce{Fe^3+}\) ions oxidise iodide ions, (b) chlorine oxidises bromide ions, (c) copper reacts with dilute hydrochloric acid.
+:::eg (Exam style) Use E⦵(Fe³⁺/Fe²⁺) = +0.77 V, E⦵(I₂/I⁻) = +0.54 V, E⦵(Cl₂/Cl⁻) = +1.36 V, E⦵(Br₂/Br⁻) = +1.07 V, E⦵(2H⁺/H₂) = 0.00 V and E⦵(Cu²⁺/Cu) = +0.34 V to decide whether (a) \(\ce{Fe^3+}\) ions oxidise iodide ions, (b) chlorine oxidises bromide ions, (c) copper reacts with dilute hydrochloric acid.
 (a) The reduction is \(\ce{Fe^3+ -> Fe^2+}\) (+0.77 V) and the oxidation is \(\ce{2I- -> I2}\) (+0.54 V): \(E^{\ominus}_{\mathrm{cell}} = 0.77 - 0.54 = +0.23\) V. Positive, so feasible. [B1]
 (b) \(\ce{Cl2 -> 2Cl-}\) (+1.36 V) is reduced and \(\ce{2Br- -> Br2}\) (+1.07 V) is oxidised: \(E^{\ominus}_{\mathrm{cell}} = 1.36 - 1.07 = +0.29\) V. Feasible. [B1]
 (c) The reduction would be \(\ce{2H+ -> H2}\) (0.00 V) and the oxidation \(\ce{Cu -> Cu^2+}\) (+0.34 V): \(E^{\ominus}_{\mathrm{cell}} = 0.00 - 0.34 = -0.34\) V. Negative, so not feasible. [B1]
@@ -419,9 +419,9 @@ Q: Calculate the charge, in coulombs, that passes when a current of 2.50 A flows
 A: \(Q = It = 2.50 \times (40.0 \times 60) = 6000\) C.
 Q: Calculate the mass of zinc deposited at the cathode when a current of 3.00 A passes through zinc sulfate solution for 1.00 hour. (\(A_r\) of Zn = 65.4)
 A: \(Q = 3.00 \times 3600 = 10\,800\) C; \(n(\mathrm{e^-}) = 10\,800 / 9.65 \times 10^{4} = 0.1119\) mol; \(\ce{Zn^2+ + 2e- -> Zn}\) gives \(n(\ce{Zn}) = 0.05596\) mol; \(m = 0.05596 \times 65.4 = 3.66\) g.
-Q: Calculate E⦵cell for a cell made from lead and copper half-cells and say which metal is the negative electrode.
+Q: Calculate E⦵cell for a cell made from lead and copper half-cells (E⦵(Pb²⁺/Pb) = −0.13 V, E⦵(Cu²⁺/Cu) = +0.34 V) and say which metal is the negative electrode.
 A: \(E^{\ominus}_{\mathrm{cell}} = +0.34 - (-0.13) = +0.47\) V. Lead is the negative electrode (E⦵ is more negative).
-Q: Will bromine oxidise iron(II) ions to iron(III) ions? Show your working.
+Q: Will bromine oxidise iron(II) ions to iron(III) ions? Show your working. (E⦵(Br₂/Br⁻) = +1.07 V, E⦵(Fe³⁺/Fe²⁺) = +0.77 V.)
 A: \(E^{\ominus}_{\mathrm{cell}} = +1.07 - (+0.77) = +0.30\) V. Positive, so yes, under standard conditions.
 Q: List the conditions that define a standard hydrogen electrode.
 A: A platinum (platinum black) electrode, hydrogen gas at 101 kPa, \(\ce{H+}\) at 1.00 mol dm⁻³, at 298 K.
@@ -453,14 +453,14 @@ A: The tin half-cell is positive because its E⦵ is more positive. [B1]
 \(E^{\ominus}_{\mathrm{cell}} = +0.15 - (-0.26) = +0.41\) V [B1]
 Electrons flow in the wire from the vanadium half-cell to the tin half-cell. [B1]
 \(\ce{Sn^4+ + 2V^2+ -> Sn^2+ + 2V^3+}\) [B1]
-Q: [5 marks] ★★ Acidified potassium manganate(VII) is used in titrations. (a) Use the table to show that acidified \(\ce{MnO4-}\) can oxidise both bromide ions and chloride ions. (b) Explain why hydrochloric acid cannot be used to acidify a manganate(VII) titration of iron(II).
+Q: [5 marks] ★★ Acidified potassium manganate(VII) is used in titrations. (a) Use E⦵(MnO₄⁻/Mn²⁺) = +1.52 V, E⦵(Br₂/Br⁻) = +1.07 V and E⦵(Cl₂/Cl⁻) = +1.36 V to show that acidified \(\ce{MnO4-}\) can oxidise both bromide ions and chloride ions. (b) Explain why hydrochloric acid cannot be used to acidify a manganate(VII) titration of iron(II).
 A: (a) With bromide: \(E^{\ominus}_{\mathrm{cell}} = +1.52 - (+1.07) = +0.45\) V, positive. [B1] With chloride: \(+1.52 - (+1.36) = +0.16\) V, positive. [B1] (Both reactions are feasible.)
 (b) \(\ce{MnO4-}\) would also oxidise \(\ce{Cl-}\) from the hydrochloric acid, which is feasible. [B1]
 This uses up some of the manganate(VII), so the titre would be too large and the iron(II) result too high. [B1] Dilute sulfuric acid is used, because sulfate is not oxidised. [B1]
-Q: [4 marks] ★★ (a) Calculate the electrode potential of a silver half-cell in which the concentration of \(\ce{Ag+}\) is 0.0500 mol dm⁻³. (b) State and explain how E changes if the concentration of silver ions is increased.
+Q: [4 marks] ★★ (a) Given E⦵(Ag⁺/Ag) = +0.80 V, calculate the electrode potential of a silver half-cell in which the concentration of \(\ce{Ag+}\) is 0.0500 mol dm⁻³. (b) State and explain how E changes if the concentration of silver ions is increased.
 A: (a) \(z = 1\) [B1]; \(E = 0.80 + 0.059 \log_{10}(0.0500)\) [M1] \(= +0.72\) V [A1]
 (b) E increases (becomes more positive), because a higher concentration of \(\ce{Ag+}\) moves the equilibrium \(\ce{Ag+ + e- <=> Ag}\) to the right. [B1]
-Q: [6 marks] ★★★ A cell is made from a zinc half-cell and a silver half-cell, both at standard conditions. (a) Calculate E⦵cell. (b) Calculate ΔG⦵ for \(\ce{Zn(s) + 2Ag+(aq) -> Zn^2+(aq) + 2Ag(s)}\). (c) The concentration of \(\ce{Ag+}\) is changed to 0.0100 mol dm⁻³. Calculate the new cell potential.
+Q: [6 marks] ★★★ A cell is made from a zinc half-cell and a silver half-cell, both at standard conditions (E⦵(Zn²⁺/Zn) = −0.76 V, E⦵(Ag⁺/Ag) = +0.80 V; F = 9.65 × 10⁴ C mol⁻¹). (a) Calculate E⦵cell. (b) Calculate ΔG⦵ for \(\ce{Zn(s) + 2Ag+(aq) -> Zn^2+(aq) + 2Ag(s)}\). (c) The concentration of \(\ce{Ag+}\) is changed to 0.0100 mol dm⁻³. Calculate the new cell potential.
 H: In (b), how many electrons are transferred in the equation as written?
 H: In (c), only the silver half-cell changes.
 A: (a) \(E^{\ominus}_{\mathrm{cell}} = +0.80 - (-0.76) = +1.56\) V [B1]

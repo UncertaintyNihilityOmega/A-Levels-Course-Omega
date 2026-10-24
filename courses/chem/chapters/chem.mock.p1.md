@@ -10,7 +10,7 @@
 
 - Answer all 40 questions. Each has four options, A, B, C and D; choose the one correct answer.
 - Each correct answer scores 1 mark. A wrong answer scores zero, so do not leave any question blank.
-- You may use a calculator and the Data booklet values (the Periodic Table, \(R = 8.31\) J K⁻¹ mol⁻¹, the molar gas volume of 24.0 dm³ mol⁻¹ at room conditions, \(c = 4.18\) J g⁻¹ K⁻¹, and the tables of ionisation energies and bond energies). Use \(A_r\) to one decimal place from the Periodic Table.
+- You may use a calculator. The Periodic Table and important values are printed in this paper (\(R = 8.31\) J K⁻¹ mol⁻¹, the molar gas volume of 24.0 dm³ mol⁻¹ at room conditions, \(c = 4.18\) J g⁻¹ K⁻¹); any other data you need is given in the question. Use \(A_r\) to one decimal place from the Periodic Table.
 - The questions follow the AS syllabus in order: physical chemistry (questions 1–15), inorganic chemistry (16–24) and organic chemistry and analysis (25–40). Press **Finish** when you have answered them all to see the answers and a short reason for each.
 :::
 
@@ -154,7 +154,7 @@ A: **D**. Silicon(IV) oxide has a giant covalent structure: a very high melting 
 :::
 
 :::try
-Q: [1 mark] (#chem.energetics) Use the Data booklet. What is the enthalpy change, in kJ mol⁻¹, for \(\ce{N2(g) + 3H2(g) -> 2NH3(g)}\)?
+Q: [1 mark] (#chem.energetics) The bond energies are N≡N 944, H–H 436 and N–H 390 kJ mol⁻¹. What is the enthalpy change, in kJ mol⁻¹, for \(\ce{N2(g) + 3H2(g) -> 2NH3(g)}\)?
 
 **A** +1082
 
@@ -456,7 +456,7 @@ A: **B**. Propanone comes from a \(\ce{(CH3)2C=}\) end (a carbon with two alkyl 
 :::
 
 :::try
-Q: [1 mark] (#chem.org.halogen) Equal amounts of 1-chlorobutane, 1-bromobutane and 1-iodobutane are warmed with aqueous silver nitrate in ethanol. Use the Data booklet. Which statement is correct?
+Q: [1 mark] (#chem.org.halogen) Equal amounts of 1-chlorobutane, 1-bromobutane and 1-iodobutane are warmed with aqueous silver nitrate in ethanol. The bond energies are C–Cl 340, C–Br 280 and C–I 240 kJ mol⁻¹. Which statement is correct?
 
 **A** 1-chlorobutane reacts fastest because the C–Cl bond is the most polar.
 
@@ -464,7 +464,7 @@ Q: [1 mark] (#chem.org.halogen) Equal amounts of 1-chlorobutane, 1-bromobutane a
 
 **C** The three compounds react at the same rate because they are all primary.
 
-**D** 1-iodobutane reacts fastest because the C–I bond (240 kJ mol⁻¹) is weaker than C–Br (280) and C–Cl (340).
+**D** 1-iodobutane reacts fastest because the C–I bond is weaker than C–Br and C–Cl.
 
 A: **D**. The rate of reaction depends on how easily the carbon–halogen bond breaks, so it follows bond energy: C–I is the weakest and gives silver iodide most quickly. A is the usual misconception: polarity would attract the nucleophile, but bond breaking decides the rate.
 :::
@@ -572,7 +572,7 @@ A: **A**. Sodium reacts with both the alcohol –OH and the carboxylic acid –C
 :::
 
 :::try
-Q: [1 mark] (#chem.analysis) The infrared spectrum of a compound shows a strong absorption at 1715 cm⁻¹ and a very broad absorption between 2500 and 3000 cm⁻¹. Use the Data booklet. Which compound is it?
+Q: [1 mark] (#chem.analysis) The infrared spectrum of a compound shows a strong absorption at 1715 cm⁻¹ and a very broad absorption between 2500 and 3000 cm⁻¹. Absorption ranges: C=O (carbonyl and carboxyl) 1670–1740, C=O (ester) 1710–1750, O–H (alcohol) 3200–3600, O–H (carboxylic acid) 2500–3000 cm⁻¹. Which compound is it?
 
 **A** propan-1-ol
 

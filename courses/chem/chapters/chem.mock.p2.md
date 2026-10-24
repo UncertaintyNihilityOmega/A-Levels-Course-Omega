@@ -12,7 +12,7 @@ Paper 2 is a written paper of structured questions on the AS Level topics. Write
 
 - Answer all five questions.
 - Show your working. Give each numerical answer to an appropriate number of significant figures, with units where they are needed.
-- You may use a calculator. The Periodic Table (relative atomic masses to 1 decimal place) and the Data booklet values are allowed: \(R = 8.31\) J K⁻¹ mol⁻¹, molar gas volume 24.0 dm³ mol⁻¹ at room conditions, \(c = 4.18\) J g⁻¹ K⁻¹ for water, and the bond energies and spectroscopy data from the Data section.
+- You may use a calculator. The Periodic Table and important values are printed in this paper (relative atomic masses to 1 decimal place, \(R = 8.31\) J K⁻¹ mol⁻¹, molar gas volume 24.0 dm³ mol⁻¹ at room conditions, \(c = 4.18\) J g⁻¹ K⁻¹ for water); any other data you need is given in the question.
 - The number of marks for each part is shown in brackets at the end of the part. Press **Finish** when you have answered every question to see the mark schemes and to enter your mark for each question.
 :::
 
@@ -167,7 +167,9 @@ Compound W has the molecular formula \(\ce{C_xH_yO}\). Its properties are:
 
 (b) Deduce the molecular formula of W. (2 marks)
 
-(c) Use the infrared data and the Data booklet to explain what the infrared spectrum shows about W. (3 marks)
+(c) Use the infrared data and the absorption ranges below to explain what the infrared spectrum shows about W. (3 marks)
+
+Infrared absorption ranges in cm⁻¹: C=O (carbonyl and carboxyl) 1670–1740; C=O (ester) 1710–1750; O–H (carboxylic acid) 2500–3000; O–H (alcohol) 3200–3600; C–H (alkane) 2850–2950.
 
 (d) Use the other information to deduce the structure of W. (2 marks)
 

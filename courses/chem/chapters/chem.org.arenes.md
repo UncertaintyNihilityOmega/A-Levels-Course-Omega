@@ -39,7 +39,7 @@ In 1865 Kekulé proposed that benzene is a ring of six carbon atoms with alterna
 :::
 
 1. **It does not decolourise bromine water.** Cyclohexene, a real C=C compound, turns orange bromine water colourless at once by electrophilic addition. Benzene, which should have three C=C bonds, does not react with bromine water at all.
-2. **All the carbon–carbon bonds are the same length.** X-ray diffraction shows a regular hexagon in which every C–C bond is 0.140 nm. A C–C single bond is 0.154 nm and a C=C double bond is 0.134 nm, so benzene's bonds are in between. A Kekulé ring would have three long and three short bonds. The data booklet gives the same message in energy: the C–C bond energy in benzene is 520 kJ mol⁻¹, between C–C (350) and C=C (610).
+2. **All the carbon–carbon bonds are the same length.** X-ray diffraction shows a regular hexagon in which every C–C bond is 0.140 nm. A C–C single bond is 0.154 nm and a C=C double bond is 0.134 nm, so benzene's bonds are in between. A Kekulé ring would have three long and three short bonds. The syllabus Data section gives the same message in energy: the C–C bond energy in benzene is 520 kJ mol⁻¹, between C–C (350) and C=C (610).
 3. **It is more stable than three double bonds would be.** The hydrogenation of benzene gives off much less heat than three separate C=C bonds would (worked example below).
 
 ### Sigma bonds and the delocalised π system

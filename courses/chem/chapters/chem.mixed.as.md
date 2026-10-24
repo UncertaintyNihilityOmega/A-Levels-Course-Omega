@@ -26,7 +26,7 @@ Each set below mixes at least five topics, with the easier questions (★) first
 | 5 | Organic reactions and mechanisms | naming, isomers, mechanisms, alcohols, carbonyls, esters |
 | 6 | Synthesis, analysis and synoptic problems | routes, mass spectra, IR, gas volumes, combustion analysis |
 
-1. Do **one set per sitting**, about 50 minutes, without notes and with the Periodic Table and the data values in front of you (the same values the real Data booklet gives).
+1. Do **one set per sitting**, about 50 minutes, without notes and with the Periodic Table in front of you (the real papers print the Periodic Table and the important values; any other data you need is given in the question, as it is here).
 2. Write your answer on paper before you open the hints or the answer. Each hint opens one at a time: use them only after a real attempt.
 3. Mark yourself honestly with the answer open, one mark token ([B1], [M1], [A1]) at a time. A mark you give yourself for "the idea was roughly right" is a mark the examiner will not give.
 4. For every question that lost marks, open the **Revise** link under the answer, fix the gap, and write the correction in one line.
@@ -85,7 +85,7 @@ A: (a) A is a giant metallic lattice (positive ions in a sea of delocalised elec
 Q: [3 marks] ★ (#chem.energetics) Define the standard enthalpy change of combustion of a substance, and write the equation, with state symbols, that represents it for ethanol.
 A: The enthalpy change when one mole of the substance is burnt completely in oxygen [B1] under standard conditions (298 K, 101 kPa). [B1]
 \(\ce{C2H5OH(l) + 3O2(g) -> 2CO2(g) + 3H2O(l)}\) [B1]
-Q: [6 marks] ★★ (#chem.energetics) 0.460 g of ethanol was burned and the flame heated 200 g of water, whose temperature rose by 13.9 K. (a) Calculate the enthalpy change of combustion of ethanol in kJ mol⁻¹, with its sign. (b) The Data booklet value is −1367 kJ mol⁻¹. Give two reasons why the experimental value is less exothermic.
+Q: [6 marks] ★★ (#chem.energetics) 0.460 g of ethanol was burned and the flame heated 200 g of water, whose temperature rose by 13.9 K. (a) Calculate the enthalpy change of combustion of ethanol in kJ mol⁻¹, with its sign. (b) The accepted value is −1367 kJ mol⁻¹. Give two reasons why the experimental value is less exothermic.
 A: (a) \(M_r(\ce{C2H5OH}) = 2(12.0) + 6(1.0) + 16.0 = 46.0\) and \(n = 0.460/46.0 = 0.0100\) mol [B1]
 \(q = mc\Delta T = 200 \times 4.18 \times 13.9 = 11\,620\) J [M1]
 \(\Delta H = -11.62/0.0100\) [M1]
@@ -266,10 +266,10 @@ Q: [6 marks] ★★ (#chem.org.synthesis) Devise a three-step synthesis of butan
 A: Step 1: \(\ce{PCl5}\) (or \(\ce{SOCl2}\), or \(\ce{PCl3}\) and heat) [B1], giving 1-chloropropane [B1]
 Step 2: KCN in ethanol, heat [B1], giving butanenitrile [B1]
 Step 3: heat under reflux with dilute hydrochloric acid (or with dilute NaOH(aq), then acidify) [B1], giving butanoic acid [B1]
-Q: [11 marks] ★★★ (#chem.analysis) Compound Z contains only carbon, hydrogen and oxygen: 54.5% C, 9.1% H and 36.4% O by mass. In its mass spectrum the molecular ion peak is at m/z 88, the peak at m/z 89 is 4.4% of the height of the molecular ion peak, and the base peak is at m/z 43. Its infrared spectrum has strong absorptions at 1740 and 1240 cm⁻¹, and between 2500 and 3600 cm⁻¹ only the C–H absorption near 2900 cm⁻¹. (a) Calculate the empirical formula. (b) Deduce the molecular formula. (c) Show that the m/z 89 peak agrees with your molecular formula. (d) Use the infrared data to name the functional group present and to rule out others. (e) The m/z 43 peak is the ion \(\ce{CH3CO+}\). Suggest the structure of Z.
+Q: [11 marks] ★★★ (#chem.analysis) Compound Z contains only carbon, hydrogen and oxygen: 54.5% C, 9.1% H and 36.4% O by mass. In its mass spectrum the molecular ion peak is at m/z 88, the peak at m/z 89 is 4.4% of the height of the molecular ion peak, and the base peak is at m/z 43. Its infrared spectrum has strong absorptions at 1740 and 1240 cm⁻¹, and between 2500 and 3600 cm⁻¹ only the C–H absorption near 2900 cm⁻¹. Absorption ranges in cm⁻¹: C=O (carbonyl and carboxyl) 1670–1740; C=O (ester) 1710–1750; C–O 1040–1300; O–H (carboxylic acid) 2500–3000; O–H (alcohol) 3200–3600. (a) Calculate the empirical formula. (b) Deduce the molecular formula. (c) Show that the m/z 89 peak agrees with your molecular formula. (d) Use the infrared data to name the functional group present and to rule out others. (e) The m/z 43 peak is the ion \(\ce{CH3CO+}\). Suggest the structure of Z.
 H: For (a) divide each percentage by the relative atomic mass, then divide by the smallest answer.
 H: For (c) the number of carbon atoms is 100 × abundance of M+1 / (1.1 × abundance of M⁺).
-H: Look at the Data booklet ranges for C=O, C–O and O–H.
+H: Compare the absorptions with the ranges given for C=O, C–O and O–H.
 A: (a) C: 54.5/12.0 = 4.54; H: 9.1/1.0 = 9.1; O: 36.4/16.0 = 2.275 [M1]
 Ratio C : H : O = 2 : 4 : 1 [M1]
 Empirical formula \(\ce{C2H4O}\) [A1]

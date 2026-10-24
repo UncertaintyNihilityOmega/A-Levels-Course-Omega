@@ -44,7 +44,7 @@ A bond is like a guitar string. A thin, tight string (a light atom on a strong b
 
 An IR spectrum plots **transmittance** (the percentage of radiation that gets through the sample) against wavenumber. Where the sample absorbs, less radiation gets through, so each absorption appears as a **downward dip**. Wavenumber is plotted **from high on the left to low on the right**: this is the opposite of most graphs and is a favourite trap.
 
-The Data section of the syllabus gives the wavenumber range for each bond. You are given this table in the exam, so you do not need to memorise numbers, but you must know how to use it and which ranges overlap.
+The Data section of the syllabus gives the wavenumber range for each bond. In an exam the question gives you the ranges it needs, so you do not need to memorise the numbers, but you must know how to use them and which ranges overlap.
 
 | Bond | Wavenumber range / cm⁻¹ | Appears in |
 |---|---|---|
@@ -116,7 +116,7 @@ IR can follow a reaction: the loss of a reactant absorption and the appearance o
 :::
 
 :::exam IR answers that score
-Name the bond, give the range from the Data table, and say what group it shows: "the absorption at 1715 cm⁻¹ is in the range 1670–1740 cm⁻¹, so C=O, a carbonyl group". Also say what is *missing*, because the absence of a broad absorption at 3200–3600 cm⁻¹ rules out an alcohol. Aldehydes and ketones cannot be told apart from the IR C=O absorption alone; use a chemical test or the mass spectrum.
+Name the bond, give the range from the table, and say what group it shows: "the absorption at 1715 cm⁻¹ is in the range 1670–1740 cm⁻¹, so C=O, a carbonyl group". Also say what is *missing*, because the absence of a broad absorption at 3200–3600 cm⁻¹ rules out an alcohol. Aldehydes and ketones cannot be told apart from the IR C=O absorption alone; use a chemical test or the mass spectrum.
 :::
 
 ## Mass spectrometry
@@ -347,7 +347,7 @@ The student scores 0 out of 2. Always ask which peak has the highest m/e before 
 :::
 
 :::try Start easy, finish at exam standard
-Q: Use the Data table to say which bond absorbs at (a) 1720 cm⁻¹, (b) 3400 cm⁻¹ (broad), (c) 2230 cm⁻¹.
+Q: Use the ranges C=O 1670–1740, O–H (alcohol) 3200–3600, C≡N 2200–2250 and C–H (alkane) 2850–2950 cm⁻¹ to say which bond absorbs at (a) 1720 cm⁻¹, (b) 3400 cm⁻¹ (broad), (c) 2230 cm⁻¹.
 A: (a) C=O (carbonyl, 1670–1740). (b) O–H of an alcohol (3200–3600), or N–H (3300–3500) if the absorption were sharper. (c) C≡N (2200–2250), a nitrile.
 Q: The IR spectrum of an unknown liquid has a strong absorption at 1740 cm⁻¹ and one at 1240 cm⁻¹, with no broad O–H absorption (between 2500 and 3600 cm⁻¹ only the C–H absorption near 2900 cm⁻¹). Suggest the functional group.
 A: An ester. C=O in the ester range 1710–1750, C–O in 1040–1300, and no O–H.
@@ -370,7 +370,7 @@ Strong C=O absorption at 1670–1740 cm⁻¹. [B1]
 Q: [2 marks] ★ In the mass spectrum of an organic compound the peak with the highest m/e is at 88. State what this peak is and give the relative molecular mass.
 A: It is the molecular ion peak, \(\ce{M^+}\), the molecule that has lost one electron. [B1]
 \(M_r = 88\). [B1]
-Q: [4 marks] ★★ Compounds A and B both have the formula \(\ce{C4H8O2}\). A has IR absorptions at about 3000 cm⁻¹ (very broad) and 1710 cm⁻¹. B has absorptions at 1740 cm⁻¹ and 1240 cm⁻¹ only, apart from C–H. Identify the functional group in each, using the Data table.
+Q: [4 marks] ★★ Compounds A and B both have the formula \(\ce{C4H8O2}\). A has IR absorptions at about 3000 cm⁻¹ (very broad) and 1710 cm⁻¹. B has absorptions at 1740 cm⁻¹ and 1240 cm⁻¹ only, apart from C–H. Identify the functional group in each, using these ranges in cm⁻¹: C=O (carboxyl) 1670–1740, C=O (ester) 1710–1750, C–O 1040–1300, O–H (carboxylic acid) 2500–3000, O–H (alcohol) 3200–3600.
 A: A: the very broad absorption at 2500–3000 cm⁻¹ is the O–H of a carboxylic acid [B1], and 1710 cm⁻¹ is C=O (range 1670–1740). [B1]
 B: 1740 cm⁻¹ is in the ester C=O range 1710–1750 [B1], and 1240 cm⁻¹ is C–O (1040–1300). There is no O–H absorption, so B is an ester. [B1]
 Q: [3 marks] ★★ (#chem.atoms) The mass spectrum of neon shows peaks at m/e 20 (90.5 %), 21 (0.3 %) and 22 (9.2 %). Calculate the relative atomic mass of neon to 3 significant figures.

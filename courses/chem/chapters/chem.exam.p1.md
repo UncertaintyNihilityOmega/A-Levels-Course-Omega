@@ -65,7 +65,7 @@ Some questions use this last format: the answer is not one statement but a combi
 4. **Check units and powers of ten.** Volumes are in cm³ or dm³ (1 dm³ = 1000 cm³), pressure in kPa or Pa, energies in J or kJ. Many distractors are the right number with the wrong power of ten.
 5. **Watch the small words.** "Not", "incorrect", "only", "least", "all". Underline them. For "which is NOT correct", test every option and pick the false one.
 6. **Draw it.** For an organic question, sketch the structure or the mechanism step on the paper. For a shape question, count bonding pairs and lone pairs on the central atom before you decide.
-7. **Use the Data booklet.** If the question gives you a bond to break or an energy to use, look it up rather than trusting memory (see below).
+7. **Use the data in the question.** If the question gives you a bond energy or another value, use that value rather than your memory of it, and check which row or state it is for (see below).
 :::
 
 :::warn
@@ -88,7 +88,7 @@ These are the mistakes that the wrong options in Paper 1 questions are made from
 | [Group 17](#chem.group17) | Mixing up which halide ion reduces concentrated sulfuric acid furthest | Reducing power increases down the group: Cl⁻ < Br⁻ < I⁻ |
 | [Organic](#chem.org.intro) | Counting isomers twice or missing branched ones; confusing a reagent with a condition | Systematically build from the longest chain; write reagent and condition separately |
 | [Halogenoalkanes](#chem.org.halogen) | Believing the most polar bond (C–Cl) reacts fastest | Reactivity follows bond strength: C–I is the weakest, so the fastest |
-| [Analysis](#chem.analysis) | Reading the IR region wrongly or forgetting the [M+1] peak formula | Use the Data booklet IR table; learn \(n = \dfrac{100 \times \text{abundance of } [\text{M}+1]^+}{1.1 \times \text{abundance of M}^+}\) for the number of carbon atoms |
+| [Analysis](#chem.analysis) | Reading the IR region wrongly or forgetting the [M+1] peak formula | Learn the IR table in the syllabus Data section (the paper gives any values it needs); learn \(n = \dfrac{100 \times \text{abundance of } [\text{M}+1]^+}{1.1 \times \text{abundance of M}^+}\) for the number of carbon atoms |
 
 ## Eight questions worked in full
 
@@ -121,7 +121,7 @@ Q: [1 mark] (#chem.shapes) Which species has a pyramidal shape?
 H: For each central atom count the bonding pairs, then the lone pairs.
 A: **D**. In \(\ce{H3O+}\) oxygen has 3 bonding pairs and 1 lone pair: four pairs arrange tetrahedrally, but the shape (the atoms only) is pyramidal, like ammonia. A, \(\ce{BF3}\), has three bonding pairs and no lone pair: trigonal planar. B, \(\ce{NH4+}\), has four bonding pairs: tetrahedral. C, \(\ce{CO3^2-}\), has three regions of electron density and no lone pair on carbon: trigonal planar.
 
-Q: [1 mark] (#chem.energetics) Use the Data booklet. What is the enthalpy change of the reaction \(\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)}\) in kJ mol⁻¹?
+Q: [1 mark] (#chem.energetics) The bond energies are: C–H 410, O=O 496, C=O (in CO₂) 805 and O–H 460 kJ mol⁻¹. What is the enthalpy change of the reaction \(\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)}\) in kJ mol⁻¹?
 
 **A** −1314
 
@@ -132,7 +132,7 @@ Q: [1 mark] (#chem.energetics) Use the Data booklet. What is the enthalpy change
 **D** +818
 
 H: Bonds broken: 4 C–H and 2 O=O. Bonds made: 2 C=O (in CO₂) and 4 O–H.
-A: **B**. Broken: \(4 \times 410 + 2 \times 496 = 2632\) kJ. Made: \(2 \times 805 + 4 \times 460 = 3450\) kJ (the C=O value in CO₂ is 805). \(\Delta H = 2632 - 3450 = -818\) kJ mol⁻¹. A breaks only one O=O bond. C uses the average C=O value (740) instead of the CO₂ value. D has the sign wrong: it comes from bonds made minus bonds broken. Breaking bonds costs energy and making them releases it, so ΔH = bonds broken − bonds made, which is negative for this exothermic reaction.
+A: **B**. Broken: \(4 \times 410 + 2 \times 496 = 2632\) kJ. Made: \(2 \times 805 + 4 \times 460 = 3450\) kJ (the C=O value in CO₂ is 805). \(\Delta H = 2632 - 3450 = -818\) kJ mol⁻¹. A breaks only one O=O bond. C uses 740, the average C=O value, instead of the CO₂ value given in the question. D has the sign wrong: it comes from bonds made minus bonds broken. Breaking bonds costs energy and making them releases it, so ΔH = bonds broken − bonds made, which is negative for this exothermic reaction.
 
 Q: [1 mark] (#chem.equilibria) The equilibrium \(\ce{2SO2(g) + O2(g) <=> 2SO3(g)}\) is exothermic in the forward direction. Which change increases the equilibrium amount of \(\ce{SO3}\)?
 
@@ -196,20 +196,21 @@ Q: [1 mark] (#chem.atoms) The first four ionisation energies of an element X, in
 A: **C**. The large jump comes between the third and fourth ionisation energies (2740 to 11 600), so the fourth electron is removed from an inner shell and the atom has three outer electrons. It forms \(\ce{X^3+}\), so the chloride is \(\ce{XCl3}\) (this is aluminium). A would need the large jump after the first electron, B after the second, and D after the fourth.
 :::
 
-## The Data booklet
+## What the paper gives you
 
-You are expected to use the Data booklet in this paper, so learn where things are rather than learning the values. It contains:
+There is no Data booklet in the 9701 exams. The paper prints the Periodic Table (with relative atomic masses) and a list of "Important values, constants and standards" (such as the gas constant, the molar gas volume and the specific heat capacity of water). Any other data a question needs, such as a bond energy, an electrode potential, an ionisation energy or an infrared or NMR value, is given inside that question.
 
-- the constants and the molar gas volume, and the Periodic Table with relative atomic masses
+Know the tables of the syllabus Data section well, so that you recognise the values and can judge whether an answer is sensible:
+
 - first and successive ionisation energies, and Pauling electronegativities
 - bond energies (exact for diatomic molecules, average for the rest)
 - standard electrode potentials
 - ¹H and ¹³C NMR chemical shifts, and infrared absorptions
 
-Do not rely on the booklet for formulas such as the [M+1] carbon count: learn them.
+Do not expect the paper to give formulas such as the [M+1] carbon count: learn them.
 
 :::tip
-Paper 1 questions that need the booklet usually say so, or give you an unfamiliar bond or element. Check which state the question wants: bond energies for **gaseous** molecules, and the C=O value in carbon dioxide is different from the average C=O value. Looking up the wrong row is a very common reason for a wrong answer.
+When a question gives you data, read which species and which state each value is for: bond energies for **gaseous** molecules, and the C=O value in carbon dioxide is different from the average C=O value. Using the wrong value from the list is a very common reason for a wrong answer.
 :::
 
 ## A practice plan
@@ -217,7 +218,7 @@ Paper 1 questions that need the booklet usually say so, or give you an unfamilia
 :::steps
 1. **Topic by topic.** Finish the quiz at the end of each chapter, then fix what you got wrong by returning to the explanation, not just by reading the answer.
 2. **Untimed mixed questions.** Do the AS mixed practice in [Mixed practice: AS Level](#chem.mixed.as) to practise switching topics.
-3. **The mock.** Sit [Mock paper: Paper 1 multiple choice](#chem.mock.p1) under exam conditions: 75 minutes, no notes, the Data booklet and a calculator on the desk. Mark it and use the list of chapters to revise.
+3. **The mock.** Sit [Mock paper: Paper 1 multiple choice](#chem.mock.p1) under exam conditions: 75 minutes, no notes, and a calculator and the Periodic Table on the desk. Mark it and use the list of chapters to revise.
 4. **Real past papers.** The board's own past papers and mark schemes are available through your school, from the Cambridge International website or, sorted by topic, from the Physics & Maths Tutor collection (links below). Do at least a few full papers in 75 minutes, mark them against the mark scheme, and keep a list of the topics where you lost marks.
 5. **Fix, then repeat.** For each mistake write down which kind it was: knowledge, misreading, arithmetic or timing. Fix the cause, and a month later redo the questions you missed.
 :::
@@ -277,7 +278,7 @@ Paper 1 questions that need the booklet usually say so, or give you an unfamilia
 - [ ] I can recognise the four kinds of question: recall, calculation, data or graph, and "which statements are correct".
 - [ ] I can use the techniques of covering the options, eliminating, estimating and checking powers of ten.
 - [ ] I can name the usual trap in each AS topic and where to revise it.
-- [ ] I can find what I need in the Data booklet.
+- [ ] I can say what the paper gives me (the Periodic Table, important values, data inside the question) and I know the syllabus Data section tables.
 - [ ] I can follow a practice plan that ends with timed past papers and a list of mistakes.
 :::
 

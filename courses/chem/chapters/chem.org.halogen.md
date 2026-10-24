@@ -340,7 +340,7 @@ A: (a) Step 1: \(\ce{HBr(g)}\) at room temperature. [B1] Step 2: KCN in ethanol,
 (b) 2-methylpropanenitrile, \(\ce{CH3CH(CN)CH3}\). [B1]
 In step 1 the secondary carbocation \(\ce{CH3CH+CH3}\) is more stable than the primary one, because two alkyl groups donate electron density to it. [B1]
 So the main intermediate is 2-bromopropane, and \(\ce{CN-}\) replaces the Br on carbon 2. [B1]
-Q: [4 marks] ★★ A student warms three halogenoalkanes, A, B and C, each with aqueous silver nitrate in ethanol at 50 °C. A gives a pale yellow precipitate after 1 minute, B a cream precipitate after 5 minutes, and C a white precipitate after 30 minutes. (a) Identify the halogen in each compound. (b) Use bond energies from the Data section to explain the order of the times.
+Q: [4 marks] ★★ A student warms three halogenoalkanes, A, B and C, each with aqueous silver nitrate in ethanol at 50 °C. A gives a pale yellow precipitate after 1 minute, B a cream precipitate after 5 minutes, and C a white precipitate after 30 minutes. (a) Identify the halogen in each compound. (b) Use the bond energies C–Cl 340, C–Br 280 and C–I 240 kJ mol⁻¹ to explain the order of the times.
 A: (a) A contains iodine, B bromine and C chlorine. [B1]
 (b) The halide ion is released when the C–X bond breaks. [B1]
 Bond energies: C–I 240, C–Br 280, C–Cl 340 kJ mol⁻¹. [B1]
