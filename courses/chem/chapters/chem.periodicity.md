@@ -195,7 +195,7 @@ The metals and non-metals burn or react on heating in chlorine to give chlorides
 |---|---|---|
 | Na | burns with a bright yellow flame, white solid | \(\ce{2Na(s) + Cl2(g) -> 2NaCl(s)}\) |
 | Mg | burns with a bright white flame, white solid | \(\ce{Mg(s) + Cl2(g) -> MgCl2(s)}\) |
-| Al | heated in dry chlorine; a pale solid sublimes and collects | \(\ce{2Al(s) + 3Cl2(g) -> 2AlCl3(s)}\) |
+| Al | heated in dry chlorine; a pale solid sublimes (changes from solid straight to gas, without melting) and collects | \(\ce{2Al(s) + 3Cl2(g) -> 2AlCl3(s)}\) |
 | Si | heated in chlorine, a colourless liquid distils | \(\ce{Si(s) + 2Cl2(g) -> SiCl4(l)}\) |
 | P | burns in excess chlorine, a pale yellow solid | \(\ce{2P(s) + 5Cl2(g) -> 2PCl5(s)}\) |
 
@@ -306,7 +306,7 @@ An amphoteric oxide or hydroxide is one that shows both acidic and basic behavio
 - **Basic: \(\ce{Na2O}\) and \(\ce{MgO}\).** They react with acids.
  \[\ce{Na2O(s) + 2HCl(aq) -> 2NaCl(aq) + H2O(l)}\]
  \[\ce{MgO(s) + 2HCl(aq) -> MgCl2(aq) + H2O(l)}\]
-- **Amphoteric: \(\ce{Al2O3}\).** It reacts with acids like a base, and with sodium hydroxide like an acid. In excess aqueous NaOH it dissolves to form sodium tetrahydroxoaluminate, which contains the complex ion \(\ce{[Al(OH)4]-}\).
+- **Amphoteric: \(\ce{Al2O3}\).** It reacts with acids like a base, and with sodium hydroxide like an acid. In excess aqueous NaOH it dissolves to form sodium tetrahydroxoaluminate, which contains the complex ion \(\ce{[Al(OH)4]-}\). (A complex ion is a metal ion with other ions or molecules, called ligands, bonded to it by dative bonds from their lone pairs; here four \(\ce{OH-}\) ions each donate a lone pair to \(\ce{Al^3+}\). Transition elements covers complex ions fully.)
  \[\ce{Al2O3(s) + 6HCl(aq) -> 2AlCl3(aq) + 3H2O(l)}\]
  \[\ce{Al2O3(s) + 2NaOH(aq) + 3H2O(l) -> 2NaAl(OH)4(aq)}\]
 - **Acidic: \(\ce{SiO2}\), \(\ce{P4O10}\), \(\ce{SO2}\) and \(\ce{SO3}\).** They react with bases.
@@ -367,7 +367,7 @@ The equation is \(\ce{Al(OH)3 + NaOH -> NaAl(OH)4}\), so 1 mol of \(\ce{Al(OH)3}
 | With water | dissolves | dissolves | hydrolysed | hydrolysed | hydrolysed |
 | Likely pH | 7 | about 6.5 | about 3 | about 1 to 2 | about 1 to 2 |
 
-**Sodium chloride** and **magnesium chloride** are ionic. Water molecules surround the ions and they dissolve with no chemical change. \(\ce{Na+}\) is large and carries a single charge, so the solution is neutral (pH 7). \(\ce{Mg^2+}\) is smaller and carries a double charge, and its hydrated ion is a very weak acid, so a solution of magnesium chloride is very slightly acidic (pH about 6.5).
+**Sodium chloride** and **magnesium chloride** are ionic. Water molecules surround the ions and they dissolve with no chemical change. \(\ce{Na+}\) is large and carries a single charge, so the solution is neutral (pH 7). \(\ce{Mg^2+}\) is smaller and carries a double charge, and its hydrated ion (the ion surrounded by water molecules, which each donate a lone pair to it; see the complex ion note in the oxides section and [Transition elements](#chem.transition)) is a very weak acid, so a solution of magnesium chloride is very slightly acidic (pH about 6.5).
 
 The other three chlorides are covalent and are **hydrolysed** by water: water reacts with them and the bonds to chlorine are broken. The chlorine ends up as hydrogen chloride, which makes the solution strongly acidic and gives steamy white fumes in moist air.
 
@@ -467,7 +467,7 @@ Germanium is in the same group as silicon, so it should also have a giant covale
 
 Elements on the border between metals and non-metals are semiconductors, so germanium should be a semiconductor, conducting poorly at room temperature.
 
-Its chloride should be \(\ce{GeCl4}\), a covalent, volatile liquid like \(\ce{SiCl4}\), and it should be hydrolysed by water to the oxide and hydrogen chloride: \(\ce{GeCl4 + 2H2O -> GeO2 + 4HCl}\).
+Its chloride should be \(\ce{GeCl4}\), a covalent, volatile (easily evaporated) liquid like \(\ce{SiCl4}\), and it should be hydrolysed by water to the oxide and hydrogen chloride: \(\ce{GeCl4 + 2H2O -> GeO2 + 4HCl}\).
 :::
 
 :::eg Selenium, Se, is in Group 16 directly below sulfur. Predict the formula and nature of its oxide, and what it does with water.

@@ -309,7 +309,7 @@ The **equilibrium constant in terms of partial pressures**, \(K_p\), has the sam
 
 :::formula Equilibrium constant Kp
 \[\ce{aA(g) + bB(g) <=> cC(g) + dD(g)} \qquad K_p = \frac{p_{\mathrm{C}}^{\,c}\,p_{\mathrm{D}}^{\,d}}{p_{\mathrm{A}}^{\,a}\,p_{\mathrm{B}}^{\,b}}\]
-\(p_{\mathrm{X}}\) is the partial pressure of X at equilibrium. Its unit is the unit of pressure (Pa or atm) to the power \(\Delta n\), where \(\Delta n\) is moles of gaseous products minus moles of gaseous reactants.
+\(p_{\mathrm{X}}\) is the partial pressure of X at equilibrium. Its unit is the unit of pressure (Pa or atm) to the power \(\Delta n\), where \(\Delta n\) is moles of gaseous products minus moles of gaseous reactants. 1 atm = 101 kPa (101 325 Pa); \(K_p\) may be given in Pa, kPa or atm, so use the unit you are given.
 :::
 
 For the Haber process:
@@ -367,7 +367,7 @@ The value of an equilibrium constant is fixed at a given temperature. This is wh
 
 Why does concentration not change K? Suppose you add extra ethanol to the esterification mixture. At that instant the ratio of concentrations in the expression is smaller than K, because the ethanol is in the denominator. The system is no longer at equilibrium, so the forward reaction runs faster than the reverse reaction until the ratio has climbed back to exactly the same K, at a new equilibrium with more ester.
 
-Temperature is different because it speeds up the forward and reverse reactions by **different** amounts: the endothermic direction has the larger activation energy, so it speeds up more (you will see why in [Reaction kinetics](#chem.kinetics)). Equilibrium is reached when the two rates are equal again, and at a different temperature that happens at a different set of concentrations, so K itself changes.
+Temperature is different because it speeds up the forward and reverse reactions by **different** amounts: the endothermic direction has the larger activation energy, so it speeds up more (the last part of the Temperature section in [Reaction kinetics](#chem.kinetics) gives the reason: a larger Eₐ means the fraction of molecules above it rises more for the same temperature rise). Equilibrium is reached when the two rates are equal again, and at a different temperature that happens at a different set of concentrations, so K itself changes.
 
 :::key Temperature and K
 - Forward reaction **exothermic** (ΔH negative): increasing T **decreases** K, so the position moves to the left.

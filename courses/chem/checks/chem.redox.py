@@ -142,4 +142,7 @@ eq("tablet2 n Fe100", 3.20e-4 * 5, 1.60e-3, 1e-12); eq("tablet2 mass", round(1.6
 eq("tablet2 %", round(1.60e-3 * A['Fe'] / 0.800 * 100, 1), 11.2)
 eq("ethanedioate e", 2 * 5, 5 * 2); eq("ethanedioate H+", 8 * 2, 16); eq("ethanedioate H2O", 4 * 2, 8); eq("ethanedioate CO2", 2 * 5, 10)
 bal_f("MnO4 + C2O4", [(2, dict(Mn=1, O=4)), (16, dict(H=1)), (5, dict(C=2, O=4))], [(2, dict(Mn=1)), (8, dict(H=2, O=1)), (10, dict(C=1, O=2))])
+# organic C bond counting (reader fix): -1 per C-H, +1 per C-O bond (double counts twice)
+eq("CH3OH C bonds", 3 * -1 + 1, -2); eq("HCHO C bonds", 2 * -1 + 2, 0); eq("HCOOH C bonds", -1 + 2 + 1, 2)
+eq("HCOOH algebra", -(2 * 1 + 2 * -2), 2)
 print("ok")

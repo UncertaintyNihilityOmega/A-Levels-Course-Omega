@@ -65,8 +65,9 @@ The answer lies between 35 and 37, and is closer to 35 because the lighter isoto
 
 :::eg Boron has two isotopes, \({}^{10}\mathrm{B}\) and \({}^{11}\mathrm{B}\), and \(A_r = 10.8\). Find the percentage abundance of \({}^{10}\mathrm{B}\).
 Let the abundance of \({}^{10}\mathrm{B}\) be \(x\) per cent, so that of \({}^{11}\mathrm{B}\) is \(100 - x\).
-\[\frac{10x + 11(100 - x)}{100} = 10.8\]
-\[1100 - x = 1080 \quad\Rightarrow\quad x = 20\]
+\[\frac{10x + 11(100 - x)}{100} = 10.8 \quad\Rightarrow\quad 10x + 11(100 - x) = 1080\]
+\[10x + 1100 - 11x = 1080 \quad\Rightarrow\quad 1100 - x = 1080 \quad\Rightarrow\quad x = 20\]
+(The \(x\) terms combine: \(10x - 11x = -x\).)
 Boron is 20% \({}^{10}\mathrm{B}\) and 80% \({}^{11}\mathrm{B}\).
 :::
 
@@ -150,10 +151,12 @@ In water, ionic compounds that dissolve split into ions. An **ionic equation** s
 
 :::steps
 1. Write the balanced equation with state symbols.
-2. Write every soluble ionic compound, and strong acid, as separate ions, with (aq). Leave solids, liquids, gases and water as formulas.
+2. Write every soluble ionic compound, and strong acid (one that splits completely into ions in water; Acids and bases explains this), as separate ions, with (aq). Leave solids, liquids, gases and water as formulas.
 3. Cancel the ions that appear unchanged on both sides (the spectators).
 4. Check that the atoms and the charges balance.
 :::
+
+A question normally gives the state symbols; if it does not, use these rules. All nitrates, and all sodium, potassium and ammonium salts, dissolve. The insoluble precipitates met here are the silver halides (AgCl, AgBr, AgI) and barium sulfate, BaSO₄.
 
 :::eg Write the ionic equation for the reaction of aqueous barium chloride with aqueous sodium sulfate.
 Full equation: \(\ce{BaCl2(aq) + Na2SO4(aq) -> BaSO4(s) + 2NaCl(aq)}\)
@@ -460,7 +463,7 @@ Dividing by the coefficients: Mg \(0.2469 / 1 = 0.2469\); HCl \(0.120 / 2 = 0.06
 :::eg 25.0 cm³ of 0.100 mol dm⁻³ of an acid, \(\ce{H_xA}\), is neutralised by 50.0 cm³ of 0.100 mol dm⁻³ sodium hydroxide. How many hydrogen ions does each molecule release?
 \(n(\ce{H_xA}) = 0.100 \times 0.0250 = 0.00250\) mol. \(n(\ce{OH-}) = 0.100 \times 0.0500 = 0.00500\) mol.
 
-Ratio acid : hydroxide = 0.00250 : 0.00500 = 1 : 2. Each \(\ce{OH-}\) removes one \(\ce{H+}\), so each acid molecule gives 2 \(\ce{H+}\): the acid is \(\ce{H2A}\), a dibasic acid.
+Ratio acid : hydroxide = 0.00250 : 0.00500 = 1 : 2. Each \(\ce{OH-}\) removes one \(\ce{H+}\), so each acid molecule gives 2 \(\ce{H+}\): the acid is \(\ce{H2A}\), a dibasic acid (each molecule can release two \(\ce{H+}\)).
 :::
 
 :::eg 20 cm³ of a gas X reacts with 10 cm³ of oxygen to give 20 cm³ of a gaseous product, all volumes at the same temperature and pressure. Deduce the ratio X : O₂ : product.

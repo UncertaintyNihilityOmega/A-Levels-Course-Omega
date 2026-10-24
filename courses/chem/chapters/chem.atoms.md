@@ -305,6 +305,8 @@ To remove an electron from an atom you have to supply energy, because the electr
 The energy required to remove one electron from each atom in one mole of gaseous atoms to form one mole of gaseous 1+ ions.
 :::
 
+(A mole is \(6.02 \times 10^{23}\) particles, and kJ mol⁻¹ means kilojoules per mole; Moles and stoichiometry develops this.)
+
 The equation for the first ionisation energy of sodium is
 
 \[\ce{Na(g) -> Na+(g) + e-}\]

@@ -93,7 +93,7 @@ Sulfur dioxide, \(\ce{SO2}\), also has three regions, but one is a lone pair. Th
 Four regions are furthest apart at the corners of a **tetrahedron**, 109.5° apart. This is the arrangement for the largest family of molecules, and the lone pairs change the shape.
 
 :::formula Where does 109.5° come from?
-A regular tetrahedron has its four corners at \((1,1,1)\), \((1,-1,-1)\), \((-1,1,-1)\) and \((-1,-1,1)\) from its centre. The angle between two of these directions satisfies \(\cos\theta = \dfrac{(1)(1)+(1)(-1)+(1)(-1)}{3} = -\dfrac{1}{3}\), so \(\theta = 109.47^{\circ}\), which is written 109.5°.
+(Optional, uses A Level maths: skip it if the vectors are new to you; you only need to remember 109.5°.) A regular tetrahedron has its four corners at \((1,1,1)\), \((1,-1,-1)\), \((-1,1,-1)\) and \((-1,-1,1)\) from its centre. The angle between two of these directions satisfies \(\cos\theta = \dfrac{(1)(1)+(1)(-1)+(1)(-1)}{3} = -\dfrac{1}{3}\), so \(\theta = 109.47^{\circ}\), which is written 109.5°.
 :::
 
 **No lone pairs: tetrahedral.** In methane, \(\ce{CH4}\), carbon has 4 outer electrons and four hydrogen atoms add 4: total 8, 4 pairs, all bonding. The shape is **tetrahedral** with H–C–H angles of 109.5°. The same is true for any species with four bonding pairs and no lone pair: the ammonium ion \(\ce{NH4+}\), \(\ce{SiCl4}\), the tetrachloroaluminate ion \(\ce{AlCl4-}\) and the sulfate ion \(\ce{SO4^2-}\) are all tetrahedral with angles of 109.5°.
@@ -200,7 +200,7 @@ The same rule works at every atom of a larger molecule. Count the regions around
 - a carbon with four single bonds (such as the carbon of \(\ce{CH3}\)) has 4 regions: tetrahedral, about 109.5°;
 - a carbon in a C=C double bond has 3 regions (two atoms plus the double bond as one): trigonal planar, about 120°, so all the atoms of ethene \(\ce{CH2=CH2}\) lie in one flat plane;
 - a carbon in a C≡C or C≡N triple bond, or with two C=O double bonds, has 2 regions: linear, 180°;
-- the oxygen in an alcohol, R–OH, has 2 bonding regions and 2 lone pairs, like water: non-linear, about 104.5°.
+- the oxygen in an alcohol such as CH₃CH₂OH, written R–OH in general (R stands for a carbon chain such as CH₃ or C₂H₅), has 2 bonding regions and 2 lone pairs, like water: non-linear, about 104.5°.
 
 These are the same angles as the hybridisation of [Chemical bonding](#chem.bonding): sp³ is tetrahedral, sp² is trigonal planar and sp is linear. You will use them again in [Introduction to organic chemistry](#chem.org.intro) and [Isomerism](#chem.org.isomerism).
 
@@ -326,7 +326,7 @@ An attraction between a hydrogen atom that is covalently bonded to a very electr
 2. A **lone pair** on an N or O atom in a neighbouring molecule.
 3. The O–H···O (or N–H···N, O–H···N, N–H···O) must lie in a **straight line**.
 
-In this syllabus hydrogen bonding is the N–H and O–H case, as in \(\ce{NH3}\), \(\ce{H2O}\), alcohols, amines and carboxylic acids.
+In this syllabus hydrogen bonding is the N–H and O–H case, as in \(\ce{NH3}\), \(\ce{H2O}\), alcohols such as CH₃CH₂OH, amines such as CH₃NH₂ and carboxylic acids such as CH₃COOH.
 
 :::html
 <figure class="fig small"><svg viewBox="20 40 301 128" role="img" aria-label="Two water molecules joined by a hydrogen bond: the hydrogen atom of one, labelled delta plus, points along a straight line at a lone pair on the oxygen atom of the other, labelled delta minus"><text class="tl tc" x="90" y="103.5">O</text><text class="tl tc" x="140" y="103.5">H</text><path class="ln thick" d="M98.5 100L131.5 100"/><text class="tl tc" x="78" y="150">H</text><path class="ln thick" d="M87 111.5L81 135"/><circle class="fi" cx="83" cy="82" r="1.7"/><circle class="fi" cx="89" cy="82" r="1.7"/><circle class="fi" cx="68" cy="89" r="1.7"/><circle class="fi" cx="68" cy="95" r="1.7"/><text class="tl tc" x="240" y="103.5">O</text><text class="tl tc" x="269.4" y="141.5">H</text><path class="ln thick" d="M248.5 111L260.9 127"/><text class="tl tc" x="269.4" y="65.5">H</text><path class="ln thick" d="M248.5 89L260.9 73"/><circle class="fi" cx="225" cy="97" r="1.7"/><circle class="fi" cx="225" cy="103" r="1.7"/><circle class="fi" cx="231" cy="118" r="1.7"/><circle class="fi" cx="237" cy="118" r="1.7"/><path class="ln dash thick" d="M148.5 100L219 100"/><text class="tl tc ta" x="140" y="76">δ+</text><text class="tl tc ta" x="88" y="70">δ−</text><text class="tl tc ta" x="240" y="70">δ−</text><text class="tl tc" x="190" y="146">hydrogen bond</text><path class="ln-m thin" d="M190 130L190 108"/></svg><figcaption>A hydrogen bond between two water molecules. The δ+ hydrogen of the left molecule points at a lone pair on the δ− oxygen of the right molecule, and O–H···O lies in a straight line. Dots are lone pairs.</figcaption></figure>
@@ -368,7 +368,7 @@ In the graph, the Group 16 line climbs from \(\ce{H2S}\) to \(\ce{H2Te}\), but t
 
 Methane and water have the same number of electrons (10), so their id–id forces are similar, yet water boils 262 °C higher. Hydrogen bonding is responsible. Without it, extrapolating the Group 16 trend backwards would make water boil well below −60 °C and a gas at room temperature. Ammonia (the Group 15 hydride) shows the same sort of jump, though smaller.
 
-Water forms more hydrogen bonds per molecule than ammonia. Every hydrogen bond uses one δ+ H atom and one lone pair. A water molecule has 2 H atoms and 2 lone pairs, so it takes part in up to 4 hydrogen bonds, which is 2 bonds per molecule because each bond is shared by two molecules. An ammonia molecule has 3 H atoms but only 1 lone pair, and the scarcer of the two sets the limit: 1 bond per molecule. More hydrogen bonds mean more energy is needed to separate the molecules.
+Water forms more hydrogen bonds per molecule than ammonia. Every hydrogen bond uses one δ+ H atom and one lone pair. Each water molecule can form up to 4 hydrogen bonds (2 through its H atoms and 2 through its lone pairs). An ammonia molecule has 3 H atoms but only 1 lone pair, and the scarcer of the two sets the limit, so each ammonia molecule forms on average 1 hydrogen bond of its own, fewer than water. More hydrogen bonds mean more energy is needed to separate the molecules.
 
 :::eg Methane boils at −162 °C, ammonia at −33 °C and water at 100 °C. Explain this order. [5 marks]
 Methane is non-polar and has only id–id forces between its molecules, which are weak. [B1]

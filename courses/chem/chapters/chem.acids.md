@@ -49,7 +49,7 @@ Acids differ in how acidic their solutions are, and chemists need one number to 
 A measure of the acidity of a solution, defined by \(\mathrm{pH} = -\lg[\ce{H+}]\), where \([\ce{H+}]\) is the concentration of hydrogen ions in mol dm⁻³.
 :::
 
-You do not calculate pH at AS level (that is in [pH, buffers, solubility product and partition](#chem.acids2)), but two ideas are needed now. First, a **lower pH means more \(\ce{H+}\)**: each step down the scale means ten times more \(\ce{H+}\) ions. Second, pure water contains equal, tiny amounts of \(\ce{H+}\) and \(\ce{OH-}\) ions, \(1.00 \times 10^{-7}\) mol dm⁻³ of each at 298 K, so its pH is 7.
+Here lg is the base-10 logarithm (the log button on a calculator); you will use it in [pH, buffers, solubility product and partition](#chem.acids2). You do not calculate pH at AS level (that is in [pH, buffers, solubility product and partition](#chem.acids2)), but two ideas are needed now. First, a **lower pH means more \(\ce{H+}\)**: each step down the scale means ten times more \(\ce{H+}\) ions. Second, pure water contains equal, tiny amounts of \(\ce{H+}\) and \(\ce{OH-}\) ions, \(1.00 \times 10^{-7}\) mol dm⁻³ of each at 298 K, so its pH is 7.
 
 :::key The pH scale
 Pure water and neutral solutions: pH 7. Acidic solutions: pH below 7 (the lower the number, the more acidic). Alkaline solutions: pH above 7. The scale usually runs from 0 to 14.

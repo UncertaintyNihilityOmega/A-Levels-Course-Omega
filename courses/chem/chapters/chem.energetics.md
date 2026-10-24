@@ -32,6 +32,8 @@ The heat change of a reaction at constant pressure has its own name and symbol.
 The heat energy change of a reaction measured at constant pressure. \(\Delta H = H(\text{products}) - H(\text{reactants})\). It is given in kJ mol⁻¹ and carries a sign.
 :::
 
+\(H\), the enthalpy, is the heat energy stored in the chemicals at constant pressure; only the difference \(\Delta H\) can be measured.
+
 The sign shows which way the energy goes, as seen by the chemicals.
 
 | | Exothermic | Endothermic |
@@ -226,6 +228,7 @@ The enthalpy change of a reaction is the net result of the two: energy in to bre
 
 :::key Using bond energies
 \[\Delta H = \sum(\text{bond energies of bonds broken}) - \sum(\text{bond energies of bonds formed})\]
+\(\sum\) (sigma) means "the sum of": add up the values for every bond (or, later, every substance) listed.
 Add up one side for **every** bond that breaks (each molecule's bonds, multiplied by the number of molecules in the equation), and subtract the total for **every** bond that forms. Reactants and products must all be gases for the result to be reliable.
 :::
 
@@ -370,7 +373,7 @@ Hess's law is also the way to find an enthalpy change that cannot be measured, u
 :::
 
 :::eg Calcium carbonate and calcium oxide each react with excess dilute hydrochloric acid. The measured enthalpy changes (data for this question) are: \(\ce{CaCO3(s) + 2HCl(aq) -> CaCl2(aq) + H2O(l) + CO2(g)}\), \(\Delta H_1 = -15\) kJ mol⁻¹; \(\ce{CaO(s) + 2HCl(aq) -> CaCl2(aq) + H2O(l)}\), \(\Delta H_2 = -194\) kJ mol⁻¹. Calculate the enthalpy change for \(\ce{CaCO3(s) -> CaO(s) + CO2(g)}\).
-The direct route (top arrow) followed by \(\Delta H_2\) must equal route 1: \(\Delta H + \Delta H_2 = \Delta H_1\). [M1]
+The direct route (top arrow) followed by \(\Delta H_2\) must equal route 1: \(\Delta H + \Delta H_2 = \Delta H_1\). [M1] (The \(\ce{CO2(g)}\) from the top arrow is just carried along to the bottom box, so it does not change the sum.)
 \[\Delta H = \Delta H_1 - \Delta H_2 = -15 - (-194)\] [M1]
 \[\Delta H = +179\,\mathrm{kJ\,mol^{-1}}\] [A1]
 The decomposition is endothermic, which is why limestone has to be heated strongly in a kiln to make quicklime.

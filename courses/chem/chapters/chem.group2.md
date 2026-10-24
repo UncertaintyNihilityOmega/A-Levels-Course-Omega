@@ -240,7 +240,7 @@ Think of barium, at the bottom: barium hydroxide is the most soluble hydroxide (
 
 The carbonates are all insoluble in water.
 
-The hydroxide trend explains why the solutions of the oxides become more alkaline down the group, and it shows in the tests for cations in the qualitative analysis notes: with aqueous sodium hydroxide, \(\ce{Mg^2+}\) gives a white precipitate that is insoluble in excess (magnesium hydroxide is the least soluble), \(\ce{Ca^2+}\) gives a white precipitate unless its concentration is very low, and \(\ce{Ba^2+}\) gives only a faint white precipitate (none if its concentration is very low) (see [Practical skills and qualitative analysis](#chem.practical)).
+The hydroxide trend explains why the solutions of the oxides become more alkaline down the group, and it shows in the tests for cations. These are the table of test results for cations given in Paper 3 (the "qualitative analysis notes") and learnt in [Practical skills and qualitative analysis](#chem.practical); you only need the Group 2 rows here. In the test, aqueous sodium hydroxide is added to a solution of the cation, a precipitate is a solid that forms in the solution, and "excess" means more sodium hydroxide than is needed to form it. With aqueous sodium hydroxide, \(\ce{Mg^2+}\) gives a white precipitate that is insoluble in excess (magnesium hydroxide is the least soluble), \(\ce{Ca^2+}\) gives a white precipitate unless its concentration is very low, and \(\ce{Ba^2+}\) gives only a faint white precipitate (none if its concentration is very low) (see [Practical skills and qualitative analysis](#chem.practical)).
 
 ### Uses
 

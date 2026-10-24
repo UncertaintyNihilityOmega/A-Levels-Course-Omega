@@ -206,7 +206,7 @@ The vertical line is Eₐ. Compare the area to its right under the two curves. A
 The main reason is that, at a higher temperature, a greater proportion of molecules has energy greater than or equal to Eₐ, so the frequency of effective collisions increases sharply. The extra collision frequency is a minor contribution. Eₐ does not change.
 :::
 
-This is why a small rise in temperature often has a large effect. A rise of 10 °C often roughly doubles the rate of a reaction, but this is only an observation for many reactions, not a rule: the size of the effect depends on Eₐ.
+This is why a small rise in temperature often has a large effect. A rise of 10 °C often roughly doubles the rate of a reaction, but this is only an observation for many reactions, not a rule: the size of the effect depends on Eₐ. The larger the Eₐ, the more the fraction above it grows for the same rise in temperature. In a reversible reaction the endothermic direction has the higher peak on the pathway diagram (its Eₐ is larger, by the size of ΔH), so a rise in temperature speeds that direction up more than the other. [Equilibria](#chem.equilibria) uses this to explain why K changes with temperature.
 
 :::warn Common mistakes with the Boltzmann curve
 Do not draw the curve touching the horizontal axis at high energy, or starting somewhere other than the origin. Do not draw the high-temperature curve with a larger area. Do not move Eₐ when you change the temperature: the activation energy of a reaction is fixed. And do not say that heating "gives the molecules more activation energy" or that "all the molecules now have enough energy".

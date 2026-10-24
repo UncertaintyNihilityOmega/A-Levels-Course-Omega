@@ -295,6 +295,8 @@ Check: left 1 C, 4 H, 4 O; right 1 C, 4 H, \(2 + 2 = 4\) O. Balanced.
 \[\ce{4Al + 3O2 -> 2Al2O3}\]
 :::
 
+In mark schemes, [B1] is one mark for a correct fact or statement, [M1] a method mark and [A1] an answer mark; the examples below use these codes.
+
 :::eg Spot the error: Write a balanced equation, with state symbols, for the burning of methane in oxygen. [3 marks]
 A student wrote:
 
@@ -386,7 +388,7 @@ A quick check: a dm³ is a larger unit than a cm³, so the number must get small
 
 ### A first look at moles
 
-Atoms are far too small to count one at a time, so chemists count them in huge, fixed groups called **moles**, as a baker counts eggs in dozens. The mass of one mole of a substance in grams is its **molar mass**, \(M\), in g mol⁻¹. You find it by adding the relative atomic masses from the Periodic Table: for example, \(M(\ce{NaCl}) = 23.0 + 35.5 = 58.5\,\mathrm{g\,mol^{-1}}\). The amount of substance, \(n\), is linked to the mass, \(m\), by
+Atoms are far too small to count one at a time, so chemists count them in huge, fixed groups called **moles**, as a baker counts eggs in dozens. One mole is \(6.02 \times 10^{23}\) particles. The mass of one mole of a substance in grams is its **molar mass**, \(M\), in g mol⁻¹. You find it by adding the relative atomic masses from the Periodic Table: for example, \(M(\ce{NaCl}) = 23.0 + 35.5 = 58.5\,\mathrm{g\,mol^{-1}}\). The amount of substance, \(n\), is linked to the mass, \(m\), by
 
 \[n = \frac{m}{M}\]
 

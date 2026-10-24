@@ -104,6 +104,8 @@ Oxidation numbers can also be used for organic compounds. Treat each carbon atom
 | methanoic acid | \(\ce{HCOOH}\) | +2 |
 | carbon dioxide | \(\ce{CO2}\) | +4 |
 
+To count, give carbon −1 for each bond to hydrogen and +1 for each bond to oxygen (a double bond counts twice). In methanol, H–C(H)(H)–O–H, carbon has three C–H bonds (−3) and one C–O bond (+1), so its oxidation number is −2. In methanal, H–C(=O)–H, there are two C–H bonds (−2) and a C=O double bond (+2): 0. In methanoic acid, H–C(=O)–O–H, there is one C–H bond (−1), a C=O double bond (+2) and one C–O bond (+1): +2. The algebra of the Try questions gives the same answer: for \(\ce{HCOOH}\), \(x + 2(+1) + 2(-2) = 0\), so \(x = +2\).
+
 Going down the table, each step is an oxidation of the carbon atom. You will use the same idea for alcohols, aldehydes and carboxylic acids later in the course.
 
 ### Roman numerals in names
