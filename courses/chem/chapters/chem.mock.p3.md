@@ -90,7 +90,7 @@ Assume the solution has density 1.00 g cm⁻³ and specific heat capacity 4.18 J
 
 (d) The thermometer is read to the nearest 0.5 °C. Calculate the percentage uncertainty in \(\Delta T\). (1 mark)
 
-(e) Identify the source of error that has the greatest effect on the accuracy of this result, justifying your choice with a calculation, and suggest an improvement. (2 marks)
+(e) The volume of copper(II) sulfate was measured with a 50 cm³ measuring cylinder read to ±0.5 cm³. Identify which measurement, the volume or the temperature change, has the greater percentage uncertainty, justifying your choice with a calculation, and suggest an improvement to that measurement. (2 marks)
 A: (a) plot temperature (y-axis) against time (x-axis) and draw a line of best fit through the points after the maximum temperature (the cooling points) [B1]
 extrapolate this line back to 2.0 min, the time the zinc was added, and read the temperature there [B1]
 
@@ -103,7 +103,7 @@ extrapolate this line back to 2.0 min, the time the zinc was added, and read the
 
 (d) two readings, so the uncertainty is \(2 \times 0.5 = 1.0\) °C; \(1.0/11.0 \times 100 = 9.09\%\) [B1]
 
-(e) the thermometer: its percentage uncertainty (9.09%) is much greater than that of the 50.0 cm³ of solution measured with a measuring cylinder (\(0.5/50.0 \times 100 = 1.0\%\)) [B1]
+(e) the temperature change: its percentage uncertainty (9.09%) is much greater than that of the 50.0 cm³ of solution measured with the measuring cylinder (\(0.5/50.0 \times 100 = 1.0\%\)) [B1]
 use a thermometer reading to 0.1 °C: the uncertainty of \(2 \times 0.05 = 0.10\) °C gives \(0.10/11.0 \times 100 = 0.91\%\) [B1]
 :::
 
@@ -143,7 +143,7 @@ the anion is \(\ce{Cl-}\) [B1], because the white ppt. with silver nitrate disso
 
 (c) add a few drops of FB 2 to dilute sulfuric acid, then add acidified potassium manganate(VII) (acidified \(\ce{KMnO4}\)) [B1]
 the purple colour disappears (decolourised), as \(\ce{Fe^2+}\) is oxidised [B1]
-(use sulfuric acid, not hydrochloric acid, which would itself be oxidised by the \(\ce{KMnO4}\))
+(acidify with dilute sulfuric acid, not hydrochloric acid, which would add chloride ions that the \(\ce{KMnO4}\) can also oxidise)
 
 (d) \(\ce{Fe^2+(aq) + 2OH-(aq) -> Fe(OH)2(s)}\): correct species [B1], balanced with state symbols [B1]
 

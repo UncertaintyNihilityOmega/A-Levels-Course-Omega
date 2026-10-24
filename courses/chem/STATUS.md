@@ -1,6 +1,6 @@
 # STATUS: Chemistry
 
-Last: 2026-10-24 · WRITE P21 · chem.exam.p1 (2.8k words, 8 worked MCQs + 6 quiz), chem.exam.p24 (3.7k words), chem.mock.p1 (40 questions, 40 marks, answer key balanced 10 each, 12 calculations, 4 statement items, 5 data items, 2 Data booklet items). No widgets. Reviewer: mock options rely on one-per-line rendering inside :::try; guide p1 worked MCQs use :::try in a guide; Paper 1 'Data booklet allowed' and 'wrong answer scores zero' follow the package notes (not in FACTS).
+Last: 2026-10-24 · REVIEW P17, P18, P20 · 0 open items. Fixed: 40 trailing-bond-as-charge renderings (polymers, nitrogen, hydrocarbons; COURSE rule added); nylon-6,6 redrawn as fig small; dark-mode outlines (planning bung/plunger, electrophoresis strip); acyl ethanedioic warning box fact; planning zero-order mark line; P3 mock Q2(e) wording; polymers text vs orgmap (no hydrolysis edges); AQA board boxes in acyl, nitrogen, polymers; Cambridge past-papers URL verified and added to COURSE links. All numbers recomputed; widgets and mock clock/self-marking checked.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -21,10 +21,10 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P14: reviewed 2026-10-24
 - P15: reviewed 2026-10-24
 - P16: reviewed 2026-10-24
-- P17: written 2026-10-24
-- P18: written 2026-10-24
+- P17: reviewed 2026-10-24
+- P18: reviewed 2026-10-24
 - P19: written 2026-10-24
-- P20: written 2026-10-24
+- P20: reviewed 2026-10-24
 - P21: written 2026-10-24
 - P22: writing 2026-10-24
 - P23: open

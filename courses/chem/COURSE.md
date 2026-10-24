@@ -49,6 +49,9 @@ chemistry figure (skeletal formulas, curly-arrow mechanisms, apparatus). Copy it
 - **mhchem for every formula and equation**: `\(\ce{H2SO4}\)`, `\(\ce{Cu^2+(aq)}\)`, `\(\ce{[Cu(H2O)6]^2+}\)`,
   `\(\ce{N2(g) + 3H2(g) <=> 2NH3(g)}\)`, `\(\ce{CuSO4.5H2O}\)`; state symbols instead of gas/precipitate arrows.
   Dipoles `\(\ce{C^{\delta+}-Br^{\delta-}}\)`; in running text plain "δ+" (`\(\delta+\)` renders with a gap).
+  **A trailing bond inside \ce becomes a charge**: `\ce{-CO-NH-}` shows NH⁻ and `\ce{-[CH2-CHCl]_n-}` shows ]ₙ⁻.
+  Put the end bond outside: `\(\ce{-CO-NH}{-}\)`, `\(\ce{-[CH2-CHCl]_n}{-}\)`, `\(\ce{-[CH2-CH(CH3)]}{-}\)`; a
+  leading minus of an ion as `{}^{-}\ce{OOC(CH2)4COO-}`.
 - Isotopes `\(\ce{^{37}_{17}Cl}\)`. Arrow conditions `\(\ce{A ->[H2SO4][heat] B}\)`, short ("conc." becomes a dot:
   write "concentrated" in the sentence).
 - Long inline `\ce` wraps on phones before each arrow and after each ` + ` (write the spaces). The key equation of
@@ -97,7 +100,10 @@ chemistry figure (skeletal formulas, curly-arrow mechanisms, apparatus). Copy it
   Cross-course ids: phys.gases, phys.units, math.f.algebra, math.f.powers (grep first).
 - **:::links**: only URLs you have checked, with descriptions that match the page's actual headings (not only the HTTP
   code). Known good: chemguide.co.uk pages (e.g. /mechanisms/nucsubmenu.html, /organicprops/haloalkanemenu.html,
-  /organicprops/alcoholmenu.html), https://www.physicsandmathstutor.com/chemistry-revision/a-level-cie/ (unofficial).
+  /organicprops/alcoholmenu.html), https://www.physicsandmathstutor.com/chemistry-revision/a-level-cie/ (unofficial),
+  https://www.chemguideforcie.co.uk/index.html (title "CIE A level chemistry support"), and Cambridge's own
+  https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-chemistry-9701/past-papers/
+  (title "Past Papers and Examiner Reports", checked 24 Oct 2026: use it for `papers:` lines in the paper guides).
   Khan Academy answers curl with a bot challenge: leave it out (the one in chem.f.basics was checked in a browser).
 - **Facts**: outcomes and data from FACTS.md; colours, observations and test results from its qualitative-analysis
   notes, in their words. Unsure of a fact (melting point, colour, condition)? Leave it out or say it qualitatively.

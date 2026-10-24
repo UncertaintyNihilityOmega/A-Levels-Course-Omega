@@ -488,7 +488,7 @@ Ethene molecules can add to each other. The π bond of one molecule opens and bo
 The joining together of many small unsaturated molecules (monomers) by opening their C=C bonds, to make one very long saturated molecule (a polymer). The polymer is the only product; nothing else is lost.
 :::
 
-\[\ce{n CH2=CH2 -> -[CH2-CH2]_n-}\]
+\[\ce{n CH2=CH2 -> -[CH2-CH2]_n}{-}\]
 
 The unit in square brackets is the **repeat unit**: the part of the polymer that repeats along the chain. The \(n\) shows that it occurs many times. The double bond has been lost: in the polymer, every carbon is joined by single bonds only.
 
@@ -505,7 +505,7 @@ Poly(ethene) comes from ethene. Poly(chloroethene), also called PVC, comes from 
 :::warn Drawing repeat units
 1. **Remove the double bond.** The repeat unit has a single C–C bond. A bracketed unit that still contains C=C has not been polymerised.
 2. **Draw bonds through both brackets.** They show that the chain goes on in both directions.
-3. **Keep the chain two carbons long.** In poly(propene) the \(\ce{CH3}\) group hangs off the chain. The repeat unit is \(\ce{-[CH2-CH(CH3)]-}\), with two carbon atoms in the chain, not three.
+3. **Keep the chain two carbons long.** In poly(propene) the \(\ce{CH3}\) group hangs off the chain. The repeat unit is \(\ce{-[CH2-CH(CH3)]}{-}\), with two carbon atoms in the chain, not three.
 :::
 
 ### From a polymer back to a monomer
@@ -518,14 +518,14 @@ To find the monomer from a section of an addition polymer:
 3. Put a double bond between the two carbons, and remove the bonds that went outwards.
 :::
 
-A section of polymer that reads \(\ce{-CH2-CHCl-CH2-CHCl-CH2-CHCl-}\) repeats the unit \(\ce{-CH2-CHCl-}\), so the monomer is \(\ce{CH2=CHCl}\), chloroethene.
+A section of polymer that reads \(\ce{-CH2-CHCl-CH2-CHCl-CH2-CHCl}{-}\) repeats the unit \(\ce{-CH2-CHCl}{-}\), so the monomer is \(\ce{CH2=CHCl}\), chloroethene.
 
-:::eg Draw the repeat unit of poly(chloroethene), and give the monomer of the polymer section \(\ce{-CH2-CH(CH3)-CH2-CH(CH3)-}\).
+:::eg Draw the repeat unit of poly(chloroethene), and give the monomer of the polymer section \(\ce{-CH2-CH(CH3)-CH2-CH(CH3)}{-}\).
 Chloroethene is \(\ce{CH2=CHCl}\). Open the double bond: the chain carbon atoms are joined by one bond, and each carbon keeps its groups. [B1]
 
-The repeat unit is \(\ce{-[CH2-CHCl]-}\), shown in square brackets with a bond through each bracket, and the label \(n\) at the lower right. [B1]
+The repeat unit is \(\ce{-[CH2-CHCl]}{-}\), shown in square brackets with a bond through each bracket, and the label \(n\) at the lower right. [B1]
 
-The second polymer repeats \(\ce{-CH2-CH(CH3)-}\). Join the two chain carbons by a double bond and keep the \(\ce{CH3}\) side group: \(\ce{CH2=CHCH3}\), propene. [B1]
+The second polymer repeats \(\ce{-CH2-CH(CH3)}{-}\). Join the two chain carbons by a double bond and keep the \(\ce{CH3}\) side group: \(\ce{CH2=CHCH3}\), propene. [B1]
 :::
 
 ### Disposal problems
@@ -584,8 +584,8 @@ Q: How can you tell the difference between hexane and hex-1-ene using a simple t
 A: Shake with bromine water. Hex-1-ene decolourises it (orange to colourless); hexane does not.
 Q: Give the product of the reaction of propene with hydrogen chloride and explain why it is the major product.
 A: 2-chloropropane. The H adds to the end carbon to form the secondary carbocation \(\ce{CH3CH+CH3}\), which is stabilised by two alkyl groups (inductive effect), more than the primary carbocation.
-Q: Draw the repeat unit of poly(propene), and name the monomer of the polymer section \(\ce{-CH2-CHF-CH2-CHF-}\).
-A: Repeat unit \(\ce{-[CH2-CH(CH3)]-}\) in brackets with bonds through the brackets and \(n\). The section repeats \(\ce{-CH2-CHF-}\), so the monomer is \(\ce{CH2=CHF}\), fluoroethene.
+Q: Draw the repeat unit of poly(propene), and name the monomer of the polymer section \(\ce{-CH2-CHF-CH2-CHF}{-}\).
+A: Repeat unit \(\ce{-[CH2-CH(CH3)]}{-}\) in brackets with bonds through the brackets and \(n\). The section repeats \(\ce{-CH2-CHF}{-}\), so the monomer is \(\ce{CH2=CHF}\), fluoroethene.
 :::
 
 :::try Exam practice ★ to ★★★
@@ -685,10 +685,10 @@ So the carbocation with the charge further from the CF₃ group forms more readi
 - 2-methylpropene
 > But-2-ene, \(\ce{CH3CH=CHCH3}\), has the same \(\ce{=CHCH3}\) group on both ends, so splitting gives two ethanoic acid molecules. Propene gives ethanoic acid and \(\ce{CO2}\), but-1-ene gives propanoic acid and \(\ce{CO2}\), and 2-methylpropene gives propanone and \(\ce{CO2}\).
 ? Which of these is the repeat unit of poly(propene)?
-- \(\ce{-[CH2-CH2-CH2]-}\)
-- \(\ce{-[CH2=CH-CH3]-}\)
-+ \(\ce{-[CH2-CH(CH3)]-}\)
-- \(\ce{-[CH2-CH2-CH3]-}\)
+- \(\ce{-[CH2-CH2-CH2]}{-}\)
+- \(\ce{-[CH2=CH-CH3]}{-}\)
++ \(\ce{-[CH2-CH(CH3)]}{-}\)
+- \(\ce{-[CH2-CH2-CH3]}{-}\)
 > The repeat unit keeps the two carbons of the former double bond in the chain, and the \(\ce{CH3}\) hangs off as a side group. The second option still has a C=C, and the other two put the methyl group into the chain or lose a bond.
 ? Why is poly(chloroethene) a problem when it is burned?
 - It burns to form chlorine gas

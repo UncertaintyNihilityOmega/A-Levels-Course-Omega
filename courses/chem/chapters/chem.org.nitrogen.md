@@ -58,6 +58,10 @@ The product is itself a nucleophile, and a better one than ammonia, so it can at
 
 \[\ce{CH3CH2Br + 2CH3NH2 -> CH3CH2NHCH3 + CH3NH3+Br-}\]
 
+:::board AQA
+AQA follows these substitutions to the end: a tertiary amine reacts with one more halogenoalkane to give a quaternary ammonium salt such as \(\ce{(CH3)4N+Br-}\), and AQA names their use as cationic surfactants (in fabric softeners and hair conditioners). Cambridge 9701 does not require quaternary ammonium salts.
+:::
+
 **From nitriles.** A nitrile is reduced by adding four hydrogen atoms across the C≡N bond:
 
 \[\ce{CH3CH2CN + 4[H] -> CH3CH2CH2NH2}\]
@@ -332,7 +336,7 @@ Two amino acids join when the \(\ce{COOH}\) of one reacts with the \(\ce{NH2}\) 
 :::
 
 :::def Peptide bond
-The amide link, \(\ce{-CO-NH-}\), formed between the carboxyl group of one amino acid and the amino group of another in a condensation reaction in which water is lost.
+The amide link, \(\ce{-CO-NH}{-}\), formed between the carboxyl group of one amino acid and the amino group of another in a condensation reaction in which water is lost.
 :::
 
 Two amino acids make a **dipeptide**, three make a **tripeptide**, and many make a polypeptide or protein. Every peptide has one free \(\ce{NH2}\) end and one free \(\ce{COOH}\) end. The order matters, and by convention the free \(\ce{NH2}\) end is written first, so Gly-Ala and Ala-Gly are different compounds.
@@ -366,7 +370,7 @@ You can separate amino acids and short peptides because their charge depends on 
 :::
 
 :::html
-<figure class="fig small"><svg viewBox="-11.5 14 356 159" role="img" aria-label="Paper strip at pH 7 with the cathode on the left and the anode on the right: lysine has moved towards the cathode, glycine hardly at all, and aspartic acid towards the anode"><rect class="fm" x="40" y="58" width="260" height="46" rx="4"/><rect class="fi" x="20" y="50" width="14" height="62" rx="3"/><rect class="fi" x="306" y="50" width="14" height="62" rx="3"/><text class="tl tc" x="27" y="38">−</text><text class="tl tc" x="313" y="38">+</text><text class="tl tc" x="27" y="130">cathode</text><text class="tl tc" x="313" y="130">anode</text><path class="ln-m thin dash" d="M170 52L170 110"/><text class="tl tc" x="170" y="40">start line</text><circle class="fa" cx="106" cy="81" r="8"/><text class="tl tc" x="106" y="128">Lys</text><circle class="fa" cx="174" cy="81" r="8"/><text class="tl tc" x="174" y="128">Gly</text><circle class="fa" cx="254" cy="81" r="8"/><text class="tl tc" x="254" y="128">Asp</text><text class="tl tc" x="170" y="156">pH 7</text></svg><figcaption>An electrophoresis strip at pH 7, after the voltage has been on for a while. Lysine is positive at this pH and has moved towards the negative electrode; glycine has almost no net charge and has stayed close to the start line; aspartic acid is negative and has moved towards the positive electrode.</figcaption></figure>
+<figure class="fig small"><svg viewBox="-11.5 14 356 159" role="img" aria-label="Paper strip at pH 7 with the cathode on the left and the anode on the right: lysine has moved towards the cathode, glycine hardly at all, and aspartic acid towards the anode"><rect class="fm" x="40" y="58" width="260" height="46" rx="4"/><rect class="ln-m thin" x="40" y="58" width="260" height="46" rx="4"/><rect class="fi" x="20" y="50" width="14" height="62" rx="3"/><rect class="fi" x="306" y="50" width="14" height="62" rx="3"/><text class="tl tc" x="27" y="38">−</text><text class="tl tc" x="313" y="38">+</text><text class="tl tc" x="27" y="130">cathode</text><text class="tl tc" x="313" y="130">anode</text><path class="ln-m thin dash" d="M170 52L170 110"/><text class="tl tc" x="170" y="40">start line</text><circle class="fa" cx="106" cy="81" r="8"/><text class="tl tc" x="106" y="128">Lys</text><circle class="fa" cx="174" cy="81" r="8"/><text class="tl tc" x="174" y="128">Gly</text><circle class="fa" cx="254" cy="81" r="8"/><text class="tl tc" x="254" y="128">Asp</text><text class="tl tc" x="170" y="156">pH 7</text></svg><figcaption>An electrophoresis strip at pH 7, after the voltage has been on for a while. Lysine is positive at this pH and has moved towards the negative electrode; glycine has almost no net charge and has stayed close to the start line; aspartic acid is negative and has moved towards the positive electrode.</figcaption></figure>
 :::
 
 Try the widget below: choose which amino acids are in the mixture, move the pH slider, and press Run. Watch what happens to each species as the pH passes its isoelectric point.
@@ -500,7 +504,7 @@ A: The pH (8) is above the isoelectric points of aspartic acid and glycine, so b
 It is below the isoelectric point of lysine (9.74), so lysine is positive and moves towards the negative electrode (cathode). [B1]
 Aspartic acid moves further than glycine, as its pH is much farther above its isoelectric point, giving a larger negative charge. [B1] [B1]
 Q: [4 marks] ★★ Glycine and alanine react to form a dipeptide. (a) Draw the structure of one such dipeptide and label the peptide bond. (b) Calculate its \(M_r\). (c) State the conditions for hydrolysing it.
-A: (a) Gly-Ala (or the isomer Ala-Gly), with the \(\ce{-CO-NH-}\) link labelled: [B1] [B1]
+A: (a) Gly-Ala (or the isomer Ala-Gly), with the \(\ce{-CO-NH}{-}\) link labelled: [B1] [B1]
 \[\ce{H2N-CH2-CO-NH-CH(CH3)-COOH}\]
 (b) \(75.0 + 89.0 - 18.0 = 146.0\) [B1]
 (c) Heat with dilute acid (or NaOH(aq)). [B1]

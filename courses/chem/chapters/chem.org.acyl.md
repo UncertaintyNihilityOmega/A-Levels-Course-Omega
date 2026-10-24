@@ -179,6 +179,10 @@ You can make ethyl ethanoate from ethanoic acid or from ethanoyl chloride. Compa
 
 The price is that the acyl chloride has to be made first (an extra step with a corrosive reagent), it reacts with moisture, and it gives off HCl fumes. Chemists use it when the acid is too unreactive, when the yield matters, or when the alcohol is a phenol.
 
+:::board AQA
+AQA also uses acid anhydrides, such as ethanoic anhydride, as acylating agents. They react in the same way as acyl chlorides but give a carboxylic acid as the by-product instead of HCl, and AQA links them to the manufacture of aspirin. Cambridge 9701 uses only acyl chlorides.
+:::
+
 :::eg (Exam style) 7.85 g of ethanoyl chloride is added to excess ethanol. 6.16 g of ethyl ethanoate is obtained after purification. Calculate the percentage yield.
 The equation is \(\ce{CH3COCl + C2H5OH -> CH3COOC2H5 + HCl}\): 1 mol of acyl chloride gives 1 mol of ester.
 
@@ -295,7 +299,7 @@ From the equation, 5 mol of acid reacts with 2 mol of \(\ce{MnO4-}\):
 :::
 
 :::warn Do not mix up the two acids
-Methanoic acid is one carbon, \(\ce{HCOOH}\); ethanedioic acid has two carbons joined, \(\ce{HOOC-COOH}\). Methanoic acid gives \(\ce{CO2}\) and \(\ce{H2O}\); ethanedioic acid gives only \(\ce{CO2}\) (look at the equation: there is no hydrogen left over in the organic product, so no extra water comes from the acid itself).
+Methanoic acid is one carbon, \(\ce{HCOOH}\); ethanedioic acid has two carbons joined, \(\ce{HOOC-COOH}\). With [O], methanoic acid gives one \(\ce{CO2}\) per molecule and ethanedioic acid gives two: \(\ce{HCOOH + [O] -> CO2 + H2O}\) and \(\ce{H2C2O4 + [O] -> 2CO2 + H2O}\). Each molecule gives up two electrons, so both react with manganate(VII) in the same 5 : 2 ratio. Only methanoic acid has the H–C=O group, so only methanoic acid reduces Tollens' and Fehling's reagents.
 :::
 
 :::eg Spot the error: State the conditions for the reaction of ethanoyl chloride with water and name the products. [3 marks]

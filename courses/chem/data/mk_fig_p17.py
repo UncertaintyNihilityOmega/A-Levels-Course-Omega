@@ -237,7 +237,7 @@ def fig_dipeptide():
 def fig_strip():
     g = Fig()
     # strip
-    g.raw('<rect class="fm" x="40" y="58" width="260" height="46" rx="4"/>')
+    g.raw('<rect class="fm" x="40" y="58" width="260" height="46" rx="4"/><rect class="ln-m thin" x="40" y="58" width="260" height="46" rx="4"/>')
     g.segs.append(('strip', 40, 58, 300, 58)); g.segs.append(('strip', 40, 104, 300, 104))
     g.raw('<rect class="fi" x="20" y="50" width="14" height="62" rx="3"/>')
     g.raw('<rect class="fi" x="306" y="50" width="14" height="62" rx="3"/>')

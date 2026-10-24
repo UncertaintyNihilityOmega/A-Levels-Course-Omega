@@ -174,6 +174,9 @@ def zig(F, M, prefix, x0, ylow, labs, dxs=DX):
 
 
 def fig_nylon():
+    # REVIEW P18 (24 Oct 2026): chem.org.polymers now holds a hand-edited 360-wide `fig small` version of this
+    # figure (names under the monomers, the polymer section drawn with (CH2)6 / (CH2)4). Do not paste this
+    # 640-wide output back into the chapter.
     F = Fig("nylon")
     M = Mol(F)
     # row 1: 1,6-diaminohexane

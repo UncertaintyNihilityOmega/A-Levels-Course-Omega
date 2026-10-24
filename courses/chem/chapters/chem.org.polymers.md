@@ -17,14 +17,14 @@ A: \(\ce{CH3COOH + CH3CH2OH <=> CH3COOCH2CH3 + H2O}\). The ester is ethyl ethano
 Q: What are the products when ethanoyl chloride reacts with ethanol at room temperature? (from [Acyl chlorides and A Level carboxylic acids](#chem.org.acyl))
 A: Ethyl ethanoate and hydrogen chloride: \(\ce{CH3COCl + CH3CH2OH -> CH3COOCH2CH3 + HCl}\).
 Q: Write an equation for ethanoyl chloride reacting with ethylamine, \(\ce{CH3CH2NH2}\), and name the type of link in the organic product. (from [Amines, amides and amino acids](#chem.org.nitrogen))
-A: \(\ce{CH3COCl + CH3CH2NH2 -> CH3CONHCH2CH3 + HCl}\). The product contains an amide link, \(\ce{-CO-NH-}\).
+A: \(\ce{CH3COCl + CH3CH2NH2 -> CH3CONHCH2CH3 + HCl}\). The product contains an amide link, \(\ce{-CO-NH}{-}\).
 :::
 
 ## Addition polymers: a quick recap
 
 An **addition polymer** is made from monomers that contain a C=C double bond. The π bond of each monomer opens and the molecules join end to end. Nothing is lost, so the polymer is the only product.
 
-\[n\,\ce{CH2=CHCl} \longrightarrow \ce{-[CH2-CHCl]_n-}\]
+\[n\,\ce{CH2=CHCl} \longrightarrow \ce{-[CH2-CHCl]_n}{-}\]
 
 Three facts from [Hydrocarbons: alkanes and alkenes](#chem.org.hydrocarbons) carry through this whole chapter.
 
@@ -33,10 +33,10 @@ Three facts from [Hydrocarbons: alkanes and alkenes](#chem.org.hydrocarbons) car
 - Poly(ethene), poly(propene) and poly(chloroethene) (PVC) are examples.
 
 :::eg Draw the repeat unit of the polymer made from propenenitrile, \(\ce{CH2=CHCN}\), and name the monomer of the section below.
-\[\ce{-CH2-CH(CN)-CH2-CH(CN)-CH2-CH(CN)-}\]
-Open the double bond. The two carbons of the chain keep their groups, and a bond goes out of each end: \(\ce{-[CH2-CH(CN)]_n-}\). The CN group is a side group, not part of the chain. [B1]
+\[\ce{-CH2-CH(CN)-CH2-CH(CN)-CH2-CH(CN)}{-}\]
+Open the double bond. The two carbons of the chain keep their groups, and a bond goes out of each end: \(\ce{-[CH2-CH(CN)]_n}{-}\). The CN group is a side group, not part of the chain. [B1]
 
-In the section the unit \(\ce{-CH2-CH(CN)-}\) repeats. Put a double bond between its two chain carbons and remove the outgoing bonds: \(\ce{CH2=CHCN}\), propenenitrile. [B1]
+In the section the unit \(\ce{-CH2-CH(CN)}{-}\) repeats. Put a double bond between its two chain carbons and remove the outgoing bonds: \(\ce{CH2=CHCN}\), propenenitrile. [B1]
 :::
 
 Condensation polymers are different, because they form by a different kind of reaction.
@@ -100,7 +100,7 @@ The commonest polyester is poly(ethylene terephthalate), **PET**. It is made fro
 
 Each OH reacts with a COOH to form an ester link and a molecule of water:
 
-\[n\,\ce{HOCH2CH2OH} + n\,\ce{HOOC-C6H4-COOH} \longrightarrow \ce{-[OCH2CH2O-CO-C6H4-CO]_n-} + 2n\,\ce{H2O}\]
+\[n\,\ce{HOCH2CH2OH} + n\,\ce{HOOC-C6H4-COOH} \longrightarrow \ce{-[OCH2CH2O-CO-C6H4-CO]_n}{-} + 2n\,\ce{H2O}\]
 
 The equation shows the groups of the ring (\(\ce{C6H4}\) is a benzene ring with two substituents opposite each other). Joining \(n\) of each monomer makes \(2n - 1\) links; for a chain of thousands of units \(2n\) is the same to within a tiny fraction, so the simpler form is normally written.
 
@@ -112,7 +112,7 @@ To read the repeat unit, follow the chain: an oxygen, two CH₂ groups, an oxyge
 
 React the same diol with a **dioyl chloride**, benzene-1,4-dioyl dichloride, and the reaction is the same except that HCl is lost:
 
-\[n\,\ce{HOCH2CH2OH} + n\,\ce{ClOC-C6H4-COCl} \longrightarrow \ce{-[OCH2CH2O-CO-C6H4-CO]_n-} + 2n\,\ce{HCl}\]
+\[n\,\ce{HOCH2CH2OH} + n\,\ce{ClOC-C6H4-COCl} \longrightarrow \ce{-[OCH2CH2O-CO-C6H4-CO]_n}{-} + 2n\,\ce{HCl}\]
 
 The repeat unit is identical. Only the small molecule and the speed differ.
 
@@ -124,7 +124,7 @@ A dicarboxylic acid is named with the ending "-dioic acid" (hexanedioic acid, \(
 
 A molecule with an OH group at one end and a COOH group at the other can join to itself. **Poly(lactic acid)**, PLA, is made from 2-hydroxypropanoic acid (lactic acid), \(\ce{CH3CH(OH)COOH}\).
 
-\[n\,\ce{CH3CH(OH)COOH} \longrightarrow \ce{-[O-CH(CH3)-CO]_n-} + n\,\ce{H2O}\]
+\[n\,\ce{CH3CH(OH)COOH} \longrightarrow \ce{-[O-CH(CH3)-CO]_n}{-} + n\,\ce{H2O}\]
 
 Here \(n\) monomers make \(n - 1\) links, so again \(n\) is accepted for a long chain. The side group \(\ce{CH3}\) hangs off the chain exactly as in poly(propene).
 
@@ -137,27 +137,27 @@ PLA is made from sugars or starch from plants such as maize. Fermentation makes 
 :::eg Draw the repeat unit of the polyester made from propane-1,3-diol and hexanedioyl dichloride, and name the small molecule lost. [3 marks]
 Propane-1,3-diol is \(\ce{HOCH2CH2CH2OH}\) and hexanedioyl dichloride is \(\ce{ClOC(CH2)4COCl}\).
 
-Take the H away from each OH of the diol, leaving \(\ce{-O(CH2)3O-}\). Take the Cl away from each COCl, leaving \(\ce{-OC(CH2)4CO-}\). [M1]
+Take the H away from each OH of the diol, leaving \(\ce{-O(CH2)3O}{-}\). Take the Cl away from each COCl, leaving \(\ce{-OC(CH2)4CO}{-}\). [M1]
 
-Join the two pieces by ester links, and bracket one piece of each, with the bonds going out through the brackets and \(n\) at the lower right: \(\ce{-[O(CH2)3O-CO(CH2)4CO]_n-}\). [B1]
+Join the two pieces by ester links, and bracket one piece of each, with the bonds going out through the brackets and \(n\) at the lower right: \(\ce{-[O(CH2)3O-CO(CH2)4CO]_n}{-}\). [B1]
 
 The small molecule is hydrogen chloride, two molecules for each repeat unit. [B1]
 
-\[n\,\ce{HO(CH2)3OH} + n\,\ce{ClOC(CH2)4COCl} \longrightarrow \ce{-[O(CH2)3O-CO(CH2)4CO]_n-} + 2n\,\ce{HCl}\]
+\[n\,\ce{HO(CH2)3OH} + n\,\ce{ClOC(CH2)4COCl} \longrightarrow \ce{-[O(CH2)3O-CO(CH2)4CO]_n}{-} + 2n\,\ce{HCl}\]
 :::
 
 :::eg The polyester made from 6-hydroxyhexanoic acid. Give the repeat unit and the equation. [3 marks]
 6-Hydroxyhexanoic acid is \(\ce{HO(CH2)5COOH}\): one OH at one end and one COOH at the other, so a single monomer is enough. [B1]
 
-Remove H from the OH and OH from the COOH, and join the molecules head to tail: the repeat unit is \(\ce{-[O(CH2)5CO]-}\). [B1]
+Remove H from the OH and OH from the COOH, and join the molecules head to tail: the repeat unit is \(\ce{-[O(CH2)5CO]}{-}\). [B1]
 
-\[n\,\ce{HO(CH2)5COOH} \longrightarrow \ce{-[O(CH2)5CO]_n-} + n\,\ce{H2O}\] [B1]
+\[n\,\ce{HO(CH2)5COOH} \longrightarrow \ce{-[O(CH2)5CO]_n}{-} + n\,\ce{H2O}\] [B1]
 
 The repeat unit is the whole monomer minus one \(\ce{H2O}\). It holds one piece of the monomer, not two pieces as for a diol and a diacid.
 :::
 
 :::eg (Exam style) A sample of PET has an average relative molecular mass of 38 400. Calculate the average number of repeat units in a chain. [4 marks]
-The repeat unit is \(\ce{-[OCH2CH2O-CO-C6H4-CO]-}\), formula \(\ce{C10H8O4}\).
+The repeat unit is \(\ce{-[OCH2CH2O-CO-C6H4-CO]}{-}\), formula \(\ce{C10H8O4}\).
 
 \(M_r = 10(12.0) + 8(1.0) + 4(16.0) = 192.0\). [B1]
 
@@ -170,27 +170,27 @@ Check from the monomers: \(M_r(\ce{HOCH2CH2OH}) = 62.0\), \(M_r(\ce{HOOC-C6H4-CO
 
 ## Polyamides
 
-A **polyamide** is a polymer in which the units are joined by amide links, \(\ce{-CO-NH-}\). Take care over how the link is written: the nitrogen has one hydrogen left, so it is \(\ce{-CO-NH-}\), never \(\ce{-CO-NH2-}\).
+A **polyamide** is a polymer in which the units are joined by amide links, \(\ce{-CO-NH}{-}\). Take care over how the link is written: the nitrogen has one hydrogen left, so it is \(\ce{-CO-NH}{-}\), never \(\ce{-CO-NH2}{-}\).
 
 :::def Polyamide
-A condensation polymer whose monomer units are joined by amide links, \(\ce{-CONH-}\). It is made from a diamine and a dicarboxylic acid (or dioyl chloride), or from an aminocarboxylic acid.
+A condensation polymer whose monomer units are joined by amide links, \(\ce{-CONH}{-}\). It is made from a diamine and a dicarboxylic acid (or dioyl chloride), or from an aminocarboxylic acid.
 :::
 
 ### A diamine and a dicarboxylic acid: nylon-6,6
 
 **Nylon-6,6** is made from 1,6-diaminohexane, \(\ce{H2N(CH2)6NH2}\), and hexanedioic acid, \(\ce{HOOC(CH2)4COOH}\). The name counts the carbon atoms in each monomer: six in the diamine, six in the diacid. Each NH₂ reacts with a COOH to make an amide link and a molecule of water.
 
-\[n\,\ce{H2N(CH2)6NH2} + n\,\ce{HOOC(CH2)4COOH} \longrightarrow \ce{-[NH(CH2)6NH-CO(CH2)4CO]_n-} + 2n\,\ce{H2O}\]
+\[n\,\ce{H2N(CH2)6NH2} + n\,\ce{HOOC(CH2)4COOH} \longrightarrow \ce{-[NH(CH2)6NH-CO(CH2)4CO]_n}{-} + 2n\,\ce{H2O}\]
 
 With the dioyl chloride, hexanedioyl dichloride, the polymer is the same and HCl is lost instead:
 
-\[n\,\ce{H2N(CH2)6NH2} + n\,\ce{ClOC(CH2)4COCl} \longrightarrow \ce{-[NH(CH2)6NH-CO(CH2)4CO]_n-} + 2n\,\ce{HCl}\]
+\[n\,\ce{H2N(CH2)6NH2} + n\,\ce{ClOC(CH2)4COCl} \longrightarrow \ce{-[NH(CH2)6NH-CO(CH2)4CO]_n}{-} + 2n\,\ce{HCl}\]
 
 :::html
-<figure class="fig"><svg viewBox="10 36 640 490" role="img" aria-label="1,6-diaminohexane and hexanedioic acid join by amide links with loss of water; below, a section of nylon-6,6 with dashed lines cutting each amide link, the piece between two cuts labelled as coming from the diamine or from the diacid"><text class="tl tc" x="60" y="99">H₂N</text><text class="tl tc" x="305" y="79">NH₂</text><path class="ln thick" d="M74.7 86.6L95 75"/><path class="ln thick" d="M95 75L130 95"/><path class="ln thick" d="M130 95L165 75"/><path class="ln thick" d="M165 75L200 95"/><path class="ln thick" d="M200 95L235 75"/><path class="ln thick" d="M235 75L270 95"/><path class="ln thick" d="M270 95L290.3 83.4"/><text class="tl" x="350" y="93">1,6-diaminohexane</text><text class="tl tc" x="60" y="229">HO</text><text class="tl tc" x="305" y="209">OH</text><path class="ln thick" d="M71.2 218.6L95 205"/><path class="ln thick" d="M95 205L130 225"/><path class="ln thick" d="M130 225L165 205"/><path class="ln thick" d="M165 205L200 225"/><path class="ln thick" d="M200 225L235 205"/><path class="ln thick" d="M235 205L270 225"/><path class="ln thick" d="M270 225L293.8 211.4"/><text class="tl tc" x="95" y="173">O</text><text class="tl tc" x="270" y="265">O</text><path class="ln thick" d="M92.5 205L92.5 181.8"/><path class="ln thick" d="M97.5 205L97.5 181.8"/><path class="ln thick" d="M272.5 225L272.5 248.2"/><path class="ln thick" d="M267.5 225L267.5 248.2"/><text class="tl" x="350" y="223">hexanedioic acid</text><text class="tl tc" x="182.5" y="168">+</text><path class="ln" d="M330 278L330 318" marker-end="url(#ah)"/><text class="tl" x="342" y="303">H₂O is lost at each amide link</text><text class="tl tc" x="95" y="384">NH</text><text class="tl tc" x="340" y="404">NH</text><text class="tl tc" x="585" y="384">NH</text><path class="ln thick" d="M60 400L83.8 386.4"/><path class="ln thick" d="M106.2 386.4L130 400"/><path class="ln thick" d="M130 400L165 380"/><path class="ln thick" d="M165 380L200 400"/><path class="ln thick" d="M200 400L235 380"/><path class="ln thick" d="M235 380L270 400"/><path class="ln thick" d="M270 400L305 380"/><path class="ln thick" d="M305 380L328.8 393.6"/><path class="ln thick" d="M351.2 393.6L375 380"/><path class="ln thick" d="M375 380L410 400"/><path class="ln thick" d="M410 400L445 380"/><path class="ln thick" d="M445 380L480 400"/><path class="ln thick" d="M480 400L515 380"/><path class="ln thick" d="M515 380L550 400"/><path class="ln thick" d="M550 400L573.8 386.4"/><text class="tl tc" x="60" y="440">O</text><path class="ln thick" d="M62.5 400L62.5 423.2"/><path class="ln thick" d="M57.5 400L57.5 423.2"/><text class="tl tc" x="375" y="348">O</text><path class="ln thick" d="M372.5 380L372.5 356.8"/><path class="ln thick" d="M377.5 380L377.5 356.8"/><text class="tl tc" x="550" y="440">O</text><path class="ln thick" d="M552.5 400L552.5 423.2"/><path class="ln thick" d="M547.5 400L547.5 423.2"/><path class="ln thick" d="M60 400L40 388.6"/><path class="ln thick" d="M596.2 386.4L605 391.4"/><path class="ln-m thin dash" d="M77.5 352L77.5 446"/><text class="tl tc" x="77.5" y="466">amide link</text><path class="ln-m thin dash" d="M357.5 352L357.5 446"/><text class="tl tc" x="357.5" y="466">amide link</text><path class="ln-m thin dash" d="M567.5 352L567.5 446"/><text class="tl tc" x="567.5" y="466">amide link</text><text class="tl tc" x="217.5" y="500">from 1,6-diaminohexane</text><text class="tl tc" x="462.5" y="500">from hexanedioic acid</text></svg><figcaption>Nylon-6,6. The monomers lose one water molecule for every amide link. In the section of polymer below, the dashed lines cut the three amide links (the C–N bonds). Putting an H back on each N and an OH on each C=O gives the monomers again. One repeat unit is a diamine piece plus a diacid piece.</figcaption></figure>
+<figure class="fig small"><svg viewBox="0 60 360 425" role="img" aria-label="1,6-diaminohexane and hexanedioic acid join by amide links with loss of water; below, a section of nylon-6,6 written as CO, NH, (CH2)6, NH, CO, (CH2)4, CO, NH with dashed lines cutting each amide link between C and N; the piece between the first two cuts is the diamine piece and the next is the diacid piece"><text class="tl tc" x="60" y="99">H₂N</text><text class="tl tc" x="305" y="79">NH₂</text><path class="ln thick" d="M74.7 86.6L95 75"/><path class="ln thick" d="M95 75L130 95"/><path class="ln thick" d="M130 95L165 75"/><path class="ln thick" d="M165 75L200 95"/><path class="ln thick" d="M200 95L235 75"/><path class="ln thick" d="M235 75L270 95"/><path class="ln thick" d="M270 95L290.3 83.4"/><text class="tl ta tc" x="182.5" y="124">1,6-diaminohexane</text><text class="tl tc" x="182.5" y="150">+</text><text class="tl tc" x="60" y="229">HO</text><text class="tl tc" x="305" y="209">OH</text><path class="ln thick" d="M71.2 218.6L95 205"/><path class="ln thick" d="M95 205L130 225"/><path class="ln thick" d="M130 225L165 205"/><path class="ln thick" d="M165 205L200 225"/><path class="ln thick" d="M200 225L235 205"/><path class="ln thick" d="M235 205L270 225"/><path class="ln thick" d="M270 225L293.8 211.4"/><text class="tl tc" x="95" y="173">O</text><text class="tl tc" x="270" y="265">O</text><path class="ln thick" d="M92.5 205L92.5 181.8"/><path class="ln thick" d="M97.5 205L97.5 181.8"/><path class="ln thick" d="M272.5 225L272.5 248.2"/><path class="ln thick" d="M267.5 225L267.5 248.2"/><text class="tl ta tc" x="182.5" y="290">hexanedioic acid</text><path class="ln" d="M182.5 300L182.5 334" marker-end="url(#ah)"/><text class="tl" x="194" y="322">loses H₂O at each link</text><path class="ln thick" d="M14 390H33M47 390H64M80 390H93M147 390H162M178 390H191M205 390H220M273 390H284M298 390H313M329 390H346"/><text class="tl tc" x="40" y="395">C</text><text class="tl tc" x="40" y="353">O</text><path class="ln thick" d="M37.5 380V358M42.5 380V358"/><text class="tl tc" x="72" y="395">N</text><path class="ln thick" d="M72 398V408"/><text class="tl tc" x="72" y="422">H</text><text class="tl tc" x="120" y="395">(CH₂)₆</text><text class="tl tc" x="170" y="395">N</text><path class="ln thick" d="M170 398V408"/><text class="tl tc" x="170" y="422">H</text><text class="tl tc" x="198" y="395">C</text><text class="tl tc" x="198" y="353">O</text><path class="ln thick" d="M195.5 380V358M200.5 380V358"/><text class="tl tc" x="246" y="395">(CH₂)₄</text><text class="tl tc" x="291" y="395">C</text><text class="tl tc" x="291" y="353">O</text><path class="ln thick" d="M288.5 380V358M293.5 380V358"/><text class="tl tc" x="321" y="395">N</text><path class="ln thick" d="M321 398V408"/><text class="tl tc" x="321" y="422">H</text><path class="ln-m thin dash" d="M56 340V432M184.5 340V432M306 340V432"/><text class="tl tc" x="56" y="448">amide link</text><text class="tl tc" x="184.5" y="448">amide link</text><text class="tl tc" x="306" y="448">amide link</text><path class="ln-m thin" d="M60 460H180M60 456V464M180 456V464M189 460H302M189 456V464M302 456V464"/><text class="tl ta tc" x="120" y="478">diamine piece</text><text class="tl ta tc" x="245.5" y="478">diacid piece</text></svg><figcaption>Nylon-6,6. The monomers lose one water molecule for every amide link. In the section of polymer below, drawn with the CH₂ chains written as (CH₂)₆ and (CH₂)₄, the dashed lines cut the three amide links (the C–N bonds). Putting an H back on each N and an OH on each C=O gives the monomers again. One repeat unit is a diamine piece plus a diacid piece.</figcaption></figure>
 :::
 
-Notice the repeat unit alternates a diamine piece and a diacid piece. Reading it from the other end gives \(\ce{-[CO(CH2)4CO-NH(CH2)6NH]_n-}\), which is the same polymer, so either way of writing the repeat unit is correct provided it contains one of each piece and has the bonds drawn through the brackets.
+Notice the repeat unit alternates a diamine piece and a diacid piece. Reading it from the other end gives \(\ce{-[CO(CH2)4CO-NH(CH2)6NH]_n}{-}\), which is the same polymer, so either way of writing the repeat unit is correct provided it contains one of each piece and has the bonds drawn through the brackets.
 
 Nylon was first made in the 1930s and went into stockings, ropes and parachutes. Strands of nylon are strong because the amide links form hydrogen bonds between chains: the \(\ce{N-H}\) of one chain bonds to the \(\ce{C=O}\) of its neighbour, and the chains line up like threads in a rope.
 
@@ -202,7 +202,7 @@ Pour a solution of hexanedioyl dichloride in an organic solvent over an aqueous 
 
 A molecule with an NH₂ group at one end and a COOH group at the other can join to itself, like the hydroxycarboxylic acid in PLA. 6-Aminohexanoic acid, \(\ce{H2N(CH2)5COOH}\), gives nylon-6 (six carbons in the monomer):
 
-\[n\,\ce{H2N(CH2)5COOH} \longrightarrow \ce{-[NH(CH2)5CO]_n-} + n\,\ce{H2O}\]
+\[n\,\ce{H2N(CH2)5COOH} \longrightarrow \ce{-[NH(CH2)5CO]_n}{-} + n\,\ce{H2O}\]
 
 ### Kevlar: a polyamide with benzene rings
 
@@ -212,30 +212,34 @@ Kevlar is an aromatic polyamide used in body armour, tyres and ropes. It has the
 <figure class="fig small"><svg viewBox="0 48 370 495" role="img" aria-label="Benzene-1,4-diamine and benzene-1,4-dicarboxylic acid give Kevlar, whose repeat unit has a benzene ring, an NH group, a carbonyl group and a second benzene ring, in square brackets; the amide link is labelled"><path class="ln thick" d="M213 95L199 70.8L171 70.8L157 95L171 119.2L199 119.2Z"/><circle class="ln" cx="185" cy="95" r="17"/><text class="tl tc" x="122" y="79">H₂N</text><text class="tl tc" x="248" y="79">NH₂</text><path class="ln thick" d="M157 95L136.7 83.4"/><path class="ln thick" d="M213 95L233.3 83.4"/><text class="tl tc" x="185" y="150">benzene-1,4-diamine</text><text class="tl tc" x="185" y="180">+</text><path class="ln thick" d="M213 265L199 240.8L171 240.8L157 265L171 289.2L199 289.2Z"/><circle class="ln" cx="185" cy="265" r="17"/><text class="tl tc" x="122" y="213">O</text><text class="tl tc" x="87" y="269">HO</text><path class="ln thick" d="M157 265L122 245"/><path class="ln thick" d="M119.5 245L119.5 221.8"/><path class="ln thick" d="M124.5 245L124.5 221.8"/><path class="ln thick" d="M122 245L98.2 258.6"/><text class="tl tc" x="248" y="213">O</text><text class="tl tc" x="283" y="269">OH</text><path class="ln thick" d="M213 265L248 245"/><path class="ln thick" d="M245.5 245L245.5 221.8"/><path class="ln thick" d="M250.5 245L250.5 221.8"/><path class="ln thick" d="M248 245L271.8 258.6"/><text class="tl tc" x="185" y="322">benzene-1,4-dicarboxylic acid</text><path class="ln" d="M185 338L185 376" marker-end="url(#ah)"/><text class="tl" x="197" y="361">loses H₂O at each link</text><text class="tl tc" x="38" y="474">NH</text><path class="ln thick" d="M129 450L115 425.8L87 425.8L73 450L87 474.2L115 474.2Z"/><circle class="ln" cx="101" cy="450" r="17"/><text class="tl tc" x="164" y="474">NH</text><text class="tl tc" x="199" y="418">O</text><path class="ln thick" d="M290 470L276 445.8L248 445.8L234 470L248 494.2L276 494.2Z"/><circle class="ln" cx="262" cy="470" r="17"/><text class="tl tc" x="325" y="418">O</text><path class="ln thick" d="M26.8 463.6L14 456.3"/><path class="ln thick" d="M325 450L349 463.7"/><path class="ln thick" d="M49.2 463.6L73 450"/><path class="ln thick" d="M129 450L152.8 463.6"/><path class="ln thick" d="M175.2 463.6L199 450"/><path class="ln thick" d="M196.5 450L196.5 426.8"/><path class="ln thick" d="M201.5 450L201.5 426.8"/><path class="ln thick" d="M199 450L234 470"/><path class="ln thick" d="M290 470L325 450"/><path class="ln thick" d="M322.5 450L322.5 426.8"/><path class="ln thick" d="M327.5 450L327.5 426.8"/><path class="ln" d="M28 390H21V514H28"/><path class="ln" d="M335 390H342V514H335"/><text class="tl" x="348" y="526">n</text><path class="ln-m thin" d="M181.5 508L181.5 476"/><text class="tl tc" x="181.5" y="524">amide link</text></svg><figcaption>Kevlar is a polyamide made from benzene-1,4-diamine and benzene-1,4-dicarboxylic acid (or its dioyl chloride, losing HCl). The two groups on each ring are opposite each other, so the chain is straight and stiff.</figcaption></figure>
 :::
 
-The repeat unit is \(\ce{-[NH-C6H4-NH-CO-C6H4-CO]-}\), one diamine piece and one diacid piece, exactly as in nylon-6,6 but with rings instead of \(\ce{(CH2)}\) chains. Kevlar is not named in the syllabus, but it follows the same rules, so a question could give you its monomers or a section of its chain.
+The repeat unit is \(\ce{-[NH-C6H4-NH-CO-C6H4-CO]}{-}\), one diamine piece and one diacid piece, exactly as in nylon-6,6 but with rings instead of \(\ce{(CH2)}\) chains. Kevlar is not named in the syllabus, but it follows the same rules, so a question could give you its monomers or a section of its chain.
+
+:::board AQA
+AQA names Kevlar, with nylon-6,6 and Terylene, among the condensation polymers whose repeat units must be drawn, and links its strength to hydrogen bonding between the chains. Cambridge 9701 does not name Kevlar.
+:::
 
 ### Amino acids and proteins
 
 **Proteins** are polyamides made by living cells. The monomers are amino acids, which have an amine group and a carboxylic acid group on the same carbon atom. The general formula is \(\ce{H2N-CHR-COOH}\), where R is a side group that differs from one amino acid to the next (R is H in glycine and \(\ce{CH3}\) in alanine).
 
 :::def Peptide link
-The amide link, \(\ce{-CO-NH-}\), that joins two amino acids when the COOH group of one reacts with the NH₂ group of the next, with loss of a molecule of water. The product of two amino acids is a dipeptide, of three a tripeptide, and many make a polypeptide or protein.
+The amide link, \(\ce{-CO-NH}{-}\), that joins two amino acids when the COOH group of one reacts with the NH₂ group of the next, with loss of a molecule of water. The product of two amino acids is a dipeptide, of three a tripeptide, and many make a polypeptide or protein.
 :::
 
 \[\ce{H2N-CH2-COOH} + \ce{H2N-CH(CH3)-COOH} \longrightarrow \ce{H2N-CH2-CO-NH-CH(CH3)-COOH} + \ce{H2O}\]
 
-This dipeptide has an NH₂ end and a COOH end, so it can add more amino acids at either end. A protein is a very long chain of this kind, \(\ce{-[NH-CHR-CO]-}\), with the group R changing from unit to unit. That is the one difference from nylon: the repeat is not the same all the way along. The acid and base behaviour of amino acids, zwitterions and the way peptides behave in an electric field are in [Amines, amides and amino acids](#chem.org.nitrogen).
+This dipeptide has an NH₂ end and a COOH end, so it can add more amino acids at either end. A protein is a very long chain of this kind, \(\ce{-[NH-CHR-CO]}{-}\), with the group R changing from unit to unit. That is the one difference from nylon: the repeat is not the same all the way along. The acid and base behaviour of amino acids, zwitterions and the way peptides behave in an electric field are in [Amines, amides and amino acids](#chem.org.nitrogen).
 
 :::eg Name the monomers in this section of protein. [3 marks]
-\[\ce{-NH-CH2-CO-NH-CH(CH3)-CO-NH-CH2-CO-}\]
-The chain contains three \(\ce{-CO-NH-}\) amide (peptide) links, so it is a condensation polymer of amino acids. [B1]
+\[\ce{-NH-CH2-CO-NH-CH(CH3)-CO-NH-CH2-CO}{-}\]
+The chain contains three \(\ce{-CO-NH}{-}\) amide (peptide) links, so it is a condensation polymer of amino acids. [B1]
 
 Cut each C–N bond. Add H to each N and OH to each C=O. The pieces between the cuts are \(\ce{H2N-CH2-COOH}\), \(\ce{H2N-CH(CH3)-COOH}\) and \(\ce{H2N-CH2-COOH}\). [M1]
 
 The monomers are glycine (2-aminoethanoic acid), twice, and alanine (2-aminopropanoic acid). [A1]
 :::
 
-Where do these polymers sit among the other organic compounds? The reaction map shows condensation polymers as end points: you build them from diols, diacids and amino compounds, and you can hydrolyse them back again. Try the polyester node.
+Where do these polymers sit among the other organic compounds? The reaction map shows condensation polymers as end points: you build them from diols, diacids and amino compounds. Pick the polyester node to see what it is made from. (The map leaves out the reverse reaction, hydrolysis back to the monomers, which is in the last section of this chapter.)
 
 :::html
 <div class="widget" data-w="chem-orgmap" data-level="a2" data-focus="polyester"></div>
@@ -247,7 +251,7 @@ The kind of link decides which forces act between neighbouring chains, and those
 
 - **Poly(ethene)** has non-polar chains, so only id-id forces act between them.
 - **Polyesters** have polar ester links. The \(\delta+\) carbon of one chain attracts the \(\delta-\) oxygen of the next (pd-pd forces), as well as the id-id forces along the chain.
-- **Polyamides** have the amide group \(\ce{-CO-NH-}\), which has an N–H and a C=O. The hydrogen on nitrogen is strongly \(\delta+\) and the oxygen has lone pairs, so chains form **hydrogen bonds** to each other, N–H···O=C. Hydrogen bonds are stronger than pd-pd or id-id forces, so more energy is needed to pull the chains apart. Nylon is a strong fibre for this reason.
+- **Polyamides** have the amide group \(\ce{-CO-NH}{-}\), which has an N–H and a C=O. The hydrogen on nitrogen is strongly \(\delta+\) and the oxygen has lone pairs, so chains form **hydrogen bonds** to each other, N–H···O=C. Hydrogen bonds are stronger than pd-pd or id-id forces, so more energy is needed to pull the chains apart. Nylon is a strong fibre for this reason.
 - **Kevlar** adds a second effect. The rings make the chain stiff and straight, so chains lie side by side and every amide link can hydrogen-bond to the next chain. The result is a very strong, hardly stretchy fibre.
 - **Proteins** use the same N–H···O=C hydrogen bonds to hold a chain in its folded shape.
 
@@ -269,18 +273,18 @@ For a condensation polymer with two monomers, the repeat unit is a piece of each
 
 :::steps
 1. Write the two monomers with their functional groups at the ends: \(\ce{HO-X-OH}\) and \(\ce{HOOC-Y-COOH}\) (or \(\ce{ClOC-Y-COCl}\)), or \(\ce{H2N-X-NH2}\) for a polyamide.
-2. Take the small molecule out of the ends that react: the H from each –OH or –NH₂, and the OH (or the Cl) from each –COOH (or –COCl). What is left of the diol is \(\ce{-O-X-O-}\), and of the acid \(\ce{-OC-Y-CO-}\).
-3. Join one piece of each: \(\ce{-O-X-O-CO-Y-CO-}\) for a polyester, or \(\ce{-NH-X-NH-CO-Y-CO-}\) for a polyamide. The new link, \(\ce{-COO-}\) or \(\ce{-CONH-}\), must be drawn in full.
+2. Take the small molecule out of the ends that react: the H from each –OH or –NH₂, and the OH (or the Cl) from each –COOH (or –COCl). What is left of the diol is \(\ce{-O-X-O}{-}\), and of the acid \(\ce{-OC-Y-CO}{-}\).
+3. Join one piece of each: \(\ce{-O-X-O-CO-Y-CO}{-}\) for a polyester, or \(\ce{-NH-X-NH-CO-Y-CO}{-}\) for a polyamide. The new link, \(\ce{-COO-}\) or \(\ce{-CONH}{-}\), must be drawn in full.
 4. Put square brackets round the unit so that the bond at each end goes through a bracket, and write \(n\) at the lower right. The bonds through the brackets show the chain continuing.
 :::
 
-For a hydroxycarboxylic acid or an amino acid there is only one monomer, and the repeat unit is the whole monomer minus the small molecule: \(\ce{-[O-CH(CH3)-CO]-}\) for lactic acid.
+For a hydroxycarboxylic acid or an amino acid there is only one monomer, and the repeat unit is the whole monomer minus the small molecule: \(\ce{-[O-CH(CH3)-CO]}{-}\) for lactic acid.
 
 :::warn The mistakes that lose marks
 1. **Leftover end groups.** A repeat unit never has a free \(\ce{-OH}\), \(\ce{-COOH}\), \(\ce{-NH2}\) or \(\ce{-Cl}\) at its ends. Those atoms went into the small molecule. If your unit still shows them, you have stopped halfway.
-2. **Half a unit.** For two monomers the repeat unit contains a piece of the diol (or diamine) **and** a piece of the diacid. \(\ce{-[O(CH2)2O]-}\) on its own is not a repeat unit.
+2. **Half a unit.** For two monomers the repeat unit contains a piece of the diol (or diamine) **and** a piece of the diacid. \(\ce{-[O(CH2)2O]}{-}\) on its own is not a repeat unit.
 3. **A double bond kept.** Condensation polymers have no C=C from the monomers' reactions: the link forms by loss of a small molecule, not by opening a double bond.
-4. **A wrong amide link.** It is \(\ce{-CO-NH-}\), with one H on the nitrogen. \(\ce{-CO-NH2-}\) has the wrong number of bonds to nitrogen.
+4. **A wrong amide link.** It is \(\ce{-CO-NH}{-}\), with one H on the nitrogen. \(\ce{-CO-NH2}{-}\) has the wrong number of bonds to nitrogen.
 5. **No brackets or \(n\).** The brackets with bonds through them show that this is a repeating unit, not a molecule.
 :::
 
@@ -290,7 +294,7 @@ Work backwards: **break each link and put back what the reaction took away**.
 
 :::steps
 1. Look at the chain between the carbon atoms. If there are no ester or amide links, it is an addition polymer: use the method in [Hydrocarbons: alkanes and alkenes](#chem.org.hydrocarbons). Otherwise go on.
-2. Find every ester link \(\ce{-CO-O-}\) or amide link \(\ce{-CO-NH-}\). Break the bond between the C of the C=O and the O (or N).
+2. Find every ester link \(\ce{-CO-O}{-}\) or amide link \(\ce{-CO-NH}{-}\). Break the bond between the C of the C=O and the O (or N).
 3. Add \(\ce{OH}\) to the C=O end, giving a carboxylic acid group (or Cl, giving a dioyl chloride; both are acceptable answers). Add \(\ce{H}\) to the O or N end, giving an alcohol or an amine.
 4. Name the monomers. If the pieces are the same on every repeat, there is only one monomer type. If the pieces alternate, there are two.
 :::
@@ -298,19 +302,19 @@ Work backwards: **break each link and put back what the reaction took away**.
 This is exactly the reverse of the hydrolysis of an ester or an amide. That is why the same logic gives the products of breaking the polymer by acid or alkali, as you will see in the section on degradation.
 
 :::eg The section below is from a polyamide. Identify the monomers. [4 marks]
-\[\ce{-CO-(CH2)2-CO-NH-(CH2)4-NH-CO-(CH2)2-CO-NH-(CH2)4-NH-}\]
-The links are \(\ce{-CO-NH-}\), so it is a polyamide formed by condensation polymerisation. [B1]
+\[\ce{-CO-(CH2)2-CO-NH-(CH2)4-NH-CO-(CH2)2-CO-NH-(CH2)4-NH}{-}\]
+The links are \(\ce{-CO-NH}{-}\), so it is a polyamide formed by condensation polymerisation. [B1]
 
-Cut each C–N bond. The piece \(\ce{-CO-(CH2)2-CO-}\) becomes \(\ce{HOOC-(CH2)2-COOH}\) when OH is added to each C=O: butanedioic acid (or butanedioyl dichloride if Cl is added). [B1]
+Cut each C–N bond. The piece \(\ce{-CO-(CH2)2-CO}{-}\) becomes \(\ce{HOOC-(CH2)2-COOH}\) when OH is added to each C=O: butanedioic acid (or butanedioyl dichloride if Cl is added). [B1]
 
-The piece \(\ce{-NH-(CH2)4-NH-}\) becomes \(\ce{H2N-(CH2)4-NH2}\) when H is added to each N: butane-1,4-diamine. [B1]
+The piece \(\ce{-NH-(CH2)4-NH}{-}\) becomes \(\ce{H2N-(CH2)4-NH2}\) when H is added to each N: butane-1,4-diamine. [B1]
 
 The two pieces alternate, so there are two monomers: butanedioic acid and butane-1,4-diamine. [B1]
 :::
 
 :::eg Deduce the monomers of the polymer section below. [3 marks]
-\[\ce{-O-CH2-CH2-O-CO-(CH2)3-CO-O-CH2-CH2-O-CO-(CH2)3-CO-}\]
-The links are \(\ce{-CO-O-}\) (ester links), so it is a polyester. [B1]
+\[\ce{-O-CH2-CH2-O-CO-(CH2)3-CO-O-CH2-CH2-O-CO-(CH2)3-CO}{-}\]
+The links are \(\ce{-CO-O}{-}\) (ester links), so it is a polyester. [B1]
 
 Break each ester link at the C–O bond and put H on each O and OH on each C=O. [M1]
 
@@ -328,11 +332,11 @@ The monomers are ethane-1,2-diol, \(\ce{HOCH2CH2OH}\), and pentanedioic acid, \(
 
 :::eg Decide whether each polymer is formed by addition or condensation, and give the monomer or monomers. [6 marks]
 (a)
-\[\ce{-CH2-CH(CH3)-CH2-CH(CH3)-}\]
+\[\ce{-CH2-CH(CH3)-CH2-CH(CH3)}{-}\]
 (b)
-\[\ce{-O-CH2-CH2-O-CO-(CH2)2-CO-O-CH2-CH2-O-CO-(CH2)2-CO-}\]
+\[\ce{-O-CH2-CH2-O-CO-(CH2)2-CO-O-CH2-CH2-O-CO-(CH2)2-CO}{-}\]
 (c)
-\[\ce{-CH2-CH(COOCH3)-CH2-CH(COOCH3)-}\]
+\[\ce{-CH2-CH(COOCH3)-CH2-CH(COOCH3)}{-}\]
 
 (a) The backbone is only carbon: addition. [B1] The monomer is propene, \(\ce{CH2=CHCH3}\). [B1]
 
@@ -387,7 +391,7 @@ Some polymers are made to break down in sunlight. Their chains contain bonds or 
 
 Condensation polymers contain **polar** links. In an ester link or an amide link the carbon of the C=O is δ+, because it is bonded to two electronegative atoms (O and O, or O and N). Water, hydroxide ions, acid or enzymes can attack that carbon and break the link. This is the reverse of the reaction that made the polymer, and it is **hydrolysis**.
 
-\[\ce{-CO-O- + H2O -> -COOH + HO-}\qquad\ce{-CO-NH- + H2O -> -COOH + H2N-}\]
+\[\ce{-CO-O}{-} + \ce{H2O -> -COOH} + \ce{HO}{-}\qquad\ce{-CO-NH}{-} + \ce{H2O -> -COOH} + \ce{H2N}{-}\]
 
 Because of this, polyesters and polyamides are **biodegradable** (they can be broken down by acidic or alkaline hydrolysis, and by microorganisms). The conditions decide the products, exactly as for the hydrolysis of esters and amides.
 
@@ -400,9 +404,9 @@ Because of this, polyesters and polyamides are **biodegradable** (they can be br
 
 For nylon-6,6 the repeat unit and the products are:
 
-\[\ce{-[NH(CH2)6NH-CO(CH2)4CO]-} + 2\ce{H2O} + 2\ce{H+} \longrightarrow \ce{HOOC(CH2)4COOH} + \ce{H3N+(CH2)6NH3+}\]
+\[\ce{-[NH(CH2)6NH-CO(CH2)4CO]}{-} + 2\ce{H2O} + 2\ce{H+} \longrightarrow \ce{HOOC(CH2)4COOH} + \ce{H3N+(CH2)6NH3+}\]
 
-\[\ce{-[NH(CH2)6NH-CO(CH2)4CO]-} + 2\ce{OH-} \longrightarrow \ce{-OOC(CH2)4COO-} + \ce{H2N(CH2)6NH2}\]
+\[\ce{-[NH(CH2)6NH-CO(CH2)4CO]}{-} + 2\ce{OH-} \longrightarrow {}^{-}\ce{OOC(CH2)4COO-} + \ce{H2N(CH2)6NH2}\]
 
 Chemists use this to recycle some condensation polymers: hydrolysis returns the monomers, which can be purified and polymerised again. Some polyesters, such as PLA, are designed to hydrolyse in compost or in the body. Even so, hydrolysis of many everyday polyesters is slow at ordinary temperatures.
 
@@ -451,33 +455,33 @@ The student scores 2 out of 3. Check what the acid end is before naming the smal
 :::eg Spot the error: Draw the repeat unit of the polyamide formed from 1,6-diaminohexane and hexanedioic acid. [3 marks]
 A student wrote this answer.
 
-Line 1: The link formed is an amide link, \(\ce{-CO-NH-}\).
-Line 2: The repeat unit is \(\ce{-[NH(CH2)6NH-CO(CH2)4COOH]-}\).
+Line 1: The link formed is an amide link, \(\ce{-CO-NH}{-}\).
+Line 2: The repeat unit is \(\ce{-[NH(CH2)6NH-CO(CH2)4COOH]}{-}\).
 Line 3: Water is the small molecule lost.
 
-Line 1 is correct [B1]. **Line 2 is wrong: the COOH at the end still has its OH. That OH leaves with the H of the next unit's NH to form water, so the unit must end in \(\ce{-CO-}\) with a bond through the bracket, not in COOH [B0].** Line 3 is correct [B1].
+Line 1 is correct [B1]. **Line 2 is wrong: the COOH at the end still has its OH. That OH leaves with the H of the next unit's NH to form water, so the unit must end in \(\ce{-CO}{-}\) with a bond through the bracket, not in COOH [B0].** Line 3 is correct [B1].
 
-Correct line 2: \(\ce{-[NH(CH2)6NH-CO(CH2)4CO]_n-}\). [B1]
+Correct line 2: \(\ce{-[NH(CH2)6NH-CO(CH2)4CO]_n}{-}\). [B1]
 
 The student scores 2 out of 3. A repeat unit never shows the atoms that were lost.
 :::
 
 :::try Start easy, finish at exam standard
 Q: Give the formula of the polymer repeat unit made from ethene, and say which type of polymerisation it is.
-A: \(\ce{-[CH2-CH2]-}\). Addition polymerisation: the monomer has a C=C and nothing is lost.
+A: \(\ce{-[CH2-CH2]}{-}\). Addition polymerisation: the monomer has a C=C and nothing is lost.
 Q: Name the link, and the small molecule lost, when (a) \(\ce{-OH}\) reacts with \(\ce{-COCl}\) and (b) \(\ce{-NH2}\) reacts with \(\ce{-COOH}\).
-A: (a) An ester link, \(\ce{-COO-}\); HCl is lost. (b) An amide link, \(\ce{-CONH-}\); \(\ce{H2O}\) is lost.
+A: (a) An ester link, \(\ce{-COO-}\); HCl is lost. (b) An amide link, \(\ce{-CONH}{-}\); \(\ce{H2O}\) is lost.
 Q: Why must each monomer of a condensation polymer have two functional groups?
 A: With two groups, a monomer can bond to a neighbour at each end, so the chain can keep growing in both directions. A molecule with only one group would end the chain.
-Q: Give the monomers of the polymer \(\ce{-[O(CH2)2O-CO(CH2)4CO]_n-}\).
+Q: Give the monomers of the polymer \(\ce{-[O(CH2)2O-CO(CH2)4CO]_n}{-}\).
 A: Ethane-1,2-diol, \(\ce{HOCH2CH2OH}\), and hexanedioic acid, \(\ce{HOOC(CH2)4COOH}\) (or hexanedioyl dichloride).
 Q: Draw the repeat unit of the polymer made from 3-hydroxypropanoic acid, \(\ce{HOCH2CH2COOH}\), and give the equation.
-A: Repeat unit \(\ce{-[OCH2CH2CO]-}\). \[n\,\ce{HOCH2CH2COOH} \longrightarrow \ce{-[OCH2CH2CO]_n-} + n\,\ce{H2O}\]
+A: Repeat unit \(\ce{-[OCH2CH2CO]}{-}\). \[n\,\ce{HOCH2CH2COOH} \longrightarrow \ce{-[OCH2CH2CO]_n}{-} + n\,\ce{H2O}\]
 Q: Which of these polymers is a condensation polymer: poly(propene), nylon-6,6, PVC, poly(ethene)? Explain.
 A: Nylon-6,6. Its chain contains amide links and is made with loss of a small molecule. The other three have all-carbon backbones from C=C monomers.
 Q: Write the formula of the amide link in a protein and say what it is called.
-A: \(\ce{-CO-NH-}\), the peptide link.
-Q: Give the monomers of the polymer \(\ce{-[NH(CH2)2NH-CO(CH2)4CO]-}\).
+A: \(\ce{-CO-NH}{-}\), the peptide link.
+Q: Give the monomers of the polymer \(\ce{-[NH(CH2)2NH-CO(CH2)4CO]}{-}\).
 A: Ethane-1,2-diamine, \(\ce{H2NCH2CH2NH2}\), and hexanedioic acid (or the dioyl chloride).
 Q: A polyester is boiled with aqueous sodium hydroxide. State what happens to the ester links, and name the type of reaction.
 A: They are hydrolysed (broken by reaction with water in alkaline conditions), giving the alcohol (diol) and the carboxylate salt. The reaction is hydrolysis.
@@ -489,11 +493,11 @@ A: Two: glycine-alanine (glycine's COOH joined to alanine's NH₂) and alanine-g
 Q: [2 marks] ★ State the type of polymerisation, and the small molecule lost, when ethane-1,2-diol reacts with benzene-1,4-dioyl dichloride.
 A: Condensation polymerisation. [B1] Hydrogen chloride, HCl. [B1]
 Q: [3 marks] ★ Draw the repeat unit of the polyamide made from butane-1,4-diamine and butanedioyl dichloride.
-A: The diamine piece is \(\ce{-NH(CH2)4NH-}\) and the diacid piece is \(\ce{-CO(CH2)2CO-}\). [B1]
-They are joined by amide links: \(\ce{-[NH(CH2)4NH-CO(CH2)2CO]-}\). [B1]
+A: The diamine piece is \(\ce{-NH(CH2)4NH}{-}\) and the diacid piece is \(\ce{-CO(CH2)2CO}{-}\). [B1]
+They are joined by amide links: \(\ce{-[NH(CH2)4NH-CO(CH2)2CO]}{-}\). [B1]
 Square brackets with the bond through each bracket, and \(n\) at the lower right. [B1]
 Q: [4 marks] ★★ Deduce the monomers of the polymer with the section below, and name the type of polymerisation.
-\[\ce{-O-(CH2)2-O-CO-(CH2)3-CO-O-(CH2)2-O-CO-(CH2)3-CO-}\]
+\[\ce{-O-(CH2)2-O-CO-(CH2)3-CO-O-(CH2)2-O-CO-(CH2)3-CO}{-}\]
 A: The ester links in the chain show a polyester, made by condensation polymerisation. [B1]
 Break each ester link: add H to the O and OH to the C=O. [M1]
 The monomers are ethane-1,2-diol, \(\ce{HOCH2CH2OH}\) [A1], and pentanedioic acid, \(\ce{HOOC(CH2)3COOH}\) (or pentanedioyl dichloride). [A1]
@@ -502,7 +506,7 @@ H: Think about which bonds are polar, and whether water or an enzyme has a point
 A: Poly(ethene) has only non-polar C–C and C–H bonds, so water and enzymes have no site to attack. [B1]
 PET has ester links in which the carbon of C=O is δ+. [B1]
 These are attacked by water, hydroxide ions or acid, breaking the links to give the diol and the acid (or its salt). [B1]
-Q: [5 marks] ★★ Poly(lactic acid), \(\ce{-[O-CH(CH3)-CO]_n-}\), is heated under reflux with aqueous sodium hydroxide, and then with dilute sulfuric acid. (a) Name the type of reaction. (b) Name the organic product after the alkali, and give its formula. (c) Name the organic product after acidification.
+Q: [5 marks] ★★ Poly(lactic acid), \(\ce{-[O-CH(CH3)-CO]_n}{-}\), is heated under reflux with aqueous sodium hydroxide, and then with dilute sulfuric acid. (a) Name the type of reaction. (b) Name the organic product after the alkali, and give its formula. (c) Name the organic product after acidification.
 A: (a) Hydrolysis of the ester links. [B1]
 (b) Sodium 2-hydroxypropanoate [B1], \(\ce{CH3CH(OH)COO^-Na+}\). [B1]
 (c) 2-hydroxypropanoic acid (lactic acid) [B1], \(\ce{CH3CH(OH)COOH}\), because the acid protonates the carboxylate ion. [B1]
@@ -513,7 +517,7 @@ A: \[M_r(\ce{C8H4Cl2O2}) = 8(12.0) + 4(1.0) + 2(35.5) + 2(16.0) = 203.0\] [B1]
 \(n(\ce{HCl}) = 2 \times 0.02463 = 0.04926\) mol; \(M_r(\ce{HCl}) = 36.5\) [M1]
 \(m(\ce{HCl}) = 0.04926 \times 36.5 = 1.80\) g [A1]
 Q: [6 marks] ★★★ A polymer has the section below.
-\[\ce{-NH-(CH2)5-CO-NH-(CH2)5-CO-NH-(CH2)5-CO-}\]
+\[\ce{-NH-(CH2)5-CO-NH-(CH2)5-CO-NH-(CH2)5-CO}{-}\]
 (a) Name the type of link in the chain. (b) Give the formula and name of the monomer. (c) Explain why one monomer is enough. (d) Poly(propene) is made from a different kind of monomer: say how the bonding in the monomer differs.
 H: How many functional groups does the monomer need, and where are they?
 A: (a) Amide link. [B1]
@@ -529,7 +533,7 @@ A: (a) Glycine (2-aminoethanoic acid) and alanine (2-aminopropanoic acid), with 
 :::
 
 :::try Stretch for A*
-Q: [4 marks] ★★★ Poly(glycolic acid), \(\ce{-[O-CH2-CO]_n-}\), is made from 2-hydroxyethanoic acid, \(\ce{HOCH2COOH}\), and is used for stitches that dissolve in the body. (a) Explain why the stitches dissolve. (b) A 2.00 g piece of poly(glycolic acid) is hydrolysed completely by warm aqueous sodium hydroxide. Calculate the mass of sodium 2-hydroxyethanoate, \(\ce{HOCH2COO^-Na+}\), formed.
+Q: [4 marks] ★★★ Poly(glycolic acid), \(\ce{-[O-CH2-CO]_n}{-}\), is made from 2-hydroxyethanoic acid, \(\ce{HOCH2COOH}\), and is used for stitches that dissolve in the body. (a) Explain why the stitches dissolve. (b) A 2.00 g piece of poly(glycolic acid) is hydrolysed completely by warm aqueous sodium hydroxide. Calculate the mass of sodium 2-hydroxyethanoate, \(\ce{HOCH2COO^-Na+}\), formed.
 H: Each repeat unit gives one carboxylate ion. Work in repeat units, \(\ce{C2H2O2}\).
 A: (a) The ester links are hydrolysed by water in the body, giving small, water-soluble molecules. [B1]
 (b) \(M_r(\text{repeat unit}, \ce{C2H2O2}) = 2(12.0) + 2(1.0) + 2(16.0) = 58.0\); \(M_r(\ce{HOCH2COONa}) = 98.0\) (2(12.0) + 3(1.0) + 3(16.0) + 23.0). [B1]
@@ -555,10 +559,10 @@ A: (a) Carbon 2 is bonded to H, \(\ce{CH3}\), OH and COOH, four different groups
 - \(\ce{CO2}\)
 > Each COCl loses Cl and each NH₂ loses H, so one HCl is lost for every amide link. Water is lost only when the acid end is a carboxylic acid, COOH.
 ? What is the repeat unit of the polymer made from 2-hydroxypropanoic acid?
-+ \(\ce{-[O-CH(CH3)-CO]-}\)
-- \(\ce{-[CH(CH3)-CO]-}\)
-- \(\ce{-[O-CH(CH3)-COOH]-}\)
-- \(\ce{-[CH2-CH(COOH)]-}\)
++ \(\ce{-[O-CH(CH3)-CO]}{-}\)
+- \(\ce{-[CH(CH3)-CO]}{-}\)
+- \(\ce{-[O-CH(CH3)-COOH]}{-}\)
+- \(\ce{-[CH2-CH(COOH)]}{-}\)
 > The unit is the monomer minus water: the H of the OH and the OH of the COOH are gone. The second option has lost the O; the third still has an OH; the fourth is an addition polymer.
 ? The repeat unit of PET is \(\ce{C10H8O4}\). The diol has \(M_r\) 62.0 and the diacid 166.0. What is the \(M_r\) of the repeat unit?
 - 228.0
@@ -609,7 +613,7 @@ A: (a) Carbon 2 is bonded to H, \(\ce{CH3}\), OH and COOH, four different groups
 - Addition polymer: monomers with C=C open their double bonds; the polymer is the only product; all-carbon backbone.
 - Condensation polymer: each monomer has two reactive groups; a small molecule (\(\ce{H2O}\) or \(\ce{HCl}\)) is lost at every link; the backbone contains ester or amide links.
 - Polyester: diol + dicarboxylic acid (H₂O lost) or dioyl chloride (HCl lost), or a hydroxycarboxylic acid. PET: ethane-1,2-diol + benzene-1,4-dicarboxylic acid. PLA: 2-hydroxypropanoic acid.
-- Polyamide: diamine + dicarboxylic acid (H₂O) or dioyl chloride (HCl), or an aminocarboxylic acid. Nylon-6,6: 1,6-diaminohexane + hexanedioic acid. Proteins: amino acids joined by peptide links \(\ce{-CO-NH-}\).
+- Polyamide: diamine + dicarboxylic acid (H₂O) or dioyl chloride (HCl), or an aminocarboxylic acid. Nylon-6,6: 1,6-diaminohexane + hexanedioic acid. Proteins: amino acids joined by peptide links \(\ce{-CO-NH}{-}\).
 - Repeat unit: a piece of each monomer joined by the link; no leftover end groups; square brackets with the bonds through them and \(n\) at the lower right.
 - Monomers from a section: break each ester or amide link between C=O and O (or N); add OH to the C=O end (or Cl) and H to the O or N end.
 - Type from a section: all-carbon backbone is addition; ester or amide links in the backbone is condensation (ester side groups do not count).
