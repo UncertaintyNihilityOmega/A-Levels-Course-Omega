@@ -1,11 +1,9 @@
 # ROADMAP: build queue and current state
 
 ## Now
-- No run active. Guard off (`.claude/hooks/guard-course.txt` absent). No scheduled task yet, no lock.
-- Queue item 1, parts A and B done: installable web app and macOS tooling; accessibility pass (WCAG 2.2 AA: keyboard,
-  screen-reader labels, contrast tokens, focus, 200% text and 320 px reflow, reduced motion; engine/README.md
-  "Accessibility"; every math, phys and chem widget probed clean).
-  Next: part C, the `zta-agent-run` scheduled task and one test run (from the coordinator chat).
+- Automatic runs on: app scheduled task `zta-agent-run`, hourly at :23, fresh Organizer session per run, lock
+  `.claude/run.lock`.
+- Current course: **Biology** (`bio`, queue item 2). Next step: LEAD (gold chapter `bio.enzymes`, then `done LEAD`).
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
@@ -13,8 +11,7 @@
   notch and home bar cover no text, menu or toast; dark mode from the system and from the theme button (status bar
   matches); Mac Safari File → Add to Dock, then the same offline open. Progress in the home-screen app is separate
   from Safari's.
-- Biology is planned (64 chapters, 24 packages). Its next LEAD session writes the gold chapter `bio.enzymes`, then
-  runs `done LEAD`.
+- Biology is planned (64 chapters, 24 packages).
 - Per-course numbers: `node engine/status.js`.
 
 ## Rules
@@ -32,7 +29,7 @@
 - About pages for every unbuilt course (`core/about.<c>.md`): each is its course's only sidebar entry until the first chapter is written.
 
 ## Queue
-1. [ ] **Phone, Mac and accessibility**: installable web app (manifest, icons, service worker for offline use, add to
+1. [x] **Phone, Mac and accessibility**: installable web app (manifest, icons, service worker for offline use, add to
    home screen), tested in Safari on iPhone and Mac; build and kit tools work on macOS (Python and browser paths).
    Accessibility pass: keyboard-only use of every page and widget, screen-reader labels (figures, widgets, maths),
    colour contrast in light and dark (WCAG AA), focus outlines, text zoom to 200%, reduced motion.
