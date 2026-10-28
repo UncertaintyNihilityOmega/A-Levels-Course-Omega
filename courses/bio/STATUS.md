@@ -5,8 +5,8 @@ Last: 2026-10-28 · LEAD · Gold chapter bio.enzymes written (789 lines, 8.6k wo
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
 - LEAD: done 2026-10-28
-- P1: open
-- P2: open
+- P1: writing 2026-10-28
+- P2: writing 2026-10-28
 - P3: open
 - P4: open
 - P5: open
