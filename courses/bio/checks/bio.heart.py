@@ -78,4 +78,26 @@ eq("diastole at 150", d_ex, 0.10, 1e-12)
 eq("diastole falls by", round((d_rest - d_ex) / d_rest * 100), 83)
 eq("systole falls by", round((0.4 - 0.3) / 0.4 * 100), 25)
 
+# --- worked example: describe the left ventricle pressure (values quoted in the chapter) ---------------------------
+eq("LV at 0.00 s about 0.5", LV(0.0), 0.5, 0.06)
+eq("LV at 0.10 s about 1 kPa", LV(0.10), 1.0, 0.06)
+eq("LV maximum about 16 kPa", peak_lv, 16, 0.3)
+eq("LV maximum at 0.25 s", max((LV(k / 1000), k / 1000) for k in range(801))[1], 0.25, 0.006)
+eq("LV at 0.30 s about 16 kPa", LV(0.30), 16, 0.3)
+eq("LV at 0.40 s about 9 kPa", LV(0.40), 9, 0.1)
+eq("LV at 0.45 s about 1 kPa", LV(0.45), 1.0, 0.05)
+assert max(LV(k / 1000) for k in range(460, 801)) < 1.0
+assert max(LV(k / 1000) for k in range(0, 101)) < 1.0, "low and slightly rising until 0.10 s"
+eq("aorta at 0.45 s about 14 kPa", AO(0.45), 14, 0.3)
+eq("LA at 0.05 s about 1.5 kPa (atrial systole)", LA(0.05), 1.5, 0.06)
+
+# --- worked example: 9 cycles in 8.0 s ------------------------------------------------------------------------
+eq("9 cycles in 8.0 s: cycle time", sf(8.0 / 9), 0.889)
+eq("9 cycles in 8.0 s: heart rate", sf(60 / (8.0 / 9), 2), 68)
+eq("9 cycles in 8.0 s: other way", 9 / 8.0 * 60, 67.5)
+
+# --- stretch: slow AVN conduction -----------------------------------------------------------------------------
+eq("AVN delay 0.3 s: diastole", 0.8 - 0.3 - 0.3, 0.2, 1e-12)
+eq("normal diastole (0.8 - 0.1 - 0.3)", 0.8 - 0.1 - 0.3, 0.4, 1e-12)
+
 print("ok")

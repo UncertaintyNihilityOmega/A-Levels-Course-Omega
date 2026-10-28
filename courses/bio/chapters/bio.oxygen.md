@@ -202,6 +202,20 @@ In the lungs the pCO₂ of the plasma is higher than in the alveolar air, so the
 - Haemoglobinic acid releases its \(\ce{H+}\) ions, which combine with \(\ce{HCO3-}\) to make carbonic acid, and carbonic anhydrase splits it into carbon dioxide and water. The carbon dioxide diffuses out.
 - Carbaminohaemoglobin releases its carbon dioxide too. As the haemoglobin gives up hydrogen ions and carbon dioxide, it binds oxygen more easily.
 
+### The tissues and the lungs compared
+
+Everything in this chapter is one set of reversible reactions that run in opposite directions in two places. Use the table to check that you can say both columns.
+
+| | respiring tissue | lungs |
+|---|---|---|
+| pO₂ and pCO₂ | pO₂ low, pCO₂ high | pO₂ high (about 13 kPa), pCO₂ low |
+| oxygen and haemoglobin | oxyhaemoglobin unloads oxygen (steep part of the curve; curve shifted right, the Bohr shift) | haemoglobin loads oxygen (flat top of the curve; curve shifted left) |
+| carbonic anhydrase | CO₂ + H₂O → H₂CO₃ → H⁺ + HCO₃⁻ | H⁺ + HCO₃⁻ → H₂CO₃ → CO₂ + H₂O |
+| hydrogen carbonate ions | leave the red cell into the plasma | enter the red cell from the plasma |
+| chloride ions | move into the red cell (chloride shift) | move out of the red cell |
+| hydrogen ions | bind to haemoglobin: haemoglobinic acid forms | released from haemoglobinic acid |
+| carbon dioxide on haemoglobin | carbaminohaemoglobin forms | carbaminohaemoglobin releases CO₂, which diffuses into the alveolus |
+
 :::warn Where does the carbon dioxide bind to haemoglobin?
 Carbaminohaemoglobin is formed when carbon dioxide binds to the **amine groups** of the globin chains. Oxygen binds to the **haem** groups. Do not write that carbon dioxide "binds to the haem group", which is where carbon monoxide and oxygen bind. Also, the chloride shift moves \(\ce{Cl-}\) **into** the red cell, in the tissues.
 :::
@@ -270,6 +284,20 @@ A shift **to the right** means a **lower affinity** and **more oxygen released**
 
 :::note Beyond the syllabus
 Myoglobin (in muscle) and fetal haemoglobin both have curves to the **left** of adult haemoglobin: they hold oxygen more tightly. You do not need them for this syllabus; they are an example of how the shape of a curve depends on the protein.
+:::
+
+:::eg Blood is 100% saturated when 100 cm³ of it carries 18 cm³ of oxygen. It leaves the lungs 97% saturated. In a muscle at a pO₂ of 4 kPa the saturation is 61% at a normal pCO₂ and 41% at a raised pCO₂. Calculate how much more oxygen each 100 cm³ of blood unloads at the raised pCO₂.
+The Bohr shift changes the saturation at the **same** pO₂, so compare the two unloaded amounts.
+
+**Step 1: percentage points unloaded.** Take the saturation in the muscle away from the saturation leaving the lungs.
+
+\[\begin{aligned} \text{normal pCO}_2 &: 97 - 61 = 36\ \text{percentage points} \\ \text{raised pCO}_2 &: 97 - 41 = 56\ \text{percentage points} \end{aligned}\] [M1] [A1]
+
+**Step 2: the extra, as a volume.** The extra is \(56 - 36 = 20\) percentage points of the capacity of 18 cm³.
+
+\[\begin{aligned} \text{extra oxygen} &= \frac{20}{100} \times 18 \\ &= 3.6\,\mathrm{cm^3\ per\ 100\,cm^3\ of\ blood} \end{aligned}\] [M1] [A1]
+
+Check with the two volumes: \(0.36 \times 18 = 6.48\,\mathrm{cm^3}\) at the normal pCO₂ and \(0.56 \times 18 = 10.08\,\mathrm{cm^3}\) at the raised pCO₂, a difference of 3.60 cm³. The active muscle gets about 1.6 times as much oxygen from each 100 cm³ of blood, with no extra blood flow.
 :::
 
 :::eg Explain the Bohr shift and its importance to a running mammal.
@@ -378,11 +406,11 @@ H: For (c), think about the competition between oxygen and carbon monoxide at th
 A: (a) Haem groups occupied by carbon monoxide cannot bind oxygen, so the blood can carry only about half as much oxygen. [B1]
 (b) The binding of carbon monoxide changes the shape of the haemoglobin molecule in the same way as binding oxygen, so the other haem groups bind oxygen more strongly (a higher affinity). [B1] The curve shifts to the left, so haemoglobin releases less oxygen at a given pO₂ in the tissues. [B1] The tissues get even less oxygen than the lower amount carried. [B1]
 (c) A high pO₂ in the lungs raises the proportion of haem groups that are bound to oxygen, which helps to displace carbon monoxide. [B1] More oxygen is carried in the plasma in solution as well. [B1]
-Q: [5 marks] ★★★ A child has anaemia, so the blood contains only half as much haemoglobin as normal. The shape of the dissociation curve is the same as normal. Normal blood carries 20 cm³ of oxygen per 100 cm³ when 100% saturated. At the lungs the pO₂ is 13 kPa (97% saturated) and in a muscle it is 4 kPa (61% saturated). (a) Calculate the volume of oxygen that normal blood unloads in the muscle per 100 cm³. (b) Calculate the volume that the anaemic blood unloads. (c) Suggest how the child's body might compensate.
-H: Unloaded saturation \(= 97 - 61\), then take that percentage of the capacity.
+Q: [5 marks] ★★★ A child has anaemia, so the blood contains only half as much haemoglobin as normal. The shape of the dissociation curve is the same as normal. Normal blood carries 16 cm³ of oxygen per 100 cm³ when 100% saturated. The haemoglobin leaving the lungs is 98% saturated, and the haemoglobin leaving a muscle during exercise is 42% saturated (data for the question). (a) Calculate the volume of oxygen that normal blood unloads in the muscle per 100 cm³. (b) Calculate the volume that the anaemic blood unloads. (c) Suggest how the child's body might compensate.
+H: Unloaded saturation \(= 98 - 42\), then take that percentage of the capacity.
 H: The anaemic blood has the same percentages but half the capacity.
-A: (a) Unloaded \(= 97 - 61 = 36\) percentage points \(= 0.36 \times 20\) [M1] \(= 7.2\,\mathrm{cm^3}\) per 100 cm³ [A1]
-(b) Capacity is \(10\,\mathrm{cm^3}\), so \(0.36 \times 10 = 3.6\,\mathrm{cm^3}\) per 100 cm³. [A1]
+A: (a) Unloaded \(= 98 - 42 = 56\) percentage points \(= 0.56 \times 16\) [M1] \(= 9.0\,\mathrm{cm^3}\) per 100 cm³ [A1]
+(b) Capacity is \(8\,\mathrm{cm^3}\), so \(0.56 \times 8 = 4.5\,\mathrm{cm^3}\) per 100 cm³. [A1]
 (c) A faster heart rate (or faster blood flow) so that more blood passes the muscle each minute. [B1] Breathing faster does not raise the saturation much, because the blood is already almost fully saturated, so a greater cardiac output is the better compensation. [B1]
 :::
 

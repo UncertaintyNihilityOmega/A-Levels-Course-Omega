@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-29 · WRITE P9 · bio.gasexchange 6.2k words, bio.disease 6.1k, bio.antibiotics 8.8k (3 SVGs via data/fig_bio.antibiotics.py placed with data/place_figs_p6.py, 1 plot with invented data, 9 eg, 23 try, 10 quiz); no widgets. Reviewer notes: antibiotics avoids the word allele (A Level) and uses 'gene for resistance', with a link to bio.selection; invented data are stated as such (resistance graph, ward table, country comparison, 1 in 10^7 and 10^8 mutation chances); disc diffusion lab uses 25 C incubation and aseptic technique; bio.prokaryotes already holds a short penicillin worked example, the antibiotics chapter extends it without reusing its question; gasexchange and disease were completed by an earlier Writer and re-checked against packages/P9.md (all outcomes covered).
+Last: 2026-10-29 · WRITE P8 · bio.mammaltransport 7.2k words (5 SVGs, 6 eg), bio.oxygen 6.2k (2 SVGs, 2 plots, 7 eg: new Bohr-shift calculation and tissues-versus-lungs table; widget bio-odc), bio.heart 6.6k (4 SVGs, 7 eg: new describe-the-trace, heart-rate-from-cycles and electrical-plus-pressure table; widget bio-cardiac); widgets bio-odc (pCO2 slider, two markers draggable or sliders, readout, Bohr text) and bio-cardiac (time slider, Play at quarter speed, Next valve event, bpm 50-150 rescales time with diastole shortening most, valve states from pressures) probed clean light/dark/phone/bad attributes, maths tested in data/test_bio-odc.js and data/test_bio-cardiac.js. Notes for the reviewer: heart LS redrawn as 400-wide fig small with stacked labels and the pressure graph as fig small (both looked at on phone); heart figures placed with data/place_figs_p6.py bio.heart; Writer's notes appended to packages/P8.md; widgets not clicked in a browser (no browser tools), keyboard use rests on native range inputs and buttons.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -12,7 +12,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P5: written 2026-10-28
 - P6: written 2026-10-28
 - P7: written 2026-10-28
-- P8: writing 2026-10-28
+- P8: written 2026-10-29
 - P9: written 2026-10-29
 - P10: open
 - P11: open

@@ -72,9 +72,19 @@ for p in low:
 assert (low[3] - high[3]) > (low[10] - high[10])
 
 # --- stretch: anaemia -------------------------------------------------------------------------------------
-eq("normal blood unloads (points)", 97 - 61, 36)
-eq("normal blood volume", 0.36 * 20, 7.2, 1e-12)
-eq("anaemic blood volume", 0.36 * 10, 3.6, 1e-12)
-eq("model curve at 13 and 4 kPa matches 97 and 61", round(sat(13, 3.4)) - round(sat(4, 3.4)), 36)
+eq("normal blood unloads (points)", 98 - 42, 56)
+eq("normal blood volume", sf(0.56 * 16, 2), 9.0, 1e-12)
+eq("anaemic blood volume", sf(0.56 * 8, 2), 4.5, 1e-12)
+
+# --- worked example: extra oxygen released by the Bohr shift at 4 kPa (97% leaving the lungs, 18 cm3 capacity) ------------
+eq("Bohr eg: saturation at 4 kPa, normal pCO2", round(sat(4, P50_LOW)), 61)
+eq("Bohr eg: saturation at 4 kPa, raised pCO2", round(sat(4, P50_HIGH)), 41)
+eq("Bohr eg: unloaded, normal", 97 - 61, 36)
+eq("Bohr eg: unloaded, raised", 97 - 41, 56)
+eq("Bohr eg: extra points", (97 - 41) - (97 - 61), 20)
+eq("Bohr eg: extra volume", sf(20 / 100 * 18, 2), 3.6, 1e-12)
+eq("Bohr eg: volume normal", 0.36 * 18, 6.48, 1e-12)
+eq("Bohr eg: volume raised", 0.56 * 18, 10.08, 1e-12)
+eq("Bohr eg: ratio", sf(10.08 / 6.48, 2), 1.6, 1e-12)
 
 print("ok")
