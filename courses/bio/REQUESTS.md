@@ -10,4 +10,6 @@ Engine bugs, new block types, design changes, or anything that needs another cou
 - [x] 2026-10-28 · Let table headings (`th`) wrap on narrow screens (they are `white-space: nowrap`) · biology data tables need headings with units such as "rate of release of fatty acids / µmol min⁻¹"; at 375 px a two-column table with such a heading scrolls sideways, so COURSE.md now caps headings at about 28 characters
   - Organizer 2026-10-28: done. At 700 px and below `.prose th` wraps (engine/style.css); desktop is unchanged. On
     bio.overview at 375 px, sideways-scrolling tables went from 3 to 2. The 28-character cap can be relaxed at the next REVIEW.
-- [ ] 2026-10-28 · `:::plot` graphs render their axis labels, tick numbers and `--pt` labels at about 7 px on a 375 px phone (viewBox 560 scaled to 343 px), e.g. bio.carbs, bio.lipids, bio.proteins, bio.f.basics · hand SVGs are now 11–13 px there; could plots use a larger font (or a narrower viewBox) below 700 px?
+- [x] 2026-10-28 · `:::plot` graphs render their axis labels, tick numbers and `--pt` labels at about 7 px on a 375 px phone (viewBox 560 scaled to 343 px), e.g. bio.carbs, bio.lipids, bio.proteins, bio.f.basics · hand SVGs are now 11–13 px there; could plots use a larger font (or a narrower viewBox) below 700 px?
+   - Organizer 2026-10-28: done. Plots now carry `class="fig plot"`; at 700 px and below their labels are 17 and tick
+     numbers 15 user units (engine/style.css), about 10.4 and 9.2 px on a 375 px phone (was 8 and 7). Desktop unchanged.

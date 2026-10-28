@@ -5,7 +5,7 @@
 //   :::
 //
 // Functions use Python syntax: x**2, sin(x), exp(x), log(x) (natural log), sqrt(x), pi, e, abs(x).
-// Output: <figure class="fig"><svg>…</svg><figcaption>…</figcaption></figure> using the page's theme classes.
+// Output: <figure class="fig plot"><svg>…</svg><figcaption>…</figcaption></figure> using the page's theme classes.
 'use strict';
 
 const FNS = {
@@ -232,7 +232,7 @@ function plot(line, caption) {
     }
     marked.push((lab ? lab + ' ' : '') + `at (${fmt(x)}, ${fmt(y)})`);
   }
-  out[0] = `<figure class="fig"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(a.alt || describe(a, fns.length, marked))}">`;
+  out[0] = `<figure class="fig plot"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(a.alt || describe(a, fns.length, marked))}">`;
   out.push('</svg>');
   if (a.caption) out.push(`<figcaption>${a.captionHtml || esc(a.caption)}</figcaption>`);
   out.push('</figure>');
