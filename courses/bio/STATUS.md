@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-28 · WRITE P3 · bio.carbs (6.3k words, 4 SVGs, 1 plot), bio.lipids (5.9k, 4 SVGs, 1 plot), bio.proteins (6.0k, 5 SVGs, 1 plot); check and phone pass; no widgets. Notes for reviewer: figures built by data/fig_carbs.py, fig_lipids.py, fig_proteins.py (shared data/figkit_p3.py); data/swap_fig_p3.py only pastes generated SVG <figure> lines into chapters (no maths touched). Invented-data experiments: glycogen v amylopectin hydrolysis, water v oil heating, tendon v rubber band, bear fat mass, protein solubility table; real values used: fatty acid melting points (69, 13, -5 C), latent heat 2.4 kJ/g, haemoglobin Mr 64500, amylopectin branch every 24-30 and glycogen every 8-12 units. Lipids chapter uses a small plain-spelled ester drawing (not triose/pentose rings).
+Last: 2026-10-28 · WRITE P4 · bio.foodtests 6.6k words (2 SVGs, 1 plot, 6 labs, 7 eg), bio.enzymes2 6.5k words (2 SVGs, 4 plots, 1 lab, 9 eg), widget bio-enzyme (temperature/ph/kinetics, bio.enzymes now has it before pH section; kinetics in bio.enzymes2). Notes: unchecked checkbox in the widget renders as a dark square in the headless light shot (engine accent-color styling, check in a real browser); no browser pane used; plots use two --hline in non-competitive plot (verify both draw).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -8,8 +8,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P1: written 2026-10-28
 - P2: written 2026-10-28
 - P3: written 2026-10-28
-- P4: writing 2026-10-28
-- P5: open
+- P4: written 2026-10-28
+- P5: writing 2026-10-28
 - P6: open
 - P7: open
 - P8: open

@@ -484,6 +484,12 @@ Correct Line 2: "This breaks hydrogen bonds and ionic bonds between R groups, so
 **Making it better**: smaller intervals (for example every 2 °C) around the peak locate the optimum more precisely. Check the temperature inside the tubes, not just the bath.
 :::
 
+Try it: drag the temperature slider from 0 to 80 °C and watch the rate rise, peak and fall, and read what is happening to the enzyme at each stage. The tabs switch to pH and to substrate concentration.
+
+:::html
+<div class="widget" data-w="bio-enzyme" data-mode="temperature"></div>
+:::
+
 ## pH and buffer solutions
 
 pH measures the concentration of hydrogen ions: the lower the pH, the higher the concentration of \(\ce{H+}\) ions. Each enzyme works best at its own **optimum pH**, usually the pH of the place where it works.
