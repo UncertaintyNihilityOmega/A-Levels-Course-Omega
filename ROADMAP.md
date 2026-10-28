@@ -3,7 +3,8 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (hourly, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.claude/run.lock`.
-- Current course: **Biology** (`bio`, queue item 2). Next step: LEAD (gold chapter `bio.enzymes`, then `done LEAD`).
+- Current course: **Biology** (`bio`, queue item 2). Step: LEAD (gold chapter `bio.enzymes`, then `done LEAD`),
+  Specialist running (run of 28 Oct 2026). Then Writers P1, P2.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and

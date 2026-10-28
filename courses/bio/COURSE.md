@@ -44,7 +44,20 @@ writes it before any Writer starts.
 - **AS chapters never use A Level terms or methods** (no statistics tests, no respiration stages, no Km in AS
   chapters other than bio.enzymes2, which is AS). If a link forward helps, one sentence pointing to the later chapter.
 - **Practice questions never reuse a worked example's data or organism.** New numbers, new context.
-- Length: as long as the topic needs (gold chapter ~ 550 lines). No padding.
+- Length: as long as the topic needs (the gold chapter is about 790 lines, half of it practice). No padding.
+
+## Format lessons from the gold chapter (each one cost a fix)
+- Worked examples: no `[n marks]` in the `:::eg` title. The page adds up the tokens and shows the total. A Spot the
+  error title may end with the marks available, `[3]`; its header then shows what the student scored.
+- Data tables: the independent variable in the left column and one row per value (Cambridge layout). Table headings
+  never wrap, so keep each table's headings under about 28 characters in total (`| time / s | oxygen / cm³ |`); put
+  the long description in the sentence above. Tables work inside `:::eg` and inside a `:::try` question (blank line
+  before and after).
+- Display maths in a worked example: one step per row (`\begin{aligned} … \\ &= … \end{aligned}`) so it fits phones.
+- `:::plot` formulas are parsed as JavaScript: never a unary minus before `**` (`exp(0-((x-2)/1.3)**2)`, not
+  `exp(-((x-2)/1.3)**2)`). Cut curves that run along the x-axis short with `+0*sqrt(a-x)`.
+- Hand SVGs: copy the `Fig` class in `data/fig_bio.enzymes.py`. It writes the SVG and checks every label box against
+  every edge, leader and other label (4 px clearance) before you paste the output into the chapter.
 
 ## Marks in biology answers (how `check` adds them)
 - Each marking point ends with `[B1]`. Calculations use `[M1]` (method) and `[A1]` (answer). `check` adds the tokens in
