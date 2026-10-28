@@ -49,8 +49,9 @@ There is no CLAUDE.md at the root: course sessions would load it. Start every Or
 
 ## Environment (Windows PC)
 
-- Python is `py` (`python` is the Windows Store alias). `engine/util.js` `runPython` tries py, python3, python and
-  sets PYTHONUTF8 (the console code page cannot print − or ²).
+- Python is `py` (`python` is the Windows Store alias). `engine/util.js` `runPython` tries py, python3, python
+  (macOS: python3, python) and sets PYTHONUTF8 (the console code page cannot print − or ²).
+- The engine and kit also run on macOS (Python and browser paths; see engine/README.md).
 - Edit LaTeX-heavy text with Write/Edit, never shell heredocs or sed (they eat backslashes).
 - The browser pane cannot open `file://` pages: use the "site" launch config (port 5100) or `<c>-preview`
   (5101–5111). When the app window is hidden the pane cannot draw: use `kit/zta.js shot`.

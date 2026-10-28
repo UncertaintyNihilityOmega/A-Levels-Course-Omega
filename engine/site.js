@@ -24,7 +24,7 @@ const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(
  *             files: [{ name, text }], widgets: '<js source>' | '' }]
  * opts:    { order: [source ids], external: Map(id -> {t, s}) of ids that live elsewhere, formulaSheets: {sheetId: [course ids]},
  *            assets: {shell, css, core, app, study}, inlineAll: bool, home: '<article html>' | null,
- *            fontFace: (chars: string) => '@font-face css', write: bool }
+ *            fontFace: (chars: string) => '@font-face css', head: '<head> tags (build.js: pwa.js)', write: bool }
  * returns: { errors, warnings, files: { relPath: string }, chapters, stats }
  */
 function buildSite(sources, opts) {
@@ -295,6 +295,7 @@ function buildSite(sources, opts) {
     const fontFace = opts.fontFace ? opts.fontFace([...st.mathChars].join('')) : '';
     const inlineWidgets = [A.study, ...sources.filter(s => s.widgets && (s.kind === 'core' || opts.inlineAll)).map(s => `/* ${s.id} widgets */\n${s.widgets}`)].join('\n;\n');
     files['index.html'] = A.shell
+      .replace('<!--HEAD-->', () => opts.head || '')
       .replace('/*FONTFACE*/', () => fontFace)
       .replace('/*CSS*/', () => A.css)
       .replace('<!--NAV-->', () => nav)

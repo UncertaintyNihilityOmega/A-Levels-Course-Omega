@@ -43,16 +43,18 @@ function loadCore(dir) {
   return { core, sources };
 }
 
-/** Run Python with UTF-8 output (the Windows console code page cannot print − or ²). Tries py, python3, python. */
+/** Run Python with UTF-8 output (the Windows console code page cannot print − or ²). Windows tries py, python3,
+ *  python; macOS and Linux try python3 first (there `python` may be missing or Python 2) and never py. */
+const PYTHONS = process.platform === 'win32' ? ['py', 'python3', 'python'] : ['python3', 'python'];
 function runPython(args, opts = {}) {
   const env = { ...process.env, PYTHONUTF8: '1', PYTHONIOENCODING: 'utf-8' };
-  for (const exe of ['py', 'python3', 'python']) {
+  for (const exe of PYTHONS) {
     const r = spawnSync(exe, args, { encoding: 'utf8', env, cwd: opts.cwd, timeout: opts.timeout || 60000 });
     if (r.error && r.error.code === 'ENOENT') continue;
     if (r.status === 9009) continue; // Windows Store alias stub
     return { ok: r.status === 0, code: r.status, out: (r.stdout || '') + (r.stderr || ''), exe };
   }
-  return { ok: false, code: -1, out: 'Python not found (tried py, python3, python)', exe: null };
+  return { ok: false, code: -1, out: `Python not found (tried ${PYTHONS.join(', ')})`, exe: null };
 }
 
 /** @font-face for the maths font: subset to the characters used (fontTools), or the whole font as a fallback. */

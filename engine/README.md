@@ -8,7 +8,22 @@
   `plot.js`. `:::key` and `:::formula` boxes feed the formula sheets (`core.json` → `formulaSheets`).
 - Fonts (Literata, Atkinson Hyperlegible Next) are subset woff2 in `fonts/`, embedded by `assets.js`; the maths font
   is subset by fontTools when Python has it, else embedded whole. The site is fully offline.
-- `util.js`: course/core loading, `runPython` (py → python3 → python, UTF-8), `mathFontFace`, `writeSite`.
+- `util.js`: course/core loading, `runPython` (UTF-8; Windows py → python3 → python, macOS/Linux python3 → python),
+  `mathFontFace`, `writeSite`.
+
+## Installable web app (`pwa.js`, full site only; kit previews do not get it)
+- `build.js` adds `manifest.webmanifest`, the icons (192, 512, maskable 512, apple-touch 180, favicon 32 + svg) and
+  `sw.js`, and puts the <head> tags at `<!--HEAD-->` in `shell.html`. Colours come from `style.css` tokens.
+- `icons.js` draws the icons from the brand mark (ring turned −9°, "A*") as shapes: no image files, no tools.
+- URLs are relative (Pages serves the site under `/<repo>/`); the service worker's scope is the site folder.
+- `sw.js` caches index.html (the fonts are embedded in it), every chunk and the icons. Cache name `zta-<hash of every
+  file>`: a new build fills a new cache whole on install (skipping the HTTP cache), then old `zta-` caches are deleted.
+  Network first; the cache when offline or after 4 s.
+- The manifest link and service worker are added only on http(s): `file://` works as before.
+- Safe areas (`viewport-fit=cover`): `env(safe-area-inset-*)` on `.app`, `.main`, `.toast` and the phone sidebar.
+  `theme-color` follows the system and the theme button.
+- After testing on port 5100, unregister the worker if a later session needs a plain server (it serves the cache
+  when the server is down).
 
 ## Ids and links
 - Course chapter ids start with `<course>.`; core ids are free (`home`, `start.*`, `about.*`, `road.*`, `tools.*`).
@@ -44,5 +59,6 @@
 - `check.js --py` runs every `checks/<id>.py` (standard library only).
 - Kit (`kit-src/zta.js`, bundled by `sync.js` with esbuild): `phone` (headless 375 px), `widget <name> --probe`
   (headless light/dark/phone, JSON report in `<pre id="zta-probe">`), `shot <id> [--dark] [--phone]` (PNGs of a
-  chapter's figures and widgets). Headless runs use Edge, falling back to Chrome, with `--lang=en-GB`.
+  chapter's figures and widgets). Headless runs use Edge, then Chrome, then Chromium, with `--lang=en-GB`; `ZTA_BROWSER` overrides. macOS: apps in
+  `/Applications` or `~/Applications`.
 - Widgets must survive drawing at zero size (`kit-src/WIDGETS.md`).

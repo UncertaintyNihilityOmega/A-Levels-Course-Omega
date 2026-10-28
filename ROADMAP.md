@@ -2,7 +2,13 @@
 
 ## Now
 - No run active. Guard off (`.claude/hooks/guard-course.txt` absent). No scheduled task yet, no lock.
-- Next step: queue item 1 (phone and Mac).
+- Queue item 1, part A done: installable web app (manifest, icons, offline service worker) and macOS tooling.
+  Next: part B, the accessibility pass; then part C, the `zta-agent-run` scheduled task and one test run.
+- User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
+  name "Zero to A*"); open it in flight mode (home, a chapter in each course, search); portrait and landscape: the
+  notch and home bar cover no text, menu or toast; dark mode from the system and from the theme button (status bar
+  matches); Mac Safari File → Add to Dock, then the same offline open. Progress in the home-screen app is separate
+  from Safari's.
 - Biology is planned (64 chapters, 24 packages). Its next LEAD session writes the gold chapter `bio.enzymes`, then
   runs `done LEAD`.
 - Per-course numbers: `node engine/status.js`.

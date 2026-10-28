@@ -1,4 +1,5 @@
-// build.js — builds the finished guide: site/index.html (open it by double-click) + site/c/<course>.js chunks.
+// build.js — builds the finished guide: site/index.html (open it by double-click) + site/c/<course>.js chunks,
+//   plus the installable-app files (pwa.js: manifest, icons, sw.js).
 //   node engine/build.js            build; prints errors
 //   node engine/build.js --strict   exit 1 on any error
 //   node engine/build.js --warn     also print warnings
@@ -7,19 +8,23 @@ const path = require('path');
 const fs = require('fs');
 const { buildSite } = require('./site');
 const { loadCore, loadCourse, mathFontFace, writeSite } = require('./util');
+const pwa = require('./pwa');
 
 const ROOT = path.join(__dirname, '..');
 const { core, sources: coreSources } = loadCore(path.join(ROOT, 'core'));
 const courses = fs.readdirSync(path.join(ROOT, 'courses')).filter(d => fs.existsSync(path.join(ROOT, 'courses', d, 'course.json')))
   .map(d => loadCourse(path.join(ROOT, 'courses', d)));
 
+const assets = require('./assets');
 const res = buildSite([...coreSources, ...courses], {
   order: core.order,
   formulaSheets: core.formulaSheets,
   linkSheets: core.linkSheets,
-  assets: require('./assets'),
+  assets,
+  head: pwa.head(assets.css),
   fontFace: (chars) => mathFontFace(path.join(__dirname, 'latinmodern-math.otf'), chars)
 });
+Object.assign(res.files, pwa.pwaFiles(res.files, assets.css));
 writeSite(path.join(ROOT, 'site'), res.files);
 
 const s = res.stats;

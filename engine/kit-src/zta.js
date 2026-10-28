@@ -221,7 +221,7 @@ const PHONE_FRAME = (src) => `<!doctype html><meta charset="utf-8"><body style="
 function phone(ids) {
   const c = course();
   const exe = findBrowser();
-  if (!exe) { console.log('phone: no Edge or Chrome found (set ZTA_BROWSER to a Chromium browser).'); process.exitCode = 1; return; }
+  if (!exe) { console.log('phone: no Edge, Chrome or Chromium found (set ZTA_BROWSER to a Chromium browser).'); process.exitCode = 1; return; }
   const res = site(c, { inlineAll: true, fontFace: (chars) => mathFontFace(path.join(__dirname, 'math.otf'), chars) });
   fs.mkdirSync(PREVIEW, { recursive: true });
   const own = `phone-${process.pid}`;
@@ -255,12 +255,24 @@ function headless(page, width, budget) {
   return JSON.parse(m[1].replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&'));
 }
 
+/** Chromium browsers to run headless, in order: ZTA_BROWSER, then Edge, Chrome, Chromium (Windows, macOS, Linux). */
 function browsers() {
-  const pf = process.env['ProgramFiles'] || 'C:\\Program Files', pf86 = process.env['ProgramFiles(x86)'] || 'C:\\Program Files (x86)', la = process.env.LOCALAPPDATA || '';
-  const list = [process.env.ZTA_BROWSER,
-    path.join(pf86, 'Microsoft/Edge/Application/msedge.exe'), path.join(pf, 'Microsoft/Edge/Application/msedge.exe'),
-    path.join(pf, 'Google/Chrome/Application/chrome.exe'), path.join(pf86, 'Google/Chrome/Application/chrome.exe'), path.join(la, 'Google/Chrome/Application/chrome.exe'),
-    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', '/usr/bin/google-chrome', '/usr/bin/chromium', '/usr/bin/microsoft-edge'];
+  const list = [process.env.ZTA_BROWSER];
+  if (process.platform === 'win32') {
+    const pf = process.env['ProgramFiles'] || 'C:\\Program Files', pf86 = process.env['ProgramFiles(x86)'] || 'C:\\Program Files (x86)', la = process.env.LOCALAPPDATA || '';
+    list.push(path.join(pf86, 'Microsoft/Edge/Application/msedge.exe'), path.join(pf, 'Microsoft/Edge/Application/msedge.exe'),
+      path.join(pf, 'Google/Chrome/Application/chrome.exe'), path.join(pf86, 'Google/Chrome/Application/chrome.exe'), path.join(la, 'Google/Chrome/Application/chrome.exe'),
+      path.join(la, 'Chromium/Application/chrome.exe'));
+  } else if (process.platform === 'darwin') {
+    // apps live in /Applications or, installed for one user, ~/Applications
+    for (const dir of ['/Applications', path.join(require('os').homedir(), 'Applications')]) {
+      list.push(path.join(dir, 'Microsoft Edge.app/Contents/MacOS/Microsoft Edge'), path.join(dir, 'Google Chrome.app/Contents/MacOS/Google Chrome'),
+        path.join(dir, 'Chromium.app/Contents/MacOS/Chromium'));
+    }
+  } else {
+    list.push('/usr/bin/microsoft-edge', '/usr/bin/microsoft-edge-stable', '/usr/bin/google-chrome', '/usr/bin/google-chrome-stable',
+      '/usr/bin/chromium', '/usr/bin/chromium-browser', '/snap/bin/chromium');
+  }
   return [...new Set(list.filter(p => p && fs.existsSync(p)))];
 }
 const findBrowser = () => browsers()[0];
@@ -279,11 +291,11 @@ function dumpDom(url, width, budget, timeout) {
     last = r;
     if (/<html/i.test(r.stdout || '')) { goodBrowser = exe; return r; }
   }
-  return last || { stdout: '', error: new Error('no Edge or Chrome found (set ZTA_BROWSER)') };
+  return last || { stdout: '', error: new Error('no Edge, Chrome or Chromium found (set ZTA_BROWSER)') };
 }
 function runProbe(name, file) {
   const exe = findBrowser();
-  if (!exe) { console.log('probe: no Edge or Chrome found (set ZTA_BROWSER to a Chromium browser). Open the page in the browser pane instead.'); return; }
+  if (!exe) { console.log('probe: no Edge, Chrome or Chromium found (set ZTA_BROWSER to a Chromium browser). Open the page in the browser pane instead.'); return; }
   const { pathToFileURL } = require('url');
   const page = pathToFileURL(path.join(PREVIEW, file)).href;
   const dec = (s) => s.replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
@@ -339,7 +351,7 @@ function shot(id, dark, phoneW) {
   const c = course();
   if (!id) { console.log('usage: node kit/zta.js shot <chapter-id> [--dark] [--phone]'); process.exitCode = 2; return; }
   id = path.basename(id).replace(/\.md$/, '');
-  if (!findBrowser()) { console.log('shot: no Edge or Chrome found (set ZTA_BROWSER to a Chromium browser).'); process.exitCode = 1; return; }
+  if (!findBrowser()) { console.log('shot: no Edge, Chrome or Chromium found (set ZTA_BROWSER to a Chromium browser).'); process.exitCode = 1; return; }
   const res = site(c, { inlineAll: true, fontFace: (chars) => mathFontFace(path.join(__dirname, 'math.otf'), chars) });
   fs.mkdirSync(path.join(PREVIEW, 'shots'), { recursive: true });
   const own = `shot-${process.pid}`, W = phoneW ? PHONE_W : 800;

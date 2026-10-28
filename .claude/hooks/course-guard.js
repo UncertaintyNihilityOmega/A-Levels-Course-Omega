@@ -42,6 +42,7 @@ if (['Read', 'Write', 'Edit', 'NotebookEdit'].includes(t)) {
   if (new RegExp(`courses/(${others.join('|')})(/|\\b)`).test(lc)) deny('the command names another course');
   if (/(^|[\s"'/])(engine|core|archive|site|node_modules)\//.test(lc) && !lc.includes(`courses/${course}/`)) deny('the command names a project folder outside the course');
   const rootN = norm(ROOT);
-  for (const m of lc.matchAll(/[a-z]:\/[^"'\s;&|]*/g)) if (m[0].startsWith(rootN) && !m[0].startsWith(COURSE)) deny(`the command names ${m[0]}`);
+  // absolute paths: c:/… on Windows, /Users/… on macOS
+  for (const m of lc.matchAll(/(?:[a-z]:)?\/[^"'\s;&|]*/g)) if (m[0].startsWith(rootN) && !m[0].startsWith(COURSE)) deny(`the command names ${m[0]}`);
 }
 process.exit(0);

@@ -730,6 +730,11 @@ a.subj:hover .subj-t { color: var(--sc); }
 .w-stepper { align-items: center; flex-wrap: nowrap; gap: 10px; }
 .w-step { flex: 1 1 auto; font-size: .88rem; font-weight: 700; color: var(--ink-2); text-align: center; }
 
+/* ---------- safe areas: a notch, rounded corners or home bar (viewport-fit=cover); zero on other screens ---------- */
+.app { padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); }
+.main { padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)); }
+.toast { bottom: calc(24px + env(safe-area-inset-bottom, 0px)); }
+
 /* ---------- responsive ---------- */
 @media (max-width: 1199px) {
   .layout { grid-template-columns: var(--side-w) minmax(0, 1fr); }
@@ -743,7 +748,8 @@ a.subj:hover .subj-t { color: var(--sc); }
   .sidebar {
     position: fixed; z-index: 60; left: 0; top: 0; bottom: 0; height: auto; width: min(88vw, 340px);
     transform: translateX(-102%); transition: transform .25s ease; box-shadow: var(--shadow); border-right: 0;
-    padding-bottom: 40px;
+    padding-top: calc(20px + env(safe-area-inset-top, 0px)); padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px));
+    padding-left: max(14px, env(safe-area-inset-left, 0px));
   }
   .app.nav-open .sidebar { transform: none; }
   .scrim { display: block; position: fixed; inset: 0; background: rgba(10, 16, 24, .4); z-index: 55; }

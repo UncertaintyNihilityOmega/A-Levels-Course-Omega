@@ -1,11 +1,12 @@
-// serve.js — tiny static file server for viewing a built site in the Claude browser pane.
+// serve.js — tiny static file server for viewing a built site in the Claude browser pane. It serves site/ at the
+// root, so sw.js (site/sw.js) controls the whole origin, as it controls /<repo>/ on GitHub Pages.
 //   node engine/serve.js [dir=site] [port=5100]
 'use strict';
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.otf': 'font/otf' };
+const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json', '.webmanifest': 'application/manifest+json', '.ico': 'image/x-icon', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.otf': 'font/otf' };
 
 function serve(dir, port) {
   const root = path.resolve(dir);
