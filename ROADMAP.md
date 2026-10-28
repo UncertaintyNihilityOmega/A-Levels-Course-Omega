@@ -3,9 +3,8 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (hourly, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
-- Current course: **Biology** (`bio`, queue item 2). LEAD, P1–P4 written. Running (resumed 21:10 after a usage
-  limit): REVIEW P1–P3, Writers P5, P6. Next: FIX + WRITE P7; REVIEW P4–P6. P4 reviewer: unticked widget checkbox
-  looked dark in a headless light shot.
+- Current course: **Biology** (`bio`, queue item 2). P1–P5 written, P1–P3 reviewed (0 open items). Running: Writers
+  P6, P7. Next: REVIEW P4–P6 when P6 is done. P4 reviewer: unticked widget checkbox looked dark in a headless light shot.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
