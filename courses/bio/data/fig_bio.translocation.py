@@ -29,7 +29,7 @@ f.line([(232, 112), (232, 200)], "c1 sw2", arrow="ah")                    # sucr
 f.text(278, 44, "H⁺")
 f.text(160, 52, "H⁺")
 f.text(203, 38, "sucrose")
-f.text(232, 98, "ATP", anchor="end")
+f.text(265, 100, "ATP", anchor="end")
 f.text(232, 218, "sucrose")
 LX, RX = 138, 312
 f.text(LX, 30, "cell wall space:", anchor="end"); f.text(LX, 44, "high in H⁺", anchor="end"); f.leader((LX + 4, 36), (150, 36))

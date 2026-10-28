@@ -429,8 +429,8 @@ Q: A student concludes that a juice contains glucose because it gave an orange p
 A: Benedict's solution shows only that a reducing sugar is present. Fructose, maltose or lactose would give the same result.
 Q: Blackcurrant juice is a very dark purple. Suggest why the Benedict's test is hard to read, and one way to deal with this.
 A: The dark colour hides the blue-to-red change. Filter off the precipitate and look at it on the filter paper, or dilute the juice, or use glucose test strips.
-Q: Starting from a 1.0% solution, how many 1 : 1 serial dilutions are needed to reach 0.125%? Show the working.
-A: \(1.0 \to 0.50 \to 0.25 \to 0.125\): three dilutions (\(1.0 \times (1/2)^3 = 0.125\)).
+Q: Starting from a 4.0% solution, how many 1 : 1 serial dilutions are needed to reach 0.25%? Show the working.
+A: \(4.0 \to 2.0 \to 1.0 \to 0.50 \to 0.25\): four dilutions (\(4.0 \times (1/2)^4 = 0.25\)).
 :::
 
 :::try Exam practice ★ to ★★★
@@ -583,12 +583,12 @@ So there are fewer peptide bonds to form the coloured complex with copper(II) io
 - Using a water bath to keep the temperature constant
 - Making the standards by serial dilution
 > Only the concentration of sugar should differ between the tubes. Different volumes of reagent would change the time to the colour change for reasons unrelated to the sugar.
-? A sample gives no colour change with Benedict's solution and no colour change with iodine solution, but a cloudy white emulsion in the emulsion test. What does it contain?
-+ lipid only
-- starch and lipid
-- protein and lipid
-- reducing sugar and lipid
-> Only the emulsion test is positive, so only lipid is shown to be present.
+? A sample gives no colour change with Benedict's solution and no colour change with iodine solution, but a cloudy white emulsion in the emulsion test. Which conclusion is correct?
++ lipid is present, but no reducing sugar or starch
+- starch and lipid are present
+- protein and lipid are present
+- reducing sugar and lipid are present
+> Only the emulsion test is positive, so lipid is present and reducing sugar and starch are absent. No biuret test was done, so nothing can be said about protein.
 ? What does a blue-to-purple colour change with biuret reagent show?
 + peptide bonds, so a protein is present
 - a reducing sugar is present

@@ -133,7 +133,7 @@ How a competitive inhibitor works:
 - Inhibitor and substrate compete. If the substrate concentration is raised, a substrate molecule is much more likely to reach an empty active site than an inhibitor molecule is, so the inhibitor loses and the rate recovers.
 
 :::plot A competitive inhibitor. At low substrate concentrations the rate is much lower with the inhibitor, but at high concentrations it approaches the same Vmax of 80 units. Km rises from 4 to 12 mmol dm⁻³.
---f "80*x/(4+x)" --f "80*x/(12+x)" --x 0 60 --y 0 125 --hline 80 --xlabel "substrate concentration / mmol dm⁻³" --ylabel "initial rate / arbitrary units" --label "no inhibitor" --label "with competitive inhibitor" --pt "4,40,Km = 4@nw" --pt "12,40,Km = 12@se" --legend tr --alt "Both curves level off towards 80 units. The curve with no inhibitor rises more steeply and reaches 40 units at a substrate concentration of 4. The curve with the competitive inhibitor rises more slowly, reaches 40 units at 12, and gets close to the other curve at high substrate concentrations."
+--f "80*x/(4+x)" --f "80*x/(12+x)" --x 0 60 --y 0 125 --hline 80 --xlabel "substrate concentration / mmol dm⁻³" --ylabel "initial rate / arbitrary units" --label "no inhibitor" --label "with competitive inhibitor" --pt "4,40,Km = 4@e" --pt "12,40,Km = 12@se" --legend tr --alt "Both curves level off towards 80 units. The curve with no inhibitor rises more steeply and reaches 40 units at a substrate concentration of 4. The curve with the competitive inhibitor rises more slowly, reaches 40 units at 12, and gets close to the other curve at high substrate concentrations."
 :::
 
 :::key Effect of a competitive inhibitor on the graph

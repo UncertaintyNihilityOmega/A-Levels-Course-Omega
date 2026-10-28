@@ -122,12 +122,14 @@
         slider('Length', 'a', 0.5, 5, 0.1, 'cm'); slider('Width', 'b', 0.5, 5, 0.1, 'cm'); slider('Height', 'c', 0.5, 5, 0.1, 'cm');
       } else { slider('Radius', 'r', 0.5, 2.5, 0.1, 'cm'); slider('Length', 'len', 0.5, 5, 0.1, 'cm'); }
       rd = S.mode === 'agar'
-        ? W.readout([['sa', 'Surface area'], ['v', 'Volume'], ['ratio', 'SA:V'], ['tc', 'Time for the colour to reach the centre'], ['unc', 'Volume still uncoloured']])
+        ? W.readout([['sa', 'Surface area'], ['v', 'Volume'], ['ratio', 'SA:V'], ['tc', 'Time for the acid to reach the centre'], ['unc', 'Volume still pink (no acid yet)']])
         : W.readout([['sa', 'Surface area'], ['v', 'Volume'], ['ratio', 'SA:V as a ratio'], ['per', 'SA:V in cm⁻¹']]);
       out.appendChild(rd.el);
       note.textContent = S.mode === 'agar'
-        ? 'Model: in this simulation the indicator front moves in from every face at a steady 0.1 cm per minute. Real diffusion slows down as the distance grows, so real times are longer. The bigger block has more volume to reach, so more of it is still uncoloured.'
-        : 'Double the side: the volume rises 8 times but the surface only 4 times, so SA:V halves.';
+        ? 'Model: pink phenolphthalein agar turns colourless where the acid has diffused in. In this simulation the acid front moves in from every face at a steady 0.1 cm per minute. Real diffusion slows down as the distance grows, so real times are longer. The bigger block has more volume to reach, so more of it is still pink.'
+        : S.shape === 'cube' ? 'Double the side: the volume rises 8 times but the surface only 4 times, so SA:V halves.'
+        : S.shape === 'cuboid' ? 'Make one side small: a flat, thin cuboid keeps every part close to the surface, so its SA:V is high even when its volume is large.'
+        : 'Make the radius small: a thin cylinder (like a root hair or a capillary) has a high SA:V. For a cylinder, SA:V = 2 ÷ radius + 2 ÷ length.';
       update();
     }
 
@@ -139,7 +141,7 @@
       const g = geom(S.shape, S.p);
       let t = NAMES[S.shape] + ': surface area ' + sf(g.sa) + ' square centimetres, volume ' + sf(g.v) + ' cubic centimetres, SA to V ratio ' +
         sf(g.sa / g.v) + ' to 1. ';
-      if (S.mode === 'agar') t += 'After ' + S.t + ' minutes ' + sf(uncoloured(S.shape, S.p, S.t) * 100) + ' percent of the volume is still uncoloured; the colour reaches the centre after ' +
+      if (S.mode === 'agar') t += 'After ' + S.t + ' minutes ' + sf(uncoloured(S.shape, S.p, S.t) * 100) + ' percent of the volume is still pink; the acid reaches the centre after ' +
         sf(centreTime(S.shape, S.p)) + ' minutes.';
       else t += 'The bar chart shows SA to V for cubes of side 1 to 5 cm: 6, 3, 2, 1.5 and 1.2.';
       return t;
@@ -281,13 +283,13 @@
         ctx.strokeRect(x0 + d * pcm, y0 + d * pcm, iw * pcm, ih * pcm); ctx.restore();
       }
       ctx.fillStyle = C.ink2; ctx.textAlign = 'center';
-      ctx.fillText(iw > 0 && ih > 0 ? 'shaded centre: still coloured' : 'all changed: colour has reached the centre', w / 2, y0 + H0 * pcm + 16);
+      ctx.fillText(iw > 0 && ih > 0 ? 'shaded centre: still pink' : 'all colourless: the acid has reached the centre', w / 2, y0 + H0 * pcm + 16);
       // curve of % uncoloured against time for this block
       ctx.save();
       ctx.translate(0, secH + 4);
       const ph = hh - secH - 4;
       if (ph > 70) {
-        const A = W.axes(ctx, w, ph, { x0: 0, x1: 25, y0: 0, y1: 100 }, C, { pad: { l: 40, r: 12, t: 16, b: 32 }, xlabel: 'time / min', ylabel: '% uncoloured', nx: 5, ny: 4 });
+        const A = W.axes(ctx, w, ph, { x0: 0, x1: 25, y0: 0, y1: 100 }, C, { pad: { l: 40, r: 12, t: 16, b: 32 }, xlabel: 'time / min', ylabel: '% still pink', nx: 5, ny: 4 });
         if (A && A.X && A.Y) {
           ctx.strokeStyle = C.sc; ctx.lineWidth = 2; ctx.beginPath();
           for (let k = 0; k <= 50; k++) {

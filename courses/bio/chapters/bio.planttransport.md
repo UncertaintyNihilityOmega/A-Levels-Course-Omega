@@ -315,8 +315,8 @@ The rate depends on how steep the water potential gradient is between the air sp
 | **Humidity** | higher humidity, slower | the air outside has a higher water potential, so the water potential gradient is shallower and less vapour diffuses out |
 | **Wind** | more wind, faster | moving air carries away the water vapour near the stomata, which keeps the gradient steep |
 
-:::plot Mass of water lost per hour by a leafy shoot over 24 hours (clock time): the rate peaks about 13:00, in bright light and at the warmest time of day.
---f "20*exp(0-((x-13)/4.5)**2)+1.5+0*sqrt(24-x)" --label "water lost" --x 0 28 --y 0 30 --xstep 4 --xlabel "time / h" --ylabel "water lost / g h⁻¹" --pt "13,21.5,peak 21.5 g h⁻¹ at 13:00@n" --legend tr --alt "The rate of water loss is low, under 4 grams per hour, from midnight until about 06:00, rises to a peak of 21.5 grams per hour at 13:00, then falls to a low value again by 20:00."
+:::plot Mass of water lost per hour by a potted plant over 24 hours (clock time): the rate peaks about 13:00, in bright light and at the warmest time of day. Illustrative data, invented to show the typical shape.
+--f "20*exp(0-((x-13)/4.5)**2)+1.5" --label "water lost" --x 0 24 --y 0 30 --xstep 4 --xlabel "time / h" --ylabel "water lost / g h⁻¹" --pt "13,21.5,peak 21.5 g h⁻¹ at 13:00@n" --legend tr --alt "The rate of water loss is low, under 4 grams per hour, from midnight until about 06:00, rises to a peak of 21.5 grams per hour at 13:00, then falls to a low value again by 20:00."
 :::
 
 :::lab Using a potometer to measure the rate of water uptake
@@ -483,7 +483,7 @@ A: The xylem and phloem are in the vascular bundle of the midrib and in the vein
 The xylem is on the upper side of the bundle [B1] and the phloem is on the lower side. [B1]
 Q: [4 marks] ★ Xylem vessel elements are described as being adapted for the transport of water. Explain how two features of the vessel elements help them to carry water up a tall plant.
 A: There are no end walls between elements, so the vessel is a continuous tube without obstruction. [B1]
-Water in a continuous column cannot be broken, so the pull is passed through all of the water. [B1]
+The water forms one continuous column, held together by cohesion, so the pull is passed through all of the water. [B1]
 Lignin in the walls makes them strong, so they do not collapse inwards under the tension. [B1]
 The cells are dead and have no cytoplasm, so nothing obstructs the flow of water. [B1]
 (Also credit: narrow lumen, which helps cohesion and adhesion; pits that allow water to leave sideways.)
@@ -512,7 +512,7 @@ In the apoplast pathway it moves through the cell walls and spaces between cells
 In the symplast pathway it moves through the cytoplasm, through the plasmodesmata. [B1]
 The Casparian strip of suberin in the endodermis blocks the apoplast pathway. [B1]
 Water must enter the cytoplasm of the endodermis cells, crossing a membrane, so the cells control which ions pass to the xylem. [B1]
-Q: [6 marks] ★★★ The graph earlier in this chapter shows how the loss of water from a shoot changes during a day. (a) Describe the change in the rate of water loss between 06:00 and 13:00. (b) Explain why the rate is lowest at night and highest in the afternoon. (c) Suggest why a plant could wilt at 13:00 even though the soil is moist.
+Q: [6 marks] ★★★ The graph earlier in this chapter shows how the loss of water from a potted plant changes during a day. (a) Describe the change in the rate of water loss between 06:00 and 13:00. (b) Explain why the rate is lowest at night and highest in the afternoon. (c) Suggest why a plant could wilt at 13:00 even though the soil is moist.
 H: For (a) quote the values from the graph, with units.
 A: (a) The rate rises from about 3.3 g h⁻¹ at 06:00 to a peak of 21.5 g h⁻¹ at 13:00. [B1]
 (b) At night it is dark, so the stomata are closed or almost closed, and the air is cool and humid, so little vapour diffuses out. [B1]
@@ -524,9 +524,9 @@ Q: [6 marks] ★★★ (a) Cacti have thick, fleshy stems and leaves reduced to 
 A: (a) Fleshy stems store water for dry periods. [B1]
 Spines have a small surface area, so less water evaporates from the leaves and the stem carries out photosynthesis. [B1]
 The waxy cuticle is waterproof, so little water evaporates through the epidermis. [B1]
-(b) Fewer stomata means fewer pores for water vapour to diffuse out through. [B1]
-Water loss by transpiration is reduced. [B1]
-The cactus would then lose water as quickly as an ordinary plant, and would not survive. [B1]
+(b) More stomata would mean more pores for water vapour to diffuse out through. [B1]
+So transpiration, and the loss of water, would be faster, which a desert plant cannot afford. [B1]
+A well-adapted cactus has fewer stomata (often sunken, or open only at night), so it loses less water. [B1]
 Q: [6 marks] (#bio.movement) ★★★ A root hair cell has a water potential of −500 kPa. The soil water around it is −80 kPa. (a) Explain how water enters the cell. (b) The soil dries out and the water potential of the soil water falls to −700 kPa. Predict what happens to the water movement and explain the effect on the plant. (c) Mineral ions are taken up by the cell even when their concentration in the soil is lower than in the cell. Name this process and explain why oxygen is needed.
 H: Compare the two water potentials, then reverse the argument for the dry soil.
 A: (a) Water moves by osmosis from the soil water to the cell, because the soil water has a higher water potential (−80 kPa) than the cell (−500 kPa). [B1]
@@ -552,7 +552,7 @@ H: In salty mud, which has the higher water potential, the soil or the root cell
 A: (a) The salty soil water has a lower water potential than the cells of the root, so water would leave the cells by osmosis. [B1]
 (b) The Casparian strip blocks the apoplast pathway, so ions must cross the cell surface membranes of the endodermis. [B1]
 Carrier proteins in these membranes can be selective, so the cells can prevent most sodium and chloride ions from reaching the xylem. [B1]
-(c) The thick waxy cuticle reduces water loss by transpiration, so the plant takes up less salty water. [B1]
+(c) The thick waxy cuticle reduces water loss by transpiration, so the plant needs less water from the salty mud, where uptake is difficult. [B1]
 Fleshy leaves can store water. [B1]
 :::
 

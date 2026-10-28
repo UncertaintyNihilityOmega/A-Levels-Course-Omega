@@ -22,7 +22,8 @@ for i, (title, w, x0, plasmo) in enumerate(panels):
         f.rect(x0 + 30, wy + 22, w - 60, wh - 44, "fp ln", 6)           # vacuole
     else:
         f.rect(x0 + 3, wy + 3, w - 6, wh - 6, "f2 s-acc2 sw2", 8)       # cytoplasm and membrane against the wall
-        f.rect(x0 + 16, wy + 14, w - 32, wh - 28, "fp ln", 6)           # vacuole
+        if i == 0: f.rect(x0 + 16, wy + 14, w - 32, wh - 28, "fp ln", 6)   # vacuole, large (turgid)
+        else: f.rect(x0 + 26, wy + 20, w - 52, wh - 40, "fp ln", 6)        # vacuole, smaller (flaccid; review 2026-10-28)
 panels_x = 172
 # labels, panel 1
 f.text(panels_x + 10, 52, "cell wall", "tl")
@@ -139,7 +140,7 @@ v.leader((158, 31), (116, 50))
 v.text(162, 70, "Visking tubing", "tl")
 v.leader((158, 67), (111, 70))
 v.text(162, 124, "water in beaker", "tl")
-v.leader((158, 121), (113, 121))
+v.leader((158, 121), (130, 121))
 v.text(162, 150, "starch + glucose", "tl")
 v.text(162, 166, "solution inside", "tl")
 v.leader((158, 147), (104, 147))
@@ -147,7 +148,7 @@ v.text(162, 192, "beaker", "tl")
 v.leader((158, 189), (151, 189))
 figs.append(v.svg((330, 214),
     "Visking tubing experiment: a beaker of water holds a bag of Visking tubing, tied at both ends with thread, filled with "
-    "a starch and glucose solution. The bag is below the surface of the water.",
+    "a starch and glucose solution. The bag hangs in the water with its tied top above the surface.",
     "Visking tubing is a partially permeable bag. After some time, samples of the water outside and of the solution "
     "inside are tested for glucose and starch."))
 probs += v.check()

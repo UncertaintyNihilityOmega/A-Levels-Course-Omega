@@ -9,10 +9,10 @@
 A cell is a bag of chemistry in a watery world, and it only works if the right things get in and the wrong things stay out. The membrane that does this job is one of the thinnest structures in biology, yet it controls feeding, waste removal, signals from hormones and the way your immune system recognises your own cells. Membrane questions in the exam ask you to describe the model, explain the role of each component and read data from experiments, so this chapter gives you the vocabulary for all three.
 :::
 
-**Before you start**, you should know the structure of a phospholipid from [Water and lipids](#bio.lipids), the way a protein folds from [Proteins](#bio.proteins) and the organelles of [Eukaryotic cells and organelles](#bio.cells).
+**Before you start**, you should know the structure of a phospholipid from [Lipids and water](#bio.lipids), the way a protein folds from [Proteins](#bio.proteins) and the organelles of [Eukaryotic cells and organelles](#bio.cells).
 
 :::try Warm-up
-Q: Describe the two ends of a phospholipid molecule and say which end is attracted to water. (from [Water and lipids](#bio.lipids))
+Q: Describe the two ends of a phospholipid molecule and say which end is attracted to water. (from [Lipids and water](#bio.lipids))
 A: The head contains a phosphate group and is polar, so it is hydrophilic (attracted to water). The two fatty acid tails are non-polar, so they are hydrophobic (repelled by water).
 Q: Name two types of bond that hold the tertiary structure of a protein and say which part of the amino acids forms them. (from [Proteins](#bio.proteins))
 A: Any two of hydrogen bonds, ionic bonds, disulfide bonds and hydrophobic interactions. They form between the R groups of amino acids.
@@ -100,7 +100,7 @@ Each component has more than one role. Learn them as a list, because exam answer
 
 - Form the **bilayer**, the basic barrier of the membrane (**permeability**): lipid-soluble molecules cross, ions and polar molecules do not.
 - Because they are not bonded to each other, they can move sideways, making the membrane **fluid**. A fluid membrane can change shape, bend, and fuse with other membranes (for example in making vesicles in [Movement into and out of cells](#bio.movement)).
-- Phospholipids whose tails contain a **double bond** (unsaturated fatty acids, see [Water and lipids](#bio.lipids)) have a kink in the tail. The kink stops neighbouring tails packing closely, so the membrane stays fluid at lower temperatures.
+- Phospholipids whose tails contain a **double bond** (unsaturated fatty acids, see [Lipids and water](#bio.lipids)) have a kink in the tail. The kink stops neighbouring tails packing closely, so the membrane stays fluid at lower temperatures.
 
 ### Cholesterol
 
@@ -289,7 +289,7 @@ The same method tests other factors that damage membranes: use a range of **etha
 :::
 
 :::plot Absorbance of the water around beetroot slices after 10 minutes at different temperatures. The membranes leak only a little up to about 40 °C and then a great deal above 50 °C.
---f "0.04+0.86/(1+exp((58-x)/5))" --x 10 90 --y 0 1.2 --xlabel "temperature / °C" --ylabel "absorbance" --label "absorbance of the solution" --pt "40,0.063,low leakage@se" --pt "60,0.555,steep rise@nw" --pt "80,0.89,levels off@s" --legend tr --alt "The absorbance is about 0.04 at 20 degrees Celsius and stays below 0.1 up to 40 degrees. It then rises steeply between 50 and 70 degrees, reaching about 0.83 at 70, and levels off near 0.88 at 80 degrees."
+--f "0.04+0.86/(1+exp((58-x)/5))" --x 0 90 --y 0 1.2 --xlabel "temperature / °C" --ylabel "absorbance" --label "absorbance of the solution" --pt "40,0.063,low leakage@nw" --pt "60,0.555,steep rise@nw" --pt "80,0.89,levels off@s" --legend tr --alt "The absorbance is about 0.04 at 20 degrees Celsius and stays below 0.1 up to 40 degrees. It then rises steeply between 50 and 70 degrees, reaching about 0.83 at 70, and levels off near 0.88 at 80 degrees."
 :::
 
 Why does heating damage the membranes?
