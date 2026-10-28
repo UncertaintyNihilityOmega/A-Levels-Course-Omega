@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-28 · WRITE P7 · bio.planttransport (8.2k words, 8 eg, 50 marks) and bio.translocation (5.3k words, 7 eg, 49 marks); 12 hand SVGs (generators data/fig_bio.planttransport.py, fig_bio.translocation.py, data/replace_figs_p7.py), no widgets (package has none). Reviewer: look at the leaf, marram and loading figures (schematic); plot of daily water loss uses invented data; data/review_reuse.py clean; guard cell mechanism left to bio.hormones.
+Last: 2026-10-28 · WRITE P6 · bio.mitosis 7.8k words (6 SVGs, 1 plot, 9 eg; widget bio-mitosis: 7 steps, animal/plant, n = 2/4/6, Play; counts follow the chapter's counting rule), bio.dna 6.7k words (7 SVGs: nucleotide, bases, ATP, phosphodiester bond, DNA ladder, vertical replication fork, Meselson-Stahl tubes; 9 eg), bio.synthesis 6.2k words (4 SVGs, generated code table, 8 eg; widget bio-codon used twice: default and a substitution preset); data/codon_table.py generates the code (asserted 64/61/3) for the chapter table, widgets/bio-codon.js (via data/build_bio-codon.py) and checks. Notes for the reviewer: bio-mitosis has an extra attribute data-step (start step) used only for testing; Play steps every 1.8 s and under reduced motion each click is one step (click through in a real browser); both widgets probed clean light/dark/phone with bad attributes (probe pages show long attributes, so a 72-base data-dna overflows the probe page only); figures are all fig small and were looked at on phone; practice reuse checked with data/review_reuse.py.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -10,9 +10,9 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P3: reviewed 2026-10-28
 - P4: written 2026-10-28
 - P5: written 2026-10-28
-- P6: writing 2026-10-28
+- P6: written 2026-10-28
 - P7: written 2026-10-28
-- P8: open
+- P8: writing 2026-10-28
 - P9: open
 - P10: open
 - P11: open
