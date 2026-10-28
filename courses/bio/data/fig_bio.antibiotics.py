@@ -47,7 +47,7 @@ lab(214, 102, "enzyme joining the", (181, 74))
 f.text(214, 116, "chains with a link")
 # labels, row 1
 oy = ROW
-lab(222, oy + 44, "penicillin", (169, oy + 58))
+lab(222, oy + 30, "penicillin", (156, oy + 54))
 f.text(20, oy + 104, "no cross-links form here", "tl")
 f.leader((70, oy + 91), (94, oy + 70))
 # row 2: bacterium with water entering
@@ -84,7 +84,7 @@ for r in range(3):
     f.text(10, r * ROW + 16, titles[r], "tl tb")
 NOR, RES, DEAD = "f2 s-acc2 sw2", "fa s-acc sw2", "fp ln dash"
 grid = [(30 + k * 34, 46 + j * 30) for j in range(2) for k in range(5)]
-mut = 7   # index of the resistant cell in stage 1
+mut = 9   # index of the resistant cell in stage 1
 for i, (x, y) in enumerate(grid):
     f.circle(x, y, 10, RES if i == mut else NOR)
 for i, (x, y) in enumerate(grid):
@@ -102,13 +102,13 @@ lab2(214, ROW + 40, "killed by the", (grid[4][0] + 10, grid[4][1] + ROW))
 f.text(214, ROW + 54, "antibiotic")
 lab2(214, ROW + 92, "survives and divides", (grid[mut][0] + 10, grid[mut][1] + ROW + 1))
 lab2(214, 2 * ROW + 60, "every offspring has", (grid[9][0] + 10, grid[9][1] + 2 * ROW - 6))
-f.text(214, 2 * ROW + 74, "the resistance allele")
+f.text(214, 2 * ROW + 74, "the resistance gene")
 done(f, (370, 3 * ROW - 8),
      "How antibiotic resistance spreads in three stages. 1: among many bacteria that are not resistant, one cell has a mutation that makes it "
      "resistant. 2: the antibiotic kills the non-resistant cells and the resistant cell survives. 3: the survivor divides, and all of its "
      "offspring are resistant.",
      "Resistance starts as a random mutation before the antibiotic is used. The antibiotic is the selection pressure: it kills the "
-     "other bacteria, so the resistant ones survive and reproduce and the resistance allele becomes common.")
+     "other bacteria, so the resistant ones survive and reproduce and the resistance gene becomes common.")
 
 # ---------- 3. a disc diffusion plate ----------
 f = Fig("disc")
@@ -119,13 +119,14 @@ zones = {"A": (225, 22.0), "B": (315, 12.0), "C": (45, 6.0), "D": (135, 18.0)}  
 pos = {}
 for k, (ang, d) in zones.items():
     ux, uy = math.cos(math.radians(ang)), math.sin(math.radians(ang))
-    dx, dy = cx + 58 * ux, cy + 58 * uy
+    dx, dy = cx + 50 * ux, cy + 50 * uy
     pos[k] = (dx, dy, d * S / 2)
     if d > 6:
         f.circle(dx, dy, d * S / 2, "fp ln")
     f.circle(dx, dy, 3 * S, ENZ)
     rz = max(d * S / 2, 3 * S)
-    f.text(dx + ux * (rz + 14), dy + uy * (rz + 14) + 4, k, "tl tb", "middle")
+    lx, ly = (0, 1) if k == "B" else (ux, uy)     # letter B sits below its zone so the leader to the zone edge stays clear
+    f.text(dx + lx * (rz + 14), dy + ly * (rz + 14) + 4, k, "tl tb", "middle")
 RXX = 252
 def lab3(y, s, target, s2=None):
     f.text(RXX, y, s)
@@ -137,7 +138,7 @@ lab3(30, "paper disc with", (bx + 6, by - 4), "antibiotic")
 lab3(86, "zone of inhibition", (bx + bz, by + 2))
 f.text(RXX, 100, "(no bacteria grow)")
 dx_, dy_, dz_ = pos["C"]
-lab3(166, "bacteria grow up to", (dx_ + 8, dy_ + 2), "the edge of disc C")
+lab3(166, "bacteria reach", (dx_ + 8, dy_ + 2), "disc C")
 lab3(212, "lawn of bacteria", (cx + 82, cy + 58), "on agar")
 done(f, (380, 252),
      "An agar plate seen from above, with a lawn of bacteria and four paper discs, A to D, each holding a different antibiotic. "

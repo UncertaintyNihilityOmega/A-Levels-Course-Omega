@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-28 · WRITE P6 · bio.mitosis 7.8k words (6 SVGs, 1 plot, 9 eg; widget bio-mitosis: 7 steps, animal/plant, n = 2/4/6, Play; counts follow the chapter's counting rule), bio.dna 6.7k words (7 SVGs: nucleotide, bases, ATP, phosphodiester bond, DNA ladder, vertical replication fork, Meselson-Stahl tubes; 9 eg), bio.synthesis 6.2k words (4 SVGs, generated code table, 8 eg; widget bio-codon used twice: default and a substitution preset); data/codon_table.py generates the code (asserted 64/61/3) for the chapter table, widgets/bio-codon.js (via data/build_bio-codon.py) and checks. Notes for the reviewer: bio-mitosis has an extra attribute data-step (start step) used only for testing; Play steps every 1.8 s and under reduced motion each click is one step (click through in a real browser); both widgets probed clean light/dark/phone with bad attributes (probe pages show long attributes, so a 72-base data-dna overflows the probe page only); figures are all fig small and were looked at on phone; practice reuse checked with data/review_reuse.py.
+Last: 2026-10-29 · WRITE P9 · bio.gasexchange 6.2k words, bio.disease 6.1k, bio.antibiotics 8.8k (3 SVGs via data/fig_bio.antibiotics.py placed with data/place_figs_p6.py, 1 plot with invented data, 9 eg, 23 try, 10 quiz); no widgets. Reviewer notes: antibiotics avoids the word allele (A Level) and uses 'gene for resistance', with a link to bio.selection; invented data are stated as such (resistance graph, ward table, country comparison, 1 in 10^7 and 10^8 mutation chances); disc diffusion lab uses 25 C incubation and aseptic technique; bio.prokaryotes already holds a short penicillin worked example, the antibiotics chapter extends it without reusing its question; gasexchange and disease were completed by an earlier Writer and re-checked against packages/P9.md (all outcomes covered).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -13,7 +13,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P6: written 2026-10-28
 - P7: written 2026-10-28
 - P8: writing 2026-10-28
-- P9: writing 2026-10-28
+- P9: written 2026-10-29
 - P10: open
 - P11: open
 - P12: open
