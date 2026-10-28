@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-28 · REVIEW P1, P2, P3 · 0 open items; reviewer fixed 5 (logged [x] in REVIEW.md): practice reusing worked-example data in bio.microscopy (0.15 um, graticule quiz, 0.0065 mm), bio.carbs (cellulose digestion -> germinating seed), bio.lipids (bear energy contradiction -> sleep example; sweat practice -> panting dog); bio-magnify graticule keeps the same cell length when switching objective; cilium cross-section now nine pairs + two. All figures checked light/dark/phone (no overlaps, labels >=11 px except :::plot, filed by Organizer). COURSE.md reuse rule tightened; helper data/review_reuse.py. Writer notes P1-P3 confirmed.
+Last: 2026-10-28 · WRITE P7 · bio.planttransport (8.2k words, 8 eg, 50 marks) and bio.translocation (5.3k words, 7 eg, 49 marks); 12 hand SVGs (generators data/fig_bio.planttransport.py, fig_bio.translocation.py, data/replace_figs_p7.py), no widgets (package has none). Reviewer: look at the leaf, marram and loading figures (schematic); plot of daily water loss uses invented data; data/review_reuse.py clean; guard cell mechanism left to bio.hormones.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -11,7 +11,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P4: written 2026-10-28
 - P5: written 2026-10-28
 - P6: writing 2026-10-28
-- P7: open
+- P7: written 2026-10-28
 - P8: open
 - P9: open
 - P10: open
