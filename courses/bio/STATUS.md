@@ -1,14 +1,14 @@
 # STATUS: Biology
 
-Last: 2026-10-28 · WRITE P2 · bio.microscopy 6.8k words, bio.cells 6.0k, bio.prokaryotes 3.8k; check and phone pass; widget bio-magnify (modes mia, graticule) probed clean light/dark/phone and bad attributes, logic tested with a Node stub. Reviewer notes: animal and plant cell figures are 560 wide (fig) so phone labels are about 9 px; bio.cells and bio.prokaryotes figures come from data/fig_<id>.py via data/stitch.py (templates data/<id>.tpl.md); widget uses simplified calibration model (x10: 10 um/unit, x40: 2.5 um/unit) stated on screen; chapter examples use other numbers. Links to bio.practical2, bio.energy, bio.respiration, bio.membranes etc use titles from course.json.
+Last: 2026-10-28 · WRITE P3 · bio.carbs (6.3k words, 4 SVGs, 1 plot), bio.lipids (5.9k, 4 SVGs, 1 plot), bio.proteins (6.0k, 5 SVGs, 1 plot); check and phone pass; no widgets. Notes for reviewer: figures built by data/fig_carbs.py, fig_lipids.py, fig_proteins.py (shared data/figkit_p3.py); data/swap_fig_p3.py only pastes generated SVG <figure> lines into chapters (no maths touched). Invented-data experiments: glycogen v amylopectin hydrolysis, water v oil heating, tendon v rubber band, bear fat mass, protein solubility table; real values used: fatty acid melting points (69, 13, -5 C), latent heat 2.4 kJ/g, haemoglobin Mr 64500, amylopectin branch every 24-30 and glycogen every 8-12 units. Lipids chapter uses a small plain-spelled ester drawing (not triose/pentose rings).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
 - LEAD: done 2026-10-28
 - P1: written 2026-10-28
 - P2: written 2026-10-28
-- P3: writing 2026-10-28
-- P4: open
+- P3: written 2026-10-28
+- P4: writing 2026-10-28
 - P5: open
 - P6: open
 - P7: open
