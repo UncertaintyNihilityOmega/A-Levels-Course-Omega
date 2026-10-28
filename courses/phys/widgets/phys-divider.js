@@ -30,16 +30,16 @@
     };
     const fmtR = (k) => k >= 1000 ? W.fmt(k / 1000, 3) + ' MΩ' : k >= 1 ? W.fmt(k, 3) + ' kΩ' : W.fmt(k * 1000, 3) + ' Ω';
 
-    function tabs(items, get, set) {
-      const row = W.h('div', { class: 'w-tabs', role: 'group' });
+    function tabs(items, get, set, name) {
+      const row = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': name });
       const btns = items.map(([v, label]) => W.h('button', { class: 'w-tab', type: 'button', onclick: () => { set(v); sync(); update(); } }, label));
-      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-selected', String(items[i][0] === get())));
+      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-pressed', String(items[i][0] === get())));
       btns.forEach((b) => row.append(b));
       sync();
       return row;
     }
-    const modeTabs = tabs([['thermistor', 'Thermistor'], ['ldr', 'LDR']], () => st.mode, (v) => { st.mode = v; showCond(); });
-    const posTabs = tabs([['top', 'Sensor on top'], ['bottom', 'Sensor at bottom']], () => st.pos, (v) => { st.pos = v; });
+    const modeTabs = tabs([['thermistor', 'Thermistor'], ['ldr', 'LDR']], () => st.mode, (v) => { st.mode = v; showCond(); }, 'Sensor type');
+    const posTabs = tabs([['top', 'Sensor on top'], ['bottom', 'Sensor at bottom']], () => st.pos, (v) => { st.pos = v; }, 'Sensor position');
 
     const sVin = W.sliderNum({ label: 'Supply p.d. / V', min: 1, max: 12, step: 0.5, value: st.vin, oninput: (v) => { st.vin = num(v, 6, 1, 12); update(); } });
     const sR = W.sliderNum({ label: 'Fixed resistor / kΩ', min: 0.5, max: 50, step: 0.1, value: st.r, oninput: (v) => { st.r = num(v, 2, 0.5, 50); update(); } });
@@ -56,6 +56,16 @@
 
     const c = W.canvas(body, {
       height: 250,
+      label: 'Graph of Vout against temperature or light intensity',
+      describe() {
+        const th = st.mode === 'thermistor';
+        const y0 = vout(st, rSensor(st));
+        const lo = vout(Object.assign({}, st, th ? { temp: -10 } : { lg: 0 }), rSensor(Object.assign({}, st, th ? { temp: -10 } : { lg: 0 })));
+        const hiS = Object.assign({}, st, th ? { temp: 100 } : { lg: 4 });
+        const hi = vout(hiS, rSensor(hiS));
+        return 'Vout in volts against ' + (th ? 'temperature from −10 to 100 °C' : 'light intensity from 1 to 10 000 lux (log scale)') + ', for supply ' + W.fmt(st.vin, 3) + ' V. The curve ' + (hi > lo ? 'rises' : 'falls') +
+          ' from ' + W.fmt(lo, 3) + ' V to ' + W.fmt(hi, 3) + ' V. The marked point is at ' + (th ? W.fmt(st.temp, 3) + ' °C' : W.fmt(Math.pow(10, st.lg), 3) + ' lux') + ', where Vout is ' + W.fmt(y0, 3) + ' V.';
+      },
       draw(ctx, w, h, col) {
         const th = st.mode === 'thermistor';
         const view = th ? { x0: -10, x1: 100, y0: 0, y1: Math.max(1, st.vin) * 1.08 } : { x0: 0, x1: 4, y0: 0, y1: Math.max(1, st.vin) * 1.08 };

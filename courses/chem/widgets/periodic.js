@@ -175,9 +175,9 @@
 
     // ---------- controls ----------
     const search = W.field({ label: 'Search', value: '', type: 'text', placeholder: 'symbol, name or number', width: '14em', oninput: onSearch });
-    const tabCat = W.h('button', { class: 'w-tab', type: 'button', text: 'Colour by category', onclick: () => setMode('category') });
-    const tabBlk = W.h('button', { class: 'w-tab', type: 'button', text: 'Colour by block', onclick: () => setMode('block') });
-    const tabs = W.h('div', { class: 'w-tabs' }, tabCat, tabBlk);
+    const tabCat = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: 'Colour by category', onclick: () => setMode('category') });
+    const tabBlk = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: 'Colour by block', onclick: () => setMode('block') });
+    const tabs = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Colour the table by' }, tabCat, tabBlk);
     body.appendChild(W.h('div', { class: 'w-row', style: { alignItems: 'flex-end' } }, search.el, tabs));
     const msg = W.h('div', { class: 'w-err', style: { display: 'none' } });
     body.appendChild(msg);
@@ -257,7 +257,6 @@
     const legend = W.h('div', { class: 'w-row', style: { gap: '6px 14px', marginTop: '8px' } });
     body.appendChild(legend);
     const details = W.h('div', { style: { marginTop: '10px' } });
-    details.setAttribute('aria-live', 'polite');
     body.appendChild(details);
     body.appendChild(W.h('div', { class: 'w-note', text: 'Try: search for "Cl" and read its group and period; colour by block to see the s, p, d and f blocks; click Fe, then Sc and Zn, to see which d-block elements are transition elements.' }));
     if (marked.size || bad.length) {
@@ -268,6 +267,8 @@
     const head = W.h('div', { style: { display: 'flex', alignItems: 'baseline', gap: '10px', flexWrap: 'wrap', marginBottom: '4px' } });
     const note = W.h('div', { class: 'w-note', style: { marginTop: '6px' } });
     details.appendChild(head); details.appendChild(read.el); details.appendChild(note);
+    read.el.setAttribute('aria-live', 'off');   // a summary is spoken once with W.say instead of nine rows
+    let ready = false;
 
     // ---------- behaviour ----------
     function specOf(e) {
@@ -298,6 +299,7 @@
         b.style.boxShadow = sel ? '0 0 0 3px var(--sc)' : (mk ? '0 0 0 2px var(--red)' : (hit ? '0 0 0 2px var(--ink)' : 'none'));
         b.style.opacity = hits && !hit && !sel ? '0.3' : '1';
         b.setAttribute('aria-pressed', sel ? 'true' : 'false');
+        b.setAttribute('aria-label', cap(e.name) + ', ' + e.sym + ', atomic number ' + e.z + ', ' + (mode === 'block' ? e.block + ' block' : e.cat) + (mk ? ', highlighted' : ''));
       });
       legend.textContent = '';
       (mode === 'block' ? BLOCKS : CATS).forEach(spec => {
@@ -307,8 +309,8 @@
         const text = mode === 'block' ? spec.id + ' block' : spec.id;
         legend.appendChild(W.h('span', { style: { display: 'inline-flex', alignItems: 'center', gap: '5px', fontSize: '12px', color: 'var(--ink-2)' } }, sw, text));
       });
-      tabCat.setAttribute('aria-selected', mode === 'category' ? 'true' : 'false');
-      tabBlk.setAttribute('aria-selected', mode === 'block' ? 'true' : 'false');
+      tabCat.setAttribute('aria-pressed', mode === 'category' ? 'true' : 'false');
+      tabBlk.setAttribute('aria-pressed', mode === 'block' ? 'true' : 'false');
     }
     function showMsg(t) { msg.textContent = t || ''; msg.style.display = t ? '' : 'none'; }
     function show(e) {
@@ -331,6 +333,7 @@
       read.set('config', e.config ? cfg(e.config) : 'given for hydrogen to krypton only');
       read.set('short', e.short ? cfg(e.short) : '–');
       note.textContent = NOTES[e.sym] || '';
+      if (ready) W.say(details, cap(e.name) + ' (' + e.sym + '): atomic number ' + e.z + ', ' + (e.group ? 'group ' + e.group : 'f-block, no group') + ', period ' + e.period + ', ' + e.cat + '. ' + (NOTES[e.sym] || ''));
     }
     function choose(e, focus) {
       current = e;
@@ -377,5 +380,6 @@
     const first = start || (opts.select ? null : find('Na'));
     if (first) choose(first, false);
     else { cells[0].b.setAttribute('tabindex', '0'); show(null); paint(); }
+    ready = true;
   });
 })();

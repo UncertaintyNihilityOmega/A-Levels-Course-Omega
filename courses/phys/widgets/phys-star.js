@@ -68,7 +68,7 @@
     const tabRow = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Choose a star' });
     const btns = PRESETS.map((p) => W.h('button', { class: 'w-tab', type: 'button', onclick: () => pick(p) }, p[1]));
     btns.forEach((b) => tabRow.append(b));
-    const syncTabs = () => btns.forEach((b, i) => b.setAttribute('aria-selected', String(PRESETS[i][0] === st.preset)));
+    const syncTabs = () => btns.forEach((b, i) => b.setAttribute('aria-pressed', String(PRESETS[i][0] === st.preset)));
 
     const sT = W.sliderNum({ label: 'Surface temperature T / K', min: 2500, max: 40000, step: 100, value: st.T,
       oninput: (v) => { st.T = num(v, st.T, 2500, 40000); st.preset = null; syncTabs(); update(); } });
@@ -105,8 +105,15 @@
     }
 
     // ---------- spectrum canvas ----------
+    const colourWord = (T) => (T < 3700 ? 'orange-red' : T < 5000 ? 'orange' : T < 6000 ? 'yellow-white' : T < 7500 ? 'white' : 'blue-white');
     const c = W.canvas(body, {
       height: 250,
+      label: 'Graph of black-body intensity against wavelength',
+      describe: () => {
+        const lmax = WIEN / st.T * 1e9;
+        return 'Black-body spectrum of a star at ' + W.fmt(st.T, 4) + ' K: relative intensity against wavelength in nanometres, with the visible band from 400 to 700 nm shaded. The curve peaks at ' + W.fmt(lmax, 3) + ' nm, ' +
+          (lmax < 400 ? 'in the ultraviolet' : lmax > 700 ? 'in the infrared' : 'in visible light') + (st.same ? '. Drawn on the same scale as the Sun, which is dashed.' : '.');
+      },
       draw(ctx, w, h, col) {
         const pkSelf = peakOf(st.T), pkSun = peakOf(SUN_T);
         const rel = pkSelf / pkSun;                                 // peak height relative to the Sun's peak
@@ -174,6 +181,8 @@
     // ---------- star disc ----------
     const disc = W.canvas(body, {
       height: 130,
+      label: 'Picture of the star',
+      describe: () => 'A ' + colourWord(st.T) + ' disc for a star of radius ' + W.fmt(st.r, 3) + ' solar radii, with a dashed circle showing the size of the Sun. The size follows the logarithm of the radius.',
       draw(ctx, w, h, col) {
         const cx = Math.min(100, w * 0.3), cy = h / 2;
         const rad = (s) => (14 + 78 * (Math.log10(s) + 2) / 5) / 2;     // radius in px from log radius

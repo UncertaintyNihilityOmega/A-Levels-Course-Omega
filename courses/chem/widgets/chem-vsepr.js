@@ -197,6 +197,12 @@
       }
     });
     cvs.cv.setAttribute('role', 'img');
+    cvs.describe = () => {
+      if (!model) return '';
+      const s = model.shape;
+      return 'A 3D model of a central ' + model.centre + ' atom with ' + bp + ' bonding pair' + (bp === 1 ? '' : 's') + ' (shown as bonds to ' + model.outer + ' atoms) and ' + lp + ' lone pair' + (lp === 1 ? '' : 's') + ' (shown as shaded lobes with two dots). The pairs form a '
+        + s.arr + ' arrangement, so the shape is ' + s.shape + ' with bond angle ' + (preset && preset[6] ? preset[6] : s.angle) + '. The turn buttons rotate the view.';
+    };
     W.orbit(cvs.wrap, v, cvs.redraw);
     body.appendChild(W.h('div', { class: 'w-row' }, left, right));
 
@@ -229,7 +235,7 @@
       read.set('ex', nm ? nm + (s.ex && s.ex.indexOf(nm) < 0 ? '  (also ' + s.ex + ')' : '') : s.ex);
       read.set('note', preset && preset[7] ? preset[7] : (lp === 0 ? 'No lone pairs: the shape has the same name as the arrangement.' : (s.shape === 'linear' || s.shape === 'square planar') ? 'The lone pairs are spread symmetrically, so their pushes balance and the bond angles are not squeezed.' : 'Lone pairs repel more than bonding pairs, so the angles close a little.'));
       err.textContent = msg;
-      cvs.cv.setAttribute('aria-label', '3D model with ' + bp + ' bonding pairs and ' + lp + ' lone pairs: ' + s.shape + ', bond angle ' + (preset && preset[6] ? preset[6] : s.angle) + '.');
+      cvs.setLabel('3D VSEPR model: ' + (nm ? nm.replace(/[₀-₆]/g, c => '0123456'.charAt('₀₁₂₃₄₅₆'.indexOf(c))).replace('⁺', '+') + ', ' : '') + s.shape);
       cvs.redraw();
     }
 

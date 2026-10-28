@@ -41,7 +41,16 @@
     } });
     const clear = W.h('button', { type: 'button', class: 'btn btn-sec btn-sm' }, 'Clear curves');
     clear.addEventListener('click', () => { curves = curves.slice(-1); redraw(); });
-    body.append(W.h('div', { class: 'w-row', style: { alignItems: 'flex-end' } }, fld.el, clear), err);
+    // typed alternative to clicking and dragging: set the latest curve's point, or start another curve
+    const num = (label, set) => W.field({ label, value: '', type: 'number', step: 'any', width: '6em', oninput: (t) => {
+      const v = parseFloat(t); if (!isFinite(v)) return;
+      const c = curves[curves.length - 1]; set(c, v); redraw(true);
+    } });
+    const fx = num('Point x', (c, v) => { c.x = clamp(v, xr[0], xr[1]); });
+    const fy = num('Point y', (c, v) => { c.y = clamp(v, yr[0], yr[1]); });
+    const another = W.h('button', { type: 'button', class: 'btn btn-sec btn-sm' }, 'Add another curve');
+    another.addEventListener('click', () => { const c = curves[curves.length - 1]; curves.push({ x: c.x, y: c.y }); if (curves.length > MAXKEEP) curves.shift(); redraw(); W.say(body, `Curve ${curves.length} started at the same point. Change Point x or y to move it.`); });
+    body.append(W.h('div', { class: 'w-row', style: { alignItems: 'flex-end' } }, fld.el, clear), W.h('div', { class: 'w-row', style: { alignItems: 'flex-end' } }, fx.el, fy.el, another), err);
 
     const pad = { l: 40, r: 14, t: 12, b: 28 };
     const geom = { w: 300, h: 300 };
@@ -67,20 +76,26 @@
       return pts;
     }
 
-    const cv = W.canvas(body, { height: 310, draw });
-    cv.wrap.setAttribute('role', 'img');
+    const cv = W.canvas(body, { height: 310, draw, label: 'Slope field with solution curves (the point can also be set with the boxes above)', describe });
     cv.wrap.style.touchAction = 'none';
     cv.wrap.style.cursor = 'crosshair';
     const R = W.readout([['pt', 'Solution through'], ['slope', 'Gradient there, dy/dx']]);
     body.append(R.el, W.h('div', { class: 'w-note' }, 'Each short line shows the gradient of a solution at its point. Click to start a new curve; drag to move the latest one. A curve stops where dy/dx is not defined.'));
 
-    function readout() {
+    function readout(typing) {
       const c = curves[curves.length - 1], s = fn(c.x, c.y);
       R.set('pt', `(${W.fmt(c.x, 3)}, ${W.fmt(c.y, 3)})`);
       R.set('slope', isFinite(s) ? W.fmt(s, 3) : 'not defined here');
-      cv.wrap.setAttribute('aria-label', `Slope field of dy/dx = ${src}. The latest solution curve passes through (${W.fmt(c.x, 3)}, ${W.fmt(c.y, 3)}).`);
+      // keep the boxes in step with clicks and drags (but never rewrite a box while it is being typed in)
+      if (!typing) { fx.input.value = String(+c.x.toFixed(3)); fy.input.value = String(+c.y.toFixed(3)); }
     }
-    function redraw() { readout(); cv.redraw(); }
+    function redraw(typing) { readout(typing); cv.redraw(); }
+    function describe() {
+      const c = curves[curves.length - 1], s = fn(c.x, c.y), pts = solve(c.x, c.y);
+      const ends = pts.length > 1 ? ` It runs from (${W.fmt(pts[0][0], 3)}, ${W.fmt(pts[0][1], 3)}) to (${W.fmt(pts[pts.length - 1][0], 3)}, ${W.fmt(pts[pts.length - 1][1], 3)}).` : '';
+      return `Slope field of dy/dx = ${src} for x from ${xr[0]} to ${xr[1]} and y from ${yr[0]} to ${yr[1]}, with ${curves.length} solution ${curves.length === 1 ? 'curve' : 'curves'}. `
+        + `The latest passes through (${W.fmt(c.x, 3)}, ${W.fmt(c.y, 3)}) with gradient ${isFinite(s) ? W.fmt(s, 3) : 'not defined'}.${ends}`;
+    }
 
     W.drag(cv.wrap, {
       hit(px, py) {

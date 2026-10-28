@@ -179,6 +179,13 @@
       }
     });
     cvs.cv.setAttribute('role', 'img');
+    cvs.describe = () => {
+      const f1 = tail(state.ea, state.t1), f2 = tail(state.ea, state.t2);
+      let s = 'Upper graph, drawn to scale: number of molecules against energy in kJ per mole, one hump for ' + state.t1 + ' K' + (state.two ? ' and a lower, broader hump for ' + state.t2 + ' K' : '') + ', both with the same area. A vertical line marks Eₐ = ' + state.ea + ' kJ per mole'
+        + (state.cat ? ' and a dashed line marks the catalysed Eₐ = ' + state.eaCat : '') + '. Lower graph: the tail beyond ' + (state.cat ? state.eaCat : state.ea) + ' kJ per mole enlarged. ';
+      s += 'Molecules with at least Eₐ: ' + pct(f1) + ' at ' + state.t1 + ' K' + (state.two ? ', ' + pct(f2) + ' at ' + state.t2 + ' K' : '') + '.';
+      return s.replace(/\s+/g, ' ');
+    };
 
     const read = W.readout([['f1', 'Molecules with E ≥ Eₐ at T₁'], ['f2', 'Molecules with E ≥ Eₐ at T₂'], ['ratio', 'Ratio T₂ : T₁'], ['c1', 'With the catalyst at T₁'], ['cr', 'Catalyst: increase in that fraction']]);
     body.appendChild(read.el);
@@ -201,7 +208,7 @@
         read.set('c1', pct(fc) + ' (Eₐ = ' + state.eaCat + ' kJ mol⁻¹)');
         read.set('cr', '× ' + times(fc / f1) + ' at ' + state.t1 + ' K');
       } else { read.set('c1', 'no catalyst'); read.set('cr', '—'); }
-      cvs.cv.setAttribute('aria-label', 'Boltzmann distribution at ' + state.t1 + ' K' + (state.two ? ' and ' + state.t2 + ' K' : '') + ' with activation energy ' + state.ea + ' kJ per mole' + (state.cat ? ' and a catalyst lowering it to ' + state.eaCat : '') + '. The fraction of molecules with at least this energy is ' + pct(f1) + ' at ' + state.t1 + ' K.');
+      cvs.setLabel('Boltzmann distribution at ' + state.t1 + ' K' + (state.two ? ' and ' + state.t2 + ' K' : '') + (state.cat ? ', with and without a catalyst' : ''));
       cvs.redraw();
     }
     update();

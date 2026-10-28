@@ -117,8 +117,8 @@
     let geom = [];          // pixel x of each drawn signal, for clicking
 
     const err = W.h('div', { class: 'w-err', role: 'status' });
-    const tabH = W.h('button', { class: 'w-tab', type: 'button', role: 'tab', text: '¹H NMR', onclick: () => { mode = 'h'; sel = -1; update(); } });
-    const tabC = W.h('button', { class: 'w-tab', type: 'button', role: 'tab', text: '¹³C NMR', onclick: () => { mode = 'c'; sel = -1; update(); } });
+    const tabH = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: '¹H NMR', onclick: () => { mode = 'h'; sel = -1; update(); } });
+    const tabC = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: '¹³C NMR', onclick: () => { mode = 'c'; sel = -1; update(); } });
     const select = W.h('select', { 'aria-label': 'Molecule' });
     ORDER.forEach(k => select.appendChild(W.h('option', { value: k, text: k + '  ' + FORMULA[k] })));
     select.value = mol;
@@ -126,7 +126,7 @@
     const chk = W.h('input', { type: 'checkbox', 'aria-label': 'Shake with D₂O' });
     chk.addEventListener('change', () => { d2o = chk.checked; sel = -1; update(); });
     const d2oRow = W.h('label', { class: 'w-ctl', style: { display: 'flex', alignItems: 'center', gap: '8px' } }, chk, W.h('span', { class: 'w-lab', text: 'shake with D₂O' }));
-    body.appendChild(W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-tabs', role: 'tablist', 'aria-label': 'Spectrum' }, tabH, tabC),
+    body.appendChild(W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Spectrum' }, tabH, tabC),
       W.h('label', { class: 'w-ctl' }, W.h('span', { class: 'w-lab', text: 'Molecule' }), select), d2oRow));
 
     const formulaLine = W.h('div', { style: { fontSize: '1.05em', margin: '4px 0 6px', minHeight: '1.4em' } });
@@ -223,7 +223,14 @@
       }
     });
     cvs.cv.setAttribute('role', 'img');
-    cvs.cv.setAttribute('aria-label', 'NMR spectrum of the chosen molecule; use the buttons below to select a signal');
+    cvs.describe = () => {
+      const P = PRESETS[mol];
+      if (mode === 'h') {
+        const list = P.h.filter(s => !(d2o && s.ex));
+        return 'Proton NMR of ' + P.name + ', shift in ppm increasing to the left. ' + list.length + ' signal' + (list.length === 1 ? '' : 's') + ': ' + list.map(s => 'δ ' + s.d.toFixed(1) + ', ' + s.n + ' H, ' + lineName(s.adj)).join('; ') + '. The signal buttons below select each one.';
+      }
+      return 'Carbon-13 NMR of ' + P.name + ', shift in ppm increasing to the left. ' + P.c.length + ' peak' + (P.c.length === 1 ? '' : 's') + ': ' + P.c.map(s => 'δ ' + s.d + (s.k > 1 ? ' (' + s.k + ' carbons)' : '')).join('; ') + '. The signal buttons below select each one.';
+    };
     cvs.cv.addEventListener('click', ev => {
       const r = cvs.cv.getBoundingClientRect();
       const x = ev.clientX - r.left;
@@ -254,8 +261,9 @@
 
     function update() {
       const P = PRESETS[mol];
-      tabH.setAttribute('aria-selected', mode === 'h' ? 'true' : 'false');
-      tabC.setAttribute('aria-selected', mode === 'c' ? 'true' : 'false');
+      tabH.setAttribute('aria-pressed', mode === 'h' ? 'true' : 'false');
+      tabC.setAttribute('aria-pressed', mode === 'c' ? 'true' : 'false');
+      cvs.setLabel((mode === 'h' ? 'Proton' : 'Carbon-13') + ' NMR spectrum of ' + P.name);
       d2oRow.style.display = mode === 'h' ? 'flex' : 'none';
       select.value = mol;
       // formula with the chosen signal highlighted
@@ -269,13 +277,16 @@
       });
       formulaLine.appendChild(W.h('span', { class: 'w-lab', style: { marginLeft: '10px' }, text: P.name }));
       // buttons for each signal
+      // the buttons are rebuilt, so keep keyboard focus on the same signal
+      const focusI = btnRow.contains(document.activeElement) ? document.activeElement.getAttribute('data-i') : null;
       btnRow.textContent = '';
       const list = mode === 'h' ? P.h : P.c;
       list.forEach((s, i) => {
         if (mode === 'h' && d2o && s.ex) return;
         const label = mode === 'h' ? 'δ ' + s.d.toFixed(1) : 'δ ' + s.d;
-        const b = W.h('button', { class: 'btn btn-sm' + (i === sel ? '' : ' btn-sec'), type: 'button', text: label, 'aria-label': 'Signal at ' + label + ' ppm, ' + s.g, onclick: () => { sel = i; update(); } });
+        const b = W.h('button', { class: 'btn btn-sm' + (i === sel ? '' : ' btn-sec'), type: 'button', text: label, 'data-i': String(i), 'aria-pressed': i === sel ? 'true' : 'false', 'aria-label': 'Signal at ' + label + ' ppm, ' + s.g, onclick: () => { sel = i; update(); } });
         btnRow.appendChild(b);
+        if (focusI === String(i)) b.focus();
       });
       // readout
       if (mode === 'h') {

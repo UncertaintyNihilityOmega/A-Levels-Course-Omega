@@ -43,6 +43,28 @@
     return W.axes(g.ctx, g.w, g.h, { x0, x1, y0, y1 }, g.c, { pad: PAD, xlabel: 'x', ylabel: 'y' });
   }
 
+  /* what each diagram shows, for screen readers (the step text and the live line are added to it) */
+  const ALT = {
+    completesquare: 'Areas: a square of side x with a strip of area (b/a)x beside it; the strip is halved and moved, and the corner square (b/2a)² completes a larger square.',
+    inverse: 'The graph of y = f(x) and its inverse, mirror images in the line y = x, with a point P(a, b), its reflection Q(b, a) and their midpoint M on the line.',
+    perp: 'Two lines through the origin O, with a point A on one and B on the other, forming triangle OAB; the angle between the lines is printed on the diagram.',
+    sector: 'A sector of a circle of radius r with angle θ at the centre, its arc and its area.',
+    apsum: 'Blocks for the terms of an arithmetic series, two copies fitted together into a rectangle labelled a + l and 2Sₙ.',
+    gpsum: 'The terms of a geometric series and their running total, compared with the limit a/(1 − r).',
+    pascal: "Pascal's triangle down to the chosen row, with the chosen entry and the two numbers above it picked out.",
+    chordlimit: 'The curve y = xⁿ with a fixed point P at x = 1 and a second point Q a distance h to the right, joined by a chord.',
+    ftc: 'The graph of y = f(x) with the area A(x) under it up to x, and a thin strip of width h, about f(x)·h in area, added at the end.',
+    discs: 'The line y = x from 0 to 3 rotated about the x-axis, approximated by a stack of thin discs of volume πy²δx, which makes a cone.',
+    compound: 'A unit-circle diagram with angles A and B, whose right-angled triangles give sin(A + B) and cos(A + B) as sums and differences of lengths such as sin B cos A and sin B sin A.',
+    expderiv: 'The curve y = aˣ with a chord from x = 0 to x = h and the tangent at x = 0, whose gradient is k.',
+    sinlimit: 'A sector of the unit circle with angle h, with the lengths sin h, the arc h and tan h marked.',
+    productrule: 'A rectangle with sides u and v whose sides grow by δu and δv, split into the strips v δu and u δv and the small corner δuδv.',
+    dotcosine: 'Triangle OAB with vectors a and b from the origin O, the angle θ between them, and the third side b − a.',
+    tree: 'A probability tree with branches A and A′ and the outcomes A ∩ B and A′ ∩ B, shown inside the box of all outcomes.',
+    pythagoras: 'A right-angled triangle with sides a and b and hypotenuse c, and squares built from copies of the triangle to compare a² + b² with c².',
+    cosinerule: 'Triangle ABC with a perpendicular from C meeting AB at D, giving the lengths b sin A and DB, with sides a, b and c.',
+  };
+
   /* ---------- the widget ---------- */
   W.register('proof', function (el, o) {
     const key = String(o.proof || '').trim();
@@ -58,8 +80,11 @@
       sliders.push([d.key, s]); ctl.append(s.el);
     }
     let step = 0;
-    const cv = W.canvas(body, { height: sc.height || 260, draw: (ctx, w, h, c) => { const g = { ctx, w, h, c, i: step, v }; sc.draw(g); } });
-    cv.wrap.setAttribute('role', 'img');
+    const describe = () => {
+      const [t, why] = sc.lines[step];
+      return `${ALT[key] || sc.title} Step ${step + 1} of ${sc.lines.length}: ${t}${why ? '. ' + why : ''} ${sc.live ? sc.live(v, step) : ''}`;
+    };
+    const cv = W.canvas(body, { height: sc.height || 260, label: `Diagram: ${sc.title}`, describe, draw: (ctx, w, h, c) => { const g = { ctx, w, h, c, i: step, v }; sc.draw(g); } });
     const list = W.h('div', { style: { display: 'grid', gap: '4px', margin: '8px 0' } });
     const rows = sc.lines.map(([t, why]) => {
       const r = W.h('div', { style: { padding: '4px 10px', borderLeft: '3px solid var(--rule)', fontSize: '.97rem', lineHeight: '1.45' } },
@@ -67,7 +92,7 @@
       list.append(r); return r;
     });
     const resBox = W.h('div', { style: { border: '2px solid var(--sc)', borderRadius: '8px', padding: '8px 12px', fontWeight: 600, display: 'none', overflowWrap: 'anywhere' } }, sc.result);
-    const live = W.h('div', { class: 'w-val', style: { minHeight: '1.4em' } });
+    const live = W.h('div', { class: 'w-val', 'aria-live': 'polite', 'aria-atomic': 'true', style: { minHeight: '1.4em' } });
     const st = W.stepper(body, { steps: sc.lines.length, onstep: (i) => { step = i; paint(); } });
     body.append(ctl, live, st.el, list, resBox);
     function readout() { live.textContent = sc.live ? sc.live(v, step) : ''; }
@@ -78,9 +103,9 @@
         r.style.borderLeftColor = cur ? 'var(--sc)' : 'var(--rule)';
         r.style.background = cur ? 'color-mix(in srgb, var(--sc) 10%, transparent)' : 'transparent';
         r.style.opacity = cur ? '1' : '0.82';
+        if (cur) r.setAttribute('aria-current', 'step'); else r.removeAttribute('aria-current');
       });
       resBox.style.display = step === sc.lines.length - 1 ? '' : 'none';
-      cv.wrap.setAttribute('aria-label', `${sc.title}. Step ${step + 1} of ${sc.lines.length}: ${sc.lines[step][0]}`);
       readout(); cv.redraw();
     }
     st.go(0);

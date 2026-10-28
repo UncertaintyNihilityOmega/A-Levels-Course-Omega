@@ -37,7 +37,7 @@
     function tabs(items, get, set, aria) {
       const row = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': aria });
       const btns = items.map(([v, text]) => W.h('button', { class: 'w-tab', type: 'button', onclick: () => { set(v); sync(); } }, text));
-      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-selected', String(items[i][0] === get())));
+      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-pressed', String(items[i][0] === get())));
       btns.forEach((b) => row.append(b));
       sync();
       return row;
@@ -132,9 +132,11 @@
       }, { still: () => {} });
       function setPlaying(on) {
         if (on && !st.playing) { last = performance.now(); anim.start(); }
+        const was = st.playing;
         if (!on && st.playing) anim.stop();
         st.playing = on;
         playBtn.textContent = on ? 'Pause' : 'Play';
+        if (was && !on) speak();
       }
       const playBtn = W.h('button', { class: 'btn btn-sm', type: 'button', onclick: () => setPlaying(!st.playing) }, 'Pause');
       const restartBtn = W.h('button', { class: 'btn btn-sec btn-sm', type: 'button', onclick: () => { st.t = 0; sT.set(0); update(); } }, 'Restart');
@@ -152,10 +154,22 @@
       const right = W.h('div', { style: { flex: '1 1 0', minWidth: '0' } });
       const row = W.h('div', { style: { display: 'flex', gap: '8px', alignItems: 'flex-start', margin: '8px 0' } }, left, right);
       body.append(row);
-      const cs = W.canvas(left, { height: HT, draw: drawSpring });
+      const cs = W.canvas(left, {
+        height: HT,
+        label: 'Mass on a spring with energy bars',
+        describe: () => {
+          const n = now();
+          return 'A mass hangs from a spring above its rest position x = 0, now at x = ' + sci(n.x, 2) + ' m. Three bars show kinetic energy ' + sci(n.ke, 2) + ' J, potential energy ' + sci(n.pe, 2) + ' J and their total ' + sci(n.ke + n.pe, 2) + ' J.';
+        },
+        draw: drawSpring
+      });
+      const NAMES = { x: 'displacement x', v: 'velocity v', a: 'acceleration a' };
       function graph(arrKey, name, colorKey, h, showX, unit) {
         return W.canvas(right, {
           height: h,
+          label: 'Graph of ' + NAMES[arrKey] + ' against time',
+          describe: () => 'Graph of ' + NAMES[arrKey] + ' in ' + unit + ' against time over ' + W.fmt(sim.Tw, 3) + ' s (four periods), ' + (sim.z === 0 ? 'a sinusoid of constant size' : sim.z < 1 ? 'a sinusoid whose size shrinks' : 'a curve that does not oscillate') +
+            ', with a largest value of ' + sci(sim[arrKey === 'x' ? 'xm' : arrKey === 'v' ? 'vm' : 'am'], 2) + ' ' + unit + '. The marker is at t = ' + W.fmt(st.t, 2) + ' s, value ' + sci(at(arr0(arrKey), st.t), 2) + ' ' + unit + '.',
           draw(ctx, w, hh, col) {
             const arr = sim[arrKey], amax = nice(Math.max(sim[arrKey === 'x' ? 'xm' : arrKey === 'v' ? 'vm' : 'am'], 1e-12) * 1.12);
             const color = col[colorKey];
@@ -189,6 +203,7 @@
           }
         });
       }
+      const arr0 = (k) => sim[k];
       const gX = graph('x', 'x', 'sc', H1, false, 'm');
       const gV = graph('v', 'v', 'sc2', H2, false, 'm s⁻¹');
       const gA = graph('a', 'a', 'ok', H3, true, 'm s⁻²');
@@ -230,6 +245,12 @@
       ]);
       const note = W.h('div', { class: 'w-note' });
       body.append(ro.el, note);
+      // the "now" rows change on every frame while it plays, so the table is not read out; W.say speaks when it stops or a setting changes
+      ro.el.setAttribute('aria-live', 'off');
+      function speak() {
+        const n = now();
+        W.say(body, 'At t = ' + W.fmt(st.t, 3) + ' s: x = ' + sci(n.x, 3) + ' m, v = ' + sci(n.v, 3) + ' m/s, a = ' + sci(n.a, 3) + ' m/s squared; kinetic energy ' + sci(n.ke, 3) + ' J, potential energy ' + sci(n.pe, 3) + ' J.');
+      }
 
       const sci = (x, sf) => {
         const ax = Math.abs(x);
@@ -266,7 +287,7 @@
         simulate();
         st.t = Math.min(frac, 1) * sim.Tw;
         sT.set(frac);
-        statics(); update();
+        statics(); update(); speak();
       }
       if (reduced) st.t = sim.Tw / 8;
       sT.set(st.t / sim.Tw);
@@ -312,6 +333,12 @@
 
       const cCurve = W.canvas(wrapL, {
         height: 260,
+        label: 'Graph of amplitude against driving frequency',
+        describe: () => {
+          const pk = peakOf(st.b);
+          return 'Amplitude A/A₀ against driving frequency f/f₀ from 0 to 3. Your damping of ' + W.fmt(st.b, 2) + ' (' + word(st.b) + ') gives a curve with a peak of ' + W.fmt(pk.a, 3) + ' A₀' + (pk.r < 0.02 ? ' at zero frequency, so no resonance peak' : ' at ' + W.fmt(pk.r, 3) + ' f₀') +
+            '. Three fainter curves show damping 0.1, 0.3 and 0.8. The marked point is at f/f₀ = ' + W.fmt(st.r, 3) + ' with amplitude ' + W.fmt(amp(st.r, st.b), 3) + ' A₀.';
+        },
         draw(ctx, w, h, col) {
           const ym = ymaxNow();
           const ax = W.axes(ctx, w, h, { x0: 0, x1: 3, y0: 0, y1: ym }, col, {
@@ -339,6 +366,8 @@
       });
       const cAn = W.canvas(wrapR, {
         height: 260,
+        label: 'Animation of a driven mass on a spring',
+        describe: () => 'A driver at the top shakes a spring with a mass at frequency ' + W.fmt(st.r, 2) + ' f₀. The mass oscillates with amplitude ' + W.fmt(amp(st.r, st.b), 3) + ' A₀ and lags the driver by ' + W.fmt(phase(st.r, st.b) * 180 / Math.PI, 3) + '°.',
         draw(ctx, w, h, col) {
           const a = amp(st.r, st.b), d = phase(st.r, st.b), ym = ymaxNow();
           const wt = TAU * st.r * F0 * st.t;

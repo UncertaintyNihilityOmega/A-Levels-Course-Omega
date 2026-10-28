@@ -83,9 +83,9 @@
     let formula = get('formula') || 'C2H5Br';
 
     const err = W.h('div', { class: 'w-err', role: 'status' });
-    const tabIon = W.h('button', { class: 'w-tab', type: 'button', role: 'tab', text: 'Molecular ion', onclick: () => setTab('ion') });
-    const tabAr = W.h('button', { class: 'w-tab', type: 'button', role: 'tab', text: 'Ar from isotopes', onclick: () => setTab('ar') });
-    body.appendChild(W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-tabs', role: 'tablist', 'aria-label': 'Tool' }, tabIon, tabAr)));
+    const tabIon = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: 'Molecular ion', onclick: () => setTab('ion') });
+    const tabAr = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: 'Ar from isotopes', onclick: () => setTab('ar') });
+    body.appendChild(W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Tool' }, tabIon, tabAr)));
 
     // ---- ion tab controls ----
     const ionBox = W.h('div');
@@ -171,6 +171,13 @@
       }
     });
     cvs.cv.setAttribute('role', 'img');
+    cvs.describe = () => {
+      const bars = scene.bars.filter(b => b.h > 0);
+      if (!bars.length) return 'Empty: no valid values to draw yet.';
+      const list = bars.map(b => 'm/e ' + b.mz + ' at ' + (tab === 'ion' ? fmtH(b.h) + ' %' : W.fmt(b.h, 4))).join('; ');
+      return tab === 'ion' ? 'Mass spectrum of the molecular-ion region, relative abundance in per cent against m/e. Peaks: ' + list + '.'
+        : 'Isotope abundance bars against mass number: ' + list + '.';
+    };
     body.appendChild(err);
     ionBox.appendChild(W.h('div', { class: 'w-note', text: 'Simplified: only the molecular-ion region is drawn, and only ¹³C (1.1 % per carbon atom), ³⁵Cl : ³⁷Cl = 3 : 1 and ⁷⁹Br : ⁸¹Br = 1 : 1 are included. Try C2H5Br, then CH2Cl2, then CH2BrCl and compare the patterns.' }));
     arBox.appendChild(W.h('div', { class: 'w-note', text: 'Ar = Σ(mass × abundance) ÷ Σ abundance. Choose an element, then change a number to see how the mean moves towards the more abundant isotope. Abundances can be percentages or relative heights.' }));
@@ -235,8 +242,9 @@
 
     function update() {
       err.textContent = tab === 'ion' ? '' : '';
-      tabIon.setAttribute('aria-selected', tab === 'ion' ? 'true' : 'false');
-      tabAr.setAttribute('aria-selected', tab === 'ar' ? 'true' : 'false');
+      tabIon.setAttribute('aria-pressed', tab === 'ion' ? 'true' : 'false');
+      tabAr.setAttribute('aria-pressed', tab === 'ar' ? 'true' : 'false');
+      cvs.setLabel(tab === 'ion' ? 'Mass spectrum: molecular-ion peaks' : 'Isotope abundance spectrum');
       ionBox.style.display = tab === 'ion' ? '' : 'none';
       arBox.style.display = tab === 'ar' ? '' : 'none';
       if (tab === 'ion') updateIon(); else updateAr();

@@ -30,9 +30,28 @@ are listed at the end of kit/LINKS.md: use them freely in chapters, but never re
   colours with the `colors` argument of `W.canvas` draw (it redraws on theme change automatically).
 - Draw must survive zero size: a hidden widget is redrawn on theme change with width and height 0. Never loop
   on a measured size (`while (perUnit * step < 22)`) without checking it is positive first, or the page freezes.
-- Every control has a label (`<label>` or `aria-label`). A widget can appear twice on a page: no fixed ids.
+- Every control has a label (`<label>` or `aria-label`). A widget can appear twice on a page: no fixed ids (`W.uid`).
 - State lives inside the widget's closure. `W.store` only for small conveniences.
 - Respect `prefers-reduced-motion` for any animation.
+
+## Accessibility (WCAG 2.2 AA; the probe checks the first five)
+- Every canvas gets `label` and `describe` in `W.canvas` (what it shows now, with the key numbers), or
+  `decorative: true` when visible text already says everything.
+- Every control has a name; a symbol-only button (▶ ↺ ×) gets `aria-label`.
+- An SVG the widget builds has `role="img"` + `aria-label`, or `aria-hidden="true"`.
+- No `tabindex` above 0; no repeated ids.
+- Text contrast at least 4.5:1: colour text only with `--ink`, `--ink-2`, `--ink-3`, `--sc`, `--sc2`, `--red`, `--ok`.
+- Keyboard: everything works with Tab, Enter, Space and arrows. Clickable things are `<button>`s (never a clickable
+  `div`, `span`, cell or canvas spot without a button or key alternative). DOM order is reading order.
+- Anything you can drag can also be set with a slider, number box or buttons (no dragging needed).
+- Results that change: use `W.stat` or `W.readout` (read out automatically), `aria-live="polite"` on a small result
+  element, or `W.say(el, text)` for a result shown only on the canvas. Never make a big or growing region live.
+- Toggle groups: `.w-tabs` with `role="group"` + `aria-label`, buttons with `aria-pressed`.
+- Animation that starts by itself or runs over 5 s has a Pause/Play button; use `W.animate` (draws `still()` under
+  reduced motion) or check `W.reducedMotion()` and never auto-start.
+- An action that rebuilds controls puts focus back on the matching new control; the pressed button never vanishes or
+  becomes disabled under the keyboard.
+- Right/wrong or selected is never shown by colour alone: add a word or symbol.
 - Start in a useful example state from the data attributes or sensible defaults, never an empty shell.
 - State facts (values, colours, names) only from FACTS.md or the chapter. A simplified model says so on screen.
 - 3D views start at an asymmetric angle with depth cues (near bonds thicker, far ones dashed, near objects larger).
@@ -45,8 +64,12 @@ are listed at the end of kit/LINKS.md: use them freely in chapters, but never re
 - `W.slider({label, min, max, step, value, fmt, oninput})` → `{el, input, get, set}`.
 - `W.field({label, value, type, step, oninput, placeholder, width})` → `{el, input, get}`.
 - `W.stat(label, highlight)` → `{el, set}`: small output tile.
-- `W.canvas(parent, {height, draw(ctx, w, h, colors)})` → `{redraw, cv, ctx}`: hi-DPI canvas. `colors`: ink,
-  ink2, ink3, rule, rule2, sheet, card, sc (course colour), sc2, red, ok, pen, hl, font, mono.
+- `W.canvas(parent, {height, label, describe, decorative, draw(ctx, w, h, colors)})` → `{redraw, cv, ctx, wrap}`:
+  hi-DPI canvas. `colors`: ink, ink2, ink3, rule, rule2, sheet, card, sc (course colour), sc2, red, ok, pen, hl, font,
+  mono. Screen readers get an image named `label`, described by `describe()` (run after each draw; `c.describe = fn`
+  and `c.setLabel(s)` change them later).
+- `W.say(el, text)`: reads `text` to screen-reader users (one polite region per widget, 300 ms after the last call).
+- `W.uid(prefix)`: a unique id for `for`, `aria-labelledby`, `aria-describedby`.
 - `W.axes(ctx, w, h, view, colors, opts)`: graph paper, axes and ticks for `view = {x0, x1, y0, y1}`; returns
   `{X, Y}` data→pixel functions. opts: `pad`, `xlabel`, `ylabel`, `fx`/`fy` tick formatters, `nx`/`ny`.
 - `W.parse(expr, {degrees})` → `{f(scope), vars}`: safe maths expression parser (`2x^2 - 3sin(x) + a`). Use try/catch.
@@ -64,7 +87,7 @@ Use these instead of writing your own (shorter widgets, fewer bugs):
   page is hidden; under reduced motion `start()` calls `still()` once instead (draw the end state).
 - `W.reducedMotion()` → true when the reader asked for less motion.
 - `W.view3d({yaw, pitch, scale})` → `v` with `v.project(x, y, z, w, h)` → `[sx, sy, depth]` (x right, y into the
-  page, z up); `W.orbit(c.wrap, v, c.redraw)` lets the reader drag to rotate.
+  page, z up); `W.orbit(c.wrap, v, c.redraw)` lets the reader drag to rotate and adds Turn ◀ ▶ ▲ ▼ buttons under the view.
 - `W.rng(seed)` → `r()`, `r.int(lo, hi)`, `r.normal(mu, sd)`: seeded random numbers (same seed, same sequence).
 - `W.stepper(root, {steps, onstep(i), labels})` → `{el, go(i), i}`: Back / Next with "Step 2 of 6", plus ←/→ keys
   while the widget has focus. Call `s.go(0)` once to draw the first step.
@@ -77,7 +100,7 @@ order. Then a session only opens the file it is changing.
 ## Styled classes
 `.w-b` body, `.w-row` wrapping row, `.w-ctl` labelled control, `.w-lab` small label, `.w-out` stats row,
 `.w-stat` / `.w-stat.hi` output tiles, `.w-canvas` canvas frame, `.w-note` grey note, `.w-err` red error,
-`.w-tabs` + `.w-tab[aria-selected="true"]` segmented buttons, `.w-read` readout table, `.w-stepper`, `.btn` / `.btn.btn-sec` / `.btn-sm`, plain
+`.w-tabs` + `.w-tab[aria-pressed="true"]` segmented buttons, `.sr-only` screen-reader-only text, `.w-read` readout table, `.w-stepper`, `.btn` / `.btn.btn-sec` / `.btn-sm`, plain
 `table/th/td`. Inputs, selects and sliders inside `.w` are styled automatically. Inline style only for layout,
 with CSS variables for colour (`var(--sc)`, `var(--ink-2)`, `var(--card)`, `var(--rule)`, `var(--red)`, `var(--ok)`).
 
@@ -89,7 +112,8 @@ plot area. Course colour for the main curve, `sc2` for a second series, `red` fo
 ## Testing (every widget, every change)
 1. `node kit/zta.js widget NAME 'data-a="1" data-b="2"' --probe` writes `preview/widget.html` and loads it
    headless (Edge or Chrome) in light, dark and phone width. It lists errors, text showing NaN / undefined /
-   Infinity, anything sticking out of the widget or widening the page, and blank canvases. Fix until it passes.
+   Infinity, anything sticking out of the widget or widening the page, blank canvases and `a11y:` problems.
+   Fix until it passes.
    Probe edge cases too, by passing extreme or invalid attributes.
 2. Then look once: start the "preview" server (the browser pane's launch config, or `node kit/zta.js serve`)
    and open `http://localhost:<port>/widget.html?dark&phone`. Check nothing is clipped, overlapping or

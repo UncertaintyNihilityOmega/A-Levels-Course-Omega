@@ -97,7 +97,7 @@
     function tabs(items, get, set) {
       const row = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Material' });
       const btns = items.map(([v, label]) => W.h('button', { class: 'w-tab', type: 'button', onclick: () => { set(v); sync(); update(); } }, label));
-      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-selected', String(items[i][0] === get())));
+      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-pressed', String(items[i][0] === get())));
       btns.forEach((b) => row.append(b));
       sync();
       return row;
@@ -116,6 +116,14 @@
 
     const c = W.canvas(body, {
       height: 280,
+      label: 'Graph of force against extension for the wire',
+      describe: () => {
+        const M = model(), Fmax = st.p * M.Fb, snapped = st.p >= 0.995;
+        const shape = M.m.rubber ? 'a curve that is steep at first, flatter, then stiffens, with no permanent extension (qualitative only)'
+          : 'a straight line up to the limit of proportionality P, a curve to the elastic limit E, then a flatter plastic region to breaking';
+        const now = snapped ? 'The wire has snapped at ' + sci(M.Fb, 3) + ' N.' : 'The red point is at a load of ' + sci(st.unl ? 0 : Fmax, 3) + ' N and extension ' + fmtLen(st.unl ? permExt(M, Fmax) : M.xOf(Fmax)) + '.';
+        return 'Force in newtons against extension for ' + M.m.label.toLowerCase() + ' wire: ' + shape + '. ' + now + (st.unl && !snapped ? ' The dashed line shows the wire being unloaded.' : '') + (Fmax > 0 ? ' The shaded area is the work done.' : '');
+      },
       draw(ctx, w, h, col) {
         const M = model();
         const mm = M.xb < 1;
@@ -212,6 +220,7 @@
     const note = W.h('div', { class: 'w-note' });
     body.append(ro.el, note, err);
 
+    let wasSnapped = false, wasUnl = false;
     function update() {
       const M = model();
       const m = M.m;
@@ -240,6 +249,9 @@
       const px = permExt(M, Fmax);
       if (st.unl) ro.set('perm', px === 0 ? 'none: back to its original length' : fmtLen(px));
       else ro.set('perm', Fmax === 0 ? '–' : (px === 0 ? 'none if unloaded now' : fmtLen(px) + ' if unloaded now'));
+      if (snapped && !wasSnapped) W.say(body, 'The wire has snapped at the breaking load.');
+      if (st.unl && !wasUnl) W.say(body, 'Load removed. ' + (px === 0 ? 'The wire is back to its original length.' : 'Permanent extension ' + fmtLen(px) + '.'));
+      wasSnapped = snapped; wasUnl = st.unl;
       rmBtn.style.display = snapped ? 'none' : '';
       rmBtn.disabled = st.p === 0;
       if (snapped) note.textContent = 'The wire broke at the breaking stress. Slide the load back to fit a fresh wire.';

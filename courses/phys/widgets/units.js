@@ -138,14 +138,14 @@
     const panels = { convert: W.h('div'), prefix: W.h('div'), base: W.h('div') };
     function showTab() {
       tabNames.forEach((t) => {
-        tabBtns[t].setAttribute('aria-selected', String(st.tab === t));
+        tabBtns[t].setAttribute('aria-pressed', String(st.tab === t));
         panels[t].style.display = st.tab === t ? '' : 'none';
       });
     }
     body.append(tabRow, panels.convert, panels.prefix, panels.base);
 
     // ---------- Convert ----------
-    const cErr = W.h('div', { class: 'w-err', style: { display: 'none' } });
+    const cErr = W.h('div', { class: 'w-err', 'aria-live': 'polite', style: { display: 'none' } });
     const cNote = W.h('div', { class: 'w-note' });
     const cOut = W.readout([['res', 'Result'], ['sci', 'Standard form'], ['work', 'Working']]);
     const valField = W.field({ label: 'Value', value: opts.v != null && opts.v !== '' ? String(opts.v) : QUANTITIES[st.q].v, type: 'text', placeholder: '4.7e3', width: '9em' });
@@ -218,7 +218,8 @@
 
     // ---------- Prefixes ----------
     const pTable = W.h('table', { class: 'w-prefix-table' });
-    pTable.append(W.h('tr', {}, W.h('th', {}, 'Prefix'), W.h('th', {}, 'Symbol'), W.h('th', {}, 'Factor'), W.h('th', {}, 'Example')));
+    const col = (t) => W.h('th', { scope: 'col' }, t);
+    pTable.append(W.h('tr', {}, col('Prefix'), col('Symbol'), col('Factor'), col('Example')));
     const pRows = [];
     PREFIXES.forEach((p) => {
       const tr = W.h('tr', {}, W.h('td', {}, p[0]), W.h('td', {}, p[1] || '–'), W.h('td', {}, '10' + supStr(p[2])), W.h('td', {}, p[3]));
@@ -227,7 +228,7 @@
     const hNum = W.field({ label: 'Any number', value: '0.00047', type: 'text', placeholder: '0.00047', width: '9em' });
     const hUnit = W.field({ label: 'Unit symbol', value: 'm', type: 'text', placeholder: 'm', width: '6em' });
     hNum.input.setAttribute('autocomplete', 'off'); hUnit.input.setAttribute('autocomplete', 'off');
-    const hErr = W.h('div', { class: 'w-err', style: { display: 'none' } });
+    const hErr = W.h('div', { class: 'w-err', 'aria-live': 'polite', style: { display: 'none' } });
     const hOut = W.readout([['sci', 'Standard form'], ['best', 'With the best prefix']]);
     const hTable = W.h('table', { class: 'w-prefix-table' });
     const hNote = W.h('div', { class: 'w-note' }, 'Try 0.00047 m, 5.6e9 Hz or 2.2e-8 F. The best prefix puts the number between 1 and 1000. Prefixes on squared or cubed units are squared or cubed too: 1 mm² = 10⁻⁶ m².');
@@ -250,7 +251,7 @@
         const vs = plainStr(val) || sciStr(val, '');
         hOut.set('best', vs + ' ' + (pf ? pf[1] : '') + u + (Math.abs(e) > 14 ? ' (beyond the usual prefixes)' : ''));
       }
-      hTable.append(W.h('tr', {}, W.h('th', {}, 'Prefix'), W.h('th', {}, 'Value')));
+      hTable.append(W.h('tr', {}, col('Prefix'), col('Value')));
       hPref.forEach((q) => {
         const val = x / Math.pow(10, q[2]);
         const vs = x === 0 ? '0' : (plainStr(val) || sciStr(val, ''));
@@ -265,10 +266,14 @@
     // ---------- Base units ----------
     const dSel = makeSelect('Derived unit', DERIVED.map((d) => d[0] + ' (' + d[1] + ')'), st.derived, (i) => { st.derived = i; baseUpdate(); });
     const dOut = W.readout([['eq', 'Defining equation'], ['work', 'Working'], ['base', 'SI base units']]);
-    const dTable = W.h('table', { class: 'w-prefix-table' });
+    const dTable = W.h('table', { class: 'w-prefix-table', 'aria-label': 'Derived units in SI base units: choose a unit' });
+    // each row's name is a real button (keyboard and screen reader use), drawn like the plain text it replaces
+    const rowBtns = [];
     const dRows = DERIVED.map((d, i) => {
-      const tr = W.h('tr', { style: { cursor: 'pointer' }, onclick: () => { st.derived = i; dSel.sel.value = String(i); baseUpdate(); } },
-        W.h('td', {}, d[0] + ' (' + d[1] + ')'), W.h('td', {}, expStr(d[4])));
+      const b = W.h('button', { type: 'button', 'aria-pressed': 'false', style: { background: 'none', border: '0', padding: '0', margin: '0', font: 'inherit', color: 'inherit', textAlign: 'left', cursor: 'pointer' },
+        onclick: () => { st.derived = i; dSel.sel.value = String(i); baseUpdate(); } }, d[0] + ' (' + d[1] + ')');
+      rowBtns.push(b);
+      const tr = W.h('tr', {}, W.h('td', {}, b), W.h('td', {}, expStr(d[4])));
       dTable.append(tr); return tr;
     });
     const dNote = W.h('div', { class: 'w-note' }, 'Method: start from an equation that defines the quantity, replace each symbol with its unit, and simplify. Click any row to select it.');
@@ -278,7 +283,7 @@
       dOut.set('eq', d[2]);
       dOut.set('work', d[3]);
       dOut.set('base', '1 ' + d[0] + ' = 1 ' + expStr(d[4]));
-      dRows.forEach((tr, i) => { tr.style.fontWeight = i === st.derived ? '700' : ''; });
+      dRows.forEach((tr, i) => { tr.style.fontWeight = i === st.derived ? '700' : ''; rowBtns[i].setAttribute('aria-pressed', String(i === st.derived)); });
     }
 
     // ---------- start ----------

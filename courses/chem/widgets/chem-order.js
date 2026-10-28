@@ -55,8 +55,8 @@
     state.a0 = num('a0', A_MIN, A_MAX, 1.00, 'starting concentration in mol dm⁻³, 0.10 to 2.00');
 
     const err = W.h('div', { class: 'w-err', role: 'status' });
-    const tabs = [0, 1, 2].map(n => W.h('button', { class: 'w-tab', type: 'button', role: 'tab', text: 'Order ' + n, onclick: () => { state.order = n; update(); } }));
-    body.appendChild(W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-tabs', role: 'tablist', 'aria-label': 'Order of reaction' }, tabs)));
+    const tabs = [0, 1, 2].map(n => W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: 'Order ' + n, onclick: () => { state.order = n; update(); } }));
+    body.appendChild(W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Order of reaction' }, tabs)));
 
     const sK = W.sliderNum({ label: 'Rate constant k', min: K_MIN, max: K_MAX, step: 0.01, value: state.k, oninput: v => { setK(v); } });
     const sA = W.sliderNum({ label: 'Starting concentration [A]₀ (mol dm⁻³)', min: A_MIN, max: A_MAX, step: 0.05, value: state.a0, oninput: v => { setA(v); } });
@@ -142,6 +142,10 @@
       }
     });
     cvsT.cv.setAttribute('role', 'img');
+    cvsT.describe = () => {
+      const shape = m.n === 0 ? 'a straight line falling to zero' : m.n === 1 ? 'an exponential decay' : 'a curve falling steeply then levelling off';
+      return 'Concentration [A] against time in seconds, ' + shape + ', starting at ' + W.fmt(m.a0, 3) + ' mol dm⁻³. Dots mark [A]₀/2, /4, /8 and /16 at ' + [1, 2, 3, 4].map(i => sci(m.T(i)) + ' s').join(', ') + '. Successive half-lives: ' + m.halves.map(sci).join(', ') + ' s.';
+    };
 
     const cvsR = W.canvas(body, {
       height: 230,
@@ -161,6 +165,7 @@
       }
     });
     cvsR.cv.setAttribute('role', 'img');
+    cvsR.describe = () => 'Rate against [A], ' + (m.n === 0 ? 'a horizontal line' : m.n === 1 ? 'a straight line through the origin' : 'a parabola through the origin') + ' for ' + EQ[m.n] + '. At the starting concentration ' + W.fmt(m.a0, 3) + ' mol dm⁻³ the rate is ' + sci(m.rate(m.a0)) + ' mol dm⁻³ s⁻¹.';
 
     const read = W.readout([['eq', 'Rate equation'], ['k', 'Rate constant, k'], ['hl', 'First half-life'], ['hls', 'Successive half-lives'], ['r0', 'Rate at t = 0']]);
     body.appendChild(read.el);
@@ -168,7 +173,7 @@
 
     function update() {
       m = makeModel(state.order, state.k, state.a0);
-      tabs.forEach((b, i) => b.setAttribute('aria-selected', i === state.order ? 'true' : 'false'));
+      tabs.forEach((b, i) => b.setAttribute('aria-pressed', i === state.order ? 'true' : 'false'));
       const lab = sK.el.querySelector('label');
       if (lab) lab.textContent = 'Rate constant k (' + KUNITS[state.order] + ')';
       const rng = sK.el.querySelector('input[type="range"]');
@@ -180,8 +185,8 @@
       const pattern = state.order === 1 ? 'constant' : state.order === 2 ? 'doubling' : 'halving';
       read.set('hls', m.halves.map(sci).join(', ') + ' s (' + pattern + ')');
       read.set('r0', sci(m.rate(m.a0)) + ' mol dm⁻³ s⁻¹');
-      cvsT.cv.setAttribute('aria-label', '[A] against time for ' + WORD[state.order] + ': starts at ' + W.fmt(state.a0, 3) + ' mol dm⁻³; successive half-lives ' + m.halves.map(sci).join(', ') + ' seconds, ' + pattern + '.');
-      cvsR.cv.setAttribute('aria-label', 'Rate against [A] for ' + WORD[state.order] + ': ' + EQ[state.order] + '; the rate at the starting concentration is ' + sci(m.rate(m.a0)) + ' mol per dm cubed per second.');
+      cvsT.setLabel('[A] against time for ' + WORD[state.order] + ' (half-lives ' + pattern + ')');
+      cvsR.setLabel('Rate against [A] for ' + WORD[state.order]);
       cvsT.redraw();
       cvsR.redraw();
     }

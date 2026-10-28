@@ -93,7 +93,7 @@
     const sVa = W.sliderNum({ label: 'Volume of acid in the flask (cm³)', min: 5, max: 50, step: 0.5, value: state.va, oninput: v => { state.va = v; update(true); } });
     const sCb = W.sliderNum({ label: 'Base concentration (mol dm⁻³)', min: 0.01, max: 1, step: 0.005, value: state.cb, oninput: v => { state.cb = v; update(true); } });
     const sPka = W.sliderNum({ label: 'pKa of the weak acid', min: 2, max: 12, step: 0.05, value: state.pka, oninput: v => { state.pka = v; update(); } });
-    const sVb = W.slider({ label: 'Volume of base added (cm³)', min: 0, max: 100, step: 0.1, value: state.vb, fmt: v => W.fix(v, 1), oninput: v => { state.vb = v; update(); } });
+    const sVb = W.slider({ label: 'Volume of base added (cm³)', min: 0, max: 100, step: 0.1, value: state.vb, fmt: v => W.fix(v, 1) + ' cm³', oninput: v => { state.vb = v; update(); } });
 
     body.appendChild(W.h('div', { class: 'w-row' }, selAcid.el, selBase.el, selInd.el));
     body.appendChild(sCa.el); body.appendChild(sVa.el); body.appendChild(sCb.el);
@@ -213,6 +213,14 @@
       }
     });
     cvs.cv.setAttribute('role', 'img');
+    cvs.describe = () => {
+      if (!model) return '';
+      const pv = phAt(state.vb, model.s);
+      return 'pH against volume of base added, from 0 to ' + W.fmt(2 * model.veq, 3) + ' cm³. The curve starts at pH ' + W.fix(model.ph0, 2) + ' and ends near pH ' + W.fix(model.phEnd, 2) + '. '
+        + (model.sharp ? 'It rises steeply from pH ' + W.fix(model.steepLo, 1) + ' to ' + W.fix(model.steepHi, 1) + ' around the equivalence point' : 'There is no sharp rise: the pH changes only from ' + W.fix(model.steepLo, 1) + ' to ' + W.fix(model.steepHi, 1) + ' near the equivalence point')
+        + ', which is at ' + W.fix(model.veq, 1) + ' cm³ and pH ' + W.fix(model.phEq, 2) + '. Your point is at ' + W.fix(state.vb, 1) + ' cm³, pH ' + W.fix(pv, 2) + '.'
+        + (state.ind !== 'none' ? ' The ' + INDICATORS.find(i => i.id === state.ind).name + ' range is shaded.' : '');
+    };
 
     const read = W.readout([['eq', 'Equivalence volume'], ['pheq', 'pH at equivalence'], ['ph0', 'Initial pH'], ['steep', 'Steep part (within 2% of the equivalence volume)'], ['now', 'At the volume you chose'], ['ind', 'Indicator']]);
     body.appendChild(read.el);
@@ -254,7 +262,7 @@
       read.set('steep', model.sharp ? 'pH ' + W.fix(model.steepLo, 1) + ' to ' + W.fix(model.steepHi, 1) : 'none: pH changes only from ' + W.fix(model.steepLo, 1) + ' to ' + W.fix(model.steepHi, 1));
       read.set('now', W.fix(state.vb, 1) + ' cm³ added: pH ' + W.fix(pv, 2) + (state.vb < model.veq - 1e-9 ? ' (acid in excess)' : (state.vb > model.veq + 1e-9 ? ' (base in excess)' : ' (equivalence)')));
       read.set('ind', indicatorText(ind) + colourNow(ind, pv));
-      cvs.cv.setAttribute('aria-label', 'Titration curve, ' + (state.aStrong ? 'strong' : 'weak') + ' acid with ' + (state.bStrong ? 'strong' : 'weak') + ' base: starts at pH ' + W.fix(model.ph0, 2) + ', equivalence at ' + W.fmt(model.veq, 3) + ' cm³ and pH ' + W.fix(model.phEq, 2) + '.');
+      cvs.setLabel('Titration curve, ' + (state.aStrong ? 'strong' : 'weak') + ' acid with ' + (state.bStrong ? 'strong' : 'weak') + ' base');
       cvs.redraw();
     }
 

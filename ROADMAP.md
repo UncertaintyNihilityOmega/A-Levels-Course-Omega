@@ -2,8 +2,12 @@
 
 ## Now
 - No run active. Guard off (`.claude/hooks/guard-course.txt` absent). No scheduled task yet, no lock.
-- Queue item 1, part A done: installable web app (manifest, icons, offline service worker) and macOS tooling.
-  Next: part B, the accessibility pass; then part C, the `zta-agent-run` scheduled task and one test run.
+- Queue item 1, parts A and B done: installable web app and macOS tooling; accessibility pass (WCAG 2.2 AA: keyboard,
+  screen-reader labels, contrast tokens, focus, 200% text and 320 px reflow, reduced motion; engine/README.md
+  "Accessibility"; every math, phys and chem widget probed clean).
+  Next: part C, the `zta-agent-run` scheduled task and one test run (from the coordinator chat).
+- User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
+  a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
   name "Zero to A*"); open it in flight mode (home, a chapter in each course, search); portrait and landscape: the
   notch and home bar cover no text, menu or toast; dark mode from the system and from the theme button (status bar

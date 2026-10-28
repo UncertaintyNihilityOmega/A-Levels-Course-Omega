@@ -69,9 +69,9 @@
     const sel = W.h('select', { 'aria-label': 'Reaction' });
     Object.keys(SYSTEMS).forEach(k => sel.appendChild(W.h('option', { value: k, text: SYSTEMS[k].name })));
     sel.value = key;
-    const tabLc = W.h('button', { class: 'w-tab', type: 'button', role: 'tab', text: 'Le Chatelier' });
-    const tabKc = W.h('button', { class: 'w-tab', type: 'button', role: 'tab', text: 'Kc from data' });
-    body.appendChild(W.h('div', { class: 'w-row' }, W.h('label', { class: 'w-ctl' }, W.h('span', { class: 'w-lab', text: 'Reaction' }), sel), W.h('div', { class: 'w-tabs', role: 'tablist' }, tabLc, tabKc)));
+    const tabLc = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: 'Le Chatelier' });
+    const tabKc = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: 'Kc from data' });
+    body.appendChild(W.h('div', { class: 'w-row' }, W.h('label', { class: 'w-ctl' }, W.h('span', { class: 'w-lab', text: 'Reaction' }), sel), W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'View' }, tabLc, tabKc)));
     const eqLine = W.h('div', { class: 'w-note', style: { fontSize: '1rem', color: 'var(--ink)' } });
     const infoLine = W.h('div', { class: 'w-note' });
     body.appendChild(eqLine);
@@ -115,6 +115,8 @@
     panelLc.appendChild(cvsHost);
     const canvasSpec = {
       height: 215,
+      label: 'Bar chart of reactants and products before and after the change',
+      describe: () => 'Relative amounts, not to scale. Reactants: ' + Math.round((1 - st.before) * 100) + ' before (dashed outline), ' + Math.round((1 - st.p) * 100) + ' after (solid bar). Products: ' + Math.round(st.before * 100) + ' before, ' + Math.round(st.p * 100) + ' after.',
       draw(ctx, w, h, col) {
         ctx.font = '13px ' + col.font; ctx.textBaseline = 'alphabetic';
         const left = 40, bottom = h - 44, top = 34, H = bottom - top;
@@ -203,7 +205,6 @@
         why.textContent = r.why;
       }
       if (!cvs) return;
-      cvs.cv.setAttribute('aria-label', 'Bar chart of relative amounts of reactants and products before and after the change: reactants ' + Math.round((1 - st.before) * 100) + ' to ' + Math.round((1 - st.p) * 100) + ', products ' + Math.round(st.before * 100) + ' to ' + Math.round(st.p * 100) + ' (relative units).');
       cvs.redraw();
     }
 
@@ -282,11 +283,11 @@
         ['equilibrium / mol dm' + sup(-3), conc.map((x, i) => co[i] > 0 ? num3(Math.max(0, x)) : '–')]
       ];
       const t = W.h('table', {});
-      const head = W.h('tr', {}, W.h('th', { text: '' }));
-      [0, 1, 2, 3].forEach(i => { if (co[i] > 0) head.appendChild(W.h('th', { text: names[i] + (sys.sp[i] ? ' (' + sys.sp[i] + ')' : '') })); });
+      const head = W.h('tr', {}, W.h('th', { scope: 'col' }, W.h('span', { class: 'sr-only', text: 'Quantity' })));
+      [0, 1, 2, 3].forEach(i => { if (co[i] > 0) head.appendChild(W.h('th', { scope: 'col', text: names[i] + (sys.sp[i] ? ' (' + sys.sp[i] + ')' : '') })); });
       t.appendChild(head);
       rows.forEach(r => {
-        const tr = W.h('tr', {}, W.h('td', { text: r[0] }));
+        const tr = W.h('tr', {}, W.h('th', { scope: 'row', text: r[0], style: { fontWeight: 'normal', fontSize: 'inherit', color: 'var(--ink)' } }));
         [0, 1, 2, 3].forEach(i => { if (co[i] > 0) tr.appendChild(W.h('td', { text: r[1][i] })); });
         t.appendChild(tr);
       });
@@ -323,8 +324,8 @@
       tab = t;
       panelLc.style.display = t === 'lc' ? '' : 'none';
       panelKc.style.display = t === 'kc' ? '' : 'none';
-      tabLc.setAttribute('aria-selected', t === 'lc' ? 'true' : 'false');
-      tabKc.setAttribute('aria-selected', t === 'kc' ? 'true' : 'false');
+      tabLc.setAttribute('aria-pressed', t === 'lc' ? 'true' : 'false');
+      tabKc.setAttribute('aria-pressed', t === 'kc' ? 'true' : 'false');
       if (t === 'lc') { ensureCanvas(); show(); }
     }
     tabLc.onclick = () => setTab('lc');

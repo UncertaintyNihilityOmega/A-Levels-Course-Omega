@@ -271,7 +271,7 @@ function createRenderer(opts = {}) {
       if (r1) { rev = r1[1]; q = q.slice(r1[0].length); }
       if (!marks) { const m2 = q.match(/\s*\[(\d+) marks?\]\s*$/); if (m2) { marks = +m2[1]; q = q.slice(0, q.length - m2[0].length); } }
       st.marks += marks;
-      const badge = marks ? `<span class="tq-m" title="${marks} mark${marks === 1 ? '' : 's'}">[${marks}]</span>` : '';
+      const badge = marks ? `<span class="tq-m" title="${marks} mark${marks === 1 ? '' : 's'}"><span aria-hidden="true">[${marks}]</span><span class="sr-only">${marks} mark${marks === 1 ? '' : 's'}</span></span>` : '';
       let hints = '';
       for (let k = it.h.length - 1; k >= 0; k--) {
         hints = `<details class="th"><summary>${it.h.length > 1 ? `Hint ${k + 1} of ${it.h.length}` : 'Hint'}</summary><div class="th-b">${processBlocks(it.h[k].trim())}${hints}</div></details>`;

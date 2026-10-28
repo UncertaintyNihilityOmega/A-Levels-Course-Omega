@@ -141,15 +141,15 @@
     out.appendChild(note);
 
     // mass <-> moles
-    const tabMass = W.h('button', { class: 'w-tab', type: 'button', text: 'mass → moles', onclick: () => setMode('mass') });
-    const tabMol = W.h('button', { class: 'w-tab', type: 'button', text: 'moles → mass', onclick: () => setMode('mol') });
+    const tabMass = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'true', text: 'mass → moles', onclick: () => setMode('mass') });
+    const tabMol = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: 'moles → mass', onclick: () => setMode('mol') });
     const valField = W.field({ label: 'Mass / g', value: value, type: 'text', width: '8em', oninput: () => { value = valField.get(); conv(); } });
     const labEl = valField.el.querySelector('label') || valField.el.querySelector('.w-lab');
-    const conv1 = W.h('div', { style: { margin: '6px 0 2px' } });
+    const conv1 = W.h('div', { 'aria-live': 'polite', style: { margin: '6px 0 2px' } });
     const conv2 = W.h('div', { class: 'w-lab', style: { margin: '2px 0' } });
     const convErr = W.h('div', { class: 'w-err', role: 'status' });
     out.appendChild(W.h('div', { style: { fontWeight: '600', margin: '12px 0 4px' }, text: 'Mass and moles' }));
-    out.appendChild(W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-tabs' }, tabMass, tabMol)));
+    out.appendChild(W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Direction of the conversion' }, tabMass, tabMol)));
     out.appendChild(W.h('div', { class: 'w-row' }, valField.el));
     out.appendChild(convErr);
     out.appendChild(conv1);
@@ -158,8 +158,8 @@
 
     function setMode(m) {
       mode = m;
-      tabMass.setAttribute('aria-selected', m === 'mass' ? 'true' : 'false');
-      tabMol.setAttribute('aria-selected', m === 'mol' ? 'true' : 'false');
+      tabMass.setAttribute('aria-pressed', m === 'mass' ? 'true' : 'false');
+      tabMol.setAttribute('aria-pressed', m === 'mol' ? 'true' : 'false');
       const labTxt = m === 'mass' ? 'Mass / g' : 'Amount / mol';
       if (labEl) labEl.textContent = labTxt;
       if (valField.input) valField.input.setAttribute('aria-label', labTxt);
@@ -204,17 +204,18 @@
         stat.set(mr.toFixed(1));
         tbl.textContent = '';
         const PAD = { padding: '6px 5px' };
-        const th = t => W.h('th', { text: t, style: PAD });
+        const th = t => W.h('th', { scope: 'col', text: t, style: PAD });
+        const rowTh = t => W.h('th', { scope: 'row', text: t, style: Object.assign({ fontSize: 'inherit', color: 'var(--ink)' }, PAD) });
         const td = t => W.h('td', { text: t, style: PAD });
         const head = W.h('tr', {}, th('Element'), th('Atoms'), th('Ar'), th('Mass'), th('% mass'));
         tbl.appendChild(head);
         total.forEach((n, sym) => {
           const a = AR[sym].ar, contrib = n * a;
           tbl.appendChild(W.h('tr', {},
-            W.h('td', { style: PAD }, W.h('div', { text: sym, style: { fontWeight: '600' } }), W.h('div', { class: 'w-lab', text: AR[sym].name })),
+            W.h('th', { scope: 'row', style: Object.assign({ fontSize: 'inherit', color: 'var(--ink)', fontWeight: 'normal' }, PAD) }, W.h('div', { text: sym, style: { fontWeight: '600' } }), W.h('div', { class: 'w-lab', text: AR[sym].name })),
             td(String(n)), td(a.toFixed(1)), td(contrib.toFixed(1)), td(sig3(contrib / mr * 100))));
         });
-        tbl.appendChild(W.h('tr', {}, td('Total'), td(''), td(''), td(mr.toFixed(1)), td('100')));
+        tbl.appendChild(W.h('tr', {}, rowTh('Total'), td(''), td(''), td(mr.toFixed(1)), td('100')));
         const lines = [];
         if (parts.length > 1 || parts[0].k > 1) {
           lines.push(parts.map(p => (p.k > 1 ? p.k + ' × ' : '') + p.text + ' (' + p.mr.toFixed(1) + ')').join(' + ') + ' = ' + mr.toFixed(1) + '.');
@@ -237,8 +238,6 @@
       conv();
     }
 
-    tabMass.setAttribute('aria-selected', 'true');
-    tabMol.setAttribute('aria-selected', 'false');
     calc();
   });
 })();

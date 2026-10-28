@@ -25,6 +25,22 @@
 - After testing on port 5100, unregister the worker if a later session needs a plain server (it serves the cache
   when the server is down).
 
+## Accessibility (WCAG 2.2 AA; Writer rules in `kit-src/STYLE.md` and `WIDGETS.md`)
+- Shell: skip link, landmarks (banner, nav, main, aside), one h1 per page. After a navigation focus moves to the new
+  page's h1 (or the linked section); the first load keeps focus where it is.
+- Live text: the toast is `aria-hidden`; `#announce` (status) reads its message. Quiz results, mock steps and search
+  counts are read the same way. Widgets: `W.stat`/`W.readout` are live, `W.say` for canvas results.
+- Keyboard: the phone drawer is hidden (`visibility`) when closed, takes focus when opened, closes on Escape or when focus
+  leaves; search is a combobox (arrows, Enter, Escape; Tab leaves and closes); answered quiz options stay focusable
+  (`aria-disabled`); wide tables and equations that scroll sideways get `tabindex="0"` (`markScrollers`).
+- Contrast: every token pair passes AA in light and dark (text 4.5:1, focus ring and input borders `--rule-ui` 3:1).
+  Change a token only after measuring it in both themes.
+- Motion: `prefers-reduced-motion` stops CSS animation and transitions; widgets use `W.animate`/`W.reducedMotion`.
+- Figures: `lint.js` fails an SVG without `role="img"` + `aria-label` (or `aria-hidden`) and an `<img>` without `alt`;
+  `plot.js` writes a description of each `:::plot` (axes, ranges, labels, points) unless `--alt` is given.
+- Kit probe: `widget --probe` reports `a11y:` problems (unnamed controls, canvases without label or description,
+  unlabelled svg, positive tabindex, repeated ids, text contrast).
+
 ## Ids and links
 - Course chapter ids start with `<course>.`; core ids are free (`home`, `start.*`, `about.*`, `road.*`, `tools.*`).
 - `aliases` in `course.json` / `core.json` map old ids to new; links are rewritten. Unknown ids are build errors;

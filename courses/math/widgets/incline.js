@@ -44,8 +44,7 @@
     if (pulley) ctl.append(sl('Hanging mass (kg)', 0.5, 20, 0.5, m2, (v) => { m2 = clamp(v, 0.5, 20); }).el);
     body.append(ctl);
 
-    const cv = W.canvas(body, { height: 300, draw });
-    cv.wrap.setAttribute('role', 'img');
+    const cv = W.canvas(body, { height: 300, draw, label: 'Block on a slope with its force arrows', describe: describeScene });
     const R = W.readout([['state', 'State'], ['R', 'Normal reaction R'], ['F', 'Friction F'], ['max', 'Greatest friction μR'], ['a', 'Acceleration']].concat(pulley ? [['T', 'Tension T']] : []));
     body.append(R.el);
     body.append(W.h('div', { class: 'w-note' }, pulley
@@ -190,8 +189,17 @@
       R.set('max', S.lift ? '0 N' : `${W.fmt(S.Fmax, 3)} N`);
       R.set('a', isNaN(S.a) ? '—' : Math.abs(S.a) < 5e-4 ? '0' : `${W.fmt(Math.abs(S.a), 3)} m s⁻² ${S.a > 0 ? 'up' : 'down'} the slope`);
       if (pulley) R.set('T', S.slack ? '0 N (string slack)' : `${W.fmt(S.T, 3)} N`);
-      cv.wrap.setAttribute('aria-label', `Block of mass ${m} kg on a slope at ${theta} degrees, friction coefficient ${mu}, applied force ${P} newtons. ${S.state}.`);
       cv.redraw();
+    }
+    function describeScene() {
+      const S = calc();
+      const parts = [`Block of mass ${W.fmt(m, 3)} kg on a slope at ${theta} degrees, friction coefficient ${mu}.`,
+        `Weight ${W.fmt(S.mg, 3)} N down`];
+      if (!S.lift) parts.push(`normal reaction ${W.fmt(S.Rn, 3)} N`);
+      if (!S.lift && Math.abs(S.F) >= 0.005) parts.push(`friction ${W.fmt(Math.abs(S.F), 3)} N ${S.F > 0 ? 'up' : 'down'} the slope`);
+      if (P >= 0.05) parts.push(`applied force P ${W.fmt(P, 3)} N at ${beta} degrees above the slope`);
+      if (pulley) parts.push(`tension ${S.slack ? '0 N, string slack' : W.fmt(S.T, 3) + ' N'} with a hanging mass of ${W.fmt(m2, 3)} kg`);
+      return `${parts.join(', ')}. ${S.state}.`;
     }
     update();
   });

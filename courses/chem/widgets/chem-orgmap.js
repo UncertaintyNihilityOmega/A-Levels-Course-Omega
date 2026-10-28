@@ -204,14 +204,24 @@
     body.appendChild(W.h('div', { class: 'w-note', text: 'Try: start at alkene, target carboxylic acid; then start at alcohol (primary), target carboxylic acid, and tick the carbon box to see the routes that make an acid with one more carbon. A route on the map is possible in principle: check that the carbon skeleton fits your molecule, for example a ketone needs a secondary alcohol.' }));
 
     const chipStyle = { margin: '2px 4px 2px 0' };
+    let detailTitle = null, detailSummary = '', ready = false;
 
     function visibleNodes() { return NODES.filter(n => inLevel(level, { level: n[2] })); }
     function visibleEdges() { return EDGES.filter(e => inLevel(level, e)); }
 
-    function selectNode(id) { sel = id; draw(); }
+    // the lists are rebuilt on every choice, so put keyboard focus back on the equivalent control
+    function selectNode(id, where) {
+      sel = id; draw();
+      if (where === 'grid') { const b = grid.querySelector('[data-id="' + id + '"]'); if (b) b.focus(); }
+      else if (where === 'list') detailTitle.focus();
+      W.say(body, NODE[id].label + ' selected. ' + (detailSummary || ''));
+    }
 
-    function chip(id, active) {
-      const b = W.h('button', { class: 'btn btn-sm' + (active ? '' : ' btn-sec'), type: 'button', text: NODE[id].label, style: chipStyle, onclick: () => selectNode(id) });
+    // a tick as well as the filled look marks the chosen group (selection is not shown by colour alone)
+    function chip(id, active, where) {
+      const b = W.h('button', { class: 'btn btn-sm' + (active ? '' : ' btn-sec'), type: 'button', style: chipStyle, 'data-id': id, onclick: () => selectNode(id, where) });
+      if (active) b.appendChild(W.h('span', { 'aria-hidden': 'true', text: '✓ ' }));
+      b.appendChild(document.createTextNode(NODE[id].label));
       b.setAttribute('aria-pressed', active ? 'true' : 'false');
       return b;
     }
@@ -224,7 +234,7 @@
         if (!list.length) return;
         grid.appendChild(W.h('div', { class: 'w-lab', style: { margin: '8px 0 2px' }, text: FAM[fam] }));
         const row = W.h('div', { style: { display: 'flex', flexWrap: 'wrap' } });
-        list.forEach(n => row.appendChild(chip(n[0], n[0] === sel)));
+        list.forEach(n => row.appendChild(chip(n[0], n[0] === sel, 'grid')));
         grid.appendChild(row);
       });
     }
@@ -250,7 +260,7 @@
       groups.forEach(g => {
         const row = W.h('div', { style: { borderTop: '1px solid var(--rule)', padding: '5px 0' } });
         const names = W.h('div');
-        g.ids.forEach(id => names.appendChild(chip(id, false)));
+        g.ids.forEach(id => names.appendChild(chip(id, false, 'list')));
         row.appendChild(names);
         row.appendChild(W.h('div', { style: { fontSize: '13px' }, text: g.reagents }));
         row.appendChild(W.h('div', { style: { fontSize: '13px', color: 'var(--ink-2)' }, text: 'Type: ' + g.type + '.' + (g.note ? ' ' + g.note : '') }));
@@ -263,13 +273,17 @@
       detail.innerHTML = '';
       const n = NODE[sel];
       const edges = visibleEdges();
-      detail.appendChild(W.h('div', { style: { fontWeight: '600' }, text: n.label }));
+      detailTitle = W.h('div', { style: { fontWeight: '600' }, tabindex: '-1', text: n.label });
+      detail.appendChild(detailTitle);
       detail.appendChild(W.h('div', { style: { fontSize: '13px', color: 'var(--ink-2)' }, text: n.note }));
-      detail.appendChild(listBlock('Made from', grouped(edges.filter(e => e.to === sel), 'from')));
-      detail.appendChild(listBlock('Turns into', grouped(edges.filter(e => e.from === sel), 'to')));
+      const madeFrom = grouped(edges.filter(e => e.to === sel), 'from'), turnsInto = grouped(edges.filter(e => e.from === sel), 'to');
+      const cnt = gs => gs.reduce((a, g) => a + g.ids.length, 0);
+      detailSummary = 'Made from ' + cnt(madeFrom) + ' group' + (cnt(madeFrom) === 1 ? '' : 's') + '; turns into ' + cnt(turnsInto) + '.';
+      detail.appendChild(listBlock('Made from', madeFrom));
+      detail.appendChild(listBlock('Turns into', turnsInto));
       const useRow = W.h('div', { class: 'w-row', style: { marginTop: '8px' } },
-        W.h('button', { class: 'btn btn-sm btn-sec', type: 'button', text: 'Use as route start', onclick: () => { from = sel; if (to === from) to = from === 'acid' ? 'alkene' : 'acid'; fillRoute(); } }),
-        W.h('button', { class: 'btn btn-sm btn-sec', type: 'button', text: 'Use as route target', onclick: () => { to = sel; if (to === from) from = to === 'alkene' ? 'acid' : 'alkene'; fillRoute(); } }));
+        W.h('button', { class: 'btn btn-sm btn-sec', type: 'button', text: 'Use as route start', 'data-use': 'start', onclick: () => { from = sel; if (to === from) to = from === 'acid' ? 'alkene' : 'acid'; fillRoute('start'); } }),
+        W.h('button', { class: 'btn btn-sm btn-sec', type: 'button', text: 'Use as route target', 'data-use': 'target', onclick: () => { to = sel; if (to === from) from = to === 'alkene' ? 'acid' : 'alkene'; fillRoute('target'); } }));
       detail.appendChild(useRow);
     }
 
@@ -323,6 +337,7 @@
       routes.innerHTML = '';
       if (from === to) { routes.appendChild(W.h('div', { class: 'w-err', text: 'Choose two different groups.' })); return; }
       const rs = findRoutes(from, to);
+      if (ready) W.say(body, rs.length ? rs.length + (rs.length === 1 ? ' route' : ' routes') + ' found from ' + NODE[from].label + ' to ' + NODE[to].label + '.' : 'No route found from ' + NODE[from].label + ' to ' + NODE[to].label + '.');
       if (!rs.length) {
         routes.appendChild(W.h('div', { text: 'No route in the syllabus within 4 steps' + (carbonBox.checked ? ' that adds a carbon atom' : '') + ' from ' + NODE[from].label + ' to ' + NODE[to].label + '.' }));
         return;
@@ -340,7 +355,10 @@
       });
     }
 
-    function fillRoute() { fillSelects(); drawRoutes(); drawDetail(); }
+    function fillRoute(use) {
+      fillSelects(); drawRoutes(); drawDetail();
+      if (use) { const b = detail.querySelector('[data-use="' + use + '"]'); if (b) b.focus(); }
+    }
 
     function draw() {
       if (!NODE[sel] || !inLevel(level, NODE[sel])) sel = 'halo';
@@ -354,5 +372,6 @@
     toSel.addEventListener('change', () => { to = toSel.value; drawRoutes(); });
     carbonBox.addEventListener('change', drawRoutes);
     draw();
+    ready = true;
   });
 })();

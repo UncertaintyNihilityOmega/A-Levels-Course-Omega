@@ -47,15 +47,15 @@
   }
   /** segmented buttons (.w-tabs). items: [[value, text], …] */
   function tabs(items, value, onchange, label) {
-    const el = W.h('div', { class: 'w-tabs', role: 'tablist', 'aria-label': label });
+    const el = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': label });
     let cur = value;
     const btns = items.map(([v, text]) => {
-      const b = W.h('button', { type: 'button', class: 'w-tab', role: 'tab', 'aria-selected': String(v === value) }, text);
+      const b = W.h('button', { type: 'button', class: 'w-tab', 'aria-pressed': String(v === value) }, text);
       b.addEventListener('click', () => { set(v); onchange(v); });
       el.append(b);
       return b;
     });
-    function set(v) { cur = v; items.forEach(([iv], i) => btns[i].setAttribute('aria-selected', String(iv === v))); }
+    function set(v) { cur = v; items.forEach(([iv], i) => btns[i].setAttribute('aria-pressed', String(iv === v))); }
     return { el, set, get: () => cur };
   }
   /** pointer position in canvas CSS pixels (allows for the frame border) */
@@ -228,10 +228,11 @@
     body.append(top, errAll);
 
     /* ---- canvas ---- */
-    const cv = W.canvas(body, { height: H, draw: safeDraw(draw) });
+    const cv = W.canvas(body, { height: H, draw: safeDraw(draw), label: 'Graph', describe: describeGraph });
     const wrap = cv.wrap;
     wrap.tabIndex = 0;
-    wrap.setAttribute('role', 'img');
+    wrap.setAttribute('role', 'group');
+    wrap.setAttribute('aria-label', 'Graph keyboard controls: arrow keys pan, plus and minus zoom, 0 resets the view');
     wrap.style.cursor = 'crosshair';
 
     /* ---- readout + view buttons ---- */
@@ -349,8 +350,33 @@
     }
     function setAria() {
       const list = F.map((s, i) => (s.f ? labelOf(i) : null)).filter(Boolean);
-      wrap.setAttribute('aria-label', `Graph of ${list.length ? list.join('; ') : 'no functions yet'}. Arrow keys pan, plus and minus zoom, 0 resets the view.`);
+      cv.setLabel(`Graph of ${list.length ? list.join('; ') : 'no functions yet'}`);
       legendEls.forEach((t, i) => { t.textContent = labelOf(i); });
+    }
+    /** what the graph shows now, for screen readers: the view, each curve's range and end values, the tangent and shading */
+    function describeGraph() {
+      fillScope();
+      const u = deg ? '°' : '';
+      const out = [`The view runs from x = ${W.fmt(view.x0, 4)}${u} to ${W.fmt(view.x1, 4)}${u} and y = ${W.fmt(view.y0, 4)} to ${W.fmt(view.y1, 4)}.`];
+      F.forEach((s, i) => {
+        if (!s.f) return;
+        const f = evalFn(s.f);
+        let lo = Infinity, hi = -Infinity;
+        for (let k = 0; k <= 60; k++) { const y = f(view.x0 + (view.x1 - view.x0) * k / 60); if (isFinite(y)) { lo = Math.min(lo, y); hi = Math.max(hi, y); } }
+        const at = (x) => { const y = f(x); return isFinite(y) ? W.fmt(y, 3) : 'undefined'; };
+        out.push(`${labelOf(i)}: ${lo <= hi ? `y goes from ${W.fmt(lo, 3)} to ${W.fmt(hi, 3)} in view` : 'no values in view'}, with y = ${at(view.x0)} at the left edge and ${at(view.x1)} at the right edge.`);
+      });
+      if (tanOn && tanInfo.textContent) out.push(tanInfo.textContent + '.');
+      if (shade && shadeInfo.textContent) out.push(shadeInfo.textContent + '.');
+      return out.join(' ');
+    }
+    /** read out the tangent and chord gradients after the sliders or the point are moved */
+    function sayTangent() {
+      const fn = F[0] && F[0].f ? evalFn(F[0].f) : null;
+      if (!fn) return;
+      fillScope();
+      const y0 = fn(tx), y1 = fn(tx + th), d = 1e-5 * Math.max(1, Math.abs(tx)), m = (fn(tx + d) - fn(tx - d)) / (2 * d);
+      W.say(body, `Tangent gradient ${isFinite(m) ? W.fmt(m, 4) : 'undefined'}, chord gradient ${isFinite(y0) && isFinite(y1) ? W.fmt((y1 - y0) / th, 4) : 'undefined'}.`);
     }
 
     F.forEach((_, i) => { parseFn(i); showErr(i); });
@@ -390,13 +416,13 @@
     function setTx(v) {
       tx = clamp(Math.round(v * 100) / 100, home0.x0, home0.x1);
       if (tanSl) tanSl.set(tx);
-      cv.redraw();
+      cv.redraw(); sayTangent();
     }
     if (tanOn) {
       tx = clamp(tx, home0.x0, home0.x1);
-      tanSl = W.slider({ label: 'x₀', min: home0.x0, max: home0.x1, step: 0.01, value: tx, fmt: (v) => W.fix(v, 2), oninput: (v) => { tx = v; cv.redraw(); } });
+      tanSl = W.slider({ label: 'x₀', min: home0.x0, max: home0.x1, step: 0.01, value: tx, fmt: (v) => W.fix(v, 2), oninput: (v) => { tx = v; cv.redraw(); sayTangent(); } });
       tanSl.input.setAttribute('aria-label', 'Point of tangency x0');
-      chSl = W.slider({ label: 'h', min: 0.001, max: 3, step: 0.001, value: th, fmt: (v) => W.fix(v, 3), oninput: (v) => { th = v; cv.redraw(); } });
+      chSl = W.slider({ label: 'h', min: 0.001, max: 3, step: 0.001, value: th, fmt: (v) => W.fix(v, 3), oninput: (v) => { th = v; cv.redraw(); sayTangent(); } });
       chSl.input.setAttribute('aria-label', 'Chord width h: the second point is at x0 + h');
       tanBox.append(tanSl.el, chSl.el);
     }
@@ -687,13 +713,14 @@
     const angTxt = (d) => { if (!rad) return `${d}°`; const f = piFrac(d); return f ? `${f} rad` : `${W.fix(d * Math.PI / 180, 3)} rad`; };
 
     const { body } = W.frame(el, 'Unit circle', 'drag the point round the circle');
-    const cv = W.canvas(body, { height: 300, draw: safeDraw(draw) });
+    const cv = W.canvas(body, { height: 300, draw: safeDraw(draw), label: 'Unit circle with a point at angle θ and the sine curve beside it', describe: describeCircle });
     const wrap = cv.wrap;
     wrap.tabIndex = 0;
-    wrap.setAttribute('role', 'img');
+    wrap.setAttribute('role', 'group');
+    wrap.setAttribute('aria-label', 'Unit circle keyboard controls: arrow keys change the angle by 1 degree, with Shift by 15 degrees');
     wrap.style.cursor = 'pointer';
     const sl = W.slider({ label: 'Angle θ', min: 0, max: 360, step: 1, value: th, fmt: angTxt, oninput: (v) => { th = v; update(); } });
-    sl.input.setAttribute('aria-label', 'Angle theta in degrees');
+    sl.input.setAttribute('aria-label', 'Angle theta');
     const unit = tabs([['deg', 'Degrees'], ['rad', 'Radians']], rad ? 'rad' : 'deg', (v) => { rad = v === 'rad'; sl.set(th); update(); }, 'Angle unit');
     sl.el.style.flex = '3 1 14rem';
     body.append(W.h('div', { class: 'w-row', style: { alignItems: 'center' } }, sl.el, unit.el));
@@ -723,8 +750,12 @@
       sCos.set(exactTxt(ex && ex.cos, c));
       sTan.set(ex ? (ex.tan == null ? 'undefined' : exactTxt(ex.tan, s / c)) : (Math.abs(c) < 1e-9 ? 'undefined' : W.fix(s / c, 4)));
       sQ.set(quadrant(th));
-      wrap.setAttribute('aria-label', `Unit circle with angle ${th} degrees: sin = ${W.fix(s, 4)}, cos = ${W.fix(c, 4)}. Drag or use arrow keys to change the angle.`);
       cv.redraw();
+    }
+    function describeCircle() {
+      const r = th * Math.PI / 180;
+      return `The point at angle ${th} degrees (${W.fix(r, 3)} radians) on the unit circle is (cos θ, sin θ) = (${W.fix(Math.cos(r), 4)}, ${W.fix(Math.sin(r), 4)}), `
+        + `${quadrant(th)}. The sine curve beside the circle is traced from 0 to ${th} degrees. Drag, use the arrow keys, or use the slider to change the angle.`;
     }
 
     let G = null; // geometry from last draw
@@ -935,9 +966,8 @@
     const err = W.h('div', { class: 'w-err', role: 'status' });
     show(err, false);
     body.append(err);
-    const cv = W.canvas(body, { height: 270, draw: safeDraw(draw) });
+    const cv = W.canvas(body, { height: 270, draw: safeDraw(draw), label: 'Box plot and dot plot of the data', describe: () => describeStats() });
     cv.wrap.style.touchAction = 'pan-y';
-    cv.wrap.setAttribute('role', 'img');
     const T = {};
     const mk = (k, label, hi) => (T[k] = W.stat(label, hi)).el;
     const rowA = W.h('div', { class: 'w-out' }, mk('n', 'n'), mk('sum', 'Σx'), mk('sum2', 'Σx²'), mk('mean', 'Mean x̄', true), mk('sd', 'σ (divide by n)'), mk('s', 's (divide by n − 1)'));
@@ -990,7 +1020,6 @@
       if (!S) {
         for (const k in T) T[k].set('—');
         work.textContent = '';
-        cv.wrap.setAttribute('aria-label', 'No data yet');
         cv.redraw();
         return;
       }
@@ -1022,8 +1051,12 @@
       line(`Fences: Q₁ − 1.5 × IQR = ${fx(S.lf)},  Q₃ + 1.5 × IQR = ${fx(S.uf)}.  `,
         W.h('b', { style: { color: S.out.length ? 'var(--red)' : 'inherit', fontWeight: 600 } },
           S.out.length ? `Outlier${S.out.length > 1 ? 's' : ''}: ${list(S.out)}` : 'No outliers'));
-      cv.wrap.setAttribute('aria-label', `Box plot and dot plot of ${n} values: min ${fx(S.min)}, lower quartile ${fx(S.q1)}, median ${fx(S.med)}, upper quartile ${fx(S.q3)}, max ${fx(S.max)}, mean ${W.fmt(S.mean, 4)}.`);
       cv.redraw();
+    }
+    function describeStats() {
+      if (!S) return 'No data yet.';
+      return `Box plot and dot plot of ${S.n} values: minimum ${fx(S.min)}, lower quartile ${fx(S.q1)}, median ${fx(S.med)}, upper quartile ${fx(S.q3)}, maximum ${fx(S.max)}, mean ${W.fmt(S.mean, 4)}. `
+        + (S.out.length ? `Outliers: ${list(S.out)}.` : 'No outliers.');
     }
 
     function draw(ctx, w, h, c) {
@@ -1129,9 +1162,8 @@
     }
 
     const { body } = W.frame(el, 'Iteration', 'x₍ₙ₊₁₎ = F(xₙ): follow the staircase to the root');
-    const cv = W.canvas(body, { height: 300, draw: safeDraw(draw) });
-    cv.wrap.setAttribute('role', 'img');
-    const fIn = W.field({ label: 'F(x) =', value: src, type: 'text', width: '16rem', placeholder: 'e.g. (2x+5)^(1/3)', oninput: (v) => { src = stripLhs(String(v)); update(); } });
+    const cv = W.canvas(body, { height: 300, draw: safeDraw(draw), label: 'Staircase diagram of the iteration', describe: describeIter });
+    const fIn =W.field({ label: 'F(x) =', value: src, type: 'text', width: '16rem', placeholder: 'e.g. (2x+5)^(1/3)', oninput: (v) => { src = stripLhs(String(v)); update(); } });
     fIn.input.setAttribute('aria-label', 'The function F of x in the iteration');
     fIn.input.setAttribute('spellcheck', 'false'); fIn.input.setAttribute('autocomplete', 'off');
     const stepX = hi - lo > 50 ? 0.1 : hi - lo >= 1 ? 0.01 : 0.001;
@@ -1146,7 +1178,7 @@
     const verdict = W.stat('What happens', true);
     const lim = W.stat('Last value');
     body.append(W.h('div', { class: 'w-out' }, verdict.el, lim.el));
-    const grid = W.h('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(10.5rem, 1fr))', gap: '2px 12px', fontFamily: 'var(--f-mono)', fontSize: '0.85rem' }, 'aria-label': 'Table of iterates' });
+    const grid = W.h('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(10.5rem, 1fr))', gap: '2px 12px', fontFamily: 'var(--f-mono)', fontSize: '0.85rem' }, role: 'group', 'aria-label': 'Table of iterates' });
     body.append(grid);
     body.append(W.h('div', { class: 'w-note' }, 'The staircase starts on the x-axis at x₀, goes up to the curve y = F(x), across to the line y = x, and repeats. Where the staircase closes in, F(x) = x: that is the root. Try x₀ near the ends of the range, or the rearrangement (x^3-5)/2, which runs away.'));
     if (warn.length) body.append(W.h('div', { class: 'w-err' }, warn.join(' ')));
@@ -1191,8 +1223,13 @@
       lim.set(lastTxt || '—');
       grid.textContent = '';
       xs.forEach((v, i) => grid.append(W.h('div', {}, `x${sub(i)} = ${isFinite(v) ? big(v) : '—'}`)));
-      cv.wrap.setAttribute('aria-label', `Staircase diagram for the iteration F(x) = ${src}, starting at x ${W.fix(x0, 3)}. ${msg}.`);
       cv.redraw();
+    }
+    function describeIter() {
+      if (!fn) return 'The curve y = F(x) cannot be drawn until F(x) is a valid expression.';
+      const n = xs.length - 1, [msg] = describe();
+      return `The curve y = ${src} and the line y = x for x from ${W.fmt(lo, 4)} to ${W.fmt(hi, 4)}. The staircase starts at x₀ = ${W.fix(x0, 3)} and takes ${n} step${n === 1 ? '' : 's'}`
+        + `${n > 0 && isFinite(xs[n]) ? `, reaching x${sub(n)} = ${W.fix(xs[n], 5)}` : ''}. ${msg}.`;
     }
 
     function draw(ctx, w, h, c) {
@@ -1294,9 +1331,8 @@
     const relSym = () => (RELS.find((r) => r[0] === rel) || RELS[0])[1];
 
     const { body } = W.frame(el, 'Argand diagram', mode === 'ops' ? 'Drag z₁ and z₂ (or use the sliders) and watch the results' : 'Move the centre, radius or angle and see the locus and its equation');
-    const cv = W.canvas(body, { height: 340, draw: safeDraw(draw) });
-    cv.wrap.setAttribute('role', 'img');
-    const mk = (label, min, max, step, val, fmt, on) => {
+    const cv = W.canvas(body, { height: 340, draw: safeDraw(draw), label: 'Argand diagram', describe: describeArgand });
+    const mk =(label, min, max, step, val, fmt, on) => {
       const s = W.slider({ label, min, max, step, value: val, fmt, oninput: on });
       s.input.setAttribute('aria-label', label);
       return s;
@@ -1392,28 +1428,35 @@
         const rows = [['z₁', z1], ['z₂', z2], ['z₁ + z₂', r.add], ['z₁ z₂', r.mul], ['z₁ ÷ z₂', r.div], ['z₁*', r.conj]];
         const keys = [null, null, 'add', 'mul', 'div', 'conj'];
         rowsEl.textContent = '';
-        rowsEl.append(W.h('thead', {}, W.h('tr', {}, W.h('th', {}, ''), W.h('th', {}, 'Value'), W.h('th', {}, '|z|'), W.h('th', {}, 'arg z'))));
+        rowsEl.append(W.h('thead', {}, W.h('tr', {}, W.h('th', { scope: 'col' }, W.h('span', { class: 'sr-only' }, 'Number')), W.h('th', { scope: 'col' }, 'Value'), W.h('th', { scope: 'col' }, '|z|'), W.h('th', { scope: 'col' }, 'arg z'))));
         const tb = W.h('tbody', {});
         rows.forEach(([name, z], i) => {
           const hl = keys[i] && keys[i] === res;
           tb.append(W.h('tr', { style: hl ? { fontWeight: '700' } : {} },
-            W.h('td', {}, name), W.h('td', {}, z ? cstr(z) : 'undefined'), W.h('td', {}, z ? W.fmt(modOf(z), 3) : '—'), W.h('td', {}, z ? argTxt(argOf(z)) : '—')));
+            W.h('th', { scope: 'row', style: { fontWeight: 'inherit', textAlign: 'left' } }, name), W.h('td', {},z ? cstr(z) : 'undefined'), W.h('td', {}, z ? W.fmt(modOf(z), 3) : '—'), W.h('td', {}, z ? argTxt(argOf(z)) : '—')));
         });
         rowsEl.append(tb);
         if (res === 'div' && !r.div) msg = 'z₂ = 0, so z₁ ÷ z₂ is undefined.';
         if (modOf(z1) < 1e-9 || modOf(z2) < 1e-9) msg = (msg ? msg + ' ' : '') + 'A number equal to 0 has no argument.';
-        cv.wrap.setAttribute('aria-label', `Argand diagram with z1 = ${cstr(z1)} and z2 = ${cstr(z2)}. z1 plus z2 is ${cstr(r.add)}, z1 times z2 is ${cstr(r.mul)}.`);
       } else {
         const [d1, d2, d3] = describe();
         tile1.set(d1); tile2.set(d2); tile3.set(d3 || '—');
         if (type === 'bisector' && Math.hypot(b[0] - a[0], b[1] - a[1]) < 1e-9) msg = 'a and b are the same point, so move b away from a to see the bisector.';
-        cv.wrap.setAttribute('aria-label', `Argand diagram. ${d1}. Equation ${d2}.`);
         show(sl.br.el, type === 'bisector'); show(sl.bi.el, type === 'bisector');
         show(sl.k.el, type === 'circle'); show(sl.al.el, type === 'arg');
       }
       errEl.textContent = msg;
       show(errEl, !!msg);
       cv.redraw();
+    }
+    function describeArgand() {
+      if (mode === 'ops') {
+        const r = results(), names = { add: 'z₁ + z₂', mul: 'z₁z₂', div: 'z₁ ÷ z₂', conj: 'z₁*' };
+        return `Argand diagram with arrows from the origin to z₁ = ${cstr(z1)} and z₂ = ${cstr(z2)}. The drawn result ${names[res]} is ${r[res] ? cstr(r[res]) : 'undefined'}, `
+          + `with modulus ${r[res] ? W.fmt(modOf(r[res]), 3) : '—'} and argument ${r[res] ? argTxt(argOf(r[res])) : '—'} radians. z₁ has modulus ${W.fmt(modOf(z1), 3)} and z₂ has modulus ${W.fmt(modOf(z2), 3)}.`;
+      }
+      const [d1, d2, d3] = describe();
+      return `Argand diagram. ${d1}. Cartesian equation ${d2}. ${rel === '=' ? 'Only the locus is drawn' : `Shaded region (${rel === '<' || rel === '>' ? 'dashed boundary, not included' : 'solid boundary, included'}): ${d3 || 'none'}`}.`;
     }
 
     // ---- drawing
@@ -1603,8 +1646,7 @@
     const dpFor = () => Math.max(0, -Math.floor(Math.log10(stepFor())));
 
     const { body } = W.frame(el, 'Normal distribution', 'Shade an area, read the probability and the z-values');
-    const cv = W.canvas(body, { height: 260, draw: safeDraw(draw) });
-    cv.wrap.setAttribute('role', 'img');
+    const cv = W.canvas(body, { height: 260, draw: safeDraw(draw), label: 'Normal distribution curve with a shaded area', describe: describeNormal });
     const errEl = W.h('div', { class: 'w-err', role: 'status' });
     show(errEl, false);
 
@@ -1660,8 +1702,12 @@
         region = tail === 'below' ? [-Infinity, x] : [x, Infinity]; line = [x];
         tX.set(fx(x)); tZ.set(minus(W.fmt(z, 4))); tS.set(tail === 'below' ? `P(X < x) = ${W.fmt(pIn, 4)}` : `P(X > x) = ${W.fmt(pIn, 4)}`);
       }
-      cv.wrap.setAttribute('aria-label', `Normal curve with mean ${W.fmt(mu, 4)} and standard deviation ${W.fmt(sg, 4)}. ${tS.el.textContent}. Result ${mode === 'inverse' ? tX.el.textContent : tP.el.textContent}.`);
       cv.redraw();
+    }
+    function describeNormal() {
+      const shaded = region[0] === -Infinity ? `to the left of ${fx(region[1])}` : region[1] === Infinity ? `to the right of ${fx(region[0])}` : `between ${fx(region[0])} and ${fx(region[1])}`;
+      return `Bell-shaped normal curve with mean ${W.fmt(mu, 4)} and standard deviation ${W.fmt(sg, 4)}, shaded ${shaded}. ${tS.el.textContent}. `
+        + (mode === 'inverse' ? `The value of x is ${tX.el.textContent}.` : `The probability is ${tP.el.textContent}.`) + ` z-values: ${tZ.el.textContent}.`;
     }
 
     function draw(ctx, w, h, c) {
@@ -1742,8 +1788,7 @@
     const varOf = () => (dist === 'binomial' ? n * p * (1 - p) : dist === 'poisson' ? lam : (1 - p) / (p * p));
 
     const { body } = W.frame(el, 'Discrete distributions', 'Binomial, geometric and Poisson: change the parameters and the range');
-    const cv = W.canvas(body, { height: 270, draw: safeDraw(draw) });
-    cv.wrap.setAttribute('role', 'img');
+    const cv = W.canvas(body, { height: 270, draw: safeDraw(draw), label: 'Bar chart of the distribution, with the chosen range shaded', describe: describeDiscrete });
     const distTabs = tabs([['binomial', 'Binomial'], ['geometric', 'Geometric'], ['poisson', 'Poisson']], dist, (v) => {
       dist = v;
       if (v === 'geometric') { p = clamp(p, 0.01, 0.99); if (ra < 1) ra = 1; if (rb < ra) rb = ra; }
@@ -1794,8 +1839,14 @@
         tO.set(W.fmt(ncdf((hi + 0.5 - mu) / sd) - ncdf((lo - 0.5 - mu) / sd), 4));
       }
       const label = dist === 'binomial' ? `B(${n}, ${W.fmt(p, 2)})` : dist === 'poisson' ? `Po(${W.fmt(lam, 3)})` : `Geo(${W.fmt(p, 2)})`;
-      cv.wrap.setAttribute('aria-label', `Bar chart of ${label}. P(${lo} ≤ X ≤ ${hi}) = ${tR.el.textContent}.`);
       cv.redraw();
+    }
+    function describeDiscrete() {
+      let lo = ra, hi = rb; if (hi < lo) { const t = lo; lo = hi; hi = t; }
+      const label = dist === 'binomial' ? `B(${n}, ${W.fmt(p, 2)})` : dist === 'poisson' ? `Po(${W.fmt(lam, 3)})` : `Geo(${W.fmt(p, 2)})`;
+      const top = pmf().reduce((m, d) => (d[1] > m[1] ? d : m), [0, -1]);
+      return `Bar chart of the ${label} distribution, mean ${W.fmt(meanOf(), 4)}, tallest bar at x = ${top[0]} (probability ${W.fmt(top[1], 3)}). `
+        + `Bars from x = ${lo} to ${hi} are shaded and outlined: P(${lo} ≤ X ≤ ${hi}) = ${tR.el.textContent}.${overlay && dist !== 'geometric' ? ` A normal curve is overlaid; its approximation is ${tO.el.textContent}.` : ''}`;
     }
 
     function draw(ctx, w, h, c) {
@@ -1816,6 +1867,8 @@
         const inR = k >= lo && k <= hi;
         ctx.fillStyle = inR ? c.sc : c.ink3; ctx.globalAlpha = inR ? 0.9 : 0.4;
         ctx.fillRect(X(k) - bw / 2, Y(v), bw, Y(0) - Y(v));
+        // chosen bars are also outlined, so they differ from the rest by more than shade
+        if (inR && bw > 3) { ctx.globalAlpha = 1; ctx.strokeStyle = c.ink; ctx.lineWidth = 1.2; ctx.strokeRect(X(k) - bw / 2 + 0.5, Y(v), bw - 1, Y(0) - Y(v)); }
       }
       ctx.globalAlpha = 1;
       if (overlay && dist !== 'geometric') {
@@ -1851,8 +1904,7 @@
     let model = { list: [], X: 0, Y: 0, R: 0, dir: 0 };
 
     const { body } = W.frame(el, 'Resultant of forces', 'Give up to four forces as a size and an angle from the positive x-axis');
-    const cv = W.canvas(body, { height: 280, draw: safeDraw(draw) });
-    cv.wrap.setAttribute('role', 'img');
+    const cv = W.canvas(body, { height: 280, draw: safeDraw(draw), label: 'Force diagram: the forces and their resultant', describe: describeForces });
     const errEl = W.h('div', { class: 'w-err', role: 'status' });
     show(errEl, false);
     const fields = rows.map((r, i) => {
@@ -1893,8 +1945,14 @@
       tR.set(zero ? '0' : W.fmt(R, 3));
       tD.set(zero ? 'none' : minus(W.fix(dir, 1)) + '°');
       tB.set(!balance ? 'hidden' : zero ? 'none needed' : `${W.fmt(R, 3)} N at ${minus(W.fix(norm(dir + 180), 1))}°`);
-      cv.wrap.setAttribute('aria-label', list.length ? `Force diagram. Sum of x-components ${W.fmt(X, 3)} newtons, sum of y-components ${W.fmt(Y, 3)} newtons, resultant ${zero ? 'zero' : W.fmt(R, 3) + ' newtons'}.` : 'No forces entered.');
       cv.redraw();
+    }
+    function describeForces() {
+      const m = model;
+      if (!m.list.length) return 'No forces entered.';
+      const fs = m.list.map((q) => `F${q.n} ${W.fmt(q.f, 3)} N at ${minus(W.fix(norm(q.a), 1))}°`).join(', ');
+      return `Arrows from the origin for ${fs}. Sum of x-components ${minus(W.fmt(m.X, 3))} N, sum of y-components ${minus(W.fmt(m.Y, 3))} N; `
+        + `${m.zero ? 'the resultant is zero (equilibrium)' : `the resultant is ${W.fmt(m.R, 3)} N at ${minus(W.fix(m.dir, 1))}°`}.${balance && !m.zero ? ` A dashed balancing force of ${W.fmt(m.R, 3)} N points the opposite way.` : ''}`;
     }
 
     function arrow(ctx, x0, y0, x1, y1, color, lw, dash) {
@@ -1962,9 +2020,8 @@
     let P = calc(v, ang, h0, g);
 
     const { body } = W.frame(el, 'Projectile motion', 'Choose the launch speed, angle and height, then launch');
-    const cv = W.canvas(body, { height: 270, draw: safeDraw(draw) });
-    cv.wrap.setAttribute('role', 'img');
-    const sV = W.slider({ label: 'Speed (m s⁻¹)', min: 1, max: 60, step: 1, value: v, fmt: (x) => String(x), oninput: (x) => { stop(); v = x; recalc(); } });
+    const cv = W.canvas(body, { height: 270, draw: safeDraw(draw), label: 'Projectile path (height against distance)', describe: describeFlight });
+    const sV =W.slider({ label: 'Speed (m s⁻¹)', min: 1, max: 60, step: 1, value: v, fmt: (x) => String(x), oninput: (x) => { stop(); v = x; recalc(); } });
     const sA = W.slider({ label: 'Angle (°)', min: 0, max: 90, step: 1, value: ang, fmt: (x) => String(x), oninput: (x) => { stop(); ang = x; recalc(); } });
     const sH = W.slider({ label: 'Launch height (m)', min: 0, max: 20, step: 0.5, value: h0, fmt: (x) => W.fix(x, 1), oninput: (x) => { stop(); h0 = x; recalc(); } });
     const sT = W.slider({ label: 'Time t (s)', min: 0, max: Math.max(0.1, P.T), step: 0.01, value: 0, fmt: (x) => W.fix(x, 2), oninput: (x) => { stop(); t = x; refresh(); } });
@@ -1974,11 +2031,13 @@
     const bClr = W.h('button', { class: 'btn btn-sec btn-sm', type: 'button', onclick: () => { hist = []; cv.redraw(); } }, 'Clear paths');
     body.append(W.h('div', { class: 'w-row' }, sV.el, sA.el, sH.el), W.h('div', { class: 'w-row' }, W.h('span', { class: 'w-lab' }, 'Gravity'), gTabs.el, bGo, bClr), W.h('div', { class: 'w-row' }, sT.el));
     const tR = W.stat('Range (m)', true), tTf = W.stat('Time of flight (s)'), tH = W.stat('Max height (m)'), tVx = W.stat('Horizontal velocity'), tVy = W.stat('Vertical velocity'), tSp = W.stat('Speed');
+    // while the particle flies the tiles change every frame: keep them quiet, then read them out at the end
+    const setLive = (v) => [tR, tTf, tH, tVx, tVy, tSp].forEach((s) => s.el.setAttribute('aria-live', v));
     body.append(W.h('div', { class: 'w-out' }, tR.el, tTf.el, tH.el, tVx.el, tVy.el, tSp.el));
     body.append(W.h('div', { class: 'w-note' }, 'Press Launch to fire the particle; earlier paths stay as faint curves so you can compare angles. Try 45° and 30°, then add some launch height. The velocity readings are at the chosen time t.'));
     if (warn.length) body.append(W.h('div', { class: 'w-err' }, warn.join(' ')));
 
-    function stop() { if (anim) { cancelAnimationFrame(anim); anim = null; } }
+    function stop() { if (anim) { cancelAnimationFrame(anim); anim = null; } setLive('polite'); }
     function recalc() {
       P = calc(v, ang, h0, g);
       sT.input.max = Math.max(0.1, P.T); t = Math.min(t, P.T); sT.set(t);
@@ -1988,19 +2047,28 @@
       const vy = P.vy - P.g * t;
       tR.set(W.fmt(P.R, 3)); tTf.set(W.fmt(P.T, 3)); tH.set(W.fmt(P.H, 3));
       tVx.set(W.fmt(P.vx, 3) + ' m s⁻¹'); tVy.set(minus(W.fmt(vy, 3)) + ' m s⁻¹'); tSp.set(W.fmt(Math.hypot(P.vx, vy), 3) + ' m s⁻¹');
-      cv.wrap.setAttribute('aria-label', `Trajectory of a projectile launched at ${W.fmt(v, 3)} metres per second at ${W.fmt(ang, 3)} degrees from a height of ${W.fmt(h0, 3)} metres. Range ${W.fmt(P.R, 3)} metres, maximum height ${W.fmt(P.H, 3)} metres.`);
       cv.redraw();
     }
+    function describeFlight() {
+      const [bx, by] = pos(P, Math.min(t, P.T));
+      return `A projectile launched at ${W.fmt(v, 3)} m s⁻¹ at ${W.fmt(ang, 3)} degrees from a height of ${W.fmt(h0, 3)} m, with g = ${g}. `
+        + `The path is a parabola with range ${W.fmt(P.R, 3)} m and maximum height ${W.fmt(P.H, 3)} m. At t = ${W.fix(t, 2)} s the particle is ${W.fmt(bx, 3)} m along and ${W.fmt(Math.max(0, by), 3)} m high.`
+        + (hist.length ? ` ${hist.length} earlier path${hist.length > 1 ? 's are' : ' is'} shown faintly.` : '');
+    }
+    function landed() { W.say(body, `Landed after ${W.fmt(P.T, 3)} seconds, ${W.fmt(P.R, 3)} metres from the start.`); }
     function launch() {
       stop();
       const last = hist[hist.length - 1];
       if (!last || last.vx !== P.vx || last.vy !== P.vy || last.h !== P.h || last.g !== P.g) { hist.push(Object.assign({}, P)); if (hist.length > 6) hist.shift(); }
-      if (reduce) { t = P.T; sT.set(t); refresh(); return; }
+      if (reduce) { t = P.T; sT.set(t); refresh(); landed(); return; }
       const start = performance.now(), dur = clamp(P.T * 600, 900, 3000);
+      setLive('off');
       const step = (now) => {
         const f = Math.min(1, (now - start) / dur);
-        t = P.T * f; sT.set(t); refresh();
-        anim = f < 1 ? requestAnimationFrame(step) : null;
+        t = P.T * f; sT.set(t);
+        if (f >= 1) { anim = null; setLive('polite'); refresh(); landed(); return; }
+        refresh();
+        anim = requestAnimationFrame(step);
       };
       anim = requestAnimationFrame(step);
     }

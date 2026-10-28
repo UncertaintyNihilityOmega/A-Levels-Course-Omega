@@ -163,7 +163,7 @@ maths scrolls on its own) or a `\[\begin{aligned} … \\ … \end{aligned}\]` wi
    Options: `--f` (repeatable; Python syntax: `x**2`, `sin(x)`, `exp(x)`, `log(x)` = ln, `sqrt(x)`, `pi`, `e`, `abs(x)`),
    `--label` (one per `--f`), `--x a b`, `--y a b`, `--pt "x,y,label@dir"` (dir n s e w ne nw se sw),
    `--vline v`, `--hline v`, `--shade "0,a,b"` (area under curve 0), `--deg` (trig in degrees), `--noticks`,
-   `--nogrid`, `--xlabel`, `--ylabel`, `--legend tl|tr`, `--xstep`, `--ystep`, `--w`, `--h`.
+   `--nogrid`, `--xlabel`, `--ylabel`, `--legend tl|tr`, `--xstep`, `--ystep`, `--w`, `--h`, `--alt "…"`.
    Straight lines with `--noticks` and point labels draw economics diagrams (supply and demand, cost curves).
 2. **A hand SVG**, when a picture is essential (force diagram, circuit, cell, apparatus, mechanism). Keep it
    small and accurate, inside `:::html`:
@@ -212,6 +212,19 @@ Writers cannot see their figures, so check these with coordinates (Python) befor
 - **`:::board` boxes.** One board and one content difference you are sure of, every time. Never claims about a board you
   cannot verify ("other specifications", two boards at once); otherwise write only about the main board.
 - **Rounding.** Never reuse a rounded intermediate in a later step; the check script computes from unrounded values.
+
+### Accessibility (WCAG 2.2 AA; screen-reader and keyboard users read the same chapter)
+- **Hand SVG.** `role="img"` and an `aria-label` that says what the figure shows, with its labels and key values (the
+  build fails without them). The figcaption is read too: the label describes the picture, the caption makes the point.
+- **`:::plot`.** The build describes the axes, ranges, `--label`s, dashed lines and `--pt` labels for screen readers, so
+  give curves meaningful `--label`s and points real labels. Add `--alt "…"` when the shape itself is the point (where it
+  turns, crosses or levels off) and the labels do not say it.
+- **Not by colour or position alone.** Text never relies on colour, shape or place ("the shaded part", "the curve on the
+  right") without also naming the label. Figures label what matters.
+- **Headings** go in order (`##` then `###`); never skip a level for size.
+- **Links** say where they go ("[the Born–Haber chapter](#chem.bornhaber)"), never "click here" or a bare URL.
+- **Tables** have a header row; never use a table for layout.
+- **Images** (rare) need `alt` text.
 
 ## Accuracy (non-negotiable)
 - Every number in the chapter (worked examples, try answers, quiz options, figure labels) is recomputed in

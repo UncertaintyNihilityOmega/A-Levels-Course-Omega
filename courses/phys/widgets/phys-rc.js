@@ -43,7 +43,7 @@
     function tabs(items, get1, set1, aria) {
       const row = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': aria });
       const btns = items.map(([v, label]) => W.h('button', { class: 'w-tab', type: 'button', onclick: () => { set1(v); sync(); update(); } }, label));
-      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-selected', String(items[i][0] === get1())));
+      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-pressed', String(items[i][0] === get1())));
       btns.forEach((b) => row.append(b));
       sync();
       row.sync = sync;
@@ -88,6 +88,14 @@
 
     const c = W.canvas(body, {
       height: 290,
+      label: 'Graph of the capacitor against time in units of the time constant',
+      describe: () => {
+        const s = series(), t = tau(), cy = s.f(st.x);
+        const what = st.tab === 'ln' ? 'ln V falls in a straight line of gradient −1/RC = ' + W.fmt(-1 / t, 3) + ' s⁻¹'
+          : s.kind === 'rise' ? s.ylabel + ' rises exponentially to its final value ' + W.fmt(s.top, 3) + ', reaching 63% at one time constant'
+            : s.ylabel + ' falls exponentially from ' + W.fmt(s.top, 3) + ', reaching 37% at one time constant and half at 0.693 τ';
+        return 'Time from 0 to 6τ, with τ = RC = ' + fmtTime(t) + '. ' + what + '. The cursor is at ' + W.fmt(st.x, 3) + ' τ = ' + fmtTime(st.x * t) + ', where the value is ' + W.fmt(cy, 3) + ' on the scale shown.';
+      },
       draw(ctx, w, h, col) {
         const s = series();
         const pad = { l: 52, r: 14, t: 24, b: 54 };

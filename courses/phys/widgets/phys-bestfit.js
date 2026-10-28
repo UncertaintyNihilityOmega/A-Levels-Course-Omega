@@ -131,7 +131,7 @@
     // Tabs
     const tabRow = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Which graph to plot' });
     const btns = tabList.map(([v, label]) => W.h('button', { class: 'w-tab', type: 'button', onclick: () => { st.tab = v; syncTabs(); update(); } }, label));
-    const syncTabs = () => btns.forEach((b, i) => b.setAttribute('aria-selected', String(tabList[i][0] === st.tab)));
+    const syncTabs = () => btns.forEach((b, i) => b.setAttribute('aria-pressed', String(tabList[i][0] === st.tab)));
     btns.forEach((b) => tabRow.append(b));
     syncTabs();
 
@@ -163,6 +163,14 @@
     let model = null;
     const c = W.canvas(body, {
       height: 300,
+      label: 'Graph of the data with the best-fit line and the worst acceptable line',
+      describe() {
+        if (!model) return 'No graph yet: the table needs at least three complete rows of numbers.';
+        const m = model, nm = labels();
+        let t = 'Graph of ' + nm.y + ' against ' + nm.x + ' with ' + m.X.length + ' points, each with an error bar. Best-fit line: gradient ' + W.fmt(m.best.m, 3) + ', intercept ' + W.fmt(m.best.c, 3) + '.';
+        t += m.worst ? ' Worst acceptable line (dashed): gradient ' + W.fmt(m.worst.m, 3) + ', intercept ' + W.fmt(m.worst.c, 3) + '.' : ' No straight line passes through every error bar, so there is no worst acceptable line.';
+        return t;
+      },
       draw(ctx, w, h, col) {
         if (!model) {
           ctx.fillStyle = col.ink3; ctx.font = '13px ' + (col.font || 'sans-serif');

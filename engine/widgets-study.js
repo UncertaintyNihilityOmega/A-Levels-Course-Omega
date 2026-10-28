@@ -574,8 +574,8 @@
 
     /* mode tabs + custom lengths */
     const MODES = [['a', '25 / 5'], ['b', '50 / 10'], ['c', 'Custom']];
-    const tabBtns = MODES.map(([k, t]) => h('button', { type: 'button', class: 'w-tab', role: 'tab', 'aria-selected': 'false', onclick: () => setMode(k) }, t + (k === 'c' ? '' : ' min')));
-    const tabs = h('div', { class: 'w-tabs', role: 'tablist', 'aria-label': 'Focus and break lengths' }, tabBtns);
+    const tabBtns = MODES.map(([k, t]) => h('button', { type: 'button', class: 'w-tab', 'aria-pressed': 'false', onclick: () => setMode(k) }, t + (k === 'c' ? '' : ' min')));
+    const tabs = h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Focus and break lengths' }, tabBtns);
     const fF = W.field({ label: 'Focus (minutes)', value: custom[0], step: 1, oninput: onCustom, width: '9rem' });
     const fB = W.field({ label: 'Break (minutes)', value: custom[1], step: 1, oninput: onCustom, width: '9rem' });
     fF.input.min = 1; fF.input.max = 180; fB.input.min = 1; fB.input.max = 60;
@@ -722,7 +722,7 @@
       setCfg(custom.slice());
     }
     function setMode(k) {
-      tabBtns.forEach((b, i) => b.setAttribute('aria-selected', String(MODES[i][0] === k)));
+      tabBtns.forEach((b, i) => b.setAttribute('aria-pressed', String(MODES[i][0] === k)));
       customRow.style.display = k === 'c' ? '' : 'none';
       W.store.set('timer-mode', k);
       if (k === 'c') onCustom();
@@ -790,7 +790,8 @@
         const i = rows.indexOf(row);
         rows.splice(i, 1); row.el.remove();
         update();
-        (rows[Math.min(i, rows.length - 1)].rm).focus();
+        // the last row's remove button is disabled, so focus its qualification instead
+        rows[Math.min(i, rows.length - 1)][rows.length > 1 ? 'rm' : 'qSel'].focus();
       });
       rows.push(row); list.append(row.el);
     }
@@ -798,7 +799,9 @@
     function update() {
       let total = 0;
       const al = [], as = [], ep = [], parts = [];
-      for (const r of rows) {
+      for (const [i, r] of rows.entries()) {
+        r.qSel.setAttribute('aria-label', 'Qualification ' + (i + 1)); r.gSel.setAttribute('aria-label', 'Grade ' + (i + 1));
+        r.rm.setAttribute('aria-label', 'Remove qualification ' + (i + 1));
         const g = TARIFF[r.qSel.value].grades.find(([gr]) => gr === r.gSel.value);
         const p = g ? g[1] : 0;
         r.pts.textContent = String(p);

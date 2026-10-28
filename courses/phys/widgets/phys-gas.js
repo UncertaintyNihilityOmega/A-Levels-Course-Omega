@@ -80,7 +80,7 @@
     function tabs(items, get, set) {
       const row = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Choose the gas' });
       const btns = items.map(([v, label]) => W.h('button', { class: 'w-tab', type: 'button', onclick: () => { set(v); sync(); } }, label));
-      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-selected', String(items[i][0] === get())));
+      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-pressed', String(items[i][0] === get())));
       btns.forEach((b) => row.append(b));
       sync();
       return row;
@@ -96,10 +96,12 @@
     } });
     const sV = W.slider({ label: 'Box width (volume)', min: 5, max: 20, step: 0.5, value: st.w, fmt: (v) => W.fmt(v, 3) + ' cm', oninput: (v) => setWidth(parseFloat(v)) });
 
+    // the molecules start moving by themselves, so the reader can pause them (no button under reduced motion: they never move)
+    const pauseBtn = W.h('button', { class: 'btn btn-sm btn-sec', type: 'button', onclick: () => togglePause() }, 'Pause the molecules');
     body.append(
       W.h('div', { class: 'w-row' }, gasTabs),
       W.h('div', { class: 'w-row' }, sT.el, sN.el),
-      W.h('div', { class: 'w-row' }, sV.el)
+      W.h('div', { class: 'w-row' }, sV.el, W.reducedMotion() ? null : pauseBtn)
     );
 
     function setWidth(wv) {
@@ -117,6 +119,9 @@
     const reduced = W.reducedMotion();
     const box = W.canvas(body, {
       height: 230,
+      label: 'Box of gas molecules with a movable wall',
+      describe: () => st.n + ' particles in a box ' + W.fmt(st.w, 3) + ' cm wide, 10 cm high and 10 cm deep, moving in straight lines and bouncing off the walls. The right-hand wall can be moved with the box width slider. ' +
+        GASES[st.gas].name + ' at ' + W.fmt(st.T, 3) + ' K.',
       draw(ctx, w, h, col) {
         const s = Math.max(6, Math.min(18, (w - 36) / 20));
         const Hb = HEIGHT * s;
@@ -186,9 +191,11 @@
     });
 
     // ---- histogram -------------------------------------------------------------
-    let xmax = 1500;
+    let xmax = 1500, meanSp = 0;
     const hist = W.canvas(body, {
       height: 170,
+      label: 'Histogram of molecular speeds',
+      describe: () => 'Number of particles against speed from 0 to ' + xmax + ' m/s, a spread of speeds with the mean at about ' + W.fmt(meanSp, 3) + ' m/s and the r.m.s. speed marked at ' + W.fmt(cReal(), 3) + ' m/s.',
       draw(ctx, w, h, col) {
         const crms = cReal();
         xmax = XMAXES.find((v) => v >= 2.5 * crms) || XMAXES[XMAXES.length - 1];
@@ -200,6 +207,7 @@
           counts[Math.min(NB - 1, Math.floor(sp / xmax * NB))]++;
         }
         const mean = sum / Math.max(1, st.n);
+        meanSp = mean;
         const ymax = Math.max(4, Math.ceil(Math.max.apply(null, counts) * 1.45));
         const ax = W.axes(ctx, w, h, { x0: 0, x1: xmax, y0: 0, y1: ymax }, col, {
           pad: { l: 40, r: 14, t: 14, b: 40 },
@@ -236,6 +244,8 @@
       ['N', 'Number of molecules N'], ['V', 'Volume V'], ['T', 'Temperature T'], ['p', 'Pressure p = NkT / V'],
       ['m', 'Mass of one molecule m = M / (Avogadro constant)'], ['c', 'r.m.s. speed √(3kT/m)'], ['ek', 'Mean kinetic energy 3kT/2'], ['hits', 'Wall hits per second (drawn particles)']
     ]);
+    // the hit rate updates while the molecules move, so the table is not read out; W.say gives the summary after a change
+    ro.el.setAttribute('aria-live', 'off');
     const note = W.h('div', { class: 'w-note' });
     body.append(ro.el, note, err);
     note.textContent = 'Each drawn particle stands for 10²⁰ molecules, and the box is 10 cm high and 10 cm deep, so its width sets the volume. ' +
@@ -262,6 +272,7 @@
       ro.set('c', W.fmt(c, 3) + ' m s⁻¹');
       ro.set('ek', sci(1.5 * KB * st.T, 3) + ' J');
       ro.set('hits', W.fmt(rate, 3) + ' s⁻¹');
+      W.say(body, 'Pressure ' + sci(p, 3) + ' pascals, r.m.s. speed ' + W.fmt(c, 3) + ' metres per second, volume ' + W.fmt(V * 1e3, 3) + ' litres.');
     }
     function changed() {
       rate = analyticRate();
@@ -302,6 +313,11 @@
       if (now - lastShown > 250) { lastShown = now; ro.set('hits', W.fmt(rate, 3) + ' s⁻¹'); }
       return true;
     }, { still: () => { rate = analyticRate(); readouts(); box.redraw(); } });
+
+    function togglePause() {
+      if (anim.running) { anim.stop(); pauseBtn.textContent = 'Resume the molecules'; }
+      else { last = performance.now(); anim.start(); pauseBtn.textContent = 'Pause the molecules'; }
+    }
 
     rate = analyticRate();
     readouts();

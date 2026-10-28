@@ -171,6 +171,8 @@
       }
     });
     cvs.cv.setAttribute('role', 'img');
+    cvs.describe = () => 'Enthalpy against progress of reaction. The reactants (' + nameR + ') start at 0 and the products (' + nameP + ') end ' + (state.dh < 0 ? 'lower, at ' : state.dh > 0 ? 'higher, at ' : 'at the same level, ') + signed(state.dh) + ' kJ per mole. The curve rises to a peak '
+      + state.ea + ' kJ per mole above the reactants (the activation energy).' + (state.cat ? ' A dashed curve shows the catalysed route with a lower peak, ' + state.eaCat + ' kJ per mole above the reactants; ΔH is the same.' : '');
 
     const read = W.readout([['type', 'Type of reaction'], ['dh', 'Enthalpy change ΔH'], ['ea', 'Eₐ forward'], ['rev', 'Eₐ reverse = Eₐ − ΔH'], ['cat', 'With the catalyst']]);
     body.appendChild(read.el);
@@ -202,7 +204,7 @@
       read.set('ea', state.ea + ' kJ mol⁻¹');
       read.set('rev', (state.ea - state.dh) + ' kJ mol⁻¹');
       read.set('cat', state.cat ? 'forward Eₐ ' + state.eaCat + ' kJ mol⁻¹, reverse Eₐ ' + (state.eaCat - state.dh) + ' kJ mol⁻¹, ΔH unchanged at ' + signed(state.dh) + ' kJ mol⁻¹' : 'no catalyst');
-      cvs.cv.setAttribute('aria-label', 'Reaction pathway diagram: ' + (exo ? 'exothermic' : (endo ? 'endothermic' : 'thermoneutral')) + ', ΔH ' + signed(state.dh) + ' kJ per mole, activation energy ' + state.ea + ' kJ per mole' + (state.cat ? ', catalysed activation energy ' + state.eaCat : '') + '.');
+      cvs.setLabel('Reaction pathway diagram: ' + (exo ? 'exothermic' : (endo ? 'endothermic' : 'thermoneutral')) + (state.cat ? ', with a catalyst' : ''));
       cvs.redraw();
     }
 

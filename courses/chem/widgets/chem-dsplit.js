@@ -167,6 +167,13 @@
       }
     });
     cvs.cv.setAttribute('role', 'img');
+    cvs.describe = () => {
+      if (!model) return '';
+      const n = s => s.orbs.reduce((a, o) => a + (o.up ? 1 : 0) + (o.down ? 1 : 0), 0);
+      return 'Energy level diagram, energy upwards. On the left, the five d orbitals of the free ion at the same energy. On the right, split into a lower set of ' + model.nL + ' orbitals holding ' + n(model.low) + ' electrons and a higher set of '
+        + model.nU + ' orbitals holding ' + n(model.up) + ' electrons, separated by the gap ΔE (relative value ' + model.rel.toFixed(2) + ', not to scale). '
+        + (model.promo ? 'A dashed arrow shows an electron promoted from the lower to the higher set.' : 'No electron can be promoted.');
+    };
 
     const read = W.readout([['d', 'd electrons'], ['sets', 'Electrons in lower / higher set'], ['col', 'Coloured?'],
       ['de', 'Relative ΔE'], ['abs', 'Light absorbed'], ['seen', 'Colour seen']]);
@@ -216,7 +223,7 @@
       read.set('de', rel.toFixed(2) + ' (relative units, not to scale)');
       read.set('abs', coloured ? dir : 'none in the visible');
       read.set('seen', coloured ? (seen || 'not shown: it depends on the metal ion as well as on ΔE') : 'colourless');
-      cvs.cv.setAttribute('aria-label', 'Energy level diagram for ' + title.textContent + ': ' + d + ' d electrons; ' + (coloured ? 'an electron can be promoted across the gap' : 'no electron can be promoted') + '.');
+      cvs.setLabel('d-orbital energy levels for ' + title.textContent + ': ' + d + ' d electrons');
       selG.value = geom; selI.value = String(IONS.indexOf(ion)); selL.value = String(LIGANDS.indexOf(lig));
       err.textContent = msgs.join(' ');
       cvs.redraw();

@@ -50,9 +50,10 @@
     showErr(warn.join(' '));
     body.append(errBox);
 
-    const vtCv = W.canvas(body, { height: 240, draw: drawVT });
+    // drag a point, or type its t and v in the boxes below the graph
+    const vtCv = W.canvas(body, { height: 240, draw: drawVT, label: 'Velocity–time graph (the points can also be set with the boxes below)', describe: describeVT });
     vtCv.wrap.style.touchAction = 'none';
-    const stCv = W.canvas(body, { height: 170, draw: drawST });
+    const stCv = W.canvas(body, { height: 170, draw: drawST, label: 'Displacement–time graph for the same motion', describe: describeST });
     const tiles = W.h('div', { class: 'w-out' });
     const sDisp = W.stat('Displacement', true), sDist = W.stat('Distance'), sAvg = W.stat('Average speed');
     tiles.append(sDisp.el, sDist.el, sAvg.el);
@@ -186,13 +187,23 @@
       });
       tb.append(tbody);
       tableWrap.replaceChildren(tb);
-      vtCv.wrap.setAttribute('role', 'img');
-      vtCv.wrap.setAttribute('aria-label', `Velocity–time graph through ${pts.map((p) => `(${f1(p[0])}, ${f1(p[1])})`).join(', ')}. Displacement ${f3(info.s)} metres, distance ${f3(info.dist)} metres.`);
-      stCv.wrap.setAttribute('role', 'img');
-      stCv.wrap.setAttribute('aria-label', `Displacement–time graph for the same motion, ending at ${f3(info.s)} metres.`);
-      addBtn.disabled = pts.length >= MAXPTS;
-      delBtn.disabled = pts.length <= MINPTS;
+      // aria-disabled (not disabled) so focus stays on the button that was just pressed
+      const dis = (b, off) => { b.setAttribute('aria-disabled', String(off)); b.style.opacity = off ? '.5' : ''; };
+      dis(addBtn, pts.length >= MAXPTS);
+      dis(delBtn, pts.length <= MINPTS);
       vtCv.redraw(); stCv.redraw();
+    }
+    function describeVT() {
+      const info = segInfo();
+      const stages = info.rows.map((r, k) => `stage ${k + 1}, ${f1(r.t1)} to ${f1(r.t2)} s: acceleration ${f3(r.a)} m s⁻²`).join('; ');
+      return `Straight-line segments through the points ${pts.map((p) => `(${f1(p[0])} s, ${f1(p[1])} m s⁻¹)`).join(', ')}. ${stages}. `
+        + `Area under the graph gives displacement ${f3(info.s)} m and distance ${f3(info.dist)} m.`;
+    }
+    function describeST() {
+      const info = segInfo();
+      let top = 0, low = 0;
+      for (let i = 0; i <= 60; i++) { const s = sAt(info, info.T * i / 60); top = Math.max(top, s); low = Math.min(low, s); }
+      return `Displacement s from 0 m at t = 0 to ${f3(info.s)} m at t = ${f1(info.T)} s, made of parabolic pieces. Greatest displacement ${f3(top)} m, least ${f3(low)} m.`;
     }
 
     function syncInputs() {
@@ -209,6 +220,8 @@
           oninput: () => setFromField(k, 0, tf) });
         const vf = W.field({ label: `v`, value: String(p[1]), type: 'number', step: 0.5, width: '5.2em',
           oninput: () => setFromField(k, 1, vf) });
+        vf.input.setAttribute('aria-label', `Point ${k + 1}: v (m s⁻¹)`);
+        tf.input.setAttribute('aria-label', `Point ${k + 1}: t (s)`);
         if (k === 0) tf.input.disabled = true;
         edit.__t.push(tf); edit.__v.push(vf);
         edit.append(tf.el, vf.el);

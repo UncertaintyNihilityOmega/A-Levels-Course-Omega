@@ -44,6 +44,7 @@
       row.append(W.h('span', { class: 'w-lab', style: { minWidth: '5.5em', color: k ? 'var(--sc2)' : 'var(--sc)', fontWeight: 600 } }, `Line ${k + 1}`));
       names.forEach((nm, i) => {
         const f = W.field({ label: nm, value: start[k][i], type: 'number', step: 1, width: '4em', oninput: update });
+        f.input.setAttribute('aria-label', `Line ${k + 1}: ${nm}`);
         flds[k].push(f); row.append(f.el);
         if (i === 2) row.append(W.h('span', { class: 'w-lab' }, '  '));
       });
@@ -54,7 +55,7 @@
     if (P0) {
       const row = W.h('div', { class: 'w-row', style: { alignItems: 'flex-end', gap: '6px 8px' } });
       row.append(W.h('span', { class: 'w-lab', style: { minWidth: '5.5em', fontWeight: 600 } }, 'Point P'));
-      pf = ['x', 'y', 'z'].map((nm, i) => { const f = W.field({ label: nm, value: P0[i], type: 'number', step: 1, width: '4em', oninput: update }); row.append(f.el); return f; });
+      pf = ['x', 'y', 'z'].map((nm, i) => { const f = W.field({ label: nm, value: P0[i], type: 'number', step: 1, width: '4em', oninput: update }); f.input.setAttribute('aria-label', `Point P: ${nm}`); row.append(f.el); return f; });
       body.append(row);
     }
     const btns = W.h('div', { class: 'w-row' });
@@ -70,8 +71,8 @@
 
     const v3 = W.view3d({ yaw: 0.7, pitch: 0.42, scale: 40 });
     const state = { ok: false };
-    const cv = W.canvas(body, { height: 330, draw });
-    cv.wrap.setAttribute('role', 'img'); cv.wrap.style.touchAction = 'none'; cv.wrap.style.cursor = 'grab';
+    const cv = W.canvas(body, { height: 330, draw, label: 'Two lines in 3D, with turn buttons below', describe: describeLines });
+    cv.wrap.style.touchAction = 'none'; cv.wrap.style.cursor = 'grab';
     W.orbit(cv.wrap, v3, cv.redraw);
     const R = W.readout([['verdict', 'The lines are'], ['detail', 'Common point'], ['angle', 'Acute angle between the lines']].concat(P0 ? [['foot', 'Foot of the perpendicular from P to line 1'], ['dist', 'Perpendicular distance']] : []));
     body.append(R.el, W.h('div', { class: 'w-note' }, 'Intersecting lines share one point; parallel lines have direction vectors that are multiples of each other; skew lines are not parallel and never meet.'));
@@ -120,8 +121,17 @@
       R.set('detail', r.kind === 'intersecting' ? `${fmtV(r.p1)} at s = ${W.fmt(r.s, 3)}, t = ${W.fmt(r.t, 3)}` : r.kind === 'parallel' ? (r.same ? 'every point' : 'none') : 'none: no values of s and t fit all three equations');
       R.set('angle', r.kind === 'parallel' ? '0°' : `${W.fix(r.angle, 1)}°`);
       if (m.P) { R.set('foot', fmtV(r.foot)); R.set('dist', W.fmt(r.fd, 3)); }
-      cv.wrap.setAttribute('aria-label', `Two lines in three dimensions. They are ${r.kind}.`);
       cv.redraw();
+    }
+    function describeLines() {
+      if (!state.ok || !model) return 'No picture: a box above needs a valid number.';
+      const { lines, P, r } = model;
+      const ln = lines.map((l, k) => `Line ${k + 1} through ${fmtV(l.a)} with direction ${fmtV(l.d)}`).join('; ');
+      let s = `${ln}. The lines are ${r.kind === 'parallel' && r.same ? 'parallel (the same line)' : r.kind}`;
+      if (r.kind === 'intersecting') s += `, meeting at ${fmtV(r.p1)}`;
+      s += r.kind === 'parallel' ? '.' : `, with an acute angle of ${W.fix(r.angle, 1)} degrees.`;
+      if (P) s += ` The foot of the perpendicular from P to line 1 is ${fmtV(r.foot)}, at distance ${W.fmt(r.fd, 3)}.`;
+      return s;
     }
 
     function draw(ctx, w, h, c) {

@@ -96,7 +96,9 @@
       const x = parseFloat(v); if (!isFinite(x)) return;
       st.i = Math.min(100, Math.max(0, x)); update();
     } });
-    body.append(W.h('div', { class: 'w-row' }, selEl), W.h('div', { class: 'w-row' }, sL.el, sI.el));
+    // the photons and electrons move all the time, so the reader can pause them (never started under reduced motion)
+    const pauseBtn = W.h('button', { class: 'btn btn-sm btn-sec', type: 'button', onclick: () => togglePause() }, 'Pause the animation');
+    body.append(W.h('div', { class: 'w-row' }, selEl, reduced ? null : pauseBtn), W.h('div', { class: 'w-row' }, sL.el, sI.el));
 
     // ---- scene canvas -----------------------------------------------------------
     const rng = W.rng(5);
@@ -169,6 +171,12 @@
 
     const scene = W.canvas(body, {
       height: 200,
+      label: 'Light shining on a metal emitter in a vacuum tube',
+      describe: () => {
+        const p = phys(st), name = st.lam < 380 ? 'ultraviolet' : st.lam > 750 ? 'infrared' : colourName(st.lam);
+        return 'Photons of ' + name + ' light, ' + Math.round(st.lam) + ' nm, at ' + Math.round(st.i) + ' % intensity hit the ' + METALS[st.metal].name.toLowerCase() + ' emitter. ' +
+          (st.i <= 0 ? 'The light is off, so nothing is emitted.' : p.ke > 0 ? 'Each photon has ' + W.fmt(p.eph / E, 3) + ' eV, more than the work function ' + METALS[st.metal].phi + ' eV, so electrons are emitted towards the collector.' : 'Each photon has ' + W.fmt(p.eph / E, 3) + ' eV, less than the work function ' + METALS[st.metal].phi + ' eV, so no electrons are emitted.');
+      },
       draw(ctx, w, h, col) {
         const p = phys(st);
         const tx = 12, ty = 38, tw = w - 24, th = h - 62;
@@ -242,6 +250,12 @@
     }
     const graph = W.canvas(body, {
       height: 230,
+      label: 'Graph of maximum kinetic energy against frequency',
+      describe: () => {
+        const p = phys(st), phi = METALS[st.metal].phi, keEv = p.ke / E;
+        return 'KEmax in electronvolts against frequency in units of 10¹⁴ hertz: a straight line of gradient h starting at the threshold frequency ' + W.fmt(phi / gradEv, 3) + ' × 10¹⁴ Hz for ' + METALS[st.metal].name.toLowerCase() +
+          ', with a dashed parallel line for another metal. The marked point is at ' + W.fmt(p.f / 1e14, 3) + ' × 10¹⁴ Hz, ' + (keEv > 0 ? 'where KEmax is ' + W.fmt(keEv, 3) + ' eV.' : 'below the threshold, so there is no emission.');
+      },
       draw(ctx, w, h, col) {
         const p = phys(st);
         const vw = view(p);
@@ -319,5 +333,9 @@
     }, { still: () => scene.redraw() });
     last = performance.now();
     anim.start();
+    function togglePause() {
+      if (anim.running) { anim.stop(); pauseBtn.textContent = 'Resume the animation'; }
+      else { last = performance.now(); anim.start(); pauseBtn.textContent = 'Pause the animation'; }
+    }
   });
 })();

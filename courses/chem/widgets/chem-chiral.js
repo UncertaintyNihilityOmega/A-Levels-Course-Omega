@@ -177,6 +177,8 @@
       }
     });
     cvs.cv.setAttribute('role', 'img');
+    cvs.describe = () => 'Left: the original, a central carbon with the groups ' + groups().join(', ') + ' on tetrahedral bonds, thick bonds towards you and dashed bonds away. Right: its mirror image, '
+      + (progress <= 0 ? 'as first drawn.' : progress < 1 ? 'turning to match the original.' : 'turned so that ' + groups()[0] + ' and ' + groups()[1] + ' sit on the same positions as the original. ' + verdict);
     W.orbit(cvs.wrap, view, cvs.redraw);
 
     // ----- buttons and readout -----
@@ -212,7 +214,7 @@
       progress = 0; verdict = '';
       computeTarget();
       err.textContent = msg;
-      cvs.cv.setAttribute('aria-label', 'Two tetrahedral models of ' + MOLS[key].name + ' that are mirror images of each other, with groups ' + g.join(', ') + ' on the central carbon.');
+      cvs.setLabel('Two mirror-image tetrahedral models of ' + MOLS[key].name);
       cvs.redraw();
     }
 

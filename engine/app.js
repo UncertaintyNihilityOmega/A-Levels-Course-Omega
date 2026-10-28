@@ -21,14 +21,19 @@
     if (t) return t === 'dark';
     try { return window.matchMedia('(prefers-color-scheme: dark)').matches; } catch (e) { return false; }
   }
-  function syncThemeIcon() { if (!root.getAttribute('data-theme')) root.setAttribute('data-theme-auto', effectiveDark() ? 'dark' : 'light'); }
+  function syncThemeIcon() {
+    if (!root.getAttribute('data-theme')) root.setAttribute('data-theme-auto', effectiveDark() ? 'dark' : 'light');
+    $('#themeBtn').setAttribute('aria-pressed', effectiveDark() ? 'true' : 'false');
+  }
   $('#themeBtn').addEventListener('click', () => {
     const next = effectiveDark() ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
     store.set('theme', next);
+    syncThemeIcon();
     toast(next === 'dark' ? 'Chalkboard mode' : 'Paper mode');
     setTimeout(W.themeChanged, 30);
   });
+  try { window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', syncThemeIcon); } catch (e) { /* old browsers */ }
   $('#textBtn').addEventListener('click', () => {
     const cur = root.getAttribute('data-size') || 'm';
     const next = cur === 'm' ? 'l' : cur === 'l' ? 'xl' : 'm';
@@ -36,6 +41,7 @@
     store.set('size', next === 'm' ? null : next);
     toast({ m: 'Text size: normal', l: 'Text size: large', xl: 'Text size: extra large' }[next]);
     setTimeout(W.themeChanged, 30);
+    setTimeout(() => { if (current) markScrollers(current); }, 60);
   });
   syncThemeIcon();
 
@@ -44,6 +50,20 @@
     const t = $('#toast');
     t.textContent = msg; t.hidden = false;
     clearTimeout(toastT); toastT = setTimeout(() => { t.hidden = true; }, 1800);
+    say(msg);
+  }
+  // the toast is hidden from screen readers; this always-present status region reads the message instead
+  let sayT = 0;
+  function say(msg) {
+    const a = $('#announce');
+    a.textContent = '';
+    clearTimeout(sayT); sayT = setTimeout(() => { a.textContent = msg; }, 60);
+  }
+  /** Move keyboard and screen-reader focus to an element that is not a control (a heading, a section). */
+  function focusOn(el) {
+    if (!el) return;
+    if (!el.hasAttribute('tabindex')) el.setAttribute('tabindex', '-1');
+    el.focus({ preventScroll: true });
   }
 
   /* ---------- progress ---------- */
@@ -56,7 +76,12 @@
     return { n, d };
   }
   function renderProgress() {
-    for (const a of $$('.nav-g a[data-nav]')) a.classList.toggle('done', !!done[a.getAttribute('data-nav')]);
+    for (const a of $$('.nav-g a[data-nav]')) {
+      const on = !!done[a.getAttribute('data-nav')], sr = $('.nav-sr', a);
+      a.classList.toggle('done', on);
+      if (on && !sr) a.append(W.h('span', { class: 'sr-only nav-sr' }, ' (learned)'));
+      else if (!on && sr) sr.remove();
+    }
     for (const b of $$('[data-done]')) {
       const on = !!done[b.getAttribute('data-done')];
       b.setAttribute('aria-pressed', on ? 'true' : 'false');
@@ -188,17 +213,21 @@
       save(); render();
     });
     finBtn.addEventListener('click', () => {
-      if (!confirmT) { finBtn.textContent = 'Show the answers?'; confirmT = setTimeout(() => { confirmT = 0; finBtn.textContent = 'Finish and mark'; }, 3000); return; }
+      if (!confirmT) { finBtn.textContent = 'Show the answers?'; say('Press again to finish and show the answers.'); confirmT = setTimeout(() => { confirmT = 0; finBtn.textContent = 'Finish and mark'; }, 3000); return; }
       clearTimeout(confirmT); confirmT = 0; finBtn.textContent = 'Finish and mark';
       if (S.start) { S.spent += Date.now() - S.start; S.start = 0; }
       S.done = true; save(); render();
       for (const d of $$('.try-mock details.ta', art)) d.open = true;
       bar.scrollIntoView({ block: 'nearest' });
+      // focus the first mark box (not "Start again", where a second Enter would wipe the paper)
+      ($('.mock-mark input', art) || againBtn).focus({ preventScroll: true });
+      say('Answers shown. Mark each question against the mark scheme under it.');
     });
     againBtn.addEventListener('click', () => {
       S = { start: 0, spent: 0, done: false, marks: {} }; save(); warned = false;
       for (const d of $$('.try-mock details.ta', art)) d.open = false;
       render(); window.scrollTo(0, art.offsetTop);
+      runBtn.focus({ preventScroll: true });
     });
     render();
   }
@@ -243,15 +272,26 @@
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   }
-  const menuBtn = $('#menuBtn'), scrim = $('#scrim');
-  function setDrawer(open) {
+  const menuBtn = $('#menuBtn'), scrim = $('#scrim'), sidebar = $('#sidebar');
+  const drawerMode = () => getComputedStyle(menuBtn).display !== 'none';
+  function setDrawer(open, focus) {
+    const was = app.classList.contains('nav-open');
     app.classList.toggle('nav-open', open);
     scrim.hidden = !open;
     menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    if (open) { const a = $('.nav-g a.active'); if (a) a.scrollIntoView({ block: 'center' }); }
+    if (open) {
+      const a = $('.nav-g a.active');
+      if (a) a.scrollIntoView({ block: 'center' });
+      // focus moves into the drawer (it is hidden until the slide starts, so wait a frame)
+      if (focus) requestAnimationFrame(() => (a && a.offsetParent ? a : $('.side-home')).focus({ preventScroll: true }));
+    } else if (was && focus) menuBtn.focus();
   }
-  menuBtn.addEventListener('click', () => setDrawer(!app.classList.contains('nav-open')));
-  scrim.addEventListener('click', () => setDrawer(false));
+  menuBtn.addEventListener('click', () => setDrawer(!app.classList.contains('nav-open'), true));
+  scrim.addEventListener('click', () => setDrawer(false, true));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && app.classList.contains('nav-open')) setDrawer(false, true); });
+  sidebar.addEventListener('focusout', (e) => {
+    if (app.classList.contains('nav-open') && drawerMode() && e.relatedTarget && !sidebar.contains(e.relatedTarget) && e.relatedTarget !== menuBtn) setDrawer(false);
+  });
 
   /* ---------- quizzes ---------- */
   function renderQuizInto(el, idxs, opts) {
@@ -260,18 +300,24 @@
     idxs.forEach((qi, n) => {
       const q = QUIZ[qi]; if (!q) return;
       const box = W.h('div', { class: 'qz' });
-      box.append(W.h('div', { class: 'qz-q', html: `<span class="qz-n">${opts.numbered === false ? '' : (n + 1) + '.'}</span>${q.q}` }));
-      const opt = W.h('div', { class: 'qz-o', role: 'group' });
+      const qid = W.uid('qz');
+      box.append(W.h('div', { class: 'qz-q', id: qid, html: `<span class="qz-n">${opts.numbered === false ? '' : (n + 1) + '.'}</span>${q.q}` }));
+      const opt = W.h('div', { class: 'qz-o', role: 'group', 'aria-labelledby': qid });
       const order = opts.shuffle ? W.shuffle(q.o.map((_, i) => i)) : q.o.map((_, i) => i);
       const btns = [];
       order.forEach((oi, k) => {
         const b = W.h('button', { class: 'qz-btn', type: 'button', html: `<span class="qz-k">${'ABCDEF'[k]}</span><span>${q.o[oi]}</span>` });
         b.addEventListener('click', () => {
+          if (b.getAttribute('aria-disabled') === 'true') return;
           const right = oi === q.a;
-          btns.forEach(x => { x.b.disabled = true; if (x.oi === q.a) x.b.classList.add('right'); });
-          if (!right) b.classList.add('wrong');
+          btns.forEach(x => {
+            x.b.setAttribute('aria-disabled', 'true');
+            if (x.oi === q.a) { x.b.classList.add('right'); x.b.append(W.h('span', { class: 'sr-only' }, ' (correct answer)')); }
+          });
+          if (!right) { b.classList.add('wrong'); b.append(W.h('span', { class: 'sr-only' }, ' (your answer, not correct)')); }
           const ex = W.h('div', { class: 'qz-e ' + (right ? 'ok' : 'no'), html: `<b>${right ? 'Correct.' : 'Not quite.'}</b>${q.e || ''}` });
           box.append(ex);
+          say(ex.textContent);
           // the last 10 answers per chapter feed "What to revise next"
           const log = store.get('quizlog', {});
           log[q.c] = ((log[q.c] || '') + (right ? '1' : '0')).slice(-10);
@@ -304,8 +350,17 @@
     if (art.id === 'c-tools.glossary') ZTA.loadAll().then(() => initGlossary(art), loadFailed);
   }
 
+  function markScrollers(scope) {
+    for (const el of $$('.tw, .mb', scope)) {
+      if (el.scrollWidth > el.clientWidth + 1) el.setAttribute('tabindex', '0');
+      else if (el.getAttribute('tabindex') === '0') el.removeAttribute('tabindex');
+    }
+  }
+  let rsT = 0;
+  window.addEventListener('resize', () => { clearTimeout(rsT); rsT = setTimeout(() => { if (current) markScrollers(current); }, 250); });
+
   /* ---------- router ---------- */
-  let current = null;
+  let current = null, routed = false;
   const rail = $('#railToc');
   let spy = null;
   function route() {
@@ -329,9 +384,9 @@
     art.hidden = false; current = art;
     hydrate(art);
     // nav state
-    for (const a of $$('.nav-g a.active')) a.classList.remove('active');
+    for (const a of $$('.nav-g a.active')) { a.classList.remove('active'); a.removeAttribute('aria-current'); }
     const link = $(`.nav-g a[data-nav="${CSS.escape(cid)}"]`);
-    if (link) link.classList.add('active');
+    if (link) { link.classList.add('active'); link.setAttribute('aria-current', 'page'); }
     const sid = art.getAttribute('data-subject');
     if (changed) openSubject(sid, false);
     if (link && changed) {
@@ -345,13 +400,17 @@
     const info = G.ch[cid];
     document.title = info && cid !== 'home' ? `${info.t} · Zero to A*` : 'Zero to A*';
     if (cid !== 'home') store.set('last', cid);
-    if (sec) {
-      const target = document.getElementById(sec);
-      if (target) { requestAnimationFrame(() => target.scrollIntoView({ block: 'start' })); }
-    } else if (changed) window.scrollTo(0, 0);
+    const target = sec && document.getElementById(sec);
+    if (target) { requestAnimationFrame(() => target.scrollIntoView({ block: 'start' })); }
+    else if (changed) window.scrollTo(0, 0);
     if (cid === 'home') renderHome();
     if (cid === 'practice.next') renderNext(art);
+    markScrollers(art);
+    // after a navigation (not the first load) keyboard and screen-reader focus starts at the new page or section
+    if (routed && (changed || target)) focusOn(target || $('h1', art));
+    routed = true;
   }
+  $('#skipLink').addEventListener('click', (e) => { e.preventDefault(); focusOn((current && $('h1', current)) || $('#main')); });
   window.addEventListener('hashchange', route);
   function loadFailed(e) { toast(e.message + ' — keep the c folder next to index.html.'); }
 
@@ -469,11 +528,14 @@
   }
   function showResults() {
     const q = input.value.trim();
-    if (!q) { results.hidden = true; return; }
+    if (!q) { closeSearch(); return; }
     hits = search(q); sel = -1;
-    results.innerHTML = hits.length ? hits.map((r, i) => `<a class="sr s-${r.s}" role="option" id="sr${i}" href="${r.href}"><div class="sr-t"><span class="sr-s">${W.esc(subjShort(r.s))}</span><span>${W.esc(r.title)}</span></div>${r.html ? `<div class="sr-x">${r.html}</div>` : ''}</a>`).join('')
+    results.innerHTML = hits.length ? hits.map((r, i) => `<a class="sr s-${r.s}" role="option" id="sr${i}" tabindex="-1" aria-selected="false" href="${r.href}"><div class="sr-t"><span class="sr-s">${W.esc(subjShort(r.s))}</span><span>${W.esc(r.title)}</span></div>${r.html ? `<div class="sr-x">${r.html}</div>` : ''}</a>`).join('')
       : `<div class="sr-empty">No matches for “${W.esc(q)}”. Try a shorter word, or a topic name such as “moles” or “break-even”.</div>`;
     results.hidden = false;
+    input.setAttribute('aria-expanded', 'true');
+    input.removeAttribute('aria-activedescendant');
+    $('#searchStatus').textContent = hits.length ? `${hits.length} result${hits.length === 1 ? '' : 's'}. Use the up and down arrows to choose.` : 'No matches.';
   }
   let st = 0;
   input.addEventListener('input', () => { clearTimeout(st); st = setTimeout(showResults, 120); });
@@ -490,9 +552,10 @@
     else if (e.key === 'Escape') { closeSearch(); input.blur(); return; }
     else return;
     items.forEach((it, i) => it.setAttribute('aria-selected', i === sel ? 'true' : 'false'));
-    if (items[sel]) items[sel].scrollIntoView({ block: 'nearest' });
+    if (items[sel]) { items[sel].scrollIntoView({ block: 'nearest' }); input.setAttribute('aria-activedescendant', items[sel].id); }
   });
-  function closeSearch() { results.hidden = true; }
+  function closeSearch() { results.hidden = true; input.setAttribute('aria-expanded', 'false'); input.removeAttribute('aria-activedescendant'); }
+  $('.search').addEventListener('focusout', () => setTimeout(() => { if (!$('.search').contains(document.activeElement)) closeSearch(); }, 150));
   results.addEventListener('click', (e) => { if (e.target.closest('.sr')) { closeSearch(); input.blur(); } });
   document.addEventListener('click', (e) => { if (!e.target.closest('.search')) closeSearch(); });
   document.addEventListener('keydown', (e) => {
@@ -509,9 +572,9 @@
     const filt = W.h('input', { type: 'search', placeholder: `Filter ${items.length} key terms…`, 'aria-label': 'Filter key terms', id: 'glossFilter' });
     const subjSel = W.h('select', { 'aria-label': 'Subject', id: 'glossSubject' }, W.h('option', { value: '' }, 'All subjects'),
       ...G.subjects.filter(s => items.some(i => i.s === s.id)).map(s => W.h('option', { value: s.id }, s.t)));
-    const count = W.h('div', { class: 'w-note' });
+    const count = W.h('div', { class: 'w-note', 'aria-live': 'polite' });
     const list = W.h('dl', {});
-    const letters = W.h('div', { class: 'gl-letters' });
+    const letters = W.h('div', { class: 'gl-letters', role: 'group', 'aria-label': 'Jump to a letter' });
     const wrap = W.h('div', { class: 'w' }, W.h('div', { class: 'w-b' }, W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-ctl', style: { flex: '3 1 14rem' } }, W.h('label', {}, 'Search terms'), filt), W.h('div', { class: 'w-ctl' }, W.h('label', {}, 'Subject'), subjSel)), count));
     host.append(wrap, letters, list);
     function draw() {
@@ -529,7 +592,7 @@
       }).join('') + (shown.length > 600 ? `<p class="w-note">Showing the first 600 — type to narrow the list.</p>` : '');
       letters.innerHTML = [...seen].filter(l => /[A-Z]/.test(l)).map(l => `<a href="#tools.glossary" data-l="${l}">${l}</a>`).join('');
     }
-    letters.addEventListener('click', (e) => { const a = e.target.closest('[data-l]'); if (!a) return; e.preventDefault(); const t = document.getElementById('gl-' + a.dataset.l); if (t) t.scrollIntoView({ block: 'start' }); });
+    letters.addEventListener('click', (e) => { const a = e.target.closest('[data-l]'); if (!a) return; e.preventDefault(); const t = document.getElementById('gl-' + a.dataset.l); if (t) { t.scrollIntoView({ block: 'start' }); focusOn(t); } });
     filt.addEventListener('input', draw); subjSel.addEventListener('change', draw);
     draw();
   }
@@ -574,7 +637,7 @@
       let right = 0, answered = 0;
       const wrongCh = new Map();
       area.innerHTML = '';
-      const score = W.h('div', { class: 'pq-score' }, `0 / ${pick.length}`);
+      const score = W.h('div', { class: 'pq-score', 'aria-live': 'polite' }, `0 / ${pick.length}`);
       const qbox = W.h('div', { class: 'quiz-wrap' });
       const review = W.h('div', {});
       area.append(score, qbox, review);

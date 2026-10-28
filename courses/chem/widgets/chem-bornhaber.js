@@ -186,6 +186,12 @@
       }
     });
     cvs.cv.setAttribute('role', 'img');
+    cvs.describe = () => {
+      const S = geo.S;
+      if (!S) return 'No diagram yet: every value that is not being calculated needs a number.';
+      const lv = S.levels.map((l, i) => (i ? 'step ' + i + ' reaches ' : 'start at ') + l.label + ' at ' + signed(l.E) + ' kJ per mole').join('; ');
+      return 'Level diagram drawn to scale, higher up meaning more enthalpy. Elements are at 0. ' + lv + '. The thick arrow ' + (S.hfUnknown ? 'f, the formation enthalpy,' : 'for the calculated term') + ' is the unknown. The table below lists every step.';
+    };
 
     const tbl = W.h('table', { style: { width: '100%' } });
     body.appendChild(tbl);
@@ -216,7 +222,7 @@
       if (bad.length) {
         geo.S = null; geo.label = 'Born–Haber cycle: waiting for numbers';
         tbl.textContent = ''; sumLine.textContent = '';
-        cvs.cv.setAttribute('aria-label', geo.label); cvs.redraw();
+        cvs.setLabel(geo.label); cvs.redraw();
         return;
       }
       // solve for the unknown (formation enthalpy = sum of the multiplied terms)
@@ -253,7 +259,9 @@
       tbl.textContent = '';
       const row = (cells, hi, head) => {
         const tr = W.h('tr', {});
-        cells.forEach((c, i) => tr.appendChild(W.h(head ? 'th' : 'td', { text: c, style: Object.assign({ textAlign: i === 3 ? 'right' : 'left' }, hi ? { color: 'var(--red)', fontWeight: '700' } : {}) })));
+        // the calculated row is bold and red; screen readers also hear "calculated" after the term name
+        cells.forEach((c, i) => tr.appendChild(W.h(head ? 'th' : 'td', { text: c, scope: head ? 'col' : null, style: Object.assign({ textAlign: i === 3 ? 'right' : 'left' }, hi ? { color: 'var(--red)', fontWeight: '700' } : {}) },
+          hi && i === 1 ? W.h('span', { class: 'sr-only', text: ' (calculated)' }) : null)));
         tbl.appendChild(tr);
       };
       row(['Step', 'Term', 'Change', 'kJ mol⁻¹'], false, true);
@@ -262,7 +270,7 @@
       const total = steps.reduce((a, x) => a + x.v, 0);
       sumLine.textContent = 'Sum of steps 1 to ' + steps.length + ' = ' + signed(total) + ' kJ mol⁻¹, which equals ΔHf = ' + signed(st.vals.hf) + ' kJ mol⁻¹ (Hess\'s law). The term being calculated is shown in the highlighted row and the thick arrow' + (st.unknown === 'hf' ? '.' : ' (step ' + (steps.findIndex(x => x.unknown) + 1) + ').');
       geo.label = 'Born–Haber cycle for ' + s.formula + ' drawn to scale with ' + steps.length + ' steps; calculated term ' + FNAMES[st.unknown] + ' = ' + signed(st.vals[st.unknown]) + ' kilojoules per mole';
-      cvs.cv.setAttribute('aria-label', geo.label);
+      cvs.setLabel(geo.label);
       cvs.redraw();
     }
     update();

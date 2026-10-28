@@ -74,6 +74,13 @@
       const fine = (w, x) => (x / (2 * WIN)) * w < 5;     // fringe period under 5 px: cannot be drawn
       const cG = W.canvas(body, {
         height: 190,
+        label: 'Graph of fringe intensity against position on the screen',
+        describe() {
+          const x = xsep();
+          return 'Relative intensity I/I₀ against distance y from the centre of the screen, from −' + WIN + ' to ' + WIN + ' mm. ' +
+            (fine(300, x) && x < 0.05 * WIN ? 'The fringes are too close together to draw separately. ' : 'Bright fringes are ' + W.fmt(x, 3) + ' mm apart, with a bright fringe at y = 0. ') +
+            'The light is ' + colourName(st.lam) + ', ' + Math.round(st.lam) + ' nm.';
+        },
         draw(ctx, w, h, col) {
           const x = xsep();
           const ax = W.axes(ctx, w, h, { x0: -WIN, x1: WIN, y0: 0, y1: 1.4 }, col,
@@ -107,6 +114,11 @@
 
       const cS = W.canvas(body, {
         height: 54,
+        label: 'Picture of the fringes on the screen',
+        describe() {
+          const nb = Math.floor(WIN / xsep()) * 2 + 1;
+          return 'Bright and dark ' + colourName(st.lam) + ' fringes, about ' + (xsep() > 2 * WIN ? 'only the central one' : nb) + ' bright in the ±' + WIN + ' mm window.';
+        },
         draw(ctx, w, h, col) {
           const pl = 46, pr = 14, pw = w - pl - pr, x = xsep();
           ctx.fillStyle = '#000'; ctx.fillRect(pl, 4, pw, h - 22);
@@ -158,6 +170,18 @@
 
       const c = W.canvas(body, {
         height: 340,
+        label: 'Diagram of the diffraction orders from a grating',
+        describe() {
+          const d = dnm();
+          if (st.white) {
+            const parts = [];
+            for (let k = 1; k <= Math.min(3, nmax(400)); k++) parts.push('order ' + k + ' from ' + W.fmt(thetaOf(k, 400) * 180 / Math.PI, 3) + '° (violet) to ' + W.fmt(thetaOf(k, 700) * 180 / Math.PI, 3) + '° (red)');
+            return 'White light on a grating of ' + st.N + ' lines per mm (d = ' + W.fmt(d / 1000, 3) + ' μm). A white central maximum, then on each side ' + (parts.length ? parts.join('; ') : 'no further orders') + '.';
+          }
+          const nm = nmax(st.lam), parts = [];
+          for (let k = 1; k <= Math.min(5, nm); k++) parts.push('order ' + k + ' at ' + W.fmt(thetaOf(k, st.lam) * 180 / Math.PI, 3) + '°');
+          return colourName(st.lam) + ' light of ' + Math.round(st.lam) + ' nm on a grating of ' + st.N + ' lines per mm (d = ' + W.fmt(d / 1000, 3) + ' μm): ' + (2 * nm + 1) + ' maxima, the central one and ' + nm + ' each side' + (parts.length ? ', ' + parts.join(', ') + (nm > 5 ? ' and more' : '') : '') + '.';
+        },
         draw(ctx, w, h, col) {
           const cy = h / 2, cx0 = w < 420 ? 40 : 56;
           const R = Math.max(60, Math.min(w - cx0 - 58, h / 2 - 28));

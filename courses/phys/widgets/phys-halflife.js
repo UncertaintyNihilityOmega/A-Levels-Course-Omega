@@ -80,6 +80,7 @@
         last = performance.now(); st.running = true; runBtn.textContent = 'Pause'; anim.start();
       } else {
         st.running = false; runBtn.textContent = 'Run'; anim.stop();
+        speak();
       }
     }
     const runBtn = W.h('button', { class: 'btn btn-sm', type: 'button', onclick: () => setRunning(!st.running) }, 'Run');
@@ -93,6 +94,8 @@
     // ---- grid of nuclei -----------------------------------------------------------
     const grid = W.canvas(body, {
       height: 170,
+      label: 'Grid of nuclei, filled where undecayed and outlined where decayed',
+      describe: () => simCount(tNow()) + ' of the ' + st.n0 + ' nuclei are undecayed at time ' + W.fmt(tNow(), 3) + ' (' + W.fmt(st.k, 3) + ' half-lives).',
       draw(ctx, w, h, col) {
         const n = st.n0, t = tNow(), lm = lam();
         let s = Math.floor(Math.sqrt((w - 8) * (h - 8) / n));
@@ -117,6 +120,9 @@
     // ---- graph ------------------------------------------------------------------------
     const graph = W.canvas(body, {
       height: 250,
+      label: 'Graph of the number of undecayed nuclei against time',
+      describe: () => 'Number of nuclei N against time t. The smooth curve N₀e^(−λt) falls from ' + st.n0 + ' to ' + W.fmt(model(5 * st.th), 3) + ' at t = ' + W.fmt(5 * st.th, 3) +
+        ', halving every ' + W.fmt(st.th, 3) + ' time units. The simulated steps follow it up to the cursor at t = ' + W.fmt(tNow(), 3) + ', where ' + simCount(tNow()) + ' nuclei remain against ' + W.fmt(model(tNow()), 3) + ' from the model.',
       draw(ctx, w, h, col) {
         // the axis runs 15% past the 5 half-lives drawn, so the curve's tail stays clear of the x-axis label
         const th = st.th, n0 = st.n0, lm = lam(), T = 5 * th;
@@ -175,6 +181,11 @@
     ]);
     const note = W.h('div', { class: 'w-note' }, 'Each run is different (decay is random), but the larger N₀ is, the closer the steps follow the smooth curve.');
     body.append(ro.el, note, err);
+    // the table changes on every frame of a run, so it is not read out; the summary is spoken when the run stops or the reader sets a value
+    ro.el.setAttribute('aria-live', 'off');
+    function speak() {
+      W.say(body, 'At t = ' + W.fmt(tNow(), 3) + ' time units, ' + W.fmt(st.k, 3) + ' half-lives: ' + simCount(tNow()) + ' of ' + st.n0 + ' nuclei remain; the model gives ' + W.fmt(model(tNow()), 3) + '.');
+    }
 
     function update() {
       const t = tNow(), nm = model(t), ns = simCount(t);
@@ -185,6 +196,7 @@
       ro.set('a', W.fmt(lam() * nm, 3) + ' decays per time unit');
       ro.set('fr', W.fmt(ns / st.n0, 3) + '  (model ' + W.fmt(nm / st.n0, 3) + ')');
       grid.redraw(); graph.redraw();
+      if (!st.running) speak();
     }
     update();
     if (reduced) { st.k = 5; sK.set(5); update(); } else setRunning(true);

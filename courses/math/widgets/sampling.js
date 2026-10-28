@@ -44,11 +44,11 @@
 
     /* controls */
     const row = W.h('div', { class: 'w-row', style: { alignItems: 'flex-end' } });
-    const tabs = W.h('div', { class: 'w-tabs', role: 'tablist', 'aria-label': 'Population shape' });
+    const tabs = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Population shape' });
     const tabBtns = [];
     for (const k of Object.keys(POPS)) {
-      const b = W.h('button', { type: 'button', class: 'w-tab', role: 'tab', 'aria-selected': String(k === pop) }, POPS[k].name);
-      b.addEventListener('click', () => { pop = k; tabBtns.forEach(([kk, bb]) => bb.setAttribute('aria-selected', String(kk === pop))); pSl.el.style.display = pop === 'bernoulli' ? '' : 'none'; reset(); });
+      const b = W.h('button', { type: 'button', class: 'w-tab', 'aria-pressed': String(k === pop) }, POPS[k].name);
+      b.addEventListener('click', () => { pop = k; tabBtns.forEach(([kk, bb]) => bb.setAttribute('aria-pressed', String(kk === pop))); pSl.el.style.display = pop === 'bernoulli' ? '' : 'none'; reset(); });
       tabBtns.push([k, b]); tabs.append(b);
     }
     row.append(tabs);
@@ -61,11 +61,11 @@
     const row2 = W.h('div', { class: 'w-row' });
     const btn = (t, f, sec) => { const b = W.h('button', { type: 'button', class: 'btn btn-sm' + (sec ? ' btn-sec' : '') }, t); b.addEventListener('click', f); return b; };
     if (mode === 'ci') {
-      const lv = W.h('div', { class: 'w-tabs', role: 'tablist', 'aria-label': 'Confidence level' });
+      const lv = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Confidence level' });
       const lvB = [];
       for (const k of [90, 95, 99]) {
-        const b = W.h('button', { type: 'button', class: 'w-tab', role: 'tab', 'aria-selected': String(k === level) }, k + '%');
-        b.addEventListener('click', () => { level = k; lvB.forEach(([kk, bb]) => bb.setAttribute('aria-selected', String(kk === level))); reset(); });
+        const b = W.h('button', { type: 'button', class: 'w-tab', 'aria-pressed': String(k === level) }, k + '%');
+        b.addEventListener('click', () => { level = k; lvB.forEach(([kk, bb]) => bb.setAttribute('aria-pressed', String(kk === level))); reset(); });
         lvB.push([k, b]); lv.append(b);
       }
       row2.append(lv, btn('Draw 1 interval', () => draw(1)), btn('Draw 20 intervals', () => draw(20)), btn('Clear', reset, true));
@@ -79,8 +79,8 @@
     errBox.style.display = warn.length ? '' : 'none';
     body.append(errBox);
 
-    const cv = W.canvas(body, { height: mode === 'ci' ? 300 : 320, draw: render });
-    cv.wrap.setAttribute('role', 'img');
+    const cv = W.canvas(body, { height: mode === 'ci' ? 300 : 320, draw: render, describe,
+      label: mode === 'ci' ? 'Confidence intervals from repeated samples, hits and misses' : 'Population shape and histogram of sample means' });
     const R = W.readout(mode === 'ci'
       ? [['pop', 'Population'], ['n', 'Intervals drawn'], ['hit', 'Containing the true mean'], ['exp', 'Expected share'], ['width', 'Width of each interval']]
       : [['pop', 'Population'], ['n', 'Samples drawn'], ['mean', 'Mean of the sample means'], ['sd', 'Spread of the sample means']]);
@@ -122,10 +122,20 @@
           R.set('sd', `${W.fmt(Math.sqrt(v), 3)} (σ/√n = ${W.fmt(sd() / Math.sqrt(n), 3)})`);
         } else { R.set('mean', `— (true μ = ${W.fmt(mu(), 3)})`); R.set('sd', `— (σ/√n = ${W.fmt(sd() / Math.sqrt(n), 3)})`); }
       }
-      cv.wrap.setAttribute('aria-label', mode === 'ci'
-        ? `${total} confidence intervals drawn at ${level}%, ${hits} contain the true mean ${W.fmt(mu(), 3)}.`
-        : `${total} sample means of size ${n} from a ${POPS[pop].label} population, centred near ${W.fmt(mu(), 3)} with standard deviation about ${W.fmt(sd() / Math.sqrt(n), 3)}.`);
       cv.redraw();
+    }
+    function describe() {
+      const se = W.fmt(sd() / Math.sqrt(n), 3);
+      if (mode === 'ci') {
+        if (!total) return `No intervals drawn yet. The true mean is ${W.fmt(mu(), 3)}; each interval will have width ${W.fmt(2 * Z[level] * sd() / Math.sqrt(n), 3)}.`;
+        const shown = ivs.length, missed = ivs.filter((v) => !v.hit).length;
+        return `${total} ${level}% confidence intervals drawn, ${hits} contain the true mean ${W.fmt(mu(), 3)}. The latest ${shown} are shown, ${shown - missed} hitting and ${missed} missing (misses are drawn with a hollow dot).`;
+      }
+      const pc = `Population: ${POPS[pop].label}, mean ${W.fmt(mu(), 3)}. `;
+      if (!means.length) return `${pc}No samples drawn yet. Sample means of size ${n} will centre on ${W.fmt(mu(), 3)} with spread ${se}.`;
+      const mm = means.reduce((a, b) => a + b, 0) / means.length;
+      const v = means.length > 1 ? means.reduce((a, b) => a + (b - mm) ** 2, 0) / (means.length - 1) : 0;
+      return `${pc}${total} sample means of size ${n}: their mean is ${W.fmt(mm, 3)} and their standard deviation ${W.fmt(Math.sqrt(v), 3)}, against the theory curve N(μ, σ²/n) with standard deviation ${se}.`;
     }
 
     function render(ctx, w, h, c) {
@@ -162,7 +172,9 @@
           ctx.strokeStyle = v.hit ? c.sc : c.red; ctx.fillStyle = v.hit ? c.sc : c.red;
           ctx.lineWidth = Math.max(1.5, Math.min(4, rh * 0.5));
           ctx.beginPath(); ctx.moveTo(xa, y); ctx.lineTo(xb, y); ctx.stroke();
-          ctx.beginPath(); ctx.arc(xm, y, Math.max(1.6, Math.min(3, rh * 0.35)), 0, Math.PI * 2); ctx.fill();
+          ctx.setLineDash([]);
+          ctx.beginPath(); ctx.arc(xm, y, Math.max(1.6, Math.min(3, rh * 0.35)), 0, Math.PI * 2);
+          if (v.hit) ctx.fill(); else { ctx.lineWidth = 1.3; ctx.stroke(); }
         });
         ctx.restore();
         if (!ivs.length) { ctx.fillStyle = c.ink2; ctx.font = '13px ' + c.font; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('Press "Draw 20 intervals"', w / 2, (top + bot) / 2); }

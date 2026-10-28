@@ -183,8 +183,41 @@ ${c.widgets}</script>
 }
 
 // ---------- widget probe: load the test page headless (Edge or Chrome) in light, dark and phone width ----------
-// The page collects errors, NaN/undefined/Infinity text, overflow and blank canvases into <pre id="zta-probe">.
-const PROBE_JS = `if(/probe/.test(location.search)){var zErr=[];var oe=console.error;console.error=function(){zErr.push([].map.call(arguments,String).join(' '));oe.apply(console,arguments);};
+// The page collects errors, NaN/undefined/Infinity text, overflow, blank canvases and accessibility problems
+// (A11Y_JS) into <pre id="zta-probe">.
+// Accessibility: every control has a name, every canvas is an image with a label and a description (or is
+// decorative), every svg is labelled or hidden, no positive tabindex, no repeated id, and text contrast is
+// at least 4.5:1 (3:1 for large text) against the colour behind it.
+const A11Y_JS = `function zA11y(root){var out=[],add=function(s){if(out.indexOf(s)<0&&out.length<10)out.push(s);};
+var txt=function(el){return (el?el.textContent:'').replace(/\\s+/g,' ').trim();};
+var tag=function(el){var c=el.getAttribute('class');return '<'+el.tagName.toLowerCase()+(c?' class="'+c+'"':'')+'>'+(txt(el)?' "'+txt(el).slice(0,30)+'"':'');};
+var name=function(el){var n=el.getAttribute('aria-label');if(n&&n.trim())return n;var lb=el.getAttribute('aria-labelledby');if(lb){n=lb.split(' ').map(function(i){return txt(document.getElementById(i));}).join(' ').trim();if(n)return n;}
+if(el.labels&&el.labels.length){n=[].map.call(el.labels,txt).join(' ').trim();if(n)return n;}
+if(/^(BUTTON|A|SUMMARY)$/.test(el.tagName)||/^(button|tab|link|option|menuitem)$/.test(el.getAttribute('role')||'')){n=txt(el);if(n)return n;var im=el.querySelector('[aria-label]');if(im)return im.getAttribute('aria-label');}
+return el.getAttribute('title')||'';};
+var seen={};root.querySelectorAll('[id]').forEach(function(el){if(seen[el.id])add('id "'+el.id+'" is used twice (a widget can appear twice on a page: no fixed ids)');seen[el.id]=1;});
+root.querySelectorAll('button,input:not([type=hidden]),select,textarea,a[href],[tabindex],[role=button],[role=slider],[role=tab],[role=checkbox],[role=switch]').forEach(function(el){
+if(el.closest('[aria-hidden=true]'))return;var ti=+el.getAttribute('tabindex');if(ti>0)add(tag(el)+' has tabindex '+ti+' (use 0 or -1)');
+if(el.getAttribute('tabindex')==='-1'&&!/^(BUTTON|INPUT|SELECT|TEXTAREA|A)$/.test(el.tagName))return;
+if(!name(el))add('control with no name: '+tag(el)+' (add a <label> or aria-label)');});
+root.querySelectorAll('canvas').forEach(function(cv){if(cv.closest('[aria-hidden=true]'))return;
+if(cv.getAttribute('role')!=='img'||!cv.getAttribute('aria-label'))add('canvas is not an image with a label (W.canvas label)');
+var d=document.getElementById(cv.getAttribute('aria-describedby')||'-');if(!d||!txt(d))add('canvas "'+(cv.getAttribute('aria-label')||'')+'" has no description of what it shows (W.canvas describe, or decorative: true)');});
+root.querySelectorAll('svg').forEach(function(s){if(s.parentElement.closest('svg')||s.closest('[aria-hidden=true]'))return;if(!(s.getAttribute('role')==='img'&&s.getAttribute('aria-label')))add('svg with no role="img" + aria-label (or aria-hidden="true")');});
+var rgb=function(s){var m=s.match(/rgba?\\(([^)]+)\\)/);if(m){var p=m[1].split(/[ ,\\/]+/).filter(Boolean).map(parseFloat);return [p[0],p[1],p[2],p.length>3?p[3]:1];}
+m=s.match(/color\\(srgb ([^)]+)\\)/);if(m){p=m[1].split(/[ \\/]+/).filter(Boolean).map(parseFloat);return [p[0]*255,p[1]*255,p[2]*255,p.length>3?p[3]:1];}return null;};
+var over=function(a,b){return [a[0]*a[3]+b[0]*(1-a[3]),a[1]*a[3]+b[1]*(1-a[3]),a[2]*a[3]+b[2]*(1-a[3]),1];};
+var bgOf=function(el){var stack=[];for(var p=el;p;p=p.parentElement){var cs=getComputedStyle(p),c=rgb(cs.backgroundColor),g=cs.backgroundImage;
+if(g&&g!=='none'){var gc=rgb(g);if(gc&&gc[3]>0)stack.push(gc);}if(c&&c[3]>0){stack.push(c);if(c[3]>=1)break;}}
+var b=[255,255,255,1];for(var i=stack.length-1;i>=0;i--)b=over(stack[i],b);return b;};
+var lum=function(c){var f=function(v){v/=255;return v<=0.03928?v/12.92:Math.pow((v+0.055)/1.055,2.4);};return 0.2126*f(c[0])+0.7152*f(c[1])+0.0722*f(c[2]);};
+var tw=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),n;while((n=tw.nextNode())){var el=n.parentElement;if(!el||!n.nodeValue.trim()||el.closest('svg,[aria-hidden=true],.sr-only,:disabled,[aria-disabled=true]'))continue;
+var r=el.getBoundingClientRect();if(r.width<2||r.height<2)continue;var cs=getComputedStyle(el);if(cs.visibility==='hidden')continue;var fg=rgb(cs.color);if(!fg)continue;
+var op=1;for(var p=el;p;p=p.parentElement)op*=+getComputedStyle(p).opacity;fg[3]*=op;var bg=bgOf(el);var f=over(fg,bg);
+var a=lum(f),b=lum(bg),ratio=(Math.max(a,b)+0.05)/(Math.min(a,b)+0.05),px=parseFloat(cs.fontSize),big=px>=24||(px>=18.66&&+cs.fontWeight>=700),need=big?3:4.5;
+if(ratio<need)add('text contrast '+ratio.toFixed(2)+' < '+need+': "'+n.nodeValue.trim().slice(0,30)+'" ('+cs.color+' on '+cs.backgroundColor+')');}
+return out;}`;
+const PROBE_JS = A11Y_JS + `\nif(/probe/.test(location.search)){var zErr=[];var oe=console.error;console.error=function(){zErr.push([].map.call(arguments,String).join(' '));oe.apply(console,arguments);};
 window.addEventListener('error',function(e){zErr.push('Error: '+e.message);});window.addEventListener('unhandledrejection',function(e){zErr.push('Unhandled promise: '+((e.reason&&e.reason.message)||e.reason));});
 setTimeout(function(){var root=document.querySelector('.widget');var R={errors:zErr.slice(),bad:[],overflow:[],blank:0,canvases:0,width:innerWidth};
 var we=document.getElementById('wtErr').textContent.trim();if(we)R.errors.push(we);
@@ -195,6 +228,7 @@ var rr=root.getBoundingClientRect();var scrolls=function(el){for(var p=el.parent
 var edge=function(el){var b=el.parentElement&&el.parentElement.closest('.w-b');if(!b||!root.contains(b))return rr.right;return b.getBoundingClientRect().right-parseFloat(getComputedStyle(b).paddingRight);};
 root.querySelectorAll('*').forEach(function(el){var r=el.getBoundingClientRect(),e=edge(el);if(r.width>0&&r.right>e+4&&!scrolls(el)&&R.overflow.length<6)R.overflow.push('<'+el.tagName.toLowerCase()+(el.className&&el.className.baseVal===undefined?' class="'+el.className+'"':'')+'> sticks out '+Math.round(r.right-e)+'px past the widget\\'s padding');});
 root.querySelectorAll('canvas').forEach(function(cv){var x=cv.getContext('2d');if(!x||!cv.width||!cv.height)return;R.canvases++;var d=x.getImageData(0,0,cv.width,cv.height).data,any=false;for(var i=3;i<d.length;i+=4*97){if(d[i]){any=true;break;}}if(!any)R.blank++;});
+R.a11y=zA11y(root);
 var pre=document.createElement('pre');pre.id='zta-probe';pre.textContent=JSON.stringify(R);document.body.appendChild(pre);},1500);}`;
 
 // ---------- phone width: every chapter at 375 px with all answers and hints open, measured headless ----------
@@ -316,6 +350,7 @@ function runProbe(name, file) {
     for (const b of R.bad) out.push('shows "' + b + '"');
     for (const o of R.overflow) out.push('overflow: ' + o);
     if (R.blank) out.push(`${R.blank} of ${R.canvases} canvas(es) drawn blank`);
+    for (const a of R.a11y || []) out.push('a11y: ' + a);
     problems += out.length;
     console.log(`${out.length ? '✗' : '✓'} ${label} (${R.width}px)${out.length ? '' : ` · ${R.canvases} canvas(es) drawn, no errors`}`);
     for (const o of out) console.log('   - ' + o);

@@ -89,7 +89,7 @@
     function tabs(items, get, set, label) {
       const row = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': label });
       const btns = items.map(([v, text]) => W.h('button', { class: 'w-tab', type: 'button', onclick: () => { set(v); sync(); } }, text));
-      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-selected', String(items[i][0] === get())));
+      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-pressed', String(items[i][0] === get())));
       btns.forEach((b) => row.append(b));
       sync();
       return row;
@@ -205,6 +205,13 @@
     }
     const c = W.canvas(body, {
       height: 300,
+      label: 'Satellite orbit diagram or graph of T squared against r cubed',
+      describe: () => {
+        const m = model(), b = B();
+        if (st.view === 'kepler') return 'Graph of T² against r³: a straight line through the origin with gradient 4π²/GM = ' + sci(m.k, 3) + ' s² m⁻³. The marked point is at r³ = ' + sci(Math.pow(m.r, 3), 3) + ' m³ and T² = ' + sci(m.T * m.T, 3) + ' s², on the line.';
+        return 'A satellite circles the ' + b.name + ' at ' + sci(m.r / b.R, 3) + ' times its radius (height ' + fmtKm(m.h / 1000) + '), at ' + sci(m.v, 3) + ' m/s with a period of ' + fmtTime(m.T) + '. The animation is a time-lapse at ×' + spaced(FACTORS[st.f][0]) + '.' +
+          (key === 'earth' ? ' A marker on the Equator turns once in 24 hours.' : '');
+      },
       draw(ctx, w, h, col) { if (st.view === 'orbit') drawOrbit(ctx, w, h, col); else drawKepler(ctx, w, h, col); }
     });
 

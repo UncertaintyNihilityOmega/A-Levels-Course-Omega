@@ -104,6 +104,19 @@ function fmt(v) {
   return v.toFixed(4).replace(/0+$/, '').replace(/\.$/, '').replace('-', '−');
 }
 
+/** What a screen reader hears instead of the picture (the caption is read separately): axes and ranges,
+ *  the curves by their labels, shading, dashed lines and marked points. --alt replaces it. */
+function describe(a, nf, marked) {
+  const d = [`Graph of ${a.ylabel} against ${a.xlabel}, ${a.xlabel} from ${fmt(a.x[0])} to ${fmt(a.x[1])}, ${a.ylabel} from ${fmt(a.y[0])} to ${fmt(a.y[1])}.`];
+  if (a.label.length) d.push((a.label.length > 1 ? 'Curves: ' : 'Curve: ') + a.label.join('; ') + '.');
+  else if (nf > 1) d.push(`${nf} curves.`);
+  if (a.shade) { const [, sa, sb] = a.shade.split(',').map(Number); d.push(`The area under the curve is shaded from ${fmt(sa)} to ${fmt(sb)}.`); }
+  const lines = [...a.vline.map(v => `${a.xlabel} = ${fmt(v)}`), ...a.hline.map(v => `${a.ylabel} = ${fmt(v)}`)];
+  if (lines.length) d.push(`Dashed line${lines.length > 1 ? 's' : ''} at ${lines.join(', ')}.`);
+  if (marked.length) d.push(`Marked point${marked.length > 1 ? 's' : ''}: ${marked.join('; ')}.`);
+  return d.join(' ');
+}
+
 /** Render a plot from an option line. captionHtml (the rendered block title) overrides --caption. Returns HTML. */
 function plot(line, caption) {
   const a = parseOptions(line);
@@ -117,7 +130,7 @@ function plot(line, caption) {
   const ys = a.ystep || nice(y1 - y0);
   const fns = a.f.map(f => compile(f, a.deg));
   const out = [];
-  out.push(`<figure class="fig"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(a.alt || a.caption)}">`);
+  out.push('');   // the <svg> tag, written at the end once its description is known
   if (!a.nogrid) {
     const g = [];
     for (let k = Math.ceil(x0 / xs); k * xs <= x1 + 1e-9; k++) g.push(`M${f1(px(k * xs))} ${mt}V${H - mb}`);
@@ -201,6 +214,7 @@ function plot(line, caption) {
   });
   const DIRS = { n: [0, -11, 'middle'], s: [0, 19, 'middle'], e: [9, 4, 'start'], w: [-9, 4, 'end'],
     ne: [7, -9, 'start'], nw: [-7, -9, 'end'], se: [7, 17, 'start'], sw: [-7, 17, 'end'] };
+  const marked = [];
   for (const p of a.pt) {
     const parts = p.split(',');
     const x = Number(parts[0].replace('−', '-')), y = Number((parts[1] || '').replace('−', '-'));
@@ -216,7 +230,9 @@ function plot(line, caption) {
       const [dx, dy, anc] = DIRS[d];
       out.push(`<text class="tl halo" x="${f1(X + dx)}" y="${f1(Y + dy)}" text-anchor="${anc}">${esc(lab)}</text>`);
     }
+    marked.push((lab ? lab + ' ' : '') + `at (${fmt(x)}, ${fmt(y)})`);
   }
+  out[0] = `<figure class="fig"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(a.alt || describe(a, fns.length, marked))}">`;
   out.push('</svg>');
   if (a.caption) out.push(`<figcaption>${a.captionHtml || esc(a.caption)}</figcaption>`);
   out.push('</figure>');

@@ -42,7 +42,7 @@
     function tabs(items, get, set, label) {
       const row = mk('div', { class: 'w-tabs', role: 'group', 'aria-label': label });
       const btns = items.map(([v, text]) => mk('button', { class: 'w-tab', type: 'button', onclick: () => { set(v); sync(); } }, text));
-      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-selected', String(items[i][0] === get())));
+      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-pressed', String(items[i][0] === get())));
       btns.forEach((b) => row.append(b));
       sync();
       return row;
@@ -111,6 +111,9 @@
       // ---- displacement against distance ----
       const cA = W.canvas(body, {
         height: 210,
+        label: 'Graph of displacement against distance along the wave',
+        describe: () => 'Displacement against distance x from 0 to 10 m: a ' + (st.view === 'longitudinal' ? 'longitudinal' : 'transverse') + ' wave of amplitude ' + W.fmt(st.a, 2) + ' cm and wavelength ' + W.fmt(st.lam, 3) + ' m travelling to the right at ' + W.fmt(st.f * st.lam, 3) +
+          ' m/s. Point P is at x = ' + W.fmt(st.xp, 3) + ' m and point Q at x = ' + W.fmt(st.xq, 3) + ' m.',
         draw(ctx, w, h, col) {
           const long = st.view === 'longitudinal';
           const ax = W.axes(ctx, w, h, { x0: 0, x1: XMAX, y0: -YM, y1: YM }, col,
@@ -167,6 +170,8 @@
       let cB = null;                                      // built the first time the longitudinal view is shown
       const makeB = () => W.canvas(body, {
         height: 84,
+        label: 'Row of particles showing compressions and rarefactions',
+        describe: () => 'The same wave as a row of particles pushed along the direction of travel, bunched into compressions (C) and spread into rarefactions (R) once every wavelength of ' + W.fmt(st.lam, 3) + ' m. P and Q are marked.',
         draw(ctx, w, h, col) {
           const pl = geo.pl, pr = geo.pr, sc = (w - pl - pr) / XMAX;
           const px = (x) => pl + x * sc;
@@ -200,6 +205,8 @@
       // ---- displacement against time for P and Q ----
       const cC = W.canvas(body, {
         height: 150,
+        label: 'Graph of displacement against time for points P and Q',
+        describe: () => 'Displacement against time over two periods (' + W.fmt(2 / st.f, 3) + ' s) for P (solid) and Q (dashed), both of amplitude ' + W.fmt(st.a, 2) + ' cm. They are ' + W.fmt(Math.abs(st.xq - st.xp) / st.lam * 360 % 360, 3) + '° out of phase.',
         draw(ctx, w, h, col) {
           const long = st.view === 'longitudinal';
           const Tp = 1 / st.f, tw = 2 * Tp;
@@ -309,6 +316,9 @@
 
       const c = W.canvas(body, {
         height: 260,
+        label: 'Stationary wave on a string with nodes and antinodes',
+        describe: () => 'A string of length 2 m vibrating in harmonic ' + st.n + ', with ' + (st.n + 1) + ' nodes (including both fixed ends) and ' + st.n + ' antinodes of amplitude ' + W.fmt(st.a, 2) + ' cm, nodes ' + W.fmt(L / st.n, 3) + ' m apart.' +
+          (st.comps ? ' The two travelling waves that add to make it are also drawn.' : ''),
         draw(ctx, w, h, col) {
           const k = st.n * Math.PI / L, om = TAU / TD;
           const ax = W.axes(ctx, w, h, { x0: 0, x1: L, y0: -YM, y1: YM }, col,

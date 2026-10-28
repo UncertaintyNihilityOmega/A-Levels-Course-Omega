@@ -31,7 +31,7 @@
     function tabs(items, get, set) {
       const row = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Rectifier' });
       const btns = items.map(([v, label]) => W.h('button', { class: 'w-tab', type: 'button', onclick: () => { set(v); sync(); update(); } }, label));
-      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-selected', String(items[i][0] === get())));
+      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-pressed', String(items[i][0] === get())));
       btns.forEach((b) => row.append(b));
       sync();
       return row;
@@ -80,6 +80,15 @@
 
     const c = W.canvas(body, {
       height: 270,
+      label: 'Graph of p.d. across the load against time',
+      describe() {
+        const s = cur;
+        if (!s) return '';
+        const kind = st.mode === 'none' ? 'the unrectified a.c. supply, a sine wave of peak ' + W.fmt(st.v0, 3) + ' V'
+          : (st.mode === 'half' ? 'half-wave' : 'full-wave') + ' rectified supply, one pulse per ' + (st.mode === 'half' ? 'cycle' : 'half-cycle');
+        const sm = s.smooth ? ', smoothed by a ' + W.fmt(st.c, 3) + ' μF capacitor: the output stays between ' + W.fmt(s.lo, 3) + ' V and ' + W.fmt(s.hi, 3) + ' V, a ripple of ' + W.fmt(s.ripple, 3) + ' V' : '';
+        return 'Four periods (' + W.fmt(4 * s.T * 1000, 3) + ' ms) of ' + kind + sm + '. V axis from ' + (st.mode === 'none' ? '−' + W.fmt(1.15 * st.v0, 3) : '0') + ' to ' + W.fmt((st.mode === 'none' ? 1.7 : 1.6) * st.v0, 3) + ' V.';
+      },
       draw(ctx, w, h, col) {
         const s = cur;
         if (!s) return;

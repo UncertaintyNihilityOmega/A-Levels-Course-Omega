@@ -62,10 +62,10 @@
     ctl.append(nSl.el);
     let ruleBtns = [];
     if (mode === 'riemann') {
-      const seg = W.h('div', { class: 'w-tabs', role: 'tablist', 'aria-label': 'Height of each rectangle' });
+      const seg = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Height of each rectangle' });
       for (const [k, t] of [['left', 'Left edge'], ['right', 'Right edge'], ['mid', 'Midpoint']]) {
-        const bt = W.h('button', { type: 'button', class: 'w-tab', role: 'tab', 'aria-selected': String(k === rule) }, t);
-        bt.addEventListener('click', () => { rule = k; ruleBtns.forEach(([kk, bb]) => bb.setAttribute('aria-selected', String(kk === rule))); update(); });
+        const bt = W.h('button', { type: 'button', class: 'w-tab', 'aria-pressed': String(k === rule) }, t);
+        bt.addEventListener('click', () => { rule = k; ruleBtns.forEach(([kk, bb]) => bb.setAttribute('aria-pressed', String(kk === rule))); update(); });
         ruleBtns.push([k, bt]); seg.append(bt);
       }
       ctl.append(seg);
@@ -76,8 +76,7 @@
     errBox.style.display = warn.length ? '' : 'none';
     body.append(errBox);
 
-    const cv = W.canvas(body, { height: 270, draw });
-    cv.wrap.setAttribute('role', 'img');
+    const cv = W.canvas(body, { height: 270, draw, label: `${titles[mode][0]}: ${src} from x = ${a} to x = ${b}`, describe });
     const R = W.readout(mode === 'volume'
       ? [['est', 'Volume of the discs'], ['exact', 'Exact volume'], ['err', 'Difference']]
       : [['est', 'Estimate'], ['exact', 'Exact area'], ['err', 'Error']]);
@@ -106,8 +105,13 @@
       R.set('exact', isFinite(exact) ? W.fmt(exact, 4) + unit : 'not defined');
       const tiny = Math.abs(exact) * 1e-6 + 1e-12;
       R.set('err', !isFinite(err) ? '—' : Math.abs(err) < tiny ? 'none' : `${W.fmt(Math.abs(err), 3)} (${err > 0 ? 'over' : 'under'}estimate)`);
-      cv.wrap.setAttribute('aria-label', `${titles[mode][0]} of ${src} from x = ${a} to ${b} with ${n} ${mode === 'volume' ? 'discs' : 'strips'}: estimate ${isFinite(est) ? W.fmt(est, 4) : 'undefined'}, exact ${isFinite(exact) ? W.fmt(exact, 4) : 'undefined'}.`);
       cv.redraw();
+    }
+    function describe() {
+      const est = estimate();
+      const what = mode === 'volume' ? 'discs' : mode === 'trapezium' ? 'trapezia' : `${rule === 'mid' ? 'midpoint' : rule + '-edge'} rectangles`;
+      return `The curve y = ${src} from x = ${a} to x = ${b}, ${mode === 'volume' ? 'with a stack of' : 'filled with'} ${n} ${what}. `
+        + `Estimate ${isFinite(est) ? W.fmt(est, 4) : 'not defined'}, exact value ${isFinite(exact) ? W.fmt(exact, 4) : 'not defined'}.`;
     }
 
     function draw(ctx, w, h, c) {

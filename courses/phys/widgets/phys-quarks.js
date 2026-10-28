@@ -35,7 +35,10 @@
       return W.h('button', {
         class: 'btn btn-sm btn-sec', type: 'button',
         'aria-label': 'Add ' + (anti ? 'anti-' : '') + info[f].name + ' quark, charge ' + (t > 0 ? 'plus ' : 'minus ') + (Math.abs(t) === 2 ? 'two' : 'one') + ' third',
-        onclick: () => { if (st.picked.length < 3) { st.picked.push(x); render(); } }
+        onclick: (e) => {
+          if (st.picked.length < 3) { st.picked.push(x); render(); }
+          if (e.currentTarget.disabled) clearBtn.focus();           // the quark buttons switch off when the three slots are full
+        }
       }, sym(x) + ' ' + showT(t));
     };
     const rowQ = W.h('div', { class: 'w-row' });
@@ -44,7 +47,7 @@
     FL.forEach((f) => { const b = mkBtn(f[0], false); btnAll.push(b); rowQ.append(b); });
     FL.forEach((f) => { const b = mkBtn(f[0], true); btnAll.push(b); rowA.append(b); });
     const slotRow = W.h('div', { class: 'w-row' });
-    const clearBtn = W.h('button', { class: 'btn btn-sm', type: 'button', onclick: () => { st.picked = []; render(); } }, 'Clear');
+    const clearBtn = W.h('button', { class: 'btn btn-sm', type: 'button', onclick: () => { st.picked = []; render(); btnAll[0].focus(); } }, 'Clear');
     const out = W.h('div', {});
     const res = W.readout([['charge', 'Total charge'], ['type', 'Type'], ['name', 'Name']]);
     const bnote = W.h('div', { class: 'w-note' }, 'Try uud and udd, then u with anti-d. Click a quark in the slots to remove it. Quarks have charges of ±⅓ e or ±⅔ e, and they are never found alone.');
@@ -78,12 +81,18 @@
       const key = (x) => (x.anti ? x.f.toUpperCase() : x.f);
       return NAMES[list.map(key).sort().join('|')] || '';
     }
+    // after a slot is removed the slots shift left: focus the one now at that place, else the nearest enabled control
+    function refocusSlot(i) {
+      const bs = Array.from(slotRow.children);
+      const t = !bs[i].disabled ? bs[i] : (i > 0 && !bs[i - 1].disabled) ? bs[i - 1] : !clearBtn.disabled ? clearBtn : btnAll[0];
+      t.focus();
+    }
     function render() {
       slotRow.replaceChildren();
       for (let i = 0; i < 3; i++) {
         const x = st.picked[i];
         const b = x
-          ? W.h('button', { class: 'btn btn-sm', type: 'button', 'aria-label': 'Remove ' + (x.anti ? 'anti-' : '') + info[x.f].name + ' quark from slot ' + (i + 1), onclick: () => { st.picked.splice(i, 1); render(); } }, sym(x) + ' (' + showT(thirds(x)) + ')')
+          ? W.h('button', { class: 'btn btn-sm', type: 'button', 'aria-label': 'Remove ' + (x.anti ? 'anti-' : '') + info[x.f].name + ' quark from slot ' + (i + 1), onclick: () => { st.picked.splice(i, 1); render(); refocusSlot(i); } }, sym(x) + ' (' + showT(thirds(x)) + ')')
           : W.h('button', { class: 'btn btn-sm btn-sec', type: 'button', disabled: true, 'aria-label': 'Empty slot ' + (i + 1) }, 'empty');
         slotRow.append(b);
       }
@@ -103,7 +112,7 @@
     const mPlus = W.h('button', { class: 'w-tab', type: 'button', onclick: () => { st.plus = true; drawBeta(); } }, 'β⁺ decay');
     modeRow.append(mMinus, mPlus);
     const stage = W.h('div', { style: { display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '8px', margin: '10px 0' } });
-    const eqn = W.h('div', { class: 'w-note' });
+    const eqn = W.h('div', { class: 'w-note', 'aria-live': 'polite' });
     beta.append(modeRow, stage, eqn);
 
     const chip = (txt, hot, kind) => W.h('span', {
@@ -113,7 +122,7 @@
         border: kind === 'u' ? '2px solid var(--sc)' : '2px dashed var(--ink-2)',
         outline: hot ? '3px solid var(--red)' : 'none', outlineOffset: '1px'
       }
-    }, txt);
+    }, txt, hot ? W.h('span', { class: 'sr-only' }, ' (this one changes)') : null);
     const label = (txt) => W.h('span', { style: { color: 'var(--ink-2)', fontSize: '0.9em' } }, txt);
     const group = (title, chips) => {
       const g = W.h('div', { style: { display: 'flex', flexDirection: 'column', gap: '4px', alignItems: 'center' } });
@@ -121,8 +130,8 @@
       return g;
     };
     function drawBeta() {
-      mMinus.setAttribute('aria-selected', String(!st.plus));
-      mPlus.setAttribute('aria-selected', String(st.plus));
+      mMinus.setAttribute('aria-pressed', String(!st.plus));
+      mPlus.setAttribute('aria-pressed', String(st.plus));
       stage.replaceChildren();
       if (!st.plus) {
         stage.append(
@@ -147,8 +156,8 @@
 
     body.append(tabRow, build, beta);
     function sync() {
-      bBuild.setAttribute('aria-selected', String(st.tab === 'build'));
-      bBeta.setAttribute('aria-selected', String(st.tab === 'beta'));
+      bBuild.setAttribute('aria-pressed', String(st.tab === 'build'));
+      bBeta.setAttribute('aria-pressed', String(st.tab === 'beta'));
       build.style.display = st.tab === 'build' ? '' : 'none';
       beta.style.display = st.tab === 'beta' ? '' : 'none';
     }

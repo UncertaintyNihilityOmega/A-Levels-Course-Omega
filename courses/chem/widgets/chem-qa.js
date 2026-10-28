@@ -101,17 +101,17 @@
     let cat = 'c';              // explore category: c, a, g
 
     const err = W.h('div', { class: 'w-err', role: 'status' });
-    const tabE = W.h('button', { class: 'w-tab', type: 'button', role: 'tab', text: 'Explore', onclick: () => { top = 'explore'; render(); } });
-    const tabT = W.h('button', { class: 'w-tab', type: 'button', role: 'tab', text: 'Test yourself', onclick: () => { top = 'test'; render(); } });
-    body.appendChild(W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-tabs', role: 'tablist', 'aria-label': 'Mode' }, tabE, tabT)));
+    const tabE = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: 'Explore', onclick: () => { top = 'explore'; render(); } });
+    const tabT = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: 'Test yourself', onclick: () => { top = 'test'; render(); } });
+    body.appendChild(W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Mode' }, tabE, tabT)));
     const exploreBox = W.h('div'), testBox = W.h('div');
     body.appendChild(exploreBox); body.appendChild(testBox); body.appendChild(err);
 
     // ---------------- explore ----------------
-    const catC = W.h('button', { class: 'w-tab', type: 'button', role: 'tab', text: 'Cations', onclick: () => { cat = 'c'; renderExplore(); } });
-    const catA = W.h('button', { class: 'w-tab', type: 'button', role: 'tab', text: 'Anions', onclick: () => { cat = 'a'; renderExplore(); } });
-    const catG = W.h('button', { class: 'w-tab', type: 'button', role: 'tab', text: 'Gases', onclick: () => { cat = 'g'; renderExplore(); } });
-    exploreBox.appendChild(W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-tabs', role: 'tablist', 'aria-label': 'Kind of test' }, catC, catA, catG)));
+    const catC = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: 'Cations', onclick: () => { cat = 'c'; renderExplore(); } });
+    const catA = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: 'Anions', onclick: () => { cat = 'a'; renderExplore(); } });
+    const catG = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: 'Gases', onclick: () => { cat = 'g'; renderExplore(); } });
+    exploreBox.appendChild(W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Kind of test' }, catC, catA, catG)));
     const selA = W.h('select', { 'aria-label': 'First ion' });
     const selB = W.h('select', { 'aria-label': 'Compare with' });
     const rowSel = W.h('div', { class: 'w-row' }, W.h('label', { class: 'w-ctl' }, W.h('span', { class: 'w-lab', text: 'Ion' }), selA),
@@ -119,7 +119,7 @@
     exploreBox.appendChild(rowSel);
     const tableHost = W.h('div', { style: { overflowX: 'auto' } });
     exploreBox.appendChild(tableHost);
-    const exNote = W.h('div', { class: 'w-note' });
+    const exNote = W.h('div', { class: 'w-note', 'aria-live': 'polite' });
     exploreBox.appendChild(exNote);
     selA.addEventListener('change', renderTable);
     selB.addEventListener('change', renderTable);
@@ -135,21 +135,22 @@
       selA.value = '0'; selB.value = '-1';
     }
     function renderExplore() {
-      catC.setAttribute('aria-selected', cat === 'c' ? 'true' : 'false');
-      catA.setAttribute('aria-selected', cat === 'a' ? 'true' : 'false');
-      catG.setAttribute('aria-selected', cat === 'g' ? 'true' : 'false');
+      catC.setAttribute('aria-pressed', cat === 'c' ? 'true' : 'false');
+      catA.setAttribute('aria-pressed', cat === 'a' ? 'true' : 'false');
+      catG.setAttribute('aria-pressed', cat === 'g' ? 'true' : 'false');
       rowSel.style.display = cat === 'g' ? 'none' : '';
       fillSelects();
       renderTable();
     }
     function tr(cells) { const r = document.createElement('tr'); cells.forEach(c => { if (c) r.appendChild(c); }); return r; }
+    function head(text) { return W.h('th', { scope: 'row', text: text, style: { fontWeight: '600', fontSize: 'inherit', color: 'var(--ink)', padding: '4px 8px', verticalAlign: 'top' } }); }
     function cell(text, strong) { return W.h('td', { style: { padding: '4px 8px', verticalAlign: 'top', fontWeight: strong ? '600' : '' }, text: text }); }
     function renderTable() {
       tableHost.textContent = '';
       if (cat === 'g') {
         const t = W.h('table');
-        t.appendChild(tr([W.h('th', { text: 'Gas' }), W.h('th', { text: 'Test and result' })]));
-        GASES.forEach(g => t.appendChild(tr([cell(g[0], true), cell(g[1])])));
+        t.appendChild(tr([W.h('th', { scope: 'col', text: 'Gas' }), W.h('th', { scope: 'col', text: 'Test and result' })]));
+        GASES.forEach(g => t.appendChild(tr([head(g[0]), cell(g[1])])));
         tableHost.appendChild(t);
         exNote.textContent = 'Say what you did and what you saw, then name the gas: "damp red litmus paper turns blue, so ammonia".';
         return;
@@ -158,7 +159,7 @@
       const a = list[Number(selA.value)], bi = Number(selB.value), b = bi >= 0 ? list[bi] : null;
       if (!a) return;
       const t = W.h('table');
-      t.appendChild(tr([W.h('th', { text: 'Test' }), W.h('th', { text: a[0] }), b ? W.h('th', { text: b[0] }) : null, b ? W.h('th', { text: 'Tells them apart?' }) : null]));
+      t.appendChild(tr([W.h('th', { scope: 'col', text: 'Test' }), W.h('th', { scope: 'col', text: a[0] }), b ? W.h('th', { scope: 'col', text: b[0] }) : null, b ? W.h('th', { scope: 'col', text: 'Tells them apart?' }) : null]));
       const apart = [];
       tests(kind).forEach((name, i) => {
         const x = result(kind, a, i), y = b ? result(kind, b, i) : null;
@@ -167,7 +168,7 @@
           if (!x.listed || !y.listed) verdict = 'not compared';
           else if (x.k !== y.k) { verdict = 'yes'; apart.push(name); } else verdict = 'same';
         }
-        t.appendChild(tr([cell(name), cell(x.t), b ? cell(y.t) : null, b ? cell(verdict, verdict === 'yes') : null]));
+        t.appendChild(tr([head(name), cell(x.t), b ? cell(y.t) : null, b ? cell(verdict, verdict === 'yes') : null]));
       });
       tableHost.appendChild(t);
       if (b) {
@@ -193,15 +194,18 @@
         const done = {};
         const btns = W.h('div', { class: 'w-row' });
         tests(kind).forEach((name, i) => {
-          btns.appendChild(W.h('button', { class: 'btn btn-sm btn-sec', type: 'button', text: name, onclick: () => {
+          const tb = W.h('button', { class: 'btn btn-sm btn-sec', type: 'button', 'aria-pressed': 'false', text: name, onclick: () => {
             let obs;
             if (kind === 'a' && i === 2 && result(kind, secret, 1).k === 'none') obs = 'there is no silver precipitate to add ammonia to';
             else if (kind === 'a' && i === 4 && result(kind, secret, 3).k === 'none') obs = 'there is no barium precipitate to add acid to';
             else obs = result(kind, secret, i).t;
             if (done[i]) return;
             done[i] = true;
+            tb.setAttribute('aria-pressed', 'true');
             log.appendChild(W.h('li', {}, W.h('b', { text: name + ': ' }), W.h('span', { text: obs })));
-          } }));
+            W.say(testBox, (kind === 'c' ? 'Solution X' : 'Solution Y') + ', ' + name + ': ' + obs + '.');
+          } });
+          btns.appendChild(tb);
         });
         const sel = W.h('select', { 'aria-label': kind === 'c' ? 'Your cation' : 'Your anion' });
         sel.appendChild(W.h('option', { value: '-1', text: 'choose' }));
@@ -221,12 +225,12 @@
         testBox.appendChild(W.h('div', { class: 'w-row' }, W.h('label', { class: 'w-ctl' }, W.h('span', { class: 'w-lab', text: 'My answer' }), sel), check));
         testBox.appendChild(fb);
       });
-      testBox.appendChild(W.h('div', { class: 'w-row' }, W.h('button', { class: 'btn btn-sm btn-sec', type: 'button', text: 'New unknowns', onclick: () => { newUnknowns(true); buildTest(); } })));
+      testBox.appendChild(W.h('div', { class: 'w-row' }, W.h('button', { class: 'btn btn-sm btn-sec', type: 'button', text: 'New unknowns', 'data-new': '1', onclick: () => { newUnknowns(true); buildTest(); const b = testBox.querySelector('[data-new]'); if (b) b.focus(); W.say(testBox, 'New unknown solutions X and Y are ready. No tests applied yet.'); } })));
     }
 
     function render() {
-      tabE.setAttribute('aria-selected', top === 'explore' ? 'true' : 'false');
-      tabT.setAttribute('aria-selected', top === 'test' ? 'true' : 'false');
+      tabE.setAttribute('aria-pressed', top === 'explore' ? 'true' : 'false');
+      tabT.setAttribute('aria-pressed', top === 'test' ? 'true' : 'false');
       exploreBox.style.display = top === 'explore' ? '' : 'none';
       testBox.style.display = top === 'test' ? '' : 'none';
       err.textContent = msgs.join(' ');

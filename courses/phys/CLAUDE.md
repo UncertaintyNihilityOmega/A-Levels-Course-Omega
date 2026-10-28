@@ -91,14 +91,15 @@ tell the user which session to run instead, and stop. A Writer never does LEAD o
    widgets.js or another package's files.
 4. Per chapter, in order: write it whole → write checks/`<id>`.py → `check <id>` → fix every error and checklist note.
 5. Widgets: each in widgets/`<name>`.js (kit/WIDGETS.md, W helpers). Probe each (`widget <name> "…" --probe`: light,
-   dark, phone, bad attributes) until clean; look at it once.
+   dark, phone, bad attributes, `a11y:` lines) until clean; look at it once and use it with the keyboard only.
 6. `phone <ids>` must pass; `preview` and open one new chapter.
 7. `done "WRITE Pn" "<chapters; widgets; notes for the reviewer>"`. Report in 3 lines. If `status` now lists
    a REVIEW, tell the user to run the Specialist REVIEW.
 
 ## REVIEW (Specialist): when 3 or more packages are written (or the last ones)
 1. `status` (names the packages), `check`, `phone`, `preview`.
-2. Look at every figure and widget (preview or `shot`, light, dark, phone; click the interactions). Read every
+2. Look at every figure and widget (preview or `shot`, light, dark, phone; click the interactions,
+   then Tab through each widget and use it with the keyboard only). Read every
    worked example and try answer of at least two chapters and the opening, key boxes and quiz of the rest; check
    facts against FACTS.md; recompute numbers. Confirm the Writer's notes at the end of each package file.
 3. Fix serious problems yourself (wrong facts or numbers, broken pages, layout). List the rest in REVIEW.md as

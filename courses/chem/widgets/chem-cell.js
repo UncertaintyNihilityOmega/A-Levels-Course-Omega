@@ -57,9 +57,9 @@
 
     // ---- tabs
     const tabs = {};
-    const tabBox = W.h('div', { class: 'w-tabs', role: 'tablist', 'aria-label': 'View' });
+    const tabBox = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'View' });
     [['cell', 'Cell'], ['nernst', 'Nernst']].forEach(t => {
-      const b = W.h('button', { class: 'w-tab', type: 'button', role: 'tab', text: t[1], onclick: () => { st.tab = t[0]; update(); } });
+      const b = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: t[1], onclick: () => { st.tab = t[0]; update(); } });
       tabs[t[0]] = b; tabBox.appendChild(b);
     });
     body.appendChild(tabBox);
@@ -228,13 +228,22 @@
     body.appendChild(nPane);
     const cv = W.canvas(body, { height: 280, draw(ctx, w, h, col) { if (st.tab === 'cell') drawCell(ctx, w, h, col); else drawNernst(ctx, w, h, col); } });
     cv.cv.setAttribute('role', 'img');
+    cv.describe = () => {
+      if (st.tab === 'nernst') {
+        const hc = st.nh, k = 0.059 / hc.z, redLog = hc.kind === 'metal' ? 0 : st.lred;
+        return 'Straight line rising by ' + W.fmt(k, 3) + ' V for every tenfold increase in the oxidised concentration, from log −4 to 1 on the horizontal axis. A dashed line marks E⦵ = ' + sgnV(hc.E) + ' at 1.00 mol dm⁻³. The marked point, at ' + W.fmt(Math.pow(10, st.lox), 3) + ' mol dm⁻³, is E = ' + sgnV3(hc.E + k * (st.lox - redLog)) + '.';
+      }
+      const L = st.left, R = st.right, diff = Math.round((R.E - L.E) * 100) / 100;
+      if (L.id === R.id) return 'Two identical half-cells joined by a salt bridge and a voltmeter reading 0.00 V.';
+      return 'Left beaker ' + L.label + ' with electrode ' + L.elec + ', right beaker ' + R.label + ' with electrode ' + R.elec + ', joined by a salt bridge and a voltmeter reading ' + Math.abs(diff).toFixed(2) + ' V. The ' + (diff > 0 ? 'right' : 'left') + ' electrode is positive (reduction); the ' + (diff > 0 ? 'left' : 'right') + ' is negative (oxidation). Electrons flow in the wire from the negative to the positive electrode.';
+    };
     const cv2 = cv;
     body.appendChild(cellOut);
     body.appendChild(nOut);
     body.appendChild(err);
 
     function update() {
-      Object.keys(tabs).forEach(k => tabs[k].setAttribute('aria-selected', String(k === st.tab)));
+      Object.keys(tabs).forEach(k => tabs[k].setAttribute('aria-pressed', String(k === st.tab)));
       cellPane.style.display = st.tab === 'cell' ? '' : 'none';
       nPane.style.display = st.tab === 'nernst' ? '' : 'none';
       cellOut.style.display = st.tab === 'cell' ? '' : 'none';
@@ -262,7 +271,7 @@
           read.set('dg', ec === 0 ? '0 kJ mol⁻¹' : (dg < 0 ? MINUS : '+') + W.fmt(Math.abs(dg), 3) + ' kJ mol⁻¹   (n = ' + o.n + ', F = 9.65 × 10⁴ C mol⁻¹)');
           read.set('feas', ec > 0 ? 'yes under standard conditions (E⦵cell is positive), though it may be slow' : 'the two E⦵ values are equal, so neither direction is favoured');
         }
-        cv.cv.setAttribute('aria-label', geo.label || 'Cell diagram');
+        cv.setLabel('Cell diagram: ' + L.label + ' and ' + R.label);
         cv.redraw();
       } else {
         const hc = st.nh, k = 0.059 / hc.z;
@@ -275,7 +284,7 @@
         read2.set('e0', sgnV(hc.E) + '   (z = ' + hc.z + ')');
         read2.set('ratio', W.fmt(Math.pow(10, st.lox), 3) + ' / ' + (isMetal ? '1 (solid)' : W.fmt(Math.pow(10, redLog), 3)));
         read2.set('e', sgnV3(E) + '   (' + sgnV(hc.E) + ' + ' + W.fmt(k, 3) + ' × ' + W.fix(st.lox - redLog, 1).replace('-', MINUS) + ')');
-        cv2.cv.setAttribute('aria-label', nGeo.label || 'Nernst graph');
+        cv2.setLabel('Graph of E against log of the oxidised concentration for ' + hc.label);
         cv2.redraw();
       }
     }

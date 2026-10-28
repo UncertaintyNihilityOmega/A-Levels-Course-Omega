@@ -88,7 +88,7 @@
     function tabs(items, get, set) {
       const row = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Type of interaction' });
       const btns = items.map(([v, label]) => W.h('button', { class: 'w-tab', type: 'button', onclick: () => { set(v); sync(); } }, label));
-      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-selected', String(items[i][0] === get())));
+      const sync = () => btns.forEach((b, i) => b.setAttribute('aria-pressed', String(items[i][0] === get())));
       btns.forEach((b) => row.append(b));
       sync();
       return row;
@@ -155,8 +155,17 @@
         ctx.fillText(label, 10, y + 18);
       }
     }
+    const vtxt = (v) => (Math.abs(v) < 0.04 ? 'at rest' : W.fmt(clean(v), 3) + ' m/s to the ' + (v > 0 ? 'right' : 'left'));
     const c = W.canvas(body, {
       height: 200,
+      label: 'Two trolleys on a track with velocity arrows',
+      describe() {
+        const now = at(R, W.reducedMotion() ? T : prog * T);
+        const after = at(R, T);
+        const state = (p) => 'Trolley 1 (' + W.fmt(st.m1, 2) + ' kg) is ' + vtxt(p.v1) + '; trolley 2 (' + W.fmt(st.m2, 2) + ' kg) is ' + vtxt(p.v2) + '.';
+        if (W.reducedMotion()) return 'Before: ' + state(at(R, 0)) + ' After: ' + state(after);
+        return (prog === 0 ? 'Start. ' : prog >= 1 ? 'End. ' : 'Moving. ') + state(now);
+      },
       draw(ctx, w, h, col) {
         ctx.textBaseline = 'alphabetic';
         if (W.reducedMotion()) {
@@ -174,7 +183,7 @@
       ['dk', 'Change of kinetic energy'],
       ['ap', 'Relative speed of approach'], ['sp', 'Relative speed of separation']
     ]);
-    const msg = W.h('div', { class: 'w-note' });
+    const msg = W.h('div', { class: 'w-note', 'aria-live': 'polite' });
     const note = W.h('div', { class: 'w-note' }, 'Momentum is always the same before and after. Kinetic energy is only conserved in the elastic case: then the relative speeds match too.');
     body.append(ro.el, msg, note, err);
 
@@ -219,12 +228,17 @@
     const anim = W.animate(() => {
       prog = Math.min(1, (performance.now() - t0) / (DUR * 1000));
       c.redraw();
+      if (prog >= 1) finished();
       return prog < 1;
     }, { still: () => { prog = 1; c.redraw(); } });
+    function finished() {
+      const a = at(R, T);
+      W.say(body, 'Finished. Trolley 1 is ' + vtxt(a.v1) + '; trolley 2 is ' + vtxt(a.v2) + '.');
+    }
     function play() {
       anim.stop();
       prog = 0; t0 = performance.now();
-      if (W.reducedMotion()) { prog = 1; c.redraw(); return; }
+      if (W.reducedMotion()) { prog = 1; c.redraw(); finished(); return; }
       anim.start();
     }
 

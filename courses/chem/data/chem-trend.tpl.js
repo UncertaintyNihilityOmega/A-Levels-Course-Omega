@@ -71,9 +71,9 @@
 
     // ---------- controls
     const tabs = {};
-    const tabBox = W.h('div', { class: 'w-tabs', role: 'tablist', 'aria-label': 'Graph' });
+    const tabBox = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Graph' });
     Object.keys(MODES).forEach(k => {
-      const b = W.h('button', { class: 'w-tab', type: 'button', role: 'tab', text: MODES[k].name, onclick: () => { st.mode = k; st.sel = -1; update(); } });
+      const b = W.h('button', { class: 'w-tab', type: 'button', 'aria-pressed': 'false', text: MODES[k].name, onclick: () => { st.mode = k; st.sel = -1; update(); } });
       tabs[k] = b; tabBox.appendChild(b);
     });
     const setSel = W.h('select', { 'aria-label': 'Elements shown' });
@@ -110,6 +110,15 @@
     });
     cvs.cv.tabIndex = 0;
     cvs.cv.setAttribute('role', 'img');
+    cvs.describe = () => {
+      if (st.mode === 'successive') {
+        const E = EL[st.el], d = deduce(st.el);
+        return 'Bars for the ionisation energies in kJ per mole of ' + E.name + ': ' + E.succ.map((v, i) => ORD[i + 1] + ' ' + thou(v)).join(', ') + '. ' + d.text;
+      }
+      const set = SETS[st.set], M = MODES[st.mode];
+      const vs = set.syms.filter(s => EL[s][M.key] !== null && EL[s][M.key] !== undefined).map(s => s + ' ' + (M.dec ? EL[s][M.key].toFixed(1) : thou(EL[s][M.key])));
+      return 'Graph of ' + M.name.toLowerCase() + ' against ' + (set.axis === 'z' ? 'atomic number' : 'period') + ', one point per element joined by a line. Values: ' + vs.join(', ') + '.' + (st.sel >= 0 ? ' Selected: ' + describePoint() : '');
+    };
 
     function halo(ctx, col, s, x, y, align, color) {
       ctx.textAlign = align || 'center';
@@ -149,7 +158,7 @@
       ctx.fillStyle = col.ink2; ctx.textAlign = 'center';
       const perUnit = pw / (x1 - x0);
       let tstep = 1;
-      if (set.axis === 'z') while (perUnit * tstep < 22) tstep = tstep === 1 ? 2 : tstep === 2 ? 5 : tstep + 5;
+      if (set.axis === 'z' && perUnit > 0) while (perUnit * tstep < 22) tstep = tstep === 1 ? 2 : tstep === 2 ? 5 : tstep + 5;
       xs.forEach(v => {
         if (set.axis === 'z' && (v - xs[0]) % tstep !== 0) return;
         ctx.strokeStyle = col.ink2; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(X(v), padT + ph); ctx.lineTo(X(v), padT + ph + 4); ctx.stroke();
@@ -250,8 +259,18 @@
     // ---------- readout under the graph
     const read = W.h('div', { class: 'w-note', role: 'status', 'aria-live': 'polite', style: { minHeight: '3.2em', color: 'var(--ink)' } });
     const note = W.h('div', { class: 'w-note' });
+    // Previous / next buttons: the same job as clicking a point or using the arrow keys on the graph
+    const stepBtn = (txt, name, dir) => W.h('button', { class: 'btn btn-sm btn-sec', type: 'button', text: txt, 'aria-label': name, onclick: () => stepPoint(dir) });
+    const stepRow = W.h('div', { class: 'w-row', role: 'group', 'aria-label': 'Choose a point on the graph' }, stepBtn('◀ Previous element', 'Previous element', -1), stepBtn('Next element ▶', 'Next element', 1));
+    body.appendChild(stepRow);
     body.appendChild(read);
     body.appendChild(note);
+    function stepPoint(dir) {
+      if (st.mode === 'successive' || !layout.pts.length) return;
+      const ks = layout.pts.map(p => p.k), i = ks.indexOf(st.sel);
+      const j = i < 0 ? (dir > 0 ? 0 : ks.length - 1) : Math.min(ks.length - 1, Math.max(0, i + dir));
+      st.sel = ks[j]; update();
+    }
 
     function pick(clientX, clientY) {
       if (st.mode === 'successive' || !layout.pts.length) return;
@@ -289,18 +308,19 @@
     }
 
     function update() {
-      Object.keys(tabs).forEach(k => tabs[k].setAttribute('aria-selected', String(k === st.mode)));
+      Object.keys(tabs).forEach(k => tabs[k].setAttribute('aria-pressed', String(k === st.mode)));
       const succ = st.mode === 'successive';
       setCtl.style.display = succ ? 'none' : '';
       elCtl.style.display = succ ? '' : 'none';
       logCtl.style.display = succ ? '' : 'none';
+      stepRow.style.display = succ ? 'none' : '';
       err.textContent = msgs.join(' ');
       setSel.value = st.set; elSel.value = st.el; logBox.checked = st.log;
       if (succ) {
         const E = EL[st.el], d = deduce(st.el);
         read.textContent = d.text;
         note.textContent = 'Ratios of each value to the one before: ' + d.ratios.join(', ') + '. The bars after the biggest jump are drawn in the highlight colour when that jump is a ratio of 3 or more. Try Na, Mg, Al and Si, then switch on the log scale to see small steps as well.';
-        cvs.cv.setAttribute('aria-label', 'Bar chart of the first ' + E.succ.length + ' ionisation energies of ' + E.name + ': ' + E.succ.join(', ') + ' kJ per mole. ' + d.text);
+        cvs.setLabel('Bar chart of the ionisation energies of ' + E.name);
       } else {
         const set = SETS[st.set], M = MODES[st.mode];
         read.textContent = describePoint();
@@ -309,7 +329,7 @@
           (set.sep && set.sep.length ? 'Dashed lines separate the periods. ' : '') +
           (st.mode === 'first' ? firstNote(st.set) : 'Electronegativity measures how strongly an atom pulls on the shared electrons in a bond. Noble gases have no value.');
         const vs = set.syms.filter(s => EL[s][M.key] !== null && EL[s][M.key] !== undefined).map(s => s + ' ' + (M.dec ? EL[s][M.key].toFixed(1) : thou(EL[s][M.key])));
-        cvs.cv.setAttribute('aria-label', M.name + ' for ' + set.label + ': ' + vs.join(', ') + '.');
+        cvs.setLabel(M.name + ' graph for ' + set.label);
       }
       cvs.redraw();
     }

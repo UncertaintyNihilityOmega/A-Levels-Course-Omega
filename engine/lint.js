@@ -51,10 +51,13 @@ function lintChapter(ch, text, ctx = {}) {
   if (svgOpen !== svgClose) errors.push(`<svg> open/close count mismatch (${svgOpen}/${svgClose})`);
   for (const svg of ch.html.match(/<svg[\s\S]*?<\/svg>/g) || []) {
     if (/<svg[^>]*\sid=|\sid="/.test(svg)) errors.push('SVG figures must not use id attributes');
+    const open = svg.match(/<svg[^>]*>/)[0];
+    if (!/aria-hidden="true"/.test(open) && !(/role="img"/.test(open) && /aria-label="[^"]*\w/.test(open))) errors.push(`SVG figures need role="img" and an aria-label describing what they show: ${open.slice(0, 60)}`);
     if (/<(defs|marker|style|script|foreignObject|image)\b/.test(svg)) errors.push('SVG figures must not contain defs, marker, style, script, foreignObject or image (use the shared arrowheads url(#ah) etc.)');
     if (/\s(fill|stroke)="(#|rgb|red|blue|green|black|white)/i.test(svg) || /style="[^"]*(color|fill|stroke)\s*:/i.test(svg)) errors.push('SVG figures must use classes, never colours (fill/stroke/style)');
   }
   for (const w of ch.html.match(/<div class="widget"[^>]*>/g) || []) if (!/data-w="/.test(w)) errors.push('a widget div needs data-w="name"');
+  for (const img of ch.html.match(/<img\b[^>]*>/g) || []) if (!/\salt="/.test(img)) errors.push(`images need alt text (alt="" only if decorative): ${img.slice(0, 60)}`);
 
   // marks: a "[n marks]" on a try question or a worked example must equal the [M1] [A1] [B1] … shown in its answer
   const marked = splitMarks(text);

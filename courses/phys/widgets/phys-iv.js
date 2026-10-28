@@ -42,7 +42,7 @@
     const tabRow = W.h('div', { class: 'w-tabs', role: 'group', 'aria-label': 'Component' });
     const btns = names.map((n) => W.h('button', { class: 'w-tab', type: 'button', onclick: () => pick(n) }, M[n].tab));
     btns.forEach((b) => tabRow.append(b));
-    const syncTabs = () => btns.forEach((b, i) => b.setAttribute('aria-selected', String(names[i] === st.c)));
+    const syncTabs = () => btns.forEach((b, i) => b.setAttribute('aria-pressed', String(names[i] === st.c)));
 
     const vHold = W.h('div', { class: 'w-ctl', style: { flex: '1 1 220px' } });
     let vSlider = null;
@@ -69,6 +69,14 @@
 
     const c = W.canvas(body, {
       height: 290,
+      label: 'Graph of current against p.d. for the chosen component',
+      describe: () => {
+        const m = M[st.c], i0 = cur(st.v);
+        const shape = st.c === 'resistor' ? 'a straight line through the origin' : st.c === 'lamp' ? 'a curve through the origin that flattens as the p.d. rises, symmetrical about the origin'
+          : st.c === 'diode' ? 'almost no current below about 0.6 V, then a steep rise' : 'a straight line through the origin at each temperature, steeper when hotter';
+        return 'I in milliamps against V in volts, V from −' + W.fmt(m.vmax, 2) + ' to ' + W.fmt(m.vmax, 2) + ' and I from −' + W.fmt(m.imax * 1000, 3) + ' to ' + W.fmt(m.imax * 1000, 3) + ' mA. The ' + m.tab.toLowerCase() + ' graph is ' + shape +
+          '. The marked point is at ' + W.fix(st.v, 2).replace(/^-/, '−') + ' V and ' + fmtI(i0).replace(/^-/, '−') + '.' + (st.chord ? ' A dashed line joins it to the origin.' : '') + (st.tang ? ' A dashed tangent touches the curve there.' : '');
+      },
       draw(ctx, w, h, col) {
         const m = M[st.c];
         const pad = { l: 56, r: 14, t: 16, b: 34 };

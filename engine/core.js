@@ -27,15 +27,31 @@
     return el;
   };
 
-  /** Widget frame: returns {root, body} with the house header. */
+  /** Unique id for aria-labelledby / aria-describedby (a widget can appear twice on a page). */
+  let uid = 0;
+  W.uid = (p) => `w-${p || 'id'}-${++uid}`;
+
+  /** Widget frame: returns {root, body} with the house header. The card is a group named by its title. */
   W.frame = function (el, title, subtitle) {
     el.innerHTML = '';
     const body = W.h('div', { class: 'w-b' });
-    const root = W.h('div', { class: 'w' },
-      W.h('div', { class: 'w-h' }, W.h('span', { class: 'w-t' }, title), subtitle ? W.h('span', { class: 'w-s' }, subtitle) : null),
+    const tid = W.uid('t');
+    const root = W.h('div', { class: 'w', role: 'group', 'aria-labelledby': tid },
+      W.h('div', { class: 'w-h' }, W.h('span', { class: 'w-t', id: tid }, title), subtitle ? W.h('span', { class: 'w-s' }, subtitle) : null),
       body);
     el.append(root);
     return { root, body };
+  };
+
+  /** Tell screen-reader users about a change they cannot see (a canvas result, a finished run): one polite
+   *  live region per widget, written 300 ms after the last call so dragging a slider is not read at every step. */
+  W.say = function (el, msg) {
+    const w = (el && el.closest && el.closest('.w')) || el;
+    if (!w) return;
+    let r = w.querySelector(':scope > .w-say');
+    if (!r) { r = W.h('div', { class: 'w-say sr-only', 'aria-live': 'polite' }); w.append(r); }
+    clearTimeout(r._t);
+    r._t = setTimeout(() => { r.textContent = msg; }, 300);
   };
 
   /** localStorage wrapper that never throws */
@@ -59,14 +75,31 @@
   } catch (e) { /* old browsers */ }
 
   /** Hi-DPI canvas that redraws on resize & theme change.
-   *  const c = W.canvas(parentEl, {height: 300, draw: (ctx, w, h, colors) => {...}});  c.redraw() */
+   *  const c = W.canvas(parentEl, {height: 300, label: 'Graph of v against t', describe: () => 'text', draw: (ctx, w, h, colors) => {...}});  c.redraw()
+   *  Screen readers get the canvas as an image named `label`, described by `describe()` (re-read after each draw:
+   *  say what the picture shows now, with its key numbers). `decorative: true` hides a canvas that adds nothing. */
   W.canvas = function (parent, opts) {
     const wrap = W.h('div', { class: 'w-canvas', style: { height: (opts.height || 300) + 'px' } });
     const cv = W.h('canvas');
     wrap.append(cv);
     parent.append(wrap);
     const ctx = cv.getContext('2d');
-    const state = { cv, ctx, wrap, w: 0, h: 0 };
+    const state = { cv, ctx, wrap, w: 0, h: 0, describe: opts.describe || null };
+    let desc = null;
+    if (opts.decorative) cv.setAttribute('aria-hidden', 'true');
+    else {
+      const t = parent.closest && parent.closest('.w') && parent.closest('.w').querySelector('.w-t');
+      cv.setAttribute('role', 'img');
+      cv.setAttribute('aria-label', opts.label || (t ? t.textContent + ': diagram' : 'Diagram'));
+      desc = W.h('p', { class: 'sr-only', id: W.uid('d') });
+      wrap.append(desc);
+      cv.setAttribute('aria-describedby', desc.id);
+    }
+    state.setLabel = (s) => { if (desc) cv.setAttribute('aria-label', s); };
+    const describe = () => {
+      if (!desc || !state.describe) return;
+      try { const s = state.describe(); if (s != null && s !== desc.textContent) desc.textContent = s; } catch (e) { console.warn(e); }
+    };
     let raf = 0;
     state.redraw = function () {
       cancelAnimationFrame(raf);
@@ -79,6 +112,7 @@
         ctx.clearRect(0, 0, w, h);
         state.w = w; state.h = h;
         opts.draw(ctx, w, h, W.colors(parent));
+        describe();
       });
     };
     try { new ResizeObserver(() => state.redraw()).observe(wrap); } catch (e) { window.addEventListener('resize', state.redraw); }
@@ -109,7 +143,8 @@
   W.slider = function ({ label, min, max, step, value, fmt, oninput, id }) {
     const out = W.h('output', {});
     const input = W.h('input', { type: 'range', min, max, step: step || 'any', value, id: id || null, 'aria-label': label });
-    const show = () => { out.textContent = fmt ? fmt(+input.value) : W.fmt(+input.value, 4); };
+    // screen readers read the formatted value (with its unit), as shown beside the label
+    const show = () => { out.textContent = fmt ? fmt(+input.value) : W.fmt(+input.value, 4); input.setAttribute('aria-valuetext', out.textContent); };
     input.addEventListener('input', () => { show(); oninput && oninput(+input.value); });
     show();
     const el = W.h('div', { class: 'w-ctl' }, W.h('div', { class: 'w-lab', style: { display: 'flex', justifyContent: 'space-between', gap: '8px' } }, W.h('span', {}, label), out), input);
@@ -122,9 +157,10 @@
     const el = W.h('div', { class: 'w-ctl', style: width ? { flex: `0 1 ${width}` } : null }, W.h('label', {}, label), input);
     return { el, input, get: () => input.value };
   };
+  /** Output tile; a change is read out with its label ("Area 2.5"). */
   W.stat = function (label, hi) {
     const b = W.h('b', {}, '—');
-    const el = W.h('div', { class: 'w-stat' + (hi ? ' hi' : '') }, W.h('span', {}, label), b);
+    const el = W.h('div', { class: 'w-stat' + (hi ? ' hi' : ''), 'aria-live': 'polite', 'aria-atomic': 'true' }, W.h('span', {}, label), ' ', b);
     return { el, set: (v) => { b.textContent = v; } };
   };
 
@@ -299,8 +335,9 @@
   /** A small two-column readout table: W.readout([['area', 'Area'], ['err', 'Error']]) → {el, set(key, text)} */
   W.readout = function (rows) {
     const cells = {};
-    const tb = W.h('tbody', {}, rows.map(([k, label]) => { cells[k] = W.h('td', {}, '—'); return W.h('tr', {}, W.h('th', { scope: 'row' }, label), cells[k]); }));
-    return { el: W.h('table', { class: 'w-read' }, tb), set: (k, v) => { if (cells[k]) cells[k].textContent = v; } };
+    const tb = W.h('tbody', {}, rows.map(([k, label]) => { cells[k] = W.h('td', {}, '—'); return W.h('tr', { 'aria-atomic': 'true' }, W.h('th', { scope: 'row' }, label), cells[k]); }));
+    // a changed value is read with its row label
+    return { el: W.h('table', { class: 'w-read', 'aria-live': 'polite' }, tb), set: (k, v) => { if (cells[k] && cells[k].textContent !== String(v)) cells[k].textContent = v; } };
   };
 
   /** Theme colours plus a series palette for several curves: c.series[0], c.series[1], … */
@@ -371,12 +408,20 @@
     };
     return v;
   };
+  /** Drag to rotate, plus a row of turn buttons under the view (keyboard and one-tap use, no dragging needed). */
   W.orbit = function (el, v, redraw) {
     let x0 = 0, y0 = 0;
     W.drag(el, {
       hit: (x, y) => { x0 = x; y0 = y; return true; },
       move: (t, x, y) => { v.yaw += (x - x0) * 0.01; v.pitch = Math.max(-1.5, Math.min(1.5, v.pitch + (y - y0) * 0.01)); x0 = x; y0 = y; redraw(); }
     });
+    const turn = (dy, dp) => () => { v.yaw += dy; v.pitch = Math.max(-1.5, Math.min(1.5, v.pitch + dp)); redraw(); };
+    const b = (txt, lab, fn) => W.h('button', { class: 'btn btn-sm btn-sec', type: 'button', 'aria-label': lab, onclick: fn }, txt);
+    const row = W.h('div', { class: 'w-row w-orbit', role: 'group', 'aria-label': 'Turn the 3D view' },
+      W.h('span', { class: 'w-lab', 'aria-hidden': 'true' }, 'Turn'),
+      b('◀', 'Turn left', turn(-0.2, 0)), b('▶', 'Turn right', turn(0.2, 0)), b('▲', 'Tilt up', turn(0, -0.2)), b('▼', 'Tilt down', turn(0, 0.2)));
+    el.after(row);
+    return row;
   };
 
   /** Seeded random numbers (the same seed gives the same sequence): const r = W.rng(42); r(), r.int(1, 6), r.normal(0, 1) */
@@ -404,7 +449,8 @@
     };
     back.addEventListener('click', () => s.go(i - 1));
     next.addEventListener('click', () => s.go(i + 1));
-    root.setAttribute('tabindex', root.getAttribute('tabindex') || '0');
+    // focusable by click (not a Tab stop): the arrow keys work after clicking the widget or from its buttons
+    root.setAttribute('tabindex', root.getAttribute('tabindex') || '-1');
     root.addEventListener('keydown', (e) => {
       if (/input|select|textarea/i.test(e.target.tagName)) return;
       if (e.key === 'ArrowRight') { e.preventDefault(); s.go(i + 1); }

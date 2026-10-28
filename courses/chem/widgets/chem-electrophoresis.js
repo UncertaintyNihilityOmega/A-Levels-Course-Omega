@@ -135,6 +135,15 @@
       }
     });
     cvs.cv.setAttribute('role', 'img');
+    cvs.describe = () => {
+      if (!mix.length) return 'An empty strip: no amino acid chosen.';
+      const spots = mix.map(k => {
+        const q = charge(AA[k], ph);
+        if (progress < 0.01) return AA[k].name + ' on the start line';
+        return AA[k].name + (Math.abs(q) < 0.01 ? ' stays at the start line' : q > 0 ? ' has moved left towards the cathode' : ' has moved right towards the anode');
+      });
+      return 'A strip with the cathode (−) on the left, the anode (+) on the right and a start line in the middle, in a buffer at pH ' + W.fix(ph, 1) + '. ' + spots.join('; ') + '.';
+    };
 
     const read = W.readout(ORDER.map(k => [k, AA[k].name]));
     body.appendChild(read.el);
@@ -144,8 +153,9 @@
       const p = Math.min(1, (performance.now() - t0) / 2200);
       progress = p;
       cvs.redraw();
+      if (p >= 1) W.say(body, 'Run finished at pH ' + W.fix(ph, 1) + '. ' + (cvs.describe() || ''));
       return p < 1;
-    }, { still() { progress = 1; cvs.redraw(); } });
+    }, { still() { progress = 1; cvs.redraw(); W.say(body, 'Run finished at pH ' + W.fix(ph, 1) + '. ' + cvs.describe()); } });
 
     function describe(k) {
       const a = AA[k], q = charge(a, ph);
@@ -163,7 +173,7 @@
       ORDER.forEach(k => read.set(k, mix.indexOf(k) >= 0 ? describe(k) : 'not in the mixture'));
       err.textContent = msgs.join(' ');
       progress = 1;
-      cvs.cv.setAttribute('aria-label', 'Electrophoresis strip at pH ' + W.fix(ph, 1) + ' with ' + (mix.length ? mix.map(k => AA[k].name).join(', ') : 'no amino acids') + '. Positive species move left to the cathode, negative species right to the anode.');
+      cvs.setLabel('Electrophoresis strip at pH ' + W.fix(ph, 1) + ' with ' + (mix.length ? mix.map(k => AA[k].name).join(', ') : 'no amino acids'));
       cvs.redraw();
     }
     runBtn.addEventListener('click', () => { progress = 0; t0 = performance.now(); anim.start(); });

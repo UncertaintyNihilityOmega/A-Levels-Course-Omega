@@ -151,6 +151,10 @@
       }
     });
     cvs.cv.setAttribute('role', 'img');
+    cvs.describe = () => {
+      const parts = ORDER.slice().reverse().filter(s => cfg[s] > 0).map(s => s + ' has ' + cfg[s] + ' electron' + (cfg[s] === 1 ? '' : 's') + ' in ' + ORBS[s.charAt(1)] + ' box' + (ORBS[s.charAt(1)] === 1 ? '' : 'es') + ', ' + unpairedIn(s, cfg[s]) + ' unpaired');
+      return 'Energy levels from 1s at the bottom to 4p at the top, one box per orbital with arrows for electrons. ' + (parts.length ? parts.join('; ') + '. ' : 'No electrons. ') + 'Total unpaired electrons: ' + unpaired(cfg) + '.';
+    };
 
     const read = W.readout([['e', 'Electrons'], ['full', 'Full configuration'], ['short', 'Shorthand'], ['unp', 'Unpaired electrons'], ['note', 'Note']]);
     body.appendChild(read.el);
@@ -181,7 +185,7 @@
       read.set('short', shortText(cfg, q !== 0));
       read.set('unp', String(u));
       read.set('note', notes.length ? notes.join(' ') : 'All electrons are paired.');
-      cvs.cv.setAttribute('aria-label', 'Electrons in boxes for ' + speciesName(sym, q) + ': ' + fullText(cfg) + '.');
+      cvs.setLabel('Electrons in boxes for ' + speciesName(sym, q) + ': ' + fullText(cfg));
       selEl.value = String(z);
       selQ.value = String(q);
       allowed(z);
