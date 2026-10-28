@@ -1,13 +1,13 @@
 # STATUS: Biology
 
-Last: 2026-10-28 · WRITE P1 · bio.overview (guide, 2.8k words) and bio.f.basics (pre, 8.2k words, 10 eg, 26 try, 10 quiz, 4 SVG figures + 2 plots); no widgets; check and phone pass. Reviewer: overview topic map assigns bio.hormones to topics 14 and 15, bio.variation to topic 17, bio.genecontrol to topic 16, and suggests bio.practical after bio.movement and bio.practical2 after bio.cells; pace table uses 27 AS and 25 A Level extra chapters. bio.f.basics gives the AS-bridging potato osmosis example in GCSE wording (no water potential) and previews SA:V and pH.
+Last: 2026-10-28 · WRITE P2 · bio.microscopy 6.8k words, bio.cells 6.0k, bio.prokaryotes 3.8k; check and phone pass; widget bio-magnify (modes mia, graticule) probed clean light/dark/phone and bad attributes, logic tested with a Node stub. Reviewer notes: animal and plant cell figures are 560 wide (fig) so phone labels are about 9 px; bio.cells and bio.prokaryotes figures come from data/fig_<id>.py via data/stitch.py (templates data/<id>.tpl.md); widget uses simplified calibration model (x10: 10 um/unit, x40: 2.5 um/unit) stated on screen; chapter examples use other numbers. Links to bio.practical2, bio.energy, bio.respiration, bio.membranes etc use titles from course.json.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
 - LEAD: done 2026-10-28
 - P1: written 2026-10-28
-- P2: writing 2026-10-28
-- P3: open
+- P2: written 2026-10-28
+- P3: writing 2026-10-28
 - P4: open
 - P5: open
 - P6: open
