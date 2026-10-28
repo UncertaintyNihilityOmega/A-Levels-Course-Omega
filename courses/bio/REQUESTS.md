@@ -7,4 +7,6 @@ Engine bugs, new block types, design changes, or anything that needs another cou
 - [x] 2026-10-24 · Plan only (user's change of scope): Biology LEAD planned 64 chapters in 24 packages; the gold chapter bio.enzymes and `done LEAD` are left for the next LEAD session · so status still shows LEAD
   - Organizer 2026-10-24: the official syllabus URL returns 200 again (the 404 was temporary maintenance); course.json keeps it.
     Plan-only noted: the next LEAD session writes the gold chapter bio.enzymes, then runs `done LEAD`.
-- [ ] 2026-10-28 · Let table headings (`th`) wrap on narrow screens (they are `white-space: nowrap`) · biology data tables need headings with units such as "rate of release of fatty acids / µmol min⁻¹"; at 375 px a two-column table with such a heading scrolls sideways, so COURSE.md now caps headings at about 28 characters
+- [x] 2026-10-28 · Let table headings (`th`) wrap on narrow screens (they are `white-space: nowrap`) · biology data tables need headings with units such as "rate of release of fatty acids / µmol min⁻¹"; at 375 px a two-column table with such a heading scrolls sideways, so COURSE.md now caps headings at about 28 characters
+  - Organizer 2026-10-28: done. At 700 px and below `.prose th` wraps (engine/style.css); desktop is unchanged. On
+    bio.overview at 375 px, sideways-scrolling tables went from 3 to 2. The 28-character cap can be relaxed at the next REVIEW.

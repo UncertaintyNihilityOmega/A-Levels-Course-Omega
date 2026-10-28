@@ -777,6 +777,7 @@ a.subj:hover .subj-t { color: var(--sc); }
   .prose { font-size: 1.0625rem; }
   .lede { font-size: 1.1rem; }
   .prose h2 { font-size: 1.5rem; }
+  .prose th { white-space: normal; }
   .eg-h, .quiz-h, .qz { padding-left: 14px; padding-right: 14px; }
   .eg-b { padding-left: 14px; padding-right: calc(var(--margin-col) + 10px); }
   .eg-b .mks { margin-right: calc(-10px - var(--margin-col)); }
