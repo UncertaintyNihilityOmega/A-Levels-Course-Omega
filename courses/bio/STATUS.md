@@ -1,11 +1,11 @@
 # STATUS: Biology
 
-Last: 2026-10-28 · LEAD · Gold chapter bio.enzymes written (789 lines, 8.6k words, 5 SVGs + 5 plots, 7 eg, 3 labs, 21 try, 10 quiz); check and phone pass; P4 widget slot moved to end of Temperature; COURSE.md format lessons added
+Last: 2026-10-28 · WRITE P1 · bio.overview (guide, 2.8k words) and bio.f.basics (pre, 8.2k words, 10 eg, 26 try, 10 quiz, 4 SVG figures + 2 plots); no widgets; check and phone pass. Reviewer: overview topic map assigns bio.hormones to topics 14 and 15, bio.variation to topic 17, bio.genecontrol to topic 16, and suggests bio.practical after bio.movement and bio.practical2 after bio.cells; pace table uses 27 AS and 25 A Level extra chapters. bio.f.basics gives the AS-bridging potato osmosis example in GCSE wording (no water potential) and previews SA:V and pH.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
 - LEAD: done 2026-10-28
-- P1: writing 2026-10-28
+- P1: written 2026-10-28
 - P2: writing 2026-10-28
 - P3: open
 - P4: open
