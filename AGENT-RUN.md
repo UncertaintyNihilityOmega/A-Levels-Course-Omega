@@ -16,7 +16,7 @@ awake (Windows: Sleep "Never" when plugged in).
 - Task: `mcp__scheduled-tasks__create_scheduled_task`, taskId `zta-agent-run`, hourly off the hour
   (`23 * * * *`), saved in Auto permissions. Its prompt is self-contained: work in the project root, read
   ORGANIZER.md, ROADMAP.md and this file, then follow "Each run" below.
-- Lock: `.claude/run.lock` (git-ignored) holds `{"session": "<time started>", "beat": "<last update>"}`. A lock whose
+- Lock: `.run/run.lock` (`.run/` is git-ignored; run state stays out of `.claude/`, where every write asks for permission even in Auto mode) holds `{"session": "<time started>", "beat": "<last update>"}`. A lock whose
   `beat` is under 90 minutes old means another session is running: stop at once. Older = stale (that session hit a
   usage limit or died): take over.
 - Each run:
@@ -34,7 +34,7 @@ awake (Windows: Sleep "Never" when plugged in).
 
 ## Start (manual run, or the first steps of an automatic run)
 1. `git status` clean; `node courses/<c>/kit/zta.js status`.
-2. Guard on: write the course id into `.claude/hooks/guard-course.txt`. The PreToolUse hook in `.claude/settings.json`
+2. Guard on: write the course id into `.run/guard-course.txt`. The PreToolUse hook in `.claude/settings.json`
    then blocks any subagent file access or command outside `courses/<c>` (and `..` and git). The Organizer's own
    calls are not checked.
 3. Start the course preview: launch config `<c>-preview`.
@@ -65,7 +65,7 @@ awake (Windows: Sleep "Never" when plugged in).
 
 ## End of the run
 - Let running agents finish; check and commit their work.
-- Guard off: delete `.claude/hooks/guard-course.txt`. Stop the preview. Delete the CronCreate check and the lock.
+- Guard off: delete `.run/guard-course.txt`. Stop the preview. Delete the CronCreate check and the lock.
 - Update ROADMAP.md "Now"; tick the course.
 
 ## Prompt templates

@@ -2,7 +2,7 @@
 
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (hourly, Auto mode; prompt in
-  `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.claude/run.lock`.
+  `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
 - Current course: **Biology** (`bio`, queue item 2). LEAD, P1–P4 written. Running (resumed 21:10 after a usage
   limit): REVIEW P1–P3, Writers P5, P6. Next: FIX + WRITE P7; REVIEW P4–P6. P4 reviewer: unticked widget checkbox
   looked dark in a headless light shot.

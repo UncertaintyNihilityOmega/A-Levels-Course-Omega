@@ -1,6 +1,7 @@
 // course-guard.js — PreToolUse hook: keeps subagents inside one course folder.
 // Only tool calls made by a subagent (input has agent_id) are checked; the Organizer's own calls pass.
-// The allowed course comes from .claude/hooks/guard-course.txt (e.g. "phys"); delete that file to switch the guard off.
+// The allowed course comes from .run/guard-course.txt (e.g. "phys"); delete that file to switch the guard off.
+// Run state lives in .run/, not .claude/: writes under .claude/ always ask for permission, even in Auto mode.
 'use strict';
 const fs = require('fs');
 const path = require('path');
@@ -14,7 +15,7 @@ const deny = (why) => {
 };
 
 let course = '';
-try { course = fs.readFileSync(path.join(__dirname, 'guard-course.txt'), 'utf8').trim(); } catch (e) { process.exit(0); }
+try { course = fs.readFileSync(path.join(ROOT, '.run', 'guard-course.txt'), 'utf8').trim(); } catch (e) { process.exit(0); }
 let input = {};
 try { input = JSON.parse(fs.readFileSync(0, 'utf8') || '{}'); } catch (e) { process.exit(0); }
 if (process.env.GUARD_LOG) fs.appendFileSync(process.env.GUARD_LOG, JSON.stringify({ keys: Object.keys(input), agent_id: input.agent_id, agent_type: input.agent_type, tool: input.tool_name }) + '\n');
