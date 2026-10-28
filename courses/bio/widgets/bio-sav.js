@@ -89,7 +89,7 @@
 
     // ---- canvas ----
     const c = W.canvas(body, {
-      height: 330,
+      height: 420,
       label: 'Drawing of the shape and a bar chart of surface area to volume ratio',
       describe: () => describe(),
       draw: (ctx, w, h, C) => draw(ctx, w, h, C)
@@ -179,7 +179,7 @@
       ctx.lineWidth = 1.6;
       const shade = C.sc;
       if (S.shape !== 'cylinder') {
-        const d = dims(), A = d.a * pcm, B = d.b * pcm, Cc = d.c * pcm;
+        const d = dims(), A = d.a * pcm, B = d.c * pcm, Cc = d.b * pcm; // front: length x height; depth: width
         const ox = 0.42 * Cc, oy = 0.30 * Cc;
         const fbl = [xs, yb], fbr = [xs + A, yb], ftl = [xs, yb - B], ftr = [xs + A, yb - B];
         const bbl = [xs + ox, yb - oy], bbr = [xs + A + ox, yb - oy], btl = [xs + ox, yb - B - oy], btr = [xs + A + ox, yb - B - oy];
@@ -219,13 +219,13 @@
     }
 
     function drawBars(ctx, w, hh, C) {
-      const padL = 44, padR = 12, padT = 18, padB = 34;
+      const padL = 44, padR = 12, padT = 20, padB = 44;
       const pw = w - padL - padR, ph = hh - padT - padB;
       if (pw < 60 || ph < 30) return;
       ctx.font = '12px ' + C.font; ctx.textBaseline = 'alphabetic';
       ctx.fillStyle = C.ink2; ctx.textAlign = 'left';
       ctx.fillText('SA:V for cubes (cm⁻¹)', padL, 12);
-      const ymax = 6.5, Y = v => padT + ph - (v / ymax) * ph;
+      const ymax = 7.5, Y = v => padT + ph - (v / ymax) * ph;
       ctx.strokeStyle = C.rule; ctx.lineWidth = 1;
       ctx.beginPath(); ctx.moveTo(padL, padT); ctx.lineTo(padL, padT + ph); ctx.lineTo(padL + pw, padT + ph); ctx.stroke();
       ctx.textAlign = 'right';
@@ -233,27 +233,30 @@
       const cubeNow = S.shape === 'cube' ? S.p.a : null;
       let near = 1;
       if (cubeNow != null) for (let k = 1; k <= 5; k++) if (Math.abs(k - cubeNow) < Math.abs(near - cubeNow)) near = k;
-      const bw = pw / 5;
+      const bw = pw / 5, vals = [];
+      const halo = (t, x, y) => { ctx.save(); ctx.lineWidth = 3; ctx.strokeStyle = C.card; ctx.strokeText(t, x, y); ctx.restore(); ctx.fillText(t, x, y); };
       for (let k = 1; k <= 5; k++) {
         const v = 6 / k, x = padL + (k - 0.5) * bw;
         const hi = cubeNow != null && k === near;
         ctx.fillStyle = hi ? C.sc : C.ink3;
         ctx.fillRect(x - bw * 0.3, Y(v), bw * 0.6, padT + ph - Y(v));
         ctx.textAlign = 'center'; ctx.fillStyle = hi ? C.ink : C.ink2;
-        ctx.fillText(sf(v, 2), x, Y(v) - 4);
+        vals.push([sf(v, 2), x, Y(v) - 4, hi]);
         ctx.fillText(k + ' cm', x, padT + ph + 16);
-        if (hi) { ctx.fillText('▲', x, padT + ph + 28); }
+        if (hi) { ctx.fillText('▲', x, padT + ph + 29); }
       }
       ctx.textAlign = 'center'; ctx.fillStyle = C.ink2;
-      ctx.fillText('side of the cube', padL + pw / 2, hh - 2);
+      ctx.fillText('side of the cube', padL + pw / 2, hh - 3);
       // the current shape as a dashed line
       const g = geom(S.shape, S.p), r = g.sa / g.v;
       if (isFinite(r) && r <= ymax) {
         ctx.save(); ctx.setLineDash([5, 4]); ctx.strokeStyle = C.red; ctx.lineWidth = 1.6;
         ctx.beginPath(); ctx.moveTo(padL, Y(r)); ctx.lineTo(padL + pw, Y(r)); ctx.stroke(); ctx.restore();
         ctx.fillStyle = C.red; ctx.textAlign = 'right';
-        ctx.fillText('this ' + S.shape + ': ' + sf(r), padL + pw, Y(r) - 4);
+        halo('this ' + S.shape + ': ' + sf(r), padL + pw, Y(r) - 4);
       }
+      ctx.textAlign = 'center';
+      vals.forEach(q => { ctx.fillStyle = q[3] ? C.ink : C.ink2; halo(q[0], q[1], q[2]); });
     }
 
     function drawAgar(ctx, w, hh, C) {
@@ -262,7 +265,7 @@
       const p = S.p, d = RATE * S.t;
       let W0, H0;
       if (S.shape === 'cylinder') { W0 = p.len; H0 = 2 * p.r; }
-      else { W0 = p.a; H0 = S.shape === 'cube' ? p.a : p.b; }
+      else { W0 = p.a; H0 = S.shape === 'cube' ? p.a : p.c; }
       const x0 = (w - W0 * pcm) / 2, y0 = 20 + (secH - 26 - H0 * pcm) / 2 + 6;
       ctx.font = '12px ' + C.font; ctx.textBaseline = 'alphabetic'; ctx.textAlign = 'left';
       ctx.fillStyle = C.ink2;
@@ -304,7 +307,7 @@
       if (w < 120 || h < 120) return;
       ctx.clearRect(0, 0, w, h);
       if (S.mode === 'agar') { drawAgar(ctx, w, h, C); return; }
-      const ht = h * 0.56;
+      const ht = h * 0.5;
       drawShape(ctx, w, ht, C);
       ctx.save(); ctx.translate(0, ht + 6); drawBars(ctx, w, h - ht - 6, C); ctx.restore();
     }

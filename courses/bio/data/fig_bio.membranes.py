@@ -6,120 +6,166 @@ from figkit_p4 import Fig
 
 figs = []
 
-# ---------- Figure 1: fluid mosaic model (the one wide figure) ----------
+# ---------- Figure 1: fluid mosaic model (vertical layout, fig small: labels stay readable on phones) ----------
+# The membrane runs down the page: outside of the cell on the left, inside on the right. u = across the membrane (x),
+# v = along it (y). Every shape is also stored as an obstacle so that each leader line can be checked against all
+# shapes except its own target.
+import math as _m
 f = Fig("mosaic")
-W, H = 640, 300
-HC_OUT, HC_IN, R = 140, 220, 7           # head centres of the outer and inner leaflet
-T_OUT = (147, 180)                       # tail span, outer leaflet
-T_IN = (182, 213)                        # tail span, inner leaflet
-PROT = [(130, 174), (232, 258), (310, 358), (400, 430)]   # transmembrane proteins (x ranges)
-EXT = (262, 306)                         # extrinsic protein on the inner surface
-CHOL_OUT = [107, 287, 449, 490]          # cholesterol x (outer leaflet)
-CHOL_IN = [71, 197, 377, 449]            # cholesterol x (inner leaflet)
-GLYCOLIPID = 80
-cols = [62 + 18 * k for k in range(24)]  # phospholipid columns
+W, H = 420, 520
+R = 6.5
+HX_OUT, HX_IN = 154, 234                  # x of the outer and inner head centres
+TAIL_OUT, TAIL_IN = (161, 194), (196, 227)  # tail spans (x)
+P_TOP, P_BOT = 140, 248                   # transmembrane protein extent (x)
+VCOLS = [50 + 20 * k for k in range(22)]  # phospholipid positions along the membrane (y)
+PROT = [(130, 174), (232, 258), (310, 358), (400, 430)]     # channel, glycoprotein, carrier, receptor (y ranges)
+EXT = (262, 302)                          # extrinsic protein (y range), on the inner surface
+CHOL_OUT = [110, 290, 450]
+CHOL_IN = [70, 210, 370, 450]
+GLYCO_V = 70
+obst = []                                 # (name, kind, data)
 
-def free(x):
-    return not any(a - R - 2 < x < b + R + 2 for a, b in PROT)
 
-def near_chol(x, lst):
-    return any(abs(x - c) < 9 for c in lst)
+def free(v):
+    return not any(a - R - 2 < v < b + R + 2 for a, b in PROT)
 
-tails_out, tails_in, heads = [], [], []
-for x in cols:
-    if not free(x):
-        continue
-    if not near_chol(x, CHOL_OUT) and x != GLYCOLIPID:
-        heads.append(f'<circle class="fm s-acc sw2" cx="{x}" cy="{HC_OUT}" r="{R}"/>')
-        tails_out.append(f"M{x-3} {T_OUT[0]}L{x-3} {T_OUT[1]}M{x+3} {T_OUT[0]}L{x+3} {T_OUT[1]}")
-    if not near_chol(x, CHOL_IN):
-        heads.append(f'<circle class="fm s-acc sw2" cx="{x}" cy="{HC_IN}" r="{R}"/>')
-        tails_in.append(f"M{x-3} {T_IN[1]}L{x-3} {T_IN[0]}M{x+3} {T_IN[1]}L{x+3} {T_IN[0]}")
+
+def near(v, lst):
+    return any(abs(v - c) < 9 for c in lst)
+
+
+heads, tails = [], []
+for v in VCOLS:
+    if free(v) and not near(v, CHOL_OUT) and v != GLYCO_V:
+        heads.append(f'<circle class="fm s-acc sw2" cx="{HX_OUT}" cy="{v}" r="{R}"/>')
+        tails.append(f"M{TAIL_OUT[0]} {v-3}L{TAIL_OUT[1]} {v-3}M{TAIL_OUT[0]} {v+3}L{TAIL_OUT[1]} {v+3}")
+        obst.append(("head", "c", (HX_OUT, v, R)))
+        obst.append(("tails", "r", (TAIL_OUT[0], v - 3, TAIL_OUT[1], v + 3)))
+    if free(v) and not near(v, CHOL_IN):
+        heads.append(f'<circle class="fm s-acc sw2" cx="{HX_IN}" cy="{v}" r="{R}"/>')
+        tails.append(f"M{TAIL_IN[0]} {v-3}L{TAIL_IN[1]} {v-3}M{TAIL_IN[0]} {v+3}L{TAIL_IN[1]} {v+3}")
+        obst.append(("head", "c", (HX_IN, v, R)))
+        obst.append(("tails", "r", (TAIL_IN[0], v - 3, TAIL_IN[1], v + 3)))
 f.parts += heads
-f.parts.append(f'<path class="ln" d="{"".join(tails_out)}"/>')
-f.parts.append(f'<path class="ln" d="{"".join(tails_in)}"/>')
+f.parts.append(f'<path class="ln" d="{"".join(tails)}"/>')
 
-# cholesterol: short rods between the tails, one leaflet each
-for x in CHOL_OUT:
-    f.rect(x - 4, 150, 8, 30, "fm2 s-acc sw2", 3)
-for x in CHOL_IN:
-    f.rect(x - 4, 183, 8, 30, "fm2 s-acc sw2", 3)
+for v in CHOL_OUT:
+    f.rect(164, v - 4, 30, 8, "fm2 s-acc sw2", 3)
+    obst.append(("chol", "r", (164, v - 4, 194, v + 4)))
+for v in CHOL_IN:
+    f.rect(197, v - 4, 30, 8, "fm2 s-acc sw2", 3)
+    obst.append(("chol", "r", (197, v - 4, 227, v + 4)))
 
 # channel protein: two halves with a pore between them
-f.rect(130, 126, 18, 108, "f1 s-acc sw2", 7)
-f.rect(156, 126, 18, 108, "f1 s-acc sw2", 7)
-# glycoprotein: transmembrane protein with a branched carbohydrate chain
-f.rect(232, 126, 26, 108, "f1 s-acc sw2", 8)
-# carrier protein with a binding site open to the outside
-f.poly([(310, 126), (326, 126), (334, 158), (342, 126), (358, 126), (358, 234), (310, 234)], "f1 s-acc sw2")
-# receptor protein with the ligand bound in its binding site
-f.poly([(400, 126), (408, 126), (408, 148), (422, 148), (422, 126), (430, 126), (430, 234), (400, 234)], "f1 s-acc sw2")
-f.circle(415, 142, 5, "f3 s-acc2 sw2")
+for a, b in ((130, 148), (156, 174)):
+    f.rect(P_TOP, a, P_BOT - P_TOP, b - a, "f1 s-acc sw2", 7)
+obst.append(("channel", "r", (P_TOP, 130, P_BOT, 148)))
+obst.append(("channel", "r", (P_TOP, 156, P_BOT, 174)))
+# glycoprotein
+f.rect(P_TOP, 232, P_BOT - P_TOP, 26, "f1 s-acc sw2", 8)
+obst.append(("glycoprotein", "r", (P_TOP, 232, P_BOT, 258)))
+# carrier protein: binding site open to the outside (left)
+f.poly([(140, 310), (140, 326), (172, 334), (140, 342), (140, 358), (248, 358), (248, 310)], "f1 s-acc sw2")
+obst.append(("carrier", "r", (140, 310, 248, 358)))
+# receptor protein with the ligand bound
+f.poly([(140, 400), (140, 408), (162, 408), (162, 422), (140, 422), (140, 430), (248, 430), (248, 400)], "f1 s-acc sw2")
+obst.append(("receptor", "r", (140, 400, 248, 408)))
+obst.append(("receptor", "r", (162, 400, 248, 430)))
+obst.append(("receptor", "r", (140, 422, 248, 430)))
+f.circle(156, 415, 5, "f3 s-acc2 sw2")
+obst.append(("ligand", "c", (156, 415, 5)))
 # extrinsic protein on the inner surface
-f.rect(EXT[0], 228, EXT[1] - EXT[0], 26, "f2 s-acc2 sw2", 10)
+f.rect(242, 262, 26, 40, "f2 s-acc2 sw2", 10)
+obst.append(("extrinsic", "r", (242, 262, 268, 302)))
 
-def chain(pts, links):
+
+def chain(pts, links, name):
     for a, b in links:
         f.line([pts[a], pts[b]], "ln-m", check=False)
     for p in pts:
         f.circle(p[0], p[1], 4, "fa s-acc2 sw2")
+        obst.append((name, "c", (p[0], p[1], 4)))
+
 
 # glycolipid: carbohydrate chain on a lipid head
-f.circle(GLYCOLIPID, HC_OUT, R, "fm s-acc sw2")
-f.line([(GLYCOLIPID - 3, T_OUT[0]), (GLYCOLIPID - 3, T_OUT[1])], "ln")
-f.line([(GLYCOLIPID + 3, T_OUT[0]), (GLYCOLIPID + 3, T_OUT[1])], "ln")
-chain([(80, 124), (74, 112), (82, 100), (76, 88)], [(0, 1), (1, 2), (2, 3)])
-f.line([(80, 133), (80, 128)], "ln-m", check=False)
+f.circle(HX_OUT, GLYCO_V, R, "fm s-acc sw2")
+obst.append(("head", "c", (HX_OUT, GLYCO_V, R)))
+f.line([(TAIL_OUT[0], GLYCO_V - 3), (TAIL_OUT[1], GLYCO_V - 3)], "ln")
+f.line([(TAIL_OUT[0], GLYCO_V + 3), (TAIL_OUT[1], GLYCO_V + 3)], "ln")
+obst.append(("tails", "r", (TAIL_OUT[0], GLYCO_V - 3, TAIL_OUT[1], GLYCO_V + 3)))
+chain([(138, 70), (126, 64), (114, 72), (102, 66)], [(0, 1), (1, 2), (2, 3)], "gl-chain")
+f.line([(147, 70), (142, 70)], "ln-m", check=False)
 # carbohydrate chain of the glycoprotein
-chain([(245, 114), (237, 102), (253, 102), (237, 90), (253, 90)], [(0, 1), (0, 2), (1, 3), (2, 4)])
-f.line([(245, 126), (245, 118)], "ln-m", check=False)
+chain([(128, 245), (116, 237), (116, 253), (104, 237), (104, 253)], [(0, 1), (0, 2), (1, 3), (2, 4)], "gp-chain")
+f.line([(140, 245), (132, 245)], "ln-m", check=False)
 
-# 7 nm bracket on the left
-f.line([(40, 133), (40, 227)], "ln-m thin")
-f.line([(34, 133), (46, 133)], "ln-m thin")
-f.line([(34, 227), (46, 227)], "ln-m thin")
-f.text(4, 184, "7 nm", "tl")
+# 7 nm bracket under the membrane
+f.line([(147, 492), (241, 492)], "ln-m thin")
+f.line([(147, 486), (147, 498)], "ln-m thin")
+f.line([(241, 486), (241, 498)], "ln-m thin")
+f.text(194, 513, "7 nm", "tl", "middle")
 
-# labels above the membrane
-f.text(62, 20, "glycolipid", "tl")
-f.leader((74, 26), (76, 82))
-f.text(150, 62, "glycoprotein", "tl")
-f.leader((198, 66), (237, 124))
-f.text(270, 70, "carbohydrate chain", "tl")
-f.leader((266, 68), (259, 97))
-f.text(404, 70, "ligand", "tl")
-f.leader((412, 76), (414, 134))
-f.text(516, 30, "outside the cell", "tl")
-# labels in the right margin
-f.text(516, 128, "hydrophilic head", "tl")
-f.leader((512, 125), (484, 136))
-f.text(516, 165, "cholesterol", "tl")
-f.leader((512, 162), (495, 162))
-f.text(516, 200, "hydrophobic tails", "tl")
-f.leader((512, 197), (482, 197))
-# labels below the membrane
-f.text(62, 288, "phospholipid", "tl")
-f.leader((70, 277), (63, 228))
-f.text(130, 262, "channel protein", "tl")
-f.leader((165, 252), (165, 237))
-f.text(360, 262, "receptor protein", "tl")
-f.leader((415, 252), (415, 237))
-f.text(156, 288, "extrinsic protein", "tl")
-f.leader((250, 277), (272, 257))
-f.text(290, 288, "carrier protein", "tl")
-f.leader((334, 277), (334, 237))
-f.text(516, 290, "inside the cell", "tl")
+# side labels
+f.text(4, 16, "outside the cell", "tl")
+f.text(416, 16, "inside the cell", "tl", "end")
+leads = []
+
+
+def lab(x, y, s, a, b, target, anchor="start"):
+    f.text(x, y, s, "tl", anchor)
+    f.leader(a, b)
+    leads.append((s, a, b, target))
+
+
+lab(4, 74, "glycolipid", (78, 71), (101, 67), "gl-chain")
+f.text(4, 242, "carbohydrate", "tl")
+f.text(4, 256, "chain", "tl")
+f.leader((70, 250), (110, 246))
+leads.append(("carbohydrate chain", (70, 250), (110, 246), "gp-chain"))
+lab(4, 419, "ligand", (50, 415), (151, 415), "ligand")
+lab(284, 154, "channel protein", (280, 151), (249, 139), "channel")
+lab(284, 194, "hydrophilic head", (280, 191), (241, 190), "head")
+lab(284, 214, "cholesterol", (280, 211), (228, 210), "chol")
+lab(284, 249, "glycoprotein", (280, 246), (249, 246), "glycoprotein")
+lab(284, 290, "extrinsic protein", (280, 287), (269, 287), "extrinsic")
+lab(284, 338, "carrier protein", (280, 335), (249, 335), "carrier")
+lab(284, 419, "receptor protein", (280, 416), (249, 416), "receptor")
+lab(284, 464, "hydrophobic tails", (280, 461), (214, 460), "tails")
+lab(284, 484, "phospholipid", (280, 481), (242, 472), "head")
+
+# leader check: a leader may touch only its own target
+def hit(shape, x, y, m):
+    kind, d = shape
+    if kind == "c":
+        return _m.hypot(x - d[0], y - d[1]) < d[2] + m
+    return d[0] - m < x < d[2] + m and d[1] - m < y < d[3] + m
+
+
+lead_probs = []
+for (s, a, b, target) in leads:
+    for k in range(0, 41):
+        t = k / 40
+        x, y = a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t
+        for (name, kind, d) in obst:
+            if name == target:
+                continue
+            if hit((kind, d), x, y, 1.0):
+                lead_probs.append(f"mosaic: leader of '{s}' crosses a {name} at ({x:.0f},{y:.0f})")
+                break
+        else:
+            continue
+        break
 figs.append(f.svg((W, H),
-    "Fluid mosaic model of a cell surface membrane, drawn across the page. A bilayer of phospholipids has hydrophilic heads "
-    "facing outwards and hydrophobic tails facing inwards, about 7 nm thick. Cholesterol rods sit between the tails. "
-    "Transmembrane proteins include a channel protein with a pore, a carrier protein with a binding site, a glycoprotein "
-    "with a carbohydrate chain on the outer surface and a receptor protein with a ligand bound. A glycolipid has a "
-    "carbohydrate chain on its head. An extrinsic protein lies on the inner surface. The outside of the cell is at the top.",
-    "The fluid mosaic model. The phospholipids move sideways in their own layer and the proteins are scattered through "
-    "the bilayer like tiles in a mosaic. Carbohydrate chains are found only on the outer surface. This is a drawing of a "
-    "very small part of a membrane, not to scale.",
-    size="fig"))
-f.problems = f.check()
+    "Fluid mosaic model of a cell surface membrane, drawn running down the page, with the outside of the cell on the left "
+    "and the inside on the right. A bilayer of phospholipids has hydrophilic heads facing outwards and hydrophobic tails "
+    "facing inwards, about 7 nm thick. Cholesterol rods sit between the tails. Transmembrane proteins include a channel "
+    "protein with a pore, a carrier protein with a binding site, a glycoprotein with a carbohydrate chain on the outer "
+    "surface and a receptor protein with a ligand bound. A glycolipid has a carbohydrate chain on its head. An extrinsic "
+    "protein lies on the inner surface.",
+    "The fluid mosaic model, turned on its side: the outside of the cell is on the left. The phospholipids move sideways in "
+    "their own layer and the proteins are scattered through the bilayer like tiles in a mosaic. Carbohydrate chains are "
+    "found only on the outer surface. This is a drawing of a very small part of a membrane, not to scale."))
+f.problems = f.check() + lead_probs
 
 # ---------- Figure 2: cell signalling ----------
 g = Fig("signal")

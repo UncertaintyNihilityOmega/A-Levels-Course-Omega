@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-28 · WRITE P4 · bio.foodtests 6.6k words (2 SVGs, 1 plot, 6 labs, 7 eg), bio.enzymes2 6.5k words (2 SVGs, 4 plots, 1 lab, 9 eg), widget bio-enzyme (temperature/ph/kinetics, bio.enzymes now has it before pH section; kinetics in bio.enzymes2). Notes: unchecked checkbox in the widget renders as a dark square in the headless light shot (engine accent-color styling, check in a real browser); no browser pane used; plots use two --hline in non-competitive plot (verify both draw).
+Last: 2026-10-28 · WRITE P5 · bio.membranes 6.6k words (fluid mosaic redrawn vertical as fig small so labels read on phones, signalling fig, beetroot lab/plots), bio.movement 8.1k words (4 SVGs, 2 plots, 5 labs, 9 eg); widget bio-sav (cube/cuboid/cylinder + agar-block model tab; probe clean light/dark/phone/bad attributes; maths tested by data/test_bio-sav.js). Notes: bio-sav not clicked in a browser pane (shots and headless Edge only); membrane shapes drawn at fixed scale so a 2 cm cube looks small; place scripts data/place_*_figs.py
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -9,7 +9,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P2: written 2026-10-28
 - P3: written 2026-10-28
 - P4: written 2026-10-28
-- P5: writing 2026-10-28
+- P5: written 2026-10-28
 - P6: writing 2026-10-28
 - P7: open
 - P8: open
