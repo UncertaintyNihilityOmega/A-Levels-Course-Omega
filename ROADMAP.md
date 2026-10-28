@@ -3,9 +3,8 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (hourly, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.claude/run.lock`.
-- Current course: **Biology** (`bio`, queue item 2). LEAD done (gold chapter `bio.enzymes`).
-  Next: Writers P1, P2 (usage limit stopped them at the start on 28 Oct; resume whatever `status` shows as writing).
-  Open request: bio REQUESTS.md `th` wrap on narrow screens.
+- Current course: **Biology** (`bio`, queue item 2). LEAD, P1, P2 written. Writing: P3, P4.
+  Next: REVIEW P1, P2, P3 once P3 is done.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
