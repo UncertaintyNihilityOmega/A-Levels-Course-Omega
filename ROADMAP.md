@@ -1,8 +1,8 @@
 # ROADMAP: build queue and current state
 
 ## Now
-- USER: create the app scheduled task `zta-agent-run` (hourly at :23, Auto permissions, prompt in
-  `.claude/zta-agent-run.md`); the app's auto mode does not let a session create it. Then runs start on their own.
+- Automatic runs on: app scheduled task `zta-agent-run` (hourly, Auto mode; prompt in
+  `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.claude/run.lock`.
 - Current course: **Biology** (`bio`, queue item 2). Next step: LEAD (gold chapter `bio.enzymes`, then `done LEAD`).
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
