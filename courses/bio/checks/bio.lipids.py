@@ -51,9 +51,9 @@ eq("Mr by other route", 92 + 3 * 256 - 3 * 18, 806)
 
 # --- Energy values -------------------------------------------------------------------------------------------------
 LIP, CARB = 39, 16
-eq("eg bear: mass of fat 2000/39", round(2000 / LIP), 51)
-eq("eg bear: mass of carbohydrate 2000/16", 2000 / CARB, 125)
-eq("eg bear: about 2.4 times the mass", round(125 / (2000 / LIP), 1), 2.4)
+eq("eg sleep: mass of fat 2000/39", round(2000 / LIP), 51)
+eq("eg sleep: mass of carbohydrate 2000/16", 2000 / CARB, 125)
+eq("eg sleep: about 2.4 times the mass", round(125 / (2000 / LIP), 1), 2.4)
 assert LIP / CARB > 2, "lipid gives more than twice the energy per gram"
 eq("try: 25 g fat", 25 * LIP, 975)
 eq("try: carbohydrate for 975 kJ", round(975 / CARB), 61)

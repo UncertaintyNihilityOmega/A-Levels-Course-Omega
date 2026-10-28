@@ -1,13 +1,13 @@
 # STATUS: Biology
 
-Last: 2026-10-28 · WRITE P5 · bio.membranes 6.6k words (fluid mosaic redrawn vertical as fig small so labels read on phones, signalling fig, beetroot lab/plots), bio.movement 8.1k words (4 SVGs, 2 plots, 5 labs, 9 eg); widget bio-sav (cube/cuboid/cylinder + agar-block model tab; probe clean light/dark/phone/bad attributes; maths tested by data/test_bio-sav.js). Notes: bio-sav not clicked in a browser pane (shots and headless Edge only); membrane shapes drawn at fixed scale so a 2 cm cube looks small; place scripts data/place_*_figs.py
+Last: 2026-10-28 · REVIEW P1, P2, P3 · 0 open items; reviewer fixed 5 (logged [x] in REVIEW.md): practice reusing worked-example data in bio.microscopy (0.15 um, graticule quiz, 0.0065 mm), bio.carbs (cellulose digestion -> germinating seed), bio.lipids (bear energy contradiction -> sleep example; sweat practice -> panting dog); bio-magnify graticule keeps the same cell length when switching objective; cilium cross-section now nine pairs + two. All figures checked light/dark/phone (no overlaps, labels >=11 px except :::plot, filed by Organizer). COURSE.md reuse rule tightened; helper data/review_reuse.py. Writer notes P1-P3 confirmed.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
 - LEAD: done 2026-10-28
-- P1: written 2026-10-28
-- P2: written 2026-10-28
-- P3: written 2026-10-28
+- P1: reviewed 2026-10-28
+- P2: reviewed 2026-10-28
+- P3: reviewed 2026-10-28
 - P4: written 2026-10-28
 - P5: written 2026-10-28
 - P6: writing 2026-10-28

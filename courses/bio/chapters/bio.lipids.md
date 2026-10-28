@@ -250,12 +250,12 @@ The structure of a triglyceride explains each of its functions.
 | **Protection** | A layer of fat around organs such as the kidneys cushions them against knocks. |
 | **Source of metabolic water** | Respiration of lipids releases water, as well as energy. |
 
-:::eg A hibernating bear needs 2000 kJ of energy on one day. Calculate the mass of fat that provides this energy, and the mass of carbohydrate needed. Use 39 kJ g⁻¹ for lipid and 16 kJ g⁻¹ for carbohydrate. Suggest why animals store fat rather than carbohydrate for long periods.
+:::eg During 7 hours of sleep, an adult uses about 2000 kJ of energy. Calculate the mass of fat that provides this energy, and the mass of carbohydrate needed. Use 39 kJ g⁻¹ for lipid and 16 kJ g⁻¹ for carbohydrate. Suggest why animals store fat rather than carbohydrate for long periods.
 Divide the energy by the energy released per gram.
 
 \[\begin{aligned} \text{mass of fat} &= \frac{2000}{39} \\ &= 51\,\mathrm{g} \end{aligned}\]
 
-[M1] The bear needs 51 g of fat. [A1]
+[M1] The sleeper respires about 51 g of fat. [A1]
 
 \[\begin{aligned} \text{mass of carbohydrate} &= \frac{2000}{16} \\ &= 125\,\mathrm{g} \end{aligned}\]
 
@@ -353,7 +353,7 @@ Q: Name the atoms that form a hydrogen bond between two water molecules and stat
 A: A hydrogen atom of one molecule (δ+) and an oxygen atom of another molecule (δ−).
 Q: Explain why sodium chloride dissolves in water.
 A: Water is polar. The δ− oxygen atoms are attracted to \(\ce{Na+}\) ions and the δ+ hydrogen atoms to \(\ce{Cl-}\) ions, so water molecules surround each ion and pull it away from the crystal.
-Q: A person loses 0.20 dm³ of sweat by evaporation. If 1 g of water takes 2.4 kJ to evaporate and sweat has a density of 1.0 g cm⁻³, calculate the energy removed.
+Q: A dog cools itself by panting: on a hot afternoon 0.20 dm³ of water evaporates from its tongue and airways. If 1 g of water takes 2.4 kJ to evaporate and the water has a density of 1.0 g cm⁻³, calculate the energy removed.
 A: \(0.20\,\mathrm{dm^3} = 200\,\mathrm{cm^3} = 200\,\mathrm{g}\); \(200 \times 2.4 = 480\,\mathrm{kJ}\).
 Q: Name the two types of molecule that join to form a triglyceride, and state how many molecules of water are released when one triglyceride is made.
 A: Glycerol and fatty acids (one glycerol and three fatty acids). Three molecules of water are released.

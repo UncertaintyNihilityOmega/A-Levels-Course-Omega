@@ -43,7 +43,10 @@ writes it before any Writer starts.
   method in steps, variables (IV, DV, standardised), control, typical results, sources of error, safety.
 - **AS chapters never use A Level terms or methods** (no statistics tests, no respiration stages, no Km in AS
   chapters other than bio.enzymes2, which is AS). If a link forward helps, one sentence pointing to the later chapter.
-- **Practice questions never reuse a worked example's data or organism.** New numbers, new context.
+- **Practice questions never reuse a worked example's data or organism.** New numbers, new context. This includes
+  the quiz and the same organism with other numbers (REVIEW P1–P3 changed five: 0.15 µm, 25 units = 6 divisions,
+  0.0065 mm, humans and cellulose, a bear given two different daily energy needs). Before `done`, grep the chapter
+  for each worked example's numbers and organism.
 - Length: as long as the topic needs (the gold chapter is about 790 lines, half of it practice). No padding.
 
 ## Format lessons from the gold chapter (each one cost a fix)

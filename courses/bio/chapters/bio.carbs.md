@@ -453,11 +453,11 @@ More sugar is released from amylopectin at every time: at 8 minutes 29 mg compar
 (b) Amylopectin is branched, so it has many more free ends than the unbranched amylose. [B1]
 The enzyme acts at free ends, so more enzyme molecules can work at the same time on amylopectin. [B1]
 So amylopectin is hydrolysed faster and more sugar is released. [B1]
-Q: [4 marks] ★★ Cellulose and starch are both polymers of glucose. Explain why humans can digest starch but not cellulose.
+Q: [4 marks] ★★ When a pea seed germinates, it makes amylase. Over a few days the starch grains in its cells disappear, but the cellulose cell walls stay intact. Explain these observations.
 A: Starch is a polymer of α-glucose joined by α-1,4 (and α-1,6) glycosidic bonds, whereas cellulose is a polymer of β-glucose joined by β-1,4 bonds. [B1]
-Humans make amylase, which has an active site complementary to the α-1,4 bonds in starch, so it forms enzyme–substrate complexes with starch. [B1]
-Cellulose has a different shape (every second glucose is turned over), which is not complementary to the active site of amylase. [B1]
-Humans do not make cellulase, the enzyme that hydrolyses β-1,4 bonds. [B1]
+The active site of amylase is complementary to starch, so enzyme–substrate complexes form and starch is hydrolysed to maltose (then glucose for respiration in the growing seedling). [B1]
+Cellulose has a different shape (every second glucose is turned over), which is not complementary to the active site of amylase, so it is not hydrolysed. [B1]
+The seed does not make cellulase, so the walls remain and keep supporting the cells. [B1]
 Q: [3 marks] ★★ A cellulose molecule contains 3000 glucose units. State the number of water molecules removed when it was made. Calculate its relative molecular mass, if glucose is 180 and water is 18.
 A: Number of water molecules \(= 3000 - 1 = 2999\). [B1]
 \(M_r = 3000 \times 180 - 2999 \times 18\) [M1]

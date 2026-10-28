@@ -64,6 +64,8 @@ eq("reading uncertainty 25 units", 0.5 / 25 * 100, 2)
 eq("0.15 um in nm", 0.15 * NM_PER_UM, 150)
 assert 150 < 200
 assert 150 > 0.5
+eq("try 0.08 um in nm", 0.08 * NM_PER_UM, 80)
+assert 80 < 200
 
 # --- practice: try set ---------------------------------------------------------------------------------
 eq("try 0.35 mm", 0.35 * UM_PER_MM, 350)
@@ -113,8 +115,9 @@ eq("cells across field", 450 / 60, 7.5)
 
 # --- quiz ----------------------------------------------------------------------------------------------
 eq("quiz drawing", 40 * UM_PER_MM / 20, 2000)
-eq("quiz graticule unit", 6 * 10 / 25, 2.4)
-eq("quiz 0.0065 mm", 0.0065 * UM_PER_MM, 6.5)
+eq("quiz graticule unit", 12 * 10 / 40, 3.0)
+assert abs(40 / 120 - 0.33) < 0.01
+eq("quiz 0.0048 mm", 0.0048 * UM_PER_MM, 4.8)
 eq("quiz recalibration factor", 40 / 10, 4)
 
 print("ok")

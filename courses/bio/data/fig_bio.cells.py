@@ -305,8 +305,10 @@ f.rect(10, 262, 220, 16, "f1 s-acc sw2", check=False)
 # cross-section of a cilium: nine pairs round two central tubes
 ccx, ccy, cr = 286, 200, 20
 for k in range(9):
-    px, py = on(ccx, ccy, cr, cr, 40 * k)
-    f.dots([(px, py)], 3.4, "f2 s-acc2 sw2")
+    # REVIEW P1-P3: a pair of microtubules at each of the nine positions (the caption says nine pairs)
+    for d in (-7, 7):
+        px, py = on(ccx, ccy, cr, cr, 40 * k + d)
+        f.dots([(px, py)], 2.4, "f2 s-acc2")
 f.dots([(ccx - 4, ccy), (ccx + 4, ccy)], 3.4, "fm s-acc sw2")
 f.ellipse(ccx, ccy, 28, 28, "ln", check=False)
 f.text(326, ccy + 52, "cross-section", "tl", "end")

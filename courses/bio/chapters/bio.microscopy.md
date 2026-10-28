@@ -462,10 +462,10 @@ A: (a) At ×10: \(20 \times 10 = 200\,\mathrm{\mu m}\), \(200 \div 40\) [M1] \(=
 At ×40: \(5 \times 10 = 50\,\mathrm{\mu m}\), \(50 \div 40 = 1.25\,\mathrm{\mu m}\) per unit [A1]
 (b) \(14 \times 1.25 = 17.5\,\mathrm{\mu m}\) [A1]
 (c) A stronger objective magnifies the specimen more, but the graticule stays the same size in the eyepiece, so one unit represents a different (smaller) real length at each objective. [B1]
-Q: [4 marks] ★★ Two structures in a cell are 0.15 µm apart. (a) Explain whether a light microscope with a resolution of 200 nm can show them as two separate structures. (b) State what type of microscope could show them as separate, and why.
+Q: [4 marks] ★★ Two ribosomes on a membrane are 0.08 µm apart. (a) Explain whether a light microscope with a resolution of 200 nm can show them as two separate structures. (b) State what type of microscope could show them as separate, and why.
 H: Put both values in nm first.
-A: (a) \(0.15\,\mathrm{\mu m} = 150\,\mathrm{nm}\) [B1]
-This is less than 200 nm, the resolution of the light microscope, so they would appear as a single structure. [B1]
+A: (a) \(0.08\,\mathrm{\mu m} = 80\,\mathrm{nm}\) [B1]
+This is less than 200 nm, the resolution of the light microscope, so they would appear as a single structure (or not be seen at all). [B1]
 (b) An electron microscope (TEM) [B1] because the electron beam has a much shorter wavelength than light, so it has a higher resolution (about 0.5 nm). [B1]
 Q: [6 marks] ★★★ Cheek cells were measured at ×10. The graticule was calibrated: 20 eyepiece units matched 15 stage micrometer divisions of 10 µm. The widths of eight cells were 7, 8, 9, 8, 7, 9, 8 and 8 eyepiece units. (a) Calculate the length of one eyepiece unit at ×10. (b) Calculate the mean width of the cells, in µm. (c) Describe the variation in cell width. (d) Suggest how the student could make the mean more reliable.
 H: Mean in units first (add, divide by 8), then multiply by the length of one unit.
@@ -530,12 +530,12 @@ She should have moved the cells to the centre of the field at ×100 before chang
 - Electron microscopes are used on living specimens.
 - Electron microscopes have a brighter lamp.
 > A shorter wavelength allows points that are closer together to be resolved. Electron microscopes need a vacuum, so the specimens are dead.
-? 25 eyepiece units match 6 stage divisions of 10 µm. How long is one eyepiece unit?
-+ 2.4 µm
-- 0.42 µm
-- 2.5 µm
-- 60 µm
-> \(6 \times 10 = 60\,\mathrm{\mu m}\), then \(60 \div 25 = 2.4\,\mathrm{\mu m}\). 0.42 turns the division upside down, 2.5 is wrong because it divides 25 by 10, and 60 µm is the whole stretch, not one unit.
+? 40 eyepiece units match 12 stage divisions of 10 µm. How long is one eyepiece unit?
++ 3.0 µm
+- 0.33 µm
+- 4.0 µm
+- 120 µm
+> \(12 \times 10 = 120\,\mathrm{\mu m}\), then \(120 \div 40 = 3.0\,\mathrm{\mu m}\). 0.33 turns the division upside down, 4.0 divides 40 by 10, and 120 µm is the whole stretch, not one unit.
 ? A student calibrates an eyepiece graticule with the ×10 objective and then measures cells with the ×40 objective, using the same value. What is the effect on the answers?
 + The cell lengths are wrong, because the calibration changes with the objective.
 - There is no effect, because the graticule is fixed in the eyepiece.
@@ -548,12 +548,12 @@ She should have moved the cells to the centre of the field at ×100 before chang
 - a light micrograph of a stained section
 - a drawing of a stage micrometer
 > The SEM scans the surface and gives a three-dimensional appearance. The TEM shows a flat slice through the specimen.
-? A student converts 0.0065 mm to micrometres. Which answer is correct?
-+ 6.5 µm
-- 0.0000065 µm
-- 65 µm
-- 6500 µm
-> Going to a smaller unit, multiply by 1000: \(0.0065 \times 1000 = 6.5\). The other options use ÷1000, a wrong power, or ×1 000 000.
+? A student converts 0.0048 mm to micrometres. Which answer is correct?
++ 4.8 µm
+- 0.0000048 µm
+- 48 µm
+- 4800 µm
+> Going to a smaller unit, multiply by 1000: \(0.0048 \times 1000 = 4.8\). The other options use ÷1000, a wrong power, or ×1 000 000.
 ? Why is a coverslip lowered onto the slide at an angle?
 + So that air is pushed out and no air bubbles are trapped under it.
 - So that the stain is spread over the objective lens.

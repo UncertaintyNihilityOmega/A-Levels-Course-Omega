@@ -178,7 +178,7 @@
     const { body } = W.frame(el, 'Eyepiece graticule calibration',
       'Line up the zeros, read the matching marks, then measure a cell');
     // Simplified model: at x10, one stage division (10 µm) is 1 eyepiece unit wide; at x40, 4 units wide.
-    const S = { obj: (opts && String(opts.obj) === '40') ? 40 : 10, off: 6.3, cell: 22, ppu: 0, busy: false };
+    const S = { obj: (opts && String(opts.obj) === '40') ? 40 : 10, off: 6.3, cell: 15, ppu: 0, busy: false };
     const per = o => (o === 10 ? 1 : 4);
     const calib = o => 10 / per(o);
     const aligned = () => Math.abs(S.off) < 0.2;
@@ -187,7 +187,9 @@
     const btns = {};
     [10, 40].forEach(o => {
       const b = E('button', { type: 'button', class: 'w-tab', 'aria-pressed': o === S.obj ? 'true' : 'false', text: 'Objective ×' + o,
-        onclick: () => { S.obj = o; Object.keys(btns).forEach(k => btns[k].setAttribute('aria-pressed', Number(k) === o ? 'true' : 'false')); update(); } });
+        // REVIEW P1-P3: the same cell spans 4 times as many units at x40, so its length in µm stays the same
+        onclick: () => { if (o !== S.obj) { S.cell = Math.max(1, Math.min(80, Math.round(S.cell * o / S.obj))); csl.set(S.cell); }
+          S.obj = o; Object.keys(btns).forEach(k => btns[k].setAttribute('aria-pressed', Number(k) === o ? 'true' : 'false')); update(); } });
       btns[o] = b;
       tabs.appendChild(b);
     });
@@ -286,7 +288,7 @@
 
     const rd = W.readout([['obj', 'Objective'], ['state', 'Stage scale'], ['cal', 'One eyepiece unit'], ['cell', 'Length of the cell']]);
     body.appendChild(rd.el);
-    body.appendChild(E('div', { class: 'w-note', text: 'Change the objective and watch the calibration change: you must recalibrate for every objective. This is a simplified model of one microscope: a real microscope gives its own values (such as 2.4 µm per unit), so always calibrate the one you use.' }));
+    body.appendChild(E('div', { class: 'w-note', text: 'At ×40 the same cell spans four times as many eyepiece units, but each unit is four times shorter, so its length in µm stays the same. That is why you must recalibrate for every objective. This is a simplified model of one microscope: a real microscope gives its own values (such as 2.4 µm per unit), so always calibrate the one you use.' }));
 
     W.drag(c.wrap, {
       hit: (x, y) => (y > 130 ? { sx: x, s0: S.off } : null),
