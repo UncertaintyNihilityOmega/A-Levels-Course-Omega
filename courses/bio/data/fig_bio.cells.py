@@ -46,7 +46,7 @@ def edge_x(poly, y, right=True):
 # ---------------------------------------------------------------- animal cell (named and lettered)
 def animal(letters):
     f = Fig("animal-letters" if letters else "animal")
-    f.tf = (330, 200, 290, 140, 0.78)
+    f.tf = (330, 200, 212, 125, 0.6)   # REVIEW P2: 400-wide fig small so labels are about 11 px on a phone
     cell = outline(330, 200, 175, 150)
     f.smooth(cell, "f1 s-acc sw2")
     # nucleus
@@ -87,23 +87,23 @@ def animal(letters):
         f.poly([(x, by - 3), (x, by + 14), (x + 1.5, by + 18), (x + 6.5, by + 18), (x + 8, by + 14), (x + 8, by - 3)], "f1 s-acc sw2", closed=False, check=False)
     mv_tip = (382, edge_y(cell, 374, True) + 10)
     items = [
-        # key, letter, side, label y (drawing coordinates), lines, target (drawing coordinates)
-        ("nucleolus", "nucleolus", "L", 184, ["nucleolus"], (298, 181)),
-        ("rer", "B", "L", 141, ["rough endoplasmic", "reticulum (RER)"], (181, 141)),
-        ("rib", None, "L", 96, ["free ribosomes"], (236, 92)),
-        ("ser", "H", "L", 272, ["smooth ER"], (203, 268)),
-        ("mit", "D", "L", 226, ["mitochondrion"], (187, 223)),
-        ("lys", "E", "L", 316, ["lysosome"], (230, 313)),
-        ("mem", None, "R", 97, ["cell surface", "membrane"], (edge_x(cell, 97, True) - 1, 97)),
-        ("cen", "F", "R", 131, ["centrioles"], (422, 134)),
-        ("nuc", "A", "R", 172, ["nuclear envelope"], (389, 168)),
-        ("gol", "C", "R", 232, ["Golgi body"], (472, 228)),
-        ("mv", "G", "R", 358, ["microvilli"], (mv_tip[0], 358)),
+        # key, letter, side, label y (figure coordinates), lines, target (drawing coordinates)
+        ("mem", None, "L", 33, ["cell surface", "membrane"], (edge_x(cell, 75, False) + 1, 75)),
+        ("rib", None, "L", 65, ["free", "ribosomes"], (236, 92)),
+        ("rer", "B", "L", 93, ["rough ER"], (181, 141)),
+        ("nucleolus", "nucleolus", "L", 115, ["nucleolus"], (298, 181)),
+        ("mit", "D", "L", 139, ["mitochondrion"], (187, 223)),
+        ("ser", "H", "L", 165, ["smooth ER"], (203, 268)),
+        ("lys", "E", "L", 193, ["lysosome"], (230, 313)),
+        ("cen", "F", "R", 81, ["centrioles"], (422, 134)),
+        ("nuc", "A", "R", 105, ["nuclear", "envelope"], (389, 168)),
+        ("gol", "C", "R", 139, ["Golgi body"], (472, 228)),
+        ("mv", "G", "R", 232, ["microvilli"], (mv_tip[0], 358)),
     ]
     targets = [(k, f.P(*t)) for (k, _, _, _, _, t) in items]
-    ys = {k: f.my(y) for (k, _, _, y, _, _) in items}
+    ys = {k: y for (k, _, _, y, _, _) in items}
     f.tf = None
-    LX, RX = 138, 440
+    LX, RX = 96, 326
     for (key, letter, side, _, lines, _), (_, tgt) in zip(items, targets):
         if letters and (letter is None or key == "nucleolus"):
             continue
@@ -125,27 +125,27 @@ def animal(letters):
 
 
 f = animal(False)
-figs.append(f.svg((560, 290),
+figs.append(f.svg((400, 244),
     "Animal cell as seen with a transmission electron microscope, with labels. The large nucleus has a double nuclear "
     "envelope and a dark nucleolus. Stacks of flattened sacs studded with ribosomes are the rough endoplasmic reticulum; "
     "tubes without ribosomes are the smooth endoplasmic reticulum. A Golgi body is a stack of curved sacs with vesicles "
     "nearby. Two mitochondria show folded inner membranes, a lysosome is a small round sac, and two centrioles lie at "
     "right angles. Finger-like microvilli project from the lower surface, and small dots are free ribosomes.",
     "An animal cell as a drawing of a transmission electron micrograph. Compare it with the plant cell below: this cell "
-    "has centrioles and no cell wall, chloroplasts or large permanent vacuole.", "fig"))
+    "has centrioles and no cell wall, chloroplasts or large permanent vacuole."))
 problems.extend(f.check())
 
 f = animal(True)
-figs.append(f.svg((560, 290),
+figs.append(f.svg((400, 244),
     "The same animal cell with eight structures marked by letters. A is the nuclear envelope, B a stack of ribosome-studded "
     "sacs, C a Golgi body, D a mitochondrion, E a small round sac, F two short tubes at right angles, G finger-like "
     "projections from the lower surface and H smooth tubes.",
-    "Structures A to H of an animal cell, for the identification example and the practice questions.", "fig"))
+    "Structures A to H of an animal cell, for the identification example and the practice questions."))
 problems.extend(f.check())
 
 # ---------------------------------------------------------------- plant cell
 f = Fig("plant")
-f.tf = (350, 186, 302, 150, 0.8)
+f.tf = (350, 186, 232, 120, 0.6)   # REVIEW P2: 400-wide fig small
 f.rect(160, 36, 331, 300, "fm s-acc sw2", 18)                      # cell wall (thick band)
 f.rect(174, 50, 292, 272, "f1 s-acc sw2", 10)                      # cell surface membrane inside the wall
 f.rect(491, 45, 49, 282, "f1 s-acc sw2", 12, check=False)         # neighbouring cell
@@ -163,21 +163,20 @@ for (mx, my) in ((205, 200), (440, 262)):
 f.dots([(190, 235), (240, 330), (300, 310), (350, 312), (410, 300), (400, 120), (300, 60), (260, 70), (370, 62)], 2, "fi")
 f.line([(466, 112), (505, 112)], "c3 sw3", check=False)             # plasmodesma through the wall
 f.line([(466, 244), (505, 244)], "c3 sw3", check=False)
-L = 140
-items = [  # label y (drawing coordinates), lines, target (drawing coordinates)
-    (58, ["cell wall"], (166, 59)),
-    (99, ["cell surface", "membrane"], (175, 99)),
-    (126, ["chloroplast"], (192, 121)),
-    (150, ["cytoplasm"], (184, 154)),
-    (208, ["mitochondrion"], (189, 202)),
-    (181, ["large permanent", "vacuole"], (300, 178)),
-    (244, ["tonoplast"], (260, 241)),
-    (298, ["nucleus"], (176, 288)),
-    (322, ["nucleolus"], (196, 288)),
+L = 112
+items = [  # label y (figure coordinates), lines, target (drawing coordinates)
+    (40, ["cell wall"], (167, 70)),
+    (66, ["cell surface", "membrane"], (175, 99)),
+    (92, ["chloroplast"], (192, 121)),
+    (110, ["cytoplasm"], (184, 154)),
+    (134, ["large permanent", "vacuole"], (300, 178)),
+    (160, ["mitochondrion"], (210, 207)),
+    (178, ["tonoplast"], (260, 241)),
+    (196, ["nucleus"], (176, 288)),
+    (214, ["nucleolus"], (196, 288)),
 ]
-mapped = [(f.my(y), lines, f.P(*t)) for (y, lines, t) in items]
-pd = f.P(505, 112)
-pdy = f.my(116)
+mapped = [(y, lines, f.P(*t)) for (y, lines, t) in items]
+pd = f.P(485, 112)
 f.tf = None
 for ly, lines, tgt in mapped:
     n = len(lines)
@@ -185,16 +184,16 @@ for ly, lines, tgt in mapped:
         f.text(L, ly - 7 * (n - 1) + 14 * i, t, "tl", "end")
     f.line([(L + 4, ly - 3), tgt], "ln-m thin", check=False)
     f.leads.append(((L + 4, ly - 3), tgt, lines[0]))
-f.text(466, pdy, "plasmodesma", "tl")
-f.line([(464, pdy - 3), pd], "ln-m thin", check=False)
-f.leads.append(((464, pdy - 3), pd, "plasmodesma"))
-figs.append(f.svg((560, 290),
+f.text(398, 16, "plasmodesma", "tl", "end")
+f.line([(345, 20), pd], "ln-m thin", check=False)
+f.leads.append(((345, 20), pd, "plasmodesma"))
+figs.append(f.svg((400, 228),
     "Plant cell as seen with an electron microscope, with labels. A thick cell wall surrounds the cell surface membrane. "
     "A large permanent vacuole, bounded by the tonoplast, fills most of the cell. The cytoplasm holds a nucleus with a "
     "nucleolus, chloroplasts, mitochondria and ribosomes. At the right, a narrow strand of cytoplasm, a plasmodesma, "
     "passes through the wall into the neighbouring cell.",
     "A plant cell as a drawing of an electron micrograph. Compare it with the animal cell: this cell has a cell wall, "
-    "chloroplasts, a large permanent vacuole and plasmodesmata, and no centrioles.", "fig"))
+    "chloroplasts, a large permanent vacuole and plasmodesmata, and no centrioles."))
 problems.extend(f.check())
 
 # ---------------------------------------------------------------- mitochondrion

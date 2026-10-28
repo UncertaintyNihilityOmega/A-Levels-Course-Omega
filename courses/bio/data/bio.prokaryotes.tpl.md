@@ -30,8 +30,6 @@ A cell with no nucleus (its DNA is not enclosed by a membrane) and no organelles
 
 The typical prokaryote in this course is a **bacterium**. These are its structural features.
 
-%%FIG0%%
-
 :::html
 %%FIG0%%
 :::
@@ -115,8 +113,6 @@ Bacteria are big enough to see with a light microscope, as tiny dots or rods. A 
 :::def Virus
 A non-cellular structure with a core of nucleic acid (either DNA or RNA) surrounded by a capsid made of protein. Some viruses also have an outer envelope made of phospholipids.
 :::
-
-%%FIG1%%
 
 :::html
 %%FIG1%%
@@ -321,10 +317,10 @@ Judgement: there is no agreed answer, but most characteristics of life are missi
 > The target of the antibiotic is the bacterial wall. A virus has no cell wall or metabolism of its own.
 ? The micrograph of a bacterium is at ×20 000. The image is 40 mm long. What is the actual length?
 + 2 µm
-- 0.5 µm
+- 0.002 µm
 - 2 mm
-- 800 µm
-> \(40 \div 20\,000 = 0.002\,\mathrm{mm} = 2\,\mu\mathrm{m}\). 0.5 µm inverts the equation, 2 mm forgets to convert units, and 800 µm multiplies.
+- 500 µm
+> \(40 \div 20\,000 = 0.002\,\mathrm{mm} = 2\,\mathrm{\mu m}\). 0.002 µm is the value in mm with the wrong unit, 2 mm converts the number but keeps the old unit, and 500 µm divides the magnification by the image size.
 :::
 
 :::checklist What you can now do

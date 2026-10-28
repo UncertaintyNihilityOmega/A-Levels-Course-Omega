@@ -273,7 +273,7 @@ Cells need vitamin C to make collagen with strong cross-links. Without it the co
 :::
 
 :::warn Collagen is strong, not stretchy
-Collagen has high **tensile strength** but is **not elastic**. Do not write "collagen is elastic", or "flexible". Say "strong when pulled" and "does not stretch". Also, its strength comes from hydrogen bonds between the three chains **and** covalent cross-links between molecules, not from a single bond type.
+Collagen has high **tensile strength** but is **not elastic**. Do not write "collagen is elastic" or "stretchy". Say "strong when pulled" and "does not stretch". Also, its strength comes from hydrogen bonds between the three chains **and** covalent cross-links between molecules, not from a single bond type.
 :::
 
 The plot compares a strip of tendon (collagen) with a rubber band of similar length, pulled with increasing force.
@@ -287,7 +287,7 @@ Describe with figures and units, then explain with the structure of collagen.
 
 The tendon withstands a force of 500 N with an extension of only 5 mm. [B1]
 
-The rubber band is extended by 40 mm by a force of only 80 N, so it stretches far more and is much weaker. [B1]
+The rubber band is extended by 40 mm by a force of only 80 N, so it stretches far more for a much smaller force. [B1]
 
 In collagen, three polypeptides form a triple helix held by hydrogen bonds between the chains. [B1]
 
@@ -431,7 +431,7 @@ A: The first chemical breaks the disulfide bonds between cysteine R groups, so t
 The hair is held in a new position on the roller while new disulfide bonds form between different cysteines. [B1]
 So the keratin has a new tertiary and quaternary arrangement, and the hair keeps the curl. [B1]
 Disulfide bonds are covalent bonds, so they are strong. [B1]
-Hot water breaks only weak bonds such as hydrogen bonds (which re-form, so the hair straightens when wet and curls again as it dries), but it does not break the disulfide bonds. [B1]
+Hot water breaks only weak bonds such as hydrogen bonds, which re-form as the hair dries, but it does not break the disulfide bonds. [B1]
 Only another chemical treatment, with a reducing chemical, can break the disulfide bonds and change the shape again. [B1]
 Q: [6 marks] ★★★ A collagen polypeptide has 1050 amino acids, with glycine at every third position. (a) Calculate the number of glycine amino acids in one polypeptide. (b) Calculate the total number of peptide bonds in one collagen molecule. (c) The brittle bone disease osteogenesis imperfecta can be caused by a change in a gene that replaces one glycine with an amino acid with a much larger R group. Explain why this makes collagen weaker.
 H: A collagen molecule has three polypeptides. Count the peptide bonds in each.

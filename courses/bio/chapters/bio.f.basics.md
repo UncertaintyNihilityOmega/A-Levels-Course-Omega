@@ -531,7 +531,7 @@ At 0.4 mol dm⁻³ the concentrations are equal, so there is no net movement of 
 
 At higher concentrations the solution outside is more concentrated than the cell contents, so water moves out of the cells and the mass decreases. [B1]
 
-(Also credit: the cylinders are surrounded by a partially permeable membrane; the movement of water is osmosis; the more different the concentrations, the bigger the change.)
+(Also credit: water crosses the partially permeable cell surface membranes of the potato cells; the movement of water is osmosis; the more different the concentrations, the bigger the change.)
 
 A weaker answer says "the potato gets heavier then lighter". It quotes no figures, gives no turning point and does not mention water moving. It scores one mark at most. Osmosis is taught properly in [Movement into and out of cells](#bio.movement).
 :::

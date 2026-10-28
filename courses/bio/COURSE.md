@@ -49,10 +49,11 @@ writes it before any Writer starts.
 ## Format lessons from the gold chapter (each one cost a fix)
 - Worked examples: no `[n marks]` in the `:::eg` title. The page adds up the tokens and shows the total. A Spot the
   error title may end with the marks available, `[3]`; its header then shows what the student scored.
-- Data tables: the independent variable in the left column and one row per value (Cambridge layout). Table headings
-  never wrap, so keep each table's headings under about 28 characters in total (`| time / s | oxygen / cm³ |`); put
-  the long description in the sentence above. Tables work inside `:::eg` and inside a `:::try` question (blank line
-  before and after).
+- Data tables: the independent variable in the left column and one row per value (Cambridge layout). Since
+  28 October 2026 table headings wrap at phone width, so the old 28-character cap is gone; still keep each heading a
+  short quantity and unit (`| time / s | oxygen / cm³ |`, about 30 characters per heading at most) and put the long
+  description in the sentence above. Tables work inside `:::eg` and inside a `:::try` question (blank line before
+  and after).
 - Display maths in a worked example: one step per row (`\begin{aligned} … \\ &= … \end{aligned}`) so it fits phones.
 - `:::plot` formulas are parsed as JavaScript: never a unary minus before `**` (`exp(0-((x-2)/1.3)**2)`, not
   `exp(-((x-2)/1.3)**2)`). Cut curves that run along the x-axis short with `+0*sqrt(a-x)`.
@@ -97,6 +98,14 @@ writes it before any Writer starts.
   recognise the real thing in words ("in a photomicrograph the nucleus stains darkest …").
 - Hand SVGs are **`class="fig small"` by default** (viewBox about 300–350 wide). Full-width figures had 7–8 px text on
   phones; use `fig` (viewBox 520–640) only for wide diagrams that need it, and `fig wide` only for multi-panel ones.
+- **Labelled structure diagrams** (cells, organs, the heart, a nephron, a flower): `fig small` with a viewBox at most
+  400 wide, the drawing in the middle and one label column each side (labels about 11 px on a 375 px phone). Never
+  `fig` 560 for these: the animal and plant cell figures had 8 px labels on phones and were redrawn in REVIEW P2
+  (data/fig_bio.cells.py shows the layout). Split long labels over two lines rather than widen the figure.
+- Figures go into a chapter by Edit (paste the generated `<figure>` line), or by a script in data/ that replaces only
+  `<figure>` lines and leaves every other line unchanged. data/stitch.py keeps a template copy of bio.cells and
+  bio.prokaryotes and refuses to run if a later Edit reached only one copy: make any Edit to those two chapters in
+  both files. Do not start new template copies.
 - Dark mode: a pale fill without an outline vanishes. Give every filled shape an outline (`f1 s-acc sw2`, or a `ln`
   stroke). Never name colours in captions or text.
 - Keep every figure and widget generator script in **data/** (scratch/ is not backed up). Python that computes SVG

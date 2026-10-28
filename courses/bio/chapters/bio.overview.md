@@ -120,10 +120,10 @@ The syllabus has 19 topics. Topics 1–11 are AS; topics 12–19 are the extra A
 | 13 Photosynthesis | [Photosynthesis](#bio.photosynthesis) |
 | 13 Photosynthesis | [Limiting factors in photosynthesis](#bio.limiting) |
 | 14 Homeostasis | [Homeostasis and the kidney](#bio.homeostasis) |
-| 14 Homeostasis | [Blood glucose, cell signalling and biosensors](#bio.glucose) |
-| 14 and 15 Homeostasis, coordination | [Control and coordination in plants](#bio.hormones) |
+| 14 and 15 Homeostasis, coordination | [Blood glucose, cell signalling and biosensors](#bio.glucose) |
 | 15 Control and coordination | [Neurones and action potentials](#bio.nerves) |
 | 15 Control and coordination | [Synapses and muscle contraction](#bio.synapses) |
+| 14 and 15 Homeostasis, coordination | [Control and coordination in plants](#bio.hormones) |
 | 16 Inheritance | [Meiosis and genetic variation](#bio.meiosis) |
 | 16 Inheritance | [Monohybrid inheritance](#bio.inheritance) |
 | 16 Inheritance | [Dihybrid crosses and the chi-squared test](#bio.dihybrid) |

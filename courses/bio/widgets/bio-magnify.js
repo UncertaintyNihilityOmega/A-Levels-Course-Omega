@@ -268,8 +268,11 @@
             ctx.beginPath(); ctx.moveTo(X(u), yG + 2); ctx.lineTo(X(u), yS); ctx.stroke();
           });
           ctx.restore();
-          ctx.fillStyle = C.red; ctx.textAlign = 'right';
-          ctx.fillText('10 divisions = ' + (10 * p) + ' units', X(10 * p) - 6, 144);
+          // REVIEW P2: below the cell label and to the right of the guide, so it never overlaps or leaves the canvas
+          const gl = '10 divisions = ' + (10 * p) + ' units';
+          const gx = Math.min(X(10 * p) + 6, w - padR - mw(gl));
+          ctx.fillStyle = C.red; ctx.textAlign = 'left';
+          ctx.fillText(gl, Math.max(padL, gx), 164);
         }
       }
     });
@@ -283,7 +286,7 @@
 
     const rd = W.readout([['obj', 'Objective'], ['state', 'Stage scale'], ['cal', 'One eyepiece unit'], ['cell', 'Length of the cell']]);
     body.appendChild(rd.el);
-    body.appendChild(E('div', { class: 'w-note', text: 'Change the objective and watch the calibration change: you must recalibrate for every objective. This is a simplified model of one microscope.' }));
+    body.appendChild(E('div', { class: 'w-note', text: 'Change the objective and watch the calibration change: you must recalibrate for every objective. This is a simplified model of one microscope: a real microscope gives its own values (such as 2.4 µm per unit), so always calibrate the one you use.' }));
 
     W.drag(c.wrap, {
       hit: (x, y) => (y > 130 ? { sx: x, s0: S.off } : null),
