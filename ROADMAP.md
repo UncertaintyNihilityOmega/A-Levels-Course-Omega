@@ -3,8 +3,8 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (hourly, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
-- Current course: **Biology** (`bio`, queue item 2). P1–P5, P7 written, P1–P3 reviewed (0 open items). Running:
-  REVIEW P4, P5, P7; Writers P6, P8. Next: WRITE P9; REVIEW P6 with the next two.
+- Current course: **Biology** (`bio`, queue item 2). P1–P7 written, P1–P3 reviewed (0 open items). Running:
+  REVIEW P4, P5, P7; Writers P8, P9. Next: REVIEW P6, P8, P9.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
