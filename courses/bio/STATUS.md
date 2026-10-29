@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-29 · REVIEW P4, P5, P7 · 0 open items; reviewer fixed: bio-enzyme Km label on phones and pH stage wording; plant-cell leaders, Visking colours (movement); transpiration step numbers, potometer redraw, plot cut, exam wording (planttransport); ringing label, quiz reusing 1.26 m/h, glycolysis term, stretch rewrite (translocation); reused example data/contexts in foodtests and enzymes2; COURSE.md reuse and figure-meaning rules; REQUESTS checkbox
+Last: 2026-10-29 · WRITE P10 · bio.immunity 5.8k words, bio.antibodies 6.1k words; no widgets; figures via data/fig_bio.immunity.py, fig_bio.antibodies.py, figlib_p10.py, place_figs_p10.py; check and phone pass; plots are invented data (labelled); phagocytosis and antibody figures drawn as small stacked figs per COURSE.md; reuse grep done (quiz questions replaced to avoid HIV and influenza reuse)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -10,12 +10,12 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P3: reviewed 2026-10-28
 - P4: reviewed 2026-10-29
 - P5: reviewed 2026-10-29
-- P6: written 2026-10-28
+- P6: reviewed 2026-10-29
 - P7: reviewed 2026-10-29
-- P8: written 2026-10-29
-- P9: written 2026-10-29
-- P10: open
-- P11: open
+- P8: reviewed 2026-10-29
+- P9: reviewed 2026-10-29
+- P10: written 2026-10-29
+- P11: writing 2026-10-29
 - P12: open
 - P13: open
 - P14: open
