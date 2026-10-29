@@ -3,9 +3,9 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
-- Current course: **Biology** (`bio`, queue item 2). P1–P14 written, P1–P12 reviewed (2 open items in REVIEW.md:
-  bio.photosynthesis, bio.limiting). Running (13:30 run, preview server allowed by the user for this run): FIX + WRITE P15, WRITE P16.
-  Next: REVIEW P13, P14, P15 once P15 is written; Writers P17, P18.
+- Current course: **Biology** (`bio`, queue item 2). P1–P16 written, P1–P12 reviewed and fixed.
+  Running (13:30 run, preview server allowed by the user for this run): REVIEW P13, P14, P15; WRITE P17.
+  Next: Writer P18 when the window has room; then FIX + WRITE P19.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
