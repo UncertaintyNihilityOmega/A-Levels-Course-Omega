@@ -318,7 +318,7 @@ Try it: set the two distances and the radius of the capillary and watch the volu
 
 **Step 3: RQ.**
 
-\[\begin{aligned} \mathrm{RQ} &= \frac{V_{\mathrm{CO_2}}}{V_{\mathrm{O_2}}} \\ &= \frac{30}{42} \\ &= 0.71 \end{aligned}\] [A1]
+\[\begin{aligned} \mathrm{RQ} &= \frac{V_{\mathrm{CO_2}}}{V_{\mathrm{O_2}}} \\ &= \frac{\pi r^2 (d_1 - d_2)}{\pi r^2 d_1} \\ &= \frac{42 - 12}{42} \\ &= 0.71 \end{aligned}\] [A1]
 
 **Step 4: the substrate.** An RQ of about 0.7 shows that the seeds were respiring mainly lipid. [B1]
 

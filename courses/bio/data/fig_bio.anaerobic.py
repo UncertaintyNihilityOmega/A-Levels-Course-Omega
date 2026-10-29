@@ -25,42 +25,50 @@ def box(f, x, y, w, h, lines, cls=BOX, bold=False):
         f.text(x + w / 2, round(yy, 1), s, "tl tb" if bold else "tl", "middle")
 
 
-# ---------- 1. the two pathways ----------
+# ---------- 1. the two pathways (stacked, fig small) ----------
 f = Fig("pathways")
-f.line([(330, 8), (330, 340)], "ln-m thin dash", check=False)
-f.text(10, 18, "Lactate fermentation (mammals)", "tl tb")
-f.text(350, 18, "Ethanol fermentation (yeast)", "tl tb")
-for cx in (190, 500):
-    box(f, cx - 55, 34, 110, 26, ["glucose (6C)"])
-    f.line([(cx, 60), (cx, 82)], ARR, "ah")
-    box(f, cx - 85, 84, 170, 42, ["Glycolysis", "net 2 ATP"], BOX, True)
-    f.line([(cx, 126), (cx, 154)], ARR, "ah")
-    box(f, cx - 55, 156, 110, 28, ["pyruvate (3C)"])
-# lactate branch
-f.line([(190, 184), (190, 248)], ARR, "ah")
-f.text(202, 204, "reduced NAD → NAD", "tl")
-f.text(202, 218, "lactate", "tl")
-f.text(202, 232, "dehydrogenase", "tl")
-box(f, 135, 250, 110, 28, ["lactate (3C)"])
-f.line([(182, 216), (40, 216), (40, 105), (101, 105)], "c3 sw2", "ah")
-f.text(48, 170, "NAD", "tl")
-f.text(48, 184, "regenerated", "tl")
-f.text(190, 304, "no CO₂ is released", "tl", "middle")
-# ethanol branch
-f.line([(500, 184), (500, 222)], ARR, "ah")
-f.text(512, 208, "CO₂ released", "tl")
-box(f, 445, 224, 110, 28, ["ethanal (2C)"])
-f.line([(500, 252), (500, 302)], ARR, "ah")
-f.text(512, 270, "reduced NAD → NAD", "tl")
-f.text(512, 286, "alcohol dehydrogenase", "tl")
-box(f, 445, 304, 110, 28, ["ethanol (2C)"])
-f.line([(494, 270), (350, 270), (350, 105), (411, 105)], "c3 sw2", "ah")
-f.text(358, 170, "NAD", "tl")
-f.text(358, 184, "regenerated", "tl")
-done(f, (670, 344),
-     "Two fermentation pathways side by side. Both begin with glycolysis, which makes a net 2 ATP and reduced NAD and gives pyruvate with three carbons. On the left, in mammals, lactate dehydrogenase uses reduced NAD to reduce pyruvate to lactate with three carbons, regenerating NAD, and no carbon dioxide is released. On the right, in yeast, pyruvate loses carbon dioxide to give ethanal with two carbons, and alcohol dehydrogenase uses reduced NAD to reduce ethanal to ethanol, regenerating NAD. In both, a return arrow takes the regenerated NAD back to glycolysis.",
-     "Lactate fermentation and ethanol fermentation. In both, reducing a molecule made from pyruvate regenerates NAD, so glycolysis can continue and make its net 2 ATP without oxygen.",
-     "fig")
+CX = 200
+
+
+def top(oy, title):
+    f.text(10, oy + 16, title, "tl tb")
+    box(f, CX - 55, oy + 28, 110, 24, ["glucose (6C)"])
+    f.line([(CX, oy + 52), (CX, oy + 64)], ARR, "ah")
+    box(f, CX - 85, oy + 66, 170, 42, ["Glycolysis", "net 2 ATP"], BOX, True)
+    f.line([(CX, oy + 108), (CX, oy + 120)], ARR, "ah")
+    box(f, CX - 55, oy + 122, 110, 24, ["pyruvate (3C)"])
+
+
+def loop(oy, ystart):
+    f.line([(CX - 6, oy + ystart), (24, oy + ystart), (24, oy + 87), (CX - 89, oy + 87)], "c3 sw2", "ah")
+    f.text(32, oy + 114, "NAD", "tl")
+    f.text(32, oy + 128, "regenerated", "tl")
+
+
+# lactate fermentation
+top(0, "Lactate fermentation (mammals)")
+f.line([(CX, 146), (CX, 208)], ARR, "ah")
+f.text(CX + 12, 168, "reduced NAD → NAD", "tl")
+f.text(CX + 12, 182, "lactate", "tl")
+f.text(CX + 12, 196, "dehydrogenase", "tl")
+box(f, CX - 55, 210, 110, 24, ["lactate (3C)"])
+loop(0, 164)
+f.text(CX, 258, "no CO₂ is released", "tl", "middle")
+# ethanol fermentation
+oy = 280
+top(oy, "Ethanol fermentation (yeast)")
+f.line([(CX, oy + 146), (CX, oy + 180)], ARR, "ah")
+f.text(CX + 12, oy + 167, "CO₂ released", "tl")
+box(f, CX - 55, oy + 182, 110, 24, ["ethanal (2C)"])
+f.line([(CX, oy + 206), (CX, oy + 270)], ARR, "ah")
+f.text(CX + 12, oy + 228, "reduced NAD → NAD", "tl")
+f.text(CX + 12, oy + 242, "alcohol", "tl")
+f.text(CX + 12, oy + 256, "dehydrogenase", "tl")
+box(f, CX - 55, oy + 272, 110, 24, ["ethanol (2C)"])
+loop(oy, 236)
+done(f, (340, oy + 308),
+     "Two fermentation pathways, one above the other. Both begin with glucose, which glycolysis converts to pyruvate with three carbons, making a net 2 ATP and reduced NAD. Top, in mammals: lactate dehydrogenase uses reduced NAD to reduce pyruvate to lactate with three carbons, regenerating NAD, and no carbon dioxide is released. Bottom, in yeast: pyruvate loses carbon dioxide to give ethanal with two carbons, and alcohol dehydrogenase uses reduced NAD to reduce ethanal to ethanol, regenerating NAD. In both, a return arrow takes the regenerated NAD back to glycolysis.",
+     "Lactate fermentation and ethanol fermentation. In both, reducing a molecule made from pyruvate regenerates NAD, so glycolysis can continue and make its net 2 ATP without oxygen.")
 
 # ---------- 2. rice ----------
 f = Fig("rice")
@@ -84,7 +92,8 @@ f.leader((204, 100), (184, 102))
 f.text(206, 176, "aerenchyma:", "tl")
 f.text(206, 190, "air spaces", "tl")
 f.leader((202, 172), (169, 171))
-f.text(322, 132, "water level", "tl", "end")
+f.text(322, 122, "water level", "tl", "end")
+f.leader((312, 127), (312, 140))
 f.text(18, 196, "flood", "tl")
 f.text(18, 212, "water", "tl")
 f.text(18, 272, "soil", "tl")
