@@ -4,9 +4,11 @@
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
 - Current course: **Biology** (`bio`, queue item 2). P1–P17 written, P1–P15 reviewed (0 open items).
-  P1–P20 written, P1–P18 reviewed (3 open FIX items: key/exam boxes in bio.conservation, bio.genetech, bio.genetech2).
-  Running (19:55): FIX + WRITE P21 (5-hour 67%, weekly 87%; preview server 5104). P22 held: no 5-hour room.
-  Next: REVIEW P19, P20, P21 (after P21, or after the 23:30 reset). Reviewer: P20 Spearman critical values (n = 9, 12) not in
+  P1–P21 written, P1–P18 reviewed (0 open items). Nothing running: 5-hour 76%, waiting for the reset at 23:30
+  (weekly 88%, gate 95%).
+  Next: REVIEW P19, P20, P21 and WRITE P22. Reviewer: P20 Spearman critical values (n = 9, 12) not in FACTS.md;
+  bio.stats distribution plots not looked at after the last trim; P21 command-word meanings written from memory
+  (FACTS.md lists only the words); bio.exam.p35 links a gel lab (loose fit). Reviewer: P20 Spearman critical values (n = 9, 12) not in
   FACTS.md; bio.stats distribution plots not looked at after the last trim. Reviewer: P17 molecular-clock plot x label crowds the ticks.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.

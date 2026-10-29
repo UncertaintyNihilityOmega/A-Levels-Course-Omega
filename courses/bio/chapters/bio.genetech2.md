@@ -136,6 +136,12 @@ A weaker answer says "one in two" because it counts the two Ff boxes out of four
 For the advantages of screening you can give a list of benefits with a reason each (early treatment, informed choice about children, preventive treatment). When the command word is "discuss" you must also give the **disadvantages** (anxiety, insurance, privacy) and weigh them. See the practice at the end of this chapter.
 :::
 
+:::key Genetic screening: what a result does and does not mean
+- **Positive** result: the person has the tested allele. For a dominant allele with full penetrance (Huntington's disease) it means the disease will develop; for BRCA1 or BRCA2 it means a **much higher risk**, not certainty.
+- A positive result does **not** say when symptoms start, how severe they will be, or that treatment is possible. A **negative** result removes only the risk from the alleles tested.
+- Benefits: early treatment, preventive action and informed choices about children. Costs: anxiety, possible insurance or employment discrimination, privacy of the data, and the pressure on relatives who may share the allele.
+:::
+
 ## Gene therapy
 
 :::def Gene therapy
@@ -161,6 +167,13 @@ Gene therapy in which the gene is added to gametes, zygotes or early embryos, so
 :::
 
 Medical gene therapy so far is **somatic**.
+
+:::key Gene therapy in one box
+- **Somatic:** gene added to body cells; affects only the patient; not inherited. **Germ-line:** gene added to gametes or embryos; every cell and all later generations carry it; not allowed in many countries.
+- **Vector:** a modified virus (efficient entry, but an immune response is possible) or a liposome (a phospholipid sphere that fuses with the cell surface membrane).
+- **Ex vivo:** cells removed, treated in the laboratory and returned (blood cells, for example **SCID** from lack of ADA). **In vivo:** vector put into the tissue (the eye).
+- It adds a working copy; the faulty allele stays in every other cell, so the effect may need repeating.
+:::
 
 ### Gene therapy for SCID
 

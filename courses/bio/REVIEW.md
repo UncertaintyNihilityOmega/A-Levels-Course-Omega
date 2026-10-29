@@ -114,6 +114,6 @@ Fixed by the reviewer:
 - [x] bio-hardy: p² showed 0.96 for 0.9604, so p² + 2pq + q² visibly did not add to 1 (4 significant figures now); drift tab drew two of the five lines in near-identical greens (theme series 4 skipped)
 - [x] bio-diversity: on phones the Simpson species table was wider than the card, hiding the site-2 counts and the remove buttons (inputs now width 100% with min/max widths)
 Open (Writer):
-- [ ] bio.genetech: the chapter has no `:::exam` box (COURSE.md: every chapter teaches describe ≠ explain in one); add one after the insulin example: "Explain the role of each enzyme" = name the enzyme, what it does, and why it is needed at that step, with the weak/strong pair from that example
-- [ ] bio.conservation: the chapter has no `:::key` box; add one after the extinction causes (habitat loss and fragmentation, climate change, overexploitation, invasive species, pollution, each with its effect) and one short in situ v ex situ summary
-- [ ] bio.genetech2: the chapter has no `:::key` box; add one for gene therapy (somatic v germ-line, vectors, ex vivo for SCID) and one for genetic screening (what a positive result does and does not mean)
+- [x] bio.genetech: the chapter has no `:::exam` box (COURSE.md: every chapter teaches describe ≠ explain in one); add one after the insulin example: "Explain the role of each enzyme" = name the enzyme, what it does, and why it is needed at that step, with the weak/strong pair from that example
+- [x] bio.conservation: the chapter has no `:::key` box; add one after the extinction causes (habitat loss and fragmentation, climate change, overexploitation, invasive species, pollution, each with its effect) and one short in situ v ex situ summary
+- [x] bio.genetech2: the chapter has no `:::key` box; add one for gene therapy (somatic v germ-line, vectors, ex vivo for SCID) and one for genetic screening (what a positive result does and does not mean)

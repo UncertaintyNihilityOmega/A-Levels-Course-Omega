@@ -180,6 +180,10 @@ The plasmid, as a vector, carries the gene into the bacterium, which copies the 
 A weaker answer says "enzymes cut the gene and put it in the bacteria". It does not name any enzyme, does not mention sticky ends or that ligase makes bonds, and scores one or two marks.
 :::
 
+:::exam "Describe" is not "explain": the role of each enzyme
+"Explain the role of each enzyme" needs three things for every enzyme: **name** it, say **what it does**, and say **why that step is needed**. "Describe" would stop at what it does. In the insulin answer, "reverse transcriptase makes cDNA from mRNA" is only a description. The explanation adds the reason: the gene has no introns, so a bacterium (which cannot splice) can express it. Likewise "DNA ligase joins the gene to the plasmid" becomes an explanation with "forms phosphodiester bonds, so the gene is permanently part of the plasmid and is copied with it". A weak answer gives "enzymes cut and join DNA"; a strong answer names the enzyme, the bond or product, and the purpose, one mark each.
+:::
+
 ## Step 3: getting the plasmid into bacteria
 
 The recombinant plasmids are mixed with bacteria. The bacteria are treated (for example with calcium ions and a short heat shock) so that their cell surface membranes and walls become permeable enough for the plasmids to enter. This is called **transformation**. It works for only a small proportion of the bacteria. Some of the plasmids also close up again without the gene. So you end up with a mixture:

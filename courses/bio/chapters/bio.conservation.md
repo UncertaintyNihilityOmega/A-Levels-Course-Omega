@@ -129,6 +129,15 @@ Every cause above ends in the same place: a small population. Small populations 
 
 A small population is therefore less able to reproduce and survive, which makes it smaller still. The loop of ever-fewer individuals and ever-less variation is sometimes called the extinction vortex.
 
+:::key Causes of extinction: cause, effect, result
+1. **Habitat loss and fragmentation:** less living space and smaller, isolated patches, so smaller populations, no gene flow and more edge; the species cannot find mates or enough food.
+2. **Climate change:** the area with suitable conditions moves faster than the species can migrate or evolve, and life-cycle timings (breeding and food supply) fall out of step.
+3. **Overexploitation (hunting):** adults are removed faster than they are replaced, which matters most for large, slow-breeding species; the population falls below a viable size.
+4. **Invasive (introduced) species:** compete for food and space, prey on natives or bring disease, so native numbers fall.
+5. **Pollution:** poisons individuals or degrades the habitat, so fewer survive and reproduce.
+6. In every case the final stage is a small population: lost alleles, inbreeding, and one chance event that kills the rest.
+:::
+
 ## Why maintain biodiversity?
 
 Conservation takes money and land, so scientists must give reasons. The reasons fall into five groups and an exam answer names the group and gives an example.
@@ -241,6 +250,12 @@ Limitations: the stored material is only useful if a female of the species (or a
 | methods | national parks, marine parks, wildlife corridors | captive breeding, living collections, stored seeds, frozen gametes and embryos |
 | advantages | whole community protected; natural behaviour and evolution continue; large numbers | protects species whose habitat is lost or very dangerous; breeding can be managed; supports research and education |
 | disadvantages | hard to police; vulnerable to climate change, fire, disease and poaching | small gene pools; loss of natural behaviour; costly per species; the cause of the decline is not solved |
+
+:::key In situ v ex situ in one breath
+- **In situ** protects the species **where it lives**, so the whole community and natural selection carry on; it is best for large numbers but is hard to protect from poaching, fire and climate change.
+- **Ex situ** protects it **somewhere else** (zoo, botanic garden, seed bank, frozen zoo); it is a safety net for species whose habitat is lost, but the gene pool is small and the cause of the decline is not removed.
+- The best plan uses both: ex situ stock for reintroduction once the habitat is safe.
+:::
 
 :::eg Discuss the role of zoos in the conservation of endangered mammals.
 A discussion needs points for **and** points against. Any six creditworthy points can score the six marks.

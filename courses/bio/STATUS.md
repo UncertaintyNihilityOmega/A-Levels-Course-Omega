@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-29 · WRITE P20 · bio.stats 7.4k, bio.planning 7.0k, bio.evaluation 5.6k words; no new widgets (bio.stats embeds bio-chisq and bio-ttest, which render with the worked-example data); figures from data/fig_p20.py (error bars, serial dilution, drug bars, lichen scatter) looked at on phone shots; reviewer: check the two :::plot distributions in bio.stats and that Spearman critical values (0.700 n=9, 0.648 n=10, 0.591 n=12, 0.738 n=8) are given in the questions as the exam does
+Last: 2026-10-29 · WRITE P21 · bio.exam.p1 4.1k, bio.exam.p24 4.9k, bio.exam.p35 3.4k words; no widgets; cell figure (data/fig_bio.exam.p1.py) and two :::plot graphs looked at on phone shots. Reviewer: command-word meanings are the syllabus p50 wording written from memory (FACTS only lists the words); p1 practice Q5 reuses the worked-example cell drawing; p35 beetroot plan and catalase table are original; check scripts parse the chapter text for mark totals
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -25,7 +25,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P18: reviewed 2026-10-29
 - P19: written 2026-10-29
 - P20: written 2026-10-29
-- P21: open
+- P21: written 2026-10-29
 - P22: open
 - P23: open
 - P24: open
