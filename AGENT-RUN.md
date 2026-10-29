@@ -13,8 +13,9 @@ packages as the classic method, so a course can switch methods at any point.
 Runs are driven by an app **scheduled task**, so every step starts in a fresh session with an empty context and no
 chat has to stay open. Set up once (ROADMAP queue item 1); the user then only keeps the desktop app open and the PC
 awake (Windows: Sleep "Never" when plugged in).
-- Task: `mcp__scheduled-tasks__create_scheduled_task`, taskId `zta-agent-run`, hourly off the hour
-  (`23 * * * *`), saved in Auto permissions. Its prompt is self-contained: work in the project root, read
+- Task: `mcp__scheduled-tasks__create_scheduled_task`, taskId `zta-agent-run`, every 2 hours off the
+  hour (`23 */2 * * *`; each start that stops at the lock costs about 1% of the 5-hour window), saved in Auto
+  permissions. Its prompt is self-contained: work in the project root, read
   ORGANIZER.md, ROADMAP.md and this file, then follow "Each run" below.
 - Lock: `.run/run.lock` (`.run/` is git-ignored; run state stays out of `.claude/`, where every write asks for
   permission even in Auto mode) holds `{"session": "<time started>", "beat": "<last update>", "id": "<session id>"}`
@@ -40,7 +41,7 @@ awake (Windows: Sleep "Never" when plugged in).
 - Writer (WRITE, FIX + WRITE, resume): only if the 5-hour window is at 70% or less and the weekly limit at 85% or less.
 - Specialist (REVIEW, LEAD), Reader, FIX only: 5-hour at 75% or less, weekly at 85% or less.
 - Otherwise start nothing: let running agents finish, check and commit them, write "waiting for the reset at <time>"
-  in "Now", delete the lock and stop. A later hourly run starts again once the gate allows it.
+  in "Now", delete the lock and stop. A later scheduled run starts again once the gate allows it.
 - Log every agent in `.run/usage.log`, one line: date, step, model, 5-hour and weekly % at launch and at report, and
   the other agents running meanwhile. Once 6 agents are logged, set the thresholds here from the numbers (a launch
   must leave room for that step's typical share of the window).

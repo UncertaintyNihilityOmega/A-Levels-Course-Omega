@@ -35,7 +35,7 @@ There is no CLAUDE.md at the root: course sessions would load it. Start every Or
 ## Building a course
 
 - **Classic method** (when the user wants to drive a course by hand): one chat per step in `courses/<c>` (PROMPTS.md).
-- **Agent method** (the user's default for the roadmap): an hourly app scheduled task starts a fresh Organizer
+- **Agent method** (the user's default for the roadmap): an app scheduled task (every 2 hours) starts a fresh Organizer
   session that runs the next steps as agents (AGENT-RUN.md "Automatic runs").
 - Cycle: LEAD → Writers claim packages → REVIEW every 3 packages → FIX → READER batches → FIX → REVIEW FINAL.
 

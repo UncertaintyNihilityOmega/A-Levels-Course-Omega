@@ -1,11 +1,10 @@
 # ROADMAP: build queue and current state
 
 ## Now
-- Automatic runs on: app scheduled task `zta-agent-run` (hourly, Auto mode; prompt in
+- Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
-- Current course: **Biology** (`bio`, queue item 2). P1–P10 written, P1–P9 reviewed (0 open items).
-  Running (run of 2026-10-29 08:25): resume Writers P11 (chapters on disk, finishing widget and checks) and P12 (from
-  the start). Next: REVIEW P10, P11, P12; Writers P13, P14. bio-preview start was declined earlier: agents use `shot`.
+- Current course: **Biology** (`bio`, queue item 2). P1–P11 written, P1–P9 reviewed (0 open items).
+  Running (run of 2026-10-29 08:25): Writers P12, P13. Next: REVIEW P10, P11, P12 (in the bio-preview pane, port 5104); Writer P14.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
@@ -17,11 +16,11 @@
 - Per-course numbers: `node engine/status.js`.
 
 ## Rules
-- Work down the queue with automatic agent runs (AGENT-RUN.md "Automatic runs"): an hourly scheduled task starts a
+- Work down the queue with automatic agent runs (AGENT-RUN.md "Automatic runs"): a scheduled task (every 2 hours) starts a
   fresh Organizer session; 1 Opus Specialist + up to 2 Sonnet Writers, one course at a time, guard on that course.
 - After each step: check, commit, push, update "Now". Tick a line when its item is done.
 - A course ends with: REVIEW FINAL, the assembly session (ORGANIZER.md), guard off, preview stopped.
-- A run stopped by a usage limit leaves a stale lock; the next hourly session checkpoints and continues.
+- A run stopped by a usage limit leaves a stale lock; the next scheduled session checkpoints and continues.
 - From 2027 `status.js` warns about syllabuses in their last exam year (math, phys, chem and bio end in 2027): plan
   update passes for the new syllabuses then.
 
