@@ -1,6 +1,6 @@
 /* widgets/bio-sarcomere.js: one sarcomere drawn to scale. Used in bio.synapses.
    Model filament lengths (stated on screen): thin (actin) filaments 1.0 um from each Z line; thick (myosin) filaments 1.6 um, centred on the
-   M line. So A band = 1.6 um, I band = L - 1.6, H zone = max(0, L - 2.0) and the overlap of thin and thick filaments (both ends) = 3.6 - L.
+   M line. So A band = 1.6 um, I band = L - 1.6, H zone = max(0, L - 2.0) and the overlap of thin and thick filaments (both ends) = 3.6 - L (at most 1.6, the A band, when the thin filaments meet or overlap below 2.0 um).
    Rules: without calcium ions tropomyosin blocks the binding sites, so the sarcomere cannot shorten below its relaxed length (data-len);
    with calcium ions and ATP it can shorten or relax freely; with calcium ions but no ATP the heads stay attached (rigor): length is frozen.
    Attributes: data-len = relaxed length in um (default 2.5, 2.2 to 3.0); data-start (starting length), data-ca="1", data-atp="0" set the starting state. Pure functions exported for data/test_bio-sarcomere.js. */
@@ -16,7 +16,7 @@
       A: THICK,
       I: Math.max(0, L - THICK),
       H: Math.max(0, L - 2 * THIN),
-      overlap: 2 * Math.max(0, Math.min(THIN, L / 2 + THICK / 2) - Math.max(0, L / 2 - THICK / 2))
+      overlap: Math.min(THICK, 2 * Math.max(0, Math.min(THIN, L / 2 + THICK / 2) - Math.max(0, L / 2 - THICK / 2)))
     };
   }
   // effective length for the slider value L, the relaxed length L0, calcium and ATP; hold = length frozen in rigor

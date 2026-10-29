@@ -223,7 +223,7 @@
         : t === 'di' ? ['Gene 1 dominant', 'Gene 1 recessive', 'Gene 2 dominant', 'Gene 2 recessive']
         : t === 'codom' ? ['First homozygote is', 'Heterozygote is', 'Second homozygote is'] : [];
       names.forEach(function (nm, i) {
-        const inp = W.h('input', { type: 'text', value: lab[i], maxlength: '24', 'aria-label': nm, style: { width: '12em', maxWidth: '100%' } });
+        const inp = W.h('input', { type: 'text', value: lab[i], maxlength: '24', 'aria-label': nm, style: { width: '100%', maxWidth: '12em', minWidth: '0', boxSizing: 'border-box' } });
         inp.oninput = function () { lab[i] = inp.value; update(); };
         labelRow.appendChild(ctl(nm, inp));
       });
@@ -259,7 +259,7 @@
       const names = t === 'xlinked' ? ['Mother', 'Father'] : ['Parent 1', 'Parent 2'];
       [[p1, names[0]], [p2, names[1]]].forEach(function (pp) {
         const G = gametes(pp[0]);
-        const line = W.h('div', {}, W.h('strong', { text: pp[1] + ' (' + plainGeno(pp[0], sep) + ') makes gametes: ' }));
+        const line = W.h('div', {}, W.h('strong', {}, document.createTextNode(pp[1] + ' ('), genoNodes(pp[0], sep), document.createTextNode(') makes gametes: ')));
         G.list.forEach(function (g) {
           line.appendChild(circle(g.alleles, sep));
           line.appendChild(document.createTextNode(' ' + frac(g.w, G.total) + '   '));

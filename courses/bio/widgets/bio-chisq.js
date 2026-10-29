@@ -77,7 +77,7 @@
       W.h('label', { class: 'w-ctl', style: { flex: '2 1 11em', minWidth: 0 } }, W.h('span', { class: 'w-lab', text: 'Observed counts' }), obsIn),
       W.h('label', { class: 'w-ctl', style: { flex: '1 1 8em', minWidth: 0 } }, W.h('span', { class: 'w-lab', text: 'Expected ratio' }), ratIn)));
     const err = W.h('div', { class: 'w-err', role: 'status', 'aria-live': 'polite' });
-    const out = W.h('div');
+    const out = W.h('div', { style: { overflowX: 'auto', maxWidth: '100%' } });
     const verdict = W.h('div', { class: 'w-note', 'aria-live': 'polite' });
     body.appendChild(err);
     body.appendChild(out);
@@ -93,7 +93,7 @@
         if (!(w > 0) || !(h > 0) || w < 160 || h < 120) return;
         if (!last) {
           ctx.save(); ctx.font = '13px ' + (c.font || 'sans-serif'); ctx.fillStyle = c.ink2; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-          ctx.fillText('Fix the numbers above to see the bars.', w / 2, h / 2); ctx.restore();
+          ctx.fillText(w < 300 ? 'Fix the numbers above.' : 'Fix the numbers above to see the bars.', w / 2, h / 2); ctx.restore();
           return;
         }
         const n = last.obs.length, L = 38, R = 8, T = 18, B = 34;
@@ -150,7 +150,7 @@
       o.values.forEach(function (ov, i) {
         const d = ov - res.exp[i];
         tbody.appendChild(W.h('tr', {}, [
-          W.h('td', { style: { padding: '3px 5px', textAlign: 'left', fontSize: '12px', overflowWrap: 'anywhere' }, text: st.names[i] || ('class ' + (i + 1)) }),
+          W.h('td', { style: { padding: '3px 5px', textAlign: 'left', fontSize: '12px', overflowWrap: 'break-word', hyphens: 'auto' }, text: st.names[i] || ('class ' + (i + 1)) }),
           cell(num(ov)), cell(num(res.exp[i])), cell(num(d)), cell(num(d * d)), cell(res.terms[i].toFixed(3))]));
       });
       tbody.appendChild(W.h('tr', {}, [

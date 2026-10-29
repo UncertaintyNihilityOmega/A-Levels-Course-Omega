@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-29 · WRITE P15 · bio.meiosis 6.4k words (7 eg, 22 try, 9 quiz, 40 marks), bio.inheritance 6.0k (8 eg, 23 try, 8 quiz, 50 marks), bio.dihybrid 6.1k (8 eg, 23 try, 9 quiz, 54 marks); 10 figures (7 meiosis incl. 4 stage figures, 2 pedigrees, 1 linked v unlinked); widgets bio-punnett (mono, di, X-linked, codominant; genotype or phenotype square; Node-tested in data/test_bio-punnett.js) and bio-chisq (working table, bar chart, exam-wording verdict; data/test_bio-chisq.js) probed clean light/dark/phone/bad attributes. Reviewer: please click through both widgets and the stage figures. Notes: widget tab shows X^H style via sup; linkage and chi-squared examples use invented data (stated in the text); meiosis Stretch Q1 (Down syndrome) and Q2 (mule) go beyond the plain outcomes; bio.inheritance spot-the-error and quiz avoid the examples' contexts.
+Last: 2026-10-29 · REVIEW P13, P14, P15 · 8 items, all fixed by the reviewer: inheritance pedigree rule 4 (affected father and son) corrected; nerves action potential figure renumbered to match key table and widget, frequency plot axis now above threshold; dihybrid quiz epistasis explanation; hormones gibberellin label; bio-punnett overlapping name boxes and superscript gamete line; bio-chisq phone word breaks and cut-off message; bio-sarcomere overlap capped at the A band. Writers' notes confirmed; COURSE.md rule on matching stage numbers and widget input widths
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -17,9 +17,9 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P10: reviewed 2026-10-29
 - P11: reviewed 2026-10-29
 - P12: reviewed 2026-10-29
-- P13: written 2026-10-29
-- P14: written 2026-10-29
-- P15: written 2026-10-29
+- P13: reviewed 2026-10-29
+- P14: reviewed 2026-10-29
+- P15: reviewed 2026-10-29
 - P16: written 2026-10-29
 - P17: writing 2026-10-29
 - P18: open

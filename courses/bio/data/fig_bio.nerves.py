@@ -197,15 +197,15 @@ f.text(PX1, ypx(-50) - 7, "threshold, about −50 mV", "tl", "end")
 f.text(PX1, ypx(-70) - 9, "resting, −70 mV", "tl", "end")
 curve = [(round(xpx(t / 40), 1), round(ypx(V(t / 40)), 1)) for t in range(0, 201)]
 f.line(curve, "c1 sw2")
-for (lab, x, yy) in (("1", 66, 191), ("2", 82, ypx(-20)), ("3", 126, ypx(42)), ("4", 146, ypx(-5)), ("5", 218, 238)):
+for (lab, x, yy) in (("1", 66, 191), ("2", 82, ypx(-20)), ("3", 146, ypx(-5)), ("4", 218, 238), ("5", 300, 218)):
     f.text(x, yy, lab, "tl tb", "middle")
 LEG = ["1  resting potential, channels closed", "2  depolarisation: Na⁺ channels open, Na⁺ in",
-       "3  peak: Na⁺ channels close", "4  repolarisation: K⁺ channels open, K⁺ out",
-       "5  hyperpolarisation, then back to rest"]
+       "3  repolarisation: Na⁺ close, K⁺ open, K⁺ out", "4  hyperpolarisation: K⁺ channels slow to close",
+       "5  recovery: back to the resting potential"]
 for i, s in enumerate(LEG):
     f.text(8, PY1 + 66 + i * 16, s, "tl")
 figs.append(f.svg((340, PY1 + 66 + 4 * 16 + 14),
-    "Graph of membrane potential in millivolts against time in milliseconds for one action potential. The potential is at the resting potential of minus 70 millivolts, rises past the threshold of about minus 50 millivolts to a peak of about plus 35 millivolts at 1 millisecond, falls below resting to about minus 80 millivolts at 3 milliseconds and returns to minus 70 millivolts by 5 milliseconds. Numbers 1 to 5 mark the phases: resting, depolarisation, peak, repolarisation and hyperpolarisation.",
+    "Graph of membrane potential in millivolts against time in milliseconds for one action potential. The potential is at the resting potential of minus 70 millivolts, rises past the threshold of about minus 50 millivolts to a peak of about plus 35 millivolts at 1 millisecond, falls below resting to about minus 80 millivolts at 3 milliseconds and returns to minus 70 millivolts by 5 milliseconds. Numbers 1 to 5 mark the phases: resting, depolarisation, repolarisation, hyperpolarisation and recovery, as in the table and the widget.",
     "One action potential (a model trace). Numbers 1 to 5 match the list under the graph."))
 problems.extend(f.check())
 

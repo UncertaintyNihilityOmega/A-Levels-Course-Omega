@@ -71,3 +71,23 @@ mitochondria setting with the leaky-membrane example (accepted: different questi
 - [x] bio.energy: quiz respirometer gave RQ 0.50, not a real substrate value (now 25 and 3 mm, RQ 0.88, with matching distractors); RQ-of-seeds plot extended the line to day 0 and day 10 beyond the data (now days 2–8, caption says invented data)
 - [x] bio.photosynthesis: chromatogram figure: "solvent level below the origin" sits under the paper with nothing drawn (its line is the paper's bottom edge). In data/fig_bio.photosynthesis.py draw the solvent as an outlined band (`f2 s-acc2 sw2`) across the bottom of the paper, below the origin line, and give the label a leader to it; paste the new figure line
 - [x] bio.limiting: the last quiz question (grower raises CO₂, yield does not rise) repeats the last "Start easy" question. Replace it with one on the CO₂ graph: in dim light, raising CO₂ from 0.04% to 0.12% hardly changes the rate; + light is limiting, so too little ATP and reduced NADP; distractors: rubisco is denatured in dim light; carbon dioxide is toxic at 0.12%; carbon dioxide cannot dissolve in the water in the leaf in dim light (keep the explanation line)
+
+## REVIEW P13, P14, P15 (2026-10-29)
+Read whole: bio.dihybrid, and every worked example and answer of bio.nerves and the second half of bio.synapses; the
+rest by worked examples, keys and quizzes. Numbers recomputed (all chi-squared tables, recombinant percentages,
+dihybrid and sex-linked fractions, conduction speeds, refractory frequencies, sarcomere magnifications and bands,
+biosensor calibration, urea concentration factor, amplification cascade). Every figure seen in dark (the Writers saw
+light and phone); bio-actionpot, bio-sarcomere, bio-punnett (all four modes) and bio-chisq used with clicks and keyboard
+only, phone and bad inputs. Writers' notes confirmed: the textbook kidney values and the simplified nephron are fine;
+invented data are labelled (glucagon cascade, calcium synapse table, sweet pea and tomato crosses; the Mendel counts are
+real); the synapses Stretch (three solutions, evaluate a conclusion, energy of the power stroke) is distinct enough
+from the rigor mortis example, which only explains stiffness; the meiosis Stretch questions (Down syndrome, mule) give
+the non-disjunction idea in the stem and need only taught ideas, so they stay as A* stretch. Fixed by the reviewer:
+- [x] bio.inheritance: pedigree rule 4 said an affected father with an affected son "is not X-linked"; wrong for X-linked recessive when the mother is a carrier (now: the son's allele cannot come from his father, so autosomal only if the mother cannot carry it)
+- [x] bio.nerves: the action potential figure numbered the phases 1 resting, 2 depolarisation, 3 peak, 4 repolarisation, 5 hyperpolarisation, while the key table and the widget use resting, depolarisation, repolarisation, hyperpolarisation, recovery; figure labels, list and alt text now match (also in data/fig_bio.nerves.py)
+- [x] bio.nerves: frequency plot rose from 0 impulses at zero stimulus, ignoring the threshold (x-axis now "stimulus strength above threshold")
+- [x] bio.dihybrid: quiz explanation for the ww epistasis question named genes E and B from the Labrador example
+- [x] bio.hormones: barley grain figure: "gibberellin" floated 25 px from its dashed arrow (now beside it; also in data/fig_bio.hormones.py)
+- [x] bio-punnett: in two-gene mode the four phenotype-name boxes overlapped each other and the last ran past the card (fixed width 12em in a narrower grid column; now width 100%, max 12em); the "Mother (X^H X^h) makes gametes" line now uses real superscripts (the select options keep X^H, which an option cannot format)
+- [x] bio-chisq: on phones the class names broke inside words ("roun-d yello-w") and the empty-chart message was cut off at both ends; names now wrap at spaces, the table scrolls if needed, and the message is shorter on narrow canvases
+- [x] bio-sarcomere: "thin and thick overlap" read 1.8 µm at the shortest length, more than the 1.6 µm A band (overlap now capped at the A band; data/test_bio-sarcomere.js updated)

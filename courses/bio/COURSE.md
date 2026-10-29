@@ -140,6 +140,10 @@ writes it before any Writer starts.
   every animation must be clicked through and checked in the browser pane, not just probed. Press every preset and
   move each slider to both ends, then look at the canvas: a legend drawn on the canvas covered the axis label and a
   low curve in bio-limiting (REVIEW P10–P12 moved it into a text line under the graph).
+- A figure, a key table and a widget that show the same process use the same stage names and numbers (REVIEW
+  P13–P15: the action potential figure called stage 3 "peak", the table and widget "repolarisation"). Text inputs in
+  a widget grid: `width: 100%` with a `maxWidth`, never a fixed width (bio-punnett's boxes overlapped). Table cells:
+  wrap at spaces, never `overflowWrap: anywhere` (it split class names mid-word on phones).
 - Widgets from other courses you may use: `normal`, `stats`, `sampling` (math), `units` (phys), `molar` (chem). Do not
   register those names.
 

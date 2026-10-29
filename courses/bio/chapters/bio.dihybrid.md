@@ -431,7 +431,7 @@ A: (a) The commonest classes, Aabb (88) and aaBb (90), are parental. [B1] AaBb (
 - codominance
 - sex linkage
 - independent assortment
-> One gene (E) affects the expression of a different gene (B). Codominance is two alleles of one gene both showing.
+> One gene (W) affects the expression of a different gene (the one for red or pink). Codominance is two alleles of one gene both showing.
 ? 240 offspring are expected in a 1 : 1 : 1 : 1 ratio. What is the expected number in each class?
 + 60
 - 24

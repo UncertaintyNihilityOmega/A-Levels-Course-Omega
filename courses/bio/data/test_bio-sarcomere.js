@@ -8,7 +8,7 @@ let b = m.bands(2.5); near(b.A, 1.6); near(b.I, 0.9); near(b.H, 0.5); near(b.ove
 b = m.bands(2.0); near(b.I, 0.4); near(b.H, 0); near(b.overlap, 1.6);
 b = m.bands(3.0); near(b.H, 1.0); near(b.I, 1.4);
 b = m.bands(2.4); near(b.I, 0.8); near(b.H, 0.4);
-for (let L = 1.8; L <= 3.4001; L += 0.05) { const x = m.bands(L); near(x.A, 1.6); assert(x.I >= 0 && x.H >= 0 && x.overlap >= 0); near(x.I + 1.6, L); near(x.overlap, 3.6 - L, 1e-9); }
+for (let L = 1.8; L <= 3.4001; L += 0.05) { const x = m.bands(L); near(x.A, 1.6); assert(x.I >= 0 && x.H >= 0 && x.overlap >= 0); near(x.I + 1.6, L); near(x.overlap, Math.min(1.6, 3.6 - L), 1e-9); }
 // rules
 assert.deepStrictEqual(m.effLen(2.0, 2.5, false, true, NaN), { len: 2.5, mode: 'relaxed' });   // no calcium: cannot shorten
 assert.strictEqual(m.effLen(3.2, 2.5, false, true, NaN).len, 3.2);                              // stretching allowed
