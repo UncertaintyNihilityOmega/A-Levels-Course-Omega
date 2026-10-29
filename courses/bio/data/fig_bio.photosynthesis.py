@@ -162,8 +162,9 @@ yb = y_or - 0.45 * (y_or - y_fr)
 f.line([(124, y_or), (124, yb)], "c2 sw2", "ah")
 f.line([(124, yb), (140, yb)], "ln-m thin dash")
 f.text(132, 230, "a", "tl tb")
+f.rect(104, 262, 120, 14, "f2 s-acc2 sw2")           # solvent band, below the origin line
 f.text(164, 308, "solvent level below the origin", "tl", "middle")
-f.line([(104, 276), (224, 276)], "ln-m thin")
+f.leader((164, 294), (164, 277))
 done(f, (360, 322),
      "A paper chromatogram of a leaf extract. The origin line is at the bottom and the solvent front at the top. From the top the four spots are carotene, xanthophyll, chlorophyll a and chlorophyll b. Arrow b is the distance moved by the solvent, from the origin to the solvent front. Arrow a is the distance moved by the pigment, from the origin to the centre of the chlorophyll b spot.",
      "A chromatogram (a drawing; real spots are smeared and fade). Rf = a ÷ b, with both distances measured from the origin; here a is for chlorophyll b.")

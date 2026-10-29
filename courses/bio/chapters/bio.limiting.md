@@ -500,11 +500,11 @@ Dense cells may also use up the available carbon dioxide faster, so it becomes l
 - 2.0 mm³ min⁻¹
 - 4.0 mm³ min⁻¹
 > The gas collected is the net amount: net = gross − respiration. So gross = 2.0 + 0.5 = 2.5 mm³ min⁻¹.
-? In a glasshouse, a grower raises the carbon dioxide concentration but the yield does not increase. What is the most likely reason?
-+ another factor, such as light intensity or temperature, is now limiting
-- carbon dioxide is toxic to the plants at this concentration
-- the Calvin cycle has stopped
-- the rate of respiration has risen above the rate of photosynthesis
+? On the graph of rate against carbon dioxide concentration, the dim-light curve hardly changes when the carbon dioxide rises from 0.04% to 0.12%. What is the best explanation?
++ light is limiting, so there is too little ATP and reduced NADP to use the extra carbon dioxide
+- rubisco is denatured in dim light
+- carbon dioxide is toxic at 0.12%
+- carbon dioxide cannot dissolve in the water in the leaf in dim light
 > Raising a factor that is not limiting changes nothing. The grower should find which factor is limiting and raise that.
 :::
 
