@@ -3,8 +3,8 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
-- Current course: **Biology** (`bio`, queue item 2). P1–P16 written, P1–P12 reviewed and fixed.
-  Running (13:30 run, preview server allowed by the user for this run): REVIEW P13, P14, P15; WRITE P17.
+- Current course: **Biology** (`bio`, queue item 2). P1–P16 written, P1–P15 reviewed (0 open items).
+  Running (13:30 run, preview server allowed by the user for this run): WRITE P17. Gate closed (5-hour 86%) until the reset at 18:20.
   Next: Writer P18 when the window has room; then FIX + WRITE P19.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.

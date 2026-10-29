@@ -21,7 +21,8 @@ awake (Windows: Sleep "Never" when plugged in).
   permission even in Auto mode) holds `{"session": "<time started>", "beat": "<last update>", "id": "<session id>"}`
   (the id from `get_session("self")`). The lock is stale when its `beat` is 90 minutes old or more, or when
   `list_task_runs("zta-agent-run")` shows the lock's `id` as not `running` (it failed at a usage limit or ended).
-  Stale: take over. Otherwise another session is running: stop at once.
+  An owner waiting for its background agents can show as not `running`: if a file under `courses/<c>` changed in the
+  last 15 minutes, its agents are still working and the lock is live. Stale: take over. Live: stop at once.
 - Each run:
   1. Lock check (above). Write the lock.
   2. `git status`; `check` every changed chapter; commit a checkpoint and push.
