@@ -536,25 +536,25 @@ Some of the daughter cells differentiate into specialised lining cells, which re
 Others stay as stem cells, so that the supply of new cells continues. [B1]
 (b) The DNA is replicated in S phase, so each chromosome has two identical sister chromatids. [B1]
 In mitosis the chromatids are separated, so each daughter nucleus receives one copy of every chromosome. [B1]
-Q: [6 marks] ★★★ A drug that affects the spindle was added to a culture of human cells. After 12 h the stage of each of 500 cells was recorded in the treated culture and in a control culture without the drug.
+Q: [6 marks] ★★★ Radiotherapy damages the DNA of cells. In G2, a cell checks its DNA and does not start mitosis until any damage is repaired. A culture of human cells was given a dose of X-rays, and 8 h later the stage of each of 400 cells was recorded in the treated culture and in a control culture that was not exposed (data for the question).
 
 | stage | control / % | treated / % |
 |---|---|---|
-| interphase | 86 | 64 |
-| prophase | 7 | 6 |
-| metaphase | 3 | 28 |
+| interphase | 86 | 96 |
+| prophase | 7 | 1 |
+| metaphase | 3 | 1 |
 | anaphase | 2 | 1 |
 | telophase | 2 | 1 |
 
-(a) Calculate the mitotic index of the control culture and of the treated culture. (b) Describe the effect of the drug on the percentage of cells in metaphase. (c) Explain how a drug that stops spindle fibres forming could cause this effect.
+(a) Calculate the mitotic index of the control culture and of the treated culture. (b) Describe the effect of the X-rays on the percentage of cells in interphase. (c) Explain how the check in G2 could cause this effect, and why it slows the growth of a tumour.
 H: The mitotic index uses all four stages of mitosis.
-H: For (c), what has to happen to the chromosomes before a cell can leave metaphase?
+H: For (c), cells that were already dividing finish mitosis. What happens to the cells that reach the end of G2?
 A: (a) Control: \(7 + 3 + 2 + 2 = 14\%\), so 0.14. [B1]
-Treated: \(6 + 28 + 1 + 1 = 36\%\), so 0.36. [B1]
-(b) The percentage of cells in metaphase increases from 3% to 28%. [B1]
-(c) Without spindle fibres, the chromosomes cannot be attached to the poles or pulled apart. [B1]
-The cells cannot enter anaphase, because the sister chromatids do not separate. [B1]
-So cells that reach metaphase stay in it, and the percentage in metaphase rises, while fewer cells reach anaphase and telophase. [B1]
+Treated: \(1 + 1 + 1 + 1 = 4\%\), so 0.04. [B1]
+(b) The percentage of cells in interphase increases from 86% to 96%. [B1]
+(c) The cells with damaged DNA are stopped at the check in G2 and do not start mitosis. [B1]
+Cells that were already in mitosis complete it, but few new cells enter prophase, so the cells pile up in interphase and the mitotic index falls. [B1]
+Fewer tumour cells divide, so the number of cells in the tumour increases more slowly (and cells whose damage cannot be repaired may die). [B1]
 Q: [6 marks] (#bio.cells) ★★★ A cell in a growing root tip has just finished mitosis. (a) Describe how the cell divides its cytoplasm into two cells. (b) Cells in a root tip contain many mitochondria and many ribosomes. Suggest why dividing cells need them.
 H: Which organelle makes the vesicles that build the cell plate?
 H: In anaphase, what does moving the chromosomes need? And what are the spindle fibres made of?

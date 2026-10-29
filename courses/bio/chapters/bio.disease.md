@@ -380,10 +380,10 @@ A: cholera: *Vibrio cholerae*, bacterium [B1]
 TB: *Mycobacterium tuberculosis* (or *M. bovis*) [B1]
 TB: bacterium [B1]
 HIV/AIDS: human immunodeficiency virus, a virus [B1]
-Q: [3 marks] ★ Describe how malaria is transmitted from one person to another by a mosquito.
-A: A female *Anopheles* mosquito bites an infected person and takes up the parasite *Plasmodium* in the blood. [B1]
-It then bites another person. [B1]
-It injects the parasite into that person's blood. [B1]
+Q: [3 marks] ★ Malaria is not passed on by touching or coughing, but it can be passed on in a blood transfusion. Explain why.
+A: The parasite *Plasmodium* lives inside the body, in the liver and in red blood cells, not in the airways or on the skin. [B1]
+Normally it can reach another person only in blood, taken up and injected by a female *Anopheles* mosquito (the vector). [B1]
+Transfused blood from an infected donor contains red blood cells with the parasite, so it is put straight into the recipient's blood. [B1]
 Q: [4 marks] ★★ In one town, there were two districts. In district A, a water-treatment works and chlorination were introduced. District B kept its old supply. The table shows the number of cholera cases per 100 000 people in a year.
 
 | | before / per 100 000 | after / per 100 000 |

@@ -105,13 +105,13 @@ eq("exam: DNA doubles", dnat[5][1] / dnat[2][1], 2)
 eq("exam: DNA halves", dnat[7][1] / dnat[6][1], 0.5)
 
 ctrl = {"interphase": 86, "prophase": 7, "metaphase": 3, "anaphase": 2, "telophase": 2}
-treat = {"interphase": 64, "prophase": 6, "metaphase": 28, "anaphase": 1, "telophase": 1}
+treat = {"interphase": 96, "prophase": 1, "metaphase": 1, "anaphase": 1, "telophase": 1}   # X-ray question (REVIEW P6/P8/P9)
 eq("exam: control percentages add to 100", sum(ctrl.values()), 100)
 eq("exam: treated percentages add to 100", sum(treat.values()), 100)
 eq("exam: control mitotic index", (100 - ctrl["interphase"]) / 100, 0.14)
-eq("exam: treated mitotic index", (100 - treat["interphase"]) / 100, 0.36)
+eq("exam: treated mitotic index", (100 - treat["interphase"]) / 100, 0.04)
 eq("exam: 7 + 3 + 2 + 2", 7 + 3 + 2 + 2, 14)
-eq("exam: 6 + 28 + 1 + 1", 6 + 28 + 1 + 1, 36)
+eq("exam: 1 + 1 + 1 + 1", 1 + 1 + 1 + 1, 4)
 
 yeast = {"normal": (56, 21, 23), "P": (91, 4, 5), "Q": (6, 5, 89)}
 for k, v in yeast.items():

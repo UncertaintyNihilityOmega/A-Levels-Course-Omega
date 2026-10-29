@@ -85,7 +85,7 @@ f.parts.append(f'<ellipse class="fr ln" cx="{cx}" cy="{cy}" rx="11" ry="6"/>')
 f.text(LX, 394, "wall: one cell", "tl"); f.text(LX, 408, "thick (endothelium)", "tl")
 f.leader((LX - 4, 397), (cx + 20, cy - 12))
 f.text(LX, 434, "red blood cell", "tl"); f.leader((LX - 4, 431), (cx + 8, cy + 3))
-f.text(LX, 450, "lumen about 7 µm", "tl"); f.leader((LX - 4, 447), (cx + 12, cy + 12))
+f.text(LX, 450, "lumen about 7 µm", "tl"); f.leader((LX - 4, 447), (cx + 9, cy + 10))   # REVIEW: end inside the lumen, not on its edge
 done(f, (340, 470),
      "Three plan diagrams of blood vessels in transverse section. A, artery: a thick wall made of tunica externa with collagen, a thick tunica media of smooth muscle and elastic fibres, and a narrow round lumen lined by endothelium. B, vein: a thin wall with thin tunica externa and tunica media, and a wide lumen. C, capillary: a wall one endothelium cell thick and a lumen about 7 micrometres across holding one red blood cell.",
      "Plan diagrams in transverse section (TS). They show the tissue layers only, with no individual cells. The capillary is drawn far bigger than its true size compared with the artery and vein, so that its wall can be seen.")
@@ -152,7 +152,7 @@ for cx, cy, nm, lines in cells:
 # red cell 7 µm
 r = 3.5 * PX
 ellipse(f, 85, 62, r, r, WALL)
-ellipse(f, 85, 62, r * 0.45, r * 0.45, LUM, check=False)
+ellipse(f, 85, 62, r * 0.45, r * 0.45, "fp ln-m thin dash", check=False)   # pale centre, not a nucleus (REVIEW)
 # neutrophil 11 µm, three-lobed nucleus
 ellipse(f, 250, 62, 5.5 * PX, 5.5 * PX, WALL)
 for dx, dy in [(-13, 5), (0, -7), (13, 5)]:
@@ -172,55 +172,52 @@ done(f, (340, 336),
      "Drawings of four blood cells at the same scale. Red blood cell: about 7 micrometres across, no nucleus, a pale centre because it is a biconcave disc. Neutrophil: about 11 micrometres, nucleus with three connected lobes, granular cytoplasm. Monocyte: the largest, about 16 micrometres, with a large kidney-shaped nucleus. Lymphocyte: about 9 micrometres, with a round nucleus filling most of the cell.",
      "Blood cells drawn as they look in a stained film, at one scale. These are drawings: in a real photomicrograph the nuclei stain darkest and the red blood cells are pink or red. Look at the nucleus first.")
 
-# ---------- 5. capillary bed with pressure arrows ----------
+# ---------- 5. capillary bed with pressure arrows (REVIEW P6/P8/P9: redrawn 340 wide for phones) ----------
 f = Fig("capbed")
-cy = 128
-top_y, bot_y = cy - 22, cy + 22
+cy = 124
+top_y, bot_y = cy - 18, cy + 18
 # arteriole (left) tapering into the capillary, venule (right)
-f.poly([(20, cy - 42), (120, top_y), (120, bot_y), (20, cy + 42)], MID, closed=False, check=True)
-f.poly([(540, cy - 42), (440, top_y), (440, bot_y), (540, cy + 42)], MID, closed=False, check=True)
-# capillary walls with gaps
-gaps = [150, 200, 250, 350, 400]
-def wall(y):
-    xs = [120] + [g for g in gaps for g in (g - 5, g + 5)] + [440]
+f.poly([(10, cy - 36), (60, top_y), (60, bot_y), (10, cy + 36)], MID, closed=False, check=True)
+f.poly([(330, cy - 36), (280, top_y), (280, bot_y), (330, cy + 36)], MID, closed=False, check=True)
+# capillary walls with gaps (every arrow passes through a gap)
+gaps_top = [85, 115, 225, 255]
+gaps_bot = [85, 115, 170, 225, 255]
+def wall(y, gaps):
+    xs = [60] + [g for g in gaps for g in (g - 4, g + 4)] + [280]
     for a, b in zip(xs[::2], xs[1::2]):
         f.line([(a, y), (b, y)], "c1 sw3", check=True)
-wall(top_y); wall(bot_y)
-# tissue cells above and below
-f.rect(215, 28, 150, 44, WALL, 10)
-f.rect(215, cy + 56, 150, 44, WALL, 10)
-f.text(290, 55, "tissue cell", "tl", "middle")
-f.text(290, cy + 83, "tissue cell", "tl", "middle")
+wall(top_y, gaps_top); wall(bot_y, gaps_bot)
+# one tissue cell above
+f.rect(127, 34, 86, 36, WALL, 8)
+f.text(170, 56, "tissue cell", "tl", "middle")
 # red cells and proteins in the lumen
-for x in (140, 215, 330, 410):
-    f.parts.append(f'<ellipse class="fr ln" cx="{x}" cy="{cy}" rx="10" ry="6"/>')
-for x, y in [(160, cy - 8), (180, cy + 9), (240, cy - 10), (262, cy + 8), (290, cy - 4), (310, cy + 10), (365, cy - 8), (385, cy + 8), (430, cy - 8)]:
+for x in (75, 150, 205, 268):
+    f.parts.append(f'<ellipse class="fr ln" cx="{x}" cy="{cy}" rx="8" ry="5"/>')
+for x, y in [(98, cy - 8), (128, cy + 8), (178, cy - 8), (188, cy + 7), (238, cy + 8), (248, cy - 7)]:
     f.parts.append(f'<circle class="fi" cx="{x}" cy="{y}" r="2.5"/>')
-# fluid out at the arterial end (arrow out through gaps)
-f.line([(150, top_y - 4), (150, 52)], "c3 sw2", "ah")
-f.line([(200, top_y - 4), (200, 52)], "c3 sw2", "ah")
-f.line([(150, bot_y + 4), (150, cy + 76)], "c3 sw2", "ah")
-f.line([(200, bot_y + 4), (200, cy + 76)], "c3 sw2", "ah")
-# water back in at the venous end
-f.line([(350, 52), (350, top_y - 4)], "c4 sw2", "ah")
-f.line([(400, 52), (400, top_y - 4)], "c4 sw2", "ah")
-f.line([(350, cy + 76), (350, bot_y + 4)], "c4 sw2", "ah")
-f.line([(400, cy + 76), (400, bot_y + 4)], "c4 sw2", "ah")
+# fluid out at the arterial end, water back in at the venous end
+for x in (85, 115):
+    f.line([(x, top_y - 4), (x, 50)], "c3 sw2", "ah")
+    f.line([(x, bot_y + 4), (x, cy + 64)], "c3 sw2", "ah")
+for x in (225, 255):
+    f.line([(x, 50), (x, top_y - 4)], "c4 sw2", "ah")
+    f.line([(x, cy + 64), (x, bot_y + 4)], "c4 sw2", "ah")
 # along the top: pressure falls
-f.line([(130, 22), (430, 22)], "ln-m thin dash", "ah")
-f.text(280, 12, "hydrostatic pressure falls along the capillary", "tl", "middle")
+f.text(170, 12, "hydrostatic pressure falls", "tl", "middle")
+f.line([(60, 22), (280, 22)], "ln-m thin dash", "ah")
 # labels
-f.text(20, 52, "arteriole", "tl"); f.text(540, 52, "venule", "tl", "end")
-f.text(20, cy + 62, "high pressure:", "tl"); f.text(20, cy + 76, "fluid forced out", "tl")
-f.text(540, cy + 62, "lower pressure;", "tl", "end"); f.text(540, cy + 76, "water in by osmosis", "tl", "end")
-f.text(20, 228, "blood flow →", "tl")
-f.text(20, 250, "red blood cell", "tl"); f.parts.append(f'<ellipse class="fr ln" cx="125" cy="246" rx="10" ry="6"/>')
-f.text(160, 250, "plasma protein", "tl"); f.parts.append('<circle class="fi" cx="267" cy="246" r="2.5"/>')
-f.text(283, 250, "gap between endothelium cells", "tl")
-done(f, (560, 262),
-     "A capillary bed. Blood flows from an arteriole on the left, through a capillary with gaps in its wall, to a venule on the right. At the arterial end, arrows show fluid forced out through the gaps into the tissue fluid around two tissue cells by high hydrostatic pressure. At the venous end, arrows show water returning into the capillary by osmosis. Red blood cells and plasma proteins stay inside the capillary.",
-     "Tissue fluid. Outward arrows: fluid is forced out at the arterial end by hydrostatic pressure. Inward arrows: water returns by osmosis at the venous end because the plasma proteins lower the water potential of the plasma. Red blood cells and proteins stay in the capillary. Excess tissue fluid drains into lymph vessels.",
-     "fig")
+f.text(10, 70, "arteriole", "tl"); f.text(330, 70, "venule", "tl", "end")
+f.text(170, 94, "tissue fluid", "tl", "middle")
+f.text(170, 174, "gap between", "tl", "middle"); f.text(170, 188, "endothelium", "tl", "middle"); f.text(170, 202, "cells", "tl", "middle")
+f.leader((170, 162), (170, bot_y + 3))
+f.text(10, 214, "high pressure:", "tl"); f.text(10, 228, "fluid forced out", "tl")
+f.text(330, 214, "lower pressure:", "tl", "end"); f.text(330, 228, "water in by osmosis", "tl", "end")
+f.text(10, 256, "red blood cell", "tl"); f.parts.append('<ellipse class="fr ln" cx="112" cy="252" rx="8" ry="5"/>')
+f.text(150, 256, "plasma protein", "tl"); f.parts.append('<circle class="fi" cx="242" cy="252" r="2.5"/>')
+f.text(10, 278, "blood flows from left to right", "tl")
+done(f, (340, 290),
+     "A capillary bed. Blood flows from an arteriole on the left, through a capillary with gaps between the endothelium cells of its wall, to a venule on the right. At the arterial end, arrows show fluid forced out through the gaps into the tissue fluid by high hydrostatic pressure. At the venous end, arrows show water returning into the capillary by osmosis. Red blood cells and plasma proteins stay inside the capillary.",
+     "Tissue fluid. Outward arrows: fluid is forced out at the arterial end by hydrostatic pressure. Inward arrows: water returns by osmosis at the venous end because the plasma proteins lower the water potential of the plasma. Red blood cells and proteins stay in the capillary. Excess tissue fluid drains into lymph vessels.")
 
 print("\n\n".join(figs))
 print("clearance ok" if not problems else "\n".join(problems), file=sys.stderr)

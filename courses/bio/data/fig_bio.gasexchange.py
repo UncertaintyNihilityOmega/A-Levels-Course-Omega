@@ -176,7 +176,7 @@ f.rect(ax0, 100, ax1 - ax0, 7, CART)                   # squamous epithelium of 
 f.line([(ax0, 109.5), (ax1, 109.5)], "ln thick")       # fused basement membranes
 f.rect(ax0, 112, ax1 - ax0, 7, CART)                   # endothelium of the capillary
 f.rect(ax0, 119, ax1 - ax0, 100, WALL)                 # blood plasma
-ellipse(f, 100, 172, 40, 15, "fr ln")                  # red blood cell
+ellipse(f, 100, 137, 40, 15, "fr ln")                  # red blood cell, squeezed against the wall as the caption says (REVIEW)
 f.line([(116, 40), (116, 142)], "c1 sw2", "ah")        # O2 in
 f.line([(158, 140), (158, 40)], "c2 sw2", "ah")        # CO2 out
 f.text(124, 62, "O₂")
@@ -193,7 +193,7 @@ f.text(RXX, 98, "of the alveolus")
 la(124, "basement membrane", (ax1 - 24, 109.5))
 la(152, "endothelium of the", (ax1 - 6, 115.5), "capillary wall")
 la(196, "plasma", (ax1 - 12, 204))
-la(226, "red blood cell", (128, 180))
+la(226, "red blood cell", (128, 145))
 done(f, (380, 246),
      "Gas exchange between an alveolus and a capillary. From the air in the alveolus to the blood, oxygen crosses a squamous epithelium "
      "of the alveolus, the basement membranes and the squamous endothelium of the capillary, then enters the plasma and a red blood "

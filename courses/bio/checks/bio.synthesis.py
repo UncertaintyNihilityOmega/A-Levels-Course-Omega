@@ -46,6 +46,7 @@ same("start codon", CODE["AUG"], "Met")
 same("stop codons are UAA UAG UGA", sorted(c for c, v in CODE.items() if v == "STOP"), ["UAA", "UAG", "UGA"])
 for c, a in {"CCA": "Pro", "CCG": "Pro", "GAA": "Glu", "GAG": "Glu", "GAC": "Asp", "UUU": "Phe", "GGG": "Gly", "UCC": "Ser",
              "AGA": "Arg", "AUU": "Ile", "UGG": "Trp", "GUA": "Val", "CAG": "Gln", "AAU": "Asn", "UUG": "Leu", "GGU": "Gly",
+             "GGC": "Gly", "GGA": "Gly",
              "UAC": "Tyr", "GUG": "Val", "UGA": "STOP", "UAG": "STOP", "UAA": "STOP"}.items():
     same(f"code {c}", CODE[c], a)
 same("glutamic acid", FULL["Glu"], "glutamic acid")

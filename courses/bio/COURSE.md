@@ -48,7 +48,11 @@ writes it before any Writer starts.
   0.0065 mm, humans and cellulose, a bear given two different daily energy needs). Before `done`, grep the chapter
   for each worked example's numbers and organism. It also covers a worked example's real context and its answer
   (REVIEW P4/P5/P7 changed methanol and ethanol used again in practice, a quiz whose new numbers gave the example's
-  1.26 m h⁻¹, and serial dilutions repeating the example's 1.0% and 0.25%).
+  1.26 m h⁻¹, and serial dilutions repeating the example's 1.0% and 0.25%). A practice question must not ask the
+  worked example's question again in other words: REVIEW P6/P8/P9 changed nine (a Spot-the-error question set again
+  as a ★ question, "cold" then "influenza: why no antibiotic", oedema from low plasma protein in the example, a ★★★
+  and the quiz, asthma relievers, altitude, pacemakers, a spindle drug, the wall-thickness answer, a repeated
+  mutation). Check each `:::eg` against every practice stem for the same context **or** the same mark scheme.
 - Length: as long as the topic needs (the gold chapter is about 790 lines, half of it practice). No padding.
 
 ## Format lessons from the gold chapter (each one cost a fix)
@@ -103,6 +107,9 @@ writes it before any Writer starts.
   recognise the real thing in words ("in a photomicrograph the nucleus stains darkest …").
 - Hand SVGs are **`class="fig small"` by default** (viewBox about 300–350 wide). Full-width figures had 7–8 px text on
   phones; use `fig` (viewBox 520–640) only for wide diagrams that need it, and `fig wide` only for multi-panel ones.
+  **Any figure with text labels is `fig small`**, flow and process diagrams included: REVIEW P6/P8/P9 redrew a
+  560-wide capillary bed and a 600-wide red-cell diagram (5–6 px labels on phones) at 340 wide by stacking the labels
+  above and below the drawing. Run `shot <id> --phone` once and read every label.
 - **Labelled structure diagrams** (cells, organs, the heart, a nephron, a flower): `fig small` with a viewBox at most
   400 wide, the drawing in the middle and one label column each side (labels about 11 px on a 375 px phone). Never
   `fig` 560 for these: the animal and plant cell figures had 8 px labels on phones and were redrawn in REVIEW P2
@@ -114,7 +121,10 @@ writes it before any Writer starts.
 - The clearance check does not check meaning: every leader must end on (or inside) the part it names, every number
   in a legend must appear on the drawing, and apparatus must work as drawn (REVIEW P4/P5/P7 fixed a vacuole leader
   ending on the wall, a membrane leader ending in the gap, unnumbered transpiration steps and a potometer capillary
-  passing through the beaker wall). Look at each figure once and check this.
+  passing through the beaker wall). Look at each figure once and check this. A leader never runs through another
+  part (it cannot see circles), the drawing shows what the caption claims, and a legend entry has a symbol (REVIEW
+  P6/P8/P9: a cross-links leader through the enzyme, a red cell "squeezed against the wall" drawn mid-capillary, a
+  "gap" legend entry with no mark). A figure and a widget of the same graph use the same colour for each line.
 - Dark mode: a pale fill without an outline vanishes. Give every filled shape an outline (`f1 s-acc sw2`, or a `ln`
   stroke). Never name colours in captions or text.
 - Keep every figure and widget generator script in **data/** (scratch/ is not backed up). Python that computes SVG

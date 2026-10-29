@@ -173,7 +173,7 @@ for p in [0, 5, 10, 15]:
 f.text(6, 14, "pressure / kPa", "tl")
 f.text(404, ybot + 18, "time / s", "tl", "end")
 ts = [k * 0.004 for k in range(201)]
-for fn, cls in ((AO, "c1 sw2"), (LV, "c2 sw2"), (LA, "c3 sw2")):
+for fn, cls in ((AO, "c2 sw2 dash"), (LV, "c1 sw2"), (LA, "c3 sw2")):   # same colours as widget bio-cardiac (REVIEW)
     f.line([(round(X(t), 1), round(Y(fn(t)), 1)) for t in ts], cls, check=False)
 ev = events()
 for k, (t, s) in enumerate(ev, 1):
@@ -190,7 +190,7 @@ f.text(X(0.25), 312, "ventricular", "tl", "middle"); f.text(X(0.25), 326, "systo
 f.text(X(0.6), 312, "diastole", "tl", "middle")
 done(f, (410, 340),
      "Model graph of pressure in kilopascals against time in seconds for one cardiac cycle of 0.8 seconds, for the left atrium, the left ventricle and the aorta. The left atrium pressure stays below 1.6 kilopascals. The left ventricle pressure is near 0.5 kilopascals, rises steeply to about 16 kilopascals at 0.25 seconds and falls again by 0.45 seconds. The aorta pressure stays between 10.5 and 16 kilopascals. Four numbered dashed lines mark valve events: 1, the atrioventricular valve closes at about 0.10 seconds; 2, the semilunar valve opens at about 0.17 seconds; 3, the semilunar valve closes at about 0.38 seconds; 4, the atrioventricular valve opens at about 0.45 seconds. Atrial systole lasts 0.1 seconds, ventricular systole 0.3 seconds and diastole 0.4 seconds.",
-     "Pressures in the left side of the heart in one cycle (a model, 75 beats per minute). Dashed lines: 1 AV valve closes (ventricular pressure rises above atrial pressure), 2 semilunar valve opens (ventricular pressure rises above aortic pressure), 3 semilunar valve closes (ventricular pressure falls below aortic pressure), 4 AV valve opens (ventricular pressure falls below atrial pressure).",
+     "Pressures in the left side of the heart in one cycle (a model, 75 beats per minute). Numbered vertical lines: 1 AV valve closes (ventricular pressure rises above atrial pressure), 2 semilunar valve opens (ventricular pressure rises above aortic pressure), 3 semilunar valve closes (ventricular pressure falls below aortic pressure), 4 AV valve opens (ventricular pressure falls below atrial pressure).",
      "fig small")
 
 # ---------- 4. conducting system ----------

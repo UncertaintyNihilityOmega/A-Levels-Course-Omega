@@ -38,7 +38,7 @@ eq("eg actual thickness um", A * 1000, 720, 1e-9)
 eq("try: bronchiole diameter mm", 45 / 150, 0.30, 1e-12)
 eq("try: bronchiole diameter um", 45 / 150 * 1000, 300, 1e-9)
 pf = [240, 300, 380, 420, 430, 430]
-eq("exam asthma: increase 0 -> 20 min", sf((430 - 240) / 240 * 100, 2), 79)
+eq("exam bronchitis: increase day 0 -> day 8", sf((430 - 240) / 240 * 100, 2), 79)
 eq("exam asthma: plateau", pf[-1], pf[-2])
 M2 = 62 / 0.50
 eq("exam: M = 124", M2, 124)

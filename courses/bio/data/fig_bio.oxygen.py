@@ -42,28 +42,27 @@ done(f, (300, 440),
      "Cooperative binding. The first oxygen to bind changes the shape of haemoglobin (the circles widen), so the second and third bind easily; the fourth binds slowly because there is only one vacant haem group to find.")
 
 # ---------- 2. red blood cell: carbon dioxide transport in the tissues ----------
-f = Fig("redcell")
-cx, cy, rx, ry = 300, 150, 140, 95
+f = Fig("redcell")      # REVIEW P6/P8/P9: redrawn 340 wide (the 600-wide version had 5 px labels on phones)
+cx, cy, rx, ry = 170, 176, 140, 96
 ellipse(f, cx, cy, rx, ry, "fm s-acc sw2")
-inside = [(100, "CO₂ + H₂O ⇌ H₂CO₃"), (114, "(carbonic anhydrase)"), (140, "H₂CO₃ ⇌ H⁺ + HCO₃⁻"),
-          (166, "H⁺ + Hb → HHb"), (180, "(haemoglobinic acid)"), (204, "CO₂ + Hb → HbCO₂"), (218, "(carbaminohaemoglobin)")]
+inside = [(120, "CO₂ + H₂O ⇌ H₂CO₃"), (134, "(carbonic anhydrase)"), (160, "H₂CO₃ ⇌ H⁺ + HCO₃⁻"),
+          (186, "H⁺ + Hb → HHb"), (200, "(haemoglobinic acid)"), (224, "CO₂ + Hb → HbCO₂"), (238, "(carbaminohaemoglobin)")]
 for y, s in inside:
     f.text(cx, y, s, "tl", "middle")
-f.text(20, 24, "red blood cell", "tl tb")
-f.leader((72, 32), (186, 94))
-f.text(590, 24, "plasma carries HCO₃⁻ and some dissolved CO₂", "tl", "end")
-f.line([(20, 132), (146, 132)], "c3 sw2", "ah")
-f.text(20, 120, "CO₂ from the tissue", "tl")
-f.line([(452, 124), (570, 124)], "c3 sw2", "ah")
-f.text(452, 112, "HCO₃⁻ to plasma", "tl")
-f.line([(570, 176), (452, 176)], "c4 sw2", "ah")
-f.text(580, 198, "Cl⁻ moves in", "tl", "end"); f.text(580, 212, "(chloride shift)", "tl", "end")
-f.line([(212, 228), (160, 268)], "c1 sw2", "ah")
-f.text(10, 284, "O₂ unloaded from oxyhaemoglobin", "tl")
-done(f, (600, 296),
+f.text(cx, 20, "red blood cell", "tl tb", "middle")
+f.leader((cx, 28), (cx, cy - ry + 2))
+f.text(10, 34, "CO₂ from", "tl"); f.text(10, 48, "the tissue", "tl")
+f.line([(34, 58), (64, 104)], "c3 sw2", "ah")
+f.text(330, 34, "HCO₃⁻ to", "tl", "end"); f.text(330, 48, "the plasma", "tl", "end")
+f.line([(276, 104), (306, 58)], "c3 sw2", "ah")
+f.line([(306, 298), (276, 252)], "c4 sw2", "ah")
+f.text(330, 314, "Cl⁻ moves in", "tl", "end"); f.text(330, 328, "(chloride shift)", "tl", "end")
+f.line([(64, 252), (34, 298)], "c1 sw2", "ah")
+f.text(10, 314, "O₂ unloaded from", "tl"); f.text(10, 328, "oxyhaemoglobin", "tl")
+f.text(cx, 352, "the plasma carries HCO₃⁻ and some dissolved CO₂", "tl", "middle")
+done(f, (340, 362),
      "A red blood cell in a respiring tissue. Carbon dioxide diffuses into the cell. Inside, carbonic anhydrase catalyses carbon dioxide plus water forming carbonic acid, which dissociates into hydrogen ions and hydrogen carbonate ions. Hydrogen ions combine with haemoglobin to form haemoglobinic acid. Some carbon dioxide combines with haemoglobin to form carbaminohaemoglobin. Hydrogen carbonate ions leave the cell into the plasma and chloride ions move in, the chloride shift. Oxygen is unloaded from oxyhaemoglobin.",
-     "Carbon dioxide transport in the tissues. In the lungs every step runs in reverse: hydrogen carbonate ions enter the cell, chloride ions leave, and carbon dioxide is released and diffuses into the alveolus.",
-     "fig")
+     "Carbon dioxide transport in the tissues. In the lungs every step runs in reverse: hydrogen carbonate ions enter the cell, chloride ions leave, and carbon dioxide is released and diffuses into the alveolus.")
 
 print("\n\n".join(figs))
 print("clearance ok" if not problems else "\n".join(problems), file=sys.stderr)

@@ -196,7 +196,7 @@ A weaker answer says "X is a bronchus because it is big". It does not use a feat
 The alveoli are where oxygen enters the blood. Each feature of the wall solves one of the requirements of a good exchange surface.
 
 :::html
-<figure class="fig small"><svg viewBox="0 0 380 246" role="img" aria-label="Gas exchange between an alveolus and a capillary. From the air in the alveolus to the blood, oxygen crosses a squamous epithelium of the alveolus, the basement membranes and the squamous endothelium of the capillary, then enters the plasma and a red blood cell. Carbon dioxide travels the other way."><rect class="fp ln" x="20" y="22" width="180" height="78"/><rect class="f1 s-acc sw2" x="20" y="100" width="180" height="7"/><path class="ln thick" d="M20 109.5L200 109.5"/><rect class="f1 s-acc sw2" x="20" y="112" width="180" height="7"/><rect class="fm s-acc sw2" x="20" y="119" width="180" height="100"/><path class="fr ln" d="M140 172L139.7 174L138.6 175.9L137 177.7L134.6 179.5L131.7 181.1L128.3 182.6L124.4 183.9L120 185L115.3 185.9L110.4 186.5L105.2 186.9L100 187L94.8 186.9L89.6 186.5L84.7 185.9L80 185L75.6 183.9L71.7 182.6L68.3 181.1L65.4 179.5L63 177.7L61.4 175.9L60.3 174L60 172L60.3 170L61.4 168.1L63 166.3L65.4 164.5L68.3 162.9L71.7 161.4L75.6 160.1L80 159L84.7 158.1L89.6 157.5L94.8 157.1L100 157L105.2 157.1L110.4 157.5L115.3 158.1L120 159L124.4 160.1L128.3 161.4L131.7 162.9L134.6 164.5L137 166.3L138.6 168.1L139.7 170Z"/><path class="c1 sw2" d="M116 40L116 142" marker-end="url(#ah)"/><path class="c2 sw2" d="M158 140L158 40" marker-end="url(#ah)"/><text class="tl" x="124" y="62">O₂</text><text class="tl" x="164" y="62">CO₂</text><text class="tl" x="214" y="44">air in the</text><text class="tl" x="214" y="58">alveolus</text><path class="ln-m thin" d="M210 41L192 36"/><text class="tl" x="214" y="84">squamous epithelium</text><path class="ln-m thin" d="M210 81L190 103.5"/><text class="tl" x="214" y="98">of the alveolus</text><text class="tl" x="214" y="124">basement membrane</text><path class="ln-m thin" d="M210 121L176 109.5"/><text class="tl" x="214" y="152">endothelium of the</text><text class="tl" x="214" y="166">capillary wall</text><path class="ln-m thin" d="M210 149L194 115.5"/><text class="tl" x="214" y="196">plasma</text><path class="ln-m thin" d="M210 193L188 204"/><text class="tl" x="214" y="226">red blood cell</text><path class="ln-m thin" d="M210 223L128 180"/></svg><figcaption>Oxygen (arrow down) and carbon dioxide (arrow up) diffuse across two very thin layers of squamous cells. The red blood cell is squeezed close to the wall, so the diffusion distance is very short. Not to scale: the layers are thinner than drawn.</figcaption></figure>
+<figure class="fig small"><svg viewBox="0 0 380 246" role="img" aria-label="Gas exchange between an alveolus and a capillary. From the air in the alveolus to the blood, oxygen crosses a squamous epithelium of the alveolus, the basement membranes and the squamous endothelium of the capillary, then enters the plasma and a red blood cell. Carbon dioxide travels the other way."><rect class="fp ln" x="20" y="22" width="180" height="78"/><rect class="f1 s-acc sw2" x="20" y="100" width="180" height="7"/><path class="ln thick" d="M20 109.5L200 109.5"/><rect class="f1 s-acc sw2" x="20" y="112" width="180" height="7"/><rect class="fm s-acc sw2" x="20" y="119" width="180" height="100"/><path class="fr ln" d="M140 137L139.7 139L138.6 140.9L137 142.7L134.6 144.5L131.7 146.1L128.3 147.6L124.4 148.9L120 150L115.3 150.9L110.4 151.5L105.2 151.9L100 152L94.8 151.9L89.6 151.5L84.7 150.9L80 150L75.6 148.9L71.7 147.6L68.3 146.1L65.4 144.5L63 142.7L61.4 140.9L60.3 139L60 137L60.3 135L61.4 133.1L63 131.3L65.4 129.5L68.3 127.9L71.7 126.4L75.6 125.1L80 124L84.7 123.1L89.6 122.5L94.8 122.1L100 122L105.2 122.1L110.4 122.5L115.3 123.1L120 124L124.4 125.1L128.3 126.4L131.7 127.9L134.6 129.5L137 131.3L138.6 133.1L139.7 135Z"/><path class="c1 sw2" d="M116 40L116 142" marker-end="url(#ah)"/><path class="c2 sw2" d="M158 140L158 40" marker-end="url(#ah)"/><text class="tl" x="124" y="62">O₂</text><text class="tl" x="164" y="62">CO₂</text><text class="tl" x="214" y="44">air in the</text><text class="tl" x="214" y="58">alveolus</text><path class="ln-m thin" d="M210 41L192 36"/><text class="tl" x="214" y="84">squamous epithelium</text><path class="ln-m thin" d="M210 81L190 103.5"/><text class="tl" x="214" y="98">of the alveolus</text><text class="tl" x="214" y="124">basement membrane</text><path class="ln-m thin" d="M210 121L176 109.5"/><text class="tl" x="214" y="152">endothelium of the</text><text class="tl" x="214" y="166">capillary wall</text><path class="ln-m thin" d="M210 149L194 115.5"/><text class="tl" x="214" y="196">plasma</text><path class="ln-m thin" d="M210 193L188 204"/><text class="tl" x="214" y="226">red blood cell</text><path class="ln-m thin" d="M210 223L128 145"/></svg><figcaption>Oxygen (arrow down) and carbon dioxide (arrow up) diffuse across two very thin layers of squamous cells. The red blood cell is squeezed close to the wall, so the diffusion distance is very short. Not to scale: the layers are thinner than drawn.</figcaption></figure>
 :::
 
 :::key How the alveoli are adapted for gas exchange
@@ -232,7 +232,7 @@ For "explain how the alveoli are adapted", each mark is a **feature** linked to 
 The effect of each factor can be reasoned from simple proportion. Other things staying the same, the rate of diffusion across an exchange surface is directly proportional to the surface area and to the concentration difference, and inversely proportional to the thickness of the barrier. Doubling the thickness halves the rate.
 
 :::plot A model of an exchange surface: the relative rate of diffusion of oxygen falls as the barrier gets thicker (surface area and concentration difference kept the same; thickness in arbitrary units).
---f "100/x" --x 0.5 4.5 --y 0 230 --xlabel "thickness of the barrier / arbitrary units" --ylabel "relative rate of diffusion" --pt "1,100,thickness 1: rate 100@ne" --pt "3,33.3,thickness 3: rate 33@ne" --legend tr --alt "A curve that falls steeply and then flattens. At a thickness of 0.5 the relative rate is 200, at 1 it is 100 and at 3 it is about 33. Halving the thickness doubles the rate."
+--f "100/x+0*sqrt(x-0.5)" --x 0 4.5 --y 0 230 --xlabel "thickness of the barrier / arbitrary units" --ylabel "relative rate of diffusion" --pt "1,100,thickness 1: rate 100@ne" --pt "3,33.3,thickness 3: rate 33@ne" --legend tr --alt "A curve that falls steeply and then flattens. At a thickness of 0.5 the relative rate is 200, at 1 it is 100 and at 3 it is about 33. Halving the thickness doubles the rate."
 :::
 
 :::eg Use the graph to describe how the thickness of the barrier affects the rate of diffusion, and calculate the percentage fall in rate when the barrier thickens from 1 to 3 units. Explain why a thin barrier matters in the alveolus.
@@ -395,25 +395,25 @@ A: (a) holds the airway open (supports the wall) [B1]
 (b) contracts to narrow (or relaxes to widen) the airway [B1]
 (c) stretch when breathing in and recoil when breathing out, helping to expel air [B1]
 (d) makes the alveolus wall one cell thick, a short diffusion distance for gas exchange [B1]
-Q: [5 marks] ★★ A patient used a reliever inhaler during an asthma attack. A peak flow meter measures the fastest rate at which a person can blow air out. The table shows the readings taken before and after the inhaler was used at time 0.
+Q: [5 marks] ★★ A student had a chest infection (bronchitis), in which the lining of the bronchi and bronchioles is inflamed and swollen and makes extra mucus. A peak flow meter measures the fastest rate at which a person can blow air out. The table shows her peak flow on different days as she recovered (data for the question).
 
-| time after the inhaler / min | peak flow / dm³ min⁻¹ |
+| time / days | peak flow / dm³ min⁻¹ |
 |---|---|
 | 0 | 240 |
-| 5 | 300 |
-| 10 | 380 |
-| 15 | 420 |
-| 20 | 430 |
-| 30 | 430 |
+| 2 | 300 |
+| 4 | 380 |
+| 6 | 420 |
+| 8 | 430 |
+| 10 | 430 |
 
-(a) Describe the change in peak flow. (b) Calculate the percentage increase in peak flow between 0 and 20 minutes. (c) Explain the change in peak flow.
+(a) Describe the change in peak flow. (b) Calculate the percentage increase in peak flow between day 0 and day 8. (c) Suggest an explanation for the change in peak flow.
 H: For (a), give the trend with the figures and units, and say when it levels off.
 H: For (b), use (change ÷ original) × 100.
-A: (a) Peak flow increases from 240 to 430 dm³ min⁻¹ between 0 and 20 min, then stays constant at 430 dm³ min⁻¹. [B1]
+A: (a) Peak flow increases from 240 to 430 dm³ min⁻¹ between day 0 and day 8, then stays constant at 430 dm³ min⁻¹. [B1]
 (b) \((430 - 240) \div 240 \times 100\) [M1] \(= 79\%\) [A1]
-(c) The drug makes the smooth muscle in the bronchioles relax, so the bronchioles widen. [B1]
+(c) As the infection clears, the lining of the airways is less swollen and the goblet cells and glands make less mucus, so the lumen of the bronchi and bronchioles becomes wider. [B1]
 There is less resistance to the flow of air, so air can be blown out faster. [B1]
-(Also credit: the plateau shows that the muscle is fully relaxed, or that there is no further widening.)
+(Also credit: the plateau shows that the airways have returned to their normal width.)
 Q: [4 marks] ★★ A section of the wall of the trachea and a section of the wall of a bronchus are drawn as plan diagrams. (a) State two features that show the section is of the trachea and not of a bronchus. (b) State two rules for drawing a plan diagram.
 A: (a) The cartilage is a C-shaped ring (not separate plates). [B1]
 Smooth muscle is across the gap in the C (not a ring all the way round), and the lumen is larger. [B1]

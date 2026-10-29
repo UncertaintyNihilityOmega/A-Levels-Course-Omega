@@ -28,3 +28,27 @@ figures are fair schematics; the water-loss plot says its data are invented. All
 - [x] bio.enzymes2: practice reused the methanol/ethanol worked example (now malonate and succinate dehydrogenase) and the lactase-beads context (reuse question now invertase beads)
 - COURSE.md: reuse rule now covers real contexts and answers; new figure rule (leaders end on their part, legend numbers on the drawing, apparatus works as drawn). REQUESTS.md: unchecked checkbox looks ticked in light-mode shots.
 No items left for a Writer.
+
+## REVIEW P6, P8, P9 (2026-10-29)
+All 9 chapters pass `check` and `phone`; every figure and widget looked at light, dark and phone (`shot`); widget probes
+(bio-mitosis, bio-codon, bio-odc, bio-cardiac, with bad attributes) and the four logic tests in data/test_*.js pass.
+Read whole: bio.oxygen and bio.heart (every worked example and answer); the rest by worked examples, practice stems,
+keys and quizzes; numbers recomputed (Hill curve values, pressure graph readings, mitotic index, codon tables, zone areas).
+Writers' notes confirmed: the Hill model, the pressure model and both widgets agree with the chapter values; bpm
+rescaling gives the Stretch numbers (60 bpm 0.4/0.6 s, 150 bpm 0.3/0.1 s); antibiotics avoids "allele" and labels
+invented data. Fixed by the reviewer:
+- [x] bio.mammaltransport: capillary-bed figure was a 560-wide `fig` with 6 px labels on phones; redrawn 340 wide (data/fig_bio.mammaltransport.py, via data/review_capbed.py), and "gap between endothelium cells" now has a leader to a real gap instead of a legend entry with no symbol; red blood cell's pale centre drawn dashed so it no longer looks like a nucleus; capillary "lumen" leader ended on the wall edge
+- [x] bio.oxygen: carbon dioxide transport figure was a 600-wide `fig` with 5 px labels on phones; redrawn 340 wide (data/fig_bio.oxygen.py); both dissociation plots had a "120%" tick on the saturation axis (now `--ystep 50`)
+- [x] bio.antibiotics: penicillin figure "cross-links" leader ran through the enzyme circle (now from below to a rung)
+- [x] bio.gasexchange: alveolus figure drew the red blood cell in the middle of the capillary although the caption says it is squeezed against the wall (moved); diffusion plot showed "0" and "0.5" overlapping at the origin (axis now from 0, curve cut at 0.5)
+- [x] bio.heart: pressure graph used the opposite colours to widget bio-cardiac (aorta and ventricle swapped); now the same as the widget
+- [x] bio.mitosis: ★★★ spindle-drug data question repeated the chemotherapy worked example's context and answer (and its 500 cells); now an X-ray / G2-check question with new data (checks updated)
+- [x] bio.heart: ★★ right-ventricle question part (a) was the wall-thickness worked example again (now right ventricle versus right atrium); ★★ faulty-AVN question part (b) repeated the pacemaker worked example (now why the patient is breathless); aorta "stays above 9.8 kPa" when the table reaches 9.8 (now "never falls below")
+- [x] bio.oxygen: ★★★ part (b) reused the altitude worked example (now a mole in a burrow)
+- [x] bio.mammaltransport: ★★★ liver-disease oedema and the last quiz question repeated the starvation-oedema worked example's answer (now raised hydrostatic pressure from a weak heart, and a blocked lymph vessel)
+- [x] bio.gasexchange: ★★ peak-flow question reused the asthma/reliever worked example (now recovery from bronchitis, same numbers; checks label updated)
+- [x] bio.disease: ★ "describe how malaria is transmitted" was the Spot-the-error worked example's question (now why malaria passes in a transfusion but not by touch)
+- [x] bio.antibiotics: try question "influenza: why will an antibiotic not help" was the cold worked example's answer (now why an antibiotic can act on a later bacterial chest infection)
+- [x] bio.synthesis: try question GAA→GAG duplicated exam practice mutant 1 (now GGC→GGA; checks updated)
+- COURSE.md: figure rule (any figure with text labels is `fig small`, 340 wide; leaders never cross another part) and reuse rule examples (a practice question that asks the worked example's question again in other words).
+No items left for a Writer.

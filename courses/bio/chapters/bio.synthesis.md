@@ -357,8 +357,8 @@ Q: State what is meant by the template strand and the non-transcribed strand.
 A: The template (transcribed) strand is the strand of DNA that is copied to make mRNA. The non-transcribed strand is the other strand of the gene, which is not copied.
 Q: A eukaryotic gene is 2500 bases long. The mRNA made from it is 1200 bases long. Explain the difference, and calculate the total length of the introns.
 A: The primary transcript is a copy of the whole gene. Introns (non-coding sequences) are removed and the exons are joined to make the mRNA, so the mRNA is shorter. \(2500 - 1200 = 1300\) bases of introns (assuming all the mRNA is exons).
-Q: A substitution changes the mRNA codon GAA to GAG. Name the type of mutation and explain the effect on the polypeptide.
-A: A silent mutation. GAA and GAG both code for glutamic acid (the code is degenerate), so the polypeptide is unchanged.
+Q: A substitution changes the mRNA codon GGC to GGA. Name the type of mutation and explain the effect on the polypeptide.
+A: A silent mutation. GGC and GGA both code for glycine (the code is degenerate), so the polypeptide is unchanged.
 Q: Explain why translation stops at a stop codon.
 A: No tRNA has an anticodon that is complementary to a stop codon, so no amino acid is added. The polypeptide is released from the ribosome.
 :::

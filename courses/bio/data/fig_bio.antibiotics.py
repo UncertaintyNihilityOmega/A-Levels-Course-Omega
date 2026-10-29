@@ -42,7 +42,7 @@ def lab(x, y, s, target, ax=None):
     f.text(x, y, s)
     f.leader((x - 4, y - 3), target)
 lab(214, 36, "peptidoglycan chains", (150, 46))
-lab(214, 62, "cross-links", (124, 62))
+f.text(20, 104, "cross-links", "tl"); f.leader((44, 93), (64, 70))   # REVIEW: the old leader ran through the enzyme circle
 lab(214, 102, "enzyme joining the", (181, 74))
 f.text(214, 116, "chains with a link")
 # labels, row 1
