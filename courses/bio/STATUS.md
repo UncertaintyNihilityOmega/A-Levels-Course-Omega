@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-29 · WRITE P17 · bio.evolution 6.8k words, bio.classification 5.3k, bio.biodiversity 7.3k; check and phone pass; figures: tree from differences, allopatric v sympatric, three domains, hierarchy funnel, random quadrat grid, belt transect, Spearman scatter (data/fig_bio.*.py, placed with place_figs_p14.py); widget bio-diversity (modes simpson, lincoln, spearman; maths tested in data/test_bio-diversity.js; probes clean light/dark/phone/bad attributes). Reviewer: Spearman critical values 0.738 (n=8), 0.786 (n=7), 0.648 (n=10) are given in the questions; the Lincoln eg shrimp 240 and quiz/practice use new numbers; check the molecular clock plot x label crowds the tick numbers slightly; apple maggot fly and palm examples are described qualitatively; Pearson formula as in FACTS.md.
+Last: 2026-10-29 · WRITE P18 · bio.conservation 8.0k, bio.genetech 8.2k, bio.genetech2 6.7k words (check ok, phone ok); widget bio-gel probed clean (light/dark/phone/bad attributes), logic tested by data/test_bio-gel.js; reviewer: click Run the gel (3.2 s animation) and each lane preset in the browser, dark shot of gel fig; figure generators data/fig_bio.{conservation,genetech,genetech2}.py use data/figkit_p18.py; invented data labelled in the text (antelope reserve, seed viability, Bt cotton, PKU, salmon, soybean, SCID trial)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -22,8 +22,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P15: reviewed 2026-10-29
 - P16: written 2026-10-29
 - P17: written 2026-10-29
-- P18: open
-- P19: open
+- P18: written 2026-10-29
+- P19: writing 2026-10-29
 - P20: open
 - P21: open
 - P22: open
