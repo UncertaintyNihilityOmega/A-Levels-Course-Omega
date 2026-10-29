@@ -91,3 +91,29 @@ the non-disjunction idea in the stem and need only taught ideas, so they stay as
 - [x] bio-punnett: in two-gene mode the four phenotype-name boxes overlapped each other and the last ran past the card (fixed width 12em in a narrower grid column; now width 100%, max 12em); the "Mother (X^H X^h) makes gametes" line now uses real superscripts (the select options keep X^H, which an option cannot format)
 - [x] bio-chisq: on phones the class names broke inside words ("roun-d yello-w") and the empty-chart message was cut off at both ends; names now wrap at spaces, the table scrolls if needed, and the message is shorter on narrow canvases
 - [x] bio-sarcomere: "thin and thick overlap" read 1.8 µm at the shortest length, more than the 1.6 µm A band (overlap now capped at the A band; data/test_bio-sarcomere.js updated)
+
+## REVIEW P16, P17, P18 (2026-10-29)
+Read whole: every worked example and answer of bio.genetech and bio.biodiversity; the rest by openings, keys,
+quizzes and the items in the Writers' notes. Numbers recomputed (t = 5.86, Hardy–Weinberg sets, Spearman rush,
+slug and altitude tables, Pearson moss and limpet r, Simpson X/Y and the sewage sites, Lincoln estimates, reserve
+core areas, antelope growth, PCR copies, ladder interpolation 1414 and 1516/354 bp, plasmid digests, Bt cotton);
+critical values match FACTS.md. All figures and the four widgets looked at in light, dark and phone; bio-gel run
+(light and dark, mid-animation), every lane treatment, bad cuts, lengths out of range, Reset, keyboard only;
+bio-ttest, bio-hardy (both tabs, all three inputs, N = 10/100/1000) and bio-diversity (three modes, edge cases).
+Writers' notes confirmed: P16 lac Q4 table now separates strains 2/3/4, the sickle cell Q gives malaria in the
+stem, organisms in quiz/practice differ from the examples, figures fine in dark; P17 Spearman critical values are
+in the questions, Lincoln practice numbers differ from the shrimp 240, molecular clock label fixed (below), apple
+maggot and palms are qualitative, Pearson formula as FACTS.md; P18 invented data labelled, gel figure fixed (below).
+Fixed by the reviewer:
+- [x] bio.evolution: molecular clock `:::plot` sat inside the `:::eg` (271 px on phones, x label on the tick numbers); moved after the example with a lead sentence, range 0–12 / 0–70, shorter point labels
+- [x] bio.genetech: gel figure sample bands (ink fill) did not match bio-gel's green bands; now course-colour strokes that show in light and dark (data/fig_bio.genetech.py); caption now explains sample 2 (cut only at 1200 bp)
+- [x] bio.genetech: plasmid figure drew nothing for step 4 although the alt text described glowing cells, and the plasmid in the bacterium had no gene; step 4 now shows a glowing cell with the plasmid and a cell with none, and the gene is marked in step 3
+- [x] bio.genetech: PCR plot label "32 after 5 cycles" was drawn across the curve (now @nw)
+- [x] bio.classification: hierarchy figure printed Homo and Homo sapiens upright (now italic, also in data/fig_bio.classification.py)
+- [x] bio.selection: sickle cell answer had one token "[M1 A1]" (now "[M1] [A1]")
+- [x] bio-hardy: p² showed 0.96 for 0.9604, so p² + 2pq + q² visibly did not add to 1 (4 significant figures now); drift tab drew two of the five lines in near-identical greens (theme series 4 skipped)
+- [x] bio-diversity: on phones the Simpson species table was wider than the card, hiding the site-2 counts and the remove buttons (inputs now width 100% with min/max widths)
+Open (Writer):
+- [ ] bio.genetech: the chapter has no `:::exam` box (COURSE.md: every chapter teaches describe ≠ explain in one); add one after the insulin example: "Explain the role of each enzyme" = name the enzyme, what it does, and why it is needed at that step, with the weak/strong pair from that example
+- [ ] bio.conservation: the chapter has no `:::key` box; add one after the extinction causes (habitat loss and fragmentation, climate change, overexploitation, invasive species, pollution, each with its effect) and one short in situ v ex situ summary
+- [ ] bio.genetech2: the chapter has no `:::key` box; add one for gene therapy (somatic v germ-line, vectors, ex vivo for SCID) and one for genetic screening (what a positive result does and does not mean)

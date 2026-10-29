@@ -52,6 +52,9 @@ hier = h.svg((340, H),
     "A funnel of eight nested bars, each narrower than the one above. From the top: Domain Eukarya, Kingdom Animalia, Phylum Chordata, Class Mammalia, Order Primates, Family Hominidae, Genus Homo, Species Homo sapiens. Each rank is a smaller group inside the one above.",
     "The classification of a human. Each bar is a rank, drawn narrower than the one above because it holds fewer organisms, which share more features.",
     "fig small")
+# REVIEW P16-P18: genus and species names are italic
+hier = hier.replace(">Genus: Homo<", '>Genus: <tspan font-style="italic">Homo</tspan><').replace(
+    ">Species: Homo sapiens<", '>Species: <tspan font-style="italic">Homo sapiens</tspan><')
 print(dom)
 print()
 print(hier)

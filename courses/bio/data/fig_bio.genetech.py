@@ -70,15 +70,26 @@ f.line([(10, 268), (330, 268)], "ln-m thin")
 # row 3
 f.rect(230, 282, 96, 68, "f1 s-acc sw2", rx=24)
 f.circle(260, 316, 14, "ln thick fp")
+f.raw(f'<path class="c2 sw3" d="{arc(260, 316, 14, -60, 60, 0)}"/>')   # REVIEW: the gene on the plasmid
 f.text(278, 368, "bacterium", "tl", "middle")
 f.text(10, 300, "3  Bacteria are treated")
 f.text(10, 316, "(calcium ions, heat")
 f.text(10, 332, "shock) so plasmids enter.")
 f.line([(10, 388), (330, 388)], "ln-m thin")
-f.text(10, 408, "4  Marker gene: cells that glow")
-f.text(10, 424, "have the plasmid and express it.")
-figs["plasmid"] = f.svg((340, 436),
-    "Four steps drawn one under another. 1: a gene shown as a bar and a bacterial plasmid shown as an open ring, cut by the same restriction enzyme. 2: DNA ligase seals the gene into the ring, making a recombinant plasmid. 3: bacteria are treated with calcium ions and heat shock so that the plasmid enters a bacterium. 4: cells with the marker gene glow, showing that they have the plasmid and express it.",
+# row 4 (REVIEW P16-P18: step 4 drawn): a glowing cell with the plasmid, a dark cell without
+f.text(10, 412, "4  Marker gene: a cell")
+f.text(10, 428, "that glows has the")
+f.text(10, 444, "plasmid and expresses it.")
+f.rect(194, 410, 52, 34, "f2 s-acc2 sw2", rx=14)
+f.circle(210, 427, 8, "ln fp")
+f.raw(f'<path class="c2 sw3" d="{arc(210, 427, 8, -60, 60, 0)}"/>')
+for p, q in [((220, 404), (220, 397)), ((191, 407), (186, 402)), ((249, 407), (254, 402)), ((188, 427), (182, 427)), ((252, 427), (257, 427))]:
+    f.line([p, q], "c2 sw2")
+f.rect(268, 410, 52, 34, "f1 s-acc sw2", rx=14)
+f.text(220, 466, "glows", "tl", "middle")
+f.text(294, 466, "no plasmid", "tl", "middle")
+figs["plasmid"] = f.svg((340, 476),
+    "Four steps drawn one under another. 1: a gene shown as a bar and a bacterial plasmid shown as an open ring, cut by the same restriction enzyme. 2: DNA ligase seals the gene into the ring, making a recombinant plasmid. 3: bacteria are treated with calcium ions and heat shock so that the plasmid, carrying the gene, enters a bacterium. 4: two bacteria; the one with the plasmid glows, shown with short rays around it, and the one with no plasmid does not.",
     "Making and selecting bacteria that carry a recombinant plasmid.")
 objs.append(f)
 
@@ -128,15 +139,16 @@ for L in (5000, 3000, 2000, 1000, 500, 200, 100):
     f.rect(68, y - 2, 44, 4, "f2 s-acc2")
     f.text(44, y + 3, str(L), "ts", "end")
 for L, h in ((1900, 9), (1200, 5)):
-    f.rect(148, Y(L) - h / 2, 44, h, "fi")
+    # REVIEW P16-P18: course-colour bands (as in bio-gel), drawn as strokes so they show in dark mode too
+    f.raw(f'<path class="c1" style="stroke-width:{h}px" d="M148 {Y(L):.1f}L192 {Y(L):.1f}"/>')
 for L, h in ((3800, 5), (1200, 5)):
-    f.rect(228, Y(L) - h / 2, 44, h, "fi")
+    f.raw(f'<path class="c1" style="stroke-width:{h}px" d="M228 {Y(L):.1f}L272 {Y(L):.1f}"/>')
 f.text(309, 46, "−", "tl", "middle")
 f.text(309, 214, "+", "tl", "middle")
 f.text(50, 244, "sizes of the ladder bands in bp", "ts")
 figs["gel"] = f.svg((320, 256),
     "A gel with three lanes. Wells at the top, marked minus; the far end is marked plus. The ladder lane has seven bands, 5000, 3000, 2000, 1000, 500, 200 and 100 base pairs from the top down. Sample 1 has a thick band at 1900 base pairs and a band at 1200. Sample 2 has bands at 3800 and 1200. Shorter fragments are nearer the plus end.",
-    "A gel after electrophoresis. DNA moves from the wells (−) towards the + end, and shorter fragments travel further. Sample 1 is the 5000 bp DNA cut at 1200 and 3100 bp: two fragments of 1900 bp make one thicker band.")
+    "A gel after electrophoresis. DNA moves from the wells (−) towards the + end, and shorter fragments travel further. Sample 1 is the 5000 bp DNA cut at 1200 and 3100 bp: two fragments of 1900 bp make one thicker band. Sample 2 is the same DNA cut only at 1200 bp (3800 and 1200 bp).")
 objs.append(f)
 
 report(objs)

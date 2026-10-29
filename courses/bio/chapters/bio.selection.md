@@ -482,7 +482,7 @@ Migration of ladybirds carrying B into the population (or genetic drift if the p
 Q: [6 marks] (#bio.genecontrol) ★★★ In a region where malaria is common, 1 in 100 babies is born with sickle cell anaemia (\(\mathrm{Hb^S Hb^S}\)). Assume Hardy–Weinberg equilibrium. People who are \(\mathrm{Hb^A Hb^S}\) are less likely to die of malaria than people who are \(\mathrm{Hb^A Hb^A}\), but people who are \(\mathrm{Hb^S Hb^S}\) usually die young. (a) Calculate the frequency of the \(\mathrm{Hb^S}\) allele and the percentage of the population who have sickle cell trait. (b) Explain why the \(\mathrm{Hb^S}\) allele is common here although it causes a serious disease.
 H: \(q^2 = 0.01\). Carriers are \(2pq\).
 H: Which genotype has the highest chance of surviving and reproducing in this region?
-A: (a) \(q = \sqrt{0.01} = 0.1\) [M1 A1]
+A: (a) \(q = \sqrt{0.01} = 0.1\) [M1] [A1]
 \(p = 0.9\), so \(2pq = 2 \times 0.9 \times 0.1 = 0.18\), or 18% [A1]
 (b) The heterozygotes are more likely to survive malaria than \(\mathrm{Hb^A Hb^A}\) people, so they are more likely to survive and reproduce. [B1]
 They pass on both alleles, \(\mathrm{Hb^A}\) and \(\mathrm{Hb^S}\), so the \(\mathrm{Hb^S}\) allele stays in the gene pool. [B1]

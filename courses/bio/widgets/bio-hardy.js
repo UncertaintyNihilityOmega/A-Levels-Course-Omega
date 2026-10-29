@@ -66,7 +66,8 @@
     if (x === 0) return '0';
     const a = Math.abs(x);
     if (a < 1e-4) return x.toExponential(2).replace('e-', ' × 10⁻').replace(/\+/, '');
-    return String(parseFloat(x.toPrecision(3)));
+    // 4 significant figures, so that p² + 2pq + q² visibly add to 1 (0.9604 + 0.0392 + 0.0004, not 0.96 + …)
+    return String(parseFloat(x.toPrecision(4)));
   }
 
   // one allele with frequency p0 in a population of n diploid individuals (2n alleles): GENS generations, REPS replicates
@@ -255,7 +256,9 @@
       ctx.textAlign = 'right';
       ctx.fillText('generation', w - R, h - 4);
       ctx.restore();
-      const pal = (W.palette ? W.palette(el).series : null) || [c.sc, c.sc2 || c.sc, c.red, c.ok || c.sc, c.ink2];
+      // series 4 is a second green in this course's theme (too close to series 1): use 1, 2, 3, 5, 6
+      const ser = W.palette ? W.palette(el).series : null;
+      const pal = (ser && ser.length >= 6 ? [ser[0], ser[1], ser[2], ser[4], ser[5]] : ser) || [c.sc, c.sc2 || c.sc, c.red, c.ok || c.sc, c.ink2];
       ctx.save();
       ctx.beginPath(); ctx.rect(L, T - 2, w - L - R, h - T - Bt + 4); ctx.clip();
       S.lines.forEach(function (line, i) {

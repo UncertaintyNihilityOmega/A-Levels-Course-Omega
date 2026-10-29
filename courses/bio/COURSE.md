@@ -68,6 +68,9 @@ writes it before any Writer starts.
   description in the sentence above. Tables work inside `:::eg` and inside a `:::try` question (blank line before
   and after).
 - Display maths in a worked example: one step per row (`\begin{aligned} … \\ &= … \end{aligned}`) so it fits phones.
+- A `:::plot` goes after the `:::eg`, never inside it (inside, it is 271 px wide on phones and its labels pile up on
+  the ticks; REVIEW P16–P18 moved the molecular clock). Before `done`, `grep -c "^:::key\|^:::exam"` each chapter:
+  every topic chapter has at least one of each (P16–P18 had three chapters missing one).
 - `:::plot` formulas are parsed as JavaScript: never a unary minus before `**` (`exp(0-((x-2)/1.3)**2)`, not
   `exp(-((x-2)/1.3)**2)`). Cut curves that run along the x-axis short with `+0*sqrt(a-x)`.
 - Hand SVGs: copy the `Fig` class in `data/fig_bio.enzymes.py`. It writes the SVG and checks every label box against

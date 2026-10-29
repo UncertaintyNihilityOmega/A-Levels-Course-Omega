@@ -288,9 +288,9 @@
       function renderRows(focusIdx, focusWhat) {
         tbody.textContent = '';
         rows.forEach(function (r, i) {
-          const nm = W.h('input', { type: 'text', value: r.name, maxlength: '24', autocomplete: 'off', 'aria-label': 'Name of species ' + (i + 1), style: { width: '100%', minWidth: '7.5em' } });
-          const ca = W.h('input', { type: 'number', min: '0', step: '1', value: r.a, 'aria-label': 'Species ' + (i + 1) + ' count at site 1', style: { width: '4.6em' } });
-          const cb = W.h('input', { type: 'number', min: '0', step: '1', value: r.b, 'aria-label': 'Species ' + (i + 1) + ' count at site 2', style: { width: '4.6em' } });
+          const nm = W.h('input', { type: 'text', value: r.name, maxlength: '24', autocomplete: 'off', 'aria-label': 'Name of species ' + (i + 1), style: { width: '100%', minWidth: '4.5em' } });
+          const ca = W.h('input', { type: 'number', min: '0', step: '1', value: r.a, 'aria-label': 'Species ' + (i + 1) + ' count at site 1', style: { width: '100%', maxWidth: '4.6em', minWidth: '2.8em' } });
+          const cb = W.h('input', { type: 'number', min: '0', step: '1', value: r.b, 'aria-label': 'Species ' + (i + 1) + ' count at site 2', style: { width: '100%', maxWidth: '4.6em', minWidth: '2.8em' } });
           const rm = removeBtn('Remove species ' + (i + 1));
           nm.addEventListener('input', function () { r.name = nm.value; calc(); });
           ca.addEventListener('input', function () { r.a = ca.value; calc(); });
