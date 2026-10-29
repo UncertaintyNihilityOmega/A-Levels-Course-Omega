@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-29 · REVIEW P10, P11, P12 · 2 items open (chromatogram solvent band; a limiting quiz duplicate); fixed: bio-limiting legend moved off the canvas (covered axis label and low plateaus); 3 quizzes and 4 practice questions that reused a worked example (inverse square, leaky membrane, Rf 8.0 cm, antibody graph, rabies scheme, rice, algae); limiting facts (temperature and light stage, isolated chloroplasts); unrealistic RQ 0.50 quiz; RQ plot extrapolation; antibodies plot legend; carp 'other mammals'; COURSE.md quiz-reuse and widget-extremes rules; REQUESTS: plots inside :::eg narrow on phones
+Last: 2026-10-29 · WRITE P14 · bio.nerves 6.5k words (7 eg, 20 try, 9 quiz, 44 marks), bio.synapses 6.3k words (8 eg, 20 try, 9 quiz, 45 marks); check and phone pass; widgets bio-actionpot (single/train, five-stage stepper, all-or-nothing slider) and bio-sarcomere (to-scale bands, calcium and ATP rules) probed clean light/dark/phone/bad attributes, maths tested in data/test_bio-*.js. Reviewer: please click through both widgets, and check Stretch Q1 of bio.synapses (no-ATP stiff bundle) is distinct enough from the rigor mortis example.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -18,7 +18,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P11: reviewed 2026-10-29
 - P12: reviewed 2026-10-29
 - P13: written 2026-10-29
-- P14: writing 2026-10-29
+- P14: written 2026-10-29
 - P15: open
 - P16: open
 - P17: open

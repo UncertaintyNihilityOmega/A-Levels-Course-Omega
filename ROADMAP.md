@@ -3,9 +3,9 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
-- Current course: **Biology** (`bio`, queue item 2). P1–P13 written, P1–P9 reviewed (0 open items).
-  Running (run of 2026-10-29 08:25): REVIEW P10, P11, P12 (bio-preview pane, port 5104); Writer P14. Usage gate
-  (5-hour 73%) holds P15 until the reset at 12:30.
+- Current course: **Biology** (`bio`, queue item 2). P1–P14 written, P1–P12 reviewed (2 open items in REVIEW.md:
+  bio.photosynthesis, bio.limiting). Nothing running: waiting for the reset at 12:30 (5-hour 94%, weekly 67%).
+  Next: FIX + WRITE P15, Writer P16, then REVIEW P13, P14, P15.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and

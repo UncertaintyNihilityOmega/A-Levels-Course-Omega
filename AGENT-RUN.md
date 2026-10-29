@@ -40,8 +40,9 @@ awake (Windows: Sleep "Never" when plugged in).
 - Read the meter with `get_usage` (`mcp__ccd_session_mgmt__get_usage`) just before each agent launch.
 - Writer (WRITE, FIX + WRITE, resume): only if the 5-hour window is at 70% or less and the weekly limit at 85% or less.
 - Specialist (REVIEW, LEAD), Reader, FIX only: 5-hour at 75% or less, weekly at 85% or less.
-- Otherwise start nothing: let running agents finish, check and commit them, write "waiting for the reset at <time>"
-  in "Now", delete the lock and stop. A later scheduled run starts again once the gate allows it.
+- Otherwise start nothing: let running agents finish, check and commit them. If the 5-hour reset is under 30 minutes
+  away, wait for it (background `sleep`) and go on; else write "waiting for the reset at <time>" in "Now", delete the
+  lock and stop. A later scheduled run starts again once the gate allows it.
 - Log every agent in `.run/usage.log`, one line: date, step, model, 5-hour and weekly % at launch and at report, and
   the other agents running meanwhile. Once 6 agents are logged, set the thresholds here from the numbers (a launch
   must leave room for that step's typical share of the window).
