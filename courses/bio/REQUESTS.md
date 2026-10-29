@@ -17,4 +17,7 @@ Engine bugs, new block types, design changes, or anything that needs another cou
   - Organizer 2026-10-29: real, not only headless. With the light theme chosen on a device in dark mode, the page
     kept `color-scheme: light dark` from the meta tag, so native controls (checkboxes, selects, scrollbars) drew
     dark. `:root` now sets `color-scheme: light` (engine/style.css); dark still sets `dark`. Re-shot: unchecked boxes are white.
-- [ ] 2026-10-29 · A `:::plot` inside a `:::eg` is drawn 271 px wide in a 341 px card on a 375 px phone (about 56 px empty on the right, and the `shot --phone` image shows a vertical line there), e.g. bio.anaerobic (yeast rates), bio.energy (RQ of seeds) · could plots inside a worked example use the card's full width on phones?
+- [x] 2026-10-29 · A `:::plot` inside a `:::eg` is drawn 271 px wide in a 341 px card on a 375 px phone (about 56 px empty on the right, and the `shot --phone` image shows a vertical line there), e.g. bio.anaerobic (yeast rates), bio.energy (RQ of seeds) · could plots inside a worked example use the card's full width on phones?
+  - Organizer 2026-10-29: no change. The empty strip is the marks margin of the worked-example card and the line is
+    its red margin rule (the frozen "marked script" design; every `:::eg` in every course has it). A plot that needs
+    the full width goes just before the `:::eg`, or the plot keeps few labels so it reads at 271 px.
