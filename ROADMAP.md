@@ -4,7 +4,8 @@
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
 - Current course: **Biology** (`bio`, queue item 2). P1–P17 written, P1–P15 reviewed (0 open items).
-  Running (18:38): WRITE P18, WRITE P19 (5-hour 1%, weekly 79%). Next: REVIEW P16, P17, P18. Reviewer: P17 molecular-clock plot x label crowds the ticks.
+  P18 written. Running (19:04): WRITE P19, WRITE P20, REVIEW P16, P17, P18 (preview server 5104; 5-hour 28%,
+  weekly 82%). Reviewer: P17 molecular-clock plot x label crowds the ticks.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
