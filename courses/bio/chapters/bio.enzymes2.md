@@ -427,18 +427,18 @@ A: (a) Without Z, Vmax is about 64 and Km is 4 mmol dm⁻³ (half of 64 is 32, r
 (b) Z is a non-competitive inhibitor. Vmax is lower with Z. [B1] Km is unchanged. [B1]
 (c) Z binds to a site other than the active site and changes the shape of the active site, so substrate cannot bind to the inhibited enzyme molecules. [B1]
 More substrate cannot displace Z, so those molecules stay inactive. [B1]
-Q: [5 marks] ★★ Lactase beads were used repeatedly. After each use they were rinsed and used with fresh milk. The activity (as a percentage of the first use) was 100, 98, 97, 95, 92 and 88 for uses 1 to 6. (a) Calculate the percentage decrease in activity between use 1 and use 6. (b) Suggest two reasons why the activity decreases. (c) State one advantage of reuse.
+Q: [5 marks] ★★ Beads of invertase, an enzyme that hydrolyses sucrose, were used repeatedly. After each use they were rinsed and used with fresh sucrose solution. The activity (as a percentage of the first use) was 100, 98, 97, 95, 92 and 88 for uses 1 to 6. (a) Calculate the percentage decrease in activity between use 1 and use 6. (b) Suggest two reasons why the activity decreases. (c) State one advantage of reuse.
 H: Percentage decrease is the change divided by the original, times 100.
 A: (a) \((100 - 88) \div 100 \times 100\) [M1] \(= 12\%\) [A1]
 (b) Some beads break or some enzyme leaks out of the beads. [B1]
 Enzyme molecules slowly become denatured. [B1]
 (c) The enzyme is reused, so it costs less per batch (or the product is not contaminated with enzyme). [B1]
-Q: [4 marks] ★★ Methanol is converted by an enzyme into a toxic product. A researcher wants to show that ethanol is a competitive inhibitor of this enzyme. (a) Suggest how a graph of rate against methanol concentration, with and without ethanol, would show this. (b) Explain why ethanol is a competitive inhibitor.
+Q: [4 marks] ★★ The enzyme succinate dehydrogenase acts on a substrate called succinate. Malonate has a shape similar to succinate. A researcher wants to show that malonate is a competitive inhibitor of this enzyme. (a) Suggest how a graph of rate against succinate concentration, with and without malonate, would show this. (b) Explain why malonate is a competitive inhibitor.
 H: What happens to Vmax and Km in a competitive inhibition?
-A: (a) With ethanol, Vmax is the same, so the curves approach the same plateau. [B1]
-The curve with ethanol is lower at low methanol concentrations and reaches half of Vmax at a higher concentration (Km increases). [B1]
-(b) Ethanol has a similar shape to methanol, so it binds to the active site. [B1]
-It competes with methanol, so its effect is reduced when the methanol concentration increases. [B1]
+A: (a) With malonate, Vmax is the same, so the curves approach the same plateau. [B1]
+The curve with malonate is lower at low succinate concentrations and reaches half of Vmax at a higher concentration (Km increases). [B1]
+(b) Malonate has a similar shape to succinate, so it binds to the active site. [B1]
+It competes with succinate, so its effect is reduced when the succinate concentration increases. [B1]
 Q: [6 marks] (#bio.foodtests) ★★★ A student compared lactase free in solution with lactase in alginate beads. 5 cm³ of milk was added to each, and after 5 minutes a glucose test strip was used. (a) Describe how the beads were made. (b) Explain why Benedict's solution would be unsuitable for measuring the glucose made. (c) The free enzyme produced more glucose than the beads in the first 5 minutes. Explain this. (d) Give one reason why a manufacturer might still choose to use the beads.
 H: Is lactose a reducing sugar?
 H: How does the substrate reach the enzyme in a bead?

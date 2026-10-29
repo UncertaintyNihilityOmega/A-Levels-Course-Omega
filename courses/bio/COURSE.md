@@ -46,7 +46,9 @@ writes it before any Writer starts.
 - **Practice questions never reuse a worked example's data or organism.** New numbers, new context. This includes
   the quiz and the same organism with other numbers (REVIEW P1–P3 changed five: 0.15 µm, 25 units = 6 divisions,
   0.0065 mm, humans and cellulose, a bear given two different daily energy needs). Before `done`, grep the chapter
-  for each worked example's numbers and organism.
+  for each worked example's numbers and organism. It also covers a worked example's real context and its answer
+  (REVIEW P4/P5/P7 changed methanol and ethanol used again in practice, a quiz whose new numbers gave the example's
+  1.26 m h⁻¹, and serial dilutions repeating the example's 1.0% and 0.25%).
 - Length: as long as the topic needs (the gold chapter is about 790 lines, half of it practice). No padding.
 
 ## Format lessons from the gold chapter (each one cost a fix)
@@ -109,6 +111,10 @@ writes it before any Writer starts.
   `<figure>` lines and leaves every other line unchanged. data/stitch.py keeps a template copy of bio.cells and
   bio.prokaryotes and refuses to run if a later Edit reached only one copy: make any Edit to those two chapters in
   both files. Do not start new template copies.
+- The clearance check does not check meaning: every leader must end on (or inside) the part it names, every number
+  in a legend must appear on the drawing, and apparatus must work as drawn (REVIEW P4/P5/P7 fixed a vacuole leader
+  ending on the wall, a membrane leader ending in the gap, unnumbered transpiration steps and a potometer capillary
+  passing through the beaker wall). Look at each figure once and check this.
 - Dark mode: a pale fill without an outline vanishes. Give every filled shape an outline (`f1 s-acc sw2`, or a `ln`
   stroke). Never name colours in captions or text.
 - Keep every figure and widget generator script in **data/** (scratch/ is not backed up). Python that computes SVG

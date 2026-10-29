@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-29 · WRITE P8 · bio.mammaltransport 7.2k words (5 SVGs, 6 eg), bio.oxygen 6.2k (2 SVGs, 2 plots, 7 eg: new Bohr-shift calculation and tissues-versus-lungs table; widget bio-odc), bio.heart 6.6k (4 SVGs, 7 eg: new describe-the-trace, heart-rate-from-cycles and electrical-plus-pressure table; widget bio-cardiac); widgets bio-odc (pCO2 slider, two markers draggable or sliders, readout, Bohr text) and bio-cardiac (time slider, Play at quarter speed, Next valve event, bpm 50-150 rescales time with diastole shortening most, valve states from pressures) probed clean light/dark/phone/bad attributes, maths tested in data/test_bio-odc.js and data/test_bio-cardiac.js. Notes for the reviewer: heart LS redrawn as 400-wide fig small with stacked labels and the pressure graph as fig small (both looked at on phone); heart figures placed with data/place_figs_p6.py bio.heart; Writer's notes appended to packages/P8.md; widgets not clicked in a browser (no browser tools), keyboard use rests on native range inputs and buttons.
+Last: 2026-10-29 · REVIEW P4, P5, P7 · 0 open items; reviewer fixed: bio-enzyme Km label on phones and pH stage wording; plant-cell leaders, Visking colours (movement); transpiration step numbers, potometer redraw, plot cut, exam wording (planttransport); ringing label, quiz reusing 1.26 m/h, glycolysis term, stretch rewrite (translocation); reused example data/contexts in foodtests and enzymes2; COURSE.md reuse and figure-meaning rules; REQUESTS checkbox
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -8,10 +8,10 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P1: reviewed 2026-10-28
 - P2: reviewed 2026-10-28
 - P3: reviewed 2026-10-28
-- P4: written 2026-10-28
-- P5: written 2026-10-28
+- P4: reviewed 2026-10-29
+- P5: reviewed 2026-10-29
 - P6: written 2026-10-28
-- P7: written 2026-10-28
+- P7: reviewed 2026-10-29
 - P8: written 2026-10-29
 - P9: written 2026-10-29
 - P10: open

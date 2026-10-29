@@ -34,9 +34,9 @@ eq("percentage decrease 10 to 70 cm", sf((14.2 - 9.6) / 14.2 * 100, 2), 32)
 eq("root mass percentage", sf(0.8 / 2.1 * 100, 2), 38)
 # --- Exam practice: loading rates
 assert 100 > 22 > 18
-# --- Quiz: 63 cm in 30 min
-eq("quiz speed", 0.63 / 0.5, 1.26)
-eq("quiz cm per min", 63 / 30, 2.1)
-eq("quiz divides by 2", 0.63 / 2, 0.315)
-eq("quiz forgets cm to m", 63 / 0.5, 126)
+# --- Quiz: 54 cm in 30 min (REVIEW P4, P5, P7: was 63 cm, which gave the worked example's 1.26 m/h)
+eq("quiz speed", 0.54 / 0.5, 1.08)
+eq("quiz cm per min", 54 / 30, 1.8)
+eq("quiz divides by 2", 0.54 / 2, 0.27)
+eq("quiz forgets cm to m", 54 / 0.5, 108)
 print("ok", n)

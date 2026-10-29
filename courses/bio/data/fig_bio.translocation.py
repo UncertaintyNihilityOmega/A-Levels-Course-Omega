@@ -82,8 +82,8 @@ f.text(RX, 34, "bark with phloem"); f.leader((RX - 4, 31), (212, 34))
 f.text(RX, 66, "xylem"); f.leader((RX - 4, 63), (188, 66))
 f.text(RX, 98, "swelling: sucrose"); f.text(RX, 112, "builds up above"); f.text(RX, 126, "the ring"); f.leader((RX - 4, 95), (220, 98))
 f.text(RX, 160, "ring: bark and"); f.text(RX, 174, "phloem removed"); f.leader((RX - 4, 157), (188, 130))
-f.text(RX, 216, "roots (sink)"); f.leader((RX - 4, 213), (212, 213))
-f.text(122, 14, "leaves (source) above", anchor="start") if False else None
+f.text(RX, 208, "below the ring:"); f.text(RX, 222, "towards the roots"); f.text(RX, 236, "(sink)")   # review: was "roots (sink)" pointing at stem bark
+f.leader((RX - 4, 205), (212, 205))
 figs.append(f.svg((380, 252),
     "A stem with a ring of bark and phloem removed. Above the ring the stem is swollen and an arrow shows sucrose moving down the phloem and stopping at the ring. At the ring only the xylem remains. Below the ring the stem is normal.",
     "A ringing experiment. Removing a ring of bark, which includes the phloem, stops sucrose passing down the stem. The xylem is left, so water can still move up."))

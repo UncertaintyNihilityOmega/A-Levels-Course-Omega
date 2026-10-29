@@ -144,7 +144,7 @@ Think of a sieve tube as a hosepipe. Loading at the source is the tap being turn
 **Ringing (girdling).** A ring of bark, which includes the phloem but not the xylem, is removed from a stem.
 
 :::html
-<figure class="fig small"><svg viewBox="0 0 380 252" role="img" aria-label="A stem with a ring of bark and phloem removed. Above the ring the stem is swollen and an arrow shows sucrose moving down the phloem and stopping at the ring. At the ring only the xylem remains. Below the ring the stem is normal."><path class="f1 s-acc sw2" d="M130 20L130 70L122 100L122 112L154 114L154 138L130 140L130 240L210 240L210 140L186 138L186 114L218 112L218 100L210 70L210 20Z"/><rect class="f2 s-acc2 sw2" x="154" y="20" width="32" height="220"/><path class="c2 sw2" d="M140 32L140 96" marker-end="url(#ah)"/><text class="tl" x="236" y="34">bark with phloem</text><path class="ln-m thin" d="M232 31L212 34"/><text class="tl" x="236" y="66">xylem</text><path class="ln-m thin" d="M232 63L188 66"/><text class="tl" x="236" y="98">swelling: sucrose</text><text class="tl" x="236" y="112">builds up above</text><text class="tl" x="236" y="126">the ring</text><path class="ln-m thin" d="M232 95L220 98"/><text class="tl" x="236" y="160">ring: bark and</text><text class="tl" x="236" y="174">phloem removed</text><path class="ln-m thin" d="M232 157L188 130"/><text class="tl" x="236" y="216">roots (sink)</text><path class="ln-m thin" d="M232 213L212 213"/></svg><figcaption>A ringing experiment. Removing a ring of bark, which includes the phloem, stops sucrose passing down the stem. The xylem is left, so water can still move up.</figcaption></figure>
+<figure class="fig small"><svg viewBox="0 0 380 252" role="img" aria-label="A stem with a ring of bark and phloem removed. Above the ring the stem is swollen and an arrow shows sucrose moving down the phloem and stopping at the ring. At the ring only the xylem remains. Below the ring the stem is normal."><path class="f1 s-acc sw2" d="M130 20L130 70L122 100L122 112L154 114L154 138L130 140L130 240L210 240L210 140L186 138L186 114L218 112L218 100L210 70L210 20Z"/><rect class="f2 s-acc2 sw2" x="154" y="20" width="32" height="220"/><path class="c2 sw2" d="M140 32L140 96" marker-end="url(#ah)"/><text class="tl" x="236" y="34">bark with phloem</text><path class="ln-m thin" d="M232 31L212 34"/><text class="tl" x="236" y="66">xylem</text><path class="ln-m thin" d="M232 63L188 66"/><text class="tl" x="236" y="98">swelling: sucrose</text><text class="tl" x="236" y="112">builds up above</text><text class="tl" x="236" y="126">the ring</text><path class="ln-m thin" d="M232 95L220 98"/><text class="tl" x="236" y="160">ring: bark and</text><text class="tl" x="236" y="174">phloem removed</text><path class="ln-m thin" d="M232 157L188 130"/><text class="tl" x="236" y="208">below the ring:</text><text class="tl" x="236" y="222">towards the roots</text><text class="tl" x="236" y="236">(sink)</text><path class="ln-m thin" d="M232 205L212 205"/></svg><figcaption>A ringing experiment. Removing a ring of bark, which includes the phloem, stops sucrose passing down the stem. The xylem is left, so water can still move up.</figcaption></figure>
 :::
 
 After some days the stem **swells above the ring**, and the sucrose concentration there is high, while it is low below the ring. The sucrose could not pass the ring because the phloem was removed. The leaves do not wilt, because the xylem is intact and water continues to rise. If the ring is wide the roots, which depend on sucrose from above, may die, so the whole plant dies.
@@ -340,7 +340,7 @@ So no H⁺ gradient is built up, and the cotransporter cannot bring sucrose in. 
 The second chemical lets H⁺ leak back in, so the H⁺ gradient cannot be maintained. [B1]
 So less sucrose is brought in by the cotransporters, so loading falls. [B1]
 (b) There is already an H⁺ gradient (and ATP) in the cell when the chemical is added, so loading goes on until it runs down. [B1]
-Another source of ATP (for example from glycolysis) could keep a few pumps working. [B1]
+Some ATP can still be made without the mitochondria (by anaerobic respiration in the cytoplasm), so a few pumps keep working. [B1]
 :::
 
 :::try Stretch for A*
@@ -353,13 +353,14 @@ In late summer the leaves are sources and the new tubers are sinks. [B1]
 In the new tuber, sucrose is removed from the phloem and converted to starch, which is insoluble. [B1]
 This keeps the sucrose concentration, and so the water potential gradient, favourable: the water potential of the phloem there stays high so water leaves and the pressure stays low. [B1]
 Therefore there is a pressure gradient from leaf to tuber, and mass flow continues. [B1]
-Q: [5 marks] ★★★ A scientist cooled a section of a stem to 2 °C with a jacket round it and measured the speed of movement of a labelled sucrose through the stem. The speed fell sharply when the jacket was applied, and rose again, to more than the original rate, within an hour of removing it. (a) Suggest why cooling the stem would reduce the speed. (b) Some scientists said this showed that mass flow in the sieve tubes was a passive process. Explain why this is not a sound conclusion.
-H: Cooling affects the viscosity of sap, the plasmodesmata and the companion cells.
-A: (a) Cooling reduces the rate of respiration, so less ATP is made, so loading and the retrieval of sucrose along the sieve tubes by active transport is reduced. [B1]
-Cold sap is more viscous and the cells' membranes may become less fluid, so flow is slower. [B1]
-(b) Cooling the whole stem section reduces the ATP supply of the companion cells along the stem, which are needed to maintain sucrose in the sieve tubes. [B1]
-The speed rose again after rewarming, so the effect is reversible and consistent with a process that needs energy. [B1]
-The experiment cannot separate loading by active transport from the flow itself, so it does not show that the flow is passive. [B1]
+Q: [5 marks] ★★★ A scientist cooled a short section of a stem to 2 °C with a jacket round it and measured the speed at which labelled sucrose moved through that section. The speed fell sharply while the jacket was on and returned to its original value within an hour of removing it. (a) Suggest two reasons why cooling the stem section reduces the speed. (b) A student concludes that translocation needs energy from the living cells of the stem. Evaluate this conclusion.
+H: Cooling affects the living cells (respiration and ATP) and also the sap itself.
+H: Could the result be explained without any change in the energy supply?
+A: (a) Cooling slows respiration in the companion cells of that section, so less ATP is made to keep the sieve tube elements working. [B1]
+Cold sap is more viscous, so it flows more slowly down the same pressure gradient. [B1]
+(b) The speed recovered after rewarming, so the cells were not killed and the effect is reversible, which fits a process that depends on living cells. [B1]
+But the higher viscosity of cold sap would slow mass flow even if no energy were needed in the stem, so the result does not prove the conclusion. [B1]
+A better test would treat only that section with a respiratory inhibitor at normal temperature and compare the speed with an untreated plant. [B1]
 :::
 
 :::quiz
@@ -405,12 +406,12 @@ The experiment cannot separate loading by active transport from the flow itself,
 - xylem vessels are living, sieve tubes are dead
 - phloem transports water only, xylem transports sucrose only
 > Phloem loading uses ATP. Xylem moves substances upwards only, in dead vessels, and carries water and mineral ions.
-? Radioactive sucrose travels 63 cm along a stem in 30 minutes. What is the mean speed?
-+ 1.26 m h⁻¹
-- 2.1 m h⁻¹
-- 0.315 m h⁻¹
-- 126 m h⁻¹
-> \(0.63\,\mathrm{m} \div 0.5\,\mathrm{h} = 1.26\,\mathrm{m\,h^{-1}}\). 2.1 is the speed in cm per minute (63 ÷ 30), not m h⁻¹. 0.315 divides by 2 instead of by 0.5, and 126 forgets to convert cm to m.
+? Radioactive sucrose travels 54 cm along a stem in 30 minutes. What is the mean speed?
++ 1.08 m h⁻¹
+- 1.8 m h⁻¹
+- 0.27 m h⁻¹
+- 108 m h⁻¹
+> \(0.54\,\mathrm{m} \div 0.5\,\mathrm{h} = 1.08\,\mathrm{m\,h^{-1}}\). 1.8 is the speed in cm per minute (54 ÷ 30), not m h⁻¹. 0.27 divides by 2 instead of by 0.5, and 108 forgets to convert cm to m.
 ? Why does sap flow out of a cut sieve tube?
 + the sap in the sieve tube is under high hydrostatic pressure
 - the sap in the sieve tube is under tension

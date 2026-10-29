@@ -208,11 +208,12 @@
           stage = 'near the optimum';
           msg = 'Near the optimum: the charges on the R groups and the shape of the active site suit the substrate, so many enzyme–substrate complexes form.';
         } else if (d < 0) {
-          stage = 'too acidic';
-          msg = 'Extra H⁺ ions change the charges on R groups. Ionic bonds and hydrogen bonds between R groups break, so the tertiary structure and the active site change shape and the substrate binds less well.';
+          // review P4/P5/P7: say "below/above the optimum" (pH 5 is acidic, yet above pepsin's optimum, so "too alkaline" misled)
+          stage = 'below the optimum';
+          msg = 'More H⁺ ions than at the optimum change the charges on R groups. Ionic bonds and hydrogen bonds between R groups break, so the tertiary structure and the active site change shape and the substrate binds less well.';
         } else {
-          stage = 'too alkaline';
-          msg = 'Extra OH⁻ ions change the charges on R groups. Ionic bonds and hydrogen bonds between R groups break, so the tertiary structure and the active site change shape and the substrate binds less well.';
+          stage = 'above the optimum';
+          msg = 'Fewer H⁺ ions than at the optimum (more OH⁻ ions above pH 7) change the charges on R groups. Ionic bonds and hydrogen bonds between R groups break, so the tertiary structure and the active site change shape and the substrate binds less well.';
         }
         if (Math.abs(d) > 0.6 && r < 5) msg += ' The enzyme is denatured: almost no activity.';
         ro.set('p', clean(p, 1));
@@ -242,8 +243,13 @@
         dashed(ctx, c, A.X(e.K), A.Y(half), A.X(e.K), A.Y(0), c.ink2);
         ctx.restore();
         tag(ctx, c, 'Vmax = ' + clean(e.V, 1), A.X(50) - 4, A.Y(e.V) - 6, 'right', c.ink);
-        tag(ctx, c, 'Km = ' + clean(e.K, 1), A.X(e.K) + 5, A.Y(0) - 8, 'left', c.ink);
-        if (A.X(e.K) - A.X(0) > 60) tag(ctx, c, 'half of Vmax', A.X(0) + 6, A.Y(half) - 5, 'left', c.ink2);
+        // Km label halfway down the drop line: below the half line and right of Km no curve passes,
+        // and it stays clear of the x-axis label at the bottom right
+        tag(ctx, c, 'Km = ' + clean(e.K, 1), A.X(e.K) + 5, (A.Y(0) + A.Y(half)) / 2 + 4, 'left', c.ink);
+        ctx.save(); ctx.font = '12px ' + c.font;
+        const tm = ctx.measureText('half of Vmax'), hw = (tm && tm.width) || 70;
+        ctx.restore();
+        if (A.X(e.K) - A.X(0) > hw + 14) tag(ctx, c, 'half of Vmax', A.X(0) + 6, A.Y(half) - 5, 'left', c.ink2);
         marker(ctx, c, A, st.s, rateMM(st.s, e.V, e.K));
       }
       const cv = setupCanvas('Rate of an enzyme reaction against substrate concentration, Michaelis–Menten model',

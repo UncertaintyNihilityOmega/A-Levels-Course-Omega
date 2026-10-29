@@ -219,6 +219,7 @@ f.text(RX, 38, "mesophyll cell"); f.leader((RX - 4, 35), (216, 54))
 f.text(RX, 98, "air space"); f.leader((RX - 4, 95), (210, 118))
 f.text(RX, 150, "stoma"); f.leader((RX - 4, 147), (176, 206))
 f.text(RX, 172, "guard cell"); f.leader((RX - 4, 169), (206, 207))
+f.text(48, 72, "1", "tb"); f.text(186, 118, "2", "tb"); f.text(156, 170, "3", "tb")   # step numbers on the arrows (review)
 f.text(60, 12, "xylem", "tl")
 f.text(186, 246, "air outside has"); f.text(186, 260, "lower water potential")
 f.text(10, 284, "1 water leaves the xylem", "ts")
@@ -233,28 +234,31 @@ problems += f.check()
 # ---------- 8. potometer ----------
 f = Fig("potometer")
 f.rect(34, 130, 32, 60, "fp ln")                                          # tube holding the shoot
-f.rect(36, 160, 28, 28, "f2 s-acc2 sw2")                                  # water at the base of the shoot tube
+f.rect(36, 132, 28, 56, "f2 s-acc2 sw2")                                  # tube full of water up to the bung (review: was half full)
 f.line([(50, 126), (50, 44)], "c1 sw3", check=False)                      # stem
 ellipse(f, 33, 66, 16, 7, "f1 s-acc sw2", check=False)
 ellipse(f, 67, 52, 16, 7, "f1 s-acc sw2", check=False)
 ellipse(f, 36, 96, 14, 6, "f1 s-acc sw2", check=False)
 f.rect(40, 122, 20, 10, "fi")                                             # bung
-f.rect(66, 170, 210, 18, "fp ln")                                         # capillary tube
-f.rect(68, 172, 90, 14, "f2 s-acc2 sw2")
-f.rect(190, 172, 84, 14, "f2 s-acc2 sw2")
+# review P4/P5/P7: the capillary now bends down and dips into an open beaker from above (it used to pass
+# through the beaker's side wall)
+f.line([(244, 194), (244, 232), (316, 232), (316, 194)], "ln sw2", check=False)   # open beaker
+f.rect(246, 204, 68, 26, "f2 s-acc2 sw2")                                # water in the beaker
+f.rect(66, 170, 214, 18, "fp ln")                                         # capillary tube (horizontal)
+f.rect(262, 186, 18, 38, "fp ln")                                         # capillary end bent down into the water
+f.rect(68, 172, 90, 14, "f2")
+f.rect(190, 172, 88, 14, "f2")
+f.rect(264, 184, 14, 38, "f2")                                            # water through the bend (hides the joint)
 ellipse(f, 174, 179, 14, 5, "fp ln", check=False)                         # air bubble
-f.rect(250, 140, 60, 56, "fp ln")                                         # beaker of water
-f.rect(252, 160, 56, 34, "f2 s-acc2 sw2")
-f.rect(110, 196, 130, 12, "fm s-acc sw2")                                 # scale
-for xx in range(116, 240, 10):
+f.rect(110, 196, 124, 12, "fm s-acc sw2")                                 # scale
+for xx in range(116, 234, 10):
     f.line([(xx, 196), (xx, 202)], "ln thin", check=False)
 f.text(90, 28, "leafy shoot"); f.leader((86, 25), (72, 47))
 f.text(76, 118, "bung (airtight)")
-f.leader((74, 126), (62, 128)) if False else None
 f.text(190, 156, "air bubble", anchor="end"); f.leader((194, 159), (180, 174))
-f.text(110, 226, "capillary tube with scale")
-f.text(256, 108, "beaker"); f.text(256, 122, "of water")
-figs.append(f.svg((340, 238),
+f.text(60, 226, "capillary tube with scale")
+f.text(286, 150, "beaker"); f.text(286, 164, "of water"); f.leader((300, 168), (300, 210))
+figs.append(f.svg((350, 238),
     "Potometer. A leafy shoot is held by an airtight bung in a tube of water. The tube joins a horizontal capillary tube with a scale, which has an air bubble in it and dips into a beaker of water. "
     "As the shoot takes up water, the bubble moves along the scale.",
     "A potometer. The distance the air bubble moves along the scale in a measured time is the volume of water taken up by the shoot divided by the cross-sectional area of the capillary."))

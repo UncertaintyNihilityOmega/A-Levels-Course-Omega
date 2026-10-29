@@ -423,14 +423,14 @@ Q: Why does the biuret test need no heating?
 A: Copper(II) ions in alkaline solution react with peptide bonds at room temperature, giving the purple complex without any heat.
 Q: A student boils sucrose with dilute hydrochloric acid and adds Benedict's solution at once. The mixture stays blue. Suggest why.
 A: The acid was not neutralised. Benedict's solution only works in alkaline conditions, so no precipitate forms, even though the sucrose has been hydrolysed.
-Q: Two glucose solutions of 1.0% and 0.25% are tested. Which will change colour first, and why?
-A: The 1.0% solution, because more reducing sugar reduces the copper(II) ions faster, giving a shorter time.
+Q: Two glucose solutions of 0.8% and 0.2% are tested. Which will change colour first, and why?
+A: The 0.8% solution, because more reducing sugar reduces the copper(II) ions faster, giving a shorter time.
 Q: A student concludes that a juice contains glucose because it gave an orange precipitate with Benedict's solution. Comment on the conclusion.
 A: Benedict's solution shows only that a reducing sugar is present. Fructose, maltose or lactose would give the same result.
 Q: Blackcurrant juice is a very dark purple. Suggest why the Benedict's test is hard to read, and one way to deal with this.
 A: The dark colour hides the blue-to-red change. Filter off the precipitate and look at it on the filter paper, or dilute the juice, or use glucose test strips.
-Q: Starting from a 4.0% solution, how many 1 : 1 serial dilutions are needed to reach 0.25%? Show the working.
-A: \(4.0 \to 2.0 \to 1.0 \to 0.50 \to 0.25\): four dilutions (\(4.0 \times (1/2)^4 = 0.25\)).
+Q: Starting from a 3.2% solution, how many 1 : 1 serial dilutions are needed to reach 0.20%? Show the working.
+A: \(3.2 \to 1.6 \to 0.80 \to 0.40 \to 0.20\): four dilutions (\(3.2 \times (1/2)^4 = 0.20\)).
 :::
 
 :::try Exam practice ★ to ★★★

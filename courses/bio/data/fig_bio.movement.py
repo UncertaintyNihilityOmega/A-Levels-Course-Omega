@@ -28,8 +28,8 @@ panels_x = 172
 # labels, panel 1
 f.text(panels_x + 10, 52, "cell wall", "tl")
 f.leader((panels_x + 6, 49), (20 + 148 - 2, 49))
-f.text(panels_x + 10, 82, "vacuole", "tl")
-f.leader((panels_x + 6, 79), (20 + 130, 79))
+f.text(panels_x + 10, 72, "vacuole", "tl")
+f.leader((panels_x + 6, 69), (20 + 120, 69))             # ends inside the vacuole (review P4/P5/P7)
 # labels, panel 2
 f.text(panels_x + 10, PH + 60, "membrane", "tl")
 f.text(panels_x + 10, PH + 74, "touches the wall", "tl")
@@ -39,7 +39,7 @@ f.text(panels_x + 10, 2 * PH + 48, "gap filled with", "tl")
 f.text(panels_x + 10, 2 * PH + 62, "external solution", "tl")
 f.leader((panels_x + 6, 2 * PH + 51), (24 + 134, 2 * PH + 51))
 f.text(panels_x + 4, 2 * PH + 92, "cell surface membrane", "tl")
-f.leader((panels_x + 1, 2 * PH + 89), (24 + 108, 2 * PH + 89))
+f.leader((panels_x + 1, 2 * PH + 89), (24 + 104, 2 * PH + 82))   # ends on the membrane, not in the gap (review)
 figs.append(f.svg((330, 3 * PH - 4),
     "Plant cells in three states. 1: turgid, the cell surface membrane presses against a stretched cell wall. 2: flaccid, "
     "the membrane just touches the wall, which is not stretched. 3: plasmolysed, the membrane and cytoplasm have shrunk "

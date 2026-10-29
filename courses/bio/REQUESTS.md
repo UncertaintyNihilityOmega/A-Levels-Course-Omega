@@ -13,3 +13,4 @@ Engine bugs, new block types, design changes, or anything that needs another cou
 - [x] 2026-10-28 · `:::plot` graphs render their axis labels, tick numbers and `--pt` labels at about 7 px on a 375 px phone (viewBox 560 scaled to 343 px), e.g. bio.carbs, bio.lipids, bio.proteins, bio.f.basics · hand SVGs are now 11–13 px there; could plots use a larger font (or a narrower viewBox) below 700 px?
   - Organizer 2026-10-28: done. Plots now carry `class="fig plot"`; at 700 px and below their labels are 17 and tick
     numbers 15 user units (engine/style.css), about 10.4 and 9.2 px on a 375 px phone (was 8 and 7). Desktop unchanged.
+- [ ] 2026-10-29 · In light mode an unchecked widget checkbox (W helper) draws as a solid dark square in the headless `shot`, so it looks ticked (bio-enzyme "Non-competitive inhibitor"; dark mode is fine). Please check in a real browser and, if real, style unchecked boxes with a light fill · readers may misread which inhibitor is on
