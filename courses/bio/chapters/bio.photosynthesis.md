@@ -555,7 +555,7 @@ By aerobic respiration, with oxidative phosphorylation (chemiosmosis) making mos
 :::
 
 :::try Stretch for A*
-Q: [6 marks] ★★★ A culture of unicellular algae was kept in bright light with a high carbon dioxide concentration. The carbon dioxide supply was then stopped, with the light still on. The concentration of RuBP in the algae increased and the concentration of GP decreased. (a) Explain these changes. (b) Predict what would happen to the concentration of reduced NADP in the stroma, and explain your prediction.
+Q: [6 marks] ★★★ Discs cut from bean leaves were kept in bright light with a high carbon dioxide concentration. The carbon dioxide supply was then stopped, with the light still on. The concentration of RuBP in the leaf cells increased and the concentration of GP decreased. (a) Explain these changes. (b) Predict what would happen to the concentration of reduced NADP in the stroma, and explain your prediction.
 H: Which compound needs carbon dioxide to be made, and which compound needs carbon dioxide to be used up?
 H: For (b), what happens to the use of reduced NADP when GP is not being made?
 A: (a) Without carbon dioxide, rubisco cannot fix it, so RuBP is not used up in fixation and accumulates. [B1]
@@ -598,12 +598,12 @@ The red pigment lets the algae use the blue-green light that does reach them, so
 - the leaf is not photosynthesising in green light because it lacks ATP
 - green light is reflected by the stroma
 > An action spectrum plots the rate of photosynthesis against wavelength. A low rate in the green matches the low absorption of the pigments there; the reflected green light is why leaves look green.
-? A pigment moves 4.0 cm while the solvent front moves 8.0 cm. What is its Rf value?
-+ 0.50
-- 2.0
-- 0.50 cm
-- 4.0
-> Rf = 4.0 ÷ 8.0 = 0.50. Dividing the other way gives 2.0, which is impossible, and Rf is a ratio with no units.
+? A pigment moves 2.8 cm while the solvent front moves 7.0 cm. What is its Rf value?
++ 0.40
+- 2.5
+- 0.40 cm
+- 2.8
+> Rf = 2.8 ÷ 7.0 = 0.40. Dividing the other way gives 2.5, which is impossible, Rf is a ratio with no units, and 2.8 is only the distance moved by the pigment.
 ? Which compound is the first product of carbon fixation?
 + glycerate 3-phosphate (GP)
 - triose phosphate (TP)

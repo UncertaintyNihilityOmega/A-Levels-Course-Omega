@@ -52,7 +52,7 @@ eq("first anti-A peak 9", max(a[:6]), 9)
 eq("first peak at day 21", days[a.index(9)], 21)
 eq("second anti-A peak 85", max(a[6:]), 85)
 eq("second peak at day 42", days[a.index(85)], 42)
-eq("about nine times higher", round(85 / 9), 9)
+eq("anti-A falls day 21 to 35", a[3] > a[4] > a[5], True)
 eq("40 units 3 days after the second injection", days[6] - 35, 3)
 eq("anti-B lower than anti-A at every time after day 35", all(y < x for x, y in zip(a[6:], b[6:])), True)
 

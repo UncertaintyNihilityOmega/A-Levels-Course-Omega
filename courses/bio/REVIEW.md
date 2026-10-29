@@ -52,3 +52,22 @@ invented data. Fixed by the reviewer:
 - [x] bio.synthesis: try question GAA→GAG duplicated exam practice mutant 1 (now GGC→GGA; checks updated)
 - COURSE.md: figure rule (any figure with text labels is `fig small`, 340 wide; leaders never cross another part) and reuse rule examples (a practice question that asks the worked example's question again in other words).
 No items left for a Writer.
+
+## REVIEW P10, P11, P12 (2026-10-29)
+Read whole: bio.respiration and bio.limiting (every worked example and answer); the rest by worked examples, practice
+stems, keys and quizzes; numbers recomputed (antibody curves, RQ equations and respirometer volumes, Krebs tallies,
+Rf values, Calvin cycle counts, limiting-factor model curves, inverse square law). Every figure seen in light, dark and
+phone; bio-limiting dragged, sliders and presets used, keyboard only; bio-rq both modes, presets, bad inputs, keyboard
+only. Writers' notes confirmed: the widget model matches the chapter plots (plateau 40 and 70 at 25 °C, 36 at 15 °C);
+30.5 kJ mol⁻¹ and "about 30" ATP are stated as required; the respiration ADP Stretch shares only the isolated-
+mitochondria setting with the leaky-membrane example (accepted: different question and mark scheme). Fixed by the reviewer:
+- [x] bio-limiting: the "these settings / start settings" legend was drawn on the canvas over the x-axis label and over low plateaus (Too hot, Cold day); now a line of text under the graph, shown only when the curve has moved
+- [x] bio.limiting: quiz repeated the inverse-square worked example (10 cm to 20 cm, one quarter; now 30 cm to 15 cm, four times); "the light-dependent stage depends on light, not on temperature" (now "is affected little by temperature"); "isolated chloroplasts cannot fix carbon dioxide" (now: many are broken while grinding and lose the stroma enzymes); temperature plot x-axis ran to 64 °C with the curve stopping at 42 (now 0–50)
+- [x] bio.respiration: quiz repeated the leaky-membrane worked example's question and answer (now: by which process protons pass through ATP synthase)
+- [x] bio.photosynthesis: quiz Rf used the worked example's 8.0 cm solvent front (now 2.8 ÷ 7.0); Stretch on stopping CO₂ used algae, the organism of the light-off worked example (now bean leaf discs)
+- [x] bio.immunity: ★★ antigen A/B part (a) asked the antibody-graph worked example's comparison again (now why anti-A falls between day 21 and 35); quiz "why T-killer cells for a virus inside cells" duplicated the second Stretch (now why the primary response is slow)
+- [x] bio.antibodies: ★★★ rabies (antibodies plus vaccine) had the passive/active graph example's mark scheme (now an mRNA vaccine, synoptic with bio.synthesis); plot legend ran into the y-axis label on phones (shorter labels)
+- [x] bio.anaerobic: ★★★ alcohol dehydrogenase question used rice, the worked example's plant (now maize seedlings); crucian carp stem said "other mammals and fish" (now "mammals and most other fish")
+- [x] bio.energy: quiz respirometer gave RQ 0.50, not a real substrate value (now 25 and 3 mm, RQ 0.88, with matching distractors); RQ-of-seeds plot extended the line to day 0 and day 10 beyond the data (now days 2–8, caption says invented data)
+- [ ] bio.photosynthesis: chromatogram figure: "solvent level below the origin" sits under the paper with nothing drawn (its line is the paper's bottom edge). In data/fig_bio.photosynthesis.py draw the solvent as an outlined band (`f2 s-acc2 sw2`) across the bottom of the paper, below the origin line, and give the label a leader to it; paste the new figure line
+- [ ] bio.limiting: the last quiz question (grower raises CO₂, yield does not rise) repeats the last "Start easy" question. Replace it with one on the CO₂ graph: in dim light, raising CO₂ from 0.04% to 0.12% hardly changes the rate; + light is limiting, so too little ATP and reduced NADP; distractors: rubisco is denatured in dim light; carbon dioxide is toxic at 0.12%; carbon dioxide cannot dissolve in the water in the leaf in dim light (keep the explanation line)

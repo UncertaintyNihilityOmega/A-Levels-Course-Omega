@@ -331,7 +331,7 @@ The ATP supplies the energy for the growth and division of the cells (making pro
 (b) In the sealed tank there is no oxygen, so the electron transport chain stops and reduced NAD cannot be reoxidised. [B1]
 Pyruvate is decarboxylated to ethanal, and ethanal is reduced to ethanol using reduced NAD. [B1]
 This regenerates NAD, so glycolysis can continue to make ATP, and ethanol is the waste product. [B1]
-Q: [5 marks] ★★★ Two varieties of rice were grown in flooded soil. Variety X roots increased their alcohol dehydrogenase activity five times after flooding. Variety Y roots did not change it. Predict which variety survives better, and explain, with reference to NAD.
+Q: [5 marks] ★★★ Seedlings of two varieties of maize were grown in flooded soil. Variety X roots increased their alcohol dehydrogenase activity five times after flooding. Variety Y roots did not change it. Predict which variety survives better, and explain, with reference to NAD.
 H: What does alcohol dehydrogenase do with reduced NAD?
 A: Variety X survives better. [B1]
 In flooded soil, oxygen is short, so the roots must make ATP by glycolysis and ethanol fermentation. [B1]
@@ -349,7 +349,7 @@ A: (a) (i) \(150 \div 30 = 5.0\,\mathrm{mmol}\) [M1] [A1]
 (b) Ethanol \(= 75 \times 2 = 150\,\mathrm{mmol}\) [A1]
 (c) Without oxygen, only glycolysis makes ATP (net 2 per glucose), because oxidative phosphorylation cannot work. [B1]
 The glucose is only partly oxidised, so most of its energy is still in the ethanol and is not used to make ATP. [B1]
-Q: [5 marks] ★★★ The crucian carp, a fish, can live for months in ponds under ice with almost no oxygen. Its muscle cells make **ethanol** in these conditions, and the ethanol diffuses out through the gills into the water. (a) Suggest what the muscle cells must be able to do that the muscle cells of other mammals and fish cannot. (b) Suggest why making ethanol, not lactate, is an advantage in the pond. (c) Predict how the amount of carbon dioxide released by the fish changes.
+Q: [5 marks] ★★★ The crucian carp, a fish, can live for months in ponds under ice with almost no oxygen. Its muscle cells make **ethanol** in these conditions, and the ethanol diffuses out through the gills into the water. (a) Suggest what the muscle cells must be able to do that the muscle cells of mammals and of most other fish cannot. (b) Suggest why making ethanol, not lactate, is an advantage in the pond. (c) Predict how the amount of carbon dioxide released by the fish changes.
 H: Compare the two pathways in the table: which has an extra step?
 H: What happens to lactate that cannot be removed?
 A: (a) They can decarboxylate pyruvate to ethanal, and reduce ethanal to ethanol using alcohol dehydrogenase. [B1]

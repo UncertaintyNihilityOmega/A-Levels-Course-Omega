@@ -67,10 +67,10 @@ Carbon dioxide enters a leaf through open stomata (see [Plant tissues and water 
 
 ## Temperature
 
-The light-dependent stage depends on light, not on temperature: absorbing a photon and raising an electron to a higher energy level does not need molecules to collide. The Calvin cycle, however, is a series of **enzyme-controlled reactions**, so temperature changes its rate.
+The light-dependent stage is affected little by temperature: absorbing a photon and raising an electron to a higher energy level does not need molecules to collide. The Calvin cycle, however, is a series of **enzyme-controlled reactions**, so temperature changes its rate.
 
 :::plot Rate of photosynthesis against temperature in bright light and in dim light (carbon dioxide at 0.12%). In bright light the rate rises, peaks and falls; in dim light it is limited by light over a wide range of temperature. Model curves, arbitrary units.
---f "70*(2**(x/10)/(1+exp((x-35)/2.5)))/5.555+0*sqrt(42-x)" --f "(24+70*(2**(x/10)/(1+exp((x-35)/2.5)))/5.555-abs(24-70*(2**(x/10)/(1+exp((x-35)/2.5)))/5.555))/2+0*sqrt(42-x)" --label "bright light" --label "dim light" --x 0 64 --y 0 110 --xlabel "temperature / °C" --ylabel "rate of photosynthesis / arbitrary units" --pt "31,89.9,optimum near 31 °C@w" --legend tr --alt "In bright light the rate rises from about 18 at 5 degrees Celsius to a peak of about 90 near 31 degrees, then falls steeply to about 13 by 42 degrees, where the curve stops. In dim light the rate is flat at 24 from about 9 to 40 degrees and is lower only at the extremes."
+--f "70*(2**(x/10)/(1+exp((x-35)/2.5)))/5.555+0*sqrt(42-x)" --f "(24+70*(2**(x/10)/(1+exp((x-35)/2.5)))/5.555-abs(24-70*(2**(x/10)/(1+exp((x-35)/2.5)))/5.555))/2+0*sqrt(42-x)" --label "bright light" --label "dim light" --x 0 50 --y 0 110 --xlabel "temperature / °C" --ylabel "rate of photosynthesis / arbitrary units" --pt "31,89.9,optimum near 31 °C@w" --legend tr --alt "In bright light the rate rises from about 18 at 5 degrees Celsius to a peak of about 90 near 31 degrees, then falls steeply to about 13 by 42 degrees, where the curve stops. In dim light the rate is flat at 24 from about 9 to 40 degrees and is lower only at the extremes."
 :::
 
 - **Below the optimum** (bright light), raising the temperature raises the rate. Enzyme and substrate molecules have more kinetic energy, so there are more collisions and more enzyme–substrate complexes, including rubisco with carbon dioxide and RuBP. The Calvin cycle runs faster and temperature is limiting.
@@ -142,7 +142,7 @@ The law holds for a small bright lamp in a dark room. A lamp that is not a point
 
 ## Investigating with a suspension of chloroplasts
 
-Isolated chloroplasts can carry out the light-dependent stage, but cannot fix carbon dioxide. We can still measure how fast the light-dependent stage runs if something takes the electrons in place of NADP. The redox indicator **DCPIP** does this.
+Chloroplasts separated from leaf cells can still carry out the light-dependent stage (many are broken while the leaves are ground and lose the stroma enzymes of the Calvin cycle). We can still measure how fast the light-dependent stage runs if something takes the electrons in place of NADP. The redox indicator **DCPIP** does this.
 
 DCPIP is **blue when oxidised and colourless when reduced**. When chloroplasts are lit, electrons are released from photoactivated chlorophyll, and DCPIP accepts them (and hydrogen) instead of NADP. The blue colour fades, and the faster the electrons are released, the faster it fades. Methylene blue can be used in the same way. (This is the same use of a redox indicator as in [Anaerobic respiration and investigating respiration](#bio.anaerobic), but here the electrons come from light, not from respiration.)
 
@@ -476,18 +476,18 @@ Dense cells may also use up the available carbon dioxide faster, so it becomes l
 - chlorophyll is destroyed at low temperatures
 - water cannot enter the leaf at high temperatures
 > The light-dependent absorption of light does not need collisions. The Calvin cycle is catalysed by enzymes, so its rate depends on kinetic energy and denaturation.
-? A lamp is moved from 10 cm to 20 cm from a plant. What happens to the light intensity at the plant?
-+ it falls to one quarter
-- it falls to one half
-- it falls to one eighth
-- it does not change
-> Intensity is proportional to 1/d², and \((10 \div 20)^2 = 0.25\). One half would be a direct proportion with distance.
+? A lamp is moved from 30 cm to 15 cm from a plant. What happens to the light intensity at the plant?
++ it rises to four times its value
+- it doubles
+- it falls to one quarter
+- it rises to sixteen times its value
+> Intensity is proportional to 1/d², and \((30 \div 15)^2 = 4\). Doubling would be a direct proportion with distance, one quarter has the ratio upside down, and sixteen squares the ratio twice.
 ? What is the purpose of DCPIP in an investigation with isolated chloroplasts?
 + it accepts electrons from the light-dependent stage and changes from blue to colourless
 - it supplies carbon dioxide to the chloroplasts
 - it absorbs the light so the chloroplasts are not damaged
 - it is the substrate of rubisco
-> DCPIP takes the electrons in place of NADP. The time it takes to become colourless shows the rate of the light-dependent stage. Isolated chloroplasts do not fix carbon dioxide in this investigation.
+> DCPIP takes the electrons in place of NADP. The time it takes to become colourless shows the rate of the light-dependent stage. No carbon dioxide is supplied or measured in this investigation.
 ? Why is pondweed placed behind a tank of water when it is lit by a lamp?
 + the water absorbs heat, so temperature does not change as the lamp is moved
 - the water provides carbon dioxide for the plant

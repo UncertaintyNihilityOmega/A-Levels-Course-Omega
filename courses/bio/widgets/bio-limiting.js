@@ -102,15 +102,7 @@
       ctx.fillStyle = c.red; ctx.fill(); ctx.lineWidth = 2; ctx.strokeStyle = c.card; ctx.stroke();
       ctx.restore();
       tag(ctx, c, 'maximum rate', px1 - 4, A.Y(pm) - 6, 'right', c.ink2);
-      if (moved) {
-        const ly = py0 - 36;
-        ctx.save(); ctx.strokeStyle = c.sc; ctx.lineWidth = 3;
-        ctx.beginPath(); ctx.moveTo(px1 - 150, ly); ctx.lineTo(px1 - 128, ly); ctx.stroke();
-        ctx.strokeStyle = c.ink3; ctx.lineWidth = 2; ctx.setLineDash([5, 4]);
-        ctx.beginPath(); ctx.moveTo(px1 - 150, ly + 18); ctx.lineTo(px1 - 128, ly + 18); ctx.stroke(); ctx.restore();
-        tag(ctx, c, 'these settings', px1 - 122, ly + 4, 'left', c.ink);
-        tag(ctx, c, 'start settings', px1 - 122, ly + 22, 'left', c.ink2);
-      }
+      // the legend is a line of text under the graph (drawn on the canvas it covered the axis label and low plateaus)
     }
 
     const cv = W.canvas(body, {
@@ -119,6 +111,8 @@
       describe: describe,
       draw: draw
     });
+    const leg = W.h('div', { class: 'w-note', text: 'Solid line: these settings. Dashed line: the start settings, for comparison.' });
+    body.appendChild(leg);
 
     const sI = W.sliderNum({ label: 'Light intensity (marker) / arbitrary units', min: 0, max: 100, step: 1, value: S.I,
       oninput: function () { S.I = numOr(sI.get(), 20, 0, 100); update(); } });
@@ -166,6 +160,7 @@
       ro.set('m', pmax(S.C, S.T).toFixed(0) + ' units');
       ro.set('l', t[0]);
       msg.textContent = t[1];
+      leg.style.display = Math.abs(pmax(S.C, S.T) - pmax(S.C0, S.T0)) > 0.5 ? '' : 'none';
       cv.redraw();
     }
 

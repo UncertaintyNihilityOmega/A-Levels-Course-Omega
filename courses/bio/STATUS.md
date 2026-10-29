@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-29 · WRITE P13 · bio.homeostasis 7.27k, bio.glucose 5.93k, bio.hormones 5.45k words; check and phone pass, no notes; no widgets; figures via data/fig_bio.homeostasis.py, fig_bio.glucose.py, fig_bio.hormones.py (fig small, looked at light/phone once); see Writer's notes in packages/P13.md
+Last: 2026-10-29 · REVIEW P10, P11, P12 · 2 items open (chromatogram solvent band; a limiting quiz duplicate); fixed: bio-limiting legend moved off the canvas (covered axis label and low plateaus); 3 quizzes and 4 practice questions that reused a worked example (inverse square, leaky membrane, Rf 8.0 cm, antibody graph, rabies scheme, rice, algae); limiting facts (temperature and light stage, isolated chloroplasts); unrealistic RQ 0.50 quiz; RQ plot extrapolation; antibodies plot legend; carp 'other mammals'; COURSE.md quiz-reuse and widget-extremes rules; REQUESTS: plots inside :::eg narrow on phones
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -14,9 +14,9 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P7: reviewed 2026-10-29
 - P8: reviewed 2026-10-29
 - P9: reviewed 2026-10-29
-- P10: written 2026-10-29
-- P11: written 2026-10-29
-- P12: written 2026-10-29
+- P10: reviewed 2026-10-29
+- P11: reviewed 2026-10-29
+- P12: reviewed 2026-10-29
 - P13: written 2026-10-29
 - P14: writing 2026-10-29
 - P15: open

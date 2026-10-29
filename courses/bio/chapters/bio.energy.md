@@ -337,8 +337,8 @@ The radius cancels, so \(\mathrm{RQ} = (d_1 - d_2) \div d_1\) needs no radius at
 
 \[\begin{aligned} \text{day 2: } \mathrm{RQ} &= 28 \div 40 = 0.70 \\ \text{day 4: } \mathrm{RQ} &= 44 \div 55 = 0.80 \\ \text{day 6: } \mathrm{RQ} &= 63 \div 70 = 0.90 \\ \text{day 8: } \mathrm{RQ} &= 84 \div 84 = 1.0 \end{aligned}\]
 
-:::plot The RQ of the germinating seeds rises from 0.70 on day 2 to 1.0 on day 8.
---f "0.6+0.05*x" --x 0 10 --y 0 1.4 --hline 1 --xlabel "day" --ylabel "RQ" --label "RQ" --pt "2,0.7,day 2: 0.70@se" --pt "8,1,day 8: 1.0@se" --legend tr --alt "A straight line rising from an RQ of 0.70 on day 2 to 1.0 on day 8, with a dashed line at RQ 1."
+:::plot The RQ of the germinating seeds rises from 0.70 on day 2 to 1.0 on day 8 (invented data).
+--f "0.6+0.05*x+0*sqrt(x-2)+0*sqrt(8-x)" --x 0 10 --y 0 1.4 --hline 1 --xlabel "day" --ylabel "RQ" --label "RQ" --pt "2,0.7,day 2: 0.70@se" --pt "8,1,day 8: 1.0@se" --legend tr --alt "A straight line rising from an RQ of 0.70 on day 2 to 1.0 on day 8, with a dashed line at RQ 1."
 :::
 
 **Step 2: describe.** The RQ rises steadily from 0.70 on day 2 to 1.0 on day 8, an increase of 0.30.
@@ -478,12 +478,12 @@ The RQ was 1.0 (the absorber removed the carbon dioxide, and the same volume of 
 - The cells are respiring only protein.
 - The potassium hydroxide absorbed oxygen.
 > An RQ above 1 means more carbon dioxide than oxygen. Lipid gives about 0.7 and protein about 0.9, and the absorber takes up carbon dioxide, not oxygen.
-? A respirometer has a drop that moves 18 mm towards the tube with potassium hydroxide and 9 mm towards the tube without it. What is the RQ?
-+ 0.50
-- 2.0
-- 0.67
-- 0.33
-> \(\mathrm{RQ} = (18 - 9) \div 18 = 0.50\). The value 2.0 is the inverted ratio, 0.67 is \(18 \div 27\) and 0.33 is \(9 \div 27\), which both divide by \(d_1 + d_2\) wrongly.
+? A respirometer has a drop that moves 25 mm towards the tube with potassium hydroxide and 3 mm towards the tube without it. What is the RQ?
++ 0.88
+- 1.14
+- 0.79
+- 0.12
+> \(\mathrm{RQ} = (25 - 3) \div 25 = 0.88\). The value 1.14 is the inverted ratio, 0.79 is \(22 \div 28\), which divides by \(d_1 + d_2\) wrongly, and 0.12 is \(3 \div 25\), which treats the net movement as the carbon dioxide produced.
 :::
 
 :::checklist What you can now do

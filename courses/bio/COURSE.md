@@ -53,6 +53,10 @@ writes it before any Writer starts.
   as a ★ question, "cold" then "influenza: why no antibiotic", oedema from low plasma protein in the example, a ★★★
   and the quiz, asthma relievers, altitude, pacemakers, a spindle drug, the wall-thickness answer, a repeated
   mutation). Check each `:::eg` against every practice stem for the same context **or** the same mark scheme.
+  **The quiz is where it slips through most**: REVIEW P10–P12 changed three quiz questions that were a worked
+  example again (10 cm → 20 cm "one quarter", the leaky-membrane poison, an 8.0 cm solvent front) and three practice
+  questions that reused the example's organism (rice, algae) or its mark scheme (antibodies plus vaccine). Grep
+  the `? ` stems too.
 - Length: as long as the topic needs (the gold chapter is about 790 lines, half of it practice). No padding.
 
 ## Format lessons from the gold chapter (each one cost a fix)
@@ -133,7 +137,9 @@ writes it before any Writer starts.
 - Widgets: one file each, `widgets/<name>.js`, names start `bio-`. Each belongs to exactly one package (course.json).
   Rules learned in Chemistry: draw must survive zero width and height (return early if `w <= 0 || h <= 0`); state
   facts only from FACTS.md or the chapter that uses it; 3D views start from an asymmetric angle and show a depth cue;
-  every animation must be clicked through and checked in the browser pane, not just probed.
+  every animation must be clicked through and checked in the browser pane, not just probed. Press every preset and
+  move each slider to both ends, then look at the canvas: a legend drawn on the canvas covered the axis label and a
+  low curve in bio-limiting (REVIEW P10–P12 moved it into a text line under the graph).
 - Widgets from other courses you may use: `normal`, `stats`, `sampling` (math), `units` (phys), `molar` (chem). Do not
   register those names.
 

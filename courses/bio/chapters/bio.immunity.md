@@ -422,11 +422,11 @@ Q: [5 marks] ★★ A mouse was injected with antigen A on day 0. On day 35 it w
 | 49 | 60 | 7 |
 | 56 | 35 | 10 |
 
-(a) Compare the first and second responses to antigen A. (b) Explain why the response to antigen B after day 35 is smaller and slower than the response to antigen A.
-H: For (a), compare the day of the peak after each injection and the size of each peak.
+(a) Suggest why the concentration of anti-A antibody falls between day 21 and day 35. (b) Explain why the response to antigen B after day 35 is smaller and slower than the response to antigen A.
+H: For (a), think about what happens to antigen A, to the plasma cells and to the antibody molecules once the infection is over.
 H: For (b), think about which cells were present for A and for B on day 35.
-A: (a) The first peak is 9 units at day 21 and the second is 85 units at day 42, about nine times higher. [B1]
-The second response is faster: antibody is at 40 units only 3 days after the second injection, but it took 21 days to peak after the first. [B1]
+A: (a) Antigen A has been removed, so no more lymphocytes are stimulated and the plasma cells, which are short-lived, die. [B1]
+Antibody molecules already in the blood are broken down (hydrolysed) and are not replaced. [B1]
 (b) At day 35 the mouse already had memory cells for antigen A, but none for antigen B. [B1]
 Antigen B started a primary response: few lymphocytes had receptors complementary to B, so they had to divide many times before antibody appeared. [B1]
 For antigen A, many memory cells divided quickly and differentiated into plasma cells, so antibody was made faster and in larger amounts. [B1]
@@ -532,12 +532,12 @@ It destroys the infected cell, so the virus cannot reproduce in it. [B1]
 - It does not need plasma cells because memory cells secrete antibody.
 - It is the same size as the primary response but starts sooner.
 > Memory cells divide quickly and form many plasma cells, which make more antibody sooner. Memory cells do not secrete antibody, and the secondary response is larger as well as faster.
-? Why are T-killer cells needed to deal with a virus that is inside body cells?
-+ Antibodies cannot enter cells, but T-killer cells can destroy infected cells.
-- T-killer cells make antibodies that can enter cells.
-- T-killer cells digest the virus in a phagosome.
-- T-killer cells release cytokines that stop the virus entering cells.
-> Antibodies work outside cells. A T-killer cell binds to the viral antigens on the infected cell and destroys it, so that the virus cannot reproduce. T-killer cells do not make antibodies, and cytokines are released by T-helper cells.
+? Why does the primary immune response take several days to produce much antibody?
++ Only a few lymphocytes have receptors complementary to the antigen, and they must be activated and divide many times.
+- Memory cells must first be made, and only memory cells can secrete antibody.
+- Macrophages must first divide by mitosis before they can present the antigen.
+- Antibodies must first be made by T-helper cells and then passed to the B-lymphocytes.
+> Clonal selection picks out the few lymphocytes that fit the antigen; clonal expansion by mitosis and differentiation into plasma cells take days. Memory cells do not secrete antibody, macrophages do not need to divide to present antigens, and T-helper cells release cytokines, not antibodies.
 ? Which statement about neutrophils is correct?
 + They are short-lived and are among the first cells to reach an infection.
 - They present antigens to T-helper cells.

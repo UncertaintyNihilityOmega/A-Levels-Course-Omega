@@ -432,12 +432,12 @@ The gradient built up and slowed the pumping and the electron flow, so less oxyg
 - It is the substrate in glycolysis.
 - It is the source of the energy used to make ATP.
 > Carbon dioxide comes from decarboxylation. Oxygen accepts electrons and protons at the end of the chain to form water, which allows the chain to keep working. The energy comes from the glucose.
-? A cell is treated with a poison that makes the inner mitochondrial membrane leaky to protons. What is the likely effect?
-+ Less ATP is made, but oxygen is still used.
-- No oxygen is used and no ATP is made.
-- More ATP is made because protons move faster.
-- Less oxygen is used and the same ATP is made.
-> The electron transport chain still passes electrons to oxygen and pumps protons, but the protons leak back without going through ATP synthase, so the gradient cannot drive ATP synthesis.
+? By which process do protons move through ATP synthase into the matrix?
++ facilitated diffusion, down their concentration gradient
+- active transport, using energy from ATP
+- active transport, using energy from the electrons
+- osmosis
+> The protons were pumped into the intermembrane space by the electron transport chain; they return down their gradient through the channel in ATP synthase by facilitated diffusion, and that flow provides the energy to make ATP. Osmosis is the movement of water only.
 ? Why is the intermembrane space of a mitochondrion narrow?
 + A small volume lets the concentration of protons rise quickly, giving a steep gradient.
 - It lets glucose diffuse in quickly.

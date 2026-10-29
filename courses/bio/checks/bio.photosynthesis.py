@@ -78,8 +78,8 @@ eq("Rf 5.4 / 9.0", 5.4 / 9.0, 0.60, 1e-12)
 ref_b = {"carotene": 0.88, "xanthophyll": 0.52, "chlorophyll a": 0.30, "chlorophyll b": 0.18}
 eq("yellow leaf spot 1", dp(6.6 / 7.5, 2), ref_b["carotene"])
 eq("yellow leaf spot 2", dp(3.9 / 7.5, 2), ref_b["xanthophyll"])
-eq("quiz Rf 4.0 / 8.0", 4.0 / 8.0, 0.50)
-eq("quiz wrong way", 8.0 / 4.0, 2.0)
+eq("quiz Rf 2.8 / 7.0", 2.8 / 7.0, 0.40)
+eq("quiz wrong way", 7.0 / 2.8, 2.5)
 
 # --- magnification practice -----------------------------------------------------------------------------------
 A_mm = 48 / 8000

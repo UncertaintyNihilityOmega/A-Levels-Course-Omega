@@ -211,7 +211,7 @@ The two pairs are separate questions. **Active or passive** asks: *whose antibod
 | how long it lasts | long-term | short: weeks to months |
 
 :::plot Antibody concentration in the blood of two people: one is given an injection of antibodies (passive) and the other a vaccine (active), both at day 0. Invented data, in arbitrary units.
---f "80*exp(0-x/20)" --f "60*(1-exp(0-((x-5)+abs(x-5))/2/8))**3*exp(0-((x-5)+abs(x-5))/2/90)" --label "passive: injected antibodies" --label "active: vaccine" --x 0 120 --y 0 100 --xlabel "time / days" --ylabel "antibody concentration / arbitrary units" --pt "33,40,active peak@n" --legend tr --alt "The passive curve starts at its highest value, 80 units at day 0, and falls steadily, to about 4 units by day 60. The active curve is zero for about 5 days, rises to a peak of about 40 units at day 33 and then falls slowly, still about 17 units at day 120. The curves cross at about day 20."
+--f "80*exp(0-x/20)" --f "60*(1-exp(0-((x-5)+abs(x-5))/2/8))**3*exp(0-((x-5)+abs(x-5))/2/90)" --label "passive (injection)" --label "active (vaccine)" --x 0 120 --y 0 100 --xlabel "time / days" --ylabel "antibody concentration / arbitrary units" --pt "33,40,active peak@n" --legend tr --alt "The passive curve starts at its highest value, 80 units at day 0, and falls steadily, to about 4 units by day 60. The active curve is zero for about 5 days, rises to a peak of about 40 units at day 33 and then falls slowly, still about 17 units at day 120. The curves cross at about day 20."
 :::
 
 :::eg Use the graph above to compare the antibody concentration in the two people, and explain the differences.
@@ -435,13 +435,15 @@ The antigen-binding site is then no longer complementary to the antigen. [B1]
 So the antigen cannot bind (or binds less well). [B1]
 (b) The antigen binds to the variable region, not the constant region. [B1]
 A change in the constant region does not alter the shape of the antigen-binding sites. [B1]
-Q: [5 marks] ★★★ A woman travelling abroad is bitten by a dog that may have rabies. She is given an injection of antibodies against the virus and, at the same time, the first dose of a rabies vaccine. Explain why she is given both.
-H: One acts at once, the other protects for longer.
-A: The injected antibodies are passive immunity, so they bind to the virus straight away. [B1]
-This protects her while her own response is slow to start. [B1]
-But the injected antibodies make no memory cells and are soon broken down, so alone they would give short-term protection only. [B1]
-The vaccine contains antigens that stimulate her own primary response, making antibodies and memory cells (active immunity). [B1]
-The memory cells give long-term protection by a rapid secondary response if the virus returns. [B1]
+Q: [5 marks] (#bio.synthesis) ★★★ An mRNA vaccine contains mRNA that codes for a protein found on the surface of a virus, enclosed in tiny droplets of lipid. Explain how the vaccine leads to the production of antibodies against the virus.
+H: The lipid droplet can merge with a cell surface membrane. What does a cell do with mRNA in its cytoplasm?
+H: Once the protein is made, which cells must recognise it?
+A: The lipid droplets fuse with the cell surface membranes of body cells, so the mRNA enters the cytoplasm. [B1]
+Ribosomes translate the mRNA, so the cells make the viral protein. [B1]
+The protein is displayed on the cell surface (or released), where it acts as a non-self antigen. [B1]
+T-helper cells and B-lymphocytes with receptors complementary to the antigen are activated, and the B cells divide by mitosis. [B1]
+The B cells differentiate into plasma cells, which secrete antibodies complementary to the viral protein. [B1]
+(Also credit: memory cells are also made, so a later infection by the virus meets a fast secondary response; the mRNA is soon broken down and does not enter the nucleus.)
 :::
 
 :::try Stretch for A*
