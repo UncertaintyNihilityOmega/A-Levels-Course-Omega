@@ -16,21 +16,34 @@ awake (Windows: Sleep "Never" when plugged in).
 - Task: `mcp__scheduled-tasks__create_scheduled_task`, taskId `zta-agent-run`, hourly off the hour
   (`23 * * * *`), saved in Auto permissions. Its prompt is self-contained: work in the project root, read
   ORGANIZER.md, ROADMAP.md and this file, then follow "Each run" below.
-- Lock: `.run/run.lock` (`.run/` is git-ignored; run state stays out of `.claude/`, where every write asks for permission even in Auto mode) holds `{"session": "<time started>", "beat": "<last update>"}`. A lock whose
-  `beat` is under 90 minutes old means another session is running: stop at once. Older = stale (that session hit a
-  usage limit or died): take over.
+- Lock: `.run/run.lock` (`.run/` is git-ignored; run state stays out of `.claude/`, where every write asks for
+  permission even in Auto mode) holds `{"session": "<time started>", "beat": "<last update>", "id": "<session id>"}`
+  (the id from `get_session("self")`). The lock is stale when its `beat` is 90 minutes old or more, or when
+  `list_task_runs("zta-agent-run")` shows the lock's `id` as not `running` (it failed at a usage limit or ended).
+  Stale: take over. Otherwise another session is running: stop at once.
 - Each run:
   1. Lock check (above). Write the lock.
   2. `git status`; `check` every changed chapter; commit a checkpoint and push.
   3. The current course is ROADMAP "Now". Guard on that course. Read `status`; started-but-unfinished packages
      (`writing`) get resume agents; an interrupted review is re-run whole.
-  4. Run the loop below until the course step is done or the usage limit stops the agents. Update the lock `beat`
-     each time an agent reports.
+  4. Run the loop below until the course step is done, the usage gate blocks every start, or the usage limit stops
+     the agents. Update the lock `beat` each time an agent reports and at least every 45 minutes (a background
+     `sleep 2400` as the timer).
   5. Course finished: REVIEW FINAL, assembly, tick ROADMAP, set "Now" to the next item, start it in the same run.
      Queue empty or a step needs the user (a decision, a manual setting): write it in "Now", delete the lock, stop.
 - Pause: the user disables the task in the app (or says "pause the runs"); set "Now" to say so.
 - Manual runs (an Organizer chat the user keeps open, with a CronCreate hourly check) stay possible: use the same
   lock so the two never overlap.
+
+## Usage gate (before every launch)
+- Read the meter with `get_usage` (`mcp__ccd_session_mgmt__get_usage`) just before each agent launch.
+- Writer (WRITE, FIX + WRITE, resume): only if the 5-hour window is at 70% or less and the weekly limit at 85% or less.
+- Specialist (REVIEW, LEAD), Reader, FIX only: 5-hour at 75% or less, weekly at 85% or less.
+- Otherwise start nothing: let running agents finish, check and commit them, write "waiting for the reset at <time>"
+  in "Now", delete the lock and stop. A later hourly run starts again once the gate allows it.
+- Log every agent in `.run/usage.log`, one line: date, step, model, 5-hour and weekly % at launch and at report, and
+  the other agents running meanwhile. Once 6 agents are logged, set the thresholds here from the numbers (a launch
+  must leave room for that step's typical share of the window).
 
 ## Start (manual run, or the first steps of an automatic run)
 1. `git status` clean; `node courses/<c>/kit/zta.js status`.
@@ -60,8 +73,11 @@ awake (Windows: Sleep "Never" when plugged in).
 ## Usage-limit stop
 - Agents fail with a rate-limit error; nothing on disk is lost.
 - After the reset: `git status`, `status`, `check` every changed chapter, commit a checkpoint, push.
-- Resume each stopped agent with **SendMessage** (it keeps its context): say the limit reset, what is on disk, and
-  "do not claim again". Start a fresh resume agent only if one cannot be resumed.
+- Automatic runs: the stopped agents belonged to the old session and cannot be resumed. Start a fresh resume agent
+  per stopped package (usual template plus: "already claimed, do not claim"; what is on disk and passes `check`;
+  what is missing). An interrupted review is re-run whole.
+- Manual runs (same session): resume each stopped agent with **SendMessage** (it keeps its context): say the limit
+  reset, what is on disk, and "do not claim again".
 
 ## End of the run
 - Let running agents finish; check and commit their work.
