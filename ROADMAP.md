@@ -3,9 +3,9 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (hourly, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
-- Current course: **Biology** (`bio`, queue item 2). P1–P7 written, P1–P3 reviewed (0 open items). Running
-  (run of 2026-10-29 02:33): REVIEW P4, P5, P7 (re-run whole); Writers resume P8 (widgets bio-odc, bio-cardiac
-  unbuilt) and P9 (bio.antibiotics unwritten). Next: REVIEW P6, P8, P9. bio-preview start was declined: agents use `shot`.
+- Current course: **Biology** (`bio`, queue item 2). P1–P10 written, P1–P5 and P7 reviewed (0 open items).
+  Running: REVIEW P6, P8, P9; Writers P11, P12. Next: REVIEW P10, P11, P12. bio-preview start was declined in the
+  run of 2026-10-29: agents use `shot`.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
