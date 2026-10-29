@@ -53,8 +53,10 @@ There is no CLAUDE.md at the root: course sessions would load it. Start every Or
   (macOS: python3, python) and sets PYTHONUTF8 (the console code page cannot print − or ²).
 - The engine and kit also run on macOS (Python and browser paths; see engine/README.md).
 - Edit LaTeX-heavy text with Write/Edit, never shell heredocs or sed (they eat backslashes).
-- The browser pane cannot open `file://` pages: use the "site" launch config (port 5100) or `<c>-preview`
-  (5101–5111). When the app window is hidden the pane cannot draw: use `kit/zta.js shot`.
+- Preview servers are headless by default (`kit/zta.js shot`, `widget --probe`): start the "site" launch config
+  (port 5100) or `<c>-preview` (5101–5111) only when the user says in the session that they are here or that the
+  server may be used (the app asks to approve each server in every new session). The browser pane cannot open
+  `file://` pages, and it cannot draw when the app window is hidden.
 - git: local user.name/email, `core.autocrlf false`. Remote `origin` is the public GitHub repository.
 
 Engine reference: [engine/README.md](engine/README.md).

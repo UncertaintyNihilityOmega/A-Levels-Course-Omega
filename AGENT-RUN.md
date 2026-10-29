@@ -52,7 +52,9 @@ awake (Windows: Sleep "Never" when plugged in).
 2. Guard on: write the course id into `.run/guard-course.txt`. The PreToolUse hook in `.claude/settings.json`
    then blocks any subagent file access or command outside `courses/<c>` (and `..` and git). The Organizer's own
    calls are not checked.
-3. Start the course preview: launch config `<c>-preview`.
+3. Preview: headless by default. Start a preview server (`<c>-preview`, `site`) with preview_start only when the user
+   says in this session that they are here or that the server may be used: the app asks to approve it in every new
+   session, and nobody can approve it in night runs. Headless, the Specialist uses the kit tools (template below).
 4. Manual runs only: a CronCreate check, hourly, off the hour (if agents run, do nothing; if a usage limit stopped
    them, checkpoint and resume with SendMessage; if none runs, continue the loop). It lives only in this session.
 5. Launch agents with the templates below: `subagent_type` general-purpose, `model` opus (Specialist) or sonnet
@@ -141,11 +143,20 @@ Reply in at most 5 lines: chapters read, how many (reader) items you filed, the 
 ```
 
 ### Specialist additions (LEAD, REVIEW, REVIEW FINAL)
+Headless (default):
 ```
-- Preview: http://localhost:<port> (if it is down, start the "<C>-preview" launch config with preview_start; stop it
-  when you finish). Run `node kit/zta.js preview`, then open `http://localhost:<port>/#<chapter-id>`. Prefer
-  get_page_text, read_page and javascript_tool probes; screenshots only at scale 0.5. If the pane does not draw
-  (the app window is hidden), use `node kit/zta.js shot <id>` (`--dark`, `--phone`) and Read the PNGs.
+- No preview server and no browser tools. Look at pages with `node kit/zta.js shot <id>` (`--dark`, `--phone`) and
+  Read the PNGs; test widgets with `node kit/zta.js widget <name> "…" --probe` (light, dark, phone, bad attributes,
+  a11y) and check their maths in data/ scripts.
+- Writer agents are writing other packages at the same time: do not touch their files. You may tighten COURSE.md or
+  the notes of packages nobody has claimed yet.
+```
+With the preview server (only when the user allowed it this session; the Organizer has started it):
+```
+- Preview: http://localhost:<port> (never start or stop a server yourself; if it is down, use the headless kit tools).
+  Run `node kit/zta.js preview`, then open `http://localhost:<port>/#<chapter-id>`. Prefer get_page_text, read_page
+  and javascript_tool probes; screenshots only at scale 0.5. If the pane does not draw (the app window is hidden),
+  use `node kit/zta.js shot <id>` (`--dark`, `--phone`) and Read the PNGs.
 - Writer agents are writing other packages at the same time: do not touch their files. You may tighten COURSE.md or
   the notes of packages nobody has claimed yet.
 ```
