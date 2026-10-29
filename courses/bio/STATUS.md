@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-29 · WRITE P16 · bio.genecontrol 8.1k words (8 eg, 22 try, 9 quiz, 48 marks), bio.variation 6.2k (7 eg, 22 try, 8 quiz, 47 marks), bio.selection 6.8k (10 eg, 23 try, 9 quiz, 51 marks); check and phone pass; figures: lac operon off/on and gibberellin-DELLA (fig small, stacked panels, data/fig_bio.genecontrol.py), bar chart v histogram, three selection graphs; widgets bio-ttest (two samples, t, df, critical value from the FACTS table, plus-or-minus 2 SE dot plot) and bio-hardy (Calculate tab: q2, p2 or 2pq as 0.04, 4% or 1 in N; Drift tab: Wright-Fisher N=10/100/1000, 5 lines, seeded), each tab of bio-hardy is built on first show; maths tested in data/test_bio-ttest.js and data/test_bio-hardy.js, probes clean light/dark/phone/bad attributes. Reviewer: click through both widgets, check the practice sets against worked examples (quiz and exam Q reused organisms were changed: blue tits, ladybirds, tortoises), the lac Q4 table (repressor-present column added so strains 2/3/4 are distinguishable), the sickle cell exam Q in bio.selection (malaria info is given in the stem), and the figure drawings (not looked at in dark mode).
+Last: 2026-10-29 · WRITE P15 · bio.meiosis 6.4k words (7 eg, 22 try, 9 quiz, 40 marks), bio.inheritance 6.0k (8 eg, 23 try, 8 quiz, 50 marks), bio.dihybrid 6.1k (8 eg, 23 try, 9 quiz, 54 marks); 10 figures (7 meiosis incl. 4 stage figures, 2 pedigrees, 1 linked v unlinked); widgets bio-punnett (mono, di, X-linked, codominant; genotype or phenotype square; Node-tested in data/test_bio-punnett.js) and bio-chisq (working table, bar chart, exam-wording verdict; data/test_bio-chisq.js) probed clean light/dark/phone/bad attributes. Reviewer: please click through both widgets and the stage figures. Notes: widget tab shows X^H style via sup; linkage and chi-squared examples use invented data (stated in the text); meiosis Stretch Q1 (Down syndrome) and Q2 (mule) go beyond the plain outcomes; bio.inheritance spot-the-error and quiz avoid the examples' contexts.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -19,9 +19,9 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P12: reviewed 2026-10-29
 - P13: written 2026-10-29
 - P14: written 2026-10-29
-- P15: writing 2026-10-29
+- P15: written 2026-10-29
 - P16: written 2026-10-29
-- P17: open
+- P17: writing 2026-10-29
 - P18: open
 - P19: open
 - P20: open
