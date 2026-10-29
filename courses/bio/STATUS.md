@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-29 · REVIEW P16, P17, P18 · 3 open items (exam box in bio.genetech, key boxes in bio.conservation and bio.genetech2); fixed 8: molecular clock plot moved out of the eg, gel figure bands match bio-gel and show in dark, plasmid figure step 4 drawn, PCR plot label, italic Homo sapiens, a mark token, bio-hardy p2 to 4 sf and drift colours, bio-diversity phone table; rule in COURSE.md
+Last: 2026-10-29 · WRITE P20 · bio.stats 7.4k, bio.planning 7.0k, bio.evaluation 5.6k words; no new widgets (bio.stats embeds bio-chisq and bio-ttest, which render with the worked-example data); figures from data/fig_p20.py (error bars, serial dilution, drug bars, lichen scatter) looked at on phone shots; reviewer: check the two :::plot distributions in bio.stats and that Spearman critical values (0.700 n=9, 0.648 n=10, 0.591 n=12, 0.738 n=8) are given in the questions as the exam does
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -24,7 +24,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P17: reviewed 2026-10-29
 - P18: reviewed 2026-10-29
 - P19: written 2026-10-29
-- P20: writing 2026-10-29
+- P20: written 2026-10-29
 - P21: open
 - P22: open
 - P23: open
