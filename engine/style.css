@@ -50,6 +50,7 @@
   --c-practice: #7F6400; --c2-practice: #3442B4;
   --sc: var(--c-start);
   --sc2: var(--c2-start);
+  color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
