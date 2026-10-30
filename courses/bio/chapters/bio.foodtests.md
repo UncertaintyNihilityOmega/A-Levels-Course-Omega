@@ -36,7 +36,7 @@ Every test in this chapter detects a particular chemical feature, which is why t
 
 | Test | Detects | The feature it reacts with |
 |---|---|---|
-| Benedict's | reducing sugars | a free carbonyl group that donates electrons |
+| Benedict's | reducing sugars | the sugar's open-chain end, which can donate electrons |
 | iodine | starch | the coiled shape of amylose |
 | emulsion | lipids | hydrophobic molecules that dissolve in ethanol but not water |
 | biuret | proteins | peptide bonds |
@@ -108,7 +108,7 @@ There are two common ways to read the result.
 **Aim**: estimate the concentration of reducing sugar in a solution.
 
 :::steps
-1. Make a set of known glucose concentrations by **serial dilution** from a stock solution (see [Practical skills](#bio.practical) for the method). Keep one tube of water as the zero.
+1. Make a set of known glucose concentrations by **serial dilution** from a stock solution (each tube has half the concentration of the one before; the worked example below shows the method). Keep one tube of water as the zero.
 2. Put 2 cm³ of each standard, and of the unknown, into separate labelled test tubes.
 3. Warm a water bath to a set temperature (for example 90 °C) and keep it there.
 4. Add 2 cm³ of Benedict's solution to a tube, place it in the bath and **start the stopwatch at once**. Do each tube separately, or add all the Benedict's solution and place all the tubes in at the same moment.
@@ -122,7 +122,7 @@ There are two common ways to read the result.
 
 **Limits**: judging "the first colour change" and matching colours are subjective; different people may disagree; the estimate is only valid inside the range of the standards.
 
-**Improvements**: use more standards at smaller intervals; repeat and take means; have the same person judge every tube; or measure the result objectively. Two objective ways are to filter the mixture, dry and **weigh the precipitate** (more sugar gives a greater mass of copper(I) oxide), or to read the blue filtrate in a **colorimeter** (the more sugar, the less blue is left, so the absorbance falls; see [Enzymes](#bio.enzymes)).
+**Improvements**: use more standards at smaller intervals; repeat and take means; have the same person judge every tube; or measure the result objectively. Two objective ways are to filter the mixture, dry and **weigh the precipitate** (more sugar gives a greater mass of copper(I) oxide), or to read the blue filtrate in a **colorimeter**. A colorimeter measures how much light a coloured solution absorbs; **absorbance** is that amount as a number, and a coloured filter lets through the colour the solution absorbs most (a blue solution absorbs red light, so it is read with a red filter). The more sugar, the less blue is left, so the absorbance falls (see [Enzymes](#bio.enzymes) for the method).
 
 **Safety**: as for the Benedict's test (hot water bath).
 :::
@@ -428,7 +428,7 @@ A: The 0.8% solution, because more reducing sugar reduces the copper(II) ions fa
 Q: A student concludes that a juice contains glucose because it gave an orange precipitate with Benedict's solution. Comment on the conclusion.
 A: Benedict's solution shows only that a reducing sugar is present. Fructose, maltose or lactose would give the same result.
 Q: Blackcurrant juice is a very dark purple. Suggest why the Benedict's test is hard to read, and one way to deal with this.
-A: The dark colour hides the blue-to-red change. Filter off the precipitate and look at it on the filter paper, or dilute the juice, or use glucose test strips.
+A: The dark colour hides the blue-to-red change. Filter off the precipitate and look at it on the filter paper, or dilute the juice, or use a glucose test strip (a paper strip carrying an enzyme that changes colour only with glucose).
 Q: Starting from a 3.2% solution, how many 1 : 1 serial dilutions are needed to reach 0.20%? Show the working.
 A: \(3.2 \to 1.6 \to 0.80 \to 0.40 \to 0.20\): four dilutions (\(3.2 \times (1/2)^4 = 0.20\)).
 :::
@@ -485,7 +485,7 @@ Pour the ethanol into a tube of water. [B1]
 A cloudy white emulsion shows that lipid is present. [B1]
 (b) Ethanol is flammable, so keep it away from naked flames. [B1]
 (Also credit: wear eye protection.)
-Q: [6 marks] ★★★ A food scientist measured the reducing sugar in apple juice. Samples of known sugar concentration were heated with an excess of Benedict's solution, the precipitate was filtered off and the absorbance of the blue filtrate was read in a colorimeter with a red filter. The absorbance was 0.80 with no sugar and fell by 0.16 for every 10 g dm⁻³ of sugar, giving a straight line. The filtrate from the apple juice had an absorbance of 0.37. (a) Explain why the absorbance of the filtrate falls as the sugar concentration rises. (b) Calculate the concentration of reducing sugar in the apple juice, to 2 significant figures. (c) Explain why the precipitate must be removed before the reading is taken.
+Q: [6 marks] ★★★ A food scientist measured the reducing sugar in apple juice. Samples of known sugar concentration were heated with an excess of Benedict's solution, the precipitate was filtered off and the absorbance of the blue filtrate was read in a colorimeter with a red filter. (A colorimeter measures how much light a coloured solution absorbs; absorbance is that amount as a number; the filter lets through the colour the solution absorbs most, here red for a blue solution.) The absorbance was 0.80 with no sugar and fell by 0.16 for every 10 g dm⁻³ of sugar, giving a straight line. The filtrate from the apple juice had an absorbance of 0.37. (a) Explain why the absorbance of the filtrate falls as the sugar concentration rises. (b) Calculate the concentration of reducing sugar in the apple juice, to 2 significant figures. (c) Explain why the precipitate must be removed before the reading is taken.
 H: Reducing sugar removes copper(II) ions from the solution. What colour are copper(II) ions in solution?
 H: Fall in absorbance \(= 0.80 - 0.37\). Divide by the fall per 1 g dm⁻³ (0.016).
 A: (a) Reducing sugar reduces the blue copper(II) ions to copper(I) oxide, which forms the precipitate. [B1]
@@ -504,6 +504,7 @@ Q: [6 marks] ★★★ A student followed the breakdown of starch by amylase at 
 | 8 | orange-brown | brick-red |
 
 (a) Describe the changes in the two sets of results. (b) Explain the results. (c) State the result expected for a control with boiled amylase.
+H: An enzyme (amylase, protease) is a protein that speeds up a reaction; the substrate is what it acts on, the product what it makes; boiling denatures it, meaning it loses its shape and stops working.
 H: Starch is the substrate and maltose the product. Which test detects each?
 H: The control is for the whole experiment: think about iodine and Benedict's at 8 minutes.
 A: (a) The iodine test changes from blue-black to orange-brown, between 2 and 4 minutes. [B1]
@@ -531,7 +532,8 @@ A: (a) Sucrose is a non-reducing sugar, so the sample should have stayed blue; a
 Boil a second portion of the same drink with dilute hydrochloric acid, neutralise it, and test it in exactly the same way. [B1]
 Keep volumes, temperature and timing the same. [B1]
 A higher estimated concentration (a shorter time or a deeper colour) after acid shows that a non-reducing sugar, probably sucrose, was also present. [B1]
-Q: [5 marks] ★★★ (#bio.proteins) The biuret test can be used to follow the digestion of protein. A protease was added to a protein solution at 35 °C, and samples were taken and tested with biuret reagent. The absorbance in a colorimeter (green filter) was 0.60 at 0 min, 0.44 at 10 min, 0.32 at 20 min and 0.24 at 30 min. (a) Explain why the absorbance falls. (b) Calculate the mean rate of fall in absorbance between 0 and 20 min. (c) After 30 minutes the absorbance is not zero. Suggest why.
+Q: [5 marks] ★★★ (#bio.proteins) The biuret test can be used to follow the digestion of protein. A protease was added to a protein solution at 35 °C, and samples were taken and tested with biuret reagent. The absorbance in a colorimeter (a colorimeter measures how much light a coloured solution absorbs, and absorbance is that amount as a number) was read with a green filter, because the purple biuret colour absorbs green light most. The values were 0.60 at 0 min, 0.44 at 10 min, 0.32 at 20 min and 0.24 at 30 min. (a) Explain why the absorbance falls. (b) Calculate the mean rate of fall in absorbance between 0 and 20 min. (c) After 30 minutes the absorbance is not zero. Suggest why.
+H: An enzyme (amylase, protease) is a protein that speeds up a reaction; the substrate is what it acts on, the product what it makes. A protease breaks down protein.
 H: What does the protease do to the peptide bonds?
 H: A short chain of amino acids still has peptide bonds.
 A: (a) The protease hydrolyses peptide bonds in the protein. [B1]

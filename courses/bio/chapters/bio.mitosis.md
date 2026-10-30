@@ -24,6 +24,8 @@ A: A peptide bond, formed by a condensation reaction (a molecule of water is rem
 
 A human cell contains about 2 m of DNA, packed into a nucleus only a few micrometres across. A cell can only manage this because the DNA is wound up tightly. When the cell is not dividing, the DNA is spread through the nucleus as thin threads of **chromatin**. Before the cell divides, the chromatin coils up and becomes short, thick **chromosomes** that can be moved around without tangling or breaking.
 
+Three words you will meet in this chapter: DNA is a long chain of units called **bases**, in four kinds (A, T, C, G); a **gene** is a length of DNA whose base order codes for one polypeptide; a **mutation** is a change in that order. The next chapter gives the details.
+
 :::def Chromosome
 A structure made of one very long DNA molecule wound round proteins. In a cell that is about to divide it is condensed, so that it can be seen with a light microscope.
 :::
@@ -92,9 +94,9 @@ A human cell in G2 has 92 chromatids but only **46 chromosomes**, because the tw
 Nuclear division in which a parent nucleus produces two daughter nuclei that have the same number of chromosomes as the parent nucleus and are genetically identical to it and to each other.
 :::
 
-"Genetically identical" means that the daughter nuclei have the same DNA base sequences, so the same genes. The only differences are rare mutations. Mitosis is therefore used whenever an organism needs more cells of the same kind, with the same instructions:
+"Genetically identical" means that the daughter nuclei have the same DNA base sequences, so the same genes. The only differences are rare mutations (changes in the base order, explained under "Uncontrolled division and tumours"). Mitosis is therefore used whenever an organism needs more cells of the same kind, with the same instructions:
 
-- **Growth of multicellular organisms.** A fertilised egg divides by mitosis to make an embryo, and the embryo grows into an adult by more mitosis. Every cell receives the same genes, so each can later become a specialised cell. In plants, new cells are made in growing regions such as the tips of roots and shoots.
+- **Growth of multicellular organisms.** A fertilised egg divides by mitosis to make an embryo, and the embryo grows into an adult by more mitosis. Every cell receives the same genes, so each can later become a specialised cell (a cell with a particular shape and job, for example a red blood cell; becoming specialised is called differentiation). In plants, new cells are made in growing regions such as the tips of roots and shoots.
 - **Replacement of damaged or dead cells.** Cells wear out. Skin cells are lost from the surface all the time, and the cells that line your gut are replaced within days. New cells are made by mitosis.
 - **Repair of tissues by cell replacement.** After a cut or a broken bone, cells next to the damage divide by mitosis to fill the gap.
 - **Asexual reproduction.** One parent makes offspring by mitosis, so the offspring are genetically identical to the parent: clones. Examples are a yeast cell budding, a strawberry plant sending out runners and a *Hydra* growing a bud that breaks off. Asexual reproduction is quick and needs no partner, but the offspring show no genetic variation.
@@ -339,7 +341,7 @@ Show the division. The usual loss of marks is dividing by the number of cells in
 
 ## Telomeres
 
-Every time a cell copies its DNA, the machinery that does the copying cannot reach the very end of the chromosome, so a short stretch at the end is not copied. The new DNA molecule is therefore slightly shorter than the one it was copied from. (The next chapter shows why: DNA polymerase works in only one direction.)
+Every time a cell copies its DNA, the machinery that does the copying cannot reach the very end of the chromosome, so a short stretch at the end is not copied. The new DNA molecule is therefore slightly shorter than the one it was copied from. (The next chapter shows why: DNA polymerase works in only one direction, so the very last piece of the template cannot be copied. For now, learn the result.)
 
 If this happened to genes, each division would delete part of a gene. **Telomeres** prevent this. They are made of a short sequence of bases repeated many times, and they carry no genes. Each replication removes a little of the telomere, not of the genes behind it.
 
@@ -384,7 +386,7 @@ Some of the daughter cells differentiate into red blood cells and white blood ce
 
 The cell cycle is controlled. Genes make proteins that start the cycle when new cells are needed and proteins that stop it when they are not. The cell cycle also stops if the DNA is damaged.
 
-A **mutation** is a change in the base sequence of a gene (see [Protein synthesis and gene mutation](#bio.synthesis)). If a mutation damages a gene that controls the cell cycle, the protein it makes may not work. The cell can then divide when it should not, or ignore signals to stop. Mutations are caused by chance errors when DNA is copied and by carcinogens such as ultraviolet light and chemicals in tobacco smoke.
+A **mutation** is a change in the base sequence of a gene (see [Protein synthesis and gene mutation](#bio.synthesis)). If a mutation damages a gene that controls the cell cycle, the protein it makes may not work. The cell can then divide when it should not, or ignore signals to stop. Mutations are caused by chance errors when DNA is copied and by carcinogens (things that can cause cancer) such as ultraviolet light and chemicals in tobacco smoke.
 
 :::steps
 1. A mutation changes a gene that controls the cell cycle.
@@ -398,7 +400,7 @@ A mass of cells that is formed when cells divide by mitosis in an uncontrolled w
 :::
 
 :::note Benign and malignant tumours
-A **benign** tumour grows slowly, stays in one place (often with a capsule round it) and does not spread; it can still cause harm by pressing on organs. A **malignant** tumour (a cancer) grows faster and invades nearby tissues; its cells can break off, travel in the blood or lymph, and form secondary tumours elsewhere (**metastasis**).
+A **benign** tumour grows slowly, stays in one place (often with a capsule round it) and does not spread; it can still cause harm by pressing on organs. A **malignant** tumour (a cancer) grows faster and invades nearby tissues; its cells can break off, travel in the blood or lymph (the colourless tissue fluid carried in lymph vessels), and form secondary tumours elsewhere (**metastasis**).
 :::
 
 Cancer treatments use the fact that tumour cells divide rapidly. **Radiotherapy** damages the DNA of dividing cells. **Chemotherapy** uses drugs that block cell division. Some drugs stop the spindle forming, so that the chromosomes cannot be pulled apart in anaphase. Other drugs prevent DNA replication, so that cells cannot pass S phase. Cells that cannot complete the cycle die. Normal cells that divide often are also damaged, which explains the side effects: hair follicle cells, cells of the gut lining and bone marrow stem cells all divide rapidly, so patients may lose hair, feel sick and become more likely to get infections.

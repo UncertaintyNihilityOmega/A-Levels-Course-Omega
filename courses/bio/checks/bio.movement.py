@@ -143,4 +143,8 @@ eq("6/L halves when L doubles", (6 / 4) / (6 / 2), 0.5)
 eq("sodium-potassium pump 3 Na+ out", 3, 3)
 eq("sodium-potassium pump 2 K+ in", 2, 2)
 
+wp_table = [(0.1, -270), (0.2, -540), (0.3, -820), (0.4, -1100)]
+assert all(b[1] < a[1] for a, b in zip(wp_table, wp_table[1:])), "water potential table falls as sucrose rises"
+assert -820 < (-540 + -820) / 2 < -540, "potato water potential -680 lies between the two table values"
+
 print("ok")

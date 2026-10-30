@@ -64,7 +64,7 @@ At a substrate concentration of 5 mmol dm⁻³ the enzyme works at half its maxi
 Often you are not given a graph, but a table. Then you plot the points, draw a smooth curve, and read the graph in the same way.
 
 :::eg The table shows the initial rate of an enzyme at different substrate concentrations. Estimate Vmax and Km.
-Rates are in µmol min⁻¹.
+Rates are in µmol min⁻¹. [S] means the concentration of the substrate S (square brackets always mean "concentration of").
 
 | [S] / mmol dm⁻³ | rate |
 |---|---|
@@ -155,7 +155,7 @@ The effect is reversible and depends on concentration, which is why the dose of 
 ### Non-competitive inhibitors
 
 :::def Non-competitive inhibitor
-A reversible inhibitor that binds to the enzyme at a site other than the active site (an allosteric site). Binding changes the shape of the active site, so substrate molecules can no longer bind. Increasing the substrate concentration does not overcome its effect.
+A reversible inhibitor that binds to the enzyme at a site other than the active site (an allosteric site, which is a binding site other than the active site). Binding changes the shape of the active site, so substrate molecules can no longer bind. Increasing the substrate concentration does not overcome its effect.
 :::
 
 How a non-competitive inhibitor works:
@@ -195,7 +195,7 @@ Try it yourself: the widget starts with the competitive inhibitor on. Switch it 
 :::
 
 :::note End-product inhibition
-Cells use inhibitors to avoid wasting resources. In many metabolic pathways the final product acts as a non-competitive inhibitor of an enzyme near the start of the pathway. When the product builds up, it switches the first enzyme off; when it is used up, the inhibitor leaves and the pathway restarts. The cell makes only as much as it needs.
+Cells use inhibitors to avoid wasting resources. A metabolic pathway is a series of enzyme-controlled steps, each product being the substrate of the next. In many metabolic pathways the final product acts as a non-competitive inhibitor of an enzyme near the start of the pathway. When the product builds up, it switches the first enzyme off; when it is used up, the inhibitor leaves and the pathway restarts. The cell makes only as much as it needs.
 :::
 
 ### Reading inhibitor graphs
@@ -447,7 +447,7 @@ The drops set into beads with the enzyme trapped inside. [B1]
 (b) Lactose is itself a reducing sugar, so milk would give a positive Benedict's test before any glucose was made. [B1]
 (c) In the beads, the lactose must diffuse into the beads to reach the enzyme, so the reaction is slower. [B1] With the free enzyme, the lactase is mixed through the milk so enzyme and substrate collide more often. [B1]
 (d) The beads can be reused (or the product is not contaminated with enzyme). [B1]
-Q: [6 marks] ★★★ In a metabolic pathway, the final product inhibits the first enzyme in the pathway. The inhibitor binds at a site away from the active site. (a) State the type of inhibition. (b) Explain how this controls the amount of product made. (c) Explain why the pathway still switches off when the substrate of the first enzyme is present at a very high concentration.
+Q: [6 marks] ★★★ In a metabolic pathway (a series of enzyme-controlled steps, each product being the substrate of the next), the final product inhibits the first enzyme in the pathway. The inhibitor binds at a site away from the active site. (a) State the type of inhibition. (b) Explain how this controls the amount of product made. (c) Explain why the pathway still switches off when the substrate of the first enzyme is present at a very high concentration.
 H: What happens to the shape of the active site when the product binds?
 A: (a) Non-competitive inhibition. [B1]
 (b) As the product concentration rises, more product binds to the first enzyme and changes the shape of its active site. [B1]

@@ -43,7 +43,7 @@ Now put a lot of phospholipids in water. Water molecules are polar and form hydr
 
 - In each layer the **heads face outwards, towards water**.
 - The **tails face inwards, towards each other**, so they are hidden from water in the middle.
-- Every cell surface membrane therefore has water on both sides: watery tissue fluid outside and watery cytoplasm inside. The bilayer is the arrangement in which all the heads can face a water layer and all the tails are hidden.
+- Every cell surface membrane therefore has water on both sides: watery tissue fluid (the fluid that surrounds the cells of a tissue) outside and watery cytoplasm inside. The bilayer is the arrangement in which all the heads can face a water layer and all the tails are hidden.
 
 :::def Phospholipid bilayer
 Two layers of phospholipid molecules arranged with their hydrophilic phosphate heads facing the water on either side and their hydrophobic fatty acid tails facing each other in the middle of the membrane.
@@ -131,7 +131,7 @@ A protein with a carbohydrate chain attached. The protein is embedded in the mem
 :::
 
 All carbohydrate chains are on the **outer surface** of the cell surface membrane, never the inner one. They form a fuzzy sugar coat called the **glycocalyx**. The chains are hydrophilic and hold water, which helps to protect and cushion the cell, and they are the key to three jobs:
-- **Cell recognition.** Chains of different shapes act as **cell surface antigens** that identify the cell as part of the body ("self") or as foreign ("non-self") to the immune system (see [The immune response](#bio.immunity)). The ABO blood group of a red blood cell depends on its carbohydrate chains.
+- **Cell recognition.** Chains of different shapes act as **cell surface antigens** that identify the cell as part of the body ("self") or as foreign ("non-self") to the immune system. An antigen is a molecule that the immune system can recognise; the immune system is the body's defence against disease (see [The immune response](#bio.immunity)).
 - **Receptors.** Many receptor proteins are glycoproteins that bind to a signalling molecule (below).
 - **Cell adhesion.** Carbohydrate chains help cells to stick to each other and form tissues.
 
@@ -143,9 +143,9 @@ All carbohydrate chains are on the **outer surface** of the cell surface membran
 | carrier protein | spans the bilayer, changes shape | binds a particular molecule and carries it across |
 | receptor protein | spans the bilayer, binding site on the outer surface | binds a ligand (a signalling molecule) and starts a response |
 | glycoprotein (antigen) | spans the bilayer, chain on the outer surface | cell recognition, or receptor |
-| extrinsic protein | on one surface of the bilayer | for example holds the membrane to the cytoskeleton inside |
+| extrinsic protein | on one surface of the bilayer | for example holds the membrane to the cytoskeleton inside (the protein fibres inside the cell that give it shape) |
 
-The syllabus asks about channel proteins, carrier proteins and receptors, so keep them separate in your mind.
+The syllabus asks about channel proteins, carrier proteins and receptors, so keep them separate in your mind. Two words you will meet in the next lists: **passive** means no energy is needed, and substances move from high to low concentration (down a concentration gradient); **active** means energy from ATP is used, so a substance can move from low to high concentration. The details are in the next chapter.
 
 :::cols
 :::col Channel protein

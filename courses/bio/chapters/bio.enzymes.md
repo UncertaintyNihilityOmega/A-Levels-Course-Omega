@@ -247,7 +247,7 @@ So the rate changes during the experiment. To compare experiments fairly, biolog
 
 \[\begin{aligned} \text{mean rate} &= \frac{25\,\mathrm{cm^3}}{30\,\mathrm{s}} \\ &= 0.83\,\mathrm{cm^3\,s^{-1}} \end{aligned}\]
 
-**Initial rate**: plot the graph and draw the tangent at \(t = 0\) (as in the graph above). The tangent passes through \((0, 0)\) and \((40\,\mathrm{s}, 48\,\mathrm{cm^3})\).
+**Initial rate**: plot the graph and draw the tangent at \(t = 0\) (as in the graph above). The tangent is the straight line you draw on the graph above, touching the curve at the origin. It passes through \((0, 0)\) and \((40\,\mathrm{s}, 48\,\mathrm{cm^3})\). Read this second point from the tangent line itself, not from the table: the curve is flatter than its tangent, so the table gives only 30 cm³ at 40 s. Choose a second point well along the tangent so the triangle is large.
 
 \[\begin{aligned} \text{initial rate} &= \frac{48 - 0}{40 - 0} \\ &= 1.2\,\mathrm{cm^3\,s^{-1}} \end{aligned}\]
 
@@ -269,7 +269,7 @@ The mean rate over 30 s is lower than the initial rate, because the rate was alr
 <figure class="fig small"><svg viewBox="0 0 345 215" role="img" aria-label="Apparatus: a conical flask in a water bath at 30 °C holds hydrogen peroxide solution and yeast, which contains catalase. A bung and delivery tube lead from the flask to a gas syringe, where the oxygen collects."><rect class="fm s-acc sw2" x="18" y="112" width="132" height="92" rx="6"/><path class="fp ln" d="M76 74L76 102L40 190L130 190L94 102L94 74"/><path class="f2 s-acc2 sw2" d="M54.3 156L115.7 156L130 190L40 190Z"/><rect class="fi" x="72" y="62" width="26" height="12"/><path class="ln" d="M85 62L85 40L190 40"/><rect class="fp ln" x="190" y="28" width="110" height="24"/><rect class="fm s-acc sw2" x="244" y="37" width="92" height="6"/><path class="ln thick" d="M244 30L244 50"/><path class="ln-m thin" d="M199 28L199 34"/><path class="ln-m thin" d="M208 28L208 34"/><path class="ln-m thin" d="M217 28L217 34"/><path class="ln-m thin" d="M226 28L226 34"/><path class="ln-m thin" d="M235 28L235 34"/><text class="tl" x="245" y="18" text-anchor="middle">gas syringe</text><text class="tl" x="200" y="72">oxygen</text><path class="ln-m thin" d="M222 61L222 46"/><text class="tl" x="104" y="58">bung</text><text class="tl" x="160" y="134">hydrogen peroxide</text><text class="tl" x="160" y="150">solution + yeast</text><text class="tl" x="160" y="166">(contains catalase)</text><path class="ln-m thin" d="M156 150L110 174"/><text class="tl" x="160" y="198">water bath, 30 °C</text></svg><figcaption>Measuring the rate of product formation: the volume of oxygen in the gas syringe is read at regular intervals. An upturned measuring cylinder full of water in a trough can replace the gas syringe.</figcaption></figure>
 :::
 
-**Variables**: the independent variable is whatever you are investigating (for example hydrogen peroxide concentration); the dependent variable is the volume of oxygen (or the initial rate). Standardise the temperature (water bath), the volume and concentration of hydrogen peroxide, the amount of catalase (same volume of yeast suspension, or same number and size of potato discs), and the pH (add a buffer).
+**Variables**: the independent variable is whatever you are investigating (for example hydrogen peroxide concentration); the dependent variable is the volume of oxygen (or the initial rate). Standardise the temperature (water bath), the volume and concentration of hydrogen peroxide, the amount of catalase (same volume of yeast suspension, or same number and size of potato discs), and the pH (add a buffer, a solution that keeps the pH constant; see "pH and buffer solutions" below).
 
 **Control**: repeat with boiled (denatured) yeast suspension. No oxygen should be collected, which shows that the oxygen comes from catalase activity.
 
@@ -294,7 +294,7 @@ A quick alternative: soak small discs of filter paper in catalase solution and d
 6. Repeat three times and calculate the mean time. The rate is \(\dfrac{1}{\text{time}}\), in \(\mathrm{s^{-1}}\).
 :::
 
-**Variables**: the independent variable is, for example, amylase concentration or temperature; the dependent variable is the time to reach the end point. Standardise the volume and concentration of starch, the volume of amylase, the temperature, the pH (buffer) and the size of the drops.
+**Variables**: the independent variable is, for example, amylase concentration or temperature; the dependent variable is the time to reach the end point. Standardise the volume and concentration of starch, the volume of amylase, the temperature, the pH (buffer, a solution that keeps the pH constant; see "pH and buffer solutions" below) and the size of the drops.
 
 **Control**: boiled amylase, or water instead of amylase. The iodine stays blue-black throughout, showing that starch is broken down only by active amylase.
 
@@ -344,7 +344,7 @@ An instrument that passes light of a chosen colour through a sample and measures
 :::
 
 :::key Using a colorimeter to follow an enzyme reaction
-1. **Filter**: choose the filter of the colour the solution absorbs most, which is the complementary colour (a red filter for a blue or blue-black solution).
+1. **Filter**: choose the filter of the colour the solution absorbs most, which is the complementary colour. A solution looks blue because it absorbs red light, so a blue or blue-black solution needs a red filter; a purple or red solution absorbs green light, so it needs a green filter.
 2. **Blank**: fill a cuvette with everything except the coloured substance (for starch tests, iodine solution in water) and set the reading to zero absorbance (100% transmission).
 3. **Calibration curve**: measure the absorbance of solutions of known concentration, plot absorbance against concentration and draw the line of best fit.
 4. **Samples**: take samples of the reaction mixture at set times, treat them in the same way (for example, add the same volume of iodine) and read the absorbance. Read each concentration from the calibration curve.
@@ -392,6 +392,8 @@ Every enzyme has an **optimum temperature**, at which its rate of reaction is hi
 :::plot A model enzyme: the rate rises with temperature up to the optimum, then falls steeply as the enzyme is denatured.
 --f "7*2**(x/10)/(1+exp((x-45)/2.5))+0*sqrt(64-x)" --x 0 80 --y 0 130 --xlabel "temperature / °C" --ylabel "rate / arbitrary units" --label "rate of reaction" --pt "41,100,optimum@ne" --pt "50,26.7,denaturation@e" --legend tr --alt "The rate rises slowly from 7 units at 0 °C, roughly doubling for each 10 °C rise, to a peak of 100 units at the optimum near 41 °C. It then falls steeply and reaches almost zero by 60 °C."
 :::
+
+**Arbitrary units** (on the rate axes of this and the next graphs) are a made-up scale used to compare rates, with no real unit.
 
 **Below the optimum**, raising the temperature increases the rate:
 - Enzyme and substrate molecules gain **kinetic energy** and move faster.
@@ -520,7 +522,7 @@ Extreme pH and high temperature both denature, but for different reasons. Temper
 
 If there is plenty of substrate, more enzyme means more active sites, so more enzyme–substrate complexes form per unit time. The initial rate is **directly proportional** to the enzyme concentration.
 
-If the amount of substrate is limited, adding more and more enzyme eventually stops helping: there is not enough substrate to fill the extra active sites. **Substrate concentration** has become the limiting factor and the graph levels off.
+If the amount of substrate is limited, adding more and more enzyme eventually stops helping: there is not enough substrate to fill the extra active sites. **Substrate concentration** has become the limiting factor (the factor in shortest supply, which sets the rate) and the graph levels off.
 
 :::plot Initial rate against enzyme concentration: a straight line when substrate is in excess; levelling off when the substrate runs short.
 --f "20*x+0*sqrt(5.5-x)" --f "(20*x+60-abs(20*x-60))/2" --label "substrate in excess" --label "limited substrate" --x 0 7 --y 0 130 --xlabel "enzyme concentration / arbitrary units" --ylabel "initial rate / arbitrary units" --legend tr --alt "Both lines rise together in a straight line through the origin. The substrate-in-excess line keeps rising to 110 units at 5.5. The limited-substrate line becomes flat at 60 units from an enzyme concentration of 3."

@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-30 · FIX · closed 18 items: plots moved after the examples in bio.anaerobic and bio.energy; 16 reader glosses (mark tokens, cell terms, micrograph, vesicle, gene, spindle, osmotic effect, active site, denatured, backbone and others) in overview, f.basics, microscopy, cells, prokaryotes, carbs, lipids, proteins
+Last: 2026-10-30 · FIX · READER batch 2: 30 reader items closed (bio.foodtests to bio.planttransport): colorimeter/absorbance/filters, buffer, arbitrary units, [S], gene/base/mutation glosses, telomere promise now in bio.dna, tangent, water potential table, antigen, cytoskeleton, plant structure words, cohesion-tension link
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -28,6 +28,6 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P21: reviewed 2026-10-30
 - P22: written 2026-10-30
 - P23: written 2026-10-30
-- P24: writing 2026-10-30
+- P24: written 2026-10-30
 - READER: open
 - FINAL: open

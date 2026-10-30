@@ -248,7 +248,7 @@ Try it: in the tool below the strand of DNA you see is the template, and the mRN
 A change in the sequence of base pairs in a DNA molecule that may result in an altered polypeptide.
 :::
 
-A gene mutation can happen when DNA is copied (an error that is not corrected) or when DNA is damaged by radiation or chemicals. If the change is in a body cell it is not passed on to offspring; if it is in a cell that makes gametes it can be inherited. A mutation changes a gene, but what it does to the polypeptide depends on what kind of mutation it is, and where.
+A gene mutation can happen when DNA is copied (an error that is not corrected) or when DNA is damaged by radiation or chemicals. If the change is in a body cell it is not passed on to offspring (the next generation); if it is in a cell that makes gametes (the sex cells, sperm and egg cells, that join at fertilisation to form the next generation) it can be inherited, meaning passed on to children. A mutation changes a gene, but what it does to the polypeptide depends on what kind of mutation it is, and where.
 
 :::key Three kinds of gene mutation
 1. **Substitution**: one nucleotide is replaced by a different one.
@@ -279,9 +279,9 @@ The second is a missense mutation: aspartic acid replaces glutamic acid, so one 
 
 The third is a nonsense mutation: UAA is a stop codon, so translation stops after two amino acids and the polypeptide is shorter. [B1]
 
-The insertion is a frameshift: every codon after the change is different, so every amino acid after methionine changes. [B1]
+The insertion is a frameshift: every codon after the change is different, so every amino acid after methionine changes. [B1] (The reading frame is the way the bases are grouped into threes; a frameshift is when every codon after the change is read in a different grouping of three. The next section explains this.)
 
-The deletion of three bases removes one codon and keeps the reading frame, so only one amino acid (Pro) is lost and the others are unchanged. [B1]
+The deletion of three bases removes one codon and keeps the reading frame (the grouping into threes), so only one amino acid (Pro) is lost and the others are unchanged. [B1]
 :::
 
 ### Insertion and deletion: the reading frame
@@ -313,7 +313,7 @@ The template triplet CAC is transcribed to GUG, which codes for valine. [B1]
 
 This is a substitution (one base is replaced). It is a missense mutation, because one amino acid is changed, from glutamic acid to valine. [B1]
 
-The R group of valine is different from that of glutamic acid, so the tertiary structure and the way haemoglobin molecules interact change, and the red blood cells can become abnormal. [B1]
+The R group of valine is different from that of glutamic acid, so the tertiary structure of the haemoglobin changes, and the haemoglobin molecules stick together and bend the red blood cells out of their disc shape. [B1]
 
 (The full explanation of sickle cell anaemia is in the A Level chapters. At this level you need the chain: one base changed, one amino acid changed, a different R group, a changed protein.)
 :::

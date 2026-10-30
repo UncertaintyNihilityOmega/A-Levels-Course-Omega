@@ -27,7 +27,7 @@ A single-celled alga takes in what it needs through its surface by diffusion. A 
 There are two:
 
 - **Xylem** carries water and dissolved mineral ions (such as nitrate and magnesium) from the roots up to the stem and leaves.
-- **Phloem** carries dissolved organic compounds, mainly sucrose and amino acids, from where they are made or stored to where they are used.
+- **Phloem** carries dissolved organic compounds, mainly sucrose and amino acids, from where they are made or stored to where they are used (for example from the leaves, which make sugar, to the roots, which use it).
 
 :::key What is transported
 Some mineral ions and organic compounds are transported in plants **dissolved in water**. Water is the solvent in both tissues. Xylem moves water and mineral ions; phloem moves sucrose and amino acids dissolved in water.
@@ -38,6 +38,16 @@ Xylem and phloem lie together in groups called **vascular bundles** (in roots, i
 ## Where the tissues are: transverse sections
 
 A herbaceous dicotyledon (a non-woody plant with two seed leaves, such as a sunflower or a bean) has the same tissues in every plant, but they are arranged differently in the stem, the root and the leaf. You must be able to describe each arrangement and draw it as a **plan diagram**.
+
+Words you will meet in the next sections:
+- **TS** = transverse section (a slice cut across).
+- **Lumen** = the hollow space inside a tube or cell.
+- **Epidermis** = the outer layer of cells.
+- **Cortex** = the packing tissue between the epidermis and the vascular tissue (the xylem and phloem).
+- **Pith** = the soft centre of a stem.
+- **Mesophyll** = the leaf tissue between the two epidermises, where photosynthesis happens. **Palisade** mesophyll is tightly packed upright cells; **spongy** mesophyll is loosely packed cells with air spaces.
+- **Stomata** (one is a stoma) = tiny pores, mostly in the lower epidermis of a leaf, that let gases in and out; each lies between two **guard cells**.
+- **Pericycle** = a ring of cells just outside the vascular tissue of a root.
 
 ### How to draw a plan diagram
 
@@ -166,7 +176,7 @@ Phloem has two cell types that work as a pair. This section gives the structures
 | Cell | Structure | Function |
 |---|---|---|
 | **Sieve tube element** | living; thin lining of cytoplasm; **no nucleus**, few organelles; **sieve plates** with pores at the end walls | forms the long tube that carries sucrose and amino acids; the pores and the empty space let the sap flow |
-| **Companion cell** | nucleus, dense cytoplasm, **many mitochondria**; joined to the sieve tube element by **plasmodesmata** | its nucleus controls both cells; its mitochondria make ATP for loading sucrose into the sieve tube |
+| **Companion cell** | nucleus, dense cytoplasm, **many mitochondria**; joined to the sieve tube element by **plasmodesmata** | its nucleus controls both cells; its mitochondria make ATP for loading sucrose into the sieve tube (loading means moving sucrose into the sieve tube from the cells that make it; the details are in [Translocation in phloem](#bio.translocation)) |
 
 The sieve tube element keeps few organelles so the sap can flow with little obstruction, but it is alive and needs its companion cell to supply it.
 
@@ -271,7 +281,7 @@ The pulling force on the water in the xylem, caused by the loss of water from th
 :::steps
 1. Water evaporates from the mesophyll cell walls and diffuses out of the leaf (transpiration).
 2. This lowers the water potential of the mesophyll cells, so water moves into them from the xylem down a water potential gradient (the symplast and apoplast pathways).
-3. Water leaving the top of the xylem creates a **tension** (a pull, or negative pressure) in the xylem.
+3. Water leaving the top of the xylem creates a **tension** (a pull, or negative pressure) in the xylem. The water potential at the top of the xylem is lower (more negative) than at the bottom, so water is pulled up the water potential gradient; this pull is the tension. "Negative pressure" means the water in the xylem is pulled, not pushed.
 4. Water molecules are **cohesive**: hydrogen bonds between them mean the pull on the water at the top is passed down the whole column, and the water moves up as a **continuous column** from the root to the leaf.
 5. Water is also **adhesive**: hydrogen bonds between water and the cellulose and lignin of the xylem walls help to hold the column up and stop it from breaking.
 6. Water is pulled into the root from the soil to replace it, across the root by the pathways above.

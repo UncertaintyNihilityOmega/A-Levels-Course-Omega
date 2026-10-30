@@ -239,10 +239,10 @@ A weaker answer says "the numbers are the same". It does not say which pairs are
 
 ## RNA and messenger RNA
 
-RNA is also a polynucleotide, but it is different from DNA in several ways. The type you need is **messenger RNA (mRNA)**, the molecule that carries a copy of a gene from the DNA in the nucleus to the ribosomes in the cytoplasm (the next chapter, [Protein synthesis and gene mutation](#bio.synthesis), shows how it is made and used).
+RNA is also a polynucleotide, but it is different from DNA in several ways. The type you need is **messenger RNA (mRNA)**, the molecule that carries a copy of a gene (a length of DNA with the code for one polypeptide) from the DNA in the nucleus to the ribosomes in the cytoplasm (the next chapter, [Protein synthesis and gene mutation](#bio.synthesis), shows how it is made and used).
 
 :::def Messenger RNA (mRNA)
-A single polynucleotide strand, made by copying one gene of a DNA molecule, that carries the information for the sequence of amino acids in a polypeptide from the nucleus to a ribosome.
+A single polynucleotide strand, made by copying one gene (a length of DNA with the code for one polypeptide) of a DNA molecule, that carries the information for the sequence of amino acids in a polypeptide from the nucleus to a ribosome.
 :::
 
 The structure of mRNA:
@@ -250,7 +250,7 @@ The structure of mRNA:
 - Its nucleotides contain the sugar **ribose**, a phosphate group and a base, joined by phosphodiester bonds to make a sugar–phosphate backbone.
 - Its bases are **A, G, C and uracil (U)**. Uracil is a pyrimidine and, in RNA, it pairs with adenine.
 - It is much **shorter** than DNA, because it is a copy of one gene and not of a whole chromosome.
-- Groups of three bases along it are **codons**, which each stand for one amino acid.
+- Groups of three bases along it are **codons**, which each stand for one amino acid (see the next chapter).
 
 | feature | DNA | mRNA |
 |---|---|---|
@@ -327,12 +327,16 @@ DNA polymerase has a rule that decides everything about the next part. It adds a
 
 The two template strands are antiparallel. As the fork opens along the DNA, one template runs 3′ to 5′ in the direction the fork is moving, and the other runs 5′ to 3′.
 
+The polymerase reads each template in the opposite direction to the one in which it builds, because the new strand pairs with its template antiparallel. So a template read 3′ to 5′ gives a new strand built 5′ to 3′, which is the only way the enzyme can build. In the figure below, the right arm is the template for the leading strand and the left arm is the template for the lagging strand.
+
 :::html
 <figure class="fig small"><svg viewBox="0 0 350 372" role="img" aria-label="A replication fork drawn as a Y, with the parental DNA at the bottom and the fork moving down. The right arm is the template for the leading strand, which a DNA polymerase copies continuously. The left arm is the template for the lagging strand, which is made as short fragments, each away from the fork, joined by DNA ligase. Strand ends are labelled 5′ and 3′, and the two template strands are antiparallel."><path class="c2 sw3" d="M100 44L100 220L165 272L165 344"/><path class="c1 sw3" d="M250 44L250 220L185 272L185 344"/><path class="ln-m thin" d="M168 278L182 278"/><path class="ln-m thin" d="M168 288L182 288"/><path class="ln-m thin" d="M168 298L182 298"/><path class="ln-m thin" d="M168 308L182 308"/><path class="ln-m thin" d="M168 318L182 318"/><path class="ln-m thin" d="M168 328L182 328"/><path class="ln-m thin" d="M168 338L182 338"/><path class="c1 sw3 dash" d="M226 46L226 171"/><path class="ln-m thin" d="M229 52L247 52"/><path class="ln-m thin" d="M229 62L247 62"/><path class="ln-m thin" d="M229 72L247 72"/><path class="ln-m thin" d="M229 82L247 82"/><path class="ln-m thin" d="M229 92L247 92"/><path class="ln-m thin" d="M229 102L247 102"/><path class="ln-m thin" d="M229 112L247 112"/><path class="ln-m thin" d="M229 122L247 122"/><path class="ln-m thin" d="M229 132L247 132"/><path class="ln-m thin" d="M229 142L247 142"/><path class="ln-m thin" d="M229 152L247 152"/><path class="ln-m thin" d="M229 162L247 162"/><path class="c2 sw3 dash" d="M124 46L124 98"/><path class="ln-m thin" d="M103 52L121 52"/><path class="ln-m thin" d="M103 62L121 62"/><path class="ln-m thin" d="M103 72L121 72"/><path class="ln-m thin" d="M103 82L121 82"/><path class="ln-m thin" d="M103 92L121 92"/><path class="c2 sw3 dash" d="M124 112L124 150"/><path class="ln-m thin" d="M103 118L121 118"/><path class="ln-m thin" d="M103 128L121 128"/><path class="ln-m thin" d="M103 138L121 138"/><path class="ln-m thin" d="M103 148L121 148"/><path class="c2 sw3 dash" d="M124 186L124 214"/><path class="ln-m thin" d="M103 192L121 192"/><path class="ln-m thin" d="M103 202L121 202"/><path class="ln-m thin" d="M103 212L121 212"/><circle class="f2 s-acc2 sw2" cx="226" cy="185" r="13"/><text class="tl tb" x="226" y="190" text-anchor="middle">P</text><circle class="f2 s-acc2 sw2" cx="124" cy="169" r="13"/><text class="tl tb" x="124" y="174" text-anchor="middle">P</text><circle class="fm s-acc sw2" cx="124" cy="105" r="10"/><text class="tl tb" x="124" y="110" text-anchor="middle">L</text><text class="tl" x="100" y="30" text-anchor="middle">5′</text><text class="tl" x="124" y="30" text-anchor="middle">3′</text><text class="tl" x="226" y="30" text-anchor="middle">5′</text><text class="tl" x="250" y="30" text-anchor="middle">3′</text><text class="tl" x="165" y="360" text-anchor="middle">3′</text><text class="tl" x="185" y="360" text-anchor="middle">5′</text><text class="tl" x="8" y="112">lagging</text><text class="tl" x="8" y="126">strand</text><path class="ln-m thin" d="M50 128L121 134"/><text class="tl" x="268" y="82">leading</text><text class="tl" x="268" y="96">strand</text><path class="ln-m thin" d="M264 88L229 88"/><text class="tl" x="8" y="196">template</text><text class="tl" x="8" y="210">strand</text><path class="ln-m thin" d="M64 202L97 202"/><text class="tl" x="206" y="316">parental</text><text class="tl" x="206" y="330">DNA</text><path class="ln-m thin" d="M202 322L189 318"/><text class="tl" x="8" y="300">P = DNA</text><text class="tl" x="8" y="314">polymerase</text><text class="tl" x="8" y="332">L = DNA ligase</text><text class="tl" x="266" y="136">fork moves</text><text class="tl" x="266" y="150">this way</text><path class="ln" d="M300 162L300 226" marker-end="url(#ah)"/><path class="ln" d="M190 100L190 150" marker-end="url(#ah)"/><path class="ln" d="M148 236L148 190" marker-end="url(#ah)"/><text class="tl" x="175" y="58" text-anchor="middle">new DNA</text><text class="tl" x="175" y="72" text-anchor="middle">is made</text><text class="tl" x="175" y="86" text-anchor="middle">5′ → 3′</text></svg><figcaption>A replication fork (schematic, strands drawn straight). DNA polymerase can only add nucleotides to the 3′ end of a new strand, so every new strand grows 5′ to 3′. The leading strand is made continuously, in the same direction as the fork moves. The lagging strand is made as fragments, each away from the fork, and DNA ligase joins them. Dashed lines are new DNA.</figcaption></figure>
 :::
 
 - **Leading strand.** On the template that runs 3′ to 5′ towards the fork, DNA polymerase moves in the same direction as the fork and builds the new strand 5′ to 3′ without a break. The new strand is **continuous**.
 - **Lagging strand.** On the other template, the polymerase can only work away from the fork. It must wait until the fork has opened a stretch of template, then make a short fragment away from the fork. As the fork opens more, a new fragment is started nearer to it. The new strand is made as a series of **fragments**, which **DNA ligase** joins by phosphodiester bonds.
+
+**Why this matters at the end of a chromosome.** Every fragment of the lagging strand has to be started on template that the fork has already opened. At the very end of the chromosome there is no template left beyond the last fragment on which a new one could start, so the last piece of template is left uncopied and the new DNA is slightly shorter than the old. This is why chromosomes have telomeres: the piece that is lost each time is non-coding telomere, not genes (see [Mitosis](#bio.mitosis)).
 
 :::note The fragments have a name
 The fragments of the lagging strand are called Okazaki fragments, after the scientist who discovered them. You do not need the name for the exam.
@@ -489,7 +493,7 @@ H: For (c), which human cells replicate their DNA often, and in which stage of t
 A: (a) The next nucleotide would have to form a phosphodiester bond with the hydroxyl group on the 3′ carbon at the end of the strand. [B1]
 The drug nucleotide has no 3′ hydroxyl group, so no phosphodiester bond can form. [B1]
 So the DNA strand cannot be made any longer. [B1]
-(b) The viral DNA cannot be copied fully, so there are no new complete copies of the viral genome to put into new virus particles. [B1]
+(b) The viral DNA cannot be copied fully, so there are no new complete copies of the viral genome (all of the virus's DNA) to put into new virus particles. [B1]
 (c) Rapidly dividing human cells replicate their DNA in S phase often, so their replication would also be blocked if the drug is taken up. [B1]
 They then cannot complete the cell cycle and divide, so cells such as those in bone marrow and hair follicles are affected. [B1]
 :::

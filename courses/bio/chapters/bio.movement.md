@@ -34,7 +34,7 @@ Substances can cross a cell surface membrane in three broad ways, using six proc
 |---|---|---|---|---|
 | Simple diffusion | down a concentration gradient | no | no | oxygen into a cell |
 | Facilitated diffusion | down a concentration gradient | channel or carrier | no | glucose into a red blood cell |
-| Osmosis | to lower water potential | no (aquaporins speed it) | no | water into a root hair cell |
+| Osmosis | to lower water potential | no (aquaporins, water channel proteins, speed it; see below) | no | water into a root hair cell |
 | Active transport | against a concentration gradient | carrier | yes | mineral ions into a root hair cell |
 | Endocytosis | into the cell | no (vesicle) | yes | a white blood cell engulfing a bacterium |
 | Exocytosis | out of the cell | no (vesicle) | yes | secretion of digestive enzymes |
@@ -54,7 +54,7 @@ The difference in concentration of a substance between two regions. The steeper 
 Two words in the definition matter. **Net**: molecules move in both directions all the time, but more move down the gradient than up it. **Random**: each molecule moves with no goal. When the concentrations are equal the molecules keep moving, but the net movement is zero (this is called dynamic equilibrium).
 
 In **simple diffusion** the molecules pass straight through the phospholipid bilayer, with no protein. Only some molecules can do this:
-- **small, non-polar (lipid-soluble)** molecules, which dissolve in the hydrophobic centre: oxygen, carbon dioxide, fatty acids, steroid hormones, and some small uncharged molecules;
+- **small, non-polar (lipid-soluble)** molecules, which dissolve in the hydrophobic centre: oxygen, carbon dioxide, fatty acids, steroid hormones (lipid-soluble hormones such as oestrogen), and some small uncharged molecules;
 - the process is passive, so no ATP is used.
 
 ### What affects the rate of diffusion
@@ -341,7 +341,7 @@ You can estimate the water potential of a plant tissue by putting pieces of it i
 **Aim**: find the concentration of sucrose solution that has the same water potential as potato tissue, and so estimate the water potential of the tissue.
 
 :::steps
-1. Make sucrose solutions of 0.0, 0.1, 0.2, 0.3, 0.4 and 0.5 mol dm⁻³ from a 1.0 mol dm⁻³ stock and distilled water, by serial or simple dilution. For example, mix 2 cm³ of stock with 8 cm³ of water to make 10 cm³ of 0.2 mol dm⁻³ solution. Put 10 cm³ of each in a labelled test tube.
+1. Make sucrose solutions of 0.0, 0.1, 0.2, 0.3, 0.4 and 0.5 mol dm⁻³ from a 1.0 mol dm⁻³ stock and distilled water, by serial or simple dilution. (mol dm⁻³ is moles per litre, a standard way to state concentration.) For example, mix 2 cm³ of 1.0 mol dm⁻³ stock with 8 cm³ of water to make 10 cm³ of solution: the stock is diluted from 2 cm³ to 10 cm³, so the concentration is 1.0 × 2/10 = 0.2 mol dm⁻³ (the same sum as the dilutions by per cent in [Food tests](#bio.foodtests)). Put 10 cm³ of each in a labelled test tube.
 2. Use a cork borer to cut cylinders from one potato, and cut them to the same length (for example 3 cm). Cut off the skin. Blot each piece dry and measure its mass to 0.01 g. Use three pieces per tube.
 3. Put the pieces in the solutions, cover the tubes (to stop evaporation) and leave for the same time at the same temperature, for example 30 minutes.
 4. Take the pieces out, blot them dry in the same way and measure the mass again.
@@ -391,7 +391,16 @@ The others are +10.4%, +3.6%, −4.0%, −10.8% and −18.0%.
 
 **Step 3: read the x-intercept**. The line crosses the x-axis at 0.25 mol dm⁻³. At this concentration there is no net movement of water, so the sucrose solution has the same water potential as the potato tissue.
 
-**Step 4: convert to a water potential**. A table of the water potentials of the solutions is needed. Suppose it gives \(-540\) kPa for 0.2 and \(-820\) kPa for 0.3 mol dm⁻³. The midpoint of 0.2 and 0.3 is about 0.25, so the potato has a water potential of about \(-680\) kPa.
+**Step 4: convert to a water potential**. In an exam you are given a table or graph of water potential against sucrose concentration (it is not something to learn); read the value at the intercept. Here the table is:
+
+| sucrose / mol dm⁻³ | water potential / kPa |
+|---|---|
+| 0.1 | −270 |
+| 0.2 | −540 |
+| 0.3 | −820 |
+| 0.4 | −1100 |
+
+The intercept, 0.25 mol dm⁻³, lies halfway between 0.2 (\(-540\) kPa) and 0.3 (\(-820\) kPa). The midpoint of 0.2 and 0.3 is about 0.25, so the potato has a water potential of about \(-680\) kPa.
 :::
 
 :::exam Reading the x-intercept
@@ -481,7 +490,7 @@ Two potassium ions are picked up from outside, and then released inside the cell
 
 ### How to recognise active transport in data
 
-Active transport needs ATP, which comes from respiration. So:
+Active transport needs ATP, which comes from respiration. Respiration releases energy from glucose and uses oxygen (aerobic respiration); cyanide stops it. So:
 - it needs **oxygen** and **glucose**: if the oxygen supply is cut off, or a **respiratory inhibitor** such as cyanide is added, the rate falls;
 - the rate **rises with temperature** (to a limit, as the carrier proteins are denatured above their optimum) because respiration, and so ATP production, is faster;
 - it can continue until the concentration inside is **higher than outside**, which diffusion cannot do;
@@ -504,7 +513,7 @@ The bulk transport of material into a cell. The cell surface membrane folds inwa
 The bulk transport of material out of a cell. A vesicle containing the material moves to the cell surface membrane and fuses with it, releasing the contents outside the cell.
 :::
 
-- **Phagocytosis** ("cell eating") takes in a **solid particle**, for example a macrophage or a neutrophil engulfing a bacterium. The cell surface membrane flows round the bacterium and pinches off, forming a phagocytic vesicle. The vesicle fuses with a lysosome, whose enzymes digest the bacterium (see [The immune response](#bio.immunity)).
+- **Phagocytosis** ("cell eating") takes in a **solid particle**, for example a macrophage or a neutrophil (white blood cells that engulf bacteria) engulfing a bacterium. The cell surface membrane flows round the bacterium and pinches off, forming a phagocytic vesicle. The vesicle fuses with a lysosome (a small sac of digestive enzymes), whose enzymes digest the bacterium (see [The immune response](#bio.immunity)).
 - **Pinocytosis** ("cell drinking") takes in a **droplet of liquid** with its dissolved contents, in a tiny vesicle.
 - **Exocytosis** releases material made in the cell: digestive enzymes from pancreatic cells, hormones, and mucus. The vesicles come from the Golgi body ([Eukaryotic cells and organelles](#bio.cells)). The membrane of the vesicle becomes part of the cell surface membrane.
 
@@ -627,7 +636,7 @@ Q's SA:V is ten times smaller than P's. [A1]
 (b) Q has a small SA:V, so there is little surface for the volume it must supply. [B1]
 The distance from the surface to the centre is greater, so diffusion to the centre is too slow to meet its needs. [B1]
 (c) Any one of: folds in the surface (microvilli) to increase surface area; a flattened shape to shorten the diffusion distance; a transport system (such as blood) to carry substances to the cells. [B1]
-Q: [6 marks] ★★★ A student put strips of onion epidermis in sucrose solutions and counted the percentage of cells in which the cell surface membrane had pulled away from the cell wall. The results are in the table. (a) Estimate the concentration of sucrose in which half the cells were at incipient plasmolysis. (b) Explain why this concentration can be used to estimate the water potential of the cells. (c) Suggest why not all the cells became plasmolysed in the same solution.
+Q: [6 marks] ★★★ A student peeled the epidermis (the thin outer layer of cells) from an onion, put strips of it on slides in sucrose solutions and, looking through a microscope, counted the percentage of cells in which the cell surface membrane had pulled away from the cell wall. The results are in the table. (a) Estimate the concentration of sucrose in which half the cells were at incipient plasmolysis. (b) Explain why this concentration can be used to estimate the water potential of the cells. (c) Suggest why not all the cells became plasmolysed in the same solution.
 
 | sucrose / mol dm⁻³ | cells plasmolysed / % |
 |---|---|
