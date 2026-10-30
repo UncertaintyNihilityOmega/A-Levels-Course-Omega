@@ -72,7 +72,10 @@ writes it before any Writer starts.
   the ticks; REVIEW P16–P18 moved the molecular clock). Before `done`, `grep -c "^:::key\|^:::exam"` each chapter:
   every topic chapter has at least one of each (P16–P18 had three chapters missing one).
 - `:::plot` formulas are parsed as JavaScript: never a unary minus before `**` (`exp(0-((x-2)/1.3)**2)`, not
-  `exp(-((x-2)/1.3)**2)`). Cut curves that run along the x-axis short with `+0*sqrt(a-x)`.
+  `exp(-((x-2)/1.3)**2)`). Cut curves that run along the x-axis short with `+0*sqrt(a-x)`. A best-fit curve
+  through plotted results runs from the first to the last point only (`+0*sqrt(x-a)+0*sqrt(b-x)`): the course
+  forbids extrapolation. A model curve (a distribution, a sketch) ends where it reaches the axis, not in mid-air.
+  Keep x labels short (`time / 10⁶ years`, not `time / million years`) so they clear the last ticks on phones.
 - Hand SVGs: copy the `Fig` class in `data/fig_bio.enzymes.py`. It writes the SVG and checks every label box against
   every edge, leader and other label (4 px clearance) before you paste the output into the chapter.
 
@@ -82,7 +85,9 @@ writes it before any Writer starts.
 - Mark schemes often accept "any 3 from 5". Write the n best points with tokens, then extra creditworthy points
   without tokens in brackets: `(Also credit: … ; … .)` Never put `max` inside brackets.
 - Command words (syllabus page 50, meanings in FACTS.md): describe ≠ explain. "Describe" a graph = trend + figures
-  with units; "explain" = biological reason. Teach this in every chapter's `:::exam` box at least once.
+  with units; "explain" = biological reason. Teach this in every chapter's `:::exam` box at least once. Quote the
+  meanings verbatim from FACTS.md (verified 30 Oct 2026); never write them from memory. Critical values come only
+  from FACTS.md (Spearman n = 12 is 0.587).
 
 ## Conventions and data
 - British spelling and Cambridge terms: haemoglobin, sulfur, oesophagus, fibre, neurone, Purkyne tissue (syllabus

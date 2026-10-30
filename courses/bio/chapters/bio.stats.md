@@ -145,13 +145,13 @@ The mean (6.2) is higher than seven of the nine leaves because of the one leaf w
 When you measure a continuous feature in many individuals, a **frequency graph** shows how the values are spread. Many biological features give a symmetrical, bell-shaped **normal distribution**: most values lie close to the mean, and fewer lie far away on either side. The mean, median and mode are all at the same place.
 
 :::plot A normal distribution is symmetrical: the mean, median and mode are all at the peak.
---f "100*exp(0-((x-50)/12)**2/2)+0*sqrt(82-x)" --label "normal distribution" --x 0 100 --y 0 130 --xlabel "value" --ylabel "frequency" --pt "50,100,mean = median = mode@ne" --legend tr --alt "A symmetrical bell-shaped curve with its peak at a value of 50. The frequency falls away equally on both sides of the peak."
+--f "100*exp(0-((x-50)/12)**2/2)+0*sqrt(90-x)" --label "normal distribution" --x 0 100 --y 0 130 --xlabel "value" --ylabel "frequency" --pt "50,100,mean = median = mode@ne" --legend tr --alt "A symmetrical bell-shaped curve with its peak at a value of 50. The frequency falls away equally on both sides of the peak."
 :::
 
 A **non-normal** distribution is not symmetrical, or has more than one peak. In a skewed distribution a long tail of extreme values pulls the mean towards the tail, away from the mode.
 
-:::plot A skewed distribution has a long tail on one side. The mean (36) lies in the tail, further from the peak than the mode (24).
---f "1.283*x**2*exp(0-x/12)+0*sqrt(80-x)" --label "skewed distribution" --x 0 100 --y 0 130 --xlabel "value" --ylabel "frequency" --pt "24,100,mode@w" --pt "36,82.8,mean@ne" --legend tr --alt "A curve that rises steeply to a peak at a value of 24 and then falls slowly, with a long tail to the right. The mean at 36 is further along the tail than the peak."
+:::plot A skewed distribution has a long tail on one side. The mean (30) lies in the tail, further from the peak than the mode (20).
+--f "1.8473*x**2*exp(0-x/10)+0*sqrt(105-x)" --label "skewed distribution" --x 0 120 --y 0 130 --xlabel "value" --ylabel "frequency" --pt "20,100,mode@n" --pt "30,82.8,mean@ne" --legend tr --alt "A curve that rises steeply to a peak at a value of 20 and then falls slowly, with a long tail to the right that almost reaches zero by 100. The mean at 30 is further along the tail than the peak."
 :::
 
 Whether data are normal matters because the t-test and Pearson's correlation are only valid for data that are approximately normally distributed. If the data are skewed, or only ranks, you use a rank test instead. In an exam, the question will say or show whether the data are normally distributed. In your own work you can plot a histogram or a stem-and-leaf plot and look for a symmetrical bell shape.

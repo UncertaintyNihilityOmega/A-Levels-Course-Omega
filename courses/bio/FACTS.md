@@ -58,7 +58,10 @@ down), and the front pages of the real May/June 2024 papers 9700/12, 22, 32, 42 
   t (two-tailed) at p = 0.05, df 1–30: 12.71, 4.30, 3.18, 2.78, 2.57, 2.45, 2.36, 2.31, 2.26, 2.23, 2.20, 2.18, 2.16,
   2.14, 2.13, 2.12, 2.11, 2.10, 2.09, 2.09, 2.08, 2.07, 2.07, 2.06, 2.06, 2.06, 2.05, 2.05, 2.05, 2.04.
   Pearson r (two-tailed, p = 0.05) for n pairs 5–12: 0.878, 0.811, 0.754, 0.707, 0.666, 0.632, 0.602, 0.576.
-  Spearman critical values: give them in the question (tables differ slightly by source), as the exam does.
+  Spearman rₛ (two-tailed, p = 0.05) for n pairs 5–12, exact (data/spearman_crit.py; = Zar's table and the usual
+  biology tables): 1.000, 0.886, 0.786, 0.738, 0.700, 0.648, 0.618, 0.587. The syllabus prints no table (checked
+  pp 64–67, 30 Oct 2026); some older tables give 0.591 for n = 12: use 0.587. Always give the value in the question,
+  as the exam does.
 - Significance in 9700: compare the calculated value with the critical value at p = 0.05. χ²: calculated < critical →
   difference not significant, due to chance, accept the null hypothesis. t: calculated > critical → significant
   difference. r or rₛ: |value| > critical → significant correlation.
@@ -75,8 +78,17 @@ down), and the front pages of the real May/June 2024 papers 9700/12, 22, 32, 42 
   error, 95% CI; error bars from SD, SE or 95% CI; correlation v causation; χ² and t-tests with df and critical-value
   tables; Pearson and Spearman; when each test is valid.
 - Paper 5 concentrations: % (w/v) or mol dm⁻³; serial dilution or proportional dilution.
-- Command words (syllabus page 50): assess, calculate, comment, compare, contrast, define, describe, determine,
-  discuss, explain, give, identify, outline, predict, sketch, state, suggest (meanings in bio.exam.p24).
+- Command words (syllabus page 50, verbatim, checked 30 Oct 2026): assess = make an informed judgement; calculate =
+  work out from given facts, figures or information; comment = give an informed opinion; compare = identify/comment
+  on similarities and/or differences; contrast = identify/comment on differences; define = give precise meaning;
+  describe = state the points of a topic / give characteristics and main features; determine = establish an answer
+  using the information available; discuss = write about issue(s) or topic(s) in depth in a structured way;
+  explain = set out purposes or reasons / make the relationships between things evident / provide why and/or how
+  and support with relevant evidence; give = produce an answer from a given source or recall/memory; identify =
+  name/select/recognise; outline = set out main points; predict = suggest what may happen based on available
+  information; sketch = make a simple drawing showing the key features; state = express in clear terms; suggest =
+  apply knowledge and understanding to situations where there are a range of valid responses in order to make
+  proposals / put forward considerations. Quote these in the paper guides (bio.exam.p24 has the table).
 
 ## Syllabus learning outcomes
 Numbering is topic.subtopic.outcome (e.g. 1.1.3). AS = topics 1–11; A Level = 12–19. Short form; the full wording

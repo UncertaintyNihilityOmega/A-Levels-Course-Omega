@@ -119,6 +119,10 @@ Choose **at least five values**, in equal steps or in a series, and say what the
 
 Explain the range when you can. "The range 10 to 60 °C covers temperatures below and above the optimum of the enzyme, so the peak can be seen" earns a mark; "a range of temperatures" does not.
 
+:::exam Describe the method, explain the choices
+"Describe how you would vary the temperature" wants **what you do**, with values and apparatus: "water baths at 10, 20, 30, 40, 50 and 60 °C, each checked with a thermometer". "Explain your choice of range" wants **why**: "it includes temperatures below and above the expected optimum, so the rise and the fall can both be seen". A description with no values, or an explanation that only repeats the values, misses the mark.
+:::
+
 ## Measuring the dependent variable
 
 State what you measure, the apparatus, the unit and the precision. Prefer a **quantitative** measurement (a volume, mass, length, time or absorbance) to a qualitative one (a colour compared by eye). If a reaction is followed over time, say when you take the readings.

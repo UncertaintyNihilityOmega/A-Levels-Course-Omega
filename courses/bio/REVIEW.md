@@ -117,3 +117,34 @@ Open (Writer):
 - [x] bio.genetech: the chapter has no `:::exam` box (COURSE.md: every chapter teaches describe ≠ explain in one); add one after the insulin example: "Explain the role of each enzyme" = name the enzyme, what it does, and why it is needed at that step, with the weak/strong pair from that example
 - [x] bio.conservation: the chapter has no `:::key` box; add one after the extinction causes (habitat loss and fragmentation, climate change, overexploitation, invasive species, pollution, each with its effect) and one short in situ v ex situ summary
 - [x] bio.genetech2: the chapter has no `:::key` box; add one for gene therapy (somatic v germ-line, vectors, ex vivo for SCID) and one for genetic screening (what a positive result does and does not mean)
+
+## REVIEW P19, P20, P21 (2026-10-30)
+Read whole: every worked example and answer of bio.stats, bio.evaluation, bio.exam.p24, bio.exam.p35 and bio.exam.p1;
+the rest by openings, keys, exam boxes, quizzes and the Writers' notes. Numbers recomputed (aphid mean, root SD/SE/CI,
+fertiliser CIs and the error-bar figure, woodlice 24.4, Daphnia t 6.49 from the widget data, Pearson 0.974/0.941,
+barnacle and caddis rs, wheat t 2.55, maize 1.47, 0.95^20, cress 28%/45%, catalase CIs, lichen rs 0.964 and the
+scatter coordinates, drug SE/CI and bar heights, lettuce t 7.7, HW carriers 792, both tangents in bio.maths, the
+skewed-plot gamma mode/mean). Spearman critical values computed exactly (data/spearman_crit.py) and recorded in FACTS;
+command-word meanings checked against the syllabus p50 table (scratch/syllabus.pdf) and recorded in FACTS. All
+figures looked at in light and in dark + phone; bio-chisq and bio-ttest probed with the chapter data (match the text).
+Writers' notes confirmed: P19 equipment and hazards described generically (fine: Paper 3 lists are not in FACTS),
+practical2 specimen table correct, grid counts 6, 6, 4, 4 of 200 verified from the SVG; P20 Spearman critical values
+are in the questions (n = 12 corrected), distribution plots looked at (fixed, below); P21 command words now verified
+(one row corrected), p1 Q5 reuse of the cell drawing is fine, beetroot plan and catalase table original, mark totals ok.
+Fixed by the reviewer:
+- [x] bio.evaluation: Spearman critical value for n = 12 was 0.591 (an older table); exact two-tailed p = 0.05 value is 0.587 (spot-the-error example and check)
+- [x] bio.evaluation: catalase example said "4.7 is above 4.0" for the A/C overlap; C's lower limit is 3.8
+- [x] bio.evaluation: quiz "error bars show ± 0.5 SE" read as half an SE; now "± 1 SE, and each standard error is 0.5"
+- [x] bio.evaluation: lichen scatter points for 5 m and 10 m overlapped (nine visible circles for ten trees); radius 3.2 (also data/fig_p20.py)
+- [x] bio.stats: skewed-distribution curve stopped in mid-air at 80 (y ≈ 10) and the "mode" label sat on the rising curve; now x 0–120, A x² e^(−x/10), mode 20 and mean 30 (caption, alt and check updated), mode label above; normal curve runs to 90 (y ≈ 0)
+- [x] bio.exam.p24: command-word table gave "sketch" a non-syllabus meaning ("freehand … proportions"); now the syllabus wording; enzyme plot y step 5 (x kept to 100 so the label clears the curve on phones)
+- [x] bio.exam.p35: best-fit curve was drawn from the origin and past 10% (extrapolation, which the chapter forbids); now 2–10% only, y step 0.1. Gel electrophoresis link (loose fit for a practical-papers guide) dropped
+- [x] bio.exam.p1: Golgi body (S) in the cell drawing sat on the cell outline at the rounded corner; moved up and right (data/fig_bio.exam.p1.py)
+- [x] bio.practical: calibration `:::plot` was inside the `:::eg` (COURSE.md rule); moved after it with a lead sentence; "0" label at 60 °C sat on the curve (now @ne)
+- [x] bio.practical2: "lowest power (the ×4 or the ×10 of this paper)": Paper 3 has ×10 and ×40 objectives only; quiz feedback now explains the ×13.5 option
+- [x] bio.planning: no `:::exam` box (COURSE.md: describe ≠ explain in every chapter); added "Describe the method, explain the choices" after the range section
+- [x] bio.maths: exam box gave "estimate" as a command word and a loose "calculate"; now the syllabus meanings of calculate and determine, with estimate as an extra word
+- [x] bio.evolution (P17 open point): molecular-clock x label "time / million years" crowded the 10 and 12 ticks; now "time / 10⁶ years" with the caption explaining it (phone shot clear)
+Open (Writer):
+- [ ] bio.anaerobic: the yeast-rate `:::plot` (line ~215) is inside the methylene-blue `:::eg` (COURSE.md: a plot goes after the example); end the example after "describe and explain", put the plot after it with a lead sentence, and change any "below" in the example to "after this example"
+- [ ] bio.energy: the RQ `:::plot` (line ~340) is inside the germinating-seeds `:::eg`; move it after the example with a lead sentence in the same way

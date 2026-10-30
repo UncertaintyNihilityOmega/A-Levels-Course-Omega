@@ -30,12 +30,13 @@ f.parts.append('<path class="ln" d="M200 152L206 140L212 164L218 140L224 164L230
 f.text(336, 156, "R", "tl tb", "middle")
 f.line([(326, 152), (258, 152)], "ln-m thin")
 # S Golgi body: four stacked curved sacs and two vesicles
-for y in (176, 184, 192, 200):
-    f.parts.append(f'<path class="c2 sw3" d="M78 {y}Q110 {y-14} 142 {y}"/>')
-f.parts.append('<circle class="f2 s-acc2 sw2" cx="152" cy="171" r="5"/>')
-f.parts.append('<circle class="f2 s-acc2 sw2" cx="160" cy="190" r="5"/>')
-f.text(24, 192, "S", "tl tb", "middle")
-f.line([(36, 188), (80, 198)], "ln-m thin")
+# (REVIEW P21: moved up and right, clear of the rounded corner of the cell outline)
+for y in (162, 170, 178, 186):
+    f.parts.append(f'<path class="c2 sw3" d="M92 {y}Q124 {y-14} 156 {y}"/>')
+f.parts.append('<circle class="f2 s-acc2 sw2" cx="166" cy="157" r="5"/>')
+f.parts.append('<circle class="f2 s-acc2 sw2" cx="174" cy="176" r="5"/>')
+f.text(24, 186, "S", "tl tb", "middle")
+f.line([(36, 182), (94, 182)], "ln-m thin")
 svg = f.svg(vb,
     "Drawing of an animal cell in a rounded outline. Four structures carry the letters P, Q, R and S. P is a large round "
     "structure with a darker dot inside, on the left. Q is three wavy parallel sheets studded with small dots, at the top "

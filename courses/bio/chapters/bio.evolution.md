@@ -152,8 +152,8 @@ A and C separated about 5 million years ago, more recently than A and B. This is
 
 The graph shows the same calculation as a straight line: the fossil date fixes the slope, and any other number of differences is read off it.
 
-:::plot The molecular clock, if the rate is constant: the number of differences is proportional to the time since the common ancestor. The point for A and B calibrates the line; A and C is read from it.
---f "4*x" --label "differences = 4 × time" --x 0 12 --y 0 70 --ystep 20 --xlabel "time / million years" --ylabel "differences" --pt "9,36,A and B (fossils)@nw" --pt "5,20,A and C@se" --legend tr --alt "A straight line through the origin rising 4 base differences for every million years. The calibration point for species A and B is at 9 million years and 36 differences. The point for A and C is at 20 differences, which reads as 5 million years."
+:::plot The molecular clock, if the rate is constant: the number of differences is proportional to the time since the common ancestor. The point for A and B calibrates the line; A and C is read from it. Time is in millions of years (10⁶ years).
+--f "4*x" --label "differences = 4 × time" --x 0 12 --y 0 70 --ystep 20 --xlabel "time / 10⁶ years" --ylabel "differences" --pt "9,36,A and B (fossils)@nw" --pt "5,20,A and C@se" --legend tr --alt "A straight line through the origin rising 4 base differences for every million years. The calibration point for species A and B is at 9 million years and 36 differences. The point for A and C is at 20 differences, which reads as 5 million years."
 :::
 
 :::exam Discuss: strengths and limitations

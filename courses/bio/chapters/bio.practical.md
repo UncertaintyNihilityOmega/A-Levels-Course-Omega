@@ -252,7 +252,7 @@ A graph shows the pattern, and the marks are for its construction. The checklist
 Joining the points dot-to-dot is wrong when the results are expected to follow a trend and have some random scatter: the line should pass through the middle of the points. Drawing a smooth curve is wrong when the points are separate categories. When the question asks for a line of best fit, a line through every point is not best fit unless the points lie exactly on it.
 
 :::plot Rate of clearing of milk by a protease at five temperatures. The smooth curve of best fit rises, peaks and falls; the 245 s result at 50 °C was left out. Rates in units of 10⁻³ s⁻¹.
---f "2.5*2**((x-20)/10)/(1+exp((x-48)/2.5))+0*sqrt(x-20)+0*sqrt(60-x)" --label "curve of best fit" --x 0 80 --y 0 13 --xlabel "temperature / °C" --ylabel "rate / 10⁻³ s⁻¹" --pt "20,2.5,2.50@se" --pt "30,5,5.00@nw" --pt "40,9.62,9.62@nw" --pt "50,6.21,6.21@ne" --pt "60,0,0@nw" --legend tr --alt "Five points: rate 2.50 at 20 degrees Celsius, 5.00 at 30, 9.62 at 40, 6.21 at 50 and 0 at 60, in units of 10 to the power minus 3 per second. A smooth curve rises through the first three points to a peak between 40 and 50 degrees and then falls steeply to almost zero at 60 degrees."
+--f "2.5*2**((x-20)/10)/(1+exp((x-48)/2.5))+0*sqrt(x-20)+0*sqrt(60-x)" --label "curve of best fit" --x 0 80 --y 0 13 --xlabel "temperature / °C" --ylabel "rate / 10⁻³ s⁻¹" --pt "20,2.5,2.50@se" --pt "30,5,5.00@nw" --pt "40,9.62,9.62@nw" --pt "50,6.21,6.21@ne" --pt "60,0,@ne" --legend tr --alt "Five points: rate 2.50 at 20 degrees Celsius, 5.00 at 30, 9.62 at 40, 6.21 at 50 and 0 at 60, in units of 10 to the power minus 3 per second. A smooth curve rises through the first three points to a peak between 40 and 50 degrees and then falls steeply to almost zero at 60 degrees."
 :::
 
 Before plotting on squared paper, decide the scale. The temperatures run from 20 to 60 °C, so the x-axis from 0 to 70 °C with 10 °C to a large square (7 large squares; this page's graph goes on to 80 °C only to make room for its label) uses the width; the rates run up to 9.62, so the y-axis from 0 to 12 with 2 units to a large square (6 large squares) uses most of the height. A scale of 3 units per large square is hard to read, and one that takes only a quarter of the grid wastes marks.
@@ -290,17 +290,19 @@ To find an unknown concentration, first measure a set of **standards** of known 
 | 0.8 | 1.2 |
 | 1.0 | 1.0 |
 
-Plot a graph with the concentration on the x-axis and the volume on the y-axis and draw a smooth curve of best fit, as in the graph below. More vitamin C means less solution is needed, so the curve falls. [B1]
-
-:::plot Calibration graph: the volume of vitamin C solution needed to decolourise 1.0 cm³ of DCPIP. The dashed lines show how a volume of 2.0 cm³ gives a concentration of 0.50 mg cm⁻³.
---f "1/x+0*sqrt(x-0.2)+0*sqrt(1.0-x)" --label "calibration curve" --x 0 1.2 --y 0 6 --xlabel "vitamin C / mg cm⁻³" --ylabel "volume needed / cm³" --pt "0.2,5.1,5.1@ne" --pt "0.4,2.5,2.5@ne" --pt "0.6,1.7,1.7@sw" --pt "0.8,1.2,1.2@ne" --pt "1.0,1.0,1.0@ne" --hline 2.0 --vline 0.5 --legend tr --alt "Five points fall along a smooth curve: 5.1 cm cubed at 0.2 milligrams per cm cubed, 2.5 at 0.4, 1.7 at 0.6, 1.2 at 0.8 and 1.0 at 1.0. A horizontal dashed line at 2.0 cm cubed meets the curve at 0.5, shown by a vertical dashed line."
-:::
+Plot a graph with the concentration on the x-axis and the volume on the y-axis and draw a smooth curve of best fit, as in the calibration graph after this example. More vitamin C means less solution is needed, so the curve falls. [B1]
 
 Draw a horizontal line from 2.0 cm³ on the y-axis to the curve, then a vertical line down to the x-axis, and read the concentration. [M1]
 
 The concentration of the juice is \(0.50\,\mathrm{mg\,cm^{-3}}\). [A1]
 
 The answer can only be given for concentrations within the range of the standards (0.2 to 1.0 mg cm⁻³). A juice needing 8 cm³ would be a weaker solution than the weakest standard, and the graph cannot be extended to read it.
+:::
+
+The calibration graph for this example, with the reading for the juice shown by the dashed lines:
+
+:::plot Calibration graph: the volume of vitamin C solution needed to decolourise 1.0 cm³ of DCPIP. The dashed lines show how a volume of 2.0 cm³ gives a concentration of 0.50 mg cm⁻³.
+--f "1/x+0*sqrt(x-0.2)+0*sqrt(1.0-x)" --label "calibration curve" --x 0 1.2 --y 0 6 --xlabel "vitamin C / mg cm⁻³" --ylabel "volume needed / cm³" --pt "0.2,5.1,5.1@ne" --pt "0.4,2.5,2.5@ne" --pt "0.6,1.7,1.7@sw" --pt "0.8,1.2,1.2@ne" --pt "1.0,1.0,1.0@ne" --hline 2.0 --vline 0.5 --legend tr --alt "Five points fall along a smooth curve: 5.1 cm cubed at 0.2 milligrams per cm cubed, 2.5 at 0.4, 1.7 at 0.6, 1.2 at 0.8 and 1.0 at 1.0. A horizontal dashed line at 2.0 cm cubed meets the curve at 0.5, shown by a vertical dashed line."
 :::
 
 ## Errors, improvements and extensions

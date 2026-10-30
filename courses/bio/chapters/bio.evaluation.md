@@ -88,7 +88,7 @@ The 95% intervals are mean \(\pm\) 2 SE. [M1]
 
 The intervals are correct. [A1]
 
-A and C overlap (4.7 is above 4.0), so the difference between A and C is probably not significant. [B1]
+A and C overlap (4.7 is above 3.8), so the difference between A and C is probably not significant. [B1]
 
 B (5.2 to 6.8) overlaps neither A (3.5 to 4.7) nor C (3.8 to 5.0), so B is probably significantly different from both. [B1]
 
@@ -181,7 +181,7 @@ Name the weakness, say what it does ("so the mean is unreliable", "so the shape 
 
 Each question below is in the Paper 5 style, with a marked model answer. Cover the answers and try each part first.
 
-<figure class="fig small"><svg viewBox="0 0 340 250" role="img" aria-label="Scatter graph of lichen cover in percent against distance from a road in metres for ten trees. Lichen cover rises from 3 percent at 5 metres to 38 percent at 200 metres; the points rise from left to right with some scatter."><path class="ax" d="M52 34L52 200L324 200"/><path class="ln" d="M48 200L52 200"/><text class="ts" x="44" y="203" text-anchor="end">0</text><path class="ln" d="M48 158.5L52 158.5"/><text class="ts" x="44" y="161.5" text-anchor="end">10</text><path class="ln" d="M48 117L52 117"/><text class="ts" x="44" y="120" text-anchor="end">20</text><path class="ln" d="M48 75.5L52 75.5"/><text class="ts" x="44" y="78.5" text-anchor="end">30</text><path class="ln" d="M48 34L52 34"/><text class="ts" x="44" y="37" text-anchor="end">40</text><path class="ln" d="M52 200L52 204"/><text class="ts" x="52" y="216" text-anchor="middle">0</text><path class="ln" d="M117.5 200L117.5 204"/><text class="ts" x="117.5" y="216" text-anchor="middle">50</text><path class="ln" d="M183 200L183 204"/><text class="ts" x="183" y="216" text-anchor="middle">100</text><path class="ln" d="M248.5 200L248.5 204"/><text class="ts" x="248.5" y="216" text-anchor="middle">150</text><path class="ln" d="M314 200L314 204"/><text class="ts" x="314" y="216" text-anchor="middle">200</text><circle class="f1 s-acc sw2" cx="58.5" cy="187.6" r="4.5"/><circle class="f1 s-acc sw2" cx="65.1" cy="191.7" r="4.5"/><circle class="f1 s-acc sw2" cx="78.2" cy="175.1" r="4.5"/><circle class="f1 s-acc sw2" cx="91.3" cy="162.7" r="4.5"/><circle class="f1 s-acc sw2" cx="117.5" cy="166.8" r="4.5"/><circle class="f1 s-acc sw2" cx="143.7" cy="129.4" r="4.5"/><circle class="f1 s-acc sw2" cx="169.9" cy="108.7" r="4.5"/><circle class="f1 s-acc sw2" cx="209.2" cy="121.1" r="4.5"/><circle class="f1 s-acc sw2" cx="248.5" cy="71.3" r="4.5"/><circle class="f1 s-acc sw2" cx="314.0" cy="42.3" r="4.5"/><text class="tl" x="6" y="14">lichen cover / %</text><text class="tl" x="322" y="238" text-anchor="end">distance from the road / m</text></svg><figcaption>The ten trees of the lichen survey. Lichen cover tends to rise with distance from the road, but the rise is not a perfect straight line.</figcaption></figure>
+<figure class="fig small"><svg viewBox="0 0 340 250" role="img" aria-label="Scatter graph of lichen cover in percent against distance from a road in metres for ten trees. Lichen cover rises from 3 percent at 5 metres to 38 percent at 200 metres; the points rise from left to right with some scatter."><path class="ax" d="M52 34L52 200L324 200"/><path class="ln" d="M48 200L52 200"/><text class="ts" x="44" y="203" text-anchor="end">0</text><path class="ln" d="M48 158.5L52 158.5"/><text class="ts" x="44" y="161.5" text-anchor="end">10</text><path class="ln" d="M48 117L52 117"/><text class="ts" x="44" y="120" text-anchor="end">20</text><path class="ln" d="M48 75.5L52 75.5"/><text class="ts" x="44" y="78.5" text-anchor="end">30</text><path class="ln" d="M48 34L52 34"/><text class="ts" x="44" y="37" text-anchor="end">40</text><path class="ln" d="M52 200L52 204"/><text class="ts" x="52" y="216" text-anchor="middle">0</text><path class="ln" d="M117.5 200L117.5 204"/><text class="ts" x="117.5" y="216" text-anchor="middle">50</text><path class="ln" d="M183 200L183 204"/><text class="ts" x="183" y="216" text-anchor="middle">100</text><path class="ln" d="M248.5 200L248.5 204"/><text class="ts" x="248.5" y="216" text-anchor="middle">150</text><path class="ln" d="M314 200L314 204"/><text class="ts" x="314" y="216" text-anchor="middle">200</text><circle class="f1 s-acc sw2" cx="58.5" cy="187.6" r="3.2"/><circle class="f1 s-acc sw2" cx="65.1" cy="191.7" r="3.2"/><circle class="f1 s-acc sw2" cx="78.2" cy="175.1" r="3.2"/><circle class="f1 s-acc sw2" cx="91.3" cy="162.7" r="3.2"/><circle class="f1 s-acc sw2" cx="117.5" cy="166.8" r="3.2"/><circle class="f1 s-acc sw2" cx="143.7" cy="129.4" r="3.2"/><circle class="f1 s-acc sw2" cx="169.9" cy="108.7" r="3.2"/><circle class="f1 s-acc sw2" cx="209.2" cy="121.1" r="3.2"/><circle class="f1 s-acc sw2" cx="248.5" cy="71.3" r="3.2"/><circle class="f1 s-acc sw2" cx="314.0" cy="42.3" r="3.2"/><text class="tl" x="6" y="14">lichen cover / %</text><text class="tl" x="322" y="238" text-anchor="end">distance from the road / m</text></svg><figcaption>The ten trees of the lichen survey. Lichen cover tends to rise with distance from the road, but the rise is not a perfect straight line.</figcaption></figure>
 
 :::eg Data analysis 1, lichens and a busy road. Lichens are sensitive to air pollution. A student measured the percentage of the trunk covered by lichen on 10 oak trees at different distances from a busy road. The scatter graph shows the results. The student used Spearman's rank correlation. The critical value for \(n = 10\) at \(p = 0.05\) is 0.648.
 | distance from road / m | lichen cover / % |
@@ -247,9 +247,9 @@ Placebo: \(0.90 \pm 0.60\), so 0.30 to 1.50. Low dose: \(1.40 \pm 0.64\), so 0.7
 :::
 
 :::eg Spot the error: a conclusion. [3]
-A student found a significant negative Spearman correlation (\(r_s = -0.81\), \(n = 12\), critical value 0.591) between altitude (200 to 1800 m) and the number of plant species in 12 quadrats on a mountain. She wrote this conclusion.
+A student found a significant negative Spearman correlation (\(r_s = -0.81\), \(n = 12\), critical value 0.587) between altitude (200 to 1800 m) and the number of plant species in 12 quadrats on a mountain. She wrote this conclusion.
 
-Line 1: There is a significant negative correlation between altitude and the number of plant species, because 0.81 is greater than 0.591.
+Line 1: There is a significant negative correlation between altitude and the number of plant species, because 0.81 is greater than 0.587.
 Line 2: The null hypothesis is rejected.
 Line 3: This proves that altitude causes fewer species to grow, so a peak at 5000 m would have no plant species.
 
@@ -389,7 +389,7 @@ So \(n\) must be multiplied by 4: 20 discs are needed. [B1]
 - Using a larger beaker.
 - Measuring the temperature only at the start.
 > Validity needs the independent variable to be the only factor that changes, so the temperature has to be kept constant. "More carefully" is not specific.
-? Two means are 10.0 and 11.0. The error bars show ± 0.5 SE for each. Using 95% intervals (mean ± 2 SE), what do you conclude?
+? Two means are 10.0 and 11.0. The error bars show ± 1 SE, and each standard error is 0.5. Using 95% intervals (mean ± 2 SE), what do you conclude?
 + The intervals are 9.0 to 11.0 and 10.0 to 12.0; they overlap, so the difference may be due to chance.
 - The intervals do not overlap, so the difference is significant.
 - The difference is 1.0, so it is significant.

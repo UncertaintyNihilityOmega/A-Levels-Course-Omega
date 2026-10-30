@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-29 · WRITE P21 · bio.exam.p1 4.1k, bio.exam.p24 4.9k, bio.exam.p35 3.4k words; no widgets; cell figure (data/fig_bio.exam.p1.py) and two :::plot graphs looked at on phone shots. Reviewer: command-word meanings are the syllabus p50 wording written from memory (FACTS only lists the words); p1 practice Q5 reuses the worked-example cell drawing; p35 beetroot plan and catalase table are original; check scripts parse the chapter text for mark totals
+Last: 2026-10-30 · REVIEW P19, P20, P21 · 15 fixes by the reviewer, 2 open (plots inside eg in bio.anaerobic and bio.energy). Fixed: Spearman n=12 0.591->0.587 (exact table now in FACTS + data/spearman_crit.py), catalase overlap value, ±0.5 SE quiz wording, lichen point overlap, skewed/normal distribution plots, sketch command word, p35 best-fit curve extrapolated (now 2-10%) and gel link dropped, p1 Golgi on cell outline, practical calibration plot out of eg, Paper 3 x4 objective, planning exam box, maths command words, P17 molecular clock x label. Command-word meanings verified against syllabus p50 and recorded verbatim in FACTS; COURSE.md plot and command-word rules tightened; P24 notes added.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -23,11 +23,11 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P16: reviewed 2026-10-29
 - P17: reviewed 2026-10-29
 - P18: reviewed 2026-10-29
-- P19: written 2026-10-29
-- P20: written 2026-10-29
-- P21: written 2026-10-29
-- P22: open
-- P23: open
-- P24: open
+- P19: reviewed 2026-10-30
+- P20: reviewed 2026-10-30
+- P21: reviewed 2026-10-30
+- P22: written 2026-10-30
+- P23: written 2026-10-30
+- P24: writing 2026-10-30
 - READER: open
 - FINAL: open

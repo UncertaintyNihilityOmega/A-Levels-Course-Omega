@@ -69,7 +69,7 @@ The first word of a question tells you what kind of answer is wanted. Cambridge 
 | **assess** | make an informed judgement | use evidence for and against, and give a judgement |
 | **comment** | give an informed opinion | give a reasoned view, often on data or on someone's conclusion |
 | **calculate** | work out from given facts, figures or information | show working and give units |
-| **sketch** | make a simple freehand drawing showing the key features, taking care over proportions | have labelled axes, the right shape and the key values, without needing exact plotting |
+| **sketch** | make a simple drawing showing the key features | have labelled axes, the right shape and the key values, without needing exact plotting |
 
 Below is a short original question for each word, with a model answer. Read the answer and then notice the two things it is doing: how many points it has (one per mark) and what kind of point they are. In the answers, each marking point ends with the token for a mark.
 
@@ -180,7 +180,7 @@ To **describe** is to say what the data show; to **explain** is to say why. The 
 :::
 
 :::plot Rate of an enzyme-controlled reaction at different temperatures (invented data): the rate rises to 14 µmol min⁻¹ at 40 °C, then falls to zero at 60 °C.
---f "0.0004375*x**2*(60-x)+0*sqrt(60-x)" --x 0 100 --xstep 20 --y 0 20 --xlabel "temperature / °C" --ylabel "rate / µmol min⁻¹" --label "rate of reaction" --pt "40,14,maximum 14 at 40 °C@ne" --pt "20,7,7 at 20 °C@nw" --legend tr --alt "The rate rises from zero at 0 °C to 7 µmol per minute at 20 °C and a maximum of 14 at 40 °C, then falls steeply to zero at 60 °C."
+--f "0.0004375*x**2*(60-x)+0*sqrt(60-x)" --x 0 100 --xstep 20 --y 0 20 --ystep 5 --xlabel "temperature / °C" --ylabel "rate / µmol min⁻¹" --label "rate of reaction" --pt "40,14,maximum 14 at 40 °C@ne" --pt "20,7,7 at 20 °C@nw" --legend tr --alt "The rate rises from zero at 0 °C to 7 µmol per minute at 20 °C and a maximum of 14 at 40 °C, then falls steeply to zero at 60 °C."
 :::
 
 For this graph, a **description** of the whole curve would be: "As temperature rises from 0 to 40 °C, the rate increases, from 0 to 14 µmol min⁻¹ (7 µmol min⁻¹ at 20 °C), reaching a maximum at 40 °C. Above 40 °C the rate falls, more steeply than it rose, to 0 µmol min⁻¹ at 60 °C." Nothing in it says why. The **explanation** is separate: more kinetic energy and more collisions up to the optimum, and then the breaking of the hydrogen and ionic bonds of the tertiary structure, so that the active site changes shape and the enzyme is denatured.

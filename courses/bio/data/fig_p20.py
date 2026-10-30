@@ -163,7 +163,7 @@ x0, x1, yt, yb = 52, 324, 34, 200
 sy = axes(f, x0, x1, yt, yb, [0, 10, 20, 30, 40], 40, xticks=[0, 50, 100, 150, 200], xmax=200)
 sx = (x1 - x0 - 10) / 200
 for d, c in zip(dist, cover):
-    f.circle(x0 + d * sx, yb - c * sy, 4.5, "f1 s-acc sw2")
+    f.circle(x0 + d * sx, yb - c * sy, 3.2, "f1 s-acc sw2")  # 3.2: the 5 m and 10 m points must not overlap
 f.text(6, 14, "lichen cover / %")
 f.text(x1 - 2, 238, "distance from the road / m", "tl", "end")
 finish(f, "Scatter graph of lichen cover in percent against distance from a road in metres for ten trees. Lichen cover rises from 3 percent at 5 metres to 38 percent at 200 metres; the points rise from left to right with some scatter.",

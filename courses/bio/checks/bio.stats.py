@@ -209,4 +209,12 @@ eq("quiz SE25", 8.0 / sqrt(25), 1.6); eq("quiz SE100", 8.0 / sqrt(100), 0.8); eq
 eq("quiz df", 6 - 1, 5)
 eq("quiz rs crit n10", round(0.71, 2), 0.71); assert 0.71 > 0.648
 eq("rs crit 10 given", 0.648, 0.648)
+# skewed plot: f = A x^2 e^(-x/10), a gamma shape (k = 3, theta = 10): mode 2*theta = 20, mean 3*theta = 30
+from math import exp
+A = 1.8473
+eq("skew peak 100", round(A * 20**2 * exp(-2), 1), 100.0)
+eq("skew mean height", round(A * 30**2 * exp(-3), 1), 82.8)
+eq("normal end ~0", round(100 * exp(-((90 - 50) / 12)**2 / 2), 1), 0.4)
+# Spearman critical values used in the questions (exact two-tailed p = 0.05, data/spearman_crit.py)
+eq("rs crit 9", 0.700, 0.700); eq("rs crit 8", 0.738, 0.738)
 print("ok")

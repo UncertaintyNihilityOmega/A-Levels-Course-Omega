@@ -118,8 +118,8 @@ eq("n for half", 5 * 4, 20)
 eq("SE at 20", round(6 / sqrt(20), 3), round(se / 2, 3))
 
 # --- spot the error + quiz ---
-eq("crit n=12 given", 0.591, 0.591)
-assert 0.81 > 0.591
+eq("crit n=12 given", 0.587, 0.587)  # exact table, data/spearman_crit.py
+assert 0.81 > 0.587
 assert (10.0 - 1.0, 10.0 + 1.0) == (9.0, 11.0) and (11.0 - 1.0, 11.0 + 1.0) == (10.0, 12.0) and 11.0 > 10.0
 assert 0.45 < 0.648
 print("ok")

@@ -411,7 +411,7 @@ Biology uses logs in two main places. **pH** is a log scale: \(\mathrm{pH} = -\l
 ## Putting it together in an exam
 
 :::exam Calculation questions
-Write the formula, substitute with the units, and give the answer with units and the right number of significant figures. A calculation scores method marks (M1) for the formula and the substitution, and an accuracy mark (A1) for the answer, so a wrong final answer can still score marks when the working is shown. Command words: **calculate** means work out a number; **estimate** means find an approximate value; **describe** a graph means give the trend with figures and units. If the question says "show your working", the marks are for the working.
+Write the formula, substitute with the units, and give the answer with units and the right number of significant figures. A calculation scores method marks (M1) for the formula and the substitution, and an accuracy mark (A1) for the answer, so a wrong final answer can still score marks when the working is shown. Command words: **calculate** means work out from given facts, figures or information; **determine** means establish an answer using the information available; **describe** a graph means give the trend with figures and units. A question may also say **estimate**: find an approximate value, often by rounding or by reading a graph. If the question says "show your working", the marks are for the working.
 :::
 
 :::eg Spot the error: calculate the percentage change in mass of a plant tissue that fell from 8.0 g to 6.0 g. [3]

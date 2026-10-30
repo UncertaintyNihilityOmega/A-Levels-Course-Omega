@@ -13,3 +13,4 @@ courses/*/.claude/
 .run/
 
 # automatic agent runs (AGENT-RUN.md): one session at a time
+__pycache__/

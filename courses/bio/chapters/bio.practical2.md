@@ -36,7 +36,7 @@ You are asked to do some or all of these:
 ### Finding and focusing a specimen
 
 :::key Using the microscope
-1. Put the slide on the stage, section under the objective, and clip it down. Turn the objective to the **lowest power** (the ×4 or the ×10 of this paper) before you look.
+1. Put the slide on the stage, section under the objective, and clip it down. Turn the objective to the **lowest power** (in Paper 3, the ×10 objective) before you look.
 2. Look through the eyepiece and use the **coarse focus** to bring the specimen into view. Move the slide so the part you want is at the **centre** of the field.
 3. Use the **fine focus** to make it sharp. Adjust the light so the image is bright enough without glare.
 4. To change to ×40, turn the objective so that the lens clicks into place and focus with the **fine focus only**; the coarse focus can crush the slide.
@@ -399,7 +399,7 @@ A: (a) The outline of the whole section, the ring of air spaces, the bundles and
 - ×15
 - ×0.0067
 - ×13.5
-> \(M = I/A = 45 \div 0.30 = 150\). The others are mistakes: dividing the other way gives ×0.0067, and mixing up the decimal point gives ×15.
+> \(M = I/A = 45 \div 0.30 = 150\). The others are mistakes: dividing the other way gives ×0.0067, multiplying gives ×13.5, and mixing up the decimal point gives ×15.
 ? Which row would earn a mark in a table comparing two leaf sections?
 + number of layers of palisade cells: one in leaf X, two in leaf Y
 - palisade cells: many in leaf Y

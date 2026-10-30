@@ -181,7 +181,7 @@ The skills in Paper 3 that most students find easy to lose are the table, the gr
 :::
 
 :::plot The expected graph for the example: the rate rises with hydrogen peroxide concentration but more and more slowly (invented results). The curve is a smooth best-fit curve, not a zigzag.
---f "0.4*x/(4+x)" --x 0 12 --y 0 0.4 --xlabel "hydrogen peroxide / %" --ylabel "rate / cm³ s⁻¹" --label "best-fit curve" --pt "2,0.1333,0.13@se" --pt "4,0.2,@se" --pt "6,0.2333,0.23@se" --pt "8,0.2667,@se" --pt "10,0.2833,0.28@se" --legend tr --alt "Five points rise from 0.13 cm cubed per second at 2 percent to 0.28 at 10 percent, with a smooth curve that gets flatter as the concentration rises."
+--f "0.4*x/(4+x)+0*sqrt(x-2)+0*sqrt(10-x)" --x 0 12 --y 0 0.4 --ystep 0.1 --xlabel "hydrogen peroxide / %" --ylabel "rate / cm³ s⁻¹" --label "best-fit curve" --pt "2,0.1333,0.13@se" --pt "4,0.2,@se" --pt "6,0.2333,0.23@se" --pt "8,0.2667,@se" --pt "10,0.2833,0.28@se" --legend tr --alt "Five points rise from 0.13 cm cubed per second at 2 percent to 0.28 at 10 percent, with a smooth curve that gets flatter as the concentration rises."
 :::
 
 Notice what the answer did not do: it did not explain the biology of why the curve flattens. "Describe" is only for the pattern. Part (e) in the real paper might say "explain", and you would then say that the active sites of the catalase became saturated, so the substrate concentration was no longer limiting.
@@ -213,7 +213,6 @@ A: Use at least five values of pH [B1]. Use smaller intervals around the expecte
 - papers: [Past papers by paper: Paper 5](https://www.physicsandmathstutor.com/past-papers/a-level-biology/cie-paper-5/) · Physics & Maths Tutor · real Paper 5 question papers and mark schemes [unofficial]
 - read: [CAIE A Level Biology practical skills notes](https://www.physicsandmathstutor.com/biology-revision/a-level-cie/practical-skills/) · Physics & Maths Tutor · free notes and questions on practical skills
 - practise: [CAIE A Level Biology topic questions](https://www.savemyexams.com/a-level/biology/cie/25/topic-questions/) · Save My Exams · questions with mark schemes, some free [paid]
-- explore: [Learn.Genetics: gel electrophoresis lab](https://learn.genetics.utah.edu/content/labs/gel/) · University of Utah · a virtual laboratory for a practical technique
 - watch: [CAIE A Level Biology videos](https://cognito.org/specifications/alevel/biology/cie) · Cognito · short videos and questions matched to the syllabus
 
 Links checked 24 October 2026.
