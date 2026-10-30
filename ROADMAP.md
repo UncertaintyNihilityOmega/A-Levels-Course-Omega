@@ -3,13 +3,10 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
-- Current course: **Biology** (`bio`, queue item 2). P1–P17 written, P1–P15 reviewed (0 open items).
-  P1–P21 written, P1–P18 reviewed (0 open items). Nothing running: 5-hour 76%, waiting for the reset at 23:30
-  (weekly 88%, gate 95%).
-  Next: REVIEW P19, P20, P21 and WRITE P22. Reviewer: P20 Spearman critical values (n = 9, 12) not in FACTS.md;
-  bio.stats distribution plots not looked at after the last trim; P21 command-word meanings written from memory
-  (FACTS.md lists only the words); bio.exam.p35 links a gel lab (loose fit). Reviewer: P20 Spearman critical values (n = 9, 12) not in
-  FACTS.md; bio.stats distribution plots not looked at after the last trim. Reviewer: P17 molecular-clock plot x label crowds the ticks.
+- Current course: **Biology** (`bio`, queue item 2). P1–P21 written, P1–P18 reviewed (0 open items).
+  Running (Oct 30, 09:50): REVIEW P19–P21 (with the carried open points: Spearman n = 9, 12; bio.stats plots;
+  command-word meanings; p35 gel link; P17 clock-plot label), WRITE P22, WRITE P23. Preview bio-preview on 5104.
+  Weekly 89% (gate 95%). Left after these: P24, FIX, READER, REVIEW FINAL.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
