@@ -142,7 +142,7 @@ Most cells are transparent, so under the microscope they show little contrast. A
 **Safety**: iodine solution and methylene blue stain skin and clothes and can irritate the eyes, so wear eye protection and a lab coat. Use a mounted needle, forceps and coverslips carefully (glass can cut). For cheek cells use only your own cells, put the used cotton bud, slide and coverslip into disinfectant and wash your hands. Never touch another person's cells. Risk: low.
 :::
 
-You can also make a temporary slide of a **plant section**. Cut a very thin slice from a stem or root with a sharp razor blade or scalpel, always cutting away from your fingers, put the slice in a drop of water on the slide and add the coverslip. Thin slices float in the drop and keep from drying out. The thinnest slice gives the clearest image, so choose it with forceps.
+You can also make a temporary slide of a **plant section**. Cut a very thin slice (a section) from a stem or root with a sharp razor blade or scalpel, always cutting away from your fingers, put the slice in a drop of water on the slide and add the coverslip. Thin slices float in the drop and keep from drying out. The thinnest slice gives the clearest image, so choose it with forceps.
 
 ## Magnification and resolution
 
@@ -168,7 +168,7 @@ Never write that increasing magnification increases resolution. Resolution depen
 
 ### The magnification equation
 
-To find a magnification or an actual size, measure the **image** with a ruler and compare it with the **actual** size.
+To find a magnification or an actual size, measure the **image** with a ruler and compare it with the **actual** size. The image is often a **micrograph**: a photograph taken through a microscope. A **photomicrograph** is one taken through a light microscope, and an **electron micrograph** is one taken through an electron microscope (a TEM or an SEM, described later in this chapter).
 
 :::formula Magnification
 \[M = \frac{I}{A}\]
@@ -350,7 +350,7 @@ Electrons behave as waves with a much **shorter wavelength** than light. A micro
 The electrons are focused by electromagnets (which work as lenses). Air would scatter the electrons, so the inside of an electron microscope is a **vacuum**. This means the specimen must be **dead**, and it has to be specially prepared (fixed, dehydrated and stained with heavy metals).
 
 :::def Transmission electron microscope (TEM)
-A microscope in which a beam of electrons passes through a very thin section of specimen. Dense parts absorb more electrons and appear darker. It produces a flat (two-dimensional) image of the inside of cells at very high resolution.
+A microscope in which a beam of electrons passes through a very thin section (slice) of specimen. Dense parts absorb more electrons and appear darker. It produces a flat (two-dimensional) image of the inside of cells at very high resolution.
 :::
 
 :::def Scanning electron microscope (SEM)
@@ -424,7 +424,7 @@ Q: A cell is 60 µm long. A drawing of it is 12 cm long. Calculate the magnifica
 A: \(12\,\mathrm{cm} = 120\,\mathrm{mm} = 120\,000\,\mathrm{\mu m}\). \(M = 120\,000 \div 60 = \times 2000\).
 Q: A photomicrograph has a magnification of ×600. A cell in it is 27 mm across. Calculate the actual diameter of the cell in µm.
 A: \(A = I/M = 27 \div 600 = 0.045\,\mathrm{mm} = 45\,\mathrm{\mu m}\).
-Q: A vesicle is 6.0 mm across in an electron micrograph of magnification ×20 000. Calculate its actual diameter in nm.
+Q: A small structure is 6.0 mm across in an electron micrograph of magnification ×20 000. Calculate its actual diameter in nm.
 A: \(6.0 \div 20\,000 = 0.0003\,\mathrm{mm} = 0.3\,\mathrm{\mu m} = 300\,\mathrm{nm}\).
 Q: A cell has an actual length of 80 µm. It is viewed at a total magnification of ×150. Calculate the length of the image in mm.
 A: \(I = M \times A = 150 \times 80 = 12\,000\,\mathrm{\mu m} = 12\,\mathrm{mm}\).

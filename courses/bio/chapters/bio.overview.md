@@ -14,7 +14,7 @@ Biology students rarely fail because the ideas are too hard. They lose marks bec
 Biology is the science of living things, and A Level Biology follows life up a ladder of size: **molecules** (water, glucose, proteins, DNA) build **cells**; cells build **tissues, organs and organisms**; and organisms live together in **populations** and **ecosystems** and change over generations by **evolution**. Almost every topic asks the same three questions. What is the structure? How does that structure let it do its job? And what goes wrong when it fails?
 
 The course rewards three habits:
-- **Precise explanation.** You are marked on creditworthy ideas written in the correct scientific terms. "The enzyme and substrate fit" earns less than "the substrate has a shape complementary to the active site".
+- **Precise explanation.** You are marked on creditworthy ideas (points worth a mark) written in the correct scientific terms. "The enzyme and substrate fit" earns less than "the substrate has a shape complementary to the active site".
 - **Data handling.** Most questions give you a graph, a table or an unfamiliar experiment. You describe it with figures and units, calculate from it, and explain it using what you know.
 - **Practical thinking.** You must be able to plan an investigation, name variables, spot sources of error and judge the evidence. Two of the five papers test this directly.
 
@@ -56,7 +56,7 @@ AS grades are lower-case letters, a to e. A Level grades are capital letters, A*
 :::key What is printed, and what is not
 - **A calculator is allowed in every paper.** You should show all your working and use appropriate units.
 - **There is no data booklet, no formula sheet and no periodic table in any paper.** You must remember every definition, equation and unit yourself. For the few equations you need (magnification, percentage change, rate), this course teaches them early and uses them often.
-- **Statistics formulae (A Level only) are printed inside the question that needs them**, and a table of critical values is given when needed. You do not have to remember the formulae. **Degrees of freedom are never given**, so you must be able to work them out.
+- **Statistics formulae (A Level only) are printed inside the question that needs them**, and a table of critical values (the numbers a test result is compared with to decide whether it is significant) is given when needed. You do not have to remember the formulae. **Degrees of freedom are never given**, so you must be able to work them out (degrees of freedom is a number worked out from the sample sizes or the number of categories; see [Statistics for biologists](#bio.stats)).
 - **Paper 1 gives one mark per correct answer and takes nothing away for a wrong answer.** Never leave a multiple-choice question blank: a guess costs nothing.
 - Papers 2 to 5 are answered on the question paper in black or dark blue pen, with HB pencil for diagrams and graphs. The marks for each part are shown in brackets, and they tell you how many separate points to make.
 :::
@@ -74,7 +74,7 @@ Every question tests one or more **assessment objectives** (AOs).
 Papers 1, 2 and 4 are half AO1 and half AO2. Papers 3 and 5 are entirely AO3. The practical papers therefore reward skills that no amount of memorising can replace, so this course teaches them in their own chapters and uses them in every topic chapter.
 
 :::tip Unfamiliar contexts are normal
-The contexts in Papers 3 and 5 may be outside the syllabus content, and any new information you need is given in the question. The same is true of many AO2 questions in Papers 2 and 4: the organism or disease may be one you have never met. Do not panic. The biology underneath is always content you have learned. Read the stem, name the idea from the syllabus that applies, and then answer in mark-scheme language.
+The contexts in Papers 3 and 5 may be outside the syllabus content, and any new information you need is given in the question. The same is true of many AO2 questions in Papers 2 and 4: the organism or disease may be one you have never met. Do not panic. The biology underneath is always content you have learned. Read the stem (the opening text of the question that sets the scene), name the idea from the syllabus that applies, and then answer in mark-scheme language.
 :::
 
 ## The topic map
@@ -137,7 +137,7 @@ The syllabus has 19 topics. Topics 1–11 are AS; topics 12–19 are the extra A
 | 19 Genetic technology | [Tools of genetic technology](#bio.genetech) |
 | 19 Genetic technology | [Genetic technology in medicine and agriculture](#bio.genetech2) |
 
-A Level papers also assume every AS topic. Paper 4 can ask a synoptic question that joins, for example, enzymes (topic 3) to protein synthesis (topic 6) and gene control (topic 16).
+A Level papers also assume every AS topic. Paper 4 can ask a synoptic question (one that joins topics together) that links, for example, enzymes (topic 3) to protein synthesis (topic 6) and gene control (topic 16).
 
 ### Skills chapters
 

@@ -64,7 +64,7 @@ with \(n\) from 3 upwards.
 | pentose | 5 | \(\ce{C5H10O5}\) | ribose (in RNA and ATP) |
 | hexose | 6 | \(\ce{C6H12O6}\) | glucose, fructose, galactose |
 
-Glucose, fructose and galactose have the same molecular formula, \(\ce{C6H12O6}\), but their atoms are arranged differently, so they are different molecules with different properties. Glucose is the most important: it is the main substrate for respiration (see [Aerobic respiration](#bio.respiration)), and it is the building block of starch, glycogen and cellulose.
+Glucose, fructose and galactose have the same molecular formula, \(\ce{C6H12O6}\), but their atoms are arranged differently, so they are different molecules with different properties. Glucose is the most important: it is the main substrate for respiration (the substance that is used up in respiration to release energy; see [Aerobic respiration](#bio.respiration)), and it is the building block of starch, glycogen and cellulose.
 
 :::key Carbohydrates in one box
 - Carbohydrates contain **C, H and O only**.
@@ -221,7 +221,7 @@ A weaker answer says "B has a reducing sugar", which is wrong: the first test sh
 
 ## Starch and glycogen: energy stores
 
-Cells need glucose all the time for respiration, but storing glucose itself would be a disaster. Glucose is small and soluble, so a store of it would pull water into the cell by osmosis (see [Movement into and out of cells](#bio.movement)) and the glucose would diffuse out. Plants and animals instead store glucose as **polysaccharides** that are large, compact and insoluble. They are made of α-glucose, so enzymes can hydrolyse them to glucose when it is needed.
+Cells need glucose all the time for respiration, but storing glucose itself would be a disaster. Glucose is small and soluble, so a store of it would pull water into the cell by osmosis (see [Movement into and out of cells](#bio.movement)) and the glucose would diffuse out. Water moves into a cell that has many dissolved particles inside it; this is what "lowering the water potential" means (the more dissolved particles, the lower the water potential, and the more water is drawn in). One big starch molecule is one particle, but a thousand glucose molecules are a thousand particles, so a starch store has almost no **osmotic effect** (it draws in almost no water). Plants and animals instead store glucose as **polysaccharides** that are large, compact and insoluble. They are made of α-glucose, so enzymes can hydrolyse them to glucose when it is needed.
 
 :::def Starch
 A storage polysaccharide in plants, made of two polymers of α-glucose: amylose (unbranched) and amylopectin (branched). It is stored in plant cells as grains, for example in chloroplasts and in potato tubers and seeds.
@@ -307,7 +307,7 @@ Because the chains are straight, they can lie side by side. The many OH groups s
 
 How does this structure suit the wall?
 
-- **High tensile strength.** The covalent bonds along each chain and the enormous number of hydrogen bonds between chains make microfibrils very hard to stretch or pull apart. The wall resists the **turgor pressure** of the cell as water enters by osmosis, so the cell does not burst (see [Movement into and out of cells](#bio.movement)).
+- **High tensile strength.** The covalent bonds along each chain and the enormous number of hydrogen bonds between chains make microfibrils very hard to stretch or pull apart. The wall resists the **turgor pressure** of the cell (the pressure of the cell contents pushing on the wall) as water enters by osmosis, so the cell does not burst (see [Movement into and out of cells](#bio.movement)).
 - **Fibres in layers** cross one another, so the wall resists forces from many directions and a cell can be firm and hold its shape.
 - **Freely permeable.** There are spaces between the fibres, so water and dissolved substances pass through the wall easily. The partially permeable membrane inside the wall, not the wall itself, controls what enters the cytoplasm.
 - **Cannot be hydrolysed by most animals.** The wall is not digested by the cell's own enzymes, so it stays in place.
@@ -337,7 +337,7 @@ Eating grass supplies large amounts of cellulose, but a cow gains energy from it
 
 Humans and cows do not make an enzyme (cellulase) that can hydrolyse the β-1,4 glycosidic bonds in cellulose. [B1]
 
-The shape of cellulose, with its β-glucose units, is not complementary to the active site of amylase, which only hydrolyses α-1,4 bonds (enzymes are specific). [B1]
+The shape of cellulose, with its β-glucose units, is not complementary to the active site of amylase (an enzyme's active site is the part that fits one substrate, the molecule it acts on, and a complementary shape is one that fits), which only hydrolyses α-1,4 bonds (enzymes are specific: each works on only one kind of substrate). [B1]
 
 A cow has microorganisms in its stomach (the rumen) that make cellulase; they hydrolyse the cellulose to glucose, which the cow uses. [B1]
 

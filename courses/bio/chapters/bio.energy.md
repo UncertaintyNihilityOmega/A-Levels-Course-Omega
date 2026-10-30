@@ -337,13 +337,15 @@ The radius cancels, so \(\mathrm{RQ} = (d_1 - d_2) \div d_1\) needs no radius at
 
 \[\begin{aligned} \text{day 2: } \mathrm{RQ} &= 28 \div 40 = 0.70 \\ \text{day 4: } \mathrm{RQ} &= 44 \div 55 = 0.80 \\ \text{day 6: } \mathrm{RQ} &= 63 \div 70 = 0.90 \\ \text{day 8: } \mathrm{RQ} &= 84 \div 84 = 1.0 \end{aligned}\]
 
-:::plot The RQ of the germinating seeds rises from 0.70 on day 2 to 1.0 on day 8 (invented data).
---f "0.6+0.05*x+0*sqrt(x-2)+0*sqrt(8-x)" --x 0 10 --y 0 1.4 --hline 1 --xlabel "day" --ylabel "RQ" --label "RQ" --pt "2,0.7,day 2: 0.70@se" --pt "8,1,day 8: 1.0@se" --legend tr --alt "A straight line rising from an RQ of 0.70 on day 2 to 1.0 on day 8, with a dashed line at RQ 1."
-:::
-
 **Step 2: describe.** The RQ rises steadily from 0.70 on day 2 to 1.0 on day 8, an increase of 0.30.
 
 **Step 3: explain.** On day 2 the RQ of 0.70 shows that the seeds are respiring mainly lipid, their oil store. During germination the lipid is converted into sugars that are transported to the growing shoot and root, so by day 8 the RQ of 1.0 shows that the seeds are respiring mainly carbohydrate. Oxygen uptake also rises, from 40 to 84 mm³ h⁻¹, as the seedling grows and more cells respire.
+:::
+
+Here are the four RQ values from the example plotted against time, with the dashed line at RQ 1 where only carbohydrate is respired.
+
+:::plot The RQ of the germinating seeds rises from 0.70 on day 2 to 1.0 on day 8 (invented data).
+--f "0.6+0.05*x+0*sqrt(x-2)+0*sqrt(8-x)" --x 0 10 --y 0 1.4 --hline 1 --xlabel "day" --ylabel "RQ" --label "RQ" --pt "2,0.7,day 2: 0.70@se" --pt "8,1,day 8: 1.0@se" --legend tr --alt "A straight line rising from an RQ of 0.70 on day 2 to 1.0 on day 8, with a dashed line at RQ 1."
 :::
 
 :::exam Calculation answers

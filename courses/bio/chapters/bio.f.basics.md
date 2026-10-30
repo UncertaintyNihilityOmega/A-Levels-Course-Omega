@@ -108,9 +108,9 @@ The cell is the unit of life, and most of this course happens inside cells. Here
 | **Nucleus** | contains the DNA, which controls the cell's activities | yes | yes |
 | **Mitochondria** | release energy from food in respiration | yes | yes |
 | **Ribosomes** | make proteins | yes | yes |
-| **Cell wall** | strong outer layer (made of cellulose in plants) that supports the cell | no | yes |
-| **Chloroplasts** | contain chlorophyll and carry out photosynthesis | no | yes (in green parts) |
-| **Permanent vacuole** | a large space filled with cell sap, which helps keep the cell firm | no | yes |
+| **Cell wall** | strong outer layer (made of cellulose, a tough carbohydrate, in plants) that supports the cell | no | yes |
+| **Chloroplasts** | contain chlorophyll (the green pigment that absorbs light) and carry out photosynthesis | no | yes (in green parts) |
+| **Permanent vacuole** | a large space filled with cell sap (a solution of sugars and salts), which helps keep the cell firm | no | yes |
 
 :::cols
 :::col Animal cell
@@ -239,6 +239,8 @@ A substance that increases the rate of a chemical reaction without being used up
 
 Chemical reactions in cells would be far too slow at body temperature, so cells use catalysts made of protein, called **enzymes**. Because a catalyst is not used up, a very small amount can speed up a huge number of reactions. Enzymes are the subject of [Enzymes](#bio.enzymes).
 
+A note on the marks you are about to see. Worked answers show where each mark is earned: **[B1]** is one mark for a correct point, **[M1]** is a method mark (for showing the right working) and **[A1]** is an answer mark (for the correct final answer). **[B0]**, **[M0]** and **[A0]** mean that mark was lost. In practice questions, **★** to **★★★** shows how hard a question is (easier to harder), and a line starting **H:** is a hint.
+
 :::eg Spot the error: describe what a catalyst does. [2]
 A student wrote this answer.
 
@@ -302,7 +304,7 @@ Look for water: is it a product (condensation) or a reactant (hydrolysis)?
 
 **(a)** Water is **produced** while a larger molecule is built: **condensation**.
 
-**(b)** Water is **added** and a large molecule is split: **hydrolysis**. (This is what amylase does in your mouth.)
+**(b)** Water is **added** and a large molecule is split: **hydrolysis**. (This is what amylase does in your mouth: amylase is an enzyme, a protein that speeds up the splitting of starch.)
 
 **(c)** Three molecules of water are **produced** as a larger molecule is built: **condensation**.
 :::
@@ -358,7 +360,7 @@ Particles in a liquid or gas are always moving at random. In a region where ther
 - the **concentration gradient** is steeper (a bigger difference between the two regions),
 - the **distance** is shorter,
 - the **surface area** is larger, and
-- the **temperature** is higher (particles have more kinetic energy and move faster).
+- the **temperature** is higher (particles have more kinetic energy, the energy of movement, so they move faster).
 
 A single-celled organism such as an amoeba takes in oxygen by diffusion across its cell surface membrane: oxygen is used up inside the cell, so its concentration is lower there than outside, and oxygen diffuses in down the gradient. Carbon dioxide diffuses out the same way.
 

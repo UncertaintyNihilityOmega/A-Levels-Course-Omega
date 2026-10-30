@@ -212,13 +212,15 @@ The dyes are **blue when oxidised** and **colourless when reduced**. A tube that
 
 The others are \(4.17 \times 10^{-3}\) at 30 °C and \(3.33 \times 10^{-3}\,\mathrm{s^{-1}}\) at 50 °C. At 60 °C there was no change in 900 s, so the rate is about 0.
 
-:::plot Rate of respiration of yeast at five temperatures, in units of 10⁻³ s⁻¹ (the rate is 1/t). The highest rate is at 40 °C.
---x 0 90 --y 0 12 --xlabel "temperature / °C" --ylabel "rate / 10⁻³ s⁻¹" --pt "20,1.67,1.67@se" --pt "30,4.17,4.17@nw" --pt "40,8.33,8.33@ne" --pt "50,3.33,3.33@ne" --pt "60,0,0@nw" --legend tr --alt "Five points: rate 1.67 at 20 degrees, 4.17 at 30, 8.33 at 40, 3.33 at 50 and 0 at 60 degrees Celsius, in units of 10 to the power minus 3 per second. The rate rises to a peak at 40 degrees and then falls to zero."
-:::
-
 **Step 2: describe.** As the temperature rises from 20 °C to 40 °C, the rate increases from \(1.67 \times 10^{-3}\) to \(8.33 \times 10^{-3}\,\mathrm{s^{-1}}\), five times as fast. [B1] The highest rate measured is at 40 °C, and above it the rate falls, to \(3.33 \times 10^{-3}\,\mathrm{s^{-1}}\) at 50 °C and to about 0 at 60 °C. [B1]
 
 **Step 3: explain.** Up to 40 °C, the enzymes (dehydrogenases) and substrates have more kinetic energy, so they collide more often and more enzyme–substrate complexes form per second. [B1] Above 40 °C, hydrogen and ionic bonds in the enzymes break, the active sites change shape and the enzymes are denatured, so respiration slows and then stops. [B1]
+:::
+
+Here are the five rates from the example plotted against temperature, so you can see the peak at 40 °C.
+
+:::plot Rate of respiration of yeast at five temperatures, in units of 10⁻³ s⁻¹ (the rate is 1/t). The highest rate is at 40 °C.
+--x 0 90 --y 0 12 --xlabel "temperature / °C" --ylabel "rate / 10⁻³ s⁻¹" --pt "20,1.67,1.67@se" --pt "30,4.17,4.17@nw" --pt "40,8.33,8.33@ne" --pt "50,3.33,3.33@ne" --pt "60,0,0@nw" --legend tr --alt "Five points: rate 1.67 at 20 degrees, 4.17 at 30, 8.33 at 40, 3.33 at 50 and 0 at 60 degrees Celsius, in units of 10 to the power minus 3 per second. The rate rises to a peak at 40 degrees and then falls to zero."
 :::
 
 :::eg Spot the error: describe the effect of temperature on the rate of respiration of yeast, using the table in the example above. [3]

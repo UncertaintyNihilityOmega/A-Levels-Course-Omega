@@ -96,7 +96,7 @@ The same idea gives the variety of proteins: a chain of only 100 amino acids has
 A polypeptide chain does not stay as a straight string. It folds into a precise three-dimensional shape, and the shape is built up in four levels.
 
 :::def Primary structure
-The sequence (order) of amino acids in a polypeptide chain, joined by peptide bonds. It is determined by the gene that codes for the protein.
+The sequence (order) of amino acids in a polypeptide chain, joined by peptide bonds. It is determined by the gene that codes for the protein (a gene is a length of DNA that codes for one polypeptide).
 :::
 
 :::def Secondary structure
@@ -119,7 +119,7 @@ Read the figure from top to bottom. The **primary** structure is just the order.
 
 ### What holds a protein in shape
 
-The primary structure is held by strong covalent peptide bonds. Above that, a protein is held in shape by four kinds of interaction between the R groups of the amino acids (and, for secondary structure, hydrogen bonds between the backbone groups).
+The primary structure is held by strong covalent peptide bonds. Above that, a protein is held in shape by four kinds of interaction between the R groups of the amino acids (and, for secondary structure, hydrogen bonds between the backbone groups). The backbone is the repeating N–C–C chain of the polypeptide, without the R groups.
 
 | Interaction | Between which groups | Strength |
 |---|---|---|
@@ -128,7 +128,7 @@ The primary structure is held by strong covalent peptide bonds. Above that, a pr
 | **Ionic bonds** | oppositely charged R groups, such as –NH₃⁺ and –COO⁻ | stronger than hydrogen bonds |
 | **Disulfide bonds** | the sulfur atoms of two cysteine R groups (–S–S–) | strongest: a covalent bond |
 
-The same four interactions hold the chains together in a quaternary structure. Hydrogen bonds and ionic bonds are broken by heat and by changes in pH, so they are what change when a protein is **denatured** (see [Enzymes](#bio.enzymes)). Disulfide bonds are covalent bonds and are not broken by small changes in temperature or pH. Peptide bonds are not broken by denaturation either, so the primary structure is unchanged.
+The same four interactions hold the chains together in a quaternary structure. Hydrogen bonds and ionic bonds are broken by heat and by changes in pH, so they are what change when a protein is **denatured** (denatured = the tertiary structure is changed so the protein stops working; see [Enzymes](#bio.enzymes)). Disulfide bonds are covalent bonds and are not broken by small changes in temperature or pH. Peptide bonds are not broken by denaturation either, so the primary structure is unchanged.
 
 :::key Levels of structure and what holds them
 - **Primary:** order of amino acids; **peptide bonds**.
@@ -156,14 +156,14 @@ Quaternary structure is the way that two or more polypeptide chains are arranged
 A weaker answer repeats "folding" for every level with no bonds, or says that peptide bonds hold the tertiary structure.
 :::
 
-:::eg Real context: one amino acid can change the whole protein. In an enzyme, an amino acid on the surface of the folded protein with a polar R group is replaced by one with a non-polar R group. Suggest why this might change how the protein works.
+:::eg Real context: one amino acid can change the whole protein. In an enzyme (a protein that speeds up a reaction by binding a molecule called the substrate at a small region called the active site), an amino acid on the surface of the folded protein with a polar R group is replaced by one with a non-polar R group. Suggest why this might change how the protein works.
 Think of the chain: R group → bonds → folding → shape → function.
 
 The new amino acid has a different R group, so the R group may no longer form the same hydrogen bonds or ionic bonds. [B1]
 
 The tertiary structure may fold differently, because the bonds between R groups hold the shape. [B1]
 
-If the shape changes, the shape of the active site (or of a binding site) may change, so the substrate is no longer complementary and the protein works less well. [B1]
+If the shape changes, the shape of the active site (or of a binding site) may change, so the substrate is no longer complementary (no longer fits) and the protein works less well. [B1]
 
 The effect depends on where the change is. A change far from the active site, to an R group of similar type, may do nothing. Some changes in a gene cause disease: in sickle cell anaemia, one hydrophilic amino acid in the β-globin chain is replaced by a hydrophobic one, and haemoglobin molecules stick together. The genetics is in [Genes, phenotype and gene control](#bio.genecontrol).
 :::
@@ -414,7 +414,7 @@ Collagen has three polypeptide chains wound into a triple helix, held by hydroge
 Glycine, with the smallest R group, at every third position lets the chains pack tightly. [B1]
 Covalent cross-links between neighbouring collagen molecules, with staggered ends, stop the molecules slipping apart. [B1]
 Collagen is insoluble and inelastic, so the wall does not stretch and stays in place. [B1]
-Q: [5 marks] (#bio.enzymes) ★★★ An enzyme contains two cysteine amino acids, which form a disulfide bond, in its tertiary structure. A change in the gene replaces one of the cysteines with alanine, whose R group is –CH₃. (a) Suggest why this disulfide bond can no longer form. (b) Explain why the activity of the enzyme may decrease. (c) Disulfide bonds are not broken when the enzyme is warmed to 40 °C, but hydrogen bonds can be. Explain why.
+Q: [5 marks] (#bio.enzymes) ★★★ An enzyme contains two cysteine amino acids, which form a disulfide bond, in its tertiary structure. A change in the gene replaces one of the cysteines with alanine, whose R group is –CH₃. (a) Suggest why this disulfide bond can no longer form. (b) Explain why the activity of the enzyme may decrease. (An enzyme's active site is the region where its substrate, the molecule it acts on, fits.) (c) Disulfide bonds are not broken when the enzyme is warmed to 40 °C, but hydrogen bonds can be. Explain why.
 H: Which atom in cysteine forms the bond?
 A: (a) Alanine has no sulfur atom in its R group, so there is nothing to bond with the sulfur of the other cysteine. [B1]
 (b) Losing the disulfide bond changes the tertiary structure of the enzyme, so the shape of the active site may change. [B1]

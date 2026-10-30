@@ -39,13 +39,13 @@ The typical prokaryote in this course is a **bacterium**. These are its structur
 - **Small**: generally **1–5 µm** in diameter, roughly ten times smaller than most eukaryotic cells.
 - **Cell wall made of peptidoglycan**, a polymer of sugar chains cross-linked by short chains of amino acids. It is rigid and strong, and it is **not** cellulose.
 - **Cell surface membrane** inside the wall, which controls what enters and leaves, as in eukaryotic cells.
-- **Circular DNA**: one loop of DNA in the cytoplasm, not surrounded by a nuclear envelope and not wound around histone proteins as eukaryotic DNA is. The region where it lies is the **nucleoid**.
+- **Circular DNA**: one loop of DNA in the cytoplasm, not surrounded by a nuclear envelope and not wound around histone proteins (the proteins that DNA is wound around in eukaryotes) as eukaryotic DNA is. The region where it lies is the **nucleoid**.
 - **70S ribosomes** in the cytoplasm, which make proteins. They are smaller than the 80S ribosomes of eukaryotic cells.
 - **No organelles surrounded by double membranes**: no nucleus, mitochondria or chloroplasts. Bacteria also have no endoplasmic reticulum or Golgi body.
 :::
 
 Some bacteria have further structures. These are not found in all bacteria, so do not write them as "features of all bacteria":
-- **Plasmids**: small loops of circular DNA, separate from the main loop, that carry extra genes, such as genes for resistance to antibiotics.
+- **Plasmids**: small loops of circular DNA, separate from the main loop, that carry extra genes (a gene is a length of DNA that codes for one polypeptide), such as genes for resistance to antibiotics.
 - **Capsule**: a layer of slime outside the cell wall that protects the cell and helps it to stick to surfaces.
 - **Flagellum** (plural flagella): a long, whip-like tail made of protein that rotates and moves the bacterium.
 - **Pili** (singular pilus): short, hair-like projections that attach the cell to surfaces and to other cells.
@@ -55,7 +55,7 @@ A common wrong answer is "bacteria have no DNA" or "no ribosomes". They have bot
 :::
 
 :::note Why is the bacterial cell wall important?
-Peptidoglycan is found only in bacteria, not in plant, animal or fungal cells. Some antibiotics, such as penicillin, stop bacteria making new peptidoglycan cross-links, so the wall becomes weak and the cell bursts. They do not harm human cells, which have no cell wall. This is explained in [Antibiotics and resistance](#bio.antibiotics).
+Peptidoglycan is found only in bacteria, not in plant, animal or fungal cells. Some antibiotics, such as penicillin, stop bacteria making new peptidoglycan cross-links, so the wall becomes weak and the cell bursts (water enters the cell by osmosis and pushes outwards). They do not harm human cells, which have no cell wall. This is explained in [Antibiotics and resistance](#bio.antibiotics).
 :::
 
 ## Comparing prokaryotic and eukaryotic cells
@@ -129,10 +129,10 @@ A non-cellular structure with a core of nucleic acid (either DNA or RNA) surroun
 A virus can reproduce only **inside a host cell**. It attaches to a host cell, gets its nucleic acid inside and uses the cell's ribosomes, enzymes and ATP to make new virus particles. Outside a host cell it does nothing. HIV, which causes AIDS, is an enveloped RNA virus (see [Infectious diseases](#bio.disease)).
 
 :::note Are viruses alive?
-Biologists disagree. Viruses have genetic material (which can mutate and evolve) and they reproduce. But they are not cells, show no metabolism or growth, and cannot reproduce without a host. Many biologists therefore describe them as non-living particles that take over living cells, or as on the border of life. The syllabus does not ask you to decide, only to describe their structure accurately: **non-cellular**.
+Biologists disagree. Viruses have genetic material (which can mutate and evolve) and they reproduce. But they are not cells, show no metabolism (the chemical reactions of a cell) or growth, and cannot reproduce without a host. Many biologists therefore describe them as non-living particles that take over living cells, or as on the border of life. The syllabus does not ask you to decide, only to describe their structure accurately: **non-cellular**.
 :::
 
-Because viruses have no cell wall, no ribosomes of their own and no metabolism, **antibiotics do not work against them**. Antibiotics target bacterial structures and processes: the peptidoglycan wall, the 70S ribosome, bacterial enzymes.
+Because viruses have no cell wall, no ribosomes of their own and no metabolism (no chemical reactions of their own), **antibiotics do not work against them**. Antibiotics target bacterial structures and processes: the peptidoglycan wall, the 70S ribosome, bacterial enzymes.
 
 :::eg A particle is about 100 nm across. It has a core of RNA surrounded by a protein coat, outside which is a membrane of phospholipid with protein spikes. Identify the particle and state three reasons why it is not a cell.
 **Identification**: a core of nucleic acid (RNA) inside a protein coat (the capsid) with an outer phospholipid layer (the envelope) is an **enveloped virus**.
@@ -155,7 +155,7 @@ This is a 4-mark question.
 
 Penicillin stops the bacterium making the cross-links in its peptidoglycan cell wall. [B1]
 
-The wall becomes weak and cannot resist the pressure of the cell contents, so the cell bursts. [B1]
+The wall becomes weak and cannot resist the pressure of the cell contents (water enters the cell by osmosis and pushes outwards; see [Movement into and out of cells](#bio.movement)), so the cell bursts. [B1]
 
 Human cells have no peptidoglycan cell wall, so they are not affected. [B1]
 

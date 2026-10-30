@@ -244,7 +244,7 @@ The structure of a triglyceride explains each of its functions.
 | Function | How the structure explains it |
 |---|---|
 | **Energy store** | The tails contain many C–H bonds and little oxygen, so lipids release more energy when respired than carbohydrates do: about 39 kJ g⁻¹ compared with 16 kJ g⁻¹ for carbohydrate, more than twice as much per gram. |
-| **No osmotic effect** | Triglycerides are insoluble and hydrophobic, so they do not change the water potential of a cell and can be stored in large amounts. |
+| **No osmotic effect** | Triglycerides are insoluble and hydrophobic, so they do not change the water potential of a cell (they add no dissolved particles, so they draw in no water; see [Carbohydrates](#bio.carbs)) and can be stored in large amounts. |
 | **Thermal insulation** | Fat is a poor conductor of heat. A layer of fat under the skin (adipose tissue), or blubber in a seal, reduces heat loss. |
 | **Buoyancy** | Fat is less dense than water, so a layer of fat helps aquatic animals float. |
 | **Protection** | A layer of fat around organs such as the kidneys cushions them against knocks. |
@@ -404,7 +404,7 @@ So the same energy input gives a much smaller temperature rise than in air. [B1]
 Q: [4 marks] ★★ A leaf in sunlight loses 12 g of water per hour by evaporation from the cells inside. (a) Calculate the energy removed from the leaf in one hour, if 1 g takes 2.4 kJ. (b) Explain why this helps the leaf.
 A: (a) \(12 \times 2.4\) [M1] \(= 28.8\,\mathrm{kJ}\), or 29 kJ [A1]
 (b) Water has a high latent heat of vaporisation, so evaporation takes a lot of energy from the leaf. [B1]
-This cools the leaf, which keeps the enzymes in it from being denatured by overheating. [B1]
+This cools the leaf, which keeps the enzymes in it from being denatured by overheating (an overheated enzyme loses its shape and stops working). [B1]
 Q: [6 marks] ★★★ Describe the structure of a triglyceride and how it is formed from glycerol and fatty acids.
 H: Say how many of each molecule, name the bond, and say what is released.
 H: Mention what part of a fatty acid is hydrophobic and why.

@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-30 · REVIEW P19, P20, P21 · 15 fixes by the reviewer, 2 open (plots inside eg in bio.anaerobic and bio.energy). Fixed: Spearman n=12 0.591->0.587 (exact table now in FACTS + data/spearman_crit.py), catalase overlap value, ±0.5 SE quiz wording, lichen point overlap, skewed/normal distribution plots, sketch command word, p35 best-fit curve extrapolated (now 2-10%) and gel link dropped, p1 Golgi on cell outline, practical calibration plot out of eg, Paper 3 x4 objective, planning exam box, maths command words, P17 molecular clock x label. Command-word meanings verified against syllabus p50 and recorded verbatim in FACTS; COURSE.md plot and command-word rules tightened; P24 notes added.
+Last: 2026-10-30 · FIX · closed 18 items: plots moved after the examples in bio.anaerobic and bio.energy; 16 reader glosses (mark tokens, cell terms, micrograph, vesicle, gene, spindle, osmotic effect, active site, denatured, backbone and others) in overview, f.basics, microscopy, cells, prokaryotes, carbs, lipids, proteins
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
