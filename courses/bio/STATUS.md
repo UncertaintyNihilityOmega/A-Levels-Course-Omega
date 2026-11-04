@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-11-04 · FIX · READER genecontrol to genetech2: 31 items closed (glosses for autosome, niche, trophic terms, carrying capacity, subspecies, viable, prion, penetrance, spliceosome; lac data stem and opening; GFP marker inserted with gene; worked sums for t-test, 3-gene model, SD, tree branches 12 and 8 added to figure; screening methods; checks extended)
+Last: 2026-11-04 · FIX · READER bio.stats to bio.mixed.a2: 18 items closed (stats count type, df for correlation, sum xy, t-test variances; planning single Precision def, risk grid, confounding def, n=15 Spearman, glosses; evaluation, exam guides, mixed.as summary, mixed.a2 type 2 and smallest-first ranking)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

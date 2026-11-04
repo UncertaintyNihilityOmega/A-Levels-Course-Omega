@@ -198,7 +198,7 @@ A: (a) Two peaks, of 90 units at 440 nm (blue) and 100 units at 675 nm (red) [B1
 :::
 
 :::try Data 3: a glucose tolerance test
-Q: [9 marks] (#bio.glucose) ★★★ Two volunteers drank a glucose solution at time 0. Their blood glucose concentration was measured over two hours (invented data).
+Q: [9 marks] (#bio.glucose) ★★★ Two volunteers drank a glucose solution at time 0. Their blood glucose concentration was measured over two hours (invented data). In type 2 diabetes the body makes insulin but the target cells respond poorly to it.
 
 | time / min | healthy person / mmol dm⁻³ | person with type 2 diabetes / mmol dm⁻³ |
 |---|---|---|
@@ -221,7 +221,7 @@ A: (a) The healthy person's concentration peaks at 7.9 mmol dm⁻³ at 30 minute
 
 (c) \(\dfrac{7.9 - 4.8}{4.8} \times 100\) [M1] \(= 65\%\) [A1]
 
-(d) The target cells have fewer insulin receptors, or the receptors do not respond (insulin resistance), so glucose uptake and conversion to glycogen are reduced [B1].
+(d) The target cells have fewer insulin receptors, or the receptors do not respond (this is called insulin resistance), so glucose uptake and conversion to glycogen are reduced [B1].
 :::
 
 :::try Data 4: conduction speed
@@ -495,7 +495,7 @@ A: (a) \(12 + 12 - 2 = 22\) [B1]
 
 (d) Any two: the data are continuous; the data are normally distributed; the standard deviations of the two samples are similar; the samples are random and independent [B1] [B1].
 
-Q: [7 marks] (#bio.biodiversity) ★★★ The soil water content (%) and moss cover (%) were measured at eight sites.
+Q: [7 marks] (#bio.biodiversity) ★★★ The soil water content (%) and moss cover (%) were measured at eight sites. The soil water data are not normally distributed.
 
 | site | soil water / % | moss cover / % |
 |---|---|---|
@@ -510,20 +510,20 @@ Q: [7 marks] (#bio.biodiversity) ★★★ The soil water content (%) and moss c
 
 \(r_s = 1 - \dfrac{6\sum D^2}{n^3 - n}\). The critical value of \(r_s\) at \(p = 0.05\) for 8 pairs is 0.738.
 
-(a) Rank the data (rank 1 for the highest value), calculate \(\sum D^2\) and then \(r_s\). [4]
+(a) Rank the data (rank 1 for the smallest value), calculate \(\sum D^2\) and then \(r_s\). [4]
 
 (b) State the conclusion. [1]
 
 (c) Explain why the result does not prove that soil water content causes moss cover. [1]
 
 (d) Explain why Spearman's rank correlation is chosen rather than Pearson's. [1]
-A: (a) Ranks of soil water: A 7, B 3, C 8, D 4, E 1, F 6, G 2, H 5; ranks of moss cover: A 8, B 3, C 7, D 5, E 1, F 6, G 2, H 4 [B1]. Differences \(D\): −1, 0, 1, −1, 0, 0, 0, 1, so \(\sum D^2 = 4\) [B1]. \(r_s = 1 - \dfrac{6 \times 4}{8^3 - 8} = 1 - \dfrac{24}{504}\) [M1] \(= 0.95\) [A1]
+A: (a) Ranks of soil water: A 2, B 6, C 1, D 5, E 8, F 3, G 7, H 4; ranks of moss cover: A 1, B 6, C 2, D 4, E 8, F 3, G 7, H 5 [B1]. Differences \(D\): 1, 0, −1, 1, 0, 0, 0, −1, so \(\sum D^2 = 4\) [B1]. \(r_s = 1 - \dfrac{6 \times 4}{8^3 - 8} = 1 - \dfrac{24}{504}\) [M1] \(= 0.95\) [A1]
 
 (b) \(0.95 > 0.738\), so there is a significant positive correlation between soil water and moss cover [B1].
 
 (c) A correlation shows that the variables change together, not that one causes the other; another factor (for example shade or soil type) could affect both [B1].
 
-(d) Spearman is used when the data are not known to be normally distributed (or are ranks); it makes no assumption about the distribution [B1]. (Accept: the relationship may not be linear.)
+(d) The soil water data are not normally distributed, and Pearson's correlation is valid only for normally distributed data; Spearman uses ranks and makes no assumption about the distribution [B1]. (Accept: the relationship may not be linear.)
 :::
 
 :::try Statistics 4–6

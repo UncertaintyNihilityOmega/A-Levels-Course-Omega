@@ -39,10 +39,10 @@ Data from measurements that can take any value within a range, for example lengt
 | type | example | what you can do |
 |---|---|---|
 | nominal | eye colour of 50 people | count each category; give percentages or frequencies |
-| ordinal | lichen abundance on a scale of 1 to 5 | put in order; find the median or mode; rank |
+| ordinal | abundance of lichen (a small crusty or leafy growth on tree bark and rocks) on a scale of 1 to 5 | put in order; find the median or mode; rank |
 | continuous | length of 50 leaves in mm | find the mean and standard deviation; plot a scatter graph |
 
-A count such as "17 snails in a quadrat" is a whole number, but when you sort animals or plants into classes and count how many are in each class, you are using frequency data of the nominal kind. If you rank counts from smallest to largest, you are treating them as ordinal data. The skill is to say which kind the data are *in the test you are using* and why.
+A count such as "17 snails in a quadrat" is a whole number, but a count is not automatically one type. When you sort animals or plants into named classes and count how many are in each class, you are using frequency data of the nominal kind. When a count is used as a measurement (snails per quadrat at each site), it is treated as continuous data. If you rank counts from smallest to largest, you are treating them as ordinal data. The skill is to say which kind the data are *in the test you are using* and why.
 
 :::eg State the type of data (nominal, ordinal or continuous) in each case. (a) The number of seeds that germinate with a red coat and the number with a brown coat. (b) The mass in grams of each seed. (c) Seeds ranked from 1 (smallest) to 8 (largest) by eye.
 (a) Nominal: the seeds are sorted into two categories (coat colour) and counted. [B1]
@@ -282,6 +282,8 @@ Every test turns your data into one number (the **calculated value**, such as \(
 A number that depends on the size of the data set and decides which row of the table of critical values you use. For \(\chi^2\) it is the number of classes minus 1; for the t-test it is \(n_1 + n_2 - 2\).
 :::
 
+For Pearson's and Spearman's correlation the table is read with \(n\), the number of pairs, so no degrees of freedom are worked out.
+
 :::def Critical value
 The value in a statistical table that your calculated value must reach (or pass) for the result to be significant at the stated probability, usually \(p = 0.05\).
 :::
@@ -304,7 +306,7 @@ Each test answers a different question and is valid only for certain data and co
 | question | data | test | conditions for validity |
 |---|---|---|---|
 | Do observed numbers fit the numbers expected? | nominal (frequencies in classes) | chi-squared | one row or column of counts; expected values from a ratio or from "no preference" |
-| Do two sample means differ? | continuous | t-test | two samples; each approximately normally distributed; similar standard deviations; fewer than 30 values is allowed |
+| Do two sample means differ? | continuous | t-test | two samples; each approximately normally distributed; similar standard deviations; suits small samples (under 30 values in each) |
 | Do two variables change together in a straight line? | continuous | Pearson's correlation | both normally distributed; scatter graph shows a possible linear relationship; at least 5 pairs, ideally 10 or more |
 | Do two variables change together (rising or falling, not necessarily straight)? | ordinal, ranked, or continuous but not normal | Spearman's rank correlation | more than 5 pairs, ideally 10 to 30; points independent; random sample |
 :::
@@ -377,6 +379,8 @@ In a Paper 4 or 5 question the standard deviations are often not given. You may 
 
 The two standard deviations are similar, so the t-test is suitable.
 
+**Variances.** The formula needs \(s_1^2\) and \(s_2^2\), the squares of the standard deviations. Square the unrounded values (or use the sum of squares directly): \(s_1^2 = 832 \div 7 = 118.86\) and \(s_2^2 = 892 \div 7 = 127.43\). Squaring the rounded 10.9 would give 118.81 and a slightly different answer.
+
 **t.**
 
 \[\begin{aligned} t &= \frac{|151 - 187|}{\sqrt{\dfrac{118.86}{8} + \dfrac{127.43}{8}}} \\ &= \frac{36}{\sqrt{14.857 + 15.929}} \\ &= \frac{36}{5.548} = 6.49 \end{aligned}\]
@@ -409,7 +413,7 @@ A **scatter graph** shows the pairs of values as points. The independent variabl
 \(n\) = number of pairs, \(\bar{x}\), \(\bar{y}\) = the means, \(s_x\), \(s_y\) = the standard deviations (with \(n - 1\)). The critical value depends on \(n\) (given in a table).
 :::
 
-You may be given \(\sum xy\), the means and the standard deviations and be asked to finish the calculation.
+\(\sum xy\) means: multiply each \(x\) by its own \(y\), then add the products. It is not the same as \(\sum x \times \sum y\). For the three pairs (1, 2), (2, 3), (3, 5): \(\sum xy = 1 \times 2 + 2 \times 3 + 3 \times 5 = 2 + 6 + 15 = 23\). You may be given \(\sum xy\), the means and the standard deviations and be asked to finish the calculation.
 
 :::eg Soil nitrate (mg per kg of soil) and the height of grass (cm) were measured at seven sites. Part of the working is given: \(n = 7\), \(\bar{x} = 40\), \(\bar{y} = 25\), \(\sum xy = 8230\), \(s_x = 21.602\), \(s_y = 9.747\). Complete the test of correlation. The critical value for \(n = 7\) at \(p = 0.05\) is 0.754.
 **Null hypothesis.** There is no correlation between soil nitrate and the height of grass.
@@ -432,7 +436,7 @@ You may be given \(\sum xy\), the means and the standard deviations and be asked
 \(D\) = the difference between the two ranks of a pair, \(n\) = number of pairs.
 :::
 
-Rank each variable separately from smallest (rank 1) to largest. Ties share the mean of the ranks they would have taken. Then find \(D\) and \(D^2\) for each pair.
+Rank each variable separately from smallest (rank 1) to largest. (Ranking both variables from largest instead gives the same \(r_s\), but use one direction for both and keep to smallest = 1.) Ties share the mean of the ranks they would have taken. Then find \(D\) and \(D^2\) for each pair.
 
 :::eg The number of barnacles per 100 cm² was counted on rock at nine heights above the low-tide mark. The counts are not normally distributed. Test for a correlation between height on the shore and the number of barnacles. The critical value for \(n = 9\) at \(p = 0.05\) is 0.700.
 **Null hypothesis.** There is no correlation between the height on the shore and the number of barnacles.

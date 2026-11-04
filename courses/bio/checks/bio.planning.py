@@ -70,6 +70,17 @@ eq("syr 12", round(0.1 / 12 * 100, 2), 0.83)
 eq("time", 0.5 / 20 * 100, 2.5)
 assert 2.5 > 0.83
 
+# --- risk grid: severity (1-3) x probability (1-3); 1-2 low, 3-4 medium, 6-9 high ---
+def rating(s, p):
+    v = s * p
+    return "low" if v <= 2 else "medium" if v <= 4 else "high"
+grid = {1: ["low", "low", "medium"], 2: ["low", "medium", "high"], 3: ["medium", "high", "high"]}
+for s in (1, 2, 3):
+    for p in (1, 2, 3):
+        assert rating(s, p) == grid[s][p - 1], (s, p)
+assert rating(3, 1) == "medium" and rating(1, 1) == "low" and rating(2, 2) == "medium"  # ethanol, glass, hot bath
+eq("replicate pairs", 5 * 3, 15)
+
 # --- quiz ---
 eq("quiz stock", 0.30 * 10 / 1.0, 3.0)
 eq("quiz water", 10 - 3.0, 7.0)

@@ -33,7 +33,7 @@ What the front page tells you (from the real June 2024 paper):
 Paper 1 tests only AS content (topics 1 to 11), and it counts towards both the AS and the A Level. The marks are shared equally between knowledge and understanding (AO1) and handling, applying and evaluating information (AO2), so half of the marks reward what you know and half reward using it on a table, graph, diagram or unfamiliar example.
 
 :::exam Never leave a blank
-A wrong answer loses nothing, so a blank is a guaranteed zero and a guess is a chance of one mark. Before you hand in, check every question on the answer sheet has exactly one shaded lozenge. If you have eliminated two options, your guess is a 50% chance, not a 25% one.
+A wrong answer loses nothing, so a blank is a guaranteed zero and a guess is a chance of one mark. Before you hand in, check every question on the answer sheet has exactly one shaded lozenge (the small oval printed beside each letter on the answer sheet, which you fill in with soft pencil). If you have eliminated two options, your guess is a 50% chance, not a 25% one.
 :::
 
 ## Time: how long is a mark?

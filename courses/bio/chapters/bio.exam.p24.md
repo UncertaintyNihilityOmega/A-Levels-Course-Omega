@@ -71,7 +71,7 @@ The first word of a question tells you what kind of answer is wanted. Cambridge 
 | **calculate** | work out from given facts, figures or information | show working and give units |
 | **sketch** | make a simple drawing showing the key features | have labelled axes, the right shape and the key values, without needing exact plotting |
 
-Below is a short original question for each word, with a model answer. Read the answer and then notice the two things it is doing: how many points it has (one per mark) and what kind of point they are. In the answers, each marking point ends with the token for a mark.
+Below is a short original question for each word, with a model answer. Read the answer and then notice the two things it is doing: how many points it has (one per mark) and what kind of point they are. In the answers, each marking point ends with the token for a mark. The key: **[B1]** = one mark for a correct point (a fact, a term or a reason); **[M1]** = a method mark, for the right working in a calculation; **[A1]** = an answer mark, for the correct final value. "Error carried forward" is explained under "How marking points work" and "Calculations" below.
 
 ### Words that ask for recall
 

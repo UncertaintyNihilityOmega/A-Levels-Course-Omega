@@ -34,7 +34,7 @@ Almost every planning question can be answered by working down the same list. Us
 1. **Hypothesis and prediction**: what you expect, why, and (if asked) a sketch graph.
 2. **Variables**: name the independent variable (IV) and the dependent variable (DV).
 3. **Vary the IV**: at least five values, the range, and how you make each value (dilution, water bath, filter, distance).
-4. **Measure the DV**: what you measure, with which apparatus, in which unit, and to what precision.
+4. **Measure the DV**: what you measure, with which apparatus, in which unit, and how finely it reads.
 5. **Standardise**: each other key variable, how you keep it the same, and the value.
 6. **Controls**: the control experiment that shows the DV changes because of the IV.
 7. **Replicates**: how many, and what you do with the readings (mean, anomalies, spread).
@@ -94,6 +94,10 @@ The variable that is measured to see the effect of the change, for example the l
 A variable, other than the independent variable, that could affect the dependent variable and is therefore kept the same in every treatment.
 :::
 
+:::def Confounding variable
+A variable that changes along with the independent variable, so that its effect cannot be separated from the effect of the independent variable. A variable that is standardised cannot confound.
+:::
+
 :::def Control experiment
 A treatment in which the independent variable is absent or at a baseline value, but everything else is the same, so that any change in the dependent variable can be attributed to the independent variable.
 :::
@@ -125,14 +129,14 @@ Explain the range when you can. "The range 10 to 60 °C covers temperatures belo
 
 ## Measuring the dependent variable
 
-State what you measure, the apparatus, the unit and the precision. Prefer a **quantitative** measurement (a volume, mass, length, time or absorbance) to a qualitative one (a colour compared by eye). If a reaction is followed over time, say when you take the readings.
+State what you measure, the apparatus, the unit and how finely the apparatus reads (its smallest division). Prefer a **quantitative** measurement (a volume, mass, length, time or absorbance) to a qualitative one (a colour compared by eye). If a reaction is followed over time, say when you take the readings.
 
 :::def Accuracy
 How close a measured value is to the true value.
 :::
 
 :::def Precision
-How close repeated measurements are to each other (the fineness of the measurement, such as the number of decimal places that an instrument allows).
+How close repeated measurements are to each other. (How fine an instrument's scale is, such as 0.1 g or 0.01 g, is called its **resolution**; it is a different idea.)
 :::
 
 :::def Repeatability
@@ -154,7 +158,7 @@ Cylinder: the uncertainty is \(\pm 0.5\) cm³ (half of 1 cm³), so
 
 Syringe: the uncertainty is \(\pm 0.1\) cm³, so \(\dfrac{0.1}{20} \times 100 = 0.5\%\).
 
-The syringe is five times more precise at this reading, so the measurements would be more accurate. A plan should name the better apparatus and give this reason.
+The syringe has a percentage uncertainty five times smaller at this reading, so the volume is measured more accurately. A plan should name the better apparatus and give this reason.
 :::
 
 :::warn "Repeat to make it accurate"
@@ -294,12 +298,20 @@ The chance that a hazard actually causes harm, taking into account how severe th
 
 A simple risk assessment names the **hazard**, says who or what could be harmed and **how severe** the harm would be, estimates how **likely** it is, and gives a specific **precaution**. The same chemical is a smaller risk in dilute solution than in concentrated solution, and "be careful" or "wear goggles" is not enough on its own.
 
+Combine the two ratings with a grid. Score severity as minor 1, moderate 2, severe 3, and probability as low 1, medium 2, high 3; multiply. A product of 1 or 2 is a **low** risk, 3 or 4 is **medium**, and 6 or 9 is **high**.
+
+| severity \ probability | low | medium | high |
+|---|---|---|---|
+| minor | low | low | medium |
+| moderate | low | medium | high |
+| severe | medium | high | high |
+
 | hazard | severity | probability | risk | precaution |
 |---|---|---|---|---|
-| ethanol (flammable) | fire, burns | low if there is no flame | medium | use an electrically heated water bath; no naked flames; keep the bottle capped |
-| hot water bath at 60 °C | scalds | medium | medium | lift tubes with a holder; keep the bath away from the edge of the bench |
-| dilute (0.1 mol dm⁻³) irritant solution | eye irritation | low | low | wear eye protection; wash splashes off with water |
-| glass capillary tube or syringe | cuts | low | low | check for cracks; handle with care; sweep up broken glass with a brush |
+| ethanol (flammable) | severe (fire, burns) | low if there is no flame | medium | use an electrically heated water bath; no naked flames; keep the bottle capped |
+| hot water bath at 60 °C | moderate (scalds) | medium | medium | lift tubes with a holder; keep the bath away from the edge of the bench |
+| dilute (0.1 mol dm⁻³) irritant solution | minor (eye irritation) | low | low | wear eye protection; wash splashes off with water |
+| glass capillary tube or syringe | minor (cuts) | low | low | check for cracks; handle with care; sweep up broken glass with a brush |
 
 ## Three model plans
 
@@ -356,11 +368,11 @@ Use three different shoots at each temperature and calculate the mean rate for e
 
 The control is a potometer with leaves coated in petroleum jelly (or a shoot with no leaves), which should show little uptake, so that the movement of the bubble depends on loss of water from the leaves. [B1]
 
-Plot the mean rate (per cm² of leaf area) on the y-axis against temperature on the x-axis, calculate the standard deviation of the replicates, and use a correlation test (Spearman's rank). [B1]
+Plot the mean rate (per cm² of leaf area) on the y-axis against temperature on the x-axis, calculate the standard deviation of the replicates, and use a correlation test (Spearman's rank): pair each of the 15 individual rates (five temperatures with three shoots each) with its temperature, so n = 15; five means alone would be too few pairs. [B1]
 
 Risk assessment: the glass capillary tube can break and cut; handle it carefully, check for cracks and sweep up any pieces with a brush. Keep the lamp and mains lead away from spilt water. The scalpel is sharp: cut away from the body on a tile. The risk is low. [B1]
 
-(Also credit: shake the leaves dry before starting; allow the same time for all shoots; a bubble that reaches the end of the scale is reset using the reservoir.)
+(Also credit: shake the leaves dry before starting; allow the same time for all shoots; a bubble that reaches the end of the scale is reset using the reservoir, the water-filled side tube of the potometer.)
 
 The potometer measures the uptake of water, which is a little more than the water lost by transpiration because some is used in photosynthesis and some keeps cells turgid. For a comparison between temperatures this does not matter.
 :::
@@ -372,7 +384,7 @@ The independent variable is the colour (wavelength) of the light; the dependent 
 
 Use five colour filters: violet, blue, green, yellow and red, in front of the lamp. [B1]
 
-The filters transmit different amounts of light, so measure the light intensity behind each filter with a light meter and move the lamp until all are equal (for example 50 lux). [B1]
+The filters transmit different amounts of light, so measure the light intensity behind each filter with a light meter and move the lamp until all are equal (for example 50 lux; lux is a unit of light intensity, so a light meter reads in lux). [B1]
 
 Put 10 algal balls (same diameter, from one batch) and 10 cm³ of indicator in a clear bottle; start with all bottles at the same orange-red colour. [B1]
 
@@ -465,8 +477,8 @@ Soak identical sterile discs for the same time in each solution and place them a
 The control is a disc soaked in sterile distilled water. [B1]
 Standardise the agar depth and type, the volume and the density of the bacterial culture spread, the size of the discs and the incubation temperature (25 °C) and time (48 hours). [B1]
 Use three plates for each concentration and calculate the mean zone diameter (and the standard deviation). [B1]
-Use aseptic technique, tape the lid of the dish (do not seal it completely), incubate at no more than 25–30 °C, and disinfect the bench and dispose of the dishes by autoclaving. [B1]
-Plot a graph of the mean diameter against concentration and use a correlation test (Spearman's rank) to see whether the zone increases with concentration. [B1]
+Use aseptic technique, tape the lid of the dish (do not seal it completely), incubate at no more than 25–30 °C, and disinfect the bench and dispose of the dishes by autoclaving (heating them in a pressure steriliser, an autoclave, to kill the bacteria). [B1]
+Plot a graph of the mean diameter against concentration and use a correlation test (Spearman's rank) to see whether the zone increases with concentration: pair each of the 15 zone diameters (five concentrations, three plates each) with its concentration, so n = 15. [B1]
 Q: [6 marks] ★★★ A student's plan to find the effect of enzyme concentration on the time taken to hydrolyse starch was: "Put 1, 2 and 3 cm³ of amylase in tubes of starch. Time how long it takes for the iodine to turn from blue-black to orange, using a clock. The amylase is cold, so warm it up first." Give six weaknesses in the plan and explain how each could be corrected.
 H: Count the values of the independent variable, the volumes, the temperature and the timing.
 A: Only three values of the IV; use at least five concentrations (made by dilution of the enzyme). [B1]
@@ -474,7 +486,7 @@ Changing the volume of amylase also changes the volume of the mixture, so use th
 Temperature is not controlled; use a water bath at a stated temperature (for example 35 °C) and bring enzyme and substrate to that temperature before mixing. [B1]
 No pH control; add the same volume of a buffer solution. [B1]
 No repeats or control; repeat each three times and calculate a mean, and use boiled amylase as a control. [B1]
-"A clock" is imprecise; use a stopwatch and sample into iodine on a spotting tile at fixed intervals (for example every 15 s). [B1]
+"A clock" is too coarse for timing the colour change; use a stopwatch and sample into iodine on a spotting tile at fixed intervals (for example every 15 s). [B1]
 :::
 
 :::try Stretch for A*
@@ -552,7 +564,7 @@ With the syringe, the time (2.5%) has a larger percentage uncertainty than the v
 - [ ] I can state a hypothesis with a biological reason, a prediction, and a sketch graph of the expected result.
 - [ ] I can identify the independent variable, the dependent variable and the key variables to standardise, and describe them precisely.
 - [ ] I can describe how to vary the independent variable over a justified range with at least five values.
-- [ ] I can describe how to measure the dependent variable accurately and to a suitable precision, and calculate a percentage uncertainty.
+- [ ] I can describe how to measure the dependent variable accurately, with apparatus that reads finely enough, and calculate a percentage uncertainty.
 - [ ] I can describe how to standardise each key variable, giving a value and the apparatus.
 - [ ] I can calculate the mass needed for a solution in % (w/v) or mol dm⁻³ and prepare solutions by proportional and serial dilution.
 - [ ] I can describe a suitable control and explain what it shows.

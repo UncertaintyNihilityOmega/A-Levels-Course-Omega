@@ -53,11 +53,11 @@ eq("S2 a", round(a, 3), 1.401); eq("S2 b", round(b, 3), 1.080); eq("S2 t", r2(t)
 for df, v in [(20, 2.09), (21, 2.08), (22, 2.07), (23, 2.07), (24, 2.06)]:
     eq(f"S2 crit {df}", r2(t_crit(df)), v)
 x = [23, 41, 15, 36, 52, 28, 47, 33]; y = [14, 52, 20, 33, 68, 24, 57, 41]
-rk = lambda v: [sorted(v, reverse=True).index(a) + 1 for a in v]
+rk = lambda v: [sorted(v).index(a) + 1 for a in v]  # rank 1 = smallest, as in bio.stats
 rx, ry = rk(x), rk(y)
-assert rx == [7, 3, 8, 4, 1, 6, 2, 5] and ry == [8, 3, 7, 5, 1, 6, 2, 4]
+assert rx == [2, 6, 1, 5, 8, 3, 7, 4] and ry == [1, 6, 2, 4, 8, 3, 7, 5]
 D = [a - b for a, b in zip(rx, ry)]
-assert D == [-1, 0, 1, -1, 0, 0, 0, 1]
+assert D == [1, 0, -1, 1, 0, 0, 0, -1]
 eq("S3 sumD2", sum(d * d for d in D), 4); eq("S3 denom", 8 ** 3 - 8, 504); eq("S3 rs", r2(1 - 6 * 4 / 504), 0.95)
 xs = [12, 15, 18, 21, 24, 27, 30, 33]; ys = [3.1, 3.9, 4.0, 5.2, 5.0, 6.3, 6.6, 7.4]
 eq("S4 mx", sum(xs) / 8, 22.5); eq("S4 my", sum(ys) / 8, 5.1875)

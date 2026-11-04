@@ -3,7 +3,7 @@
 @level guide
 @paper CAIE 9700 Papers 1, 2 and 3
 @time 4–6 hours
-@summary Fifty-four original questions drawn from all eleven AS topics and deliberately mixed, from quick recall and calculations to data-response questions, extended synoptic questions and ten multiple-choice questions, each with a mark scheme in exam wording and a link to the chapter to revise.
+@summary Thirty-nine original questions drawn from all eleven AS topics and deliberately mixed, from quick recall and calculations to data-response questions, extended synoptic questions and ten multiple-choice questions, each with a mark scheme in exam wording and a link to the chapter to revise.
 
 :::why
 Real papers do not announce the topic. In one hour you can meet a membrane, a codon, a heart valve and an antibody, and you must recognise each one without a chapter title to help you. This chapter mixes all eleven AS topics so that you practise the skill the exam actually tests: working out what a question is about, choosing the right ideas and writing them in mark-scheme language. Do it after you have revised the topic chapters, not instead of them.
