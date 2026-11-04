@@ -161,6 +161,8 @@ A synapse between the end of a motor neurone and a muscle fibre. Acetylcholine r
 | Result of one impulse | may or may not reach the threshold (summation is possible) | **always** reaches the threshold: the muscle fibre gets an action potential |
 | After depolarisation | may start an action potential in a neurone | action potential spreads over the sarcolemma and **down the T-tubules** |
 
+(T-tubules are narrow tubes formed from the sarcolemma that carry the action potential into the muscle fibre; the next section explains them.)
+
 A single action potential in a motor neurone releases enough acetylcholine to bring the sarcolemma to the threshold every time, so one impulse is always enough to stimulate a fibre.
 
 ## Striated muscle
@@ -228,7 +230,7 @@ When a muscle contracts, each sarcomere gets shorter:
 This is evidence that the filaments themselves do not change length. The thin filaments slide inwards between the thick ones, so there is less of the sarcomere where only thin filaments (I band) or only thick filaments (H zone) are present.
 
 :::eg The figures are measured on an electron micrograph with a magnification of ×20 000. In a relaxed myofibril one sarcomere is 50 mm long, its A band is 32 mm long and its H zone is 10 mm long. In a contracted myofibril the sarcomere is 40 mm long, the A band is 32 mm and the H zone has disappeared. (a) Calculate the actual length of the relaxed sarcomere, in µm. (b) Describe the changes between the relaxed and the contracted state. (c) Explain these changes.
-**(a)** Actual size \(= \dfrac{\text{image size}}{\text{magnification}}\), so convert mm to µm first.
+**(a)** Actual size \(= \dfrac{\text{image size}}{\text{magnification}}\), then convert the answer from mm to µm.
 
 \[\begin{aligned} \text{length} &= \frac{50\,\mathrm{mm}}{20\,000} \\ &= 0.0025\,\mathrm{mm} \\ &= 2.5\,\mathrm{\mu m} \end{aligned}\]
 
@@ -366,7 +368,7 @@ A: (a) They open when the action potential arrives, letting calcium ions diffuse
 (c) They bind acetylcholine and open sodium ion channels in the postsynaptic membrane, causing depolarisation. [B1]
 (d) It breaks down acetylcholine, so the response stops. [B1]
 Q: [4 marks] ★ An electron micrograph of a myofibril has a magnification of ×30 000. A sarcomere measures 66 mm in the micrograph and its A band measures 48 mm. (a) Calculate the actual length of the sarcomere, in µm. (b) Calculate the actual length of the I band, in µm, given that the I band is the sarcomere length minus the A band.
-H: Image size ÷ magnification, then convert mm to µm.
+H: Image size ÷ magnification, then convert the answer from mm to µm.
 A: (a) \(66 \div 30\,000\) [M1] \(= 0.0022\,\mathrm{mm} = 2.2\,\mathrm{\mu m}\) [A1]
 (b) A band \(= 48 \div 30\,000 = 0.0016\,\mathrm{mm} = 1.6\,\mathrm{\mu m}\), so I band \(= 2.2 - 1.6\) [M1] \(= 0.6\,\mathrm{\mu m}\) [A1]
 Q: [4 marks] ★★ Botulinum toxin stops the vesicles in the presynaptic knobs of motor neurones from fusing with the presynaptic membrane. It is used in tiny doses to relax muscles that are overactive. Explain the effect of the toxin on a muscle.

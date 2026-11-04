@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-11-04 · FIX · 30 items: reader glosses and rewordings in bio.translocation, mammaltransport, oxygen, heart, gasexchange, disease, antibiotics, immunity, antibodies; bio.foodtests raw revise links; bio.mock.p1 11 recall questions replaced with application/data ones (3 SVG: cell drawing, mitosis stage, disc plate; 1 plot; letters still 10 each; check script recomputes)
+Last: 2026-11-04 · FIX · 44 reader items closed in bio.maths, practical, practical2, energy, respiration, anaerobic, photosynthesis, limiting, homeostasis, glucose, nerves, synapses, hormones, meiosis, inheritance, dihybrid: glosses and forward references, tangent and tripalmitin working shown, RQ plot now 4 points, wording fixes; checks added for bio.maths and bio.energy
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

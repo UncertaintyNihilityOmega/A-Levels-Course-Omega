@@ -95,14 +95,14 @@ Try it: drag the marker along the light axis, then change the carbon dioxide con
 --f "(1.6*x+36-abs(1.6*x-36))/2" --f "(1.6*x+70-abs(1.6*x-70))/2" --label "15 °C" --label "25 °C" --x 0 100 --y 0 100 --xlabel "light intensity / arbitrary units" --ylabel "rate of photosynthesis / arbitrary units" --pt "20,32,A@nw" --pt "70,36,B@s" --pt "70,70,C@n" --legend tr --alt "Two curves rise together in a straight line from the origin. The 15 degree curve levels off at a rate of 36 from a light intensity of about 22. The 25 degree curve rises to 70 at a light intensity of about 44 and then levels off. Point A is on the rising part of both curves at light intensity 20, point B is on the flat part of the 15 degree curve and point C is on the flat part of the 25 degree curve."
 :::
 
-:::eg The graph above shows the rate of photosynthesis at two temperatures. Name the factor that is limiting the rate at points A, B and C, and explain each.
+:::eg The graph above shows the rate of photosynthesis at two temperatures. Name the factor limiting the rate at A and B, and one factor that could be limiting at C, and explain each.
 Look first at where each point sits: on a rising part or on a flat part of the line.
 
 At A the curve is rising, and both temperatures give the same rate, so light intensity is the limiting factor: more light would mean more photoactivation, ATP and reduced NADP. [B1]
 
 At B the 15 °C curve is flat, so light is not limiting. The 25 °C curve is higher at the same light intensity, so temperature is the limiting factor: at 15 °C the enzymes of the Calvin cycle have less kinetic energy, so fewer enzyme–substrate complexes form. [B1]
 
-At C the curve is flat, so light is not limiting. Carbon dioxide concentration (0.12% is below the level at which rubisco is saturated) or temperature (25 °C is still below the optimum) is limiting. [B1]
+At C the curve is flat, so light is not limiting, but the graph alone cannot say which other factor is, because carbon dioxide concentration is held at 0.12% and 25 °C is not the only temperature that could be tried. Either may be named, with its reason: carbon dioxide concentration (0.12% is below the level at which rubisco is saturated) or temperature (25 °C is still below the optimum) is limiting. [B1]
 
 A weaker answer says "light is limiting at all three points because the graph is about light". It does not look at whether the line is rising or flat at each point, so it scores no more than one mark.
 :::
@@ -152,7 +152,7 @@ DCPIP is **blue when oxidised and colourless when reduced**. When chloroplasts a
 **Aim**: find how light intensity (or colour) affects the rate at which isolated chloroplasts reduce DCPIP.
 
 :::steps
-1. Grind fresh leaves (spinach) in **ice-cold isotonic buffer** in a chilled mortar, filter through muslin, and keep the chloroplast suspension on ice and in the dark.
+1. Grind fresh leaves (spinach) in **ice-cold isotonic buffer** (isotonic: the same water potential as the chloroplasts) in a chilled mortar, filter through muslin, and keep the chloroplast suspension on ice and in the dark.
 2. Put a fixed volume of buffer, DCPIP solution and chloroplast suspension in a tube, mix, and stand it in a beaker of water (or a water tank) at a fixed distance from a lamp.
 3. Start the stopwatch. Record the **time for the DCPIP to turn from blue to colourless**, or read the absorbance in a colorimeter (with a red filter) every minute and calculate the fall per minute.
 4. **Light intensity**: repeat with the lamp at several distances (for example 10, 20, 30, 40, 50 cm) and work out the relative intensity as \(1/d^2\).

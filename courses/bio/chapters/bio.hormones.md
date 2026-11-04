@@ -115,6 +115,8 @@ When a plant is short of water, closing the stomata is the fastest way to reduce
 A plant hormone made in response to water stress (and other stresses). It causes guard cells to lose turgor, so the stomata close.
 :::
 
+A plant hormone is a chemical messenger made in one part of the plant and carried to another part (in the phloem, the xylem or by diffusion between cells), where it changes how target cells behave. Plants have no glands or blood, so this is different from the animal hormones of the last chapters. **Turgor** (turgor pressure) is the pressure of the cell contents pushing outwards on the cell wall; a turgid cell is firm and a flaccid cell has lost it.
+
 :::steps
 1. In **water stress**, the leaf cells (and root cells) make more **ABA**, which is carried to the guard cells.
 2. ABA **binds to receptors** on the cell surface membrane of the guard cells.
@@ -162,8 +164,8 @@ The Venus fly trap, *Dionaea muscipula*, grows in bogs where the soil has very l
 :::steps
 1. An insect touches a **trigger hair**. The bending of the hair stimulates the sensory cells at its base, which produces an **action potential**. (You meet action potentials in [Neurones and action potentials](#bio.nerves).)
 2. One touch is not enough. The trap closes only if a hair is touched **twice within about 20 seconds** (or two hairs are touched). This stops it closing for a raindrop or a falling piece of debris.
-3. The action potentials **spread across the cells of the lobes**, and ions move rapidly, causing a change in the cells.
-4. The cells in the **outer layer** of the lobes **expand quickly** (they take up water and their walls stretch), while the inner cells do not.
+3. The action potentials **spread across the cells of the lobes**, and the movement of ions changes the water potential and the wall of the outer cells, so they take up water by osmosis.
+4. The cells in the **outer layer** of the lobes **expand quickly** (the water they have taken up makes their walls stretch), while the inner cells do not.
 5. This makes the lobes **flip from a convex shape to a concave shape** and **snap shut** in a fraction of a second, trapping the insect.
 6. If the prey keeps moving and stimulating the hairs, the trap seals and the glands on its surface secrete digestive enzymes; the products are absorbed.
 :::
@@ -196,7 +198,7 @@ Plant cells are surrounded by a cellulose wall that is strong but, in young cell
 3. The **pH of the wall falls**: the wall becomes more **acidic**.
 4. The low pH activates **expansins**, proteins in the wall.
 5. Expansins **loosen the bonds** between the cellulose microfibrils, so the wall becomes more flexible and can stretch.
-6. Water enters the cell by osmosis, and the **turgor pressure** pushes against the loosened wall and **stretches it**: the cell **elongates**.
+6. Water enters the cell by osmosis, and the **turgor pressure** (the pressure of the cell contents pushing outwards on the cell wall) pushes against the loosened wall and **stretches it**: the cell **elongates**.
 :::
 
 :::html

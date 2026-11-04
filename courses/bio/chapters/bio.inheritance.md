@@ -224,7 +224,9 @@ Probability that the next child is group AB \(= \tfrac14\) (0.25 or 25%). [B1]
 
 Sex in humans is decided by two sex chromosomes. A female has two X chromosomes (XX) and a male has an X and a Y (XY). All eggs carry an X. Half of the sperm carry an X and half carry a Y, so the chance that a child is a boy is 1/2.
 
-The X chromosome is large and carries many genes, most with nothing to do with sex, such as the genes for blood clotting and for colour vision. The Y chromosome is much smaller and carries few genes. A gene on the non-homologous part of the X chromosome has no matching locus on the Y chromosome. This is **sex linkage**.
+The X chromosome is large and carries many genes, most with nothing to do with sex, such as the genes for blood clotting and for colour vision. The Y chromosome is much smaller and carries few genes, so most of the X has no matching section on the Y. A gene on the non-homologous part of the X chromosome has no matching locus on the Y chromosome. This is **sex linkage**.
+
+The 22 pairs of chromosomes that are not the sex chromosomes are **autosomes**; a gene on an autosome is **autosomal**.
 
 :::def Sex linkage
 The presence of a gene on a sex chromosome. For an X-linked gene, a male has only one allele (on his X chromosome), so a recessive allele is always expressed in a male.
@@ -314,7 +316,7 @@ A pedigree is a family tree for one characteristic. In the exam you are given on
 1. **Two unaffected parents have an affected child**: the condition is caused by a **recessive** allele, and both parents are carriers (heterozygous).
 2. **Two affected parents have an unaffected child**: the condition is caused by a **dominant** allele, and both parents are heterozygous.
 3. **An affected female whose father is unaffected**: the condition cannot be X-linked recessive. (A daughter of an X-linked recessive condition gets her father's X chromosome, so he must be affected too.) So it is **autosomal**.
-4. **An affected father with an affected son**: the son cannot have the allele from his father if the gene is X-linked, because a son gets his Y from his father. If the mother does not carry the allele, the condition is **autosomal**. (If she could be a carrier, the son may have his allele from her.)
+4. **An affected father and an affected son**: if the mother is not affected and is not a carrier, the son must have had the allele from his father, so it is not X-linked (a son gets his Y, not his X, from his father) and the condition is **autosomal**. If the mother could be a carrier, X-linked is still possible, because the son may have had the allele from her.
 5. If many more males than females are affected, and affected males are born to unaffected parents, **X-linked recessive** inheritance is likely.
 :::
 
@@ -484,7 +486,7 @@ A: (a) Codominance: both alleles are expressed in the heterozygote. [B1]
 - all sons without haemophilia; all daughters with haemophilia
 - half the sons with haemophilia; no carrier daughters
 > The sons get the father's Y and the mother's \(X^H\), so they are not affected. Every daughter gets her father's \(X^h\) and her mother's \(X^H\), so each is a carrier.
-? Which is the correct way to write codominant alleles for flower colour, red (R) and white (W)?
+? A gene for flower colour has the letter C. Which is the correct way to write codominant alleles for red and white?
 + \(C^R\) and \(C^W\)
 - R and r
 - W and w

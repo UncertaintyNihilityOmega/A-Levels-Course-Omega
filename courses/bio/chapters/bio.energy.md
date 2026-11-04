@@ -127,7 +127,7 @@ Chemiosmosis takes place in the **inner membrane of mitochondria** and in the **
 | How ATP is made | phosphate passed from a phosphorylated molecule to ADP | proton gradient drives ATP synthase |
 | Where | cytoplasm and mitochondrial matrix | inner mitochondrial membrane; chloroplast membranes |
 | Needs a membrane | no | yes |
-| Needs oxygen | no | in mitochondria, yes (oxygen is the final electron acceptor) |
+| Needs oxygen | no | in mitochondria, yes (oxygen is the final electron acceptor; this is explained in the next chapter) |
 | Share of the ATP from aerobic respiration | small | large |
 
 ## Energy values of respiratory substrates
@@ -144,9 +144,9 @@ The energy released when one gram of the substrate is completely oxidised in res
 | lipid | about 39 |
 | protein | about 17 |
 
-A gram of lipid releases a little over twice as much energy as a gram of carbohydrate or protein (39 ÷ 16 is about 2.4). The reason is hydrogen. Respiration removes hydrogen atoms from the substrate (dehydrogenation) and passes them to the coenzymes NAD and FAD. These reduced coenzymes deliver the hydrogen to the electron transport chain, where it drives chemiosmosis. **The more hydrogen atoms there are per gram of substrate, the more reduced NAD and reduced FAD form, the more protons are pumped, and the more ATP is made.**
+A gram of lipid releases a little over twice as much energy as a gram of carbohydrate or protein (39 ÷ 16 is about 2.4). The reason is hydrogen. Respiration removes hydrogen atoms from the substrate (dehydrogenation) and passes them to the coenzymes NAD and FAD. NAD and FAD are hydrogen-carrying coenzymes; you meet them with glycolysis, the Krebs cycle and the electron transport chain in the next chapter, so here only remember that more hydrogen per gram means more ATP. (To oxidise a substrate here means to remove its hydrogen and finally to combine it with oxygen; the coenzymes that have taken up hydrogen are called reduced.) These reduced coenzymes deliver the hydrogen to the electron transport chain, where it drives chemiosmosis. **The more hydrogen atoms there are per gram of substrate, the more reduced NAD and reduced FAD form, the more protons are pumped, and the more ATP is made.**
 
-Compare glucose, \(\ce{C6H12O6}\), with tripalmitin, a typical lipid, \(\ce{C51H98O6}\). Using relative atomic masses of C = 12, H = 1 and O = 16, glucose has a relative molecular mass of 180 and tripalmitin 806. Hydrogen makes up \(12 \div 180\), about 6.7%, of the mass of glucose and \(98 \div 806\), about 12%, of the mass of tripalmitin. Lipids also contain very little oxygen, so they have far more oxidising still to do than carbohydrate molecules, which already carry an oxygen atom for every carbon. A gram of tripalmitin needs about 2.7 times as much oxygen to oxidise it as a gram of glucose.
+Compare glucose, \(\ce{C6H12O6}\), with tripalmitin, a typical lipid, \(\ce{C51H98O6}\). Using relative atomic masses of C = 12, H = 1 and O = 16, glucose has a relative molecular mass of 180 and tripalmitin 806. Hydrogen makes up \(12 \div 180\), about 6.7%, of the mass of glucose and \(98 \div 806\), about 12%, of the mass of tripalmitin. Lipids also contain very little oxygen, while carbohydrate molecules already carry an oxygen atom for every carbon, so a gram of lipid needs more oxygen to be respired. Oxygen needed per gram: tripalmitin needs 72.5 mol of \(\ce{O2}\) per 806 g, which is \(72.5 \div 806 = 0.090\,\mathrm{mol\,g^{-1}}\); glucose needs 6 mol per 180 g, which is \(6 \div 180 = 0.033\,\mathrm{mol\,g^{-1}}\). A gram of tripalmitin therefore needs \(0.090 \div 0.033\), about 2.7 times as much oxygen as a gram of glucose.
 
 Proteins give about the same energy per gram as carbohydrate. Their amino groups must be removed before the carbon skeleton is respired, and the body uses protein for energy only when there is little carbohydrate or lipid.
 
@@ -345,7 +345,7 @@ The radius cancels, so \(\mathrm{RQ} = (d_1 - d_2) \div d_1\) needs no radius at
 Here are the four RQ values from the example plotted against time, with the dashed line at RQ 1 where only carbohydrate is respired.
 
 :::plot The RQ of the germinating seeds rises from 0.70 on day 2 to 1.0 on day 8 (invented data).
---f "0.6+0.05*x+0*sqrt(x-2)+0*sqrt(8-x)" --x 0 10 --y 0 1.4 --hline 1 --xlabel "day" --ylabel "RQ" --label "RQ" --pt "2,0.7,day 2: 0.70@se" --pt "8,1,day 8: 1.0@se" --legend tr --alt "A straight line rising from an RQ of 0.70 on day 2 to 1.0 on day 8, with a dashed line at RQ 1."
+--f "0.6+0.05*x+0*sqrt(x-2)+0*sqrt(8-x)" --x 0 10 --y 0 1.4 --hline 1 --xlabel "day" --ylabel "RQ" --label "RQ" --pt "2,0.7,day 2: 0.70@se" --pt "4,0.8,day 4: 0.80@se" --pt "6,0.9,day 6: 0.90@se" --pt "8,1,day 8: 1.0@se" --legend tr --alt "Four points on a straight line rising from an RQ of 0.70 on day 2 through 0.80 on day 4 and 0.90 on day 6 to 1.0 on day 8, with a dashed line at RQ 1."
 :::
 
 :::exam Calculation answers

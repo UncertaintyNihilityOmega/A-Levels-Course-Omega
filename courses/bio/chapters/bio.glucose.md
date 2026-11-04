@@ -289,7 +289,7 @@ The result is semi-quantitative because the colour is judged by eye and the char
 | 8 | 5.10 |
 | 10 | 6.30 |
 
-**Step 1: the pattern.** The current rises by 1.20 µA for every 2 mmol dm⁻³, which is 0.60 µA for each mmol dm⁻³. The points lie on a straight line, so the current is proportional to the glucose concentration, apart from the 0.30 µA with no glucose. [B1]
+**Step 1: the pattern.** The current rises by 1.20 µA for every 2 mmol dm⁻³, which is 0.60 µA for each mmol dm⁻³. The current rises in equal steps, so the points lie on a straight line that does not start at zero: first subtract the 0.30 µA background current (the current with no glucose), and what is left is proportional to the glucose concentration. [B1]
 
 **Step 2: the concentration.** Subtract the 0.30 µA and divide by the gradient:
 
@@ -344,7 +344,7 @@ Q: State what is meant by amplification of a signal, and why an enzyme cascade a
 A: A small signal causes a much larger response. Each enzyme in the cascade, once active, activates many molecules of the next enzyme.
 Q: A test strip contains glucose oxidase and peroxidase. State the job of each.
 A: Glucose oxidase catalyses the oxidation of glucose and produces hydrogen peroxide. Peroxidase catalyses the reaction between hydrogen peroxide and the chromogen, which makes the coloured product.
-Q: A glucose biosensor gives a current of 4.50 µA. A second reading is 2.25 µA. The biosensor's current is proportional to the glucose concentration. If the first reading corresponds to 9.0 mmol dm⁻³, calculate the concentration for the second reading.
+Q: A glucose biosensor gives a current of 4.50 µA. A second reading is 2.25 µA. Ignore any background current, so the biosensor's current is directly proportional to the glucose concentration. If the first reading corresponds to 9.0 mmol dm⁻³, calculate the concentration for the second reading.
 A: \(2.25 \div 4.50 \times 9.0 = 4.5\,\mathrm{mmol\,dm^{-3}}\).
 Q: Give two ways in which a biosensor is better than a test strip for monitoring blood glucose.
 A: It gives a quantitative (exact) value, and the reading is objective, because there is no colour to judge by eye. (Also: needs only a small drop of blood and is quick.)

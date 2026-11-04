@@ -39,6 +39,8 @@ That equation hides two very different stages, and almost every question in this
 | Makes | ATP, reduced NADP, oxygen | triose phosphate (then carbohydrates, lipids, amino acids) |
 | Energy change | light energy to chemical energy in ATP and reduced NADP | chemical energy in ATP and reduced NADP to chemical energy in organic molecules |
 
+RuBP and triose phosphate are two carbon compounds you meet in the Calvin cycle section below; for now, read the table as the pattern of inputs and outputs.
+
 **NADP** is a coenzyme that works like NAD in respiration. It accepts electrons and a proton (hydrogen) and becomes **reduced NADP**, a carrier of hydrogen and energy. Write "reduced NADP", never "NADPH".
 
 :::key The two stages in one box
@@ -412,8 +414,8 @@ Triose phosphate and GP are the starting points for the other organic molecules 
 | Product | Used to make |
 |---|---|
 | **TP** | **carbohydrates**: hexose sugars (glucose), then sucrose for transport in phloem, starch for storage, cellulose for cell walls |
-| **TP** | **lipids**: glycerol, and fatty acids built from 2C units |
-| **TP** | **amino acids** (with nitrate as a source of nitrogen) |
+| **TP** | **lipids**: glycerol and fatty acids |
+| **TP** | **amino acids** (the nitrogen comes from nitrate absorbed by the roots) |
 | **GP** | **some amino acids** (the syllabus limit) |
 
 :::key The Calvin cycle in one box

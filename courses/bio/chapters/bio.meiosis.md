@@ -42,6 +42,8 @@ A cell with two complete sets of chromosomes, one set from each parent, so that 
 A cell with one complete set of chromosomes, with one chromosome of each homologous pair. The haploid number is written n.
 :::
 
+A **gamete** is a sex cell (a sperm or an egg) that fuses with another at **fertilisation**; the cell made by the fusion is the **zygote**. Cells that are not gametes are body (**somatic**) cells.
+
 Human body cells (somatic cells) are diploid, with 2n = 46. Human gametes (sperm and egg cells) are haploid, with n = 23. Other species have other numbers, and the number says nothing about how complex an organism is.
 
 | organism | diploid number (2n) | haploid number (n) |
@@ -68,7 +70,7 @@ Gametes fuse in fertilisation. If gametes were diploid, the zygote would have tw
 
 Meiosis prevents this. It halves the number to n = 23 in the gametes, so that fertilisation (n + n) restores 2n = 46. The chromosome number stays the same from generation to generation.
 
-In an animal, meiosis happens in the ovaries and testes, and the haploid cells it makes become gametes directly. In a flowering plant, meiosis happens in the anthers and ovules and makes haploid cells that develop into pollen grains and the embryo sac. Mitosis in those structures then makes the gametes themselves.
+In an animal, meiosis happens in the ovaries and testes, and the haploid cells it makes become gametes directly. In a flowering plant, meiosis happens in the anthers and ovules (anthers make pollen; ovules sit in the ovary and hold the egg cell) and makes haploid cells that develop into pollen grains and the embryo sac (the haploid cells that go on to make the male and female gametes). Mitosis in those structures then makes the gametes themselves.
 
 :::key Why meiosis is needed
 - Fertilisation joins two haploid gametes to make a diploid zygote.
@@ -377,7 +379,7 @@ A weaker answer says "meiosis mixes up the genes, so the babies are all differen
 - Homologous chromosomes **pair up** (bivalents) and cross over.
 - Bivalents line up in **pairs** in metaphase I.
 - **Homologous chromosomes** separate in anaphase I; chromatids in anaphase II.
-- Used to make gametes (or spores).
+- Used to make gametes (or spores, haploid cells of plants and fungi).
 :::
 :::
 

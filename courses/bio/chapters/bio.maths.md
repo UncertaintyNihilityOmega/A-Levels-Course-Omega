@@ -219,7 +219,7 @@ Use the formula for each piece, dividing by the initial mass. The change in mass
 
 Piece A gained 10.0% [A1]. Piece B lost 9.87%, written as \(-9.87\%\) [A1]. Piece C lost 10.0% [A1].
 
-Piece B is the smallest of the three, so its mass change of 0.38 g is the least, yet its percentage loss is about the same as C's (0.51 g). A percentage change allows a fair comparison between pieces with different starting masses.
+Piece B has the smallest starting mass (3.85 g), so its mass change of 0.38 g is the smallest, yet its percentage loss is about the same as C's (0.51 g from 5.10 g). A percentage change allows a fair comparison between pieces with different starting masses.
 :::
 
 ### Percentage error
@@ -381,7 +381,7 @@ Choose two points on the tangent far apart and find the changes in \(y\) and \(x
 
 The rate at 2 min is \(4.1\,\mathrm{cm^3\,min^{-1}}\) [A1]. The units are the unit of \(y\) divided by the unit of \(x\). [B1]
 
-At 6 min a tangent would be much flatter: its gradient is about \(1.1\,\mathrm{cm^3\,min^{-1}}\). The rate falls with time because the reactants are being used up, which is why a tangent, not the mean rate over the whole experiment, is needed to give the rate at one time.
+At 6 min a tangent would be much flatter. A tangent drawn at 6 min passes through (2, 16.4) and (10, 25.1), so its gradient is \((25.1 - 16.4) \div (10 - 2) = 1.1\,\mathrm{cm^3\,min^{-1}}\). The rate falls with time because the reactants are being used up, which is why a tangent, not the mean rate over the whole experiment, is needed to give the rate at one time.
 :::
 
 :::warn A chord is not a tangent
@@ -406,6 +406,8 @@ Biology uses logs in two main places. **pH** is a log scale: \(\mathrm{pH} = -\l
 (c) Use the \(10^x\) key.
 
 \[\begin{aligned} 10^{7.30} &= 2.0 \times 10^{7}\ \text{bacteria per cm}^3 \end{aligned}\]
+
+Logs turn multiplying into adding: \(\lg(a \times b) = \lg a + \lg b\). So multiplying the count by a fixed factor adds a fixed amount to \(\lg(\text{count})\), and a graph of \(\lg(\text{count})\) against time is a straight line when the count grows by the same factor in equal times.
 :::
 
 ## Putting it together in an exam
@@ -453,7 +455,7 @@ Q: A tangent to a curve passes through (2, 6.0) and (8, 15.0). Calculate the rat
 A: Gradient \(= (15.0 - 6.0) \div (8 - 2) = 1.5\,\mathrm{cm^3\,s^{-1}}\).
 :::
 
-The graph below is for the third question of the exam practice.
+The graph below is for the fourth question of the exam practice.
 
 :::plot Gas collected from a reaction, with a tangent at t = 3 min.
 --f "15*(1-exp(0-x/4))" --f "7.914+1.7714*(x-3)+0*sqrt(x)+0*sqrt(8-x)" --label "gas collected" --label "tangent at 3 min" --x 0 12 --y 0 20 --xlabel "time / min" --ylabel "volume of gas / cm³" --pt "3,7.91,touches at 3 min@se" --legend tr --alt "The gas volume rises steeply at first, then more slowly, and levels off near 15 cm cubed. A straight tangent touches the curve at 3 minutes at 7.9 cm cubed and rises to 16.8 cm cubed at 8 minutes."

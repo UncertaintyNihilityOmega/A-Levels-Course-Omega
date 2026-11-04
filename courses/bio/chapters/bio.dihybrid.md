@@ -83,7 +83,7 @@ All four phenotypes appear, in about equal numbers (24 : 26 : 25 : 25, close to 
 
 ## A dihybrid cross with a sex-linked gene
 
-When one of the two genes is on the X chromosome, the offspring must be sorted by sex as well as by the other gene. Do each gene on its own, then combine. In fruit flies, long wings (L) are dominant to vestigial wings (l), and the gene is on an autosome. Red eyes (\(X^R\)) are dominant to white eyes (\(X^r\)), and the gene is on the X chromosome.
+When one of the two genes is on the X chromosome, the offspring must be sorted by sex as well as by the other gene. Do each gene on its own, then combine. In fruit flies, long wings (L) are dominant to vestigial wings (l), and the gene is on an autosome (an autosome is any chromosome that is not a sex chromosome). Red eyes (\(X^R\)) are dominant to white eyes (\(X^r\)), and the gene is on the X chromosome.
 
 :::eg A heterozygous long-winged, red-eyed female fruit fly (\(Ll\,X^R X^r\)) was crossed with a long-winged, red-eyed male that is heterozygous for wing length (\(Ll\,X^R Y\)). Predict the phenotypes of the offspring, with their ratio.
 **Key**: L = long wings, l = vestigial wings; \(X^R\) = red eyes, \(X^r\) = white eyes.
@@ -94,9 +94,9 @@ Gametes: the female makes (\(L X^R\)), (\(L X^r\)), (\(l X^R\)) and (\(l X^r\));
 
 Take the genes one at a time. Wings: Ll × Ll gives 3 long : 1 vestigial in both sexes. Eyes: \(X^R X^r\) × \(X^R Y\) gives all daughters red-eyed and sons 1 red-eyed : 1 white-eyed.
 
-Female offspring: all have red eyes, with 3 long : 1 vestigial, so \(\tfrac34 \times \tfrac12 = \tfrac38\) of all offspring are long-winged red-eyed females and \(\tfrac18\) are vestigial-winged red-eyed females. [B1]
+Female offspring: all have red eyes, with 3 long : 1 vestigial, so \(\tfrac34 \times \tfrac12 = \tfrac38\) of all offspring are long-winged red-eyed females and \(\tfrac18\) are vestigial-winged red-eyed females (the \(\tfrac12\) is the share of offspring that are daughters, and all daughters have red eyes). [B1]
 
-Male offspring: the eyes are 1 red : 1 white and the wings 3 long : 1 vestigial. Out of all the offspring, \(\tfrac{3}{16}\) are long-winged red-eyed males, \(\tfrac{3}{16}\) long-winged white-eyed, \(\tfrac{1}{16}\) vestigial-winged red-eyed and \(\tfrac{1}{16}\) vestigial-winged white-eyed. [B1]
+Male offspring: the eyes are 1 red : 1 white and the wings 3 long : 1 vestigial. Half of the offspring are sons, and half of those have red eyes, so out of all the offspring, \(\tfrac{3}{16}\) (\(\tfrac34 \times \tfrac12 \times \tfrac12\)) are long-winged red-eyed males, \(\tfrac{3}{16}\) long-winged white-eyed, \(\tfrac{1}{16}\) vestigial-winged red-eyed and \(\tfrac{1}{16}\) vestigial-winged white-eyed. [B1]
 
 In sixteenths, the total ratio is 6 long red females : 2 vestigial red females : 3 long red males : 3 long white males : 1 vestigial red male : 1 vestigial white male. [B1]
 
@@ -170,6 +170,8 @@ Real results never match a ratio exactly, because fertilisation is random. 84 : 
 :::def Chi-squared test
 A statistical test that compares observed results with the results expected from a hypothesis, to find the probability that any differences between them are due to chance. It is used for counts in categories, such as numbers of offspring of each phenotype.
 :::
+
+"Significant" here means too big to be explained by chance alone. The scientist chooses a probability, \(p = 0.05\) (a 5% chance), as the cut-off.
 
 ### Hypotheses
 

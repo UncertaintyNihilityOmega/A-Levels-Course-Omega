@@ -43,6 +43,8 @@ Every homeostatic system uses the same loop of parts.
 
 :::def Stimulus, receptor, coordinator, effector
 A **stimulus** is a change in the internal or external environment. A **receptor** detects the stimulus. A **coordination system** (the nervous system or the endocrine system) carries information from the receptor to the **effector**, which is a muscle or a gland that carries out the **response**.
+
+A **hormone** is a chemical messenger made by a gland and carried in the blood; the **endocrine system** is the set of glands that make hormones. You meet both properly in the next chapter.
 :::
 
 :::html
@@ -153,7 +155,7 @@ The functional unit of the kidney: a long tube, with its associated blood vessel
 
 The parts, in the order the filtrate meets them:
 
-1. **Bowman's capsule**: a cup-shaped end of the tube in the cortex. Inside it is the **glomerulus**, a knot of capillaries. Filtrate forms here.
+1. **Bowman's capsule**: a cup-shaped end of the tube in the cortex. Inside it is the **glomerulus**, a knot of capillaries. Filtrate (the fluid filtered out of the blood; see the next section) forms here.
 2. **Proximal convoluted tubule (PCT)**: a coiled tube in the cortex, where useful substances are reabsorbed.
 3. **Loop of Henle**: a hairpin that dips into the medulla and comes back up to the cortex.
 4. **Distal convoluted tubule (DCT)**: a second coiled tube in the cortex. It adjusts the ion balance of the blood.
@@ -294,7 +296,7 @@ The cells have microvilli and many mitochondria, which give a large surface area
 (Also credit: water follows by osmosis; the cells are in contact with a capillary network that carries the glucose away.)
 :::
 
-:::eg Real context: glucose in the urine of a person with uncontrolled diabetes. Explain why.
+:::eg Real context: glucose in the urine of a person with uncontrolled diabetes. Explain why. (Diabetes is a condition in which the blood glucose concentration is not controlled and stays too high; the next chapter explains why.)
 In a person whose blood glucose is far above normal, the glomerular filtrate has a very high concentration of glucose, because glucose passes through the filter freely. [B1]
 
 The PCT has a limited number of cotransporter and carrier proteins, and when all of them are working at their maximum rate, they are saturated. [B1]
@@ -321,6 +323,8 @@ If you sweat a lot, or eat a salty meal, the water potential of your blood **fal
 :::def Antidiuretic hormone (ADH)
 A peptide hormone made in the hypothalamus and released from the posterior pituitary gland. It makes the collecting ducts more permeable to water, so more water is reabsorbed and a smaller volume of more concentrated urine is made.
 :::
+
+The **pituitary gland** is a small gland hanging from the base of the brain just below the hypothalamus; its rear part is the **posterior pituitary**. **Neurosecretory cells** are nerve cells that release a hormone into the blood instead of a neurotransmitter: ADH is made in their cell bodies in the hypothalamus and passes down their axons to the posterior pituitary.
 
 The roles of the different parts:
 

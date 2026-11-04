@@ -41,6 +41,12 @@ o2_g = float(o2_needed(6, 12, 6)) / M_glucose
 o2_t = float(o2_needed(51, 98, 6)) / M_tripalm
 eq("tripalmitin O2 per g vs glucose", round(o2_t / o2_g, 1), 2.7)
 eq("tripalmitin O2 coefficient", float(o2_needed(51, 98, 6)), 72.5)
+eq("tripalmitin O2 mol per g", round(72.5 / 806, 3), 0.090)
+eq("glucose O2 mol per g", round(6 / 180, 3), 0.033)
+eq("RQ plot day 4", 44 / 55, 0.8)
+eq("RQ plot day 6", 63 / 70, 0.9)
+eq("RQ plot line at day 4", round(0.6 + 0.05 * 4, 2), 0.8)
+eq("RQ plot line at day 6", round(0.6 + 0.05 * 6, 2), 0.9)
 eq("energy value ratio lipid/carb (about 2.4)", round(39 / 16, 1), 2.4)
 
 # --- energy example -----------------------------------------------------------------------------------

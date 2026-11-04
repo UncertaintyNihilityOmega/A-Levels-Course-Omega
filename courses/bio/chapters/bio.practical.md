@@ -34,7 +34,7 @@ The marks are for skills, not for facts:
 
 Half of the candidates in a session start on the microscope question and half on the investigation. With 40 marks in 120 minutes, you have about 3 minutes for each mark. In June 2024 (paper 9700/32) there were two questions, with 21 and 19 marks, and the second was the microscope and photomicrograph question.
 
-You cannot set up the apparatus at home, so this chapter teaches the decisions behind each step. A running example appears throughout: a protease (a protein-digesting enzyme) is added to a cloudy suspension of milk protein, and the milk clears as the protein is hydrolysed. The question is how temperature changes the time for the milk to clear. The equipment in a typical Paper 3 investigation is ordinary laboratory equipment: beakers, test-tubes and a rack, measuring cylinders, syringes or graduated pipettes, a thermometer, a stopwatch, a water bath or beaker of water, a balance, a ruler, glass rods, labels, stains and reagents (the full list is in the syllabus). Read every question first, note the times you are given, and follow the numbered instructions exactly.
+You cannot set up the apparatus at home, so this chapter teaches the decisions behind each step. A running example appears throughout: a protease (a protein-digesting enzyme) is added to a cloudy suspension of milk protein, and the milk clears as the protein is hydrolysed. A boiling tube of the mixture stands over a cross drawn on a card; the milk has cleared when the cross can first be seen from above. The question is how temperature changes the time for the milk to clear. The equipment in a typical Paper 3 investigation is ordinary laboratory equipment: beakers, test-tubes and a rack, measuring cylinders, syringes or graduated pipettes, a thermometer, a stopwatch, a water bath or beaker of water, a balance, a ruler, glass rods, labels, stains and reagents (the full list is in the syllabus). Read every question first, note the times you are given, and follow the numbered instructions exactly.
 
 ## Planning the decisions of an investigation
 
@@ -111,7 +111,7 @@ So put 2.5 cm³ of stock in a measuring cylinder or syringe and add water to a t
 | 0.40 | 10.0 | 10.0 |
 | 0.50 | 12.5 | 7.5 |
 
-Label each container and mix gently. Use a separate clean syringe or pipette for each solution (or work from the most dilute to the most concentrated) so that a carry-over does not change the concentrations.
+Label each container and mix gently. Use a separate clean syringe or pipette for each solution (or work from the most dilute to the most concentrated) so that a little of the previous solution left in the syringe or pipette does not change the next concentration (this is called carry-over).
 :::
 
 **Serial dilution**: each solution is made from the previous one, using the same dilution factor each time. It is quick and uses small volumes. A tenfold serial dilution takes 1 cm³ of the solution and 9 cm³ of water, which divides the concentration by 10 each time. The solutions made from a 2.0% protease solution are 0.20%, 0.020% and 0.0020%. A halving series, with 5 cm³ of solution and 5 cm³ of water each time, is in [Testing for biological molecules](#bio.foodtests).
@@ -132,7 +132,7 @@ The manipulation marks are for doing what you are told, accurately, and for reco
 
 **Judging an end point**. When the end point is a colour or cloudiness change, the judgement is subjective. Make it more objective by comparing the tube with a **standard**: a tube that shows the end point (for example 6 cm³ of water for "completely clear"), or a mark seen through the tube. In the running example, a cross drawn on a card is put under a boiling tube, and the end point is the moment the cross can first be seen clearly from above. Always use the same tube, the same card and the same lighting.
 
-**Reading instruments**. Read a liquid in a measuring cylinder at the bottom of the meniscus, with your eye level with the surface. Read a syringe at the same mark of the plunger each time. Record readings to the precision of the instrument: if a ruler is marked in mm, a length is recorded to the nearest mm (or 0.1 cm); a balance reading to 0.01 g gives masses with 2 decimal places. Use the same number of decimal places for every reading of the same quantity.
+**Reading instruments**. Read a liquid in a measuring cylinder at the bottom of the meniscus, with your eye level with the surface. Read a syringe at the same mark of the plunger each time. Record readings to the precision of the instrument (how finely it reads): if a ruler is marked in mm, a length is recorded to the nearest mm (or 0.1 cm); a balance reading to 0.01 g gives masses with 2 decimal places. Use the same number of decimal places for every reading of the same quantity.
 
 **Observations**. A qualitative observation is a description, so it needs to be clear: "the solution changed from blue to orange" or "a brick-red precipitate formed", not "it changed colour" or "it went clear" when a colour has actually faded. Record colours before and after, and the time or temperature if relevant.
 
@@ -317,6 +317,10 @@ An error that varies unpredictably from one reading to the next, so repeating th
 An error that is the same in every reading, in the same direction, so that all the results are too high or all too low. Repeating the measurement does not remove it. It may not change the trend, but it affects the accuracy.
 :::
 
+:::def Accuracy and precision
+**Accuracy** is how close a result is to the true value (a systematic error lowers it). **Precision** is how closely repeated readings agree, or how finely an instrument reads (a syringe marked every 0.01 cm³ is more precise than one marked every 0.2 cm³).
+:::
+
 Judging the end point by eye gives random error: sometimes you call it early, sometimes late. A thermometer that reads 2 °C too high gives a systematic error in every temperature, and the pattern (rise, peak, fall) is unchanged, although the optimum shifts. A tube that is not left in the bath long enough gives a systematic error in the direction of a too-low temperature for every tube.
 
 **"Human error" is not an acceptable source of error**, because it is not specific. Name the actual measurement: "the judgement of when the cross becomes visible is subjective", "the temperature of the bath fell while the tubes were out", "the protease was measured with a 10 cm³ syringe marked every 0.2 cm³, so its uncertainty (±0.1 cm³) is 10% of the 1.0 cm³ used".
@@ -446,7 +450,7 @@ A: (a) Means: A \(= 52\) s and B \(= 56\) s. \((56 - 52) \div 52 \times 100\) [M
 (b) The difference between the means (4 s) is smaller than the uncertainty of the end point (±5 s). [B1]
 The replicates overlap (A from 49 to 55 s and B from 52 to 60 s), so the difference could be caused by the scatter of the results. [B1]
 (c) Any two from: more replicates; a more objective end point such as a colorimeter reading; a standard tube to compare with; the same person judging every tube. [B1] [B1]
-Q: [6 marks] ★★★ A respirometer contains germinating seeds of mass 2.50 g. Carbon dioxide made by the seeds is absorbed by soda lime, so the coloured liquid in a capillary tube moves towards the seeds as oxygen is used up. The liquid moved 18 mm in 10 min. The capillary tube has an internal diameter of 1.0 mm. (a) Calculate the rate of oxygen uptake in mm³ per gram of seeds per minute. (b) State the purpose of a second tube with glass beads of the same volume as the seeds. (c) The temperature of the room rose during the investigation. Explain the effect on the results and suggest an improvement.
+Q: [6 marks] ★★★ A respirometer is a sealed tube of germinating seeds (mass 2.50 g) joined to a horizontal capillary tube holding a drop of coloured liquid; living seeds use up oxygen in respiration, which you meet in a later chapter. A pad of soda lime in the tube absorbs the carbon dioxide the seeds make, so the gas volume falls only because oxygen is used, and the coloured liquid moves towards the seeds. The liquid moved 18 mm in 10 min. The capillary tube has an internal diameter of 1.0 mm. (a) Calculate the rate of oxygen uptake in mm³ per gram of seeds per minute. (b) State the purpose of a second tube with glass beads of the same volume as the seeds. (c) The temperature of the room rose during the investigation. Explain the effect on the results and suggest an improvement.
 H: The volume of gas is the volume of a cylinder of the capillary tube with a length equal to the distance moved.
 A: (a) Volume \(= \pi r^2 h = \pi \times 0.50^2 \times 18\) [M1] \(= 14.1\,\mathrm{mm^3}\) in 10 min, so \(14.137 \div 10 \div 2.50\) [M1] \(= 0.57\,\mathrm{mm^3\,g^{-1}\,min^{-1}}\) [A1]
 (b) It is a control: it shows any movement of the liquid caused by changes in the temperature or the pressure of the room, not by the seeds. [B1]

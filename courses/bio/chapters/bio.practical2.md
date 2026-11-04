@@ -116,7 +116,7 @@ Multiply each measurement by the scale.
 
 \[\begin{aligned} \text{pith radius} &= 18 \times 1.5 \\ &= 27\,\mathrm{mm} \end{aligned}\]
 
-The ring of tissue between the cortex and the pith (which contains the vascular bundles) is \(40 - 12 - 18 = 10\) units wide, so \(10 \times 1.5 = 15\) mm on the drawing. A check: \(18 + 27 + 15 = 60\) mm, the radius of the drawing.
+Working outwards from the centre, the order is the pith, then a ring of vascular bundles, then the cortex. The epidermis is a single thin layer, so on a plan diagram it is drawn as the outline of the section and not as a region of its own. The ring of tissue between the pith and the cortex (which contains the vascular bundles) is \(40 - 12 - 18 = 10\) units wide, so \(10 \times 1.5 = 15\) mm on the drawing. A check: \(18 + 27 + 15 = 60\) mm, the radius of the drawing.
 :::
 
 :::eg Spot the error: a student looked at drawing B in the figure above and wrote the following comments about their own plan diagram of a stem. Find what is wrong with each comment. [4]
@@ -198,7 +198,7 @@ Paper 3 can use any of the specimens in the syllabus. This list of features tell
 | onion epidermis | rectangular cells fitting together, each with a cell wall, a nucleus and a large vacuole |
 | potato tissue | cells containing oval starch grains that stain blue-black with iodine |
 | cheek cells | small, flat, irregular cells, each with a nucleus and a cell surface membrane but no wall |
-| anther TS | a section with pollen sacs (usually four) containing pollen grains |
+| anther TS (the anther is the part of a flower that makes pollen grains) | a section with pollen sacs (usually four) containing pollen grains |
 
 If you cannot identify a specimen, describe what you see. Examiners mark the observation, and a good drawing of an unfamiliar tissue still scores.
 

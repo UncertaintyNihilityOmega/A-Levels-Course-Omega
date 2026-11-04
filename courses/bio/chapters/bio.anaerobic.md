@@ -312,7 +312,7 @@ Q: [6 marks] ★★ The table shows the time for methylene blue to be decolouris
 | 8 | 160 |
 | 10 | 155 |
 
-(a) Calculate the rate of respiration at 4% and at 10% glucose, in standard form. (b) Describe the effect of glucose concentration on the rate. (c) Explain the shape of the graph between 8% and 10% glucose.
+(a) Calculate the rate of respiration at 4% and at 10% glucose, in standard form. (b) Describe the effect of glucose concentration on the rate. (c) Explain why the rate hardly changes between 8% and 10% glucose.
 H: Rate \(= 1/t\).
 H: For (c), which factor is limiting when the rate stops rising?
 A: (a) Rate \(= 1/t\) [M1]; at 4%: \(1/310 = 3.23 \times 10^{-3}\,\mathrm{s^{-1}}\) [A1]; at 10%: \(1/155 = 6.45 \times 10^{-3}\,\mathrm{s^{-1}}\) [A1]
@@ -351,13 +351,13 @@ A: (a) (i) \(150 \div 30 = 5.0\,\mathrm{mmol}\) [M1] [A1]
 (b) Ethanol \(= 75 \times 2 = 150\,\mathrm{mmol}\) [A1]
 (c) Without oxygen, only glycolysis makes ATP (net 2 per glucose), because oxidative phosphorylation cannot work. [B1]
 The glucose is only partly oxidised, so most of its energy is still in the ethanol and is not used to make ATP. [B1]
-Q: [5 marks] ★★★ The crucian carp, a fish, can live for months in ponds under ice with almost no oxygen. Its muscle cells make **ethanol** in these conditions, and the ethanol diffuses out through the gills into the water. (a) Suggest what the muscle cells must be able to do that the muscle cells of mammals and of most other fish cannot. (b) Suggest why making ethanol, not lactate, is an advantage in the pond. (c) Predict how the amount of carbon dioxide released by the fish changes.
+Q: [5 marks] ★★★ The crucian carp, a fish, can live for months in ponds under ice with almost no oxygen. Its muscle cells make **ethanol** in these conditions, and the ethanol diffuses out through the gills into the water. (a) Suggest what the muscle cells must be able to do that the muscle cells of mammals and of most other fish cannot. (b) Suggest why making ethanol, not lactate, is an advantage in the pond. (c) Predict how the amount of carbon dioxide released by the fish compares with that released by a fish that makes lactate in the same conditions.
 H: Compare the two pathways in the table: which has an extra step?
 H: What happens to lactate that cannot be removed?
 A: (a) They can decarboxylate pyruvate to ethanal, and reduce ethanal to ethanol using alcohol dehydrogenase. [B1]
 (b) Ethanol is a small molecule that can leave the body through the gills, so it does not accumulate. [B1]
 Lactate cannot be removed without oxygen, so it would build up and lower the pH, which would reduce the activity of enzymes and stop the muscles. [B1]
-(c) Carbon dioxide is released when ethanal is made, [B1] so the fish releases some carbon dioxide even without oxygen. [B1]
+(c) Carbon dioxide is released when ethanal is made, [B1] so the fish releases more carbon dioxide than a fish that makes lactate, which releases none in this pathway. [B1]
 :::
 
 :::quiz
