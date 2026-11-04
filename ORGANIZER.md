@@ -44,8 +44,10 @@ There is no CLAUDE.md at the root: course sessions would load it. Start every Or
 1. `node engine/status.js`; answer open REQUESTS.md lines.
 2. `node engine/check.js --py` and `node engine/build.js --strict`; `node courses/<c>/kit/zta.js phone` for each
    changed course. Fix engine problems; send course problems back through REVIEW.md or REQUESTS.md.
-3. Spot-check the site ("site" launch config): a new chapter per course, a widget, dark mode, phone width, search.
-4. Update ROADMAP.md "Now", commit, push.
+3. Each course with `:::links` boxes needs a links page: `core/tools.l.<c>.md`, its Toolbox entry and `linkSheets` line
+   in `core/core.json`, and a link from `core/road.resources.md`; then `node engine/sync.js`.
+4. Spot-check the site ("site" launch config): a new chapter per course, a widget, dark mode, phone width, search.
+5. Update ROADMAP.md "Now", commit, push.
 
 ## Environment (Windows PC)
 

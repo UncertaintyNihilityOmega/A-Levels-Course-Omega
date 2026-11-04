@@ -60,6 +60,8 @@ Every Maths chapter in this guide ends with a short "Learn more online" list pic
 
 For the practical papers, use your subject's practical chapter here and the examiner reports, which describe exactly how marks were lost in tables, graphs and evaluations.
 
+[Physics: learn more online](#tools.l.phys) and [Chemistry: learn more online](#tools.l.chem) gather the links from the chapters in this guide, one page per subject, grouped by topic and by kind.
+
 ## Biology
 
 | Resource | Best for | Cost |
@@ -69,6 +71,8 @@ For the practical papers, use your subject's practical chapter here and the exam
 | **Physics & Maths Tutor** | Notes, flashcards and topic questions for Biology too | Free |
 | **Seneca** | Interactive revision for many A Level specifications | Free and paid |
 | **Cognito** | Short videos and quizzes, mainly at GCSE level; good for fixing foundations | Mostly free |
+
+Every Biology topic chapter in this guide ends with a short "Learn more online" list picked for that topic. [Biology: learn more online](#tools.l.bio) gathers all of them on one page, grouped by topic and by kind.
 
 ## Business and Economics
 
