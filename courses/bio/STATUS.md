@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-11-04 · FIX · READER bio.stats to bio.mixed.a2: 18 items closed (stats count type, df for correlation, sum xy, t-test variances; planning single Precision def, risk grid, confounding def, n=15 Spearman, glosses; evaluation, exam guides, mixed.as summary, mixed.a2 type 2 and smallest-first ranking)
+Last: 2026-11-04 · REVIEW FINAL · Spot-checked the FIX rounds, mock facts and links; fixed a stray block close, a colour-only plot, the two-sense precision definition, the t-test sample wording and small wording slips in 5 chapters; 0 open items
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -30,4 +30,4 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P23: reviewed 2026-10-30
 - P24: reviewed 2026-10-30
 - READER: done 2026-11-04
-- FINAL: open
+- FINAL: done 2026-11-04

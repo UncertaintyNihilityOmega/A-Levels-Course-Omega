@@ -198,7 +198,7 @@ A statistical test used to compare the means of **two samples** of continuous da
 - The data are **continuous** measurements (length, mass, time), not categories or counts in classes.
 - Each sample is taken from a population that is approximately **normally distributed**.
 - The two samples have **similar standard deviations**.
-- The samples are chosen at random. It can be used with fewer than 30 values in each sample.
+- The samples are chosen at random. The test suits small samples (under 30 values in each).
 
 If the data are in categories (for example the number of red and white flowers), a different test is needed: the chi-squared test in [Dihybrid crosses and the chi-squared test](#bio.dihybrid).
 

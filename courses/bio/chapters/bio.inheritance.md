@@ -315,7 +315,7 @@ A pedigree is a family tree for one characteristic. In the exam you are given on
 :::key Reading a pedigree
 1. **Two unaffected parents have an affected child**: the condition is caused by a **recessive** allele, and both parents are carriers (heterozygous).
 2. **Two affected parents have an unaffected child**: the condition is caused by a **dominant** allele, and both parents are heterozygous.
-3. **An affected female whose father is unaffected**: the condition cannot be X-linked recessive. (A daughter of an X-linked recessive condition gets her father's X chromosome, so he must be affected too.) So it is **autosomal**.
+3. **An affected female whose father is unaffected**: the condition cannot be X-linked recessive. (An affected daughter has the recessive allele on both X chromosomes, and one of them came from her father, so he must be affected too.) So it is **autosomal**.
 4. **An affected father and an affected son**: if the mother is not affected and is not a carrier, the son must have had the allele from his father, so it is not X-linked (a son gets his Y, not his X, from his father) and the condition is **autosomal**. If the mother could be a carrier, X-linked is still possible, because the son may have had the allele from her.
 5. If many more males than females are affected, and affected males are born to unaffected parents, **X-linked recessive** inheritance is likely.
 :::

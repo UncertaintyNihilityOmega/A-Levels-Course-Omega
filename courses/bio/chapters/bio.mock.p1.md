@@ -149,7 +149,7 @@ A: **C** [B1] Glycine has the smallest R group, which lets the three polypeptide
 :::
 
 :::try
-Q: [1 mark] (#bio.enzymes) Without an enzyme, the reactants in a reaction must gain 80 kJ mol⁻¹ before they can react, and the products have 20 kJ mol⁻¹ less energy than the reactants. With an enzyme the reactants must gain only 50 kJ mol⁻¹. Which row shows the effect of the enzyme?
+Q: [1 mark] (#bio.enzymes) Without an enzyme, the reactants in a reaction must gain 80 kJ mol⁻¹ before they can react, and the products have 20 kJ mol⁻¹ less energy than the reactants. With an enzyme the reactants must gain only 50 kJ mol⁻¹. Which statement shows the effect of the enzyme?
 
 **A** The activation energy is 50 kJ mol⁻¹ lower and the energy released is 20 kJ mol⁻¹ greater.
 
@@ -235,7 +235,7 @@ A: **D** [B1] Statements 1 and 2 are correct; the heads are hydrophilic and face
 Q: [1 mark] (#bio.movement) Red blood cells were put into solutions with different concentrations of two substances, P and Q. The uptake of both substances was the same when respiration was stopped. The graph shows the rate of uptake. Which statement is correct?
 
 :::plot Rate of uptake of two substances, P and Q, by red blood cells at different concentrations outside the cells.
---f "0.8*x" --f "12*x/(2+x)" --label "P" --label "Q" --x 0 10 --y 0 14 --ystep 5 --xlabel "concentration outside the cell / mmol dm⁻³" --ylabel "rate of uptake / au" --alt "Two curves of the rate of uptake against the concentration outside the cell, from 0 to 10 mmol per cubic decimetre. Curve P rises in a straight line from 0 to 8 arbitrary units. Curve Q rises steeply from 0 and then flattens, reaching 6 units at a concentration of 2 and 10 units at a concentration of 10."
+--f "0.8*x" --f "12*x/(2+x)" --label "P" --label "Q" --pt "8,6.4,P@se" --pt "8,9.6,Q@n" --x 0 10 --y 0 14 --ystep 5 --xlabel "concentration outside the cell / mmol dm⁻³" --ylabel "rate of uptake / au" --alt "Two curves of the rate of uptake against the concentration outside the cell, from 0 to 10 mmol per cubic decimetre. Curve P rises in a straight line from 0 to 8 arbitrary units. Curve Q rises steeply from 0 and then flattens, reaching 6 units at a concentration of 2 and 10 units at a concentration of 10."
 :::
 
 **A** Q enters by simple diffusion, because its rate increases as the concentration increases.
@@ -315,7 +315,6 @@ Q: [1 mark] (#bio.mitosis) The drawing shows a cell during mitosis. Which stage 
 
 **D** anaphase; 8 DNA molecules
 A: **C** [B1] The chromosomes lined up across the equator, attached to spindle fibres, show metaphase; each of the 4 chromosomes has 2 sister chromatids, one DNA molecule in each, so there are 8 DNA molecules (in prophase there is a nuclear envelope; in anaphase the chromatids are being pulled apart).
-:::
 :::
 
 :::try
@@ -459,7 +458,7 @@ A: **B** [B1] Hydrogencarbonate ions leave the red blood cell by facilitated dif
 :::
 
 :::try
-Q: [1 mark] (#bio.gasexchange) During an asthma attack the bronchioles become narrower and air flows through them less easily. Which row explains the narrowing?
+Q: [1 mark] (#bio.gasexchange) During an asthma attack the bronchioles become narrower and air flows through them less easily. Which statement explains the narrowing?
 
 **A** The elastic fibres contract and the lining makes extra mucus.
 

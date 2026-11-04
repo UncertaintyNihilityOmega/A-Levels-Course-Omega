@@ -318,7 +318,7 @@ An error that is the same in every reading, in the same direction, so that all t
 :::
 
 :::def Accuracy and precision
-**Accuracy** is how close a result is to the true value (a systematic error lowers it). **Precision** is how closely repeated readings agree, or how finely an instrument reads (a syringe marked every 0.01 cm³ is more precise than one marked every 0.2 cm³).
+**Accuracy** is how close a result is to the true value (a systematic error lowers it). **Precision** is how closely repeated readings agree. How finely an instrument reads is its **resolution**, also called the precision of the instrument: a syringe marked every 0.01 cm³ reads more finely than one marked every 0.2 cm³.
 :::
 
 Judging the end point by eye gives random error: sometimes you call it early, sometimes late. A thermometer that reads 2 °C too high gives a systematic error in every temperature, and the pattern (rise, peak, fall) is unchanged, although the optimum shifts. A tube that is not left in the bath long enough gives a systematic error in the direction of a too-low temperature for every tube.

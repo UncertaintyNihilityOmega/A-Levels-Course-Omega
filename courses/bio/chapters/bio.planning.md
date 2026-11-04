@@ -102,9 +102,9 @@ A variable that changes along with the independent variable, so that its effect 
 A treatment in which the independent variable is absent or at a baseline value, but everything else is the same, so that any change in the dependent variable can be attributed to the independent variable.
 :::
 
-A variable must be **precise**. "The amount of enzyme" does not say whether it is volume, mass or concentration; "the volume of 1.0% amylase solution, 2.0 cm³" does.
+A variable must be **specific**. "The amount of enzyme" does not say whether it is volume, mass or concentration; "the volume of 1.0% amylase solution, 2.0 cm³" does.
 
-| vague (no mark) | precise (mark) |
+| vague (no mark) | specific (mark) |
 |---|---|
 | the amount of water | 10 cm³ of distilled water, measured with a syringe |
 | the temperature | 25 °C, kept in a thermostatically controlled water bath and checked with a thermometer |
@@ -136,7 +136,7 @@ How close a measured value is to the true value.
 :::
 
 :::def Precision
-How close repeated measurements are to each other. (How fine an instrument's scale is, such as 0.1 g or 0.01 g, is called its **resolution**; it is a different idea.)
+How close repeated measurements are to each other. (How fine an instrument's scale is, such as 0.1 g or 0.01 g, is called its **resolution**, or the precision of the instrument, as in "measure to a suitable precision"; it is a different idea from how close repeated readings are.)
 :::
 
 :::def Repeatability
@@ -298,7 +298,7 @@ The chance that a hazard actually causes harm, taking into account how severe th
 
 A simple risk assessment names the **hazard**, says who or what could be harmed and **how severe** the harm would be, estimates how **likely** it is, and gives a specific **precaution**. The same chemical is a smaller risk in dilute solution than in concentrated solution, and "be careful" or "wear goggles" is not enough on its own.
 
-Combine the two ratings with a grid. Score severity as minor 1, moderate 2, severe 3, and probability as low 1, medium 2, high 3; multiply. A product of 1 or 2 is a **low** risk, 3 or 4 is **medium**, and 6 or 9 is **high**.
+Combine the two ratings with a grid. Score severity as minor 1, moderate 2, severe 3, and probability as low 1, medium 2, high 3; multiply. A product of 1 or 2 is a **low** risk, 3 or 4 is **medium**, and 6 or 9 is **high**. The scores are only this course's way of staying consistent: in the exam, give the severity, the probability and the risk in words (low, medium or high), not a score.
 
 | severity \ probability | low | medium | high |
 |---|---|---|---|
