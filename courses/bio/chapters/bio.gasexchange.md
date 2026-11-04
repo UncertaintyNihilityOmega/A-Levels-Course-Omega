@@ -86,7 +86,7 @@ Only the alveoli are exchange surfaces. The trachea, bronchi and bronchioles are
 
 ## The tissues in the walls of the airways
 
-You need to know six tissues, and also where each is found. First, what each one is.
+You need to know six tissues, and also where each is found. First, what each one is. An epithelium is a sheet of cells that lines a surface or tube; connective tissue is a tissue that supports and joins other tissues, and its matrix is the non-living material the cells sit in.
 
 :::def Cartilage
 A firm but flexible connective tissue made of a smooth, glassy matrix (with collagen fibres in it) with a few cells in small spaces. In the airways it supports the wall and keeps the tube open.
@@ -213,7 +213,7 @@ The alveoli are where oxygen enters the blood. Each feature of the wall solves o
 
 **The route of oxygen.** Oxygen diffuses from the air in the alveolus, down its concentration gradient, through:
 1. the **squamous epithelial cell** of the alveolus,
-2. the fused basement membranes between the two layers,
+2. the fused basement membranes between the two layers (a basement membrane is a very thin, non-living layer of fibres under a sheet of cells, which holds the cells in place),
 3. the **squamous endothelial cell** of the capillary,
 4. the **plasma**, and then into a **red blood cell**, where it binds to haemoglobin (see [Transport of oxygen and carbon dioxide](#bio.oxygen)).
 
@@ -375,7 +375,7 @@ A: A bronchus (separate plates of cartilage with a muscle ring; the trachea has 
 :::
 
 :::try Exam practice ★ to ★★★
-Q: [3 marks] ★ Complete the table with a tick (✓) where the tissue is present and a cross (✗) where it is absent.
+Q: [3 marks] ★ Complete the table with a tick (✓) where the tissue is present and a cross (✗) where it is absent. Tick if the cells are found in any part of that airway.
 
 | tissue | trachea | bronchiole | alveolus |
 |---|---|---|---|
@@ -384,7 +384,7 @@ Q: [3 marks] ★ Complete the table with a tick (✓) where the tissue is presen
 | squamous epithelium | | | |
 
 A: cartilage: trachea ✓, bronchiole ✗, alveolus ✗ [B1]
-goblet cells: trachea ✓, bronchiole ✗ (or a few in the larger ones), alveolus ✗ [B1]
+goblet cells: trachea ✓, bronchiole ✓ (a few in the larger ones), alveolus ✗ [B1]
 squamous epithelium: trachea ✗, bronchiole ✗, alveolus ✓ [B1]
 Q: [3 marks] ★ Describe how the cilia and goblet cells keep the lungs healthy.
 A: Goblet cells secrete mucus that traps dust and bacteria. [B1]

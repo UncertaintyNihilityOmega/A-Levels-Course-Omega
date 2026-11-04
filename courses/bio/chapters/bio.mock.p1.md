@@ -55,16 +55,20 @@ A: **D** [B1] Mitochondria and chloroplasts contain small circular DNA and 70S r
 :::
 
 :::try
-Q: [1 mark] (#bio.prokaryotes) Which statement about a bacterial cell is correct?
+Q: [1 mark] (#bio.prokaryotes) The drawing was made from an electron micrograph of a cell. Structure X is a ring of DNA. Ignore the filament when you measure the length of the cell. Which statement about the cell is correct?
 
-**A** It has a nucleus surrounded by a double membrane.
+:::html
+<figure class="fig small"><svg viewBox="0 0 340 200" role="img" aria-label="A drawing from an electron micrograph of a small rod-shaped cell with a thick outer wall. Inside, a ring-shaped structure labelled X lies in the cytoplasm among many small dots, and a long wavy filament extends from one end. A scale bar below the cell is labelled 1 µm."><rect class="fp ln sw3" x="100" y="60" width="120" height="64" rx="30"/><path class="c1 sw2" d="M175 92L174 96L171.2 99.6L166.8 102.5L161.2 104.4L155 105L148.8 104.4L143.2 102.5L138.8 99.6L136 96L135 92L136 88L138.8 84.4L143.2 81.5L148.8 79.6L155 79L161.2 79.6L166.8 81.5L171.2 84.4L174 88Z"/><circle class="f3 s-acc" cx="130" cy="72" r="2.2"/><circle class="f3 s-acc" cx="142" cy="112" r="2.2"/><circle class="f3 s-acc" cx="190" cy="72" r="2.2"/><circle class="f3 s-acc" cx="200" cy="95" r="2.2"/><circle class="f3 s-acc" cx="192" cy="114" r="2.2"/><circle class="f3 s-acc" cx="128" cy="96" r="2.2"/><circle class="f3 s-acc" cx="166" cy="114" r="2.2"/><circle class="f3 s-acc" cx="170" cy="74" r="2.2"/><path class="c2 sw2" d="M220 92L225 96.2L230 99.1L235 100L240 98.5L245 95.1L250 90.7L255 86.8L260 84.4L265 84.2L270 86.4L275 90.2L280 94.5L285 98.1L290 99.9"/><path class="ln-m thin" d="M155 41L155 78"/><text class="tl tb" x="155" y="36" text-anchor="middle">X</text><path class="ln sw2" d="M100 160L148 160"/><path class="ln sw2" d="M100 155L100 165"/><path class="ln sw2" d="M148 155L148 165"/><text class="tl" x="124" y="183" text-anchor="middle">1 µm</text></svg><figcaption>A cell drawn from an electron micrograph. The scale bar is 1 µm.</figcaption></figure>
+:::
 
-**B** It has a wall made of peptidoglycan and ribosomes that are smaller than those in the cytoplasm of a eukaryotic cell.
+**A** It is a eukaryotic cell about 2.5 µm long, because it has a cell wall.
 
-**C** It is generally 10 µm to 50 µm in diameter.
+**B** It is a prokaryotic cell about 2.5 µm long, because its DNA is not enclosed by a nuclear envelope.
 
-**D** It makes ATP in mitochondria.
-A: **B** [B1] Bacteria have 70S ribosomes (smaller than the 80S ribosomes in the cytoplasm of eukaryotes) and a peptidoglycan wall; they are generally 1–5 µm and have no double-membrane organelles.
+**C** It is a prokaryotic cell about 25 µm long, because it has a filament.
+
+**D** It is a eukaryotic cell about 0.25 µm long, because it contains ribosomes.
+A: **B** [B1] The cell body is 2.5 times as long as the 1 µm scale bar, so it is about 2.5 µm long, and the DNA lies free in the cytoplasm, so it is prokaryotic (a cell wall, ribosomes and a filament are also found in some eukaryotes; C and D are slips of a factor of ten).
 :::
 
 :::try
@@ -81,16 +85,16 @@ A: **A** [B1] RER makes proteins, the Golgi body modifies and packages them, and
 :::
 
 :::try
-Q: [1 mark] (#bio.carbs) Which statement about cellulose is correct?
+Q: [1 mark] (#bio.carbs) A plant cell is placed in pure water and water enters it by osmosis, but the cell does not burst. Which feature of cellulose in the cell wall explains this?
 
-**A** It is made of α-glucose joined by 1,4 and 1,6 glycosidic bonds.
+**A** Its molecules are branched, so the wall stretches as the cell swells.
 
-**B** It is highly branched, so it has many ends from which glucose can be removed.
+**B** Its molecules are soluble, so water passes through the wall quickly.
 
-**C** Hydrogen bonds between parallel chains hold them together in microfibrils.
+**C** Hydrogen bonds between its parallel chains form microfibrils with a high tensile strength.
 
-**D** It is a soluble storage molecule in plant cells.
-A: **C** [B1] Cellulose is made of β-glucose in straight, unbranched chains; hydrogen bonds between neighbouring chains form strong microfibrils in the cell wall (A and B describe glycogen and starch).
+**D** Its chains of α-glucose coil into helices that spring back.
+A: **C** [B1] Straight chains of β-glucose are held together by many hydrogen bonds in microfibrils that resist stretching, so the wall stops the cell expanding (cellulose is insoluble, unbranched and made of β-glucose).
 :::
 
 :::try
@@ -132,29 +136,29 @@ A: **A** [B1] Each chain of \(n\) amino acids has \(n - 1\) peptide bonds: \(20 
 :::
 
 :::try
-Q: [1 mark] (#bio.proteins) Which statement about collagen is correct?
+Q: [1 mark] (#bio.proteins) A mutation in the gene for collagen replaces one glycine in a polypeptide with an amino acid that has a much larger R group. What is the most likely effect on the collagen molecule?
 
-**A** It is made of four polypeptides, each with a haem group.
+**A** The polypeptide cannot be made, because the new amino acid cannot form a peptide bond.
 
-**B** It is a globular protein that is soluble in water.
+**B** The collagen becomes a soluble globular protein.
 
-**C** Every third amino acid is glycine, which allows three polypeptides to coil tightly into a triple helix.
+**C** The three polypeptides cannot pack as closely, so the triple helix is less stable.
 
-**D** Its molecules are held apart by hydrophilic R groups on the outside of the fibre.
-A: **C** [B1] The small R group of glycine allows close packing of the three chains; A describes haemoglobin and B is wrong because collagen is fibrous and insoluble.
+**D** The primary structure of the polypeptide is unchanged, because only an R group has changed.
+A: **C** [B1] Glycine has the smallest R group, which lets the three polypeptides pack closely; a larger R group prevents this (the new amino acid still forms a peptide bond, and replacing an amino acid changes the primary structure).
 :::
 
 :::try
-Q: [1 mark] (#bio.enzymes) How does an enzyme increase the rate of a reaction?
+Q: [1 mark] (#bio.enzymes) Without an enzyme, the reactants in a reaction must gain 80 kJ mol⁻¹ before they can react, and the products have 20 kJ mol⁻¹ less energy than the reactants. With an enzyme the reactants must gain only 50 kJ mol⁻¹. Which row shows the effect of the enzyme?
 
-**A** It increases the kinetic energy of the substrate molecules.
+**A** The activation energy is 50 kJ mol⁻¹ lower and the energy released is 20 kJ mol⁻¹ greater.
 
-**B** It supplies energy to the reaction from the enzyme.
+**B** The activation energy is 30 kJ mol⁻¹ lower and the energy released is 30 kJ mol⁻¹ greater.
 
-**C** It changes the energy of the products so that they are lower.
+**C** The activation energy is 50 kJ mol⁻¹ lower and the energy released is unchanged.
 
-**D** It lowers the activation energy by forming enzyme–substrate complexes.
-A: **D** [B1] The enzyme provides an active site that holds the substrate in a position that makes the reaction easier, which lowers the activation energy.
+**D** The activation energy is 30 kJ mol⁻¹ lower and the energy released is unchanged.
+A: **D** [B1] The activation energy falls from 80 to 50 kJ mol⁻¹, a fall of 30 kJ mol⁻¹; an enzyme does not change the energy of the reactants or the products, so the 20 kJ mol⁻¹ released is the same.
 :::
 
 :::try
@@ -194,16 +198,25 @@ A: **C** [B1] A lower Km means that half of Vmax is reached at a lower substrate
 :::
 
 :::try
-Q: [1 mark] (#bio.enzymes2) Which is an advantage of using an immobilised enzyme in an industrial process?
+Q: [1 mark] (#bio.enzymes2) A student compared free lactase with lactase immobilised in alginate beads at four temperatures. For each preparation the table gives the activity as a percentage of the highest activity of that preparation.
 
-**A** The enzyme can be reused and does not contaminate the product.
+| temperature / °C | free lactase / % | immobilised lactase / % |
+|---|---|---|
+| 30 | 80 | 70 |
+| 40 | 100 | 100 |
+| 50 | 70 | 95 |
+| 60 | 10 | 60 |
 
-**B** The enzyme has a higher activity because its active site is exposed.
+Which conclusion is supported by the data?
 
-**C** The enzyme can break down larger molecules than a free enzyme.
+**A** The immobilised lactase keeps a greater percentage of its activity than the free lactase at 50 °C and at 60 °C.
 
-**D** The enzyme is no longer affected by changes in temperature.
-A: **A** [B1] Beads of enzyme can be recovered and reused, and the product is free of enzyme; immobilised enzymes are usually more stable but are still affected by temperature.
+**B** The immobilised lactase has a higher optimum temperature than the free lactase.
+
+**C** The free lactase has a higher rate of reaction than the immobilised lactase at 30 °C.
+
+**D** Both preparations are completely denatured at 60 °C.
+A: **A** [B1] At 50 °C the values are 95% and 70%, and at 60 °C they are 60% and 10%. Both preparations have their highest activity at 40 °C (B), the table gives percentages of each preparation's own maximum, so rates cannot be compared (C), and 60% of the activity remains at 60 °C (D).
 :::
 
 :::try
@@ -219,16 +232,20 @@ A: **D** [B1] Statements 1 and 2 are correct; the heads are hydrophilic and face
 :::
 
 :::try
-Q: [1 mark] (#bio.movement) Which description is correct for facilitated diffusion?
+Q: [1 mark] (#bio.movement) Red blood cells were put into solutions with different concentrations of two substances, P and Q. The uptake of both substances was the same when respiration was stopped. The graph shows the rate of uptake. Which statement is correct?
 
-**A** Ions move against a concentration gradient through a carrier protein, using ATP.
+:::plot Rate of uptake of two substances, P and Q, by red blood cells at different concentrations outside the cells.
+--f "0.8*x" --f "12*x/(2+x)" --label "P" --label "Q" --x 0 10 --y 0 14 --ystep 5 --xlabel "concentration outside the cell / mmol dm⁻³" --ylabel "rate of uptake / au" --alt "Two curves of the rate of uptake against the concentration outside the cell, from 0 to 10 mmol per cubic decimetre. Curve P rises in a straight line from 0 to 8 arbitrary units. Curve Q rises steeply from 0 and then flattens, reaching 6 units at a concentration of 2 and 10 units at a concentration of 10."
+:::
 
-**B** Ions move down a concentration gradient through a channel protein, without using ATP.
+**A** Q enters by simple diffusion, because its rate increases as the concentration increases.
 
-**C** Small non-polar molecules move down a concentration gradient through the phospholipid bilayer.
+**B** Q enters by facilitated diffusion, because its rate levels off when all of the carrier proteins are in use.
 
-**D** Large molecules are taken into the cell inside vesicles.
-A: **B** [B1] Facilitated diffusion is passive movement down a gradient through a channel or carrier protein (A is active transport, C is simple diffusion, D is endocytosis).
+**C** P enters by facilitated diffusion, because its rate increases steadily.
+
+**D** P enters by active transport, because its rate increases as the concentration increases.
+A: **B** [B1] Uptake that does not need ATP and levels off is facilitated diffusion: the number of channel or carrier proteins limits the rate. P's rate is proportional to the concentration, which is simple diffusion; neither uses ATP, so D is wrong.
 :::
 
 :::try
@@ -284,16 +301,21 @@ A: **C** [B1] Separation of the sister chromatids to the poles as the spindle fi
 :::
 
 :::try
-Q: [1 mark] (#bio.mitosis) Which statement about telomeres is correct?
+Q: [1 mark] (#bio.mitosis) The drawing shows a cell during mitosis. Which stage is shown, and how many DNA molecules does the cell contain at this stage?
 
-**A** They contain genes that code for the spindle fibres.
+:::html
+<figure class="fig small"><svg viewBox="0 0 340 230" role="img" aria-label="A drawing of one cell during mitosis with no nuclear envelope. Four chromosomes, each X-shaped and made of two joined chromatids, are arranged in a single row across the middle of the cell. Thin fibres run from a point at each end of the cell to the joined region of every chromosome."><path class="fp ln sw2" d="M295 115L290.7 137L278.3 157.5L258.4 175.1L232.5 188.6L202.4 197.1L170 200L137.6 197.1L107.5 188.6L81.6 175.1L61.7 157.5L49.3 137L45 115L49.3 93L61.7 72.5L81.6 54.9L107.5 41.4L137.6 32.9L170 30L202.4 32.9L232.5 41.4L258.4 54.9L278.3 72.5L290.7 93Z"/><path class="ln-m thin" d="M62 115L166 64"/><path class="ln-m thin" d="M278 115L174 64"/><path class="ln-m thin" d="M62 115L166 97"/><path class="ln-m thin" d="M278 115L174 97"/><path class="ln-m thin" d="M62 115L166 133"/><path class="ln-m thin" d="M278 115L174 133"/><path class="ln-m thin" d="M62 115L166 166"/><path class="ln-m thin" d="M278 115L174 166"/><path class="c1 sw3" d="M163 53L177 75"/><path class="c1 sw3" d="M177 53L163 75"/><path class="c1 sw3" d="M163 86L177 108"/><path class="c1 sw3" d="M177 86L163 108"/><path class="c1 sw3" d="M163 122L177 144"/><path class="c1 sw3" d="M177 122L163 144"/><path class="c1 sw3" d="M163 155L177 177"/><path class="c1 sw3" d="M177 155L163 177"/><circle class="f2 s-acc sw2" cx="62" cy="115" r="4"/><circle class="f2 s-acc sw2" cx="278" cy="115" r="4"/></svg><figcaption>A cell during mitosis (diagrammatic).</figcaption></figure>
+:::
 
-**B** They lengthen at each cell division.
+**A** prophase; 8 DNA molecules
 
-**C** They are repeated sequences at the ends of chromosomes that prevent genes from being lost during replication.
+**B** metaphase; 4 DNA molecules
 
-**D** They are the regions to which the spindle fibres attach.
-A: **C** [B1] Telomeres are non-coding repeats at the chromosome ends; they shorten instead of genes being lost (D describes the centromere).
+**C** metaphase; 8 DNA molecules
+
+**D** anaphase; 8 DNA molecules
+A: **C** [B1] The chromosomes lined up across the equator, attached to spindle fibres, show metaphase; each of the 4 chromosomes has 2 sister chromatids, one DNA molecule in each, so there are 8 DNA molecules (in prophase there is a nuclear envelope; in anaphase the chromatids are being pulled apart).
+:::
 :::
 
 :::try
@@ -347,16 +369,16 @@ A: **D** [B1] Statements 1 and 3 describe translation; RNA polymerase joins nucl
 :::
 
 :::try
-Q: [1 mark] (#bio.planttransport) In the apoplast pathway, how does water move across the root cortex?
+Q: [1 mark] (#bio.planttransport) A dye is added to the soil water around the roots of a plant. The dye moves through the cell walls of the cortex but is not found in the xylem vessels. Which structure stops the dye from reaching the xylem?
 
-**A** Through the cytoplasm of the cells, passing from cell to cell through plasmodesmata.
+**A** the plasmodesmata between the cortex cells
 
-**B** Through the vacuoles of the cells, crossing the tonoplast.
+**B** the cellulose in the walls of the cortex cells
 
-**C** Through the cell walls and the spaces between the cells, without crossing a membrane.
+**C** the band of suberin in the walls of the endodermis cells
 
-**D** Through the xylem vessels of the cortex.
-A: **C** [B1] The apoplast pathway is through cellulose cell walls and intercellular spaces; A describes the symplast pathway.
+**D** the tonoplast of the vacuoles of the cortex cells
+A: **C** [B1] The dye moves in the apoplast pathway, and the waterproof suberin of the Casparian strip blocks that pathway at the endodermis (plasmodesmata are part of the symplast pathway, and cellulose walls and tonoplasts are not in the way of the apoplast pathway).
 :::
 
 :::try
@@ -437,16 +459,16 @@ A: **B** [B1] Hydrogencarbonate ions leave the red blood cell by facilitated dif
 :::
 
 :::try
-Q: [1 mark] (#bio.gasexchange) Which tissue is found in the wall of the trachea but not in the wall of an alveolus?
+Q: [1 mark] (#bio.gasexchange) During an asthma attack the bronchioles become narrower and air flows through them less easily. Which row explains the narrowing?
 
-**A** elastic fibres
+**A** The elastic fibres contract and the lining makes extra mucus.
 
-**B** cartilage
+**B** The smooth muscle contracts and the lining makes extra mucus.
 
-**C** squamous epithelium
+**C** The smooth muscle contracts and the cilia beat faster.
 
-**D** capillaries
-A: **B** [B1] C-shaped rings of cartilage hold the trachea open; an alveolus has no cartilage (but its wall has elastic fibres, squamous epithelium and a capillary network).
+**D** The cartilage contracts and the lining makes extra mucus.
+A: **B** [B1] The smooth muscle in the bronchiole wall contracts too easily and the inflamed lining makes extra mucus, so the lumen is narrower (elastic fibres only stretch and recoil, cartilage cannot contract and there is none in a bronchiole, and faster cilia would not narrow the airway).
 :::
 
 :::try
@@ -488,16 +510,20 @@ A: **A** [B1] Mosquito larvae develop in still water, so draining it reduces the
 :::
 
 :::try
-Q: [1 mark] (#bio.antibiotics) How does penicillin kill bacteria?
+Q: [1 mark] (#bio.antibiotics) Discs W, X and Y each contained a different antibiotic. Disc Z was soaked in sterile water. The discs were placed on agar covered with bacteria, and the plate was incubated. The drawing shows the plate. Which conclusion is correct?
 
-**A** It stops ribosomes making proteins in the cytoplasm of the bacteria.
+:::html
+<figure class="fig small"><svg viewBox="0 0 340 240" role="img" aria-label="A circular agar plate covered with bacteria and four small paper discs labelled W, X, Y and Z, one in each quarter. Around disc W is a large clear circle, around X a smaller clear circle and around Y a very small clear ring. Around Z there is no clear area."><circle class="f1 s-acc sw2" cx="170" cy="120" r="90"/><circle class="fp ln" cx="139" cy="89" r="30"/><circle class="fp ln" cx="201" cy="89" r="18"/><circle class="fp ln" cx="139" cy="151" r="12"/><circle class="f3 s-acc sw2" cx="139" cy="89" r="6"/><circle class="f3 s-acc sw2" cx="201" cy="89" r="6"/><circle class="f3 s-acc sw2" cx="139" cy="151" r="6"/><circle class="f3 s-acc sw2" cx="201" cy="151" r="6"/><text class="tl tb" x="50" y="40" text-anchor="middle">W</text><path class="ln-m thin" d="M60 42L134.8 84.8"/><text class="tl tb" x="290" y="40" text-anchor="middle">X</text><path class="ln-m thin" d="M280 42L205.2 84.8"/><text class="tl tb" x="50" y="214" text-anchor="middle">Y</text><path class="ln-m thin" d="M60 210L134.8 155.2"/><text class="tl tb" x="290" y="214" text-anchor="middle">Z</text><path class="ln-m thin" d="M280 210L205.2 155.2"/></svg><figcaption>A plate seen from above after incubation.</figcaption></figure>
+:::
 
-**B** It breaks down the DNA of the bacteria.
+**A** The bacteria are resistant to antibiotic W, because it has the largest clear zone.
 
-**C** It destroys the cell surface membrane of the bacteria.
+**B** The bacteria are most sensitive to antibiotic Y, because only a small area around it is clear.
 
-**D** It stops cross-links forming in the cell wall of growing bacteria, so water enters by osmosis and they burst.
-A: **D** [B1] Penicillin prevents the formation of the peptidoglycan cross-links, so the weakened wall cannot resist the pressure as water enters by osmosis.
+**C** Disc Z shows that sterile water kills the bacteria.
+
+**D** The bacteria are most sensitive to antibiotic W, and disc Z shows that the paper disc alone does not stop growth.
+A: **D** [B1] The largest clear zone means that W stops the growth of the bacteria best; the control disc Z has no zone, so the disc and the water do not themselves stop growth (a large zone means sensitive, not resistant, and the smallest zone means the least sensitive).
 :::
 
 :::try
@@ -527,16 +553,25 @@ A: **C** [B1] Memory cells from the first exposure recognise the antigen and qui
 :::
 
 :::try
-Q: [1 mark] (#bio.antibodies) To make monoclonal antibodies, which two types of cell are fused to make a hybridoma cell?
+Q: [1 mark] (#bio.antibodies) A mouse was injected with antigen X, and its B-lymphocytes were fused with myeloma cells. Four hybridoma clones, 1 to 4, were tested for binding to antigen X and to a different antigen, Y. Absorbance shows how much antibody bound.
 
-**A** a plasma cell and a T-killer cell
+| clone | absorbance with X | absorbance with Y |
+|---|---|---|
+| 1 | 0.85 | 0.05 |
+| 2 | 0.10 | 0.90 |
+| 3 | 0.80 | 0.75 |
+| 4 | 0.04 | 0.06 |
 
-**B** a B-lymphocyte that makes the required antibody and a tumour cell
+Which clone should be grown in a fermenter to make a monoclonal antibody against X?
 
-**C** a memory cell and a macrophage
+**A** clone 3
 
-**D** a T-helper cell and a B-lymphocyte
-A: **B** [B1] The B-lymphocyte makes the specific antibody and the tumour cell divides without limit, so the hybridoma makes large amounts of one antibody.
+**B** clone 1
+
+**C** clone 2
+
+**D** clone 4
+A: **B** [B1] Clone 1 makes antibody that binds strongly to X and hardly at all to Y, so its antibody is specific to X; clone 3 binds both antigens, clone 2 binds Y, and clone 4 makes no useful antibody.
 :::
 
 Next: [Mock Paper 2](#bio.mock.p2)

@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-30 · REVIEW P22, P23, P24 · 2 items (mock.p1 too recall-heavy: replace 8+ recall questions with data/SVG ones; bio.foodtests 2 raw revise links). Fixed: mixed.as and mixed.a2 showed every revise link as raw (#id) text (stars before the link; all 64 swapped, check script updated); all mock and mixed figures/plots moved inside their questions (nested :::html/:::plot render inside the question: checked), plot captions no longer give the description away; mock.p2 cell figure gets grana and cristae and a neutral aria-label; mock.p3 scale bar 20 um (cell Z 28 um, matches S1 cortex); mock.p4 Q7 stem no longer gives linkage away, urine plot axis; mock.p5 Q1(e) tenfold dilution noted, Next ends the course at the course map; syllabus command words for estimate. All answers and mark schemes recomputed; mock times, totals, question counts and skill splits match FACTS.md; questions original.
+Last: 2026-11-04 · FIX · 30 items: reader glosses and rewordings in bio.translocation, mammaltransport, oxygen, heart, gasexchange, disease, antibiotics, immunity, antibodies; bio.foodtests raw revise links; bio.mock.p1 11 recall questions replaced with application/data ones (3 SVG: cell drawing, mitosis stage, disc plate; 1 plot; letters still 10 each; check script recomputes)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

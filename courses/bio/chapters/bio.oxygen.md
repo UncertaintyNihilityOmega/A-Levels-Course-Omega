@@ -35,10 +35,10 @@ Haemoglobin (Hb) is dark red. With oxygen bound it is **oxyhaemoglobin** (\(\ce{
 Air is a mixture of gases, and each gas contributes to the total pressure in proportion to its share of the molecules. The part contributed by one gas is its partial pressure.
 
 :::def Partial pressure of oxygen (pO₂)
-The pressure that oxygen alone would exert in a mixture of gases. It is a measure of the concentration of oxygen, measured in kilopascals (kPa). A gas diffuses from a region of higher partial pressure to a region of lower partial pressure.
+The pressure that oxygen alone would exert in a mixture of gases. It is a measure of the concentration of oxygen, measured in kilopascals (kPa). A gas diffuses from a region of higher partial pressure to a region of lower partial pressure. pCO₂ is the partial pressure of carbon dioxide in the same way.
 :::
 
-Atmospheric pressure is about 101 kPa and air is about 21% oxygen, so the pO₂ of air is about 21 kPa. By the time air has reached the alveoli it has mixed with air already in the lungs, and the alveolar pO₂ is about 13 kPa. In the tissues, the cells use oxygen, so the pO₂ there is much lower: around 4–5 kPa in a resting muscle and lower in an active one. Oxygen therefore moves **down a partial pressure gradient** from the alveolar air into the blood, and from the blood into the tissue fluid and into the cells.
+Atmospheric pressure is about 101 kPa and air is about 21% oxygen, so the pO₂ of air is about 21 kPa. By the time air has reached the alveoli (tiny air sacs in the lungs where oxygen passes into the blood; see The gas exchange system) it has mixed with air already in the lungs, and the alveolar pO₂ is about 13 kPa. In the tissues, the cells use oxygen, so the pO₂ there is much lower: around 4–5 kPa in a resting muscle and lower in an active one. Oxygen therefore moves **down a partial pressure gradient** from the alveolar air into the blood, and from the blood into the tissue fluid and into the cells.
 
 :::def Percentage saturation of haemoglobin
 The percentage of the haem groups of the haemoglobin in the blood that are combined with oxygen. A sample of blood with all of its haem groups carrying oxygen is 100% saturated.
@@ -149,7 +149,7 @@ Both the red blood cell and the plasma are therefore involved.
 ### Inside the red blood cell
 
 :::def Carbonic anhydrase
-An enzyme in red blood cells that catalyses the reaction between carbon dioxide and water to form carbonic acid, \(\ce{H2CO3}\), and so speeds up the transport of carbon dioxide.
+An enzyme in the cytoplasm of red blood cells that catalyses the reaction between carbon dioxide and water to form carbonic acid, \(\ce{H2CO3}\), and so speeds up the transport of carbon dioxide.
 :::
 
 In a respiring tissue the steps are:
@@ -411,7 +411,7 @@ H: Unloaded saturation \(= 98 - 42\), then take that percentage of the capacity.
 H: The anaemic blood has the same percentages but half the capacity.
 A: (a) Unloaded \(= 98 - 42 = 56\) percentage points \(= 0.56 \times 16\) [M1] \(= 9.0\,\mathrm{cm^3}\) per 100 cm³ [A1]
 (b) Capacity is \(8\,\mathrm{cm^3}\), so \(0.56 \times 8 = 4.5\,\mathrm{cm^3}\) per 100 cm³. [A1]
-(c) A faster heart rate (or faster blood flow) so that more blood passes the muscle each minute. [B1] Breathing faster does not raise the saturation much, because the blood is already almost fully saturated, so a greater cardiac output is the better compensation. [B1]
+(c) A faster heart rate (or faster blood flow) so that more blood passes the muscle each minute. [B1] Breathing faster does not raise the saturation much, because the blood is already almost fully saturated, so a greater blood flow is the better compensation. [B1]
 :::
 
 :::quiz

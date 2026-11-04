@@ -45,7 +45,7 @@ An antibiotic can be selective because the structures it attacks are found only 
 | peptidoglycan cell wall | yes | no | no |
 | ribosomes | 70S | none | 80S (and 70S in mitochondria) |
 | metabolism of its own | yes | none | yes |
-| reproduces | by dividing (binary fission) | only inside a host cell | by mitosis |
+| reproduces | by dividing (binary fission: one bacterium copies its DNA and splits into two) | only inside a host cell | by mitosis |
 
 An antibiotic that attacks the peptidoglycan wall, or the 70S ribosome, or a bacterial enzyme, has a target in a bacterium. It has no target in a virus, and no target (or a different one) in a human cell.
 
@@ -230,7 +230,7 @@ Correct Line 1: "A random mutation gives a few bacteria a gene for resistance; t
 
 ### Data: resistance rising over time
 
-In a hospital, the percentage of bacteria that are resistant to an antibiotic can be followed year by year. The graph shows invented data of the kind real hospitals collect.
+In a hospital, the percentage of bacteria that are resistant to an antibiotic can be followed year by year. The graph shows invented data of the kind real hospitals collect. An isolate is a sample of bacteria taken from a patient and grown in the laboratory.
 
 :::plot Invented data: the percentage of Staphylococcus isolates in a hospital that were resistant to antibiotic X, in the years after the antibiotic was introduced.
 --f "5+55/(1+exp((6-x)/1.4))" --x 0 12 --y 0 80 --xlabel "years since first use" --ylabel "isolates resistant / %" --label "resistant isolates" --pt "4,15.6,16% at year 4@se" --pt "8,49.4,49% at year 8@se" --legend tr --alt "The percentage of resistant isolates rises from about 6% in the year the antibiotic was introduced, slowly at first, then steeply between years 4 and 8, from about 16% to about 49%, and then more slowly, towards about 60% by year 12."
@@ -342,7 +342,7 @@ A weaker answer lists "finish your course, wash your hands, new drugs". It gives
 
 ## Testing antibiotics: disc diffusion
 
-To find out which antibiotic will work on a particular bacterium, a laboratory grows the bacteria on **agar** (a jelly with nutrients) and tests how each antibiotic affects them. In **disc diffusion**, small paper discs soaked in different antibiotics are placed on a plate that has been covered with a layer of bacteria (a **lawn**). The antibiotic spreads out of each disc into the agar. If the bacteria are sensitive to it, they cannot grow near the disc, and a clear circle, the **zone of inhibition**, appears.
+To find out which antibiotic will work on a particular bacterium, a laboratory grows the bacteria on **agar** (a jelly with nutrients; a colony is a visible clump of identical bacteria grown from one cell on agar) and tests how each antibiotic affects them. In **disc diffusion**, small paper discs soaked in different antibiotics are placed on a plate that has been covered with a layer of bacteria (a **lawn**). The antibiotic spreads out of each disc into the agar. If the bacteria are sensitive to it, they cannot grow near the disc, and a clear circle, the **zone of inhibition**, appears.
 
 :::def Zone of inhibition
 The clear area around an antibiotic disc on an agar plate where bacteria have not grown, because the antibiotic that has diffused into the agar has killed them or stopped them growing.

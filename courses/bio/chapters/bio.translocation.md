@@ -81,11 +81,11 @@ A membrane protein that carries two different substances across a membrane toget
 
 :::steps
 1. **Proton pumps** in the cell surface membrane of the companion cell use **ATP** (made by the cell's many mitochondria) to move **hydrogen ions (H⁺)** out of the companion cell into the cell wall space. This is **active transport**.
-2. The concentration of H⁺ outside the cell is now **higher** than inside: there is a concentration gradient (and an electrical gradient) for H⁺.
+2. The concentration of H⁺ outside the cell is now **higher** than inside: there is a concentration gradient for H⁺ (the inside of the cell is also negatively charged, which pulls the positive H⁺ in).
 3. H⁺ **diffuse back into the companion cell** down their gradient through **cotransporter proteins** in the membrane. Each cotransporter carries a **sucrose molecule** into the cell with the H⁺ at the same time.
 4. In this way sucrose is brought into the companion cell **against its concentration gradient**, and its concentration inside the companion cell becomes high.
 5. The sucrose passes from the companion cell into the sieve tube element **through the plasmodesmata**, down a concentration gradient.
-6. The sucrose lowers the **water potential** of the sieve tube, so **water enters by osmosis** from the xylem and neighbouring cells. This builds up a **high hydrostatic pressure** in the sieve tube at the source.
+6. The sucrose lowers the **water potential** of the sieve tube, so **water enters by osmosis** from the xylem and neighbouring cells. This builds up a **high hydrostatic pressure** in the sieve tube at the source (hydrostatic pressure is the push of a liquid on the walls that hold it).
 :::
 
 The loading of sucrose is the only step that needs metabolic energy: ATP is used by the proton pump. Sucrose itself is not pumped: it is carried in by the cotransporter, using the energy stored in the H⁺ gradient that the pump built.
@@ -149,7 +149,7 @@ Think of a sieve tube as a hosepipe. Loading at the source is the tap being turn
 
 After some days the stem **swells above the ring**, and the sucrose concentration there is high, while it is low below the ring. The sucrose could not pass the ring because the phloem was removed. The leaves do not wilt, because the xylem is intact and water continues to rise. If the ring is wide the roots, which depend on sucrose from above, may die, so the whole plant dies.
 
-**Aphid stylets.** An aphid pushes its needle-like mouthpart (stylet) into a sieve tube element. Sap flows into the aphid or, if the aphid is removed and its stylet is cut, **sap continues to ooze out of the stylet** for hours. This shows the sap is **under positive pressure** (high hydrostatic pressure), as mass flow requires, and the sap can be collected and analysed: it contains sucrose and amino acids, and the concentration of sucrose is higher near the source than near the sink.
+**Aphid stylets.** An aphid pushes its needle-like mouthpart (stylet) into a sieve tube element. The aphid is then cut away, leaving the stylet in the tube, and **sap keeps oozing out of the stylet** for hours. So the sap must be **under positive pressure** (high hydrostatic pressure), as mass flow requires, and the sap can be collected and analysed: it contains sucrose and amino acids, and the concentration of sucrose is higher near the source than near the sink.
 
 **Radioactive tracers.** If a leaf is given carbon dioxide labelled with radioactive carbon-14, the plant makes radioactive sucrose, and the radioactivity moves out of the leaf in the phloem. A photographic film pressed against the stem (an autoradiograph) shows the radioactivity in the phloem and not in the xylem. The distance moved in a measured time gives the speed of flow.
 
@@ -340,7 +340,7 @@ So no H⁺ gradient is built up, and the cotransporter cannot bring sucrose in. 
 The second chemical lets H⁺ leak back in, so the H⁺ gradient cannot be maintained. [B1]
 So less sucrose is brought in by the cotransporters, so loading falls. [B1]
 (b) There is already an H⁺ gradient (and ATP) in the cell when the chemical is added, so loading goes on until it runs down. [B1]
-Some ATP can still be made without the mitochondria (by anaerobic respiration in the cytoplasm), so a few pumps keep working. [B1]
+Some ATP can still be made without the mitochondria (by anaerobic respiration in the cytoplasm: respiration without oxygen, which makes a little ATP), so a few pumps keep working. [B1]
 :::
 
 :::try Stretch for A*
@@ -357,10 +357,10 @@ Q: [5 marks] ★★★ A scientist cooled a short section of a stem to 2 °C wit
 H: Cooling affects the living cells (respiration and ATP) and also the sap itself.
 H: Could the result be explained without any change in the energy supply?
 A: (a) Cooling slows respiration in the companion cells of that section, so less ATP is made to keep the sieve tube elements working. [B1]
-Cold sap is more viscous, so it flows more slowly down the same pressure gradient. [B1]
+Cold sap is more viscous (thick and sticky), so it flows more slowly down the same pressure gradient. [B1]
 (b) The speed recovered after rewarming, so the cells were not killed and the effect is reversible, which fits a process that depends on living cells. [B1]
 But the higher viscosity of cold sap would slow mass flow even if no energy were needed in the stem, so the result does not prove the conclusion. [B1]
-A better test would treat only that section with a respiratory inhibitor at normal temperature and compare the speed with an untreated plant. [B1]
+A better test would treat only that section with a respiratory inhibitor (a chemical that stops respiration, so no ATP is made) at normal temperature and compare the speed with an untreated plant. [B1]
 :::
 
 :::quiz

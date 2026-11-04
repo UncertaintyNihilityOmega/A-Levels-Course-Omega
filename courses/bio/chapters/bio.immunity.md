@@ -90,7 +90,7 @@ The process in which a phagocyte engulfs a pathogen or other particle by endocyt
 | | Neutrophil | Macrophage |
 |---|---|---|
 | size and nucleus | smaller; nucleus with several lobes | larger; one large nucleus |
-| where | in the blood, and moves out into infected tissue | in tissues and organs such as the lungs, liver and lymph nodes |
+| where | in the blood, and moves out into infected tissue | in tissues and organs such as the lungs, liver and lymph nodes (small swellings along the lymph vessels where lymphocytes are stored) |
 | numbers | the most numerous phagocyte | fewer |
 | life span | short-lived | long-lived |
 | timing | the first cells to arrive at an infection | arrive later |
@@ -100,7 +100,7 @@ The process in which a phagocyte engulfs a pathogen or other particle by endocyt
 
 :::steps
 1. **Chemotaxis.** Pathogens and damaged cells release chemicals. The phagocyte detects them with receptors and moves up the concentration gradient, towards the source.
-2. **Recognition and binding.** Receptors in the cell surface membrane of the phagocyte bind to antigens on the surface of the pathogen. Antibodies attached to a pathogen make this easier, because the phagocyte has receptors for them.
+2. **Recognition and binding.** Receptors in the cell surface membrane of the phagocyte bind to antigens on the surface of the pathogen. Antibodies attached to a pathogen make this easier, because the phagocyte has receptors for them (antibodies are proteins made by plasma cells, described below, that stick to antigens).
 3. **Engulfing.** The surface membrane of the phagocyte folds round the pathogen (endocytosis) and encloses it in a vesicle, the **phagosome**.
 4. **Lysosomes fuse** with the phagosome and release hydrolytic enzymes into it.
 5. **Digestion.** The enzymes hydrolyse the pathogen to small molecules, which the phagocyte absorbs or removes.
@@ -234,7 +234,7 @@ The structure behind each of these is in [Antibodies and vaccination](#bio.antib
 
 ### What T-killer cells do
 
-Antibodies cannot get inside cells. A virus that is inside a body cell is safe from them. But the infected cell shows viral antigens on its own surface, and a T-killer cell with a complementary receptor binds to it. The T-killer cell destroys the infected cell, so that the virus cannot reproduce in it. The same idea applies to some cancer cells.
+Antibodies cannot get inside cells. A virus that is inside a body cell is safe from them. But the infected cell shows viral antigens on its own surface, and a T-killer cell with a complementary receptor binds to it. The T-killer cell destroys the infected cell: it releases chemicals that make holes in the infected cell or make it self-destruct, so that the virus cannot reproduce in it. The same idea applies to some cancer cells.
 
 :::warn Four mix-ups to avoid
 - **T-helper cells do not make antibodies** and do not kill anything. They release cytokines that stimulate other cells.

@@ -513,7 +513,7 @@ The Benedict's test changes from blue through green, yellow and orange to brick-
 The product, maltose, is a reducing sugar, so more of it gives a positive Benedict's test with more colour change as its concentration rises. [B1]
 The brick-red precipitate at 8 minutes shows a high concentration of reducing sugar. [B1]
 (c) Boiled amylase is denatured and cannot catalyse the reaction, so the iodine stays blue-black and Benedict's stays blue. [B1]
-Q: [5 marks] ★★★ (#bio.practical) A technician must test a white powder that may contain starch, a reducing sugar, or both. (a) Describe how to find out which it contains. (b) State one hazard in your method, rate its risk as low, medium or high, and give a precaution.
+Q: [5 marks] (#bio.practical) ★★★ A technician must test a white powder that may contain starch, a reducing sugar, or both. (a) Describe how to find out which it contains. (b) State one hazard in your method, rate its risk as low, medium or high, and give a precaution.
 H: Each test needs its own portion of the sample.
 A: (a) Dissolve the powder in water and divide it into two portions. [B1]
 Add iodine solution to one portion: blue-black shows starch. [B1]
@@ -532,7 +532,7 @@ A: (a) Sucrose is a non-reducing sugar, so the sample should have stayed blue; a
 Boil a second portion of the same drink with dilute hydrochloric acid, neutralise it, and test it in exactly the same way. [B1]
 Keep volumes, temperature and timing the same. [B1]
 A higher estimated concentration (a shorter time or a deeper colour) after acid shows that a non-reducing sugar, probably sucrose, was also present. [B1]
-Q: [5 marks] ★★★ (#bio.proteins) The biuret test can be used to follow the digestion of protein. A protease was added to a protein solution at 35 °C, and samples were taken and tested with biuret reagent. The absorbance in a colorimeter (a colorimeter measures how much light a coloured solution absorbs, and absorbance is that amount as a number) was read with a green filter, because the purple biuret colour absorbs green light most. The values were 0.60 at 0 min, 0.44 at 10 min, 0.32 at 20 min and 0.24 at 30 min. (a) Explain why the absorbance falls. (b) Calculate the mean rate of fall in absorbance between 0 and 20 min. (c) After 30 minutes the absorbance is not zero. Suggest why.
+Q: [5 marks] (#bio.proteins) ★★★ The biuret test can be used to follow the digestion of protein. A protease was added to a protein solution at 35 °C, and samples were taken and tested with biuret reagent. The absorbance in a colorimeter (a colorimeter measures how much light a coloured solution absorbs, and absorbance is that amount as a number) was read with a green filter, because the purple biuret colour absorbs green light most. The values were 0.60 at 0 min, 0.44 at 10 min, 0.32 at 20 min and 0.24 at 30 min. (a) Explain why the absorbance falls. (b) Calculate the mean rate of fall in absorbance between 0 and 20 min. (c) After 30 minutes the absorbance is not zero. Suggest why.
 H: An enzyme (amylase, protease) is a protein that speeds up a reaction; the substrate is what it acts on, the product what it makes. A protease breaks down protein.
 H: What does the protease do to the peptide bonds?
 H: A short chain of amino acids still has peptide bonds.

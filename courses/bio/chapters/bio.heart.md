@@ -79,8 +79,8 @@ The walls of the four chambers are not equally thick, and the figure above shows
 :::key Why the walls differ
 - **Atria (thin walls)**: an atrium pumps blood only a short distance, into the ventricle just below it. Most of the filling happens by itself, because the blood is flowing in under the low pressure of the veins. A small, low-pressure squeeze is enough.
 - **Ventricles (thick walls)**: a ventricle must pump the blood out of the heart and along an artery, so it must generate a much higher pressure.
-- **Left ventricle (thickest)**: it pumps blood to the whole body (every organ except the lungs), a long path with a great resistance to flow, so it must produce a high pressure, about 16 kPa at its peak.
-- **Right ventricle (thinner)**: it pumps blood only to the lungs, which are close by, at a much lower pressure. Low pressure in the lungs avoids damaging the delicate walls of the lung capillaries and means that less tissue fluid is forced out into the alveoli.
+- **Left ventricle (thickest)**: it pumps blood to the whole body (every organ except the lungs), a long path with a great resistance to flow (resistance: how hard it is for blood to flow through the narrow vessels), so it must produce a high pressure, about 16 kPa at its peak.
+- **Right ventricle (thinner)**: it pumps blood only to the lungs, which are close by, at a much lower pressure. Low pressure in the lungs avoids damaging the delicate walls of the lung capillaries and means that less tissue fluid is forced out into the alveoli (the tiny air sacs at the ends of the airways in the lungs).
 :::
 
 :::warn The two ventricles pump the same volume
@@ -215,6 +215,8 @@ Correct Line 2: "When the pressure in the ventricle is higher than the pressure 
 A heartbeat that starts in the cardiac muscle itself. The heart muscle contracts and relaxes rhythmically without a nerve impulse starting each beat.
 :::
 
+The wave of excitation is a spread of electrical signal across the cardiac muscle; each part of the muscle that it reaches contracts.
+
 The heart beats by itself: a heart removed from the body and kept in the right solution goes on beating for a while. A small group of specialised cardiac muscle cells in the wall of the right atrium sets the pace. The nerves and hormones that speed up or slow down the heart are not needed for this syllabus.
 
 :::html
@@ -264,8 +266,8 @@ The wave of excitation and the pressure changes are two views of the same heartb
 |---|---|---|
 | 0 | SAN fires; wave spreads across the atria | atria contract (atrial systole); pressure in the left atrium rises to about 1.5 kPa; AV valves open, semilunar valves closed |
 | 0 to 0.10 | wave is delayed at the AVN | atria finish contracting and the ventricles fill |
-| about 0.10 | wave leaves the AVN, passes down the bundle of His and spreads through the Purkyne tissue | ventricular pressure rises above atrial pressure: AV valves close (event 1) |
-| about 0.17 | ventricles contract from the apex upwards | ventricular pressure rises above aortic pressure: semilunar valves open (event 2) |
+| about 0.10 | wave leaves the AVN and spreads through the bundle of His and the Purkyne tissue; ventricles begin to contract | ventricular pressure rises above atrial pressure: AV valves close (event 1) |
+| about 0.17 | ventricles contracting hard | ventricular pressure rises above aortic pressure: semilunar valves open (event 2) |
 | about 0.38 | ventricles relax | ventricular pressure falls below aortic pressure: semilunar valves close (event 3) |
 | about 0.45 | whole heart relaxed (diastole) | ventricular pressure falls below atrial pressure: AV valves open (event 4); the ventricles fill again |
 

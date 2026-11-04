@@ -13,7 +13,7 @@ def eq(label, got, want, tol=1e-9):
 
 
 # paper facts (FACTS.md): 40 questions, 1 mark each, 40 marks, 1 h 15 min
-blocks = re.findall(r"^:::try\n(.*?)\n:::\n", text, flags=re.M | re.S)
+blocks = re.findall(r"^:::try\n(.*?)\n:::\n(?=\n:::try|\nNext)", text, flags=re.M | re.S)
 eq("questions", len(blocks), 40)
 marks = [int(re.match(r"Q: \[(\d+) mark", b).group(1)) for b in blocks]
 eq("total marks", sum(marks), 40)
@@ -29,6 +29,9 @@ for i, b in enumerate(blocks, 1):
     m = re.match(r"\*\*([ABCD])\*\* \[B1\]", a)
     assert m, f"Q{i}: answer must start with the letter and [B1]"
     letters.append(m.group(1))
+    # nested figures and plots must sit inside the question, and must not name the answer in the aria-label
+    for lab in re.findall(r'aria-label="([^"]*)"', q) + re.findall(r'--alt "([^"]*)"', q):
+        assert not re.search(r"prokaryot|bacterium|bacterial|metaphase|facilitated|sensitive|resistant", lab, flags=re.I), f"Q{i}: label names the answer"
     if "| **A** |" in q:
         tables += 1
         for L in "ABCD":
@@ -47,6 +50,38 @@ assert tables >= 6
 runs = max(len(list(g)) for _, g in __import__("itertools").groupby(letters))
 assert runs <= 2, f"run of {runs} equal letters"
 
+# figures and plots inside questions: Q4 cell drawing (SVG), Q16 uptake plot, Q21 mitosis (SVG), Q37 disc plate (SVG)
+with_fig = [i for i, b in enumerate(blocks, 1) if ":::html" in b or ":::plot" in b]
+assert with_fig == [4, 16, 21, 37], with_fig
+assert sum(1 for i in with_fig if ":::html" in blocks[i - 1]) >= 3
+# Q4: cell body 120 px long, scale bar 48 px = 1 um (data/fig_bio.mock.p1.py)
+eq("Q4 cell length / um", 120 / 48, 2.5)
+eq("Q4 wrong C (x10)", 120 / 48 * 10, 25)
+eq("Q4 wrong D (/10)", 120 / 48 / 10, 0.25)
+# Q11: activation energy 80 -> 50 kJ/mol; energy released 20 kJ/mol unchanged
+eq("Q11 fall in Ea", 80 - 50, 30)
+# Q14: percentages of each preparation's own maximum
+free = {30: 80, 40: 100, 50: 70, 60: 10}
+imm = {30: 70, 40: 100, 50: 95, 60: 60}
+assert imm[50] > free[50] and imm[60] > free[60]
+assert max(free, key=free.get) == max(imm, key=imm.get) == 40
+assert imm[60] < 100 and imm[60] > 0
+# Q16: P = 0.8x, Q = 12x/(2+x); no ATP; Q levels off
+P = lambda x: 0.8 * x
+Qf = lambda x: 12 * x / (2 + x)
+eq("Q16 P(10)", P(10), 8)
+eq("Q16 Q(2)", Qf(2), 6)
+eq("Q16 Q(10)", Qf(10), 10)
+assert (Qf(10) - Qf(8)) < 0.15 * (Qf(2) - Qf(0)) and math.isclose(P(10) - P(8), P(2) - P(0))
+# Q21: 4 chromosomes x 2 chromatids = 8 DNA molecules at metaphase
+eq("Q21 DNA molecules", 4 * 2, 8)
+# Q37: zone diameters at 2 px per mm (W 60 px, X 36 px, Y 24 px, Z none)
+zones = {"W": 60 / 2, "X": 36 / 2, "Y": 24 / 2, "Z": 0}
+assert zones["W"] > zones["X"] > zones["Y"] > zones["Z"] == 0
+# Q40: clone that binds X strongly and Y hardly at all
+clones = {1: (0.85, 0.05), 2: (0.10, 0.90), 3: (0.80, 0.75), 4: (0.04, 0.06)}
+specific = [c for c, (x, y) in clones.items() if x >= 0.5 and y <= 0.2]
+assert specific == [1], specific
 # Q2 drawing size
 eq("Q2 drawing", 40 * 250 / 1000, 10)
 # Q9 insulin peptide bonds

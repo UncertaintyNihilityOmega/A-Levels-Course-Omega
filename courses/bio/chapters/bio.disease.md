@@ -60,7 +60,7 @@ Pathogens are passed on in a small number of ways. Each disease in this chapter 
 | a vector | a living organism carries the pathogen from one host to the next | malaria |
 | body fluids | blood, semen or other fluids pass from an infected person to another | HIV |
 | mother to child | across the placenta, at birth or in breast milk | HIV (also malaria) |
-| contaminated animal products | meat or unpasteurised milk from an infected animal | TB (*Mycobacterium bovis*) |
+| contaminated animal products | meat or unpasteurised milk from an infected animal (pasteurising = heating milk to kill the bacteria in it) | TB (*Mycobacterium bovis*) |
 
 ### Writing names correctly
 
@@ -111,7 +111,7 @@ Think of the cycle in the figure: the aim is to break it at as many points as po
 
 | Type of factor | Measures |
 |---|---|
-| **biological** | treatment of patients with oral rehydration solution (clean water with sugar and salts) to replace lost water and ions; antibiotics for severe cases; oral vaccines, which protect only partly and for a limited time, so they are not enough on their own |
+| **biological** | treatment of patients with oral rehydration solution (clean water with sugar and salts) to replace lost water and ions; antibiotics for severe cases; oral vaccines (a vaccine is a harmless form of a pathogen's antigens that is given so that the body prepares its defences; see Antibodies and vaccination), which protect only partly and for a limited time, so they are not enough on their own |
 | **social** | hand-washing and food-hygiene education; boiling or chlorinating water; building latrines; keeping sewage away from drinking water; quick reporting and isolation of cases in an outbreak |
 | **economic** | treated piped water and sewage works are very expensive to build and run, and many poor countries cannot afford them; but an outbreak is also costly (hospital care, lost work, lost trade) |
 
@@ -339,7 +339,7 @@ Now see how a graph of real-looking data can be used. In the plot, the number of
 
 **Reasons the number did not reach zero** (any two suitable ideas): some people did not use their nets every night; mosquitoes survive in places the spraying does not reach, or have become resistant to the insecticide; the parasite is still present in infected people (including those without symptoms), so new infections continue; people travel in from areas without a programme.
 
-The data show a **correlation** between the programme and the fall. Other things could have changed in those years (rainfall, new drugs), so a careful scientist says that the fall is *consistent with* the programme working.
+The data show a **correlation** (two things change together; it does not prove that one causes the other) between the programme and the fall. Other things could have changed in those years (rainfall, new drugs), so a careful scientist says that the fall is *consistent with* the programme working.
 :::
 
 ## Practice
@@ -397,7 +397,7 @@ H: (b) Think about the route by which cholera spreads.
 A: (a) \((480 - 90) \div 480 \times 100\) [M1] \(= 81\%\) [A1]
 (b) In district A the water was treated, so the bacteria were killed and fewer people swallowed *V. cholerae* (faecal–oral route broken). [B1]
 In district B the water was still contaminated, so people continued to be infected. [B1]
-Q: [5 marks] ★★ Antiretroviral drugs reduce the risk that a baby will be infected with HIV by its mother. In a study, 120 pregnant women with HIV took the drugs and 80 did not. Three of the babies born to the women who took the drugs were infected with HIV, and 24 of the babies born to the other women. (a) Calculate the percentage of babies infected in each group. (b) Describe the conclusion that can be drawn. (c) State two other ways, apart from drugs, in which HIV passes from a mother to a child.
+Q: [5 marks] ★★ Antiretroviral drugs reduce the risk that a baby will be infected with HIV by its mother. In a study, 120 pregnant women with HIV took the drugs and 80 did not. Three of the babies born to the women who took the drugs were infected with HIV, and 24 of the babies born to the other women. (a) Calculate the percentage of babies infected in each group. (b) State the conclusion that can be drawn, quoting the percentages. (c) State two other ways, apart from drugs, in which HIV passes from a mother to a child.
 A: (a) \(3 \div 120 \times 100 = 2.5\%\) [A1]
 \(24 \div 80 \times 100 = 30\%\) [A1]
 (b) The percentage of babies infected is much lower (2.5% compared with 30%) when the mother took the drugs, so the drugs reduce the risk. [B1]
@@ -429,7 +429,7 @@ The person is then unable to fight other pathogens (such as TB), and these illne
 :::
 
 :::try Stretch for A*
-Q: [6 marks] ★★★ Sleeping sickness is a disease of people and cattle in parts of Africa. It is caused by a single-celled organism with a nucleus, *Trypanosoma*, which lives in the blood. It is passed from one host to another by the bite of tsetse flies. (a) Name the type of pathogen, and name the vector. (b) Suggest three measures to control the disease. (c) Suggest why a vaccine against the disease would be hard to develop in the way suggested for other diseases.
+Q: [6 marks] ★★★ Sleeping sickness is a disease of people and cattle in parts of Africa. It is caused by a single-celled organism with a nucleus, *Trypanosoma*, which lives in the blood. It is passed from one host to another by the bite of tsetse flies. (a) Name the type of pathogen, and name the vector. (b) Suggest three measures to control the disease. (c) Suggest why a vaccine against the disease would be hard to develop in the way suggested for other diseases (pointer: see Antibodies and vaccination).
 H: Use your knowledge of malaria: what is the type of pathogen with a nucleus, and what controls a vector?
 H: For (c), you are not expected to know the real reason: suggest a sensible idea, such as the pathogen changing.
 A: (a) The pathogen is a protoctist (a eukaryote); the vector is the tsetse fly. [B1]

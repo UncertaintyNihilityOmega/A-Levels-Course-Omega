@@ -38,7 +38,7 @@ Learn the regions of the Y and what each one does.
 |---|---|---|
 | **variable region** | at the tip of each arm: made by parts of one heavy and one light chain, with an amino acid sequence that differs from one antibody to the next | forms an **antigen-binding site** with a shape **complementary** to one antigen only |
 | **antigen-binding sites** | two, one on each arm, identical to each other | each can bind one antigen, so one antibody can bind two |
-| **constant region** | the stem and the rest of each arm: the same amino acid sequence in all antibodies of the same class | the same shape in every antibody, so phagocytes can bind to it |
+| **constant region** | the stem and the rest of each arm: the same amino acid sequence in all antibodies of the same type (the classes of antibody are not examined) | the same shape in every antibody, so phagocytes can bind to it |
 | **hinge region** | a flexible part where the arms join the stem | lets the arms swing apart, so the antibody can bind to antigens that are different distances apart |
 | **disulfide bonds** | covalent bonds between chains | hold the four polypeptides together |
 
@@ -47,7 +47,7 @@ The variable region is a good example of a link that biology keeps making: **pri
 :::key Antibody structure in one box
 - Four polypeptides: **two heavy, two light**, joined by **disulfide bonds**: quaternary structure.
 - **Y-shaped.** The **variable regions** at the tips make **two identical antigen-binding sites**, complementary to one antigen.
-- The **constant region** is the same in every antibody of a class (phagocytes recognise it). The **hinge** gives flexibility.
+- The **constant region** is the same in every antibody (phagocytes recognise it). The **hinge** gives flexibility.
 :::
 
 :::eg Explain how the structure of an antibody molecule is related to its functions.
@@ -59,7 +59,7 @@ The variable regions at the tips of the arms have a specific sequence of amino a
 
 There are two identical antigen-binding sites on each molecule, so an antibody can bind to two antigens and link pathogens together (agglutination). [B1]
 
-The constant region has the same shape in all antibodies of a class, so phagocytes can bind to it and engulf the pathogen that the antibody is attached to. [B1]
+The constant region has the same shape in all antibodies, so phagocytes can bind to it and engulf the pathogen that the antibody is attached to. [B1]
 
 The hinge region is flexible, so the two arms can move apart and bind to antigens that are different distances apart. [B1]
 
@@ -108,6 +108,8 @@ A B-lymphocyte makes the right antibody, but divides only a few times in culture
 6. **Collect** the antibody from the medium and **purify** it.
 :::
 
+(The spleen is an organ that stores B-lymphocytes; a fermenter is a large vessel in which cells are kept growing in a nutrient solution; a well is a small pit in a plastic plate.)
+
 :::html
 <figure class="fig small"><svg viewBox="0 0 338 466" role="img" aria-label="Flow chart of the hybridoma method. 1: a mouse is injected with the antigen. Spleen B cells that make antibody and myeloma cells that divide indefinitely are fused (2) to make hybridoma cells. 3: each hybridoma is screened for the wanted antibody. 4: the best hybridoma is cloned and grown in a fermenter. 5: the monoclonal antibody is collected and purified."><rect class="f1 s-acc sw2" x="40" y="6" width="250" height="44" rx="6"/><text class="tl" x="165" y="26" text-anchor="middle">1  Inject a mouse with</text><text class="tl" x="165" y="41" text-anchor="middle">the antigen</text><path class="ln" d="M110 52L84 75" marker-end="url(#ah)"/><rect class="f2 s-acc2 sw2" x="6" y="78" width="156" height="74" rx="6"/><text class="tl" x="84" y="98" text-anchor="middle">Spleen B cells:</text><text class="tl" x="84" y="113" text-anchor="middle">each makes one</text><text class="tl" x="84" y="128" text-anchor="middle">antibody but does</text><text class="tl" x="84" y="143" text-anchor="middle">not divide for long</text><rect class="f2 s-acc2 sw2" x="176" y="78" width="156" height="74" rx="6"/><text class="tl" x="254" y="98" text-anchor="middle">Myeloma cells:</text><text class="tl" x="254" y="113" text-anchor="middle">tumour cells that</text><text class="tl" x="254" y="128" text-anchor="middle">divide indefinitely</text><text class="tl" x="254" y="143" text-anchor="middle">and make no antibody</text><path class="ln" d="M84 154L120 177" marker-end="url(#ah)"/><path class="ln" d="M254 154L210 177" marker-end="url(#ah)"/><rect class="f3 s-acc2 sw2" x="40" y="180" width="250" height="74" rx="6"/><text class="tl" x="165" y="200" text-anchor="middle">2  Fuse the two kinds of cell:</text><text class="tl" x="165" y="215" text-anchor="middle">each hybridoma cell divides</text><text class="tl" x="165" y="230" text-anchor="middle">indefinitely and makes</text><text class="tl" x="165" y="245" text-anchor="middle">the antibody</text><path class="ln" d="M165 256L165 275" marker-end="url(#ah)"/><rect class="f1 s-acc sw2" x="40" y="278" width="250" height="44" rx="6"/><text class="tl" x="165" y="298" text-anchor="middle">3  Screen: test each hybridoma</text><text class="tl" x="165" y="313" text-anchor="middle">for the wanted antibody</text><path class="ln" d="M165 324L165 343" marker-end="url(#ah)"/><rect class="f1 s-acc sw2" x="40" y="346" width="250" height="44" rx="6"/><text class="tl" x="165" y="366" text-anchor="middle">4  Clone the best hybridoma and</text><text class="tl" x="165" y="381" text-anchor="middle">grow it in a fermenter</text><path class="ln" d="M165 392L165 411" marker-end="url(#ah)"/><rect class="f2 s-acc2 sw2" x="40" y="414" width="250" height="44" rx="6"/><text class="tl" x="165" y="434" text-anchor="middle">5  Collect and purify the</text><text class="tl" x="165" y="449" text-anchor="middle">monoclonal antibody</text></svg><figcaption>The hybridoma method. A hybridoma cell has the antibody-making ability of a B cell and the endless division of a myeloma cell. All the cells in the clone are identical, so they make one kind of antibody.</figcaption></figure>
 :::
@@ -153,7 +155,7 @@ A **labelled** antibody has a molecule attached that can be seen or detected (a 
 - **Identifying pathogens:** antibodies that bind to an antigen of a pathogen are used in some rapid tests, for example for malaria.
 
 :::eg Real context, a home pregnancy test: explain how a test strip detects the hormone hCG in urine.
-A strip has three zones: one holds antibodies that are not fixed, and two lines each hold antibodies that are fixed. All of them are monoclonal.
+The strip is dipped in urine at one end. The liquid soaks along the strip and carries the free labelled antibodies with it past the test line and then the control line. The strip has three zones: zone 1 (free labelled antibodies), the test line and the control line. Zone 1 holds antibodies that are not fixed, and the two lines each hold antibodies that are fixed. All of them are monoclonal.
 
 The first zone contains antibodies specific to hCG, with a coloured label, which are free to move. [B1]
 
@@ -290,7 +292,7 @@ Correct Line 2: "The person's B cells make antibodies and memory cells, which re
 ## Vaccination programmes and herd immunity
 
 :::def Herd immunity
-The protection of people who are not immune when a large proportion of the population is immune. The pathogen finds few susceptible people, so chains of transmission are broken and it cannot spread.
+The protection of people who are not immune when a large proportion of the population is immune. The pathogen finds few susceptible people (susceptible: able to catch the disease because not immune), so chains of transmission are broken and it cannot spread.
 :::
 
 Not everyone can be vaccinated: babies who are too young, and people with a weak immune system. If most people around them are immune, these people are also protected. The proportion that must be immune depends on how easily the pathogen spreads: a very infectious disease such as measles needs about 95% of the population to be immune.
@@ -360,7 +362,7 @@ Questions ask why a programme succeeded or failed. Give the **biology** (stable 
 ## Practice
 
 :::try Start easy, finish at exam standard
-Q: State two features of an antibody molecule that are the same in all antibodies of a class and two that differ between antibodies.
+Q: State two features of an antibody molecule that are the same in all antibodies and two that differ between antibodies.
 A: The same: the constant region; the number of polypeptides (two heavy, two light) and the disulfide bonds. Different: the variable regions and so the shape of the antigen-binding sites.
 Q: State the function of the hinge region of an antibody.
 A: It is flexible, so the two arms can move apart and bind to antigens that are different distances apart.
@@ -411,7 +413,7 @@ H: For (c), how long does a primary immune response take, and how long between i
 A: (a) New cases rise from 8 in week 1 to a peak of 26 in week 3. [B1]
 They then fall, to 6 in week 5 and 0 in week 7. [B1]
 (b) \((26 - 6) \div 26 \times 100\) [M1] \(= 77\%\) [A1]
-(c) People already infected were incubating the virus, and vaccinated people take days to make a primary response, so some cases still appeared. [B1]
+(c) People already infected were incubating the virus (the incubation period is the time between infection and the first symptoms), and vaccinated people take days to make a primary response, so some cases still appeared. [B1]
 Ring vaccination makes the people around each case immune, so the virus has no susceptible people to infect and the chain of transmission is broken. [B1]
 Q: [4 marks] ★★ Explain why it has been difficult to develop an effective vaccine against *Plasmodium*, the pathogen that causes malaria.
 H: Where in the body does *Plasmodium* spend most of its life, and are the antigens always the same?
@@ -447,7 +449,7 @@ The B cells differentiate into plasma cells, which secrete antibodies complement
 :::
 
 :::try Stretch for A*
-Q: [6 marks] ★★★ A disease spreads in a population until herd immunity is reached when 75% of the population is immune. A vaccine gives immunity to 85% of the people who receive it. (a) In a programme 80% of the population is vaccinated. Calculate the percentage of the population that is immune because of the vaccine. (b) State whether herd immunity is reached. (c) Calculate the percentage of the population that must be vaccinated to reach herd immunity. (d) Suggest one reason why a country may fail to reach this percentage.
+Q: [6 marks] ★★★ A disease stops spreading once 75% of the population is immune. A vaccine gives immunity to 85% of the people who receive it. (a) In a programme 80% of the population is vaccinated. Calculate the percentage of the population that is immune because of the vaccine. (b) State whether herd immunity is reached. (c) Calculate the percentage of the population that must be vaccinated to reach herd immunity. (d) Suggest one reason why a country may fail to reach this percentage.
 H: The fraction immune is the fraction vaccinated multiplied by the fraction the vaccine works for.
 H: For (c), rearrange: coverage \(=\) immune fraction needed \(\div\) 0.85.
 A: (a) \(0.80 \times 0.85\) [M1] \(= 0.68\), so 68% [A1]
@@ -471,7 +473,7 @@ A vaccine works only if the child's own lymphocytes respond and make plasma cell
 - four identical polypeptides, each with its own antigen-binding site
 - one polypeptide folded into a Y shape, with a variable region at the stem
 > An antibody has two heavy and two light chains joined by disulfide bonds; the variable regions at the tips of the two arms form two identical antigen-binding sites. The stem is the constant region.
-? Which part of an antibody is the same shape in all antibodies of a class?
+? Which part of an antibody is the same shape in all antibodies?
 + the constant region
 - the variable region
 - the antigen-binding site
