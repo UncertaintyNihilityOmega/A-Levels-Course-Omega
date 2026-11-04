@@ -147,6 +147,8 @@ A quadrat gives three measures of abundance:
 \[\text{density} = \frac{\text{total individuals}}{\text{quadrats} \times \text{area of one quadrat}}\]
 
 - **Percentage cover** = the percentage of the quadrat covered by the species (count the small squares of the grid that are more than half covered).
+
+With a 100-square grid the number of squares counted is the percentage cover. With a grid of another size, divide the number of squares counted by the number of squares in the grid and multiply by 100: 18 squares counted on a 25-square grid is \(18 \div 25 \times 100 = 72\%\).
 :::
 
 Use **frequency** when individuals are hard to count; use **density** when each individual can be counted; use **percentage cover** for plants such as grasses or mosses that grow in patches and cannot be counted as individuals.
@@ -173,7 +175,7 @@ so about 40 000 daisy plants. This is an estimate from a sample, and a different
 :::steps
 1. Lay two tape measures at right angles along two sides of the area to make a grid.
 2. Generate pairs of random numbers for the *x* and *y* coordinates and place a 0.25 m² quadrat at each position (at least 10, and more if the running mean has not levelled off).
-3. In each quadrat count the plants of the species (or the number of grid squares more than half covered) and record the count.
+3. In each quadrat count the plants of the species (or the number of grid squares more than half covered; on a 100-square grid this number is the percentage cover) and record the count.
 4. Calculate the frequency, the mean number per quadrat, the density and the percentage cover. Multiply the density by the area for the population estimate.
 :::
 
@@ -266,7 +268,7 @@ Assumptions: the marked shrimps mixed evenly with the unmarked ones; no shrimps 
 5. Calculate \(N\).
 :::
 
-**Sources of error**: marks wear off or are eaten; paint changes survival; trap-shy or trap-happy animals; the animals migrate; counting errors; the second sample not random. Improve by using more than one pair of samples, using non-toxic paint on the underside, waiting long enough, and taking larger samples.
+**Sources of error**: marks wear off or are eaten; paint changes survival; trap-shy or trap-happy animals (trap-shy animals avoid traps after being caught once, so are under-counted; trap-happy animals return to them, so are over-counted); the animals migrate; counting errors; the second sample not random. Improve by using more than one pair of samples, using non-toxic paint on the underside, waiting long enough, and taking larger samples.
 
 **Safety**: handle animals gently and return them to their habitat; wash hands; avoid toxic paints.
 :::

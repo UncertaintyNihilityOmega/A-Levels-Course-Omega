@@ -67,6 +67,21 @@ eq("denominator sum 1.0625 + 0.9167", round(8.5 / 8 + stdev(shade) ** 2 / 10, 4)
 eq("denominator 1.407", sf(sqrt(8.5 / 8 + stdev(shade) ** 2 / 10), 4), 1.407)
 eq("leaf df", 8 + 10 - 2, 16)
 eq("leaf critical value", crit(16), 2.12)
+for d, c in [(14, 2.14), (15, 2.13), (16, 2.12), (17, 2.11), (18, 2.10)]:
+    eq(f"printed critical value table df {d}", crit(d), c)
+eq("sun squares list", sum(x * x for x in [-1.25, 1.75, -5.25, 0.75, 3.75, -2.25, -0.25, 2.75]), 59.5)
+eq("shade squares list", sum(x * x for x in [0.5, -2.5, 3.5, -0.5, -3.5, 2.5, -1.5, 1.5, 4.5, -4.5]), 82.5)
+eq("three-gene gametes 2*2*2", 2 * 2 * 2, 8)
+eq("three-gene offspring 8*8", 8 * 8, 64)
+# --- antler lengths, two islands
+isl_p = [61, 63, 60, 62, 64, 62]
+isl_q = [58, 66, 52, 71, 49, 76]
+eq("antler P mean", mean(isl_p), 62)
+eq("antler Q mean", mean(isl_q), 62)
+eq("antler P SS", sum((x - 62) ** 2 for x in isl_p), 10)
+eq("antler Q SS", sum((x - 62) ** 2 for x in isl_q), 578)
+eq("antler P s", round(stdev(isl_p), 1), 1.4)
+eq("antler Q s", round(stdev(isl_q), 1), 10.8)
 eq("difference of means", 51.5 - 43.25, 8.25)
 assert t > crit(16)
 

@@ -59,7 +59,7 @@ The passenger pigeon, once among the most numerous birds in North America, was h
 **Loss** of a habitat means that the area is destroyed or converted to another use (for example forest cleared for farms, wetland drained, coastline built on). **Degradation** means the habitat remains but is damaged, so it supports fewer species or fewer individuals (for example by pollution, overgrazing, or soil washing off cleared land into streams).
 :::
 
-Habitat is the place where a species finds food, shelter, mates and nest sites. When it shrinks, the carrying capacity falls and fewer individuals can live there. Loss of habitat is the most widespread cause of species becoming endangered.
+Habitat is the place where a species finds food, shelter, mates and nest sites. When it shrinks, the carrying capacity falls and fewer individuals can live there (the carrying capacity is the largest population an area can support with its food, water and space). Loss of habitat is the most widespread cause of species becoming endangered.
 
 Even when some habitat survives, it is often broken into pieces, and this is called **fragmentation**. Roads, farms and towns divide a large forest into small patches that are separated by land the species cannot cross.
 
@@ -209,7 +209,7 @@ A seed bank stores the seeds of wild plants and crop varieties for the future.
 1. Seeds are collected from **many** individuals of a species in different places, so that the stored seeds hold as much genetic variation as possible.
 2. Seeds are cleaned and **dried** to a low water content. With little water, the seed's metabolism is very slow and it cannot germinate or rot.
 3. The dry seeds are sealed in containers and stored at a **low temperature** (often around −20 °C), which slows ageing.
-4. Samples are **germination-tested** regularly to check that the seeds are still viable. When viability falls, the seeds are grown into plants, and new seeds are collected for storing again.
+4. Samples are **germination-tested** regularly to check that the seeds are still viable (viable means able to germinate and grow; viability is the percentage of seeds that germinate). When viability falls, the seeds are grown into plants, and new seeds are collected for storing again.
 5. Stored seeds can be used to **re-establish** a species in the wild or to restore a crop variety after crop failure.
 :::
 
@@ -302,7 +302,7 @@ A pregnancy in which the embryo is carried and the young are born by a female wh
 <figure class="fig small" data-fig="conservation2"><svg viewBox="0 0 340 266" role="img" aria-label="Flow diagram in four boxes joined by downward arrows. 1: eggs collected from the female and sperm from a male or the frozen zoo. 2: IVF, eggs and sperm mixed in a dish, early embryos form and can be frozen. 3: embryo transfer into the uterus of a surrogate female. 4: the surrogate carries the embryo to birth and the young have the genes of both donors."><rect class="f1 s-acc sw2" x="10" y="8" width="320" height="46" rx="6"/><text class="tl" x="170" y="27" text-anchor="middle">1  Eggs collected from the female,</text><text class="tl" x="170" y="43" text-anchor="middle">sperm from a male or the frozen zoo</text><rect class="f1 s-acc sw2" x="10" y="76" width="320" height="46" rx="6"/><text class="tl" x="170" y="95" text-anchor="middle">2  IVF: eggs and sperm mixed in a dish;</text><text class="tl" x="170" y="111" text-anchor="middle">early embryos form (can be frozen)</text><rect class="f1 s-acc sw2" x="10" y="144" width="320" height="46" rx="6"/><text class="tl" x="170" y="163" text-anchor="middle">3  Embryo transfer into the uterus of</text><text class="tl" x="170" y="179" text-anchor="middle">a surrogate female</text><rect class="f2 s-acc2 sw2" x="10" y="212" width="320" height="46" rx="6"/><text class="tl" x="170" y="231" text-anchor="middle">4  Surrogate carries the embryo to birth;</text><text class="tl" x="170" y="247" text-anchor="middle">young have the genes of both donors</text><path class="ln" d="M170 54L170 74" marker-end="url(#ah)"/><path class="ln" d="M170 122L170 142" marker-end="url(#ah)"/><path class="ln" d="M170 190L170 210" marker-end="url(#ah)"/></svg><figcaption>Assisted reproduction in an endangered mammal: IVF, embryo transfer and surrogacy.</figcaption></figure>
 :::
 
-Why use a surrogate? Several eggs can be taken from one female at a time, and a female who normally has a single young every few years can produce many embryos. These embryos can be given to surrogates, so the endangered species can **breed faster**. Embryos can be frozen and moved between zoos instead of moving whole animals, which avoids stress and cost and spreads genetic variation. A female that is too old, injured or too rare to risk through pregnancy can still pass on her genes. The surrogate is often a female of a **related species or subspecies that is common**, because there may be too few females of the endangered species left; the surrogate must have a uterus of the right size and be able to accept the embryo.
+Why use a surrogate? Several eggs can be taken from one female at a time, and a female who normally has a single young every few years can produce many embryos. These embryos can be given to surrogates, so the endangered species can **breed faster**. Embryos can be frozen and moved between zoos instead of moving whole animals, which avoids stress and cost and spreads genetic variation. A female that is too old, injured or too rare to risk through pregnancy can still pass on her genes. The surrogate is often a female of a **related species or subspecies that is common** (a subspecies is a recognisably different population within a species, such as a local form, that can still interbreed with others), because there may be too few females of the endangered species left; the surrogate must have a uterus of the right size and be able to accept the embryo.
 
 Limits: success rates are low; the technique must be developed for each species; the surrogate may reject the embryo or have trouble in birth; and the young may need to be taught natural behaviour. It adds young but does not remove the cause of the decline.
 
@@ -428,7 +428,7 @@ Data questions on conservation give the numbers in a protected population over t
 
 [A1]
 
-**Trend**: the population increased from 24 to 150 animals in 20 years, and the increase got larger each 5 years (14 animals in the first 5 years, 53 in the last 5). The percentage increase in each 5 years was about the same (58% from 0 to 5 years; 55% from 15 to 20 years), so the growth was exponential: each year more animals were born because more adults were breeding. [B1]
+**Trend**: the population increased from 24 to 150 animals in 20 years, and the increase got larger each 5 years (14 animals in the first 5 years, 53 in the last 5). Exponential growth is when the population grows by about the same percentage in each equal period. The percentage increases were 58%, 61%, 59% and 55% for 0 to 5, 5 to 10, 10 to 15 and 15 to 20 years (24 to 38, 38 to 61, 61 to 97 and 97 to 150), which is about 55 to 60% every 5 years, so the growth was roughly exponential: each year more animals were born because more adults were breeding. [B1]
 
 The population cannot go on increasing like this, because the reserve is fenced: food, water or space will limit it, and the rate will fall. The reserve's carrying capacity must be monitored. [B1]
 :::
@@ -520,7 +520,7 @@ Limitation: success rates are low, and the cause of the decline must also be tac
 :::
 
 :::try Stretch for A*
-Q: [6 marks] ★★★ Two plans are proposed for a forest reserve of 36 km². Plan A keeps it as one block, 6 km by 6 km. Plan B splits it into nine blocks of 2 km by 2 km. Edge effects extend 0.5 km from every edge, so only land further than 0.5 km from every edge is core habitat. A forest-interior bird needs at least 2 km² of core habitat for each breeding pair. (a) Calculate the core area and the number of breeding pairs that each plan could support. (b) Suggest two ways of improving Plan B without increasing its area.
+Q: [7 marks] ★★★ Two plans are proposed for a forest reserve of 36 km². Plan A keeps it as one block, 6 km by 6 km. Plan B splits it into nine blocks of 2 km by 2 km. Edge effects extend 0.5 km from every edge, so only land further than 0.5 km from every edge is core habitat. A forest-interior bird needs at least 2 km² of core habitat, in one connected area, for each breeding pair. (a) Calculate the core area and the number of breeding pairs that each plan could support. (b) Suggest two ways of improving Plan B without increasing its area.
 H: The core of a square of side \(s\) has side \(s - 2 \times 0.5\).
 H: For Plan B, find the core of one block and multiply by nine.
 H: For (b), think about how patches can be joined and how the edge can be reduced.
@@ -529,6 +529,7 @@ Plan B: core of one block \(= (2 - 1)^2 = 1\,\mathrm{km^2}\), so nine blocks giv
 Each block's core (1 km²) is less than the 2 km² one pair needs, so Plan B supports 0 pairs [A1]
 The total core of 9 km² looks big enough for four pairs (\(9 \div 2 = 4.5\)), but the core is split into pieces that are each too small, so the pairs cannot use it. [B1]
 (b) Join the blocks with corridors of forest so that birds can move between them and the habitat becomes larger. [B1]
+Make the blocks larger and fewer (the same area in fewer blocks has less edge, so more of it is core habitat). [B1]
 Q: [5 marks] ★★★ A conservation agency has money for one project. Project 1 is a captive breeding programme for a rare frog, with 40 frogs bred per year at a cost per frog of £500, of which half survive release. Project 2 pays rangers to protect 200 km² of the frog's habitat, which holds 600 frogs and is predicted to increase the wild population by 5% per year, at an annual cost of £30,000. The frog is threatened by a fungal disease. (a) Calculate the cost per surviving animal for Project 1 and the number of frogs added by Project 2 in one year. (b) Evaluate the two projects.
 H: (a) Project 1 costs 40 × £500 and gives 40 ÷ 2 survivors.
 H: (b) Think about the disease, genetic diversity, other species and the long term.

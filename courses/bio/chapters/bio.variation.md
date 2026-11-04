@@ -111,7 +111,7 @@ The ABO blood group is controlled by one gene with three alleles, \(I^A\), \(I^B
 
 Continuous variation is controlled by **many genes**, each with a small effect on the same characteristic. This is called **polygenic inheritance**. The effects of the alleles **add up** (they are additive). The environment also affects the characteristic.
 
-A simple model shows how this gives a range. Suppose height is controlled by three genes. At each gene, one allele (a *contributing* allele) adds 2 cm and the other adds nothing. Two parents who are each heterozygous at all three genes produce gametes with every combination of the alleles. The number of contributing alleles in an offspring can be anywhere from 0 to 6:
+A simple model shows how this gives a range. Suppose height is controlled by three genes. At each gene, one allele (a *contributing* allele) adds 2 cm and the other adds nothing. Two parents who are each heterozygous at all three genes produce gametes with every combination of the alleles. Each parent makes 2 × 2 × 2 = 8 kinds of gamete, so there are 8 × 8 = 64 equally likely offspring. Each offspring has six alleles (two at each gene), and each one is either contributing or not, so the number of contributing alleles can be anywhere from 0 to 6. The number of ways of getting 0, 1, 2, ... 6 contributing alleles is 1, 6, 15, 20, 15, 6, 1; for 1 contributing allele there are 6 ways, one for each of the six allele positions. These are the numbers of the 64 offspring in the table:
 
 | contributing alleles | extra height / cm | fraction of offspring |
 |---|---|---|
@@ -190,6 +190,8 @@ Two samples taken from the same population will almost never have exactly the sa
 A statistical test used to compare the means of **two samples** of continuous data, to decide whether the difference between the means is significant (unlikely to be due to chance).
 :::
 
+"Significant" means too large to be put down to chance. \(p = 0.05\) is the cut-off the scientist chooses: a 5% chance.
+
 ### When can you use a t-test?
 
 - You are comparing the means of **two** samples.
@@ -246,7 +248,7 @@ The probability \(p = 0.05\) means a 5% chance. If the calculated \(t\) is great
 
 **Step 2: means and standard deviations.** Sun: \(\sum x = 346\), so \(\bar{x}_1 = 346 \div 8 = 43.25\,\mathrm{mm}\). Shade: \(\sum x = 515\), so \(\bar{x}_2 = 515 \div 10 = 51.5\,\mathrm{mm}\).
 
-The squared deviations from the mean add up to 59.5 (sun) and 82.5 (shade). With \(n - 1\):
+For the sun leaves the deviations from 43.25 are −1.25, 1.75, −5.25, 0.75, 3.75, −2.25, −0.25, 2.75, and their squares (1.5625, 3.0625, 27.5625, 0.5625, 14.0625, 5.0625, 0.0625, 7.5625) add up to 59.5. For the shade leaves the deviations from 51.5 are 0.5, −2.5, 3.5, −0.5, −3.5, 2.5, −1.5, 1.5, 4.5, −4.5, and their squares (0.25, 6.25, 12.25, 0.25, 12.25, 6.25, 2.25, 2.25, 20.25, 20.25) add up to 82.5. With \(n - 1\):
 
 \[\begin{aligned} s_1 &= \sqrt{\frac{59.5}{7}} = 2.92\,\mathrm{mm} \\ s_2 &= \sqrt{\frac{82.5}{9}} = 3.03\,\mathrm{mm} \end{aligned}\]
 
@@ -258,7 +260,13 @@ The standard deviations are similar, so a t-test is suitable.
 
 **Step 4: degrees of freedom.** \(8 + 10 - 2 = 16\).
 
-**Step 5: critical value.** At \(p = 0.05\) with 16 degrees of freedom, the critical value is 2.12.
+**Step 5: critical value.** In the exam the table of critical values is printed in the question. Here is the part you need (at \(p = 0.05\)): read down the row of degrees of freedom to your number, then across to the critical value.
+
+| degrees of freedom | 14 | 15 | 16 | 17 | 18 |
+|---|---|---|---|---|---|
+| critical value | 2.14 | 2.13 | 2.12 | 2.11 | 2.10 |
+
+With 16 degrees of freedom, the critical value is 2.12.
 
 **Step 6: compare.** \(5.86 > 2.12\), so reject the null hypothesis.
 
@@ -421,7 +429,7 @@ The twins still differ by 1.9 cm although their genes are identical, so the envi
 These combinations are produced by crossing over and independent assortment in meiosis and by random fertilisation. [B1]
 Q: [6 marks] (#bio.dihybrid) ★★★ An ecologist counted snails in two habitats and recorded the number of each shell colour: yellow, brown and pink. She wants to find out whether the shell colours differ significantly between habitats. (a) Explain why a t-test is not suitable. (b) Name a more suitable test and state what the null hypothesis would be. (c) Explain why shell colour is an example of discontinuous variation, and suggest how it is inherited.
 H: What kind of data is "number of snails of each colour"?
-A: (a) The data are counts in categories (nominal data), not continuous measurements. [B1]
+A: (a) The data are counts in categories (not measurements), not continuous measurements. [B1]
 A t-test compares the means of continuous data; it cannot be used for the numbers of snails of each colour. [B1]
 (b) The chi-squared test (comparing observed and expected numbers). [B1]
 The null hypothesis is that there is no significant difference between the observed numbers of each shell colour and those expected, in the two habitats (the frequency of each colour is the same). [B1]
@@ -438,12 +446,13 @@ A: (a) \(\mathrm{SE} = 4.0 \div \sqrt{12} = 1.15\) cm for each. [B1]
 (c) \(t = \dfrac{4.0}{\sqrt{16.0 \div 12 + 16.0 \div 12}} = 4.0 \div 1.633 = 2.45\) [M1] with \(12 + 12 - 2 = 22\) degrees of freedom. [A1]
 \(2.45 > 2.07\), so reject the null hypothesis: the difference is significant. [B1]
 (d) The student is wrong: the intervals overlap slightly (49.7 to 50.3 cm) but the t-test shows a significant difference. A small overlap of two 95% confidence intervals can occur even when the difference is significant. [B1]
-Q: [6 marks] ★★★ A field biologist measured the antler length of male deer on two islands. Island P (n = 6): 61, 63, 60, 62, 64, 62 cm. Island Q (n = 6): 58, 66, 52, 71, 49, 76 cm. The mean for both islands is 62 cm. (a) Explain why a t-test would not be a suitable way to compare the islands, even though the means are the same. (b) Suggest how the two distributions might differ in a histogram. (c) Suggest one reason why the spread on island Q might be greater. (d) State what the standard deviations show about the two islands.
-H: Calculate roughly how far each value is from 62 on each island.
+Q: [6 marks] ★★★ A field biologist measured the antler length of male deer on two islands. Island P (n = 6): 61, 63, 60, 62, 64, 62 cm. Island Q (n = 6): 58, 66, 52, 71, 49, 76 cm. The mean for both islands is 62 cm. (a) Explain why a t-test would not be a suitable way to compare the islands, even though the means are the same. (b) Suggest how the two distributions might differ in a histogram. (c) Suggest one reason why the spread on island Q might be greater. (d) Calculate the standard deviation for each island (using \(n - 1\)) and state what they show about the two islands.
+H: Work out how far each value is from 62 on each island, square the differences and add them.
 A: (a) The means are equal, so the t-test would find no difference, but the two samples have very different spreads (standard deviations), and the t-test requires similar standard deviations. [B1]
 (b) Island P would give a narrow, tall histogram; island Q a wide, low one. [B1]
 (c) Island Q may have a greater range of food supply or age structure, or a greater genetic variation. [B1]
-(d) The standard deviation for P is small (about 1.4 cm) and for Q large (about 11 cm). [B1]
+(d) For P the squared differences from 62 add up to \(1 + 1 + 4 + 0 + 4 + 0 = 10\), so \(s = \sqrt{10 \div 5} = 1.4\) cm. For Q they add up to \(16 + 16 + 100 + 81 + 169 + 196 = 578\), so \(s = \sqrt{578 \div 5} = 10.8\) cm.
+The standard deviation for P is small (about 1.4 cm) and for Q large (about 11 cm). [B1]
 So the deer on island Q are much more variable in antler length. [B1]
 This shows that the same mean can hide very different variation, so the spread should always be reported with the mean. [B1]
 :::
@@ -495,7 +504,7 @@ This shows that the same mean can hide very different variation, so the spread s
 + t-test
 - chi-squared test
 - bar chart
-- Simpson's index
+- standard error
 > The t-test compares the means of two samples of continuous data. The chi-squared test is for counts in categories.
 :::
 

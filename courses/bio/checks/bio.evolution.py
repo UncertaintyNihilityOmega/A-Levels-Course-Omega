@@ -77,4 +77,6 @@ d = [4, 8, 15, 25, 33]
 eq("saturation early rate", d[0] / t[0], 2)
 eq("saturation early rate 4", d[1] / t[1], 2)
 eq("saturation late rate", (d[4] - d[3]) / (t[4] - t[3]), 0.5)
+eq("tree branch root to W/X node", 30 / 2 - 6 / 2, 12)
+eq("tree branch root to Y/Z node", 30 / 2 - 14 / 2, 8)
 print("ok", n)

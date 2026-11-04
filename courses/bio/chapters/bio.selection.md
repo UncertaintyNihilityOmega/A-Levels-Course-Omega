@@ -172,6 +172,8 @@ The reduction in genetic variation, and the change in allele frequencies, that o
 For example, a few birds are blown to a remote island and found a new population. The founders carry only a small sample of the original population's alleles. A rare allele that happens to be carried by a founder can be common in the new population, and an allele that is common on the mainland may be absent from the island.
 
 :::eg On the mainland, the frequency of a recessive allele a is 0.02. Eight individuals found a new population on an island. Of the eight, three are heterozygous (Aa) and five are homozygous AA. Calculate the frequency of the allele a in the founders and compare the proportion of aa individuals expected on the island with that on the mainland. Explain the difference.
+First two terms (taught fully in the section "The Hardy–Weinberg principle" later in this chapter): \(q\) is the frequency of the allele a, and \(q^2\) is the proportion of individuals who are aa when mating is random.
+
 The eight founders have 16 alleles in total. The three heterozygotes carry 3 copies of a.
 
 \[\begin{aligned} q_{\text{island}} &= \frac{3}{16} \\ &= 0.19 \end{aligned}\]
@@ -372,8 +374,8 @@ The pathogen is also under selection: a new strain may overcome the resistance a
 
 Maize (corn) shows two methods: **inbreeding** and **hybridisation**.
 
-- **Inbreeding**: maize plants are self-pollinated, or crossed with close relatives, for several generations. The plants become **homozygous** at more and more genes and all the plants in an inbred line become genetically similar, so the line is **uniform**. But harmful recessive alleles also become homozygous, so inbred lines are weak and have a low yield. This is **inbreeding depression**.
-- **Hybridisation**: two different inbred lines are crossed. The offspring (the F1 hybrids) are heterozygous at many genes, so the harmful recessive alleles are not expressed. The F1 hybrids are **vigorous** and high-yielding (**hybrid vigour**), and they are all genetically identical, so they are **uniform** in height and ripening time, which suits mechanical harvesting.
+- **Inbreeding**: maize plants are self-pollinated, or crossed with close relatives, for several generations. The plants become **homozygous** at more and more genes (each generation of self-pollination, an Aa plant gives AA, Aa and aa offspring, so half of the heterozygotes are lost each generation) and all the plants in an inbred line become genetically similar, so the line is **uniform**. But harmful recessive alleles also become homozygous, so inbred lines are weak and have a low yield. This is **inbreeding depression**.
+- **Hybridisation**: two different inbred lines are crossed. The two inbred lines are homozygous for harmful alleles at different genes, so each F1 hybrid has a normal allele for every gene. The offspring (the F1 hybrids) are heterozygous at many genes, so the harmful recessive alleles are not expressed. The F1 hybrids are **vigorous** and high-yielding (**hybrid vigour**), and they are all genetically identical, so they are **uniform** in height and ripening time, which suits mechanical harvesting.
 
 Seed saved from the F1 plants gives an F2 generation in which the alleles have segregated, so it is not uniform or as vigorous. Farmers therefore buy new F1 seed each year.
 

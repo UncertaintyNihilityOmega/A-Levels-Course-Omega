@@ -41,6 +41,8 @@ eq("first 5 y gain", pop[1] - pop[0], 14)
 eq("last 5 y gain", pop[4] - pop[3], 53)
 eq("first 5 y %", round((pop[1] / pop[0] - 1) * 100), 58)
 eq("last 5 y %", round((pop[4] / pop[3] - 1) * 100), 55)
+for i, w in enumerate([58, 61, 59, 55]):
+    eq(f"antelope interval {i} %", round((pop[i + 1] / pop[i] - 1) * 100), w)
 
 # --- practice
 eq("perimeter before", 4 * 2, 8)

@@ -50,7 +50,7 @@ Melanin is the dark pigment in skin, hair and the iris of the eye. It is made in
 4. Melanin gives colour to skin, hair and eyes, and absorbs some ultraviolet light.
 :::
 
-**Albinism** is a condition in which little or no melanin is made. People with albinism have very pale skin, white or pale hair and pale eyes. They burn easily in sunlight and often have poor eyesight. The usual form is caused by recessive alleles of TYR on an autosome. The mutant alleles code for a tyrosinase that is not made or that is **non-functional** (for example, because an amino acid change alters the active site).
+**Albinism** is a condition in which little or no melanin is made. People with albinism have very pale skin, white or pale hair and pale eyes. They burn easily in sunlight and often have poor eyesight. The usual form is caused by recessive alleles of TYR on an autosome (an autosome is any chromosome that is not a sex chromosome, X or Y, so the gene is on one of the 22 pairs that look the same in both sexes). The mutant alleles code for a tyrosinase that is not made or that is **non-functional** (for example, because an amino acid change alters the active site).
 
 - A person with two non-functional alleles has **no working tyrosinase**. Tyrosine cannot be converted to DOPA, so no melanin is made.
 - A **heterozygous** person has one working allele. It makes enough tyrosinase for normal pigment, so the recessive allele has no effect on the phenotype. This person is a **carrier**.
@@ -172,6 +172,8 @@ The four genes side by side:
 | F8 | factor VIII (clotting protein) | no functional factor VIII, slow clotting | X-linked, recessive |
 | HTT | huntingtin | expanded CAG repeat, abnormal protein harms neurones | autosomal, dominant |
 
+"Autosomal" means the gene is on an autosome, a chromosome that is not X or Y.
+
 ## Gibberellin and the gene Le
 
 Plants grow tall because their stem cells elongate, and gibberellin is a plant hormone that stimulates this (see [Control and coordination in plants](#bio.hormones)). A plant makes active gibberellin from an inactive precursor in a series of steps, and each step is catalysed by an enzyme coded by a gene. The gene **Le** in pea plants is the gene for one of these enzymes.
@@ -239,7 +241,7 @@ An enzyme that is made all the time unless the end product of its pathway is pre
 
 ## The lac operon
 
-A bacterium such as *Escherichia coli* usually feeds on glucose. If there is no glucose but there is lactose, it can use lactose instead, but only if it makes three proteins: a **permease** that carries lactose into the cell, the enzyme **β-galactosidase** that hydrolyses lactose to glucose and galactose, and a third enzyme, a transacetylase. Making all three when there is no lactose would waste energy. The genes for these three proteins are switched on only when lactose is present. This control is the **lac operon**.
+A bacterium such as *Escherichia coli* usually feeds on glucose. If there is no glucose but there is lactose, it can use lactose instead (in the exam you only need what lactose does, not why glucose is used first), but only if it makes three proteins: a **permease** that carries lactose into the cell, the enzyme **β-galactosidase** that hydrolyses lactose to glucose and galactose, and a third enzyme, a transacetylase. Making all three when there is no lactose would waste energy. The genes for these three proteins are switched on only when lactose is present. This control is the **lac operon**.
 
 :::def Operon
 A group of structural genes in a prokaryote that are next to each other, share one promoter and one operator, and are transcribed together as one mRNA. Switching the operator on or off switches all of the genes on or off together.
@@ -314,7 +316,7 @@ Correct Line 1: "Lactose binds to the repressor protein, changing its shape, so 
 
 ### Data on the lac operon
 
-:::eg A culture of E. coli was grown with glucose as the only sugar. At 10 minutes, lactose was added. Samples were taken and the activity of β-galactosidase was measured. Describe and explain the results.
+:::eg A culture of E. coli was grown in a medium with no sugar except a small amount of glucose, which had all been used up by 10 minutes. At 10 minutes, lactose was added (so lactose was the only sugar left). Samples were taken and the activity of β-galactosidase was measured. Describe and explain the results.
 The activity is in arbitrary units per mg of protein.
 
 | time / min | β-galactosidase activity |
@@ -418,7 +420,7 @@ Q: State the difference between a structural gene and a regulatory gene.
 A: A structural gene codes for a protein (such as an enzyme) used in metabolism or structure. A regulatory gene codes for a protein that controls whether other genes are expressed (switched on or off).
 Q: Explain the difference between an inducible enzyme and a repressible enzyme.
 A: An inducible enzyme is made only when its substrate is present (and not made when it is absent). A repressible enzyme is made unless its end product is present: a high concentration of the product switches the gene off.
-Q: State two reasons why an albino person has no melanin even though the diet supplies tyrosine.
+Q: Explain why an albino person has no melanin even though the diet supplies tyrosine.
 A: The person has two non-functional alleles of the TYR gene, so no functional tyrosinase is made. Without the enzyme, tyrosine cannot be converted to DOPA and then to melanin.
 Q: Two parents have normal pigment. They have a child with albinism. Give the genotypes of the parents, using T and t, and state the probability that their next child has albinism.
 A: Both parents are heterozygous (Tt) carriers. Each child has a 1 in 4 (25%) chance of albinism (tt).

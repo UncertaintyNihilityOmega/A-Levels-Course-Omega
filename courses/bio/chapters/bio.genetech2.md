@@ -45,7 +45,7 @@ Adenosine deaminase (ADA) is an enzyme found in all cells. A child who inherits 
 | Advantage | Explanation |
 |---|---|
 | the protein is identical to the human protein | it has the correct shape for its function and is not recognised as foreign, so it is much less likely to cause an immune (allergic) reaction than a protein from an animal |
-| no risk of infection from donors | protein from donated blood or animal tissue can carry viruses or prions; a protein made by microorganisms in a fermenter does not |
+| no risk of infection from donors | protein from donated blood or animal tissue can carry viruses or prions (prions are infectious proteins that cause diseases such as BSE); a protein made by microorganisms in a fermenter does not |
 | unlimited supply | fermenters can be scaled up, and the supply does not depend on the number of donors or animals |
 | fewer ethical and religious objections | no animals are killed, and no animal products are used (for some patients, products from pigs or cattle are unacceptable) |
 | consistent quality | every batch is the same, and the protein can be modified to work faster or longer |
@@ -74,7 +74,7 @@ A weaker answer says "it is better because it is made by bacteria". It gives no 
 Testing a person (or an embryo or fetus) for the presence of a particular allele, or a particular change in a chromosome, that causes or increases the risk of a disease.
 :::
 
-A small sample of DNA is taken (a cheek swab, blood sample, a few cells from an embryo or from a newborn baby's heel prick). The DNA is tested for a known allele, using the tools in [Tools of genetic technology](#bio.genetech): PCR copies the region, then the product is analysed using gel electrophoresis, a DNA probe or a microarray.
+A small sample of DNA is taken (a cheek swab, blood sample, a few cells from an embryo or from a newborn baby's heel prick). The DNA is tested for a known allele, using the tools in [Tools of genetic technology](#bio.genetech): PCR copies the region, then the product is analysed using gel electrophoresis, a DNA probe or a microarray. Each method shows which allele is present in a different way. A gel shows two alleles if they give PCR products or fragments of different lengths (as with a different number of CAG repeats in the HTT gene). A probe or a microarray spot that matches the mutant sequence glows only if that sequence is present in the sample.
 
 ### BRCA1 and BRCA2
 
@@ -137,7 +137,7 @@ For the advantages of screening you can give a list of benefits with a reason ea
 :::
 
 :::key Genetic screening: what a result does and does not mean
-- **Positive** result: the person has the tested allele. For a dominant allele with full penetrance (Huntington's disease) it means the disease will develop; for BRCA1 or BRCA2 it means a **much higher risk**, not certainty.
+- **Positive** result: the person has the tested allele. For a dominant allele with full penetrance (everyone who has the allele develops the disease, as in Huntington's disease) it means the disease will develop; for BRCA1 or BRCA2 it means a **much higher risk**, not certainty.
 - A positive result does **not** say when symptoms start, how severe they will be, or that treatment is possible. A **negative** result removes only the risk from the alleles tested.
 - Benefits: early treatment, preventive action and informed choices about children. Costs: anxiety, possible insurance or employment discrimination, privacy of the data, and the pressure on relatives who may share the allele.
 :::
@@ -210,6 +210,8 @@ The cells divide and make ADA, so the lymphocytes survive and the immune system 
 ### Gene therapy for inherited eye diseases
 
 In some inherited eye diseases, the light-sensitive cells of the retina die because a gene they need is faulty. In one treatment, a working copy of the gene, inside a harmless virus, is injected into the eye, close to the retina, so that the retinal cells take it up and make the missing protein.
+
+The retina is the layer at the back of the eye that contains the light-sensitive cells. Two facts about the eye are needed for the example below: it is partly shielded from the immune system, and its cells divide very little.
 
 :::eg Real context, the eye: explain why an inherited eye disease is a good target for gene therapy.
 The eye is small, so only a small amount of the vector is needed. [B1]
@@ -445,7 +447,7 @@ A: (a) \(14 \div 20 \times 100 = 70\%\) [A1]
 (b) For gene therapy: 70% had a normal immune system, which could be a long-lasting treatment that removes the need for repeated injections. [B1]
 Against: 10% developed leukaemia, a serious risk of the gene inserting at a random place, which is not caused by injections. [B1]
 Injections of ADA have no risk of insertion, but they must be repeated for life and do not give a normal immune system, so a patient's life is affected. [B1]
-Overall: the benefits of gene therapy are large, but the risk is serious, so it may be best for children who cannot have injections or who have no matched donor, and safer vectors would improve the balance. [B1]
+Overall: the benefits of gene therapy are large, but the risk is serious, so it may be best for children who cannot have injections, and safer vectors would improve the balance. [B1]
 Q: [6 marks] ★★★ Bt toxin resistance in cotton pests is a recessive trait. Farmers are required to plant 20% of their land with non-Bt cotton (a refuge) next to the Bt cotton. (a) Explain why resistance to Bt would spread quickly if all the cotton were Bt cotton. (b) Explain how the refuge slows the spread of resistance. (c) Explain why the refuge works better if resistance is recessive.
 H: In (b), where do resistant insects mate?
 H: In (c), what is the genotype of the offspring of a resistant insect and a susceptible insect, and does the Bt kill it?

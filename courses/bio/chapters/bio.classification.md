@@ -48,6 +48,8 @@ A species is a group of organisms that share the same structural (morphological)
 A species is a group of organisms that occupy the same ecological niche, which is different from the niches of other species.
 :::
 
+A niche is the role of a species in its ecosystem: where it lives, what it eats and how it behaves (defined fully in the next chapter, [Biodiversity](#bio.biodiversity)).
+
 :::cols
 :::col Biological
 **Strength**: it uses the test that matters for gene pools, whether two groups can interbreed to produce fertile offspring.
@@ -197,6 +199,8 @@ The Eukarya domain is divided into four kingdoms.
 | chloroplasts | present in some (algae), absent in others | **none** | **present** | **none** |
 | nutrition | photosynthesis (algae) or ingestion or absorption, depending on the organism | **heterotrophic**: secrete enzymes (extracellular digestion) and **absorb** the products | **autotrophic**: photosynthesis | **heterotrophic**: usually ingest food |
 | other features | very diverse; the group of eukaryotes that do not fit the other three kingdoms | reproduce by spores; no chloroplasts | large permanent vacuole; store starch; do not move from place to place | nervous coordination; usually move; store glycogen |
+
+Two words in the nutrition row: **autotrophic** means makes its own food (by photosynthesis); **heterotrophic** means takes in food made by other organisms. Extracellular digestion means the organism releases digestive enzymes outside its body and then absorbs the small molecules that result.
 | examples | *Amoeba*, *Paramecium*, *Chlorella*, *Plasmodium* | mushrooms, *Mucor*, yeast | mosses, ferns, conifers, flowering plants | insects, fish, birds, mammals |
 
 :::key How to place a eukaryote in a kingdom

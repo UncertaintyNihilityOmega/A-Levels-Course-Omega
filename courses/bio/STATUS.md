@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-11-04 · FIX · 44 reader items closed in bio.maths, practical, practical2, energy, respiration, anaerobic, photosynthesis, limiting, homeostasis, glucose, nerves, synapses, hormones, meiosis, inheritance, dihybrid: glosses and forward references, tangent and tripalmitin working shown, RQ plot now 4 points, wording fixes; checks added for bio.maths and bio.energy
+Last: 2026-11-04 · FIX · READER genecontrol to genetech2: 31 items closed (glosses for autosome, niche, trophic terms, carrying capacity, subspecies, viable, prion, penetrance, spliceosome; lac data stem and opening; GFP marker inserted with gene; worked sums for t-test, 3-gene model, SD, tree branches 12 and 8 added to figure; screening methods; checks extended)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -29,5 +29,5 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P22: reviewed 2026-10-30
 - P23: reviewed 2026-10-30
 - P24: reviewed 2026-10-30
-- READER: open
+- READER: done 2026-11-04
 - FINAL: open

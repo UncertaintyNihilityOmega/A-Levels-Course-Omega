@@ -88,7 +88,7 @@ Advantages: the gene has no introns, and it is easy to find, because the cell ha
 
 [A1]
 
-Why cDNA: a bacterium has no spliceosome, so it cannot remove the introns of the gene. It would transcribe the introns too, and the polypeptide would be wrong. The cDNA has the introns already removed, so the bacterium translates it correctly. [B1]
+Why cDNA: a bacterium cannot splice out introns (a eukaryote removes them with a molecular machine called the spliceosome, which bacteria lack). It would transcribe the introns too, and the polypeptide would be wrong. The cDNA has the introns already removed, so the bacterium translates it correctly. [B1]
 :::
 
 ### Making the gene from nucleotides
@@ -111,7 +111,7 @@ An enzyme that cuts DNA at a specific base sequence, its **recognition site**, b
 
 Bacteria make restriction endonucleases to cut up the DNA of invading viruses. Each type recognises one short sequence of 4–8 base pairs, which fits its active site; it is specific, as every enzyme is (see [Enzymes](#bio.enzymes)). It does not cut at random places.
 
-Many recognition sites are **palindromic**: the sequence on one strand read 5′ to 3′ is the same as the sequence on the other strand read 5′ to 3′. The enzyme EcoRI recognises GAATTC and cuts between the G and the A on each strand. The cuts are **staggered**, so each piece ends in a short single-stranded overhang.
+Many recognition sites are **palindromic**: the sequence on one strand read 5′ to 3′ is the same as the sequence on the other strand read 5′ to 3′. The enzyme EcoRI recognises GAATTC and cuts between the G and the A on each strand (reading each strand from 5′ to 3′). The cuts are **staggered**, so each piece ends in a short single-stranded overhang.
 
 :::html
 <figure class="fig small" data-fig="restrict"><svg viewBox="0 0 300 296" role="img" aria-label="Two panels. A: the DNA sequence GAATTC on the top strand, 5 prime to 3 prime, paired with CTTAAG on the bottom strand, with a cut between G and A on the top strand and between A and G on the bottom strand. B: after the cut, the left piece keeps G paired with C and has the single-stranded bottom bases TTAA; the right piece keeps the top bases AATT unpaired above a single G; each unpaired stretch is labelled sticky end."><text class="tl tb" x="10" y="16">A  EcoRI finds its recognition site</text><text class="tl" x="104" y="48" text-anchor="middle">G</text><text class="tl" x="104" y="82" text-anchor="middle">C</text><path class="ln-m thin dash" d="M104 55L104 68"/><text class="tl" x="126" y="48" text-anchor="middle">A</text><text class="tl" x="126" y="82" text-anchor="middle">T</text><path class="ln-m thin dash" d="M126 55L126 68"/><text class="tl" x="148" y="48" text-anchor="middle">A</text><text class="tl" x="148" y="82" text-anchor="middle">T</text><path class="ln-m thin dash" d="M148 55L148 68"/><text class="tl" x="170" y="48" text-anchor="middle">T</text><text class="tl" x="170" y="82" text-anchor="middle">A</text><path class="ln-m thin dash" d="M170 55L170 68"/><text class="tl" x="192" y="48" text-anchor="middle">T</text><text class="tl" x="192" y="82" text-anchor="middle">A</text><path class="ln-m thin dash" d="M192 55L192 68"/><text class="tl" x="214" y="48" text-anchor="middle">C</text><text class="tl" x="214" y="82" text-anchor="middle">G</text><path class="ln-m thin dash" d="M214 55L214 68"/><text class="tl" x="80" y="48" text-anchor="middle">5′</text><text class="tl" x="238" y="48" text-anchor="middle">3′</text><text class="tl" x="80" y="82" text-anchor="middle">3′</text><text class="tl" x="238" y="82" text-anchor="middle">5′</text><path class="c2 sw2" d="M115 30L115 55"/><path class="c2 sw2" d="M203 68L203 94"/><text class="tl" x="10" y="116">Both strands read GAATTC</text><text class="tl" x="10" y="132">from 5′ to 3′ (a palindrome)</text><text class="tl tb" x="10" y="164">B  Staggered cuts leave sticky ends</text><text class="tl" x="82" y="212" text-anchor="middle">G</text><text class="tl" x="82" y="246" text-anchor="middle">C</text><text class="tl" x="104" y="246" text-anchor="middle">T</text><text class="tl" x="126" y="246" text-anchor="middle">T</text><text class="tl" x="148" y="246" text-anchor="middle">A</text><text class="tl" x="170" y="246" text-anchor="middle">A</text><text class="tl" x="148" y="212" text-anchor="middle">A</text><text class="tl" x="170" y="212" text-anchor="middle">A</text><text class="tl" x="192" y="212" text-anchor="middle">T</text><text class="tl" x="214" y="212" text-anchor="middle">T</text><text class="tl" x="236" y="212" text-anchor="middle">C</text><text class="tl" x="236" y="246" text-anchor="middle">G</text><path class="ln-m thin dash" d="M82 219L82 232"/><path class="ln-m thin dash" d="M236 219L236 232"/><path class="ln-m thin" d="M142 195L142 190L220 190L220 195"/><text class="tl" x="181" y="182" text-anchor="middle">sticky end</text><path class="ln-m thin" d="M98 257L98 262L176 262L176 257"/><text class="tl" x="137" y="282" text-anchor="middle">sticky end</text></svg><figcaption>A restriction endonuclease (EcoRI) cuts the two strands at different points. B: each piece is left with a single-stranded stretch, a sticky end, that can pair with a complementary sticky end on another piece cut with the same enzyme.</figcaption></figure>
@@ -145,7 +145,7 @@ Plasmids are good vectors for bacteria because they are small and easy to isolat
 
 - an **origin of replication**, so that the bacterium's enzymes copy the plasmid, and each daughter cell receives copies;
 - one or more **recognition sites** for restriction endonucleases, where the gene can be inserted;
-- a **marker gene** to show which bacteria have taken the plasmid up (see below).
+- a **marker gene** to show which bacteria have taken up the plasmid, or, in the GFP method, the recombinant plasmid (see Step 4 below).
 
 ### Where the other enzymes are used
 
@@ -200,16 +200,16 @@ You need a way to find the last group.
 A gene on a vector whose product is easy to detect, so that you can tell which cells have taken up the vector and are expressing its genes.
 :::
 
-The older method used an **antibiotic resistance gene** as the marker: only bacteria that carry the plasmid survive on a medium that contains the antibiotic. It has a problem: it spreads resistance genes in the environment and, in medicine, it adds to the problem of antibiotic resistance (see [Antibiotics and resistance](#bio.antibiotics)).
+The older method used an **antibiotic resistance gene** as the marker: only bacteria that carry the plasmid survive on a medium that contains the antibiotic. Because the resistance gene is part of the vector, it shows only that a plasmid was taken up; it cannot tell a recombinant plasmid from one that closed up without the gene. It has a second problem: it spreads resistance genes in the environment and, in medicine, it adds to the problem of antibiotic resistance (see [Antibiotics and resistance](#bio.antibiotics)).
 
 A better marker is a gene that codes for a **fluorescent protein**. The best-known is **GFP** (green fluorescent protein), which comes from a jellyfish. If the cell has the GFP gene and expresses it, the cell makes GFP and glows when it is lit with blue or ultraviolet light.
 
-The GFP gene is put into the plasmid next to the desired gene so that both are controlled by the **same promoter**, or they are joined into one gene so that one protein contains both. Then a glowing cell must have taken up the plasmid **and** be expressing the gene, because the promoter has to work to make GFP. Advantages of fluorescent markers: they show expression directly; the cells need not be killed to test them; there is no need for antibiotics (and no antibiotic resistance gene is released); and the fluorescent protein can be seen in living cells and whole organisms.
+To find the recombinant group, the GFP gene and the desired gene are joined together, next to each other under the **same promoter** (or joined into one gene so that one protein contains both), and the joined piece is cut with the restriction endonuclease and inserted into the plasmid as **one piece**. The plasmid on its own does not carry the GFP gene. So a plasmid that closed up without the gene has no GFP gene and its bacteria do not glow, bacteria with no plasmid do not glow, and only bacteria with the recombinant plasmid can glow. A glowing cell must have taken up the recombinant plasmid **and** be expressing the gene, because the promoter has to work to make GFP. Advantages of fluorescent markers: they show expression directly; the cells need not be killed to test them; there is no need for antibiotics (and no antibiotic resistance gene is released); and the fluorescent protein can be seen in living cells and whole organisms.
 
-:::eg Real context, GFP: a scientist inserts a gene for a human enzyme into plasmids, with the GFP gene joined to the same promoter, and mixes the plasmids with bacteria. Colonies are grown on plates and viewed under blue light. Some colonies glow and some do not. Explain what each type of colony shows, and why a colony that glows is a good choice for the next stage.
-A colony that glows contains bacteria that have taken up the plasmid carrying the GFP gene and are transcribing and translating the genes under that promoter. [B1]
+:::eg Real context, GFP: a scientist inserts a gene for a human enzyme into plasmids, with the GFP gene joined to it under the same promoter and the two inserted into the plasmid as one piece, and mixes the plasmids with bacteria. Colonies are grown on plates and viewed under blue light. Some colonies glow and some do not. Explain what each type of colony shows, and why a colony that glows is a good choice for the next stage.
+A colony that glows contains bacteria that have taken up a recombinant plasmid carrying the GFP gene (and so the human gene) and are transcribing and translating the genes under that promoter. [B1]
 
-A colony that does not glow either has no plasmid, or has a plasmid that does not carry (or cannot express) the GFP gene. [B1]
+A colony that does not glow either has no plasmid, or has a plasmid that closed up without the gene (so it has no GFP gene), or has a plasmid whose GFP gene cannot be expressed. [B1]
 
 Because the GFP gene and the human gene are controlled by the same promoter, a glowing colony is likely to be expressing the human gene as well. [B1]
 
@@ -236,7 +236,7 @@ The choice of promoter also decides **when** and **where** the gene is expressed
 - **DNA ligase** forms **phosphodiester bonds** and joins them.
 - A **plasmid** is the vector: it has an origin of replication, cutting sites and marker gene(s).
 - A **promoter** that the host recognises is needed for expression.
-- A **marker gene** (for example GFP) shows which cells took up the plasmid and express the gene.
+- A **marker gene** (for example GFP, inserted into the plasmid joined to the desired gene) shows which cells took up the recombinant plasmid and express the gene.
 :::
 
 ## Gene editing
@@ -454,7 +454,7 @@ How it works:
 - **Analysing genomes.** Probes for the normal and the mutant versions of many genes are placed on a chip. The pattern of spots shows which alleles a person's DNA carries, so thousands of genes can be tested at once (see genetic screening, in the next chapter).
 - **Detecting mRNA in studies of gene expression.** mRNA is extracted from cells and converted to labelled cDNA with reverse transcriptase. The cDNA hybridises only to probes of genes that were being transcribed. A glowing spot shows that the gene is expressed in those cells, and the brightness is a measure of how much mRNA there was.
 
-Two samples can be compared on one chip by labelling one with one dye and the other with a second dye. A spot may then show: sample 1 only, sample 2 only, both (the gene is expressed in both), or neither.
+Two samples can be compared on one chip by labelling one with one dye and the other with a second dye. A spot may then show: sample 1 only, sample 2 only, both (the gene is expressed in both), or neither. The scan tells them apart by colour: the two dyes glow different colours, so a spot of the first colour is sample 1 only, a spot of the second colour is sample 2 only, a mixed colour shows both samples, and a dark spot shows neither.
 
 :::eg A microarray has nine spots, each with a probe for a different gene. cDNA from healthy cells (labelled with dye 1) and from cancer cells (labelled with dye 2) is added. The result for each gene is shown. Interpret the results.
 | gene | result |

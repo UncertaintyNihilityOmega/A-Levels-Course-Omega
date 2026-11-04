@@ -200,4 +200,6 @@ eq("quiz simpson sum of squares", round(0.7 ** 2 + 0.3 ** 2, 2), 0.58)
 for x, y in [(3, 16), (11, 7), (17, 13), (6, 4), (14, 18)]:
     assert 0 <= x <= 20 and 0 <= y <= 20
     n_checks += 1
+assert round(18 / 25 * 100) == 72
+n_checks += 1
 print("ok", n_checks)
