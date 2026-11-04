@@ -3,10 +3,9 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
-- Current course: **Biology** (`bio`, queue item 2). All 64 chapters written, all 24 packages reviewed.
-  READER finished; all reader items fixed (0 open). check and phone pass for all 64.
-  Running (Nov 4): REVIEW FINAL, with bio-preview on 5104 (user allowed it this session).
-  Left: FIX for any REVIEW FINAL items, assembly (ORGANIZER.md), guard off.
+- Biology finished (REVIEW FINAL and assembly, Nov 4). Next: queue item 3, **Reader pass on Mathematics** (`math`,
+  READER batches → FIX), then Physics. Guard on `math` at the start of the next run.
+- Waiting for the reset at 21:50 Nov 4 (Istanbul): 5-hour window over the 75% gate.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
@@ -14,7 +13,6 @@
   notch and home bar cover no text, menu or toast; dark mode from the system and from the theme button (status bar
   matches); Mac Safari File → Add to Dock, then the same offline open. Progress in the home-screen app is separate
   from Safari's.
-- Biology is planned (64 chapters, 24 packages).
 - Per-course numbers: `node engine/status.js`.
 
 ## Rules
@@ -27,7 +25,7 @@
   update passes for the new syllabuses then.
 
 ## Done
-- Mathematics (A Level, 62 chapters), Physics (39), Chemistry (49): complete.
+- Mathematics (A Level, 62 chapters), Physics (39), Chemistry (49), Biology (64): complete.
 - GitHub Pages: every push to `main` checks, builds and publishes the site.
 - About pages for every unbuilt course (`core/about.<c>.md`): each is its course's only sidebar entry until the first chapter is written.
 
@@ -38,7 +36,7 @@
    colour contrast in light and dark (WCAG AA), focus outlines, text zoom to 200%, reduced motion.
    Automation: create the `zta-agent-run` scheduled task and the lock (AGENT-RUN.md "Automatic runs"), test one run,
    then let it continue the queue from item 2.
-2. [ ] **Biology** (`bio`): gold chapter + `done LEAD` → packages → reviews → READER → FIX → REVIEW FINAL.
+2. [x] **Biology** (`bio`): gold chapter + `done LEAD` → packages → reviews → READER → FIX → REVIEW FINAL.
 3. [ ] **Reader pass** on Mathematics, then Physics (READER batches → FIX), as its own run.
 4. [ ] **Further Mathematics** (`math.fm.*`, an extension of the Maths course): LEAD for the extension
    (`courses/math/FURTHER.md`) → packages P19+ → reviews → READER for the new chapters → FIX → REVIEW FINAL.
