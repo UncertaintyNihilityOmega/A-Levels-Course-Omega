@@ -42,7 +42,7 @@ Chi-squared: calculated value below the critical value means no significant diff
 These test one skill each. Try to finish each in a minute or two.
 
 :::try Quick questions 1–5
-Q: [3 marks] ★★ (#bio.energy) Stearic acid, a fatty acid, is respired completely: \(\ce{C18H36O2 + 26O2 -> 18CO2 + 18H2O}\).
+Q: [3 marks] (#bio.energy) ★★ Stearic acid, a fatty acid, is respired completely: \(\ce{C18H36O2 + 26O2 -> 18CO2 + 18H2O}\).
 
 (a) Calculate the respiratory quotient (RQ) for this reaction. [2]
 
@@ -51,7 +51,7 @@ A: (a) \(\mathrm{RQ} = \dfrac{\text{CO}_2 \text{ produced}}{\text{O}_2 \text{ ta
 
 (b) The substrate is lipid (fat) [B1].
 
-Q: [3 marks] ★★ (#bio.photosynthesis) In a chromatogram of leaf pigments, one spot has its centre 4.2 cm from the origin and the solvent front is 9.0 cm from the origin.
+Q: [3 marks] (#bio.photosynthesis) ★★ In a chromatogram of leaf pigments, one spot has its centre 4.2 cm from the origin and the solvent front is 9.0 cm from the origin.
 
 (a) Calculate the \(R_f\) value of the pigment. [2]
 
@@ -60,7 +60,7 @@ A: (a) \(R_f = \dfrac{\text{distance moved by the pigment}}{\text{distance moved
 
 (b) Carotene is more soluble in the solvent (or less strongly attracted to the paper) so it is carried further [B1].
 
-Q: [5 marks] ★★ (#bio.dihybrid) A test cross between a heterozygous plant and a homozygous recessive plant is expected to give dominant and recessive offspring in the ratio 1 : 1. A student counted 100 offspring: 58 dominant and 42 recessive. The chi-squared formula is \(\chi^2 = \sum \dfrac{(O - E)^2}{E}\). Critical values at \(p = 0.05\): 1 degree of freedom 3.84; 2 degrees of freedom 5.99; 3 degrees of freedom 7.81.
+Q: [5 marks] (#bio.dihybrid) ★★ A test cross between a heterozygous plant and a homozygous recessive plant is expected to give dominant and recessive offspring in the ratio 1 : 1. A student counted 100 offspring: 58 dominant and 42 recessive. The chi-squared formula is \(\chi^2 = \sum \dfrac{(O - E)^2}{E}\). Critical values at \(p = 0.05\): 1 degree of freedom 3.84; 2 degrees of freedom 5.99; 3 degrees of freedom 7.81.
 
 Calculate \(\chi^2\) and state the conclusion.
 A: Expected numbers are 50 and 50 [B1].
@@ -71,23 +71,23 @@ Degrees of freedom = 2 classes − 1 = 1, so the critical value is 3.84 [B1].
 
 \(2.56 < 3.84\), so there is no significant difference between the observed and expected numbers: the results fit a 1 : 1 ratio and any difference is due to chance [B1].
 
-Q: [4 marks] ★★ (#bio.selection) A recessive allele makes frogs albino. In a population of 25 000 frogs, 40 are albino. Use the Hardy–Weinberg equations \(p + q = 1\) and \(p^2 + 2pq + q^2 = 1\) to calculate the number of frogs expected to be carriers (heterozygous).
+Q: [4 marks] (#bio.selection) ★★ A recessive allele makes frogs albino. In a population of 25 000 frogs, 40 are albino. Use the Hardy–Weinberg equations \(p + q = 1\) and \(p^2 + 2pq + q^2 = 1\) to calculate the number of frogs expected to be carriers (heterozygous).
 A: \(q^2 = \dfrac{40}{25\,000} = 0.0016\) so \(q = 0.04\) [M1] [A1]
 
 \(p = 1 - 0.04 = 0.96\) and \(2pq = 2 \times 0.96 \times 0.04 = 0.0768\) [M1]
 
 Number of carriers \(= 0.0768 \times 25\,000 = 1920\) [A1]
 
-Q: [3 marks] ★ (#bio.biodiversity) On day 1, 72 freshwater shrimps are caught, marked and released. On day 3, 54 are caught and 18 of them are marked. The Lincoln index is \(N = \dfrac{n_1 \times n_2}{m_2}\).
+Q: [3 marks] (#bio.biodiversity) ★ On day 1, 72 freshwater shrimps are caught, marked and released. On day 3, 54 are caught and 18 of them are marked. The Lincoln index is \(N = \dfrac{n_1 \times n_2}{m_2}\).
 
-Estimate the population size and state one assumption you made.
+Calculate the estimated population size and state one assumption you made.
 A: \(N = \dfrac{72 \times 54}{18}\) [M1] \(= 216\) [A1]
 
 Any one assumption: marked shrimps mix randomly with the rest and are not harmed or made easier to catch by the mark; no (or equal) births, deaths, immigration or emigration between the samples; the mark does not wear off [B1].
 :::
 
 :::try Quick questions 6–10
-Q: [3 marks] ★★ (#bio.biodiversity) A pond sample contains four species with 28, 12, 6 and 4 individuals. Simpson's index of diversity is \(D = 1 - \sum \left(\dfrac{n}{N}\right)^2\). Calculate \(D\). A second pond has \(D = 0.85\): state what this shows.
+Q: [3 marks] (#bio.biodiversity) ★★ A pond sample contains four species with 28, 12, 6 and 4 individuals. Simpson's index of diversity is \(D = 1 - \sum \left(\dfrac{n}{N}\right)^2\). Calculate \(D\). A second pond has \(D = 0.85\): state what this shows.
 A: \(N = 50\), so
 
 \[\begin{aligned} \sum (n/N)^2 &= 0.56^2 + 0.24^2 + 0.12^2 + 0.08^2 \\ &= 0.3136 + 0.0576 + 0.0144 + 0.0064 \\ &= 0.392 \end{aligned}\] [M1]
@@ -96,7 +96,7 @@ A: \(N = 50\), so
 
 The second pond is more diverse (more species and/or a more even spread of individuals) [B1].
 
-Q: [3 marks] ★★ (#bio.genetech) A PCR starts with 5 copies of a target DNA sequence.
+Q: [3 marks] (#bio.genetech) ★★ A PCR starts with 5 copies of a target DNA sequence.
 
 (a) Calculate the number of copies after 12 cycles, assuming every strand is copied each time. [2]
 
@@ -105,7 +105,7 @@ A: (a) Each cycle doubles the number: \(5 \times 2^{12}\) [M1] \(= 20\,480\) [A1
 
 (b) The hydrogen bonds between the two strands break, so the DNA denatures into single strands [B1].
 
-Q: [3 marks] ★★ (#bio.nerves) An action potential travels along a myelinated motor neurone 1.8 m long in 15 ms.
+Q: [3 marks] (#bio.nerves) ★★ An action potential travels along a myelinated motor neurone 1.8 m long in 15 ms.
 
 (a) Calculate the speed of conduction in m s⁻¹. [2]
 
@@ -114,7 +114,7 @@ A: (a) \(15\ \mathrm{ms} = 0.015\ \mathrm{s}\); speed \(= \dfrac{1.8}{0.015}\) [
 
 (b) The action potential jumps from one node of Ranvier to the next (saltatory conduction), because depolarisation can only occur at the nodes, so it does not have to be regenerated along the whole length [B1].
 
-Q: [4 marks] ★★ (#bio.synapses) A relaxed sarcomere is 2.4 µm long and its A band is 1.6 µm long. When the muscle contracts the sarcomere shortens to 2.0 µm.
+Q: [4 marks] (#bio.synapses) ★★ A relaxed sarcomere is 2.4 µm long and its A band is 1.6 µm long. When the muscle contracts the sarcomere shortens to 2.0 µm.
 
 (a) Calculate the total length of the I bands in the relaxed and in the contracted sarcomere. [2]
 
@@ -123,24 +123,24 @@ A: (a) Relaxed: \(2.4 - 1.6 = 0.8\) µm; contracted: \(2.0 - 1.6 = 0.4\) µm [M1
 
 (b) 1.6 µm [B1], because the A band is the length of the thick (myosin) filaments, which do not shorten; the thin (actin) filaments slide between them [B1].
 
-Q: [2 marks] ★ (#bio.microscopy) A mitochondrion in an electron micrograph measures 36 mm long. The magnification is ×12 000. Calculate its actual length in µm.
+Q: [2 marks] (#bio.microscopy) ★ A mitochondrion in an electron micrograph measures 36 mm long. The magnification is ×12 000. Calculate its actual length in µm.
 A: Actual length \(= \dfrac{36\ \mathrm{mm}}{12\,000}\) [M1] \(= 0.0030\ \mathrm{mm} = 3.0\ \mu\mathrm{m}\) [A1]
 :::
 
 :::try Quick questions 11–15
-Q: [3 marks] ★ (#bio.photosynthesis) In the Calvin cycle, name the enzyme that fixes carbon dioxide, the 5-carbon compound it combines with, and the 3-carbon compound formed.
+Q: [3 marks] (#bio.photosynthesis) ★ In the Calvin cycle, name the enzyme that fixes carbon dioxide, the 5-carbon compound it combines with, and the 3-carbon compound formed.
 A: Rubisco [B1]; ribulose bisphosphate (RuBP) [B1]; glycerate 3-phosphate (GP) [B1]. (Two molecules of GP form from each RuBP and CO₂.)
 
-Q: [3 marks] ★★ (#bio.genecontrol) In \(E.\,coli\), the enzyme β-galactosidase is made only when lactose is present and glucose is absent. Explain how lactose switches on the gene for the enzyme.
+Q: [3 marks] (#bio.genecontrol) ★★ In \(E.\,coli\), the enzyme β-galactosidase is made only when lactose is present and glucose is absent. Explain how lactose switches on the gene for the enzyme.
 A: Lactose binds to the repressor protein [B1], changing its shape so it cannot bind to the operator [B1]; RNA polymerase can then bind to the promoter and transcribe the structural genes [B1].
 
-Q: [3 marks] ★ (#bio.homeostasis) State where ADH is made, where it is released from, and how it changes the collecting duct.
+Q: [3 marks] (#bio.homeostasis) ★ State where ADH is made, where it is released from, and how it changes the collecting duct.
 A: ADH is made in the hypothalamus [B1] and released from the posterior pituitary gland [B1]; it makes the collecting duct cells more permeable to water by causing more aquaporins to be inserted into their membranes, so more water is reabsorbed [B1].
 
-Q: [2 marks] ★ (#bio.evolution) Distinguish between allopatric and sympatric speciation.
+Q: [2 marks] (#bio.evolution) ★ Distinguish between allopatric and sympatric speciation.
 A: Allopatric speciation happens when populations are separated by a geographical barrier [B1]; sympatric speciation happens in the same area, when populations become separated by an ecological or behavioural difference [B1].
 
-Q: [3 marks] ★★ (#bio.genetech) During gel electrophoresis, DNA fragments move towards the positive electrode, and small fragments travel further than large ones. Explain both observations.
+Q: [3 marks] (#bio.genetech) ★★ During gel electrophoresis, DNA fragments move towards the positive electrode, and small fragments travel further than large ones. Explain both observations.
 A: DNA is negatively charged because of its phosphate groups, so the fragments move towards the positive electrode [B1]. The gel is a mesh of pores [B1]; small fragments pass through it more easily than large ones, so they move further in the same time [B1].
 :::
 
@@ -149,7 +149,7 @@ A: DNA is negatively charged because of its phosphate groups, so the fragments m
 Each gives data. Quote figures with units when you describe, and give a biological reason when you explain.
 
 :::try Data 1: respiration in germinating seeds
-Q: [8 marks] ★★ (#bio.energy) Oily seeds were germinated and their gas exchange measured at three ages. The results are per hour per 1 g of seeds (invented data).
+Q: [8 marks] (#bio.energy) ★★ Oily seeds were germinated and their gas exchange measured at three ages. The results are per hour per 1 g of seeds (invented data).
 
 | age of seedling / days | oxygen taken in / mm³ | carbon dioxide produced / mm³ |
 |---|---|---|
@@ -174,12 +174,12 @@ A: (a) \(\mathrm{RQ} = \dfrac{\mathrm{CO_2}}{\mathrm{O_2}}\) [M1]; day 1: \(35/5
 (d) The seedling grows, so it has more cells (more mitochondria) respiring [B1]; more ATP is needed for cell division, DNA replication, protein synthesis and active transport, so more aerobic respiration takes in more oxygen [B1].
 :::
 
-:::plot An action spectrum: rate of photosynthesis (oxygen release) of a pondweed at different wavelengths of light (invented data). The rate peaks at 90 units at 440 nm and 100 units at 675 nm, with a minimum of 15 units at 550 nm.
---f "15+75*exp(0-((x-440)/30)**2)+85*exp(0-((x-675)/25)**2)" --x 400 700 --y 0 140 --xlabel "wavelength / nm" --ylabel "rate / arbitrary units" --pt "440,90,90 at 440 nm@ne" --pt "675,100,100 at 675 nm@nw" --pt "550,15,15 at 550 nm@ne" --xstep 50 --ystep 20 --nogrid
-:::
-
 :::try Data 2: an action spectrum
-Q: [8 marks] ★★ (#bio.photosynthesis) The graph above shows the rate of photosynthesis at different wavelengths of light.
+Q: [8 marks] (#bio.photosynthesis) ★★ The graph shows the rate of photosynthesis (oxygen release) of a pondweed at different wavelengths of light (invented data).
+
+:::plot An action spectrum: the rate of photosynthesis of a pondweed at different wavelengths of light (invented data).
+--f "15+75*exp(0-((x-440)/30)**2)+85*exp(0-((x-675)/25)**2)" --x 380 700 --y 0 140 --xlabel "wavelength / nm" --ylabel "rate / arbitrary units" --pt "440,90,90 at 440 nm@ne" --pt "675,100,100 at 675 nm@nw" --pt "550,15,15 at 550 nm@ne" --xstep 50 --ystep 20 --nogrid
+:::
 
 (a) Describe the shape of the action spectrum. [3]
 
@@ -198,7 +198,7 @@ A: (a) Two peaks, of 90 units at 440 nm (blue) and 100 units at 675 nm (red) [B1
 :::
 
 :::try Data 3: a glucose tolerance test
-Q: [9 marks] ★★★ (#bio.glucose) Two volunteers drank a glucose solution at time 0. Their blood glucose concentration was measured over two hours (invented data).
+Q: [9 marks] (#bio.glucose) ★★★ Two volunteers drank a glucose solution at time 0. Their blood glucose concentration was measured over two hours (invented data).
 
 | time / min | healthy person / mmol dm⁻³ | person with type 2 diabetes / mmol dm⁻³ |
 |---|---|---|
@@ -225,7 +225,7 @@ A: (a) The healthy person's concentration peaks at 7.9 mmol dm⁻³ at 30 minute
 :::
 
 :::try Data 4: conduction speed
-Q: [8 marks] ★★ (#bio.nerves) Four neurones were compared (invented data).
+Q: [8 marks] (#bio.nerves) ★★ Four neurones were compared (invented data).
 
 | neurone | diameter / µm | myelinated | speed / m s⁻¹ |
 |---|---|---|---|
@@ -247,7 +247,7 @@ A: (a) Myelinated neurones are much faster than unmyelinated neurones: C is 4 µ
 :::
 
 :::try Data 5: gibberellin and stem height
-Q: [9 marks] ★★★ (#bio.genecontrol) Pea plants have the gene \(Le\), which codes for an enzyme needed to make gibberellin. The allele \(le\) codes for a non-functional enzyme. Plants of two genotypes were grown with or without added gibberellin (invented data, mean of 20 plants).
+Q: [9 marks] (#bio.genecontrol) ★★★ Pea plants have the gene \(Le\), which codes for an enzyme needed to make gibberellin. The allele \(le\) codes for a non-functional enzyme. Plants of two genotypes were grown with or without added gibberellin (invented data, mean of 20 plants).
 
 | genotype | gibberellin added? | mean height / cm |
 |---|---|---|
@@ -273,7 +273,7 @@ A: (a) Without gibberellin, \(lele\) plants (23 cm) are much shorter than \(LeLe
 :::
 
 :::try Data 6: stabilising selection
-Q: [8 marks] ★★ (#bio.selection) The percentage of chicks that survive to leave the nest was recorded for broods of different sizes in a bird population (invented data).
+Q: [8 marks] (#bio.selection) ★★ The percentage of chicks that survive to leave the nest was recorded for broods of different sizes in a bird population (invented data).
 
 | clutch size | chicks surviving / % |
 |---|---|
@@ -297,7 +297,7 @@ A: (a) Survival rises from 52% at a clutch of 2 to a maximum of 88% at a clutch 
 :::
 
 :::try Data 7: a bottleneck
-Q: [9 marks] ★★★ (#bio.conservation) An island bird declined and was then bred in captivity (invented data). The number of alleles at one gene locus was counted each time.
+Q: [9 marks] (#bio.conservation) ★★★ An island bird declined and was then bred in captivity (invented data). The number of alleles at one gene locus was counted each time.
 
 | year | adult birds | alleles at the locus |
 |---|---|---|
@@ -323,7 +323,7 @@ A: (a) The number fell from 400 in 1970 to 12 in 1985 [B1], then increased to 31
 :::
 
 :::try Data 8: restriction fragments in a family
-Q: [8 marks] ★★★ (#bio.genetech) A DNA sample from each person was cut with a restriction endonuclease and the fragments separated by gel electrophoresis. The fragment sizes of one stretch of DNA are in base pairs (invented data). One allele has a recognition site in this stretch (fragments 800 and 300); the other allele does not (one fragment of 1100). The recessive disorder is caused by the allele without the site.
+Q: [8 marks] (#bio.genetech) ★★★ A DNA sample from each person was cut with a restriction endonuclease and the fragments separated by gel electrophoresis. The fragment sizes of one stretch of DNA are in base pairs (invented data). One allele has a recognition site in this stretch (fragments 800 and 300); the other allele does not (one fragment of 1100). The recessive disorder is caused by the allele without the site.
 
 | person | fragments seen / bp |
 |---|---|
@@ -358,7 +358,7 @@ A: (a) She is heterozygous [B1]: one allele is cut into 800 and 300 bp, and the 
 These need long, structured answers that combine topics. Plan the points first, then write a sentence per mark.
 
 :::try Extended 1: chemiosmosis in two organelles
-Q: [10 marks] ★★★ (#bio.respiration) ATP is made by chemiosmosis in both mitochondria and chloroplasts.
+Q: [10 marks] (#bio.respiration) ★★★ ATP is made by chemiosmosis in both mitochondria and chloroplasts.
 
 (a) Describe how ATP is made in the inner membrane of a mitochondrion. [5]
 
@@ -374,7 +374,7 @@ A: (a) Reduced NAD and reduced FAD deliver hydrogen atoms to carriers in the inn
 :::
 
 :::try Extended 2: sweating and ADH
-Q: [10 marks] ★★★ (#bio.homeostasis) A runner loses 2 dm³ of sweat during a race and does not drink.
+Q: [10 marks] (#bio.homeostasis) ★★★ A runner loses 2 dm³ of sweat during a race and does not drink.
 
 (a) Explain the effect on the water potential of the blood plasma. [2]
 
@@ -389,7 +389,7 @@ A: (a) The plasma loses water but not solutes (sweat is mostly water) [B1], so t
 :::
 
 :::try Extended 3: insulin from gene to receptor
-Q: [10 marks] ★★★ (#bio.genetech2) Human insulin is made by bacteria that contain the human gene.
+Q: [10 marks] (#bio.genetech2) ★★★ Human insulin is made by bacteria that contain the human gene.
 
 (a) Describe how the human insulin gene can be obtained and put into bacteria. [5]
 
@@ -404,7 +404,7 @@ A: (a) mRNA for insulin is extracted from β cells of the pancreas, which make a
 :::
 
 :::try Extended 4: natural selection and antibiotic resistance
-Q: [10 marks] ★★★ (#bio.antibiotics) A hospital ward treated many patients with the same antibiotic. Over two years, most of the bacteria of one species on the ward became resistant to it.
+Q: [10 marks] (#bio.antibiotics) ★★★ A hospital ward treated many patients with the same antibiotic. Over two years, most of the bacteria of one species on the ward became resistant to it.
 
 (a) Explain how the population of bacteria became mostly resistant. [6]
 
@@ -419,7 +419,7 @@ A: (a) A gene mutated by chance (random mutation), making some bacteria resistan
 :::
 
 :::try Extended 5: speciation and meiosis
-Q: [10 marks] ★★★ (#bio.evolution) Two populations of one lizard species were separated when rising sea level split an island into two.
+Q: [10 marks] (#bio.evolution) ★★★ Two populations of one lizard species were separated when rising sea level split an island into two.
 
 (a) Explain how the two populations may become two species. [5]
 
@@ -434,7 +434,7 @@ A: (a) The sea is a geographical barrier, so there is no gene flow between the p
 :::
 
 :::try Extended 6: gene therapy and the immune response
-Q: [10 marks] ★★★ (#bio.genetech2) Severe combined immunodeficiency (SCID) can be caused by a lack of the enzyme adenosine deaminase (ADA). It has been treated by gene therapy.
+Q: [10 marks] (#bio.genetech2) ★★★ Severe combined immunodeficiency (SCID) can be caused by a lack of the enzyme adenosine deaminase (ADA). It has been treated by gene therapy.
 
 (a) Explain why a person with SCID is very susceptible to infection. [2]
 
@@ -457,7 +457,7 @@ A: (a) Without ADA, the T and B lymphocytes die or fail to develop, so there are
 The formula and critical values are printed, as in Paper 4. Always state degrees of freedom and compare with the critical value.
 
 :::try Statistics 1–3
-Q: [6 marks] ★★ (#bio.dihybrid) Two plants heterozygous for two genes (on different chromosomes) were crossed. A 9 : 3 : 3 : 1 ratio is expected. Of 320 offspring, the numbers in the four phenotype classes were 171, 68, 57 and 24. \(\chi^2 = \sum \dfrac{(O-E)^2}{E}\). Critical values at \(p = 0.05\): 1 degree of freedom 3.84; 2 degrees of freedom 5.99; 3 degrees of freedom 7.81; 4 degrees of freedom 9.49.
+Q: [6 marks] (#bio.dihybrid) ★★ Two plants heterozygous for two genes (on different chromosomes) were crossed. A 9 : 3 : 3 : 1 ratio is expected. Of 320 offspring, the numbers in the four phenotype classes were 171, 68, 57 and 24. \(\chi^2 = \sum \dfrac{(O-E)^2}{E}\). Critical values at \(p = 0.05\): 1 degree of freedom 3.84; 2 degrees of freedom 5.99; 3 degrees of freedom 7.81; 4 degrees of freedom 9.49.
 
 (a) State the null hypothesis. [1]
 
@@ -478,7 +478,7 @@ A: (a) There is no significant difference between the observed and expected numb
 
 (d) Degrees of freedom \(= 4 - 1 = 3\), critical value 7.81 [B1]. \(2.47 < 7.81\), so the difference is not significant: accept the null hypothesis; the results fit a 9 : 3 : 3 : 1 ratio [B1].
 
-Q: [6 marks] ★★★ (#bio.variation) The areas of ivy leaves from a sunny wall and a shady wall were compared. Sun: 12 leaves, mean 34.2 cm², standard deviation 4.1. Shade: 12 leaves, mean 29.6 cm², standard deviation 3.6. \(t = \dfrac{|\bar x_1 - \bar x_2|}{\sqrt{\dfrac{s_1^2}{n_1} + \dfrac{s_2^2}{n_2}}}\). Critical values of \(t\) at \(p = 0.05\): 20 degrees of freedom 2.09; 21, 2.08; 22, 2.07; 23, 2.07; 24, 2.06.
+Q: [6 marks] (#bio.variation) ★★★ The areas of ivy leaves from a sunny wall and a shady wall were compared. Sun: 12 leaves, mean 34.2 cm², standard deviation 4.1. Shade: 12 leaves, mean 29.6 cm², standard deviation 3.6. \(t = \dfrac{|\bar x_1 - \bar x_2|}{\sqrt{\dfrac{s_1^2}{n_1} + \dfrac{s_2^2}{n_2}}}\). Critical values of \(t\) at \(p = 0.05\): 20 degrees of freedom 2.09; 21, 2.08; 22, 2.07; 23, 2.07; 24, 2.06.
 
 (a) State the degrees of freedom. [1]
 
@@ -495,7 +495,7 @@ A: (a) \(12 + 12 - 2 = 22\) [B1]
 
 (d) Any two: the data are continuous; the data are normally distributed; the standard deviations of the two samples are similar; the samples are random and independent [B1] [B1].
 
-Q: [7 marks] ★★★ (#bio.biodiversity) The soil water content (%) and moss cover (%) were measured at eight sites.
+Q: [7 marks] (#bio.biodiversity) ★★★ The soil water content (%) and moss cover (%) were measured at eight sites.
 
 | site | soil water / % | moss cover / % |
 |---|---|---|
@@ -527,7 +527,7 @@ A: (a) Ranks of soil water: A 7, B 3, C 8, D 4, E 1, F 6, G 2, H 5; ranks of mos
 :::
 
 :::try Statistics 4–6
-Q: [6 marks] ★★★ (#bio.stats) The temperature (°C) and the growth rate of a culture (mm per day) were measured at eight temperatures: 12, 15, 18, 21, 24, 27, 30, 33 °C. A student plotted the points, which lie close to a straight line. The student started the Pearson calculation: \(\bar x = 22.5\), \(\bar y = 5.1875\), \(s_x = 7.35\), \(s_y = 1.49\), \(\sum xy = 1009.2\) and \(n = 8\). \(r = \dfrac{\sum xy - n\bar x \bar y}{(n-1)\, s_x s_y}\). The critical value of \(r\) at \(p = 0.05\) for 8 pairs is 0.707.
+Q: [6 marks] (#bio.stats) ★★★ The temperature (°C) and the growth rate of a culture (mm per day) were measured at eight temperatures: 12, 15, 18, 21, 24, 27, 30, 33 °C. A student plotted the points, which lie close to a straight line. The student started the Pearson calculation: \(\bar x = 22.5\), \(\bar y = 5.1875\), \(s_x = 7.35\), \(s_y = 1.49\), \(\sum xy = 1009.2\) and \(n = 8\). \(r = \dfrac{\sum xy - n\bar x \bar y}{(n-1)\, s_x s_y}\). The critical value of \(r\) at \(p = 0.05\) for 8 pairs is 0.707.
 
 (a) Complete the calculation of \(r\). [3]
 
@@ -540,7 +540,7 @@ A: (a) Numerator: \(1009.2 - 8 \times 22.5 \times 5.1875 = 1009.2 - 933.75 = 75.
 
 (c) The scatter graph shows a straight-line relationship [B1]; the data are continuous (measurements) and normally distributed (or at least 5 pairs of data) [B1].
 
-Q: [6 marks] ★★★ (#bio.stats) Two groups of 25 seedlings were grown with different fertilisers and their heights measured. Group A: mean 18.4 cm, standard deviation 2.6 cm. Group B: mean 16.9 cm, standard deviation 2.2 cm. Use \(SE = \dfrac{s}{\sqrt{n}}\) and 95% confidence interval = mean ± 2 × SE.
+Q: [6 marks] (#bio.stats) ★★★ Two groups of 25 seedlings were grown with different fertilisers and their heights measured. Group A: mean 18.4 cm, standard deviation 2.6 cm. Group B: mean 16.9 cm, standard deviation 2.2 cm. Use \(SE = \dfrac{s}{\sqrt{n}}\) and 95% confidence interval = mean ± 2 × SE.
 
 (a) Calculate the standard error and the 95% confidence interval for group A. [3]
 
@@ -553,7 +553,7 @@ A: (a) \(SE = \dfrac{2.6}{\sqrt{25}} = 0.52\) cm [M1] [A1]; 95% CI \(= 18.4 \pm 
 
 (c) Because the intervals overlap, the difference between the means may not be significant (it could be due to chance) [B1]; a statistical test such as a \(t\)-test is needed to decide [B1].
 
-Q: [5 marks] ★★ (#bio.stats) Name the most suitable statistical test for each investigation, with one reason. [5]
+Q: [5 marks] (#bio.stats) ★★ Name the most suitable statistical test for each investigation, with one reason. [5]
 
 (i) Counting purple-flowered and white-flowered offspring and comparing them with a 3 : 1 ratio.
 

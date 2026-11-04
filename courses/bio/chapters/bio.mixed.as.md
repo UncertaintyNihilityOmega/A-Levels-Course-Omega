@@ -27,53 +27,53 @@ The questions get harder as each section goes on, and **no two neighbouring ques
 Recall and short calculations. Aim for full marks on every one before you move on.
 
 :::try Section 1: quick questions
-Q: [2 marks] ★ (#bio.microscopy) A drawing of a cell is 63 mm long. The cell is 18 µm long. Calculate the magnification of the drawing.
+Q: [2 marks] (#bio.microscopy) ★ A drawing of a cell is 63 mm long. The cell is 18 µm long. Calculate the magnification of the drawing.
 H: Convert both lengths to the same unit first.
 A: \(63\,\mathrm{mm} = 63\,000\,\mathrm{\mu m}\) [M1]. Magnification \(= \dfrac{63\,000}{18} = 3500\) (×3500) [A1]
 
-Q: [3 marks] ★ (#bio.enzymes) Explain how a competitive inhibitor reduces the rate of an enzyme-catalysed reaction, and why adding more substrate reduces the effect of the inhibitor.
+Q: [3 marks] (#bio.enzymes) ★ Explain how a competitive inhibitor reduces the rate of an enzyme-catalysed reaction, and why adding more substrate reduces the effect of the inhibitor.
 H: Think about which part of the enzyme the inhibitor binds to, and what the two molecules are competing for.
 A: The inhibitor has a shape similar to (complementary to) the substrate, so it fits into the active site [B1]. Fewer substrate molecules can bind, so fewer enzyme–substrate complexes form and the rate falls [B1]. With more substrate there are more substrate molecules than inhibitor molecules, so the active sites are more likely to be occupied by substrate and the rate rises again [B1].
 
-Q: [3 marks] ★ (#bio.dna) One strand of a DNA molecule has the base sequence 3′–TACGGCAT–5′. Write the base sequence of the complementary strand, and calculate the total number of hydrogen bonds between the two strands. A–T pairs have two hydrogen bonds and C–G pairs have three.
+Q: [3 marks] (#bio.dna) ★ One strand of a DNA molecule has the base sequence 3′–TACGGCAT–5′. Write the base sequence of the complementary strand, and calculate the total number of hydrogen bonds between the two strands. A–T pairs have two hydrogen bonds and C–G pairs have three.
 H: Pair each base with its complement, then count the A–T and C–G pairs separately.
 A: Complementary strand: 5′–ATGCCGTA–3′ [B1]. There are 4 A–T pairs and 4 C–G pairs, so \(4 \times 2 + 4 \times 3\) [M1] \(= 20\) hydrogen bonds [A1].
 
-Q: [2 marks] ★ (#bio.movement) A cube of agar has sides of 0.6 cm. Calculate its surface area to volume ratio.
+Q: [2 marks] (#bio.movement) ★ A cube of agar has sides of 0.6 cm. Calculate its surface area to volume ratio.
 H: A cube has six equal faces.
 A: Surface area \(= 6 \times 0.6^2 = 2.16\,\mathrm{cm^2}\) and volume \(= 0.6^3 = 0.216\,\mathrm{cm^3}\) [M1]. Ratio \(= 2.16 : 0.216 = 10 : 1\) [A1]
 
-Q: [2 marks] ★ (#bio.immunity) State two ways in which the secondary immune response differs from the primary immune response.
+Q: [2 marks] (#bio.immunity) ★ State two ways in which the secondary immune response differs from the primary immune response.
 A: It is faster (a shorter delay before antibodies appear) [B1]. More antibodies are made, reaching a higher concentration, and they stay in the blood for longer [B1]. (Also credit: memory cells are already present so more plasma cells are made.)
 
-Q: [2 marks] ★ (#bio.planttransport) State two differences between a xylem vessel element and a sieve tube element.
+Q: [2 marks] (#bio.planttransport) ★ State two differences between a xylem vessel element and a sieve tube element.
 A: A mature xylem vessel element is dead with no cytoplasm, but a sieve tube element is alive and contains cytoplasm [B1]. Xylem vessel walls are thickened with lignin, but sieve tube elements have thin cellulose walls [B1]. (Also credit: sieve tube elements have sieve plates at their ends and a companion cell next to them, but xylem vessel elements have no end walls.)
 
-Q: [3 marks] ★ (#bio.heart) Name the blood vessel that carries blood from the heart to the lungs, the vessel that carries blood from the lungs to the heart, and the vessel that carries blood from the left ventricle to the body.
+Q: [3 marks] (#bio.heart) ★ Name the blood vessel that carries blood from the heart to the lungs, the vessel that carries blood from the lungs to the heart, and the vessel that carries blood from the left ventricle to the body.
 A: Pulmonary artery [B1]. Pulmonary vein [B1]. Aorta [B1].
 
-Q: [2 marks] ★★ (#bio.carbs) State two differences between the structure of amylose and the structure of cellulose.
+Q: [2 marks] (#bio.carbs) ★★ State two differences between the structure of amylose and the structure of cellulose.
 A: Amylose is made of α-glucose but cellulose is made of β-glucose [B1]. Amylose chains coil into a helix, but cellulose chains are straight (every other glucose is inverted) and are held together in microfibrils by hydrogen bonds between chains [B1]. (Also credit: both have 1,4 glycosidic bonds; amylose is not cross-linked.)
 
-Q: [3 marks] ★★ (#bio.disease) State three ways in which HIV can be transmitted from one person to another.
+Q: [3 marks] (#bio.disease) ★★ State three ways in which HIV can be transmitted from one person to another.
 A: Any three of: unprotected sexual intercourse (through body fluids) [B1]; sharing needles or other equipment contaminated with infected blood [B1]; infected blood or blood products in a transfusion [B1]. (Also credit: from an infected mother to her baby across the placenta, at birth or in breast milk.)
 
-Q: [2 marks] ★★ (#bio.proteins) Name the type of bond that holds a polypeptide in an α-helix, and state which groups of the polypeptide form it.
+Q: [2 marks] (#bio.proteins) ★★ Name the type of bond that holds a polypeptide in an α-helix, and state which groups of the polypeptide form it.
 A: Hydrogen bonds [B1], between the C=O group of one peptide bond and the N–H group of another peptide bond a few amino acids along the chain [B1]. (Also credit: between the oxygen and the hydrogen of the polypeptide backbone.)
 
-Q: [3 marks] ★★ (#bio.mitosis) A root tip cell of a broad bean plant has 12 chromosomes. State the number of chromatids in the cell at prophase, the number of chromosomes in each daughter cell after mitosis, and the stage of mitosis at which the centromeres divide.
+Q: [3 marks] (#bio.mitosis) ★★ A root tip cell of a broad bean plant has 12 chromosomes. State the number of chromatids in the cell at prophase, the number of chromosomes in each daughter cell after mitosis, and the stage of mitosis at which the centromeres divide.
 A: 24 chromatids at prophase (12 chromosomes, each of two sister chromatids) [B1]. 12 chromosomes in each daughter cell [B1]. Anaphase [B1].
 
-Q: [3 marks] ★★ (#bio.gasexchange) State the function of cartilage, of smooth muscle and of elastic fibres in the wall of a bronchus.
+Q: [3 marks] (#bio.gasexchange) ★★ State the function of cartilage, of smooth muscle and of elastic fibres in the wall of a bronchus.
 A: Cartilage holds the airway open and stops it collapsing when the pressure inside falls on breathing in [B1]. Smooth muscle contracts to narrow the airway (and relaxes to widen it) [B1]. Elastic fibres stretch as the air enters and recoil to help force air out [B1].
 
-Q: [3 marks] ★★ (#bio.foodtests) Describe how you would test a solution for protein, and state the result if protein is present.
+Q: [3 marks] (#bio.foodtests) ★★ Describe how you would test a solution for protein, and state the result if protein is present.
 A: Add sodium hydroxide solution and then a few drops of dilute copper(II) sulfate solution (the biuret test) and mix [B1]. Protein present: the blue solution turns purple (lilac) [B1]. No protein: the solution stays blue [B1].
 
-Q: [2 marks] ★★ (#bio.synthesis) The template strand of part of a gene reads 3′–TAC CGA TTG–5′. Write the base sequence of the mRNA made from it, and the anticodon of the tRNA that pairs with the second codon of the mRNA.
+Q: [2 marks] (#bio.synthesis) ★★ The template strand of part of a gene reads 3′–TAC CGA TTG–5′. Write the base sequence of the mRNA made from it, and the anticodon of the tRNA that pairs with the second codon of the mRNA.
 A: mRNA: 5′–AUG GCU AAC–3′ (uracil, not thymine) [B1]. The second codon is GCU, so the anticodon is CGA [B1].
 
-Q: [3 marks] ★★ (#bio.antibiotics) A paper disc soaked in an antibiotic was placed on an agar plate covered with bacteria. After incubation there was a clear circle of diameter 18 mm around the disc. Calculate the area of the clear circle, and state what a larger clear zone would show.
+Q: [3 marks] (#bio.antibiotics) ★★ A paper disc soaked in an antibiotic was placed on an agar plate covered with bacteria. After incubation there was a clear circle of diameter 18 mm around the disc. Calculate the area of the clear circle, and state what a larger clear zone would show.
 H: Area of a circle \(= \pi r^2\), and the radius is half the diameter.
 A: Radius \(= 9\,\mathrm{mm}\), so area \(= \pi \times 9^2\) [M1] \(= 254\,\mathrm{mm^2}\) [A1]. A larger zone shows that the bacteria are more sensitive to that antibiotic (it stops them growing at a greater distance) [B1].
 :::
@@ -83,7 +83,7 @@ A: Radius \(= 9\,\mathrm{mm}\), so area \(= \pi \times 9^2\) [M1] \(= 254\,\math
 Each question gives data. Remember: describe with figures and units, then explain with biology. Where a calculation is asked, show your working.
 
 :::try Data response 1: onion cells in sucrose solution
-Q: [7 marks] ★ (#bio.movement) A student placed pieces of onion epidermis in sucrose solutions of different concentrations. After 20 minutes, she counted the percentage of cells in which the protoplast had pulled away from the cell wall (plasmolysed cells).
+Q: [7 marks] (#bio.movement) ★ A student placed pieces of onion epidermis in sucrose solutions of different concentrations. After 20 minutes, she counted the percentage of cells in which the protoplast had pulled away from the cell wall (plasmolysed cells).
 
 | sucrose / mol dm⁻³ | plasmolysed cells / % |
 |---|---|
@@ -96,7 +96,7 @@ Q: [7 marks] ★ (#bio.movement) A student placed pieces of onion epidermis in s
 
 (a) Describe the results. [2]
 
-(b) Estimate the concentration of sucrose solution that has the same water potential as the cell sap of the onion cells, and give the reason for your answer. [2]
+(b) Use the data to determine the concentration of sucrose solution that has the same water potential as the cell sap of the onion cells, and give the reason for your answer. [2]
 
 (c) Explain, in terms of water potential, why most cells are plasmolysed in the 0.60 mol dm⁻³ solution. [3]
 H: For (a) quote the first and last values and the range where the change is steepest.
@@ -109,7 +109,7 @@ A: (a) As the sucrose concentration increases from 0.10 to 0.60 mol dm⁻³, the
 :::
 
 :::try Data response 2: pressures in the left side of the heart
-Q: [8 marks] ★ (#bio.heart) The table shows the pressures in the left ventricle and the aorta of a resting person during one cardiac cycle. The pressure in the left atrium stayed below 1 kPa throughout.
+Q: [8 marks] (#bio.heart) ★ The table shows the pressures in the left ventricle and the aorta of a resting person during one cardiac cycle. The pressure in the left atrium stayed below 1 kPa throughout.
 
 | time / s | left ventricle / kPa | aorta / kPa |
 |---|---|---|
@@ -140,7 +140,7 @@ A: (a) Closed [B1], because the pressure in the left ventricle (3.5 kPa) is high
 :::
 
 :::try Data response 3: two protein-digesting enzymes
-Q: [8 marks] ★★ (#bio.enzymes) The table shows the activity of pepsin and of trypsin, two protein-digesting enzymes, at different pH values at 37 °C. The activity is in arbitrary units (invented data).
+Q: [8 marks] (#bio.enzymes) ★★ The table shows the activity of pepsin and of trypsin, two protein-digesting enzymes, at different pH values at 37 °C. The activity is in arbitrary units (invented data).
 
 | pH | pepsin / au | trypsin / au |
 |---|---|---|
@@ -172,7 +172,7 @@ A: (a) As the pH rises from 1 to 2, the activity of pepsin rises from 62 to a ma
 :::
 
 :::try Data response 4: antibodies in a young baby
-Q: [7 marks] ★★ (#bio.antibodies) Before birth, a baby receives antibodies from its mother across the placenta. The table shows the concentration of these maternal antibodies in a baby's blood in the first eight months of life (invented data).
+Q: [7 marks] (#bio.antibodies) ★★ Before birth, a baby receives antibodies from its mother across the placenta. The table shows the concentration of these maternal antibodies in a baby's blood in the first eight months of life (invented data).
 
 | age / months | maternal antibodies / au |
 |---|---|
@@ -201,7 +201,7 @@ A: (a) The concentration falls from 100 au at birth to 6 au at 8 months [B1]. It
 :::
 
 :::try Data response 5: a cell culture and a drug
-Q: [8 marks] ★★ (#bio.mitosis) Human cells were grown in a nutrient solution. The cells in one flask had no drug. A drug that inhibits DNA polymerase was added to a second flask at the start. The number of cells in each flask was counted at intervals (invented data).
+Q: [8 marks] (#bio.mitosis) ★★ Human cells were grown in a nutrient solution. The cells in one flask had no drug. A drug that inhibits DNA polymerase was added to a second flask at the start. The number of cells in each flask was counted at intervals (invented data).
 
 | time / h | no drug / 10⁴ cells per mL | with drug / 10⁴ cells per mL |
 |---|---|---|
@@ -229,7 +229,7 @@ A: (a) The number of cells increases from \(2.0 \times 10^4\) to \(31.6 \times 1
 :::
 
 :::try Data response 6: water potentials in a root
-Q: [6 marks] ★★ (#bio.planttransport) The table shows the water potential of the soil solution and of parts of a root of a young plant (invented data).
+Q: [6 marks] (#bio.planttransport) ★★ The table shows the water potential of the soil solution and of parts of a root of a young plant (invented data).
 
 | region | water potential / kPa |
 |---|---|
@@ -253,7 +253,7 @@ A: (a) Water moves by osmosis [B1], down a water potential gradient, from the so
 :::
 
 :::try Data response 7: insecticide-treated bed nets
-Q: [8 marks] ★★★ (#bio.disease) In 2019, insecticide-treated bed nets were given to the families in one group of villages. A second group of similar villages received none. The table shows the number of cases of malaria per 1000 children each year (invented data).
+Q: [8 marks] (#bio.disease) ★★★ In 2019, insecticide-treated bed nets were given to the families in one group of villages. A second group of similar villages received none. The table shows the number of cases of malaria per 1000 children each year (invented data).
 
 | year | with nets / cases per 1000 | without nets / cases per 1000 |
 |---|---|---|
@@ -279,12 +279,12 @@ A: (a) In the villages with nets, the cases fell steadily from 210 to 70 per 100
 (d) Nets wear out and have to be replaced, and families (or governments) may not be able to afford enough new nets [B1], so some children are left unprotected and still bitten [B1]. (Also credit: not enough money for the insecticide treatment, for education about use, or for drugs.)
 :::
 
-:::plot Two kinds of haemoglobin: human adult haemoglobin and the haemoglobin of mammal X (invented), which lives at high altitude.
+:::try Data response 8: haemoglobin at altitude
+Q: [7 marks] (#bio.oxygen) ★★★ The graph shows the oxygen dissociation curves of human adult haemoglobin and of the haemoglobin of mammal X (invented), which lives at high altitude.
+
+:::plot Oxygen dissociation curves of human adult haemoglobin and of the haemoglobin of mammal X.
 --f "100*x**2.7/(3.4**2.7+x**2.7)" --f "100*x**2.7/(2.2**2.7+x**2.7)" --label "human adult haemoglobin" --label "mammal X" --x 0 16 --y 0 135 --ystep 50 --xlabel "partial pressure of oxygen / kPa" --ylabel "saturation of haemoglobin / %" --pt "4,60.8,61%@se" --pt "4,83.4,83%@nw" --pt "8,91,91%@se" --pt "8,97,97%@nw" --legend tr --alt "Two S-shaped curves. The curve for mammal X lies to the left of the curve for human haemoglobin. At 4 kPa the saturation is 83% for mammal X and 61% for human haemoglobin. At 8 kPa it is 97% for mammal X and 91% for human haemoglobin. Both curves approach 100%."
 :::
-
-:::try Data response 8: haemoglobin at altitude
-Q: [7 marks] ★★★ (#bio.oxygen) Use the graph above.
 
 (a) Compare the saturation of the two types of haemoglobin at 4 kPa. [1]
 
@@ -308,7 +308,7 @@ A: (a) At 4 kPa the haemoglobin of mammal X is 83% saturated, compared with 61% 
 These join topics, as the last part of a Paper 2 question often does. Plan each answer as a list of marking points before you write it.
 
 :::try Extended 1: starch digestion and the absorption of glucose
-Q: [8 marks] ★★★ (#bio.enzymes) Starch in a meal is digested to glucose, which is absorbed through the cells that line the small intestine. Amylase is secreted into the gut and hydrolyses starch to maltose. Maltase is an enzyme in the cell surface membrane of the epithelial cells, and it hydrolyses maltose to glucose.
+Q: [8 marks] (#bio.enzymes) ★★★ Starch in a meal is digested to glucose, which is absorbed through the cells that line the small intestine. Amylase is secreted into the gut and hydrolyses starch to maltose. Maltase is an enzyme in the cell surface membrane of the epithelial cells, and it hydrolyses maltose to glucose.
 
 (a) Explain why amylase hydrolyses starch but does not hydrolyse protein. [2]
 
@@ -328,7 +328,7 @@ A: (a) The active site of amylase has a shape complementary to starch [B1] but n
 :::
 
 :::try Extended 2: DNA replication and mitosis
-Q: [8 marks] ★★★ (#bio.dna) A skin cell divides by mitosis to make two daughter cells that must carry the same genetic information as the parent cell.
+Q: [8 marks] (#bio.dna) ★★★ A skin cell divides by mitosis to make two daughter cells that must carry the same genetic information as the parent cell.
 
 (a) Describe how semi-conservative replication makes two identical DNA molecules. [4]
 
@@ -348,7 +348,7 @@ A: (a) The hydrogen bonds between the bases break and the two strands separate, 
 :::
 
 :::try Extended 3: haemoglobin, from structure to oxygen transport
-Q: [8 marks] ★★★ (#bio.proteins) Haemoglobin is the protein that carries oxygen in red blood cells.
+Q: [8 marks] (#bio.proteins) ★★★ Haemoglobin is the protein that carries oxygen in red blood cells.
 
 (a) Describe the structure of a haemoglobin molecule. [2]
 
@@ -364,7 +364,7 @@ A: (a) Four polypeptide chains (two α-globin and two β-globin) make up the qua
 :::
 
 :::try Extended 4: too much fertiliser
-Q: [8 marks] ★★★ (#bio.planttransport) A gardener added much more fertiliser than the instructions advised to the soil around some lettuce plants. Within three days the leaves of the plants wilted and growth slowed.
+Q: [8 marks] (#bio.planttransport) ★★★ A gardener added much more fertiliser than the instructions advised to the soil around some lettuce plants. Within three days the leaves of the plants wilted and growth slowed.
 
 (a) Explain why the plants wilted. [4]
 
@@ -380,7 +380,7 @@ A: (a) The fertiliser dissolves, so the soil solution has a lower (more negative
 :::
 
 :::try Extended 5: antibodies and protein structure
-Q: [8 marks] ★★★ (#bio.antibodies) Antibodies are proteins made by plasma cells.
+Q: [8 marks] (#bio.antibodies) ★★★ Antibodies are proteins made by plasma cells.
 
 (a) Describe the structure of an antibody molecule. [3]
 
@@ -400,7 +400,7 @@ A: (a) Four polypeptide chains: two identical heavy chains and two identical lig
 :::
 
 :::try Extended 6: cholera, ions and osmosis
-Q: [8 marks] ★★★ (#bio.disease) Cholera is a disease of the small intestine. The cholera toxin causes the epithelial cells to release chloride ions into the lumen of the gut.
+Q: [8 marks] (#bio.disease) ★★★ Cholera is a disease of the small intestine. The cholera toxin causes the epithelial cells to release chloride ions into the lumen of the gut.
 
 (a) Name the pathogen that causes cholera and state how people become infected. [2]
 

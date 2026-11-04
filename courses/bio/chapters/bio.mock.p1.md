@@ -463,7 +463,7 @@ A: **C** [B1] The rate of diffusion is inversely proportional to the distance, s
 :::
 
 :::try
-Q: [1 mark] (#bio.disease) Which row correctly shows three infectious diseases? In the table, ✓ means that the statement is correct.
+Q: [1 mark] (#bio.disease) The table shows three statements about infectious diseases. Which row shows which statements are correct (✓) and which are incorrect (✗)?
 
 | | cholera is caused by a bacterium | malaria is transmitted by a mosquito | tuberculosis is caused by a virus |
 |---|---|---|---|
@@ -484,7 +484,7 @@ Q: [1 mark] (#bio.disease) Which control measure for malaria targets the vector?
 **C** improving the treatment of sewage
 
 **D** vaccinating infants against the disease
-A: **A** [B1] Mosquito larvae develop in still water, so draining it reduces the number of vectors; B targets the pathogen in patients, C controls cholera and D is not yet fully effective.
+A: **A** [B1] Mosquito larvae develop in still water, so draining it reduces the number of vectors; B targets the pathogen in patients, C controls cholera, and D protects the person, not the vector.
 :::
 
 :::try

@@ -98,6 +98,13 @@ f.circle(209, 66, 6, "f3 s-acc sw2")
 f.poly(ellipse(222, 130, 22, 11), "f3 s-acc sw2")
 f.poly(ellipse(205, 207, 20, 9), "f3 s-acc sw2")
 f.poly(ellipse(222, 180, 15, 8), "f2 s-acc sw2")
+# internal detail an electron micrograph shows (review P22): grana stacks in the chloroplasts, cristae in the mitochondrion
+for cx, cy, xs in ((222, 130, (207, 219, 231)), (205, 207, (191, 202, 213))):
+    for x0 in xs:
+        for dy in (-3, 0, 3):
+            f.line([(x0, cy + dy), (x0 + 6, cy + dy)], "ln thin", check=False)
+f.line([(209, 180), (212, 175), (215, 185), (218, 175), (221, 185), (224, 175), (227, 185), (230, 175), (234, 180)],
+       "ln thin", check=False)
 # leaders and labels A to E
 for letter, (lx, ly), (ex, ey), side in [
     ("A", (38, 56), (91, 52), "L"),
@@ -113,7 +120,9 @@ for letter, (lx, ly), (ex, ey), side in [
     f.text(lx, ly, letter, "tl tb")
 bad = f.check()
 print("\n".join(bad) if bad else "clearance ok")
-label = ("A plant cell drawn from an electron micrograph. A is the cell wall at the left edge. C is the large central vacuole. "
-         "D is the nucleus at the top right, B is a chloroplast and E is a mitochondrion, both at the right.")
+label = ("A plant cell drawn from an electron micrograph, with five structures labelled. A is the thick outer boundary. "
+         "C is a large oval structure filling the centre. D is a round structure at the top right with a small dark body "
+         "inside it. B is an oval structure at the right containing three stacks of membranes, and a similar unlabelled "
+         "one is near the bottom. E is a smaller oval structure at the right with a folded inner membrane.")
 cap = "A drawing of a plant cell as seen in an electron micrograph (not to scale). The structures are labelled A to E."
 print(f.svg((340, 250), label, cap))

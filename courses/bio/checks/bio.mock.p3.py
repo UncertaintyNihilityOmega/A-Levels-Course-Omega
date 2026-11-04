@@ -91,6 +91,7 @@ eq("endodermis divisions", m.div(m.S1_CX + m.S1_ENDO) - m.div(m.S1_CX - m.S1_END
 eq("endodermis um", 16 * 12.5, 200)
 eq("ratio ring/section", 16 / 40, 0.4)
 eq("cortex share of radius", (m.S1_R - m.S1_ENDO) / m.S1_R, 0.6)
-eq("cell Z width", 28 / 20 * 50, 70)
+eq("cell Z width", 28 / 20 * 20, 28)
+eq("S1 cortex cell um (2 divisions) close to Z", 2 * 12.5, 25)
 eq("figure ratio XY/bar", m.XY_PX / m.SCALE_BAR_PX, 28 / 20)
 print("ok")

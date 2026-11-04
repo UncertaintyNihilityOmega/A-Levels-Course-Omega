@@ -63,12 +63,12 @@ A: (a) DCPIP accepts electrons (is reduced) in place of the reduced NADP that wo
 (e) GP falls because less carbon dioxide is fixed by rubisco to RuBP, so less GP is made [B1]. RuBP rises because it is still regenerated from triose phosphate (using ATP) but is no longer used up [B1].
 :::
 
-:::plot A volunteer drank 1.0 dm³ of water at time 0. The volume of urine produced in each 30 minutes is plotted against time (invented data). It rises from about 20 cm³ to a peak of 210 cm³ at 90 minutes, then returns to about 20 cm³.
---f "20+190*exp(0-((x-90)/35)**2)+0*sqrt(170-x)" --x 0 200 --y 0 260 --xlabel "time after drinking / min" --ylabel "urine volume / cm³ per 30 min" --pt "90,210,210 at 90 min@ne" --xstep 20 --ystep 50 --nogrid
-:::
-
 :::try
-Q: [12 marks] (#bio.homeostasis) The graph above shows the volume of urine produced by a volunteer who drank 1.0 dm³ of water at time 0.
+Q: [12 marks] (#bio.homeostasis) A volunteer drank 1.0 dm³ of water at time 0. The graph shows the volume of urine the volunteer produced in each 30 minutes (invented data).
+
+:::plot Volume of urine produced in each 30 minutes after drinking 1.0 dm³ of water at time 0 (invented data).
+--f "20+190*exp(0-((x-90)/35)**2)" --x 0 180 --y 0 260 --xlabel "time after drinking / min" --ylabel "urine volume / cm³ per 30 min" --pt "90,210,210 at 90 min@ne" --xstep 20 --ystep 50 --nogrid
+:::
 
 (a) Describe the changes in the volume of urine produced after the water was drunk. [3]
 
@@ -82,14 +82,12 @@ A: (a) The volume rises from 20 cm³ per 30 minutes at time 0 to a peak of 210 c
 (c) Glucagon binds to a specific receptor on the surface membrane of the liver cell [B1]; the receptor changes its shape (conformational change), which activates a G-protein [B1]; the G-protein activates adenylyl cyclase, which converts ATP to cyclic AMP (cAMP), the second messenger [B1]; cAMP activates protein kinase A, which starts an enzyme cascade of phosphorylation, amplifying the signal [B1]; the enzymes break down glycogen to glucose, which leaves the cell and enters the blood [B1].
 :::
 
-**Figure for Question 4**
+:::try
+Q: [10 marks] (#bio.synapses) The figure shows a relaxed sarcomere in a muscle.
 
 :::html
 <figure class="fig small"><svg viewBox="0 0 330 160" role="img" aria-label="A relaxed sarcomere in longitudinal section. Thin filaments run inwards from a thick vertical line at each end. Two thick filaments lie in the middle. Letter P marks a thin filament, Q marks a thick filament, R marks the vertical line at one end of the sarcomere, and S marks a bracket over the central gap between the ends of the thin filaments."><path class="c2 sw2" d="M40 60L144 60"/><path class="c2 sw2" d="M186 60L290 60"/><path class="c2 sw2" d="M40 82L144 82"/><path class="c2 sw2" d="M186 82L290 82"/><path class="c2 sw2" d="M40 104L144 104"/><path class="c2 sw2" d="M186 104L290 104"/><rect class="f1 s-acc sw2" x="82" y="67" width="167" height="8"/><rect class="f1 s-acc sw2" x="82" y="89" width="167" height="8"/><path class="ln thick" d="M40 48L40 116"/><path class="ln thick" d="M290 48L290 116"/><path class="ln-m thin" d="M144 50L144 44L186 44L186 50"/><text class="tl tb" x="165" y="36" text-anchor="middle">S</text><text class="tl tb" x="91" y="28" text-anchor="middle">P</text><path class="ln-m thin" d="M91 36L91 57"/><text class="tl tb" x="165" y="150" text-anchor="middle">Q</text><path class="ln-m thin" d="M165 136L165 99"/><text class="tl tb" x="290" y="150" text-anchor="middle">R</text><path class="ln-m thin" d="M290 136L290 120"/></svg><figcaption>A relaxed sarcomere (a drawing, not a micrograph). The length of the sarcomere is 2.4 µm; letters P to S are used in the question.</figcaption></figure>
 :::
-
-:::try
-Q: [10 marks] (#bio.synapses) The figure above shows a relaxed sarcomere in a muscle.
 
 (a) Name the parts labelled P, Q, R and S. [4]
 
@@ -141,7 +139,7 @@ A: (a) Males are XY and have only one X chromosome, so they carry only one allel
 :::
 
 :::try
-Q: [8 marks] (#bio.dihybrid) A plant heterozygous for two genes on the same chromosome pair, AaBb, was self-pollinated. If the genes were on different chromosomes, the offspring would be expected in the ratio 9 : 3 : 3 : 1. There were 320 offspring, with phenotype numbers 210, 31, 28 and 51 (in the order of the ratio). The chi-squared formula is \(\chi^2 = \sum \dfrac{(O - E)^2}{E}\). Critical values at \(p = 0.05\): 1 degree of freedom 3.84; 2, 5.99; 3, 7.81; 4, 9.49; 5, 11.07.
+Q: [8 marks] (#bio.dihybrid) A plant heterozygous for two genes, AaBb, was self-pollinated. If the genes were on different chromosomes, the offspring would be expected in the ratio 9 : 3 : 3 : 1. There were 320 offspring, with phenotype numbers 210, 31, 28 and 51 (in the order of the ratio). The chi-squared formula is \(\chi^2 = \sum \dfrac{(O - E)^2}{E}\). Critical values at \(p = 0.05\): 1 degree of freedom 3.84; 2, 5.99; 3, 7.81; 4, 9.49; 5, 11.07.
 
 (a) State the null hypothesis. [1]
 
@@ -206,14 +204,12 @@ A: (a) \(N = \dfrac{50 \times 40}{8}\) [M1] \(= 250\) [A1]
 (c) Eggs are collected from females and sperm from males and fertilised outside the body (in vitro) [B1]; the embryos are implanted into surrogate mothers (females of the same or a closely related species) [B1]; this produces more offspring than natural breeding, and gametes or embryos from different zoos can be used to keep genetic diversity (they can be frozen) [B1].
 :::
 
-**Figure for Question 10**
+:::try
+Q: [9 marks] (#bio.genetech) A crop plant was genetically modified to carry a gene for herbicide resistance. A scientist used PCR to test two plants (GM1 and GM2) and a non-modified plant (WT). Two pairs of primers were used in each tube: one pair for the inserted gene (500 base pairs) and one pair for a gene present in every plant (250 base pairs). Lane W contained water instead of DNA. The products were separated by gel electrophoresis, as shown in the figure. Lane M holds fragments of known size.
 
 :::html
 <figure class="fig small"><svg viewBox="0 0 360 192" role="img" aria-label="An agarose gel with five lanes labelled M, WT, GM1, GM2 and W. Lane M, the size marker, has four bands at 1000, 750, 500 and 250 base pairs. Lane WT has one band at 250. Lane GM1 has two bands, at 250 and 500. Lane GM2 has one band at 250. Lane W has no bands. An arrow at the right shows DNA moving down the gel towards the positive electrode at the bottom."><rect class="f1 s-acc sw2" x="56" y="38" width="280" height="127"/><rect class="fp s-acc sw2" x="69" y="42" width="30" height="5"/><text class="tl tb" x="84" y="30" text-anchor="middle">M</text><rect class="f3 s-acc2 sw2" x="69" y="52.5" width="30" height="5"/><rect class="f3 s-acc2 sw2" x="69" y="69.9914" width="30" height="5"/><rect class="f3 s-acc2 sw2" x="69" y="94.6442" width="30" height="5"/><rect class="f3 s-acc2 sw2" x="69" y="136.788" width="30" height="5"/><rect class="fp s-acc sw2" x="125" y="42" width="30" height="5"/><text class="tl tb" x="140" y="30" text-anchor="middle">WT</text><rect class="f3 s-acc2 sw2" x="125" y="136.788" width="30" height="5"/><rect class="fp s-acc sw2" x="181" y="42" width="30" height="5"/><text class="tl tb" x="196" y="30" text-anchor="middle">GM1</text><rect class="f3 s-acc2 sw2" x="181" y="136.788" width="30" height="5"/><rect class="f3 s-acc2 sw2" x="181" y="94.6442" width="30" height="5"/><rect class="fp s-acc sw2" x="237" y="42" width="30" height="5"/><text class="tl tb" x="252" y="30" text-anchor="middle">GM2</text><rect class="f3 s-acc2 sw2" x="237" y="136.788" width="30" height="5"/><rect class="fp s-acc sw2" x="293" y="42" width="30" height="5"/><text class="tl tb" x="308" y="30" text-anchor="middle">W</text><text class="tl" x="50" y="59" text-anchor="end">1000</text><text class="tl" x="50" y="76.4914" text-anchor="end">750</text><text class="tl" x="50" y="101.144" text-anchor="end">500</text><text class="tl" x="50" y="143.288" text-anchor="end">250 bp</text><path class="c1 sw2" d="M348 70L348 150" marker-end="url(#ah)"/><text class="tl tb" x="180" y="184" text-anchor="middle">+</text></svg><figcaption>A gel after PCR and electrophoresis (a drawing). Lane M holds DNA fragments of known size; the wells are at the top and the positive electrode is at the bottom.</figcaption></figure>
 :::
-
-:::try
-Q: [9 marks] (#bio.genetech) A crop plant was genetically modified to carry a gene for herbicide resistance. A scientist used PCR to test two plants (GM1 and GM2) and a non-modified plant (WT). Two pairs of primers were used in each tube: one pair for the inserted gene (500 base pairs) and one pair for a gene present in every plant (250 base pairs). Lane W contained water instead of DNA. The products were separated by gel electrophoresis, as shown in the figure above. Lane M holds fragments of known size.
 
 (a) Describe the three stages of one cycle of PCR. [3]
 

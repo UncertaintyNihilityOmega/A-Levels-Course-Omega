@@ -1,6 +1,6 @@
 # STATUS: Biology
 
-Last: 2026-10-30 · FIX · READER batch 2: 30 reader items closed (bio.foodtests to bio.planttransport): colorimeter/absorbance/filters, buffer, arbitrary units, [S], gene/base/mutation glosses, telomere promise now in bio.dna, tangent, water potential table, antigen, cytoskeleton, plant structure words, cohesion-tension link
+Last: 2026-10-30 · REVIEW P22, P23, P24 · 2 items (mock.p1 too recall-heavy: replace 8+ recall questions with data/SVG ones; bio.foodtests 2 raw revise links). Fixed: mixed.as and mixed.a2 showed every revise link as raw (#id) text (stars before the link; all 64 swapped, check script updated); all mock and mixed figures/plots moved inside their questions (nested :::html/:::plot render inside the question: checked), plot captions no longer give the description away; mock.p2 cell figure gets grana and cristae and a neutral aria-label; mock.p3 scale bar 20 um (cell Z 28 um, matches S1 cortex); mock.p4 Q7 stem no longer gives linkage away, urine plot axis; mock.p5 Q1(e) tenfold dilution noted, Next ends the course at the course map; syllabus command words for estimate. All answers and mark schemes recomputed; mock times, totals, question counts and skill splits match FACTS.md; questions original.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -26,8 +26,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P19: reviewed 2026-10-30
 - P20: reviewed 2026-10-30
 - P21: reviewed 2026-10-30
-- P22: written 2026-10-30
-- P23: written 2026-10-30
-- P24: written 2026-10-30
+- P22: reviewed 2026-10-30
+- P23: reviewed 2026-10-30
+- P24: reviewed 2026-10-30
 - READER: open
 - FINAL: open

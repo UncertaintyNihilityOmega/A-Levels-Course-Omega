@@ -55,7 +55,8 @@ for sec in sections:
     title = sec.split("\n")[0]
     if not title.startswith("Section 1") and not title.startswith("Section 2"):
         continue
-    qs = re.findall(r"^Q: \[(\d+) marks\] (★+) \(#([\w.]+)\)", sec, flags=re.M)
+    # review P22: the revise link must come straight after the marks, before the stars, or the page shows it raw
+    qs = [(m, s, i) for m, i, s in re.findall(r"^Q: \[(\d+) marks\] \(#([\w.]+)\) (★+)", sec, flags=re.M)]
     ids = [q[2] for q in qs]
     for a, b in zip(ids, ids[1:]):
         assert topic[a] != topic[b], f"neighbours from the same topic: {a}, {b}"

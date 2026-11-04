@@ -15,7 +15,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 PX = 6                      # px per graticule division in Fig 1
 S1_CX, S1_CY, S1_R, S1_ENDO = 170, 140, 120, 48
 SCALE_X0, SCALE_Y = 20, 292
-SCALE_BAR_PX, XY_PX = 40, 56  # Fig 2: 50 um bar (40 px) and line XY (56 px)
+SCALE_BAR_PX, XY_PX = 40, 56  # Fig 2: 20 um bar (40 px) and line XY (56 px); review P24: 20 um so cell Z (28 um) matches the S1 cortex cells (2 divisions = 25 um)
 
 
 def div(x):
@@ -116,13 +116,13 @@ def fig2(problems):
     f.line([(30, by), (30 + SCALE_BAR_PX, by)], "ln sw2", check=False)
     f.line([(30, by - 5), (30, by + 5)], "ln", check=False)
     f.line([(30 + SCALE_BAR_PX, by - 5), (30 + SCALE_BAR_PX, by + 5)], "ln", check=False)
-    f.text(30 + SCALE_BAR_PX + 12, by + 4, "50 µm", "tl")
+    f.text(30 + SCALE_BAR_PX + 12, by + 4, "20 µm", "tl")
     label = ("Photomicrograph P, a drawing of root cortex at high power: about twenty thin-walled six-sided cells packed "
              "together, each with a small dark nucleus and a few small oval starch grains. A dashed box surrounds two "
              "neighbouring cells at the top. A thick line XY crosses the widest part of one cell near the middle, and a "
-             "scale bar at the bottom is labelled 50 micrometres.")
+             "scale bar at the bottom is labelled 20 micrometres.")
     cap = ("Fig. 2.2 Photomicrograph P (drawn). The dashed box holds two neighbouring cells. XY crosses cell Z. The scale bar "
-           "represents 50 µm.")
+           "represents 20 µm.")
     f.vb = (340, 338)
     problems += f.check()
     return f.svg((340, 338), label, cap)

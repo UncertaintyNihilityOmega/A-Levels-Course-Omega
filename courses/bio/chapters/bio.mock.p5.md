@@ -47,7 +47,7 @@ A: (a) Hypothesis: increasing the concentration of F decreases the growth of yea
 (e) Marking points:
 
 - put the same volume of the yeast culture in broth (for example 9.0 cm³, from a well mixed culture) into every tube, so each starts with the same number of cells [B1];
-- add the same volume (for example 1.0 cm³) of each F solution (0.25, 0.50, 1.0, 2.0 and 4.0%) to separate tubes, and the same volume of sterile water to a control tube with no F [B1];
+- add the same volume (for example 1.0 cm³) of each F solution (0.25, 0.50, 1.0, 2.0 and 4.0%) to separate tubes, and the same volume of sterile water to a control tube with no F [B1] (1.0 cm³ in a total of 10.0 cm³ makes the concentration in each tube one tenth of the solution added, 0.025 to 0.40%; credit a plan that states this or that adds F to the broth before the yeast);
 - put all the tubes together in the incubator at 30 °C for the same time (for example 24 hours); then mix each tube and measure its absorbance with the colorimeter, set to zero with a tube of nutrient broth with no yeast [B1];
 - set up at least three tubes (replicates) for each concentration and the control, and calculate the mean absorbance for each concentration, treating any anomalous result separately [B1].
 
@@ -63,10 +63,6 @@ The decrease is divided by the control value, then multiplied by 100 [M1]. The a
 Marks by skill in Question 1: planning 15 ((a) to (f)), analysis, conclusions and evaluation 3 ((g) and (h)).
 :::
 
-:::html
-<!--FIG:bars--><figure class="fig small"><svg viewBox="0 0 340 252" role="img" aria-label="Bar chart of the mean dry mass in milligrams of lettuce seedlings after 21 days. Control about 41, 1.0 per cent extract about 43, 2.0 per cent extract about 48. Each bar has an error bar showing plus and minus one standard error; the bars of the control and the 1.0 per cent extract overlap, and the bar of the 2.0 per cent extract does not overlap the control."><path class="gr" d="M58 220L322 220"/><text class="ts" x="52" y="223" text-anchor="end">0</text><path class="gr" d="M58 188L322 188"/><text class="ts" x="52" y="191" text-anchor="end">10</text><path class="gr" d="M58 156L322 156"/><text class="ts" x="52" y="159" text-anchor="end">20</text><path class="gr" d="M58 124L322 124"/><text class="ts" x="52" y="127" text-anchor="end">30</text><path class="gr" d="M58 92L322 92"/><text class="ts" x="52" y="95" text-anchor="end">40</text><path class="gr" d="M58 60L322 60"/><text class="ts" x="52" y="63" text-anchor="end">50</text><path class="gr" d="M58 28L322 28"/><text class="ts" x="52" y="31" text-anchor="end">60</text><path class="ax" d="M58 28L58 220"/><path class="ax" d="M58 220L322 220"/><rect class="f1 s-acc sw2" x="76" y="88.2" width="52" height="131.8"/><path class="ln sw2" d="M102 82.8L102 93.5"/><path class="ln sw2" d="M95 82.8L109 82.8"/><path class="ln sw2" d="M95 93.5L109 93.5"/><text class="tl" x="102" y="236" text-anchor="middle">control</text><rect class="f1 s-acc sw2" x="164" y="82.4" width="52" height="137.6"/><path class="ln sw2" d="M190 76.5L190 88.3"/><path class="ln sw2" d="M183 76.5L197 76.5"/><path class="ln sw2" d="M183 88.3L197 88.3"/><text class="tl" x="190" y="236" text-anchor="middle">1.0% extract</text><rect class="f1 s-acc sw2" x="252" y="66.7" width="52" height="153.3"/><path class="ln sw2" d="M278 60.7L278 72.7"/><path class="ln sw2" d="M271 60.7L285 60.7"/><path class="ln sw2" d="M271 72.7L285 72.7"/><text class="tl" x="278" y="236" text-anchor="middle">2.0% extract</text><text class="tl" x="10" y="16">mean dry mass / mg</text></svg><figcaption>Fig. 2.1 Mean dry mass of lettuce seedlings (n = 12 in each group). Error bars show ±1 standard error.</figcaption></figure>
-:::
-
 :::try
 Q: [12 marks] (#bio.evaluation) An extract of seaweed is used as an organic fertiliser. A grower made the hypothesis that seaweed extract increases the growth of lettuce seedlings.
 
@@ -77,6 +73,10 @@ Thirty-six lettuce seedlings of the same variety and age were divided into three
 | control (water) | 41.2 | 5.8 | 1.7 |
 | 1.0% extract | 43.0 | 6.4 | 1.8 |
 | 2.0% extract | 47.9 | 6.5 | 1.9 |
+
+:::html
+<!--FIG:bars--><figure class="fig small"><svg viewBox="0 0 340 252" role="img" aria-label="Bar chart of the mean dry mass in milligrams of lettuce seedlings after 21 days. Control about 41, 1.0 per cent extract about 43, 2.0 per cent extract about 48. Each bar has an error bar showing plus and minus one standard error; the bars of the control and the 1.0 per cent extract overlap, and the bar of the 2.0 per cent extract does not overlap the control."><path class="gr" d="M58 220L322 220"/><text class="ts" x="52" y="223" text-anchor="end">0</text><path class="gr" d="M58 188L322 188"/><text class="ts" x="52" y="191" text-anchor="end">10</text><path class="gr" d="M58 156L322 156"/><text class="ts" x="52" y="159" text-anchor="end">20</text><path class="gr" d="M58 124L322 124"/><text class="ts" x="52" y="127" text-anchor="end">30</text><path class="gr" d="M58 92L322 92"/><text class="ts" x="52" y="95" text-anchor="end">40</text><path class="gr" d="M58 60L322 60"/><text class="ts" x="52" y="63" text-anchor="end">50</text><path class="gr" d="M58 28L322 28"/><text class="ts" x="52" y="31" text-anchor="end">60</text><path class="ax" d="M58 28L58 220"/><path class="ax" d="M58 220L322 220"/><rect class="f1 s-acc sw2" x="76" y="88.2" width="52" height="131.8"/><path class="ln sw2" d="M102 82.8L102 93.5"/><path class="ln sw2" d="M95 82.8L109 82.8"/><path class="ln sw2" d="M95 93.5L109 93.5"/><text class="tl" x="102" y="236" text-anchor="middle">control</text><rect class="f1 s-acc sw2" x="164" y="82.4" width="52" height="137.6"/><path class="ln sw2" d="M190 76.5L190 88.3"/><path class="ln sw2" d="M183 76.5L197 76.5"/><path class="ln sw2" d="M183 88.3L197 88.3"/><text class="tl" x="190" y="236" text-anchor="middle">1.0% extract</text><rect class="f1 s-acc sw2" x="252" y="66.7" width="52" height="153.3"/><path class="ln sw2" d="M278 60.7L278 72.7"/><path class="ln sw2" d="M271 60.7L285 60.7"/><path class="ln sw2" d="M271 72.7L285 72.7"/><text class="tl" x="278" y="236" text-anchor="middle">2.0% extract</text><text class="tl" x="10" y="16">mean dry mass / mg</text></svg><figcaption>Fig. 2.1 Mean dry mass of lettuce seedlings (n = 12 in each group). Error bars show ±1 standard error.</figcaption></figure>
+:::
 
 (a) Calculate the percentage increase in the mean dry mass with the 2.0% extract compared with the control. Give your answer to 3 significant figures. [2]
 
@@ -135,4 +135,4 @@ Marks by skill in Question 2: analysis, conclusions and evaluation 12. Over the 
 Links checked 24 October 2026.
 :::
 
-Next: [Course map](#bio.overview)
+Next: [Biology: the course map](#bio.overview), the end of the course: go back to the map and plan your last revision from the chapters your mock marks point to.
