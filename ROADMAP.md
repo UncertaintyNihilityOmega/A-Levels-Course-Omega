@@ -3,11 +3,9 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
-- Current course: **Biology** (`bio`, queue item 2). P1–P23 written, P1–P21 reviewed; 2 open FIX items
-  (plots inside eg: bio.anaerobic, bio.energy; bundle with the first Reader FIX).
-  Running (Oct 30): WRITE P24, READER batch 1 (bio.overview–bio.proteins). Preview bio-preview on 5104.
-  Weekly gate lifted past 95% by the user for the Biology finish (Oct 30). Left: REVIEW P22–P24, READER batches,
-  FIX rounds, REVIEW FINAL, assembly.
+- Current course: **Biology** (`bio`, queue item 2). All 64 chapters written, all 24 packages reviewed.
+  Running (Nov 4): FIX (30 items), READER batch 4 (bio.maths–bio.limiting). Headless, no preview server.
+  Left: READER batches 5–7 (bio.homeostasis–bio.mixed.a2), FIX rounds, REVIEW FINAL, assembly.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
