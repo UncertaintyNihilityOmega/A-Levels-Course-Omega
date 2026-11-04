@@ -203,3 +203,35 @@ Assumed: "spliceosome" (cDNA worked example); that the GFP gene is part of the i
 ## bio.genetech2
 Taught: recombinant human protein; insulin, factor VIII, adenosine deaminase (SCID) and the advantages and disadvantages of recombinant proteins; genetic screening (BRCA1 and BRCA2, Huntington's disease, cystic fibrosis, carrier testing, PGD, newborn screening); what a screening result does and does not mean; gene therapy (vectors: virus, liposome; ex vivo and in vivo; somatic and germ-line; SCID and eye diseases; problems); social and ethical issues of screening and gene therapy and how to write a discuss answer; GM salmon, herbicide-resistant soybean, Bt cotton and the benefits and concerns of GM crops and animals.
 Assumed: "prions" (advantages table); "full penetrance" (screening key box); how gel electrophoresis or a "DNA probe" tells two alleles apart; "matched donor" (SCID stretch answer, bone marrow transplant never introduced); the retina and why the eye is shielded from the immune system (eye worked example); "processed after translation" (factor VIII).
+
+## bio.stats
+Taught: nominal, ordinal and continuous data; population and sample and the four principles of a fair sample (random, large, representative, independent); probability, the "and" rule (multiply) and the "or" rule (add); p value and p = 0.05, significant against not significant; mean, median, mode, range, skewed data; normal distribution; standard deviation (n − 1), standard error (s ÷ √n), 95% confidence interval (mean ± 2 SE); error bars and the overlap rule of thumb; null hypothesis for each test, calculated against critical value, degrees of freedom (chi-squared classes − 1, t-test n1 + n2 − 2); choosing a test; chi-squared with expected numbers from a ratio or "no preference"; t-test with the raw formula; Pearson's r from Σxy, means and standard deviations; Spearman's rs with ranks and tied ranks; correlation is not causation (third factor, reverse, chance); finishing a part-done calculation.
+Assumed: Σxy (never said to mean "multiply each x by its own y, then add"); how Pearson and Spearman critical values are read (by n; degrees of freedom are not mentioned for them); what type of data a plain count is; "fewer than 30 values is allowed" (t-test); "one row (or column)" of data; "choice chamber".
+
+## bio.planning
+Taught: Paper 5 (1 h 15 min, 30 marks, planning about half); the ten-step planning framework; hypothesis (with reason) against prediction, sketch graphs and their shapes; independent, dependent and standardised variable and control experiment; precise wording of variables; at least five values of the IV and a justified range; accuracy, precision, repeatability, validity; percentage uncertainty; % (w/v) and mol dm⁻³ masses; proportional dilution (Vs = cf × Vf ÷ cs) and serial dilution; kinds of control; at least three replicates, anomalies, spread; a method in logical order; processing results; hazard and risk table; three model plans (copper and cress, potometer, algal balls and colour filters).
+Assumed: "confounding variable" (spot-the-error answer); "lux" and light meter, the potometer "reservoir" and "autoclaving" (named once each); how severity and probability combine into a low, medium or high risk; whether a Spearman test in a plan uses all replicate readings or the five means.
+
+## bio.evaluation
+Taught: command words calculate, describe, compare, explain, state, identify, suggest, assess, discuss; table and graph rules; choosing the calculation (mean without anomalies, percentage gain or loss, rate, SD, SE, 95% CI, a test); error bars and doubling SE bars to judge overlap; choosing and justifying a test (data type, condition); the four-part conclusion; dealing with anomalies (identify, cause, repeat or exclude, report); the evaluation table (replication, range, intervals, measurement, control, sample, validity); two worked data-analysis questions (lichens and Spearman, mice and error bars).
+Assumed: "confounded" (stretch answer); "subjective" and "objective" (evaluation table, lichen answer); "blocks" (stretch design answer); "lichen" (never said what one is); "fewer than 30 values" (t-test justification).
+
+## bio.exam.p1
+Taught: Paper 1 (40 questions, 1 h 15 min, no negative marking, pencil answer sheet); two-pass timing (about 55, 15 and 5 minutes); the six-step method (cover the options, answer, find, eliminate, check words, shade); the seven question types (recall, which row, data, calculation, diagram, sequence, NOT correct) with a worked example each; ten traps and the chapter that cures each; marking yourself as knowledge, reading or technique; using real past papers.
+Assumed: "lozenge" (the shaded oval on the answer sheet, never described).
+
+## bio.exam.p24
+Taught: Paper 2 and Paper 4 (times, marks, weights, 1.25 and 1.2 minutes a mark); the seventeen command words with a model answer each; marking points (one idea one mark, precise terms, no credit for repeating the stem, contradictions, ignore and reject, error carried forward); describing graphs in five steps; extended answers; calculation rules; drawing and labelling; synoptic pairings; a full 8-mark and 10-mark question (nitrate uptake, Hardy–Weinberg).
+Assumed: the mark tokens [B1], [M1], [A1] (M and A explained only in the Calculations section, B1 never; used from the first worked example in bio.f.basics).
+
+## bio.exam.p35
+Taught: Paper 3 and Paper 5 compared; Paper 3 skill groups and mark ranges, time at 3 minutes a mark, reading the paper first and starting timings early; skills checklists for both papers; the nine slips that lose most marks; practising without a laboratory; a full beetroot membrane plan; a Paper 3 results question (table, rate, graph, description).
+Assumed: "dot-in-circle" (graph skills row, never drawn or described); the AQA board box assumes the reader knows what the AQA board is.
+
+## bio.mixed.as
+Taught: nothing new (54 questions are claimed, 39 are present: 15 quick, 8 data response, 6 extended, 10 multiple choice, each linked to its chapter); how to use a log of lost marks; describe against explain.
+Assumed: nothing.
+
+## bio.mixed.a2
+Taught: nothing new (35 questions: 15 quick, 8 data response, 6 extended, 6 statistics); the test-choice table with degrees of freedom; a worked statistics set (chi-squared, t-test, Spearman, Pearson, SE and 95% CI, choosing tests).
+Assumed: type 2 diabetes and "insulin resistance" (Data 3); ranking with rank 1 for the highest value (Statistics 3); why Spearman is chosen when no distribution is given (Statistics 3 d).
