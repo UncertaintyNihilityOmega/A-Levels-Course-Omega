@@ -4,8 +4,9 @@
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
 - Current course: **Biology** (`bio`, queue item 2). All 64 chapters written, all 24 packages reviewed.
-  Running (Nov 4): FIX (30 items), READER batch 4 (bio.maths–bio.limiting). Headless, no preview server.
-  Left: READER batches 5–7 (bio.homeostasis–bio.mixed.a2), FIX rounds, REVIEW FINAL, assembly.
+  READER finished; all reader items fixed (0 open). check and phone pass for all 64.
+  Running (Nov 4): REVIEW FINAL, with bio-preview on 5104 (user allowed it this session).
+  Left: FIX for any REVIEW FINAL items, assembly (ORGANIZER.md), guard off.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
