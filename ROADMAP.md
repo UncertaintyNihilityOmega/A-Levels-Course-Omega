@@ -3,9 +3,9 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
-- Biology finished (REVIEW FINAL and assembly, Nov 4). Next: queue item 3, **Reader pass on Mathematics** (`math`,
-  READER batches → FIX), then Physics. Guard on `math` at the start of the next run.
-- Waiting for the reset at 21:50 Nov 4 (Istanbul): 5-hour window over the 75% gate.
+- History (`hist`, Cambridge 9489, exams 2027–2029) replaced Psychology at the user's request (Nov 7); Psychology is
+  now a summary chapter in Other Subjects (`other.psychology`). History LEAD running (Specialist, Opus). Guard on `hist`.
+- After History: queue item 4, Reader pass on Mathematics, then Physics.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
@@ -37,13 +37,14 @@
    Automation: create the `zta-agent-run` scheduled task and the lock (AGENT-RUN.md "Automatic runs"), test one run,
    then let it continue the queue from item 2.
 2. [x] **Biology** (`bio`): gold chapter + `done LEAD` → packages → reviews → READER → FIX → REVIEW FINAL.
-3. [ ] **Reader pass** on Mathematics, then Physics (READER batches → FIX), as its own run.
-4. [ ] **Further Mathematics** (`math.fm.*`, an extension of the Maths course): LEAD for the extension
+3. [ ] **History** (`hist`, 9489; replaces Psychology, user's request 2026-11-07): gold chapter + `done LEAD` →
+   packages → reviews → READER → FIX → REVIEW FINAL.
+4. [ ] **Reader pass** on Mathematics, then Physics (READER batches → FIX), as its own run.
+5. [ ] **Further Mathematics** (`math.fm.*`, an extension of the Maths course): LEAD for the extension
    (`courses/math/FURTHER.md`) → packages P19+ → reviews → READER for the new chapters → FIX → REVIEW FINAL.
    Before its LEAD, set math STATUS.md `FINAL` back to `open` and rewrite courses/math/COURSE.md as rules (30 KB).
-5. [ ] **Computer Science** (`cs`, 9618).
-6. [ ] **Engineering** (`eng`).
-7. [ ] **Economics** (`econ`), then **Business** (`bus`), then **Accounting** (`acc`): shared-topic owners in their COURSE.md.
-8. [ ] **Psychology** (`psych`, 9990).
-9. [ ] **Other subjects** (`other`).
+6. [ ] **Computer Science** (`cs`, 9618).
+7. [ ] **Engineering** (`eng`).
+8. [ ] **Economics** (`econ`), then **Business** (`bus`), then **Accounting** (`acc`): shared-topic owners in their COURSE.md.
+9. [ ] **Other subjects** (`other`), including the Psychology summary (`other.psychology`).
 10. [ ] Final assembly: whole-site check, link check of every `:::links` URL, phone pass.

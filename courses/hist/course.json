@@ -1,0 +1,345 @@
+{
+  "id": "hist",
+  "title": "History",
+  "short": "History",
+  "code": "9489",
+  "board": "Cambridge International AS & A Level History (9489)",
+  "syllabus": "https://www.cambridgeinternational.org/Images/718292-2027-2029-syllabus.pdf",
+  "years": "2027–2029",
+  "desc": "Sources, essays and historians' debates, from revolutionary Europe to the end of the Cold War",
+  "lead": true,
+  "chapters": [
+    {
+      "id": "hist.overview",
+      "title": "History: the course map",
+      "level": "guide",
+      "group": "Start here"
+    },
+    {
+      "id": "hist.f.basics",
+      "title": "History from zero: evidence, sources and arguments",
+      "level": "pre",
+      "group": "Start here"
+    },
+    {
+      "id": "hist.f.choose",
+      "title": "Choosing your options and planning the course",
+      "level": "guide",
+      "group": "Start here"
+    },
+    {
+      "id": "hist.skills.sources",
+      "title": "Skills: reading and comparing sources (Paper 1)",
+      "level": "as",
+      "group": "History skills"
+    },
+    {
+      "id": "hist.skills.essays",
+      "title": "Skills: writing the analytical essay (Papers 2 and 4)",
+      "level": "as",
+      "group": "History skills"
+    },
+    {
+      "id": "hist.eu.france.1",
+      "title": "France, 1774–1814 (1): the Revolution of 1789 and the republic",
+      "level": "as",
+      "group": "AS European: Modern Europe, 1774–1924"
+    },
+    {
+      "id": "hist.eu.france.2",
+      "title": "France, 1774–1814 (2): governing France 1793–99 and Napoleon",
+      "level": "as",
+      "group": "AS European: Modern Europe, 1774–1924"
+    },
+    {
+      "id": "hist.eu.germany.1",
+      "title": "Liberalism and nationalism in Germany (1): the 1848–49 revolutions",
+      "level": "as",
+      "group": "AS European: Modern Europe, 1774–1924"
+    },
+    {
+      "id": "hist.eu.germany.2",
+      "title": "Liberalism and nationalism in Germany (2): Prussia and unification, 1849–71",
+      "level": "as",
+      "group": "AS European: Modern Europe, 1774–1924"
+    },
+    {
+      "id": "hist.eu.russia.1",
+      "title": "Russia, 1881–1924 (1): Tsarism under pressure and the 1905 Revolution",
+      "level": "as",
+      "group": "AS European: Modern Europe, 1774–1924"
+    },
+    {
+      "id": "hist.eu.russia.2",
+      "title": "Russia, 1881–1924 (2): 1917 and the Bolshevik consolidation",
+      "level": "as",
+      "group": "AS European: Modern Europe, 1774–1924"
+    },
+    {
+      "id": "hist.us.civilwar.1",
+      "title": "The Civil War and Reconstruction (1): sectional tension and war, 1820–61",
+      "level": "as",
+      "group": "AS American: the USA, 1820–1941"
+    },
+    {
+      "id": "hist.us.civilwar.2",
+      "title": "The Civil War and Reconstruction (2): the war and Reconstruction, 1861–77",
+      "level": "as",
+      "group": "AS American: the USA, 1820–1941"
+    },
+    {
+      "id": "hist.us.gilded.1",
+      "title": "The Gilded Age (1): industrialisation and its consequences",
+      "level": "as",
+      "group": "AS American: the USA, 1820–1941"
+    },
+    {
+      "id": "hist.us.gilded.2",
+      "title": "The Progressive Era (2): the Progressive Movement, 1890–1920",
+      "level": "as",
+      "group": "AS American: the USA, 1820–1941"
+    },
+    {
+      "id": "hist.us.depression.1",
+      "title": "The Great Crash and the Great Depression",
+      "level": "as",
+      "group": "AS American: the USA, 1820–1941"
+    },
+    {
+      "id": "hist.us.depression.2",
+      "title": "The New Deal, 1933–41",
+      "level": "as",
+      "group": "AS American: the USA, 1820–1941"
+    },
+    {
+      "id": "hist.int.empire.1",
+      "title": "Imperialism and world powers (1): imperialism in Africa and its impact",
+      "level": "as",
+      "group": "AS International: international history, 1870–1939"
+    },
+    {
+      "id": "hist.int.empire.2",
+      "title": "Imperialism and world powers (2): new world powers and international relations to 1918",
+      "level": "as",
+      "group": "AS International: international history, 1870–1939"
+    },
+    {
+      "id": "hist.int.1919.1",
+      "title": "International relations, 1919–29 (1): the peace settlements and the League",
+      "level": "as",
+      "group": "AS International: international history, 1870–1939"
+    },
+    {
+      "id": "hist.int.1919.2",
+      "title": "International relations, 1919–29 (2): tension and improvement, 1919–29",
+      "level": "as",
+      "group": "AS International: international history, 1870–1939"
+    },
+    {
+      "id": "hist.int.1929.1",
+      "title": "International history, 1929–39 (1): extremism and the failure of the League",
+      "level": "as",
+      "group": "AS International: international history, 1870–1939"
+    },
+    {
+      "id": "hist.int.1929.2",
+      "title": "International history, 1929–39 (2): appeasement and the outbreak of war",
+      "level": "as",
+      "group": "AS International: international history, 1870–1939"
+    },
+    {
+      "id": "hist.interp.skills",
+      "title": "How historians disagree: reading an interpretation",
+      "level": "a2",
+      "group": "A Level Paper 3: historical interpretations"
+    },
+    {
+      "id": "hist.interp.ww1",
+      "title": "The origins of the First World War: the historians' debate",
+      "level": "a2",
+      "group": "A Level Paper 3: historical interpretations"
+    },
+    {
+      "id": "hist.interp.holocaust",
+      "title": "The Holocaust: the historians' debate",
+      "level": "a2",
+      "group": "A Level Paper 3: historical interpretations"
+    },
+    {
+      "id": "hist.interp.coldwar",
+      "title": "The origins and development of the Cold War: the historians' debate",
+      "level": "a2",
+      "group": "A Level Paper 3: historical interpretations"
+    },
+    {
+      "id": "hist.d.italy.1",
+      "title": "Mussolini's Italy (1): gaining control and governing",
+      "level": "a2",
+      "group": "A Level Paper 4 European: Europe, 1919–41"
+    },
+    {
+      "id": "hist.d.italy.2",
+      "title": "Mussolini's Italy (2): economy and society",
+      "level": "a2",
+      "group": "A Level Paper 4 European: Europe, 1919–41"
+    },
+    {
+      "id": "hist.d.stalin.1",
+      "title": "Stalin's Russia (1): gaining control and governing",
+      "level": "a2",
+      "group": "A Level Paper 4 European: Europe, 1919–41"
+    },
+    {
+      "id": "hist.d.stalin.2",
+      "title": "Stalin's Russia (2): economy and society",
+      "level": "a2",
+      "group": "A Level Paper 4 European: Europe, 1919–41"
+    },
+    {
+      "id": "hist.d.hitler.1",
+      "title": "Hitler's Germany (1): gaining control and governing",
+      "level": "a2",
+      "group": "A Level Paper 4 European: Europe, 1919–41"
+    },
+    {
+      "id": "hist.d.hitler.2",
+      "title": "Hitler's Germany (2): economy and society",
+      "level": "a2",
+      "group": "A Level Paper 4 European: Europe, 1919–41"
+    },
+    {
+      "id": "hist.d.usa45.1",
+      "title": "Truman, Eisenhower and post-war USA (1): Truman and Eisenhower at home",
+      "level": "a2",
+      "group": "A Level Paper 4 American: the USA, 1945–93"
+    },
+    {
+      "id": "hist.d.usa45.2",
+      "title": "Truman, Eisenhower and post-war USA (2): social change and foreign policy",
+      "level": "a2",
+      "group": "A Level Paper 4 American: the USA, 1945–93"
+    },
+    {
+      "id": "hist.d.usa61.1",
+      "title": "A time of challenges, 1961–74 (1): Kennedy, Johnson, Nixon; Cuba and Vietnam",
+      "level": "a2",
+      "group": "A Level Paper 4 American: the USA, 1945–93"
+    },
+    {
+      "id": "hist.d.usa61.2",
+      "title": "A time of challenges, 1961–74 (2): civil rights and challenges to authority",
+      "level": "a2",
+      "group": "A Level Paper 4 American: the USA, 1945–93"
+    },
+    {
+      "id": "hist.d.usa74.1",
+      "title": "The USA, 1974–93 (1): the late 1970s and the New Conservatism",
+      "level": "a2",
+      "group": "A Level Paper 4 American: the USA, 1945–93"
+    },
+    {
+      "id": "hist.d.usa74.2",
+      "title": "The USA, 1974–93 (2): foreign policy and the end of the Cold War",
+      "level": "a2",
+      "group": "A Level Paper 4 American: the USA, 1945–93"
+    },
+    {
+      "id": "hist.d.soviet.1",
+      "title": "The Soviet Empire in Eastern Europe (1): control and stagnation, 1953–85",
+      "level": "a2",
+      "group": "A Level Paper 4 International: international history, 1909–94"
+    },
+    {
+      "id": "hist.d.soviet.2",
+      "title": "The Soviet Empire in Eastern Europe (2): Gorbachev and the collapse, 1985–91",
+      "level": "a2",
+      "group": "A Level Paper 4 International: international history, 1909–94"
+    },
+    {
+      "id": "hist.d.safrica.1",
+      "title": "End of minority rule (1): apartheid South Africa and resistance",
+      "level": "a2",
+      "group": "A Level Paper 4 International: international history, 1909–94"
+    },
+    {
+      "id": "hist.d.safrica.2",
+      "title": "End of minority rule (2): the end of apartheid and of white rule in Zimbabwe",
+      "level": "a2",
+      "group": "A Level Paper 4 International: international history, 1909–94"
+    },
+    {
+      "id": "hist.d.malaysia.1",
+      "title": "The route to independence (1): Malaya and Malaysia, 1909–67",
+      "level": "a2",
+      "group": "A Level Paper 4 International: international history, 1909–94"
+    },
+    {
+      "id": "hist.d.malaysia.2",
+      "title": "The route to independence (2): Indonesia, 1909–67",
+      "level": "a2",
+      "group": "A Level Paper 4 International: international history, 1909–94"
+    },
+    {
+      "id": "hist.exam.p1",
+      "title": "Paper 1: Historical sources",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "hist.exam.p2",
+      "title": "Paper 2: Outline study",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "hist.exam.p3",
+      "title": "Paper 3: Historical interpretations",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "hist.exam.p4",
+      "title": "Paper 4: Depth study",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "hist.mixed.as",
+      "title": "Mixed practice: AS",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "hist.mixed.a2",
+      "title": "Mixed practice: A Level",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "hist.mock.p1",
+      "title": "Mock Paper 1",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "hist.mock.p2",
+      "title": "Mock Paper 2",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "hist.mock.p3",
+      "title": "Mock Paper 3",
+      "level": "mock",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "hist.mock.p4",
+      "title": "Mock Paper 4",
+      "level": "mock",
+      "group": "Exam readiness"
+    }
+  ],
+  "aliases": {},
+  "packages": []
+}

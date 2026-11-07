@@ -45,7 +45,7 @@
   --c-acc: #0A6A8C;   --c2-acc: #B2460F;
   --c-other: #AE164C; --c2-other: #007783;
   --c-cs: #6B4E16;    --c2-cs: #2456C6;
-  --c-psych: #4D5D18; --c2-psych: #A0306E;
+  --c-hist: #4D5D18; --c2-hist: #A0306E;
   --c-tools: #4A5D69; --c2-tools: #AF5100;
   --c-practice: #7F6400; --c2-practice: #3442B4;
   --sc: var(--c-start);
@@ -64,7 +64,7 @@
     --c-eng: #93C0EC; --c2-eng: #FFAD66; --c-bus: #DC8EF2; --c2-bus: #4FD6C6;
     --c-econ: #8EBFFF; --c2-econ: #FF9A6E; --c-acc: #63CBEA; --c2-acc: #FFB27A;
     --c-other: #FF90B6; --c2-other: #55D6E4;
-    --c-cs: #E2B866; --c2-cs: #8DB4FF; --c-psych: #C4D67A; --c2-psych: #FF9AC8;
+    --c-cs: #E2B866; --c2-cs: #8DB4FF; --c-hist: #C4D67A; --c2-hist: #FF9AC8;
     --c-tools: #B5C8D2; --c2-tools: #FFB061; --c-practice: #EFCE52; --c2-practice: #A6AEFF;
     color-scheme: dark;
   }
@@ -80,7 +80,7 @@
   --c-eng: #93C0EC; --c2-eng: #FFAD66; --c-bus: #DC8EF2; --c2-bus: #4FD6C6;
   --c-econ: #8EBFFF; --c2-econ: #FF9A6E; --c-acc: #63CBEA; --c2-acc: #FFB27A;
   --c-other: #FF90B6; --c2-other: #55D6E4;
-  --c-cs: #E2B866; --c2-cs: #8DB4FF; --c-psych: #C4D67A; --c2-psych: #FF9AC8;
+  --c-cs: #E2B866; --c2-cs: #8DB4FF; --c-hist: #C4D67A; --c2-hist: #FF9AC8;
   --c-tools: #B5C8D2; --c2-tools: #FFB061; --c-practice: #EFCE52; --c2-practice: #A6AEFF;
   color-scheme: dark;
 }
@@ -99,10 +99,10 @@
 .s-acc { --sc: var(--c-acc); --sc2: var(--c2-acc); }
 .s-other { --sc: var(--c-other); --sc2: var(--c2-other); }
 .s-cs { --sc: var(--c-cs); --sc2: var(--c2-cs); }
-.s-psych { --sc: var(--c-psych); --sc2: var(--c2-psych); }
+.s-hist { --sc: var(--c-hist); --sc2: var(--c2-hist); }
 .s-tools { --sc: var(--c-tools); --sc2: var(--c2-tools); }
 .s-practice { --sc: var(--c-practice); --sc2: var(--c2-practice); }
-.s-start, .s-road, .s-math, .s-phys, .s-chem, .s-bio, .s-eng, .s-bus, .s-econ, .s-acc, .s-other, .s-cs, .s-psych, .s-tools, .s-practice, .app {
+.s-start, .s-road, .s-math, .s-phys, .s-chem, .s-bio, .s-eng, .s-bus, .s-econ, .s-acc, .s-other, .s-cs, .s-hist, .s-tools, .s-practice, .app {
   --sc-soft: color-mix(in srgb, var(--sc) 8%, var(--sheet));
   --sc-mid: color-mix(in srgb, var(--sc) 24%, var(--sheet));
   --sc2-soft: color-mix(in srgb, var(--sc2) 10%, var(--sheet));

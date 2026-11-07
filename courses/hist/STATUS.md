@@ -1,4 +1,4 @@
-# STATUS: Psychology
+# STATUS: History
 
 Last: (nothing yet)
 

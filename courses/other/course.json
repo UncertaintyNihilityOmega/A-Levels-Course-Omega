@@ -57,8 +57,8 @@
       "group": "English and languages"
     },
     {
-      "id": "other.history",
-      "title": "History",
+      "id": "other.psychology",
+      "title": "Psychology",
       "level": "sum",
       "group": "Humanities and social sciences"
     },
@@ -131,7 +131,7 @@
   ],
   "aliases": {
     "other.cs": "cs.overview",
-    "other.psychology": "psych.overview",
-    "other.furthermaths": "math.fm.overview"
+    "other.furthermaths": "math.fm.overview",
+    "other.history": "hist.overview"
   }
 }

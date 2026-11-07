@@ -26,5 +26,5 @@ the course's CLAUDE.md explains the rest.
 | Reader | `<Course> Reader: READER session. Follow CLAUDE.md.` |
 
 `<Course>` is the course title: Mathematics, Physics, Chemistry, Biology, Computer Science, Engineering, Economics,
-Business, Accounting, Psychology, Other Subjects. Any chat can run `node kit/zta.js status` to see the next step.
+Business, Accounting, History, Other Subjects. Any chat can run `node kit/zta.js status` to see the next step.
 Several Writer chats can run at once: each claims its own package.

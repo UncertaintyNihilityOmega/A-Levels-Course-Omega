@@ -25,7 +25,7 @@ The section is planned in these groups:
 
 - **Sciences and technology:** Information Technology, Environmental Management and Marine Science, and Physical Education.
 - **English and languages:** English Literature, English Language, modern languages, and Classics and Latin.
-- **Humanities and social sciences:** History, Geography, Sociology, Law, Politics and Government, Religious Studies and Philosophy, and Global Perspectives, Thinking Skills and the EPQ.
+- **Humanities and social sciences:** Psychology, Geography, Sociology, Law, Politics and Government, Religious Studies and Philosophy, and Global Perspectives, Thinking Skills and the EPQ.
 - **Creative subjects:** Art and Design, Music, Drama and Theatre, and Media and Film Studies.
 - **More subjects at a glance:** short notes on further subjects.
 

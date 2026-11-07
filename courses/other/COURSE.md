@@ -23,8 +23,12 @@ and keep these ids where you can (aliases for any you rename or merge).
   plans packages of 2–3 chapters, and reviews like the other courses.
 - Each chapter adds to the old list below: **a first study week** (what to do in the first 5 sessions if self-taught),
   the 3–5 hardest topics and why, a short `:::quiz` on what the subject is like, and a "Learn more online" box.
-- Computer Science, Psychology and Further Mathematics are full courses now (`cs`, `psych`, and `math.fm.*` in the
+- Computer Science, History and Further Mathematics are full courses now (`cs`, `hist`, and `math.fm.*` in the
   Maths course): other.overview lists them with links, and there are no summary chapters for them here.
+- Psychology (Cambridge 9990) is a summary chapter here since 2026-11-07 (`other.psychology`; the user swapped it with
+  History). It may say more than most summaries: the four approaches, research methods, core studies and the A Level
+  options, all in general terms, linking Biology and the Maths statistics chapters. Old id `other.history` is an alias
+  of `hist.overview`.
 
 ## Purpose
 Many readers take one or two A Levels outside the big sciences and business. Each chapter is an honest,
@@ -60,7 +64,7 @@ No `:::try` or `:::quiz` blocks are required, but one short `:::quiz` per chapte
 | other.englang | English Language (and the combined English Language and Literature) |
 | other.languages | Modern foreign languages (and first-language options) |
 | other.classics | Classics, Classical Civilisation and Latin |
-| other.history | History |
+| other.psychology | Psychology (Cambridge 9990: approaches, research methods, core studies, options) |
 | other.geography | Geography |
 | other.sociology | Sociology |
 | other.law | Law |

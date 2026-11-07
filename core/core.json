@@ -12,7 +12,7 @@
     "econ",
     "bus",
     "acc",
-    "psych",
+    "hist",
     "other",
     "tools",
     "practice"
@@ -98,8 +98,8 @@
           "group": "About this course"
         },
         {
-          "id": "about.psych",
-          "title": "About Psychology",
+          "id": "about.hist",
+          "title": "About History",
           "level": "start",
           "group": "About this course"
         },

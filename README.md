@@ -15,13 +15,13 @@ interactive widgets, paper guides and full mock papers, plus a study roadmap and
 | Mathematics | Cambridge International 9709 | complete (Further Mathematics planned) |
 | Physics | Cambridge International 9702 | complete |
 | Chemistry | Cambridge International 9701 | complete |
-| Biology | Cambridge International 9700 | planned |
+| Biology | Cambridge International 9700 | complete |
 | Computer Science | Cambridge International 9618 | planned |
 | Engineering | Maths and Physics routes (no single syllabus) | planned |
 | Economics | Cambridge International 9708 | planned |
 | Business | Cambridge International 9609 | planned |
 | Accounting | Cambridge International 9706 | planned |
-| Psychology | Cambridge International 9990 | planned |
+| History | Cambridge International 9489 | in progress |
 | Other subjects | short guides to other A Levels | planned |
 
 Chapter counts per course: `node engine/status.js`. Build queue: [ROADMAP.md](ROADMAP.md).

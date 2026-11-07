@@ -1,4 +1,4 @@
-/* widgets.js: Psychology widgets. Spec: kit/WIDGETS.md. Test: node kit/zta.js widget <name> '<attrs>' */
+/* widgets.js: History widgets. Spec: kit/WIDGETS.md. Test: node kit/zta.js widget <name> '<attrs>' */
 (function () {
   'use strict';
   // W.register('name', function (el, opts) {

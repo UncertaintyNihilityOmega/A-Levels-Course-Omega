@@ -112,10 +112,10 @@
       "port": 5110
     },
     {
-      "name": "psych-preview",
+      "name": "hist-preview",
       "runtimeExecutable": "node",
       "runtimeArgs": [
-        "courses/psych/kit/zta.js",
+        "courses/hist/kit/zta.js",
         "serve",
         "5111"
       ],
