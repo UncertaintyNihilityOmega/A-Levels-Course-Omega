@@ -131,6 +131,7 @@
   /* ---------- mock papers: clock, answers hidden until Finish, self-marking ---------- */
   function initMock(art) {
     const id = art.getAttribute('data-id'), total = +art.getAttribute('data-marks') || 0, mins = +art.getAttribute('data-min') || 0;
+    const answer = +art.getAttribute('data-answer') || 0;   // a paper with a choice: the reader answers this many questions
     const key = 'mock:' + id;
     let S = store.get(key, null) || { start: 0, spent: 0, done: false, marks: {} };
     const save = () => store.set(key, S);
@@ -180,13 +181,15 @@
       }
     }
     function summary() {
-      const got = Object.values(S.marks).reduce((a, b) => a + b, 0);
+      // with a choice of questions, the best `answer` marks count (a reader who marks extra questions cannot pass the total)
+      const got = Object.values(S.marks).sort((a, b) => b - a).slice(0, answer || Infinity).reduce((a, b) => a + b, 0);
       const marked = Object.keys(S.marks).length;
       score.textContent = S.done ? `${got} / ${total}${total ? ` · ${Math.round(100 * got / total)}%` : ''}` : '';
       const weak = qs.map((li, i) => ({ li, i, n: +li.getAttribute('data-marks') || 0, m: S.marks[i] })).filter(q => q.m != null && q.m < q.n / 2);
       rev.innerHTML = '';
       if (!S.done) return;
-      if (marked < qs.filter(li => +li.getAttribute('data-marks')).length) { rev.append(W.h('p', { class: 'mock-note' }, 'Mark every question against the mark scheme to see what to revise.')); return; }
+      const need = answer || qs.filter(li => +li.getAttribute('data-marks')).length;
+      if (marked < need) { rev.append(W.h('p', { class: 'mock-note' }, answer ? `Mark the ${answer === 1 ? 'question' : answer + ' questions'} you answered against the mark scheme to see what to revise.` : 'Mark every question against the mark scheme to see what to revise.')); return; }
       if (!weak.length) { rev.append(W.h('p', {}, W.h('b', {}, 'No weak questions.'), ' Every question earned at least half its marks.')); return; }
       rev.append(W.h('h3', {}, 'Revise these next'));
       const ul = W.h('ul', {});
@@ -203,7 +206,7 @@
       finBtn.hidden = S.done;
       againBtn.hidden = !S.done;
       runBtn.textContent = S.start ? 'Pause' : (S.spent ? 'Resume' : (mins ? `Start the clock (${mins} min)` : 'Start the clock'));
-      note.textContent = S.done ? 'Mark each question against the mark scheme under it.' : 'Answers and mark schemes appear when you finish.';
+      note.textContent = S.done ? (answer ? `Mark the ${answer === 1 ? 'question' : answer + ' questions'} you answered against the mark scheme under it; leave the others blank.` : 'Mark each question against the mark scheme under it.') : (answer ? `Answer ${answer === 1 ? 'one question' : answer + ' questions'}, as the instructions say. Answers and mark schemes appear when you finish.` : 'Answers and mark schemes appear when you finish.');
       clearInterval(iv);
       if (S.start && !S.done) iv = setInterval(tick, 1000);
       tick(); marksInputs(); summary();

@@ -229,7 +229,8 @@ function buildSite(sources, opts) {
     }
     if (c.meta.paper) chips.push(`<span class="chip chip-paper"><span class="chip-k">Exams</span>${escapeHtml(c.meta.paper)}</span>`);
     const mock = /\bmock\b/i.test(c.meta.level || '');
-    if (mock && c.marks) chips.push(`<span class="chip chip-marks"><span class="chip-k">Total</span>${c.marks} marks</span>`);
+    if (mock && c.marks) chips.push(`<span class="chip chip-marks"><span class="chip-k">Total</span>${+c.meta.total || c.marks} marks</span>`);
+    if (mock && +c.meta.answer) chips.push(`<span class="chip chip-marks"><span class="chip-k">Answer</span>${+c.meta.answer} question${+c.meta.answer === 1 ? '' : 's'}</span>`);
     if (c.meta.time) chips.push(`<span class="chip chip-time"><span class="chip-k">${mock ? 'Time allowed' : 'Study time'}</span>${escapeHtml(c.meta.time)}</span>`);
     const first = s.groups[0] && s.groups[0].chapters[0];
     const crumbs = `<nav class="crumbs" aria-label="Breadcrumb"><a href="#${first ? first.id : 'home'}">${escapeHtml(s.title)}</a><span aria-hidden="true">/</span><span>${escapeHtml(c.group)}</span></nav>`;
@@ -244,7 +245,7 @@ function buildSite(sources, opts) {
 <div class="pn">${prev ? `<a class="pn-prev" href="#${prev.id}"><small>Previous</small><span>${stripTags(titleOf(prev))}</span></a>` : '<span></span>'}${next ? `<a class="pn-next" href="#${next.id}"><small>Next</small><span>${stripTags(titleOf(next))}</span></a>` : '<span></span>'}</div></footer>`;
     const k = c.chunk || '';
     const lv = (c.meta.level || '').split(/[ ,]+/)[0].toLowerCase();
-    const mockAttrs = lv === 'mock' ? ` data-level="mock" data-min="${parseMinutes(c.meta.time)}" data-marks="${c.marks}"` : '';
+    const mockAttrs = lv === 'mock' ? ` data-level="mock" data-min="${parseMinutes(c.meta.time)}" data-marks="${+c.meta.total || c.marks}"${+c.meta.answer ? ` data-answer="${+c.meta.answer}"` : ''}` : '';
     articles[k] = (articles[k] || '') + `<article class="chapter s-${c.subject}" id="c-${c.id}" data-id="${c.id}" data-subject="${c.subject}"${mockAttrs} hidden>${header(c)}<div class="prose">${c.html}</div>${foot}</article>\n`;
   });
 

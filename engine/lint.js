@@ -103,6 +103,9 @@ function lintChapter(ch, text, ctx = {}) {
     const unmarked = qs.filter(l => !/^Q:\s*\[\d+(\s*marks?)?\]/.test(l) && !/\[\d+ marks?\]\s*$/.test(l));
     if (!qs.length) notes.push('a mock has one :::try per question (Q: [n marks] … A: mark scheme)');
     if (unmarked.length) notes.push(`${unmarked.length} mock question(s) without "[n marks]" after Q:`);
+    if (m.total !== undefined && !(+m.total > 0)) notes.push('@total must be the real paper\'s total marks, a number (e.g. "@total 60")');
+    if (m.answer !== undefined && !(+m.answer > 0 && +m.answer < qs.length)) notes.push(`@answer must be a number of questions smaller than the ${qs.length} on the paper (a paper with a choice)`);
+    if ((m.total === undefined) !== (m.answer === undefined)) notes.push('a paper with a choice of questions needs both @total (real total) and @answer (questions answered)');
     if (ctx.hasCheck === false) notes.push(`no checks/${ch.id}.py (assert the marks total and recompute every answer)`);  } else if (levels.includes('guide') && !blocks(text, 'recap').length) notes.push('guide chapters usually end with a :::recap box');
   return { errors, notes };
 }

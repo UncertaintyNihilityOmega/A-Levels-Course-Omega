@@ -120,7 +120,7 @@ function check(ids) {
       else { errs.push(`checks/${id}.py failed:\n     ${r.out.trim().split('\n').slice(-6).join('\n     ')}`); }
     }
     const n = (t) => blocks(without(text, 'proof'), t);
-    const counts = `${ch.words} words · ${n('eg').length} eg · ${n('try').join('\n').split('\n').filter(l => /^Q:/.test(l)).length} try · ${n('quiz').join('\n').split('\n').filter(l => /^\? /.test(l)).length} quiz${ch.marks ? ` · ${ch.marks} marks` : ''}`;
+    const counts = `${ch.words} words · ${n('eg').length} eg · ${n('try').join('\n').split('\n').filter(l => /^Q:/.test(l)).length} try · ${n('quiz').join('\n').split('\n').filter(l => /^\? /.test(l)).length} quiz${ch.marks ? ` · ${ch.marks} marks${ch.meta && +ch.meta.total ? ` (paper total ${+ch.meta.total}, answer ${+ch.meta.answer || '?'})` : ''}` : ''}`;
     if (errs.length) { bad++; console.log(`✗ ${id} · ${counts}`); for (const e of errs) console.log('   - ' + e); }
     else console.log(`✓ ${id} · ${counts}${py}`);
     for (const w of [...warns, ...L.notes]) console.log('   · ' + w);

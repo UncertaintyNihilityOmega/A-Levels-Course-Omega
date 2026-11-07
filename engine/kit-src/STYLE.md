@@ -144,6 +144,11 @@ Bold a key word the first time if it has no `:::def` card.
 `A:` the full mark scheme. Parts (a), (b), … need a blank line before them. The page adds a clock, hides every
 answer until the reader presses Finish, then lets them enter their mark per question and lists the chapters to
 revise. The header shows the total marks: it must match the real paper exactly.
+A paper with a **choice of questions** ("answer two questions"): write every question, then add `@total` (the real
+paper's total, e.g. `@total 60`) and `@answer` (how many questions the reader answers, e.g. `@answer 2`) under
+`@time`. The header then shows the real total and "Answer 2 questions", and the self-marking counts only the
+questions the reader marks (the best `@answer` of them). Put the paper's own rule (sections, "one question from one
+section only") in the `:::exam` instructions box.
 Multiple-choice options: one paragraph each, with a blank line between them and a bold letter (`**A** …`).
 Lines are not kept as line breaks, so options written on consecutive lines run together into one line.
 

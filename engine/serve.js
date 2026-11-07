@@ -16,7 +16,10 @@ function serve(dir, port) {
     const file = path.join(root, rel);
     if (!file.startsWith(root)) { res.writeHead(403); return res.end(); }
     fs.readFile(file, (err, data) => {
-      if (err) { res.writeHead(404, { 'content-type': 'text/plain' }); return res.end('Not found: ' + rel); }
+      if (err) {
+        res.writeHead(404, { 'content-type': 'text/plain' });
+        return res.end('Not found: ' + rel + (rel === '/index.html' ? '\nBuild it first (node kit/zta.js preview in the course folder), then reload this page: a change of #chapter alone does not reload it.' : ''));
+      }
       res.writeHead(200, { 'content-type': TYPES[path.extname(file)] || 'application/octet-stream', 'cache-control': 'no-store' });
       res.end(data);
     });

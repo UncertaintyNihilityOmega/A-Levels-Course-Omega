@@ -41,109 +41,217 @@
     },
     {
       "id": "hist.eu.france.1",
-      "title": "France, 1774–1814 (1): the Revolution of 1789 and the republic",
+      "title": "France (1): the causes and immediate consequences of the 1789 Revolution",
       "level": "as",
       "group": "AS European: Modern Europe, 1774–1924"
     },
     {
       "id": "hist.eu.france.2",
-      "title": "France, 1774–1814 (2): governing France 1793–99 and Napoleon",
+      "title": "France (2): how and why France became a republic by 1792",
+      "level": "as",
+      "group": "AS European: Modern Europe, 1774–1924"
+    },
+    {
+      "id": "hist.eu.france.3",
+      "title": "France (3): governing France, 1793–99: the Terror and the Directory",
+      "level": "as",
+      "group": "AS European: Modern Europe, 1774–1924"
+    },
+    {
+      "id": "hist.eu.france.4",
+      "title": "France (4): the rise and fall of Napoleon Bonaparte",
       "level": "as",
       "group": "AS European: Modern Europe, 1774–1924"
     },
     {
       "id": "hist.eu.germany.1",
-      "title": "Liberalism and nationalism in Germany (1): the 1848–49 revolutions",
+      "title": "Germany (1): the causes of the revolutions of 1848",
       "level": "as",
       "group": "AS European: Modern Europe, 1774–1924"
     },
     {
       "id": "hist.eu.germany.2",
-      "title": "Liberalism and nationalism in Germany (2): Prussia and unification, 1849–71",
+      "title": "Germany (2): the 1848–49 revolutions and their consequences",
+      "level": "as",
+      "group": "AS European: Modern Europe, 1774–1924"
+    },
+    {
+      "id": "hist.eu.germany.3",
+      "title": "Germany (3): Bismarck's appointment and his aims to 1866",
+      "level": "as",
+      "group": "AS European: Modern Europe, 1774–1924"
+    },
+    {
+      "id": "hist.eu.germany.4",
+      "title": "Germany (4): how and why unification was achieved by 1871",
       "level": "as",
       "group": "AS European: Modern Europe, 1774–1924"
     },
     {
       "id": "hist.eu.russia.1",
-      "title": "Russia, 1881–1924 (1): Tsarism under pressure and the 1905 Revolution",
+      "title": "Russia (1): the challenges facing Tsarism, 1881–94",
       "level": "as",
       "group": "AS European: Modern Europe, 1774–1924"
     },
     {
       "id": "hist.eu.russia.2",
-      "title": "Russia, 1881–1924 (2): 1917 and the Bolshevik consolidation",
+      "title": "Russia (2): the 1905 Revolution and its outcomes to 1914",
+      "level": "as",
+      "group": "AS European: Modern Europe, 1774–1924"
+    },
+    {
+      "id": "hist.eu.russia.3",
+      "title": "Russia (3): how and why the Bolsheviks seized power in 1917",
+      "level": "as",
+      "group": "AS European: Modern Europe, 1774–1924"
+    },
+    {
+      "id": "hist.eu.russia.4",
+      "title": "Russia (4): how the Bolsheviks consolidated power to 1924",
       "level": "as",
       "group": "AS European: Modern Europe, 1774–1924"
     },
     {
       "id": "hist.us.civilwar.1",
-      "title": "The Civil War and Reconstruction (1): sectional tension and war, 1820–61",
+      "title": "Civil War and Reconstruction (1): growing tension between North and South before 1860",
       "level": "as",
       "group": "AS American: the USA, 1820–1941"
     },
     {
       "id": "hist.us.civilwar.2",
-      "title": "The Civil War and Reconstruction (2): the war and Reconstruction, 1861–77",
+      "title": "Civil War and Reconstruction (2): why the Civil War broke out in April 1861",
+      "level": "as",
+      "group": "AS American: the USA, 1820–1941"
+    },
+    {
+      "id": "hist.us.civilwar.3",
+      "title": "Civil War and Reconstruction (3): why the Civil War lasted four years",
+      "level": "as",
+      "group": "AS American: the USA, 1820–1941"
+    },
+    {
+      "id": "hist.us.civilwar.4",
+      "title": "Civil War and Reconstruction (4): the aims and success of Reconstruction",
       "level": "as",
       "group": "AS American: the USA, 1820–1941"
     },
     {
       "id": "hist.us.gilded.1",
-      "title": "The Gilded Age (1): industrialisation and its consequences",
+      "title": "Gilded Age and Progressive Era (1): why there was rapid industrialisation after 1870",
       "level": "as",
       "group": "AS American: the USA, 1820–1941"
     },
     {
       "id": "hist.us.gilded.2",
-      "title": "The Progressive Era (2): the Progressive Movement, 1890–1920",
+      "title": "Gilded Age and Progressive Era (2): the consequences of rapid economic growth",
+      "level": "as",
+      "group": "AS American: the USA, 1820–1941"
+    },
+    {
+      "id": "hist.us.gilded.3",
+      "title": "Gilded Age and Progressive Era (3): why the Progressive Movement developed: aims and policies",
+      "level": "as",
+      "group": "AS American: the USA, 1820–1941"
+    },
+    {
+      "id": "hist.us.gilded.4",
+      "title": "Gilded Age and Progressive Era (4): how successful the Progressive Movement was, 1890–1920",
       "level": "as",
       "group": "AS American: the USA, 1820–1941"
     },
     {
       "id": "hist.us.depression.1",
-      "title": "The Great Crash and the Great Depression",
+      "title": "Crash, Depression and New Deal (1): the causes of the Great Crash and the Great Depression",
       "level": "as",
       "group": "AS American: the USA, 1820–1941"
     },
     {
       "id": "hist.us.depression.2",
-      "title": "The New Deal, 1933–41",
+      "title": "Crash, Depression and New Deal (2): the impact of the Crash and the Depression, and Hoover's response",
+      "level": "as",
+      "group": "AS American: the USA, 1820–1941"
+    },
+    {
+      "id": "hist.us.depression.3",
+      "title": "Crash, Depression and New Deal (3): how successful Roosevelt's first New Deal was",
+      "level": "as",
+      "group": "AS American: the USA, 1820–1941"
+    },
+    {
+      "id": "hist.us.depression.4",
+      "title": "Crash, Depression and New Deal (4): the Second New Deal and its impact by 1941",
       "level": "as",
       "group": "AS American: the USA, 1820–1941"
     },
     {
       "id": "hist.int.empire.1",
-      "title": "Imperialism and world powers (1): imperialism in Africa and its impact",
+      "title": "Imperialism and world powers (1): why imperialism was a significant force in Africa from 1870",
       "level": "as",
       "group": "AS International: international history, 1870–1939"
     },
     {
       "id": "hist.int.empire.2",
-      "title": "Imperialism and world powers (2): new world powers and international relations to 1918",
+      "title": "Imperialism and world powers (2): imperial expansion and international relations to 1914",
+      "level": "as",
+      "group": "AS International: international history, 1870–1939"
+    },
+    {
+      "id": "hist.int.empire.3",
+      "title": "Imperialism and world powers (3): why Japan emerged as a world power",
+      "level": "as",
+      "group": "AS International: international history, 1870–1939"
+    },
+    {
+      "id": "hist.int.empire.4",
+      "title": "Imperialism and world powers (4): why the USA emerged as a world power",
       "level": "as",
       "group": "AS International: international history, 1870–1939"
     },
     {
       "id": "hist.int.1919.1",
-      "title": "International relations, 1919–29 (1): the peace settlements and the League",
+      "title": "International relations, 1919–29 (1): dissatisfaction with the peace settlements of 1919–20",
       "level": "as",
       "group": "AS International: international history, 1870–1939"
     },
     {
       "id": "hist.int.1919.2",
-      "title": "International relations, 1919–29 (2): tension and improvement, 1919–29",
+      "title": "International relations, 1919–29 (2): the League of Nations: creation and challenges in the 1920s",
+      "level": "as",
+      "group": "AS International: international history, 1870–1939"
+    },
+    {
+      "id": "hist.int.1919.3",
+      "title": "International relations, 1919–29 (3): why tensions remained high after Versailles",
+      "level": "as",
+      "group": "AS International: international history, 1870–1939"
+    },
+    {
+      "id": "hist.int.1919.4",
+      "title": "International relations, 1919–29 (4): how and why relations improved, 1924–29",
       "level": "as",
       "group": "AS International: international history, 1870–1939"
     },
     {
       "id": "hist.int.1929.1",
-      "title": "International history, 1929–39 (1): extremism and the failure of the League",
+      "title": "International history, 1929–39 (1): the rise of extremism and international relations",
       "level": "as",
       "group": "AS International: international history, 1870–1939"
     },
     {
       "id": "hist.int.1929.2",
-      "title": "International history, 1929–39 (2): appeasement and the outbreak of war",
+      "title": "International history, 1929–39 (2): why the League failed to keep the peace in the 1930s",
+      "level": "as",
+      "group": "AS International: international history, 1870–1939"
+    },
+    {
+      "id": "hist.int.1929.3",
+      "title": "International history, 1929–39 (3): appeasement: why, and with what effects",
+      "level": "as",
+      "group": "AS International: international history, 1870–1939"
+    },
+    {
+      "id": "hist.int.1929.4",
+      "title": "International history, 1929–39 (4): why war broke out in 1939",
       "level": "as",
       "group": "AS International: international history, 1870–1939"
     },
@@ -154,128 +262,254 @@
       "group": "A Level Paper 3: historical interpretations"
     },
     {
-      "id": "hist.interp.ww1",
-      "title": "The origins of the First World War: the historians' debate",
+      "id": "hist.interp.ww1.1",
+      "title": "Origins of the First World War (1): the road to war, c.1890–1914",
       "level": "a2",
       "group": "A Level Paper 3: historical interpretations"
     },
     {
-      "id": "hist.interp.holocaust",
-      "title": "The Holocaust: the historians' debate",
+      "id": "hist.interp.ww1.2",
+      "title": "Origins of the First World War (2): the historians' debate",
       "level": "a2",
       "group": "A Level Paper 3: historical interpretations"
     },
     {
-      "id": "hist.interp.coldwar",
-      "title": "The origins and development of the Cold War: the historians' debate",
+      "id": "hist.interp.holocaust.1",
+      "title": "The Holocaust (1): from antisemitism to genocide",
+      "level": "a2",
+      "group": "A Level Paper 3: historical interpretations"
+    },
+    {
+      "id": "hist.interp.holocaust.2",
+      "title": "The Holocaust (2): the historians' debate",
+      "level": "a2",
+      "group": "A Level Paper 3: historical interpretations"
+    },
+    {
+      "id": "hist.interp.coldwar.1",
+      "title": "Origins of the Cold War (1): the breakdown of the wartime alliance, 1941–49",
+      "level": "a2",
+      "group": "A Level Paper 3: historical interpretations"
+    },
+    {
+      "id": "hist.interp.coldwar.2",
+      "title": "Origins of the Cold War (2): the historians' debate",
       "level": "a2",
       "group": "A Level Paper 3: historical interpretations"
     },
     {
       "id": "hist.d.italy.1",
-      "title": "Mussolini's Italy (1): gaining control and governing",
+      "title": "Mussolini's Italy (1): how Mussolini gained control",
       "level": "a2",
       "group": "A Level Paper 4 European: Europe, 1919–41"
     },
     {
       "id": "hist.d.italy.2",
-      "title": "Mussolini's Italy (2): economy and society",
+      "title": "Mussolini's Italy (2): how effectively Mussolini governed Italy",
+      "level": "a2",
+      "group": "A Level Paper 4 European: Europe, 1919–41"
+    },
+    {
+      "id": "hist.d.italy.3",
+      "title": "Mussolini's Italy (3): how successful Mussolini's economic policies were",
+      "level": "a2",
+      "group": "A Level Paper 4 European: Europe, 1919–41"
+    },
+    {
+      "id": "hist.d.italy.4",
+      "title": "Mussolini's Italy (4): how far Mussolini transformed Italian society",
       "level": "a2",
       "group": "A Level Paper 4 European: Europe, 1919–41"
     },
     {
       "id": "hist.d.stalin.1",
-      "title": "Stalin's Russia (1): gaining control and governing",
+      "title": "Stalin's Russia (1): how Stalin gained control",
       "level": "a2",
       "group": "A Level Paper 4 European: Europe, 1919–41"
     },
     {
       "id": "hist.d.stalin.2",
-      "title": "Stalin's Russia (2): economy and society",
+      "title": "Stalin's Russia (2): how effectively Stalin governed the Soviet Union",
+      "level": "a2",
+      "group": "A Level Paper 4 European: Europe, 1919–41"
+    },
+    {
+      "id": "hist.d.stalin.3",
+      "title": "Stalin's Russia (3): how successful Stalin's economic policies were",
+      "level": "a2",
+      "group": "A Level Paper 4 European: Europe, 1919–41"
+    },
+    {
+      "id": "hist.d.stalin.4",
+      "title": "Stalin's Russia (4): how far Stalin transformed Soviet society",
       "level": "a2",
       "group": "A Level Paper 4 European: Europe, 1919–41"
     },
     {
       "id": "hist.d.hitler.1",
-      "title": "Hitler's Germany (1): gaining control and governing",
+      "title": "Hitler's Germany (1): how Hitler gained control",
       "level": "a2",
       "group": "A Level Paper 4 European: Europe, 1919–41"
     },
     {
       "id": "hist.d.hitler.2",
-      "title": "Hitler's Germany (2): economy and society",
+      "title": "Hitler's Germany (2): how effectively the Nazis governed Germany",
+      "level": "a2",
+      "group": "A Level Paper 4 European: Europe, 1919–41"
+    },
+    {
+      "id": "hist.d.hitler.3",
+      "title": "Hitler's Germany (3): how successful Nazi economic policies were",
+      "level": "a2",
+      "group": "A Level Paper 4 European: Europe, 1919–41"
+    },
+    {
+      "id": "hist.d.hitler.4",
+      "title": "Hitler's Germany (4): how far the Nazis transformed German society",
       "level": "a2",
       "group": "A Level Paper 4 European: Europe, 1919–41"
     },
     {
       "id": "hist.d.usa45.1",
-      "title": "Truman, Eisenhower and post-war USA (1): Truman and Eisenhower at home",
+      "title": "Post-war USA, 1945–61 (1): Truman and the internal issues of post-war America",
       "level": "a2",
       "group": "A Level Paper 4 American: the USA, 1945–93"
     },
     {
       "id": "hist.d.usa45.2",
-      "title": "Truman, Eisenhower and post-war USA (2): social change and foreign policy",
+      "title": "Post-war USA, 1945–61 (2): how effective Eisenhower was as President",
+      "level": "a2",
+      "group": "A Level Paper 4 American: the USA, 1945–93"
+    },
+    {
+      "id": "hist.d.usa45.3",
+      "title": "Post-war USA, 1945–61 (3): economic and social change, 1945–61",
+      "level": "a2",
+      "group": "A Level Paper 4 American: the USA, 1945–93"
+    },
+    {
+      "id": "hist.d.usa45.4",
+      "title": "Post-war USA, 1945–61 (4): the foreign policies of Truman and Eisenhower",
       "level": "a2",
       "group": "A Level Paper 4 American: the USA, 1945–93"
     },
     {
       "id": "hist.d.usa61.1",
-      "title": "A time of challenges, 1961–74 (1): Kennedy, Johnson, Nixon; Cuba and Vietnam",
+      "title": "A time of challenges, 1961–74 (1): the presidencies of Kennedy, Johnson and Nixon",
       "level": "a2",
       "group": "A Level Paper 4 American: the USA, 1945–93"
     },
     {
       "id": "hist.d.usa61.2",
-      "title": "A time of challenges, 1961–74 (2): civil rights and challenges to authority",
+      "title": "A time of challenges, 1961–74 (2): Cuba and Vietnam",
+      "level": "a2",
+      "group": "A Level Paper 4 American: the USA, 1945–93"
+    },
+    {
+      "id": "hist.d.usa61.3",
+      "title": "A time of challenges, 1961–74 (3): civil rights for African Americans",
+      "level": "a2",
+      "group": "A Level Paper 4 American: the USA, 1945–93"
+    },
+    {
+      "id": "hist.d.usa61.4",
+      "title": "A time of challenges, 1961–74 (4): challenges to authority",
       "level": "a2",
       "group": "A Level Paper 4 American: the USA, 1945–93"
     },
     {
       "id": "hist.d.usa74.1",
-      "title": "The USA, 1974–93 (1): the late 1970s and the New Conservatism",
+      "title": "The USA, 1974–93 (1): the problems of the late 1970s",
       "level": "a2",
       "group": "A Level Paper 4 American: the USA, 1945–93"
     },
     {
       "id": "hist.d.usa74.2",
-      "title": "The USA, 1974–93 (2): foreign policy and the end of the Cold War",
+      "title": "The USA, 1974–93 (2): the New Conservatism, 1981–92",
+      "level": "a2",
+      "group": "A Level Paper 4 American: the USA, 1945–93"
+    },
+    {
+      "id": "hist.d.usa74.3",
+      "title": "The USA, 1974–93 (3): Carter's foreign policies, 1977–81",
+      "level": "a2",
+      "group": "A Level Paper 4 American: the USA, 1945–93"
+    },
+    {
+      "id": "hist.d.usa74.4",
+      "title": "The USA, 1974–93 (4): changing relations with the USSR",
       "level": "a2",
       "group": "A Level Paper 4 American: the USA, 1945–93"
     },
     {
       "id": "hist.d.soviet.1",
-      "title": "The Soviet Empire in Eastern Europe (1): control and stagnation, 1953–85",
+      "title": "The Soviet Empire in Eastern Europe (1): the USSR and the satellite states to 1968",
       "level": "a2",
       "group": "A Level Paper 4 International: international history, 1909–94"
     },
     {
       "id": "hist.d.soviet.2",
-      "title": "The Soviet Empire in Eastern Europe (2): Gorbachev and the collapse, 1985–91",
+      "title": "The Soviet Empire in Eastern Europe (2): stagnation, 1964–85",
+      "level": "a2",
+      "group": "A Level Paper 4 International: international history, 1909–94"
+    },
+    {
+      "id": "hist.d.soviet.3",
+      "title": "The Soviet Empire in Eastern Europe (3): Gorbachev's response to crisis",
+      "level": "a2",
+      "group": "A Level Paper 4 International: international history, 1909–94"
+    },
+    {
+      "id": "hist.d.soviet.4",
+      "title": "The Soviet Empire in Eastern Europe (4): the collapse of Soviet control, 1980–91",
       "level": "a2",
       "group": "A Level Paper 4 International: international history, 1909–94"
     },
     {
       "id": "hist.d.safrica.1",
-      "title": "End of minority rule (1): apartheid South Africa and resistance",
+      "title": "End of minority rule (1): the apartheid state, 1948–59",
       "level": "a2",
       "group": "A Level Paper 4 International: international history, 1909–94"
     },
     {
       "id": "hist.d.safrica.2",
-      "title": "End of minority rule (2): the end of apartheid and of white rule in Zimbabwe",
+      "title": "End of minority rule (2): resistance and repression in South Africa, 1960–77",
+      "level": "a2",
+      "group": "A Level Paper 4 International: international history, 1909–94"
+    },
+    {
+      "id": "hist.d.safrica.3",
+      "title": "End of minority rule (3): the end of apartheid, 1978–94",
+      "level": "a2",
+      "group": "A Level Paper 4 International: international history, 1909–94"
+    },
+    {
+      "id": "hist.d.safrica.4",
+      "title": "End of minority rule (4): the end of white minority rule in Zimbabwe, 1965–80",
       "level": "a2",
       "group": "A Level Paper 4 International: international history, 1909–94"
     },
     {
       "id": "hist.d.malaysia.1",
-      "title": "The route to independence (1): Malaya and Malaysia, 1909–67",
+      "title": "The route to independence (1): nationalism and colonial rule in Malaya to 1945",
       "level": "a2",
       "group": "A Level Paper 4 International: international history, 1909–94"
     },
     {
       "id": "hist.d.malaysia.2",
-      "title": "The route to independence (2): Indonesia, 1909–67",
+      "title": "The route to independence (2): the formation of Malaysia",
+      "level": "a2",
+      "group": "A Level Paper 4 International: international history, 1909–94"
+    },
+    {
+      "id": "hist.d.malaysia.3",
+      "title": "The route to independence (3): the Indonesian nationalist movement to 1945",
+      "level": "a2",
+      "group": "A Level Paper 4 International: international history, 1909–94"
+    },
+    {
+      "id": "hist.d.malaysia.4",
+      "title": "The route to independence (4): Indonesia: independence and challenges to the mid-1960s",
       "level": "a2",
       "group": "A Level Paper 4 International: international history, 1909–94"
     },
@@ -340,6 +574,586 @@
       "group": "Exam readiness"
     }
   ],
-  "aliases": {},
-  "packages": []
+  "aliases": {
+    "hist.interp.ww1": "hist.interp.ww1.2",
+    "hist.interp.holocaust": "hist.interp.holocaust.2",
+    "hist.interp.coldwar": "hist.interp.coldwar.2"
+  },
+  "packages": [
+    {
+      "id": "P1",
+      "title": "France: key questions 1–2",
+      "chapters": [
+        "hist.eu.france.1",
+        "hist.eu.france.2"
+      ],
+      "widgets": [
+        "hist-timeline"
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "France: key questions 3–4",
+      "chapters": [
+        "hist.eu.france.3",
+        "hist.eu.france.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P3",
+      "title": "Germany: key questions 1–2",
+      "chapters": [
+        "hist.eu.germany.1",
+        "hist.eu.germany.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P4",
+      "title": "Germany: key questions 3–4",
+      "chapters": [
+        "hist.eu.germany.3",
+        "hist.eu.germany.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P5",
+      "title": "Russia: key questions 1–2",
+      "chapters": [
+        "hist.eu.russia.1",
+        "hist.eu.russia.2"
+      ],
+      "widgets": [
+        "hist-chart"
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Russia: key questions 3–4",
+      "chapters": [
+        "hist.eu.russia.3",
+        "hist.eu.russia.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P7",
+      "title": "Civil War and Reconstruction: key questions 1–2",
+      "chapters": [
+        "hist.us.civilwar.1",
+        "hist.us.civilwar.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P8",
+      "title": "Civil War and Reconstruction: key questions 3–4",
+      "chapters": [
+        "hist.us.civilwar.3",
+        "hist.us.civilwar.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P9",
+      "title": "Gilded Age and Progressive Era: key questions 1–2",
+      "chapters": [
+        "hist.us.gilded.1",
+        "hist.us.gilded.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P10",
+      "title": "Gilded Age and Progressive Era: key questions 3–4",
+      "chapters": [
+        "hist.us.gilded.3",
+        "hist.us.gilded.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P11",
+      "title": "Crash, Depression and New Deal: key questions 1–2",
+      "chapters": [
+        "hist.us.depression.1",
+        "hist.us.depression.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P12",
+      "title": "Crash, Depression and New Deal: key questions 3–4",
+      "chapters": [
+        "hist.us.depression.3",
+        "hist.us.depression.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P13",
+      "title": "Imperialism and world powers: key questions 1–2",
+      "chapters": [
+        "hist.int.empire.1",
+        "hist.int.empire.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P14",
+      "title": "Imperialism and world powers: key questions 3–4",
+      "chapters": [
+        "hist.int.empire.3",
+        "hist.int.empire.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P15",
+      "title": "International relations, 1919–29: key questions 1–2",
+      "chapters": [
+        "hist.int.1919.1",
+        "hist.int.1919.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P16",
+      "title": "International relations, 1919–29: key questions 3–4",
+      "chapters": [
+        "hist.int.1919.3",
+        "hist.int.1919.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P17",
+      "title": "International history, 1929–39: key questions 1–2",
+      "chapters": [
+        "hist.int.1929.1",
+        "hist.int.1929.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P18",
+      "title": "International history, 1929–39: key questions 3–4",
+      "chapters": [
+        "hist.int.1929.3",
+        "hist.int.1929.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P19",
+      "title": "Paper 3 skills and the First World War debate",
+      "chapters": [
+        "hist.interp.skills",
+        "hist.interp.ww1.1",
+        "hist.interp.ww1.2"
+      ],
+      "widgets": [
+        "hist-sort"
+      ]
+    },
+    {
+      "id": "P20",
+      "title": "Paper 3: the Holocaust",
+      "chapters": [
+        "hist.interp.holocaust.1",
+        "hist.interp.holocaust.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P21",
+      "title": "Paper 3: the Cold War",
+      "chapters": [
+        "hist.interp.coldwar.1",
+        "hist.interp.coldwar.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P22",
+      "title": "Mussolini's Italy: key questions 1–2",
+      "chapters": [
+        "hist.d.italy.1",
+        "hist.d.italy.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P23",
+      "title": "Mussolini's Italy: key questions 3–4",
+      "chapters": [
+        "hist.d.italy.3",
+        "hist.d.italy.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P24",
+      "title": "Stalin's Russia: key questions 1–2",
+      "chapters": [
+        "hist.d.stalin.1",
+        "hist.d.stalin.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P25",
+      "title": "Stalin's Russia: key questions 3–4",
+      "chapters": [
+        "hist.d.stalin.3",
+        "hist.d.stalin.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P26",
+      "title": "Hitler's Germany: key questions 1–2",
+      "chapters": [
+        "hist.d.hitler.1",
+        "hist.d.hitler.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P27",
+      "title": "Hitler's Germany: key questions 3–4",
+      "chapters": [
+        "hist.d.hitler.3",
+        "hist.d.hitler.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P28",
+      "title": "Post-war USA, 1945–61: key questions 1–2",
+      "chapters": [
+        "hist.d.usa45.1",
+        "hist.d.usa45.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P29",
+      "title": "Post-war USA, 1945–61: key questions 3–4",
+      "chapters": [
+        "hist.d.usa45.3",
+        "hist.d.usa45.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P30",
+      "title": "A time of challenges, 1961–74: key questions 1–2",
+      "chapters": [
+        "hist.d.usa61.1",
+        "hist.d.usa61.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P31",
+      "title": "A time of challenges, 1961–74: key questions 3–4",
+      "chapters": [
+        "hist.d.usa61.3",
+        "hist.d.usa61.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P32",
+      "title": "The USA, 1974–93: key questions 1–2",
+      "chapters": [
+        "hist.d.usa74.1",
+        "hist.d.usa74.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P33",
+      "title": "The USA, 1974–93: key questions 3–4",
+      "chapters": [
+        "hist.d.usa74.3",
+        "hist.d.usa74.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P34",
+      "title": "The Soviet Empire in Eastern Europe: key questions 1–2",
+      "chapters": [
+        "hist.d.soviet.1",
+        "hist.d.soviet.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P35",
+      "title": "The Soviet Empire in Eastern Europe: key questions 3–4",
+      "chapters": [
+        "hist.d.soviet.3",
+        "hist.d.soviet.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P36",
+      "title": "End of minority rule: key questions 1–2",
+      "chapters": [
+        "hist.d.safrica.1",
+        "hist.d.safrica.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P37",
+      "title": "End of minority rule: key questions 3–4",
+      "chapters": [
+        "hist.d.safrica.3",
+        "hist.d.safrica.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P38",
+      "title": "The route to independence: key questions 1–2",
+      "chapters": [
+        "hist.d.malaysia.1",
+        "hist.d.malaysia.2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P39",
+      "title": "The route to independence: key questions 3–4",
+      "chapters": [
+        "hist.d.malaysia.3",
+        "hist.d.malaysia.4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P40",
+      "title": "Start here: course map, foundations and choosing options",
+      "chapters": [
+        "hist.overview",
+        "hist.f.basics",
+        "hist.f.choose"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P41",
+      "title": "Skills: sources and essays",
+      "chapters": [
+        "hist.skills.sources",
+        "hist.skills.essays"
+      ],
+      "widgets": [
+        "hist-provenance",
+        "hist-essayplan"
+      ]
+    },
+    {
+      "id": "P42",
+      "title": "Exam guides: Papers 1 and 2",
+      "chapters": [
+        "hist.exam.p1",
+        "hist.exam.p2"
+      ],
+      "widgets": [
+        "hist-levels"
+      ]
+    },
+    {
+      "id": "P43",
+      "title": "Exam guides: Papers 3 and 4",
+      "chapters": [
+        "hist.exam.p3",
+        "hist.exam.p4"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P44",
+      "title": "Mixed practice",
+      "chapters": [
+        "hist.mixed.as",
+        "hist.mixed.a2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P45",
+      "title": "Mocks: Papers 1 and 2",
+      "chapters": [
+        "hist.mock.p1",
+        "hist.mock.p2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P46",
+      "title": "Mocks: Papers 3 and 4",
+      "chapters": [
+        "hist.mock.p3",
+        "hist.mock.p4"
+      ],
+      "widgets": []
+    }
+  ],
+  "papers": [
+    {
+      "id": "P1",
+      "title": "Paper 1: Historical sources",
+      "chapters": [
+        "hist.skills.sources",
+        "hist.eu.france.1",
+        "hist.eu.france.2",
+        "hist.eu.france.3",
+        "hist.eu.france.4",
+        "hist.eu.germany.1",
+        "hist.eu.germany.2",
+        "hist.eu.germany.3",
+        "hist.eu.germany.4",
+        "hist.eu.russia.1",
+        "hist.eu.russia.2",
+        "hist.eu.russia.3",
+        "hist.eu.russia.4",
+        "hist.us.civilwar.1",
+        "hist.us.civilwar.2",
+        "hist.us.civilwar.3",
+        "hist.us.civilwar.4",
+        "hist.us.gilded.1",
+        "hist.us.gilded.2",
+        "hist.us.gilded.3",
+        "hist.us.gilded.4",
+        "hist.us.depression.1",
+        "hist.us.depression.2",
+        "hist.us.depression.3",
+        "hist.us.depression.4",
+        "hist.int.empire.1",
+        "hist.int.empire.2",
+        "hist.int.empire.3",
+        "hist.int.empire.4",
+        "hist.int.1919.1",
+        "hist.int.1919.2",
+        "hist.int.1919.3",
+        "hist.int.1919.4",
+        "hist.int.1929.1",
+        "hist.int.1929.2",
+        "hist.int.1929.3",
+        "hist.int.1929.4",
+        "hist.exam.p1"
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Paper 2: Outline study",
+      "chapters": [
+        "hist.skills.essays",
+        "hist.eu.france.1",
+        "hist.eu.france.2",
+        "hist.eu.france.3",
+        "hist.eu.france.4",
+        "hist.eu.germany.1",
+        "hist.eu.germany.2",
+        "hist.eu.germany.3",
+        "hist.eu.germany.4",
+        "hist.eu.russia.1",
+        "hist.eu.russia.2",
+        "hist.eu.russia.3",
+        "hist.eu.russia.4",
+        "hist.us.civilwar.1",
+        "hist.us.civilwar.2",
+        "hist.us.civilwar.3",
+        "hist.us.civilwar.4",
+        "hist.us.gilded.1",
+        "hist.us.gilded.2",
+        "hist.us.gilded.3",
+        "hist.us.gilded.4",
+        "hist.us.depression.1",
+        "hist.us.depression.2",
+        "hist.us.depression.3",
+        "hist.us.depression.4",
+        "hist.int.empire.1",
+        "hist.int.empire.2",
+        "hist.int.empire.3",
+        "hist.int.empire.4",
+        "hist.int.1919.1",
+        "hist.int.1919.2",
+        "hist.int.1919.3",
+        "hist.int.1919.4",
+        "hist.int.1929.1",
+        "hist.int.1929.2",
+        "hist.int.1929.3",
+        "hist.int.1929.4",
+        "hist.exam.p2"
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Paper 3: Historical interpretations",
+      "chapters": [
+        "hist.interp.skills",
+        "hist.interp.ww1.1",
+        "hist.interp.ww1.2",
+        "hist.interp.holocaust.1",
+        "hist.interp.holocaust.2",
+        "hist.interp.coldwar.1",
+        "hist.interp.coldwar.2",
+        "hist.exam.p3"
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "Paper 4: Depth study",
+      "chapters": [
+        "hist.skills.essays",
+        "hist.d.italy.1",
+        "hist.d.italy.2",
+        "hist.d.italy.3",
+        "hist.d.italy.4",
+        "hist.d.stalin.1",
+        "hist.d.stalin.2",
+        "hist.d.stalin.3",
+        "hist.d.stalin.4",
+        "hist.d.hitler.1",
+        "hist.d.hitler.2",
+        "hist.d.hitler.3",
+        "hist.d.hitler.4",
+        "hist.d.usa45.1",
+        "hist.d.usa45.2",
+        "hist.d.usa45.3",
+        "hist.d.usa45.4",
+        "hist.d.usa61.1",
+        "hist.d.usa61.2",
+        "hist.d.usa61.3",
+        "hist.d.usa61.4",
+        "hist.d.usa74.1",
+        "hist.d.usa74.2",
+        "hist.d.usa74.3",
+        "hist.d.usa74.4",
+        "hist.d.soviet.1",
+        "hist.d.soviet.2",
+        "hist.d.soviet.3",
+        "hist.d.soviet.4",
+        "hist.d.safrica.1",
+        "hist.d.safrica.2",
+        "hist.d.safrica.3",
+        "hist.d.safrica.4",
+        "hist.d.malaysia.1",
+        "hist.d.malaysia.2",
+        "hist.d.malaysia.3",
+        "hist.d.malaysia.4",
+        "hist.exam.p4"
+      ]
+    }
+  ]
 }

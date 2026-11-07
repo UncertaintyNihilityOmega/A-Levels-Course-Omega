@@ -155,7 +155,8 @@ Headless (default):
 With the preview server (only when the user allowed it this session; the Organizer has started it):
 ```
 - Preview: http://localhost:<port> (never start or stop a server yourself; if it is down, use the headless kit tools).
-  Run `node kit/zta.js preview`, then open `http://localhost:<port>/#<chapter-id>`. Prefer get_page_text, read_page
+  Run `node kit/zta.js preview`, then open `http://localhost:<port>/#<chapter-id>` and reload the tab (a 404 page or a
+  stale build does not reload on a `#` change alone). Prefer get_page_text, read_page
   and javascript_tool probes; screenshots only at scale 0.5. If the pane does not draw (the app window is hidden),
   use `node kit/zta.js shot <id>` (`--dark`, `--phone`) and Read the PNGs.
 - Writer agents are writing other packages at the same time: do not touch their files. You may tighten COURSE.md or
