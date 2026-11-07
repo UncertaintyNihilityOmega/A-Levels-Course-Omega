@@ -1,13 +1,13 @@
 # STATUS: History
 
-Last: 2026-11-07 · WRITE P2 · hist.eu.france.3 (14.8k words) and hist.eu.france.4 (14.0k words); both pass check and phone; no widgets in P2; SVGs: Directory structure and Constitution of Year VIII (shot-checked); notes for reviewer in packages/P2.md (facts to double-check: Greer figures, plebiscite figures, adapted source texts)
+Last: 2026-11-07 · WRITE P3 · hist.eu.germany.1 (13,037 words) and hist.eu.germany.2 (12,015 words); check and phone pass; both use the hist-timeline widget (P1), no new widgets; one SVG each (Confederation schematic, grossdeutsch vs kleindeutsch). Reviewer: facts listed in packages/P3.md Writer's notes (written from memory, several sources are labelled close paraphrases).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
 - LEAD: done 2026-11-07
 - P1: written 2026-11-07
 - P2: written 2026-11-07
-- P3: writing 2026-11-07
+- P3: written 2026-11-07
 - P4: open
 - P5: open
 - P6: open
