@@ -1,12 +1,12 @@
 # STATUS: History
 
-Last: 2026-11-07 · LEAD · 94 chapters (one per key question; P3 context+debate) in 46 packages; FACTS from 2027 syllabus + specimen papers/mark schemes (all level grids) + June 2024 front pages; COURSE rules + verified links; gold hist.eu.france.1 passes check and phone; 2 REQUESTS (mock choice papers, preview 404)
+Last: 2026-11-07 · WRITE P1 · hist.eu.france.2 (14k words, checks ok, phone ok); widget hist-timeline (lane rows, list, filter, Prev/Next, arrow keys; probe clean on 3/12/30/long/bad). Reviewer: source extracts are marked Adapted paraphrases; see Writer's notes in packages/P1.md
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
 - LEAD: done 2026-11-07
-- P1: open
-- P2: open
+- P1: written 2026-11-07
+- P2: writing 2026-11-07
 - P3: open
 - P4: open
 - P5: open

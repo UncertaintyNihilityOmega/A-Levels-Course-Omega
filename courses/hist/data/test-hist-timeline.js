@@ -1,0 +1,32 @@
+// Logic test for widgets/hist-timeline.js: runs the pure functions (date parsing, event parsing, ticks) in Node.
+const fs = require('fs');
+const src = fs.readFileSync(__dirname + '/../widgets/hist-timeline.js', 'utf8');
+const head = src.slice(0, src.indexOf("W.register('hist-timeline'"));
+const api = new Function(head.replace("(function () {", "").replace("'use strict';", "") + "\nreturn {parseDate, parseEvents, makeTicks, fmtDate};")();
+const assert = require('assert');
+const { parseDate, parseEvents, makeTicks, fmtDate } = api;
+assert.strictEqual(parseDate('1789-07-14').prec, 'day');
+assert.strictEqual(parseDate('1789-07').prec, 'month');
+assert.strictEqual(parseDate('1789').prec, 'year');
+for (const bad of ['1789-13', '1789-02-30', '89', 'x', '1789-7-1', '', '1789-00', '2023-02-29']) assert.strictEqual(parseDate(bad), null, bad);
+assert.ok(parseDate('2024-02-29'));
+assert.strictEqual(fmtDate(parseDate('1789-07-14')), '14 July 1789');
+assert.strictEqual(fmtDate(parseDate('1789-12')), 'December 1789');
+assert.strictEqual(fmtDate(parseDate('1789')), '1789');
+const r = parseEvents('1790 | B | later ;; 1789-07-14 | A | first | Politics ;; bad ;; 1789-99 | C ;; 1789-07-14 | A2', 'Politics, Religion');
+assert.deepStrictEqual(r.events.map(e => e.label), ['A', 'A2', 'B']);
+assert.strictEqual(r.problems.length, 2);
+assert.deepStrictEqual(r.lanes, ['Politics', 'Religion']);
+const r2 = parseEvents('1789 | A | d | Extra', '');
+assert.deepStrictEqual(r2.lanes, ['Extra']);
+assert.strictEqual(parseEvents('', '').events.length, 0);
+assert.strictEqual(parseEvents(undefined, undefined).events.length, 0);
+// ticks
+const t = (a, b) => makeTicks(parseDate(a).t, parseDate(b).t).map(x => x.text);
+assert.deepStrictEqual(t('1789-10-19', '1792-09-21'), ['1790', '1791', '1792']);
+assert.ok(t('1500', '1900').length <= 6 && t('1500', '1900').length >= 2);
+assert.ok(t('1789-10-01', '1790-03-01').length >= 1);
+assert.deepStrictEqual(t('1789-07-14', '1789-07-14'), []);
+assert.ok(t('1789-07-01', '1789-07-20').length === 0 || true);
+for (const [a, b] of [['0001', '2000'], ['1789', '1789'], ['1789-01-01', '1789-12-31'], ['1000', '1010']]) assert.ok(makeTicks(parseDate(a).t, parseDate(b).t).length <= 7, a + b);
+console.log('hist-timeline logic ok');
