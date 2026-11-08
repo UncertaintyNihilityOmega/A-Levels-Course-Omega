@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-08 · WRITE P10 · hist.us.gilded.3 (14,847 words) and hist.us.gilded.4 (14,691 words), both check ok and phone ok; no new widgets (hist-timeline and hist-chart reused, one SVG each); reviewer notes in packages/P10.md (sources and numbers to confirm: Sinclair Cosmopolitan remark, 1912 platform passages, Wilson 1918 suffrage address wording, Pujo 341/112, 230 million acres, suit counts, Hine LOC caption)
+Last: 2026-11-08 · WRITE P11 · hist.us.depression.1 (12,238 words) and .2 (12,483 words); no new widgets (hist-timeline x3, hist-chart x4 reused, probed clean); 5 hand SVG figures checked with Python and by headless shots; reviewer notes in packages/P11.md (facts flagged: Fisher/Babson wording, Roosevelt Oglethorpe quote, La Guardia source date, Yawp-sourced claims, Mexican repatriation estimates)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -15,7 +15,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P8: written 2026-11-08
 - P9: written 2026-11-08
 - P10: written 2026-11-08
-- P11: writing 2026-11-08
+- P11: written 2026-11-08
 - P12: open
 - P13: open
 - P14: open
