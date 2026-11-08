@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-08 · FIX · hist.eu.france.4: Stretch for A* Q2 re-marked [20 marks] as Paper 2 (b)-style ('How far are ... reliable evidence'), answer now says what Levels 5/4/3 do
+Last: 2026-11-08 · WRITE P6 · hist.eu.russia.3 (14,063 words) and hist.eu.russia.4 (12,568 words); check and phone pass; no new widgets (none in course.json), hist-timeline in both plus one SVG each (dual power; schematic Civil War map); sources fetched from MIA/Seventeen Moments/Avalon, unconfirmed figures listed in packages/P6.md Writer's notes (Brest-Litovsk losses, famine and Civil War ranges, Kronstadt casualties, delegate and seat counts)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -10,8 +10,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P3: reviewed 2026-11-08
 - P4: written 2026-11-08
 - P5: written 2026-11-08
-- P6: writing 2026-11-08
-- P7: open
+- P6: written 2026-11-08
+- P7: writing 2026-11-08
 - P8: open
 - P9: open
 - P10: open
