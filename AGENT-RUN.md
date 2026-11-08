@@ -105,6 +105,9 @@ and follow its "Rules for every session" and "<STEP> (<ROLE>)" steps, with these
 - Save tokens without lowering quality: every tool call re-sends your whole context, so bundle commands (check and
   phone in one Bash call, one Python script per chapter's figures), and open screenshots only when you need to look.
 - Do not leave background processes running when you finish.
+- You have web access: WebSearch and WebFetch are deferred tools, so load them first with ToolSearch
+  `select:WebSearch,WebFetch` (WebSearch needs `mode: "standard"`). Check facts, dates, figures and source wording
+  against reliable sources (university, archive, exam-board pages); never invent a quotation.
 ```
 
 ### Writer additions (WRITE, FIX + WRITE)
