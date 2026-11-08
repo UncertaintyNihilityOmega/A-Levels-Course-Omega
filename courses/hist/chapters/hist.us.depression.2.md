@@ -213,7 +213,7 @@ Hoover's belief that Americans should meet the crisis by voluntary co-operation,
 Hoover's own explanation of his refusal to fund relief is clear. On 3 February 1931 he said that the issue was not whether people would go hungry or cold, but "the best method by which hunger and cold shall be prevented": voluntary giving and local responsibility, or appropriations from the Federal Treasury. He feared that federal relief would destroy the spirit of mutual aid, create a dependent population and unbalance the budget. His policy also followed the orthodoxy of the time: in June 1932, with the economy shrinking, he signed a Revenue Act that raised taxes (the top rate of income tax went from 25 to 63 per cent), because both parties believed that balanced budgets were essential to confidence.
 
 Critics point to four weaknesses.
-- **Scale.** The RFC's lending was cautious and aimed at banks, not at borrowers or workers. Fiorello La Guardia, a Republican congressman from New York, called it a "millionaire's dole". The loan of $90 million to the Central Republic Bank of Chicago, whose former president was Charles Dawes, Coolidge's Vice President, drew angry criticism.
+- **Scale.** The RFC's lending was cautious and aimed at banks, not at borrowers or workers. Fiorello La Guardia, a Republican congressman from New York, called it a "millionaires' dole". The loan of $90 million to the Central Republic Bank of Chicago, whose former president was Charles Dawes, Coolidge's Vice President, drew angry criticism.
 - **Voluntarism failed.** Private charities and local governments ran out of money by 1932.
 - **Timing.** Direct relief came late (July 1932) and in the form of loans to states, not grants.
 - **Contradictory policy.** He signed Smoot–Hawley, balanced the budget and raised taxes while the economy was falling.
@@ -260,7 +260,7 @@ The Republicans renominated Hoover without enthusiasm. The Democrats met in Chic
 
 Roosevelt was a wealthy New Yorker from a patrician family. He had been paralysed by polio in 1921 and returned to politics, and as governor of the largest state he had set up relief through the Temporary Emergency Relief Administration. In a radio speech in April 1932 he spoke of "the forgotten man at the bottom of the economic pyramid", and at Oglethorpe University in May he called for "bold, persistent experimentation": try a method, and if it fails, try another. Yet his platform was cautious. The Democrats promised to cut federal spending by a quarter and balance the budget, and to repeal Prohibition, which was unpopular in cities.
 
-Hoover campaigned unwillingly, defending his record and warning that Democratic policies would be ruinous: in his speech at Madison Square Garden on 31 October he said that the grass would grow in the streets of a hundred cities. He was heckled, and his train was pelted with eggs and tomatoes in some towns. Socialist Norman Thomas won about 880,000 votes and the Communist William Foster about 100,000.
+Hoover campaigned unwillingly, defending his record and warning that Democratic policies would be ruinous: in his speech at Madison Square Garden on 31 October he said that if the Democrats cut the protective tariff, the grass would grow in the streets of a hundred cities. He was heckled, and his train was pelted with eggs and tomatoes in some towns. Socialist Norman Thomas won about 880,000 votes and the Communist William Foster about 100,000.
 
 ### The result
 
@@ -336,15 +336,15 @@ These reasons were linked. The Depression created the anger; Hoover's record and
 :::eg Paper 1 (a) [15]: compare two sources as evidence
 **Source A**
 
-During the war we necessarily turned to the Government to solve every difficult economic problem. We were challenged with the choice between the American system of rugged individualism and a European philosophy of diametrically opposed doctrines, which would weaken self-government and individual initiative.
+During the war we necessarily turned to the Government to solve every difficult economic problem. We were challenged with a peace-time choice between the American system of rugged individualism and a European philosophy of diametrically opposed doctrines, doctrines of paternalism and state socialism.
 
-*Adapted from the speech by Herbert Hoover, "Principles and Ideals of the United States Government", New York, 22 October 1928. The phrases "the American system of rugged individualism" and "diametrically opposed doctrines" are quoted.*
+*Shortened from the speech by Herbert Hoover, "Principles and Ideals of the United States Government", New York, 22 October 1928. Two sentences, in Hoover's words, with a passage between them left out.*
 
 **Source B**
 
-This is not an issue as to whether people shall go hungry or cold in the United States. It is solely a question of the best method by which hunger and cold shall be prevented. The question is whether the American people will maintain the spirit of charity and mutual self-help through voluntary giving and the responsibility of local government, or whether they will turn to appropriations out of the Federal Treasury.
+This is not an issue as to whether people shall go hungry or cold in the United States. It is solely a question of the best method by which hunger and cold shall be prevented. It is a question as to whether the American people on one hand will maintain the spirit of charity and mutual self-help through voluntary giving and the responsibility of local government as distinguished on the other hand from appropriations out of the Federal Treasury for such purposes.
 
-*Adapted from a statement by President Herbert Hoover to the press about federal funds for relief, 3 February 1931. The first two sentences are quoted; the third is a shortened paraphrase.*
+*From a statement by President Herbert Hoover to the press about federal funds for relief, 3 February 1931.*
 
 **Question.** Compare these two sources as evidence about Hoover's attitude to the role of the federal government.
 
@@ -356,7 +356,7 @@ This is not an issue as to whether people shall go hungry or cold in the United 
 
 **A Level 4 answer (14–15 marks).**
 
-"The two sources show remarkable consistency. In Source A Hoover contrasts 'the American system of rugged individualism' with an alternative that 'would weaken self-government and individual initiative', and in Source B he distinguishes 'voluntary giving and the responsibility of local government' from 'appropriations out of the Federal Treasury'. In both he describes a choice between individual and community responsibility on one hand and the state on the other, and in both he chooses the first. Both are also public statements by the president or candidate meant to persuade, and both frame the choice in terms of values (initiative, charity, self-help) rather than money.
+"The two sources show remarkable consistency. In Source A Hoover contrasts 'the American system of rugged individualism' with 'doctrines of paternalism and state socialism', and in Source B he distinguishes 'voluntary giving and the responsibility of local government' from 'appropriations out of the Federal Treasury'. In both he describes a choice between individual and community responsibility on one hand and the state on the other, and in both he chooses the first. Both are also public statements by the president or candidate meant to persuade, and both frame the choice in terms of values (individualism, charity, self-help) rather than money.
 
 There are differences of subject and tone. Source A is general and philosophical, about the role of government in the economy in peacetime, and sets America against Europe: it warns about a danger. Source B is specific and practical, a response to a particular demand for money for relief, and it begins by denying that anyone wants people to go hungry. Source A is looking ahead to what Hoover will avoid; Source B is defending a decision that has real consequences for millions.
 
@@ -407,7 +407,7 @@ A challenge to the authority of the United States Government has been met, swift
 
 **Source B**
 
-That mob down there was a bad looking mob. It was animated by the essence of revolution. I call them insurrectionists. Few indeed of those cleared were veteran soldiers. The President played it pretty fine in waiting to the last minute, but he didn't have much margin.
+That mob down there was a bad looking mob. It was animated by the essence of revolution. I call them insurrectionists. There were, in my opinion, few veteran soldiers in the group that we cleared out today, few indeed. The President played it pretty fine in waiting to the last minute, but he didn't have much margin.
 
 *Adapted from General Douglas MacArthur's remarks to reporters on the night of 28 July 1932, as recorded in the American Presidency Project. The sentences are quoted from the news conference but the order has been changed.*
 
@@ -415,13 +415,13 @@ That mob down there was a bad looking mob. It was animated by the essence of rev
 
 President Hoover chose the course that Lincoln chose, that presidents have always chosen.
 
-*Adapted from an editorial in the Ohio State Journal, Columbus, July 1932, quoted by the National Park Service.*
+*From an editorial in the Ohio State Journal, Columbus, July 1932, as quoted by the National Park Service.*
 
 **Source D**
 
-The attack on the Bonus Army was sheer stupidity, without parallel in American annals.
+… sheer stupidity … without parallel in American annals.
 
-*Adapted from an editorial in the Chicago Herald and Examiner, July 1932. The phrases "sheer stupidity" and "without parallel in American annals" are quoted by the National Park Service; the rest is a paraphrase.*
+*Phrases from an editorial in the Chicago Herald and Examiner, July 1932, describing President Hoover's action against the Bonus Army, as quoted by the National Park Service.*
 
 **Question.** How far do these sources support the view that the government was right to use force against the Bonus Army?
 
@@ -476,27 +476,27 @@ A: Roosevelt won 57.4 per cent of the popular vote and 472 electoral votes to Ho
 :::note Sources for exam practice questions 5 and 6
 **Source A**
 
-I pledge you, I pledge myself, to a new deal for the American people. He spoke of the men and women, forgotten in the political philosophy of the Government of the last years.
+Throughout the Nation men and women, forgotten in the political philosophy of the Government of the last years, look to us here for guidance and for more equitable opportunity to share in the distribution of national wealth. … I pledge you, I pledge myself, to a new deal for the American people.
 
-*Adapted from the speech by Franklin D. Roosevelt accepting the Democratic nomination for president, Chicago, 2 July 1932. The first sentence is quoted; the second is a paraphrase that keeps the phrase "forgotten in the political philosophy of the Government of the last years".*
+*Shortened from the speech by Franklin D. Roosevelt accepting the Democratic nomination for president, Chicago, 2 July 1932. Two sentences from the end of the speech, in Roosevelt's words.*
 
 **Source B**
 
-The grass will grow in the streets of a hundred cities, a thousand towns, if the Democratic policies are adopted.
+The grass will grow in the streets of a hundred cities, a thousand towns; the weeds will overrun the fields of millions of farms …
 
-*Adapted from the speech by President Herbert Hoover at Madison Square Garden, New York, 31 October 1932. Sources differ slightly on the exact wording.*
+*Shortened from the speech by President Herbert Hoover at Madison Square Garden, New York, 31 October 1932 (State Papers of Herbert Hoover, 1934, volume 2). Hoover was describing what would follow the Democratic proposal to cut the protective tariff to "a competitive tariff for revenue".*
 
 **Source C**
 
-The Reconstruction Finance Corporation lends billions to big banks and railroads, but nothing for the families who have no work: it is a millionaire's dole.
+… a millionaires' dole …
 
-*Adapted from remarks by Fiorello La Guardia, Republican congressman from New York, on the Reconstruction Finance Corporation, 1932. The phrase "millionaire's dole" is quoted.*
+*A phrase used by Fiorello La Guardia, Republican congressman from New York, for the Reconstruction Finance Corporation, which in 1932 lent to banks, railroads and insurance companies but not to individuals; the phrase is reported by historians, and the exact speech and date are not known.*
 
 **Source D**
 
-It is common sense to take a method and try it. If it fails, admit it frankly and try another. But above all, try something.
+The country needs and, unless I mistake its temper, the country demands bold, persistent experimentation. It is common sense to take a method and try it. If it fails, admit it frankly and try another. But above all, try something.
 
-*Adapted from the address by Franklin D. Roosevelt at Oglethorpe University, Atlanta, 22 May 1932. The phrase "bold, persistent experimentation" from the same speech is also quoted by historians.*
+*From the address by Franklin D. Roosevelt at Oglethorpe University, Atlanta, 22 May 1932.*
 :::
 
 :::try Exam practice ★ to ★★★
@@ -514,7 +514,7 @@ Q: [25 marks] ★★★ Read all of the sources (in the box above). How far do t
 H: Sort the sources: which attack Hoover's response (C), which are by Hoover himself (B), which are by Roosevelt (A, D).
 H: Use your own knowledge: what do the figures of 472 and 59 electoral votes tell you? What else helped Roosevelt?
 H: Evaluate each source by its author and purpose before deciding how much weight it carries.
-A: Support: C (La Guardia, a Republican) attacks the RFC as help for the rich, which shows that criticism came from within Hoover's party; B shows a defensive Hoover who predicts disaster rather than offering a remedy; A and D show Roosevelt offering action against a background of failure. Challenge: A and D are vague and show that Roosevelt won by offering hope and flexibility, not by a better programme; the Democratic platform was cautious; B suggests Hoover still had a case (the fear of untested policies); C is the view of one man. With knowledge: Hoover's measures were substantial (RFC, Home Loan Banks), but unemployment was about a quarter and 9,096 banks had suspended; the Bonus Army and Hoovervilles; Roosevelt's personality; the end of Prohibition. Evaluation: A and B are campaign speeches (A has a motive to promise, B to warn); C is an opposition-minded Republican, but one who supported the principle of relief; D is a speech to students. Level 5 judges how far: the failure of Hoover's response, as seen in C and B, was the largest factor, but Roosevelt's appeal (A, D) explains why voters chose him rather than a third-party candidate, so the sources agree to a large extent but not completely.
+A: Support: C (La Guardia, a Republican) attacks the RFC as help for the rich, which shows that criticism came from within Hoover's party; B shows a defensive Hoover who predicts disaster rather than offering a remedy; A and D show Roosevelt offering action against a background of failure. Challenge: A and D are vague and show that Roosevelt won by offering hope and flexibility, not by a better programme; the Democratic platform was cautious; B suggests Hoover still had a case to make (the fear that cutting the tariff would ruin industry and farms); C is the view of one man. With knowledge: Hoover's measures were substantial (RFC, Home Loan Banks), but unemployment was about a quarter and 9,096 banks had suspended; the Bonus Army and Hoovervilles; Roosevelt's personality; the end of Prohibition. Evaluation: A and B are campaign speeches (A has a motive to promise, B to warn); C is an opposition-minded Republican, but one who supported the principle of relief; D is a speech to students. Level 5 judges how far: the failure of Hoover's response, as seen in C and B, was the largest factor, but Roosevelt's appeal (A, D) explains why voters chose him rather than a third-party candidate, so the sources agree to a large extent but not completely.
 Q: [20 marks] ★★★ To what extent did the election of 1932 create the New Deal coalition?
 H: List the groups in the coalition and ask when each joined.
 H: Separate the vote against Hoover from a lasting change in party loyalty.

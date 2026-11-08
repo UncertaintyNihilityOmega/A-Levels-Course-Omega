@@ -379,9 +379,9 @@ These factors reinforced each other. Genuine profits in the new industries start
 :::eg Paper 1 (a) [15]: compare two sources as evidence
 **Source A**
 
-Sooner or later a crash is coming which will take in the leading stocks, and he forecast a fall of 60 to 80 points in the Dow Jones average.
+Sooner or later a crash is coming which will take in the leading stocks and cause a decline of from 60 to 80 points in the Dow-Jones barometer.
 
-*Adapted from a report of a speech by Roger Babson, a business forecaster, at the National Business Conference, Wellesley, Massachusetts, 5 September 1929. The first part is quoted; the rest is a reporter's summary.*
+*From a speech by Roger Babson, a business forecaster, at the National Business Conference, Wellesley, Massachusetts, 5 September 1929, as reported in the press.*
 
 **Source B**
 
@@ -437,25 +437,25 @@ Overall, the Crash was the trigger, and without it the 1920s boom might have las
 
 America's present need is not heroics, but healing; not nostrums, but normalcy; not revolution, but restoration.
 
-*From a speech by Warren Harding, Republican candidate for president, in Boston, 14 May 1920.*
+*From a speech by Warren Harding, a Republican senator from Ohio seeking his party's nomination for president, to the Home Market Club in Boston, 14 May 1920.*
 
 **Source B**
 
-Coolidge said that the chief business of the American people is business. They are profoundly concerned with producing, buying, selling, investing and prospering in the world.
+After all, the chief business of the American people is business. They are profoundly concerned with producing, buying, selling, investing and prospering in the world.
 
-*Adapted from an address by President Calvin Coolidge to the American Society of Newspaper Editors, Washington, 17 January 1925. The first sentence is a paraphrase; the second is quoted.*
+*Adapted from an address by President Calvin Coolidge to the American Society of Newspaper Editors, Washington, 17 January 1925.*
 
 **Source C**
 
-No Congress of the United States ever assembled, on surveying the state of the Union, has met with a more pleasing prospect than that which appears at the present time. About a third of the national debt has been paid.
+No Congress of the United States ever assembled, on surveying the state of the Union, has met with a more pleasing prospect than that which appears at the present time. One-third of the national debt has been paid, while much of the other two-thirds has been refunded at lower rates.
 
-*Adapted from the annual message of President Calvin Coolidge to Congress, 4 December 1928. The first sentence is quoted; the second is a paraphrase.*
+*Adapted from the annual message of President Calvin Coolidge to Congress, 4 December 1928. Two sentences, in Coolidge's words.*
 
 **Source D**
 
-The Federal Reserve Act does not contemplate the use of the resources of the Federal Reserve banks for the creation or extension of speculative credit.
+The Federal Reserve Act does not, in the opinion of the Federal Reserve Board, contemplate the use of the resources of the Federal reserve banks for the creation or extension of speculative credit.
 
-*Adapted from a letter from the Federal Reserve Board to the Federal Reserve banks, 2 February 1929.*
+*From a letter from the Federal Reserve Board to the Federal Reserve banks, 2 February 1929.*
 
 **Question.** How far do these sources support the view that the policies of the Republican governments of the 1920s helped to cause the Great Crash?
 
@@ -528,9 +528,9 @@ Cash income of farmers after production expenses was $4,890,000,000 in 1929 and 
 
 **Source D**
 
-We were challenged with the choice between the American system of rugged individualism and a European philosophy of diametrically opposed doctrines, which would weaken self-government and individual initiative.
+We were challenged with a peace-time choice between the American system of rugged individualism and a European philosophy of diametrically opposed doctrines, doctrines of paternalism and state socialism.
 
-*Adapted from the speech by Herbert Hoover, "Principles and Ideals of the United States Government", New York, 22 October 1928. The phrases "the American system of rugged individualism" and "diametrically opposed doctrines" are quoted.*
+*From the speech by Herbert Hoover, "Principles and Ideals of the United States Government", New York, 22 October 1928.*
 :::
 
 :::try Exam practice ★ to ★★★

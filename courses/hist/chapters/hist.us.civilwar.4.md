@@ -497,9 +497,9 @@ A more studied outrage on the legislative authority of the people has never been
 
 **Source B**
 
-Every individual of these races born in the United States is by the bill made a citizen of the United States. In fact, the distinction of race and color is by the bill made to operate in favor of the colored and against the white race. When eleven of the thirty-six States are unrepresented in Congress at the present time, it is sound policy to make our entire colored population citizens of the United States?
+Every individual of these races born in the United States is by the bill made a citizen of the United States. In fact, the distinction of race and color is by the bill made to operate in favor of the colored and against the white race. It may also be asked whether, when eleven of the thirty-six States are unrepresented in Congress at the present time, it is sound policy to make our entire colored population and all other excepted classes citizens of the United States?
 
-*Adapted from the veto message of President Andrew Johnson on the Civil Rights Bill, sent to the Senate on 27 March 1866. Passages are joined and shortened, and the last sentence, which Johnson wrote as a question, is simplified.*
+*Shortened from the veto message of President Andrew Johnson on the Civil Rights Bill, sent to the Senate on 27 March 1866. The three sentences are Johnson's own, from different parts of the message, in a different order.*
 
 **Question.** Compare these two sources as evidence about disputes between the president and Congress over Reconstruction.
 
@@ -559,7 +559,7 @@ The arm of the Federal government, Douglass says, "is far too short to protect t
 
 **Source C**
 
-A cartoon showing a Ku Klux Klan man and a member of the White League shaking hands across a heraldic shield. Inside the shield is a Black family. On one side a lynched man hangs from a tree; on the other a schoolhouse burns. The caption reads "Worse than Slavery".
+A cartoon showing a Ku Klux Klan man and a member of the White League shaking hands across a heraldic shield. Inside the shield is a Black family. On one side a lynched man hangs from a tree; on the other a schoolhouse burns. The title calls this "worse than slavery".
 
 *A cartoon by Thomas Nast, titled "The Union as it was. The lost cause, worse than slavery", published in Harper's Weekly, 24 October 1874, a magazine that supported the Republican Party.*
 
@@ -654,9 +654,9 @@ Neither slavery nor involuntary servitude, except as a punishment for crime wher
 
 **Source C**
 
-Masters may use moderate corporeal chastisement of an apprentice, but in no case shall cruel or inhuman punishment be inflicted. In choosing a master, the former owner of the apprentice shall have the preference.
+The former owner of said minors shall have the preference when, in the opinion of the court, he or she shall be a suitable person for that purpose. … Said master or mistress shall have power to inflict such moderate corporeal chastisement as a father or guardian is allowed to inflict on his or her child or ward at common law: Provided, that in no case shall cruel or inhuman punishment be inflicted.
 
-*Adapted from "An Act to Regulate the Relation of Master and Apprentice, as relates to Freedmen, Free Negroes, and Mulattoes", Mississippi, autumn 1865. The words in quotation marks in the original are kept; the rest is summarised.*
+*Shortened from "An Act to Regulate the Relation of Master and Apprentice, as relates to Freedmen, Free Negroes, and Mulattoes", Mississippi, November 1865, sections 1 and 3. The words are the Act's own. "Corporeal chastisement" means physical punishment.*
 
 **Source D**
 

@@ -55,7 +55,11 @@ FACTS.md (grep it for your topic).
   "Shortened; the phrases are the document's own" must contain no words of yours (review of P4–P7 found a paraphrase
   inside one); an extract joined from two documents names both in its provenance; a visual source's title, maker and
   place come from a museum or library catalogue entry, not from memory (a cartoon title was wrong). Prefer the real
-  words, found online, to a "summary written for practice".
+  words, found online, to a "summary written for practice". Never put reported speech or a summary inside an extract
+  ("He went on to say …", "Coolidge said …", "The writer admits …"): find the real sentence, or give only the verified
+  phrase with dots (review of P8–P11 replaced over a dozen such extracts). Check what a famous line was about before
+  using it (Hoover's "grass will grow" of 1932 was about cutting the tariff) and who wrote it where (Sumner's
+  "liberty, inequality, survival of the fittest" is from "The Challenge of Facts", published 1914, not his 1883 book).
 - `hist-chart`: use `data-type="line"` only when the years are close enough to show a trend; three years twenty years
   apart are bars, and the text says what the chart cannot show.
 - **Sensitive topics** (the Terror, slavery and Reconstruction violence, colonial atrocities in the Congo and against

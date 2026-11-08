@@ -459,7 +459,7 @@ The context explains this. Source A is the introduction to a book of articles wh
 :::eg Paper 1 (b) [25]: use all four sources and your own knowledge
 **Source A**
 
-The settlement aims to make social intercourse express the growing sense of the economic unity of society. It springs from the desire to interpret democracy in social terms. The only thing to be dreaded in the Settlement is that it lose its flexibility.
+The settlement aims to make social intercourse express the growing sense of the economic unity of society. It springs from the desire to interpret democracy in social terms. The one thing to be dreaded in the Settlement is that it lose its flexibility, its power of quick adaptation, its readiness to change its methods as its environment may demand.
 
 *Adapted from Twenty Years at Hull-House, an account of the settlement house in Chicago by its co-founder Jane Addams, 1910. Sentences from different chapters are joined, and the first two are simplified.*
 

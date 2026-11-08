@@ -317,7 +317,7 @@ Many Americans admired business success, and few asked for controls. That attitu
 
 - **The self-made man.** Americans believed in a land of opportunity. The novels of **Horatio Alger Jr** (more than a hundred, starting with *Ragged Dick* in 1868) told how poor boys rose by honesty, hard work and a lucky break. In practice his heroes usually reached modest comfort, not great wealth, but his books made success seem open to all.
 - **The gospel of wealth.** In June 1889 the steelmaker **Andrew Carnegie** published an article called "Wealth", soon known as "The Gospel of Wealth". He argued that competition, though hard on individuals, was best for the race because it ensured "the survival of the fittest in every department", and that great fortunes were the reward of talent. But the rich had a duty to use their wealth for the public good during their lives: "The man who dies thus rich dies disgraced." He gave away more than $350 million, much of it to libraries, universities and peace causes. Rockefeller made gifts of a similar kind, including to the University of Chicago, founded in 1890.
-- **Social Darwinism.** The English philosopher **Herbert Spencer** coined the phrase "survival of the fittest" in 1864 after Charles Darwin's *Origin of Species* (1859), and applied it to human society. When he toured the United States in 1882, leading Americans honoured him with a banquet in New York. At Yale, **William Graham Sumner** argued in *What Social Classes Owe to Each Other* (1883) that society could choose "liberty, inequality, survival of the fittest" or "not-liberty, equality, survival of the unfittest", and that government should not help the poor at the expense of the thrifty. Historians such as Richard Hofstadter (*Social Darwinism in American Thought*, 1944) saw this as the ruling ideology of the age; Robert Bannister (1979) argued that very few American thinkers used the term or followed Spencer so closely, and that Hofstadter exaggerated. The sensible view: Social Darwinism was a respectable argument used to defend inequality, but business leaders also drew on older religious ideas, including the Protestant work ethic.
+- **Social Darwinism.** The English philosopher **Herbert Spencer** coined the phrase "survival of the fittest" in 1864 after Charles Darwin's *Origin of Species* (1859), and applied it to human society. When he toured the United States in 1882, leading Americans honoured him with a banquet in New York. At Yale, **William Graham Sumner** argued in *What Social Classes Owe to Each Other* (1883) that government should not take from the thrifty to help the poor, and in an essay of the same decade, "The Challenge of Facts" (published in 1914), that society could choose "liberty, inequality, survival of the fittest" or "not-liberty, equality, survival of the unfittest". Historians such as Richard Hofstadter (*Social Darwinism in American Thought*, 1944) saw this as the ruling ideology of the age; Robert Bannister (1979) argued that very few American thinkers used the term or followed Spencer so closely, and that Hofstadter exaggerated. The sensible view: Social Darwinism was a respectable argument used to defend inequality, but business leaders also drew on older religious ideas, including the Protestant work ethic.
 - **The critics.** Not everyone agreed. **Henry George**'s *Progress and Poverty* (1879), which sold hundreds of thousands of copies within a few years, began its first chapter: "This association of poverty with progress is the great enigma of our times." He proposed a tax on land to share the gains. He ran for mayor of New York in 1886 and finished second, ahead of Theodore Roosevelt. Edward Bellamy's novel *Looking Backward* (1888) imagined a socialist future. Twain and Warner satirised greed. Churches' "Social Gospel" and the labour movement and Populists (next chapter) expressed the anger.
 
 :::key Attitudes: why they matter for industrialisation
@@ -440,15 +440,15 @@ The context and provenance explain why. Source B was written by the Superintende
 :::eg Paper 1 (b) [25]: use all four sources and your own knowledge
 **Source A**
 
-The problem of our age is the proper administration of wealth, so that the ties of brotherhood may still bind together the rich and poor in harmonious relationship. Competition may sometimes be hard for the individual, but it is best for the race, because it ensures the survival of the fittest in every department. The man who dies thus rich dies disgraced.
+The problem of our age is the proper administration of wealth, so that the ties of brotherhood may still bind together the rich and poor in harmonious relationship. And while the law [of competition] may be sometimes hard for the individual, it is best for the race, because it insures the survival of the fittest in every department. The man who dies thus rich dies disgraced.
 
-*Adapted from "Wealth", an article by the steelmaker Andrew Carnegie in the North American Review, June 1889 (later known as "The Gospel of Wealth"). The first and last sentences are quoted; the middle is adapted.*
+*Adapted from "Wealth", an article by the steelmaker Andrew Carnegie in the North American Review, June 1889 (later known as "The Gospel of Wealth"). Three sentences from different parts of the article, in Carnegie's words; the words in square brackets are added.*
 
 **Source B**
 
 Let it be understood that we cannot go outside of this alternative: liberty, inequality, survival of the fittest; not-liberty, equality, survival of the unfittest. The former carries society forward and favors all its best members; the latter carries society downwards and favors all its worst members.
 
-*From What Social Classes Owe to Each Other, a book by William Graham Sumner, a professor at Yale University, 1883.*
+*From "The Challenge of Facts", an essay by William Graham Sumner, a professor at Yale University, written in the 1880s and published after his death in The Challenge of Facts and Other Essays (1914). He made the same case in public in his book What Social Classes Owe to Each Other (1883).*
 
 **Source C**
 
@@ -470,7 +470,7 @@ We meet in the midst of a nation brought to the verge of moral, political, and m
 
 **Step 2: evaluate each source in context (the step that reaches Level 5).**
 - **A**: written by the man who owned Carnegie Steel, for readers of an elite magazine; it justifies the wealth of its author, so it is self-interested. But Carnegie did give away more than $350 million, so it was not just words, and the article also argued for heavy taxes on inheritances. Strong evidence of how successful businessmen wished to be seen, weak evidence of what ordinary Americans thought.
-- **B**: an academic polemic against social reform from a Yale professor. Historians disagree about how widely such ideas were held (Hofstadter thought they dominated; Bannister thought their influence exaggerated), so it is evidence of one educated opinion, not of public opinion.
+- **B**: an academic polemic against social reform from a Yale professor; this essay was printed only after his death, but he argued the same in his book of 1883 and in his teaching. Historians disagree about how widely such ideas were held (Hofstadter thought they dominated; Bannister thought their influence exaggerated), so it is evidence of one educated opinion, not of public opinion.
 - **C**: a bestselling book (hundreds of thousands of copies within a few years), and George finished second in the New York mayoral election of 1886, ahead of Theodore Roosevelt. That makes C good evidence that criticism had a mass audience. But it comes from a reformer with a remedy to sell.
 - **D**: a party platform, deliberately dramatic, written to win votes; "stolen" and "ruin" are exaggerations. But the People's Party's presidential candidate, James B. Weaver, won about one million votes (about 8.5 per cent) and 22 electoral votes in 1892, so it reflected a real movement, mainly of farmers.
 
@@ -527,9 +527,9 @@ In the opinion of the Government of the United States the coming of Chinese labo
 
 **Source C**
 
-The immigrants of southern Italy, Hungary, Austria and Russia are men of the lowest social condition. They are beaten men from beaten races; representing the worst failures in the struggle for existence.
+Throngs of ignorant and brutalized peasantry from the countries of eastern and southern Europe. … They are beaten men from beaten races; representing the worst failures in the struggle for existence.
 
-*Adapted from "Restriction of Immigration", an article by Francis A. Walker, an economist and former Superintendent of the Census, in the Atlantic Monthly, June 1896.*
+*Shortened from "Restriction of Immigration", an article by Francis A. Walker, an economist and former Superintendent of the Census, in the Atlantic Monthly, June 1896. The phrases are Walker's own, from two parts of the article; he is describing the "new" immigrants from southern and eastern Europe.*
 
 **Source D**
 

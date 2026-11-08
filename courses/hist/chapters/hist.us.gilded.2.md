@@ -446,9 +446,9 @@ Before their cable reached me in Scotland, the Governor of the State had appeare
 
 **Source B**
 
-Hereafter no employee of the Pinkerton Detective Agency, or similar agency, shall be employed by the Government of the United States or the District of Columbia.
+Hereafter no employee of the Pinkerton Detective Agency, or similar agency, shall be employed in any Government service or by any officer of the District of Columbia.
 
-*Adapted from the Anti-Pinkerton Act, passed by Congress as part of an appropriations law, 3 March 1893.*
+*From the Anti-Pinkerton Act, passed by Congress as part of an appropriations law, 3 March 1893. It made permanent a ban first attached to an appropriations law in August 1892, a month after Homestead.*
 
 **Question.** Compare these two sources as evidence about the consequences of the Homestead strike of 1892.
 

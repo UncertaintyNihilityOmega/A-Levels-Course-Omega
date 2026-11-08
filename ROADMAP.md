@@ -7,9 +7,8 @@
   now a summary chapter in Other Subjects (`other.psychology`). LEAD done (94 chapters, 46 packages, gold `hist.eu.france.1`).
   P1–P11 written (France 1–4, Germany 1–4, Russia 1–4, Civil War 1–4, Gilded Age 1–4, Depression 1–2), P1–P7
   reviewed (web fact check), no open fixes.
-  Next: Specialist **REVIEW P8, P9, P10, P11** (web-check each package's Writer's-notes facts, "Adapted" sources and
-  hedged statistics), while Writers take P12 and P13. Guard on `hist` at the start.
-- Waiting for the reset at 19:00 Nov 8 (Istanbul): 5-hour window at 92%.
+  Running (run of 21:02 Nov 8): Specialist **REVIEW P8, P9, P10, P11**; Writers P12, P13. Guard on `hist`,
+  preview 5111 (user allowed).
 - Agents have web access: WebSearch/WebFetch are deferred tools, loaded with ToolSearch (line in the AGENT-RUN common
   block). P1–P3 were written before that, from memory.
 - After History: queue item 4, Reader pass on Mathematics, then Physics.

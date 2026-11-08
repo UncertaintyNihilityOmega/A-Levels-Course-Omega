@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-08 · WRITE P11 · hist.us.depression.1 (12,238 words) and .2 (12,483 words); no new widgets (hist-timeline x3, hist-chart x4 reused, probed clean); 5 hand SVG figures checked with Python and by headless shots; reviewer notes in packages/P11.md (facts flagged: Fisher/Babson wording, Roosevelt Oglethorpe quote, La Guardia source date, Yawp-sourced claims, Mexican repatriation estimates)
+Last: 2026-11-08 · REVIEW P8, P9, P10, P11 · 1 open item (depression.2 La Guardia source); reviewer fixed ~25 source wordings/attributions across all 8 chapters (Gladstone, Lincoln-Manchester, Adams, Tom Taylor, Johnson veto, Mississippi apprentice act, Sumner 1914 attribution, Walker, Carnegie, Anti-Pinkerton, Addams, Wilson 1918, Babson, Coolidge x2, Fed letter, Hoover 1928/1931/grass-tariff, MacArthur, FDR x2), Laird rams detail, Anaconda SVG labels; COURSE.md rule against reported speech in extracts
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -12,12 +12,12 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P5: reviewed 2026-11-08
 - P6: reviewed 2026-11-08
 - P7: reviewed 2026-11-08
-- P8: written 2026-11-08
-- P9: written 2026-11-08
-- P10: written 2026-11-08
-- P11: written 2026-11-08
-- P12: open
-- P13: open
+- P8: reviewed 2026-11-08
+- P9: reviewed 2026-11-08
+- P10: reviewed 2026-11-08
+- P11: reviewed 2026-11-08
+- P12: writing 2026-11-08
+- P13: writing 2026-11-08
 - P14: open
 - P15: open
 - P16: open
