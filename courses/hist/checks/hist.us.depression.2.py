@@ -124,4 +124,6 @@ for (y, h), (y2, _) in zip(rows, rows[1:]):
     assert y2 - (y + h) >= 4
 assert rows[-1][0] + rows[-1][1] <= 80 + 216 - 4  # inside the frame (80..296)
 assert 14 + 152 < 174 and 174 + 152 < 332
+# Practice Source C (Senator Blaine, 6 January 1932): $2,000,000,000 = $500 million capital + $1.5 billion borrowing; bill signed 22 Jan, lending from 2 Feb 1932
+assert 500 + 1500 == 2000
 print("ok")
