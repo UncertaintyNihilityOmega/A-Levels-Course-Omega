@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-08 · WRITE P9 · hist.us.gilded.1 (13,557 words) and hist.us.gilded.2 (14,158 words); check and phone pass; no new widgets (hist-chart x3 and hist-timeline used, probed clean) and two hand SVGs checked by shot; reviewer: confirm the statistics and historians listed in packages/P9.md Writer's notes, and the paraphrased Anti-Pinkerton Act, Walker 1896 and Foran Act source wording
+Last: 2026-11-08 · WRITE P10 · hist.us.gilded.3 (14,847 words) and hist.us.gilded.4 (14,691 words), both check ok and phone ok; no new widgets (hist-timeline and hist-chart reused, one SVG each); reviewer notes in packages/P10.md (sources and numbers to confirm: Sinclair Cosmopolitan remark, 1912 platform passages, Wilson 1918 suffrage address wording, Pujo 341/112, 230 million acres, suit counts, Hine LOC caption)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -14,8 +14,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P7: reviewed 2026-11-08
 - P8: written 2026-11-08
 - P9: written 2026-11-08
-- P10: writing 2026-11-08
-- P11: open
+- P10: written 2026-11-08
+- P11: writing 2026-11-08
 - P12: open
 - P13: open
 - P14: open
