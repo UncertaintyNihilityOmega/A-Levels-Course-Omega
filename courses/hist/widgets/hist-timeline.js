@@ -152,10 +152,10 @@
     // Axis: one row per lane, dots placed in proportion to date
     const hasNoLane = events.some(function (e) { return !e.lane; });
     const rows = lanes.length ? lanes.length + (hasNoLane ? 1 : 0) : 1;
-    const ROW = lanes.length ? 26 : 30;
+    const ROW = lanes.length ? 32 : 30;
     const axisH = rows * ROW + 22;
     function rowOf(e) { const i = lanes.indexOf(e.lane); return i < 0 ? rows - 1 : i; }
-    function rowY(r) { return r * ROW + (lanes.length ? 18 : 15); }
+    function rowY(r) { return r * ROW + (lanes.length ? 22 : 15); }
     const axisLabel = 'Axis from ' + fmtDate(events[0]) + ' to ' + fmtDate(events[events.length - 1]) + ', ' + events.length + ' events. Use the list below to choose an event.';
     const strip = mk('div', { style: { position: 'relative', height: axisH + 'px', margin: '10px 22px 4px', overflow: 'visible' }, role: 'img', 'aria-label': axisLabel });
     makeTicks(tMin, tMax).forEach(function (tk) {

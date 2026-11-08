@@ -1,15 +1,15 @@
 # STATUS: History
 
-Last: 2026-11-07 · WRITE P3 · hist.eu.germany.1 (13,037 words) and hist.eu.germany.2 (12,015 words); check and phone pass; both use the hist-timeline widget (P1), no new widgets; one SVG each (Confederation schematic, grossdeutsch vs kleindeutsch). Reviewer: facts listed in packages/P3.md Writer's notes (written from memory, several sources are labelled close paraphrases).
+Last: 2026-11-08 · REVIEW P1, P2, P3 · 1 open item (france.4 stretch tariff); fixed 13: Civil Code saying is Montholon 1847 not Las Cases; 'Soldiers, you are naked' is the St Helena rewrite; 1800 plebiscite ~1.5m added (Langlois); direct-tax agency 1797; Greer clergy 6.5%; Brissot wording; oath sentence; Berlin deaths 250-300; Palacky (Committee of Fifty, real wording, open letter); Gagern and Bismarck real wording; Basic Rights s.7; timeline lane labels at phone width; Hanover 1854 in schematic; COURSE.md provenance rule
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
 - LEAD: done 2026-11-07
-- P1: written 2026-11-07
-- P2: written 2026-11-07
-- P3: written 2026-11-07
-- P4: open
-- P5: open
+- P1: reviewed 2026-11-08
+- P2: reviewed 2026-11-08
+- P3: reviewed 2026-11-08
+- P4: writing 2026-11-08
+- P5: writing 2026-11-08
 - P6: open
 - P7: open
 - P8: open

@@ -33,8 +33,8 @@ for label, yes, no in [("1800", 3_011_007, 1_562), ("1802", 3_568_885, 8_374), (
 assert round(3_011_007 / 1e6, 1) == 3.0
 assert round(3_568_885 / 1e6, 2) == 3.57 and round(3_572_329 / 1e6, 2) == 3.57
 assert round(8_374, -2) == 8400 and round(2_569, -2) == 2600 and round(1_562, -2) == 1600
-# 1800 plebiscite with about a million added: real yes about 1.5-2.0 million ("nearer 1.5 million")
-assert 3_011_007 - 1_000_000 > 1_500_000
+# 1800 plebiscite: Langlois's real yes about 1.55 million, so about 1.5 million added (reviewer, 2026-11-08)
+assert round((3_011_007 - 1_550_000) / 1e6, 1) == 1.5
 # Consul for life 2 August 1802 and the Tribunate cut to 50 members of 100
 eq("Tribunate halved", 100 // 2, 50)
 # Civil Code: promulgated 21 March 1804; Duc d'Enghien shot the same day; renamed 1807

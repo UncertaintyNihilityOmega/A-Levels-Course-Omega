@@ -208,7 +208,7 @@ Having taken the Church's land, the Assembly decided that the Church should be r
 
 Many of the deputies were Catholics and some of them were priests. They saw this as a reform of the abuses in the Church that would bring it into line with the nation. But Catholics saw the state overriding the Pope on a spiritual matter. Church doctrine had never before allowed laymen to choose a bishop in this way.
 
-At first Louis XVI and the clergy tried to wait for the Pope's reply. Pius VI delayed. In November 1790 the Assembly lost patience and ordered (decree of **27 November 1790**) that every priest in a public post must swear an **oath** to "maintain with all his power the constitution". The king, after weeks of delay, assented on 26 December. About half the clergy refused (the figure is usually given as roughly half of parish priests and only seven bishops, though it varied widely by region). In March and April 1791 **Pope Pius VI condemned** the Civil Constitution and the Revolution's principles.
+At first Louis XVI and the clergy tried to wait for the Pope's reply. Pius VI delayed. In November 1790 the Assembly lost patience and ordered (decree of **27 November 1790**) that every priest in a public post must swear an **oath** to "maintain with all his power the constitution". The king, after weeks of delay, assented on 26 December. About half the clergy refused. Roughly half of parish priests took the oath, but only seven bishops did, and the proportion of jurors varied widely by region. In March and April 1791 **Pope Pius VI condemned** the Civil Constitution and the Revolution's principles.
 
 So the Revolution now had two Churches: the **constitutional Church** (priests who had sworn) and the **refractory Church** (priests who had not). The split was geographic as well as personal. The oath was taken by a majority in the Paris basin and the south-east and rejected by a majority in the west (Brittany and the Vendée), the north-east and the Massif Central. Peasants who had welcomed the end of the tithe were in many places furious at the removal of the priest they knew.
 
@@ -479,7 +479,7 @@ Overall, Varennes was a necessary cause of the Republic, because it destroyed th
 :::eg Paper 1 (b) [25]: use all four sources and your own knowledge
 **Source A**
 
-A people that has won its freedom after a thousand years of slavery needs war. It needs war to prove its freedom and to cleanse itself of the vices of despotism. An offensive war is a national benefit, and the only calamity to fear is not to have war.
+A people that has won its freedom after a thousand years of slavery needs war. It needs war to consolidate its freedom and to purge it of the vices of despotism. An offensive war is a national benefit, and the only calamity to fear is not to have war.
 
 *Adapted from speeches by Jacques-Pierre Brissot, a deputy and journalist, in the Jacobin club and the Legislative Assembly, December 1791.*
 

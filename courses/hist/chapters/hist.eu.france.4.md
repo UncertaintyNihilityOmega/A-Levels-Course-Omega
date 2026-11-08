@@ -126,7 +126,7 @@ The key features were:
 - **A Senate** of 80 members for life, which chose the members of the other two bodies and was supposed to guard the constitution.
 - **Lists of notables.** All men over 21 had the vote, but only to draw up lists of candidates at the level of the commune, department and nation. This was "confidence from below, authority from above".
 
-The constitution then went to a plebiscite. The official result was about 3.0 million votes for and only about 1,600 against. Historians believe that the figures were doctored: the interior minister, Lucien Bonaparte, added about a million extra "yes" votes, and the real number for was nearer to 1.5 million. Few voters were willing to say no.
+The constitution then went to a plebiscite. The official result was about 3.0 million votes for and only about 1,600 against. Historians believe that the figures were doctored: the historian Claude Langlois showed that the interior minister, Lucien Bonaparte, added about one and a half million "yes" votes, so the real number for was only about 1.55 million. Few voters were willing to say no.
 
 ### Napoleon's initiatives as First Consul
 
@@ -407,7 +407,7 @@ These reasons worked together. Religious peace was the aim, but the way to achie
 
 My true glory is not to have won forty battles. Waterloo will wipe out the memory of so many victories. But what nothing can wipe out, what will live for ever, is my Civil Code.
 
-*Adapted from the Mémorial de Sainte-Hélène, by the Comte de Las Cases, who recorded Napoleon's conversations during his exile on St Helena; published in 1823.*
+*Adapted from the Récits de la captivité de l'Empereur Napoléon à Sainte-Hélène, by General Charles-Tristan de Montholon, who shared Napoleon's exile on St Helena and recorded his conversations; published in 1847.*
 
 **Source B**
 
@@ -429,7 +429,7 @@ Husband and wife owe each other fidelity, help and assistance. The husband owes 
 
 They differ in what they show about the Code's character. Source A speaks only of its fame and permanence, presenting it as a great act of statesmanship. Source B shows what it actually did to some people, and it is not flattering: the wife owes 'obedience' to her husband, and the rules on adultery treat the sexes unequally. So B shows the Code as a patriarchal law, a restoration of the father's authority after the Revolution, whereas A hides this by speaking of glory. Also, A concerns reputation, B concerns legal content.
 
-The provenance explains the difference. Source A was recorded in exile on St Helena after Waterloo, by Las Cases, a devoted follower, and published in 1823. Napoleon was shaping his legacy, and wanted to be remembered not as the loser of Waterloo but as a law-giver; the comparison with 'forty battles' is part of that image. It is therefore a valuable source for how Napoleon wanted to be remembered, but it tells us little about the Code's contents. Source B is a legal text of 1804, made by lawyers working under Napoleon's own eye, so it gives accurate evidence of what the law said. It does not show how courts applied it, nor does it say anything about the aims of its authors. Taken together, the sources show the gap between the claim and the content: the Code was lasting and influential, as A says, but B shows that its equality was a legal equality of men."
+The provenance explains the difference. Source A was recorded in exile on St Helena after Waterloo by Montholon, a devoted follower, and published in 1847, long after Napoleon's death. Napoleon was shaping his legacy, and wanted to be remembered not as the loser of Waterloo but as a law-giver; the comparison with 'forty battles' is part of that image. It is therefore a valuable source for how Napoleon wanted to be remembered, but it tells us little about the Code's contents. Source B is a legal text of 1804, made by lawyers working under Napoleon's own eye, so it gives accurate evidence of what the law said. It does not show how courts applied it, nor does it say anything about the aims of its authors. Taken together, the sources show the gap between the claim and the content: the Code was lasting and influential, as A says, but B shows that its equality was a legal equality of men."
 
 *Commentary.* Similarities and differences with support, differences explained through the different nature, origin and purpose of each source (an exile's self-image, a law of 1804) and the final comment on what each is good evidence for. A **developed comparison**: Level 4.
 :::
@@ -442,7 +442,7 @@ The provenance explains the difference. Source A was recorded in exile on St Hel
 - For consent: the end of instability and the peace of 1801–02; the Concordat and the amnesty; the Civil Code and the protection of the buyers of national lands; the stable franc and Bank of France; careers open to talent; victories; the support of the notables.
 - Judgement: criterion = what held the regime together at different periods and when it was tested in 1814. Force was needed most when consent weakened (after 1810); the consent was to order and victory, not to Napoleon himself.
 
-**A Level 3 paragraph (explains one side).** "Napoleon's rule was based on force. He set up a police state under Fouché, who used informers to report on what people said and opened letters. The press was censored, and in 1800 sixty of the seventy-three newspapers in Paris were closed. Plebiscites were organised by the government, and the 1800 result was changed by Lucien Bonaparte, who added a million votes. Conscription forced thousands of young men into the army. This shows that Napoleon's rule was based on force."
+**A Level 3 paragraph (explains one side).** "Napoleon's rule was based on force. He set up a police state under Fouché, who used informers to report on what people said and opened letters. The press was censored, and in 1800 sixty of the seventy-three newspapers in Paris were closed. Plebiscites were organised by the government, and the 1800 result was changed by Lucien Bonaparte, who added about one and a half million votes. Conscription forced thousands of young men into the army. This shows that Napoleon's rule was based on force."
 
 *Commentary.* Well supported, but one-sided, and the last sentence asserts. Other points are not mentioned. An answer made only of paragraphs like this stays in Level 3.
 

@@ -48,6 +48,10 @@ FACTS.md (grep it for your topic).
   italics in the board's style (*From …, a pamphlet by …, January 1789.*). Any shortened, simplified or translated
   extract says "Adapted from …". A visual source is described in words with its real title, date and maker. Never a
   made-up "primary source" presented as real. If you cannot find a real document you are sure of, use a different one.
+  Provenance must name the real recorder and edition (a saying from exile: Las Cases 1823, Montholon 1847, Gourgaud;
+  a law: the article number in that law, not in a later constitution). Where the famous wording is a later version
+  (Napoleon's 1796 "Soldiers, you are naked" was rewritten on St Helena), say so in the provenance line. Never add a
+  sentence to a paraphrase that the speaker did not say (review of P1–P3 found one).
 - **Sensitive topics** (the Terror, slavery and Reconstruction violence, colonial atrocities in the Congo and against
   the Herero, the Holocaust, Stalin's famine and Terror, apartheid, the Indonesian killings of 1965–66): factual,
   respectful, the victims named as people, no graphic detail beyond what the history needs, numbers with their
