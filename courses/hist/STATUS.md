@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-08 · WRITE P13 · hist.int.empire.1 (13.9k words incl. timeline data; Congo rubber-system SVG; hist-timeline) and hist.int.empire.2 (12.1k; hist-timeline; crisis/empire/alliance tables); both check ok, phone ok, shots viewed; no new widgets; Writer's notes in packages/P13.md list sources, quotations and facts to confirm (Menelik 1891 paraphrased, Kruger telegram adapted, cartoon descriptions)
+Last: 2026-11-08 · WRITE P12 · hist.us.depression.3 (15,482 words) and hist.us.depression.4 (13,935 words); no new widgets (hist-timeline and hist-chart used and probed clean in light, dark and phone); reviewer: see Writer's notes in packages/P12.md (Hughes letter wording, 1941 unemployment, hedged statistics, historians' arguments)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -16,7 +16,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P9: reviewed 2026-11-08
 - P10: reviewed 2026-11-08
 - P11: reviewed 2026-11-08
-- P12: writing 2026-11-08
+- P12: written 2026-11-08
 - P13: written 2026-11-08
 - P14: open
 - P15: open
