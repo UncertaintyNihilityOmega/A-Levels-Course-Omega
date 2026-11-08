@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-08 · REVIEW P4, P5, P6, P7 · 0 open items; reviewer fixed 12: spliced PG appeal provenance (russia.3), SC declaration wording (cw2), Magee cartoon title, Calhoun real words, Lecompton (cw1), Proclamation date and 1870 army size (germany.4), 1907 franchise ratio (russia.2), Kronstadt slogan and Chernov vote (russia.4), germany.3 map fills, captions, hist-chart labels for category charts and coal bars; COURSE.md source and chart rules
+Last: 2026-11-08 · WRITE P9 · hist.us.gilded.1 (13,557 words) and hist.us.gilded.2 (14,158 words); check and phone pass; no new widgets (hist-chart x3 and hist-timeline used, probed clean) and two hand SVGs checked by shot; reviewer: confirm the statistics and historians listed in packages/P9.md Writer's notes, and the paraphrased Anti-Pinkerton Act, Walker 1896 and Foran Act source wording
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -12,8 +12,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P5: reviewed 2026-11-08
 - P6: reviewed 2026-11-08
 - P7: reviewed 2026-11-08
-- P8: writing 2026-11-08
-- P9: writing 2026-11-08
+- P8: written 2026-11-08
+- P9: written 2026-11-08
 - P10: open
 - P11: open
 - P12: open
