@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-08 · WRITE P4 · hist.eu.germany.3 (13,026 words) and hist.eu.germany.4 (11,985 words), both check ok, phone ok; hist-timeline in each, one SVG each (map after 1866; 1871 constitution); no P4 widgets; Writer's notes in packages/P4.md list unconfirmed figures and the Adapted source texts to verify
+Last: 2026-11-08 · FIX · hist.eu.france.4: Stretch for A* Q2 re-marked [20 marks] as Paper 2 (b)-style ('How far are ... reliable evidence'), answer now says what Levels 5/4/3 do
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -9,8 +9,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P2: reviewed 2026-11-08
 - P3: reviewed 2026-11-08
 - P4: written 2026-11-08
-- P5: writing 2026-11-08
-- P6: open
+- P5: written 2026-11-08
+- P6: writing 2026-11-08
 - P7: open
 - P8: open
 - P9: open
