@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-08 · WRITE P6 · hist.eu.russia.3 (14,063 words) and hist.eu.russia.4 (12,568 words); check and phone pass; no new widgets (none in course.json), hist-timeline in both plus one SVG each (dual power; schematic Civil War map); sources fetched from MIA/Seventeen Moments/Avalon, unconfirmed figures listed in packages/P6.md Writer's notes (Brest-Litovsk losses, famine and Civil War ranges, Kronstadt casualties, delegate and seat counts)
+Last: 2026-11-08 · WRITE P7 · hist.us.civilwar.1 (14,285 words) and hist.us.civilwar.2 (13,962 words): check ok, phone ok; no new widgets (hist-timeline and hist-chart used, probe clean); schematic territory map and secession ladder SVGs looked at in shot. Notes for the reviewer in packages/P7.md: Calhoun 1850 and several sources are labelled summaries, hedged figures listed there.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -11,7 +11,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P4: written 2026-11-08
 - P5: written 2026-11-08
 - P6: written 2026-11-08
-- P7: writing 2026-11-08
+- P7: written 2026-11-08
 - P8: open
 - P9: open
 - P10: open
