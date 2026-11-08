@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-08 · REVIEW P8, P9, P10, P11 · 1 open item (depression.2 La Guardia source); reviewer fixed ~25 source wordings/attributions across all 8 chapters (Gladstone, Lincoln-Manchester, Adams, Tom Taylor, Johnson veto, Mississippi apprentice act, Sumner 1914 attribution, Walker, Carnegie, Anti-Pinkerton, Addams, Wilson 1918, Babson, Coolidge x2, Fed letter, Hoover 1928/1931/grass-tariff, MacArthur, FDR x2), Laird rams detail, Anaconda SVG labels; COURSE.md rule against reported speech in extracts
+Last: 2026-11-08 · WRITE P13 · hist.int.empire.1 (13.9k words incl. timeline data; Congo rubber-system SVG; hist-timeline) and hist.int.empire.2 (12.1k; hist-timeline; crisis/empire/alliance tables); both check ok, phone ok, shots viewed; no new widgets; Writer's notes in packages/P13.md list sources, quotations and facts to confirm (Menelik 1891 paraphrased, Kruger telegram adapted, cartoon descriptions)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -17,7 +17,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P10: reviewed 2026-11-08
 - P11: reviewed 2026-11-08
 - P12: writing 2026-11-08
-- P13: writing 2026-11-08
+- P13: written 2026-11-08
 - P14: open
 - P15: open
 - P16: open
