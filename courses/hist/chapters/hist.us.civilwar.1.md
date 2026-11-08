@@ -70,7 +70,7 @@ In 1860 the United States had about 31.4 million people. Of these, 3,953,760 wer
 The slave system grew, it did not fade, as the nineteenth century went on. The reason was cotton. After Eli Whitney's cotton gin (1793) made it easy to clean short-staple cotton, planters spread across the "Deep South" (Georgia, Alabama, Mississippi, Louisiana, later Texas), and the demand of the textile mills of Britain and New England drove the price up. By 1860 cotton made up almost 60 per cent of all American exports, and Southern planters supplied roughly three-quarters of the cotton the world's mills used. That wealth rested on enslaved labour, so the number of enslaved people rose every decade.
 
 :::html
-<div class="widget" data-w="hist-chart" data-title="Enslaved people in the United States, 1790–1860" data-unit="millions" data-type="bar" data-series="Enslaved people: 1790=0.70, 1800=0.89, 1810=1.19, 1820=1.54, 1830=2.01, 1840=2.49, 1850=3.20, 1860=3.95" data-source="United States decennial censuses, 1790–1860, rounded to the nearest 10,000: 697,681 in 1790 and 3,953,760 in 1860. The international slave trade was banned from 1808, so the rise came mainly from births and from a large internal slave trade."></div>
+<div class="widget" data-w="hist-chart" data-title="Enslaved people in the United States, 1790–1860" data-unit="million people" data-type="bar" data-series="Enslaved people: 1790=0.70, 1800=0.89, 1810=1.19, 1820=1.54, 1830=2.01, 1840=2.49, 1850=3.20, 1860=3.95" data-source="United States decennial censuses, 1790–1860, rounded to the nearest 10,000: 697,681 in 1790 and 3,953,760 in 1860. The international slave trade was banned from 1808, so the rise came mainly from births and from a large internal slave trade."></div>
 :::
 
 Slavery was not spread evenly among white Southerners. Roughly a quarter of white families in the slave states held any enslaved person at all, and a small number of planters held dozens or hundreds. Most white Southerners were small farmers who worked their own land. Yet they mostly supported the system: slavery gave them a place above the Black population, many hoped to become enslavers themselves, and planters dominated Southern politics, newspapers, churches and the law. There were about 250,000 free Black people in the South in 1860 as well as 3.95 million enslaved, and their position was precarious.
@@ -303,7 +303,7 @@ In May 1856 a pro-slavery posse led by a county sheriff entered Lawrence, destro
 
 The violence in Kansas had a counterpart in the Senate. On 19 and 20 May 1856 Senator Charles Sumner of Massachusetts, a leading anti-slavery Republican, delivered a long speech called "The Crime against Kansas", attacking the pro-slavery forces and the "Slave Power". He singled out Senator Andrew Butler of South Carolina, an elderly man, and mocked him with a coarse image that linked slavery to a mistress. Two days later, on 22 May, Butler's relative, Congressman Preston Brooks of South Carolina, walked into the Senate chamber while it was nearly empty, found Sumner at his desk and beat him on the head with a heavy gutta-percha cane until the cane broke and Sumner fell unconscious, trapped under the desk.
 
-Sumner's injuries were serious: he was away from the Senate for most of the next three years and suffered from them for the rest of his life. A House vote to expel Brooks fell short of the two-thirds needed (121 to 95). Brooks resigned to give his voters the chance to judge him, was re-elected in August, and was fined 300 dollars in court; no prison sentence followed. Southerners sent him canes in tribute. In the North, Sumner became a martyr and the attack was taken as proof that the South settled arguments by violence: a Northern lithograph by John L. Magee, *Southern Chivalry: Dignity versus Impudence* (1856), showed Brooks beating a defenceless Sumner while other Southerners looked on.
+Sumner's injuries were serious: he was away from the Senate for most of the next three years and suffered from them for the rest of his life. A House vote to expel Brooks fell short of the two-thirds needed (121 to 95). Brooks resigned to give his voters the chance to judge him, was re-elected in August, and was fined 300 dollars in court; no prison sentence followed. Southerners sent him canes in tribute. In the North, Sumner became a martyr and the attack was taken as proof that the South settled arguments by violence: a Northern lithograph by John L. Magee, *Southern Chivalry: Argument versus Club's* (1856), showed Brooks beating a defenceless Sumner while other Southerners looked on.
 
 :::key Why Bleeding Kansas and the Brooks–Sumner incident mattered
 1. They showed that **popular sovereignty did not work**: it invited both sides to fight for the territory.
@@ -432,9 +432,9 @@ As an express and fundamental condition to the acquisition of any territory from
 
 **Source B**
 
-The Union is being weakened, Calhoun warned, because the ties that hold it together are being broken one by one. To save it, the North must grant the South an equal right in the territories acquired from Mexico, must carry out the duty to return fugitives from slavery, and must stop its attacks on slavery.
+It is only through a long process, and successively, that the cords can be snapped, until the whole fabric falls asunder. How can the Union be saved? Only the North can save it: by conceding to the South an equal right in the acquired territory, by causing the stipulations relative to fugitive slaves to be faithfully fulfilled, by ceasing the agitation of the slave question, and by an amendment to the constitution which will restore to the South the power of protecting herself.
 
-*Closely paraphrased from John C. Calhoun's last speech to the Senate, written while he was ill and read for him by Senator James Mason of Virginia, 4 March 1850. This is a summary written for practice, not Calhoun's own words.*
+*Adapted from John C. Calhoun's last speech to the Senate, written while he was ill and read for him by Senator James Mason of Virginia, 4 March 1850. Shortened; the phrases are Calhoun's own, and the connecting words are added.*
 
 **Question.** Compare these two sources as evidence about disagreements between North and South over slavery in the territories gained from Mexico.
 
@@ -448,7 +448,7 @@ The Union is being weakened, Calhoun warned, because the ties that hold it toget
 
 "The sources share some ground. Both are about the same land, the territory won from Mexico, and both treat the federal government as the body that must decide what happens to slavery there. Both also present their demand as a matter of right: Source A makes the ban 'an express and fundamental condition' of acquiring the land, and Source B demands an 'equal right' for the South in what the whole nation had gained.
 
-On the question itself, however, they are directly opposed. Source A would forbid slavery in every part of the new territory, with only punishment for crime as an exception. Source B would allow Southerners to take enslaved people into the same land on equal terms. Source A also speaks only of the territory, while Source B adds two more Southern demands, the return of fugitives and an end to Northern attacks on slavery, which shows that for Calhoun the territories were one grievance among several.
+On the question itself, however, they are directly opposed. Source A would forbid slavery in every part of the new territory, with only punishment for crime as an exception. Source B would allow Southerners to take enslaved people into the same land on equal terms. Source A also speaks only of the territory, while Source B adds more Southern demands, the faithful return of fugitives, an end to 'the agitation of the slave question' and a constitutional amendment to protect the South, which shows that for Calhoun the territories were one grievance among several.
 
 Context explains the clash. Source A was moved in August 1846 as an amendment to a bill asking for 2 million dollars to negotiate peace in a war that had hardly begun, by a Democrat from Pennsylvania who supported President Polk. Its purpose was to make sure that free Northern farmers, not slaveholders, would settle the new land, and it passed the House but never the Senate. It is evidence of Northern opinion, but a limited one: Wilmot said he was protecting free white labour, not attacking slavery in the South. Source B is later, from March 1850, when California had applied to join as a free state and the Senate was debating Henry Clay's compromise. It comes from the dying leader of the South, so its purpose was to make a last warning, and its tone is pessimistic because Calhoun believed the South was losing its political balance. The speech was read for him by someone else, which fits its role as a statement of principle rather than a negotiation. The four years between them explain why the Southern demand is harder: in 1846 the question was hypothetical, while by 1850 the gold rush had made California a state in all but name and the South saw a free state about to join. Source A is therefore stronger evidence of the origin of the dispute and Source B of how entrenched the Southern position had become."
 
@@ -497,7 +497,7 @@ The Nebraska bill is, the authors say, "a gross violation of a sacred pledge". T
 
 A lithograph showing a South Carolina congressman, Preston Brooks, beating Senator Charles Sumner of Massachusetts, who is trapped at his desk in the Senate chamber, while other Southern men stand by and look on.
 
-*From a Northern cartoon, "Southern Chivalry: Dignity versus Impudence", by John L. Magee, published in Philadelphia, 1856.*
+*From a Northern cartoon, "Southern Chivalry: Argument versus Club's", a lithograph by the New York artist John L. Magee, 1856.*
 
 **Source D**
 
@@ -509,7 +509,7 @@ A house divided against itself cannot stand. I believe this government cannot en
 
 **What the levels want.** Level 3 (11–15): sources used on both sides, but evaluation is generic ("biased"). Level 4 (16–20): detailed use of all four, accurate, explicit links, context used to interpret them. Level 5 (21–25): the sources **evaluated** in context as stronger or weaker evidence, and a judgement on "how far".
 
-**Step 1: sort the sources.** Support: A (a law that forced Northerners to join in returning people to slavery, a cause of anger), B (Northern opponents call the Act a violation of a pledge), C (a Northern artist presents Southerners as violent and cowardly), D (a Northern politician says the nation cannot remain half slave). Challenge or qualify: A (the law was passed by Congress, with Northern votes, and signed by a Northern-born president), B (written by a few men already known as anti-slavery), C (a cartoon by one publisher in Philadelphia), D (Lincoln says he does not expect the Union to be dissolved, and says nothing of ending slavery in the South).
+**Step 1: sort the sources.** Support: A (a law that forced Northerners to join in returning people to slavery, a cause of anger), B (Northern opponents call the Act a violation of a pledge), C (a Northern artist presents Southerners as violent and cowardly), D (a Northern politician says the nation cannot remain half slave). Challenge or qualify: A (the law was passed by Congress, with Northern votes, and signed by a Northern-born president), B (written by a few men already known as anti-slavery), C (a cartoon by one New York artist), D (Lincoln says he does not expect the Union to be dissolved, and says nothing of ending slavery in the South).
 
 **Step 2: evaluate each source in context (the step that reaches Level 5).**
 - **A**: an official text, so reliable about what the law said. But as evidence of Northern *opinion* it is indirect: it is the South's demand, in law, and it shows what caused the anger rather than the anger. Its effect is shown by what followed: the rescue attempts in Boston, the escape of thousands to Canada, and the writing of *Uncle Tom's Cabin*.
@@ -578,7 +578,7 @@ When the settlers of a territory may decide on slavery, Buchanan said, is a lega
 
 **Source D**
 
-Results of the vote in Kansas Territory on the Lecompton Constitution, 4 January 1858: against the constitution 10,226; for 138.
+Results of the vote in Kansas Territory on the Lecompton Constitution, 4 January 1858: against the constitution 10,226; for the constitution with slavery 138; for the constitution without slavery, a further two dozen.
 
 *Adapted from the returns of the vote of 4 January 1858, a poll called by the territorial legislature, in which Free-State settlers voted after boycotting the vote of 21 December 1857, and which supporters of the constitution largely ignored.*
 :::
@@ -658,7 +658,7 @@ A: Randall's side: Douglas's Kansas–Nebraska Act was an unforced error that re
 - To raise the tariff on cotton
 + To stop the spread of slavery into the territories
 - To annex Texas
-> Most Republicans accepted slavery in the states where it existed. Their aim was to stop its extension, which is why they were called Free Soilers in alliance.
+> Most Republicans accepted slavery in the states where it existed. Their aim was to stop its extension, the free-soil principle they took over from the Free Soil Party.
 ? What was the Freeport Doctrine?
 + Douglas's claim that settlers could keep slavery out of a territory by not passing local laws to protect it
 - Lincoln's claim that the Union could not survive half slave and half free

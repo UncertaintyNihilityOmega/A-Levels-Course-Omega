@@ -220,7 +220,7 @@ The elected lower house of the Russian parliament (the State Duma), created by t
 | Third | 1 November 1907–1912 | Elected under the new law, which gave landowners and the wealthy most of the weight; Octobrists and parties to their right had a majority | Sat for its full five-year term; co-operated with Stolypin on many laws |
 | Fourth | 15 November 1912 onwards | Similar to the Third; more criticism of the government from 1913 | Met into the First World War |
 
-The electoral law of **3 June 1907** was issued by decree, which broke the Fundamental Laws. It cut the representation of peasants, workers and non-Russian peoples and divided voters into groups (curiae) so that a landowner's vote counted for many times more than a worker's; a commonly given calculation is that one landowner's vote equalled the votes of some 260 workers. It was a change by force that gave the regime a Duma it could work with.
+The electoral law of **3 June 1907** was issued by decree, which broke the Fundamental Laws. It cut the representation of peasants, workers and non-Russian peoples and divided voters into groups (curiae) so that a landowner's vote counted for many times more than a worker's; a commonly given calculation is that one landowner's vote equalled the votes of some 260 peasants or some 540 workers. Lenin, a hostile witness, worked out that about 12 million workers chose only about 2 per cent of the electors. It was a change by force that gave the regime a Duma it could work with.
 
 :::key How far did the Duma change Russia?
 1. **Real change**: a legal parliament existed for the first time; there were legal parties, newspapers and trade unions (with limits); the Duma debated the budget, questioned ministers and passed laws.

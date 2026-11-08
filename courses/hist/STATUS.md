@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-08 · WRITE P7 · hist.us.civilwar.1 (14,285 words) and hist.us.civilwar.2 (13,962 words): check ok, phone ok; no new widgets (hist-timeline and hist-chart used, probe clean); schematic territory map and secession ladder SVGs looked at in shot. Notes for the reviewer in packages/P7.md: Calhoun 1850 and several sources are labelled summaries, hedged figures listed there.
+Last: 2026-11-08 · REVIEW P4, P5, P6, P7 · 0 open items; reviewer fixed 12: spliced PG appeal provenance (russia.3), SC declaration wording (cw2), Magee cartoon title, Calhoun real words, Lecompton (cw1), Proclamation date and 1870 army size (germany.4), 1907 franchise ratio (russia.2), Kronstadt slogan and Chernov vote (russia.4), germany.3 map fills, captions, hist-chart labels for category charts and coal bars; COURSE.md source and chart rules
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -8,12 +8,12 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P1: reviewed 2026-11-08
 - P2: reviewed 2026-11-08
 - P3: reviewed 2026-11-08
-- P4: written 2026-11-08
-- P5: written 2026-11-08
-- P6: written 2026-11-08
-- P7: written 2026-11-08
-- P8: open
-- P9: open
+- P4: reviewed 2026-11-08
+- P5: reviewed 2026-11-08
+- P6: reviewed 2026-11-08
+- P7: reviewed 2026-11-08
+- P8: writing 2026-11-08
+- P9: writing 2026-11-08
 - P10: open
 - P11: open
 - P12: open

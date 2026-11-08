@@ -219,14 +219,14 @@ By 1889 the budget was balanced and the state had gold reserves. It was an achie
 ### Industrialisation and growth
 
 :::html
-<div class="widget" data-w="hist-chart" data-title="Russian coal output, 1860–1900" data-unit="million tons" data-type="line" data-series="Coal output: 1860=0.3, 1880=3.28, 1900=15.88" data-source="Statesman's Year-Book, 1913 (Russia), all Russian coalfields, tons as printed: about 298,500 tons in 1860, 3,280,000 in 1880 and 15,878,203 in 1900."></div>
+<div class="widget" data-w="hist-chart" data-title="Russian coal output, 1860–1900" data-unit="million tons" data-type="bar" data-series="Coal output: 1860=0.3, 1880=3.28, 1900=15.88" data-source="Statesman's Year-Book, 1913 (Russia), all Russian coalfields, tons as printed: about 298,500 tons in 1860, 3,280,000 in 1880 and 15,878,203 in 1900."></div>
 :::
 
 :::html
 <div class="widget" data-w="hist-chart" data-title="Russian railways open, 1860–1900" data-unit="thousand kilometres of line" data-type="bar" data-series="Railway line open: 1860=1.626, 1880=22.865, 1900=53.234" data-source="Fontana Economic History of Europe, vol. 4, part 2 (tables reprinted in the Internet Modern History Sourcebook, Fordham University): length of line open, 1860 1,626 km, 1880 22,865 km, 1900 53,234 km."></div>
 :::
 
-The two charts show the long-run change. Coal output grew almost fivefold between 1880 and 1900 (from about 3.3 to about 15.9 million tons), and the length of railway line more than doubled (from about 22,900 to about 53,200 kilometres). Most of the spectacular growth came in the 1890s, under Witte; in the 1880s and early 1890s growth was real but modest, and the economy was still overwhelmingly agricultural. Published figures for pig iron differ widely from one source to another, so this chapter does not chart it. Growth was concentrated in a few regions: the Moscow and Ivanovo textile district, St Petersburg, the Polish towns such as Łódź, the coal and iron of the Donets basin and the Urals, and the oil of Baku.
+The two charts show the long-run change. Coal output grew almost fivefold between 1880 and 1900 (from about 3.3 to about 15.9 million tons), and the length of railway line more than doubled (from about 22,900 to about 53,200 kilometres). Each chart shows only three years, twenty years apart, so it cannot show when within those twenty years the growth came. Other series show that most of the spectacular growth came in the 1890s, under Witte; in the 1880s and early 1890s growth was real but modest, and the economy was still overwhelmingly agricultural. Published figures for pig iron differ widely from one source to another, so this chapter does not chart it. Growth was concentrated in a few regions: the Moscow and Ivanovo textile district, St Petersburg, the Polish towns such as Łódź, the coal and iron of the Donets basin and the Urals, and the oil of Baku.
 
 ### Economic problems: taxation and the peasants
 

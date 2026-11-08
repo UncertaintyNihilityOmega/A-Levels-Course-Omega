@@ -178,7 +178,7 @@ When war came in July 1870, Prussia and its allies were in a much stronger posit
 - **The southern German states** did not hesitate. When France declared war, Bavaria, Württemberg and Baden mobilised on 16–17 July under their treaties, and national feeling in the south swung behind Prussia, as Bismarck had hoped. The south German states and the north now fought together.
 
 **The strength of the Prussian army under Moltke.**
-- **Organisation.** General **Helmuth von Moltke**, chief of the General Staff, had planned the mobilisation in detail, with railways and the telegraph. Reservists knew where to go and were carried by train to the frontier in days. The three German armies on the border held about 300,000 men, against about 200,000 in the French Army of the Rhine.
+- **Organisation.** General **Helmuth von Moltke**, chief of the General Staff, had planned the mobilisation in detail, with railways and the telegraph. Reservists knew where to go and were carried by train to the frontier in days. The three German armies on the border held well over 300,000 men (estimates run to about 380,000), against about 200,000 in the French Army of the Rhine.
 - **Training and leadership.** Universal conscription gave Germany a large reserve of trained soldiers. Moltke trained his officers to use their own judgement within his overall plan.
 - **Weapons.** The French **Chassepot** rifle was better than the Prussian needle gun: it could hit targets at about 1,500 metres against about 600. But the Prussian **Krupp** steel breech-loading cannon outranged the French bronze muzzle-loaders and fired faster, and in battle after battle German artillery destroyed French formations at long range.
 - **Experience.** The army had won in 1864 and 1866.
@@ -371,7 +371,7 @@ The context explains this. Source A is a private, internal report from an offici
 
 **Level 5 paragraphs (alternative perspective, then the judgement).**
 
-"Yet diplomacy alone achieved nothing without the army. Austria was removed from Germany at Königgrätz on 3 July 1866, where Moltke's three armies, brought to Bohemia by railway, and infantry with the needle gun, beat about 215,000 Austrians and Saxons; no diplomatic isolation could have done this. In 1870 the German armies mobilised faster than the French, with about 300,000 men on the frontier against about 200,000, and Krupp's steel guns beat the French in every battle. It was Sedan on 2 September, where Napoleon III surrendered about 100,000 men, that brought down the Second Empire and swept away the last doubts in the south. Bismarck's diplomatic position was strong because Prussia had already shown, in 1864 and 1866, that it would win. Roon's reforms, which Bismarck forced through against parliament, were his first and most important preparation.
+"Yet diplomacy alone achieved nothing without the army. Austria was removed from Germany at Königgrätz on 3 July 1866, where Moltke's three armies, brought to Bohemia by railway, and infantry with the needle gun, beat about 215,000 Austrians and Saxons; no diplomatic isolation could have done this. In 1870 the German armies mobilised faster than the French, with well over 300,000 men on the frontier against about 200,000, and Krupp's steel guns beat the French in every battle. It was Sedan on 2 September, where Napoleon III surrendered about 100,000 men, that brought down the Second Empire and swept away the last doubts in the south. Bismarck's diplomatic position was strong because Prussia had already shown, in 1864 and 1866, that it would win. Roon's reforms, which Bismarck forced through against parliament, were his first and most important preparation.
 
 Other forces also mattered. The National Liberals and the nationalist societies created a climate in which the south would accept union, and in July 1870 the German outrage at the supposed insult at Ems was a spontaneous popular movement that no diplomat could produce on demand. The Zollverein had tied the economies together. And Napoleon III and Gramont made mistakes that Bismarck could not have planned: after the withdrawal of Leopold on 12 July France had won, and it was Gramont's demand for a guarantee and the cabinet's decision on 14 July that gave Bismarck his chance. Taylor was right that Bismarck exploited the errors of others.
 
@@ -391,7 +391,7 @@ The proposal that the title of German Emperor be offered to the King of Prussia 
 
 We, Wilhelm, by the grace of God King of Prussia, make known that the German princes and free cities have addressed to us the unanimous call to renew the imperial dignity, and we accept it. May God grant that we be always an augmenter of the German Empire, not through conquest, but through the works and gifts of peace in national welfare, freedom and civilisation.
 
-*Adapted from the Proclamation to the German People, Versailles, 18 January 1871.*
+*Adapted from Wilhelm I's Proclamation to the German People, dated Versailles, 17 January 1871, and read out by Bismarck at the ceremony in the Hall of Mirrors on 18 January 1871.*
 
 **Source C**
 
@@ -429,7 +429,7 @@ A student wrote:
 
 **The level.** Accurate detail, but it is **narrative**: it lists what the army did and then asserts the conclusion. It does not explain how military strength led to unification, does not compare it with any other reason, and does not use the word "main" to reach a judgement. It reaches Level 2 (5–8): "relevant description with few explicit links to the question".
 
-**The fix.** Start with an argument, use only the detail that proves it, then compare. "Military strength was the necessary means of unification. Austria, which would never have left Germany of its own will, was removed at Königgrätz, where Moltke's armies, moved by railway and armed with the needle gun, defeated Benedek's. In 1870 the German mobilisation put about 300,000 men on the frontier against about 200,000 French, and Sedan ended the Second Empire. However, it was not the main reason. The army only had the chance to win because Bismarck's diplomacy had isolated Austria and France, and the south came into the Empire because of the nationalism raised by the war, not by force. Strength was the instrument, but diplomacy and nationalism supplied the conditions in which it could be used." Now each fact is evidence for a judgement.
+**The fix.** Start with an argument, use only the detail that proves it, then compare. "Military strength was the necessary means of unification. Austria, which would never have left Germany of its own will, was removed at Königgrätz, where Moltke's armies, moved by railway and armed with the needle gun, defeated Benedek's. In 1870 the German mobilisation put well over 300,000 men on the frontier against about 200,000 French, and Sedan ended the Second Empire. However, it was not the main reason. The army only had the chance to win because Bismarck's diplomacy had isolated Austria and France, and the south came into the Empire because of the nationalism raised by the war, not by force. Strength was the instrument, but diplomacy and nationalism supplied the conditions in which it could be used." Now each fact is evidence for a judgement.
 :::
 
 ## Practice
@@ -478,7 +478,7 @@ The German emperor would be a fellow countryman, and the Prussian king a neighbo
 
 May God grant that we be always an augmenter of the German Empire, not through conquest, but through the works and gifts of peace.
 
-*Adapted from the Proclamation to the German People, Versailles, 18 January 1871.*
+*Adapted from Wilhelm I's Proclamation to the German People, dated Versailles, 17 January 1871, and read out by Bismarck at the ceremony in the Hall of Mirrors on 18 January 1871.*
 :::
 
 :::try Exam practice ★ to ★★★
@@ -568,7 +568,7 @@ A: Strengths: the painter was present; accurate on the setting, the uniforms and
 - 14 of 58
 + 17 of 58
 - 25 of 58
-> 17 votes were enough to block constitutional change, which needed no more than 14 votes against.
+> A change to the constitution failed if 14 votes were cast against it, so Prussia's 17 votes could block any change on their own.
 ? Which was true of the German Empire of 1871?
 - Austria was a member
 + The Chancellor was appointed by the Kaiser and not answerable to the Reichstag

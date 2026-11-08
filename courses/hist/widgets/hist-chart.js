@@ -293,8 +293,9 @@
       c.redraw();
     }
 
-    const prev = mk('button', { type: 'button', class: 'btn btn-sec btn-sm', text: '← Earlier' });
-    const next = mk('button', { type: 'button', class: 'btn btn-sec btn-sm', text: 'Later →' });
+    const byYear = parsed.numeric;
+    const prev = mk('button', { type: 'button', class: 'btn btn-sec btn-sm', text: byYear ? '← Earlier' : '← Previous' });
+    const next = mk('button', { type: 'button', class: 'btn btn-sec btn-sm', text: byYear ? 'Later →' : 'Next →' });
     prev.onclick = function () { select(sel - 1); };
     next.onclick = function () { select(sel + 1); };
 
@@ -303,7 +304,7 @@
     const tableWrap = mk('div', { id: tableId, hidden: '', style: { overflowX: 'auto', margin: '6px 0' } });
     const table = mk('table');
     table.appendChild(mk('caption', { class: 'sr-only', text: title + (unit ? ' (' + unit + ')' : '') }));
-    const headRow = mk('tr', {}, mk('th', { scope: 'col', text: 'Year or period' }));
+    const headRow = mk('tr', {}, mk('th', { scope: 'col', text: byYear ? 'Year or period' : 'Item' }));
     series.forEach(function (s) { headRow.appendChild(mk('th', { scope: 'col', text: s.name })); });
     table.appendChild(mk('thead', {}, headRow));
     const tb = mk('tbody');
@@ -325,7 +326,7 @@
     body.appendChild(mk('div', { class: 'w-row', style: { alignItems: 'center', gap: '8px' } }, prev, next, toggle));
     body.appendChild(tableWrap);
     if (source) body.appendChild(mk('p', { class: 'w-note', text: 'Source: ' + source }));
-    body.appendChild(mk('p', { class: 'w-note', text: 'Try: step through the years with the buttons, or press on the chart, and compare each figure with the one before it.' }));
+    body.appendChild(mk('p', { class: 'w-note', text: byYear ? 'Try: step through the years with the buttons, or press on the chart, and compare each figure with the one before it.' : 'Try: step through the bars with the buttons, or press on the chart, and compare the figures for each one.' }));
 
     // Press or move over the chart to choose the nearest year
     function pick(ev) {

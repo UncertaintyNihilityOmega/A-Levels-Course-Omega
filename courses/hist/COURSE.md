@@ -51,7 +51,13 @@ FACTS.md (grep it for your topic).
   Provenance must name the real recorder and edition (a saying from exile: Las Cases 1823, Montholon 1847, Gourgaud;
   a law: the article number in that law, not in a later constitution). Where the famous wording is a later version
   (Napoleon's 1796 "Soldiers, you are naked" was rewritten on St Helena), say so in the provenance line. Never add a
-  sentence to a paraphrase that the speaker did not say (review of P1–P3 found one).
+  sentence to a paraphrase that the speaker did not say (review of P1–P3 found one). A source line that says
+  "Shortened; the phrases are the document's own" must contain no words of yours (review of P4–P7 found a paraphrase
+  inside one); an extract joined from two documents names both in its provenance; a visual source's title, maker and
+  place come from a museum or library catalogue entry, not from memory (a cartoon title was wrong). Prefer the real
+  words, found online, to a "summary written for practice".
+- `hist-chart`: use `data-type="line"` only when the years are close enough to show a trend; three years twenty years
+  apart are bars, and the text says what the chart cannot show.
 - **Sensitive topics** (the Terror, slavery and Reconstruction violence, colonial atrocities in the Congo and against
   the Herero, the Holocaust, Stalin's famine and Terror, apartheid, the Indonesian killings of 1965–66): factual,
   respectful, the victims named as people, no graphic detail beyond what the history needs, numbers with their

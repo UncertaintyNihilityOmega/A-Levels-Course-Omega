@@ -83,8 +83,11 @@ mm = (date(1905, 10, 17) - date(1905, 1, 9)).days
 assert 270 <= mm <= 290, mm  # about nine months (281 days)
 # 1881 Manifesto -> 1905 petition: 24 years
 eq("years between", 1905 - 1881, 24)
-# Landowner vote ~ 260 workers (commonly given)
-assert 260 > 45 > 15 > 3
+# Landowner vote ~ 260 peasants or ~540 (543) workers (commonly given)
+assert 543 > 260 and round(543, -1) == 540
+# Lenin 1912: workers 112 electors = 2.1 per cent; peasants 1,168 = 22.2 per cent -> total about 5,260
+total_el = 1168 / 0.222
+assert 5200 < total_el < 5300 and round(112 / total_el * 100) == 2
 
 # Stolypin: Interior Minister April 1906, Prime Minister July 1906, shot 1 Sept 1911, died 5 Sept; Prime Minister 1906-11 = 5 years
 eq("Stolypin years", 1911 - 1906, 5)
