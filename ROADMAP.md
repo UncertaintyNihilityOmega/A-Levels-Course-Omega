@@ -5,10 +5,9 @@
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
 - History (`hist`, Cambridge 9489, exams 2027–2029) replaced Psychology at the user's request (Nov 7); Psychology is
   now a summary chapter in Other Subjects (`other.psychology`). LEAD done (94 chapters, 46 packages, gold `hist.eu.france.1`).
-  P1–P15 written (France, Germany, Russia, Civil War, Gilded Age, Depression 1–4, Empire 1–4, 1919–29 1–2),
-  P1–P15 reviewed (web fact check); 1 open fix (empire.2, Clark argument) for the next FIX + WRITE.
-  Running (run of 21:02 Nov 8, resumed 08:50 Nov 9): Writers P16, P17. Next: FIX + WRITE P18, then REVIEW P16–P18. Guard on `hist`,
-  preview 5111 (user allowed).
+  P1–P17 written (… Empire 1–4, 1919–29 1–4, 1929–39 1–2), P1–P15 reviewed (web fact check).
+  Running (run of 21:02 Nov 8, resumed 08:50 Nov 9): Writers FIX (empire.2) + P18, P19. Next: REVIEW P16–P18.
+  Guard on `hist`, preview 5111 (user allowed).
 - Agents have web access: WebSearch/WebFetch are deferred tools, loaded with ToolSearch (line in the AGENT-RUN common
   block). P1–P3 were written before that, from memory.
 - After History: queue item 4, Reader pass on Mathematics, then Physics.
