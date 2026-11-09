@@ -321,9 +321,9 @@ Roosevelt's popularity in 1933 hid a growing opposition. Critics came from both 
 Long's organisation claimed millions of members in "Share Our Wealth clubs". Economists said the sums did not add up: there was not enough wealth in the rich to give everyone what he promised. But politicians feared him. Democratic managers worried in 1935 that he might run as a third-party candidate and take several million votes from Roosevelt in 1936, and the president told advisers that he must take the wind out of Long's sails. Long was shot in the State Capitol at Baton Rouge on 8 September 1935 by Dr Carl Weiss, the son of a man he had attacked, and died two days later.
 
 :::note A source: Huey Long, January 1935
-We ran Mr. Roosevelt for the presidency of the United States because he promised that the size of the big man's fortune would be reduced so as to give the masses at the bottom enough to wipe out all poverty. It is not Roosevelt or ruin; it is Roosevelt's ruin. There are thousands of share-our-wealth societies organized in the United States now. We want 100,000 such societies.
+It is not Roosevelt or ruin; it is Roosevelt's ruin. … We ran Mr. Roosevelt for the presidency of the United States because he promised to us by word of mouth and in writing … that the size of the big man's fortune would be reduced so as to give the masses at the bottom enough to wipe out all poverty … There are thousands of share-our-wealth societies organized in the United States now. We want 100,000 such societies formed for every nook and corner of this country …
 
-*Adapted from a radio address by Senator Huey P. Long, January 1935, printed in The Annals of America, vol. 15 (Encyclopaedia Britannica, 1968).*
+*Shortened from a radio address by Senator Huey P. Long, January 1935, printed in The Annals of America, vol. 15 (Encyclopaedia Britannica, 1968). The phrases are Long's own, in the order he spoke them.*
 :::
 
 **The effect of the Left.** The critics from the Left never won an election, and Long's death and the weak showing of the Union Party in 1936 ended their political threat. But they pushed Roosevelt to move left in 1935 (the Wealth Tax, Social Security and the Wagner Act) and they kept the pressure on the question of poverty in old age.
@@ -428,15 +428,15 @@ The decisive reason was the narrow view of the Constitution. Even the liberal Ca
 :::eg Paper 1 (a) [15]: compare two sources as evidence
 **Source A**
 
-I want to talk for a few minutes with the people of the United States about banking. I recognize that the many proclamations, the legislation, the Treasury regulations, couched for the most part in banking and legal terms, should be explained for the benefit of the average citizen. I can assure you that it is safer to keep your money in a reopened bank than under the mattress. After all there is an element in the readjustment of our financial system more important than currency, more important than gold, and that is the confidence of the people. Together we cannot fail.
+I want to talk for a few minutes with the people of the United States about banking … I recognize that the many proclamations from State Capitols and from Washington, the legislation, the Treasury regulations, etc., couched for the most part in banking and legal terms should be explained for the benefit of the average citizen. … I can assure you that it is safer to keep your money in a reopened bank than under the mattress. … After all, there is an element in the readjustment of our financial system more important than currency, more important than gold, and that is the confidence of the people. … Together we cannot fail.
 
-*Adapted from President Franklin D. Roosevelt's first fireside chat, a radio address on the banking crisis, 12 March 1933. Passages from the speech are joined and shortened.*
+*Shortened from President Franklin D. Roosevelt's first fireside chat, a radio address on the banking crisis, 12 March 1933. The phrases are Roosevelt's own.*
 
 **Source B**
 
-We ran Mr. Roosevelt for the presidency because he promised that the size of the big man's fortune would be reduced so as to give the masses at the bottom enough to wipe out all poverty. When I saw him spending his time of ease and recreation with the business partners of Mr. John D. Rockefeller, Jr., maybe I ought to have had better sense than to believe he would ever break down their big fortunes. Millions of other people were fooled the same as myself. I was like a drowning man grabbing at a straw, I guess. It is not Roosevelt or ruin; it is Roosevelt's ruin.
+It is not Roosevelt or ruin; it is Roosevelt's ruin. … We ran Mr. Roosevelt for the presidency of the United States because he promised to us by word of mouth and in writing … that the size of the big man's fortune would be reduced so as to give the masses at the bottom enough to wipe out all poverty … When I saw him spending all his time of ease and recreation with the business partners of Mr. John D. Rockefeller, Jr., with such men as the Astors, etc., maybe I ought to have had better sense than to have believed he would ever break down their big fortunes … millions of other people were fooled the same as myself. … I was like a drowning man grabbing at a straw, I guess.
 
-*Adapted from a radio address by Senator Huey P. Long, January 1935, printed in The Annals of America, vol. 15 (Encyclopaedia Britannica, 1968).*
+*Shortened from a radio address by Senator Huey P. Long, January 1935, printed in The Annals of America, vol. 15 (Encyclopaedia Britannica, 1968). The phrases are Long's own, in the order he spoke them.*
 
 **Question.** Compare these two sources as evidence about the relationship between Roosevelt and the American people.
 
@@ -489,15 +489,17 @@ History probably will record the National Industrial Recovery Act as the most im
 
 **Source B**
 
-Every code of fair competition shall contain the following conditions: that employees shall have the right to organize and bargain collectively through representatives of their own choosing, and shall be free from the interference, restraint, or coercion of employers of labor; and that employers shall comply with the maximum hours of labor, minimum rates of pay, and other conditions of employment approved or prescribed by the President.
+Every code of fair competition … shall contain the following conditions: (1) That employees shall have the right to organize and bargain collectively through representatives of their own choosing, and shall be free from the interference, restraint, or coercion of employers of labor … (3) that employers shall comply with the maximum hours of labor, minimum rates of pay, and other conditions of employment, approved or prescribed by the President.
 
 *Adapted from Section 7(a) of the National Industrial Recovery Act, 16 June 1933. The passage is shortened.*
 
 **Source C**
 
-Extraordinary conditions may call for extraordinary remedies. But extraordinary conditions do not create or enlarge constitutional power. If the federal government may determine the wages and hours of employees in the internal commerce of a state, a similar control might be exerted over other elements of cost, such as rents, advertising and methods of doing business. In the opinion of Justice Cardozo: "This is delegation running riot."
+Extraordinary conditions may call for extraordinary remedies. But the argument necessarily stops short of an attempt to justify action which lies outside the sphere of constitutional authority. Extraordinary conditions do not create or enlarge constitutional power. … If the federal government may determine the wages and hours of employees in the internal commerce of a state, because of their relation to cost and prices and their indirect effect upon interstate commerce, it would seem that a similar control might be exerted over other elements of cost, also affecting prices, such as the number of employees, rents, advertising, methods of doing business, etc. …
 
-*Adapted from the opinion of Chief Justice Hughes and the concurring opinion of Justice Cardozo in A.L.A. Schechter Poultry Corp. v. United States, 27 May 1935.*
+This is delegation running riot.
+
+*Shortened from A.L.A. Schechter Poultry Corp. v. United States, 27 May 1935: the first paragraph from the opinion of the Court by Chief Justice Hughes, the last sentence from the concurring opinion of Justice Cardozo.*
 
 **Source D**
 
@@ -518,7 +520,7 @@ Extraordinary conditions may call for extraordinary remedies. But extraordinary 
 **Step 2: evaluate each source in context (the step that reaches Level 5).**
 - **A**: written by the president who proposed the law, on the day he signed it, to rally support and to put the best construction on a controversial and untested law. It tells us what Roosevelt hoped, not what the NRA achieved. Its forecast was wrong in its timescale ("for all time"): the NRA lasted under two years.
 - **B**: the text of the law, so reliable on what the NRA was supposed to do, and Section 7(a) was a major gain for labour. But the clause is a statement of conditions, not evidence of their enforcement; employers got round it with company unions, and it needed the Wagner Act in 1935 to be made effective.
-- **C**: a unanimous judgment of the highest court, with the authority of the Constitution, and its argument about delegation is strong evidence of the law's legal weakness. But it judges the NRA's constitutionality, not its economic effects, and Hughes later said the problem was partly poor drafting. Also, the decision is concerned with the poultry code, a case chosen to test the NIRA, and it was the reasoning of a Court dominated by justices critical of the New Deal.
+- **C**: a unanimous judgment of the highest court, with the authority of the Constitution, and its argument about delegation is strong evidence of the law's legal weakness. But it judges the NRA's constitutionality, not its economic effects, and Hughes himself accepts that the crisis was "extraordinary". Also, the decision is concerned with the poultry code, a case chosen to test the NIRA, and it was the reasoning of a Court dominated by justices critical of the New Deal.
 - **D**: precise statistics from a respected economic historian, which show a fall of 4.8 percentage points in two years. But the table does not mention the NRA, so the link has to be argued; it counts relief workers as unemployed (so it may understate the fall in joblessness); and other things were happening in 1933–35 (the end of the banking panic, the break from gold, the CCC and CWA), so the fall cannot be credited to the NRA.
 
 **A Level 5 paragraph and judgement.** "Sources A and B support the view that the NRA was a success in its aims: Roosevelt presents it as a historic act, and Section 7(a) gave workers the right to bargain collectively and set hours and wages, a real gain at a time when unions were weak, as the growth of the United Mine Workers in 1933 shows. Source D appears to back this up, because unemployment fell from 24.9 per cent in 1933 to 20.1 per cent in 1935. But D cannot show that the NRA caused the fall, since the banking panic ended in March 1933, the dollar left gold, and the CCC and CWA were giving jobs directly. Source C challenges the NRA most strongly: the unanimous ruling that the codes were an unlawful delegation of power is powerful evidence that the NRA rested on unsound legal ground and could not last. My own knowledge adds that the codes were dominated by big business, raised prices, hurt small firms, and produced strikes in 1934; Hugh Johnson resigned in September 1934 and the Darrow board reported that the codes encouraged monopoly. By the time of Schechter few of its supporters were sorry to see it go. On balance the sources only support the view that the NRA was a success to a small extent. It had a real impact on morale, hours, child labour and union rights, but there is no reliable evidence in these sources that it caused recovery, and the one source with the force of law (C) and the contextual evidence of its short life suggest that it failed as an instrument of recovery, though it left a legacy in the labour law of 1935."
@@ -568,7 +570,7 @@ Our greatest primary task is to put people to work. This is no unsolvable proble
 
 **Source B**
 
-The outworn creed of capitalism is done for. The clarion call of communism has been sounded. I can support one as easily as the other. They are both rotten! I believe that every citizen willing to work and capable of working shall receive a just, living, annual wage. I believe in nationalizing those public resources which by their very nature are too important to be held in the control of private individuals.
+The outworn creed of capitalism is done for. The clarion call of communism has been sounded. I can support one as easily as the other. They are both rotten! … I believe that every citizen willing to work and capable of working shall receive a just, living, annual wage … I believe in nationalizing those public resources which by their very nature are too important to be held in the control of private individuals.
 
 *Adapted from an address by Father Charles E. Coughlin launching the National Union for Social Justice, a radio address of 11 November 1934, printed in Coughlin, A Series of Lectures on Social Justice (Royal Oak, Michigan, 1935). Passages are joined and shortened.*
 

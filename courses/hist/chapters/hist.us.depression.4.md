@@ -400,9 +400,9 @@ First, and very serious, Negro share croppers and cash tenants would be excluded
 
 **Source B**
 
-The term "employment" means any service performed by an employee for his employer, except: (1) Agricultural labor; (2) Domestic service in a private home; and the other services listed in the section.
+The term "employment" means any service, of whatever nature, performed within the United States by an employee for his employer, except— (1) Agricultural labor; (2) Domestic service in a private home; (3) Casual labor not in the course of the employer's trade or business; …
 
-*Adapted from the definition of "employment" in the Social Security Act, signed 14 August 1935. The list of exceptions is shortened.*
+*From the definition of "employment" in Title II of the Social Security Act, signed 14 August 1935 (section 210(b)). The rest of the list of exceptions is left out.*
 
 **Question.** Compare these two sources as evidence about who would be covered by Social Security.
 
@@ -455,21 +455,21 @@ We have, therefore, reached the point as a nation where we must take action to s
 
 **Source B**
 
-The Supreme Court is fully abreast of its work. An increase in the number of Justices of the Supreme Court would not promote the efficiency of the Court. It is believed that it would impair that efficiency so long as the Court acts as a unit.
+The Supreme Court is fully abreast of its work. … An increase in the number of Justices of the Supreme Court, apart from any question of policy, which I do not discuss, would not promote the efficiency of the Court. It is believed that it would impair that efficiency so long as the Court acts as a unit.
 
-*Adapted from a letter by Chief Justice Charles Evans Hughes to Senator Burton K. Wheeler, the leading opponent of the bill in the Senate Judiciary Committee, dated 21 March 1937 and read to the Committee on 22 March. The wording is shortened.*
+*Shortened from a letter by Chief Justice Charles Evans Hughes to Senator Burton K. Wheeler, the leading opponent of the bill in the Senate Judiciary Committee, dated 21 March 1937 and read to the Committee on 22 March.*
 
 **Source C**
 
-We recommend the rejection of this bill as a needless, futile, and utterly dangerous abandonment of constitutional principle. It was presented to the Congress in a most intricate form and for reasons that obscured its real purpose. It is a proposal without precedent and without justification. It is a measure which should be so emphatically rejected that its parallel will never again be presented to the free representatives of the free people of America.
+We recommend the rejection of this bill as a needless, futile, and utterly dangerous abandonment of constitutional principle. It was presented to the Congress in a most intricate form and for reasons that obscured its real purpose. … It is a proposal without precedent and without justification. … It is a measure which should be so emphatically rejected that its parallel will never again be presented to the free representatives of the free people of America.
 
 *Adapted from the adverse report of the Senate Judiciary Committee on the Judicial Reorganization bill, Senate Report 711, 14 June 1937. Passages are joined and shortened.*
 
 **Source D**
 
-What is this freedom? The Constitution does not speak of freedom of contract. It speaks of liberty and prohibits the deprivation of liberty without due process of law. Liberty implies the absence of arbitrary restraint, not immunity from reasonable regulations and prohibitions imposed in the interests of the community.
+What is this freedom? The Constitution does not speak of freedom of contract. It speaks of liberty and prohibits the deprivation of liberty without due process of law. … Liberty implies the absence of arbitrary restraint, not immunity from reasonable regulations and prohibitions imposed in the interests of the community.
 
-*Adapted from the opinion of Chief Justice Hughes for the Supreme Court in West Coast Hotel Co. v. Parrish, 29 March 1937, upholding Washington State's minimum-wage law for women. The second sentence is Hughes's quotation of an earlier judgment. Passages are joined and shortened.*
+*Adapted from the opinion of Chief Justice Hughes for the Supreme Court in West Coast Hotel Co. v. Parrish, 29 March 1937, upholding Washington State's minimum-wage law for women. The last sentence is Hughes's quotation of an earlier judgment (Chicago, Burlington and Quincy Railroad Co. v. McGuire, 1911). Shortened.*
 
 **Question.** How far do these sources support the view that Roosevelt's plan to reform the Supreme Court in 1937 was a mistake?
 
@@ -530,7 +530,7 @@ We had to struggle with the old enemies of peace: business and financial monopol
 
 **Source B**
 
-I see one-third of a nation ill-housed, ill-clad, ill-nourished. The test of our progress is not whether we add more to the abundance of those who have much; it is whether we provide enough for those who have too little.
+I see one-third of a nation ill-housed, ill-clad, ill-nourished. … The test of our progress is not whether we add more to the abundance of those who have much; it is whether we provide enough for those who have too little.
 
 *From President Roosevelt's Second Inaugural Address, 20 January 1937.*
 

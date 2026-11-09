@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-08 · WRITE P14 · hist.int.empire.3 (16.1k words) and hist.int.empire.4 (16.0k words); hist-timeline in each (no new widgets), acquisitions SVG in empire.4; check and phone ok; Writer's notes in packages/P14.md list every quotation source, Adapted extract and hedged statistic to confirm
+Last: 2026-11-09 · REVIEW P12, P13, P14, P15 · 1 item open (empire.2 Clark attribution); fixed: Blaine FIX confirmed (CR vol. 75 p. 1350); reordered or reworded extracts restored to real words and order (Long, fireside chat, Schechter, 7(a), SSA s. 210(b), Hughes letter, Bülow, Kaiser 1901, Kruger telegram, Crowe, Cromer, Lugard); Livingstone 1857 wording; Marchand 1896; Dyson cartoon timing; League SVG text; COURSE.md rule on extract order and cuts
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -16,12 +16,12 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P9: reviewed 2026-11-08
 - P10: reviewed 2026-11-08
 - P11: reviewed 2026-11-08
-- P12: written 2026-11-08
-- P13: written 2026-11-08
-- P14: written 2026-11-08
-- P15: written 2026-11-08
-- P16: open
-- P17: open
+- P12: reviewed 2026-11-09
+- P13: reviewed 2026-11-09
+- P14: reviewed 2026-11-09
+- P15: reviewed 2026-11-09
+- P16: writing 2026-11-09
+- P17: writing 2026-11-09
 - P18: open
 - P19: open
 - P20: open

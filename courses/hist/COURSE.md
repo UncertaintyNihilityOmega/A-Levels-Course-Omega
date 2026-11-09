@@ -60,6 +60,8 @@ FACTS.md (grep it for your topic).
   phrase with dots (review of P8–P11 replaced over a dozen such extracts). Check what a famous line was about before
   using it (Hoover's "grass will grow" of 1932 was about cutting the tariff) and who wrote it where (Sumner's
   "liberty, inequality, survival of the fittest" is from "The Challenge of Facts", published 1914, not his 1883 book).
+  A shortened extract keeps the document's own order and marks every cut with "…", even when labelled "Adapted"
+  (review of P12–P15 found extracts by Bülow, Crowe, Cromer and Huey Long rearranged, and cuts with no dots).
 - `hist-chart`: use `data-type="line"` only when the years are close enough to show a trend; three years twenty years
   apart are bars, and the text says what the chart cannot show.
 - **Sensitive topics** (the Terror, slavery and Reconstruction violence, colonial atrocities in the Congo and against

@@ -233,7 +233,7 @@ The speech is a good example of mixed arguments: mission and "destiny", but also
 The President's own position was more guarded. He sent a proclamation to the commander at Manila on 21 December 1898 that spoke of "benevolent assimilation".
 
 :::note Source C: the Benevolent Assimilation proclamation
-… it should be the earnest wish and paramount aim of the military administration to win the confidence, respect, and affection of the inhabitants of the Philippines by assuring them in every possible way that full measure of individual rights and liberties which is the heritage of free peoples, and by proving to them that the mission of the United States is one of benevolent assimilation substituting the mild sway of justice and right for arbitrary rule.
+… it should be the earnest wish and paramount aim of the military administration to win the confidence, respect, and affection of the inhabitants of the Philippines by assuring to them in every possible way that full measure of individual rights and liberties which is the heritage of free peoples, and by proving to them that the mission of the United States is one of benevolent assimilation substituting the mild sway of justice and right for arbitrary rule.
 
 *Adapted from President McKinley's "Benevolent Assimilation" proclamation, in the form sent through the Secretary of War to the military governor in Manila, 21 December 1898; the opening words are left out. General Otis in Manila published a softened version on 4 January 1899.*
 :::
@@ -542,7 +542,7 @@ We earnestly condemn the policy of the present National Administration in the Ph
 
 **Source C**
 
-A cartoon, "School begins", by Louis Dalrymple. Uncle Sam stands as a teacher behind a desk, on which lies a book titled "U.S. First Lessons in Self-Government", before a class of unhappy-looking pupils labelled "Cuba", "Porto Rico", "Hawaii" and "Philippines". The caption reads: "Now, children, you've got to learn these lessons whether you want to or not!" At the back of the room sit pupils with books labelled "California", "Texas", "New Mexico", "Arizona" and "Alaska". At the left an African American boy cleans the windows, a Native American boy sits alone reading a book upside down, and a Chinese boy stands outside the door.
+A cartoon, "School begins", by Louis Dalrymple. Uncle Sam stands as a teacher behind a desk, on which lies a book titled "U.S. First Lessons in Self-Government", before a class of unhappy-looking pupils labelled "Cuba", "Porto Rico", "Hawaii" and "Philippines". The caption begins: "Uncle Sam (to his new class in Civilization): Now, children, you've got to learn these lessons whether you want to or not! But just take a look at the class ahead of you …" At the back of the room sit pupils with books labelled "California", "Texas", "New Mexico", "Arizona" and "Alaska". At the left an African American boy cleans the windows, a Native American boy sits alone reading a book upside down, and a Chinese boy stands outside the door.
 
 *Cartoon by Louis Dalrymple in the New York magazine Puck, volume 44, number 1142, 25 January 1899 (centrefold); description based on the Library of Congress catalogue record.*
 

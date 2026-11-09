@@ -289,13 +289,13 @@ These reasons were linked. The Anglo-Portuguese treaty showed that the Congo was
 :::eg Paper 1 (a) [15]: compare two sources as evidence
 **Source A**
 
-... we do not want to put anyone in our shadow, but we also demand our place in the sun. ... A division of our cruisers was dispatched to and occupied the port of Kiaochow ... we have only benevolent and kind intentions toward China ...
+... A division of our cruisers was dispatched to and occupied the port of Kiaochow ... we have only benevolent and kind intentions toward China ... we do not want to put anyone in our shadow, but we also demand our place in the sun.
 
 *Extracts from a speech by Bernhard von Bülow, German Foreign Secretary, to the Reichstag, 6 December 1897, in the English translation by Adam Blauhut in German History in Documents and Images (from the Reichstag's official record). Shortened; the phrases are the document's own.*
 
 **Source B**
 
-... we have conquered for ourselves a place in the sun. ... In spite of the fact that we have no such fleet as we should have, we have conquered for ourselves a place in the sun. ... this place in the sun shall remain our undisputed possession ... for our future lies upon the water ...
+... In spite of the fact that we have no such fleet as we should have, we have conquered for ourselves a place in the sun. ... this place in the sun shall remain our undisputed possession ... for our future lies upon the water ...
 
 *Extracts from a speech by Kaiser Wilhelm II to the North German Regatta Association, 1901, in C. Gauss, The German Kaiser as Shown in His Public Utterances (1915). Shortened; the phrases are the document's own.*
 
@@ -311,7 +311,7 @@ These reasons were linked. The Anglo-Portuguese treaty showed that the Congo was
 
 "Both sources use the same slogan and show a Germany that demanded a share of world power. Source A, from 1897, says 'we also demand our place in the sun', and Source B, from 1901, says Germany has 'conquered for ourselves a place in the sun' and that it 'shall remain our undisputed possession'. In both, the aim is to win status as a world power through overseas expansion, and in both the setting is a recent German gain: the occupation of Kiaochow in A, and the 'conquest' in B.
 
-The differences are in tone and in the means. Bülow is reassuring: Germany 'does not want to put anyone in our shadow', its cruisers merely 'occupied' Kiaochow, and its intentions towards China are 'benevolent and kind'. The Kaiser is boastful: he speaks of having 'conquered' the place and of an 'undisputed possession', and he adds that Germany still lacks the fleet 'it should have' and that 'our future lies upon the water'. Bülow speaks of ports and trade; the Kaiser links expansion to sea power.
+The differences are in tone and in the means. Bülow is reassuring: 'we do not want to put anyone in our shadow', its cruisers merely 'occupied' Kiaochow, and its intentions towards China are 'benevolent and kind'. The Kaiser is boastful: he speaks of having 'conquered' the place and of an 'undisputed possession', and he adds that Germany still has 'no such fleet as we should have' and that 'our future lies upon the water'. Bülow speaks of ports and trade; the Kaiser links expansion to sea power.
 
 These differences are explained by purpose and audience. Bülow was a Foreign Secretary speaking to the Reichstag, only three weeks after the seizure of Kiaochow (in November 1897), defending a risky act to deputies, some of whom were doubtful about colonies and costs, and trying not to alarm other powers; the reassurances were meant to calm Britain, Russia and Japan as much as the Reichstag. In 1897 Tirpitz had just become head of the Navy Office and the First Navy Law was not passed until March 1898, so Bülow could not yet openly talk of the fleet. The Kaiser, speaking in 1901 to a body of yachtsmen and sailing enthusiasts, had a naval audience and his own passion for the navy; the Second Navy Law had been passed in 1900, so a boast about the future fleet suited his purpose. The Kaiser was also known for speaking on impulse, which made his speeches less guarded than a minister's.
 
@@ -354,9 +354,9 @@ The Signatory Powers of the present Act recognize the obligation to insure the e
 
 **Source B**
 
-I congratulate you and your people that, without calling on friendly powers for help and by your own efforts, you have restored peace against the armed bands that broke into your country, and kept your country independent against attacks from outside.
+I express my sincere congratulations that you and your people, without appealing to friendly powers for help, by dint of your own vigor, have been able to restore the peace against the armed hordes that invaded your country as disturbers of the peace, and to preserve the independence of the country against outside attacks.
 
-*Adapted from the telegram of Kaiser Wilhelm II to President Kruger of the Transvaal, Berlin, 3 January 1896, in the translation by Thomas Dunlap in German History in Documents and Images. Adapted: reworded and shortened.*
+*From the telegram of Kaiser Wilhelm II to President Kruger of the Transvaal, Berlin, 3 January 1896, in the translation by Thomas Dunlap in German History in Documents and Images.*
 
 **Source C**
 
@@ -366,15 +366,15 @@ I congratulate you and your people that, without calling on friendly powers for 
 
 **Source D**
 
-... whether Germany is, in fact, aiming at a political hegemony with the object of promoting purely German schemes of expansion ... a much larger and much more dominant part ... "We must have a fleet and coaling stations to keep together the Colonies which we are bound to acquire."
+... whether Germany is, in fact, aiming at a political hegemony with the object of promoting purely German schemes of expansion ... We must have a fleet and coaling stations to keep together the Colonies which we are bound to acquire ... Germany distinctly aims at playing on the world's political stage a much larger and much more dominant part ...
 
-*Extracts from Eyre Crowe, "Memorandum on the Present State of British Relations with France and Germany", Foreign Office, 1 January 1907, in British Documents on the Origins of the War, vol. 3, as printed in German History in Documents and Images. The last sentence is a German view that Crowe reports. Shortened; the phrases are the document's own.*
+*Extracts from Eyre Crowe, "Memorandum on the Present State of British Relations with France and Germany", Foreign Office, 1 January 1907, in British Documents on the Origins of the War, vol. 3, as printed in German History in Documents and Images. The middle extract ("We must have a fleet …") is the German view as Crowe reports it. Shortened; the phrases are the document's own.*
 
 **Question.** 'Colonial rivalries made war between the Great Powers more likely.' How far do these sources support this view?
 
 **What the levels want.** Level 3 (11–15): sources used on both sides, but evaluation is generic ("biased"). Level 4 (16–20): detailed use of all four, accurate, explicit links, context used to interpret them. Level 5 (21–25): the sources **evaluated** in context as stronger or weaker evidence, and a judgement on "how far".
 
-**Step 1: sort the sources.** Support: B (a German intervention in a British sphere in South Africa, in 1896), C (Britain's reaction to Germany's action in Morocco, with the threat of war implied), D (the last sentence links the fleet to colonies). Challenge: A (the Berlin rules aimed to make claims *peaceful*), D (Crowe's main concern is political hegemony and the fleet), B (the telegram praises Kruger for not needing help, which shows Germany did not intend to intervene).
+**Step 1: sort the sources.** Support: B (a German intervention in a British sphere in South Africa, in 1896), C (Britain's reaction to Germany's action in Morocco, with the threat of war implied), D (the German view it reports links the fleet to colonies). Challenge: A (the Berlin rules aimed to make claims *peaceful*), D (Crowe's main concern is political hegemony and the fleet), B (the telegram praises Kruger for not needing help, which shows Germany did not intend to intervene).
 
 **Step 2: evaluate each source in context (the step that reaches Level 5).**
 - **A**: part of a treaty signed by fourteen states, drafted to *avoid* quarrels over African claims. It shows that in 1885 colonial rivalry was seen as something to be managed and that the powers could cooperate. It is weaker evidence for 1896–1911, when the rules were stretched or ignored.
@@ -405,7 +405,7 @@ Question: "How far was the Fashoda Incident of 1898 a turning point in relations
 
 A student wrote:
 
-"In 1898 Captain Marchand set out from Libreville with about a hundred and twenty men and spent two years crossing Africa. He reached Fashoda on 10 July 1898 and raised the French flag. Meanwhile Kitchener defeated the Mahdists at Omdurman on 2 September and sailed up the Nile with gunboats to Fashoda, which he reached on 19 September. They met and were polite and drank whisky and soda. The French government decided to withdraw its troops and Marchand left in December. The two countries nearly went to war."
+"In 1896 Captain Marchand set out from the Atlantic coast of the French Congo with about a hundred and twenty African soldiers and a few French officers and spent two years crossing Africa. He reached Fashoda on 10 July 1898 and raised the French flag. Meanwhile Kitchener defeated the Mahdists at Omdurman on 2 September and sailed up the Nile with gunboats to Fashoda, which he reached on 19 September. They met and were polite and drank whisky and soda. The French government decided to withdraw its troops and Marchand left in December. The two countries nearly went to war."
 
 **The level.** Accurate and detailed, but it is **narrative**: it tells what happened without saying why it matters for "turning point", and it never compares Fashoda with what came before or after. It reaches Level 2 (5–8): "relevant description with few explicit links to the question".
 
@@ -436,7 +436,7 @@ A: The Anglo-Japanese Alliance (30 January 1902), the Entente Cordiale with Fran
 :::note Sources for exam practice questions 5 and 6
 **Source A**
 
-... as long as our policy is one of free trade, we are compelled to seek new markets; old ones are being closed to us by hostile tariffs ... Germany has spent over a million sterling in East Africa ...
+... as long as our policy is one of free trade, we are compelled to seek new markets; for old ones are being closed to us by hostile tariffs ... Germany has spent over a million sterling in East Africa ...
 
 *From Captain F.D. Lugard, The Rise of Our East African Empire (Edinburgh, 1893). Shortened; the phrases are the document's own.*
 
@@ -448,7 +448,7 @@ He who seizes these territories quickest and holds fast the most tenaciously wil
 
 **Source C**
 
-... it was impossible for Great Britain to allow the troops of any other power to occupy Egypt ... With France, especially, there would be a danger that our relations might become seriously strained.
+... With France, especially, there would be a danger that our relations might become seriously strained. ... it was impossible for Great Britain to allow the troops of any other power to occupy Egypt ...
 
 *From the Earl of Cromer, Modern Egypt (1908), on the British occupation of Egypt in 1882. Shortened; the phrases are the document's own.*
 
