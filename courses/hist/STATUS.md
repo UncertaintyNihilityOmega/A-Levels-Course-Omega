@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-09 · WRITE P16 · hist.int.1919.3 (15,620 words) and hist.int.1919.4 (14,907 words): both pass check and phone; no new widget (hist-timeline with own data, 17 and 19 events, probed clean light/dark/phone); 5 hand SVGs; see Writer's notes in packages/P16.md for the translated Stresemann extracts, the Adapted Corfu ultimatum summary and the hedged figures to confirm
+Last: 2026-11-09 · WRITE P18 · hist.int.1929.3 (15,277 words) and hist.int.1929.4 (12,890 words): both pass check and phone; no new widget file (hist-timeline with own data in both, hist-chart in ch3, probed clean light/dark/phone); 2 hand SVGs; see Writer's notes in packages/P18.md for verified extracts, unconfirmed (Chamberlain 3 Sept 1939 wording, Low cartoon record), hedged figures and Adapted sources to confirm
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -22,8 +22,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P15: reviewed 2026-11-09
 - P16: written 2026-11-09
 - P17: written 2026-11-09
-- P18: open
-- P19: open
+- P18: written 2026-11-09
+- P19: writing 2026-11-09
 - P20: open
 - P21: open
 - P22: open

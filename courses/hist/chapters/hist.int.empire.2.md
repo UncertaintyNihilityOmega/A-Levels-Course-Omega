@@ -254,7 +254,7 @@ Two points temper this. First, by 1914 the colonial quarrels between Britain and
 - **Lenin** in 1916 said that the war was an imperialist war to redivide the world among the great powers.
 - **Robinson and Gallagher** (1961) saw British policy as guided by the defence of strategic routes, especially the Nile and Suez, so that quarrels such as Fashoda were defensive, not greedy.
 - **Paul Kennedy**, *The Rise of the Anglo-German Antagonism, 1860–1914* (1980), argued that the antagonism had many causes, among which the colonial disputes mattered less than the naval race and Germany's wider challenge to Britain's position.
-- **Christopher Clark**, *The Sleepwalkers* (2012), argues that the Moroccan crises of 1905 and 1911 mattered because of what they taught leaders: that they could be pushed to the edge of war and survive, and that the powers' faith in diplomacy was wearing away.
+- **Some historians** of the road to 1914 argue that the Moroccan crises of 1905 and 1911 mattered because of what they taught leaders: that they could be pushed to the edge of war and survive, and that the powers' faith in diplomacy was wearing away.
 
 :::key How far was colonial rivalry the main cause of tension between the powers?
 **For:** it created every crisis from 1896 to 1911 (the Kruger telegram, Fashoda, Morocco twice); it made old rivals (Britain and France) hostile until 1898 and then drove the colonial deals that formed the Entente; it fed German resentment and the demand for "a place in the sun".
@@ -486,10 +486,10 @@ A: For: colonial crises created hostility (Britain and Germany, France and Germa
 :::
 
 :::try Stretch for A*
-Q: [20 marks] ★★★ Christopher Clark argues that the Moroccan crises were important less for what they achieved than for what they taught leaders. How far does the evidence support this view?
+Q: [20 marks] ★★★ Some historians argue that the Moroccan crises were important less for what they achieved than for what they taught leaders. How far does the evidence support this view?
 H: List what Britain, France and Germany *did* in 1905–06 and 1911, and what each learned.
 H: Compare the short-term outcomes (Algeciras, the convention) with the effects on attitudes (German humiliation, British commitment).
-A: Support: little changed in Morocco in 1905–06 (the Act confirmed French influence) and the 1911 convention gave Germany only a strip of the Congo; but the crises showed Germany that bluff could fail and that Britain would stand by France; they taught French leaders that Britain would support them and German leaders that they were isolated; they brought military talks and the naval agreement; the public mood in Germany turned to resentment. Challenge: the outcomes did matter, since France got Morocco and Germany got Neukamerun; the Entente's strengthening was a concrete result; leaders' attitudes were shaped by many other events (the naval race, the Bosnian Crisis of 1908–09). Judgement: the crises' lasting effects came from the lessons drawn (as Clark says), but the lessons had real material consequences, so the two cannot be separated.
+A: Support: little changed in Morocco in 1905–06 (the Act confirmed French influence) and the 1911 convention gave Germany only a strip of the Congo; but the crises showed Germany that bluff could fail and that Britain would stand by France; they taught French leaders that Britain would support them and German leaders that they were isolated; they brought military talks and the naval agreement; the public mood in Germany turned to resentment. Challenge: the outcomes did matter, since France got Morocco and Germany got Neukamerun; the Entente's strengthening was a concrete result; leaders' attitudes were shaped by many other events (the naval race, the Bosnian Crisis of 1908–09). Judgement: the crises' lasting effects came from the lessons drawn (as this view claims), but the lessons had real material consequences, so the two cannot be separated.
 Q: [25 marks] ★★★ The Crowe Memorandum is often used as evidence of why Britain moved closer to France and Russia. How far does it explain British policy?
 H: Who wrote it, for whom, and with what authority?
 H: What did it argue, and what were the policy choices at the time (1907)?
