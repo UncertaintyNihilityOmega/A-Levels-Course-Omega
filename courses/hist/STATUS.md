@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-08 · WRITE P15 · hist.int.1919.1 (14,965 words) and hist.int.1919.2 (12,296 words), both check-clean and phone-clean; no widgets in P15 (hist-timeline and hand SVG figures used, shot once); notes in packages/P15.md list quotations to confirm: Fontainebleau sentence (secondary source only), Brockdorff-Rantzau and Deutsche Zeitung translations, Dyson cartoon date (May 1919), plus hedged statistics
+Last: 2026-11-08 · WRITE P14 · hist.int.empire.3 (16.1k words) and hist.int.empire.4 (16.0k words); hist-timeline in each (no new widgets), acquisitions SVG in empire.4; check and phone ok; Writer's notes in packages/P14.md list every quotation source, Adapted extract and hedged statistic to confirm
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -18,7 +18,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P11: reviewed 2026-11-08
 - P12: written 2026-11-08
 - P13: written 2026-11-08
-- P14: writing 2026-11-08
+- P14: written 2026-11-08
 - P15: written 2026-11-08
 - P16: open
 - P17: open
