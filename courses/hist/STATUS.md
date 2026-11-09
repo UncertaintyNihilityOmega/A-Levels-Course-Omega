@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-09 · REVIEW P20, P21, P22, P23 · 1 open item (Marshall aid recipients); fixed: Covenant Art. 12 now 1919 wording, Nuremberg translation named, Acheson context, Gaddis 1972, six Italian governments, Special Tribunal figures, Morgan loan 1925, OND May 1925, RPB 101 June 1942, Berlin and Corporate State diagrams; COURSE.md rule on amended texts
+Last: 2026-11-09 · WRITE P24 · hist.d.stalin.1 (14.6k words, 3 eg, Paper 4 essays: full Level 5 answers for 'Assess reasons for Stalin's victory' and 'Trotsky's mistakes' + spot the weak paragraph); hist.d.stalin.2 (14.4k words, 4 eg: Purges/personality, foreign policy effectiveness, cult, weak paragraph); no new widgets (uses hist-timeline and hist-chart, 2 chapters x timeline + charts for party membership, Terror shot totals, Gulag camp population; 2 hand SVGs). Reviewer: verify Lenin Testament extracts (MIA translation, 'Secretary-General'); date of Trotsky's removal as War Commissar left as 'January 1925' (sources give 25-26 January); Trotsky deportation arrival 12 Feb 1929; Terror figures from Zemskov/NKVD (681,692 shot; 1.6m arrests; Order 00447 quotas 75,950/193,000, results about 767,000/387,000; Polish operation about 140,000/111,000); Gulag camp series from Zemskov table as reproduced by HSE/Wikipedia (1930 179k, 1934 510k, 1937 821k, 1939 1,317k, 1941 1,501k); Spanish gold about 500 tonnes, Katyn about 22,000, Winter War dead (120,000 Soviet, 25,000 Finnish) from memory-level sources, check if wanted; party membership 1926 'over one million' shown as a floor.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -28,7 +28,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P21: reviewed 2026-11-09
 - P22: reviewed 2026-11-09
 - P23: reviewed 2026-11-09
-- P24: writing 2026-11-09
+- P24: written 2026-11-09
 - P25: writing 2026-11-09
 - P26: open
 - P27: open
