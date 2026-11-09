@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-09 · WRITE P19 · hist.interp.skills (9.9k words), hist.interp.ww1.1 (10.7k), hist.interp.ww1.2 (12.0k); widget hist-sort (probe clean light/dark/phone/bad attributes, Node logic test data/test-hist-sort.js passes); hist-timeline used for the July Crisis; Writer's notes in packages/P19.md list every quotation, historian's argument, practice summary and hedged fact to confirm
+Last: 2026-11-09 · REVIEW P16, P17, P18, P19 · 9 chapters pass check and phone; fixed: Scheme A squadrons (1929.4), German-expansion map (Austria, Slovakia), League membership bars dashed for dark mode and Lytton wording (1929.2), three unsourced historiography claims in ww1.2; confirmed Writer's notes on the web (Dimitrov, Anti-Comintern, Roosevelt, Covenant, Keynes, Stresemann Nobel, Locarno vote, referendum, Low cartoon, McMeekin, Clark, Mainz 1951, Historikertag 1964); 1 open item (1919.3 Corfu ultimatum summary in a source box); COURSE.md rule on critics and dates of historians
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -20,11 +20,11 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P13: reviewed 2026-11-09
 - P14: reviewed 2026-11-09
 - P15: reviewed 2026-11-09
-- P16: written 2026-11-09
-- P17: written 2026-11-09
-- P18: written 2026-11-09
-- P19: written 2026-11-09
-- P20: open
+- P16: reviewed 2026-11-09
+- P17: reviewed 2026-11-09
+- P18: reviewed 2026-11-09
+- P19: reviewed 2026-11-09
+- P20: writing 2026-11-09
 - P21: writing 2026-11-09
 - P22: open
 - P23: open

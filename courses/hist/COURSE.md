@@ -43,7 +43,10 @@ FACTS.md (grep it for your topic).
   Every section ends with what it means for the key question.
 - Historians: name a historian only when you are sure of the work and its argument (author, title, year). At AS, a
   short `:::note` on the debate is stretch; at A Level (Paper 3) it is the core. Never invent a quotation; quote only
-  words you are certain of, and mark adapted or paraphrased extracts as such.
+  words you are certain of, and mark adapted or paraphrased extracts as such. Name a critic or reviewer of a book only
+  when you have read the criticism, check that a historian was alive and writing when you place him in a debate (review
+  of P16–P19: Ritter, who died in 1967, was said to dispute diaries published in 1972), and leave out colourful details
+  you cannot source ("the government bought hundreds of copies").
 - **Sources** (Paper 1 practice): real documents, briefly quoted or closely paraphrased, each with a provenance line in
   italics in the board's style (*From …, a pamphlet by …, January 1789.*). Any shortened, simplified or translated
   extract says "Adapted from …". A visual source is described in words with its real title, date and maker. Never a
