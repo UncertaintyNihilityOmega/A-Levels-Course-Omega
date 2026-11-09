@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-09 · WRITE P17 · hist.int.1929.1 (13.4k words) and hist.int.1929.2 (12.5k words); no new widgets (package lists none): hist-timeline in both, hist-chart in ch.1, three hand SVGs; check and phone ok; Writer's notes in packages/P17.md list every quotation source, Adapted extract (Stresa, Hoare, Mussolini, Hitler, Lytton) and hedged fact to confirm
+Last: 2026-11-09 · WRITE P16 · hist.int.1919.3 (15,620 words) and hist.int.1919.4 (14,907 words): both pass check and phone; no new widget (hist-timeline with own data, 17 and 19 events, probed clean light/dark/phone); 5 hand SVGs; see Writer's notes in packages/P16.md for the translated Stresemann extracts, the Adapted Corfu ultimatum summary and the hedged figures to confirm
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -20,7 +20,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P13: reviewed 2026-11-09
 - P14: reviewed 2026-11-09
 - P15: reviewed 2026-11-09
-- P16: writing 2026-11-09
+- P16: written 2026-11-09
 - P17: written 2026-11-09
 - P18: open
 - P19: open
