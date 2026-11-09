@@ -10,7 +10,7 @@ There is no CLAUDE.md at the root: course sessions would load it. Start every Or
 | Role | Model | Works in | Does | Owns |
 |---|---|---|---|---|
 | Organizer | Opus | project root | engine, design, kits, assembly, git, answers REQUESTS.md | `engine/`, `core/`, `FACTS.md`, root docs, `.github/` |
-| Specialist | Opus | `courses/<c>` | LEAD (plan + gold chapter), REVIEW (every 3 packages), REVIEW FINAL | `COURSE.md`, `course.json`, `FACTS.md`, `packages/` |
+| Specialist | Opus | `courses/<c>` | LEAD (plan + gold chapter), REVIEW (every 4 packages), REVIEW FINAL | `COURSE.md`, `course.json`, `FACTS.md`, `packages/` |
 | Writer | Sonnet | `courses/<c>` | WRITE one package (2–3 chapters, checks, widgets); FIX | `chapters/`, `checks/`, `widgets/` |
 | Reader | Sonnet | `courses/<c>` | READER: 6–8 chapters per batch as a beginner; files `(reader)` items | `READER.md` |
 
@@ -37,7 +37,7 @@ There is no CLAUDE.md at the root: course sessions would load it. Start every Or
 - **Classic method** (when the user wants to drive a course by hand): one chat per step in `courses/<c>` (PROMPTS.md).
 - **Agent method** (the user's default for the roadmap): an app scheduled task (every 2 hours) starts a fresh Organizer
   session that runs the next steps as agents (AGENT-RUN.md "Automatic runs").
-- Cycle: LEAD → Writers claim packages → REVIEW every 3 packages → FIX → READER batches → FIX → REVIEW FINAL.
+- Cycle: LEAD → Writers claim packages → REVIEW every 4 packages → FIX → READER batches → FIX → REVIEW FINAL.
 
 ## Assembly session
 

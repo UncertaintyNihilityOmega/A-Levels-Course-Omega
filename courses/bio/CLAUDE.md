@@ -96,7 +96,7 @@ tell the user which session to run instead, and stop. A Writer never does LEAD o
 7. `done "WRITE Pn" "<chapters; widgets; notes for the reviewer>"`. Report in 3 lines. If `status` now lists
    a REVIEW, tell the user to run the Specialist REVIEW.
 
-## REVIEW (Specialist): when 3 or more packages are written (or the last ones)
+## REVIEW (Specialist): when 4 or more packages are written (or the last ones)
 1. `status` (names the packages), `check`, `phone`, `preview`.
 2. Look at every figure and widget (preview or `shot`, light, dark, phone; click the interactions,
    then Tab through each widget and use it with the keyboard only). Read every
@@ -105,7 +105,7 @@ tell the user which session to run instead, and stop. A Writer never does LEAD o
 3. Fix serious problems yourself (wrong facts or numbers, broken pages, layout). List the rest in REVIEW.md as
    `- [ ] <id>: <exactly what to change>`.
 4. If tone, depth or structure drifts, add a rule to COURSE.md (or to unclaimed package notes).
-5. `done "REVIEW Pa, Pb, Pc" "<n items; what you fixed>"` naming exactly the packages reviewed. Report in 3 lines.
+5. `done "REVIEW Pa, Pb, Pc, Pd" "<n items; what you fixed>"` naming exactly the packages reviewed. Report in 3 lines.
 
 **REVIEW FINAL** (after READER and its FIX): every chapter in course.json is written and passes `check` and
 `phone`; spot-check the FIX rounds; the `Next:` lines form one chain; mock times and totals match FACTS.md; then

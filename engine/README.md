@@ -67,7 +67,8 @@
   (`LEAD`, `Pn: open|writing|written|reviewed`, `READER`, `FINAL`).
 - `claim [Pn]`, `release Pn`, `done "<step>" "<summary>"`. `done "WRITE Pn"` also appends the summary to
   `packages/Pn.md` ("Writer's notes").
-- Up to `AHEAD` (6) packages may be written or claimed past the last review; reviews take 3 packages (or the last ones).
+- Up to `AHEAD` (8) packages may be written or claimed past the last review; reviews take `REVIEW_SIZE` (4) packages
+  (or the last ones).
 - READER: after every package is reviewed; READER.md has one `## <id>` per non-mock chapter; then FIX, REVIEW FINAL.
 
 ## Checks

@@ -64,8 +64,8 @@ awake (Windows: Sleep "Never" when plugged in).
 ## Loop
 - No plan yet → Specialist LEAD alone; then answer its REQUESTS.md lines, sync, commit.
 - Keep 2 Writers busy, one named package each, in `status` order. A fresh agent per package.
-- When 3 packages are written (or the last ones), start the Specialist REVIEW for exactly those, while Writers go on
-  (the kit allows 6 packages past the last review; at WAIT, wait).
+- When 4 packages are written (or the last ones), start the Specialist REVIEW for exactly those, while Writers go on
+  (the kit allows 8 packages past the last review; at WAIT, wait).
 - After a review: the next Writer does **FIX + WRITE Pn** (one FIX at a time; give FIX Writers disjoint chapters).
 - Each time an agent reports: `check` its chapters, commit only its files (`git add` named paths), push, answer
   REQUESTS.md (engine fixes are the Organizer's), re-sync after engine changes.
@@ -170,6 +170,6 @@ With the preview server (only when the user allowed it this session; the Organiz
   self-sufficient. Each widget belongs to one package. FACTS.md records what each real paper prints and allows (from a
   recent question paper's front page). The gold chapter has every STYLE section and passes check and phone.
   `done LEAD`; reply with a 3-line summary, the package list, the gold chapter's results and REQUESTS.md lines.
-- **REVIEW <Pa>, <Pb>, <Pc>**: look at every figure and widget (light, dark, phone, interactions), fix layout
+- **REVIEW <Pa>, <Pb>, <Pc>, <Pd>**: look at every figure and widget (light, dark, phone, interactions), fix layout
   yourself, read and recompute at CLAUDE.md step 2 depth, judge depth, list the Writers' notes to confirm (end of
-  each packages/Pn.md). `done "REVIEW <Pa>, <Pb>, <Pc>"`. Reply in at most 8 lines.
+  each packages/Pn.md). `done "REVIEW <Pa>, <Pb>, <Pc>, <Pd>"`. Reply in at most 8 lines.
