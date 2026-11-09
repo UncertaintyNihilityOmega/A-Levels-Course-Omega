@@ -36,7 +36,7 @@ govs = ["Nitti", "Giolitti", "Bonomi", "Facta I", "Facta II"]
 eq("governments", len(govs), 5)
 eq("prime ministers", len({g.split()[0] for g in govs}), 4)
 # June 1919 -> October 1922 = 40 months
-eq("months of five governments", (1922 - 1919) * 12 + (10 - 6), 40)
+eq("months of six governments", (1922 - 1919) * 12 + (10 - 6), 40)
 # Quiet gap: the Pact of Pacification was 3 Aug 1921, PNF founded 7-10 Nov 1921
 assert date(1921, 8, 3) < date(1921, 11, 7)
 # General strike 1-3 August 1922: three days

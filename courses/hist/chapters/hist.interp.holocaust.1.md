@@ -345,9 +345,9 @@ In Holocaust history, a person, government or organisation that knew of the pers
 
 Paper 3 extracts rest on a few famous documents. You do not need to quote them, but you do need to know what each is, who made it, and how a historian would use it. Each is given with its provenance, in the board's style. Where words are quoted they are the document's own, from the translation named.
 
-**Document 1: the Nuremberg Laws.** *Adapted from the Law for the Protection of German Blood and German Honour and the Reich Citizenship Law, 15 September 1935; Reichsgesetzblatt 1935, part I, pp. 1146–47, in English translation.*
+**Document 1: the Nuremberg Laws.** *Adapted from the Law for the Protection of German Blood and German Honour and the Reich Citizenship Law, 15 September 1935; Reichsgesetzblatt 1935, part I, pp. 1146–47; English translation from J. Noakes and G. Pridham, Documents on Nazism 1919–1945 (1974), as given by the Jewish Virtual Library.*
 
-> "Marriages between Jews and nationals of German or kindred blood are forbidden. … Extramarital intercourse between Jews and nationals of German or kindred blood is forbidden."
+> "Marriages between Jews and citizens of German or kindred blood are forbidden. … Sexual relations outside marriage between Jews and nationals of German or kindred blood are forbidden."
 
 *Nature and origin.* A law of the Reich, published in the official gazette, so it is an authoritative statement of state policy. *Purpose.* To define who counted as a German by blood and to separate the groups. *What it shows.* The racial definition of Jewishness and the state's role in persecution. *Limits.* A law does not show how it was applied or what people thought. *Used by.* Intentionalists, who see in it the Nazis' racial programme in law; and by those who stress that it was drafted in haste to satisfy party radicals and left many questions to later decrees.
 

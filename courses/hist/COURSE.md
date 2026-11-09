@@ -65,6 +65,9 @@ FACTS.md (grep it for your topic).
   "liberty, inequality, survival of the fittest" is from "The Challenge of Facts", published 1914, not his 1883 book).
   A shortened extract keeps the document's own order and marks every cut with "…", even when labelled "Adapted"
   (review of P12–P15 found extracts by Bülow, Crowe, Cromer and Huey Long rearranged, and cuts with no dots).
+  Online texts of treaties and covenants are often the amended version: quote the wording in force on the date the
+  provenance gives (review of P20–P23 found the 1924 text of Covenant Article 12 labelled as 1919). Date loans,
+  laws and founding acts from a source, not from the year of the campaign they served (the Morgan loan was 1925).
 - `hist-chart`: use `data-type="line"` only when the years are close enough to show a trend; three years twenty years
   apart are bars, and the text says what the chart cannot show.
 - **Sensitive topics** (the Terror, slavery and Reconstruction violence, colonial atrocities in the Congo and against
