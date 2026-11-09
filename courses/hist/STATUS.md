@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-09 · REVIEW P16, P17, P18, P19 · 9 chapters pass check and phone; fixed: Scheme A squadrons (1929.4), German-expansion map (Austria, Slovakia), League membership bars dashed for dark mode and Lytton wording (1929.2), three unsourced historiography claims in ww1.2; confirmed Writer's notes on the web (Dimitrov, Anti-Comintern, Roosevelt, Covenant, Keynes, Stresemann Nobel, Locarno vote, referendum, Low cartoon, McMeekin, Clark, Mainz 1951, Historikertag 1964); 1 open item (1919.3 Corfu ultimatum summary in a source box); COURSE.md rule on critics and dates of historians
+Last: 2026-11-09 · WRITE P21 · hist.interp.coldwar.1 (14,029 words; Yalta, Potsdam, 1946 documents, Truman Doctrine, Marshall Plan, Sovietisation, Berlin, NATO, 10 documents with provenance, event-by-school tagging table, 4 eg, 2 SVG maps, hist-timeline) and hist.interp.coldwar.2 (12,203 words; all syllabus bullets, schools table, full L3/L5/L6 worked answer on a revisionist practice extract, 7 practice extracts, hist-sort); no new widget files. Reviewer: see Writer's notes in packages/P21.md (Marshall and Kennan quotes from memory; Gaddis 1972 summary)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -24,8 +24,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P17: reviewed 2026-11-09
 - P18: reviewed 2026-11-09
 - P19: reviewed 2026-11-09
-- P20: writing 2026-11-09
-- P21: writing 2026-11-09
+- P20: written 2026-11-09
+- P21: written 2026-11-09
 - P22: open
 - P23: open
 - P24: open
