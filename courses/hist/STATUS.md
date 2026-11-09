@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-09 · WRITE P18 · hist.int.1929.3 (15,277 words) and hist.int.1929.4 (12,890 words): both pass check and phone; no new widget file (hist-timeline with own data in both, hist-chart in ch3, probed clean light/dark/phone); 2 hand SVGs; see Writer's notes in packages/P18.md for verified extracts, unconfirmed (Chamberlain 3 Sept 1939 wording, Low cartoon record), hedged figures and Adapted sources to confirm
+Last: 2026-11-09 · WRITE P19 · hist.interp.skills (9.9k words), hist.interp.ww1.1 (10.7k), hist.interp.ww1.2 (12.0k); widget hist-sort (probe clean light/dark/phone/bad attributes, Node logic test data/test-hist-sort.js passes); hist-timeline used for the July Crisis; Writer's notes in packages/P19.md list every quotation, historian's argument, practice summary and hedged fact to confirm
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -23,7 +23,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P16: written 2026-11-09
 - P17: written 2026-11-09
 - P18: written 2026-11-09
-- P19: writing 2026-11-09
+- P19: written 2026-11-09
 - P20: open
 - P21: open
 - P22: open
