@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-09 · WRITE P21 · hist.interp.coldwar.1 (14,029 words; Yalta, Potsdam, 1946 documents, Truman Doctrine, Marshall Plan, Sovietisation, Berlin, NATO, 10 documents with provenance, event-by-school tagging table, 4 eg, 2 SVG maps, hist-timeline) and hist.interp.coldwar.2 (12,203 words; all syllabus bullets, schools table, full L3/L5/L6 worked answer on a revisionist practice extract, 7 practice extracts, hist-sort); no new widget files. Reviewer: see Writer's notes in packages/P21.md (Marshall and Kennan quotes from memory; Gaddis 1972 summary)
+Last: 2026-11-09 · WRITE P22 · hist.d.italy.1 (13,948 words; hist-timeline, hist-chart, hist-sort, 1 SVG, 2 Paper 4 [30] eg incl. full L5, spot-the-weak-paragraph, 10 [30] practice) and hist.d.italy.2 (10,996 words; hist-timeline, hist-sort, 1 SVG, 2 Paper 4 [30] eg incl. full L5, 10 [30] practice); no new widget files. Reviewer: see Writer's notes in packages/P22.md (hedged figures; translated quotations; a few seat/membership figures from memory)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -26,8 +26,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P19: reviewed 2026-11-09
 - P20: written 2026-11-09
 - P21: written 2026-11-09
-- P22: open
-- P23: open
+- P22: written 2026-11-09
+- P23: written 2026-11-09
 - P24: open
 - P25: open
 - P26: open
