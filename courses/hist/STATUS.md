@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-09 · FIX · Marshall aid recipients: western Germany added (coldwar.1, coldwar.2)
+Last: 2026-11-09 · WRITE P27 · hist.d.hitler.3 (11,572 words) and hist.d.hitler.4 (11,532 words); check and phone pass; no new widgets (hist-timeline, hist-chart used; one hand SVG in .3, shots looked at). Reviewer: verify these from sources: .3 military share of GNP (computed from Noakes and Pridham table, 1938 about 16-17%); unemployment 1938 (0.4) and 1939 (0.1) annual averages from memory of the Statistisches Jahrbuch (1932-37 verified); first Reinhardt programme about 1 billion marks and price freeze Nov 1936; Göring guns/butter wording given as Hamburg speech December 1935 (reported), not the 1936 date; DAF 1939 membership left out. .4 Kristallnacht counts (USHMM 26,000 vs 30,000; 91 killed); Jehovah's Witnesses and homosexual figures given as ranges; sterilisation law court name; church dates (Müller 27 Sept 1933, Sports Palace 13 Nov 1933, Barmen 29-31 May 1934, Niemöller 1 July 1937) and 1936 exclusion of women from the judiciary, NS-Frauenschaft about 2 million, Pflichtjahr 1938 are from memory/secondary pages; Hitler 8 Sept 1934 quote is the one sentence from Noakes and Pridham via GHDI.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -31,7 +31,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P24: written 2026-11-09
 - P25: written 2026-11-09
 - P26: writing 2026-11-09
-- P27: open
+- P27: written 2026-11-09
 - P28: open
 - P29: open
 - P30: open
