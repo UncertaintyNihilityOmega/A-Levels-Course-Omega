@@ -38,10 +38,11 @@ eq("infant mortality rise points", 162 - 146, 16)
 eq("women share rise", 39 - 24, 15)
 assert 39 / 24 > 1.6
 
-# Literacy 56.6 (1926) to 81.2 (1939), "about 57" and "about 81"
-eq("literacy 1926", round(56.6), 57)
+# Literacy, population aged 9 and over: 51.1 (1926 census) to 81.2 (1939 census), "about 51" and "about 81"
+# (56.6 is the 1926 figure for ages 9-49 only, so it must not be paired with 81.2)
+eq("literacy 1926", round(51.1), 51)
 eq("literacy 1939", round(81.2), 81)
-between("literacy rise", 81.2 - 56.6, 24.5, 24.7)
+between("literacy rise", 81.2 - 51.1, 30.0, 30.2)
 
 # Koreans: about 172,000 (171,781 in 36,442 families); decree 21 August 1937, deportation September-October
 between("koreans", 171781, 170000, 173000)
@@ -58,8 +59,10 @@ eq("congress days", (date(1934, 9, 1) - date(1934, 8, 17)).days + 1, 16)
 eq("pravda after visit", (date(1936, 1, 28) - date(1936, 1, 26)).days, 2)
 # RAPP dissolved 23 April 1932; congress two years and four months later
 eq("rapp to congress months", (1934 - 1932) * 12 + (8 - 4), 28)
-# Census 6 January 1937: about 56 per cent believers (55.3 of 98.4 million adults in the usual estimate)
-between("believers share", 55.3 / 98.4 * 100, 55.5, 57.0)
+# Census 6 January 1937: 55.3 million believers and 42.2 million non-believers among those aged 16+ who answered,
+# i.e. 56.7 per cent of respondents, "about 57 per cent"
+between("believers share", 55.3 / (55.3 + 42.2) * 100, 56.5, 57.0)
+eq("believers rounded", round(55.3 / (55.3 + 42.2) * 100), 57)
 # Census years
 eq("1937 to 1939 census", 1939 - 1937, 2)
 # Cathedral destroyed 5 December 1931; Law on Religious Associations 8 April 1929: 2 years 8 months

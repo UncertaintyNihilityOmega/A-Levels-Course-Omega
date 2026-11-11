@@ -10,7 +10,7 @@ The Nazis did not want only to rule Germany: they wanted to remake the Germans. 
 :::
 
 :::exam Where this is examined
-Hitler's Germany, 1929–41 is one of the three topics of the A Level **European option** (Paper 4). Paper 4 lasts 1 hour 45 minutes and is worth 60 marks: you answer **two essay questions, each [30]**, with the command words **Assess** or **Evaluate**. The specimen paper has nine questions in three sections, one on each topic of each option (FACTS.md), so you should study at least two of the three topics of your option, and all three if you want a real choice.
+Hitler's Germany, 1929–41 is one of the three topics of the A Level **European option** (Paper 4). Paper 4 lasts 1 hour 45 minutes and is worth 60 marks: you answer **two essay questions, each [30]**, with the command words **Assess** or **Evaluate**. The specimen paper has nine questions in three sections, one on each topic of each option, so you should study at least two of the three topics of your option, and all three if you want a real choice.
 - Each [30] essay is marked in two tables: **Table A** (analysis and judgement, AO2) out of 15 and **Table B** (supporting knowledge, AO1) out of 15. A Level 5 answer needs valid, wide-ranging criteria, a balanced argument, a supported judgement, and precise, carefully selected detail.
 - This chapter covers key question 3.4, *How far did the Nazis transform German society?* An essay on it can ask about women, young people, religion or persecution, or can ask you to compare them or to judge "how far" in general. "Transform" invites you to ask what changed and what did not, and for whom.
 - The syllabus period here is the years 1933–39 up to the outbreak of war. The mass murder of the Jews of Europe belongs to the Paper 3 chapters on the Holocaust and to the later years: here you are concerned with the policy of persecution before the war.
@@ -286,7 +286,7 @@ Use these to show that you know the debate, but your marks come from your own ar
 
 ## Worked examples: Paper 4 essays built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). A [30] essay gets one mark out of 15 for analysis and judgement (Table A) and one out of 15 for knowledge (Table B). Read the commentary as an examiner would.
+The levels below are the real Cambridge levels for 2027. A [30] essay gets one mark out of 15 for analysis and judgement (Table A) and one out of 15 for knowledge (Table B). Read the commentary as an examiner would.
 
 :::eg 'Nazi policies towards young people were successful.' Evaluate this view. [30]
 **What the levels want.** *Table A (AO2).* Level 2 (4–6): some understanding, descriptive, criteria implicit. Level 3 (7–9): some analysis, but the argument lacks balance; weak judgement. Level 4 (10–12): good understanding, mostly analytical, valid criteria, a supported judgement. Level 5 (13–15): consistently analytical, wide-ranging valid criteria, a sustained balanced argument, a clear supported judgement. *Table B (AO1).* Level 3 (7–9): adequate but descriptive in places; Level 4 (10–12): a good range, mostly precise; Level 5 (13–15): carefully selected, fully focused, consistently precise.
@@ -395,7 +395,7 @@ A: Indicative content. Failure: the Reich Church collapsed (Müller, Barmen 1934
 Q: [30 marks] ★★ Assess the extent to which the persecution of Jews became more severe between 1933 and 1939.
 H: Use a clear sequence: 1933, 1935, 1936, 1938.
 A: Indicative content. Stages: the boycott and Civil Service law (April 1933); the Nuremberg Laws (15 September 1935); Aryanisation and the licence withdrawals (1936–38); the Anschluss violence (March 1938); the J stamp and the Polish expulsion (October 1938); Kristallnacht (9–10 November 1938) and the decrees after it. Level 5 shows both the escalation and the pauses (the 1936 Olympics) and explains them.
-Q: [30 marks] ★★★ 'Race theory was the main reason why minorities were persecuted in Nazi Germany.' How far do you agree? (Assess)
+Q: [30 marks] ★★★ 'Race theory was the main reason why minorities were persecuted in Nazi Germany.' Evaluate this view.
 H: Treat Jews, disabled people and Jehovah's Witnesses separately before you judge.
 H: What other reasons are there: scapegoating, gain, the nature of the regime?
 A: Indicative content. Race theory: *Mein Kampf*, Social Darwinism and eugenics; the Nuremberg Laws; sterilisation (400,000 by 1945). Other reasons: the "stab in the back" and the Depression; Aryanisation and the fine of November 1938; the birth-rate and the cost of care; the refusal of Jehovah's Witnesses to obey; party radicals. Level 5 ranks the reasons and shows how they link.
@@ -403,7 +403,7 @@ Q: [30 marks] ★★★ Evaluate the view that the Nazis transformed German soci
 H: Choose a test of "reality": organisations, laws, practice or belief.
 H: Use at least three of the four areas: women, young people, religion, persecution.
 A: Indicative content. Appearance: the Hitler Youth statistics (nominal membership); the propaganda of the mother and the housewife; the Reich Church. Reality: the destruction of the Jews' position in German life; sterilisation (over 400,000); the schools; the compulsion of 1936 and 1939. Mixed: the churches' survival; women's work. Level 5 judges area by area against a stated test, perhaps judging that the change was real for the persecuted and the young and limited for women and the churches.
-Q: [30 marks] ★★★ 'Kristallnacht marked a turning point in the Nazi persecution of the Jews.' How far do you agree?
+Q: [30 marks] ★★★ 'Kristallnacht marked a turning point in the Nazi persecution of the Jews.' Evaluate this view.
 H: What was new about it, and what was not?
 H: Compare 1933–35 with 1938–39.
 A: Indicative content. Turning point: the scale of violence in one night; the arrest of 26,000 to 30,000 men; the fine of 1 billion marks; the decrees of 12–15 November excluding Jews from business and schools; forced emigration run by the state (January 1939). Continuity: the earlier stages (boycott, Nuremberg Laws, Aryanisation); the radicalisation after the Anschluss; the way the persecution moved in steps. Level 5 reaches a judgement with a criterion (new methods, scale, aim).
@@ -468,7 +468,7 @@ A: Young people: control by the Hitler Youth (1936, 1939), the schools; limits i
 - About 3,000
 + About 26,000 to 30,000
 - About 300,000
-> The USHMM gives about 26,000; other accounts give more than 30,000. At least 91 were killed at once.
+> The USHMM gives about 26,000 sent to camps; other accounts (and other USHMM pages) give about 30,000 arrested. At least 91 were killed at once.
 ? Which group was persecuted partly because members refused the Hitler salute, oaths and military service?
 - The Roma and Sinti
 + Jehovah's Witnesses

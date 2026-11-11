@@ -111,6 +111,10 @@ In this order (the gold chapter shows every part):
     3–6 links, at least one practise or papers link and one read or watch link, ending with the "Links checked" line),
     then `Next: [Title](#id)`.
 - `checks/<id>.py` for every chapter: dates, ages, intervals, percentages, totals and mark totals used in the text.
+- Practice and worked questions use only the real command forms of the paper: Paper 4 "Assess …" or "'…' Evaluate
+  this view." (never "How far do you agree?", "To what extent …?" or a mixed "… ? Evaluate this view."). Never name
+  course files (FACTS.md, COURSE.md) in student-facing text. When two statistics are compared (literacy, census
+  shares), take both from the same series and age base, and state the base.
 
 ## Widgets (each belongs to one package; use another package's widget only when its file exists in widgets/)
 - `hist-timeline` (P1): `data-title="…" data-events="1787-02-22 | Assembly of Notables opens | Calonne's reform plan ;; 1789-07-14 | Bastille stormed | …"`

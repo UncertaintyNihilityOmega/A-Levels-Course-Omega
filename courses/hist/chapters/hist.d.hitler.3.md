@@ -10,7 +10,7 @@ In January 1933 about six million Germans were registered as unemployed. By 1939
 :::
 
 :::exam Where this is examined
-Hitler's Germany, 1929–41 is one of the three topics of the A Level **European option** (Paper 4). Paper 4 lasts 1 hour 45 minutes and is worth 60 marks: you answer **two essay questions, each [30]**, with the command words **Assess** or **Evaluate**. The specimen paper has nine questions in three sections, one on each topic of each option (FACTS.md), so you should study at least two of the three topics of your option, and all three if you want a real choice.
+Hitler's Germany, 1929–41 is one of the three topics of the A Level **European option** (Paper 4). Paper 4 lasts 1 hour 45 minutes and is worth 60 marks: you answer **two essay questions, each [30]**, with the command words **Assess** or **Evaluate**. The specimen paper has nine questions in three sections, one on each topic of each option, so you should study at least two of the three topics of your option, and all three if you want a real choice.
 - Each [30] essay is marked in two tables: **Table A** (analysis and judgement, AO2) out of 15 and **Table B** (supporting knowledge, AO1) out of 15. A Level 5 answer needs valid, wide-ranging criteria, a balanced argument, a supported judgement, and precise, carefully selected detail.
 - This chapter covers key question 3.3, *How successful were Nazi economic policies?* An essay on it can ask about the response to the Depression, agriculture, rearmament and autarky, or living standards, or can ask "how successful" in general. The word "successful" is the trap: you must say what the policy was *for* before you judge whether it worked.
 :::
@@ -335,7 +335,7 @@ Use these to show that you know the debate, but your marks come from your own ar
 
 ## Worked examples: Paper 4 essays built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). A [30] essay gets one mark out of 15 for analysis and judgement (Table A) and one out of 15 for knowledge (Table B). Read the commentary as an examiner would.
+The levels below are the real Cambridge levels for 2027. A [30] essay gets one mark out of 15 for analysis and judgement (Table A) and one out of 15 for knowledge (Table B). Read the commentary as an examiner would.
 
 :::eg 'Nazi economic policy was a success.' Evaluate this view. [30]
 **What the levels want.** *Table A (AO2).* Level 2 (4–6): some understanding, descriptive, criteria implicit. Level 3 (7–9): some analysis, but the argument lacks balance; weak judgement. Level 4 (10–12): good understanding, mostly analytical, valid criteria, a supported judgement. Level 5 (13–15): consistently analytical, wide-ranging valid criteria, a sustained balanced argument, a clear supported judgement. *Table B (AO1).* Level 3 (7–9): adequate but descriptive in places; Level 4 (10–12): a good range, mostly precise; Level 5 (13–15): carefully selected, fully focused, consistently precise.
@@ -451,11 +451,11 @@ A: Indicative content. For: Hitler's memorandum of August 1936 asked for an econ
 Q: [30 marks] ★★★ Evaluate the view that the Nazi economy in 1939 was prepared for a short war but not for a long one.
 H: What would a "short war" economy need, and what would a long war need?
 H: Use the historians' dispute about the "blitzkrieg economy".
-A: Indicative content. Support: raw materials, foreign exchange and finance (Mefo bills falling due, January 1939 warning) were short; the navy's Z Plan could not be built; the economy relied on the spoils of Austria and Czechoslovakia; Milward's "blitzkrieg economy". Challenge: Overy argues that the economy was planned for a large war from 1936; military spending reached about a quarter of output; the Four Year Plan and the Reichswerke aimed at a long war. Level 5 reaches a judgement using criteria (planning, resources, finance, what actually happened).
-Q: [30 marks] ★★★ 'The main reason for the fall in German unemployment between 1933 and 1939 was rearmament.' How far do you agree? (Assess)
+A: Indicative content. Support: raw materials, foreign exchange and finance (Mefo bills falling due, January 1939 warning) were short; the navy's Z Plan could not be built; the economy relied on the spoils of Austria and Czechoslovakia; Milward's "blitzkrieg economy". Challenge: Overy argues that the economy was planned for a large war from 1936; military spending reached nearly a quarter of output in 1939; the Four Year Plan and the Reichswerke aimed at a long war. Level 5 reaches a judgement using criteria (planning, resources, finance, what actually happened).
+Q: [30 marks] ★★★ 'The main reason for the fall in German unemployment between 1933 and 1939 was rearmament.' Evaluate this view.
 H: List the causes of the fall: the world economy, public works, the Labour Service, rearmament, the way figures were counted.
 H: What would count as evidence that one cause mattered most?
-A: Indicative content. Rearmament: Mefo bills, military spending rising to about a fifth of output, conscription (1935), the armed forces and arms industry absorbing workers. Other causes: the upswing that began in 1932; public works (autobahn about 125,000 workers at the peak); the Labour Service; the exclusion of women and Jews; changes in the count. Level 5 ranks the causes and links them (rearmament created demand, which public works began).
+A: Indicative content. Rearmament: Mefo bills, military spending rising to about 16 per cent of output in 1938 and about 23 per cent in 1939, conscription (1935), the armed forces and arms industry absorbing workers. Other causes: the upswing that began in 1932; public works (autobahn about 125,000 workers at the peak); the Labour Service; the exclusion of women and Jews; changes in the count. Level 5 ranks the causes and links them (rearmament created demand, which public works began).
 :::
 
 :::try Stretch for A*

@@ -10,7 +10,7 @@ Mussolini did not want only to rule Italy; he wanted to remake Italians into obe
 :::
 
 :::exam Where this is examined
-Mussolini's Italy, 1919–41 is one of the three topics of the A Level **European option** (Paper 4). Paper 4 lasts 1 hour 45 minutes and is worth 60 marks: you answer **two essay questions, each [30]**, with the command words **Assess** or **Evaluate**. The specimen paper has nine questions in three sections, one on each topic of each option (FACTS.md), so study at least two of the three topics of your option.
+Mussolini's Italy, 1919–41 is one of the three topics of the A Level **European option** (Paper 4). Paper 4 lasts 1 hour 45 minutes and is worth 60 marks: you answer **two essay questions, each [30]**, with the command words **Assess** or **Evaluate**. The specimen paper has nine questions in three sections, one on each topic of each option, so study at least two of the three topics of your option.
 - Each [30] essay is marked in **Table A** (analysis and judgement, AO2, out of 15) and **Table B** (supporting knowledge, AO1, out of 15). A Level 5 answer needs valid, wide-ranging criteria, balance, a supported judgement and precise, carefully selected detail.
 - This chapter covers key question 1.4, *How far did Mussolini transform Italian society?* The specimen paper has a question on this key question about Fascist policies towards the young. Your essays may focus on women, youth, the Church, the mass organisations or opposition, or may ask you to compare them.
 :::
@@ -319,7 +319,7 @@ The most defensible overall verdict is that Fascism **changed the surface of Ita
 
 ## Worked examples: Paper 4 essays built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Table A (analysis and judgement, AO2) and Table B (supporting knowledge, AO1) are each out of 15.
+The levels below are the real Cambridge levels for 2027. Table A (analysis and judgement, AO2) and Table B (supporting knowledge, AO1) are each out of 15.
 
 :::eg Evaluate the view that the Lateran Treaties were Mussolini's greatest domestic success [30]
 **What the levels want.** *Table A (AO2).* Level 3 (7–9): some analysis, argument lacks balance. Level 4 (10–12): good understanding, valid criteria, supported judgement. Level 5 (13–15): consistently analytical, wide-ranging valid criteria, sustained balanced argument, clear supported judgement. *Table B (AO1).* Level 3 (7–9): adequate but descriptive in places; Level 4 (10–12): good range, mostly precise; Level 5 (13–15): carefully selected, fully focused, consistently precise.

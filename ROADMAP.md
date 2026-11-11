@@ -6,9 +6,8 @@
 - History (`hist`, Cambridge 9489, exams 2027–2029) replaced Psychology at the user's request (Nov 7); Psychology is
   now a summary chapter in Other Subjects (`other.psychology`). LEAD done (94 chapters, 46 packages, gold `hist.eu.france.1`).
   P1–P27 written (… Italy 1–4, Stalin 1–4, Hitler 1–4), P1–P23 reviewed (web fact check), no open fixes.
-  Next: Specialist **REVIEW P24, P25, P26, P27** (P27's Writer notes are in its STATUS `done` line, not packages/P27.md),
-  while Writers take P28 and P29. Guard on `hist` at the start.
-- Waiting for the weekly reset at 02:00 Nov 11 (Istanbul): weekly at 98% (gate 95%), 5-hour at 79% (reset 01:50).
+- Run of Nov 11 (10:45): REVIEW P24–P27 (Opus, preview 5111, user allowed), WRITE P28 and P29 (Sonnet) running.
+  Guard on `hist`.
 - Agents have web access: WebSearch/WebFetch are deferred tools, loaded with ToolSearch (line in the AGENT-RUN common
   block). P1–P3 were written before that, from memory.
 - After History: queue item 4, Reader pass on Mathematics, then Physics.

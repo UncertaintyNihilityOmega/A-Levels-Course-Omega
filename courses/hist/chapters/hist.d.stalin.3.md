@@ -10,7 +10,7 @@ Between 1928 and 1941 Stalin tried to turn a peasant country into an industrial 
 :::
 
 :::exam Where this is examined
-Stalin's Russia, 1924–41 is one of the three topics of the A Level **European option** (Paper 4). Paper 4 lasts 1 hour 45 minutes and is worth 60 marks: you answer **two essay questions, each [30]**, with the command words **Assess** or **Evaluate**. The specimen paper has nine questions in three sections, one on each topic of each option (FACTS.md), and one of the specimen questions is on Stalin's reasons for the Great Turn of 1928, so you should study at least two of the three topics of your option, and all three if you want a real choice.
+Stalin's Russia, 1924–41 is one of the three topics of the A Level **European option** (Paper 4). Paper 4 lasts 1 hour 45 minutes and is worth 60 marks: you answer **two essay questions, each [30]**, with the command words **Assess** or **Evaluate**. The specimen paper has nine questions in three sections, one on each topic of each option, and one of the specimen questions is on Stalin's reasons for the Great Turn of 1928, so you should study at least two of the three topics of your option, and all three if you want a real choice.
 - Each [30] essay is marked in two tables: **Table A** (analysis and judgement, AO2) out of 15 and **Table B** (supporting knowledge, AO1) out of 15. A Level 5 answer needs valid, wide-ranging criteria, a balanced argument, a supported judgement, and precise, carefully selected detail.
 - This chapter covers key question 2.3, *How successful were Stalin's economic policies?* An essay on it can ask about the reasons for the Great Turn, collectivisation and dekulakisation, the famine, the Five Year Plans and the projects, the Stakhanovite movement, or the living and working conditions of managers and workers. It can also ask you to compare them.
 :::
@@ -409,7 +409,7 @@ Use these to show that you know the debate, but your marks come from your own ar
 
 ## Worked examples: Paper 4 essays built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). A [30] essay gets one mark out of 15 for analysis and judgement (Table A) and one out of 15 for knowledge (Table B). Read the commentary as an examiner would.
+The levels below are the real Cambridge levels for 2027. A [30] essay gets one mark out of 15 for analysis and judgement (Table A) and one out of 15 for knowledge (Table B). Read the commentary as an examiner would.
 
 :::eg 'Collectivisation was a complete failure.' Evaluate this view. [30]
 **What the levels want.** *Table A (AO2).* Level 2 (4–6): some understanding, descriptive, criteria implicit. Level 3 (7–9): some analysis, but the argument lacks balance; weak judgement. Level 4 (10–12): good understanding, mostly analytical, valid criteria, a supported judgement. Level 5 (13–15): consistently analytical, wide-ranging valid criteria, a sustained balanced argument, a clear supported judgement. *Table B (AO1).* Level 3 (7–9): adequate but descriptive in places; Level 4 (10–12): a good range, mostly precise; Level 5 (13–15): carefully selected, fully focused, consistently precise.
@@ -538,7 +538,7 @@ A: Indicative content. Coercion: the Gulag, special settlers, the Belomor Canal,
 :::
 
 :::try Stretch for A*
-Q: [30 marks] ★★★ 'Stalin's economic policies from 1928 to 1941 were a success for the state but a failure for the people.' How far do you agree?
+Q: [30 marks] ★★★ 'Stalin's economic policies from 1928 to 1941 were a success for the state but a failure for the people.' Evaluate this view.
 H: List who is "the state" and who is "the people": party, army, industry, workers, peasants, prisoners.
 H: Find evidence that the people also gained (education, jobs, social mobility, welfare) and that the state also lost (the damage of the Terror, a weak farm sector).
 A: Support: the state obtained heavy industry, defence, control of grain and of the countryside; the people paid with a famine, deportations, forced labour, lower real wages and overcrowded housing. Challenge: social mobility and training for workers and young people (the Stakhanovites and the new managers), nurseries and welfare in the workplace, and the high priority given to education; the state also suffered from inefficiency, a weak agriculture and the destruction of managers in the Terror. A* judgement separates groups (peasants, prisoners, skilled workers, officials), does not treat "the people" as one, and decides which test is more important.
