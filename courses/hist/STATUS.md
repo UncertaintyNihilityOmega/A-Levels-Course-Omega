@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-11 · WRITE P47 · hist.f.eras (11,690 words; 4 eg, 19 try, 9 quiz; hist-timeline with 44 events in 4 lanes; one-axis SVG of 21 topic bars checked in Python) and hist.d.compare (11,168 words; 3 eg, 26 try, 9 quiz; regimes timeline SVG checked in Python). No new widgets. Checks ok, phone ok. Reviewer: facts to double-check and Overy/Kershaw-Lewin/Mommsen summaries are listed at the end of packages/P47.md.
+Last: 2026-11-11 · WRITE P32 · hist.d.usa74.1 13,485 words, hist.d.usa74.2 13,176 words; both pass check and phone; no new widgets (hist-timeline and hist-chart used, one hand SVG); reviewer notes at the end of packages/P32.md list the facts not verified online
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -36,8 +36,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P29: reviewed 2026-11-11
 - P30: reviewed 2026-11-11
 - P31: reviewed 2026-11-11
-- P32: writing 2026-11-11
-- P33: open
+- P32: written 2026-11-11
+- P33: writing 2026-11-11
 - P34: open
 - P35: open
 - P36: open
