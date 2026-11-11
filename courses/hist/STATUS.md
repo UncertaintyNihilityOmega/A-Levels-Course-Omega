@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-11 · REVIEW P32, P33, P34, P47 · 0 open items; fixed: hist-chart first point no longer on the y-axis labels (usa74.2 18 tick), soviet.1 Pact grid redrawn 340 wide for phones, soviet.2 GNP source line names Ofer and the CIA/JEC origin (data confirmed), Connections trimmed to 5 bullets in soviet.1-2, usa74.1 '113 proposals' softened, usa74.4 German NATO date, soviet.1 Beran; usa74.1 New Right SVG checked, no change; COURSE.md SVG width and source-line rule
+Last: 2026-11-11 · WRITE P35 · hist.d.soviet.3 (14,518 words) and hist.d.soviet.4 (16,641 words); both pass check and phone; no new widgets (hist-timeline used in each); reviewer notes at end of packages/P35.md (facts verified online vs from memory)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -39,8 +39,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P32: reviewed 2026-11-11
 - P33: reviewed 2026-11-11
 - P34: reviewed 2026-11-11
-- P35: writing 2026-11-11
-- P36: writing 2026-11-11
+- P35: written 2026-11-11
+- P36: written 2026-11-11
 - P37: open
 - P38: open
 - P39: open
