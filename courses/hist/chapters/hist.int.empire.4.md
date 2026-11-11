@@ -736,6 +736,16 @@ A: 1898: the war with Spain, an overseas empire, the Open Door, Hawaii; the new 
 > The USA therefore did not join the League of Nations.
 :::
 
+:::note Connections
+- [Gilded Age (1): why industry grew so fast](#hist.us.gilded.1): how the USA became the world's greatest industrial power, the economic strength behind everything in this chapter.
+- [Russia (3): the revolutions of 1917](#hist.eu.russia.3): the USA entered the war in April 1917, weeks after the Tsar's abdication; the same year changed both countries' place in the world.
+- [International relations, 1919–29 (1)](#hist.int.1919.1): Wilson's Fourteen Points and the Senate's rejection of the treaty show the limits of America's new world role.
+- [Post-war USA (4): foreign policy](#hist.d.usa45.4): the world role argued over from 1898 to 1919 became permanent with Truman's policy of containment after 1945.
+- [The big picture](#hist.f.eras): the USA's rise among the nations, industries and empires of 1850–1914.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the changing attitudes to overseas expansion: the closing of the frontier, Mahan and the new navy, rapid economic growth and the Panic of 1893.
 - [ ] I can explain the reasons for the Spanish–American War, including yellow journalism and the sinking of the Maine, and its impact.

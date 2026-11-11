@@ -769,6 +769,16 @@ A: Support for "revolution": the end of slavery without compensation and the 13t
 > The Bureau ended in 1872; the Compromise of 1877 ended the troops' presence.
 :::
 
+:::note Connections
+- [Russia (1): the challenges facing Tsarism](#hist.eu.russia.1): freedom without land: Russia's serfs, freed in 1861, paid heavy redemption payments and often had too little land, while America's freedpeople never got their "forty acres".
+- [France (2): how France became a republic](#hist.eu.france.2): who counts as a citizen? Set the 14th and 15th Amendments beside the French split of 1791 into active and passive citizens.
+- [Gilded Age (4): how successful the Progressives were](#hist.us.gilded.4): the Progressive Era reformed much but left segregation in place, and Wilson's administration extended it.
+- [Post-war USA (2): Eisenhower](#hist.d.usa45.2): the 14th Amendment's promise of equal protection was the ground of *Brown v. Board of Education* (1954), almost ninety years later.
+- [The big picture](#hist.f.eras): Reconstruction among the nations, industries and empires of 1850–1914.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the conflicting views of Radicals, Conservatives and Copperheads and the problems facing the United States in 1865.
 - [ ] I can explain the economic recovery and reintegration of the South.

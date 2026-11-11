@@ -624,6 +624,15 @@ A: Strengths: Stephens was the Confederate vice-president, so it was a leader sp
 > Anderson surrendered on 13 April 1861. Lee commanded the marines at Harpers Ferry in 1859, Beauregard led the Confederate forces and Pickens was South Carolina's governor.
 :::
 
+:::note Connections
+- [France (2): how France became a republic](#hist.eu.france.2): weigh causes the same way there: an underlying cause, an occasion and a trigger; compare its judgement on 1792 with this one on 1861.
+- [Origins of the First World War (1)](#hist.interp.ww1.1): Sumter and the call for volunteers turned secession into war; compare how the July Crisis turned a murder at Sarajevo into a general war in 1914.
+- [Civil War and Reconstruction (3)](#hist.us.civilwar.3): why the war that began at Sumter lasted four years.
+- [The big picture](#hist.f.eras): the coming of the Civil War among the nation-building conflicts of 1850–1914, such as German unification.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the growing strength of abolitionism, including the impact of *Uncle Tom's Cabin*, and the growth of support for secession.
 - [ ] I can explain John Brown's raid on Harpers Ferry and the reactions to it in the North and South.

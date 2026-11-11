@@ -625,6 +625,15 @@ A: Strengths: it was a permanent body of experts, examined the annual reports in
 > The ILO was tripartite. Its conventions had to be put before national parliaments but were not binding unless ratified.
 :::
 
+:::note Connections
+- [Gilded Age (4): how successful the Progressives were](#hist.us.gilded.4): the League was the plan of Woodrow Wilson, whose New Freedom at home is part of the Progressive story.
+- [International history, 1929–39 (2)](#hist.int.1929.2): the weaknesses found here, a Covenant without force and absent great powers, decided its failure over Manchuria and Abyssinia.
+- [Origins of the Cold War (1)](#hist.interp.coldwar.1): at Yalta in 1945 the Allies agreed on a new world body, the United Nations, to take the League's place.
+- [The big picture](#hist.f.eras): the League in the world war and its aftermath, 1914–29.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain why the League was created: Wilson's Fourteen Points, its inclusion in all the treaties, and its aims and structure.
 - [ ] I can explain the weaknesses of the League: restricted membership, leadership, voting processes and enforcement difficulties.

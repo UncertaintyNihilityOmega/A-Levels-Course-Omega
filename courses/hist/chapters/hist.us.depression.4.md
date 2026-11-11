@@ -648,6 +648,15 @@ A: Recession: showed that cuts in spending caused a slump, drove Roosevelt to Ke
 > It formed in 1937–38 out of the court-plan fight and the recession, and was strengthened by the 1938 midterms.
 :::
 
+:::note Connections
+- [International history, 1929–39 (4)](#hist.int.1929.4): the war that broke out in Europe in 1939 brought the defence spending and the draft that took up the slack in the American labour market by 1941.
+- [Gilded Age (4): how successful the Progressives were](#hist.us.gilded.4): the Second New Deal took on labour and welfare problems the Progressive Era had left unsolved.
+- [Post-war USA (1): Truman](#hist.d.usa45.1): Truman's Fair Deal tried to extend the New Deal after 1945, a topic of the A Level depth study.
+- [The big picture](#hist.f.eras): the New Deal between the Depression and the Second World War, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain Roosevelt's political skills, his use of patronage and how he held the New Deal coalition together, and why he won the election of 1936.
 - [ ] I can explain Roosevelt's motives for the legislation of 1935–37 and why there was a Second New Deal.

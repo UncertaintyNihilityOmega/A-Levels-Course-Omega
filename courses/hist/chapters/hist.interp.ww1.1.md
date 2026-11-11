@@ -525,6 +525,16 @@ A: Examples: 28 July (Kaiser's halt in Belgrade proposal; Vienna did not agree),
 > The alliances raised the stakes; the decisions were taken by ministers.
 :::
 
+:::note Connections
+- [Imperialism and world powers (2)](#hist.int.empire.2): the colonial rivalries, the Moroccan crises and the naval race told from the side of empire, for the AS International option.
+- [Germany (4): how unification was achieved](#hist.eu.germany.4): how the German Empire of 1871 was made, and how France lost Alsace-Lorraine to it.
+- [Russia (3): the revolutions of 1917](#hist.eu.russia.3): what the war did to one of the powers that chose it: within three years Tsarism had fallen.
+- [International relations, 1919–29 (1)](#hist.int.1919.1): how the victors tried to settle the war in 1919, and why so many were dissatisfied.
+- [The big picture](#hist.f.eras): 1914 as the hinge between the age of empires and the world war and its aftermath.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the tensions between the Great Powers, c.1890–1914: German rise and Weltpolitik, Anglo-German rivalry, Franco-German enmity, Austria-Hungary's fear of Serbia and Russia after 1905.
 - [ ] I can describe the alliance system and say which agreements were alliances and which were ententes.

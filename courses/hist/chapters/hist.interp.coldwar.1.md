@@ -595,6 +595,16 @@ A: The Long Telegram and the Novikov telegram were private reports; the Truman D
 > The Soviet test ended the American monopoly of atomic weapons; NATO was signed on 4 April and the Blockade ended on 12 May.
 :::
 
+:::note Connections
+- [Russia (4): how the Bolsheviks consolidated power](#hist.eu.russia.4): the Allied intervention of 1918 in the Civil War, which Soviet leaders remembered for decades.
+- [International history, 1929–39 (3): appeasement](#hist.int.1929.3): why Britain and France appeased Hitler and left the USSR out of Munich in 1938.
+- [Post-war USA (4): foreign policy](#hist.d.usa45.4): the Truman Doctrine, Marshall Aid and containment from Washington's side, for the Paper 4 American option.
+- [The Soviet Empire in Eastern Europe (1)](#hist.d.soviet.1): what Soviet control of the satellite states became after 1949, for the Paper 4 International option.
+- [The big picture](#hist.f.eras): the Cold War and decolonisation, 1945–91.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the tensions in the wartime alliance: the second front, Poland, the Warsaw Uprising and the Percentages Agreement.
 - [ ] I can explain what Yalta and Potsdam decided and where the decisions were unclear.

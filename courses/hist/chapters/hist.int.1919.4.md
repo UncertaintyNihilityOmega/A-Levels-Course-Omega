@@ -633,6 +633,15 @@ A: The text shows what was publicly promised: condemnation of recourse to war an
 > They discussed an early evacuation of the Rhineland, but nothing came of it.
 :::
 
+:::note Connections
+- [Crash, Depression and New Deal (1)](#hist.us.depression.1): the Dawes loans depended on the American boom; this chapter explains why that boom ended in the Crash of 1929.
+- [Hitler's Germany (1): how Hitler gained control](#hist.d.hitler.1): in the calmer Stresemann years the Nazis won only 2.6 per cent of the vote (1928); the next chapter of their story begins with the Depression.
+- [International history, 1929–39 (1)](#hist.int.1929.1): how the Depression undid the improvements of 1924–29.
+- [The big picture](#hist.f.eras): the hopeful late 1920s in the world war and its aftermath, 1914–29.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the proposals of the Dawes Plan and its effect on international relations.
 - [ ] I can explain the role of Stresemann in German recovery and the debate about his aims.

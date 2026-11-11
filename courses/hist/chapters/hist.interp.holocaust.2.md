@@ -630,6 +630,16 @@ A: M (Hitler's intention): the conference was the organising of a plan the leade
 > The mark scheme credits labels only when the extract as a whole supports them.
 :::
 
+:::note Connections
+- [Hitler's Germany (2): how effectively the Nazis governed](#hist.d.hitler.2): the "polycracy" and Kershaw's idea of "working towards the Führer", the structuralist case seen from the Paper 4 side.
+- [Origins of the First World War (2): the historians' debate](#hist.interp.ww1.2): another debate on intention against circumstance, where contingency is weighed against motive.
+- [Origins of the Cold War (2): the historians' debate](#hist.interp.coldwar.2): a third Paper 3 debate whose schools were shaped by the time and place of writing.
+- [Dictatorships compared](#hist.d.compare): how Hitler's regime compares with Mussolini's and Stalin's.
+- [The big picture](#hist.f.eras): the Holocaust in its wider setting of dictatorship and world war after 1929.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain how far the Holocaust was a consequence of racist ideas that existed before the Nazis, with Goldhagen's thesis and the criticisms of it.
 - [ ] I can explain intentionalism and the role of Hitler: its evidence (Dawidowicz, Jäckel, Fleming) and its limits.

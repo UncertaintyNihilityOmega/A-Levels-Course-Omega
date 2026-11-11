@@ -629,6 +629,15 @@ A: Strengths: tens of thousands written across all orders and regions; they reco
 > Doubling gave the Third Estate as many deputies as the other two orders together, but without voting by head it changed nothing, which caused the deadlock of May–June 1789.
 :::
 
+:::note Connections
+- [Germany (1): why revolution came in 1848](#hist.eu.germany.1): the ideas declared in 1789, the rights of man and the sovereign nation, became the liberal and nationalist ideas of 1848, and the German revolutions began after a new revolution in Paris.
+- [Russia (3): the revolutions of 1917](#hist.eu.russia.3): compare two old monarchies brought down by the strain of war and by hunger for bread, in 1789 and in 1917.
+- [How historians disagree](#hist.interp.skills): Lefebvre's Marxist reading of 1789 and the revisionist reply in this chapter are a first taste of reading interpretations, the skill of A Level Paper 3.
+- [The big picture](#hist.f.eras): the American Revolution and the Enlightenment, which pressed on France before 1789, set in their wider world.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain how France was governed as an absolute monarchy, including the roles of ministers, intendants and the parlements.
 - [ ] I can describe the Estate system and explain the discontent of the Third Estate.

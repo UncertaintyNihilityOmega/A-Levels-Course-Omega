@@ -501,6 +501,16 @@ A: L (traditionalist): an act of generosity and defence, and Stalin's refusal wa
 > The new Soviet sources are the mark of the New Cold War history, though not every such writer blames Stalin.
 :::
 
+:::note Connections
+- [Stalin's Russia (2): how effectively Stalin governed](#hist.d.stalin.2): the Stalin of the Terror and the Purges, on whom the "great man" explanation of the Cold War draws.
+- [The USA, 1974–93 (4): relations with the USSR](#hist.d.usa74.4): how the Cold War ended, which opened the Soviet archives after 1991.
+- [Origins of the First World War (2): the historians' debate](#hist.interp.ww1.2): another debate with a "revisionist" school, though there the word means 1920s historians who rejected the verdict of Versailles.
+- [Post-war USA (4): foreign policy](#hist.d.usa45.4): the American decisions of 1945–61 that traditionalists defend and revisionists criticise.
+- [The big picture](#hist.f.eras): the Cold War and decolonisation, 1945–91.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the three answers to whether East–West tensions were bound to resurface in 1945, and what "inherent tensions" means.
 - [ ] I can explain how the personalities of Stalin, Roosevelt, Truman and Churchill are used in the debate.

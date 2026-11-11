@@ -510,6 +510,16 @@ A: F (Germany): a response to Austria's declaration and to Germany's pledge; the
 > Revisionists of the 1920s (Fay, Barnes) revised the verdict; Fischer's thesis is better called anti-revisionist.
 :::
 
+:::note Connections
+- [International relations, 1919–29 (1)](#hist.int.1919.1): Article 231 and reparations from the side of the peacemakers, and how the defeated reacted.
+- [The Holocaust (2): the historians' debate](#hist.interp.holocaust.2): the same question of intention against circumstance, in another Paper 3 debate.
+- [Origins of the Cold War (2): the historians' debate](#hist.interp.coldwar.2): schools shaped again by the time and place of writing; note that "revisionist" means something different in each debate.
+- [Imperialism and world powers (2)](#hist.int.empire.2): the pre-war *Weltpolitik* that Fischer linked to Germany's war aims, seen through the colonial crises.
+- [The big picture](#hist.f.eras): the First World War as the hinge of the course's eras.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain how far the tensions before 1914 made war likely, and what long-term and short-term causes mean.
 - [ ] I can explain the decisions of key individuals and how historians use them.

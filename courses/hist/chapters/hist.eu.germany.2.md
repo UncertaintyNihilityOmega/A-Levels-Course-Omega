@@ -579,6 +579,16 @@ A: Strengths of private letters: not meant to persuade; show his principles (div
 > He represented Prussia at the Diet from 1851 to 1859. He became prime minister only in 1862.
 :::
 
+:::note Connections
+- [France (2): how France became a republic](#hist.eu.france.2): both assemblies wrote a constitution and a list of rights; ask why the French one lasted long enough to apply its reforms and the Frankfurt Parliament did not.
+- [Germany (3): Bismarck's aims](#hist.eu.germany.3): Bismarck's "iron and blood" speech of 1862 drew his lesson from 1848: unity would come through power, not through parliaments.
+- [Russia (2): the 1905 Revolution](#hist.eu.russia.2): like the German rulers after 1848, the Tsar survived 1905 by conceding a constitution and a parliament, then taking back control.
+- [Civil War and Reconstruction (1)](#hist.us.civilwar.1): in the same year, 1848, the USA won vast lands from Mexico and began the quarrel over slavery in them that led to civil war.
+- [The big picture](#hist.f.eras): the revolutions of 1848 across Europe, and why historians end the age of revolutions there.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain how revolution spread through the German states in March 1848, including the fall of Metternich and revolution in Prussia.
 - [ ] I can explain the role of Frederick William IV in 1848–49.

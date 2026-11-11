@@ -595,6 +595,15 @@ A: Politics: Roosevelt's landslide; the Democratic majority; demand for regulati
 > Southern whites and urban Catholics were already Democratic, and unions joined after 1935. Arthur Mitchell, a Black Democrat, was elected in Chicago in 1934.
 :::
 
+:::note Connections
+- [Hitler's Germany (1): how Hitler gained control](#hist.d.hitler.1): Germany in the same years: Brüning's deflation deepened the slump, and the elections of 1932 made the Nazis the largest party; set this beside Hoover's response and Roosevelt's victory.
+- [International history, 1929–39 (1)](#hist.int.1929.1): the Smoot–Hawley Tariff (1930) and the end of American lending carried the Depression abroad.
+- [Crash, Depression and New Deal (3)](#hist.us.depression.3): what Roosevelt did with the mandate the Depression gave him.
+- [The big picture](#hist.f.eras): the Depression worldwide in the years of depression and dictatorship, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the impact of the Great Crash: the drop in share values, the crisis of confidence, and the bankruptcy of banks, insurance companies and individuals.
 - [ ] I can explain why the Crash led to a demand for greater regulation.

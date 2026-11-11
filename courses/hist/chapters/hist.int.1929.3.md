@@ -657,6 +657,15 @@ A: Support: the guarantee reversed the refusal to commit Britain in eastern Euro
 > The wording was about Polish independence, not Poland's territory, which left room for talks over Danzig.
 :::
 
+:::note Connections
+- [International relations, 1919–29 (1)](#hist.int.1919.1): the belief that Versailles had been too harsh, one root of appeasement, goes back to the reactions to the treaty in 1919–20.
+- [Origins of the Cold War (1)](#hist.interp.coldwar.1): the USSR was not invited to Munich in 1938, and the lesson Stalin drew fed the mistrust inside the wartime alliance.
+- [Hitler's Germany (3): Nazi economic policies](#hist.d.hitler.3): German rearmament, which British rearmament answered, seen from inside the Nazi economy.
+- [The big picture](#hist.f.eras): appeasement in the years of depression, dictatorship and the road to war, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the impact of the Depression, the Ten-Year Rule, the Oxford debate and the Peace Ballot on British policy.
 - [ ] I can explain how fear of communism and a view of fascism as a bulwark shaped British attitudes.

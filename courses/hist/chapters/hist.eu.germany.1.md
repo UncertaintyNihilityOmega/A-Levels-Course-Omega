@@ -645,6 +645,15 @@ A: Strengths: both capture themes that are confirmed elsewhere (the weavers' rev
 > Poor harvests and the potato blight raised food prices, which cut demand and employment, and the 1847 credit crisis made it worse.
 :::
 
+:::note Connections
+- [France (4): Napoleon Bonaparte](#hist.eu.france.4): Napoleon's conquests destroyed the Holy Roman Empire, the starting point of this chapter.
+- [France (1): the causes of 1789](#hist.eu.france.1): the rights of man and the sovereign nation, first declared in 1789, are the roots of the liberal and nationalist ideas met here.
+- [Gilded Age (1): why industry grew so fast](#hist.us.gilded.1): the Zollverein and the railways began a national market in the German states; after 1870 railroads and a national market drove American industry, a useful comparison.
+- [The big picture](#hist.f.eras): 1848 was a year of revolution across Europe, in France, Austria and Italy as well as the German states.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the formation of the German Confederation at the Congress of Vienna and the strengths and weaknesses of the Confederation.
 - [ ] I can explain Metternich's system and why the Carlsbad Decrees were issued.

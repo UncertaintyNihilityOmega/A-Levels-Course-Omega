@@ -675,6 +675,16 @@ A: Strengths: an expert with inside knowledge of the Treasury and the reparation
 > Article 80 made Austrian independence inalienable except with the consent of the League Council. Article 231 is war guilt, Article 160 the army limit and Article 10 the Covenant's guarantee.
 :::
 
+:::note Connections
+- [Germany (4): how unification was achieved](#hist.eu.germany.4): the German Empire was proclaimed in the Hall of Mirrors in 1871 and took Alsace-Lorraine; in 1919 Germany signed its treaty in the same hall and gave Alsace-Lorraine back.
+- [Russia (4): how the Bolsheviks consolidated power](#hist.eu.russia.4): Brest-Litovsk and the Civil War help explain why Russia, the Allies' partner until 1917, was absent from Paris.
+- [Origins of the First World War (2)](#hist.interp.ww1.2): Article 231 started the war-guilt debate that historians are still having, a topic of A Level Paper 3.
+- [Hitler's Germany (1): how Hitler gained control](#hist.d.hitler.1): hatred of the treaty was one of the grievances the Nazis used on their way to power.
+- [The big picture](#hist.f.eras): the peace settlements in the world war and its aftermath, 1914–29.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the aims of the Big Three (Wilson, Clemenceau and Lloyd George) and the part played by Italy and Japan.
 - [ ] I can explain which powers were represented at the Paris Peace Conference and which were excluded, and why this mattered.

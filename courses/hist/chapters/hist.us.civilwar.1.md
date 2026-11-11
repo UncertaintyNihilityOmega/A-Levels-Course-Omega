@@ -679,6 +679,15 @@ A: Randall's side: Douglas's Kansas–Nebraska Act was an unforced error that re
 > The Republicans combined Free Soilers, Northern ("Conscience") Whigs and Democrats who opposed Kansas–Nebraska. Copperheads were Northern Democrats during the war.
 :::
 
+:::note Connections
+- [Germany (1): why revolution came in 1848](#hist.eu.germany.1): another union of states argued over tariffs in the same decades; compare the Nullification crisis, which strained the Union, with the Zollverein, which bound the German states together through trade.
+- [Germany (2): the 1848–49 revolutions](#hist.eu.germany.2): 1848, the year the USA gained vast lands from Mexico, was the year of revolution across the German states.
+- [Gilded Age (1): why industry grew so fast](#hist.us.gilded.1): the industrial North described here became, within a generation after the war, the world's greatest industrial power.
+- [The big picture](#hist.f.eras): the USA's sectional crisis among the nations, industries and empires of 1850–1914.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the differences between the Northern and Southern economies and societies, including industry against agriculture and the part of slavery.
 - [ ] I can explain the tariff issues of 1828–33 and say why the tariff was not the main cause of the crisis of the 1850s.

@@ -663,6 +663,15 @@ A: Support: large meat packers wanted federal inspection, because European buyer
 > It was formed in August 1912, after Roosevelt lost the Republican nomination to Taft. The Meat Inspection Act of 1906 was passed by Republicans, and Debs ran as a Socialist.
 :::
 
+:::note Connections
+- [Crash, Depression and New Deal (3)](#hist.us.depression.3): the New Deal took federal regulation of banking and business much further than the Progressives had.
+- [International relations, 1919–29 (2): the League](#hist.int.1919.2): the League of Nations was the plan of Woodrow Wilson, the Progressive President of the New Freedom.
+- [Russia (2): the 1905 Revolution](#hist.eu.russia.2): in the same years the strains of fast industrial growth helped bring strikes and revolution in Russia; compare why the USA got a reform movement instead.
+- [The big picture](#hist.f.eras): the Progressive Era among the nations, industries and empires of 1850–1914.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the work of the muckrakers and its importance to the growth of reform.
 - [ ] I can explain the role of the temperance movement in the Progressive Movement.

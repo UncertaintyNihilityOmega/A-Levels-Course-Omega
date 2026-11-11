@@ -739,6 +739,16 @@ A: Relations: the Anglo-Japanese Alliance; Russia's turn to Europe; the Taft–K
 > The South Seas Mandate came from the Paris settlement; the Security Council did not exist until 1945.
 :::
 
+:::note Connections
+- [Russia (2): the 1905 Revolution](#hist.eu.russia.2): the same war seen from St Petersburg: defeat by Japan helped set off the 1905 Revolution.
+- [Germany (4): how unification was achieved](#hist.eu.germany.4): Japan modernised in the years Germany unified, and its leaders took Prussia's constitution and Germany's army as models.
+- [International relations, 1919–29 (1)](#hist.int.1919.1): at Paris in 1919 Japan kept Germany's Pacific islands and Shandong but saw its racial equality amendment fail.
+- [International history, 1929–39 (2)](#hist.int.1929.2): the Kwantung Army that seized Manchuria in 1931 guarded the railway zone Japan had won from Russia in 1905.
+- [The big picture](#hist.f.eras): Japan's rise among the nations, industries and empires of 1850–1914.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain Japan's relations with the western powers in the nineteenth century: Commodore Perry's mission and the unequal treaties.
 - [ ] I can explain the reasons for rapid modernisation: the Meiji Restoration, industrialisation, the adoption of western technology and education.

@@ -573,6 +573,16 @@ A: Strengths: written by the Commissar for War, who built the army and went to t
 > Lenin died on 21 January 1924 after a series of strokes. 30 December 1922 was the formation of the USSR.
 :::
 
+:::note Connections
+- [France (3): the Terror and the Directory](#hist.eu.france.3): compare the Cheka and the Red Terror with the Committee of Public Safety and the Terror of 1793–94.
+- [Origins of the Cold War (1)](#hist.interp.coldwar.1): Britain, France, the USA and Japan sent troops to Russia in 1918, and Soviet leaders remembered the intervention for decades as proof of capitalist hostility.
+- [International relations, 1919–29 (3)](#hist.int.1919.3): at Rapallo in 1922 the Bolshevik state, having won its Civil War, came to terms with the other outcast of Europe, Germany.
+- [Stalin's Russia (1): how Stalin gained control](#hist.d.stalin.1): Lenin's illness and death in 1924 opened the struggle for power that this chapter's story leads into.
+- [The big picture](#hist.f.eras): the Russian Civil War as part of the world war and its aftermath, 1914–29.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain Bolshevik policies after October 1917: Sovnarkom and the decrees on rights, workers' control, peace and land, and the Treaty of Brest-Litovsk.
 - [ ] I can explain how the Bolsheviks established a dictatorship: the Cheka and the closure of the Constituent Assembly.

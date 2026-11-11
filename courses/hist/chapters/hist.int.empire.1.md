@@ -628,6 +628,15 @@ A: Strengths of critics' evidence: eyewitnesses, photographs, official reports (
 > Hobson in 1902 (and Lenin in 1917). Robinson and Gallagher stressed strategy.
 :::
 
+:::note Connections
+- [Gilded Age (2): the consequences of growth](#hist.us.gilded.2): the same long depression of falling prices brought the Panics of 1873 and 1893 to the USA.
+- [The Holocaust (1)](#hist.interp.holocaust.1): the racial ideas used to justify conquest in Africa belong to the same family of Social Darwinist thinking that Nazi antisemitism drew on.
+- [End of minority rule (4): Zimbabwe](#hist.d.safrica.4): the British South Africa Company's conquest of the Ndebele created the colony of Rhodesia, whose white minority rule lasted until 1980, a topic of the A Level depth study.
+- [The big picture](#hist.f.eras): the Scramble for Africa among the nations, industries and empires of 1850–1914, and the end of empire after 1945.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the economic, religious and cultural, and national and strategic motives for the Scramble for Africa, and weigh them for different powers.
 - [ ] I can describe how European rule was set up, including direct and indirect rule and the roles of treaties and chartered companies.

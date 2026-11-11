@@ -675,6 +675,15 @@ A: Divisions: the Feuillant–Jacobin split (July 1791); Girondins and the king'
 > The Convention met on 20 September and voted the next day to abolish the monarchy; documents were dated Year I from 22 September. 10 August is the storming of the Tuileries.
 :::
 
+:::note Connections
+- [Germany (2): the Frankfurt Parliament](#hist.eu.germany.2): like the Constituent Assembly, the Frankfurt Parliament wrote a constitution and a list of rights; ask why the French assembly lasted long enough to apply its reforms and the German one did not.
+- [Russia (3): the revolutions of 1917](#hist.eu.russia.3): in 1792 and again in 1917 a war that was going badly gave the radicals of the capital their chance and swept away a moderate settlement within months.
+- [Civil War and Reconstruction (4)](#hist.us.civilwar.4): who counts as a citizen? Set the 1791 split into active and passive citizens beside the 14th and 15th Amendments, which promised equal citizenship and the vote to Black men in the USA.
+- [The big picture](#hist.f.eras): France's revolution inside the wider age of revolutions, 1774–1849.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the aims of the Jacobins, the Feuillants and the Girondins, and why the counter-revolutionary groups failed.
 - [ ] I can explain the financial reforms of the Constituent Assembly, including the assignats and the new taxes.

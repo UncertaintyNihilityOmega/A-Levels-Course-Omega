@@ -632,6 +632,15 @@ A: Strengths: the only census of the Tsarist era, covering the whole empire, col
 > The census counted 16.8 million town-dwellers in 125.6 million people, 13.4 per cent: Russia was still overwhelmingly a peasant society.
 :::
 
+:::note Connections
+- [Gilded Age (1): why industry grew so fast](#hist.us.gilded.1): in the same years the USA industrialised through private firms and light regulation, while in Russia Bunge, Vyshnegradsky and Witte drove industry from the Finance Ministry.
+- [Stalin's Russia (3): economic policies](#hist.d.stalin.3): forced industrialisation from above returned on a far larger scale in Stalin's Five-Year Plans, a topic of the A Level depth study.
+- [The Holocaust (1)](#hist.interp.holocaust.1): the pogroms after 1881 and the May Laws are part of the European antisemitism with which the Paper 3 Holocaust topic begins.
+- [The big picture](#hist.f.eras): Tsarist Russia among the nations, industries and empires of 1850–1914.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain how Russia was ruled, including the role of the Tsar, the State Council, the ministries, the army and the Church.
 - [ ] I can describe Alexander III's policies of reform and repression, including Russification, and explain why he chose them.

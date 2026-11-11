@@ -555,6 +555,15 @@ A: Restraint: Beck's warnings and resignation (August 1938) and the plot of Hald
 > Hugh Trevor-Roper replied in 1961 that Hitler's ideas and aims, as set out in *Mein Kampf*, mattered more.
 :::
 
+:::note Connections
+- [The Holocaust (1)](#hist.interp.holocaust.1): the invasion of Poland in 1939 opened the stage of Nazi persecution that ended in mass murder.
+- [Origins of the Cold War (1)](#hist.interp.coldwar.1): the Nazi–Soviet Pact and its aftermath are part of the background to the breakdown of the wartime alliance.
+- [Origins of the First World War (1)](#hist.interp.ww1.1): compare the two outbreaks: in 1939 one leader's aims are the main cause, while historians of 1914 still argue how far any government planned war.
+- [The big picture](#hist.f.eras): 1939 at the end of the years of depression, dictatorship and the road to war, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can describe Hitler's underlying aims in foreign policy, and the Hossbach Memorandum as evidence of them.
 - [ ] I can explain the impact of rearmament, the Naval Agreement, the Rhineland, the Anschluss, the Sudetenland and Czechoslovakia on the balance of power.

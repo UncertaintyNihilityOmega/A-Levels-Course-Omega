@@ -629,6 +629,15 @@ A: The 18th: the Lever Act, anti-German feeling and the patriotic need for grain
 > The Commission, chaired by Liberty Hyde Bailey, led to action such as the Smith–Lever Act (1914). It did not end tenancy, which rose.
 :::
 
+:::note Connections
+- [Crash, Depression and New Deal (4)](#hist.us.depression.4): the Wagner Act and Social Security (1935) took the federal government into labour rights and welfare, further than any Progressive law had gone.
+- [International relations, 1919–29 (1)](#hist.int.1919.1): Wilson took his ideas to Paris in 1919, and the Senate's rejection of the treaty weakened the whole settlement.
+- [Civil War and Reconstruction (4)](#hist.us.civilwar.4): the segregation that Progressive reform left in place, and Wilson extended, was the gap Reconstruction had left open.
+- [The big picture](#hist.f.eras): the Progressive Era among the nations, industries and empires of 1850–1914, and the war that followed.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the changing role of the presidency under Roosevelt, Taft and Wilson, and the increasing intervention of the Federal Government in social and economic affairs.
 - [ ] I can describe the main policies of Theodore Roosevelt (the Square Deal), Taft and Wilson (the New Freedom) and compare their success.

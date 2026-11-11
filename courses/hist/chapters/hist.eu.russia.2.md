@@ -612,6 +612,15 @@ A: Strengths: Witte was a leading participant, close to the Tsar and the decisio
 > The Lena massacre revived the strike movement. Stolypin was shot in Kiev in 1911.
 :::
 
+:::note Connections
+- [Imperialism and world powers (3): Japan](#hist.int.empire.3): the same war seen from Tokyo: Japan's victory in 1904–05 made it a world power and helped set off the 1905 Revolution here.
+- [Germany (2): the 1848–49 revolutions](#hist.eu.germany.2): compare how the German rulers survived 1848 by concessions and then took back control, as the Tsar did after the October Manifesto.
+- [Origins of the First World War (1)](#hist.interp.ww1.1): many Russian ministers thought a second humiliation after the Bosnian crisis of 1908–09 would be intolerable, which shaped Russia's choices in July 1914.
+- [The big picture](#hist.f.eras): Russia's crisis among the nations, industries and empires of 1850–1914.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the discontent with Nicholas II's regime, including resentment at the lack of political reform.
 - [ ] I can describe the SRs, the Social Democrats and the liberals, and their aims.

@@ -697,6 +697,15 @@ A: Support: the Directory ended paper money, cut the debt and began a tax-collec
 > It was a coup by three Directors against the royalists, using troops under Augereau. Bonaparte came to power in November 1799.
 :::
 
+:::note Connections
+- [France (4): Napoleon Bonaparte](#hist.eu.france.4): the Directory's reliance on the army ended as this chapter's judgement suggests, with a general taking power at Brumaire in 1799.
+- [Russia (4): how the Bolsheviks consolidated power](#hist.eu.russia.4): compare the Cheka and the Red Terror of 1918 with the Committee of Public Safety: both justified terror by war and counter-revolution.
+- [Stalin's Russia (2): the Terror and the Purges](#hist.d.stalin.2): a revolution turning terror on its own leaders, as in 1794, happened again in the USSR of the 1930s, a topic of the A Level depth study.
+- [The big picture](#hist.f.eras): the French wars and the Terror in the wider age of revolutions, 1774–1849.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the problems facing France after the execution of Louis XVI: the influence of the sans-culottes, disagreement within the Convention and the effects of war in 1793.
 - [ ] I can explain the Constitution of 1793 and the powers and methods of the Committee of Public Safety.

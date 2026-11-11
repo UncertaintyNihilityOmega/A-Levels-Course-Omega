@@ -604,6 +604,16 @@ A: Support: Hitler accepted the MacDonald plan in principle in May 1933 and left
 > Dimitrov's report ended the "social fascism" line of 1928–34 and called for a People's Front.
 :::
 
+:::note Connections
+- [Crash, Depression and New Deal (1)](#hist.us.depression.1): where the Depression came from: the Crash and the weaknesses of the American boom.
+- [Hitler's Germany (1): how Hitler gained control](#hist.d.hitler.1): the Depression in Germany seen from the inside, and how it carried Hitler to power.
+- [Russia (4): how the Bolsheviks consolidated power](#hist.eu.russia.4): the fear of communism that shaped the democracies' policies in the 1930s goes back to the Bolshevik revolution and the Civil War.
+- [Dictatorships compared](#hist.d.compare): Mussolini's Italy, Stalin's USSR and Hitler's Germany side by side.
+- [The big picture](#hist.f.eras): extremism in the years of depression, dictatorship and the road to war, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the impact of the Great Depression on Germany: the collapse of democracy and the rise of the Nazis.
 - [ ] I can explain the collapse of democratic government and the rise of militarism in Japan.

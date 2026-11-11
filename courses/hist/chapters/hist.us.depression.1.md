@@ -625,6 +625,16 @@ A: Galbraith: speculation and a weak economy; explains the Crash and the timing 
 > More than 1,000 economists urged Hoover to veto it. Historians disagree about how large its effect was.
 :::
 
+:::note Connections
+- [International relations, 1919–29 (4)](#hist.int.1919.4): American loans after the Dawes Plan of 1924 carried Germany's recovery and its reparations; when the Crash came, the banks called them in.
+- [International history, 1929–39 (1)](#hist.int.1929.1): how the Depression that began here spread abroad and fed extremism.
+- [Hitler's Germany (1): how Hitler gained control](#hist.d.hitler.1): the Depression helped turn a party with 2.6 per cent of the vote in 1928 into the largest party in July 1932.
+- [Stalin's Russia (3): economic policies](#hist.d.stalin.3): while capitalist economies collapsed, the USSR pushed through its first Five-Year Plan, launched in 1928: compare the two systems in the same years.
+- [The big picture](#hist.f.eras): the Crash and its worldwide effects in the years of depression and dictatorship, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the economic policies of the Harding and Coolidge administrations (Mellon's tax cuts, the tariff, laissez-faire).
 - [ ] I can explain the causes of the post-war economic boom and the part played by mass production, the car and credit.

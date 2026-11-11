@@ -556,6 +556,15 @@ A: Support: it had no force and relied on unanimity; it depended on Britain and 
 > About 32,000 foreign volunteers fought for the Republic; the League had no peacekeepers in Spain.
 :::
 
+:::note Connections
+- [Imperialism and world powers (3): Japan](#hist.int.empire.3): how Japan won its foothold in Manchuria by defeating Russia in 1904–05.
+- [Mussolini's Italy (2)](#hist.d.italy.2): Abyssinia seen from Rome, as part of Mussolini's foreign policy from Corfu to the Axis.
+- [Crash, Depression and New Deal (1)](#hist.us.depression.1): the Depression that made Britain and France unwilling to pay for sanctions began with the American Crash.
+- [The big picture](#hist.f.eras): the League's failure in the years of depression, dictatorship and the road to war, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the League's response to the Manchurian crisis, 1931–33, and why it failed.
 - [ ] I can explain the League's response to the Abyssinian crisis, 1935–36, including sanctions and the Hoare–Laval plan, and why it failed.

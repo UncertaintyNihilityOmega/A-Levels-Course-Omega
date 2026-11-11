@@ -577,6 +577,15 @@ A: Strengths: the painter was present; accurate on the setting, the uniforms and
 > Austria was excluded (kleindeutsch), and Bavaria kept an army in peacetime and other rights.
 :::
 
+:::note Connections
+- [International relations, 1919–29 (1)](#hist.int.1919.1): the empire proclaimed in the Hall of Mirrors in 1871 signed its peace treaty in the same hall in 1919, and Alsace-Lorraine went back to France.
+- [Imperialism and world powers (3): Japan](#hist.int.empire.3): Japan modernised in the same years, and after 1870–71 its leaders took Prussia's constitution and Germany's army as models.
+- [Origins of the First World War (1)](#hist.interp.ww1.1): the new empire's place among the Great Powers is where the A Level debate on the road to 1914 begins.
+- [The big picture](#hist.f.eras): Germany's unification among the nations, industries and empires of 1850–1914.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the pressure from nationalists to complete unification and why Bismarck did not rush.
 - [ ] I can explain the problem of the southern states, including the Zollparlament and the lack of political unity.

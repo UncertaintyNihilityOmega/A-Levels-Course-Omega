@@ -649,6 +649,16 @@ A: Strengths: an eyewitness in Petrograd, with access to Smolny and the Congress
 > The Central Committee voted ten to two. Kamenev and Zinoviev argued that the party should wait for the Constituent Assembly and the Congress of Soviets.
 :::
 
+:::note Connections
+- [Origins of the First World War (1)](#hist.interp.ww1.1): the war that destroyed Tsarism began in the July Crisis of 1914, in which Russia's mobilisation was a key step.
+- [International relations, 1919–29 (1)](#hist.int.1919.1): the Bolshevik government was not invited to Paris in 1919, so the new map of eastern Europe was drawn without Russia.
+- [Imperialism and world powers (4): the USA](#hist.int.empire.4): in April 1917, weeks after the Tsar's abdication, the USA entered the same war.
+- [Stalin's Russia (1): how Stalin gained control](#hist.d.stalin.1): the party Lenin led in 1917 is the machine Stalin later mastered as General Secretary.
+- [The big picture](#hist.f.eras): 1917 as part of the world war and its aftermath, 1914–29.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the impact of defeats in the First World War on the Tsar's position, and the weaknesses of the government during the war.
 - [ ] I can explain the causes and effects of the February Revolution, including inflation, food shortages and land seizures.

@@ -727,6 +727,15 @@ A: Support: the Confederacy kept fighting for four years, with conscription and 
 > Before Atlanta, Lincoln expected to lose; after it, with Sheridan's victories in the Shenandoah, he won 212 of 233 electoral votes.
 :::
 
+:::note Connections
+- [Germany (3): Bismarck and the war of 1866](#hist.eu.germany.3): Prussia beat Austria in seven weeks in 1866 with the needle gun, the railways and Moltke's plans; ask why the American war took four years.
+- [Origins of the First World War (1)](#hist.interp.ww1.1): the war plans of 1914 counted on quick victory (the Schlieffen–Moltke plan aimed to beat France in about six weeks); the Civil War is an earlier case of resources and defence making a war last for years.
+- [Gilded Age (1): why industry grew so fast](#hist.us.gilded.1): the war itself helped Northern industry, one of the causes of rapid industrialisation after 1870.
+- [The big picture](#hist.f.eras): the Civil War among the wars that made nations in 1850–1914.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the Anaconda Plan and the offensive and defensive strategies of North and South.
 - [ ] I can assess the strengths and weaknesses of the military leadership of both sides, including Lee, Grant, Sherman and McClellan.

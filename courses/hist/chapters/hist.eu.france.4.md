@@ -682,6 +682,15 @@ A: Strengths: they show how the regime presented the war, what it wanted the pub
 > The allies entered Paris on 31 March 1814, and he abdicated on 6 April. Waterloo was in 1815.
 :::
 
+:::note Connections
+- [Germany (1): the German states after 1815](#hist.eu.germany.1): Napoleon destroyed the Holy Roman Empire, and the German Confederation of 1815 was the settlement that replaced it.
+- [Germany (4): how unification was achieved](#hist.eu.germany.4): his nephew Napoleon III fell in 1870 in the war that completed German unification.
+- [Mussolini's Italy (2)](#hist.d.italy.2): the question asked here, how far rule rested on force or on consent, is the one the A Level depth study asks of Mussolini, and of Stalin and Hitler too.
+- [The big picture](#hist.f.eras): Napoleon's Europe at the end of the age of revolutions, 1774–1849.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain Napoleon's military reputation and political ambitions before 1799.
 - [ ] I can explain the coup of 1799 and why it succeeded.

@@ -636,6 +636,15 @@ A: Support: the lines were built far in advance of traffic, with land grants and
 > The main industrial use of electric motors came after 1900; steam power and belts still drove most factories in the 1880s and 1890s.
 :::
 
+:::note Connections
+- [Imperialism and world powers (4): the USA](#hist.int.empire.4): the economic strength built in these years was the necessary cause of America's rise as a world power after 1890.
+- [Russia (1): the challenges facing Tsarism](#hist.eu.russia.1): in the same decades Russia industrialised from above, with the Finance Ministry building railways and setting tariffs; compare it with growth led by private firms here.
+- [Germany (1): why revolution came in 1848](#hist.eu.germany.1): the Zollverein and the railways made a national market in the German states decades earlier, a useful comparison with the national market here.
+- [The big picture](#hist.f.eras): American industry among the nations, industries and empires of 1850–1914.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain how the Civil War helped industrialisation: the laws of 1862–64, the opening of the West, railroad expansion and industrial expansion.
 - [ ] I can explain how population growth, the migration of emancipated slaves and mass immigration supplied workers and markets.

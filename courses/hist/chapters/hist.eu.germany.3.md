@@ -638,6 +638,15 @@ A: Strengths: the author was there; they give details no other source has; the a
 > The bill passed by a large majority; the Progressives split and the National Liberals formed.
 :::
 
+:::note Connections
+- [Germany (2): the 1848–49 revolutions](#hist.eu.germany.2): the humiliation of Olmütz in 1850 is the background to Bismarck's policy towards Austria.
+- [Civil War and Reconstruction (3)](#hist.us.civilwar.3): in the same years the USA fought four years to keep its union together; ask why Prussia beat Austria in seven weeks in 1866 (the needle gun, the railways, Moltke's plans).
+- [How historians disagree](#hist.interp.skills): the debate on Bismarck's aims, master plan or opportunism, is good practice for reading interpretations, the skill of A Level Paper 3.
+- [The big picture](#hist.f.eras): German unification among the other nation-building wars of 1850–1914.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the accession of Wilhelm I, the proposals for army reform, and the reaction of the liberals.
 - [ ] I can explain the formation of the German Progressive Party and the causes of the constitutional crisis.

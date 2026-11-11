@@ -575,6 +575,16 @@ A: Functionalist: the shift from killing men to killing women and children happe
 > The 2000 Irving case found that Irving had distorted the evidence.
 :::
 
+:::note Connections
+- [Russia (1): the challenges facing Tsarism](#hist.eu.russia.1): the pogroms after 1881 and the May Laws, part of the European antisemitism with which this chapter begins.
+- [Hitler's Germany (4): how far the Nazis transformed society](#hist.d.hitler.4): racial policy as part of the Nazi attempt to remake German society, for the Paper 4 European option.
+- [International history, 1929–39 (4)](#hist.int.1929.4): how and why the war that began with the invasion of Poland broke out in 1939.
+- [Imperialism and world powers (1): Africa](#hist.int.empire.1): racial ideas of the same Social Darwinist family were used to justify conquest in Africa.
+- [The big picture](#hist.f.eras): the Holocaust in its wider setting of dictatorship and world war after 1929.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the European and German background to Nazi antisemitism: religious hostility, racial antisemitism, Social Darwinism, eugenics, and the part played by the First World War and the Weimar years.
 - [ ] I can explain Nazi antisemitism and its sources in Hitler's ideas, the 25 points and *Mein Kampf*.

@@ -677,6 +677,15 @@ A: Support: the NRA was unpopular with business, labour and small firms and was 
 > They were the four justices who usually voted against New Deal laws; Hughes and Roberts held the balance.
 :::
 
+:::note Connections
+- [Hitler's Germany (3): Nazi economic policies](#hist.d.hitler.3): the Nazis also attacked unemployment in 1933 with public works and labour service; compare their methods and costs with the New Deal's.
+- [Gilded Age (4): how successful the Progressives were](#hist.us.gilded.4): the Federal Reserve (1913) and Progressive regulation were the base on which the New Deal's banking and business reforms were built.
+- [International history, 1929–39 (2)](#hist.int.1929.2): the same years abroad, when the League faced Manchuria and Abyssinia without the USA.
+- [The big picture](#hist.f.eras): the New Deal among the other answers to the Depression, democratic and dictatorial, in 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the growing banking crisis between January and March 1933 and how the new administration, the Brains Trust and the Democratic majority in Congress dealt with it.
 - [ ] I can describe the First Hundred Days, separating congressional legislation, executive actions and the new administrations (alphabet agencies).

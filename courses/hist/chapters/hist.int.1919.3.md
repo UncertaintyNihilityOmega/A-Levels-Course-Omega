@@ -694,6 +694,15 @@ A: The text (waiver of claims, resumption of relations, most-favoured-nation, co
 > The USA stayed out of the League but called the Washington Conference, backed the Dawes Plan and lent heavily to Germany.
 :::
 
+:::note Connections
+- [Mussolini's Italy (1): how Mussolini gained control](#hist.d.italy.1): the "mutilated victory" and Fiume fed the Fascist rise to power in 1922; Corfu (1923) was his first clash with the League.
+- [Hitler's Germany (1): how Hitler gained control](#hist.d.hitler.1): the hyperinflation and the Ruhr occupation of 1923 were the setting of Hitler's failed Beer Hall Putsch that November.
+- [Russia (4): how the Bolsheviks consolidated power](#hist.eu.russia.4): at Rapallo in 1922 Germany came to terms with the Bolshevik state that had just won its Civil War.
+- [The big picture](#hist.f.eras): the crises of 1919–23 in the world war and its aftermath, 1914–29.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the Fiume crisis (d'Annunzio, the Treaty of Rapallo of 1920, annexation in 1924) and why it mattered.
 - [ ] I can explain the Corfu crisis of 1923 and what it showed about the League and the Great Powers.

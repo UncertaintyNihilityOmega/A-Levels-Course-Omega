@@ -668,6 +668,15 @@ A: Robber baron: Gould's gold corner (1869) and watered railroad stock; the Cré
 > Eight anarchists were tried, four hanged; the Knights, though uninvolved, lost members rapidly.
 :::
 
+:::note Connections
+- [Imperialism and world powers (1): Africa](#hist.int.empire.1): the long depression of falling prices and fierce competition (1873 to the mid-1890s), which brought the Panics here, also pushed European powers to look for markets in Africa.
+- [Imperialism and world powers (4): the USA](#hist.int.empire.4): in the 1890s the search for markets abroad became one reason the USA turned outwards.
+- [Crash, Depression and New Deal (1)](#hist.us.depression.1): an unregulated boom and unequal wealth returned in the 1920s; compare the two booms and their busts.
+- [The big picture](#hist.f.eras): the costs of industrialisation among the nations, industries and empires of 1850–1914.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can describe the nature and extent of industrial growth and explain the reasons for, and the consequences of, the Panics of 1873 and 1893.
 - [ ] I can explain living and working conditions, housing and health in the industrial cities.

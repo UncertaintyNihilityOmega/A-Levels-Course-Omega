@@ -559,6 +559,16 @@ A: Strengths: written by a senior Foreign Office official for the Foreign Secret
 > Kennedy, in *The Rise of the Anglo-German Antagonism, 1860–1914* (1980). Hobson wrote in 1902 on imperialism's economic roots.
 :::
 
+:::note Connections
+- [Germany (4): how unification was achieved](#hist.eu.germany.4): how the German Empire of 1871 was made; its challenge to the balance of power is this chapter's deepest tension.
+- [Origins of the First World War (1)](#hist.interp.ww1.1): the Moroccan crises and the naval race appear again as causes in the A Level debate on 1914.
+- [Origins of the First World War (2)](#hist.interp.ww1.2): Fischer argued that Germany's war aims of 1914 continued pre-war *Weltpolitik*, the policy behind the colonial crises here.
+- [International relations, 1919–29 (1)](#hist.int.1919.1): in 1919 Germany lost its colonies, which were shared out among the victors as League mandates.
+- [The big picture](#hist.f.eras): imperial rivalry among the nations, industries and empires of 1850–1914.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain why the Berlin Conference was held, including the pressures on Bismarck and the intentions of the different powers.
 - [ ] I can explain the outcomes of the conference: effective occupation, recognition of Leopold's Congo claim, the end of slavery, and free trade and navigation.
