@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-11 · WRITE P30 · hist.d.usa61.1 (12,249 words) and hist.d.usa61.2 (11,903 words); both check and phone pass; no new widgets (hist-timeline and hist-chart used; laws table in Markdown); reviewer notes appended to packages/P30.md (troop 1969 figure, Mississippi registration, school desegregation date, bomb tonnage omitted)
+Last: 2026-11-11 · WRITE P31 · hist.d.usa61.3 (about 13,900 words) and hist.d.usa61.4 (about 13,500); no new widgets (hist-timeline and hist-chart used, probed clean); notes for the reviewer at the end of packages/P31.md: figures not re-checked online are listed there (Black elected officials, income ratio, Watts and 1968 riot counts)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -35,7 +35,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P28: written 2026-11-11
 - P29: written 2026-11-11
 - P30: written 2026-11-11
-- P31: writing 2026-11-11
+- P31: written 2026-11-11
 - P32: open
 - P33: open
 - P34: open
