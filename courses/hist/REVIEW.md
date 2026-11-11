@@ -136,3 +136,19 @@ Looked at: every hand SVG (shot light, dark, phone: holocaust and Cold War scale
 
 Open for a FIX Writer:
 - [x] hist.interp.coldwar.1 and hist.interp.coldwar.2: "about 13 billion dollars to sixteen European countries" (coldwar.1 Plan in action and the def box; coldwar.2 Level 5 answer): Marshall aid also went to western Germany (and Trieste), so write "to sixteen countries and western Germany" or "to western Europe", keeping the 13 billion.
+
+## REVIEW P28, P29, P30, P31 (2026-11-11, Specialist)
+All eight chapters (hist.d.usa45.1–4, hist.d.usa61.1–4) pass `check` and `phone`. Fixed in this review:
+- [x] hist.d.usa61.4: women's labour-force chart and text used 40.8 (1970) and 42.6 (1974), which are not the BLS series named; now 43.3 and 45.7 (annual averages of BLS LNU01300002, women 16+), in the chart, the text and an exam answer; checks updated.
+- [x] hist.d.usa61.3: Black/white family income ratio "about 54 (1960) to about 61 (1970), on one Census measure" replaced by the Census Bureau's own figures, about 51 per cent (1959) to about 61 per cent (1970) (P23-39), in three places; checks updated.
+- [x] hist.d.usa61.4: Watts arrests "about 4,000" now "between about 3,400 and about 4,000 (sources differ)"; Malcolm X: two of the three men convicted in 1966 were cleared in 2021 (added).
+- [x] hist.d.usa45.2: "ten years after Brown about 1 per cent" now dated to the 1963–64 school year in the eleven former Confederate states (1.18 per cent), so it no longer seems to contradict usa61.3's 2.25 per cent for autumn 1964 (two places).
+- [x] hist.d.usa45.3, hist.d.usa45.4: "(FACTS.md)" removed from student text (four places); five ★★★ questions in "How far …?" form (45.3 two, 45.4 two, 61.4 one) rewritten as "'…' Evaluate this view."
+- [x] hist.d.usa45.1: timeline date of the Hollywood hearings 20 October 1947 (the day they opened), not 23.
+- [x] COURSE.md: rule to look up every chart value at its named source and to give the latest verdict on a case.
+
+Confirmed (web, 2026-11-11): Black elected officials 1,469 (February 1970) and 3,503 (1975), Joint Center ("about 1,500 to about 3,500" kept); a quarter of a million new Black voters by the end of 1965, a third through federal examiners; Watts 34 dead, over 1,000 injured, about 14,000 Guardsmen; April 1968 riots in over 100 cities, about 39–43 dead, more than 13,000 federal troops in Washington; Daley's "terrorists"; Wallace's 1964 primaries (about 30 to 43 per cent) and 13.5 per cent with 46 electoral votes in 1968; desegregated schools 1.18 per cent (1963–64) and 2.25 per cent (autumn 1964). From the P28–P29 notes, checked against standard figures: 1948 returns and three-state margins (7,107; 17,865; 33,612), Humphrey plank 651½–582½, Hollywood Ten contempt 346–17, Southern Manifesto 19 + 82, Truman 22 per cent (February 1952), 1950 losses (28 House, 5 Senate), EO 9835 to EO 10241 (1951), Dulles "verge" (Life, 16 January 1956), Bradley's "wrong war" (May 1951), the 1952 platform's "negative, futile and immoral" containment; electoral votes 1952 and 1956; poverty series 1959–73; Vietnam year-end troop series; registration in three states (1965, 1967).
+
+Looked at: every hist-timeline (eight) and hist-chart (eight) in light and dark phone (shots) and in the preview; stepped the riot and labour-force charts and the table toggle by keyboard. Timeline dates checked by script against the chapters' text. Read in full: hist.d.usa61.3 (to the quiz) and the worked examples and practice of hist.d.usa45.1; the Black Power, identity politics and protest sections of hist.d.usa61.4; keys and quizzes of the rest. Sensitive topics (lynching, church bombing, Neshoba, Selma, My Lai, Kent State, riots) are factual, victims named, no graphic detail, no slurs. Depth: 10,900–16,400 words a chapter, every Paper 4 example built level by level with a full Level 5 answer.
+
+Open for a FIX Writer: none.

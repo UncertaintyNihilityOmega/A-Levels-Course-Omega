@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-11 · WRITE P31 · hist.d.usa61.3 (about 13,900 words) and hist.d.usa61.4 (about 13,500); no new widgets (hist-timeline and hist-chart used, probed clean); notes for the reviewer at the end of packages/P31.md: figures not re-checked online are listed there (Black elected officials, income ratio, Watts and 1968 riot counts)
+Last: 2026-11-11 · REVIEW P28, P29, P30, P31 · 0 open items; fixed: usa61.4 women's labour-force 1970/1974 (43.3, 45.7 BLS), Watts arrests range, Malcolm X 2021 exonerations; usa61.3 income ratio to Census 51 (1959) to 61 (1970); usa45.2 school 1 per cent dated 1963-64; FACTS.md named and five 'How far' questions removed (45.3, 45.4, 61.4); 45.1 timeline date; P31 memory figures web-checked (elected officials, riots, Wallace); COURSE.md rule on chart values
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -32,11 +32,11 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P25: reviewed 2026-11-11
 - P26: reviewed 2026-11-11
 - P27: reviewed 2026-11-11
-- P28: written 2026-11-11
-- P29: written 2026-11-11
-- P30: written 2026-11-11
-- P31: written 2026-11-11
-- P32: open
+- P28: reviewed 2026-11-11
+- P29: reviewed 2026-11-11
+- P30: reviewed 2026-11-11
+- P31: reviewed 2026-11-11
+- P32: writing 2026-11-11
 - P33: open
 - P34: open
 - P35: open
@@ -51,6 +51,6 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P44: open
 - P45: open
 - P46: open
-- P47: open
+- P47: writing 2026-11-11
 - READER: open
 - FINAL: open

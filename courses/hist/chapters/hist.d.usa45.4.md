@@ -10,7 +10,7 @@ In 1945 the United States was the strongest nation on earth and had no tradition
 :::
 
 :::exam Where this is examined
-Truman, Eisenhower and post-war USA, 1945–61 is one of the three topics of the A Level **American option** (Paper 4). Paper 4 lasts 1 hour 45 minutes and is worth 60 marks: you answer **two essay questions, each [30]**, with the command words **Assess** or **Evaluate**. The specimen paper has nine questions in three sections, one on each topic of each option (FACTS.md), so study at least two of the three topics of your option.
+Truman, Eisenhower and post-war USA, 1945–61 is one of the three topics of the A Level **American option** (Paper 4). Paper 4 lasts 1 hour 45 minutes and is worth 60 marks: you answer **two essay questions, each [30]**, with the command words **Assess** or **Evaluate**. The specimen paper has nine questions in three sections, one on each topic of each option, so study at least two of the three topics of your option.
 - Each [30] essay is marked in **Table A** (analysis and judgement, AO2, out of 15) and **Table B** (supporting knowledge, AO1, out of 15). A Level 5 answer needs valid, wide-ranging criteria, balance, a supported judgement and precise, carefully selected detail.
 - This chapter covers key question 4.4, *How different were the foreign policies of Truman and Eisenhower?* Questions may ask about one president's policy (the Truman Doctrine, Marshall Aid, Berlin, Korea, the New Look, Suez), about one region, or directly for a comparison. The same events appear in the Paper 3 Cold War topic, but there the question is why the Cold War began and what historians say; **here it is American policy and the comparison of the two presidents.**
 :::
@@ -350,7 +350,7 @@ The most defensible overall verdict is that **the strategic aim and the structur
 
 ## Worked examples: Paper 4 essays built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Table A (analysis and judgement, AO2) and Table B (supporting knowledge, AO1) are each out of 15.
+The levels below are the real Cambridge levels for 2027. Table A (analysis and judgement, AO2) and Table B (supporting knowledge, AO1) are each out of 15.
 
 :::eg 'Eisenhower's foreign policy was a continuation of Truman's.' Evaluate this view. [30]
 **What the levels want.** *Table A (AO2).* Level 3 (7–9): some analysis, argument lacks balance. Level 4 (10–12): good understanding, valid criteria, supported judgement. Level 5 (13–15): consistently analytical, wide-ranging valid criteria, sustained balanced argument, clear supported judgement. *Table B (AO1).* Level 3 (7–9): adequate but descriptive in places; Level 4 (10–12): good range, mostly precise; Level 5 (13–15): carefully selected, fully focused, consistently precise.
@@ -465,11 +465,11 @@ A: Indicative content. For Korea: it militarised containment (NSC-68, spending f
 :::
 
 :::try Stretch for A*
-Q: [30 marks] ★★★ 'Eisenhower and Truman differed more in what they said than in what they did.' How far do the years 1945–61 support this view?
+Q: [30 marks] ★★★ 'In foreign policy, Eisenhower and Truman differed more in what they said than in what they did.' Evaluate this view.
 H: Compare rhetoric and action: liberation, brinkmanship, containment.
 H: Think of cases where the action differed from the words in either direction.
 A: Support: "liberation" and Hungary; massive retaliation and the use of limited covert methods; the Truman Doctrine's universal language and the limited action actually taken (Greece and Turkey, not China); both presidents halted at a limit (the Yalu and Hungary). Challenge: the New Look really cut conventional forces; Eisenhower refused war in Vietnam, Suez and Hungary where Truman might have acted; summits; covert action in Iran and Guatemala was a real difference; Truman fought a war. A* judgement distinguishes rhetoric from action in each president and concludes, for example, that rhetoric overstated the difference in strategy while the real differences were in cost, method and range.
-Q: [30 marks] ★★★ Gaddis argues that Truman moved from asymmetric to symmetric containment and that Eisenhower returned to asymmetric. How far does the evidence of 1947–60 support this view?
+Q: [30 marks] ★★★ 'Truman moved from asymmetric to symmetric containment, and Eisenhower returned to asymmetric containment.' Evaluate this view with reference to the years 1947–60. (The argument is John Lewis Gaddis's.)
 H: Take 1947–49, 1950–53 and 1953–60 separately.
 H: Test "asymmetric" against cases such as Taiwan, Hungary and Lebanon.
 A: Support: before 1950 Truman was selective (Greece, Turkey, Western Europe, not China); NSC-68 and Korea were a general response; the New Look chose nuclear threat and covert action, and spending fell. Challenge: Eisenhower also spread commitments widely (SEATO, Baghdad Pact, the Eisenhower Doctrine, Lebanon); Truman's early policy had a global language; Leffler's emphasis on the balance of power across Eurasia; the continuity in commitments. A* judgement says that the framework fits the means well and the commitments badly, because both presidents expanded the number of places the USA defended.

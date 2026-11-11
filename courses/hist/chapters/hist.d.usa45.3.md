@@ -10,7 +10,7 @@ In 1945 many Americans feared that peace would bring back the Depression. Instea
 :::
 
 :::exam Where this is examined
-Truman, Eisenhower and post-war USA, 1945–61 is one of the three topics of the A Level **American option** (Paper 4). Paper 4 lasts 1 hour 45 minutes and is worth 60 marks: you answer **two essay questions, each [30]**, with the command words **Assess** or **Evaluate**. The specimen paper has nine questions in three sections, one on each topic of each option (FACTS.md), so study at least two of the three topics of your option.
+Truman, Eisenhower and post-war USA, 1945–61 is one of the three topics of the A Level **American option** (Paper 4). Paper 4 lasts 1 hour 45 minutes and is worth 60 marks: you answer **two essay questions, each [30]**, with the command words **Assess** or **Evaluate**. The specimen paper has nine questions in three sections, one on each topic of each option, so study at least two of the three topics of your option.
 - Each [30] essay is marked in **Table A** (analysis and judgement, AO2, out of 15) and **Table B** (supporting knowledge, AO1, out of 15). A Level 5 answer needs valid, wide-ranging criteria, balance, a supported judgement and precise, carefully selected detail.
 - This chapter covers key question 4.3, *How far were the years 1945–61 ones of economic and social change?* The specimen paper has a question on this key question; this chapter does not copy it, and its practice questions are original. Your essays may focus on consumerism, the suburbs, women, youth culture or poverty, or may ask you to compare them, or to judge the decade as a whole.
 :::
@@ -298,7 +298,7 @@ The most defensible overall verdict is that the 1950s saw **far-reaching economi
 
 ## Worked examples: Paper 4 essays built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Table A (analysis and judgement, AO2) and Table B (supporting knowledge, AO1) are each out of 15.
+The levels below are the real Cambridge levels for 2027. Table A (analysis and judgement, AO2) and Table B (supporting knowledge, AO1) are each out of 15.
 
 :::eg 'The 1950s were a decade of conformity rather than change.' Evaluate this view. [30]
 **What the levels want.** *Table A (AO2).* Level 3 (7–9): some analysis, argument lacks balance. Level 4 (10–12): good understanding, valid criteria, supported judgement. Level 5 (13–15): consistently analytical, wide-ranging valid criteria, sustained balanced argument, clear supported judgement. *Table B (AO1).* Level 3 (7–9): adequate but descriptive in places; Level 4 (10–12): good range, mostly precise; Level 5 (13–15): carefully selected, fully focused, consistently precise.
@@ -409,11 +409,11 @@ A: Indicative content. Economy: GNP, car and television ownership, credit, the s
 :::
 
 :::try Stretch for A*
-Q: [30 marks] ★★★ 'Affluence and conformity went together.' How far do the years 1945–61 support this view?
+Q: [30 marks] ★★★ 'In the years 1945–61 affluence and conformity went together.' Evaluate this view.
 H: Divide the evidence into what Americans owned and what they were free to think and do.
 H: Consider whether those who did not conform, such as the Beats, teenagers and the poor, were a challenge to the idea.
 A: Support: consumers' republic (Cohen); domestic containment (May); suburban sameness; the Red Scare; Packard's *Hidden Persuaders*; most teenagers conformed. Challenge: youth culture and rock and roll; the Beats; women in work; civil rights beginning; the poor and excluded (about 22 per cent in 1959); Galbraith's criticism of private wealth with public poverty; Meyerowitz's evidence of variety. A* judgement says that conformity was strongest where affluence was greatest, among white, middle-class suburbanites, and that the tensions inside that group (women's discontent, teenagers) and outside it (Black Americans, the poor) were the seeds of the 1960s.
-Q: [30 marks] ★★★ Lizabeth Cohen argues that after 1945 mass consumption was seen as the way to deliver both prosperity and a fairer society, though it was built on segregation. How far does the evidence of the years 1945–61 support the second half of this view?
+Q: [30 marks] ★★★ 'The consumer prosperity of the years 1945–61 was built on segregation.' Evaluate this view. (The historian Lizabeth Cohen argues that after 1945 mass consumption was seen as the way to deliver both prosperity and a fairer society, though it was built on segregation.)
 H: Take housing, shopping, education and jobs in turn.
 H: Compare the GI Bill's promise with how it worked for Black veterans.
 A: Support: Levitt's early leases and the FHA's redlining kept Black families out of the suburbs; *Shelley v. Kraemer* (1948) did not end the practice; the GI Bill's benefits were far smaller for Black veterans in the South (Katznelson); Black unemployment about twice the white rate and about 55 per cent poverty in 1959; inner-city decline. Challenge: the boom raised incomes for many Black families, and over a million moved north and west for better jobs; the Supreme Court acted against covenants; the moral pressure of the Cold War helped the case for civil rights (see [Post-war USA (2)](#hist.d.usa45.2)). A* judgement says that segregation by race and class was built into the way the new consumer society was financed and located, and that consumerism increased both the stake in equality and the sense of injustice.

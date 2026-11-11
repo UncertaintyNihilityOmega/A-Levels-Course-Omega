@@ -51,10 +51,11 @@ eq("Equal Pay Act to Title VII (years)", 1964 - 1963, 1)
 eq("NOW to the ERA passing (years)", 1972 - 1966, 6)
 
 # Women in the labour force (per cent, aged 16 and over): 1950, 1960, 1970, 1974
-lf = {1950: 33.9, 1960: 37.7, 1970: 40.8, 1974: 42.6}
+# BLS series LNU01300002, annual averages of the monthly values (review: 1970 and 1974 corrected)
+lf = {1950: 33.9, 1960: 37.7, 1970: 43.3, 1974: 45.7}
 eq("chart years in order", sorted(lf), list(lf))
-eq("rise 1960-70 (points)", round(lf[1970] - lf[1960], 1), 3.1)
-eq("rise 1960-74 (points)", round(lf[1974] - lf[1960], 1), 4.9)
+eq("rise 1960-70 (points)", round(lf[1970] - lf[1960], 1), 5.6)
+eq("rise 1960-74 (points)", round(lf[1974] - lf[1960], 1), 8.0)
 # Pay ratio, 60.7 (1960) and 59.4 (1970): fell, so 'did not improve'
 assert 59.4 < 60.7
 between("pay 'about 60'", 60.7, 59, 61)

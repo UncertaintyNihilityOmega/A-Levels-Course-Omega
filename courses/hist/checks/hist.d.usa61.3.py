@@ -75,10 +75,11 @@ eq("two-thirds of 100 rounded up", -(-2 * 100 // 3), 67)
 # Wallace 1968: 13.5 per cent and 46 electoral votes
 assert 13 < 13.5 < 14 and 46 > 0
 
-# Poverty and income: Black poverty 41.8 in 1966 ('about 42'); 1959 about 55; income ratio 54 -> 61
+# Poverty and income: Black poverty 41.8 in 1966 ('about 42'); 1959 about 55; income ratio about 51 (1959) -> about 61 (1970), Census P23-39
 eq("poverty rounded", round(41.8), 42)
 between("poverty fell by about 13 points", 55 - 41.8, 12.5, 14)
-eq("income ratio rise (points)", 61 - 54, 7)
+eq("income ratio rise (points)", 61 - 51, 10)
+eq("income ratio span (years)", 1970 - 1959, 11)
 
 # Black elected officials about 1,500 (1970) to about 3,500 (1975): more than double
 between("more than doubled", 3500 / 1500, 2.0, 2.5)

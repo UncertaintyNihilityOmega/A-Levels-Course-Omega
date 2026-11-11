@@ -5,17 +5,16 @@
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
 - History (`hist`, Cambridge 9489, exams 2027–2029) replaced Psychology at the user's request (Nov 7); Psychology is
   now a summary chapter in Other Subjects (`other.psychology`). LEAD done (94 chapters, 46 packages, gold `hist.eu.france.1`).
-  P1–P31 written (… Hitler 1–4, USA 1945–61 1–4, USA 1961–74 1–4), P1–P27 reviewed (web fact check), no open fixes.
+  P1–P31 written (… Hitler 1–4, USA 1945–61 1–4, USA 1961–74 1–4), P1–P31 reviewed (web fact check), no open fixes.
 - Connections plan (user, Nov 11, after a student's feedback): P47 (hist.f.eras big picture incl. before 1789;
   hist.d.compare dictatorships compared), COURSE.md "Connections" box rule (P31 on follow it). CONNECTIONS A done
   (42 AS + Paper 3 chapters). The kit refuses a "CONNECTIONS" done step: nothing in STATUS.md for these passes.
-- Next: Specialist **REVIEW P28, P29, P30, P31** (P31's quotes/figures list at the end of packages/P31.md), then
-  Specialist **CONNECTIONS B**: boxes in the 18 Paper 4 chapters without one (hist.d.italy.1–4, stalin.1–4, hitler.1–4,
+- Next: Specialist **CONNECTIONS B**: boxes in the 18 Paper 4 chapters without one (hist.d.italy.1–4, stalin.1–4, hitler.1–4,
   usa45.1–4, usa61.1–2). Writers: **claim P47 by name first**, then P32 on. Guard on `hist` at the start.
 - Sensitive topics (civil rights, apartheid, terror): a Writer prompt says no slurs even in sources, violence without
   graphic detail, save chapters in parts (the first P31 Writer was stopped by a content filter before saving).
-- Waiting for the 5-hour reset at 15:40 Nov 11 (Istanbul): 5-hour at 91% (gate 75%), weekly 13%.
-  Guard on `hist`.
+- Run of Nov 11 16:26 (Istanbul): REVIEW P28–P31 done; WRITE P47, WRITE P32 running; preview `hist-preview` on (user
+  allowed it this session). Guard on `hist`.
 - Agents have web access: WebSearch/WebFetch are deferred tools, loaded with ToolSearch (line in the AGENT-RUN common
   block). P1–P3 were written before that, from memory.
 - After History: queue item 4, Reader pass on Mathematics, then Physics.

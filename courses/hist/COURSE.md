@@ -30,6 +30,9 @@ FACTS.md (grep it for your topic).
 - Money and numbers: in the period's units (livres, roubles, marks, dollars) with the year; statistics only from a
   named reliable source type and rounded honestly ("about", "roughly"). Where historians' estimates differ, say so and
   give the range. Every number in a chapter goes in `checks/<id>.py` (dates arithmetic, percentages, totals).
+  Look up every value of a chart series at its named source, not from memory (review of P28–P31 found two of four
+  "BLS" values taken from a different series), and give the latest verdict on a case (two of the three men convicted
+  of killing Malcolm X were cleared in 2021).
 - Spelling: British (organise, labour, defence) except proper names and quotations ("Department of Labor",
   "American Federation of Labor").
 - Terms: use the syllabus's own words (Ancien Régime, *Zollverein*, Sovnarkom, the Great Turn, apartheid, Konfrontasi).
