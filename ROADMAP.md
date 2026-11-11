@@ -5,19 +5,20 @@
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
 - History (`hist`, Cambridge 9489, exams 2027–2029) replaced Psychology at the user's request (Nov 7); Psychology is
   now a summary chapter in Other Subjects (`other.psychology`). LEAD done (94 chapters, 46 packages, gold `hist.eu.france.1`).
-  P1–P33 and P47 written (… Hitler 1–4, USA 1945–61 1–4, USA 1961–74 1–4, USA 1974–93 1–4; big picture, dictatorships compared), P1–P31 reviewed (web fact check), no open fixes.
+  P1–P34 and P47 written (… USA 1945–61 1–4, USA 1961–74 1–4, USA 1974–93 1–4, Soviet Empire 1–2; big picture,
+  dictatorships compared), P1–P31 reviewed (web fact check), no open fixes.
 - Connections plan (user, Nov 11, after a student's feedback): P47 (hist.f.eras big picture incl. before 1789;
   hist.d.compare dictatorships compared), COURSE.md "Connections" box rule (P31 on follow it). CONNECTIONS A done
   (42 AS + Paper 3 chapters). The kit refuses a "CONNECTIONS" done step: nothing in STATUS.md for these passes.
 - CONNECTIONS B done (18 Paper 4 chapters): every written topic chapter now has a Connections box. Writer prompts
-  must add: P34 hist.d.soviet.1 covers Hungary 1956, the Berlin Wall, the Prague Spring; P36 hist.d.safrica.1 the
-  Bantu Education Act 1953; P39 hist.d.malaysia.4 the destruction of the PKI 1965–66 (boxes link there for these).
-- Next review: **REVIEW P47, P32, P33, P34**. Also check: the hist-chart "18" tick label against the first revenue
-  point (usa74.1 spending chart; widget layout?), and one SVG coordinate edit in usa74.1 made by a Python replace.
+  must add: P36 hist.d.safrica.1 the Bantu Education Act 1953; P39 hist.d.malaysia.4 the destruction of the PKI
+  1965–66 (boxes link there for these).
+- Next: Specialist **REVIEW P47, P32, P33, P34**. Also check: the hist-chart "18" tick label against the first revenue
+  point (usa74.1 spending chart; widget layout?), one SVG coordinate edit in usa74.1 made by a Python replace, and
+  the soviet.2 GNP chart source (encyclopedia.com table). Writers: P35 on. Guard on `hist` at the start.
 - Sensitive topics (civil rights, apartheid, terror): a Writer prompt says no slurs even in sources, violence without
   graphic detail, save chapters in parts (the first P31 Writer was stopped by a content filter before saving).
-- Run of Nov 11 16:26 (Istanbul): REVIEW P28–P31 done; CONNECTIONS B, WRITE P47, P32, P33 done; WRITE P34 running; gate 5h 85%; preview `hist-preview` on (user
-  allowed it this session). Guard on `hist`.
+- Waiting for the 5-hour reset at 21:20 Nov 11 (Istanbul): 5-hour at 94% (gate 75%), weekly 25%. Guard on `hist`.
 - Agents have web access: WebSearch/WebFetch are deferred tools, loaded with ToolSearch (line in the AGENT-RUN common
   block). P1–P3 were written before that, from memory.
 - After History: queue item 4, Reader pass on Mathematics, then Physics.

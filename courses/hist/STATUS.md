@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-11 · WRITE P33 · hist.d.usa74.3 (12.8k words) and hist.d.usa74.4 (13.3k): check and phone pass; hist-timeline in each, record and arms-control tables; no new widgets; unverified facts listed in packages/P33.md notes
+Last: 2026-11-11 · WRITE P34 · hist.d.soviet.1 (about 17,400 words) and hist.d.soviet.2 (about 13,800 words); check and phone clean; no new widgets (package lists none; hist-timeline, hist-chart and hand SVGs used); notes for the reviewer in packages/P34.md (facts verified online and facts from memory)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -38,7 +38,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P31: reviewed 2026-11-11
 - P32: written 2026-11-11
 - P33: written 2026-11-11
-- P34: writing 2026-11-11
+- P34: written 2026-11-11
 - P35: open
 - P36: open
 - P37: open
