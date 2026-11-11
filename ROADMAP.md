@@ -6,7 +6,12 @@
 - History (`hist`, Cambridge 9489, exams 2027–2029) replaced Psychology at the user's request (Nov 7); Psychology is
   now a summary chapter in Other Subjects (`other.psychology`). LEAD done (94 chapters, 46 packages, gold `hist.eu.france.1`).
   P1–P27 written (… Italy 1–4, Stalin 1–4, Hitler 1–4), P1–P27 reviewed (web fact check), no open fixes.
-- Run of Nov 11 (10:45): WRITE P28 and P29 (Sonnet) running; then P30, P31, REVIEW P28–P31 (preview 5111, user allowed).
+- Connections plan (user, Nov 11, after a student's feedback): P47 (hist.f.eras big picture incl. before 1789;
+  hist.d.compare dictatorships compared), COURSE.md "Connections" box rule for new chapters, and a Specialist
+  CONNECTIONS pass adding boxes to chapters written before the rule: A = AS + Paper 3 (P1–P21), B = Paper 4 (P22–P31).
+  Writers claim P47 next (by name), then P32 on.
+- Run of Nov 11 (10:45): P28, P29 written; P30, P31 Writers running; CONNECTIONS A (Opus) next; then REVIEW P28–P31,
+  CONNECTIONS B. Preview 5111 (user allowed).
   Guard on `hist`.
 - Agents have web access: WebSearch/WebFetch are deferred tools, loaded with ToolSearch (line in the AGENT-RUN common
   block). P1–P3 were written before that, from memory.

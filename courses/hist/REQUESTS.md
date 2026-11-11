@@ -12,3 +12,9 @@ Engine bugs, new block types, design changes, or anything that needs another cou
   - Organizer 2026-11-07: the server is right (it serves courses/hist/preview); the pane's tab was opened before
     preview/index.html existed, and a `#` change does not reload a 404 page. After `kit/zta.js preview`, reload the tab.
     The 404 text now says so, and the AGENT-RUN Specialist template says to reload.
+- [x] 2026-11-11 · (user) A history student found the course too split by country (Italy, Germany and Russia studied apart) and starting at 1789 with nothing before · the user asked for a connections plan.
+  - Organizer 2026-11-11: done in the plan. course.json gets P47 (hist.f.eras: the big picture from before 1789 to
+    1991, after hist.f.basics; hist.d.compare: dictatorships compared, after hist.d.hitler.4; P4 paper list). COURSE.md
+    rule "Connections": a `:::note Connections` box in every topic and debate chapter. P40 notes point to hist.f.eras.
+    hist.d.hitler.4's Next line now goes to hist.d.compare. Chapters written before the rule (P1–P31) get their boxes
+    in a Specialist CONNECTIONS pass.

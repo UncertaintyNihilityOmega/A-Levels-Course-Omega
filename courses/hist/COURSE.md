@@ -115,6 +115,14 @@ In this order (the gold chapter shows every part):
   this view." (never "How far do you agree?", "To what extent …?" or a mixed "… ? Evaluate this view."). Never name
   course files (FACTS.md, COURSE.md) in student-facing text. When two statistics are compared (literacy, census
   shares), take both from the same series and age base, and state the base.
+- Connections (user's request, 2026-11-11, after a history student's feedback that topics felt cut off from each
+  other): every topic and debate chapter has one `:::note Connections` box just before the `:::checklist`. It holds 3–5
+  bullets, `- [Short title](#chapter-id): one sentence` naming a real link (a cause, a consequence, a comparison,
+  the same years seen from another country). At least two bullets go outside the chapter's own topic, and at least one
+  goes outside its option or paper (e.g. Mussolini's rise → Hitler's Germany (1); Stalin's Five-Year Plans → the
+  Depression in the USA; the 1848 revolutions → France). Link only ids in course.json. Add one bullet to
+  [The big picture](#hist.f.eras), and for Italy, Stalin and Hitler chapters also
+  [Dictatorships compared](#hist.d.compare). Say in one line that students need only their own options' chapters.
 
 ## Widgets (each belongs to one package; use another package's widget only when its file exists in widgets/)
 - `hist-timeline` (P1): `data-title="…" data-events="1787-02-22 | Assembly of Notables opens | Calonne's reform plan ;; 1789-07-14 | Bastille stormed | …"`

@@ -517,4 +517,4 @@ A: Young people: control by the Hitler Youth (1936, 1939), the schools; limits i
 Links checked 7 November 2026.
 :::
 
-Next: [Post-war USA, 1945–61 (1): Truman and the internal issues of post-war America](#hist.d.usa45.1)
+Next: [Dictatorships compared: Italy, the Soviet Union and Germany](#hist.d.compare)

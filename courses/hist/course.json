@@ -22,6 +22,12 @@
       "group": "Start here"
     },
     {
+      "id": "hist.f.eras",
+      "title": "History from zero (2): the big picture, from before 1789 to 1991",
+      "level": "pre",
+      "group": "Start here"
+    },
+    {
       "id": "hist.f.choose",
       "title": "Choosing your options and planning the course",
       "level": "guide",
@@ -366,6 +372,12 @@
     {
       "id": "hist.d.hitler.4",
       "title": "Hitler's Germany (4): how far the Nazis transformed German society",
+      "level": "a2",
+      "group": "A Level Paper 4 European: Europe, 1919–41"
+    },
+    {
+      "id": "hist.d.compare",
+      "title": "Dictatorships compared: Italy, the Soviet Union and Germany",
       "level": "a2",
       "group": "A Level Paper 4 European: Europe, 1919–41"
     },
@@ -1006,6 +1018,15 @@
         "hist.mock.p4"
       ],
       "widgets": []
+    },
+    {
+      "id": "P47",
+      "title": "Connections: the big-picture timeline and dictatorships compared",
+      "chapters": [
+        "hist.f.eras",
+        "hist.d.compare"
+      ],
+      "widgets": []
     }
   ],
   "papers": [
@@ -1128,6 +1149,7 @@
         "hist.d.hitler.2",
         "hist.d.hitler.3",
         "hist.d.hitler.4",
+        "hist.d.compare",
         "hist.d.usa45.1",
         "hist.d.usa45.2",
         "hist.d.usa45.3",
