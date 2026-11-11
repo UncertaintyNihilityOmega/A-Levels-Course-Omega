@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-11 · WRITE P32 · hist.d.usa74.1 13,485 words, hist.d.usa74.2 13,176 words; both pass check and phone; no new widgets (hist-timeline and hist-chart used, one hand SVG); reviewer notes at the end of packages/P32.md list the facts not verified online
+Last: 2026-11-11 · WRITE P33 · hist.d.usa74.3 (12.8k words) and hist.d.usa74.4 (13.3k): check and phone pass; hist-timeline in each, record and arms-control tables; no new widgets; unverified facts listed in packages/P33.md notes
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -37,8 +37,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P30: reviewed 2026-11-11
 - P31: reviewed 2026-11-11
 - P32: written 2026-11-11
-- P33: writing 2026-11-11
-- P34: open
+- P33: written 2026-11-11
+- P34: writing 2026-11-11
 - P35: open
 - P36: open
 - P37: open

@@ -5,7 +5,7 @@
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
 - History (`hist`, Cambridge 9489, exams 2027–2029) replaced Psychology at the user's request (Nov 7); Psychology is
   now a summary chapter in Other Subjects (`other.psychology`). LEAD done (94 chapters, 46 packages, gold `hist.eu.france.1`).
-  P1–P32 and P47 written (… Hitler 1–4, USA 1945–61 1–4, USA 1961–74 1–4, USA 1974–93 1–2; big picture, dictatorships compared), P1–P31 reviewed (web fact check), no open fixes.
+  P1–P33 and P47 written (… Hitler 1–4, USA 1945–61 1–4, USA 1961–74 1–4, USA 1974–93 1–4; big picture, dictatorships compared), P1–P31 reviewed (web fact check), no open fixes.
 - Connections plan (user, Nov 11, after a student's feedback): P47 (hist.f.eras big picture incl. before 1789;
   hist.d.compare dictatorships compared), COURSE.md "Connections" box rule (P31 on follow it). CONNECTIONS A done
   (42 AS + Paper 3 chapters). The kit refuses a "CONNECTIONS" done step: nothing in STATUS.md for these passes.
@@ -16,7 +16,7 @@
   point (usa74.1 spending chart; widget layout?), and one SVG coordinate edit in usa74.1 made by a Python replace.
 - Sensitive topics (civil rights, apartheid, terror): a Writer prompt says no slurs even in sources, violence without
   graphic detail, save chapters in parts (the first P31 Writer was stopped by a content filter before saving).
-- Run of Nov 11 16:26 (Istanbul): REVIEW P28–P31 done; CONNECTIONS B, WRITE P47, P32 done; WRITE P33, P34 running; preview `hist-preview` on (user
+- Run of Nov 11 16:26 (Istanbul): REVIEW P28–P31 done; CONNECTIONS B, WRITE P47, P32, P33 done; WRITE P34 running; gate 5h 85%; preview `hist-preview` on (user
   allowed it this session). Guard on `hist`.
 - Agents have web access: WebSearch/WebFetch are deferred tools, loaded with ToolSearch (line in the AGENT-RUN common
   block). P1–P3 were written before that, from memory.
