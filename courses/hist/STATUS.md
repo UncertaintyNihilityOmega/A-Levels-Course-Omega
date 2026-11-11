@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-11 · WRITE P34 · hist.d.soviet.1 (about 17,400 words) and hist.d.soviet.2 (about 13,800 words); check and phone clean; no new widgets (package lists none; hist-timeline, hist-chart and hand SVGs used); notes for the reviewer in packages/P34.md (facts verified online and facts from memory)
+Last: 2026-11-11 · REVIEW P32, P33, P34, P47 · 0 open items; fixed: hist-chart first point no longer on the y-axis labels (usa74.2 18 tick), soviet.1 Pact grid redrawn 340 wide for phones, soviet.2 GNP source line names Ofer and the CIA/JEC origin (data confirmed), Connections trimmed to 5 bullets in soviet.1-2, usa74.1 '113 proposals' softened, usa74.4 German NATO date, soviet.1 Beran; usa74.1 New Right SVG checked, no change; COURSE.md SVG width and source-line rule
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -36,11 +36,11 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P29: reviewed 2026-11-11
 - P30: reviewed 2026-11-11
 - P31: reviewed 2026-11-11
-- P32: written 2026-11-11
-- P33: written 2026-11-11
-- P34: written 2026-11-11
-- P35: open
-- P36: open
+- P32: reviewed 2026-11-11
+- P33: reviewed 2026-11-11
+- P34: reviewed 2026-11-11
+- P35: writing 2026-11-11
+- P36: writing 2026-11-11
 - P37: open
 - P38: open
 - P39: open
@@ -51,6 +51,6 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P44: open
 - P45: open
 - P46: open
-- P47: written 2026-11-11
+- P47: reviewed 2026-11-11
 - READER: open
 - FINAL: open

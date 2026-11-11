@@ -238,7 +238,7 @@ The theory, associated with the economist Milton Friedman, that inflation is cau
 
 ### Energy: the crisis that would not go away
 
-Energy was Carter's first big project and the problem that most defined his term. On 18 April 1977 he told the nation on television that the energy crisis was "the moral equivalent of war". His **National Energy Plan** of 113 proposals aimed to cut oil use by taxes on gas-guzzling cars, to force energy-saving and to raise the price of domestic oil and gas to world levels, so that demand fell.
+Energy was Carter's first big project and the problem that most defined his term. On 18 April 1977 he told the nation on television that the energy crisis was "the moral equivalent of war". His **National Energy Plan** of more than 100 proposals aimed to cut oil use by taxes on gas-guzzling cars, to force energy-saving and to raise the price of domestic oil and gas to world levels, so that demand fell.
 
 It was a sensible plan and a political failure. Congress, where oil and gas states had strong voices, rejected the central tax on crude oil, and it took until November 1978, a year and a half later, to pass a **National Energy Act**, in five parts, that dealt mainly with natural gas prices, conservation and tax credits for insulation and solar power. The Act was much weaker than Carter had wanted.
 
@@ -465,7 +465,7 @@ A: From 1975 it exposed CIA assassination plots, FBI harassment of King and othe
 Q: Give four reasons for Carter's victory in 1976.
 A: He was an outsider after Watergate; he promised honesty; he was a born-again Southerner who carried every Southern state but Virginia and held the Black vote; Ford was damaged by the pardon, the economy (unemployment 7.7 per cent) and the challenge from Reagan. The result was 297–240 (50.1 per cent to 48.0 per cent).
 Q: What was Carter's National Energy Plan, and how far did it succeed?
-A: A set of 113 proposals (April 1977) to cut oil use through taxes and conservation and to raise domestic prices to world levels. The Senate rejected the crude-oil tax; the National Energy Act (November 1978) was a weak compromise. Later: decontrol of oil (from April 1979), the windfall profit tax (2 April 1980), the Energy Security Act (30 June 1980). The Department of Energy was created on 4 August 1977.
+A: A set of more than 100 proposals (April 1977) to cut oil use through taxes and conservation and to raise domestic prices to world levels. The Senate rejected the crude-oil tax; the National Energy Act (November 1978) was a weak compromise. Later: decontrol of oil (from April 1979), the windfall profit tax (2 April 1980), the Energy Security Act (30 June 1980). The Department of Energy was created on 4 August 1977.
 Q: What did Carter say on 15 July 1979, and what was the effect?
 A: That the country faced "a crisis of confidence" in its national will and that "all the legislation in the world can't fix what's wrong with America". The speech was at first well received, but two days later the dismissal of Cabinet members made it look like panic, and critics said that it blamed the people. His approval was about 28 per cent that summer.
 Q: What was Volcker's "Saturday night special", and what did it do?

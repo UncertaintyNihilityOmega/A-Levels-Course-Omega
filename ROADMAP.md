@@ -13,12 +13,11 @@
 - CONNECTIONS B done (18 Paper 4 chapters): every written topic chapter now has a Connections box. Writer prompts
   must add: P36 hist.d.safrica.1 the Bantu Education Act 1953; P39 hist.d.malaysia.4 the destruction of the PKI
   1965–66 (boxes link there for these).
-- Next: Specialist **REVIEW P47, P32, P33, P34**. Also check: the hist-chart "18" tick label against the first revenue
-  point (usa74.1 spending chart; widget layout?), one SVG coordinate edit in usa74.1 made by a Python replace, and
-  the soviet.2 GNP chart source (encyclopedia.com table). Writers: P35 on. Guard on `hist` at the start.
+- Running (run of 21:28 Nov 11): Specialist **REVIEW P47, P32, P33, P34** (incl. the usa74.1 "18" tick label, the
+  usa74.1 Python SVG edit, the soviet.2 GNP chart source); Writers **P35**, **P36**. Preview server `hist-preview`
+  allowed by the user this session. Guard on `hist`. Next: P37 on, then REVIEW P35–P38.
 - Sensitive topics (civil rights, apartheid, terror): a Writer prompt says no slurs even in sources, violence without
   graphic detail, save chapters in parts (the first P31 Writer was stopped by a content filter before saving).
-- Waiting for the 5-hour reset at 21:20 Nov 11 (Istanbul): 5-hour at 94% (gate 75%), weekly 25%. Guard on `hist`.
 - Agents have web access: WebSearch/WebFetch are deferred tools, loaded with ToolSearch (line in the AGENT-RUN common
   block). P1–P3 were written before that, from memory.
 - After History: queue item 4, Reader pass on Mathematics, then Physics.

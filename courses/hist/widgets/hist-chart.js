@@ -191,7 +191,8 @@
         const xMax = Number(keys[n - 1]);
         const X = function (i) {
           if (type === 'bar') return padL + (i + 0.5) / n * pw;
-          if (proportional) return padL + (Number(keys[i]) - xMin) / (xMax - xMin) * pw;
+          // inset 12 px each side so the first point never sits on the y-axis tick labels
+          if (proportional) return padL + 12 + (Number(keys[i]) - xMin) / (xMax - xMin) * (pw - 24);
           return n === 1 ? padL + pw / 2 : padL + 12 + i / (n - 1) * (pw - 24);
         };
         const fontFamily = col.font || 'sans-serif';

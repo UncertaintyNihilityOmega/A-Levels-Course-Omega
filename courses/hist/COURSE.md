@@ -93,7 +93,10 @@ In this order (the gold chapter shows every part):
 5. Content sections (`##`), story then analysis, each with `:::def` cards for key terms (exam-quality wording), and
    `:::key` boxes for the main arguments to learn ("Three reasons why …", "The case for and against …"). Key people in
    a table (Person | Role | Why they matter) where there are many. A hand SVG where a picture helps (social structure,
-   causal links, a map schematic, a chart of data); keep maps schematic and accurate, labelled.
+   causal links, a map schematic, a chart of data); keep maps schematic and accurate, labelled. Draw SVGs with a
+   viewBox about 340–360 wide (`class="fig small"`) so 12 px labels stay readable on a phone; a wider grid shrinks
+   them to about 7 px (review of P32–P34 and P47 redrew a 560-wide grid). A chart's source line names the author and
+   work that compiled the figures, not only the website that shows them.
 6. `:::eg` worked examples = **exam questions with model answers built level by level** against the real mark-scheme
    levels in FACTS.md: show what a Level 2/3 answer writes, then what moves it up a level, then a top-level answer
    (full paragraphs), with examiner-style commentary naming the level and the mark range. Every AS topic chapter has
