@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-11 · REVIEW P24, P25, P26, P27 · 0 open items; all 8 chapters check+phone pass, 7 SVGs and 16 widgets probed (no overlap/overflow, light/dark/phone, keyboard ok); web-checked Writer notes (Zemskov Terror/Gulag, Lenin Enrollment, abortion, Testament MIA, Hossbach Avalon, GHDI Fire Decree/Enabling Act/8 Sept 1934 speech, SA USHMM, Gestapo 6,500/32,000, People's Court ~5,200, unemployment series, Kristallnacht, Goering 1935). Fixed: stalin.4 literacy 57->51% (1926, aged 9+, same base as 81% 1939) and 1937 believers 56->57% (56.7% of respondents) with checks; garbled Section A sentence in stalin.1/2, hitler.1/2, italy.1; removed '(FACTS.md)' from student text (stalin.3/4, hitler.3/4, italy.3/4); 7 practice questions to real Paper 4 commands (no 'How far do you agree'); unverified 'past papers asked about churches' reworded; Ryutin and Kristallnacht counts hedged; hitler.3 military share wording made consistent. COURSE.md rule added: command forms, no file names in student text, same-base statistics.
+Last: 2026-11-11 · WRITE P29 · hist.d.usa45.3 (10,888 words), hist.d.usa45.4 (12,697 words); check ok, phone ok; no new widgets (hist-timeline and hist-chart used, probed clean, shots viewed). Reviewer: see Writer's notes in packages/P29.md (TV 1960 figure sources differ; a few quotes from memory: Dulles Life 1956, Bradley 1951, 1952 Republican platform phrase).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -33,7 +33,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P26: reviewed 2026-11-11
 - P27: reviewed 2026-11-11
 - P28: writing 2026-11-11
-- P29: writing 2026-11-11
+- P29: written 2026-11-11
 - P30: open
 - P31: open
 - P32: open
