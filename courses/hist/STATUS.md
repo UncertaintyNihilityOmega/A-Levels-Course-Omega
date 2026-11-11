@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-11 · WRITE P37 · hist.d.safrica.3 (15,806 words), hist.d.safrica.4 (13,201 words); no new widgets (hist-timeline and hist-chart reused); check and phone pass; reviewer notes at end of packages/P37.md (facts verified online vs from memory)
+Last: 2026-11-11 · WRITE P38 · hist.d.malaysia.1 (12,967 words) and hist.d.malaysia.2 (12,965 words); no new widgets (hist-timeline and hist-chart used, two hand SVGs in data/); check and phone clean; reviewer notes (verified online vs from memory) at the end of packages/P38.md
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -42,7 +42,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P35: written 2026-11-11
 - P36: written 2026-11-11
 - P37: written 2026-11-11
-- P38: writing 2026-11-11
+- P38: written 2026-11-11
 - P39: open
 - P40: open
 - P41: open
