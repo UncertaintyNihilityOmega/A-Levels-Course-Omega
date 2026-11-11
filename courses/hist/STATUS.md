@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-11 · WRITE P28 · hist.d.usa45.1 (16379 words by kit count) and hist.d.usa45.2 (12376): check and phone pass; no new widgets (hist-timeline in both, hist-chart in usa45.2, probed clean light/dark/phone, shots looked at); facts web-checked, list of memory-only figures for the reviewer is at the end of packages/P28.md; no :::board box
+Last: 2026-11-11 · WRITE P30 · hist.d.usa61.1 (12,249 words) and hist.d.usa61.2 (11,903 words); both check and phone pass; no new widgets (hist-timeline and hist-chart used; laws table in Markdown); reviewer notes appended to packages/P30.md (troop 1969 figure, Mississippi registration, school desegregation date, bomb tonnage omitted)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -34,8 +34,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P27: reviewed 2026-11-11
 - P28: written 2026-11-11
 - P29: written 2026-11-11
-- P30: writing 2026-11-11
-- P31: open
+- P30: written 2026-11-11
+- P31: writing 2026-11-11
 - P32: open
 - P33: open
 - P34: open
@@ -51,5 +51,6 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P44: open
 - P45: open
 - P46: open
+- P47: open
 - READER: open
 - FINAL: open
