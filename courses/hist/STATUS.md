@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-11 · REVIEW P28, P29, P30, P31 · 0 open items; fixed: usa61.4 women's labour-force 1970/1974 (43.3, 45.7 BLS), Watts arrests range, Malcolm X 2021 exonerations; usa61.3 income ratio to Census 51 (1959) to 61 (1970); usa45.2 school 1 per cent dated 1963-64; FACTS.md named and five 'How far' questions removed (45.3, 45.4, 61.4); 45.1 timeline date; P31 memory figures web-checked (elected officials, riots, Wallace); COURSE.md rule on chart values
+Last: 2026-11-11 · WRITE P47 · hist.f.eras (11,690 words; 4 eg, 19 try, 9 quiz; hist-timeline with 44 events in 4 lanes; one-axis SVG of 21 topic bars checked in Python) and hist.d.compare (11,168 words; 3 eg, 26 try, 9 quiz; regimes timeline SVG checked in Python). No new widgets. Checks ok, phone ok. Reviewer: facts to double-check and Overy/Kershaw-Lewin/Mommsen summaries are listed at the end of packages/P47.md.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -51,6 +51,6 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P44: open
 - P45: open
 - P46: open
-- P47: writing 2026-11-11
+- P47: written 2026-11-11
 - READER: open
 - FINAL: open
