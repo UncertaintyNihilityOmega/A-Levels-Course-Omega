@@ -617,6 +617,16 @@ A: Support: Allen's argument that investment and growth were high is supported b
 > Soviet figures often counted unfinished work and the standing grain crop. Use them with a source, round them and, where possible, compare Western reconstructions. They are not worthless: for coal, steel and electricity they show the scale and direction of change.
 :::
 
+:::note Connections
+- [Russia (1): the challenges facing Tsarism, 1881–94](#hist.eu.russia.1): industrialisation paid for by grain exports squeezed from the peasants was tried under Vyshnegradsky and ended in the famine of 1891–92; Stalin repeated it on a far larger scale, with the far deadlier famine of 1932–33.
+- [Crash, Depression and New Deal (1): the causes of the Great Crash and the Great Depression](#hist.us.depression.1): while the capitalist economies collapsed after 1929, the USSR pushed through its first Five Year Plan: the same years seen from another system.
+- [Hitler's Germany (3): how successful Nazi economic policies were](#hist.d.hitler.3): Nazi Germany also put heavy industry and arms before consumers, in the Four Year Plan of 1936; compare two state-driven economies built for war.
+- [Dictatorships compared](#hist.d.compare): the economic policies of Italy, the Soviet Union and Germany side by side.
+- [The big picture](#hist.f.eras): the Five Year Plans in the years of depression, dictatorship and the road to war, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the four reasons for the Great Turn (security, self-sufficiency, socialism, Stalin's control) and the grain procurement crisis, and rank them.
 - [ ] I can describe voluntary and forced collectivisation, kolkhozy, sovkhozy and the MTS.

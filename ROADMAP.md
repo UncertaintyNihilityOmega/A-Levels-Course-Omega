@@ -9,11 +9,12 @@
 - Connections plan (user, Nov 11, after a student's feedback): P47 (hist.f.eras big picture incl. before 1789;
   hist.d.compare dictatorships compared), COURSE.md "Connections" box rule (P31 on follow it). CONNECTIONS A done
   (42 AS + Paper 3 chapters). The kit refuses a "CONNECTIONS" done step: nothing in STATUS.md for these passes.
-- Next: Specialist **CONNECTIONS B**: boxes in the 18 Paper 4 chapters without one (hist.d.italy.1–4, stalin.1–4, hitler.1–4,
-  usa45.1–4, usa61.1–2). Writers: **claim P47 by name first**, then P32 on. Guard on `hist` at the start.
+- CONNECTIONS B done (18 Paper 4 chapters): every written topic chapter now has a Connections box. Writer prompts
+  must add: P34 hist.d.soviet.1 covers Hungary 1956, the Berlin Wall, the Prague Spring; P36 hist.d.safrica.1 the
+  Bantu Education Act 1953; P39 hist.d.malaysia.4 the destruction of the PKI 1965–66 (boxes link there for these).
 - Sensitive topics (civil rights, apartheid, terror): a Writer prompt says no slurs even in sources, violence without
   graphic detail, save chapters in parts (the first P31 Writer was stopped by a content filter before saving).
-- Run of Nov 11 16:26 (Istanbul): REVIEW P28–P31 done; WRITE P47, WRITE P32 running; preview `hist-preview` on (user
+- Run of Nov 11 16:26 (Istanbul): REVIEW P28–P31 done; CONNECTIONS B done; WRITE P47, WRITE P32 running; preview `hist-preview` on (user
   allowed it this session). Guard on `hist`.
 - Agents have web access: WebSearch/WebFetch are deferred tools, loaded with ToolSearch (line in the AGENT-RUN common
   block). P1–P3 were written before that, from memory.

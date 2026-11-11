@@ -582,6 +582,16 @@ A: Support: in 1924 the Testament, a united Politburo or a military move by Trot
 > The grain crisis of 1927–28 was the trigger for his change of line, and it was used to defeat Bukharin, Rykov and Tomsky.
 :::
 
+:::note Connections
+- [Russia (4): how the Bolsheviks consolidated power to 1924](#hist.eu.russia.4): the one-party state, the ban on factions of March 1921 and the NEP were the tools and the quarrels Stalin inherited.
+- [France (4): the rise and fall of Napoleon Bonaparte](#hist.eu.france.4): the Bolsheviks knew that the French Revolution had ended in a general's rule, and their fear of a "Bonaparte" made Trotsky, the creator of the Red Army, look more dangerous than Stalin.
+- [Mussolini's Italy (1): how Mussolini gained control](#hist.d.italy.1): Mussolini, like Hitler, won power from outside a weak parliamentary state; Stalin rose inside a party already in power, through the offices and patronage of the General Secretary.
+- [Dictatorships compared](#hist.d.compare): how Mussolini, Stalin and Hitler came to power, side by side.
+- [The big picture](#hist.f.eras): the struggle after Lenin in the world war and its aftermath, 1914–29.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the power vacuum after Lenin's death: his strokes, collective leadership, Lenin's Testament and its suppression, and the funeral.
 - [ ] I can assess the strengths and weaknesses of Stalin, Trotsky, Bukharin, Kamenev, Rykov, Tomsky and Zinoviev, and why Stalin was underestimated.

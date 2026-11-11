@@ -510,6 +510,16 @@ A: Support: the belief that gradual, controlled pressure could make an enemy bac
 > Allison wrote *Essence of Decision* (1971) on the missile crisis, Herring wrote *America's Longest War* (1979) and Stern wrote on the ExComm tapes.
 :::
 
+:::note Connections
+- [Post-war USA (4): the foreign policies of Truman and Eisenhower](#hist.d.usa45.4): containment, the domino theory and the Geneva Accords of 1954 that Kennedy and Johnson inherited.
+- [The Soviet Empire in Eastern Europe (1): the USSR and the satellite states to 1968](#hist.d.soviet.1): the same years seen from Moscow: Khrushchev's Berlin Wall of August 1961, and the crushing of the Prague Spring in August 1968, the year of the Tet Offensive.
+- [A time of challenges (4): challenges to authority](#hist.d.usa61.4): the war and the draft fed the anti-war movement and the distrust of government at home.
+- [The route to independence (4): Indonesia, independence and challenges to the mid-1960s](#hist.d.malaysia.4): the domino theory in another South-East Asian country, where the army destroyed the Indonesian Communist Party in 1965–66 as Johnson sent troops to Vietnam.
+- [The big picture](#hist.f.eras): Cuba and Vietnam in the Cold War and decolonisation, 1945–91.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain Kennedy's view of the Castro regime and the importance of the Bay of Pigs.
 - [ ] I can describe the discovery of the missiles in Cuba and Kennedy's options.

@@ -518,6 +518,15 @@ A: Support: Kennedy's programme blocked; the Great Society's limits and the back
 > It fell by 7.9 percentage points. The 22.4 per cent figure is for 1959, before the war on poverty.
 :::
 
+:::note Connections
+- [Crash, Depression and New Deal (4): the Second New Deal and its impact by 1941](#hist.us.depression.4): Medicare and Medicaid (1965) were the largest extension of federal welfare since the Social Security Act of 1935.
+- [A time of challenges (3): civil rights for African Americans](#hist.d.usa61.3): the Civil Rights Act and the Voting Rights Act seen from the marches and campaigns that pushed Presidents to act.
+- [The USA, 1974–93 (1): the problems of the late 1970s](#hist.d.usa74.1): Watergate, Ford's pardon of Nixon and the inflation left by the war and the Great Society shaped the troubled presidencies that followed.
+- [The big picture](#hist.f.eras): the presidencies of the 1960s in the Cold War and decolonisation, 1945–91.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain why Kennedy won the 1960 election, including the New Frontier, his youth and campaign, the importance of Johnson, Nixon's campaign and the Black vote.
 - [ ] I can describe Kennedy's domestic policies: the economy, the poor, housing, healthcare, education, women, farmers and civil rights.

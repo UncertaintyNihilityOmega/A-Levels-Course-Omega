@@ -607,6 +607,15 @@ A: Support: the committee and *To Secure These Rights* set the national agenda; 
 > Truman's speech to the NAACP was on 29 June 1947. The report was published on 29 October 1947 and its recommendations were the basis of his ten-point programme.
 :::
 
+:::note Connections
+- [Crash, Depression and New Deal (4): the Second New Deal and its impact by 1941](#hist.us.depression.4): the Fair Deal tried to extend Roosevelt's New Deal and met the same conservative coalition of Republicans and Southern Democrats in Congress.
+- [Origins of the Cold War (1): the breakdown of the wartime alliance, 1941–49](#hist.interp.coldwar.1): the Soviet takeover of Eastern Europe, the Berlin Blockade and the Soviet atomic bomb of August 1949, which fed the Red Scare, seen from both sides.
+- [A time of challenges (3): civil rights for African Americans](#hist.d.usa61.3): the civil rights laws that *To Secure These Rights* asked for in 1947 were passed only in 1964 and 1965.
+- [The big picture](#hist.f.eras): Truman's America at the start of the Cold War and decolonisation, 1945–91.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the economic and political problems Truman faced in 1945–46, and why Republicans won the 1946 elections.
 - [ ] I can explain the Fair Deal: its welfare and social reforms (health, education, housing), economic and employment policies (minimum wage, price controls, farmers) and infrastructure (reclamation, hydro-electric power, slum clearance), and say what passed and what failed.

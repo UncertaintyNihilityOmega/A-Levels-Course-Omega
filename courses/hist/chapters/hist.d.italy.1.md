@@ -568,6 +568,16 @@ A: Support: the blackshirts were poorly armed and outnumbered; the army had bett
 > The Grand Council became a state organ in 1928. The title "Duce" and the 24 December 1925 law gave Mussolini his position; the 1926 decrees finished the opposition.
 :::
 
+:::note Connections
+- [International relations, 1919–29 (3): why tensions remained high after Versailles](#hist.int.1919.3): the "mutilated victory" and Fiume seen from the international side, and Mussolini's first clash with the League, over Corfu in 1923.
+- [Russia (3): how and why the Bolsheviks seized power in 1917](#hist.eu.russia.3): the Bolshevik example lay behind the fear of revolution in Italy's "Red Two Years", which drove landowners and industrialists to back the squads.
+- [Hitler's Germany (1): how Hitler gained control](#hist.d.hitler.1): Hitler too was brought into office legally, by President Hindenburg in January 1933, on the advice of conservatives who thought they could use him, as the king and the liberals had thought of Mussolini in 1922.
+- [Dictatorships compared](#hist.d.compare): how Mussolini, Stalin and Hitler came to power, side by side.
+- [The big picture](#hist.f.eras): the rise of Fascism among the crises of the world war and its aftermath, 1914–29.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the impact of the First World War on Italy: casualties, debt, inflation, unemployment and the squeeze on the middle classes.
 - [ ] I can explain the "mutilated victory" and the seizure of Fiume by D'Annunzio, and what each showed.

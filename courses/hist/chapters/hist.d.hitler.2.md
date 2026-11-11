@@ -543,6 +543,16 @@ A: Support: Mein Kampf (1925–26), the Second Book (1928) and the Hossbach meet
 > Historians disagree about how far it records a plan: Taylor thought it mainly a talk to win support for rearmament; Weinberg and others thought it a statement of intent.
 :::
 
+:::note Connections
+- [The Holocaust (2): the historians' debate](#hist.interp.holocaust.2): the "polycracy" and "working towards the Führer" used to explain how the regime moved from persecution to genocide.
+- [International history, 1929–39 (3): appeasement: why, and with what effects](#hist.int.1929.3): the Rhineland, the Anschluss and Munich seen from London and Paris.
+- [Stalin's Russia (2): how effectively Stalin governed the Soviet Union](#hist.d.stalin.2): compare the Gestapo and the camps with the NKVD and the Gulag, and see the Nazi–Soviet Pact of August 1939 from Moscow's side.
+- [Dictatorships compared](#hist.d.compare): terror, propaganda and consent in Mussolini's, Stalin's and Hitler's states side by side.
+- [The big picture](#hist.f.eras): Nazi rule and foreign policy in the years of depression, dictatorship and the road to war, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain how the terror state worked: the Gestapo, block wardens, police and SD, the judiciary and courts, the SS and the concentration camps.
 - [ ] I can assess how far the regime relied on terror and how far on consent, using the views of Gellately, Johnson and Kershaw.

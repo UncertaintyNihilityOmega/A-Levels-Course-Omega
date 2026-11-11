@@ -503,6 +503,16 @@ A: Support: the OND was popular because it gave benefits that people wanted (che
 > Rosselli escaped from internal exile in 1929 and founded the movement in Paris. Gramsci was a Communist leader imprisoned in 1926; Croce was a philosopher who stayed in Italy; Togliatti was a Communist in exile.
 :::
 
+:::note Connections
+- [Hitler's Germany (4): how far the Nazis transformed German society](#hist.d.hitler.4): compare the Battle for Births with Nazi marriage loans, the Balilla with the Hitler Youth, and the Lateran Pacts of 1929 with Hitler's Concordat of 1933; Italy's racial laws of 1938 came as Mussolini drew closer to Hitler.
+- [Stalin's Russia (4): how far Stalin transformed Soviet society](#hist.d.stalin.4): Stalin attacked the Orthodox Church where Mussolini made peace with the Pope, yet both regimes turned back to the family and to discipline in schools in the 1930s.
+- [France (2): how and why France became a republic by 1792](#hist.eu.france.2): a revolution that quarrelled with the Church, through the Civil Constitution of the Clergy of 1790, and divided the nation; Mussolini chose the opposite course.
+- [Dictatorships compared](#hist.d.compare): how far each of the three regimes remade its society.
+- [The big picture](#hist.f.eras): Fascist Italy in the years of depression, dictatorship and the road to war, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain Fascist attitudes towards women and the aims of the policy to raise the birth rate and population.
 - [ ] I can assess the Battle for Births: propaganda, incentives, abortion, contraception and divorce, and its outcomes.

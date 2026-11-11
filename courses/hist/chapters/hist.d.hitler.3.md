@@ -532,6 +532,16 @@ A: Support: the labour shortage, the foreign exchange crisis, the Reichsbank dir
 > Milward wrote *The German Economy at War* (1965). Overy (1994) argued the opposite. Tooze (2006) stressed the limits of the German economy. Mason argued for a "flight into war".
 :::
 
+:::note Connections
+- [Crash, Depression and New Deal (3): how successful Roosevelt's first New Deal was](#hist.us.depression.3): Roosevelt also attacked unemployment in 1933 with public works and a labour corps, the CCC; compare his methods and costs with the Nazis'.
+- [International history, 1929–39 (3): appeasement: why, and with what effects](#hist.int.1929.3): German rearmament, and the British rearmament that answered it, seen from London.
+- [Mussolini's Italy (3): how successful Mussolini's economic policies were](#hist.d.italy.3): Italy's Battle for Grain and its drive for autarky after the sanctions of 1935, set beside the Reich Food Estate and the Four Year Plan.
+- [Dictatorships compared](#hist.d.compare): the economic policies of Italy, the Soviet Union and Germany side by side.
+- [The big picture](#hist.f.eras): the Nazi economy in the years of depression, dictatorship and the road to war, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain Schacht's deficit financing and the Mefo bills, and why they were hidden.
 - [ ] I can describe the public works programmes (the autobahn), the Reich Labour Service and the Law for the Reduction of Unemployment.

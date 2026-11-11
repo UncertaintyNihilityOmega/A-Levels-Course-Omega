@@ -498,6 +498,16 @@ A: Support: the family (abortion banned, divorce costly, motherhood praised); ed
 > The separation of Church and state was in January 1918. The law of 1929 started a wave of closures, but did not close all the churches at once.
 :::
 
+:::note Connections
+- [Russia (1): the challenges facing Tsarism, 1881–94](#hist.eu.russia.1): Alexander III's Russification of the 1880s returned in a Soviet form in the 1930s, when Russian became compulsory in all non-Russian schools in 1938.
+- [Hitler's Germany (4): how far the Nazis transformed German society](#hist.d.hitler.4): both regimes praised motherhood in the 1930s: Stalin banned abortion in June 1936, and the Nazis offered marriage loans and the Mother's Cross.
+- [The Soviet Empire in Eastern Europe (1): the USSR and the satellite states to 1968](#hist.d.soviet.1): after 1945 the Soviet model of party control over culture, schools and the churches was carried into Eastern Europe, with very different results in Catholic Poland.
+- [Dictatorships compared](#hist.d.compare): how far each of the three regimes remade its society.
+- [The big picture](#hist.f.eras): Soviet society in the years of depression, dictatorship and the road to war, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the Great Retreat and Stalin's policies on marriage, divorce and childbirth, including the decree of 27 June 1936.
 - [ ] I can assess women's role in the workplace: the opportunities and the limitations.

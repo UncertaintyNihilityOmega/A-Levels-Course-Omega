@@ -483,6 +483,16 @@ A: Young people: control by the Hitler Youth (1936, 1939), the schools; limits i
 > More than 400,000 people were sterilised by 1945. The killing of disabled people (Aktion T4) began in 1939.
 :::
 
+:::note Connections
+- [The Holocaust (1): from antisemitism to genocide](#hist.interp.holocaust.1): how the persecution of 1933–39 turned into mass murder after 1941.
+- [Mussolini's Italy (4): how far Mussolini transformed Italian society](#hist.d.italy.4): compare marriage loans with the Battle for Births, the Hitler Youth with the Balilla, and the Concordat of 1933 with the Lateran Pacts of 1929.
+- [Russia (1): the challenges facing Tsarism, 1881–94](#hist.eu.russia.1): set the May Laws of 1882 and the pogroms in Tsarist Russia beside the Nuremberg Laws and the pogrom of November 1938, and see what was new in the Nazis' racial antisemitism.
+- [Dictatorships compared](#hist.d.compare): how far each of the three regimes remade its society.
+- [The big picture](#hist.f.eras): Nazi society in the years of depression, dictatorship and the road to war, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain Kinder, Küche, Kirche and the Nazi view of women's domestic role.
 - [ ] I can explain attempts to reduce women's work and efforts to raise the birth rate (marriage loans, the Mother's Cross), and the change in attitudes to women's work from 1937.

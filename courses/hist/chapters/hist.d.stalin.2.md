@@ -630,6 +630,16 @@ A: Support for Stalin: he approved lists and quotas, used torture by telegram, d
 > Khalkhin Gol and the Neutrality Pact secured the east, and the Baltic states and eastern Poland gave a buffer, but the invasion came anyway and Stalin had ignored warnings.
 :::
 
+:::note Connections
+- [France (3): governing France, 1793–99: the Terror and the Directory](#hist.eu.france.3): a revolution turning terror on its own leaders, as in 1794, happened again in the show trials of 1936–38.
+- [International history, 1929–39 (4): why war broke out in 1939](#hist.int.1929.4): the Nazi–Soviet Pact of 23 August 1939 seen from Berlin, London and Paris, and how it opened the way to the invasion of Poland.
+- [Origins of the Cold War (1): the breakdown of the wartime alliance, 1941–49](#hist.interp.coldwar.1): after Germany invaded on 22 June 1941 the ruler of the purges became the West's ally, and the distrust of the 1930s shaped how that alliance broke down.
+- [Dictatorships compared](#hist.d.compare): terror, the cult of the leader and consent in the three regimes side by side.
+- [The big picture](#hist.f.eras): the Terror and the Purges in the years of depression, dictatorship and the road to war, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the reasons for the Terror and Purges, and weigh Stalin's personality against the political, security, economic and systemic causes.
 - [ ] I can explain opposition to Stalin (the Ryutin platform, the Seventeenth Congress) and the murder of Kirov and what it led to.

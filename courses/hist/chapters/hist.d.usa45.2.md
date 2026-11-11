@@ -511,6 +511,16 @@ A: Support: the movement's greatest gains came from Black Americans' own action 
 > The address was on 17 January 1961, and its phrase "military-industrial complex" has become part of political language.
 :::
 
+:::note Connections
+- [Civil War and Reconstruction (4): the aims and success of Reconstruction](#hist.us.civilwar.4): the 14th Amendment's promise of equal protection was the ground of *Brown* (1954), and the Civil Rights Act of 1957 was the first since Reconstruction.
+- [Crash, Depression and New Deal (4): the Second New Deal and its impact by 1941](#hist.us.depression.4): Modern Republicanism kept and extended the Social Security that Roosevelt created in 1935.
+- [A time of challenges (3): civil rights for African Americans](#hist.d.usa61.3): Montgomery and Little Rock began the movement that won the Civil Rights Act of 1964 and the Voting Rights Act of 1965.
+- [End of minority rule (1): the apartheid state, 1948–59](#hist.d.safrica.1): the same years seen from another country: as the Supreme Court struck down segregated schools in 1954, South Africa was building apartheid, with the Bantu Education Act of 1953.
+- [The big picture](#hist.f.eras): Eisenhower's America in the Cold War and decolonisation, 1945–91.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the reasons for Eisenhower's victory in 1952: personal appeal, television, anti-Communism, the promise on Korea and the Democrats' limitations.
 - [ ] I can explain the reasons for his victory in 1956: Suez and Hungary, African American support, personal appeal, prosperity and the Democrat opposition.

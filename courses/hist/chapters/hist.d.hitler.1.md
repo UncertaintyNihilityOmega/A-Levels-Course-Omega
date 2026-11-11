@@ -638,6 +638,16 @@ A: Support: proportional representation made majorities hard; Article 48 allowed
 > The old oath was to the people and the country. The change was proposed by Blomberg and the Reichswehr leaders, and it later made resistance harder.
 :::
 
+:::note Connections
+- [International relations, 1919–29 (1): dissatisfaction with the peace settlements of 1919–20](#hist.int.1919.1): the "war guilt" clause, reparations and lost land gave the Nazis the grievance they used against the Republic.
+- [Crash, Depression and New Deal (2): the impact of the Crash and the Depression, and Hoover's response](#hist.us.depression.2): the same slump in the USA, where voters replaced Hoover with Roosevelt in November 1932; democracy survived the Depression there and fell in Germany.
+- [Mussolini's Italy (1): how Mussolini gained control](#hist.d.italy.1): another leader invited into office by the head of state, in October 1922, after his squads' violence and the elites' fear of the left.
+- [Dictatorships compared](#hist.d.compare): how Mussolini, Stalin and Hitler came to power, side by side.
+- [The big picture](#hist.f.eras): the Depression and the Nazis in the years of depression, dictatorship and the road to war, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the impact of the Great Depression on Germany and why it weakened support for the Republic.
 - [ ] I can explain why the governments of Müller and Brüning were unpopular, and what Article 48 and presidential government were.

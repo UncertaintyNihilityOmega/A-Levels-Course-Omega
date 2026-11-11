@@ -544,6 +544,16 @@ A: Support: before 1950 Truman was selective (Greece, Turkey, Western Europe, no
 > He was angry at not being consulted, wanted to condemn the Soviet action in Hungary from a position of principle and feared that force would push Arab states towards the USSR.
 :::
 
+:::note Connections
+- [Origins of the Cold War (1): the breakdown of the wartime alliance, 1941–49](#hist.interp.coldwar.1): the same years seen from Moscow as well as Washington, from Yalta and Potsdam to the Berlin Blockade.
+- [Imperialism and world powers (4): why the USA emerged as a world power](#hist.int.empire.4): the world role argued over from 1898 to 1919 became permanent with containment and NATO.
+- [The Soviet Empire in Eastern Europe (1): the USSR and the satellite states to 1968](#hist.d.soviet.1): the Hungarian rising of 1956 seen from Moscow and Budapest, when Eisenhower's talk of rollback brought no American help.
+- [A time of challenges (2): Cuba and Vietnam](#hist.d.usa61.2): the domino theory, the Geneva Accords of 1954 and the Cuban exile plan were what Eisenhower left to Kennedy.
+- [The big picture](#hist.f.eras): containment in the Cold War and decolonisation, 1945–91.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain Truman's concerns about Soviet expansion and what Potsdam decided.
 - [ ] I can explain the state of post-war Western Europe, Marshall Aid, Greece and the Truman Doctrine.

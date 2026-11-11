@@ -459,6 +459,16 @@ A: Ideology: war as the test of a nation; empire and the Roman myth; Mussolini's
 > That sharing is why historians call Fascist Italy less totalitarian than Nazi Germany or Stalin's USSR, even though Mussolini coined the word "totalitarian" as a boast.
 :::
 
+:::note Connections
+- [International history, 1929–39 (2): why the League failed to keep the peace in the 1930s](#hist.int.1929.2): the invasion of Abyssinia in 1935 seen from Geneva, London and Paris, and why the League's sanctions failed.
+- [Hitler's Germany (2): how effectively the Nazis governed Germany](#hist.d.hitler.2): compare the OVRA with the Gestapo, and Mussolini's balance of force and consent with that of his partner in the Axis and the Pact of Steel.
+- [France (4): the rise and fall of Napoleon Bonaparte](#hist.eu.france.4): how far rule rested on police, propaganda or consent is the question asked of Napoleon's France too.
+- [Dictatorships compared](#hist.d.compare): terror, propaganda and consent in Mussolini's, Stalin's and Hitler's states side by side.
+- [The big picture](#hist.f.eras): Fascist rule and foreign policy in the years of depression, dictatorship and the road to war, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the methods used to deal with opposition: OVRA, the Militia, the Special Tribunal, confino and informers, and judge how far they were a terror state.
 - [ ] I can describe the antisemitic laws of 1938 and explain the historians' views of why they were introduced.

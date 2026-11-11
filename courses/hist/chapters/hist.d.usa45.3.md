@@ -488,6 +488,16 @@ A: Support: Levitt's early leases and the FHA's redlining kept Black families ou
 > Galbraith (1958) and Harrington (1962) drew attention to what the affluent majority did not see.
 :::
 
+:::note Connections
+- [Crash, Depression and New Deal (1): the causes of the Great Crash and the Great Depression](#hist.us.depression.1): the consumer boom of the 1920s, with cars and radios bought on hire purchase, was an earlier mass-consumption economy, and it ended in the Crash.
+- [Gilded Age and Progressive Era (2): the consequences of rapid economic growth](#hist.us.gilded.2): the growth of the big cities after 1870 was the first great change in where Americans lived, before the move to the suburbs after 1945.
+- [A time of challenges (4): challenges to authority](#hist.d.usa61.4): the suburban housewife Betty Friedan wrote about and the baby-boom youth of the 1950s drove the women's movement and the protests of the 1960s.
+- [A time of challenges (1): the presidencies of Kennedy, Johnson and Nixon](#hist.d.usa61.1): Harrington's *The Other America* (1962) helped turn the hidden poverty of the 1950s into Johnson's war on poverty of 1964.
+- [The big picture](#hist.f.eras): the American boom in the Cold War and decolonisation, 1945–91.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain the economic impact of consumer demand: cars, televisions, appliances, the home market, services and new technology.
 - [ ] I can explain the growth of credit and debt, and the social effects of consumer culture.

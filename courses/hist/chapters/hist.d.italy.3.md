@@ -541,6 +541,16 @@ A: Support: Quota 90 chosen against Volpi's preference for 120–125 because the
 > Autarky became national policy after October 1935. It was costly and incomplete.
 :::
 
+:::note Connections
+- [Crash, Depression and New Deal (3): how successful Roosevelt's first New Deal was](#hist.us.depression.3): the same slump answered by a democracy: Roosevelt's Emergency Banking Act of March 1933 and the IRI of January 1933 were both state rescues of failing banks.
+- [Hitler's Germany (3): how successful Nazi economic policies were](#hist.d.hitler.3): Nazi Germany also pursued autarky and a war economy, through the Four Year Plan of 1936, and faced the same choice between guns and living standards.
+- [International history, 1929–39 (2): why the League failed to keep the peace in the 1930s](#hist.int.1929.2): the League's sanctions of November 1935 over Abyssinia, the background to Mussolini's drive for autarky.
+- [Dictatorships compared](#hist.d.compare): the economic policies of Italy, the Soviet Union and Germany side by side.
+- [The big picture](#hist.f.eras): Italy's economy in the years of depression, dictatorship and the road to war, 1929–41.
+
+You need only the chapters for your own options; the others are there for context.
+:::
+
 :::checklist What you can now do
 - [ ] I can explain Mussolini's aims for the economy and the four phases of policy between 1922 and 1941.
 - [ ] I can explain De Stefani's orthodox policies and why they were replaced.
