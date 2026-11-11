@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-11 · WRITE P29 · hist.d.usa45.3 (10,888 words), hist.d.usa45.4 (12,697 words); check ok, phone ok; no new widgets (hist-timeline and hist-chart used, probed clean, shots viewed). Reviewer: see Writer's notes in packages/P29.md (TV 1960 figure sources differ; a few quotes from memory: Dulles Life 1956, Bradley 1951, 1952 Republican platform phrase).
+Last: 2026-11-11 · WRITE P28 · hist.d.usa45.1 (16379 words by kit count) and hist.d.usa45.2 (12376): check and phone pass; no new widgets (hist-timeline in both, hist-chart in usa45.2, probed clean light/dark/phone, shots looked at); facts web-checked, list of memory-only figures for the reviewer is at the end of packages/P28.md; no :::board box
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -32,9 +32,9 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P25: reviewed 2026-11-11
 - P26: reviewed 2026-11-11
 - P27: reviewed 2026-11-11
-- P28: writing 2026-11-11
+- P28: written 2026-11-11
 - P29: written 2026-11-11
-- P30: open
+- P30: writing 2026-11-11
 - P31: open
 - P32: open
 - P33: open
