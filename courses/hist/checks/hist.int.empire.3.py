@@ -104,4 +104,7 @@ for token in ["8 July 1853", "31 March 1854", "29 July 1858", "3 January 1868", 
               "200 million", "30 million", "117", "70,000", "7,000", "fifty-three years", "72 days", "Eleven of the seventeen"]:
     assert token in text, f"missing {token}"
 assert not re.search(r"\[M\d\]|\[A\d\]|\[B\d\]", text), "mark tokens are not used in History"
+# FIX round (reader items): Washington Conference years and the length of the glossed treaty ban
+for token in ["1921–22", "(Germany, Austria-Hungary and Italy)"]:
+    assert token in text, f"missing {token}"
 print("ok")

@@ -24,8 +24,8 @@ This chapter describes the murder of millions of people. Write about it as histo
 :::try Warm-up
 Q: What is the difference between a historian's interpretation and approach? (from [How historians disagree](#hist.interp.skills))
 A: The interpretation is what the extract claims and concludes (usually two linked aspects); the approach is what the historian brings: the questions asked, the interests and the beliefs that shaped them.
-Q: What does "contingency over motive" mean? (from [Origins of the First World War (2)](#hist.interp.ww1.2))
-A: Asking which choices and chances made an event happen, rather than who wanted it; it is the argument that outcomes depend on sequences of decisions that could have gone differently.
+Q: In the four-step method, what is Step 3 (testing every paragraph) for? (from [How historians disagree](#hist.interp.skills))
+A: To separate the main message of the extract from its sub-messages, so that no single paragraph becomes the whole answer; a good test is whether deleting the paragraph would change the main message.
 Q: What did Article 231 of the Treaty of Versailles say, and why did many Germans resent it? (from [International relations, 1919–29 (1)](#hist.int.1919.1))
 A: It made Germany and her allies responsible for all the loss and damage of the war; Germans read it as a charge of national guilt, and nationalists, including Hitler, used the resentment in the 1920s.
 :::
@@ -131,7 +131,7 @@ After the failed Munich putsch of November 1923 Hitler wrote ***Mein Kampf*** ("
 The Nazi belief that Jews are a dangerous race (not a religion) engaged in a world conspiracy, and that Germany's survival required their removal from public life, then from Germany and, in the end, from Europe. It combined older stereotypes, racial science and the myth of the "Jewish-Bolshevik" enemy.
 :::
 
-The party's propaganda poured out the message: Julius Streicher's weekly newspaper *Der Stürmer*, from 1923, printed obscene caricatures; Goebbels organised rallies and films; the SA beat up Jews in the streets. But historians such as Ian Kershaw point out that when the Nazis won 37.3 per cent of the vote in July 1932, voters were moved much more by unemployment, fear of communism, national humiliation and Hitler's promise of strong government than by antisemitism, and that Nazi leaders downplayed antisemitism in some election campaigns. This is a good fact to have in reserve for a question about whether ordinary Germans shared Nazi antisemitism.
+The party's propaganda poured out the message: Julius Streicher's weekly newspaper *Der Stürmer*, from 1923, printed obscene caricatures; Goebbels organised rallies and films; the SA (the Nazi stormtroopers, the party's uniformed street force) beat up Jews in the streets. But historians such as Ian Kershaw point out that when the Nazis won 37.3 per cent of the vote in July 1932, voters were moved much more by unemployment, fear of communism, national humiliation and Hitler's promise of strong government than by antisemitism, and that Nazi leaders downplayed antisemitism in some election campaigns. This is a good fact to have in reserve for a question about whether ordinary Germans shared Nazi antisemitism.
 
 ## The persecution of the Jews in Germany, 1933–39
 
@@ -175,7 +175,7 @@ On **30 January 1939** Hitler made a speech to the Reichstag in which he said th
 1. **Direction.** From 1933 the Jews were removed step by step from German life: from jobs and the professions, from citizenship, from their property, from the streets. By 1938 violence and the threat of violence were forcing them out.
 2. **Method.** The regime combined law (April 1933, September 1935, November 1938) with violence from the party and the SA (April 1933, summer 1935, November 1938). The state turned the violence into law each time.
 3. **Aim.** Until 1941 the declared aim was **emigration**, not murder. The regime was willing to use terror to achieve it, and it threatened worse.
-4. **For the debate.** An intentionalist stresses the consistent direction and Hitler's 1939 prophecy; a structuralist or functionalist stresses the competition between party and state agencies and the improvised, radicalising pattern. Each can use the same facts (the next chapter).
+4. **For the debate.** An intentionalist (one who holds that the Holocaust followed Hitler's plan from the start) stresses the consistent direction and Hitler's 1939 prophecy; a structuralist or functionalist (one who holds that it grew out of the rivalries of the Nazi state and the pressures of war) stresses the competition between party and state agencies and the improvised, radicalising pattern. Each can use the same facts; the next chapter teaches the debate in full.
 :::
 
 ### Jewish responses in Germany, 1933–39
@@ -184,7 +184,7 @@ German Jews did not wait passively. In 1933 they formed the Reich Representation
 
 ## War and Poland, 1939–41
 
-The Second World War began on **1 September 1939** when Germany invaded Poland. The invasion brought about 2 million Polish Jews under German rule at once, and the conquest of western Europe and the Balkans in 1940–41 brought more. Poland had the largest Jewish community in Europe, about 3.3 million people before the war. German policy in occupied Poland was brutal for everyone: the SS and army shot thousands of civilians in the first weeks, Poles were driven from the areas annexed to the Reich, and the rest of Poland was ruled as the **General Government** by Hans Frank.
+The Second World War began on **1 September 1939** when Germany invaded Poland. The invasion brought about 2 million Polish Jews under German rule at once, and the conquest of western Europe and the Balkans in 1940–41 brought more. Poland had the largest Jewish community in Europe, about 3.3 million people before the war. German policy in occupied Poland was brutal for everyone: the SS (the Nazi Party's elite guard, which ran the police, the camps and the killing) and army shot thousands of civilians in the first weeks, Poles were driven from the areas annexed to the Reich, and the rest of Poland was ruled as the **General Government** by Hans Frank.
 
 War changed the question. Before 1939 the Nazis wanted to push Jews out; now millions more Jews were under their rule, borders were shut by the war, and the rhetoric of a racial war for living space made the "Jewish question" a security question for the army and SS. Heydrich ordered on 21 September 1939 that Jews in Poland be concentrated in cities near railways and that Jewish councils be set up.
 
@@ -219,7 +219,7 @@ The invasion of the Soviet Union on **22 June 1941** (Operation Barbarossa) was 
 ### The Einsatzgruppen
 
 :::def Einsatzgruppen
-"Task forces" of the Security Police and the SD (the SS security service): four groups, A, B, C and D, of about 3,000 men in all, that followed the German armies into the USSR in 1941. They were joined by Order Police battalions, Waffen-SS units and local auxiliaries, and helped by the Wehrmacht, and they shot Jews, Communist officials and others.
+"Task forces" of the Security Police and the SD (the SS security service, the Nazi intelligence body): four groups, A, B, C and D, of about 3,000 men in all, that followed the German armies into the USSR in 1941. They were joined by Order Police battalions, Waffen-SS units and local auxiliaries, and helped by the Wehrmacht (the German armed forces), and they shot Jews, Communist officials and others.
 :::
 
 At first the Einsatzgruppen killed mainly Jewish men of military age and Communist officials. From the late summer of 1941, in many places from August, they shot women and children too, which meant that they were killing whole communities. Local people took part in some places: in Lithuania, Latvia and Ukraine, nationalists carried out pogroms and joined auxiliary police units; in Romania, an ally of Germany, soldiers and civilians murdered thousands of Jews in the city of Iași at the end of June 1941. The Lithuanian report of an Einsatzkommando officer, Karl Jäger, listed a total of **137,346** people shot up to 1 December 1941, most of them Jews.
@@ -240,7 +240,7 @@ Historians disagree about which of these steps was "the decision". Some see a se
 
 ### The Wannsee Conference, 20 January 1942
 
-The conference was planned for 9 December 1941 and was postponed. It took place on **20 January 1942** at a villa on the Wannsee lake in Berlin, chaired by **Heydrich**, with Adolf **Eichmann** (head of the Gestapo's Jewish section) keeping the minutes. Fifteen men attended, from the SS, the Gestapo, the Foreign Ministry, the Ministries of the Interior and Justice, the Reich Chancellery, the Four-Year Plan, the Party and the General Government. Heydrich told them that he had been given charge of the "Final Solution of the Jewish question" and that the ministries must cooperate. The protocol lists Jews country by country, from Germany and France to Britain, Ireland and the neutral states, and reaches a total of over **11 million**. It contained euphemisms, because it was a "top secret" document in 30 copies; only the sixteenth survives, found in 1947 in German Foreign Ministry papers.
+The conference was planned for 9 December 1941 and was postponed. It took place on **20 January 1942** at a villa on the Wannsee lake in Berlin, chaired by **Heydrich**, with Adolf **Eichmann** (head of the Jewish section of the Gestapo, the Nazi secret police) keeping the minutes. Fifteen men attended, from the SS, the Gestapo, the Foreign Ministry, the Ministries of the Interior and Justice, the Reich Chancellery, the Four-Year Plan, the Party and the General Government. Heydrich told them that he had been given charge of the "Final Solution of the Jewish question" and that the ministries must cooperate. The protocol lists Jews country by country, from Germany and France to Britain, Ireland and the neutral states, and reaches a total of over **11 million**. It contained euphemisms, because it was a "top secret" document in 30 copies; only the sixteenth survives, found in 1947 in German Foreign Ministry papers.
 
 Wannsee did not **decide** the murder of the Jews: Chełmno had begun killing 43 days earlier, the Einsatzgruppen had been shooting for seven months and deportations were under way. What it did was to bring the state's departments together under Heydrich's authority, show the plan reaching all Europe, and discuss the fate of the *Mischlinge* and of Jews married to non-Jews. Historians use it in different ways, as the next chapter shows.
 
@@ -250,7 +250,7 @@ Wannsee did not **decide** the murder of the Jews: Chełmno had begun killing 43
 The SS plan to murder the Jews of the General Government in Poland, named after Reinhard Heydrich (assassinated in Prague in June 1942). It was directed by SS General Odilo Globocnik at Lublin and ran three extermination camps, **Bełżec** (opened March 1942), **Sobibór** (May 1942) and **Treblinka** (July 1942), staffed by a few dozen Germans and Austrians at each camp, many from T4, and by auxiliaries, often former Soviet prisoners trained at Trawniki.
 :::
 
-These camps were built for one purpose: to murder. Trains brought Jews from ghettos, who were told that they were being "resettled", forced out and gassed within hours; a small group of prisoners was kept alive to sort belongings and bury or burn the bodies. The Jews of the General Government were killed in great waves in 1942. In Warsaw the **Great Deportation** from **22 July to 21 September 1942** sent about **265,000** people to Treblinka, a daily quota that Czerniaków could not accept. The USHMM's figures for Jewish victims at the main killing sites are shown below.
+These camps were built for one purpose: to murder. Trains brought Jews from ghettos, who were told that they were being "resettled", forced out and gassed within hours; a small group of prisoners was kept alive to sort belongings and bury or burn the bodies. The Jews of the General Government were killed in great waves in 1942. In Warsaw the **Great Deportation** from **22 July to 21 September 1942** sent about **265,000** people to Treblinka, a daily quota that Czerniaków could not accept. The figures of the USHMM (the United States Holocaust Memorial Museum) for Jewish victims at the main killing sites are shown below.
 
 :::html
 <div class="widget" data-w="hist-chart" data-title="Jews murdered at the main killing sites" data-unit="thousand people" data-type="bar" data-series="Jewish victims: Auschwitz=1000, Treblinka=925, Bełżec=435, Sobibór=167, Chełmno=152" data-source="United States Holocaust Memorial Museum (Holocaust Encyclopedia), rounded: about 1,000,000 Jews murdered at the Auschwitz complex, about 925,000 at Treblinka, about 435,000 at Bełżec, at least 167,000 at Sobibór and at least 152,000 at Chełmno. Majdanek, where tens of thousands of Jews also died, is not shown. These figures are estimates, not exact counts."></div>
@@ -264,7 +264,7 @@ Auschwitz began in 1940 as a concentration camp for Polish political prisoners. 
 
 ### The "Final Solution" in the rest of Europe
 
-German policy depended on others. In occupied western Europe the Germans used the local police and civil service. In France the Vichy regime passed its own anti-Jewish statute in October 1940, and on 16–17 July 1942 French police arrested about 13,000 Jews in Paris in the round-up that is named after the Vélodrome d'Hiver; about 4,000 were children. Dutch, Belgian, Slovak and Greek Jews were deported by train. Germany's allies Romania and Croatia carried out their own massacres; Hungary's gendarmes helped to deport its Jews in 1944. In Denmark in October 1943, warned in advance, ordinary Danes ferried nearly all the country's Jews, about 7,000, to neutral Sweden. In Bulgaria the government deported Jews from the territories it had occupied (about 11,000) but protected its citizen Jews after public protests. The variety of outcomes is important evidence for the debate about the role of local conditions and of choice.
+German policy depended on others. In occupied western Europe the Germans used the local police and civil service. In France the Vichy regime (the French government that collaborated with Germany after the defeat of 1940) passed its own anti-Jewish statute in October 1940, and on 16–17 July 1942 French police arrested about 13,000 Jews in Paris in the round-up that is named after the Vélodrome d'Hiver; about 4,000 were children. Dutch, Belgian, Slovak and Greek Jews were deported by train. Germany's allies Romania and Croatia carried out their own massacres; Hungary's gendarmes helped to deport its Jews in 1944. In Denmark in October 1943, warned in advance, ordinary Danes ferried nearly all the country's Jews, about 7,000, to neutral Sweden. In Bulgaria the government deported Jews from the territories it had occupied (about 11,000) but protected its citizen Jews after public protests. The variety of outcomes is important evidence for the debate about the role of local conditions and of choice.
 
 ## Victims other than the Jews
 
@@ -323,7 +323,7 @@ In Holocaust history, a person, government or organisation that knew of the pers
 | Person | Role | Why they matter |
 |---|---|---|
 | Adolf Hitler | Nazi leader; Chancellor from 30 January 1933; Führer | Antisemitism was central to his worldview; his public statements (1939 "prophecy", December 1941) and his authorisations are central to the debate on his role |
-| Joseph Goebbels | Propaganda Minister; Gauleiter of Berlin | Orchestrated the boycott and the November pogrom; his diaries record Hitler's remarks |
+| Joseph Goebbels | Propaganda Minister; Gauleiter (regional Nazi Party leader) of Berlin | Orchestrated the boycott and the November pogrom; his diaries record Hitler's remarks |
 | Hermann Göring | Head of the Four-Year Plan; Reich Marshal | Led Aryanisation; chaired the meeting of 12 November 1938; wrote to Heydrich on 31 July 1941 |
 | Heinrich Himmler | Head of the SS and, from 1936, of the German police | Directed the SS, the camps and the extermination programme; the Posen speech of October 1943 |
 | Reinhard Heydrich | Head of the Reich Security Main Office; chaired Wannsee | Organised the Einsatzgruppen, emigration and the plan for the "Final Solution"; assassinated in 1942 |
@@ -461,6 +461,8 @@ A: They confirmed the report in November 1942 and issued a declaration on 17 Dec
 Q: Why is Holocaust denial not a historical interpretation?
 A: Because it denies events that are proved by the perpetrators' documents, testimony, physical evidence and records; a historical interpretation is an argument about why and how events happened, and must fit the evidence.
 :::
+
+**How the short questions below are marked.** Paper 3 has only the 40-mark question, which is marked with Tables A and B (see the skills chapter). The questions below marked [10], [15] and [20] are practice drills for the knowledge half of that answer, and their levels are the Paper 2-style levels (for a 10-mark question, Level 4 = 9–10), not the Paper 3 tables.
 
 :::try Exam practice ★ to ★★★
 Q: [10 marks] ★ Explain the significance of the Nuremberg Laws of 1935 for the persecution of the Jews.

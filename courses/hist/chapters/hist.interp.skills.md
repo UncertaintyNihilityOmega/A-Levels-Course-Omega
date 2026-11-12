@@ -135,13 +135,15 @@ Now test each paragraph against your sentence. Ask: "Is this paragraph part of t
 
 Half of the marks (Table B, AO1) are for knowledge, and the knowledge is not separate from the analysis: the specimen mark scheme describes knowledge "used to support the analysis of the interpretation". Section "Using your knowledge" below shows how. In short: for each claim you identify, say **what it means**, then show **what you know** that explains, tests or places it.
 
+The four steps are Read (Step 1), Find the main interpretation (Step 2), Test every paragraph (Step 3) and Explain with knowledge (Step 4). In practice Step 4 is done as three actions, so the box below lists six actions in all: actions 1, 2 and 3 are Steps 1, 2 and 3, and actions 4, 5 and 6 together are Step 4.
+
 :::steps
-1. Read the extract twice, marking claims, words of judgement and contrast words.
-2. Write one sentence for the main interpretation, with its two aspects.
-3. Test each paragraph: main message, supporting step or sub-message?
-4. Plan paragraphs by *aspect of the interpretation*, not by paragraph of the extract.
-5. For each aspect, explain it with the extract's own words and add precise knowledge.
-6. Finish with the approach: what questions the historian asks, what they stress and what they leave out, and how these fit the interpretation.
+1. (Step 1) Read the extract twice, marking claims, words of judgement and contrast words.
+2. (Step 2) Write one sentence for the main interpretation, with its two aspects.
+3. (Step 3) Test each paragraph: main message, supporting step or sub-message?
+4. (Step 4) Plan paragraphs by *aspect of the interpretation*, not by paragraph of the extract.
+5. (Step 4) For each aspect, explain it with the extract's own words and add precise knowledge.
+6. (Step 4) Finish with the approach: what questions the historian asks, what they stress and what they leave out, and how these fit the interpretation.
 :::
 
 :::exam Time plan for 75 minutes
@@ -182,7 +184,7 @@ The specimen mark scheme says that "best fit" is used: an answer that convincing
 
 ### Labels: only when the extract earns them
 
-Historians' schools have names (intentionalist and structuralist; traditionalist, revisionist and post-revisionist; revisionist and anti-revisionist). The specimen mark scheme credits such labels **only when they are appropriate to the extract and supported from it**. Using a label correctly can help you show you understand how an approach fits a school; using one that the extract does not support is an error, not a bonus. A label is a shortcut for a sentence you must still write: "This extract is revisionist **because** it argues against the long-accepted view that …". If you cannot write the *because*, leave the label out.
+Historians' schools have names (intentionalist and structuralist; traditionalist, revisionist and post-revisionist; revisionist and anti-revisionist). The specimen mark scheme credits such labels **only when they are appropriate to the extract and supported from it**. Using a label correctly can help you show you understand how an approach fits a school; using one that the extract does not support is an error, not a bonus. The meaning of a label is fixed inside each debate, so do not carry one debate's meaning to another. In the debate on 1914, "revisionist" means something different from what it means in the debate on the Cold War, and the next chapters say which; and "it overturned an older view" is not enough on its own to earn the word. The Cobban example below uses "revisionist" only in the sense of that French Revolution debate. A label is a shortcut for a sentence you must still write: "This extract is revisionist **because** it argues against the long-accepted view that …". If you cannot write the *because*, leave the label out.
 
 ## Using your knowledge
 
@@ -203,7 +205,7 @@ Compare two paragraphs about the same sentence of an extract.
 The weak paragraph is accurate but answers no question. The strong paragraph uses only the facts it needs, ties each to the extract, and ends by saying what the claim means. At Table B Level 6, every sentence of knowledge does this.
 
 :::eg Table B: three versions of one knowledge paragraph
-Take one sentence of Practice extract C (it is printed in full in the next section): "Most peasants already owned some land, and the dues they paid were burdens on property rather than relics of serfdom." Here are three ways to use knowledge on it.
+Take one sentence of Practice extract C (the letter C only labels this one worked extract, printed in full in the next section; it is not one of the numbered practice extracts 1 to 3 at the end of the chapter, and there is no extract A or B): "Most peasants already owned some land, and the dues they paid were burdens on property rather than relics of serfdom." Here are three ways to use knowledge on it.
 
 **A Level 3 paragraph (Table B: "generally accurate and relevant", 9–11).** "Peasants in France paid a lot of taxes. They paid the tithe to the Church and the taille to the king, and they were very poor. The French Revolution began in 1789 and the peasants joined in by attacking the nobles."
 

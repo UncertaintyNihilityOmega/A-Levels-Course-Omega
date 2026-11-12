@@ -39,7 +39,7 @@ Read this first. Every later section explains one part of it.
 | 29 October 1919 | The first International Labour Conference opens in Washington |
 | 19 November 1919 | The US Senate votes against the Treaty of Versailles and the Covenant |
 | 10 January 1920 | The Covenant comes into force; the League exists |
-| 28 July 1920 | Teschen is divided by the Conference of Ambassadors |
+| 28 July 1920 | Teschen is divided by the Conference of Ambassadors (a committee of Allied ambassadors in Paris) |
 | 9 October 1920 | General Żeligowski seizes Vilna for Poland |
 | 15 November 1920 | The first Assembly meets in Geneva |
 | June 1921 | The League Council gives the Aaland Islands to Finland, with autonomy |
@@ -103,7 +103,7 @@ The League worked through several bodies.
 :::
 
 - **The Assembly** was made up of all member states, each with one vote and up to three delegates. It met each September in Geneva, discussed any matter within the League's sphere, elected the non-permanent members of the Council, admitted new members, and approved the budget. Because each member had one vote, small states had the same say as great powers.
-- **The Council** was the smaller, more powerful body. It began with four permanent members (Britain, France, Italy and Japan; a fifth seat was reserved for the USA, which never took it) and four non-permanent members chosen by the Assembly (the first were Belgium, Brazil, Spain and Greece). The non-permanent seats rose to six in 1922 and nine in 1926, when Germany took a permanent seat. The Council met several times a year and handled disputes and crises.
+- **The Council** was the smaller, more powerful body. It began with four permanent members (Britain, France, Italy and Japan; a fifth seat was reserved for the USA, which never took it) and four non-permanent members chosen by the Assembly (the first were Belgium, Brazil, Spain and Greece), who were elected for fixed terms; China replaced Greece in 1921. The non-permanent seats rose to six in 1922 and nine in 1926, when Germany took a permanent seat. The Council met several times a year and handled disputes and crises.
 - **The Secretariat** was the League's civil service, based in Geneva and led by a Secretary-General, Sir Eric Drummond of Britain (1920–33). Its staff came from many nations and prepared the work of the other organs.
 - **The Permanent Court of International Justice** (the World Court) at The Hague, set up under Article 14 and opened in February 1922, gave judgements on disputes states brought to it and advice to the Council and Assembly.
 - **The agencies and commissions** (refugees, labour, health, mandates, slavery, disarmament and others) did most of the League's day-to-day work.
@@ -223,9 +223,16 @@ Memel (Klaipėda) was a Baltic port with a mixed German and Lithuanian populatio
 
 *Outcome:* a mixed result. The League helped to turn a seizure into an agreed arrangement and protected the autonomy of the territory, but it did not reverse the use of force, and Germans noted that the League accepted what Lithuania had done. In March 1939 Nazi Germany took Memel back by ultimatum.
 
+### Two crises of 1923 outside the League: Corfu and the Ruhr
+
+Later sections and the exam answers use two events of 1923. The next chapter tells both in full; here is what you need.
+
+- **Corfu (August–September 1923).** An Italian general, Enrico Tellini, was murdered on Greek soil while marking the Greek–Albanian frontier for the Conference of Ambassadors. Italy's leader, Mussolini, sent Greece an ultimatum, and when Greece only partly accepted it, Italian ships bombarded the Greek island of Corfu and troops occupied it. Greece appealed to the League, but Italy denied that the Council had any right to interfere and hinted that it would leave the League. After days of argument the dispute was handed to the Conference of Ambassadors instead, which ordered Greece to pay Italy 50 million lire; Italy then withdrew from Corfu. A great power had defied the League and got its way.
+- **The Ruhr (January 1923).** France and Belgium sent troops into the Ruhr, Germany's chief industrial region, to seize coal and goods because Germany had fallen behind with reparations. Germany was not a League member and no state asked the League to act, so the League played no part; the dispute was settled outside it by the Dawes Plan of 1924.
+
 ### The Greco-Bulgarian border dispute, 1925
 
-On 18 or 19 October 1925 shots were fired at the border near Petrich and Greek soldiers were killed (Greek accounts say a captain and a sentry; Bulgarian accounts say a soldier who crossed the border after his dog; the accounts differ). Greece sent an ultimatum, and on **22 October** Greek troops invaded Bulgaria and occupied the area around Petrich. Bulgaria appealed to the League. Aristide Briand, the French foreign minister, was at that time President of the Council, and acted at once: he telegraphed both governments demanding a ceasefire and withdrawal, and called a meeting of the Council in Paris. The Council sent British, French and Italian officers to watch the withdrawal. Greece obeyed. A commission of inquiry found that Greece was at fault, and Greece paid Bulgaria 45,000 pounds in compensation.
+On 18 or 19 October 1925 shots were fired at the border near Petrich and Greek soldiers were killed (Greek accounts say a captain and a sentry; Bulgarian accounts say a soldier who crossed the border after his dog; the accounts differ). Greece sent an ultimatum, and on **22 October** Greek troops invaded Bulgaria and occupied the area around Petrich. Bulgaria appealed to the League. Aristide Briand, the French foreign minister (he was also French prime minister for part of 1925, from November), was at that time President of the Council, and acted at once: he telegraphed both governments demanding a ceasefire and withdrawal, and called a meeting of the Council in Paris. The Council sent British, French and Italian officers to watch the withdrawal. Greece obeyed. A commission of inquiry found that Greece was at fault, and Greece paid Bulgaria 45,000 pounds in compensation.
 
 *Outcome:* a success, within days. But some Greeks complained, with some justice, that a great power would not have been treated so firmly. The success shows the pattern: the League could act when a small state broke the peace and the great powers agreed.
 
@@ -404,7 +411,7 @@ Overall, the absence of the USA was a serious weakness, but it was not the great
 :::eg Paper 1 (b) [25]: use all four sources and your own knowledge
 **Source A**
 
-Should any Member of the League resort to war in disregard of its covenants under Articles 12, 13 or 15, it shall ipso facto be deemed to have committed an act of war against all other Members of the League, which hereby undertake immediately to subject it to the severance of all trade or financial relations.
+Should any Member of the League resort to war in disregard of its covenants under Articles 12, 13 or 15, it shall ipso facto (by that very fact) be deemed to have committed an act of war against all other Members of the League, which hereby undertake immediately to subject it to the severance of all trade or financial relations.
 
 *Adapted from Article 16 of the Covenant of the League of Nations, 1919. Shortened; the words are the Covenant's own.*
 
@@ -521,7 +528,7 @@ The Members of the League recognise that the maintenance of peace requires the r
 
 :::try Exam practice ★ to ★★★
 Q: [10 marks] ★ Explain why the League of Nations was able to stop the Greek invasion of Bulgaria in 1925.
-A: Indicative content: Greece was a small state with no great-power backer; Britain and France, the leading members, agreed on what to do; Briand, the French prime minister, was President of the Council and acted at once, demanding a ceasefire and withdrawal and summoning the Council; the League sent officers to watch the withdrawal; Greece obeyed, and a commission of inquiry found it at fault and it paid compensation of 45,000 pounds. A Level 4 answer (9–10) connects these: it was the agreement of the great powers that made the League's authority real, and the weakness of Greece that made obedience likely. It ends with a judgement on the main reason.
+A: Indicative content: Greece was a small state with no great-power backer; Britain and France, the leading members, agreed on what to do; Briand, the French foreign minister, was President of the Council and acted at once, demanding a ceasefire and withdrawal and summoning the Council; the League sent officers to watch the withdrawal; Greece obeyed, and a commission of inquiry found it at fault and it paid compensation of 45,000 pounds. A Level 4 answer (9–10) connects these: it was the agreement of the great powers that made the League's authority real, and the weakness of Greece that made obedience likely. It ends with a judgement on the main reason.
 Q: [10 marks] ★★ Explain why the Mandates Commission had little power to change how mandated territories were governed.
 A: Indicative content: it had no right to inspect, only to read the mandatories' own annual reports and receive petitions; it could not compel a mandatory to act and could only report to the Council, where the mandatories had seats and voting required unanimity; its members were experts, not governments; C-class mandates were governed almost as part of the mandatory's own territory; the mandatories were Britain, France and others who were the strongest powers in the League. Level 4: connect the lack of powers of investigation with the position of the mandatories inside the League, and judge which mattered more.
 Q: [20 marks] ★★ To what extent was the League of Nations' work on humanitarian issues more successful than its work on territorial disputes in the 1920s?

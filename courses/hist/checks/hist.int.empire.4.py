@@ -101,4 +101,7 @@ for token in ["12 July 1893", "17 January 1893", "15 February 1898", "11 April 1
               "128 Americans", "28 September 1901", "23 March 1901", "19 November 1919", "19 March 1920"]:
     assert token in text, f"missing {token}"
 assert not re.search(r"\[M\d\]|\[A\d\]|\[B\d\]", text), "mark tokens are not used in History"
+# FIX round (reader items): Filipino independence dates used in the key box
+for token in ["12 June 1898", "January 1899", "since 1896"]:
+    assert token in text, f"missing {token}"
 print("ok")

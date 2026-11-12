@@ -123,4 +123,8 @@ for token in ["8 January 1918", "28 April 1919", "10 January 1920", "15 November
     assert token in text, f"missing {token}"
 assert not re.search(r"\[M\d\]|\[A\d\]|\[B\d\]", text), "mark tokens are not used in History"
 assert "—" not in text, "no em dashes"
+# FIX round (reader items): Corfu and Ruhr box, Council seats
+for token in ["50 million lire", "China replaced Greece in 1921", "(a committee of Allied ambassadors in Paris)"]:
+    assert token in text, f"missing {token}"
+assert "January 1923" in text
 print("ok")

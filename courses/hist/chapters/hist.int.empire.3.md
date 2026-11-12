@@ -277,7 +277,7 @@ Competition with China followed. In 1882 Korean soldiers rose against Japanese i
 The **Sino-Japanese War** (1894–95) astonished the world. China was far larger, but its forces were divided and badly led. Japan won at Pyongyang (15–16 September 1894), destroyed much of the Chinese fleet at the Battle of the Yalu (17 September), took Port Arthur in November and the naval base of Weihaiwei in February 1895. The **Treaty of Shimonoseki** (17 April 1895) gave Japan:
 - China's recognition of the "full and complete independence and autonomy" of Korea (Article 1);
 - the island of **Taiwan** (Formosa), the Pescadores and the **Liaodong peninsula**, with Port Arthur;
-- an indemnity of 200 million silver taels (a very large sum, several times Japan's yearly revenue); and
+- an indemnity of 200 million silver taels (the tael was a Chinese unit of silver weight, used as money; the sum was very large, several times Japan's yearly revenue); and
 - new trading rights in China.
 
 Six days later, on **23 April 1895**, Russia, Germany and France (the **Triple Intervention**) told Japan to give Liaodong back, on the grounds that its possession would threaten Beijing and the peace of the Far East. Russia, which had its own plans for Manchuria, led the move. Japan had no way to resist three great powers, and gave it up in return for an extra 30 million taels. In 1898 Russia took a lease on Port Arthur for itself. The humiliation was never forgotten, and it taught the Japanese two lessons: that they needed a still stronger navy, and that sooner or later they would face Russia.
@@ -307,7 +307,7 @@ The High Contracting Parties, having mutually recognised the independence of Chi
 By 1900 Britain's leaders feared that they could no longer protect the empire alone.
 - **Overstretch.** The Boer War (1899–1902) had shown how thin British forces were, and the humiliation of having to send nearly half a million men to fight farmers had damaged confidence. Britain's navy was supposed to match the next two largest fleets combined (the Two-Power Standard), but those fleets were now French and Russian, with Germany's building up as well.
 - **Russia in the Far East.** After the Boxer Rising, Russia kept its troops in Manchuria and pushed into Korea, threatening British trade in China and, in the long term, India. Britain could not stop it alone.
-- **Germany had said no.** In 1898–1901 Britain had made several attempts at an agreement with Germany, which wanted Britain to join the Triple Alliance. These failed, partly because Germany would not help against Russia in Asia.
+- **Germany had said no.** In 1898–1901 Britain had made several attempts at an agreement with Germany, which wanted Britain to join the Triple Alliance (Germany, Austria-Hungary and Italy). These failed, partly because Germany would not help against Russia in Asia.
 - **Naval economy.** An alliance with Japan, whose navy was the strongest in East Asia after Britain's, meant that Britain could pull battleships back to home waters, a vital step as the German fleet grew.
 
 ### Why Japan signed
@@ -318,7 +318,7 @@ By 1900 Britain's leaders feared that they could no longer protect the empire al
 
 ### The consequences
 
-- **For Japan:** it could now take on Russia without risking a repeat of 1895. It also gained British loans and naval intelligence in the war. The alliance was renewed in 1905, when it was extended to cover India and to make each side defend the other against attack from one power, and again in 1911. It ended after the Washington Conference, in 1923.
+- **For Japan:** it could now take on Russia without risking a repeat of 1895. It also gained British loans and naval intelligence in the war. The alliance was renewed in 1905, when it was extended to cover India and to make each side defend the other against attack from one power, and again in 1911. It ended after the Washington Conference (1921–22, a meeting of the main Pacific powers that limited their navies and replaced the alliance with wider treaties), in 1923.
 - **For Britain:** it freed its navy for the North Sea, and gave it a friendly power in East Asia, which later made it easier to settle disputes with France and Russia (the Entente Cordiale of 1904 and the Convention of 1907: see [Imperialism and world powers (2)](#hist.int.empire.2)).
 - **For Russia and Europe:** Russia was warned that it could not use force in Asia without a war in which Japan had British support, but it did not heed the warning. France and Russia made a declaration of their own in March 1902 about the alliance and the Far East.
 - **For the world:** the treaty was the first alliance between a European great power and an Asian state on terms of equality, and it was widely seen as the end of the idea that only white nations were great powers.
@@ -399,7 +399,7 @@ Japan was bound by no treaty to fight in Europe, and the Anglo-Japanese Alliance
 ### Japan and China: the Twenty-One Demands
 
 Japan's main gain was at the expense of China, then weak and divided under President Yuan Shikai. On **18 January 1915**, Katō presented Yuan with the **Twenty-One Demands**, in five groups:
-1. Group 1 (four demands): China was to accept whatever Japan agreed with Germany over Shandong, and to give Japan further rights there.
+1. Group 1 (four demands): China was to accept whatever Japan agreed with Germany over Shandong (the Chinese province where Germany held Kiaochow), and to give Japan further rights there.
 2. Group 2 (seven demands): extended Japan's leases in south Manchuria and Inner Mongolia to ninety-nine years, with rights to buy land and mine.
 3. Group 3 (two demands): gave Japan control of the Hanyeping iron and coal company.
 4. Group 4 (one demand): barred China from giving any more coastal or island territory to a third power.
@@ -409,10 +409,10 @@ Japan tried to keep Group 5 secret, but China leaked the demands to the other po
 
 ### Paris, 1919
 
-Japan was one of the "Big Five" at the **Paris Peace Conference** (with the USA, Britain, France and Italy), and held a permanent seat on the Council of the League of Nations. Its aims were to keep what it had taken and to gain an explicit recognition of equality.
-- **Racial equality.** The Japanese delegation, led by Makino Nobuaki, proposed to add to the Covenant of the League a clause on the equal treatment of the nationals of member states, "making no distinction, either in law or in fact, on account of their race or nationality" (the first draft, presented on 13 February 1919). A version of the proposal came to a vote in the League commission on 11 April 1919. Eleven of the seventeen members present voted in favour and none against, but the chairman, President Wilson, ruled that so important a change needed a unanimous vote. The strongest opposition came from the British Empire delegation, where the Australian prime minister, Billy Hughes, was the most outspoken. Japan felt insulted, and the rejection fed its distrust of the West.
+Japan was one of the "Big Five" at the **Paris Peace Conference** (with the USA, Britain, France and Italy), and held a permanent seat on the Council of the League of Nations (the new international organisation set up at Paris to keep the peace; its Council was its small governing committee). Its aims were to keep what it had taken and to gain an explicit recognition of equality.
+- **Racial equality.** The Japanese delegation, led by Makino Nobuaki, proposed to add to the Covenant of the League (its founding charter) a clause on the equal treatment of the nationals of member states, "making no distinction, either in law or in fact, on account of their race or nationality" (the first draft, presented on 13 February 1919). A version of the proposal came to a vote in the League commission on 11 April 1919. Eleven of the seventeen members present voted in favour and none against, but the chairman, President Wilson, ruled that so important a change needed a unanimous vote. The strongest opposition came from the British Empire delegation, where the Australian prime minister, Billy Hughes, was the most outspoken. Japan felt insulted, and the rejection fed its distrust of the West.
 - **Shandong.** Wilson and the British gave way to Japan's claim, in view of the secret agreements of 1917. The Treaty of Versailles transferred German rights in Shandong to Japan (Article 156). Chinese students protested on 4 May 1919 (the May Fourth Movement), and China refused to sign the treaty. Japan promised to return the territory to China, and did so in 1922, after the Washington Conference.
-- **The islands.** The German Pacific islands north of the equator became a Japanese **mandate** under the League (the South Seas Mandate).
+- **The islands.** The German Pacific islands north of the equator became a Japanese **mandate** under the League (the South Seas Mandate): a mandate was a former German or Ottoman territory given to a victor to run under League supervision.
 
 ### Japan's global position by 1918
 

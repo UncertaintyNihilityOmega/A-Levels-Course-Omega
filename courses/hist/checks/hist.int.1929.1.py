@@ -68,4 +68,9 @@ for token in ["24 October 1929", "17 June 1930", "14 September 1930", "14 Novemb
     assert token in text, f"missing {token}"
 assert not re.search(r"\[M\d\]|\[A\d\]|\[B\d\]", text), "mark tokens are not used in History"
 assert "—" not in text, "no em dashes"
+# FIX round (reader items): Reichstag fire to the election, and the 1935-36 box
+from datetime import date as _d
+assert (_d(1933, 3, 5) - _d(1933, 2, 27)).days == 6, "election six days (about a week) after the fire"
+for token in ["27 February 1933", "7 March 1936", "11.5 million", "3 October 1935"]:
+    assert token in text, f"missing {token}"
 print("ok")

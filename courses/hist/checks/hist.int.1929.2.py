@@ -91,4 +91,8 @@ for token in ["18 September 1931", "24 October 1931", "13 to 1", "10 December 19
     assert token in text, f"missing {token}"
 assert not re.search(r"\[M\d\]|\[A\d\]|\[B\d\]", text), "mark tokens are not used in History"
 assert "—" not in text, "no em dashes"
+# FIX round (reader items): fifty states imposed sanctions; the Emperor's fifty-two is every member except Italy and Ethiopia
+assert 54 - 2 == 52, "League had 54 members in 1936; minus Italy and Ethiopia = 52"
+for token in ["fifty-two", "Fifty states agreed"]:
+    assert token in text, f"missing {token}"
 print("ok")

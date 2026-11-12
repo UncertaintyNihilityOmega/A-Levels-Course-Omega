@@ -64,4 +64,14 @@ for token in ["9 April 1924", "1 September 1924", "2 October 1924", "12 March 19
 assert not re.search(r"\[M\d\]|\[A\d\]|\[B\d\]", text), "mark tokens are not used in History"
 assert "—" not in text, "no em dashes"
 assert "<!--END-->" not in text, "leftover marker"
+# FIX round (reader items): present value 36 billion against 112 billion paid over 59 years (average about 1.9 billion a year)
+_avg = 112 / 59
+_pv_rate = None
+for _r in [x / 1000 for x in range(10, 120)]:
+    _pv = _avg * (1 - (1 + _r) ** -59) / _r
+    if _pv <= 36:
+        _pv_rate = _r
+        break
+assert _pv_rate is not None and 0.04 <= _pv_rate <= 0.055, f"implied discount rate {_pv_rate}"
+assert "36 billion is what all the future instalments were worth in 1929 money" in text
 print("ok")

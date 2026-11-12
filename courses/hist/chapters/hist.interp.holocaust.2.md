@@ -39,7 +39,7 @@ A: It shows that in 1940 officials were still planning to expel the Jews, not to
 
 ## The story in dates
 
-The debate has had six main stages. Read the table first; every later section explains one stage.
+The debate has run for more than seventy years. Read the table first; every later section explains part of it.
 
 | Date | Event in the debate |
 |---|---|
@@ -126,7 +126,7 @@ Their evidence:
 
 The criticisms:
 - **There is no written Hitler order** for the murder of the Jews. Intentionalists answer that he gave verbal orders, as he often did; critics reply that this is an argument from silence.
-- **Hitler's ideas did not produce a plan.** The policy until 1941 was emigration, and the Madagascar plan of 1940 and the Nisko scheme of 1939 were expulsions. If Hitler intended murder from 1919, why did he wait twenty-two years, and why try other means?
+- **Hitler's ideas did not produce a plan.** The policy until 1941 was emigration, and the Madagascar plan of 1940 and the Nisko scheme of 1939 (the October 1939 plan to deport Jews to a reserve near Nisko in the Lublin area of occupied Poland, dropped in 1940) were expulsions. If Hitler intended murder from 1919, why did he wait twenty-two years, and why try other means?
 - **It stops at Hitler.** It cannot easily explain the part played by the Einsatzgruppen commanders, the Foreign Office, the railways, local rulers such as Greiser, and the many hands that made the murder possible; nor how a vague aim became a method.
 - **The sources are thin.** Hitler said little in writing about the Final Solution, so intentionalists have to read his public rhetoric as a plan.
 
@@ -155,7 +155,7 @@ The process by which Nazi policy became more extreme step by step, as rival offi
 The structuralist evidence:
 - **Competing agencies in the persecution.** Between 1933 and 1938 the Party, SA, the Interior Ministry, the Economics Ministry, Göring's Four-Year Plan and the SS all pursued their own measures, often against one another; Aryanisation, for example, was a scramble.
 - **Pressure from below.** The boycott of April 1933, the violence of summer 1935 and Kristallnacht (set off by Goebbels, and criticised by Göring) show party activists forcing the pace.
-- **Rivalry over the East.** Himmler, Frank, the Gauleiters and the army competed to rule the occupied territories; local Nazi leaders such as Arthur Greiser, in the Warthegau, sought to get rid of "their" Jews first.
+- **Rivalry over the East.** Himmler, Frank, the Gauleiters (regional Nazi Party leaders) and the army competed to rule the occupied territories; local Nazi leaders such as Arthur Greiser, in the Warthegau, sought to get rid of "their" Jews first.
 - **Wannsee** shows many departments being brought in; the Reich Railways, the Foreign Office and the ministries took part in routine ways.
 - **The Willikens speech.** In 1934 Werner Willikens, a state secretary in the Prussian agriculture ministry, told officials that it was their job to work "towards the Führer" by guessing what he wanted. Ian Kershaw used this in the 1990s as the key to the system (below).
 

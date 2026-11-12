@@ -87,7 +87,7 @@ The reparations settlement of 1924, drawn up by a committee chaired by Charles D
 
 Its main proposals:
 - **Payments rescheduled.** Germany was to pay **1 billion marks** in the first year, rising to a standard annuity of **2.5 billion marks** by 1928–29. The Plan fixed no total: it dealt with how much to pay each year, not with how long Germany would pay. Payments could be higher if German prosperity rose.
-- **A new currency and bank.** The Reichsmark was tied to gold. The Reichsbank was reorganised under an international board, independent of the government.
+- **A new currency and bank.** The Reichsmark, which replaced the temporary Rentenmark of November 1923, was tied to gold. The Reichsbank was reorganised under an international board, independent of the government.
 - **Security for the creditors.** The German railways were made a company, with their bonds a pledge for payments, and a mortgage of 5 billion marks was placed on German industry.
 - **A loan.** Germany received a foreign loan of **800 million gold marks**, about half of it raised on the American market.
 - **Protection of the mark.** A Transfer Committee, led by an American Agent-General for Reparations (Seymour Parker Gilbert), would see that payments did not endanger the currency.
@@ -95,7 +95,7 @@ Its main proposals:
 
 ### The Dawes Plan: the effect on international relations
 
-**Reactions.** France accepted the plan because Herriot's government wanted American support for the franc and an end to the quarrel with Britain; Britain accepted it because it wanted Germany back at work. In Germany the Reichstag approved the necessary laws on 29 August 1924, but only because about half of the nationalist DNVP deputies voted for them, giving the two-thirds majority needed. The right-wing parties had attacked the foreign supervision as a "second Versailles".
+**Reactions.** France accepted the plan because Herriot's government wanted American support for the franc and an end to the quarrel with Britain; Britain accepted it because it wanted Germany back at work. In Germany the Reichstag approved the necessary laws on 29 August 1924, but only because about half of the deputies of the nationalist DNVP (the German National People's Party, the main nationalist party of the right) voted for them, giving the two-thirds majority needed. The right-wing parties had attacked the foreign supervision as a "second Versailles".
 
 **Effects.**
 1. **It took reparations out of politics.** A committee of experts, and not governments, set the payments, which reduced the chances of another Ruhr-style crisis.
@@ -151,7 +151,7 @@ Germany made conditions: that it would have a permanent Council seat, and that i
 
 The Dawes Plan was meant to be temporary. In 1928 Germany asked for a final settlement, and the Allies, who wanted the occupation to end and reparations to be fixed, agreed. The **Young Committee**, chaired by the American businessman **Owen Young**, met in Paris from February to June 1929 and reported on 7 June.
 
-**Proposals.** The plan fixed the total German debt at about **36 billion marks** (the present value), payable with interest in annuities until **1988**, a total of about **112 billion marks over 59 years**, compared with the 132 billion marks of the 1921 schedule (a headline figure that was never expected to be paid in full). The annual payment started at about 1.7 billion marks and averaged about 2 billion. The foreign controls of the Dawes Plan (the Agent-General, the supervision of the railways and Reichsbank) were removed and Germany took charge of its own payments. A new **Bank for International Settlements** (BIS) in Basel was to handle them. The USA again took part as an adviser and banker, not as a government.
+**Proposals.** The plan fixed the total German debt at about **36 billion marks** (the present value), payable with interest in annuities until **1988**, a total of about **112 billion marks over 59 years**. The two figures do not clash: 36 billion is what all the future instalments were worth in 1929 money (the "present value", because a mark paid in 1988 is worth less than a mark today), while 112 billion is the sum of all the instalments added up to 1988. The 112 billion cannot be set directly beside the 132 billion marks of the 1921 schedule, which included "C" bonds that were never expected to be paid, so 132 billion was a headline figure only. The annual payment started at about 1.7 billion marks and averaged about 2 billion. The foreign controls of the Dawes Plan (the Agent-General, the supervision of the railways and Reichsbank) were removed and Germany took charge of its own payments. A new **Bank for International Settlements** (BIS) in Basel was to handle them. The USA again took part as an adviser and banker, not as a government.
 
 **The Hague Conference.** The plan was discussed at **The Hague** in two sessions, 6–31 August 1929 and 3–20 January 1930. At the first, Britain's Chancellor of the Exchequer, **Philip Snowden**, demanded a larger British share and threatened to let the plan fail; the dispute was settled mainly at Germany's expense. The first conference also agreed the **evacuation of the Rhineland**, which was completed on **30 June 1930**, five years before the date set at Versailles.
 
@@ -203,7 +203,7 @@ The terms of Article 1 and Article 2 of the Rhineland Pact, in the treaty's own 
 **Achievements.**
 1. For the first time Germany **freely accepted** the western frontier of Versailles, in a treaty it negotiated as an equal.
 2. It **reduced French fear**: a British and Italian guarantee of the frontier and of the demilitarised Rhineland gave France some of the security it had sought in vain in 1919. Britain was, for the first time since 1919, committed on the continent.
-3. It led to **Germany's entry to the League** (1926), the evacuation of the Cologne zone (January 1926) and the end of the Allied military control commission in Germany (January 1927).
+3. It led to **Germany's entry to the League** (1926), the evacuation of the Cologne zone (January 1926) and the end of the Allied military control commission in Germany (the Allied body that inspected German disarmament; January 1927).
 4. It created the "**spirit of Locarno**": a belief that disputes could be settled by talk. Chamberlain received the Nobel Peace Prize for 1925, and Briand and Stresemann for 1926.
 5. Between 1925 and 1929 the cooperation of the three foreign ministers produced a calmer Europe than in 1923.
 

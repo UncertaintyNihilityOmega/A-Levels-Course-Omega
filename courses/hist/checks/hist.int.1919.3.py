@@ -89,4 +89,11 @@ for token in ["12 September 1919", "12 November 1920", "27 January 1924", "14 Au
 assert not re.search(r"\[M\d\]|\[A\d\]|\[B\d\]", text), "mark tokens are not used in History"
 assert "—" not in text, "no em dashes"
 assert "<!--END-->" not in text, "leftover marker"
+# FIX round (reader items): the tick marks under the hyperinflation bars sit where the log scale puts them
+_ticks = {1000: 73.8, 10**6: 139.8, 10**9: 205.8, 10**12: 271.8}
+for _v, _x in _ticks.items():
+    _calc = 8 + 13 + 22 * log10(_v / 4)
+    assert abs(_calc - _x) < 0.2, f"tick {_v}: computed x {_calc:.1f}, figure has {_x}"
+assert abs((8 + 13 + 22 * log10(4.2e12 / 4)) - (8 + 278)) < 1.5, "last bar end"
+assert '<text class="tl" x="267.8" y="272">1 trillion</text>' in text
 print("ok")

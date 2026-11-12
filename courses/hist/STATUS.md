@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-12 · FIX · Reader items hist.us.gilded.3 to hist.int.empire.2 closed: terms glossed at first use, gold standard, Dust Bowl and 1937-38 recession mechanisms explained, cartoon/photo notes, Glass-Steagall 1932/1933 and Banking Act 1935 distinguished; Chapter N and FACTS.md items left for the course-wide sweep
+Last: 2026-11-13 · FIX · Reader items hist.int.empire.3 to hist.interp.coldwar.1 closed (46): terms glossed at first use (mandate, Covenant, Washington Conference, Monroe Doctrine, tael, belligerents, Room 40, DNVP, Reichsmark, Chiefs of Staff, SA/SS/Gestapo, Nisko, Lend-Lease and others); Corfu/Ruhr box (1919.2); 1935-36 events box (1929.1); Young Plan 36 vs 112 billion explained; log-scale figure given ticks; sources fixed (Hansard Source B, Dimitrov glosses, cartoon note); vote count aligned (11 of 17); skills/ww1/holocaust/coldwar framing fixes; no items left for the sweep
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
