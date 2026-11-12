@@ -43,7 +43,7 @@ Read this first. Every later section explains one part of it. All 1917 dates are
 | 16–17 December 1916 | Rasputin is murdered |
 | 23 February 1917 | International Women's Day strikes begin in Petrograd |
 | 25–26 February | General strike; troops fire on crowds |
-| 27 February | Mutiny of the garrison; Petrograd Soviet and Duma Committee formed |
+| 27 February | Mutiny of the garrison (the soldiers stationed in the city); Petrograd Soviet and the Duma's Provisional Committee formed |
 | 1 March | Order No. 1 |
 | 2 March | Nicholas II abdicates; Provisional Government formed |
 | 3 April | Lenin returns to Petrograd; the April Theses follow |
@@ -130,7 +130,7 @@ Nobody planned the revolution that began in Petrograd on **23 February 1917** (8
 | Date (OS) | What happened |
 |---|---|
 | 23 February | Women workers strike for bread; crowds march to the centre, shouting "Bread!" |
-| 24 February | Around 150,000–200,000 strikers; students and others join; Cossacks do not charge the crowds |
+| 24 February | Around 150,000–200,000 strikers; students and others join; Cossacks (a community of horsemen soldier-farmers who served the Tsar) do not charge the crowds |
 | 25 February | A general strike closes most factories. The Tsar, at Mogilev, orders the Petrograd commander, General Khabalov, to end the disorders by the next day |
 | 26 February | Troops fire on crowds in the city centre (Znamenskaya Square); about 40 people are killed. That night a Guards company mutinies. The Duma president, Mikhail Rodzianko, telegraphs the Tsar that "anarchy" reigns in the capital; the Tsar suspends the Duma |
 | 27 February | The Volynsky regiment, then others, mutiny and join the crowd. By the evening tens of thousands of soldiers have gone over to the Revolution; the arsenal is seized and prisons are opened. The Duma forms a Provisional Committee, and the Petrograd Soviet meets for the first time |
@@ -139,7 +139,7 @@ Nobody planned the revolution that began in Petrograd on **23 February 1917** (8
 
 Three things in this story deserve attention.
 - **The soldiers.** The crowd could be shot at. It could not defeat the army. What decided the week was that the garrison, about 150,000 men in the city, most of them raw recruits and many of them peasants who feared being sent to the front, refused to shoot their own people and then joined them. The regime had no force left it could trust.
-- **No leaders.** The socialist parties, including the Bolsheviks, were taken by surprise; the local Bolshevik committee had advised against a strike on 23 February. Lenin was in Switzerland and Trotsky in New York.
+- **No leaders.** The socialist parties, including the Bolsheviks, were taken by surprise; the local Bolshevik committee had advised against a strike on 23 February. Lenin, the Bolshevik leader, was in exile in Switzerland, and Trotsky, a revolutionary socialist, in exile in New York.
 - **The Tsar's absence.** Nicholas II was far away at the Stavka, and he went on thinking it was a riot until it was too late. The Tsarina wrote to him that it was a "hooligan movement".
 
 :::def February Revolution
@@ -167,9 +167,9 @@ The **effects** were immediate. The monarchy was gone, and it was not obvious wh
 
 ### Dual power
 
-On 27 February the Duma's leaders, who did not want to be seen to be overthrowing the Tsar, formed a **Provisional Committee** to restore order. On the same day, in another wing of the same palace, socialist intellectuals and workers' leaders revived the **Petrograd Soviet** of Workers' Deputies, which had been created in 1905. Soldiers' delegates joined it the next day, and it became the Petrograd Soviet of Workers' and Soldiers' Deputies. Its leaders were mostly Mensheviks and Socialist Revolutionaries (SRs), and it published its own newspaper, *Izvestiya*.
+On 27 February the Duma's leaders, who did not want to be seen to be overthrowing the Tsar, formed a **Provisional Committee** to restore order. On the same day, in another wing of the same palace, socialist intellectuals and workers' leaders revived the **Petrograd Soviet** of Workers' Deputies, which had been created in 1905. Soldiers' delegates joined it the next day, and it became the Petrograd Soviet of Workers' and Soldiers' Deputies. Its leaders were mostly Mensheviks and Socialist Revolutionaries (SRs, the peasants' party; by the autumn the SRs had split into a Left wing that backed Soviet power and a Right wing that did not), and it published its own newspaper, *Izvestiya*.
 
-The Soviet could have taken power but chose not to. Its leaders believed that Russia was not ready for a socialist revolution, and that the next stage should be a "bourgeois-democratic" republic run by the liberals. So on 2 March the Duma Committee formed the **Provisional Government**, and the Soviet agreed to support it so long as it carried out an agreed programme. But the Soviet kept control of the soldiers and the railways, and that was real power.
+The Soviet could have taken power but chose not to. Its leaders believed that Russia was not ready for a socialist revolution, and that the next stage should be a "bourgeois-democratic" republic (bourgeois: the property-owning middle class) run by the liberals. So on 2 March the Provisional Committee formed the **Provisional Government**, and the Soviet agreed to support it so long as it carried out an agreed programme. But the Soviet kept control of the soldiers and the railways, and that was real power.
 
 :::html
 <figure class="fig small"><svg viewBox="0 0 340 266" role="img" aria-label="Diagram of dual power in Russia, March 1917. At the top, the Provisional Government, formed 2 March, with legal authority, and the Petrograd Soviet, formed 27 February, with real power. Below the government: ministers and the civil service, with no armed force of their own. Below the Soviet: the garrison, the railways, post and telegraph workers. At the bottom: Order No. 1 of 1 March says soldiers obey the government only where the Soviet agrees."><rect class="fm s-acc sw2" x="8" y="10" width="156" height="62" rx="5"/><text class="tl tb tc" x="86" y="29">Provisional</text><text class="tl tb tc" x="86" y="44">Government</text><text class="tl tc" x="86" y="62">legal authority</text><rect class="fm2 s-acc sw2" x="176" y="10" width="156" height="62" rx="5"/><text class="tl tb tc" x="254" y="29">Petrograd Soviet</text><text class="tl tc" x="254" y="44">formed 27 February</text><text class="tl tc" x="254" y="62">real power</text><rect class="fp s-acc sw2" x="8" y="100" width="156" height="66" rx="5"/><text class="tl tc" x="86" y="120">Ministers and the</text><text class="tl tc" x="86" y="135">civil service</text><text class="tl tc" x="86" y="150">(no armed force)</text><rect class="fp s-acc sw2" x="176" y="100" width="156" height="66" rx="5"/><text class="tl tc" x="254" y="120">The garrison, the</text><text class="tl tc" x="254" y="135">railways, post and</text><text class="tl tc" x="254" y="150">telegraph workers</text><line class="ln" x1="86" y1="75" x2="86" y2="96" marker-end="url(#ah)"/><line class="ln" x1="254" y1="75" x2="254" y2="96" marker-end="url(#ah)"/><rect class="fm s-acc sw2" x="8" y="194" width="324" height="58" rx="5"/><text class="tl tb tc" x="170" y="214">Order No. 1 (1 March)</text><text class="tl tc" x="170" y="229">Soldiers obey the government</text><text class="tl tc" x="170" y="244">only where the Soviet agrees</text><line class="ln" x1="86" y1="169" x2="86" y2="190" marker-end="url(#ah)"/><line class="ln" x1="254" y1="169" x2="254" y2="190" marker-end="url(#ah)"/></svg><figcaption>Dual power, March 1917. The government held the titles and the ministries; the Soviet held the soldiers and the railways, and Order No. 1 made the government's orders to the army depend on the Soviet's agreement.</figcaption></figure>
@@ -205,7 +205,7 @@ Its programme, published on 3 March, was liberal and democratic:
 It also decided to continue the war. The death penalty was abolished (it was restored at the front in July), and Russia, with its new freedoms, became for a time one of the freest countries in Europe.
 
 :::def Provisional Government
-The government formed on 2 March 1917 by the Duma Committee after the Tsar's abdication. It was meant to rule until a Constituent Assembly could decide the future of Russia, and it never had that chance.
+The government formed on 2 March 1917 by the Duma's Provisional Committee after the Tsar's abdication. It was meant to rule until a Constituent Assembly could decide the future of Russia, and it never had that chance.
 :::
 
 :::def Constituent Assembly
@@ -216,7 +216,7 @@ A body elected to write a constitution and decide the form of government. The Pr
 
 The government faced problems that no government could have solved quickly. It also made its own mistakes. The syllabus asks about four challenges in particular, and each one fed the others.
 
-**1. Failure to end the war.** The government and most of the Soviet's leaders believed that Russia had to keep fighting. Milyukov wanted to win the Straits and Constantinople. The Soviet's moderates wanted only "defence of the revolution" and a peace without annexations. But the government had promised the Allies, Britain and France, that Russia would stay in the war, and it depended on their loans. There were also practical reasons: a sudden peace would mean losing the war on German terms, and many liberals still believed that Russia's honour was at stake. The result was that it satisfied nobody.
+**1. Failure to end the war.** The government and most of the Soviet's leaders believed that Russia had to keep fighting. Milyukov wanted to win the Straits and Constantinople (the waterway from the Black Sea to the Mediterranean, and the Turkish capital that controlled it). The Soviet's moderates wanted only "defence of the revolution" and a peace without annexations (without taking over any country's land). But the government had promised the Allies, Britain and France, that Russia would stay in the war, and it depended on their loans. There were also practical reasons: a sudden peace would mean losing the war on German terms, and many liberals still believed that Russia's honour was at stake. The result was that it satisfied nobody.
 - **The April crisis.** On 18 April Milyukov sent the Allies a note repeating Russia's war aims. Soldiers and workers marched in protest on 20–21 April. Milyukov and Guchkov resigned, and on 5 May a **coalition** government was formed with six socialists. Kerensky became Minister of War.
 - **The June offensive.** Kerensky toured the front and, on 18 June, ordered an attack in Galicia. It gained a little ground and then was thrown back by a German counter-attack in July. Thousands of soldiers deserted, and the army never recovered. Soldiers, who were willing to defend Russia but not to attack, blamed the government. The offensive discredited both Kerensky and the Soviet moderates who supported him.
 
@@ -240,13 +240,13 @@ In early July the pressure broke. On **3 July**, after the news of the failure o
 
 The Bolsheviks had not planned the rising. Their leaders had at first tried to hold their supporters back, but the rank and file were already moving, and the party joined to try to lead it. The Soviet's moderate leaders (the Menshevik Tsereteli and the SR Chernov) refused to take power. Loyal troops arrived on 5 July, and the demonstration melted away.
 
-The government used it to attack the Bolsheviks. It published documents claiming that Lenin was a German agent, closed *Pravda*, and arrested leading Bolsheviks, including Kamenev and, soon afterwards, Trotsky. **Lenin** fled, disguised, to Finland. On 8 July **Kerensky** replaced Lvov as Prime Minister. On 18 July General **Lavr Kornilov** became Commander-in-Chief.
+The government used it to attack the Bolsheviks. It published documents claiming that Lenin was a German agent, closed *Pravda* (the Bolshevik newspaper), and arrested leading Bolsheviks, including Lev Kamenev and, soon afterwards, Trotsky. **Lenin** fled, disguised, to Finland. On 8 July **Kerensky** replaced Lvov as Prime Minister. On 18 July General **Lavr Kornilov** became Commander-in-Chief.
 
 For a few weeks the Bolsheviks seemed finished. But the July Days had also shown the weakness of the government, which could only survive with the help of the Soviet's moderates. It had not been able to defeat a few thousand men without calling in troops from the front.
 
 ### The Kornilov Revolt
 
-By August Kerensky was caught between the left and the right. Conservatives and many officers wanted a firm hand to restore discipline. Kornilov, a brave general with little political skill, wanted the Soviet's power limited and the army restored. The details of what happened are still disputed: it seems that Kerensky and Kornilov each misunderstood the other's intentions, partly through the interference of a go-between, the former minister Vladimir Lvov, and Kornilov had begun to move troops towards the capital.
+By August Kerensky was caught between the left and the right. Conservatives and many officers wanted a firm hand to restore discipline. Kornilov, a brave general with little political skill, wanted the Soviet's power limited and the army restored. The details of what happened are still disputed: it seems that Kerensky and Kornilov each misunderstood the other's intentions, partly through the interference of a go-between, the former minister Vladimir Lvov (no relation to Prince Georgy Lvov), and Kornilov had begun to move troops towards the capital.
 
 On **27 August**, believing that Kornilov was demanding full power, Kerensky dismissed him and denounced him as a traitor. Kornilov refused to go, and the troops under General Krymov went on towards Petrograd. Kerensky, with no troops he could trust, turned to the Soviet. Railwaymen stopped or diverted trains, telegraph operators held up messages, the Soviet's agitators spoke to the advancing troops, and the soldiers halted without a battle. Krymov shot himself and Kornilov was arrested on 1 September.
 
@@ -271,11 +271,11 @@ In the spring of 1917 the Bolsheviks were a small party. They had perhaps 24,000
 
 ### Lenin's return and the April Theses
 
-Lenin had spent the war in Switzerland. The German government, which hoped that revolution in Russia would weaken the Allies, allowed him and about thirty other exiles to cross Germany in a sealed train, and he arrived at the Finland Station in Petrograd on **3 April** (16 April NS). The next day he read to Bolshevik meetings a short programme that shocked his colleagues, the **April Theses**, which Pravda published on 7 April.
+Lenin had spent the war in Switzerland. The German government, which hoped that revolution in Russia would weaken the Allies, allowed him and about thirty other exiles to cross Germany in a sealed train, and he arrived at the Finland Station in Petrograd on **3 April** (16 April NS). The next day he read to Bolshevik meetings a short programme that shocked his colleagues, the **April Theses**, which *Pravda* (the Bolshevik newspaper) published on 7 April.
 
 :::eg A closer look: the April Theses
 Lenin told his party that the Russian revolution had reached a new stage. In his words, Russia was "passing from the first stage of the revolution" to a second, which must give power to the workers and the poorest peasants. His main points were:
-- the war remained a predatory, imperialist war under the new government, and there must be **no concessions** to "revolutionary defencism";
+- the war remained a predatory, imperialist war (a robbers' war fought by great powers for land and profit) under the new government, and there must be **no concessions** to "revolutionary defencism" (the view that Russia must keep fighting to defend the revolution);
 - "no support for the Provisional Government", whose promises should be exposed as false;
 - "the Soviets of Workers' Deputies are the only possible form of revolutionary government": the Bolsheviks must win a majority in them by explaining their programme patiently, and then take power;
 - the land: confiscate all the landed estates and nationalise all land, with the local Soviets of Agricultural Labourers' and Peasants' Deputies deciding how to use it.
@@ -381,7 +381,7 @@ Compare the **February** and **October** revolutions. February was spontaneous, 
 | Nicholas II | Tsar until 2 March 1917 | Took command of the army in 1915; abdicated |
 | Alexandra | Tsarina | Ruled in his absence with Rasputin; made the court hated |
 | Grigory Rasputin | Peasant mystic and court favourite | Discredited the monarchy; murdered December 1916 |
-| Mikhail Rodzianko | President of the Duma | Warned the Tsar in February; led the Duma Committee |
+| Mikhail Rodzianko | President of the Duma | Warned the Tsar in February; led the Provisional Committee |
 | Prince Georgy Lvov | Prime Minister, March–July 1917 | Head of the first Provisional Government |
 | Pavel Milyukov | Kadet leader, Foreign Minister | His April note caused the first crisis |
 | Alexander Kerensky | SR; Minister of Justice, then War, then Prime Minister from 8 July | The figure of the Provisional Government; failed with the June offensive and Kornilov |
@@ -444,7 +444,7 @@ Overall, Lenin's leadership was the decisive reason for the timing of the seizur
 
 The Provisional Government has been deposed. State power has passed into the hands of the Military Revolutionary Committee, which stands at the head of the Petrograd proletariat and garrison. The cause for which the people have fought, the immediate offer of a democratic peace, the abolition of landed proprietorship, workers' control over production and the establishment of Soviet power, has been secured. Long live the revolution of workers, soldiers and peasants!
 
-*Adapted from "To the Citizens of Russia!", a proclamation of the Military Revolutionary Committee of the Petrograd Soviet, written by Lenin and issued at 10 a.m. on 25 October 1917 (7 November NS).*
+*Adapted from "To the Citizens of Russia!", a proclamation of the Military Revolutionary Committee of the Petrograd Soviet, written by Lenin and issued at 10 a.m. on 25 October 1917 (7 November NS). Proletariat: the industrial working class.*
 
 **Source B**
 
@@ -488,7 +488,7 @@ Landed proprietorship is abolished forthwith without any compensation. The lande
 
 Like a black river, filling all the street, without song or cheer, we poured through the Red Arch. The Junkers had been disarmed. A voice shouted, "Comrades! Don't touch anything! Don't take anything! This is the property of the People!" Most of the members of the Provisional Government were already arrested.
 
-*Adapted from John Reed, Ten Days that Shook the World (1919), an account by an American socialist journalist who was in Petrograd in October 1917 and supported the Bolsheviks.*
+*Adapted from John Reed, Ten Days that Shook the World (1919), an account by an American socialist journalist who was in Petrograd in October 1917 and supported the Bolsheviks. Junkers: officer cadets, the Palace's defenders. The Red Arch: an archway leading into Palace Square, the open space in front of the Winter Palace.*
 
 **Source D**
 

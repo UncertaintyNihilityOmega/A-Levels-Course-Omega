@@ -64,10 +64,10 @@ Read this first. Every later section explains one part of it.
 
 On 26 October 1917 the Second Congress of Soviets elected the Council of People's Commissars, **Sovnarkom**, with Lenin as chairman, and adopted the first decrees. Over the next weeks Sovnarkom issued many more. In its own eyes it was a temporary government, ruling until a Constituent Assembly or a new Congress of Soviets could decide on a constitution. Four of its decrees are named by the syllabus.
 
-- **The Decree on Peace (26 October).** It proposed to all warring nations an immediate peace without annexations or indemnities, and it appealed over the heads of governments to the workers of Europe. It led to talks with Germany (see Brest-Litovsk below).
+- **The Decree on Peace (26 October).** It proposed to all warring nations an immediate peace without annexations (seizing other countries' land) or indemnities (payments by the loser to the winner), and it appealed over the heads of governments to the workers of Europe. It led to talks with Germany (see Brest-Litovsk below).
 - **The Decree on Land (26 October).** It declared that "landed proprietorship is abolished forthwith without any compensation" and put the estates of the nobles, the Crown, the monasteries and the Church at the disposal of the peasants' committees and Soviets. It legalised what the peasants had already been doing, and it won their acceptance of the new regime for the moment.
 - **The Decree on Workers' Control (14 November OS).** It gave elected committees of workers the right to supervise production, hiring, stocks and accounts in every factory. In practice the factory committees often took over management, which led to confusion, falling output and angry owners. In December a Supreme Council of the National Economy (Vesenkha) was set up to direct the economy from above, and banks were nationalised.
-- **The Declaration of the Rights of the Peoples of Russia (2 November OS).** It promised equality and sovereignty to all the peoples of the old Empire, and their right to self-determination, up to the right to secede. In the months that followed, Finland, Poland and the Baltic states and Ukraine took their independence or autonomy, though the Bolsheviks later fought to recover much of the empire.
+- **The Declaration of the Rights of the Peoples of Russia (2 November OS).** It promised equality and sovereignty to all the peoples of the old Empire, and their right to self-determination (to decide for themselves how they were governed), up to the right to secede (leave Russia). In the months that followed, Finland, Poland and the Baltic states and Ukraine took their independence or autonomy, though the Bolsheviks later fought to recover much of the empire.
 
 Other early decrees ended class privileges and ranks, introduced an eight-hour day, separated Church and state (January 1918) and gave civil marriage and divorce legal force. The press decree of 27 October (OS) banned newspapers that called for resistance to the new government. It was presented as a temporary measure for a time of crisis, but it was never repealed.
 
@@ -89,7 +89,7 @@ On 7 December 1917 (OS; 20 December NS) Sovnarkom set up the All-Russian Extraor
 The Bolshevik political police, set up on 7 December 1917 (OS) under Dzerzhinsky. Its job was to find and destroy "counter-revolution and sabotage" by arrest, imprisonment and execution without trial. It was reorganised as the GPU in 1922 and was the ancestor of the later Soviet secret police.
 :::
 
-It was used first against the Bolsheviks' rivals on the right, such as the Kadets, who had been declared "enemies of the people" in November 1917. In the summer of 1918, when Civil War and rebellion threatened the regime, it was used against the left as well (the Mensheviks, the SRs and the anarchists) and then, on a huge scale, in the **Red Terror**. After an attempt on Lenin's life on 30 August 1918 (he was shot and wounded by Fanny Kaplan, an SR) and the murder of the Petrograd Cheka chief Moisei Uritsky on the same day, a decree of 5 September 1918 authorised the arrest of "class enemies" as hostages and the shooting of those involved in White plots. Historians' estimates of the number killed by the Cheka in the Civil War range from tens of thousands to well over a hundred thousand, depending on what is counted. The point for this topic is not the number, but the principle: the Bolsheviks used terror as an open instrument of government.
+It was used first against the Bolsheviks' rivals on the right, such as the Kadets, who had been declared "enemies of the people" in November 1917. In the summer of 1918, when Civil War and rebellion threatened the regime, it was used against the left as well (the Mensheviks, the SRs and the anarchists, who wanted no state at all) and then, on a huge scale, in the **Red Terror**. After an attempt on Lenin's life on 30 August 1918 (he was shot and wounded by Fanny Kaplan, an SR) and the murder of the Petrograd Cheka chief Moisei Uritsky on the same day, a decree of 5 September 1918 authorised the arrest of "class enemies" as hostages and the shooting of those involved in White plots. Historians' estimates of the number killed by the Cheka in the Civil War range from tens of thousands to well over a hundred thousand, depending on what is counted. The point for this topic is not the number, but the principle: the Bolsheviks used terror as an open instrument of government.
 
 ### The closure of the Constituent Assembly
 
@@ -120,14 +120,14 @@ The Bolsheviks had won power by promising peace. The army was disintegrating: so
 
 The German terms were harsh: Russia was to give up Poland and the Baltic lands. The Bolsheviks disagreed about what to do.
 - **Lenin** argued that Russia must accept any terms to get a breathing space, because the revolution could not survive another war and the revolution in Germany would come soon to cancel the treaty.
-- **Bukharin and the "Left Communists"** wanted a "revolutionary war" against Germany, in the hope of inspiring revolutions elsewhere.
+- **Nikolai Bukharin**, a leading Bolshevik thinker and editor of *Pravda*, and the "Left Communists" around him wanted a "revolutionary war" against Germany, in the hope of inspiring revolutions elsewhere.
 - **Trotsky**, who led the Soviet delegation, took a middle line: "neither war nor peace". He declared on 10 February 1918 that Russia would stop fighting, but would not sign.
 
 Germany answered by attacking on 18 February, and moved forward rapidly against a collapsing army, capturing a large area in a week. Lenin threatened to resign. The Central Committee, by a narrow majority, voted on 23 February to accept the German terms, which were now harder. The treaty was signed on **3 March 1918**, and ratified by a Congress of Soviets on 15 March.
 
 ### The terms
 
-By the treaty Russia gave up Poland, Lithuania and Courland, and recognised the independence of Finland and Ukraine (in effect under German influence), withdrew from Estonia and Livonia, and gave Kars, Ardahan and Batum in the Caucasus to Turkey. The size of the losses depends on how they are counted. A Petrograd newspaper in 1918 put the loss at about 32 per cent of the population (56 million people); later accounts give about a third of the population, a large share of the coal and iron, and a very large part of Russia's industrial enterprises. Use "about a third of the population and most of the coal and iron" rather than an exact percentage.
+By the treaty Russia gave up Poland, Lithuania and Courland (the western part of modern Latvia), and recognised the independence of Finland and Ukraine (in effect under German influence). It also withdrew from Estonia and Livonia (the northern Baltic provinces, today's Estonia and northern Latvia): "withdrew" means that Russian troops and officials had to leave and German police took over, rather than that the land was formally handed to Germany. It gave Kars, Ardahan and Batum, three districts in the Caucasus (the region between the Black and Caspian Seas), to Turkey. The size of the losses depends on how they are counted. A Petrograd newspaper in 1918 put the loss at about 32 per cent of the population (56 million people); later accounts give about a third of the population, a large share of the coal and iron, and a very large part of Russia's industrial enterprises. Use "about a third of the population and most of the coal and iron" rather than an exact percentage.
 
 ### The effects
 
@@ -135,7 +135,7 @@ By the treaty Russia gave up Poland, Lithuania and Courland, and recognised the 
 - **Long term.** The treaty gave Lenin what he wanted, an end to the war with Germany and time to build an army. But it turned many Russians, particularly officers, against the Bolsheviks, who appeared to have sold their country, and it helped to start the Civil War. After Germany's defeat in November 1918, the Soviet government annulled the treaty, though it could not recover all the lost lands.
 
 :::def Treaty of Brest-Litovsk
-The peace treaty of 3 March 1918 between Soviet Russia and the Central Powers, by which Russia left the First World War and gave up Poland, the Baltic lands, Finland, Ukraine and parts of the Caucasus. It was annulled after Germany's defeat in November 1918.
+The peace treaty of 3 March 1918 between Soviet Russia and the Central Powers (Germany, Austria-Hungary and their allies), by which Russia left the First World War and gave up Poland, the Baltic lands, Finland, Ukraine and parts of the Caucasus. It was annulled after Germany's defeat in November 1918.
 :::
 
 ## The Civil War, 1918–21
@@ -147,7 +147,7 @@ The Civil War began in the spring and summer of 1918 and ended, in its main phas
 The sides were:
 - **The Reds**: the Bolsheviks, who held the centre of the country and the two capitals, with the Red Army.
 - **The Whites**: a loose alliance of the Bolsheviks' enemies on the right and centre, including former Tsarist officers, Cossacks, landowners, liberals and SRs. They were never united.
-- **The Greens**: peasant armies that fought the Reds and the Whites alike (such as Nestor Makhno's anarchists in Ukraine), because they wanted to be left alone with their land.
+- **The Greens**: peasant armies that fought the Reds and the Whites alike (such as Nestor Makhno's anarchists in Ukraine, who wanted a society with no state), because they wanted to be left alone with their land.
 - **Foreign powers**: Britain, France, the United States and Japan, and other countries, which sent troops and supplies to different regions.
 
 ### The main events
@@ -167,7 +167,7 @@ The sides were:
 The syllabus asks about the strengths of the Bolsheviks and the weaknesses of the Whites. They are two sides of one explanation.
 
 **Strengths of the Bolsheviks**
-- **Leadership.** Lenin led the party with a ruthless clarity about what mattered; **Trotsky**, Commissar for War from March 1918, built the Red Army from nothing. He brought back former Tsarist officers ("military specialists", tens of thousands of them by the end of the war) and made sure they were watched by political commissars; he enforced discipline, including the death penalty, and travelled in an armoured train to the fronts. The Red Army grew to over five million men on paper by 1920 (many never reached the front), by conscription from the spring of 1918.
+- **Leadership.** Lenin led the party with a ruthless clarity about what mattered; **Trotsky**, Commissar for War from March 1918, built the Red Army from nothing. He brought back former Tsarist officers ("military specialists", tens of thousands of them by the end of the war) and made sure they were watched by political commissars (party officials attached to each unit to watch the officers; they are not the same as Sovnarkom's commissars, who were government ministers); he enforced discipline, including the death penalty, and travelled in an armoured train to the fronts. The Red Army grew to over five million men on paper by 1920 (many never reached the front), by conscription from the spring of 1918.
 - **Popular support.** The Reds were not popular with everyone, but the peasants feared a White victory more: it would bring back the landlords and the land would be taken back. The Decree on Land was the Reds' best weapon. The Reds also took the part of Russian patriotism, since they could say that the Whites were backed by foreign armies.
 - **Geographical factors.** The Reds held the centre of Russia, with Moscow and Petrograd, the main railway junctions and most of the arms factories and the population (about 60 million in the area they held). They could move troops from one front to another by rail along short interior lines, while the Whites were spread around the rim of the country, thousands of kilometres apart, and could not co-ordinate.
 - **Unity and organisation.** There was one party, one government and one army command, and every decision came from the centre. Propaganda (posters, agit-trains, newspapers) spread a simple message: the Whites were landlords and the servants of foreigners. The Cheka and the Terror made opposition dangerous.
@@ -209,7 +209,7 @@ The system of economic control used by the Bolsheviks during the Civil War (1918
 :::
 
 - **Industry.** A decree of 28 June 1918 nationalised large industry, and by the end of 1920 even small workshops had been taken over. The state directed production through Vesenkha and sent managers to run the factories, and workers' control was ended.
-- **Grain.** In May and June 1918 the government declared a state monopoly of grain and sent detachments to the villages to seize it, with the help of committees of poor peasants. From January 1919 this was formalised as *prodrazverstka*, the requisitioning of fixed quotas of grain. Peasants who hid grain were treated as enemies of the people, and some were shot.
+- **Grain.** In May and June 1918 the government declared a state monopoly of grain and sent detachments to the villages to seize it, with the help of committees of poor peasants. From January 1919 this was formalised as *prodrazverstka* (surplus appropriation, the usual English name for it), the requisitioning of fixed quotas of grain. Peasants who hid grain were treated as enemies of the people, and some were shot.
 - **Rationing and labour.** Food was rationed in the cities by class and in return for work; private trade was banned and the black market flourished. In 1920 workers were conscripted for labour, and Trotsky argued for the "militarisation of labour". Money lost nearly all its value.
 
 **Effects.** War Communism helped the Reds to win, because it kept the army supplied. But the damage was very great.
@@ -232,12 +232,12 @@ The immediate cause was the winter of 1920–21: food rations were cut, fuel ran
 |---|---|
 | 28 February | Crews of the battleships *Petropavlovsk* and *Sevastopol* pass a resolution of fifteen demands |
 | 1 March | A mass meeting of about 15,000 on Anchor Square adopts it; the head of state, Mikhail Kalinin, who is present, is shouted down |
-| 2 March | A Provisional Revolutionary Committee, chaired by the sailor Stepan Petrichenko, takes over the fortress; the government announces that the rising is a White Guard plot |
+| 2 March | A Provisional Revolutionary Committee, chaired by the sailor Stepan Petrichenko, takes over the fortress; the government announces that the rising is a White Guard plot (a plot by officers of the anti-Bolshevik White armies) |
 | 7 March | The Red Army, under Mikhail Tukhachevsky, begins to bombard the fortress |
 | 8 March | The Tenth Party Congress opens in Moscow |
 | 16–18 March | The Red Army storms the fortress across the ice; Kronstadt falls on 18 March |
 
-The sailors did not ask for the return of the Tsar or of the Whites. Their demands, in the **Petropavlovsk resolution**, were for the soviets to be re-elected by secret ballot with free campaigning, for freedom of speech and of the press for workers and peasants and for left socialist parties, for the release of socialist political prisoners, for the end of the Communist Party's special political departments, for equal rations, for the roadblock detachments (which seized food from peasants) to be abolished, and for peasants to be free to work their own land and keep livestock without hired labour.
+The sailors did not ask for the return of the Tsar or of the Whites. Their demands, in the **Petropavlovsk resolution**, were for the soviets to be re-elected by secret ballot with free campaigning, for freedom of speech and of the press for workers and peasants and for left socialist parties, for the release of socialist political prisoners, for the end of the Communist Party's special political departments (the party bodies in the army and navy that controlled units), for equal rations, for the roadblock detachments (which seized food from peasants) to be abolished, and for peasants to be free to work their own land and keep livestock without hired labour.
 
 :::eg A closer look: the Petropavlovsk resolution
 The resolution was adopted on the battleship *Petropavlovsk* on 28 February 1921 and signed by the chairman, Petrichenko, and the secretary, Perepelkin. Its first demand was "immediately to hold new elections by secret ballot", because the existing soviets did not express the will of the workers and peasants. The second was "to give freedom of speech and press to workers and peasants, to anarchist and left socialist parties". The seventh was "to abolish all political departments, since no party should be given special privileges". *Adapted from the Petropavlovsk Resolution, 28 February 1921, in the translation in Paul Avrich, The Anarchists in the Russian Revolution (1973).*
@@ -250,7 +250,7 @@ The resolution was adopted on the battleship *Petropavlovsk* on 28 February 1921
 ### Impact
 
 - **Military and political.** The rising was crushed with great force. The numbers are uncertain: Soviet figures give over a thousand rebels killed and many more wounded and captured, and the Red Army also lost heavily; about 8,000 people escaped across the ice to Finland; and the Cheka shot a large number of prisoners in the following months (about 2,100 sentenced to death by the summer, in one official count). The Bolsheviks presented the victory as the defence of the Revolution, though the rebels had been among its early supporters.
-- **Policy.** It came in the middle of the Tenth Party Congress, which Lenin had already planned to use to change the policy on grain. Some 300 delegates left the Congress to take part in the assault, and ten of them died. Lenin drew two lessons from Kronstadt: tighten discipline in the party and satisfy the middle peasants as far as possible. On 9 March he told the Congress: "the petty-bourgeois counter-revolution is a greater danger than Denikin". The Kronstadt rising pushed the Congress to accept two policies within days: the end of requisitioning in favour of the **New Economic Policy**, and a ban on factions inside the party (see below).
+- **Policy.** It came in the middle of the Tenth Party Congress, which Lenin had already planned to use to change the policy on grain. Some 300 delegates left the Congress to take part in the assault, and ten of them died. Lenin drew two lessons from Kronstadt: tighten discipline in the party and satisfy the middle peasants as far as possible. On 9 March he told the Congress: "the petty-bourgeois counter-revolution is a greater danger than Denikin" (petty-bourgeois: here, the peasants as small property owners; Denikin was a White general). The Kronstadt rising pushed the Congress to accept two policies within days: the end of requisitioning in favour of the **New Economic Policy**, and a ban on factions inside the party (see below).
 
 :::def Kronstadt Mutiny
 The rising of the sailors and garrison of the Kronstadt naval fortress in March 1921 against the Bolshevik government, demanding free soviet elections and an end to War Communism. It was crushed by the Red Army on 17–18 March, and it helped to convince the Bolsheviks to introduce the New Economic Policy.
@@ -280,7 +280,7 @@ The policy introduced in March 1921, which ended grain requisitioning and allowe
 - **A retreat.** Lenin called NEP a "retreat" in economics, and he said that the "commanding heights" were still in the party's hands. Many Communists supported it with reluctance.
 
 :::warn NEP was a retreat in economics, not in politics
-The Tenth Congress that approved the tax in kind also banned factions in the party. Its resolution "On Party Unity" ordered the dissolution of groups formed on the basis of platforms, and another condemned the "Workers' Opposition" (led by Alexandra Kollontai and Alexander Shlyapnikov) as an anarchist and syndicalist deviation. Other parties were already banned or suppressed. In 1922 the leaders of the SRs were tried in a show trial, and the Cheka was renamed the GPU. So the economy became freer in 1921 while politics became tighter. Do not write that NEP was a move to democracy.
+The Tenth Congress that approved the tax in kind also banned factions in the party. Its resolution "On Party Unity" ordered the dissolution of groups formed on the basis of platforms, and another condemned the "Workers' Opposition" (led by Alexandra Kollontai and Alexander Shlyapnikov) as an anarchist and syndicalist deviation (syndicalists wanted the trade unions, not the party, to run industry). Other parties were already banned or suppressed. In 1922 the leaders of the SRs were tried in a show trial, and the Cheka was renamed the GPU. So the economy became freer in 1921 while politics became tighter. Do not write that NEP was a move to democracy.
 :::
 
 ## Where were the Bolsheviks by 1924?
@@ -289,7 +289,7 @@ By 1924, Bolshevik power had survived and had changed.
 - **A one-party state.** The Communist Party ran Russia through a hierarchy of its own, with the Soviets under its control. Other parties were banned; the press was controlled; the Cheka's successor, the GPU, watched the population. The party's own debate was restricted by the ban on factions of 1921.
 - **The Soviet Union.** On 30 December 1922 the Russian republic, Ukraine, Belorussia and the Transcaucasian republic signed a treaty of union to form the **Union of Soviet Socialist Republics**. A constitution was adopted in January 1924. The Bolsheviks had recovered most of the old Empire, under a structure that gave the republics a form of autonomy under party control.
 - **A recovering economy.** NEP gave the country a few years of peace and recovery, though the argument over whether it should last was just beginning.
-- **A leadership in crisis.** Lenin suffered a stroke in May 1922 and further strokes in December 1922 and March 1923. In notes he dictated, which the party leaders did not publish, he criticised leading Bolsheviks and suggested that Stalin, who had been General Secretary of the party since April 1922, should be removed. He died on **21 January 1924**, aged 53. The struggle to succeed him, between Trotsky, Stalin and others, was the beginning of the next chapter of Soviet history.
+- **A leadership in crisis.** Lenin suffered a stroke in May 1922 and further strokes in December 1922 and March 1923. In notes he dictated, which the party leaders did not publish, he criticised leading Bolsheviks and suggested that Stalin, who had been General Secretary of the party (the official who ran its staff and appointments) since April 1922, should be removed. He died on **21 January 1924**, aged 53. The struggle to succeed him, between Trotsky, Stalin and others, was the beginning of the next chapter of Soviet history.
 
 :::key How the Bolsheviks consolidated their power to 1924
 1. **Decrees** that won support: peace, land, workers' control and the rights of the peoples.
@@ -470,7 +470,7 @@ Q: What was the NEP, and why is it called a retreat in economics but not in poli
 A: From 1921 requisitioning was replaced by a tax in kind and private trade and small business were allowed, while the state kept the "commanding heights". At the same Congress, factions in the party were banned, so political control became tighter.
 :::
 
-:::note Sources for exam practice question 7
+:::note Sources for exam practice question 6
 **Source A**
 
 Landed proprietorship is abolished forthwith without any compensation. The landed estates, and all crown, monastery and church lands, are to be placed at the disposal of the township land committees and the district Soviets of Peasants' Deputies. The land of ordinary peasants and ordinary Cossacks shall not be confiscated.

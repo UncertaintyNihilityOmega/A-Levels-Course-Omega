@@ -44,7 +44,7 @@ Read this first. Every later section explains one part of it. Use the timeline w
 | 17 September 1862 | Antietam, the bloodiest single day of the war |
 | 22 September 1862 | Preliminary Emancipation Proclamation |
 | 1 January 1863 | Emancipation Proclamation takes effect |
-| 3 March 1863 | Union Enrollment Act (conscription); Congress authorises the suspension of habeas corpus |
+| 3 March 1863 | Union Enrollment Act (conscription); Congress authorises the suspension of habeas corpus (the right not to be held in prison without a trial) |
 | 1–3 July 1863 | Gettysburg |
 | 4 July 1863 | Vicksburg surrenders |
 | 13–16 July 1863 | New York draft riots |
@@ -120,7 +120,7 @@ The table shows the battles and campaigns you need, with the reason each mattere
 | 4 July 1863 | Vicksburg (Mississippi) | Union victory after a siege | The Union controls the Mississippi |
 | 19–20 September 1863 | Chickamauga (Georgia) | Confederate victory | Brief hope for the South in the West |
 | 23–25 November 1863 | Chattanooga (Tennessee) | Union victory under Grant | Opened the road into the Deep South |
-| 5 May–mid-June 1864 | The Overland Campaign | Grant presses Lee, with enormous losses on both sides | Pinned Lee to the defence of Richmond and Petersburg |
+| 5 May–mid-June 1864 | The Overland Campaign | Grant presses Lee, with enormous losses on both sides (the Wilderness, Spotsylvania, Cold Harbor) | Pinned Lee to the defence of Richmond and Petersburg |
 | 2 September 1864 | Atlanta | Sherman captures the city | Boosted Lincoln's re-election; broke the Confederate rail system |
 | 15 November–21 December 1864 | The March to the Sea | Sherman crosses Georgia | Destroyed supplies and showed the Confederacy could not defend its interior |
 | 9 April 1865 | Appomattox | Lee surrenders | The end of the main Confederate army |
@@ -138,7 +138,7 @@ Generals did not win the war on their own. But the **order in which each side fo
 
 ### The Union: slow to find its generals
 
-The Union started with advantages, but its early commanders were not good enough to use them.
+The Union started with advantages, but its early commanders were not good enough to use them. In the tables, the Army of the Potomac was the main Union army in the East, defending Washington and fighting in Virginia; its opponent, the Army of Northern Virginia, was the main Confederate army in the East.
 
 | Commander | Role | Strengths | Weaknesses |
 |---|---|---|---|
@@ -407,7 +407,7 @@ The best-known event is the visit of Russian fleets in autumn 1863. A squadron f
 
 ## The end of the war, 1864–65
 
-Atlanta fell on **2 September 1864**, and by the autumn Union armies held the Mississippi, Tennessee and much of the Deep South. But in the summer of 1864, with Grant's armies stuck at Petersburg and casualty lists growing, Northern morale had sunk. Lincoln expected to lose the election. The Democrats nominated McClellan at Chicago on 31 August on a platform, written by Copperheads such as Vallandigham, that called the war a failure and asked for an armistice. McClellan said he would not accept the peace plank. Then news came of Atlanta, and Sheridan's victories in the Shenandoah Valley in September and October. On **8 November 1864** Lincoln won 212 of the 233 electoral votes and about 55 per cent of the popular vote. Soldiers voted overwhelmingly for him. The result told the South that the North would not give up and removed its last real hope.
+Atlanta fell on **2 September 1864**, and by the autumn Union armies held the Mississippi, Tennessee and much of the Deep South. But in the summer of 1864, with Grant's armies stuck at Petersburg and casualty lists growing, Northern morale had sunk. Lincoln expected to lose the election. The Democrats nominated McClellan at Chicago on 31 August on a platform, written by Copperheads such as Vallandigham, that called the war a failure and asked for an armistice. McClellan said he would not accept the peace plank (a plank is one item of a party's platform, its programme). Then news came of Atlanta, and Sheridan's victories in the Shenandoah Valley in September and October. On **8 November 1864** Lincoln won 212 of the 233 electoral votes and about 55 per cent of the popular vote. Soldiers voted overwhelmingly for him. The result told the South that the North would not give up and removed its last real hope.
 
 From Atlanta, Sherman marched with about 60,000 men to Savannah between **15 November and 21 December 1864**. He cut loose from his supplies and destroyed railways, mills, and stores of food, intending to break the Confederacy's will and its ability to supply its armies. He took Savannah and then marched north through the Carolinas in 1865. He defended the policy in a letter of 12 September 1864 to the mayor of Atlanta, James Calhoun, who had asked him to cancel the evacuation of the city's civilians: "You cannot qualify war in harsher terms than I will. War is cruelty, and you cannot refine it".
 
@@ -478,7 +478,7 @@ I would save the Union. I would save it the shortest way under the Constitution.
 
 All persons held as slaves within said designated States, and parts of States, are, and henceforward shall be free. The parishes of Louisiana named, the forty-eight counties designated as West Virginia, and certain counties of Virginia are for the present left precisely as if this proclamation were not issued. Such persons of suitable condition will be received into the armed service of the United States. And upon this act, sincerely believed to be an act of justice, warranted by the Constitution, upon military necessity, I invoke the considerate judgment of mankind.
 
-*Adapted from the Emancipation Proclamation, issued by Abraham Lincoln as President and Commander-in-Chief, 1 January 1863. The extract joins and shortens passages; the list of excepted places is summarised.*
+*Adapted from the Emancipation Proclamation, issued by Abraham Lincoln as President and Commander-in-Chief, 1 January 1863. The extract joins and shortens passages; the list of excepted places is summarised. Parishes are Louisiana's equivalent of counties.*
 
 **Question.** Compare these two sources as evidence about Lincoln's aims in the Civil War.
 
@@ -658,7 +658,7 @@ Q: [20 marks] ★★★ James McPherson argues that the outcome of the Civil War
 H: Identify the moments: the summer of 1862 (McClellan on the Peninsula, Lee's Seven Days), the autumn of 1862 (Antietam and the Proclamation), the summer of 1864 (the Overland Campaign and Atlanta).
 H: Then ask whether the North's resources and the Confederacy's weaknesses made the outcome likely even if those moments had gone the other way.
 A: Support: McClellan could have taken Richmond in 1862; had Lee won at Antietam, Britain and France might have mediated; Lincoln expected to lose the election in August 1864, and without Atlanta the Democrats might have won and negotiated an armistice that left the Confederacy independent. Challenge: the Confederacy's population and industry made a long war unwinnable; the blockade and the loss of the Mississippi were wearing it down; Lincoln's coalition, though shaken, held; and Britain's reluctance to intervene had deeper causes. A* judgement: resources made Union victory probable, but the moments McPherson stresses decided whether it would come and in what form, so the evidence supports contingency about how and when, not about whether.
-Q: [25 marks] ★★★ Gary Gallagher argues that Confederate will to fight stayed strong until military defeat, and that the Confederacy lost because of Union armies, not because the South gave up. How far do the sources in this chapter and your knowledge support this view?
+Q: [25 marks] ★★★ Gary Gallagher argues that Confederate will to fight stayed strong until military defeat, and that the Confederacy lost because of Union armies, not because the South gave up. How far does the evidence in this chapter and your own knowledge support this view?
 H: Which evidence shows will? Think of Lee's victories, conscription, Davis's refusal to negotiate, and the conduct of the Richmond bread riot.
 H: Which evidence shows will weakening? Think of desertion, inflation, the governors and Sherman's march.
 A: Support: the Confederacy kept fighting for four years, with conscription and a strong army to the end; Davis rejected compromise; Lee's victories raised morale until 1863; the army surrendered only when it was surrounded at Appomattox, and Johnston's and Kirby Smith's armies held out until April–June 1865. Challenge: desertion rose sharply in 1864–65; inflation and impressment turned farmers and women against the government (Richmond, April 1863); governors resisted the central government; Sherman's march showed the interior could not be defended; Davis's own supporters lost heart after Atlanta. Judgement: Gallagher's view is strongly supported for 1861–64, as the army and civilians continued, but wartime strain is evident in the home front, so the evidence supports will as a reason the war lasted four years, and military defeat as the reason it ended.

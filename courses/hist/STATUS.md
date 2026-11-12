@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-12 · FIX · Closed 30 READER items (hist.overview..hist.eu.russia.2): glosses at first use, background/facts boxes for essays and sources chapters, left/right, Festival of the Federation, purge quote, Russia (1) links, retitled source box
+Last: 2026-11-12 · FIX · Reader items hist.eu.russia.3 to hist.us.gilded.2 closed: terms glossed at first use, source boxes and stretch questions fixed, chapter references linked
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
