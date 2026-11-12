@@ -12,9 +12,14 @@
 - CONNECTIONS B done (18 Paper 4 chapters): every written topic chapter now has a Connections box. Writer prompts
   must add: P36 hist.d.safrica.1 the Bantu Education Act 1953; P39 hist.d.malaysia.4 the destruction of the PKI
   1965–66 (boxes link there for these).
-- All 47 packages (96 chapters) written and reviewed; mock FIX done. READER read to hist.int.empire.2 (batch 5
-  running); Reader items FIXed to hist.eu.russia.2 (FIX for russia.3 … gilded.2 running; gilded.3 … empire.2 next).
-  Then the rest of the Reader batches and their FIXes, REVIEW FINAL, assembly. Guard on `hist`.
+- All 47 packages (96 chapters) written and reviewed; mock FIX done. READER read to hist.interp.coldwar.1 (next
+  batch: hist.interp.coldwar.2 …; 44 chapters left). Reader items FIXed to hist.int.empire.2; next FIX: the 46 open
+  items (headings "READER: hist.int.empire.3 to hist.int.1929.2" and "… hist.int.1929.3 to hist.interp.coldwar.1").
+  Then the rest of the Reader batches and their FIXes, the sweep below, REVIEW FINAL, assembly. Guard on `hist`.
+- For the Specialist (REVIEW FINAL or a COURSE.md rule): "revisionist" is defined three ways (interp.skills,
+  ww1.2, coldwar.1); short exam-practice questions use a mark scale never explained; Section B/C warm-ups assume
+  the Section A chapters.
+- Waiting for the 5-hour reset at 00:10 Nov 13 (Istanbul): 5-hour at 86%, weekly 70%.
 - Course-wide sweep FIX before REVIEW FINAL (Readers file no items for these): 37 chapters cite "FACTS.md" to the
   student (say "the 9489 syllabus" or the paper instead); "Chapter N" as another chapter's name (link it).- 9489 syllabus version 3 (Oct 2026) changes only a weblink; FACTS.md noted.
 - Sensitive topics (civil rights, apartheid, terror): a Writer prompt says no slurs even in sources, violence without
