@@ -55,7 +55,8 @@ awake (Windows: Sleep "Never" when plugged in).
    calls are not checked.
 3. Preview: headless by default. Start a preview server (`<c>-preview`, `site`) with preview_start only when the user
    says in this session that they are here or that the server may be used: the app asks to approve it in every new
-   session, and nobody can approve it in night runs. Headless, the Specialist uses the kit tools (template below).
+   session, and nobody can approve it in night runs. Once allowed, start it at once, even if no step needs it yet.
+   Headless, the Specialist uses the kit tools (template below).
 4. Manual runs only: a CronCreate check, hourly, off the hour (if agents run, do nothing; if a usage limit stopped
    them, checkpoint and resume with SendMessage; if none runs, continue the loop). It lives only in this session.
 5. Launch agents with the templates below: `subagent_type` general-purpose, `model` opus (Specialist) or sonnet

@@ -57,7 +57,9 @@ There is no CLAUDE.md at the root: course sessions would load it. Start every Or
 - Edit LaTeX-heavy text with Write/Edit, never shell heredocs or sed (they eat backslashes).
 - Preview servers are headless by default (`kit/zta.js shot`, `widget --probe`): start the "site" launch config
   (port 5100) or `<c>-preview` (5101–5111) only when the user says in the session that they are here or that the
-  server may be used (the app asks to approve each server in every new session). The browser pane cannot open
+  server may be used (the app asks to approve each server in every new session). Once allowed, start it at once,
+  even if no step needs it yet (the user may not be there for the approval later; a running server costs no tokens,
+  only looking at pages does). The browser pane cannot open
   `file://` pages, and it cannot draw when the app window is hidden.
 - git: local user.name/email, `core.autocrlf false`. Remote `origin` is the public GitHub repository.
 

@@ -16,7 +16,7 @@
   hist.mock.p4 questions that repeat hist.mixed.a2; a new unseen Section A extract in hist.mock.p3), and READER
   batches alongside it (first: hist.overview … hist.eu.france.2; the FIX touches only the two mocks). Then FIX the
   Reader items, REVIEW FINAL, assembly. Guard on `hist`.
-- Waiting for the 5-hour reset at 19:10 Nov 12 (Istanbul): 5-hour at 94%, weekly 59%.
+- Run of Nov 12 19:15: FIX Writer (mock.p3, mock.p4) and Reader batch 1 running.
 - 9489 syllabus version 3 (Oct 2026) changes only a weblink; FACTS.md noted.
 - Sensitive topics (civil rights, apartheid, terror): a Writer prompt says no slurs even in sources, violence without
   graphic detail, save chapters in parts (the first P31 Writer was stopped by a content filter before saving).
