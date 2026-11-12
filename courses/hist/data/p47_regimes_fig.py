@@ -17,7 +17,7 @@ cols = [
         (1922.82, ["March on", "Rome"]),
         (1924.45, ["Matteotti", "murdered"]),
         (1926.9, ["Parties", "banned"]),
-        (1929.12, ["Lateran", "Pacts"]),
+        (1929.12, ["Lateran", "Treaties"]),
         (1935.75, ["Abyssinia", "invaded"]),
         (1938.9, ["Racial", "laws"]),
         (1940.45, ["Enters war"]),

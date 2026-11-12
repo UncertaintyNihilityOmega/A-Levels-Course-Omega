@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-13 · FIX · Reader items hist.int.empire.3 to hist.interp.coldwar.1 closed (46): terms glossed at first use (mandate, Covenant, Washington Conference, Monroe Doctrine, tael, belligerents, Room 40, DNVP, Reichsmark, Chiefs of Staff, SA/SS/Gestapo, Nisko, Lend-Lease and others); Corfu/Ruhr box (1919.2); 1935-36 events box (1929.1); Young Plan 36 vs 112 billion explained; log-scale figure given ticks; sources fixed (Hansard Source B, Dimitrov glosses, cartoon note); vote count aligned (11 of 17); skills/ww1/holocaust/coldwar framing fixes; no items left for the sweep
+Last: 2026-11-13 · FIX · 35 reader items closed (hist.interp.coldwar.2, italy.1-4, stalin.1-4, hitler.1-4, compare, usa45.1-2): glosses at first use, Great Turn working explanation in stalin.2, Lateran Treaties used course-wide (Pacts once), timeline of debate stages, 1924 table note, lira direction, Eisenhower/Bates/Little Rock Nine, guns or butter
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

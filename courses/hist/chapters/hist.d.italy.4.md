@@ -40,7 +40,7 @@ A: Criteria tell the examiner how you are judging the question ("how far", "how 
 | 11 February 1929 | The Lateran Treaties are signed |
 | 24 March 1929 | The plebiscite after the Lateran Treaties |
 | 1929 | The Giustizia e Libertà movement is founded in Paris |
-| May to June 1931 | Conflict over Catholic Action; the encyclical *Non abbiamo bisogno* (29 June) |
+| May to June 1931 | Conflict over Catholic Action; the encyclical (a letter from the Pope to the whole Church) *Non abbiamo bisogno* (29 June) |
 | 1931 | University professors must take an oath of loyalty |
 | 1933 | A decree allows state posts to be closed to women |
 | 1935 | "Fascist Saturday" is introduced |
@@ -136,7 +136,7 @@ These measures hurt educated women in the professions and public service. But th
 - introduced state examinations at the end of each stage.
 
 After Gentile left office in 1924 the regime turned education into indoctrination.
-- **Curriculum and textbooks.** History was rewritten to praise Rome, the Risorgimento and Mussolini. From 1929 the regime decided that elementary schools would use one **single state textbook** (*il libro unico di Stato*), in use from the early 1930s, so that the same Fascist version of history, geography and reading reached every child. Teachers' own choice of books ended.
+- **Curriculum and textbooks.** History was rewritten to praise Rome, the Risorgimento (the movement that unified Italy, 1815–70) and Mussolini. From 1929 the regime decided that elementary schools would use one **single state textbook** (*il libro unico di Stato*), in use from the early 1930s, so that the same Fascist version of history, geography and reading reached every child. Teachers' own choice of books ended.
 - **Teachers.** Teachers were pressed to join the Party, to wear uniform and to lead their pupils in Fascist ceremonies. From 1929 teachers had to swear loyalty to the regime, and from 1933 a Party card was needed for any state post.
 - **Universities.** Professors had to swear an oath of loyalty to the regime in 1931. Out of about 1,200, only about a dozen refused, and they lost their posts. The rest took the oath, some of them after anguished debate. Students were organised in the **GUF** (Fascist University Groups), and from 1934 in the *Littoriali* competitions in sport, art and writing. Other students used these to argue in private against the regime, and a few of the future leaders of anti-Fascism and the post-war republic came out of the GUF.
 
@@ -184,13 +184,13 @@ Pope Pius XI, elected in February 1922, wanted to end the quarrel between Church
 ### The Lateran Treaties, 1929
 
 :::def Lateran Treaties
-Three agreements signed on 11 February 1929 by Mussolini and Cardinal Pietro Gasparri, the Pope's Secretary of State, that ended the quarrel between the Italian state and the Papacy: a treaty, a financial convention and a concordat.
+Also called the Lateran Pacts (one set of agreements, not two). Three agreements signed on 11 February 1929 by Mussolini and Cardinal Pietro Gasparri, the Pope's Secretary of State, that ended the quarrel between the Italian state and the Papacy: a treaty, a financial convention and a concordat.
 :::
 
 | Part | What it did |
 |---|---|
 | **Treaty** | Recognised the Pope's sovereignty over the Vatican City, a state of about 44 hectares in Rome. The Holy See recognised the Kingdom of Italy with Rome as its capital. |
-| **Financial convention** | Italy paid the Church compensation for the loss of the Papal States: 750 million lire in cash and 1,000 million lire in 5 per cent government bonds, 1,750 million lire in all. |
+| **Financial convention** | Italy paid the Church compensation for the loss of the Papal States (the lands in central Italy that the Pope had ruled until 1870): 750 million lire in cash and 1,000 million lire in 5 per cent government bonds, 1,750 million lire in all. |
 | **Concordat** | Catholicism was declared the religion of the state. Church marriages had civil effect. Religious teaching was extended to secondary schools. Bishops swore an oath to the king and priests were barred from joining political parties. Catholic Action, the Church's lay organisation, was allowed, provided it kept out of politics. |
 
 *Impact and significance.* The treaties ended a break of 59 years between Italy and the Papacy. For Mussolini they were a huge propaganda gain: they gave his regime a respectability no Liberal government had won, brought Catholics behind it, and weakened any Catholic opposition. Pius XI praised Mussolini as a man whom Providence had sent. In a plebiscite on 24 March 1929, with ballots for "yes" printed in the national colours and those for "no" plain, over 98 per cent of the votes were for the Fascist list, and priests urged their congregations to vote yes. The Church gained too: its sovereign territory, its money, Catholic marriage, religious teaching in schools and a legal place for Catholic Action. It was no longer a victim of the state, but a partner.
@@ -232,7 +232,7 @@ The OND began in 1925 as a body created by the Fascist unions and Mussolini, par
 
 *Organisation.* From 1927 the OND was run by the Party, and in the 1930s under Starace it concentrated on sport, excursions and entertainment. It had local clubs in towns, factories and villages, which offered a bar, a radio, football, bowls, band concerts, film shows and travelling theatre (the *Carro di Tespi*). It ran cheap holidays, at the seaside and in the mountains, and "popular trains" with cheap tickets. The ordinary worker's leisure was thus partly financed by the state.
 
-*Outcomes.* The OND was the most popular of the mass organisations. One estimate says that nearly 40 per cent of the industrial workforce had joined by 1939, and it had the largest membership of all the Fascist bodies. Victoria de Grazia (*The Culture of Consent*, 1981) argued that it was a real success in organising leisure on a mass scale, bringing sport, cinema and the radio to people who had little access to them and replacing independent worker clubs with state ones. But the OND did not turn workers into committed Fascists. They used the facilities, such as the cheap trains and the sports clubs, much as they would have used any other, and it was far smaller in scale than the German *Kraft durch Freude* (Strength through Joy). Historians such as Adrian Lyttelton noted that attempts at political education usually failed because the organisers did not speak the language of their audience. In the south, with few clubs and little money, it hardly reached the peasants.
+*Outcomes.* The OND was the most popular of the mass organisations. One estimate says that nearly 40 per cent of the industrial workforce had joined by 1939, and it had the largest membership of all the Fascist bodies. Victoria de Grazia (*The Culture of Consent*, 1981) argued that it was a real success in organising leisure on a mass scale, bringing sport, cinema and the radio to people who had little access to them and replacing independent worker clubs with state ones. But the OND did not turn workers into committed Fascists. They used the facilities, such as the cheap trains and the sports clubs, much as they would have used any other, and it was far smaller in scale than the German *Kraft durch Freude* (Strength through Joy, the Nazi leisure organisation). Historians such as Adrian Lyttelton noted that attempts at political education usually failed because the organisers did not speak the language of their audience. In the south, with few clubs and little money, it hardly reached the peasants.
 
 ### The Reform of Customs, 1938
 
@@ -241,7 +241,7 @@ A campaign led by the Party in 1937–38 to change Italians' everyday manners to
 :::
 
 In the late 1930s, the Party secretary Achille Starace pressed a campaign to remake Italians' behaviour:
-- the **handshake** was condemned as bourgeois and foreign, and the **Roman salute** (the outstretched arm) was ordered in its place;
+- the **handshake** was condemned as bourgeois (middle-class) and foreign, and the **Roman salute** (the outstretched arm) was ordered in its place;
 - the polite form of address *Lei* was banned in the press and in official use, and the **Voi**, which was regarded as more Roman, was ordered instead;
 - the **Roman step** (*passo romano*, a goose-step-like march) was introduced in the army and Party parades;
 - Party officials and some civil servants were told to wear uniforms, and there were campaigns against foreign words and foreign fashions.
@@ -504,7 +504,7 @@ A: Support: the OND was popular because it gave benefits that people wanted (che
 :::
 
 :::note Connections
-- [Hitler's Germany (4): how far the Nazis transformed German society](#hist.d.hitler.4): compare the Battle for Births with Nazi marriage loans, the Balilla with the Hitler Youth, and the Lateran Pacts of 1929 with Hitler's Concordat of 1933; Italy's racial laws of 1938 came as Mussolini drew closer to Hitler.
+- [Hitler's Germany (4): how far the Nazis transformed German society](#hist.d.hitler.4): compare the Battle for Births with Nazi marriage loans, the Balilla with the Hitler Youth, and the Lateran Treaties of 1929 with Hitler's Concordat of 1933; Italy's racial laws of 1938 came as Mussolini drew closer to Hitler.
 - [Stalin's Russia (4): how far Stalin transformed Soviet society](#hist.d.stalin.4): Stalin attacked the Orthodox Church where Mussolini made peace with the Pope, yet both regimes turned back to the family and to discipline in schools in the 1930s.
 - [France (2): how and why France became a republic by 1792](#hist.eu.france.2): a revolution that quarrelled with the Church, through the Civil Constitution of the Clergy of 1790, and divided the nation; Mussolini chose the opposite course.
 - [Dictatorships compared](#hist.d.compare): how far each of the three regimes remade its society.

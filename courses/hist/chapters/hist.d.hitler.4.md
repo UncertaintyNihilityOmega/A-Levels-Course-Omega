@@ -34,7 +34,7 @@ Read this first. Every later section explains one part of it.
 | Date | Event |
 |---|---|
 | 1 April 1933 | One-day boycott of Jewish shops, doctors and lawyers |
-| 7 April 1933 | Law for the Restoration of the Professional Civil Service (the "Aryan paragraph") |
+| 7 April 1933 | Law for the Restoration of the Professional Civil Service (the "Aryan paragraph": the clause excluding people of Jewish descent; "Aryan" was the Nazi word for the supposed pure non-Jewish "master race") |
 | 1 June 1933 | Law for the Reduction of Unemployment: marriage loans |
 | 5 July 1933 | The Centre Party dissolves |
 | 14 July 1933 | Law for the Prevention of Hereditarily Diseased Offspring (sterilisation) |
@@ -42,7 +42,7 @@ Read this first. Every later section explains one part of it.
 | 23 July 1933 | Church election: German Christians win about two thirds of the vote |
 | 27 September 1933 | Ludwig Müller made Reich Bishop |
 | 13 November 1933 | German Christian rally at the Berlin Sports Palace |
-| 29–31 May 1934 | Barmen Synod: the Confessing Church |
+| 29–31 May 1934 | Barmen Synod (a church assembly): the Confessing Church |
 | 15 September 1935 | Nuremberg Laws |
 | 14 November 1935 | First decree defining who is a Jew |
 | 1 December 1936 | Law making the Hitler Youth the state youth organisation |
@@ -117,7 +117,7 @@ The Nazis wanted to shape the minds of the young, and the schools were an early 
 
 - **Teachers.** The Law for the Restoration of the Professional Civil Service (7 April 1933) allowed the dismissal of Jewish teachers and of those thought politically unreliable. Most teachers were then brought into the **National Socialist Teachers' League** (NSLB), led by Hans Schemm, and attended courses and camps. Teachers swore an oath to Hitler as civil servants (from August 1934) and had to teach what the state wanted. Some, especially older teachers, grumbled, but few resisted openly.
 - **The syllabus.** Subjects were reshaped for ideology. **Biology** taught race theory and eugenics. **History** began with the humiliation of 1918 and the rise of the Nazi movement and glorified the German past. **German**, **geography** and **maths** were used to teach nationalism (for example by problems about the cost to the state of caring for disabled people, or the bombing of cities). **Physical education** was given a greater share of time, to prepare for military service. Religious instruction survived but under pressure.
-- **Textbooks.** New textbooks were issued, and children's books such as *Der Giftpilz* ("The Poisonous Mushroom", 1938), published by Julius Streicher's *Der Stürmer* press, taught children to see Jews as dangerous.
+- **Textbooks.** New textbooks were issued, and children's books such as *Der Giftpilz* ("The Poisonous Mushroom", 1938), published by Julius Streicher's *Der Stürmer* press (the party's antisemitic newspaper), taught children to see Jews as dangerous.
 - **New schools.** From 1933 the **Napolas** (National Political Educational Institutes), run under the Education Minister Bernhard Rust, took boys for a military-style, ideological education, and from 1937 the **Adolf Hitler Schools**, run by the Labour Front's Robert Ley and the Hitler Youth, took selected boys of twelve to eighteen to train a party elite. They were few in number, and most children stayed in ordinary schools.
 - **Universities.** In May 1933 students and SA men burned thousands of books by Jewish, left-wing and liberal authors in the university cities, on 10 May in Berlin. Jewish and politically opposed lecturers were dismissed, many leading scientists left Germany, and the Nazi Students' League took control of student life. The universities were brought into line, and research was directed towards the aims of the regime.
 
@@ -166,7 +166,7 @@ The Nazis soon broke the terms. They arrested priests and closed Catholic newspa
 About two thirds of Germans were Protestants, in a number of regional churches, and many were nationalist and conservative. The Nazis wanted a single, united "Reich Church" under their control.
 
 - **German Christians.** The *Deutsche Christen* movement mixed Christianity and Nazi ideology, with an "Aryan" Jesus and the rejection of the Jewish Old Testament. After Hitler spoke on the radio in support, it won about two thirds of the votes in the church elections of **23 July 1933**.
-- **Bishop Müller.** **Ludwig Müller**, a former army chaplain and a friend of Hitler, was made **Reich Bishop** at the national synod at Wittenberg on **27 September 1933**. At a German Christian rally at the Berlin Sports Palace on **13 November 1933**, a speaker called for the removal of the Old Testament and the "Jewish" parts of the New, and the outcry that followed weakened the movement.
+- **Bishop Müller.** **Ludwig Müller**, a former army chaplain and a friend of Hitler, was made **Reich Bishop** at the national synod (church assembly) at Wittenberg on **27 September 1933**. At a German Christian rally at the Berlin Sports Palace on **13 November 1933**, a speaker called for the removal of the Old Testament and the "Jewish" parts of the New, and the outcry that followed weakened the movement.
 - **The Pastors' Emergency League.** Martin Niemöller, a Berlin pastor and a First World War U-boat commander, formed the Pastors' Emergency League in September 1933, which about 7,000 pastors joined by the start of 1934, in protest against the "Aryan paragraph" being applied to the Church.
 - **The Confessing Church.** At the **Barmen Synod** (29–31 May 1934) the opposing Protestants, led by theologians such as Karl Barth, issued the Barmen Declaration, which said that the Church could not take its orders from any state and that Christ was the only Lord. This created the **Confessing Church**, which was a minority of Protestants and was divided about how far to resist.
 - **The failure of the Reich Church.** Müller's authority collapsed under the opposition of the Confessing Church and the lack of enthusiasm of most Protestants, and in July 1935 Hitler appointed Hanns Kerrl as Minister for Church Affairs to try to control the churches by committees. Niemöller was arrested on **1 July 1937**, and after a trial was held as Hitler's personal prisoner in Sachsenhausen and Dachau until 1945. The regime did not manage to unite the Protestants in a Nazi church.
@@ -251,7 +251,7 @@ The Nazis defined other groups as threats to the "health" of the people's commun
 - **Jehovah's Witnesses.** They refused to give the Hitler salute, to join Nazi organisations, to swear an oath of loyalty or, after conscription began in 1935, to serve in the armed forces. Their organisation was banned in the German states in 1933 and nationally by 1935, and many were imprisoned. Estimates of the number sent to camps range from about 2,000 to about 10,000, and of the dead from about 1,200 to 5,000; about 250 were executed for refusing military service in the war. Because they could be released if they signed a declaration giving up their faith, and many would not, they showed a stubborn resistance.
 - **Roma and Sinti.** Roma and Sinti ("Gypsies") were seen as "racially inferior" and as "asocial". A decree of 26 November 1935 applied the Nuremberg Laws to them, in 1936 a camp for Roma was set up at Marzahn near Berlin before the Olympic Games, and a research unit studied them as a "race". In December 1938 Himmler ordered the "fight against the Gypsy plague", leading to registration, arrests and later deportations. Their persecution in 1939–45 belongs to the later chapters.
 - **Disabled people.** The Law for the Prevention of Hereditarily Diseased Offspring of 14 July 1933 (in force in January 1934) ordered compulsory sterilisation of people with conditions judged to be inherited, such as severe mental illness, epilepsy, hereditary blindness or deafness and severe alcoholism, by order of Hereditary Health Courts. More than **400,000** people were sterilised by 1945. From **1939**, in the programme known as **Aktion T4** and a parallel programme for children, disabled people in institutions were killed: the first children in 1939 and adults from the autumn of that year. About 70,000 had been killed by August 1941, when the killings were officially stopped after protests, notably the sermon of Bishop von Galen on 3 August 1941.
-- **"Asocials".** People labelled work-shy, beggars, tramps, prostitutes and habitual criminals were persecuted. In June 1938, in a police action against the "work-shy", about 10,000 men were arrested and sent to concentration camps. They wore the black triangle.
+- **"Asocials".** People labelled work-shy, beggars, tramps, prostitutes and habitual criminals were persecuted. In June 1938, in a police action against the "work-shy", about 10,000 men were arrested and sent to concentration camps. They wore the black triangle (the badge that camp prisoners of this group had to wear).
 - **Black Germans.** Several hundred children of German mothers and African soldiers of the French occupation army in the Rhineland, called "Rhineland bastards" by the Nazis, were sterilised in 1937.
 
 :::key Why were minorities persecuted? The main reasons
@@ -485,7 +485,7 @@ A: Young people: control by the Hitler Youth (1936, 1939), the schools; limits i
 
 :::note Connections
 - [The Holocaust (1): from antisemitism to genocide](#hist.interp.holocaust.1): how the persecution of 1933–39 turned into mass murder after 1941.
-- [Mussolini's Italy (4): how far Mussolini transformed Italian society](#hist.d.italy.4): compare marriage loans with the Battle for Births, the Hitler Youth with the Balilla, and the Concordat of 1933 with the Lateran Pacts of 1929.
+- [Mussolini's Italy (4): how far Mussolini transformed Italian society](#hist.d.italy.4): compare marriage loans with the Battle for Births, the Hitler Youth with the Balilla, and the Concordat of 1933 with the Lateran Treaties of 1929.
 - [Russia (1): the challenges facing Tsarism, 1881–94](#hist.eu.russia.1): set the May Laws of 1882 and the pogroms in Tsarist Russia beside the Nuremberg Laws and the pogrom of November 1938, and see what was new in the Nazis' racial antisemitism.
 - [Dictatorships compared](#hist.d.compare): how far each of the three regimes remade its society.
 - [The big picture](#hist.f.eras): Nazi society in the years of depression, dictatorship and the road to war, 1929–41.

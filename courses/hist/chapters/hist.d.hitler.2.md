@@ -40,7 +40,7 @@ Read this first. Every later section explains one part of it.
 | 21 September 1933 | Pastors' Emergency League founded (Niemöller) |
 | 14 October 1933 | Germany leaves the Disarmament Conference and the League of Nations |
 | 24 April 1934 | People's Court established |
-| 29–31 May 1934 | Barmen Synod: the Confessing Church forms |
+| 29–31 May 1934 | Barmen Synod (a church assembly): the Confessing Church forms |
 | 25 July 1934 | Austrian Nazis murder Chancellor Dollfuss; the putsch fails |
 | 13 January 1935 | Saar plebiscite: over 90 per cent vote to return to Germany |
 | 16 March 1935 | Conscription announced |
@@ -164,7 +164,7 @@ A Nazi term for modern art (Expressionism, abstract art, much of the work of Jew
 
 ### The Nuremberg Rallies
 
-The Party held a rally each year at Nuremberg, in September, from 1933 to 1938: a week of marches, speeches, ceremonies and displays, with hundreds of thousands of members of the Party, the SA, SS, Hitler Youth and Labour Service in uniform, lit by torches and searchlights, in settings designed by the architect Albert Speer. The rally of 1933 was called the Rally of Victory, that of 1934 the Rally of Unity and Strength (the one filmed by Riefenstahl), and that of 1935 the Rally of Freedom, at which the **Nuremberg Laws** against the Jews were announced (15 September 1935). The 1938 rally celebrated "Greater Germany", and the rally planned for 1939, the "Rally of Peace", was cancelled when war began. The rallies had several purposes. They showed to Germans and to the world a disciplined, united people. They gave members of the Party a sense of belonging and of mass emotion, and they presented Hitler as the object of a quasi-religious loyalty.
+The Party held a rally each year at Nuremberg, in September, from 1933 to 1938: a week of marches, speeches, ceremonies and displays, with hundreds of thousands of members of the Party, the SA, SS, Hitler Youth (the Nazi organisation for boys and girls, see [Hitler's Germany (4)](#hist.d.hitler.4)) and Labour Service (compulsory manual work for young men, see [Hitler's Germany (3)](#hist.d.hitler.3)) in uniform, lit by torches and searchlights, in settings designed by the architect Albert Speer. The rally of 1933 was called the Rally of Victory, that of 1934 the Rally of Unity and Strength (the one filmed by Riefenstahl), and that of 1935 the Rally of Freedom, at which the **Nuremberg Laws** against the Jews were announced (15 September 1935). The 1938 rally celebrated "Greater Germany", and the rally planned for 1939, the "Rally of Peace", was cancelled when war began. The rallies had several purposes. They showed to Germans and to the world a disciplined, united people. They gave members of the Party a sense of belonging and of mass emotion, and they presented Hitler as the object of a quasi-religious loyalty.
 
 ### The 1936 Olympics
 
@@ -186,7 +186,7 @@ The syllabus lists four kinds of opposition: youth, the churches, the left, and 
 
 ### Opposition from youth
 
-The Hitler Youth had been made a state organisation and, by a law of 1 December 1936, was meant to include all young people, though many did not like its drill and its demands. Young people who rejected it found other forms of dissent.
+The Hitler Youth (the Nazi youth organisation, see [Hitler's Germany (4)](#hist.d.hitler.4)) had been made a state organisation and, by a law of 1 December 1936, was meant to include all young people, though many did not like its drill and its demands. Young people who rejected it found other forms of dissent.
 
 - **The Swing Youth** (*Swingjugend*) were teenagers and young adults, mostly from comfortable homes in cities such as Hamburg and Berlin, from about 1939. They loved American and British jazz and swing, which the regime banned, danced at private parties, wore English-style clothes, spoke English phrases and mocked the Nazi salute. Their "crime" was a way of life. On 18 August 1941 more than 300 Swing Youth were arrested in Hamburg, and some of the leaders were sent to youth camps and concentration camps.
 - **The Edelweiss Pirates** were groups of young people aged mostly 14 to 18, in the industrial cities of western Germany (Cologne, Düsseldorf, Essen), who wanted freedom from the Hitler Youth. They hiked and camped, fought with Hitler Youth patrols, and in the war some helped deserters and distributed Allied leaflets. In November 1944, thirteen people from the Ehrenfeld group in Cologne, six of them teenagers, were hanged in public after an attack in which the local Gestapo chief was killed.
@@ -280,7 +280,7 @@ Historians have argued for decades over whether Hitler followed a consistent pla
 - **The "opportunist" view.** A. J. P. Taylor, in *The Origins of the Second World War* (1961), argued that Hitler was less a planner than an opportunist: he wanted what most Germans wanted (a Germany free of Versailles and strong in Europe), and he took chances as the mistakes of other statesmen gave them. Taylor saw the war of 1939 as the result of miscalculation on all sides as much as of a plan.
 - **A middle view.** Many historians now argue for consistent aims but flexible methods and timing. Ian Kershaw's idea of "working towards the Führer" (set out in his *Hitler*, 1998 and 2000) is that Hitler's broad aims set a direction and officials and rivals competed to carry them out, so that policy came partly from below. For foreign policy this means that Lebensraum and anti-communism were fixed, while the route changed.
 
-**Evidence for planning and consistency.** The writings from 1925 to 1928 and the Hossbach meeting show consistent aims; the shape of the steps (the Rhineland, then Austria, then Czechoslovakia, then Poland, then the USSR) fits the aims; and the Four Year Plan of 1936, which prepared the economy for war, and rearmament from 1933 suggest preparation. **Evidence for improvisation.** The Anschluss came sooner than expected (Hitler decided in a few days, when Schuschnigg called a plebiscite in Austria). The Sudeten crisis was meant to lead to war and instead led to Munich, which Hitler is reported to have resented. The Nazi–Soviet Pact, signed with the regime he had called the great enemy, showed that tactics could override ideology, and the war with Britain and France in 1939 was not the war he had planned for. The invasion of Poland was meant to be local, and the attack on the USSR was made before Britain was beaten.
+**Evidence for planning and consistency.** The writings from 1925 to 1928 and the Hossbach meeting show consistent aims; the shape of the steps (the Rhineland, then Austria, then Czechoslovakia, then Poland, then the USSR) fits the aims; and the Four Year Plan of 1936, which prepared the economy for war, and rearmament from 1933 suggest preparation. **Evidence for improvisation.** The Anschluss came sooner than expected (Hitler decided in a few days, when Kurt Schuschnigg, the Austrian Chancellor, called a plebiscite in Austria). The Sudeten crisis was meant to lead to war and instead led to Munich, which Hitler is reported to have resented. The Nazi–Soviet Pact, signed with the regime he had called the great enemy, showed that tactics could override ideology, and the war with Britain and France in 1939 was not the war he had planned for. The invasion of Poland was meant to be local, and the attack on the USSR was made before Britain was beaten.
 
 A balanced conclusion: Hitler's long-term aims (Lebensraum, anti-communism, a racial empire) were consistent from the 1920s to 1941; his short-term policy was often improvised, shaped by opportunity, by the reactions of Britain and France, by his own impatience and by his officials.
 
@@ -297,7 +297,7 @@ A balanced conclusion: Hitler's long-term aims (Lebensraum, anti-communism, a ra
 |---|---|---|
 | Heinrich Himmler | Reichsführer-SS; Chief of German Police from 1936 | Built the SS, camps and police into one apparatus |
 | Reinhard Heydrich | Head of the SD and Gestapo; RSHA chief from 1939 | Organised the security system |
-| Hermann Göring | Prussian Interior Minister; Four Year Plan | Created the Gestapo in Prussia; ran the economy and the Luftwaffe |
+| Hermann Göring | Prussian Interior Minister; Four Year Plan | Created the Gestapo in Prussia; ran the economy and the Luftwaffe (the German air force) |
 | Joseph Goebbels | Minister of Propaganda from 13 March 1933 | Controlled press, radio, film and culture |
 | Leni Riefenstahl | Film-maker | *Triumph of the Will* (1935); *Olympia* (1938) |
 | Roland Freisler | President of the People's Court from 1942 | Symbol of the courts' service to the regime |

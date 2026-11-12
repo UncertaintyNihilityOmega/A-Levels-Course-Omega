@@ -38,7 +38,7 @@ Read this first. Every later section explains one part of it.
 | 23 March 1919 | Mussolini founds the *Fasci di Combattimento* in Milan |
 | 24 April 1919 | Orlando leaves the Paris Peace Conference over Fiume |
 | 12 September 1919 | D'Annunzio seizes Fiume |
-| 16 November 1919 | General election under proportional representation: Socialists and Popolari are the largest parties; Fascists win no seat |
+| 16 November 1919 | General election under proportional representation (seats shared out among parties by their share of the votes): Socialists and Popolari are the largest parties; Fascists win no seat |
 | 1–30 September 1920 | Factory occupations (the peak of the *Biennio Rosso*, "the two red years") |
 | 12 November 1920 | Treaty of Rapallo (Italy–Yugoslavia): Fiume to be a free state |
 | 24–29 December 1920 | "Bloody Christmas": the Italian navy and army drive D'Annunzio out of Fiume |
@@ -53,7 +53,7 @@ Read this first. Every later section explains one part of it.
 | January 1923 | Militia (MVSN) created |
 | 21 July 1923 | Chamber passes the Acerbo Law |
 | 6 April 1924 | General election: the government list wins about 65 per cent |
-| 30 May 1924 | Matteotti denounces the election in the Chamber |
+| 30 May 1924 | Matteotti denounces the election in the Chamber (of Deputies, the elected lower house; the Senate was the appointed upper house) |
 | 10 June 1924 | Matteotti is kidnapped and murdered |
 | 3 January 1925 | Mussolini's speech taking "responsibility" |
 | 24 December 1925 | Law on the powers of the Head of Government |
@@ -124,13 +124,15 @@ Do not write that Italy "was on the verge of communist revolution" in 1920. Hist
 
 ### Government instability and unpopularity
 
-Parliament had no effective majority. The electoral law of **1912** gave the vote to almost all men (those over 30, and those over 21 who had done military service), which raised the electorate from about three million to over eight million, and in **1919** a new law introduced **proportional representation**, with large constituencies and party lists. The old Liberal groups were now outvoted. In the **November 1919 election** the Italian Socialist Party (PSI) won 156 of 508 seats and the new Catholic **Italian People's Party** (PPI, the *Popolari*, founded by the priest **Luigi Sturzo** in January 1919) won 100. Neither would work with the other or with the Liberals, so every government rested on a shifting alliance of Liberals and groups from the centre.
+Parliament had no effective majority. The electoral law of **1912** gave the vote to almost all men (those over 30, and those over 21 who had done military service), which raised the electorate from about three million to over eight million, and in **1919** a new law introduced **proportional representation**, with large constituencies and party lists (seats were shared out among the parties in proportion to their votes, from lists of candidates, so many small parties could win seats). The old Liberal groups were now outvoted. In the **November 1919 election** the Italian Socialist Party (PSI) won 156 of 508 seats and the new Catholic **Italian People's Party** (PPI, the *Popolari*, founded by the priest **Luigi Sturzo** in January 1919) won 100. Neither would work with the other or with the Liberals, so every government rested on a shifting alliance of Liberals and groups from the centre.
 
 | Election | PSI | PPI | Fascists | Communists | Total seats |
 |---|---|---|---|---|---|
 | 1919 | 156 | 100 | none (Mussolini won fewer than 5,000 votes in Milan) | not yet founded | 508 |
 | 1921 | 123 | 108 | about 35 | 15 | 535 |
 | 1924 | 22 (and 24 for the breakaway Unitary Socialists, PSU) | 39 | about 275 (inside government lists that won 374 seats) | 19 | 535 |
+
+The government lists also held Liberals and Nationalists; about 275 of their 374 seats went to Fascists.
 
 <div class="widget" data-w="hist-chart" data-title="Seats won by the main parties, 1919 and 1921" data-unit="seats" data-type="bar" data-series="1919: PSI=156, PPI=100, Fascists=0, Communists=0 ;; 1921: PSI=123, PPI=108, Fascists=35, Communists=15" data-source="Results of the general elections of 16 November 1919 and 15 May 1921, Italian Chamber of Deputies"></div>
 
@@ -140,7 +142,7 @@ Between 1919 and Mussolini's appointment in October 1922 there were six governme
 1. **No majority.** Proportional representation produced two large parties (PSI and PPI) that would not co-operate, and a Liberal centre too fragmented to rule alone.
 2. **No solution to the economic crisis.** Inflation, unemployment and strikes, and a budget deficit.
 3. **The mutilated victory.** Governments were blamed for a peace that nationalists called a defeat, and for failing to control D'Annunzio.
-4. **Weak response to violence.** Prefects, police and army often let Fascist violence go unpunished, so the state seemed unwilling to defend itself.
+4. **Weak response to violence.** Prefects (the government's appointed heads of provinces), police and army often let Fascist violence go unpunished, so the state seemed unwilling to defend itself.
 5. **Fear of the Left.** The Biennio Rosso persuaded the propertied classes that parliament could not protect them.
 :::
 
@@ -154,7 +156,7 @@ His strengths as a politician were real: he was a gifted journalist and speaker,
 
 ### The Fasci di Combattimento and the San Sepolcro programme
 
-On **23 March 1919** Mussolini gathered about a hundred men, among them ex-soldiers, *arditi*, nationalists, Futurists and former syndicalists, at a hall in Piazza San Sepolcro in Milan and founded the **Fasci Italiani di Combattimento** ("Italian fighting leagues"). The word *fascio* (bundle) came from the Roman *fasces*, the bundle of rods tied round an axe carried before magistrates, a symbol of strength through unity. The group's programme, published in June 1919, was a mixture: it was patriotic, demanding Fiume and Dalmatia, and it was also radical. It called for a republic, a vote for women, a minimum wage and the eight-hour day, workers' participation in running industry, a heavy tax on capital, confiscation of war profits and of church property, and the abolition of the Senate.
+On **23 March 1919** Mussolini gathered about a hundred men, among them ex-soldiers, *arditi*, nationalists, Futurists (artists who glorified speed, war and the machine age) and former syndicalists (revolutionaries who wanted workers' unions, not the state, to run industry), at a hall in Piazza San Sepolcro in Milan and founded the **Fasci Italiani di Combattimento** ("Italian fighting leagues"). The word *fascio* (bundle) came from the Roman *fasces*, the bundle of rods tied round an axe carried before magistrates, a symbol of strength through unity. The group's programme, published in June 1919, was a mixture: it was patriotic, demanding Fiume and Dalmatia, and it was also radical. It called for a republic, a vote for women, a minimum wage and the eight-hour day, workers' participation in running industry, a heavy tax on capital, confiscation of war profits and of church property, and the abolition of the Senate.
 
 :::def Fascism (in Italy, to 1922)
 The movement founded by Mussolini in 1919: nationalist, anti-socialist and anti-liberal, led by an all-powerful leader, glorifying the nation and the war, and using paramilitary violence. Its aims at the start were vague and shifted according to what would win support.
@@ -190,10 +192,10 @@ Mussolini's strategy of 1921–22: to take part in parliamentary politics and ne
 
 In 1922 the state still had the power to crush the Fascists. The army was a loyal institution commanded by the king, and its generals included the war heroes Diaz and Badoglio; the Fascists were lightly armed. The reason it did not act lay in the attitudes of the people who mattered:
 - **The political class.** Giolitti, Salandra, Orlando and Facta, the old Liberals, did not see Fascism as a threat to the state. They thought they could "constitutionalise" it by bringing it into government (**Giolitti's** bet in 1921) and use it to weaken the Socialists. Several of them were in secret talks with Mussolini during 1922 about a coalition.
-- **The landowners and industrialists.** The landowners of the Po valley, who paid for squads, wanted order in the countryside. Industrial leaders in Confindustria and the banks wanted a government that would suppress strikes and cut taxes. They did not all love Fascism, but they preferred it to the Left.
+- **The landowners and industrialists.** The landowners of the Po valley, who paid for squads, wanted order in the countryside. Industrial leaders in Confindustria (the employers' federation) and the banks wanted a government that would suppress strikes and cut taxes. They did not all love Fascism, but they preferred it to the Left.
 - **The Church.** The Vatican distrusted the Popolari, who were independent of the hierarchy, and welcomed an anti-socialist who promised to respect religion. Pope Pius XI, elected in February 1922, did not condemn the Fascists.
 - **The army and police.** Many officers sympathised openly and gave aid. Others obeyed orders not to interfere.
-- **The Socialists and the Left.** Divided between reformists, maximalists and (from 1921) Communists, they refused to join Liberals and Popolari in a government that might have stood against Fascism, and in August 1922 a general strike called to defend democracy ("legalitarian" strike) failed within three days.
+- **The Socialists and the Left.** Divided between reformists, maximalists (the revolutionary wing of the Socialists) and (from 1921) Communists, they refused to join Liberals and Popolari in a government that might have stood against Fascism, and in August 1922 a general strike called to defend democracy ("legalitarian" strike) failed within three days.
 
 The **general strike of 1–3 August 1922** was a decisive moment. The Alleanza del Lavoro called it to protest at Fascist violence. The Fascists announced that they would break it if the government did not, and their squads seized the town hall of Milan and attacked Socialist strongholds in Livorno, Ancona and elsewhere. The government did not stop them. The squads had defeated the Left in front of the whole country, which made Fascism the country's de facto law-and-order force, and made Mussolini's demand to join the government seem realistic.
 
@@ -279,7 +281,7 @@ The crisis was the greatest threat to Mussolini's survival, and on **31 December
 
 > "I declare here, before this assembly and before the whole Italian people, that I assume, I alone, the political, moral and historical responsibility for everything that has happened." *(Translated from Mussolini's speech to the Chamber of Deputies, 3 January 1925.)*
 
-He challenged his opponents to impeach him, knowing that the Chamber would not. Within days police closed political clubs, dissolved "subversive" associations, searched homes and arrested hundreds, and the prefects were told to stamp out opposition. The Matteotti murder had shaken the regime, but the resistance of the opposition had been too weak to use the opportunity.
+He challenged his opponents to impeach him (accuse him formally before parliament of a crime), knowing that the Chamber would not. Within days police closed political clubs, dissolved "subversive" associations, searched homes and arrested hundreds, and the prefects were told to stamp out opposition. The Matteotti murder had shaken the regime, but the resistance of the opposition had been too weak to use the opportunity.
 
 :::key Why Mussolini survived the Matteotti crisis
 1. **The king did nothing.** He had the legal power to dismiss him and chose not to.
@@ -294,9 +296,9 @@ He challenged his opponents to impeach him, knowing that the Chamber would not. 
 Between 1925 and 1926 Mussolini passed a series of laws, called by Fascists the ***leggi fascistissime*** ("the most Fascist laws"), that made a dictatorship out of the existing state, and he used the state's own legal machinery to do it.
 - **The press.** Laws of December 1925 and later made editors answerable to the government, required journalists to join an official register, and allowed the confiscation of papers. Opposition papers closed or changed ownership. The *Corriere della Sera* of Milan, a leading liberal paper, passed into Fascist-friendly hands at the end of 1925.
 - **The Head of Government.** The law of **24 December 1925** made Mussolini "Head of the Government, Prime Minister, Secretary of State", responsible only to the king and not to parliament. No bill could be debated without his consent. Ministers answered to him. A law of **31 January 1926** let the government issue decrees with the force of law.
-- **The unions.** The Palazzo Vidoni agreement of October 1925 between the employers' federation (Confindustria) and the Fascist unions gave the Fascist unions the sole right to bargain; a law of April 1926 banned strikes and set up state-controlled syndicates (see [the economy chapter](#hist.d.italy.3)).
-- **Local government.** Elected mayors were replaced by appointed ***podestà*** (see the next chapter), and prefects were given sweeping powers.
-- **The party.** In 1925 Mussolini made the hard-liner **Roberto Farinacci** party secretary, to put discipline into the party and attack the opposition, and in 1926 replaced him with the more orderly **Augusto Turati**, who purged the *ras* and brought the party under central control. The party now answered to the Duce.
+- **The unions.** The Palazzo Vidoni agreement of October 1925 between the employers' federation (Confindustria) and the Fascist unions gave the Fascist unions the sole right to bargain; a law of April 1926 banned strikes and set up state-controlled syndicates (official bodies for workers and for employers; see [the economy chapter](#hist.d.italy.3)).
+- **Local government.** Elected mayors were replaced by appointed ***podestà*** (town heads named by the government; see the next chapter), and prefects were given sweeping powers.
+- **The party.** In 1925 Mussolini made the hard-liner **Roberto Farinacci** party secretary, to put discipline into the party and attack the opposition, and in 1926 replaced him with the more orderly **Augusto Turati**, who purged the *ras* and brought the party under central control. The party now answered to the Duce ("leader", Mussolini's title).
 
 A series of attempts on Mussolini's life gave the excuse for the final measures: Tito Zaniboni's plot (November 1925), the wounding of Mussolini by the Irishwoman Violet Gibson (7 April 1926), and two further attempts in the autumn (Gino Lucetti, September; and **Anteo Zamboni**, a boy of fifteen who was lynched by the crowd at Bologna on 31 October 1926). In **November 1926** exceptional decrees:
 - **dissolved all parties except the PNF** and closed opposition newspapers;
@@ -321,7 +323,7 @@ Fascism's support came from several groups, but not from all of them in the same
 - **The middle classes.** Clerks, shopkeepers, teachers, small property owners, students and ex-officers were the movement's core members. They had been hurt by inflation and feared the Left, and they liked a party that promised order and national pride.
 - **Landowners and farmers.** In the Po valley and Tuscany they had hired squads, and they gained when unions were smashed.
 - **Industrialists and bankers.** They backed Mussolini once he showed he would suppress strikes and ease the burden on business (his finance minister, Alberto De Stefani, abolished the inheritance tax in 1923), and the Vidoni agreement showed they were content.
-- **The Church and many Catholics.** Ready to accept a government that restored religion to schools and promised to settle the dispute with the papacy (the Lateran Pacts of 1929).
+- **The Church and many Catholics.** Ready to accept a government that restored religion to schools and promised to settle the dispute with the papacy (the Lateran Treaties of 1929).
 - **The army and the king.** The army leaders were pleased with a government that praised the army, left its internal affairs to the generals and kept the Left out. The king, as the Matteotti crisis showed, preferred Mussolini to a risky change.
 - **Ordinary people.** Evidence is limited: with no free press or elections, it is hard to measure. Many Italians were passive or indifferent, tired of disorder, and some welcomed Mussolini as a strong leader. The scale of support seems to have grown in later years, and the next chapter discusses it.
 
@@ -533,7 +535,7 @@ A: Support: the blackshirts were poorly armed and outnumbered; the army had bett
 ? Why did the king refuse to sign the state of siege on 28 October 1922?
 - Because the army had already joined the Fascists
 + He feared civil war and doubted the army, and he was advised that Mussolini could be brought into a coalition
-- Because Mussolini had already occupied the Quirinale
+- Because Mussolini had already occupied the Quirinale (the king's palace in Rome)
 - Because the cabinet voted against it
 > The cabinet had asked for it. The army had not joined the Fascists, but the king doubted its loyalty and feared a bloody clash.
 ? How did Mussolini reach Rome in October 1922?

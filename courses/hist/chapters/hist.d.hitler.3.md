@@ -33,7 +33,7 @@ Read this first. Every later section explains one part of it.
 | Date | Event |
 |---|---|
 | 30 January 1933 | Hitler becomes Chancellor; about 6 million registered unemployed |
-| 17 March 1933 | Hjalmar Schacht again President of the Reichsbank |
+| 17 March 1933 | Hjalmar Schacht again President of the Reichsbank (Germany's central bank) |
 | 2 May 1933 | Trade union offices occupied; unions dissolved |
 | 10 May 1933 | The German Labour Front (DAF) is set up under Robert Ley |
 | 1 June 1933 | Law for the Reduction of Unemployment (marriage loans; public works money) |
@@ -70,7 +70,7 @@ Two points matter for the judgement of Nazi success. First, **the worst was alre
 | Person | Role | Why they matter |
 |---|---|---|
 | Hjalmar Schacht | President of the Reichsbank 1933–39; Minister of Economics August 1934 to November 1937 | A banker with a reputation from the stabilisation of 1923–24. He designed the Mefo bills and the New Plan, and was dismissed in 1939 for warning against inflation |
-| Hermann Göring | Plenipotentiary for the Four Year Plan from October 1936 | Took the economy away from Schacht's control and made it serve the military. Ran the Reichswerke Hermann Göring |
+| Hermann Göring | Plenipotentiary (an official with full powers) for the Four Year Plan from October 1936 | Took the economy away from Schacht's control and made it serve the military. Ran the Reichswerke Hermann Göring |
 | Richard Walther Darré | Reich Minister of Food and Agriculture and Reich Peasant Leader, 1933–42 | Believed in the peasant as the "blood source" of the German people; led the Reich Food Estate |
 | Robert Ley | Leader of the German Labour Front (DAF) | Ran the organisation that replaced the unions and created Strength through Joy |
 | Fritz Todt | Inspector-General for German Roads from 30 June 1933 | Planned and built the autobahns; later head of the Organisation Todt |
@@ -87,7 +87,7 @@ When Schacht returned to the Reichsbank on 17 March 1933 he did what the British
 Government spending that is greater than government income in the same year, paid for by borrowing (or creating credit) rather than by taxation. Used in Germany from 1933 to start work-creation schemes and, from 1934, to pay for rearmament without showing the cost in the budget.
 :::
 
-The device Schacht invented for the secret part of the borrowing was the **Mefo bill**. In 1933 the Reichsbank and the big armaments firms (Krupp, Siemens, Rheinmetall and Gutehoffnungshütte) set up a shell company called the Metallurgische Forschungsgesellschaft ("Metallurgical Research Company", Mefo). An arms contractor delivering to the army drew a bill of exchange on Mefo, which accepted it. The Reichsbank would discount the bill, so the contractor was paid at once in cash, and the Reich guaranteed repayment after five years. No cash passed through the budget, and the bills did not appear in the published figures.
+The device Schacht invented for the secret part of the borrowing was the **Mefo bill**. In 1933 the Reichsbank and the big armaments firms (Krupp, Siemens, Rheinmetall and Gutehoffnungshütte) set up a shell company called the Metallurgische Forschungsgesellschaft ("Metallurgical Research Company", Mefo). An arms contractor delivering to the army drew a bill of exchange on Mefo (a written promise to pay later), which accepted it. The Reichsbank would discount the bill (pay cash now for slightly less than its face value), so the contractor was paid at once in cash, and the Reich guaranteed repayment after five years. No cash passed through the budget, and the bills did not appear in the published figures.
 
 :::def Mefo bills
 Bills of exchange issued from 1934 by a front company, the Metallurgische Forschungsgesellschaft, to pay armaments firms. They were discounted by the Reichsbank and guaranteed by the Reich after five years. About 12 billion marks were issued between 1934 and March 1938, and the arrangement hid the scale of rearmament from foreign governments and from the German public.
@@ -146,7 +146,7 @@ The Weimar governments had already protected German farmers by tariffs on grain,
 The compulsory organisation of everyone in food production, processing and marketing, set up by a law of 13 September 1933 and led by Darré. It fixed prices, set quotas and controlled the marketing of farm produce, as part of the Nazi aim of food self-sufficiency and of looking after the "peasantry".
 :::
 
-The Reich Food Estate was a giant cartel. Every farmer, every dairy and every grain merchant belonged. It fixed prices, so that farmers received a guaranteed income and consumers paid higher prices than the world market would have asked for. It ran the "Battle for Production" of 1934, a campaign to increase output of grain, fats and fodder, and regulated what was grown. Farmers gained a secure market and in the first years higher incomes. The cost was control: they were told what to produce and what to charge, and they had to deliver to fixed marketing bodies.
+The Reich Food Estate was a giant cartel (an organisation of producers that fixes prices). Every farmer, every dairy and every grain merchant belonged. It fixed prices, so that farmers received a guaranteed income and consumers paid higher prices than the world market would have asked for. It ran the "Battle for Production" of 1934, a campaign to increase output of grain, fats and fodder, and regulated what was grown. Farmers gained a secure market and in the first years higher incomes. The cost was control: they were told what to produce and what to charge, and they had to deliver to fixed marketing bodies.
 
 ### The Reich Entailed Farm Law
 
@@ -206,7 +206,7 @@ The Four Year Plan aimed at autarky and at a war economy. Its targets included:
 - **Synthetic fuel and rubber.** The chemical firm IG Farben, a leading firm in the plan, expanded the production of petrol made from coal, and of *Buna* (synthetic rubber). These were expensive and slow to grow.
 - **Iron and steel.** In July 1937 Göring set up the state-owned **Reichswerke Hermann Göring** to mine and smelt low-grade German iron ore, which the private steel firms (the Ruhr industrialists) thought too expensive. It was a state firm built on the ground of a political decision, and it later took over industries in Austria and Czechoslovakia.
 - **Controls.** Prices were frozen (from November 1936) and labour was directed through the labour books (introduced in 1935).
-- **Armaments.** The expansion of aircraft, tanks, ships and ammunition factories, and of the Luftwaffe, announced openly in March 1935.
+- **Armaments.** The expansion of aircraft, tanks, ships and ammunition factories, and of the Luftwaffe (the German air force), announced openly in March 1935.
 
 :::html
 <figure class="fig small"><svg viewBox="0 0 340 405" role="img" aria-label="Diagram of the squeeze on the Nazi economy. At the top, rearmament from 1933 and 1934. Below, it needs imports of oil, rubber, iron ore and metals. Below that, imports need foreign exchange, which came only from exports and was scarce. From there two answers: the New Plan of 1934, which controlled imports and used barter, and the Four Year Plan of 1936, which made substitutes at home and put the economy under Göring. At the bottom, the cost: butter and consumer goods squeezed, with shortages of labour and materials. Arrows run down from each level to the next.">

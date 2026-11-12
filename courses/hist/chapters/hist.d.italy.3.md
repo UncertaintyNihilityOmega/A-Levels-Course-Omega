@@ -111,16 +111,16 @@ The policy did not last. De Stefani's low taxes and cheap credit also fed inflat
 From 1925 Mussolini began to describe economic policy as a series of **battles**, and the word was chosen on purpose. A battle needed a leader, a front line, heroes and enemies. It turned economic questions into tests of national will, and it let the regime claim a victory by announcing one. Four of them matter for this key question: the lira, grain, marshes and land, and (later) autarky.
 
 :::def Battle for the lira (Quota 90)
-Mussolini's campaign, announced in the Pesaro speech on 18 August 1926, to raise the value of the lira to 90 to the pound sterling, the rate of 1922. It was reached, at about 92.46 lire to the pound, by December 1927, through deflation and a return to a form of the gold standard.
+Mussolini's campaign, announced in the Pesaro speech on 18 August 1926, to raise the value of the lira to 90 to the pound sterling (the British pound), the rate of 1922. It was reached, at about 92.46 lire to the pound, by December 1927, through deflation (cutting the money supply, wages and prices) and a return to a form of the gold standard (money tied to a fixed amount of gold, which fixes its exchange rate).
 :::
 
 ### The battle for the lira, 1926–27
 
-By mid-1926 the lira had fallen to about 150 to the pound, from about 90 in 1922. Mussolini took the fall as a national insult. At Pesaro on 18 August 1926 he promised that he would defend the lira "to the last breath, to the last drop of blood". He then set the target of 90 to the pound.
+By mid-1926 the lira had fallen to about 150 to the pound, from about 90 in 1922. A lower number means a stronger lira, because a pound then buys fewer lire: at 150 lire to the pound a lira was worth little; at the rate reached, about 92, it was worth about three fifths more. Mussolini took the fall as a national insult. At Pesaro on 18 August 1926 he promised that he would defend the lira "to the last breath, to the last drop of blood". He then set the target of 90 to the pound.
 
 The method was **deflation**: cutting the supply of money and credit, raising interest rates, balancing the budget and cutting wages and prices so that the lira would buy more. The currency was backed by a loan of $100 million from American bankers led by J.P. Morgan, signed in November 1925 as soon as the war-debt settlement was agreed. Wages were cut by decree in 1927, and the cuts were larger than the fall in prices, so real wages and workers' spending power fell.
 
-*Economic effects.* The revaluation raised the lira's value against sterling by about three fifths, from about 150 to about 92.46, and made imports of coal and raw materials cheaper. But it made Italian goods dearer abroad, so exports of silk, cars and textiles suffered. Many firms went out of business or merged (mergers rose sharply in 1928 and 1929), unemployment rose, especially in the agricultural south, and the cuts hit workers hardest. Volpi himself thought 120 to 125 to the pound a more sensible rate and called 90 a drastic overvaluation.
+*Economic effects.* The revaluation (the deliberate rise in the lira's value) raised its value against sterling, the pound, by about three fifths, from about 150 to about 92.46, and made imports of coal and raw materials cheaper. But it made Italian goods dearer abroad, so exports of silk, cars and textiles suffered. Many firms went out of business or merged (mergers rose sharply in 1928 and 1929), unemployment rose, especially in the agricultural south, and the cuts hit workers hardest. Volpi himself thought 120 to 125 to the pound a more sensible rate and called 90 a drastic overvaluation.
 
 *Political effects.* Quota 90 was a political success: it showed a strong state and a strong currency, and it pleased bankers and people with fixed incomes who held lire. Mussolini presented it as a victory over the speculators. But when the Depression struck Italy had a currency that was too dear for the world market, which made its exports harder to sell.
 
@@ -254,7 +254,7 @@ They did give work, and some, such as the roads and hydroelectric power, helped 
 The system the Fascists set up to organise the economy through "corporations" in which employers, workers and the state were meant to work together instead of fighting. In theory it replaced both class struggle and competition by cooperation under the state.
 :::
 
-Fascism claimed to be a **Third Way** between liberal capitalism, which it said bred selfishness and inequality, and Marxist socialism, which it said bred class war and weakened the nation. In the Corporate State, employers and workers would be grouped by trade in syndicates, and the syndicates of each branch of the economy would meet in "corporations" under state supervision. Strikes and lockouts would be unnecessary because disputes would be settled by the state. Private property and private enterprise stayed.
+Fascism claimed to be a **Third Way** between liberal capitalism, which it said bred selfishness and inequality, and Marxist socialism, which it said bred class war and weakened the nation. In the Corporate State, employers and workers would be grouped by trade in syndicates, and the syndicates of each branch of the economy would meet in "corporations" under state supervision. Strikes and lockouts (employers shutting workers out to force terms) would be unnecessary because disputes would be settled by the state. Private property and private enterprise stayed.
 
 The Corporate State also served the regime's practical aims:
 - to **destroy** independent trade unions and the socialists who ran them, so that workers could not strike;
@@ -269,7 +269,7 @@ The Corporate State also served the regime's practical aims:
 | 2 October 1925 | Palazzo Vidoni Pact | The employers' confederation (Confindustria) and the Fascist unions agreed to recognise each other as the only bargaining partners. The Fascist unions gained a monopoly over representing workers; shop-floor committees (*commissioni interne*) were to be abolished. |
 | 3 April 1926 | Rocco Law (named after the Justice Minister Alfredo Rocco) | One legally recognised syndicate (union or employers' body) for each trade and area; all other unions lost their rights; **strikes and lockouts became crimes**; labour courts (*magistratura del lavoro*) settled disputes. |
 | July 1926 | Ministry of Corporations | A ministry to supervise the syndicates, headed by Mussolini himself; Giuseppe Bottai, who became minister in 1929, was its leading thinker. |
-| 21 April 1927 | Charter of Labour | A declaration of principles approved by the Fascist Grand Council. It recognised private enterprise, said that production was a national interest, and stated that collective contracts would regulate wages and conditions. It was a party statement and had no legal force at first. |
+| 21 April 1927 | Charter of Labour | A declaration of principles approved by the Fascist Grand Council. It recognised private enterprise, said that production was a national interest, and stated that collective contracts (pay and conditions agreed for a whole trade between the syndicates) would regulate wages and conditions. It was a party statement and had no legal force at first. |
 | 20 March 1930 | Law on the National Council of Corporations | The Council, first set up in 1926, was given its form: seven sections, with the head of government in the chair, to advise and coordinate. |
 | 5 February 1934 | Law creating the 22 corporations | Each corporation covered a branch of the economy, such as cereals, textiles or the theatre, and was meant to bring together employers, workers and Party officials. |
 | 19 January 1939 | Chamber of Fasces and Corporations | The elected Chamber of Deputies was abolished; members of the new Chamber sat because of their Party or corporate posts. |
@@ -313,7 +313,7 @@ The regime built an extensive welfare system, partly to win support, partly to p
 - **Insurance and pensions.** The regime extended compulsory insurance (for example against tuberculosis from 1927) and in 1933 renamed and reorganised the social-insurance fund as the National Fascist Institute for Social Insurance. Pension and sickness-insurance coverage grew over the 1930s.
 - **Family allowances.** In 1934, at the time of the 40-hour week, allowances were introduced for industrial workers with children, to make up part of the lost earnings.
 - **Employment.** The regime claimed to be fighting unemployment, but official figures were manipulated and many jobs were public works of a temporary kind.
-- **Leisure and welfare through the Party.** The Dopolavoro (after-work organisation), covered in [Mussolini's Italy (4)](#hist.d.italy.4), provided cheap holidays, outings and entertainment.
+- **Leisure and welfare through the Party.** The Dopolavoro (after-work organisation), covered in [Mussolini's Italy (2)](#hist.d.italy.2), provided cheap holidays, outings and entertainment.
 
 ### Pay, hours and consumption
 
@@ -323,7 +323,8 @@ How well people live, measured by pay in terms of what it will buy (real wages),
 
 - **Pay.** Real wages fell in the 1920s (by about 15 per cent between 1921 and 1929 in one estimate) because of the deflation of 1926–27. In the early 1930s prices fell faster than wages, so those who kept their jobs did a little better, and by 1938 real wages were close to their 1929 level. Economic historians disagree about how reliable the official wage figures are. Many workers lost hours or jobs, so the total income of working families was lower than wage rates suggest. The regime's own wages policy, with contracts agreed from above, meant workers had no way to ask for more.
 - **Hours.** An eight-hour day had been law since 1923. In 1934 the regime introduced a 40-hour week in industry to share work in the Depression. Workers lost pay for the hours they no longer worked, and family allowances were meant to make up some of the loss.
-- **Consumption.** Food consumption per head stagnated or fell in the 1930s, with less meat and more cereals, and the diet of the south remained poor. The Battle for Grain kept bread dear, and incomes did not allow the purchase of consumer goods such as cars or electrical appliances, which only a minority could afford.- **Regions.** The south gained least. Wheat replaced other crops, large estates remained, and the population there stayed poor.
+- **Consumption.** Food consumption per head stagnated or fell in the 1930s, with less meat and more cereals, and the diet of the south remained poor. The Battle for Grain kept bread dear, and incomes did not allow the purchase of consumer goods such as cars or electrical appliances, which only a minority could afford.
+- **Regions.** The south gained least. Wheat replaced other crops, large estates remained, and the population there stayed poor.
 
 :::key Did living standards improve?
 **For:** social insurance, maternity and child care, family allowances and cheap leisure were extended; employment in public works; some new housing and schools; falling prices in the early 1930s helped those in work.
