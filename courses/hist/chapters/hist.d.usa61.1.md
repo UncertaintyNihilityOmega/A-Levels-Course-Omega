@@ -121,7 +121,7 @@ These were Kennedy's two great failures in Congress.
 
 - **The Commission.** On 14 December 1961 Kennedy set up the **President's Commission on the Status of Women**, chaired until her death in 1962 by Eleanor Roosevelt. Its report, *American Women* (1963), documented discrimination in pay, jobs and the law, and recommended better child care and equal pay.
 - **The Equal Pay Act.** Kennedy signed it on 10 June 1963. It required equal pay for men and women doing equal work in the same workplace. It was a landmark, although it had loopholes, covered many jobs only partly, and women still earned about 60 cents for each dollar earned by men.
-- **Limits.** Kennedy did not otherwise place women's rights near the centre of his agenda; the Commission was partly a way of avoiding the Equal Rights Amendment, which women in the labour movement feared would remove protective laws. But the commission's findings led to state commissions and to the movement described in [A time of challenges, 1961–74 (4)](#hist.d.usa61.4).
+- **Limits.** Kennedy did not otherwise place women's rights near the centre of his agenda; the Commission was partly a way of avoiding the Equal Rights Amendment, which women in the labour movement feared would remove protective laws (laws that limited women's working hours and conditions). But the commission's findings led to state commissions and to the movement described in [A time of challenges, 1961–74 (4)](#hist.d.usa61.4).
 
 ### Support for farmers
 
@@ -130,8 +130,8 @@ Farm incomes were falling and surpluses were piling up in government stores. The
 ### Civil rights
 
 Kennedy's record on civil rights was cautious until 1963. He was reluctant to lose the support of Southern Democrats in Congress, and his first aim was to act by **executive order** and by the courts, not by new laws.
-- **Executive Order 10925** (6 March 1961) set up the Committee on Equal Employment Opportunity and told federal contractors to take "affirmative action" to ensure that applicants were treated equally regardless of race. This was the first official use of the phrase. The committee had little power to enforce.
-- **The Justice Department.** The Attorney General, **Robert Kennedy**, sued to protect Black voters, and he sent 400 federal marshals to Montgomery, Alabama, in May 1961 when the Freedom Riders were attacked by mobs. In the **Ole Miss crisis** (30 September 1962) he and the President sent marshals, and then 23,000 troops, to enforce the admission of James Meredith, the first Black student at the University of Mississippi, after riots in which two people died.
+- **Executive Order 10925** (6 March 1961) set up the Committee on Equal Employment Opportunity and told federal contractors to take "affirmative action" (steps to make sure that minorities got fair treatment in hiring) to ensure that applicants were treated equally regardless of race. This was the first official use of the phrase. The committee had little power to enforce.
+- **The Justice Department.** The Attorney General, **Robert Kennedy**, sued to protect Black voters, and he sent 400 federal marshals to Montgomery, Alabama, in May 1961 when the Freedom Riders (Black and white activists riding buses through the South to test the ban on segregated bus stations) were attacked by mobs. In the **Ole Miss crisis** (30 September 1962) he and the President sent marshals, and then 23,000 troops, to enforce the admission of James Meredith, the first Black student at the University of Mississippi, after riots in which two people died.
 - **The turning point of 1963.** In April and May, in Birmingham, Alabama, Commissioner of Public Safety Eugene "Bull" Connor used police dogs and fire hoses on Black children and young people who were marching with Martin Luther King's Southern Christian Leadership Conference. The pictures, shown around the world, shocked northern opinion. On 11 June, when Governor George Wallace stood in the doorway of the University of Alabama and then backed down, Kennedy made a television address saying that civil rights was "a moral issue". On 19 June he sent Congress a **civil rights bill** to ban segregation in public places and to give the government power to cut off funds from segregated programmes. After the March on Washington on 28 August 1963, about a quarter of a million people gathered at the Lincoln Memorial for the "I have a dream" speech of Martin Luther King. The bill was still stuck in Congress when Kennedy was killed in Dallas on 22 November 1963.
 
 :::key Judging the New Frontier
@@ -162,7 +162,7 @@ Johnson's strengths were his political skill and his majorities. In the election
 
 In his State of the Union address on 8 January 1964 Johnson declared an "unconditional war on poverty". The **Economic Opportunity Act** (20 August 1964) authorised about $1 billion in the first year and set up the **Office of Economic Opportunity (OEO)**, led by Sargent Shriver. It created:
 - the **Job Corps**, residential training for young people from poor homes;
-- **VISTA** (Volunteers in Service to America), a domestic Peace Corps;
+- **VISTA** (Volunteers in Service to America), a domestic Peace Corps (the Peace Corps was Kennedy's scheme, begun in 1961, to send American volunteers to work in poor countries abroad; VISTA did the same work at home);
 - **Community Action Programs**, run by local agencies on a principle of "maximum feasible participation" of the poor themselves;
 - and from 1965 **Head Start**, pre-school education for poor children (more than half a million children in its first summer).
 
@@ -199,8 +199,8 @@ Johnson was a Southerner who pushed civil rights through Congress against his ow
 
 The Great Society met opposition, which grew after 1966.
 - **Conservatives.** Goldwater Republicans and Southern Democrats argued that the programmes cost too much, gave Washington too much power over states and individuals, and encouraged dependency on welfare. Medicare, said the American Medical Association, would bring "socialised medicine".
-- **Cost and the Vietnam War.** Johnson tried to pay for guns and butter together, and in 1965 and 1966 did not ask for a tax rise. As the war grew, so did the cost (see [A time of challenges, 1961–74 (2)](#hist.d.usa61.2)), inflation rose, and in 1967 he had to ask for a 10 per cent tax surcharge, passed in June 1968. The war also took Johnson's attention and credibility from the reforms.
-- **Disorder in the cities.** Riots broke out in Watts, Los Angeles, in August 1965 (34 dead), and in Newark and Detroit in July 1967 (26 and 43 dead). Many white voters blamed the reforms for raising expectations and rewarding disorder, and Johnson's "law and order" opponents gained from this "white backlash". The Kerner Commission (February 1968) blamed white racism.
+- **Cost and the Vietnam War.** Johnson tried to pay for guns and butter together (the war in Vietnam, where US troops had been fighting since 1965, and his social reforms at home), and in 1965 and 1966 did not ask for a tax rise. As the war grew, so did the cost (see [A time of challenges, 1961–74 (2)](#hist.d.usa61.2)), inflation rose, and in 1967 he had to ask for a 10 per cent tax surcharge, passed in June 1968. The war also took Johnson's attention and credibility from the reforms.
+- **Disorder in the cities.** Riots broke out in Watts, Los Angeles, in August 1965 (34 dead), and in Newark and Detroit in July 1967 (26 and 43 dead). Many white voters blamed the reforms for raising expectations and rewarding disorder, and Johnson's "law and order" opponents gained from this "white backlash". The Kerner Commission (February 1968), the body Johnson set up to study the riots, blamed white racism.
 - **Problems with the programmes.** The war on poverty promised "victory" and could not deliver it, and the Community Action Programs gave Johnson's enemies a target. Critics on the left said the programmes spent too little on jobs and income, and critics on the right that they spent too much on social workers.
 - **Politics.** In the mid-term elections of November 1966 the Republicans gained 47 seats in the House, and the conservative coalition could again block bills. After 1966 the great flow of reforms slowed.
 
@@ -226,7 +226,7 @@ The Great Society met opposition, which grew after 1966.
 
 ### Why Nixon won in 1968
 
-The year 1968 was one of the most violent in American history. In January the Tet Offensive shook belief in victory in Vietnam; on 31 March Johnson announced that he would not seek re-election; Martin Luther King was murdered on 4 April and Robert Kennedy, who had been the leading Democratic candidate, on 5 June; and at the Democratic convention in Chicago in August police and protesters fought in the streets, on television. The Democratic candidate, Vice-President **Hubert Humphrey**, was tied to the war and to a party in disarray.
+The year 1968 was one of the most violent in American history. In January the Tet Offensive (a large Communist attack across South Vietnam that showed the war was far from won; see [A time of challenges, 1961–74 (2)](#hist.d.usa61.2)) shook belief in victory in Vietnam; on 31 March Johnson announced that he would not seek re-election; Martin Luther King was murdered on 4 April and Robert Kennedy, who had been the leading Democratic candidate, on 5 June; and at the Democratic convention in Chicago in August police and protesters fought in the streets, on television. The Democratic candidate, Vice-President **Hubert Humphrey**, was tied to the war and to a party in disarray.
 
 Nixon's campaign:
 - **Law and order.** He promised to restore order to the cities and respect to the police, and appealed to the "forgotten Americans", later called the "silent majority", who were angry about riots, protests and crime.
@@ -238,12 +238,12 @@ The result: Nixon 43.4 per cent and 301 electoral votes; Humphrey 42.7 per cent 
 
 ### The New Economic Policy
 
-Nixon inherited inflation, which Vietnam spending had raised, and a worsening balance of trade. By 1971 unemployment was about 6 per cent and inflation was still about 4 per cent, a combination that was thought impossible under Keynesian theory. On **15 August 1971** he announced the **New Economic Policy**, a package of measures that broke with Republican beliefs:
+Nixon inherited inflation, which Vietnam spending had raised, and a worsening balance of trade (the USA was buying more from abroad than it sold). By 1971 unemployment was about 6 per cent and inflation was still about 4 per cent, a combination that was thought impossible under Keynesian theory. On **15 August 1971** he announced the **New Economic Policy**, a package of measures that broke with Republican beliefs:
 - a **90-day freeze on wages and prices**, followed by controlled increases (Phases II to IV) until 1974;
 - a **10 per cent surcharge** on imports;
-- an end to the convertibility of the dollar into gold, which began the end of the system of fixed exchange rates set up at Bretton Woods in 1944 (the "Nixon shock").
+- an end to the convertibility of the dollar into gold (until then the USA had promised to swap dollars for gold at a fixed price), which began the end of the system of fixed exchange rates set up at Bretton Woods in 1944 (in which other currencies were tied to the dollar at set values; the "Nixon shock").
 
-It worked in the short term: inflation fell, and with tax cuts and a rise in spending the economy boomed in 1972, the year of the election. But the controls caused shortages and distorted markets, and when they ended and the oil price rose after the Arab embargo of October 1973 inflation rose to about 11 per cent in 1974. The NEP therefore helped Nixon to win in 1972 but left a legacy of "stagflation": rising prices and rising unemployment together.
+It worked in the short term: inflation fell, and with tax cuts and a rise in spending the economy boomed in 1972, the year of the election. But the controls caused shortages and distorted markets, and when they ended and the oil price rose after the Arab embargo of October 1973 (Arab oil producers stopped selling oil to the USA, and the price roughly quadrupled) inflation rose to about 11 per cent in 1974. The NEP therefore helped Nixon to win in 1972 but left a legacy of "stagflation": rising prices and rising unemployment together.
 
 ### New Federalism
 
@@ -260,7 +260,7 @@ Nixon, no friend of environmentalists, saw that the cause was popular (Earth Day
 ### Civil rights
 
 Nixon's record was more liberal than his campaign.
-- **Schools.** He disliked busing but, after the Supreme Court ordered at once an end to dual school systems (*Alexander v. Holmes*, October 1969), his administration worked with Southern officials to end segregated schools. The share of Black children in the South attending all-Black schools fell from 68 per cent in 1968 to single figures by the early 1970s. In the North, where segregation came from housing, little changed.
+- **Schools.** He disliked busing (carrying children to schools outside their neighbourhood to mix the races) but, after the Supreme Court ordered at once an end to dual school systems (separate schools for Black and white children; *Alexander v. Holmes*, the 1969 ruling that carried out *Brown*, taught in [Post-war USA (1)](#hist.d.usa45.1)), his administration worked with Southern officials to end segregated schools. The share of Black children in the South attending all-Black schools fell from 68 per cent in 1968 to single figures by the early 1970s. In the North, where segregation came from housing, little changed.
 - **The Philadelphia Plan.** In 1969 the Department of Labor required building contractors on federal projects to set goals and timetables for hiring Black workers: the first large "affirmative action" measure with teeth. He also created an Office of Minority Business Enterprise.
 - **Other measures.** He signed the 1970 extension of the Voting Rights Act, and Title IX of 1972, which bars sex discrimination in schools that receive federal money. In July 1970 he rejected the policy of "termination" for Native Americans.
 - **Limits.** He opposed busing, and the Southern strategy aimed at white voters who did.

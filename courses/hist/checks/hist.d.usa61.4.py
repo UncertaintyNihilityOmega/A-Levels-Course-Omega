@@ -56,6 +56,10 @@ lf = {1950: 33.9, 1960: 37.7, 1970: 43.3, 1974: 45.7}
 eq("chart years in order", sorted(lf), list(lf))
 eq("rise 1960-70 (points)", round(lf[1970] - lf[1960], 1), 5.6)
 eq("rise 1960-74 (points)", round(lf[1974] - lf[1960], 1), 8.0)
+# BLS annual average 1974, women 16 and over: civilian labour force 36,211 thousand of a population of 79,312 thousand
+between("1974 participation rate from BLS counts", 36211 / 79312 * 100, 45.65, 45.75)
+# The recap now uses the same measure (participation rate, women 16 and over) as the chart: 45.7 per cent in 1974;
+# the figure 42.6 belongs to a different BLS chart series and is not used.
 # Pay ratio, 60.7 (1960) and 59.4 (1970): fell, so 'did not improve'
 assert 59.4 < 60.7
 between("pay 'about 60'", 60.7, 59, 61)

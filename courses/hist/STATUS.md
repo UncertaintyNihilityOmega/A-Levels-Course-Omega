@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-13 · FIX · 35 reader items closed (hist.interp.coldwar.2, italy.1-4, stalin.1-4, hitler.1-4, compare, usa45.1-2): glosses at first use, Great Turn working explanation in stalin.2, Lateran Treaties used course-wide (Pacts once), timeline of debate stages, 1924 table note, lira direction, Eisenhower/Bates/Little Rock Nine, guns or butter
+Last: 2026-11-13 · FIX · READER items hist.d.usa45.3 to usa74.2 (31): glosses at first use (unions, covenants, NSC-68, China, Vietnam, domino theory, economics terms, civil rights terms, protest terms), forward references pointed to chapters; usa61.4 women's 1974 participation rate fixed to 45.7 (BLS, women 16+) with a check; Tax Reform Act 1986 exemption/EITC added
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
