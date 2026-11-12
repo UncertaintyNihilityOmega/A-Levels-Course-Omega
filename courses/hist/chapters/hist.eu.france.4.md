@@ -56,7 +56,7 @@ Read this first. Every later section explains one part of it.
 | 21 November 1806 | The Berlin Decree begins the Continental System |
 | May–July 1808 | Uprising in Madrid; Joseph Bonaparte made King of Spain; the Peninsular War begins |
 | 1808 | The Imperial University is organised |
-| 24 June 1812 | The Grande Armée crosses the Niemen into Russia |
+| 24 June 1812 | The Grande Armée (Napoleon's main army) crosses the Niemen into Russia |
 | 14 September 1812 | The French enter Moscow |
 | 16–19 October 1813 | Defeat at Leipzig |
 | 31 March 1814 | The allies enter Paris |
@@ -236,7 +236,7 @@ The Revolution had planned a national school system but had not built one. Napol
 The new regime inherited bankruptcy; at once it made finance a priority, with Gaudin at the Ministry of Finance.
 - **The Bank of France** (13 February 1800) was a private bank set up with the help of leading bankers, to lend to the state and discount bills. In 1803 it received the sole right to issue banknotes in Paris, and in 1806 its governor came under Napoleon's control. It gave the merchants and the state a source of credit and a currency people trusted.
 - **The franc germinal** (law of 28 March 1803) fixed the franc at a set weight of silver, with gold coins at a fixed rate (the 20-franc *napoléon*). It was the first stable currency since 1789 and lasted until 1914.
-- **Taxation.** Direct taxes (land, personal and door-and-window taxes) were assessed and collected by a professional service in the departments, building on what the Directory started, and a land survey (the *cadastre*) was begun in 1807. Napoleon avoided raising the direct taxes, which hit the landowners who backed him, and relied instead on **indirect taxes**: the *droits réunis* (1804), taxes on drink, tobacco and playing cards, and the revival of a salt tax in 1806, which people disliked because it recalled the gabelle. War also paid for war: the treasuries of conquered states were taxed or looted.
+- **Taxation.** Direct taxes (land, personal and door-and-window taxes) were assessed and collected by a professional service in the departments, building on what the Directory started, and a land survey (the *cadastre*) was begun in 1807. Napoleon avoided raising the direct taxes, which hit the landowners who backed him, and relied instead on **indirect taxes**: the *droits réunis* (1804), taxes on drink, tobacco and playing cards, and the revival of a salt tax in 1806, which people disliked because it recalled the gabelle (the hated royal salt tax of the Ancien Régime). War also paid for war: the treasuries of conquered states were taxed or looted.
 - **Bread prices.** Napoleon knew that bread riots had made the Revolution. He kept the price of bread in Paris stable by subsidising the bakers through a special fund (the *Caisse de service de la boulangerie*), by buying grain and building stores, and by sending police to deal with riots; people in the provinces were less protected. In the food crisis of 1811–12, after a poor harvest, he fixed grain prices again by law, as the Convention had done in 1793.
 - **Trade and industry.** He encouraged new industry with exhibitions, roads, canals and ports, and protected French textile and ironworks from British competition (the cotton industry of Alsace and Normandy grew). Under the Continental System, however, the sea ports declined.
 
@@ -291,9 +291,9 @@ By 1812 Napoleon ruled or controlled most of Europe. This table is a schematic s
 
 | Layer | Territories | Who ruled |
 |---|---|---|
-| **France itself** | 130 departments, more than 40 million people, including Belgium, the left bank of the Rhine, Piedmont, Genoa, Rome, Holland (annexed 1810), the Hanseatic ports and the Illyrian Provinces | Napoleon through prefects |
+| **France itself** | 130 departments, more than 40 million people, including Belgium, the left bank of the Rhine, Piedmont, Genoa, Rome, Holland (annexed 1810), the Hanseatic ports (the north German trading cities of Hamburg, Bremen and Lübeck) and the Illyrian Provinces (the Adriatic coast around Croatia and Slovenia) | Napoleon through prefects |
 | **Satellite kingdoms** | Italy (Napoleon king; his stepson Eugène de Beauharnais viceroy), Naples (Murat), Spain (his brother Joseph from 1808), Westphalia (his brother Jérôme) | Napoleon's family and marshals |
-| **Dependent states** | The Confederation of the Rhine (1806), the Grand Duchy of Warsaw (1807), the Swiss Confederation | Napoleon as protector |
+| **Dependent states** | The Confederation of the Rhine (1806; the German states Napoleon grouped under French protection), the Grand Duchy of Warsaw (1807; a Polish state he created), the Swiss Confederation | Napoleon as protector |
 | **Allies (under pressure)** | Austria (alliance after his marriage to the Austrian Marie-Louise in April 1810), Prussia (alliance 1812), Denmark | Independent rulers who feared him |
 | **Enemies** | Britain, Portugal, and from June 1812 Russia | |
 
@@ -375,7 +375,7 @@ You can use this at AS to show why judgements differ, but Paper 1 and Paper 2 re
 :::
 
 :::board
-AQA's A Level History (7042) has a depth study, 2H France in Revolution, 1774–1815, which ends one year later than the Cambridge topic, so AQA students also study the Hundred Days and Waterloo. It is examined at A Level only.
+AQA's A Level History (7042) has a depth study, 2H France in Revolution, 1774–1815, which ends one year later than the Cambridge topic, so AQA students also study the Hundred Days (Napoleon's return, March to June 1815) and Waterloo. It is examined at A Level only.
 :::
 
 ## Worked examples: exam answers built level by level
@@ -472,7 +472,7 @@ Until 6 November the weather was perfect and the army's movement succeeded. From
 
 **Source C**
 
-A painting showing Napoleon, in a cloak that billows in the wind, on a rearing horse, pointing the way up a steep Alpine path. Carved on the rocks in the foreground are the names Bonaparte, Hannibal and Karolus Magnus (Charlemagne).
+A painting showing Napoleon, in a cloak that billows in the wind, on a rearing horse, pointing the way up a steep Alpine path. Carved on the rocks in the foreground are the names Bonaparte, Hannibal and Karolus Magnus (Charlemagne), that is, the Carthaginian general and the Frankish emperor, both famous for crossing the Alps.
 
 *Napoleon Crossing the Alps, painted by Jacques-Louis David, 1801. Napoleon crossed the Great St Bernard Pass in May 1800, in fact on a mule.*
 

@@ -86,11 +86,11 @@ Here is a short extract to practise on.
 
 … the great questions of the time will not be decided by speeches and majority decisions … but by iron and blood.
 
-*Adapted from a speech by Otto von Bismarck, Minister-President of Prussia, to the budget committee of the Prussian House of Representatives, 30 September 1862.*
+*Adapted from a speech by Otto von Bismarck, Minister-President of Prussia, to the budget committee of the Prussian House of Representatives (the elected lower house of the Prussian parliament), 30 September 1862. The committee had refused the money the government wanted for the army.*
 
 **Says.** Political questions will be settled by force and not by votes and debate.
 
-**Suggests.** Bismarck does not think parliament should settle the great questions; that he expects his listeners to disagree (he is using a shocking phrase on purpose); and that he is threatening, since he is the head of the government speaking to a committee that had refused money for the army. The suggestion comes from the words "speeches and majority decisions" and from the setting, a hostile committee.
+**Suggests.** Bismarck does not think parliament should settle the great questions; that he expects his listeners to disagree (he is using a shocking phrase on purpose); and that he is threatening, since he is the head of the government speaking to a committee that had refused money for the army (the provenance line tells you this). The suggestion comes from the words "speeches and majority decisions" and from the setting, a committee that had already refused him.
 
 **Leaves out.** Which "great questions" he means, and how he will act. It never mentions unification. It does not say he will govern without a budget, though he did. A student who writes "Bismarck says he will unify Germany by war in this speech" has read something into the source that it does not contain. This is the commonest misreading in Paper 1.
 
@@ -356,7 +356,7 @@ The problem of our age is the proper administration of wealth, so that the ties 
 **Step 1: the claim.** "Used their wealth for the good of society" asks about what business leaders **did** and its **effect on society**, not about what they said or whether they were rich. Dates: the 1880s and 1890s.
 
 **Step 2: one line each.**
-- **A**: supports, since it says wealth should be used as a trust for the poor ("agent and trustee for his poorer brethren"); but it is a duty, and the last words ("better than they would or could do for themselves") are paternalist.
+- **A**: supports, since it says wealth should be used as a trust for the poor ("agent and trustee for his poorer brethren"); but it is a duty, and the last words ("better than they would or could do for themselves") are paternalist: they assume that the poor cannot manage for themselves.
 - **B**: challenges, since wealth was "stolen" and "endanger[s] liberty"; it does not say all business leaders did nothing good.
 - **C**: challenges: business wealth buys power over government for the few; it says nothing about charity.
 - **D**: challenges by implication: Congress treated trusts as a danger to trade; but it is a law, not an opinion about charity.
@@ -468,6 +468,8 @@ A hard day! There have been serious disorders in St Petersburg because the worke
 The supreme autocratic power is vested in the Tsar of all the Russias. It is God's command that his authority should be obeyed not only through fear but for conscience' sake. … No new law shall go into force without the sanction of both the Council of the Empire and the Duma … and the ratification of the Tsar.
 
 *Shortened from Articles 4 and 86 of the Fundamental Laws of the Russian Empire, 23 April 1906 (Old Style; 6 May New Style), as translated in Readings in Modern European History (1909).*
+
+**Facts you need** (you can also try the questions after [Russia (2)](#hist.eu.russia.2)). Nicholas II was the Tsar, an **autocrat**: he ruled with no limit on his power. On 9 January 1905 (Old Style dates run 13 days behind ours) a peaceful march of workers to the Winter Palace in St Petersburg, led by Father Gapon, was fired on by troops, and hundreds were killed or wounded ("Bloody Sunday"). A wave of strikes followed and became a **general strike** (workers in many trades stopping together) in October 1905. The Tsar's adviser **Sergei Witte** persuaded him to issue the October Manifesto, which promised civil freedoms and an elected **Duma** (parliament). In April 1906 the Fundamental Laws set out the Duma's powers: Article 87 let the Tsar issue emergency decrees when the Duma was not sitting, he could dismiss the Duma, and half the members of the upper house, the State Council, were appointed by him. The first Duma met on 27 April 1906 and he dissolved it on 8 July 1906, after 72 days.
 :::
 
 :::note Sources for exam practice question 5
@@ -508,6 +510,8 @@ We, the German Führer and Chancellor and the British Prime Minister, have had a
 GERMANY, the United Kingdom, France and Italy, taking into consideration the agreement, which has been already reached in principle for the cession to Germany of the Sudeten German territory, have agreed on the following terms and conditions … (1) The evacuation will begin on 1st October. (2) The United Kingdom, France and Italy agree that the evacuation of the territory shall be completed by the 10th October …
 
 *Shortened from the Munich Agreement signed by Hitler, Chamberlain, Daladier and Mussolini, 29 September 1938.*
+
+**Facts you need** (you can also try the questions after [International history, 1929–39 (3)](#hist.int.1929.3)). The Sudetenland was the part of Czechoslovakia where most people spoke German; in 1938 Hitler demanded it, and the British Prime Minister Neville Chamberlain tried to avoid war by agreeing to hand it over (this policy is called **appeasement**). At the Munich conference on 29 September 1938 the four powers decided this without Czechoslovakia present. In March 1939 Germany occupied the rest of Bohemia and Moravia, the main part of what remained of Czechoslovakia, and on 1 September 1939 it invaded Poland; Britain declared war on 3 September. Churchill was then an MP outside the government who had long warned against Germany's rearmament.
 :::
 
 :::try Exam practice ★ to ★★★

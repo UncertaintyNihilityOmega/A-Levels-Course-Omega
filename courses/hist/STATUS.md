@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-12 · FIX · hist.mock.p4: Q2, Q4-Q8 replaced by new questions on KQs outside mixed.a2 and the specimen (Stalin collective security, Truman 1948 win, women's movement 1963-74, Carter human rights, Gorbachev reforms and the crisis, 1948 SA election), full schemes, checks rewritten; hist.mock.p3: new original Section A extract (war by timetable, 447 words) with new scheme, checks updated
+Last: 2026-11-12 · FIX · Closed 30 READER items (hist.overview..hist.eu.russia.2): glosses at first use, background/facts boxes for essays and sources chapters, left/right, Festival of the Federation, purge quote, Russia (1) links, retitled source box
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

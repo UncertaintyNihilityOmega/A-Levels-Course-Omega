@@ -134,6 +134,10 @@ Four kinds of link are worth knowing:
 
 A part (a) answer needs about 350 to 450 words in 15 minutes: three short paragraphs and a conclusion of one or two sentences. No introduction beyond a sentence that names your factors.
 
+:::note What you need to know for this example
+Prussia and Austria were the two strongest German states. In 1866 they fought a war of about seven weeks to decide which would lead Germany. **Otto von Bismarck** was Prussia's Minister-President (head of the government); **Albrecht von Roon** was its War Minister, who enlarged and reorganised the army; **Helmuth von Moltke** was the chief of the general staff, who planned its movements. Prussia won the decisive battle at Königgrätz in Bohemia on 3 July 1866, and the war ended with the Treaty of Prague. Napoleon III was the Emperor of France and Italy was a newly united kingdom that wanted Venice from Austria. You can study the war in [Germany (3)](#hist.eu.germany.3) and [Germany (4)](#hist.eu.germany.4).
+:::
+
 :::eg Paper 2 (a) [10]: Explain why Prussia defeated Austria in the Austro-Prussian War of 1866.
 **What the levels want.** Level 2 (3–5) describes; Level 3 (6–8) explains factors; Level 4 (9–10) connects them and concludes.
 
@@ -200,6 +204,10 @@ Use words that **compare**, and give the reason: "more important than … becaus
 :::
 
 ### Try a plan yourself
+
+:::note What you need to know about the League of Nations
+The **League of Nations** was the international organisation set up in 1920 after the First World War to keep the peace by settling disputes. Its rules were called the **Covenant**. Under Article 16 of the Covenant, members could punish an aggressor with **sanctions** (cutting off trade and money); military action was only a recommendation. The **Council** was its small inner body (Britain, France, Italy and Japan had permanent seats) and the **Assembly** was the meeting of all members; most important decisions needed **unanimity** (every member voting yes), so one member could block action. The USA never joined: President Wilson had proposed the League, but in November 1919 the Senate voted down the Treaty of Versailles, which included the Covenant. Senator Henry Cabot Lodge led the attempt to ratify it only with the **Lodge reservations** (conditions limiting what the USA would have to do for the League), and neither version got the votes needed. Two disputes tested the League early: at **Vilna** in 1920, a Polish general seized a city claimed by Lithuania; at **Corfu** in 1923, Italy bombed and occupied a Greek island after an Italian general was murdered in Greece. In both cases Britain and France let the **Conference of Ambassadors** (a body of the main Allied powers' ambassadors in Paris) settle the matter. You can study all this in [International relations, 1919–29 (2)](#hist.int.1919.2).
+:::
 
 The widget gives you the factors for a real question. Sort each one as supporting or challenging the view, rank them, choose a criterion and a judgement, and build the outline. Then read the worked answer below, which makes a different choice.
 
@@ -268,6 +276,10 @@ Four differences from Paper 2 (b):
 ### Plan: an "Evaluate this view" question (A Level)
 
 Choose the plan below with the widget and compare your sorting. The factors are from Hitler's Germany, 1929–41, where this question belongs.
+
+:::note What you need to know about Nazi Germany
+Hitler became Chancellor (head of the government) on 30 January 1933. In February the **Reichstag** (the German parliament building) was set on fire; the Nazis blamed the Communists and used the **Reichstag Fire** to suspend civil rights and arrest their opponents. The **Enabling Act** (23 March 1933) let Hitler's government make laws without the Reichstag. The **SA** (stormtroopers) and **SS** (the elite Nazi guard) were Nazi armed organisations; the **Gestapo** was the secret state police; **Dachau**, opened in March 1933, was the first concentration camp. In the **Night of the Long Knives** (30 June to 2 July 1934) Hitler had the SA leaders and other enemies murdered. A **plebiscite** is a vote of the people on one proposal: in August 1934, after President Hindenburg died, one was held on Hitler combining the offices of Chancellor and President. **Goebbels** was the Minister of Popular Enlightenment and Propaganda. You can study all of this in [Hitler's Germany (1)](#hist.d.hitler.1) and [(2)](#hist.d.hitler.2).
+:::
 
 :::html
 <div class="widget" data-w="hist-essayplan" data-title="Plan: propaganda and terror in Nazi Germany" data-question="'Propaganda was more important than terror in maintaining Nazi rule in the 1930s.' Evaluate this view." data-factors="Goebbels's Ministry of Propaganda (March 1933) controlled press, radio and film | support | cheap 'people's receiver' radios; the Nuremberg rallies; the 1936 Olympics | The central case for propaganda ;; The Hitler myth and foreign policy successes won consent | support | about 90 per cent voted yes in the plebiscite of August 1934; the Rhineland in 1936 and the Anschluss in 1938 | Popular approval kept the regime going without constant force ;; The SS, the Gestapo and the camps (Dachau opened March 1933) | challenge | the Communist and Social Democratic parties were broken in 1933; arrest, camp or the People's Court for opponents | The central case for terror ;; Block wardens and denunciation spread surveillance | challenge | ordinary Germans informed on neighbours; the Gestapo was small and relied on tip-offs | Terror depended on society as well as on the police ;; Jobs and economic recovery | challenge | unemployment fell from about six million in 1933 to under one million by 1938 | A third explanation that is neither propaganda nor terror ;; The destruction of the other parties and unions in 1933-34 | challenge | one-party state in July 1933; trade unions replaced by the Labour Front in May 1933 | Organised opposition was removed by law and force before propaganda could do its work"></div>
@@ -396,6 +408,12 @@ Q: How do Paper 4 essays differ from Paper 2 (b) answers?
 A: Same argument, but with valid and wide-ranging criteria, a sustained line of argument throughout, much more precise and selected knowledge (half the marks), and about 50 minutes per essay.
 :::
 
+**Which questions can you try now?** The questions below use topic knowledge from other chapters. Try each one after the chapter named, or use the facts in its hint:
+- October Manifesto: [Russia (2)](#hist.eu.russia.2). Wall Street Crash: [Crash, Depression and New Deal (1)](#hist.us.depression.1).
+- Revolutions of 1848–49 (both questions): [Germany (2)](#hist.eu.germany.2). Munich Agreement: [International history, 1929–39 (3)](#hist.int.1929.3).
+- Reconstruction: [Civil War and Reconstruction (4)](#hist.us.civilwar.4). Abyssinia: [Mussolini's Italy (2)](#hist.d.italy.2).
+- Montgomery bus boycott: [Post-war USA, 1945–61 (2)](#hist.d.usa45.2). Corporate State: [Mussolini's Italy (3)](#hist.d.italy.3). Crash and Depression (Stretch): [Crash, Depression and New Deal (1)](#hist.us.depression.1) and [(2)](#hist.us.depression.2).
+
 :::try Exam practice ★ to ★★★
 Q: ★ Write a line of argument (one sentence) for the question 'The revolutions of 1848–49 in Germany failed mainly because the liberals were divided.' How far do you agree? State the criterion you would use.
 A: A good line of argument takes a position and shows the criterion, for example: "The divisions among liberals were an important cause, but the revolutions failed mainly because the princes kept control of the armies, which is the factor without which the liberal programme could have been enforced." (Criterion: necessary, the counterfactual test.) Examiners reward a line that can be argued with evidence; "there were many reasons" does not qualify.
@@ -407,8 +425,8 @@ Q: [20 marks] ★★ 'The revolutions of 1848–49 in Germany failed mainly beca
 A: For: moderates against radicals (the Baden risings led by Hecker and Struve in 1848); the Frankfurt Parliament divided over a "greater Germany" including Austria and a "smaller Germany" led by Prussia; the liberals were unable to agree on social and economic reform. Against: the liberals had no army, and depended on the princes' troops (Prussian and Austrian troops helped put down the Frankfurt riots of September 1848); Austria recovered in 1848 (Prague in June, Vienna in October); Frederick William IV refused the crown in April 1849; the risings of May 1849 were put down by the Prussian army. Level 5 uses a criterion (necessary), for example that the revolutions could not succeed without control of the armies, which divisions alone do not explain, and judges that the liberals' divisions were important but not the main reason.
 Q: [20 marks] ★★ 'The Munich Agreement was the result of Britain's military weakness.' How far do you agree with this view?
 H: Name the "view" in your plan: which kind of weakness? Army, air force, defences, allies?
-H: Alternative factors: Chamberlain's beliefs, public opinion, the Dominions, France, the case of the Sudeten Germans.
-A: For: the Chiefs of Staff advised that Britain could not save Czechoslovakia by force; the RAF and the air defences were not ready, and fear of bombing of cities was strong; Britain was in the middle of rearmament. Against: Chamberlain's belief in appeasement and in the justice of some German grievances, public opinion that wanted to avoid another war, the opposition of the Dominions, the weakness of France, the strength of Czechoslovakia's own defences, and the fact that Britain's position was to improve in 1939 (which suggests weakness was not the sole factor). Level 5 judges, for example, that weakness shaped the options but belief in appeasement determined the choice.
+H: Alternative factors: Chamberlain's beliefs, public opinion, the Dominions (self-governing countries of the British Empire such as Canada and Australia), France, the case of the Sudeten Germans.
+A: For: the Chiefs of Staff advised that Britain could not save Czechoslovakia by force; the RAF and the air defences were not ready, and fear of bombing of cities was strong; Britain was in the middle of rearmament. Against: Chamberlain's belief in appeasement and in the justice of some German grievances, public opinion that wanted to avoid another war, the opposition of the Dominions (self-governing countries of the British Empire such as Canada and Australia), the weakness of France, the strength of Czechoslovakia's own defences, and the fact that Britain's position was to improve in 1939 (which suggests weakness was not the sole factor). Level 5 judges, for example, that weakness shaped the options but belief in appeasement determined the choice.
 Q: [20 marks] ★★★ 'Reconstruction failed mainly because of white Southern violence.' How far do you agree?
 H: Set your criterion: what does "failed" mean here, and which factor ended the changes?
 H: Think about the North as well as the South.

@@ -40,7 +40,7 @@ Read this first. Every later section explains one part of it.
 | 21 March 1848 | Frederick William IV rides through Berlin in the German colours |
 | 31 March – 3 April 1848 | The Pre-Parliament meets in Frankfurt |
 | 18 May 1848 | The Frankfurt Parliament opens in St Paul's Church |
-| 29 June 1848 | Archduke John is elected Imperial Regent |
+| 29 June 1848 | Archduke John (a prince of the Austrian ruling family) is elected Imperial Regent |
 | 26 August 1848 | The Malmö armistice |
 | 18 September 1848 | Riots in Frankfurt; two deputies murdered |
 | 31 October – 9 November 1848 | Vienna falls to Windischgrätz; Robert Blum is executed |
@@ -81,7 +81,7 @@ The southern and middle states agreed one after another. In Baden, Württemberg,
 
 The decisive blow came in Vienna. On 13 March 1848 a crowd of students and workers gathered at the meeting of the Lower Austrian estates to demand a constitution and the end of censorship. The troops opened fire and killed several demonstrators; workers from the suburbs joined, and the court feared a rising. The Emperor Ferdinand I, who was weak-minded and left government to others, dismissed **Metternich**, who resigned and fled to England. A few days later Ferdinand promised a constitution. The man who had been the symbol of the whole conservative system for thirty-nine years had fallen in a day.
 
-The fall had effects far beyond Vienna. The empire's other peoples took their chance: in Hungary, Louis Kossuth and the Magyars won their own government in the "April Laws", Italians rose in Milan and Venice, and the Czechs of Bohemia demanded autonomy. The Habsburg Empire, held together by its army and its court, seemed to be breaking up. This helps explain the later course of events: Austria was too busy saving itself to take part in the German movement, but it was also the strongest conservative force, and once it recovered, it turned back to Germany.
+The fall had effects far beyond Vienna. The empire's other peoples took their chance: in Hungary, Louis Kossuth and the Magyars (Hungarians) won their own government in the "April Laws", Italians rose in Milan and Venice, and the Czechs of Bohemia demanded autonomy. The Habsburg Empire, held together by its army and its court, seemed to be breaking up. This helps explain the later course of events: Austria was too busy saving itself to take part in the German movement, but it was also the strongest conservative force, and once it recovered, it turned back to Germany.
 
 ### Revolution in Prussia
 
@@ -116,7 +116,7 @@ Who were the deputies? Most were educated men of the middle class: lawyers, civi
 
 ### The first actions: a government without power
 
-The first task was to create a government. On 29 June 1848 the Parliament elected the Archduke John of Austria as **Imperial Regent** (*Reichsverweser*), the head of a Provisional Central Power. He was a Habsburg prince known for his liberal opinions, and he was chosen to win Austria's goodwill. The Federal Diet dissolved itself and handed over its powers on 12 July. The Regent chose ministers who were responsible to the Parliament.
+The first task was to create a government. On 29 June 1848 the Parliament elected the Archduke John of Austria as **Imperial Regent** (*Reichsverweser*; the *Reich* was the German state, or empire), the head of a Provisional Central Power. He was a Habsburg prince (a prince of the Austrian ruling family) known for his liberal opinions, and he was chosen to win Austria's goodwill. The Federal Diet dissolved itself and handed over its powers on 12 July. The Regent chose ministers who were responsible to the Parliament.
 
 But the Provisional Central Power rested on nothing. It had **no army** (the troops were those of the states, who swore loyalty to their own kings), **no civil service**, **no tax revenue** of its own and no power to enforce its orders. The Regent's authority existed only as long as the states obeyed him, and the strongest states did not intend to.
 
@@ -124,7 +124,7 @@ This was shown by the first test, the war over **Schleswig-Holstein**. In March 
 
 ### The Basic Rights
 
-The Parliament spent the autumn and winter debating its constitution, and began with a list of rights. The **Basic Rights of the German People** were approved on 27 December 1848. They declared equality before the law (the nobility "as an estate" abolished), freedom of the press without censorship, freedom of religion, assembly and association, trial by jury, and protection of property. They were published as law, and several states promptly announced they would not accept them. The restored Federal Diet formally annulled them on 23 August 1851. Yet they had lasting influence: later German constitutions, including the Weimar constitution of 1919 and the Basic Law of 1949, drew on this tradition.
+The Parliament spent the autumn and winter debating its constitution, and began with a list of rights. The **Basic Rights of the German People** were approved on 27 December 1848. They declared equality before the law (the nobility "as an estate" abolished), freedom of the press without censorship, freedom of religion, assembly and association, trial by jury, and protection of property. They were published as law, and several states promptly announced they would not accept them. The restored Federal Diet formally annulled them on 23 August 1851. Yet they had lasting influence: later German constitutions, including the Weimar constitution of 1919 and the Basic Law of 1949 (Germany's republican constitutions after the two world wars), drew on this tradition.
 
 ### The constitution and the German question
 
@@ -140,7 +140,7 @@ The Parliament faced the problem in October 1848, when it decided that no part o
 
 In December 1848 Gagern became head of the Reich ministry and proposed the kleindeutsch plan: a federal state without Austria, with a close union between the Reich and Austria. The Parliament accepted it in early 1849, by narrow votes. On 27 March 1849 the Parliament voted for an hereditary emperor by 267 votes to 263, and on 28 March it passed the constitution and elected **Frederick William IV** Emperor of the Germans. He received 290 votes with 248 abstentions.
 
-The **constitution of 1849** was the most liberal in Germany. It made a federal Reich of the territory of the old Confederation, with a hereditary emperor who had only a suspensive veto, a two-house parliament (a house of the states and a house of the people elected by all adult men), and the Basic Rights.
+The **constitution of 1849** was the most liberal in Germany. It made a federal Reich of the territory of the old Confederation, with a hereditary emperor who had only a suspensive veto (a veto that could delay a law but not block it), a two-house parliament (a house of the states and a house of the people elected by all adult men), and the Basic Rights.
 
 ### The crown refused
 
@@ -168,7 +168,7 @@ The refusal of the crown provoked a last burst of revolutionary action, the "cam
 **Failure.** The aims of the revolutionaries were not achieved: no united Germany, no liberal constitution that lasted, and the Confederation restored. Many leaders were in exile.
 
 **Lasting results.**
-1. **Constitutions and parliaments** now existed in many states. Prussia kept a constitution (the imposed one, revised in 1850) with a two-house Landtag, however unequal its franchise.
+1. **Constitutions and parliaments** now existed in many states. Prussia kept a constitution (the imposed one, revised in 1850) with a two-house Landtag (the Prussian parliament), however unequal its franchise.
 2. **Feudal dues were ended**: peasants in the German states, as in Austria, gained freedom from them in 1848–49 and mostly lost interest in further revolution.
 3. **Political experience**: parties, newspapers and associations had developed in a way that could not be reversed.
 4. **The Basic Rights** and the constitution of 1849 became models for later German constitutions.
@@ -223,7 +223,7 @@ By 1849 Austria had saved its empire, but Prussia had not given up its ambition 
 
 After the failure of Frankfurt, Frederick William IV's adviser **Joseph von Radowitz** proposed a different scheme: a **Prussian Union**, a federal union of the German states under Prussian leadership, with a constitution based on the Frankfurt one but giving the princes more power and keeping the three-class vote. Prussia signed a Three Kings' Alliance with Saxony and Hanover on 26 May 1849 (Saxony and Hanover soon dropped out), and many of the smaller states joined the Union. An Erfurt Parliament of the Union met from 20 March to 29 April 1850.
 
-Schwarzenberg would not accept a Prussian-led Germany. He revived the old Federal Diet in Frankfurt in May 1850 (many states returned to it) and the two powers were soon opposed. The crisis came in **Hesse-Kassel**. In September 1850 the Elector Frederick William I, who had been in conflict with his parliament over taxes, fled his capital and asked the Federal Diet for help. The Diet agreed, and Bavarian troops, backed by Austria, marched towards Hesse on 1 November. Prussia, which controlled the military roads through Hesse that linked its eastern and western territories, sent troops there and mobilised its army. Tsar Nicholas I, who disliked the Prussian Union as a child of revolution, told Prussia at Warsaw that he supported Austria. On 8 November Prussian and Bavarian troops met at **Bronzell**, where a single shot killed a horse.
+Schwarzenberg would not accept a Prussian-led Germany. He revived the old Federal Diet in Frankfurt in May 1850 (many states returned to it) and the two powers were soon opposed. The crisis came in **Hesse-Kassel**. In September 1850 the Elector (a ruling prince) Frederick William I, who had been in conflict with his parliament over taxes, fled his capital and asked the Federal Diet for help. The Diet agreed, and Bavarian troops, backed by Austria, marched towards Hesse on 1 November. Prussia, which controlled the military roads through Hesse that linked its eastern and western territories, sent troops there and mobilised its army. Tsar Nicholas I, who disliked the Prussian Union as a child of revolution, told Prussia at Warsaw that he supported Austria. On 8 November Prussian and Bavarian troops met at **Bronzell**, where a single shot killed a horse.
 
 The Prussian government was divided. The war party wanted to fight, but the army was not ready, Radowitz resigned, and the new Prussian prime minister, **Otto von Manteuffel**, preferred a settlement. On **29 November 1850** he met Schwarzenberg at Olmütz in Moravia. Prussia agreed to:
 - demobilise its army;
@@ -393,7 +393,7 @@ I have today taken the old German colours and placed myself and my people under 
 
 A crown that an assembly makes is a circlet baked of dirt and clay. The only crown a Hohenzollern may wear is one that God gives, and the princes, not the people, must bring it to him.
 
-*A close paraphrase of a letter of King Frederick William IV of Prussia to Christian von Bunsen, 13 December 1848. The words "dirt and clay" are the king's own.*
+*A close paraphrase of a letter of King Frederick William IV of Prussia to Christian von Bunsen, 13 December 1848. The words "dirt and clay" are the king's own. The Hohenzollerns were the Prussian royal family.*
 
 **Source C**
 

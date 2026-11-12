@@ -137,7 +137,7 @@ By the 1780s nobles paid some newer taxes, such as the *capitation* (a poll tax 
 
 ### The American War of Independence
 
-France joined the American colonists against Britain with a treaty of alliance on 6 February 1778, partly for revenge after losing the Seven Years' War (1756–63). The war ended in victory with the Peace of Paris in September 1783, but it cost over a thousand million livres, almost all of it borrowed. By the late 1780s interest on the debt was the largest item in the royal budget.
+France joined the American colonists against Britain with a treaty of alliance on 6 February 1778, partly for revenge after losing the Seven Years' War (1756–63). The war ended in victory with the Peace of Paris in September 1783, but it cost over a thousand million livres (the livre was the French pound, the main unit of money), almost all of it borrowed. By the late 1780s interest on the debt was the largest item in the royal budget.
 
 The war also carried ideas. French officers such as the Marquis de Lafayette returned having fought for "no taxation without representation" and for a republic built on a written constitution and a declaration of rights. The American Declaration of Independence (1776) showed that rights could be proclaimed and governments rebuilt.
 
@@ -202,7 +202,7 @@ Brienne's own published budget for 1788 showed how desperate things were:
 
 So about half of all spending went on interest before a single soldier or official was paid.
 
-On 8 May 1788 the government struck back with the **May Edicts** of the Keeper of the Seals, Lamoignon, which took away the parlements' right to register laws. This provoked what historians call the **aristocratic revolt**: parlements, provincial nobles and clergy resisted across France. In Grenoble on 7 June 1788 townspeople threw roof tiles at troops sent to exile the local judges (the "Day of the Tiles"), and on 21 July 1788 an assembly of all three orders of the Dauphiné met at Vizille and demanded the Estates-General, with double representation for the Third Estate and voting by head. The clergy's assembly cut its "free gift" to a fraction of what Brienne asked.
+On 8 May 1788 the government struck back with the **May Edicts** of the Keeper of the Seals, Lamoignon, which took away the parlements' right to register laws. This provoked what historians call the **aristocratic revolt**: parlements, provincial nobles and clergy resisted across France. In Grenoble on 7 June 1788 townspeople threw roof tiles at troops sent to exile the local judges (the "Day of the Tiles"), and on 21 July 1788 an assembly of all three orders of the Dauphiné met at Vizille and demanded the Estates-General, with double representation for the Third Estate and voting by head (voting by order: each Estate has one vote, so clergy and nobles outvote the Third; voting by head: each deputy has one vote). The clergy's assembly cut its "free gift" to a fraction of what Brienne asked.
 
 :::def Aristocratic revolt
 The resistance of the privileged orders, led by the parlements, to royal reforms in 1787–88. By refusing new taxes and demanding the Estates-General, it forced the Crown to give way and opened the door to wider political change.
@@ -229,7 +229,7 @@ The elections of spring 1789 produced tens of thousands of **cahiers de doléanc
 ### The economic crisis of 1788–89
 
 Just as politics reached its crisis, so did the economy.
-- **Bad harvests and food shortage.** A violent hailstorm on 13 July 1788 destroyed crops across the Paris region, and the harvest of 1788 was poor across much of France. The winter of 1788–89 was exceptionally harsh. In Paris the price of the standard four-pound loaf rose from about 8 sous in August 1788 to about 14½ sous by February 1789: it almost doubled.
+- **Bad harvests and food shortage.** A violent hailstorm on 13 July 1788 destroyed crops across the Paris region, and the harvest of 1788 was poor across much of France. The winter of 1788–89 was exceptionally harsh. In Paris the price of the standard four-pound loaf rose from about 8 sous in August 1788 to about 14½ sous by February 1789 (20 sous made one livre): it almost doubled.
 - **Unemployment and price rises.** When bread took most of a family's budget, they stopped buying cloth and other goods, so workshops laid off workers. The **Eden Treaty** of 1786 with Britain had lowered tariffs, letting in cheaper British textiles and adding to unemployment in the cloth towns.
 - **Unrest.** Grain convoys were attacked and markets rioted in the spring of 1789. In Paris, rumours that the wallpaper manufacturer Réveillon wanted to cut wages led to the **Réveillon riots** of 27–28 April 1789, put down by troops with dozens of deaths.
 
@@ -265,12 +265,12 @@ Each step made a compromise with the Assembly harder and pushed the people of Pa
 
 ### The storming of the Bastille, 14 July 1789
 
-News of Necker's dismissal reached Paris on 12 July. At the Palais-Royal the young journalist Camille Desmoulins urged the crowd to arm itself. Crowds burned most of the customs posts on the city wall (which taxed food entering Paris) and searched for weapons and grain. On 13 July the electors of Paris formed a committee and a citizens' militia. On the morning of **14 July** crowds took around 30,000 muskets from the Invalides, then went to the **Bastille**, a royal fortress and prison in the east of the city, to seize its gunpowder.
+News of Necker's dismissal reached Paris on 12 July. At the Palais-Royal the young journalist Camille Desmoulins urged the crowd to arm itself. Crowds burned most of the customs posts on the city wall (which taxed food entering Paris) and searched for weapons and grain. On 13 July the electors of Paris formed a committee and a citizens' militia. On the morning of **14 July** crowds took around 30,000 muskets from the Invalides (a military hospital and arms store in Paris), then went to the **Bastille**, a royal fortress and prison in the east of the city, to seize its gunpowder.
 
 After a confused fight, joined by some soldiers of the French Guards with cannon, the garrison surrendered. About a hundred attackers had been killed. The governor, the Marquis de Launay, was killed by the crowd. Only seven prisoners were inside.
 
 The consequences mattered more than the fight:
-- The king **withdrew the troops**, recalled Necker (16 July) and on 17 July came to Paris, where he accepted the red, white and blue cockade.
+- The king **withdrew the troops**, recalled Necker (16 July) and on 17 July came to Paris, where he accepted the red, white and blue cockade (a ribbon badge worn on the hat, the symbol of the Revolution).
 - Paris got a new **revolutionary city government** (the astronomer Bailly as mayor) and a **National Guard** under Lafayette. Towns across France copied this "municipal revolution".
 - The Assembly was **safe**: the threat of force had failed. The first nobles, including the king's brother the Comte d'Artois, left France as *émigrés*.
 

@@ -126,7 +126,7 @@ The quarrel of 1867 over the Grand Duchy of Luxembourg. Napoleon III tried to bu
 
 The immediate cause of the war was a quarrel about the throne of Spain. In September 1868 the Spanish queen, Isabella II, had been overthrown, and the Spanish government under Marshal Prim searched for a new king. One of the candidates was **Prince Leopold of Hohenzollern-Sigmaringen**, a Catholic member of a south German branch of the Prussian royal family. He was related to Napoleon III's own family.
 
-France objected strongly: it would be enclosed by Hohenzollern rulers in Spain and in Germany, as in the time of Charles V. Bismarck supported the candidature, which he saw as a way of putting pressure on France. King Wilhelm I, as head of the family, was reluctant but agreed that Leopold was free to decide. In June 1870 Leopold accepted.
+France objected strongly: it would be enclosed by Hohenzollern rulers in Spain and in Germany, as in the time of Charles V (the sixteenth-century emperor who ruled Spain and Germany together). Bismarck supported the candidature, which he saw as a way of putting pressure on France. King Wilhelm I, as head of the family, was reluctant but agreed that Leopold was free to decide. In June 1870 Leopold accepted.
 
 :::key The sequence of the Hohenzollern crisis, 1870
 1. **June**: Leopold accepts the Spanish crown, with Bismarck's backing and Wilhelm's reluctant consent.
@@ -156,7 +156,7 @@ Many students write "Bismarck's telegram made France declare war". But the Frenc
 
 | Cause | Evidence | How important? |
 |---|---|---|
-| Bismarck's provocation | He backed the candidature; he edited the telegram to make it a "red rag"; he wrote later that he wanted France to look the aggressor | Important, but he did not decide what France would do |
+| Bismarck's provocation | He backed the candidature; he edited the telegram to make it a "red rag" (Bismarck's phrase: a red rag to the French bull); he wrote later that he wanted France to look the aggressor | Important, but he did not decide what France would do |
 | French mistakes | Gramont's demand for a guarantee after Leopold's withdrawal; the cabinet's decision on 14 July to mobilise; belief that the Chassepot and the army would win | Very important: France chose to declare war |
 | Napoleon III's weakness | The empire needed a success; the empress and the army party wanted war; he was ill and indecisive | Important as a background cause |
 | Long-term rivalry | Sadowa, Luxembourg, French fear of a united Germany | Created the conditions in which a small crisis could lead to war |
@@ -171,9 +171,9 @@ Historians disagree about how far Bismarck wanted war. Taylor (*Bismarck: The Ma
 When war came in July 1870, Prussia and its allies were in a much stronger position than France. There were two parts to this: diplomacy and military power.
 
 **Lack of international support for France.**
-- **Austria-Hungary** had been reorganised by the Compromise of 1867, was weak after 1866, and feared that Russia would attack if it supported France. Some leaders in Vienna wanted revenge for 1866, but the Hungarians held them back, and Austria would have joined France only if the south Germans had turned against Prussia, which they did not do.
+- **Austria-Hungary** had been reorganised by the Compromise of 1867 (which made Austria and Hungary two kingdoms under one emperor), was weak after 1866, and feared that Russia would attack if it supported France. Some leaders in Vienna wanted revenge for 1866, but the Hungarians held them back, and Austria would have joined France only if the south Germans had turned against Prussia, which they did not do.
 - **Italy** wanted Rome, which was held by a French garrison, and so would not ally with France. After the garrison was withdrawn in August 1870, Italy took Rome in September.
-- **Russia** was friendly to Prussia after the Alvensleben Convention of 1863, and in October 1870 Bismarck supported the Tsar's decision to cancel the Black Sea clauses of the 1856 treaty. Russia stayed neutral.
+- **Russia** was friendly to Prussia after the Alvensleben Convention of 1863, and in October 1870 Bismarck supported the Tsar's decision to cancel the Black Sea clauses of the 1856 treaty (which barred Russia from having warships in the Black Sea). Russia stayed neutral.
 - **Britain** was neutral. On 25 July 1870 Bismarck gave *The Times* a draft treaty in Benedetti's handwriting from 1866, in which France was to gain Belgium. British opinion turned against France.
 - **The southern German states** did not hesitate. When France declared war, Bavaria, Württemberg and Baden mobilised on 16–17 July under their treaties, and national feeling in the south swung behind Prussia, as Bismarck had hoped. The south German states and the north now fought together.
 
@@ -231,7 +231,7 @@ The treaties came into force on 1 January 1871, which is why that date is someti
 
 Bismarck was determined that the imperial title should come from the princes and not from the people. In 1849 the Frankfurt Parliament had offered Frederick William IV a crown "from the gutter", as he saw it, and he had refused it (see [Germany (2)](#hist.eu.germany.2)). Wilhelm I would not take a crown from a parliament either, and he did not like the title: he was proud to be King of Prussia, and he feared that "Kaiser" would swallow up Prussia in Germany. Bismarck had to manage both the princes and the king.
 
-His main tool was Bavaria. On 27 November 1870 Bismarck sent King Ludwig II of Bavaria a draft of a letter inviting Wilhelm to take the title of German Emperor. He told Ludwig that the proposal had to come from him as the senior king after Prussia's, as only then would the title rest on a free act of the princes. Ludwig, whose passion was building castles and who was short of money, copied and signed the letter on 30 November (with some changes by his own ministers); historians record that he also received secret payments from Prussian funds. It was handed to Wilhelm in December. Other princes then sent similar letters. In December a deputation from the North German Reichstag, led by its president, Eduard Simson, who had led the Frankfurt deputation to the Prussian king in 1849, came to Versailles to ask Wilhelm to accept, and he agreed.
+His main tool was Bavaria. On 27 November 1870 Bismarck sent King Ludwig II of Bavaria a draft of a letter (the *Kaiserbrief*, or "emperor letter") inviting Wilhelm to take the title of German Emperor. He told Ludwig that the proposal had to come from him as the senior king after Prussia's, as only then would the title rest on a free act of the princes. Ludwig, whose passion was building castles and who was short of money, copied and signed the letter on 30 November (with some changes by his own ministers); historians record that he also received secret payments from Prussian funds. It was handed to Wilhelm in December. Other princes then sent similar letters. In December a deputation from the North German Reichstag, led by its president, Eduard Simson, who had led the Frankfurt deputation to the Prussian king in 1849, came to Versailles to ask Wilhelm to accept, and he agreed.
 
 ### The proclamation at Versailles, 18 January 1871
 

@@ -123,10 +123,10 @@ The Convention had no parties in the modern sense, but three groups mattered:
 | Group | Who | What they wanted |
 |---|---|---|
 | The **Girondins** | Brissot, Vergniaud, Roland and their friends, many from provincial cities | A republic with limits on Paris and the crowd; had led the country to war in 1792; blamed for defeat in 1793 |
-| The **Montagnards** ("the Mountain") | Robespierre, Danton, Marat, Saint-Just, supported by the Paris Commune and the sections | Strong central government, war to victory, concessions to the poor and the sans-culottes |
+| The **Montagnards** ("the Mountain") | Robespierre, Danton, Marat, Saint-Just, supported by the Paris Commune (the city government) and the sections (the 48 districts of Paris) | Strong central government, war to victory, concessions to the poor and the sans-culottes |
 | The **Plain** (the *Marais*) | The majority of uncommitted deputies | Whichever side seemed safe; they backed the Mountain when the Girondins looked like losing |
 
-The quarrel turned violent in the spring. The Girondins attacked Marat (he was put on trial in April and acquitted), and in May set up a Commission of Twelve to investigate the Paris Commune and arrested the journalist Hébert. The Paris sections replied with an insurrection. On **2 June 1793** the National Guard under Hanriot surrounded the Convention with cannon, and the deputies voted to place twenty-nine Girondin deputies under arrest. A Parisian crowd had purged the elected national assembly.
+The quarrel turned violent in the spring. The Girondins attacked Marat (he was put on trial in April and acquitted), and in May set up a Commission of Twelve to investigate the Paris Commune and arrested the journalist Hébert. The Paris sections replied with an insurrection. On **2 June 1793** the National Guard (the citizen militia) under Hanriot surrounded the Convention with cannon, and the deputies voted to place twenty-nine Girondin deputies under arrest. A Parisian crowd had purged the elected national assembly.
 
 The consequences were severe. The Mountain now controlled the Convention, but it owed its power to the Paris crowd, and it had made enemies in the provinces. On 13 July Charlotte Corday, a young woman from Caen who sympathised with the Girondins, stabbed Marat in his bath. The assassination turned Marat into a martyr and made the language of plots and conspiracy a part of government.
 
@@ -135,7 +135,7 @@ The consequences were severe. The Mountain now controlled the Convention, but it
 The **sans-culottes** ("without breeches": they wore long trousers rather than the knee-breeches of the gentry) were the Parisian shopkeepers, craftsmen, journeymen and wage-earners who were the active citizens of the sections. Their leaders were often small employers and professionals. They were not the poorest people in Paris, but they were the people who marched, packed the section meetings and sat in the Convention's galleries.
 
 :::def Sans-culottes
-The politically active ordinary citizens of Paris in 1792–95: artisans, shopkeepers, journeymen and wage-earners, organised in the 48 sections of the city. They demanded price controls, harsh punishment of hoarders and enemies of the Revolution, and direct democracy, and they dressed and spoke as equals, calling each other "citizen".
+The politically active ordinary citizens of Paris in 1792–95: artisans, shopkeepers, journeymen and wage-earners, organised in the 48 sections of the city. (The sections were the 48 districts of Paris, each with its own assembly; the Paris Commune was the city government they dominated; the National Guard was the citizen militia.) They demanded price controls, harsh punishment of hoarders and enemies of the Revolution, and direct democracy, and they dressed and spoke as equals, calling each other "citizen".
 :::
 
 **What they wanted.** Bread at a price they could pay; punishment of hoarders, speculators and "aristocrats"; a purge of suspect officials and generals; arms and an army of their own; and a say in government through their section assemblies. Their most radical spokesmen, the **Enragés** ("the angry ones": Jacques Roux, Jean Varlet, Théophile Leclerc), wanted direct price controls and the death penalty for speculators. Hébert, whose cheap newspaper *Le Père Duchesne* spoke in crude workers' language, and Chaumette at the Paris Commune, were their allies in the city government.
@@ -289,7 +289,7 @@ Historians cannot give a firm total of the victims of the White Terror, which wa
 The winter of 1794–95 brought hunger. In Paris the price of bread rose out of reach, the daily ration fell, and many people died of cold and want. Two risings followed.
 
 - **Germinal (1 April 1795).** Crowds invaded the Convention shouting for bread and the Constitution of 1793. The Convention declared a state of siege and the army cleared the streets without much resistance. Several Montagnard deputies were arrested.
-- **Prairial (20–23 May 1795).** A larger rising. On 20 May the crowd broke into the hall and killed a deputy, Féraud, whose head was carried on a pike. The crowd's demands (bread, the Constitution of 1793, the release of arrested deputies) found some sympathy among the Montagnard deputies who remained, but the Convention called in regular troops and loyal national guards. The sections of the working-class faubourg Saint-Antoine were disarmed, and six Montagnard deputies were sentenced to death (some killed themselves).
+- **Prairial (20–23 May 1795).** A larger rising. On 20 May the crowd broke into the hall and killed a deputy, Féraud, whose head was carried on a pike. The crowd's demands (bread, the Constitution of 1793, the release of arrested deputies) found some sympathy among the Montagnard deputies who remained, but the Convention called in regular troops and loyal national guards. The sections of the working-class faubourg Saint-Antoine (a faubourg was a working-class suburb of Paris) were disarmed, and six Montagnard deputies were sentenced to death (some killed themselves).
 
 The risings ended the sans-culottes as a political force. The government had shown that it would use troops against the Paris crowd, which could no longer claim to speak for the Revolution. The army became the final judge of political disputes in Paris, a lesson that the next regime would not forget.
 
@@ -304,7 +304,7 @@ The risings ended the sans-culottes as a political force. The government had sho
 
 ### The Constitution of the Year III
 
-In the summer of 1795 the Convention wrote a new constitution, approved on **22 August 1795** and ratified by a plebiscite. It was the work of men who had lived through the Terror and the crowd's invasion of the Convention, and who feared dictatorship, the mob and a return of the monarchy.
+In the summer of 1795 the Convention wrote a new constitution, approved on **22 August 1795** and ratified by a plebiscite (a vote of the people on one proposal). It was the work of men who had lived through the Terror and the crowd's invasion of the Convention, and who feared dictatorship, the mob and a return of the monarchy.
 
 The **Constitution of the Year III** set up:
 - **Two councils** with the power to make laws. The **Council of Five Hundred** (members at least 30 years old) proposed laws; the **Council of Ancients** (250 members, at least 40 years old, married or widowed) approved or rejected them. One-third of each council was re-elected every year.
@@ -354,7 +354,7 @@ Yet its finances remained fragile. Tax arrears were large, officials and soldier
 
 ### The army and the war
 
-On the frontiers the Directory had many victories. In 1796–97 Bonaparte's campaign in northern Italy beat the Austrians (Lodi, Arcole, Rivoli) and led to the Treaty of **Campo Formio** (17 October 1797), which ended the war with Austria; only Britain remained at war. France set up sister republics in the Netherlands, Italy and Switzerland. But in 1798 Bonaparte sailed with an army to Egypt, where the British navy under Nelson destroyed the French fleet at the Nile (August 1798), and in 1799 the Second Coalition drove the French out of Italy and invaded Switzerland, until Masséna won at Zurich in September.
+On the frontiers the Directory had many victories. In 1796–97 Bonaparte's campaign in northern Italy beat the Austrians (Lodi, Arcole, Rivoli) and led to the Treaty of **Campo Formio** (17 October 1797), which ended the war with Austria; only Britain remained at war. France set up sister republics (states set up under French protection) in the Netherlands, Italy and Switzerland. But in 1798 Bonaparte sailed with an army to Egypt, where the British navy under Nelson destroyed the French fleet at the Nile (August 1798), and in 1799 the Second Coalition drove the French out of Italy and invaded Switzerland, until Masséna won at Zurich in September.
 
 The impact inside France mattered more than the details of the battles:
 - **Conscription.** The Jourdan law (5 September 1798) made military service compulsory for men aged 20–25 in peacetime as well as war.
@@ -419,7 +419,7 @@ The levels below are the real Cambridge levels for 2027 (FACTS.md). Read the com
 
 **A Level 4 answer (9–10): connect the factors and conclude.** Add the pressure from Paris and show how the factors work together:
 
-"A third reason was pressure from the sans-culottes. The Paris crowd was hungry, because the assignat was losing value and grain was being held back, and it blamed hoarders and traitors. On 4–5 September 1793 a crowd marched on the Convention to demand a revolutionary army and measures against suspects, and the Convention responded by making terror 'the order of the day'. The Committee, which had come to power on the back of the purge of the Girondins on 2 June, could not afford to lose the support of Paris, so it adopted the sans-culottes' demands: the Law of Suspects, the General Maximum on 29 September and the revolutionary army.
+"A third reason was pressure from the sans-culottes. The Paris crowd was hungry, because the assignat was losing value and grain was being held back, and it blamed hoarders and traitors. On 4–5 September 1793 a crowd marched on the Convention to demand a revolutionary army and measures against suspects, and the Convention responded by making terror 'the order of the day'. The Mountain, which had come to power on the back of the purge of the Girondins on 2 June, and the Committee it controlled could not afford to lose the support of Paris, so they adopted the sans-culottes' demands: the Law of Suspects, the General Maximum on 29 September and the revolutionary army.
 
 These reasons were connected. War and civil war created the sense of emergency and the fear of conspiracy; hunger turned that fear into a popular demand for action; and the Committee, which depended on Paris for its power, turned the demand into law. The most important reason was the military and civil emergency, because without it neither the sans-culottes nor the Committee would have had an argument for suspending ordinary justice: by September 1793 the Republic was fighting on every frontier and in the west and south at once. But pressure from below decided the timing and the shape of the Terror."
 
@@ -504,7 +504,7 @@ The French Revolution is only the forerunner of another revolution, far greater 
 
 Of the interest due on the public debt, one-third will be inscribed in the Great Book and paid in cash. The other two-thirds will be paid in bonds, which will be accepted in payment for the purchase of national property.
 
-*Adapted from the law of 30 September 1797 (9 Vendémiaire Year VI) on the public debt.*
+*Adapted from the law of 30 September 1797 (9 Vendémiaire Year VI) on the public debt. The Great Book was the register of the national debt.*
 
 **Question.** How far do these sources agree that the Directory brought stability to France?
 
@@ -526,7 +526,7 @@ Of the interest due on the public debt, one-third will be inscribed in the Great
 :::eg Paper 2 (b) [20]: To what extent was war the main reason for the Terror?
 **Plan.** Criterion: which cause explains both why the Terror began and why it went on and grew.
 - For war: the First Coalition, defeats, Dumouriez, the loss of Mainz, Valenciennes and Toulon, the levy of 300,000, the Vendée as a civil war inside a foreign war; the Committee's own language (the "revolutionary government until the peace"); most of the death sentences were in areas of war or civil war (the west and the south-east, about five in six outside Paris).
-- Against war: hunger and the sans-culottes (5 September 1793 and the Law of Suspects); Robespierre's ideology of virtue and terror; faction fighting (Hébertists and Dantonists in spring 1794); the Great Terror began on 10 June 1794, when victory was coming, and grew after Fleurus on 26 June.
+- Against war: hunger and the sans-culottes (5 September 1793 and the Law of Suspects); Robespierre's ideology of virtue and terror; faction fighting (Hébertists and Dantonists, the Indulgents, in spring 1794); the Great Terror began on 10 June 1794, when victory was coming, and grew after Fleurus on 26 June.
 - Judgement: war explains how the Terror started, but not why it reached its height in June–July 1794, after the emergency had eased.
 
 **A Level 5 paragraph (the judgement).** "War was the most important reason for the start of the Terror, but not the main reason for the Terror as a whole. In 1793 the Republic faced invasion on every frontier, civil war in the Vendée and at Lyon, and treason by its own general, and the Committee made terror the policy of a state under siege: the Law of Suspects, the Revolutionary Tribunal and the repression of the rebel cities all came in those months, and most of the 16,600 death sentences were pronounced in areas of civil war, not in Paris. Yet by June 1794 the armies had won at Fleurus and the invaders were being driven back, and still the Law of 22 Prairial was passed and the number of executions in Paris rose to about 1,400 in 47 days. That cannot be explained by the military emergency. It was the result of ideology (Robespierre's belief that virtue needed terror), of fear of plots, and of a Committee that had destroyed the Hébertists and Dantonists and now saw enemies everywhere. The judgement is that war created the Terror but the logic of the Terror, once it existed, kept it going after the war had turned."
