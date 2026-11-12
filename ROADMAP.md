@@ -19,7 +19,7 @@
 - For the Specialist (REVIEW FINAL or a COURSE.md rule): "revisionist" is defined three ways (interp.skills,
   ww1.2, coldwar.1); short exam-practice questions use a mark scale never explained; Section B/C warm-ups assume
   the Section A chapters.
-- Waiting for the 5-hour reset at 00:10 Nov 13 (Istanbul): 5-hour at 86%, weekly 70%.
+- Run 00:16 Nov 13: FIX of the 46 open Reader items running; READER read to hist.d.stalin.3 (18 items), batch hist.d.stalin.4 to hist.d.usa45.2 running; hist-preview on 5111.
 - Course-wide sweep FIX before REVIEW FINAL (Readers file no items for these): 37 chapters cite "FACTS.md" to the
   student (say "the 9489 syllabus" or the paper instead); "Chapter N" as another chapter's name (link it).- 9489 syllabus version 3 (Oct 2026) changes only a weblink; FACTS.md noted.
 - Sensitive topics (civil rights, apartheid, terror): a Writer prompt says no slurs even in sources, violence without
