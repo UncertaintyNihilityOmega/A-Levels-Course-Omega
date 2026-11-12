@@ -20,7 +20,7 @@ Paper 2 is the larger of the two AS papers: 60 marks, and 60% of an AS grade. It
 | Sources | None: the paper has no sources, maps or extra material |
 | Weight | 60% of AS Level; 30% of A Level |
 | Assessment objectives | AO1 historical knowledge (50%) and AO2 historical explanation, analysis and judgement (50%) |
-| Mark scheme | Table A for part (a), Table B for part (b) |
+| Mark scheme | Table A for part (a), Table B for part (b). Tables A and B are named afresh for each paper: in Paper 2 they are the (a) and (b) tables; in Paper 4 they are the AO2 and AO1 tables |
 :::
 
 ## What the paper looks like
@@ -174,6 +174,8 @@ A different explanation or factor that could be set against the one in the quest
 | 1 | 1–4 | **General information** loosely linked to the question; fragmentary points; unsupported assertions |
 | 0 | 0 | No creditable response |
 
+Examiners place an answer by **best fit**: the level whose description matches the whole answer most closely, then the top, middle or lowest mark in the level according to whether it convincingly, adequately or just meets the description. An answer does not have to show every feature of the levels below it. For instance, a clear comparative judgement is a Level 5 feature, but a judgement that is not backed by explained evidence on both sides will not lift an answer into Level 5.
+
 :::key The step from level to level in part (b)
 - **Level 1 to 2**: use relevant facts in place of general statements.
 - **Level 2 to 3**: stop describing and **explain** how one factor or argument answers the question.
@@ -207,6 +209,8 @@ Use the plan that fits the form, and then check that your last paragraph answers
 4. **Conclusion (4 to 6 sentences).** Answer "how far", name your criterion, say which perspective is stronger, and say why. Do not introduce new evidence; do not repeat the whole essay.
 
 Every paragraph ends with a sentence that says what it means for the question ("so the war was a cause of the government's collapse, but it did not decide who replaced it").
+
+**How long to write.** No word count is set. In the 32 minutes of writing, aim for roughly 600 to 800 words (about 20 to 25 words a minute): an introduction, two to four paragraphs of argument and a conclusion. The ladder below is a compact model: its Level 3, 4 and 5 paragraphs add up to about 420 words, so a full answer is somewhat longer.
 
 ### The ladder: one question, from Level 2 to Level 5
 
@@ -313,7 +317,7 @@ Each topic chapter in this course ends with Paper 2 practice and worked examples
 <div class="widget" data-w="hist-levels" data-parts="p2a,p2b" data-start="p2b"></div>
 :::
 
-**What to try.** Choose part (b). Tick "Explains a single perspective" and "Supports that single perspective with mostly relevant evidence": the widget says Level 0, because a level only counts when the level below it is met too. Add one Level 2 feature and one Level 1 feature: Level 3. Then add the features of Level 4 one at a time and see what the widget says is still needed. Then clear the ticks and tick only "Reaches a clear comparative judgement": the widget gives Level 0, because a judgement on its own meets no level. Examiners use best fit, so the explorer is a guide and not an exact marking machine.
+**What to try.** Choose part (b). Tick "Explains a single perspective" and "Supports that single perspective with mostly relevant evidence": the widget says Level 0, because the explorer is a simplified guide that counts a level only when the features of the level below it are ticked too. Add one Level 2 feature and one Level 1 feature: Level 3. Then add the features of Level 4 one at a time and see what the widget says is still needed. Then clear the ticks and tick only "Reaches a clear comparative judgement": the widget gives Level 0, because it will not count a judgement on its own. Examiners are less rigid: they use best fit (see the levels of Table B above), judging the whole answer against each description. Use the explorer to see what your answer still lacks, not to predict an exact mark.
 
 ## Quiz
 

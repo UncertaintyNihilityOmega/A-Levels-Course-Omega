@@ -80,6 +80,7 @@ eq("Tritura to Supersemar (days)", (date(1966, 3, 11) - date(1966, 1, 10)).days,
 eq("Arief Rachman Hakim killed to Supersemar (days)", (date(1966, 3, 11) - date(1966, 2, 24)).days, 15)
 eq("Sukarno's lifespan (years, 6 June 1901 to 21 June 1970)", 1970 - 1901, 69)
 eq("Seven officers buried (six generals and Tendean)", 6 + 1, 7)
+eq("Seven generals targeted, Nasution escaped: six killed", 7 - 1, 6)
 eq("Generals killed at homes and at Lubang Buaya", 3 + 3, 6)
 
 # Estimates of the dead (given as ranges in the chapter)

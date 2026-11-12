@@ -12,16 +12,20 @@
 - CONNECTIONS B done (18 Paper 4 chapters): every written topic chapter now has a Connections box. Writer prompts
   must add: P36 hist.d.safrica.1 the Bantu Education Act 1953; P39 hist.d.malaysia.4 the destruction of the PKI
   1965–66 (boxes link there for these).
-- All 47 packages (96 chapters) written and reviewed; mock FIX done. READER read to hist.interp.coldwar.1 (next
-  batch: hist.interp.coldwar.2 …; 44 chapters left). Reader items FIXed to hist.int.empire.2; next FIX: the 46 open
-  items (headings "READER: hist.int.empire.3 to hist.int.1929.2" and "… hist.int.1929.3 to hist.interp.coldwar.1").
-  Then the rest of the Reader batches and their FIXes, the sweep below, REVIEW FINAL, assembly. Guard on `hist`.
+- All 47 packages (96 chapters) written and reviewed; mock FIX done. READER done (288 items; mocks not in the
+  Reader scope). Reader items FIXed to hist.exam.p2; next FIX: the 22 open items (heading "READER: hist.exam.p3 to
+  hist.mixed.a2"; worst: mixed.as Source A misquoted, mixed.a2 Level 5 rule vs exam.p3 Table A). Then the sweep
+  below, REVIEW FINAL, assembly. Guard on `hist` during runs.
 - For the Specialist (REVIEW FINAL or a COURSE.md rule): "revisionist" is defined three ways (interp.skills,
   ww1.2, coldwar.1); short exam-practice questions use a mark scale never explained; Section B/C warm-ups assume
   the Section A chapters.
-- Run 00:16 Nov 13: Reader items FIXed to hist.d.usa45.2; READER read to hist.exam.p2; FIX of 31 items (d.usa45.3 to d.usa74.2) and the last READER batch (exam.p3, p4, mixed.as, mixed.a2; mocks are not in the Reader scope) running; hist-preview on 5111. Note for the next FIX: Helsinki human rights are Basket III (and Principle VII of Basket I).
+- REVIEW FINAL must check: exam.p1/p2 "best fit" wording against a real 9489 mark scheme (the FIX agent could
+  not read the PDFs); the (b) word guides (about 700-900 P1, 600-800 P2) are labelled as course guidance, not board
+  rules; widgets/hist-levels.js explorer vs best fit; malaysia.1 KMM size (sources say about 60 or 150).
+- Waiting for the 5-hour reset at 05:10 Nov 13 (Istanbul): 5-hour at 92%, weekly 82%.
 - Course-wide sweep FIX before REVIEW FINAL (Readers file no items for these): 37 chapters cite "FACTS.md" to the
-  student (say "the 9489 syllabus" or the paper instead); "Chapter N" as another chapter's name (link it).- 9489 syllabus version 3 (Oct 2026) changes only a weblink; FACTS.md noted.
+  student (say "the 9489 syllabus" or the paper instead); "Chapter N" as another chapter's name (link it).
+- 9489 syllabus version 3 (Oct 2026) changes only a weblink; FACTS.md noted.
 - Sensitive topics (civil rights, apartheid, terror): a Writer prompt says no slurs even in sources, violence without
   graphic detail, save chapters in parts (the first P31 Writer was stopped by a content filter before saving).
 - Agents have web access: WebSearch/WebFetch are deferred tools, loaded with ToolSearch (line in the AGENT-RUN common

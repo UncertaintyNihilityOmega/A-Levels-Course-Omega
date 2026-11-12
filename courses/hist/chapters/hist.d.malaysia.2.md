@@ -19,7 +19,7 @@ The route to independence: Malaysia and Indonesia, c.1909–67 is one of the thr
 
 :::try Warm-up
 Q: What was the MPAJA, and what happened to it in December 1945? (from [The route to independence (1)](#hist.d.malaysia.1))
-A: The Malayan People's Anti-Japanese Army, the resistance force of the Malayan Communist Party, drawn mostly from the Chinese community. It was formally disbanded on 1 December 1945: about 6,800 guerrillas handed in 5,497 weapons and the British suspected that more were hidden. Its leaders went on to form the party's new organisation.
+A: The Malayan People's Anti-Japanese Army, the resistance force of the Malayan Communist Party, drawn mostly from the Chinese community. It was formally disbanded on 1 December 1945: about 6,800 guerrillas handed in 5,497 weapons and the British suspected that more were hidden. Its leaders went on to run the MCP's open organisations, such as its trade unions, while the hidden weapons later armed the MRLA (the Malayan Races Liberation Army, the MCP's army in the Emergency, told below).
 Q: What did Sir Cecil Clementi try to do in 1931, and why did it fail? (from [The route to independence (1)](#hist.d.malaysia.1))
 A: He proposed to decentralise the Federated Malay States as a first step to a wider Malayan union. Businessmen, Chinese opinion and the rulers of the Unfederated States opposed it, and it was dropped. The idea of closer union came back in 1945 as the Malayan Union.
 Q: What was the Truman Doctrine of 1947? (from [Post-war USA, 1945–61 (4)](#hist.d.usa45.4))
@@ -34,7 +34,7 @@ Read this first. Each later section explains one stretch of it.
 |---|---|
 | 12 September 1945 | The British Military Administration takes control of Malaya |
 | 1 April 1946 | The Malayan Union is inaugurated |
-| May 1946 | UMNO is founded, with Dato Onn bin Jaafar as its leader |
+| May 1946 | UMNO is founded, with Dato Onn bin Jaafar (Dato is a Malay title of honour) as its leader |
 | 20 October 1947 | The hartal (general shutdown of shops and work) against the proposed Federation |
 | 1 February 1948 | The Federation of Malaya replaces the Malayan Union |
 | June 1948 | The murder of three planters at Sungai Siput; the Emergency begins |
@@ -45,7 +45,7 @@ Read this first. Each later section explains one stretch of it.
 | 27 July 1955 | The Alliance wins 51 of the 52 elected seats |
 | 18 January–6 February 1956 | The London talks agree on independence by August 1957 |
 | 31 August 1957 | Merdeka: Malaya becomes independent |
-| 27 May 1961 | Tunku Abdul Rahman proposes a Greater Malaysia |
+| 27 May 1961 | Tunku Abdul Rahman (Tunku is a prince's title, and he is usually called "the Tunku") proposes a Greater Malaysia |
 | 1 September 1962 | Singapore's referendum on the merger |
 | 16 September 1963 | Malaysia is formed |
 | 21 July 1964 | Race riots in Singapore |
@@ -137,9 +137,9 @@ The Working Committee's plan became the **Federation of Malaya Agreement**, sign
 
 The Federation was a victory for UMNO. It was also an unequal compromise, in which the non-Malay communities, which made up about half of the population, had been consulted far less than the Malays.
 
-### Non-Malay opposition: the PMCJA and PUTERA
+### Non-Malay opposition: the AMCJA and PUTERA
 
-The Chinese and Indians, and many Malays of the left, were unhappy with the plan. The opposition took the form of a joint movement. In December 1946 the **All-Malaya Council of Joint Action (AMCJA)**, later known as the **Pan-Malayan Council of Joint Action (PMCJA)**, was formed under the Straits-born Chinese leader **Tan Cheng Lock** and joined by Chinese and Indian groups, trade unions and left-wing parties. It worked with a Malay left-wing coalition, **Pusat Tenaga Rakyat (PUTERA)**, the "Centre of People's Power", whose parties included the Malay Nationalist Party. The two bodies drew up the **People's Constitutional Proposals** of 1947, which asked for
+The Chinese and Indians, and many Malays of the left, were unhappy with the plan. The opposition took the form of a joint movement. In December 1946 the **All-Malaya Council of Joint Action (AMCJA)** was formed (it later changed "All-Malaya" to "Pan-Malayan" in its name and is sometimes called the PMCJA; this chapter uses AMCJA throughout) under the Straits-born Chinese leader **Tan Cheng Lock** and joined by Chinese and Indian groups, trade unions and left-wing parties. It worked with a Malay left-wing coalition, **Pusat Tenaga Rakyat (PUTERA)**, the "Centre of People's Power", whose parties included the Malay Nationalist Party (a left-wing Malay party that wanted independence in union with Indonesia). The two bodies drew up the **People's Constitutional Proposals** of 1947, which asked for
 - a **united Malaya including Singapore**,
 - a **fully elected legislature**,
 - **equal citizenship** for all who made Malaya their home, and
@@ -192,7 +192,7 @@ The Emergency lasted until **31 July 1960**, though the real fighting was over b
 By the time he left in 1954 the number of guerrilla attacks had fallen sharply, the MRLA had lost most of its areas, and Chin Peng's forces were retreating to the Thai border.
 
 **Other reasons for success.** The Briggs Plan and Templer's leadership are only part of the story.
-- **Military forces.** The British brought in the Gurkhas and other Commonwealth troops, the air force, specialist jungle units, and Iban trackers from Sarawak. The Malayan forces, particularly the Malay-dominated police and army, grew to a large size, and the Home Guard reached a quarter of a million.
+- **Military forces.** The British brought in the Gurkhas (Nepalese soldiers in the British army) and other Commonwealth troops, the air force, specialist jungle units, and Iban trackers from Sarawak. The Malayan forces, particularly the Malay-dominated police and army, grew to a large size, and the Home Guard reached a quarter of a million.
 - **The insurgents' weaknesses.** Their base was one community, the Chinese, and the Malay majority did not support them. From about 1951 the MCP, having lost support by killing civilians, changed its policy to reduce attacks on civilians, but by then it was losing the war.
 - **Politics.** Britain made clear that independence would follow when the country was ready, and the Malayan Chinese Association (below) gave Chinese a legal political channel. The communists lost their strongest argument, that independence could only be won by war. The **Baling Talks** of December 1955, in which the Tunku met Chin Peng, failed because Chin Peng would not accept less than recognition of the MCP as a legal party, which the government refused.
 
@@ -240,7 +240,7 @@ The British allowed elections to the Federal Legislative Council in **July 1955*
 <div class="widget" data-w="hist-chart" data-title="The 1955 election: votes against seats" data-unit="per cent" data-type="bar" data-series="Share of votes: Alliance=81.7, All other parties=18.3 ;; Share of the 52 elected seats: Alliance=98.1, All other parties=1.9" data-source="Votes and seats from the official returns of the 27 July 1955 Federal Legislative Council election, as tabulated in Wikipedia (Alliance 818,013 votes, 81.68 per cent, 51 seats; PMIP 40,667 votes, 4.06 per cent, 1 seat); the seat shares are calculated here from them. The chart shows one election and the two blocs only, and cannot show that the electorate was limited to citizens, most of them Malays, or that the election was for 52 of 98 seats."></div>
 :::
 
-Look at the chart. The Alliance's share of the **seats** (98.1 per cent) was far higher than its share of the **votes** (81.7 per cent), as the first-past-the-post system rewards the winner in each seat, but an 82 per cent share is a very large one. It meant that the three communities had voted for a joint programme of independence by negotiation. It also meant that the British had to listen. In **1955** the Tunku was able to speak for all the main communities, and the MCP, which had said it spoke for the Chinese, could not claim that the people of Malaya wanted the guerrilla war.
+Look at the chart. The Alliance's share of the **seats** (98.1 per cent) was far higher than its share of the **votes** (81.7 per cent), as the first-past-the-post system (the candidate with the most votes in each seat wins it) rewards the winner in each seat, but an 82 per cent share is a very large one. It meant that the three communities had voted for a joint programme of independence by negotiation. It also meant that the British had to listen. In **1955** the Tunku was able to speak for all the main communities, and the MCP, which had said it spoke for the Chinese, could not claim that the people of Malaya wanted the guerrilla war.
 
 :::key Why the Alliance won in 1955
 1. **A partnership of three parties** that let each community vote for its own party within one front.
@@ -297,7 +297,7 @@ The syllabus asks for three kinds of reason on Singapore's side.
 - **The PAP's survival.** After the split of 1961 the party's majority in the Legislative Assembly fell to one seat. A successful merger would restore its authority.
 
 **Economic.**
-- Singapore had no resources except its port and its people, and its prosperity depended on the **entrepot trade**, the import and re-export of the goods of its neighbours (Malayan rubber and tin were shipped through Singapore). It needed a **hinterland**, a larger home market and a **common market** to attract industry and create jobs for a population that was growing fast and had many young unemployed.
+- Singapore had no resources except its port and its people, and its prosperity depended on the **entrepot trade**, the import and re-export of the goods of its neighbours (Malayan rubber and tin were shipped through Singapore). It needed a **hinterland**, a larger home market and a **common market** (no tariffs on trade between Singapore and Malaya) to attract industry and create jobs for a population that was growing fast and had many young unemployed.
 - The Federation had the same interest in Singapore's trade and wealth.
 
 **Cultural and social.**
@@ -308,9 +308,9 @@ The syllabus asks for three kinds of reason on Singapore's side.
 
 ### Sabah and Sarawak
 
-The two territories of north Borneo, North Borneo (Sabah) and Sarawak, were British colonies with small, scattered populations, many of them indigenous peoples, and little political life. Britain and Malaya persuaded them that a union would protect them from outside pressure (Indonesia and the Philippines both had claims or fears) and give them development. A British commission under **Lord Cobbold** (January–April 1962) toured both territories and reported on **1 August 1962**. It found that about **one third** of the people in each territory strongly favoured early Malaysia, another third favoured it with safeguards, and the rest wanted independence first or British rule to continue. It advised that Malaysia should go ahead, with safeguards. These were set out in the **20 points** (Sabah) and **18 points** (Sarawak): protection for religion, language, native rights, immigration control and the use of English.
+The two territories of north Borneo, North Borneo (Sabah) and Sarawak, were British colonies with small, scattered populations, many of them indigenous peoples, and little political life. Britain and Malaya persuaded them that a union would protect them from outside pressure (Indonesia opposed the plan as a British scheme, and the Philippines claimed North Borneo (Sabah) as the old territory of the Sultan of Sulu; see [The route to independence (4)](#hist.d.malaysia.4) for Indonesia's response) and give them development. A British commission under **Lord Cobbold** (January–April 1962) toured both territories and reported on **1 August 1962**. It found that about **one third** of the people in each territory strongly favoured early Malaysia, another third favoured it with safeguards, and the rest wanted independence first or British rule to continue. It advised that Malaysia should go ahead, with safeguards. These were set out in the **20 points** (Sabah) and **18 points** (Sarawak): protection for religion, language, native rights, immigration control and the use of English.
 
-**Brunei** did not join: its Sultan disagreed with the terms, particularly over the oil revenue and his place among the rulers, and a revolt against its government (December 1962) was put down with British help.
+**Brunei** did not join: its Sultan disagreed with the terms, particularly over the oil revenue and his place among the rulers, and a revolt against its government (December 1962) was put down with British help (Gurkha troops were flown in from Singapore).
 
 ### The Constitution of Malaysia
 
@@ -332,7 +332,7 @@ It was thus a **compromise** between a unitary state and a loose federation, des
 The union lasted **693 days**, less than two years. Its breakdown is a favourite examination topic, and the syllabus names "political and economic differences".
 
 **Political differences.**
-- **PAP against UMNO.** The two parties were rivals for the same position as the leaders of Malaysia. UMNO regarded the Malay peninsula as its own territory, and the PAP, which had been in the Singapore Alliance's way, took a larger part in Malayan politics. In the **April 1964** federal election the PAP, against what UMNO believed to be an understanding, put up candidates in nine seats in the peninsula, and won one (Bangsar, Devan Nair). UMNO's leaders were angry, and the MCA, which had been the Alliance's Chinese party, felt betrayed.
+- **PAP against UMNO.** The two parties were rivals for the same position as the leaders of Malaysia. UMNO regarded the Malay peninsula as its own territory and expected the PAP to stay out of peninsula politics. The PAP said that UMNO had itself broken an understanding when it fought the Singapore election of September 1963, in which the PAP beat the Alliance's Singapore branch. In the **April 1964** federal election the PAP therefore put up candidates in nine seats on the peninsula, and won one (Bangsar, Devan Nair). UMNO's leaders were angry, and the MCA, which had been the Alliance's Chinese party, felt betrayed.
 - **"Malaysian Malaysia".** The PAP campaigned for a Malaysia in which all citizens would have the same rights, whatever their race. UMNO read this as an attack on the **special position of the Malays**, which was the basis of its power and of the 1957 bargain. On **9 May 1965** the PAP and other opposition parties formed the Malaysian Solidarity Convention. Some UMNO leaders and the Malay press began a campaign against Lee, whom they accused of arousing the Chinese.
 - **Communal tension.** Race riots broke out in Singapore on **21 July 1964**, during a procession for the Prophet Muhammad's birthday: 23 people were killed and 454 hurt, and a second outbreak on 2 September killed 13. Each side blamed the other, and the riots showed how far the communities were from trust.
 
@@ -443,7 +443,7 @@ Q: Why did the Malays oppose it, and what did they do?
 A: The sultans lost their sovereignty (the MacMichael treaties were obtained under pressure and in secret), the Malays were not consulted, and equal citizenship seemed to threaten their position in their own country. They held mass meetings, the sultans boycotted the Governor's installation, and in May 1946 they formed UMNO under Dato Onn bin Jaafar.
 Q: What were the main terms of the Federation of Malaya of 1 February 1948?
 A: The sultans' sovereignty was restored, a High Commissioner and a stronger central government ran the Federation, citizenship was made harder for non-Malays, the special position of the Malays was recognised and Singapore stayed separate.
-Q: What were the PMCJA and PUTERA, and what did they ask for?
+Q: What were the AMCJA and PUTERA, and what did they ask for?
 A: The Pan-Malayan (All-Malaya) Council of Joint Action, led by Tan Cheng Lock, and the Malay left-wing coalition Pusat Tenaga Rakyat. Their People's Constitutional Proposals of 1947 asked for a united Malaya including Singapore, an elected legislature and equal citizenship, and they organised the hartal of 20 October 1947. The British ignored them.
 Q: Why did the Malayan Communist Party begin the Emergency in 1948?
 A: After the war it had an army and prestige; Lai Teck was exposed and fled in March 1947 and Chin Peng took a harder line; British restrictions on unions in 1948 and the arrest of organisers coincided with the murder of three planters at Sungai Siput on 16 June 1948 and the declaration of the Emergency. Historians disagree whether the party chose war or was pushed.
@@ -510,7 +510,7 @@ A: Support: the bargain (citizenship in return for the Malays' special position)
 + Dato Onn bin Jaafar
 - Chin Peng
 > Tunku Abdul Rahman became president only in 1951, and Tan Cheng Lock led the MCA.
-? What did the Pan-Malayan Council of Joint Action (PMCJA) and PUTERA ask for in 1947?
+? What did the All-Malaya Council of Joint Action (AMCJA) and PUTERA ask for in 1947?
 - A return to the Malayan Union
 + A united Malaya including Singapore, an elected legislature and equal citizenship
 - A communist republic
@@ -573,7 +573,7 @@ You need only the chapters for your own options; the others are there for contex
 
 :::checklist What you can now do
 - [ ] I can explain the failure of the Malayan Union, the role of Dato Onn bin Jaafar and UMNO and the formation of the Federation of Malaya in 1948.
-- [ ] I can explain non-Malay opposition to the Federation, including the PMCJA and PUTERA.
+- [ ] I can explain non-Malay opposition to the Federation, including the AMCJA and PUTERA.
 - [ ] I can explain the Emergency: the role of Lai Teck and Chin Peng and the communist terror of 1948–49.
 - [ ] I can explain Britain's reaction and the reasons for its success, including the Briggs Plan and General Templer.
 - [ ] I can explain the growth of UMNO, the MCA, the MIC and the Alliance, and the election of 1955.
@@ -584,7 +584,7 @@ You need only the chapters for your own options; the others are there for contex
 
 :::recap
 - **Malayan Union (1 April 1946)**: one unit under a Governor, sultans' sovereignty given up (MacMichael treaties, late 1945), citizenship for all with a tie to Malaya; Singapore apart. Malay opposition: UMNO (May 1946, Dato Onn); the British gave in.
-- **Federation of Malaya (1 February 1948)**: sultans restored, a High Commissioner, harder citizenship, Malay special position. Non-Malay opposition: AMCJA/PMCJA (Tan Cheng Lock) and PUTERA; People's Constitutional Proposals 1947; hartal 20 October 1947.
+- **Federation of Malaya (1 February 1948)**: sultans restored, a High Commissioner, harder citizenship, Malay special position. Non-Malay opposition: AMCJA (Tan Cheng Lock) and PUTERA; People's Constitutional Proposals 1947; hartal 20 October 1947.
 - **Emergency (June 1948 to 31 July 1960)**: Lai Teck fled in March 1947, Chin Peng led the MCP; Sungai Siput, 16 June 1948; MRLA about 7,000 at most, about 90 per cent Chinese; communist terror 1948–49.
 - **British success**: Briggs Plan (1950; about 500,000 resettled in about 450 New Villages; food control); Gurney killed 6 October 1951; Templer (from 22 January 1952; intelligence, "hearts and minds", white areas); force; the insurgents' weakness; the promise of independence.
 - **Parties**: UMNO (1946; Tunku from 1951), MCA (27 February 1949; Tan Cheng Lock), MIC (1946), Alliance (Kuala Lumpur, February 1952, 9 of 12 seats; MIC 1954); 1955 election 27 July: 51 of 52 seats on 81.7 per cent.

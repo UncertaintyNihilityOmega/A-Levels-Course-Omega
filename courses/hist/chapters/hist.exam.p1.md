@@ -20,7 +20,7 @@ Paper 1 is the paper that surprises students most. It is not a memory test of a 
 | Sources | Four, labelled A to D, at most 600 words in total |
 | Weight | 40% of AS Level; 20% of A Level |
 | Assessment objectives | AO1 historical knowledge (25% of the marks) and AO3 historical sources (75%) |
-| Mark scheme | Table A for part (a), Table B for part (b) |
+| Mark scheme | Table A for part (a), Table B for part (b). Tables A and B are named afresh for each paper: in Paper 1 they are the (a) and (b) tables; in Paper 4 they are the AO2 and AO1 tables |
 :::
 
 ## What the paper looks like
@@ -145,7 +145,7 @@ Say what the source is **good evidence for** and what it is **poor evidence for*
 | 1 | 1–3 | **Describes** the content of each source; may make very simple comparisons ("one is a letter, the other a speech") that are not developed |
 | 0 | 0 | No engagement with the sources |
 
-Marks are never deducted. Examiners find the best-fit level, then give the top mark if the answer **convincingly** meets it, a middle mark if it **adequately** meets it, and the lowest if it **just** meets it.
+Marks are never deducted. Examiners find the best-fit level, then give the top mark if the answer **convincingly** meets it, a middle mark if it **adequately** meets it, and the lowest if it **just** meets it. **Best fit** means the level whose description matches the whole answer most closely: an answer does not have to show every feature of its level, or of every level below it, and how fully it meets the description decides the mark within the level.
 
 :::key The step from level to level
 - **Level 1 to 2**: stop describing each source in turn. Start **comparing**: one point, both sources.
@@ -250,6 +250,10 @@ All three ask for the same thing: use every source to build a case **for** the s
 5. **Finish with the judgement.** Two to four sentences: which side is stronger, why, and how far the statement holds. Say what the sources **cannot** show.
 :::
 
+These five steps are the exam-day version of the longer method in [Skills: reading and comparing sources (Paper 1)](#hist.skills.sources), which decodes the claim, writes one line per source, weighs each source, adds knowledge and groups by argument: sorting, evaluating and deciding here are those steps compressed into the minutes you have before you write.
+
+**How long to write.** There is no fixed word count, but in the 38 minutes of writing a developed Level 5 answer to part (b) is usually around 700 to 900 words (about the same pace as part (a)): two or three argument paragraphs, each using two or more sources, and a judgement of two to four sentences.
+
 ### Evaluating a source as evidence: the ladder
 
 Using the same two sources as in part (a), suppose the statement in part (b) were: "'By June 1789 Louis XVI had lost control of events.' How far do these sources support this view?"
@@ -346,7 +350,7 @@ The best practice is a **real paper under real conditions**. Cambridge publishes
 <div class="widget" data-w="hist-levels" data-parts="p1a,p1b" data-start="p1a"></div>
 :::
 
-**What to try.** Choose part (a), tick "Describes or paraphrases the content of each source" and nothing else, and see Level 1. Then tick the three Level 3 features: the best fit is still Level 1, because a level only counts when the level below it is met too, so add one Level 2 feature and watch it jump to Level 3, and see what the widget says is still missing for Level 4. Do the same with part (b). Remember that examiners use best fit: the explorer is a guide to the descriptors, not an exact marking machine.
+**What to try.** Choose part (a), tick "Describes or paraphrases the content of each source" and nothing else, and see Level 1. Then tick the three Level 3 features: the explorer still shows Level 1, because it is a simplified guide that counts a level only when the features of the level below are ticked too. Add one Level 2 feature and watch it jump to Level 3, and see what the widget says is still missing for Level 4. Do the same with part (b). Examiners are less rigid than the explorer: they use best fit (see the levels section above), judging the whole answer against each description. Use the explorer to see which descriptors your answer still lacks, not to predict an exact mark.
 
 ## Quiz
 

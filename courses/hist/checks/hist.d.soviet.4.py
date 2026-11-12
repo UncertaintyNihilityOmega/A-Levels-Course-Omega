@@ -30,6 +30,10 @@ free = 161
 eq("35 per cent of 460 Sejm seats", round(0.35 * 460), free)
 eq("65 per cent of 460 Sejm seats", round(0.65 * 460), 299)
 eq("seats sum", 299 + free, 460)
+# National list: 35 unopposed seats among the 299 reserved; only 2 of the 35 reached 50 per cent in the first round
+national_list = 35
+assert national_list < 299
+eq("national list candidates failing 50 per cent (all but two)", national_list - 2, 33)
 assert 99 < 100  # Senate seats won
 eq("Round Table days", days((1989, 2, 6), (1989, 4, 5)), 58)
 assert date(1989, 4, 5) < date(1989, 4, 17) < date(1989, 6, 4) < date(1989, 6, 18) < date(1989, 7, 19) < date(1989, 8, 24)

@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-13 · READER · 288 reader items
+Last: 2026-11-13 · FIX · 51 reader items closed, usa74.3 to exam.p2: first-use glosses (Middle East, Iran, Afghanistan, arms, USSR, SA, Malaysia terms); Helsinki baskets made consistent (usa74.4, soviet.2); usa74.4 five causes key box matches headings; safrica.4 Muzorewa's African National Council vs ANC, rolls explained; malaysia.4 generals count and Pancasila reordering; malaysia.2 AMCJA one name, PAP/UMNO rewritten; exam.p1/p2 Table naming, best-fit rule, (b) word guides
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
