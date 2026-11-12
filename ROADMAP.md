@@ -19,7 +19,7 @@
 - For the Specialist (REVIEW FINAL or a COURSE.md rule): "revisionist" is defined three ways (interp.skills,
   ww1.2, coldwar.1); short exam-practice questions use a mark scale never explained; Section B/C warm-ups assume
   the Section A chapters.
-- Run 00:16 Nov 13: Reader items FIXed to hist.interp.coldwar.1; READER read to hist.d.usa74.2; FIX of 35 items (coldwar.2 to d.usa45.2) and READER hist.d.usa74.3 to hist.d.safrica.2 running; hist-preview on 5111.
+- Run 00:16 Nov 13: Reader items FIXed to hist.d.usa45.2; READER read to hist.d.safrica.2 (8 left after the running batch: exam.p3, p4, mixed.as, mixed.a2, mock.p1-4); FIX of 31 items (d.usa45.3 to d.usa74.2) and READER hist.d.safrica.3 to hist.exam.p2 running; hist-preview on 5111. Note for the next FIX: Helsinki human rights are Basket III (and Principle VII of Basket I).
 - Course-wide sweep FIX before REVIEW FINAL (Readers file no items for these): 37 chapters cite "FACTS.md" to the
   student (say "the 9489 syllabus" or the paper instead); "Chapter N" as another chapter's name (link it).- 9489 syllabus version 3 (Oct 2026) changes only a weblink; FACTS.md noted.
 - Sensitive topics (civil rights, apartheid, terror): a Writer prompt says no slurs even in sources, violence without
