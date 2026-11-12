@@ -18,7 +18,7 @@ A mock tells you something no chapter can: how you write under the clock, on an 
 
 This mock prints all three questions so that every student can sit the one on the topic they have studied. Sit **one** question only, in 75 minutes, with a pen and paper and nothing else: no notes, no textbook, no timeline. If you want more practice, sit the others on another day.
 
-Each question has one extract of about 400 to 450 words. On the real paper an extract is at most 600 words, comes from a historian's published writing and does not name its author, and you are never asked to identify the author. The extracts here are **original practice writing**, composed for this course in the manner of a historian's prose. They are not the words of any real historian and do not summarise any one book. Do not use them as evidence of what any real historian wrote.
+Each question has one extract of about 370 to 450 words. On the real paper an extract is at most 600 words, comes from a historian's published writing and does not name its author, and you are never asked to identify the author. The extracts here are **original practice writing**, composed for this course in the manner of a historian's prose. They are not the words of any real historian and do not summarise any one book. Do not use them as evidence of what any real historian wrote.
 :::
 
 :::tip A plan for the 75 minutes
@@ -201,6 +201,7 @@ These extracts and this scheme were written for this course. A real extract may 
 - explore: [Holocaust Encyclopedia](https://encyclopedia.ushmm.org/) · United States Holocaust Memorial Museum · articles on the countries and rescuers named in Section B
 - explore: [National Security Archive](https://nsarchive.gwu.edu/) · George Washington University · declassified documents on the Cold War for Section C
 - practise: [CIE A Level History revision](https://www.savemyexams.com/a-level/history/cie/) · Save My Exams · notes and exam questions by topic [paid]
+
 Links checked 7 November 2026.
 :::
 

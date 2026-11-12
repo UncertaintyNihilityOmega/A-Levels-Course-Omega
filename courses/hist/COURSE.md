@@ -151,8 +151,12 @@ In this order (the gold chapter shows every part):
 ## Mock papers
 One per written paper, the real time and total (FACTS.md): Paper 1 1 h 15 min, 40; Paper 2 1 h 45 min, 60; Paper 3
 1 h 15 min, 40; Paper 4 1 h 45 min, 60. Original questions in the board's style, sources real and labelled, the 2027
-rotation for Papers 1 and 2. The kit adds every question's marks into the header total: choice papers are an open
-REQUESTS.md item; the mock packages say what to do.
+rotation for Papers 1 and 2. Choice papers use `@total` and `@answer` (the page marks one box per question, out of
+the question's marks). A mock is an unseen paper: no question may share its focus with a mixed-practice, guide or
+specimen question (same event and same claim), and no Paper 3 extract may share its main interpretation with a
+practice extract elsewhere in the course. Grep the guides and mixed practice before writing one. Practice extracts
+are original writing labelled as such, or labelled summaries of a named historian's argument, never quotations.
+Russian dates: Old Style before February 1918, New Style after (say so when a set mixes both).
 
 ## Gold chapter
 **hist.eu.france.1** (France (1): the causes and immediate consequences of the 1789 Revolution). Read it before you

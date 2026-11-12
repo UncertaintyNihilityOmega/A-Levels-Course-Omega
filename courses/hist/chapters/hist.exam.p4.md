@@ -162,7 +162,7 @@ The explorer holds the Paper 4 levels. Choose a table, tick what an essay does, 
 <div class="widget" data-w="hist-levels" data-parts="p4a,p4b" data-start="p4a"></div>
 :::
 
-**What to try.** Choose Table A and tick "Addresses the topic rather than the question ...": Level 1. Then tick the three Level 2 features, to reach Level 2. Next, tick "Reaches a clear, sustained, supported judgement" (a Level 5 feature): the level does not change, because the levels between are not yet met, and the explorer says so. Climb Table A to Level 3, then Table B to Level 3, and look at the total. Examiners use best fit, so the explorer is a guide and not an exact marking machine.
+**What to try.** Choose Table A and tick "Addresses the topic rather than the question ...": Level 1. Then tick the three Level 2 features, to reach Level 2. Next, tick "Reaches a clear, sustained, supported judgement" (a Level 5 feature): the level does not change, because the levels between are not yet met, and the explorer lists what Level 3 still needs. Climb Table A to Level 3, then Table B to Level 3, and look at the total. Examiners use best fit, so the explorer is a guide and not an exact marking machine.
 
 ## Choosing your two questions
 

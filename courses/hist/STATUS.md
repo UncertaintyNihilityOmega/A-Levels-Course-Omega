@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-12 · WRITE P45 · hist.mock.p1 (8,854 words; three sections, all-new real sources, 40 marks answer 1) and hist.mock.p2 (9,482 words; six questions of 30, 60 marks answer 2); no widgets; check and phone pass; see Writer's notes in packages/P45.md for source provenance and facts to double-check
+Last: 2026-11-12 · REVIEW P43, P44, P45, P46 · 2 open FIX items (hist.mock.p4: six questions repeat hist.mixed.a2 Paper 4 questions, one also close to specimen Q6; hist.mock.p3: Section A extract repeats mixed.a2 extract B's interpretation). Fixed: Johnson veto wording (infinitely; colored and against), Old/New Style notes (mixed.as, mock.p2), mock.p1 schemes quoting words not in the printed extracts (Azema; Altgeld C extended from the real letter), Cordeliers and Roland dating, mark-box instructions, 1876 disputed votes, League and Spain, Marshall lever dating, timings in mixed.a2, What-to-try text in exam.p2/p4. hist-levels FIX verified in the preview for P1-P4; web checks done; COURSE.md mock rule added.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -47,10 +47,10 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P40: reviewed 2026-11-12
 - P41: reviewed 2026-11-12
 - P42: reviewed 2026-11-12
-- P43: written 2026-11-12
-- P44: written 2026-11-12
-- P45: written 2026-11-12
-- P46: written 2026-11-12
+- P43: reviewed 2026-11-12
+- P44: reviewed 2026-11-12
+- P45: reviewed 2026-11-12
+- P46: reviewed 2026-11-12
 - P47: reviewed 2026-11-11
 - READER: open
 - FINAL: open

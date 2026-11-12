@@ -313,7 +313,7 @@ Each topic chapter in this course ends with Paper 2 practice and worked examples
 <div class="widget" data-w="hist-levels" data-parts="p2a,p2b" data-start="p2b"></div>
 :::
 
-**What to try.** Choose part (b). Tick "Explains a single perspective" and "Supports that single perspective with mostly relevant evidence": the widget says Level 0, because a level only counts when the level below it is met too. Add one Level 2 feature and one Level 1 feature: Level 3. Then add the features of Level 4 one at a time and see what the widget says is still needed. Then try ticking only "Reaches a clear comparative judgement": the widget will tell you it is not enough alone. Examiners use best fit, so the explorer is a guide and not an exact marking machine.
+**What to try.** Choose part (b). Tick "Explains a single perspective" and "Supports that single perspective with mostly relevant evidence": the widget says Level 0, because a level only counts when the level below it is met too. Add one Level 2 feature and one Level 1 feature: Level 3. Then add the features of Level 4 one at a time and see what the widget says is still needed. Then clear the ticks and tick only "Reaches a clear comparative judgement": the widget gives Level 0, because a judgement on its own meets no level. Examiners use best fit, so the explorer is a guide and not an exact marking machine.
 
 ## Quiz
 

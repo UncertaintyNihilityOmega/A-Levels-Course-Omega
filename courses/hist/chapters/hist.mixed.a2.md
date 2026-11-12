@@ -17,7 +17,7 @@ Papers 3 and 4 are the A Level papers that ask you to do what historians do: jud
 2. Mark yourself against the levels (below), then open the answer. The indicative content is a guide: "accept any other valid responses" is on every real mark scheme.
 3. Add a line to your error log: the level reached, what would raise it, and the fact you did not know.
 
-**Timing.** Paper 3 is 75 minutes for one question of 40 marks: about 10 minutes reading and planning the extract, then about 60 minutes writing and 5 minutes checking. Paper 4 is 105 minutes for two questions of 30 marks: about 50 minutes each, including 5 minutes of planning, and a few minutes at the start to choose your questions from the three in your option.
+**Timing (from the paper guides).** Paper 3 is 75 minutes for one question of 40 marks: about 15 minutes reading and marking the extract, 10 minutes planning and 50 minutes writing. Paper 4 is 105 minutes for two questions of 30 marks: about 6 minutes at the start to choose your two questions from the three in your option, then 46 minutes for each (4 planning, 42 writing), and 7 minutes at the end to check.
 :::
 
 | Part | Marks | Top level | What lifts an answer |
@@ -96,7 +96,7 @@ A: **Plan.** *Main interpretation:* (1) the perpetrators of the shootings were o
 :::note Practice extract D (about 175 words)
 The murder of the Jews of Europe was not the carrying out of a plan made by Hitler at the start. It grew in stages out of the working of the Nazi state itself. Hitler's regime was not a smooth machine but a mass of rival agencies, in the party, the SS, the army and the civil administration in the occupied east, each competing to carry out what it believed the Führer wanted. Hitler spoke often of destroying the Jews, but he rarely gave precise orders; he approved, encouraged and left the details to others. The policy moved from forced emigration to expulsion and then, when the plans for deportation to the east and to Madagascar failed and the ghettos filled with people they could not feed, to killing. Local officials looked for their own solutions, and each step made the next more likely. The war, and above all the war against the Soviet Union, removed the last restraints. The Final Solution was the result of a process of cumulative radicalisation, not of a blueprint.
 
-*A summary, written for practice, of the argument of the structuralist school, in the manner of Hans Mommsen, "The Realization of the Unthinkable: The 'Final Solution of the Jewish Question' in the Third Reich" (1983). The words are not Mommsen's.*
+*A summary, written for practice, of the argument of the structuralist school, in the manner of Hans Mommsen, "The Realization of the Unthinkable: The 'Final Solution of the Jewish Question' in the Third Reich" (first published in German in 1983). The words are not Mommsen's.*
 :::
 
 :::try Paper 3 practice: the Holocaust, extract D
@@ -342,7 +342,7 @@ A: The USA offered about 13 billion dollars over four years (the Economic Cooper
 ## Plan your practice
 
 :::steps
-1. **Week 1: Paper 3.** Plan all six extracts in 10 minutes each (main interpretation with two aspects, sub-messages, approach, knowledge). Compare your plan with the answer's plan before you write anything. Then write one full answer in 60 minutes.
+1. **Week 1: Paper 3.** Plan all six extracts in 10 minutes each (main interpretation with two aspects, sub-messages, approach, knowledge). Compare your plan with the answer's plan before you write anything. Then write one full answer in 75 minutes, as in the exam.
 2. **Week 2: Paper 4, one option.** Do the questions for your option as 5-minute plans first, then write two of them as a timed pair (100 minutes).
 3. **Week 3: gaps.** Do the recall round and the quiz without notes. Rewrite one answer you marked at Level 3 so that it reaches Level 4 or 5, using your error log.
 4. **Week 4: the mocks.** Take [Mock Paper 1](#hist.mock.p1) and [Mock Paper 2](#hist.mock.p2) for the AS papers, then [Mock Paper 3](#hist.mock.p3) and [Mock Paper 4](#hist.mock.p4), under exam conditions, and use the real past papers on the Cambridge site.
@@ -452,6 +452,7 @@ A: The USA offered about 13 billion dollars over four years (the Economic Cooper
 - read: [Holocaust Encyclopedia](https://encyclopedia.ushmm.org/) · United States Holocaust Memorial Museum · articles on the Holocaust for Paper 3 knowledge
 - explore: [National Security Archive](https://nsarchive.gwu.edu/) · George Washington University · declassified documents for the Cold War
 - read: [US Presidents](https://millercenter.org/president) · Miller Center, University of Virginia · overviews of each presidency, 1945–93
+
 Links checked 7 November 2026.
 :::
 

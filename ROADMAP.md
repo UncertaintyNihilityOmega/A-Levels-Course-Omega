@@ -12,8 +12,11 @@
 - CONNECTIONS B done (18 Paper 4 chapters): every written topic chapter now has a Connections box. Writer prompts
   must add: P36 hist.d.safrica.1 the Bantu Education Act 1953; P39 hist.d.malaysia.4 the destruction of the PKI
   1965–66 (boxes link there for these).
-- P1–P42 and P47 written and reviewed; FIX done; P43, P44 written. Running: Writers **P45**, **P46**. Then
-  REVIEW P43–P46 (Opus, with the hist-preview server, port 5111). Guard on `hist`.
+- All 47 packages (96 chapters) written and reviewed. Next: Writer **FIX** (2 open REVIEW.md items: replace six
+  hist.mock.p4 questions that repeat hist.mixed.a2; a new unseen Section A extract in hist.mock.p3), and READER
+  batches alongside it (first: hist.overview … hist.eu.france.2; the FIX touches only the two mocks). Then FIX the
+  Reader items, REVIEW FINAL, assembly. Guard on `hist`.
+- Waiting for the 5-hour reset at 19:10 Nov 12 (Istanbul): 5-hour at 94%, weekly 59%.
 - 9489 syllabus version 3 (Oct 2026) changes only a weblink; FACTS.md noted.
 - Sensitive topics (civil rights, apartheid, terror): a Writer prompt says no slurs even in sources, violence without
   graphic detail, save chapters in parts (the first P31 Writer was stopped by a content filter before saving).
