@@ -38,13 +38,22 @@ for k, n in lens:
 print("extract words", lens)
 
 # Section A dates
+# Extract A (the timetable extract): the order of events and the gaps between them
 eq("Sarajevo to blank cheque (days)", (date(1914, 7, 5) - date(1914, 6, 28)).days, 7)
-eq("Austrian ultimatum to Britain's war (days)", (date(1914, 8, 4) - date(1914, 7, 23)).days, 12)
+eq("Sarajevo to Austrian ultimatum, 23 July (days)", (date(1914, 7, 23) - date(1914, 6, 28)).days, 25)
+eq("ultimatum 23 July, reply 25 July: 48 hours", (date(1914, 7, 25) - date(1914, 7, 23)).days * 24, 48)
+eq("Austria's declaration on Serbia, 28 July, is 30 days after Sarajevo", (date(1914, 7, 28) - date(1914, 6, 28)).days, 30)
+eq("Russian partial (29 July) to general (30 July) mobilisation (days)", (date(1914, 7, 30) - date(1914, 7, 29)).days, 1)
+eq("Russian general mobilisation ordered 30 July, effective 31 July (days)", (date(1914, 7, 31) - date(1914, 7, 30)).days, 1)
+eq("German ultimatums 31 July to declaration on Russia 1 August (days)", (date(1914, 8, 1) - date(1914, 7, 31)).days, 1)
+eq("German ultimatums 31 July to declaration on France 3 August (days)", (date(1914, 8, 3) - date(1914, 7, 31)).days, 3)
+eq("Belgian ultimatum 2 August to Britain's war 4 August (days)", (date(1914, 8, 4) - date(1914, 8, 2)).days, 2)
+eq("Sarajevo to Russian general mobilisation (days)", (date(1914, 7, 30) - date(1914, 6, 28)).days, 32)
+eq("Schlieffen's memorandum 1905 to 1914 (years)", 1914 - 1905, 9)
+eq("about six weeks in days", 6 * 7, 42)
 eq("Treaty of London 1839 to 1914 (years)", 1914 - 1839, 75)
-eq("War Council 1912 to war 1914 (years)", 1914 - 1912, 2)
-eq("Russian entry to US entry: 4 Aug 1914 to 6 Apr 1917 (days)", (date(1917, 4, 6) - date(1914, 8, 4)).days, 976)
-# Haldane Mission February 1912; Russia's Great Programme 1913, completed about 1917: 4 years
-eq("Great Programme years", 1917 - 1913, 4)
+eq("War Council 8 December 1912 to the Eastern plan dropped 1913 to war 1914 (years)", (1913 - 1912, 1914 - 1913), (1, 1))
+eq("Willy-Nicky telegrams 29 July to 1 August (days)", (date(1914, 8, 1) - date(1914, 7, 29)).days, 3)
 
 # Section B dates and numbers
 eq("Vel d'Hiv: 16-17 July 1942 is two days", (date(1942, 7, 17) - date(1942, 7, 16)).days + 1, 2)

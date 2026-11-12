@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-12 · REVIEW P43, P44, P45, P46 · 2 open FIX items (hist.mock.p4: six questions repeat hist.mixed.a2 Paper 4 questions, one also close to specimen Q6; hist.mock.p3: Section A extract repeats mixed.a2 extract B's interpretation). Fixed: Johnson veto wording (infinitely; colored and against), Old/New Style notes (mixed.as, mock.p2), mock.p1 schemes quoting words not in the printed extracts (Azema; Altgeld C extended from the real letter), Cordeliers and Roland dating, mark-box instructions, 1876 disputed votes, League and Spain, Marshall lever dating, timings in mixed.a2, What-to-try text in exam.p2/p4. hist-levels FIX verified in the preview for P1-P4; web checks done; COURSE.md mock rule added.
+Last: 2026-11-12 · FIX · hist.mock.p4: Q2, Q4-Q8 replaced by new questions on KQs outside mixed.a2 and the specimen (Stalin collective security, Truman 1948 win, women's movement 1963-74, Carter human rights, Gorbachev reforms and the crisis, 1948 SA election), full schemes, checks rewritten; hist.mock.p3: new original Section A extract (war by timetable, 447 words) with new scheme, checks updated
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
