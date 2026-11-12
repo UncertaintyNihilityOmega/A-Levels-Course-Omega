@@ -108,7 +108,7 @@ Roosevelt's own approach was the thing that most contemporaries remembered. He b
 
 The elections of 1932 gave the Democrats large majorities in both houses of the 73rd Congress, which met in a special session from 9 March 1933. Roosevelt could also count on a group of progressive Republicans, such as Senators George Norris of Nebraska and Robert La Follette Jr. of Wisconsin, who often voted with him. Many members were new, frightened by the crisis and anxious to be seen doing something.
 
-Two warnings. First, Congress was not a rubber stamp. It amended or even began some of the most important measures: Senator Carter Glass and Representative Henry Steagall wrote the Banking Act, and Steagall insisted on deposit insurance against Roosevelt's own doubts. Norris had fought for years for public power on the Tennessee River; the Senate passed a thirty-hour-week bill that pushed the administration to produce its own industrial plan, which became the NIRA. Second, the Democratic majority included many conservative Southerners. They chaired most of the important committees through the seniority system, and they were willing to support emergency action in 1933 but not always a permanent expansion of federal power. This is the root of several later conflicts: see the section on critics below.
+Two warnings. First, Congress was not a rubber stamp. It amended or even began some of the most important measures: Senator Carter Glass and Representative Henry Steagall wrote the Banking Act, and Steagall insisted on deposit insurance against Roosevelt's own doubts. Norris had fought for years for public power on the Tennessee River; the Senate passed a thirty-hour-week bill that pushed the administration to produce its own industrial plan, which became the NIRA. Second, the Democratic majority included many conservative Southerners. They chaired most of the important committees through the seniority system (the longest-serving member of the majority party chaired each committee), and they were willing to support emergency action in 1933 but not always a permanent expansion of federal power. This is the root of several later conflicts: see the section on critics below.
 
 ## The First Hundred Days, 9 March to 16 June 1933
 
@@ -148,7 +148,7 @@ The syllabus distinguishes between what Roosevelt did on his own authority and w
 - **Executive Order 6102** (5 April 1933): citizens must hand in gold coin and bullion; in April the government embargoed gold exports, which meant leaving the gold standard
 - Fireside chats and regular **press conferences**, which let him set the news agenda
 - **Creating agencies and programmes by executive order**: for example the Civil Works Administration in November 1933, paid for out of PWA money
-- Appointing the people who ran the new bodies, which gave him patronage
+- Appointing the people who ran the new bodies, which gave him patronage (jobs to hand out as favours)
 :::
 :::col Congressional legislation (laws passed by Congress)
 - The Emergency Banking Act (9 March), Economy Act (20 March), CCC (31 March)
@@ -167,7 +167,9 @@ Two early decisions pointed in opposite directions.
 
 The **Economy Act** of 20 March 1933 was a conventional measure. Roosevelt had promised a balanced budget in the campaign, and Lewis Douglas persuaded him to try to cut $500 million from a federal budget of about $3.6 billion (about 14 per cent). It cut the salaries of federal employees and reduced veterans' benefits. It was a deflationary law passed in a depression, and many Democrats opposed it. It was soon overtaken by events: from May Roosevelt began to spend on relief.
 
-The **gold standard** decision was a break with orthodoxy. By requiring the surrender of gold in April 1933 and halting its export, Roosevelt took the dollar off gold. In June Congress cancelled the "gold clauses" in contracts. After some experiments in raising the gold price, the **Gold Reserve Act** (30 January 1934) fixed the price at $35 an ounce instead of $20.67, which cut the dollar's gold content to about 59 per cent of its former value. The effect was to make the dollar cheaper, stop the fall in prices, and allow the money supply to grow. Several economists, notably Christina Romer in her article "What Ended the Great Depression?" (1992), argue that this monetary change, together with the gold that flowed into the United States from 1934, did more for recovery than any of the agencies. That is a standard point in the debate: the policies that mattered most for recovery may not have been the ones that got most publicity.
+To follow the gold decisions you need the idea behind them. Until 1933 a dollar was a fixed weight of gold: $20.67 bought an ounce, and anyone could swap paper dollars for gold. That tied the amount of money to the gold the government held, and it limited how much money the Federal Reserve could create, because it had to hold gold in reserve against it. If the government raises the price of gold in dollars, each dollar stands for less gold: the dollar is cheaper, the same gold can support more money, and prices can rise. "Gold clauses" were promises in contracts, such as bonds and mortgages, to repay in dollars of the old gold weight. If the dollar was cheapened, those clauses would have forced debtors to pay back many more dollars, so Congress cancelled them.
+
+The **gold standard** decision was a break with orthodoxy. By requiring the surrender of gold in April 1933 (Executive Order 6102 made citizens hand in gold coin and bullion, so that the government held the gold) and halting its export, Roosevelt took the dollar off gold. In June Congress cancelled the "gold clauses" in contracts. After some experiments in raising the gold price, the **Gold Reserve Act** (30 January 1934) fixed the price at $35 an ounce instead of $20.67, which cut the dollar's gold content to about 59 per cent of its former value. The effect was to make the dollar cheaper, stop the fall in prices, and allow the money supply to grow. Several economists, notably Christina Romer in her article "What Ended the Great Depression?" (1992), argue that this monetary change, together with the gold that flowed into the United States from 1934, did more for recovery than any of the agencies. That is a standard point in the debate: the policies that mattered most for recovery may not have been the ones that got most publicity.
 
 ### Jobs and relief: the CCC, FERA and the CWA
 
@@ -183,7 +185,7 @@ The farm crisis was as severe as the banking crisis (see the previous chapter). 
 
 Since 1933's crops were already planted, the AAA's first act was shocking. Cotton farmers were paid to plough up about ten million acres of growing crop, and some six million piglets and sows were slaughtered. Newspapers, and the hungry, noticed the waste. Wallace defended it as a harsh necessity.
 
-Two more laws supported farmers: the Farm Credit Act and the Emergency Farm Mortgage Act helped to refinance farm debts and ease foreclosures.
+Two more laws supported farmers: the Farm Credit Act and the Emergency Farm Mortgage Act helped to refinance farm debts and ease foreclosures. (A mortgage is a loan to buy land or a house, with the property as security; to refinance is to replace a loan with a longer, cheaper one.)
 
 ### The Tennessee Valley Authority
 
@@ -191,7 +193,7 @@ The **TVA** (18 May 1933) built dams on the Tennessee River in seven poor Southe
 
 ### Regulating banking and finance
 
-The Hundred Days also began the regulation of finance. The **Securities Act** (27 May 1933) required companies selling shares to the public to publish honest information ("truth in securities"). The **Banking Act** (16 June 1933), usually called **Glass–Steagall**, did two things: it separated commercial banking (taking deposits and lending) from investment banking (dealing in shares), because the Pecora hearings in the Senate had shown how banks had mixed the two in the 1920s; and it set up the **Federal Deposit Insurance Corporation (FDIC)**, which from 1 January 1934 insured deposits up to $2,500 at member banks. Roosevelt had doubted deposit insurance; he feared it would put a premium on bad banking. Congress and public opinion overruled him. The **Home Owners' Loan Corporation** (13 June 1933) bought mortgages that borrowers could not pay and replaced them with long-term, cheaper loans; in three years it refinanced about a million homes.
+The Hundred Days also began the regulation of finance. The **Securities Act** (27 May 1933) required companies selling shares to the public to publish honest information ("truth in securities"). The **Banking Act** (16 June 1933), usually called **Glass–Steagall** (not the earlier Glass–Steagall Act of February 1932, which only made it easier for the Federal Reserve to expand credit), did two things: it separated commercial banking (taking deposits and lending) from investment banking (dealing in shares), because the Pecora hearings in the Senate had shown how banks had mixed the two in the 1920s; and it set up the **Federal Deposit Insurance Corporation (FDIC)**, which from 1 January 1934 insured deposits up to $2,500 at member banks. Roosevelt had doubted deposit insurance; he feared it would put a premium on bad banking. Congress and public opinion overruled him. The **Home Owners' Loan Corporation** (13 June 1933) bought mortgages that borrowers could not pay and replaced them with long-term, cheaper loans; in three years it refinanced about a million homes.
 
 ### Industry: the NIRA, the NRA and the PWA
 
@@ -214,7 +216,7 @@ Newspapers called the new bodies the "alphabet agencies" because they were known
 |---|---|---|---|---|
 | FDIC (Banking Act) | June 1933; cover from 1 Jan 1934 | Insure deposits ($2,500 at first) | Very successful: runs on banks ended | Permanent |
 | CCC | March 1933 | Jobs for young men on conservation | Popular; about 3 million men; segregated; no women | Closed 1942 |
-| FERA | May 1933 | Federal grants for state relief ($500m to start) | First national relief; gave poor states money; mostly direct relief | Replaced by the WPA in 1935 |
+| FERA | May 1933 | Federal grants for state relief ($500m to start) | First national relief; gave poor states money; mostly direct relief | Replaced by the WPA (Works Progress Administration, taught in the next chapter) in 1935 |
 | CWA | Nov 1933 | Winter jobs for about 4 million | Quick and popular; costly | Closed March 1934 |
 | AAA | May 1933 | Raise farm prices by cutting output | Farm income rose; landlords gained, tenants often lost | Processing tax struck down Jan 1936 |
 | TVA | May 1933 | Dams, power, flood control, regional planning | Success with power and floods; less with poverty | Permanent |
@@ -222,7 +224,7 @@ Newspapers called the new bodies the "alphabet agencies" because they were known
 | HOLC | June 1933 | Refinance home mortgages | About a million loans; saved many homes | Wound up in the 1950s |
 | NRA | June 1933 | Codes on wages, hours and prices | Mixed: spirit lifted, jobs and wages up a little, many complaints | Codes struck down May 1935 |
 | PWA | June 1933 | Large public works ($3.3bn) | Built bridges, dams, schools; spent slowly | Wound up in wartime |
-| FHA | June 1934 | Insure mortgages to revive building | Helped middle-class buyers; excluded many Black neighbourhoods | Permanent |
+| FHA (Federal Housing Administration) | June 1934 | Insure mortgages (promise lenders repayment if a borrower fails) to revive building | Helped middle-class buyers; excluded many Black neighbourhoods | Permanent |
 
 :::warn "First" and "Second" New Deal are historians' labels
 Roosevelt never used the terms. Historians divide the New Deal into a **First** (1933–34, emergency recovery and relief, with cooperation between government and business) and a **Second** (1935–38, welfare, labour rights and a heavier attack on wealth). The dates are blurred: the SEC and the Gold Reserve Act (1934) belong to the First; the Wagner Act and Social Security (1935) belong to the Second; the FHA (1934) and the WPA (1935) show how one set of ideas ran into the next. Do not write as if the New Deal changed overnight on 1 January 1935; write "the early New Deal" and "from 1935".
@@ -254,7 +256,7 @@ This was the most lasting success of the First New Deal.
 
 - **Banks.** The bank holiday and the Emergency Banking Act ended the panic. The FDIC stopped bank runs: in 1933 about 4,000 banks suspended business, but in each year after 1933 fewer than a hundred did. Glass–Steagall separated banking from share-dealing.
 - **The stock market.** After the Securities Act, the **Securities Exchange Act** of 6 June 1934 created the **Securities and Exchange Commission (SEC)** to police the stock exchanges, ban the worst forms of manipulation and insider dealing, and regulate how shares are bought on credit. Roosevelt appointed Joseph P. Kennedy, who had made money as a speculator in the 1920s, as the first chairman. His appointment was a clever choice: it reassured the business community that the SEC would not be hostile, and Kennedy proved an effective regulator.
-- **Mortgages.** HOLC and the FHA stabilised house prices and the home-lending market.
+- **Mortgages.** HOLC (the Home Owners' Loan Corporation) and the FHA (the Federal Housing Administration, which insured mortgage loans) stabilised house prices and the home-lending market.
 
 Business leaders protested at the SEC and the Securities Act, but the stock market did not collapse, as they had predicted; the SEC is still active. Reform, not recovery, was the achievement.
 
@@ -297,7 +299,7 @@ You can use this at AS to show that "how successful" depends on the criterion, b
 
 ## Critics and opponents of the New Deal
 
-Roosevelt's popularity in 1933 hid a growing opposition. Critics came from both sides, and the left and right attacked the New Deal for opposite reasons.
+Roosevelt's popularity in 1933 hid a growing opposition. Critics came from both sides, and the left and right attacked the New Deal for opposite reasons. (The diagram names Alf Landon, the Republican candidate who stood against Roosevelt in the 1936 election, described in the next chapter.)
 
 :::html
 <figure class="fig small"><svg viewBox="0 0 340 400" role="img" aria-label="Diagram of the critics of the New Deal. At the top, a band headed Critics from the Left, who said it did too little, with four boxes: Huey Long, Share Our Wealth; Father Coughlin, radio and the Union Party; Dr Townsend, a pension of 200 dollars a month; and the left parties, Socialists and Communists. An arrow points down to the centre box, Roosevelt's New Deal, 1933 to 36. An arrow points up to the centre box from a band at the bottom headed Critics from the Right, who said it did too much, with four boxes: Republicans and Hoover; Southern Democrats; business and the American Liberty League; and the press."><rect class="fp s-acc sw2" x="8" y="8" width="324" height="132" rx="6"/><text class="tl tb tc" x="170" y="27">Critics from the Left: too little</text><rect class="fm s-acc sw2" x="14" y="38" width="152" height="44" rx="5"/><text class="tl tb tc" x="90" y="56">Huey Long</text><text class="tl tc" x="90" y="73">Share Our Wealth</text><rect class="fm s-acc sw2" x="174" y="38" width="152" height="44" rx="5"/><text class="tl tb tc" x="250" y="56">Father Coughlin</text><text class="tl tc" x="250" y="73">radio; Union Party</text><rect class="fm s-acc sw2" x="14" y="88" width="152" height="44" rx="5"/><text class="tl tb tc" x="90" y="106">Dr Townsend</text><text class="tl tc" x="90" y="123">$200 a month</text><rect class="fm s-acc sw2" x="174" y="88" width="152" height="44" rx="5"/><text class="tl tb tc" x="250" y="106">Left parties</text><text class="tl tc" x="250" y="123">Thomas, Browder</text><line class="ln" x1="170" y1="146" x2="170" y2="174" marker-end="url(#ah)"/><rect class="fm2 s-acc sw2" x="60" y="178" width="220" height="44" rx="6"/><text class="tl tb tc" x="170" y="196">Roosevelt's New Deal</text><text class="tl tc" x="170" y="213">1933–36</text><line class="ln" x1="170" y1="254" x2="170" y2="226" marker-end="url(#ah)"/><rect class="fp s-acc sw2" x="8" y="258" width="324" height="132" rx="6"/><text class="tl tb tc" x="170" y="277">Critics from the Right: too much</text><rect class="fm s-acc sw2" x="14" y="288" width="152" height="44" rx="5"/><text class="tl tb tc" x="90" y="306">Republicans</text><text class="tl tc" x="90" y="323">Hoover, Landon</text><rect class="fm s-acc sw2" x="174" y="288" width="152" height="44" rx="5"/><text class="tl tb tc" x="250" y="306">Southern Democrats</text><text class="tl tc" x="250" y="323">Glass, Byrd</text><rect class="fm s-acc sw2" x="14" y="338" width="152" height="44" rx="5"/><text class="tl tb tc" x="90" y="356">Business</text><text class="tl tc" x="90" y="373">Liberty League</text><rect class="fm s-acc sw2" x="174" y="338" width="152" height="44" rx="5"/><text class="tl tb tc" x="250" y="356">The press</text><text class="tl tc" x="250" y="373">Hearst, Tribune</text></svg><figcaption>Critics from both sides. The Left said the New Deal did too little for the poor; the Right said it did too much and threatened liberty, property and the Constitution.</figcaption></figure>
@@ -312,7 +314,7 @@ Roosevelt's popularity in 1933 hid a growing opposition. Critics came from both 
 **Father Charles Coughlin.** A Roman Catholic priest at Royal Oak, Michigan, Coughlin used a weekly radio show to reach a huge audience: estimates run to tens of millions. He began by backing Roosevelt ("Roosevelt or ruin") and attacking bankers, and called for the nationalisation of banks and key industries and for silver-based inflation. In 1934 he founded the National Union for Social Justice. By 1935 he had broken with Roosevelt, accusing him of serving the bankers, and in 1936 his movement joined with Townsend's followers and Long's to back a third-party candidate, William Lemke of North Dakota, for the Union Party. Lemke got about 2 per cent of the vote. Coughlin's later radio talks became openly anti-Semitic, and his career collapsed in 1939–42. In 1935 he was a serious worry for Roosevelt because he spoke to the same working-class Catholic voters in the cities whom the Democrats needed.
 
 **Senator Huey Long.** Long was the most dangerous. As Governor of Louisiana (1928–32) he had built roads, hospitals and schools and ruled the state almost as a dictator. As a Senator from 1932 he broke with Roosevelt, who he said had not done enough. In February 1934 he launched the **Share Our Wealth** movement in a national radio broadcast, "Every Man a King". In its 1935 form, as he set it out in a speech, the plan would:
-- limit fortunes by a capital levy, so that no one would own more than a few million dollars;
+- limit fortunes by a capital levy (a one-off tax on large fortunes), so that no one would own more than a few million dollars;
 - limit the amount anyone could earn or inherit in a year to $1 million;
 - give every family a home with a radio and a car, free of debt;
 - shorten the working week to thirty hours and the year to eleven months;
@@ -326,7 +328,7 @@ It is not Roosevelt or ruin; it is Roosevelt's ruin. … We ran Mr. Roosevelt fo
 *Shortened from a radio address by Senator Huey P. Long, January 1935, printed in The Annals of America, vol. 15 (Encyclopaedia Britannica, 1968). The phrases are Long's own, in the order he spoke them.*
 :::
 
-**The effect of the Left.** The critics from the Left never won an election, and Long's death and the weak showing of the Union Party in 1936 ended their political threat. But they pushed Roosevelt to move left in 1935 (the Wealth Tax, Social Security and the Wagner Act) and they kept the pressure on the question of poverty in old age.
+**The effect of the Left.** The critics from the Left never won an election, and Long's death and the weak showing of the Union Party in 1936 ended their political threat. But they pushed Roosevelt to move left in 1935 (the Wealth Tax of 1935, which raised taxes on the largest incomes and fortunes, Social Security and the Wagner Act, all taught in the next chapter) and they kept the pressure on the question of poverty in old age.
 
 ### Critics from the Right
 
@@ -358,6 +360,8 @@ In 1933 the Supreme Court had nine justices, most of them appointed by Republica
 The four conservatives, **Willis Van Devanter, James McReynolds, George Sutherland and Pierce Butler**, were nicknamed the "Four Horsemen" (of the Apocalypse). The three liberals were **Louis Brandeis, Harlan Stone and Benjamin Cardozo**. **Chief Justice Charles Evans Hughes** and **Justice Owen Roberts** held the balance. The Court was not simply hostile: it upheld the Minnesota mortgage moratorium (1934), Roosevelt's gold policy in the gold-clause cases (February 1935) and the TVA (1936). But on several central laws it ruled against him.
 
 ### The key cases
+
+Several cases turn on the "commerce power". The Constitution lets Congress regulate trade "among the several States", which is called interstate commerce. The Court held that making or selling goods inside one state was "local", not interstate commerce, and so was left to the state and beyond the reach of Congress.
 
 | Case and date | Law | Result | Reason |
 |---|---|---|---|
@@ -606,7 +610,7 @@ A: Support: C shows a real break (the government raised the price of gold, took 
 Q: [20 marks] ★★★ To what extent were critics from the Right more of a threat to the New Deal than critics from the Left up to 1936?
 H: Set a criterion: threat to votes, to Roosevelt's policy, or to the institutions he relied on?
 H: Compare the timing: when did each group peak?
-A: Right: the Liberty League, business hostility and the "capital strike", Southern Democrats' control of committees, Hoover and Republicans, a hostile press, and above all the Supreme Court's decisions in 1935–36. Left: Long, Coughlin and Townsend had mass followings in 1934–35 and might have taken millions of votes; Communists and Socialists were small. Evidence: Roosevelt won by a landslide in 1936 with Lemke getting about 2 per cent; Long was dead; the Court struck down the NRA and AAA. Level 5 judges, e.g., that the Left was a bigger danger to Roosevelt's re-election in 1935, but the Right was a greater threat to the New Deal itself, because it could and did use the Court and Congress to stop policy.
+A: Right: the Liberty League, business hostility and the "capital strike" (businesses refusing to invest), Southern Democrats' control of committees, Hoover and Republicans, a hostile press, and above all the Supreme Court's decisions in 1935–36. Left: Long, Coughlin and Townsend had mass followings in 1934–35 and might have taken millions of votes; Communists and Socialists were small. Evidence: Roosevelt won by a landslide in 1936 with Lemke getting about 2 per cent; Long was dead; the Court struck down the NRA and AAA. Level 5 judges, e.g., that the Left was a bigger danger to Roosevelt's re-election in 1935, but the Right was a greater threat to the New Deal itself, because it could and did use the Court and Congress to stop policy.
 :::
 
 :::try Stretch for A*

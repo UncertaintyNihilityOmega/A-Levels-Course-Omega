@@ -73,6 +73,7 @@ eq("Schechter to Wagner Act (days)", (date(1935, 7, 5) - date(1935, 5, 27)).days
 eq("Wagner Act to Social Security (days)", (date(1935, 8, 14) - date(1935, 7, 5)).days, 40)
 eq("Long shot to death", (date(1935, 9, 10) - date(1935, 9, 8)).days, 2)
 eq("weekday of 5 July 1935 (Friday=4)", date(1935, 7, 5).weekday(), 4)
+eq("weekday of Black Sunday, 14 April 1935 (Sunday=6)", date(1935, 4, 14).weekday(), 6)
 eq("weekday of Madison Square Garden speech (Saturday=5)", date(1936, 10, 31).weekday(), 5)
 eq("recession length May 1937 to June 1938 (months)", (1938 - 1937) * 12 + (6 - 5), 13)
 eq("Parrish to Jones & Laughlin (days)", (date(1937, 4, 12) - date(1937, 3, 29)).days, 14)

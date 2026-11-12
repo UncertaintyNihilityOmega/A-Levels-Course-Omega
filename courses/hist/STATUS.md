@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-12 · FIX · Reader items hist.eu.russia.3 to hist.us.gilded.2 closed: terms glossed at first use, source boxes and stretch questions fixed, chapter references linked
+Last: 2026-11-12 · FIX · Reader items hist.us.gilded.3 to hist.int.empire.2 closed: terms glossed at first use, gold standard, Dust Bowl and 1937-38 recession mechanisms explained, cartoon/photo notes, Glass-Steagall 1932/1933 and Banking Act 1935 distinguished; Chapter N and FACTS.md items left for the course-wide sweep
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
