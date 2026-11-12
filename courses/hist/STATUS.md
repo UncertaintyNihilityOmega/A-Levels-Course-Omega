@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-12 · WRITE P44 · hist.mixed.as 13,077 words (3 Paper 1 sets: Russia, Reconstruction, League; 9 Paper 2 topics; recall, quiz); hist.mixed.a2 13,315 words (6 Paper 3 practice extracts, 27 Paper 4 questions, recall, quiz, 2 weak paragraphs); no widgets; check and phone pass; reviewer: see notes in packages/P44.md (extract labels, reused chapter sources)
+Last: 2026-11-12 · WRITE P46 · hist.mock.p3 (3 originals extracts, about 6,350 words) and hist.mock.p4 (9 questions with schemes, about 6,600 words); no widgets; notes in packages/P46.md Writer's notes: Bulgaria 11,000+ and the date of the US Marshall threat to the Dutch to double-check
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -50,7 +50,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P43: written 2026-11-12
 - P44: written 2026-11-12
 - P45: writing 2026-11-12
-- P46: open
+- P46: written 2026-11-12
 - P47: reviewed 2026-11-11
 - READER: open
 - FINAL: open

@@ -12,7 +12,7 @@
 - CONNECTIONS B done (18 Paper 4 chapters): every written topic chapter now has a Connections box. Writer prompts
   must add: P36 hist.d.safrica.1 the Bantu Education Act 1953; P39 hist.d.malaysia.4 the destruction of the PKI
   1965–66 (boxes link there for these).
-- P1–P42 and P47 written and reviewed; FIX done; P43 written. Running: Writers **P44**, **P45**. Then P46;
+- P1–P42 and P47 written and reviewed; FIX done; P43, P44 written. Running: Writers **P45**, **P46**. Then
   REVIEW P43–P46 (Opus, with the hist-preview server, port 5111). Guard on `hist`.
 - 9489 syllabus version 3 (Oct 2026) changes only a weblink; FACTS.md noted.
 - Sensitive topics (civil rights, apartheid, terror): a Writer prompt says no slurs even in sources, violence without
