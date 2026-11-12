@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-12 · REVIEW P35, P36, P37, P38 · 6 small fixes made, 0 open items: malaysia.1 KL fell 11 Jan 1942; malaysia.2 Karl Hack work added, unsourced 'Cuba of the East' removed; safrica.1 Tomlinson dated Oct 1954/summary 1955; safrica.2 Soweto chart label and source line, Sharpeville capital-flight overstatement. Web-confirmed key facts and the Writers' memory lists; Bantu Education Act 1953 fully covered in safrica.1; no slurs, violence non-graphic; all figures shot light/dark/phone; check and phone pass
+Last: 2026-11-12 · WRITE P40 · hist.overview (4,011 words, guide), hist.f.basics (8,866 words, pre; 7 eg, 18 try, 10 quiz, 3 SVGs), hist.f.choose (3,041 words, guide); all pass check and phone; no new widget (planner shared, fails its own dark/phone contrast probe at 4.50 < 4.5: engine, see REQUESTS.md); verified/memory facts listed at the end of packages/P40.md
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -44,7 +44,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P37: reviewed 2026-11-12
 - P38: reviewed 2026-11-12
 - P39: writing 2026-11-12
-- P40: writing 2026-11-12
+- P40: written 2026-11-12
 - P41: open
 - P42: open
 - P43: open
