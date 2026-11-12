@@ -8,6 +8,11 @@ interactive widgets, paper guides and full mock papers, plus a study roadmap and
 
 **Offline:** download the repository, run `npm install` and `node engine/build.js`, then open `site/index.html`.
 
+> **Written by Claude.** This whole project (chapters, questions, mark schemes, widgets, the site itself) is written
+> by Claude, Anthropic's AI. Claude can make mistakes. If you find one (a wrong fact, a wrong answer, a confusing
+> explanation, a broken page), I would be happy if you tell me: open an
+> [issue](https://github.com/UncertaintyNihilityOmega/A-Levels-Course-Omega/issues) with the page and what is wrong.
+
 ## Courses
 
 | Course | Syllabus | State |
