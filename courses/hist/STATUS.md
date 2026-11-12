@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-12 · WRITE P46 · hist.mock.p3 (3 originals extracts, about 6,350 words) and hist.mock.p4 (9 questions with schemes, about 6,600 words); no widgets; notes in packages/P46.md Writer's notes: Bulgaria 11,000+ and the date of the US Marshall threat to the Dutch to double-check
+Last: 2026-11-12 · WRITE P45 · hist.mock.p1 (8,854 words; three sections, all-new real sources, 40 marks answer 1) and hist.mock.p2 (9,482 words; six questions of 30, 60 marks answer 2); no widgets; check and phone pass; see Writer's notes in packages/P45.md for source provenance and facts to double-check
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -49,7 +49,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P42: reviewed 2026-11-12
 - P43: written 2026-11-12
 - P44: written 2026-11-12
-- P45: writing 2026-11-12
+- P45: written 2026-11-12
 - P46: written 2026-11-12
 - P47: reviewed 2026-11-11
 - READER: open
