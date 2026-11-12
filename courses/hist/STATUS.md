@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-11 · WRITE P38 · hist.d.malaysia.1 (12,967 words) and hist.d.malaysia.2 (12,965 words); no new widgets (hist-timeline and hist-chart used, two hand SVGs in data/); check and phone clean; reviewer notes (verified online vs from memory) at the end of packages/P38.md
+Last: 2026-11-12 · REVIEW P35, P36, P37, P38 · 6 small fixes made, 0 open items: malaysia.1 KL fell 11 Jan 1942; malaysia.2 Karl Hack work added, unsourced 'Cuba of the East' removed; safrica.1 Tomlinson dated Oct 1954/summary 1955; safrica.2 Soweto chart label and source line, Sharpeville capital-flight overstatement. Web-confirmed key facts and the Writers' memory lists; Bantu Education Act 1953 fully covered in safrica.1; no slurs, violence non-graphic; all figures shot light/dark/phone; check and phone pass
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -39,12 +39,12 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P32: reviewed 2026-11-11
 - P33: reviewed 2026-11-11
 - P34: reviewed 2026-11-11
-- P35: written 2026-11-11
-- P36: written 2026-11-11
-- P37: written 2026-11-11
-- P38: written 2026-11-11
-- P39: open
-- P40: open
+- P35: reviewed 2026-11-12
+- P36: reviewed 2026-11-12
+- P37: reviewed 2026-11-12
+- P38: reviewed 2026-11-12
+- P39: writing 2026-11-12
+- P40: writing 2026-11-12
 - P41: open
 - P42: open
 - P43: open
