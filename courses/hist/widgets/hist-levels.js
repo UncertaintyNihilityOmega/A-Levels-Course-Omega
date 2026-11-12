@@ -4,8 +4,8 @@
    data-start (optional): the part shown first.
    The reader ticks what an answer does; the widget shows the best-fit level, the mark range, the descriptor and what
    would take the answer up one level. Features are taken from the level descriptors in the 2027 specimen mark schemes.
-   A level counts as "met" when the reader has ticked at least `need` of its features (default: all of them);
-   the highest level met is the best fit. This is a guide: examiners use best fit. */
+   A level counts as "met" when the reader has ticked at least `need` of its features (default: all of them) AND the
+   level below it is met too (the lowest level needs only its own features); the highest level met is the best fit. This is a guide: examiners use best fit. */
 (function () {
   'use strict';
 
@@ -249,14 +249,28 @@
   // ticks: array of arrays of booleans, ticks[li][fi] (li = index in part.levels, top level first)
   function emptyTicks(part) { return part.levels.map(function (lv) { return lv.f.map(function () { return false; }); }); }
 
-  // best-fit level: the highest level whose required features are ticked. Returns the index in part.levels, or -1 for Level 0
+  // a level's own features: enough of them ticked (its `need`)
+  function ownMet(part, ticks, i) {
+    var count = 0;
+    for (var j = 0; j < part.levels[i].f.length; j++) if (ticks[i] && ticks[i][j]) count++;
+    return count >= need(part.levels[i]);
+  }
+
+  // best-fit level: the highest level that is met, where a level counts as met only when its own features are ticked
+  // AND the level below it is met too (the lowest level needs only its own). Returns the index in part.levels, or -1 for Level 0
   function bestFit(part, ticks) {
-    for (var i = 0; i < part.levels.length; i++) {
-      var count = 0;
-      for (var j = 0; j < part.levels[i].f.length; j++) if (ticks[i] && ticks[i][j]) count++;
-      if (count >= need(part.levels[i])) return i;
+    var best = -1;
+    for (var i = part.levels.length - 1; i >= 0; i--) {
+      if (!ownMet(part, ticks, i)) break;
+      best = i;
     }
-    return -1;
+    return best;
+  }
+
+  // true when features of a level above index ni are ticked enough but cannot count because level ni (or one below) is not met
+  function blockedAbove(part, ticks, ni) {
+    for (var i = 0; i < ni; i++) if (ownMet(part, ticks, i)) return true;
+    return false;
   }
 
   // marks [min, max] for a level index and quality key (specimen guidance: highest / middle / lowest mark)
@@ -308,7 +322,7 @@
     return { keys: keys, bad: bad };
   }
 
-  var core = { PARTS: PARTS, QUALITY: QUALITY, partByKey: partByKey, emptyTicks: emptyTicks, bestFit: bestFit, markRange: markRange, nextUp: nextUp, featureOrder: featureOrder, parseParts: parseParts, need: need };
+  var core = { PARTS: PARTS, QUALITY: QUALITY, partByKey: partByKey, emptyTicks: emptyTicks, bestFit: bestFit, markRange: markRange, nextUp: nextUp, featureOrder: featureOrder, blockedAbove: blockedAbove, parseParts: parseParts, need: need };
   try { W.__histLevelsCore = core; } catch (e) { /* the helper object is only a test hook */ }
 
   W.register('hist-levels', function (el, opts) {
@@ -455,6 +469,7 @@
         var lead = nx.anyOf
           ? 'To reach Level ' + nx.level.n + ' (' + rangeDash(nx.level.lo, nx.level.hi) + ') the answer needs ' + (nx.still === 1 ? 'at least one' : nx.still) + ' of:'
           : 'To reach Level ' + nx.level.n + ' (' + rangeDash(nx.level.lo, nx.level.hi) + ') the answer must also:';
+        if (blockedAbove(part, st.ticks, nx.index)) lead = 'Features ticked in higher levels do not count until the level below them is met. ' + lead;
         upHead.textContent = lead;
         var show = nx.anyOf ? nx.level.f : nx.missing;
         show.forEach(function (t) { upList.appendChild(mk('li', { text: t })); });

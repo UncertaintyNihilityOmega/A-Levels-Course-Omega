@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-12 · REVIEW P39, P40, P41, P42 · 1 open item (hist-levels: higher level should need the level below); fixed Bülow extract order/cuts, Anglo-German Declaration wording, Carnegie 'agent and trustee', malaysia.4 tribunal date and well, malaysia.3 Partindo caption, overview US carry-forward; syllabus v3 changes only a weblink (FACTS.md noted); widgets clicked and keyboard-tested
+Last: 2026-11-12 · WRITE P43 · hist.exam.p3 (7,615 words) and hist.exam.p4 (6,764 words): Paper 3 and 4 guides (format, tables, levels, method, labels, worked ladders, weak paragraphs, timing, quizzes); widget hist-levels used (p3a,p3b / p4a,p4b), probes clean; check and phone pass. Reviewer: see Writer's notes in packages/P43.md (WW1 dates, two Stalin-example points).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -47,8 +47,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P40: reviewed 2026-11-12
 - P41: reviewed 2026-11-12
 - P42: reviewed 2026-11-12
-- P43: open
-- P44: open
+- P43: written 2026-11-12
+- P44: writing 2026-11-12
 - P45: open
 - P46: open
 - P47: reviewed 2026-11-11

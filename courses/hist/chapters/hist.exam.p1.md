@@ -346,7 +346,7 @@ The best practice is a **real paper under real conditions**. Cambridge publishes
 <div class="widget" data-w="hist-levels" data-parts="p1a,p1b" data-start="p1a"></div>
 :::
 
-**What to try.** Choose part (a), tick "Describes or paraphrases the content of each source" and nothing else, and see Level 1. Then add the ticks that describe a Level 3 answer, and see what the widget says is still missing for Level 4. Do the same with part (b). Remember that examiners use best fit: the explorer is a guide to the descriptors, not an exact marking machine.
+**What to try.** Choose part (a), tick "Describes or paraphrases the content of each source" and nothing else, and see Level 1. Then tick the three Level 3 features: the best fit is still Level 1, because a level only counts when the level below it is met too, so add one Level 2 feature and watch it jump to Level 3, and see what the widget says is still missing for Level 4. Do the same with part (b). Remember that examiners use best fit: the explorer is a guide to the descriptors, not an exact marking machine.
 
 ## Quiz
 

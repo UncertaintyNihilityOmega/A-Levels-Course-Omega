@@ -44,17 +44,25 @@ core.PARTS.forEach(function (p) {
   assert.strictEqual(prevLo, 1, p.key + ' bottom level starts at 1');
 });
 
-// --- logic: ticking exactly the features of level L gives level L; nothing gives Level 0 ---
+// --- logic: ticking the features of level L and of every level below it gives level L; nothing gives Level 0 ---
 core.PARTS.forEach(function (p) {
   let t = core.emptyTicks(p);
   assert.strictEqual(core.bestFit(p, t), -1, p.key + ' nothing ticked');
   p.levels.forEach(function (lv, li) {
     t = core.emptyTicks(p);
-    for (let j = 0; j < core.need(lv); j++) t[li][j] = true;
+    for (let k = li; k < p.levels.length; k++) for (let j = 0; j < core.need(p.levels[k]); j++) t[k][j] = true;
     assert.strictEqual(core.bestFit(p, t), li, p.key + ' level ' + lv.n + ' met');
+    // the same ticks without the level below: a level above the lowest does not count alone
+    if (li < p.levels.length - 1) {
+      const t2 = core.emptyTicks(p);
+      for (let j = 0; j < core.need(lv); j++) t2[li][j] = true;
+      assert.strictEqual(core.bestFit(p, t2), -1, p.key + ' level ' + lv.n + ' alone is not met');
+      assert(core.blockedAbove(p, t2, p.levels.length - 1), p.key + ' blocked hint');
+    }
     // one fewer than needed does not meet it (falls to a lower level or 0)
     if (core.need(lv) >= 1) {
       t = core.emptyTicks(p);
+      for (let k = li + 1; k < p.levels.length; k++) for (let j = 0; j < core.need(p.levels[k]); j++) t[k][j] = true;
       for (let j = 0; j < core.need(lv) - 1; j++) t[li][j] = true;
       assert(core.bestFit(p, t) > li || core.bestFit(p, t) === -1, p.key + ' L' + lv.n + ' not met with one missing');
     }
@@ -80,12 +88,25 @@ t[1][0] = true; t[1][1] = true;                       // two of three Level 3 fe
 let nu = core.nextUp(p1a, t, core.bestFit(p1a, t));   // best fit is Level 0 -> next is Level 1
 assert.strictEqual(core.bestFit(p1a, t), -1);
 assert.strictEqual(nu.level.n, 1);
-t[1][2] = true;                                        // Level 3 met
+t[1][2] = true;                                        // all of Level 3, but Level 2 and Level 1 are not met: still Level 0
+assert.strictEqual(core.bestFit(p1a, t), -1);
+t[2][0] = true; t[3][0] = true;                        // Level 2 (need 1) and Level 1 (need 1) met -> Level 3
+assert.strictEqual(core.bestFit(p1a, t), 1);
 nu = core.nextUp(p1a, t, core.bestFit(p1a, t));
 assert.strictEqual(nu.level.n, 4);
 assert.strictEqual(nu.missing.length, 2);
 t[0][0] = true; t[0][1] = true;
 assert.strictEqual(core.nextUp(p1a, t, core.bestFit(p1a, t)), null);
+
+// the reported case: P1 (a) with only "develops the comparison" and "explains why" ticked is Level 0, not Level 4
+t = core.emptyTicks(p1a);
+t[0][0] = true; t[0][1] = true;
+assert.strictEqual(core.bestFit(p1a, t), -1);
+t[3][0] = true;                                        // add only the lowest-level feature: Level 1 met, Levels 2 and 3 not
+assert.strictEqual(core.bestFit(p1a, t), 3);
+t[2][1] = true;                                        // Level 2 "only asserts" ticked: Level 3 still unmet
+assert.strictEqual(core.bestFit(p1a, t), 2);
+assert.strictEqual(core.blockedAbove(p1a, t, 1), true);
 
 // --- feature order is stable and complete ---
 core.PARTS.forEach(function (p) {
@@ -120,6 +141,14 @@ labels.forEach(function (lab) {
   const text = lab.children[1].textContent;
   if (l5.indexOf(text) >= 0) { const cb = lab.children[0]; cb.checked = true; cb.onchange(); }
 });
+assert(/Level 0/.test(api.text()), api.text());   // Level 5 features alone do not count: the levels below are not met
+// now the features each lower level needs (every level above the lowest needs the one below it)
+labels.forEach(function (lab) {
+  const text = lab.children[1].textContent;
+  p1b.levels.slice(1).forEach(function (lv) {
+    if (lv.f.slice(0, core.need(lv)).indexOf(text) >= 0) { const cb = lab.children[0]; cb.checked = true; cb.onchange(); }
+  });
+});
 assert(/^Level 5 · 23 to 23|^Level 5 · /.test(api.text()), api.text());
 assert(/Level 5 · 21 to 25|Level 5 · 22 to 24/.test(api.text()), api.text());
 // switch part by clicking its tab, then quality
@@ -131,6 +160,8 @@ assert(/Level 0/.test(api.text()));
 const q = find(el, function (n) { return n.tag === 'button' && n.textContent === 'Convincingly meets it'; })[0];
 q.onclick();
 api.tick(0, 0, true); api.tick(0, 1, true);
+assert(/^Level 0/.test(api.text()), api.text());              // top-level features alone do not count
+api.tick(1, 0, true); api.tick(1, 1, true); api.tick(1, 2, true); api.tick(2, 0, true); api.tick(3, 0, true);
 assert(/^Level 4 · 15 of 15/.test(api.text()), api.text());
 // bad attributes
 el = mount({ parts: 'zz,qq', start: 'nope' });
@@ -143,12 +174,12 @@ el = mount({ parts: 'p3a,p3b', start: 'p3a' });
 const ap = el.__histLevels;
 const pa = core.partByKey('p3a');
 ap.quality('convincingly');
-pa.levels[0].f.forEach(function (x, j) { ap.tick(0, j, true); });
+pa.levels.forEach(function (lv, li) { lv.f.forEach(function (x, j) { ap.tick(li, j, true); }); });
 const totalNodes = find(el, function (n) { return n.tag === 'p' && /question total/.test(n.textContent); });
 assert(/20 of 40/.test(totalNodes[0].textContent), totalNodes[0].textContent);
 ap.select('p3b');
 ap.quality('convincingly');
-core.partByKey('p3b').levels[0].f.forEach(function (x, j) { ap.tick(0, j, true); });
+core.partByKey('p3b').levels.forEach(function (lv, li) { lv.f.forEach(function (x, j) { ap.tick(li, j, true); }); });
 assert(/40 of 40/.test(totalNodes[0].textContent), totalNodes[0].textContent);
 // a single part of a pair offers no total
 el = mount({ parts: 'p3a', start: 'p3a' });
