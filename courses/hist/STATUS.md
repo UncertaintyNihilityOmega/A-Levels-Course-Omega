@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-12 · WRITE P40 · hist.overview (4,011 words, guide), hist.f.basics (8,866 words, pre; 7 eg, 18 try, 10 quiz, 3 SVGs), hist.f.choose (3,041 words, guide); all pass check and phone; no new widget (planner shared, fails its own dark/phone contrast probe at 4.50 < 4.5: engine, see REQUESTS.md); verified/memory facts listed at the end of packages/P40.md
+Last: 2026-11-12 · WRITE P39 · hist.d.malaysia.3 (13.7k words) and hist.d.malaysia.4 (17.5k words); no new widgets (hist-timeline, hist-chart, 2 SVGs); malaysia.4 has the PKI destruction section with estimates table and responsibility debate; reviewer: see Writer's notes in packages/P39.md for online-verified vs memory facts
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -43,7 +43,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P36: reviewed 2026-11-12
 - P37: reviewed 2026-11-12
 - P38: reviewed 2026-11-12
-- P39: writing 2026-11-12
+- P39: written 2026-11-12
 - P40: written 2026-11-12
 - P41: writing 2026-11-12
 - P42: open
