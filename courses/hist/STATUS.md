@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-12 · WRITE P39 · hist.d.malaysia.3 (13.7k words) and hist.d.malaysia.4 (17.5k words); no new widgets (hist-timeline, hist-chart, 2 SVGs); malaysia.4 has the PKI destruction section with estimates table and responsibility debate; reviewer: see Writer's notes in packages/P39.md for online-verified vs memory facts
+Last: 2026-11-12 · WRITE P42 · hist.exam.p1 (6.4k words), hist.exam.p2 (5.2k words); widget hist-levels (all 8 parts; logic tested in data/p42_levels_test.js); facts checked against the 2027 specimen papers and mark schemes online; Russia/France/Prussia dates from course chapters or memory (see notes at end of packages/P42.md); no 'tolerated' deviations
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -45,8 +45,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P38: reviewed 2026-11-12
 - P39: written 2026-11-12
 - P40: written 2026-11-12
-- P41: writing 2026-11-12
-- P42: open
+- P41: written 2026-11-12
+- P42: written 2026-11-12
 - P43: open
 - P44: open
 - P45: open

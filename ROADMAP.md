@@ -12,8 +12,8 @@
 - CONNECTIONS B done (18 Paper 4 chapters): every written topic chapter now has a Connections box. Writer prompts
   must add: P36 hist.d.safrica.1 the Bantu Education Act 1953; P39 hist.d.malaysia.4 the destruction of the PKI
   1965–66 (boxes link there for these).
-- P1–P38 and P47 written, P1–P34 and P47 reviewed. Running (run of Nov 12 09:11, preview server allowed by the user):
-  Specialist REVIEW P35–P38, Writers P39 (PKI destruction 1965–66) and P40. Guard on `hist`.
+- P1–P40 and P47 written, P1–P38 and P47 reviewed (0 open items). Running (run of Nov 12, preview server allowed
+  by the user): Writers P41, P42. Next: REVIEW P39–P42. Guard on `hist`.
 - Sensitive topics (civil rights, apartheid, terror): a Writer prompt says no slurs even in sources, violence without
   graphic detail, save chapters in parts (the first P31 Writer was stopped by a content filter before saving).
 - Agents have web access: WebSearch/WebFetch are deferred tools, loaded with ToolSearch (line in the AGENT-RUN common
