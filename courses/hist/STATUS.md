@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-12 · WRITE P43 · hist.exam.p3 (7,615 words) and hist.exam.p4 (6,764 words): Paper 3 and 4 guides (format, tables, levels, method, labels, worked ladders, weak paragraphs, timing, quizzes); widget hist-levels used (p3a,p3b / p4a,p4b), probes clean; check and phone pass. Reviewer: see Writer's notes in packages/P43.md (WW1 dates, two Stalin-example points).
+Last: 2026-11-12 · WRITE P44 · hist.mixed.as 13,077 words (3 Paper 1 sets: Russia, Reconstruction, League; 9 Paper 2 topics; recall, quiz); hist.mixed.a2 13,315 words (6 Paper 3 practice extracts, 27 Paper 4 questions, recall, quiz, 2 weak paragraphs); no widgets; check and phone pass; reviewer: see notes in packages/P44.md (extract labels, reused chapter sources)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -48,8 +48,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P41: reviewed 2026-11-12
 - P42: reviewed 2026-11-12
 - P43: written 2026-11-12
-- P44: writing 2026-11-12
-- P45: open
+- P44: written 2026-11-12
+- P45: writing 2026-11-12
 - P46: open
 - P47: reviewed 2026-11-11
 - READER: open
