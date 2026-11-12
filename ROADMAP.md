@@ -12,12 +12,9 @@
 - CONNECTIONS B done (18 Paper 4 chapters): every written topic chapter now has a Connections box. Writer prompts
   must add: P36 hist.d.safrica.1 the Bantu Education Act 1953; P39 hist.d.malaysia.4 the destruction of the PKI
   1965–66 (boxes link there for these).
-- All 47 packages (96 chapters) written and reviewed. Next: Writer **FIX** (2 open REVIEW.md items: replace six
-  hist.mock.p4 questions that repeat hist.mixed.a2; a new unseen Section A extract in hist.mock.p3), and READER
-  batches alongside it (first: hist.overview … hist.eu.france.2; the FIX touches only the two mocks). Then FIX the
-  Reader items, REVIEW FINAL, assembly. Guard on `hist`.
-- Run of Nov 12 19:15: FIX Writer (mock.p3, mock.p4) and Reader batch 1 running.
-- 9489 syllabus version 3 (Oct 2026) changes only a weblink; FACTS.md noted.
+- All 47 packages (96 chapters) written and reviewed; mock FIX done. Now: READER batches (done to hist.eu.russia.2;
+  batch 3 russia.3 … gilded.2 running) and a FIX Writer on the Reader items of batches 1–2. Then the rest of the
+  Reader batches and their FIXes, REVIEW FINAL, assembly. Guard on `hist`.- 9489 syllabus version 3 (Oct 2026) changes only a weblink; FACTS.md noted.
 - Sensitive topics (civil rights, apartheid, terror): a Writer prompt says no slurs even in sources, violence without
   graphic detail, save chapters in parts (the first P31 Writer was stopped by a content filter before saving).
 - Agents have web access: WebSearch/WebFetch are deferred tools, loaded with ToolSearch (line in the AGENT-RUN common

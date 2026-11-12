@@ -142,7 +142,10 @@ Reply in at most 6 lines: chapters with word counts and check results, widgets a
   (append only to REVIEW.md: re-read its end just before each append; if an Edit fails because the file changed,
   re-read and retry).
 - Your batch: <ids> (in this order). Read READER.md first, then each chapter whole, as a student who knows only what
-  the "Taught" lines say. File items under a heading "READER: <first id> to <last id>".
+  the "Taught" lines say, every section to the end (quiz, recap, links: no skimming). File items under a heading
+  "READER: <first id> to <last id>".
+- Judge what the page shows: the site numbers the questions of each `:::try` block (1, 2, 3 …), so file no items
+  about unnumbered questions.
 - If READER.md then covers every chapter, run `done READER "<n reader items>"`; otherwise do not run `done`.
 Reply in at most 5 lines: chapters read, how many (reader) items you filed, the worst one.
 ```
