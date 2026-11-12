@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-13 · FIX · READER items hist.d.usa45.3 to usa74.2 (31): glosses at first use (unions, covenants, NSC-68, China, Vietnam, domino theory, economics terms, civil rights terms, protest terms), forward references pointed to chapters; usa61.4 women's 1974 participation rate fixed to 45.7 (BLS, women 16+) with a check; Tax Reform Act 1986 exemption/EITC added
+Last: 2026-11-13 · READER · 288 reader items
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -52,5 +52,5 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P45: reviewed 2026-11-12
 - P46: reviewed 2026-11-12
 - P47: reviewed 2026-11-11
-- READER: open
+- READER: done 2026-11-13
 - FINAL: open
