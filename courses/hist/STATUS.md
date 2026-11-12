@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-12 · WRITE P42 · hist.exam.p1 (6.4k words), hist.exam.p2 (5.2k words); widget hist-levels (all 8 parts; logic tested in data/p42_levels_test.js); facts checked against the 2027 specimen papers and mark schemes online; Russia/France/Prussia dates from course chapters or memory (see notes at end of packages/P42.md); no 'tolerated' deviations
+Last: 2026-11-12 · REVIEW P39, P40, P41, P42 · 1 open item (hist-levels: higher level should need the level below); fixed Bülow extract order/cuts, Anglo-German Declaration wording, Carnegie 'agent and trustee', malaysia.4 tribunal date and well, malaysia.3 Partindo caption, overview US carry-forward; syllabus v3 changes only a weblink (FACTS.md noted); widgets clicked and keyboard-tested
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -43,10 +43,10 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P36: reviewed 2026-11-12
 - P37: reviewed 2026-11-12
 - P38: reviewed 2026-11-12
-- P39: written 2026-11-12
-- P40: written 2026-11-12
-- P41: written 2026-11-12
-- P42: written 2026-11-12
+- P39: reviewed 2026-11-12
+- P40: reviewed 2026-11-12
+- P41: reviewed 2026-11-12
+- P42: reviewed 2026-11-12
 - P43: open
 - P44: open
 - P45: open

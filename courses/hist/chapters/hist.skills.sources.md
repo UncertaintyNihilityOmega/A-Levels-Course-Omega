@@ -251,7 +251,7 @@ Use quotations, kept short, to prove each point. Do not copy the sources out.
 :::eg Paper 1 (a) [15]: compare two sources as evidence
 **Source A**
 
-… the times when the German left the land to one neighbour, the sea to another, and kept the heavens for himself are over. … We regard it as one of our foremost tasks to promote the interests of our shipping, our trade and our industry in East Asia in particular. … We do not wish to put anyone in the shade, but we also demand our place in the sun.
+… the times when the German left the land to one of his neighbours, the sea to the other, and kept for himself the heavens, where pure doctrine reigns, those times are over. We regard it as one of our foremost tasks to promote and cultivate the interests of our shipping, our trade and our industry, in East Asia in particular. … In a word: we do not wish to put anyone in the shade, but we also demand our place in the sun.
 
 *Adapted from a speech in the Reichstag by Bernhard von Bülow, German Foreign Secretary, 6 December 1897, shortened and translated for this course from the German text in Fürst Bülows Reden (1907). He was replying to a deputy who feared that Germany was drifting into a risky adventure in East Asia, a few weeks after German ships occupied Kiautschou Bay in China.*
 
@@ -275,7 +275,7 @@ Take up the White Man's burden— / Send forth the best ye breed— / Go bind yo
 
 *Commentary.* One difference, supported. No similarities. The only explanation is that the sources are different kinds, a Level 1 observation that does not use the provenance to explain anything. **Level 2.**
 
-**A Level 3 answer (about 10 marks).** "Both sources justify taking control overseas and speak confidently for their nation. Source A says Germany must 'promote the interests of our shipping, our trade and our industry in East Asia' and demands 'our place in the sun'. Source B tells Americans to 'take up the White Man's burden'. However, they give very different reasons. In A the reasons are national interest and status: Germany wants what other powers already have. In B the reason is duty: the peoples are 'half-devil and half-child' and need to be served by those who are better. A does not mention the peoples being ruled at all, but B is mainly about them. So the sources agree that expansion is right but disagree about why."
+**A Level 3 answer (about 10 marks).** "Both sources justify taking control overseas and speak confidently for their nation. Source A says Germany must 'promote and cultivate the interests of our shipping, our trade and our industry, in East Asia in particular' and demands 'our place in the sun'. Source B tells Americans to 'take up the White Man's burden'. However, they give very different reasons. In A the reasons are national interest and status: Germany wants what other powers already have. In B the reason is duty: the peoples are 'half-devil and half-child' and need to be served by those who are better. A does not mention the peoples being ruled at all, but B is mainly about them. So the sources agree that expansion is right but disagree about why."
 
 *Commentary.* Similarities and differences, each supported with short quotations. But the answer only says **that** they differ; it does not say **why**. That is the step from Level 3 to Level 4.
 
@@ -329,7 +329,7 @@ You need only a little background to follow this example, which draws on the Ame
 :::eg Paper 1 (b) [25]: use all four sources and your own knowledge
 **Source A**
 
-The problem of our age is the proper administration of wealth, so that the ties of brotherhood may still bind together the rich and poor in harmonious relationship. … the man of wealth thus becoming the mere trustee and agent for his poorer brethren, bringing to their service his superior wisdom, experience, and ability to administer, doing for them better than they would or could do for themselves.
+The problem of our age is the proper administration of wealth, so that the ties of brotherhood may still bind together the rich and poor in harmonious relationship. … the man of wealth thus becoming the mere agent and trustee for his poorer brethren, bringing to their service his superior wisdom, experience, and ability to administer, doing for them better than they would or could do for themselves.
 
 *Shortened from "Wealth", an essay by Andrew Carnegie, the steel manufacturer, North American Review, June 1889 (later known as "The Gospel of Wealth"). The phrases are the essay's own.*
 
@@ -356,7 +356,7 @@ The problem of our age is the proper administration of wealth, so that the ties 
 **Step 1: the claim.** "Used their wealth for the good of society" asks about what business leaders **did** and its **effect on society**, not about what they said or whether they were rich. Dates: the 1880s and 1890s.
 
 **Step 2: one line each.**
-- **A**: supports, since it says wealth should be used as a trust for the poor ("trustee and agent for his poorer brethren"); but it is a duty, and the last words ("better than they would or could do for themselves") are paternalist.
+- **A**: supports, since it says wealth should be used as a trust for the poor ("agent and trustee for his poorer brethren"); but it is a duty, and the last words ("better than they would or could do for themselves") are paternalist.
 - **B**: challenges, since wealth was "stolen" and "endanger[s] liberty"; it does not say all business leaders did nothing good.
 - **C**: challenges: business wealth buys power over government for the few; it says nothing about charity.
 - **D**: challenges by implication: Congress treated trusts as a danger to trade; but it is a law, not an opinion about charity.
@@ -493,9 +493,9 @@ How horrible, fantastic, incredible it is that we should be digging trenches and
 
 **Source B**
 
-We, the German Führer and Chancellor and the British Prime Minister, have had a further meeting today and are agreed in recognising that the question of Anglo-German relations is of the first importance for our two countries and for Europe. We regard the agreement signed last night and the Anglo-German Naval Agreement as symbolic of the desire of our two peoples never to go to war with one another again.
+We, the German Führer and Chancellor and the British Prime Minister, have had a further meeting today and are agreed in recognising that the question of Anglo-German relations is of the first importance for the two countries and for Europe. We regard the agreement signed last night and the Anglo-German Naval Agreement as symbolic of the desire of our two peoples never to go to war with one another again.
 
-*From the declaration signed by Adolf Hitler and Neville Chamberlain at Munich, 30 September 1938.*
+*Shortened from the Anglo-German Declaration signed by Adolf Hitler and Neville Chamberlain at Munich, 30 September 1938 (the first two of its three paragraphs).*
 
 **Source C**
 

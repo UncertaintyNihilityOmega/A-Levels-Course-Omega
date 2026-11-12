@@ -46,7 +46,7 @@ There are three ways through the qualification.
 2. **Staged A Level.** Papers 1 and 2 (AS) in the first year, Papers 3 and 4 in the second. The AS marks carry forward to the A Level under the rules in the Cambridge Handbook.
 3. **A Level all at once.** All four papers in one series. A Level is graded A*–E.
 
-The exams are held in **June and November** each year. Cambridge recommends about **180 guided learning hours** for AS and about **360** for the A Level (these include teaching, practice and revision). The syllabus is not available in the USA from 2027. Check your school or exam centre for which routes and series they offer.
+The exams are held in **June and November** each year. Cambridge recommends about **180 guided learning hours** for AS and about **360** for the A Level (these include teaching, practice and revision). In the USA new syllabuses replace 9489 from 2027: there, only students who took the AS in 2026 can finish the A Level (Papers 3 and 4) in June 2027. Check your school or exam centre for which routes and series they offer.
 
 ## The AS options and the 2027–29 rotation
 

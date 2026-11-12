@@ -6,6 +6,10 @@ for paper details; if something is not here, leave it out.
 Sources checked:
 - Syllabus: Cambridge International AS & A Level History 9489, syllabus for 2027, 2028 and 2029 (v1, © September 2024),
   https://www.cambridgeinternational.org/Images/718292-2027-2029-syllabus.pdf
+  Checked 12 November 2026 (REVIEW P39–P42): that URL and /Images/726254-2027-2029-syllabus-update.pdf now serve only
+  the one-page update notice. Version 3 (October 2026) changes only a weblink on page 74. Version 2 (April 2025) added
+  the Paper 3 Cold War outcome "The emergence of the 'New' Cold War history: post-post-revisionism" and the Paper 1 (b)
+  command phrase "How far do the sources agree ...?"; both are already recorded below. Nothing else here changed.
 - Specimen papers and mark schemes for examination from 2027 (© 2024; Paper 2 question paper v2, Paper 4 question paper
   v2): /Images/718335-2027-specimen-paper-1.pdf, 718337 (P1 mark scheme), 718351 (P2), 718352 (P2 MS), 718355 (P3),
   718357 (P3 MS), 718359 (P4), 718361 (P4 MS). Specimen materials update notice 760831 (July 2026): only layout and
@@ -34,7 +38,8 @@ origins and development of the Cold War.
 
 - Routes: (1) AS only: Papers 1 and 2 in one series; (2) staged A Level: Papers 1 and 2 (AS) in year 1, Papers 3 and 4
   in year 2 (AS marks carried forward under the Cambridge Handbook rules); (3) A Level: all four papers in one series.
-  AS grades a–e; A Level grades A*–E. Exam series: June and November. Not available in the US from 2027.
+  AS grades a–e; A Level grades A*–E. Exam series: June and November. Not available in the US from 2027 (replaced there by 8101, 8102, 9981 and 9982;
+  US candidates who took the 9489 AS in 2026 may sit Papers 3 and 4 in June 2027 only: notice 757738, checked 12 November 2026).
 - Guided learning hours: about 180 for AS Level, about 360 for A Level. Recommended prior study: IGCSE or O Level
   history (or equivalent).
 - AO weightings for the qualification: AS: AO1 40%, AO2 30%, AO3 30%, AO4 0%. A Level: AO1 45%, AO2 30%, AO3 15%,
