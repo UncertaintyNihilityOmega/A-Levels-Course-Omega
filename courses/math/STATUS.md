@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-13 · FIX · 19 reader items closed, s2.crv to m.momentum: definitions, derivations and examples added; regression proof by completing the square; new slope-with-horizontal-force figure and tow-bar thrust example
+Last: 2026-11-13 · READER · 170 reader items over the whole course (24 in the last batch, math.exam.p4 to math.mixed.stats2: 1 in exam.p6, 14 in the mixed chapters Pure and Mechanics, rest in Statistics)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -23,5 +23,5 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P16: reviewed
 - P17: reviewed
 - P18: reviewed
-- READER: open
+- READER: done 2026-11-13
 - FINAL: done 2026-10-13

@@ -191,3 +191,35 @@ Assumed: nothing.
 ## math.exam.p23
 Taught: Paper 2 and Paper 3 format and weights, timing plans, which topics belong to Paper 2 and which only to Paper 3, what MF19 gives and omits, the marks most often lost, a final-week checklist.
 Assumed: nothing.
+
+## math.exam.p4
+Taught: Paper 4 format (1 h 15, 50 marks, 40% of an AS, 20% of an A Level, g = 10), a timing plan of 1.3 minutes per mark, the four constant-acceleration formulae MF19 gives against the facts to learn (weight, F = ma, friction, work, kinetic and potential energy, power, momentum, equilibrium), the topic list with chapters, the marks most often lost, a final-week checklist.
+Assumed: nothing (impulse and the coefficient of restitution are named only as outside the paper).
+
+## math.exam.p5
+Taught: Paper 5 format (1 h 15, 50 marks, normal tables in MF19), a timing plan, what MF19 gives and what to learn (conditional probability, independence, counting, standardisation, continuity correction, coded data), showing the standardisation, the topic list, the marks most often lost, a final-week checklist.
+Assumed: nothing.
+
+## math.exam.p6
+Taught: Paper 6 format (1 h 15, 50 marks, A Level route 2 only), a timing plan, what MF19 gives and what to learn (approximation conditions, Var(aX + bY), confidence-interval formulas), hypotheses named with the parameter and a conclusion in context, the topic list, the marks most often lost, Type I and Type II errors in one line, a final-week checklist.
+Assumed: what to do instead of doubling the probability when the Poisson interval doubles (the first "marks lost" bullet says what is wrong, not what is right).
+
+## math.mixed.pure1
+Taught: nothing new (29 mixed Pure 1 questions with mark schemes, each naming the chapter to revise).
+Assumed: which angles to list for a tan or sin equation when the shift moves the interval (tan(x - 20 degrees)); the quadrants for a negative sine; why an upper curve is the upper one between the intersections; confirming a maximum in a sector problem.
+
+## math.mixed.pure3
+Taught: nothing new (29 mixed Pure 2 and 3 questions with mark schemes, each naming the chapter to revise).
+Assumed: the binomial coefficient 3/8 for (1 + u)^(-1/2); moving every term across and changing all signs; that angle ABC uses BA and BC; multiplying by x^2 to clear a fraction; the constant c = ln 80 and exponentiating; e^(x^2 + ln 3) = 3e^(x^2); the quadrants for a negative sine.
+
+## math.mixed.mech
+Taught: nothing new (29 mixed Mechanics questions with mark schemes, each naming the chapter to revise).
+Assumed: combining sqrt 3 fractions in the two-string equilibrium; that the second particle in a table-and-pulley problem has the same speed and distance as the first until the string goes slack; the weight component 600 N reused in the second part of the car-on-a-hill question.
+
+## math.mixed.stats1
+Taught: nothing new (29 mixed Statistics 1 questions with mark schemes, each naming the chapter to revise).
+Assumed: where sum x^2 = n(variance + mean^2) comes from; why the alternating pattern is the only one for 5 boys and 4 girls; the 3 s.f. and table-rounded value of Phi(-1.571); keeping the unrounded mean 25.634 for the combined variance.
+
+## math.mixed.stats2
+Taught: nothing new (29 mixed Statistics 2 questions with mark schemes, each naming the chapter to revise).
+Assumed: the improper integral to infinity written without a limit although the Paper 6 guide lists that as a lost mark; the two substitutions of a definite integral in the pdf median/probability parts; how cumulative Poisson values such as P(X <= 9) are found (see math.s2.poisson).
