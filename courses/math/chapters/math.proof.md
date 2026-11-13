@@ -81,7 +81,7 @@ Since \(n\) is an integer, \(4n\) is a multiple of \(4\). ∎ (A faster route is
 
 Sometimes there are only a few cases, and you can check every one. This is **proof by exhaustion**. The cases must be *all* the possibilities, and each must be checked in general, not with a single number.
 
-The cleanest cases are the remainders on division. Every integer is of the form \(3k\), \(3k + 1\) or \(3k + 2\); every integer is even or odd.
+The cleanest cases are the remainders on division. Every integer is of the form \(3k\), \(3k + 1\) or \(3k + 2\) (divide the integer by \(3\): the remainder is \(0\), \(1\) or \(2\), so it is \(3k\), \(3k + 1\) or \(3k + 2\) with \(k\) the whole-number part of the quotient); every integer is even or odd.
 
 :::eg (Exam style) Prove that the square of any integer is either a multiple of \(3\) or one more than a multiple of \(3\).
 Every integer \(n\) is of one of three forms: \(3k\), \(3k + 1\) or \(3k + 2\), for an integer \(k\). These cover every possibility. [B1]
@@ -226,7 +226,7 @@ A: Let the numbers be \(2n + 1\) and \(2n + 3\). [B1] Their sum is \(4n + 4\) [M
 Q: [4 marks] ★★ Prove that \((n + 3)^2 - (n - 1)^2\) is a multiple of \(8\) for every integer \(n\).
 A: Expand: \((n^2 + 6n + 9) - (n^2 - 2n + 1)\) [M1] \(= 8n + 8\). [A1] Factorise: \(8(n + 1)\). [M1] Since \(n + 1\) is an integer, this is a multiple of \(8\). [A1]
 Q: [4 marks] ★★ Prove that \(n^3 - n\) is divisible by \(6\) for every positive integer \(n\).
-A: Factorise: \(n^3 - n = n(n^2 - 1) = (n - 1)n(n + 1)\), a product of three consecutive integers. [M1] Among three consecutive integers at least one is even, so the product is divisible by \(2\). [B1] Exactly one of them is a multiple of \(3\), so the product is divisible by \(3\). [B1] Since \(2\) and \(3\) share no factor, the product is divisible by \(6\). [A1]
+A: Factorise: \(n^3 - n = n(n^2 - 1) = (n - 1)n(n + 1)\), a product of three consecutive integers. [M1] Among three consecutive integers at least one is even, so the product is divisible by \(2\). [B1] Exactly one of them is a multiple of \(3\) (three consecutive integers leave different remainders \(0\), \(1\), \(2\) on division by \(3\), so one of them has remainder \(0\)), so the product is divisible by \(3\). [B1] Since \(2\) and \(3\) share no factor, the product is divisible by \(6\). [A1]
 Q: [5 marks] ★★★ Prove that the sum of the squares of two odd numbers is never a perfect square.
 H: Write the two odd numbers as \(2a + 1\) and \(2b + 1\) and expand the sum of squares. What does the answer look like when divided by 4?
 H: Now look at what a perfect square looks like when divided by 4. Consider an even number squared and an odd number squared separately.

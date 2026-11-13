@@ -87,10 +87,15 @@ For \(\mathbf{A} = \begin{pmatrix}a & b\\ c & d\end{pmatrix}\), the **determinan
 \[\mathbf{A}^{-1} = \frac{1}{ad - bc}\begin{pmatrix}d & -b\\ -c & a\end{pmatrix}\]
 The determinant is also the factor by which the transformation changes area.
 
+To multiply a matrix by a column, take each row in turn, multiply across by the column and add:
+\[\begin{pmatrix}a & b\\ c & d\end{pmatrix}\begin{pmatrix}x\\ y\end{pmatrix} = \begin{pmatrix}ax + by\\ cx + dy\end{pmatrix}\]
+For example \(\begin{pmatrix}2 & 1\\ 5 & 3\end{pmatrix}\begin{pmatrix}4\\ 11\end{pmatrix} = \begin{pmatrix}2 \times 4 + 1 \times 11\\ 5 \times 4 + 3 \times 11\end{pmatrix} = \begin{pmatrix}19\\ 53\end{pmatrix}\). The two equations \(2x + y = 4\) and \(5x + 3y = 11\) are therefore the single matrix equation \(\begin{pmatrix}2 & 1\\ 5 & 3\end{pmatrix}\begin{pmatrix}x\\ y\end{pmatrix} = \begin{pmatrix}4\\ 11\end{pmatrix}\): the first row gives \(2x + y\) and the second gives \(5x + 3y\). Multiplying both sides by \(\mathbf{A}^{-1}\) on the left leaves \(\begin{pmatrix}x\\ y\end{pmatrix} = \mathbf{A}^{-1}\begin{pmatrix}4\\ 11\end{pmatrix}\).
+
 :::eg Let \(\mathbf{A} = \begin{pmatrix}2 & 1\\ 5 & 3\end{pmatrix}\). Find \(\mathbf{A}^{-1}\) and use it to solve \(2x + y = 4\), \(5x + 3y = 11\).
 \(\det\mathbf{A} = 2 \times 3 - 1 \times 5 = 1\), so \(\mathbf{A}^{-1} = \begin{pmatrix}3 & -1\\ -5 & 2\end{pmatrix}\).
 The equations are \(\mathbf{A}\begin{pmatrix}x\\ y\end{pmatrix} = \begin{pmatrix}4\\ 11\end{pmatrix}\), so
 \[\begin{pmatrix}x\\ y\end{pmatrix} = \mathbf{A}^{-1}\begin{pmatrix}4\\ 11\end{pmatrix} = \begin{pmatrix}12 - 11\\ -20 + 22\end{pmatrix} = \begin{pmatrix}1\\ 2\end{pmatrix}\]
+Row by row: the first entry is \(3 \times 4 + (-1) \times 11 = 1\) and the second is \((-5) \times 4 + 2 \times 11 = 2\).
 Check: \(2(1) + 2 = 4\) and \(5(1) + 3(2) = 11\). ✓
 :::
 
@@ -115,8 +120,11 @@ Rearranged, these are the three results above. The same idea gives the sum \(-\d
 :::eg The roots of \(x^3 - 5x^2 + 8x - 3 = 0\) are \(\alpha, \beta, \gamma\). Find \(\alpha^2 + \beta^2 + \gamma^2\), and the cubic with roots \(2\alpha, 2\beta, 2\gamma\).
 \(\alpha + \beta + \gamma = 5\), \(\alpha\beta + \beta\gamma + \gamma\alpha = 8\), \(\alpha\beta\gamma = 3\).
 \[\alpha^2 + \beta^2 + \gamma^2 = (\alpha + \beta + \gamma)^2 - 2(\alpha\beta + \beta\gamma + \gamma\alpha) = 25 - 16 = 9\]
-For the new roots put \(y = 2x\), so \(x = \tfrac y2\):
-\[\left(\tfrac y2\right)^3 - 5\left(\tfrac y2\right)^2 + 8\left(\tfrac y2\right) - 3 = 0 \quad\Rightarrow\quad y^3 - 10y^2 + 32y - 24 = 0\]
+(because \((\alpha + \beta + \gamma)^2 = \alpha^2 + \beta^2 + \gamma^2 + 2\alpha\beta + 2\beta\gamma + 2\gamma\alpha\), and the last three terms are \(2(\alpha\beta + \beta\gamma + \gamma\alpha)\)).
+For the new roots put \(y = 2x\), so \(x = \tfrac y2\). If \(x\) is a root of the old equation, then \(y = 2x\) is a root of the new equation, so replace \(x\) by \(\tfrac y2\) in the old equation:
+\[\left(\tfrac y2\right)^3 - 5\left(\tfrac y2\right)^2 + 8\left(\tfrac y2\right) - 3 = 0 \quad\Rightarrow\quad \frac{y^3}{8} - \frac{5y^2}{4} + 4y - 3 = 0\]
+Multiply every term by 8:
+\[y^3 - 10y^2 + 32y - 24 = 0\]
 :::
 
 ## Series and the method of differences
@@ -156,7 +164,7 @@ Compare \(\cos^2 x + \sin^2 x = 1\): the sign is different because \(\cosh\) and
 :::
 
 :::eg Solve \(\sinh x = \dfrac34\).
-Let \(\sinh x = \tfrac34\). Then \(\cosh x = \sqrt{1 + \sinh^2 x} = \sqrt{1 + \tfrac9{16}} = \tfrac54\), and \(e^x = \sinh x + \cosh x = \tfrac34 + \tfrac54 = 2\), so \(x = \ln 2 = 0.693\).
+Let \(\sinh x = \tfrac34\). Then \(\cosh x = \sqrt{1 + \sinh^2 x} = \sqrt{1 + \tfrac9{16}} = \tfrac54\), and \(e^x = \sinh x + \cosh x\) (adding the definitions: \(\tfrac{e^x - e^{-x}}{2} + \tfrac{e^x + e^{-x}}{2} = e^x\)) \(= \tfrac34 + \tfrac54 = 2\), so \(x = \ln 2 = 0.693\).
 :::
 
 ## Maclaurin series
@@ -166,7 +174,7 @@ Many functions can be written as an infinite polynomial. For a function \(f(x)\)
 The more terms you keep, the better the approximation near \(x = 0\).
 
 :::eg Find the first three non-zero terms of the Maclaurin series of \(\ln(1 + x)\), and use them to estimate \(\ln 1.1\).
-\(f(x) = \ln(1 + x)\), \(f(0) = 0\). \(f'(x) = \dfrac{1}{1 + x}\), \(f'(0) = 1\). \(f''(x) = -\dfrac{1}{(1 + x)^2}\), \(f''(0) = -1\). \(f'''(x) = \dfrac{2}{(1 + x)^3}\), \(f'''(0) = 2\). So
+\(f(x) = \ln(1 + x)\), \(f(0) = 0\). \(f'(x) = \dfrac{1}{1 + x}\), \(f'(0) = 1\). \(f''(x) = -\dfrac{1}{(1 + x)^2}\), \(f''(0) = -1\). \(f'''(x) = \dfrac{2}{(1 + x)^3}\), \(f'''(0) = 2\). Divide by the factorials: \(\dfrac{f''(0)}{2!} = -\dfrac12\) and \(\dfrac{f'''(0)}{3!} = \dfrac26 = \dfrac13\). So
 \[\ln(1 + x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \dots\]
 With \(x = 0.1\): \(0.1 - 0.005 + 0.000333 = 0.0953\). The calculator value of \(\ln 1.1\) is \(0.0953102\), so three terms are already accurate to 4 decimal places.
 :::
@@ -185,6 +193,8 @@ Powers and roots of complex numbers become simple in modulus–argument form.
 ## Second-order differential equations
 
 An equation of the form \(a\dfrac{d^2y}{dx^2} + b\dfrac{dy}{dx} + cy = 0\) has solutions found from the **auxiliary equation** \(am^2 + bm + c = 0\). Two real roots \(m_1, m_2\) give \(y = Ae^{m_1x} + Be^{m_2x}\). Complex roots \(m = p \pm qi\) give \(y = e^{px}(A\cos qx + B\sin qx)\), the shape of oscillations such as springs and circuits.
+
+Here \(y'\) means \(\dfrac{dy}{dx}\) and \(y''\) means \(\dfrac{d^2y}{dx^2}\). Why the auxiliary equation works: try \(y = e^{mx}\). Then \(y' = me^{mx}\) and \(y'' = m^2e^{mx}\), so \(ay'' + by' + cy = e^{mx}(am^2 + bm + c)\), which is zero when \(am^2 + bm + c = 0\).
 
 :::eg Solve \(y'' - 5y' + 6y = 0\).
 The auxiliary equation is \(m^2 - 5m + 6 = 0\), so \((m - 2)(m - 3) = 0\) and \(m = 2\) or \(m = 3\). The general solution is

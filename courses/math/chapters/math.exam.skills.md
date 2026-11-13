@@ -38,7 +38,7 @@ If a question says "hence", a solution that ignores the previous part and starts
 
 **(a)** Start from the left and finish at the printed result:
 
-\[\begin{aligned} 2\sin^2\theta &= 3\cos\theta \\ 2(1 - \cos^2\theta) &= 3\cos\theta \quad [\text{M1: use } \sin^2\theta = 1 - \cos^2\theta] \\ 2 - 2\cos^2\theta - 3\cos\theta &= 0 \\ 2\cos^2\theta + 3\cos\theta - 2 &= 0 \quad [\text{A1: the printed result}] \end{aligned}\]
+\[\begin{aligned} 2\sin^2\theta &= 3\cos\theta \\ 2(1 - \cos^2\theta) &= 3\cos\theta \quad [\text{M1: use } \sin^2\theta = 1 - \cos^2\theta] \\ 2 - 2\cos^2\theta - 3\cos\theta &= 0 \\ 2\cos^2\theta + 3\cos\theta - 2 &= 0 \quad [\text{A1: multiply every term by } {-1} \text{ (or move every term to the other side); the printed result}] \end{aligned}\]
 
 **(b)** The question says "hence", so factorise the quadratic in \(\cos\theta\):
 

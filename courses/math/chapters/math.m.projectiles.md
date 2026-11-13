@@ -39,7 +39,7 @@ A projectile is launched with speed \(u\) at angle \(\alpha\) above the horizont
 - Time of flight (back to the launch height): \(T = \dfrac{2u\sin\alpha}{g}\)
 - Greatest height: \(H = \dfrac{u^2\sin^2\alpha}{2g}\), reached at \(t = \dfrac{u\sin\alpha}{g}\)
 - Range: \(R = \dfrac{u^2\sin 2\alpha}{g}\), which is greatest when \(\alpha = 45^\circ\)
-- Trajectory: \(y = x\tan\alpha - \dfrac{gx^2}{2u^2\cos^2\alpha}\), a parabola
+- Trajectory (the path of the projectile): \(y = x\tan\alpha - \dfrac{gx^2}{2u^2\cos^2\alpha}\), a parabola
 - Speed at time \(t\): \(\sqrt{(u\cos\alpha)^2 + (u\sin\alpha - gt)^2}\); direction \(\tan\theta = \dfrac{u\sin\alpha - gt}{u\cos\alpha}\)
 Do not memorise these without understanding them: in exams, it is safer to build each result from the table.
 :::
@@ -53,7 +53,7 @@ The right-hand side is \(ax - bx^2\) with \(b = \dfrac{g}{2u^2\cos^2\alpha} > 0\
 \[R = \frac{2u^2\cos^2\alpha\tan\alpha}{g} = \frac{2u^2\sin\alpha\cos\alpha}{g} = \frac{u^2\sin 2\alpha}{g}\]
 using \(\sin 2\alpha = 2\sin\alpha\cos\alpha\).
 
-**The best angle.** For a given speed \(u\), \(R\) is largest when \(\sin 2\alpha\) is largest. The largest value of a sine is 1, when \(2\alpha = 90^\circ\), so \(\alpha = 45^\circ\). Also \(\sin 2\alpha = \sin(180^\circ - 2\alpha)\), so \(\alpha\) and \(90^\circ - \alpha\) give the same range.
+**The best angle.** For a given speed \(u\), \(R\) is largest when \(\sin 2\alpha\) is largest. The largest value of a sine is 1, when \(2\alpha = 90^\circ\), so \(\alpha = 45^\circ\). Also \(\sin 2\alpha = \sin(180^\circ - 2\alpha)\), so \(\alpha\) and \(90^\circ - \alpha\) give the same range (because \(2(90^\circ - \alpha) = 180^\circ - 2\alpha\), and \(\sin(180^\circ - x) = \sin x\)).
 
 Check with \(u = 20\) and \(g = 10\): \(30^\circ\) and \(60^\circ\) both give \(R = 40\sin 60^\circ = 34.6\) m, and \(45^\circ\) gives 40 m. Launch at \(30^\circ\) and then \(60^\circ\) in the widget below to see the same range with different heights.
 :::
@@ -131,6 +131,7 @@ A body is in equilibrium when:
 - The weight of a **uniform** rod acts at its centre.
 - A force acting at the pivot has no moment about that pivot: choose the pivot where an unknown force acts to remove it from the equation.
 - If a force makes an angle with the rod, use the perpendicular component (or perpendicular distance).
+- Clockwise or anticlockwise: look along the body from the pivot. A force that points down on the right of the pivot, or up on the left, turns the body clockwise (like the hands of a clock). A force that points down on the left, or up on the right, turns it anticlockwise. In the beam figure below, about \(A\), the weight \(200\) N and the load \(50\) N point down on the right of \(A\), so they turn the beam clockwise, and \(R_C\) points up on the right of \(A\), so it turns the beam anticlockwise.
 :::
 
 :::eg A uniform see-saw is balanced on a central pivot. A child of mass 30 kg sits 2 m from the pivot. Where must a 40 kg child sit on the other side? Take \(g = 10\).
@@ -147,6 +148,12 @@ Moments about \(A\) (this removes \(R_A\)):
 \[R_C \times 4 = 200 \times 3 + 50 \times 6 = 900 \quad\Rightarrow\quad R_C = 225\ \text{N}\]
 Resolving vertically: \(R_A + R_C = 250\), so \(R_A = 25\) N.
 Check by taking moments about \(C\): \(R_A \times 4 + 50 \times 2 = 200 \times 1\), that is \(100 + 100 = 200\). ✓
+:::
+
+A **hinge** holds the end of a rod to a wall and lets the rod turn. It can push or pull in any direction, so its force is unknown in size and direction: call its horizontal part \(X\) and its vertical part \(Y\); its size is \(\sqrt{X^2 + Y^2}\). Because the hinge force acts at \(A\), it has no moment about \(A\).
+
+:::html
+<figure class="fig"><svg viewBox="0 0 460 235" role="img" aria-label="A horizontal rod AB is hinged to a vertical wall at A. A string runs from B up and back to a point on the wall above A, making 30 degrees with the rod. The weight of 60 newtons acts downward at the middle of the rod. The tension T acts from B along the string. The hinge force at A is shown as a horizontal part X away from the wall and a vertical part Y upward."><rect class="f2 s-acc sw2" x="30" y="20" width="30" height="190"/><rect class="f1 s-acc sw2" x="60" y="175" width="260" height="10"/><path class="c2 thick" d="M320 180L60 30"/><path class="c1 thick" d="M190 185V225" marker-end="url(#ah)"/><path class="c2 thick" d="M320 180L251 140" marker-end="url(#ah)"/><path class="c3 thick" d="M60 180V130" marker-end="url(#ah)"/><path class="c3 thick" d="M60 180H112" marker-end="url(#ah)"/><text class="tl" x="198" y="222">60 N</text><text class="tl" x="258" y="132">T</text><text class="tl" x="78" y="146">Y</text><text class="tl" x="96" y="170">X</text><text class="tl" x="274" y="170" text-anchor="end">30°</text><text class="tl" x="66" y="204">A</text><text class="tl" x="326" y="204">B</text><text class="tl" x="45" y="14" text-anchor="middle">wall</text></svg><figcaption>Rod \(AB\) is horizontal with \(A\) at the wall. The string runs from \(B\) up and back to a point on the wall above \(A\), at \(30^\circ\) to the rod. The weight acts at the middle of the rod; the tension \(T\) pulls \(B\) along the string; the hinge force at \(A\) has parts \(X\) (away from the wall) and \(Y\) (up).</figcaption></figure>
 :::
 
 :::eg A uniform rod \(AB\) of length 2 m and mass 6 kg is hinged to a wall at \(A\) and held horizontal by a light string from \(B\) to a point on the wall above \(A\). The string makes \(30^\circ\) with the rod. Find the tension, and the size of the force at the hinge. Take \(g = 10\).

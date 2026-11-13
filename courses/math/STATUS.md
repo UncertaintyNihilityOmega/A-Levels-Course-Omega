@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-13 · READER · 170 reader items over the whole course (24 in the last batch, math.exam.p4 to math.mixed.stats2: 1 in exam.p6, 14 in the mixed chapters Pure and Mechanics, rest in Statistics)
+Last: 2026-11-13 · FIX · math: 16 reader items, math.m.energy to math.exam.p23 (gravity work on any path, proof algebra, power direction, moments clockwise rule, hinge and rod figure, matrix by column, polynomial roots, ODE notation, proof remainders, sign-change step)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

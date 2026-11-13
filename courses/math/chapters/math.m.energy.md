@@ -47,7 +47,7 @@ If the force \(F\) acts along the direction of motion, the work is \(Fd\). If th
 :::eg A 40 N force at \(30^\circ\) above the horizontal drags a crate 5 m along a rough floor. The friction force is 12 N. Find the work done by the force, the work done against friction and the net work done on the crate.
 Work by the pull: \(40 \times 5 \times \cos 30^\circ = 173\) J (3 s.f.).
 Work against friction: \(12 \times 5 = 60\) J.
-Net work \(= 173.2 - 60 = 113\) J (3 s.f.). This net work becomes the crate's kinetic energy gain.
+Net work \(= 173.2 - 60 = 113\) J (3 s.f.). This net work becomes the crate's gain in kinetic energy (the energy of its motion, defined in the next section).
 :::
 
 ## Kinetic and gravitational potential energy
@@ -82,7 +82,10 @@ Multiply both sides by \(\tfrac12 m\):
 \[\tfrac12 mv^2 = \tfrac12 mu^2 + mas\]
 Now \(ma = F\), so \(mas = Fs\), which is the work done by the resultant force. Therefore
 \[Fs = \tfrac12 mv^2 - \tfrac12 mu^2\]
-The work done by the resultant force equals the change in kinetic energy. When the weight is one of the forces, its work on a rise \(h\) is \(-mgh\), and moving that term to the other side gives the form with GPE.
+The work done by the resultant force equals the change in kinetic energy. When the weight is one of the forces, its work on a rise \(h\) is \(-mgh\). Then
+\[\text{work by driving forces} - \text{work against resistances} - mgh = \Delta\text{KE}\]
+so, moving the \(mgh\) term to the other side,
+\[\text{work by driving forces} - \text{work against resistances} = \Delta\text{KE} + mgh = \Delta\text{KE} + \Delta\text{GPE}\]
 
 Check with \(m = 3\) kg, \(u = 4\), \(a = 2\) and \(s = 32\) m. Then \(v^2 = 16 + 128 = 144\), \(F = 6\) N, \(Fs = 192\) J and \(\tfrac12 \times 3 \times (144 - 16) = 192\) J.
 :::
@@ -104,6 +107,8 @@ Check with \(F = ma\): \(a = \dfrac{20}{4} = 5\), and \(v^2 = 2 \times 5 \times 
 ### Conservation of energy and curved paths
 
 For a smooth track the normal reaction is perpendicular to the motion, so it does no work. Only gravity does work, and energy is conserved whatever the shape of the track.
+
+Why the shape does not matter: split the path into many short straight pieces. On one piece of length \(d\), going down at angle \(\varphi\) to the horizontal, only the part of the displacement along the weight does work (the force is vertical, so \(W = Fd\cos\theta\) uses the angle between the weight and the piece). The angle between the weight (straight down) and the piece is \(90^\circ - \varphi\), and \(\cos(90^\circ - \varphi) = \sin\varphi\), so gravity's work on that piece is \(mg \times d\sin\varphi\), and \(d\sin\varphi\) is exactly the height lost on that piece. Adding the pieces, gravity's work is \(mg\) times the total height lost, whatever the shape of the path. This work is the GPE lost, so only the change in height matters.
 
 :::eg A particle is released from rest at the top of a smooth curved slide, 5 m above the bottom. Find its speed at the bottom. Take \(g = 10\).
 Take the bottom as \(h = 0\). Energy conservation:
@@ -143,7 +148,7 @@ If a constant force \(F\) acts on an object moving at speed \(v\) in the directi
 \[P = Fv\]
 - \(P\) is the power in watts, \(F\) is the **driving force** in newtons and \(v\) is the speed in \(\mathrm{m\,s^{-1}}\). 1 kW \(= 1000\) W.
 - For a vehicle, \(F\) is the driving force of the engine. It is not the resultant force: the resultant force is \(F\) minus resistances (and minus the weight component on a slope).
-- Use \(F = ma\) with the resultant force to find acceleration: \(\dfrac{P}{v} - R_{\text{resistance}} - mg\sin\theta = ma\).
+- Use \(F = ma\) with the resultant force to find acceleration: \(\dfrac{P}{v} - R_{\text{resistance}} - mg\sin\theta = ma\) (for a vehicle going up the slope; going down, the \(mg\sin\theta\) term is added on the driving side instead of subtracted: \(\dfrac{P}{v} + mg\sin\theta - R_{\text{resistance}} = ma\)).
 - At the **maximum speed**, the acceleration is 0, so the driving force equals the total resistance (plus the weight component on a hill).
 :::
 
