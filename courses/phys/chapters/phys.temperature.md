@@ -76,7 +76,7 @@ That assumption is where the trouble lies. No two properties change in exactly t
 The straight line in the graph is the agreement you would have if both properties changed at the same rate. For the curve, B says 45.0 °C when A says 50.0 °C. Neither is "wrong": they are different scales. For this reason, a scale that depends on one substance is never fully satisfactory. The next section describes the scale that does not.
 
 :::exam Choosing a thermometer
-Questions ask you to choose a thermometer for a job and justify it. Give the property and the reason that matches the job. A furnace at 1200 °C needs a thermocouple (wide range, small probe, no glass to melt). A thermometer read by a computer needs a property that gives an electrical signal: a thermistor or a resistance thermometer. A sudden change needs a quick response: a small probe with small thermal capacity. A very small temperature change needs a very sensitive property: a thermistor.
+Questions ask you to choose a thermometer for a job and justify it. Give the property and the reason that matches the job. A furnace at 1200 °C needs a thermocouple (wide range, small probe, no glass to melt). A thermometer read by a computer needs a property that gives an electrical signal: a thermistor or a resistance thermometer. A sudden change needs a quick response: a small probe (it needs little energy to warm up). A very small temperature change needs a very sensitive property: a thermistor.
 :::
 
 ## The thermodynamic temperature scale
@@ -84,7 +84,7 @@ Questions ask you to choose a thermometer for a job and justify it. Give the pro
 The thermodynamic scale is defined in a way that does not rely on the behaviour of any substance. That is its great advantage: scientists everywhere get the same value, whatever the material or instrument. It is the scale used in all of the equations of this topic. Its unit, the **kelvin** (K), is an SI base unit.
 
 :::def Absolute zero
-The lowest possible temperature, zero kelvin (0 K), at which a substance has minimum internal energy.
+The lowest possible temperature, zero kelvin (0 K), at which a substance has minimum internal energy (internal energy is the total of the random kinetic and potential energies of all the molecules).
 :::
 
 In the molecular picture, cooling a substance takes energy out of the random motion of its molecules. At 0 K the energy cannot be reduced any further: nothing can be colder. In the next chapter, [Ideal gases](#phys.gases), you will see that the lines on a graph of gas pressure against Celsius temperature all point towards −273 °C at zero pressure, which is a strong sign that absolute zero is real.
@@ -138,7 +138,7 @@ The bath needs 200 times as much energy, although its temperature rise is only a
 
 ### Measuring the specific heat capacity of a solid
 
-A block of the material has two holes: one holds an electric heater, the other a thermometer. The block is wrapped in insulation. The heater's power is found from a joulemeter, or from \(P = VI\) with an ammeter and a voltmeter.
+A block of the material has two holes: one holds an electric heater, the other a thermometer. The block is wrapped in insulation. The heater's power is found from a joulemeter (an instrument that reads the energy transferred in joules), or from \(P = VI\) with an ammeter and a voltmeter.
 
 :::html
 <figure class="fig small"><svg viewBox="30 0 320 332" role="img" aria-label="Top: a metal block wrapped in insulation, with an electric heater and a thermometer in two holes in the block. Bottom: a circuit with a power supply, an ammeter in series, and a heater with a voltmeter connected across it."><rect class="fm s-mute sw1 dash" x="116" y="76" width="148" height="100"/><rect class="fm2 s-ink sw2" x="130" y="90" width="120" height="70"/><rect class="fp s-ink sw2" x="150" y="40" width="24" height="90"/><rect class="fp s-ink sw2" x="206" y="30" width="10" height="104"/><path class="ln" d="M156 40V16M168 40V16"/><circle class="fp s-ink sw2" cx="156" cy="12" r="4"/><circle class="fp s-ink sw2" cx="168" cy="12" r="4"/><text class="tl te" x="144" y="62">heater</text><text class="tl" x="224" y="44">thermometer</text><text class="tl tc" x="190" y="152">metal block</text><text class="tl te" x="108" y="130">insulation</text><path class="ln" d="M100 253V215H280V315H100V263"/><path class="ln" d="M86 253H114"/><path class="ln thick" d="M92 263H108"/><text class="tl te" x="78" y="262">supply</text><path class="ln" d="M230 215V315"/><circle class="fi" cx="230" cy="215" r="4"/><circle class="fi" cx="230" cy="315" r="4"/><circle class="fp s-ink sw2" cx="150" cy="215" r="13"/><text class="tb tc" x="150" y="220">A</text><circle class="fp s-ink sw2" cx="230" cy="265" r="13"/><text class="tb tc" x="230" y="270">V</text><rect class="fp s-ink sw2" x="272" y="240" width="16" height="50"/><text class="tl" x="296" y="270">heater</text></svg><figcaption>The block with its insulation (top) and the electrical circuit that supplies the heater (bottom). The ammeter is in series and the voltmeter is across the heater, so \(P = VI\).</figcaption></figure>
@@ -251,7 +251,7 @@ Mass melted by the heater: \(m_1 - m_0 = 62.0 - 8.0 = 54.0\,\mathrm{g} = 0.0540\
 This is close to the accepted value of \(3.34 \times 10^{5}\,\mathrm{J\,kg^{-1}}\).
 :::
 
-For the specific latent heat of vaporisation, an immersion heater boils water in a vessel standing on a balance. The balance reading falls as steam escapes. The same idea of a "control" is used here too: run the experiment twice with two different heater powers, and subtract. The energy lost to the surroundings is the same in both runs because the temperature is the same (100 °C), so it cancels.
+For the specific latent heat of vaporisation, an immersion heater (an electric heater placed in the liquid) boils water in a vessel standing on a balance. The balance reading falls as steam escapes. The same idea of a "control" is used here too: run the experiment twice with two different heater powers, and subtract. The energy lost to the surroundings is the same in both runs because the temperature is the same (100 °C), so it cancels.
 
 :::proof examinable Latent heat of vaporisation by the two-power method
 Run 1 uses a heater of power \(P_1\) and run 2 a heater of power \(P_2\). Both run for the same time \(t\) with the water boiling steadily at 100 °C, and the balance shows that masses \(m_1\) and \(m_2\) are boiled away.

@@ -64,7 +64,7 @@ The maximum displacement of a point on the wave from its equilibrium position.
 :::
 
 :::def Wavelength
-The distance between two adjacent points on a wave that are in phase (for example, two adjacent crests).
+The distance between two adjacent points on a wave that are in phase, meaning at the same stage of their oscillation (for example, two adjacent crests).
 :::
 
 :::def Period
@@ -244,7 +244,7 @@ This is more than the intensity of sunlight on the ground (about \(10^{3}\,\math
 
 ### Intensity and amplitude
 
-The energy carried by a wave comes from the oscillating particles, and the energy of an oscillation is proportional to the **square** of its amplitude. A wave with twice the amplitude therefore carries four times the power through the same area.
+The energy carried by a wave comes from the oscillating particles, and the energy of an oscillation is proportional to the **square** of its amplitude. (The reason: a particle swinging through twice the amplitude covers twice the distance in the same time, so it moves twice as fast, and kinetic energy is proportional to speed squared; Oscillations shows this fully.) A wave with twice the amplitude therefore carries four times the power through the same area.
 
 :::key Intensity and amplitude
 \[I \propto A^2\]
@@ -407,7 +407,7 @@ Only **transverse** waves can be polarised. A longitudinal wave oscillates along
 Light from a lamp or the Sun is **unpolarised**: it is a mixture of waves with oscillations in every plane at right angles to the direction of travel. A **polarising filter** (such as Polaroid) lets through only the component of the oscillation along its **transmission axis**. After the filter the light is plane polarised. Polarising filters are used in:
 
 - **Polaroid sunglasses**, which block the partly polarised glare reflected from roads and water.
-- **LCD screens** (phones, calculators, monitors), where a liquid crystal layer rotates the plane of polarisation between two crossed filters, so that each pixel can be switched between light and dark.
+- **LCD screens** (phones, calculators, monitors), where a liquid crystal layer rotates the plane of polarisation between two filters with their axes at 90° (crossed), so that each pixel can be switched between light and dark.
 - **Radio and TV aerials**, which must be aligned parallel to the transmitting aerial to pick up the most signal.
 - **A microwave demonstration:** a metal grille between a microwave transmitter and its receiver blocks the waves when the bars are parallel to the electric field, and lets them through when the grille is rotated through 90°.
 

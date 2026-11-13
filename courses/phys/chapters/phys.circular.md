@@ -183,7 +183,7 @@ The friction force provides the centripetal force:
 
 At the limit, \(F_\text{max} = mv_\text{max}^2/r\), so
 \[v_\text{max} = \sqrt{\frac{F_\text{max}\,r}{m}} = \sqrt{\frac{7200 \times 50}{1200}} = 17\,\mathrm{m\,s^{-1}}\] [C1] [A1]
-The mass appears in both \(F_\text{max}\) and \(mv^2/r\) here only because the friction limit was given as a force. On a wet road \(F_\text{max}\) falls, and so does the safe speed.
+The limit was given as a force, so \(v_\text{max}\) depends on the mass; if it had been given as a coefficient of friction, the mass would cancel. On a wet road \(F_\text{max}\) falls, and so does the safe speed.
 :::
 
 :::html
@@ -200,7 +200,7 @@ Because \(\omega\) enters squared, spinning the mass twice as fast would need fo
 :::
 
 :::warn There is no "centrifugal force"
-Passengers in a turning car feel pushed outwards, so many students draw an outward "centrifugal force". No such force acts on the car or on you. What you feel is your own **inertia**: your body wants to carry on in a straight line, and the car door pushes you inwards to make you turn. If a string whirling a ball suddenly breaks, the ball does not fly outwards along the radius. It moves off in a straight line along the **tangent**, the direction of its velocity at that instant, because no force is left to turn it.
+Passengers in a turning car feel pushed outwards, so many students draw an outward "centrifugal force". No such force acts on the car or on you. What you feel is your own **inertia** (your body's tendency to keep moving in a straight line at constant speed): your body wants to carry on in a straight line, and the car door pushes you inwards to make you turn. If a string whirling a ball suddenly breaks, the ball does not fly outwards along the radius. It moves off in a straight line along the **tangent**, the direction of its velocity at that instant, because no force is left to turn it.
 :::
 
 :::warn Do not draw the centripetal force as an extra arrow
@@ -299,7 +299,7 @@ At \(15\,\mathrm{m\,s^{-1}}\) the passengers feel lighter, because the road push
 
 ### Charged particles and satellites
 
-Two later chapters need only the equation you have just met. A charged particle of charge \(q\) moving at speed \(v\) at right angles to a magnetic field of flux density \(B\) feels a force \(Bqv\) at right angles to its velocity, so it moves in a circle with \(Bqv = mv^2/r\). An electron of speed \(2.0 \times 10^{7}\,\mathrm{m\,s^{-1}}\) in a field of \(1.0\,\mathrm{mT}\) moves on a circle of radius \(r = mv/(Be) = 0.11\,\mathrm{m}\) (more in [Magnetic fields](#phys.magnetic)). A satellite orbits because the Earth's gravitational pull is the centripetal force: the whole of [Gravitational fields](#phys.gravity) is this chapter with a particular force in place of \(F\).
+Two later chapters need only the equation you have just met. (The magnetic terms below are explained in [Magnetic fields](#phys.magnetic); for now you need only the idea that the magnetic force is the centripetal force.) A charged particle of charge \(q\) moving at speed \(v\) at right angles to a magnetic field of flux density \(B\) feels a force \(Bqv\) at right angles to its velocity, so it moves in a circle with \(Bqv = mv^2/r\). An electron of speed \(2.0 \times 10^{7}\,\mathrm{m\,s^{-1}}\) in a field of \(1.0\,\mathrm{mT}\) moves on a circle of radius \(r = mv/(Be) = 0.11\,\mathrm{m}\) (more in [Magnetic fields](#phys.magnetic)). A satellite orbits because the Earth's gravitational pull is the centripetal force: the whole of [Gravitational fields](#phys.gravity) is this chapter with a particular force in place of \(F\).
 
 :::board
 AQA teaches circular motion with the same equations, and its formula sheet prints them (\(\omega = v/r\), \(a = v^2/r = \omega^2 r\), \(F = mv^2/r\)). On a Cambridge paper they are not on the data sheet: recall \(v = r\omega\) and \(a = v^2/r = r\omega^2\) yourself.

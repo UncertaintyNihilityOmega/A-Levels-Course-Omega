@@ -69,8 +69,8 @@ Each curve is called an **isotherm** (constant temperature). Plot \(p\) against 
 :::steps
 1. Trap a known volume of air in a syringe whose tip is joined by a short rigid tube to a pressure gauge. Make sure there are no leaks.
 2. Push the plunger in slowly, so the air stays at room temperature, and wait a few seconds before each reading. Record the volume \(V\) from the syringe scale and the pressure \(p\) from the gauge, for at least six volumes.
-3. Include the volume of the connecting tube in \(V\), or plot against the syringe volume and accept an intercept.
-4. Plot \(p\) against \(1/V\). A straight line through the origin shows \(pV\) is constant, and the gradient is \(pV\), which equals \(nRT\).
+3. Include the volume of the connecting tube in \(V\). (The air in the tube also counts, so the true volume is the syringe reading plus the tube's volume. If you use the syringe reading alone, the graph of \(p\) against \(1/V\) is not a straight line through the origin; a graph of \(1/p\) against the syringe reading is straight but cuts the volume axis at minus the tube's volume.)
+4. Plot \(p\) against \(1/V\). A straight line through the origin shows \(pV\) is constant, and the gradient is the constant \(pV\) (the next section shows it equals \(nRT\)).
 :::
 Moving the plunger slowly matters, because compressing a gas warms it. Wait until the gas is again at room temperature, otherwise the temperature is not constant and the law appears not to hold.
 :::
@@ -122,7 +122,7 @@ Real gases follow the ideal law closely when the pressure is low and the tempera
 \(T = 20 + 273.15 = 293.15\,\mathrm{K}\). [C1]
 \[N = \frac{pV}{kT} = \frac{1.01 \times 10^{5} \times 1.0}{1.38 \times 10^{-23} \times 293.15}\] [C1]
 \[N = 2.5 \times 10^{25}\] [A1]
-That is about \(2.5 \times 10^{19}\) molecules in every cubic millimetre of the air around you.
+Since \(1\,\mathrm{m^3} = 10^{9}\,\mathrm{mm^3}\), that is about \(2.5 \times 10^{25}/10^{9} = 2.5 \times 10^{16}\) molecules in every cubic millimetre of the air around you (or \(2.5 \times 10^{19}\) in every cubic centimetre).
 :::
 
 :::eg A gas cylinder of volume 0.020 \(\mathrm{m^3}\) contains helium at a pressure of \(1.5 \times 10^{7}\,\mathrm{Pa}\) and a temperature of 15 °C. Calculate the mass of helium, and the pressure if the cylinder is heated to 40 °C. (\(M = 0.0040\,\mathrm{kg\,mol^{-1}}\))
@@ -133,7 +133,7 @@ The volume and amount are fixed, so \(p \propto T\):
 \[p_2 = p_1 \times \frac{T_2}{T_1} = 1.5 \times 10^{7} \times \frac{313.15}{288.15} = 1.6 \times 10^{7}\,\mathrm{Pa}\] [A1]
 :::
 
-### Changes of state of a fixed mass
+### Changing p, V and T of a fixed mass
 
 When the mass of gas is fixed, \(n\) does not change and \(\dfrac{pV}{T}\) is constant:
 
@@ -148,7 +148,7 @@ Pressure and volume can be in any units that are the same on both sides, because
 Pressure falling to a third would triple the volume; the warmer water adds the small extra factor 290/280.
 :::
 
-:::eg A car tyre contains air at an absolute pressure of \(2.0 \times 10^{5}\,\mathrm{Pa}\) when the temperature is 10 °C. After a long drive the temperature of the air is 35 °C. Assuming the volume is constant, find the new pressure.
+:::eg A car tyre contains air at an absolute pressure (the full pressure, not the gauge reading) of \(2.0 \times 10^{5}\,\mathrm{Pa}\) when the temperature is 10 °C. After a long drive the temperature of the air is 35 °C. Assuming the volume is constant, find the new pressure.
 Constant volume and amount, so \(p \propto T\). \(T_1 = 283.15\,\mathrm{K}\) and \(T_2 = 308.15\,\mathrm{K}\). [C1]
 \[p_2 = p_1 \times \frac{T_2}{T_1} = 2.0 \times 10^{5} \times \frac{308.15}{283.15}\] [C1]
 \[p_2 = 2.2 \times 10^{5}\,\mathrm{Pa}\] [A1]
@@ -191,7 +191,7 @@ The ideal gas law describes how a gas behaves. The kinetic theory explains **why
 6. Newton's laws of motion apply to the molecules.
 :::
 
-"Molecules are very small" earns nothing: say that their **volume** is negligible compared with that of the container. Assumption 3 means a molecule between collisions moves in a straight line at constant speed. In an ideal gas the molecules have no potential energy, and the internal energy is purely kinetic.
+"Molecules are very small" earns nothing: say that their **volume** is negligible compared with that of the container. Assumption 3 means a molecule between collisions moves in a straight line at constant speed. In an ideal gas the molecules have no potential energy, and the internal energy (the total of the random kinetic and potential energies of all the molecules) is purely kinetic.
 
 ### How molecules create pressure
 
@@ -270,7 +270,7 @@ From the equation of state, \(pV = NkT\).
 The left-hand sides are equal, so \(\tfrac13 Nm\langle c^2\rangle = NkT\).
 Divide by \(N\) and multiply by 3: \(m\langle c^2\rangle = 3kT\).
 Divide by 2: \(\tfrac12 m\langle c^2\rangle = \tfrac32 kT\).
-The left-hand side is the mean translational kinetic energy of one molecule.
+The left-hand side is the mean translational kinetic energy of one molecule (translational means the energy of motion from place to place, not of spinning or vibrating).
 :::
 
 :::formula Mean translational kinetic energy of a molecule
@@ -280,7 +280,7 @@ The left-hand side is the mean translational kinetic energy of one molecule.
 
 Two points matter. At the same temperature, every ideal gas has the same mean kinetic energy per molecule, so a **lighter** molecule is moving **faster**: \(c_\text{r.m.s.} \propto 1/\sqrt{m}\). Helium atoms are fast, oxygen molecules are slow. And since the kinetic energy is proportional to \(T\), temperature is a measure of the average random kinetic energy of the molecules. In this model the mean kinetic energy would fall to zero at absolute zero; real substances keep a minimum internal energy there (see [Temperature](#phys.temperature)).
 
-The total translational kinetic energy of the \(N\) molecules is \(N \times \tfrac32 kT = \tfrac32 nRT\), because \(Nk = nR\). In an ideal gas there are no forces between molecules and so there is no potential energy: this total is the **internal energy** of a monatomic ideal gas, a point you will use in [Thermodynamics](#phys.thermo).
+The total translational kinetic energy of the \(N\) molecules is \(N \times \tfrac32 kT = \tfrac32 nRT\), because \(Nk = nR\). In an ideal gas there are no forces between molecules and so there is no potential energy: this total is the **internal energy** of a monatomic ideal gas (monatomic means one atom per molecule, as in helium), a point you will use in [Thermodynamics](#phys.thermo).
 
 :::eg Calculate the mean translational kinetic energy of a molecule of an ideal gas at 27 °C.
 \(T = 27 + 273.15 = 300.15\,\mathrm{K}\). [C1]

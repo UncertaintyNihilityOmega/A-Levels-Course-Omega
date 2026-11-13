@@ -78,6 +78,8 @@ qa = 2 * e
 eq("alpha q/m", sf(qa / ma, 2), 4.8e7, 1e4)
 eq("proton q/m", sf(e / mp, 2), 9.6e7, 1e4)
 eq("q/m ratio", sf((e / mp) / (qa / ma), 2), 2.0)
+eq("electron q/m", sf(e / me, 3), 1.76e11, 1e8)
+eq("electron/alpha q/m", sf((e / me) / (qa / ma), 2), 3600, 100)
 eq("C-12 mass", sf(12 * u, 3), 1.99e-26, 1e-30)
 
 # Quarks

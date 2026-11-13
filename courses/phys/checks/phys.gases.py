@@ -33,6 +33,7 @@ eq("200/4", 200 / 4, 50); eq("300/4", 300 / 4, 75); eq("ratio T", 450 / 300, 300
 N = 1.01e5 * 1.0 / (k * (20 + K))
 eq("air N", sf(N, 2), 2.5e25, 1e23)
 eq("per mm3", sf(N / 1e9, 2), 2.5e16, 1e15)
+eq("per cm3", sf(N / 1e6, 2), 2.5e19, 1e18)
 
 # Helium cylinder
 T1, T2 = 15 + K, 40 + K

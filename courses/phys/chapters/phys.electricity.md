@@ -154,7 +154,7 @@ The charge is \(e\) and the p.d. is 2500 V, so
 \[W = QV = 1.60 \times 10^{-19} \times 2500 = 4.0 \times 10^{-16}\,\mathrm{J}\] [C1] [A1]
 All of this becomes kinetic energy, \(\tfrac12 m v^{2} = W\):
 \[v = \sqrt{\frac{2W}{m}} = \sqrt{\frac{2 \times 4.0 \times 10^{-16}}{9.11 \times 10^{-31}}} = 3.0 \times 10^{7}\,\mathrm{m\,s^{-1}}\] [C1] [A1]
-This is one tenth of the speed of light, so the non-relativistic formula is a fair approximation.
+This is one tenth of the speed of light, so using \(E_K = \tfrac12 m v^{2}\) is a fair approximation (the formula fails at speeds close to the speed of light).
 :::
 
 ## Electrical power and energy
@@ -263,7 +263,7 @@ The number of carriers hardly changes in a metal. It is the collision rate that 
 
 ### A semiconductor diode
 
-A diode lets current pass in one direction only. In the **forward** direction, almost no current flows until the p.d. reaches about 0.6 V (for a silicon diode), and above that the current rises steeply, so the resistance becomes very small. In the **reverse** direction, the current is almost zero for any p.d., so the resistance is extremely large. For this reason, a diode is used in the rectification of alternating current.
+A diode lets current pass in one direction only. In the **forward** direction, almost no current flows until the p.d. reaches about 0.6 V (for a silicon diode), and above that the current rises steeply, so the resistance becomes very small. In the **reverse** direction, the current is almost zero for any p.d., so the resistance is extremely large. For this reason, a diode can turn an alternating current (one that keeps reversing) into one that flows in one direction only (rectification), as you will see in [Alternating currents](#phys.ac).
 
 :::eg Estimate the resistance of a filament lamp from the readings 2.0 V, 0.13 A and 6.0 V, 0.25 A. Comment on the change.
 At 2.0 V: \(R = V/I = 2.0/0.13 = 15\,\Omega\). [C1] [A1]
@@ -285,7 +285,7 @@ Try the widget. Slide the p.d. and read \(R = V/I\) at each point. Switch on the
 :::
 
 :::lab Measuring an I–V characteristic
-The supply must be able to reach 0 V, so a **potential divider** is used rather than a single variable resistor. The ammeter is in series with the component and the voltmeter is in parallel with it.
+The supply must be able to reach 0 V, so a **potential divider** is used rather than a single variable resistor: the cell is connected across the whole of the resistor, and the sliding contact takes off any fraction of the cell's p.d., from 0 V up to the full e.m.f. (see [D.C. circuits](#phys.dc)). The ammeter is in series with the component and the voltmeter is in parallel with it.
 
 :::html
 <figure class="fig"><svg viewBox="85 28 450 210" role="img" aria-label="Circuit for measuring an I-V characteristic. A cell is connected across the two ends of a variable resistor. A sliding contact on the resistor and one end of it feed a series branch containing an ammeter and the component under test, with a voltmeter connected across the component."><path class="ln" d="M200 60H100V210H300M310 210H520V60H420"/><path class="ln" d="M300 194V226"/><path class="ln thick" d="M310 202V218"/><text class="ts tc" x="290" y="190">+</text><rect class="fp s-ink sw2" x="200" y="52" width="220" height="16"/><path class="ln" d="M310 112V72" marker-end="url(#ah)"/><text class="tl te" x="300" y="96">slider</text><text class="tl tc" x="310" y="44">variable resistor</text><path class="ln" d="M310 112H337M363 112H420M464 112H480V170H100"/><circle class="fi" cx="100" cy="170" r="4"/><circle class="fp s-ink sw2" cx="350" cy="112" r="13"/><text class="tb tc" x="350" y="117">A</text><rect class="fp s-ink sw2" x="420" y="104" width="44" height="16"/><text class="tl tc" x="442" y="140">component</text><circle class="fi" cx="390" cy="112" r="4"/><circle class="fi" cx="480" cy="112" r="4"/><path class="ln" d="M390 112V84H429M455 84H480V112"/><circle class="fp s-ink sw2" cx="442" cy="84" r="13"/><text class="tb tc" x="442" y="89">V</text></svg><figcaption>Moving the slider changes the p.d. across the component from 0 V up to the cell's e.m.f. Reversing the cell (or the connections to the component) gives the negative half of the characteristic.</figcaption></figure>
@@ -357,7 +357,7 @@ This agrees with the value for nichrome. Using two points far apart on the line 
 
 The resistance of some components changes with their surroundings, and this lets circuits measure the world. In both the components below, the change comes from the number density of free carriers: more energy in the material frees more carriers, so \(n\) in \(I = Anvq\) goes up and the resistance goes down.
 
-A **light-dependent resistor (LDR)** is a semiconductor whose resistance **decreases as the light intensity increases**. In the dark its resistance may be about \(100\,\mathrm{k\Omega}\) or more, and in bright light only a few hundred ohms or kilohms.
+A **light-dependent resistor (LDR)** is a semiconductor whose resistance **decreases as the light intensity increases** (light intensity is measured in lux, a unit of brightness as the eye sees it: the bigger the number, the brighter the light). In the dark its resistance may be about \(100\,\mathrm{k\Omega}\) or more, and in bright light only a few hundred ohms or kilohms.
 
 A **thermistor** in this syllabus is a negative temperature coefficient (NTC) thermistor, a semiconductor whose resistance **decreases as its temperature increases**. Warming the material releases more carriers.
 

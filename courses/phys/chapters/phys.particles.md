@@ -96,10 +96,12 @@ Some nuclei are unstable and **decay** by emitting radiation. Three types were d
 |---|---|---|---|---|
 | α | helium nucleus, \(^{4}_{2}\mathrm{He}\) (2 protons + 2 neutrons) | \(+2e\) | 4 u | paper or a few cm of air; strongly ionising |
 | β⁻ | fast electron from the nucleus | \(-e\) | \(5.5 \times 10^{-4}\) u | a few mm of aluminium |
-| β⁺ | fast **positron** | \(+e\) | \(5.5 \times 10^{-4}\) u | a few mm of aluminium, then it annihilates |
-| γ | photon of high-energy electromagnetic radiation | 0 | 0 | intensity reduced, never fully stopped, by thick lead; weakly ionising |
+| β⁺ | fast **positron** | \(+e\) | \(5.5 \times 10^{-4}\) u | a few mm of aluminium, then it annihilates (it meets an electron and both disappear, becoming gamma rays) |
+| γ | photon (a packet) of high-energy electromagnetic radiation | 0 | 0 | intensity reduced, never fully stopped, by thick lead; weakly ionising |
 
-The charges show up when the radiations pass through an electric field (between two charged plates) or a magnetic field. α and β⁻ are deflected in **opposite** directions, because their charges have opposite signs; β⁺ is deflected the same way as α; γ is not deflected at all. β-particles are deflected far more than α-particles, even though they usually move faster, because their charge-to-mass ratio is about 3600 times larger (\(1.76 \times 10^{11}\,\mathrm{C\,kg^{-1}}\) against \(4.8 \times 10^{7}\,\mathrm{C\,kg^{-1}}\), found in the example on the unified atomic mass unit below). A favourite Paper 1 question shows three tracks between two plates and asks you to name each one.
+Radiation is **ionising** when it knocks electrons off the atoms it passes; α-radiation does this the most and γ-radiation the least, which is why α is stopped so easily and γ goes so far.
+
+The charges show up when the radiations pass through an electric field (between two charged plates) or a magnetic field. α and β⁻ are deflected in **opposite** directions, because their charges have opposite signs; β⁺ is deflected the same way as α; γ is not deflected at all. β-particles are deflected far more than α-particles, even though they usually move faster, because their **charge-to-mass ratio** (the charge divided by the mass, \(Q/m\), in C kg⁻¹) is about 3600 times larger (\(1.76 \times 10^{11}\,\mathrm{C\,kg^{-1}}\) for an electron against \(4.8 \times 10^{7}\,\mathrm{C\,kg^{-1}}\) for an α-particle, both found in the example on the unified atomic mass unit below). A favourite Paper 1 question shows three tracks between two plates and asks you to name each one.
 
 ### Antiparticles and neutrinos
 
@@ -113,7 +115,7 @@ So the positron has mass \(9.11 \times 10^{-31}\,\mathrm{kg}\) and charge \(+e\)
 
 ### Energy spectra: why β-particles are different
 
-When a nucleus decays by emitting an α-particle, only two bodies are produced, the α-particle and the daughter nucleus. Conservation of momentum fixes how they share the energy released, so the α-particles from one type of decay all have the same energy, or one of a few discrete values.
+When a nucleus decays by emitting an α-particle, only two bodies are produced, the α-particle and the daughter nucleus (the nucleus left after the decay is the daughter; the original nucleus is the parent). Conservation of momentum fixes how they share the energy released, so the α-particles from one type of decay all have the same energy, or one of a few discrete values.
 
 :::eg A stationary radium-226 nucleus decays by α emission into radon-222. Show that the α-particle takes about 98% of the kinetic energy released. Use nucleon numbers in place of masses.
 The nucleus is at rest, so the total momentum afterwards is zero. The α-particle (mass 4) and the radon nucleus (mass 222) have equal and opposite momenta of magnitude \(p\). [B1]
@@ -182,11 +184,13 @@ One twelfth of the mass of an atom of carbon-12. \(1\,\mathrm{u} = 1.66 \times 1
 
 A proton or neutron has a mass of almost exactly 1 u, so the mass in u of a nucleus is close to its nucleon number. An electron's mass is only \(5.5 \times 10^{-4}\) u.
 
-:::eg Find the mass of an α-particle, taken as 4.00 u, in kg. Compare its charge-to-mass ratio with that of a proton.
+:::eg Find the mass of an α-particle, taken as 4.00 u, in kg. Compare its charge-to-mass ratio with that of a proton and that of an electron (\(m_e = 9.11 \times 10^{-31}\,\mathrm{kg}\)).
 Mass: \(4.00 \times 1.66 \times 10^{-27} = 6.64 \times 10^{-27}\,\mathrm{kg}\). [C1] [A1]
 The α-particle has charge \(+2e = 3.20 \times 10^{-19}\,\mathrm{C}\), so
 \[\frac{Q}{m} = \frac{3.20 \times 10^{-19}}{6.64 \times 10^{-27}} = 4.8 \times 10^{7}\,\mathrm{C\,kg^{-1}}\]
 For a proton: \(\dfrac{1.60 \times 10^{-19}}{1.67 \times 10^{-27}} = 9.6 \times 10^{7}\,\mathrm{C\,kg^{-1}}\), about twice as large. [B1] A proton has about twice the charge-to-mass ratio, so the same field accelerates it about twice as much.
+
+For an electron: \(\dfrac{1.60 \times 10^{-19}}{9.11 \times 10^{-31}} = 1.76 \times 10^{11}\,\mathrm{C\,kg^{-1}}\). [B1] This is \(1.76 \times 10^{11} / 4.8 \times 10^{7} \approx 3600\) times the α-particle's value, which is why β⁻ particles are deflected so much more.
 :::
 
 ## Quarks, hadrons and leptons
@@ -255,7 +259,7 @@ The widget lets you build hadrons from quarks. Try uud and udd first, then a pai
 \(\beta^{+}\) decay: \(\mathrm{u} \rightarrow \mathrm{d} + {}^{\;0}_{+1}\mathrm{e} + \nu\), so a proton (uud) becomes a neutron (udd).
 :::
 
-Charge is conserved. In β⁻ decay, the d quark has charge \(-\tfrac13\), and on the right-hand side we have \(+\tfrac23 + (-1) + 0 = -\tfrac13\). In β⁺ decay, the u quark has \(+\tfrac23\), and afterwards \(-\tfrac13 + 1 + 0 = +\tfrac23\). The nucleon number of the whole nucleus is unchanged because a nucleon turns into another nucleon. In nuclei β⁺ decay can happen, but a free proton does not decay this way, because a neutron has more mass than a proton.
+Charge is conserved. In β⁻ decay, the d quark has charge \(-\tfrac13\), and on the right-hand side we have \(+\tfrac23 + (-1) + 0 = -\tfrac13\). In β⁺ decay, the u quark has \(+\tfrac23\), and afterwards \(-\tfrac13 + 1 + 0 = +\tfrac23\). The nucleon number of the whole nucleus is unchanged because a nucleon turns into another nucleon. In nuclei β⁺ decay can happen, but a free proton does not decay this way, because a neutron has more mass than a proton (a particle can only decay into products of smaller total mass; more in [Nuclear physics](#phys.nuclear)).
 
 :::eg The decay of a free neutron, \(\mathrm{n} \rightarrow \mathrm{p} + \mathrm{e}^{-} + \bar{\nu}\), is a β⁻ decay. Describe the change in quark composition and show that charge is conserved.
 The neutron is udd and the proton is uud, so one down quark changes into an up quark. [B1]
@@ -331,7 +335,7 @@ A: (a) \(+\tfrac23 + \tfrac13\) [C1] \(= +1\). [A1] (b) It has one quark and one
 :::
 
 :::try Stretch for A*
-Q: [6 marks] ★★★ A 5.0 MeV α-particle is fired directly at a gold nucleus (79 protons). The α-particle stops momentarily at its distance of closest approach and then rebounds. (a) Show that its kinetic energy is \(8.0 \times 10^{-13}\,\mathrm{J}\). (b) Use energy conservation to estimate the distance of closest approach. The electric potential energy of two charges is \(\dfrac{Q_1 Q_2}{4\pi\varepsilon_0 r}\), with \(\dfrac{1}{4\pi\varepsilon_0} = 8.99 \times 10^{9}\,\mathrm{m\,F^{-1}}\). (c) The radius of a gold nucleus is about \(7 \times 10^{-15}\,\mathrm{m}\). Comment on your answer.
+Q: [6 marks] ★★★ A 5.0 MeV α-particle (1 MeV is a million electron-volts; 1 eV is the energy an electron gains through a p.d. of 1 V) is fired directly at a gold nucleus (79 protons). The α-particle stops momentarily at its distance of closest approach and then rebounds. (a) Show that its kinetic energy is \(8.0 \times 10^{-13}\,\mathrm{J}\). (b) Use energy conservation to estimate the distance of closest approach. The electric potential energy of two charges is \(\dfrac{Q_1 Q_2}{4\pi\varepsilon_0 r}\), with \(\dfrac{1}{4\pi\varepsilon_0} = 8.99 \times 10^{9}\,\mathrm{m\,F^{-1}}\). (c) The radius of a gold nucleus is about \(7 \times 10^{-15}\,\mathrm{m}\). Comment on your answer.
 H: \(1\,\mathrm{eV} = 1.60 \times 10^{-19}\,\mathrm{J}\), so \(1\,\mathrm{MeV} = 1.60 \times 10^{-13}\,\mathrm{J}\).
 H: At closest approach all the kinetic energy has become electric potential energy. The charges are \(2e\) and \(79e\).
 A: (a) \(E_K = 5.0 \times 1.60 \times 10^{-13}\) [C1] \(= 8.0 \times 10^{-13}\,\mathrm{J}\). [A1] (b) \(\dfrac{(2e)(79e)}{4\pi\varepsilon_0 r} = 8.0 \times 10^{-13}\) [M1] so

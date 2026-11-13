@@ -209,13 +209,13 @@ The geostationary orbit is used for television, telephone links and weather obse
 <figure class="fig small"><svg viewBox="20 12 410 395" role="img" aria-label="View from above the North Pole. The Earth is a small circle at the centre with a point P on the Equator. A dashed circle of radius about 6.6 Earth radii is the geostationary orbit, with a satellite on the line from the centre through P. A much smaller circle just outside the Earth is the orbit of the International Space Station. An arrow along the geostationary orbit points anticlockwise, west to east."><path class="ln-m thin dash" d="M210 210L340.8 79.2"/><path class="ln-m dash" d="M395 210A185 185 0 1 1 25 210A185 185 0 1 1 395 210"/><path class="c1" d="M257.9 31.3A185 185 0 0 0 162.1 31.3" marker-end="url(#ah-phys)"/><circle class="f1 s-acc sw2" cx="210" cy="210" r="28"/><text class="tl tc" x="210" y="214">Earth</text><path class="ln-m thin" d="M239.8 210A29.8 29.8 0 1 1 180.2 210A29.8 29.8 0 1 1 239.8 210"/><path class="ln-m thin" d="M188.9 231.1L152 258"/><text class="tl te" x="146" y="268">ISS orbit</text><circle class="fi" cx="229.8" cy="190.2" r="3.5"/><text class="tl tc" x="252" y="196">P</text><rect class="fp s-ink sw2" x="334.8" y="75.2" width="12" height="8"/><text class="tl" x="354" y="72">satellite</text><text class="tl tc" x="210" y="55">moves west to east</text><text class="tl tc" x="210" y="330">geostationary orbit</text><text class="tl tc" x="210" y="347">r = 4.22 × 10⁷ m</text></svg><figcaption>Looking down on the North Pole, the Earth turns anticlockwise. The satellite in geostationary orbit travels the same way and takes the same 24 hours, so it stays on the line through the point P on the Equator. The sizes are to scale: the geostationary orbit is 6.6 Earth radii from the centre, and the ISS orbit is almost touching the surface.</figcaption></figure>
 :::
 
-Now explore orbits yourself. Choose a body, move the radius slider and watch the period, speed and energies change. Then press the geostationary button and see the satellite stay above one point of the Earth.
+Now explore orbits yourself. Choose a body, move the radius slider and watch the period and speed change in the read-outs. The widget has two views: the orbit itself, and a graph of \(T^2\) (the period squared) against \(r^3\) (the radius cubed). Then press the geostationary button and see the satellite stay above one point of the Earth.
 
 :::html
 <div class="widget" data-w="phys-orbit" data-body="earth" data-r="42200"></div>
 :::
 
-Look for three things. First, the time scale: every period is sped up by the same factor, so the comparison between orbits is honest. Second, \(T^2/r^3\) stays the same when you change the radius, so the point on the second graph slides along a straight line through the origin. Third, a larger orbit has a **lower** speed but a **higher** total energy.
+Look for three things. First, the time scale: every period is sped up by the same factor, so the comparison between orbits is honest. Second, \(T^2/r^3\) stays the same when you change the radius, so on the \(T^2\) against \(r^3\) graph (the second view) the marked point slides along a straight line through the origin. Third, a larger orbit has a **lower** speed and a longer period. (The widget also reads out energies: they are explained in "Gravitational potential energy" below, where a larger orbit is found to have a higher total energy.)
 
 ## Gravitational potential
 
@@ -235,7 +235,7 @@ Why negative? Gravity is attractive, so as a mass moves in from infinity the gra
 :::proof Why φ = −GM/r
 Move a small mass \(m\) from infinity to distance \(r\) from a point mass \(M\). At distance \(x\) the gravitational pull is \(GMm/x^2\), directed inwards.
 To bring the mass in without speeding it up, an outward force of the same size must hold it back. This force points outwards while the mass moves inwards, so the work done by this force is negative.
-Adding up the work over all the small steps from \(x = \infty\) to \(x = r\) (the area under the force–distance graph) gives \(-\dfrac{GMm}{r}\).
+Adding up the work over all the small steps from \(x = \infty\) to \(x = r\) (the area under the force–distance graph) is an integral. The force is \(GMm\) times \(1/x^2\), and a standard result from the maths course is that the area under a graph of \(1/x^2\) from \(x = r\) out to infinity is \(1/r\) (because \(\int x^{-2}\,dx = -x^{-1}\), which is zero at infinity). So the area is \(GMm/r\), and the work, being negative, is \(-\dfrac{GMm}{r}\).
 The work done per unit mass is this divided by \(m\), so \(\phi = -\dfrac{GM}{r}\).
 :::
 
@@ -243,7 +243,7 @@ The work done per unit mass is this divided by \(m\), so \(\phi = -\dfrac{GM}{r}
 --f "-398.2/x" --x 6.37 50 --y -70 5 --pt "6.37,-62.5,surface: −62.5 MJ kg⁻¹@se" --pt "42.2,-9.4,geostationary@s" --xlabel "r / 10⁶ m" --ylabel "φ / MJ kg⁻¹"
 :::
 
-The gradient of the \(\phi\)–\(r\) graph is \(d\phi/dr = +GM/r^2\), the field strength. So the field strength is minus the potential gradient, with the direction pointing towards decreasing potential: \(g = -\dfrac{d\phi}{dr}\). Steep slope near the planet means strong field. (The units agree: \(\mathrm{MJ\,kg^{-1}}\) per \(10^{6}\,\mathrm{m}\) is \(\mathrm{N\,kg^{-1}}\).)
+The gradient of the \(\phi\)–\(r\) graph is \(d\phi/dr = +GM/r^2\), the field strength (differentiating \(-GM\,r^{-1}\) with the rule \(\tfrac{d}{dr}r^{n} = nr^{n-1}\) from the maths course gives \(+GM\,r^{-2}\)). So the field strength is minus the potential gradient, with the direction pointing towards decreasing potential: \(g = -\dfrac{d\phi}{dr}\). Steep slope near the planet means strong field. (The units agree: \(\mathrm{MJ\,kg^{-1}}\) per \(10^{6}\,\mathrm{m}\) is \(\mathrm{N\,kg^{-1}}\).)
 
 A surface that joins points of equal potential is an **equipotential**. Round a point mass the equipotentials are spheres, and the field lines cross them at right angles. Moving a mass along an equipotential needs no work, because \(\Delta\phi = 0\).
 

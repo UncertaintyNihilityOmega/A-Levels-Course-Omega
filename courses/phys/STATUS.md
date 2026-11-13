@@ -1,6 +1,6 @@
 # STATUS: Physics
 
-Last: 2026-11-13 · FIX · READER phys.overview to phys.solids: 23 items closed (SI and Study guide pointers, delta, trapezium area, slope bridge, ionising/activity/Bq/in phase, cosine and sine rule box with labelled triangle and worked line, bearing, quadratic formula stated in Free fall and pointed back to, inertia/normal/light/smooth, closed system, pendulum example, Searle's wire)
+Last: 2026-11-13 · FIX · READER phys.waves to phys.gases: 32 items closed. Waves: phase and crossed defined at first use, why I is proportional to A squared. Superposition: harmonic defined, microwave node reason, end correction, octave, resonance-tube lab direction fixed (raise the tube; water surface is a closed end), double-slit figure now shows theta and a sin theta, monochromatic and normal incidence explained. Electricity, particles (electron q/m added to example and check), circular, gravity (integral and derivative steps), temperature, gases (molecules per mm3 corrected to 2.5e16, per cm3 2.5e19; syringe lab; internal energy, translational, monatomic; heading renamed).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
