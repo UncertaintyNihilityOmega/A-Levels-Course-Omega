@@ -1,17 +1,17 @@
 # STATUS: Computer Science
 
-Last: 2026-11-13 · WRITE P4 · cs.hardware (9.0k words) and cs.logic (6.6k words), checks ok, phone ok; widget cs-logic (probe clean light/dark/phone/bad attributes; logic tested vs Python on 300 random expressions). Reviewer: click Test me and Check in the browser; hardware touchscreen section also covers infra-red; notes at the end of packages/P4.md
+Last: 2026-11-13 · REVIEW P1, P2, P3, P4 · 2 items (cs-ip text size and out-of-range prefix box); fixed: cs.data quiz feedback (43/52 wrong) and BCD 'one fifth' (is one sixth), cs.media quiz feedback, cs.data -128 figure label, cs-binary base change/bit flip left an error in Add tab (now rewrites inputs), 0-bit buttons get borders; cs-logic Test me/Check and all widgets keyboard-tested; facts match FACTS.md and the 9618/11 June 2024 mark scheme; 2 rules added to COURSE.md
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
 - LEAD: done 2026-11-13
-- P1: written 2026-11-13
-- P2: written 2026-11-13
-- P3: written 2026-11-13
-- P4: written 2026-11-13
+- P1: reviewed 2026-11-13
+- P2: reviewed 2026-11-13
+- P3: reviewed 2026-11-13
+- P4: reviewed 2026-11-13
 - P5: written 2026-11-13
 - P6: writing 2026-11-13
-- P7: open
+- P7: writing 2026-11-13
 - P8: open
 - P9: open
 - P10: open

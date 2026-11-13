@@ -92,6 +92,10 @@ packages/`Pn`.md, nothing else. Written by the Specialist (LEAD, 13 November 202
   Paper 2 questions refer to "the insert" for functions; never tell students to look anything else up.
 - Paper guides point to real past papers (links below); never copy or paraphrase a real question.
 - Practice questions never reuse a worked example's data or scenario.
+- Quiz feedback that explains a wrong option ("41 forgets the 4") and any fraction or ratio in a side remark
+  ("one sixth of its 48") are numbers too: recompute each in checks/`<id>`.py (REVIEW P1–P4 found two wrong).
+- A widget control that changes how input is read (a base, a unit, a mode) converts the values already typed, so a
+  valid input never turns into an error message.
 
 ## Board box rule
 `:::board` only with one board and one difference you are sure of; most chapters have none. Sure facts:

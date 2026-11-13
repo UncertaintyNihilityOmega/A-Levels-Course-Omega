@@ -338,7 +338,7 @@ A way of representing signed integers in which the most significant bit has a ne
 :::
 
 :::html
-<figure class="fig small"><svg viewBox="0 0 330 148" role="img" aria-label="The eight place values of an 8-bit two's complement number: minus 128, 64, 32, 16, 8, 4, 2 and 1. Below them is the bit pattern 1 0 1 1 0 1 1 1, with the left-hand bit marked as the sign bit. The sum shown is minus 128 plus 32 plus 16 plus 4 plus 2 plus 1, which equals minus 73."><text class="tl ti" x="21" y="16">Place values, 8-bit two's complement</text><rect class="f1 s-acc sw2" x="21" y="26" width="36" height="36"/><text class="tl tc tb" x="39" y="49">−128</text><rect class="fm s-acc sw2" x="57" y="26" width="36" height="36"/><text class="tl tc" x="75" y="49">64</text><rect class="fm s-acc sw2" x="93" y="26" width="36" height="36"/><text class="tl tc" x="111" y="49">32</text><rect class="fm s-acc sw2" x="129" y="26" width="36" height="36"/><text class="tl tc" x="147" y="49">16</text><rect class="fm s-acc sw2" x="165" y="26" width="36" height="36"/><text class="tl tc" x="183" y="49">8</text><rect class="fm s-acc sw2" x="201" y="26" width="36" height="36"/><text class="tl tc" x="219" y="49">4</text><rect class="fm s-acc sw2" x="237" y="26" width="36" height="36"/><text class="tl tc" x="255" y="49">2</text><rect class="fm s-acc sw2" x="273" y="26" width="36" height="36"/><text class="tl tc" x="291" y="49">1</text><text class="tl tc tb" x="39" y="86">1</text><text class="tl tc" x="75" y="86">0</text><text class="tl tc" x="111" y="86">1</text><text class="tl tc" x="147" y="86">1</text><text class="tl tc" x="183" y="86">0</text><text class="tl tc" x="219" y="86">1</text><text class="tl tc" x="255" y="86">1</text><text class="tl tc" x="291" y="86">1</text><text class="tl tc" x="39" y="108">sign bit</text><text class="tl tc tb" x="165" y="134">−128 + 32 + 16 + 4 + 2 + 1 = −73</text></svg><figcaption>The pattern 10110111 in 8-bit two's complement. The left-hand bit is worth −128, so a 1 there makes the number negative. The other seven bits add 32 + 16 + 4 + 2 + 1 = 55, giving −128 + 55 = −73.</figcaption></figure>
+<figure class="fig small"><svg viewBox="0 0 330 148" role="img" aria-label="The eight place values of an 8-bit two's complement number: minus 128, 64, 32, 16, 8, 4, 2 and 1. Below them is the bit pattern 1 0 1 1 0 1 1 1, with the left-hand bit marked as the sign bit. The sum shown is minus 128 plus 32 plus 16 plus 4 plus 2 plus 1, which equals minus 73."><text class="tl ti" x="21" y="16">Place values, 8-bit two's complement</text><rect class="f1 s-acc sw2" x="21" y="26" width="36" height="36"/><text class="tl tc tb" x="39" y="48" style="font-size:10.5px">−128</text><rect class="fm s-acc sw2" x="57" y="26" width="36" height="36"/><text class="tl tc" x="75" y="49">64</text><rect class="fm s-acc sw2" x="93" y="26" width="36" height="36"/><text class="tl tc" x="111" y="49">32</text><rect class="fm s-acc sw2" x="129" y="26" width="36" height="36"/><text class="tl tc" x="147" y="49">16</text><rect class="fm s-acc sw2" x="165" y="26" width="36" height="36"/><text class="tl tc" x="183" y="49">8</text><rect class="fm s-acc sw2" x="201" y="26" width="36" height="36"/><text class="tl tc" x="219" y="49">4</text><rect class="fm s-acc sw2" x="237" y="26" width="36" height="36"/><text class="tl tc" x="255" y="49">2</text><rect class="fm s-acc sw2" x="273" y="26" width="36" height="36"/><text class="tl tc" x="291" y="49">1</text><text class="tl tc tb" x="39" y="86">1</text><text class="tl tc" x="75" y="86">0</text><text class="tl tc" x="111" y="86">1</text><text class="tl tc" x="147" y="86">1</text><text class="tl tc" x="183" y="86">0</text><text class="tl tc" x="219" y="86">1</text><text class="tl tc" x="255" y="86">1</text><text class="tl tc" x="291" y="86">1</text><text class="tl tc" x="39" y="108">sign bit</text><text class="tl tc tb" x="165" y="134">−128 + 32 + 16 + 4 + 2 + 1 = −73</text></svg><figcaption>The pattern 10110111 in 8-bit two's complement. The left-hand bit is worth −128, so a 1 there makes the number negative. The other seven bits add 32 + 16 + 4 + 2 + 1 = 55, giving −128 + 55 = −73.</figcaption></figure>
 :::
 
 The place-value view explains the range. With \(n\) bits, the smallest number has only the MSB set, \(-2^{n-1}\); the largest has every bit except the MSB set, \(2^{n-1} - 1\).
@@ -755,7 +755,7 @@ Q: [6 marks] ★★★ A bank in Dhaka stores a 12-digit account number. It is c
 H: The largest 12-digit number is 999 999 999 999, which is \(10^{12} - 1\).
 A: (a) 12 digits at 4 bits each is 48 bits. [B1]
 
-(b) The largest 12-digit number is 999 999 999 999, one less than \(10^{12}\). [B1] This is larger than \(2^{39}\), so 39 bits are not enough. [B1] It is smaller than \(2^{40}\), so 40 bits are enough. [B1] (BCD wastes 8 bits, one fifth of its 48.)
+(b) The largest 12-digit number is 999 999 999 999, one less than \(10^{12}\). [B1] This is larger than \(2^{39}\), so 39 bits are not enough. [B1] It is smaller than \(2^{40}\), so 40 bits are enough. [B1] (BCD uses 8 more bits than binary: one sixth of its 48.)
 
 (c) Each digit can be sent straight to a display or printer with no conversion. [B1] Every denary digit is held exactly, which matters for numbers such as account numbers and money. [B1]
 :::
@@ -765,8 +765,8 @@ A: (a) 12 digits at 4 bits each is 48 bits. [B1]
 - 41
 + 45
 - 43
-- 52
-> 32 + 8 + 4 + 1 = 45. The answer 41 forgets the 4; 43 forgets the 8 and adds 2; 52 reads the place values from the wrong end.
+- 180
+> 32 + 8 + 4 + 1 = 45. The answer 41 forgets the 4; 43 counts the 1 in the 4s column as 2; 180 reads the place values from the wrong end (starting with 1 at the left).
 ? How many bytes are in 1 KiB?
 - 1000
 + 1024

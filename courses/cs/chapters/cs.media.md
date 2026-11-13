@@ -599,7 +599,7 @@ A: (a) Size = rate × resolution × time. [B1] Doubling the rate and halving the
 + 128 000
 - 16 000
 - 24 000
-> \(8000 \times 16 = 128\,000\) bits each second. The other answers are the rate, the resolution times 1000, or the sum of the two.
+> \(8000 \times 16 = 128\,000\) bits each second. 8000 is the rate alone, without the 16 bits of each sample; 16 000 and 24 000 do not multiply the rate by the resolution.
 ? What does a higher sampling rate do?
 - It stores each sample with more bits.
 + It takes more samples each second, so the sound is a closer copy and the file is larger.

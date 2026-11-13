@@ -196,7 +196,22 @@
     const bitsOptions = [];
     for (let k = 4; k <= 16; k++) bitsOptions.push([String(k), k + ' bits']);
     const bitsCtl = select('Number of bits', bitsOptions, String(bits), function (v) { bits = clampInt(v, 4, 16, 8); buildBits(); refresh(); });
-    const baseCtl = select('Type the number as', [['10', 'Denary'], ['2', 'Binary'], ['16', 'Hexadecimal']], base, function (v) { base = v; refresh(); });
+    const baseCtl = select('Type the number as', [['10', 'Denary'], ['2', 'Binary'], ['16', 'Hexadecimal']], base, function (v) { rebase(v); refresh(); });
+
+    // Rewrite both boxes in the new base so a change of base never turns a good input into an error.
+    function rebase(nb) {
+      if (nb === base) return;
+      [boxA, boxB].forEach(function (box) {
+        const parsed = L.parse(box.input.value, base, bits);
+        const ap = L.toAddPattern(parsed, bits, '');
+        if (ap.error) return;
+        if (nb === '2') box.input.value = ap.p;
+        else if (nb === '16') box.input.value = L.hexOf(ap.p);
+        else box.input.value = parsed.kind === 'value' ? String(parsed.v) : String(L.unsignedOf(ap.p));
+      });
+      base = nb;
+      baseCtl.sel.value = nb;
+    }
 
     function textBox(labelText, initial) {
       const input = attrs(W.h('input', { type: 'text' }), { inputmode: 'text', autocomplete: 'off', spellcheck: 'false', size: '14' });
@@ -245,7 +260,7 @@
         for (let k = start; k < Math.min(bits, start + perRow); k++) {
           const pos = bits - 1 - k;
           const pv = pos === bits - 1 ? MINUS + L.pow2(pos) : String(L.pow2(pos));
-          const btn = W.h('button', { 'class': 'w-tab', type: 'button', text: '0', style: { width: '100%', minWidth: '0', padding: '6px 0', fontFamily: 'ui-monospace, Menlo, Consolas, monospace', fontSize: '16px' } });
+          const btn = W.h('button', { 'class': 'w-tab', type: 'button', text: '0', style: { width: '100%', minWidth: '0', padding: '6px 0', border: '1px solid var(--rule)', fontFamily: 'ui-monospace, Menlo, Consolas, monospace', fontSize: '16px' } });
           btn.setAttribute('aria-pressed', 'false');
           btn.setAttribute('aria-label', 'Bit ' + pos + ', place value ' + pv);
           btn.addEventListener('click', function () { toggle(k, pos); });
@@ -265,8 +280,8 @@
           b.btn.textContent = one ? '1' : '0';
           b.btn.setAttribute('aria-pressed', one ? 'true' : 'false');
           b.btn.style.fontWeight = one ? '800' : '400';
-          b.btn.style.borderColor = one ? 'var(--sc)' : '';
-          b.btn.style.borderWidth = one ? '2px' : '';
+          b.btn.style.borderColor = one ? 'var(--sc)' : 'var(--rule)';
+          b.btn.style.borderWidth = one ? '2px' : '1px';
           b.btn.disabled = false;
         } else {
           b.btn.textContent = '–';
@@ -281,8 +296,7 @@
       const arr = pattern.split('');
       arr[k] = arr[k] === '1' ? '0' : '1';
       const np = arr.join('');
-      base = '2';
-      baseCtl.sel.value = '2';
+      rebase('2');
       boxA.input.value = np;
       refresh();
       W.say(el, 'Bit ' + pos + ' is now ' + arr[k] + '. The pattern is ' + np + '.');
