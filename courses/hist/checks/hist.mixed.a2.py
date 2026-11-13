@@ -46,7 +46,7 @@ eq("Order 00447 quotas total", 75950 + 193000, 268950)
 
 # Practice extracts: stated lengths are 'about' the true word counts (within 8 words), all under 600
 text = Path(__file__).resolve().parent.parent.joinpath("chapters", "hist.mixed.a2.md").read_text(encoding="utf-8")
-found = re.findall(r"^:::note Practice extract (\w) \(about (\d+) words\)\n(.*?)^\*A summary", text, re.S | re.M)
+found = re.findall(r"^:::note Mixed extract (\w) \(about (\d+) words\)\n(.*?)^\*A summary", text, re.S | re.M)
 eq("number of practice extracts", len(found), 6)
 for letter, said, body in found:
     n = len(body.split())

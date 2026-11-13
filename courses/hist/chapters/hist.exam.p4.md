@@ -20,7 +20,7 @@ Paper 4 is the biggest paper of the A Level: 60 marks, 30% of the grade, and two
 | Sources | None: no sources, maps or extra material |
 | Weight | 30% of A Level (Paper 4 is not part of AS) |
 | Assessment objectives | AO1 historical knowledge (50%) and AO2 historical explanation, analysis and judgement (50%) |
-| Mark scheme | Table A (AO2) out of 15 plus Table B (AO1) out of 15, one essay marked twice |
+| Mark scheme | Table A (AO2) out of 15 plus Table B (AO1) out of 15, one essay marked twice. Tables A and B are named afresh for each paper; these are the Paper 4 tables |
 :::
 
 ## What the paper looks like
@@ -166,7 +166,7 @@ The explorer holds the Paper 4 levels. Choose a table, tick what an essay does, 
 
 ## Choosing your two questions
 
-You have six minutes, and the choice is worth as much as any paragraph. A student who picks the question on the topic they like best and finds it is about a narrow issue they have not revised has lost ten marks before writing a word.
+You have six minutes at the start (the Timing table below), and the choice is worth as much as any paragraph. Use them to choose and to jot the facts and two criteria for each question; the 4-minute plan inside each essay's 46 minutes is then the short five-line plan (step 6), which you tidy as you begin to write. A student who picks the question on the topic they like best and finds it is about a narrow issue they have not revised has lost ten marks before writing a word.
 
 :::steps
 1. **Read all three questions.** For each, underline three things: the **command word and form** (reasons? a view? extent?), the **focus** (the issue itself), and the **date limits**.
@@ -174,7 +174,7 @@ You have six minutes, and the choice is worth as much as any paragraph. A studen
 3. **Test your argument.** Can you state two criteria and two sides at once? If you can argue only one side, you will be held at Level 3.
 4. **Compare the focus with your revision**, not the topic title. A question on a topic you know well can still ask about the one policy you skipped.
 5. **Choose the two where you have the most precise knowledge and an argument.** Do not choose by topic alone, and do not choose a view question just because you agree with the view: you are never required to.
-6. **Jot a five-line plan for each** before you write the first. The rest of the time is for writing.
+6. **Jot the facts for each, then make a five-line plan** (criteria, sides, judgement) for the first essay before you write it, and for the second before you write that. The rest of the time is for writing.
 :::
 
 ## Building a 30-mark essay
@@ -251,8 +251,8 @@ The history is in [Stalin's Russia (2)](#hist.d.stalin.2) and [Stalin's Russia (
 **Plan (four minutes).**
 - *Terms:* "depended" means what the regime could not have done without. "Persuasion" is the cult, propaganda, rewards and real benefits. "Terror" is arrests, shootings, camps and fear.
 - *Criteria:* (1) **Reach**: which touched more people and more groups? (2) **Decisive moments**: which did the regime use when it was most at risk? (3) **Dependence**: which could the regime have done without, and which depended on the other?
-- *For the view:* the cult (the fiftieth birthday, 21 December 1929; the *Short Course* of 1938); the 1936 Constitution (5 December 1936), announced as the most democratic in the world; the Stakhanovite movement (30–31 August 1935) and its rewards; the promoted officials and workers who rose after 1937 and believed sincerely; letters to Stalin.
-- *Against the view:* about 1.6 million arrested and 681,692 shot in 1937–38 (353,074 and 328,618); Order 00447 (30 July 1937) with quotas of 75,950 to be shot and 193,000 for the camps; a Gulag of about 1.5 million; force in the countryside during collectivisation; the cult itself protected by law, since criticism could be punished as "anti-Soviet agitation".
+- *For the view:* the cult (the fiftieth birthday, 21 December 1929; the *Short Course* of 1938, the official history of the Party, a textbook in which Stalin's version of events was fixed); the 1936 Constitution (5 December 1936), announced as the most democratic in the world; the Stakhanovite movement (30–31 August 1935) and its rewards; the promoted officials and workers who rose after 1937 and believed sincerely; letters to Stalin.
+- *Against the view:* about 1.6 million arrested and 681,692 shot in 1937–38 (353,074 in 1937 and 328,618 in 1938); Order 00447 (30 July 1937) with quotas of 75,950 to be shot and 193,000 for the camps; a Gulag of about 1.5 million; force in the countryside during collectivisation; the cult itself protected by law, since criticism could be punished as "anti-Soviet agitation".
 - *Judgement:* terror was the more fundamental, but persuasion explains the quality of the support.
 
 **A Level 3 paragraph (one-sided).** "Stalin relied on persuasion. He had a cult of personality, which began with his fiftieth birthday in 1929, and Soviet newspapers praised him as the father of the nation. In 1936 a new constitution was announced and Stakhanovite workers were given rewards. Many people loved Stalin and wrote to him as a father. So Stalin's rule depended on persuasion."
@@ -290,7 +290,7 @@ A student wrote this as their main paragraph:
 
 | Minutes | Task | Marks |
 |---|---|---|
-| 6 | Read the three questions; choose two; jot five facts and two criteria for each | n/a |
+| 6 | Read the three questions; choose two; jot five facts and two criteria for each (the rough plan for both essays) | n/a |
 | 46 | Question 1: plan (4 minutes), write (42 minutes) | 30 |
 | 46 | Question 2: plan (4 minutes), write (42 minutes) | 30 |
 | 7 | Check both: finish any unfinished conclusion; add the missing date or name | n/a |

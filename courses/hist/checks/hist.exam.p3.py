@@ -74,16 +74,16 @@ eq("28 July 1914 weekday", date(1914, 7, 28).weekday(), 1)
 # Crises settled in 1906, 1909, 1911, 1913 (the extract lists 1905, 1908, 1911, 1913 as crisis years)
 eq("Bosnian crisis span", 1909 - 1908, 1)
 
-# Word counts in the worked example (extract about 200; Level 6 answer about 560)
+# Word counts in the worked example (extract about 200; Level 6 answer about 600)
 text = open("chapters/hist.exam.p3.md", encoding="utf-8").read()
 i = text.index("It has become a habit"); j = text.index("**Plan (ten minutes)")
 n_extract = len(text[i:j].split())
 assert 190 <= n_extract <= 210, n_extract
 a = text.index('"The extract argues one thing in two linked ways'); b = text.index("*Commentary.* The first paragraph states the **whole**")
 n_answer = len(text[a:b].split())
-assert 540 <= n_answer <= 580, n_answer
+assert 580 <= n_answer <= 620, n_answer
 # the chapter says so
-assert "about 200 words" in text and "About 560 words" in text
+assert "about 200 words" in text and "About 600 words" in text
 
 # Quiz: three levels of Paper 3 questions are 20 + 20 and 1 + 1 + 1 questions in the specimen
 eq("specimen questions", 3 * 1, 3)
