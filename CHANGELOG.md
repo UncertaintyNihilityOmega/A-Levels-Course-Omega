@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+- New logo: the end of a log, "AΩ" in dark green Caudex on a white face with tree rings (app icons, favicon, top bar).
+- Settings page (last in the sidebar): theme, text size, course colours, background and highlighter colours, return
+  to default; export, import and clear progress; protect stored data; offline downloads (everything, core pages only,
+  or chosen courses), with a notice when the offline copy is ready or updated.
+- Computer Science (9618) in progress.
+
 ## 0.6.0 (2026-11-13)
 - Biology complete: 64 chapters (Cambridge 9700), 17 widgets, five mock papers, links page; read through by a beginner Reader.
 - History complete: 96 chapters (Cambridge 9489, 2027–2029; replaces Psychology, now a summary under Other subjects),

@@ -12,5 +12,5 @@ const fonts = [
   face('Atkinson Next', 'atkinson-next.woff2', 'normal', '400 800')
 ].join('\n');
 module.exports = {
-  shell: read('shell.html'), css: fonts + '\n' + read('style.css'), core: read('core.js'), app: read('app.js'), study: read('widgets-study.js')
+  shell: read('shell.html'), css: fonts + '\n' + read('style.css'), core: read('core.js'), app: read('app.js') + '\n;\n' + read('settings.js'), study: read('widgets-study.js')
 };

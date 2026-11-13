@@ -25,23 +25,27 @@
     if (!root.getAttribute('data-theme')) root.setAttribute('data-theme-auto', effectiveDark() ? 'dark' : 'light');
     $('#themeBtn').setAttribute('aria-pressed', effectiveDark() ? 'true' : 'false');
   }
-  $('#themeBtn').addEventListener('click', () => {
-    const next = effectiveDark() ? 'light' : 'dark';
-    root.setAttribute('data-theme', next);
+  /** theme: 'light', 'dark' or null (follow the system) */
+  function setTheme(next, quiet) {
+    if (next) root.setAttribute('data-theme', next); else root.removeAttribute('data-theme');
     store.set('theme', next);
     syncThemeIcon();
-    toast(next === 'dark' ? 'Chalkboard mode' : 'Paper mode');
+    if (!quiet) toast(next === 'dark' ? 'Chalkboard mode' : next === 'light' ? 'Paper mode' : 'Follows your device');
     setTimeout(W.themeChanged, 30);
-  });
+  }
+  $('#themeBtn').addEventListener('click', () => setTheme(effectiveDark() ? 'light' : 'dark'));
   try { window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', syncThemeIcon); } catch (e) { /* old browsers */ }
-  $('#textBtn').addEventListener('click', () => {
-    const cur = root.getAttribute('data-size') || 'm';
-    const next = cur === 'm' ? 'l' : cur === 'l' ? 'xl' : 'm';
+  /** text size: 'm', 'l' or 'xl' */
+  function setSize(next, quiet) {
     if (next === 'm') root.removeAttribute('data-size'); else root.setAttribute('data-size', next);
     store.set('size', next === 'm' ? null : next);
-    toast({ m: 'Text size: normal', l: 'Text size: large', xl: 'Text size: extra large' }[next]);
+    if (!quiet) toast({ m: 'Text size: normal', l: 'Text size: large', xl: 'Text size: extra large' }[next]);
     setTimeout(W.themeChanged, 30);
     setTimeout(() => { if (current) markScrollers(current); }, 60);
+  }
+  $('#textBtn').addEventListener('click', () => {
+    const cur = root.getAttribute('data-size') || 'm';
+    setSize(cur === 'm' ? 'l' : cur === 'l' ? 'xl' : 'm');
   });
   syncThemeIcon();
 
@@ -415,7 +419,10 @@
   }
   $('#skipLink').addEventListener('click', (e) => { e.preventDefault(); focusOn((current && $('h1', current)) || $('#main')); });
   window.addEventListener('hashchange', route);
-  function loadFailed(e) { toast(e.message + ' — keep the c folder next to index.html.'); }
+  function loadFailed(e) {
+    if (/^https?:$/.test(location.protocol)) toast(navigator.onLine === false ? 'This course is not saved on this device. Go online, or download it in Settings.' : e.message + '. Check your connection.');
+    else toast(e.message + ' — keep the c folder next to index.html.');
+  }
 
   function buildToc(art) {
     rail.innerHTML = '';
@@ -725,6 +732,9 @@
     body.append(ol);
     if (list.length > 15) body.append(W.h('p', { class: 'w-note' }, `${list.length - 15} more after these. Revise the top ones, then redo the questions you lost marks on.`));
   }
+
+  // for settings.js
+  W.ui = { toast, setTheme, setSize, renderProgress };
 
   /* ---------- start ---------- */
   renderProgress();

@@ -8,8 +8,13 @@
 - Reader pass done Nov 13: Mathematics (169 items) and Physics (109 items, 4 batches; phys.dc added to P5), all
   FIXed; site check 0 errors, strict build passes. Release v0.6.0 tagged (CHANGELOG).
 - Now: queue item 5, Computer Science (`cs`, 9618, 49 chapters in 22 packages): LEAD done Nov 13 (gold cs.datatypes);
-  P1–P5 written (11 chapters; widgets cs-binary, cs-ip, cs-logic, cs-asm). Run of 18:25 Nov 13: REVIEW P1–P4 (with
-  cs-preview 5110, allowed by the user this session), WRITE P6 and P7 running.
+  P1–P7 written (16 chapters; widgets cs-binary, cs-ip, cs-logic, cs-asm, cs-check, cs-sql); REVIEW P1–P4 done
+  (2 cs-ip items open in REVIEW.md). Next: FIX (cs-ip) + WRITE P8, WRITE P9, REVIEW P5–P8 once P8 is written.
+- Waiting for the 5-hour reset at 23:20 Nov 13 (Istanbul; 20:20 UTC): 5-hour at 88%, weekly 23%.
+- Site, Nov 13 (user's requests): new logo (log end, "AΩ" in Caudex, dark green and white; engine/icons.js), and a
+  Settings page (red, last in the sidebar; engine/settings.js): theme, text size, course colours, background,
+  highlighter, return to default, export/import/clear progress, protect storage, offline downloads (everything,
+  core only, per course; sw.js keeps the choice in the cache "zta.prefs").
   Engine: labelled code blocks and pseudocode/Python check notes (cs requests).
 - USER (optional): GitHub Release page for v0.6.0 (tag is pushed; gh not installed, GitHub not signed in in the pane):
   sign in to github.com in the browser pane, or create it at Releases → Draft a new release → tag v0.6.0, notes from
