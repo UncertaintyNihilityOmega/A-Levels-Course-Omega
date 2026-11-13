@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-13 · WRITE P3 · cs.networks (8.6k words) and cs.internet (7.8k words), checks run every Python block and recompute every number; widget cs-ip (313 cases tested against Python ipaddress, probe clean light/dark/phone/bad attributes); six hand SVG figures. Reviewer: see Writer's notes in packages/P3.md ('subnetwork models' reading, CSMA/CA included, lower-case IPv6 digits).
+Last: 2026-11-13 · WRITE P5 · cs.processor 7.0k words (2 figures, cs-asm F-E widget), cs.assembly 8.5k words (cs-asm run mode); widget cs-asm probed clean, JS tested against data/cs.asmsim.py (8.5k comparisons) and a fake-DOM UI test; checks rebuild every trace and RTN table from the chapter's program blocks; reviewer: look at cs-asm once in the browser, opcode table and JMR are invented/defined in the chapter
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -8,8 +8,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P1: written 2026-11-13
 - P2: written 2026-11-13
 - P3: written 2026-11-13
-- P4: open
-- P5: open
+- P4: writing 2026-11-13
+- P5: written 2026-11-13
 - P6: open
 - P7: open
 - P8: open
