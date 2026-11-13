@@ -44,7 +44,8 @@ In a direct collision (along a straight line) of two particles \(A\) and \(B\), 
 total momentum before = total momentum after, where \(u\) is the velocity before and \(v\) the velocity after.
 - Momentum is a vector, so **signs matter**. A particle moving in the negative direction has a negative \(u\) or \(v\).
 - If the particles **coalesce** (stick together), they move with a common velocity \(V\) afterwards and the mass of the combined body is \(m_A + m_B\): \(m_Au_A + m_Bu_B = (m_A + m_B)V\).
-- Kinetic energy is generally **not** conserved in a collision, so do not use it as an equation here.
+- Kinetic energy (the energy of motion, defined below) is generally **not** conserved in a collision, so do not use it as an equation here.
+- Friction acts during the collision too, but the collision lasts so short a time, and the forces between the particles are so large, that its effect is negligible. Use momentum from just before to just after the impact, and friction (\(F = ma\), constant acceleration equations) for the motion before and after.
 :::
 
 :::proof Why momentum is conserved
@@ -109,7 +110,7 @@ The gun recoils at \(2\ \mathrm{m\,s^{-1}}\) in the opposite direction to the bu
 
 ### Momentum and kinetic energy
 
-Momentum is conserved in every collision, but energy is not: some turns into sound and heat. If you know the kinetic energy \(\tfrac12 mv^2\) (see [Work, energy and power](#math.m.energy)), the loss in a collision is the kinetic energy before minus after.
+Momentum is conserved in every collision, but energy is not: some turns into sound and heat. **Kinetic energy** is the energy a moving particle has because of its speed: \(\mathrm{KE} = \tfrac12 mv^2\), measured in joules (J), where \(1\ \mathrm{J} = 1\ \mathrm{kg\,m^2\,s^{-2}}\). The next chapter, [Work, energy and power](#math.m.energy), explains it fully; here you only need to work it out. The loss in a collision is the kinetic energy before minus after.
 
 :::eg A railway truck of mass 12 000 kg moves at \(3\ \mathrm{m\,s^{-1}}\) and collides with a stationary truck of mass 8000 kg. They couple together. Find their speed and the kinetic energy lost.
 \[12\,000 \times 3 = 20\,000V \quad\Rightarrow\quad V = 1.8\ \mathrm{m\,s^{-1}}\]

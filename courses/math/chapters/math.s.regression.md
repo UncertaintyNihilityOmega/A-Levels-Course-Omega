@@ -60,7 +60,7 @@ For \(n\) pairs \((x, y)\):
 | \(y\) | 48 | 47 | 60 | 58 | 66 | 74 | 71 | 84 |
 
 Calculate \(r\) and interpret it.
-The sums are \(\sum x = 56\), \(\sum y = 508\), \(\sum x^2 = 484\), \(\sum y^2 = 33\,406\) and \(\sum xy = 3868\).
+The sums are \(\sum x = 56\), \(\sum y = 508\), \(\sum x^2 = 484\), \(\sum y^2 = 33\,406\) and \(\sum xy = 3868\). \(\sum xy\) means multiply each student's \(x\) by their \(y\) and add: \(2 \times 48 + 3 \times 47 + 5 \times 60 + \dots + 12 \times 84 = 3868\). Likewise \(\sum x^2\) and \(\sum y^2\) are the squares added up.
 \[S_{xx} = 484 - \frac{56^2}{8} = 92 \qquad S_{yy} = 33\,406 - \frac{508^2}{8} = 1148 \qquad S_{xy} = 3868 - \frac{56 \times 508}{8} = 312\]
 \[r = \frac{312}{\sqrt{92 \times 1148}} = \frac{312}{324.99} = 0.960\]
 There is strong positive linear correlation between hours of revision and test score: more revision goes with higher scores.
@@ -84,18 +84,21 @@ The **residual** of a point is the vertical distance from the point to the line:
 - \(b\) is the **gradient**: for each increase of 1 in \(x\), the predicted \(y\) changes by \(b\).
 - \(a\) is the **intercept**: the predicted \(y\) when \(x = 0\). It may have no sensible meaning if \(x = 0\) is outside the data.
 - Use it to predict \(y\) from \(x\), where \(x\) is the explanatory variable. The line of \(x\) on \(y\) is a different line and should not be used for that.
+- The line of \(x\) on \(y\) swaps the roles: \(x = c + dy\) with \(d = S_{xy}/S_{yy}\). Use \(y\) on \(x\) to predict \(y\) from \(x\), and \(x\) on \(y\) to predict \(x\) from \(y\).
 :::
 
 :::proof Why \(b = S_{xy}/S_{xx}\) and \(a = \bar y - b\bar x\)
-Choose \(a\) and \(b\) to make the sum of squared residuals \(S = \sum (y - a - bx)^2\) as small as possible. Treat \(S\) as a function of \(a\) and \(b\). At the minimum both slopes are zero. Differentiating with respect to \(a\), with \(b\) fixed:
-\[\frac{\partial S}{\partial a} = -2\sum (y - a - bx) = 0 \quad\Rightarrow\quad \sum y - na - b\sum x = 0\]
-Divide by \(n\): \(\bar y = a + b\bar x\), so \(a = \bar y - b\bar x\). The line passes through \((\bar x, \bar y)\).
+Choose \(a\) and \(b\) to make the sum of squared residuals \(S = \sum (y - a - bx)^2\) as small as possible. We only need completing the square, twice.
 
-Differentiating with respect to \(b\), with \(a\) fixed:
-\[\frac{\partial S}{\partial b} = -2\sum x(y - a - bx) = 0 \quad\Rightarrow\quad \sum xy - a\sum x - b\sum x^2 = 0\]
-Substitute \(a = \bar y - b\bar x\) and use \(\sum x = n\bar x\), \(\sum y = n\bar y\):
-\[\sum xy - n\bar x\bar y = b\left(\sum x^2 - n\bar x^2\right)\]
-The left side is \(S_{xy}\) and the bracket is \(S_{xx}\), so \(b = \dfrac{S_{xy}}{S_{xx}}\). Check with \(x = 1, 2, 3\), \(y = 2, 3, 7\): \(S_{xy} = 5\) and \(S_{xx} = 2\), so \(b = 2.5\), \(a = 4 - 2.5 \times 2 = -1\), and the residuals are \(0.5, -1, 0.5\), which add to 0.
+Write the line as \(y = k + b(x - \bar x)\), where \(k = a + b\bar x\). Then each residual is \((\bar y - k) + \big[(y - \bar y) - b(x - \bar x)\big]\). Square and add. The cross term contains \(\sum\big[(y - \bar y) - b(x - \bar x)\big]\), which is 0 because the deviations from a mean add to 0 (\(\sum(y - \bar y) = 0\) and \(\sum(x - \bar x) = 0\)). So
+\[S = n(\bar y - k)^2 + \sum\big[(y - \bar y) - b(x - \bar x)\big]^2\]
+The first term is a square, so it is least (zero) when \(k = \bar y\), that is \(a + b\bar x = \bar y\), so \(a = \bar y - b\bar x\). The line passes through \((\bar x, \bar y)\).
+
+Now the second term, whatever \(a\) is. Use \(\sum(x - \bar x)^2 = S_{xx}\), \(\sum(y - \bar y)^2 = S_{yy}\) and \(\sum(x - \bar x)(y - \bar y) = \sum xy - n\bar x\bar y = S_{xy}\). Expanding the square and adding:
+\[\sum\big[(y - \bar y) - b(x - \bar x)\big]^2 = S_{yy} - 2bS_{xy} + b^2S_{xx}\]
+Complete the square in \(b\):
+\[S_{xx}\left(b - \frac{S_{xy}}{S_{xx}}\right)^2 + S_{yy} - \frac{S_{xy}^2}{S_{xx}}\]
+Only the first part depends on \(b\), and it is least (zero) when \(b = \dfrac{S_{xy}}{S_{xx}}\). Check with \(x = 1, 2, 3\), \(y = 2, 3, 7\): \(S_{xy} = 5\) and \(S_{xx} = 2\), so \(b = 2.5\), \(a = 4 - 2.5 \times 2 = -1\), and the residuals are \(0.5, -1, 0.5\), which add to 0.
 :::
 
 :::eg For the revision data, find the regression line of score on hours, interpret \(a\) and \(b\), and predict the score for a student who revises for 10 hours.

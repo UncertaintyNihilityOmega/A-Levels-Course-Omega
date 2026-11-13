@@ -38,6 +38,11 @@ eq("denominator", round(cos(d(30)) + 0.2, 4), 1.0660); eq("T", sf(T), 37.5)
 R = 100 - 0.5 * T; eq("R", sf(R), 81.2)
 eq("limiting check", T * cos(d(30)), 0.4 * R, 1e-9)
 
+# Horizontal force on a smooth 30 degree slope, m = 2.5
+mg = 25; Ph = mg * tan(d(30)); Rh = mg * cos(d(30)) + Ph * sin(d(30))
+eq("Ph", sf(Ph, 3), 14.4); eq("Rh", sf(Rh, 3), 28.9); eq("Rh vertical", Rh * cos(d(30)), 25, 1e-9)
+eq("Rh parts", round(mg * cos(d(30)), 2), 21.65); eq("Ph sin", round(Ph * sin(d(30)), 2), 7.22)
+
 # Exam-style slope: sin = 0.6, cos = 0.8, mu = 0.5, m = 5
 R = 50 * 0.8; Fmax = 0.5 * R; down = 50 * 0.6
 eq("R", R, 40); eq("Fmax", Fmax, 20); eq("down", down, 30)

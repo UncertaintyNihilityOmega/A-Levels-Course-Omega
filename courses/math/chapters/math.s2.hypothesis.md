@@ -96,7 +96,7 @@ For \(H_1: p \ne p_0\), the evidence against \(H_0\) can be in either tail, so *
 :::eg A coin is thrown 20 times and lands heads 15 times. Test at the 5% significance level whether the coin is biased.
 Let \(p\) be the probability of heads. \(H_0: p = 0.5\), \(H_1: p \ne 0.5\). Two-tailed, so each tail has \(2.5\%\).
 
-Under \(H_0\), \(X \sim B(20, 0.5)\). The observed value 15 is in the upper tail:
+Under \(H_0\), \(X \sim B(20, 0.5)\). Compare the observed value with the mean under \(H_0\) (here \(np = 10\)): above it, use the upper tail \(P(X \ge \text{observed})\); below it, the lower tail \(P(X \le \text{observed})\). The observed value 15 is above 10, so it is in the upper tail:
 \[P(X \ge 15) = 0.0207\]
 Since \(0.0207 < 0.025\), reject \(H_0\). There is sufficient evidence at the 5% level to suggest that the coin is biased.
 
@@ -177,7 +177,7 @@ The curve is the distribution of \(\bar X\) under \(H_0\), and the shaded area i
 \[z = \frac{102.8 - 100}{1.2} = 2.333 \qquad P(\bar X > 102.8) = P(Z > 2.333) = 0.00982\]
 Compare with \(0.025\): \(0.00982 < 0.025\), so reject \(H_0\). There is sufficient evidence at the 5% level to suggest that the mean mass has changed.
 
-Critical region: the tails each have 2.5%, so the critical values are \(z = \pm 1.96\):
+Critical region: the tails each have 2.5% (as for a 95% confidence interval), so the critical values are \(z = \pm 1.96\):
 \[100 \pm 1.96 \times 1.2 = 100 \pm 2.352\]
 The critical region is \(\bar X < 97.65\) or \(\bar X > 102.35\) (2 d.p.). Since 102.8 is in it, we reject \(H_0\).
 :::
@@ -222,7 +222,7 @@ So there is a 32.3% chance that the test fails to detect the improvement.
 :::
 
 :::eg In the flour test (\(\bar X \sim N(500, 2^2)\) under \(H_0: \mu = 500\), \(H_1: \mu < 500\), 5% level), find the critical region for \(\bar X\) and the probability of a Type II error if the true mean is 495 g.
-Critical region: \(\bar x < 500 - 1.645 \times 2\) \(= 496.71\). Type I probability is 5%.
+Critical region: for a 5% lower tail, \(\Phi(z) = 0.05\), so \(z = -1.645\) (the same number as for a 90% confidence interval, which leaves 5% in each tail). So \(\bar x < 500 - 1.645 \times 2\) \(= 496.71\). Type I probability is 5%.
 
 If \(\mu = 495\), \(\bar X \sim N(495, 2^2)\). A Type II error occurs when \(\bar X \ge 496.71\):
 \[P(\bar X \ge 496.71) = P\!\left(Z \ge \frac{496.71 - 495}{2}\right) = P(Z \ge 0.855) = 1 - 0.8037 = 0.196\]
@@ -259,7 +259,8 @@ Since \(0.0188 < 0.025\) (two-tailed), reject \(H_0\). There is sufficient evide
 
 (b) Critical values: \(400 \pm 1.96 \times 1.25\) \(= 400 \pm 2.45\). The critical region is \(\bar X < 397.55\) or \(\bar X > 402.45\). [M1 A1]
 If \(\mu = 403\), \(\bar X \sim N(403, 1.25^2)\), and a Type II error occurs for \(397.55 \le \bar X \le 402.45\):
-\[P = \Phi\!\left(\frac{402.45 - 403}{1.25}\right) - \Phi\!\left(\frac{397.55 - 403}{1.25}\right) = \Phi(-0.44) - \Phi(-4.36) = 0.330\] [M1 A1]
+\[P = \Phi\!\left(\frac{402.45 - 403}{1.25}\right) - \Phi\!\left(\frac{397.55 - 403}{1.25}\right) = \Phi(-0.44) - \Phi(-4.36) = 0.330 - 0 = 0.330\] [M1 A1]
+(\(\Phi(-4.36)\) is effectively 0: it is far beyond the end of the table.)
 :::
 
 :::exam Technique

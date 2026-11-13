@@ -69,6 +69,7 @@ He feels heavier than usual, because \(R > mg\).
 Whole system, mass 480 kg, with tension \(T\) upwards and weight \(4800\) N downwards:
 \[T - 4800 = 480 \times 0.5 \quad\Rightarrow\quad T = 5040\ \text{N}\]
 Person only: \(R - 800 = 80 \times 0.5\), so \(R = 840\) N.
+The force \(R\) between person and floor does not appear in the whole-system equation: the floor pushes the person up with \(R\) and, by Newton's third law, the person pushes the floor down with \(R\), so these internal forces cancel.
 :::
 
 :::tip Lift going down
@@ -112,7 +113,7 @@ Two particles joined by a string (or rod) usually move together with the same sp
 :::key Connected particles
 - The tension in a light string is the same throughout, including either side of a smooth pulley.
 - The acceleration is the same size for both particles, because the string is inextensible: one goes up as the other comes down.
-- Write \(F = ma\) **separately for each particle**, and solve the equations together. Alternatively, treat the particles as one system when the tension is not needed.
+- Write \(F = ma\) **separately for each particle**, and solve the equations together. Alternatively, treat the particles as one system when the tension is not needed: the tensions inside the system are equal and opposite (Newton's third law), so they cancel and do not appear.
 :::
 
 :::html
@@ -181,6 +182,16 @@ A car pulls a trailer with a light rope or a rigid tow-bar. The **driving force*
 Whole system (1200 kg): \(2200 - 250 - 150 = 1200a\), so \(a = 1.5\ \mathrm{m\,s^{-2}}\).
 Trailer only, with tension \(T\) pulling it forward: \(T - 150 = 400 \times 1.5\), so \(T = 750\) N.
 Check on the car: \(2200 - 250 - 750 = 1200 = 800 \times 1.5\). ✓
+
+Why does the whole-system equation leave out the tow-bar? Inside the system the bar pulls the trailer forward with \(T\) and, by Newton's third law, pulls the car back with the same \(T\). These internal forces cancel, so they do not appear in the whole-system equation.
+:::
+
+:::eg The driving force of the car and trailer above is removed and the driver brakes. The braking force on the car is 1000 N (this includes the car's own resistance) and the resistance on the trailer is 150 N. The tow-bar is rigid. Find the acceleration and the force in the bar.
+Take forward as positive and let \(T\) be the force of the bar on the trailer, forward.
+Whole system: \(-1000 - 150 = 1200a\), so \(a = -0.958\ \mathrm{m\,s^{-2}}\) (a deceleration of \(0.958\ \mathrm{m\,s^{-2}}\)).
+Trailer only: \(T - 150 = 400 \times (-0.958)\), so \(T = 150 - 383 = -233\) N.
+\(T\) is negative, so the bar is in thrust of 233 N, pushing the trailer back. The car is braking harder than the trailer would alone, so the trailer runs up against the car through the bar.
+Check on the car: the bar pushes the car forward with 233 N, so \(-1000 + 233 = -767 = 800 \times (-0.958)\). ✓
 :::
 
 If the driving force is removed and the car brakes, the car may slow faster than the trailer would, so a **rigid** tow-bar is compressed and exerts a thrust on the trailer's front. A negative answer for \(T\) in a calculation means the bar is in thrust, not tension.

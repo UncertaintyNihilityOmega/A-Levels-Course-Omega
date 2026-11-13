@@ -8,6 +8,10 @@ def sf(x, n=3):
     return float(f"{x:.{n}g}")
 
 g = 10
+# tow-bar in thrust (car 800, trailer 400, braking 1000, trailer resistance 150)
+a_t = -(1000 + 150) / 1200; T_t = 150 + 400 * a_t
+eq("a thrust", sf(a_t), -0.958); eq("400a", round(400 * a_t), -383); eq("T thrust", round(T_t), -233)
+eq("car check", round(-1000 - T_t), -767); eq("car 800a", round(800 * a_t), -767)
 # block pulled
 eq("a1", (20 - 8) / 4, 3); eq("v1", 3 * 5, 15)
 # lift

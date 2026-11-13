@@ -26,6 +26,10 @@ A: \(\Phi(z) = 0.9\) gives \(z = 1.282\), so \(a = 40 + 1.282 \times 6 = 47.7\).
 The **population** is the whole collection of items you want to know about (all the bulbs a factory makes, all the voters in a country). A **sample** is a smaller group taken from the population and measured. A **census** measures every item in the population.
 :::
 
+:::def Parameter, statistic, estimator
+A number that describes a population, such as \(\mu\), \(\sigma^2\) or \(p\), is a **parameter**. A number worked out from a sample, such as \(\bar x\) or \(s^2\), is a **statistic**. An **estimator** is the rule (for example "add up and divide by \(n\)"); an **estimate** is the number it gives for one sample.
+:::
+
 A census is often impossible or silly: it can cost too much, take too long, or destroy the items (you cannot test the lifetime of every bulb by running it until it fails). So we sample. A sample is only useful if it **represents** the population, and the way to achieve that is randomness.
 
 :::def Random sample
@@ -75,6 +79,7 @@ For a random sample of size \(n\) from a population with mean \(\mu\) and varian
 - **If \(X\) is normal**, then \(\bar X \sim N\!\left(\mu, \dfrac{\sigma^2}{n}\right)\) exactly, for any \(n\).
 - **Central limit theorem**: if \(n\) is large, \(\bar X\) is approximately \(N\!\left(\mu, \dfrac{\sigma^2}{n}\right)\) **whatever the shape of the population**. A sample of 30 or more is usually treated as large.
 - The variance of \(\bar X\) shrinks as \(n\) grows: means of big samples are more reliable than single values.
+- The standard deviation \(\sigma/\sqrt{n}\) of \(\bar X\) is also called the **standard error of the mean**.
 :::
 
 The result \(\bar X \sim N(\mu, \sigma^2/n)\) is on MF19. The sentence "the sample mean is normal because the sample is large" earns a mark in an exam, so say it.
@@ -220,12 +225,12 @@ The margin of error is half the width: \(51.8 - 50 = 1.8\). So
 
 ## Confidence intervals for a proportion
 
-Sometimes the quantity of interest is a proportion \(p\) of the population with some property (voters who support a party, items that are faulty). In a sample of \(n\), let \(X\) be the number with the property and \(\hat p = X/n\) the **sample proportion**. Since \(X \sim B(n, p)\) and a large binomial is approximately normal,
+Sometimes the quantity of interest is a proportion \(p\) of the population with some property (voters who support a party, items that are faulty). In a sample of \(n\), let \(X\) be the number with the property and \(\hat p = X/n\) the **sample proportion**. Since \(X \sim B(n, p)\), we have \(E(X) = np\) and \(\mathrm{Var}(X) = np(1 - p)\), so \(E(\hat p) = np/n = p\) and \(\mathrm{Var}(\hat p) = np(1 - p)/n^2 = p(1 - p)/n\). A large binomial is approximately normal, so
 \[\hat p \approx N\!\left(p, \frac{p(1 - p)}{n}\right)\]
 This is on MF19. The true \(p\) is unknown, so in the interval we replace it by \(\hat p\).
 
 :::key Approximate confidence interval for a proportion
-From a large sample with sample proportion \(\hat p\), an approximate \(c\%\) confidence interval for \(p\) is
+From a large sample with sample proportion \(\hat p\) ("large" means \(n\hat p > 5\) and \(n(1 - \hat p) > 5\), the same rule as for the normal approximation to a binomial), an approximate \(c\%\) confidence interval for \(p\) is
 \[\hat p - z\sqrt{\frac{\hat p(1 - \hat p)}{n}} \;<\; p \;<\; \hat p + z\sqrt{\frac{\hat p(1 - \hat p)}{n}}\]
 with \(z\) from the same table as before. This interval is not on MF19: learn it.
 :::
@@ -245,7 +250,7 @@ The interval is \(0.443 < p < 0.517\). It includes values both below and above 0
 
 ## Exam-style questions
 
-:::eg (Exam style) The time \(T\) seconds for a robot to complete a task has a mean \(\mu\) and a standard deviation of 4.5. A random sample of 60 times has \(\sum t = 1830\) and \(\sum t^2 = 57\,000\). (a) Find unbiased estimates of the population mean and variance. (b) Find a 95% confidence interval for \(\mu\), using your estimate of the variance. (c) The manufacturer claims \(\mu = 30\). Comment. [8 marks]
+:::eg (Exam style) The time \(T\) seconds for a robot to complete a task has an unknown mean \(\mu\) and an unknown standard deviation. A random sample of 60 times has \(\sum t = 1830\) and \(\sum t^2 = 57\,000\). (a) Find unbiased estimates of the population mean and variance. (b) Find a 95% confidence interval for \(\mu\), using your estimate of the variance. (c) The manufacturer claims \(\mu = 30\). Comment. [8 marks]
 (a) \(\bar t = \dfrac{1830}{60} = 30.5\). [B1]
 \[s^2 = \frac{1}{59}\left(57\,000 - \frac{1830^2}{60}\right) = \frac{57\,000 - 55\,815}{59} = \frac{1185}{59} = 20.08\] [M1 A1]
 

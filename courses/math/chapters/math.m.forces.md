@@ -211,6 +211,8 @@ Then \(R = 100 - 0.5(37.5) = 81.2\) N.
 
 On a slope, resolve **along** the slope and **perpendicular** to it. Gravity does not point along either direction, so the weight must be split.
 
+A **line of greatest slope** is a straight line in the plane pointing straight up or down the slope, at right angles to the horizontal lines in the plane. "Up the plane" means along such a line.
+
 :::html
 <figure class="fig"><svg viewBox="30 20 450 275" role="img" aria-label="A block on a slope inclined at angle theta. Weight acts straight down and is split into mg sin theta down the slope and mg cos theta into the slope. The normal reaction acts perpendicular to the slope and friction acts up the slope.">
   <polygon class="fm s-mute sw1" points="70,260 433.7,50 433.7,260"/>
@@ -240,7 +242,7 @@ On a slope, resolve **along** the slope and **perpendicular** to it. Gravity doe
 - Component of weight **down** the slope: \(mg\sin\theta\)
 - Component of weight **into** the slope: \(mg\cos\theta\)
 - With no other forces perpendicular to the slope, \(R = mg\cos\theta\).
-- A block just about to slide down a rough slope, with no other forces, has \(\mu = \tan\theta\).
+- A block just about to slide down a rough slope, with no other forces, has \(\mu = \tan\theta\) (\(F = mg\sin\theta\) and \(R = mg\cos\theta\), so \(\mu = F/R = \tan\theta\)).
 :::
 
 :::proof Why the weight splits into \(mg\sin\theta\) and \(mg\cos\theta\)
@@ -257,6 +259,39 @@ Try the slope widget. With no pull, raise the angle until the block starts to sl
 
 :::html
 <div class="widget" data-w="incline" data-angle="30" data-mu="0.4" data-mass="5"></div>
+:::
+
+A force that is **horizontal** needs splitting too. Here a block on a smooth slope is held by a horizontal force \(P\).
+
+:::html
+<figure class="fig"><svg viewBox="30 20 450 275" role="img" aria-label="A block on a smooth slope at angle theta, held by a horizontal force P pushing on its lower face. A dashed line parallel to the slope shows that the angle between P and the slope is also theta. Weight mg acts straight down and the normal reaction R perpendicular to the slope.">
+  <polygon class="fm s-mute sw1" points="70,260 433.7,50 433.7,260"/>
+  <path class="ln thick" d="M40 260H470"/>
+  <path class="ln thick" d="M70 260L433.7 50"/>
+  <polygon class="f1 s-acc sw2" points="234.5,165 300.4,127 277.4,87.2 211.5,125.2"/>
+  <path class="ln" d="M256 126.1V234" marker-end="url(#ah)"/>
+  <path class="ln" d="M256 126.1L208.4 43.6" marker-end="url(#ah)"/>
+  <path class="ln" d="M112 150H224" marker-end="url(#ah)"/>
+  <path class="ln-m dot" d="M112 150L207.3 95"/>
+  <circle class="fi" cx="256" cy="126.1" r="3.5"/>
+  <path class="ln-m thin" d="M152 150A40 40 0 0 0 146.6 130"/>
+  <text class="tl halo" x="157" y="144">θ</text>
+  <path class="ln-m thin" d="M130 260A60 60 0 0 0 122 230"/>
+  <text class="tl" x="136" y="253">θ</text>
+  <text class="halo tb" x="165" y="172">P</text>
+  <text class="halo tb" x="200" y="55" text-anchor="end">R</text>
+  <text class="halo tb" x="264" y="250">W = mg</text>
+</svg><figcaption>A block on a smooth slope at angle θ, pushed by a horizontal force P. The dashed line is parallel to the slope, so the angle between P and the slope is θ as well. P has component P cos θ up the slope and P sin θ into the slope.</figcaption></figure>
+:::
+
+:::eg A block of mass 2.5 kg rests on a smooth plane inclined at \(30^\circ\) to the horizontal. It is held in equilibrium by a horizontal force \(P\) N. Find \(P\) and the normal reaction \(R\). Take \(g = 10\).
+The weight is \(2.5 \times 10 = 25\) N. The angle between \(P\) and the slope is \(\theta = 30^\circ\), so \(P\) has component \(P\cos\theta\) up the slope and \(P\sin\theta\) into the slope. That second part pushes the block against the plane as well as the weight does, so \(R\) must balance both.
+
+Along the plane: \(P\cos\theta = mg\sin\theta\), so \(P = 25\tan 30^\circ = 14.4\) N.
+
+Perpendicular to the plane: \(R = mg\cos\theta + P\sin\theta = 25\cos 30^\circ + 14.43\sin 30^\circ\) \(= 21.65 + 7.22 = 28.9\) N.
+
+Check by resolving vertically: \(R\cos\theta\) must carry the weight, \(28.87 \times \cos 30^\circ = 25\) N.
 :::
 
 :::eg (Exam style) A block of mass 5 kg rests on a rough plane inclined at angle \(\theta\) to the horizontal, where \(\sin\theta = 0.6\) and \(\cos\theta = 0.8\). The coefficient of friction between the block and the plane is 0.5. A force of magnitude \(P\) N acts on the block up the plane, parallel to a line of greatest slope. Find the set of values of \(P\) for which the block stays in equilibrium. Take \(g = 10\).

@@ -149,7 +149,7 @@ The cumulative distribution function is not in the Cambridge syllabus, so you ne
 
 ## Mean, median and the shape of the curve
 
-When the pdf has a long tail on the right, a few large values pull the mean to the right of the median (positive skew). With a long tail on the left, the mean is below the median (negative skew). For a symmetrical pdf they are equal. You can use the shape to check an answer: for \(f(t) = (10 - t)/50\), a long right tail gives a mean (3.33) above the median \((10 - 5\sqrt2 = 2.93)\).
+When the pdf has a long tail on the right, a few large values pull the mean to the right of the median (positive skew). With a long tail on the left, the mean is below the median (negative skew). For a symmetrical pdf they are equal. You can use the shape to check an answer: for \(f(t) = (10 - t)/50\), a long right tail gives a mean (3.33) above the median \((10 - 5\sqrt2 = 2.93)\). The median \(m\) satisfies \(\int_0^m \frac{10 - t}{50}\,dt = \frac{10m - m^2/2}{50} = 0.5\), which gives \(m^2 - 20m + 50 = 0\), so \(m = 10 - \sqrt{50} = 10 - 5\sqrt2 = 2.93\) (the root \(10 + 5\sqrt2\) is outside 0 to 10).
 
 ## Pdfs on an infinite interval
 

@@ -194,7 +194,7 @@ If the acceleration is not constant, the equations above do not apply. Use calcu
 \[v = \frac{ds}{dt} \qquad a = \frac{dv}{dt} = \frac{d^2s}{dt^2}\]
 \[v = \int a\,dt \qquad s = \int v\,dt\]
 - Each integration needs a constant, found from a given value such as "\(s = 0\) when \(t = 0\)" or "\(v = 5\) when \(t = 0\)".
-- The object is **at rest** when \(v = 0\). It is at its greatest speed or turns round where \(a = 0\) or \(v = 0\) respectively, so solve \(v = 0\) or \(a = 0\) as the question needs.
+- The object is **at rest** when \(v = 0\). The particle is momentarily at rest where \(v = 0\), and it turns round there if \(v\) changes sign. The velocity has a greatest or least value where \(a = 0\) (check which from the sign of \(a\) on each side). So solve \(v = 0\) or \(a = 0\) as the question needs.
 - Displacement between two times: \(\displaystyle\int_{t_1}^{t_2} v\,dt\). **Distance** travelled needs the integral split wherever \(v\) changes sign.
 :::
 

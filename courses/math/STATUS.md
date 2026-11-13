@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-13 · FIX · math.p3.complex to math.s2.linear: 26 reader items closed (sigma notation taught in s1.data, MF19 normal table reading and inverse values in s1.normal, complex/Poisson/linear steps and reasons)
+Last: 2026-11-13 · FIX · 19 reader items closed, s2.crv to m.momentum: definitions, derivations and examples added; regression proof by completing the square; new slope-with-horizontal-force figure and tow-bar thrust example
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

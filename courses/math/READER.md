@@ -159,3 +159,35 @@ Assumed: why internal forces such as the tow-bar tension drop out of a whole-sys
 ## math.m.momentum
 Taught: momentum mv as a vector (kg m s^-1); conservation of momentum for a direct collision with signs (with proof); coalescing; rebounds and opposite directions; recoil from rest; unknown mass or speed; kinetic energy lost in a collision; only horizontal momentum when a sandbag lands.
 Assumed: what kinetic energy 1/2 mv^2 and the joule are (used from the first KE example, taught in math.m.energy); why momentum may be conserved in a collision on a rough floor.
+
+## math.m.energy
+Taught: work done W = Fd cos theta (joule), a force at 90 degrees does no work, work against friction; kinetic energy 1/2 mv^2 and gravitational potential energy mgh (scalars, reference level); work-energy principle with driving forces and resistances (proof for a constant force); conservation of energy on a smooth curved track; energy on slopes and for vertical throws; power as work per second, the watt, P = Fv, driving force against resultant force, maximum speed and acceleration of a vehicle on a level road or a hill.
+Assumed: why gravity's work on a straight or curved path is mg times the height lost; that P/v - R - mg sin theta = ma is for going up the slope; the step from the work of the resultant to the GPE form (last sentence of the proof); kinetic energy used in the second work example before it is defined.
+
+## math.m.projectiles
+Taught: projectile; resolving the launch velocity; horizontal constant velocity and vertical a = -g; time of flight, greatest height, range, best angle 45 degrees, the trajectory as a parabola (with proof); launch from a height and horizontal launch; clearing a wall; moment of a force, clockwise and anticlockwise, principle of moments, equilibrium of a uniform rod or beam on supports or hinged, choosing the pivot, tipping when a reaction is zero.
+Assumed: how to tell a clockwise moment from an anticlockwise one; what a hinge force is (direction unknown, so resolved into two components); sin 2(90 - a) = sin(180 - 2a); the word "trajectory".
+
+## math.proof
+Taught: statement, conjecture, proof; counter-example; deduction with even 2n, odd 2n + 1, consecutive integers and multiples; exhaustion by cases (even or odd, remainders 0, 1, 2 on division by 3); contradiction (root 2, infinitely many primes, root 3, root 5, log base 2 of 3); a first induction example; setting out a proof and the end-of-proof box.
+Assumed: why every integer is 3k, 3k + 1 or 3k + 2; that exactly one of three consecutive integers is a multiple of 3 (used in the n^3 - n answer).
+
+## math.further
+Taught: the four 9231 papers and who should take Further Mathematics; induction (basis, assumption, step, conclusion) for sums and divisibility; 2 x 2 matrix, determinant, inverse, solving two equations; sum, pair-sum and product of the roots of a cubic (with proof) and a cubic with scaled roots; method of differences; polar area 1/2 integral of r^2 d theta; sinh, cosh and cosh^2 - sinh^2 = 1; Maclaurin series; de Moivre's theorem; second-order differential equations by the auxiliary equation (real and complex roots).
+Assumed: multiplying a matrix by a column vector; why x = y/2 is substituted to get a cubic with roots 2 alpha, 2 beta, 2 gamma, and the clearing of fractions; expanding (alpha + beta + gamma)^2; the y' and y'' notation and where the auxiliary equation comes from; e^x = sinh x + cosh x; the coefficient arithmetic in the ln(1 + x) example.
+
+## math.calc
+Taught: which calculators are allowed; no marks for an unsupported calculator answer; angle mode and the silent mode error; Ans and memories for full accuracy; bracketing negatives; table mode for a sign change, an iteration and the trapezium rule; statistics mode (sigma_x against s_x, regression line); distribution keys as checks (binomial, normal, inverse normal, Poisson; sigma not variance; cumulative gives P(X <= x)); the equation solver as a check only.
+Assumed: nothing.
+
+## math.exam.skills
+Taught: command words (find, solve, show that, verify, state, exact, hence, sketch, express in the form, give a reason); M, A and B marks; cao, ft, awrt, oe, isw, dep; how follow-through works; 3 s.f. and 1 d.p., exact answers, units; verify, state, sketch; laying out a long answer.
+Assumed: the change of sign from 2 - 2cos^2 - 3cos = 0 to 2cos^2 + 3cos - 2 = 0 in the show-that example (not shown).
+
+## math.exam.p1
+Taught: Paper 1 format (1 h 50, 75 marks, 60% of AS, 30% of A Level), timing plan of 1.3 minutes per mark, what MF19 gives and omits for Paper 1, the topic list with chapters, the marks most often lost, a final-week checklist.
+Assumed: nothing.
+
+## math.exam.p23
+Taught: Paper 2 and Paper 3 format and weights, timing plans, which topics belong to Paper 2 and which only to Paper 3, what MF19 gives and omits, the marks most often lost, a final-week checklist.
+Assumed: nothing.
