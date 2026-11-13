@@ -300,6 +300,12 @@
           "title": "Biology: learn more online",
           "level": "ref",
           "group": "Learn more online"
+        },
+        {
+          "id": "tools.l.hist",
+          "title": "History: learn more online",
+          "level": "ref",
+          "group": "Learn more online"
         }
       ]
     },
@@ -360,6 +366,9 @@
     ],
     "tools.l.bio": [
       "bio"
+    ],
+    "tools.l.hist": [
+      "hist"
     ]
   }
 }

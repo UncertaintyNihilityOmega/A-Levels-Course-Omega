@@ -74,6 +74,18 @@ For the practical papers, use your subject's practical chapter here and the exam
 
 Every Biology topic chapter in this guide ends with a short "Learn more online" list picked for that topic. [Biology: learn more online](#tools.l.bio) gathers all of them on one page, grouped by topic and by kind.
 
+## History
+
+| Resource | Best for | Cost |
+|---|---|---|
+| **The National Archives (UK): Education** | Original documents with guidance, good practice for source questions | Free |
+| **The Avalon Project (Yale Law School)** | Full texts of treaties, speeches and laws, to read a source in its whole context | Free |
+| **Wilson Center Digital Archive** | Translated documents from the Cold War and the wider twentieth century | Free |
+| **History Today** | Articles by historians that show how an interpretation is argued | Free and paid |
+| **BBC Bitesize** | Short overviews at GCSE level; good for fixing foundations before a topic | Free |
+
+In History the mark schemes reward judgement backed by precise knowledge, so read the examiner reports for Papers 1 to 4 as closely as the past papers. Every History topic chapter in this guide ends with a short "Learn more online" list picked for that topic. [History: learn more online](#tools.l.hist) gathers all of them on one page, grouped by topic and by kind.
+
 ## Business and Economics
 
 | Resource | Best for | Cost |
