@@ -308,7 +308,7 @@ The two tables below use a few French terms from 1789, the year the French Revol
 Notice how the last column forces a judgement: it is the seed of a conclusion. You will see the same facts again in [France (1)](#hist.eu.france.1).
 
 :::tip Remember by testing yourself
-Close the book and write the timeline, then the factor grid, from memory. Check, correct and repeat a few days later. Recall learns far more than re-reading, and the habit of recalling is what the "Warm-up" and "Recall" boxes in every chapter are for. See [Study methods that actually work](#road.methods) for the full method.
+Close the book and write the timeline, then the factor grid, from memory. Check, correct and repeat a few days later. Recall learns far more than re-reading, and the habit of recalling is what the "Warm-up" and "Recall" boxes in every chapter are for. Each Warm-up question names the chapter it comes from; if that chapter is in an option or topic you are not studying, read the answer instead of recalling it: the answer gives what the new chapter needs. See [Study methods that actually work](#road.methods) for the full method.
 :::
 
 ## Reading a historian's argument
@@ -517,6 +517,8 @@ A: The twentieth century (1901–2000). 7 November 1917.
 Q: What does the E in PEEL (the second one) stand for, and why does it matter most?
 A: Explain: it says how the evidence proves the point. Without it a paragraph is only a list of facts.
 :::
+
+**How the practice questions are marked.** Every practice question in this course shows a mark in brackets and one to three stars. The stars show difficulty: ★ is a short check, ★★ a standard exam-style question, ★★★ harder or needing a plan. The mark tells you how much to write and how long to spend. Where it is one the real papers use ([10] and [20] on Paper 2, [15] and [25] on Paper 1, [30] on Paper 4, [40] on Paper 3), the question is sized like that part of the paper and the answer is judged by that paper's levels. Other marks, such as the [4], [6], [8] and [12] below, are the course's own practice scale for short drills: the answer lists the points that would earn credit, and there is no level scheme to apply. Each paper's guide chapter explains the real levels.
 
 :::try Exam-style practice ★ to ★★★
 Q: [4 marks] ★ A student says: "Source A is a speech by a politician, so it is biased and useless." Give two reasons why this comment would not earn high credit, and say what the student should write instead.

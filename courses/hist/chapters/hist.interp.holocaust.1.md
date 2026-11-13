@@ -19,7 +19,7 @@ This chapter is the knowledge for **Paper 3, Section B** (the Holocaust), for A 
 This chapter describes the murder of millions of people. Write about it as history: factually, precisely and with respect for the victims, who were people with names, families and lives. Use the word **murdered**, not "lost" or "disappeared". Use Nazi terms ("Final Solution", "resettlement", "special treatment") only when you are explaining them, and say what they hid. You need no graphic detail to answer any question, and examiners do not reward it. Denial of the Holocaust is not an interpretation; the section "Evidence, and why denial is not an interpretation" explains why.
 :::
 
-**Before you start**, read [How historians disagree: reading an interpretation](#hist.interp.skills) for the method (read, find, test, explain). If you have studied Section A, [Origins of the First World War (2): the historians' debate](#hist.interp.ww1.2) shows the same method used on a different debate.
+**Before you start**, read [How historians disagree: reading an interpretation](#hist.interp.skills) for the method (read, find, test, explain). If you have studied Section A, [Origins of the First World War (2): the historians' debate](#hist.interp.ww1.2) shows the same method used on a different debate. The third Warm-up question comes from the AS International option; if you did not study it, read the answer, which gives all this chapter needs.
 
 :::try Warm-up
 Q: What is the difference between a historian's interpretation and approach? (from [How historians disagree](#hist.interp.skills))

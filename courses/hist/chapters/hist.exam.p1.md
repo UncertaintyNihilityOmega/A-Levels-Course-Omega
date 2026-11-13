@@ -145,7 +145,7 @@ Say what the source is **good evidence for** and what it is **poor evidence for*
 | 1 | 1–3 | **Describes** the content of each source; may make very simple comparisons ("one is a letter, the other a speech") that are not developed |
 | 0 | 0 | No engagement with the sources |
 
-Marks are never deducted. Examiners find the best-fit level, then give the top mark if the answer **convincingly** meets it, a middle mark if it **adequately** meets it, and the lowest if it **just** meets it. **Best fit** means the level whose description matches the whole answer most closely: an answer does not have to show every feature of its level, or of every level below it, and how fully it meets the description decides the mark within the level.
+Marks are never deducted. Examiners find the best-fit level, then give the top mark if the answer **convincingly** meets it, a middle mark if it **adequately** meets it, and the lowest if it **just** meets it. **Best fit** means the level whose description matches the whole answer most closely: an answer does not have to show every feature of its level, or of every level below it, and how fully it meets the description decides the mark within the level. (This is the guidance printed in the 9489 specimen mark schemes for 2027: work "does not always match one level precisely", so the examiner may judge between two levels.)
 
 :::key The step from level to level
 - **Level 1 to 2**: stop describing each source in turn. Start **comparing**: one point, both sources.
@@ -195,7 +195,7 @@ The King wishes the ancient distinction of the three orders of the State to be p
 
 ### How to write part (a)
 
-Write about 20 minutes, three to four paragraphs. No fixed word count is set, but a developed Level 4 answer is usually around 400 to 500 words.
+Write about 20 minutes, three to four paragraphs. The board sets no word count; as a course guide (not a board rule), a developed Level 4 answer is usually around 400 to 500 words.
 
 1. **Similarities** (one short paragraph): one or two points both sources share, each with a short quotation from each. Say what the point is before you quote.
 2. **Differences** (one or two paragraphs): the main points on which they differ, again with quotations from both. Compare on the **same point**: "On who holds authority, A says …, but B says …".
@@ -252,7 +252,7 @@ All three ask for the same thing: use every source to build a case **for** the s
 
 These five steps are the exam-day version of the longer method in [Skills: reading and comparing sources (Paper 1)](#hist.skills.sources), which decodes the claim, writes one line per source, weighs each source, adds knowledge and groups by argument: sorting, evaluating and deciding here are those steps compressed into the minutes you have before you write.
 
-**How long to write.** There is no fixed word count, but in the 38 minutes of writing a developed Level 5 answer to part (b) is usually around 700 to 900 words (about the same pace as part (a)): two or three argument paragraphs, each using two or more sources, and a judgement of two to four sentences.
+**How long to write.** The board sets no word count and marks quality, not length; this is the course's guide, not a rule: in the 38 minutes of writing a developed Level 5 answer to part (b) is usually around 700 to 900 words (about the same pace as part (a)): two or three argument paragraphs, each using two or more sources, and a judgement of two to four sentences.
 
 ### Evaluating a source as evidence: the ladder
 

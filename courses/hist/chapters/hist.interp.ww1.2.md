@@ -118,7 +118,7 @@ An extract from the 1920s or 1930s will often show its place and time in its voc
 
 ## Shared responsibility: Lloyd George, Fay and Barnes
 
-In the later 1920s a new view appeared, mostly outside Germany: that **no single country** was responsible, and that the treaty's verdict was therefore wrong. This is the **shared responsibility** (or **revisionist**) interpretation. Three works are the core.
+In the later 1920s a new view appeared, mostly outside Germany: that **no single country** was responsible, and that the treaty's verdict was therefore wrong. This is the **shared responsibility** (or **revisionist**) interpretation: that is what "revisionist" means in this debate, not its Cold War meaning (see [How historians disagree](#hist.interp.skills)). Three works are the core.
 
 - **Harry Elmer Barnes**, an American historian, *The Genesis of the World War* (1926), argued that Russia and France bore the principal responsibility for the war and that Germany had been unfairly blamed. His purpose was openly political: to dismantle the war-guilt clause. (On a visit to Europe Barnes met the exiled Wilhelm II, who, Barnes reported, was happy that Barnes did not blame him for starting the war.)
 - **Sidney Bradshaw Fay**, an American historian at Harvard, *The Origins of the World War* (two volumes, 1928), the most important scholarly work in this school. Fay argued that Germany and Austria did not plot a European war and that the verdict of Versailles was historically unsound. Responsibility for the immediate crisis lay chiefly with Austria-Hungary, Serbia and Russia, with all the Powers sharing some blame; he blamed in particular the system of secret alliances and military plans. His conclusions were welcomed in Germany, where the official campaign against the war-guilt clause publicised revisionist work of this kind.
@@ -408,6 +408,8 @@ The responsibility of Russia for the war has been neglected. For years its leade
 
 *A summary, written for practice, of the argument of Sean McMeekin, The Russian Origins of the First World War (2011). The words are not McMeekin's.*
 :::
+
+**How the short questions below are marked.** As in [Origins of the First World War (1)](#hist.interp.ww1.1), the questions marked [10], [15] and [20] are practice drills for one part of the 40-mark answer, marked with the Paper 2-style levels (for a 10-mark question, Level 4 = 9–10), not the Paper 3 tables.
 
 :::try Exam practice ★ to ★★★
 Q: [10 marks] ★ Read Practice extract G (in the box above). State the main interpretation in one sentence with its two aspects, and say which label is supported by the extract and why.

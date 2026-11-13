@@ -1,6 +1,6 @@
 # STATUS: History
 
-Last: 2026-11-13 · FIX · sweep: FACTS.md citations and Chapter N names in 42 chapters
+Last: 2026-11-13 · REVIEW FINAL · 96/96 check and phone clean; 14 FIX items and the sweep spot-checked; Next chain, mock times and totals, 78 links OK; settled best fit (specimen MS 2027), word guides as course guidance, hist-levels stricter-than-best-fit text, KMM 60-150, revisionist per debate, practice mark scale, cross-option warm-ups; 5 COURSE.md rules
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -53,4 +53,4 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P46: reviewed 2026-11-12
 - P47: reviewed 2026-11-11
 - READER: done 2026-11-13
-- FINAL: open
+- FINAL: done 2026-11-13

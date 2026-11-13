@@ -129,6 +129,13 @@ In this order (the gold chapter shows every part):
   Depression in the USA; the 1848 revolutions → France). Link only ids in course.json. Add one bullet to
   [The big picture](#hist.f.eras), and for Italy, Stalin and Hitler chapters also
   [Dictatorships compared](#hist.d.compare). Say in one line that students need only their own options' chapters.
+- Settled in REVIEW FINAL (keep to these): (1) "best fit" is the specimen mark schemes' rule (judge the whole answer,
+  then convincingly / adequately / just); the hist-levels explorer is stricter, and every text about it says so.
+  (2) Word counts are course guidance, never board rules (the board sets none). (3) Practice marks: [10] [15] [20]
+  [25] [30] [40] match real parts; other values ([4] [6] [8] [12]) are short drills with indicative content, as
+  hist.f.basics explains; in Paper 3 chapters a "How the short questions below are marked" line precedes them.
+  (4) "Revisionist" has a meaning per debate (French Revolution, 1914, Cold War); say which. (5) A Warm-up question
+  from another option or paper names its chapter, and the answer gives all the new chapter needs.
 
 ## Widgets (each belongs to one package; use another package's widget only when its file exists in widgets/)
 - `hist-timeline` (P1): `data-title="…" data-events="1787-02-22 | Assembly of Notables opens | Calonne's reform plan ;; 1789-07-14 | Bastille stormed | …"`

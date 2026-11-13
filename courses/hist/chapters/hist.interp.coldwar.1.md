@@ -15,7 +15,7 @@ This chapter is the knowledge for **Paper 3, Section C** (the origins and develo
 - The key question is "Who or what was to blame for the Cold War?" The next chapter, [Origins of the Cold War (2): the historians' debate](#hist.interp.coldwar.2), teaches the arguments. This chapter teaches the events, and tags each with how the main schools use it.
 :::
 
-**Before you start**, read [How historians disagree: reading an interpretation](#hist.interp.skills): its method (read, find, test, explain) and the three jobs of knowledge are used throughout. If you have also studied Section A, [Origins of the First World War (2): the historians' debate](#hist.interp.ww1.2) shows the same method on another topic (this is optional); the word "revisionist" meant something different there from what it means here, and this chapter defines it for the Cold War before you meet it.
+**Before you start**, read [How historians disagree: reading an interpretation](#hist.interp.skills): its method (read, find, test, explain) and the three jobs of knowledge are used throughout. If you have also studied Section A, [Origins of the First World War (2): the historians' debate](#hist.interp.ww1.2) shows the same method on another topic (this is optional); the word "revisionist" meant something different there from what it means here, and this chapter defines it for the Cold War before you meet it. The third Warm-up question comes from the AS International option; if you did not study it, read the answer, which gives all this chapter needs.
 
 :::try Warm-up
 Q: What is the difference between a historian's interpretation and approach? (from [How historians disagree](#hist.interp.skills))

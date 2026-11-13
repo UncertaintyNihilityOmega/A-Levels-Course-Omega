@@ -174,7 +174,7 @@ A different explanation or factor that could be set against the one in the quest
 | 1 | 1–4 | **General information** loosely linked to the question; fragmentary points; unsupported assertions |
 | 0 | 0 | No creditable response |
 
-Examiners place an answer by **best fit**: the level whose description matches the whole answer most closely, then the top, middle or lowest mark in the level according to whether it convincingly, adequately or just meets the description. An answer does not have to show every feature of the levels below it. For instance, a clear comparative judgement is a Level 5 feature, but a judgement that is not backed by explained evidence on both sides will not lift an answer into Level 5.
+Examiners place an answer by **best fit**: the level whose description matches the whole answer most closely, then the top, middle or lowest mark in the level according to whether it convincingly, adequately or just meets the description. An answer does not have to show every feature of the levels below it (the 9489 specimen mark schemes for 2027 say this in their guidance on levels: work "does not always match one level precisely", so the examiner may judge between two levels). For instance, a clear comparative judgement is a Level 5 feature, but a judgement that is not backed by explained evidence on both sides will not lift an answer into Level 5.
 
 :::key The step from level to level in part (b)
 - **Level 1 to 2**: use relevant facts in place of general statements.
@@ -210,7 +210,7 @@ Use the plan that fits the form, and then check that your last paragraph answers
 
 Every paragraph ends with a sentence that says what it means for the question ("so the war was a cause of the government's collapse, but it did not decide who replaced it").
 
-**How long to write.** No word count is set. In the 32 minutes of writing, aim for roughly 600 to 800 words (about 20 to 25 words a minute): an introduction, two to four paragraphs of argument and a conclusion. The ladder below is a compact model: its Level 3, 4 and 5 paragraphs add up to about 420 words, so a full answer is somewhat longer.
+**How long to write.** The board sets no word count and marks quality, not length; this is the course's guide, not a rule: in the 32 minutes of writing, aim for roughly 600 to 800 words (about 20 to 25 words a minute): an introduction, two to four paragraphs of argument and a conclusion. The ladder below is a compact model: its Level 3, 4 and 5 paragraphs add up to about 420 words, so a full answer is somewhat longer.
 
 ### The ladder: one question, from Level 2 to Level 5
 

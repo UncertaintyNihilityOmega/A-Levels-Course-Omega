@@ -515,6 +515,8 @@ The decision to murder the Jews of Europe was neither the carrying out of an old
 *A summary, written for practice, of the argument of Christopher Browning, The Origins of the Final Solution (2004). The words are not Browning's.*
 :::
 
+**How the short questions below are marked.** As in [The Holocaust (1)](#hist.interp.holocaust.1), the questions marked [10], [15] and [20] are practice drills for one part of the 40-mark answer, marked with the Paper 2-style levels (for a 10-mark question, Level 4 = 9–10), not the Paper 3 tables.
+
 :::try Exam practice ★ to ★★★
 Q: [10 marks] ★ Read Practice extract M (in the box above). State the main interpretation in one sentence with its two aspects, and say which label is supported by the extract and why.
 A: Main interpretation: the Holocaust was the result of Hitler's long-held intention **and** the persecution of the 1930s and the war were steps in carrying it out, with the war an opportunity and not a cause. Label: **intentionalist**, supported because the whole extract makes Hitler's aim from 1919 the cause and the war the opportunity. A top answer gives the label with a *because* and does not name Dawidowicz.

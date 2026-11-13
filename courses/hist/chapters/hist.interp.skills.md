@@ -184,7 +184,7 @@ The specimen mark scheme says that "best fit" is used: an answer that convincing
 
 ### Labels: only when the extract earns them
 
-Historians' schools have names (intentionalist and structuralist; traditionalist, revisionist and post-revisionist; revisionist and anti-revisionist). The specimen mark scheme credits such labels **only when they are appropriate to the extract and supported from it**. Using a label correctly can help you show you understand how an approach fits a school; using one that the extract does not support is an error, not a bonus. The meaning of a label is fixed inside each debate, so do not carry one debate's meaning to another. In the debate on 1914, "revisionist" means something different from what it means in the debate on the Cold War, and the next chapters say which; and "it overturned an older view" is not enough on its own to earn the word. The Cobban example below uses "revisionist" only in the sense of that French Revolution debate. A label is a shortcut for a sentence you must still write: "This extract is revisionist **because** it argues against the long-accepted view that …". If you cannot write the *because*, leave the label out.
+Historians' schools have names (intentionalist and structuralist; traditionalist, revisionist and post-revisionist; revisionist and anti-revisionist). The specimen mark scheme credits such labels **only when they are appropriate to the extract and supported from it**. Using a label correctly can help you show you understand how an approach fits a school; using one that the extract does not support is an error, not a bonus. The meaning of a label is fixed inside each debate, so do not carry one debate's meaning to another. Take "revisionist". In general it means an account that sets out to overturn an established view, but inside each debate it is the name of one school with its own view: in the French Revolution debate, the historians (from Alfred Cobban in the 1950s) who attacked the class explanation of the Revolution; in the debate on 1914, the view of the 1920s that no single country was to blame, against the war-guilt verdict of Versailles ([Origins of the First World War (2)](#hist.interp.ww1.2)); in the Cold War debate, the view of the 1960s that the United States was mainly to blame ([Origins of the Cold War (1)](#hist.interp.coldwar.1)). So "it overturned an older view" is not enough on its own to earn the word: the extract must hold that debate's revisionist view. The Cobban example below uses "revisionist" only in the sense of the French Revolution debate. A label is a shortcut for a sentence you must still write: "This extract is revisionist **because** it argues against the long-accepted view that …". If you cannot write the *because*, leave the label out.
 
 ## Using your knowledge
 
@@ -317,7 +317,7 @@ A: The author is not identified and candidates are never asked to identify them;
 Q: Give three jobs for knowledge in a Paper 3 answer.
 A: Explain a claim (show what it refers to); test a claim (say where it holds and where it is stretched); show what the approach stresses or leaves out.
 Q: When may you use a label such as "revisionist"?
-A: Only when it is appropriate to the extract and you can support it from the extract with a "because" (for example, the extract sets out to overturn an established view). Unsupported labels earn nothing.
+A: Only when it is appropriate to the extract and you can support it from the extract with a "because" (for example, the extract argues the view that this debate's revisionists held, as Practice extract 2 attacks the class explanation of 1789). Unsupported labels earn nothing.
 Q: How do the two tables combine into a mark out of 40?
 A: Table A (AO4) is out of 20 and Table B (AO1) is out of 20; the two marks are added. Level 6 in both gives 36 to 40; Level 5 in both gives 30 to 34.
 :::
@@ -343,6 +343,8 @@ The old story of the Revolution as a conflict of classes has served as a catechi
 
 *A summary, written for practice, of the argument of François Furet, Penser la Révolution française (1978; in English Interpreting the French Revolution, 1981). The words are not Furet's.*
 :::
+
+**How the short questions below are marked.** Paper 3 has only the 40-mark question, which is marked with Tables A and B (above). The questions below marked [10], [15] and [20] are practice drills for one part of that answer, and their levels are the Paper 2-style levels (for a 10-mark question, Level 4 = 9–10), not the Paper 3 tables. The same holds in every Paper 3 chapter.
 
 :::try Exam practice ★ to ★★★
 Q: [10 marks] ★ Read Practice extract 1 (in the box above). In one sentence state the main interpretation, with its two aspects, then name two sub-messages.

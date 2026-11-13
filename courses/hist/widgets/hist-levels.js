@@ -2,10 +2,10 @@
    <div class="widget" data-w="hist-levels" data-parts="p1a,p1b" data-start="p1a"></div>
    data-parts (optional): which parts to offer, any of p1a p1b p2a p2b p3a p3b p4a p4b (default: all eight).
    data-start (optional): the part shown first.
-   The reader ticks what an answer does; the widget shows the best-fit level, the mark range, the descriptor and what
+   The reader ticks what an answer does; the widget shows the level it reaches (a strict guide), the mark range, the descriptor and what
    would take the answer up one level. Features are taken from the level descriptors in the 2027 specimen mark schemes.
    A level counts as "met" when the reader has ticked at least `need` of its features (default: all of them) AND the
-   level below it is met too (the lowest level needs only its own features); the highest level met is the best fit. This is a guide: examiners use best fit. */
+   level below it is met too (the lowest level needs only its own features); the highest level met is shown. This is stricter than an examiner, who takes the best fit. */
 (function () {
   'use strict';
 
@@ -416,7 +416,7 @@
       summary, markLine, descLine, upHead, upList, totalLine);
     body.appendChild(panel);
     body.appendChild(mk('div', { class: 'w-row', style: { alignItems: 'center', gap: '8px' } }, resetBtn));
-    body.appendChild(mk('p', { class: 'w-note', text: 'Examiners use best fit; this is a guide. Marks are whole numbers and are never deducted. Try: tick only the lowest-level features, then add features one at a time and watch the level change.' }));
+    body.appendChild(mk('p', { class: 'w-note', text: 'This explorer is stricter than an examiner: it counts a level only when every level below it is met too. A real examiner takes the best fit, judging the whole answer, so an answer strong on a higher feature may be placed higher. Use it to see which descriptors an answer lacks, not to predict an exact mark. Marks are whole numbers and are never deducted. Try: tick only the lowest-level features, then add features one at a time and watch the level change.' }));
 
     function renderList() {
       var part = partByKey(current);
@@ -469,7 +469,7 @@
         var lead = nx.anyOf
           ? 'To reach Level ' + nx.level.n + ' (' + rangeDash(nx.level.lo, nx.level.hi) + ') the answer needs ' + (nx.still === 1 ? 'at least one' : nx.still) + ' of:'
           : 'To reach Level ' + nx.level.n + ' (' + rangeDash(nx.level.lo, nx.level.hi) + ') the answer must also:';
-        if (blockedAbove(part, st.ticks, nx.index)) lead = 'Features ticked in higher levels do not count until the level below them is met. ' + lead;
+        if (blockedAbove(part, st.ticks, nx.index)) lead = 'Features ticked in higher levels do not count here until the level below them is met (an examiner using best fit may still credit them). ' + lead;
         upHead.textContent = lead;
         var show = nx.anyOf ? nx.level.f : nx.missing;
         show.forEach(function (t) { upList.appendChild(mk('li', { text: t })); });
