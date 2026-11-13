@@ -131,3 +131,10 @@ assert (F(1, 2) + 1) == (1 - F(-1, 2)) / 3 + 1 and F(-1, 2) + 1 == F(1, 2) and (
 a_, b_ = F(6, 2), F(1)                                                # stretch 2: remainder 3x + 1
 assert a_ + b_ == 4 and 3 * a_ + b_ == 10
 print("ok")
+
+# reader fix: coefficient comparison (x-a)(x^2+px+q)
+def mul(a, p, q): return (1, p - a, q - a * p, -a * q)
+assert mul(2, -2, -3) == (1, -4, 1, 6)
+assert mul(1, 7, 6) == (1, 6, -1, -6)
+assert mul(3, -22, 84) == (1, -25, 150, -252)
+assert mul(-1, -2, -1) == (1, -1, -3, -1)

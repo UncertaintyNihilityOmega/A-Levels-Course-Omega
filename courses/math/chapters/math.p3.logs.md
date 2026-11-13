@@ -138,7 +138,7 @@ Check (a): \(3^{2.727} = 20.0\). ✓
 Some equations are quadratics in disguise. Substitute \(u = e^x\) (or \(u = 3^x\)), solve for \(u\), then go back. Since \(e^x > 0\), reject any negative \(u\).
 
 :::eg Solve (a) \(e^{2x} - 5e^x + 6 = 0\), (b) \(3^{2x} - 4 \times 3^x - 45 = 0\)
-(a) Let \(u = e^x\). Then \(u^2 - 5u + 6 = 0\), so \((u - 2)(u - 3) = 0\) and \(e^x = 2\) or \(e^x = 3\). Therefore \(x = \ln 2\) or \(x = \ln 3\) (0.693 or 1.10).
+(a) Let \(u = e^x\). Then \(u^2 - 5u + 6 = 0\), because \(e^{2x} = (e^x)^2\) and \(3^{2x} = (3^x)^2\) by the index laws. So \((u - 2)(u - 3) = 0\) and \(e^x = 2\) or \(e^x = 3\). Therefore \(x = \ln 2\) or \(x = \ln 3\) (0.693 or 1.10).
 
 (b) Let \(u = 3^x\), so \(u^2 - 4u - 45 = 0\), which factorises as \((u - 9)(u + 5) = 0\). Then \(3^x = 9\) gives \(x = 2\), and \(3^x = -5\) has no solution. So \(x = 2\).
 :::
@@ -177,7 +177,7 @@ Both \(u\) values are positive, so both are valid.
 
 ## Straight-line graphs from curved relationships
 
-Experimental data often follows a law of the form \(y = kx^n\) (a power law) or \(y = ka^x\) (exponential). Taking logarithms turns each into a straight line \(Y = mX + c\), from whose gradient and intercept you read the constants.
+Experimental data often follows a law of the form \(y = kx^n\) (a power law) or \(y = ka^x\) (exponential). Taking logarithms turns each into a straight line \(Y = mX + c\) (\(Y\) stands for what is on the vertical axis, here \(\ln y\), and \(X\) for what is on the horizontal axis, here \(\ln x\) or \(x\)), from whose gradient and intercept you read the constants.
 
 :::key Reducing to linear form
 - \(y = kx^n\): take \(\ln\) of both sides, \(\ln y = n\ln x + \ln k\). Plot \(\ln y\) against \(\ln x\): the gradient is \(n\) and the \(\ln y\)-intercept is \(\ln k\).

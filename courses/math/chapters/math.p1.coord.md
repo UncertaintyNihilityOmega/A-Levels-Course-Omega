@@ -34,7 +34,7 @@ These are **not** on MF19. Learn them.
 :::proof Where the distance formula comes from
 Draw a right-angled triangle with \(AB\) as the hypotenuse and its other two sides parallel to the axes.
 - The horizontal side has length \(|x_2 - x_1|\) and the vertical side has length \(|y_2 - y_1|\).
-- Pythagoras says \(AB^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2\). Squaring removes the modulus signs, because \(|a|^2 = a^2\).
+- Pythagoras says \(AB^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2\). Squaring removes the modulus signs, because \(|a|^2 = a^2\). (The bars \(|a|\) mean the size of \(a\) with the sign dropped, so \(|-5| = 5\); see [Algebra from scratch](#math.f.algebra).)
 - Taking the positive square root gives \(AB = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\).
 For the midpoint, the point halfway between \(x_1\) and \(x_2\) is their mean \(\dfrac{x_1 + x_2}{2}\), and the same is true for \(y\).
 :::
@@ -58,7 +58,7 @@ You already know \(y = mx + c\). It is useful when you know the gradient and the
 :::key Three forms of a line
 - \(y = mx + c\): gradient \(m\), \(y\)-intercept \(c\).
 - \(y - y_1 = m(x - x_1)\): gradient \(m\), passes through \((x_1, y_1)\). The \(y_1\) and \(x_1\) change sign inside the brackets.
-- \(ax + by + c = 0\) with \(a\), \(b\), \(c\) integers: the general form. The gradient is \(-\dfrac{a}{b}\).
+- \(ax + by + c = 0\) with \(a\), \(b\), \(c\) integers: the general form. The gradient is \(-\dfrac{a}{b}\). (Rearrange: \(by = -ax - c\), so \(y = -\dfrac{a}{b}x - \dfrac{c}{b}\).)
 :::
 
 To find a line through two points, find the gradient first, then put one of the points into the second form. When a question says "in the form \(ax + by + c = 0\)", clear fractions so that \(a\), \(b\), \(c\) are integers.
@@ -86,7 +86,7 @@ Parallel lines have equal gradients. Perpendicular lines have gradients that mul
 
 :::proof Why perpendicular gradients multiply to −1
 Take two lines through the origin \(O\). The first has gradient \(m_1\), so it passes through \(A(1, m_1)\). The second has gradient \(m_2\), so it passes through \(B(1, m_2)\).
-The lines are perpendicular exactly when angle \(AOB\) is a right angle. By Pythagoras and its converse, that happens exactly when
+The lines are perpendicular exactly when angle \(AOB\) is a right angle. By Pythagoras and its converse (if \(OA^2 + OB^2 = AB^2\), the angle at \(O\) is a right angle), that happens exactly when
 \[OA^2 + OB^2 = AB^2\]
 Work out each length squared with the distance formula:
 \[OA^2 = 1 + m_1^2 \qquad OB^2 = 1 + m_2^2 \qquad AB^2 = (m_1 - m_2)^2 = m_1^2 - 2m_1 m_2 + m_2^2\]
@@ -126,9 +126,15 @@ Do not find the perpendicular gradient and then use the old gradient in the equa
 
 Two lines meet at a point whose coordinates satisfy both equations, so solve them as simultaneous equations (see [Algebra from scratch](#math.f.algebra)). If the gradients are equal and the intercepts differ, the lines are parallel and never meet.
 
+:::eg Find where the lines \(y = 2x + 1\) and \(x + y = 7\) meet.
+Both equations hold at the meeting point, so replace \(y\) in the second equation by \(2x + 1\): \(x + (2x + 1) = 7\), so \(3x = 6\) and \(x = 2\). Then \(y = 2(2) + 1 = 5\). The lines meet at \((2, 5)\).
+Check in the second line: \(2 + 5 = 7\). ✓
+:::
+
 :::eg (Exam style) The points \(A(-2, 1)\) and \(B(6, 5)\) are given. (a) Find the equation of the perpendicular bisector of \(AB\). (b) The bisector meets the \(x\)-axis at \(C\). Find the coordinates of \(C\) and show that \(AC = BC\). (c) Find the area of triangle \(ABC\).
 **(a)** The midpoint of \(AB\) is \(M(2, 3)\). [B1] The gradient of \(AB\) is \(\dfrac{5 - 1}{6 - (-2)} = \dfrac12\), so the perpendicular gradient is \(-2\). [M1]
 \[y - 3 = -2(x - 2) \implies y = -2x + 7\] [A1]
+The arrow \(\implies\) means "which gives" or "so" (see [Algebra from scratch](#math.f.algebra)).
 
 **(b)** Put \(y = 0\): \(x = 3.5\), so \(C = (3.5, 0)\). [B1] Then
 \[AC^2 = (3.5 + 2)^2 + 1^2 = 31.25 \qquad BC^2 = (6 - 3.5)^2 + 5^2 = 31.25\] [M1]
@@ -302,6 +308,8 @@ Q: Find the equation of the line through \((-2, 3)\) with gradient \(-\tfrac12\)
 A: \(y - 3 = -\tfrac12 (x + 2)\), so \(2y - 6 = -x - 2\) and \(x + 2y - 4 = 0\).
 Q: Find the equation of the line through \((1, -2)\) and \((5, 6)\).
 A: Gradient \(= \dfrac{6 + 2}{5 - 1} = 2\). \(y + 2 = 2(x - 1)\), so \(y = 2x - 4\).
+Q: Find the point where the lines \(3x - y = 5\) and \(x + 2y = 4\) meet.
+A: From the first, \(y = 3x - 5\). Then \(x + 2(3x - 5) = 4\), so \(7x = 14\), \(x = 2\) and \(y = 1\). The lines meet at \((2, 1)\). Check in the first: \(6 - 1 = 5\). ✓
 Q: Lines \(l_1: 2x + 3y = 6\) and \(l_2: kx - 6y = 5\) are parallel. Find \(k\), then find the line through \((3, 1)\) perpendicular to \(l_1\).
 A: \(l_1\) has gradient \(-\tfrac23\) and \(l_2\) has gradient \(\tfrac{k}{6}\), so \(\tfrac k6 = -\tfrac23\) and \(k = -4\). The perpendicular gradient is \(\tfrac32\): \(y - 1 = \tfrac32 (x - 3)\), so \(3x - 2y - 7 = 0\).
 Q: Find the equation of the perpendicular bisector of \(P(-1, 4)\) and \(Q(5, 0)\).

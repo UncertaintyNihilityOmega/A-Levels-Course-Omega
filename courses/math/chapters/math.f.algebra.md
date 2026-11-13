@@ -40,6 +40,14 @@ For the product, multiply the numbers and then each letter: \(3 \times 4 = 12\),
 If you are not sure two expressions are equal, put \(x = 10\) (or any simple number) into both. \(\dfrac{x+6}{6}\) and \(x + 1\) are not equal, because at \(x = 12\) they give \(3\) and \(13\). One failed test proves they differ. A passed test is not a proof, but it is a good warning light.
 :::
 
+:::key Notation you will meet
+These symbols appear from the first A Level chapters. Later chapters link back here.
+- **Modulus** \(|a|\) is the size of \(a\) with the sign dropped, so \(|5| = 5\) and \(|-5| = 5\). It is never negative. [Modulus and polynomials](#math.p3.algebra) uses it properly.
+- **\(\implies\)** means "which gives" or "so": \(x + 3 = 7 \implies x = 4\). Each line follows from the one before.
+- **\(\iff\)** means "if and only if": each statement is true exactly when the other is. So \(x + 3 = 7 \iff x = 4\), because the two say the same thing, and you can go either way.
+- **\(\to\)** means "tends to" or "gets closer and closer to": \(\dfrac1n \to 0\) as \(n\) grows, because \(\dfrac1{10}, \dfrac1{100}, \dfrac1{1000}, \dots\) get as close to \(0\) as you like.
+:::
+
 ## Expanding brackets
 
 To **expand** a bracket, multiply every term inside by the term outside. The sign travels with the term: \(-3(x - 4) = -3x + 12\).

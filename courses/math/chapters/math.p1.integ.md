@@ -50,7 +50,7 @@ Check (a) by differentiating: \(3x^2 - 4x + 5\). ✓
 :::warn The most common slips
 - Missing \(+\,c\) in an indefinite integral. This costs a mark every time.
 - Dividing by the old power instead of the new one: \(\int x^3\,dx = \dfrac{x^4}{4}\), not \(\dfrac{x^4}{3}\).
-- Integrating a product or a quotient term by term: \(\int (x + 2)(x - 3)\,dx\) is **not** \(\frac{x^2}{2} \times \ldots\). Expand first.
+- Integrating a product or a quotient term by term: \(\int (x + 2)(x - 3)\,dx\) is **not** \(\left(\frac{x^2}{2} + 2x\right)\left(\frac{x^2}{2} - 3x\right)\). Expand the product to \(x^2 - x - 6\) first.
 - With negative powers, \(\int x^{-2}\,dx = -x^{-1}\), not \(x^{-1}\). The sign comes from dividing by \(-1\).
 :::
 
@@ -192,10 +192,10 @@ The curves meet where \(\sqrt{x} = x^2\), so \(x = 0\) or \(x = 1\). Between 0 a
 
 ## Improper integrals
 
-A definite integral is **improper** if one limit is infinite, or if the integrand is not defined at an end of the interval. Cambridge asks for simple cases. Replace the problem limit with a letter, integrate, then see what happens as the letter approaches the limit.
+A definite integral is **improper** if one limit is infinite, or if the integrand is not defined at an end of the interval. Cambridge asks for simple cases. Replace the problem limit with a letter, integrate, then see what happens as the letter approaches the limit. The **integrand** is the function being integrated. Some notation: \(\lim\) means the value the expression gets closer to; \(t \to \infty\) means \(t\) grows without bound; \(t \to 0^+\) means \(t\) gets closer to \(0\) from above; "diverges" means there is no such value.
 
 :::key Improper integrals
-- Infinite limit: \(\displaystyle\int_1^\infty f(x)\,dx = \lim_{t \to \infty}\int_1^t f(x)\,dx\). For a power \(x^{n}\), if \(n < -1\) the term \(t^{n+1} \to 0\), and the integral exists; if \(n > -1\) the term grows and the integral does not exist (it **diverges**).
+- Infinite limit: \(\displaystyle\int_1^\infty f(x)\,dx = \lim_{t \to \infty}\int_1^t f(x)\,dx\). For a power \(x^{n}\), if \(n < -1\) the term \(t^{n+1} \to 0\) (for \(n = -2\), \(t^{n+1} = \dfrac1t\), which is \(\dfrac1{1000}\) at \(t = 1000\) and \(\dfrac1{1\,000\,000}\) at \(t = 1\,000\,000\)), and the integral exists; if \(n > -1\) the term grows and the integral does not exist (it **diverges**).
 - Undefined at a limit: \(\displaystyle\int_0^1 f(x)\,dx = \lim_{t \to 0^+}\int_t^1 f(x)\,dx\). For \(x^{n}\) with \(-1 < n < 0\) this converges, as \(t^{n+1} \to 0\).
 :::
 
@@ -255,7 +255,7 @@ If the region is **not bounded by the axis** you rotate about, the solid has a h
 :::eg The region between \(y = 9 - x^2\) and the line \(y = 5\) is rotated about the \(x\)-axis. Find the volume.
 The curves meet where \(9 - x^2 = 5\), so \(x = \pm 2\). The curve is above the line in between, so for each \(x\) the outer radius is \(9 - x^2\) and the inner radius is \(5\):
 \[V = \pi\int_{-2}^{2}\left[(9 - x^2)^2 - 5^2\right]dx = \pi\int_{-2}^{2}\left(56 - 18x^2 + x^4\right)dx\]
-The integrand is even, so double the integral from 0 to 2:
+An **even** function has the same value at \(x\) and \(-x\) (its graph is symmetric about the \(y\)-axis). The integrand \(56 - 18x^2 + x^4\) is even, so the part from \(-2\) to \(0\) equals the part from \(0\) to \(2\). Double the integral from 0 to 2:
 \[V = 2\pi\Big[56x - 6x^3 + \tfrac{x^5}{5}\Big]_0^2 = 2\pi\left(112 - 48 + \tfrac{32}{5}\right) = \tfrac{704\pi}{5} = 442 \text{ (3 s.f.)}\]
 :::
 
@@ -306,7 +306,7 @@ The formula \(V = \pi\int y^2\,dx\) and the limits are correct [M1]. **Line 1 lo
 
 Correct working: \(V = \pi\displaystyle\int_0^2 (x + 1)^2\,dx = \pi\Big[\tfrac{(x + 1)^3}{3}\Big]_0^2\) [A1] \(= \pi\left(\tfrac{27}{3} - \tfrac13\right) = \tfrac{26\pi}{3} = 27.2\). [A1]
 
-**Check:** rotating \(y = x + 1\) gives a cone with a flat top removed (a frustum), with radii 1 and 3 and height 2. Its volume is \(\tfrac13\pi \times 2 \times (1 + 3 + 9) = \tfrac{26\pi}{3}\), which agrees.
+**Check:** the line \(y = x + 1\) reaches \(0\) at \(x = -1\), so the solid is a cone of radius \(3\) and height \(3\) (from \(x = -1\) to \(x = 2\)) with a small cone of radius \(1\) and height \(1\) (from \(x = -1\) to \(x = 0\)) removed. The volume is \(\tfrac13\pi \times 3^2 \times 3 - \tfrac13\pi \times 1^2 \times 1 = 9\pi - \tfrac{\pi}{3} = \tfrac{26\pi}{3}\), which agrees.
 :::
 
 :::try Start easy, finish at exam standard
@@ -328,7 +328,7 @@ Q: Find (a) \(\displaystyle\int_1^\infty 3x^{-4}\,dx\), (b) \(\displaystyle\int_
 A: (a) \(\Big[-x^{-3}\Big]_1^\infty = 0 - (-1) = 1\). (b) \(\Big[2x^{1/2}\Big]_0^4 = 4\), with the limit as the lower end tends to \(0\).
 Q: The region under \(y = \sqrt{x}\) for \(0 \le x \le 4\) is rotated about the \(x\)-axis. Find the exact volume. Then find the volume formed by rotating the region between \(y = x\) and \(y = x^2\) about the \(x\)-axis.
 A: \(V = \pi\displaystyle\int_0^4 x\,dx = \pi\Big[\tfrac{x^2}{2}\Big]_0^4 = 8\pi\). For the second the curves meet at \(0\) and \(1\) with \(y = x\) above: \(V = \pi\displaystyle\int_0^1 (x^2 - x^4)\,dx = \pi\left(\tfrac13 - \tfrac15\right) = \tfrac{2\pi}{15}\).
-Q: (Exam style) The curve \(y = \dfrac{12}{x^2}\) is shown for \(x > 0\). The region \(R\) is bounded by the curve, the \(x\)-axis and the lines \(x = 1\) and \(x = 3\). (a) Find the area of \(R\). (b) Find the volume when \(R\) is rotated about the \(x\)-axis, giving the exact value. (c) The region under the curve for \(x \ge 1\) is infinite in length: find its area.
+Q: (Exam style) Consider the curve \(y = \dfrac{12}{x^2}\) for \(x > 0\). The region \(R\) is bounded by the curve, the \(x\)-axis and the lines \(x = 1\) and \(x = 3\). (a) Find the area of \(R\). (b) Find the volume when \(R\) is rotated about the \(x\)-axis, giving the exact value. (c) The region under the curve for \(x \ge 1\) is infinite in length: find its area.
 A: (a) \(\displaystyle\int_1^3 12x^{-2}\,dx = \Big[-12x^{-1}\Big]_1^3 = -4 + 12 = 8\). [M1 A1] (b) \(V = \pi\displaystyle\int_1^3 144x^{-4}\,dx = \pi\Big[-48x^{-3}\Big]_1^3 = \pi\left(-\tfrac{48}{27} + 48\right) = \tfrac{416\pi}{9}\). [M1 A1 A1] (c) \(\displaystyle\int_1^\infty 12x^{-2}\,dx = \Big[-12x^{-1}\Big]_1^\infty = 0 + 12 = 12\), using the limit as \(t \to \infty\). [M1 A1]
 :::
 

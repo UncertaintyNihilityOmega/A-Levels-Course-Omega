@@ -86,6 +86,11 @@ eq("T1", sqrt(8**2 + 6**2), 10); assert mid((-3, 4), (5, -2)) == (1, 1)
 assert on_line(1, 2, -4, (-2, 3))
 assert grad((1, -2), (5, 6)) == 2 and 2 * 1 - 4 == -2
 assert F(-2, 3) == F(-4, 6)
+# intersection of lines: example y=2x+1, x+y=7 -> (2,5); try 3x-y=5, x+2y=4 -> (2,1)
+assert 3 * 2 == 6 and 2 + (2 * 2 + 1) == 7 and 2 * 2 + 1 == 5
+assert 7 * 2 == 14 and 3 * 2 - 5 == 1 and 3 * 2 - 1 == 5 and 2 + 2 * 1 == 4
+# perpendicular-gradient proof and ax+by+c=0 rearrangement: by = -ax - c
+assert F(-3, 1) / 1 == -3 and F(-2, 5) == -F(2, 5)
 assert -1 / F(-2, 3) == F(3, 2) and on_line(3, -2, -7, (3, 1))
 assert mid((-1, 4), (5, 0)) == (2, 2) and grad((-1, 4), (5, 0)) == F(-2, 3) and on_line(3, -2, -2, (2, 2))
 assert 3**2 + 4**2 == 25

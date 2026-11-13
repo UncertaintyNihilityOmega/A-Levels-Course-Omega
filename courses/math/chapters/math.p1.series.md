@@ -71,7 +71,7 @@ For a positive integer \(n\):
 The general term (the term in \(b^r\)) is \(\dbinom{n}{r}a^{n-r}b^r\). The powers of \(a\) fall from \(n\) to \(0\), the powers of \(b\) rise from \(0\) to \(n\), and the powers in each term add up to \(n\). The expansion has \(n + 1\) terms. It is on MF19.
 :::
 
-When you expand \((1 + x)^n\) the expression is \(1 + nx + \dfrac{n(n-1)}{2!}x^2 + \cdots\): this "ascending powers of \(x\)" form is used when the question asks for the first few terms.
+When you expand \((1 + x)^n\) the expression is \(1 + nx + \dfrac{n(n-1)}{2!}x^2 + \cdots\): this "ascending powers of \(x\)" form (lowest power first: \(1, x, x^2, \dots\)) is used when the question asks for the first few terms.
 
 :::eg Expand \((2 + 3x)^4\).
 Here \(a = 2\), \(b = 3x\), \(n = 4\), and the coefficients are \(1, 4, 6, 4, 1\):
@@ -124,7 +124,7 @@ The \(n\)th term is \(u_n = a + (n-1)d\). To find the sum of the first \(n\) ter
 
 :::formula Arithmetic progression
 \[u_n = a + (n-1)d \qquad S_n = \frac{n}{2}\big(2a + (n-1)d\big) = \frac{n}{2}(a + l)\]
-\(a\) is the first term, \(d\) the common difference, \(n\) the number of terms and \(l\) the last term. Both are on MF19. Three numbers \(a, b, c\) are in AP if and only if \(b - a = c - b\), that is \(2b = a + c\).
+\(a\) is the first term, \(d\) the common difference, \(n\) the number of terms and \(l\) the last term. Both are on MF19. Three numbers \(a, b, c\) are in AP if and only if (exactly when) \(b - a = c - b\), that is \(2b = a + c\).
 :::
 
 :::proof Where the sum of an arithmetic series comes from
@@ -169,7 +169,7 @@ The \(n\)th term is \(u_n = ar^{n-1}\). For the sum, subtract \(rS_n\) from \(S_
 
 :::formula Geometric progression
 \[u_n = ar^{n-1} \qquad S_n = \frac{a(1 - r^n)}{1 - r} = \frac{a(r^n - 1)}{r - 1} \quad (r \ne 1)\]
-Use the first form when \(|r| < 1\) and the second when \(r > 1\), which avoids negatives. Three numbers \(a, b, c\) are in GP if \(\dfrac ba = \dfrac cb\), that is \(b^2 = ac\). All are on MF19.
+Use the first form when \(|r| < 1\) (the size of \(r\) is less than 1, that is \(-1 < r < 1\); see [Algebra from scratch](#math.f.algebra)) and the second when \(r > 1\), which avoids negatives. Three numbers \(a, b, c\) are in GP if \(\dfrac ba = \dfrac cb\), that is \(b^2 = ac\). All are on MF19.
 :::
 
 :::proof Where the sum of a geometric series comes from
@@ -196,10 +196,10 @@ Factorise both sides: \(S_n(1 - r) = a(1 - r^n)\). Dividing by \(1 - r\), which 
 
 ### Sum to infinity
 
-If \(|r| < 1\), the terms \(ar^n\) get smaller and smaller, and the sum of the first \(n\) terms gets closer to a limit. We say the series **converges**. Since \(r^n \to 0\), the formula for \(S_n\) becomes:
+If \(|r| < 1\), the terms \(ar^n\) get smaller and smaller, and the sum of the first \(n\) terms gets closer to a limit. We say the series **converges**. Since \(r^n \to 0\) (the arrow means "gets closer and closer to": \(r^n\) tends to 0 as \(n\) grows), the formula for \(S_n\) becomes:
 
 :::key Sum to infinity
-A geometric series converges if and only if \(-1 < r < 1\), and then
+A geometric series converges if and only if (exactly when) \(-1 < r < 1\), and then
 \[S_\infty = \frac{a}{1 - r}\]
 If \(|r| \ge 1\), the series does not converge and \(S_\infty\) does not exist. The formula is on MF19, but you must state or check \(|r| < 1\).
 :::

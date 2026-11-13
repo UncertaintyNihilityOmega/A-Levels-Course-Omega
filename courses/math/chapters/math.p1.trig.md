@@ -94,9 +94,9 @@ The transformations from [Functions](#math.p1.functions) apply to trigonometric 
 
 :::key Transformations
 For \(y = a\sin(bx + c) + d\) (and similarly for cosine):
-- \(a\): stretch parallel to the \(y\)-axis, scale factor \(a\). The **amplitude** (half the height from top to bottom) becomes \(|a|\).
+- \(a\): stretch parallel to the \(y\)-axis, scale factor \(a\). The **amplitude** (half the height from top to bottom) becomes \(|a|\) (\(a\) with its sign dropped; see [Algebra from scratch](#math.f.algebra)).
 - \(b\): stretch parallel to the \(x\)-axis, scale factor \(\dfrac1b\). The period becomes \(\dfrac{360^\circ}{b}\) (or \(\dfrac{2\pi}{b}\)).
-- \(c\): translation by \(-\dfrac{c}{b}\) in the \(x\)-direction. \(y = \sin(x + 30^\circ)\) moves \(30^\circ\) to the **left**.
+- \(c\): translation by \(-\dfrac{c}{b}\) in the \(x\)-direction. \(y = \sin(x + 30^\circ)\) moves \(30^\circ\) to the **left**. The reason: \(\sin(bx + c) = \sin\left(b\left(x + \dfrac{c}{b}\right)\right)\), so \(y = \sin(2x + 60^\circ)\) is shifted \(30^\circ\) left, not \(60^\circ\).
 - \(d\): translation by \(d\) up the \(y\)-axis.
 The tangent graph has period \(\dfrac{180^\circ}{b}\) instead.
 :::
@@ -335,7 +335,7 @@ A: (a) \(6(1 - \sin^2\theta) + \sin\theta = 5\) [M1] gives \(6 - 6\sin^2\theta +
 Q: [6 marks] ★★★ Solve \(\sin x + \cos x = 1\) for \(0^\circ \le x \le 360^\circ\).
 H: Square both sides. Then use \(\sin^2 x + \cos^2 x \equiv 1\) and look at what is left.
 H: Squaring can introduce solutions that do not satisfy the original equation. Check every answer in \(\sin x + \cos x = 1\).
-A: Squaring: \(\sin^2 x + 2\sin x\cos x + \cos^2 x = 1\). [M1] This gives \(1 + \sin 2x = 1\), so \(\sin 2x = 0\). [A1] \(2x = 0^\circ, 180^\circ, 360^\circ, 540^\circ, 720^\circ\), so \(x = 0^\circ, 90^\circ, 180^\circ, 270^\circ, 360^\circ\). [M1 A1] Checking in the original equation: \(x = 180^\circ\) gives \(-1\) and \(x = 270^\circ\) gives \(-1\), so both are rejected. [M1] The solutions are \(x = 0^\circ\), \(90^\circ\) and \(360^\circ\). [A1]
+A: Squaring: \(\sin^2 x + 2\sin x\cos x + \cos^2 x = 1\). [M1] Using \(\sin^2 x + \cos^2 x = 1\), this gives \(1 + 2\sin x\cos x = 1\), so \(\sin x\cos x = 0\), so \(\sin x = 0\) or \(\cos x = 0\). [A1] \(\sin x = 0\) gives \(x = 0^\circ, 180^\circ, 360^\circ\) and \(\cos x = 0\) gives \(x = 90^\circ, 270^\circ\), so \(x = 0^\circ, 90^\circ, 180^\circ, 270^\circ, 360^\circ\). [M1 A1] Checking in the original equation: \(x = 180^\circ\) gives \(-1\) and \(x = 270^\circ\) gives \(-1\), so both are rejected. [M1] The solutions are \(x = 0^\circ\), \(90^\circ\) and \(360^\circ\). [A1]
 Q: [6 marks] ★★★ Solve \(2\sin^2 x - 3\sin x\cos x + \cos^2 x = 0\) for \(0^\circ \le x \le 180^\circ\).
 H: Divide every term by \(\cos^2 x\). First check that \(\cos x = 0\) is not a solution, so that no solution is lost.
 H: You get a quadratic in \(\tan x\).

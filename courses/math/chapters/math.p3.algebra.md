@@ -23,7 +23,7 @@ A: \((3x + 2)(2x - 1)\). Check: \(6x^2 - 3x + 4x - 2\). ✓
 ## The modulus
 
 :::def Modulus
-The modulus of a real number \(x\), written \(|x|\), is its size (distance from zero), whatever its sign:
+The modulus of a real number \(x\), written \(|x|\) (first met in [Algebra from scratch](#math.f.algebra)), is its size (distance from zero), whatever its sign:
 \[|x| = \begin{cases} x & \text{if } x \ge 0 \\ -x & \text{if } x < 0 \end{cases}\]
 So \(|5| = 5\) and \(|-5| = 5\). The modulus is never negative.
 :::
@@ -50,6 +50,7 @@ When both sides contain a variable, the most reliable method is to **square both
 
 :::key Squaring with a modulus
 \[|a| = |b| \iff a^2 = b^2\]
+The double arrow \(\iff\) means "if and only if": each statement is true exactly when the other is (see [Algebra from scratch](#math.f.algebra)).
 For \(|a| = b\), where \(b\) may contain \(x\), square both sides to get \(a^2 = b^2\), then **check every solution** in the original equation: squaring can add false answers (those where \(b < 0\)).
 :::
 
@@ -128,7 +129,7 @@ Both must hold, so \(x > 1\). (Squaring would also give \(x < -3\), which is not
 ## Polynomials and division
 
 :::def Polynomial
-An expression of the form \(a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0\), where the powers are non-negative integers. The highest power \(n\) is the **degree**. A degree 2 polynomial is quadratic, degree 3 is cubic and degree 4 is quartic.
+An expression of the form \(a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0\), where the powers are non-negative integers. The \(a_n, a_{n-1}, \dots, a_0\) are just the numbers in front of each power: in \(2x^3 - 5x^2 + x + 6\), \(a_3 = 2\), \(a_2 = -5\), \(a_1 = 1\) and \(a_0 = 6\). The highest power \(n\) is the **degree**. A degree 2 polynomial is quadratic, degree 3 is cubic and degree 4 is quartic.
 :::
 
 You can divide polynomials in the same way you divide whole numbers: \(17 \div 5 = 3\) remainder \(2\) means \(17 = 5 \times 3 + 2\). For polynomials:
@@ -163,7 +164,7 @@ You do not always need the full division. The remainder alone is found by substi
 
 :::key Remainder theorem and factor theorem
 - **Remainder theorem:** when \(f(x)\) is divided by \((x - a)\), the remainder is \(f(a)\). When divided by \((ax + b)\), the remainder is \(f\left(-\dfrac{b}{a}\right)\).
-- **Factor theorem:** \((x - a)\) is a factor of \(f(x)\) if and only if \(f(a) = 0\). Similarly \((ax + b)\) is a factor if and only if \(f\left(-\dfrac ba\right) = 0\).
+- **Factor theorem:** \((x - a)\) is a factor of \(f(x)\) if and only if (exactly when) \(f(a) = 0\). Similarly \((ax + b)\) is a factor if and only if \(f\left(-\dfrac ba\right) = 0\).
 Reason: \(f(x) = (x - a)q(x) + r\). Put \(x = a\) and the bracket vanishes, leaving \(f(a) = r\).
 :::
 
@@ -180,11 +181,11 @@ Reason: \(f(x) = (x - a)q(x) + r\). Put \(x = a\) and the bracket vanishes, leav
 To solve a cubic \(f(x) = 0\): try small factors of the constant term (\(\pm1, \pm2, \pm3, \ldots\)) until \(f(a) = 0\); that gives a factor \((x - a)\). Divide to get a quadratic, then factorise or use the formula. For a leading coefficient other than 1, the possible rational roots are \(\dfrac{\text{factor of constant}}{\text{factor of leading coefficient}}\).
 
 :::eg Solve (a) \(x^3 - 4x^2 + x + 6 = 0\), (b) \(2x^3 - 3x^2 - 11x + 6 = 0\), (c) \(x^3 - x^2 - 3x - 1 = 0\) giving exact answers.
-(a) \(f(2) = 8 - 16 + 2 + 6 = 0\), so \((x - 2)\) is a factor. Dividing: \(x^3 - 4x^2 + x + 6\) \(= (x - 2)(x^2 - 2x - 3)\) \(= (x - 2)(x - 3)(x + 1)\). The solutions are \(x = 2, 3, -1\).
+(a) \(f(2) = 8 - 16 + 2 + 6 = 0\), so \((x - 2)\) is a factor. Write \(x^3 - 4x^2 + x + 6 = (x - 2)(x^2 + px + q)\). The \(x^2\) terms: \(p - 2 = -4\), so \(p = -2\). The constants: \(-2q = 6\), so \(q = -3\). Dividing gives \(x^3 - 4x^2 + x + 6\) \(= (x - 2)(x^2 - 2x - 3)\) \(= (x - 2)(x - 3)(x + 1)\). The solutions are \(x = 2, 3, -1\).
 
-(b) From the earlier example \(f(3) = 0\). Dividing by \((x - 3)\): \(2x^3 - 3x^2 - 11x + 6\) \(= (x - 3)(2x^2 + 3x - 2)\) \(= (x - 3)(2x - 1)(x + 2)\). The solutions are \(x = 3, \tfrac12, -2\).
+(b) From the earlier example \(f(3) = 0\). Dividing by \((x - 3)\), with \((x - 3)(2x^2 + px + q)\): the \(x^2\) terms give \(p - 6 = -3\), so \(p = 3\), and the constants give \(-3q = 6\), so \(q = -2\). So \(2x^3 - 3x^2 - 11x + 6\) \(= (x - 3)(2x^2 + 3x - 2)\) \(= (x - 3)(2x - 1)(x + 2)\). The solutions are \(x = 3, \tfrac12, -2\).
 
-(c) Try \(x = -1\): \(-1 - 1 + 3 - 1 = 0\), so \((x + 1)\) is a factor. Dividing: \((x + 1)(x^2 - 2x - 1)\). The quadratic has discriminant \(4 + 4 = 8\), so \(x = \dfrac{2 \pm \sqrt8}{2}\) \(= 1 \pm \sqrt2\). The solutions are \(x = -1\), \(1 + \sqrt2\), \(1 - \sqrt2\).
+(c) Try \(x = -1\): \(-1 - 1 + 3 - 1 = 0\), so \((x + 1)\) is a factor. Dividing (the same comparison: \(x^3 - x^2 - 3x - 1 = (x + 1)(x^2 + px + q)\) gives \(p + 1 = -1\), so \(p = -2\), and \(q = -1\)): \((x + 1)(x^2 - 2x - 1)\). The quadratic has discriminant \(4 + 4 = 8\), so \(x = \dfrac{2 \pm \sqrt8}{2}\) \(= 1 \pm \sqrt2\). The solutions are \(x = -1\), \(1 + \sqrt2\), \(1 - \sqrt2\).
 :::
 
 A polynomial with an unknown coefficient can be found by substituting a known root or remainder. Write one equation for each piece of information, then solve them together.
@@ -194,7 +195,7 @@ A polynomial with an unknown coefficient can be found by substituting a known ro
 Remainder theorem: \(f(-2) = 12\), so \(-8 + 4a - 2b - 6 = 12\), giving \(2a - b = 13\). [M1 A1]
 Add the equations: \(3a = 18\), so \(a = 6\) and \(b = -1\). [A1]
 
-**(b)** \(f(x) = x^3 + 6x^2 - x - 6\). Divide by \((x - 1)\): \(f(x) = (x - 1)(x^2 + 7x + 6)\). [M1]
+**(b)** \(f(x) = x^3 + 6x^2 - x - 6\). Divide by \((x - 1)\): write \(f(x) = (x - 1)(x^2 + px + q)\); the \(x^2\) terms give \(p - 1 = 6\), so \(p = 7\), and the constants give \(-q = -6\), so \(q = 6\). \(f(x) = (x - 1)(x^2 + 7x + 6)\). [M1]
 \[f(x) = (x - 1)(x + 1)(x + 6)\] [A1]
 So \(x = 1\), \(-1\) or \(-6\). [A1]
 Check: \(f(-1) = -1 + 6 + 1 - 6 = 0\). ✓
@@ -206,6 +207,7 @@ Check: \(f(-1) = -1 + 6 + 1 - 6 = 0\). ✓
 Divide by 4: \(x^3 - 25x^2 + 150x - 252 = 0\). [A1]
 
 **(b)** \(f(3) = 27 - 225 + 450 - 252 = 0\), so \(x = 3\) is a solution and \((x - 3)\) is a factor. [M1]
+Write \(x^3 - 25x^2 + 150x - 252 = (x - 3)(x^2 + px + q)\). The \(x^2\) terms: \(p - 3 = -25\), so \(p = -22\). The constants: \(-3q = -252\), so \(q = 84\).
 \[x^3 - 25x^2 + 150x - 252 = (x - 3)(x^2 - 22x + 84)\] [M1]
 The quadratic has discriminant \(484 - 336 = 148\), so \(x = \dfrac{22 \pm \sqrt{148}}{2}\) \(= 11 \pm \sqrt{37}\), which is \(17.08\) or \(4.917\). [M1]
 The width \(20 - 2x\) must be positive, so \(x < 10\). The other possible value is \(x = 11 - \sqrt{37} = 4.92\) cm (3 s.f.). [A1]

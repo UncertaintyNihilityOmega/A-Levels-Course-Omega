@@ -25,7 +25,7 @@ A: \((r + 6)(r - 4) = 0\), so \(r = 4\) (the root \(-6\) is rejected).
 Degrees come from dividing a full turn into 360 arbitrary parts. Radians come from the circle itself.
 
 :::def Radian
-One radian is the angle at the centre of a circle subtended by an arc whose length equals the radius. An angle of \(\theta\) radians at the centre of a circle of radius \(r\) cuts off an arc of length \(r\theta\).
+One radian is the angle at the centre of a circle subtended by an arc whose length equals the radius. (An arc **subtends** the angle at the centre between the two radii that reach its ends.) An angle of \(\theta\) radians at the centre of a circle of radius \(r\) cuts off an arc of length \(r\theta\).
 :::
 
 :::html
@@ -213,7 +213,7 @@ Q: The minute hand of a clock is \(9\) cm long. How far does the tip move in 20 
 A: Twenty minutes is a third of a turn, so \(\theta = \dfrac{2\pi}{3}\). Distance \(= 9 \times \dfrac{2\pi}{3} = 6\pi = 18.8\) cm. Area \(= \tfrac12 \times 81 \times \dfrac{2\pi}{3} = 27\pi = 84.8\) cm².
 Q: Triangle \(PQR\) has \(PQ = PR = 10\) cm and angle \(QPR = 0.9\) radians. A circular arc with centre \(P\) and radius \(10\) cm joins \(Q\) to \(R\). Find the area of the region between the arc and the chord \(QR\).
 A: This is a segment: \(\tfrac12 \times 100 \times (0.9 - \sin 0.9) = 50 \times (0.9 - 0.7833) = 5.83\) cm².
-Q: (Exam style) The diagram shows a sector \(OAB\) of a circle of radius \(9\) cm. The angle \(AOB\) is \(\theta\) radians, and the arc \(AB\) has length \(12.6\) cm. (a) Find \(\theta\). (b) Find the area of the sector. (c) Find the area of the triangle \(OAB\) and hence of the shaded segment.
+Q: (Exam style) A sector \(OAB\) of a circle with centre \(O\) has radius \(9\) cm. The angle \(AOB\) is \(\theta\) radians, and the arc \(AB\) has length \(12.6\) cm. The segment is the region between the chord \(AB\) and the arc. (a) Find \(\theta\). (b) Find the area of the sector. (c) Find the area of the triangle \(OAB\) and hence of the segment.
 A: (a) \(\theta = \dfrac{12.6}{9} = 1.4\). [M1 A1] (b) \(\tfrac12 \times 81 \times 1.4 = 56.7\) cm². [M1 A1] (c) Triangle \(= \tfrac12 \times 81 \times \sin 1.4 = 40.5 \times 0.98545 = 39.9\) cm². [M1] Segment \(= 56.7 - 39.9 = 16.8\) cm². [A1]
 :::
 

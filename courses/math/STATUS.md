@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-13 · FIX · 32 reader items closed in math.overview to math.p1.functions: mark codes and stars explained once, new teaching sentences/boxes (surd parts, point-slope, exterior angle, increasing, vectors), steps spelled out, checks ok
+Last: 2026-11-13 · FIX · 24 reader items closed, math.p1.coord to math.p3.logs: notation key in math.f.algebra, glosses, new coord example and Try question, worked coefficient comparison, reworded diagram-less questions
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

@@ -62,7 +62,7 @@ If you repeat the chord calculation at a general point \((x, x^3)\) instead of a
 The derivative of \(y = f(x)\) is the function that gives the gradient of the curve at each value of \(x\). It is written \(\dfrac{dy}{dx}\) or \(f'(x)\).
 :::
 
-Finding the derivative is called **differentiating**. Read \(\dfrac{dy}{dx}\) as "d y by d x": it is one symbol meaning "the rate of change of \(y\) with respect to \(x\)", not a fraction you can cancel. Read \(f'(x)\) as "f dash of x". So if \(f(x) = x^3\), then \(f'(x) = 3x^2\) and \(f'(2) = 12\).
+Finding the derivative is called **differentiating**. Read \(\dfrac{dy}{dx}\) as "d y by d x": it is one symbol meaning "the rate of change of \(y\) with respect to \(x\)". \(\dfrac{dy}{dx}\) is not itself a fraction, but it is the limit of the fraction \(\dfrac{\delta y}{\delta x}\), which is why the chain rule can be remembered as cancelling \(du\). Read \(f'(x)\) as "f dash of x". So if \(f(x) = x^3\), then \(f'(x) = 3x^2\) and \(f'(2) = 12\).
 
 You will not be asked to derive results from chords in a Cambridge exam, but you should understand the idea: **the derivative is the limit of chord gradients**.
 
@@ -126,7 +126,7 @@ There is no rule in Paper 1 for a product or a quotient, so turn each into a sum
 
 :::warn Two classic slips
 **Differentiating a product bracket by bracket.** The derivative of \((2x + 1)(x - 3)\) is not \(2 \times 1 = 2\). Expand first.
-**Moving the coefficient into the power.** \(\dfrac{3}{2x}\) is \(\tfrac32 x^{-1}\), not \(3(2x)^{-1}\) treated as \(3 \times 2x^{-1}\). Write the number and the power of \(x\) separately before you differentiate.
+**Moving the coefficient into the power.** \(\dfrac{3}{2x} = \tfrac32 x^{-1}\). Do not write it as \(3 \times 2x^{-1} = 6x^{-1}\): the \(2\) is in the denominator. Write the number and the power of \(x\) separately before you differentiate.
 :::
 
 Once you have \(f'(x)\), substitute a value of \(x\) to get the gradient at a point, or solve \(f'(x) = k\) to find where the gradient has a given value.
@@ -250,7 +250,7 @@ A square is never negative, so \(f'(x) \geq 3 > 0\) for all \(x\). Therefore \(f
 At the top of a hill or the bottom of a valley the tangent is horizontal, so the gradient is zero.
 
 :::def Stationary point
-A point on a curve where \(\dfrac{dy}{dx} = 0\). A stationary point is a **maximum point** if the curve changes from rising to falling there, and a **minimum point** if it changes from falling to rising.
+A point on a curve where \(\dfrac{dy}{dx} = 0\). A stationary point is a **maximum point** if the curve changes from rising to falling there, and a **minimum point** if it changes from falling to rising. The **nature** of a stationary point means whether it is a maximum or a minimum.
 :::
 
 :::plot The curve y = x³ − 3x² − 9x + 5 has a maximum point at (−1, 10) and a minimum point at (3, −22). It decreases between them.
@@ -274,7 +274,7 @@ Find \(y\): when \(x = -1\), \(y = -1 - 3 + 9 + 5 = 10\); when \(x = 3\), \(y = 
 At \(x = -1\): \(\dfrac{d^2y}{dx^2} = -12 < 0\), so \((-1, 10)\) is a maximum point. At \(x = 3\): \(\dfrac{d^2y}{dx^2} = 12 > 0\), so \((3, -22)\) is a minimum point. [A1]
 :::
 
-The second-derivative test is quickest, but there is another method that always works. Look at the sign of \(\dfrac{dy}{dx}\) just to the left and just to the right of the stationary point.
+The second-derivative test is quickest, but there is another method that always works. Look at the sign of \(\dfrac{dy}{dx}\) just to the left and just to the right of the stationary point. Here \(\dfrac{dy}{dx} = 3(x - 3)(x + 1)\), so at \(x = -1.1\) it is \(3(-4.1)(-0.1) > 0\), at \(x = -0.9\) it is \(3(-3.9)(0.1) < 0\), at \(x = 2.9\) it is \(3(-0.1)(3.9) < 0\) and at \(x = 3.1\) it is \(3(0.1)(4.1) > 0\).
 
 | \(x\) | \(-1.1\) | \(-1\) | \(-0.9\) | \(2.9\) | \(3\) | \(3.1\) |
 |---|---|---|---|---|---|---|
@@ -317,6 +317,8 @@ The area is \(A = \pi r^2\), so \(\dfrac{dA}{dr} = 2\pi r\). When \(r = 20\), \(
 \[\frac{dA}{dt} = \frac{dA}{dr} \times \frac{dr}{dt} = 40\pi \times 0.5 = 20\pi\] [M1]
 The area is increasing at \(20\pi = 62.8\,\mathrm{m^2\,s^{-1}}\) (3 s.f.). [A1]
 :::
+
+The units \(\mathrm{m\,s^{-1}}\) mean metres per second, \(\mathrm{m^2\,s^{-1}}\) means square metres per second and \(\mathrm{cm^3\,s^{-1}}\) means cubic centimetres per second. The \(^{-1}\) on the \(\mathrm{s}\) is the "per second".
 
 :::eg (Exam style) Air is pumped into a spherical balloon at a constant rate of \(100\,\mathrm{cm^3\,s^{-1}}\). Find the rate at which the radius is increasing at the instant when the radius is 5 cm.
 For a sphere \(V = \tfrac43\pi r^3\), so \(\dfrac{dV}{dr} = 4\pi r^2\). When \(r = 5\), \(\dfrac{dV}{dr} = 100\pi\). [B1]
