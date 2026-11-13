@@ -26,12 +26,14 @@ A: \(\dfrac{dy}{dx} = \ln x + 1\), so at \(x = e\) the gradient is \(2\).
 A root (or solution) of \(\mathrm{f}(x) = 0\) is a value \(\alpha\) such that \(\mathrm{f}(\alpha) = 0\). Graphically it is where the curve \(y = \mathrm{f}(x)\) crosses the \(x\)-axis.
 :::
 
-If the graph of a continuous function goes from below the \(x\)-axis to above it, it must cross the axis somewhere in between. That is the idea of the sign change test.
+If the graph of a function goes from below the \(x\)-axis to above it, and the function is **continuous** (its graph has no jumps or gaps, so it can be drawn without lifting the pen), it must cross the axis somewhere in between. That is the idea of the sign change test.
 
 :::key Sign change rule
 If \(\mathrm{f}(x)\) is **continuous** on the interval \([a, b]\) and \(\mathrm{f}(a)\) and \(\mathrm{f}(b)\) have **opposite signs**, then \(\mathrm{f}(x) = 0\) has at least one root between \(a\) and \(b\).
 To use it in an exam: (1) write the equation as \(\mathrm{f}(x) = 0\), (2) calculate \(\mathrm{f}(a)\) and \(\mathrm{f}(b)\) and quote their values, (3) state "there is a change of sign, and \(\mathrm{f}\) is continuous, so there is a root in the interval."
 :::
+
+Interval notation: \([a, b]\) means all numbers from \(a\) to \(b\) including both ends; \((a, b)\) means the numbers strictly between, ends not included.
 
 :::eg Show that \(x^3 + x - 5 = 0\) has a root between \(1\) and \(2\), and that \(e^x + x - 4 = 0\) has a root between \(1\) and \(1.5\).
 Let \(\mathrm{f}(x) = x^3 + x - 5\). Then \(\mathrm{f}(1) = 1 + 1 - 5 = -3 < 0\) and \(\mathrm{f}(2) = 8 + 2 - 5 = 5 > 0\). There is a sign change and \(\mathrm{f}\) is continuous, so a root lies between \(1\) and \(2\).
@@ -133,7 +135,7 @@ Here is the same start for this rearrangement. The staircase moves away from the
 <div class="widget" data-w="iteration" data-f="(x^3-5)/2" data-x0="2" data-range="-3,3" data-n="5"></div>
 :::
 
-An iteration may **converge** (the staircase or the cobweb closes in on the root), **diverge** (moves away) or **oscillate** (jump either side of the root). The syllabus does not ask you to prove when it converges, but you should recognise that it can fail. If a question asks you to comment, say "the values are not approaching a limit". If an iteration diverges, rearrange the equation another way.
+An iteration may **converge** steadily (the staircase closes in on the root from one side), converge while jumping from one side of the root to the other (**oscillating**, the cobweb), or **diverge** (move away from the root). Only the last fails. The syllabus does not ask you to prove when it converges, but you should recognise that it can fail. If a question asks you to comment, say "the values are not approaching a limit". If an iteration diverges, rearrange the equation another way.
 
 :::eg The equation \(e^x + 2x - 10 = 0\) has a root near \(1.8\). Show that it can be written \(x = \ln(10 - 2x)\) and use \(x_0 = 1.8\) to find the root to 2 decimal places.
 \(e^x = 10 - 2x\), so taking natural logs gives \(x = \ln(10 - 2x)\).

@@ -50,6 +50,7 @@ If the DE can be arranged so that all the \(y\) terms are on one side with \(dy\
 For \(\dfrac{dy}{dx} = f(x)\,g(y)\), rearrange and integrate:
 \[\int \frac{1}{g(y)}\,dy = \int f(x)\,dx\]
 Add **one** constant \(c\), on one side only. Then use the initial condition to find \(c\), and solve for \(y\) if the question asks for \(y\) in terms of \(x\).
+In practice: divide by \(g(y)\), multiply by \(dx\), then write \(\int\) on both sides. The proof below shows why this works.
 :::
 
 :::proof Why "separating the variables" is allowed
@@ -93,8 +94,8 @@ When the rate is proportional to the quantity, \(\dfrac{dN}{dt} = kN\) separates
 :::eg A population of insects is modelled by \(\dfrac{dN}{dt} = kN\), where \(N\) is the number after \(t\) years and \(k\) is a positive constant. Initially \(N = 2000\), and the population doubles in 5 years. Find (a) \(k\), (b) \(N\) after 12 years, to 3 significant figures, and (c) when \(N\) reaches 10 000.
 \(N = Ae^{kt}\) with \(A = 2000\), so \(N = 2000e^{kt}\).
 (a) At \(t = 5\), \(N = 4000\): \(e^{5k} = 2\), so \(k = \dfrac{\ln 2}{5} = 0.139\).
-(b) \(N = 2000e^{12k} = 2000\times 2^{12/5}\) \(= 10\,600\) (3 s.f.).
-(c) \(2000 \times 2^{t/5} = 10\,000\) gives \(2^{t/5} = 5\), so \(t = \dfrac{5\ln 5}{\ln 2} = 11.6\) years.
+(b) \(N = 2000e^{12k}\). Since \(e^{5k} = 2\), \(e^{12k} = \left(e^{5k}\right)^{12/5} = 2^{12/5}\), so \(N = 2000\times 2^{12/5}\) \(= 10\,600\) (3 s.f.).
+(c) In the same way \(e^{kt} = \left(e^{5k}\right)^{t/5} = 2^{t/5}\), so \(N = 2000 \times 2^{t/5}\). Then \(2000 \times 2^{t/5} = 10\,000\) gives \(2^{t/5} = 5\), so \(t = \dfrac{5\ln 5}{\ln 2} = 11.6\) years.
 :::
 
 :::eg A drink at \(90^\circ\text{C}\) is left in a room at \(20^\circ\text{C}\). Its temperature \(\theta\) after \(t\) minutes satisfies \(\dfrac{d\theta}{dt} = -k(\theta - 20)\), where \(k > 0\). After 5 minutes the temperature is \(60^\circ\text{C}\). Find the temperature after 10 minutes and the time for it to fall to \(40^\circ\text{C}\).
@@ -121,9 +122,9 @@ Unlike exponential decay, this depth reaches zero in a finite time, because \(\s
 An unlimited exponential cannot go on for ever, because food, space or money runs out. A model where the rate of growth depends on both the amount present and the room left uses a product such as \(P(10 - P)\). Separating the variables then needs partial fractions.
 
 :::eg A population \(P\) (in thousands) satisfies \(\dfrac{dP}{dt} = 0.05P(10 - P)\), where \(t\) is in years and \(P = 1\) when \(t = 0\). Solve the DE, find when \(P = 5\), and describe what happens in the long term.
-Separate: \(\displaystyle\int\frac{1}{P(10 - P)}\,dP\) \(= \int 0.05\,dt\). Partial fractions: \(\dfrac{1}{P(10 - P)}\) \(= \dfrac1{10}\left(\dfrac1P + \dfrac1{10 - P}\right)\). Integrate:
+Separate: \(\displaystyle\int\frac{1}{P(10 - P)}\,dP\) \(= \int 0.05\,dt\). Partial fractions: \(\dfrac{1}{P(10 - P)}\) \(= \dfrac1{10}\left(\dfrac1P + \dfrac1{10 - P}\right)\). Integrate, using \(\displaystyle\int\frac{1}{10 - P}\,dP = -\ln(10 - P)\) (the rule for \(\dfrac{1}{ax + b}\) with \(a = -1\)):
 \[\tfrac1{10}\big(\ln P - \ln(10 - P)\big) = 0.05t + c \quad\Longrightarrow\quad \ln\frac{P}{10 - P} = 0.5t + c'\]
-At \(t = 0\), \(P = 1\): \(c' = \ln\tfrac19\). So \(\dfrac{P}{10 - P} = \tfrac19e^{0.5t}\). Rearranging for \(P\):
+At \(t = 0\), \(P = 1\): \(c' = \ln\tfrac19\). So \(\dfrac{P}{10 - P} = \tfrac19e^{0.5t}\). Rearranging for \(P\): \(P = (10 - P)\tfrac19e^{0.5t}\), so \(P\left(1 + \tfrac19e^{0.5t}\right) = \tfrac{10}{9}e^{0.5t}\). Multiply by \(9\): \(P\left(9 + e^{0.5t}\right) = 10e^{0.5t}\), and divide top and bottom by \(e^{0.5t}\):
 \[P = \frac{10e^{0.5t}}{9 + e^{0.5t}} = \frac{10}{1 + 9e^{-0.5t}}\]
 When \(P = 5\): \(1 + 9e^{-0.5t} = 2\), so \(e^{-0.5t} = \tfrac19\) and \(t = 2\ln 9 = 4.39\) years.
 
@@ -140,7 +141,7 @@ The graph is the S-shaped curve typical of limited growth. The line \(P = 10\) i
 <div class="widget" data-w="slopefield" data-f="0.05*y*(10-y)" data-x="0,14" data-y="-1,12" data-start="0,1"></div>
 :::
 
-In this slope field the horizontal axis is \(t\) and the vertical axis is \(P\). Click at a height above \(10\), then between \(0\) and \(10\), then below \(0\). Every curve moves towards \(P = 10\) except the one that starts at \(0\).
+In this slope field the horizontal axis is \(t\) and the vertical axis is \(P\). Click at a height above \(10\), then between \(0\) and \(10\), then below \(0\). Curves starting above \(0\) move towards \(P = 10\); the one starting exactly at \(0\) stays there; curves starting below \(0\) fall further and further (a negative population has no meaning here, because \(0.05P(10 - P)\) is negative for \(P < 0\)).
 
 ## Harder separations
 

@@ -67,7 +67,7 @@ A line is fixed by a point on it and a direction. If \(A\) is a point with posit
 
 :::key Vector equation of a line
 \[\mathbf{r} = \mathbf{a} + t\mathbf{b}\]
-where \(\mathbf{a}\) is the position vector of a point on the line, \(\mathbf{b}\) is a **direction vector** and \(t\) is a scalar parameter. Each value of \(t\) gives one point on the line.
+where \(\mathbf{r}\) is the position vector of a general point on the line (each value of \(t\) gives one such point), \(\mathbf{a}\) is the position vector of a known point on the line, \(\mathbf{b}\) is a **direction vector** and \(t\) is a scalar parameter. Each value of \(t\) gives one point on the line.
 :::
 
 The equation of a line is not unique: any point on the line works for \(\mathbf{a}\), and any multiple of \(\mathbf{b}\) works as the direction. To find the line through two points \(A\) and \(B\), use \(\mathbf{a}\) as the point and \(\overrightarrow{AB}\) as the direction.
@@ -79,7 +79,7 @@ For \(Q\): \(1 + 2t = 4\) gives \(t = 1.5\), but then \(y = 2 + 4.5 = 6.5 \ne 7\
 :::
 
 :::eg (Real context) A drone takes off and flies so that its position, in metres relative to a base \(O\), is \(\mathbf{r} = \begin{pmatrix}0\\0\\40\end{pmatrix} + t\begin{pmatrix}6\\8\\-2\end{pmatrix}\), where \(t\) is the time in seconds and the \(z\)-axis points up. Find its speed, when it reaches the ground and how far it has flown by then.
-The velocity is the direction vector, so the speed is \(\sqrt{36 + 64 + 4} = \sqrt{104} = 10.2\) m s\(^{-1}\) (3 s.f.).
+Each second the position changes by \((6, 8, -2)\) metres, so this vector is the velocity (speed and direction); its magnitude is the speed. The speed is \(\sqrt{36 + 64 + 4} = \sqrt{104} = 10.2\) m s\(^{-1}\) (3 s.f.).
 The ground is \(z = 0\): \(40 - 2t = 0\), so \(t = 20\) s, at the point \((120, 160, 0)\).
 Distance flown \(= 20\sqrt{104} = 204\) m (3 s.f.).
 :::

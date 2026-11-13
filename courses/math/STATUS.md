@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-13 · FIX · 24 reader items closed, math.p1.coord to math.p3.logs: notation key in math.f.algebra, glosses, new coord example and Try question, worked coefficient comparison, reworded diagram-less questions
+Last: 2026-11-13 · FIX · 28 reader items closed in p3.trig to p3.vectors (notation, skipped steps, diff proofs, logistic slope-field text corrected)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

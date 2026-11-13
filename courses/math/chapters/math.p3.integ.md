@@ -162,11 +162,11 @@ On each strip the trapezium's top edge is a chord of the curve. If the curve ben
 The Cambridge syllabus (2.5) accepts a sketch of the curve as the reason, so you do not always need to find the second derivative.
 
 :::eg Explain why the estimate of \(\displaystyle\int_0^1 e^{x^2}\,dx\) above is an overestimate. Then use 4 strips to estimate \(\displaystyle\int_1^3 \ln x\,dx\) and say whether it is an over- or underestimate.
-For \(y = e^{x^2}\), \(\dfrac{dy}{dx} = 2xe^{x^2}\) and \(\dfrac{d^2y}{dx^2}\) \(= (2 + 4x^2)e^{x^2} > 0\). The curve bends upwards, so each chord is above the curve and the estimate is an overestimate. (The true value is \(1.463\).)
+For \(y = e^{x^2}\), \(\dfrac{dy}{dx} = 2xe^{x^2}\) and \(\dfrac{d^2y}{dx^2}\) \(= (2 + 4x^2)e^{x^2} > 0\) (product rule: \(2e^{x^2} + 2x \times 2xe^{x^2}\)). The curve bends upwards, so each chord is above the curve and the estimate is an overestimate. (The true value is \(1.463\), from a calculator's integral: this integral cannot be done by hand.)
 
 For \(\ln x\): \(h = 0.5\) and the ordinates are \(0\), \(0.405465\), \(0.693147\), \(0.916291\), \(1.098612\):
 \[\tfrac12(0.5)\left[0 + 1.098612 + 2(0.405465 + 0.693147 + 0.916291)\right] = 0.25 \times 5.1284 = 1.282\]
-Since \(\dfrac{d^2y}{dx^2}\) \(= -\dfrac{1}{x^2} < 0\), the curve is concave and the rule gives an **underestimate**. (The true value is \(3\ln 3 - 2 = 1.296\).)
+Since \(\dfrac{d^2y}{dx^2}\) \(= -\dfrac{1}{x^2} < 0\), the curve is concave and the rule gives an **underestimate**. (The true value is \(1.296\), found later by parts in [Integration techniques](#math.p3.inttech); use a calculator's integral here.)
 :::
 
 :::eg (Exam style) Use the trapezium rule with 4 strips to estimate \(\displaystyle\int_0^\pi \sin x\,dx\), giving 3 significant figures, and state with a reason whether it is an overestimate or underestimate. Compare with the exact value.
@@ -197,6 +197,7 @@ The last step multiplies the top and bottom of the fraction by \(a^2\). Integrat
 
 (c) \(\dfrac{1}{3 + 2x^2}\) \(= \dfrac12\cdot\dfrac{1}{\tfrac32 + x^2}\), so \(a^2 = \tfrac32\) and \(a = \sqrt{\tfrac32}\):
 \[\frac12 \times \frac{1}{\sqrt{3/2}}\tan^{-1}\left(\frac{x}{\sqrt{3/2}}\right) + c = \frac{1}{\sqrt6}\tan^{-1}\left(\sqrt{\tfrac23}\,x\right) + c\]
+because \(\dfrac12 \times \sqrt{\tfrac23} = \dfrac{1}{\sqrt6}\) and \(\dfrac{x}{\sqrt{3/2}} = \sqrt{\tfrac23}\,x\).
 :::
 
 :::exam Integration technique

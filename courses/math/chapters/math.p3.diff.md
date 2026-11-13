@@ -41,7 +41,7 @@ Take any base \(a > 0\) and write the gradient as a limit:
 \[\frac{d}{dx}(a^x) = \lim_{h \to 0}\frac{a^{x+h} - a^x}{h} = a^x\lim_{h \to 0}\frac{a^h - 1}{h}\]
 This works because \(a^{x+h} = a^x \times a^h\), so \(a^x\) is a common factor. The limit does not contain \(x\). It is one number \(k\) that depends only on \(a\), and it is the gradient of \(y = a^x\) at \(x = 0\). So the gradient of \(a^x\) is always \(k\) times its height.
 For \(a = 2\), \(k = 0.693\), and for \(a = 3\), \(k = 1.099\). Between 2 and 3 there is a base for which \(k = 1\) exactly. That number is \(e = 2.718\ldots\), and for it \(\dfrac{d}{dx}(e^x) = e^x\).
-For \(\ln x\): let \(y = \ln x\), so \(x = e^y\). Differentiating with respect to \(y\) gives \(\dfrac{dx}{dy} = e^y = x\). Turning the derivative upside down, \(\dfrac{dy}{dx} = \dfrac{1}{x}\).
+For \(\ln x\): let \(y = \ln x\), so \(x = e^y\). Differentiating with respect to \(y\) gives \(\dfrac{dx}{dy} = e^y = x\). Turning the derivative upside down, \(\dfrac{dy}{dx} = \dfrac{1}{x}\). This is allowed because \(\dfrac{dy}{dx} \times \dfrac{dx}{dy} = 1\): the chain rule with \(x\) as the middle variable gives \(\dfrac{dy}{dx} \times \dfrac{dx}{dy} = \dfrac{dy}{dy} = 1\), so \(\dfrac{dy}{dx} = \dfrac{1}{dx/dy}\).
 
 :::html
 <div class="widget" data-w="proof" data-proof="expderiv"></div>
@@ -52,8 +52,8 @@ For \(\ln x\): let \(y = \ln x\), so \(x = e^y\). Differentiating with respect t
 Start from the limit and use \(\sin(x + h)\) \(= \sin x\cos h + \cos x\sin h\):
 \[\frac{d}{dx}(\sin x) = \lim_{h \to 0}\left[\sin x \cdot \frac{\cos h - 1}{h} + \cos x \cdot \frac{\sin h}{h}\right]\]
 Two limits are needed, and \(h\) is in radians.
-**First limit.** In the diagram, the sector of angle \(h\) has more area than the small triangle and less than the large one, so \(\sin h < h < \tan h\). Dividing by \(\sin h\) and turning each part upside down gives \(\cos h < \dfrac{\sin h}{h} < 1\). As \(h \to 0\), \(\cos h \to 1\), so \(\dfrac{\sin h}{h} \to 1\).
-**Second limit.** Since \(\cos h - 1\) \(= -\dfrac{\sin^2 h}{1 + \cos h}\),
+**First limit.** Draw a unit circle with centre \(O\) and a small angle \(h\) (in radians) at \(O\). The small triangle has base 1 and height \(\sin h\), so its area is \(\tfrac12\sin h\). The sector of angle \(h\) has area \(\tfrac12 h\). The large triangle, with the same base 1, reaches up to the tangent to the circle and has height \(\tan h\), so its area is \(\tfrac12\tan h\). The sector has more area than the small triangle and less than the large one, so \(\sin h < h < \tan h\). Dividing by \(\sin h\) and turning each part upside down gives \(\cos h < \dfrac{\sin h}{h} < 1\). As \(h \to 0\), \(\cos h \to 1\), so \(\dfrac{\sin h}{h} \to 1\).
+**Second limit.** Multiply top and bottom of \(\cos h - 1\) by \(\cos h + 1\): \(\dfrac{(\cos^2 h - 1)}{\cos h + 1} = -\dfrac{\sin^2 h}{1 + \cos h}\), using \(\cos^2 h - 1 = -\sin^2 h\). So \(\cos h - 1\) \(= -\dfrac{\sin^2 h}{1 + \cos h}\), and
 \[\frac{\cos h - 1}{h} = -\frac{\sin h}{h} \times \frac{\sin h}{1 + \cos h} \to -1 \times \frac{0}{2} = 0\]
 So \(\dfrac{d}{dx}(\sin x)\) \(= \sin x \times 0 + \cos x \times 1\) \(= \cos x\). If \(h\) were in degrees, \(\dfrac{\sin h}{h}\) would tend to \(\dfrac{\pi}{180}\), which is why every derivative here needs radians.
 
@@ -99,7 +99,7 @@ If \(y\) is the **product** of two functions of \(x\), you cannot differentiate 
 :::key Product rule
 If \(y = uv\), where \(u\) and \(v\) are functions of \(x\), then
 \[\frac{dy}{dx} = u\frac{dv}{dx} + v\frac{du}{dx}\]
-In words: first times the derivative of the second, plus second times the derivative of the first. It is on MF19, written \(\dfrac{dy}{dx}\) \(= u\dfrac{dv}{dx} + v\dfrac{du}{dx}\).
+In words: first times the derivative of the second, plus second times the derivative of the first. It is on MF19, written \(\dfrac{dy}{dx}\) \(= u\dfrac{dv}{dx} + v\dfrac{du}{dx}\). In worked examples we write \(u'\) and \(v'\) as short for \(\dfrac{du}{dx}\) and \(\dfrac{dv}{dx}\).
 :::
 
 :::proof Where the product rule comes from
@@ -122,7 +122,7 @@ As \(h \to 0\), \(\dfrac{\delta u}{h} \to \dfrac{du}{dx}\) and \(\dfrac{\delta v
 
 (c) \(u = e^x\), \(v = \sin 2x\), so \(v' = 2\cos 2x\):
 \[\frac{dy}{dx} = e^x \times 2\cos 2x + \sin 2x \times e^x = e^x(2\cos 2x + \sin 2x)\]
-Check (b) by writing \(y = x\ln x\) at \(x = 1\): the formula gives \(1 + 0 = 1\), and the gradient of \(y = x\ln x\) there is \(1\). ✓
+Check (b) by writing \(y = x\ln x\) at \(x = 1\): the formula gives \(1 + 0 = 1\), and the chord from \(x = 1\) to \(x = 1.001\) has gradient \(\dfrac{1.001\ln 1.001 - 0}{0.001} = 1.0005\), close to \(1\). ✓
 :::
 
 ## The quotient rule
@@ -179,7 +179,7 @@ For its nature, differentiate the quotient again: \(\dfrac{d^2y}{dx^2}\) \(= \df
 :::
 
 :::eg Find the stationary point of \(y = x^2\ln x\) (for \(x > 0\)) and its nature, and the equation of the tangent to \(y = e^{2x} + 3x\) at \(x = 0\).
-Product rule: \(\dfrac{dy}{dx}\) \(= x^2 \times \dfrac1x + \ln x \times 2x\) \(= x + 2x\ln x\) \(= x(1 + 2\ln x)\). Setting this to zero with \(x > 0\) gives \(\ln x = -\tfrac12\), so \(x = e^{-1/2} = 0.6065\), and \(y = x^2\ln x\) \(= e^{-1}\left(-\tfrac12\right)\) \(= -\dfrac{1}{2e} = -0.184\). The second derivative is \(\dfrac{d^2y}{dx^2} = 2\ln x + 3\), which is \(2 > 0\) at that point. So it is a minimum at \((0.607, -0.184)\).
+Product rule: \(\dfrac{dy}{dx}\) \(= x^2 \times \dfrac1x + \ln x \times 2x\) \(= x + 2x\ln x\) \(= x(1 + 2\ln x)\). Setting this to zero with \(x > 0\) gives \(\ln x = -\tfrac12\), so \(x = e^{-1/2} = 0.6065\), and \(y = x^2\ln x\) \(= e^{-1}\left(-\tfrac12\right)\) \(= -\dfrac{1}{2e} = -0.184\). For the second derivative, differentiate \(x + 2x\ln x\): \(1 + \left(2x \times \dfrac1x + 2\ln x\right)\) \(= 1 + 2 + 2\ln x\), so \(\dfrac{d^2y}{dx^2} = 2\ln x + 3\), which is \(2 > 0\) at that point. So it is a minimum at \((0.607, -0.184)\).
 
 For the tangent, \(\dfrac{dy}{dx} = 2e^{2x} + 3\). At \(x = 0\): the gradient is \(5\) and \(y = 1\). The tangent is \(y = 5x + 1\).
 :::
@@ -195,7 +195,7 @@ A curve is given by parametric equations when \(x\) and \(y\) are each written a
 :::key Parametric differentiation
 If \(x = f(t)\) and \(y = g(t)\), then
 \[\frac{dy}{dx} = \frac{dy/dt}{dx/dt}\]
-This is the chain rule \(\dfrac{dy}{dx}\) \(= \dfrac{dy}{dt} \times \dfrac{dt}{dx}\) with \(\dfrac{dt}{dx} = \dfrac{1}{dx/dt}\). The answer is usually in terms of \(t\). It is on MF19.
+This is the chain rule \(\dfrac{dy}{dx}\) \(= \dfrac{dy}{dt} \times \dfrac{dt}{dx}\) with \(\dfrac{dt}{dx} = \dfrac{1}{dx/dt}\) (turning the derivative upside down is allowed because \(\dfrac{dt}{dx} \times \dfrac{dx}{dt} = 1\), as shown in the proof about \(\ln x\) above). The answer is usually in terms of \(t\). It is on MF19.
 :::
 
 :::eg A curve is given by \(x = t^3\), \(y = 3t^2\). Find \(\dfrac{dy}{dx}\) in terms of \(t\), and the equation of the tangent at \(t = 2\).
@@ -267,7 +267,7 @@ Product rule: \(\dfrac{d}{dx}\left(x\tan^{-1}x\right)\) \(= x \times \dfrac{1}{1
 
 The derivative of a quantity that grows or decays exponentially is proportional to the quantity itself.
 
-:::eg The population of a colony is \(P = 200e^{0.03t}\). Find the rate of growth when \(t = 10\). A hot drink cools according to \(T = 20 + 80e^{-0.1t}\) degrees Celsius after \(t\) minutes; find the rate of change of temperature at \(t = 5\).
+:::eg The population of a colony is \(P = 200e^{0.03t}\), with \(t\) in years. Find the rate of growth when \(t = 10\). A hot drink cools according to \(T = 20 + 80e^{-0.1t}\) degrees Celsius after \(t\) minutes; find the rate of change of temperature at \(t = 5\).
 \(\dfrac{dP}{dt}\) \(= 200 \times 0.03e^{0.03t}\) \(= 6e^{0.03t}\). At \(t = 10\): \(6e^{0.3} = 8.10\) per year. Notice \(\dfrac{dP}{dt} = 0.03P\): the growth rate is proportional to the population.
 
 \(\dfrac{dT}{dt} = 80(-0.1)e^{-0.1t}\) \(= -8e^{-0.1t}\). At \(t = 5\): \(-8e^{-0.5} = -4.85\), so the drink is cooling at \(4.85\,^\circ\mathrm{C}\) per minute.
@@ -317,7 +317,7 @@ A: \(\dfrac{dy}{dx} = \dfrac{2t + 2}{3}\). At \(t = 1\): point \((2, 3)\), gradi
 Q: Verify that \((2, 1)\) lies on the curve \(x^2 + 2xy - y^2 = 7\), and find \(\dfrac{dy}{dx}\) and the gradient at that point.
 A: \(4 + 4 - 1 = 7\). ✓ \(2x + 2y + 2x\dfrac{dy}{dx} - 2y\dfrac{dy}{dx}\) \(= 0\), so \(\dfrac{dy}{dx} = \dfrac{x + y}{y - x}\). At \((2, 1)\): \(\dfrac{3}{-1} = -3\).
 Q: (Exam style) The curve \(y = x^2e^{-x}\) has two stationary points. (a) Show that \(\dfrac{dy}{dx} = xe^{-x}(2 - x)\). (b) Find the exact coordinates of the stationary points and determine their nature. (c) Write down the range of \(y\) for \(x \ge 0\).
-A: (a) Product rule: \(x^2(-e^{-x}) + e^{-x}(2x)\) \(= e^{-x}(2x - x^2) = xe^{-x}(2 - x)\). [M1 A1] (b) Zero when \(x = 0\) or \(x = 2\). [M1] Points \((0, 0)\) and \(\left(2, 4e^{-2}\right)\). [A1] Second derivative: \(\dfrac{d}{dx}\left[e^{-x}(2x - x^2)\right]\) \(= e^{-x}(2 - 2x) - e^{-x}(2x - x^2)\) \(= e^{-x}(x^2 - 4x + 2)\). [M1] At \(x = 0\): \(2 > 0\), a minimum. At \(x = 2\): \(e^{-2}(4 - 8 + 2) = -2e^{-2} < 0\), a maximum. [A1] (c) For \(x \ge 0\), \(0 \le y \le 4e^{-2}\). [B1]
+A: (a) Product rule: \(x^2(-e^{-x}) + e^{-x}(2x)\) \(= e^{-x}(2x - x^2) = xe^{-x}(2 - x)\). [M1 A1] (b) Zero when \(x = 0\) or \(x = 2\). [M1] Points \((0, 0)\) and \(\left(2, 4e^{-2}\right)\). [A1] Second derivative: \(\dfrac{d}{dx}\left[e^{-x}(2x - x^2)\right]\) \(= e^{-x}(2 - 2x) - e^{-x}(2x - x^2)\) \(= e^{-x}(x^2 - 4x + 2)\). [M1] At \(x = 0\): \(2 > 0\), a minimum. At \(x = 2\): \(e^{-2}(4 - 8 + 2) = -2e^{-2} < 0\), a maximum. [A1] (c) For \(x \ge 0\), \(0 \le y \le 4e^{-2}\). [B1] Reason: \(y = x^2e^{-x}\) is never negative, equals \(0\) at \(x = 0\), rises to the maximum \(4e^{-2}\) at \(x = 2\), then falls back towards \(0\) as \(x\) grows.
 :::
 
 :::try Exam practice ★ to ★★★

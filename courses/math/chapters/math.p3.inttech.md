@@ -146,7 +146,7 @@ Keep the minus sign: the rule is \(uv\) **minus** the new integral. Do not drop 
 A substitution replaces \(x\) by a new variable \(u\) so that the integral becomes a standard one. In Cambridge Paper 3 the substitution is **given in the question**, so your job is to carry it out correctly. There are four things to change: the function, \(dx\), the limits (if definite), and finally nothing should still contain \(x\).
 
 :::key The substitution routine
-1. Differentiate the substitution to find \(\dfrac{du}{dx}\) (or \(\dfrac{dx}{du}\)) and replace \(dx\).
+1. Differentiate the substitution to find \(\dfrac{du}{dx}\) (or \(\dfrac{dx}{du}\)) and replace \(dx\). Rearrange as if multiplying by \(dx\) or \(du\): \(\dfrac{du}{dx} = 2x\) gives \(du = 2x\,dx\); \(\dfrac{dx}{du} = 2u\) gives \(dx = 2u\,du\) (the proof below shows this is allowed).
 2. Rewrite the whole integrand in terms of \(u\).
 3. For a definite integral, **change the limits** to \(u\)-values and do not go back to \(x\).
 4. Integrate in \(u\). For an indefinite integral, substitute back to finish in \(x\).

@@ -75,7 +75,7 @@ A common mistake is to believe \(\sin(A + B) = \sin A + \sin B\). Test it: \(\si
 \[\sin(A \pm B) = \sin A\cos B \pm \cos A\sin B\]
 \[\cos(A \pm B) = \cos A\cos B \mp \sin A\sin B\]
 \[\tan(A \pm B) = \frac{\tan A \pm \tan B}{1 \mp \tan A\tan B}\]
-Take care with the signs: in the cosine formula the sign in the middle is **opposite** to the sign in the bracket (\(\cos(A + B)\) has a minus). All three are on MF19.
+Take care with the signs: in the cosine formula the sign in the middle is **opposite** to the sign in the bracket (\(\cos(A + B)\) has a minus). The symbol \(\mp\) is \(\pm\) with the signs swapped: the upper sign of \(\pm\) goes with the upper sign of \(\mp\). So \(A + B\) takes \(+\) on top and \(-\) below, and \(A - B\) takes \(-\) on top and \(+\) below. For example, \(\tan(A + B) = \dfrac{\tan A + \tan B}{1 - \tan A\tan B}\). All three are on MF19.
 :::
 
 :::proof Where \(\sin(A + B)\) and \(\cos(A + B)\) come from
@@ -159,6 +159,7 @@ Use the same approach as before: start from one side, change it step by step. Lo
 Use \(1 + \cos 2\theta = 2\cos^2\theta\) and \(\sin 2\theta = 2\sin\theta\cos\theta\):
 \[= \frac{2\cos^2\theta}{2\sin\theta\cos\theta}\] [M1 A1]
 \[= \frac{\cos\theta}{\sin\theta} = \cot\theta\] ∎ [A1]
+(∎ marks the end of a proof: this is what we set out to show.)
 
 **(b)** Put \(\theta = 15^\circ\): \(\cot 15^\circ\) \(= \operatorname{cosec}30^\circ + \cot 30^\circ\) \(= 2 + \sqrt3\). [M1 A1]
 Check: \(\tan 15^\circ = 0.2679\) and \(1 \div 0.2679 = 3.732 = 2 + \sqrt3\). ✓
@@ -175,7 +176,7 @@ Check \(t = \tfrac12\): \(\dfrac{1.5}{0.5} = 3\) \(= 6 \times \tfrac12\). ✓
 
 ## The form \(R\sin(\theta \pm \alpha)\)
 
-Two waves of the same frequency, \(a\sin\theta\) and \(b\cos\theta\), add up to a single wave. Compare \(R\sin(\theta + \alpha)\) \(= R\sin\theta\cos\alpha + R\cos\theta\sin\alpha\) with \(a\sin\theta + b\cos\theta\). Matching coefficients gives \(R\cos\alpha = a\) and \(R\sin\alpha = b\). Squaring and adding gives \(R^2 = a^2 + b^2\); dividing gives \(\tan\alpha = \dfrac{b}{a}\).
+Two waves of the same frequency, \(a\sin\theta\) and \(b\cos\theta\), add up to a single wave. Compare \(R\sin(\theta + \alpha)\) \(= R\sin\theta\cos\alpha + R\cos\theta\sin\alpha\) with \(a\sin\theta + b\cos\theta\). Matching coefficients gives \(R\cos\alpha = a\) and \(R\sin\alpha = b\). Squaring and adding gives \(R^2 = a^2 + b^2\) (\(R^2\cos^2\alpha + R^2\sin^2\alpha = R^2(\cos^2\alpha + \sin^2\alpha) = R^2\), because \(\cos^2\alpha + \sin^2\alpha = 1\)); dividing gives \(\tan\alpha = \dfrac{b}{a}\).
 
 :::key Harmonic form
 For \(a > 0\) and \(b > 0\):
@@ -206,7 +207,7 @@ Once in this form, the expression has a single \(\sin\) or \(\cos\). Its greates
 :::
 
 :::eg Solve \(3\sin\theta + 4\cos\theta = 2.5\) for \(0^\circ \le \theta \le 360^\circ\). State the greatest value of \(3\sin\theta + 4\cos\theta\) and the value of \(\theta\) at which it occurs.
-Use \(5\sin(\theta + 53.13^\circ) = 2.5\), so \(\sin(\theta + 53.13^\circ) = 0.5\). The angle \(u = \theta + 53.13^\circ\) lies between \(53.13^\circ\) and \(413.13^\circ\). Then \(u = 30^\circ\) (too small), \(150^\circ\) or \(390^\circ\). So \(\theta = 96.87^\circ\) or \(336.87^\circ\), which is \(96.9^\circ\) or \(336.9^\circ\).
+Use \(5\sin(\theta + 53.13^\circ) = 2.5\), so \(\sin(\theta + 53.13^\circ) = 0.5\). The angle \(u = \theta + 53.13^\circ\) lies between \(53.13^\circ\) and \(413.13^\circ\). Now \(\sin u = 0.5\) has principal value \(30^\circ\); the next solution in the same turn is \(180^\circ - 30^\circ = 150^\circ\); adding \(360^\circ\) to each gives \(390^\circ\) and \(510^\circ\). Keep those between \(53.13^\circ\) and \(413.13^\circ\): \(30^\circ\) is too small and \(510^\circ\) too big, leaving \(u = 150^\circ\) or \(390^\circ\). So \(\theta = 96.87^\circ\) or \(336.87^\circ\), which is \(96.9^\circ\) or \(336.9^\circ\).
 
 The greatest value is \(5\), when \(\sin(\theta + 53.13^\circ) = 1\): \(\theta + 53.13^\circ = 90^\circ\), so \(\theta = 36.87^\circ\) (36.9°).
 :::

@@ -42,6 +42,7 @@ To find the constants, multiply both sides by the whole denominator and use **su
 :::eg Express \(\dfrac{5x + 1}{(x - 1)(x + 2)}\) in partial fractions.
 Write \(\dfrac{5x + 1}{(x - 1)(x + 2)}\) \(= \dfrac{A}{x - 1} + \dfrac{B}{x + 2}\). Multiply by \((x - 1)(x + 2)\):
 \[5x + 1 = A(x + 2) + B(x - 1)\]
+After multiplying by the denominator this is true for every \(x\) (an identity), so we may put in any value we like; choose the ones that make a bracket zero.
 Put \(x = 1\): \(6 = 3A\), so \(A = 2\). Put \(x = -2\): \(-9 = -3B\), so \(B = 3\). Therefore
 \[\frac{5x + 1}{(x - 1)(x + 2)} = \frac{2}{x - 1} + \frac{3}{x + 2}\]
 Check at \(x = 0\): the left side is \(\dfrac{1}{-2} = -0.5\), and the right is \(-2 + 1.5 = -0.5\). ✓
@@ -68,7 +69,7 @@ For a repeated factor, substitution finds two of the constants. Find the third b
 :::eg Express \(\dfrac{5x^2 + 10x + 3}{(x - 1)(x + 2)^2}\) in partial fractions.
 Let it equal \(\dfrac{A}{x - 1} + \dfrac{B}{x + 2} + \dfrac{C}{(x + 2)^2}\). Then
 \[5x^2 + 10x + 3 = A(x + 2)^2 + B(x - 1)(x + 2) + C(x - 1)\]
-\(x = 1\): \(18 = 9A\), so \(A = 2\). \(x = -2\): \(20 - 20 + 3 = 3 = -3C\), so \(C = -1\). Compare the coefficients of \(x^2\): \(5 = A + B\), so \(B = 3\).
+\(x = 1\): \(18 = 9A\), so \(A = 2\). \(x = -2\): \(20 - 20 + 3 = 3 = -3C\), so \(C = -1\). Compare the coefficients of \(x^2\): on the right, only \(A(x + 2)^2\) and \(B(x - 1)(x + 2)\) contain \(x^2\) (\(Ax^2\) and \(Bx^2\)), and \(C(x - 1)\) has none, so \(5 = A + B\) and \(B = 3\).
 \[\frac{5x^2 + 10x + 3}{(x - 1)(x + 2)^2} = \frac{2}{x - 1} + \frac{3}{x + 2} - \frac{1}{(x + 2)^2}\]
 Check at \(x = 0\): the left side is \(\dfrac{3}{-4} = -0.75\), and the right is \(-2 + 1.5 - 0.25 = -0.75\). ✓
 :::
@@ -76,7 +77,9 @@ Check at \(x = 0\): the left side is \(\dfrac{3}{-4} = -0.75\), and the right is
 :::eg Express \(\dfrac{5x^2 + 2x + 7}{(x + 1)(x^2 + 4)}\) in partial fractions.
 Let it equal \(\dfrac{A}{x + 1} + \dfrac{Bx + C}{x^2 + 4}\). Then \(5x^2 + 2x + 7\) \(= A(x^2 + 4) + (Bx + C)(x + 1)\).
 
-\(x = -1\): \(5 - 2 + 7 = 10 = 5A\), so \(A = 2\). Compare \(x^2\) terms: \(5 = A + B\), so \(B = 3\). Compare constants: \(7 = 4A + C\), so \(C = -1\).
+\(x = -1\): \(5 - 2 + 7 = 10 = 5A\), so \(A = 2\). Multiply out the right side and collect powers of \(x\):
+\[A(x^2 + 4) + (Bx + C)(x + 1) = (A + B)x^2 + (B + C)x + (4A + C)\]
+Compare \(x^2\) terms: \(5 = A + B\), so \(B = 3\). Compare constants: \(7 = 4A + C\), so \(C = -1\).
 \[\frac{5x^2 + 2x + 7}{(x + 1)(x^2 + 4)} = \frac{2}{x + 1} + \frac{3x - 1}{x^2 + 4}\]
 Check the \(x\) terms: \(2 = B + C = 3 - 1\). ✓
 :::
@@ -84,7 +87,7 @@ Check the \(x\) terms: \(2 = B + C = 3 - 1\). ✓
 :::warn Partial fraction slips
 - A repeated factor \((x + 2)^2\) needs both \(\dfrac{B}{x + 2}\) and \(\dfrac{C}{(x + 2)^2}\). Leaving out the first loses the answer.
 - A quadratic factor such as \(x^2 + 4\) needs a linear numerator \(Bx + C\), not just \(B\).
-- Check by putting in a value such as \(x = 0\) or \(x = 1\) on both sides. If the numerator has the same or higher degree than the denominator, divide first (this is outside the syllabus).
+- Check by putting in a value such as \(x = 0\) or \(x = 1\) on both sides. The partial fractions of this chapter need a numerator of lower degree than the denominator. If the numerator has the same or higher degree, divide first: write the numerator as (denominator) + remainder, as in the worked example in [Integration techniques](#math.p3.inttech), then split the remainder fraction.
 :::
 
 ## The binomial series for any power
@@ -103,7 +106,9 @@ It is on MF19. If \(n\) is a positive integer the series stops and is valid for 
 
 (b) \(n = \tfrac12\): \(1 + \tfrac12 x + \dfrac{\frac12\left(-\frac12\right)}{2}x^2 + \dfrac{\frac12\left(-\frac12\right)\left(-\frac32\right)}{6}x^3\) \(= 1 + \tfrac12 x - \tfrac18 x^2 + \tfrac1{16}x^3\).
 
-(c) Replace \(x\) by \(-x\) in \((1 + x)^{-2}\) \(= 1 - 2x + 3x^2 - 4x^3 + \cdots\): \((1 - x)^{-2}\) \(= 1 + 2x + 3x^2 + 4x^3 + \cdots\)
+(c) First expand \((1 + x)^{-2}\) with \(n = -2\):
+\[1 + (-2)x + \frac{(-2)(-3)}{2!}x^2 + \frac{(-2)(-3)(-4)}{3!}x^3 = 1 - 2x + 3x^2 - 4x^3 + \cdots\]
+Now replace \(x\) by \(-x\): \((1 - x)^{-2}\) \(= 1 + 2x + 3x^2 + 4x^3 + \cdots\)
 
 All three are valid for \(|x| < 1\), that is \(-1 < x < 1\).
 :::
@@ -128,7 +133,7 @@ Factor out the constant **before** expanding, and raise it to the power \(n\): \
 
 The series gives approximations. Take a value of \(x\) inside the range and the terms shrink quickly.
 
-:::eg Use \(\sqrt{4 + x}\) \(= 2\left(1 + \tfrac x4\right)^{1/2}\) to approximate \(\sqrt{4.04}\). A particle moves at speed \(v = 0.1c\); the factor \(\gamma\) \(= \left(1 - \dfrac{v^2}{c^2}\right)^{-1/2}\) gives how its mass appears to increase. Approximate \(\gamma\).
+:::eg Use \(\sqrt{4 + x}\) \(= 2\left(1 + \tfrac x4\right)^{1/2}\) to approximate \(\sqrt{4.04}\). A particle moves at speed \(v = 0.1c\) (\(c\) is the speed of light, so \(\dfrac{v^2}{c^2} = 0.01\)); the factor \(\gamma\) \(= \left(1 - \dfrac{v^2}{c^2}\right)^{-1/2}\) gives how its mass appears to increase. Approximate \(\gamma\).
 Expand \((1 + u)^{1/2}\) \(= 1 + \tfrac12 u - \tfrac18 u^2 + \cdots\) with \(u = \dfrac x4\): \(2\left(1 + \dfrac x8 - \dfrac{x^2}{128}\right)\) \(= 2 + \dfrac x4 - \dfrac{x^2}{64}\). Put \(x = 0.04\): \(2 + 0.01 - 0.000025 = 2.009975\). The calculator gives \(2.00997512\ldots\), so the approximation is accurate to 6 decimal places.
 
 For \(\gamma\), let \(u = -\dfrac{v^2}{c^2} = -0.01\). \((1 + u)^{-1/2}\) \(= 1 - \tfrac12 u + \tfrac38 u^2 - \cdots\) \(= 1 + 0.005 + 0.0000375 = 1.0050375\). The exact value is \(1.0050378\ldots\), so the mass appears to increase by about \(0.5\%\) at one tenth of the speed of light.
