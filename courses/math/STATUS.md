@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-10-13 · REVIEW FINAL · all 62 chapters written, reviewed and passing check (18 packages); assembled by the Organizer
+Last: 2026-11-13 · FIX · 32 reader items closed in math.overview to math.p1.functions: mark codes and stars explained once, new teaching sentences/boxes (surd parts, point-slope, exterior angle, increasing, vectors), steps spelled out, checks ok
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -23,4 +23,5 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P16: reviewed
 - P17: reviewed
 - P18: reviewed
+- READER: open
 - FINAL: done 2026-10-13

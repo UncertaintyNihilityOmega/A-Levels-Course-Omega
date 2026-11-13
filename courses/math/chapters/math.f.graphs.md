@@ -22,12 +22,12 @@ A: \(2y = 12 - 3x\), so \(y = 6 - \tfrac32 x\).
 
 ## Coordinates and plotting
 
-A point is located by its **coordinates** \((x, y)\): go \(x\) units along the horizontal axis (right if positive) and \(y\) units up the vertical axis (up if positive). The axes cross at the **origin** \(O(0, 0)\) and divide the plane into four quadrants. The point where a graph crosses the \(y\)-axis is the **\(y\)-intercept** (there \(x = 0\)). Where it crosses the \(x\)-axis the point is an **\(x\)-intercept** (there \(y = 0\)). The \(x\)-intercepts of a curve are its **roots**.
+A point is located by its **coordinates** \((x, y)\): go \(x\) units along the horizontal axis (right if positive) and \(y\) units up the vertical axis (up if positive). The axes cross at the **origin** \(O(0, 0)\) and divide the plane into four **quadrants**, numbered 1 to 4 anticlockwise starting at the top right (quadrant 1: \(x\) and \(y\) both positive; quadrant 2: top left; quadrant 3: bottom left; quadrant 4: bottom right). The point where a graph crosses the \(y\)-axis is the **\(y\)-intercept** (there \(x = 0\)). Where it crosses the \(x\)-axis the point is an **\(x\)-intercept** (there \(y = 0\)). The \(x\)-intercepts of a curve are its **roots**.
 
 To plot a graph from its equation, make a table of values, plot the points and join them with a smooth curve (or a ruler for a straight line). On a calculator, or in the widget below, the machine does this for you, but in the exam you must be able to sketch the shape by hand.
 
 :::def Sketch
-A sketch shows the shape of a graph and labels the key features: where it crosses the axes, turning points and asymptotes if they exist. It does not need an accurate scale, but it must show the correct shape, and the labelled values must be right.
+A sketch shows the shape of a graph and labels the key features: where it crosses the axes, turning points and asymptotes if they exist. It does not need an accurate scale, but it must show the correct shape, and the labelled values must be right. A **turning point** is the lowest or highest point of a curve, where it stops falling and starts rising (or the reverse).
 :::
 
 ## Gradient and straight lines
@@ -60,6 +60,8 @@ Use the widget to see how the two numbers control the line: change \(m\) to tilt
 \[m = \frac{11 - 3}{5 - 1} = \frac84 = 2\]
 So the line is \(y = 2x + c\). The point \(A\) is on the line, so its coordinates fit: \(3 = 2(1) + c\), which gives \(c = 1\). The line is \(y = 2x + 1\).
 Check with \(B\): \(2(5) + 1 = 11\). ✓
+
+A second method gives the same line. The form \(y - y_1 = m(x - x_1)\) says that the line through \((x_1, y_1)\) with gradient \(m\) is found by putting those numbers straight in. It is the same as substituting for \(c\), done in one step. Here: \(y - 3 = 2(x - 1)\), so \(y = 2x - 2 + 3 = 2x + 1\).
 :::
 
 :::eg State the gradient and \(y\)-intercept of (a) \(y = 5 - 3x\), (b) \(2y = 4x + 6\), (c) \(3x + 2y = 12\), and sketch (c).
@@ -91,7 +93,7 @@ You need to recognise these graphs from their equations without a table of value
 | \(y = \dfrac{1}{x}\) | reciprocal | Two separate branches in opposite quadrants. It never touches either axis (the axes are **asymptotes**), and \(x = 0\) is not allowed. |
 | \(y = \dfrac{1}{x^2}\) | reciprocal squared | Two branches, both above the \(x\)-axis, symmetric about the \(y\)-axis. |
 | \(y = a^x\), \(a > 1\) | exponential growth | Passes through \((0, 1)\), rises faster and faster, never reaches the \(x\)-axis. |
-| \(y = a^{-x}\) | exponential decay | Passes through \((0, 1)\), falls towards the \(x\)-axis from the left. |
+| \(y = a^{-x}\) | exponential decay | Passes through \((0, 1)\), starts high on the left and falls towards the \(x\)-axis as \(x\) increases. |
 
 :::def Asymptote
 A line that a curve gets closer and closer to but never touches (or touches only for extreme values). For \(y = \dfrac1x\) the asymptotes are the two axes.
@@ -223,7 +225,7 @@ Q: [7 marks] ★★★ A line passes through the point \((2, 3)\) and has a nega
 H: Write the line as \(y - 3 = m(x - 2)\). Find where it crosses each axis in terms of \(m\).
 H: The area is \(\tfrac12 \times OP \times OQ\). You will get an equation with \(m\) and \(\tfrac1m\): multiply through by \(m\).
 H: The quadratic you reach is a perfect square.
-A: The line is \(y = mx + 3 - 2m\). It crosses the \(y\)-axis at \(Q = (0, 3 - 2m)\) and, putting \(y = 0\), the \(x\)-axis at \(P = \left(2 - \dfrac3m, 0\right)\). [M1 A1] Both are positive because \(m < 0\). The area is \(\tfrac12\left(2 - \dfrac3m\right)(3 - 2m)\) [M1] \(= \tfrac12\left(12 - 4m - \dfrac9m\right)\). Setting this equal to \(12\) gives \(-4m - \dfrac9m = 12\). Multiply by \(m\): \(-4m^2 - 9 = 12m\), that is \(4m^2 + 12m + 9 = 0\). [A1] This is \((2m + 3)^2 = 0\) [M1], so \(m = -\tfrac32\). [A1] The line is \(y = -\tfrac32 x + 6\). [A1] Check: it crosses the axes at \((4, 0)\) and \((0, 6)\), and \(\tfrac12 \times 4 \times 6 = 12\). ✓ Because the equation has only one solution, no line through \((2, 3)\) cuts off a smaller triangle: \(12\) is the least possible area.
+A: The line is \(y = mx + 3 - 2m\). It crosses the \(y\)-axis at \(Q = (0, 3 - 2m)\) and, putting \(y = 0\), the \(x\)-axis at \(P = \left(2 - \dfrac3m, 0\right)\). [M1 A1] Both are positive because \(m < 0\). The area is \(\tfrac12\left(2 - \dfrac3m\right)(3 - 2m)\) [M1] \(= \tfrac12\left(12 - 4m - \dfrac9m\right)\). Setting this equal to \(12\) gives \(-4m - \dfrac9m = 12\). Multiply by \(m\): \(-4m^2 - 9 = 12m\), that is \(4m^2 + 12m + 9 = 0\). [A1] This is \((2m + 3)^2 = 0\) [M1], so \(m = -\tfrac32\). [A1] The line is \(y = -\tfrac32 x + 6\). [A1] Check: it crosses the axes at \((4, 0)\) and \((0, 6)\), and \(\tfrac12 \times 4 \times 6 = 12\). ✓
 :::
 
 :::quiz

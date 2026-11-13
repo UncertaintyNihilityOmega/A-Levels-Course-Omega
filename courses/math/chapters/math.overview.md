@@ -67,7 +67,7 @@ Paper 3 includes every topic of Paper 2 except the trapezium rule, so a student 
 | Mock papers | [Pure 1](#math.mock.p1a); [Pure 2](#math.mock.p2a); [Pure 3](#math.mock.p3a); [Mechanics](#math.mock.p4a); [Statistics 1](#math.mock.p5a); [Statistics 2](#math.mock.p6a) |
 | After A Level | [Further Mathematics](#math.further) |
 
-The P2 and P3 chapters mark their Paper 3-only parts clearly. Paper 2 has only the standard integrals, such as \(e^{2x+1}\) and \(\sin 3x\), integrals that use a trigonometric identity, and the trapezium rule. Differentiating \(\tan^{-1} x\), partial fractions, the binomial series for any rational power, integration by substitution and by parts, vectors, differential equations and complex numbers are Paper 3 only.
+The P2 and P3 chapters mark their Paper 3-only parts clearly. In integration, Paper 2 has only the standard integrals, such as \(e^{2x+1}\) and \(\sin 3x\), integrals that use a trigonometric identity, and the trapezium rule. Paper 3 adds differentiating \(\tan^{-1} x\), partial fractions, the binomial series for any rational power, integration by substitution and by parts, vectors, differential equations and complex numbers.
 
 ## The formula booklet
 
@@ -154,7 +154,7 @@ Every 9709 paper expects a scientific calculator. Graphical calculators, and cal
 1. **Treat Pure Mathematics as the core.** It carries 60% of the marks, and every applied topic uses its algebra and calculus.
 2. **Practise, do not only read.** After each chapter do every "Try it yourself" question and the exam practice, then the mixed practice sets ([Pure 1](#math.mixed.pure1) is the first) and past-paper questions on the topic, then full timed papers in the final months: this course's own [mock papers](#math.mock.p1a) and real ones. [Past papers and mark schemes](#road.pastpapers) shows how.
 3. **Keep an error log.** For each lost mark, note the cause: knowledge, method, arithmetic or misreading. Redo the question a week later.
-4. **Show every step and obey the accuracy rule.** Give 3 significant figures (angles to 1 decimal place) unless the question asks for an exact answer, and work to at least 4 so that the last digit is right.
+4. **Show every step and obey the accuracy rule.** Give 3 significant figures (angles to 1 decimal place) unless the question asks for an exact answer, and work to at least 4 significant figures so that the last digit is right.
 5. **Learn the language of mark schemes.** Method marks (M) reward the right approach even after a slip; accuracy marks (A) depend on the method. [Exam technique](#road.technique) has more.
 6. **Aim above the line.** Thresholds change every session ([how the A* is awarded](#start.grades)), so a score near 85% in timed practice leaves a safe margin.
 

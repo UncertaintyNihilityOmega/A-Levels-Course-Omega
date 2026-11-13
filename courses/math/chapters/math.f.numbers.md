@@ -24,7 +24,7 @@ A number that can be written as a fraction \(\dfrac{a}{b}\) with \(a\) and \(b\)
 :::
 
 :::def Irrational number
-A number that cannot be written as a fraction of two integers. Its decimal form never stops and never repeats, for example \(\sqrt{2}\), \(\pi\) and \(e\).
+A number that cannot be written as a fraction of two integers. Its decimal form never stops and never repeats, for example \(\sqrt{2}\), \(\pi\) and \(e\) (\(e\) is about \(2.718\), a special number met in [Logarithms and exponentials](#math.p3.logs)).
 :::
 
 Together, rational and irrational numbers make up the **real numbers**: every point on the number line. The **natural numbers** are the counting numbers \(1, 2, 3, \ldots\) The symbols \(\mathbb{N}\), \(\mathbb{Z}\), \(\mathbb{Q}\) and \(\mathbb{R}\) are shorthand you will meet in function questions, such as "\(x \in \mathbb{R}\)", which means "\(x\) is a real number".
@@ -105,6 +105,7 @@ Change to improper fractions: \(3\tfrac14 = \tfrac{13}{4}\) and \(1\tfrac56 = \t
 \[2\tfrac13 \times 1\tfrac12 = \frac{7}{3} \times \frac{3}{2} = \frac{7}{2} = 3\tfrac12\]
 (the 3s cancel). For the division, flip the second fraction and cancel:
 \[\frac58 \div \frac{15}{16} = \frac58 \times \frac{16}{15} = \frac{1 \times 2}{1 \times 3} = \frac23\]
+The cancelling: 5 goes into 15 as \(1\) and \(3\), and 8 goes into 16 as \(1\) and \(2\).
 :::
 
 :::warn Never add fractions straight across
@@ -124,6 +125,10 @@ Subtract the first line from the second so the repeating part disappears:
 \[x = \frac{27}{99} = \frac{3}{11}\] [A1]
 Check: \(3 \div 11 = 0.2727\ldots\) The same idea sums geometric series in [Series](#math.p1.series).
 :::
+
+The labels in square brackets are **mark codes** from Cambridge mark schemes, shown here so you learn to read them. [M1] is a method mark (for a valid method), [A1] an accuracy mark (for a correct result, normally given only if the method marks were earned) and [B1] a mark for a correct fact or result that needs no method. The number is how many marks the step earns.
+
+If the repeating digit does not start straight after the decimal point, as in \(0.7\dot{2} = 0.7222\ldots\), multiply by 10 and by 100 and subtract. Then \(10x = 7.222\ldots\) and \(100x = 72.222\ldots\), so \(90x = 65\) and \(x = \tfrac{65}{90} = \tfrac{13}{18}\). The two multiples are chosen so that the repeating tails line up and cancel.
 
 ## Percentages
 
@@ -153,6 +158,8 @@ The sale price is \(80\%\) of the original, so \(\text{original} \times 0.8 = 64
 \[\text{original} = \frac{64}{0.8} = 80\]
 Check: \(20\%\) of \(80\) is \(16\), and \(80 - 16 = 64\). Taking \(20\%\) off \(64\), or multiplying it by \(1.2\), would be wrong, because the \(20\%\) was taken from the original price, not from \(64\).
 :::
+
+With **compound interest**, each year's interest is added to the amount, so next year's interest is earned on the larger amount.
 
 :::eg $5000 is invested at 4% compound interest a year. How much is it worth after 3 years?
 Each year the amount is multiplied by \(1.04\):
@@ -194,7 +201,7 @@ To round to a given place, look at the digit **after** it. If it is 5 or more, r
 The second row shows why significant figures matter for small numbers: two decimal places destroy all the information. In the last row the zero must be written, because \(2.1\) would claim only 2 significant figures.
 
 :::exam Accuracy rules in Cambridge papers
-Unless the question says otherwise, give non-exact answers to **3 significant figures**, and angles in degrees to **1 decimal place**. Money is normally given to 2 decimal places. "Exact" means leave fractions, surds and \(\pi\) in the answer. Never round in the middle of a calculation: keep the full value on your calculator, use the answer key, and round only the final answer. Early rounding can cost the accuracy mark.
+Unless the question says otherwise, give non-exact answers to **3 significant figures**, and angles in degrees to **1 decimal place**. Money is normally given to 2 decimal places. "Exact" means leave fractions, surds and \(\pi\) in the answer. Never round in the middle of a calculation: keep the full value on your calculator, use the Ans key on your calculator (it recalls the last answer), and round only the final answer. Early rounding can cost the accuracy mark.
 :::
 
 **Estimation** checks that an answer is sensible. Round each number to 1 significant figure and calculate.
@@ -274,6 +281,8 @@ A: (a) \(72 = 2^3 \times 3^2\) and \(108 = 2^2 \times 3^3\). HCF \(= 2^2 \times 
 
 (b) The common denominator is the LCM, 216: \(\dfrac{17}{72} = \dfrac{51}{216}\) and \(\dfrac{11}{108} = \dfrac{22}{216}\). [M1] The sum is \(\dfrac{73}{216}\). [A1]
 :::
+
+The exam practice questions that follow are graded with stars: ★ is one method, ★★ is two steps, and ★★★ is multi-part or links several ideas.
 
 :::try Exam practice ★ to ★★★
 Q: [2 marks] ★ Work out \(3 - 4 \times (-2)^2\).

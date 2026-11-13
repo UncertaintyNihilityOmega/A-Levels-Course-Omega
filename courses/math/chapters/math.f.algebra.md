@@ -94,7 +94,7 @@ In \(\dfrac{x + 6}{6}\) you cannot cancel the 6s, because \(6\) is only part of 
 :::
 
 :::eg Simplify \(\dfrac{x^2 - 9}{x^2 + 5x + 6}\)
-Factorise both lines: \(\dfrac{(x - 3)(x + 3)}{(x + 2)(x + 3)}\). The factor \((x + 3)\) appears on top and bottom, so it cancels: \(\dfrac{x - 3}{x + 2}\) (valid for \(x \ne -3\)).
+Factorise both lines: \(\dfrac{(x - 3)(x + 3)}{(x + 2)(x + 3)}\). The factor \((x + 3)\) appears on top and bottom, so it cancels: \(\dfrac{x - 3}{x + 2}\) (valid for \(x \ne -3\), because \(x = -3\) makes the bottom \(0\), and you cannot divide by \(0\)).
 :::
 
 To **add or subtract**, use a common denominator (usually the product of the denominators, or the lowest common multiple if they share a factor). To **multiply**, cancel factors then multiply across. To **divide**, multiply by the reciprocal.
@@ -146,7 +146,7 @@ Two unknowns need two equations. There are two methods; use whichever is shorter
 Make the coefficient of one letter the same in both equations, then add or subtract to remove it. Best when both equations look like \(ax + by = c\).
 :::
 :::col Substitution
-Rearrange one equation to get one letter alone, then replace it in the other equation. Best when one letter already has coefficient 1. It is the only method for a linear equation with a quadratic.
+Rearrange one equation to get one letter alone, then replace it in the other equation. Best when one letter already has coefficient 1. You will need it in [Quadratics](#math.p1.quadratics), where one equation is linear and the other has a squared term.
 :::
 :::
 
@@ -154,8 +154,11 @@ Rearrange one equation to get one letter alone, then replace it in the other equ
 (a) The \(y\) coefficients are \(+2\) and \(-2\), so add the equations: \(8x = 16\), giving \(x = 2\). Substitute into the first: \(6 + 2y = 12\), so \(y = 3\). Check in the second: \(10 - 6 = 4\). ✓
 
 (b) From the second equation \(y = 4x - 5\). Substitute into the first:
-\[\begin{aligned} 2x + 3(4x - 5) &= 13 \\ 14x - 15 &= 13 \\ x &= 2, \quad y = 3 \end{aligned}\]
+\[\begin{aligned} 2x + 3(4x - 5) &= 13 \\ 14x - 15 &= 13 \\ 14x &= 28 \\ x &= 2 \end{aligned}\]
+Then \(y = 4(2) - 5 = 3\).
 :::
+
+Two straight lines usually cross at one point, which is the solution. Two **parallel** lines never meet, so the equations have **no solution**. You can spot this in elimination: both letters disappear and you are left with \(0 = \) a non-zero number (or \(0x = \) a non-zero number), which is impossible.
 
 ## Substitution and changing the subject
 
@@ -251,9 +254,9 @@ A: (a) Length \(+\) width \(= 20\), so the length is \((20 - w)\). [B1] The area
 :::try Stretch for A*
 Q: [5 marks] ★★★ Given that \(x + \dfrac1x = 5\), find (a) the value of \(x^2 + \dfrac{1}{x^2}\), (b) the value of \(x^3 + \dfrac{1}{x^3}\).
 H: Square both sides of \(x + \dfrac1x = 5\). What does the middle term of the expansion become?
-H: For (b), expand \(\left(x + \dfrac1x\right)^3\). The two middle terms are both multiples of \(x + \dfrac1x\).
+H: For (b), write \(\left(x + \dfrac1x\right)^3\) as \(\left(x + \dfrac1x\right)\left(x + \dfrac1x\right)^2\) and use the answer to (a). The middle terms are all multiples of \(x + \dfrac1x\).
 A: (a) \(\left(x + \dfrac1x\right)^2 = x^2 + 2 + \dfrac{1}{x^2}\) [M1], so \(25 = x^2 + 2 + \dfrac{1}{x^2}\) and \(x^2 + \dfrac1{x^2} = 23\). [A1] (b)
-\[\begin{aligned} \left(x + \dfrac1x\right)^3 &= x^3 + 3x + \dfrac3x + \dfrac1{x^3} \\ &= x^3 + \dfrac{1}{x^3} + 3\left(x + \dfrac1x\right) \end{aligned}\] [M1]
+\[\begin{aligned} \left(x + \dfrac1x\right)^3 &= \left(x + \dfrac1x\right)\left(x^2 + 2 + \dfrac1{x^2}\right) \\ &= x^3 + 2x + \dfrac1x + x + \dfrac2x + \dfrac1{x^3} \\ &= x^3 + \dfrac{1}{x^3} + 3\left(x + \dfrac1x\right) \end{aligned}\] [M1]
 So \(125 = x^3 + \dfrac1{x^3} + 15\) [M1], giving \(x^3 + \dfrac1{x^3} = 110\). [A1] Check: \(x = \dfrac{5 + \sqrt{21}}{2} = 4.791\); then \(x^3 = 109.98\) and \(\dfrac{1}{x^3} = 0.009\), which add to \(110\).
 Q: [5 marks] ★★★ Find the values of \(k\) for which the simultaneous equations \(kx + 3y = 6\) and \(4x + (k + 1)y = 9\) have no solution.
 H: Eliminate \(y\): multiply the first equation by \((k + 1)\) and the second by 3, then subtract.

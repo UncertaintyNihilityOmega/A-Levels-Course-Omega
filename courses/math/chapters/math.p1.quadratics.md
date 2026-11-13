@@ -36,6 +36,8 @@ The number multiplying a power of the variable. In \(ax^2 + bx + c\), \(a\) is t
 
 A **quadratic equation** sets a quadratic equal to zero, such as \(x^2 - 2x - 3 = 0\). Its solutions are called **roots**. Most quadratic equations have two roots, some have one, and some have no real roots at all. By the end of this chapter you will be able to predict which, before solving anything.
 
+Some names used below: \(f(x)\) is a name for an expression, so \(f(x) = 2x^2 - 12x + 7\) means the same as \(y = 2x^2 - 12x + 7\). The **range** of \(f(x)\) is the set of \(y\)-values that the graph reaches. And \(x \in \mathbb{R}\) means that \(x\) can be any real number.
+
 :::def Root (of an equation)
 A value of the variable that makes the equation true. The real roots of \(f(x) = 0\) are the \(x\)-coordinates where the graph of \(y = f(x)\) meets the \(x\)-axis.
 :::
@@ -242,7 +244,7 @@ Equal roots means the discriminant is zero: \(a = 1\), \(b = k\), \(c = 9\).
 :::
 
 :::proof The sum and product of the roots
-Suppose \(ax^2 + bx + c = 0\) has roots \(\alpha\) and \(\beta\). Then \(x - \alpha\) and \(x - \beta\) are factors, so
+Suppose \(ax^2 + bx + c = 0\) has roots \(\alpha\) and \(\beta\) (Greek letters, "alpha" and "beta", used as names for the two roots). If \(r\) is a root then \((x - r)\) is a factor, because that bracket is zero when \(x = r\) (the zero product rule in reverse). So \(x - \alpha\) and \(x - \beta\) are factors, and
 \[ax^2 + bx + c = a(x - \alpha)(x - \beta) = a\big[x^2 - (\alpha + \beta)x + \alpha\beta\big]\]
 This is true for every \(x\), so the coefficients on the two sides must match:
 \[b = -a(\alpha + \beta) \quad\text{and}\quad c = a\alpha\beta\]
@@ -266,7 +268,7 @@ At intersection the \(y\)-values are equal:
 \[x^2 + 3 = kx - 1 \quad\Rightarrow\quad x^2 - kx + 4 = 0\] [M1]
 Two distinct points means two distinct roots, so the discriminant is positive:
 \[(-k)^2 - 4(1)(4) > 0 \quad\Rightarrow\quad k^2 > 16\] [M1]
-\(k^2 > 16\) when \(k > 4\) or \(k < -4\) (see inequalities below). [A1]
+Solve it as a quadratic inequality (the method is in the next section): the graph of \(y = k^2 - 16\) is ∪-shaped and crosses the \(k\)-axis where \(k^2 = 16\), at \(k = 4\) and \(k = -4\). It is above the axis outside those two values, so \(k > 4\) or \(k < -4\). [A1]
 :::
 
 ## Quadratic inequalities

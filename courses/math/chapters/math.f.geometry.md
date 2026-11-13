@@ -30,7 +30,7 @@ Angles are measured in degrees: a full turn is \(360^\circ\). These facts need n
 - The angles of a triangle add up to \(180^\circ\). An **exterior angle** of a triangle equals the sum of the two interior angles opposite it.
 - With parallel lines: **alternate** angles (a Z shape) are equal, **corresponding** angles (an F shape) are equal, and **co-interior** angles (a C shape) add up to \(180^\circ\).
 - An **isosceles** triangle has two equal sides and two equal base angles. An **equilateral** triangle has three equal sides and three angles of \(60^\circ\).
-- The interior angles of a polygon with \(n\) sides add up to \((n - 2) \times 180^\circ\). The exterior angles of any polygon add up to \(360^\circ\), so each exterior angle of a **regular** polygon is \(\dfrac{360^\circ}{n}\).
+- The interior angles of a polygon with \(n\) sides add up to \((n - 2) \times 180^\circ\). An **exterior angle** of a polygon is the angle between one side and the next side extended, so interior angle + exterior angle = \(180^\circ\). The exterior angles of any polygon add up to \(360^\circ\), so each exterior angle of a **regular** polygon is \(\dfrac{360^\circ}{n}\).
 :::
 
 :::proof The angles of a triangle add up to 180°
@@ -90,7 +90,7 @@ In a right-angled triangle, name the sides from the point of view of an angle \(
 To find a **side**, use the ratio directly. To find an **angle**, use the inverse function: \(\theta = \sin^{-1}\left(\dfrac{\text{opp}}{\text{hyp}}\right)\). Make sure your calculator is in **degree** mode.
 :::
 
-Two more facts follow: \(\tan\theta = \dfrac{\sin\theta}{\cos\theta}\) and \(\sin^2\theta + \cos^2\theta = 1\) (from Pythagoras with hypotenuse 1). These return in [Trigonometry](#math.p1.trig).
+Two more facts follow: \(\tan\theta = \dfrac{\sin\theta}{\cos\theta}\) and \(\sin^2\theta + \cos^2\theta = 1\) (from Pythagoras with hypotenuse 1). Here \(\sin^2\theta\) means \((\sin\theta)^2\). These return in [Trigonometry](#math.p1.trig).
 
 :::eg In a right-angled triangle the hypotenuse is \(12\) cm and one angle is \(35^\circ\). Find the side opposite that angle. In another, the sides adjacent and opposite \(\theta\) are \(9\) and \(7\): find \(\theta\).
 Opposite \(= 12 \sin 35^\circ = 6.883\), so the side is \(6.88\) cm (3 s.f.).
@@ -110,7 +110,7 @@ The tower is opposite the angle and the ground distance is adjacent: \(\tan 28^\
 
 ## Exact values of sin, cos and tan
 
-For the angles \(30^\circ\), \(45^\circ\) and \(60^\circ\) you must know the exact values with no calculator. They come from two triangles: half of a square (sides 1, 1, \(\sqrt2\)) and half of an equilateral triangle of side 2 (sides 1, \(\sqrt3\), 2).
+For the angles \(30^\circ\), \(45^\circ\) and \(60^\circ\) you must know the exact values with no calculator. They come from two triangles: half of a square (sides 1, 1, \(\sqrt2\)) and half of an equilateral triangle of side 2 (sides 1, \(\sqrt3\), 2). To see the second, cut an equilateral triangle of side 2 in half down the middle: the base of each half is 1 and the height is \(\sqrt{2^2 - 1^2} = \sqrt3\) by Pythagoras, and the angles are \(30^\circ\), \(60^\circ\) and \(90^\circ\).
 
 :::html
 <figure class="fig wide"><svg viewBox="28 50 440 230" role="img" aria-label="Two special right-angled triangles: a triangle with two sides of length 1, hypotenuse root 2 and two angles of 45 degrees; and a triangle with hypotenuse 2, short side 1, long side root 3 and angles of 30 and 60 degrees.">
@@ -171,7 +171,7 @@ In the right-angled triangle \(ACD\), \(\sin A = \dfrac{h}{b}\), so \(h = b\sin 
 In the right-angled triangle \(BCD\), \(\sin B = \dfrac{h}{a}\), so \(h = a\sin B\).
 Both equal \(h\), so \(b\sin A = a\sin B\). Divide both sides by \(\sin A \sin B\):
 \[\frac{a}{\sin A} = \frac{b}{\sin B}\]
-Dropping a perpendicular from \(A\) instead gives \(\dfrac{b}{\sin B} = \dfrac{c}{\sin C}\), which completes the sine rule. If an angle is obtuse the foot of the perpendicular lies outside the triangle, but \(\sin(180^\circ - x) = \sin x\), so the same equations hold.
+Dropping a perpendicular from \(A\) instead gives \(\dfrac{b}{\sin B} = \dfrac{c}{\sin C}\), which completes the sine rule. If an angle is obtuse the foot of the perpendicular lies outside the triangle, but \(\sin(180^\circ - x) = \sin x\) (for example \(\sin 30^\circ = \sin 150^\circ = 0.5\); the warning box on the ambiguous case below says more), so the same equations hold.
 
 For the area, take \(BC = a\) as the base. The perpendicular from \(A\) to the line \(BC\) has length \(b\sin C\) (right-angled triangle with hypotenuse \(AC = b\) and angle \(C\)). So
 \[\text{Area} = \tfrac12 \times \text{base} \times \text{height} = \tfrac12\, a\,(b\sin C) = \tfrac12 ab\sin C\]
@@ -210,7 +210,7 @@ A negative cosine means an obtuse angle. The calculator gives it correctly: do n
 :::
 
 :::warn The ambiguous case of the sine rule
-When you know two sides and an angle **not** between them, \(\sin B = k\) has two solutions in a triangle: \(B\) and \(180^\circ - B\). For \(a = 8\), \(b = 10\), \(A = 40^\circ\), \(\sin B = \dfrac{10 \sin 40^\circ}{8} = 0.8035\), so \(B = 53.5^\circ\) or \(B = 126.5^\circ\). Both fit because \(40 + 126.5 < 180\). If the question does not tell you which, give both. To avoid the problem, find an angle with the **cosine** rule, which gives one answer.
+When you know two sides and an angle **not** between them, \(\sin B = k\) has two solutions in a triangle: \(B\) and \(180^\circ - B\). For \(a = 8\), \(b = 10\), \(A = 40^\circ\), \(\sin B = \dfrac{10 \sin 40^\circ}{8} = 0.8035\), so \(B = 53.5^\circ\) or \(B = 126.5^\circ\). Both fit because \(40 + 126.5 < 180\). If the question does not tell you which, give both. To avoid the problem, find an angle with the **cosine** rule, which gives one answer. The two angles share a sine because \(\sin(180^\circ - x) = \sin x\): for example \(\sin 30^\circ = \sin 150^\circ = 0.5\). The calculator's inverse sine gives only the acute angle, so subtract it from \(180^\circ\) to find the other.
 :::
 
 :::eg (Exam style) In triangle \(ABC\), \(AB = 8\) cm, \(AC = 11\) cm and angle \(BAC = 58^\circ\). Find (a) \(BC\), (b) angle \(ABC\), (c) the area of the triangle.
@@ -218,7 +218,7 @@ When you know two sides and an angle **not** between them, \(\sin B = k\) has tw
 \[BC^2 = 8^2 + 11^2 - 2(8)(11)\cos 58^\circ\] [M1]
 \[BC^2 = 185 - 176\cos 58^\circ = 91.73\ldots, \quad BC = 9.58 \text{ cm}\] [A1]
 
-(b) Use the cosine rule again to avoid the ambiguous case (keep \(BC\) as \(9.578\) from the calculator):
+(b) Use the cosine rule again to avoid the ambiguous case (keep \(BC\) as \(9.578\) from the calculator). Angle \(B\) is opposite \(AC = 11\), so \(AC^2\) is the side squared on the left of the rule, giving \(\cos B = \dfrac{BC^2 + AB^2 - AC^2}{2 \times BC \times AB}\):
 \[\cos B = \frac{9.578^2 + 8^2 - 11^2}{2(9.578)(8)} = 0.2267\ldots\] [M1]
 \[\angle ABC = 76.9^\circ\] [A1]
 
@@ -343,7 +343,7 @@ H: In (b), factorise \(x^2 - 2x - 15\) and reject any value that cannot be a len
 A: (a) \(x^2 + (x + 7)^2 = (x + 8)^2\) [M1] so \(x^2 + x^2 + 14x + 49 = x^2 + 16x + 64\). [A1] Collect terms: \(x^2 - 2x - 15 = 0\). [A1] (b) \((x - 5)(x + 3) = 0\) [M1] so \(x = 5\), because a length cannot be \(-3\). [A1] (c) The sides are \(5\), \(12\), \(13\), so the area is \(\tfrac12 \times 5 \times 12 = 30\) cm². [B1]
 Q: [5 marks] ★★★ From a point \(A\) on level ground, the angle of elevation of the top \(T\) of a vertical tower is \(20^\circ\). From a point \(B\), \(60\) m closer to the tower on the same line, the angle of elevation is \(35^\circ\). (a) Show that angle \(ATB = 15^\circ\). (b) Find the distance \(BT\). (c) Find the height of the tower.
 H: Triangle \(ABT\) is not right-angled, so use the sine rule. First find an angle you need.
-H: The angle of elevation at \(B\) is an exterior angle of triangle \(ABT\).
+H: Draw \(A\), \(B\) and the foot \(F\) of the tower on one line, with \(T\) directly above \(F\). The angle of elevation at \(B\) is angle \(TBF\), which is outside triangle \(ABT\): it is an exterior angle of that triangle.
 H: Use the sine rule for \(BT\); then the height is the side of a right-angled triangle with hypotenuse \(BT\).
 A: (a) The exterior angle at \(B\) equals the sum of the two opposite interior angles: \(35^\circ = 20^\circ + \angle ATB\), so \(\angle ATB = 15^\circ\). [B1] (b) \(\dfrac{BT}{\sin 20^\circ} = \dfrac{60}{\sin 15^\circ}\) [M1] so \(BT = 79.3\) m. [A1] (c) Height \(= BT\sin 35^\circ\) [M1] \(= 45.5\) m. [A1]
 :::

@@ -152,6 +152,8 @@ Because \(f\) takes \(a\) to \(b\) and \(f^{-1}\) takes \(b\) back to \(a\), eve
 :::proof Why the graph of the inverse is the reflection in y = x
 Take any point \((a, b)\) on the graph of \(y = f(x)\). Then \(b = f(a)\), so \(f^{-1}(b) = a\), which means \((b, a)\) lies on the graph of \(y = f^{-1}(x)\).
 
+Two facts are needed, and both are taught fully in [Coordinate geometry](#math.p1.coord). The **midpoint** of two points has the average of the two \(x\)-values and the average of the two \(y\)-values. Two lines are **perpendicular** (at right angles) when the product of their gradients is \(-1\). (The gradient of the line through two points is the change in \(y\) divided by the change in \(x\), from [Graphs](#math.f.graphs).)
+
 Now compare the two points \((a, b)\) and \((b, a)\) with the line \(y = x\):
 - The midpoint is \(\left(\dfrac{a + b}{2}, \dfrac{a + b}{2}\right)\). Its coordinates are equal, so it lies on \(y = x\).
 - The gradient of the line joining them is \(\dfrac{a - b}{b - a} = -1\). The line \(y = x\) has gradient 1, and \(1 \times (-1) = -1\), so the joining line is perpendicular to \(y = x\).
@@ -163,7 +165,7 @@ A point and its image are joined by a line that is perpendicular to the mirror a
 :::
 :::
 
-If a question asks you to solve \(f(x) = f^{-1}(x)\) and \(f\) is an increasing function, the two graphs meet on the line \(y = x\), so it is enough to solve \(f(x) = x\).
+If a question asks you to solve \(f(x) = f^{-1}(x)\) and \(f\) is an **increasing** function (its graph always rises from left to right), the two graphs can only meet on the line \(y = x\), so it is enough to solve \(f(x) = x\). The reason: suppose the graphs meet at \((a, b)\), so \(f(a) = b\) and \(f(b) = a\). If \(a < b\), then because \(f\) is increasing \(f(a) < f(b)\), which says \(b < a\), a contradiction. The same happens if \(a > b\). So \(a = b\), and the point is on \(y = x\).
 
 ## Restricting a domain
 
@@ -200,6 +202,8 @@ The domain of \(f^{-1}\) is the range of \(f\). The least value of \(f\) is \(-7
 
 If you know the graph of \(y = f(x)\), you can sketch many related graphs without plotting points. Each change to the equation moves, stretches or reflects the picture in a predictable way.
 
+The table uses two ideas. A **column vector** gives a move as (across, up): the translation \(\begin{pmatrix}0\\a\end{pmatrix}\) written as a column means across 0 and up \(a\). A **stretch parallel to the \(y\)-axis** with scale factor \(a\) multiplies every point's distance from the \(x\)-axis by \(a\); a stretch parallel to the \(x\)-axis multiplies every point's distance from the \(y\)-axis by its scale factor.
+
 | Equation | Transformation of \(y = f(x)\) |
 |---|---|
 | \(y = f(x) + a\) | translation \(\begin{pmatrix}0\\a\end{pmatrix}\): up \(a\)<br>\((x, y) \to (x,\, y + a)\) |
@@ -222,7 +226,7 @@ Try the sliders. The first curve is \(y = x^2\) and the second is the transforme
 <div class="widget" data-w="graph" data-fns="x^2; a*(x - c)^2 + d" data-x="-6,6" data-y="-6,10" data-params="a=1,-3,3,0.1; c=0,-4,4,0.5; d=0,-5,5,0.5" data-labels="y = x²; y = a(x − c)² + d"></div>
 :::
 
-When transformations are combined, work in the order you would calculate. For \(y = 3f(x) + 1\), start with \(f(x)\), multiply by 3, then add 1: stretch first, then translate. For a bracket such as \(f(2x - 4)\), first factorise it as \(f\big(2(x - 2)\big)\). Then squash by \(\tfrac12\) parallel to the \(x\)-axis, and translate 2 to the right.
+When transformations are combined, for changes outside the bracket work in the order you would calculate. For \(y = 3f(x) + 1\), start with \(f(x)\), multiply by 3, then add 1: stretch first, then translate. For changes inside the bracket the order is reversed, so factorise first: \(f(2x - 4) = f\big(2(x - 2)\big)\) is a squash by \(\tfrac12\) parallel to the \(x\)-axis, followed by a move 2 to the right. The move is 2, not 4, because the squash comes first and shrinks the distance moved.
 
 :::warn Order matters
 \(3f(x) + 1\) and \(3\big(f(x) + 1\big) = 3f(x) + 3\) are different graphs. Always stretch before you translate vertically. A full description of a transformation needs its type and its details: a translation needs a vector, a stretch needs a direction and a scale factor, and a reflection needs a line.
@@ -371,7 +375,7 @@ A: \(ff(x) = a(ax + b) + b = a^2 x + ab + b\). [M1 A1] Comparing: \(a^2 = 9\) an
 - To find \(f^{-1}\): write \(y = f(x)\), make \(x\) the subject, then swap letters. Its domain is the range of \(f\), and its graph is the reflection of \(f\) in \(y = x\).
 - To make a quadratic one-one, restrict its domain to one side of the vertex, which you find by completing the square. Choose the \(\pm\) in the inverse to match the original domain.
 - Outside the bracket, \(f(x) + a\) and \(af(x)\) act on \(y\) as expected. Inside, \(f(x + a)\) moves left by \(a\) and \(f(ax)\) stretches horizontally by \(\tfrac{1}{a}\). \(-f(x)\) reflects in the \(x\)-axis and \(f(-x)\) in the \(y\)-axis.
-- For combined transformations, work in the order you would calculate: stretch first, then translate.
+- For combined transformations, outside the bracket work in the order you would calculate (stretch first, then translate); inside the bracket factorise first, as in \(f(2x - 4) = f\big(2(x - 2)\big)\).
 :::
 
 :::links

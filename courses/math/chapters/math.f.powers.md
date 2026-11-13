@@ -140,6 +140,10 @@ To expand brackets that contain surds, multiply term by term as in algebra, reme
 \[\begin{aligned} (2 + \sqrt3)^2 &= 4 + 2\sqrt3 + 2\sqrt3 + 3 \\ &= 7 + 4\sqrt3 \end{aligned}\]
 :::
 
+:::key Comparing the two parts of a surd expression
+If \(a + b\sqrt{n} = c + d\sqrt{n}\), where \(a, b, c, d\) are rational and \(\sqrt{n}\) is irrational, then \(a = c\) and \(b = d\): the parts without a surd are equal, and the parts with the surd are equal. This is because a rational number can never equal an irrational multiple of \(\sqrt{n}\). For example, if \(p + q\sqrt{2} = 5 + 3\sqrt{2}\) then \(p = 5\) and \(q = 3\).
+:::
+
 ## Rationalising the denominator
 
 A fraction such as \(\dfrac{1}{\sqrt{2}}\) is easier to use if the denominator is a whole number. **Rationalising** removes the surd from the denominator by multiplying top and bottom by the same thing. It does not change the value, because you multiply by 1.
