@@ -7,7 +7,11 @@
   History section on the resources page). Its COURSE.md has the course rules; history in git.
 - Reader pass done Nov 13: Mathematics (169 items) and Physics (109 items, 4 batches; phys.dc added to P5), all
   FIXed; site check 0 errors, strict build passes. Release v0.6.0 tagged (CHANGELOG).
-- Now: queue item 5, Computer Science (`cs`, 9618): Specialist LEAD next, guard on `cs`.
+- Now: queue item 5, Computer Science (`cs`, 9618): Specialist LEAD running (Nov 13), guard on `cs`, cs-preview
+  (5110) running (user allowed the preview this session).
+- USER (optional): GitHub Release page for v0.6.0 (tag is pushed; gh not installed, GitHub not signed in in the pane):
+  sign in to github.com in the browser pane, or create it at Releases → Draft a new release → tag v0.6.0, notes from
+  CHANGELOG.md 0.6.0.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
