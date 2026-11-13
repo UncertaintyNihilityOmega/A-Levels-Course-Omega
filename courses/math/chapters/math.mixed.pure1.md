@@ -46,8 +46,8 @@ The minimum point is \((-3, -7)\). [B1]
 Q: [4 marks] (#math.p1.functions) ★★ The functions \(f\) and \(g\) are defined by \(f(x) = 2x + 3\) and \(g(x) = x^2\). Find \(fg(x)\) and \(gf(x)\), and hence solve the equation \(fg(x) = gf(x)\).
 A: \(fg(x) = f(x^2) = 2x^2 + 3\). [B1]
 \(gf(x) = g(2x + 3) = (2x + 3)^2\). [B1]
-Equate: \(2x^2 + 3 = 4x^2 + 12x + 9\), which gives \(x^2 + 6x + 3 = 0\). [M1]
-By the formula \(x = \dfrac{-6 \pm \sqrt{36 - 12}}{2} = -3 \pm \sqrt{6}\). [A1]
+Equate: \(2x^2 + 3 = 4x^2 + 12x + 9\), so \(0 = 2x^2 + 12x + 6\); divide by 2 to get \(x^2 + 6x + 3 = 0\). [M1]
+By the formula \(x = \dfrac{-6 \pm \sqrt{36 - 12}}{2}\). Since \(\sqrt{24} = 2\sqrt6\), \(x = \dfrac{-6 \pm 2\sqrt6}{2} = -3 \pm \sqrt{6}\). [A1]
 Q: [4 marks] (#math.p1.series) ★★ Find the first three terms, in ascending powers of \(x\), of the expansion of \((2 + 3x)^5\).
 A: Use \((a + b)^n\) with \(a = 2\), \(b = 3x\), \(n = 5\): [M1]
 \[ 2^5 + \binom51 2^4(3x) + \binom52 2^3(3x)^2 + \cdots \]
@@ -55,6 +55,7 @@ The first term is 32. [A1] The second is \(5 \times 16 \times 3x = 240x\). [A1] 
 Q: [3 marks] (#math.p1.trig) ★★ Solve \(\tan(x - 20^\circ) = 2\) for \(0^\circ \le x \le 360^\circ\).
 A: \(\tan^{-1}2 = 63.4^\circ\), so \(x - 20^\circ = 63.4^\circ\) or \(63.4^\circ + 180^\circ = 243.4^\circ\). [M1]
 \(x = 83.4^\circ\) [A1] or \(x = 263.4^\circ\). [A1]
+Why only two: for \(0^\circ \le x \le 360^\circ\), \(x - 20^\circ\) lies between \(-20^\circ\) and \(340^\circ\). \(63.4^\circ\) and \(243.4^\circ\) are in this range; \(63.4^\circ - 180^\circ = -116.6^\circ\) and \(63.4^\circ + 360^\circ\) are not.
 Q: [3 marks] (#math.p1.coord) ★★ A circle has centre \((2, -1)\) and passes through the point \((5, 3)\). Find the equation of the circle.
 A: The radius squared is the squared distance from the centre to \((5, 3)\): \(r^2 = (5 - 2)^2 + (3 + 1)^2 = 25\). [M1]
 So \(r = 5\). [A1]
@@ -125,7 +126,7 @@ At \(x = 2\) it is positive, so \((2, 4)\) is a minimum; at \(x = -2\) it is neg
 Q: [5 marks] (#math.p1.integ) ★★★ Find the exact area of the region enclosed between the curves \(y = x^2\) and \(y = 8 - x^2\).
 A: Equate: \(x^2 = 8 - x^2\), so \(x^2 = 4\). [M1]
 The curves meet at \(x = -2\) and \(x = 2\). [A1]
-The curve \(y = 8 - x^2\) is above \(y = x^2\) between these points, so the area is
+The curve \(y = 8 - x^2\) is above \(y = x^2\) between these points (at \(x = 0\) it is 8 against 0), so the area is
 \[ \int_{-2}^{2} (8 - 2x^2)\,dx = \Big[8x - \tfrac23 x^3\Big]_{-2}^{2} \]
 [M1] [A1] \(= \big(16 - \tfrac{16}{3}\big) - \big(-16 + \tfrac{16}{3}\big) = \tfrac{64}{3}\). [A1]
 Q: [4 marks] (#math.p1.series) ★★★ An arithmetic progression has fifth term 17 and the sum of its first 10 terms is 185. Find the first term and the common difference.
@@ -136,12 +137,12 @@ Then \(a = 17 - 12 = 5\). [A1]
 Q: [6 marks] (#math.p1.circular) ★★★ A sector of a circle has radius \(r\) cm and angle \(\theta\) radians, and its perimeter is 20 cm. Find the value of \(r\) for which the area of the sector is a maximum, and find this maximum area and the corresponding value of \(\theta\).
 A: The perimeter is \(2r + r\theta = 20\), so \(\theta = \dfrac{20 - 2r}{r}\). [M1]
 The area is \(A = \tfrac12 r^2\theta = \tfrac12 r(20 - 2r) = 10r - r^2\). [A1]
-Maximise: \(\dfrac{dA}{dr} = 10 - 2r = 0\) [M1] so \(r = 5\). [A1]
+Maximise: \(\dfrac{dA}{dr} = 10 - 2r = 0\) [M1] so \(r = 5\). \(\dfrac{d^2A}{dr^2} = -2 < 0\), so this is a maximum. [A1]
 The maximum area is \(50 - 25 = 25\) cm² [A1] and \(\theta = \dfrac{20 - 10}{5} = 2\) radians. [A1]
 Q: [6 marks] (#math.p1.trig) ★★★ Solve the equation \(6\cos^2x + \sin x - 5 = 0\) for \(0^\circ \le x \le 360^\circ\).
 A: Use \(\cos^2x = 1 - \sin^2x\): \(6 - 6\sin^2x + \sin x - 5 = 0\). [M1]
 \[ 6\sin^2x - \sin x - 1 = 0 \]
 [A1] Factorise: \((3\sin x + 1)(2\sin x - 1) = 0\), so \(\sin x = -\tfrac13\) or \(\sin x = \tfrac12\). [M1]
 \(\sin x = \tfrac12\) gives \(x = 30^\circ\) or \(150^\circ\). [A1]
-\(\sin x = -\tfrac13\): the reference angle is \(19.5^\circ\), so \(x = 199.5^\circ\) [A1] or \(340.5^\circ\). [A1]
+\(\sin x = -\tfrac13\): the reference angle is \(19.5^\circ\), and \(\sin x\) is negative in the third and fourth quadrants, so \(x = 180^\circ + 19.5^\circ = 199.5^\circ\) [A1] or \(360^\circ - 19.5^\circ = 340.5^\circ\). [A1]
 :::

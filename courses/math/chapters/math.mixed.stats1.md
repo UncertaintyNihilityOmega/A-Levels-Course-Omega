@@ -63,12 +63,12 @@ A: The cumulative frequencies at the upper boundaries are 5, 20, 60, 90, 100. Th
 [A1]
 Q: [5 marks] (#math.s1.data) ★★ Group \(A\) has 10 values with mean 12 and standard deviation 2. Group \(B\) has 15 values with mean 16 and standard deviation 3. Find the mean and the standard deviation of all 25 values combined.
 A: The total of the values is \(10 \times 12 + 15 \times 16 = 360\), so the combined mean is \(\dfrac{360}{25} = 14.4\). [M1] [A1]
-For each group, \(\sum x^2 = n(\sigma^2 + \bar x^2)\): group \(A\) gives \(10(4 + 144) = 1480\) and group \(B\) gives \(15(9 + 256) = 3975\). [M1]
+For each group, \(\sum x^2 = n(\sigma^2 + \bar x^2)\) (from variance \(= \sum x^2/n - \bar x^2\), rearranged): group \(A\) gives \(10(4 + 144) = 1480\) and group \(B\) gives \(15(9 + 256) = 3975\). [M1]
 The combined variance is [M1]
 \[ \frac{1480 + 3975}{25} - 14.4^2 = 218.2 - 207.36 = 10.84 \]
 So the standard deviation is \(\sqrt{10.84} = 3.29\). [A1]
 Q: [3 marks] (#math.s1.perms) ★★ Five boys and four girls stand in a line so that no two boys are next to each other and no two girls are next to each other. In how many ways can they be arranged?
-A: With 5 boys and 4 girls the only pattern that works is B G B G B G B G B. [M1]
+A: With 5 boys and 4 girls the only pattern that works is B G B G B G B G B (5 boys with no two together need a girl in each of the 4 gaps between them, which uses all 4 girls). [M1]
 The boys can be arranged in \(5!\) ways and the girls in \(4!\) ways: [M1]
 \[ 5! \times 4! = 120 \times 24 = 2880 \]
 [A1]
@@ -148,11 +148,12 @@ So the standard deviation is 3.5. [A1]
 
 (b) \(z = \dfrac{20 - 25.5}{3.5} = -1.571\). [M1]
 \[ P(X < 20) = \Phi(-1.571) = 1 - 0.9419 = 0.0581 \]
-This is 0.058 to 3 s.f. (accept 0.0582 from tables). [A1]
+\(P = 0.0581\) (using \(z = -1.57\) from the table gives 0.0582, also accepted). [A1]
 
 (c) The new total is \(1020 + 31 = 1051\), so the mean is \(\dfrac{1051}{41} = 25.6\). [B1]
 The new \(\sum x^2 = 26\,500 + 961 = 27\,461\), so the variance is [M1]
 \[ \frac{27\,461}{41} - 25.634^2 = 12.67 \]
+(use the unrounded mean \(25.634\ldots\) in the variance)
 and the standard deviation is 3.56. [A1]
 Q: [7 marks] (#math.s1.perms) ★★★ Seven people, including Ann, Ben and Cal, stand in a line.
 

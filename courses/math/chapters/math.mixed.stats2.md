@@ -112,7 +112,8 @@ This equals 1, so \(k = \dfrac34\). [A1]
 
 (b) [M1]
 \[ P(X > 1.5) = \frac34\Big[x^2 - \frac{x^3}{3}\Big]_{1.5}^{2} = \frac34\Big(\frac43 - 1.125\Big) \]
-\(= \dfrac{5}{32} = 0.156\). [A1]
+(at \(x = 2\): \(4 - \frac83 = \frac43\); at \(x = 1.5\): \(2.25 - \frac{3.375}{3} = 2.25 - 1.125 = 1.125\))
+\(= \dfrac34 \times \dfrac{5}{24} = \dfrac{5}{32} = 0.156\). [A1]
 
 (c) \(E(X) = 1\), because the graph of \(f\) is symmetrical about \(x = 1\). [B1]
 Q: [4 marks] (#math.s2.crv) ★★ The random variable \(X\) has probability density function \(f(x) = \dfrac{2}{x^3}\) for \(x \ge 1\), and \(f(x) = 0\) otherwise.
@@ -122,7 +123,7 @@ Q: [4 marks] (#math.s2.crv) ★★ The random variable \(X\) has probability den
 (b) Find the median of \(X\). [2]
 A: (a) [M1]
 \[ E(X) = \int_1^\infty x\cdot\frac{2}{x^3}\,dx = \int_1^\infty 2x^{-2}\,dx \]
-\(= \Big[-\dfrac{2}{x}\Big]_1^\infty = 2\). [A1]
+An improper integral needs a limit: \(\displaystyle\int_1^\infty 2x^{-2}\,dx = \lim_{t\to\infty}\Big[-\dfrac{2}{x}\Big]_1^t = \lim_{t\to\infty}\Big(-\dfrac{2}{t} + 2\Big) = 2\), since \(\dfrac2t \to 0\). [A1]
 
 (b) The median \(m\) satisfies [M1]
 \[ \int_1^m 2x^{-3}\,dx = 1 - m^{-2} = \frac12 \]

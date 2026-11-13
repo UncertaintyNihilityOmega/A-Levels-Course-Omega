@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-13 · FIX · math: 16 reader items, math.m.energy to math.exam.p23 (gravity work on any path, proof algebra, power direction, moments clockwise rule, hinge and rod figure, matrix by column, polynomial roots, ODE notation, proof remainders, sign-change step)
+Last: 2026-11-13 · FIX · Closed 24 reader items in exam.p6, mixed.pure1/pure3/mech/stats1/stats2: added missing working steps, limit notation for the improper integral, reasons for angles, rounding fix
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

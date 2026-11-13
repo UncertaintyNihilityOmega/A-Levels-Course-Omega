@@ -71,7 +71,7 @@ A: Let \(T_1\) be the tension in the string at \(30^\circ\) and \(T_2\) the tens
 \[ T_1\cos 30^\circ = T_2\cos 60^\circ \]
 [A1] Resolve vertically: [M1]
 \[ T_1\sin 30^\circ + T_2\sin 60^\circ = 60 \]
-[A1] From the first equation \(T_1 = T_2/\sqrt3\). Substituting: \(\dfrac{T_2}{2\sqrt3} + \dfrac{\sqrt3\,T_2}{2} = 60\), so \(\dfrac{2T_2}{\sqrt3} = 60\). Hence \(T_2 = 30\sqrt3 = 52.0\) N and \(T_1 = 30\) N. [A1]
+[A1] From the first equation \(T_1 = T_2/\sqrt3\). Substituting: \(\dfrac{T_2}{2\sqrt3} + \dfrac{\sqrt3\,T_2}{2} = 60\), and \(\dfrac{\sqrt3}{2} = \dfrac{3}{2\sqrt3}\), so the sum is \(\dfrac{4T_2}{2\sqrt3} = \dfrac{2T_2}{\sqrt3}\). Then \(\dfrac{2T_2}{\sqrt3} = 60\). Hence \(T_2 = 30\sqrt3 = 52.0\) N and \(T_1 = 30\) N. [A1]
 Q: [3 marks] (#math.m.forces) ★★ A crate of mass 6 kg rests on rough horizontal ground. A boy pushes the crate with a force of 30 N directed at \(25^\circ\) below the horizontal. The crate is on the point of moving. Find the coefficient of friction between the crate and the ground.
 A: Resolve vertically: \(R = 60 + 30\sin 25^\circ = 72.68\) N. [M1]
 Resolve horizontally, in limiting equilibrium: \(F = 30\cos 25^\circ = 27.19\) N. [M1]
@@ -147,8 +147,8 @@ Then \(T = 10 + 12.5 = 22.5\) N. [A1]
 \(v = 3\ \mathrm{m\,s^{-1}}\). [A1]
 
 (c) When \(B\) lands the string goes slack, and \(A\) decelerates under friction alone: \(5a' = 10\), so \(a' = 2\). [M1]
-\(0 = 3^2 - 2(2)s\), so \(s = 2.25\) m. [A1]
-The total distance is \(1.8 + 2.25 = 4.05\) m. [A1]
+\(A\) has the same speed as \(B\), 3 m s⁻¹, when \(B\) lands (the string is inextensible), so \(u = 3\) for \(A\)'s slide: \(0 = 3^2 - 2(2)s\), so \(s = 2.25\) m. [A1]
+\(A\) moved 1.8 m while \(B\) fell 1.8 m, so the total distance is \(1.8 + 2.25 = 4.05\) m. [A1]
 Q: [7 marks] (#math.m.kinematics) ★★★ A particle \(P\) starts from rest at a point \(O\) and moves in a straight line. Its acceleration at time \(t\) seconds is \((8 - 2t)\ \mathrm{m\,s^{-2}}\).
 
 (a) Show that the velocity of \(P\) at time \(t\) is \((8t - t^2)\ \mathrm{m\,s^{-1}}\). [2]
@@ -180,7 +180,7 @@ A: (a) At steady speed the driving force balances the resistance and the weight 
 \(v = 24\ \mathrm{m\,s^{-1}}\). [A1]
 
 (b) At 15 m s⁻¹ the driving force is \(D = \dfrac{36\,000}{15} = 2400\) N. [M1]
-Newton's second law up the road: \(2400 - 900 - 600 = 1500a\). [M1]
+Newton's second law up the road, where \(600 = 1500 \times 10 \times 0.04\) is the weight component down the road, as in part (a): \(2400 - 900 - 600 = 1500a\). [M1]
 \(a = 0.6\ \mathrm{m\,s^{-2}}\). [A1]
 Q: [5 marks] (#math.m.forces) ★★★ A block of mass 5 kg lies on a rough plane inclined at an angle \(\alpha\) to the horizontal, where \(\sin\alpha = 0.6\) and \(\cos\alpha = 0.8\). The coefficient of friction is 0.5. A force of magnitude \(P\) N, acting up the plane parallel to a line of greatest slope, is applied to the block. Find the range of values of \(P\) for which the block remains at rest.
 A: The normal reaction is \(R = 50 \times 0.8 = 40\) N, so the maximum friction is \(0.5 \times 40 = 20\) N. The weight component down the plane is \(50 \times 0.6 = 30\) N. [B1]

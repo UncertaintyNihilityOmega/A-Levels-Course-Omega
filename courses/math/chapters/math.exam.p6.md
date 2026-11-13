@@ -59,7 +59,7 @@ The [Correlation and regression](#math.s.regression) chapter is for the UK A Lev
 
 ## The marks students lose most often
 
-- **Poisson:** doubling the probability instead of the mean (if \(P(\text{none in 10 m}) = 0.449\), the probability for 20 m is not \(0.898\)); forgetting the continuity correction; dividing by \(\lambda\) instead of \(\sqrt\lambda\) when standardising.
+- **Poisson:** doubling the probability instead of the mean (if \(P(\text{none in 10 m}) = 0.449\), the probability for 20 m is not \(0.898\): the mean doubles, so \(P(\text{none in 20 m}) = e^{-2\lambda}\); from \(e^{-\lambda} = 0.449\) get \(\lambda = 0.8\), then \(2\lambda = 1.6\) and \(P = e^{-1.6} = 0.202\)); forgetting the continuity correction; dividing by \(\lambda\) instead of \(\sqrt\lambda\) when standardising.
 - **Linear combinations:** \(\mathrm{Var}(3X - 2) = 9\,\mathrm{Var}(X)\), not \(3\,\mathrm{Var}(X) - 2\); confusing two independent items \(X_1 + X_2\) (variance \(2\sigma^2\)) with one item doubled \(2X\) (variance \(4\sigma^2\)); calling \(2X\) or \(X - Y\) Poisson.
 - **Continuous random variables:** forgetting to subtract \([E(X)]^2\) for the variance; substituting "infinity" without writing a limit.
 - **Sampling:** the standard deviation of \(\bar X\) is \(\sigma/\sqrt n\); using \(\sigma/n\) or \(\sigma^2/n\) in the standardisation; saying "95% of the data" or "95% probability the mean is in this interval".

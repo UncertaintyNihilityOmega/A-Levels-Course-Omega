@@ -55,8 +55,9 @@ Put \(x = 1\): \(5 = 5A\), so \(A = 1\). [A1]
 Put \(x = -4\): \(5 = -5B\), so \(B = -1\). [A1]
 The answer is \(\dfrac{1}{x - 1} - \dfrac{1}{x + 4}\).
 Q: [4 marks] (#math.p3.partial) ★★ Expand \((1 + 2x)^{-1/2}\) in ascending powers of \(x\), up to and including the term in \(x^2\), and state the set of values of \(x\) for which the expansion is valid.
-A: Use \((1 + u)^{-1/2} = 1 - \tfrac12 u + \tfrac38 u^2 - \cdots\) with \(u = 2x\): [M1]
+A: Use \((1 + u)^{-1/2} = 1 - \tfrac12 u + \tfrac38 u^2 - \cdots\) (the \(u^2\) coefficient is \(\dfrac{(-\frac12)(-\frac32)}{2!} = \tfrac38\)) with \(u = 2x\): [M1]
 \[ 1 - \tfrac12(2x) + \tfrac38(2x)^2 = 1 - x + \tfrac32 x^2 \]
+(\(\tfrac38 \times (2x)^2 = \tfrac38 \times 4x^2 = \tfrac32 x^2\))
 [A1] [A1] The expansion is valid for \(|2x| < 1\), that is \(|x| < \tfrac12\). [B1]
 Q: [3 marks] (#math.p3.diff) ★★ Find the \(x\)-coordinates of the stationary points of the curve \(y = x^2 e^{-x}\).
 A: Use the product rule: \(\dfrac{dy}{dx} = 2xe^{-x} - x^2e^{-x}\). [M1]
@@ -69,9 +70,10 @@ A: Use the quotient rule: \(\dfrac{dy}{dx} = \dfrac{2x(x - 2) - (x^2 + 1)}{(x - 
 Q: [5 marks] (#math.p3.trig) ★★ Solve the equation \(2\cos 2\theta + 3\sin\theta = 1\) for \(0^\circ \le \theta \le 360^\circ\).
 A: Use \(\cos 2\theta = 1 - 2\sin^2\theta\): [M1]
 \[ \begin{aligned} 2 - 4\sin^2\theta + 3\sin\theta &= 1 \\ 4\sin^2\theta - 3\sin\theta - 1 &= 0 \end{aligned} \]
+(subtract 1 from both sides, then multiply every term by \(-1\))
 [A1] Factorise: \((4\sin\theta + 1)(\sin\theta - 1) = 0\), so \(\sin\theta = -\tfrac14\) or \(\sin\theta = 1\). [M1]
 \(\sin\theta = 1\) gives \(\theta = 90^\circ\). [A1]
-\(\sin\theta = -\tfrac14\) gives \(\theta = 194.5^\circ\) or \(345.5^\circ\). [A1]
+\(\sin\theta = -\tfrac14\) gives \(\theta = 194.5^\circ\) or \(345.5^\circ\): the reference angle is \(14.5^\circ\), and sine is negative in the third and fourth quadrants, so \(180^\circ + 14.5^\circ\) and \(360^\circ - 14.5^\circ\). [A1]
 Q: [3 marks] (#math.p3.integ) ★★ Find the exact value of \(\displaystyle\int_0^{\pi/2}\sin^2x\,dx\).
 A: Use \(\sin^2x = \tfrac12(1 - \cos 2x)\): [M1]
 \[ \int_0^{\pi/2}\tfrac12(1 - \cos 2x)\,dx = \Big[\tfrac12 x - \tfrac14\sin 2x\Big]_0^{\pi/2} \]
@@ -90,17 +92,17 @@ A: Multiply the numerator and denominator by the conjugate \(1 + i\): [M1]
 \[ \frac{(2 + 3i)(1 + i)}{(1 - i)(1 + i)} = \frac{2 + 2i + 3i - 3}{2} \]
 [A1] \(= -\tfrac12 + \tfrac52 i\). [A1]
 Q: [4 marks] (#math.p3.vectors) ★★ The points \(A\), \(B\) and \(C\) have position vectors \(2\mathbf{i} + \mathbf{j} - \mathbf{k}\), \(4\mathbf{i} - \mathbf{j}\) and \(3\mathbf{i} + 3\mathbf{j} + \mathbf{k}\). Find angle \(ABC\).
-A: \(\overrightarrow{BA} = (-2, 2, -1)\) and \(\overrightarrow{BC} = (-1, 4, 1)\). [M1]
+A: The angle at \(B\) is between the two vectors that start at \(B\), \(\overrightarrow{BA}\) and \(\overrightarrow{BC}\), with \(\overrightarrow{BA} = \mathbf{a} - \mathbf{b}\) (and similarly \(\overrightarrow{BC} = \mathbf{c} - \mathbf{b}\)). Here \(\overrightarrow{BA} = (-2, 2, -1)\) and \(\overrightarrow{BC} = (-1, 4, 1)\). [M1]
 \(\overrightarrow{BA}\cdot\overrightarrow{BC} = 2 + 8 - 1 = 9\). [M1] [A1]
 The magnitudes are \(|\overrightarrow{BA}| = 3\) and \(|\overrightarrow{BC}| = \sqrt{18}\), so \(\cos ABC = \dfrac{9}{3\sqrt{18}} = \dfrac{1}{\sqrt2}\) and angle \(ABC = 45^\circ\). [A1]
 Q: [4 marks] (#math.p3.diffeq) ★★ Solve the differential equation \(\dfrac{dy}{dx} = 2xy\) given that \(y = 3\) when \(x = 0\).
 A: Separate the variables: \(\displaystyle\int\frac{1}{y}\,dy = \int 2x\,dx\). [M1]
 \(\ln y = x^2 + c\). [A1]
 When \(x = 0\), \(y = 3\): \(c = \ln 3\). [M1]
-So \(\ln y = x^2 + \ln 3\), that is \(y = 3e^{x^2}\). [A1]
+So \(\ln y = x^2 + \ln 3\), that is \(y = e^{x^2 + \ln 3} = e^{x^2} \times e^{\ln 3} = 3e^{x^2}\). [A1]
 Q: [3 marks] (#math.p3.numerical) ★★ The iterative formula \(x_{n+1} = \sqrt[3]{7 - x_n}\) is used to find a root of \(x^3 + x - 7 = 0\). Starting with \(x_1 = 1.5\), find the root correct to 3 significant figures, giving each iterate to 4 decimal places.
 A: \(x_2 = \sqrt[3]{5.5} = 1.7652\), \(x_3 = 1.7363\), \(x_4 = 1.7395\). [M1] [A1]
-\(x_5 = 1.7392\) and the values have settled, so the root is 1.74. [A1]
+\(x_5 = 1.7392\). \(x_3\), \(x_4\) and \(x_5\) all round to 1.74, so the root is 1.74 to 3 s.f. [A1]
 Q: [3 marks] (#math.p3.inttech) ★★ Find the exact value of \(\displaystyle\int_0^1\frac{x}{x^2 + 1}\,dx\).
 A: The numerator is half the derivative of the denominator, so the integral has the form \(\dfrac{f'(x)}{f(x)}\): [M1]
 \[ \int_0^1\frac{x}{x^2 + 1}\,dx = \Big[\tfrac12\ln(x^2 + 1)\Big]_0^1 \]
@@ -120,16 +122,16 @@ A: With \(u = x + 1\), \(x = u - 1\) and \(du = dx\). [B1]
 When \(x = 0\), \(u = 1\); when \(x = 3\), \(u = 4\). The integrand becomes \((u - 1)\sqrt{u}\). [M1]
 \[ \int_1^4 \big(u^{3/2} - u^{1/2}\big)\,du \]
 [A1] \(= \Big[\tfrac25 u^{5/2} - \tfrac23 u^{3/2}\Big]_1^4\). [M1] [A1]
-\[ \begin{aligned} &\Big(\tfrac{64}{5} - \tfrac{16}{3}\Big) - \Big(\tfrac25 - \tfrac23\Big) \\ &= \tfrac{112}{15} + \tfrac{4}{15} = \tfrac{116}{15} \end{aligned} \]
+\[ \begin{aligned} &\Big(\tfrac{64}{5} - \tfrac{16}{3}\Big) - \Big(\tfrac25 - \tfrac23\Big) \\ &\tfrac{64}{5} - \tfrac{16}{3} = \tfrac{192 - 80}{15} = \tfrac{112}{15} \quad\text{and}\quad \tfrac25 - \tfrac23 = \tfrac{6 - 10}{15} = -\tfrac{4}{15} \\ &= \tfrac{112}{15} + \tfrac{4}{15} = \tfrac{116}{15} \end{aligned} \]
 [A1]
 Q: [4 marks] (#math.p3.complex) ★★★ Solve the equation \(z^2 = 5 - 12i\), giving your answers in the form \(a + bi\).
 A: Let \(z = x + iy\). Then \(z^2 = x^2 - y^2 + 2xyi\), so \(x^2 - y^2 = 5\) and \(2xy = -12\). [M1] [A1]
-From the second equation \(y = -\dfrac{6}{x}\). Substituting: \(x^4 - 5x^2 - 36 = 0\), so \((x^2 - 9)(x^2 + 4) = 0\). [M1]
+From the second equation \(y = -\dfrac{6}{x}\). Substituting into \(x^2 - y^2 = 5\) gives \(x^2 - \dfrac{36}{x^2} = 5\); multiply every term by \(x^2\): \(x^4 - 36 = 5x^2\), that is \(x^4 - 5x^2 - 36 = 0\), so \((x^2 - 9)(x^2 + 4) = 0\). [M1]
 For real \(x\), \(x^2 = 9\), so \(x = \pm 3\) and \(y = \mp 2\): \(z = 3 - 2i\) or \(z = -3 + 2i\). [A1]
 Q: [6 marks] (#math.p3.diffeq) ★★★ A cup of tea cools in a room at 20 °C. Its temperature \(\theta\) °C at time \(t\) minutes satisfies \(\dfrac{d\theta}{dt} = -k(\theta - 20)\), where \(k\) is a positive constant. Initially \(\theta = 100\), and after 10 minutes \(\theta = 60\). Find the temperature after 20 minutes.
 A: Separate the variables: \(\displaystyle\int\frac{1}{\theta - 20}\,d\theta = -k\int dt\). [M1]
 \(\ln(\theta - 20) = -kt + c\). [A1]
-When \(t = 0\), \(\theta - 20 = 80\), so \(\theta - 20 = 80e^{-kt}\). [A1]
+When \(t = 0\), \(\theta - 20 = 80\), so \(c = \ln 80\) and \(\ln(\theta - 20) = -kt + \ln 80\), which gives \(\theta - 20 = 80e^{-kt}\). [A1]
 When \(t = 10\): \(40 = 80e^{-10k}\), so \(e^{-10k} = \tfrac12\). [M1] [A1]
 At \(t = 20\): \(\theta - 20 = 80\big(e^{-10k}\big)^2 = 80 \times \tfrac14 = 20\), so \(\theta = 40\) °C. [A1]
 Q: [5 marks] (#math.p3.diff) ★★★ A curve has parametric equations \(x = t^2\), \(y = t^3 - 3t\). The tangent to the curve at the point where \(t = 2\) meets the \(y\)-axis at the point \(P\). Find the coordinates of \(P\).
