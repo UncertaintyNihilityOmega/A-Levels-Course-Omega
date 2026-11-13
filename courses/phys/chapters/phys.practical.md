@@ -176,7 +176,7 @@ A table is marked on a short list of rules, and each is easy to satisfy.
 1. The heading \(t_1\) s has no slash: it must be \(t_1\) / s. [B1]
 2. The heading \(T\) has no unit: it must be \(T\) / s. [B1]
 3. The lengths \(0.3\), \(0.4\), \(0.5\) are given to 0.1 m, but a millimetre rule reads to 0.001 m: they should be \(0.300\), \(0.400\), \(0.500\). [B1]
-4. In the \(t_2\) column, \(28.3\) has one decimal place while the others have two: it should be \(28.27\) (the reading as taken). [B1]
+4. In the \(t_2\) column, \(28.3\) is missing a decimal place: every other time in the table has two, so the last place of a raw reading must not be dropped. The reading as taken was \(28.27\,\mathrm{s}\), as the corrected table below shows. [B1]
 5. The \(T^2\) values have 2 significant figures, but the times have 4, so \(T^2\) should be given to 4 (or 5) significant figures: \(1.210\), \(1.610\), \(2.011\). [B1]
 :::
 
@@ -375,7 +375,7 @@ In Question 2 the method is deliberately poor, and you must find the faults and 
 | 0.700 | 33.50 | 33.66 | 33.58 | 1.679 | 2.819 |
 | 0.800 | 36.01 | 35.87 | 35.94 | 1.797 | 3.229 |
 
-Headings are quantity / unit, all raw values keep two decimal places, and the calculated values have 4 s.f. [B1] [B1] [B1]
+(\(\langle t\rangle\) means the mean of \(t_1\) and \(t_2\).) Headings are quantity / unit, all raw values keep two decimal places, and the calculated values have 4 s.f. [B1] [B1] [B1]
 
 **The graph**: \(T^2\) / s² on the \(y\)-axis against \(l\) / m on the \(x\)-axis, scales of \(0.1\,\mathrm{m}\) and \(0.5\,\mathrm{s^2}\) per large square from zero, so the points fill at least half the grid in each direction (here the origin is wanted on the grid, to see whether the line passes through it). Six crosses, and a thin best-fit line with the points balanced about it. [B1] [B1] [B1]
 

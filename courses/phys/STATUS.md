@@ -1,6 +1,6 @@
 # STATUS: Physics
 
-Last: 2026-11-13 · FIX · READER phys.dc to phys.quantum: 28 items closed. dc: symbol caption, potentiometer bridge, standard cell, divider example, cell question wording. thermo: isothermal caption, p dV step. oscillations: spring constant link, check that sine solves a=-w2x, graph units. efields: Coulomb units in N m2 C-2 (farad deferred), integral and derivative glosses, 800 V plates stated, deflection lab now measures the screen deflection Y = V L (L+2s)/(4 d Va) with gradient 8.5e-5 m/V (checks recomputed), electron gun described. capacitance, magnetic, induction, ac, quantum: bridges and glosses.
+Last: 2026-11-13 · FIX · READER phys.nuclear to phys.mixed.a2: 26 items closed; paper facts from the June 2025 front pages of 9702/12, 22, 42, 52; Set C transformer part replaced (not a 9702 outcome); mark-code key in phys.f.basics
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

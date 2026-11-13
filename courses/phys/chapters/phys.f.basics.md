@@ -163,6 +163,10 @@ Distance in the first stage is the area of the triangle: \(\tfrac12 \times 6.0 \
 Distance in the second stage is a rectangle: \(12 \times 10 = 120\,\mathrm{m}\). Total \(= 36 + 120 = 156\,\mathrm{m}\), or \(1.6 \times 10^{2}\,\mathrm{m}\) to 2 s.f. [A1]
 :::
 
+:::tip What the marks in square brackets mean
+The tags such as [C1] and [A1] after the lines of a worked answer show how an examiner would give the marks, and every chapter uses them. **C1**: a correct formula or substitution. **A1**: the correct final answer, with its unit. **B1**: an independent mark for a correct statement or reason. **M1**: a method mark for a correct step in a "show that" answer or a derivation. In the bus example, the formula with the numbers in it earns C1 and the acceleration with its unit earns A1. [Exam technique for structured questions](#phys.exam.p24) explains the marks in full.
+:::
+
 :::warn Reading a graph
 - Read the scale on each axis: one small square is rarely one unit.
 - A **steeper** line has a **larger** gradient, but only if both graphs use the same scales.

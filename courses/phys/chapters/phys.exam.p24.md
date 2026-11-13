@@ -18,6 +18,10 @@ Structured papers are won by method as much as by knowledge. The same physics is
 | Title | AS Level Structured Questions | A Level Structured Questions |
 | Time | 1 hour 15 minutes (75 minutes) | 2 hours (120 minutes) |
 | Marks | 60 | 100 |
+| Questions | 7 numbered questions, each with its own mark total (10, 8, 8, 8, 7, 10 and 9 in June 2025) | 10 numbered questions (June 2025 totals from 8 to 13 marks) |
+| Compulsory | yes: "Answer all questions" | yes: "Answer all questions" |
+| Where you write | on the question paper, in the space provided under each part | on the question paper, in the space provided under each part |
+| Calculator | allowed ("You may use a calculator") | allowed ("You may use a calculator") |
 | Content | AS content | A Level content; AS knowledge required |
 | Weighting | 46% of AS, 23% of A Level | 38.5% of A Level |
 | Assessment objectives | AO1 and AO2, 50% each | AO1 and AO2, 50% each |

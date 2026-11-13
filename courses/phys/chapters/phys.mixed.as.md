@@ -3,7 +3,7 @@
 @level ref
 @paper CAIE P1 · P2 (AS)
 @time 6–8 hours
-@summary Fifteen multiple-choice questions and eighteen structured questions that mix every AS topic, from units to particle physics, each with a full mark scheme and a link back to the chapter to revise.
+@summary Fifteen multiple-choice questions and nineteen structured questions that mix every AS topic, from units to particle physics, each with a full mark scheme and a link back to the chapter to revise.
 
 In an exam the topics do not come in chapter order. One question on a car braking needs kinematics, energy and forces together, and one on a wire needs materials and waves. This page gives you that mix: first fifteen Paper 1-style multiple-choice questions, then four sets of structured questions in the style of Paper 2. They are practice, not a mock paper: there is no fixed total and no clock until you choose to use one.
 

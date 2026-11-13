@@ -164,8 +164,7 @@ eq("C5 half E0", sf(E0 / 2, 2), 16)
 eq("C5 quarter P", sf(P5 / 4, 2), 8.2)
 
 # C6 transformer and smoothing
-Ns = 920 * 12 / 230
-eq("C6 Ns", Ns, 48, 1e-9)
+# part (a) is now a qualitative answer (a transformer needs a changing flux): nothing to recompute
 V06 = sqrt(2) * 12
 eq("C6 V0", sf(V06, 2), 17)
 eq("C6 V0 3", sf(V06, 3), 17.0)

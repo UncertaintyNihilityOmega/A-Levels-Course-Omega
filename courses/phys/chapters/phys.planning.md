@@ -105,7 +105,7 @@ The best way to learn planning is to see a complete answer built mark point by m
 **Defining the problem**
 - The independent variable is the radius \(r\) of the sphere. [B1]
 - The dependent variable is the terminal speed \(v\). [B1]
-- Keep constant: the oil and its temperature (the viscosity changes with temperature), the material of the spheres (the same density), and the cylinder. [B1]
+- Keep constant: the oil and its temperature (the viscosity, how strongly the oil resists flow, changes with temperature: warmer oil is runnier), the material of the spheres (the same density), and the cylinder. [B1]
 
 **Methods of data collection**
 - Use the arrangement in the diagram: a tall cylinder of oil, two marks A and B a distance \(s\) apart low in the oil, and a rule beside it. [B1]
@@ -268,7 +268,7 @@ The gradient is \(2.48 \pm 0.13\). [A1]
 The percentage uncertainty is \(\dfrac{0.13}{2.48} \times 100\% = 5.2\%\). [A1]
 :::
 
-The widget below does this for a real data set. Switch between the three graphs to see how the same data look when linearised in different ways, and edit a value to see how the worst acceptable line (dashed) and the gradient uncertainty react. If no line can pass through all the error bars, it says so: either the error bars are too small, or the relationship is not a straight line. The widget computes its best-fit line by least squares and finds the steepest line exactly, so for these data it gives gradients of \(-0.0399\) and \(-0.0417\,\mathrm{s^{-1}}\), where the lines drawn by hand in the next section give \(-0.0400\) and \(-0.0416\,\mathrm{s^{-1}}\). A difference in the third significant figure is normal: two careful students never draw exactly the same line by eye.
+The widget below does this for a real data set: the capacitor discharge of the next section, "A full Question 2", which gives the p.d. \(V\) across the capacitor at six times \(t\) with an uncertainty of 0.1 V in each. Its three graphs are \(V\) against \(t\), \(\lg V\) against \(\lg t\) and \(\ln V\) against \(t\). Switch between the three graphs to see how the same data look when linearised in different ways, and edit a value to see how the worst acceptable line (dashed) and the gradient uncertainty react. If no line can pass through all the error bars, it says so: either the error bars are too small, or the relationship is not a straight line. The widget computes its best-fit line by least squares and finds the steepest line exactly, so for these data it gives gradients of \(-0.0399\) and \(-0.0417\,\mathrm{s^{-1}}\), where the lines drawn by hand in the next section give \(-0.0400\) and \(-0.0416\,\mathrm{s^{-1}}\). A difference in the third significant figure is normal: two careful students never draw exactly the same line by eye.
 
 :::html
 <div class="widget" data-w="phys-bestfit" data-preset="discharge"></div>

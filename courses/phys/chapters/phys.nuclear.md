@@ -31,7 +31,7 @@ In 1905 Einstein showed that mass and energy are two forms of one conserved quan
 
 In a chemical reaction the mass change is far too small to measure. Burning 1 kg of coal releases about \(3.0 \times 10^{7}\,\mathrm{J}\), a change of mass of \(3.0 \times 10^{7}/(3.00 \times 10^{8})^2 = 3.3 \times 10^{-10}\,\mathrm{kg}\). In a nuclear reaction the change is large enough to detect: it is the reason nuclear energy is so concentrated.
 
-Mass and energy are conserved together. In a nuclear reaction the total rest mass of the products is slightly less than that of the reactants, and the difference appears as kinetic energy of the products (and as gamma photons). Mass and energy are not separate things that happen to be swapped: the mass really is the energy.
+Mass and energy are conserved together. In a nuclear reaction the total rest mass of the products (the mass of a body measured when it is at rest, the mass used in this chapter) is slightly less than that of the reactants, and the difference appears as kinetic energy of the products (and as gamma photons). Mass and energy are not separate things that happen to be swapped: the mass really is the energy.
 
 :::eg Calculate the energy equivalent of 1 u in joules and in MeV, using the data-sheet values.
 \(E = mc^2 = 1.66 \times 10^{-27} \times (3.00 \times 10^{8})^2\) [C1] \(= 1.494 \times 10^{-10}\,\mathrm{J}\). [A1]
@@ -123,7 +123,7 @@ If you plot the binding energy per nucleon for every nucleus, a pattern emerges.
 - A nucleus with a larger binding energy per nucleon is more stable.
 :::
 
-The curve falls on the right because a heavy nucleus has many protons, whose electrostatic repulsion works against the short-range attraction that binds the nucleons. It is low on the left because a light nucleus has most of its nucleons at the surface, where they have few neighbours to be attracted to.
+The curve falls on the right because a heavy nucleus has many protons, whose electrostatic repulsion works against the short-range attraction that binds the nucleons. The nucleons attract each other by the **strong nuclear force**, which acts only over about the size of a nucleus, while the repulsion between protons acts over longer distances. The curve is also low on the left because a light nucleus has most of its nucleons at the surface, where they have few neighbours to be attracted to.
 
 ## Fusion and fission
 
@@ -253,7 +253,7 @@ So \(\ln 2 = \lambda t_{1/2}\), and since \(\ln 2 = 0.693\), \(\lambda = \dfrac{
 A large decay constant means a short half-life. Keep the units consistent: if \(t_{1/2}\) is in hours, \(\lambda\) is in \(\mathrm{h^{-1}}\). Convert to seconds when you need an activity in becquerel.
 :::
 
-:::plot The activity of a sample of iodine-131 (half-life 8.0 days). Equal fractions fall away in equal times: the activity halves every 8.0 days.
+:::plot The activity of a sample of iodine-131 (half-life 8.0 days) with an initial activity of 40 MBq. Equal fractions fall away in equal times: the activity halves every 8.0 days.
 --f "40*exp(-0.0866*x)+0*sqrt(33-x)" --x 0 38 --y 0 50 --pt "8,20,20 MBq@ne" --pt "16,10,10 MBq@ne" --pt "24,5,5 MBq@ne" --xlabel "t / days" --ylabel "A / MBq" --xstep 8
 :::
 
@@ -261,7 +261,7 @@ The decay curve is useful, but a straight line is easier to analyse. Take natura
 \[\ln A = \ln A_0 - \lambda t\]
 A graph of \(\ln A\) (or \(\ln N\), or \(\ln C\)) against \(t\) is a **straight line with gradient \(-\lambda\)** and \(y\)-intercept \(\ln A_0\). This is the standard way to find a decay constant from data (see [Planning, analysis and evaluation](#phys.planning)).
 
-:::plot The same data plotted as ln A against t is a straight line. The gradient is −λ and the y-intercept is ln A₀.
+:::plot The same data plotted as ln A against t is a straight line. The gradient is −λ and the y-intercept is ln A₀ = ln 40 = 3.69.
 --f "3.689-0.0866*x+0*sqrt(32-x)" --x 0 37 --y 0 5.2 --pt "0,3.689,ln A₀ = 3.69@ne" --xlabel "t / days" --ylabel "ln (A / MBq)" --xstep 8
 :::
 
@@ -372,7 +372,7 @@ Q: [6 marks] ★★★ The count rate from a radioactive source is measured with
 H: Subtract the background from every reading before taking logarithms.
 H: The gradient of the line is \(-\lambda\); use \(\ln C = \ln C_0 - \lambda t\) between two points.
 A: (a) The corrected rate follows \(C = C_0 e^{-\lambda t}\), [B1] so \(\ln C = \ln C_0 - \lambda t\), which has the form \(y = mx + c\) with gradient \(-\lambda\). [B1] (b) Corrected rates: \(544 - 24 = 520\) and \(152 - 24 = 128\) counts per minute. [B1] \(\lambda = \dfrac{\ln(520/128)}{5.0}\) [C1] \(= 0.28\,\mathrm{min^{-1}}\). [A1] (c) \(t_{1/2} = \dfrac{0.693}{0.28} = 2.5\) minutes. [A1]
-Q: [5 marks] ★★★ Technetium-99m, used as a tracer in hospitals, has a half-life of 6.0 hours. A dose is prepared with an activity of 350 MBq, and the patient is injected 9.0 hours later. (a) Calculate the activity of the dose when it is injected. (b) Suggest one reason why a short half-life suits a medical tracer, and one reason why it should not be much shorter than a few hours.
+Q: [5 marks] ★★★ Technetium-99m, used as a tracer in hospitals, has a half-life of 6.0 hours. (A tracer is a radioactive substance put into the body so that its radiation can be detected; the m means the nucleus is in a long-lived excited state that decays by emitting gamma rays.) A dose is prepared with an activity of 350 MBq, and the patient is injected 9.0 hours later. (a) Calculate the activity of the dose when it is injected. (b) Suggest one reason why a short half-life suits a medical tracer, and one reason why it should not be much shorter than a few hours.
 H: First find \(\lambda\) in \(\mathrm{h^{-1}}\), then use \(A = A_0 e^{-\lambda t}\).
 A: (a) \(\lambda = \dfrac{0.693}{6.0} = 0.1155\,\mathrm{h^{-1}}\) [C1] and \(A = 350\,e^{-0.1155 \times 9.0}\) [C1] \(= 1.2 \times 10^{2}\,\mathrm{MBq}\). [A1] (b) A short half-life means the activity, and so the dose of radiation to the patient, falls quickly after the scan, so little radioactive material is left in the body. [B1] A half-life of a few hours is still long enough to prepare, transport and inject the dose and to carry out the scan. [B1]
 :::

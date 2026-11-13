@@ -89,7 +89,7 @@ This is why the pulse must be short and why the backing block matters: a long pu
 
 :::lab Measuring the speed of ultrasound by pulse-echo
 :::steps
-1. Place an ultrasound transmitter and receiver side by side facing a flat reflecting board, with a metre rule along the line to the board. Connect the receiver to an oscilloscope, triggered by the transmitter's pulse.
+1. Place an ultrasound transmitter and receiver side by side facing a flat reflecting board, with a metre rule along the line to the board. Connect the receiver to an oscilloscope, set so that the trace starts when the pulse is sent.
 2. Put the board at a measured distance \(d\) from the transmitter. Read the time \(t\) between the transmitted pulse and the echo on the oscilloscope screen, using a large number of divisions to keep the percentage uncertainty small.
 3. Repeat for at least six distances, from about 0.20 m to 1.50 m.
 4. Plot \(t\) (y-axis) against \(d\). Because \(t = 2d/v\), the graph is a straight line through the origin with gradient \(2/v\), so \(v = 2/\text{gradient}\).
@@ -114,6 +114,8 @@ How much of the pulse comes back from a boundary? That depends on how different 
 :::def Specific acoustic impedance
 The product of the density of a medium and the speed of sound in that medium: \(Z = \rho c\).
 :::
+
+Here \(c\) is the speed of sound in the medium, not the speed of light (the speed of light appears elsewhere in this chapter, in \(E = m_e c^2\) and \(hc/E\)).
 
 \(\rho\) is the density in \(\mathrm{kg\,m^{-3}}\) and \(c\) the speed of sound in \(\mathrm{m\,s^{-1}}\), so \(Z\) is in \(\mathrm{kg\,m^{-2}\,s^{-1}}\). A boundary between two media with the same \(Z\) reflects nothing: the pulse carries straight on. The bigger the difference between the two \(Z\) values, the more is reflected.
 
@@ -279,7 +281,7 @@ The attenuation coefficient depends on the material and on the photon energy. It
 The difference in the degree of blackening (brightness) between different regions of an image. A large difference in the intensities reaching the detector gives a high contrast.
 :::
 
-The contrast between two paths through the body is the ratio of the intensities that emerge along them.
+To put a number on the contrast between two paths through the body, this chapter uses the ratio of the intensities that emerge along them. A larger ratio means a bigger difference in blackening, so a higher contrast.
 
 :::eg A beam crosses a limb 10 cm thick. Along path A the beam meets only soft tissue (\(\mu = 30\,\mathrm{m^{-1}}\)). Along path B it crosses 3.0 cm of bone (\(\mu = 150\,\mathrm{m^{-1}}\)) and 7.0 cm of soft tissue. Compare the intensities that emerge, taking these as typical values.
 Path A: \(\dfrac{I_A}{I_0} = e^{-30 \times 0.100} = e^{-3.0}\) [C1] \(= 0.050\). [A1]
@@ -291,7 +293,7 @@ About 37 times more intensity emerges through soft tissue than along the bone pa
 Soft tissues have very similar values of \(\mu\), so an ordinary X-ray cannot separate one organ from another: the contrast is poor. There are three standard improvements.
 
 - **Contrast media.** The patient swallows a **barium meal** (barium has a large proton number, so a large \(\mu\)) so the stomach and intestines show up clearly, or is injected with an iodine compound that fills blood vessels. The medium has a much larger attenuation coefficient than the surrounding tissue, so the organ shows as a sharp shape.
-- **Choice of tube voltage.** A lower voltage gives a lower energy beam, where the \(\mu\) values of different tissues differ more, so the contrast improves. The price is a higher dose to the patient, because less of the beam gets through.
+- **Choice of tube voltage.** A lower voltage gives a lower energy beam, where the \(\mu\) values of different tissues differ more, so the contrast improves. The price is a higher dose to the patient, because less of the beam gets through (the **dose** is the amount of ionising radiation energy absorbed by the patient, and a larger dose means a larger risk of damage to cells), so the tube current or exposure time must be raised to get a usable image.
 - **Reducing scattered radiation.** A lead grid between patient and detector blocks X-rays that have been scattered sideways, which would otherwise blur the dark and light regions together.
 
 :::tip Contrast is not sharpness
@@ -392,7 +394,7 @@ The computer collects many thousands of such events. Each one marks a point on a
 
 ### Why the half-life must be short
 
-Fluorine-18 has a half-life of 110 minutes (6600 s). A short half-life matters in two ways. The tracer must give enough decays during the scan to build an image, so it cannot be too long-lived, and it must not stay radioactive in the patient for days, so the dose is limited. But it cannot be too short either, because the tracer is made in a cyclotron and must be delivered to the hospital and injected. A half-life of about two hours balances these needs.
+Fluorine-18 has a half-life of 110 minutes (6600 s). A short half-life matters in two ways. The tracer must give enough decays during the scan to build an image, so it cannot be too long-lived, and it must not stay radioactive in the patient for days, so the dose is limited. But it cannot be too short either, because the tracer is made in a particle accelerator near the hospital and must be delivered to the hospital and injected. A half-life of about two hours balances these needs.
 
 :::eg A patient is injected with a fluorine-18 tracer of activity 370 MBq. Calculate the decay constant of fluorine-18 and the activity 4.0 hours later. (Half-life of fluorine-18: 110 minutes.)
 \[\lambda = \frac{0.693}{t_{1/2}} = \frac{0.693}{110 \times 60} = 1.05 \times 10^{-4}\,\mathrm{s^{-1}}\] [C1]

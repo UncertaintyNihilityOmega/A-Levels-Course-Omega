@@ -13,6 +13,11 @@ Chapters state paper details only from this file.
 | 4 | A Level Structured Questions | 2 h | 100 | A Level content; AS knowledge required | – | 38.5% |
 | 5 | Planning, Analysis and Evaluation | 1 h 15 min | 30 | written; two compulsory 15-mark questions | – | 11.5% |
 
+Front pages (June 2025 question papers 9702/12, 22, 42, 52, checked Nov 13 2026):
+- Paper 1: "There are forty questions on this paper. Answer all questions." Answers on the multiple choice answer sheet; "You may use a calculator."; "Each correct answer will score one mark." (nothing about losing marks); rough working on the question paper.
+- Papers 2, 4, 5: "You must answer on the question paper." "Answer all questions." "You may use a calculator." "You should show all your working and use appropriate units." June 2025 had 7 questions (Paper 2), 10 (Paper 4), 2 (Paper 5).
+- Transformers are not a 9702 (2025–2027) outcome: 20.5 covers flux, flux linkage, Faraday's and Lenz's laws only.
+
 - Topics 1–11 are AS; topics 12–25 are A Level only. AS content is assumed knowledge for Papers 4 and 5.
 - Routes: AS only (Papers 1, 2, 3 in one series); staged A Level (AS in year 1, then Papers 4 and 5); A Level in one
   series (all five papers). AS grades a–e; A Level grades A*–E. Series: June and November (March in India only).

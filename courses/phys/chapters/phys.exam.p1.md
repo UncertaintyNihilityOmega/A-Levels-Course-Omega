@@ -17,6 +17,10 @@ Paper 1 is 40 four-option questions on the whole of AS Physics in 75 minutes, so
 |---|---|
 | Questions and marks | 40 questions, 40 marks (one mark each) |
 | Options | four per question, one correct |
+| Compulsory | yes: "Answer all questions" is the first instruction on the front page |
+| Answers | recorded in soft pencil on a separate multiple choice answer sheet; rough working goes on the question paper |
+| Calculator | allowed ("You may use a calculator") |
+| Marking | each correct answer scores one mark; the instructions take no marks away for a wrong answer, so a wrong answer scores the same as a blank |
 | Time | 1 hour 15 minutes |
 | Content | AS topics 1–11, which is every chapter up to [Particle physics](#phys.particles) |
 | Weighting | 31% of an AS qualification, 15.5% of an A Level |
@@ -338,7 +342,7 @@ Past Paper 1 questions are the best material once you have worked through the ch
 - \(2.0 \times 10^{2}\,\mathrm{W}\)
 + \(2.0 \times 10^{3}\,\mathrm{W}\)
 - \(7.8 \times 10^{3}\,\mathrm{W}\)
-> At steady speed the lifting force equals the weight, so \(P = Fv = mgv = 400 \times 9.81 \times 0.50 = 1.96 \times 10^{3}\,\mathrm{W}\), which is \(2.0 \times 10^{3}\,\mathrm{W}\) to 2 s.f. 50 W is the kinetic energy \(\tfrac12 mv^2\), which does not change at steady speed. \(2.0 \times 10^{2}\,\mathrm{W}\) is \(mv\), with \(g\) forgotten. \(7.8 \times 10^{3}\,\mathrm{W}\) divides by the speed. Revise [Work, energy and power](#phys.energy).
+> At steady speed the lifting force equals the weight, so \(P = Fv = mgv = 400 \times 9.81 \times 0.50 = 1.96 \times 10^{3}\,\mathrm{W}\), which is \(2.0 \times 10^{3}\,\mathrm{W}\) to 2 s.f. 50 is the value of \(\tfrac12 mv^2\) in joules, which is not a power and does not change at steady speed. \(2.0 \times 10^{2}\,\mathrm{W}\) is \(mv\), with \(g\) forgotten. \(7.8 \times 10^{3}\,\mathrm{W}\) divides by the speed. Revise [Work, energy and power](#phys.energy).
 
 ? A wire extends by \(x\) under a load \(F\). A second wire of the same material, with twice the length and twice the diameter, carries the same load. What is its extension?
 - \(x/4\)
@@ -359,7 +363,7 @@ Past Paper 1 questions are the best material once you have worked through the ch
 + 50 Hz
 - 75 Hz
 - 450 Hz
-> For a string fixed at both ends the \(n\)th harmonic has frequency \(nf_1\), so \(f_1 = 150/3 = 50\,\mathrm{Hz}\). 37.5 Hz treats the third harmonic as the third overtone (the fourth harmonic). 450 Hz multiplies instead of dividing. Revise [Superposition](#phys.superposition).
+> For a string fixed at both ends the \(n\)th harmonic has frequency \(nf_1\), so \(f_1 = 150/3 = 50\,\mathrm{Hz}\). 37.5 Hz divides by 4, as if the third harmonic were the fourth. 450 Hz multiplies instead of dividing. Revise [Superposition](#phys.superposition).
 
 ? A copper wire carries a steady current. Another copper wire carries the same current but has twice the diameter. How does the mean drift speed of the electrons in the second wire compare with that in the first?
 + one quarter
