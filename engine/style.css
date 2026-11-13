@@ -262,6 +262,11 @@ math { font-family: var(--f-math); font-size: 1.08em; }
 .prose code { font-family: var(--f-mono); font-size: .86em; background: var(--card); border: 1px solid var(--rule); border-radius: 5px; padding: .05em .35em; }
 .prose pre { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 14px 16px; overflow-x: auto; font-size: .88rem; line-height: 1.55; }
 .prose pre code { border: 0; padding: 0; background: none; font-size: inherit; }
+/* labelled code blocks (```pseudocode, ```python, ```output): the label sits above the box, like a callout label */
+.prose .code { margin: 1em 0; }
+.prose .code pre { margin: 4px 0 0; }
+.code-l { font-family: var(--f-ui); font-size: .82rem; font-weight: 800; letter-spacing: .005em; color: var(--ink-2); }
+.code-output pre { border-style: dashed; }
 .prose blockquote { margin: 1.2em 0; padding: .1em 0 .1em 1.1em; border-left: 3px solid var(--rule); color: var(--ink-2); }
 .prose hr { border: 0; border-top: 1px solid var(--rule); margin: 2.2em 0; }
 .prose img { border-radius: 8px; max-width: 100%; }

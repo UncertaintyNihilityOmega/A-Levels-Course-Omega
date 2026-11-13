@@ -181,6 +181,39 @@ function createRenderer(opts = {}) {
   const err = (msg) => st.errors.push(`[${st.chapter || '?'}] ${msg}`);
   const warn = (msg) => st.warnings.push(`[${st.chapter || '?'}] ${msg}`);
 
+  // code fences: ```pseudocode, ```python and ```output get a small visible label, so a beginner can tell them apart
+  // (```text and other fences stay plain). Checks: a printing Python block outside a question needs an ```output
+  // block after it; pseudocode uses ← and = (not <- or ==), as the Cambridge guide writes it.
+  const CODE_LABELS = { pseudocode: 'Pseudocode', python: 'Python', output: 'Output' };
+  st.inQuestion = 0;
+  const fenceLang = (t) => (t.info || '').trim().split(/\s+/)[0].toLowerCase();
+  const plainFence = md.renderer.rules.fence;
+  md.renderer.rules.fence = (tokens, i, o, env, self) => {
+    const lang = fenceLang(tokens[i]);
+    const label = CODE_LABELS[lang];
+    if (!label) return plainFence(tokens, i, o, env, self);
+    return `<div class="code code-${lang}"><div class="code-l">${label}</div><pre><code class="language-${lang}">${escapeHtml(tokens[i].content)}</code></pre></div>\n`;
+  };
+  md.core.ruler.push('zta_code_checks', (state) => {
+    const toks = state.tokens;
+    toks.forEach((t, i) => {
+      if (t.type !== 'fence') return;
+      const lang = fenceLang(t);
+      if (lang === 'python' && !st.inQuestion && /\bprint\s*\(/.test(t.content)) {
+        // an ```output block must come before the next ```python block or heading (a short lead-in sentence may sit between)
+        const stop = toks.slice(i + 1).find(x => x.type === 'heading_open' || (x.type === 'fence' && ['python', 'output'].includes(fenceLang(x))));
+        if (!stop || stop.type !== 'fence' || fenceLang(stop) !== 'output')
+          warn(`a \`\`\`python block that prints is not followed by an \`\`\`output block: "${t.content.trim().split('\n')[0].slice(0, 50)}"`);
+      }
+      if (lang === 'pseudocode') {
+        const code = t.content.split('\n').map(l => l.replace(/\/\/.*$/, '').replace(/"[^"]*"|'[^']*'/g, '""')).join('\n');
+        if (/<-/.test(code)) warn(`\`\`\`pseudocode uses "<-": Cambridge pseudocode assigns with ←`);
+        if (/==/.test(code)) warn(`\`\`\`pseudocode uses "==": Cambridge pseudocode compares with =`);
+      }
+    });
+  });
+  const inQuestion = (fn) => { st.inQuestion++; try { return fn(); } finally { st.inQuestion--; } };
+
   function renderMath(tex, display) {
     st.mathCount++;
     let out;
@@ -392,7 +425,7 @@ function createRenderer(opts = {}) {
           const marks = total ? `<span class="eg-m">${total} mark${total === 1 ? '' : 's'}</span>` : '';
           html = `<div class="eg"><div class="eg-h"><span class="eg-l">Worked example</span>${title ? `<span class="eg-t">${mdInline(title)}</span>` : ''}${marks}</div><div class="eg-b">${addMarks(processBlocks(inner))}</div></div>`;
         } else if (type === 'try' && /\bmock\b/.test(st.level)) {
-          html = `<div class="try try-mock"><div class="try-h"><span class="try-l">Question ${++st.qn}</span>${title ? `<span class="try-t">${mdInline(title)}</span>` : ''}</div>${renderTry(inner)}</div>`;
+          html = `<div class="try try-mock"><div class="try-h"><span class="try-l">Question ${++st.qn}</span>${title ? `<span class="try-t">${mdInline(title)}</span>` : ''}</div>${inQuestion(() => renderTry(inner))}</div>`;
         } else if (type === 'links') {
           html = renderLinks(inner, title);
         } else if (type === 'checklist') {
@@ -406,9 +439,9 @@ function createRenderer(opts = {}) {
           const badge = ex ? '' : `<span class="proof-badge">${escapeHtml(opts.proofBadge ? opts.proofBadge(st.subject) : 'Not examined')}</span>`;
           html = `<details class="proof${ex ? ' proof-ex' : ''}"><summary><span class="proof-l">Why it's true</span>${t ? `<span class="proof-t">${mdInline(t)}</span>` : ''}${badge}</summary><div class="proof-b">${addMarks(processBlocks(inner))}</div></details>`;
         } else if (type === 'try') {
-          html = `<div class="try"><div class="try-h"><span class="try-l">Try it yourself</span>${title ? `<span class="try-t">${mdInline(title)}</span>` : ''}</div>${renderTry(inner)}</div>`;
+          html = `<div class="try"><div class="try-h"><span class="try-l">Try it yourself</span>${title ? `<span class="try-t">${mdInline(title)}</span>` : ''}</div>${inQuestion(() => renderTry(inner))}</div>`;
         } else if (type === 'quiz') {
-          html = `<div class="quiz-wrap"><div class="quiz-h"><span class="quiz-l">Quick check</span>${title ? `<span class="quiz-t">${mdInline(title)}</span>` : ''}</div>${renderQuiz(inner)}</div>`;
+          html = `<div class="quiz-wrap"><div class="quiz-h"><span class="quiz-l">Quick check</span>${title ? `<span class="quiz-t">${mdInline(title)}</span>` : ''}</div>${inQuestion(() => renderQuiz(inner))}</div>`;
         } else if (type === 'html') {
           html = inner;
         } else if (type === 'plot') {
