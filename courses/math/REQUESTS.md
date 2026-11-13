@@ -33,3 +33,5 @@ Also changed by the Organizer (2026-10-03): COURSE.md v2 intro, Learn-more-onlin
     worked example against its `[n marks]`, and I fixed the 6 it found (f.powers, p1.integ, s1.prob ×2,
     s2.hypothesis, s2.sampling) plus marks written with notes inside the brackets (exam.skills, p1.diff).
     A binary minus after a closing bracket, "(x + 2) − 3", now gets its spacing back.
+- [x] 2026-11-13 · Compare math.s1.normal "Reading the table" with a real MF19 (it was described from third-party copies) · Organizer, ROADMAP note
+  - Organizer 2026-11-13: Compared with the real MF19 PDF the user supplied. The four sample rows, the ADD entry for 0.625, the reverse reading for p = 0.8, the nine critical values and the Φ(−z) rule all match. Added the table's range (rows 0.0 to 2.9, ends at Φ(2.99) = 0.9986) to the chapter and the table facts to FACTS.md.

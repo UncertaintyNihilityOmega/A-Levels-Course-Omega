@@ -7,8 +7,6 @@
   History section on the resources page). Its COURSE.md has the course rules; history in git.
 - Now: queue item 4, Reader pass. Mathematics done Nov 13 (7 READER batches, 169 items, all FIXed; check and strict
   build pass). Next: Physics (33 chapters, READER batches → FIX), guard on `phys`.
-- For a later math review: math.s1.normal "Reading the table" describes the MF19 normal table (4 d.p., ADD columns,
-  critical values 0.674 to 3.291) from memory and third-party copies: compare with a real MF19 PDF.
 - Nov 13 run: Physics READER done (4 batches, 109 items); FIX 1-2 done; FIX 3 (dc-quantum) and
   FIX 4 (nuclear-mixed.a2) running. phys.dc added to P5 (was in no package). User reset the limits Nov 13 13:35: normal gates; phys-preview (5102) allowed.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
@@ -45,10 +43,10 @@
 3. [x] **History** (`hist`, 9489; replaces Psychology, user's request 2026-11-07): gold chapter + `done LEAD` →
    packages → reviews → READER → FIX → REVIEW FINAL.
 4. [ ] **Reader pass** on Mathematics, then Physics (READER batches → FIX), as its own run.
-5. [ ] **Further Mathematics** (`math.fm.*`, an extension of the Maths course): LEAD for the extension
+5. [ ] **Computer Science** (`cs`, 9618). Before its LEAD: publish a GitHub release of the site (user, Nov 13).
+6. [ ] **Further Mathematics** (`math.fm.*`, an extension of the Maths course): LEAD for the extension
    (`courses/math/FURTHER.md`) → packages P19+ → reviews → READER for the new chapters → FIX → REVIEW FINAL.
    Before its LEAD, set math STATUS.md `FINAL` back to `open` and rewrite courses/math/COURSE.md as rules (30 KB).
-6. [ ] **Computer Science** (`cs`, 9618).
 7. [ ] **Engineering** (`eng`).
 8. [ ] **Economics** (`econ`), then **Business** (`bus`), then **Accounting** (`acc`): shared-topic owners in their COURSE.md.
 9. [ ] **Other subjects** (`other`), including the Psychology summary (`other.psychology`).

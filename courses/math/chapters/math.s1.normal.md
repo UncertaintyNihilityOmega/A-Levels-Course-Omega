@@ -59,7 +59,7 @@ The \(z\)-value says how many standard deviations a value is from the mean. Alwa
 
 ## Reading the table
 
-The normal table is printed in the formula list **MF19**, which you are given in every Paper 5 exam, so you do not need to learn it. It is headed "The normal distribution function" and gives \(\Phi(z)\) to 4 decimal places for \(z \ge 0\). Each row is a value of \(z\) to one decimal place (such as 0.6); the columns headed 0 to 9 give the second decimal place; and the **ADD** columns headed 1 to 9 give the third decimal place. Part of it looks like this (each entry is \(\Phi(z)\)):
+The normal table is printed in the formula list **MF19**, which you are given in every Paper 5 exam, so you do not need to learn it. It is headed "The normal distribution function" and gives \(\Phi(z)\) to 4 decimal places for \(z \ge 0\). Each row is a value of \(z\) to one decimal place, from 0.0 to 2.9, so the table ends at \(\Phi(2.99) = 0.9986\); the columns headed 0 to 9 give the second decimal place; and the **ADD** columns headed 1 to 9 give the third decimal place. Part of it looks like this (each entry is \(\Phi(z)\)):
 
 | \(z\) | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 |---|---|---|---|---|---|---|---|---|---|---|
