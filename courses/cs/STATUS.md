@@ -1,12 +1,12 @@
 # STATUS: Computer Science
 
-Last: 2026-11-13 · LEAD · 49 chapters in 22 packages (AS theory, AS programming, A Level theory and programming, Python for P4, 4 paper guides, 2 mixed, 4 mocks); FACTS from 2027-29 syllabus, pseudocode guide and June 2025 P1-P4 front pages + P2 insert; COURSE code rules and verified links; gold cs.datatypes (8,787 words, checks run every Python block and lint pseudocode)
+Last: 2026-11-13 · WRITE P1 · cs.overview (2.3k words) and cs.f.basics (8.8k words, 29 Python blocks run against their outputs); no widgets; Python 3.14 traceback layout shown, chapter says layouts vary; overview pace line is advice not a Cambridge fact
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
 - LEAD: done 2026-11-13
-- P1: open
-- P2: open
+- P1: written 2026-11-13
+- P2: writing 2026-11-13
 - P3: open
 - P4: open
 - P5: open
