@@ -95,3 +95,35 @@ Assumed: the practical step of separating (divide by g(y), multiply by dx) once 
 ## math.p3.vectors
 Taught: vector and scalar; column and i, j, k forms; magnitude and unit vector; parallel vectors; position vector; AB = b - a; midpoint; vector equation of a line; line through two points; intersecting, parallel and skew lines; scalar product and the angle between vectors or lines; foot of the perpendicular and shortest distance; axes on a cuboid or pyramid.
 Assumed: that r in r = a + tb is the position vector of a general point; that the direction vector of a moving point is its velocity and its magnitude the speed.
+
+## math.p3.complex
+Taught: i, complex number, real and imaginary part, Re and Im; adding, subtracting, multiplying; conjugate z*, dividing by multiplying by the conjugate; equating real and imaginary parts; quadratics with negative discriminant, conjugate pairs of roots of a real polynomial; Argand diagram, modulus, argument (principal value, quadrant adjustment); modulus-argument and exponential form; products and quotients in polar form (with proof); square roots of a complex number; loci |z - a| = k, |z - a| = |z - b|, arg(z - a) = alpha, shaded regions.
+Assumed: sqrt(-36) = 6i; what e^(i theta) means (Euler's formula, given as a fact); that conjugates respect sums, products, powers and quotients; how the third factor of a cubic is found by comparing coefficients; |z + 2i| as |z - (-2i)| and |x + iy - 1| written out in x and y; the power rule (re^(i theta))^n; why the furthest point of a circle from the origin is distance to centre plus radius.
+
+## math.s1.data
+Taught: discrete, continuous, grouped data; stem-and-leaf and back-to-back diagrams with a key; median, quartiles (median of each half), IQR, range, mode; five-number summary, box plot, outlier rule 1.5 x IQR; mean, variance and standard deviation by the formula with sum x and sum x^2 (and its proof), frequency tables, grouped data by midpoints, coded data, combining two data sets; histograms with frequency density; cumulative frequency graphs, median, quartiles, percentiles by interpolation; comparing data sets in context.
+Assumed: the sigma sign for "add up" and x bar; sigma as the symbol for standard deviation; the median rule for an even number of values; why the linear interpolation formula works.
+
+## math.s1.perms
+Taught: multiplication principle (and adding alternatives); factorial, 0! = 1; permutations nPr and combinations nCr (with proofs); arrangements with repeats n!/(p! q!); together, apart, at the ends; numbers from digits (even, odd, greater than); selections with "exactly", "at least", "must include" by cases or complement; seating in rows; counting probabilities.
+Assumed: nothing beyond GCSE and the factorial from math.p1.series (the 9 x 9 x 8 x 7 count of four-digit numbers with no repeated digit does not say why the second digit has 9 choices).
+
+## math.s1.prob
+Taught: event, sample space, equally likely outcomes, complement; union and intersection, P(A or B), Venn diagrams; mutually exclusive and independent events and the product test; tree diagrams with and without replacement; conditional probability P(A | B) and the multiplication rule (with proof); probabilities by counting with nCr.
+Assumed: the symbols n(A) and n(S) (recap only); that D stands for defective in the factory example.
+
+## math.s1.drv
+Taught: random variable, discrete, probability distribution table, sum of probabilities = 1; E(X), E(X^2), Var(X) = E(X^2) - [E(X)]^2; finding unknowns in a table; binomial B(n, p) conditions, P(X = r), mean np, variance npq (mean proof); "at least" by complement; smallest n using logarithms; geometric Geo(p), P(X = r), P(X > r), mean 1/p (proof); choosing between the models; commenting on the conditions.
+Assumed: the sigma sign (with limits in the proof); what the tilde in X ~ B(n, p) means; how cumulative binomial totals (P(X <= 6) etc.) are found on the calculator; logarithms from math.p3.logs (a student who has done only P1 has not met them).
+
+## math.s1.normal
+Taught: continuous random variable, density curve, P(X = a) = 0; N(mu, sigma^2) (second number is the variance); standardising Z = (X - mu)/sigma (with proof); Phi(z), Phi(-z) = 1 - Phi(z) (with proof); probabilities between and beyond values; comparing results by z-values; inverse normal and finding mu, sigma, or both from probabilities; normal approximation to B(n, p) when np > 5 and nq > 5, continuity correction (with proof); combining a normal probability with a binomial one.
+Assumed: how to read the normal table for z with three decimals (and where it is); where inverse-normal values such as 0.8416, 0.6745, 1.0364 come from; the notation Phi inverse; the algebra of subtracting two equations that have sigma in the denominator.
+
+## math.s2.poisson
+Taught: Poisson Po(lambda), its conditions (singly, independently, constant rate) and how they fail; P(X = r) = e^-lambda lambda^r / r!, mean = variance = lambda; step-by-step recurrence; "at most", "at least", "more than"; scaling the mean to another interval; Poisson approximation to B(n, p) when n > 50 and np < 5 (with proof); normal approximation N(lambda, lambda) when lambda > 15 with continuity correction; comparing a data set's mean and variance.
+Assumed: the series 1 + x + x^2/2! + ... = e^x; the limit (1 + x/n)^n -> e^x (called "standard"); how cumulative Poisson totals such as P(X <= 7) are found; sigma with limits (Stretch hint).
+
+## math.s2.linear
+Taught: E(aX + b) and Var(aX + b) (with proof); Var(X) = E[(X - mu)^2] = E(X^2) - mu^2 (proof); E and Var of aX + bY for independent X and Y, variances add for a difference (with proof); X1 + X2 versus 2X; sum of n independent observations; independent normals combine to a normal; steps for "total" and "difference" questions; sum of independent Poissons is Poisson, a difference or multiple is not; the mean of a sample (stretch).
+Assumed: E of an expression such as E[(X - mu)^2], and that E of a sum is the sum of the E's; the cumulative Poisson value P(X + Y <= 11); that the "lift" in Exam practice question 8 is the passengers' ferry lift.
