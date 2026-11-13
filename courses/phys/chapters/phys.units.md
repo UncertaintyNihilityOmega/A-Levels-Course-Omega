@@ -142,9 +142,9 @@ The square root of \(\mathrm{s^2}\) is s, so both sides have the unit s. [A1]
 :::key What homogeneity can and cannot tell you
 **It can** show that an equation is wrong: if the two sides have different base units, the equation cannot be correct. It can also find the unit of an unknown constant, and it can suggest the form of an equation.
 
-**It cannot** prove an equation is right. A homogeneous equation can still be false, because the test cannot see a number or a missing factor. The equation \(s = ut + at^2\) is homogeneous, but the true equation has \(\tfrac12 at^2\). The test also cannot see the difference between two quantities with the same unit, such as work and torque.
+**It cannot** prove an equation is right. A homogeneous equation can still be false, because the test cannot see a number or a missing factor. The equation \(s = ut + at^2\) is homogeneous, but the true equation has \(\tfrac12 at^2\). The test also cannot see the difference between two quantities with the same unit, such as kinetic energy \(\tfrac12 mv^2\) and gravitational potential energy \(mgh\): both are in joules, so the test cannot tell you which one belongs in an equation.
 
-Arguments of functions such as \(\sin\), \(\ln\) and \(e^x\) must have **no unit**, so in \(N = N_0 e^{-\lambda t}\) the product \(\lambda t\) must be a pure number.
+Arguments of functions such as \(\sin\), \(\ln\) and \(e^x\) must have **no unit**, so in \(N = N_0 e^{-\lambda t}\) (radioactive decay, met later: \(N\) is the number of undecayed nuclei, \(N_0\) the number at the start, \(\lambda\) the decay constant) the product \(\lambda t\) must be a pure number.
 :::
 
 :::eg The drag force on a car is modelled by \(F = kAv^2\), where \(A\) is the cross-sectional area of the car and \(v\) its speed. Find the base units of \(k\).
@@ -481,7 +481,17 @@ Two vectors are added **tip to tail**. Draw the first as an arrow. Start the sec
 A scale drawing works: choose a scale (say 1 cm for 10 N), draw with a ruler and protractor, and measure the resultant. Calculation is faster and more accurate:
 
 - **At 90°:** use Pythagoras for the size, \(R = \sqrt{a^{2} + b^{2}}\), and \(\tan\theta = b/a\) for the angle.
-- **At other angles:** use the **cosine rule** \(R^{2} = a^{2} + b^{2} - 2ab\cos C\), where \(C\) is the angle *inside the triangle* opposite \(R\), then the **sine rule** to find an angle. Or split each vector into components (below) and add the components.
+- **At other angles:** use the **cosine rule** for the size of the resultant, where the angle \(C\) is the angle *inside the triangle* opposite the resultant, then the **sine rule** to find an angle (both are stated in the box below). Or split each vector into components (below) and add the components.
+
+:::html
+<figure class="fig small"><svg viewBox="30 50 240 190" role="img" aria-label="A triangle with corners A at the bottom left, B at the bottom right and C at the top. Side a is opposite A, side b is opposite B and side c is opposite C."><path class="c1 sw2" d="M50 200H250L170 70Z"/><text class="tl tc" x="40" y="214">A</text><text class="tl tc" x="260" y="214">B</text><text class="tl tc" x="170" y="62">C</text><text class="tl tc" x="224" y="124">a</text><text class="tl tc" x="100" y="124">b</text><text class="tl tc" x="150" y="222">c</text></svg><figcaption>A triangle with sides a, b, c opposite the angles A, B, C. Side a is opposite angle A, and so on.</figcaption></figure>
+:::
+
+:::key The cosine rule and the sine rule
+For any triangle with sides \(a\), \(b\), \(c\) opposite the angles \(A\), \(B\), \(C\):
+\[c^{2} = a^{2} + b^{2} - 2ab\cos C \qquad\qquad \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}\]
+Use the **cosine rule** when you know two sides and the angle *between* them (it gives the third side). Use the **sine rule** when you know a side and the angle opposite it, plus one more side or angle. Worked line: for \(a = 5.0\), \(b = 7.0\) and \(C = 60^\circ\), \(c^{2} = 5.0^{2} + 7.0^{2} - 2 \times 5.0 \times 7.0 \times \cos 60^\circ = 39\), so \(c = 6.2\). Then \(\sin A = \dfrac{a \sin C}{c} = \dfrac{5.0 \sin 60^\circ}{6.245} = 0.693\), so \(A = 43.9^\circ\). Later chapters that need these rules point back to this box.
+:::
 
 :::html
 <figure class="fig wide"><svg viewBox="20 40 560 230" role="img" aria-label="Two vector triangles. Left: a 30 newton force along the horizontal then a 40 newton force upwards at 90 degrees, with the 50 newton resultant from the start to the end at 53.1 degrees. Right: a 30 newton force then a 40 newton force at 60 degrees to the first, with a 60.8 newton resultant at 34.7 degrees; the angle inside the triangle at the join is 120 degrees."><path class="c1" d="M50 210H170" marker-end="url(#ah-phys)"/><path class="c2" d="M170 210V50" marker-end="url(#ah2-phys)"/><path class="c3" d="M50 210L170 50" marker-end="url(#ahr)"/><path class="ln-m thin" d="M158 210V198H170"/><path class="ln-m thin" d="M86 210A36 36 0 0 0 71.6 181.2"/><text class="tl ti" x="90" y="196">θ</text><text class="tl tc ta" x="110" y="232">30 N</text><text class="tl ta2" x="182" y="135">40 N</text><text class="tl te tr" x="102" y="124">R = 50 N</text><text class="tl tc" x="110" y="262">(a) forces at 90°, θ = 53.1°</text><path class="c1" d="M330 210H450" marker-end="url(#ah-phys)"/><path class="c2" d="M450 210L530 71.4" marker-end="url(#ah2-phys)"/><path class="c3" d="M330 210L530 71.4" marker-end="url(#ahr)"/><path class="ln-m thin" d="M380 210A50 50 0 0 0 371.1 181.5"/><path class="ln-m thin" d="M422 210A28 28 0 0 1 464 185.8"/><text class="tl ti" x="386" y="198">θ</text><text class="tl tc" x="430" y="180">120°</text><text class="tl tc ta" x="390" y="232">30 N</text><text class="tl ta2" x="500" y="150">40 N</text><text class="tl te tr" x="418" y="128">R = 60.8 N</text><text class="tl tc" x="430" y="262">(b) forces 60° apart, θ = 34.7°</text></svg><figcaption>Vectors are added tip to tail. In (b) the forces act 60° apart when drawn from one point, so the angle inside the triangle at the join is 180° − 60° = 120°, the angle used in the cosine rule. The 30 N and 40 N forces add to less than 70 N because they do not point the same way.</figcaption></figure>
@@ -492,11 +502,11 @@ A scale drawing works: choose a scale (say 1 cm for 10 N), draw with a ruler and
 \[R = \sqrt{30^{2} + 40^{2}} = 50\,\mathrm{N}\] [C1]
 \[\theta = \tan^{-1}\frac{40}{30} = 53.1^\circ \text{ from the 30 N force}\] [A1]
 
-(b) Put the two forces tail to tail 60° apart. Drawn tip to tail, the angle inside the triangle between the two sides is \(180^\circ - 60^\circ = 120^\circ\). By the cosine rule
+(b) Put the two forces tail to tail 60° apart. Drawn tip to tail, the angle inside the triangle between the two sides is \(180^\circ - 60^\circ = 120^\circ\). By the cosine rule (the resultant \(R\) takes the place of \(c\), and \(C = 120^\circ\))
 \[R^{2} = 30^{2} + 40^{2} - 2 \times 30 \times 40 \times \cos 120^\circ = 900 + 1600 + 1200 = 3700\] [C1]
 so \(R = 60.8\,\mathrm{N}\). [A1]
 
-Sine rule for the angle \(\theta\) between \(R\) and the 30 N force: \(\dfrac{\sin\theta}{40} = \dfrac{\sin 120^\circ}{60.8}\), so \(\theta = 34.7^\circ\). [A1]
+Sine rule (the 40 N side is opposite \(\theta\), and \(R\) is opposite the \(120^\circ\) angle) for the angle \(\theta\) between \(R\) and the 30 N force: \(\dfrac{\sin\theta}{40} = \dfrac{\sin 120^\circ}{60.8}\), so \(\theta = 34.7^\circ\). [A1]
 
 **Check** by components: along the 30 N direction, \(30 + 40\cos 60^\circ = 50\,\mathrm{N}\); across, \(40\sin 60^\circ = 34.6\,\mathrm{N}\). Then \(\sqrt{50^{2} + 34.6^{2}} = 60.8\,\mathrm{N}\) and \(\tan^{-1}(34.6/50) = 34.7^\circ\). Same answer.
 :::
@@ -549,7 +559,7 @@ An optional tool for practising scale drawings and adding two vectors:
 :::
 
 :::exam Set out vector answers clearly
-In a vector question, state your positive direction, show the triangle or the components, and give a direction as well as a size in the final answer ("14 m s⁻¹ away from the wall", "53° above the horizontal", "bearing 010°"). A bare magnitude for a vector answer usually loses a mark.
+In a vector question, state your positive direction, show the triangle or the components, and give a direction as well as a size in the final answer ("14 m s⁻¹ away from the wall", "53° above the horizontal", "bearing 010°", where a **bearing** is the angle measured clockwise from north, written with three digits). A bare magnitude for a vector answer usually loses a mark.
 :::
 
 :::try Start easy, finish at exam standard
@@ -584,7 +594,7 @@ Q: [3 marks] ★★ A student measures the diameter of a wire with a micrometer 
 A: (a) A systematic error (every reading is too large by the same amount). [B1] (b) Subtract the zero error: \(0.62 - 0.04\) [C1] \(= 0.58\,\mathrm{mm}\). [A1]
 Q: [4 marks] ★★ A pendulum of length \(l = 0.800 \pm 0.002\,\mathrm{m}\) has period \(T = 1.79 \pm 0.02\,\mathrm{s}\). Calculate \(g\) from \(g = 4\pi^{2}l/T^{2}\) and its percentage uncertainty.
 A: \(g = \dfrac{4\pi^{2} \times 0.800}{1.79^{2}}\) [C1] \(= 9.86\,\mathrm{m\,s^{-2}}\). [A1] Percentage uncertainties: \(l\) is \(0.25\%\) and \(T\) is \(1.12\%\). [C1] The period is squared, so \(\dfrac{\Delta g}{g} = 0.25\% + 2 \times 1.12\% = 2.5\%\) (that is, \(\pm 0.2\,\mathrm{m\,s^{-2}}\)). [A1]
-Q: [5 marks] ★★ An aircraft has a velocity of \(220\,\mathrm{m\,s^{-1}}\) due north through the air. A wind of \(40\,\mathrm{m\,s^{-1}}\) blows towards the east. (a) Calculate the speed of the aircraft relative to the ground. (b) Calculate the bearing of its direction of travel relative to the ground. (c) Explain why the ground speed is not \(260\,\mathrm{m\,s^{-1}}\).
+Q: [5 marks] ★★ An aircraft has a velocity of \(220\,\mathrm{m\,s^{-1}}\) due north through the air. A wind of \(40\,\mathrm{m\,s^{-1}}\) blows towards the east. (a) Calculate the speed of the aircraft relative to the ground. (b) Calculate the bearing of its direction of travel relative to the ground (a bearing is the angle measured clockwise from north, written with three digits). (c) Explain why the ground speed is not \(260\,\mathrm{m\,s^{-1}}\).
 A: (a) The velocities are at 90°, so \(v = \sqrt{220^{2} + 40^{2}}\) [C1] \(= 224\,\mathrm{m\,s^{-1}}\). [A1] (b) \(\tan\theta = 40/220\) [C1] so \(\theta = 10.3^\circ\) east of north, a bearing of \(010^\circ\). [A1] (c) Velocities are vectors, so they add by geometry. They would only add to 260 if they were in the same direction. [B1]
 Q: [6 marks] (#phys.solids) ★★★ In an experiment a wire of length \(L = 2.000 \pm 0.005\,\mathrm{m}\) and diameter \(d = 0.60 \pm 0.01\,\mathrm{mm}\) is stretched by a force \(F = 50.0 \pm 0.5\,\mathrm{N}\) and extends by \(x = 1.80 \pm 0.05\,\mathrm{mm}\). The Young modulus is \(E = \dfrac{4FL}{\pi d^{2} x}\). Calculate \(E\) and its absolute uncertainty.
 H: Find the percentage uncertainty of each of the four measurements first.
@@ -671,7 +681,7 @@ A: (a) Thickness \(= 48.0/500 = 0.096\,\mathrm{mm}\). [A1] The number 500 is exa
 - [ ] I can distinguish systematic and random errors, including zero errors, and explain their effect on readings.
 - [ ] I can distinguish precision from accuracy.
 - [ ] I can find the uncertainty in a derived quantity by adding absolute or percentage uncertainties, and write the result with sensible figures.
-- [ ] I can distinguish scalars from vectors, add and subtract coplanar vectors, and resolve a vector into perpendicular components.
+- [ ] I can distinguish scalars from vectors, add and subtract vectors that lie in one plane, and resolve a vector into perpendicular components.
 :::
 
 :::recap

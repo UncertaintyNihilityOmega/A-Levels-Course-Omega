@@ -9,7 +9,7 @@
 Kinematics describes how things move; dynamics explains why. Every question about a car braking, a rocket launching, a skydiver falling or two snooker balls colliding comes down to the same few ideas: a resultant force changes momentum, and in a closed system momentum is never lost. Safety features such as crumple zones and airbags, and the design of every vehicle, are applications of exactly this chapter.
 :::
 
-**Before you start**, you need the suvat equations and velocity–time graphs from [Kinematics](#phys.kinematics), and resolving and adding vectors from [Physical quantities, units and uncertainty](#phys.units). The syllabus assumes you have met forces at IGCSE, so here is the two-sentence version. A **force** is a push or a pull, measured in newtons (N), and it has a size and a direction. The **resultant force** on an object is the single force that has the same effect as all the forces acting on it together.
+**Before you start**, you need the equations of uniformly accelerated motion and velocity–time graphs from [Kinematics](#phys.kinematics), and resolving and adding vectors from [Physical quantities, units and uncertainty](#phys.units). The syllabus assumes you have met forces at IGCSE, so here is the two-sentence version. A **force** is a push or a pull, measured in newtons (N), and it has a size and a direction. The **resultant force** on an object is the single force that has the same effect as all the forces acting on it together.
 
 :::try Warm-up
 Q: A car speeds up from \(5.0\,\mathrm{m\,s^{-1}}\) to \(20\,\mathrm{m\,s^{-1}}\) in \(6.0\,\mathrm{s}\). Find its acceleration. (from [Kinematics](#phys.kinematics))
@@ -28,7 +28,7 @@ Pick up a bowling ball and a beach ball of the same size. The bowling ball is mu
 The property of an object that resists changes in its motion.
 :::
 
-Mass is measured in kilograms and has no direction. It does not change when you move the object to the Moon, or into space. Weight is a different quantity altogether.
+This resistance to changes in motion is called **inertia**: the larger the mass, the larger the inertia, and the harder it is to start, stop or turn the object. Mass is measured in kilograms and has no direction. It does not change when you move the object to the Moon, or into space. Weight is a different quantity altogether.
 
 :::def Weight
 The force on a mass due to a gravitational field. Weight is a force, measured in newtons, and it acts towards the centre of the Earth (or whichever body is attracting the mass).
@@ -93,6 +93,8 @@ Forces always come in **pairs** like this. When you push on a wall, the wall pus
 - the two forces act on **different bodies**, A and B;
 - they are the **same type** of force (both gravitational, or both contact, or both electric);
 - they are **equal in magnitude** and **opposite in direction**, at every moment.
+
+A surface pushes back on anything resting on it. This push is a **contact force**, and the push at right angles to the surface is the **normal contact force**, \(N\) (*normal* means at right angles to the surface). A **free-body diagram** shows one body and only the forces acting on it, as arrows, as in the figure below.
 
 :::html
 <figure class="fig"><svg viewBox="0 0 600 225" role="img" aria-label="Two free-body diagrams. Left: a book with an upward normal contact force N and a downward weight W of equal length. Right: a car with a long forward driving force, a shorter backward drag force, and equal upward normal contact force and downward weight."><rect class="f1 s-acc sw2" x="90" y="95" width="100" height="50"/><circle class="fi" cx="140" cy="120" r="3.5"/><path class="c1" d="M140 120V30" marker-end="url(#ah-phys)"/><path class="c1" d="M140 120V210" marker-end="url(#ah-phys)"/><text class="tl" x="150" y="46">N</text><text class="tl" x="150" y="204">W = mg</text><text class="tl tc" x="140" y="16">book on a table</text><rect class="f1 s-acc sw2" x="410" y="100" width="60" height="40" rx="6"/><circle class="fp s-ink sw2" cx="424" cy="146" r="9"/><circle class="fp s-ink sw2" cx="456" cy="146" r="9"/><circle class="fi" cx="440" cy="120" r="3.5"/><path class="c1" d="M440 120H570" marker-end="url(#ah-phys)"/><path class="c2" d="M440 120H392" marker-end="url(#ah2-phys)"/><path class="c1" d="M440 120V50" marker-end="url(#ah-phys)"/><path class="c1" d="M440 120V190" marker-end="url(#ah-phys)"/><text class="tl" x="478" y="108">driving force</text><text class="tl" x="478" y="140">3.0 kN</text><text class="tl tc ta2" x="372" y="108">drag</text><text class="tl tc ta2" x="372" y="140">1.2 kN</text><text class="tl" x="450" y="62">N</text><text class="tl" x="450" y="200">W</text><text class="tl tc" x="440" y="16">car on a level road</text></svg><figcaption>Free-body diagrams draw only the forces acting on one body, each from the point where it acts. The book is in equilibrium, so N and W are equal. The car has a resultant force of 1.8 kN forwards, so it accelerates forwards. The vertical forces on the car are drawn to a different scale from the horizontal ones.</figcaption></figure>
@@ -227,7 +229,7 @@ When the resistive force reaches \(3.0\,\mathrm{kN}\), the resultant force is ze
 
 ### Connected bodies
 
-When two objects are linked by a tow bar or string, they have the **same acceleration** (if the link does not stretch). Treat the pair as one body to find the acceleration, then treat one of them alone to find the force between them.
+When two objects are linked by a tow bar or string, they have the **same acceleration** (if the link does not stretch). Problems often say a string or pulley is **light** (it has negligible mass, so it needs no force of its own to accelerate it) and a surface or pulley is **smooth** (there is no friction). Treat the pair as one body to find the acceleration, then treat one of them alone to find the force between them.
 
 :::eg A car of mass 1000 kg tows a trailer of mass 300 kg along a level road. The driving force on the car is 3900 N. The resistive forces are 500 N on the car and 200 N on the trailer. Find the acceleration and the tension in the tow bar.
 Treat the car and trailer together: mass \(1300\,\mathrm{kg}\), resultant force \(3900 - 500 - 200 = 3200\,\mathrm{N}\). [C1]
@@ -294,7 +296,7 @@ Without air resistance, every object near the Earth falls with the same accelera
 The constant velocity reached by an object moving against a resistive force, when the resistive force equals the driving force (for a falling object, its weight), so that the resultant force is zero.
 :::
 
-Terminal velocity is not "zero force" and it is not "zero acceleration because the object has stopped". Several forces still act: they are balanced. The same thing happens in other situations. A car at its top speed has a driving force from the engine equal to the total drag; a steel ball bearing dropped into a tall jar of oil quickly reaches a steady speed when the viscous drag plus the upthrust equal its weight.
+Terminal velocity is not "zero force" and it is not "zero acceleration because the object has stopped". Several forces still act: they are balanced. The same thing happens in other situations. A car at its top speed has a driving force from the engine equal to the total drag; a steel ball bearing dropped into a tall jar of oil quickly reaches a steady speed when the viscous drag plus the upthrust (the upward push of the liquid, met in [Forces, density and pressure](#phys.forces)) equal its weight.
 
 :::eg An 80 kg skydiver falls from rest. Find the acceleration (a) at the moment of leaving the aircraft, (b) when the drag is 500 N, (c) when the drag equals the skydiver's weight. What is the drag then?
 (a) The speed is zero, so there is no drag. \(a = g = 9.81\,\mathrm{m\,s^{-2}}\). [B1]

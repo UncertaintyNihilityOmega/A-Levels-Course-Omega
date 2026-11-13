@@ -22,7 +22,7 @@ A: \(F\cos 60^\circ = 50 \times 0.5 = 25\,\mathrm{N}\).
 
 ## Energy: the big idea
 
-**Energy** is a number that tells you how much change a system can cause. It comes in several stores, and the total in a closed system never changes. You met the stores at IGCSE, and you will need all of them:
+**Energy** is a number that tells you how much change a system can cause. It comes in several stores, and the total in a closed system (one that no energy enters or leaves) never changes. You met the stores at IGCSE, and you will need all of them:
 
 | Store | What it is | Example |
 |---|---|---|
@@ -72,7 +72,7 @@ The mass of the crate does not appear. The work done by this particular force de
 Three consequences of \(W = Fs\cos\theta\) appear again and again.
 
 - **\(\theta = 0^\circ\)**: force along the motion, \(\cos 0^\circ = 1\), so \(W = Fs\). This is the largest work for a given force.
-- **\(\theta = 90^\circ\)**: force perpendicular to the motion, \(\cos 90^\circ = 0\), so **no work is done**. A bag carried at constant height has a vertical supporting force and a horizontal displacement, so the force does no work. A satellite in a circular orbit has a gravitational force that is always at 90° to its velocity, so gravity does no work on it and its speed stays constant.
+- **\(\theta = 90^\circ\)**: force perpendicular to the motion, \(\cos 90^\circ = 0\), so **no work is done**. A bag carried at constant height has a vertical supporting force and a horizontal displacement, so the force does no work. A pendulum bob swings along an arc, and the tension in the string is always at 90° to the bob's velocity, so the tension does no work on it (the bob's speed changes only because gravity does work, as in the pendulum example later in this chapter).
 - **\(\theta = 180^\circ\)**: force opposite to the motion, \(\cos 180^\circ = -1\), so the work is **negative**. Friction and drag do negative work on a moving object. They transfer energy away from it, usually as thermal energy.
 
 When the force changes during the motion, you cannot just multiply. The work done is the **area under the force–displacement graph**, a fact that returns in [Deformation of solids](#phys.solids) for stretched springs and wires.
@@ -90,7 +90,7 @@ The work is the area under the graph. The shape from \(s = 0\) to \(s = 4.0\,\ma
 ## Conservation of energy
 
 :::def Principle of conservation of energy
-Energy cannot be created or destroyed; it can only be transferred from one form to another. The total energy of a closed system is constant.
+Energy cannot be created or destroyed; it can only be transferred from one form to another. The total energy of a closed system (one that no energy enters or leaves) is constant.
 :::
 
 This principle is the most reliable tool in physics. The word "lost" in everyday speech ("energy is lost as heat") is misleading. Energy that is **dissipated** has not disappeared. It has been transferred into thermal energy of the surroundings (and sometimes sound), spread out among so many particles that you cannot get it back usefully.
@@ -221,7 +221,7 @@ Exam questions often ask you to sketch how the energies change during a fall. Ta
 --f "4.905*x" --f "4.905*(20-x)" --x 0 20 --y 0 140 --xstep 5 --xlabel "h / m" --ylabel "E / J" --label "gravitational potential energy" --label "kinetic energy" --legend tr
 :::
 
-Both graphs against **height** are straight lines with gradients \(+mg\) and \(-mg\). Against **time** they are curves: the speed grows in proportion to time, so the kinetic energy \(\tfrac12 mv^2\) grows in proportion to \(t^2\) (a parabola starting flat at \(t = 0\)). With air resistance, the kinetic energy at each height is less than the line shows: the total falls below \(98.1\,\mathrm{J}\), and the shortfall is the work done against air resistance so far. At terminal velocity the kinetic energy stops changing, and all of the gravitational potential energy lost is dissipated as thermal energy, at the rate \(mgv\).
+Both graphs against **height** are straight lines with gradients \(+mg\) and \(-mg\). Against **time** they are curves: the speed grows in proportion to time, so the kinetic energy \(\tfrac12 mv^2\) grows in proportion to \(t^2\) (a parabola starting flat at \(t = 0\)). With air resistance, the kinetic energy at each height is less than the line shows: the total falls below \(98.1\,\mathrm{J}\), and the shortfall is the work done against air resistance so far. At terminal velocity the kinetic energy stops changing, and all of the gravitational potential energy lost is dissipated as thermal energy, at the rate \(mgv\) (this is the power \(P = Fv\) with \(F = mg\); see "Power and velocity" below).
 
 :::eg A car of mass 1200 kg travelling at 20 m s⁻¹ brakes to rest. The total resistive force (brakes plus air resistance) is a constant 6000 N. Calculate the stopping distance.
 Kinetic energy at the start:
@@ -419,7 +419,7 @@ Q: [8 marks] ★★★ A bungee jumper of mass 70 kg steps off a platform. The u
 H: At the lowest point the jumper is momentarily at rest, so all the lost gravitational potential energy is stored in the rope.
 H: The jumper falls a total distance \(25 + x\).
 H: At the lowest point the tension is \(kx\) upwards and the weight is \(mg\) downwards.
-A: (a) Falling 25 m: \(v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 25}\) [C1] \(= 22\,\mathrm{m\,s^{-1}}\). [A1] (b) Energy lost by the jumper equals the energy stored in the rope: \(mg(25 + x) = \tfrac12 kx^2\). [M1] Then \(686.7(25 + x) = 75x^2\), so \(75x^2 - 686.7x - 17\,168 = 0\), which rounds to the given equation. [A1] (c) \(x = \dfrac{687 + \sqrt{687^2 + 4 \times 75 \times 17\,200}}{2 \times 75}\) [C1] \(= 20\,\mathrm{m}\) (20.4 m before rounding). [A1] (d) At the lowest point the tension is \(kx = 150 \times 20.4 = 3058\,\mathrm{N}\), so the resultant force is \(3058 - 687 = 2371\,\mathrm{N}\) upwards. [C1] Then \(a = 2371/70 = 34\,\mathrm{m\,s^{-2}}\) upwards, about \(3.5g\). [A1]
+A: (a) Falling 25 m: \(v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 25}\) [C1] \(= 22\,\mathrm{m\,s^{-1}}\). [A1] (b) Energy lost by the jumper equals the energy stored in the rope: \(mg(25 + x) = \tfrac12 kx^2\). [M1] Then \(686.7(25 + x) = 75x^2\), so \(75x^2 - 686.7x - 17\,168 = 0\), which rounds to the given equation. [A1] (c) Use the quadratic formula (stated in [Kinematics](#phys.kinematics), under "Free fall"), with \(a = 75\), \(b = -687\), \(c = -17\,200\) and the positive root, because \(x\) is an extension: \(x = \dfrac{687 + \sqrt{687^2 + 4 \times 75 \times 17\,200}}{2 \times 75}\) [C1] \(= 20\,\mathrm{m}\) (20.4 m before rounding). [A1] (d) At the lowest point the tension is \(kx = 150 \times 20.4 = 3058\,\mathrm{N}\), so the resultant force is \(3058 - 687 = 2371\,\mathrm{N}\) upwards. [C1] Then \(a = 2371/70 = 34\,\mathrm{m\,s^{-2}}\) upwards, about \(3.5g\). [A1]
 Q: [7 marks] ★★★ A wind turbine has blades of length 40 m, so the blades sweep out a circle of radius 40 m. Wind of density \(1.2\,\mathrm{kg\,m^{-3}}\) blows at \(10\,\mathrm{m\,s^{-1}}\) perpendicular to the circle. (a) Show that the kinetic energy of the air that passes through the circle each second is \(\tfrac12 \rho A v^3\), and calculate its value. (b) The wind speed doubles. By what factor does this power increase? (c) The turbine converts 40% of this power to electrical power. Calculate the electrical output. (d) Explain why a turbine cannot extract all of the kinetic energy of the wind.
 H: In one second, the air that passes is a cylinder of cross-sectional area \(A\) and length \(v\).
 H: Mass per second is density times volume per second.

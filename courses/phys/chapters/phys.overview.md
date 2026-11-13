@@ -32,7 +32,7 @@ The AS qualification is Papers 1, 2 and 3, a total of 140 marks. The full A Leve
 - **A Level in one series:** all five papers together.
 - Series are **June and November** (March in India only).
 
-Paper 1 and Paper 2 give you a data and formulae sheet on page 2, and Paper 4 on pages 2 and 3. It lists constants such as \(g\), \(e\) and \(h\) and a few formulae. Learn where things are on it, not only what is on it (more in "How to reach A\*" below). Answers use SI units.
+Paper 1 and Paper 2 give you a data and formulae sheet on page 2, and Paper 4 on pages 2 and 3. It lists constants such as \(g\), \(e\) and \(h\) and a few formulae. Learn where things are on it, not only what is on it (more in "How to reach A\*" below). Answers use SI units (explained in [Physical quantities, units and uncertainty](#phys.units)).
 
 ### Assessment objectives
 
@@ -154,7 +154,7 @@ An A\* is not about being the cleverest person. It comes from doing a few things
 4. **Past papers, under timed conditions, with the mark scheme.** After the topics, do whole papers in the time allowed. Mark yourself strictly against the scheme, then rewrite every answer that lost a mark.
 5. **Know the data sheet.** Know where each constant and formula is on it, and which formulae are *not* on it (you must remember those).
 6. **Practical work, hands-on.** A fifth of the marks are experimental skills. The syllabus expects you to have done practical work, and doing it is the only way to feel what an uncertainty or a poor method really is. If you study alone, ask your exam centre what you need for Paper 3, and look for a school, college or science club that lets private candidates use a laboratory. Where you cannot, repeat each chapter's lab box with kitchen and hardware-shop apparatus (a ruler, a stopwatch, a spring, a torch, a multimeter), and practise the paper skills in [Practical skills](#phys.practical) and [Planning, analysis and evaluation](#phys.planning).
-7. **Read every command word.** "State", "describe", "explain" and "determine" ask for different things. See [Exam technique](#road.technique) and [Command words decoded](#road.commands) in the study guide. The command words in the 9702 syllabus are: calculate, comment, compare, define, describe, determine, explain, give, identify, justify, predict, show (that), sketch, state and suggest.
+7. **Read every command word.** "State", "describe", "explain" and "determine" ask for different things. See [Exam technique](#road.technique) and [Command words decoded](#road.commands) in the separate Study guide course. The command words in the 9702 syllabus are: calculate, comment, compare, define, describe, determine, explain, give, identify, justify, predict, show (that), sketch, state and suggest.
 
 :::exam Marks are for the working
 In a calculation, write the formula, substitute with units, and show the answer with its unit. In Cambridge mark schemes a correct formula or substitution earns a mark even if you slip later, and a wrong final answer with no working earns little or nothing.

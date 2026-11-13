@@ -1,6 +1,6 @@
 # STATUS: Physics
 
-Last: 2026-10-15 · REVIEW FINAL · 39/39 chapters written; check, phone (375 px) and preview pass with 0 errors/notes; all 20 widget configs probe clean light/dark/phone. course.json packages/papers list only existing ids; Next lines form one chain overview -> f.basics -> AS -> A2 -> practical -> planning -> guides -> mixed -> mocks p1-p5 -> overview. Added: mock rows (all five) and mock links in the study plan of phys.overview; a 'Your mock paper(s)' section in exam.p1 and exam.p24 and a mock note in practical and planning. Data-sheet constants consistent everywhere (no off-sheet values); E_k -> E_K in quantum and particles. Board boxes brought to the COURSE.md rule (one board, one sure difference, or Cambridge only) in circular, dc, dynamics, efields, electricity, energy, forces, gases, gravity, kinematics, particles, solids, superposition, temperature, units, waves. No TODO/placeholder or raw _/^ outside maths. All FACTS.md outcomes found taught (196 keyword checks). 0 open REVIEW items.
+Last: 2026-11-13 · FIX · READER phys.overview to phys.solids: 23 items closed (SI and Study guide pointers, delta, trapezium area, slope bridge, ionising/activity/Bq/in phase, cosine and sine rule box with labelled triangle and worked line, bearing, quadratic formula stated in Free fall and pointed back to, inertia/normal/light/smooth, closed system, pendulum example, Searle's wire)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -23,4 +23,5 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P16: reviewed 2026-10-15
 - P17: reviewed 2026-10-15
 - P18: reviewed 2026-10-15
+- READER: open
 - FINAL: done 2026-10-15

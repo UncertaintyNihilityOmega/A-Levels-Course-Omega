@@ -55,7 +55,7 @@
     { "id": "P2", "title": "Dynamics and forces", "chapters": ["phys.dynamics", "phys.forces"], "widgets": ["phys-collide"] },
     { "id": "P3", "title": "Energy and solids", "chapters": ["phys.energy", "phys.solids"], "widgets": ["phys-stretch"] },
     { "id": "P4", "title": "Waves and superposition", "chapters": ["phys.waves", "phys.superposition"], "widgets": ["phys-wave", "phys-fringes"] },
-    { "id": "P5", "title": "Electricity and particle physics", "chapters": ["phys.electricity", "phys.particles"], "widgets": ["phys-iv", "phys-quarks"] },
+    { "id": "P5", "title": "Electricity and particle physics", "chapters": ["phys.electricity", "phys.dc", "phys.particles"], "widgets": ["phys-iv", "phys-quarks"] },
     { "id": "P6", "title": "Circular motion and gravitation", "chapters": ["phys.circular", "phys.gravity"], "widgets": ["phys-orbit"] },
     { "id": "P7", "title": "Thermal physics", "chapters": ["phys.temperature", "phys.gases", "phys.thermo"], "widgets": ["phys-gas"] },
     { "id": "P8", "title": "Oscillations and electric fields", "chapters": ["phys.oscillations", "phys.efields"], "widgets": ["phys-shm"] },

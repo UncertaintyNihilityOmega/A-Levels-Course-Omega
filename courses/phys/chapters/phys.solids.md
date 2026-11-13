@@ -84,7 +84,7 @@ Using \(x = F/k\) for each: \(\dfrac{F}{k} = \dfrac{F}{k_1} + \dfrac{F}{k_2}\), 
 Using \(F = kx\) for each: \(kx = k_1 x + k_2 x\), and dividing by \(x\) gives \(k = k_1 + k_2\).
 :::
 
-Two springs of 60 and \(90\,\mathrm{N\,m^{-1}}\) in parallel give \(150\,\mathrm{N\,m^{-1}}\), stiffer than either. In series they give \(\dfrac{60 \times 90}{60 + 90} = 36\,\mathrm{N\,m^{-1}}\), softer than either. Notice that the formulae have the same form as the resistor formulae in [D.C. circuits](#phys.dc), with the series and parallel rules swapped.
+Two springs of 60 and \(90\,\mathrm{N\,m^{-1}}\) in parallel give \(150\,\mathrm{N\,m^{-1}}\), stiffer than either. In series they give \(\dfrac{60 \times 90}{60 + 90} = 36\,\mathrm{N\,m^{-1}}\), softer than either. You will meet similar formulae for resistors in [D.C. circuits](#phys.dc).
 
 ## Stress, strain and the Young modulus
 
@@ -182,7 +182,7 @@ Because the extension is so small, the experiment uses a **long, thin wire**: a 
 :::
 :::
 
-Using a graph is better than a single reading, because a line of best fit averages out random errors. The diameter appears squared in \(A\), so its percentage uncertainty doubles, which is why many readings with a micrometer are taken. A reference wire next to the test wire (Searle's apparatus) removes errors caused by the support moving or the temperature changing.
+Using a graph is better than a single reading, because a line of best fit averages out random errors. The diameter appears squared in \(A\), so its percentage uncertainty doubles, which is why many readings with a micrometer are taken. A reference wire next to the test wire (Searle's apparatus) removes errors caused by the support moving or the temperature changing: a second identical wire hangs from the same support, so a movement of the support or a temperature change moves both wires equally, and the extension is read as the movement of the test wire *relative to* the reference wire.
 
 :::eg In a Young modulus experiment with a copper wire, the original length is 1.80 m and the mean diameter is 0.50 mm. A graph of load against extension is a straight line of gradient \(13\,\mathrm{N\,mm^{-1}}\). Calculate the Young modulus of copper.
 Convert the gradient to base units: \(13\,\mathrm{N\,mm^{-1}} = 13 \times 10^{3}\,\mathrm{N\,m^{-1}}\). [C1]
@@ -360,10 +360,10 @@ A: Energy = area under the \(F\)–\(x\) graph. [C1]
 Q: [5 marks] ★★★ A steel wire of length 2.0 m and diameter 0.60 mm is joined end to end to a copper wire of length 1.0 m and diameter 0.30 mm. The same tension acts in both wires. The Young modulus of steel is \(2.0 \times 10^{11}\,\mathrm{Pa}\) and that of copper is \(1.2 \times 10^{11}\,\mathrm{Pa}\). (a) Show that the extension of the copper wire is about 3.3 times the extension of the steel wire. (b) The tension is 60 N. Calculate the total extension of the two wires.
 H: Use \(x = FL/(AE)\) for each wire; \(F\) is the same, and \(A \propto d^2\).
 A: (a) \(x = \dfrac{FL}{AE}\), and \(F\) is the same, so \(\dfrac{x_\text{Cu}}{x_\text{steel}} = \dfrac{L_\text{Cu}}{L_\text{steel}} \times \dfrac{A_\text{steel}}{A_\text{Cu}} \times \dfrac{E_\text{steel}}{E_\text{Cu}}\) [C1] \(= 0.50 \times 4.0 \times 1.67 = 3.3\). [A1] (b) \(x_\text{steel} = \dfrac{60 \times 2.0}{\pi (0.30 \times 10^{-3})^2 \times 2.0 \times 10^{11}} = 2.1\,\mathrm{mm}\) [C1] and \(x_\text{Cu} = \dfrac{60 \times 1.0}{\pi (0.15 \times 10^{-3})^2 \times 1.2 \times 10^{11}} = 7.1\,\mathrm{mm}\). [C1] Total \(= 9.2\,\mathrm{mm}\). [A1]
-Q: [6 marks] ★★★ A mass of 0.50 kg is released from rest 0.30 m above the top of a light vertical spring of spring constant \(120\,\mathrm{N\,m^{-1}}\), fixed at its lower end. The spring is compressed as the mass lands on it and comes to rest at the lowest point. Ignore air resistance. (a) Calculate the speed of the mass just before it touches the spring. (b) Show that the greatest compression \(x\) of the spring satisfies \(60x^2 - 4.9x - 1.5 = 0\). (c) Calculate \(x\).
+Q: [6 marks] ★★★ A mass of 0.50 kg is released from rest 0.30 m above the top of a vertical spring of negligible mass and spring constant \(120\,\mathrm{N\,m^{-1}}\), fixed at its lower end. The spring is compressed as the mass lands on it and comes to rest at the lowest point. Ignore air resistance. (a) Calculate the speed of the mass just before it touches the spring. (b) Show that the greatest compression \(x\) of the spring satisfies \(60x^2 - 4.9x - 1.5 = 0\). (c) Calculate \(x\).
 H: At the lowest point the mass is at rest, so all the lost gravitational potential energy is stored in the spring.
 H: The mass falls a total distance \(0.30 + x\).
-A: (a) \(v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 0.30}\) [C1] \(= 2.4\,\mathrm{m\,s^{-1}}\). [A1] (b) Loss of gravitational energy = energy stored in the spring: \(mg(0.30 + x) = \tfrac12 kx^2\). [M1] \(0.50 \times 9.81 \times (0.30 + x) = 60x^2\), so \(60x^2 - 4.9x - 1.5 = 0\). [A1] (c) \(x = \dfrac{4.9 + \sqrt{4.9^2 + 4 \times 60 \times 1.5}}{2 \times 60}\) [C1] \(= 0.20\,\mathrm{m}\). [A1]
+A: (a) \(v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 0.30}\) [C1] \(= 2.4\,\mathrm{m\,s^{-1}}\). [A1] (b) Loss of gravitational energy = energy stored in the spring: \(mg(0.30 + x) = \tfrac12 kx^2\). [M1] \(0.50 \times 9.81 \times (0.30 + x) = 60x^2\), so \(60x^2 - 4.9x - 1.5 = 0\). [A1] (c) Use the quadratic formula (stated in [Kinematics](#phys.kinematics), under "Free fall"), with \(a = 60\), \(b = -4.9\), \(c = -1.5\) and the positive root, because \(x\) is a compression: \(x = \dfrac{4.9 + \sqrt{4.9^2 + 4 \times 60 \times 1.5}}{2 \times 60}\) [C1] \(= 0.20\,\mathrm{m}\). [A1]
 :::
 
 :::try Stretch for A*

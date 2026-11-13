@@ -188,7 +188,7 @@ The muscle force is nearly nine times the load. A short lever arm for the muscle
 Forces are vectors, so if the resultant force is zero, the vectors added head to tail return to their starting point. Three forces in equilibrium therefore form a **closed triangle**.
 
 :::key Three coplanar forces in equilibrium
-Draw the three force vectors head to tail, each to scale and in the correct direction. If the forces are in equilibrium, the triangle closes. You can then find unknown sides and angles by scale drawing, or by the sine rule and cosine rule, or by simple trigonometry if the triangle is right-angled.
+Draw the three force vectors head to tail, each to scale and in the correct direction. If the forces are in equilibrium, the triangle closes. You can then find unknown sides and angles by scale drawing, or by the sine rule and cosine rule (both stated in the box "The cosine rule and the sine rule" in [Physical quantities, units and uncertainty](#phys.units)), or by simple trigonometry if the triangle is right-angled.
 
 Three non-parallel forces in equilibrium also have lines of action that **meet at one point**. If they did not, the forces would have a resultant moment.
 :::
@@ -398,7 +398,7 @@ H: Take moments about one support so that its force drops out.
 A: Moments about the right-hand end: \(R_\text{L} \times 6.0 = 300 \times 3.0 + 750 \times 4.0\) [C1] so \(R_\text{L} = 650\,\mathrm{N}\). [A1] No resultant force: \(R_\text{L} + R_\text{R} = 300 + 750 = 1050\,\mathrm{N}\) [C1] so \(R_\text{R} = 400\,\mathrm{N}\). [A1]
 Q: [4 marks] ★★ A traffic light of weight 80 N hangs from two cables. One cable makes \(30^\circ\) with the horizontal and the other \(45^\circ\), on opposite sides. Draw the triangle of forces in words and calculate the tension in each cable.
 H: The three forces form a closed triangle. The sides are 80 N, \(T_1\) and \(T_2\), and the angles opposite them are \(75^\circ\), \(45^\circ\) and \(60^\circ\).
-H: Use the sine rule: each side divided by the sine of the opposite angle is the same.
+H: Use the sine rule (stated in the box "The cosine rule and the sine rule" in Physical quantities, units and uncertainty): each side divided by the sine of the opposite angle is the same.
 A: The weight and the two tensions, drawn head to tail, form a closed triangle with angles \(75^\circ\) (opposite the weight), \(45^\circ\) (opposite \(T_1\)) and \(60^\circ\) (opposite \(T_2\)). [B1] Sine rule: \(\dfrac{80}{\sin 75^\circ} = \dfrac{T_1}{\sin 45^\circ} = \dfrac{T_2}{\sin 60^\circ}\). [C1] \(T_1 = 58.6\,\mathrm{N}\) (the cable at \(30^\circ\)). [A1] \(T_2 = 71.7\,\mathrm{N}\) (the cable at \(45^\circ\)). [A1]
 Q: [3 marks] ★★ Derive the equation \(\Delta p = \rho g\Delta h\) for the increase of pressure with depth in a liquid of density \(\rho\).
 A: Consider a column of liquid of cross-sectional area \(A\) and height \(\Delta h\). Its weight is \(mg = \rho A\Delta h\,g\) (mass = density × volume). [B1] The pressure at the bottom of the column exceeds the pressure at the top by the weight divided by area, \(\Delta p = F/A\). [B1] So \(\Delta p = \rho A\Delta h\,g/A = \rho g\Delta h\). [B1]

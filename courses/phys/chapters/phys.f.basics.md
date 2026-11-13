@@ -114,7 +114,7 @@ A straight-line graph has the equation \(y = mx + c\). The **gradient** \(m\) te
 
 :::key Gradient
 \[m = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}\]
-Draw the gradient triangle as large as the line allows: use two points on the line that are far apart (more than half of its length), not two points from a table. The gradient has a **unit**: the unit of \(y\) divided by the unit of \(x\).
+\(\Delta\) (the Greek capital letter delta) means "change in", so \(\Delta y\) is the change in \(y\); you will see it again in \(a = \Delta v/\Delta t\) and \(\Delta E_\text{p}\). Draw the gradient triangle as large as the line allows: use two points on the line that are far apart (more than half of its length), not two points from a table. The gradient has a **unit**: the unit of \(y\) divided by the unit of \(x\).
 :::
 
 :::plot A cyclist's distance s from a signpost against time t. The dashed lines mark the sides of the gradient triangle.
@@ -129,7 +129,7 @@ The unit is metre divided by second. The gradient of a distance–time graph is 
 
 ### Direct and inverse proportion
 
-Two quantities are in **direct proportion** if doubling one doubles the other. Their graph is a straight line **through the origin**, \(y = kx\), and the gradient \(k\) is the constant of proportionality. Ohm's law for a resistor is the classic example: \(V = IR\), so a graph of \(V\) against \(I\) is a straight line through the origin whose gradient is the resistance.
+Two quantities are in **direct proportion** if doubling one doubles the other. Their graph is a straight line **through the origin**, \(y = kx\), and the gradient \(k\) is the constant of proportionality. Ohm's law for a resistor is the classic example: \(V = IR\), so a graph of \(V\) against \(I\) is a straight line through the origin whose gradient is the resistance. (These quantities are defined later in this chapter.)
 
 :::plot Potential difference V across a resistor against current I. The graph is a straight line through the origin, so V is directly proportional to I.
 --f "5*x+0*sqrt(1.1-x)" --x 0 1.3 --y 0 8 --pt "0.8,4,(0.80, 4.0)@se" --xlabel "I / A" --ylabel "V / V" --label "V = 5.0 I"
@@ -148,6 +148,8 @@ If a relationship is \(y \propto 1/x\), then a graph of \(y\) against \(1/x\) is
 ### Area under a graph
 
 The area between a graph and the \(x\)-axis often means something. On a speed–time graph, **distance travelled = area under the graph**, because speed × time = distance. On the same graph, the gradient is the **acceleration**.
+
+For a shape with two parallel sides (a trapezium, which is what a speed–time graph for a steady change of speed looks like), the area is **half the sum of the parallel sides × the width**: \(\tfrac12(a + b) \times w\). A triangle is the case \(b = 0\), and a rectangle the case \(a = b\).
 
 :::plot A bus accelerating from rest. The shaded triangle has area 36 m, the distance travelled in the first 6.0 s.
 --f "2*x+0*sqrt(6-x)" --x 0 7 --y 0 16 --shade "0,0,6" --pt "6,12,(6.0, 12)@nw" --xlabel "t / s" --ylabel "v / m s⁻¹"
@@ -207,7 +209,7 @@ Only the horizontal component pulls the sledge forwards. The vertical component 
 :::
 
 :::eg A weight of 50 N rests on a slope at \(20^\circ\) to the horizontal. Find the component of the weight down the slope.
-The angle between the weight (vertical) and the line perpendicular to the slope is also \(20^\circ\), so the component *along* the slope is the opposite side:
+Draw the weight straight down as the hypotenuse of a right-angled triangle whose other two sides lie along the slope and at right angles to it. Tilting the slope by \(20^\circ\) from the horizontal tilts the line perpendicular to the slope by the same \(20^\circ\) from the vertical, so the angle between the weight and that perpendicular is \(20^\circ\). The part of the weight along the slope is the side *opposite* this angle, so use sine:
 \[F = 50\sin20^\circ = 17.1\ldots\,\mathrm{N} \approx 17\,\mathrm{N}\]
 :::
 
@@ -375,7 +377,7 @@ Develop this in [Electricity](#phys.electricity) and [D.C. circuits](#phys.dc).
 ### Waves
 
 :::def Wavelength
-The shortest distance between two points on a wave that are in phase, for example from one crest to the next crest. Its symbol is \(\lambda\) and its unit is the metre.
+The shortest distance between two points on a wave that are in phase (at the same point of their cycle, moving the same way, such as two neighbouring crests), for example from one crest to the next crest. Its symbol is \(\lambda\) and its unit is the metre.
 :::
 
 :::def Frequency
@@ -419,7 +421,9 @@ Some nuclei are unstable and emit radiation, at random, to become more stable. T
 | beta (β) | a fast electron from the nucleus | a few millimetres of aluminium |
 | gamma (γ) | a high-frequency electromagnetic wave | not fully stopped; thick lead reduces it |
 
-Alpha radiation is the most ionising but the least penetrating. In a decay equation the nucleon numbers and the proton numbers must each add up to the same total on both sides.
+**Ionising** radiation knocks electrons off the atoms it passes, leaving charged ions; the more ions it makes along its path, the more ionising it is. Alpha radiation is the most ionising but the least penetrating. In a decay equation the nucleon numbers and the proton numbers must each add up to the same total on both sides.
+
+The **activity** of a sample is the number of nuclei that decay each second. It is measured in **becquerel** (Bq), where \(1\,\mathrm{Bq} = 1\) decay per second.
 
 :::def Half-life
 The time taken for the number of undecayed nuclei of a radioactive isotope (and so its activity) to fall to half its starting value.

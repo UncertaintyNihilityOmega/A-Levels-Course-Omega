@@ -172,7 +172,7 @@ The first equation is the definition of acceleration rearranged. To see where th
 :::proof examinable Deriving the equations of uniformly accelerated motion
 Start from the definition of acceleration, \(a = \dfrac{v - u}{t}\), where \(u\) is the initial velocity and \(v\) the velocity after time \(t\). Rearranging gives equation 1: \(v = u + at\).
 The \(v\)–\(t\) graph is a straight line because \(a\) is constant, and the displacement \(s\) is the area under it.
-The area is a trapezium of parallel sides \(u\) and \(v\) and width \(t\), so \(s = \tfrac12(u + v)t\). This is equation 2.
+The area is a trapezium of parallel sides \(u\) and \(v\) and width \(t\) (area = half the sum of the parallel sides × the width), so \(s = \tfrac12(u + v)t\). This is equation 2.
 Alternatively, split the area into a rectangle and a triangle: \(s = ut + \tfrac12(v - u)t\).
 From equation 1, \(v - u = at\), so \(s = ut + \tfrac12(at)t = ut + \tfrac12 at^{2}\). This is equation 3.
 To remove \(t\), rearrange equation 1: \(t = \dfrac{v - u}{a}\).
@@ -238,7 +238,9 @@ Take **up as positive**. Then \(u = +15\,\mathrm{m\,s^{-1}}\) and \(a = -9.81\,\
 \[0 = 15^{2} - 2 \times 9.81 \times s \quad\Rightarrow\quad s = \frac{225}{19.62} = 11.5\,\mathrm{m}\] [C1 A1]
 (b) At the sea, the displacement from the cliff top is \(s = -20\,\mathrm{m}\). Using \(s = ut + \tfrac12 at^{2}\):
 \[-20 = 15t - 4.905t^{2} \quad\Rightarrow\quad 4.905t^{2} - 15t - 20 = 0\] [M1]
-By the quadratic formula,
+This is a **quadratic equation**: it has a \(t^{2}\) term, so linear rearranging will not solve it. Any equation of the form \(at^{2} + bt + c = 0\) has the solutions
+\[t = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}\]
+(the \(\pm\) gives two answers, one with \(+\) and one with \(-\)). Here \(a = 4.905\), \(b = -15\) and \(c = -20\), so \(-b = 15\) and \(b^{2} - 4ac = 15^{2} + 4 \times 4.905 \times 20\):
 \[t = \frac{15 \pm \sqrt{15^{2} + 4 \times 4.905 \times 20}}{2 \times 4.905} = \frac{15 \pm 24.85}{9.81}\]
 so \(t = 4.06\,\mathrm{s}\) or \(t = -1.00\,\mathrm{s}\). [C1]
 
@@ -285,6 +287,8 @@ If there is a release delay \(\delta\), the measured time is \(t = t_\mathrm{fal
 |---|---|---|---|---|---|---|
 | \(\sqrt{h}\,/\,\mathrm{m^{1/2}}\) | 0.447 | 0.632 | 0.775 | 0.894 | 1.000 | 1.095 |
 | \(t\,/\,\mathrm{ms}\) | 214 | 298 | 362 | 416 | 464 | 507 |
+
+The table gives \(t\) in ms, so divide by 1000 to change to seconds (214 ms = 0.214 s, 507 ms = 0.507 s) before taking the gradient:
 
 Gradient \(= \dfrac{0.507 - 0.214}{1.095 - 0.447} = 0.452\,\mathrm{s\,m^{-1/2}}\). [C1]
 
