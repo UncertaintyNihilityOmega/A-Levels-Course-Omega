@@ -8,8 +8,9 @@
 - Reader pass done Nov 13: Mathematics (169 items) and Physics (109 items, 4 batches; phys.dc added to P5), all
   FIXed; site check 0 errors, strict build passes. Release v0.6.0 tagged (CHANGELOG).
 - Now: queue item 5, Computer Science (`cs`, 9618, 49 chapters in 22 packages): LEAD done Nov 13 (gold cs.datatypes);
-  P1 written; WRITE P2 and P3 running; guard on `cs`; cs-preview (5110) running (user allowed the preview this session).
+  P1–P3 written (7 chapters, widgets cs-binary, cs-ip). Next: WRITE P4 and P5, REVIEW P1–P4 once P4 is written.
   Engine: labelled code blocks and pseudocode/Python check notes (cs requests).
+- Waiting for the 5-hour reset at 18:20 Nov 13 (Istanbul; 15:20 UTC): 5-hour at 84%, weekly 12%.
 - USER (optional): GitHub Release page for v0.6.0 (tag is pushed; gh not installed, GitHub not signed in in the pane):
   sign in to github.com in the browser pane, or create it at Releases → Draft a new release → tag v0.6.0, notes from
   CHANGELOG.md 0.6.0.
