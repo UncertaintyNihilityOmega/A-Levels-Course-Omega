@@ -1,6 +1,6 @@
 {
   "name": "zero-to-a-star",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Zero to A*: a free, interactive A Level guide from zero to A* (offline website)",
   "scripts": {
     "build": "node engine/build.js",

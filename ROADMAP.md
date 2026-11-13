@@ -5,10 +5,9 @@
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
 - History (`hist`, 9489, 96 chapters) complete Nov 13: REVIEW FINAL done, assembled (links page `tools.l.hist`,
   History section on the resources page). Its COURSE.md has the course rules; history in git.
-- Now: queue item 4, Reader pass. Mathematics done Nov 13 (7 READER batches, 169 items, all FIXed; check and strict
-  build pass). Next: Physics (33 chapters, READER batches → FIX), guard on `phys`.
-- Nov 13 run: Physics READER done (4 batches, 109 items); FIX 1-2 done; FIX 3 (dc-quantum) and
-  FIX 4 (nuclear-mixed.a2) running. phys.dc added to P5 (was in no package). User reset the limits Nov 13 13:35: normal gates; phys-preview (5102) allowed.
+- Reader pass done Nov 13: Mathematics (169 items) and Physics (109 items, 4 batches; phys.dc added to P5), all
+  FIXed; site check 0 errors, strict build passes. Release v0.6.0 tagged (CHANGELOG).
+- Now: queue item 5, Computer Science (`cs`, 9618): Specialist LEAD next, guard on `cs`.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
@@ -42,7 +41,7 @@
 2. [x] **Biology** (`bio`): gold chapter + `done LEAD` → packages → reviews → READER → FIX → REVIEW FINAL.
 3. [x] **History** (`hist`, 9489; replaces Psychology, user's request 2026-11-07): gold chapter + `done LEAD` →
    packages → reviews → READER → FIX → REVIEW FINAL.
-4. [ ] **Reader pass** on Mathematics, then Physics (READER batches → FIX), as its own run.
+4. [x] **Reader pass** on Mathematics, then Physics (READER batches → FIX), as its own run.
 5. [ ] **Computer Science** (`cs`, 9618). Before its LEAD: publish a GitHub release of the site (user, Nov 13).
 6. [ ] **Further Mathematics** (`math.fm.*`, an extension of the Maths course): LEAD for the extension
    (`courses/math/FURTHER.md`) → packages P19+ → reviews → READER for the new chapters → FIX → REVIEW FINAL.

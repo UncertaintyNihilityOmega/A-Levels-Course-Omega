@@ -1,9 +1,20 @@
 # Changelog
 
-## Unreleased
+## 0.6.0 (2026-11-13)
+- Biology complete: 64 chapters (Cambridge 9700), 17 widgets, five mock papers, links page; read through by a beginner Reader.
+- History complete: 96 chapters (Cambridge 9489, 2027–2029; replaces Psychology, now a summary under Other subjects),
+  Connections boxes, four mock papers, links page.
+- Installable web app: manifest, icons and an offline service worker (add to home screen on iPhone, Android, Mac, PC);
+  build and kit tools run on macOS.
+- Accessibility pass to WCAG 2.2 AA: keyboard use of every page and widget, screen-reader labels for figures, widgets
+  and maths, contrast in light and dark, focus outlines, text zoom to 200%, reduced motion.
+- Mathematics and Physics read through by a beginner Reader: 169 and 109 items fixed (methods taught at first use,
+  skipped steps shown, wrong lab steps and numbers corrected; Physics paper guides state the real front-page
+  instructions; the Mathematics normal table checked against the real MF19).
+- Phones: larger plot labels, table headings wrap, light theme keeps native controls light on a dark-mode device.
 - Licence: content CC BY 4.0, code MIT, credit to UncertaintyNihilityOmega (was the Unlicense).
 - About pages sit in each unbuilt course's own sidebar section until its first chapter is written.
-- Docs rewritten as rules; automatic agent runs (hourly scheduled task, fresh session, lock file) are the default plan.
+- Home page and README: written by Claude, can make mistakes; report them as GitHub issues.
 
 ## 0.5.0 (2026-10-24)
 - Chemistry complete: 49 chapters (Cambridge 9701), 23 widgets, five mock papers; read through by a beginner Reader.
