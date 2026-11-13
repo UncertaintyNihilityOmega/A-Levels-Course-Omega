@@ -182,7 +182,7 @@ So \(24\,\mu\mathrm{J}\), two thirds of the energy, is lost. [A1] It is converte
 :::
 
 :::key Half the energy is wasted when you charge through a resistor
-When a supply of p.d. \(V\) charges a capacitor through a resistor, the supply transfers energy \(QV = CV^2\). The capacitor stores only \(\tfrac12 CV^2\). The other half is dissipated in the resistor as thermal energy, **whatever the value of \(R\)**. For the \(470\,\mu\mathrm{F}\) capacitor at 12 V: the supply transfers \(470 \times 10^{-6} \times 144 = 6.77 \times 10^{-2}\,\mathrm{J}\), the capacitor stores \(3.38 \times 10^{-2}\,\mathrm{J}\), and \(3.38 \times 10^{-2}\,\mathrm{J}\) heats the resistor and wires.
+When a supply of p.d. \(V\) charges a capacitor through a resistor, the supply transfers energy \(QV = CV^2\) (the supply has e.m.f. \(V\), so every coulomb it pushes round the circuit gains \(V\) joules, however slowly; the capacitor stores only the average \(\tfrac12 V\) per coulomb, as in the energy proof just before). The capacitor stores only \(\tfrac12 CV^2\). The other half is dissipated in the resistor as thermal energy, **whatever the value of \(R\)**. For the \(470\,\mu\mathrm{F}\) capacitor at 12 V: the supply transfers \(470 \times 10^{-6} \times 144 = 6.77 \times 10^{-2}\,\mathrm{J}\), the capacitor stores \(3.38 \times 10^{-2}\,\mathrm{J}\), and \(3.38 \times 10^{-2}\,\mathrm{J}\) heats the resistor and wires.
 :::
 
 Capacitors are used wherever a store of energy has to be filled slowly and emptied quickly or briefly: the flash in a camera, the defibrillator in an ambulance, the back-up supply that keeps a computer's memory alive for a few seconds when the power fails, and the many small capacitors that smooth the p.d. in a power supply (see [Alternating currents](#phys.ac)).
@@ -197,7 +197,7 @@ When the capacitor is full, charge leaves quickly. As it empties, the p.d. falls
 The p.d. across the resistor equals the p.d. across the capacitor, so \(I = \dfrac{V}{R} = \dfrac{Q}{RC}\).
 The current is the rate at which the charge on the capacitor falls: \(I = -\dfrac{dQ}{dt}\).
 So \(\dfrac{dQ}{dt} = -\dfrac{Q}{RC}\). The rate of change of \(Q\) is proportional to \(Q\), with a negative constant.
-The solution of this equation, with \(Q = Q_0\) at \(t = 0\), is \(Q = Q_0\,e^{-t/RC}\).
+The solution of this equation, with \(Q = Q_0\) at \(t = 0\), is \(Q = Q_0\,e^{-t/RC}\). (\(dQ/dt\) is the gradient of the \(Q\)–\(t\) graph. To check the solution: the gradient of \(Q_0\,e^{-t/RC}\) is \(-\dfrac{1}{RC}\) times \(Q_0\,e^{-t/RC}\), which is \(-\dfrac{Q}{RC}\), as the equation requires.)
 Since \(V = Q/C\) and \(I = V/R\) are both proportional to \(Q\), the p.d. and the current decay in the same way.
 :::
 
@@ -227,7 +227,7 @@ After about five time constants the capacitor is, for practical purposes, discha
 --f "exp(-x)+0*sqrt(5-x)" --x 0 5.8 --y 0 1.15 --pt "1,0.368,(τ, 0.37 V₀)@ne" --vline 1 --hline 0.368 --xlabel "t / τ" --ylabel "V / V₀"
 :::
 
-The curve has the same shape for \(Q\), \(V\) and \(I\). On a charge–time graph, the **gradient** at any instant is minus the current, \(I = -\mathrm{d}Q/\mathrm{d}t\), so the steep start of the curve is where the current is largest. The current starts at \(I_0 = V_0/R\), where \(V_0\) is the starting p.d., and decays by the same factor. The **area under the current–time graph** is the charge that flowed, so it equals the initial charge \(Q_0\). This gives a useful check: since \(I_0 = V_0/R\) and \(\tau = RC\), the area under an exponential curve from \(t=0\) to infinity is \(I_0\tau = (V_0/R) \times RC = CV_0 = Q_0\).
+The curve has the same shape for \(Q\), \(V\) and \(I\). On a charge–time graph, the **gradient** at any instant is minus the current, \(I = -\mathrm{d}Q/\mathrm{d}t\), so the steep start of the curve is where the current is largest. The current starts at \(I_0 = V_0/R\), where \(V_0\) is the starting p.d., and decays by the same factor. The **area under the current–time graph** is the charge that flowed, so it equals the initial charge \(Q_0\). This gives a useful check: since \(I_0 = V_0/R\) and \(\tau = RC\), the area under an exponential curve from \(t=0\) to infinity is \(I_0\tau = (V_0/R) \times RC = CV_0 = Q_0\). (Calculus shows that this area is \(I_0\tau\); you can also take it as the fact that the whole charge \(Q_0\) flows out, and use it as a check.)
 
 :::eg A \(100\,\mu\mathrm{F}\) capacitor charged to 9.0 V discharges through a \(50\,\mathrm{k\Omega}\) resistor. Find the time constant, the initial current and the p.d. after 3.0 s.
 \[\tau = RC = 50 \times 10^{3} \times 100 \times 10^{-6} = 5.0\,\mathrm{s}\] [C1] [A1]

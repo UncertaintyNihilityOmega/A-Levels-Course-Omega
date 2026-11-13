@@ -93,6 +93,16 @@ eq("y from formula", 500 * 5.0e-2**2 / (4 * 2.0e-2 * Va), y, 1e-9)
 eq("gradient with 2.56 kV", sf(5.0e-2**2 / (4 * 2.0e-2 * 2.56e3), 3), 1.22e-5, 1e-8)
 eq("Va 2.56 kV", sf(Va, 3), 2560, 1)
 eq("500 V x 1.22e-5", sf(500 * 1.22e-5 * 1000, 2), 6.1, 0.01)
+# screen deflection: Y = y + s tan(theta) = V L (L + 2 s) / (4 d Va)
+Ls, ds, ss = 5.0e-2, 2.0e-2, 15.0e-2
+gradY = Ls * (Ls + 2 * ss) / (4 * ds * 2.56e3)
+eq("gradient Y/V", sf(gradY, 2), 8.5e-5, 1e-7)
+eq("gradient Y/V 3 sf", sf(gradY, 3), 8.54e-5, 1e-7)
+Y_screen = 500 * gradY
+eq("Y at 500 V (mm)", sf(Y_screen * 1000, 2), 43, 0.5)
+# same by geometry: y + s * vy/v
+eq("Y geometric", y + ss * vy / 3.0e7, 500 * Ls * (Ls + 2 * ss) / (4 * ds * Va), 5e-4)
+eq("tan theta = 2y/L", vy / 3.0e7, 2 * y / Ls, 1e-3)
 
 # Coulomb's law
 Fc = K * (2.0e-9)**2 / (30e-3)**2

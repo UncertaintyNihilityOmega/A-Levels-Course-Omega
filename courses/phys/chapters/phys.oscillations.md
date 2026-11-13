@@ -16,7 +16,7 @@ Q: A wheel turns once every 0.50 s. What is its angular speed? (from [Motion in 
 A: \(\omega = 2\pi/T = 2\pi/0.50 = 12.6\,\mathrm{rad\,s^{-1}}\).
 Q: Two points on a progressive wave are one quarter of a wavelength apart. What is their phase difference? (from [Waves](#phys.waves))
 A: One whole wavelength is a phase change of \(2\pi\,\mathrm{rad}\), so a quarter of it is \(\pi/2\,\mathrm{rad}\), which is \(90^\circ\).
-Q: A spring of force constant \(50\,\mathrm{N\,m^{-1}}\) is stretched by 0.10 m. How much energy does it store? (from [Deformation of solids](#phys.solids))
+Q: A spring of spring constant (force constant) \(50\,\mathrm{N\,m^{-1}}\) is stretched by 0.10 m. How much energy does it store? (from [Deformation of solids](#phys.solids))
 A: \(E = \tfrac12 kx^2 = \tfrac12 \times 50 \times 0.10^2 = 0.25\,\mathrm{J}\).
 :::
 
@@ -99,7 +99,7 @@ To prove that a system is SHM, you must show that the net force (and so the acce
 :::
 
 :::proof examinable A mass on a spring moves with SHM
-A mass \(m\) hangs from a spring of force constant \(k\) (the force per unit extension, from [Deformation of solids](#phys.solids)).
+A mass \(m\) hangs from a spring of force constant \(k\) (the same as the spring constant: the force per unit extension, from [Deformation of solids](#phys.solids)).
 At equilibrium the extension is \(e\) and the weight is balanced by the spring force: \(mg = ke\).
 Pull the mass a further distance \(x\) downwards. The extension is now \(e + x\), so the spring force upwards is \(k(e + x)\).
 The net force upwards is \(k(e + x) - mg = kx\) (the \(ke\) cancels \(mg\)). Taking displacement downwards as positive, \(F = -kx\).
@@ -150,6 +150,8 @@ You are expected to recall the solution of \(a = -\omega^2 x\). If the timing st
 \[v_0 = \omega x_0 \qquad\qquad a_{\max} = \omega^2 x_0\]
 \(x_0\): amplitude (m) · \(v_0\): maximum speed (\(\mathrm{m\,s^{-1}}\)) · \(\omega t\) is an angle in **radians**. The velocity is the gradient of the \(x\)–\(t\) graph and the acceleration is the gradient of the \(v\)–\(t\) graph.
 :::
+
+Check that this solves the equation: the gradient of the sine graph \(x = x_0\sin\omega t\) is the cosine graph \(v = \omega x_0\cos\omega t\), and the gradient of that is the negative sine graph \(a = -\omega^2 x_0\sin\omega t = -\omega^2 x\), which is the defining equation.
 
 If the timing starts with the oscillator at its maximum displacement (released from rest after being pulled aside), the sine becomes a cosine: \(x = x_0\cos\omega t\) and \(v = -\omega x_0 \sin\omega t\). Which one to use is decided by the starting condition: **at \(t = 0\), is the object at the centre (sine) or at an end (cosine)?** Both describe the same motion with a different choice of zero of time. The data sheet gives \(v = v_0 \cos\omega t\), which pairs with \(x = x_0\sin\omega t\).
 
@@ -233,7 +235,7 @@ Plot \(a\) against \(x\) instead of against time and you get the defining equati
 
 :::eg Use the graph above to find the angular frequency and the period of the oscillator.
 The graph is a straight line through the origin, so \(a\) is proportional to \(-x\): the motion is SHM. [B1]
-Take the point (4.0 cm, \(-9.87\,\mathrm{m\,s^{-2}}\)) and convert 4.0 cm to \(0.040\,\mathrm{m}\):
+Take the point (4.0 cm, \(-9.87\,\mathrm{m\,s^{-2}}\)) and convert 4.0 cm to \(0.040\,\mathrm{m}\). (The graph's \(x\)-axis is in cm, so the plotted gradient is \(-2.47\,\mathrm{m\,s^{-2}}\) per cm; multiplying by 100 gives the gradient in metres, \(-247\,\mathrm{s^{-2}}\).)
 \[\text{gradient} = \frac{-9.87}{0.040} = -247\,\mathrm{s^{-2}}\] [C1]
 The gradient is \(-\omega^2\), so \(\omega = \sqrt{247} = 15.7\,\mathrm{rad\,s^{-1}}\). [A1]
 \[T = \frac{2\pi}{\omega} = 0.400\,\mathrm{s}\] [A1]

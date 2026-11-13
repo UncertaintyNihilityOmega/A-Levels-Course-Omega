@@ -172,7 +172,7 @@ The conversion of alternating current into direct (one-direction) current.
 
 ### Half-wave rectification with one diode
 
-Put one diode in series with the load. During the half-cycles when the diode is forward-biased (the supply makes the end connected to its anode positive), current flows through the load. During the other half-cycles the diode is reverse-biased, so no current flows. The load sees pulses of current in one direction, with gaps in between.
+Put one diode in series with the load. The end of the diode that its symbol's arrow starts from is the **anode** and the other end is the **cathode**. The diode is **forward-biased** when the anode is at the higher potential, so current flows in the direction of the arrow, and **reverse-biased** when it is the other way round, so it blocks. During the half-cycles when the diode is forward-biased (the supply makes the end connected to its anode positive), current flows through the load. During the other half-cycles the diode is reverse-biased, so no current flows. The load sees pulses of current in one direction, with gaps in between.
 
 :::html
 <figure class="fig small"><svg viewBox="40 0 240 145" role="img" aria-label="A circuit with an a.c. supply, a diode and a load resistor R in series. An arrow marked I shows the current flowing from the supply through the diode to the resistor."><path class="ln" d="M60 67V35H110M150 35H250V62M250 108V135H60V93"/><circle class="fp s-ink sw2" cx="60" cy="80" r="13"/><path class="ln thin" d="M51 80C54 72 57 72 60 80C63 88 66 88 69 80"/><path class="ln" d="M110 35L121 35M139 35L150 35"/><path class="fp s-ink sw2" d="M121 45L139 35L121 25Z"/><path class="ln" d="M139 45L139 25"/><rect class="fp s-ink sw2" x="242" y="62" width="16" height="46"/><text class="tl" x="266" y="90">R</text><text class="tl tc" x="130" y="18">diode</text><path class="c1" d="M185 22H215" marker-end="url(#ah-phys)"/><text class="tl ta tc" x="200" y="14">I</text></svg><figcaption>A half-wave rectifier. The diode lets current flow in the direction of its arrow only, so the load R receives current in one half of each cycle.</figcaption></figure>
@@ -228,14 +228,14 @@ The output therefore never falls to zero. It has a small remaining variation cal
 :::proof How big is the ripple?
 Between peaks the capacitor discharges through the load for a time \(t\): \(t = T\) for half-wave rectification and \(t = T/2\) for full-wave.
 From the exponential decay, the p.d. falls from \(V_0\) to \(V_0e^{-t/RC}\), so \(\Delta V = V_0\left(1 - e^{-t/RC}\right)\).
-When the time constant is much longer than \(t\), the exponential is close to \(1 - t/RC\) (the first two terms of its series), so \(\Delta V \approx V_0\,\dfrac{t}{RC}\).
+When the time constant is much longer than \(t\), the exponential is close to \(1 - t/RC\) (for small \(x\), \(e^{-x}\) is about \(1 - x\); for example \(e^{-0.01} = 0.990\)), so \(\Delta V \approx V_0\,\dfrac{t}{RC}\).
 A second way to see it: the p.d. across the load is almost constant at \(V_0\), so the current in the load is almost constant at \(V_0/R\). In time \(t\) the capacitor loses charge \(\Delta Q = It = V_0t/R\), and \(\Delta V = \Delta Q/C = V_0t/RC\).
 The same result comes from both routes.
 :::
 
 :::formula Ripple on a smoothed supply
 \[\Delta V \approx \frac{V_0\,t}{RC} = \frac{It}{C} \qquad (t \ll RC)\]
-\(\Delta V\): ripple (V) · \(V_0\): peak p.d. (V) · \(R\): load resistance (Ω) · \(C\): capacitance (F) · \(I\): load current (A) · \(t\): time between peaks, \(T\) for half-wave and \(T/2\) for full-wave (s). The ripple gets smaller as \(RC\) gets larger.
+\(\Delta V\): ripple (V) · \(V_0\): peak p.d. (V) · \(R\): load resistance (Ω) · \(C\): capacitance (F) · \(I\): load current (A) · \(t\): time between peaks, \(T\) for half-wave and \(T/2\) for full-wave (s) · \(T\): the period of the a.c. supply (20 ms for 50 Hz). The ripple gets smaller as \(RC\) gets larger.
 :::
 
 Three things follow from the equation, and you should be able to explain each one in terms of charge.

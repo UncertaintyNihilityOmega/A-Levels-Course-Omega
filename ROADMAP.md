@@ -9,8 +9,8 @@
   build pass). Next: Physics (33 chapters, READER batches → FIX), guard on `phys`.
 - For a later math review: math.s1.normal "Reading the table" describes the MF19 normal table (4 d.p., ADD columns,
   critical values 0.674 to 3.291) from memory and third-party copies: compare with a real MF19 PDF.
-- Nov 13 run: Physics READER batches 1-3 done (23 + 32 + 28 items), FIX 1-2 done; FIX 3 (dc-quantum) and
-  READER batch 4 (nuclear-mixed.a2) running. phys.dc added to P5 (was in no package). User reset the limits Nov 13 13:35: normal gates; phys-preview (5102) allowed.
+- Nov 13 run: Physics READER done (4 batches, 109 items); FIX 1-2 done; FIX 3 (dc-quantum) and
+  FIX 4 (nuclear-mixed.a2) running. phys.dc added to P5 (was in no package). User reset the limits Nov 13 13:35: normal gates; phys-preview (5102) allowed.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and

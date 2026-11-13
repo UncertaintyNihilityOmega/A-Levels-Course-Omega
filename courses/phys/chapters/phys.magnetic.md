@@ -63,8 +63,8 @@ To find which face of a coil or solenoid is the north pole, look at that face en
 
 A stronger current, or more turns in the same length, gives a stronger field. You are not asked for formulae for the size of the field near a wire or inside a solenoid, only for these patterns and the reasoning behind them.
 
-:::tip A ferrous core makes an electromagnet
-Put a core of soft iron inside a solenoid and the field becomes much stronger. The field of the current magnetises the iron, turning each of its tiny magnetic regions in the same direction, and the iron then adds its own field to that of the coil. Soft iron is used because it magnetises and demagnetises easily, so switching the current off removes the field. Steel would stay magnetised. This is how electromagnets lift scrap metal and how a relay uses a small current to close the contacts of a circuit carrying a large one.
+:::tip A soft iron core makes an electromagnet
+Put a core of soft iron (a ferrous material, which means one containing iron) inside a solenoid and the field becomes much stronger. The field of the current magnetises the iron, turning each of its tiny magnetised regions (called domains) in the same direction, and the iron then adds its own field to that of the coil. Soft iron is used because it magnetises and demagnetises easily, so switching the current off removes the field. Steel would stay magnetised. This is how electromagnets lift scrap metal and how a relay (a switch operated by an electromagnet) uses a small current to close the contacts of a circuit carrying a large one.
 :::
 
 ## Force on a current-carrying conductor
@@ -270,7 +270,7 @@ The semiconductor gives a few millivolts, easy to measure. Copper gives under a 
 
 ### The Hall probe
 
-A **Hall probe** is a small slice of semiconductor with a constant current through it and a voltmeter across its edges. Since \(V_\mathrm{H} \propto B\) for a constant current, the reading shows the flux density. To use it, hold the probe so that the field is **at right angles to the face** of the slice, since only the component of \(B\) in that direction counts. Then rotate the probe a little and read the **maximum** voltage: this gives the field at that point. The probe is calibrated first in a field of known flux density, such as the inside of a long solenoid, and a thin slice (small \(t\)) makes it more sensitive. The sign of \(V_\mathrm{H}\) also shows whether the carriers are positive or negative.
+A **Hall probe** is a small slice of semiconductor with a constant current through it and a voltmeter across its edges. Since \(V_\mathrm{H} \propto B\) for a constant current, the reading shows the flux density. To use it, hold the probe so that the field is **at right angles to the face** of the slice, since only the component of \(B\) in that direction counts. Then rotate the probe a little and read the **maximum** voltage: this gives the field at that point. The probe is calibrated first in a field whose flux density is already known, for example one measured with the current balance above, and a thin slice (small \(t\)) makes it more sensitive. The sign of \(V_\mathrm{H}\) also shows whether the carriers are positive or negative.
 
 ## Forces between currents
 

@@ -110,7 +110,7 @@ If the pressure changes as the gas expands, split the change into tiny steps. In
 The work done by a gas as its volume changes equals the **area under the p–V graph** between the initial and final volumes. For an expansion the gas does work; for a compression the area is the work done on the gas. With \(p\) in kPa and \(V\) in litres, the area comes out in joules.
 :::
 
-:::plot An isothermal expansion of an ideal gas with pV = 300 J. The shaded area under the curve from 2.0 L to 6.0 L is the work done by the gas.
+:::plot An expansion at constant temperature (an isothermal expansion, explained later) of an ideal gas with pV = 300 J. The shaded area under the curve from 2.0 L to 6.0 L is the work done by the gas.
 --f "300/x+0*sqrt(x-1)+0*sqrt(7.2-x)" --x 0 8 --y 0 400 --shade "0,2,6" --pt "2,150,A (2.0 L, 150 kPa)@ne" --pt "6,50,B (6.0 L, 50 kPa)@ne" --xlabel "V / L" --ylabel "p / kPa" --label "pV = 300 J"
 :::
 
@@ -118,7 +118,7 @@ The work done by a gas as its volume changes equals the **area under the p–V g
 Each strip is a trapezium, with area equal to its width times the mean of its two parallel sides. [M1]
 \[\text{area} = \tfrac12(2.0)(150 + 75) + \tfrac12(2.0)(75 + 50) = 225 + 125\] [C1]
 \[\text{work done by the gas} \approx 350\,\mathrm{J}\] [A1]
-The curve bends upwards (it is convex), so straight-line strips lie above it and slightly overestimate. The true area for this curve is 330 J. Counting squares under a drawn graph gives an answer of this kind, and exam questions accept a result within a stated range.
+The curve is curved in towards the axes (it bows below a straight line joining two of its points), so straight-line strips lie above it and slightly overestimate. The true area for this curve is 330 J. Counting squares under a drawn graph gives an answer of this kind, and exam questions accept a result within a stated range.
 :::
 
 ## The first law of thermodynamics
@@ -192,7 +192,7 @@ When the gas is heated at constant pressure it expands, so energy supplied by he
 
 :::eg 2.00 mol of helium (monatomic ideal gas) is heated at constant pressure so that its temperature rises by 50.0 K. Calculate the energy supplied by heating, and the fraction of it that does work on the surroundings.
 Internal energy: \(\Delta U = \tfrac32 nR\,\Delta T = 1.5 \times 2.00 \times 8.31 \times 50.0 = 1246.5\,\mathrm{J}\). [C1]
-For an ideal gas \(p\,\Delta V = nR\,\Delta T\), so the work done *on* the gas is \(W = -nR\,\Delta T = -2.00 \times 8.31 \times 50.0 = -831\,\mathrm{J}\). [C1]
+For an ideal gas \(p\,\Delta V = nR\,\Delta T\) (\(pV = nRT\) and \(p\) is constant, so \(p\,\Delta V = nR\,\Delta T\)), so the work done *on* the gas is \(W = -nR\,\Delta T = -2.00 \times 8.31 \times 50.0 = -831\,\mathrm{J}\). [C1]
 \[q = \Delta U - W = 1246.5 + 831 = 2.08 \times 10^{3}\,\mathrm{J}\] [A1]
 The fraction used as work is \(831/2077.5 = 0.40\), or 40%. [A1] The other 60% stays as internal energy. This is why it takes more energy to warm a gas by 1 K at constant pressure than at constant volume.
 :::

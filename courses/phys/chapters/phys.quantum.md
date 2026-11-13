@@ -94,7 +94,7 @@ Since \(hc/e = 1.243 \times 10^{-6}\,\mathrm{V\,m}\), a photon of wavelength \(\
 :::
 
 :::warn Do not mix eV and joules
-In \(hf = \Phi + \tfrac12 mv^2\) every term must be in joules, or every term in eV. A kinetic energy in \(\tfrac12 mv^2\) with \(m\) in kg and \(v\) in m s⁻¹ is always in joules. Changing between the two is the most common slip in this topic, so write the unit beside every number.
+In calculations that follow (for example the photoelectric equation, met below) every energy must be in joules, or every energy in eV. A kinetic energy in \(\tfrac12 mv^2\) with \(m\) in kg and \(v\) in m s⁻¹ is always in joules. Changing between the two is the most common slip in this topic, so write the unit beside every number.
 :::
 
 ## Photon momentum
@@ -134,9 +134,10 @@ A small push, but it never stops, and it needs no fuel. Solar sails have flown i
 Metals contain conduction electrons that move freely inside the metal but cannot easily leave it. If light of high enough frequency shines on a clean metal surface, electrons are ejected from the surface. This is **photoelectric emission**, and the ejected electrons are called **photoelectrons**.
 
 :::lab A gold-leaf electroscope with a zinc plate
+A gold-leaf electroscope is a metal plate on a rod with a thin strip of gold leaf hanging from it. When the plate holds charge, the rod and the leaf carry the same sign and repel each other, so the leaf lifts away from the rod; the leaf falls as the charge leaks away.
 :::steps
 1. Clean a zinc plate with emery paper to remove the oxide layer, and fix it on the cap of a gold-leaf electroscope.
-2. Charge the plate **negatively** (for example by induction or with a rubbed polythene rod) so that the gold leaf rises.
+2. Charge the plate **negatively**, for example by touching it with a negatively charged rod (a polythene rod rubbed with cloth), so that the gold leaf rises.
 3. Shine a bright filament lamp on the plate. The leaf stays up, however close or bright the lamp is.
 4. Replace the lamp with an ultraviolet (UV) lamp. The leaf slowly falls: the plate is losing its negative charge.
 5. Place a sheet of glass between the UV lamp and the plate. Glass absorbs UV, and the leaf stops falling.
@@ -400,7 +401,7 @@ In an **isolated atom**, such as one in a low-pressure gas, the electrons can on
 One of the discrete values of energy that an electron in an isolated atom can have.
 :::
 
-The energies are measured from zero, the energy of an electron that has just escaped the atom. The electron is bound, so it has **negative** energy. The lowest level is the **ground state**; the higher levels are **excited states**. The energy needed to remove an electron from the ground state to infinity is the **ionisation energy**: 13.6 eV for hydrogen.
+The energies are measured from zero, the energy of an electron that has just escaped the atom. The electron is bound, so it has **negative** energy. The lowest level is the **ground state**; the higher levels are **excited states**. The levels are numbered \(n = 1\) (the ground state), \(n = 2\) (the first excited state), \(n = 3\) and so on. The energy needed to remove an electron from the ground state to infinity is the **ionisation energy**: 13.6 eV for hydrogen.
 
 :::html
 <figure class="fig small"><svg viewBox="62 10 393 430" role="img" aria-label="Energy-level diagram for hydrogen. Horizontal lines at minus 13.6, minus 3.40, minus 1.51 and minus 0.85 electronvolts for n equals 1 to 4, and a dashed line at zero for ionisation. Six downward arrows show transitions: 2 to 1, 3 to 1, 4 to 1, 3 to 2, 4 to 2 and 4 to 3."><path class="ln-m thin dash" d="M120 30H380"/><path class="ln thick" d="M120 54.6H380M120 73.8H380M120 128.6H380M120 424.4H380"/><path class="c1" d="M150 128.6V422" marker-end="url(#ah-phys)"/><path class="c1" d="M186 73.8V422" marker-end="url(#ah-phys)"/><path class="c1" d="M222 54.6V422" marker-end="url(#ah-phys)"/><path class="c1" d="M258 73.8V126" marker-end="url(#ah-phys)"/><path class="c1" d="M294 54.6V126" marker-end="url(#ah-phys)"/><path class="c1" d="M330 54.6V71.5" marker-end="url(#ah-phys)"/><text class="tl te" x="112" y="34">n = ∞</text><text class="tl te" x="112" y="58.6">n = 4</text><text class="tl te" x="112" y="77.8">n = 3</text><text class="tl te" x="112" y="132.6">n = 2</text><text class="tl te" x="112" y="428.4">n = 1</text><text class="tl" x="388" y="34">0</text><text class="tl" x="388" y="58.6">−0.85 eV</text><text class="tl" x="388" y="77.8">−1.51 eV</text><text class="tl" x="388" y="132.6">−3.40 eV</text><text class="tl" x="388" y="428.4">−13.6 eV</text><text class="tl" x="156" y="395">2→1</text><text class="tl" x="192" y="395">3→1</text><text class="tl" x="228" y="395">4→1</text><text class="tl" x="264" y="108">3→2</text><text class="tl" x="300" y="108">4→2</text><text class="tl" x="336" y="68">4→3</text></svg><figcaption>The first four energy levels of hydrogen, drawn to scale. Each arrow is one de-excitation: the atom emits one photon whose energy equals the drop. Four levels give six possible lines.</figcaption></figure>

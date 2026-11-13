@@ -197,7 +197,7 @@ The induced field does not always point against the original field. If the flux 
 The simplest induced e.m.f. to calculate is in a straight conductor of length \(L\) moved at right angles to a uniform field \(B\) with speed \(v\). This is experiment 2 with numbers.
 
 :::proof The e.m.f. of a moving rod: E = BLv
-The rod moves a distance \(v\,\Delta t\) in a time \(\Delta t\), at right angles to \(B\) and along the rails that complete the circuit.
+Picture the rod sliding along two parallel rails that are joined to a resistor to complete the circuit (see the figure below). The rod moves a distance \(v\,\Delta t\) in a time \(\Delta t\), at right angles to \(B\) and along the rails.
 In this time it sweeps out an area \(\Delta A = L \times v\,\Delta t\), and the area enclosed by the circuit grows by this amount.
 The change in flux through the circuit is \(\Delta\Phi = B\,\Delta A = BLv\,\Delta t\).
 There is a single loop, so \(N = 1\) and Faraday's law gives \(E = \Delta\Phi/\Delta t\).
@@ -242,7 +242,7 @@ Two different things get muddled. To find the direction of the **force** on a cu
 
 ## Flux linkage and e.m.f. graphs
 
-Because \(E = -\Delta(N\Phi)/\Delta t\), the e.m.f. is minus the **gradient** of a flux-linkage–time graph. Whenever you see a graph of flux linkage, read the gradient. Where the line is flat, the e.m.f. is zero. Where it rises, the e.m.f. is negative (it opposes the rise); where it falls, positive.
+Because \(E = -\Delta(N\Phi)/\Delta t\), the e.m.f. is minus the **gradient** of a flux-linkage–time graph. Whenever you see a graph of flux linkage, read the gradient. Where the line is flat, the e.m.f. is zero. Where it rises, the e.m.f. is negative (it opposes the rise); where it falls, positive. (The sign only says which way round the loop the e.m.f. acts: take one direction round the coil as positive, and the opposite direction is then negative. What matters is that two pulses with opposite signs drive the current in opposite directions.)
 
 A rectangular coil of 50 turns, 4.0 cm wide and 5.0 cm tall, is pulled at \(0.20\,\mathrm{m\,s^{-1}}\) through a region of uniform field \(0.30\,\mathrm{T}\) that is 12 cm wide and larger than the coil. The coil enters the field in 0.20 s, is completely inside it for 0.40 s, and takes 0.20 s to leave.
 
@@ -298,7 +298,7 @@ An alternating current generator turns a coil in a magnetic field. As the coil r
 A flat coil of \(N\) turns and area \(A\) rotates at constant angular speed \(\omega\) in a uniform field \(B\). Take \(t = 0\) when its normal points along the field.
 At time \(t\) the normal has turned through \(\theta = \omega t\), so the flux through each turn is \(\Phi = BA\cos\omega t\).
 The flux linkage is \(N\Phi = NBA\cos\omega t\).
-By Faraday's and Lenz's laws, \(E = -\dfrac{\mathrm{d}(N\Phi)}{\mathrm{d}t}\) and the derivative of \(\cos\omega t\) is \(-\omega\sin\omega t\).
+By Faraday's and Lenz's laws, \(E = -\dfrac{\mathrm{d}(N\Phi)}{\mathrm{d}t}\) and the derivative of \(\cos\omega t\) is \(-\omega\sin\omega t\) (the gradient of a cosine graph is minus a sine graph, as in [Oscillations](#phys.oscillations): \(v\) is the gradient of \(x\), so \(x = x_0\cos\omega t\) gives \(v = -\omega x_0\sin\omega t\)).
 So \(E = NBA\omega\sin\omega t\).
 The peak value is \(E_0 = BAN\omega\), and the e.m.f. alternates sinusoidally with frequency \(f = \omega/2\pi\).
 :::

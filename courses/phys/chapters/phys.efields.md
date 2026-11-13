@@ -181,14 +181,16 @@ Charged particles in uniform fields are used to steer beams. In an oscilloscope 
 
 :::lab Investigating the deflection of an electron beam
 :::steps
-1. Use a deflection tube (an evacuated glass tube with an electron gun and a pair of horizontal plates, and a scale on the screen). Set the accelerating p.d. \(V_a\) between the gun's cathode and anode to a fixed value, such as \(2.6\,\mathrm{kV}\), so that the electrons enter the plates at a constant speed.
-2. Connect a variable supply across the plates. For at least six values of the plate p.d. \(V\), measure the deflection \(y\) of the spot on the screen and record it.
-3. Plot \(y\) (\(y\)-axis) against \(V\) (\(x\)-axis). The graph is a straight line through the origin, since \(y\) is proportional to \(V\).
-4. For a second graph, keep \(V\) fixed and change \(V_a\). Plot \(y\) against \(1/V_a\): this is also a straight line through the origin.
+1. Use a deflection tube (an evacuated glass tube with an electron gun, a pair of horizontal plates and a scale on the screen). The electron gun is a heated cathode that releases electrons and an anode at a high positive potential that accelerates them. Set the accelerating p.d. \(V_a\) between the cathode and the anode to a fixed value, such as \(2.6\,\mathrm{kV}\), so that the electrons enter the plates at a constant speed.
+2. Connect a variable supply across the plates. For at least six values of the plate p.d. \(V\), measure the deflection \(Y\) of the spot on the screen from its position when \(V = 0\), and record it.
+3. Plot \(Y\) (\(y\)-axis) against \(V\) (\(x\)-axis). The graph is a straight line through the origin, since \(Y\) is proportional to \(V\).
+4. For a second graph, keep \(V\) fixed and change \(V_a\). Plot \(Y\) against \(1/V_a\): this is also a straight line through the origin.
 :::
-The two results come from the same equation. With \(a = eV/(md)\), \(t = L/v\) and \(\tfrac12 mv^2 = eV_a\), the deflection at the end of the plates is
+The two results come from the same equation. With \(a = eV/(md)\), \(t = L/v\) and \(\tfrac12 mv^2 = eV_a\), the deflection at the *end of the plates* is
 \[y = \frac{VL^2}{4dV_a}\]
-so the gradient of the \(y\)–\(V\) graph is \(L^2/(4dV_a)\). Notice that the charge and the mass of the electron have cancelled, so every charged particle with the same charge-to-mass ratio would give the same line. For the tube of the earlier example (\(L = 5.0\,\mathrm{cm}\), \(d = 2.0\,\mathrm{cm}\)) and \(V_a = 2.56\,\mathrm{kV}\) (the p.d. that gives the electrons a speed of \(3.0 \times 10^{7}\,\mathrm{m\,s^{-1}}\)), the expected gradient is \(1.22 \times 10^{-5}\,\mathrm{m\,V^{-1}}\), so a plate p.d. of 500 V gives a deflection of 6.1 mm.
+This is not yet what you measure on the screen. After the plates there is no force, so the electron travels in a straight line. Its vertical velocity at the end of the plates is \(v_y = at\) and \(y = \tfrac12 at^2\), so \(v_y = 2y/t\) and the line makes an angle \(\theta\) with \(\tan\theta = v_y/v = 2y/(vt) = 2y/L\). If the screen is a distance \(s\) beyond the end of the plates, the spot is a further \(s\tan\theta\) from the axis:
+\[Y = y + s\tan\theta = y\left(1 + \frac{2s}{L}\right) = \frac{VL(L + 2s)}{4dV_a}\]
+so the gradient of the \(Y\)–\(V\) graph is \(L(L + 2s)/(4dV_a)\). The screen deflection is proportional to the plate deflection, with the same straight-line graph but a steeper gradient. Notice that the charge and the mass of the electron have cancelled, so every charged particle with the same charge-to-mass ratio would give the same line. For the tube of the earlier example (\(L = 5.0\,\mathrm{cm}\), \(d = 2.0\,\mathrm{cm}\)), a screen \(s = 15.0\,\mathrm{cm}\) beyond the plates and \(V_a = 2.56\,\mathrm{kV}\) (the p.d. that gives the electrons a speed of \(3.0 \times 10^{7}\,\mathrm{m\,s^{-1}}\)), the plate deflection has gradient \(L^2/(4dV_a) = 1.22 \times 10^{-5}\,\mathrm{m\,V^{-1}}\), so a plate p.d. of 500 V gives \(y = 6.1\,\mathrm{mm}\) at the end of the plates. The expected gradient of the \(Y\)–\(V\) graph is \(8.5 \times 10^{-5}\,\mathrm{m\,V^{-1}}\), so 500 V moves the spot \(Y = 43\,\mathrm{mm}\) on the screen. (If your tube lets you measure the deflection at the plates themselves, use \(y\) and the first gradient.)
 :::
 
 ## Coulomb's law
@@ -201,7 +203,7 @@ The force between two point charges is proportional to the product of the charge
 
 :::formula Coulomb's law
 \[F = \frac{Q_1 Q_2}{4\pi\varepsilon_0 r^2}\]
-\(F\): force on each charge (N) · \(Q_1, Q_2\): the charges (C) · \(r\): separation of the charges (m) · \(\varepsilon_0\): permittivity of free space, \(8.85 \times 10^{-12}\,\mathrm{F\,m^{-1}}\). The constant \(\dfrac{1}{4\pi\varepsilon_0} = 8.99 \times 10^{9}\,\mathrm{m\,F^{-1}}\). The formula is for point charges in free space (air is close enough).
+\(F\): force on each charge (N) · \(Q_1, Q_2\): the charges (C) · \(r\): separation of the charges (m) · \(\varepsilon_0\): permittivity of free space, \(8.85 \times 10^{-12}\,\mathrm{C^2\,N^{-1}\,m^{-2}}\); it is just the constant that sets the strength of the electric force. The constant \(\dfrac{1}{4\pi\varepsilon_0} = 8.99 \times 10^{9}\,\mathrm{N\,m^2\,C^{-2}}\). (The same units are written \(\mathrm{F\,m^{-1}}\) for \(\varepsilon_0\) and \(\mathrm{m\,F^{-1}}\) for \(1/(4\pi\varepsilon_0)\), where the farad, F, is introduced in the next chapter; you do not need it here.) The formula is for point charges in free space (air is close enough).
 :::
 
 The two charges exert forces of equal size on each other, in opposite directions, by Newton's third law. The force is **repulsive** between like charges and **attractive** between unlike ones. The usual exam method is to put the sizes of the charges into the formula without signs, which gives the size of the force, and then to say the direction from the signs.
@@ -293,6 +295,7 @@ Unlike gravitational potential, the sign depends on the source. Near a **positiv
 Bring a small positive charge \(q\) from infinity to distance \(r\) from a point charge \(Q\). At distance \(x\) the electric force on \(q\) is \(Qq/(4\pi\varepsilon_0 x^2)\).
 To move \(q\) slowly, you push against this force with an equal force. The work you do is the area under the force–distance graph from \(x = \infty\) to \(x = r\):
 \[W = \int_{\infty}^{r} \left(-\frac{Qq}{4\pi\varepsilon_0 x^2}\right)dx = \frac{Qq}{4\pi\varepsilon_0 r}\]
+(The area under a \(1/x^2\) curve from \(r\) to infinity is \(1/r\). This is calculus from the maths course, and you may take the result as given.)
 The work done per unit charge is \(V = W/q = \dfrac{Q}{4\pi\varepsilon_0 r}\).
 For \(Q > 0\) the result is positive (you pushed against a repulsion), and for \(Q < 0\) it is negative.
 :::
@@ -364,7 +367,7 @@ The field and the potential describe the same thing. The field is the **negative
 \(E\): field strength in the direction of \(x\) (\(\mathrm{V\,m^{-1}}\)) · \(\Delta V/\Delta x\): the gradient of a graph of \(V\) against distance. The minus sign means the field points in the direction in which the potential **falls**.
 :::
 
-For a uniform field, the gradient is the same everywhere, which gives back \(E = V/d\). Between the two plates in the earlier example, the potential falls steadily from \(800\,\mathrm{V}\) at the positive plate to \(0\) at the negative plate.
+For a uniform field, the gradient is the same everywhere, which gives back \(E = V/d\). Take two plates \(2.0\,\mathrm{cm}\) apart with \(800\,\mathrm{V}\) across them: the potential falls steadily from \(800\,\mathrm{V}\) at the positive plate to \(0\) at the negative plate.
 
 :::plot Potential between two plates \(2.0\,\mathrm{cm}\) apart with a p.d. of \(800\,\mathrm{V}\). The graph is a straight line, and its gradient is minus the field strength.
 --f "800-400*x+0*sqrt(2-x)" --x 0 2.3 --y 0 900 --pt "0.5,600,(0.5 cm, 600 V)@ne" --pt "1.5,200,(1.5 cm, 200 V)@ne" --xlabel "x / cm" --ylabel "V / V" --xstep 0.5
@@ -385,7 +388,7 @@ A conducting sphere carries its charge on its surface. Inside the conductor the 
 The potential is a flat \(450\,\mathrm{V}\) up to the surface and then falls as \(1/r\). The field is zero inside, jumps to \(4.5\,\mathrm{kV\,m^{-1}}\) at the surface and then falls as \(1/r^2\). The field is the negative of the gradient of the potential graph: flat potential inside means zero field; steepest gradient at the surface means the largest field.
 
 :::eg The potential at distance \(r\) from the centre of the sphere above (\(r\) in cm) is \(V = 4495/r\) volts for \(r \geq 10\). Use the gradient to find the field strength at \(r = 20\,\mathrm{cm}\), and check with the formula for a point charge.
-The gradient of \(V = 4495\,r^{-1}\) is \(dV/dr = -4495/r^2\). At \(r = 20\) this is \(-11.24\,\mathrm{V\,cm^{-1}}\) or \(-1124\,\mathrm{V\,m^{-1}}\). [C1]
+The gradient of \(V = 4495\,r^{-1}\) is \(dV/dr = -4495/r^2\) (differentiating \(r^{-1}\) gives \(-r^{-2}\); if you have not met differentiation, find the gradient of the tangent to the graph at \(r = 20\,\mathrm{cm}\) instead, as described below). At \(r = 20\) this is \(-11.24\,\mathrm{V\,cm^{-1}}\) or \(-1124\,\mathrm{V\,m^{-1}}\). [C1]
 \(E = -\dfrac{dV}{dr} = 1.1 \times 10^{3}\,\mathrm{V\,m^{-1}}\), directed away from the sphere. [A1]
 Check: \(E = \dfrac{8.99 \times 10^{9} \times 5.0 \times 10^{-9}}{(0.20)^2} = 1.1 \times 10^{3}\,\mathrm{N\,C^{-1}}\). [B1]
 On an exam graph without an equation you would draw the tangent at \(r = 20\,\mathrm{cm}\) and measure its gradient between two points far apart on the tangent, as you did for the gradient of a straight line.
@@ -406,7 +409,7 @@ Plotted against separation, \(E_P\) is a curve like \(1/r\), above the axis for 
 --f "2.30/x+0*sqrt(2.6-x)" --f "-2.30/x+0*sqrt(2.6-x)" --x 0.4 3 --y -6 6 --label "like charges" --label "unlike charges" --xlabel "r / 10⁻¹⁰ m" --ylabel "Eₚ / 10⁻¹⁸ J" --legend tr
 :::
 
-The gradient of this graph is minus the force on the charges: \(F = -dE_P/dr\). For like charges the gradient is negative, so the force is positive, meaning repulsion; for unlike charges the gradient is positive, so the force is attractive. When a free charge moves in a field, the total of electric potential energy and kinetic energy is constant, as long as no other forces do work. That is how you find the speed at a different point, or how close a charge gets before it is stopped.
+The gradient of this graph at a point (the gradient of the tangent there) is minus the force on the charges: \(F = -dE_P/dr\). For like charges the gradient is negative, so the force is positive, meaning repulsion; for unlike charges the gradient is positive, so the force is attractive. When a free charge moves in a field, the total of electric potential energy and kinetic energy is constant, as long as no other forces do work. That is how you find the speed at a different point, or how close a charge gets before it is stopped.
 
 :::eg An α-particle (charge \(+2e\)) with kinetic energy \(5.5\,\mathrm{MeV}\) is fired straight at a gold nucleus (charge \(+79e\)), which stays at rest. Find the distance of closest approach. Take \(1\,\mathrm{eV} = 1.60 \times 10^{-19}\,\mathrm{J}\).
 The kinetic energy is \(5.5 \times 10^{6} \times 1.60 \times 10^{-19} = 8.8 \times 10^{-13}\,\mathrm{J}\). [C1]
@@ -443,7 +446,7 @@ You have now met two fields that obey inverse-square laws. Everything that you l
 Gravitational fields cannot be screened, because there is no negative mass to cancel them. Electric fields can be, which is why a metal box shields its contents from an external electric field.
 
 :::board
-Many textbooks shorten \(1/(4\pi\varepsilon_0)\) to \(k\) and write \(F = kQ_1Q_2/r^2\); on a Cambridge paper write \(1/(4\pi\varepsilon_0)\) or use its value \(8.99 \times 10^{9}\,\mathrm{m\,F^{-1}}\), because \(k\) is the Boltzmann constant on the data sheet.
+Many textbooks shorten \(1/(4\pi\varepsilon_0)\) to \(k\) and write \(F = kQ_1Q_2/r^2\); on a Cambridge paper write \(1/(4\pi\varepsilon_0)\) or use its value \(8.99 \times 10^{9}\,\mathrm{N\,m^2\,C^{-2}}\) (the same as \(\mathrm{m\,F^{-1}}\)), because \(k\) is the Boltzmann constant on the data sheet.
 :::
 
 :::eg Spot the error: find the electric field strength at the midpoint between a charge of \(+5.0\,\mathrm{nC}\) and a charge of \(-5.0\,\mathrm{nC}\), which are \(0.40\,\mathrm{m}\) apart.
