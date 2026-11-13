@@ -23,19 +23,31 @@
     },
     {
       "id": "cs.data",
-      "title": "Information representation",
+      "title": "Number systems and binary arithmetic",
+      "level": "as",
+      "group": "AS theory"
+    },
+    {
+      "id": "cs.media",
+      "title": "Images, sound and compression",
       "level": "as",
       "group": "AS theory"
     },
     {
       "id": "cs.networks",
-      "title": "Communication and networks",
+      "title": "Networks: models, topologies and hardware",
+      "level": "as",
+      "group": "AS theory"
+    },
+    {
+      "id": "cs.internet",
+      "title": "The internet: IP addresses, DNS and streaming",
       "level": "as",
       "group": "AS theory"
     },
     {
       "id": "cs.hardware",
-      "title": "Hardware",
+      "title": "Computers and their components",
       "level": "as",
       "group": "AS theory"
     },
@@ -47,7 +59,7 @@
     },
     {
       "id": "cs.processor",
-      "title": "Processor fundamentals",
+      "title": "Processor fundamentals and the fetch-execute cycle",
       "level": "as",
       "group": "AS theory"
     },
@@ -59,7 +71,7 @@
     },
     {
       "id": "cs.software",
-      "title": "System software",
+      "title": "System software: operating systems and translators",
       "level": "as",
       "group": "AS theory"
     },
@@ -71,79 +83,121 @@
     },
     {
       "id": "cs.ethics",
-      "title": "Ethics and ownership",
+      "title": "Ethics, ownership and the impact of AI",
       "level": "as",
       "group": "AS theory"
     },
     {
       "id": "cs.databases",
-      "title": "Databases and normalisation",
+      "title": "Databases: the relational model and normalisation",
       "level": "as",
       "group": "AS theory"
     },
     {
       "id": "cs.sql",
-      "title": "SQL",
+      "title": "DBMS and SQL",
       "level": "as",
       "group": "AS theory"
     },
     {
       "id": "cs.algorithms",
-      "title": "Algorithm design and problem-solving",
-      "level": "as",
-      "group": "AS programming"
-    },
-    {
-      "id": "cs.datatypes",
-      "title": "Data types, arrays, records and files",
+      "title": "Computational thinking and algorithms",
       "level": "as",
       "group": "AS programming"
     },
     {
       "id": "cs.programming",
-      "title": "Programming: constructs, procedures and functions",
+      "title": "Programming basics: variables, selection and loops",
+      "level": "as",
+      "group": "AS programming"
+    },
+    {
+      "id": "cs.datatypes",
+      "title": "Data types, records and arrays",
+      "level": "as",
+      "group": "AS programming"
+    },
+    {
+      "id": "cs.procedures",
+      "title": "Procedures, functions and parameters",
+      "level": "as",
+      "group": "AS programming"
+    },
+    {
+      "id": "cs.structures",
+      "title": "Text files, stacks, queues and linked lists",
       "level": "as",
       "group": "AS programming"
     },
     {
       "id": "cs.development",
-      "title": "Software development and testing",
+      "title": "The development life cycle and program design",
       "level": "as",
       "group": "AS programming"
     },
     {
-      "id": "cs.datarep2",
-      "title": "User-defined types, file organisation and floating point",
+      "id": "cs.testing",
+      "title": "Testing, errors and maintenance",
+      "level": "as",
+      "group": "AS programming"
+    },
+    {
+      "id": "cs.usertypes",
+      "title": "User-defined types, file organisation and hashing",
+      "level": "a2",
+      "group": "A Level theory"
+    },
+    {
+      "id": "cs.float",
+      "title": "Floating-point numbers",
       "level": "a2",
       "group": "A Level theory"
     },
     {
       "id": "cs.networks2",
-      "title": "Protocols and packet switching",
+      "title": "Protocols, TCP/IP and packet switching",
       "level": "a2",
       "group": "A Level theory"
     },
     {
       "id": "cs.hardware2",
-      "title": "Processors, parallelism, virtual machines and Boolean algebra",
+      "title": "Processors, parallel processing and virtual machines",
       "level": "a2",
       "group": "A Level theory"
     },
     {
-      "id": "cs.software2",
-      "title": "Operating systems and translators",
+      "id": "cs.boolean",
+      "title": "Boolean algebra, Karnaugh maps, adders and flip-flops",
+      "level": "a2",
+      "group": "A Level theory"
+    },
+    {
+      "id": "cs.os",
+      "title": "Operating systems: processes, scheduling and memory",
+      "level": "a2",
+      "group": "A Level theory"
+    },
+    {
+      "id": "cs.translators",
+      "title": "Compilers, BNF and Reverse Polish notation",
       "level": "a2",
       "group": "A Level theory"
     },
     {
       "id": "cs.security2",
-      "title": "Encryption and digital certificates",
+      "title": "Encryption, SSL/TLS and digital certificates",
       "level": "a2",
       "group": "A Level theory"
     },
     {
       "id": "cs.ai",
-      "title": "Artificial intelligence: graphs, search and machine learning",
+      "title": "Graphs and pathfinding: Dijkstra and A*",
+      "level": "a2",
+      "group": "A Level theory"
+    },
+    {
+      "id": "cs.ml",
+      "title": "Machine learning and neural networks",
       "level": "a2",
       "group": "A Level theory"
     },
@@ -155,7 +209,7 @@
     },
     {
       "id": "cs.adts",
-      "title": "Abstract data types: stacks, queues, lists, trees",
+      "title": "Abstract data types: stacks, queues, lists, trees and graphs",
       "level": "a2",
       "group": "A Level programming"
     },
@@ -173,59 +227,391 @@
     },
     {
       "id": "cs.paradigms",
-      "title": "Programming paradigms, files and exceptions",
+      "title": "Programming paradigms: low-level, imperative and declarative",
       "level": "a2",
       "group": "A Level programming"
     },
     {
-      "id": "cs.exam.p13",
-      "title": "Papers 1 and 3: theory",
+      "id": "cs.fileproc",
+      "title": "File processing and exception handling",
+      "level": "a2",
+      "group": "A Level programming"
+    },
+    {
+      "id": "cs.python",
+      "title": "Python for Paper 4: the practical toolkit",
+      "level": "a2",
+      "group": "Skills"
+    },
+    {
+      "id": "cs.exam.p1",
+      "title": "Paper 1 guide: Theory Fundamentals",
       "level": "guide",
       "group": "Exam readiness"
     },
     {
-      "id": "cs.exam.p24",
-      "title": "Papers 2 and 4: problem-solving and programming",
+      "id": "cs.exam.p2",
+      "title": "Paper 2 guide: Problem-solving and Programming",
       "level": "guide",
       "group": "Exam readiness"
     },
     {
       "id": "cs.mixed.as",
-      "title": "Mixed practice: AS",
+      "title": "Mixed practice: AS (Papers 1 and 2)",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "cs.exam.p3",
+      "title": "Paper 3 guide: Advanced Theory",
+      "level": "guide",
+      "group": "Exam readiness"
+    },
+    {
+      "id": "cs.exam.p4",
+      "title": "Paper 4 guide: the Practical",
       "level": "guide",
       "group": "Exam readiness"
     },
     {
       "id": "cs.mixed.a2",
-      "title": "Mixed practice: A Level",
+      "title": "Mixed practice: A Level (Papers 3 and 4)",
       "level": "guide",
       "group": "Exam readiness"
     },
     {
       "id": "cs.mock.p1",
-      "title": "Mock Paper 1",
+      "title": "Mock Paper 1: Theory Fundamentals",
       "level": "mock",
       "group": "Exam readiness"
     },
     {
       "id": "cs.mock.p2",
-      "title": "Mock Paper 2",
+      "title": "Mock Paper 2: Problem-solving and Programming",
       "level": "mock",
       "group": "Exam readiness"
     },
     {
       "id": "cs.mock.p3",
-      "title": "Mock Paper 3",
+      "title": "Mock Paper 3: Advanced Theory",
       "level": "mock",
       "group": "Exam readiness"
     },
     {
       "id": "cs.mock.p4",
-      "title": "Mock Paper 4",
+      "title": "Mock Paper 4: Practical",
       "level": "mock",
       "group": "Exam readiness"
     }
   ],
-  "aliases": {},
-  "packages": []
+  "aliases": {
+    "cs.datarep2": "cs.usertypes",
+    "cs.software2": "cs.os",
+    "cs.exam.p13": "cs.exam.p1",
+    "cs.exam.p24": "cs.exam.p2"
+  },
+  "packages": [
+    {
+      "id": "P1",
+      "title": "Start here: course map and programming from zero",
+      "chapters": [
+        "cs.overview",
+        "cs.f.basics"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P2",
+      "title": "Number systems, images, sound and compression",
+      "chapters": [
+        "cs.data",
+        "cs.media"
+      ],
+      "widgets": [
+        "cs-binary"
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Networks and the internet",
+      "chapters": [
+        "cs.networks",
+        "cs.internet"
+      ],
+      "widgets": [
+        "cs-ip"
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "Hardware and logic gates",
+      "chapters": [
+        "cs.hardware",
+        "cs.logic"
+      ],
+      "widgets": [
+        "cs-logic"
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "The processor and assembly language",
+      "chapters": [
+        "cs.processor",
+        "cs.assembly"
+      ],
+      "widgets": [
+        "cs-asm"
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "System software, security and ethics",
+      "chapters": [
+        "cs.software",
+        "cs.security",
+        "cs.ethics"
+      ],
+      "widgets": [
+        "cs-check"
+      ]
+    },
+    {
+      "id": "P7",
+      "title": "Databases and SQL",
+      "chapters": [
+        "cs.databases",
+        "cs.sql"
+      ],
+      "widgets": [
+        "cs-sql"
+      ]
+    },
+    {
+      "id": "P8",
+      "title": "Algorithms, pseudocode and the basic constructs",
+      "chapters": [
+        "cs.algorithms",
+        "cs.programming"
+      ],
+      "widgets": [
+        "cs-trace"
+      ]
+    },
+    {
+      "id": "P9",
+      "title": "Arrays, procedures, files and first ADTs",
+      "chapters": [
+        "cs.datatypes",
+        "cs.procedures",
+        "cs.structures"
+      ],
+      "widgets": [
+        "cs-stack"
+      ]
+    },
+    {
+      "id": "P10",
+      "title": "Software development and testing",
+      "chapters": [
+        "cs.development",
+        "cs.testing"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P11",
+      "title": "User-defined types, hashing and floating point",
+      "chapters": [
+        "cs.usertypes",
+        "cs.float"
+      ],
+      "widgets": [
+        "cs-float"
+      ]
+    },
+    {
+      "id": "P12",
+      "title": "Protocols and processors (A Level)",
+      "chapters": [
+        "cs.networks2",
+        "cs.hardware2"
+      ],
+      "widgets": [
+        "cs-pipeline"
+      ]
+    },
+    {
+      "id": "P13",
+      "title": "Boolean algebra and operating systems",
+      "chapters": [
+        "cs.boolean",
+        "cs.os"
+      ],
+      "widgets": [
+        "cs-kmap",
+        "cs-sched"
+      ]
+    },
+    {
+      "id": "P14",
+      "title": "Translators and encryption",
+      "chapters": [
+        "cs.translators",
+        "cs.security2"
+      ],
+      "widgets": [
+        "cs-rpn"
+      ]
+    },
+    {
+      "id": "P15",
+      "title": "Artificial intelligence",
+      "chapters": [
+        "cs.ai",
+        "cs.ml"
+      ],
+      "widgets": [
+        "cs-path"
+      ]
+    },
+    {
+      "id": "P16",
+      "title": "Searching, sorting and ADTs (A Level)",
+      "chapters": [
+        "cs.algorithms2",
+        "cs.adts"
+      ],
+      "widgets": [
+        "cs-sort"
+      ]
+    },
+    {
+      "id": "P17",
+      "title": "Recursion and object-oriented programming",
+      "chapters": [
+        "cs.recursion",
+        "cs.oop"
+      ],
+      "widgets": [
+        "cs-calls"
+      ]
+    },
+    {
+      "id": "P18",
+      "title": "Paradigms, file processing and Python for Paper 4",
+      "chapters": [
+        "cs.paradigms",
+        "cs.fileproc",
+        "cs.python"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P19",
+      "title": "Exam readiness: AS guides and mixed practice",
+      "chapters": [
+        "cs.exam.p1",
+        "cs.exam.p2",
+        "cs.mixed.as"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P20",
+      "title": "Exam readiness: A Level guides and mixed practice",
+      "chapters": [
+        "cs.exam.p3",
+        "cs.exam.p4",
+        "cs.mixed.a2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P21",
+      "title": "Mock Papers 1 and 2",
+      "chapters": [
+        "cs.mock.p1",
+        "cs.mock.p2"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "P22",
+      "title": "Mock Papers 3 and 4",
+      "chapters": [
+        "cs.mock.p3",
+        "cs.mock.p4"
+      ],
+      "widgets": []
+    }
+  ],
+  "papers": [
+    {
+      "id": "P1",
+      "title": "Paper 1: Theory Fundamentals",
+      "chapters": [
+        "cs.data",
+        "cs.media",
+        "cs.networks",
+        "cs.internet",
+        "cs.hardware",
+        "cs.logic",
+        "cs.processor",
+        "cs.assembly",
+        "cs.software",
+        "cs.security",
+        "cs.ethics",
+        "cs.databases",
+        "cs.sql"
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Paper 2: Fundamental Problem-solving and Programming Skills",
+      "chapters": [
+        "cs.algorithms",
+        "cs.programming",
+        "cs.datatypes",
+        "cs.procedures",
+        "cs.structures",
+        "cs.development",
+        "cs.testing"
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Paper 3: Advanced Theory",
+      "chapters": [
+        "cs.usertypes",
+        "cs.float",
+        "cs.networks2",
+        "cs.hardware2",
+        "cs.boolean",
+        "cs.os",
+        "cs.translators",
+        "cs.security2",
+        "cs.ai",
+        "cs.ml",
+        "cs.algorithms2",
+        "cs.adts",
+        "cs.recursion",
+        "cs.oop",
+        "cs.paradigms",
+        "cs.fileproc"
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "Paper 4: Practical",
+      "chapters": [
+        "cs.algorithms2",
+        "cs.adts",
+        "cs.recursion",
+        "cs.oop",
+        "cs.fileproc",
+        "cs.python"
+      ]
+    }
+  ]
 }
