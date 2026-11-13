@@ -6,6 +6,8 @@
 - History (`hist`, 9489, 96 chapters) complete Nov 13: REVIEW FINAL done, assembled (links page `tools.l.hist`,
   History section on the resources page). Its COURSE.md has the course rules; history in git.
 - Now: queue item 4, Reader pass on Mathematics (62 chapters, READER batches → FIX), then Physics. Guard on `math`.
+  READER and FIX done to math.p3.vectors (84 items); Reader batch 4 (p3.complex to s2.linear) running.
+- Weekly limit lifted until the Nov 17 23:00 UTC reset (user, Nov 13; AGENT-RUN Usage gate); 5-hour gate unchanged.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
