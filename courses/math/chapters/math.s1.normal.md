@@ -57,6 +57,23 @@ The \(z\)-value says how many standard deviations a value is from the mean. Alwa
 --f "0.39894*exp(-(x**2)/2)" --label "N(0, 1)" --x -4 4 --y 0 0.45 --shade "0,-1,1.25" --vline 0 --legend tr
 :::
 
+## Reading the table
+
+The normal table is printed in the formula list **MF19**, which you are given in every Paper 5 exam, so you do not need to learn it. It is headed "The normal distribution function" and gives \(\Phi(z)\) to 4 decimal places for \(z \ge 0\). Each row is a value of \(z\) to one decimal place (such as 0.6); the columns headed 0 to 9 give the second decimal place; and the **ADD** columns headed 1 to 9 give the third decimal place. Part of it looks like this (each entry is \(\Phi(z)\)):
+
+| \(z\) | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 0.6 | 0.7257 | 0.7291 | 0.7324 | 0.7357 | 0.7389 | 0.7422 | 0.7454 | 0.7486 | 0.7517 | 0.7549 |
+| 1.0 | 0.8413 | 0.8438 | 0.8461 | 0.8485 | 0.8508 | 0.8531 | 0.8554 | 0.8577 | 0.8599 | 0.8621 |
+| 1.2 | 0.8849 | 0.8869 | 0.8888 | 0.8907 | 0.8925 | 0.8944 | 0.8962 | 0.8980 | 0.8997 | 0.9015 |
+| 1.6 | 0.9452 | 0.9463 | 0.9474 | 0.9484 | 0.9495 | 0.9505 | 0.9515 | 0.9525 | 0.9535 | 0.9545 |
+
+- **Two decimal places.** \(\Phi(1.25)\): go to the row 1.2 and the column 5, to find \(0.8944\).
+- **Three decimal places** (for example \(z = 0.625\)). Read the two-decimal value, \(\Phi(0.62) = 0.7324\) (row 0.6, column 2). Then go along the same row to the ADD column for the third decimal (here 5) and **add** that entry, which is in units of \(0.0001\): about 16, that is \(0.0016\). So \(\Phi(0.625) = 0.7324 + 0.0016 = 0.7340\). The ADD columns do the interpolation for you: 0.625 is halfway between 0.62 and 0.63, and \(\Phi(0.63) = 0.7357\), so the answer is about halfway between \(0.7324\) and \(0.7357\). If you do not use the ADD columns, interpolate in the same way.
+- **Negative \(z\).** The table has no negative values, so use \(\Phi(-z) = 1 - \Phi(z)\). For example \(\Phi(-1.2) = 1 - 0.8849 = 0.1151\).
+
+A calculator is not essential. Paper 5 allows a scientific calculator (not a graphical one, and not one with symbolic algebra), so if yours has a normal distribution function you may use it to check your reading of the table. Still write the standardising line, because an unsupported calculator answer earns no marks.
+
 :::eg \(X \sim N(50, 8^2)\). Find (a) \(P(X < 58)\), (b) \(P(X > 45)\), (c) \(P(42 < X < 60)\).
 (a) \(z = \dfrac{58 - 50}{8} = 1\), so \(P(X < 58) = \Phi(1) = 0.8413\).
 (b) \(z = \dfrac{45 - 50}{8} = -0.625\). \(P(X > 45) = P(Z > -0.625)\) \(= \Phi(0.625) = 0.734\).
@@ -71,7 +88,7 @@ The widget shades the area between any two values, or below or above one, for an
 
 :::eg (Real context) Bags of flour are filled with mass \(X\) grams, where \(X \sim N(500, 6^2)\). Find the proportion of bags with mass below 490 g, and the mass exceeded by 10% of bags.
 \(z = \dfrac{490 - 500}{6} = -1.667\), so \(P(X < 490) = \Phi(-1.667)\) \(= 1 - \Phi(1.667) = 0.0478\): about 4.8% of bags.
-For the mass \(m\) exceeded by 10% of bags, \(P(X > m) = 0.1\), so \(P(X < m) = 0.9\). The table (inverse) gives \(z = 1.2816\). Then \(m = 500 + 1.2816\times 6 = 507.7\) g.
+For the mass \(m\) exceeded by 10% of bags, \(P(X > m) = 0.1\), so \(P(X < m) = 0.9\). The table in reverse gives \(z = 1.2816\) (see the table of values in "Using the table in reverse"). Then \(m = 500 + 1.2816\times 6 = 507.7\) g.
 :::
 
 :::eg (Real context) Anna scores 70 in a test where the marks are \(N(62, 8^2)\), and 63 in a second test where the marks are \(N(55, 5^2)\). Which is the better performance relative to the other candidates?
@@ -87,11 +104,23 @@ Proportion rejected \(= 1 - 0.9545 = 0.0455\). In a batch of 500 you expect \(50
 
 ## Using the table in reverse
 
-Sometimes the probability is given and you need the value. Find the \(z\) with \(\Phi(z) = p\) (the table in reverse, or the percentage points table), then convert back with \(x = \mu + z\sigma\).
+Sometimes the probability is given and you need the value. Find the \(z\) with \(\Phi(z) = p\) (the table in reverse, or the table of critical values), then convert back with \(x = \mu + z\sigma\).
 
 :::key Inverse normal
-If \(P(X < x) = p\), find \(z\) with \(\Phi(z) = p\), then \(x = \mu + z\sigma\). If \(p < 0.5\), \(z\) is **negative**: use \(z = -\Phi^{-1}(1 - p)\). Common values: \(\Phi^{-1}(0.9) = 1.2816\), \(\Phi^{-1}(0.95) = 1.6449\), \(\Phi^{-1}(0.975) = 1.9600\).
+\(\Phi^{-1}(p)\) means "the \(z\) with \(\Phi(z) = p\)". If \(P(X < x) = p\), find \(z = \Phi^{-1}(p)\), then \(x = \mu + z\sigma\). If \(p < 0.5\), \(z\) is **negative**: use \(z = -\Phi^{-1}(1 - p)\).
 :::
+
+**Where the \(z\)-values come from.** MF19 has a second table, "Critical values for the normal distribution", which lists, for nine values of \(p\), the \(z\) with \(\Phi(z) = p\), to 3 decimal places:
+
+| \(p\) | 0.75 | 0.90 | 0.95 | 0.975 | 0.99 | 0.995 | 0.9975 | 0.999 | 0.9995 |
+|---|---|---|---|---|---|---|---|---|---|
+| \(z\) | 0.674 | 1.282 | 1.645 | 1.960 | 2.326 | 2.576 | 2.807 | 3.090 | 3.291 |
+
+For any other \(p\), read the main table backwards: find the entry nearest \(p\) in the body, read off its \(z\), and use the ADD columns for the third decimal place. For \(p = 0.8\): \(\Phi(0.84) = 0.7995\) and \(\Phi(0.85) = 0.8023\), so \(0.8000\) is just above the 0.84 entry, and the ADD columns give \(z = 0.842\). A calculator's inverse normal function gives more figures (\(0.8416\)). This chapter quotes the 4 decimal place values, which a calculator gives. A value from the table is a little less precise, but rounded to 3 significant figures the answers usually agree. The values used in this chapter:
+
+| \(p\) | 0.7 | 0.75 | 0.8 | 0.85 | 0.9 | 0.92 | 0.95 | 0.96 | 0.975 |
+|---|---|---|---|---|---|---|---|---|---|
+| \(\Phi^{-1}(p)\) | 0.5244 | 0.6745 | 0.8416 | 1.0364 | 1.2816 | 1.4051 | 1.6449 | 1.7507 | 1.9600 |
 
 :::eg \(X \sim N(50, 8^2)\). Find \(k\) such that \(P(X < k) = 0.9\). Then find \(\sigma\) if \(Y \sim N(100, \sigma^2)\) and \(P(Y > 110) = 0.05\).
 \(\Phi(z) = 0.9\) gives \(z = 1.2816\), so \(k = 50 + 1.2816\times 8 = 60.3\).
@@ -105,7 +134,7 @@ When both \(\mu\) and \(\sigma\) are unknown, two probabilities give two equatio
 :::eg (Exam style) The random variable \(X \sim N(\mu, \sigma^2)\). It is given that \(P(X < 30) = 0.2\) and \(P(X > 50) = 0.1\). Find \(\mu\) and \(\sigma\). [6 marks]
 \(P(X < 30) = 0.2\) gives \(\dfrac{30 - \mu}{\sigma} = -0.8416\). [M1 A1]
 \(P(X > 50) = 0.1\) means \(P(X < 50) = 0.9\), so \(\dfrac{50 - \mu}{\sigma} = 1.2816\). [M1 A1]
-Subtract the first equation from the second: \(\dfrac{20}{\sigma} = 1.2816 + 0.8416\) \(= 2.1232\), so \(\sigma = 9.42\). [M1]
+Subtract the first equation from the second. The \(\mu\) terms cancel: \(\dfrac{50 - \mu}{\sigma} - \dfrac{30 - \mu}{\sigma} = \dfrac{20}{\sigma}\), and the right side is \(1.2816 - (-0.8416) = 2.1232\). So \(\dfrac{20}{\sigma} = 2.1232\) and \(\sigma = 9.42\). [M1]
 Then \(\mu = 30 + 0.8416\times 9.42 = 37.9\). [A1]
 Check: \(50 - 37.9 = 12.1\) and \(12.1/9.42 = 1.28\) ✓.
 :::
@@ -153,7 +182,7 @@ The approximation is good for probabilities near the middle of the distribution.
 (a) \(X \sim N(160, 12^2)\). The \(z\)-values are \(\dfrac{150 - 160}{12} = -0.8333\) and \(\dfrac{175 - 160}{12} = 1.25\). [M1]
 \[P(150 < X < 175) = \Phi(1.25) - \Phi(-0.8333)\]
 [M1] \(= 0.8944 - 0.2023 = 0.692\). [A1]
-(b) Let \(m\) be the least mass of a large apple, so \(P(X > m) = 0.2\) and \(P(X < m) = 0.8\). [M1] The inverse table gives \(z = 0.8416\). [B1] Then \(m = 160 + 0.8416 \times 12 = 170.1\), so the least mass is about 170 g. [A1]
+(b) Let \(m\) be the least mass of a large apple, so \(P(X > m) = 0.2\) and \(P(X < m) = 0.8\). [M1] The table in reverse (or a calculator's inverse normal) gives \(z = 0.8416\). [B1] Then \(m = 160 + 0.8416 \times 12 = 170.1\), so the least mass is about 170 g. [A1]
 (c) The probability that an apple is large is \(0.2\), so the number of large apples \(L \sim B(6, 0.2)\). [B1]
 \[P(L \ge 2) = 1 - P(L = 0) - P(L = 1)\]
 [M1]

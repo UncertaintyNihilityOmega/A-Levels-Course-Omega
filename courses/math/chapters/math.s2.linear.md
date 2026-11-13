@@ -39,7 +39,9 @@ You may use these results without proof. Learn them: MF19 does not give the rule
 :::
 
 :::proof Why \(E(aX + b) = aE(X) + b\) and \(\mathrm{Var}(aX + b) = a^2\,\mathrm{Var}(X)\)
-Take a discrete variable with values \(x\) and probabilities \(p\), so \(\sum p = 1\) and \(E(X) = \sum xp\). The variable \(aX + b\) takes the value \(ax + b\) with the same probability \(p\). So
+Take a discrete variable with values \(x\) and probabilities \(p\), so \(\sum p = 1\) and \(E(X) = \sum xp\). The mean of any expression \(g(X)\) is \(E\big[g(X)\big] = \sum g(x)\,p\): work out \(g\) at each value, multiply by the probability and add. So \(E(X^2) = \sum x^2p\) and \(E\big[(X - \mu)^2\big] = \sum (x - \mu)^2p\). The **variance** is defined as \(\mathrm{Var}(X) = E\big[(X - \mu)^2\big]\), the mean of the squared distance from the mean; the second proof below shows that it equals \(E(X^2) - [E(X)]^2\).
+Two rules follow from adding the terms \(g(x)p\) and \(h(x)p\) one by one. **The mean of a sum is the sum of the means:** \(E\big[g(X) + h(X)\big] = E\big[g(X)\big] + E\big[h(X)\big]\). **A constant comes outside \(E\):** \(E\big[kg(X)\big] = kE\big[g(X)\big]\) and \(E(k) = k\).
+The variable \(aX + b\) takes the value \(ax + b\) with the same probability \(p\). So
 \[E(aX + b) = \sum (ax + b)p = a\sum xp + b\sum p = aE(X) + b\]
 Write \(\mu = E(X)\). The mean of \(aX + b\) is \(a\mu + b\), so its distance from its mean is
 \[(aX + b) - (a\mu + b) = a(X - \mu)\]
@@ -277,8 +279,8 @@ A: Let \(T = X_1 + X_2 + X_3 + X_4\). Then \(E(T) = 4 \times 1008 = 4032\). [B1]
 Q: [6 marks] ★★ \(X \sim N(60, 4^2)\) and \(Y \sim N(28, 3^2)\) are independent. Find \(P(X > 2Y)\).
 A: Let \(D = X - 2Y\). Because \(X\) and \(Y\) are independent and normal, \(D\) is normal. [B1] \(E(D) = 60 - 2 \times 28 = 4\). [B1] \(\mathrm{Var}(D) = 4^2 + (-2)^2 \times 3^2\) [M1] \(= 16 + 36 = 52\). [A1] \(P(X > 2Y) = P(D > 0)\) \(= P\!\left(Z > \dfrac{0 - 4}{\sqrt{52}}\right)\) [M1] \(= P(Z > -0.555) = 0.710\). [A1]
 Q: [6 marks] ★★ \(X \sim \mathrm{Po}(4)\) and \(Y \sim \mathrm{Po}(6)\) are independent. (a) Find \(P(X + Y \ge 12)\). (b) Show that \(2X\) does not have a Poisson distribution.
-A: (a) \(X + Y \sim \mathrm{Po}(10)\). [B1] \(P(X + Y \ge 12)\) \(= 1 - P(X + Y \le 11)\) [M1] \(= 1 - 0.6968 = 0.303\). [A1] (b) \(E(2X) = 2 \times 4 = 8\). [B1] \(\mathrm{Var}(2X) = 2^2 \times 4 = 16\). [B1] The mean and variance of a Poisson variable are equal, and 8 is not 16, so \(2X\) is not Poisson. [B1]
-Q: [9 marks] (#math.s1.normal) ★★★ The mass of a passenger on a ferry is \(X \sim N(72, 9^2)\) kg, independently for each passenger. (a) Find the probability that the total mass of 4 passengers is more than 320 kg. (b) A lift is limited to 500 kg. Find the largest number \(n\) of passengers for which the probability that their total mass exceeds 500 kg is less than 0.01.
+A: (a) \(X + Y \sim \mathrm{Po}(10)\). [B1] \(P(X + Y \ge 12)\) \(= 1 - P(X + Y \le 11)\) [M1] \(= 1 - 0.6968 = 0.303\), where \(P(X + Y \le 11)\) is the sum of \(P(0), P(1), \dots, P(11)\) for \(\mathrm{Po}(10)\), added on the calculator as in the tip in the Poisson chapter: \(e^{-10}\big(1 + 10 + 50 + \tfrac{500}{3} + \cdots\big)\). [A1] (b) \(E(2X) = 2 \times 4 = 8\). [B1] \(\mathrm{Var}(2X) = 2^2 \times 4 = 16\). [B1] The mean and variance of a Poisson variable are equal, and 8 is not 16, so \(2X\) is not Poisson. [B1]
+Q: [9 marks] (#math.s1.normal) ★★★ The mass of a passenger on a ferry is \(X \sim N(72, 9^2)\) kg, independently for each passenger. (a) Find the probability that the total mass of 4 passengers is more than 320 kg. (b) The ferry's lift is limited to 500 kg. Find the largest number \(n\) of passengers for which the probability that their total mass exceeds 500 kg is less than 0.01.
 H: For (a), the total of 4 separate passengers is \(X_1 + X_2 + X_3 + X_4\), not \(4X\). Find its mean and variance first.
 H: For (b), for \(n\) passengers the total is \(N(72n, 81n)\). Use the inverse normal: \(P(T > 500) < 0.01\) means \(\dfrac{500 - 72n}{9\sqrt{n}} > 2.326\).
 H: Either solve the inequality as a quadratic in \(\sqrt{n}\), or test \(n = 5, 6, 7\) and say what happens to the mean as \(n\) grows.

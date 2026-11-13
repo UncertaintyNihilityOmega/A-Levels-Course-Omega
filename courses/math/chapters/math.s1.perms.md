@@ -113,7 +113,7 @@ Total: \({}^{7}P_4 = 7\times 6\times 5\times 4\) \(= 840\).
 (c) Greater than 5000: the first digit is 5, 6 or 7, so \(3 \times 6\times 5\times 4 = 360\).
 :::
 
-If a number may start with 0 (digits 0 to 9), be careful: the first digit has only 9 choices, not 10. For example, four-digit numbers with no repeated digit: \(9 \times 9 \times 8 \times 7 = 4536\).
+If a number may start with 0 (digits 0 to 9), be careful: the first digit has only 9 choices, not 10. For example, four-digit numbers with no repeated digit: \(9 \times 9 \times 8 \times 7 = 4536\). First digit: 1 to 9, so 9 choices. Second digit: 0 is now allowed but the first digit is used, so \(10 - 1 = 9\) choices. Third: 8. Fourth: 7.
 
 ## Selections with conditions
 

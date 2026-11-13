@@ -127,3 +127,35 @@ Assumed: the series 1 + x + x^2/2! + ... = e^x; the limit (1 + x/n)^n -> e^x (ca
 ## math.s2.linear
 Taught: E(aX + b) and Var(aX + b) (with proof); Var(X) = E[(X - mu)^2] = E(X^2) - mu^2 (proof); E and Var of aX + bY for independent X and Y, variances add for a difference (with proof); X1 + X2 versus 2X; sum of n independent observations; independent normals combine to a normal; steps for "total" and "difference" questions; sum of independent Poissons is Poisson, a difference or multiple is not; the mean of a sample (stretch).
 Assumed: E of an expression such as E[(X - mu)^2], and that E of a sum is the sum of the E's; the cumulative Poisson value P(X + Y <= 11); that the "lift" in Exam practice question 8 is the passengers' ferry lift.
+
+## math.s2.crv
+Taught: continuous random variable; probability density function (f >= 0, total area 1); P(a < X < b) as an integral and P(X = a) = 0; finding an unknown constant k (or two constants) from total area 1 and a given mean; E(X), E(X^2), Var(X) by integration; median, quartiles and percentiles by integrating from the lower limit; symmetry giving mean = median; mean against median for a long tail; pdfs on an infinite interval (the limit step); a mean that does not exist (1/x^2); the pdf of Y = X^2 (stretch).
+Assumed: where the median 10 - 5 sqrt 2 = 2.93 of the pdf (10 - t)/50 comes from (quoted in "Mean, median and the shape of the curve", never found).
+
+## math.s2.sampling
+Taught: population, sample, census; random sample, bias, selecting with random numbers; the sample mean as a random variable, E(X bar) = mu, Var(X bar) = sigma^2/n; central limit theorem (n about 30 or more); unbiased estimates x bar and s^2 with the n - 1 proof; confidence intervals for a mean (known sigma, or large n using s) with z for 90%, 95%, 98%, 99%; what "95% confident" means; width against n and confidence level; sample size for a given width; sample proportion and its interval; commenting on a claimed value.
+Assumed: "parameter", "statistic" and estimator against estimate (used in the unbiased-estimator definition, never defined); how Var(p hat) = p(1 - p)/n follows from X ~ B(n, p), and what "large" means for a proportion; "standard error" (in a heading only).
+
+## math.s2.hypothesis
+Taught: null and alternative hypotheses; one- and two-tailed tests; test statistic, significance level, critical region and value, actual significance level; probability method and critical region method; five-step layout and the wording of a conclusion; binomial tests; Poisson tests with lambda rescaled to the interval; normal approximations with a continuity correction; test for a mean (known variance, or large sample with s); Type I and Type II errors and their probabilities for binomial, Poisson and normal tests.
+Assumed: which tail to use in a two-tailed test when the observed value is given; where the one-tailed 5% value 1.645 comes from; Phi(-4.36), beyond the end of the normal table; "parameter" (see sampling).
+
+## math.s.regression
+Taught: scatter diagram, explanatory and response variable; positive, negative and no correlation; outliers and curved patterns; lurking variable, correlation is not causation; S_xx, S_yy, S_xy and r (between -1 and 1, unchanged by units); residual and least squares; regression line y = a + bx, b = S_xy/S_xx, a = y bar - b x bar, through the mean point; interpreting a and b; interpolation and extrapolation; hypothesis test for zero correlation with a critical-value table.
+Assumed: the partial-derivative symbol and "slopes zero at the minimum" in the proof; what the regression line of x on y is (used in the key box, Spot the error, Exam practice and Stretch); what the sum of xy means.
+
+## math.m.forces
+Taught: force, newton, vector; resultant; model words (particle, light, inextensible, smooth, rough, uniform); weight mg with g = 10 or 9.8; normal reaction, friction, tension, thrust, driving force, resistance; force diagrams; resolving (F cos along, F sin across); resultant by components; equilibrium as two component equations; friction law F <= mu R, limiting equilibrium, contact force; weight on a slope as mg sin and mg cos (with proof); range of P for equilibrium on a slope; Newton's third law and its pairs.
+Assumed: resolving a horizontal force on a slope (first used in Try answers); "line of greatest slope"; mu = tan(theta) before it is derived.
+
+## math.m.kinematics
+Taught: distance, displacement, speed, velocity, acceleration, deceleration, signs for direction; s-t and v-t graphs (gradient, area); the four constant acceleration equations (with proofs) and choosing one; vertical motion under gravity (a = -10, up positive); two-particle problems on one clock; v = ds/dt, a = dv/dt and integrating with constants; distance against displacement when v changes sign.
+Assumed: the exact meaning of "greatest speed where a = 0"; "instantaneous rest".
+
+## math.m.newton
+Taught: Newton's three laws; F = ma with the resultant in the direction of motion; the newton; lifts (R - mg = ma); smooth and rough slopes, up and down; an angled pull on level ground; connected particles over a pulley (separate equations, same T and a, with proof); table block joined to a hanging one; slack string and a second stage; car and trailer (whole system, then trailer), tow-bar tension.
+Assumed: why internal forces such as the tow-bar tension drop out of a whole-system equation; a worked case of a tow-bar in thrust (only one sentence).
+
+## math.m.momentum
+Taught: momentum mv as a vector (kg m s^-1); conservation of momentum for a direct collision with signs (with proof); coalescing; rebounds and opposite directions; recoil from rest; unknown mass or speed; kinetic energy lost in a collision; only horizontal momentum when a sandbag lands.
+Assumed: what kinetic energy 1/2 mv^2 and the joule are (used from the first KE example, taught in math.m.energy); why momentum may be conserved in a collision on a rough floor.

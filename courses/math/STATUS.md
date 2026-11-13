@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-13 · FIX · 28 reader items closed in p3.trig to p3.vectors (notation, skipped steps, diff proofs, logistic slope-field text corrected)
+Last: 2026-11-13 · FIX · math.p3.complex to math.s2.linear: 26 reader items closed (sigma notation taught in s1.data, MF19 normal table reading and inverse values in s1.normal, complex/Poisson/linear steps and reasons)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

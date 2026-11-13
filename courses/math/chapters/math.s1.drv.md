@@ -9,7 +9,7 @@
 Many questions are about a count: how many faulty items in a box, how many heads in ten tosses, how many attempts until a first success. A random variable turns each outcome into a number, and a distribution tells you how likely each number is. Two models cover a huge range of counting situations, and recognising which one applies is the main skill.
 :::
 
-**Before you start**, you need probability from [Probability](#math.s1.prob), combinations \(\binom{n}{r}\) from [Permutations and combinations](#math.s1.perms), and powers and logarithms from [Exponentials and logarithms](#math.p3.logs).
+**Before you start**, you need probability from [Probability](#math.s1.prob), combinations \(\binom{n}{r}\) from [Permutations and combinations](#math.s1.perms), and powers and logarithms from [Exponentials and logarithms](#math.p3.logs). Pure 3 material: if you have not done it yet, all you need is that \(n\ln a = \ln(a^n)\) and that \(\ln\) of a number below 1 is negative, so dividing by it reverses the inequality; or leave the "smallest \(n\)" questions until after Pure 3.
 
 :::try Warm-up
 Q: Solve \(2^n = 50\), giving \(n\) to 3 significant figures. (from [Exponentials and logarithms](#math.p3.logs))
@@ -80,6 +80,8 @@ The net gain is the prize minus the £2 stake. A 6 gives \(5 - 2 = 3\); a 4 or 5
 2. each trial has just **two outcomes**, success or failure;
 3. the trials are **independent**;
 4. the probability of success \(p\) is **the same** for every trial.
+
+The symbol \(\sim\) is read "is distributed as": \(X \sim B(10, 0.3)\) means \(X\) follows the binomial distribution with \(n = 10\) and \(p = 0.3\). Later, \(X \sim \mathrm{Geo}(p)\) means \(X\) follows the geometric distribution with success probability \(p\).
 :::
 
 :::key Binomial formulae
@@ -178,7 +180,8 @@ In both models the trials must be independent with a constant probability. In re
 :::eg (Exam style) A biased coin lands heads with probability 0.35. It is tossed 8 times. Find the probability of exactly 3 heads and of at least 5 heads, and the mean and variance of the number of heads. The coin is then tossed until it lands heads: find the probability that this takes exactly 3 tosses. [7 marks]
 Let \(X\) be the number of heads in 8 tosses. \(X \sim B(8, 0.35)\). [B1]
 \(P(X = 3) = \dbinom83(0.35)^3(0.65)^5\) \(= 56\times 0.042875\times 0.116029\) \(= 0.279\). [M1 A1]
-\(P(X \ge 5) = P(5) + P(6) + P(7) + P(8)\) \(= 0.106\). [M1 A1]
+\(P(X \ge 5) = P(5) + P(6) + P(7) + P(8)\), with \(P(5) = \dbinom85(0.35)^5(0.65)^3 = 0.0808\), \(P(6) = 0.0217\), \(P(7) = 0.00335\) and \(P(8) = 0.000225\), so the total is \(0.106\). [M1 A1]
+**Tip:** to get totals like this on a calculator, work out each term with the \(\binom nr\) key and add them one at a time, keeping the full display and rounding only at the end. Paper 5 allows a scientific calculator, so if yours has a binomial distribution function you may use it for \(P(X = r)\) and \(P(X \le r)\); but still write the model \(X \sim B(n, p)\) and the probability you are finding, because an unsupported answer can lose the method marks.
 \(E(X) = 8\times 0.35 = 2.8\) and \(\mathrm{Var}(X)\) \(= 8\times 0.35\times 0.65 = 1.82\). [B1]
 For the geometric case, \(Y \sim \mathrm{Geo}(0.35)\) and \(P(Y = 3) = 0.65^2\times 0.35 = 0.148\). [B1]
 :::
@@ -228,7 +231,7 @@ The UK A Level courses (AQA, OCR, Edexcel) include the binomial distribution and
 :::
 
 :::eg Spot the error: "at least" with a binomial
-A student wrote this answer to "\(X \sim B(12, 0.25)\). Find \(P(X \ge 3)\)" [3 marks]. Use \(P(X \le 2) = 0.3907\) and \(P(X \le 3) = 0.6488\).
+A student wrote this answer to "\(X \sim B(12, 0.25)\). Find \(P(X \ge 3)\)" [3 marks]. Use \(P(X \le 2) = 0.3907\) and \(P(X \le 3) = 0.6488\) (each found by adding the individual probabilities, as in the tip above).
 
 Line 1: \(X \sim B(12, 0.25)\).
 Line 2: \(P(X \ge 3) = 1 - P(X \le 3)\) \(= 1 - 0.6488 = 0.351\).
@@ -248,7 +251,7 @@ A: \(E(X) = 0.2 + 1.6 + 1.8 + 1.6 = 5.2\). \(E(X^2) = 0.4 + 6.4 + 10.8 + 12.8\) 
 Q: \(X \sim B(6, 0.5)\). Find \(P(X = 2)\) and \(P(X \ge 5)\).
 A: \(P(X = 2) = \dfrac{15}{64} = 0.234\). \(P(X \ge 5) = \dfrac{6 + 1}{64} = 0.109\).
 Q: \(X \sim B(15, 0.4)\). Find \(P(X \le 6)\), \(P(X = 6)\), the mean and the variance.
-A: \(P(X \le 6) = 0.610\). \(P(X = 6)\) \(= \dbinom{15}{6}(0.4)^6(0.6)^9 = 0.207\). Mean \(= 6\), variance \(= 15\times 0.4\times 0.6 = 3.6\).
+A: \(P(X \le 6) = P(0) + P(1) + \cdots + P(6) = 0.610\) (add the seven terms on the calculator). \(P(X = 6)\) \(= \dbinom{15}{6}(0.4)^6(0.6)^9 = 0.207\). Mean \(= 6\), variance \(= 15\times 0.4\times 0.6 = 3.6\).
 Q: A fair die is thrown 5 times. Find the probability of at least one six.
 A: \(1 - \left(\dfrac56\right)^5 = 0.598\).
 Q: \(X \sim \mathrm{Geo}(0.2)\). Find \(P(X = 5)\), \(P(X > 5)\) and \(E(X)\).

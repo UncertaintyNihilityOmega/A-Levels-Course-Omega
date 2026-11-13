@@ -11,6 +11,16 @@ Data arrives as a long list of numbers that nobody can read. A good diagram show
 
 **Before you start**, you need fractions and percentages from [Numbers from scratch](#math.f.numbers), substitution and rearranging from [Algebra from scratch](#math.f.algebra), and the idea of a scale on a graph from [Graphs from scratch](#math.f.graphs).
 
+:::key Notation you will meet: sigma and x bar
+This chapter, and the rest of statistics, uses the Greek capital letter \(\sum\) (sigma), which means **add up**. Take the four values \(x = 2, 3, 5, 6\), so \(n = 4\).
+- \(\sum x\) is the sum of the values: \(2 + 3 + 5 + 6 = 16\).
+- \(\sum x^2\) is the sum of their squares (square each value, then add): \(4 + 9 + 25 + 36 = 74\).
+- \(\bar x\) is read "x bar" and is the **mean**: \(\bar x = \dfrac{\sum x}{n} = \dfrac{16}{4} = 4\).
+- \(\sum (x - \bar x)^2\) means find \(x - \bar x\) for each value, square it, then add: \((-2)^2 + (-1)^2 + 1^2 + 2^2 = 4 + 1 + 1 + 4 = 10\).
+- With a frequency table, \(\sum fx\) multiplies each value by its frequency, then adds. For the value 1 three times, 2 twice and 3 once: \(\sum fx = 1 \times 3 + 2 \times 2 + 3 \times 1 = 10\), and \(\sum f = 3 + 2 + 1 = 6\) is the number of values.
+- Sometimes \(\sum\) has limits: \(\sum_{r=0}^{n}\) means add the terms for \(r = 0, 1, 2, \ldots, n\).
+:::
+
 :::try Warm-up
 Q: A class of 40 students has 7 left-handed students. What percentage is that? (from [Numbers from scratch](#math.f.numbers))
 A: \(\dfrac{7}{40} = 0.175\), so \(17.5\%\).
@@ -50,6 +60,8 @@ Key: 3 | 1 means 31 minutes.
 There are \(n = 15\) values. The median is the \(8^{\text{th}}\) value, which is **31**. For the quartiles, take the median of each half (leaving out the middle value): the lower half is 23, 24, 27, 28, 29, 31, 31, so \(Q_1 = 28\); the upper half is 33, 35, 36, 38, 40, 42, 45, so \(Q_3 = 38\). The interquartile range is \(\text{IQR} = Q_3 - Q_1 = 10\). The mode is **31** (it appears three times) and the range is \(45 - 23 = 22\).
 :::
 
+If \(n\) is **odd**, the median is the middle value, and you leave it out when you split the data into two halves. If \(n\) is **even**, the median is halfway between the two middle values, and each half has \(\tfrac n2\) values: for 8 values the median is halfway between the 4th and 5th.
+
 To compare two sets, write a **back-to-back** diagram: the two sets share the stems, with one set's leaves on each side. The leaves of the left side are written in order **reading outwards from the stem**.
 
 :::eg Route B took 26, 30, 32, 34, 35, 35, 37, 38, 39, 41 and 44 minutes. Draw a back-to-back diagram with route A.
@@ -88,7 +100,7 @@ Use the widget to change the data and see how the mean, median and spread react.
 
 ## Mean and standard deviation
 
-For \(n\) values with \(\sum x\) and \(\sum x^2\):
+The **variance** is the mean of the squared distances from the mean; the **standard deviation** is its square root, so it is in the same units as the data. The usual symbol for the standard deviation is \(\sigma\) (and \(\sigma^2\) for the variance). For \(n\) values with \(\sum x\) and \(\sum x^2\) (see the sigma box above):
 
 :::key Mean, variance and standard deviation
 \[\bar x = \frac{\sum x}{n} \qquad \text{variance} = \frac{\sum x^2}{n} - \bar x^2 \qquad \text{standard deviation} = \sqrt{\text{variance}}\]
@@ -172,7 +184,7 @@ A **cumulative frequency graph** (ogive) plots the number of values **below** ea
 :::eg For the 80 customers, use a cumulative frequency graph to estimate the median, the quartiles, the interquartile range and the number of customers who waited more than 30 minutes.
 Cumulative frequencies at the upper boundaries 10, 20, 40, 60 are 12, 42, 66, 80, with 0 at 0. The graph is drawn below.
 
-Median: the \(40^{\text{th}}\) value. Between (10, 12) and (20, 42), so by interpolation \(10 + \dfrac{40 - 12}{30}\times 10\) \(= 19.3\) minutes.
+Median: the \(40^{\text{th}}\) value. It lies between (10, 12) and (20, 42), and the graph between those points is a straight line. The value 40 is \(\dfrac{40 - 12}{42 - 12} = \dfrac{28}{30}\) of the way up that line, so the median is the same fraction of the way across the class: \(10 + \dfrac{28}{30}\times 10\) \(= 19.3\) minutes. This is called **interpolation**, and every later reading follows the same pattern.
 \(Q_1\): the \(20^{\text{th}}\) value, \(10 + \dfrac{20 - 12}{30}\times 10\) \(= 12.7\) minutes.
 \(Q_3\): the \(60^{\text{th}}\) value, between (20, 42) and (40, 66): \(20 + \dfrac{60 - 42}{24}\times 20 = 35\) minutes.
 \(\text{IQR} = 35 - 12.7 = 22.3\) minutes.

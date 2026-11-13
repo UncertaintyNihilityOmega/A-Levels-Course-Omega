@@ -46,7 +46,7 @@ If \(X \sim \mathrm{Po}(\lambda)\), then
 \[E(X) = \lambda \qquad\text{and}\qquad \mathrm{Var}(X) = \lambda\]
 :::
 
-Here \(r!\) means \(r \times (r-1) \times \dots \times 1\), and \(0! = 1\). The probability of no events is \(P(X = 0) = e^{-\lambda}\). All the probabilities add to 1 because \(1 + \lambda + \frac{\lambda^2}{2!} + \cdots = e^{\lambda}\).
+Here \(r!\) means \(r \times (r-1) \times \dots \times 1\), and \(0! = 1\). The probability of no events is \(P(X = 0) = e^{-\lambda}\). All the probabilities add to 1 because \(1 + \lambda + \frac{\lambda^2}{2!} + \cdots = e^{\lambda}\) (so \(e^{-\lambda}\) times this sum is 1). This is the series for \(e^{x}\), with \(x = \lambda\). It is given here without proof; you do not need to derive it.
 
 The mean and the variance are equal. That is unusual and useful: if data have a mean and a variance that are very different, a Poisson model is doubtful.
 
@@ -76,6 +76,12 @@ Let \(X\) be the number of emails in an hour. Then \(X \sim \mathrm{Po}(4)\).
 
 (c) "At least 6" is the opposite of "at most 5", so
 \[P(X \ge 6) = 1 - e^{-4}\left(1 + 4 + 8 + \tfrac{32}{3} + \tfrac{32}{3} + \tfrac{128}{15}\right) = 1 - 0.7851 = 0.215\]
+:::
+
+:::tip Cumulative values such as \(P(X \le 7)\)
+For \(P(X \le r)\) with \(r\) above 3, add the terms on the calculator, building each term from the last by the rule above, or use a cumulative Poisson mode if your (scientific) calculator has one. For \(\lambda = 4\): \(P(X \le 7)\) \(= P(0) + P(1) + \cdots + P(7)\):
+\[\begin{aligned} &0.0183 + 0.0733 + 0.1465 + 0.1954\\ {}+{} &0.1954 + 0.1563 + 0.1042 + 0.0595 = 0.9489 \end{aligned}\]
+Use the unrounded terms on the calculator, and round only the total.
 :::
 
 The widget draws the distribution for any mean. Set \(\lambda = 4\) and the range 0 to 2 to check part (b), then raise \(\lambda\) and watch the shape become symmetric and bell-like. That is why a normal approximation works for large \(\lambda\).
@@ -127,7 +133,7 @@ Write \(\dbinom{n}{r} = \dfrac{n(n-1)\cdots(n-r+1)}{r!}\) and share the powers o
 \[P(X = r) = \frac{\lambda^{r}}{r!} \times \frac{n(n-1)\cdots(n-r+1)}{n^{r}} \times \left(1 - \frac{\lambda}{n}\right)^{n} \times \left(1 - \frac{\lambda}{n}\right)^{-r}\]
 Now let \(n\) grow while \(\lambda\) and \(r\) stay fixed:
 - The fraction has \(r\) factors \(\dfrac{n}{n} \cdot \dfrac{n-1}{n} \cdots\), and each tends to 1.
-- \(\left(1 - \dfrac{\lambda}{n}\right)^{n} \to e^{-\lambda}\), which is the standard limit for \(e^{x}\) with \(x = -\lambda\).
+- \(\left(1 - \dfrac{\lambda}{n}\right)^{n} \to e^{-\lambda}\). This is a standard result, quoted without proof: \(\left(1 + \dfrac{x}{n}\right)^{n} \to e^{x}\) as \(n\) grows, here with \(x = -\lambda\). Check with \(\lambda = 3\): \(\left(1 - \dfrac{3}{1000}\right)^{1000} = 0.0496\), against \(e^{-3} = 0.0498\).
 - \(\left(1 - \dfrac{\lambda}{n}\right)^{-r} \to 1\), because \(\dfrac{\lambda}{n} \to 0\) and \(r\) is fixed.
 
 So \(P(X = r) \to \dfrac{\lambda^{r} e^{-\lambda}}{r!}\), the Poisson probability. Check with \(\lambda = 3\) and \(r = 2\): \(B(100, 0.03)\) gives 0.2252, \(B(1000, 0.003)\) gives 0.2242, and \(\mathrm{Po}(3)\) gives 0.2240.
@@ -249,9 +255,9 @@ Q: \(X \sim \mathrm{Po}(20)\). Use a normal approximation to find \(P(X < 15)\).
 A: \(X\) is approximately \(Y \sim N(20, 20)\). \(P(X < 15) = P(X \le 14)\) \(\approx P(Y < 14.5)\). [M1]
 \(z = \dfrac{14.5 - 20}{\sqrt{20}} = -1.230\), so the probability is \(\Phi(-1.230) = 0.109\). [M1 A1]
 Q: (Exam style) A bakery sells a speciality loaf at random, at a mean rate of 4 loaves per day. (a) The bakery bakes 7 loaves each day. Find the probability that it runs out, meaning demand is more than 7. (b) The bakery wants the probability of running out to be less than 1%. What is the smallest number of loaves it should bake each day? (c) Baking 7 loaves a day, find the probability that it runs out on exactly 2 of the next 5 days.
-A: (a) \(X \sim \mathrm{Po}(4)\). \(P(X > 7) = 1 - P(X \le 7)\) \(= 1 - 0.9489 = 0.0511\). [M1 A1]
+A: (a) \(X \sim \mathrm{Po}(4)\). \(P(X > 7) = 1 - P(X \le 7)\) \(= 1 - 0.9489 = 0.0511\), where \(P(X \le 7)\) is the sum of the eight terms \(P(0)\) to \(P(7)\) found in the tip above. [M1 A1]
 (b) We need \(P(X > n) < 0.01\), that is \(P(X \le n) > 0.99\). [M1]
-\(P(X \le 8) = 0.9786\), which is too small, but \(P(X \le 9) = 0.9919\). The bakery should bake 9 loaves. [A1]
+Add the next terms: \(P(X \le 8) = 0.9489 + P(8) = 0.9786\), which is too small, but \(P(X \le 9) = 0.9786 + P(9) = 0.9919\). The bakery should bake 9 loaves. [A1]
 (c) The days are independent, so the number of run-out days is \(B(5, 0.0511)\). [M1]
 \(P(\text{exactly 2})\) \(= \binom{5}{2}(0.0511)^{2}(0.9489)^{3}\) \(= 0.0223\). [A1]
 :::
@@ -270,7 +276,7 @@ A: \(\lambda = 18 > 15\), so \(X\) is approximately \(Y \sim N(18, 18)\). [B1] "
 \[z_1 = \frac{14.5 - 18}{\sqrt{18}} = -0.825, \qquad z_2 = \frac{20.5 - 18}{\sqrt{18}} = 0.589\]
 [M1] and the probability is \(\Phi(0.589) - \Phi(-0.825)\) \(= 0.517\). [A1]
 Q: [7 marks] ★★ Emails arrive at random at a mean rate of 6 per hour. (a) Find the probability that more than 8 emails arrive in one hour. (b) Find the probability that at least 2 emails arrive in a 15-minute period. (c) Over 5 independent hours, find the probability that exactly 2 of the hours have more than 8 emails.
-A: (a) \(X \sim \mathrm{Po}(6)\). "More than 8" is \(X \ge 9\), so \(P(X > 8) = 1 - P(X \le 8)\) [M1] \(= 1 - 0.8472 = 0.153\). [A1] (b) In 15 minutes the mean is 1.5, so \(Y \sim \mathrm{Po}(1.5)\). [B1] \(P(Y \ge 2)\) \(= 1 - e^{-1.5}(1 + 1.5)\) [M1] \(= 0.442\). [A1] (c) The number of busy hours is \(W \sim B(5, 0.1528)\), using the unrounded probability from (a). [M1] \(P(W = 2)\) \(= \dbinom52(0.1528)^2(0.8472)^3\) \(= 0.142\). [A1]
+A: (a) \(X \sim \mathrm{Po}(6)\). "More than 8" is \(X \ge 9\), so \(P(X > 8) = 1 - P(X \le 8)\) [M1] \(= 1 - 0.8472 = 0.153\), where \(P(X \le 8)\) is the sum of \(P(0)\) to \(P(8)\) for \(\lambda = 6\), added on the calculator as in the tip after the first example. [A1] (b) In 15 minutes the mean is 1.5, so \(Y \sim \mathrm{Po}(1.5)\). [B1] \(P(Y \ge 2)\) \(= 1 - e^{-1.5}(1 + 1.5)\) [M1] \(= 0.442\). [A1] (c) The number of busy hours is \(W \sim B(5, 0.1528)\), using the unrounded probability from (a). [M1] \(P(W = 2)\) \(= \dbinom52(0.1528)^2(0.8472)^3\) \(= 0.142\). [A1]
 Q: [9 marks] (#math.s1.drv) ★★★ Calls to a helpline arrive at random, at a mean rate of 0.9 per minute. (a) Find the probability that at least 2 calls arrive in a given minute. (b) In 10 independent one-minute periods, find the probability that exactly 3 of them have at least 2 calls. (c) Use a normal approximation to find the probability that more than 33 calls arrive in a 30-minute period.
 H: For (a), the number of calls in a minute is \(\mathrm{Po}(0.9)\). "At least 2" is \(1 - P(X \le 1)\).
 H: For (b), each minute either has at least 2 calls or it does not, with the probability from (a), independently. What distribution counts the number of such minutes?
@@ -284,7 +290,7 @@ A: (a) \(X \sim \mathrm{Po}(0.9)\). \(P(X \ge 2) = 1 - P(X \le 1)\) [M1] \(= 1 -
 Q: [7 marks] ★★★ A source emits particles at random, at a mean rate of 4 per second. A detector records each emitted particle independently with probability 0.75 and misses it otherwise. (a) Find the probability that exactly 2 particles are emitted in a second and the detector records both. (b) Let \(Y\) be the number of particles recorded in a second. Show that \(P(Y = 0) = e^{-3}\). (c) What does the result suggest about the distribution of \(Y\)?
 H: For (a), the number emitted is \(\mathrm{Po}(4)\). Given 2 emitted, each is recorded with probability 0.75, independently.
 H: For (b), \(Y = 0\) happens when \(n\) particles are emitted and all \(n\) are missed, for \(n = 0, 1, 2, \dots\). Add these cases.
-H: You will need \(\sum_{n=0}^{\infty}\dfrac{x^n}{n!} = e^{x}\).
+H: You will need the series for \(e^{x}\), given in the chapter without proof: \(\sum_{n=0}^{\infty}\dfrac{x^n}{n!} = e^{x}\). The \(\sum\) from \(n = 0\) to \(\infty\) means add the terms for \(n = 0, 1, 2, \dots\) without end.
 A: (a) \(P(\text{2 emitted}) = \dfrac{e^{-4} 4^2}{2!}\) \(= 0.1465\). [B1] Both recorded has probability \(0.75^2\), [M1] so the probability is \(0.1465 \times 0.5625 = 0.0824\). [A1] (b) If \(n\) particles are emitted, all are missed with probability \(0.25^n\). Adding over all \(n\), [M1]
 \[P(Y = 0) = \sum_{n=0}^{\infty} \frac{e^{-4}4^n}{n!}(0.25)^n = e^{-4}\sum_{n=0}^{\infty}\frac{1^n}{n!}\]
 [M1] \(= e^{-4} \times e^{1} = e^{-3}\). [A1] (c) \(e^{-3}\) is \(P(X = 0)\) for \(\mathrm{Po}(3)\), and \(3 = 4 \times 0.75\) is the mean number recorded. This suggests \(Y \sim \mathrm{Po}(3)\): a Poisson stream, thinned at random, is still a Poisson stream. [B1]

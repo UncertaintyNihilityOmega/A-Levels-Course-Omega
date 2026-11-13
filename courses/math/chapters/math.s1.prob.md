@@ -24,8 +24,8 @@ A: Order does not matter, so \(\dbinom83 = 56\).
 
 :::def Event, sample space and probability
 An **event** is an outcome, or a set of outcomes, of an experiment. The **sample space** is the set of all possible outcomes. When all outcomes are **equally likely**, the probability of an event \(A\) is
-\[P(A) = \frac{\text{number of outcomes in } A}{\text{total number of outcomes}}\]
-Probabilities lie between 0 (impossible) and 1 (certain). The **complement** \(A'\) is "\(A\) does not happen", and \(P(A') = 1 - P(A)\).
+\[P(A) = \frac{\text{number of outcomes in } A}{\text{total number of outcomes}} = \frac{n(A)}{n(S)}\]
+Here \(n(A)\) is the number of outcomes in \(A\) and \(n(S)\) is the number of outcomes in the sample space \(S\). Probabilities lie between 0 (impossible) and 1 (certain). The **complement** \(A'\) is "\(A\) does not happen", and \(P(A') = 1 - P(A)\).
 :::
 
 :::eg Two fair dice are rolled. Find the probability that (a) the total is 7, (b) the total is at least 10, (c) at least one die shows a 6.
@@ -112,6 +112,7 @@ A factory has two machines. Machine A makes 60% of the items and 3% of its items
 :::
 
 :::eg (Real context) An item from the factory above is chosen at random. Find the probability it is defective, and the probability that it came from machine B given that it is defective.
+Let \(D\) be the event that the item is defective.
 \(P(D) = P(A \cap D) + P(B \cap D)\) \(= 0.6\times 0.03 + 0.4\times 0.05\) \(= 0.018 + 0.020 = 0.038\).
 Given that the item is defective, the probability that it came from B is
 \[P(B \mid D) = \frac{P(B \cap D)}{P(D)} = \frac{0.020}{0.038} = 0.526\ \text{(3 s.f.)}\]

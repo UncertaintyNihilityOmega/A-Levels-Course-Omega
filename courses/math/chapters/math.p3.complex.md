@@ -67,17 +67,20 @@ If a polynomial has **real** coefficients and \(a + ib\) is a root, then its con
 :::
 
 :::proof Why non-real roots of a real polynomial come in conjugate pairs
-Two facts about conjugates, each checked from \(z = x + iy\): \((z_1 + z_2)^* = z_1^* + z_2^*\) and \((z_1z_2)^* = z_1^*z_2^*\). A real number is its own conjugate.
-Let \(\mathrm{p}(z)\) \(= a_nz^n + \cdots + a_1z + a_0\) with every \(a_k\) real, and suppose \(\mathrm{p}(w) = 0\) for some complex \(w\).
+First, facts about conjugates. Write \(z_1 = x_1 + iy_1\) and \(z_2 = x_2 + iy_2\).
+Sum: \(z_1 + z_2 = (x_1 + x_2) + i(y_1 + y_2)\), so \((z_1 + z_2)^* = (x_1 + x_2) - i(y_1 + y_2) = z_1^* + z_2^*\).
+Product: \(z_1z_2 = (x_1x_2 - y_1y_2) + i(x_1y_2 + x_2y_1)\), so \((z_1z_2)^* = (x_1x_2 - y_1y_2) - i(x_1y_2 + x_2y_1)\). Also \(z_1^*z_2^* = (x_1 - iy_1)(x_2 - iy_2)\) has the same real part \(x_1x_2 - y_1y_2\) and imaginary part \(-(x_1y_2 + x_2y_1)\). So \((z_1z_2)^* = z_1^*z_2^*\).
+Repeating the product rule gives \((z^k)^* = (z^*)^k\). The quotient rule \(\left(\dfrac{z_1}{z_2}\right)^* = \dfrac{z_1^*}{z_2^*}\) follows from the product rule: conjugating \(\dfrac{z_1}{z_2} \times z_2 = z_1\) gives \(\left(\dfrac{z_1}{z_2}\right)^* z_2^* = z_1^*\). A real number is its own conjugate.
+Now let \(\mathrm{p}(z)\) \(= a_nz^n + \cdots + a_1z + a_0\) with every \(a_k\) real, and suppose \(\mathrm{p}(w) = 0\) for some complex \(w\).
 Take the conjugate of both sides of \(a_nw^n + \cdots + a_1w + a_0 = 0\). The right side is \(0^* = 0\).
-On the left, the conjugate of a sum is the sum of the conjugates, and the conjugate of each product is \(a_k^*(w^*)^k = a_k(w^*)^k\), since \(a_k\) is real. So \(a_n(w^*)^n + \cdots + a_1w^* + a_0 = 0\).
+On the left, the conjugate of a sum is the sum of the conjugates, and the conjugate of each product is \(a_k^*(w^k)^* = a_k(w^*)^k\), since \(a_k\) is real and \((w^k)^* = (w^*)^k\). So \(a_n(w^*)^n + \cdots + a_1w^* + a_0 = 0\).
 That says \(\mathrm{p}(w^*) = 0\): the conjugate \(w^*\) is a root too. If \(w\) is not real then \(w^* \ne w\), so the roots come in pairs.
 :::
 
 :::eg (a) Solve \(z^2 - 4z + 13 = 0\). (b) Given that \(2 + i\) is a root of \(z^3 - 6z^2 + 13z - 10 = 0\), find the other roots.
-(a) By the quadratic formula, \(z = \dfrac{4 \pm \sqrt{16 - 52}}{2}\) \(= \dfrac{4 \pm \sqrt{-36}}{2}\) \(= 2 \pm 3i\).
+(a) By the quadratic formula, \(z = \dfrac{4 \pm \sqrt{16 - 52}}{2}\) \(= \dfrac{4 \pm \sqrt{-36}}{2}\). For \(k > 0\), \(\sqrt{-k} = \sqrt k \times i\); here \(\sqrt{-36} = \sqrt{36} \times i = 6i\), because \((6i)^2 = 36i^2 = -36\). So \(z = \dfrac{4 \pm 6i}{2} = 2 \pm 3i\).
 
-(b) The coefficients are real, so \(2 - i\) is also a root. The quadratic factor is \(z^2 - 4z + 5\) (sum of roots \(4\), product \(2^2 + 1^2 = 5\)). Divide: \(z^3 - 6z^2 + 13z - 10\) \(= (z - 2)(z^2 - 4z + 5)\). The roots are \(2\), \(2 + i\) and \(2 - i\).
+(b) The coefficients are real, so \(2 - i\) is also a root. The quadratic factor is \(z^2 - 4z + 5\) (sum of roots \(4\), product \(2^2 + 1^2 = 5\)). The cubic has this factor, so write \(z^3 - 6z^2 + 13z - 10 = (z^2 - 4z + 5)(z + k)\). Comparing the \(z^2\) coefficients: \(k - 4 = -6\), so \(k = -2\). (Comparing constant terms gives the same: \(5k = -10\).) So the cubic is \((z - 2)(z^2 - 4z + 5)\), and the roots are \(2\), \(2 + i\) and \(2 - i\).
 :::
 
 ## The Argand diagram, modulus and argument
@@ -101,13 +104,14 @@ Always sketch the point to find the correct quadrant. Use \(\tan^{-1}\left|\tfra
 
 If \(|z| = r\) and \(\arg z = \theta\), then \(x = r\cos\theta\) and \(y = r\sin\theta\), so
 \[z = r(\cos\theta + i\sin\theta) = re^{i\theta}\]
-This is the **modulus–argument form** (polar form), and the second expression is the **exponential form**.
+This is the **modulus–argument form** (polar form), and the second expression is the **exponential form**. The equality is **Euler's formula**. At this level take \(re^{i\theta}\) as the name for \(r(\cos\theta + i\sin\theta)\); the product rule below shows why the name fits: \(e^{i\alpha} \times e^{i\beta} = e^{i(\alpha + \beta)}\), just as for indices.
 Multiplying in polar form is simple, because the angles behave like indices:
 
 :::key Multiplying and dividing in polar form
 \[|z_1z_2| = |z_1||z_2| \qquad \arg(z_1z_2) = \arg z_1 + \arg z_2\]
 \[\left|\frac{z_1}{z_2}\right| = \frac{|z_1|}{|z_2|} \qquad \arg\frac{z_1}{z_2} = \arg z_1 - \arg z_2\]
 In exponential form: \(r_1e^{i\theta_1}\times r_2e^{i\theta_2}\) \(= r_1r_2e^{i(\theta_1 + \theta_2)}\).
+Powers: \((re^{i\theta})^n = r^ne^{in\theta}\), by multiplying \(n\) times.
 :::
 
 Multiplication by a complex number **scales** by its modulus and **rotates** by its argument. In particular, multiplying by \(i\) (modulus 1, argument \(\tfrac\pi2\)) rotates a point through a quarter turn anticlockwise. Taking the conjugate reflects the point in the real axis.
@@ -149,15 +153,15 @@ A **locus** is the set of points \(z\) satisfying a condition. Three kinds appea
 
 :::key The three loci
 - \(|z - a| = k\): the distance from \(z\) to the point \(a\) is \(k\). It is a **circle**, centre \(a\), radius \(k\).
-- \(|z - a| = |z - b|\): \(z\) is equally far from \(a\) and \(b\). It is the **perpendicular bisector** of the line joining \(a\) and \(b\).
-- \(\arg(z - a) = \alpha\): the line from \(a\) to \(z\) makes angle \(\alpha\) with the real axis direction. It is a **half-line** starting at \(a\) (not including \(a\) itself).
+- \(|z - a| = |z - b|\): \(z\) is equally far from \(a\) and \(b\). It is the **perpendicular bisector** of the line joining \(a\) and \(b\).- \(\arg(z - a) = \alpha\): the line from \(a\) to \(z\) makes angle \(\alpha\) with the real axis direction. It is a **half-line** starting at \(a\) (not including \(a\) itself).
 For inequalities, \(|z - a| < k\) is the inside of the circle, \(>\) the outside; a solid line means \(\le\) or \(\ge\), a dashed line means \(<\) or \(>\).
+Read the sign carefully: \(|z + 2i| = |z - (-2i)|\), so the point is \(-2i\); and \(z - 1 - i = z - (1 + i)\), so the point is \(1 + i\).
 :::
 
 :::eg Describe and sketch (a) \(|z - 3 - 2i| = 2\), (b) \(|z - 1| = |z - i|\), (c) \(\arg(z - 1 - i) = \tfrac\pi4\).
 (a) \(z - 3 - 2i = z - (3 + 2i)\), so this is a circle with centre \(3 + 2i\), that is \((3, 2)\), and radius \(2\).
-(b) The points \(1\) and \(i\) are \((1, 0)\) and \((0, 1)\). The locus is their perpendicular bisector. With \(z = x + iy\): \((x - 1)^2 + y^2 = x^2 + (y - 1)^2\) gives \(-2x + 1 = -2y + 1\), so \(y = x\).
-(c) A half-line from \((1, 1)\) at \(45^\circ\) to the real-axis direction, that is the part of \(y = x\) with \(x > 1\), excluding the end point \((1, 1)\).
+(b) The points \(1\) and \(i\) are \((1, 0)\) and \((0, 1)\). The locus is their perpendicular bisector. With \(z = x + iy\): \(z - 1 = (x - 1) + iy\), so \(|z - 1|^2 = (x - 1)^2 + y^2\); and \(z - i = x + (y - 1)i\), so \(|z - i|^2 = x^2 + (y - 1)^2\). Equal moduli means equal squares: \((x - 1)^2 + y^2 = x^2 + (y - 1)^2\), which gives \(-2x + 1 = -2y + 1\), so \(y = x\).
+(c) Here \(z - 1 - i = z - (1 + i)\), so the point is \(1 + i\), that is \((1, 1)\). The locus is a half-line from \((1, 1)\) at \(45^\circ\) to the real-axis direction, that is the part of \(y = x\) with \(x > 1\), excluding the end point \((1, 1)\).
 :::
 
 The widget draws each of these. Change the centre, radius or angle, and use the shading option to show an inequality.
@@ -193,9 +197,9 @@ Long complex-number questions combine algebra with the diagram. A sketch is usua
 \[(1 + 3i)^3 = (1 + 3i)(-8 + 6i) = -8 + 6i - 24i + 18i^2 = -26 - 18i \quad [M1]\]
 \[\mathrm{p}(1 + 3i) = (-26 - 18i) - 4(-8 + 6i) + 14(1 + 3i) - 20 = (-26 + 32 + 14 - 20) + (-18 - 24 + 42)i = 0 \quad [A1]\]
 **(b)** The coefficients are real, so the conjugate \(1 - 3i\) is also a root. [B1] The quadratic factor has sum of roots \(2\) and product \(1^2 + 3^2 = 10\): \(z^2 - 2z + 10\). [M1]
-Divide:
+Write the cubic as \((z^2 - 2z + 10)(z + k)\). Comparing the \(z^2\) coefficients gives \(k - 2 = -4\), so \(k = -2\) (comparing constants gives \(10k = -20\), the same). [M1]
 \[z^3 - 4z^2 + 14z - 20 = (z^2 - 2z + 10)(z - 2)\]
-The constant terms agree, because \(10 \times (-2) = -20\). [M1] The third root is \(z = 2\). [A1]
+The third root is \(z = 2\). [A1]
 
 **(c)** The vertices are \((2, 0)\), \((1, 3)\) and \((1, -3)\). [B1] The side joining \((1, 3)\) and \((1, -3)\) is vertical with length \(6\), and the point \((2, 0)\) is \(1\) unit from the line \(x = 1\). [M1]
 \[\text{Area} = \tfrac12 \times 6 \times 1 = 3 \quad [A1]\]
@@ -208,7 +212,7 @@ The constant terms agree, because \(10 \times (-2) = -20\). [M1] The third root 
 So \((x - 2)^2 = 2\), giving \(x = 2 \pm \sqrt2\). [A1 A1] Only \(x > 1\) is on the half-line: \(2 - \sqrt2 = 0.59\) is rejected. [B1]
 Then \(y = x - 1 = 1 + \sqrt2\), so \(z = (2 + \sqrt2) + (1 + \sqrt2)i\). [A1]
 
-**(c)** The point of the circle furthest from the origin lies on the line from the origin through the centre. Its distance is the distance to the centre plus the radius: \(|2 + i| + 2\). [M1] The greatest value is \(\sqrt5 + 2 = 4.24\). [A1]
+**(c)** The point of the circle furthest from the origin lies on the line from the origin through the centre: go from the origin to the centre, then a further radius in the same direction; any other point of the circle is closer. Its distance is the distance to the centre plus the radius: \(|2 + i| + 2\). [M1] The greatest value is \(\sqrt5 + 2 = 4.24\). [A1]
 Check (b): the point is \((2 + \sqrt2,\ 1 + \sqrt2)\), so the vector from the centre \((2, 1)\) is \((\sqrt2, \sqrt2)\), which has length \(\sqrt{2 + 2} = 2\). ✓
 :::
 
@@ -254,7 +258,7 @@ A: \(z_1z_2 = 6e^{i\pi/2} = 6i\). \(\dfrac{z_1}{z_2} = \tfrac32e^{-i\pi/6}\).
 Q: Solve \(z + 2z^* = 9 - 2i\), giving \(z\) in the form \(x + iy\).
 A: With \(z = x + iy\): \(3x - iy = 9 - 2i\), so \(x = 3\) and \(y = 2\); \(z = 3 + 2i\).
 Q: Describe the locus \(|z - 2| = |z + 2i|\) and find its Cartesian equation.
-A: The perpendicular bisector of the points \(2\) and \(-2i\). \((x - 2)^2 + y^2 = x^2 + (y + 2)^2\) gives \(-4x + 4 = 4y + 4\), so \(y = -x\).
+A: Since \(z + 2i = z - (-2i)\), this is the perpendicular bisector of the points \(2\) and \(-2i\). Squaring both moduli, \((x - 2)^2 + y^2 = x^2 + (y + 2)^2\) gives \(-4x + 4 = 4y + 4\), so \(y = -x\).
 Q: (Exam style) Show that \(z = 3\) is a root of \(z^3 - 5z^2 + 11z - 15 = 0\), and find the other two roots.
 A: \(27 - 45 + 33 - 15 = 0\) ✓. Divide by \(z - 3\): \(z^3 - 5z^2 + 11z - 15\) \(= (z - 3)(z^2 - 2z + 5)\). Then \(z^2 - 2z + 5 = 0\) gives \(z = \dfrac{2 \pm \sqrt{4 - 20}}{2}\) \(= 1 \pm 2i\). The roots are \(3\), \(1 + 2i\) and \(1 - 2i\).
 :::
@@ -263,7 +267,7 @@ A: \(27 - 45 + 33 - 15 = 0\) ✓. Divide by \(z - 3\): \(z^3 - 5z^2 + 11z - 15\)
 Q: [3 marks] ★ Express \(\dfrac{4 - 3i}{1 + 2i}\) in the form \(x + iy\).
 A: Multiply top and bottom by \(1 - 2i\): \(\dfrac{(4 - 3i)(1 - 2i)}{(1 + 2i)(1 - 2i)}\). [M1] The numerator is \(4 - 8i - 3i + 6i^2 = -2 - 11i\) and the denominator is \(1 + 4 = 5\). [A1] The result is \(-\dfrac25 - \dfrac{11}{5}i\). [A1]
 Q: [3 marks] ★ Solve the equation \(z^2 - 6z + 25 = 0\).
-A: \(z = \dfrac{6 \pm \sqrt{36 - 100}}{2}\). [M1] \(= \dfrac{6 \pm \sqrt{-64}}{2}\) \(= \dfrac{6 \pm 8i}{2}\). [A1] So \(z = 3 + 4i\) or \(z = 3 - 4i\). [A1]
+A: \(z = \dfrac{6 \pm \sqrt{36 - 100}}{2}\). [M1] \(= \dfrac{6 \pm \sqrt{-64}}{2}\) \(= \dfrac{6 \pm 8i}{2}\), since \(\sqrt{-64} = 8i\). [A1] So \(z = 3 + 4i\) or \(z = 3 - 4i\). [A1]
 Q: [5 marks] ★★ Find the real numbers \(a\) and \(b\) such that \((a + bi)(2 - i) = 8 + i\).
 A: Expand:
 \[(a + bi)(2 - i) = 2a - ai + 2bi - bi^2 = (2a + b) + (2b - a)i\]
@@ -271,7 +275,7 @@ A: Expand:
 Q: [5 marks] ★★ Given that \(3 - 2i\) is a root of \(z^3 - 5z^2 + 7z + 13 = 0\), find the other two roots.
 A: The coefficients are real, so \(3 + 2i\) is also a root. [B1] The quadratic factor is \(z^2 - 6z + 13\) (sum \(6\), product \(9 + 4 = 13\)). [M1] Then
 \[z^3 - 5z^2 + 7z + 13 = (z^2 - 6z + 13)(z + 1)\]
-found by division or by comparing constants. [M1 A1] The other roots are \(3 + 2i\) and \(-1\). [A1]
+Write the cubic as \((z^2 - 6z + 13)(z + k)\); comparing the \(z^2\) coefficients gives \(k - 6 = -5\), so \(k = 1\) (comparing constants gives \(13k = 13\), the same). [M1 A1] The other roots are \(3 + 2i\) and \(-1\). [A1]
 Q: [6 marks] ★★ Find the square roots of \(7 - 24i\), in the form \(x + iy\).
 A: Let \((x + iy)^2 = 7 - 24i\), so \(x^2 - y^2 = 7\) and \(2xy = -24\). [M1 A1 A1] Then \(y = -\dfrac{12}{x}\), so \(x^2 - \dfrac{144}{x^2} = 7\), which is \(x^4 - 7x^2 - 144 = 0\). [M1] Factorise: \((x^2 - 16)(x^2 + 9) = 0\), so \(x = \pm4\). [A1] The square roots are \(4 - 3i\) and \(-4 + 3i\). [A1]
 Q: [8 marks] ★★ Let \(z = 1 + \sqrt3\,i\) and \(w = -\sqrt3 + i\). (a) Find the modulus and argument of \(z\) and of \(w\), giving the arguments as multiples of \(\pi\). (b) Find the modulus and argument of \(zw\) and of \(\dfrac zw\), with the arguments in the range \(-\pi < \theta \le \pi\).
@@ -280,7 +284,7 @@ Q: [10 marks] (#math.p1.coord) ★★★ The complex number \(z\) satisfies \(|z
 H: The region is a disc. Find its centre and radius from the inequality, and note the distance from the origin to the centre.
 H: For (c), draw the tangent from the origin to the circle. The radius to the point of contact is perpendicular to the tangent, which gives a right-angled triangle.
 H: The greatest argument is the argument of the centre plus the angle between the centre line and the tangent.
-A: (a) A solid circle with centre \((4, 3)\) and radius \(3\), with its inside shaded. [B1 B1] (b) The distance from the origin to the centre is \(\sqrt{16 + 9} = 5\), so the greatest \(|z| = 5 + 3 = 8\). [M1 A1] (c) In the right-angled triangle formed by the origin, the centre and the point of contact, the hypotenuse is \(5\) and the side opposite the angle \(\varphi\) at the origin is the radius \(3\), so \(\sin\varphi = \dfrac35\) and \(\varphi = 0.6435\). [M1 A1] \(\arg(4 + 3i) = \tan^{-1}\dfrac34\) \(= 0.6435\). So the greatest argument is \(0.6435 + 0.6435 = 1.29\). [M1 A1] (d) The least argument is \(0.6435 - 0.6435 = 0\): the circle touches the real axis at \(4\) (the radius \(3\) equals the height of the centre), so the real axis is the tangent. [B1 B1]
+A: (a) A solid circle with centre \((4, 3)\) and radius \(3\), with its inside shaded. [B1 B1] (b) The distance from the origin to the centre is \(\sqrt{16 + 9} = 5\), and the furthest point of the circle is reached by going from the origin to the centre, then a further radius in the same direction (any other point of the circle is closer), so the greatest \(|z| = 5 + 3 = 8\). [M1 A1] (c) In the right-angled triangle formed by the origin, the centre and the point of contact, the hypotenuse is \(5\) and the side opposite the angle \(\varphi\) at the origin is the radius \(3\), so \(\sin\varphi = \dfrac35\) and \(\varphi = 0.6435\). [M1 A1] \(\arg(4 + 3i) = \tan^{-1}\dfrac34\) \(= 0.6435\). So the greatest argument is \(0.6435 + 0.6435 = 1.29\). [M1 A1] (d) The least argument is \(0.6435 - 0.6435 = 0\): the circle touches the real axis at \(4\) (the radius \(3\) equals the height of the centre), so the real axis is the tangent. [B1 B1]
 :::
 
 :::try Stretch for A*
