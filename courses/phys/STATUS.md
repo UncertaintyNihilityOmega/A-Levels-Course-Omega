@@ -1,6 +1,6 @@
 # STATUS: Physics
 
-Last: 2026-11-13 · FIX · READER phys.waves to phys.gases: 32 items closed. Waves: phase and crossed defined at first use, why I is proportional to A squared. Superposition: harmonic defined, microwave node reason, end correction, octave, resonance-tube lab direction fixed (raise the tube; water surface is a closed end), double-slit figure now shows theta and a sin theta, monochromatic and normal incidence explained. Electricity, particles (electron q/m added to example and check), circular, gravity (integral and derivative steps), temperature, gases (molecules per mm3 corrected to 2.5e16, per cm3 2.5e19; syringe lab; internal energy, translational, monatomic; heading renamed).
+Last: 2026-11-13 · READER · 109 reader items in REVIEW.md (26 in phys.nuclear to phys.mixed.a2); READER.md covers all 39 chapters
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -23,5 +23,5 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P16: reviewed 2026-10-15
 - P17: reviewed 2026-10-15
 - P18: reviewed 2026-10-15
-- READER: open
+- READER: done 2026-11-13
 - FINAL: done 2026-10-15
