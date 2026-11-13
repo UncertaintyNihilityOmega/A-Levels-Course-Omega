@@ -63,3 +63,35 @@ Assumed: the "if and only if" double arrow; the a_n, a_(n-1) ... a_0 subscripts 
 ## math.p3.logs
 Taught: logarithm as the inverse of a power, log_a b = c, laws of logs, ln and e^x with graphs, growth and decay, solving a^x = b, equations that are quadratics in e^x or a^x, equations and inequalities with logs (reject invalid arguments), exponential models and half-life, linear form of y = kx^n and y = ka^x.
 Assumed: e^(2x) = (e^x)^2 (used in the first disguised-quadratic example, shown only in a Try answer); the capital letters Y and X in "Y = mX + c".
+
+## math.p3.trig
+Taught: sec, cosec, cot and their graphs and ranges; sec^2 = 1 + tan^2 and cosec^2 = 1 + cot^2; compound angle formulae for sin, cos, tan (with proof) and exact values such as sin 75; double angle formulae (three forms of cos 2A); solving equations by factorising (never dividing by a trig function); proving identities and "hence"; a sin t + b cos t as R sin(t +- a) or R cos(t +- a), greatest and least values, solving equations with it.
+Assumed: the symbol for "opposite sign" in tan(A +- B) = ... over 1 -+ tan A tan B; why R^2 = a^2 + b^2 (needs sin^2 + cos^2 = 1, not said); how the second and later solutions are found when the angle is t + alpha (390 degrees appears with no method); the end-of-proof symbol.
+
+## math.p3.diff
+Taught: derivatives of e^x, ln x, sin x, cos x, tan x and the ax + b versions (radians only); chain rule for composites; product rule; quotient rule; tangents, normals and stationary points of these functions; parametric differentiation; implicit differentiation; derivative of tan^-1 x; rates of change with exponentials.
+Assumed: that dy/dx = 1/(dx/dy) and dt/dx = 1/(dx/dt) ("turn upside down"); the prime notation u', v' for du/dx, dv/dx; what the triangles are in the sin h < h < tan h argument and why cos h - 1 = -sin^2 h/(1 + cos h); the units of t in the population example.
+
+## math.p3.integ
+Taught: integrals of e^(ax+b), 1/(ax+b), sin, cos, sec^2 with ax + b; ln|x|; expanding or dividing before integrating; definite integrals with ln and e; sin^2, cos^2, tan^2 by identities; areas and volumes; rate of change integrated to a total; trapezium rule (ordinates, n strips) and over/underestimate by convex or concave; the integral of 1/(x^2 + a^2).
+Assumed: where the "true value" 3 ln 3 - 2 of the integral of ln x comes from (by parts, taught later); the second derivative of e^(x^2) and the simplification 1/2 x sqrt(2/3) = 1/sqrt 6 (steps not shown).
+
+## math.p3.numerical
+Taught: root of f(x) = 0; sign change rule and its three failures; locating a root with two graphs; showing a root to n d.p. with the half-unit interval; iteration x(n+1) = F(x(n)) with the ANS key; convergence, divergence and oscillation; choosing a rearrangement; finding the equation from an iteration.
+Assumed: interval notation [a, b] and (a, b); the meaning of "continuous" at its first use (explained only in the proof after the key box); whether "oscillate" means convergent or not.
+
+## math.p3.partial
+Taught: partial fractions for distinct linear, repeated linear and irreducible quadratic factors (substitution, comparing coefficients, cover-up proof); binomial series for any rational n with |x| < 1; (a + bx)^n by factoring out a^n; range of validity; expanding a fraction by partial fractions and the binomial series.
+Assumed: why a value such as x = 1 may be substituted when it makes the original denominator zero; which terms give the x^2 and constant terms when comparing coefficients; the expansion of (1 + x)^-2 (used, not derived); that c is the speed of light; how "divide first" is done (called outside the syllabus here, used in the next chapter).
+
+## math.p3.inttech
+Taught: integrand; the f'/f rule; integration with partial fractions (dividing first); integration by parts (choice of u, ln x, repeated application, definite form); integration by substitution with a given substitution and changed limits; choosing a method.
+Assumed: how dx is replaced from du/dx in the substitution routine (rearranging is not stated); why ln(x - 1) has no modulus bars in the divide-first example.
+
+## math.p3.diffeq
+Taught: differential equation; general and particular solution; initial condition; forming a DE from "proportional to"; separating the variables; growth, decay and cooling; draining tank; logistic growth by partial fractions; slope field; interpreting the long-term behaviour.
+Assumed: the practical step of separating (divide by g(y), multiply by dx) once dy/dx is called "not a fraction"; e^(12k) = 2^(12/5); the sign in the integral of 1/(10 - P) and the algebra for P; what the slope-field widget shows below P = 0.
+
+## math.p3.vectors
+Taught: vector and scalar; column and i, j, k forms; magnitude and unit vector; parallel vectors; position vector; AB = b - a; midpoint; vector equation of a line; line through two points; intersecting, parallel and skew lines; scalar product and the angle between vectors or lines; foot of the perpendicular and shortest distance; axes on a cuboid or pyramid.
+Assumed: that r in r = a + tb is the position vector of a general point; that the direction vector of a moving point is its velocity and its magnitude the speed.
