@@ -10,7 +10,7 @@ In 1774 Louis XVI inherited a throne that claimed its power came from God. Fifte
 :::
 
 :::exam Where this is examined
-France, 1774–1814 is one of the three topics of the AS **European option**. It is the **Paper 1** (sources) topic in **2027** and a **Paper 2** (essay) topic in **2028** and **2029** (FACTS.md has the rotation). So this chapter trains both styles:
+France, 1774–1814 is one of the three topics of the AS **European option**. It is the **Paper 1** (sources) topic in **2027** and a **Paper 2** (essay) topic in **2028** and **2029** (the 9489 syllabus sets the rotation). So this chapter trains both styles:
 - **Paper 1**, one question, 1 hour 15 minutes, 40 marks: four sources; (a) [15] compare two sources as evidence; (b) [25] use all four sources and your own knowledge to say how far they support a statement. The 2027 specimen question on France asked about the *cahiers de doléances* and about economic problems before the Revolution: exactly this chapter.
 - **Paper 2**, 1 hour 45 minutes, 60 marks, two questions: each has (a) [10] "Explain why …" and (b) [20] "How far do you agree …?" or "To what extent …?".
 The syllabus says you are not expected to study foreign policy and military campaigns in detail, only their impact inside France.
@@ -359,7 +359,7 @@ AQA's A Level History (7042) has a depth study, 2H France in Revolution, 1774–
 
 ## Worked examples: exam answers built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
+The levels below are the real Cambridge levels for 2027 (from the 9489 mark schemes). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
 
 :::eg Paper 2 (a) [10]: Explain why Louis XVI agreed in 1788 to call the Estates-General.
 **What the levels want.** Level 2 (3–5) describes factors; Level 3 (6–8) explains factors with relevant detail; Level 4 (9–10) connects the factors and reaches a reasoned conclusion.

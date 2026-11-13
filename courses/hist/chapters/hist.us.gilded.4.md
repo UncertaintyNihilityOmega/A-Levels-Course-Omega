@@ -6,11 +6,11 @@
 @summary What the Progressive Movement achieved between 1890 and 1920 and what it left undone: the Square Deal of Theodore Roosevelt, the divided presidency of Taft and the New Freedom of Wilson; the growth of regulation of transport, food and drugs, the environment, working and living conditions, banks and trusts; the 16th, 17th, 18th and 19th Amendments; the pressure groups and women who won them; and the problems it did not solve for minorities, women and the countryside. With model Paper 1 and Paper 2 answers built level by level.
 
 :::why
-Chapter 3 explained why Americans began to demand reform and what they wanted. This chapter asks the question examiners ask most often about the period: how far did they get? The answer is neither "a great deal" nor "very little". Between 1900 and 1920 the Federal Government gained powers over railroads, food, banks, income and, in the end, drink, and women won the vote. Yet the courts struck down much of the legislation, millions of Black Americans were worse off at the end than at the start, and the countryside saw little improvement. Learning to weigh these against each other is the main skill of the topic, and the Level 5 answers in this chapter show how.
+[Gilded Age (3)](#hist.us.gilded.3) explained why Americans began to demand reform and what they wanted. This chapter asks the question examiners ask most often about the period: how far did they get? The answer is neither "a great deal" nor "very little". Between 1900 and 1920 the Federal Government gained powers over railroads, food, banks, income and, in the end, drink, and women won the vote. Yet the courts struck down much of the legislation, millions of Black Americans were worse off at the end than at the start, and the countryside saw little improvement. Learning to weigh these against each other is the main skill of the topic, and the Level 5 answers in this chapter show how.
 :::
 
 :::exam Where this is examined
-The Gilded Age and the Progressive Era, 1870–1920, is one of the three topics of the AS **American option**. It is the **Paper 1** (sources) topic in **2027** and a **Paper 2** (essay) topic in **2028** and **2029** (FACTS.md has the rotation). So this chapter trains both styles:
+The Gilded Age and the Progressive Era, 1870–1920, is one of the three topics of the AS **American option**. It is the **Paper 1** (sources) topic in **2027** and a **Paper 2** (essay) topic in **2028** and **2029** (the 9489 syllabus sets the rotation). So this chapter trains both styles:
 - **Paper 1**, one question, 1 hour 15 minutes, 40 marks: four sources; (a) [15] compare two sources as evidence; (b) [25] use all four sources and your own knowledge to say how far they support a statement. The 2027 specimen Paper 1 question on this topic used the Sherman Anti-Trust Act; the sources below are real documents of the Progressive Era on other issues.
 - **Paper 2**, 1 hour 45 minutes, 60 marks, two questions: each has (a) [10] "Explain why …" and (b) [20] "How far do you agree …?" or "To what extent …?".
 This chapter answers key question 5.4: *How successful was the Progressive Movement from 1890 to 1920?* The assessment objectives are AO1 (knowledge) and AO2 (explanation and judgement) on Paper 2, AO1 and AO3 (sources) on Paper 1.
@@ -67,7 +67,7 @@ Read this first. Every later section explains one part of it.
 Most Progressive reforms score well on the first test, less well on the second and third, and very unevenly on the fourth. Good answers say which test they are using and why.
 :::
 
-Two other standards are useful. Compare the achievement with the movement's *own aims* (chapter 3: honest government, democracy, regulation of business, protection of the weak). And compare it with *what had been done before*, since by 1920 the Federal Government did things that in 1890 almost no one thought it could do.
+Two other standards are useful. Compare the achievement with the movement's *own aims* ([Gilded Age (3)](#hist.us.gilded.3): honest government, democracy, regulation of business, protection of the weak). And compare it with *what had been done before*, since by 1920 the Federal Government did things that in 1890 almost no one thought it could do.
 
 ## The role of the Presidents
 
@@ -149,7 +149,7 @@ Regulation grew at three levels at once, and the states and cities often went fi
 
 ### Transport
 
-Railroads were the first business regulated, and the story shows how a weak law became a strong one by stages. The Interstate Commerce Act of 1887 (see [Chapter 2](#hist.us.gilded.2)) had set up the Commission but the courts had taken away its power to set rates. The Progressives rebuilt it.
+Railroads were the first business regulated, and the story shows how a weak law became a strong one by stages. The Interstate Commerce Act of 1887 (see [Gilded Age (2)](#hist.us.gilded.2)) had set up the Commission but the courts had taken away its power to set rates. The Progressives rebuilt it.
 - The **Elkins Act (1903)** made rebates illegal for both the railroad and the shipper.
 - The **Hepburn Act (1906)** allowed the Commission to set a maximum rate once a shipper complained, widened its authority to pipelines, express companies and sleeping-car companies, and required railroads to keep standard accounts. Railroads could appeal to the courts, but the burden was now on them.
 - The **Mann–Elkins Act (1910)** added telephone, telegraph and cable companies and let the Commission suspend a rate rise while it investigated.
@@ -161,7 +161,7 @@ The result was a real change. By 1916 the railroads' freedom to set any price wa
 
 ### Food and drugs
 
-[Chapter 3](#hist.us.gilded.3) described how *The Jungle* and Adams's articles led to two laws on 30 June 1906. Their provisions are:
+[Gilded Age (3)](#hist.us.gilded.3) described how *The Jungle* and Adams's articles led to two laws on 30 June 1906. Their provisions are:
 - **The Pure Food and Drug Act** banned the interstate sale of adulterated or falsely labelled food and drugs, and required labels to show the amount of alcohol and of habit-forming drugs such as morphine and cocaine. It was enforced by the Bureau of Chemistry under **Harvey Wiley**, whose "Poison Squad" of volunteer young men (1902–04) had tested the effects of food preservatives on their own bodies.
 - **The Meat Inspection Act** required federal inspection of animals before and after slaughter in every plant that sold meat across state lines, and set sanitary standards for the plants. Congress refused to make the packers pay for the inspectors, and the taxpayers did.
 
@@ -184,7 +184,7 @@ Conservation was an achievement for the Federal Government because the lands sta
 
 ### Working and living conditions
 
-The main work remained with the states, as chapter 3 showed. The Federal Government added what the Constitution allowed.
+The main work remained with the states, as [Gilded Age (3)](#hist.us.gilded.3) showed. The Federal Government added what the Constitution allowed.
 - **Federal action:** safety rules for the railroads (the Safety Appliance Acts); a Federal Employers' Liability Act (1906, re-enacted in 1908 after the first was struck down) for railroad workers; the **Bureau of Mines (1910)**; the **Children's Bureau (1912)** under Julia Lathrop, to study child welfare; the **Department of Labor (1913)**; the **Seamen's Act (1915)**; the **Adamson Act (1916)**; and the **Keating–Owen Act (1 September 1916)**, which banned the interstate shipment of goods made in factories by children under fourteen, or in mines by children under sixteen. On 3 June 1918, in *Hammer v. Dagenhart*, the Supreme Court struck it down by 5 votes to 4, holding that the manufacture of goods was not commerce, and that the Act intruded on the power of the states. Congress's second attempt, a tax on goods made with child labour (1919), was also struck down, in 1922. The Child Labor Amendment of 1924 was never ratified.
 - **State and city action:** workers' compensation (most states by 1920); mothers' pensions; hours laws; New York's **Tenement House Act of 1901**, drafted by Lawrence Veiller, which required windows, ventilation, running water and a toilet in every new apartment; New York's zoning resolution of 1916, the first comprehensive one in the country; playgrounds, school nurses (Lillian Wald placed the first in New York in 1902), public baths and smoke laws.
 
@@ -273,7 +273,7 @@ The campaign had opponents: Southern politicians who feared that Black women wou
 
 ### Women's role beyond the vote
 
-Women's contribution to the Progressive Movement was more than the suffrage campaign. They ran the settlements, the National Consumers' League, the Women's Trade Union League and the clubs (see [Chapter 3](#hist.us.gilded.3)). They held posts in government: Julia Lathrop headed the Children's Bureau from 1912, and Florence Kelley and Frances Perkins (who watched the Triangle fire and then worked on New York's factory laws) were among those who moved from campaigning into official work. In 1916 Jeannette Rankin of Montana became the first woman elected to the House of Representatives, four years before the 19th Amendment. After 1920 the League of Women Voters, formed by NAWSA in 1920, kept this political activity going.
+Women's contribution to the Progressive Movement was more than the suffrage campaign. They ran the settlements, the National Consumers' League, the Women's Trade Union League and the clubs (see [Gilded Age (3)](#hist.us.gilded.3)). They held posts in government: Julia Lathrop headed the Children's Bureau from 1912, and Florence Kelley and Frances Perkins (who watched the Triangle fire and then worked on New York's factory laws) were among those who moved from campaigning into official work. In 1916 Jeannette Rankin of Montana became the first woman elected to the House of Representatives, four years before the 19th Amendment. After 1920 the League of Women Voters, formed by NAWSA in 1920, kept this political activity going.
 
 ## The remaining problems of the Progressive Movement
 
@@ -291,7 +291,7 @@ The syllabus lists four. They are not a list of failures to be learned beside th
 ### Minorities
 
 For African Americans, who in 1900 were more than one in nine Americans and lived mainly in the South, the Progressive Era was in many ways worse than what came before.
-- **Segregation and disfranchisement became law.** *Plessy v. Ferguson* (18 May 1896) upheld "separate but equal" facilities, and the South added segregation laws on streetcars, in schools, in parks and in public buildings. Across the South, constitutional conventions between 1890 and 1908 wrote poll taxes, literacy tests and grandfather clauses into state constitutions (see [Chapter 3](#hist.us.gilded.3)).
+- **Segregation and disfranchisement became law.** *Plessy v. Ferguson* (18 May 1896) upheld "separate but equal" facilities, and the South added segregation laws on streetcars, in schools, in parks and in public buildings. Across the South, constitutional conventions between 1890 and 1908 wrote poll taxes, literacy tests and grandfather clauses into state constitutions (see [Gilded Age (3)](#hist.us.gilded.3)).
 - **Violence.** Lynching continued in the South and elsewhere, and white mobs attacked Black communities: Springfield, Illinois (August 1908), East St Louis (July 1917) and many cities in the "Red Summer" of 1919.
 - **The Federal Government and the Presidents.** Roosevelt invited Booker T. Washington to dinner at the White House in October 1901, which angered white Southerners, but dismissed the Black soldiers at Brownsville in 1906. Taft followed a policy of appeasing the white South. In 1912 the Progressive Party, to win Southern white votes, refused to seat Black delegates from some Southern states and said little about civil rights. In 1913 Wilson's administration segregated work areas, restrooms and lunchrooms in federal departments such as the Treasury and the Post Office. When the Black editor William Monroe Trotter protested in the White House in November 1914, Wilson defended the policy, and the exchange ended badly.
 - **Black responses.** Booker T. Washington's "Atlanta Compromise" speech of 1895 had advised Black Southerners to accept social separation and concentrate on education and work. **W. E. B. Du Bois**, in *The Souls of Black Folk* (1903), and the Niagara Movement (1905) demanded full civil and political rights. The riot at Springfield in 1908, in Lincoln's home town, led white and Black reformers (Du Bois, Ida B. Wells, Mary White Ovington, Oswald Garrison Villard, Moorfield Storey) to found the **NAACP** in 1909, and Du Bois edited its magazine **The Crisis** from November 1910, which grew to a circulation of about 100,000 by 1918. The NAACP won some legal cases: *Guinn v. United States* (1915) struck down Oklahoma's grandfather clause, and *Buchanan v. Warley* (1917) struck down a Louisville ordinance that enforced residential segregation. Many Black Americans also voted with their feet: hundreds of thousands moved north in the Great Migration that began in 1916, looking for jobs and a freer life.
@@ -340,7 +340,7 @@ Use these only to show that "success" depends on what you think the movement was
 
 ## Worked examples: exam answers built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
+The levels below are the real Cambridge levels for 2027 (from the 9489 mark schemes). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
 
 :::eg Paper 2 (a) [10]: Explain why the 18th Amendment was passed.
 **What the levels want.** Level 2 (3–5) describes factors; Level 3 (6–8) explains factors with relevant detail; Level 4 (9–10) connects the factors and reaches a reasoned conclusion.

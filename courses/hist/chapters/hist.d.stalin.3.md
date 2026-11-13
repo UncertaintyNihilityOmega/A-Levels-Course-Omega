@@ -15,7 +15,7 @@ Stalin's Russia, 1924–41 is one of the three topics of the A Level **European 
 - This chapter covers key question 2.3, *How successful were Stalin's economic policies?* An essay on it can ask about the reasons for the Great Turn, collectivisation and dekulakisation, the famine, the Five Year Plans and the projects, the Stakhanovite movement, or the living and working conditions of managers and workers. It can also ask you to compare them.
 :::
 
-**Before you start**, read [Stalin's Russia (1): how Stalin gained control](#hist.d.stalin.1), [Stalin's Russia (2): how effectively Stalin governed the Soviet Union](#hist.d.stalin.2) and [Skills: writing the analytical essay (Papers 2 and 4)](#hist.skills.essays). This chapter uses the argument over NEP and industrialisation that Chapter 1 describes, and the essay method that the skills chapter teaches.
+**Before you start**, read [Stalin's Russia (1): how Stalin gained control](#hist.d.stalin.1), [Stalin's Russia (2): how effectively Stalin governed the Soviet Union](#hist.d.stalin.2) and [Skills: writing the analytical essay (Papers 2 and 4)](#hist.skills.essays). This chapter uses the argument over NEP and industrialisation that [Stalin's Russia (1)](#hist.d.stalin.1) describes, and the essay method that the skills chapter teaches.
 
 :::try Warm-up
 Q: What was the New Economic Policy (NEP) and why did the Bolsheviks introduce it in 1921? (from [Russia (4): how the Bolsheviks consolidated power to 1924](#hist.eu.russia.4))

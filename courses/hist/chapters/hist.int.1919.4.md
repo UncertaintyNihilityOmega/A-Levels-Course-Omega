@@ -10,7 +10,7 @@ In 1923 France and Belgium had troops in the Ruhr, the German mark was worth not
 :::
 
 :::exam Where this is examined
-International relations, 1919–29 is one of the three topics of the AS **International option** (Section C). It is the **Paper 1** (sources) topic in **2028** and a **Paper 2** (essay) topic in **2027** and **2029** (FACTS.md has the rotation). So this chapter trains both styles:
+International relations, 1919–29 is one of the three topics of the AS **International option** (Section C). It is the **Paper 1** (sources) topic in **2028** and a **Paper 2** (essay) topic in **2027** and **2029** (the 9489 syllabus sets the rotation). So this chapter trains both styles:
 - **Paper 1**, one question, 1 hour 15 minutes, 40 marks: four sources (up to one of them a cartoon or other picture); (a) [15] compare two sources as evidence; (b) [25] use all four sources and your own knowledge to say how far they support a statement (AO1 and AO3).
 - **Paper 2**, 1 hour 45 minutes, 60 marks, two questions: each has (a) [10] "Explain why …" and (b) [20] "How far do you agree …?" or "To what extent …?" (AO1 and AO2).
 This is key question 8.4 of the syllabus. It asks for the Dawes Plan, Stresemann and German recovery, German entry to the League and the Young Plan; the Geneva Protocol, the Locarno Treaties, the Kellogg–Briand Pact and the Hague Conference; the roles of France, Germany and Italy and the Soviet Union; and whether improved relations were "reality or illusion", including Japan, the USA and the immediate impact of the Wall Street Crash. The questions here are new ones in the same styles, so do not expect an exam to repeat them.
@@ -19,11 +19,11 @@ This is key question 8.4 of the syllabus. It asks for the Dawes Plan, Stresemann
 **Before you start**, read [International relations, 1919–29 (3): why tensions remained high after Versailles](#hist.int.1919.3): this chapter picks up the Ruhr crisis where it ended. You should also know the League's structure from [International relations, 1919–29 (2): the League of Nations](#hist.int.1919.2), and have the methods in [Skills: reading and comparing sources (Paper 1)](#hist.skills.sources) and [Skills: writing the analytical essay (Papers 2 and 4)](#hist.skills.essays).
 
 :::try Warm-up
-Q: What did Stresemann's government do on 26 September 1923, and why? (from [chapter 3 of this topic](#hist.int.1919.3))
+Q: What did Stresemann's government do on 26 September 1923, and why? (from [International relations, 1919–29 (3)](#hist.int.1919.3))
 A: It ended passive resistance in the Ruhr. Germany could not go on paying strikers by printing money while the currency collapsed; Stresemann judged that it had to end the struggle, restore the currency and then negotiate.
-Q: Why did France occupy the Ruhr in January 1923? (from [chapter 3 of this topic](#hist.int.1919.3))
+Q: Why did France occupy the Ruhr in January 1923? (from [International relations, 1919–29 (3)](#hist.int.1919.3))
 A: Germany had defaulted on timber and coal deliveries; France needed reparations to rebuild and to repay war debts, wanted security against Germany, and Poincaré believed that Germany was not trying to pay.
-Q: Why was Germany not a member of the League of Nations in 1920? (from [chapter 2 of this topic](#hist.int.1919.2))
+Q: Why was Germany not a member of the League of Nations in 1920? (from [International relations, 1919–29 (2)](#hist.int.1919.2))
 A: The League began as an association of the victors. Germany was a defeated power whose government the Allies did not yet trust, and it was only admitted if it accepted the Covenant and showed good faith.
 :::
 
@@ -342,7 +342,7 @@ The Dawes Plan was the **foundation** of the improvement, because it ended the R
 
 ## Worked examples: exam answers built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
+The levels below are the real Cambridge levels for 2027 (from the 9489 mark schemes). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
 
 :::eg Paper 2 (a) [10]: Explain why Germany joined the League of Nations in 1926.
 **What the levels want.** Level 2 (3–5) describes factors; Level 3 (6–8) explains factors with relevant detail; Level 4 (9–10) connects the factors and reaches a reasoned conclusion.

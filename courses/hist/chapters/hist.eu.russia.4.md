@@ -10,7 +10,7 @@ Taking power in Petrograd took three days. Keeping it took six years. In 1918 th
 :::
 
 :::exam Where this is examined
-Russia from autocracy to revolution, 1881–1924 is one of the three topics of the AS **European option**. It is the **Paper 1** (sources) topic in **2029** and a **Paper 2** (essay) topic in **2027** and **2028** (FACTS.md has the rotation). So this chapter trains both styles:
+Russia from autocracy to revolution, 1881–1924 is one of the three topics of the AS **European option**. It is the **Paper 1** (sources) topic in **2029** and a **Paper 2** (essay) topic in **2027** and **2028** (the 9489 syllabus sets the rotation). So this chapter trains both styles:
 - **Paper 1**, one question, 1 hour 15 minutes, 40 marks: four sources; (a) [15] compare two sources as evidence; (b) [25] use all four sources and your own knowledge to say how far they support a statement. A Paper 1 question on Russia may take its sources from any part of 1881–1924.
 - **Paper 2**, 1 hour 45 minutes, 60 marks, two questions: each has (a) [10] "Explain why …" and (b) [20] "How far do you agree …?" or "To what extent …?".
 The assessment objectives are AO1 (knowledge and argument) in every question, AO2 (analysis and evaluation of causes and arguments) in Paper 2, and AO3 (use of sources) in Paper 1.
@@ -317,7 +317,7 @@ By 1924, Bolshevik power had survived and had changed.
 
 ## Worked examples: exam answers built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
+The levels below are the real Cambridge levels for 2027 (from the 9489 mark schemes). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
 
 :::eg Paper 2 (a) [10]: Explain why the Bolsheviks closed the Constituent Assembly in January 1918.
 **What the levels want.** Level 2 (3–5) describes factors; Level 3 (6–8) explains factors with relevant detail; Level 4 (9–10) connects the factors and reaches a reasoned conclusion.

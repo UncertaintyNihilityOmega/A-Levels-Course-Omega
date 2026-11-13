@@ -10,7 +10,7 @@ The League of Nations was the first attempt in history to build a permanent orga
 :::
 
 :::exam Where this is examined
-International relations, 1919–29 is one of the three topics of the AS **International option** (Section C). It is the **Paper 1** (sources) topic in **2028** and a **Paper 2** (essay) topic in **2027** and **2029** (FACTS.md has the rotation). So this chapter trains both styles:
+International relations, 1919–29 is one of the three topics of the AS **International option** (Section C). It is the **Paper 1** (sources) topic in **2028** and a **Paper 2** (essay) topic in **2027** and **2029** (the 9489 syllabus sets the rotation). So this chapter trains both styles:
 - **Paper 1**, one question, 1 hour 15 minutes, 40 marks: four sources (up to one of them a cartoon or other picture); (a) [15] compare two sources as evidence; (b) [25] use all four sources and your own knowledge to say how far they support a statement (AO1 and AO3).
 - **Paper 2**, 1 hour 45 minutes, 60 marks, two questions: each has (a) [10] "Explain why …" and (b) [20] "How far do you agree …?" or "To what extent …?" (AO1 and AO2).
 This is key question 8.2 of the syllabus. The 2027 specimen Paper 2 question on this topic was about the League (one part on the Aaland Islands and one comparing the League's agencies with its peacekeeping), so the questions here are new ones in the same styles; do not expect an exam to repeat the specimen.
@@ -19,9 +19,9 @@ This is key question 8.2 of the syllabus. The 2027 specimen Paper 2 question on 
 **Before you start**, read [International relations, 1919–29 (1): dissatisfaction with the peace settlements of 1919–20](#hist.int.1919.1): the League was created alongside those treaties, and its Covenant is part of every one of them. You will also need the methods in [Skills: reading and comparing sources (Paper 1)](#hist.skills.sources) and [Skills: writing the analytical essay (Papers 2 and 4)](#hist.skills.essays).
 
 :::try Warm-up
-Q: Which body in the USA refused to ratify the Treaty of Versailles, and on which Article of the Covenant did its leader, Henry Cabot Lodge, concentrate? (from [chapter 1 of this topic](#hist.int.1919.1))
+Q: Which body in the USA refused to ratify the Treaty of Versailles, and on which Article of the Covenant did its leader, Henry Cabot Lodge, concentrate? (from [International relations, 1919–29 (1)](#hist.int.1919.1))
 A: The Senate. Lodge and others objected above all to Article 10, which committed members to preserve one another's territorial integrity; the Senate voted against ratification on 19 November 1919 and again on 19 March 1920.
-Q: What was Point 14 of Wilson's Fourteen Points of 8 January 1918? (from [chapter 1 of this topic](#hist.int.1919.1))
+Q: What was Point 14 of Wilson's Fourteen Points of 8 January 1918? (from [International relations, 1919–29 (1)](#hist.int.1919.1))
 A: "A general association of nations", formed under specific covenants to give mutual guarantees of political independence and territorial integrity to great and small states alike.
 Q: In a Paper 2 (a) "Explain why …" answer, what moves the answer from Level 3 to Level 4? (from [Skills: writing the analytical essay](#hist.skills.essays))
 A: Connecting the factors (showing how they work together or which mattered most) and reaching a reasoned, supported conclusion, rather than explaining each factor on its own.
@@ -328,7 +328,7 @@ In the 1920s the League was **effective in minor disputes and in humanitarian co
 
 ## Worked examples: exam answers built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
+The levels below are the real Cambridge levels for 2027 (from the 9489 mark schemes). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
 
 :::eg Paper 2 (a) [10]: Explain why the League of Nations failed to resolve the Vilna dispute.
 **What the levels want.** Level 2 (3–5) describes factors; Level 3 (6–8) explains factors with relevant detail; Level 4 (9–10) connects the factors and reaches a reasoned conclusion.

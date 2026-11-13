@@ -10,7 +10,7 @@ In 1865 the United States was a mainly agricultural country that had just fought
 :::
 
 :::exam Where this is examined
-The Gilded Age and the Progressive Era, 1870–1920, is one of the three topics of the AS **American option**. It is the **Paper 1** (sources) topic in **2027** and a **Paper 2** (essay) topic in **2028** and **2029** (FACTS.md has the rotation). So this chapter trains both styles:
+The Gilded Age and the Progressive Era, 1870–1920, is one of the three topics of the AS **American option**. It is the **Paper 1** (sources) topic in **2027** and a **Paper 2** (essay) topic in **2028** and **2029** (the 9489 syllabus sets the rotation). So this chapter trains both styles:
 - **Paper 1**, one question, 1 hour 15 minutes, 40 marks: four sources; (a) [15] compare two sources as evidence; (b) [25] use all four sources and your own knowledge to say how far they support a statement. The 2027 specimen Paper 1 question on this topic was about the Sherman Anti-Trust Act and trusts, which belongs to [the next chapter](#hist.us.gilded.2); this chapter's sources are about attitudes to wealth, the frontier and immigration.
 - **Paper 2**, 1 hour 45 minutes, 60 marks, two questions: each has (a) [10] "Explain why …" and (b) [20] "How far do you agree …?" or "To what extent …?".
 This chapter answers key question 5.1: *Why was there rapid industrialisation after 1870?* The assessment objectives are AO1 (knowledge) and AO2 (explanation and judgement) on Paper 2, AO1 and AO3 (sources) on Paper 1.
@@ -357,7 +357,7 @@ Natural resources and population were the **necessary conditions**: without them
 
 ## Worked examples: exam answers built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
+The levels below are the real Cambridge levels for 2027 (from the 9489 mark schemes). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
 
 :::eg Paper 2 (a) [10]: Explain why the expansion of the railroads helped industrial growth in the United States after 1870.
 **What the levels want.** Level 2 (3–5) describes factors; Level 3 (6–8) explains factors with relevant detail; Level 4 (9–10) connects the factors and reaches a reasoned conclusion.

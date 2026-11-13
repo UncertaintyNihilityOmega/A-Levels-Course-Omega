@@ -10,7 +10,7 @@ In 1789 almost nobody in France wanted a republic. Even in June 1791 the deputie
 :::
 
 :::exam Where this is examined
-This is key question 1.2 of France, 1774–1814, one of the three topics of the AS **European option**. France is the **Paper 2** (essay) topic in **2028** and **2029** and the **Paper 1** (sources) topic in **2027** (FACTS.md has the rotation). So this chapter trains both styles:
+This is key question 1.2 of France, 1774–1814, one of the three topics of the AS **European option**. France is the **Paper 2** (essay) topic in **2028** and **2029** and the **Paper 1** (sources) topic in **2027** (the 9489 syllabus sets the rotation). So this chapter trains both styles:
 - **Paper 1**: four sources; (a) [15] compare two sources as evidence; (b) [25] use all four sources and your own knowledge to say how far they support a statement. Sources on this key question include laws and decrees, speeches, manifestos, newspapers and prints.
 - **Paper 2**: each question has (a) [10] "Explain why …" and (b) [20] "How far do you agree …?" or "To what extent …?".
 The syllabus says you are not expected to study foreign policy and military campaigns in detail, only their impact inside France. So this chapter explains why war was declared and what defeat did to the king, but not the battles.
@@ -397,7 +397,7 @@ You can use these at AS to show that causes are weighed differently, but Paper 1
 
 ## Worked examples: exam answers built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
+The levels below are the real Cambridge levels for 2027 (from the 9489 mark schemes). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
 
 :::eg Paper 2 (a) [10]: Explain why Louis XVI tried to flee from Paris in June 1791.
 **What the levels want.** Level 2 (3–5) describes factors; Level 3 (6–8) explains factors with relevant detail; Level 4 (9–10) connects the factors and reaches a reasoned conclusion.

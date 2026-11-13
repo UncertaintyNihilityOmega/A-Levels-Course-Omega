@@ -22,7 +22,8 @@
 - REVIEW FINAL must check: exam.p1/p2 "best fit" wording against a real 9489 mark scheme (the FIX agent could
   not read the PDFs); the (b) word guides (about 700-900 P1, 600-800 P2) are labelled as course guidance, not board
   rules; widgets/hist-levels.js explorer vs best fit; malaysia.1 KMM size (sources say about 60 or 150).
-- Waiting for the 5-hour reset at 05:10 Nov 13 (Istanbul): 5-hour at 92%, weekly 82%.
+- Run Nov 13 07:33 (Istanbul): FIX of the 22 reader items and the sweep FIX running in parallel; hist-preview
+  allowed by the user this session (port 5111).
 - Course-wide sweep FIX before REVIEW FINAL (Readers file no items for these): 37 chapters cite "FACTS.md" to the
   student (say "the 9489 syllabus" or the paper instead); "Chapter N" as another chapter's name (link it).
 - 9489 syllabus version 3 (Oct 2026) changes only a weblink; FACTS.md noted.

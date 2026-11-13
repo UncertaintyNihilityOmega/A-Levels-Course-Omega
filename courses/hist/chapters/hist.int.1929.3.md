@@ -10,7 +10,7 @@ Appeasement is the most argued-over policy in British history. For Winston Churc
 :::
 
 :::exam Where this is examined
-International history, 1929–39 is one of the three topics of the AS **International option** (Section C). It is the **Paper 1** (sources) topic in **2029** and a **Paper 2** (essay) topic in **2027** and **2028** (FACTS.md has the rotation). So this chapter trains both styles:
+International history, 1929–39 is one of the three topics of the AS **International option** (Section C). It is the **Paper 1** (sources) topic in **2029** and a **Paper 2** (essay) topic in **2027** and **2028** (the 9489 syllabus sets the rotation). So this chapter trains both styles:
 - **Paper 1**, one question, 1 hour 15 minutes, 40 marks: four sources (at most one a cartoon or other picture); (a) [15] compare two sources as evidence; (b) [25] use all four sources and your own knowledge to say how far they support a statement (AO1 and AO3).
 - **Paper 2**, 1 hour 45 minutes, 60 marks, two questions from one section: each has (a) [10] "Explain why …" and (b) [20] "How far do you agree …?" or "To what extent …?" (AO1 and AO2).
 This is key question 9.3 of the syllabus: *Why, and with what effects, did Britain and France pursue a policy of appeasement?* The syllabus lists three groups of content: the economic, military and social considerations behind the policy (with the Ten-Year Rule, the Oxford debate, the Peace Ballot, fascism as a bulwark against Bolshevism, French divisions and the Maginot Line); the actions taken to appease Hitler (from the Naval Agreement to Prague); and the successes and failures of the policy. Questions can ask for causes ("Explain why Britain did not oppose …") or for a judgement ("How far was appeasement a sensible policy?"). Use old past papers on this period for practice, but write your own answers: the examples here are original.
@@ -21,9 +21,9 @@ This is key question 9.3 of the syllabus: *Why, and with what effects, did Brita
 :::try Warm-up
 Q: What did Britain, France, Germany, Belgium and Italy agree about the Rhineland at Locarno in 1925? (from [International relations, 1919–29 (4)](#hist.int.1919.4))
 A: Germany, France and Belgium accepted their common frontiers and the demilitarisation of the Rhineland, and Britain and Italy promised to help whichever of them was attacked. Germany's march into the zone in 1936 broke this agreement.
-Q: What did the Anglo-German Naval Agreement of June 1935 allow, and who was not consulted? (from [chapter 1 of this topic](#hist.int.1929.1))
+Q: What did the Anglo-German Naval Agreement of June 1935 allow, and who was not consulted? (from [International history, 1929–39 (1)](#hist.int.1929.1))
 A: A German navy of 35 per cent of the British navy's tonnage. Britain did not consult France or Italy, her partners in the Stresa Front, so the agreement undermined it.
-Q: Why did the Hoare–Laval plan of December 1935 cause outrage in Britain? (from [chapter 2 of this topic](#hist.int.1929.2))
+Q: Why did the Hoare–Laval plan of December 1935 cause outrage in Britain? (from [International history, 1929–39 (2)](#hist.int.1929.2))
 A: It offered Mussolini large parts of Abyssinia in return for ending the war, while Britain publicly backed sanctions. It looked like rewarding aggression, and Hoare resigned on 18 December 1935.
 :::
 
@@ -173,7 +173,7 @@ The Third Republic had weak governments: ministries rose and fell every few mont
 The alliance of Socialists, Radicals (a centre-left French party) and (in support) Communists that won the French general election of April–May 1936. Its leader, the Socialist Léon Blum, became Prime Minister in June 1936, the first Socialist and the first Jew to hold the post.
 :::
 
-The **elections of 1936** matter in two ways. Between the German march into the Rhineland (7 March) and the election (26 April and 3 May), France had a caretaker government that would not take a big risk before voters went to the polls. And the Popular Front's victory frightened the right: some conservatives said that the real danger was not Hitler but communism, so that a war would end in a revolution. Blum's government was also divided about Spain: it first planned to help the Spanish Republic and then, fearing civil war in France and the loss of British support, proposed the Non-Intervention Agreement (see [chapter 2 of this topic](#hist.int.1929.2)). Blum's government fell in June 1937; the governments that followed moved to the centre and then to the right.
+The **elections of 1936** matter in two ways. Between the German march into the Rhineland (7 March) and the election (26 April and 3 May), France had a caretaker government that would not take a big risk before voters went to the polls. And the Popular Front's victory frightened the right: some conservatives said that the real danger was not Hitler but communism, so that a war would end in a revolution. Blum's government was also divided about Spain: it first planned to help the Spanish Republic and then, fearing civil war in France and the loss of British support, proposed the Non-Intervention Agreement (see [International history, 1929–39 (2)](#hist.int.1929.2)). Blum's government fell in June 1937; the governments that followed moved to the centre and then to the right.
 
 ### The threat of communism
 
@@ -211,7 +211,7 @@ The syllabus lists six actions. They form one story in which each step made the 
 
 ### The response to German rearmament and the Naval Agreement, 1935
 
-From the day he took power in January 1933, Hitler rearmed in secret, and the League's Disarmament Conference failed (see [chapter 1 of this topic](#hist.int.1929.1)). On 16 March 1935 he threw off the pretence: he announced conscription, with a peacetime army of 36 divisions (about 550,000 men), and revealed that Germany had an air force, the *Luftwaffe*. Each of these broke the Treaty of Versailles. The British government's reaction was to send Sir John Simon, the Foreign Secretary, to Berlin on 25–26 March, where Hitler insisted on the right to a large air force. At Stresa in April, Britain, France and Italy condemned the breach, but only in words: they said they would "oppose" any treaty repudiation, but they made no plan for what to do.
+From the day he took power in January 1933, Hitler rearmed in secret, and the League's Disarmament Conference failed (see [International history, 1929–39 (1)](#hist.int.1929.1)). On 16 March 1935 he threw off the pretence: he announced conscription, with a peacetime army of 36 divisions (about 550,000 men), and revealed that Germany had an air force, the *Luftwaffe*. Each of these broke the Treaty of Versailles. The British government's reaction was to send Sir John Simon, the Foreign Secretary, to Berlin on 25–26 March, where Hitler insisted on the right to a large air force. At Stresa in April, Britain, France and Italy condemned the breach, but only in words: they said they would "oppose" any treaty repudiation, but they made no plan for what to do.
 
 Then, on **18 June 1935**, Britain signed the **Anglo-German Naval Agreement**. The German navy would be limited to 35 per cent of the Royal Navy's total tonnage, and Germany could build submarines up to 45 per cent of British submarine tonnage. The British navy wanted it. It fixed a limit on German naval building, at a time when Britain feared that a naval race, like the one before 1914, would again lead to war. British officials also hoped that Hitler's agreement would show that he would stick to treaties.
 
@@ -282,7 +282,7 @@ The settlement lasted less than six months. After Munich, Germany increased pres
 
 **The British response.** On 15 March Chamberlain told the Commons that Britain's guarantee no longer applied, because Slovakia's independence had ended the state whose frontiers she had promised to guarantee; he said he regretted it but did not propose to act. Two days later, in a speech at Birmingham on 17 March, he was much stronger. He reminded his audience of the assurances Hitler had given at Munich, and he asked whether this was the end of one adventure or the beginning of a new one and whether it was an attempt to dominate the world by force. Britain, he said, would resist such an attempt. The reasons for the change were that public opinion and many of his own party had turned against appeasement, and that Prague had shown that Hitler's claims were not limited to Germans. The following two weeks brought a rush of signals:
 - 22–23 March: Germany took the Memel territory from Lithuania, and Poland was pressed to give up Danzig.
-- 31 March: Britain and France guaranteed Poland (see [chapter 4 of this topic](#hist.int.1929.4)); on 13 April the guarantee was extended to Romania and Greece, after Italy had invaded Albania on 7 April.
+- 31 March: Britain and France guaranteed Poland (see [International history, 1929–39 (4)](#hist.int.1929.4)); on 13 April the guarantee was extended to Romania and Greece, after Italy had invaded Albania on 7 April.
 - April–May: Britain introduced a form of conscription in peacetime, the Military Training Act (May 1939), which called up men aged 20 and 21 for six months' training.
 
 **France's response** was to follow Britain. Daladier had already used emergency powers in late 1938 to speed up armament production, and the French government accepted the guarantee to Poland on the same day as Britain's.
@@ -374,7 +374,7 @@ Appeasement was a **reasonable policy in the early and middle 1930s** (when Brit
 
 ## Worked examples: exam answers built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
+The levels below are the real Cambridge levels for 2027 (from the 9489 mark schemes). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
 
 :::eg Paper 2 (a) [10]: Explain why Britain did not oppose the remilitarisation of the Rhineland in March 1936.
 **What the levels want.** Level 2 (3–5) describes factors; Level 3 (6–8) explains factors with relevant detail; Level 4 (9–10) connects the factors and reaches a reasoned conclusion.

@@ -10,7 +10,7 @@ In 1820 Americans argued about slavery but still shared one political system. By
 :::
 
 :::exam Where this is examined
-The Civil War and Reconstruction, 1820–77 is one of the three topics of the AS **American option** (Section B of Papers 1 and 2). It is the **Paper 1** (sources) topic in **2029** and a **Paper 2** (essay) topic in **2027** and **2028** (FACTS.md has the rotation). So this chapter trains both styles:
+The Civil War and Reconstruction, 1820–77 is one of the three topics of the AS **American option** (Section B of Papers 1 and 2). It is the **Paper 1** (sources) topic in **2029** and a **Paper 2** (essay) topic in **2027** and **2028** (the 9489 syllabus sets the rotation). So this chapter trains both styles:
 - **Paper 1**, one question, 1 hour 15 minutes, 40 marks: four sources (at most 600 words in all, at most one visual); (a) [15] compare two sources as evidence; (b) [25] use all four sources and your own knowledge to say how far they support a view.
 - **Paper 2**, 1 hour 45 minutes, 60 marks, two questions: each has (a) [10] "Explain why …" and (b) [20] "How far do you agree …?", "To what extent …?" or "How far was …?". Assessment objectives: Paper 1 mostly tests AO3 (sources in context), Paper 2 tests AO1 (knowledge) and AO2 (analysis and judgement).
 This chapter covers key question 4.1: *Why was there increasing tension between the North and the South before 1860?* The next chapter, [Civil War and Reconstruction (2)](#hist.us.civilwar.2), covers key question 4.2, the final crisis of 1857–61.
@@ -401,7 +401,7 @@ Pearson Edexcel's A Level History (9HI0) studies this period inside Paper 3 opti
 
 ## Worked examples: exam answers built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
+The levels below are the real Cambridge levels for 2027 (from the 9489 mark schemes). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
 
 :::eg Paper 2 (a) [10]: Explain why the Kansas–Nebraska Act increased tension between North and South.
 **What the levels want.** Level 2 (3–5) describes factors; Level 3 (6–8) explains factors with relevant detail; Level 4 (9–10) connects the factors and reaches a reasoned conclusion.

@@ -10,7 +10,7 @@ On 11 November 1918 the guns stopped after a war that had killed roughly nine to
 :::
 
 :::exam Where this is examined
-International relations, 1919–29 is one of the three topics of the AS **International option** (Section C). It is the **Paper 1** (sources) topic in **2028** and a **Paper 2** (essay) topic in **2027** and **2029** (FACTS.md has the rotation). So this chapter trains both styles:
+International relations, 1919–29 is one of the three topics of the AS **International option** (Section C). It is the **Paper 1** (sources) topic in **2028** and a **Paper 2** (essay) topic in **2027** and **2029** (the 9489 syllabus sets the rotation). So this chapter trains both styles:
 - **Paper 1**, one question, 1 hour 15 minutes, 40 marks: four sources (up to one of them a cartoon or other picture); (a) [15] compare two sources as evidence; (b) [25] use all four sources and your own knowledge to say how far they support a statement (AO1 and AO3).
 - **Paper 2**, 1 hour 45 minutes, 60 marks, two questions: each has (a) [10] "Explain why …" and (b) [20] "How far do you agree …?" or "To what extent …?" (AO1 and AO2).
 This is key question 8.1 of the syllabus. The next three chapters cover the League of Nations (8.2), the tensions of the early 1920s (8.3) and the recovery of 1924–29 (8.4). The 2027 specimen Paper 2 question on this topic was about the League (8.2), so the questions in this chapter are new ones in the same styles.
@@ -360,7 +360,7 @@ Four points help you judge "how harsh was it?":
 
 ## Worked examples: exam answers built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
+The levels below are the real Cambridge levels for 2027 (from the 9489 mark schemes). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
 
 :::eg Paper 2 (a) [10]: Explain why Germany objected to the Treaty of Versailles.
 **What the levels want.** Level 2 (3–5) describes factors; Level 3 (6–8) explains factors with relevant detail; Level 4 (9–10) connects the factors and reaches a reasoned conclusion.

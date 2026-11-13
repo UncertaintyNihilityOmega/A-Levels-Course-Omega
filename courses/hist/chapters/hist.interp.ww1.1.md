@@ -15,7 +15,7 @@ This chapter is the knowledge for **Paper 3, Section A** (the origins of the Fir
 - The extract will be about responsibility (the key question is "Who or what was to blame for the First World War?"). The next chapter, [Origins of the First World War (2): the historians' debate](#hist.interp.ww1.2), teaches the arguments. This chapter teaches the events, and tags each one with what it is used for.
 :::
 
-**Before you start**, read [How historians disagree: reading an interpretation](#hist.interp.skills): its method (read, find, test, explain) and its three jobs for knowledge are used throughout. Chapter 1 of the International option, [International relations, 1919–29 (1): dissatisfaction with the peace settlements of 1919–20](#hist.int.1919.1), covers Article 231 and the Versailles settlement, which this topic meets again at the end.
+**Before you start**, read [How historians disagree: reading an interpretation](#hist.interp.skills): its method (read, find, test, explain) and its three jobs for knowledge are used throughout. In the International option, [International relations, 1919–29 (1): dissatisfaction with the peace settlements of 1919–20](#hist.int.1919.1), covers Article 231 and the Versailles settlement, which this topic meets again at the end.
 
 :::try Warm-up
 Q: What does Paper 3 ask you to explain about the extract, and what must your knowledge do? (from [How historians disagree](#hist.interp.skills))

@@ -16,7 +16,7 @@ Hitler's Germany, 1929–41 is one of the three topics of the A Level **European
 - The syllabus period here is the years 1933–39 up to the outbreak of war. The mass murder of the Jews of Europe belongs to the Paper 3 chapters on the Holocaust and to the later years: here you are concerned with the policy of persecution before the war.
 :::
 
-**Before you start**, read [Hitler's Germany (3): how successful Nazi economic policies were](#hist.d.hitler.3), [Hitler's Germany (2): how effectively the Nazis governed Germany](#hist.d.hitler.2) and [Skills: writing the analytical essay (Papers 2 and 4)](#hist.skills.essays). This chapter uses the Labour Front and the labour shortage from Chapter 3, the terror state and propaganda from Chapter 2, and the essay method of the skills chapter.
+**Before you start**, read [Hitler's Germany (3): how successful Nazi economic policies were](#hist.d.hitler.3), [Hitler's Germany (2): how effectively the Nazis governed Germany](#hist.d.hitler.2) and [Skills: writing the analytical essay (Papers 2 and 4)](#hist.skills.essays). This chapter uses the Labour Front and the labour shortage from [Hitler's Germany (3)](#hist.d.hitler.3), the terror state and propaganda from [Hitler's Germany (2)](#hist.d.hitler.2), and the essay method of the skills chapter.
 
 :::try Warm-up
 Q: What did the Enabling Act of 23 March 1933 allow the government to do? (from [Hitler's Germany (1)](#hist.d.hitler.1))

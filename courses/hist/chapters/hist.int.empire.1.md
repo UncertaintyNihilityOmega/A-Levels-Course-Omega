@@ -10,7 +10,7 @@ In 1870 Europeans controlled about a tenth of Africa, mostly along the coasts. B
 :::
 
 :::exam Where this is examined
-Imperialism and the emergence of world powers, c.1870–1918 is one of the three topics of the AS **International option**. It is the **Paper 1** (sources) topic in **2027** and a **Paper 2** (essay) topic in **2028** and **2029** (FACTS.md has the rotation). So this chapter trains both styles:
+Imperialism and the emergence of world powers, c.1870–1918 is one of the three topics of the AS **International option**. It is the **Paper 1** (sources) topic in **2027** and a **Paper 2** (essay) topic in **2028** and **2029** (the 9489 syllabus sets the rotation). So this chapter trains both styles:
 - **Paper 1**, one question, 1 hour 15 minutes, 40 marks: four sources (at most 600 words in all, at most one visual); (a) [15] compare two sources as evidence; (b) [25] use all four sources and your own knowledge to say how far they support a statement.
 - **Paper 2**, 1 hour 45 minutes, 60 marks, two questions: each has (a) [10] "Explain why …" and (b) [20] "How far do you agree …?" or "To what extent …?".
 This chapter covers key question 7.1 of the syllabus: *Why was imperialism a significant force in Africa from 1870?* The next chapter covers 7.2, the effect of imperial expansion on relations between the powers.
@@ -331,7 +331,7 @@ At AS you do not need to name historians, but you can use "some historians stres
 
 ## Worked examples: exam answers built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
+The levels below are the real Cambridge levels for 2027 (from the 9489 mark schemes). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
 
 :::eg Paper 2 (a) [10]: Explain why European powers wanted colonies in Africa after 1870.
 **What the levels want.** Level 2 (3–5) describes factors; Level 3 (6–8) explains factors with relevant detail; Level 4 (9–10) connects the factors and reaches a reasoned conclusion.

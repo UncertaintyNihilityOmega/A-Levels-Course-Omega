@@ -10,7 +10,7 @@ In 1853 Japan had no steamships, no railways and a government that had refused t
 :::
 
 :::exam Where this is examined
-Imperialism and the emergence of world powers, c.1870–1918 is one of the three topics of the AS **International option**. It is the **Paper 1** (sources) topic in **2027** and a **Paper 2** (essay) topic in **2028** and **2029** (FACTS.md has the rotation). So this chapter trains both styles:
+Imperialism and the emergence of world powers, c.1870–1918 is one of the three topics of the AS **International option**. It is the **Paper 1** (sources) topic in **2027** and a **Paper 2** (essay) topic in **2028** and **2029** (the 9489 syllabus sets the rotation). So this chapter trains both styles:
 - **Paper 1**, one question, 1 hour 15 minutes, 40 marks: four sources; (a) [15] compare two sources as evidence; (b) [25] use all four sources and your own knowledge to say how far they support a statement. Expect treaties, speeches, proclamations and pictures from the period.
 - **Paper 2**, 1 hour 45 minutes, 60 marks, two questions: each has (a) [10] "Explain why …" and (b) [20] "How far do you agree …?" or "To what extent …?".
 This chapter covers key question 7.3: *Why did Japan emerge as a world power and what was the impact on international relations?* It has four parts: relations with the western powers in the nineteenth century; the reasons for rapid modernisation and military development; international recognition (Korea, the Anglo-Japanese Treaty of 1902 and the Russo-Japanese War); and Japan in the First World War. Japanese names are written in the Japanese order, family name first (Itō Hirobumi, Itō being the family name).
@@ -451,7 +451,7 @@ These views are not rivals. One stresses the political break, the other the long
 
 ## Worked examples: exam answers built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
+The levels below are the real Cambridge levels for 2027 (from the 9489 mark schemes). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
 
 :::eg Paper 2 (a) [10]: Explain why Britain signed an alliance with Japan in 1902.
 **What the levels want.** Level 2 (3–5) describes factors; Level 3 (6–8) explains factors with relevant detail; Level 4 (9–10) connects the factors and reaches a reasoned conclusion.

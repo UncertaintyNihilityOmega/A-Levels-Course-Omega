@@ -10,7 +10,7 @@ On 1 September 1939 German forces crossed the Polish frontier and, two days late
 :::
 
 :::exam Where this is examined
-International history, 1929–39 is one of the three topics of the AS **International option** (Section C). It is the **Paper 1** (sources) topic in **2029** and a **Paper 2** (essay) topic in **2027** and **2028** (FACTS.md has the rotation). So this chapter trains both styles:
+International history, 1929–39 is one of the three topics of the AS **International option** (Section C). It is the **Paper 1** (sources) topic in **2029** and a **Paper 2** (essay) topic in **2027** and **2028** (the 9489 syllabus sets the rotation). So this chapter trains both styles:
 - **Paper 1**, one question, 1 hour 15 minutes, 40 marks: four sources (at most one a cartoon or other picture); (a) [15] compare two sources as evidence; (b) [25] use all four sources and your own knowledge to say how far they support a statement (AO1 and AO3).
 - **Paper 2**, 1 hour 45 minutes, 60 marks, two questions from one section: each has (a) [10] "Explain why …" and (b) [20] "How far do you agree …?" or "To what extent …?" (AO1 and AO2).
 This is key question 9.4 of the syllabus: *Why did war break out in 1939?* The syllabus lists four groups of content: the aims and impact of Hitler's expansionist policies; British rearmament (aircraft, air raid preparations, targets and progress by 1939); the development of German alliances (the Anti-Comintern Pact, the Pact of Steel and the Nazi–Soviet Pact, with the long-term and short-term motives of the participants); and the attack on Poland (Danzig and the Corridor, the end of appeasement and the guarantee, the disagreement between Hitler and the High Command, and Hitler's intentions). Questions often ask about one pact or one decision ("Explain why …") or about the balance of causes ("How far was Hitler's foreign policy the main cause of war?"). The debate about Hitler's plan is stretch material, not a Paper 3 topic. Old past papers on this topic are good practice, but the examples here are original.
@@ -19,11 +19,11 @@ This is key question 9.4 of the syllabus: *Why did war break out in 1939?* The s
 **Before you start**, read [International history, 1929–39 (3): appeasement: why, and with what effects](#hist.int.1929.3) (the Rhineland, Anschluss, Munich and Prague are told there in detail and are summarised here from the point of view of Hitler's aims) and [International history, 1929–39 (1): the rise of extremism and international relations](#hist.int.1929.1) (the Anti-Comintern Pact and the Soviet attitude to Nazism). You will also use [Skills: reading and comparing sources (Paper 1)](#hist.skills.sources) and [Skills: writing the analytical essay (Papers 2 and 4)](#hist.skills.essays).
 
 :::try Warm-up
-Q: What did the Munich Agreement of September 1938 decide, and who was left out of the conference? (from [chapter 3 of this topic](#hist.int.1929.3))
+Q: What did the Munich Agreement of September 1938 decide, and who was left out of the conference? (from [International history, 1929–39 (3)](#hist.int.1929.3))
 A: Germany would occupy the Sudetenland between 1 and 10 October 1938. Czechoslovakia and the USSR were not at the conference; Britain, France, Germany and Italy signed.
-Q: Why did the occupation of Prague on 15 March 1939 change British policy? (from [chapter 3 of this topic](#hist.int.1929.3))
+Q: Why did the occupation of Prague on 15 March 1939 change British policy? (from [International history, 1929–39 (3)](#hist.int.1929.3))
 A: It broke the promises of Munich and took over a non-German people, so it showed that Hitler's claims were not limited to Germans or to revising Versailles. Public opinion and Chamberlain turned, and Britain and France guaranteed Poland on 31 March.
-Q: Which two powers signed the Anti-Comintern Pact in 1936, and which joined in 1937? (from [chapter 1 of this topic](#hist.int.1929.1))
+Q: Which two powers signed the Anti-Comintern Pact in 1936, and which joined in 1937? (from [International history, 1929–39 (1)](#hist.int.1929.1))
 A: Germany and Japan signed it on 25 November 1936; Italy joined on 6 November 1937. It was aimed against the Communist International and so, in effect, against the USSR.
 :::
 
@@ -106,7 +106,7 @@ Hitler had **fixed aims** (to overturn Versailles, to unite the Germans and abov
 
 ## The impact of Hitler's expansion, 1935–39
 
-The detail of each step is in [chapter 3 of this topic](#hist.int.1929.3). Here the question is different: what did each step do to the **balance of power** and to Hitler's own confidence? For a "Why did war break out?" answer, this is the link between the aims and the outbreak.
+The detail of each step is in [International history, 1929–39 (3)](#hist.int.1929.3). Here the question is different: what did each step do to the **balance of power** and to Hitler's own confidence? For a "Why did war break out?" answer, this is the link between the aims and the outbreak.
 
 | Step | What it did for Germany | What it showed |
 |---|---|---|
@@ -126,7 +126,7 @@ The cumulative effect is the key point. By the end of March 1939 Germany had a l
 
 ## British rearmament in response to German expansion
 
-British rearmament was a response to German rearmament, not a separate story. In [chapter 3 of this topic](#hist.int.1929.3) it appears as one of appeasement's successes (it "bought time"). Here the question is what Britain actually built and how far it had got by September 1939. The syllabus names three things: aircraft, preparation for air raids, and targets and progress by 1939.
+British rearmament was a response to German rearmament, not a separate story. In [International history, 1929–39 (3)](#hist.int.1929.3) it appears as one of appeasement's successes (it "bought time"). Here the question is what Britain actually built and how far it had got by September 1939. The syllabus names three things: aircraft, preparation for air raids, and targets and progress by 1939.
 
 ### The development of aircraft
 
@@ -141,7 +141,7 @@ The new aircraft were the key. The **Hawker Hurricane** (first flown in November
 
 ### Preparation for air raids
 
-The fear of the bomber, described in [chapter 3 of this topic](#hist.int.1929.3), led to the second part of rearmament: protecting civilians. The government set up an Air Raid Precautions Department in the Home Office in 1935, and the **Air Raid Precautions Act** (received royal assent in December 1937, in force from January 1938) forced local authorities to prepare plans. Over the next two years Britain:
+The fear of the bomber, described in [International history, 1929–39 (3)](#hist.int.1929.3), led to the second part of rearmament: protecting civilians. The government set up an Air Raid Precautions Department in the Home Office in 1935, and the **Air Raid Precautions Act** (received royal assent in December 1937, in force from January 1938) forced local authorities to prepare plans. Over the next two years Britain:
 - recruited hundreds of thousands of volunteer air raid wardens, firemen and first-aid workers (the crisis of September 1938 produced a surge of volunteers);
 - issued **gas masks** to the whole population (the mass fitting in September 1938 was part of the Munich crisis);
 - began to distribute the **Anderson shelter** from February 1939, a steel shelter for the garden, free to poorer households, with well over a million distributed by the outbreak of war;
@@ -150,7 +150,7 @@ The fear of the bomber, described in [chapter 3 of this topic](#hist.int.1929.3)
 
 ### Targets and progress by 1939
 
-By September 1939 Britain had come a long way, but the targets had not all been met. Scheme F's goal of about 1,736 first-line aircraft by March 1939 was not reached on time, because new types came into service late and factories took time to expand. Yet Fighter Command had about 27 squadrons of Hurricanes and Spitfires and a working radar chain, which in 1938 it had not. The army was still the weakest service, with limited conscription starting only in May 1939 and an expeditionary force for France of only a few divisions. Defence spending, as the chart in [chapter 3](#hist.int.1929.3) shows, was in 1938–39 more than three times its level in 1934–35.
+By September 1939 Britain had come a long way, but the targets had not all been met. Scheme F's goal of about 1,736 first-line aircraft by March 1939 was not reached on time, because new types came into service late and factories took time to expand. Yet Fighter Command had about 27 squadrons of Hurricanes and Spitfires and a working radar chain, which in 1938 it had not. The army was still the weakest service, with limited conscription starting only in May 1939 and an expeditionary force for France of only a few divisions. Defence spending, as the chart in [International history, 1929–39 (3)](#hist.int.1929.3) shows, was in 1938–39 more than three times its level in 1934–35.
 
 :::key British rearmament by 1939: progress and limits
 1. **Aircraft**: the priority moved from bombers to fighters in 1937–38; Hurricanes and Spitfires entered service; production rose to nearly 8,000 military aircraft in 1939.
@@ -169,7 +169,7 @@ An agreement of 25 November 1936 between Germany and Japan, joined by Italy on 6
 
 ### The Anti-Comintern Pact, 1936–37
 
-*Motives.* **Germany** wanted a friend in the Far East that would tie down the USSR on its eastern side, and the pact fitted Hitler's anti-communism; it was largely the work of Joachim von Ribbentrop, then Hitler's adviser on foreign affairs, who became Foreign Minister in 1938. **Japan** wanted allies against the USSR and a counterweight to Britain and the USA, and its army favoured the link. **Italy**, which joined in 1937, had been isolated after the Abyssinian crisis, had worked with Germany in Spain, and left the League of Nations in December 1937. The pact was cheap: it committed no army to fight. Its importance was as a **signal** that the three states had common interests, and it shifted Germany away from its earlier cooperation with China. See [chapter 1 of this topic](#hist.int.1929.1) for the background.
+*Motives.* **Germany** wanted a friend in the Far East that would tie down the USSR on its eastern side, and the pact fitted Hitler's anti-communism; it was largely the work of Joachim von Ribbentrop, then Hitler's adviser on foreign affairs, who became Foreign Minister in 1938. **Japan** wanted allies against the USSR and a counterweight to Britain and the USA, and its army favoured the link. **Italy**, which joined in 1937, had been isolated after the Abyssinian crisis, had worked with Germany in Spain, and left the League of Nations in December 1937. The pact was cheap: it committed no army to fight. Its importance was as a **signal** that the three states had common interests, and it shifted Germany away from its earlier cooperation with China. See [International history, 1929–39 (1)](#hist.int.1929.1) for the background.
 
 ### The Pact of Steel, 22 May 1939
 
@@ -219,7 +219,7 @@ The crisis came after Munich. On 24 October 1938 Ribbentrop proposed to the Poli
 
 ### The end of appeasement and the Anglo-French guarantee, March 1939
 
-The occupation of Prague on 15 March 1939 (see [chapter 3 of this topic](#hist.int.1929.3)) and the seizure of Memel on 22–23 March convinced British ministers that Poland was next. On 26 March Poland rejected the German demands again. British ministers had also heard (some of the news was false, such as a rumoured German ultimatum to Romania) that Germany was preparing a move. On **31 March 1939** Chamberlain announced in the Commons that Britain would give Poland "all support in their power" if Polish independence was clearly threatened and Poland resisted, and France joined the guarantee. On 13 April the guarantee was extended to Romania and Greece. On 25 August 1939 the promise became a formal Anglo-Polish treaty of mutual assistance.
+The occupation of Prague on 15 March 1939 (see [International history, 1929–39 (3)](#hist.int.1929.3)) and the seizure of Memel on 22–23 March convinced British ministers that Poland was next. On 26 March Poland rejected the German demands again. British ministers had also heard (some of the news was false, such as a rumoured German ultimatum to Romania) that Germany was preparing a move. On **31 March 1939** Chamberlain announced in the Commons that Britain would give Poland "all support in their power" if Polish independence was clearly threatened and Poland resisted, and France joined the guarantee. On 13 April the guarantee was extended to Romania and Greece. On 25 August 1939 the promise became a formal Anglo-Polish treaty of mutual assistance.
 
 Why did Britain give a promise that she could not carry out directly? The reasons were these:
 - **To deter Hitler.** Ministers thought that if Hitler knew Britain would fight he might hold back, as he had in May 1938.
@@ -241,7 +241,7 @@ The disagreement was real but limited. It was about **risk and timing**, not abo
 
 ### Hitler's intentions and the outbreak of war
 
-What did Hitler want in Poland in 1939? The evidence is that he wanted to **destroy Poland as an independent state** and to take Danzig and the Corridor, and that he hoped to do it in a **short, local war** which Britain and France would not enter. At the conference of 23 May he was recorded (by his adjutant Schmundt) as saying that Danzig was not the real issue, but the need for living space in the east, and that Poland would be attacked at the first suitable opportunity. He did not want a major war with the West yet, but he was prepared to risk one: he was confident that the Pact with Stalin would deter it, and he is reported to have called his enemies "little worms" (see [chapter 3](#hist.int.1929.3) for the caution needed with that remark).
+What did Hitler want in Poland in 1939? The evidence is that he wanted to **destroy Poland as an independent state** and to take Danzig and the Corridor, and that he hoped to do it in a **short, local war** which Britain and France would not enter. At the conference of 23 May he was recorded (by his adjutant Schmundt) as saying that Danzig was not the real issue, but the need for living space in the east, and that Poland would be attacked at the first suitable opportunity. He did not want a major war with the West yet, but he was prepared to risk one: he was confident that the Pact with Stalin would deter it, and he is reported to have called his enemies "little worms" (see [International history, 1929–39 (3)](#hist.int.1929.3) for the caution needed with that remark).
 
 The attack was fixed for 26 August, put off after the Anglo-Polish treaty of 25 August and because Mussolini said Italy could not fight, and then ordered for 1 September. In the last days Hitler tried to separate Britain from Poland by offering talks, and he put a set of demands to Poland on 29–30 August that the Poles had no time to answer. On 31 August the SS staged a fake Polish attack on a German radio station at Gleiwitz to provide an excuse.
 
@@ -272,7 +272,7 @@ Hitler's **aims and decisions** were the main cause: another German leader might
 
 ## Worked examples: exam answers built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
+The levels below are the real Cambridge levels for 2027 (from the 9489 mark schemes). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
 
 :::eg Paper 2 (a) [10]: Explain why Britain guaranteed Poland in March 1939.
 **What the levels want.** Level 2 (3–5) describes factors; Level 3 (6–8) explains factors with relevant detail; Level 4 (9–10) connects the factors and reaches a reasoned conclusion.

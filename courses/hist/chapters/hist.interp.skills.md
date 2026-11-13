@@ -152,7 +152,7 @@ About 10 to 12 minutes to read, mark and plan; about 55 minutes to write; the la
 
 ## The levels: what each mark band looks like
 
-The Paper 3 mark scheme has two tables, each out of 20. These are the Cambridge levels for 2027 (FACTS.md). Read the columns slowly: they describe a *ladder* of understanding.
+The Paper 3 mark scheme has two tables, each out of 20. These are the Cambridge levels for 2027 (from the 9489 mark schemes). Read the columns slowly: they describe a *ladder* of understanding.
 
 | Level | Marks | Table A (AO4): the interpretation and approach |
 |---|---|---|

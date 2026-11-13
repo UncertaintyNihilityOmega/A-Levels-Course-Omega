@@ -10,7 +10,7 @@ The League of Nations was created in 1919 so that there would never be another w
 :::
 
 :::exam Where this is examined
-International history, 1929–39 is one of the three topics of the AS **International option** (Section C). It is the **Paper 1** (sources) topic in **2029** and a **Paper 2** (essay) topic in **2027** and **2028** (FACTS.md has the rotation). So this chapter trains both styles:
+International history, 1929–39 is one of the three topics of the AS **International option** (Section C). It is the **Paper 1** (sources) topic in **2029** and a **Paper 2** (essay) topic in **2027** and **2028** (the 9489 syllabus sets the rotation). So this chapter trains both styles:
 - **Paper 1**, one question, 1 hour 15 minutes, 40 marks: four sources (at most one a cartoon or other picture); (a) [15] compare two sources as evidence; (b) [25] use all four sources and your own knowledge to say how far they support a statement (AO1 and AO3).
 - **Paper 2**, 1 hour 45 minutes, 60 marks, two questions from one section: each has (a) [10] "Explain why …" and (b) [20] "How far do you agree …?" or "To what extent …?" (AO1 and AO2).
 This is key question 9.2 of the syllabus: *Why did the League of Nations fail to keep the peace in the 1930s?* The syllabus lists the crises (Manchuria, Abyssinia, Spain), the changing attitudes of the great powers, and four causes of failure (disarmament, absent major powers, reliance on Britain and France, the Depression and nationalism). Old papers from before 2027 set questions on this period too, for example on why the USSR was a League member only in 1934–39; use them for practice, but the questions here are new ones in the same styles.
@@ -19,11 +19,11 @@ This is key question 9.2 of the syllabus: *Why did the League of Nations fail to
 **Before you start**, read [International history, 1929–39 (1): the rise of extremism and international relations](#hist.int.1929.1) (the Depression, Hitler, Japan's army and the Disarmament Conference are the background to everything here) and [International relations, 1919–29 (2): the League of Nations: creation and challenges in the 1920s](#hist.int.1919.2) (the Covenant, the Council, the weaknesses built into the League). You will also use [Skills: reading and comparing sources (Paper 1)](#hist.skills.sources) and [Skills: writing the analytical essay (Papers 2 and 4)](#hist.skills.essays).
 
 :::try Warm-up
-Q: What did the Covenant require of League members if a member went to war in breach of it? (from [chapter 2 of the 1919–29 topic](#hist.int.1919.2))
+Q: What did the Covenant require of League members if a member went to war in breach of it? (from [International relations, 1919–29 (2)](#hist.int.1919.2))
 A: Article 16: all members were to cut off trade and financial dealings with the covenant-breaker; the Council could only recommend what armed forces members should contribute, so no one was bound to fight.
-Q: Why did the League's decision rules make it hard to act against a great power? (from [chapter 2 of the 1919–29 topic](#hist.int.1919.2))
+Q: Why did the League's decision rules make it hard to act against a great power? (from [International relations, 1919–29 (2)](#hist.int.1919.2))
 A: Council decisions generally needed unanimity, so the state accused of aggression, if it sat on the Council, could vote against action; and the League had no army of its own.
-Q: Which event in 1931 made Japan's army independent of its government, and what did it do to the Disarmament Conference? (from [chapter 1 of this topic](#hist.int.1929.1))
+Q: Which event in 1931 made Japan's army independent of its government, and what did it do to the Disarmament Conference? (from [International history, 1929–39 (1)](#hist.int.1929.1))
 A: The Mukden incident and the conquest of Manchuria; Japan was fighting in Manchuria and at Shanghai when the Conference opened in February 1932, which weakened the League's authority and the powers' willingness to disarm.
 :::
 
@@ -66,7 +66,7 @@ Read this first. Every later section explains one part of it.
 
 ### The Japanese conquest
 
-By 1931 Japan held a lease on the South Manchurian Railway and had large investments in Manchuria, the Chinese region north of the Great Wall (chapter 1 explains why the army saw it as a "lifeline"). The slump had made the army's case stronger, and China, divided between the Nationalist government of Chiang Kai-shek and regional warlords, was weak.
+By 1931 Japan held a lease on the South Manchurian Railway and had large investments in Manchuria, the Chinese region north of the Great Wall ([International history, 1929–39 (1)](#hist.int.1929.1) explains why the army saw it as a "lifeline"). The slump had made the army's case stronger, and China, divided between the Nationalist government of Chiang Kai-shek and regional warlords, was weak.
 
 On the night of 18 September 1931 there was an explosion on the railway line near Mukden. It did little damage (a train passed soon afterwards), but the Kwantung Army blamed Chinese saboteurs and used it as an excuse to seize Mukden and then the rest of southern Manchuria. Historians agree that Japanese staff officers planned the incident. The government in Tokyo, where the prime minister was weak, could not or would not control them. By early 1932 Japan held all the main cities. On 1 March 1932 it proclaimed an independent state of **Manchukuo**, with the last Chinese emperor, Puyi, as its head. It was a puppet: Japanese officials ran it.
 
@@ -105,7 +105,7 @@ Manchuria was the League's first major failure and its model. Notice the pattern
 
 ### Why Italy attacked
 
-Abyssinia (Ethiopia) was one of the few independent African states and, since 1923, a member of the League; Italy itself had sponsored its entry. Mussolini wanted to avenge Italy's defeat by the Ethiopians at Adwa in 1896 and to give Italy an empire in East Africa, where it already held Eritrea and Somaliland. The slump and the need for success to keep the regime popular (chapter 1) added pressure. He also thought the moment was good: he believed that Britain and France, worried about Hitler, would not stand in his way. In January 1935 the French Foreign Minister Laval reached agreements with him in Rome, and Mussolini took them to mean that France would not object to Italian action in Abyssinia; at Stresa in April, nothing was said about Africa.
+Abyssinia (Ethiopia) was one of the few independent African states and, since 1923, a member of the League; Italy itself had sponsored its entry. Mussolini wanted to avenge Italy's defeat by the Ethiopians at Adwa in 1896 and to give Italy an empire in East Africa, where it already held Eritrea and Somaliland. The slump and the need for success to keep the regime popular ([International history, 1929–39 (1)](#hist.int.1929.1)) added pressure. He also thought the moment was good: he believed that Britain and France, worried about Hitler, would not stand in his way. In January 1935 the French Foreign Minister Laval reached agreements with him in Rome, and Mussolini took them to mean that France would not object to Italian action in Abyssinia; at Stresa in April, nothing was said about Africa.
 
 ### The League and the crisis
 
@@ -139,7 +139,7 @@ Haile Selassie came to Geneva and addressed the Assembly on 30 June 1936. Italia
 
 ### The effects of the Abyssinian crisis
 
-- **Italy** left the Stresa Front and drifted towards Germany: the Rome–Berlin Axis followed (chapter 1).
+- **Italy** left the Stresa Front and drifted towards Germany: the Rome–Berlin Axis followed ([International history, 1929–39 (1)](#hist.int.1929.1)).
 - **The League** was fatally discredited. In 1936 several small states (the Scandinavian countries, the Netherlands and Belgium among them) said that they could no longer rely on the League for their security, and would not feel bound to join sanctions again; Belgium went back to neutrality in October.
 - **Britain and France** had gained nothing: they lost Italy, and showed Hitler that sanctions would not be followed by force. In March 1936, two months before Addis Ababa fell, Hitler's troops had entered the Rhineland.
 
@@ -169,7 +169,7 @@ Each left for a reason of its own. **Japan** left because the League condemned i
 
 ### The admission of the USSR, 1934
 
-The USSR had been hostile to the League since 1919, calling it an instrument of the imperialist powers, and for fifteen years it was outside it. After Hitler's victory (chapter 1) it changed its policy, and its Commissar for Foreign Affairs, Maxim Litvinov, became one of the League's strongest supporters. The Assembly voted on 18 September 1934 by 39 votes to 3 (with seven abstentions) to admit the USSR, which received a permanent seat on the Council. France, which wanted an ally against Germany, led the campaign for the admission. It looked like a gain for the League: another great power in, as three had left. But it could not make up for the losses. The Soviet Union's membership was short. It lasted until 14 December 1939, when the League expelled it for its attack on Finland (30 November 1939), a few months after it had made a pact with Hitler's Germany. In the years between, many in Britain and France, and in Poland and Romania, distrusted Soviet motives, which meant that it was never fully trusted as a partner of the League.
+The USSR had been hostile to the League since 1919, calling it an instrument of the imperialist powers, and for fifteen years it was outside it. After Hitler's victory ([International history, 1929–39 (1)](#hist.int.1929.1)) it changed its policy, and its Commissar for Foreign Affairs, Maxim Litvinov, became one of the League's strongest supporters. The Assembly voted on 18 September 1934 by 39 votes to 3 (with seven abstentions) to admit the USSR, which received a permanent seat on the Council. France, which wanted an ally against Germany, led the campaign for the admission. It looked like a gain for the League: another great power in, as three had left. But it could not make up for the losses. The Soviet Union's membership was short. It lasted until 14 December 1939, when the League expelled it for its attack on Finland (30 November 1939), a few months after it had made a pact with Hitler's Germany. In the years between, many in Britain and France, and in Poland and Romania, distrusted Soviet motives, which meant that it was never fully trusted as a partner of the League.
 
 ### Negotiations outside the League
 
@@ -178,7 +178,7 @@ Increasingly the powers settled their business **outside** Geneva, which undermi
 - The **Stresa Front** (April 1935) was a front of three powers, which met without the League.
 - The **Anglo-German Naval Agreement** (June 1935) was a bilateral deal between Britain and Germany.
 - The **Hoare–Laval plan** (December 1935) was a private deal between Britain and France to settle a League member's fate.
-- The **Anglo-Italian "gentlemen's agreement"** (January 1937) and, in 1938, the **Munich Agreement** (chapter 3) were deals between great powers over the heads of the victims.
+- The **Anglo-Italian "gentlemen's agreement"** (January 1937) and, in 1938, the **Munich Agreement** ([International history, 1929–39 (3)](#hist.int.1929.3)) were deals between great powers over the heads of the victims.
 
 The more the great powers used direct deals, the less the League seemed to matter, and the smaller states drew their own conclusion: Belgium (1936), for example, went back to a policy of neutrality.
 
@@ -249,7 +249,7 @@ The syllabus gives five causes. Treat each as a claim about how the League worke
 
 ### Inability to achieve widespread disarmament
 
-Article 8 of the Covenant promised the reduction of armaments, and the 1920s produced the Washington and London naval treaties but no general agreement. The World Disarmament Conference (1932–34, chapter 1) failed. The consequences for the League were that Germany, Japan and Italy rearmed without limit, and that the League's argument, that peace is kept by shared restraint, was less persuasive than the dictators' argument that peace is kept by strength. The failure also showed how far the powers distrusted each other's promises.
+Article 8 of the Covenant promised the reduction of armaments, and the 1920s produced the Washington and London naval treaties but no general agreement. The World Disarmament Conference (1932–34, [International history, 1929–39 (1)](#hist.int.1929.1)) failed. The consequences for the League were that Germany, Japan and Italy rearmed without limit, and that the League's argument, that peace is kept by shared restraint, was less persuasive than the dictators' argument that peace is kept by strength. The failure also showed how far the powers distrusted each other's promises.
 
 ### The absence of major powers
 
@@ -261,7 +261,7 @@ The League's two leading members supplied its leadership and most of its power. 
 
 ### The effects of the Great Depression
 
-The slump had three effects. It hurt trade and made governments choose protection, so that the economic sanctions the League relied on were costly. It took away money and attention from foreign policy. And it helped to bring to power the governments in Germany, Japan and Italy that challenged the League (chapter 1). Notice that Britain and France said the Depression was the reason they could not afford to act: it worked as an excuse as well as a cause.
+The slump had three effects. It hurt trade and made governments choose protection, so that the economic sanctions the League relied on were costly. It took away money and attention from foreign policy. And it helped to bring to power the governments in Germany, Japan and Italy that challenged the League ([International history, 1929–39 (1)](#hist.int.1929.1)). Notice that Britain and France said the Depression was the reason they could not afford to act: it worked as an excuse as well as a cause.
 
 ### Increasing nationalism
 
@@ -287,7 +287,7 @@ The question behind them is whether the League failed because of **what it was**
 
 ## Worked examples: exam answers built level by level
 
-The levels below are the real Cambridge levels for 2027 (FACTS.md). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
+The levels below are the real Cambridge levels for 2027 (from the 9489 mark schemes). Read the commentary as an examiner would: it names the level, the mark range and what would move the answer up.
 
 :::eg Paper 2 (a) [10]: Explain why the League failed to stop Italy invading Abyssinia.
 **What the levels want.** Level 2 (3–5) describes factors; Level 3 (6–8) explains factors with relevant detail; Level 4 (9–10) connects the factors and reaches a reasoned conclusion.

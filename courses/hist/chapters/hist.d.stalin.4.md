@@ -15,7 +15,7 @@ Stalin's Russia, 1924–41 is one of the three topics of the A Level **European 
 - This chapter covers key question 2.4, *How far did Stalin transform Soviet society?* An essay on it can ask about women and the family, national groups, youth and education, culture, or religion, and can ask you to compare them or to judge "how far" in general. The question word "transform" invites you to ask what changed, and also what did not.
 :::
 
-**Before you start**, read [Stalin's Russia (2): how effectively Stalin governed the Soviet Union](#hist.d.stalin.2), [Stalin's Russia (3): how successful Stalin's economic policies were](#hist.d.stalin.3) and [Skills: writing the analytical essay (Papers 2 and 4)](#hist.skills.essays). This chapter uses the Terror and the cult of personality from Chapter 2, the collectivisation and industrialisation from Chapter 3, and the essay method of the skills chapter.
+**Before you start**, read [Stalin's Russia (2): how effectively Stalin governed the Soviet Union](#hist.d.stalin.2), [Stalin's Russia (3): how successful Stalin's economic policies were](#hist.d.stalin.3) and [Skills: writing the analytical essay (Papers 2 and 4)](#hist.skills.essays). This chapter uses the Terror and the cult of personality from [Stalin's Russia (2)](#hist.d.stalin.2), the collectivisation and industrialisation from [Stalin's Russia (3)](#hist.d.stalin.3), and the essay method of the skills chapter.
 
 :::try Warm-up
 Q: What was dekulakisation, and how many people were deported in 1930–31? (from [Stalin's Russia (3)](#hist.d.stalin.3))
