@@ -5,10 +5,12 @@
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
 - History (`hist`, 9489, 96 chapters) complete Nov 13: REVIEW FINAL done, assembled (links page `tools.l.hist`,
   History section on the resources page). Its COURSE.md has the course rules; history in git.
-- Now: queue item 4, Reader pass on Mathematics (62 chapters, READER batches → FIX), then Physics. Guard on `math`.
-  READER and FIX done to math.p3.vectors (84 items); Reader batch 4 (p3.complex to s2.linear) running.
-- Weekly limit lifted until the Nov 17 23:00 UTC reset (user, Nov 13; AGENT-RUN Usage gate); 5-hour gate unchanged
-  (the Nov 13 07:33 run ignores the 5-hour gate too, at the user's word; later runs use it).
+- Now: queue item 4, Reader pass. Mathematics done Nov 13 (7 READER batches, 169 items, all FIXed; check and strict
+  build pass). Next: Physics (33 chapters, READER batches → FIX), guard on `phys`.
+- For a later math review: math.s1.normal "Reading the table" describes the MF19 normal table (4 d.p., ADD columns,
+  critical values 0.674 to 3.291) from memory and third-party copies: compare with a real MF19 PDF.
+- Weekly limit lifted until the Nov 17 23:00 UTC reset (user, Nov 13; AGENT-RUN Usage gate); 5-hour gate unchanged.
+- Waiting for the 5-hour reset at 12:30 Nov 13 (Istanbul; 09:30 UTC): 5-hour at 98%, weekly 95%.
 - User check with a screen reader (not testable here): VoiceOver on iPhone and Mac (rotor headings, a chapter, search,
   a quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
 - User check in Safari (not testable on the PC), on the published site: iPhone Share → Add to Home Screen (icon and
