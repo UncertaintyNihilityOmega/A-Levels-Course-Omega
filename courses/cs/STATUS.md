@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-13 · WRITE P7 · cs.databases 7.8k words, cs.sql 6.9k words, checks ok, phone ok; widget cs-sql probe clean (school, shop, bad attributes), 12,000 queries tested against sqlite plus chapter queries; reviewer: check FK asterisk renders after bold keys, and look at cs-sql in dark mode
+Last: 2026-11-13 · WRITE P6 · cs.software 7.3k words, cs.security 9.7k, cs.ethics 6.1k, all check ok and phone ok; widget cs-check (parity block with even/odd and left/right parity bit, click-to-flip, random corruption, row/column check with symbols; check digit modulo 11 and modulo 10, calculate and verify) probed clean in light, dark, phone, bad attributes, logic tested against Python (112,470 comparisons) and interactions exercised headless; five SVG figures generated and overlap-checked in data/. Reviewer: modulo-10 weights rule (3,1 counting back from the check digit), BCS/IEEE descriptions are general (confirm on their own sites), security chapter is long (9.7k words) because the parity and check-digit sections are fully worked.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -10,7 +10,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P3: reviewed 2026-11-13
 - P4: reviewed 2026-11-13
 - P5: written 2026-11-13
-- P6: writing 2026-11-13
+- P6: written 2026-11-13
 - P7: written 2026-11-13
 - P8: open
 - P9: open
