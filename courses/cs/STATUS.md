@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-13 · REVIEW P1, P2, P3, P4 · 2 items (cs-ip text size and out-of-range prefix box); fixed: cs.data quiz feedback (43/52 wrong) and BCD 'one fifth' (is one sixth), cs.media quiz feedback, cs.data -128 figure label, cs-binary base change/bit flip left an error in Add tab (now rewrites inputs), 0-bit buttons get borders; cs-logic Test me/Check and all widgets keyboard-tested; facts match FACTS.md and the 9618/11 June 2024 mark scheme; 2 rules added to COURSE.md
+Last: 2026-11-13 · WRITE P7 · cs.databases 7.8k words, cs.sql 6.9k words, checks ok, phone ok; widget cs-sql probe clean (school, shop, bad attributes), 12,000 queries tested against sqlite plus chapter queries; reviewer: check FK asterisk renders after bold keys, and look at cs-sql in dark mode
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -11,7 +11,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P4: reviewed 2026-11-13
 - P5: written 2026-11-13
 - P6: writing 2026-11-13
-- P7: writing 2026-11-13
+- P7: written 2026-11-13
 - P8: open
 - P9: open
 - P10: open
