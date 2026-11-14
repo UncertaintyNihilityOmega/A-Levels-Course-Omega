@@ -47,7 +47,9 @@ There is no CLAUDE.md at the root: course sessions would load it. Start every Or
 3. Each course with `:::links` boxes needs a links page: `core/tools.l.<c>.md`, its Toolbox entry and `linkSheets` line
    in `core/core.json`, and a link from `core/road.resources.md`; then `node engine/sync.js`.
 4. Spot-check the site ("site" launch config): a new chapter per course, a widget, dark mode, phone width, search.
-5. Update ROADMAP.md "Now", commit, push.
+5. A course that is finished: cut its REVIEW.md to the header and one line naming the last commit with the full
+   list (closed items are history); set its state in the README.md course table.
+6. Update ROADMAP.md "Now", commit, push.
 
 ## Environment (Windows PC)
 

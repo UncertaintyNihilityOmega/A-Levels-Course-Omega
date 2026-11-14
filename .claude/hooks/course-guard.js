@@ -39,7 +39,10 @@ if (['Read', 'Write', 'Edit', 'NotebookEdit'].includes(t)) {
   const lc = c.replace(/\\/g, '/').toLowerCase();
   if (/(^|[\s"'=;&|(])\.\.([/"'\s]|$)/.test(c)) deny('commands may not use ".." to leave the course folder');
   if (/(^|[\s;&|(])git(\s|$)/.test(lc)) deny('no git commands (the Organizer commits)');
-  const others = ['math', 'phys', 'chem', 'bio', 'eng', 'bus', 'econ', 'acc', 'other'].filter(x => x !== course);
+  // every other course folder (read from courses/, so a new course is covered without editing this file)
+  let others = [];
+  try { others = fs.readdirSync(path.join(ROOT, 'courses'), { withFileTypes: true }).filter(d => d.isDirectory()).map(d => d.name.toLowerCase()).filter(x => x !== course && /^[a-z0-9_-]+$/.test(x)); } catch (e) { /* no courses folder */ }
+  if (!others.length) others = ['math', 'phys', 'chem', 'bio', 'cs', 'eng', 'bus', 'econ', 'acc', 'hist', 'other'].filter(x => x !== course);
   if (new RegExp(`courses/(${others.join('|')})(/|\\b)`).test(lc)) deny('the command names another course');
   if (/(^|[\s"'/])(engine|core|archive|site|node_modules)\//.test(lc) && !lc.includes(`courses/${course}/`)) deny('the command names a project folder outside the course');
   const rootN = norm(ROOT);
