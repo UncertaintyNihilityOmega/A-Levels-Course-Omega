@@ -817,6 +817,10 @@ a.subj:hover .subj-t { color: var(--sc); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+/* Settings → Animations: off (data-motion on <html>, set by app.js) */
+:root[data-motion="off"] *, :root[data-motion="off"] *::before, :root[data-motion="off"] *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+/* Settings → Reading font: sans serif (data-font on <html>) */
+:root[data-font="sans"] { --f-text: var(--f-ui); }
 
 [hidden] { display: none !important; }
 

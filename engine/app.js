@@ -16,6 +16,9 @@
   if (savedTheme) root.setAttribute('data-theme', savedTheme);
   const savedSize = store.get('size', null);
   if (savedSize) root.setAttribute('data-size', savedSize);
+  // reading font ('sans', default serif) and animations ('off', default: follow the device), from Settings
+  if (store.get('font', null) === 'sans') root.setAttribute('data-font', 'sans');
+  if (store.get('motion', null) === 'off') root.setAttribute('data-motion', 'off');
   function effectiveDark() {
     const t = root.getAttribute('data-theme');
     if (t) return t === 'dark';

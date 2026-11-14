@@ -17,7 +17,7 @@
   const fd = (d, yr) => d.getDate() + ' ' + MON[d.getMonth()] + (yr ? ' ' + d.getFullYear() : '');
   /** half-hour units -> "6.5" */
   const hrs = (u) => String(Math.round(u) / 2);
-  const reduced = () => { try { return window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) { return false; } };
+  const reduced = () => (W.reducedMotion ? W.reducedMotion() : false);
   const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
 
   /** Split an integer total into parts proportional to weights (largest remainder). */

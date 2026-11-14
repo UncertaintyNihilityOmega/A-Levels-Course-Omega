@@ -367,7 +367,10 @@
   };
 
   /** True when the reader has asked for reduced motion. */
-  W.reducedMotion = function () { try { return window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) { return false; } };
+  W.reducedMotion = function () {
+    if (document.documentElement.getAttribute('data-motion') === 'off') return true; // Settings → Animations: off
+    try { return window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) { return false; }
+  };
 
   /** Animation loop that respects reduced motion and stops while the page is hidden.
    *  const a = W.animate((dt, t) => { …; return false to stop }); a.start(); a.stop(); a.running

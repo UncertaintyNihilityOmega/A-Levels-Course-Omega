@@ -5,6 +5,8 @@
 - Settings page (last in the sidebar): theme, text size, course colours, background and highlighter colours, return
   to default; export, import and clear progress; protect stored data; offline downloads (everything, core pages only,
   or chosen courses), with a notice when the offline copy is ready or updated.
+- Settings: reading font (serif Literata or sans serif Atkinson Hyperlegible) and animations (follow the device, or
+  off: no transitions, no drawn-in roadmap, widgets stay still).
 - Computer Science (9618) in progress.
 
 ## 0.6.0 (2026-11-13)

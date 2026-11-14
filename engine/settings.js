@@ -1,5 +1,5 @@
-/* settings.js — the Settings page (#settings, last in the sidebar): appearance (theme, text size, subject colours,
-   background, highlighter), progress (export, import, reset, keep my data), offline downloads (all, core only, per
+/* settings.js — the Settings page (#settings, last in the sidebar): appearance (theme, text size, reading font,
+   animations, subject colours, background, highlighter), progress (export, import, reset, keep my data), offline downloads (all, core only, per
    course; talks to sw.js). Appearance is stored as zta:look and applied as a <style> on :root. Runs after app.js. */
 (function () {
   'use strict';
@@ -55,6 +55,17 @@
     if (W.themeChanged) setTimeout(W.themeChanged, 30);
   }
   function saveLook() { store.set('look', look); applyLook(); }
+  /** reading font: 'sans' or '' (serif, the default); stored as zta:font, shown as data-font on <html> */
+  function setFont(v) {
+    if (v === 'sans') root.setAttribute('data-font', 'sans'); else root.removeAttribute('data-font');
+    store.set('font', v === 'sans' ? 'sans' : null);
+    if (W.themeChanged) setTimeout(W.themeChanged, 30);
+  }
+  /** animations: 'off' or '' (follow the device's reduced-motion setting); stored as zta:motion */
+  function setMotion(v) {
+    if (v === 'off') root.setAttribute('data-motion', 'off'); else root.removeAttribute('data-motion');
+    store.set('motion', v === 'off' ? 'off' : null);
+  }
   applyLook();
 
   /* ---------- small builders ---------- */
@@ -84,7 +95,14 @@
     const size = h('select', { id: 'set-size' }, h('option', { value: 'm' }, 'Normal'), h('option', { value: 'l' }, 'Large'), h('option', { value: 'xl' }, 'Extra large'));
     size.value = store.get('size', null) || 'm';
     size.addEventListener('change', () => ui.setSize && ui.setSize(size.value));
-    s.append(row(h('label', { for: 'set-theme' }, 'Theme'), theme), row(h('label', { for: 'set-size' }, 'Text size'), size));
+    const font = h('select', { id: 'set-font' }, h('option', { value: '' }, 'Serif (Literata)'), h('option', { value: 'sans' }, 'Sans serif (Atkinson Hyperlegible)'));
+    font.value = store.get('font', null) === 'sans' ? 'sans' : '';
+    font.addEventListener('change', () => { setFont(font.value); toast(font.value ? 'Reading font: sans serif' : 'Reading font: serif'); });
+    const motion = h('select', { id: 'set-motion' }, h('option', { value: '' }, 'Follow my device'), h('option', { value: 'off' }, 'Off'));
+    motion.value = store.get('motion', null) === 'off' ? 'off' : '';
+    motion.addEventListener('change', () => { setMotion(motion.value); toast(motion.value ? 'Animations off' : 'Animations follow your device'); });
+    s.append(row(h('label', { for: 'set-theme' }, 'Theme'), theme), row(h('label', { for: 'set-size' }, 'Text size'), size),
+      row(h('label', { for: 'set-font' }, 'Reading font'), font), row(h('label', { for: 'set-motion' }, 'Animations'), motion));
 
     // subject colours: every section of the sidebar
     const grid = h('div', { class: 'set-grid' });
@@ -115,13 +133,14 @@
       look = BLANK(); store.set('look', null);
       if (ui.setTheme) ui.setTheme(null, true);
       if (ui.setSize) ui.setSize('m', true);
+      setFont(''); setMotion('');
       applyLook(); render(); toast('Appearance back to default');
     }, 'btn-sec set-reset')));
     return s;
   }
 
   /* ---------- progress ---------- */
-  const LOOK_KEYS = ['look', 'theme', 'size'];
+  const LOOK_KEYS = ['look', 'theme', 'size', 'font', 'motion'];
   function allKeys() {
     const out = [];
     try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k && k.startsWith('zta:')) out.push(k.slice(4)); } } catch (e) { /* blocked */ }
