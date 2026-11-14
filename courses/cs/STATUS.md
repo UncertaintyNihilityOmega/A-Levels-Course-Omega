@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-14 · WRITE P12 · cs.networks2 (9.1k words, 2 figures, 3 Python blocks) and cs.hardware2 (8.0k words, 1 figure, 1 Python block); widget cs-pipeline (five-stage timing diagram, pipelined or not, taken jump flushes 3 instructions, look at one cycle; logic tested against an independent simulation on 1,343 checks incl. fake-DOM UI test; probe clean light/dark/phone and bad attributes). Reviewer: see Writer's notes in packages/P12.md (invented RISC/CISC cycle counts labelled, TCP numbers segments not bytes, cautious interrupt statements).
+Last: 2026-11-14 · WRITE P13 · cs.boolean 9.6k words (6 SVG figures, laws proved by truth table, algebra and K-map answers recomputed, adders, SR/JK flip-flops), cs.os 8.8k words (4 SVGs, Gantt/waiting times for FCFS, SJF, SRT, RR recomputed by a simulation, paging, virtual memory, FIFO/LRU, thrashing); widgets cs-kmap (exact solver tested on 2,272 functions) and cs-sched (tested on 3,000 random cases); both probe clean, UI logic tested in data/cs-p13.ui.test.js. Reviewer: look at both widgets once in dark mode, the JK figure (feedback lines cross), and the claim that Gray-code/K-map tables use cell numbers rather than coloured groups in Markdown.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -17,7 +17,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P10: written 2026-11-14
 - P11: written 2026-11-14
 - P12: written 2026-11-14
-- P13: writing 2026-11-14
+- P13: written 2026-11-14
 - P14: open
 - P15: open
 - P16: open
