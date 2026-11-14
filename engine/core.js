@@ -463,21 +463,39 @@
   };
 })();
 
-/* Course chunks: each course lives in c/<course>.js, loaded on demand with a <script> tag (works from file://).
-   A chunk registers its widgets, then calls ZTA.chunk(id, {html, quiz, gloss}). */
+/* Course files, loaded on demand with a <script> tag (works from file://):
+     c/<course>.js              the course's widgets, quiz questions and key terms: ZTA.chunk(id, {quiz, gloss})
+     c/<course>/<chapter>.js    one chapter: ZTA.page(course, chapter, html)
+     c/<course>.search.js       the course's search text: ZTA.searchData(course, [[id, heads, text] …])
+   ZTA.load takes "<course>", "<course>/<chapter>" or "<course>.search". */
 (function () {
   'use strict';
   const ZTA = window.ZTA = { loaded: {}, pending: {} };
   ZTA.chunk = function (id, data) {
     const main = document.getElementById('main');
-    if (main) main.insertAdjacentHTML('beforeend', data.html);
+    if (main && data.html) main.insertAdjacentHTML('beforeend', data.html);
     Object.assign(window.QUIZ, data.quiz);
     window.GLOSSARY.push(...data.gloss);
-    ZTA.loaded[id] = true;
-    const p = ZTA.pending[id];
-    delete ZTA.pending[id];
-    if (p) p.resolve();
+    settle(id);
     document.dispatchEvent(new CustomEvent('zta:chunk', { detail: id }));
+  };
+  function settle(key) {
+    ZTA.loaded[key] = true;
+    const p = ZTA.pending[key];
+    delete ZTA.pending[key];
+    if (p) p.resolve();
+  }
+  ZTA.page = function (course, id, html) {
+    const main = document.getElementById('main');
+    if (main && !document.getElementById('c-' + id)) main.insertAdjacentHTML('beforeend', html);
+    settle(course + '/' + id);
+    document.dispatchEvent(new CustomEvent('zta:page', { detail: id }));
+  };
+  ZTA.search = {};   // course -> [[id, [[heading id, text] …], text] …]
+  ZTA.searchData = function (course, rows) {
+    ZTA.search[course] = rows;
+    settle(course + '.search');
+    document.dispatchEvent(new CustomEvent('zta:search', { detail: course }));
   };
   ZTA.load = function (id) {
     if (ZTA.loaded[id]) return Promise.resolve();
@@ -485,17 +503,19 @@
     const p = ZTA.pending[id] = {};
     p.promise = new Promise((resolve, reject) => { p.resolve = resolve; p.reject = reject; });
     const s = document.createElement('script');
-    s.src = 'c/' + encodeURIComponent(id) + '.js';
+    s.src = 'c/' + id.split('/').map(encodeURIComponent).join('/') + '.js';
     s.onerror = () => { delete ZTA.pending[id]; s.remove(); p.reject(new Error('Could not load c/' + id + '.js')); };
     document.head.appendChild(s);
     return p.promise;
   };
-  /** Load every chunk (search, glossary and practice need all of them). */
+  /** Load every course's base file (the glossary and the practice page need every quiz question and key term). */
   ZTA.loadAll = function () { return Promise.all(((window.GUIDE || {}).chunks || []).map(ZTA.load)); };
-  /** Chunks a chapter needs before it can be shown: its own and those owning widgets it uses. */
+  /** Load every course's search file. */
+  ZTA.loadSearch = function () { return Promise.all(((window.GUIDE || {}).chunks || []).map(k => ZTA.load(k + '.search'))); };
+  /** Files a chapter needs before it can be shown: its course's base file, those owning widgets it uses, and its own. */
   ZTA.needs = function (id) {
     const c = ((window.GUIDE || {}).ch || {})[id];
-    if (!c) return [];
-    return [c.k].concat(c.n || []).filter(k => k && !ZTA.loaded[k]);
+    if (!c || !c.k) return [];
+    return [c.k].concat(c.n || [], [c.k + '/' + id]).filter(k => k && !ZTA.loaded[k]);
   };
 })();

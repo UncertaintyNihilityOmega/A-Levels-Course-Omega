@@ -1,9 +1,24 @@
 # Engine reference
 
 ## Build
-- `site.js` builds `site/index.html` (core chapters, navigation, data) and one chunk per course, `site/c/<course>.js`,
-  loaded on demand with `<script>` (works from `file://`). A chapter that embeds another course's widget also loads
-  that chunk (`need` in the data).
+- `site.js` builds `site/index.html` (core chapters, navigation, data) and, per course, three kinds of file, all
+  loaded on demand with `<script>` (works from `file://`; loader `ZTA` in `core.js`):
+  - `c/<course>.js`: the course's widgets, quiz questions and key terms (the base file). Every chapter of the course
+    needs it; the glossary and the practice page load every base file. A chapter that embeds another course's widget
+    also loads that course's base file (`need` in the data).
+  - `c/<course>/<chapter>.js`: one chapter. Opening a chapter loads only this and the base file; when the browser is
+    idle the next chapter is fetched ahead (not on a data-saving connection).
+  - `c/<course>.search.js`: the course's chapters as plain text with their headings. Search loads these, never the
+    chapters. Chapters inside index.html (core; every chapter of a kit preview, `inlineAll`) are indexed from the page.
+  - Measured Nov 14 2026 (this PC, localhost, 381 chapters): a History chapter opens in 0.7 s and adds 1,800 page
+    elements (one file per course: 2.2 s, 162,000); the first search takes 1.8 s with 72,000 elements on the page
+    (before: 16.8 s, 1.13 million). Largest chapter file 449 KB. Cost: the search files add 16 MB to the offline copy
+    (69 MB in all). Measure again after a change to the loader: nothing may load every chapter.
+- `pages.js` (full site only) writes the findable pages: `p/<chapter>.html` (the chapter as a plain static page with
+  a canonical URL and a link into the guide; quizzes and widgets become a note), `p/index.html`, `p/page.css` and
+  `sitemap.xml` (URLs from package.json `homepage`). They are added after the PWA files, so the service worker does
+  not precache them. `pwa.js` `head` adds the description and sharing tags of index.html.
+- `util.js` `writeSite` removes files of an older build under `site/c` and `site/p`.
 - `lib.js` renders Markdown: markdown-it, KaTeX to MathML at build time, mhchem for `\ce{}`. `:::plot` is drawn by
   `plot.js`. `:::key` and `:::formula` boxes feed the formula sheets (`core.json` → `formulaSheets`).
 - Fonts (Literata, Atkinson Hyperlegible Next) are subset woff2 in `fonts/`, embedded by `assets.js`; the maths font
@@ -16,7 +31,8 @@
   `sw.js`, and puts the <head> tags at `<!--HEAD-->` in `shell.html`. Colours come from `style.css` tokens.
 - `icons.js` draws the icons from the brand mark (ring turned −9°, "A*") as shapes: no image files, no tools.
 - URLs are relative (Pages serves the site under `/<repo>/`); the service worker's scope is the site folder.
-- `sw.js` caches index.html (the fonts are embedded in it), every chunk and the icons. Cache name `zta-<hash of every
+- `sw.js` caches index.html (the fonts are embedded in it), every course file (`c/…`: a course's files are the paths
+  `c/<course>.` and `c/<course>/`, the same rule in `settings.js`) and the icons. Cache name `zta-<hash of every
   file>`: a new build fills a new cache whole on install (skipping the HTTP cache), then old `zta-` caches are deleted.
   Network first; the cache when offline or after 4 s.
 - The manifest link and service worker are added only on http(s): `file://` works as before.

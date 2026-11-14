@@ -8,6 +8,13 @@
 - Settings: reading font (serif Literata or sans serif Atkinson Hyperlegible) and animations (follow the device, or
   off: no transitions, no drawn-in roadmap, widgets stay still).
 - Computer Science (9618) in progress.
+- Faster loading: each chapter is its own file and search has its own index, so opening a chapter no longer loads
+  its whole course and searching no longer loads every chapter (a History chapter: 0.7 s, was 2.2 s; first search:
+  1.8 s, was 16.8 s).
+- Findable pages: every chapter is also a plain web page (`p/<chapter>.html`) that search engines can read, with a
+  sitemap; links shared in a chat show the title, a description and the icon.
+- "Found a mistake on this page? Report it on GitHub" under every chapter (the page and build date are filled in).
+- Engine self-test (35 checks) runs before every build on GitHub.
 
 ## 0.6.0 (2026-11-13)
 - Biology complete: 64 chapters (Cambridge 9700), 17 widgets, five mock papers, links page; read through by a beginner Reader.

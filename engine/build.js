@@ -9,6 +9,7 @@ const fs = require('fs');
 const { buildSite } = require('./site');
 const { loadCore, loadCourse, mathFontFace, writeSite } = require('./util');
 const pwa = require('./pwa');
+const { staticPages } = require('./pages');
 
 const ROOT = path.join(__dirname, '..');
 const { core, sources: coreSources } = loadCore(path.join(ROOT, 'core'));
@@ -16,6 +17,10 @@ const courses = fs.readdirSync(path.join(ROOT, 'courses')).filter(d => fs.exists
   .map(d => loadCourse(path.join(ROOT, 'courses', d)));
 
 const assets = require('./assets');
+/** the public URL of the site from package.json "homepage" ('' if none): canonical links, sharing tags, sitemap.xml */
+function homepage() {
+  try { const h = String(require('../package.json').homepage || ''); return /^https:\/\//.test(h) ? h.replace(/\/*$/, '/') : ''; } catch (e) { return ''; }
+}
 /** "https://github.com/<owner>/<repo>/issues" from package.json "repository" ('' if it is not a GitHub URL) */
 function repoIssues() {
   try {
@@ -30,15 +35,20 @@ const res = buildSite([...coreSources, ...courses], {
   linkSheets: core.linkSheets,
   assets,
   issues: repoIssues(),
-  head: pwa.head(assets.css),
+  head: pwa.head(assets.css, homepage()),
   fontFace: (chars) => mathFontFace(path.join(__dirname, 'latinmodern-math.otf'), chars)
 });
 Object.assign(res.files, pwa.pwaFiles(res.files, assets.css));
+// findable pages (p/<chapter>.html, sitemap.xml): added after the PWA files, so the offline copy leaves them out
+const appSize = Object.values(res.files).reduce((a, f) => a + Buffer.byteLength(f), 0);
+Object.assign(res.files, staticPages(res, { css: assets.css, homepage: homepage() }));
 writeSite(path.join(ROOT, 'site'), res.files);
 
 const s = res.stats;
 const size = Object.values(res.files).reduce((a, f) => a + Buffer.byteLength(f), 0);
-console.log(`chapters ${s.chapters}/${s.planned}  words ${s.words}  math ${s.math}  quiz ${s.quiz}  glossary ${s.glossary}  size ${(size / 1024).toFixed(0)} KB (index ${(Buffer.byteLength(res.files['index.html']) / 1024).toFixed(0)} KB)`);
+const kb = (n) => (n / 1024).toFixed(0);
+const pageSizes = Object.entries(res.files).filter(([f]) => /^c\/[^/]+\//.test(f)).map(([, v]) => Buffer.byteLength(v));
+console.log(`chapters ${s.chapters}/${s.planned}  words ${s.words}  math ${s.math}  quiz ${s.quiz}  glossary ${s.glossary}  app ${kb(appSize)} KB (index ${kb(Buffer.byteLength(res.files['index.html']))} KB; largest chapter file ${kb(Math.max(0, ...pageSizes))} KB)  static pages ${kb(size - appSize)} KB`);
 console.log('by section', Object.entries(s.by).map(([k, v]) => `${k} ${v}`).join(' · '));
 if (s.soonLinks) console.log(`${s.soonLinks} link(s) to chapters not written yet (shown as plain text)`);
 if (res.errors.length) {

@@ -16,9 +16,21 @@ function tokens(css) {
 }
 
 /** <head> tags, plus the manifest link and service-worker registration (only on http/https; file:// pages skip them) */
-function head(css) {
+function head(css, homepage) {
   const t = tokens(css);
-  return `<meta name="description" content="A free A Level study guide from zero to A*: every chapter, worked example and practice question works offline.">
+  const desc = 'A free A Level study guide from zero to A*: every chapter, worked example and practice question works offline.';
+  // sharing tags (a link pasted into a chat or a social site shows the title, this line and the icon)
+  const share = `<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zero to A*">
+<meta property="og:title" content="Zero to A*: a free A Level guide">
+<meta property="og:description" content="${desc}">
+<meta name="twitter:card" content="summary">${homepage ? `
+<meta property="og:url" content="${homepage}">
+<meta property="og:image" content="${homepage}icon-512.png">
+<link rel="canonical" href="${homepage}">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">` : ''}`;
+  return `<meta name="description" content="${desc}">
+${share}
 <meta name="theme-color" content="${t.sheet}" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="${t.darkSheet}" media="(prefers-color-scheme: dark)">
 <meta name="mobile-web-app-capable" content="yes">
@@ -70,7 +82,8 @@ function manifest(t) {
 }
 
 // The service worker. Pages: network first (fresh when online, the saved copy when offline or after WAIT ms on a
-// slow line). Offline copy: the core files always, and the course files (c/<course>.js) the reader keeps: every course
+// slow line). Offline copy: the core files always, and the course files (c/<course>.js, c/<course>.search.js and
+// c/<course>/<chapter>.js) the reader keeps: every course
 // unless Settings → Offline downloads says otherwise. The choice lives in the cache "zta.prefs", which survives new
 // builds. A new build has a new cache name, filled on install with the core and the kept courses; then old caches go.
 // Messages from the page (Settings): {type: 'status'} and {type: 'keep', keep: 'all' | [course ids]}, answered on
@@ -82,8 +95,8 @@ const FILES = ${JSON.stringify(files)};
 const SIZES = ${JSON.stringify(sizes)};
 const PREFS = 'zta.prefs';
 const WAIT = 4000;
-const courseOf = (f) => (/^c\\/([^/]+)\\.js$/.exec(f) || [])[1] || null;
-const COURSES = FILES.map(courseOf).filter(Boolean);
+const courseOf = (f) => (/^c\\/([^/.]+)[/.]/.exec(f) || [])[1] || null;
+const COURSES = [...new Set(FILES.map(courseOf).filter(Boolean))];
 
 let keepCache = null;
 function getKeep() {

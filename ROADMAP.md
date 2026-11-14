@@ -9,9 +9,17 @@
   FIXed; site check 0 errors, strict build passes. Release v0.6.0 tagged (CHANGELOG).
 - Now: queue item 5, Computer Science (`cs`, 9618, 49 chapters in 22 packages): LEAD done Nov 13 (gold cs.datatypes);
   P1–P7 written (16 chapters; widgets cs-binary, cs-ip, cs-logic, cs-asm, cs-check, cs-sql); REVIEW P1–P4 done
-  Run Nov 14: cs-ip FIXed; P8–P11 written (24 chapters; widgets also cs-trace, cs-stack, cs-float); REVIEW P5–P8
-  done (3 cs.assembly items open). Next: FIX (cs.assembly) + WRITE P12, WRITE P13; REVIEW P9–P12.
-- Waiting for the 5-hour reset at 21:00 Nov 14 (Istanbul; 18:00 UTC): 5-hour at 89%, weekly 35%.
+  Runs Nov 14: cs-ip and cs.assembly FIXed; P8–P13 written (28 chapters; widgets also cs-trace, cs-stack, cs-float,
+  cs-pipeline, cs-kmap, cs-sched); REVIEW P5–P8 done, no open items. Next: REVIEW P9–P12 (status lists P9–P13),
+  WRITE P14, WRITE P15.
+- Waiting for the 5-hour reset at 03:40 Nov 15 (Istanbul; 00:40 UTC): the gate blocks every start.
+- App review, Nov 14 (user, in the run session): queue items 6 and 7 done (per-chapter files, search index, findable
+  pages; numbers in engine/README.md "Build"); report-a-mistake link; engine self-test in CI (`node engine/test.js`);
+  guard reads the course list from `courses/`; usage gate leaves room for running agents; finished courses' REVIEW.md
+  cut to a pointer. Still open: items 8 and 9.
+- USER (optional): tell Google about the pages: Google Search Console → add the site → Sitemaps → `sitemap.xml`.
+- The `new-project` skill rewritten to this project's structure: `.run/new-project/SKILL.md` (and .zip); the user
+  uploads it in claude.ai → Settings → Capabilities → Skills.
 - Site, Nov 13 (user's requests): new logo (log end, "AΩ" in Caudex, dark green and white; engine/icons.js), and a
   Settings page (red, last in the sidebar; engine/settings.js): theme, text size, course colours, background,
   highlighter, return to default, export/import/clear progress, protect storage, offline downloads (everything,
@@ -51,23 +59,32 @@
    packages → reviews → READER → FIX → REVIEW FINAL.
 4. [x] **Reader pass** on Mathematics, then Physics (READER batches → FIX), as its own run.
 5. [ ] **Computer Science** (`cs`, 9618). Before its LEAD: publish a GitHub release of the site (user, Nov 13).
-6. [ ] **Site loading** (Organizer, engine; user, Nov 14): one chunk per chapter (or per sidebar group) in place of one
+6. [x] **Site loading** (Organizer, engine; user, Nov 14): one chunk per chapter (or per sidebar group) in place of one
    per course; a search index built at build time (titles, headings, text) so search never loads the chapters; quiz
    and glossary data in their own files so the practice and glossary pages do not load every course. Keep `file://`,
    the service worker and the offline choices in Settings working. Measured Nov 14 (this PC, localhost): `c/hist.js`
    12.0 MB (3.4 MB gzipped); one History chapter loads all 96 (2.2 s, 162k elements); focusing search loads every
    course (16.8 s, 1.13 million elements). Done when a chapter opens with only its own chunk and search stays fast
    at phone size; measure again and record the numbers in engine/README.md.
-7. [ ] **Findable pages** (Organizer, engine; user, Nov 14): the build also writes a small static page per chapter
+7. [x] **Findable pages** (Organizer, engine; user, Nov 14): the build also writes a small static page per chapter
    (title, summary, headings, link into the app) and `sitemap.xml`; description and sharing tags in `shell.html`.
    The offline `file://` site stays one `index.html`.
 8. [ ] **Phone reading** (Organizer, engine; user, Nov 14): an "On this page" contents sheet at phone width, resume
    at the last section of a chapter (not only the last chapter), and a thin section progress bar. No content is cut.
    The design is frozen: show the user one chapter before applying it to all.
-9. [ ] **Further Mathematics** (`math.fm.*`, an extension of the Maths course): LEAD for the extension
+9. [ ] **Study aids and checks** (Organizer, engine; user, Nov 14; from the app review):
+   - spaced re-testing: "What to revise next" offers a chapter's quiz questions again 1, 3, 7 and 21 days after it is
+     marked as learned (dates in localStorage; no flashcards);
+   - search results appear course by course as the search files arrive, the current course first; consider a
+     smaller search index (the search files are 16 MB of the 69 MB offline copy);
+   - a kit `check` note when a `:::try` question reuses the numbers of a `:::eg` in the same chapter (a repeated
+     review finding);
+   - the plain pages (`p/`) use the system maths font: embed the subset maths font in `p/page.css` if they look
+     wrong on a device.
+10. [ ] **Further Mathematics** (`math.fm.*`, an extension of the Maths course): LEAD for the extension
    (`courses/math/FURTHER.md`) → packages P19+ → reviews → READER for the new chapters → FIX → REVIEW FINAL.
    Before its LEAD, set math STATUS.md `FINAL` back to `open` and rewrite courses/math/COURSE.md as rules (30 KB).
-10. [ ] **Engineering** (`eng`).
-11. [ ] **Economics** (`econ`), then **Business** (`bus`), then **Accounting** (`acc`): shared-topic owners in their COURSE.md.
-12. [ ] **Other subjects** (`other`), including the Psychology summary (`other.psychology`).
-13. [ ] Final assembly: whole-site check, link check of every `:::links` URL, phone pass.
+11. [ ] **Engineering** (`eng`).
+12. [ ] **Economics** (`econ`), then **Business** (`bus`), then **Accounting** (`acc`): shared-topic owners in their COURSE.md.
+13. [ ] **Other subjects** (`other`), including the Psychology summary (`other.psychology`).
+14. [ ] Final assembly: whole-site check, link check of every `:::links` URL, phone pass.

@@ -5,6 +5,7 @@
 const { buildSite } = require('./site');
 const { lintChapter } = require('./lint');
 const assets = require('./assets');
+const { staticPages } = require('./pages');
 
 let fails = 0, n = 0;
 function ok(cond, what) { n++; if (!cond) { fails++; console.log(' FAIL ' + what); } }
@@ -84,7 +85,7 @@ const build = (files, opts, extra) => buildSite([course(files, extra)], Object.a
 
 // ---------- a good course ----------
 const res = build([{ name: 'tst.one.md', text: ONE }, { name: 'tst.two.md', text: TWO }], { issues: 'https://github.com/o/r/issues' });
-const index = res.files['index.html'] || '', chunk = res.files['c/tst.js'] || '';
+const index = res.files['index.html'] || '', chunk = res.files['c/tst.js'] || '', pageOne = res.files['c/tst/tst.one.js'] || '', searchFile = res.files['c/tst.search.js'] || '';
 const one = res.written.get('tst.one');
 ok(res.errors.length === 0, 'good course builds with no errors: ' + res.errors.join(' | '));
 ok(res.chapters.length === 2 && res.stats.planned === 3, 'two chapters written of three planned');
@@ -96,14 +97,24 @@ ok(/<a href="#tst\.two--more">its section<\/a>/.test(one.html), 'section link ke
 ok(/data-marks="3"/.test(one.html) && /data-rev="tst\.two"/.test(one.html), 'try question carries marks and its revise chapter');
 ok(/Revise: More/.test(one.html), 'revise link shows the chapter title');
 ok(res.stats.quiz === 1 && res.stats.glossary === 1, 'one quiz question and one glossary term collected');
-ok(/ZTA\.chunk\("tst"/.test(chunk) && /id=\\?"c-tst\.one\\?"/.test(chunk), 'course chapters go into the course chunk');
+ok(/ZTA\.chunk\("tst"/.test(chunk) && !/c-tst\.one/.test(chunk), 'the course base file has quiz and key terms, no chapter');
+ok(/^ZTA\.page\("tst", "tst\.one", "/.test(pageOne) && /id=\\"c-tst\.one\\"/.test(pageOne) && !/c-tst\.two/.test(pageOne), 'each course chapter has its own file');
+const rows = JSON.parse((searchFile.match(/^ZTA\.searchData\("tst", (.*)\);\s*$/) || [0, '[]'])[1]);
+ok(rows.length === 2 && rows[0][0] === 'tst.one' && /Speed is/.test(rows[0][2]) && !/[<>]|\\dfrac/.test(rows[0][2]), 'search file has each chapter as plain text (no tags, no LaTeX source)');
+ok(rows[1][1].length === 1 && rows[1][1][0][0] === 'tst.two--more' && /a < sign and an & sign/.test(rows[1][2]), 'search file has headings, and entities decoded');
+const P = staticPages(res, { css: 'body{}', homepage: 'https://example.org/site' });
+ok(/<link rel="canonical" href="https:\/\/example\.org\/site\/p\/tst\.one\.html">/.test(P['p/tst.one.html'] || ''), 'static page has its canonical URL');
+ok(/<a href="tst\.two\.html">the second chapter<\/a>/.test(P['p/tst.one.html']) && /<a href="tst\.two\.html#tst\.two--more">its section<\/a>/.test(P['p/tst.one.html']), 'static page links go to static pages');
+ok(/index\.html#tst\.one"/.test(P['p/tst.one.html']) && !/class="quiz"/.test(P['p/tst.one.html']), 'static page links into the guide and replaces the quiz');
+ok((P['sitemap.xml'].match(/<loc>/g) || []).length === 4 && /p\/index\.html/.test(P['sitemap.xml']), 'sitemap lists the site, the chapter list and each chapter');
+ok(!('sitemap.xml' in staticPages(res, { css: '' })), 'no sitemap without a public URL');
 ok(!/id="c-tst\.one"/.test(index), 'course chapters are not in index.html');
 ok(/window\.GUIDE=\{/.test(index) && /"tst\.one":\{/.test(index), 'index.html carries the navigation data');
 ok(/data-nav="tst\.one"/.test(index), 'sidebar lists the chapter');
-ok(/issues\/new\?title=%5Btst\.one%5D/.test(chunk), 'report-a-mistake link names the chapter');
+ok(/issues\/new\?title=%5Btst\.one%5D/.test(pageOne), 'report-a-mistake link names the chapter');
 ok(res.warnings.some(w => /tst-missing/.test(w)), 'unregistered widget is a warning');
 ok(!/<script>[^]*<\/script>[^]*\u2028/.test(index), 'no raw line separators in the data');
-const q = Object.values(JSON.parse((chunk.match(/"quiz":(\{.*?\}),"gloss"/) || [0, '{}'])[1]))[0] || {};
+const q = Object.values(JSON.parse((chunk.match(/"quiz":(\{.*\}),"gloss"/) || [0, '{}'])[1]))[0] || {};
 ok(q.a === 1 && q.o && q.o.length === 3 && q.c === 'tst.one', 'quiz answer index and chapter are right');
 const L = lintChapter(one, ONE, { course: 'tst', hasCheck: true });
 ok(L.errors.length === 0, 'good chapter lints clean: ' + L.errors.join(' | '));

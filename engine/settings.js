@@ -231,11 +231,12 @@
       const list = h('ul', { class: 'set-dl' });
       list.append(h('li', {}, h('span', { class: 'set-dl-n' }, 'Core pages'), h('span', { class: 'set-dl-s' }, fmtMB(coreSize)), h('span', { class: 'set-dl-st ok' }, coreFiles.every((f) => have.has(f)) ? 'Saved' : 'Saving…')));
       for (const c of st.courses) {
-        const f = `c/${c}.js`, id = 'set-k-' + c;
+        const mine = st.files.filter((f) => (/^c\/([^/.]+)[/.]/.exec(f) || [])[1] === c), id = 'set-k-' + c;
+        const size = mine.reduce((a, f) => a + (st.sizes[f] || 0), 0), saved = mine.length > 0 && mine.every((f) => have.has(f));
         const cb = h('input', { type: 'checkbox', id, checked: kept(c) });
         cb.addEventListener('change', () => send(st.courses.filter((x) => (x === c ? cb.checked : kept(x)))));
-        list.append(h('li', {}, h('span', { class: 'set-dl-n' }, cb, h('label', { for: id }, nameOf(c))), h('span', { class: 'set-dl-s' }, fmtMB(st.sizes[f] || 0)),
-          h('span', { class: 'set-dl-st' + (have.has(f) ? ' ok' : '') }, have.has(f) ? 'Saved' : kept(c) ? 'Saving…' : 'Online only')));
+        list.append(h('li', {}, h('span', { class: 'set-dl-n' }, cb, h('label', { for: id }, nameOf(c))), h('span', { class: 'set-dl-s' }, fmtMB(size)),
+          h('span', { class: 'set-dl-st' + (saved ? ' ok' : '') }, saved ? 'Saved' : kept(c) ? 'Saving…' : 'Online only')));
       }
       box.append(list, h('div', { class: 'set-act' },
         btn('Download everything', () => send('all'), 'btn'), btn('Core pages only', () => send([]))));

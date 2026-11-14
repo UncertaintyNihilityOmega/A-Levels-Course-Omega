@@ -73,10 +73,24 @@ function mathFontFace(fontPath, chars) {
 
 /** Write {relPath: content} into dir, removing stale chunk files. */
 function writeSite(dir, files) {
-  fs.mkdirSync(path.join(dir, 'c'), { recursive: true });
-  const keep = new Set(Object.keys(files).filter(k => k.startsWith('c/')).map(k => k.slice(2)));
-  for (const f of fs.readdirSync(path.join(dir, 'c'))) if (!keep.has(f)) fs.rmSync(path.join(dir, 'c', f));
-  for (const [rel, content] of Object.entries(files)) fs.writeFileSync(path.join(dir, rel), content);
+  fs.mkdirSync(dir, { recursive: true });
+  // generated folders: anything in them that this build did not make is from an older build
+  const sweep = (rel) => {
+    const abs = path.join(dir, rel);
+    if (!fs.existsSync(abs)) return;
+    for (const e of fs.readdirSync(abs, { withFileTypes: true })) {
+      const r = rel + '/' + e.name;
+      if (e.isDirectory()) { sweep(r); if (!fs.readdirSync(path.join(dir, r)).length) fs.rmdirSync(path.join(dir, r)); }
+      else if (!(r in files)) fs.rmSync(path.join(dir, r));
+    }
+  };
+  for (const d of ['c', 'p']) sweep(d);
+  const made = new Set();
+  for (const [rel, content] of Object.entries(files)) {
+    const d = path.dirname(path.join(dir, rel));
+    if (!made.has(d)) { fs.mkdirSync(d, { recursive: true }); made.add(d); }
+    fs.writeFileSync(path.join(dir, rel), content);
+  }
 }
 
 module.exports = { readJson, readText, mdFiles, courseWidgets, loadCourse, loadCore, runPython, mathFontFace, writeSite };

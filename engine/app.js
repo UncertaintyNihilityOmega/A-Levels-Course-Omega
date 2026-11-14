@@ -419,12 +419,22 @@
     // after a navigation (not the first load) keyboard and screen-reader focus starts at the new page or section
     if (routed && (changed || target)) focusOn(target || $('h1', art));
     routed = true;
+    if (changed) fetchAhead(cid);
+  }
+  // when the browser is idle, fetch the next chapter's file so "Next" opens at once (not on a data-saving connection)
+  function fetchAhead(cid) {
+    const next = G.order[G.order.indexOf(cid) + 1];
+    if (!next || !ZTA.needs(next).length) return;
+    const c = navigator.connection;
+    if (c && (c.saveData || /2g/.test(c.effectiveType || ''))) return;
+    const go = () => { if (current && current.getAttribute('data-id') === cid) Promise.all(ZTA.needs(next).map(ZTA.load)).catch(() => {}); };
+    if (window.requestIdleCallback) requestIdleCallback(go, { timeout: 4000 }); else setTimeout(go, 1500);
   }
   $('#skipLink').addEventListener('click', (e) => { e.preventDefault(); focusOn((current && $('h1', current)) || $('#main')); });
   window.addEventListener('hashchange', route);
   function loadFailed(e) {
     if (/^https?:$/.test(location.protocol)) toast(navigator.onLine === false ? 'This course is not saved on this device. Go online, or download it in Settings.' : e.message + '. Check your connection.');
-    else toast(e.message + ' — keep the c folder next to index.html.');
+    else toast(e.message + '. Keep the c folder next to index.html.');
   }
 
   function buildToc(art) {
@@ -487,14 +497,29 @@
   /* ---------- search ---------- */
   const input = $('#searchInput'), results = $('#searchResults');
   let index = null, sel = -1, hits = [];
+  // Chapters inside index.html (core pages; every chapter in a kit preview) are read from the page; course chapters
+  // come from the search files (c/<course>.search.js), so searching never loads the chapters themselves.
+  const domIndex = new Map();   // id -> entry, kept between rebuilds
   function buildIndex() {
     index = [];
+    const seen = new Set();
+    for (const rows of Object.values(ZTA.search)) for (const r of rows) {
+      const info = G.ch[r[0]];
+      if (!info || seen.has(r[0])) continue;
+      seen.add(r[0]);
+      if (!r[3]) r[3] = { id: r[0], t: info.t, s: info.s, heads: r[1].map(h => ({ id: h[0], t: h[1] })), text: r[2], lt: info.t.toLowerCase(), lx: r[2].toLowerCase() };
+      index.push(r[3]);
+    }
     for (const art of $$('.chapter')) {
       const id = art.getAttribute('data-id');
-      const info = G.ch[id] || { t: id, s: art.getAttribute('data-subject') };
-      const heads = $$('.prose h2, .prose h3', art).map(h => ({ id: h.id, t: h.textContent }));
-      const text = (art.querySelector('.prose') || art).textContent.replace(/\s+/g, ' ');
-      index.push({ id, t: info.t, s: info.s, heads, text, lt: info.t.toLowerCase(), lx: text.toLowerCase() });
+      if (seen.has(id)) continue;
+      if (!domIndex.has(id)) {
+        const info = G.ch[id] || { t: id, s: art.getAttribute('data-subject') };
+        const heads = $$('.prose h2, .prose h3', art).map(h => ({ id: h.id, t: h.textContent }));
+        const text = (art.querySelector('.prose') || art).textContent.replace(/\s+/g, ' ');
+        domIndex.set(id, { id, t: info.t, s: info.s, heads, text, lt: info.t.toLowerCase(), lx: text.toLowerCase() });
+      }
+      index.push(domIndex.get(id));
     }
   }
   const subjShort = (sid) => { const s = G.subjects.find(x => x.id === sid); return s ? s.short : sid; };
@@ -553,10 +578,13 @@
   let st = 0;
   input.addEventListener('input', () => { clearTimeout(st); st = setTimeout(showResults, 120); });
   input.addEventListener('focus', () => {
-    ZTA.loadAll().then(() => { if (input.value.trim() && document.activeElement === input) showResults(); }, loadFailed);
+    // key terms come from the base files, the text from the search files
+    Promise.all([ZTA.loadAll(), ZTA.loadSearch()]).then(() => { if (input.value.trim() && document.activeElement === input) showResults(); }, loadFailed);
     if (input.value.trim()) showResults();
   });
   document.addEventListener('zta:chunk', () => { index = null; renderProgress(); renderTicks(document); });
+  document.addEventListener('zta:search', () => { index = null; });
+  document.addEventListener('zta:page', () => { index = null; renderProgress(); });
   input.addEventListener('keydown', (e) => {
     const items = $$('.sr', results);
     if (e.key === 'ArrowDown') { e.preventDefault(); sel = Math.min(items.length - 1, sel + 1); }
