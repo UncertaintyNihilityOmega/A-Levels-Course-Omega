@@ -51,10 +51,23 @@
    packages → reviews → READER → FIX → REVIEW FINAL.
 4. [x] **Reader pass** on Mathematics, then Physics (READER batches → FIX), as its own run.
 5. [ ] **Computer Science** (`cs`, 9618). Before its LEAD: publish a GitHub release of the site (user, Nov 13).
-6. [ ] **Further Mathematics** (`math.fm.*`, an extension of the Maths course): LEAD for the extension
+6. [ ] **Site loading** (Organizer, engine; user, Nov 14): one chunk per chapter (or per sidebar group) in place of one
+   per course; a search index built at build time (titles, headings, text) so search never loads the chapters; quiz
+   and glossary data in their own files so the practice and glossary pages do not load every course. Keep `file://`,
+   the service worker and the offline choices in Settings working. Measured Nov 14 (this PC, localhost): `c/hist.js`
+   12.0 MB (3.4 MB gzipped); one History chapter loads all 96 (2.2 s, 162k elements); focusing search loads every
+   course (16.8 s, 1.13 million elements). Done when a chapter opens with only its own chunk and search stays fast
+   at phone size; measure again and record the numbers in engine/README.md.
+7. [ ] **Findable pages** (Organizer, engine; user, Nov 14): the build also writes a small static page per chapter
+   (title, summary, headings, link into the app) and `sitemap.xml`; description and sharing tags in `shell.html`.
+   The offline `file://` site stays one `index.html`.
+8. [ ] **Phone reading** (Organizer, engine; user, Nov 14): an "On this page" contents sheet at phone width, resume
+   at the last section of a chapter (not only the last chapter), and a thin section progress bar. No content is cut.
+   The design is frozen: show the user one chapter before applying it to all.
+9. [ ] **Further Mathematics** (`math.fm.*`, an extension of the Maths course): LEAD for the extension
    (`courses/math/FURTHER.md`) → packages P19+ → reviews → READER for the new chapters → FIX → REVIEW FINAL.
    Before its LEAD, set math STATUS.md `FINAL` back to `open` and rewrite courses/math/COURSE.md as rules (30 KB).
-7. [ ] **Engineering** (`eng`).
-8. [ ] **Economics** (`econ`), then **Business** (`bus`), then **Accounting** (`acc`): shared-topic owners in their COURSE.md.
-9. [ ] **Other subjects** (`other`), including the Psychology summary (`other.psychology`).
-10. [ ] Final assembly: whole-site check, link check of every `:::links` URL, phone pass.
+10. [ ] **Engineering** (`eng`).
+11. [ ] **Economics** (`econ`), then **Business** (`bus`), then **Accounting** (`acc`): shared-topic owners in their COURSE.md.
+12. [ ] **Other subjects** (`other`), including the Psychology summary (`other.psychology`).
+13. [ ] Final assembly: whole-site check, link check of every `:::links` URL, phone pass.
