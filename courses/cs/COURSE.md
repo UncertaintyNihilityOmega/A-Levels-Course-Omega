@@ -50,7 +50,13 @@ packages/`Pn`.md, nothing else. Written by the Specialist (LEAD, 13 November 202
 - Trace tables are Markdown tables: one column per variable (plus OUTPUT), one row per change, blank cells where
   nothing changes, as Cambridge prints them.
 - Assembly (cs.assembly, cs.paradigms): only the instruction set in FACTS.md, in ` ```text ` blocks, with the
-  table of the instructions used printed in the question (as Paper 1 does).
+  table of the instructions used printed in the question (as Paper 1 does). Explanations use the paper's wording
+  (9618/11 June 2025: `END` "Return control to the operating system"; `JPE` "Following a compare instruction, jump
+  to <address> if the compare was True"). Paper 1 trace tables have an "Instruction address" column, ACC (and IX),
+  then one column per memory address used, with a first row of starting contents.
+- Operator precedence: the Pseudocode Guide states only that `*` and `/` come before `+` and `-`. Treat `DIV` and
+  `MOD` like division but always bracket them when they meet another operator; never set a question whose answer
+  depends on the precedence of `DIV` or `MOD`. (REVIEW P5–P8.)
 - SQL in ` ```text ` blocks, keywords in capitals, one clause per line; only the statements FACTS.md lists.
 - Logic: write expressions as `X = (A AND B) OR NOT C` in text, and in maths only for Boolean algebra at A Level
   (\(\overline{A}\) is not allowed by the kit: write \(\text{NOT } A\) or \(A'\) and say which; this course uses

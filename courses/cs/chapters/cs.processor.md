@@ -169,7 +169,7 @@ Do not write that the address bus is "two-way" or that it "carries data". It car
 
 ## What makes a processor perform better
 
-Performance means how much work a computer does in a given time. Four factors in the syllabus affect it. For each one, learn the effect and the reason, and the limit.
+Performance means how much work a computer does in a given time. The syllabus lists four factors that affect it: processor type and number of cores, bus width, clock speed and cache memory. Below, type and cores are taken separately. For each one, learn the effect and the reason, and the limit.
 
 :::key Performance factors
 - **Clock speed.** A higher clock speed gives more clock cycles per second, so more instructions are carried out per second. The limit: a faster clock makes the processor hotter and uses more power, and the memory and buses may not be able to keep up.

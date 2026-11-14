@@ -104,7 +104,7 @@ The syllabus uses one example instruction set, and a Paper 1 question prints the
 | `JPN` | `<address>` | After a compare, jump to the given address if the result was False (the values were not equal). |
 | `IN` | | Key in a character; its ASCII value is stored in ACC. |
 | `OUT` | | Output to the screen the character whose ASCII value is in ACC. |
-| `END` | | End the program. |
+| `END` | | Return control to the operating system (the program ends). |
 | `AND` | `#n`, `Bn`, `&n` or `<address>` | Bitwise AND of ACC with the operand; the result is in ACC. |
 | `OR` | `#n`, `Bn`, `&n` or `<address>` | Bitwise OR of ACC with the operand; the result is in ACC. |
 | `XOR` | `#n`, `Bn`, `&n` or `<address>` | Bitwise XOR of ACC with the operand; the result is in ACC. |

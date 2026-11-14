@@ -59,8 +59,8 @@ Counter ← Counter + 1
 Three rules matter in exam answers.
 
 :::key Declarations and assignments
-- `DECLARE Identifier : TYPE` gives the name and the type. Several names of one type can share a line, separated by commas.
-- A constant uses `=`, not `←`, and its value must be a **literal** (a plain number, character or string): `CONSTANT Rate = 0.2` is allowed, but `CONSTANT Double = Rate * 2` is not. This is the only place `=` is not a comparison.
+- `DECLARE Identifier : TYPE` gives the name and the type. The guide's own examples declare one name per line, which is always safe; many textbooks and model answers also list several names of one type on one line, separated by commas, as in `DECLARE Height, Mass : REAL`.
+- A constant uses `=`, not `←`, and its value must be a **literal** (a plain number, character or string): `CONSTANT Rate = 0.2` is allowed, but `CONSTANT Double = Rate * 2` is not. Apart from type definitions (met in [Data types, records and arrays](#cs.datatypes)), this is the only place `=` is not a comparison.
 - An assignment evaluates the right-hand side first. `Counter ← Counter + 1` works out the old value of Counter plus 1, then stores it back. A variable must have been given a value before its value is used.
 :::
 
@@ -163,7 +163,7 @@ A symbol or word that carries out an operation on one or two values, such as `+`
 | logic | `AND`  `OR`  `NOT` | `and`  `or`  `not` | `A AND NOT B` | TRUE or FALSE |
 | join strings | `&` | `+` | `"Hi " & Name` | a STRING |
 
-Operators work in a fixed order: brackets first, then `*`, `/`, `DIV` and `MOD`, then `+` and `-`. Operators at the same level work from left to right. When in doubt, add brackets: they never lose a mark.
+The Pseudocode Guide states the normal mathematical order: multiplication and division come before addition and subtraction, and brackets come first of all. It says nothing about `DIV` and `MOD`, and recommends brackets to make the order of a complex expression explicit. So treat `DIV` and `MOD` like division (Python does the same with `//` and `%`), work from left to right at the same level, and add brackets whenever `DIV` or `MOD` meets another operator: brackets never lose a mark.
 
 ```python
 print(17 / 5, 17 // 5, 17 % 5, 2 + 3 * 4, (2 + 3) * 4)
@@ -1171,13 +1171,13 @@ A: A constant must be set to a literal value. `Price * 0.2` is an expression tha
 :::
 
 :::try Exam practice ★ to ★★★
-Q: [5 marks] ★ Give the value of each expression. (a) `29 MOD 6` (b) `29 DIV 6` (c) `2 + 3 * 4 MOD 5` (d) `TO_UPPER(LEFT("kampala", 3))` (e) `(5 > 3) AND NOT (2 > 4)`
-H: `*` and `MOD` are at the same level, so work from left to right.
+Q: [5 marks] ★ Give the value of each expression. (a) `29 MOD 6` (b) `29 DIV 6` (c) `(2 + 3 * 4) MOD 5` (d) `TO_UPPER(LEFT("kampala", 3))` (e) `(5 > 3) AND NOT (2 > 4)`
+H: In (c), work out the brackets first, with multiplication before addition, then apply `MOD`.
 A: Working each one:
 
 - (a) 5 [B1]
 - (b) 4 [B1]
-- (c) 4: `3 * 4` is 12, then `12 MOD 5` is 2, then \(2 + 2 = 4\) [B1]
+- (c) 4: `3 * 4` is 12, then \(2 + 12 = 14\), then `14 MOD 5` is 4 [B1]
 - (d) "KAM" [B1]
 - (e) TRUE: `5 > 3` is TRUE, `2 > 4` is FALSE so its NOT is TRUE, and TRUE AND TRUE is TRUE [B1]
 
@@ -1512,7 +1512,7 @@ ENDIF
 :::recap
 - A **variable** stores a changing value and a **constant** a fixed one. `DECLARE X : TYPE`; `CONSTANT Rate = 0.2` uses `=` and a literal. An assignment evaluates the right side first.
 - `/` always gives a REAL. `DIV` is the whole-number quotient and `MOD` the remainder: they split a quantity into units, find digits and test for even or odd.
-- Brackets first, then `* / DIV MOD`, then `+ -`. `=` compares in conditions; `←` assigns. Use brackets when mixing AND and OR.
+- Brackets first, then `*` and `/`, then `+ -`; treat `DIV` and `MOD` like division and bracket them. `=` compares in conditions; `←` assigns. Use brackets when mixing AND and OR.
 - `MID(S, x, n)` counts positions from 1; Python slices from 0: `s[x - 1:x - 1 + n]`. `INT` drops the fraction. `RAND(x)` is 0 up to but not including x.
 - CASE compares one variable with values or ranges, runs the first match and has an OTHERWISE branch. Test the most restrictive condition first in a chain of IFs.
 - **FOR** for a known number of repeats (zero times if the start is past the end; never change the loop variable). **WHILE** may run zero times and continues while the condition is TRUE. **REPEAT … UNTIL** runs at least once and stops when the condition is TRUE.

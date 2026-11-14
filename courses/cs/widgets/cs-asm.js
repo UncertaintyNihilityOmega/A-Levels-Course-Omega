@@ -468,7 +468,8 @@
       }
       const tick = function () {
         const more = advance(true);
-        timer = more ? setTimeout(tick, 220) : null;
+        // a program that never reaches END (step limit) speeds up after 30 instructions, so the message comes in seconds
+        timer = more ? setTimeout(tick, run.error && count >= 30 ? 4 : 220) : null;
         paint();
       };
       timer = setTimeout(tick, 0);

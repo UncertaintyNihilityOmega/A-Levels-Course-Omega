@@ -221,29 +221,33 @@ figs["symbols"] = c.svg(
 # ---------------------------------------------------------------------------------------------------
 # Figure 2: decomposition of the canteen ordering system
 # ---------------------------------------------------------------------------------------------------
-c = Chart(560, 360)
-top = c.proc(280, 30, "Canteen ordering system", fill="f1", minw=200)
+c = Chart(620, 330)
+top = c.proc(310, 30, "Canteen ordering system", fill="f1", minw=200)
 cols = [
     ("Take the order", ["Show the menu", "Read choices", "Check stock"]),
     (("Work out", "the bill"), ["Add prices", "Apply discount"]),
     ("Take payment", ["Read amount", "Give change"]),
     (("Report", "the day"), ["Count orders", "Add up takings"]),
 ]
-xs = [72, 211, 350, 489]
+xs = [72, 222, 372, 522]
+# a hierarchy (tree) drawn with plain lines: each sub-problem's parts hang side by side from one spine,
+# so they read as siblings, not as a chain of steps
 for (head, subs), x in zip(cols, xs):
     h = c.proc(x, 124, list(head) if isinstance(head, tuple) else head, fill="fm", minw=124)
-    c.arrow([(280, 52 + 0), (280, 72), (x, 72), (x, h["y0"])], src=top, dst=h)
-    yy = 200
-    prev = h
+    c.arrow([(310, top["y1"]), (310, 72), (x, 72), (x, h["y0"])], head=False, src=top, dst=h)
+    spine = x - 56
+    yy = 190
+    kids = []
     for s in subs:
-        b = c.proc(x, yy, s, fill="fm2", minw=124)
-        c.arrow([(prev["cx"], prev["y1"]), (prev["cx"], b["y0"])], src=prev, dst=b)
-        prev = b
-        yy += 60
+        kids.append(c.proc(x + 20, yy, s, fill="fm2", minw=124))
+        yy += 50
+    c.arrow([(spine, h["y1"]), (spine, kids[-1]["cy"])], head=False, src=h, dst=None)
+    for b in kids:
+        c.arrow([(spine, b["cy"]), (b["x0"], b["cy"])], head=False, src=None, dst=b)
 c.check()
 figs["tree"] = c.svg(
     "A tree diagram. At the top, Canteen ordering system. Below it four sub-problems: Take the order, Work out the bill, Take payment, and Report the day. Under Take the order: Show the menu, Read choices, Check stock. Under Work out the bill: Add prices, Apply discount. Under Take payment: Read amount, Give change. Under Report the day: Count orders, Add up takings.",
-    "The canteen ordering system split into four sub-problems, each split again. Each box at the bottom is small enough to become one module (a procedure or a function).")
+    "The canteen ordering system split into four sub-problems, each split again into the parts listed under it. Each of the smallest boxes is small enough to become one module (a procedure or a function).")
 
 # ---------------------------------------------------------------------------------------------------
 # Figure 3: Example 1 flowchart (loop): pages read until 0
