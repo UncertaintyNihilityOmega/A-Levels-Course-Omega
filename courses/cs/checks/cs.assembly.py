@@ -188,9 +188,22 @@ fin = check_trace("A program reads a character from the keyboard.", "The trace f
                   show_cmp=True, cols=("ACC",))
 assert fin["out"] == "*" and ord("*") == 42 and run(prog, "B")[1]["out"] == "C" and ord("B") == 66
 
-# write a program: add and subtract
-fin = run(block_after("A model answer:") + "\n150 12\n151 30")[1]
-assert fin["mem"][152] == 37
+# write a program: equal or not (9 marks), and its trace in the Paper 1 layout
+eq = block_after("A model answer for (a):")
+_, eq_labels, _ = assemble(eq)
+assert eq_labels == {"SAME": 106}
+for a, b in [(36, 36), (36, 37), (0, 0), (255, 255), (0, 255), (7, 200)]:
+    fin = run(eq + f"\n170 {a}\n171 {b}\n172 9")[1]
+    assert fin["mem"][172] == (1 if a == b else 0) and fin["mem"][170] == a and fin["mem"][171] == b
+h, r = trace(eq + "\n170 36\n171 36\n172 9", watch=[170, 171, 172], cols=("ACC",), start_row=True)
+paper_rows = [[row[0] if row[0] != "start" else ""] + row[2:-1] for row in r]   # drop Instruction and OUTPUT: no compare column
+paper_head = ["Instruction address"] + h[2:-1]
+head, rows = table_after("| Instruction address | ACC | 170 | 171 | 172 |")
+assert head == paper_head == ["Instruction address", "ACC", "170", "171", "172"], (head, paper_head)
+assert rows == paper_rows, (rows, paper_rows)
+assert [row[0] for row in rows] == ["", "100", "101", "102", "106", "107", "108"]
+assert run(eq + "\n170 36\n171 36\n172 9")[1]["mem"][172] == 1 and run(eq + "\n170 36\n171 35\n172 9")[1]["mem"][172] == 0
+assert "Instruction address" in TEXT[TEXT.index("## Tracing a program"):TEXT.index("### A first trace")]
 
 # masks for each part of the status register question
 assert 0b01000000 == 1 << 6 and 0b11111011 == 0xFF ^ (1 << 2) and 0b00000001 == 1 << 0 and 0b10000000 == 1 << 7
@@ -200,9 +213,11 @@ for value in range(256):
     assert ((value | 0b01000000) & ~0b01000000) == (value & ~0b01000000)
 
 # array loop with IX: the model answer
-prog = block_after("A model answer, which stores 75")
+prog = block_after("A model answer, which stores 79")
 fin = run(prog)[1]
-assert fin["mem"][160] == 12 + 30 + 25 + 8 == 75 and fin["mem"][161] == 0 and fin["ix"] == 4
+assert fin["mem"][190] == 17 + 22 + 9 + 31 == 79 and fin["mem"][191] == 0 and fin["ix"] == 4
+assert [fin["mem"][a] for a in (180, 181, 182, 183)] == [17, 22, 9, 31]
+assert not {17, 22, 9, 31} & {12, 30, 25, 8, 41}   # not the data of the indexed-addressing worked example
 
 # shifts question
 assert b8(0b00001101 << 2) == "00110100" and 13 * 4 == 52 == 0b00110100

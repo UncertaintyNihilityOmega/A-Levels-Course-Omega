@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-14 · WRITE P11 · cs.usertypes (8.4k words) and cs.float (5.7k words); widget cs-float (BigInt exact; logic tested against Python Fractions on 13,504 checks, fake-DOM UI test 52 checks, probe clean light/dark/phone and bad attributes). Reviewer: see Writer's notes in packages/P11.md (pointer write-through not used, set operations described in words, overflow leaves widget pattern unchanged, underflow stores 0).
+Last: 2026-11-14 · WRITE P12 · cs.networks2 (9.1k words, 2 figures, 3 Python blocks) and cs.hardware2 (8.0k words, 1 figure, 1 Python block); widget cs-pipeline (five-stage timing diagram, pipelined or not, taken jump flushes 3 instructions, look at one cycle; logic tested against an independent simulation on 1,343 checks incl. fake-DOM UI test; probe clean light/dark/phone and bad attributes). Reviewer: see Writer's notes in packages/P12.md (invented RISC/CISC cycle counts labelled, TCP numbers segments not bytes, cautious interrupt statements).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -16,8 +16,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P9: written 2026-11-14
 - P10: written 2026-11-14
 - P11: written 2026-11-14
-- P12: open
-- P13: open
+- P12: written 2026-11-14
+- P13: writing 2026-11-14
 - P14: open
 - P15: open
 - P16: open

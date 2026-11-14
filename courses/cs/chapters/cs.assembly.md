@@ -220,6 +220,8 @@ To **trace** a program, you act as the processor: you carry out the instructions
 
 In the tables in this chapter a cell is filled when the instruction **writes** that register or location, even if it writes the same value as before. The Address column is the address of the instruction that was executed. Memory contents are shown as denary numbers unless the question says otherwise.
 
+Paper 1 prints its trace tables in a slightly different layout (for example 9618/11, June 2025, question 8): the first column is headed "Instruction address", then comes ACC, then one column for each memory location the program uses, headed by its address (for example 80, 81, 82, 83), and the first row holds the starting contents of those locations. There is no column for the compare result. The exam practice question on comparing two numbers shows an answer in exactly this layout.
+
 ### A first trace
 
 :::eg Tracing an addition (exam style)
@@ -814,62 +816,82 @@ A: The trace for the character A:
 
 For `B`: ACC is 66, the compare is FALSE, there is no jump, `INC ACC` makes 67 and `OUT` displays `C`. [B1]
 
-Q: [5 marks] ★★ Location 150 holds 12 and location 151 holds 30. Write an assembly language program, using only the instructions in the instruction set table, to add the two numbers, subtract 5, and store the result in location 152.
-A: A model answer:
+Q: [9 marks] ★★ Locations 170 and 171 each hold a number. (a) Write an assembly language program, using only the instructions in the instruction set table, that stores 1 in location 172 if the two numbers are equal and stores 0 in location 172 if they are not. [6 marks] (b) Location 170 holds 36, location 171 holds 36 and location 172 holds 9. Complete a trace table for your program, with the columns Instruction address, ACC, 170, 171 and 172 and a first row that shows the starting contents. [3 marks]
+H: Compare with `CMP`, then jump with `JPE`. Each of the two outcomes needs its own `END`, or the program runs on into the other one.
+A: A model answer for (a):
 
 ```text
-LDD 150
-ADD 151
-SUB #5
-STO 152
+LDD 170
+CMP 171
+JPE SAME
+LDM #0
+STO 172
+END
+SAME:   LDM #1
+STO 172
 END
 ```
 
-- `LDD 150` [B1]
-- `ADD 151` [B1]
-- `SUB #5` [B1]
-- `STO 152` [B1]
-- `END` [B1]
+- `LDD 170` to load the first number into ACC [B1]
+- `CMP 171` to compare it with the second number [B1]
+- `JPE SAME` (or `JPN` with the branches the other way round) to choose between the two outcomes [B1]
+- `LDM #0` and `STO 172` on the path for numbers that are not equal [B1]
+- `LDM #1` and `STO 172` on the path for numbers that are equal [B1]
+- `END` at the end of both paths, so that neither path runs into the other [B1]
 
-(Accept labels, or the instructions in a different order that gives the same result, such as `LDD 151` first.)
+(Accept labels, or the two outcomes in the opposite order.) The trace for (b), in the layout that Paper 1 prints, with the address of each instruction that was carried out, ACC, then one column for each memory location used and no column for the compare result:
+
+| Instruction address | ACC | 170 | 171 | 172 |
+|---|---|---|---|---|
+| | | 36 | 36 | 9 |
+| 100 | 36 | | | |
+| 101 | | | | |
+| 102 | | | | |
+| 106 | 1 | | | |
+| 107 | | | | 1 |
+| 108 | | | | |
+
+- a first row with 36, 36 and 9, then the instructions in the order carried out [B1]
+- the jump at 102 taken (the row after it is 106, not 103) because the compare is True [B1]
+- ACC 36 after `LDD 170` and 1 after `LDM #1`, and 172 changed to 1 by `STO 172` [B1]
 
 Q: [4 marks] ★★ An 8-bit register holds the status of a heating system. Write the single instruction that is carried out on ACC, after the register has been loaded into ACC, to (a) set bit 6, (b) clear bit 2, (c) toggle bit 0, (d) leave only bit 7 (so that the result is zero if bit 7 is 0).
 H: Bit 0 is the rightmost bit. Use OR to set, AND to clear or test, and XOR to toggle.
 A: (a) `OR B01000000` [B1] (b) `AND B11111011` [B1] (c) `XOR B00000001` [B1] (d) `AND B10000000` [B1]
 
-Q: [8 marks] ★★★ (#cs.assembly) The four test marks of a student are stored in locations 150 to 153 (12, 30, 25 and 8). Location 161 holds 4, the number of marks. Write an assembly language program that uses the index register and a loop to add the four marks and store the total in location 160.
+Q: [8 marks] ★★★ (#cs.assembly) The four test marks of a student are stored in locations 180 to 183 (17, 22, 9 and 31). Location 191 holds 4, the number of marks. Write an assembly language program that uses the index register and a loop to add the four marks and store the total in location 190.
 H: Set IX and the total to 0 before the loop; decide how the loop ends (the count in location 161 goes down by 1 each time).
 H: Compare ACC with 0 after the count has been reduced and stored.
-A: A model answer, which stores 75 in location 160:
+A: A model answer, which stores 79 in location 190:
 
 ```text
 100          LDR #0
 101          LDM #0
-102          STO 160
-103  LOOP:   LDX 150
-104          ADD 160
-105          STO 160
+102          STO 190
+103  LOOP:   LDX 180
+104          ADD 190
+105          STO 190
 106          INC IX
-107          LDD 161
+107          LDD 191
 108          DEC ACC
-109          STO 161
+109          STO 191
 110          CMP #0
 111          JPN LOOP
 112          END
-150          12
-151          30
-152          25
-153          8
-161          4
+180          17
+181          22
+182          9
+183          31
+191          4
 ```
 
 - `LDR #0` to set IX to 0 [B1]
-- the total in location 160 set to 0 before the loop [B1]
+- the total in location 190 set to 0 before the loop [B1]
 - a label at the first instruction of the loop body [B1]
-- `LDX 150` to read the current mark, and `ADD 160` to add the running total [B1]
-- `STO 160` to store the running total [B1]
+- `LDX 180` to read the current mark, and `ADD 190` to add the running total [B1]
+- `STO 190` to store the running total [B1]
 - `INC IX` to move to the next mark [B1]
-- the count in 161 loaded, reduced by 1 and stored [B1]
+- the count in 191 loaded, reduced by 1 and stored [B1]
 - `CMP #0` then `JPN LOOP` to repeat until the count is zero, then `END` [B1]
 
 Q: [6 marks] ★★★ ACC holds the 8-bit pattern shown each time. Give the result of (a) a logical shift left by 2 places of 00001101, (b) a logical shift right by 3 places of 11001000, (c) an arithmetic shift right by 1 place of 11001000 (a two's complement number), (d) a cyclic shift left by 2 places of 10110001. For (a) and (b) say what has happened to the denary value.
