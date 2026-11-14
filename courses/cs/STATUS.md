@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-13 · WRITE P6 · cs.software 7.3k words, cs.security 9.7k, cs.ethics 6.1k, all check ok and phone ok; widget cs-check (parity block with even/odd and left/right parity bit, click-to-flip, random corruption, row/column check with symbols; check digit modulo 11 and modulo 10, calculate and verify) probed clean in light, dark, phone, bad attributes, logic tested against Python (112,470 comparisons) and interactions exercised headless; five SVG figures generated and overlap-checked in data/. Reviewer: modulo-10 weights rule (3,1 counting back from the check digit), BCS/IEEE descriptions are general (confirm on their own sites), security chapter is long (9.7k words) because the parity and check-digit sections are fully worked.
+Last: 2026-11-14 · WRITE P9 · cs.procedures 8.9k words, cs.structures 9.4k words (check and phone pass, every Python block run, every pseudocode trace/table recomputed); widget cs-stack (stack, queue, circular, linked list; tested against a Python model on 600 random sequences, 153,894 comparisons, plus a fake-DOM UI test; probe clean light/dark/phone/bad attributes). Reviewer: pseudocode facts re-read from the Pseudocode Guide (empty brackets on PROCEDURE/CALL, BYVAL default, no array-parameter syntax so modules use global arrays); ADT conventions stated in the chapter; notes in packages/P9.md
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -12,8 +12,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P5: written 2026-11-13
 - P6: written 2026-11-13
 - P7: written 2026-11-13
-- P8: open
-- P9: open
+- P8: writing 2026-11-14
+- P9: written 2026-11-14
 - P10: open
 - P11: open
 - P12: open
