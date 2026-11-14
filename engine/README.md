@@ -49,6 +49,8 @@
   kit the full list (`zta:links` → `widgets`, end of LINKS.md), so a kit warns for another course's widget.
 
 ## Page features (documented for Writers in `kit-src/STYLE.md`)
+- Chapter footer: "Found a mistake on this page? Report it on GitHub" opens a new issue with the chapter id and the
+  build date filled in (`site.js`, `opts.issues` from package.json `repository`; kit previews have none).
 - `:::links` (verified external links; `linkSheets` build pages such as `tools.l.math`), `:::proof`,
   `:::checklist` (ticks in localStorage `ticks`), `:::progress [paper]` (from `course.json` `papers`).
 - `:::try` with `Q: [n marks] (#id)`, `H:` hints and `A:` answers. `[M1 A1]` shorthand becomes `[M1] [A1]`;
@@ -72,6 +74,8 @@
 - READER: after every package is reviewed; READER.md has one `## <id>` per non-mock chapter; then FIX, REVIEW FINAL.
 
 ## Checks
+- `test.js`: engine self-test (CI runs it first). A tiny course built in memory: maths, links, aliases, marks, quiz
+  data, chunks, the report link, and the errors that must stay errors. Add a check when a page feature is added.
 - `lint.js`: structure notes, marks totals, mock rules, `\ce{}` bond fragments that would render as a false charge.
 - `check.js --py` runs every `checks/<id>.py` (standard library only).
 - Kit (`kit-src/zta.js`, bundled by `sync.js` with esbuild): `phone` (headless 375 px), `widget <name> --probe`

@@ -477,6 +477,7 @@ math { font-family: var(--f-math); font-size: 1.08em; }
 .pn small { font-size: .8rem; color: var(--ink-3); font-weight: 700; }
 .pn span { font-weight: 700; overflow: hidden; text-overflow: ellipsis; }
 .pn-next { text-align: right; }
+.ch-report { margin: 0; font-family: var(--f-ui); font-size: .9rem; color: var(--ink-2); }
 
 /* right rail */
 .rail { position: sticky; top: var(--bar-h); height: calc(100dvh - var(--bar-h)); overflow-y: auto; padding: 44px 20px 40px 8px; scrollbar-width: thin; scrollbar-color: transparent transparent; }

@@ -41,6 +41,7 @@ embedded maths font smaller.
 | `npm install` | installs the build dependencies (once) |
 | `node engine/build.js [--strict]` | builds `site/` (`--strict`: exit 1 on any error) |
 | `node engine/check.js [course …] [--py]` | lints every chapter (marks, links, structure); `--py` runs every number check |
+| `node engine/test.js` | engine self-test: a tiny course built in memory, 27 checks of what every page relies on |
 | `node engine/status.js` | one line per course: chapters, packages, reviews, next step |
 | `node engine/sync.js` | regenerates each course's kit, CLAUDE.md and LINKS.md |
 | `node engine/serve.js` | serves `site/` at http://localhost:5100 |

@@ -32,6 +32,8 @@ jobs:
       - name: Python tools (maths-font subset)
         run: pip install fonttools brotli
       - run: npm ci
+      - name: Engine self-test
+        run: node engine/test.js
       - name: Check every chapter (lint, marks, links, number checks)
         run: node engine/check.js --py
       - name: Build the site

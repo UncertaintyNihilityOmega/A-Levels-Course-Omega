@@ -238,11 +238,15 @@ function buildSite(sources, opts) {
     return `<header class="ch-head">${crumbs}<h1>${titleOf(c)}</h1>${chips.length ? `<div class="chips">${chips.join('')}</div>` : ''}${lede}</header>`;
   }
   const articles = {};
+  const built = new Date().toISOString().slice(0, 10);
   ordered.forEach((c, i) => {
     const prev = ordered[i - 1], next = ordered[i + 1];
+    // "Report a mistake": a new GitHub issue with the page and the build date filled in (opts.issues: the repository's
+    // issues URL, given by build.js; kit previews have none)
+    const report = opts.issues ? `<p class="ch-report">Found a mistake on this page? <a href="${escapeHtml(opts.issues)}/new?title=${encodeURIComponent(`[${c.id}] `)}&amp;body=${encodeURIComponent(`Page: ${stripTags(titleOf(c))} (${c.id})\nBuild: ${built}\n\nWhat is wrong:\n\nWhat it should say (if you know):\n`)}" target="_blank" rel="noopener">Report it on GitHub</a>.</p>` : '';
     const foot = c.meta.foot === 'none' ? '' : `<footer class="ch-foot">
 <button class="done-btn" type="button" data-done="${c.id}" aria-pressed="false"><span class="done-box" aria-hidden="true"></span><span class="done-txt">Mark as learned</span></button>
-<div class="pn">${prev ? `<a class="pn-prev" href="#${prev.id}"><small>Previous</small><span>${stripTags(titleOf(prev))}</span></a>` : '<span></span>'}${next ? `<a class="pn-next" href="#${next.id}"><small>Next</small><span>${stripTags(titleOf(next))}</span></a>` : '<span></span>'}</div></footer>`;
+<div class="pn">${prev ? `<a class="pn-prev" href="#${prev.id}"><small>Previous</small><span>${stripTags(titleOf(prev))}</span></a>` : '<span></span>'}${next ? `<a class="pn-next" href="#${next.id}"><small>Next</small><span>${stripTags(titleOf(next))}</span></a>` : '<span></span>'}</div>${report}</footer>`;
     const k = c.chunk || '';
     const lv = (c.meta.level || '').split(/[ ,]+/)[0].toLowerCase();
     const mockAttrs = lv === 'mock' ? ` data-level="mock" data-min="${parseMinutes(c.meta.time)}" data-marks="${+c.meta.total || c.marks}"${+c.meta.answer ? ` data-answer="${+c.meta.answer}"` : ''}` : '';
@@ -287,7 +291,7 @@ function buildSite(sources, opts) {
     mocks: Object.fromEntries([...written.values()].filter(c => /\bmock\b/i.test(c.meta.level || ''))
       .map(c => [c.id, [...c.html.matchAll(/<li(?: data-marks="(\d+)")?(?: data-rev="([^"]+)")?><div class="tq">/g)].map(m => [+m[1] || 0, m[2] || 0])])),
     ck: Object.fromEntries([...written.keys()].map(id => [id, checksOf(id)]).filter(([, k]) => k.length)),
-    built: new Date().toISOString().slice(0, 10)
+    built
   };
 
   const files = {};

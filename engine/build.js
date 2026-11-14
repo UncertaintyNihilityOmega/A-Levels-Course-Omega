@@ -16,11 +16,20 @@ const courses = fs.readdirSync(path.join(ROOT, 'courses')).filter(d => fs.exists
   .map(d => loadCourse(path.join(ROOT, 'courses', d)));
 
 const assets = require('./assets');
+/** "https://github.com/<owner>/<repo>/issues" from package.json "repository" ('' if it is not a GitHub URL) */
+function repoIssues() {
+  try {
+    const r = require('../package.json').repository;
+    const m = String((r && r.url) || r || '').match(/^https:\/\/github\.com\/[\w.-]+\/[\w.-]+?(?=\.git$|$)/);
+    return m ? m[0] + '/issues' : '';
+  } catch (e) { return ''; }
+}
 const res = buildSite([...coreSources, ...courses], {
   order: core.order,
   formulaSheets: core.formulaSheets,
   linkSheets: core.linkSheets,
   assets,
+  issues: repoIssues(),
   head: pwa.head(assets.css),
   fontFace: (chars) => mathFontFace(path.join(__dirname, 'latinmodern-math.otf'), chars)
 });
