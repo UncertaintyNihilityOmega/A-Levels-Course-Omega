@@ -98,7 +98,12 @@
     err.setAttribute('role', 'alert');
 
     const ipField = W.field({ label: 'IPv4 address', value: startIp, type: 'text', width: '150px', oninput: function () { update(); } });
-    const slider = W.sliderNum({ label: 'Prefix length (/n)', min: 8, max: 30, step: 1, value: startPrefix, oninput: function () { if (!syncing) { syncMask(); update(); } } });
+    const slider = W.sliderNum({ label: 'Prefix length (/n)', min: 8, max: 30, step: 1, value: startPrefix, oninput: function () {
+      if (syncing) return;
+      const p = Number(slider.get());
+      if (isFinite(p) && Math.round(p) >= 8 && Math.round(p) <= 30) syncMask();   // an invalid prefix leaves the mask at the last valid one
+      update();
+    } });
     const maskField = W.field({ label: 'Subnet mask', value: dotted(maskFromPrefix(startPrefix)), type: 'text', width: '150px', oninput: function () { fromMask(); } });
 
     body.appendChild(W.h('div', { class: 'w-row' }, ipField.el, maskField.el));
@@ -111,7 +116,7 @@
 
     const list = W.h('dl', { style: { margin: '8px 0 0', display: 'grid', gap: '6px' } });
     body.appendChild(list);
-    body.appendChild(W.h('p', { class: 'w-note', text: 'Bold digits to the left of the bar | are the network part; the plain digits to the right are the host part. Usable hosts = 2 to the power of the host bits, minus 2 (the network address and the broadcast address cannot be given to devices).' }));
+    body.appendChild(W.h('p', { class: 'w-note', text: 'Bold coloured digits to the left of the bar | are the network part; the plain digits to the right are the host part. Usable hosts = 2 to the power of the host bits, minus 2 (the network address and the broadcast address cannot be given to devices).' }));
 
     function syncMask() {
       syncing = true;
@@ -138,7 +143,7 @@
     // binary display: four octets, network bits bold, a bar at the split
     function binaryEl(value, prefix) {
       const s = bits32(value);
-      const wrap = W.h('span', { style: { display: 'inline-flex', flexWrap: 'wrap', columnGap: '3px', fontFamily: mono, fontSize: '13px' } });
+      const wrap = W.h('span', { style: { display: 'inline-flex', flexWrap: 'wrap', columnGap: '3px', fontFamily: mono, fontSize: '14px' } });
       for (let o = 0; o < 4; o++) {
         const start = o * 8;
         const oct = s.slice(start, start + 8);

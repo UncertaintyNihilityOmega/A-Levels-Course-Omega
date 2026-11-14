@@ -9,8 +9,9 @@
   FIXed; site check 0 errors, strict build passes. Release v0.6.0 tagged (CHANGELOG).
 - Now: queue item 5, Computer Science (`cs`, 9618, 49 chapters in 22 packages): LEAD done Nov 13 (gold cs.datatypes);
   P1–P7 written (16 chapters; widgets cs-binary, cs-ip, cs-logic, cs-asm, cs-check, cs-sql); REVIEW P1–P4 done
-  (2 cs-ip items open in REVIEW.md). Run Nov 14 16:00 (Istanbul): FIX (cs-ip) + WRITE P8 and WRITE P9 running;
-  cs-preview on 5110 (user allowed). Next: REVIEW P5–P8 once P8 is written, then P10, P11.
+  (2 cs-ip items open in REVIEW.md). Run Nov 14 16:00 (Istanbul): P9 written (cs.procedures, cs.structures,
+  cs-stack); FIX (cs-ip) + WRITE P8 and WRITE P10 running; cs-preview on 5110 (user allowed). Next: REVIEW P5–P8
+  once P8 is written, then P11.
 - Site, Nov 13 (user's requests): new logo (log end, "AΩ" in Caudex, dark green and white; engine/icons.js), and a
   Settings page (red, last in the sidebar; engine/settings.js): theme, text size, course colours, background,
   highlighter, return to default, export/import/clear progress, protect storage, offline downloads (everything,
