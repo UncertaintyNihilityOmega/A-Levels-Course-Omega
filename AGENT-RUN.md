@@ -31,8 +31,11 @@ awake (Windows: Sleep "Never" when plugged in).
   4. Run the loop below until the course step is done, the usage gate blocks every start, or the usage limit stops
      the agents. Update the lock `beat` each time an agent reports and at least every 45 minutes (a background
      `sleep 2400` as the timer).
-  5. Course finished: REVIEW FINAL, assembly, tick ROADMAP, set "Now" to the next item, start it in the same run.
-     Queue empty or a step needs the user (a decision, a manual setting): write it in "Now", delete the lock, stop.
+  5. Course finished: REVIEW FINAL, assembly, move its ROADMAP line from "Queue" to "Done", set "Now" to the next
+     item, start it in the same run.
+     Queue empty: write it in "Now", delete the lock, stop. A step needs the user (a decision, a manual setting):
+     write it under "For the user" and, if it blocks the runs, also as the first line of "Now" ("USER: …"); delete
+     the lock, stop.
 - Pause: the user disables the task in the app (or says "pause the runs"); set "Now" to say so.
 - Manual runs (an Organizer chat the user keeps open, with a CronCreate hourly check) stay possible: use the same
   lock so the two never overlap.
@@ -91,7 +94,8 @@ awake (Windows: Sleep "Never" when plugged in).
 ## End of the run
 - Let running agents finish; check and commit their work.
 - Guard off: delete `.run/guard-course.txt`. Stop the preview. Delete the CronCreate check and the lock.
-- Update ROADMAP.md "Now"; tick the course.
+- Update ROADMAP.md: "Now" (current state only); every finished queue item moves from "Queue" to "Done" (the queue
+  holds unfinished items only); anything only the user can do goes under "For the user".
 
 ## Prompt templates
 Replace `<C>` (course id), `<PATH>` (`C:\Users\Uncertainty\Desktop\Claude_Test\A Levels Course\courses\<C>`),

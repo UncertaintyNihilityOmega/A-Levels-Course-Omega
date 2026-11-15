@@ -24,6 +24,8 @@ There is no CLAUDE.md at the root: course sessions would load it. Start every Or
 - Commit each finished step with a clear message, then `git push`. Pushing to `main` publishes the site.
 - Docs and memory hold rules and current state only, as short lists. History lives in git commits.
   ROADMAP.md "Now" is the only status record.
+- ROADMAP.md at the end of every run or session: finished queue items move to "Done" (the queue holds unfinished
+  items only), finished lines leave "Now", and anything only the user can do goes under "For the user".
 - Exam facts are verified against the syllabus and a real recent question paper (what each paper prints and allows).
 - Token use: a fresh Organizer chat per course run; agents bundle tool calls; the gold chapter and chapter depth are
   never cut to save tokens.
@@ -42,14 +44,14 @@ There is no CLAUDE.md at the root: course sessions would load it. Start every Or
 ## Assembly session
 
 1. `node engine/status.js`; answer open REQUESTS.md lines.
-2. `node engine/check.js --py` and `node engine/build.js --strict`; `node courses/<c>/kit/zta.js phone` for each
-   changed course. Fix engine problems; send course problems back through REVIEW.md or REQUESTS.md.
+2. `node engine/check.js --py`, `node engine/build.js --strict` and `node engine/sitecheck.js` (`--links` at the
+   final assembly); `node courses/<c>/kit/zta.js phone` for each changed course. Fix engine problems; send course problems back through REVIEW.md or REQUESTS.md.
 3. Each course with `:::links` boxes needs a links page: `core/tools.l.<c>.md`, its Toolbox entry and `linkSheets` line
    in `core/core.json`, and a link from `core/road.resources.md`; then `node engine/sync.js`.
 4. Spot-check the site ("site" launch config): a new chapter per course, a widget, dark mode, phone width, search.
 5. A course that is finished: cut its REVIEW.md to the header and one line naming the last commit with the full
    list (closed items are history); set its state in the README.md course table.
-6. Update ROADMAP.md "Now", commit, push.
+6. Update ROADMAP.md ("Now"; the finished item moves from "Queue" to "Done"), commit, push.
 
 ## Environment (Windows PC)
 

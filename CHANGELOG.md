@@ -22,6 +22,8 @@
 - Search shows results from the course you are reading first, then the others as they arrive; on a phone the
   results use the full width of the screen.
 - Kit check: a note when a practice question reuses a worked example's numbers.
+- Glossary: the letter links cover every letter (they stopped at E, the end of the first 600 terms).
+- Whole-site check (`engine/sitecheck.js`) and a warning for dated facts that have passed; two dead links fixed.
 
 ## 0.6.0 (2026-11-13)
 - Biology complete: 64 chapters (Cambridge 9700), 17 widgets, five mock papers, links page; read through by a beginner Reader.

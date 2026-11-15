@@ -29,13 +29,18 @@ function repoIssues() {
     return m ? m[0] + '/issues' : '';
   } catch (e) { return ''; }
 }
+/** Google Search Console "HTML tag" check: package.json "googleSiteVerification" holds the code Google gives
+ *  (the content="…" value); the tag then goes into the head of index.html. Empty: no tag. */
+function siteVerification() {
+  try { const v = String(require('../package.json').googleSiteVerification || '').trim(); return /^[\w-]{10,100}$/.test(v) ? `\n<meta name="google-site-verification" content="${v}">` : ''; } catch (e) { return ''; }
+}
 const res = buildSite([...coreSources, ...courses], {
   order: core.order,
   formulaSheets: core.formulaSheets,
   linkSheets: core.linkSheets,
   assets,
   issues: repoIssues(),
-  head: pwa.head(assets.css, homepage()),
+  head: pwa.head(assets.css, homepage()) + siteVerification(),
   fontFace: (chars) => mathFontFace(path.join(__dirname, 'latinmodern-math.otf'), chars)
 });
 Object.assign(res.files, pwa.pwaFiles(res.files, assets.css));

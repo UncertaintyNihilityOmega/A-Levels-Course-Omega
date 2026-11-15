@@ -30,3 +30,19 @@ const coreW = core.sections.reduce((a, s) => a + s.chapters.filter(c => fs.exist
 console.log(`core    ${`${coreW}/${coreN}`.padStart(8)}  (Organizer)`);
 console.log(`total   ${`${tw + coreW}/${tp + coreN}`.padStart(8)} chapters`);
 for (const w of warns) console.log(`! ${w}`);
+
+// Dated facts: a full date in a core page (a deadline, a test sitting, a results day) that is now in the past is a
+// fact to renew for the next cycle. "Links checked <date>" lines and dates before last year are history, not facts.
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const DATE_RE = new RegExp(`\\b(\\d{1,2})(?:[–-]\\d{1,2})? (${MONTHS.join('|')}) (20\\d\\d)\\b`, 'g');
+const today = new Date(), past = [];
+for (const f of fs.readdirSync(path.join(ROOT, 'core')).filter(x => x.endsWith('.md'))) {
+  fs.readFileSync(path.join(ROOT, 'core', f), 'utf8').split('\n').forEach((line, i) => {
+    if (/Links checked|released on|were released/.test(line)) return;
+    for (const m of line.matchAll(DATE_RE)) {
+      const d = new Date(+m[3], MONTHS.indexOf(m[2]), +m[1] + 1);
+      if (d < today && +m[3] >= year - 1) past.push(`${f}:${i + 1} ${m[0]}`);
+    }
+  });
+}
+if (past.length) console.log(`! dated facts: ${past.length} date(s) in core pages are now in the past; renew them for the next cycle (FACTS.md): ${past.slice(0, 6).join(' · ')}${past.length > 6 ? ' …' : ''}`);

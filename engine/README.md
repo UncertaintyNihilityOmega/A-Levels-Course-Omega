@@ -14,6 +14,8 @@
     elements (one file per course: 2.2 s, 162,000); the first search takes 1.8 s with 72,000 elements on the page
     (before: 16.8 s, 1.13 million). Largest chapter file 449 KB. Cost: the search files add 16 MB to the offline copy
     (69 MB in all). Measure again after a change to the loader: nothing may load every chapter.
+- `build.js` puts `<meta name="google-site-verification">` in index.html when package.json `googleSiteVerification`
+  holds the code from Google Search Console ("HTML tag" method).
 - `pages.js` (full site only) writes the findable pages: `p/<chapter>.html` (the chapter as a plain static page with
   a canonical URL and a link into the guide; quizzes and widgets become a note), `p/index.html`, `p/page.css` and
   `sitemap.xml` (URLs from package.json `homepage`). They are added after the PWA files, so the service worker does
@@ -103,6 +105,15 @@
 ## Checks
 - `test.js`: engine self-test (CI runs it first). A tiny course built in memory: maths, links, aliases, marks, quiz
   data, chunks, the report link, and the errors that must stay errors. Add a check when a page feature is added.
+- `sitecheck.js` (after a build; reads `site/`): static pages and their links, sitemap, manifest, service worker
+  list, every chapter file (links to unknown pages or sections, maths errors, repeated ids, empty quizzes, widgets
+  that are not registered), quiz data, mocks. `--links` also fetches every external link. Planned widgets are named
+  in its `WAITING` set. Run it at every assembly and after a change to `site.js`, `pages.js` or `pwa.js`.
+- Crawl in the app (preview "site", phone width): open every id of `GUIDE.order` by setting `location.hash`, wait for
+  `data-hydrated`, and collect `window` errors, widgets showing "could not start" or "being built", quizzes with
+  fewer questions than `data-qs`, and pages wider than the screen. Nov 15 2026: 381 pages, 0 errors, 319 widgets.
+- `status.js` also lists full dates in core pages that are now in the past (deadlines, test sittings): renew them.
+- `site.js` reports a link to a page that is written but not shown (an About page of a course that has chapters).
 - `lint.js` `reusedNumbers`: a note when a `:::try` question gives 3 or more numbers that are all in one `:::eg`
   question of the same chapter (not in essay courses).
 - `lint.js`: structure notes, marks totals, mock rules, `\ce{}` bond fragments that would render as a false charge.
