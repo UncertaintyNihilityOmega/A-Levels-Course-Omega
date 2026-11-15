@@ -36,8 +36,8 @@
   `shell.html` between `<!--wm-->` and `<!--/wm-->` (`app.js` copies it into the Home heading); its colours are the `.wm-*` rules in `style.css`. The build does not run it.
 - Sidebar: `core/core.json` `order` sets the order of the sections and `navBreaks` the sections with a line above them.
 - Settings "App icon": the reader's picture (a 192 px square, `zta:icon`) replaces the top-bar mark and the tab icon;
-  it is also saved as the app's icon files in the cache `zta.prefs` (`icon/<file>`), and `sw.js` answers requests for
-  those files with it, so an app installed afterwards can get it (an installed app keeps its icon).
+  the installed app keeps the published icon (serving the picture as the app's icon files was tried: Chrome on Android
+  ignores it).
 - URLs are relative (Pages serves the site under `/<repo>/`); the service worker's scope is the site folder.
 - `sw.js` caches index.html (the fonts are embedded in it), every course file (`c/…`: a course's files are the paths
   `c/<course>.` and `c/<course>/`, the same rule in `settings.js`) and the icons. Cache name `zta-<hash of every

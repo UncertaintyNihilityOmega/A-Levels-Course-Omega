@@ -71,21 +71,13 @@
   user's phone; screen readers work on PC and phone, site and app; the site is verified in Google Search Console;
   the `new-project` skill is uploaded (Customize page) and shows in the app's skill list.
 - Nov 15 2026 (user's list, checked by the user): the hand-drawn wordmark "Log end" in the top bar; a line between
-  History and Other subjects; the reader's picture offered as the installed app's icon; the name "Zero to A* Ω"; Business before Economics; lines between the fields of the
+  History and Other subjects; the name "Zero to A* Ω"; Business before Economics; lines between the fields of the
   sidebar; the Graph plotter and Periodic table load again (broken since queue item 6); Settings in boxed sections
-  with "On this page", and the reader's own picture as the icon.
+  with "On this page", and the reader's own picture as the icon inside the guide (the installed app keeps the
+  published icon: the user tried it on Android Chrome and accepts that).
 
 ## For the user
 Things only you can do. None of them stops the automatic runs.
-- **Try your own picture as the installed app's icon.** A web page cannot change the icon of an app that is already
-  installed; the guide now hands your picture to the browser when the app is installed. This could only be tested on
-  the PC preview, so say what your phone does.
-  1. On the phone, remove the installed app (hold its icon → Remove or Uninstall).
-  2. Open the site in the browser (Chrome on Android, Safari on iPhone). Reload once so it is the newest version.
-  3. Settings → App icon → "Choose a picture". The message should say "Install the app again to see it on the Home Screen".
-  4. Close the tab, open the site again, then install it (Chrome: ⋮ → Install app or Add to Home screen; Safari:
-     Share → Add to Home Screen).
-  5. Look at the Home Screen icon. Tell the Organizer which phone and browser, and whether the icon is your picture.
 - **Google sitemap: wait, then look again.** The sitemap is published and valid (382 pages). "Couldn't fetch" is what
   Search Console usually shows for the first days of a new site.
   1. In 3 to 7 days open Google Search Console → Sitemaps.

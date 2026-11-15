@@ -88,20 +88,11 @@
       if (type) l.setAttribute('type', type); else l.removeAttribute('type');
     }
   }
-  // The installed app's icon comes from the icon files the manifest and the page name. The service worker (pwa.js)
-  // answers requests for those files with the reader's picture when the cache "zta.prefs" holds one, so an app
-  // installed after the picture was chosen can get it (the browser decides; an installed app keeps its icon).
-  const APP_ICONS = { 'icon-192.png': 192, 'icon-512.png': 512, 'icon-maskable-512.png': 512, 'apple-touch-icon.png': 180, 'favicon-32.png': 32 };
-  const iconKey = (name) => new URL('icon/' + name, document.baseURI).href;
-  /** blobs: PNGs in the order of APP_ICONS, or null to remove them. Resolves true when the app's icon files are set. */
-  function saveAppIcons(blobs) {
-    if (!window.caches || !/^https?:$/.test(location.protocol)) return Promise.resolve(false);
-    const names = Object.keys(APP_ICONS);
-    return caches.open('zta.prefs').then((c) => Promise.all(names.map((n, i) => (blobs && blobs[i]
-      ? c.put(iconKey(n), new Response(blobs[i], { headers: { 'Content-Type': 'image/png', 'Cache-Control': 'no-store' } }))
-      : c.delete(iconKey(n)))))).then(() => !!(blobs && blobs.length === names.length && blobs.every(Boolean)), () => false);
-  }
-  /** a picture file -> { url: a square PNG data URL (the middle of the picture, ICON_PX wide), blobs: the app icon files } */
+  // Only the icon inside the guide changes. A web page cannot change the icon of the installed app: serving the
+  // reader's picture as the app's icon files was tried (2026-11-15) and Chrome on Android still used the original.
+  // That version kept copies in the cache "zta.prefs" (icon/<file>); they are removed here.
+  if (window.caches && /^https?:$/.test(location.protocol)) caches.open('zta.prefs').then((c) => c.keys().then((keys) => keys.forEach((k) => { if (k.url.includes('/icon/icon-') || k.url.includes('/icon/apple-touch-icon') || k.url.includes('/icon/favicon-')) c.delete(k); }))).catch(() => {});
+  /** a picture file -> a square PNG data URL (the middle of the picture, ICON_PX wide) */
   function iconFromFile(file) {
     return new Promise((resolve, reject) => {
       const img = new Image(), src = URL.createObjectURL(file);
@@ -116,16 +107,7 @@
         cx.drawImage(img, (w - side) / 2, (ht - side) / 2, side, side, 0, 0, ICON_PX, ICON_PX);
         let url = cv.toDataURL('image/png');
         if (url.length > 200000) url = cv.toDataURL('image/jpeg', 0.86);   // a photo: far smaller as JPEG
-        // the same square at the sizes of the app's icon files, for the installed app (saveAppIcons)
-        const at = (px) => new Promise((done) => {
-          const c2 = document.createElement('canvas');
-          c2.width = c2.height = px;
-          const x2 = c2.getContext('2d');
-          x2.imageSmoothingQuality = 'high';
-          x2.drawImage(img, (w - side) / 2, (ht - side) / 2, side, side, 0, 0, px, px);
-          c2.toBlob(done, 'image/png');
-        });
-        Promise.all(Object.values(APP_ICONS).map(at)).then((blobs) => resolve({ url, blobs }), () => resolve({ url, blobs: [] }));
+        resolve(url);
       };
       img.onerror = () => { URL.revokeObjectURL(src); reject(new Error('this file is not a picture the browser can open')); };
       img.src = src;
@@ -174,7 +156,7 @@
     // the reader's own icon
     const pick = h('input', { type: 'file', accept: 'image/*', class: 'sr-only', id: 'set-icon', tabindex: '-1' });
     const prev = h('span', { class: 'set-icon-prev', 'aria-hidden': 'true' });
-    const back = btn('Use the original icon', () => { store.set('icon', null); saveAppIcons(null); applyIcon(); showIcon(); toast('Original icon back'); });
+    const back = btn('Use the original icon', () => { store.set('icon', null); applyIcon(); showIcon(); toast('Original icon back'); });
     const showIcon = () => {
       const url = myIcon();
       prev.textContent = '';
@@ -184,18 +166,16 @@
     pick.addEventListener('change', () => {
       const f = pick.files && pick.files[0];
       if (!f) return;
-      iconFromFile(f).then(({ url, blobs }) => {
+      iconFromFile(f).then((url) => {
         if (!ICON_RE.test(url)) throw new Error('the browser could not convert this picture');
         store.set('icon', url);
         if (store.get('icon', null) !== url) throw new Error('this browser has no room to save it');
-        applyIcon(); showIcon();
-        return saveAppIcons(blobs).then((app) => toast(app ? 'Your picture is now the icon. Install the app again to see it on the Home Screen.' : 'Your picture is now the icon'));
+        applyIcon(); showIcon(); toast('Your picture is now the icon');
       }).catch((e) => toast('Could not use this picture: ' + e.message)).finally(() => { pick.value = ''; });
     });
     showIcon();
     s.append(sub3('App icon'),
-      h('p', { class: 'set-sub' }, 'Use your own picture as the icon in the top bar and on the browser tab. The middle of the picture is used, as a square. It is saved on this device only.'),
-      h('p', { class: 'set-sub' }, 'For the installed app (Home Screen, taskbar): an app that is already installed keeps its icon. Choose the picture first, then remove the app and install it again from this page. The browser or phone makes the icon, and some of them use only the original one.'),
+      h('p', { class: 'set-sub' }, 'Use your own picture as the icon in the top bar and on the browser tab. The middle of the picture is used, as a square. It is saved on this device only. The icon of the installed app (Home Screen, taskbar) stays the original one.'),
       h('div', { class: 'set-icon' }, prev, h('div', { class: 'set-act' }, btn('Choose a picture', () => pick.click()), back, pick)));
 
     // subject colours: every section of the sidebar
@@ -224,7 +204,7 @@
     s.append(sub3('Background and highlighter'), bg, warn);
     checkBg();
     s.append(h('div', { class: 'set-act' }, btn('Return to default', () => {
-      look = BLANK(); store.set('look', null); store.set('icon', null); saveAppIcons(null); applyIcon();
+      look = BLANK(); store.set('look', null); store.set('icon', null); applyIcon();
       if (ui.setTheme) ui.setTheme(null, true);
       if (ui.setSize) ui.setSize('m', true);
       setFont(''); setMotion('');
