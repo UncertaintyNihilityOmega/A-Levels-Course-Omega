@@ -32,6 +32,11 @@
 - `build.js` adds `manifest.webmanifest`, the icons (192, 512, maskable 512, apple-touch 180, favicon 32 + svg) and
   `sw.js`, and puts the <head> tags at `<!--HEAD-->` in `shell.html`. Colours come from `style.css` tokens.
 - `icons.js` draws the icons from the brand mark (ring turned −9°, "A*") as shapes: no image files, no tools.
+- `wordmark.py` (`py engine/wordmark.py <out.html>`) draws designs for a top-bar wordmark from the fonts in `engine/fonts`;
+  the build does not run it, and the top bar shows the name as text until the user picks a design.
+- Sidebar: `core/core.json` `order` sets the order of the sections and `navBreaks` the sections with a line above them.
+- Settings "App icon": the reader's picture (a 192 px square, `zta:icon`) replaces the top-bar mark and the tab icon;
+  the installed app's icon comes from the manifest and cannot change per reader.
 - URLs are relative (Pages serves the site under `/<repo>/`); the service worker's scope is the site folder.
 - `sw.js` caches index.html (the fonts are embedded in it), every course file (`c/…`: a course's files are the paths
   `c/<course>.` and `c/<course>/`, the same rule in `settings.js`) and the icons. Cache name `zta-<hash of every

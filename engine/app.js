@@ -422,7 +422,7 @@
     setDrawer(false);
     buildToc(art);
     const info = G.ch[cid];
-    document.title = info && cid !== 'home' ? `${info.t} · Zero to A*` : 'Zero to A*';
+    document.title = info && cid !== 'home' ? `${info.t} · Zero to A* Ω` : 'Zero to A* Ω';
     if (cid !== 'home') store.set('last', cid);
     const target = sec && document.getElementById(sec);
     if (changed) offerResume(art, cid, !!target);
@@ -941,7 +941,7 @@
   }
 
   // for settings.js
-  W.ui = { toast, setTheme, setSize, renderProgress };
+  W.ui = { toast, setTheme, setSize, renderProgress, refreshToc: () => { if (current) { buildToc(current); track(); } } };
 
   /* ---------- start ---------- */
   renderProgress();

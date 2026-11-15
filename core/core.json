@@ -1,5 +1,5 @@
 {
-  "note": "Organizer-owned sections (core/) and the order of everything in the sidebar. Course chapter lists live in courses/<c>/course.json.",
+  "note": "Organizer-owned sections (core/) and the order of everything in the sidebar. Course chapter lists live in courses/<c>/course.json. navBreaks: a line is drawn in the sidebar above each of these sections (it separates the guide, the sciences, the business subjects, the humanities and the tools).",
   "order": [
     "start",
     "road",
@@ -9,13 +9,19 @@
     "bio",
     "cs",
     "eng",
-    "econ",
     "bus",
+    "econ",
     "acc",
     "hist",
     "other",
     "tools",
     "practice"
+  ],
+  "navBreaks": [
+    "math",
+    "bus",
+    "hist",
+    "tools"
   ],
   "sections": [
     {
@@ -80,14 +86,14 @@
           "group": "About this course"
         },
         {
-          "id": "about.econ",
-          "title": "About Economics",
+          "id": "about.bus",
+          "title": "About Business",
           "level": "start",
           "group": "About this course"
         },
         {
-          "id": "about.bus",
-          "title": "About Business",
+          "id": "about.econ",
+          "title": "About Economics",
           "level": "start",
           "group": "About this course"
         },

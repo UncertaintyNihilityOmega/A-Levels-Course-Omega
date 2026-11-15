@@ -7,7 +7,7 @@
 
 :::html
 <section class="hero">
-  <h1>Zero to A<span class="star">*</span></h1>
+  <h1>Zero to A<span class="star">* Ω</span></h1>
   <p class="hero-lede">Learn A Level Mathematics, the sciences, Engineering, Business, Economics and Accounting from the very first idea, with worked examples marked the way examiners mark them. Then follow a step-by-step road all the way to exam day.</p>
   <div class="hero-cta">
     <a class="btn" href="#start.what">Start from zero</a>

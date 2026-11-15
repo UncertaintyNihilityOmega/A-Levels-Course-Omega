@@ -515,7 +515,8 @@
   /** Files a chapter needs before it can be shown: its course's base file, those owning widgets it uses, and its own. */
   ZTA.needs = function (id) {
     const c = ((window.GUIDE || {}).ch || {})[id];
-    if (!c || !c.k) return [];
-    return [c.k].concat(c.n || [], [c.k + '/' + id]).filter(k => k && !ZTA.loaded[k]);
+    if (!c) return [];
+    // a core page (no course file of its own) can still use a course's widget: the Graph plotter, the Periodic table
+    return (c.k ? [c.k] : []).concat(c.n || [], c.k ? [c.k + '/' + id] : []).filter(k => k && !ZTA.loaded[k]);
   };
 })();

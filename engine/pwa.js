@@ -21,8 +21,8 @@ function head(css, homepage) {
   const desc = 'A free A Level study guide from zero to A*: every chapter, worked example and practice question works offline.';
   // sharing tags (a link pasted into a chat or a social site shows the title, this line and the icon)
   const share = `<meta property="og:type" content="website">
-<meta property="og:site_name" content="Zero to A*">
-<meta property="og:title" content="Zero to A*: a free A Level guide">
+<meta property="og:site_name" content="Zero to A* Ω">
+<meta property="og:title" content="Zero to A* Ω: a free A Level guide">
 <meta property="og:description" content="${desc}">
 <meta name="twitter:card" content="summary">${homepage ? `
 <meta property="og:url" content="${homepage}">
@@ -36,7 +36,7 @@ ${share}
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Zero to A*">
+<meta name="apple-mobile-web-app-title" content="Zero to A* Ω">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -62,8 +62,8 @@ ${share}
 function manifest(t) {
   return JSON.stringify({
     id: './',
-    name: 'Zero to A*',
-    short_name: 'Zero to A*',
+    name: 'Zero to A* Ω',
+    short_name: 'Zero to A* Ω',
     description: 'A free A Level study guide from zero to A*, for Cambridge International syllabuses. Works offline.',
     lang: 'en-GB',
     dir: 'ltr',

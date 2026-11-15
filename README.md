@@ -1,4 +1,4 @@
-# Zero to A*
+# Zero to A* Ω
 
 A free, interactive A Level guide that takes a complete beginner to A* exam standard. Every course has
 step-by-step chapters, worked examples marked the way examiners mark, practice questions with mark schemes,
@@ -23,8 +23,8 @@ interactive widgets, paper guides and full mock papers, plus a study roadmap and
 | Biology | Cambridge International 9700 | complete |
 | Computer Science | Cambridge International 9618 | in progress |
 | Engineering | Maths and Physics routes (no single syllabus) | planned |
-| Economics | Cambridge International 9708 | planned |
 | Business | Cambridge International 9609 | planned |
+| Economics | Cambridge International 9708 | planned |
 | Accounting | Cambridge International 9706 | planned |
 | History | Cambridge International 9489 | complete |
 | Other subjects | short guides to other A Levels | planned |

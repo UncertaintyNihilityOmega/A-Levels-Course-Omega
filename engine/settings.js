@@ -1,6 +1,7 @@
 /* settings.js — the Settings page (#settings, last in the sidebar): appearance (theme, text size, reading font,
-   animations, subject colours, background, highlighter), progress (export, import, reset, keep my data), offline downloads (all, core only, per
-   course; talks to sw.js). Appearance is stored as zta:look and applied as a <style> on :root. Runs after app.js. */
+   animations, the reader's own app icon, subject colours, background, highlighter), progress (export, import, reset, keep my data), offline downloads (all, core only, per
+   course; talks to sw.js). Appearance is stored as zta:look and applied as a <style> on :root; the reader's icon is zta:icon (a small PNG as a
+   data URL). Headings have ids (settings--<name>), so "On this page" lists them like a chapter's. Runs after app.js. */
 (function () {
   'use strict';
   const G = window.GUIDE || { subjects: [], chunks: [] };
@@ -68,12 +69,56 @@
   }
   applyLook();
 
+  /* ---------- the reader's own icon: the top-bar mark and the browser-tab icon ---------- */
+  const ICON_RE = /^data:image\/(png|jpeg);base64,[A-Za-z0-9+/=]+$/;
+  const ICON_PX = 192;
+  let defMark = null;
+  const myIcon = () => { const u = store.get('icon', null); return typeof u === 'string' && u.length < 400000 && ICON_RE.test(u) ? u : null; };
+  function applyIcon() {
+    const url = myIcon(), mark = $('#brandMark');
+    if (mark) {
+      if (defMark === null) defMark = mark.innerHTML;
+      if (url) { mark.textContent = ''; mark.append(h('img', { src: url, alt: '', width: '34', height: '34' })); }
+      else mark.innerHTML = defMark;
+    }
+    for (const l of document.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"]')) {
+      if (!l.hasAttribute('data-def')) { l.setAttribute('data-def', l.getAttribute('href') || ''); l.setAttribute('data-type', l.getAttribute('type') || ''); }
+      l.setAttribute('href', url || l.getAttribute('data-def'));
+      const type = url ? (url.startsWith('data:image/jpeg') ? 'image/jpeg' : 'image/png') : l.getAttribute('data-type');
+      if (type) l.setAttribute('type', type); else l.removeAttribute('type');
+    }
+  }
+  /** a picture file -> a square PNG data URL (the middle of the picture, ICON_PX wide) */
+  function iconFromFile(file) {
+    return new Promise((resolve, reject) => {
+      const img = new Image(), src = URL.createObjectURL(file);
+      img.onload = () => {
+        URL.revokeObjectURL(src);
+        const w = img.naturalWidth, ht = img.naturalHeight, side = Math.min(w, ht);
+        if (!side) return reject(new Error('the picture is empty'));
+        const cv = document.createElement('canvas');
+        cv.width = cv.height = ICON_PX;
+        const cx = cv.getContext('2d');
+        cx.imageSmoothingQuality = 'high';
+        cx.drawImage(img, (w - side) / 2, (ht - side) / 2, side, side, 0, 0, ICON_PX, ICON_PX);
+        let url = cv.toDataURL('image/png');
+        if (url.length > 200000) url = cv.toDataURL('image/jpeg', 0.86);   // a photo: far smaller as JPEG
+        resolve(url);
+      };
+      img.onerror = () => { URL.revokeObjectURL(src); reject(new Error('this file is not a picture the browser can open')); };
+      img.src = src;
+    });
+  }
+  applyIcon();
+
   /* ---------- small builders ---------- */
+  const slug = (t) => 'settings--' + t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   const section = (title, sub) => {
-    const s = h('section', { class: 'set-sec' }, h('h2', {}, title));
+    const s = h('section', { class: 'set-sec' }, h('h2', { id: slug(title) }, title));
     if (sub) s.append(h('p', { class: 'set-sub' }, sub));
     return s;
   };
+  const sub3 = (title) => h('h3', { id: slug(title) }, title);
   const row = (label, ...ctl) => h('div', { class: 'set-row' }, h('div', { class: 'set-l' }, label), h('div', { class: 'set-c' }, ...ctl));
   const btn = (txt, fn, cls) => { const b = h('button', { type: 'button', class: 'btn btn-sm ' + (cls || 'btn-sec') }, txt); b.addEventListener('click', fn); return b; };
   let uid = 0;
@@ -101,8 +146,33 @@
     const motion = h('select', { id: 'set-motion' }, h('option', { value: '' }, 'Follow my device'), h('option', { value: 'off' }, 'Off'));
     motion.value = store.get('motion', null) === 'off' ? 'off' : '';
     motion.addEventListener('change', () => { setMotion(motion.value); toast(motion.value ? 'Animations off' : 'Animations follow your device'); });
-    s.append(row(h('label', { for: 'set-theme' }, 'Theme'), theme), row(h('label', { for: 'set-size' }, 'Text size'), size),
+    s.append(sub3('Reading'), row(h('label', { for: 'set-theme' }, 'Theme'), theme), row(h('label', { for: 'set-size' }, 'Text size'), size),
       row(h('label', { for: 'set-font' }, 'Reading font'), font), row(h('label', { for: 'set-motion' }, 'Animations'), motion));
+
+    // the reader's own icon
+    const pick = h('input', { type: 'file', accept: 'image/*', class: 'sr-only', id: 'set-icon', tabindex: '-1' });
+    const prev = h('span', { class: 'set-icon-prev', 'aria-hidden': 'true' });
+    const back = btn('Use the original icon', () => { store.set('icon', null); applyIcon(); showIcon(); toast('Original icon back'); });
+    const showIcon = () => {
+      const url = myIcon();
+      prev.textContent = '';
+      if (url) prev.append(h('img', { src: url, alt: '' })); else prev.innerHTML = defMark || '';
+      back.hidden = !url;
+    };
+    pick.addEventListener('change', () => {
+      const f = pick.files && pick.files[0];
+      if (!f) return;
+      iconFromFile(f).then((url) => {
+        if (!ICON_RE.test(url)) throw new Error('the browser could not convert this picture');
+        store.set('icon', url);
+        if (store.get('icon', null) !== url) throw new Error('this browser has no room to save it');
+        applyIcon(); showIcon(); toast('Your picture is now the icon');
+      }).catch((e) => toast('Could not use this picture: ' + e.message)).finally(() => { pick.value = ''; });
+    });
+    showIcon();
+    s.append(sub3('App icon'),
+      h('p', { class: 'set-sub' }, 'Use your own picture as the icon in the top bar and on the browser tab. The middle of the picture is used, as a square. It is saved on this device only. An app that is already installed keeps the icon it was installed with on the Home Screen or taskbar.'),
+      h('div', { class: 'set-icon' }, prev, h('div', { class: 'set-act' }, btn('Choose a picture', () => pick.click()), back, pick)));
 
     // subject colours: every section of the sidebar
     const grid = h('div', { class: 'set-grid' });
@@ -111,7 +181,7 @@
       const [lab, inp] = colorInput(sub.t, cur, (v) => { look.colors[sub.id] = v; saveLook(); });
       grid.append(h('div', { class: 'set-sw s-' + sub.id }, inp, lab));
     }
-    s.append(h('h3', {}, 'Course and section colours'), grid);
+    s.append(sub3('Course and section colours'), grid);
 
     // background: page (desk) and paper (sheet), per mode
     const bg = h('div', { class: 'set-grid' });
@@ -127,10 +197,10 @@
     }
     const [hlLab, hlInp] = colorInput('Highlighter', look.hl || def('light', '--hl'), (v) => { look.hl = v; saveLook(); });
     bg.append(h('div', { class: 'set-sw' }, hlInp, hlLab));
-    s.append(h('h3', {}, 'Background and highlighter'), bg, warn);
+    s.append(sub3('Background and highlighter'), bg, warn);
     checkBg();
     s.append(h('div', { class: 'set-act' }, btn('Return to default', () => {
-      look = BLANK(); store.set('look', null);
+      look = BLANK(); store.set('look', null); store.set('icon', null); applyIcon();
       if (ui.setTheme) ui.setTheme(null, true);
       if (ui.setSize) ui.setSize('m', true);
       setFont(''); setMotion('');
@@ -140,7 +210,7 @@
   }
 
   /* ---------- progress ---------- */
-  const LOOK_KEYS = ['look', 'theme', 'size', 'font', 'motion'];
+  const LOOK_KEYS = ['look', 'theme', 'size', 'font', 'motion', 'icon'];
   function allKeys() {
     const out = [];
     try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k && k.startsWith('zta:')) out.push(k.slice(4)); } } catch (e) { /* blocked */ }
@@ -150,6 +220,7 @@
     const s = section('Progress', 'Your progress (chapters learned, quiz answers, checklists, mock marks) is saved only on this device and in this browser. Export it to keep a backup or to move it to another device.');
     const learned = Object.keys(store.get('done', {})).length;
     s.append(h('p', {}, h('b', {}, `${learned} chapter${learned === 1 ? '' : 's'} learned`), ' on this device.'));
+    s.append(sub3('Back up and restore'));
     const file = h('input', { type: 'file', accept: '.json,application/json', class: 'sr-only', id: 'set-import', tabindex: '-1' });
     file.addEventListener('change', () => {
       const f = file.files && file.files[0];
@@ -184,7 +255,7 @@
 
     // storage the browser may clear when space runs low, unless it is persistent
     const st = h('p', { class: 'set-sub', role: 'status' });
-    s.append(h('h3', {}, 'Keep my data safe'), st);
+    s.append(sub3('Keep my data safe'), st);
     const sm = navigator.storage;
     if (sm && sm.persisted) {
       const show = () => Promise.all([sm.persisted(), sm.estimate ? sm.estimate() : Promise.resolve(null)]).then(([p, est]) => {
@@ -259,14 +330,26 @@
     const body = $('#settingsBody');
     if (!body) return;
     body.textContent = '';
-    body.append(appearance(), progress(), offline(),
-      h('p', { class: 'set-sub set-ver' }, `Version of ${G.built || 'this build'}.`));
+    const about = section('About');
+    about.append(h('p', { class: 'set-sub set-ver' }, `Zero to A* Ω, version of ${G.built || 'this build'}.`));
+    body.append(appearance(), progress(), offline(), about);
+    // "On this page" (the rail, or the round button on a phone) lists the headings like a chapter's
+    if (ui.refreshToc) ui.refreshToc();
   }
+  let shown = false;
   function onRoute() {
-    const on = location.hash === '#settings';
+    let hash = location.hash.slice(1);
+    try { hash = decodeURIComponent(hash); } catch (e) { /* keep it */ }
+    const on = hash === 'settings' || hash.startsWith('settings--');
     const link = $('.side-settings');
     if (link) { link.classList.toggle('active', on); if (on) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current'); }
-    if (on) render();
+    // drawn when the page opens, not again for a jump to one of its sections
+    if (on && !shown) {
+      render();
+      const target = hash !== 'settings' && document.getElementById(hash);
+      if (target) requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));
+    }
+    shown = on;
   }
   window.addEventListener('hashchange', onRoute);
   onRoute();

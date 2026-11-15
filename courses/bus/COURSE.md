@@ -30,8 +30,10 @@ and keep these ids where you can (aliases for any you rename or merge).
 ## Shared topics with Business, Economics and Accounting (Organizer, 2026-10-15)
 Students sit one board's exam, so every course keeps each topic its own syllabus needs, with examples and
 questions in its own exam style. The **owner** writes the deepest treatment and builds the widget; the others write
-their exam's angle in their own chapter and link to the owner for depth (ids in kit/LINKS.md). Build order:
-Economics, then Business, then Accounting, so a widget exists before the later courses embed it.
+their exam's angle in their own chapter and link to the owner for depth (ids in kit/LINKS.md). Build order
+(user, 2026-11-15): Business, then Economics, then Accounting. Until its owner course is written, an embedded widget
+shows a placeholder and a link to the owner shows as plain text: write them as planned (the ids are in kit/LINKS.md);
+the owner course's REVIEW FINAL checks that they work.
 
 | Topic | Owner (full chapter, widget) | Others |
 |---|---|---|

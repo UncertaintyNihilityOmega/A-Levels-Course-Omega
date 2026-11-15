@@ -1,5 +1,14 @@
 # Changelog
 
+Versions: the guide is a snapshot (0.x, notes in this file only) until every course is built. GitHub Releases start
+at v1 and go up in whole numbers (v1, v2, …).
+
+Planned snapshots:
+- 0.7.0: Computer Science and Engineering complete.
+- 0.8.0: Business, Economics, Accounting and Other subjects complete.
+- 0.9.0 (optional): "Sciences and technology" and "English and languages" (now parts of Other subjects) as full
+  courses of their own.
+
 ## Unreleased
 - New logo: the end of a log, "AΩ" in dark green Caudex on a white face with tree rings (app icons, favicon, top bar).
 - Settings page (last in the sidebar): theme, text size, course colours, background and highlighter colours, return
@@ -24,6 +33,14 @@
 - Kit check: a note when a practice question reuses a worked example's numbers.
 - Glossary: the letter links cover every letter (they stopped at E, the end of the first 600 terms).
 - Whole-site check (`engine/sitecheck.js`) and a warning for dated facts that have passed; two dead links fixed.
+- The guide is now called "Zero to A* Ω" (page titles, the installed app, shared links; file names and the progress
+  backup keep the plain name `zero-to-a-star`).
+- Sidebar: Business comes before Economics; lines separate the guide, the sciences, the business subjects, the
+  humanities and the tools.
+- Fixed: the Graph plotter and the Periodic table showed "being built" since chapters became separate files (a
+  Toolbox page did not load the course file that holds its tool).
+- Settings: your own picture as the icon in the top bar and on the browser tab; sections in boxes; "On this page"
+  (the list at the side, or the round button on a phone) lists the sections.
 
 ## 0.6.0 (2026-11-13)
 - Biology complete: 64 chapters (Cambridge 9700), 17 widgets, five mock papers, links page; read through by a beginner Reader.

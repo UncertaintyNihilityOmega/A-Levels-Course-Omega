@@ -6,6 +6,10 @@
 - Queue item 5, Computer Science (`cs`, 9618, 49 chapters in 22 packages): P1–P13 written (28 chapters, 12 widgets),
   P1–P12 reviewed, no open items. Next: WRITE P14 and P15 (two Writers), then REVIEW P13–P16 when four are written.
 - Usage gate: weekly limit 95% for every launch (AGENT-RUN.md "Usage gate").
+- Name: "Zero to A* Ω" (titles, installed app, shared links). The top bar shows it as text. Wordmark: six designs
+  drawn from the site's fonts were shown (`py engine/wordmark.py`, picture `.run/wordmark-options.png`); the user
+  wants the film-style "Alice in Wonderland" lettering (spiky, uneven small capitals), so the next step waits for
+  the user's answer under "For the user".
 - Site check, Nov 15 (every page opened in the app at phone width, every built file and every external link
   checked): no script errors, no broken internal links. Left as they are:
   - widgets `breakeven` and `npv` on `tools.calc` show "being built" until Business and Accounting write them;
@@ -24,6 +28,10 @@
 - A run stopped by a usage limit leaves a stale lock; the next scheduled session checkpoints and continues.
 - From 2027 `status.js` warns about syllabuses in their last exam year (math, phys, chem and bio end in 2027): plan
   update passes for the new syllabuses then.
+- User tasks ("For the user") are written as numbered steps: where to go, what to click or type, what should appear.
+- Versions: 0.x snapshots are notes in CHANGELOG.md only (0.7.0 = Computer Science and Engineering; 0.8.0 = Business,
+  Economics, Accounting and Other subjects; 0.9.0, optional = "Sciences and technology" and "English and languages"
+  as full courses). GitHub Releases start at v1 and go up in whole numbers.
 
 ## Queue
 5. **Computer Science** (`cs`, 9618): packages → reviews → READER → FIX → REVIEW FINAL → assembly.
@@ -31,7 +39,8 @@
    (`courses/math/FURTHER.md`) → packages P19+ → reviews → READER for the new chapters → FIX → REVIEW FINAL.
    Before its LEAD, set math STATUS.md `FINAL` back to `open` and rewrite courses/math/COURSE.md as rules (30 KB).
 11. **Engineering** (`eng`).
-12. **Economics** (`econ`), then **Business** (`bus`), then **Accounting** (`acc`): shared-topic owners in their COURSE.md.
+12. **Business** (`bus`), then **Economics** (`econ`), then **Accounting** (`acc`): shared-topic owners in their COURSE.md
+   (Business pages that use an Economics widget or link show a placeholder or plain text until Economics is written).
 13. **Other subjects** (`other`), including the Psychology summary (`other.psychology`).
 14. Final assembly: whole-site check, link check of every `:::links` URL, phone pass.
 15. **Dated facts for 2028 entry** (Organizer, core pages): when UCAS and the test providers publish the 2028-entry
@@ -60,17 +69,39 @@
   (Nov 15 2026). Left out on purpose: a smaller search index (the search files are the chapters' plain text; only
   giving up full-text search would shrink them) and the maths font in `p/page.css` (do it if a device shows the
   plain pages wrongly).
+- User checks, Nov 15 2026: phone reading (round button, progress line, "Pick up where you left off") works on the
+  user's phone; screen readers work on PC and phone, site and app; the site is verified in Google Search Console;
+  the `new-project` skill is uploaded (Customize page) and shows in the app's skill list.
+- Nov 15 2026 (user's list): the name "Zero to A* Ω"; Business before Economics; lines between the fields of the
+  sidebar; the Graph plotter and Periodic table load again (broken since queue item 6); Settings in boxed sections
+  with "On this page", and the reader's own picture as the icon.
 
 ## For the user
 Things only you can do. None of them stops the automatic runs.
-- **Look at phone reading on your phone.** The design is frozen, and this was applied to every chapter without the
-  one-chapter preview the queue asked for. Open any chapter, try the round button at the bottom right, the line
-  under the top bar, and "Pick up where you left off" on Home. Say if anything should change.
-- **Tell Google about the pages** (optional). Google Search Console → add the site as a "URL prefix" property →
-  verify with the "HTML tag" method (the code goes in package.json `googleSiteVerification`; give it to the
-  Organizer or paste it there, then push) → Sitemaps → `sitemap.xml`.
-- **GitHub Release page for v0.6.0** (optional; the tag is pushed). github.com → the repository → Releases → Draft a
-  new release → tag v0.6.0 → notes from CHANGELOG.md 0.6.0.
-- **Upload the `new-project` skill.** `.run/new-project.zip` → claude.ai → Settings → Capabilities → Skills.
-- **Screen-reader check** (not testable here). VoiceOver on iPhone and Mac (rotor headings, a chapter, search, a
-  quiz, a widget with a canvas), and NVDA or Narrator on Windows if available.
+- **Choose the wordmark for the top bar.**
+  1. Open `.run/wordmark-options.png` (six designs made from the site's own fonts).
+  2. The font in your sample picture is not one the project has. Say one of:
+     - "download the lookalike fonts": the Organizer downloads open-licence fonts in that style and shows new options;
+     - "use the font from my picture": then send the font file and the page that states its licence (many such fonts
+       are free for personal use only, which does not fit a public project that others may reuse and sell);
+     - a number from 1 to 6.
+  3. The Organizer puts the chosen design in the top bar and shows it to you before it is published.
+- **Google sitemap: wait, then look again.** The sitemap is published and valid (382 pages). "Couldn't fetch" is what
+  Search Console usually shows for the first days of a new site.
+  1. In 3 to 7 days open Google Search Console → Sitemaps.
+  2. The status should read "Success" with about 382 discovered pages ("videos 0" is correct: the site has none).
+  3. If it still says "Couldn't fetch": remove the sitemap (⋮ → Remove sitemap), then add it again as the full address
+     `https://uncertaintynihilityomega.github.io/A-Levels-Course-Omega/sitemap.xml`. If that fails too, tell the Organizer.
+- **Default colours of the courses and sidebar sections.**
+  1. Try colours first: open the guide → Settings → "Course and section colours". A colour changes at once, on your
+     device only. Look at a chapter, the sidebar and a figure, in paper and in chalkboard mode.
+  2. To make a colour the default for everyone, open `engine/style.css`. Lines 36–50 (inside the first `:root {`) hold
+     the paper-mode colours: `--c-math: #3442B4;` is the main colour of Mathematics, `--c2-math` its second colour in
+     figures. The ids: start, road, math, phys, chem, bio, eng, bus, econ, acc, other, cs, hist, tools, practice.
+  3. The chalkboard colours are the same names, written twice (lines 61–68 and 77–84): change both copies the same way.
+  4. Save, run `node engine/build.js`, open `site/index.html` and look.
+  5. Tell the Organizer "check the colours". It measures every colour against the page in both modes (text needs a
+     contrast of 4.5 to 1), and for any that fail it proposes the nearest colour that passes and tells you which.
+  6. Only then are the colours committed and published.
+- **Look at this session's changes** (optional): the lines in the sidebar, Business above Economics, and Settings (the
+  sections, "On this page", and "App icon" with a picture of yours). Say if anything should change.

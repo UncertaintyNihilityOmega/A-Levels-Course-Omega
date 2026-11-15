@@ -35,7 +35,7 @@ const clip = (s, n) => { s = String(s || '').replace(/\s+/g, ' ').trim(); return
  */
 function staticPages(res, opts) {
   const home = opts.homepage ? opts.homepage.replace(/\/*$/, '/') : '';
-  const name = opts.name || 'Zero to A*';
+  const name = opts.name || 'Zero to A* Ω';
   const R = res.R;
   const subj = (id) => res.subjects.find(s => s.id === id) || { title: '' };
   const files = { 'p/page.css': opts.css + EXTRA };
@@ -61,7 +61,7 @@ ${home ? `<link rel="canonical" href="${attr(home + file)}">\n<meta property="og
 ${ld ? `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>` : ''}
 </head>
 <body class="static">
-<header class="p-bar"><a class="p-brand" href="../index.html">Zero to A<span>*</span></a><a href="index.html">All chapters</a><a class="btn btn-sm p-open" href="../index.html#${attr(app)}">Open in the interactive guide</a></header>
+<header class="p-bar"><a class="p-brand" href="../index.html">Zero to A<span>* Ω</span></a><a href="index.html">All chapters</a><a class="btn btn-sm p-open" href="../index.html#${attr(app)}">Open in the interactive guide</a></header>
 <main class="p-main">${body}</main>
 </body>
 </html>

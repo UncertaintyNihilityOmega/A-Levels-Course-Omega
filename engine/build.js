@@ -36,6 +36,7 @@ function siteVerification() {
 }
 const res = buildSite([...coreSources, ...courses], {
   order: core.order,
+  navBreaks: core.navBreaks,
   formulaSheets: core.formulaSheets,
   linkSheets: core.linkSheets,
   assets,

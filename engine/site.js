@@ -35,6 +35,7 @@ const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(
  * sources: [{ id, kind: 'core'|'course', title, short, code, desc, chapters: [{id,title,level,group}], aliases: {old: new},
  *             files: [{ name, text }], widgets: '<js source>' | '' }]
  * opts:    { order: [source ids], external: Map(id -> {t, s}) of ids that live elsewhere, formulaSheets: {sheetId: [course ids]},
+ *            navBreaks: [section ids with a separator line above them in the sidebar],
  *            assets: {shell, css, core, app, study}, inlineAll: bool, home: '<article html>' | null,
  *            fontFace: (chars: string) => '@font-face css', head: '<head> tags (build.js: pwa.js)', write: bool }
  * returns: { errors, warnings, files: { relPath: string }, chapters, stats }
@@ -273,10 +274,15 @@ function buildSite(sources, opts) {
     if (k) pages[c.id] = art; else articles[''] = (articles[''] || '') + art;
   });
 
-  let nav = '';
+  // a line above the sections named in opts.navBreaks (core.json): it separates the fields of the sidebar
+  const navBreaks = new Set(opts.navBreaks || []);
+  let nav = '', sep = false, shownNav = 0;
   for (const s of subjects) {
+    if (navBreaks.has(s.id)) sep = true;
     if (!s.groups.length) continue;
-    nav += `<section class="nav-subj s-${s.id}" data-subject="${s.id}"><button class="nav-s" type="button" aria-expanded="false" data-toggle="${s.id}"><span class="dot" aria-hidden="true"></span><span class="nav-st">${escapeHtml(s.title)}</span><span class="nav-pc" data-pc="${s.id}"></span><svg class="chev" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M4 2l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button><div class="nav-groups" data-groups="${s.id}">`;
+    const sepCls = sep && shownNav ? ' nav-sep' : '';
+    sep = false; shownNav++;
+    nav += `<section class="nav-subj s-${s.id}${sepCls}" data-subject="${s.id}"><button class="nav-s" type="button" aria-expanded="false" data-toggle="${s.id}"><span class="dot" aria-hidden="true"></span><span class="nav-st">${escapeHtml(s.title)}</span><span class="nav-pc" data-pc="${s.id}"></span><svg class="chev" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M4 2l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button><div class="nav-groups" data-groups="${s.id}">`;
     for (const g of s.groups) {
       nav += `<div class="nav-g">${s.groups.length > 1 ? `<div class="nav-gt">${escapeHtml(g.title)}</div>` : ''}<ul>`;
       for (const c of g.chapters) {
