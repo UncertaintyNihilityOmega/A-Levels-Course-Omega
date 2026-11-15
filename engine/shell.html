@@ -39,6 +39,7 @@
         <svg class="ic-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
       </button>
     </div>
+    <div class="bar-prog" id="readProg" aria-hidden="true" hidden><i></i></div>
   </header>
   <div class="layout">
     <nav class="sidebar" id="sidebar" aria-label="Course contents">
@@ -62,6 +63,17 @@
         <div class="rail-prog" id="railProg"></div>
       </div>
     </aside>
+  </div>
+  <button class="toc-btn" id="tocBtn" type="button" aria-label="On this page: the sections of this chapter" aria-haspopup="dialog" aria-expanded="false" aria-controls="tocSheet" hidden>
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="4.5" cy="6" r="1.4" fill="currentColor"/><circle cx="4.5" cy="12" r="1.4" fill="currentColor"/><circle cx="4.5" cy="18" r="1.4" fill="currentColor"/></svg>
+  </button>
+  <div class="toc-scrim" id="tocScrim" aria-hidden="true" hidden></div>
+  <div class="toc-sheet" id="tocSheet" role="dialog" aria-modal="true" aria-labelledby="tocSheetH" hidden>
+    <div class="toc-sheet-h">
+      <span class="toc-sheet-t" id="tocSheetH">On this page</span><span class="toc-sheet-n" id="tocSheetN"></span>
+      <button class="icon-btn" id="tocClose" type="button" aria-label="Close the list of sections"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button>
+    </div>
+    <ol class="rail-toc" id="sheetToc"></ol>
   </div>
   <div class="toast" id="toast" aria-hidden="true" hidden></div>
   <div class="sr-only" id="announce" role="status"></div>

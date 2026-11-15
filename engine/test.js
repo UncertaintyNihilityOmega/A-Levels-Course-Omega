@@ -118,6 +118,14 @@ const q = Object.values(JSON.parse((chunk.match(/"quiz":(\{.*\}),"gloss"/) || [0
 ok(q.a === 1 && q.o && q.o.length === 3 && q.c === 'tst.one', 'quiz answer index and chapter are right');
 const L = lintChapter(one, ONE, { course: 'tst', hasCheck: true });
 ok(L.errors.length === 0, 'good chapter lints clean: ' + L.errors.join(' | '));
+ok(/"tst\.one":\{[^}]*"q":1/.test(index) && !/"tst\.two":\{[^}]*"q":/.test(index), 'navigation data counts each chapter\'s quiz questions (spaced re-testing)');
+ok(/id="tocBtn"/.test(index) && /id="sheetToc"/.test(index) && /id="readProg"/.test(index), 'the shell has the "On this page" button, sheet and reading progress line');
+// a try question that reuses a worked example's numbers is a checklist note
+const REUSE = ONE.replace(':::eg [2 marks] Find the speed', ':::eg [2 marks] A car of mass 1200 kg travels 450 m in 36 s. Find the speed')
+  .replace('Q: What is \\(1 + 1\\)?', 'Q: A car of mass 1200 kg travels 450 m in 36 s. Find its speed.');
+const reuseNotes = (text) => lintChapter(build([{ name: 'tst.one.md', text }, { name: 'tst.two.md', text: TWO }]).written.get('tst.one'), text, { course: 'tst', hasCheck: true }).notes.filter(x => /reuses the numbers/.test(x));
+ok(reuseNotes(REUSE).length === 1 && /1200, 450, 36/.test(reuseNotes(REUSE)[0]), 'a try question with a worked example\'s numbers gets a note');
+ok(reuseNotes(REUSE.replace('travels 450 m in 36 s. Find its', 'travels 520 m in 36 s. Find its')).length === 0 && reuseNotes(ONE).length === 0, 'changed numbers get no note');
 
 // ---------- things that must be errors ----------
 const errs = (text, name) => { const r = build([{ name: name || 'tst.one.md', text }, { name: 'tst.two.md', text: TWO }]); const c = r.written.get('tst.one'); return r.errors.concat(c ? lintChapter(c, text, { course: 'tst', hasCheck: true }).errors : []).join(' | '); };

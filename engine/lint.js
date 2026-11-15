@@ -37,6 +37,34 @@ function without(text, type) {
   return out.join('\n');
 }
 
+/** The numbers a question gives (as text: "9.81", "120"). Left out: marks, link targets, single digits (part labels,
+ *  powers, small counts) and what follows them in a number, so only the data of the question is compared. */
+function givenNumbers(s) {
+  s = s.replace(/\[[^\]]*\bmarks?\]/gi, ' ').replace(/\[(?:M|A|B|C|E)\d\]/g, ' ').replace(/\]\(#[^)]*\)/g, ' ').replace(/\(#[^)]*\)/g, ' ')
+    .replace(/(?:\\times|×)\s*10(?!\d)/g, ' ').replace(/[\^_]\{?-?\d+\}?/g, ' ');   // not the 10 of standard form, nor powers and subscripts
+  return new Set((s.match(/\d+(?:[.,]\d+)*/g) || []).map(n => n.replace(/,/g, '')).filter(n => n.replace('.', '').length > 1));
+}
+/** try questions whose numbers repeat those of one worked example: at least 3 different numbers, every one of them
+ *  given in the example's question. Returns [{ q, eg, nums }]. */
+function reusedNumbers(text) {
+  const egs = [...text.matchAll(/^:::eg ([^\n]*)\n([\s\S]*?)\n:::\s*$/gm)].map(b => {
+    // the question is the ":::eg" line; a short one goes on in the first paragraph of the body
+    const first = givenNumbers(b[1]);
+    return { title: b[1], nums: first.size >= 3 ? first : givenNumbers(b[1] + ' ' + b[2].split(/\n\s*\n/)[0]) };
+  }).filter(e => e.nums.size >= 3);
+  const out = [];
+  if (!egs.length) return out;
+  for (const b of blocks(text, 'try')) for (const it of b.split(/\n(?=Q:)/)) {
+    if (!/^Q:/.test(it)) continue;
+    const q = it.split(/\n(?:H|A):/)[0];
+    const nums = [...givenNumbers(q)];
+    if (nums.length < 3) continue;
+    const eg = egs.find(e => nums.every(n => e.nums.has(n)));
+    if (eg) out.push({ q: q.slice(2, 70).replace(/\s+/g, ' ').trim(), eg: eg.title.slice(0, 50).trim(), nums });
+  }
+  return out;
+}
+
 /** ch = rendered chapter from lib.renderFile; text = the raw file; ctx = { course, hasCheck } */
 function lintChapter(ch, text, ctx = {}) {
   const errors = [], notes = [];
@@ -79,6 +107,9 @@ function lintChapter(ch, text, ctx = {}) {
     .filter(s => /[\])]n-$/.test(s) || (/^-/.test(s) && /-$/.test(s) && /[A-Za-z0-9)]-[A-Za-z([]/.test(s)));
   if (falseCharge.length) notes.push(`${falseCharge.length} \\ce{} bond fragment(s) ending in "-" show a false negative charge (put the end bond outside \\ce): ${falseCharge.slice(0, 3).join(', ')}`);
 
+  // a :::try question that reuses the numbers of a worked example in the same chapter tests copying, not the method
+  if (!ESSAY.has(course)) for (const r of reusedNumbers(text).slice(0, 4)) notes.push(`a :::try question reuses the numbers of a worked example (${r.nums.join(', ')}): change its numbers → "${r.q}" (example: "${r.eg}")`);
+
   if (!m.summary) notes.push('add an @summary line');
   if (!m.level) notes.push('add an @level line');
   if (topic) {
@@ -110,4 +141,4 @@ function lintChapter(ch, text, ctx = {}) {
   return { errors, notes };
 }
 
-module.exports = { lintChapter, blocks, without };
+module.exports = { lintChapter, blocks, without, reusedNumbers, givenNumbers };

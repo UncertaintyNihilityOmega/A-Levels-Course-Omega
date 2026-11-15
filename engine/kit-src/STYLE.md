@@ -251,7 +251,8 @@ Writers cannot see their figures, so check these with coordinates (Python) befor
   backslashes (`\tfrac` becomes a tab + "frac") and break the maths silently. Row breaks in `aligned` are `\\`.
 - Cambridge conventions: maths answers to 3 significant figures unless exact; angles to 1 d.p. The data
   values (g, physical constants, molar volume) for this course are in COURSE.md.
-- Practice questions never reuse a worked example's data or wording: new numbers, new compound, new context.
+- Practice questions never reuse a worked example's data or wording: new numbers, new compound, new context. `check` notes a
+  `:::try` question whose numbers (3 or more) are all given in one `:::eg` of the chapter.
 - Exam-style questions give data the way the real paper does (FACTS.md: what each paper prints and allows). Never
   tell students to look a value up in a booklet the paper does not supply.
 - AS chapters use only AS terms. A Level parts are labelled "(A Level)" and come last.

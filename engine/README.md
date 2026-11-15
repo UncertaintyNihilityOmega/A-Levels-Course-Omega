@@ -75,6 +75,17 @@
   each question's maximum). Practice by paper with interleaving (`DATA.papers`).
 - `practice.next` ("What to revise next", `app.js` `renderNext`) ranks chapters from marked mocks (`DATA.mocks`),
   the last 10 quiz answers per chapter (localStorage `quizlog`) and unticked checklist lines.
+- Spaced re-testing (`app.js` `renderRetests`, on `practice.next` and a line on Home): a chapter marked as learned
+  (`done[id]` = the time) offers up to 6 of its quiz questions again 1, 3, 7 and 21 days later. localStorage `retest`
+  = re-tests behind the reader per chapter; `DATA.ch[id].q` = its number of quiz questions. Unmarking resets it.
+- Phone reading (`app.js` `buildToc`, `track`, `setSheet`; shown below 1200 px, where the rail is hidden): the round
+  "On this page" button opens a bottom sheet with the contents list; a 3 px reading progress line sits under the top
+  bar. `track` (on scroll) marks the current section in the rail and the sheet and saves it in localStorage `secs`
+  (chapter → [section id, title]): Home's "Pick up where you left off" opens that section, and a chapter opened at
+  its top shows "Last time you were at …".
+- Search: on focus the search file of the course being read is fetched first, then the others; results are re-drawn
+  as each arrives (`zta:search`), with a "Searching the other courses…" line until all are in. At phone width the
+  results use the full screen width.
 - Home: `app.js` `renderHome` lists courses from `DATA.subjects`. A course with no written chapter shows its core page
   `about.<id>` as its only sidebar entry ("About this course"; `ab`, `@foot none`); it drops out once a chapter exists.
 - Long inline maths is split into one `<math>` per relation joined by `<wbr>`, so chains wrap on phones.
@@ -92,6 +103,8 @@
 ## Checks
 - `test.js`: engine self-test (CI runs it first). A tiny course built in memory: maths, links, aliases, marks, quiz
   data, chunks, the report link, and the errors that must stay errors. Add a check when a page feature is added.
+- `lint.js` `reusedNumbers`: a note when a `:::try` question gives 3 or more numbers that are all in one `:::eg`
+  question of the same chapter (not in essay courses).
 - `lint.js`: structure notes, marks totals, mock rules, `\ce{}` bond fragments that would render as a false charge.
 - `check.js --py` runs every `checks/<id>.py` (standard library only).
 - Kit (`kit-src/zta.js`, bundled by `sync.js` with esbuild): `phone` (headless 375 px), `widget <name> --probe`

@@ -69,10 +69,10 @@
 7. [x] **Findable pages** (Organizer, engine; user, Nov 14): the build also writes a small static page per chapter
    (title, summary, headings, link into the app) and `sitemap.xml`; description and sharing tags in `shell.html`.
    The offline `file://` site stays one `index.html`.
-8. [ ] **Phone reading** (Organizer, engine; user, Nov 14): an "On this page" contents sheet at phone width, resume
+8. [x] **Phone reading** (Organizer, engine; user, Nov 14): an "On this page" contents sheet at phone width, resume
    at the last section of a chapter (not only the last chapter), and a thin section progress bar. No content is cut.
    The design is frozen: show the user one chapter before applying it to all.
-9. [ ] **Study aids and checks** (Organizer, engine; user, Nov 14; from the app review):
+9. [x] **Study aids and checks** (Organizer, engine; user, Nov 14; from the app review):
    - spaced re-testing: "What to revise next" offers a chapter's quiz questions again 1, 3, 7 and 21 days after it is
      marked as learned (dates in localStorage; no flashcards);
    - search results appear course by course as the search files arrive, the current course first; consider a

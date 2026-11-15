@@ -287,6 +287,8 @@ function buildSite(sources, opts) {
   st.QUIZ.forEach((q, i) => { const k = chunkOfCh(q.c); (quiz[k] = quiz[k] || {})[i] = q; });
   for (const g of st.GLOSSARY) { const k = chunkOfCh(g.c); (gloss[k] = gloss[k] || []).push(g); }
 
+  const quizN = {};
+  for (const q of st.QUIZ) quizN[q.c] = (quizN[q.c] || 0) + 1;
   const DATA = {
     order: ordered.map(c => c.id),
     ch: Object.fromEntries(ordered.map(c => {
@@ -294,6 +296,7 @@ function buildSite(sources, opts) {
       if (c.chunk) o.k = c.chunk;
       if (c.need.length) o.n = c.need;
       if (c.meta.foot !== 'none') o.f = 1;
+      if (quizN[c.id]) o.q = quizN[c.id];   // quiz questions (spaced re-testing offers them again)
       return [c.id, o];
     })),
     subjects: subjects.map(s => ({ id: s.id, c: s.kind === 'course' ? 1 : 0, t: s.title, short: s.short, code: s.code, y: s.years, desc: s.desc, n: realCount(s), p: s.planned, first: s.about ? null : s.groups[0] ? s.groups[0].chapters[0].id : null, ab: s.about || null })),

@@ -14,7 +14,14 @@
 - Findable pages: every chapter is also a plain web page (`p/<chapter>.html`) that search engines can read, with a
   sitemap; links shared in a chat show the title, a description and the icon.
 - "Found a mistake on this page? Report it on GitHub" under every chapter (the page and build date are filled in).
-- Engine self-test (35 checks) runs before every build on GitHub.
+- Engine self-test (39 checks) runs before every build on GitHub.
+- Phone reading: an "On this page" button opens the chapter's sections in a sheet; a thin line under the top bar
+  shows how far through the chapter you are; the guide remembers your section, so Home and the chapter take you back.
+- Re-tests: a chapter you mark as learned brings its quiz questions back 1, 3, 7 and 21 days later on
+  "What to revise next" (and a reminder on Home).
+- Search shows results from the course you are reading first, then the others as they arrive; on a phone the
+  results use the full width of the screen.
+- Kit check: a note when a practice question reuses a worked example's numbers.
 
 ## 0.6.0 (2026-11-13)
 - Biology complete: 64 chapters (Cambridge 9700), 17 widgets, five mock papers, links page; read through by a beginner Reader.

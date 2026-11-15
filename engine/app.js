@@ -77,6 +77,18 @@
   let done = store.get('done', {});
   const trackable = new Set(G.order.filter(id => G.ch[id].f));
   function saveDone() { store.set('done', done); }
+  /* spaced re-testing: a learned chapter's quiz questions come back 1, 3, 7 and 21 days after it was marked as learned.
+     retest[chapter] = how many of those re-tests are behind the reader (done, or skipped because a later one was due) */
+  const RT_DAYS = [1, 3, 7, 21], DAY = 864e5;
+  const retest = store.get('retest', {});
+  function retestOf(c, now) {
+    const t0 = done[c], info = G.ch[c];
+    if (!info || !info.q || typeof t0 !== 'number' || t0 < 1e12) return null;
+    const n = retest[c] || 0;
+    if (n >= RT_DAYS.length) return null;
+    return { c, n, due: t0 + RT_DAYS[n] * DAY, isDue: now >= t0 + RT_DAYS[n] * DAY };
+  }
+  const retestsDue = (now) => Object.keys(done).map(c => retestOf(c, now)).filter(r => r && r.isDue).sort((a, b) => a.due - b.due);
   function subjectStats(sid) {
     let n = 0, d = 0;
     for (const id of G.order) { if (G.ch[id].s === sid && trackable.has(id)) { n++; if (done[id]) d++; } }
@@ -110,6 +122,8 @@
     if (!b) return;
     const id = b.getAttribute('data-done');
     if (done[id]) delete done[id]; else { done[id] = Date.now(); toast('Marked as learned'); }
+    // the re-test dates count from the day a chapter is marked as learned: marking it again starts them again
+    if (retest[id] != null) { delete retest[id]; store.set('retest', retest); }
     saveDone(); renderProgress();
   });
 
@@ -411,8 +425,10 @@
     document.title = info && cid !== 'home' ? `${info.t} · Zero to A*` : 'Zero to A*';
     if (cid !== 'home') store.set('last', cid);
     const target = sec && document.getElementById(sec);
-    if (target) { requestAnimationFrame(() => target.scrollIntoView({ block: 'start' })); }
+    if (changed) offerResume(art, cid, !!target);
+    if (target) { requestAnimationFrame(() => { target.scrollIntoView({ block: 'start' }); trackSoon(); }); }
     else if (changed) window.scrollTo(0, 0);
+    track();
     if (cid === 'home') renderHome();
     if (cid === 'practice.next') renderNext(art);
     markScrollers(art);
@@ -437,32 +453,94 @@
     else toast(e.message + '. Keep the c folder next to index.html.');
   }
 
+  /* The contents list is drawn twice: in the rail (wide screens) and in the "On this page" sheet (where the rail is
+     hidden). track() follows the scroll position: it marks the current section in both lists, moves the reading
+     progress line under the top bar, and remembers the section so the reader can resume there. */
+  const sheetToc = $('#sheetToc'), tocBtn = $('#tocBtn'), tocSheet = $('#tocSheet'), tocScrim = $('#tocScrim'), readProg = $('#readProg');
+  let heads = [], curSec = null, trackT = 0;
+  const secs = store.get('secs', {});   // chapter -> [section id, section title] where the reader last was
   function buildToc(art) {
-    rail.innerHTML = '';
-    const hs = $$('.prose h2, .prose h3', art);
-    if (spy) spy.disconnect();
-    if (!hs.length) { $('#rail').style.visibility = 'hidden'; return; }
-    $('#rail').style.visibility = 'visible';
-    for (const h of hs) {
-      const li = W.h('li', { class: h.tagName === 'H3' ? 'h3' : 'h2' }, W.h('a', { href: '#' + h.id, 'data-for': h.id }, h.textContent));
-      rail.append(li);
-    }
+    rail.innerHTML = ''; sheetToc.innerHTML = '';
+    if (spy) { spy.disconnect(); spy = null; }
+    setSheet(false);
+    heads = $$('.prose h2, .prose h3', art).filter(h => h.id);
+    curSec = null;
     const id = art.getAttribute('data-id');
+    const none = !heads.length || id === 'home';
+    tocBtn.hidden = none; readProg.hidden = none;
+    if (!heads.length) { $('#rail').style.visibility = 'hidden'; return; }
+    $('#rail').style.visibility = 'visible';
+    for (const h of heads) {
+      for (const list of [rail, sheetToc]) list.append(W.h('li', { class: h.tagName === 'H3' ? 'h3' : 'h2' }, W.h('a', { href: '#' + h.id, 'data-for': h.id }, h.textContent)));
+    }
     const info = G.ch[id];
     $('#railProg').textContent = info && info.w ? `About ${Math.max(1, Math.round(info.w / 200))} min read` : '';
-    try {
-      spy = new IntersectionObserver((entries) => {
-        for (const e of entries) {
-          if (e.isIntersecting) {
-            for (const a of $$('.rail-toc a.on')) a.classList.remove('on');
-            const a = $(`.rail-toc a[data-for="${CSS.escape(e.target.id)}"]`);
-            if (a) a.classList.add('on');
-          }
-        }
-      }, { rootMargin: '-70px 0px -70% 0px' });
-      hs.forEach(h => spy.observe(h));
-    } catch (e) { /* no observer */ }
   }
+  function track() {
+    trackT = 0;
+    if (!current || !heads.length) return;
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    const p = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+    readProg.firstElementChild.style.transform = `scaleX(${p.toFixed(4)})`;
+    // the current section: the last heading that has passed the line just under the top bar (headings inside a
+    // closed proof have no box and are skipped)
+    const line = $('.bar').offsetHeight + 28;
+    let cur = null;
+    for (const h of heads) { if (h.offsetParent !== null && h.getBoundingClientRect().top <= line) cur = h; }
+    if (cur === curSec) return;
+    curSec = cur;
+    for (const a of $$('.rail-toc a.on')) { a.classList.remove('on'); a.removeAttribute('aria-current'); }
+    const h2s = heads.filter(h => h.tagName === 'H2');
+    let k = 0;
+    if (cur) {
+      for (const a of $$(`.rail-toc a[data-for="${CSS.escape(cur.id)}"]`)) { a.classList.add('on'); a.setAttribute('aria-current', 'location'); }
+      const own = cur.tagName === 'H2' ? cur : heads.slice(0, heads.indexOf(cur)).reverse().find(h => h.tagName === 'H2');
+      k = own ? h2s.indexOf(own) + 1 : 0;
+      // remember where the reader is (not on the first load of a page: only once they have scrolled to a section)
+      const cid = current.getAttribute('data-id');
+      if (G.ch[cid] && cid !== 'home') {
+        secs[cid] = [cur.id, cur.textContent.trim().slice(0, 90)];
+        clearTimeout(track.saveT); track.saveT = setTimeout(() => store.set('secs', secs), 400);
+        const note = $('.ch-resume', current);
+        if (note && note.getAttribute('data-sec') === cur.id) note.remove();
+      }
+    }
+    $('#tocSheetN').textContent = h2s.length ? (k ? `Section ${k} of ${h2s.length}` : `${h2s.length} sections`) : '';
+  }
+  // once per frame; the timer covers a page whose frames are paused (a background tab that is scrolled by a link)
+  function trackSoon() {
+    if (trackT) return;
+    trackT = 1;
+    let ran = false;
+    const go = () => { if (!ran) { ran = true; track(); } };
+    requestAnimationFrame(go); setTimeout(go, 150);
+  }
+  window.addEventListener('scroll', trackSoon, { passive: true });
+  window.addEventListener('resize', trackSoon);
+  /** A chapter opened at its top offers a link to the section the reader was in last time. */
+  function offerResume(art, cid, atSection) {
+    for (const old of $$('.ch-resume', art)) old.remove();
+    const s = secs[cid], head = $('.ch-head', art);
+    if (atSection || !s || !head || !heads.length || s[0] === heads[0].id || !document.getElementById(s[0])) return;
+    head.append(W.h('p', { class: 'ch-resume', 'data-sec': s[0] }, 'Last time you were at ', W.h('a', { href: '#' + s[0] }, s[1]), '.'));
+  }
+  function setSheet(open, focus) {
+    const was = !tocSheet.hidden;
+    if (open === was) return;
+    tocSheet.hidden = !open; tocScrim.hidden = !open;
+    tocBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open) {
+      track();
+      const on = $('a.on', sheetToc) || $('a', sheetToc);
+      if (on) { on.scrollIntoView({ block: 'center' }); if (focus) on.focus({ preventScroll: true }); }
+    } else if (focus) tocBtn.focus({ preventScroll: true });
+  }
+  tocBtn.addEventListener('click', () => setSheet(tocSheet.hidden, true));
+  $('#tocClose').addEventListener('click', () => setSheet(false, true));
+  tocScrim.addEventListener('click', () => setSheet(false, true));
+  sheetToc.addEventListener('click', (e) => { if (e.target.closest('a')) setSheet(false); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !tocSheet.hidden) setSheet(false, true); });
+  tocSheet.addEventListener('focusout', (e) => { if (!tocSheet.hidden && e.relatedTarget && !tocSheet.contains(e.relatedTarget) && e.relatedTarget !== tocBtn) setSheet(false); });
 
   /* ---------- home ---------- */
   let homeDrawn = false;
@@ -489,8 +567,19 @@
       if (last && G.ch[last]) {
         box.hidden = false;
         const a = $('#resumeLink', box);
-        if (a) { a.href = '#' + last; a.textContent = G.ch[last].t; }
+        // straight to the section the reader was in, when one is remembered
+        const s = secs[last];
+        if (a) { a.href = '#' + (s ? s[0] : last); a.textContent = G.ch[last].t + (s ? ' › ' + s[1] : ''); }
       } else box.hidden = true;
+      // re-tests that are due (spaced re-testing, on "What to revise next")
+      let dueBox = $('#retestDue');
+      const due = G.ch['practice.next'] ? retestsDue(Date.now()).length : 0;
+      if (due && !dueBox) { dueBox = W.h('div', { class: 'resume', id: 'retestDue' }); box.after(dueBox); }
+      if (dueBox) {
+        dueBox.hidden = !due;
+        dueBox.innerHTML = '';
+        if (due) dueBox.append(W.h('span', {}, 'Due for a re-test:'), ' ', W.h('a', { href: '#practice.next' }, `${due} chapter${due === 1 ? '' : 's'} you marked as learned`));
+      }
     }
   }
 
@@ -564,26 +653,40 @@
     }
     return res.slice(0, 14);
   }
-  function showResults() {
+  // search files still on their way (results are shown course by course as they arrive)
+  let searchFailed = false;
+  const searchWaiting = () => searchFailed ? 0 : (G.chunks || []).filter(k => !ZTA.search[k]).length;
+  /** keep = a re-draw because more search text arrived: the reader's highlighted result stays highlighted */
+  function showResults(keep) {
     const q = input.value.trim();
     if (!q) { closeSearch(); return; }
-    hits = search(q); sel = -1;
-    results.innerHTML = hits.length ? hits.map((r, i) => `<a class="sr s-${r.s}" role="option" id="sr${i}" tabindex="-1" aria-selected="false" href="${r.href}"><div class="sr-t"><span class="sr-s">${W.esc(subjShort(r.s))}</span><span>${W.esc(r.title)}</span></div>${r.html ? `<div class="sr-x">${r.html}</div>` : ''}</a>`).join('')
-      : `<div class="sr-empty">No matches for “${W.esc(q)}”. Try a shorter word, or a topic name such as “moles” or “break-even”.</div>`;
+    const was = keep === true && sel >= 0 && hits[sel] ? hits[sel].href : null;
+    hits = search(q); sel = was ? hits.findIndex(r => r.href === was) : -1;
+    const waiting = searchWaiting(), all = (G.chunks || []).length;
+    const more = waiting ? `<div class="sr-more">Searching the other courses… (${all - waiting} of ${all} ready)</div>` : '';
+    results.innerHTML = hits.length ? hits.map((r, i) => `<a class="sr s-${r.s}" role="option" id="sr${i}" tabindex="-1" aria-selected="${i === sel ? 'true' : 'false'}" href="${r.href}"><div class="sr-t"><span class="sr-s">${W.esc(subjShort(r.s))}</span><span>${W.esc(r.title)}</span></div>${r.html ? `<div class="sr-x">${r.html}</div>` : ''}</a>`).join('') + more
+      : waiting ? more : `<div class="sr-empty">No matches for “${W.esc(q)}”. Try a shorter word, or a topic name such as “moles” or “break-even”.</div>`;
     results.hidden = false;
     input.setAttribute('aria-expanded', 'true');
-    input.removeAttribute('aria-activedescendant');
-    $('#searchStatus').textContent = hits.length ? `${hits.length} result${hits.length === 1 ? '' : 's'}. Use the up and down arrows to choose.` : 'No matches.';
+    if (sel >= 0) input.setAttribute('aria-activedescendant', 'sr' + sel); else input.removeAttribute('aria-activedescendant');
+    // the count is read out once the search is complete, not for every file that arrives
+    if (!waiting || !keep) $('#searchStatus').textContent = hits.length ? `${hits.length} result${hits.length === 1 ? '' : 's'}${waiting ? ' so far' : ''}. Use the up and down arrows to choose.` : waiting ? 'Searching.' : 'No matches.';
   }
-  let st = 0;
+  let st = 0, moreT = 0;
+  const redraw = () => { clearTimeout(moreT); moreT = setTimeout(() => { if (input.value.trim() && document.activeElement === input) showResults(true); }, 60); };
   input.addEventListener('input', () => { clearTimeout(st); st = setTimeout(showResults, 120); });
   input.addEventListener('focus', () => {
-    // key terms come from the base files, the text from the search files
-    Promise.all([ZTA.loadAll(), ZTA.loadSearch()]).then(() => { if (input.value.trim() && document.activeElement === input) showResults(); }, loadFailed);
+    // The text comes from the search files: the course being read is fetched first, then the others, and the
+    // results are re-drawn as each one arrives (zta:search). Key terms come from the base files.
+    const here = current && (G.ch[current.getAttribute('data-id')] || {}).k;
+    searchFailed = false;
+    (here ? ZTA.load(here + '.search').catch(() => {}) : Promise.resolve())
+      .then(() => ZTA.loadSearch()).catch((e) => { searchFailed = true; redraw(); loadFailed(e); });
+    ZTA.loadAll().then(redraw, loadFailed);
     if (input.value.trim()) showResults();
   });
   document.addEventListener('zta:chunk', () => { index = null; renderProgress(); renderTicks(document); });
-  document.addEventListener('zta:search', () => { index = null; });
+  document.addEventListener('zta:search', () => { index = null; redraw(); });
   document.addEventListener('zta:page', () => { index = null; renderProgress(); });
   input.addEventListener('keydown', (e) => {
     const items = $$('.sr', results);
@@ -734,6 +837,7 @@
     const top = list.length ? list[0].score : 1;
 
     host.innerHTML = '';
+    renderRetests(host);
     const sel = W.h('select', { 'aria-label': 'Subject' }, W.h('option', { value: '' }, 'All subjects'),
       ...subjects.map(s => W.h('option', { value: s.id, selected: s.id === nextSubj }, s.t)));
     sel.addEventListener('change', () => { nextSubj = sel.value; renderNext(art); });
@@ -762,6 +866,63 @@
     }
     body.append(ol);
     if (list.length > 15) body.append(W.h('p', { class: 'w-note' }, `${list.length - 15} more after these. Revise the top ones, then redo the questions you lost marks on.`));
+  }
+
+  /* ---------- spaced re-testing (on "What to revise next") ---------- */
+  function renderRetests(host) {
+    const now = Date.now();
+    const due = retestsDue(now);
+    const later = Object.keys(done).map(c => retestOf(c, now)).filter(r => r && !r.isDue).sort((a, b) => a.due - b.due);
+    const body = W.h('div', { class: 'w-b' });
+    host.append(W.h('div', { class: 'w' }, W.h('div', { class: 'w-h' }, W.h('span', { class: 'w-t' }, 'Due for a re-test'),
+      W.h('span', { class: 'w-s' }, 'Quiz questions from chapters you marked as learned, 1, 3, 7 and 21 days later')), body));
+    const days = (ms) => { const d = Math.max(1, Math.ceil(ms / DAY)); return d === 1 ? 'within a day' : `in ${d} days`; };
+    const coming = later.length ? `${later.length} more chapter${later.length === 1 ? '' : 's'} to come; the next one is due ${days(later[0].due - now)}.` : '';
+    if (!due.length) {
+      body.append(W.h('p', {}, W.h('b', {}, 'Nothing is due today. '), coming || 'Mark a chapter as learned (the button at its end) and its quiz questions come back here after 1, 3, 7 and 21 days.'));
+      return;
+    }
+    const ul = W.h('ul', { class: 'rt-list' });
+    for (const r of due.slice(0, 8)) {
+      const info = G.ch[r.c], subj = G.subjects.find(s => s.id === info.s);
+      const late = Math.floor((now - r.due) / DAY);
+      const btn = W.h('button', { class: 'btn btn-sm', type: 'button' }, 'Re-test now');
+      const area = W.h('div', { class: 'rt-q' });
+      const why = W.h('div', { class: 'rn-why' }, `Re-test ${r.n + 1} of ${RT_DAYS.length} (${RT_DAYS[r.n]} day${RT_DAYS[r.n] === 1 ? '' : 's'} after you learned it)` + (late > 0 ? ` · ${late} day${late === 1 ? '' : 's'} late` : ''));
+      ul.append(W.h('li', {}, W.h('div', { class: 'rt-row' },
+        W.h('div', { class: 'rn-t' }, W.h('a', { href: '#' + r.c }, info.t), subj ? W.h('span', { class: 'rn-s' }, subj.short || subj.t) : ''), btn), why, area));
+      btn.addEventListener('click', () => {
+        btn.disabled = true;
+        (info.k ? ZTA.load(info.k) : Promise.resolve()).then(() => {
+          // at most 6 of the chapter's questions, in a new order with the options shuffled
+          const pick = W.shuffle(quizIds().filter(i => QUIZ[i].c === r.c)).slice(0, 6);
+          if (!pick.length) { area.textContent = 'This chapter has no quiz questions.'; return; }
+          btn.hidden = true;
+          let right = 0, answered = 0;
+          const qbox = W.h('div', { class: 'quiz-wrap' }), res = W.h('p', { class: 'rt-res', 'aria-live': 'polite' });
+          area.append(qbox, res);
+          renderQuizInto(qbox, pick, {
+            shuffle: true, onAnswer: (ok) => {
+              answered++; if (ok) right++;
+              if (answered < pick.length) return;
+              // this re-test is behind the reader, and so is every later one whose day has already passed
+              const t0 = done[r.c];
+              const passed = RT_DAYS.filter(d => Date.now() >= t0 + d * DAY).length;
+              retest[r.c] = Math.max(r.n + 1, passed);
+              store.set('retest', retest);
+              const next = retestOf(r.c, Date.now());
+              res.textContent = `${right} of ${pick.length} right. ` + (next ? `The next re-test of this chapter is due ${days(next.due - Date.now())}.` : 'That was the last re-test of this chapter.');
+              if (right < 0.7 * pick.length) res.append(' Below 70%: ', W.h('a', { href: '#' + r.c }, 'reread the chapter'), next ? ' before the next one.' : ' and try its quiz again.');
+              why.textContent = 'Done today.';
+            }
+          });
+          focusOn(qbox);
+        }, (e) => { btn.disabled = false; loadFailed(e); });
+      });
+    }
+    body.append(ul);
+    const rest = due.length > 8 ? `${due.length - 8} more are due after these. ` : '';
+    if (rest || coming) body.append(W.h('p', { class: 'w-note' }, rest + coming));
   }
 
   // for settings.js

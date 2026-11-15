@@ -19,6 +19,16 @@ Everything here comes from this browser: nothing is sent anywhere.
 
 The bar shows how far behind each chapter is compared with the top one.
 
+## Re-tests: keeping what you have learned
+You forget most quickly in the first days after learning something, and each time you bring it back from memory you
+forget it more slowly ([how to study effectively](#road.methods)). So when you mark a chapter as learned, its quiz
+questions come back at the top of this page **1, 3, 7 and 21 days later**.
+
+- Each re-test is up to six of the chapter's questions, in a new order.
+- If you come back late and two re-tests are due, one re-test covers both.
+- A score below 70% is a sign to reread the chapter before the next re-test.
+- The dates count from the day you marked the chapter as learned. If you unmark it and mark it again, they start again.
+
 :::tip Use the list well
 Work from the top. For each chapter: reread its key boxes, redo its worked examples with the answers covered,
 then try the questions you lost marks on again. Don't spend all week on one chapter: two or three short sessions
