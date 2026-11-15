@@ -6,10 +6,11 @@
 - Queue item 5, Computer Science (`cs`, 9618, 49 chapters in 22 packages): P1–P13 written (28 chapters, 12 widgets),
   P1–P12 reviewed, no open items. Next: WRITE P14 and P15 (two Writers), then REVIEW P13–P16 when four are written.
 - Usage gate: weekly limit 95% for every launch (AGENT-RUN.md "Usage gate").
-- Name: "Zero to A* Ω" (titles, installed app, shared links). The top bar shows it as text. Wordmark: six designs
-  drawn from the site's fonts were shown (`py engine/wordmark.py`, picture `.run/wordmark-options.png`); the user
-  wants the film-style "Alice in Wonderland" lettering (spiky, uneven small capitals), so the next step waits for
-  the user's answer under "For the user".
+- Name: "Zero to A* Ω" (titles, installed app, shared links). The top bar shows it as text until the user picks a
+  wordmark: options 1–6 (the site's fonts, `.run/wordmark-options.png`) and A–F (Mystery Quest, Griffy, Henny Penny,
+  `.run/wordmark-options-2.png`; `py engine/wordmark.py <out.html> .run/fonts-try`). The three fonts (SIL OFL, from
+  github.com/google/fonts) are in `.run/fonts-try` with their licence files, not in the repository: the chosen one
+  moves to `engine/fonts` with its OFL file.
 - Site check, Nov 15 (every page opened in the app at phone width, every built file and every external link
   checked): no script errors, no broken internal links. Left as they are:
   - widgets `breakeven` and `npv` on `tools.calc` show "being built" until Business and Accounting write them;
@@ -79,13 +80,11 @@
 ## For the user
 Things only you can do. None of them stops the automatic runs.
 - **Choose the wordmark for the top bar.**
-  1. Open `.run/wordmark-options.png` (six designs made from the site's own fonts).
-  2. The font in your sample picture is not one the project has. Say one of:
-     - "download the lookalike fonts": the Organizer downloads open-licence fonts in that style and shows new options;
-     - "use the font from my picture": then send the font file and the page that states its licence (many such fonts
-       are free for personal use only, which does not fit a public project that others may reuse and sell);
-     - a number from 1 to 6.
-  3. The Organizer puts the chosen design in the top bar and shows it to you before it is published.
+  1. Open `.run/wordmark-options-2.png` (A–F: three storybook fonts, each with small capitals and with small letters)
+     and `.run/wordmark-options.png` (1–6: the site's own fonts).
+  2. Tell the Organizer the letter or number, and anything to change (more or less tilt, thicker letters, stronger or
+     softer grain, another Ω, other colours).
+  3. The Organizer shows the chosen design in the top bar in the preview before it is published.
 - **Google sitemap: wait, then look again.** The sitemap is published and valid (382 pages). "Couldn't fetch" is what
   Search Console usually shows for the first days of a new site.
   1. In 3 to 7 days open Google Search Console → Sitemaps.
