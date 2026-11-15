@@ -216,6 +216,13 @@ function buildSite(sources, opts) {
       c.chunk = (s.kind === 'course' && !opts.inlineAll) ? s.id : null;
     }
   }
+  // a link to a page that is written but not shown would open Home: the About page of a course leaves the site
+  // when the course gets its first chapter
+  const shown = new Set(ordered.map(c => c.id));
+  for (const c of ordered) for (const m of c.html.matchAll(/<a href="#([^"]+)"/g)) {
+    const base = m[1].split('--')[0];
+    if (base !== 'home' && written.has(base) && !shown.has(base)) errors.push(`[${c.id}] link to #${base}, a page that is not shown any more (an About page leaves the site when its course has chapters)`);
+  }
   const chunks = [...new Set(ordered.map(c => c.chunk).filter(Boolean))];
   for (const c of ordered) {
     const need = new Set();

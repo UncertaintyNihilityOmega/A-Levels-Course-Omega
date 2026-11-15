@@ -67,6 +67,7 @@ ${ld ? `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\
 </html>
 `;
 
+  const staticIds = new Set(list.map(c => c.id));
   for (const c of list) {
     const s = subj(c.subject);
     const title = stripTags(R.inline(c.title));
@@ -74,6 +75,8 @@ ${ld ? `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\
     let html = c.html.replace(/<a href="#([^"]+)"/g, (m, href) => {
       const base = href.split('--')[0];
       if (base === c.id) return m;
+      // a page with no static copy (Home, Settings) opens in the guide
+      if (!staticIds.has(base)) return `<a href="../index.html#${attr(href)}"`;
       return `<a href="${attr(base)}.html${href.includes('--') ? '#' + attr(href) : ''}"`;
     });
     const openIt = `<a href="../index.html#${attr(c.id)}">open this chapter in the interactive guide</a>`;

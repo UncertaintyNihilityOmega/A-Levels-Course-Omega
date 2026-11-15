@@ -20,3 +20,5 @@ Engine bugs, new block types, design changes, or anything that needs another cou
     in a Specialist CONNECTIONS pass.
 - [x] 2026-11-12 · (P40 Writer) The shared `planner` widget fails `widget planner "" --probe` in dark and phone: a11y contrast 4.50 < 4.5 on its small labels ("Workload", "Subject", "h / week", "By exams", "Day", "Study blocks", rgb(139,152,147)). It is engine code, so I left it; a slightly lighter muted text colour in dark mode would clear all 18 lines.
   - Organizer 2026-11-12: dark `--ink-3` #8B9893 → #909D98 in engine/style.css (4.8:1 on the widget table header); synced; `widget planner --probe` clean in light, dark and phone.
+- [x] 2026-11-15 · (Organizer, site check) hist.overview linked to `#about.hist`, a page that left the site when History got its chapters (the link opened Home).
+  - Organizer 2026-11-15: clause removed from hist.overview; the build now reports such links as errors (engine/site.js).

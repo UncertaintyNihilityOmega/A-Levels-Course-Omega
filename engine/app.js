@@ -721,23 +721,38 @@
     const letters = W.h('div', { class: 'gl-letters', role: 'group', 'aria-label': 'Jump to a letter' });
     const wrap = W.h('div', { class: 'w' }, W.h('div', { class: 'w-b' }, W.h('div', { class: 'w-row' }, W.h('div', { class: 'w-ctl', style: { flex: '3 1 14rem' } }, W.h('label', {}, 'Search terms'), filt), W.h('div', { class: 'w-ctl' }, W.h('label', {}, 'Subject'), subjSel)), count));
     host.append(wrap, letters, list);
+    // The list shows 600 terms at a time. The letter links cover every letter that has a term: a letter outside the
+    // 600 on screen re-draws the list from that letter (`from`).
+    let from = 0, first = {};
     function draw() {
       const q = filt.value.trim().toLowerCase(), s = subjSel.value;
       const shown = items.filter(i => (!s || i.s === s) && (!q || i.plain.toLowerCase().includes(q) || i.d.toLowerCase().includes(q)));
       count.textContent = `${shown.length} term${shown.length === 1 ? '' : 's'}`;
+      const letter = (i) => { const L = (i.plain[0] || '#').toUpperCase(); return /[A-Z]/.test(L) ? L : 'num'; };
+      first = {};
+      shown.forEach((i, k) => { const L = letter(i); if (!(L in first)) first[L] = k; });
+      if (from >= shown.length) from = 0;
       const seen = new Set();
-      list.innerHTML = shown.slice(0, 600).map(i => {
-        const L = (i.plain[0] || '#').toUpperCase();
-        const anchor = seen.has(L) ? '' : ` id="gl-${/[A-Z]/.test(L) ? L : 'num'}"`;
+      list.innerHTML = (from ? `<p class="w-note">Showing the terms from “${W.esc(shown[from].plain)}” on. Choose a letter to move.</p>` : '') + shown.slice(from, from + 600).map(i => {
+        const L = letter(i);
+        const anchor = seen.has(L) ? '' : ` id="gl-${L}"`;
         seen.add(L);
         const subj = G.subjects.find(x => x.id === i.s);
         const ch = G.ch[i.c];
         return `<div class="gl-item s-${i.s}"${anchor}><dt>${i.t}<a href="#${i.c}">${W.esc(subj ? subj.short : '')} · ${W.esc(ch ? ch.t : '')}</a></dt><dd>${i.d}</dd></div>`;
-      }).join('') + (shown.length > 600 ? `<p class="w-note">Showing the first 600 — type to narrow the list.</p>` : '');
-      letters.innerHTML = [...seen].filter(l => /[A-Z]/.test(l)).map(l => `<a href="#tools.glossary" data-l="${l}">${l}</a>`).join('');
+      }).join('') + (shown.length > from + 600 ? `<p class="w-note">Showing 600 of ${shown.length} terms. Choose a later letter, or type to narrow the list.</p>` : '');
+      letters.innerHTML = Object.keys(first).filter(l => l !== 'num').map(l => `<a href="#tools.glossary" data-l="${l}">${l}</a>`).join('');
     }
-    letters.addEventListener('click', (e) => { const a = e.target.closest('[data-l]'); if (!a) return; e.preventDefault(); const t = document.getElementById('gl-' + a.dataset.l); if (t) { t.scrollIntoView({ block: 'start' }); focusOn(t); } });
-    filt.addEventListener('input', draw); subjSel.addEventListener('change', draw);
+    letters.addEventListener('click', (e) => {
+      const a = e.target.closest('[data-l]'); if (!a) return;
+      e.preventDefault();
+      const L = a.dataset.l;
+      if (!document.getElementById('gl-' + L)) { from = first[L] || 0; draw(); }
+      const t = document.getElementById('gl-' + L);
+      if (t) { t.scrollIntoView({ block: 'start' }); focusOn(t); }
+    });
+    const restart = () => { from = 0; draw(); };
+    filt.addEventListener('input', restart); subjSel.addEventListener('change', restart);
     draw();
   }
 

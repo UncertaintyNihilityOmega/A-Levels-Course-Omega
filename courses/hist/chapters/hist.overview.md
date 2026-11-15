@@ -254,7 +254,7 @@ AQA's A Level History (7042) has a depth study, 2H France in Revolution, 1774–
 ## Resources
 
 - **Cambridge International.** The [syllabus page](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-history-9489/) has the syllabus, and the [past papers page](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-history-9489/past-papers/) has specimen papers and mark schemes for 2027 and past papers. Old papers (before 2027) remain good practice for the topics that did not change, but the structure of Paper 1 and Paper 2 was different.
-- **This site's other guides.** [Study methods that actually work](#road.methods), [Exam technique](#road.technique), [Command words decoded](#road.commands) and [Past papers and mark schemes](#road.pastpapers) work for every subject; [About History](#about.hist) gives the general picture.
+- **This site's other guides.** [Study methods that actually work](#road.methods), [Exam technique](#road.technique), [Command words decoded](#road.commands) and [Past papers and mark schemes](#road.pastpapers) work for every subject.
 - **Primary sources and background** are linked at the end of every chapter, chosen from free, reliable sites.
 
 :::recap
