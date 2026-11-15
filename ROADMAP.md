@@ -6,11 +6,8 @@
 - Queue item 5, Computer Science (`cs`, 9618, 49 chapters in 22 packages): P1–P13 written (28 chapters, 12 widgets),
   P1–P12 reviewed, no open items. Next: WRITE P14 and P15 (two Writers), then REVIEW P13–P16 when four are written.
 - Usage gate: weekly limit 95% for every launch (AGENT-RUN.md "Usage gate").
-- Name: "Zero to A* Ω" (titles, installed app, shared links). The top bar shows it as text until the user picks a
-  wordmark: options 1–6 (the site's fonts, `.run/wordmark-options.png`) and A–F (Mystery Quest, Griffy, Henny Penny,
-  `.run/wordmark-options-2.png`; `py engine/wordmark.py <out.html> .run/fonts-try`). The three fonts (SIL OFL, from
-  github.com/google/fonts) are in `.run/fonts-try` with their licence files, not in the repository: the chosen one
-  moves to `engine/fonts` with its OFL file.
+- Name: "Zero to A* Ω" (titles, installed app, shared links). Top bar and Home heading: the hand-drawn wordmark "Log end"
+  (`engine/wordmark.py --shell` writes it into shell.html; colours in style.css `.wm-*`).
 - Site check, Nov 15 (every page opened in the app at phone width, every built file and every external link
   checked): no script errors, no broken internal links. Left as they are:
   - widgets `breakeven` and `npv` on `tools.calc` show "being built" until Business and Accounting write them;
@@ -73,18 +70,22 @@
 - User checks, Nov 15 2026: phone reading (round button, progress line, "Pick up where you left off") works on the
   user's phone; screen readers work on PC and phone, site and app; the site is verified in Google Search Console;
   the `new-project` skill is uploaded (Customize page) and shows in the app's skill list.
-- Nov 15 2026 (user's list): the name "Zero to A* Ω"; Business before Economics; lines between the fields of the
+- Nov 15 2026 (user's list, checked by the user): the hand-drawn wordmark "Log end" in the top bar; a line between
+  History and Other subjects; the reader's picture offered as the installed app's icon; the name "Zero to A* Ω"; Business before Economics; lines between the fields of the
   sidebar; the Graph plotter and Periodic table load again (broken since queue item 6); Settings in boxed sections
   with "On this page", and the reader's own picture as the icon.
 
 ## For the user
 Things only you can do. None of them stops the automatic runs.
-- **Choose the wordmark for the top bar.**
-  1. Open `.run/wordmark-options-2.png` (A–F: three storybook fonts, each with small capitals and with small letters)
-     and `.run/wordmark-options.png` (1–6: the site's own fonts).
-  2. Tell the Organizer the letter or number, and anything to change (more or less tilt, thicker letters, stronger or
-     softer grain, another Ω, other colours).
-  3. The Organizer shows the chosen design in the top bar in the preview before it is published.
+- **Try your own picture as the installed app's icon.** A web page cannot change the icon of an app that is already
+  installed; the guide now hands your picture to the browser when the app is installed. This could only be tested on
+  the PC preview, so say what your phone does.
+  1. On the phone, remove the installed app (hold its icon → Remove or Uninstall).
+  2. Open the site in the browser (Chrome on Android, Safari on iPhone). Reload once so it is the newest version.
+  3. Settings → App icon → "Choose a picture". The message should say "Install the app again to see it on the Home Screen".
+  4. Close the tab, open the site again, then install it (Chrome: ⋮ → Install app or Add to Home screen; Safari:
+     Share → Add to Home Screen).
+  5. Look at the Home Screen icon. Tell the Organizer which phone and browser, and whether the icon is your picture.
 - **Google sitemap: wait, then look again.** The sitemap is published and valid (382 pages). "Couldn't fetch" is what
   Search Console usually shows for the first days of a new site.
   1. In 3 to 7 days open Google Search Console → Sitemaps.
@@ -102,5 +103,3 @@ Things only you can do. None of them stops the automatic runs.
   5. Tell the Organizer "check the colours". It measures every colour against the page in both modes (text needs a
      contrast of 4.5 to 1), and for any that fail it proposes the nearest colour that passes and tells you which.
   6. Only then are the colours committed and published.
-- **Look at this session's changes** (optional): the lines in the sidebar, Business above Economics, and Settings (the
-  sections, "On this page", and "App icon" with a picture of yours). Say if anything should change.

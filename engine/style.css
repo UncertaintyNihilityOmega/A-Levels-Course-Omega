@@ -144,8 +144,22 @@ math { font-family: var(--f-math); font-size: 1.08em; }
 .brand-mark { width: 34px; height: 34px; flex: none; display: flex; }
 .brand-mark svg { width: 100%; height: 100%; }
 .brand-mark img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
-.brand-name { font-family: var(--f-ui); font-weight: 800; font-size: 1.2rem; letter-spacing: -.02em; white-space: nowrap; }
-.brand-name .star { color: var(--red); }
+/* the wordmark "ZERO TO A* Ω" (engine/wordmark.py): hand-drawn letters cut from the logo's wood, a white face with
+   green rings in dark-green bark, the star and Ω in crimson. The same colours in paper and chalkboard mode. */
+.brand-name { display: flex; align-items: center; min-width: 0; }
+.wm { height: 38px; width: auto; max-width: 100%; display: block; overflow: visible; }
+.wm-ba, .wm-bb { stroke-width: 2.5; stroke-linejoin: miter; stroke-miterlimit: 2.5; }
+.wm-ba { fill: #123220; stroke: #123220; }
+.wm-bb { fill: #5E0A18; stroke: #5E0A18; }
+.wm-fa { fill: #FFFFFF; }
+.wm-fb { fill: #E8455E; }
+.wm-ra, .wm-rb { fill: none; }
+.wm-ra { stroke: #1E4D2B; }
+.wm-rb { stroke: #8E0F26; }
+.wm-rt { stroke-width: .32; opacity: .5; }
+.wm-rh { stroke-width: .6; opacity: .55; }
+.wm-rb .wm-rt { opacity: .6; }
+.wm-rb .wm-rh { opacity: .7; }
 .search { position: relative; flex: 1 1 auto; max-width: 34rem; min-width: 0; }
 .search input {
   width: 100%; height: 40px; border-radius: 10px; border: 1px solid var(--rule-ui); background: var(--card);
@@ -504,6 +518,8 @@ math { font-family: var(--f-math); font-size: 1.08em; }
 .hero { font-family: var(--f-ui); padding: 34px 0 8px; }
 .hero h1 { font-family: var(--f-ui); font-weight: 800; font-size: clamp(3.2rem, 1.6rem + 5.6vw, 6rem); line-height: .92; letter-spacing: -.045em; margin: 0 0 22px; color: var(--ink); }
 .hero h1 .star { color: var(--red); letter-spacing: 0; margin-left: .02em; }
+/* app.js puts a copy of the top-bar wordmark in the Home heading; the name stays as hidden text for screen readers */
+.hero h1 .wm { height: auto; width: min(100%, 34rem); }
 .hero-lede { font-family: var(--f-text); font-size: 1.25rem; line-height: 1.55; color: var(--ink-2); max-width: 36rem; margin: 0 0 26px; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 10px; }
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 10px; font-family: var(--f-ui); font-weight: 700; font-size: 1rem; text-decoration: none; border: 1.5px solid var(--ink); background: var(--ink); color: var(--sheet); cursor: pointer; line-height: 1.2; }

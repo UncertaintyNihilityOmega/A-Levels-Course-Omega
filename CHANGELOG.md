@@ -39,6 +39,10 @@ Planned snapshots:
   humanities and the tools.
 - Fixed: the Graph plotter and the Periodic table showed "being built" since chapters became separate files (a
   Toolbox page did not load the course file that holds its tool).
+- Top bar and Home heading: the name is a hand-drawn wordmark, "ZERO TO A* Ω" in storybook capitals cut from the logo's wood (white
+  with green rings in dark-green bark; the star and Ω in crimson).
+- Settings, "App icon": your picture is also given to the browser as the app's icon, for an app installed after you
+  chose it (the browser or phone decides whether to use it).
 - Settings: your own picture as the icon in the top bar and on the browser tab; sections in boxes; "On this page"
   (the list at the side, or the round button on a phone) lists the sections.
 

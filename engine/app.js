@@ -545,6 +545,12 @@
   /* ---------- home ---------- */
   let homeDrawn = false;
   function renderHome() {
+    // the Home heading shows the top-bar wordmark (a copy with its own ids); the name stays as text for screen readers
+    const nameEl = $('.hero h1 .hero-name'), mark = $('.brand-name .wm');
+    if (nameEl && mark && !$('.hero h1 .wm')) {
+      nameEl.classList.add('sr-only');
+      nameEl.insertAdjacentHTML('afterend', mark.outerHTML.replace(/id="wm-/g, 'id="wh-').replace(/#wm-/g, '#wh-').replace(/ width="d+" height="d+"/, ''));
+    }
     const list = $('#subjects');
     if (list && !list.children.length) {
       list.innerHTML = G.subjects.filter(s => s.c).map(s => {
