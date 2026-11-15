@@ -553,7 +553,7 @@ A state-transition diagram turns directly into a loop that keeps the current sta
 2. The loop runs until State is a stop state (REPEAT … UNTIL, or WHILE).
 3. In the loop, read the event, then CASE OF State selects the state's code.
 4. Inside each case, an IF on the event performs the action and assigns the next state.
-5. A state with no arrow for an event does nothing for that event: no code is needed.
+5. A loop with no action (an arrow that returns to its own state, such as `push / nothing`) needs no code: the state does not change. The diagram still shows the loop.
 :::
 
 ```pseudocode
@@ -951,7 +951,7 @@ The string 10110 has three 1s: Even → Odd (1) → Odd (0) → Even (1) → Odd
 - `FUNCTION Cost(BYREF Price : REAL, BYREF Rate : REAL) RETURNS REAL`
 + `FUNCTION Cost(Price : REAL, Rate : REAL) RETURNS REAL`
 - `PROCEDURE Cost(Price : REAL, Rate : REAL)`
-> It returns one value, so it is a function, and the two items only come in, so they are by value. A procedure cannot have RETURNS, and a function cannot use BYREF.
+> It returns one value, so it is a function, and the two items only come in, so they are by value. A procedure cannot have RETURNS, and a function does not use BYREF (the Pseudocode Guide: parameters should not be passed by reference to a function).
 ? In a state-transition diagram, what does an arrow labelled `coin / unlock` mean?
 - When the system unlocks, a coin is inserted.
 + When the event coin happens, the system performs the action unlock and moves to the state at the arrow's head.

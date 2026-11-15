@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-14 · WRITE P13 · cs.boolean 9.6k words (6 SVG figures, laws proved by truth table, algebra and K-map answers recomputed, adders, SR/JK flip-flops), cs.os 8.8k words (4 SVGs, Gantt/waiting times for FCFS, SJF, SRT, RR recomputed by a simulation, paging, virtual memory, FIFO/LRU, thrashing); widgets cs-kmap (exact solver tested on 2,272 functions) and cs-sched (tested on 3,000 random cases); both probe clean, UI logic tested in data/cs-p13.ui.test.js. Reviewer: look at both widgets once in dark mode, the JK figure (feedback lines cross), and the claim that Gray-code/K-map tables use cell numbers rather than coloured groups in Markdown.
+Last: 2026-11-15 · REVIEW P9, P10, P11, P12 · 0 open items; fixed in review: cs.development key box (loops with no action) and quiz feedback (functions and BYREF); cs.float and cs.structures read whole and recomputed, three widgets used in the preview
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -13,10 +13,10 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P6: reviewed 2026-11-14
 - P7: reviewed 2026-11-14
 - P8: reviewed 2026-11-14
-- P9: written 2026-11-14
-- P10: written 2026-11-14
-- P11: written 2026-11-14
-- P12: written 2026-11-14
+- P9: reviewed 2026-11-15
+- P10: reviewed 2026-11-15
+- P11: reviewed 2026-11-15
+- P12: reviewed 2026-11-15
 - P13: written 2026-11-14
 - P14: open
 - P15: open
