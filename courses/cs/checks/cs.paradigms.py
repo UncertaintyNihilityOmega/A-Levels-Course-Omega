@@ -301,8 +301,24 @@ BOSS = block_after("A: One possible answer:\n\n```text\nreports_to(dina, sam).")
 assert answers(BOSS, "boss(dina, B)", "B") == ["sam", "luca", "mei"]
 assert answers(BOSS, "boss(X, mei)", "X") == ["luca", "dina", "sam"]
 
+# rules with NOT (added in review: the Cambridge form, 9618/31 and 9618/32 June 2024 mark schemes)
+ENR = block_after("A cookery school in Lima records")
+RULE = block_after("becomes one rule:")
+assert answers(ENR + RULE, "may_enrol(lina, X)", "X") == ["grilling"]
+assert answers(ENR + RULE, "may_enrol(S, baking)", "S") == ["omar"]
+assert answers(ENR + RULE, "may_enrol(omar, X)", "X") == ["baking", "grilling"]
+assert query(ENR + RULE, "may_enrol(lina, baking)") == []
+for row in ("| `may_enrol(lina, X)` | X = grilling |", "| `may_enrol(S, baking)` | S = omar |",
+            "| `may_enrol(omar, X)` | X = baking, grilling |"):
+    assert row in TEXT, row
+COMMA = "may_enrol(S, C) :- student(S), course(C), NOT(completed(S, C))."
+assert query(ENR + COMMA, "may_enrol(S, C)") == query(ENR + RULE, "may_enrol(S, C)")
+assert "`student(S), course(C), NOT(completed(S, C)).`" in TEXT
+WRONG = "may_enrol(S, C) IF NOT completed(S, C) AND student(S) AND course(C)."
+assert WRONG in TEXT and query(ENR + WRONG, "may_enrol(S, C)") == []
+
 # quiz
-LIKES = "likes(ana, tea).\nlikes(ben, tea).\n"
+LIKES ="likes(ana, tea).\nlikes(ben, tea).\n"
 assert answers(LIKES, "likes(Who, tea)", "Who") == ["ana", "ben"]
 
 # every Prolog-style block of the chapter at least parses

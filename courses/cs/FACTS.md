@@ -34,12 +34,28 @@ papers 9618/11, 9618/21 (with its insert), 9618/31 and 9618/41 (front pages read
 - By paper: P1 AO1 60 / AO2 40; P2 AO2 40 / AO3 60; P3 AO1 60 / AO2 40; P4 AO3 100.
 
 ### Command words (syllabus page 41, the Cambridge meanings)
-Analyse, Assess, Calculate, Comment, Compare, Complete (add to a diagram or table), Consider, Contrast, Define,
-Demonstrate, Describe (state the points / give characteristics and main features), Develop, Discuss, Draw ("draw a
-line to match a term with a description"), Evaluate, Examine, Explain (set out purposes or reasons, say why and/or
-how, with evidence), Give, Identify (name/select/recognise), Justify (support a case with evidence/argument),
-Outline, Predict, Sketch, State (express in clear terms), Suggest, Summarise, Write (write an answer in a specific
-way).
+Analyse, Assess, Calculate (work out from given facts, figures or information), Comment, Compare (identify/comment
+on similarities and/or differences), Complete (add information to an incomplete diagram or table), Consider,
+Contrast (identify/comment on differences), Define (give precise meaning), Demonstrate, Describe (state the points
+/ give characteristics and main features), Develop, Discuss, Draw ("draw a line to match a term with a
+description"), Evaluate, Examine, Explain (set out purposes or reasons / make the relationships between things
+clear / say why and/or how and support with relevant evidence), Give (produce an answer from a given source or
+recall/memory), Identify (name/select/recognise), Justify (support a case with evidence/argument), Outline (set out
+the main points), Predict, Sketch, State (express in clear terms), Suggest (apply knowledge and understanding where
+there are a range of valid responses), Summarise, Write (write an answer in a specific way). Checked against the
+2027–2029 syllabus pages 41–42 in review P17–P19.
+
+### Paper 3 declarative and OOP forms (checked in review P17–P19)
+- Declarative (9618/31 June 2024 Q8, 9618/32 June 2024 Q10, 9618/31 Nov 2023 Q11): numbered facts such as
+  `feature(sunroof).`, a table of clause meanings; (a) write clauses, (b) "Write the result returned by the goal"
+  with several results on one line (`X = teresa, elspeth`), (c) a rule whose head is printed with `IF` below it.
+  Mark-scheme answer form: `may_choose_option(F, B) IF feature(F) AND bodystyle(B) AND NOT unavailable(F, B).`;
+  commas and `NOT (done(C, A))` also accepted. No comparison symbols in those papers.
+- OOP pseudocode (Pseudocode Guide 2027–2029 section 10): PUBLIC/PRIVATE explicit only where relevant; methods
+  called `Player.SetAttempts(5)`; constructors are procedures named NEW; INHERITS; superclass methods called with
+  SUPER (`SUPER.NEW(GivenName)`); `MyCat ← NEW Cat("Kitty", "Shorthaired")`. The guide shows no DECLARE of an
+  object variable, no array of objects and no overriding keyword. Class diagrams in 9618/31 mark schemes (Nov 2024,
+  June 2025) list attributes as `Name : TYPE` without + or −, getters often without a return type.
 
 ## What each paper prints and allows (front pages, May/June 2025)
 ### Paper 1 (9618/11, May/June 2025)

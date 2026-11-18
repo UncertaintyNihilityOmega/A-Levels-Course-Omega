@@ -21,7 +21,7 @@ A: A class is a template that describes the attributes and methods of a kind of 
 :::
 
 :::note How code appears in this course
-Pseudocode follows the Cambridge Pseudocode Guide for 2027–2029. Assembly language uses the Cambridge example instruction set in `text` blocks. Declarative code is written in the Prolog style that Cambridge papers print, with the words `IF` and `AND`. A block introduced by "Output:" is exactly what the program prints, and every Python example here has been run to check it.
+Pseudocode follows the Cambridge Pseudocode Guide for 2027–2029. Assembly language uses the Cambridge example instruction set in `text` blocks. Declarative code is written in the Prolog style that Cambridge papers print, with the words `IF`, `AND` and `NOT`. A block introduced by "Output:" is exactly what the program prints, and every Python example here has been run to check it.
 :::
 
 ## What is a programming paradigm?
@@ -372,7 +372,7 @@ Four rules of syntax apply to every clause.
 - A **constant** (a name for a particular thing) starts with a **lower-case** letter: `kofi`, `class_7a`.
 - A **variable** starts with a **capital** letter: `X`, `Child`. It stands for "some value". The same variable name in one clause always stands for the same value.
 - Every clause ends with a **full stop**.
-- In a rule, `IF` separates the head from the body and `AND` joins conditions: every condition must be true. Cambridge questions print the words `IF` and `AND`. A Prolog system such as SWISH writes `:-` for `IF` and a comma for `AND`, and otherwise the code is the same.
+- In a rule, `IF` separates the head from the body and `AND` joins conditions: every condition must be true. Cambridge questions print the words `IF` and `AND` (and `NOT`, below); a question usually prints the head of the rule and `IF`, and you write the body. A Prolog system such as SWISH writes `:-` for `IF` and a comma for `AND`, and Cambridge mark schemes accept the commas too.
 :::
 
 ### Goals and results
@@ -386,7 +386,7 @@ A goal with no variables asks "is this true?". The system answers true if it can
 | `parent(X, kwame)` | Who is a parent of Kwame? | X = ama |
 | `parent(kofi, X)` | Whose parent is Kofi? | X = ama, then X = yaw |
 
-The last goal has two answers. The system finds the **first** fact that matches, reports X = ama and then, if asked for more, **backtracks** to look for another.
+The last goal has two answers. The system finds the **first** fact that matches, reports X = ama and then, if asked for more, **backtracks** to look for another. When a Paper 3 question asks for "the result returned by the goal", it writes several answers on one line, separated by commas: `X = ama, yaw`. Write yours the same way, in the order the system finds them.
 
 :::def Backtracking
 The way the system searches for answers. It tries the clauses in order and, when a condition fails or all answers for a choice have been given, it goes back to the most recent choice and tries the next possibility.
@@ -432,13 +432,45 @@ mark(gita, 37).
 passed(Student) IF mark(Student, Score) AND Score >= 50.
 ```
 
-The goal `passed(S)` gives S = chioma, S = elif and S = femi, in the order of the facts. Notice what is missing: there is no loop, no counter and no order of steps. The rule states what "passed" means. The imperative program said how to find the students; this one says which students count. A question that needs a comparison such as `>=` or a test that two things are different, written `X \= Y` in Prolog, will print the symbol it expects you to use.
+The goal `passed(S)` gives S = chioma, S = elif and S = femi, in the order of the facts. Notice what is missing: there is no loop, no counter and no order of steps. The rule states what "passed" means. The imperative program said how to find the students; this one says which students count. Comparisons such as `>=`, and the test that two things are different, written `X \= Y` in Prolog, are this course's Prolog notation: none of the recent Paper 3 declarative questions checked for this course needed one, so if a question does, use the symbols it prints.
 
 :::warn A rule that checks only one of several conditions
 A university course may have two prerequisites, written as two facts: `requires(mechanics, calculus).` and `requires(mechanics, vectors).` The rule `can_take(S, C) IF requires(C, R) AND completed(S, R).` is true as soon as the student has completed **one** of them, because the system only needs one `R` that works. A student who has completed calculus but not vectors would be allowed on mechanics. To demand both, write a rule that names both conditions: `can_take_mechanics(S) IF completed(S, calculus) AND completed(S, vectors).`
 :::
 
 Sometimes the same answer appears twice. A rule for brothers and sisters might be `sibling(X, Y) IF parent(P, X) AND parent(P, Y) AND X \= Y.` In the family above, Ama and Yaw share two parents. The goal `sibling(ama, X)` therefore gives X = yaw **twice**, once through Kofi and once through Abena. The system reports every way of proving the goal.
+
+### Rules with NOT
+
+Recent Paper 3 questions end with a rule that needs the word **NOT**, written from a sentence such as "… may choose … if … and … has not …". `NOT` in front of a condition makes it true when that condition **cannot be proved** from the clauses, which fits the rule that everything not in the knowledge base is false.
+
+A cookery school in Lima records its students, its courses and the courses each student has completed.
+
+```text
+student(lina).
+student(omar).
+course(baking).
+course(grilling).
+completed(lina, baking).
+```
+
+"S may enrol on C if S is a student and C is a course and S has not completed C" becomes one rule:
+
+```text
+may_enrol(S, C) IF student(S) AND course(C) AND NOT completed(S, C).
+```
+
+| Goal | Result |
+|---|---|
+| `may_enrol(lina, X)` | X = grilling |
+| `may_enrol(S, baking)` | S = omar |
+| `may_enrol(omar, X)` | X = baking, grilling |
+
+Lina cannot enrol on baking: `completed(lina, baking)` is a fact, so `NOT completed(lina, baking)` is false. Omar has completed nothing, so `NOT completed(omar, C)` is true for both courses. Mark schemes also accept the comma form and brackets after NOT: `student(S), course(C), NOT(completed(S, C)).`
+
+:::warn Put NOT after the conditions that choose the values
+`NOT` can only test values that have already been chosen. The rule `may_enrol(S, C) IF NOT completed(S, C) AND student(S) AND course(C).` gives **no** results for the goal `may_enrol(S, C)`: S and C are still unknown when the NOT is tried, `completed(S, C)` matches the fact about Lina, so the NOT fails before any student or course is picked. Cambridge's model answers write the NOT condition last (9618/31 and 9618/32, June 2024), and so should you.
+:::
 
 ### Rules that refer to themselves
 
@@ -532,8 +564,8 @@ Compare imperative and declarative programming. [3 marks]
 
 :::exam Paradigm questions in Paper 3
 - Say which paradigm a snippet belongs to by pointing at its features: `LDX` and `INC IX` are low-level, `IF`/`AND` clauses are declarative, `CLASS` and `NEW` are object-oriented, a loop with assignments is imperative.
-- For "write facts and rules", every constant is lower case, every variable is capitalised, every clause ends with a full stop, and a rule head is followed by `IF`.
-- For "state the result of the goal", give **every** answer in order, and write "false" (or "no result") when nothing matches.
+- For "write facts and rules", every constant is lower case, every variable is capitalised, every clause ends with a full stop, and a rule head is followed by `IF`. "Has not" or "is not" in the description becomes `NOT`, placed after the conditions that give the variables their values.
+- For "state the result of the goal", give **every** answer in order on one line (`X = ama, yaw`), and write "false" (or "no result") when nothing matches.
 - For low-level code, state the mode of each instruction you use if the question asks, and remember that `CMP` works on ACC.
 :::
 
@@ -776,6 +808,12 @@ A: One possible answer:
 + The goal is satisfied once through each shared parent.
 - Backtracking repeats the last answer by mistake.
 > The system reports every way of proving the goal. With P = kofi it finds yaw, and with P = abena it finds yaw again.
+? The rule is `may_enrol(S, C) IF student(S) AND course(C) AND NOT completed(S, C).` and `completed(lina, baking).` is a fact. What does the goal `may_enrol(lina, baking)` give?
+- true, because Lina is a student and baking is a course
++ false
+- S = lina
+- an error, because NOT cannot be used in a rule
+> `completed(lina, baking)` can be proved, so `NOT completed(lina, baking)` is false and the rule fails. NOT is true only when its condition cannot be proved.
 :::
 
 :::checklist What you can now do
@@ -784,7 +822,7 @@ A: One possible answer:
 - [ ] I can explain the advantages and disadvantages of low-level programming.
 - [ ] I can use immediate, direct, indirect, indexed and relative addressing, and say which location is read.
 - [ ] I can write a low-level loop with indexed addressing and a counter, and trace one that uses indirect addressing.
-- [ ] I can write facts and rules from a description, using lower-case constants, capitalised variables and full stops.
+- [ ] I can write facts and rules from a description, using lower-case constants, capitalised variables, full stops and `NOT` for "has not".
 - [ ] I can state the results of a goal against a set of facts and rules, including all the answers in order.
 - [ ] I can explain backtracking in words and say why a goal can give the same answer more than once.
 - [ ] I can compare imperative and declarative programming and say when each is suitable.
@@ -795,7 +833,7 @@ A: One possible answer:
 - Low-level code is fast, small and close to the hardware, but long, hard to read and tied to one processor type.
 - Addressing modes: immediate (the value), direct (the address), indirect (the address of the address), indexed (address plus IX), relative (offset from the instruction itself).
 - `CMP` compares ACC only; a counted loop needs a count kept in memory, or a sentinel.
-- Declarative code: **facts** end with a full stop, **rules** have a head, `IF` and a body joined by `AND`; constants are lower case and variables are capitalised.
+- Declarative code: **facts** end with a full stop, **rules** have a head, `IF` and a body joined by `AND`; constants are lower case and variables are capitalised. `NOT` makes a condition true when it cannot be proved; put it after the conditions that choose the values.
 - A **goal** is satisfied by matching facts and rules from the top, in order; **backtracking** finds the other answers. Everything not provable is false.
 - Imperative says **how**; declarative says **what** is true.
 :::

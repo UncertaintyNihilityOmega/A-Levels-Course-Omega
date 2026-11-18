@@ -1,6 +1,7 @@
 # data/cs.prolog_sim.py: a tiny Prolog-style engine used by checks/cs.paradigms.py to recompute every goal result.
 # Facts and rules are read in the Cambridge form (IF, AND) or the SWISH form (:-, comma). Supports atoms, variables,
-# compound terms, numbers, and the tests  \=  >  <  >=  <=  =  . Depth-first, top to bottom, left to right: answers come
+# compound terms, numbers, the tests  \=  >  <  >=  <=  =  and NOT goal (negation as failure, as in the 9618/31
+# and 9618/32 June 2024 mark schemes). Depth-first, top to bottom, left to right: answers come
 # in the same order as a real Prolog system.
 import re
 import itertools
@@ -50,6 +51,12 @@ TESTS = ["\\=", ">=", "<=", ">", "<", "="]
 
 
 def parse_goal(s, env):
+    s = s.strip()
+    if s.startswith("NOT ") or s.startswith("NOT("):  # negation as failure, the Cambridge form NOT goal
+        inner = s[3:].strip()
+        if inner.startswith("(") and inner.endswith(")"):
+            inner = inner[1:-1]
+        return ("$not", parse_goal(inner, env), None)
     for t in TESTS:
         if t in s and "(" not in s.split(t)[0]:
             left, right = s.split(t, 1)
@@ -118,6 +125,10 @@ def solve(goals, b, prog):
         yield b
         return
     g, rest = goals[0], goals[1:]
+    if g[0] == "$not":
+        if next(solve([g[1]], b, prog), None) is None:
+            yield from solve(rest, b, prog)
+        return
     if g[0].startswith("$"):
         x, y = walk(g[1], b), walk(g[2], b)
         op = g[0][1:]

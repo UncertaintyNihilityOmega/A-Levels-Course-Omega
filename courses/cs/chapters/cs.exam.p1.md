@@ -80,15 +80,15 @@ Every question starts with a command word, and the command word decides what an 
 
 | Command word | Cambridge meaning | What the answer contains |
 |---|---|---|
-| **State**, **Give**, **Identify** | express in clear terms; name, select or recognise | the term or the value only, one point per mark; no explanation is needed |
+| **State**, **Give**, **Identify** | State: express in clear terms. Give: produce an answer from a given source or from memory. Identify: name, select or recognise | the term or the value only, one point per mark; no explanation is needed |
 | **Describe** | state the points; give the characteristics and main features | a list of facts, steps or features, each one a different correct point |
-| **Explain** | set out purposes or reasons; say why and/or how, with evidence | a point **and its reason**: "because", "so that", "which means" |
+| **Explain** | set out purposes or reasons; make the relationships between things clear; say why and/or how, with evidence | a point **and its reason**: "because", "so that", "which means" |
 | **Justify** | support a case with evidence or argument | the choice, then reasons **taken from the scenario** |
-| **Complete** | add to a diagram or table | fill every blank in the layout given |
-| **Calculate** | work out a numerical answer | the working, then the answer with its unit |
+| **Complete** | add information to an incomplete diagram or table | fill every blank in the layout given |
+| **Calculate** | work out from given facts, figures or information | the working, then the answer with its unit |
 | **Define** | give the precise meaning | the exact meaning in one or two sentences, using the correct term |
 
-Four more words appear often. **Outline** and **Suggest** are best answered like *Describe* (several short, different points). **Compare** and **Contrast** need both items in the same sentence: "A uses … whereas B uses …". These last four are this course's advice rather than Cambridge's definitions.
+Four more words appear often. Cambridge defines **Outline** as "set out the main points" and **Suggest** as applying your knowledge to a situation where several answers are valid: answer both like *Describe*, with several short, different points. **Compare** means identify or comment on similarities and/or differences, and **Contrast** means differences only: write both items in the same sentence, "A uses … whereas B uses …". The way to answer each is this course's advice; the meanings are Cambridge's.
 
 ### How many points does an answer need?
 
@@ -120,7 +120,7 @@ The paper says **calculators must not be used**, so every number can be done by 
 :::eg Estimating a file size by hand
 A sports club in Quito stores a photograph as a bitmap of 1024 pixels wide and 512 pixels high with a colour depth of 16 bits. Calculate the size of the file in mebibytes. Ignore the file header. [3 marks]
 
-Write each number as a power of two, so the sum becomes an addition of powers: \(1024 = 2^{10}\), \(512 = 2^{9}\), \(16 = 2^{4}\).
+Write each number as a power of two, so the multiplication becomes an addition of powers: \(1024 = 2^{10}\), \(512 = 2^{9}\), \(16 = 2^{4}\).
 
 Size in bits \(= 2^{10} \times 2^{9} \times 2^{4} = 2^{23}\). [M1]
 

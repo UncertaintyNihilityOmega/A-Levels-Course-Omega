@@ -126,6 +126,8 @@ This outputs `Kito says ...` and `Zuri says ...`. The parameters of the construc
 
 :::note How method calls are written
 The Pseudocode Guide writes the call of a method with dot notation, for example `Player.SetAttempts(5)`, and writes the constructor as `PUBLIC PROCEDURE NEW(...)`. If an exam question prints its own method calls with `CALL` in front, copy the question's style. Members are public unless the code says otherwise, but state `PUBLIC` or `PRIVATE` every time in your own answers.
+
+The guide does not show how to declare a variable that will hold an object. This course writes `DECLARE FirstPet : Pet`, using the class name as the type, as it does for a record type, and later an array whose element type is a class (`ARRAY[1:3] OF Pet`). The guide also has no keyword for overriding: a subclass simply declares a method with the same name. Both are common usage, not rules quoted from the guide; if a question shows another style, follow the question.
 :::
 
 | | Cambridge pseudocode | Python |
@@ -684,7 +686,7 @@ A **class diagram** shows the classes of a program and how they relate, without 
 3. **Bottom compartment:** the methods, with their parameters and the type they return (`GetAge() : INTEGER`).
 4. An arrow from a subclass to its superclass shows **inheritance**.
 5. A line with a diamond at one end shows **containment**: the diamond is at the class that contains the others.
-6. This course draws `−` before a private member and `+` before a public one. If a question uses another style, follow the question.
+6. This course draws `−` before a private member and `+` before a public one. Cambridge's own class diagrams often leave out the `−` and `+`, list getters without a return type (`GetPetName()`) and may show the constructor as `Constructor()` (9618/31 November 2024 mark scheme). Follow the style of the diagram the question prints.
 :::
 
 The first diagram in this chapter has `Pet` at the top and an arrow that points at it from `Cat` and `Dog`. Read it by walking down: `Cat` has everything `Pet` has, plus `Breed` and `GetBreed`. The second diagram has no arrow, because neither class inherits from the other. They are joined by the containment line.
