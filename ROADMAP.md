@@ -3,11 +3,11 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
-- Queue item 5, Computer Science (`cs`, 9618, 49 chapters in 22 packages): P1–P17 written (36 chapters, 16 widgets),
-  P1–P16 reviewed; 1 open item (cs.algorithms2, widget cs-sort). Waiting for the reset at 20:10 Nov 18 (5-hour
-  window 90%). Next: FIX + WRITE P18, WRITE P19, then REVIEW P17–P20 (P17: check the OOP pseudocode against the
-  Pseudocode Guide: DECLARE of object variables, an array of a superclass holding subclass objects, overriding with
-  no keyword; the Writer could not read the guide's PDF).
+- Queue item 5, Computer Science (`cs`, 9618, 49 chapters in 22 packages): P1–P21 written (47 chapters, 16 widgets),
+  P1–P19 reviewed; 2 open items (cs.exam.p2 reads `Highest` before it is set; cs.paradigms needs an exam question in
+  the real three-part declarative form). Waiting for the reset at 01:10 Nov 19 (5-hour window 68%). Next: FIX +
+  WRITE P22 (mocks for Papers 3 and 4), then REVIEW P20, P21, P22 (the last packages; P21: check that the insert table
+  renders well inside the `:::exam` box at phone width), then READER batches.
 - Usage gate: weekly limit 95% for every launch (AGENT-RUN.md "Usage gate").
 - Name: "Zero to A* Ω" (titles, installed app, shared links). Top bar and Home heading: the hand-drawn wordmark "Log end"
   (`engine/wordmark.py --shell` writes it into shell.html; colours in style.css `.wm-*`).
