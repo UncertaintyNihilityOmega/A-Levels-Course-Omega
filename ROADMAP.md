@@ -4,9 +4,12 @@
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
 - Queue item 5, Computer Science (`cs`, 9618, 49 chapters in 22 packages): all 22 packages written (49 chapters,
-  16 widgets), P1–P19 reviewed, no open items. Waiting for the reset at 01:10 Nov 19 (5-hour window 80%). Next: REVIEW
-  P20, P21, P22 (the last packages; P21: check that the insert table renders well inside the `:::exam` box at phone
-  width; P22: cs.mock.p4 Question 3 methods (c)–(e) belong inside `Department`), then READER batches, FIX, REVIEW FINAL.
+  16 widgets), P1–P19 reviewed. READER: cs.overview to cs.databases (14 chapters), 48 open (reader) items in
+  REVIEW.md. Waiting for the reset at 01:10 Nov 19 (5-hour window 91%). Next: REVIEW P20, P21, P22 (the last
+  packages; P21: check that the insert table renders well inside the `:::exam` box at phone width; P22: cs.mock.p4
+  Question 3 methods (c)–(e) belong inside `Department`); a FIX Writer for the 48 reader items (worst: cs.databases
+  and cs.security lean on cs.datatypes, which comes later in course.json; cs.assembly says a location holds 8 bits
+  beside 16-bit instructions); READER from cs.sql on; then FIX, REVIEW FINAL.
 - Usage gate: weekly limit 95% for every launch (AGENT-RUN.md "Usage gate").
 - Name: "Zero to A* Ω" (titles, installed app, shared links). Top bar and Home heading: the hand-drawn wordmark "Log end"
   (`engine/wordmark.py --shell` writes it into shell.html; colours in style.css `.wm-*`).
