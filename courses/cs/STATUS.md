@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-18 · REVIEW P17, P18, P19 · 2 items (cs.exam.p2 Highest read before set; cs.paradigms add a real-form declarative exam question). Fixed: cs.paradigms NOT rules (Cambridge form checked on 9618/31-32 2023-24 papers and mark schemes), one-line goal results, comparison claim; prolog_sim supports NOT; cs.oop DECLARE/array/overriding labelled as usage not guide rules, Cambridge class-diagram style; cs.exam.p1 command words per syllabus pp41-42; FACTS command words and P3 declarative/OOP forms; P22 notes
+Last: 2026-11-18 · WRITE P20 · cs.exam.p3 (6,130 words, 8 egs), cs.exam.p4 (4,734 words, 3 egs), cs.mixed.a2 (7,730 words: 18 Paper 3 style questions = 121 marks, 5 Paper 4 tasks = 52 marks, 11-question quiz); no widgets; no figures; check and phone pass. Reviewer: p4 guide says PMT lists papers and mark schemes only (source files not listed, verified); p4 partial-credit section uses a non-running text block deliberately; Q11 A* heuristic table verified admissible and consistent; round robin tie rule stated in the question.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -24,7 +24,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P17: reviewed 2026-11-18
 - P18: reviewed 2026-11-18
 - P19: reviewed 2026-11-18
-- P20: writing 2026-11-18
+- P20: written 2026-11-18
 - P21: written 2026-11-18
 - P22: open
 - READER: open
