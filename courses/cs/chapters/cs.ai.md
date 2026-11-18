@@ -451,7 +451,7 @@ Some games let the character move diagonally. Then the Manhattan distance would 
 | Best when | there is no useful estimate, or the distances to *all* vertices are wanted | there is one destination and a good estimate (maps, game levels) |
 
 :::exam How to write Dijkstra and A* answers
-- Always lay out a table with one column per vertex (Dijkstra) or an open and a closed list (A*), and show the working in it. A marker gives a mark for each correct step, so a table with one wrong cell early on can still earn the later marks if your method is right.
+- Always lay out a table with one column per vertex (Dijkstra) or an open and a closed list (A*), and show the working in it. The marks are for the steps of the method as well as the final path, so a table that shows every step can earn marks even if one value goes wrong.
 - State your tie rule in a few words ("ties broken alphabetically") if you meet one.
 - Keep the **previous vertex** next to every distance. You need it to trace the path.
 - Check your answer by adding the weights along your path. That total must equal the destination's final distance.

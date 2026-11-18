@@ -113,76 +113,73 @@ def half_adder():
 
 
 def full_adder():
-    f = Fig("full", 590, 170, "fig",
+    # Review 2026-11-18: compressed from 590 to 430 wide so the labels stay readable on a phone
+    f = Fig("full", 430, 170, "fig",
             "A full adder built from two half adders and an OR gate. Half adder 1 adds A and B, giving a partial sum and a first carry. Half adder 2 adds that partial sum to the carry in Cin, giving the final Sum. The OR gate combines the two carries into Cout.",
             "A full adder: half adder 1 adds A and B; half adder 2 adds its sum to the carry in; an OR gate joins the two carries to give the carry out.")
     f.text(14, 14, "Cin")
-    f.line([(40, 10), (270, 10), (270, 40), (290, 40)])
+    f.line([(40, 10), (190, 10), (190, 40), (210, 40)])
     f.text(14, 44, "A")
-    f.line([(30, 40), (90, 40)])
+    f.line([(30, 40), (60, 40)])
     f.text(14, 74, "B")
-    f.line([(30, 70), (90, 70)])
-    for x in (90, 290):
-        f.rect(x, 25, 100, 60)
-    for cx in (140, 340):
+    f.line([(30, 70), (60, 70)])
+    for x in (60, 210):
+        f.rect(x, 25, 80, 60)
+    for cx in (100, 250):
         f.text(cx, 49, "Half", "middle")
         f.text(cx, 70, "adder", "middle")
-    for x, a, b, s, c in ((90, "A", "B", "S", "C"), (290, "Cin", "S1", "S", "C")):
-        pass
     # pin labels inside the boxes
-    f.text(96, 44, "A")
-    f.text(96, 74, "B")
-    f.text(184, 44, "S", "end")
-    f.text(184, 74, "C", "end")
-    f.text(296, 44, "A", "start")
-    f.text(296, 74, "B", "start")
-    f.text(384, 44, "S", "end")
-    f.text(384, 74, "C", "end")
+    f.text(66, 44, "A")
+    f.text(66, 74, "B")
+    f.text(134, 44, "S", "end")
+    f.text(134, 74, "C", "end")
+    f.text(216, 44, "A", "start")
+    f.text(216, 74, "B", "start")
+    f.text(284, 44, "S", "end")
+    f.text(284, 74, "C", "end")
     # S1 from half adder 1 to the second input of half adder 2
-    f.line([(190, 40), (232, 40), (232, 70), (290, 70)])
+    f.line([(140, 40), (165, 40), (165, 70), (210, 70)])
     # C1 to the OR gate (pin 2)
-    f.line([(190, 70), (205, 70), (205, 130), (474, 130)])
+    f.line([(140, 70), (152, 70), (152, 130), (334, 130)])
     # S of half adder 2 -> Sum
-    f.line([(390, 40), (530, 40)])
-    f.text(536, 44, "Sum")
+    f.line([(290, 40), (390, 40)])
+    f.text(396, 44, "Sum")
     # C2 to the OR gate pin 1
-    f.line([(390, 70), (430, 70), (430, 110), (474, 110)])
-    o = f.gate("OR", 470, 100)
-    f.line([o["out"], (530, o["out"][1])])
-    f.text(536, 124, "Cout")
+    f.line([(290, 70), (310, 70), (310, 110), (334, 110)])
+    o = f.gate("OR", 330, 100)
+    f.line([o["out"], (390, o["out"][1])])
+    f.text(396, 124, "Cout")
     FIGS.append(f)
 
 
 def ripple_chain():
-    f = Fig("chain", 600, 150, "fig",
+    # Review 2026-11-18: compressed from 600 to 430 wide (boxes 66 wide, "Full" / "adder" on two lines)
+    f = Fig("chain", 430, 150, "fig",
             "Four full adders chained to add two 4-bit numbers. Each box adds one bit position. Its carry out goes to the carry in of the box on its left. The carry into the rightmost box is 0, and the leftmost box gives the final carry out.",
             "A ripple-carry adder: four full adders in a row for bits 3 to 0, with the carry passed from each adder to the next on its left.")
-    xs = [70, 200, 330, 460]
+    bw = 66
+    xs = [56, 148, 240, 332]
     for k, x in enumerate(xs):
         bit = 3 - k
-        f.rect(x, 45, 90, 50)
-        f.text(x + 45, 74, "Full adder", "middle")
-        f.text(x + 22, 14, f"A{bit}", "middle")
-        f.text(x + 68, 14, f"B{bit}", "middle")
-        f.line([(x + 22, 22), (x + 22, 45)], arrow=True)
-        f.line([(x + 68, 22), (x + 68, 45)], arrow=True)
-        f.line([(x + 45, 95), (x + 45, 118)], arrow=True)
-        f.text(x + 45, 136, f"S{bit}", "middle")
-    for k in range(3):
-        right = xs[k] + 90
-        left_of_next = xs[k + 1]
-        # carry goes from the left side of the box on the right to the right side of the box on the left: right-to-left
-        pass
+        f.rect(x, 45, bw, 50)
+        f.text(x + bw / 2, 66, "Full", "middle")
+        f.text(x + bw / 2, 84, "adder", "middle")
+        f.text(x + 16, 14, f"A{bit}", "middle")
+        f.text(x + 50, 14, f"B{bit}", "middle")
+        f.line([(x + 16, 22), (x + 16, 45)], arrow=True)
+        f.line([(x + 50, 22), (x + 50, 45)], arrow=True)
+        f.line([(x + bw / 2, 95), (x + bw / 2, 118)], arrow=True)
+        f.text(x + bw / 2, 136, f"S{bit}", "middle")
     # carries (right to left): box k+1 (to the right) passes its carry out to box k (to the left)
     for k in range(3):
-        f.line([(xs[k + 1], 70), (xs[k] + 90 + 0, 70)], arrow=True)
+        f.line([(xs[k + 1], 70), (xs[k] + bw, 70)], arrow=True)
     for k in range(3):
-        cx = (xs[k] + 90 + xs[k + 1]) / 2
+        cx = (xs[k] + bw + xs[k + 1]) / 2
         f.text(cx, 62, f"C{3 - k}", "middle")
-    f.line([(xs[0], 70), (45, 70)], arrow=True)
-    f.text(8, 74, "Cout")
-    f.line([(580, 70), (xs[3] + 90, 70)], arrow=True)
-    f.text(588, 74, "0")
+    f.line([(xs[0], 70), (42, 70)], arrow=True)
+    f.text(4, 74, "Cout")
+    f.line([(410, 70), (xs[3] + bw, 70)], arrow=True)
+    f.text(418, 74, "0")
     FIGS.append(f)
 
 

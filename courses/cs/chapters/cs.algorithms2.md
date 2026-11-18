@@ -294,7 +294,7 @@ NEXT Index
 `Item` holds the value being inserted, so it is not lost when a larger value is copied over its old place. `Position` moves left while the element on its left is larger. When the loop stops, `Position + 1` is the gap.
 :::
 
-The loop condition tests `Position >= 1` first. When `Position` reaches 0, the gap is at the very front and there is no `Values[0]` to compare with. In Python, `and` stops at the first false test, so the order of the two tests protects the second. For descending order, change `>` to `<`.
+The loop condition tests `Position >= 1` first. When `Position` reaches 0, the gap is at the very front and there is no `Values[0]` to compare with. The Pseudocode Guide does not say whether `AND` stops at the first false test, but Cambridge's own mark schemes write the loop this way, with the position test first (for example 9618/31, June 2021). In Python, `and` does stop at the first false test, so putting `position >= 0` first protects the second. Code that must not rely on this uses a Boolean flag, as the Python version below does. For descending order, change `>` to `<`.
 
 For the full program, here is the complete array `Values` of six elements, with the declarations.
 
@@ -494,7 +494,7 @@ Bubble sort's worst case is \(\tfrac{n(n-1)}{2} = \tfrac{n^2}{2} - \tfrac{n}{2}\
 | \(O(1)\) | constant | read one array element; push onto a stack | no change |
 | \(O(\log n)\) | logarithmic | binary search | one more step |
 | \(O(n)\) | linear | linear search; total of an array | steps double |
-| \(O(n \log n)\) | linearithmic | faster sorts such as merge sort and quick sort | a little more than double |
+| \(O(n \log n)\) | linearithmic | faster sorts such as merge sort (and quick sort, on average) | a little more than double |
 | \(O(n^2)\) | polynomial (quadratic) | bubble sort and insertion sort, worst case; two nested loops | steps quadruple |
 | \(O(2^n)\) | exponential | trying every subset of \(n\) items | steps are squared |
 

@@ -57,6 +57,10 @@ packages/`Pn`.md, nothing else. Written by the Specialist (LEAD, 13 November 202
 - Operator precedence: the Pseudocode Guide states only that `*` and `/` come before `+` and `-`. Treat `DIV` and
   `MOD` like division but always bracket them when they meet another operator; never set a question whose answer
   depends on the precedence of `DIV` or `MOD`. (REVIEW P5–P8.)
+- Guarded loop conditions (`WHILE Index > 1 AND Values[Index - 1] > Item`, `WHILE Current <> 0 AND
+  Data[Current] <> Target`): write the guard first, as Cambridge mark schemes do (9618/31 June 2021, insertion
+  sort). The Pseudocode Guide does not define short-circuit `AND`, so never claim it does; in Python say that
+  `and` stops at the first false test. (REVIEW P13–P16.)
 - SQL in ` ```text ` blocks, keywords in capitals, one clause per line; only the statements FACTS.md lists.
 - Logic: write expressions as `X = (A AND B) OR NOT C` in text, and in maths only for Boolean algebra at A Level
   (\(\overline{A}\) is not allowed by the kit: write \(\text{NOT } A\) or \(A'\) and say which; this course uses

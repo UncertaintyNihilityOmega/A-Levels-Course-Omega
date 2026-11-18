@@ -112,7 +112,7 @@ t3 = []
 for name, (x, y) in nodes.items():
     cls = "fm s-acc sw2" if name in "+-*/" else "f1 s-acc sw2"
     parts.append(f'<circle class="{cls}" cx="{x}" cy="{y}" r="{R}"/>')
-    parts.append(f'<text class="tl tc" x="{x}" y="{y + 5}">{name}</text>')
+    parts.append(f'<text class="tl tc tb" x="{x}" y="{y + 5}">{name}</text>')
     circles.append((x - R, y - R, x + R, y + R))
     t3.append(text(x, y + 5, name))
 t3.append(text(170, 254, "post-order: A B + C D - * E /", "tl tc"))

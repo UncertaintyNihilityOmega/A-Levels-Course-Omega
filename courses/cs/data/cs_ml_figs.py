@@ -108,7 +108,7 @@ lab = []
 for a, b, w, t in edges:
     (x1, y1), (x2, y2) = P[a], P[b]
     mx, my = round(x1 + (x2 - x1) * t), round(y1 + (y2 - y1) * t)
-    out.append(f'<text class="tl tc halo" x="{mx}" y="{my + 4}">{w}</text>')
+    out.append(f'<text class="tl tc tb halo" x="{mx}" y="{my + 4}">{w}</text>')
     lab.append(((a, b), box(mx, my, w)))
 for n, (x, y) in P.items():
     out.append(f'<circle class="f1 s-acc sw2" cx="{x}" cy="{y}" r="{R}"/>')
@@ -126,8 +126,9 @@ for k, (key, b) in enumerate(lab):
         assert circ_gap((x, y), R, b) >= 3, f"{key} touches node {n}"
     for key2, b2 in lab[k + 1:]:
         assert gap(b, b2) >= 4, f"{key} and {key2} touch"
-figs["xor"] = ('<figure class="fig small"><svg viewBox="0 0 %d %d" role="img" aria-label="A neural network with two inputs x1 and x2, two hidden nodes h1 and h2, and one output node o. Every input is joined to both hidden nodes with weight 1. The hidden node h1 has bias minus 1 and h2 has bias minus 2. The weight from h1 to o is 1 and from h2 to o is minus 1. The output node has bias minus 1.">%s</svg>'
-               '<figcaption>A 2-2-1 network with every weight and bias written on it. Each node adds up its weighted inputs and its bias, then outputs 1 if the total is 0 or more, and 0 otherwise.</figcaption></figure>') % (W, H, "".join(out))
+# viewBox cropped to the drawing (x 20-325, y 22-212) so the labels are larger on a phone
+figs["xor"] = ('<figure class="fig small"><svg viewBox="20 22 %d %d" role="img" aria-label="A neural network with two inputs x1 and x2, two hidden nodes h1 and h2, and one output node o. Every input is joined to both hidden nodes with weight 1. The hidden node h1 has bias minus 1 and h2 has bias minus 2. The weight from h1 to o is 1 and from h2 to o is minus 1. The output node has bias minus 1.">%s</svg>'
+               '<figcaption>A 2-2-1 network with every weight and bias written on it. Each node adds up its weighted inputs and its bias, then outputs 1 if the total is 0 or more, and 0 otherwise.</figcaption></figure>') % (W - 35, H - 50, "".join(out))
 
 # ---- 4. the reinforcement learning loop --------------------------------------------------------------------------
 W, H = 320, 210

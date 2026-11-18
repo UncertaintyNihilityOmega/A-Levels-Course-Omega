@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-18 · WRITE P16 · cs.algorithms2 (8869 words) and cs.adts (10485 words), both check ok, phone ok; widget cs-sort (bubble, insertion, binary, linear; probe clean light/dark/phone/bad attributes; Node test data/cs-sort.test.js matches the chapter counts); reviewer: see Writer's notes in packages/P16.md (FreePointer naming, short-circuit AND in insertion sort WHILE, hash table section, widget interactions not clicked in a browser)
+Last: 2026-11-18 · REVIEW P13, P14, P15, P16 · 1 open item (cs.algorithms2: cs-sort keeps values between Binary and Linear). Fixed: cs.boolean full adder and ripple-carry figures compressed for phones (generator refreshed); cs.ml XOR figure labels and bias note (9618/31 Jun 2025 MS uses weights/biases); cs.translators tree labels and optimiser wording; cs.algorithms2 insertion-sort guard now cites 9618/31 Jun 2021 MS, quick sort average; cs.ai exam-box wording. COURSE.md guarded-loop rule; FACTS.md Paper 3 mark-scheme wording. All 4 widgets used by mouse and keyboard; TLS step 4 matches 9618/31 Nov 2021 MS.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -17,11 +17,11 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P10: reviewed 2026-11-15
 - P11: reviewed 2026-11-15
 - P12: reviewed 2026-11-15
-- P13: written 2026-11-14
-- P14: written 2026-11-18
-- P15: written 2026-11-18
-- P16: written 2026-11-18
-- P17: open
+- P13: reviewed 2026-11-18
+- P14: reviewed 2026-11-18
+- P15: reviewed 2026-11-18
+- P16: reviewed 2026-11-18
+- P17: writing 2026-11-18
 - P18: open
 - P19: open
 - P20: open

@@ -83,6 +83,14 @@ way).
 - That paper: 16 pages, 12 questions of 4 to 9 marks (floating point, TCP/IP layers, a linked list, a truth table
   to simplify, interpreters, syntax diagrams, multi-tasking, SSL/TLS, graphs in AI, a class to design, a pseudocode
   algorithm to complete).
+- Paper 3 mark-scheme wording checked in review P13–P16: interpreter (9618/31 June 2025 Q6: one line at a time,
+  executed if error free, not stored in executable form, halts with an error message, lines in loops translated
+  every time); BNF with recursive helper rules (`<code> ::= <lowercase>|…|<lowercase><code>|…`, same paper Q7);
+  SSL/TLS handshake (9618/31 Nov 2021: client requests and verifies the server's certificate, obtains its public
+  key, algorithms agreed, symmetric session keys generated); RPN evaluation with a stack (9618/31 Nov 2023:
+  push operands, pop the last two at an operator, push the result); RPN benefits (9618/31 June 2021: unambiguous,
+  left to right, no brackets, no precedence rules); deep learning "adjusting the weights/biases" (9618/31 June
+  2025 Q10); insertion sort `WHILE Counter > 1 AND Score[Counter - 1] < …` (9618/31 June 2021).
 
 ### Paper 4 (9618/41, May/June 2025)
 - 2 hours 30 minutes. "You will need: Candidate source files (listed on page 2), evidence.doc".
