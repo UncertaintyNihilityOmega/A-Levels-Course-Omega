@@ -180,7 +180,7 @@ Low 5 High 5 Mid 5 Values[Mid] 21
 Position of 20: -1
 ```
 
-The widget below runs the same algorithm. Press Step to follow Low, Mid and High under the bars, and change the target to see a search that fails.
+The widget below runs the same algorithm. Press Step to follow Low, Mid and High under the bars, and change the target to see a search that fails. Switch to Linear with the same target to compare the counts.
 
 :::html
 <div class="widget" data-w="cs-sort" data-algo="binary" data-values="3,8,12,17,21,26,30,35,41,48,55" data-target="35"></div>

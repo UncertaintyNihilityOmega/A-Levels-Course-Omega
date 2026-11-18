@@ -2,7 +2,7 @@
    <div class="widget" data-w="cs-sort" data-algo="insertion" data-values="29,10,14,37,13,5" data-target="35"></div>
    data-algo: bubble, insertion, binary or linear (the tab shown first; anything else gives bubble).
    data-values: 5 to 12 whole numbers from 1 to 99 (an invalid list falls back to the default for that kind).
-   data-target: the number to look for in the two searches (default 35 for binary, 13 for linear).
+   data-target: the number to look for in the two searches (default 35 for binary, 13 for linear). The two search tabs share their values and target.
    The algorithms (object S) are pure, count comparisons exactly as the chapter cs.algorithms2 does, and are exported for a
    Node test (data/cs-sort.test.js). Nothing throws: bad input returns {error}. */
 (function () {
@@ -235,17 +235,16 @@
     opts = opts || {};
     let algo = S.algoOf(opts.algo);
     let sortVals = S.DEFAULT_SORT.slice();
-    let binVals = S.DEFAULT_BINARY.slice();
-    let linVals = S.DEFAULT_LINEAR.slice();
+    // Binary and Linear share one list and one target, so the two searches can be compared on the same data.
+    let srchVals = (algo === 'linear' ? S.DEFAULT_LINEAR : S.DEFAULT_BINARY).slice();
     const given = S.parseValues(opts.values);
     if (!given.error) {
-      if (algo === 'binary') binVals = given.values;
-      else if (algo === 'linear') linVals = given.values;
-      else sortVals = given.values;
+      if (S.isSort(algo)) sortVals = given.values;
+      else srchVals = given.values;
     }
-    let binTarget = 35, linTarget = 13;
+    let srchTarget = algo === 'linear' ? 13 : 35;
     const gt = S.parseTarget(opts.target);
-    if (!gt.error) { if (algo === 'binary') binTarget = gt.target; else if (algo === 'linear') linTarget = gt.target; }
+    if (!gt.error) srchTarget = gt.target;
 
     const frame = W.frame(el, 'Sorting and searching', 'Step through the algorithm and watch the counters');
     const body = frame.body;
@@ -254,9 +253,9 @@
     let timer = null;
     let seed = 1;
 
-    function valsOf() { return algo === 'binary' ? binVals : (algo === 'linear' ? linVals : sortVals); }
-    function setVals(v) { if (algo === 'binary') binVals = v; else if (algo === 'linear') linVals = v; else sortVals = v; }
-    function targetOf() { return algo === 'binary' ? binTarget : linTarget; }
+    function valsOf() { return S.isSort(algo) ? sortVals : srchVals; }
+    function setVals(v) { if (S.isSort(algo)) sortVals = v; else srchVals = v; }
+    function targetOf() { return srchTarget; }
 
     // ----- tabs
     const tabsEl = W.h('div', { 'class': 'w-tabs', role: 'group', 'aria-label': 'Choose an algorithm', style: { display: 'flex', flexWrap: 'wrap', maxWidth: '100%', gap: '4px' } });
@@ -447,7 +446,7 @@
       if (!S.isSort(algo)) {
         const pt = S.parseTarget(tgtIn.value);
         if (pt.error) { err.textContent = pt.error; err.style.display = ''; return false; }
-        if (algo === 'binary') binTarget = pt.target; else linTarget = pt.target;
+        srchTarget = pt.target;
       }
       err.style.display = 'none';
       err.textContent = '';
