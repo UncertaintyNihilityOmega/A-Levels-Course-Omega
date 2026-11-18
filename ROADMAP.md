@@ -3,8 +3,11 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
-- Queue item 5, Computer Science (`cs`, 9618, 49 chapters in 22 packages): P1–P13 written (28 chapters, 12 widgets),
-  P1–P12 reviewed, no open items. Next: WRITE P14 and P15 (two Writers), then REVIEW P13–P16 when four are written.
+- Queue item 5, Computer Science (`cs`, 9618, 49 chapters in 22 packages): P1–P17 written (36 chapters, 16 widgets),
+  P1–P16 reviewed; 1 open item (cs.algorithms2, widget cs-sort). Waiting for the reset at 20:10 Nov 18 (5-hour
+  window 90%). Next: FIX + WRITE P18, WRITE P19, then REVIEW P17–P20 (P17: check the OOP pseudocode against the
+  Pseudocode Guide: DECLARE of object variables, an array of a superclass holding subclass objects, overriding with
+  no keyword; the Writer could not read the guide's PDF).
 - Usage gate: weekly limit 95% for every launch (AGENT-RUN.md "Usage gate").
 - Name: "Zero to A* Ω" (titles, installed app, shared links). Top bar and Home heading: the hand-drawn wordmark "Log end"
   (`engine/wordmark.py --shell` writes it into shell.html; colours in style.css `.wm-*`).
