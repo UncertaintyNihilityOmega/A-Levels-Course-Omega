@@ -23,7 +23,8 @@ There is no CLAUDE.md at the root: course sessions would load it. Start every Or
 - After any change to `engine/`, kit sources, templates or a `course.json`: `node engine/sync.js`.
 - Commit each finished step with a clear message, then `git push`. Pushing to `main` publishes the site.
 - Docs and memory hold rules and current state only, as short lists. History lives in git commits.
-  ROADMAP.md "Now" is the only status record.
+  ROADMAP.md "Now" is the only status record. ROADMAP.md "Done" holds the current snapshot only; CHANGELOG.md holds
+  the reader-facing notes and every earlier snapshot (empty "Done" when a snapshot is cut).
 - ROADMAP.md at the end of every run or session: finished queue items move to "Done" (the queue holds unfinished
   items only), finished lines leave "Now", and anything only the user can do goes under "For the user".
 - Exam facts are verified against the syllabus and a real recent question paper (what each paper prints and allows).

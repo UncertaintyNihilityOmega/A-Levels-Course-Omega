@@ -3,7 +3,7 @@
 One chat = one step; close it when it reports back. The folder decides the course, the prompt decides the role, and
 the course's CLAUDE.md explains the rest.
 
-## Organizer (Opus, folder: the project root `A Levels Course`)
+## Organizer (Opus, folder: the project root `A Levels Course Omega`)
 
 | Step | Prompt |
 |---|---|
@@ -13,7 +13,7 @@ the course's CLAUDE.md explains the rest.
 | Assembly | `Project Organizer session: assembly. Read ORGANIZER.md and ROADMAP.md and run the assembly session.` |
 | A problem | `Project Organizer session. Read ORGANIZER.md. <describe the problem>` |
 
-## Course chats (classic method; folder: `A Levels Course\courses\<c>`)
+## Course chats (classic method; folder: `A Levels Course Omega\courses\<c>`)
 
 1. New session in the Code tab → folder `courses\<c>` (not the project root); decline a worktree.
 2. Model: **Opus** for Specialist, **Sonnet** for Writer and Reader.

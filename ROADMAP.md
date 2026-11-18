@@ -22,6 +22,9 @@
 - **The queue holds unfinished items only.** At the end of every run: move each finished queue item to "Done" (one
   line: its number, what it is, the date), delete finished lines from "Now", and put anything only the user can do
   under "For the user" (never in the queue). Queue numbers never change (commits and docs refer to them).
+- **"Done" covers the current snapshot only.** It lists what was finished since the last CHANGELOG.md version, as
+  short lines (queue number, date, decisions left out on purpose, user checks); what readers notice goes under
+  "Unreleased" in CHANGELOG.md. When a snapshot is cut (its version heading written in CHANGELOG.md), empty "Done".
 - A course ends with: REVIEW FINAL, the assembly session (ORGANIZER.md), guard off, preview stopped.
 - A run stopped by a usage limit leaves a stale lock; the next scheduled session checkpoints and continues.
 - From 2027 `status.js` warns about syllabuses in their last exam year (math, phys, chem and bio end in 2027): plan
@@ -53,28 +56,18 @@
      but not the check; measured Nov 15: 94–97% of expected numbers are found, the rest are format differences).
 
 ## Done
-- Mathematics (A Level, 62 chapters), Physics (39), Chemistry (49), Biology (64), History (96): complete.
-- GitHub Pages: every push to `main` checks, builds and publishes the site.
-- About pages for every unbuilt course (`core/about.<c>.md`): each is its course's only sidebar entry until the first chapter is written.
-- 1 Phone, Mac and accessibility: installable web app, WCAG 2.2 AA pass, macOS tools, automatic runs (Nov 2026).
-- 2 Biology (`bio`, 9700): complete (Nov 2026).
-- 3 History (`hist`, 9489; replaced Psychology): complete (Nov 13 2026).
-- 4 Reader pass on Mathematics and Physics: 169 and 109 items fixed; release v0.6.0 tagged (Nov 13 2026).
-- 6 Site loading: one file per chapter, a search file per course (Nov 14 2026; numbers in engine/README.md "Build").
-- 7 Findable pages: `p/<chapter>.html`, `sitemap.xml`, sharing tags (Nov 14 2026).
-- 8 Phone reading: "On this page" sheet, reading progress line, resume at the last section (Nov 15 2026).
-- 9 Study aids and checks: spaced re-tests, search results course by course, the reused-numbers check note
-  (Nov 15 2026). Left out on purpose: a smaller search index (the search files are the chapters' plain text; only
-  giving up full-text search would shrink them) and the maths font in `p/page.css` (do it if a device shows the
-  plain pages wrongly).
-- User checks, Nov 15 2026: phone reading (round button, progress line, "Pick up where you left off") works on the
-  user's phone; screen readers work on PC and phone, site and app; the site is verified in Google Search Console;
-  the `new-project` skill is uploaded (Customize page) and shows in the app's skill list.
-- Nov 15 2026 (user's list, checked by the user): the hand-drawn wordmark "Log end" in the top bar; a line between
-  History and Other subjects; the name "Zero to A* Ω"; Business before Economics; lines between the fields of the
-  sidebar; the Graph plotter and Periodic table load again (broken since queue item 6); Settings in boxed sections
-  with "On this page", and the reader's own picture as the icon inside the guide (the installed app keeps the
-  published icon: the user tried it on Android Chrome and accepts that).
+Since 0.6.0 (Nov 13 2026). Earlier work: CHANGELOG.md; what readers see of the items below: its "Unreleased".
+- 6 Site loading (Nov 14 2026; numbers in engine/README.md "Build").
+- 7 Findable pages (Nov 14 2026).
+- 8 Phone reading (Nov 15 2026).
+- 9 Study aids and checks (Nov 15 2026). Left out on purpose: a smaller search index (the search files are the
+  chapters' plain text; only giving up full-text search would shrink them) and the maths font in `p/page.css` (do it
+  if a device shows the plain pages wrongly).
+- User checks, Nov 15 2026: phone reading works on the user's phone; screen readers work on PC and phone, site and
+  app; the site is verified in Google Search Console; the `new-project` skill shows in the app's skill list; the
+  user's Nov 15 list (wordmark, name, sidebar order and lines, Graph plotter and Periodic table, Settings) is checked.
+  The installed app keeps the published icon (tried on Android Chrome; the user accepts it).
+- Project folder renamed to `A Levels Course Omega` (Nov 18 2026): docs and the scheduled task prompt updated.
 
 ## For the user
 Things only you can do. None of them stops the automatic runs.

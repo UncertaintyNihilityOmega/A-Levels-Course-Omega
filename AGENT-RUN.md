@@ -98,7 +98,7 @@ awake (Windows: Sleep "Never" when plugged in).
   holds unfinished items only); anything only the user can do goes under "For the user".
 
 ## Prompt templates
-Replace `<C>` (course id), `<PATH>` (`C:\Users\Uncertainty\Desktop\Claude_Test\A Levels Course\courses\<C>`),
+Replace `<C>` (course id), `<PATH>` (`C:\Users\Uncertainty\Desktop\Claude_Test\A Levels Course Omega\courses\<C>`),
 `<SHPATH>` (the same with forward slashes), `<port>` and `<Pn>`. Every template starts with the common block.
 
 ### Common block (all agents)
