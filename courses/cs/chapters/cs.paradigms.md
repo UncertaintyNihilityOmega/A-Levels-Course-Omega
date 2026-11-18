@@ -622,6 +622,56 @@ taught_by(Class, Teacher) IF studies(Class, Subject) AND teaches(Teacher, Subjec
 - (c) T = luis (class 7a studies science, which Luis teaches) [B1]
 - (c) no other answer: Rosa teaches physics, but class 7a does not study it [B1]
 
+Q: [8 marks] ★★ A community garden club keeps these clauses in a knowledge base.
+
+| Clause | Meaning |
+|---|---|
+| 1 `plant(tomato).` | Tomato is a plant |
+| 2 `plant(basil).` | Basil is a plant |
+| 3 `plant(mint).` | Mint is a plant |
+| 4 `plant(carrot).` | Carrot is a plant |
+| 5 `plot(north).` | North is a plot |
+| 6 `plot(south).` | South is a plot |
+| 7 `plot(east).` | East is a plot |
+| 8 `unsuitable(tomato, north).` | Tomato does not grow well in the north plot |
+| 9 `unsuitable(basil, north).` | Basil does not grow well in the north plot |
+| 10 `unsuitable(basil, east).` | Basil does not grow well in the east plot |
+| 11 `unsuitable(mint, south).` | Mint does not grow well in the south plot |
+| 12 `unsuitable(carrot, east).` | Carrot does not grow well in the east plot |
+| 13 `sown(tomato, south).` | Tomato has been sown in the south plot |
+| 14 `sown(mint, east).` | Mint has been sown in the east plot |
+| 15 `sown(carrot, north).` | Carrot has been sown in the north plot |
+
+(a) Coriander is a plant, west is a plot, and coriander has been sown in the west plot. Write three clauses to record this. [3]
+
+(b) Using the variable X, the goal `unsuitable(X, east)` returns X = basil, carrot. Write the result returned by the goal `unsuitable(basil, X)`. [1]
+
+(c) A plant may be sown in a plot if it is a plant, the plot is a plot and the plant is not unsuitable for that plot. Complete the rule. [4]
+
+`can_sow(Plant, Plot)`
+`IF`
+H: In (a), each clause ends with a full stop, uses a lower-case constant, and has its arguments in the same order as the table.
+H: In (c), write one condition for each part of the sentence. The condition that tests for something that is not true must come last, after the conditions that choose Plant and Plot.
+A: One possible answer for (a) and (c):
+
+```text
+plant(coriander).
+plot(west).
+sown(coriander, west).
+can_sow(Plant, Plot) IF plant(Plant) AND plot(Plot) AND NOT unsuitable(Plant, Plot).
+```
+
+- (a) `plant(coriander).` [B1]
+- (a) `plot(west).` [B1]
+- (a) `sown(coriander, west).` with the plant first and the plot second [B1]
+- (b) X = north, east (the order of clauses 9 and 10) [B1]
+- (c) `plant(Plant)` and `plot(Plot)` as conditions, each joined by `AND` [B1]
+- (c) `NOT unsuitable(Plant, Plot)` [B1]
+- (c) the `NOT` condition last, using the same variables as the head [B1]
+- (c) the head `can_sow(Plant, Plot)` followed by `IF` and the conditions joined by `AND` (the comma form is also accepted) [B1]
+
+(Check with the rule: `can_sow(P, east)` gives P = tomato, mint, because basil and carrot are unsuitable for the east plot.)
+
 Q: [6 marks] ★★ (#cs.assembly) Eight numbers are stored in consecutive locations starting at `LIST`. Write assembly language code, using indexed addressing, to count how many of the numbers equal 7, and store the count in a location named `FOUND`. The numbers are 7, 3, 7, 7, 1, 9, 7 and 2.
 H: Use `LDX LIST`, then `CMP #7`. If the compare is FALSE, skip the instructions that add one to FOUND.
 H: Loop eight times with a counter in memory, as in the worked example.

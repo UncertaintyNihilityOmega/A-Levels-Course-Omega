@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-18 · WRITE P20 · cs.exam.p3 (6,130 words, 8 egs), cs.exam.p4 (4,734 words, 3 egs), cs.mixed.a2 (7,730 words: 18 Paper 3 style questions = 121 marks, 5 Paper 4 tasks = 52 marks, 11-question quiz); no widgets; no figures; check and phone pass. Reviewer: p4 guide says PMT lists papers and mark schemes only (source files not listed, verified); p4 partial-credit section uses a non-running text block deliberately; Q11 A* heuristic table verified admissible and consistent; round robin tie rule stated in the question.
+Last: 2026-11-18 · WRITE P22 · cs.mock.p3 (3,279 words, 12 questions = 75 marks, hand SVG graph from data/cs.mock34_figs.py, Q12 declarative in the real form with NOT last); cs.mock.p4 (3,605 words, Q 20+25+30 = 75; every model program is run by the checks against the printed output). Reviewer: P3 SRT times (P1 0/6, P2 1/4, P3 2/1: finish 11, 6, 3), Dijkstra table, K-map X = NOT B OR (A AND C), binary tree arrays; P4 Q3 methods (c)-(e) belong inside Department (the checks insert them), mark schemes list exactly n [B1] per part with alternatives as accept notes.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -26,6 +26,6 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P19: reviewed 2026-11-18
 - P20: written 2026-11-18
 - P21: written 2026-11-18
-- P22: open
+- P22: written 2026-11-18
 - READER: open
 - FINAL: open

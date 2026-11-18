@@ -191,8 +191,11 @@ def process_readings(folder):
                 continue
             value = float(line)
             count += 1
-            if count == 1 or value > highest:
+            if count == 1:  # nested, as in the chapter: Highest has no value on the first pass
                 highest = value
+            else:
+                if value > highest:
+                    highest = value
             if value > 30.0:
                 alerts.write(line + "\n")
     return count, highest
@@ -206,6 +209,9 @@ with tempfile.TemporaryDirectory() as tmp:
     with open(os.path.join(tmp, "Readings.txt"), "w") as f:
         f.write("-5.0\n-2.5\n")
     assert process_readings(tmp) == (2, -2.5)  # a start at 0.0 would have given the wrong highest
+
+assert "IF Count = 1 THEN\n         Highest ← Value\n      ELSE\n         IF Value > Highest THEN" in TEXT
+assert not re.search(r"^\s*IF Count = 1 OR", TEXT, re.M)  # no OR that reads Highest before it has a value
 
 # spot the error: one B0, total 3 of 4
 assert 4 - 1 == 3

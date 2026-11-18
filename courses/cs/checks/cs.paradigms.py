@@ -289,6 +289,25 @@ SCH = ("teaches(rosa, maths).\nteaches(luis, science).\nstudies(class_7a, maths)
 assert answers(SCH, "taught_by(class_7a, T)", "T") == ["rosa", "luis"]
 assert "taught_by(Class, Teacher) IF studies(Class, Subject) AND teaches(Teacher, Subject)." in TEXT
 
+# exam practice: garden club (the real Paper 3 form: 15 numbered clauses, three parts, NOT last)
+rows = re.findall(r"^\| (\d+) `([^`]+)` \|", TEXT, re.M)
+garden = [(int(n), c) for n, c in rows if 1 <= int(n) <= 15 and c.endswith(").")]
+assert [n for n, _ in garden][-15:] == list(range(1, 16)), garden
+GARDEN = "\n".join(c for _, c in garden[-15:]) + "\n"
+assert len(GARDEN.strip().split("\n")) == 15
+GRULE = "can_sow(Plant, Plot) IF plant(Plant) AND plot(Plot) AND NOT unsuitable(Plant, Plot).\n"
+assert GRULE.strip() in TEXT
+assert answers(GARDEN, "unsuitable(X, east)", "X") == ["basil", "carrot"]  # the printed example
+assert answers(GARDEN, "unsuitable(basil, X)", "X") == ["north", "east"]  # part (b)
+assert "(b) X = north, east" in TEXT
+assert answers(GARDEN + GRULE, "can_sow(P, east)", "P") == ["tomato", "mint"]
+assert "`can_sow(P, east)` gives P = tomato, mint" in TEXT
+# part (a): the three new clauses are well formed and the rule still runs with them
+NEW = "plant(coriander).\nplot(west).\nsown(coriander, west).\n"
+assert answers(GARDEN + NEW + GRULE, "can_sow(coriander, L)", "L") == ["north", "south", "east", "west"]
+assert query(GARDEN + GRULE, "can_sow(basil, north)") == [] and query(GARDEN + GRULE, "can_sow(basil, south)") == [{}]
+assert 3 + 1 + 4 == 8 and "Q: [8 marks] ★★ A community garden club" in TEXT
+
 # exam practice: flights
 FL = block_after("A travel company records flights between cities")
 assert answers(FL, "via(lima, X)", "X") == ["bogota", "miami"]

@@ -193,7 +193,7 @@ ENDFUNCTION
 :::eg Process a text file (8 marks)
 A weather station in Santiago saves one temperature per line of the text file `Readings.txt`, for example `24.5`. The file holds at least one line. Write a procedure `ProcessReadings` that reads every line, outputs how many readings there are and the highest reading, and writes every reading above 30.0 to a second text file `Alerts.txt`. [8 marks]
 
-Each line is read as a STRING, so it must be converted with `STR_TO_NUM` before it is compared. Two files are open at once, so both need closing. The first reading is a good starting value for the highest.
+Each line is read as a STRING, so it must be converted with `STR_TO_NUM` before it is compared. Two files are open at once, so both need closing. The first reading is a good starting value for the highest. `Highest` has no value until then, so the comparison `Value > Highest` sits inside the `ELSE` of `IF Count = 1`: writing `Count = 1 OR Value > Highest` would compare an empty variable on the first pass, because the Pseudocode Guide does not stop at the first true half of an `OR`.
 
 ```pseudocode
 PROCEDURE ProcessReadings()
@@ -208,8 +208,12 @@ PROCEDURE ProcessReadings()
       READFILE "Readings.txt", Line
       Value ← STR_TO_NUM(Line)
       Count ← Count + 1
-      IF Count = 1 OR Value > Highest THEN
+      IF Count = 1 THEN
          Highest ← Value
+      ELSE
+         IF Value > Highest THEN
+            Highest ← Value
+         ENDIF
       ENDIF
       IF Value > 30.0 THEN
          WRITEFILE "Alerts.txt", Line
