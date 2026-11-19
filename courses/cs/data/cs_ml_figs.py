@@ -149,8 +149,10 @@ assert gap(b2, b3) >= 4
 figs["rl"] = ('<figure class="fig small"><svg viewBox="0 0 %d %d" role="img" aria-label="A loop between an agent and its environment. An arrow labelled action points down from the agent to the environment. An arrow labelled reward and new state points up from the environment to the agent.">%s</svg>'
               '<figcaption>The reinforcement learning loop: the agent acts, and the environment answers with a reward and a new state.</figcaption></figure>') % (W, H, "".join(out))
 
-pathlib.Path(__file__).resolve().parent.parent.joinpath("scratch", "ml_figs.txt").write_text(
-    "\n\n".join(f"<!-- {k} -->\n{v}" for k, v in figs.items()), encoding="utf-8")
+if __name__ == "__main__":  # only a direct run writes scratch/ (git-ignored, absent on GitHub)
+    out_file = pathlib.Path(__file__).resolve().parent.parent.joinpath("scratch", "ml_figs.txt")
+    out_file.parent.mkdir(exist_ok=True)
+    out_file.write_text("\n\n".join(f"<!-- {k} -->\n{v}" for k, v in figs.items()), encoding="utf-8")
 for k, v in figs.items():
     print(k, len(v))
 print("figs ok")

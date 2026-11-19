@@ -209,6 +209,8 @@ figs["grid"] = grid_figure(
     "A* on the grid from the start A1 (S) to the goal F5 (G). Solid cells are walls. The numbers give the order in which A* expanded each cell, and all 12 lie on the shortest path (11 moves). A dot marks a cell that Dijkstra's algorithm expanded but A* did not (9 cells). Blank cells were expanded by neither.",
     dset=dset)
 
-pathlib.Path(__file__).resolve().parent.parent.joinpath("scratch", "ai_figs.txt").write_text(
-    "\n\n".join(f"<!-- {k} -->\n{v}" for k, v in figs.items()), encoding="utf-8")
+if __name__ == "__main__":  # checks/cs.ai.py imports this module; only a direct run writes scratch/ (git-ignored)
+    out_file = pathlib.Path(__file__).resolve().parent.parent.joinpath("scratch", "ai_figs.txt")
+    out_file.parent.mkdir(exist_ok=True)
+    out_file.write_text("\n\n".join(f"<!-- {k} -->\n{v}" for k, v in figs.items()), encoding="utf-8")
 print("figs ok")
