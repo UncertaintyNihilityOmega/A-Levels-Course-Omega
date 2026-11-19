@@ -45,6 +45,8 @@ Two consequences follow, and both are exam material.
 
 The Python program below is a tiny interpreter for a made-up language with three commands: `SET` gives a variable a value, `ADD` adds to a variable and `PRINT` displays it. The loop is the interpreter cycle. Line 4 of the program uses a variable that was never set.
 
+A note on the Python (an optional check, not examined here). `variables = {}` makes a **dictionary**, which pairs a name with a value, so `variables["Total"] = 10` stores 10 under the name `Total` and `variables["Total"]` looks it up again. Looking up a name that is not in the dictionary raises a `KeyError`, and `try: ... except KeyError:` catches that error and runs a different piece of code instead of stopping the program. `enumerate(program, start=1)` hands the loop each line together with its line number, counting from 1.
+
 ```python
 program = [
     "SET Total 10",
@@ -137,6 +139,8 @@ Take the line `IF Mark >= 50 THEN   // a pass`. The comment and the spaces are d
 | `THEN` | keyword |
 
 Here is the same job in Python. The function uses a pattern to recognise numbers, words and operators, and builds the symbol table as it goes. The third line of source code contains a character the language does not allow.
+
+A note on the Python (an optional check, not examined here). `symbol_table` is a dictionary, a pairing of a name with a value, and `symbol_table.setdefault(name, ...)` adds the name only if it is not already there. `TOKEN` is a **regular expression**: a compact rule written as text for "a number, or a word, or an operator". `re.compile` prepares it, `match.lastgroup` says which of the three alternatives matched (`number`, `word` or `operator`), and the details of the pattern are not examined.
 
 ```python
 import re
@@ -315,6 +319,8 @@ An integer is one or more digits. BNF has no "one or more" symbol, so the rule u
 
 To show that a string is valid, start from the rule and replace non-terminals until only the string is left. Each line is called a step of the derivation. Here is `407`:
 
+The symbol ⇒ means "is replaced, in one step, by".
+
 ```text
 <integer>
 ⇒ <digit><integer>
@@ -325,7 +331,7 @@ To show that a string is valid, start from the rule and replace non-terminals un
 ⇒ 407
 ```
 
-The first `<integer>` used the second alternative (a digit followed by an integer) twice, and the third time used the first alternative (just a digit) to finish. The same derivation can be drawn as a parse tree, with `<integer>` at the top and the digits at the leaves.
+Lines 1 and 3 replace `<integer>` using the second alternative (`<digit><integer>`, a digit followed by an integer), and line 5 uses the first alternative (`<digit>`, just a digit) to finish. The other lines replace a `<digit>` by an actual digit. The same derivation can be drawn as a parse tree, with `<integer>` at the top and the digits at the leaves.
 
 ```text
 <integer>
@@ -338,7 +344,7 @@ The first `<integer>` used the second alternative (a digit followed by an intege
 
 A string is invalid when no derivation exists. `12a` is invalid because `a` cannot come from `<digit>`. The empty string is invalid because every alternative of `<integer>` starts with a digit.
 
-A BNF rule translates almost word for word into a recursive Python function, because the rule is itself recursive. The functions below check an integer, and a locker code that is defined in the next example.
+A BNF rule translates almost word for word into a recursive Python function, because the rule is itself recursive. The functions below check an integer, and a locker code that is defined in the next example. A function may call itself: here `is_integer` calls itself on the string without its first character (`text[1:]` means "the text from position 1 onwards"). cs.recursion ([Recursion](#cs.recursion)) explains this properly, so for now read it as a copy of the BNF rule: an integer is a digit followed by an integer.
 
 ```python
 def is_digit(text):
@@ -509,6 +515,8 @@ A real grammar also has to say what `A + B * 3` means. Notice that the grammar b
 <term>       ::= <factor> | <term> * <factor> | <term> / <factor>
 <factor>     ::= <number> | <variable> | ( <expression> )
 ```
+
+The two names on the last line need rules as well, as in the earlier examples: `<number>` is one or more digits and `<variable>` is a single capital letter. The validator further down treats them the same way.
 
 The levels build precedence into the grammar. In `A + B * 3`, the only way to derive the `*` is inside a `<term>`, which sits underneath the `+` of the expression. So `B * 3` is grouped first, as it must be. The parse tree shows it:
 

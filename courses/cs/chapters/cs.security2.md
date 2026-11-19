@@ -58,6 +58,8 @@ Think of a padlocked box with one key. You lock the box and post it. The person 
 
 The program below is a tiny symmetric cipher. It combines each byte of the message with a byte of the key using XOR (the logic operation from [Logic gates and logic circuits](#cs.logic)), repeating the key as needed. XOR has a useful property: doing it twice with the same value gives back the original, so the same function and the same key both encrypt and decrypt.
 
+A note on the Python (an optional check, not examined here): `b"..."` is a string of bytes rather than of characters, `^` is XOR in Python (the same operation as the XOR gate, applied to every bit of two bytes), `enumerate(data)` gives each byte together with its position `i` so that the key can be repeated with `i % len(key)`, and `.hex()` shows a row of bytes as hexadecimal digits so that you can read it.
+
 :::warn A toy, not a secure cipher
 This cipher, and the others in this chapter's Python programs, are written to show an idea. They are not secure: never use them to protect real data. Real systems use standard, carefully tested algorithms.
 :::
@@ -250,6 +252,8 @@ Encryption uses a key and can be reversed by the key's owner. A hash uses no key
 :::
 
 ## Digital signatures
+
+Here the pair of keys is used the other way round from the last section: the private key **encrypts** (signs) and the public key **decrypts** (checks). Either key of a pair can undo what the other did; what makes a signature work is that only the owner holds the private key, so only the owner can produce a value that the public key will unlock.
 
 Encrypting with a public key gives a **private** message. A digital signature does something else: it proves **who** sent a message and that it has **not been changed**. It is how a verified message is sent to the public, for example a ministry that publishes an official notice which anyone can check.
 

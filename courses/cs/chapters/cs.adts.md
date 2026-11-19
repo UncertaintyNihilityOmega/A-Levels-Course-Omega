@@ -78,6 +78,8 @@ ENDFUNCTION
 
 `Push` returns FALSE on overflow, so the caller knows the item was not stored. `Pop` returns −1 on underflow, which is safe only if −1 is never a stored value; a program that stores any integer should call `IsEmpty()` before it pops. Popping does not clear the array element: `Stack[TopPointer]` still holds the old value, but it is above the top pointer, so the stack no longer contains it.
 
+**Reading a class.** A **class** groups data and the functions that work on that data into one unit. A function written inside a class is called a **method**. `def __init__(self, size):` is the special method that runs when a new object is made: it sets up the starting values. `self` is the object that is being used: `self.top_pointer` means "the `top_pointer` belonging to this stack", so two stacks keep their own pointers. `stack = Stack(5)` makes a new stack that can hold 5 items, and `stack.push(7)` calls the `push` method on that stack, with 7 as `new_item` (Python supplies `self` itself). The same pattern is used for `CircularQueue`, `LinkedList` and the other classes in this chapter. You do not need more than this to follow them; [Object-oriented programming](#cs.oop) explains classes and objects fully.
+
 Paper 4 tasks usually ask for a class. This `Stack` class holds a list with an unused element 0, and the same fields and logic as the pseudocode. The program tests it: five pushes fit, a sixth fails, three pops, then it empties the stack.
 
 ```python
@@ -660,7 +662,7 @@ A **traversal** visits every node once. The three standard orders differ in when
 Visiting every node of a tree exactly once, in a systematic order. In-order visits the left subtree, then the node, then the right subtree. Pre-order visits the node, then the left subtree, then the right subtree. Post-order visits the left subtree, then the right subtree, then the node.
 :::
 
-For a binary search tree, **in-order traversal outputs the values in ascending order**. Traversal is naturally recursive: the tree is a node with two smaller trees below it. (Recursion has its own chapter, [Recursion](#cs.recursion); here you only need to follow the calls.)
+For a binary search tree, **in-order traversal outputs the values in ascending order**. Traversal is naturally recursive: the tree is a node with two smaller trees below it. A **recursive** procedure is one that calls itself; each call deals with a smaller tree, and a call with a null pointer does nothing, which stops the chain of calls. (Recursion has its own chapter, [Recursion](#cs.recursion), which explains this in full; here you only need to follow the calls.)
 
 ```pseudocode
 PROCEDURE InOrder(Node : INTEGER)
@@ -1038,7 +1040,7 @@ Edges: 6 Matrix entries used: 12
 Each undirected edge fills two matrix cells (12 for 6 edges). The matrix answers "is there an edge between these two?" in one step, but always uses \(n^2\) cells, mostly zeros when the graph has few edges. The list uses memory in proportion to the vertices and edges, so it suits a **sparse** graph with few edges, such as a road network.
 
 :::key Using a graph, and why not a tree
-- Use a **graph** when items are joined in a many-to-many pattern with no single top item: road maps, computer networks, social networks, the states of a puzzle. Weights let you ask for the shortest or cheapest route ([Artificial intelligence](#cs.ai) shows Dijkstra's algorithm and A\* working on graphs).
+- Use a **graph** when items are joined in a many-to-many pattern with no single top item: road maps, computer networks, social networks, the states of a puzzle. Weights let you ask for the shortest or cheapest route ([Graphs and pathfinding: Dijkstra and A\*](#cs.ai) shows Dijkstra's algorithm and A\* working on graphs).
 - Use a **tree** when the data is a hierarchy: each item has exactly one parent except the root, there are no cycles, and there is exactly one path from the root to any node (folders in a file system, a family tree down the generations, a sorted collection for searching).
 - A tree is a special graph: connected, with no cycles. If items can be joined in more than one way or form loops, a tree cannot show it.
 :::
@@ -1098,6 +1100,8 @@ ENDFUNCTION
 3. Pop the out-stack and return the item. (If both stacks are empty, the queue is empty.)
 4. Items already on the out-stack are older than anything on the in-stack, so they are always taken first.
 :::
+
+In the class below, `[]` is an empty list, `append` adds an item at the end of a list (a push) and `pop()` removes the last item (a pop). An empty list counts as `False` in an `if`, so `if not self.out_stack` means "the out-stack is empty".
 
 ```python
 class QueueFromStacks:
@@ -1240,7 +1244,7 @@ A: A balanced tree with 10 levels can hold up to \(2^{10} - 1 = 1023\) nodes (an
 :::
 
 :::try Exam practice ★ to ★★★
-Q: [3 marks] ★ Describe what is meant by an abstract data type and give one example. (#cs.adts)
+Q: [3 marks] ★ Describe what is meant by an abstract data type and give one example.
 A: A collection of data [B1] together with the operations that can be performed on it [B1], described independently of how it is stored or implemented [B1]. (Example: a stack, with push and pop; or a queue with enqueue and dequeue.)
 
 Q: [4 marks] ★★ A linked list of town names is stored in the arrays `Data` and `Pointer`, with `StartPointer` and `FreePointer`. The null pointer is 0. The state of the arrays is shown below.

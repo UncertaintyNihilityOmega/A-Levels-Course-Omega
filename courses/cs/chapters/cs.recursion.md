@@ -685,7 +685,7 @@ Output:
 -1
 ```
 
-Index 6 in Python is position 7 in the pseudocode, because Python counts from 0. A list of \(n\) items needs at most about \(\log_2 n\) calls, so the stack stays shallow: a list of a million items needs at most 20 frames. That is why recursion is safe for divide and conquer.
+Index 6 in Python is position 7 in the pseudocode, because Python counts from 0. A list of \(n\) items needs at most about \(\log_2 n\) calls, so the stack stays shallow: a list of a million items needs at most 20 frames. That is why recursion is safe for divide and conquer. **Divide and conquer** means splitting a problem into smaller copies of itself, solving each, and combining the answers, as binary search does (it keeps just one half and the "combining" is trivial). Each split makes the problem much smaller, so the stack never gets deep.
 
 ### Recursion on a tree
 
@@ -753,7 +753,7 @@ Every recursive function can be written with a loop, and every loop can be writt
 
 :::key When recursion is a good choice
 - The data or problem is **recursive by nature**: trees, folders inside folders, nested structures.
-- The problem **splits into smaller copies** of itself (divide and conquer), as in binary search and merge-style algorithms.
+- The problem **splits into smaller copies** of itself (divide and conquer: split the problem into smaller copies of itself, solve each and combine the answers), as in binary search.
 - The recursion is **not very deep**, so stack space is not a worry.
 - Clear, short code matters more than the last bit of speed or memory.
 :::
@@ -1120,7 +1120,7 @@ print(fast_power(2, 10), "calls:", calls)
 
 The depth of the recursion is about \(\log_2\) of the exponent, so this version can find \(2^{1000}\) with a handful of frames, where the simple version would need 1000.
 
-Q: [7 marks] ★★★ In the puzzle Tower of Hanoi, N discs of different sizes sit on a peg. They must be moved to another peg, one disc at a time, never placing a bigger disc on a smaller one, using a third peg as a spare. To move N discs: move N − 1 discs to the spare peg, move disc N to the target peg, then move the N − 1 discs from the spare peg onto the target. (a) Write a recursive procedure `Hanoi(N, Source, Target, Spare)` that outputs each move as, for example, "Move disc 1 from A to B". (b) State the output of `CALL Hanoi(2, "A", "C", "B")`. (c) State the number of moves needed for 5 discs.
+Q: [7 marks] ★★★ In the puzzle Tower of Hanoi, N discs of different sizes sit on a peg. They must be moved to another peg, one disc at a time, never placing a bigger disc on a smaller one, using a third peg as a spare. The discs are numbered 1 (smallest) to N (largest). To move N discs: move N − 1 discs to the spare peg, move disc N to the target peg, then move the N − 1 discs from the spare peg onto the target. (a) Write a recursive procedure `Hanoi(N, Source, Target, Spare)` that outputs each move as, for example, "Move disc 1 from A to B". (b) State the output of `CALL Hanoi(2, "A", "C", "B")`. (c) State the number of moves needed for 5 discs.
 H: The base case is "no discs": do nothing.
 H: Moving N − 1 discs is the same problem, with the roles of the pegs changed.
 H: Each extra disc doubles the moves and adds one: 1, 3, 7, 15 …

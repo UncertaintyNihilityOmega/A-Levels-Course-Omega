@@ -33,7 +33,7 @@ A branch of AI in which a computer system improves at a task by finding patterns
 :::
 
 :::def Deep learning
-A kind of machine learning that uses artificial neural networks with many hidden layers. The layers let the system learn its own features from raw data, such as the pixels of an image, in stages.
+A kind of machine learning that uses artificial neural networks with many hidden layers (neural networks and hidden layers are explained below, in "Artificial neural networks"). The layers let the system learn its own features (the useful patterns in the data, such as an edge or a shape in a picture) from raw data, such as the pixels of an image, in stages.
 :::
 
 :::html
@@ -132,7 +132,7 @@ A machine learning model made of layers of connected **nodes** (neurons). Each c
 :::
 
 :::def Node (neuron)
-One processing unit of a neural network. It receives numbers from the previous layer, multiplies each by a weight, adds them up (with a bias), and outputs the result of its activation function.
+One processing unit of a neural network. It receives numbers from the previous layer, multiplies each by a weight, adds them up (with a bias, an extra adjustable number that is explained after the figure), and outputs the result of its activation function.
 :::
 
 :::def Weight
@@ -399,7 +399,7 @@ A machine learning method that fits a line or curve to training data in order to
 
 :::formula Least squares line
 \[m = \frac{\sum (x - \bar{x})(y - \bar{y})}{\sum (x - \bar{x})^2}, \qquad c = \bar{y} - m\bar{x}\]
-\(\bar{x}\) and \(\bar{y}\) are the means of the \(x\) and \(y\) values. You will not need to calculate this in the exam; the worked example shows what "best fit" means.
+\(\bar{x}\) and \(\bar{y}\) are the means of the \(x\) and \(y\) values. \(\sum\) means "add up the value for every point": for example \(\sum (x - \bar{x})^2\) adds \((x - \bar{x})^2\) for each of the five points in the worked example below. You will not need to calculate this in the exam; the worked example shows what "best fit" means.
 :::
 
 :::eg Fitting a line to data

@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-19 · FIX · READER cs.testing to cs.os: 19 reader items closed (glosses for try/compile, host/interface, jitter, microcode etc.; enumerated types now match the 9618 guide's + 1 example; float table column defined, rounding reworded; boolean step order; os scheduler/page fault glosses)
+Last: 2026-11-19 · FIX · READER cs.translators to cs.recursion: 19 items closed (dictionary/regex/recursion glosses, derivation lines, factor rules, xor and signature key notes, ML forward references and sigma, algorithms2 caption/gloss/stray tags, adts class-reading note and fixes, recursion divide and conquer and Hanoi numbering)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
