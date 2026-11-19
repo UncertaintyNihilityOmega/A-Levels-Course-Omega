@@ -223,4 +223,4 @@ Read, watch, explore, practise:
 - papers: https://www.physicsandmathstutor.com/past-papers/a-level-computer-science/caie-paper-1/ (also `caie-paper-2/`,
   `caie-paper-3/`, `caie-paper-4/`) · Physics & Maths Tutor · 9618 past papers by paper [unofficial]
 
-Links checked 13 November 2026.
+Links checked 19 November 2026 (101 of 102 return 200; ico.org.uk/for-organisations/ shows a Cloudflare bot check to scripts but is live).

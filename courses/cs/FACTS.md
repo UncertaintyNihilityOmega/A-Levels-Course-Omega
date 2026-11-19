@@ -68,6 +68,12 @@ there are a range of valid responses), Summarise, Write (write an answer in a sp
   (a video-conference company, a shop, a furniture company database, buying a computer, a banker's data).
 - The assembly-language question prints the part of the instruction set it uses (a table of opcode, operand,
   explanation), so the instruction set is never memorised; questions print memory contents to trace.
+  Checked 19 Nov 2026 on 9618/11, /12, /13 June 2025: "The processor has two registers: the Accumulator (ACC) and
+  an Index Register (IX)" (or "one register: the Accumulator (ACC)"); bit manipulation speaks of "an 8-bit
+  register"; no paper gives an instruction bit layout (the course's 16-bit, 6 + 10 format is its own, said so).
+- Pseudocode guide (2026 guide 697401 and 2027–2029 guide 721401, same text): enumerated values are not numbered
+  and no rule lists their operations; the only arithmetic is `ThisSeason ← Spring`, `MyPointer ← ^ThisSeason`,
+  `NextSeason ← MyPointer^ + 1` in "Example – using user-defined data types" (checked 19 Nov 2026).
 - Logic questions give a circuit or a statement and ask for an expression or a truth table (with working space).
 
 ### Paper 2 (9618/21, May/June 2025)

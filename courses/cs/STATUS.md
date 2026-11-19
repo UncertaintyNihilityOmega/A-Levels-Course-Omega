@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-19 · FIX · READER items closed (17): oop caption/try-except/super()/pseudocode guide, paradigms addressing modes/backtracking rule/revise-link note, fileproc sales.txt wording + SEEK address note, python join/isalpha/isupper/index/in added to string program + __name__ + comprehension pointer, p2/p3/p4/mixed.a2 glosses (short-circuit, DECLARE Bus1, None, print(*x), tuple except)
+Last: 2026-11-19 · REVIEW FINAL · 49/49 check+phone pass; FIX rounds spot-checked (10 items, all good); usertypes enumerated text corrected to what the 2026 and 2027-29 pseudocode guides show (no numbering rule; only NextSeason <- MyPointer^ + 1); assembly note now says real 9618/11-13 J25 papers give no bit layout (16-bit 6+10 format is the chapter's own); Next chain and mock times/totals ok; 101/102 links 200, ICO behind bot check but live
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -28,4 +28,4 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P21: reviewed 2026-11-19
 - P22: reviewed 2026-11-19
 - READER: done 2026-11-19
-- FINAL: open
+- FINAL: done 2026-11-19
