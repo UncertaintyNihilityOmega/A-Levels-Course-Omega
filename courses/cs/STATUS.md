@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-19 · FIX · READER cs.translators to cs.recursion: 19 items closed (dictionary/regex/recursion glosses, derivation lines, factor rules, xor and signature key notes, ML forward references and sigma, algorithms2 caption/gloss/stray tags, adts class-reading note and fixes, recursion divide and conquer and Hanoi numbering)
+Last: 2026-11-19 · READER · 125 reader items
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -27,5 +27,5 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P20: reviewed 2026-11-19
 - P21: reviewed 2026-11-19
 - P22: reviewed 2026-11-19
-- READER: open
+- READER: done 2026-11-19
 - FINAL: open
