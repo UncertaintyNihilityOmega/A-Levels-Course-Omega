@@ -22,6 +22,11 @@ There is no CLAUDE.md at the root: course sessions would load it. Start every Or
 - The design ("marked script") is frozen: change it only when the user asks.
 - After any change to `engine/`, kit sources, templates or a `course.json`: `node engine/sync.js`.
 - Commit each finished step with a clear message, then `git push`. Pushing to `main` publishes the site.
+  After the last push of a run (and after any engine change) check the GitHub build: `curl -s
+  "https://api.github.com/repos/uncertaintynihilityomega/A-Levels-Course-Omega/actions/runs?per_page=1"` must show
+  `"conclusion": "success"`. A failure there means nothing is published. Reproduce it in a fresh clone (scratchpad):
+  git-ignored folders such as `scratch/`, `kit/` and `preview/` are missing on GitHub, so local checks can pass while
+  GitHub fails.
 - Docs and memory hold rules and current state only, as short lists. History lives in git commits.
   ROADMAP.md "Now" is the only status record. ROADMAP.md "Done" holds the current snapshot only; CHANGELOG.md holds
   the reader-facing notes and every earlier snapshot (empty "Done" when a snapshot is cut).
