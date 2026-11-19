@@ -57,7 +57,7 @@ The next sections explain why designers choose the RISC approach for many modern
 | Instruction length | All the same (fixed) | Different lengths (variable) |
 | Registers | Many general purpose registers | Fewer registers |
 | Access to memory | Only the load and store instructions; arithmetic uses registers | Many instructions can use memory directly |
-| Control unit | Simple, built from fixed circuits | Complex, often driven by a stored set of micro-instructions (microcode) |
+| Control unit | Simple, built from fixed circuits | Complex, often driven by a stored set of micro-instructions (microcode: a small stored program inside the control unit that carries out each complex instruction) |
 | Pipelining | Easy, and used heavily | Harder, because instructions differ in length and time |
 | Program size | Larger (more instructions) | Smaller (fewer instructions) |
 | Work for the compiler | More: it must build complex jobs from simple instructions and manage the registers | Less |
@@ -293,15 +293,15 @@ An architecture in which one processor carries out one instruction at a time, on
 :::
 
 :::def SIMD (Single Instruction, Multiple Data)
-An architecture in which one instruction is carried out on many items of data at the same time, by several processing units under the control of one control unit. Graphics processors and vector processors use SIMD.
+An architecture in which one instruction is carried out on many items of data at the same time, by several processing units under the control of one control unit. Graphics processors and vector processors use SIMD. (A vector processor is a processor whose instructions work on a whole list of numbers at once.)
 :::
 
 :::def MISD (Multiple Instruction, Single Data)
-An architecture in which several processors carry out different instructions on the same item of data at the same time. It is rarely used, and is found mainly in systems that need to be fault tolerant, where several processors work on the same data and their answers are compared.
+An architecture in which several processors carry out different instructions on the same item of data at the same time. It is rarely used, and is found mainly in systems that need to be fault tolerant (to keep working correctly even when part of the system fails), where several processors work on the same data and their answers are compared.
 :::
 
 :::def MIMD (Multiple Instruction, Multiple Data)
-An architecture in which several processors, each with its own control unit, carry out different instructions on different data at the same time. Multicore processors, and clusters of computers, are MIMD.
+An architecture in which several processors, each with its own control unit, carry out different instructions on different data at the same time. Multicore processors, and clusters of computers, are MIMD. (A cluster is many complete computers joined by a fast network and used as one.)
 :::
 
 | Architecture | Example | Why it fits |

@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-19 · REVIEW P20, P21, P22 · 0 open items; fixed: mock.p3 Q9 new graph weights (it repeated the exam.p3 Dijkstra example), mock.p2 insert as a list (overflowed on phone) and flowchart 426 wide, mock.p4 Q3 says (c)-(e) go inside Department, exam.p3 guard note; exam facts checked against the real May/June 2025 front pages; every mock answer recomputed
+Last: 2026-11-19 · FIX · READER cs.testing to cs.os: 19 reader items closed (glosses for try/compile, host/interface, jitter, microcode etc.; enumerated types now match the 9618 guide's + 1 example; float table column defined, rounding reworded; boolean step order; os scheduler/page fault glosses)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

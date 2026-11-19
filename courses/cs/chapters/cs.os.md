@@ -101,9 +101,12 @@ Many books also show a **New** state (a process being created) and a **Terminate
 <figure class="fig"><svg viewBox="0 0 660 270" role="img" aria-label="Process state diagram. Five boxes: New, Ready, Running, Blocked and Terminated. New goes to Ready when the process is admitted. Ready goes to Running when the scheduler dispatches it. Running goes back to Ready when its time slice ends. Running goes to Blocked when it waits for input, output or an event. Blocked goes to Ready when that input, output or event completes. Running goes to Terminated when the process finishes. There is no arrow from Blocked to Running."><rect class="fm s-acc sw2" x="10" y="50" width="80" height="40" rx="6"/><text class="tl tc tb" x="50" y="75">New</text><rect class="fm s-acc sw2" x="170" y="50" width="90" height="40" rx="6"/><text class="tl tc tb" x="215" y="75">Ready</text><rect class="fm s-acc sw2" x="380" y="50" width="100" height="40" rx="6"/><text class="tl tc tb" x="430" y="75">Running</text><rect class="fm s-acc sw2" x="240" y="200" width="100" height="40" rx="6"/><text class="tl tc tb" x="290" y="225">Blocked</text><rect class="fm s-acc sw2" x="530" y="200" width="100" height="40" rx="6"/><text class="tl tc tb" x="580" y="225">Terminated</text><polyline class="ln" fill="none" points="90,70 168,70" marker-end="url(#ah)"/><text class="tl tc" x="129" y="62">admitted</text><polyline class="ln" fill="none" points="260,60 378,60" marker-end="url(#ah)"/><text class="tl tc" x="319" y="46">dispatched</text><polyline class="ln" fill="none" points="378,80 262,80" marker-end="url(#ah)"/><text class="tl tc" x="319" y="102">time slice ends</text><polyline class="ln" fill="none" points="440,90 440,220 342,220" marker-end="url(#ah)"/><text class="tl" x="448" y="150">waits for I/O</text><text class="tl" x="448" y="171">or an event</text><polyline class="ln" fill="none" points="240,220 215,220 215,92" marker-end="url(#ah)"/><text class="tl te" x="207" y="150">I/O or event</text><text class="tl te" x="207" y="171">completes</text><polyline class="ln" fill="none" points="480,70 580,70 580,198" marker-end="url(#ah)"/><text class="tl" x="588" y="140">finishes</text></svg><figcaption>The life of a process. Only three of the states (Running, Ready, Blocked) are examined in detail; a Blocked process can only move to Ready, never straight to Running.</figcaption></figure>
 :::
 
+Three words in the table are explained fully in the next section, Scheduling. The **scheduler** is the part of the operating system that chooses which ready process runs next. A process is **dispatched** when the scheduler gives it the processor. A running process is **pre-empted** when the operating system takes the processor away from it before it has finished, to give it to another process.
+
 | From | To | Event that causes it |
 |---|---|---|
 | New | Ready | the process is created and admitted to the queue |
+
 | Ready | Running | the scheduler picks it and gives it the processor (it is "dispatched") |
 | Running | Ready | its time slice ends (a timer interrupt), or it is pre-empted |
 | Running | Blocked | it asks for input or output, or waits for another event |
@@ -185,7 +188,7 @@ It is the queue at a shop. A has the processor from 0 to 5. B (arrived at 1), C 
 
 The average waiting time is \((0 + 4 + 6 + 13) \div 4 = 23 \div 4 = 5.75\), and the average turnaround time is \((5 + 7 + 14 + 15) \div 4 = 41 \div 4 = 10.25\).
 
-FCFS is simple to write and perfectly fair in order of arrival, and no process is ever starved. Its weakness is the **convoy effect**: D needs only 2 units but waits 13, because the long process C is ahead of it.
+FCFS is simple to write and perfectly fair in order of arrival, and no process is ever starved (starvation means a process waits for a very long time, or for ever, because others keep being chosen ahead of it; it is defined with the next algorithm). Its weakness is the **convoy effect**: D needs only 2 units but waits 13, because the long process C is ahead of it.
 
 ### Shortest job first (SJF)
 
@@ -393,6 +396,8 @@ A **page** is a fixed-size block of a process's logical memory. A **frame** is a
 :::def Page table
 A table kept by the operating system for each process that records, for every page, the frame of main memory in which it is stored (or that it is not in main memory).
 :::
+
+Some pages may be kept on disk until they are needed (virtual memory, later in this chapter); a request for such a page is called a **page fault**.
 
 A program uses **logical addresses**, which run from 0 up to the size of the program, as though it had a block of memory to itself. The hardware turns each logical address into a **physical address** in RAM using the page table.
 

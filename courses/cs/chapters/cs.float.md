@@ -208,7 +208,7 @@ Going the other way, you build the pattern. Take 6.25.
 :::steps
 1. Convert the number (ignoring its sign) to binary, using the doubling method for the fraction.
 2. **Move the binary point** until the number is written as \(0.1\ldots\). Count the places. Moving the point **left** \(k\) places means the exponent is \(+k\); moving it **right** \(k\) places means the exponent is \(-k\).
-3. The mantissa is a 0 (the sign bit), the point, then the digits, padded on the right with 0s to fill the bits. If there are more digits than room, the number is **rounded**.
+3. The mantissa is a 0 (the sign bit), the point, then the digits, padded on the right with 0s to fill the bits. If there are more digits than room, the number is **rounded**. The examples ask for a **normalised** number: for a positive number that means the mantissa starts 0.1 (the Normalisation section below gives the full rule; moving the point in step 2 already produces it).
 4. If the number is **negative**, take the two's complement of the positive mantissa: invert every bit and add 1.
 5. Write the exponent in two's complement with the number of bits given. Join the mantissa and the exponent.
 :::
@@ -252,7 +252,7 @@ The mantissa is 0.1101011: seven digits after the point, which exactly fills the
 
 Check: \(0.1101011_2 = \tfrac{107}{128}\), and \(\tfrac{107}{128} \times 16 = 13.375\).
 
-If the digits do not fit, the number is rounded: look at the first digit that does not fit, add 1 to the last digit kept if it is a 1, and drop it if it is a 0. Exam questions normally choose numbers that fit; when one does not, say that you rounded.
+If the digits do not fit, the number is rounded: look at the first digit that does not fit. If it is a 1, add 1 to the last digit kept; if it is a 0, just drop the extra digits. Exam questions normally choose numbers that fit; when one does not, say that you rounded.
 :::
 
 The pattern for −4 is worth remembering: **a mantissa of 1.0000000 means exactly −1**, which is why the most negative value in the format has a mantissa of 1.0000000.
@@ -394,6 +394,8 @@ The total number of bits is fixed, so a bit given to one part is taken from the 
 | 8 + 4 | 7 | −8 to 7 | 127 | 0.001953125 | 0.0078125 |
 | 7 + 5 | 6 | −16 to 15 | 32256 | 1/131072 | 0.015625 |
 
+The last column is the **place value of the last mantissa bit**, \(2^{-(\text{bits after the point})}\): \(2^{-8} = 0.00390625\) for 9 + 3, \(2^{-7} = 0.0078125\) for 8 + 4 and \(2^{-6} = 0.015625\) for 7 + 5. It is the size of the smallest change the mantissa can make, so it shows how fine the mantissa is. It is not the gap between stored values: that gap is this step multiplied by \(2^{\text{exponent}}\), so it grows with the exponent, as the figure below shows.
+
 :::key Range against precision
 - **More bits for the mantissa:** greater precision (a smaller gap between stored values), but a smaller range.
 - **More bits for the exponent:** greater range (larger and smaller numbers can be stored), but less precision.
@@ -407,7 +409,7 @@ The total number of bits is fixed, so a bit given to one part is taken from the 
 <figure class="fig small"><svg viewBox="0 0 340 128" role="img" aria-label="A number line from 0 to 1.75 with sixteen tick marks, the representable positive values. They fall in four groups of four, for exponents minus 2, minus 1, 0 and 1. The ticks are very close together near 0.125 and spread further apart in each group: the gaps are 0.03125, 0.0625, 0.125 and 0.25."><text class="tl ti" x="20" y="16">All 16 positive normalised values</text><path class="ln-m thin" d="M 20 52 L 330 52"/><path class="c1 sw2" d="M 41.25 38 L 41.25 52"/><path class="c1 sw2" d="M 46.5625 38 L 46.5625 52"/><path class="c1 sw2" d="M 51.875 38 L 51.875 52"/><path class="c1 sw2" d="M 57.1875 38 L 57.1875 52"/><path class="c1 sw2" d="M 62.5 38 L 62.5 52"/><path class="c1 sw2" d="M 73.125 38 L 73.125 52"/><path class="c1 sw2" d="M 83.75 38 L 83.75 52"/><path class="c1 sw2" d="M 94.375 38 L 94.375 52"/><path class="c1 sw2" d="M 105 38 L 105 52"/><path class="c1 sw2" d="M 126.25 38 L 126.25 52"/><path class="c1 sw2" d="M 147.5 38 L 147.5 52"/><path class="c1 sw2" d="M 168.75 38 L 168.75 52"/><path class="c1 sw2" d="M 190 38 L 190 52"/><path class="c1 sw2" d="M 232.5 38 L 232.5 52"/><path class="c1 sw2" d="M 275 38 L 275 52"/><path class="c1 sw2" d="M 317.5 38 L 317.5 52"/><path class="ln" d="M 20 34 L 20 52"/><text class="tl tc" x="20.0" y="72">0</text><text class="tl tc" x="62.5" y="72">0.25</text><text class="tl tc" x="105.0" y="72">0.5</text><text class="tl tc" x="190.0" y="72">1</text><text class="tl tc" x="317.5" y="72">1.75</text><text class="tl tc" x="49" y="96">−2</text><text class="tl tc" x="78" y="96">−1</text><text class="tl tc" x="137" y="96">0</text><text class="tl tc" x="254" y="96">1</text><text class="tl tc" x="170" y="118">exponent of each group of four ticks</text></svg><figcaption>Every positive normalised value of a format with a 4-bit mantissa and a 2-bit exponent. The gap between neighbours doubles whenever the exponent goes up by one, so large numbers are stored less precisely than small ones.</figcaption></figure>
 :::
 
-The figure shows a tiny format (a 4-bit mantissa and a 2-bit exponent) with all 16 of its positive normalised values. Each group of four has the same exponent, and the gap between neighbours doubles from one group to the next: 0.03125, 0.0625, 0.125, 0.25. Near zero the values are packed closely; far from zero they are spread out. The **relative** error stays about the same, which is the point of floating point. A number that falls in a gap must be rounded to a neighbour.
+The figure shows a tiny format (a 4-bit mantissa and a 2-bit exponent) with all 16 of its positive normalised values. Each group of four has the same exponent, and the gap between neighbours doubles from one group to the next: 0.03125, 0.0625, 0.125, 0.25. Near zero the values are packed closely; far from zero they are spread out. The **relative** error (the error as a fraction of the number's size) stays about the same, which is the point of floating point: a gap of 0.25 beside a value near 1.5 is a similar fraction of the value as a gap of 0.03125 beside a value near 0.2. A number that falls in a gap must be rounded to a neighbour.
 
 ## Approximation, rounding errors, overflow and underflow
 

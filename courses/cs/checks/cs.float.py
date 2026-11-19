@@ -377,4 +377,8 @@ assert F(1, 10) == F(1, 10) and 100 + 100 > 127
 assert encode(F("13.375"), 8, 4) == ("01101011", "0100") and F(107, 128) * 16 == F("13.375")
 assert 13 + F(3, 8) == F("13.375") and int("1101", 2) == 13 and mant("01101011") == F(107, 128)
 
+# Reader fix: place value of the last mantissa bit in the 12-bit table, and the relative-error remark
+assert [F(1, 2**k) for k in (8, 7, 6)] == [F("0.00390625"), F("0.0078125"), F("0.015625")]
+assert F(1, 4) / F(3, 2) > F(1, 8) and F(1, 32) / F(1, 5) > F(1, 8) and F(1, 4) / F(3, 2) < F(1, 4)
+
 print("ok")

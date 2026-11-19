@@ -66,7 +66,7 @@ An error that happens while the program is running, when it tries to do somethin
 | Pseudocode example | `IF Mark >= 50` with no `THEN`; `OUTPUT "Total" Total` with no comma | `IF Age > 18` when 18-year-olds should be included; `Total / 4` for five items | `Average ← Total / Count` when Count is 0; `Marks[6]` in `ARRAY[1:5]` |
 | Python example | `for n in range(3)` with no colon | `a + b / 2` for the mean | `marks[3]` in a list of three; `int("abc")` |
 
-The following Python program meets all three kinds, catching each run-time error so the program carries on and prints its name. The syntax error is found by asking Python to translate a program without running it.
+The following Python program meets all three kinds, catching each run-time error so the program carries on and prints its name. The syntax error is found by asking Python to translate a program without running it. Two pieces of Python in the block are new. `try:` followed by `except` runs the indented statement and, if it fails, jumps to the `except` line instead of crashing the program. `compile(...)` only translates the text of a program, checking its grammar, without running it, so a syntax error shows up as a `SyntaxError` that `error.msg` describes. Treat the block as an optional check; the table above is what you must know.
 
 ```python
 try:
@@ -462,7 +462,7 @@ Valid data at the very ends of the accepted range: the smallest and largest valu
 Data on either side of the boundary between acceptable and unacceptable values: the extreme value that should be accepted and the value just beyond it that should be rejected.
 :::
 
-The syllabus groups the last two as **extreme/boundary** data, so in a test plan label them that way. For a range of whole numbers from 1 to 100:
+The syllabus groups the last two as **extreme/boundary** data, so in a test plan label them that way. One rule decides the word to write in the Type column: write **extreme/boundary** for the valid values at the ends of the range, and **abnormal (boundary)** for the values just outside it. For a range of whole numbers from 1 to 100:
 
 | Kind of test data | Values for the range 1 to 100 | Expected result |
 |---|---|---|
@@ -774,7 +774,7 @@ A: One mark for each correct type.
 - (b) logic error, because the program runs but gives wrong results [B1]
 - (c) run-time error, because the program stops while it is running [B1]
 
-Q: [6 marks] ★★ (#cs.testing) The pseudocode below should input the five exam marks of a pupil into the array Marks (bounds 1 to 5), then output the mean and output Pass if the mean is at least 50, otherwise Fail. It contains three errors, one of each type: syntax, logic and run-time. For each error, give the line number, the type of the error and a correction.
+Q: [6 marks] ★★ (#cs.testing) The array Marks (bounds 1 to 5) already holds the five exam marks of a pupil, for example 20, 30, 40, 50 and 60, so the program has no INPUT. The pseudocode below should then output the mean and output Pass if the mean is at least 50, otherwise Fail. It contains three errors, one of each type: syntax, logic and run-time. For each error, give the line number, the type of the error and a correction.
 
 ```pseudocode
 01  DECLARE Marks : ARRAY[1:5] OF INTEGER

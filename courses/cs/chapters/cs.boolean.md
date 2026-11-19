@@ -165,11 +165,11 @@ De Morgan's laws have a practical use. Any logic circuit can be built from **NAN
 A circuit built directly from a truth table is usually much bigger than it needs to be. Simplifying means finding an equivalent expression with fewer terms and fewer gates. The plan is the same every time.
 
 :::steps
-1. Look for a common factor and take it out (distributive law).
-2. Look for a variable and its opposite in the same bracket: \(A + \text{NOT } A = 1\) or \(A \cdot \text{NOT } A = 0\) (complement law).
-3. Remove 1s and 0s (identity and null laws), and repeated terms (idempotent law).
-4. Look for a short term that absorbs a longer one (absorption law).
-5. Apply De Morgan's law to any NOT over a bracket first, so every NOT sits on a single variable.
+1. Apply De Morgan's law to any NOT over a bracket, so that every NOT sits on a single variable before you factorise.
+2. Look for a common factor and take it out (distributive law).
+3. Look for a variable and its opposite in the same bracket: \(A + \text{NOT } A = 1\) or \(A \cdot \text{NOT } A = 0\) (complement law).
+4. Remove 1s and 0s (identity and null laws), and repeated terms (idempotent law).
+5. Look for a short term that absorbs a longer one (absorption law).
 6. Stop when no law makes the expression shorter.
 :::
 
@@ -206,6 +206,8 @@ X &= A \cdot B + A \cdot B \cdot C + \text{NOT } A \cdot B \\
   &= B \quad \text{(identity law)}
 \end{aligned}
 \]
+
+The absorption law is \(A + A \cdot B = A\), but it also holds when \(A\) stands for a whole term: here the term \(A \cdot B\) absorbs \(A \cdot B \cdot C\), because \(A \cdot B + (A \cdot B) \cdot C = A \cdot B\).
 
 - absorption used to remove \(A \cdot B \cdot C\) [B1]
 - B taken out as a common factor [B1]
