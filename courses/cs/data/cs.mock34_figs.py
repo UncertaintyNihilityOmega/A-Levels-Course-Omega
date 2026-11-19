@@ -9,8 +9,8 @@ HERE = pathlib.Path(__file__).resolve().parent
 R = 16
 CHW = 7.0
 NODES = {"P": (38, 122), "Q": (118, 44), "R": (118, 200), "S": (222, 104), "T": (252, 202), "U": (330, 136)}
-EDGES = [("P", "Q", 4), ("P", "R", 2), ("Q", "R", 1), ("Q", "S", 5), ("R", "S", 8), ("R", "T", 10),
-         ("S", "T", 2), ("S", "U", 6), ("T", "U", 3)]
+EDGES = [("P", "Q", 3), ("P", "R", 5), ("Q", "R", 1), ("Q", "S", 7), ("R", "S", 4), ("R", "T", 9),
+         ("S", "T", 3), ("S", "U", 8), ("T", "U", 4)]
 # label centre offsets from the edge midpoint (dx, dy), chosen by hand and verified below
 OFF = {("P", "Q"): (-12, -10), ("P", "R"): (-12, 12), ("Q", "R"): (-14, 4), ("Q", "S"): (6, -12),
        ("R", "S"): (-12, 6), ("R", "T"): (0, 16), ("S", "T"): (14, 4), ("S", "U"): (6, -12), ("T", "U"): (14, 8)}
@@ -145,20 +145,20 @@ def build():
         dx, dy = OFF[(a, b)]
         parts.append(f'<text class="tl tc halo" x="{(x1 + x2) / 2 + dx:g}" y="{(y1 + y2) / 2 + dy + 4:g}">{w}</text>')
     aria = ("A graph with six labelled points P, Q, R, S, T and U joined by nine roads. The lengths in kilometres are: "
-            "P to Q 4, P to R 2, Q to R 1, Q to S 5, R to S 8, R to T 10, S to T 2, S to U 6 and T to U 3.")
+            "P to Q 3, P to R 5, Q to R 1, Q to S 7, R to S 4, R to T 9, S to T 3, S to U 8 and T to U 4.")
     return (f'<figure class="fig small"><svg viewBox="0 0 360 246" role="img" aria-label="{aria}">' + "".join(parts) +
             '</svg><figcaption>The road network for Question 9. Each number is the length of the road in kilometres.</figcaption></figure>')
 
 
 if __name__ == "__main__":
     dist, prev, order = dijkstra("P")
-    assert dist == {"P": 0, "R": 2, "Q": 3, "S": 8, "T": 10, "U": 13}, dist
-    assert [n for n, _ in order] == ["P", "R", "Q", "S", "T", "U"], order
+    assert dist == {"P": 0, "Q": 3, "R": 4, "S": 8, "T": 11, "U": 15}, dist
+    assert [n for n, _ in order] == ["P", "Q", "R", "S", "T", "U"], order
     path, n = ["U"], "U"
     while n != "P":
         n = prev[n]
         path.append(n)
-    assert path[::-1] == ["P", "R", "Q", "S", "T", "U"]
+    assert path[::-1] == ["P", "Q", "R", "S", "T", "U"]
     svg = build()
     (HERE / "cs.mock34_figs.txt").write_text("### graph\n" + svg + "\n", encoding="utf-8", newline="\n")
     print("ok")

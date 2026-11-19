@@ -266,20 +266,20 @@ A: (a)
 :::try
 Q: [8 marks] (#cs.ai) A courier company in Nairobi uses a graph to model the roads between six depots, P, Q, R, S, T and U. The number on each road is its length in kilometres.
 
-<figure class="fig small"><svg viewBox="0 0 360 246" role="img" aria-label="A graph with six labelled points P, Q, R, S, T and U joined by nine roads. The lengths in kilometres are: P to Q 4, P to R 2, Q to R 1, Q to S 5, R to S 8, R to T 10, S to T 2, S to U 6 and T to U 3."><line class="ln" x1="38" y1="122" x2="118" y2="44"/><line class="ln" x1="38" y1="122" x2="118" y2="200"/><line class="ln" x1="118" y1="44" x2="118" y2="200"/><line class="ln" x1="118" y1="44" x2="222" y2="104"/><line class="ln" x1="118" y1="200" x2="222" y2="104"/><line class="ln" x1="118" y1="200" x2="252" y2="202"/><line class="ln" x1="222" y1="104" x2="252" y2="202"/><line class="ln" x1="222" y1="104" x2="330" y2="136"/><line class="ln" x1="252" y1="202" x2="330" y2="136"/><circle class="f1 s-acc sw2" cx="38" cy="122" r="16"/><text class="tl tb tc" x="38" y="126">P</text><circle class="f1 s-acc sw2" cx="118" cy="44" r="16"/><text class="tl tb tc" x="118" y="48">Q</text><circle class="f1 s-acc sw2" cx="118" cy="200" r="16"/><text class="tl tb tc" x="118" y="204">R</text><circle class="f1 s-acc sw2" cx="222" cy="104" r="16"/><text class="tl tb tc" x="222" y="108">S</text><circle class="f1 s-acc sw2" cx="252" cy="202" r="16"/><text class="tl tb tc" x="252" y="206">T</text><circle class="f1 s-acc sw2" cx="330" cy="136" r="16"/><text class="tl tb tc" x="330" y="140">U</text><text class="tl tc halo" x="86.4" y="95.6">4</text><text class="tl tc halo" x="69.6" y="173.6">2</text><text class="tl tc halo" x="108" y="126">1</text><text class="tl tc halo" x="164" y="88.4">5</text><text class="tl tc halo" x="178.1" y="164.8">8</text><text class="tl tc halo" x="184.8" y="217">10</text><text class="tl tc halo" x="226.5" y="160.2">2</text><text class="tl tc halo" x="272.6" y="135.5">6</text><text class="tl tc halo" x="298.8" y="182.2">3</text></svg><figcaption>The road network for Question 9. Each number is the length of the road in kilometres.</figcaption></figure>
+<figure class="fig small"><svg viewBox="0 0 360 246" role="img" aria-label="A graph with six labelled points P, Q, R, S, T and U joined by nine roads. The lengths in kilometres are: P to Q 3, P to R 5, Q to R 1, Q to S 7, R to S 4, R to T 9, S to T 3, S to U 8 and T to U 4."><line class="ln" x1="38" y1="122" x2="118" y2="44"/><line class="ln" x1="38" y1="122" x2="118" y2="200"/><line class="ln" x1="118" y1="44" x2="118" y2="200"/><line class="ln" x1="118" y1="44" x2="222" y2="104"/><line class="ln" x1="118" y1="200" x2="222" y2="104"/><line class="ln" x1="118" y1="200" x2="252" y2="202"/><line class="ln" x1="222" y1="104" x2="252" y2="202"/><line class="ln" x1="222" y1="104" x2="330" y2="136"/><line class="ln" x1="252" y1="202" x2="330" y2="136"/><circle class="f1 s-acc sw2" cx="38" cy="122" r="16"/><text class="tl tb tc" x="38" y="126">P</text><circle class="f1 s-acc sw2" cx="118" cy="44" r="16"/><text class="tl tb tc" x="118" y="48">Q</text><circle class="f1 s-acc sw2" cx="118" cy="200" r="16"/><text class="tl tb tc" x="118" y="204">R</text><circle class="f1 s-acc sw2" cx="222" cy="104" r="16"/><text class="tl tb tc" x="222" y="108">S</text><circle class="f1 s-acc sw2" cx="252" cy="202" r="16"/><text class="tl tb tc" x="252" y="206">T</text><circle class="f1 s-acc sw2" cx="330" cy="136" r="16"/><text class="tl tb tc" x="330" y="140">U</text><text class="tl tc halo" x="86.4" y="95.6">3</text><text class="tl tc halo" x="69.6" y="173.6">5</text><text class="tl tc halo" x="108" y="126">1</text><text class="tl tc halo" x="164" y="88.4">7</text><text class="tl tc halo" x="178.1" y="164.8">4</text><text class="tl tc halo" x="184.8" y="217">9</text><text class="tl tc halo" x="226.5" y="160.2">3</text><text class="tl tc halo" x="272.6" y="135.5">8</text><text class="tl tc halo" x="298.8" y="182.2">4</text></svg><figcaption>The road network for Question 9. Each number is the length of the road in kilometres.</figcaption></figure>
 
 Dijkstra's algorithm is used to find the shortest route from depot P. The table shows the first two rows, in the order that the depots are finalised.
 
 | Depot | Shortest distance from P (km) | Previous depot |
 |---|---|---|
 | P | 0 | none |
-| R | 2 | P |
-| Q | | |
+| Q | 3 | P |
+| R | | |
 | S | | |
 | T | | |
 | U | | |
 
-(a) Complete the table for Q, S, T and U. [4]
+(a) Complete the table for R, S, T and U. [4]
 
 (b) State the shortest route from P to U and its length. [2]
 
@@ -289,21 +289,21 @@ A: (a)
 | Depot | Shortest distance from P (km) | Previous depot |
 |---|---|---|
 | P | 0 | none |
-| R | 2 | P |
-| Q | 3 | R |
-| S | 8 | Q |
-| T | 10 | S |
-| U | 13 | T |
+| Q | 3 | P |
+| R | 4 | Q |
+| S | 8 | R |
+| T | 11 | S |
+| U | 15 | T |
 
-- Q: 3 via R (\(2 + 1\)), which is shorter than 4 directly from P [B1]
-- S: 8 via Q (\(3 + 5\)), shorter than 10 via R (\(2 + 8\)) [B1]
-- T: 10 via S (\(8 + 2\)), shorter than 12 via R (\(2 + 10\)) [B1]
-- U: 13 via T (\(10 + 3\)), shorter than 14 via S (\(8 + 6\)) [B1]
+- R: 4 via Q (\(3 + 1\)), which is shorter than 5 directly from P [B1]
+- S: 8 via R (\(4 + 4\)), shorter than 10 via Q (\(3 + 7\)) [B1]
+- T: 11 via S (\(8 + 3\)), shorter than 13 via R (\(4 + 9\)) [B1]
+- U: 15 via T (\(11 + 4\)), shorter than 16 via S (\(8 + 8\)) [B1]
 
 (b)
 
-- the route is P, R, Q, S, T, U (found by following the previous depots back from U) [B1]
-- its length is 13 km [B1]
+- the route is P, Q, R, S, T, U (found by following the previous depots back from U) [B1]
+- its length is 15 km [B1]
 
 (c)
 
@@ -367,7 +367,7 @@ ENDFUNCTION
 ```
 
 - `RootPointer` [B1]
-- `Data[Current] <> Target` (the test that Current is not 0 is written first, so no array element 0 is read) [B1]
+- `Data[Current] <> Target` (accept `Target <> Data[Current]`) [B1]
 - `LeftPtr[Current]` in the first branch and `RightPtr[Current]` in the second [B1]
 - `Current` returned (the index of the node, or 0 when the search ends at no node) [B1]
 :::

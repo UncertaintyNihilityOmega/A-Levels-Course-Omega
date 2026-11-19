@@ -48,8 +48,8 @@ figs["circuit"] = f.svg()
 
 # ---- Paper 2 Q2: the flowchart with three logic errors
 Chart = flow["Chart"]
-c = Chart(520, 668)
-LX, RX = 140, 405
+c = Chart(426, 668)
+LX, RX = 140, 320
 s = c.term(LX, 28, "Start")
 i0 = c.proc(LX, 104, ["Total ← 0", "Taller ← 0", "Count ← 1"])
 d1 = c.dec(LX, 200, "Count < 8?")

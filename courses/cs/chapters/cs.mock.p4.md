@@ -367,6 +367,8 @@ Use these two classes. Attributes must be private.
 
 (b) Write program code to declare the class `SalesDepartment`, which inherits from `Department`. Its constructor takes the name, the budget and the target, and uses the constructor of the superclass. Add the method `GetTarget`. Override `Describe` so that it returns the string from the superclass followed by a space and the target in brackets after the word `target`, for example `Sales: 120000 (target 90)`. Copy your program code into the evidence document. [5]
 
+Parts (c), (d) and (e) each add a method to the class `Department`: write each one **inside the class** you wrote in part (a), so that `SalesDepartment` objects inherit it too.
+
 (c) Write a recursive method `TotalBudget` of the class `Department` that returns the budget of the department added to the total budgets of all the departments that report to it, at every level. Copy your program code into the evidence document. [5]
 
 (d) Write a recursive method `Display(Level)` of the class `Department` that outputs the result of `Describe` for the department, indented by three spaces for each level, and then does the same for each department that reports to it, one level further in. The first call uses level 0. Copy your program code into the evidence document. [5]

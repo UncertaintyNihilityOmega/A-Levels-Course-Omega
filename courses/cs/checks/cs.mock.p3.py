@@ -252,12 +252,14 @@ svg = (ROOT / "data" / "cs.mock34_figs.txt").read_text(encoding="utf-8").split("
 assert svg in TEXT
 FIG = runpy.run_path(str(ROOT / "data" / "cs.mock34_figs.py"))
 dist, prev, order = FIG["dijkstra"]("P")
-assert [n for n, _ in order] == ["P", "R", "Q", "S", "T", "U"]
-for n, d, p in (("Q", 3, "R"), ("S", 8, "Q"), ("T", 10, "S"), ("U", 13, "T")):
+assert [n for n, _ in order] == ["P", "Q", "R", "S", "T", "U"]
+assert "| Q | 3 | P |\n| R | | |" in TEXT                   # the two rows printed in the question
+for n, d, p in (("R", 4, "Q"), ("S", 8, "R"), ("T", 11, "S"), ("U", 15, "T")):
     assert dist[n] == d and prev[n] == p
     assert f"| {n} | {d} | {p} |" in TEXT
-assert 2 + 1 + 5 + 2 + 3 == 13 and 2 + 1 == 3 < 4 and 3 + 5 == 8 < 2 + 8 and 8 + 2 == 10 < 2 + 10 and 10 + 3 == 13 < 8 + 6
-for n, c in (("PQ", 4), ("PR", 2), ("QR", 1), ("QS", 5), ("RS", 8), ("RT", 10), ("ST", 2), ("SU", 6), ("TU", 3)):
+assert 3 + 1 + 4 + 3 + 4 == 15 and 3 + 1 == 4 < 5 and 4 + 4 == 8 < 3 + 7 and 8 + 3 == 11 < 4 + 9 and 11 + 4 == 15 < 8 + 8
+assert "P, Q, R, S, T, U" in TEXT and "its length is 15 km" in TEXT
+for n, c in (("PQ", 3), ("PR", 5), ("QR", 1), ("QS", 7), ("RS", 4), ("RT", 9), ("ST", 3), ("SU", 8), ("TU", 4)):
     assert f"{n[0]} to {n[1]} {c}" in TEXT, n
 
 # ---- Q10: the binary tree in arrays and FindNode

@@ -280,7 +280,7 @@ ENDFUNCTION
 - other node deleted: the previous node's pointer set to `Pointer[Current]` [B1]
 - deleted node added to the front of the free list (`Pointer[Current] ← FreePointer`, then `FreePointer ← Current`, in that order) and TRUE returned [B1]
 
-(The guard `Current <> 0` comes first in the loop condition so that `Data[0]` is never read. Accept a version using a `REPEAT` loop if it gives the same result.)
+(The guard `Current <> 0` comes first in the loop condition, as Cambridge mark schemes write it. Accept a version using a `REPEAT` loop if it gives the same result.)
 
 After `DeleteItem(30)`: node 1 is the current node and node 4 the previous node. `Pointer[4]` becomes 5, `Pointer[1]` becomes 6 and `FreePointer` becomes 1. The list is now 10, 20, 40, 50 and node 1 is the first free node, followed by node 6.
 :::
