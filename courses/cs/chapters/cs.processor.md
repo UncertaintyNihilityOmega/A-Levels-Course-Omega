@@ -28,17 +28,17 @@ A processor on its own can do nothing: it needs instructions to follow. The big 
 The idea that program instructions and the data they work on are both stored, in binary, in the same main memory. The processor fetches the instructions from memory one at a time, in sequence, and executes them.
 :::
 
-Because instructions are just numbers in memory, loading a different program means putting different numbers into memory. Nothing is rewired. The same computer can be a word processor now and a game a minute later. It also means that a program can be treated as data: a compiler is a program whose output is another program, and an operating system loads programs from a disk into memory before running them.
+Because instructions are just numbers in memory, loading a different program means putting different numbers into memory. Nothing is rewired. The same computer can be a word processor now and a game a minute later. It also means that a program can be treated as data: a program can translate another program into the binary instructions the processor runs, so that its output is another program, and an operating system loads programs from a disk into memory before running them.
 
 :::def Von Neumann model
-A computer architecture in which a single processor reads both instructions and data from one shared main memory, using the same buses, and carries out the stored instructions one after another.
+A computer architecture in which a single processor reads both instructions and data from one shared main memory, using the same buses (the sets of wires that carry signals, explained below), and carries out the stored instructions one after another.
 :::
 
 The model has three parts that you must be able to name and place:
 
 - the **processor** (CPU), which contains the control unit, the arithmetic logic unit and the registers;
 - the **main memory**, which the Cambridge syllabus calls the **immediate access store (IAS)**, holding both the program and its data;
-- the **input and output devices**, which connect to the processor through buses.
+- the **input and output devices**, which connect to the processor through buses (sets of wires that carry signals between components, explained in the section "Buses" below).
 
 Memory is divided into numbered locations. The number of a location is its **address**. A location holds one item, such as a number or one instruction. The processor reads an item by sending the address along a bus; the memory answers with the contents.
 
@@ -99,11 +99,11 @@ A register that holds the data being worked on and the results of calculations d
 :::
 
 :::def Index register (IX)
-A register that holds a number which is added to the address in an instruction to give the address actually used. It is used for indexed addressing, for example to step through the items of an array.
+A register that holds a number which is added to the address in an instruction to give the address actually used. It is used for indexed addressing (an instruction whose address is changed by the number in the index register, explained in [Assembly language and bit manipulation](#cs.assembly)), for example to step through the items of an array (a numbered list of values).
 :::
 
 :::def Status register (SR)
-A register whose individual bits (flags) are set or cleared by the processor to record the result of an operation, for example whether a result was zero, whether it was negative, or whether it caused a carry or an overflow. Conditional jump instructions look at these bits.
+A register whose individual bits (flags) are set or cleared by the processor to record the result of an operation, for example whether a result was zero, whether it was negative, or whether it caused a carry or an overflow. Conditional jump instructions (instructions that jump to another place in the program only if a stated condition holds, explained in [Assembly language and bit manipulation](#cs.assembly)) look at these bits.
 :::
 
 | Register | What it holds | One exam sentence |
@@ -173,7 +173,7 @@ Performance means how much work a computer does in a given time. The syllabus li
 
 :::key Performance factors
 - **Clock speed.** A higher clock speed gives more clock cycles per second, so more instructions are carried out per second. The limit: a faster clock makes the processor hotter and uses more power, and the memory and buses may not be able to keep up.
-- **Number of cores.** A core is a complete processing unit (its own ALU, control unit and registers). A processor with more cores can run several streams of instructions at once, for example different programs, or different parts of one program. The limit: the program must be written so that its work can be split between cores, and the cores share memory and buses, so doubling the cores does **not** double the speed.
+- **Number of cores.** A core is a complete processing unit (its own ALU, control unit and registers). A processor with more cores can run several streams of instructions at once (a **thread** is one stream of instructions, so a **single-threaded** program is one that carries out one stream of instructions at a time), for example different programs, or different parts of one program. The limit: the program must be written so that its work can be split between cores, and the cores share memory and buses, so doubling the cores does **not** double the speed.
 - **Bus width.** A wider data bus moves more bits per transfer, so data reaches the processor sooner. A wider address bus lets the processor address more memory, so larger programs and more programs can be held in the IAS without having to use slow backing storage.
 - **Cache size.** Cache is a small amount of very fast memory, between the processor and the IAS, that holds copies of the instructions and data used most often or most recently. When the processor finds what it needs in cache, it avoids a slow read from main memory. A larger cache holds more, so it is more likely to contain what the processor asks for.
 - **Type of processor.** Different processor designs do different amounts of work per clock cycle, so two processors with the same clock speed and number of cores can perform differently.
@@ -192,7 +192,7 @@ Suppose reading from cache takes 2 ns and reading from main memory takes 50 ns. 
 :::
 
 :::warn More cores do not mean twice the speed
-"Dual core means twice as fast" is wrong. A single-threaded program uses only one core. A program that can be split up is limited by the parts that must run in order, and by the cores sharing memory. Say "can run more tasks at the same time, if the software is written to use them", not "faster".
+"Dual core means twice as fast" is wrong. A single-threaded program (one that carries out one stream of instructions at a time) uses only one core. A program that can be split up is limited by the parts that must run in order, and by the cores sharing memory. Say "can run more tasks at the same time, if the software is written to use them", not "faster".
 :::
 
 ### Exam practice for this section
@@ -248,6 +248,7 @@ Exam questions ask for the cycle in **register transfer notation** (RTN): a shor
 - `[[MAR]]` means "the contents of the memory location whose address is in the MAR". (Double brackets: the contents of the contents.)
 - `MAR ← [PC]` means "copy the contents of the PC into the MAR".
 - `PC ← [PC] + 1` means "add 1 to the contents of the PC and store the answer in the PC".
+- `[[MAR]] ← [MDR]` means "copy the contents of the MDR into the memory location whose address is in the MAR". The double brackets can also stand on the left of the arrow: the location named by the MAR is the place that receives the value (this is how a store instruction writes to memory).
 :::
 
 ### The fetch stage
@@ -415,7 +416,7 @@ The processor does not stop in the middle of an instruction. At the **end of eac
 1. An interrupt signal arrives on the control bus (or a flag is set).
 2. The processor finishes the current instruction, then checks for interrupts at the end of the fetch-execute cycle.
 3. It checks the **priority** of the interrupt. If it is lower than the priority of the program that is running, it waits (or is ignored for now); if it is higher, it is handled.
-4. The contents of the registers (most importantly the PC, which says where to resume, and the ACC and the status register) are **saved**, usually on a stack in memory.
+4. The contents of the registers (most importantly the PC, which says where to resume, and the ACC and the status register) are **saved**, usually in a reserved area of memory (a stack, met later in [Abstract data types: stacks, queues, lists, trees and graphs](#cs.adts)).
 5. The address of the ISR is loaded into the PC.
 6. The ISR runs, using the normal fetch-execute cycle.
 7. When the ISR has finished, the saved register values are **restored**, including the saved PC.

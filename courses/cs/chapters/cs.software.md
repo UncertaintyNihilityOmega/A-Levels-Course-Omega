@@ -145,8 +145,10 @@ When you save, edit and delete files for months, free space on a disk is scatter
 
 A magnetic disk has to move a head to the right track and wait for the sector to arrive under it; every jump costs time. The program below counts the jumps needed to read each file in the figure, for the layout before and after defragmentation. A jump is needed whenever the next sector is not the one directly after the last.
 
+*Optional check.* The program uses features you meet later, so run it as it is and compare its output with the figure. Each string has one letter per sector, in order: A, B and C name the file stored in that sector and F marks a free sector (the blank boxes in the figure). `def` and `return` define a function ([Procedures, functions and parameters](#cs.procedures)). `enumerate(layout)` gives each letter together with its position (counting from 0), so `i + 1` is the sector number. The square brackets with `for … in … if …` build a list of the sector numbers that hold the file's letter, and `sectors[k]` is item number `k` of that list (items are numbered from 0, like the characters of a string).
+
 ```python
-before = "ABACBFACFBFC"
+before = "ABACBFACFBFC"   # one letter per sector: A, B, C = a file, F = a free sector
 after = "AAABBBCCCFFF"
 
 
@@ -212,7 +214,7 @@ Programmers do not write every routine from scratch. Sorting a list, finding a s
 A collection of pre-written and tested routines (functions and procedures) that a programmer can include in a program instead of writing the code again.
 :::
 
-Python has many libraries, called modules. This program uses two from the standard library:
+Python has many libraries, called modules. `import` makes a library available to the program, and `math.sqrt` means "the `sqrt` routine in the `math` library" (the name before the dot is the library, the name after it is the routine). This program uses two from the standard library:
 
 ```python
 import math
@@ -405,7 +407,7 @@ Running a program one statement at a time, pausing after each, so that the progr
 Displaying source code in a clear layout, using colours, fonts and indentation, so that its structure is easy to read.
 :::
 
-The debugging tools work together. Set a breakpoint just before the part you suspect, run until it pauses, then single step while watching the report window. The program below should print the mean of four marks, but it prints the wrong answer.
+The debugging tools work together. Set a breakpoint just before the part you suspect, run until it pauses, then single step while watching the report window. The program below should print the mean of four marks, but it prints the wrong answer. Two Python ideas are needed to read it. A **list** holds several values in square brackets, and its items are numbered from 0, like the characters of a string: `marks[0]` is 14, `marks[1]` is 9, and `len(marks)` is 4, the number of items. And `range(1, n)` starts at 1 and stops before `n`, so `range(1, 4)` gives 1, 2 and 3, while `range(n)` starts at 0 and gives 0, 1, 2 and so on up to `n - 1`.
 
 ```python
 marks = [14, 9, 17, 12]
@@ -563,6 +565,8 @@ A: Any two pairs:
 (A third accepted pair: the bytecode is already checked and partly translated, so it runs faster than if the phone interpreted the source code, and errors were found before release.)
 
 Q: [6 marks] ★★ A student writes a program to find the position of the lowest temperature in a list.
+
+(In the program, `temps` is a list whose items are numbered from 0, so `temps[0]` is 21, and `range(1, len(temps))` starts at 1 and stops before 4, giving 1, 2 and 3.)
 
 ```python
 temps = [21, 18, 25, 19]

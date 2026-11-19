@@ -171,6 +171,8 @@ Encryption does not stop a criminal from intercepting data or from stealing a la
 
 The program below uses the simplest kind of encryption, a shift cipher, to make the idea of a key concrete. The key is the size of the shift. Each letter is moved along the alphabet by the key, wrapping from Z back to A.
 
+*Optional check.* The program uses features you have not met, so run it as it is and compare the output with the next paragraph. `ord(letter)` gives the ASCII code of a character (65 for `A`) and `chr(code)` gives the character with that code, so the program turns a letter into a number from 0 to 25, adds the key, uses `% 26` (the remainder after dividing by 26) to wrap round, and turns the number back into a letter. `def` and `return` define a function that hands back its answer ([Procedures, functions and parameters](#cs.procedures)).
+
 ```python
 def shift_encrypt(text, key):
     result = ""
@@ -330,10 +332,12 @@ Accepted: 15
 ```
 
 :::warn Test the type before the range
-If the user types `abc`, `int("abc")` stops the program with a `ValueError`, and in pseudocode comparing text with a number is an error. A real program checks that the input is a number first (a **type check**, for example with the insert's `IS_NUM`), and only then applies the range check.
+If the user types `abc`, `int("abc")` stops the program with a `ValueError`, and in pseudocode comparing text with a number is an error. A real program checks that the input is a number first (a **type check**, for example with the function `IS_NUM` from the insert, which tells you whether text is a number; the insert is the list of pseudocode functions that is printed with Paper 2 and that a question may use), and only then applies the range check.
 :::
 
 Each of the other checks is a short condition. Here are all the checks from the table as Python functions, tested on the examples in the table.
+
+*Optional check.* Each check is written as a function: `def` names a group of steps and `return` hands back its answer, `True` or `False` ([Procedures, functions and parameters](#cs.procedures)). `len(pin)` counts characters, `code[:2]` is the first two characters of the text and `code[2:]` is the rest, `.isalpha()`, `.isupper()` and `.isdigit()` test whether the text is all letters, all capitals or all digits, and `student_id in register` is True if the value is one of the items of the list `register`. Run the block as it is and compare each line of output with the table.
 
 ```python
 def range_check(age):
@@ -381,7 +385,7 @@ True False
 True False
 ```
 
-In pseudocode, the format check uses the string functions from the insert. This version checks the pattern "two capital letters, then three digits", by testing each character's ASCII code.
+In pseudocode, the format check uses the string functions from the insert (the list of functions printed with Paper 2): `LENGTH` counts the characters, `MID(Code, Position, 1)` takes one character, and `ASC` gives a character's ASCII code, for example `ASC('A')` is 65, where `'A'` is a single character (a letter, digit or symbol in quotation marks). The codes of the capitals run from `ASC('A')` to `ASC('Z')` and the digits from `ASC('0')` to `ASC('9')`, in order, which is what the program tests. This version checks the pattern "two capital letters, then three digits", by testing each character's ASCII code.
 
 ```pseudocode
 DECLARE Code, Ch : STRING
@@ -413,7 +417,7 @@ ELSE
 ENDIF
 ```
 
-An **existence check** is a search: the value must be found in the list. This is the linear search from [Data types, records and arrays](#cs.datatypes) used as a check.
+An **existence check** is a search: the value must be found in the list. The program below checks each name in the list in turn, from the first to the last, which is a **linear search**. The list is an **array**, a numbered list of values: `Register[1]` is the first name, `Register[2]` the second and `Register[3]` the third, and `ARRAY[1:3] OF STRING` says that it has three places, numbered 1 to 3. You meet arrays and linear searching properly in [Data types, records and arrays](#cs.datatypes), later in the course; here you only need to follow the loop.
 
 ```pseudocode
 DECLARE Register : ARRAY[1:3] OF STRING
@@ -514,7 +518,7 @@ ELSE
 ENDIF
 ```
 
-The last mod 11 turns 11 (when the remainder is 0) into 0. The Python version works for a code of any length, and also verifies a code:
+The last mod 11 turns 11 (when the remainder is 0) into 0. The Python version works for a code of any length, and also verifies a code. *Optional check:* `def` and `return` define a function that hands back its answer ([Procedures, functions and parameters](#cs.procedures)); `code[position]` is the digit at that place of the text (counting from 0), `int(…)` and `str(…)` change text to a number and back, `"X" if digit == 10 else str(digit)` means "X when the digit is 10, otherwise the digit", and `full_code[:-1]` is the code without its last character and `full_code[-1]` is the last character. Run the block as it is and compare the output with the hand working above.
 
 ```python
 def check_digit(code):
@@ -550,7 +554,31 @@ The second line shows the point of the method. The code 48293614 is 48293164 wit
 - It does **not** catch every error: two errors can cancel out, and a code that has the right check digit may still be a code nobody has issued. A check digit is validation: it shows the code is possible, not that it is right.
 :::
 
-Some codes use a different rule. Book numbers of 13 digits use **modulo 10**: the weights alternate 1 and 3 (the digit next to the check digit has weight 3, and the check digit has weight 1, so for an even number of digits the weights read 1, 3, 1, 3 from the left), the total is found, and the check digit is \(10 - (\text{total} \bmod 10)\), or 0 if that gives 10. For 315806 the weights are 1, 3, 1, 3, 1, 3, the total is \(3 + 3 + 5 + 24 + 0 + 18 = 53\), the remainder is 3, and the check digit is 7. A modulo-10 check misses a swap of two neighbouring digits that differ by 5. Questions tell you the weights and the modulus. Use the method they give.
+Some codes use a different rule. Book numbers of 13 digits (ISBN-13) use **modulo 10**: the first 12 digits are the code and the 13th is the check digit. The method has the same steps as modulo 11, but the weights alternate 1 and 3 and the modulus is 10.
+
+:::key Calculating a modulo-10 check digit
+For the digits of the code, not counting the check digit:
+1. Give the digits the weights 1, 3, 1, 3, … from the **left**: the first digit has weight 1, the second weight 3, and so on.
+2. Multiply each digit by its weight and add the products. This is the **total**.
+3. Divide the total by 10 and find the **remainder**.
+4. The check digit is \(10 - \text{remainder}\), or 0 if the remainder is 0 (not 10).
+5. Add the check digit to the end of the code.
+:::
+
+:::eg Calculating a modulo-10 check digit
+Calculate the modulo-10 check digit of the six-digit code 315806, using the weights 1, 3, 1, 3, 1, 3. [4 marks]
+
+| Digit | 3 | 1 | 5 | 8 | 0 | 6 |
+|---|---|---|---|---|---|---|
+| Weight | 1 | 3 | 1 | 3 | 1 | 3 |
+| Product | 3 | 3 | 5 | 24 | 0 | 18 |
+
+Each digit is multiplied by its weight. [M1] Total: \(3 + 3 + 5 + 24 + 0 + 18 = 53\). [A1] Remainder: \(53 \div 10 = 5\) remainder 3. [M1] Check digit: \(10 - 3 = 7\). [A1] The full code is **3158067**.
+
+To check a typed code, give the check digit its place in the pattern (here weight 1) and add it to the total: \(53 + 7 \times 1 = 60\), an exact multiple of 10, so the code is valid.
+:::
+
+For a real 13-digit book number the weights run 1, 3, 1, 3, … over the 12 code digits and the check digit takes weight 1 (position 13 is odd). For example, 978030640615 has the total 93, the remainder 3 and the check digit 7, so the book number is 9780306406157. A modulo-10 check misses a swap of two neighbouring digits that differ by 5. Questions tell you the weights and the modulus. Use the method they give.
 
 Try the widget. It shows each product, the total, the remainder and the check digit, and it can check a full code. Try swapping two digits in a code that is valid and watch the verdict change.
 
@@ -621,6 +649,8 @@ An extra bit added to a group of bits, usually a byte, so that the total number 
 Seven bits of data are enough for an ASCII character, so the eighth bit of a byte is free to be the parity bit. Suppose the two computers agree to use **even parity**, with the parity bit as the **left-most bit** (the most significant bit, MSB). The sender counts the 1s in the data and chooses the parity bit that makes the total even. (A question tells you which type of parity to use and whether the parity bit is the left-most or the right-most bit of the byte; the counting is the same either way.)
 
 For `A`, the 7-bit code is `1000001`, which has two 1s, an even number, so the parity bit is 0 and the byte sent is `01000001`. For `T`, the code is `1010100`, which has three 1s, so the parity bit is 1 and the byte is `11010100` (four 1s). With **odd parity** the choice is reversed: `A` becomes `11000001` (three 1s) and `T` becomes `01010100` (three 1s).
+
+*Optional check.* The program uses features you have not met, so run it as it is and compare the output with the working above. `ord(letter)` gives the ASCII code of a character, and `format(…, "07b")` writes a number as a 7-bit binary string, so `format(ord("A"), "07b")` is `1000001`. `data_bits.count("1")` counts the 1s in the string, `ones % 2` is the remainder after dividing by 2 (0 for an even count and 1 for an odd one), and `even=True` means "use even parity unless the call says `even=False`". `def` and `return` define a function ([Procedures, functions and parameters](#cs.procedures)).
 
 ```python
 def parity_bit(data_bits, even=True):
@@ -705,6 +735,8 @@ Suppose one bit is changed in transit. The receiver checks every row and every c
 :::
 
 In the figure, the column labelled P holds the parity bits and the columns 1 to 7 hold the data bits. Byte 4 is now `01000101`, which has three 1s, an odd number, so its row fails. Data bit 3 (the column labelled 3) now has three 1s down it, so its column fails. The bit where byte 4 meets column 3 is wrong, and the receiver can **correct** it by flipping it: the byte becomes `01010101`, the letter U again.
+
+*Optional check.* The program builds the block with loops, so run it as it is and compare the output with the table and the figure. `block` is a list of 8-character strings, one per byte, and `.append` adds an item to the end of a list. `row[column]` is the character at that position of the string (counting from 0), `int(…)` turns it into a number and `ones % 2` gives the parity bit. `[list(row) for row in block]` makes a copy of the block in which every byte is a list of single characters, so one bit can be changed, and `received[3][3]` means bit number 3 of byte number 3 in that copy (counting from 0, so it is byte 4, data bit 3 of the figure). `"0" if … else "1"` flips the bit, and `.count("1")` counts the 1s in a row.
 
 ```python
 word = "SECURED"
@@ -806,6 +838,8 @@ Divide by 256 and keep the remainder: \(452 - 256 = 196\). [M1] The checksum is 
 
 (b) The receiver adds the bytes it received: \(52 + 200 + 119 + 83 = 454\), and \(454 - 256 = 198\). [B1] This differs from the checksum 196 that was sent, so an error has been detected. [B1]
 :::
+
+*Optional check.* `data` is a list of values in square brackets, `sum(data)` adds them up, and `% 256` keeps the remainder after dividing by 256. Run the block as it is and compare the output with the working above.
 
 ```python
 data = [52, 200, 117, 83]

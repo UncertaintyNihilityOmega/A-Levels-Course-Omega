@@ -168,6 +168,13 @@ def m10(code):
 
 
 assert m10("315806") == ([3, 3, 5, 24, 0, 18], 53, 3, "7")
+# weights 1, 3, 1, 3 ... from the LEFT (the layout of the modulo-10 steps), with the check digit at weight 1
+def m10_left(code):
+    prods = [int(d) * (1 if i % 2 == 0 else 3) for i, d in enumerate(code)]
+    total = sum(prods)
+    return prods, total, total % 10, str((10 - total % 10) % 10)
+assert m10_left("315806") == m10("315806") and 53 + 7 * 1 == 60 and 60 % 10 == 0
+assert m10_left("978030640615") == ([9, 21, 8, 0, 3, 0, 6, 12, 0, 18, 1, 15], 93, 3, "7")   # ISBN 9780306406157
 assert m10("4271")[1::2] == (20, "0") and m10("4721")[1::2] == (30, "0")
 
 # What the key box claims: modulo 11 catches every single wrong digit and every swap of neighbours

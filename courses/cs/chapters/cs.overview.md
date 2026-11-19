@@ -148,7 +148,7 @@ Every chapter of this course is in the tables below, in the order they are taugh
 
 Every mark in every paper is awarded for one of three **assessment objectives**.
 
-- **AO1: knowledge and understanding.** Recall facts and explain ideas ("State the purpose of the MAR").
+- **AO1: knowledge and understanding.** Recall facts and explain ideas ("State what is meant by a pixel", "Describe how a bitmap image is stored").
 - **AO2: application.** Analyse a problem in computational terms and apply knowledge to a new scenario ("A video-conference company wants … Explain why it should use …").
 - **AO3: design, programming and evaluation.** Design, write, test and evaluate programs and systems.
 
@@ -187,7 +187,7 @@ The syllabus is about 180 guided learning hours for AS and 360 for the whole A L
 1. **Write code every day.** In Paper 2 you write pseudocode and in Paper 4 you write Python. Both are skills.
 2. **Learn the pseudocode guide.** Paper 2 and Paper 3 answers must follow its layout: keywords in capitals, `←` for assignment, three-space indents. Every pseudocode block in this course is written in that style.
 3. **Dry-run with trace tables.** Pseudocode that traces correctly on paper is pseudocode you understand. Trace tables appear in the first programming chapter and in almost every chapter after it.
-4. **Use the exact term.** Theory marks are awarded for the precise word: "The **MAR** holds the address …", not "a part of the computer".
+4. **Use the exact term.** Theory marks are awarded for the precise word: "A **pixel** is the smallest single dot of colour in an image", not "a bit of the picture".
 5. **Do past papers under time.** Do them in the order in the paper guides, mark your own work against the mark scheme and fix every lost mark.
 6. **Read the mark points.** Cambridge mark schemes give one mark per point. In this course every model answer shows its mark points as `[B1]`, so you learn to write one clear point per mark.
 
@@ -205,9 +205,12 @@ The first word of a question tells you what to write. These are the Cambridge me
 | Complete | add to a diagram or table that is given |
 | Write | write the answer in a specific way (for example in pseudocode) |
 | Draw | in matching questions, draw a line to match a term with its description |
+| Evaluate | judge how good, important or valuable something is: give points for and against, then a conclusion that is supported by them |
+| Discuss | write about an issue in depth and in a structured way: more than one point of view, each with reasons |
+| Show that | the answer is given, so you must supply the working or evidence that leads to it, step by step; stating the answer alone earns nothing |
 
 :::warn Describe is not Explain
-"Describe the cache" needs what it is and does. "Explain why a cache speeds up the computer" needs reasons. Writing a description when the question says explain loses the marks, however accurate it is.
+"Describe how a bitmap is stored" needs what is stored and how. "Explain why a bitmap with more bits per pixel needs more storage" needs reasons. Writing a description when the question says explain loses the marks, however accurate it is.
 :::
 
 ## Resources beyond this course

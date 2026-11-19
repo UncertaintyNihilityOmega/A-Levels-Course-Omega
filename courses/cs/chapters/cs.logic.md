@@ -9,12 +9,12 @@
 Every decision a computer makes comes down to circuits that combine 0s and 1s: whether two numbers are equal, whether a door alarm should sound, whether a result has overflowed. Paper 1 turns this into reliable marks: draw a circuit from an expression, write the expression for a circuit, complete a truth table. Once you know the six gates and work in a fixed order, these questions become routine, and every mark is for a small, checkable step.
 :::
 
-**Before you start**, you should know how binary numbers are written, from [Data representation](#cs.data), and what a sensor does, from [Computers and their components](#cs.hardware).
+**Before you start**, you should know how binary numbers are written, from [Number systems and binary arithmetic](#cs.data), and what a sensor does, from [Computers and their components](#cs.hardware).
 
 :::try Warm-up
 Q: True or false: "A number qualifies if it is greater than 10 AND less than 20." Does 15 qualify? (from [Programming from zero](#cs.f.basics))
 A: True. 15 is greater than 10 and less than 20, so both parts are true.
-Q: What is 1 + 1 in binary, and what is carried? (from [Data representation](#cs.data))
+Q: What is 1 + 1 in binary, and what is carried? (from [Number systems and binary arithmetic](#cs.data))
 A: \(1 + 1 = 10\) in binary: the digit is 0 and 1 is carried to the next column.
 Q: Which part of a control system turns the analogue signal from a sensor into digital data? (from [Computers and their components](#cs.hardware))
 A: The analogue-to-digital converter (ADC).
@@ -106,6 +106,8 @@ Here are the truth tables of all five two-input gates in one table, so you can c
 
 The Python program below builds the table from six small functions, using the operators `&` (and), `|` (or) and `^` (xor) on 0 and 1. Run it to see the truth tables come out exactly as above.
 
+*Optional check.* You have not met functions yet: `def NOT(a)` names a group of steps and `return` hands back its answer ([Procedures, functions and parameters](#cs.procedures)). Run the block as it is and compare the output with the tables above. `for a in (0, 1)` repeats the indented lines once with `a` as 0 and once with `a` as 1, so the two loops together give the four rows. In the `print` line, `f"…"` is an f-string in which each `{…}` is replaced by a value, and `:<4` pads that value to 4 characters, left-aligned, so the columns line up.
+
 ```python
 def NOT(a):
     return 1 - a
@@ -187,7 +189,7 @@ Call the output of the AND gate P and the output of the NOT gate Q. Then \(P = A
 P is 1 only in the last two rows, where A and B are both 1. Q is the opposite of C in every row. X is 1 whenever P or Q is 1: five of the eight rows.
 :::
 
-Python can produce the same table, which is a good way to check your own working. Each row is computed in the same order as the working columns.
+Python can produce the same table, which is a good way to check your own working. Each row is computed in the same order as the working columns. (*Optional check:* `for a in (0, 1)` repeats the indented lines once with `a` as 0 and once with `a` as 1; three loops inside each other give the eight rows. `&` is AND and `|` is OR on 0 and 1.)
 
 ```python
 print("A B C | P Q | X")
@@ -228,7 +230,7 @@ A circuit can be described in words, in a drawing or in a **logic expression**. 
 - Write a two-input gate between its inputs: `A AND B`, `A NOR B`. Write NOT before its input: `NOT C`.
 - Put **brackets round every gate that feeds another gate**: `(A AND B) OR NOT C`. Work out the inner brackets first.
 - NOT applies only to the **one item** after it. `NOT A AND B` means `(NOT A) AND B`. To invert a whole gate output, bracket it: `NOT (A AND B)`.
-- Never mix two different gates without brackets. Write `(A AND B) OR C`, never `A AND B OR C`.
+- Never mix two different two-input gates (such as AND with OR) without brackets. Write `(A AND B) OR C`, never `A AND B OR C`. NOT is the one exception, because by the rule above it applies only to the item right after it: `NOT A AND B` and `A AND NOT B` need no brackets.
 :::
 
 The third rule matters because the two forms give different answers. Take A = 1 and B = 0.
@@ -396,6 +398,8 @@ Sometimes you are given a truth table and must find an expression that produces 
 1. Look only at the rows where \(X = 1\).
 2. For each of those rows, write a term that is 1 for that row and 0 for every other row: join the inputs with AND, and write **NOT** in front of every input that is **0** in the row.
 3. Join the terms with OR.
+
+The method is called **sum of products**: each AND term is a product (as in multiplication, 1 AND 1 = 1 × 1), and the OR joins the terms like a sum.
 :::
 
 A term built this way is 1 only for its own row, because every input has to have the right value for the AND to give 1. The OR then lets any of the chosen rows switch X on.

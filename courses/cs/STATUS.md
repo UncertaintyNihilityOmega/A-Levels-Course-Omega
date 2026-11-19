@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-18 · WRITE P22 · cs.mock.p3 (3,279 words, 12 questions = 75 marks, hand SVG graph from data/cs.mock34_figs.py, Q12 declarative in the real form with NOT last); cs.mock.p4 (3,605 words, Q 20+25+30 = 75; every model program is run by the checks against the printed output). Reviewer: P3 SRT times (P1 0/6, P2 1/4, P3 2/1: finish 11, 6, 3), Dijkstra table, K-map X = NOT B OR (A AND C), binary tree arrays; P4 Q3 methods (c)-(e) belong inside Department (the checks insert them), mark schemes list exactly n [B1] per part with alternatives as accept notes.
+Last: 2026-11-19 · FIX · READER items closed (48) in cs.overview to cs.databases: AO1 examples and command words (Evaluate, Discuss, Show that) in overview; trace-table row rule; optional-check notes and local glosses (registers, hex markers, ASC/CHR, mono/stereo, bandwidth, CALL, flip-flop, cache, BIOS, relay, DBMS, VARCHAR, atomic, insert) across data, media, networks, internet, hardware, logic, software, security; real chapter titles in links; assembly 16-bit note and 191 typo; modulo-10 check digit worked example (checks updated); databases prerequisites no longer lean on cs.datatypes; garage question names its 1NF fields
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

@@ -21,7 +21,7 @@ A: The capitals are in alphabetical order, so D is three after A: \(65 + 3 = 68\
 :::
 
 :::note The simple machine used in this chapter
-The programs in this chapter run on a simple machine with one general purpose register (the accumulator, ACC) and an index register (IX). Each register and each memory location holds **8 bits**, so a stored number is between 0 and 255. A question in the exam states the size of the registers if it matters. Programs start at address 100, and data is kept at higher addresses, so that instructions and data do not overlap.
+The programs in this chapter run on a simple machine with one general purpose register (the accumulator, ACC) and an index register (IX). The numbers that the programs store and calculate with are **8 bits** (the ACC and IX hold 8 bits, and a stored number is between 0 and 255), as in the sections on shifts and masks. In the machine code sections, an instruction and a data word are written as **16 bits** (a 6-bit opcode and a 10-bit operand), so an address can be larger than 255. The size of a register or a memory location is a property of the machine, and a question in the exam states it if it matters. Programs start at address 100, and data is kept at higher addresses, so that instructions and data do not overlap.
 :::
 
 ## From machine code to assembly language
@@ -45,7 +45,7 @@ A short, memorable abbreviation used in assembly language for an opcode: `ADD` f
 :::
 
 :::def Assembler
-A program that translates a program written in assembly language into machine code. The assembler is a language translator, like a compiler, but it is simpler because every assembly instruction translates into exactly one machine code instruction.
+A program that translates a program written in assembly language into machine code. The assembler is a language translator. It is simpler than a **compiler** (a program that translates a high-level language such as Python; met in [System software: operating systems and translators](#cs.software)) because every assembly instruction translates into exactly one machine code instruction.
 :::
 
 Writing `ADD 105` is much easier to read, to write and to correct than a row of 16 ones and zeros, and the assembler does the boring translation. A label such as `TOTAL` also means that the programmer does not have to work out the address of every variable by hand.
@@ -67,7 +67,7 @@ The instruction `LDD 104` becomes the opcode for `LDD`, 000010, followed by 104 
 000010 0001101000
 ```
 
-Because there is exactly one machine instruction for each assembly instruction, the translation is a direct lookup. That is why an assembler is much simpler than a compiler, which has to turn one line of Python or pseudocode into many machine instructions.
+Because there is exactly one machine instruction for each assembly instruction, the translation is a direct lookup. That is why an assembler is much simpler than a compiler (the translator for high-level languages, met in the next chapter but one), which has to turn one line of Python or pseudocode into many machine instructions.
 
 :::warn Assembly is not portable
 Machine code and assembly language are different for every type of processor. A program written in the assembly language of one processor will not run on a processor of a different design, and has to be rewritten. A program in a high-level language needs only to be translated again.
@@ -80,6 +80,8 @@ Assembly language is still used when a programmer needs something that high-leve
 ## The instruction set
 
 The syllabus uses one example instruction set, and a Paper 1 question prints the part of it that the question uses, with a short explanation of each instruction. You are not expected to memorise it, but you must be able to read it quickly and to use it exactly. Learn the pattern, and you can pick up any similar set.
+
+In the table, `#n`, `Bn` and `&n` all mean "the number n": `#` is denary, `B` is binary and `&` is hexadecimal. They are explained just below the table.
 
 | Instruction | Operand | Explanation |
 |---|---|---|
@@ -640,7 +642,7 @@ Test, set and toggle all use the pattern *load the register, apply the mask, sto
 A device such as a greenhouse controller might use one byte of memory for its eight sensors (bit 3 is the door sensor, and so on) and one byte for its eight lights or switches. The program reads the sensor byte, tests one bit with a mask, and if the bit is set it changes a bit of the output byte.
 
 :::eg Testing a bit and displaying the result
-Location 109 is the status register of a machine. Bit 3 is 1 when the lid is open. The program below shows `Y` if the lid is open and `N` if it is closed. The ASCII codes of `N` and `Y` are 78 and 89. ACC is shown in binary in the trace table. Trace the program when location 109 holds 01101100.
+Location 109 holds the status byte of a machine: an ordinary memory byte whose bits report the state of a device (it is not the processor's status register). Bit 3 is 1 when the lid is open. The program below shows `Y` if the lid is open and `N` if it is closed. The ASCII codes of `N` and `Y` are 78 and 89. ACC is shown in binary in the trace table. Trace the program when location 109 holds 01101100.
 
 ```text
 100          LDD STATUS
@@ -860,7 +862,7 @@ H: Bit 0 is the rightmost bit. Use OR to set, AND to clear or test, and XOR to t
 A: (a) `OR B01000000` [B1] (b) `AND B11111011` [B1] (c) `XOR B00000001` [B1] (d) `AND B10000000` [B1]
 
 Q: [8 marks] ★★★ (#cs.assembly) The four test marks of a student are stored in locations 180 to 183 (17, 22, 9 and 31). Location 191 holds 4, the number of marks. Write an assembly language program that uses the index register and a loop to add the four marks and store the total in location 190.
-H: Set IX and the total to 0 before the loop; decide how the loop ends (the count in location 161 goes down by 1 each time).
+H: Set IX and the total to 0 before the loop; decide how the loop ends (the count in location 191 goes down by 1 each time).
 H: Compare ACC with 0 after the count has been reduced and stored.
 A: A model answer, which stores 79 in location 190:
 

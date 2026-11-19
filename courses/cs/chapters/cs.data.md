@@ -275,15 +275,17 @@ Hexadecimal is a shorthand for binary. It is not a different way for the compute
 - it is quicker to read and easier to copy without mistakes than a long string of 0s and 1s;
 - it converts to and from binary easily, with no calculation.
 
+A number written in hexadecimal is often marked so that nobody reads it as denary: `#` in a web colour, `0x` in front of a number in many programming tools (`0x7FFE`) and `&` in front of a number in the assembly language of this course (`&4A`) all mean "this number is hexadecimal". Several terms in the table below are met properly in later chapters; the table only says why hex suits each use.
+
 Typical uses:
 
 | Use | Example | Why hex suits it |
 |---|---|---|
 | Colour codes in web pages | `#FF8000` is red FF, green 80, blue 00 | each colour is one byte, so two hex digits |
-| Memory addresses | `0x7FFE` in a debugger | addresses are long binary numbers |
-| MAC addresses | `3C:52:82:1A:9F:07` (12 hex digits) | the 48-bit address is much shorter in hex |
+| Memory addresses (every storage place in memory has a number, its address) | `0x7FFE`, as a programmer sees it in a debugger (a tool that shows what a running program is doing) | addresses are long binary numbers |
+| MAC addresses (a fixed 48-bit number that identifies a network card; see [Networks: models, topologies and hardware](#cs.networks)) | `3C:52:82:1A:9F:07` (12 hex digits) | the 48-bit address is much shorter in hex |
 | Error and status codes | a fault report that shows `0x1A4F` | short, and easy to quote to a support team |
-| Machine code and assembly | `&4A` in assembly language | shows each byte compactly |
+| Machine code and assembly (the processor's own instructions and the human-readable form of them, met in [Assembly language and bit manipulation](#cs.assembly)) | `&4A` in assembly language | shows each byte compactly |
 
 For the colour `#FF8000`: FF is 255 (full red), 80 is 128 (about half green) and 00 is 0 (no blue), which is orange. Each of the three bytes can be 0 to 255, so a 24-bit colour code can describe \(2^{24} = 16\,777\,216\) colours.
 
@@ -381,6 +383,8 @@ Try the widget, and use it to check your own working. Enter a denary number or a
 
 Whenever you have an answer, check it with the place values: add the 1-bits, counting the left-hand bit as −128. It takes ten seconds and catches both slips.
 
+*Optional check.* You have not met functions yet: `def` names a group of steps and `return` hands back its answer (you learn both in [Procedures, functions and parameters](#cs.procedures)). Run this block as it is and compare the output with your hand working; the exam never asks you to write it.
+
 ```python
 def to_twos(value, bits):
     return format(value & (2 ** bits - 1), "0" + str(bits) + "b")
@@ -464,7 +468,7 @@ The carry out of the left-hand column (the 1 on the left) is discarded, leaving 
 
 ## Overflow
 
-An 8-bit register can only hold 8 bits. If the true answer needs more, the register holds the wrong value.
+An 8-bit register can only hold 8 bits. (A **register** is a small storage place inside the processor that holds one value while the processor works on it; you meet registers in [Processor fundamentals and the fetch-execute cycle](#cs.processor).) If the true answer needs more bits than the register has, the register holds the wrong value.
 
 :::def Overflow
 An error that occurs when the result of a calculation is too large (or too small) to be stored in the number of bits available.
@@ -525,6 +529,8 @@ Adding −1 and −1 in two's complement gives 11111111 + 11111111 = 1 11111110.
 
 What happens in a real program when overflow occurs? That depends on the processor and language: the stored result may be wrong without any warning, or the processor may set a flag that software can test. The exam only asks you to recognise it and explain why it happens.
 
+*Optional check.* Like the previous Python block, this one uses a function (`def` and `return`, see [Procedures, functions and parameters](#cs.procedures)) and `&`, which keeps only the lowest bits of a number. Run it as it is and compare the output with your hand working.
+
 ```python
 def add_signed(a, b, bits=8):
     result = (a + b) & (2 ** bits - 1)
@@ -564,7 +570,7 @@ The American Standard Code for Information Interchange: a character set that use
 A character set that gives a unique code to the characters of nearly all the world's writing systems, as well as symbols and emoji. It uses more bits per character than ASCII (an encoding can use 8, 16 or 32 bits per character), so it can represent far more characters.
 :::
 
-The codes of ASCII are arranged in order, so you can calculate with them. The code of 'A' is 65 and the capital letters follow in order: 'B' is 66, 'C' is 67, up to 'Z'. The lower-case letters are in order too, starting at 'a' = 97, so each lower-case letter is exactly 32 more than its capital. The digit characters '0' to '9' are 48 to 57. You do not need to memorise the codes: a question gives the ones you need, as the pseudocode `ASC` example in the insert does.
+The codes of ASCII are arranged in order, so you can calculate with them. The code of 'A' is 65 and the capital letters follow in order: 'B' is 66, 'C' is 67, up to 'Z'. The lower-case letters are in order too, starting at 'a' = 97, so each lower-case letter is exactly 32 more than its capital. The digit characters '0' to '9' are 48 to 57. You do not need to memorise the codes: a question gives the ones you need. The Cambridge pseudocode has two functions for this: `ASC("A")` gives 65 (the code of a character) and `CHR(65)` gives "A" (the character with a code).
 
 :::warn The code for '7' is not 7
 The character '7' is stored using the code 55 in ASCII, not the number 7. The digit characters have codes in order, so '7' is 7 more than '0' (48 + 7 = 55). A program that reads a digit typed at the keyboard must subtract the code of '0' to get its value. In Python, `ord("7")` is 55 and `int("7")` is 7.
@@ -585,6 +591,8 @@ In ASCII the character 'A' has the code 65. (a) What is the code of 'F'? (b) Whi
 ASCII has only 128 characters (256 in extended ASCII), enough for English, but not for Arabic, Chinese, Hindi, accented letters in many European languages, or emoji. Different countries once used different extended sets, so the same code could show different letters on different computers. Unicode solves this with one set that covers all of them. The first 128 Unicode codes match ASCII, so plain English text is unchanged.
 
 The cost is size. In one common Unicode encoding (UTF-8), the ASCII characters take one byte and others take two, three or four bytes, so a text in a script such as Hindi needs more storage than the same number of characters in ASCII. Other encodings use 16 or 32 bits for every character.
+
+*Optional check.* You have not met these Python features yet, so run the block as it is. `ord(letter)` gives the code of a character, the square brackets with `for … in …` build a list with one code per letter of the word, `len` counts the items, and `.encode("utf-8")` turns text into the bytes that UTF-8 would store, so `len(…)` of that is the number of bytes.
 
 ```python
 word = "Lagos"

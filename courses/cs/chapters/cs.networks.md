@@ -161,7 +161,7 @@ A **topology** is the layout of a network: which devices are connected to which.
 The arrangement of the devices (nodes) and the connections between them in a network.
 :::
 
-Data crosses a network in small pieces. Each piece has a **header**, which includes the address of the destination, and a part that carries the data. On a local network the piece is called a **frame** and the address is a MAC address (later in this chapter). On the internet it is called a **packet** and the address is an IP address. The detail of packets and how they are routed belongs to [Protocols, TCP/IP and packet switching](#cs.networks2); for now treat "packet" and "frame" as a piece of data with the destination's address on it.
+Data crosses a network in small pieces. Each piece has a **header**, which includes the address of the destination, and a part that carries the data. On a local network the piece is called a **frame** and the address is a MAC address (later in this chapter). On the internet it is called a **packet** and the address is an IP address (a number that identifies a device on the internet; explained under "Switch or router?" below and in [The internet: IP addresses, DNS and streaming](#cs.internet)). The detail of packets and how they are routed belongs to [Protocols, TCP/IP and packet switching](#cs.networks2); for now treat "packet" and "frame" as a piece of data with the destination's address on it.
 
 ### Bus topology
 
@@ -203,9 +203,9 @@ In a **mesh** network there are several connections between hosts, so there is m
 <figure class="fig small"><svg viewBox="0 0 340 150" role="img" aria-label="A full mesh of four hosts, A, B, C and D. Every host is joined by a direct link to each of the other three hosts, giving six links, including two diagonals that cross in the middle."><line class="c1 sw2" x1="60" y1="27" x2="280" y2="27"/><line class="c1 sw2" x1="60" y1="123" x2="280" y2="123"/><line class="c1 sw2" x1="60" y1="27" x2="60" y2="123"/><line class="c1 sw2" x1="280" y1="27" x2="280" y2="123"/><line class="c1 sw2" x1="60" y1="27" x2="280" y2="123"/><line class="c1 sw2" x1="280" y1="27" x2="60" y2="123"/><rect class="fm s-acc sw2" x="38" y="14" width="44" height="26"/><text class="tl tc" x="60" y="32">A</text><rect class="fm s-acc sw2" x="258" y="14" width="44" height="26"/><text class="tl tc" x="280" y="32">B</text><rect class="fm s-acc sw2" x="38" y="110" width="44" height="26"/><text class="tl tc" x="60" y="128">C</text><rect class="fm s-acc sw2" x="258" y="110" width="44" height="26"/><text class="tl tc" x="280" y="128">D</text></svg><figcaption>A full mesh of four hosts needs six links, so every host can reach every other directly.</figcaption></figure>
 :::
 
-**How a frame travels.** In a full mesh, A sends a frame to D straight down the A–D link. In a partial mesh, the frame may have to pass through other hosts, and a device with a **routing table** chooses the next link towards the destination. If a link fails, a frame is sent by another route, for example from A to B to D, so the network keeps working.
+**How a frame travels.** In a full mesh, A sends a frame to D straight down the A–D link. In a partial mesh, the frame may have to pass through other hosts, and a device with a **routing table** (a list of which link leads towards each destination; explained under "Switch or router?" below) chooses the next link towards the destination. If a link fails, a frame is sent by another route, for example from A to B to D, so the network keeps working.
 
-The number of links in a full mesh grows quickly. With \(n\) hosts, every host links to the other \(n - 1\), but each link is shared by two hosts, so the number of links is \(\dfrac{n(n-1)}{2}\). This program prints it for four sizes of network:
+The number of links in a full mesh grows quickly. With \(n\) hosts, every host links to the other \(n - 1\), but each link is shared by two hosts, so the number of links is \(\dfrac{n(n-1)}{2}\). This program prints it for four sizes of network. *Optional check:* `for hosts in [4, 5, 6, 10]` repeats the indented lines once for each number in the list, and `//` divides and drops any remainder.
 
 ```python
 for hosts in [4, 5, 6, 10]:
@@ -287,11 +287,17 @@ Data travels between devices in a **transmission medium**, either a cable (wired
 | Security | harder to intercept: an attacker needs to reach the cable | signals can be picked up by anyone in range, so the data must be encrypted |
 | Mobility | devices stay near a socket | devices can move around |
 | Installation | cables to lay, which is slow and costly in old buildings | no cable, easy to add a device |
-| Cost | cheap for short links in a new building | cheap for a few devices, but needs access points |
+| Cost | cheap for short links in a new building | cheap for a few devices, but needs wireless access points (see the hardware list below) |
 
 Neither is better in every case. A hospital might use wired links for fixed equipment, which needs speed and reliability, and wireless for staff who carry tablets from ward to ward.
 
 ### The five media you must know
+
+The table below uses the word bandwidth, so here is its meaning first.
+
+:::def Bandwidth
+The amount of data that a transmission medium can carry in a given time, measured in bits per second. A medium with a higher bandwidth can carry more data per second.
+:::
 
 | Medium | What carries the data | Characteristics |
 |---|---|---|
@@ -301,11 +307,9 @@ Neither is better in every case. A hospital might use wired links for fixed equi
 | Microwaves | a narrow beam between two dishes on towers | high bandwidth; needs a clear line of sight; links tens of kilometres; useful where laying cable is costly; weather and obstacles can affect it |
 | Satellites | signals beamed up to a satellite and down to a receiver | covers huge areas and remote places; high cost; weather can affect it; long delay (latency) because the signal travels thousands of kilometres |
 
-:::def Bandwidth
-The amount of data that a transmission medium can carry in a given time, measured in bits per second. A medium with a higher bandwidth can carry more data per second.
-:::
-
 The delay with a satellite is worth a calculation, because it explains why satellite links are poor for fast, interactive use. A satellite in a geostationary orbit stays above one point on the Earth at a height of about 35 786 km. A signal from the ground goes up to the satellite and down again, and the reply goes up and down again, so it travels at least four times the height. Radio waves travel at about 299 792 km per second.
+
+*Optional check.* In the last line, `f"{delay:.3f} seconds"` is a Python f-string: the `{delay:.3f}` is replaced by the value of `delay` written with 3 digits after the decimal point. Run the block as it is and compare the output with the working above.
 
 ```python
 height_km = 35786
@@ -390,7 +394,7 @@ A switch keeps a table that links each **MAC address** to the port the device is
 <figure class="fig small"><svg viewBox="0 0 340 120" role="img" aria-label="A simplified Ethernet frame drawn as four boxes in a row, left to right: destination address, source address, data, and error check."><text class="tl ti" x="15" y="18">Ethernet frame (simplified)</text><rect class="fm s-acc sw2" x="15" y="30" width="85" height="46"/><text class="tl tc" x="57" y="50">Destination</text><text class="tl tc" x="57" y="68">address</text><rect class="fm s-acc sw2" x="100" y="30" width="85" height="46"/><text class="tl tc" x="142" y="50">Source</text><text class="tl tc" x="142" y="68">address</text><rect class="f1 s-acc sw2" x="185" y="30" width="85" height="46"/><text class="tl tc" x="227" y="58">Data</text><rect class="fm s-acc sw2" x="270" y="30" width="55" height="46"/><text class="tl tc" x="297" y="50">Error</text><text class="tl tc" x="297" y="68">check</text><text class="tl tc" x="170" y="104">sent from left to right as one unit</text></svg><figcaption>An Ethernet frame carries the destination and source MAC addresses, the data and an error check. Real frames have a few more fields.</figcaption></figure>
 :::
 
-The Python program below follows a switch with four hosts, A to D, on ports 1 to 4. A **dictionary** stores pairs of a key and a value: here the key is the host's name and the value is its port number. The program learns each source, then forwards or floods each frame.
+The Python program below follows a switch with four hosts, A to D, on ports 1 to 4. A **dictionary** stores pairs of a key and a value: here the key is the host's name and the value is its port number. The program learns each source, then forwards or floods each frame. *Optional check:* the brackets `("A", "D")` hold a pair of values (a tuple), and `for source, destination in frames` takes one pair at a time and names its two parts. `ports.values()` is the list of all the port numbers, the square-bracket line with `for … in … if …` builds a new list of the ports other than the source's, and `", ".join(others)` glues that list into one string with a comma and a space between the items. Run the program as it is and compare the output with the working in the paragraph after it.
 
 ```python
 ports = {"A": 1, "B": 2, "C": 3, "D": 4}
@@ -480,7 +484,7 @@ Carrier Sense Multiple Access with Collision Detection. A method used by Etherne
 6. **Retry.** The device listens again and resends the frame. After a set number of failed attempts (16 in Ethernet) it gives up and reports an error.
 :::
 
-The same procedure in pseudocode, with the actions written as procedures:
+The same procedure in pseudocode, with the actions written as procedures. `CALL` runs a named group of steps (a **procedure**); you write your own in [Procedures, functions and parameters](#cs.procedures), and here the names say what each step does, so you do not need their inner details. The `REPEAT … UNTIL` loop runs its body at least once and stops when its condition is true.
 
 ```pseudocode
 Attempts ← 0
@@ -498,7 +502,7 @@ REPEAT
 UNTIL Sent = TRUE OR Attempts = 16
 ```
 
-Suppose hosts A and B start sending at the same moment and each picks a random wait, A picking 2 time slots and B picking 1. B has the shorter wait, so it listens first, finds the cable idle and sends. A's wait ends later; by then B is sending, so A listens, finds the cable busy and waits. The program below shows that order.
+Suppose hosts A and B start sending at the same moment and each picks a random wait, A picking 2 time slots and B picking 1. B has the shorter wait, so it listens first, finds the cable idle and sends. A's wait ends later; by then B is sending, so A listens, finds the cable busy and waits. The program below shows that order. *Optional check:* `waits` is a dictionary (it pairs each host with its wait), and `sorted(waits, key=waits.get)` lists the hosts with the shortest wait first, so `order[0]` is the first host in that list and `order[1]` the second.
 
 ```python
 waits = {"A": 2, "B": 1}

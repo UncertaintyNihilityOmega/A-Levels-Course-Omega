@@ -99,6 +99,8 @@ In KiB: \(2\,359\,296 \div 1024 = 2304\) KiB. [B1]
 In MiB: \(2304 \div 1024 = 2.25\) MiB. [B1]
 :::
 
+*Optional check.* `def` names a group of steps and `return` hands back its answer; you learn both in [Procedures, functions and parameters](#cs.procedures). `//` divides and drops any remainder. Run the block as it is and compare the output with your hand working: the exam works by hand.
+
 ```python
 def bitmap_size_bytes(width, height, colour_depth):
     return width * height * colour_depth // 8
@@ -230,6 +232,8 @@ A microphone converts the sound to a varying electrical signal, and an analogue-
 
 The figure shows both settings at work. The **sampling rate** decides how often the wave is measured, so a higher rate follows the wave more closely in time. The **sampling resolution** decides how finely each measurement is rounded: with only 8 levels the stored value is often a little different from the true height of the wave. A higher rate and a higher resolution both make the digital sound a truer copy of the original.
 
+*Optional check.* `import math` makes Python's maths library available, and `math.sin` and `math.pi` are the sine routine and the number pi from it. `levels = []` starts an empty list and `levels.append(…)` adds one value to its end. `round` rounds to the nearest whole number. Run the block as it is; the exam never asks you to write it.
+
 ```python
 import math
 
@@ -252,9 +256,11 @@ This program takes 12 samples of one cycle of a sine wave, whose height runs fro
 
 Each second holds `sampling rate` samples, and each sample takes `sampling resolution` bits.
 
+A recording can have more than one **channel**, a separate stream of samples for one speaker. **Mono** has one channel. **Stereo** has two channels, one for the left speaker and one for the right, so at every sampling instant (every time the sound is measured) two samples are stored, one for each channel, and the file is twice as big as the same sound in mono.
+
 :::key Sound file size
 - Size in bits = sampling rate (Hz) × sampling resolution (bits) × time (seconds).
-- For stereo, or any number of channels, multiply by the number of channels.
+- Mono is 1 channel and stereo is 2: for stereo, or any number of channels, multiply by the number of channels.
 - Divide by 8 for bytes, then by 1024 for KiB, and so on. Ignore the header unless told.
 :::
 
@@ -269,6 +275,8 @@ In KiB: \(960\,000 \div 1024 = 937.5\) KiB. [B1]
 
 Stereo has two channels, so the size doubles: \(1\,920\,000\) bytes. [B1]
 :::
+
+*Optional check.* `def` names a group of steps and `return` hands back its answer ([Procedures, functions and parameters](#cs.procedures)). Here `channels=1` means "use 1 channel unless the call says otherwise", and `//` divides and drops the remainder. Run the block as it is and compare the output with your hand working.
 
 ```python
 def sound_size_bytes(rate, resolution, seconds, channels=1):
@@ -306,7 +314,7 @@ The sampling rate is **how many** samples per second (Hz). The sampling resoluti
 
 ## Compression
 
-The calculations above show how fast files grow. A 3-minute stereo recording at 44 100 Hz and 16 bits uses about 32 MB (31 752 000 bytes). Large files fill storage, take a long time to send and need more bandwidth to stream. **Compression** reduces the size of a file.
+The calculations above show how fast files grow. A 3-minute stereo recording at 44 100 Hz and 16 bits uses about 32 MB (31 752 000 bytes). Large files fill storage, take a long time to send and need more bandwidth to stream. (**Bandwidth** is how much data a link can carry each second; **streaming** is playing a video or sound while it is still arriving, instead of waiting for the whole file. Both are explained in [Networks: models, topologies and hardware](#cs.networks) and [The internet: IP addresses, DNS and streaming](#cs.internet).) **Compression** reduces the size of a file.
 
 :::def Compression
 Reducing the size of a file by encoding its data using fewer bits.
@@ -315,7 +323,7 @@ Reducing the size of a file by encoding its data using fewer bits.
 Reasons for compressing a file:
 
 - it uses less storage space, so more files fit on a device;
-- it takes less time to send or download, and uses less bandwidth, so streaming is smoother;
+- it takes less time to send or download, and uses less bandwidth (less of the link's capacity), so streaming, which plays a video while it is still arriving, is smoother;
 - it costs less where data is paid for or limited, such as an email attachment or a mobile data plan.
 
 There are two kinds, and the difference is whether the original can be rebuilt exactly.
@@ -367,6 +375,8 @@ For example, the row of pixels WWWWWWWBBBBBWWWW (W = white, B = black) has 16 pi
 :::html
 <figure class="fig small"><svg viewBox="0 0 330 170" role="img" aria-label="A grid of 12 columns and 5 rows of pixels. Rows 1 and 5 are all light. Rows 2 and 4 have four light pixels, four dark pixels and four light pixels. Row 3 has two light pixels, eight dark pixels and two light pixels. The run-length encoding of each row is written beside it: 12L, 4L 4D 4L, 2L 8D 2L, 4L 4D 4L and 12L."><text class="tl ti" x="14" y="16">12 × 5 pixel image</text><text class="tl ti" x="242" y="16">RLE</text><rect class="fm s-acc" x="14" y="30" width="216" height="90"/><rect class="fa s-acc" x="86" y="48" width="72" height="18"/><rect class="fa s-acc" x="50" y="66" width="144" height="18"/><rect class="fa s-acc" x="86" y="84" width="72" height="18"/><line class="ln-m thin" x1="32" y1="30" x2="32" y2="120"/><line class="ln-m thin" x1="50" y1="30" x2="50" y2="120"/><line class="ln-m thin" x1="68" y1="30" x2="68" y2="120"/><line class="ln-m thin" x1="86" y1="30" x2="86" y2="120"/><line class="ln-m thin" x1="104" y1="30" x2="104" y2="120"/><line class="ln-m thin" x1="122" y1="30" x2="122" y2="120"/><line class="ln-m thin" x1="140" y1="30" x2="140" y2="120"/><line class="ln-m thin" x1="158" y1="30" x2="158" y2="120"/><line class="ln-m thin" x1="176" y1="30" x2="176" y2="120"/><line class="ln-m thin" x1="194" y1="30" x2="194" y2="120"/><line class="ln-m thin" x1="212" y1="30" x2="212" y2="120"/><line class="ln-m thin" x1="14" y1="48" x2="230" y2="48"/><line class="ln-m thin" x1="14" y1="66" x2="230" y2="66"/><line class="ln-m thin" x1="14" y1="84" x2="230" y2="84"/><line class="ln-m thin" x1="14" y1="102" x2="230" y2="102"/><text class="tl" x="242" y="43">12L</text><text class="tl" x="242" y="61">4L 4D 4L</text><text class="tl" x="242" y="79">2L 8D 2L</text><text class="tl" x="242" y="97">4L 4D 4L</text><text class="tl" x="242" y="115">12L</text><text class="tl" x="14" y="142">L = light pixel, D = dark pixel</text><text class="tl" x="14" y="160">Each row is encoded on its own.</text></svg><figcaption>A 12 × 5 image and the RLE of each row. Long runs, such as 12 light pixels in one row, shrink to a count and a value.</figcaption></figure>
 :::
+
+*Optional check.* This block uses features you meet later, so run it as it is and compare the output with your hand working. `def` and `return` define a function (see [Procedures, functions and parameters](#cs.procedures)); `runs` is a list of `[count, item]` pairs, a list inside a list; `runs[-1]` is the last pair in the list, and `runs[-1][1]` is the item in that pair; `.append` adds a new pair to the end of the list; `for count, item in runs` takes each pair in turn and names its two parts; and `"".join(…)` glues the pieces into one string. The exam asks for RLE by hand.
 
 ```python
 def rle_encode(data):

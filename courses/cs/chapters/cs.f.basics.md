@@ -5,7 +5,7 @@
 @summary You have never programmed? Start here. You will learn what a program is, then write and run your first programs in two languages side by side: Python, which Paper 4 uses, and Cambridge pseudocode, which Paper 2 uses. You will cover output, variables, data types, arithmetic, input, conditions, selection, loops, strings, errors and trace tables.
 
 :::why
-Every programming question in Cambridge Computer Science, in Paper 2 on paper and in Paper 4 on a computer, is built from the same few ideas: store values, calculate with them, make decisions and repeat steps. If you can do those five things in both pseudocode and Python, you can learn the rest of the course. This chapter teaches them slowly, from nothing, and every program in it was run to check its output.
+Every programming question in Cambridge Computer Science, in Paper 2 on paper and in Paper 4 on a computer, is built from the same few ideas: store values, calculate with them, make decisions and repeat steps. If you can do those four things (together with input and output, which let a program talk to its user) in both pseudocode and Python, you can learn the rest of the course. This chapter teaches them slowly, from nothing, and every program in it was run to check its output.
 :::
 
 **Before you start**, you need nothing except the arithmetic you learned at school. This chapter is the first programming chapter of the course. The next programming chapters, [Computational thinking and algorithms](#cs.algorithms) and [Programming basics: variables, selection and loops](#cs.programming), take the same ideas to full exam depth.
@@ -868,13 +868,13 @@ The mean of 10 and 20 is 15. The program divided only `second` by 2 (see the pre
 In Paper 2 you cannot run a program, so the exam asks you to run one **by hand**: a dry run.
 
 :::def Trace table
-A table used to dry-run an algorithm by hand. It has a column for each variable (and one for the output), and a new row each time a value changes.
+A table used to dry-run an algorithm by hand. It has a column for each variable (and one for the output), and one row for each step or pass of the loop in which values change.
 :::
 
 :::steps
 1. Make a column for every variable and one for OUTPUT, in the order the variables first appear.
 2. Work through the statements in order, as the computer does, one at a time.
-3. Every time a variable gets a new value, write it in that variable's column on a new row. Leave the other cells empty: an empty cell means "no change".
+3. Every time a variable gets a new value, write it in that variable's column. The first row holds the starting values. After that, statements that run one after the other in the same pass of a loop may share a row (when a pass changes two variables, both new values go on the same row); start a new row for the next pass. Leave the other cells empty: an empty cell means "no change".
 4. When something is output, write it in the OUTPUT column.
 5. For a loop, go round it as many times as the condition or the counter says, writing the new values on each repeat.
 :::
@@ -1475,7 +1475,7 @@ Digit sum: 19
 - Selection: IF … THEN … ELSE … ENDIF; Python uses a colon, indentation and `elif`. Test the narrowest condition first.
 - Iteration: FOR (known number of repeats; Python's `range` stops before its end value), WHILE (test first, may run zero times), REPEAT … UNTIL (test last, runs at least once, stops when the condition is true; Python uses `while True` with `break`).
 - Syntax errors stop the program starting; run-time errors stop it while it runs; logic errors give wrong results. Read a Python error from the bottom line up.
-- A trace table has a column for each variable and the output, with a new row each time a value changes.
+- A trace table has a column for each variable and the output, with one row for each pass in which values change (the first row holds the starting values).
 :::
 
 :::links

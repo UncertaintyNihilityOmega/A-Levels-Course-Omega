@@ -191,6 +191,8 @@ Long IPv6 addresses have two shortening rules:
 1. In each group, **leading zeros can be left out** (`0db8` becomes `db8`, `0042` becomes `42`, and a group `0000` becomes `0`).
 2. **One run of groups that are all zeros can be replaced by `::`.** This can be used **only once** in an address, because otherwise you could not tell how many zero groups each `::` stands for.
 
+*Optional check.* You have not met these Python features yet, so run the block as it is. `import ipaddress` makes Python's library for IP addresses available (the name before the dot says which library), `ipaddress.ip_address(full)` turns the text into an address object, and `.compressed` and `.exploded` are its short and full written forms.
+
 ```python
 import ipaddress
 
@@ -222,7 +224,7 @@ State whether each address is valid and give a reason. [4 marks]
 - (d) Not valid: `::` has been used twice, so it is not possible to tell how many zero groups each one stands for. [B1]
 :::
 
-A program can check the dotted form. It splits the text at each full stop and tests every part.
+A program can check the dotted form. It splits the text at each full stop and tests every part. *Optional check:* `def` and `return` define a function that hands back an answer ([Procedures, functions and parameters](#cs.procedures)); `text.split(".")` cuts the text into a list of parts at each full stop; `part.isdigit()` is True only if the part is made of digits; `int(part)` turns the text into a number; and `len(parts)` counts the parts. Run the block as it is and compare each line of output with your own check of the address.
 
 ```python
 def is_valid_ipv4(text):
@@ -250,7 +252,7 @@ Output:
 172.16.0.1 True
 ```
 
-`part.isdigit()` is False for an empty part, so an address such as `1..2.3` is rejected as well. In a Paper 2 style question, the four numbers are already in an array, and the pseudocode only has to test the range:
+`part.isdigit()` is False for an empty part, so an address such as `1..2.3` is rejected as well. In a Paper 2 style question, the four numbers are already in an array, and the pseudocode only has to test the range. An **array** is a numbered list of values, so `Octets[1]` is the first number of the address, `Octets[2]` the second, and so on (you learn arrays in [Data types, records and arrays](#cs.datatypes), a few chapters on):
 
 ```pseudocode
 DECLARE Valid : BOOLEAN
@@ -289,7 +291,7 @@ The **network address** is found by an **AND** of the address and the mask, bit 
 1. Write the address and the mask in binary, octet by octet.
 2. AND them: 1 AND 1 gives 1, anything else gives 0.
 3. The result is the **network address**: the host part is all zeros.
-4. The **broadcast address** is the network address with the host part all ones. Neither the network address nor the broadcast address can be given to a device.
+4. The **broadcast address** is the network address with the host part all ones. A message sent to it is a **broadcast**: one message that every device on the network receives. Neither the network address nor the broadcast address can be given to a device.
 5. The number of **usable host addresses** is \(2^h - 2\), where \(h\) is the number of host bits (32 minus the prefix length).
 :::
 
@@ -310,6 +312,8 @@ The number of usable host addresses is \(2^{12} - 2 = 4096 - 2 = 4094\). [B1]
 :::
 
 The same working as a program. Python's `&` operator does an AND on every pair of bits of two whole numbers, and `format(number, "08b")` writes a number as 8 binary digits.
+
+*Optional check.* The rest of this block uses features you meet later: `def` and `return` define a function; `address.split(".")` cuts the text into a list of four parts; `a[i]` is part number `i` of the list `a` (counting from 0); `range(4)` gives `i` the values 0, 1, 2 and 3; `.append` adds an item to the end of a list; `int(…)` and `str(…)` change text to a number and back; and `".".join(…)` glues a list of pieces into one string with a full stop between them. Run the block as it is and compare the output with the hand working above.
 
 ```python
 def to_binary(address):
@@ -353,7 +357,7 @@ Output:
 /30 gives 2 host bits and 2 usable hosts
 ```
 
-Use the tool below to try your own addresses. It shows the AND in binary, with a bar `|` between the network part and the host part, the network address, the first and last host, the broadcast address and the number of usable hosts. Try the prefix 24, then 26, and watch how the host part shrinks. Try the address 10.0.0.5 and see that it is private.
+Use the tool below to try your own addresses. It shows the AND in binary, with a bar `|` between the network part and the host part, the network address, the first and last host, the broadcast address and the number of usable hosts. Try the prefix 24, then 26, and watch how the host part shrinks. Try the address 10.0.0.5 as well: the tool says it is a private address, a kind you meet in the section "Public and private IP addresses" below.
 
 :::html
 <div class="widget" data-w="cs-ip" data-ip="192.168.10.77" data-prefix="26"></div>
@@ -384,6 +388,8 @@ Dividing a network into smaller networks (subnets) by using some of the host bit
 Why subnet? A big network has too much traffic, because every broadcast goes to every device. Subnets keep local traffic inside their own subnet, which improves performance. A router sits between the subnets, so the network manager can control what passes between them, such as keeping the student network apart from the staff network, which improves security. Subnets also make a large network easier to manage, and they use addresses more efficiently.
 
 Take the network 192.168.1.0/24, which has 8 host bits. To make 4 subnets we need 2 extra network bits (\(2^2 = 4\)). The prefix becomes \(24 + 2 = 26\), the mask 255.255.255.192, and each subnet has 6 host bits, so \(2^6 - 2 = 62\) usable addresses. The last octet of each subnet starts at a multiple of 64.
+
+*Optional check.* `range(4)` gives `n` the values 0 to 3, and in an f-string (text that starts with `f"`), each `{…}` is replaced by the value of the calculation inside it. Run the block as it is and compare the output with the table of subnets you work out by hand.
 
 ```python
 for n in range(4):
@@ -517,7 +523,7 @@ The steps, in order:
 6. The web server sends the page back, and the browser displays it.
 :::
 
-This program imitates the steps with a dictionary of records. The first request goes to the DNS servers, the second is answered from the resolver's cache, and the third shows that a name that does not exist gets no address.
+This program imitates the steps with a dictionary of records. The first request goes to the DNS servers, the second is answered from the resolver's cache, and the third shows that a name that does not exist gets no address. *Optional check:* `def look_up(name)` defines a group of steps that you run by writing `look_up("…")`, and `return` hands back its answer ([Procedures, functions and parameters](#cs.procedures)); `None` means "no value". Run the block as it is and follow the three requests in the output.
 
 ```python
 dns_servers = {"www.example.org": "203.0.113.25", "www.example.com": "198.51.100.7"}

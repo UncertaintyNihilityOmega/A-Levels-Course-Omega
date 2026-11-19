@@ -9,14 +9,14 @@
 Paper 1 asks you to describe how real devices work, one step per mark, and to explain why one kind of memory or storage suits a job better than another. Those marks are easy to win if you have the steps in the right order and the right technical word for each one. The same ideas run through the whole course: the memory types return in the processor chapter, and the control loop is a pattern you will meet again in programming.
 :::
 
-**Before you start**, you should know what a byte is and how binary data is measured, from [Data representation](#cs.data), and how sound becomes numbers, from [Multimedia](#cs.media). Nothing else is needed.
+**Before you start**, you should know what a byte is and how binary data is measured, from [Number systems and binary arithmetic](#cs.data), and how sound becomes numbers, from [Images, sound and compression](#cs.media). Nothing else is needed.
 
 :::try Warm-up
-Q: How many bytes are in 1 KiB, and how many bits are in 1 byte? (from [Data representation](#cs.data))
+Q: How many bytes are in 1 KiB, and how many bits are in 1 byte? (from [Number systems and binary arithmetic](#cs.data))
 A: 1 KiB is \(2^{10} = 1024\) bytes, and 1 byte is 8 bits.
-Q: Name the device that turns an analogue sound signal into numbers, and the device that turns numbers back into a signal for a speaker. (from [Multimedia](#cs.media))
+Q: Name the device that turns an analogue sound signal into numbers, and the device that turns numbers back into a signal for a speaker. (from [Images, sound and compression](#cs.media))
 A: An analogue-to-digital converter (ADC) turns the signal into numbers, and a digital-to-analogue converter (DAC) turns numbers back into a signal.
-Q: A video is 5 minutes (300 seconds) long and each second needs 2 MB of data. How many MB is the whole video? (from [Data representation](#cs.data))
+Q: A video is 5 minutes (300 seconds) long and each second needs 2 MB of data. How many MB is the whole video? (from [Number systems and binary arithmetic](#cs.data))
 A: \(300 \times 2 = 600\) MB.
 :::
 
@@ -118,7 +118,7 @@ Other types of 3D printer harden a liquid resin with light or fuse a powder, but
 
 ### The speaker
 
-A speaker turns a digital signal back into sound. You met the first step in [Multimedia](#cs.media).
+A speaker turns a digital signal back into sound. You met the first step in [Images, sound and compression](#cs.media).
 
 :::steps
 1. The digital sound data goes to a **digital-to-analogue converter (DAC)**, which produces a varying electrical (analogue) signal.
@@ -329,7 +329,7 @@ A PC's operating system is stored on secondary storage (a disk) and copied into 
 RAM is built in two ways. You need to know both, and the reasons they are used where they are.
 
 :::def SRAM (static RAM)
-RAM in which each bit is stored in a flip-flop circuit made of several transistors. It keeps its data as long as power is supplied and does not need refreshing. It is faster, uses more chip area per bit and costs more than DRAM.
+RAM in which each bit is stored in a flip-flop (a circuit that holds one bit; you meet it in [Boolean algebra, Karnaugh maps, adders and flip-flops](#cs.boolean)) made of several transistors. It keeps its data as long as power is supplied and does not need refreshing. It is faster, uses more chip area per bit and costs more than DRAM.
 :::
 
 :::def DRAM (dynamic RAM)
@@ -345,7 +345,7 @@ RAM in which each bit is stored as a charge in a tiny capacitor, with one transi
 | Density (bits per chip area) | lower | higher |
 | Typical use | **cache memory** inside or next to the processor | **main memory**: the RAM sticks in a computer |
 
-The difference follows from the design. A flip-flop switches almost instantly and holds its state, so SRAM is fast, but it takes several transistors per bit, so it is big and expensive. A capacitor-based cell takes much less space, so DRAM can offer gibibytes cheaply, but its charge leaks and reading it takes longer. A computer therefore uses a **small amount of SRAM** for the data the processor needs most often (the cache, in [Processor fundamentals and the fetch-execute cycle](#cs.processor)) and a **large amount of DRAM** for main memory.
+The difference follows from the design. A flip-flop (the circuit that holds one bit) switches almost instantly and holds its state, so SRAM is fast, but it takes several transistors per bit, so it is big and expensive. A capacitor-based cell takes much less space, so DRAM can offer gibibytes cheaply, but its charge leaks and reading it takes longer. A computer therefore uses a **small amount of SRAM** for the data the processor needs most often (the **cache**, a small fast memory next to the processor that holds the data it uses most; see [Processor fundamentals and the fetch-execute cycle](#cs.processor)) and a **large amount of DRAM** for main memory.
 
 :::warn "Static" does not mean the data never changes
 SRAM can be written and rewritten as often as you like. "Static" only means that it does not need to be refreshed while the power is on. It is still volatile: when the power goes off, an SRAM cell loses its data as well.
@@ -381,7 +381,7 @@ A ROM chip that can be erased and rewritten using electrical signals, without re
 | ROM (mask ROM) | at manufacture | never | a fixed program made in large numbers |
 | PROM | once, by the user or manufacturer | never | a small run of a fixed program |
 | EPROM | many times | by ultraviolet light, out of the device | developing and testing firmware |
-| EEPROM | many times | electrically, in place | settings and firmware that must be updated, such as a device's BIOS or a car key's data |
+| EEPROM | many times | electrically, in place | settings and firmware that must be updated, such as a computer's BIOS (the first program it runs when switched on, which starts the rest of the system) or a car key's data |
 
 The pattern is that each type is easier to change than the one before it, and each costs more per bit. A device maker chooses by asking how often the contents will change and who will change them. Firmware that may need a bug fix after sale is put in EEPROM or flash, so it can be updated without opening the device.
 
@@ -440,7 +440,7 @@ Common sensors on the syllabus are:
 - **infra-red**: detects infra-red radiation, either heat from a person's body (a movement detector) or a beam that something breaks, used in automatic doors and security lights;
 - **sound**: a microphone, used in alarms that react to breaking glass and in baby monitors.
 
-Most sensors produce an **analogue** signal, and a computer needs digital data. The signal therefore passes through an **analogue-to-digital converter (ADC)** before the processor can use it. Most actuators need an **analogue** signal or a higher power than a processor can supply, so the output passes through a **digital-to-analogue converter (DAC)** (and an amplifier or relay) on the way.
+Most sensors produce an **analogue** signal, and a computer needs digital data. The signal therefore passes through an **analogue-to-digital converter (ADC)** before the processor can use it. Most actuators need an **analogue** signal or a higher power than a processor can supply, so the output passes through a **digital-to-analogue converter (DAC)** (and an amplifier or relay, an electrically operated switch that lets a weak signal switch a larger current) on the way.
 
 :::def Monitoring system
 A system that uses sensors to measure a quantity and a processor to record it, display it or raise a warning, but that does not change the thing it is measuring.
@@ -475,7 +475,7 @@ The figure shows the loop in the order you should write it in an exam: sensor, A
 
 ### A control loop as an algorithm
 
-A greenhouse in Pretoria should stay between 18 °C and 22 °C. A heater that switches on at exactly 18 and off at exactly 18 would flicker on and off all the time. A better rule uses **two limits**: switch the heater on below 18 and off above 22, and leave it as it is in between. In pseudocode, a question would tell you the names of the commands that talk to the hardware; the names here are made up for the example.
+A greenhouse in Pretoria should stay between 18 °C and 22 °C. A heater that switches on at exactly 18 and off at exactly 18 would flicker on and off all the time. A better rule uses **two limits**: switch the heater on below 18 and off above 22, and leave it as it is in between. In pseudocode, a question would tell you the names of the commands that talk to the hardware; the names here are made up for the example. Two things in the code are new. A **function** such as `ReadTemperature()` can be used on the right of `←`: it does its work and gives back a value, which is stored in the variable (`Temperature ← ReadTemperature()` stores the reading). `CALL` runs a named group of steps that gives back no value, such as `CALL SetHeater(HeaterOn)`, which sends the value in the brackets to the heater, and `CALL Wait(60)`, which pauses for 60 seconds. You write your own functions and procedures in [Procedures, functions and parameters](#cs.procedures).
 
 ```pseudocode
 CONSTANT LowLimit = 18.0
@@ -499,7 +499,7 @@ ENDWHILE
 
 `ReadTemperature` stands for the sensor and the ADC, and `SetHeater` stands for the DAC and the actuator. The loop is the feedback: each pass takes a new reading that shows the effect of the last pass. The heater changes state only when a limit is crossed, so between 18 and 22 the heater keeps whatever state it had.
 
-To see it work, the Python program below uses a very simple model of the greenhouse in place of the real sensor: the air gains 2.0 °C in a minute when the heater is on and loses 1.0 °C in a minute when it is off. It starts at 19.0 °C.
+To see it work, the Python program below uses a very simple model of the greenhouse in place of the real sensor: the air gains 2.0 °C in a minute when the heater is on and loses 1.0 °C in a minute when it is off. It starts at 19.0 °C. *Optional check:* in the print line, `f"…"` is an f-string, in which each `{…}` is replaced by a value: `{minute:2}` writes the minute number in a space 2 characters wide and `{temperature:.1f}` writes the temperature with 1 digit after the decimal point. Run the block as it is and compare it with the loop above.
 
 ```python
 LOW_LIMIT = 18.0

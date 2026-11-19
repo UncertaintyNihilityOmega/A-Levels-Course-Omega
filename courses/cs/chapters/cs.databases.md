@@ -9,13 +9,13 @@
 Almost every system you use stores its data in a database: your school's register, a shop's stock, a bank's accounts, a booking site. Paper 1 asks you to explain why the database is designed as it is, to draw and read its diagrams, and to take a messy table and turn it into a clean design. The skill is a way of thinking: store each fact once, in the right place, and link the places together. The next chapter, [DBMS and SQL](#cs.sql), then shows how to build and question such a database in the language every database system understands.
 :::
 
-**Before you start**, you should know what a record and a field are from [Data types, records and arrays](#cs.datatypes), and how data sizes are measured from [Number systems and binary arithmetic](#cs.data).
+**Before you start**, you should know the data types STRING and INTEGER from [Programming from zero: Python and pseudocode](#cs.f.basics), and how data sizes are measured from [Number systems and binary arithmetic](#cs.data). The words record and field are explained in this chapter; [Data types, records and arrays](#cs.datatypes), later in the course, teaches them again in programming.
 
 :::try Warm-up
-Q: Which data type suits a telephone number such as 0712 345 678, and why? (from [Data types, records and arrays](#cs.datatypes))
+Q: Which data type suits a telephone number such as 0712 345 678, and why? (from [Programming from zero: Python and pseudocode](#cs.f.basics))
 A: STRING. It is never used in arithmetic, it has a leading zero that an INTEGER would lose, and it contains spaces.
-Q: What is a record, and what is a field? (from [Data types, records and arrays](#cs.datatypes))
-A: A record groups several data items, which may have different data types, under one identifier. Each item in it is a field.
+Q: Give the data type of the value `"Amina"` and the data type of the value `17`. (from [Programming from zero: Python and pseudocode](#cs.f.basics))
+A: `"Amina"` is a STRING and `17` is an INTEGER.
 Q: A file holds 2 000 records of 256 bytes each. How many KiB is that? (from [Number systems and binary arithmetic](#cs.data))
 A: \(2000 \times 256 = 512\,000\) bytes, and \(512\,000 \div 1024 = 500\), so the file is 500 KiB.
 :::
@@ -190,7 +190,7 @@ In MEMBERSHIP both fields are bold and starred: together they form the primary k
 ### How the relational model fixes each limitation
 
 :::key What a relational database provides
-| Limitation of files | How a relational database (with its DBMS) addresses it |
+| Limitation of files | How a relational database (with its DBMS, the database management system, the software that looks after the database; explained at the end of this chapter) addresses it |
 |---|---|
 | Redundancy | Each fact is stored once and tables are linked by keys. |
 | Inconsistency | There is one copy of each fact, so one edit changes it everywhere it is used. |
@@ -217,7 +217,7 @@ A field, or smallest set of fields, that could be chosen as the primary key beca
 :::
 
 :::def Secondary key
-A candidate key that was not chosen as the primary key: an alternative way to identify a record. A DBMS can build an index on a secondary key so that records can be found quickly by it.
+A candidate key that was not chosen as the primary key: an alternative way to identify a record. A DBMS (database management system, the software that looks after the database; explained at the end of this chapter) can build an index on a secondary key so that records can be found quickly by it.
 :::
 
 :::def Foreign key
@@ -373,7 +373,7 @@ Field B depends on field A (written A → B) when each value of A determines exa
 There are three normal forms, each one adding a rule to the one before.
 
 :::def First normal form (1NF)
-A table is in 1NF when every field holds one single value (no lists), there are no repeating groups of fields, and there is a primary key that identifies each record.
+A table is in 1NF when every field holds one single value (an **atomic** value, with no lists), there are no repeating groups of fields, and there is a primary key that identifies each record.
 :::
 
 :::def Second normal form (2NF)
@@ -560,6 +560,8 @@ For the STUDENT table of the clubs database, the data dictionary entry could loo
 | StudentName | VARCHAR | 30 | presence check: must not be empty | |
 | FormID | CHARACTER | 3 | must match a FormID in FORM | foreign key |
 
+Database systems name their data types differently from pseudocode. INTEGER is a whole number. **VARCHAR** is text up to a set length (here at most 30 characters); **CHARACTER** is text of a fixed length (here always 3 characters). In pseudocode terms, both are kinds of STRING. The Size column is the number of characters.
+
 Because the structure is stored once, in the dictionary, a program no longer needs it built in. The DBMS answers "what is the structure?" and the program asks it. That is how a DBMS gives **data independence**.
 
 :::def Logical schema
@@ -662,7 +664,7 @@ Q: [9 marks] ★★★ A garage records each repair job in a table. A vehicle ha
 | 303 | 05/11/2026 | KDA214T | Van | Ms Wanjiru | W1 Oil change 0.5; W3 Tyre rotation 0.75 |
 | 304 | 06/11/2026 | KCM059L | Saloon | Ms Achieng | W3 Tyre rotation 1.0 |
 
-(a) State why the table is not in first normal form. [1] (b) Write the primary key of the table once it is in 1NF. [1] (c) Normalise the data to third normal form. Show each table with its primary key and foreign keys marked. [7]
+(a) State why the table is not in first normal form. [1] (b) The table is put into 1NF by giving each piece of work its own row, so that every row has the fields JobID, JobDate, Registration, VehicleType, OwnerName, WorkCode, WorkDescription and Hours. Write the primary key of this 1NF table. [1] (c) Normalise the data to third normal form. Show each table with its primary key and foreign keys marked. [7]
 H: A job has one date and one vehicle. A vehicle (Registration) has one type and one owner.
 H: The hours depend on the job and the work type together.
 A: (a) the last column holds a list of values (a repeating group), so a field has more than one value [B1]
