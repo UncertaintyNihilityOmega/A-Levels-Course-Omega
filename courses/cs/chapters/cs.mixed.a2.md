@@ -687,7 +687,7 @@ Numbers = Tree()
 print("Empty tree height:", Numbers.Height())
 for Value in [45, 28, 63, 17, 36, 52, 71, 40]:
     Numbers.Insert(Value)
-print("In order:", *Numbers.InOrder())
+print("In order:", *Numbers.InOrder())  # print(*items) prints each item of the list, separated by spaces
 print("Height:", Numbers.Height())
 ```
 
@@ -757,7 +757,7 @@ def ProcessSales(FileName):
                 Fields = Line.strip().split(",")
                 try:
                     Quantity = int(Fields[2])
-                except (ValueError, IndexError):
+                except (ValueError, IndexError):  # a tuple of names catches either error
                     print("Bad line " + str(LineNumber) + ": " + Line.strip())
                     continue
                 Branch = Fields[0]
@@ -902,7 +902,7 @@ def OutputList():
     while Current != 0:
         Items.append(Data[Current])
         Current = Pointer[Current]
-    print(*Items)
+    print(*Items)  # print(*items) prints each item of the list, separated by spaces
 
 
 InitialiseList()

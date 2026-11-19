@@ -130,6 +130,12 @@ assert word[-2:] == "er" and word[:3] == "Com"
 assert "Computer"[2:6] == "mput"                      # quiz
 assert list(range(1, 6)) == [1, 2, 3, 4, 5] and list(range(10, 1, -2)) == [10, 8, 6, 4, 2]
 assert [chr(ord("a") + 2), chr(66), ord("A")] == ["c", "B", 65]
+# string tools added to the string program (join, isalpha, isupper, index, in)
+_cities = ["Accra", "Lima", "Oslo"]
+assert " ".join(["a", "b"]) == "a b"
+assert ("Ab".isalpha(), "A1".isalpha(), "AB".isupper(), "Ab".isupper()) == (True, False, True, False)
+assert (_cities.index("Lima"), "Oslo" in _cities, "Rome" not in _cities) == (1, True, True)
+assert "".isalpha() is False and "".isupper() is False
 
 # program 1 of the translation example (pseudocode semantics, 1-based array)
 marks = [71, 45, 88, 50, 62, 38]

@@ -148,6 +148,8 @@ A swimming club in Perth records the best 100 m time of up to six swimmers. The 
 
 In Python:
 
+One word in this solution needs explaining first: `None` is Python's value for "nothing here", and `x is None` tests for it (`x is not None` is the opposite). An empty element of the array holds `None`, so the whole logic of "empty element" is these two tests.
+
 ```python
 class Swimmer:
     def __init__(self, Name, Seconds):

@@ -12,7 +12,7 @@ Papers 1 to 3 are written on paper. Paper 4 is different: you sit at a computer,
 
 :::try Warm-up
 Q: How do you create a Python list `Marks` of 5 items, all 0? And why is `[[0] * 5] * 3` a poor way to make a list of three rows? (from [Data types, records and arrays](#cs.datatypes))
-A: `Marks = [0] * 5`. In `[[0] * 5] * 3` the three rows are the **same** list, so changing one element changes it in every row. Use `[[0] * 5 for _ in range(3)]`.
+A: `Marks = [0] * 5`. In `[[0] * 5] * 3` the three rows are the **same** list, so changing one element changes it in every row. Use `[[0] * 5 for _ in range(3)]` (explained below, in "Lists, 2D lists and records").
 Q: What do `17 // 5` and `17 % 5` give, and which pseudocode operators do they match? (from [Programming from zero](#cs.f.basics))
 A: 3 and 2. `//` is DIV (the quotient) and `%` is MOD (the remainder).
 Q: How does Paper 4 let you store a record? (from [Data types, records and arrays](#cs.datatypes))
@@ -173,6 +173,12 @@ print("2024".isdigit(), "20.5".isdigit(), "-3".isdigit())
 print(ord("A"), chr(66), chr(ord("a") + 2))
 print(str(42) + "!", int("17") + 1, float("2.5") * 2)
 
+print(" ".join(["a", "b"]))
+print("Ab".isalpha(), "A1".isalpha(), "AB".isupper(), "Ab".isupper())
+
+cities = ["Accra", "Lima", "Oslo"]
+print(cities.index("Lima"), "Oslo" in cities, "Rome" not in cities)
+
 price = 3.456
 print(round(price, 2), f"{price:.2f}", f"{4:>3}|")
 ```
@@ -188,6 +194,9 @@ mput
 True False False
 65 B c
 42! 18 5.0
+a b
+True False True False
+1 True True
 3.46 3.46   4|
 ```
 
@@ -198,6 +207,9 @@ How to read it:
 - `split(",")` cuts a string at every comma and gives a list of strings. `strip()` removes spaces and `"\n"` from both ends.
 - `isdigit()` is True only for a string made entirely of the digits 0 to 9, so it is False for `"20.5"` and `"-3"`. To accept those, use `float()` inside a `try`, as in [File processing and exception handling](#cs.fileproc).
 - `ord` gives the character code, `chr` turns a code into a character.
+- `" ".join(["a", "b"])` is the reverse of `split`: it glues the strings of a list into one string, with the text before `.join` (here a single space) placed between them, so it gives `a b`. The items must already be strings.
+- `isalpha()` is True only for a string made entirely of letters, so `"Ab"` passes and `"A1"` does not. `isupper()` is True when every letter in the string is a capital, so `"AB"` passes and `"Ab"` does not. Both are False for an empty string.
+- `cities.index("Lima")` gives the position (counting from 0) of the first item equal to `"Lima"` in a list, here 1. It stops with a `ValueError` if the item is not there, so test first with `in`: `"Oslo" in cities` is True and `"Rome" not in cities` is True.
 - `round(price, 2)` rounds a number, and `f"{price:.2f}"` builds a string with exactly two decimal places. `:>3` right-aligns in a width of 3.
 
 :::def f-string
@@ -563,6 +575,8 @@ shadowed -> TypeError
 bad_conversion -> ValueError
 no_attribute -> AttributeError
 ```
+
+`function.__name__` is the function's name as text, and `type(error).__name__` is the name of the error's type. `except Exception as error` catches any of these errors and stores it in `error`, so the loop can print the type and carry on to the next function.
 
 Two of these deserve a second look. In `shadowed`, the name `list` was used for a variable, so it no longer means the built-in function `list`, and calling it fails. Never use the names of built-in functions (`list`, `max`, `min`, `sum`, `input`, `str`) for your own variables. In `missing_global`, the assignment `total = total + 5` makes `total` local to the whole function, so reading it on the line before fails.
 

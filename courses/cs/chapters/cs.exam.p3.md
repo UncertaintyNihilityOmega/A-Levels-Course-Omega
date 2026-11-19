@@ -83,7 +83,7 @@ The command words are the same as in Paper 1 and are listed in [Paper 1 guide: T
 | **Identify** | name, select or recognise | the one name asked for, with no explanation |
 
 :::warn "Write" means the form matters
-"Write a Boolean expression" is not answered by a sentence, and "write pseudocode" is not answered by Python. A correct idea in the wrong form scores little or nothing. For code, use the Cambridge pseudocode keywords exactly as the question and the Pseudocode Guide show them.
+"Write a Boolean expression" is not answered by a sentence, and "write pseudocode" is not answered by Python. A correct idea in the wrong form scores little or nothing. For code, use the Cambridge pseudocode keywords exactly as the question and the Cambridge pseudocode guide show them.
 :::
 
 ## The method for each kind of question
@@ -359,6 +359,7 @@ CLASS Minibus INHERITS Vehicle
    ENDPROCEDURE
 ENDCLASS
 
+DECLARE Bus1 : Minibus
 Bus1 ← NEW Minibus("LMA-452", 16, TRUE)
 ```
 

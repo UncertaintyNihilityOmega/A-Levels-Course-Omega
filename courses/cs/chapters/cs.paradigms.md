@@ -132,7 +132,7 @@ Low-level programming is not better or worse than high-level programming. It tra
 
 ### The five addressing modes
 
-Every instruction that touches data must say where the data is. The **addressing mode** is the rule for turning the operand into the data. You met four of them in [Processor fundamentals and assembly language](#cs.assembly). Here are all five, using one memory contents so you can compare them. Locations 160 to 165 hold:
+Every instruction that touches data must say where the data is. The **addressing mode** is the rule for turning the operand into the data. You met all five in [Processor fundamentals and assembly language](#cs.assembly); here they are compared on one memory. (The example instruction set has no relative instruction, as the paragraph after the table explains.) Locations 160 to 165 hold:
 
 | Address | 160 | 161 | 162 | 163 | 164 | 165 |
 |---|---|---|---|---|---|---|
@@ -532,7 +532,7 @@ The second condition should link Y to Z. The student wrote X again, so the rule 
 
 ## Backtracking, step by step
 
-You rarely need to write out the whole search, but you must be able to explain it. Take the goal `grandparent(kofi, W)`, with the rule above. The system works through the body from left to right.
+You rarely need to write out the whole search, but you must be able to explain it. Take the goal `grandparent(kofi, W)`, with the correct rule `grandparent(X, Z) IF parent(X, Y) AND parent(Y, Z).` The system works through the body from left to right.
 
 1. It replaces the goal with `parent(kofi, Y)` then `parent(Y, W)`.
 2. It tries the first fact that matches `parent(kofi, Y)`: `parent(kofi, ama)`, so Y = ama.
@@ -585,6 +585,8 @@ A: Items are tried in the order of the facts. Rice has 40, beans has 0 (fails) a
 Q: Write one fact stating that Aisha is a teacher, and one fact stating that Aisha teaches the class 9c.
 A: `teacher(aisha).` and `teaches(aisha, class_9c).`
 :::
+
+In the exam practice set below, some questions have a chapter link in brackets after the stars. That link is the chapter to revise: use it after you have tried the question, not before.
 
 :::try Exam practice ★ to ★★★
 Q: [3 marks] ★ State the programming paradigm used by each piece of code. (a) `LDR #0` then `LDX ARRAY` then `INC IX` (b) `route(X, Y) IF flight(X, Y).` (c) A program that declares variables, uses `FOR` loops and `CALL`s procedures that change global variables.

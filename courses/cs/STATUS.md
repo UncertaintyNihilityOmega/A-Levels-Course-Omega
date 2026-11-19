@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-19 · READER · 125 reader items
+Last: 2026-11-19 · FIX · READER items closed (17): oop caption/try-except/super()/pseudocode guide, paradigms addressing modes/backtracking rule/revise-link note, fileproc sales.txt wording + SEEK address note, python join/isalpha/isupper/index/in added to string program + __name__ + comprehension pointer, p2/p3/p4/mixed.a2 glosses (short-circuit, DECLARE Bus1, None, print(*x), tuple except)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
