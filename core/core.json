@@ -313,6 +313,12 @@
           "title": "History: learn more online",
           "level": "ref",
           "group": "Learn more online"
+        },
+        {
+          "id": "tools.l.cs",
+          "title": "Computer Science: learn more online",
+          "level": "ref",
+          "group": "Learn more online"
         }
       ]
     },
@@ -376,6 +382,9 @@
     ],
     "tools.l.hist": [
       "hist"
+    ],
+    "tools.l.cs": [
+      "cs"
     ]
   }
 }

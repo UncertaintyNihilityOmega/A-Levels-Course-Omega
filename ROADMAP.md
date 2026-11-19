@@ -3,9 +3,9 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
-- Queue item 5, Computer Science (`cs`, 9618, 49 chapters in 22 packages): all 22 packages written (49 chapters,
-  16 widgets), all 22 reviewed; READER done (125 items), all closed by five FIX rounds (Nov 19).
-  REVIEW FINAL running (Nov 19 08:51, cs-preview on 5110). Then the assembly session (ORGANIZER.md).
+- Next: queue item 10, Further Mathematics. First the Organizer's prework (set math STATUS.md `FINAL` back to `open`;
+  rewrite courses/math/COURSE.md as rules, 30 KB), then the Specialist LEAD (`courses/math/FURTHER.md`).
+  Waiting for the reset at 13:00 Nov 19 (5-hour window 75%; a LEAD needs 67% or less).
 - Usage gate: weekly limit 95% for every launch (AGENT-RUN.md "Usage gate").
 - Name: "Zero to A* Ω" (titles, installed app, shared links). Top bar and Home heading: the hand-drawn wordmark "Log end"
   (`engine/wordmark.py --shell` writes it into shell.html; colours in style.css `.wm-*`).
@@ -36,7 +36,6 @@
   as full courses). GitHub Releases start at v1 and go up in whole numbers.
 
 ## Queue
-5. **Computer Science** (`cs`, 9618): packages → reviews → READER → FIX → REVIEW FINAL → assembly.
 10. **Further Mathematics** (`math.fm.*`, an extension of the Maths course): LEAD for the extension
    (`courses/math/FURTHER.md`) → packages P19+ → reviews → READER for the new chapters → FIX → REVIEW FINAL.
    Before its LEAD, set math STATUS.md `FINAL` back to `open` and rewrite courses/math/COURSE.md as rules (30 KB).
@@ -69,6 +68,10 @@ Since 0.6.0 (Nov 13 2026). Earlier work: CHANGELOG.md; what readers see of the i
   user's Nov 15 list (wordmark, name, sidebar order and lines, Graph plotter and Periodic table, Settings) is checked.
   The installed app keeps the published icon (tried on Android Chrome; the user accepts it).
 - Project folder renamed to `A Levels Course Omega` (Nov 18 2026): docs and the scheduled task prompt updated.
+- 5 Computer Science, 9618 (Nov 19 2026): 49 chapters, 16 widgets, 4 mocks; 125 reader items closed; links page
+  `tools.l.cs` and a Computer Science section on the resources page. Left as they are: cs.assembly's 16-bit
+  instruction format (6 + 10) is the chapter's own (real papers give no bit layout; the chapter says so);
+  `ico.org.uk/for-organisations/` shows a bot check to scripts but is live.
 
 ## For the user
 Things only you can do. None of them stops the automatic runs.

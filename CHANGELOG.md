@@ -16,7 +16,8 @@ Planned snapshots:
   or chosen courses), with a notice when the offline copy is ready or updated.
 - Settings: reading font (serif Literata or sans serif Atkinson Hyperlegible) and animations (follow the device, or
   off: no transitions, no drawn-in roadmap, widgets stay still).
-- Computer Science (9618) in progress.
+- Computer Science (9618) complete: 49 chapters (AS and A Level theory, Python and pseudocode, a guide per paper,
+  mixed practice and four mock papers), 16 widgets, and a "Computer Science: learn more online" page in the Toolbox.
 - Faster loading: each chapter is its own file and search has its own index, so opening a chapter no longer loads
   its whole course and searching no longer loads every chapter (a History chapter: 0.7 s, was 2.2 s; first search:
   1.8 s, was 16.8 s).

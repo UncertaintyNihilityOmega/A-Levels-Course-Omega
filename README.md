@@ -21,7 +21,7 @@ interactive widgets, paper guides and full mock papers, plus a study roadmap and
 | Physics | Cambridge International 9702 | complete |
 | Chemistry | Cambridge International 9701 | complete |
 | Biology | Cambridge International 9700 | complete |
-| Computer Science | Cambridge International 9618 | in progress |
+| Computer Science | Cambridge International 9618 | complete |
 | Engineering | Maths and Physics routes (no single syllabus) | planned |
 | Business | Cambridge International 9609 | planned |
 | Economics | Cambridge International 9708 | planned |

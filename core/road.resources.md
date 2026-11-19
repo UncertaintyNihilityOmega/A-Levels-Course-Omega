@@ -86,6 +86,19 @@ Every Biology topic chapter in this guide ends with a short "Learn more online" 
 
 In History the mark schemes reward judgement backed by precise knowledge, so read the examiner reports for Papers 1 to 4 as closely as the past papers. Every History topic chapter in this guide ends with a short "Learn more online" list picked for that topic. [History: learn more online](#tools.l.hist) gathers all of them on one page, grouped by topic and by kind.
 
+## Computer Science
+
+| Resource | Best for | Cost |
+|---|---|---|
+| **Cambridge 9618 pseudocode guide** | The exact pseudocode the exam expects in Papers 2 and 4; keep it open while you practise | Free |
+| **Ada Computer Science** | Topic explanations and practice questions for A Level Computer Science, from the University of Cambridge and the Raspberry Pi Foundation | Free |
+| **Python Tutor** | Watching a program run line by line, to check a trace table or find a logic error | Free |
+| **VisuAlgo** | Animations of sorting, searching, linked lists, trees and graphs | Free |
+| **SQLBolt** | Short interactive SQL lessons, typed and checked in the browser | Free |
+| **The Python documentation** | The official reference for built-in functions, strings, lists and files | Free |
+
+In Computer Science, marks come from writing and tracing code by hand, so practise on paper as well as on screen: Paper 2 and Paper 4 reward pseudocode and programs that follow the guide's conventions exactly. Every Computer Science topic chapter in this guide ends with a short "Learn more online" list picked for that topic. [Computer Science: learn more online](#tools.l.cs) gathers all of them on one page, grouped by topic and by kind.
+
 ## Business and Economics
 
 | Resource | Best for | Cost |
