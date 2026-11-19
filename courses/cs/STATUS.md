@@ -1,6 +1,6 @@
 # STATUS: Computer Science
 
-Last: 2026-11-19 · FIX · READER items closed (48) in cs.overview to cs.databases: AO1 examples and command words (Evaluate, Discuss, Show that) in overview; trace-table row rule; optional-check notes and local glosses (registers, hex markers, ASC/CHR, mono/stereo, bandwidth, CALL, flip-flop, cache, BIOS, relay, DBMS, VARCHAR, atomic, insert) across data, media, networks, internet, hardware, logic, software, security; real chapter titles in links; assembly 16-bit note and 191 typo; modulo-10 check digit worked example (checks updated); databases prerequisites no longer lean on cs.datatypes; garage question names its 1NF fields
+Last: 2026-11-19 · FIX · READER cs.sql to cs.development: 21 items closed (local glosses for CHAR/DATE/import/dictionary/tuple/self/chained comparison, ORDER BY aggregate, Sale question fields, links to cs.f.basics, iterative cycle includes analysis, parity table)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

@@ -996,6 +996,8 @@ ENDFUNCTION
 (Accept `ThisChar >= 'A' AND ThisChar <= 'Z'`, since CHAR comparisons use the character codes. Accept a loop that exits early once both flags are TRUE.)
 :::
 
+The same function in Python. Two Python shortcuts appear that pseudocode does not have. `for ch in password` loops over a string one character at a time, so no `MID` is needed. And `"A" <= ch <= "Z"` is a chained comparison, which Python allows (it means `"A" <= ch` and `ch <= "Z"` together). Pseudocode does not allow a chained comparison, as [Computational thinking and algorithms](#cs.algorithms) warned, so in an exam you must write `ASC(ThisChar) >= ASC('A') AND ASC(ThisChar) <= ASC('Z')` as above. The final loop, `for test in [...]`, visits each item of a list (lists are taught in [Data types, records and arrays](#cs.datatypes)).
+
 ```python
 def valid_password(password):
     if len(password) < 8:

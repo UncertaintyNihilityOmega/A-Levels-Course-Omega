@@ -9,12 +9,12 @@
 A database is only useful if you can create it, fill it and ask it questions. SQL (Structured Query Language) is how you do all three, in almost every database system in the world. Paper 1 gives you a database design and asks you to write the statements for it, or gives you a statement and asks what it does. Both skills come from a handful of patterns, and every pattern here is run against real data, so you can see exactly what comes out.
 :::
 
-**Before you start**, you should know tables, primary keys and foreign keys from [Databases: the relational model and normalisation](#cs.databases), and the data types from [Data types, records and arrays](#cs.datatypes).
+**Before you start**, you should know tables, primary keys and foreign keys from [Databases: the relational model and normalisation](#cs.databases), and the data types INTEGER, REAL and STRING from [Programming from zero: Python and pseudocode](#cs.f.basics).
 
 :::try Warm-up
 Q: Which kind of key links a record in one table to a record in another? (from [Databases: the relational model and normalisation](#cs.databases))
 A: A foreign key. It holds the primary key values of the other table.
-Q: Which data type would you use for a club fee of 12.50, and which for a club code such as "CO01"? (from [Data types, records and arrays](#cs.datatypes))
+Q: Which data type would you use for a club fee of 12.50, and which for a club code such as "CO01"? (from [Programming from zero: Python and pseudocode](#cs.f.basics))
 A: REAL for the fee (it has a fractional part) and STRING for the code (text that is never used in arithmetic). SQL calls the string type VARCHAR.
 Q: Which part of the DBMS receives a query, finds an efficient way to carry it out, and runs it? (from [Databases: the relational model and normalisation](#cs.databases))
 A: The query processor.
@@ -389,6 +389,8 @@ ORDER BY Form, Points DESC;
 | Grace | 11B | 52 |
 | Hiro | 11B | 41 |
 
+A query that uses `GROUP BY` can also sort by an aggregate. Write the aggregate function itself after `ORDER BY`, for example `ORDER BY SUM(Quantity) DESC`, to put the group with the biggest total first. You have not met `GROUP BY` and `SUM` yet, so treat this as a preview: the next two sections explain them, and the Exam practice at the end of the chapter uses it.
+
 ### Aggregate functions: SUM, COUNT and AVG
 
 An **aggregate function** works on many rows and returns one value.
@@ -609,9 +611,9 @@ FROM     table
 INNER JOIN second table ON matching condition
 WHERE    condition on single rows
 GROUP BY fields that name the groups
-ORDER BY fields to sort by
+ORDER BY fields to sort by, or an aggregate such as SUM(Quantity)
 ```
-The DBMS finds the rows (FROM and JOIN), keeps those that pass WHERE, makes the groups, works out the aggregates, then sorts.
+The DBMS finds the rows (FROM and JOIN), keeps those that pass WHERE, makes the groups, works out the aggregates, then sorts. That is why a grouped query can sort by an aggregate: the totals exist by the time the sorting happens.
 :::
 
 ### Writing a query from a description
@@ -1064,7 +1066,7 @@ VALUES (10, 'Eraser', 'Stationery', 0.60, 200);
 :::
 
 :::try Exam practice ★ to ★★★
-Q: [7 marks] ★★ The shops' database is created from the Product and Sale tables printed above. (a) Write an SQL statement to create the table Product. ProductName and Category hold up to 20 and 12 characters, Price is a number with decimals, Stock is a whole number and ProductID is a whole number and the primary key. [3] (b) Write an SQL statement to create the table Sale. SaleDate holds a date, Branch holds up to 10 characters, and ProductID is a foreign key that refers to ProductID in Product. [4]
+Q: [7 marks] ★★ The shops' database is created from the Product and Sale tables printed above. (a) Write an SQL statement to create the table Product. ProductName and Category hold up to 20 and 12 characters, Price is a number with decimals, Stock is a whole number and ProductID is a whole number and the primary key. [3] (b) Write an SQL statement to create the table Sale. SaleID is a whole number and the primary key, Quantity is a whole number, SaleDate holds a date, Branch holds up to 10 characters, and ProductID is a whole number and a foreign key that refers to ProductID in Product. [4]
 H: Create Product first, because Sale refers to it.
 H: In (b), the foreign key line is `FOREIGN KEY (field) REFERENCES Table (Field)`.
 A: (a)

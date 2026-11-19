@@ -21,7 +21,7 @@ A: A procedure is called with CALL. A function is called inside an expression, a
 
 ## Why we need files
 
-A variable lives in the computer's main memory, and main memory is cleared when the program ends or the power goes off. A teacher in Nairobi who types in 30 pupils' marks would have to type them again each morning. A **file** is a named block of data kept on backing storage, such as a hard disk or flash memory, so it is still there tomorrow.
+A variable lives in the computer's main memory, and main memory is cleared when the program ends or the power goes off. A teacher in Nairobi who types in 30 pupils' marks would have to type them again each morning. A **file** is a named block of data kept on secondary storage (also called backing storage), such as a hard disk or flash memory, so it is still there tomorrow.
 
 :::def Text file
 A file that stores data as lines of text, which are read or written one line after another.
@@ -337,7 +337,7 @@ Tomas scored 64
 Ngozi scored 91
 ```
 
-In Python, `split(",")` does the splitting in one step and returns a list of strings:
+In Python, `split(",")` does the splitting in one step and returns a list of strings. In `pupil_name, mark = line.strip().split(",")`, `split(",")` gives a list of two strings (for the line `Amina,78` they are "Amina" and "78"), and the two names on the left receive them in order. That is why `mark` is converted with `int(mark)` before it is printed as a number:
 
 ```python
 def save_result(pupil_name, mark):
@@ -823,7 +823,7 @@ Here is a list of four names in alphabetical order, stored in arrays of seven no
 <figure class="fig small"><svg viewBox="0 0 340 275" role="img" aria-label="A linked list of four nodes drawn from top to bottom, each a data box and a pointer box. StartPointer = 3 points to the node at index 3, holding Bilal with pointer 4. That points to the node at index 4, holding Chen with pointer 1. That points to the node at index 1, holding Dina with pointer 2. That points to the node at index 2, holding Farah with pointer 0, which means the null pointer."><text class="tl" x="100" y="18">StartPointer = 3</text><line class="c2 sw2" x1="137" y1="28" x2="137" y2="37" marker-end="url(#ah)"/><rect class="fm s-acc sw2" x="100" y="40" width="74" height="34"/><rect class="f1 s-acc sw2" x="174" y="40" width="34" height="34"/><text class="tl tc" x="137" y="62">Bilal</text><text class="tl tc" x="191" y="62">4</text><text class="tl te" x="92" y="62">index 3</text><path class="c1 sw2" d="M 191 74 L 191 86 L 137 86 L 137 97" marker-end="url(#ah)"/><rect class="fm s-acc sw2" x="100" y="100" width="74" height="34"/><rect class="f1 s-acc sw2" x="174" y="100" width="34" height="34"/><text class="tl tc" x="137" y="122">Chen</text><text class="tl tc" x="191" y="122">1</text><text class="tl te" x="92" y="122">index 4</text><path class="c1 sw2" d="M 191 134 L 191 146 L 137 146 L 137 157" marker-end="url(#ah)"/><rect class="fm s-acc sw2" x="100" y="160" width="74" height="34"/><rect class="f1 s-acc sw2" x="174" y="160" width="34" height="34"/><text class="tl tc" x="137" y="182">Dina</text><text class="tl tc" x="191" y="182">2</text><text class="tl te" x="92" y="182">index 1</text><path class="c1 sw2" d="M 191 194 L 191 206 L 137 206 L 137 217" marker-end="url(#ah)"/><rect class="fm s-acc sw2" x="100" y="220" width="74" height="34"/><rect class="f1 s-acc sw2" x="174" y="220" width="34" height="34"/><text class="tl tc" x="137" y="242">Farah</text><text class="tl tc" x="191" y="242">0</text><text class="tl te" x="92" y="242">index 2</text><text class="tl" x="218" y="242">0 = null pointer</text></svg><figcaption>Each node is a data box and a pointer box. The pointer holds the index of the next node, so the list reads Bilal, Chen, Dina, Farah even though they are stored at indexes 3, 4, 1 and 2. The pointer 0 in the last node marks the end.</figcaption></figure>
 :::
 
-Traversing (outputting) the list follows the pointers:
+Traversing (outputting) the list follows the pointers. (`StartPointer`, `Data` and `Pointer` are declared in the `StartEmpty` block below; here they are used as if they already exist.)
 
 ```pseudocode
 PROCEDURE ShowList()

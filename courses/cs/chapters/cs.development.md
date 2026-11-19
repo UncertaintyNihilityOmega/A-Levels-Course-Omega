@@ -112,7 +112,7 @@ A development life cycle in which the stages (analysis, design, coding, testing,
 If a client cannot say exactly what they want until they see something, repeating the stages in short laps is a better plan.
 
 :::def Iterative model
-A development life cycle in which the program is built through a series of repeated cycles. Each cycle goes through design, coding and testing for part of the program and ends with a working version that is reviewed, and the feedback shapes the next cycle.
+A development life cycle in which the program is built through a series of repeated cycles. Each cycle goes through analysis, design, coding and testing (with review) for part of the program and ends with a working version that is reviewed, and the feedback shapes the next cycle.
 :::
 
 :::html
@@ -121,7 +121,7 @@ A development life cycle in which the program is built through a series of repea
 
 A first lap might build only the core of the program: for a shift planner, enter drivers and print one day's shifts. The users try it and say what is missing. The second lap adds weekly planning, the third adds holiday requests, and so on until the program is complete.
 
-**Principles.** Start with a small working version, not a finished design. Repeat design, coding and testing, adding or improving something each time. Use the feedback from each version to decide what to do next.
+**Principles.** Start with a small working version, not a finished design. Repeat analysis, design, coding and testing, adding or improving something each time (the analysis of a later lap is a short look at what the feedback and the next piece need). Use the feedback from each version to decide what to do next.
 
 **Benefits.**
 
@@ -377,6 +377,8 @@ A 30.0 kg parcel to zone B costs \(30.0 \times 8.0 + 3.0 = 243.0\).
 
 The same design in Python. A Python function can return several values, so `get_parcel` returns Mass, Zone and Valid together instead of using BYREF (see [Procedures, functions and parameters](#cs.procedures)). The program below reads 30 and B as input.
 
+Two Python features here have not been taught yet. A **dictionary** pairs each key with a value, written `{key: value, ...}`: `rates["B"]` looks up the value for "B", and `rates.get(zone, 0.0)` does the same but gives the default 0.0 when the key is missing instead of stopping with an error. A group in round brackets, such as `("A", "B", "C")`, is a **tuple**, a small fixed group of values, and `zone in ("A", "B", "C")` is True when zone equals one of them.
+
 ```python
 def get_parcel():
     mass = float(input("Enter the mass in kg: "))
@@ -556,6 +558,8 @@ A state-transition diagram turns directly into a loop that keeps the current sta
 5. A loop with no action (an arrow that returns to its own state, such as `push / nothing`) needs no code: the state does not change. The diagram still shows the loop.
 :::
 
+In the CASE below, a branch may hold several statements on the lines under its label, up to the next case label (here the whole IF … ENDIF under `"Try1" :` belongs to that branch). The earlier examples of CASE had one statement after each colon, but more are allowed.
+
 ```pseudocode
 DECLARE State, Event : STRING
 State ← "Try1"
@@ -601,7 +605,7 @@ Here the events are the words correct and wrong, which in a real machine come fr
 
 With wrong, wrong, wrong the output would be Try again, Try again, Keep card and the final state Blocked.
 
-Python can store the table itself as a dictionary whose keys are (state, event) pairs. The loop is then the same for every state, and a different state machine needs only a different table.
+Python can store the table itself as a dictionary. A dictionary pairs each key with a value, written `{key: value, ...}`; `d[key]` looks the value up. A pair in round brackets, such as `("Try1", "correct")`, is a tuple: a small fixed group of values, here used as one key. So the keys below are (state, event) pairs, and each value is a (next state, action) pair; the line `state, action = transitions[(state, event)]` looks the pair up and gives its two parts to the two names on the left, in order. The loop is then the same for every state, and a different state machine needs only a different table.
 
 ```python
 transitions = {
@@ -891,9 +895,14 @@ ENDWHILE
 
 The WHILE loop is the iteration symbol, and the CASE is the selection diamond. The flag Quit is tested before an action is carried out, so quitting does not run SellItem or RestockItem by mistake.
 
-Q: A parity checker reads a string of the characters '0' and '1' and decides whether the string contains an even number of 1s. Draw its state-transition diagram in words, with two states, and write pseudocode that uses a CASE on the state for the string "10110" (given in the array Bits[1:5] of CHAR). What does the program output?
+Q: A parity checker reads a string of the characters '0' and '1' and decides whether the string contains an even number of 1s. Describe its two states and its transitions in a table, and write pseudocode that uses a CASE on the state for the string "10110" (given in the array Bits[1:5] of CHAR). What does the program output?
 H: Pressing a 0 never changes the state. What does a 1 do?
-A: The states are Even (the start state, and the accepting state) and Odd. The event '0' is a loop in both states. The event '1' moves Even to Odd and Odd to Even.
+A: The states are Even (the start state, and the state that means an even number of 1s so far) and Odd (an odd number of 1s so far). The event '0' is a loop in both states. The event '1' moves Even to Odd and Odd to Even.
+
+| State | Event '0' | Event '1' |
+|---|---|---|
+| Even | stay in Even | go to Odd |
+| Odd | stay in Odd | go to Even |
 
 ```pseudocode
 DECLARE Bits : ARRAY[1:5] OF CHAR
@@ -912,7 +921,7 @@ NEXT Index
 OUTPUT State
 ```
 
-The string 10110 has three 1s: Even → Odd (1) → Odd (0) → Even (1) → Odd (1) → Odd (0), so the program outputs Odd. An odd count means the string is not accepted. The diagram has no stop state because the string ends when the characters run out.
+The string 10110 has three 1s: Even → Odd (1) → Odd (0) → Even (1) → Odd (1) → Odd (0), so the program outputs Odd. Odd means the string does not have an even number of 1s. The diagram has no stop state because the string ends when the characters run out.
 :::
 
 :::quiz
@@ -982,7 +991,7 @@ The string 10110 has three 1s: Even → Odd (1) → Odd (0) → Even (1) → Odd
 :::recap
 - The life cycle has five stages: analysis (requirements), design (structure chart, algorithms, test plan), coding, testing, maintenance. It gives structure, quality and a record for later changes.
 - Waterfall: strict order, sign-off at each stage, thorough documents, late working program, costly change. Suits fixed requirements and safety-critical projects.
-- Iterative: repeated laps of design, code and test, each giving a working version and feedback. Handles change but the cost and end date are uncertain.
+- Iterative: repeated laps of analysis, design, code and test, each giving a working version and feedback. Handles change but the cost and end date are uncertain.
 - RAD: fast prototypes, users involved all the time, time boxes, reused components. Quick and flexible, but needs the users, can be poorly documented and is not for safety-critical systems.
 - A structure chart shows modules in a hierarchy. A down arrow is data passed in, an up arrow is data returned. Open circle = data couple, filled circle = flag, curved arrow = iteration, diamond = selection. Arrows show data, not order.
 - From a chart: a module returning one item is a function (never BYREF); a module returning none or several is a procedure with BYREF for the items passed back.

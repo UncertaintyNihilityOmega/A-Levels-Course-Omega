@@ -133,7 +133,7 @@ Pseudocode has functions for the same conversions. The Paper 2 insert lists `STR
 `'7'` (a CHAR) and `"7"` (a STRING) are characters. Their stored codes have nothing to do with the value seven. Comparing `"10" < "9"` as strings gives TRUE, because strings are compared character by character and '1' comes before '9'. Convert to a number first whenever you compare or calculate.
 :::
 
-Dates work the same way in both languages: store them as dates, not strings, and you can compare them and find the gap between them. The insert gives `DAY()`, `MONTH()`, `YEAR()` and `TODAY()` for pseudocode. In Python the `datetime` module does the work.
+Dates work the same way in both languages: store them as dates, not strings, and you can compare them and find the gap between them. The insert gives `DAY()`, `MONTH()`, `YEAR()` and `TODAY()` for pseudocode. In Python the `datetime` module does the work. `from datetime import date` makes the `date` type from that library available by its short name, and `date(2027, 3, 14)` makes the date 14 March 2027 (year, month, day). Subtracting two dates gives a gap, and the gap's `.days` is the number of days in it.
 
 ```python
 from datetime import date
@@ -230,7 +230,7 @@ Mark points:
 
 ### Records in Python
 
-Python has no TYPE statement, so a record is written as a **class** with a constructor, `__init__`, that sets each field. Paper 4 allows exactly this: "A class declaration can be used to declare a record." (The full object-oriented meaning of classes comes at A Level in [Object-oriented programming](#cs.oop); here a class is only a container for fields.)
+Python has no TYPE statement, so a record is written as a **class** with a constructor, `__init__`, that sets each field. Paper 4 allows exactly this: "A class declaration can be used to declare a record." (The full object-oriented meaning of classes comes at A Level in [Object-oriented programming](#cs.oop); here a class is only a container for fields.) Calling `Book("B0193", "Rivers of the World", ...)` creates one record. `__init__` runs at that moment and stores each value you gave it, and `self` is the record being built, so `self.title = title` puts the value into that record's `title` field and `library[1].title` reads it back later.
 
 ```python
 class Book:
@@ -516,7 +516,7 @@ Best week: 2
 ```
 
 :::warn Creating a 2D list in Python
-`[[0] * 4] * 3` looks like a 3 × 4 table of zeros, but it is three references to the **same** row: change one row and all three change. Build each row separately with a loop (a list comprehension) instead.
+`[[0] * 4] * 3` looks like a 3 × 4 table of zeros, but it is three references to the **same** row: change one row and all three change. Build each row separately with a loop (a list comprehension) instead. `[[0] * 4 for row in range(3)]` builds a new row of four zeros three times, once for each value of `row`.
 :::
 
 This program shows the problem and the fix:

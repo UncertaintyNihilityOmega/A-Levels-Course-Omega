@@ -126,7 +126,7 @@ Every algorithm is built from just three constructs.
 
 :::key The three constructs
 - **Sequence**: steps run one after another, in the order written.
-- **Selection**: a condition decides which steps run (`IF`, `CASE`).
+- **Selection**: a condition decides which steps run (`IF`, `CASE`; `CASE` is taught in the next chapter).
 - **Iteration**: steps are repeated (`FOR`, `WHILE`, `REPEAT`), a fixed number of times or until a condition changes.
 :::
 
@@ -155,7 +155,7 @@ When you plan a program on paper you list its identifiers in a table. Paper 2 of
 A table that lists every identifier used in a program or algorithm with its data type and a description of what it is used for.
 :::
 
-The columns are always the same: **Identifier**, **Data type**, **Description**. A constant's description gives its value. The data types are the six you know (INTEGER, REAL, CHAR, STRING, BOOLEAN, DATE), plus ARRAY and others that come in later chapters. [Data types, records and arrays](#cs.datatypes) says how to choose between them; for now the rule that catches most students is that a number you never calculate with (a code, a phone number) is a STRING.
+The columns are always the same: **Identifier**, **Data type**, **Description**. A constant's description gives its value. The data types are the four you know (INTEGER, REAL, STRING, BOOLEAN), plus CHAR and DATE, which are new here, plus ARRAY and others that come in later chapters. A **CHAR** holds exactly one character and is written in *single* quotes, such as `'Y'`, whereas a STRING is written in *double* quotes, such as `"Yes"`. A **DATE** holds a calendar date. [Data types, records and arrays](#cs.datatypes) teaches both properly and says how to choose between all the types; for now the rule that catches most students is that a number you never calculate with (a code, a phone number) is a STRING.
 
 :::eg Completing an identifier table
 A library program works out the fine for a late book. Here is the pseudocode:
@@ -350,7 +350,7 @@ And the flowchart. Every assignment leads on to the same `OUTPUT Price`, which i
 <figure class="fig"><svg viewBox="0 0 520 680" role="img" aria-label="A flowchart. Start, INPUT Age, INPUT Student, then three decisions one below the other. Decision Age less than 5: Yes leads right to Price gets 0.00, No leads down. Decision Age less than 18: Yes leads right to Price gets 4.00, No leads down. Decision Student equals Y: Yes leads right to Price gets 6.00, No leads down to Price gets 10.00. All four assignments then lead to OUTPUT Price, then End."><rect class="fm s-acc sw2" x="88" y="12" width="84" height="32" rx="16"/><text class="tl tc" x="130" y="32">Start</text><polygon class="fm2 s-acc sw2" points="84,71 190,71 176,105 70,105"/><text class="tl tc" x="130" y="92">INPUT Age</text><polygon class="fm2 s-acc sw2" points="71.5,131 202.5,131 188.5,165 57.5,165"/><text class="tl tc" x="130" y="152">INPUT Student</text><polygon class="fp s-acc sw2" points="130,202 175,230 130,258 85,230"/><text class="tl tc" x="130" y="234">Age &lt; 5?</text><polygon class="fp s-acc sw2" points="130,302 179,330 130,358 81,330"/><text class="tl tc" x="130" y="334">Age &lt; 18?</text><polygon class="fp s-acc sw2" points="130,402 202,430 130,458 58,430"/><text class="tl tc" x="130" y="434">Student = 'Y'?</text><rect class="f1 s-acc sw2" x="71.5" y="501" width="117" height="38" rx="3"/><text class="tl tc" x="130" y="524">Price ← 10.00</text><polygon class="fm2 s-acc sw2" points="75,573 199,573 185,607 61,607"/><text class="tl tc" x="130" y="594">OUTPUT Price</text><rect class="fm s-acc sw2" x="88" y="630" width="84" height="32" rx="16"/><text class="tl tc" x="130" y="650">End</text><rect class="f1 s-acc sw2" x="330" y="211" width="110" height="38" rx="3"/><text class="tl tc" x="385" y="234">Price ← 0.00</text><rect class="f1 s-acc sw2" x="330" y="311" width="110" height="38" rx="3"/><text class="tl tc" x="385" y="334">Price ← 4.00</text><rect class="f1 s-acc sw2" x="330" y="411" width="110" height="38" rx="3"/><text class="tl tc" x="385" y="434">Price ← 6.00</text><path class="ln" fill="none" d="M130 44 L130 71" marker-end="url(#ah)"/><path class="ln" fill="none" d="M130 105 L130 131" marker-end="url(#ah)"/><path class="ln" fill="none" d="M130 165 L130 202" marker-end="url(#ah)"/><path class="ln" fill="none" d="M130 258 L130 302" marker-end="url(#ah)"/><path class="ln" fill="none" d="M130 358 L130 402" marker-end="url(#ah)"/><path class="ln" fill="none" d="M130 458 L130 501" marker-end="url(#ah)"/><path class="ln" fill="none" d="M130 539 L130 573" marker-end="url(#ah)"/><path class="ln" fill="none" d="M130 607 L130 630" marker-end="url(#ah)"/><path class="ln" fill="none" d="M175 230 L330 230" marker-end="url(#ah)"/><text class="tl" x="183" y="222">Yes</text><text class="tl" x="138" y="282">No</text><path class="ln" fill="none" d="M179 330 L330 330" marker-end="url(#ah)"/><text class="tl" x="187" y="322">Yes</text><text class="tl" x="138" y="382">No</text><path class="ln" fill="none" d="M202 430 L330 430" marker-end="url(#ah)"/><text class="tl" x="210" y="422">Yes</text><text class="tl" x="138" y="482">No</text><path class="ln" fill="none" d="M440 230 L495 230 L495 590 L199 590" marker-end="url(#ah)"/><path class="ln" fill="none" d="M440 330 L495 330"/><path class="ln" fill="none" d="M440 430 L495 430"/></svg><figcaption>The museum price as a flowchart. Each No exit leads to the next question, so the decisions are nested. Only one of the four assignments runs, and every route then reaches OUTPUT Price.</figcaption></figure>
 :::
 
-In Python, `elif` plays the part of "ELSE, then another IF", so the nesting becomes a flat chain. The program below is run with the typed values 30 and Y, an adult student.
+In Python, `elif` plays the part of "ELSE, then another IF", so the nesting becomes a flat chain. The program below is run with the typed values 30 and Y, an adult student. The last line uses an f-string: inside it, `{price:.2f}` puts the value of `price` into the text, and `:.2f` shows it with two decimal places (so 6.0 prints as 6.00).
 
 ```python
 age = int(input("Age: "))
@@ -434,7 +434,7 @@ ENDIF
 OUTPUT "Fare: ", Fare
 ```
 
-For a 7 km night journey, the distance after the first 2 km is \(7 - 2 = 5\), so the charge is \(5 \times 1.50 = 7.50\). The fare is \(3.00 + 7.50 + 2.00 = 12.50\). The same algorithm in Python:
+For a 7 km night journey, the distance after the first 2 km is \(7 - 2 = 5\), so the charge is \(5 \times 1.50 = 7.50\). The fare is \(3.00 + 7.50 + 2.00 = 12.50\). The same algorithm in Python (`:.2f` in the last line shows the fare with two decimal places, as before):
 
 ```python
 BASE_FARE = 3.00
@@ -617,8 +617,10 @@ IsDistinction ← TestMark >= 80
 OUTPUT StudentName, ": ", Result
 ```
 
+(A comparison such as `TestMark >= 80` gives the answer TRUE or FALSE, so it can be stored in a variable. A variable that holds TRUE or FALSE is a BOOLEAN.)
+
 Complete an identifier table with a column for the identifier, a column for the data type and a column for a description, with one row for each identifier.
-H: Count the names that appear: one is a constant, one is declared by an assignment to a comparison.
+H: Count the names that appear: one is a constant, and one is a variable that stores the result of a comparison.
 A: Five identifiers:
 
 | Identifier | Data type | Description |

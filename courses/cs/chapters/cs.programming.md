@@ -26,7 +26,7 @@ Pseudocode follows the Cambridge Pseudocode Guide for 2027–2029 exactly: keywo
 
 ## Variables, constants and assignment
 
-A program stores values in named places in memory. The name is an identifier (see [Computational thinking and algorithms](#cs.algorithms)). What is stored depends on the data type: INTEGER, REAL, CHAR, STRING, BOOLEAN or DATE.
+A program stores values in named places in memory. The name is an identifier (see [Computational thinking and algorithms](#cs.algorithms)). What is stored depends on the data type: INTEGER, REAL, CHAR, STRING, BOOLEAN or DATE. CHAR is one character in single quotes, such as `'Y'`; DATE is a calendar date written dd/mm/yyyy, such as 14/03/2027. Both are covered fully in the next chapter, [Data types, records and arrays](#cs.datatypes).
 
 :::def Variable
 A named memory location that stores a value which can change while the program runs.
@@ -334,6 +334,8 @@ Three points from the last line. `int()` throws away the fractional part: `int(9
 ### Random numbers and dates
 
 `RAND(x)` gives a real number from 0 up to, but not including, x. To simulate a dice, scale it and take the whole-number part: `INT(RAND(6)) + 1`. `RAND(6)` is at least 0 and below 6, so `INT` of it is 0 to 5, and adding 1 gives 1 to 6. Python's library routine `random.randint(1, 6)` does the same in one call.
+
+Two pieces of Python in the block below are new. `import` makes a library's routines available to the program: `import random` brings in the random library and `import datetime` brings in the date library. After that, a dotted name such as `random.randint(1, 6)` means "the routine `randint` from the `random` library", and `datetime.date(2027, 3, 14)` means "the `date` routine from the `datetime` library".
 
 ```python
 import random
@@ -1008,6 +1010,8 @@ for code in ["AB1234", "ab1234", "AB123", "A1B234"]:
     print(code, "Valid" if valid else "Invalid")
 ```
 
+Two Python forms here are new. A list in square brackets holds several items, and `for code in [...]` visits each item in turn, so the body runs once for each of the four codes (lists are taught in the next chapter). And `"Valid" if valid else "Invalid"` means "Valid when `valid` is True, otherwise Invalid", the one-line version of the IF and ELSE in the pseudocode.
+
 Output:
 
 ```output
@@ -1331,7 +1335,7 @@ ENDIF
 
 Q: [8 marks] ★★★ A teacher in Accra types in test marks out of 100, ending with the sentinel 999. A mark outside 0 to 100 is ignored with the message "Ignored". Write pseudocode that outputs the number of valid marks, the mean of the valid marks and the highest valid mark. If there are no valid marks, output "No valid marks" instead.
 H: Use a priming read before a WHILE loop, and test for validity *inside* the loop.
-H: The highest should start at 0, because every valid mark is 0 or more.
+H: The highest should start at 0, because every valid mark is 0 or more (0 is safe here only because valid marks cannot be negative; the first-value rule is the general one).
 A: One possible answer:
 
 ```pseudocode
