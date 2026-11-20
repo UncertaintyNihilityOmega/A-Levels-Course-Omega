@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-20 · WRITE P22 · math.fm.vectors (about 4400 words) and math.fm.vectors2 (about 4800 words); widget fm-planes (planes, line, point; pairs and three-plane verdicts; Node-tested logic in data/test_fm_planes.js); check and phone pass; reviewer: look at the fm-planes widget in dark mode and the four hand SVG figures
+Last: 2026-11-20 · WRITE P23 · math.fm.hyperbolic (3717 words), math.fm.diff (3817), math.fm.integ (3459); check and phone pass; widget fm-maclaurin (probed light/dark/phone/bad attributes; coefficients node-tested in data/fm-maclaurin-test.js). Reviewer: chapters are slightly shorter than the gold by kit word count (maths is not counted); plots with poles (coth, cosech) and fm-maclaurin keyboard use to be looked at.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -27,8 +27,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P20: written 2026-11-20
 - P21: written 2026-11-20
 - P22: written 2026-11-20
-- P23: writing 2026-11-20
-- P24: open
+- P23: written 2026-11-20
+- P24: writing 2026-11-20
 - P25: open
 - P26: open
 - P27: open
