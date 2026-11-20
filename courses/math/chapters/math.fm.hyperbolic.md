@@ -88,7 +88,7 @@ Every point \((\cos t, \sin t)\) lies on the circle \(x^2 + y^2 = 1\). Every poi
 Because \(e^{-x}\) shrinks quickly for large positive \(x\), both \(\sinh x\) and \(\cosh x\) look like \(\tfrac12 e^x\) there: \(\cosh x\) is a little above it, \(\sinh x\) a little below. For large negative \(x\) they look like \(\pm\tfrac12 e^{-x}\).
 
 :::plot The curves y = sinh x and y = cosh x. Both approach y = ½eˣ as x grows; cosh x is even with minimum value 1 at (0, 1), and sinh x is odd, passing through the origin with no turning point.
---f "(exp(x)-exp(-x))/2" --f "(exp(x)+exp(-x))/2" --label "y = sinh x" --label "y = cosh x" --x -2.5 2.5 --y -7 11 --pt "0,1,(0, 1)@ne" --legend tl
+--f "(exp(x)-exp(-x))/2" --f "(exp(x)+exp(-x))/2" --f "exp(x)/2" --label "y = sinh x" --label "y = cosh x" --label "y = ½eˣ" --x -2.5 2.5 --y -7 11 --pt "0,1,(0, 1)@ne" --legend tl
 :::
 
 The graph of \(y = \cosh x\) is exactly the shape of the hanging cable above. For \(\tanh x\), divide top and bottom by \(e^x\): \(\tanh x = \dfrac{1 - e^{-2x}}{1 + e^{-2x}}\). As \(x \to \infty\) this tends to 1, and as \(x \to -\infty\) it tends to \(-1\).

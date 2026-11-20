@@ -109,6 +109,11 @@ every outcome listed for your chapter, and nothing marked "Not:" except in a cle
 - Count the `:::eg (Exam style)` examples of each chapter (`grep -c ":::eg (Exam style)"`): the check does not, and
   two is the minimum (three fm chapters of P21–P22 had one). No worked example may use a rule taught later in the
   chapter.
+- Every Pure chapter has at least one `:::plot` or hand figure (`grep -c "^:::plot\|<svg"`): two P23–P24 chapters
+  had none. A widget does not replace it.
+- Grep FACTS.md for the newest real paper of your chapter's paper (for 9231/21: June 2025 and June 2026) and give
+  each question shape your chapter covers its own worked `:::eg (Exam style)` with fresh numbers, not only an
+  Exam practice question.
 
 ## Figures
 - Function graphs: `:::plot` (kit/STYLE.md), one or two per Pure chapter; never long hand-written SVG curve paths.

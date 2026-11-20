@@ -378,7 +378,7 @@ MF19 gives the sum of a geometric series, including \(S_\infty\), and the binomi
 :::
 
 :::board
-In UK Further Maths (Edexcel, AQA and OCR) the \(n\)th roots of a complex number and their place as the corners of a regular polygon are core content, as here. The \(C + \mathrm{i}S\) summation method is also met there.
+In UK Further Maths (Edexcel, AQA and OCR) the \(n\)th roots of a complex number and their place as the corners of a regular polygon are core content, as here. AQA 7367 also lists sums of series by de Moivre's theorem, the \(C + \mathrm{i}S\) method of this chapter.
 :::
 
 :::eg Spot the error: show that \(1 + \cos\theta + \cos2\theta + \cos3\theta = \dfrac{\cos\frac{3\theta}{2}\sin2\theta}{\sin\frac\theta2}\), for 4 marks.

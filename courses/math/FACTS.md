@@ -121,6 +121,14 @@ FM LEAD, 20 Nov 2026. Outcome ids (1.1a …) are ours, in the syllabus's order; 
   a reduction formula; de Moivre multiple-angle identity; rectangles bounding a sum; a second order DE with initial
   conditions [10]; hyperbolic identities and a parametric second derivative; a first order DE [10]; eigenvalues,
   diagonalisation and the characteristic equation.
+- 9231/21 June 2026 (read by the P23–P26 REVIEW, 20 Nov 2026, from an unofficial copy): front page as June 2025
+  ("You must answer on the question paper", MF19, 3 s.f.); 2 hours, total 75, 8 questions (5, 7, 11, 8, 10, 10, 10,
+  14): first three Maclaurin terms of an inverse hyperbolic function of (1 + x) in the form ln a + bx + cx²; a
+  reduction formula for ∫₀¹ tⁿ sin πt dt stepping by 2 [4], then an exact value [3]; ∫sinh³x dx with u = cosh x [4]
+  and a first order DE with coth x [7]; implicit curve, dy/dx [3] and d²y/dx² [5] at a point; n rectangles of width
+  1/n on [0, 1]: upper bound Uₙ [4], lower bound Lₙ [4], lim (Uₙ − Lₙ) = 0 [2]; a second order DE [10]; a GP of
+  powers of z, roots of a sum of powers = 0 as eʳᶿⁱ, then a C + iS identity [7]; a system with no unique solution
+  [3], Cayley–Hamilton to write A⁴ = pA² + qI [4], P and diagonal D for a given power of A [7].
 - 9231/31 Paper 3 FM: 1 hour 30 minutes, total 50, 7 questions (5, 6, 7, 7, 6, 9, 10). Front page adds: "Where a
   numerical value for the acceleration due to gravity (g) is needed, use 10 m s–2." Topics: variable force with
   v dv/dx; projectile clearing a wall (two angles); horizontal circle with an elastic string and friction; centre of

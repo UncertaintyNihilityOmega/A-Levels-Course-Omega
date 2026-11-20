@@ -41,7 +41,7 @@ The word "eigen" is German for "own" or "characteristic". An eigenvector is a di
 Try the matrix in the tool below. The two directions that it only stretches are drawn, and the panel lists the eigenvalues and eigenvector directions. Then try the presets. A shear has only one direction that does not move, and a rotation has none, so its eigenvalues are not real.
 
 :::html
-<div class="widget" data-w="fm-matrix" data-m="3,1,2,2" data-shape="triangle" data-show="grid,det,eigen" data-presets="rotation,reflection,shear,stretch,enlargement"></div>
+<div class="widget" data-w="fm-matrix" data-m="3,1,2,2" data-shape="triangle" data-show="grid,det,invariant,eigen" data-presets="rotation,reflection,shear,stretch,enlargement"></div>
 :::
 
 :::warn Any non-zero multiple is also an eigenvector

@@ -144,7 +144,7 @@ An integrand with a quadratic under the root often fits one of the standard form
 1. Make the coefficient of \(x^2\) equal to \(1\) (or \(-1\)) by taking a factor out of the root.
 2. Complete the square: \(x^2 + bx + c = \left(x + \tfrac b2\right)^2 + \left(c - \tfrac{b^2}{4}\right)\).
 3. Match with \(a^2 - u^2\), \(u^2 + a^2\) or \(u^2 - a^2\), where \(u = x + \tfrac b2\).
-4. Integrate; the \(\dfrac{du}{dx} = 1\), so no extra factor appears for a shift.
+4. Integrate. Since \(\dfrac{du}{dx} = 1\), a shift adds no extra factor.
 :::
 
 :::eg Find \(\displaystyle\int\frac{1}{\sqrt{x^2 + 2x}}\,dx\) for \(x > 0\).
@@ -285,7 +285,7 @@ At the upper limit \(\sinh u = 1\) and \(\cosh u = \sqrt2\):
 :::
 
 :::warn Substitution slips
-Three things go wrong. Forgetting \(dx = a\cosh u\,du\) leaves an integral in \(u\) with the wrong power. Keeping the old limits: when you change variable from \(x\) to \(u\) the limits change too (or you go back to \(x\) before substituting). And mixing the circular and hyperbolic versions: \(\sinh^2u\) integrates to \(\tfrac14\sinh 2u - \tfrac12u\) with a minus; \(\sin^2\theta\) is \(\tfrac12\theta - \tfrac14\sin 2\theta\), also with a minus on the second term.
+Three things go wrong. Forgetting \(dx = a\cosh u\,du\) leaves an integral in \(u\) with the wrong power. Keeping the old limits: when you change variable from \(x\) to \(u\) the limits change too (or you go back to \(x\) before substituting). And mixing the circular and hyperbolic versions: \(\sinh^2u\) integrates to \(\tfrac14\sinh 2u - \tfrac12u\), with the minus on the \(u\) term; \(\sin^2\theta\) integrates to \(\tfrac12\theta - \tfrac14\sin 2\theta\), with the minus on the trigonometric term.
 :::
 
 ## Harder integrals: 9709 techniques again
