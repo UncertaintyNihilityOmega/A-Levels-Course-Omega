@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-20 · WRITE P20 · math.fm.matrices, math.fm.transform, math.fm.induction (check + phone pass); widget fm-matrix (probes clean light/dark/phone/bad attributes; data-show=eigen built for P26; Node logic test data/test_fm_matrix.js). Reviewer: dark look at the 2 embeds in transform, keyboard use of Show A-1; board boxes Edexcel 9FM0 only.
+Last: 2026-11-20 · WRITE P21 · math.fm.rational (4934 w), math.fm.graphs (5110 w), math.fm.polar (4569 w): check and phone pass; widget fm-polar (probe clean light/dark/phone/bad attrs/zero size; Node tests data/fm-polar-test.js and fm-polar-ui-test.js). Reviewer: polar follows the r>=0 convention literally (r=cos2t is two petals, r=1+2cos t outer loop only); board boxes name AQA 7367 (rational) and Edexcel 9FM0 (polar); graphs has none; look at fm-polar in dark mode and with the keyboard; notes in packages/P21.md
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -25,7 +25,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P18: reviewed
 - P19: written 2026-11-20
 - P20: written 2026-11-20
-- P21: writing 2026-11-20
+- P21: written 2026-11-20
 - P22: open
 - P23: open
 - P24: open

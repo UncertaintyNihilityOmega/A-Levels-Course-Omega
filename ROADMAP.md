@@ -3,8 +3,9 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
-- Queue item 10, Further Mathematics: prework done Nov 20 (math FINAL open; COURSE.md is rules, 13 KB). Specialist
-  LEAD for the extension running (Nov 20, preview server allowed by the user this session).
+- Queue item 10, Further Mathematics (math.fm, 50 chapters, P19–P36, plan in courses/math/FURTHER.md): LEAD done
+  Nov 20 (gold math.fm.roots); P19, P20, P21 written (8 chapters; widgets fm-matrix, fm-polar). Next: WRITE P22 and
+  P23, then REVIEW P19–P22. Waiting for the reset at 12:10 Nov 20 (5-hour window 88%).
 - Usage gate: weekly limit 95% for every launch (AGENT-RUN.md "Usage gate").
 - Name: "Zero to A* Ω" (titles, installed app, shared links). Top bar and Home heading: the hand-drawn wordmark "Log end"
   (`engine/wordmark.py --shell` writes it into shell.html; colours in style.css `.wm-*`).
