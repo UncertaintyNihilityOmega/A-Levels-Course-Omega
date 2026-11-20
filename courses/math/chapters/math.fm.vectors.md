@@ -470,7 +470,7 @@ A: (a) The equation is of the form \(ax + by + cz = d\), so it is a plane. [B1] 
 - \(9\)
 - \(1\)
 - \(\dfrac{9}{\sqrt{5}}\)
-> \(|\mathbf{n}| = \sqrt{4 + 1 + 4} = 3\), so the distance is \(9 \div 3 = 3\). The answer 9 forgets to divide by \(|\mathbf{n}|\); 1 divides the wrong way round; \(\sqrt5\) comes from adding the coefficients \(2 - 1 + 2\) before taking the root instead of adding their squares.
+> \(|\mathbf{n}| = \sqrt{4 + 1 + 4} = 3\), so the distance is \(9 \div 3 = 3\). The answer 9 forgets to divide by \(|\mathbf{n}|\); 1 divides the wrong way round; \(\dfrac{9}{\sqrt5}\) leaves one coefficient out of \(|\mathbf{n}|\) (\(4 + 1 = 5\) instead of \(4 + 1 + 4 = 9\)).
 ? Which is a correct vector equation of the plane \(3x - 2y + z = 6\)?
 + \(\mathbf{r} = (2, 0, 0) + \lambda(1, 0, -3) + \mu(0, 1, 2)\)
 - \(\mathbf{r} = (2, 0, 0) + \lambda(3, -2, 1) + \mu(0, 1, 2)\)

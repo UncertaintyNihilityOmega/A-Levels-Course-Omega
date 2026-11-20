@@ -173,7 +173,7 @@ The cubic has a local maximum where \(f'(x) = 3x^2 - 6x - 1 = 0\), at \(x = 1 - 
 :::
 
 :::plot The curve \(y^2 = (x + 1)(x - 1)(x - 3)\): an oval between \(x = -1\) and \(x = 1\), and a separate open branch starting at \(x = 3\). Each is symmetric about the \(x\)-axis, with a vertical tangent where it meets the axis. There is no curve for \(1 < x < 3\).
---f "sqrt(x**3-3*x**2-x+3)" --f "-sqrt(x**3-3*x**2-x+3)" --label "y = √f(x)" --label "y = −√f(x)" --x -2 5 --y -8 8 --xstep 2 --legend tr
+--f "sqrt(x**3-3*x**2-x+3)" --f "-sqrt(x**3-3*x**2-x+3)" --label "y = √f(x)" --label "y = −√f(x)" --x -2 5 --y -8 8 --xstep 2 --pt "-1,0,(−1, 0)@nw" --pt "1,0,(1, 0)@ne" --pt "3,0,(3, 0)@nw" --legend tr
 :::
 
 :::eg A designer models the boundary of a small ornamental pond by the oval part of the curve \(y^2 = (x + 1)(x - 1)(x - 3)\), with \(x\) and \(y\) in units of 10 metres. Find the length of the pond from end to end, and its greatest width, to the nearest metre.
@@ -219,7 +219,7 @@ Only \(x = \sqrt{2}\) lies in \(-1 \leq x \leq 3\); \(x = -\sqrt{2} = -1.41\) is
 :::
 
 :::plot The graph of \(y = |x^2 - 2x - 3|\) and the line \(y = 2x + 1\). The line is above the graph between the intersections at \(x = \sqrt{2}\) and \(x = 2 + 2\sqrt{2}\), which is where the inequality \(|x^2 - 2x - 3| < 2x + 1\) holds. The line meets the \(x\)-axis at \(x = -\tfrac12\).
---f "abs(x**2-2*x-3)" --f "2*x+1" --label "y = |x² − 2x − 3|" --label "y = 2x + 1" --x -2.5 6 --y -2 14 --xstep 2 --pt "1.414,3.828,(√2, 1 + 2√2)@se" --pt "4.828,10.657,(2 + 2√2, 5 + 4√2)@se" --legend tl
+--f "abs(x**2-2*x-3)" --f "2*x+1" --label "y = |x² − 2x − 3|" --label "y = 2x + 1" --x -2.5 6 --y -2 14 --xstep 2 --pt "1.414,3.828,(√2, 1 + 2√2)@nw" --pt "4.828,10.657,(2 + 2√2, 5 + 4√2)@se" --legend tl
 :::
 
 :::eg Use the sketch of \(y = \dfrac{1}{x^2 - 4}\) to solve \(\dfrac{1}{x^2 - 4} \geq 1\).
@@ -313,11 +313,15 @@ On the right branch, \(|f| = f\) is below 2 between the two roots. [M1]
 :::
 
 :::plot The graph of \(y = \dfrac{1}{f(x)} = \dfrac{x + 1}{(x - 2)^2}\) for the example above. It has the vertical asymptote \(x = 2\), meets the \(x\)-axis at \(x = -1\), has a minimum at \(\left(-4, -\tfrac1{12}\right)\) and crosses the \(y\)-axis at \(\left(0, \tfrac14\right)\).
---f "(x+1)/(x-2)**2" --label "y = 1/f(x) = (x + 1)/(x − 2)²" --x -10 8 --y -0.2 0.6 --vline 2 --xstep 5 --pt "-4,-0.0833,(−4, −1/12)@se" --pt "-1,0,(−1, 0)@ne" --pt "0,0.25,(0, 1/4)@ne" --legend tl
+--f "(x+1)/(x-2)**2" --label "y = 1/f(x) = (x + 1)/(x − 2)²" --x -10 8 --y -0.2 0.6 --vline 2 --xstep 5 --pt "-4,-0.0833,(−4, −1/12)@se" --pt "-1,0,(−1, 0)@nw" --pt "0,0.25,(0, 1/4)@ne" --legend tl
 :::
 
 :::plot The graph of \(y = f(|x|) = \dfrac{(|x| - 2)^2}{|x| + 1}\) for the same \(f\): symmetric about the \(y\)-axis, with minima at \((\pm 2, 0)\), a peak with a corner at \((0, 4)\), and oblique asymptotes \(y = |x| - 5\).
 --f "(abs(x)-2)**2/(abs(x)+1)" --f "abs(x)-5" --label "y = f(|x|)" --label "y = |x| − 5" --x -10 10 --y -8 10 --xstep 5 --pt "2,0,(2, 0)@se" --pt "-2,0,(−2, 0)@sw" --pt "0,4,(0, 4)@ne" --legend tr
+:::
+
+:::board
+This chapter follows the 9231 Paper 1 outcome on related graphs: \(y = f(x)\), \(y^2 = f(x)\), \(y = \dfrac{1}{f(x)}\), \(y = |f(x)|\) and \(y = f(|x|)\), and their use to solve equations and inequalities. Other boards split these graphs between their Mathematics and Further Mathematics courses in different ways, so check your own specification for which ones it asks for.
 :::
 
 :::exam Sketch questions

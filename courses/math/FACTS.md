@@ -132,6 +132,14 @@ FM LEAD, 20 Nov 2026. Outcome ids (1.1a …) are ours, in the syllabus's order; 
   classes to combine); pooled-variance t confidence interval; Wilcoxon matched-pairs then a paired sign test; a PGF.
 - Mark scheme style (9231/11 June 2025): B1, M1, A1, A1 FT, and DM1 (a method mark that depends on an earlier M);
   induction is marked B1 base case, B1 inductive hypothesis, M1 A1 inductive step, A1 conclusion.
+- Specimen paper 9231/01 "For examination from 2027" (Cambridge site, read by the P19–P22 REVIEW, 20 Nov 2026):
+  2 hours, total 75, 7 questions, MF19; "You must answer on the printed answer booklet" (sketches too), so from 2027
+  answers go in a separate booklet; other instructions as above. Topics: differences with a given f(r) and a
+  deduced infinite sum; induction on a recurrence [7]; polar r = 2 + 2cos θ for 0 ≤ θ ≤ π (sketch [3], area with the
+  initial line [4], show a Cartesian form [3]); cubic roots, sums of cubes and fourth powers, a substitution;
+  singular matrix, invariant lines through O [6], area and the inverse transformation; skew-line distance 3 fixing
+  an unknown [7], distance from a point to a line, angle between planes; rational function: asymptotes, a bound on
+  y [4], stationary points, sketch, then a related sketch and an inequality.
 
 ### MF19: what 9231 papers can use (pp. 35–44 of the 9231 syllabus)
 - Further Pure: Σr, Σr², Σr³ (n(n + 1)/2, n(n + 1)(2n + 1)/6, n²(n + 1)²/4); Maclaurin's series in general and for

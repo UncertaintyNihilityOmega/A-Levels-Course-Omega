@@ -328,8 +328,8 @@ The sum to \(n\) terms, \(S_n\), changes as \(n\) grows. For \(\sum \dfrac{1}{r(
 A series **converges** if its sum to \(n\) terms \(S_n\) approaches a fixed finite value as \(n \to \infty\). That value is the **sum to infinity**, \(S_\infty = \displaystyle\sum_{r=1}^{\infty} u_r\). A series that does not converge **diverges**.
 :::
 
-:::plot The partial sums Sₙ = 1 − 1/(n + 1) of 1/(r(r + 1)) climb towards the dashed line at 1 but never reach it. S₃ = 3/4 and S₉ = 9/10.
---f "1-1/(x+1)" --label "Sₙ = 1 − 1/(n + 1)" --x 0 10.5 --y 0 1.5 --hline 1 --pt "3,0.75,S₃ = 3/4@se" --pt "9,0.9,S₉ = 9/10@se" --legend tr --xlabel "n"
+:::plot The partial sums Sₙ = 1 − 1/(n + 1) of 1/(r(r + 1)) climb towards the dashed line at 1 but never reach it. S₁ = 1/2, S₃ = 3/4 and S₉ = 9/10. Only whole numbers n give partial sums: the curve joins those points to show the trend.
+--f "1-1/(x+1)" --label "Sₙ = 1 − 1/(n + 1)" --x 0 10.5 --y 0 1.5 --hline 1 --pt "1,0.5,S₁ = 1/2@se" --pt "3,0.75,S₃ = 3/4@se" --pt "9,0.9,S₉ = 9/10@se" --legend tr --xlabel "n"
 :::
 
 :::key Finding a sum to infinity

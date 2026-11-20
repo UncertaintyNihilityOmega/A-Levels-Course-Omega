@@ -159,7 +159,7 @@ Setting this to zero gives \((x - 1)^2 = 4\), so \(x = 3\) or \(x = -1\). Then \
 :::
 
 :::plot The curve has a maximum at \((-1, -5)\) on its left branch and a minimum at \((3, 3)\) on its right branch. The dashed vertical line is \(x = 1\); the sloping line is the oblique asymptote \(y = x - 2\).
---f "(x**2-3*x+6)/(x-1)" --f "x-2" --label "y = (x² − 3x + 6)/(x − 1)" --label "y = x − 2" --x -7 9 --y -14 14 --vline 1 --xstep 4 --pt "3,3,minimum (3, 3)@se" --pt "-1,-5,maximum (−1, −5)@s" --pt "0,-6,(0, −6)@e" --legend tl
+--f "(x**2-3*x+6)/(x-1)" --f "x-2" --label "y = (x² − 3x + 6)/(x − 1)" --label "y = x − 2" --x -7 9 --y -14 14 --vline 1 --xstep 4 --pt "3,3,minimum (3, 3)@se" --pt "-1,-5,maximum (−1, −5)@nw" --pt "0,-6,(0, −6)@e" --legend tl
 :::
 
 Slide \(k\) in the graph below. The curve is \(y = \dfrac{x^2 - 3x + k}{x - 1}\). The numerator at \(x = 1\) is \(k - 2\), so this is the value of the remainder \(R\). For \(k > 2\) the curve has two turning points; for \(k < 2\) it has none, because \(R\) is negative and each branch is monotonic; at \(k = 2\) the numerator is \((x - 1)(x - 2)\), the fraction cancels and you get the line \(y = x - 2\) with a hole at \(x = 1\).

@@ -22,7 +22,7 @@ A: By parts with \(u = \theta\) and \(\dfrac{dv}{d\theta} = \mathrm{e}^{2\theta}
 
 ## Polar coordinates
 
-On a map you can give a place two ways: "3 km east and 4 km north" (Cartesian) or "5 km away in the direction north-east of north" (polar). Polar coordinates use the second way.
+On a map you can give a place two ways: "3 km east and 4 km north" (Cartesian) or "5 km away on a bearing of about 037°" (polar). Polar coordinates use the second way.
 
 :::def Polar coordinates
 Fix a point \(O\), the **pole**, and a half-line from it, the **initial line** (drawn along the positive \(x\)-axis). A point \(P\) has polar coordinates \((r, \theta)\), where \(r\) is the distance \(OP\) and \(\theta\) is the angle from the initial line to \(OP\), measured **anticlockwise** and in **radians**. The pole itself has \(r = 0\) and no definite angle.
@@ -31,7 +31,7 @@ Fix a point \(O\), the **pole**, and a half-line from it, the **initial line** (
 In 9231 the convention \(r \geq 0\) is used: a distance is never negative. Angles are given in either \(0 \leq \theta < 2\pi\) or \(-\pi < \theta \leq \pi\), and adding \(2\pi\) to \(\theta\) gives the same point.
 
 :::html
-<figure class="fig small"><svg viewBox="0 0 320 250" role="img" aria-label="A point P at distance r from the pole O along a ray making angle theta with the initial line. The perpendicular from P to the initial line shows x equals r cos theta along the initial line and y equals r sin theta up to P.">
+<figure class="fig small"><svg viewBox="10 62 305 178" role="img" aria-label="A point P at distance r from the pole O along a ray making angle theta with the initial line. The perpendicular from P to the initial line shows x equals r cos theta along the initial line and y equals r sin theta up to P.">
 <line class="ln" x1="40" y1="210" x2="300" y2="210" marker-end="url(#ah)"/>
 <line class="c1 sw2" x1="40" y1="210" x2="142.8" y2="87.4"/>
 <line class="ln-m thin dash" x1="142.8" y1="87.4" x2="142.8" y2="210"/>
@@ -84,7 +84,7 @@ A curve given by a Cartesian equation can be written in polar form by substituti
 \[r^2 = 4r\cos\theta\]
 Divide by \(r\): \(r = 4\cos\theta\). (The pole is still on this curve, at \(\theta = \dfrac\pi2\), so nothing is lost.) This is a circle through the pole.
 
-(b) \(r\sin\theta = 3\), so \(r = 3\csc\theta\) (that is, \(\dfrac{3}{\sin\theta}\)). It is a horizontal line.
+(b) \(r\sin\theta = 3\), so \(r = 3\operatorname{cosec}\theta\) (that is, \(\dfrac{3}{\sin\theta}\)). It is a horizontal line.
 
 (c) \(r^2\sin^2\theta = 4r\cos\theta\), so \(r = \dfrac{4\cos\theta}{\sin^2\theta}\).
 :::
@@ -121,7 +121,7 @@ To sketch \(r = f(\theta)\), let \(\theta\) turn and watch the point sweep out t
 |---|---|
 | \(r = a\) | circle, centre the pole, radius \(a\) |
 | \(\theta = \alpha\) | half-line through the pole |
-| \(r = a\sec\theta\), \(r = a\csc\theta\) | the lines \(x = a\) and \(y = a\) |
+| \(r = a\sec\theta\), \(r = a\operatorname{cosec}\theta\) | the lines \(x = a\) and \(y = a\) |
 | \(r = 2a\cos\theta\), \(r = 2a\sin\theta\) | circles through the pole, diameter \(2a\) along the initial line or along \(\theta = \dfrac\pi2\) |
 | \(r = a(1 + \cos\theta)\) | **cardioid**: heart shape with a cusp at the pole |
 | \(r = a + b\cos\theta\) | **limaçon**: no loop if \(a > b > 0\) |
@@ -144,7 +144,7 @@ The widget below draws any of these. Choose a curve, drag \(\theta\) or press Pl
 
 **Greatest and least \(r\).** \(r\) is greatest, \(2a\), at \(\theta = 0\), and least, 0, at \(\theta = \pi\).
 
-**Pole.** \(r = 0\) at \(\theta = \pi\), so the curve reaches the pole tangent to the line \(\theta = \pi\) (the \(x\)-axis): a cusp at the pole, pointing left.
+**Pole.** \(r = 0\) at \(\theta = \pi\), so the curve reaches the pole tangent to the line \(\theta = \pi\) (the \(x\)-axis): a cusp at the pole, the dent in the heart shape.
 
 **Axes.** It meets the initial line at \((2a, 0)\) and the pole. At \(\theta = \dfrac\pi2\), \(r = a\), giving \((0, a)\), and at \(\theta = \dfrac{3\pi}{2}\), \((0, -a)\).
 
@@ -235,7 +235,7 @@ The area of the region bounded by the curve \(r = f(\theta)\) and the half-lines
 - For the region between two curves with the same limits, \(A = \dfrac12\int_\alpha^\beta \left(r_1^2 - r_2^2\right)d\theta\), where \(r_1 \geq r_2\).
 :::
 
-Two identities do most of the work: \(\cos^2\theta = \tfrac12(1 + \cos2\theta)\) and \(\sin^2\theta = \tfrac12(1 - \cos2\theta)\), which are in MF19. A spiral usually needs integration by parts.
+Two identities do most of the work: \(\cos^2\theta = \tfrac12(1 + \cos2\theta)\) and \(\sin^2\theta = \tfrac12(1 - \cos2\theta)\), which come straight from the \(\cos 2A\) formulas in MF19. A spiral usually needs integration by parts.
 
 :::eg Find the area enclosed by the cardioid \(r = a(1 + \cos\theta)\).
 The whole curve is traced for \(0 \leq \theta \leq 2\pi\), and \(r \geq 0\) throughout.
@@ -409,7 +409,7 @@ Q: Find the Cartesian coordinates of the point \(\left(6, \dfrac{5\pi}{6}\right)
 A: \(x = 6\cos\dfrac{5\pi}{6} = -3\sqrt3\) and \(y = 6\sin\dfrac{5\pi}{6} = 3\). The point is \((-3\sqrt3, 3)\).
 Q: Write \(x^2 + y^2 = 6y\) in polar form.
 A: \(r^2 = 6r\sin\theta\), so \(r = 6\sin\theta\).
-Q: Find the Cartesian equation of \(r = 5\csc\theta\).
+Q: Find the Cartesian equation of \(r = 5\operatorname{cosec}\theta\).
 A: \(r\sin\theta = 5\), so \(y = 5\).
 Q: State the least and greatest values of \(r\) on \(r = 4 + 3\cos\theta\), and where they occur.
 A: Greatest \(r = 7\) at \(\theta = 0\); least \(r = 1\) at \(\theta = \pi\).

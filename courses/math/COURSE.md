@@ -105,12 +105,19 @@ every outcome listed for your chapter, and nothing marked "Not:" except in a cle
   build the page tools.l.math. Writers keep the box when editing and add only URLs the Specialist has checked
   (HTTP 200, not a login or home page).
 
+### Before `done`
+- Count the `:::eg (Exam style)` examples of each chapter (`grep -c ":::eg (Exam style)"`): the check does not, and
+  two is the minimum (three fm chapters of P21–P22 had one). No worked example may use a rule taught later in the
+  chapter.
+
 ## Figures
 - Function graphs: `:::plot` (kit/STYLE.md), one or two per Pure chapter; never long hand-written SVG curve paths.
 - Hand SVG only for geometry, force diagrams, Argand loci, trees, box plots, histograms, straight-segment v–t graphs,
   vector diagrams; one or two per chapter; classes from kit/STYLE.md. Labels use `tl` (`ts` only for tick numbers),
   `halo` where a label touches a line; viewBox cropped to the drawing plus about 15 px. Check coordinates with
   Python and look at every figure at phone width.
+- 3D figures in perspective: where one line passes behind another, leave a gap of about 15 px in the back line so
+  skew lines do not look as if they meet; keep right-angle marks off the other lines.
 
 ## Widgets
 - Embed a widget only where it teaches what a static figure cannot, with a sentence saying what to try.
