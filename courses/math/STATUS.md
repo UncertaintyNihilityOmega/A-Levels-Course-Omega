@@ -1,10 +1,10 @@
 # STATUS: Mathematics
 
-Last: 2026-11-13 · FIX · Closed 24 reader items in exam.p6, mixed.pure1/pure3/mech/stats1/stats2: added missing working steps, limit notation for the improper integral, reasons for angles, rounding fix
+Last: 2026-11-20 · LEAD · Further Maths 9231 extension planned: FACTS.md 9231 outcomes, MF19 and June 2025 front pages; 50 math.fm chapters in P19-P36 with papers FP1/FP2/FM/FS; FURTHER.md rules and links; packages/P19-P36.md; gold chapter math.fm.roots (4016 words, check and phone pass)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
-- LEAD: done 2026-10-03
+- LEAD: done 2026-11-20
 - P1: reviewed
 - P2: reviewed
 - P3: reviewed
@@ -23,5 +23,23 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P16: reviewed
 - P17: reviewed
 - P18: reviewed
+- P19: open
+- P20: open
+- P21: open
+- P22: open
+- P23: open
+- P24: open
+- P25: open
+- P26: open
+- P27: open
+- P28: open
+- P29: open
+- P30: open
+- P31: open
+- P32: open
+- P33: open
+- P34: open
+- P35: open
+- P36: open
 - READER: done 2026-11-13
 - FINAL: open

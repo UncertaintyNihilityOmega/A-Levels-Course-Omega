@@ -82,3 +82,185 @@ Source: 9709 syllabus 2026–2027 (version 4, Dec 2025), pp. 19–39, and MF19 p
 - Statistics: mean and SD (ungrouped and grouped); E(X), Var(X); binomial, geometric, Poisson pᵣ with means and variances; continuous E(X), Var(X); unbiased estimators x̄ and s²; CLT X̄ ~ N(μ, σ²/n); sample proportion ~ N(p, p(1 − p)/n); normal tables.
 - Normal tables (checked against the real MF19 PDF, Nov 13 2026): "The normal distribution function" gives Φ(z) to 4 d.p., rows z = 0.0 to 2.9, columns 0–9 for the second decimal and ADD columns 1–9 for the third; header says use Φ(−z) = 1 − Φ(z). "Critical values for the normal distribution": p = 0.75, 0.90, 0.95, 0.975, 0.99, 0.995, 0.9975, 0.999, 0.9995 give z = 0.674, 1.282, 1.645, 1.960, 2.326, 2.576, 2.807, 3.090, 3.291.
 - Not given (students must learn): the trapezium rule, laws of logarithms, exact trig values, radian conversion, line and circle equations, distance and midpoint, the chain rule, area and volume integrals, F ≤ μR, W = mg, KE and GPE, P = Fv, W = Fd cos θ, momentum, Newton's laws, P(A|B), counting rules, approximation conditions, continuity corrections, Var(aX + bY), confidence-interval formulas.
+
+## Further Mathematics (9231)
+Source: 9231 syllabus 2026–2027 (version 5, Oct 2026; v2–v4 fixed typographical errors on pp. 16, 19, 23, 25, v5 a
+weblink), pp. 10–31, MF19 pp. 32–44 of that syllabus; real papers June 2025 (9231/11, 21, 31, 41). Checked by the
+FM LEAD, 20 Nov 2026. Outcome ids (1.1a …) are ours, in the syllabus's order; "Not:" = excluded.
+
+### Structure and rules (9231)
+- Paper 1 Further Pure Mathematics 1: 2 h, 75 marks, 6–8 structured questions, answer all; 60% of AS, 30% of A Level;
+  compulsory. Paper 2 Further Pure Mathematics 2: 2 h, 75 marks, 7–9 questions; 30% of A Level; A Level only
+  (assumes Paper 1 content). Paper 3 Further Mechanics: 1 h 30 min, 50 marks, 5–7 questions; 40% AS, 20% A Level.
+  Paper 4 Further Probability & Statistics: 1 h 30 min, 50 marks, 5–7 questions; 40% AS, 20% A Level.
+- AS Further Maths = Paper 1 + Paper 3, or Paper 1 + Paper 4. A Level = all four papers (staged: AS year 1, then
+  Paper 2 + the other applied paper; or all in one series). Grades a–e (AS), A*–E (A Level). June and November.
+- AO1 Knowledge and understanding 45%, AO2 Application and communication 55%, in every paper and both qualifications.
+- Prior knowledge (from 9709): Paper 1 and Paper 2 need 9709 P1 and P3; Paper 3 needs P1, P3, P4; Paper 4 needs P1,
+  P3, P5, P6. The AS is not designed to be taken after one year alongside AS 9709 (FP1 assumes P3 content).
+- Accuracy 3 s.f., angles 1 d.p. in degrees; equipment: ruler and scientific calculator (no graphical, CAS or
+  symbolic calculators; no marks for unsupported calculator answers); protractor and compasses not required.
+- MF19 is supplied in every 9231 paper; it is the combined 9709/9231 list and "all formulae in the list may be needed".
+- Command words (syllabus p. 31): calculate, deduce, derive, describe, determine, evaluate, explain, identify,
+  interpret, justify, prove, show (that), sketch, state, verify.
+- 2028–2030 syllabus (version 1, Sept 2025): "There are no significant changes which affect teaching." The papers,
+  times, marks, weightings and subject content are word for word the same as 2026–2027 (we compared them); only the
+  introductory pages and a "Routes" page were rewritten.
+
+### Real papers, June 2025 (front pages read 20 Nov 2026)
+- All four front pages: "You must answer on the question paper." "You will need: List of formulae (MF19)". Answer
+  all questions; black or dark blue pen, HB pencil for diagrams or graphs; "You should use a calculator where
+  appropriate"; "no marks will be given for unsupported answers from a calculator"; 3 s.f. or 1 d.p. for angles in
+  degrees unless the question says otherwise; marks for each part shown in brackets [ ]; extra lined page at the end.
+- 9231/11 Paper 1 FP1: 2 hours, total 75, 7 questions (8, 7, 7, 9, 13, 16, 15 marks): series with MF19 sums and
+  differences; roots of a cubic with a substitution then sums of powers; induction on a recurrence [5] then a
+  deduction; a matrix as two transformations and its line of invariant points; a polar spiral, sketch and area;
+  planes, angle between planes, skew-line distance; a rational function, asymptotes, sketches of y = f(x) and a
+  related graph, an inequality.
+- 9231/21 Paper 2 FP2: 2 hours, total 75, 8 questions (5, 7, 6, 9, 10, 15, 10, 13): cube roots of a complex number;
+  a reduction formula; de Moivre multiple-angle identity; rectangles bounding a sum; a second order DE with initial
+  conditions [10]; hyperbolic identities and a parametric second derivative; a first order DE [10]; eigenvalues,
+  diagonalisation and the characteristic equation.
+- 9231/31 Paper 3 FM: 1 hour 30 minutes, total 50, 7 questions (5, 6, 7, 7, 6, 9, 10). Front page adds: "Where a
+  numerical value for the acceleration due to gravity (g) is needed, use 10 m s–2." Topics: variable force with
+  v dv/dx; projectile clearing a wall (two angles); horizontal circle with an elastic string and friction; centre of
+  mass of a cone with a hemisphere removed, toppling on a slope; elastic string on an inclined plane, maximum speed;
+  direct then oblique impact with e; vertical circle on the inside of a sphere.
+- 9231/41 Paper 4 FS: 1 hour 30 minutes, total 50, 6 questions (7, 12, 8, 7, 10, 6). Tables come from MF19 (no
+  separate booklet). Topics: two-sample test with large samples (normal, variances not assumed equal) [7]; a
+  piecewise PDF, mean, median, CDF of Y = X²; χ² goodness of fit to a binomial (expected values given in a table,
+  classes to combine); pooled-variance t confidence interval; Wilcoxon matched-pairs then a paired sign test; a PGF.
+- Mark scheme style (9231/11 June 2025): B1, M1, A1, A1 FT, and DM1 (a method mark that depends on an earlier M);
+  induction is marked B1 base case, B1 inductive hypothesis, M1 A1 inductive step, A1 conclusion.
+
+### MF19: what 9231 papers can use (pp. 35–44 of the 9231 syllabus)
+- Further Pure: Σr, Σr², Σr³ (n(n + 1)/2, n(n + 1)(2n + 1)/6, n²(n + 1)²/4); Maclaurin's series in general and for
+  eˣ, ln(1 + x) (−1 < x ≤ 1), sin x, cos x, tan⁻¹x (−1 ≤ x ≤ 1), sinh x, cosh x, tanh⁻¹x (−1 < x < 1); t = tan ½x
+  gives sin x = 2t/(1 + t²), cos x = (1 − t²)/(1 + t²); cosh²x − sinh²x ≡ 1, sinh 2x ≡ 2 sinh x cosh x,
+  cosh 2x ≡ cosh²x + sinh²x; sinh⁻¹x = ln(x + √(x² + 1)), cosh⁻¹x = ln(x + √(x² − 1)) (x ≥ 1),
+  tanh⁻¹x = ½ ln((1 + x)/(1 − x)) (|x| < 1); derivatives of sin⁻¹x, cos⁻¹x, sinh x, cosh x, tanh x, sinh⁻¹x,
+  cosh⁻¹x, tanh⁻¹x; integrals of sec x, cosec x, sinh x, cosh x, sech²x, 1/√(a² − x²) = sin⁻¹(x/a) (|x| < a),
+  1/√(x² − a²) = cosh⁻¹(x/a) (x > a), 1/√(a² + x²) = sinh⁻¹(x/a). Plus all the 9709 entries listed above.
+- Further Mechanics: trajectory y = x tan θ − gx²/(2V² cos²θ); T = λx/l, E = λx²/(2l); circular acceleration rω² or
+  v²/r towards the centre; centres of mass: triangular lamina ⅔ along the median from the vertex, solid hemisphere
+  3r/8 from the centre, hemispherical shell r/2, circular arc (r sin α)/α, sector (2r sin α)/(3α) (angle 2α), solid
+  cone or pyramid ¾h from the vertex.
+- Further Statistics: pooled two-sample variance s² = (Σ(x₁ − x̄₁)² + Σ(x₂ − x̄₂)²)/(n₁ + n₂ − 2); PGF
+  G_X(t) = E(t^X), E(X) = G′(1), Var(X) = G″(1) + G′(1) − {G′(1)}².
+- Tables: normal Φ(z) and critical values (as for 9709); t-distribution P(T ≤ t) = p for p = 0.75, 0.90, 0.95,
+  0.975, 0.99, 0.995, 0.9975, 0.999, 0.9995 and ν = 1–30, 40, 60, 120, ∞ (3–4 s.f.); χ² P(X ≤ x) = p for
+  p = 0.01, 0.025, 0.05, 0.9, 0.95, 0.975, 0.99, 0.995, 0.999 and ν = 1–25, 30, 40, 50, …, 100 (steps of 10); Wilcoxon
+  signed-rank: largest T leading to rejection, n = 6–20, one-tailed 0.05/0.025/0.01/0.005 (two-tailed
+  0.1/0.05/0.02/0.01), T = smaller of P and Q, normal approximation mean n(n + 1)/4, variance n(n + 1)(2n + 1)/24
+  for larger n; Wilcoxon rank-sum: largest W leading to rejection, m ≤ n, m = 3–10, n = 3–10, W = smaller of Rₘ and
+  m(n + m + 1) − Rₘ, one-tailed 0.05/0.025/0.01 (two-tailed 0.1/0.05/0.02), normal approximation for Rₘ mean
+  ½m(m + n + 1), variance mn(m + n + 1)/12.
+- Not on MF19 (must be learned): relations between roots and coefficients; the vector product (i j k component
+  form, |a||b| sin θ n̂); plane forms and distance formulas; the polar area ½∫r² dθ (syllabus: "recall"); de
+  Moivre's theorem and roots of unity; matrix inverses and determinants; hyperbolic definitions in eˣ; reduction
+  formulae; arc length and surface area of revolution formulas; integrating factor, auxiliary equation and PI
+  forms; v = rω; Newton's experimental law and e; moments; Σ(O − E)²/E and degrees of freedom; t-test statistics
+  and confidence intervals; sign test rules.
+
+### Paper 1 Further Pure Mathematics 1 (assumes 9709 P1, P3)
+- 1.1a Recall and use the relations between roots and coefficients of polynomial equations of degree 2, 3 or 4
+  (symmetric functions of roots; unknown coefficients). 1.1b Use a substitution to get an equation whose roots are
+  related simply to the original ones (not given for reciprocals, squares or simple linear functions of the roots).
+- 1.2a Sketch simple rational functions, numerator and denominator of degree at most 2, including oblique asymptotes
+  and the set of values taken (e.g. by a discriminant); significant features: turning points, asymptotes, axis
+  intersections (no detailed plotting). 1.2b Relationships between y = f(x), y² = f(x), y = 1/f(x), y = |f(x)|,
+  y = f(|x|), and use of such sketches to solve equations and inequalities.
+- 1.3a Use Σr, Σr², Σr³ to find related sums. 1.3b Method of differences for a finite sum (partial fractions may be
+  needed). 1.3c Recognise convergence by considering the sum to n terms; find the sum to infinity.
+- 1.4a Matrix +, −, × (incl. non-square; at most 3 rows and columns); zero and identity matrices. 1.4b Singular and
+  non-singular; determinants and inverses of 2×2 and 3×3 (notation det M, I). 1.4c (AB)⁻¹ = B⁻¹A⁻¹, extended to
+  more than two matrices. 1.4d 2×2 matrices as transformations of the x-y plane: A and A⁻¹; AB = B then A;
+  area scale factor = |det|; find the matrix of a transformation or sequence; rotation, reflection, enlargement,
+  stretch, shear (others may appear, no knowledge expected). 1.4e Invariant points and invariant lines (e.g.
+  invariant points of a given matrix; invariant lines through the origin; show every line of gradient 1 is
+  invariant).
+- 1.5a Cartesian ↔ polar coordinates and equations (convention r ≥ 0). 1.5b Sketch simple polar curves for
+  0 ≤ θ < 2π, −π < θ ≤ π or a subset: symmetry, intersections with the initial line, form at the pole, least and
+  greatest r. 1.5c Recall ½∫r² dθ for the area of a sector and use it in simple cases.
+- 1.6a Planes as ax + by + cz = d, r·n = p, r = a + λb + μc, converting between forms. 1.6b Recall a × b =
+  |a||b| sin θ n̂ and the component form (a₂b₃ − a₃b₂)i + (a₃b₁ − a₁b₃)j + (a₁b₂ − a₂b₁)k. 1.6c Problems on
+  distances, angles, intersections: line in / parallel to / meeting a plane and the point of intersection; foot of
+  the perpendicular from a point to a plane; angle between a line and a plane, between two planes; line of
+  intersection of two planes; shortest distance between skew lines; the common perpendicular of two skew lines.
+- 1.7a Prove a given result by induction (e.g. Σr³ formula, a term of a recurrence such as uₙ₊₁ = 3uₙ − 1, a power
+  of a 2×2 matrix, divisibility such as by 8). 1.7b Conjecture from a limited trial then prove by induction (e.g.
+  the nth derivative of x eˣ, Σ r·r!).
+
+### Paper 2 Further Pure Mathematics 2 (assumes Paper 1 content)
+- 2.1a Definitions of sinh, cosh, tanh, sech, cosech, coth via eˣ. 2.1b Sketch their graphs. 2.1c Prove and use
+  hyperbolic identities (cosh²x − sinh²x ≡ 1, sinh 2x ≡ 2 sinh x cosh x and others like the trig ones). 2.1d Inverse
+  hyperbolic functions: definitions, derive and use the logarithmic forms.
+- 2.2a Three linear equations in three unknowns as a matrix equation and back. 2.2b Consistency and inconsistency,
+  singularity, solving consistent systems, geometric meaning (three planes meeting at a point, in a common line, or
+  with no common point). 2.2c Characteristic equation, eigenvalue, eigenvector; use Ae = λe to prove simple
+  properties (λⁿ is an eigenvalue of Aⁿ). 2.2d Eigenvalues and eigenvectors of 2×2 and 3×3 matrices (real, distinct
+  eigenvalues only). 2.2e A = QDQ⁻¹, D diagonal of eigenvalues, Q columns eigenvectors; use it (powers). 2.2f A
+  matrix satisfies its characteristic equation (Cayley–Hamilton): powers, inverse (2×2, 3×3 only).
+- 2.3a Differentiate hyperbolic functions and sin⁻¹x, cos⁻¹x, sinh⁻¹x, cosh⁻¹x, tanh⁻¹x. 2.3b d²y/dx² for implicit
+  and parametric relations. 2.3c Derive and use the first few terms of a Maclaurin series (no general term;
+  successive implicit differentiation may be needed, e.g. y = tan x via y′ = 1 + y²).
+- 2.4a Integrate hyperbolic functions; recognise 1/√(a² − x²), 1/√(x² + a²), 1/√(x² − a²) and integrate related
+  functions by trigonometric or hyperbolic substitution, completing the square where needed (1/√(x² + 2x)). 2.4b
+  Derive and use reduction formulae for definite integrals (∫₀^{π/2} sinⁿx dx, ∫₀¹ xⁿ e^(−x) dx; hints in harder
+  cases, e.g. ∫₀^{π/4} secⁿx dx via d/dx(tan x secⁿ⁻²x)). 2.4c Rectangles to estimate or bound the area under a curve
+  and to derive inequalities or limits for sums (unit width or width → 0; e.g. Σ 1/r and ln n). 2.4d Arc length
+  (Cartesian, parametric, polar) and surface area of revolution about an axis (Cartesian or parametric). Any 9709
+  technique may be needed in harder cases (by parts for ∫eˣ sin x dx, t = tan ½x). Not: surface area for polar
+  curves.
+- 2.5a De Moivre's theorem for positive or negative integer n, as the geometric effect of × and ÷. 2.5b Prove it for
+  positive integer n (e.g. by induction). 2.5c Use it for positive or negative rational n: cos nθ, sin nθ, tan nθ in
+  powers of cos θ, sin θ, tan θ (e.g. cos 5θ, tan 5θ); powers of sin θ, cos θ in multiple angles (sin⁶θ via cos 2θ,
+  cos 4θ, cos 6θ); summing series (the C + iS method, e.g. Σ ⁿCᵣ sin rθ); nth roots of unity and their use.
+- 2.6a Integrating factor for a first order linear DE; general solution (dy/dx − 2y = x, x dy/dx − 4y = x, coth x
+  dy/dx + y = cosh x …). 2.6b Complementary function, particular integral; general solution = CF + PI. 2.6c CF of
+  first or second order linear DEs with constant coefficients: auxiliary equation with distinct real, repeated real
+  or conjugate complex roots. 2.6d PI forms: polynomial, a e^(bx), a cos px + b sin px; in other simple cases find
+  the coefficient(s) of a given form (k x cos 2x for y″ + 4y = sin 2x). 2.6e Use a given substitution to reduce a DE
+  to linear constant-coefficient or separable form (x = eᵗ for ax²y″ + bxy′ + cy; y = ux). 2.6f Initial conditions,
+  particular solutions, interpretation in a modelled problem.
+
+### Paper 3 Further Mechanics (assumes 9709 P4; g = 10)
+- 3.1a Projectile as a particle with constant acceleration; limitations. 3.1b Horizontal and vertical equations:
+  speed and direction at a time or position, range on horizontal ground, greatest height. 3.1c Derive and use the
+  Cartesian trajectory, incl. unknown speed and/or angle. Not: vector methods, the bounding parabola.
+- 3.2a Moment of a force about a point (coplanar only). 3.2b Weight acts at the centre of mass; symmetry. 3.2c Use
+  given centres of mass of a triangular lamina and other simple shapes (MF19; no proofs). 3.2d Centre of mass of a
+  composite body as a system of particles (simple cases: L-shaped lamina, cone on a hemisphere). 3.2e Equilibrium:
+  vector sum zero and moments about any point zero, and the converse. 3.2f Single rigid body in equilibrium under
+  coplanar forces, incl. toppling or sliding.
+- 3.3a Angular speed, v = rω. 3.3b Acceleration towards the centre rω² or v²/r for constant speed (no proof). 3.3c
+  Horizontal circles at constant speed. 3.3d Vertical circles without loss of energy: normal contact force or
+  tension, where they are zero, conditions for complete circles.
+- 3.4a Hooke's law T = λx/l, modulus of elasticity, strings and springs. 3.4b Elastic potential energy λx²/(2l) (no
+  proof). 3.4c Problems with elastic strings or springs, incl. work and energy (horizontal, vertical, inclined;
+  one or more strings; elastic string as a conical pendulum).
+- 3.5a Linear motion under a variable force: set up and solve a separable DE, using v dv/dx where appropriate
+  (calculus no harder than 9709 P3).
+- 3.6a Newton's experimental law, coefficient of restitution, 0 ≤ e ≤ 1, perfectly elastic (e = 1), inelastic
+  (e = 0). 3.6b Conservation of momentum and/or the law for direct or oblique impact of two smooth spheres, or a
+  smooth sphere with a fixed surface.
+
+### Paper 4 Further Probability & Statistics (assumes 9709 P5, P6)
+- 4.1a PDFs, possibly piecewise. 4.1b E(g(X)) = ∫ g(x) f(x) dx. 4.1c PDF ↔ CDF; probabilities, median, percentiles
+  from either. 4.1d CDF of a related variable in simple cases (Y = X³), hence its PDF.
+- 4.2a One-sample t-test for a mean (small sample, normal population, unknown variance). 4.2b Pooled estimate of a
+  common variance from two samples (raw or summarised data). 4.2c Difference of means: 2-sample t-test, paired
+  t-test, or a normal test, choosing the right one. 4.2d t confidence interval for a mean (small sample, normal
+  population). 4.2e Confidence interval for a difference of means, t or normal as appropriate.
+- 4.3a Fit a distribution prescribed by a hypothesis to data (no lengthy calculations). 4.3b χ² goodness of fit with
+  the right degrees of freedom, combining classes so every expected frequency is at least 5. 4.3c χ² test for
+  independence in a contingency table, combining rows or columns so expected frequencies are at least 5. Not:
+  Yates' correction.
+- 4.4a Idea of a non-parametric test and when it helps (population not assumed normal). 4.4b Basis of the sign test,
+  Wilcoxon signed-rank and Wilcoxon rank-sum tests; Wilcoxon tests need a symmetric distribution. 4.4c Single-sample
+  sign test and Wilcoxon signed-rank test for a median, with normal approximations where appropriate. 4.4d
+  Paired-sample sign test, Wilcoxon matched-pairs signed-rank test and Wilcoxon rank-sum test for identical
+  populations, with normal approximations. Not: tied ranks, observations equal to the median tested, zero-difference
+  pairs.
+- 4.5a PGF concept; construct and use it for discrete uniform, binomial, geometric and Poisson. 4.5b Mean and variance
+  from G′(1), G″(1). 4.5c The PGF of a sum of independent variables is the product of their PGFs.

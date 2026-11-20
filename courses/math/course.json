@@ -3,7 +3,7 @@
   "title": "Mathematics",
   "short": "Maths",
   "code": "9709",
-  "board": "Cambridge International AS & A Level Mathematics (9709); Further Mathematics (9231) in one tour chapter",
+  "board": "Cambridge International AS & A Level Mathematics (9709) and Further Mathematics (9231)",
   "syllabus": "https://www.cambridgeinternational.org/Images/697427-2026-2027-syllabus.pdf",
   "years": "2026–2027",
   "desc": "Pure, Statistics and Mechanics from counting to calculus",
@@ -395,12 +395,6 @@
       "group": "Further Mathematics"
     },
     {
-      "id": "math.fm.rational",
-      "title": "Rational functions and their graphs",
-      "level": "fm",
-      "group": "Further Mathematics"
-    },
-    {
       "id": "math.fm.series",
       "title": "Summation of series",
       "level": "fm",
@@ -408,7 +402,31 @@
     },
     {
       "id": "math.fm.matrices",
-      "title": "Matrices and transformations",
+      "title": "Matrices: algebra, determinants and inverses",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.transform",
+      "title": "Matrices as transformations",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.induction",
+      "title": "Proof by induction",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.rational",
+      "title": "Rational functions and their graphs",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.graphs",
+      "title": "Graphs related to y = f(x)",
       "level": "fm",
       "group": "Further Mathematics"
     },
@@ -420,13 +438,13 @@
     },
     {
       "id": "math.fm.vectors",
-      "title": "Vectors: lines and planes",
+      "title": "Vectors: the vector product and planes",
       "level": "fm",
       "group": "Further Mathematics"
     },
     {
-      "id": "math.fm.induction",
-      "title": "Proof by induction",
+      "id": "math.fm.vectors2",
+      "title": "Vectors: intersections, angles and distances",
       "level": "fm",
       "group": "Further Mathematics"
     },
@@ -437,32 +455,68 @@
       "group": "Further Mathematics"
     },
     {
+      "id": "math.fm.diff",
+      "title": "Further differentiation and Maclaurin series",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.integ",
+      "title": "Further integration: hyperbolic and inverse forms",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.reduction",
+      "title": "Reduction formulae",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.rectangles",
+      "title": "Sums, rectangles and bounds",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.arclength",
+      "title": "Arc length and surface area",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.complex",
+      "title": "De Moivre's theorem and trigonometry",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.complex2",
+      "title": "Roots of unity and complex series",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.systems",
+      "title": "Three equations, three planes",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
       "id": "math.fm.matrices2",
       "title": "Eigenvalues and eigenvectors",
       "level": "fm",
       "group": "Further Mathematics"
     },
     {
-      "id": "math.fm.diff",
-      "title": "Further differentiation",
-      "level": "fm",
-      "group": "Further Mathematics"
-    },
-    {
-      "id": "math.fm.integ",
-      "title": "Further integration",
-      "level": "fm",
-      "group": "Further Mathematics"
-    },
-    {
-      "id": "math.fm.complex",
-      "title": "Complex numbers: de Moivre and roots of unity",
-      "level": "fm",
-      "group": "Further Mathematics"
-    },
-    {
       "id": "math.fm.de",
-      "title": "Differential equations",
+      "title": "First order differential equations",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.de2",
+      "title": "Second order differential equations",
       "level": "fm",
       "group": "Further Mathematics"
     },
@@ -473,20 +527,32 @@
       "group": "Further Mathematics"
     },
     {
+      "id": "math.fm.com",
+      "title": "Centres of mass",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
       "id": "math.fm.rigid",
       "title": "Equilibrium of a rigid body",
       "level": "fm",
       "group": "Further Mathematics"
     },
     {
-      "id": "math.fm.circular",
-      "title": "Circular motion",
+      "id": "math.fm.elastic",
+      "title": "Hooke's law and elastic energy",
       "level": "fm",
       "group": "Further Mathematics"
     },
     {
-      "id": "math.fm.elastic",
-      "title": "Hooke's law and elastic energy",
+      "id": "math.fm.circular",
+      "title": "Circular motion: horizontal circles",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.vertical",
+      "title": "Circular motion: vertical circles",
       "level": "fm",
       "group": "Further Mathematics"
     },
@@ -498,7 +564,13 @@
     },
     {
       "id": "math.fm.impulse",
-      "title": "Momentum and oblique impact",
+      "title": "Direct impact and restitution",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.oblique",
+      "title": "Oblique impact",
       "level": "fm",
       "group": "Further Mathematics"
     },
@@ -510,19 +582,37 @@
     },
     {
       "id": "math.fm.inference",
-      "title": "Inference with the normal and t-distributions",
+      "title": "The t-distribution: one-sample tests and intervals",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.twosample",
+      "title": "Comparing two means",
       "level": "fm",
       "group": "Further Mathematics"
     },
     {
       "id": "math.fm.chisq",
-      "title": "Chi-squared tests",
+      "title": "Chi-squared goodness of fit",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.contingency",
+      "title": "Chi-squared tests for independence",
       "level": "fm",
       "group": "Further Mathematics"
     },
     {
       "id": "math.fm.nonpar",
-      "title": "Non-parametric tests",
+      "title": "Non-parametric tests: the sign test",
+      "level": "fm",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.wilcoxon",
+      "title": "Wilcoxon tests",
       "level": "fm",
       "group": "Further Mathematics"
     },
@@ -533,14 +623,38 @@
       "group": "Further Mathematics"
     },
     {
-      "id": "math.fm.exam",
-      "title": "Further Maths papers: what each one asks",
+      "id": "math.fm.exam.fp1",
+      "title": "Further Pure 1 (Paper 1) survival guide",
       "level": "guide",
       "group": "Further Mathematics"
     },
     {
-      "id": "math.fm.mixed",
-      "title": "Mixed practice: Further Mathematics",
+      "id": "math.fm.exam.fp2",
+      "title": "Further Pure 2 (Paper 2) survival guide",
+      "level": "guide",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.exam.fm",
+      "title": "Further Mechanics (Paper 3) survival guide",
+      "level": "guide",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.exam.fs",
+      "title": "Further Probability & Statistics (Paper 4) survival guide",
+      "level": "guide",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.mixed.pure",
+      "title": "Mixed practice: Further Pure",
+      "level": "guide",
+      "group": "Further Mathematics"
+    },
+    {
+      "id": "math.fm.mixed.applied",
+      "title": "Mixed practice: Further Mechanics and Statistics",
       "level": "guide",
       "group": "Further Mathematics"
     },
@@ -569,7 +683,10 @@
       "group": "Further Mathematics"
     }
   ],
-  "aliases": {},
+  "aliases": {
+    "math.fm.exam": "math.fm.exam.fp1",
+    "math.fm.mixed": "math.fm.mixed.pure"
+  },
   "packages": [
     {
       "id": "P1",
@@ -839,6 +956,224 @@
       ],
       "widgets": [],
       "notes": "COURSE.md: Mocks and Mixed practice. Marks total 50 each; g = 10."
+    },
+    {
+      "id": "P19",
+      "title": "Further Pure 1: roots and series",
+      "chapters": [
+        "math.fm.roots",
+        "math.fm.series"
+      ],
+      "widgets": [],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P19.md."
+    },
+    {
+      "id": "P20",
+      "title": "Further Pure 1: matrices and induction",
+      "chapters": [
+        "math.fm.matrices",
+        "math.fm.transform",
+        "math.fm.induction"
+      ],
+      "widgets": [
+        "fm-matrix"
+      ],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P20.md."
+    },
+    {
+      "id": "P21",
+      "title": "Further Pure 1: curves and polar coordinates",
+      "chapters": [
+        "math.fm.rational",
+        "math.fm.graphs",
+        "math.fm.polar"
+      ],
+      "widgets": [
+        "fm-polar"
+      ],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P21.md."
+    },
+    {
+      "id": "P22",
+      "title": "Further Pure 1: vectors and planes",
+      "chapters": [
+        "math.fm.vectors",
+        "math.fm.vectors2"
+      ],
+      "widgets": [
+        "fm-planes"
+      ],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P22.md."
+    },
+    {
+      "id": "P23",
+      "title": "Further Pure 2: hyperbolic functions and calculus",
+      "chapters": [
+        "math.fm.hyperbolic",
+        "math.fm.diff",
+        "math.fm.integ"
+      ],
+      "widgets": [
+        "fm-maclaurin"
+      ],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P23.md."
+    },
+    {
+      "id": "P24",
+      "title": "Further Pure 2: reduction, bounds and arc length",
+      "chapters": [
+        "math.fm.reduction",
+        "math.fm.rectangles",
+        "math.fm.arclength"
+      ],
+      "widgets": [],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P24.md."
+    },
+    {
+      "id": "P25",
+      "title": "Further Pure 2: de Moivre and roots of unity",
+      "chapters": [
+        "math.fm.complex",
+        "math.fm.complex2"
+      ],
+      "widgets": [
+        "fm-demoivre"
+      ],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P25.md."
+    },
+    {
+      "id": "P26",
+      "title": "Further Pure 2: linear systems and eigenvectors",
+      "chapters": [
+        "math.fm.systems",
+        "math.fm.matrices2"
+      ],
+      "widgets": [],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P26.md."
+    },
+    {
+      "id": "P27",
+      "title": "Further Pure 2: differential equations",
+      "chapters": [
+        "math.fm.de",
+        "math.fm.de2"
+      ],
+      "widgets": [
+        "fm-de"
+      ],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P27.md."
+    },
+    {
+      "id": "P28",
+      "title": "Further Mechanics: projectiles and rigid bodies",
+      "chapters": [
+        "math.fm.projectiles",
+        "math.fm.com",
+        "math.fm.rigid"
+      ],
+      "widgets": [
+        "fm-topple"
+      ],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P28.md."
+    },
+    {
+      "id": "P29",
+      "title": "Further Mechanics: elastic strings and circular motion",
+      "chapters": [
+        "math.fm.elastic",
+        "math.fm.circular",
+        "math.fm.vertical"
+      ],
+      "widgets": [
+        "fm-vcircle"
+      ],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P29.md."
+    },
+    {
+      "id": "P30",
+      "title": "Further Mechanics: variable forces and impacts",
+      "chapters": [
+        "math.fm.variable",
+        "math.fm.impulse",
+        "math.fm.oblique"
+      ],
+      "widgets": [
+        "fm-impact"
+      ],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P30.md."
+    },
+    {
+      "id": "P31",
+      "title": "Further Statistics: continuous variables and t-tests",
+      "chapters": [
+        "math.fm.crv",
+        "math.fm.inference",
+        "math.fm.twosample"
+      ],
+      "widgets": [
+        "fm-tdist"
+      ],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P31.md."
+    },
+    {
+      "id": "P32",
+      "title": "Further Statistics: chi-squared tests",
+      "chapters": [
+        "math.fm.chisq",
+        "math.fm.contingency"
+      ],
+      "widgets": [
+        "fm-chisq"
+      ],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P32.md."
+    },
+    {
+      "id": "P33",
+      "title": "Further Statistics: non-parametric tests and PGFs",
+      "chapters": [
+        "math.fm.nonpar",
+        "math.fm.wilcoxon",
+        "math.fm.pgf"
+      ],
+      "widgets": [
+        "fm-pgf"
+      ],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P33.md."
+    },
+    {
+      "id": "P34",
+      "title": "Further Maths: course map and paper guides",
+      "chapters": [
+        "math.fm.overview",
+        "math.fm.exam.fp1",
+        "math.fm.exam.fp2",
+        "math.fm.exam.fm",
+        "math.fm.exam.fs"
+      ],
+      "widgets": [],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P34.md."
+    },
+    {
+      "id": "P35",
+      "title": "Further Maths: Pure mocks and mixed practice",
+      "chapters": [
+        "math.fm.mock.p1",
+        "math.fm.mock.p2",
+        "math.fm.mixed.pure"
+      ],
+      "widgets": [],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P35.md."
+    },
+    {
+      "id": "P36",
+      "title": "Further Maths: applied mocks and mixed practice",
+      "chapters": [
+        "math.fm.mock.p3",
+        "math.fm.mock.p4",
+        "math.fm.mixed.applied"
+      ],
+      "widgets": [],
+      "notes": "Read COURSE.md, FURTHER.md and packages/P36.md."
     }
   ],
   "papers": [
@@ -916,6 +1251,69 @@
         "math.s2.crv",
         "math.s2.sampling",
         "math.s2.hypothesis"
+      ]
+    },
+    {
+      "id": "FP1",
+      "title": "Further Maths Paper 1: Further Pure Mathematics 1",
+      "chapters": [
+        "math.fm.roots",
+        "math.fm.series",
+        "math.fm.matrices",
+        "math.fm.transform",
+        "math.fm.induction",
+        "math.fm.rational",
+        "math.fm.graphs",
+        "math.fm.polar",
+        "math.fm.vectors",
+        "math.fm.vectors2"
+      ]
+    },
+    {
+      "id": "FP2",
+      "title": "Further Maths Paper 2: Further Pure Mathematics 2",
+      "chapters": [
+        "math.fm.hyperbolic",
+        "math.fm.diff",
+        "math.fm.integ",
+        "math.fm.reduction",
+        "math.fm.rectangles",
+        "math.fm.arclength",
+        "math.fm.complex",
+        "math.fm.complex2",
+        "math.fm.systems",
+        "math.fm.matrices2",
+        "math.fm.de",
+        "math.fm.de2"
+      ]
+    },
+    {
+      "id": "FM",
+      "title": "Further Maths Paper 3: Further Mechanics",
+      "chapters": [
+        "math.fm.projectiles",
+        "math.fm.com",
+        "math.fm.rigid",
+        "math.fm.elastic",
+        "math.fm.circular",
+        "math.fm.vertical",
+        "math.fm.variable",
+        "math.fm.impulse",
+        "math.fm.oblique"
+      ]
+    },
+    {
+      "id": "FS",
+      "title": "Further Maths Paper 4: Further Probability & Statistics",
+      "chapters": [
+        "math.fm.crv",
+        "math.fm.inference",
+        "math.fm.twosample",
+        "math.fm.chisq",
+        "math.fm.contingency",
+        "math.fm.nonpar",
+        "math.fm.wilcoxon",
+        "math.fm.pgf"
       ]
     }
   ]
