@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-20 · WRITE P19 · math.fm.series (3982 words, 17 eg, 24 try, 7 quiz, 59 marks; check and phone pass; one plot, no widget); roots untouched. Reviewer: board box, the MF19 not-listed claim, forward link to math.fm.induction.
+Last: 2026-11-20 · WRITE P20 · math.fm.matrices, math.fm.transform, math.fm.induction (check + phone pass); widget fm-matrix (probes clean light/dark/phone/bad attributes; data-show=eigen built for P26; Node logic test data/test_fm_matrix.js). Reviewer: dark look at the 2 embeds in transform, keyboard use of Show A-1; board boxes Edexcel 9FM0 only.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -24,8 +24,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P17: reviewed
 - P18: reviewed
 - P19: written 2026-11-20
-- P20: writing 2026-11-20
-- P21: open
+- P20: written 2026-11-20
+- P21: writing 2026-11-20
 - P22: open
 - P23: open
 - P24: open
