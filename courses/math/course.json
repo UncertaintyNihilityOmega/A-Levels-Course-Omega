@@ -9,6 +9,7 @@
   "desc": "Pure, Statistics and Mechanics from counting to calculus",
   "lead": true,
   "proofBadge": "Not examined in 9709",
+  "proofBadges": { "fm": "Not examined in 9231" },
   "chapters": [
     {
       "id": "math.overview",
@@ -386,301 +387,301 @@
       "id": "math.fm.overview",
       "title": "Further Mathematics: the course map",
       "level": "guide",
-      "group": "Further Mathematics"
+      "group": "Further Mathematics (9231)"
     },
     {
       "id": "math.fm.roots",
       "title": "Roots of polynomial equations",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 1"
     },
     {
       "id": "math.fm.series",
       "title": "Summation of series",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 1"
     },
     {
       "id": "math.fm.matrices",
       "title": "Matrices: algebra, determinants and inverses",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 1"
     },
     {
       "id": "math.fm.transform",
       "title": "Matrices as transformations",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 1"
     },
     {
       "id": "math.fm.induction",
       "title": "Proof by induction",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 1"
     },
     {
       "id": "math.fm.rational",
       "title": "Rational functions and their graphs",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 1"
     },
     {
       "id": "math.fm.graphs",
       "title": "Graphs related to y = f(x)",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 1"
     },
     {
       "id": "math.fm.polar",
       "title": "Polar coordinates",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 1"
     },
     {
       "id": "math.fm.vectors",
       "title": "Vectors: the vector product and planes",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 1"
     },
     {
       "id": "math.fm.vectors2",
       "title": "Vectors: intersections, angles and distances",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 1"
     },
     {
       "id": "math.fm.hyperbolic",
       "title": "Hyperbolic functions",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 2"
     },
     {
       "id": "math.fm.diff",
       "title": "Further differentiation and Maclaurin series",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 2"
     },
     {
       "id": "math.fm.integ",
       "title": "Further integration: hyperbolic and inverse forms",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 2"
     },
     {
       "id": "math.fm.reduction",
       "title": "Reduction formulae",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 2"
     },
     {
       "id": "math.fm.rectangles",
       "title": "Sums, rectangles and bounds",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 2"
     },
     {
       "id": "math.fm.arclength",
       "title": "Arc length and surface area",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 2"
     },
     {
       "id": "math.fm.complex",
       "title": "De Moivre's theorem and trigonometry",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 2"
     },
     {
       "id": "math.fm.complex2",
       "title": "Roots of unity and complex series",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 2"
     },
     {
       "id": "math.fm.systems",
       "title": "Three equations, three planes",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 2"
     },
     {
       "id": "math.fm.matrices2",
       "title": "Eigenvalues and eigenvectors",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 2"
     },
     {
       "id": "math.fm.de",
       "title": "First order differential equations",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 2"
     },
     {
       "id": "math.fm.de2",
       "title": "Second order differential equations",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Pure Mathematics 2"
     },
     {
       "id": "math.fm.projectiles",
       "title": "Projectiles",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Mechanics"
     },
     {
       "id": "math.fm.com",
       "title": "Centres of mass",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Mechanics"
     },
     {
       "id": "math.fm.rigid",
       "title": "Equilibrium of a rigid body",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Mechanics"
     },
     {
       "id": "math.fm.elastic",
       "title": "Hooke's law and elastic energy",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Mechanics"
     },
     {
       "id": "math.fm.circular",
       "title": "Circular motion: horizontal circles",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Mechanics"
     },
     {
       "id": "math.fm.vertical",
       "title": "Circular motion: vertical circles",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Mechanics"
     },
     {
       "id": "math.fm.variable",
       "title": "Linear motion under a variable force",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Mechanics"
     },
     {
       "id": "math.fm.impulse",
       "title": "Direct impact and restitution",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Mechanics"
     },
     {
       "id": "math.fm.oblique",
       "title": "Oblique impact",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Mechanics"
     },
     {
       "id": "math.fm.crv",
       "title": "Continuous random variables",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Probability and Statistics"
     },
     {
       "id": "math.fm.inference",
       "title": "The t-distribution: one-sample tests and intervals",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Probability and Statistics"
     },
     {
       "id": "math.fm.twosample",
       "title": "Comparing two means",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Probability and Statistics"
     },
     {
       "id": "math.fm.chisq",
       "title": "Chi-squared goodness of fit",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Probability and Statistics"
     },
     {
       "id": "math.fm.contingency",
       "title": "Chi-squared tests for independence",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Probability and Statistics"
     },
     {
       "id": "math.fm.nonpar",
       "title": "Non-parametric tests: the sign test",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Probability and Statistics"
     },
     {
       "id": "math.fm.wilcoxon",
       "title": "Wilcoxon tests",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Probability and Statistics"
     },
     {
       "id": "math.fm.pgf",
       "title": "Probability generating functions",
       "level": "fm",
-      "group": "Further Mathematics"
+      "group": "Further Probability and Statistics"
     },
     {
       "id": "math.fm.exam.fp1",
       "title": "Further Pure 1 (Paper 1) survival guide",
       "level": "guide",
-      "group": "Further Mathematics"
+      "group": "Further Maths exam preparation"
     },
     {
       "id": "math.fm.exam.fp2",
       "title": "Further Pure 2 (Paper 2) survival guide",
       "level": "guide",
-      "group": "Further Mathematics"
+      "group": "Further Maths exam preparation"
     },
     {
       "id": "math.fm.exam.fm",
       "title": "Further Mechanics (Paper 3) survival guide",
       "level": "guide",
-      "group": "Further Mathematics"
+      "group": "Further Maths exam preparation"
     },
     {
       "id": "math.fm.exam.fs",
       "title": "Further Probability & Statistics (Paper 4) survival guide",
       "level": "guide",
-      "group": "Further Mathematics"
+      "group": "Further Maths exam preparation"
     },
     {
       "id": "math.fm.mixed.pure",
       "title": "Mixed practice: Further Pure",
       "level": "guide",
-      "group": "Further Mathematics"
+      "group": "Further Maths exam preparation"
     },
     {
       "id": "math.fm.mixed.applied",
       "title": "Mixed practice: Further Mechanics and Statistics",
       "level": "guide",
-      "group": "Further Mathematics"
+      "group": "Further Maths exam preparation"
     },
     {
       "id": "math.fm.mock.p1",
       "title": "Mock Paper 1: Further Pure Mathematics 1",
       "level": "mock",
-      "group": "Further Mathematics"
+      "group": "Further Maths exam preparation"
     },
     {
       "id": "math.fm.mock.p2",
       "title": "Mock Paper 2: Further Pure Mathematics 2",
       "level": "mock",
-      "group": "Further Mathematics"
+      "group": "Further Maths exam preparation"
     },
     {
       "id": "math.fm.mock.p3",
       "title": "Mock Paper 3: Further Mechanics",
       "level": "mock",
-      "group": "Further Mathematics"
+      "group": "Further Maths exam preparation"
     },
     {
       "id": "math.fm.mock.p4",
       "title": "Mock Paper 4: Further Probability and Statistics",
       "level": "mock",
-      "group": "Further Mathematics"
+      "group": "Further Maths exam preparation"
     }
   ],
   "aliases": {

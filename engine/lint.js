@@ -1,9 +1,9 @@
 // lint.js — chapter structure checklist (STYLE.md) and figure rules. Returns { errors, notes }.
 // Errors break the page; notes are checklist items a reviewer will look at (fix them unless there is a reason).
 'use strict';
-const { splitMarks } = require('./lib');
+const { splitMarks, sumMarks, markRe } = require('./lib');
 
-const TOPIC = new Set(['pre', 'as', 'a2', 'ext']);
+const TOPIC = new Set(['pre', 'as', 'a2', 'ext', 'fm']);
 const ESSAY = new Set(['bus', 'econ', 'other', 'hist']);
 
 function blocks(text, type) {
@@ -40,7 +40,7 @@ function without(text, type) {
 /** The numbers a question gives (as text: "9.81", "120"). Left out: marks, link targets, single digits (part labels,
  *  powers, small counts) and what follows them in a number, so only the data of the question is compared. */
 function givenNumbers(s) {
-  s = s.replace(/\[[^\]]*\bmarks?\]/gi, ' ').replace(/\[(?:M|A|B|C|E)\d\]/g, ' ').replace(/\]\(#[^)]*\)/g, ' ').replace(/\(#[^)]*\)/g, ' ')
+  s = s.replace(/\[[^\]]*\bmarks?\]/gi, ' ').replace(markRe(), ' ').replace(/\]\(#[^)]*\)/g, ' ').replace(/\(#[^)]*\)/g, ' ')
     .replace(/(?:\\times|×)\s*10(?!\d)/g, ' ').replace(/[\^_]\{?-?\d+\}?/g, ' ');   // not the 10 of standard form, nor powers and subscripts
   return new Set((s.match(/\d+(?:[.,]\d+)*/g) || []).map(n => n.replace(/,/g, '')).filter(n => n.replace('.', '').length > 1));
 }
@@ -89,7 +89,6 @@ function lintChapter(ch, text, ctx = {}) {
 
   // marks: a "[n marks]" on a try question or a worked example must equal the [M1] [A1] [B1] … shown in its answer
   const marked = splitMarks(text);
-  const sumMarks = (s) => [...s.matchAll(/\[(?:M|A|B|C|E)(\d)\]/g)].reduce((a, x) => a + +x[1], 0);
   for (const b of blocks(marked, 'try')) for (const it of b.split(/\n(?=Q:)/)) {
     const q = it.match(/^Q:\s*\[(\d+)(?:\s*marks?)?\]/) || it.match(/^Q:[^\n]*?\[(\d+) marks?\]\s*$/m);
     const shown = sumMarks(it.split(/\nA:/)[1] || '');
@@ -121,7 +120,7 @@ function lintChapter(ch, text, ctx = {}) {
     if (!blocks(text, 'why').length) notes.push('start with a :::why box');
     if (!blocks(text, 'def').length) notes.push('no :::def cards (define the key terms)');
     if (eg.length < 3) notes.push(`${eg.length} worked example(s): aim for at least 3, graded easy → exam style`);
-    else if (!ESSAY.has(course) && !eg.some(b => /\[(M|A|B)\d\]/.test(b))) notes.push('no exam-style worked example with [M1] [A1] [B1] marks');
+    else if (!ESSAY.has(course) && !eg.some(b => /\[D?(M|A|B)\d/.test(b))) notes.push('no exam-style worked example with [M1] [A1] [B1] marks');
     if (tries < 5) notes.push(`${tries} :::try question(s): aim for at least 5, easy → exam style`);
     if (quiz < 3) notes.push(`${quiz} :::quiz question(s): aim for at least 3`);
     if (!blocks(text, 'recap').length) notes.push('end with a :::recap box');

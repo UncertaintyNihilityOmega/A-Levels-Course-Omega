@@ -321,6 +321,7 @@ math { font-family: var(--f-math); font-size: 1.08em; }
   display: inline-block; font-family: var(--f-ui); font-size: .8rem; font-weight: 800; color: var(--red); line-height: 1.2;
   padding: 1px 5px 0; border: 1.5px solid transparent; border-radius: 5px; transform: rotate(-4deg); white-space: nowrap;
 }
+.mk-ft { font-size: .78em; font-weight: 700; margin-left: 1px; }
 .mk-B { border-color: color-mix(in srgb, var(--red) 55%, transparent); border-radius: 40% 50% 45% 50%; }
 .mks { display: inline-flex; gap: 1px; vertical-align: .05em; margin: 0 2px; }
 /* in a worked example the marks leave the text and sit in the margin column, level with their line */

@@ -82,7 +82,11 @@ function fixTables(s) {
 }
 
 // "[M1 A1]" is written as shorthand for "[M1] [A1]"; the marks code only knows the separate form.
-const splitMarks = (s) => s.replace(/\[([MABCE]\d(?:[ ,]+[MABCE]\d)+)\]/g, (m, x) => x.split(/[ ,]+/).map(k => `[${k}]`).join(' '));
+// A mark token is [M1] [A1] [B1] [C1] [E1], optionally dependent ([DM1]) or follow-through ([A1 FT], [B1ft]).
+const MARK_TOKEN = String.raw`\[D?[MABCE]\d(?: ?(?:FT|ft))?\]`;
+const markRe = (flags = 'g') => new RegExp(MARK_TOKEN, flags);
+const sumMarks = (s) => [...String(s).matchAll(/\[D?[MABCE](\d)(?: ?(?:FT|ft))?\]/g)].reduce((a, x) => a + +x[1], 0);
+const splitMarks = (s) => s.replace(/\[(D?[MABCE]\d(?:[ ,]+D?[MABCE]\d)+)\]/g, (m, x) => x.split(/[ ,]+/).map(k => `[${k}]`).join(' '));
 
 // Split inline TeX after each relation at the top level (outside braces, brackets, \left…\right and environments).
 // Short formulas and anything with unbalanced brackets (e.g. the interval [0, 1)) stay whole.
@@ -270,8 +274,8 @@ function createRenderer(opts = {}) {
   }
   // Examiner marks: a run like "[M1] [A1]" becomes one group. A group written after display maths moves in front
   // of it, so the page's examiner margin can show the marks level with the line that earns them.
-  const addMarks = (html) => html.replace(/(@@D\d+@@)?\s*((?:\[(?:M|A|B|C|E)\d\]\s*)+)/g, (m, disp, run) => {
-    const group = `<span class="mks">${[...run.matchAll(/\[(M|A|B|C|E)(\d)\]/g)].map(x => `<span class="mk mk-${x[1]}">${x[1]}${x[2]}</span>`).join('')}</span>`;
+  const addMarks = (html) => html.replace(new RegExp(String.raw`(@@D\d+@@)?\s*((?:${MARK_TOKEN}\s*)+)`, 'g'), (m, disp, run) => {
+    const group = `<span class="mks">${[...run.matchAll(/\[(D?)([MABCE])(\d)( ?(?:FT|ft))?\]/g)].map(x => `<span class="mk mk-${x[2]}">${x[1]}${x[2]}${x[3]}${x[4] ? '<span class="mk-ft">ft</span>' : ''}</span>`).join('')}</span>`;
     return disp ? group + disp : ' ' + group + (/\s$/.test(run) ? ' ' : '');
   });
   const mdInline = (s) => md.renderInline(s);
@@ -421,7 +425,7 @@ function createRenderer(opts = {}) {
           st.GLOSSARY.push({ t: subMath(t), d: subMath(subBlocks(d)), c: st.chapter, s: st.subject });
           html = `<dl class="def"><dt>${t}</dt><dd>${d}</dd></dl>`;
         } else if (type === 'eg') {
-          const total = [...inner.matchAll(/\[(?:M|A|B|C|E)(\d)\]/g)].reduce((a, m) => a + +m[1], 0);
+          const total = sumMarks(inner);
           const marks = total ? `<span class="eg-m">${total} mark${total === 1 ? '' : 's'}</span>` : '';
           html = `<div class="eg"><div class="eg-h"><span class="eg-l">Worked example</span>${title ? `<span class="eg-t">${mdInline(title)}</span>` : ''}${marks}</div><div class="eg-b">${addMarks(processBlocks(inner))}</div></div>`;
         } else if (type === 'try' && /\bmock\b/.test(st.level)) {
@@ -436,7 +440,7 @@ function createRenderer(opts = {}) {
         } else if (type === 'proof') {
           const ex = /^examinable\b/i.test(title);
           const t = title.replace(/^examinable\b\s*/i, '');
-          const badge = ex ? '' : `<span class="proof-badge">${escapeHtml(opts.proofBadge ? opts.proofBadge(st.subject) : 'Not examined')}</span>`;
+          const badge = ex ? '' : `<span class="proof-badge">${escapeHtml(opts.proofBadge ? opts.proofBadge(st.subject, st.level) : 'Not examined')}</span>`;
           html = `<details class="proof${ex ? ' proof-ex' : ''}"><summary><span class="proof-l">Why it's true</span>${t ? `<span class="proof-t">${mdInline(t)}</span>` : ''}${badge}</summary><div class="proof-b">${addMarks(processBlocks(inner))}</div></details>`;
         } else if (type === 'try') {
           html = `<div class="try"><div class="try-h"><span class="try-l">Try it yourself</span>${title ? `<span class="try-t">${mdInline(title)}</span>` : ''}</div>${inQuestion(() => renderTry(inner))}</div>`;
@@ -542,4 +546,4 @@ function createRenderer(opts = {}) {
   return { st, renderFile, inline, extractMath, subMath, mdInline, escapeHtml, stripTags };
 }
 
-module.exports = { createRenderer, escapeHtml, stripTags, splitMarks, splitRelations, splitCe, fixIsotopes, CALLOUTS, BLOCK_TYPES, LINK_KINDS };
+module.exports = { createRenderer, escapeHtml, stripTags, splitMarks, sumMarks, markRe, splitRelations, splitCe, fixIsotopes, CALLOUTS, BLOCK_TYPES, LINK_KINDS };

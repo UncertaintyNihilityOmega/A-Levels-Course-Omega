@@ -41,7 +41,7 @@ const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(
  * returns: { errors, warnings, files: { relPath: string }, chapters, stats }
  */
 function buildSite(sources, opts) {
-  const R = createRenderer({ proofBadge: (sid) => ((sources.find(s => s.id === sid) || {}).json || {}).proofBadge || 'Not examined' });
+  const R = createRenderer({ proofBadge: (sid, level) => { const j = (sources.find(s => s.id === sid) || {}).json || {}; const lv = String(level || '').split(/[ ,]+/).find(l => (j.proofBadges || {})[l]); return (lv && j.proofBadges[lv]) || j.proofBadge || 'Not examined'; } });
   const { st } = R;
   const errors = st.errors, warnings = st.warnings;
   const order = opts.order || [];

@@ -11,8 +11,8 @@ every outcome listed for your chapter, and nothing marked "Not:" except in a cle
   (foundations), `math.p1.*`, `math.p3.*`, `math.m.*`, `math.s1.*`, `math.s2.*`, guides, mixed practice, mocks.
 - P2 and P3 share chapters (`math.p3.*`): the AS-level parts come first; anything that is Paper 3 only sits under a
   heading ending "(Paper 3 only)". Chapters at level `a2` are wholly P3/P6.
-- **Further Mathematics 9231** is an extension inside this course: chapters `math.fm.*`, group "Further
-  Mathematics", `@level fm`, packages P19 onwards. They build on the Maths chapters: link them
+- **Further Mathematics 9231** is an extension inside this course: chapters `math.fm.*`, sidebar groups
+  per 9231 paper (FURTHER.md), `@level fm`, packages P19 onwards. They build on the Maths chapters: link them
   (`[Complex numbers](#math.p3.complex)`) instead of re-teaching. Its plan and rules are in FURTHER.md (the
   extension's LEAD writes them); the rules in this file apply to it too unless FURTHER.md says otherwise.
 - Other boards go in one `:::board` box per chapter, 2–6 lines, never in the first person. Only state differences

@@ -9,7 +9,9 @@ kit/STYLE.md, the gold chapter **math.fm.roots** and its own `packages/Pn.md`.
 - Cambridge International AS & A Level Further Mathematics **9231**, syllabus 2026–2027 (version 5). The 2028–2030
   syllabus has the same papers and content (FACTS.md), so the chapters stay valid.
 - Four papers: FP1 (Paper 1, 2 h, 75), FP2 (Paper 2, 2 h, 75), FM (Paper 3, 1 h 30, 50), FS (Paper 4, 1 h 30, 50).
-  In course.json they are `FP1`, `FP2`, `FM`, `FS`; packages P19–P36; group "Further Mathematics"; topic chapters
+  In course.json they are `FP1`, `FP2`, `FM`, `FS`; packages P19–P36; sidebar groups "Further Mathematics (9231)" (the
+  overview), one per paper ("Further Pure Mathematics 1", "Further Pure Mathematics 2", "Further Mechanics",
+  "Further Probability and Statistics") and "Further Maths exam preparation"; topic chapters
   `@level fm`, guides `guide`, mocks `mock`.
 - Readers have finished (or are finishing) 9709: FP1 and FP2 assume P1 and P3, FM assumes P4, FS assumes P5 and P6.
   `math.further` (the 9709 course's one-chapter tour of Further Maths) stays as it is; math.fm.overview links it.
@@ -40,9 +42,8 @@ kit/STYLE.md, the gold chapter **math.fm.roots** and its own `packages/Pn.md`.
   (e.g. why the roots-and-coefficients relations hold, the derivation of the polar area formula). Every proof's
   algebra is checked numerically in `checks/<id>.py`.
 - **Marks** as in 9231 mark schemes: M1, A1, B1, A1 FT (follow-through) and DM1 (a method mark that depends on an
-  earlier M). `check` counts only M, A and B tokens, so write a DM1 as `[M1]` with "(dependent)" after it or
-  a words note in the line before, and an A1 FT as `[A1] (FT)` (asked for in REQUESTS.md, 20 Nov 2026; switch to `[DM1]` / `[A1 FT]` only when the Organizer says
-  they work). The gold chapter explains both once.
+  earlier M). Write them as tokens `[DM1]`, `[A1 FT]`, `[B1 FT]` (the engine counts and shows them since 20 Nov
+  2026); `[M1] (dependent)` and `[A1] (FT)`, used before then, are also correct. The gold chapter explains both once.
 - **Papers print MF19 and nothing else.** FACTS.md lists what MF19 gives a 9231 candidate (sums of r, r², r³,
   Maclaurin series, hyperbolic identities and log forms, inverse trig and hyperbolic derivatives and integrals,
   t = tan ½x, trajectory, Hooke's law and EPE, circular acceleration, centres of mass, pooled variance, PGF mean and

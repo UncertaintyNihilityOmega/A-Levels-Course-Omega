@@ -133,7 +133,8 @@ an examiner's margin level with that line, and the example's header shows the to
 Bold a key word the first time if it has no `:::def` card.
 - Write marks as tokens: `[M1] [A1]` (or the shorthand `[M1 A1]`). Never a note inside the brackets
   ("[M1 for two correct]") and never inside maths (`\(… [\text{M1}]\)`): those show as plain text. Put a note
-  after the marks in round brackets: `[M1] [A1] (M1 for any two correct)`.
+  after the marks in round brackets: `[M1] [A1] (M1 for any two correct)`. Dependent and follow-through marks are
+  tokens too: `[DM1]`, `[A1 FT]`, `[B1 FT]`.
 - `check` adds up the marks in every answer and worked example and fails when they differ from its `[n marks]`.
 - Spot-the-error marking: a wrong formula or method scores M0 (and so A0); a slip inside a right method keeps
   the M1. Name each mark once, on the line that earns or loses it.
