@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-20 · WRITE P24 · math.fm.reduction (3898 words), math.fm.rectangles (4179), math.fm.arclength (4061): check and phone pass, no notes; no new widget (area widget embedded once in rectangles, probe clean); hand figures: rectangles x2, arclength chord, catenary plot (shots viewed); data/fm-rectangles-fig.py, data/fm-arclength-fig.py. Reviewer: board boxes say 9231 only (other boards' placement unverified); arc/surface formulas not on MF19 per FACTS; Q-chain: reduction -> rectangles -> arclength -> math.fm.complex.
+Last: 2026-11-20 · WRITE P25 · math.fm.complex (4143 words, 7 Exam style examples) and math.fm.complex2 (4468 words, 6 Exam style): check and phone pass, no notes; widget fm-demoivre (modes powers and roots; probe clean light/dark/phone/bad attributes; node test vs cmath data/test_fm_demoivre.js); hand figures: unit circle z,z2,z3 and sixth roots of unity (data/fm-complex-fig.py, shots viewed). Reviewer: board boxes name UK Further Maths generally (nth roots core); MF19 gives GP sums and binomial, not de Moivre; complex2 warm-up draws on fm.roots; Next of complex2 is math.fm.systems (P26).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -29,9 +29,9 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P22: reviewed 2026-11-20
 - P23: written 2026-11-20
 - P24: written 2026-11-20
-- P25: open
-- P26: open
-- P27: open
+- P25: written 2026-11-20
+- P26: written 2026-11-20
+- P27: writing 2026-11-20
 - P28: open
 - P29: open
 - P30: open
