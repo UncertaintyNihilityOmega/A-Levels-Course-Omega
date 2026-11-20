@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-20 · WRITE P21 · math.fm.rational (4934 w), math.fm.graphs (5110 w), math.fm.polar (4569 w): check and phone pass; widget fm-polar (probe clean light/dark/phone/bad attrs/zero size; Node tests data/fm-polar-test.js and fm-polar-ui-test.js). Reviewer: polar follows the r>=0 convention literally (r=cos2t is two petals, r=1+2cos t outer loop only); board boxes name AQA 7367 (rational) and Edexcel 9FM0 (polar); graphs has none; look at fm-polar in dark mode and with the keyboard; notes in packages/P21.md
+Last: 2026-11-20 · WRITE P22 · math.fm.vectors (about 4400 words) and math.fm.vectors2 (about 4800 words); widget fm-planes (planes, line, point; pairs and three-plane verdicts; Node-tested logic in data/test_fm_planes.js); check and phone pass; reviewer: look at the fm-planes widget in dark mode and the four hand SVG figures
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -26,8 +26,8 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P19: written 2026-11-20
 - P20: written 2026-11-20
 - P21: written 2026-11-20
-- P22: open
-- P23: open
+- P22: written 2026-11-20
+- P23: writing 2026-11-20
 - P24: open
 - P25: open
 - P26: open
