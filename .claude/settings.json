@@ -7,7 +7,7 @@
           {
             "type": "command",
             "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/course-guard.js\"",
-            "timeout": 10
+            "timeout": 30
           }
         ]
       }
