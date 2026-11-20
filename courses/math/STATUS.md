@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-20 · WRITE P23 · math.fm.hyperbolic (3717 words), math.fm.diff (3817), math.fm.integ (3459); check and phone pass; widget fm-maclaurin (probed light/dark/phone/bad attributes; coefficients node-tested in data/fm-maclaurin-test.js). Reviewer: chapters are slightly shorter than the gold by kit word count (maths is not counted); plots with poles (coth, cosech) and fm-maclaurin keyboard use to be looked at.
+Last: 2026-11-20 · WRITE P24 · math.fm.reduction (3898 words), math.fm.rectangles (4179), math.fm.arclength (4061): check and phone pass, no notes; no new widget (area widget embedded once in rectangles, probe clean); hand figures: rectangles x2, arclength chord, catenary plot (shots viewed); data/fm-rectangles-fig.py, data/fm-arclength-fig.py. Reviewer: board boxes say 9231 only (other boards' placement unverified); arc/surface formulas not on MF19 per FACTS; Q-chain: reduction -> rectangles -> arclength -> math.fm.complex.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -23,12 +23,12 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P16: reviewed
 - P17: reviewed
 - P18: reviewed
-- P19: written 2026-11-20
-- P20: written 2026-11-20
-- P21: written 2026-11-20
-- P22: written 2026-11-20
+- P19: reviewed 2026-11-20
+- P20: reviewed 2026-11-20
+- P21: reviewed 2026-11-20
+- P22: reviewed 2026-11-20
 - P23: written 2026-11-20
-- P24: writing 2026-11-20
+- P24: written 2026-11-20
 - P25: open
 - P26: open
 - P27: open
