@@ -24,4 +24,4 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P17: reviewed
 - P18: reviewed
 - READER: done 2026-11-13
-- FINAL: done 2026-10-13
+- FINAL: open
