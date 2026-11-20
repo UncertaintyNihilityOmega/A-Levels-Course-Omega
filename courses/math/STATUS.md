@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-20 · LEAD · Further Maths 9231 extension planned: FACTS.md 9231 outcomes, MF19 and June 2025 front pages; 50 math.fm chapters in P19-P36 with papers FP1/FP2/FM/FS; FURTHER.md rules and links; packages/P19-P36.md; gold chapter math.fm.roots (4016 words, check and phone pass)
+Last: 2026-11-20 · WRITE P19 · math.fm.series (3982 words, 17 eg, 24 try, 7 quiz, 59 marks; check and phone pass; one plot, no widget); roots untouched. Reviewer: board box, the MF19 not-listed claim, forward link to math.fm.induction.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -23,7 +23,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P16: reviewed
 - P17: reviewed
 - P18: reviewed
-- P19: writing 2026-11-20
+- P19: written 2026-11-20
 - P20: writing 2026-11-20
 - P21: open
 - P22: open
