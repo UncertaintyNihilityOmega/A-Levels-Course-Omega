@@ -189,16 +189,18 @@ eq("0.707 * 1.65", sf(0.707 * 1.65, 3), 1.17)
 eq("area exam 2", area(r2, 0, 1), (exp(2) + 1) / 8, 1e-8)
 eq("parts", simpson(lambda t: t * exp(2 * t), 0, 1), 0.5 * exp(2) - 0.25 * exp(2) + 0.25, 1e-8)
 
-# ---- exam example 3: circle 4cos t and line 3 sec t
-eq("meets", 4 * cos(pi / 6), 3 / cos(pi / 6), 1e-12)
-eq("r", 4 * cos(pi / 6), 2 * sqrt(3), 1e-12)
-assert abs(cos(pi / 6) ** 2 - 0.75) < 1e-12
-A3 = 2 * 0.5 * simpson(lambda t: 16 * cos(t) ** 2 - 9 / cos(t) ** 2, 0, pi / 6)
-eq("segment 3", A3, 4 * pi / 3 - sqrt(3), 1e-8)
-eq("anti", 8 * (pi / 6) + 4 * sin(pi / 3) - 9 * tan(pi / 6), 4 * pi / 3 + 2 * sqrt(3) - 3 * sqrt(3), 1e-12)
-eq("9 tan", 9 * tan(pi / 6), 3 * sqrt(3), 1e-12)
-eq("geometry", 0.5 * 4 * (2 * pi / 3 - sqrt(3) / 2), 4 * pi / 3 - sqrt(3), 1e-12)
-# circle centre (2,0) radius 2, line x=3 at distance 1
+# ---- exam example 3: circle 8cos t and line 2 sec t (region right of the line, containing the centre)
+eq("meets", 8 * cos(pi / 3), 2 / cos(pi / 3), 1e-12)
+eq("r", 8 * cos(pi / 3), 4, 1e-12)
+assert abs(cos(pi / 3) ** 2 - 0.25) < 1e-12
+A3 = 2 * 0.5 * simpson(lambda t: 64 * cos(t) ** 2 - 4 / cos(t) ** 2, 0, pi / 3)
+eq("region 3", A3, 32 * pi / 3 + 4 * sqrt(3), 1e-7)
+eq("anti", 32 * (pi / 3) + 16 * sin(2 * pi / 3) - 4 * tan(pi / 3), 32 * pi / 3 + 8 * sqrt(3) - 4 * sqrt(3), 1e-12)
+eq("4 tan", 4 * tan(pi / 3), 4 * sqrt(3), 1e-12)
+eq("16 sin", 16 * sin(2 * pi / 3), 8 * sqrt(3), 1e-12)
+eq("geometry", 16 * pi - 0.5 * 16 * (2 * pi / 3 - sqrt(3) / 2), 32 * pi / 3 + 4 * sqrt(3), 1e-12)
+# circle centre (4,0) radius 4, line x=2 at distance 2 from the centre (cos alpha = 1/2); differs from the earlier r=2, r=sec example
+assert abs(A3 - (4 * pi / 3 - sqrt(3))) > 1
 assert abs(2 * acos(1 / 2) - 2 * pi / 3) < 1e-12
 
 # ---- spot the error

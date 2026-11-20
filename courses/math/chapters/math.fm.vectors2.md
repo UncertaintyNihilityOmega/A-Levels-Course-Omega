@@ -57,19 +57,6 @@ The \(t\) terms cancel and the equation is true for every \(t\): \(l\) lies in \
 A line is parallel to a plane when its direction is **perpendicular to the normal**: \(\mathbf{b}\cdot\mathbf{n} = 0\). A line with \(\mathbf{b} \times \mathbf{n} = \mathbf{0}\) is perpendicular to the plane, which is a different case. And "parallel" is only half the answer: say whether the line is in the plane or outside it.
 :::
 
-:::eg (Exam style) The line \(l\) has equation \(\mathbf{r} = \begin{pmatrix}2\\0\\-1\end{pmatrix} + t\begin{pmatrix}1\\2\\-1\end{pmatrix}\) and the plane \(\Pi\) has equation \(x - 2y + 3z = 5\). (a) Find the coordinates of the point where \(l\) meets \(\Pi\). (b) Find the acute angle between \(l\) and \(\Pi\).
-**(a)** A general point of \(l\) is \((2 + t,\ 2t,\ -1 - t)\). [M1]
-Substitute into the plane:
-\[(2 + t) - 2(2t) + 3(-1 - t) = 5\] [M1]
-\[-1 - 6t = 5, \quad t = -1\] [A1]
-The point is \((1, -2, 0)\). [A1]
-
-**(b)** The angle \(\varphi\) between a line and a plane comes from the formula developed in the next section, \(\sin\varphi = \dfrac{|\mathbf{b}\cdot\mathbf{n}|}{|\mathbf{b}||\mathbf{n}|}\). Here \(\mathbf{b}\cdot\mathbf{n} = 1 - 4 - 3 = -6\), \(|\mathbf{b}| = \sqrt6\) and \(|\mathbf{n}| = \sqrt{14}\):
-\[\sin\varphi = \frac{6}{\sqrt6\sqrt{14}}\] [M1]
-\[= 0.6547\] [A1]
-\[\varphi = 40.9^\circ\] [A1]
-:::
-
 ## The foot of the perpendicular and the distance from a plane
 
 The shortest distance from a point \(P\) to a plane is along the line through \(P\) perpendicular to the plane. That line has direction \(\mathbf{n}\), the normal, so it is easy to write down. Where it meets the plane is the **foot of the perpendicular**.
@@ -172,10 +159,23 @@ The line is steep against the plane, close to perpendicular, which fits the larg
 For the angle between a line and a plane the scalar product goes into \(\sin\varphi\). Using \(\cos\varphi = \dfrac{|\mathbf{b}\cdot\mathbf{n}|}{|\mathbf{b}||\mathbf{n}|}\) gives the angle with the **normal**, the complement. In the example it would give \(10.9^\circ\) instead of \(79.1^\circ\). A quick sense check: a line almost along the normal makes a large angle with the plane.
 :::
 
-Here is the line and plane of that example. Look at the readout for the angle, then change the direction numbers of the line so that \(\mathbf{b}\cdot\mathbf{n}\) gets smaller: the angle falls, and it reaches \(0^\circ\) when the line becomes parallel to the plane (try the direction \(1, -1, 1\), which is perpendicular to the normal \((3, 1, -2)\)).
+Here is the line and plane of the worked example above. Look at the readout for the angle, then change the direction numbers of the line so that \(\mathbf{b}\cdot\mathbf{n}\) gets smaller: the angle falls, and it reaches \(0^\circ\) when the line becomes parallel to the plane (try the direction \(1, -1, 1\), which is perpendicular to the normal \((3, 1, -2)\)).
 
 :::html
 <div class="widget" data-w="fm-planes" data-planes="3,1,-2,8" data-line="1,0,2|2,1,-1"></div>
+:::
+
+:::eg (Exam style) The line \(l\) has equation \(\mathbf{r} = \begin{pmatrix}2\\0\\-1\end{pmatrix} + t\begin{pmatrix}1\\2\\-1\end{pmatrix}\) and the plane \(\Pi\) has equation \(x - 2y + 3z = 5\). (a) Find the coordinates of the point where \(l\) meets \(\Pi\). (b) Find the acute angle between \(l\) and \(\Pi\).
+**(a)** A general point of \(l\) is \((2 + t,\ 2t,\ -1 - t)\). [M1]
+Substitute into the plane:
+\[(2 + t) - 2(2t) + 3(-1 - t) = 5\] [M1]
+\[-1 - 6t = 5, \quad t = -1\] [A1]
+The point is \((1, -2, 0)\). [A1]
+
+**(b)** Use \(\sin\varphi = \dfrac{|\mathbf{b}\cdot\mathbf{n}|}{|\mathbf{b}||\mathbf{n}|}\). Here \(\mathbf{b}\cdot\mathbf{n} = 1 - 4 - 3 = -6\), \(|\mathbf{b}| = \sqrt6\) and \(|\mathbf{n}| = \sqrt{14}\):
+\[\sin\varphi = \frac{6}{\sqrt6\sqrt{14}}\] [M1]
+\[= 0.6547\] [A1]
+\[\varphi = 40.9^\circ\] [A1]
 :::
 
 ## The angle between two planes

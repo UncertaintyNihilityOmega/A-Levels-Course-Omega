@@ -362,20 +362,20 @@ Integrate by parts with \(u = \theta\) and \(\dfrac{dv}{d\theta} = \mathrm{e}^{2
 \[A = \frac{\mathrm{e}^2 + 1}{8}\] [A1]
 :::
 
-:::eg (Exam style) The circle \(C_1\) has polar equation \(r = 4\cos\theta\), \(-\dfrac\pi2 \leq \theta \leq \dfrac\pi2\), and the line \(l\) has polar equation \(r = 3\sec\theta\). (a) Find the polar coordinates of the points where \(l\) meets \(C_1\). (b) Find, in exact form, the area of the smaller region bounded by \(C_1\) and \(l\).
-**(a)** At an intersection \(4\cos\theta = 3\sec\theta\). [M1]
-\[\cos^2\theta = \tfrac34, \quad \cos\theta = \frac{\sqrt3}{2}\] [A1]
-(taking \(\cos\theta > 0\) on this range). So \(\theta = \pm\dfrac\pi6\) and \(r = 4\cos\dfrac\pi6 = 2\sqrt3\). [A1]
+:::eg (Exam style) The circle \(C_1\) has polar equation \(r = 8\cos\theta\), \(-\dfrac\pi2 \leq \theta \leq \dfrac\pi2\), and the line \(l\) has polar equation \(r = 2\sec\theta\). (a) Find the polar coordinates of the points where \(l\) meets \(C_1\). (b) Find, in exact form, the area of the region of the circle to the right of \(l\), which contains the centre of the circle.
+**(a)** At an intersection \(8\cos\theta = 2\sec\theta\). [M1]
+\[\cos^2\theta = \tfrac14, \quad \cos\theta = \tfrac12\] [A1]
+(taking \(\cos\theta > 0\) on this range). So \(\theta = \pm\dfrac\pi3\) and \(r = 8\cos\dfrac\pi3 = 4\). [A1]
 
-The points are \(\left(2\sqrt3, \dfrac\pi6\right)\) and \(\left(2\sqrt3, -\dfrac\pi6\right)\).
+The points are \(\left(4, \dfrac\pi3\right)\) and \(\left(4, -\dfrac\pi3\right)\).
 
-**(b)** \(l\) is the line \(x = 3\), which cuts off the small region of the circle (centre \((2, 0)\), radius 2) to its right. For \(-\dfrac\pi6 \leq \theta \leq \dfrac\pi6\), the line is the inner boundary and the circle the outer. By symmetry,
-\[A = 2 \times \frac12\int_0^{\pi/6}\left(16\cos^2\theta - 9\sec^2\theta\right)d\theta\] [M1]
-\[= \int_0^{\pi/6}\left(8 + 8\cos2\theta - 9\sec^2\theta\right)d\theta\] [M1]
-\[= \Big[8\theta + 4\sin2\theta - 9\tan\theta\Big]_0^{\pi/6}\] [A1]
-\[= \frac{4\pi}{3} + 2\sqrt3 - 3\sqrt3\] [M1]
-\[A = \frac{4\pi}{3} - \sqrt3\] [A1]
-**Check**: the segment is cut off at distance 1 from the centre of a circle of radius 2, so its area is \(\tfrac12 \times 4\left(\dfrac{2\pi}{3} - \dfrac{\sqrt3}{2}\right) = \dfrac{4\pi}{3} - \sqrt3\).
+**(b)** \(l\) is the line \(x = 2\). The circle has centre \((4, 0)\) and radius 4, so the line is 2 from the centre and the region to its right is the larger part of the circle. For \(-\dfrac\pi3 \leq \theta \leq \dfrac\pi3\), the line is the inner boundary and the circle the outer. By symmetry,
+\[A = 2 \times \frac12\int_0^{\pi/3}\left(64\cos^2\theta - 4\sec^2\theta\right)d\theta\] [M1]
+\[= \int_0^{\pi/3}\left(32 + 32\cos2\theta - 4\sec^2\theta\right)d\theta\] [M1]
+\[= \Big[32\theta + 16\sin2\theta - 4\tan\theta\Big]_0^{\pi/3}\] [A1]
+\[= \frac{32\pi}{3} + 8\sqrt3 - 4\sqrt3\] [M1]
+\[A = \frac{32\pi}{3} + 4\sqrt3\] [A1]
+**Check**: the circle has area \(16\pi\). The part to the left of the line is a segment cut off at distance 2 from the centre, with half-angle \(\dfrac\pi3\) at the centre, so its area is \(\tfrac12 \times 16\left(\dfrac{2\pi}{3} - \dfrac{\sqrt3}{2}\right) = \dfrac{16\pi}{3} - 4\sqrt3\). Then \(16\pi - \dfrac{16\pi}{3} + 4\sqrt3 = \dfrac{32\pi}{3} + 4\sqrt3\).
 :::
 
 :::board

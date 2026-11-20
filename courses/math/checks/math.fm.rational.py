@@ -293,8 +293,13 @@ assert 40 ** 2 - 40 * 40 == 0
 # ---- marks totals (each answer's tokens add up to its [n marks])
 marks = {
     "exam eg": 3 + 4 + 3 + 5,
+    "values eg": 1 + 1 + 1 + 1,
     "q1": 3, "q2": 4, "q3": 5, "q4": 5, "q5": 5 + 2, "q6": 6 + 3, "q7": 3 + 4 + 2 + 3, "stretch1": 3 + 2 + 2, "stretch2": 3 + 4,
 }
+assert marks["values eg"] == 4
+# the exam example: discriminant of x^2 - (3+y)x + (6+y) is (y+5)(y-3)
+for yy in [-7.0, -5.0, 0.0, 3.0, 5.0]:
+    assert isclose((3 + yy) ** 2 - 4 * (6 + yy), (yy + 5) * (yy - 3), abs_tol=1e-9)
 assert marks["exam eg"] == 15 and marks["q5"] == 7 and marks["q6"] == 9 and marks["q7"] == 12
 assert marks["stretch1"] == 7 and marks["stretch2"] == 7
 

@@ -149,7 +149,8 @@
 
     const fields = {};
     const keys = ['a', 'b', 'c', 'd'];
-    const row = W.h('div', { class: 'w-row', style: { alignItems: 'flex-end' } });
+    // the four entries laid out like the matrix: a b / c d
+    const row = W.h('div', { class: 'w-row', style: { display: 'grid', gridTemplateColumns: 'repeat(2, 5.5rem)', gap: '10px 16px', alignItems: 'end' } });
     keys.forEach((k, i) => {
       fields[k] = W.field({
         label: k, value: String(Math.round(M[i] * 10000) / 10000), type: 'number', step: '0.1', width: '5.5rem',
@@ -225,14 +226,19 @@
     function draw(ctx, w, h, c) {
       if (!(w > 40 && h > 40)) return;
       const P = SHAPES[shape];
-      let Rr = 4;
-      const probe = P.concat([[1, 0], [0, 1]]);
-      probe.forEach((p) => { const q = apply(M, p); Rr = Math.max(Rr, Math.abs(p[0]), Math.abs(p[1]), Math.abs(q[0]), Math.abs(q[1])); });
-      Rr = Math.min(60, Math.ceil(Rr * 1.15));
       const pad = { l: 30, r: 12, t: 14, b: 24 };
       const pw = w - pad.l - pad.r, ph = h - pad.t - pad.b;
       if (!(pw > 10 && ph > 10)) return;
-      const hy = Rr, hx = Rr * pw / ph;
+      // View fitted to the shape, its image under M and the columns Mi, Mj (so it stays fixed while a preset or A⁻¹ animates):
+      // at least ±3, the same scale on both axes, the origin at the centre.
+      let ex = 0, ey = 0;
+      P.concat([[1, 0], [0, 1]]).forEach((p) => {
+        const q = apply(M, p);
+        ex = Math.max(ex, Math.abs(p[0]), Math.abs(q[0])); ey = Math.max(ey, Math.abs(p[1]), Math.abs(q[1]));
+      });
+      let hy = Math.max(3, 1.2 * ey, 1.2 * ex * ph / pw);
+      hy = Math.min(60, Math.ceil(hy * 2) / 2);
+      const Rr = hy, hx = hy * pw / ph;
       const A = W.axes(ctx, w, h, { x0: -hx, x1: hx, y0: -hy, y1: hy }, c, { pad, xlabel: 'x', ylabel: 'y' });
       const X = A.X, Y = A.Y;
       const D = shown();
@@ -240,9 +246,9 @@
       ctx.beginPath(); ctx.rect(pad.l, pad.t, pw, ph); ctx.clip();
       // transformed grid
       if (has('grid')) {
-        const N = Math.min(8, Math.ceil(Rr));
+        const N = Math.min(30, Math.ceil(Math.max(hx, hy)));
         ctx.lineWidth = 1; ctx.strokeStyle = c.rule2 || c.rule; ctx.globalAlpha = 0.9;
-        const L = Rr * 3;
+        const L = Math.max(hx, hy) * 3;
         for (let j = -N; j <= N; j++) {
           let p = apply(D, [j, -L]), q = apply(D, [j, L]);
           ctx.beginPath(); ctx.moveTo(X(p[0]), Y(p[1])); ctx.lineTo(X(q[0]), Y(q[1])); ctx.stroke();
@@ -254,7 +260,7 @@
       // invariant lines (dashed)
       if (has('invariant')) {
         const il = invariantLines(M);
-        const far = Rr * 4;
+        const far = Math.max(hx, hy) * 4;
         ctx.setLineDash([7, 5]); ctx.lineWidth = 1.6; ctx.strokeStyle = c.red;
         const seg = (p, q) => { ctx.beginPath(); ctx.moveTo(X(p[0]), Y(p[1])); ctx.lineTo(X(q[0]), Y(q[1])); ctx.stroke(); };
         if (!il.all) {

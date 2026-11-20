@@ -193,21 +193,21 @@ The idea: \(y\) is a value taken by the function exactly when the equation \(y =
 4. Check separately any value of \(y\) that makes the coefficient of \(x^2\) zero: there the equation is not a quadratic and the discriminant does not apply.
 :::
 
-:::eg Find the set of values taken by \(y = \dfrac{x^2 - 3x + 6}{x - 1}\), and show that the result agrees with the turning points found above.
-Multiply out and collect terms:
+:::eg (Exam style) The curve \(C\) has equation \(y = \dfrac{x^2 - 3x + 6}{x - 1}\), \(x \neq 1\). Show that \(y \leq -5\) or \(y \geq 3\) at all points on \(C\). [4]
+Multiply out and collect terms to obtain a quadratic in \(x\):
 \[\begin{aligned}
 y(x - 1) &= x^2 - 3x + 6 \\
 x^2 - (3 + y)x + (6 + y) &= 0
-\end{aligned}\]
+\end{aligned}\] [M1]
 For a real \(x\) the discriminant must be at least zero:
+\[(3 + y)^2 - 4(6 + y) \geq 0\] [M1]
 \[\begin{aligned}
-(3 + y)^2 - 4(6 + y) &\geq 0 \\
 y^2 + 2y - 15 &\geq 0 \\
 (y + 5)(y - 3) &\geq 0
-\end{aligned}\]
-The parabola \(y^2 + 2y - 15\) opens upwards, so it is non-negative **outside** its roots: \(y \leq -5\) or \(y \geq 3\).
+\end{aligned}\] [A1]
+The parabola \(y^2 + 2y - 15\) opens upwards, so it is non-negative **outside** its roots: \(y \leq -5\) or \(y \geq 3\). [A1]
 
-So the function takes no values strictly between \(-5\) and 3. These are the \(y\)-values of the turning points \((-1, -5)\) and \((3, 3)\): at those \(y\) the discriminant is exactly zero, a repeated root, which is where a horizontal line touches the curve without crossing it.
+So the function takes no values strictly between \(-5\) and 3. These are the \(y\)-values of the turning points \((-1, -5)\) and \((3, 3)\) found above: at those \(y\) the discriminant is exactly zero, a repeated root, which is where a horizontal line touches the curve without crossing it.
 :::
 
 :::eg Find the set of values taken by \(y = \dfrac{x^2 - 4}{x^2 - 1}\).

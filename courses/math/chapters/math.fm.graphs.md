@@ -238,16 +238,16 @@ Sketches are best when the question gives a graph. When the inequality is betwee
 Multiplying an inequality by \(x - 1\) is correct only if \(x - 1 > 0\); if it is negative the inequality reverses. You do not know which. Either multiply by a **square** such as \((x - 1)^2\), which is never negative, or move all terms to one side and use a sign table. Cross-multiplying "to clear the fractions" is the commonest way to lose solutions.
 :::
 
-:::eg Find the exact set of values of \(x\) for which \(\dfrac{2x}{x + 3} > \dfrac{1}{x - 1}\).
+:::eg (Exam style) Find the exact set of values of \(x\) for which \(\dfrac{2x}{x + 3} > \dfrac{1}{x - 1}\). [5]
 Move everything to one side and combine:
 \[\begin{aligned}
 \frac{2x}{x + 3} - \frac{1}{x - 1} &> 0 \\
 \frac{2x(x - 1) - (x + 3)}{(x + 3)(x - 1)} &> 0 \\
 \frac{2x^2 - 3x - 3}{(x + 3)(x - 1)} &> 0
-\end{aligned}\]
+\end{aligned}\] [M1] [A1]
 The numerator is zero when \(x = \dfrac{3 \pm \sqrt{9 + 24}}{4} = \dfrac{3 \pm \sqrt{33}}{4}\), that is \(-0.686\) and \(2.186\). The denominator is zero at \(x = -3\) and \(x = 1\).
 
-The four critical values in order are \(-3\), \(\dfrac{3 - \sqrt{33}}{4}\), \(1\), \(\dfrac{3 + \sqrt{33}}{4}\). For large \(x\) the fraction is positive (the numerator's leading coefficient and the denominator's are both positive). The sign changes at every critical value, since each is a simple zero or a simple pole.
+The four critical values in order are \(-3\), \(\dfrac{3 - \sqrt{33}}{4}\), \(1\), \(\dfrac{3 + \sqrt{33}}{4}\). [B1] For large \(x\) the fraction is positive (the numerator's leading coefficient and the denominator's are both positive). The sign changes at every critical value, since each is a simple zero or a simple pole.
 
 | Interval | Sign of the fraction |
 |---|---|
@@ -257,8 +257,10 @@ The four critical values in order are \(-3\), \(\dfrac{3 - \sqrt{33}}{4}\), \(1\
 | \(-3 < x < \frac{3 - \sqrt{33}}{4}\) | \(-\) |
 | \(x < -3\) | \(+\) |
 
+The signs come from the sign for large \(x\) and the change at each critical value. [M1]
+
 The fraction is positive for
-\[x < -3 \quad\text{or}\quad \frac{3 - \sqrt{33}}{4} < x < 1 \quad\text{or}\quad x > \frac{3 + \sqrt{33}}{4}\]
+\[x < -3 \quad\text{or}\quad \frac{3 - \sqrt{33}}{4} < x < 1 \quad\text{or}\quad x > \frac{3 + \sqrt{33}}{4}\] [A1]
 **Check** with \(x = 0\): \(0 > \dfrac{1}{-1} = -1\), true, and \(0\) is in \(\left(\tfrac{3 - \sqrt{33}}{4}, 1\right)\). With \(x = 1.5\): \(\dfrac{3}{4.5} = 0.667 > \dfrac{1}{0.5} = 2\), false, and \(1.5\) is in the excluded interval.
 :::
 

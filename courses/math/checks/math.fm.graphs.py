@@ -328,4 +328,9 @@ eq("ymax", sqrt(g2(-1)), 2)
 assert 4 + 3 + 5 == 12 and 3 + 5 + 4 == 12 and 5 + 5 == 10 and 2 + 2 + 4 == 8 and 1 + 4 + 1 == 6
 assert 3 + 3 + 5 + 4 + 6 + 6 == 27
 
+# exact-form inequality example: 1 + 1 + 1 + 1 + 1 = 5 marks; numerator 2x^2 - 3x - 3
+assert 1 + 1 + 1 + 1 + 1 == 5
+for xx in [-2.0, 0.5, 3.0]:
+    assert abs((2 * xx / (xx + 3) - 1 / (xx - 1)) - (2 * xx * xx - 3 * xx - 3) / ((xx + 3) * (xx - 1))) < 1e-12
+
 print("ok")

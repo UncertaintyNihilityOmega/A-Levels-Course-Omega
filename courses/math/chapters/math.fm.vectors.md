@@ -332,12 +332,18 @@ Use \(M\): \(p = 2 - 4 + 1 = -1\), so the plane is \(2x - 2y + z = -1\). **Check
 A parallel plane has the same normal and a different constant. Through \((1, 1, 1)\): \(2 - 2 + 1 = 1\), so the plane is \(2x - 2y + z = 1\).
 :::
 
-:::eg A roof is a plane through the points \(P(0, 0, 3)\), \(Q(6, 0, 3)\) and \(R(0, 4, 5)\), with coordinates in metres and \(z\) the height. Find its equation, and the height of the roof above the point with \(x = 3\), \(y = 3\).
-\[\overrightarrow{PQ} = \begin{pmatrix}6\\0\\0\end{pmatrix}, \qquad \overrightarrow{PR} = \begin{pmatrix}0\\4\\2\end{pmatrix}\]
-\[\overrightarrow{PQ} \times \overrightarrow{PR} = \begin{pmatrix}0\\-12\\24\end{pmatrix} = 12\begin{pmatrix}0\\-1\\2\end{pmatrix}\]
-A normal is \((0, -1, 2)\). Using \(P\): \(p = 0 - 0 + 6 = 6\), so the roof is
-\[-y + 2z = 6 \quad\text{or}\quad z = 3 + \tfrac12 y\]
-At \(x = 3\), \(y = 3\): \(z = 3 + 1.5 = 4.5\) m. The roof rises 0.5 m for every metre in the \(y\) direction and does not change with \(x\), which agrees with the zero \(x\) component of the normal.
+:::eg (Exam style) A roof is part of a plane \(\Pi\) through the points \(P(0, 0, 3)\), \(Q(6, 0, 3)\) and \(R(0, 4, 5)\), with coordinates in metres and \(z\) the height. (a) Find the Cartesian equation of \(\Pi\). [4] (b) Find the perpendicular distance of \(\Pi\) from the origin, giving your answer to 3 significant figures. [2] (c) Find the height of the roof above the point with \(x = 3\), \(y = 3\). [2]
+**(a)** The two vectors in the plane:
+\[\overrightarrow{PQ} = \begin{pmatrix}6\\0\\0\end{pmatrix}, \qquad \overrightarrow{PR} = \begin{pmatrix}0\\4\\2\end{pmatrix}\] [M1]
+\[\overrightarrow{PQ} \times \overrightarrow{PR} = \begin{pmatrix}0\\-12\\24\end{pmatrix} = 12\begin{pmatrix}0\\-1\\2\end{pmatrix}\] [M1]
+A normal is \((0, -1, 2)\). [A1] Using \(P\): \(p = 0 - 0 + 6 = 6\), so the roof plane is
+\[-y + 2z = 6 \quad\text{or}\quad z = 3 + \tfrac12 y\] [A1]
+**(b)** The distance from the origin is \(\dfrac{|p|}{|\mathbf{n}|}\):
+\[\frac{6}{\sqrt{0^2 + (-1)^2 + 2^2}} = \frac{6}{\sqrt5}\] [M1]
+\[= 2.68\text{ m}\] [A1]
+**(c)** At \(x = 3\), \(y = 3\): \(2z = 6 + 3 = 9\) [M1], so \(z = 3 + 1.5 = 4.5\) m. [A1]
+
+The roof rises 0.5 m for every metre in the \(y\) direction and does not change with \(x\), which agrees with the zero \(x\) component of the normal.
 :::
 
 The next chapter, [Vectors: intersections, angles and distances](#math.fm.vectors2), uses this roof again to find the slope and the distance of a drone above it.

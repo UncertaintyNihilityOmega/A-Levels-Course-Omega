@@ -26,6 +26,32 @@
     if (Object.is(v, -0) || v === 0) v = 0;
     return String(v).replace('-', '−');
   };
+  // distances: exactly 3 significant figures, trailing zeros kept ("1.60", not "1.6")
+  const fmtD = (x) => {
+    if (!isFinite(x)) return '—';
+    if (Math.abs(x) < 1e-12) return '0';
+    const s = Number(x).toPrecision(3);
+    return /e/i.test(s) ? fmtN(x) : s.replace('-', '−');
+  };
+  /* starting turn: the first yaw (nearest 0.7 radians) from which the first normal makes at least about 27° with the screen,
+     so the plane is not seen edge-on; the other normals should make at least about 17°. Pure, exported for tests. */
+  function chooseYaw(normals, pitch, yaw0) {
+    const sp = Math.sin(pitch), cp = Math.cos(pitch);
+    const dep = (n, yaw) => {
+      const m = Math.hypot(n[0], n[1], n[2]) || 1;
+      return Math.abs((n[2] * sp + (n[0] * Math.sin(yaw) + n[1] * Math.cos(yaw)) * cp) / m);
+    };
+    if (!normals.length) return yaw0;
+    const cand = [];
+    for (let k = 0; k <= 62; k++) { cand.push(yaw0 + k * 0.05); if (k) cand.push(yaw0 - k * 0.05); }
+    const okFirst = (y) => dep(normals[0], y) >= 0.45 && dep(normals[0], y) <= 0.95;
+    const okAll = (y) => okFirst(y) && normals.every((n, i) => i === 0 || dep(n, y) >= 0.3);
+    for (const y of cand) if (okAll(y)) return y;
+    for (const y of cand) if (okFirst(y)) return y;
+    let best = yaw0, bd = dep(normals[0], yaw0);
+    for (const y of cand) { const d = dep(normals[0], y); if (d > bd + 0.02) { best = y; bd = d; } }
+    return best;
+  }
   const fmtV = (u) => '(' + u.map(fmtN).join(', ') + ')';
   const planeText = (p) => {
     const parts = [];
@@ -157,7 +183,7 @@
     return { kind: 'parallel', text: 'are three parallel planes with no common point' };
   }
 
-  const core = { sub, add, mul, dot, cross, mag, rank, parsePlanes, parseLine, parsePoint, pointPlane, linePlane, twoPlanes, classify3, planeText, normalDistance, fmtN, fmtV };
+  const core = { sub, add, mul, dot, cross, mag, rank, parsePlanes, parseLine, parsePoint, pointPlane, linePlane, twoPlanes, classify3, planeText, normalDistance, fmtN, fmtD, fmtV, chooseYaw };
   if (typeof module !== 'undefined' && module.exports) module.exports = core;
   if (!W) return;
 
@@ -239,7 +265,7 @@
     body.append(W.h('div', { class: 'w-row' }, reset));
 
     const state = { ok: false, model: null };
-    const v3 = W.view3d({ yaw: 0.7, pitch: 0.42, scale: 20 });
+    const v3 = W.view3d({ yaw: chooseYaw(start.planes.map((p) => p.slice(0, 3)), 0.42, 0.7), pitch: 0.42, scale: 20 });
     const cv = W.canvas(body, { height: 340, draw, label: 'Planes, lines and points in 3D, with turn buttons below', describe: describeScene });
     cv.wrap.style.touchAction = 'none'; cv.wrap.style.cursor = 'grab';
     W.orbit(cv.wrap, v3, cv.redraw);
@@ -280,7 +306,7 @@
     function lineText(r) {
       if (r.kind === 'meets') return `meets it at ${fmtV(r.point.map(clean))}; angle between line and plane ${fmtN(r.angle)}°`;
       if (r.kind === 'in') return 'lies in the plane; angle 0°';
-      return `is parallel to the plane, ${fmtN(r.gap)} away; angle 0°`;
+      return `is parallel to the plane, ${fmtD(r.gap)} away; angle 0°`;
     }
     function update() {
       const m = read();
@@ -292,13 +318,13 @@
       m.two = pairs.map(([i, j]) => twoPlanes(m.planes[i], m.planes[j]));
       m.three = m.planes.length === 3 ? classify3(m.planes) : null;
       state.model = m; state.ok = true;
-      m.planes.forEach((p, k) => R.set(`n${k}`, `n = ${fmtV(p.n)}; ${planeText(p)}; distance ${fmtN(normalDistance(p))}`));
+      m.planes.forEach((p, k) => R.set(`n${k}`, `n = ${fmtV(p.n)}; ${planeText(p)}; distance ${fmtD(normalDistance(p))}`));
       if (m.line) m.lp.forEach((r, k) => R.set(`l${k}`, lineText(r)));
-      if (m.point) m.pp.forEach((r, k) => R.set(`p${k}`, r.on ? 'P lies in the plane' : `foot ${fmtV(r.foot.map(clean))}; distance ${fmtN(r.dist)}`));
+      if (m.point) m.pp.forEach((r, k) => R.set(`p${k}`, r.on ? 'P lies in the plane' : `foot ${fmtV(r.foot.map(clean))}; distance ${fmtD(r.dist)}`));
       pairs.forEach(([i, j], idx) => {
         const r = m.two[idx];
         R.set(`pair${i}${j}`, r.kind === 'line' ? `angle ${fmtN(r.angle)}°; meet in the line through ${fmtV(r.point.map(clean))} with direction ${fmtV(r.dir.map(clean))}`
-          : r.kind === 'coincide' ? 'the same plane' : `parallel, ${fmtN(r.gap)} apart`);
+          : r.kind === 'coincide' ? 'the same plane' : `parallel, ${fmtD(r.gap)} apart`);
       });
       if (m.three) R.set('triple', m.three.text);
       cv.redraw();
@@ -308,7 +334,7 @@
       const m = state.model;
       let s = m.planes.map((p, k) => `Plane ${k + 1}: ${planeText(p)}, normal ${fmtV(p.n)}`).join('. ') + '.';
       if (m.line) s += ' ' + m.lp.map((r, k) => `Line and plane ${k + 1}: ${lineText(r)}.`).join(' ');
-      if (m.point) s += ' ' + m.pp.map((r, k) => (r.on ? `P lies in plane ${k + 1}.` : `P is ${fmtN(r.dist)} from plane ${k + 1}.`)).join(' ');
+      if (m.point) s += ' ' + m.pp.map((r, k) => (r.on ? `P lies in plane ${k + 1}.` : `P is ${fmtD(r.dist)} from plane ${k + 1}.`)).join(' ');
       if (m.three) s += ' The three planes ' + m.three.text + '.';
       else if (m.two.length) s += ' ' + (m.two[0].kind === 'line' ? `The planes meet at ${fmtN(m.two[0].angle)} degrees along a line.` : 'The planes are parallel.');
       return s;

@@ -244,6 +244,9 @@ eq("eg13 p", dot((0, -1, 2), P_), 6)
 eq("eg13 Q", dot((0, -1, 2), Q_), 6)
 eq("eg13 R", dot((0, -1, 2), R_), 6)
 eq("eg13 height", 3 + 0.5 * 3, 4.5)
+eq("eg13 distance", sf(6 / sqrt(5), 3), 2.68)
+eq("eg13 distance via foot", mag(mul(F(6, 5), (0, -1, 2))), 6 / sqrt(5))
+assert 4 + 2 + 2 == 8
 
 # ---------- spot the error ----------
 a, b = (2, 1, -3), (4, -1, 2)

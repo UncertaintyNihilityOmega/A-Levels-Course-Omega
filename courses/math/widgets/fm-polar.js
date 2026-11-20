@@ -142,8 +142,10 @@
     const showWarns = () => { errBox.textContent = warns.join(' '); errBox.style.display = warns.length ? '' : 'none'; };
     body.append(errBox);
 
-    const sl = W.slider({ label: 'Angle θ', min: range[0], max: range[1], step: 0.01, value: theta,
-      fmt: (v) => fmtPi(+v), oninput: (v) => { theta = clampT(+v); update(); } });
+    // step = span / N, so the last step lands exactly on the end of the range (2π, not 6.28)
+    const stepFor = () => { const sp = range[1] - range[0]; return sp / Math.max(1, Math.round(sp / 0.01)); };
+    const sl = W.slider({ label: 'Angle θ', min: range[0], max: range[1], step: stepFor(), value: theta,
+      fmt: (v) => fmtPi(+v), oninput: (v) => { v = +v; if (v >= range[1] - stepFor() * 0.51) v = range[1]; theta = clampT(v); update(); } });
     body.append(sl.el);
 
     const play = W.h('button', { type: 'button', class: 'btn btn-sm', 'aria-label': 'Play the animation' }, 'Play');
@@ -170,7 +172,7 @@
       fn = f2; src = newSrc;
       if (newRange) range = newRange;
       areaStart = null;
-      sl.input.min = String(range[0]); sl.input.max = String(range[1]);
+      sl.input.min = String(range[0]); sl.input.max = String(range[1]); sl.input.step = String(stepFor());
       theta = range[1]; sl.set(theta);
       fitView();
       activePreset = fromPreset || null;
@@ -274,10 +276,14 @@
         if (r * k > rad - 16) break;   // keep clear of the "0" label at the end of the initial line
         ctx.fillText(W.fmt(r, 3), cx + r * k, cy + 3);
       }
-      ctx.textBaseline = 'bottom'; ctx.textAlign = 'right';
-      ctx.lineWidth = 3; ctx.strokeStyle = c.card || c.sheet; ctx.lineJoin = 'round';
-      ctx.strokeText('initial line', cx + rad - 2, cy - 3);
-      ctx.fillStyle = c.ink2; ctx.fillText('initial line', cx + rad - 2, cy - 3);
+      // "initial line": beyond the outermost ring, never over the curve or the tick labels
+      ctx.fillStyle = c.ink2;
+      if (w / 2 - rad >= 84) {
+        ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.fillText('initial line', cx + rad + 20, cy);
+      } else if (w / 2 - rad >= 18 && cy - 70 > 0) {
+        ctx.save(); ctx.translate(cx + rad + 16, cy - 38); ctx.rotate(-PI / 2);
+        ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('initial line', 0, 0); ctx.restore();
+      }
       ctx.textAlign = 'right'; ctx.textBaseline = 'top'; ctx.fillStyle = c.ink2; ctx.fillText('O', cx - 3, cy + 3);
 
       const n = sampleCount(), span = range[1] - range[0];
