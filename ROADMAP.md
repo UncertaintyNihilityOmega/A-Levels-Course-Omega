@@ -5,9 +5,9 @@
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
 - Queue item 10, Further Mathematics (math.fm, 50 chapters, P19–P36, plan in courses/math/FURTHER.md): LEAD done
   Nov 20 (gold math.fm.roots); P19–P24 written (16 chapters; widgets fm-matrix, fm-polar, fm-planes, fm-maclaurin);
-  REVIEW P19–P22 done (8 FIX items open in REVIEW.md). Next: FIX + WRITE P25, WRITE P26, then REVIEW P23–P26 (judge
-  P23's depth: its chapters are 3459–3817 words, under the gold's 4016). Waiting for the reset at 17:20 Nov 20
-  (5-hour window 85%).
+  REVIEW P19–P22 done (8 FIX items open in REVIEW.md). Run of Nov 20 17:30 UTC (preview server allowed): FIX + WRITE
+  P25 and WRITE P26 running; then REVIEW P23–P26 (judge P23's depth: its chapters are 3459–3817 words, under the
+  gold's 4016).
 - Usage gate: weekly limit 95% for every launch (AGENT-RUN.md "Usage gate").
 - Name: "Zero to A* Ω" (titles, installed app, shared links). Top bar and Home heading: the hand-drawn wordmark "Log end"
   (`engine/wordmark.py --shell` writes it into shell.html; colours in style.css `.wm-*`).
