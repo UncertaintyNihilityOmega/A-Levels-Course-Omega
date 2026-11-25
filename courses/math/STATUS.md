@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-25 · REVIEW P27, P28, P29, P30, P31 · 8 items (twosample paired δ0≠0, crv CDF with constants, circular two-string, vertical symbolic slack, elastic falling-from-O exam examples in the June 2026 shapes; fm-de superscripts, fm-tdist off-table ν, fm-vcircle Reset mode). Fixed: de2 plot (no figure), elastic eg distance slip, variable kv 'stops' wording and quiz, rigid/variable/inference/projectiles figure labels; fm-topple data-width/height recorded; t table matches MF19; June 2026 9231/31 and /41 read into FACTS; P34/P36 notes updated.
+Last: 2026-11-25 · WRITE P32 · math.fm.chisq (6774 words, 3 Exam-style eg) and math.fm.contingency (5157 words, 2 Exam-style eg); check ok and phone pass; widget fm-chisq (probe clean light, dark, phone, bad attributes; node test against MF19 rows). Used scratch/papers 9231_s26 qp/ms 41 Q2 (3x3 independence, 8+2 marks) for the contingency mark scheme, hypothesis and conclusion wording; reviewer to record it in FACTS.md. GOF mark layout follows June 2025 shape from FACTS (scheme PDF unreadable); statistic label in the widget can overlap the curve slightly.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -36,7 +36,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P29: reviewed 2026-11-25
 - P30: reviewed 2026-11-25
 - P31: reviewed 2026-11-25
-- P32: writing 2026-11-25
+- P32: written 2026-11-25
 - P33: writing 2026-11-25
 - P34: open
 - P35: open
