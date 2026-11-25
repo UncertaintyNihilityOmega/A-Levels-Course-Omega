@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-25 · WRITE P28 · math.fm.projectiles (4769 words), math.fm.com (5387), math.fm.rigid (5539); check and phone pass; widget fm-topple (probe clean incl. bad attributes; data/test_fm_topple.js 7695 checks). Reviewer: fm-topple uses data-width/data-height (spec's data-w clashes with data-w=NAME); sliding and toppling states looked at, dark only probed; June 2026 9231/3x shapes (hemisphere on cylinder suspension, projectile striking plane at right angles) taken from an unofficial summary, not recorded in FACTS; semicircle MF19 results derived from sector/arc rows
+Last: 2026-11-25 · WRITE P30 · math.fm.variable (5507 words, 6 exam-style egs), math.fm.impulse (5611, 4), math.fm.oblique (5685, 5): check ok, phone ok; widget fm-impact (wall and spheres, node-tested, probe clean). Reviewer: June 2026 9231/32 shapes come from a third-party guide, not the paper; 9709 has no impulse/restitution so fm.impulse teaches impulse; look at the 5 hand figures and fm-impact in dark mode. Notes in packages/P30.md
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -34,7 +34,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P27: written 2026-11-20
 - P28: written 2026-11-25
 - P29: written 2026-11-25
-- P30: writing 2026-11-25
+- P30: written 2026-11-25
 - P31: writing 2026-11-25
 - P32: open
 - P33: open
