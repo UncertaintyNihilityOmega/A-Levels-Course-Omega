@@ -114,6 +114,12 @@ The formula links \(I_n\) to \(I_{n-2}\), so the chain stops at \(I_0\) when \(n
 Even \(n\): a multiple of \(\pi\). Odd \(n\): a rational number.
 :::
 
+:::plot The curves y = sin x, sin²x, sin⁴x and sin⁸x for 0 ≤ x ≤ π/2. Every curve ends at (π/2, 1), and the higher the power the lower the curve between 0 and π/2, so the area Iₙ under it is smaller.
+--f "sin(x)" --f "sin(x)**2" --f "sin(x)**4" --f "sin(x)**8" --label "y = sin x" --label "y = sin²x" --label "y = sin⁴x" --label "y = sin⁸x" --x 0 1.6 --y 0 1.1 --legend tl
+:::
+
+Each power of \(\sin x\) lies below the one before it (because \(0 \le \sin x \le 1\)), so the areas fall: \(I_n < I_{n-2}\). That is why the ratio \(\dfrac{n-1}{n}\) in the formula is below 1, and why \(I_8 = \dfrac{35\pi}{256} = 0.43\) is already much smaller than \(I_2 = \dfrac\pi4 = 0.79\).
+
 :::tip Test a new formula on a small value of \(n\)
 Before trusting a reduction formula, try \(n = 2\) (or \(n = 1\)), where you can integrate directly. Here \(I_2 = \tfrac12I_0 = \tfrac\pi4\), and \(\int_0^{\pi/2}\sin^2x\,dx = \left[\tfrac x2 - \tfrac{\sin 2x}{4}\right]_0^{\pi/2} = \tfrac\pi4\). The two agree. A wrong sign or a wrong factor shows up at once.
 :::
@@ -300,10 +306,35 @@ The boundary term is \(\left(\tfrac54\right)^{n-1}\tfrac34\) at \(\ln 2\) and 0 
 
 The same working for \(S_n = \displaystyle\int_0^a\sinh^nx\,dx\) uses \(\dfrac{dv}{dx} = \sinh x\), \(v = \cosh x\) and \(\cosh^2x = 1 + \sinh^2x\), and gives \(nS_n = \sinh^{n-1}a\cosh a - (n-1)S_{n-2}\), with a minus sign where the cosh version has a plus. You will derive it in the practice questions.
 
+### Powers of \(x\) times sine or cosine
+
+Here \(u = x^n\) each time, but one by-parts step turns \(\sin x\) into \(\cos x\), so you need two steps to get back to a sine. The power of \(x\) therefore drops by two, and the formula links \(I_n\) to \(I_{n-2}\). Because both boundary terms matter, write them out with the limits substituted.
+
+:::eg (Exam style) Let \(I_n = \displaystyle\int_0^\pi x^n\sin x\,dx\) for \(n \ge 0\). (a) Show that \(I_n = \pi^n - n(n-1)I_{n-2}\) for \(n \ge 2\). (b) Find \(I_4\) exactly.
+**(a)** First by parts: \(u = x^n\), \(\dfrac{dv}{dx} = \sin x\), so \(\dfrac{du}{dx} = nx^{n-1}\) and \(v = -\cos x\). [M1]
+\[I_n = \left[-x^n\cos x\right]_0^\pi + n\int_0^\pi x^{n-1}\cos x\,dx = \pi^n + n\int_0^\pi x^{n-1}\cos x\,dx\] [A1]
+(at \(\pi\): \(-\pi^n\cos\pi = \pi^n\); at 0 the term is 0 because \(n \ge 1\).)
+
+Second by parts on the new integral: \(u = x^{n-1}\), \(\dfrac{dv}{dx} = \cos x\), so \(\dfrac{du}{dx} = (n-1)x^{n-2}\) and \(v = \sin x\). [M1]
+\[\int_0^\pi x^{n-1}\cos x\,dx = \left[x^{n-1}\sin x\right]_0^\pi - (n-1)\int_0^\pi x^{n-2}\sin x\,dx = 0 - (n-1)I_{n-2}\]
+(the boundary term is 0 at both ends: \(\sin\pi = 0\), and \(0^{n-1} = 0\) for \(n \ge 2\).) Putting the two together,
+\[I_n = \pi^n - n(n-1)I_{n-2}\] [A1]
+**(b)** \(I_0 = \displaystyle\int_0^\pi\sin x\,dx = \left[-\cos x\right]_0^\pi = 2\). [B1]
+\[\begin{aligned}
+I_2 &= \pi^2 - 2 \times 1 \times I_0 = \pi^2 - 4 \\
+I_4 &= \pi^4 - 4 \times 3 \times I_2 = \pi^4 - 12\left(\pi^2 - 4\right)
+\end{aligned}\] [M1]
+\[I_4 = \pi^4 - 12\pi^2 + 48\] [A1]
+**Check**: \(I_4 = 97.41 - 118.44 + 48 = 27.0\). On \(0 \le x \le \pi\) the integrand \(x^4\sin x\) is 0 at both ends and peaks near \(x = 2.6\) at about 24, so the average height \(27.0 \div \pi = 8.6\) is believable for a hump of that height.
+:::
+
+The same working for \(\int_0^\pi x^n\cos x\,dx\) gives a similar formula with the signs changed, which you will find in the practice questions.
+
 :::key Which method for which family
 | Family | Method | Steps in \(n\) |
 |---|---|---|
-| \(x^ne^{\pm x}\), \(x^n\sin x\), \(x^n\cos x\) | by parts, \(u = x^n\) | \(n \to n-1\) (\(n \to n-2\) for sine and cosine, which need two parts) |
+| \(x^ne^{\pm x}\) | by parts, \(u = x^n\) | \(n \to n-1\) |
+| \(x^n\sin x\), \(x^n\cos x\) | by parts twice, \(u = x^n\) then \(u = x^{n-1}\) (both boundary terms) | \(n \to n-2\) |
 | \(\sin^nx\), \(\cos^nx\) | by parts, then \(\cos^2 = 1 - \sin^2\) | \(n \to n-2\) |
 | \(\tan^nx\) | \(\tan^2 = \sec^2 - 1\), no parts | \(n \to n-2\) |
 | \(\sec^nx\) | derivative of \(\tan x\sec^{n-2}x\) | \(n \to n-2\) |

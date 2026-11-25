@@ -324,4 +324,28 @@ eq("asin half", asin(0.5), pi / 6)
 eq("sin sub inner", 0.5 * (pi / 6 - 0.5 * sqrt(3) / 2), v5)
 eq("mean height", sf(area / 30, 3), 7.53)
 
+# review fixes: sinh^3 by u = cosh x, x = 2 cosh u, plot area
+s3 = 44 / 81
+eq("sinh3 def", I(lambda x: sinh(x) ** 3, 0, log(3)), s3, S)
+eq("sinh3 u", (125 / 81 - 5 / 3) - (1 / 3 - 1), s3)
+eq("sinh3 top", 125 / 81 - 5 / 3, -10 / 81)
+eq("sinh3 bottom", 1 / 3 - 1, -54 / 81)
+eq("sinh3 44/81", sf(s3, 3), 0.543)
+eq("cosh ln3 again", (3 + 1 / 3) / 2, 5 / 3)
+eq("sinh3 end", sf(sinh(log(3)) ** 3, 3), 2.37)
+eq("ln3", sf(log(3), 3), 1.10)
+c4 = 4 * sqrt(3) - 2 * log(2 + sqrt(3))
+eq("cosh sub", I(lambda x: sqrt(x * x - 4), 2, 4, 200000), c4, 1e-5)
+eq("cosh sub 3sf", sf(c4, 3), 4.29)
+eq("u1", acosh(2), log(2 + sqrt(3)))
+eq("sinh2u1", 2 * sqrt(3) * 2, 4 * sqrt(3))
+eq("sinh u1", sqrt(4 - 1), sqrt(3))
+eq("general", 0.5 * (4 * sqrt(12) - 4 * acosh(2)), c4)
+for u in (0.3, 1.2):
+    eq("4sinh2", 4 * sinh(u) ** 2, 2 * (cosh(2 * u) - 1))
+    eq("root", sqrt((2 * cosh(u)) ** 2 - 4), 2 * sinh(u))
+eq("plot area", I(lambda x: 1 / sqrt(x * x + 9), 0, 2), asinh(2 / 3), S)
+eq("plot area 3sf", sf(asinh(2 / 3), 3), 0.625)
+assert 1 / sqrt(9 - 2.9 ** 2) < 1.5
+
 print("ok")

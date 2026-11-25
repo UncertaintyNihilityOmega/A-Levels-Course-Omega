@@ -117,16 +117,16 @@
     const cv = W.canvas(body, { height: 340, draw, label: isPow ? 'Argand diagram of the powers of z' : 'Argand diagram of the roots of w', describe });
     const R = W.readout(isPow
       ? [['z', 'zⁿ'], ['mod', '|zⁿ| = rⁿ'], ['arg', 'arg zⁿ = nθ, reduced to (−π, π]']]
-      : [['mod', 'Modulus of each root, r^(1/n)'], ['sep', 'Angle between neighbours, 2π/n'], ['sum', 'Sum of the roots']]);
+      : [['mod', W.h('span', { html: 'Modulus of each root, r<sup>1/n</sup>' })], ['sep', 'Angle between neighbours, 2π/n'], ['sum', 'Sum of the roots']]);
     body.append(R.el);
     let table = null;
     if (!isPow) {
       table = W.h('table', { 'aria-label': 'The roots, in modulus-argument form and as a + bi' });
       body.append(table);
     }
-    body.append(W.h('div', { class: 'w-note' }, isPow
-      ? 'Try it: set r = 1 and the points stay on the unit circle, each a turn of θ from the one before. Make r larger than 1 for an outward spiral and smaller for an inward one. Slide n below zero to see z⁻¹, z⁻², … (the angles run backwards).'
-      : 'Try it: with r = 1 and θ = 0 these are the nth roots of unity. Change θ and the whole polygon turns by θ/n; change r and it grows by r^(1/n). Check that the sum of the roots is always 0.'));
+    body.append(isPow
+      ? W.h('div', { class: 'w-note' }, 'Try it: set r = 1 and the points stay on the unit circle, each a turn of θ from the one before. Make r larger than 1 for an outward spiral and smaller for an inward one. Slide n below zero to see z⁻¹, z⁻², … (the angles run backwards).')
+      : W.h('div', { class: 'w-note', html: 'Try it: with r = 1 and θ = 0 these are the nth roots of unity. Change θ and the whole polygon turns by θ/n; change r and it grows by r<sup>1/n</sup>. Check that the sum of the roots is always 0.' }));
 
     function readInputs() {
       const rr = parseFloat(rField.input.value), tt = parseFloat(tField.input.value);
@@ -170,9 +170,12 @@
         R.set('sep', `${fmtPi(TAU / n)}  (${num3(TAU / n)} rad)`);
         R.set('sum', fmtC(sr, si));
         table.replaceChildren();
-        table.append(W.h('tr', {}, W.h('th', { scope: 'col' }, 'Root'), W.h('th', { scope: 'col' }, 'R e^(iφ), φ in (−π, π]'), W.h('th', { scope: 'col' }, 'a + bi')));
+        table.append(W.h('tr', {}, W.h('th', { scope: 'col' }, 'Root'), W.h('th', { scope: 'col', html: 'R e<sup>iφ</sup>, φ in (−π, π]' }), W.h('th', { scope: 'col' }, 'a + bi')));
         model.pts.forEach((p) => {
-          table.append(W.h('tr', {}, W.h('td', {}, `z${sub(p.k)}`), W.h('td', {}, `${num3(p.mod)} e^(${fmtPi(p.arg)} i)`), W.h('td', {}, fmtC(p.re, p.im))));
+          // R e^(iφ): the leading 1 is omitted when R = 1, and a zero argument leaves just R
+          const m = num3(p.mod), ex = fmtPi(p.arg);
+          const polar = ex === '0' ? W.h('td', {}, m) : W.h('td', { html: (m === '1' ? '' : m + ' ') + 'e<sup>' + ex + 'i</sup>' });
+          table.append(W.h('tr', {}, W.h('td', {}, `z${sub(p.k)}`), polar, W.h('td', {}, fmtC(p.re, p.im))));
         });
       }
       cv.redraw();

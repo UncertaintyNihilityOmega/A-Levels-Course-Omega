@@ -367,6 +367,22 @@ At \(x = 0\): \(y = 1\), \(y' = 1\), \(y'' = 1\), \(y''' = 1 - 0 - 1 = 0\). [M1]
 The term in \(x^3\) is zero. The next non-zero term is \(-\tfrac18x^4\), which you can find by composing the series for \(e^u\) with \(u = \sin x\).
 :::
 
+So far every function has had \(f(0) = 0\) or \(f(0) = 1\). When the point of expansion is not a "nice" value, the constant term is a logarithm or another exact number that you must keep exact, and the derivatives need the chain rule on \(2 + x\) as well.
+
+:::eg (Exam style) Find the first three terms of the Maclaurin series for \(\cosh^{-1}(2 + x)\), giving the constants exactly.
+Let \(f(x) = \cosh^{-1}(2 + x)\). At \(x = 0\), \(f(0) = \cosh^{-1}2 = \ln\left(2 + \sqrt3\right)\), by the logarithmic form of \(\cosh^{-1}\). [B1]
+
+From MF19, \(\dfrac{d}{du}\cosh^{-1}u = \dfrac{1}{\sqrt{u^2 - 1}}\). With \(u = 2 + x\) the chain rule gives \(\dfrac{du}{dx} = 1\), so
+\[f'(x) = \left((2 + x)^2 - 1\right)^{-1/2}\] [M1]
+\[f'(0) = (4 - 1)^{-1/2} = \frac{1}{\sqrt3}\] [A1]
+Differentiate again, with the chain rule on the bracket (the inner derivative is \(2(2 + x)\)):
+\[f''(x) = -\tfrac12\left((2 + x)^2 - 1\right)^{-3/2} \times 2(2 + x) = -(2 + x)\left((2 + x)^2 - 1\right)^{-3/2}\] [M1]
+\[f''(0) = -2 \times 3^{-3/2} = -\frac{2}{3\sqrt3}\]
+Now \(f(x) = f(0) + f'(0)x + \dfrac{f''(0)}{2!}x^2 + \dots\), and \(\dfrac{f''(0)}{2} = -\dfrac{1}{3\sqrt3}\), so
+\[\cosh^{-1}(2 + x) = \ln\left(2 + \sqrt3\right) + \frac{x}{\sqrt3} - \frac{x^2}{3\sqrt3} + \dots\] [A1]
+**Check**: the constants are \(1.317\), \(0.5774\) and \(-0.1925\). At \(x = 0.1\) the series gives \(1.3170 + 0.0577 - 0.0019 = 1.3728\), and \(\cosh^{-1}2.1 = 1.3729\) on a calculator; the small difference is the \(x^3\) term.
+:::
+
 :::warn Truncating and factorials
 Two slips cost most marks in this topic. Dividing by the wrong factorial: the coefficient of \(x^3\) is \(f'''(0)/3! = f'''(0)/6\), never \(f'''(0)/3\). And dropping terms too early in a product: if you need terms up to \(x^3\), the product \(e^{2x}\sin x\) needs the \(x^2\) term of \(e^{2x}\) and the \(x\) term of \(\sin x\), as well as the \(x^3\) term of \(\sin x\).
 :::

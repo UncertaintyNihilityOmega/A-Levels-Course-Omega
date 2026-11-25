@@ -271,4 +271,27 @@ for m in range(0, 5):
         assert beta(m, n) == F(n, m + 1) * beta(m + 1, n - 1)
 eq("beta numeric", float(beta(4, 3)), simp(lambda x: x ** 4 * (1 - x) ** 3, 0, 1))
 
+# review fixes: x^n sin x on [0, pi], sin^n plot
+In = {0: F(2)}
+def xs(n): return simp(lambda x: x ** n * sin(x), 0, pi)
+eq("xs0", xs(0), 2, 1e-8)
+for n in (2, 3, 4, 5):
+    eq(f"xs{n} recurrence", xs(n), pi ** n - n * (n - 1) * xs(n - 2), 1e-7)
+eq("xs2", xs(2), pi ** 2 - 4, 1e-8)
+eq("xs4", xs(4), pi ** 4 - 12 * pi ** 2 + 48, 1e-7)
+eq("xs4 3sf", sf(pi ** 4 - 12 * pi ** 2 + 48, 3), 27.0)
+eq("xs4 terms", sf(97.41 - 118.44 + 48, 3), 27.0)
+eq("pi^4", sf(pi ** 4, 4), 97.41, 1e-2)
+eq("12pi^2", sf(12 * pi ** 2, 5), 118.44, 1e-2)
+pk = max(x ** 4 * sin(x) for x in [i / 1000 for i in range(0, 3142)])
+eq("peak", sf(pk, 2), 24)
+xm = max(range(0, 3142), key=lambda i: (i / 1000) ** 4 * sin(i / 1000)) / 1000
+eq("peak at", sf(xm, 2), 2.6, 1e-9)
+eq("avg height", sf(27.0 / pi, 2), 8.6, 1e-9)
+eq("I8", simp(lambda x: sin(x) ** 8, 0, pi / 2), 35 * pi / 256, 1e-8)
+eq("I8 3sf", sf(35 * pi / 256, 2), 0.43)
+eq("I2 3sf", sf(pi / 4, 2), 0.79)
+for n in (2, 4, 8):
+    assert simp(lambda x: sin(x) ** n, 0, pi / 2) < simp(lambda x: sin(x) ** (n // 2), 0, pi / 2)
+
 print("ok")

@@ -254,6 +254,23 @@ Subtract: all terms cancel except the last of \(R_n\) and the first of \(L_n\), 
 This tends to 0 as \(n \to \infty\). The integral is trapped between two sums whose difference tends to 0, so each sum tends to the integral. (For \(f(x) = x^2\) and \(n = 10\): \(R_{10} = 0.385\), \(L_{10} = 0.285\), and the difference is \(0.1 = \tfrac{1}{10}(1 - 0)\).)
 :::
 
+An exam question often asks for this argument in closed form: the two sums are worked out with the formula for \(\sum r^2\), and the difference is shown to tend to 0.
+
+:::eg (Exam style) The region under \(y = 1 + x^2\) for \(0 \le x \le 1\) is divided into \(n\) strips of width \(\dfrac1n\). (a) By considering the rectangles that lie above the curve, show that \(\displaystyle\int_0^1\left(1 + x^2\right)dx < U_n = 1 + \dfrac{(n+1)(2n+1)}{6n^2}\). (b) By considering the rectangles that lie below the curve, show that the integral is greater than \(L_n = 1 + \dfrac{(n-1)(2n-1)}{6n^2}\). (c) Show that \(U_n - L_n = \dfrac1n\), and hence find the value of the integral.
+**(a)** The function is increasing on \([0, 1]\), so on the \(r\)th strip, from \(\dfrac{r-1}{n}\) to \(\dfrac rn\), the highest point of the curve is at the right-hand end. A rectangle of height \(f\left(\dfrac rn\right) = 1 + \dfrac{r^2}{n^2}\) and width \(\dfrac1n\) therefore lies above the curve. [B1]
+\[\int_0^1\left(1 + x^2\right)dx < U_n = \frac1n\sum_{r=1}^n\left(1 + \frac{r^2}{n^2}\right) = \frac1n \times n + \frac{1}{n^3}\sum_{r=1}^nr^2\] [M1 A1]
+Use \(\displaystyle\sum_{r=1}^nr^2 = \frac{n(n+1)(2n+1)}{6}\):
+\[U_n = 1 + \frac{n(n+1)(2n+1)}{6n^3} = 1 + \frac{(n+1)(2n+1)}{6n^2}\] [A1]
+**(b)** The lowest point on the \(r\)th strip is at the left-hand end, where the height is \(f\left(\dfrac{r-1}{n}\right) = 1 + \dfrac{(r-1)^2}{n^2}\), so these rectangles lie below the curve: [B1]
+\[L_n = \frac1n\sum_{r=1}^n\left(1 + \frac{(r-1)^2}{n^2}\right) = 1 + \frac{1}{n^3}\sum_{s=0}^{n-1}s^2\] [M1]
+where \(s = r - 1\). The sum runs to \(n - 1\), so the formula is used with \(n - 1\) in place of \(n\): \(\displaystyle\sum_{s=1}^{n-1}s^2 = \frac{(n-1)n(2n-1)}{6}\). [M1]
+\[L_n = 1 + \frac{(n-1)n(2n-1)}{6n^3} = 1 + \frac{(n-1)(2n-1)}{6n^2}\] [A1]
+**(c)** Expand the two brackets: \((n+1)(2n+1) = 2n^2 + 3n + 1\) and \((n-1)(2n-1) = 2n^2 - 3n + 1\). So
+\[U_n - L_n = \frac{\left(2n^2 + 3n + 1\right) - \left(2n^2 - 3n + 1\right)}{6n^2} = \frac{6n}{6n^2} = \frac1n\] [M1]
+As \(n \to \infty\), \(U_n - L_n \to 0\), and \(U_n \to 1 + \dfrac{2}{6} = \dfrac43\). The integral lies between \(L_n\) and \(U_n\), which both tend to \(\dfrac43\), so \(\displaystyle\int_0^1\left(1 + x^2\right)dx = \dfrac43\). [A1]
+**Check** with \(n = 10\): \(U_{10} = 1 + \dfrac{11 \times 21}{600} = 1.385\) and \(L_{10} = 1 + \dfrac{9 \times 19}{600} = 1.285\). The difference is \(0.1 = \dfrac1{10}\), and \(\dfrac43 = 1.333\) lies between them. Direct integration gives \(\left[x + \dfrac{x^3}{3}\right]_0^1 = \dfrac43\).
+:::
+
 :::eg Find \(\displaystyle\lim_{n\to\infty}\frac{1}{n^3}\sum_{r=1}^nr^2\), (a) as an integral and (b) using the formula for \(\sum r^2\).
 **(a)** Write \(\dfrac{r^2}{n^3} = \dfrac1n \times \left(\dfrac rn\right)^2\), so \(f(x) = x^2\). The values of \(\dfrac rn\) run from \(\dfrac1n \to 0\) up to 1:
 \[\lim_{n\to\infty}\frac1n\sum_{r=1}^n\left(\frac rn\right)^2 = \int_0^1x^2\,dx = \frac13\]

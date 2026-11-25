@@ -115,10 +115,6 @@ For \(\lambda = 4\): \(\begin{pmatrix} -2 & 4 \\ 1 & -2 \end{pmatrix}\) gives \(
 The eigenvalue 0 matches \(\det\mathbf{A} = 0\): the matrix squashes the whole plane onto the line \(y = \tfrac12 x\). **Check**: \(\mathbf{A}\begin{pmatrix} 2 \\ -1 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}\).
 :::
 
-:::board
-For Cambridge 9231, eigenvalues and eigenvectors are tested for 2×2 and 3×3 matrices with **real and distinct** eigenvalues only. A matrix with a repeated eigenvalue (such as a shear) or with complex eigenvalues (such as a rotation) will not be set in a question. You will see them in the widget above, but you do not need to find their eigenvectors.
-:::
-
 ## Three by three matrices
 
 The method is the same, with a cubic characteristic equation and three eigenvalues. Expand \(\det(\mathbf{A} - \lambda\mathbf{I})\) along the row or column with most zeros, keeping the brackets together as long as you can so that the expression factorises.
@@ -264,7 +260,7 @@ and \(b_n = 50000 - a_n = 20000 + 20000\left(\tfrac12\right)^n\).
 
 ### A 3×3 example
 
-:::eg (Exam style) The matrix \(\mathbf{A} = \begin{pmatrix} 3 & 2 & 2 \\ 1 & 2 & 0 \\ -1 & -1 & 1 \end{pmatrix}\) has eigenvalues 1, 2, 3 with eigenvectors \(\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}\), \(\begin{pmatrix} 0 \\ 1 \\ -1 \end{pmatrix}\), \(\begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix}\) respectively. (a) Write down matrices \(\mathbf{Q}\) and \(\mathbf{D}\) such that \(\mathbf{A} = \mathbf{QDQ}^{-1}\). (b) Find \(\mathbf{Q}^{-1}\). (c) Hence find \(\mathbf{A}^4\).
+:::eg (Exam style) The matrix \(\mathbf{A} = \begin{pmatrix} 3 & 2 & 2 \\ 1 & 2 & 0 \\ -1 & -1 & 1 \end{pmatrix}\) has eigenvalues 1, 2, 3 with eigenvectors \(\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}\), \(\begin{pmatrix} 0 \\ 1 \\ -1 \end{pmatrix}\), \(\begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix}\) respectively. (a) Write down matrices \(\mathbf{Q}\) and \(\mathbf{D}\) such that \(\mathbf{A} = \mathbf{QDQ}^{-1}\). (b) Find \(\mathbf{Q}^{-1}\). (c) Hence find \(\mathbf{A}^4\). (d) Write down matrices \(\mathbf{P}\) and \(\mathbf{D}\) such that \(\mathbf{A}^5 = \mathbf{PDP}^{-1}\).
 **(a)**
 \[\mathbf{Q} = \begin{pmatrix} 1 & 0 & 1 \\ -1 & 1 & 1 \\ 0 & -1 & -1 \end{pmatrix}, \qquad \mathbf{D} = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 3 \end{pmatrix}\] [B1] [B1]
 **(b)** \(\det\mathbf{Q} = 1(-1 + 1) - 0 + 1(1 - 0) = 1\). The matrix of cofactors is
@@ -274,23 +270,11 @@ and transposing and dividing by 1:
 **(c)** \(\mathbf{D}^4 = \operatorname{diag}(1, 16, 81)\), so
 \[\mathbf{A}^4 = \mathbf{QD}^4\mathbf{Q}^{-1} = \begin{pmatrix} 1 & 0 & 81 \\ -1 & 16 & 81 \\ 0 & -16 & -81 \end{pmatrix}\begin{pmatrix} 0 & -1 & -1 \\ -1 & -1 & -2 \\ 1 & 1 & 1 \end{pmatrix}\] [M1]
 \[= \begin{pmatrix} 81 & 80 & 80 \\ 65 & 66 & 50 \\ -65 & -65 & -49 \end{pmatrix}\] [A1]
+**(d)** \(\mathbf{A}^5 = \mathbf{QD}^5\mathbf{Q}^{-1}\), so the matrix of eigenvectors is unchanged and \(\mathbf{D}\) must hold the **fifth powers** of the eigenvalues:
+\[\mathbf{P} = \mathbf{Q} = \begin{pmatrix} 1 & 0 & 1 \\ -1 & 1 & 1 \\ 0 & -1 & -1 \end{pmatrix}, \qquad \mathbf{D} = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 32 & 0 \\ 0 & 0 & 243 \end{pmatrix}\] [B1] [B1]
+Giving the \(\mathbf{D}\) of part (a) here is the usual slip: that matrix belongs to \(\mathbf{A}\), not to \(\mathbf{A}^5\).
 
 **Check** that \(\mathbf{QQ}^{-1} = \mathbf{I}\): the first row of \(\mathbf{Q}\) with the first column of \(\mathbf{Q}^{-1}\) is \(1(0) + 0(-1) + 1(1) = 1\), and with the second column \(1(-1) + 0 + 1(1) = 0\). The trace of \(\mathbf{A}^4\) is \(81 + 66 - 49 = 98 = 1 + 16 + 81\).
-:::
-
-:::eg Spot the error: the matrix \(\mathbf{B} = \begin{pmatrix} 4 & -2 \\ 1 & 1 \end{pmatrix}\) has eigenvalue 2 with eigenvector \(\begin{pmatrix} 1 \\ 1 \end{pmatrix}\) and eigenvalue 3 with eigenvector \(\begin{pmatrix} 2 \\ 1 \end{pmatrix}\). Write \(\mathbf{B}\) as \(\mathbf{QDQ}^{-1}\) and find \(\mathbf{Q}^{-1}\) (4 marks).
-A student wrote this answer.
-
-Line 1: \(\mathbf{Q} = \begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix}\), \(\mathbf{D} = \begin{pmatrix} 2 & 0 \\ 0 & 3 \end{pmatrix}\)
-Line 2: \(\det\mathbf{Q} = 1\), so \(\mathbf{Q}^{-1} = \begin{pmatrix} 1 & -1 \\ -1 & 2 \end{pmatrix}\)
-
-In line 1, the columns of \(\mathbf{Q}\) are valid eigenvectors, in the order \(\lambda = 3\) then \(\lambda = 2\). [B1]
-
-**But \(\mathbf{D}\) lists the eigenvalues in the order 2 then 3, so the columns of \(\mathbf{Q}\) and the entries of \(\mathbf{D}\) do not match.** [B0] The product \(\mathbf{QDQ}^{-1}\) comes out as \(\begin{pmatrix} 1 & 2 \\ -1 & 4 \end{pmatrix}\), not \(\mathbf{B}\). The correct \(\mathbf{D}\) for this \(\mathbf{Q}\) is \(\operatorname{diag}(3, 2)\).
-
-Line 2 is correct for the \(\mathbf{Q}\) the student wrote: the determinant is \(2 - 1 = 1\) and the inverse is right. [M1] [A1] The student scores 3 out of 4.
-
-**Check** with the corrected \(\mathbf{D}\): \(\begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix}\begin{pmatrix} 3 & 0 \\ 0 & 2 \end{pmatrix}\begin{pmatrix} 1 & -1 \\ -1 & 2 \end{pmatrix} = \begin{pmatrix} 6 & 2 \\ 3 & 2 \end{pmatrix}\begin{pmatrix} 1 & -1 \\ -1 & 2 \end{pmatrix} = \begin{pmatrix} 4 & -2 \\ 1 & 1 \end{pmatrix}\).
 :::
 
 ## The Cayley–Hamilton theorem
@@ -352,6 +336,25 @@ With \(\mathbf{A}^2 = \begin{pmatrix} 1 & 3 & 1 \\ 1 & 4 & 5 \\ 4 & 1 & 9 \end{p
 
 :::exam What MF19 gives you, and the form of the question
 MF19 has no formulas for eigenvalues, eigenvectors or Cayley–Hamilton: learn the definition \(\mathbf{Ae} = \lambda\mathbf{e}\), the characteristic equation \(\det(\mathbf{A} - \lambda\mathbf{I}) = 0\) and \(\mathbf{A} = \mathbf{QDQ}^{-1}\). Read the question's form carefully. If it asks for matrices \(\mathbf{P}\) and \(\mathbf{D}\) in a stated form, give exactly that form, with the columns of \(\mathbf{P}\) in the order of the entries of \(\mathbf{D}\). When it says "show that", write the determinant expansion in full, then check the trace, determinant and (for \(3 \times 3\)) the sum of minors against your result. Where you are asked to find a power, the form \(\mathbf{QD}^n\mathbf{Q}^{-1}\) is expected, and unsupported answers from a calculator's matrix mode score no marks.
+:::
+
+:::board
+For Cambridge 9231, eigenvalues and eigenvectors are tested for 2×2 and 3×3 matrices with **real and distinct** eigenvalues only. A matrix with a repeated eigenvalue (such as a shear) or with complex eigenvalues (such as a rotation) will not be set in a question. You will see them in the widget above, but you do not need to find their eigenvectors.
+:::
+
+:::eg Spot the error: the matrix \(\mathbf{B} = \begin{pmatrix} 4 & -2 \\ 1 & 1 \end{pmatrix}\) has eigenvalue 2 with eigenvector \(\begin{pmatrix} 1 \\ 1 \end{pmatrix}\) and eigenvalue 3 with eigenvector \(\begin{pmatrix} 2 \\ 1 \end{pmatrix}\). Write \(\mathbf{B}\) as \(\mathbf{QDQ}^{-1}\) and find \(\mathbf{Q}^{-1}\) (4 marks).
+A student wrote this answer.
+
+Line 1: \(\mathbf{Q} = \begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix}\), \(\mathbf{D} = \begin{pmatrix} 2 & 0 \\ 0 & 3 \end{pmatrix}\)
+Line 2: \(\det\mathbf{Q} = 1\), so \(\mathbf{Q}^{-1} = \begin{pmatrix} 1 & -1 \\ -1 & 2 \end{pmatrix}\)
+
+In line 1, the columns of \(\mathbf{Q}\) are valid eigenvectors, in the order \(\lambda = 3\) then \(\lambda = 2\). [B1]
+
+**But \(\mathbf{D}\) lists the eigenvalues in the order 2 then 3, so the columns of \(\mathbf{Q}\) and the entries of \(\mathbf{D}\) do not match.** [B0] The product \(\mathbf{QDQ}^{-1}\) comes out as \(\begin{pmatrix} 1 & 2 \\ -1 & 4 \end{pmatrix}\), not \(\mathbf{B}\). The correct \(\mathbf{D}\) for this \(\mathbf{Q}\) is \(\operatorname{diag}(3, 2)\).
+
+Line 2 is correct for the \(\mathbf{Q}\) the student wrote: the determinant is \(2 - 1 = 1\) and the inverse is right. [M1] [A1] The student scores 3 out of 4.
+
+**Check** with the corrected \(\mathbf{D}\): \(\begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix}\begin{pmatrix} 3 & 0 \\ 0 & 2 \end{pmatrix}\begin{pmatrix} 1 & -1 \\ -1 & 2 \end{pmatrix} = \begin{pmatrix} 6 & 2 \\ 3 & 2 \end{pmatrix}\begin{pmatrix} 1 & -1 \\ -1 & 2 \end{pmatrix} = \begin{pmatrix} 4 & -2 \\ 1 & 1 \end{pmatrix}\).
 :::
 
 :::try Start easy, finish at exam standard

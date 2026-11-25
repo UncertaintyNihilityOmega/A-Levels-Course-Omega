@@ -215,4 +215,19 @@ eq("euler", sf(d(100000), 4), 0.5772, 2e-5)
 for n in range(1, 60):
     assert log(n + 1) < H(n)
 
+# review fix: bounds for the integral of 1 + x^2 with n rectangles
+for n in (1, 2, 5, 10, 37):
+    Un = sum(F(1, n) * (1 + F(r * r, n * n)) for r in range(1, n + 1))
+    Ln = sum(F(1, n) * (1 + F((r - 1) ** 2, n * n)) for r in range(1, n + 1))
+    assert Un == 1 + F((n + 1) * (2 * n + 1), 6 * n * n), n
+    assert Ln == 1 + F((n - 1) * (2 * n - 1), 6 * n * n), n
+    assert Un - Ln == F(1, n), n
+    assert Ln < F(4, 3) < Un
+    assert (n + 1) * (2 * n + 1) - (n - 1) * (2 * n - 1) == 6 * n
+eq("U10", sf(float(1 + F(11 * 21, 600)), 4), 1.385, 1e-9)
+eq("L10", sf(float(1 + F(9 * 19, 600)), 4), 1.285, 1e-9)
+eq("43", sf(4 / 3, 4), 1.333, 1e-9)
+eq("int", simp(lambda x: 1 + x * x, 0, 1), 4 / 3, 1e-9)
+assert sum(s * s for s in range(0, 10)) == 9 * 10 * 19 // 6
+
 print("ok")

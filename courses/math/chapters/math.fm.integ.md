@@ -57,6 +57,19 @@ Now \(\sinh(2\ln 2) = \dfrac{4 - \frac14}{2} = \dfrac{15}{8}\), so
 
 An odd power of \(\sinh x\) or \(\cosh x\) can be split, keeping one factor for the substitution. For \(\int\sinh^3x\,dx\) write \(\sinh^3x = \sinh x\left(\cosh^2x - 1\right)\) and let \(u = \cosh x\), so \(du = \sinh x\,dx\):
 \[\int\sinh^3x\,dx = \int\left(u^2 - 1\right)du = \frac{\cosh^3x}{3} - \cosh x + c\]
+The same idea works for any odd power: keep one factor of \(\sinh x\) (or \(\cosh x\)), turn the rest into the other function with \(\cosh^2x - \sinh^2x = 1\), and substitute. An even power needs the double-angle identities instead.
+
+:::eg (Exam style) Use the substitution \(u = \cosh x\) to find the exact value of \(\displaystyle\int_0^{\ln 3}\sinh^3x\,dx\).
+Split off one factor of \(\sinh x\), and write the other two in terms of \(\cosh x\):
+\[\sinh^3x = \sinh x\left(\cosh^2x - 1\right)\] [M1]
+With \(u = \cosh x\), \(du = \sinh x\,dx\), so the integrand becomes \(\left(u^2 - 1\right)du\): [A1]
+
+Limits: \(x = 0\) gives \(u = \cosh 0 = 1\). \(x = \ln 3\) gives \(u = \cosh(\ln 3) = \dfrac{3 + \frac13}{2} = \dfrac53\). [B1]
+\[\int_1^{5/3}\left(u^2 - 1\right)du = \left[\frac{u^3}{3} - u\right]_1^{5/3}\] [M1]
+At the top, \(\dfrac{125}{81} - \dfrac53 = \dfrac{125 - 135}{81} = -\dfrac{10}{81}\). At the bottom, \(\dfrac13 - 1 = -\dfrac23 = -\dfrac{54}{81}\). So
+\[\text{value} = -\frac{10}{81} + \frac{54}{81} = \frac{44}{81}\] [A1]
+**Check**: \(\sinh^3x\) rises from 0 to \(\sinh^3(\ln 3) = \left(\tfrac43\right)^3 = 2.37\) over an interval of length 1.10, and it is small until \(x\) is large. \(\tfrac{44}{81} = 0.543\) is a believable fraction of the box \(1.10 \times 2.37\).
+:::
 
 :::eg Find \(\displaystyle\int_0^1 x\cosh x\,dx\), giving your answer in terms of \(e\).
 Use integration by parts with \(u = x\), \(\dfrac{dv}{dx} = \cosh x\), so \(v = \sinh x\):
@@ -126,6 +139,10 @@ Each is a logarithm: \(\cosh^{-1}\tfrac52 = \ln\left(\tfrac52 + \tfrac{\sqrt{21}
 
 :::warn Which form is it?
 Look at the signs under the root. \(a^2 - x^2\) gives \(\sin^{-1}\) (a circle-like integrand, defined only for \(\lvert x \rvert < a\)). \(x^2 + a^2\) gives \(\sinh^{-1}\) (defined for all \(x\)). \(x^2 - a^2\) gives \(\cosh^{-1}\) (defined only for \(x > a\)). Using \(\sin^{-1}\) for a plus sign is the commonest error, and it loses the method mark as well.
+:::
+
+:::plot The curves y = 1/√(x² + 9) and y = 1/√(9 − x²) for 0 ≤ x ≤ 2.9. The shaded area under the first curve is ∫₀² 1/√(x² + 9) dx = sinh⁻¹(2/3) = 0.625. The second curve has a vertical asymptote at x = 3, which is why the sin⁻¹ form needs |x| < a.
+--f "1/sqrt(x**2+9)" --f "1/sqrt(9-x**2)" --label "y = 1/√(x² + 9)" --label "y = 1/√(9 − x²)" --x 0 2.9 --y 0 1.5 --shade "0,0,2" --legend tl
 :::
 
 Two related forms have no root. From 9709, \(\int\dfrac{1}{x^2 + a^2}\,dx = \dfrac1a\tan^{-1}\dfrac xa\), and the log forms \(\int\dfrac{1}{a^2 - x^2}\,dx = \dfrac{1}{2a}\ln\left\lvert\dfrac{a + x}{a - x}\right\rvert\) and \(\int\dfrac{1}{x^2 - a^2}\,dx = \dfrac{1}{2a}\ln\left\lvert\dfrac{x - a}{x + a}\right\rvert\) are all on MF19 (found by partial fractions). For \(\lvert x \rvert < a\), the first of the log forms equals \(\dfrac1a\tanh^{-1}\dfrac xa\), because \(\tanh^{-1}u = \tfrac12\ln\dfrac{1 + u}{1 - u}\).
@@ -221,6 +238,20 @@ Limits: \(x = 0\) gives \(u = 0\). \(x = 1\) gives \(\sinh u = \tfrac12\), so \(
 Use \(\sinh 2u = 2\sinh u\cosh u\). At the upper limit \(\sinh u = \tfrac12\) and \(\cosh u = \sqrt{1 + \tfrac14} = \tfrac{\sqrt5}{2}\), so \(\sinh 2u_1 = 2 \times \tfrac12 \times \tfrac{\sqrt5}{2} = \tfrac{\sqrt5}{2}\):
 \[\text{value} = 2\sinh^{-1}\tfrac12 + \tfrac{\sqrt5}{2} = 2\ln\frac{1 + \sqrt5}{2} + \frac{\sqrt5}{2} = 2.08\ (3\ \text{s.f.})\]
 **Check**: \(\sqrt{x^2 + 4}\) goes from 2 to \(\sqrt5 = 2.24\) over a unit interval, so the area should be a little over 2.
+:::
+
+The third row of the table, \(x = a\cosh u\), works the same way, but now the root is \(\sqrt{x^2 - a^2} = a\sinh u\) and the limits need \(\cosh^{-1}\).
+
+:::eg (Exam style) Use the substitution \(x = 2\cosh u\) to find the exact value of \(\displaystyle\int_2^4\sqrt{x^2 - 4}\,dx\).
+\(x = 2\cosh u\) gives \(\dfrac{dx}{du} = 2\sinh u\), and
+\[\sqrt{x^2 - 4} = \sqrt{4\cosh^2u - 4} = 2\sqrt{\sinh^2u} = 2\sinh u\] [B1]
+since \(\sinh u \ge 0\) for \(u \ge 0\). The integrand becomes
+\[2\sinh u \times 2\sinh u = 4\sinh^2u = 2\left(\cosh 2u - 1\right)\] [M1 A1]
+Limits: \(x = 2\) gives \(\cosh u = 1\), so \(u = 0\). \(x = 4\) gives \(\cosh u = 2\), so \(u = \cosh^{-1}2 = \ln\left(2 + \sqrt3\right)\). [B1]
+\[\int_0^{u_1}2\left(\cosh 2u - 1\right)du = \left[\sinh 2u - 2u\right]_0^{u_1}\]
+At the top \(\cosh u = 2\) and \(\sinh u = \sqrt{4 - 1} = \sqrt3\), so \(\sinh 2u_1 = 2\sinh u_1\cosh u_1 = 2 \times \sqrt3 \times 2 = 4\sqrt3\). [M1]
+\[\text{value} = 4\sqrt3 - 2\ln\left(2 + \sqrt3\right) = 4.29\ (3\ \text{s.f.})\] [A1]
+**Check** with the general result for \(\sqrt{x^2 - a^2}\) given just below: \(\tfrac12\left[x\sqrt{x^2 - 4} - 4\cosh^{-1}\tfrac x2\right]_2^4 = \tfrac12\left(4\sqrt{12} - 4\ln\left(2 + \sqrt3\right)\right) = 4\sqrt3 - 2\ln\left(2 + \sqrt3\right)\), the same.
 :::
 
 The same working for the other two cases gives general results. They are not in MF19, so you derive them when a question asks (or learn them for speed).
