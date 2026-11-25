@@ -6,8 +6,14 @@
 - Queue item 10, Further Mathematics (math.fm, 50 chapters, P19–P36, plan in courses/math/FURTHER.md): LEAD done
   Nov 20 (gold math.fm.roots); P19–P24 written (16 chapters; widgets fm-matrix, fm-polar, fm-planes, fm-maclaurin);
   P25–P27 written (widgets fm-demoivre, fm-de); REVIEW P19–P22 and its 8 FIX items closed; REVIEW P23–P26 done (10
-  FIX items open in REVIEW.md; P23's depth judged sufficient once its items are added). Next: FIX + WRITE P28, WRITE
-  P29, then REVIEW P27–P30. Waiting for the reset at 22:20 UTC Nov 20 (5-hour window 85%, weekly 89%).
+  FIX items open in REVIEW.md; P23's depth judged sufficient once its items are added). Run of Nov 25 (preview
+  server allowed): REVIEW P23–P26 FIX items closed; P28–P31 written (widgets fm-topple, fm-vcircle, fm-impact,
+  fm-tdist). Waiting for the reset at 10:40 UTC Nov 25 (5-hour window 94%, weekly 13%). Next: REVIEW P27–P30, WRITE
+  P32, P33 (the kit allows writing up to P34 before the review). Writers: never run old scripts in
+  courses/math/scratch/ (a P31 Writer ran an old `scratch/fix1.py` that rewrote math.fm.rational; repaired). Reviewer
+  notes: fm-topple uses `data-width`/`data-height`, not the spec's `data-w`/`data-h`, which clash with the widget name
+  attribute; the reduction FIX plot has four curves (reviewer: fm-topple uses `data-width`/`data-height`, not the spec's
+  `data-w`/`data-h`, which clash with the widget name attribute; the reduction FIX plot has four curves).
 - Usage gate: weekly limit 95% for every launch (AGENT-RUN.md "Usage gate").
 - Name: "Zero to A* Ω" (titles, installed app, shared links). Top bar and Home heading: the hand-drawn wordmark "Log end"
   (`engine/wordmark.py --shell` writes it into shell.html; colours in style.css `.wm-*`).
