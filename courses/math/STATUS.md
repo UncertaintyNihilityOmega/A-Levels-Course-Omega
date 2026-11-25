@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-25 · WRITE P29 · math.fm.elastic (5692 words), math.fm.circular (4595), math.fm.vertical (5020); widget fm-vcircle (probe clean; node test data/test_fm_vcircle.js 373 cases). Reviewer: press Play in each mode of fm-vcircle and Tab through it, look at dark mode; figures checked once in light only; no June 2026 9231/31 read, shapes follow June 2025 Q3, Q5, Q7.
+Last: 2026-11-25 · WRITE P28 · math.fm.projectiles (4769 words), math.fm.com (5387), math.fm.rigid (5539); check and phone pass; widget fm-topple (probe clean incl. bad attributes; data/test_fm_topple.js 7695 checks). Reviewer: fm-topple uses data-width/data-height (spec's data-w clashes with data-w=NAME); sliding and toppling states looked at, dark only probed; June 2026 9231/3x shapes (hemisphere on cylinder suspension, projectile striking plane at right angles) taken from an unofficial summary, not recorded in FACTS; semicircle MF19 results derived from sector/arc rows
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -32,10 +32,10 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P25: reviewed 2026-11-20
 - P26: reviewed 2026-11-20
 - P27: written 2026-11-20
-- P28: writing 2026-11-25
+- P28: written 2026-11-25
 - P29: written 2026-11-25
 - P30: writing 2026-11-25
-- P31: open
+- P31: writing 2026-11-25
 - P32: open
 - P33: open
 - P34: open
