@@ -234,9 +234,9 @@ A particle on a string speeds up while the pull towards the equilibrium position
 **(a)** The weight component down the plane is \(0.8 \times 10 \times 0.6 = 4.8\) N. In equilibrium the tension balances it:
 \[\frac{12x}{0.5} = 4.8\] [M1]
 \[x = 0.2\ \mathrm{m}\] [A1]
-**(b)** The speed is greatest where the resultant force is zero, at extension 0.2 m (the answer to (a)). [B1] \(P\) has moved \(0.5 + 0.2 = 0.7\) m down the plane. Energy:
+**(b)** The speed is greatest where the resultant force is zero, at extension 0.2 m (the answer to (a)). [B1] The start is already at the natural length, so \(P\) has moved 0.2 m down the plane, losing GPE of \(4.8 \times 0.2\). Energy:
 \[\tfrac12 \times 0.8\,v^2 = 4.8 \times 0.2 - \frac{12 \times 0.2^2}{2 \times 0.5}\] [M1 A1]
-The start is already at the natural length, so \(P\) has moved only 0.2 m down the plane, losing GPE of \(4.8 \times 0.2\). So
+So
 \[0.4v^2 = 0.96 - 0.48 = 0.48 \quad\Rightarrow\quad v = 1.0954\ldots\] [A1]
 The greatest speed is 1.10 m s⁻¹ (3 s.f.).
 

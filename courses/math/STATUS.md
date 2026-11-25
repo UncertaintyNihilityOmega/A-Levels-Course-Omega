@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-25 · WRITE P31 · math.fm.crv (4228 words), math.fm.inference (4414), math.fm.twosample (4255); checks ok, phone ok; widget fm-tdist (probe clean light/dark/phone/bad attributes; data/test_fm_tdist.js 577 cases vs MF19 rows nu=1,5,10,30); question shapes from June 2025 FS Q1, Q2, Q4 per FACTS (June 2026 9231/41 PDFs could not be read as text, so not used). Reviewer: t table extract in inference quoted to 3 d.p. from computed values; data/fm-twosample-fig.py builds the paired figure; Spot the error in inference loses only the CV mark by follow-through (7/8).
+Last: 2026-11-25 · REVIEW P27, P28, P29, P30, P31 · 8 items (twosample paired δ0≠0, crv CDF with constants, circular two-string, vertical symbolic slack, elastic falling-from-O exam examples in the June 2026 shapes; fm-de superscripts, fm-tdist off-table ν, fm-vcircle Reset mode). Fixed: de2 plot (no figure), elastic eg distance slip, variable kv 'stops' wording and quiz, rigid/variable/inference/projectiles figure labels; fm-topple data-width/height recorded; t table matches MF19; June 2026 9231/31 and /41 read into FACTS; P34/P36 notes updated.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -31,13 +31,13 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P24: reviewed 2026-11-20
 - P25: reviewed 2026-11-20
 - P26: reviewed 2026-11-20
-- P27: written 2026-11-20
-- P28: written 2026-11-25
-- P29: written 2026-11-25
-- P30: written 2026-11-25
-- P31: written 2026-11-25
-- P32: open
-- P33: open
+- P27: reviewed 2026-11-25
+- P28: reviewed 2026-11-25
+- P29: reviewed 2026-11-25
+- P30: reviewed 2026-11-25
+- P31: reviewed 2026-11-25
+- P32: writing 2026-11-25
+- P33: writing 2026-11-25
 - P34: open
 - P35: open
 - P36: open

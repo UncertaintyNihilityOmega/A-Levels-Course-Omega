@@ -95,7 +95,7 @@ A rod fixed at a hinge can turn about it, so the hinge reaction passes through t
   <text class="tl halo" x="44" y="112" text-anchor="end">Y</text>
   <text class="tl" x="140" y="196">50 N</text>
   <text class="tl" x="216" y="196">30 N</text>
-  <text class="tl" x="152" y="132">40°</text>
+  <text class="tl" x="146" y="142">40°</text>
   <text class="tl" x="40" y="168" text-anchor="end">A</text>
   <text class="tl" x="214" y="146">B</text>
   <text class="tl" x="40" y="23" text-anchor="end">C</text>

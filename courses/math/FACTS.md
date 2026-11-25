@@ -138,6 +138,30 @@ FM LEAD, 20 Nov 2026. Outcome ids (1.1a …) are ours, in the syllabus's order; 
   separate booklet). Topics: two-sample test with large samples (normal, variances not assumed equal) [7]; a
   piecewise PDF, mean, median, CDF of Y = X²; χ² goodness of fit to a binomial (expected values given in a table,
   classes to combine); pooled-variance t confidence interval; Wilcoxon matched-pairs then a paired sign test; a PGF.
+- 9231/31 June 2026 (read by the P27–P31 REVIEW, 25 Nov 2026, from the question paper and mark scheme in
+  scratch/papers): front page as June 2025 ("You must answer on the question paper", MF19, 3 s.f. or 1 d.p. for
+  angles, "use 10 m s-2" for g); 1 h 30, total 50, 7 questions (7, 5, 9, 8, 9, 6, 6): centre of mass of a solid
+  hemisphere of radius 3r on a cylinder of radius r, height x [4], then the angle when suspended from a point on the
+  hemisphere's rim with x = r [3]; a particle on a string fixed at A and B (one vertically below the other), both
+  sections taut, horizontal circle at given ω: TA and TB [5]; driving force 8 N, resistance 0.5v²: speed after 0.8 m
+  with v dv/dx [5], t in terms of v with dv/dt [4]; oblique impact with a barrier, tan α = 12/5 and KE after = 4/13
+  of KE before: e [4], second barrier at 120°, rebound angle [4]; string of length a, projected from the lowest point
+  with speed 2√(ag): T in terms of θ [4], greatest height after the string goes slack [5]; elastic string, particle
+  released from O and falling: show v² = −4(x² − 5x − 12.5) [3], greatest extension E [1], greatest speed [2];
+  projectile from O on level ground striking an inclined plane (tan α = 4/3, foot 10 m from O) at right angles at a
+  point 5 m up the slope: u and θ [6]. Mark scheme: B1, M1, A1, DM1 and DB1 (dependent on the starred *M1 or *B1),
+  B1FT/A1FT, AWRT, OE, ISW.
+- 9231/41 June 2026 (read by the P27–P31 REVIEW, 25 Nov 2026, from the question paper and mark scheme in
+  scratch/papers): front page as 9231/31 (no g line); 1 h 30, total 50, 6 questions (7, 10, 6, 9, 8, 10): why a
+  Wilcoxon signed-rank test is not appropriate [1], sign test for a median from a stem-and-leaf sample of 15 [6]; χ²
+  test of independence on a 2×3 table [8], which company is most unreliable from the contributions [2]; pooled
+  two-sample 95% confidence interval from Σx, Σx², Σy, Σy² (n = 7, 9; normal, equal variances assumed) [6];
+  piecewise CDF (cubic then quadratic) with constants: verify the median [1], find a and b [3], the PDF [2], E(1/X)
+  [3]; paired t-test from a before/after table of 8, H0: μd = 5 against H1: μd > 5 at 10% (critical value 1.415) [7],
+  an assumption [1]; PGF kt(at + 1)² with E(X) given: a and k [5], Var(X) [2], P(Y = 0) for the sum of three
+  observations [3]. Mark scheme conclusions: "sufficient evidence to support/suggest …" or "insufficient evidence
+  …", in context, with a level of uncertainty; "No evidence" is not accepted; "accept H0" and "do not reject H0" both
+  allowed.
 - Mark scheme style (9231/11 June 2025): B1, M1, A1, A1 FT, and DM1 (a method mark that depends on an earlier M);
   induction is marked B1 base case, B1 inductive hypothesis, M1 A1 inductive step, A1 conclusion.
 - Specimen paper 9231/01 "For examination from 2027" (Cambridge site, read by the P19–P22 REVIEW, 20 Nov 2026):

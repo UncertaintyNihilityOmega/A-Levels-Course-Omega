@@ -44,7 +44,7 @@ The number of values that are free to vary once a sample statistic is fixed. Her
 :::
 
 :::plot A \(t\) distribution with 4 degrees of freedom has the same bell shape as \(N(0, 1)\) but is lower in the middle and higher in the tails. The line at \(x = 2\) cuts off the upper tail: \(P(T > 2) = 0.0581\) for \(t_4\), against 0.0228 for the normal.
---f "0.3989*exp(-(x**2)/2)" --f "0.375*(1+x**2/4)**(-2.5)" --label "N(0, 1)" --label "t with 4 degrees of freedom" --x -4.5 4.5 --y 0 0.55 --vline 2 --legend tl
+--f "0.3989*exp(-(x**2)/2)" --f "0.375*(1+x**2/4)**(-2.5)" --label "N(0, 1)" --label "t with 4 degrees of freedom" --x -4.5 4.5 --y 0 0.55 --vline 2 --legend tr
 :::
 
 The widget below draws the \(t\) density for any number of degrees of freedom next to the normal curve and shades the critical region. Keep it open while you read the next section.

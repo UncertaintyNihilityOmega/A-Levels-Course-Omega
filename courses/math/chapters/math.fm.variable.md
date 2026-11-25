@@ -134,7 +134,7 @@ The distance is \(6.07\) m (3 s.f.). [A1]
 :::
 
 :::plot A boat's speed \(v\) against the time \(t\) in seconds, under a resistance proportional to \(v\) (see the example below): \(v = 10e^{-t/5}\) falls to half its value after \(5\ln 2 = 3.47\) s but never reaches zero.
---f "10*exp(-x/5)" --label "v = 10e^(−t/5)" --x 0 20 --y 0 13 --pt "3.466,5,half speed at t = 3.47@ne" --ylabel "v (m/s)" --legend tr
+--f "10*exp(-x/5)" --label "v = 10 exp(−t/5)" --x 0 20 --y 0 13 --pt "3.466,5,half speed at t = 3.47@ne" --xlabel "t (s)" --ylabel "v (m/s)" --legend tr
 :::
 
 ## Force depending on position: \(v\dfrac{dv}{dx}\)
@@ -213,7 +213,7 @@ At \(t = 5\), \(v = 10e^{-1} = 3.68\) m s⁻¹.
 The \(v\) cancels, so \(v\) decreases at a constant rate with distance: \(v = 10 - \dfrac{x}{5}\). It stops when \(v = 0\), at \(x = 50\) m.
 :::
 
-Look at what happened. According to \(v = 10e^{-t/5}\) the boat never stops: \(v > 0\) for every \(t\). Yet the distance to stop is finite, 50 m. Both are true: the boat slows more and more gently, and the total distance is a finite sum. For resistance \(kv\), distance to stop \(= \dfrac{mu}{k}\) (here \(\dfrac{200 \times 10}{40} = 50\)). This is a result worth recognising, and the units check it: \(\dfrac{\text{kg} \times \text{m/s}}{\text{kg/s}}\) is metres.
+Look at what happened. According to \(v = 10e^{-t/5}\) the boat never stops: \(v > 0\) for every \(t\). Yet the total distance is finite: the boat creeps ever closer to 50 m without passing it. Both are true: the boat slows more and more gently, and the total distance is a finite sum. For resistance \(kv\), the limiting distance is \(\dfrac{mu}{k}\) (here \(\dfrac{200 \times 10}{40} = 50\)). This is a result worth recognising, and the units check it: \(\dfrac{\text{kg} \times \text{m/s}}{\text{kg/s}}\) is metres.
 
 ### Resistance proportional to the square of the speed
 
@@ -236,7 +236,7 @@ When \(v = 2\): \(\tfrac12 = 0.4t + \tfrac18\), so \(0.4t = \tfrac38\) and \(t =
 \[x = \frac{\ln 4}{0.4} = 3.47\ \text{m}\] [A1]
 :::
 
-Compare the two models. With resistance \(kv\) the particle stops after a finite distance \(\dfrac{mu}{k}\), but \(v \to 0\) only as \(t \to \infty\). With \(kv^2\) the speed is \(ue^{-kx/m}\) and \(\dfrac{1}{v} = \dfrac{kt}{m} + \dfrac1u\): the speed tends to zero only as \(x \to \infty\) as well as \(t \to \infty\). So "find the distance to rest" has an answer in the first model and has none in the second. Whenever you reach a result like \(\ln 0\), stop and think about a limit.
+Compare the two models. With resistance \(kv\) the distance travelled tends to the finite limit \(\dfrac{mu}{k}\), while \(v \to 0\) only as \(t \to \infty\). With \(kv^2\) the speed is \(ue^{-kx/m}\) and \(\dfrac{1}{v} = \dfrac{kt}{m} + \dfrac1u\): the speed tends to zero only as \(x \to \infty\) as well as \(t \to \infty\). So "find the distance to rest" has an answer in the first model and has none in the second. Whenever you reach a result like \(\ln 0\), stop and think about a limit.
 
 ### Driving forces and terminal speed
 
@@ -322,7 +322,7 @@ Three kinds of limit appear in exam questions. Name each one in words, because t
 
 :::key Limits and what they mean
 - **\(v \to V\) as \(t \to \infty\)**: the particle approaches a terminal speed \(V\) and never exceeds it. Written \(V = \lim v\), it is also the value of \(v\) where \(a = 0\).
-- **\(v\) never reaches 0**: a result of the form \(v = ue^{-kt}\) or \(v = \dfrac{u}{1 + kut}\) is positive for every \(t\), so the particle does not stop in finite time. A result like \(v = u - kx\) reaches 0 at \(x = \dfrac{u}{k}\): it stops in a finite distance.
+- **\(v\) never reaches 0**: a result of the form \(v = ue^{-kt}\) or \(v = \dfrac{u}{1 + kut}\) is positive for every \(t\), so the particle does not stop in finite time. A result like \(v = u - kx\) gives \(v = 0\) at \(x = \dfrac{u}{k}\): the distance travelled is finite, even if (as with resistance \(kv\)) that point is only reached in the limit \(t \to \infty\).
 - **\(v^2 > 0\) for all \(x\)**: the particle goes to infinity and never returns (escape). The critical case, \(v^2 \to 0\) as \(x \to \infty\), is the escape speed.
 :::
 
@@ -440,11 +440,11 @@ A: (a) \(\displaystyle\int\frac{dv}{v^2} = -k\int dt\) gives \(-\dfrac1v = -kt +
 - \(6x\)
 > \(\tfrac12 v^2 = 3x^2 + c\) and \(c = 0\), so \(v^2 = 6x^2\). The answer \(3x^2\) forgets that \(\int v\,dv = \tfrac12 v^2\), and \(12x^2\) integrates \(6x\) as \(6x^2\) before doubling.
 ? A boat slows against a resistance \(kv\). Which is true?
-+ It stops after a finite distance, but its speed is positive for every finite time.
++ It never goes beyond a finite distance, but its speed is positive for every finite time.
 - It stops after a finite time, but travels an infinite distance.
 - It stops after a finite time and a finite distance.
 - It never stops and travels an infinite distance.
-> \(v = ue^{-kt/m}\) is positive for all \(t\), but \(v = u - \dfrac{k}{m}x\) reaches 0 at the finite distance \(\dfrac{mu}{k}\). Do not confuse the two statements.
+> \(v = ue^{-kt/m}\) is positive for all \(t\), and \(v = u - \dfrac{k}{m}x\) shows the distance approaches the finite limit \(\dfrac{mu}{k}\) (where \(v\) would be 0) without ever reaching it. Do not confuse the two statements.
 ? A particle starts from rest with force \(6 - t\) N and mass 1 kg. What is true at \(t = 6\)?
 + Its speed is at a maximum, because the force is zero there.
 - It is at rest, because the force is zero.

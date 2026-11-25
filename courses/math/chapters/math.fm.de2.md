@@ -311,6 +311,10 @@ At \(t = 0\), \(\dot{x} = -A + 2B + 1 = 0\), so \(1 + 2B + 1 = 0\) and \(B = -1\
 
 The complementary function is the natural motion, the PI is the response to the push. The solution of an equation whose roots all have negative real part is therefore *transient plus steady response*.
 
+:::plot The particle of the last example: the solution \(x = -e^{-t}(\cos 2t + \sin 2t) + 2\cos t + \sin t\) starts at \(x = 1\) and, within about 3 seconds, merges with the steady oscillation \(2\cos t + \sin t\) of amplitude \(\sqrt5\). The gap between the curves is the transient \(e^{-t}(\ldots)\), which dies away.
+--f "-exp(-x)*(cos(2*x)+sin(2*x))+2*cos(x)+sin(x)" --f "2*cos(x)+sin(x)" --label "full solution x(t)" --label "steady state 2cos t + sin t" --x 0 13 --y -3 4 --xlabel t --ylabel x --legend tr
+:::
+
 :::key Long-term behaviour from the roots
 - If every root of the AE has a **negative real part** (\(m < 0\), or \(p < 0\)), the complementary function tends to 0: it is a **transient**. For large \(x\) the solution behaves like the particular integral.
 - If a root has a **positive real part**, the complementary function grows without bound, and the PI cannot rescue it.

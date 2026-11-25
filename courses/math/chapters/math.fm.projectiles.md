@@ -127,7 +127,7 @@ For \(R = 80\): \(\sin 2\theta = \dfrac{80 \times 10}{900} = 0.8889\). [M1]
 :::
 
 :::plot The range on level ground is proportional to sin 2θ. It is greatest at θ = 45°, and two angles that add up to 90° give the same range: the curve is symmetric about θ = 45°.
---f "sin(2*x)+0*sqrt(90-x)" --label "R ÷ (V²/g) = sin 2θ" --x 0 105 --y 0 1.3 --deg --xlabel "θ (degrees)" --pt "45,1,(45°, 1)@n" --pt "30,0.866,30°@nw" --pt "60,0.866,60°@ne" --legend tr
+--f "sin(2*x)+0*sqrt(90-x)" --label "R ÷ (V²/g) = sin 2θ" --x 0 118 --y 0 1.3 --deg --xlabel "θ (degrees)" --pt "45,1,(45°, 1)@n" --pt "30,0.866,30°@nw" --pt "60,0.866,60°@ne" --legend tr
 :::
 
 The graph is symmetric about \(45^\circ\) because \(\sin 2\theta = \sin(180^\circ - 2\theta) = \sin 2(90^\circ - \theta)\). So **angles \(\theta\) and \(90^\circ - \theta\) give the same range**: the flatter shot takes less time, the steeper one more, and the product \(V\cos\theta \times T\) comes out the same. Try it:
