@@ -8,12 +8,9 @@
   P25–P27 written (widgets fm-demoivre, fm-de); REVIEW P19–P22 and its 8 FIX items closed; REVIEW P23–P26 done (10
   FIX items open in REVIEW.md; P23's depth judged sufficient once its items are added). Run of Nov 25 (preview
   server allowed): REVIEW P23–P26 FIX items closed; P28–P31 written (widgets fm-topple, fm-vcircle, fm-impact,
-  fm-tdist). Waiting for the reset at 10:40 UTC Nov 25 (5-hour window 94%, weekly 13%). Next: REVIEW P27–P30, WRITE
-  P32, P33 (the kit allows writing up to P34 before the review). Writers: never run old scripts in
-  courses/math/scratch/ (a P31 Writer ran an old `scratch/fix1.py` that rewrote math.fm.rational; repaired). Reviewer
-  notes: fm-topple uses `data-width`/`data-height`, not the spec's `data-w`/`data-h`, which clash with the widget name
-  attribute; the reduction FIX plot has four curves (reviewer: fm-topple uses `data-width`/`data-height`, not the spec's
-  `data-w`/`data-h`, which clash with the widget name attribute; the reduction FIX plot has four curves).
+  fm-tdist). Run of Nov 25 afternoon (preview server allowed): REVIEW P27–P31, WRITE P32 and P33 running. Writers:
+  never run old scripts in courses/math/scratch/ (a P31 Writer ran an old `scratch/fix1.py` that rewrote
+  math.fm.rational; repaired).
 - Usage gate: weekly limit 95% for every launch (AGENT-RUN.md "Usage gate").
 - Name: "Zero to A* Ω" (titles, installed app, shared links). Top bar and Home heading: the hand-drawn wordmark "Log end"
   (`engine/wordmark.py --shell` writes it into shell.html; colours in style.css `.wm-*`).
@@ -83,6 +80,11 @@ Since 0.6.0 (Nov 13 2026). Earlier work: CHANGELOG.md; what readers see of the i
 
 ## For the user
 Things only you can do. None of them stops the automatic runs.
+- **June 2026 Further Maths papers (optional; agents could not read the copies they found online).**
+  1. Download 9231/41 June 2026 (Further Statistics) and 9231/31 June 2026 (Further Mechanics), question paper and
+     mark scheme for each.
+  2. Save the four PDFs in `courses\math\scratch\papers\` (git-ignored: never published).
+  3. Tell the Organizer "papers are in scratch/papers": the next review checks the FS and FM chapters against them.
 - **Google sitemap: wait, then look again.** The sitemap is published and valid (382 pages). "Couldn't fetch" is what
   Search Console usually shows for the first days of a new site.
   1. In 3 to 7 days open Google Search Console → Sitemaps.
