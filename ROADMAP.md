@@ -5,13 +5,14 @@
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
 - Queue item 10, Further Mathematics (math.fm, 50 chapters, P19–P36, plan in courses/math/FURTHER.md): LEAD done
   Nov 20 (gold math.fm.roots); P19–P24 written (16 chapters; widgets fm-matrix, fm-polar, fm-planes, fm-maclaurin);
-  P25–P27 written (widgets fm-demoivre, fm-de); REVIEW P19–P22 and its 8 FIX items closed; REVIEW P23–P26 done (10
-  FIX items open in REVIEW.md; P23's depth judged sufficient once its items are added). Run of Nov 25 (preview
-  server allowed): REVIEW P23–P26 FIX items closed; P28–P31 written (widgets fm-topple, fm-vcircle, fm-impact,
-  fm-tdist). Run of Nov 25 afternoon (preview server allowed): REVIEW P27–P31, WRITE P32 and P33 running. June 2026 9231/31
-  and 9231/41 papers and mark schemes (user download) in courses/math/scratch/papers/ with .txt copies. Writers:
-  never run old scripts in courses/math/scratch/ (a P31 Writer ran an old `scratch/fix1.py` that rewrote
-  math.fm.rational; repaired).
+  P25–P33 and P35 written, P19–P31 reviewed, every FIX item closed (math 104/112 chapters).
+  Run of Nov 25 afternoon: REVIEW P27–P31 and its 8 FIX items; P32 (fm-chisq), P33 (fm-pgf), P35 (Pure mocks, mixed
+  pure). June 2026 9231/31 and 9231/41 papers and mark schemes (user download) in courses/math/scratch/papers/ with
+  .txt copies; recorded in courses/math/FACTS.md.
+  Waiting for the reset at 17:40 UTC Nov 25 (5-hour window 76%, weekly 23%). Next: WRITE P34 (guides; P33 is done)
+  and P36 (applied mocks), then REVIEW P32–P36. Notes for that review: math.fm.pgf is short (3898 words; judge
+  depth); compare the Wilcoxon tables (computed) with printed MF19; P32's goodness-of-fit mark layout is unconfirmed
+  against a scheme (June 2026 had no GOF question). Writers: never run old scripts in courses/math/scratch/.
 - Usage gate: weekly limit 95% for every launch (AGENT-RUN.md "Usage gate").
 - Name: "Zero to A* Ω" (titles, installed app, shared links). Top bar and Home heading: the hand-drawn wordmark "Log end"
   (`engine/wordmark.py --shell` writes it into shell.html; colours in style.css `.wm-*`).
