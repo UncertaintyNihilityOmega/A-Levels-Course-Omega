@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-25 · WRITE P32 · math.fm.chisq (6774 words, 3 Exam-style eg) and math.fm.contingency (5157 words, 2 Exam-style eg); check ok and phone pass; widget fm-chisq (probe clean light, dark, phone, bad attributes; node test against MF19 rows). Used scratch/papers 9231_s26 qp/ms 41 Q2 (3x3 independence, 8+2 marks) for the contingency mark scheme, hypothesis and conclusion wording; reviewer to record it in FACTS.md. GOF mark layout follows June 2025 shape from FACTS (scheme PDF unreadable); statistic label in the widget can overlap the curve slightly.
+Last: 2026-11-25 · WRITE P33 · math.fm.nonpar (5092 words), math.fm.wilcoxon (5962), math.fm.pgf (3898); check and phone pass; widget fm-pgf (probe clean light/dark/phone/bad attributes/sum mode; data/test_fm_pgf.js 179 tests). Used real June 2026 9231/41 paper+ms (Q1 sign test with stem-and-leaf, Q6 PGF with t^-1 and given E(X), Q5(b) differences normal): mark structure B1 hypotheses 'population median', B1 B(n,0.5), M1 A1 tail, M1 conclusion, A1 in context; PGF *B1 *M1 DM1 A1 AG. Notes for reviewer: Wilcoxon examples follow June 2025 shape from the package brief (that paper not read); signed-rank/rank-sum tables computed by exact counting, compare with printed MF19; the not-appropriate-Wilcoxon reason also allows tied ranks per June 2026 ms; fm-pgf interactions (tab/slider clicks) tested only through the pure helpers, not in a browser.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -37,7 +37,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P30: reviewed 2026-11-25
 - P31: reviewed 2026-11-25
 - P32: written 2026-11-25
-- P33: writing 2026-11-25
+- P33: written 2026-11-25
 - P34: open
 - P35: open
 - P36: open
