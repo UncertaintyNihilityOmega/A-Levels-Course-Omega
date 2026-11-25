@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-25 · WRITE P30 · math.fm.variable (5507 words, 6 exam-style egs), math.fm.impulse (5611, 4), math.fm.oblique (5685, 5): check ok, phone ok; widget fm-impact (wall and spheres, node-tested, probe clean). Reviewer: June 2026 9231/32 shapes come from a third-party guide, not the paper; 9709 has no impulse/restitution so fm.impulse teaches impulse; look at the 5 hand figures and fm-impact in dark mode. Notes in packages/P30.md
+Last: 2026-11-25 · WRITE P31 · math.fm.crv (4228 words), math.fm.inference (4414), math.fm.twosample (4255); checks ok, phone ok; widget fm-tdist (probe clean light/dark/phone/bad attributes; data/test_fm_tdist.js 577 cases vs MF19 rows nu=1,5,10,30); question shapes from June 2025 FS Q1, Q2, Q4 per FACTS (June 2026 9231/41 PDFs could not be read as text, so not used). Reviewer: t table extract in inference quoted to 3 d.p. from computed values; data/fm-twosample-fig.py builds the paired figure; Spot the error in inference loses only the CV mark by follow-through (7/8).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -35,7 +35,7 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P28: written 2026-11-25
 - P29: written 2026-11-25
 - P30: written 2026-11-25
-- P31: writing 2026-11-25
+- P31: written 2026-11-25
 - P32: open
 - P33: open
 - P34: open
