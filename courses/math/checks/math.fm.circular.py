@@ -165,4 +165,10 @@ eq("q2", 6 / 2, 3); eq("q3", sqrt(2) ** 2, 2)
 # Mark totals (also counted by the kit)
 assert 4 + 2 + 2 == 8       # elastic conical pendulum example
 assert 2 + 6 + 3 == 11      # cyclist example
+assert 1 + 1 + 2 + 1 + 1 + 1 == 7   # two strings and a rod: B1, M1, M1 A1, A1, M1, A1
+# two strings: both taut at w = 10, slack boundary
+r_ = sqrt(0.5**2 - 0.3**2); eq("rod r", r_, 0.4); eq("rod cos", 0.3/0.5, 0.6)
+Ta, Tb = solve2(0.6, -0.6, 0.8, 0.8, 0.6*G, 0.6*r_*100)
+eq("rod Ta", Ta, 20); eq("rod Tb", Tb, 10)
+w2 = 0.8*10/(0.6*r_); eq("rod w", sf(sqrt(w2)), 5.77)
 print("ok")

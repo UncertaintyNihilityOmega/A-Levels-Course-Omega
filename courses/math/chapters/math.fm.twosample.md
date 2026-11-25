@@ -165,8 +165,8 @@ For paired data, subtract within each pair and treat the differences as **one** 
 
 :::key Paired t-test
 **Assumptions:** the pairs are a random sample; the **differences** are normally distributed (the original values need not be).
-\[H_0: \mu_d = 0 \qquad t = \frac{\bar d}{s_d/\sqrt{n}}, \quad \nu = n - 1\]
-where \(n\) is the number of **pairs**. Define \(\mu_d\) in words, including the direction: "the population mean of (before − after)".
+\[H_0: \mu_d = \delta_0 \qquad t = \frac{\bar d - \delta_0}{s_d/\sqrt{n}}, \quad \nu = n - 1\]
+where \(n\) is the number of **pairs** and \(\delta_0\) is the difference the null hypothesis states: \(\delta_0 = 0\) tests "no change", and a claim such as "raises the score by more than 3.5" gives \(\delta_0 = 3.5\). Define \(\mu_d\) in words, including the direction: "the population mean of (before − after)".
 :::
 
 :::eg Eight people are timed (in seconds) on a puzzle, before and after a week of practice. Before: 45, 52, 38, 60, 49, 55, 41, 57. After: 42, 50, 37, 56, 47, 51, 40, 53. Test at the 5% level whether practice reduces the mean time. Assume the differences are normally distributed.
@@ -179,6 +179,18 @@ The differences are 3, 2, 1, 4, 2, 4, 1, 4, so \(\sum d = 21\) and \(\sum d^2 = 
 
 A 95% confidence interval for the mean reduction uses the one-sample method on the differences. With \(\nu = 7\) and \(p = 0.975\), \(t = 2.365\):
 \[2.625 \pm 2.365 \times \frac{1.302}{\sqrt{8}} = 2.625 \pm 1.089, \quad (1.54,\ 3.71) \text{ seconds}\]
+:::
+
+:::eg (Exam style) A trainer claims that a course raises the score of a trainee, on average, by more than 3.5 points. Eight trainees take the same test before and after the course. Before: 52, 38, 61, 45, 70, 33, 58, 47. After: 57, 44, 64, 52, 75, 35, 66, 51. (a) Test the claim at the 10% level. (b) State an assumption needed for the test. [8 marks]
+**(a)** Let \(d = \) (score after) \(-\) (score before) and \(\mu_d\) the population mean of \(d\). \(H_0: \mu_d = 3.5\), \(H_1: \mu_d > 3.5\). [B1]
+The differences are 5, 6, 3, 7, 5, 2, 8, 4, so \(\sum d = 40\) and \(\sum d^2 = 228\):
+\[\bar d = \frac{40}{8} = 5, \qquad s_d^2 = \frac{228 - 40^2/8}{7}\] [M1]
+\[s_d^2 = 4\] [A1]
+\[t = \frac{5 - 3.5}{2/\sqrt{8}}\] [M1]
+\[t = 2.121\] [A1]
+\(\nu = 7\); one-tailed 10% (\(p = 0.90\)): critical value 1.415. [B1]
+Since \(2.121 > 1.415\), reject \(H_0\): there is sufficient evidence, at the 10% level, to support the claim that the course raises the mean score by more than 3.5. [A1]
+**(b)** The differences are normally distributed. [B1]
 :::
 
 :::eg Treating the same data as two independent samples (wrongly) shows what pairing is worth. The two samples have means 49.625 and 47.0, and pooled variance 53.13.

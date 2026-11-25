@@ -169,6 +169,14 @@ vd = (sdd - sd * sd / n) / (n - 1)
 eq("fuel dbar", sd / n, 2.8)
 eq("fuel sd2", vd, 9.0, 1e-9)
 eq("fuel t", (sd / n) / sqrt(vd / n), 2.8, 1e-9)
+# paired exam-style example: H0 mu_d = 3.5
+bef = [52, 38, 61, 45, 70, 33, 58, 47]; aft = [57, 44, 64, 52, 75, 35, 66, 51]
+dd = [y - x for x, y in zip(bef, aft)]
+eq("tr d", sum(dd), 40); eq("tr dd", sum(x * x for x in dd), 228)
+eq("tr dbar", sum(dd) / 8, 5); eq("tr sd2", (228 - 40 ** 2 / 8) / 7, 4)
+tr = (5 - 3.5) / (2 / sqrt(8)); eq("tr t", sf(tr, 4), 2.121)
+eq("tr crit", T(0.90, 7), 1.415); assert tr > 1.415
+assert 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 == 8   # trainer example
 eq("fuel crit", T(0.975, 8), 2.306)
 assert 2.8 > 2.306
 

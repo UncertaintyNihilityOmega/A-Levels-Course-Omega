@@ -281,21 +281,19 @@ Decide first whether the vehicle is about to slide up the bank (too fast: fricti
 
 A particle can also be tied to two points on a vertical axis. One string alone would swing out like a conical pendulum; the second string adds a force. Both strings are taut only for a range of speeds. The tension in a string is zero at the point where it just goes slack, and that is how you find the limit.
 
-:::eg A smooth vertical rod has two points \(A\) and \(B\) on it, with \(A\) 0.3 m above the level of a particle \(P\) and \(B\) 0.3 m below that level. \(P\) has mass 0.6 kg and is joined to \(A\) and \(B\) by light inextensible strings each of length 0.5 m. \(P\) moves in a horizontal circle about the rod with both strings taut, with angular speed \(\omega\). Take \(g = 10\). (a) Find the tensions \(T_A\) and \(T_B\) when \(\omega = 10\). (b) Find the least \(\omega\) for which both strings are taut.
-The radius is \(\sqrt{0.5^2 - 0.3^2} = 0.4\) m. Each string makes an angle \(\alpha\) with the vertical where \(\cos\alpha = 0.6\) and \(\sin\alpha = 0.8\).
+:::eg (Exam style) A smooth vertical rod has two points \(A\) and \(B\) on it, with \(A\) 0.3 m above the level of a particle \(P\) and \(B\) 0.3 m below that level. \(P\) has mass 0.6 kg and is joined to \(A\) and \(B\) by light inextensible strings each of length 0.5 m. \(P\) moves in a horizontal circle about the rod with both strings taut, with angular speed \(\omega\). Take \(g = 10\). (a) Find the tensions \(T_A\) and \(T_B\) when \(\omega = 10\). (b) Find the least \(\omega\) for which both strings are taut. [7 marks]
+The radius is \(\sqrt{0.5^2 - 0.3^2} = 0.4\) m. [B1] Each string makes an angle \(\alpha\) with the vertical where \(\cos\alpha = 0.6\) and \(\sin\alpha = 0.8\).
 
-(a) \(T_A\) pulls \(P\) up and inwards; \(T_B\) pulls \(P\) down and inwards. Vertically:
-\[0.6T_A - 0.6T_B = 0.6 \times 10\quad\Rightarrow\quad T_A - T_B = 10\]
+**(a)** \(T_A\) pulls \(P\) up and inwards; \(T_B\) pulls \(P\) down and inwards. Vertically:
+\[0.6T_A - 0.6T_B = 0.6 \times 10\quad\Rightarrow\quad T_A - T_B = 10\] [M1]
 Horizontally, towards the rod:
-\[\begin{aligned}
-0.8T_A + 0.8T_B &= 0.6 \times 0.4 \times 100 \\
-T_A + T_B &= 30
-\end{aligned}\]
-Add and subtract: \(T_A = 20\) N and \(T_B = 10\) N.
+\[0.8T_A + 0.8T_B = 0.6 \times 0.4 \times 100\] [M1 A1]
+\[T_A + T_B = 30\]
+Add and subtract: \(T_A = 20\) N and \(T_B = 10\) N. [A1]
 
-(b) \(B\) goes slack when \(T_B = 0\). Then \(T_A = 10\) from the vertical equation, and the horizontal equation gives
+**(b)** \(B\) goes slack when \(T_B = 0\). [M1] Then \(T_A = 10\) from the vertical equation, and the horizontal equation gives
 \[0.8 \times 10 = 0.6 \times 0.4 \times \omega^2 \quad\Rightarrow\quad \omega^2 = 33.3\]
-So \(\omega \ge 5.77\) rad s⁻¹ for both strings to be taut. For smaller values only \(AP\) is taut and the particle drops to a conical pendulum.
+So \(\omega \ge 5.77\) rad s⁻¹ for both strings to be taut. [A1] For smaller values only \(AP\) is taut and the particle drops to a conical pendulum.
 :::
 
 :::board

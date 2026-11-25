@@ -142,6 +142,25 @@ The further rise is \(\dfrac{2.077^2}{2 \times 10} = 0.2157\) m. The height of t
 Greatest height \(= 2.033 + 0.216 = 2.25\) m. The top of the circle is at \(2r = 2.4\) m, so the particle does not reach it.
 :::
 
+:::eg (Exam style) A particle \(P\) of mass \(m\) is attached to one end of a light inextensible string of length \(a\). The other end is attached to a fixed point \(O\). \(P\) hangs at rest at the point \(A\) vertically below \(O\), and is projected horizontally with speed \(\sqrt{3ag}\). (a) When the string makes an angle \(\theta\) with the downward vertical, and is still taut, show that the tension is \(mg(1 + 3\cos\theta)\). (b) The string goes slack. Find the greatest height of \(P\) above \(A\) in the subsequent motion. [9 marks]
+**(a)** \(P\) has risen \(a(1 - \cos\theta)\). Energy:
+\[\tfrac12 mv^2 = \tfrac12 m(3ag) - mga(1 - \cos\theta)\] [M1]
+\[v^2 = ag(1 + 2\cos\theta)\] [A1]
+The component of the weight along the string, away from \(O\), is \(mg\cos\theta\). Towards \(O\):
+\[T - mg\cos\theta = \frac{mv^2}{a}\] [B1]
+\[T = mg\cos\theta + mg(1 + 2\cos\theta) = mg(1 + 3\cos\theta)\] [A1]
+
+**(b)** The string goes slack when \(T = 0\):
+\[1 + 3\cos\theta = 0 \quad\Rightarrow\quad \cos\theta = -\tfrac13\] [M1]
+Then \(v^2 = ag\left(1 - \tfrac23\right) = \tfrac13 ag\). [A1]
+The radius \(OP\) makes an angle \(\varphi\) with the **upward** vertical, where \(\cos\varphi = \tfrac13\) and \(\sin^2\varphi = \tfrac89\). The velocity is along the tangent, at \(\varphi\) to the horizontal, so the vertical component of the velocity satisfies
+\[(v\sin\varphi)^2 = \frac{ag}{3} \times \frac89 = \frac{8ag}{27}\] [M1]
+P then moves freely, and rises a further
+\[\frac{(v\sin\varphi)^2}{2g} = \frac{4a}{27}\] [M1]
+The slack point is \(a(1 - \cos\theta) = \tfrac43 a\) above \(A\), so the greatest height above \(A\) is
+\[\frac{4a}{3} + \frac{4a}{27} = \frac{40a}{27}\] [A1]
+:::
+
 The widget lets you see all three cases. Slide \(u\) in String mode: the solid arc is the motion on the string, the dashed curve is the flight after the string goes slack. At \(u^2 = 5gr\) the tension at the top reaches zero, and above that the path closes up into a full circle.
 
 :::html

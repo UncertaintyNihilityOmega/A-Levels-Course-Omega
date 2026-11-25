@@ -6,6 +6,7 @@
    Shows the N(0, 1) density (dashed) and the t density (solid), the critical region shaded on the t curve with the critical value
    labelled, the statistic marked if given, the MF19 column to read (p = 1 - alpha/tails), the critical value (3 d.p., from the
    incomplete beta function, so it matches the printed table), the normal critical value, the p-value of the statistic and the decision.
+   Values for a nu or a column p that MF19 does not print (nu = 31 to 39, 41 to 59, and the p = 0.98 column) are labelled "computed, not in MF19".
    data/test_fm_tdist.js tests the numbers against the MF19 rows nu = 1, 5, 10, 30 and against numerical integration.
    Try: <div class="widget" data-w="fm-tdist" data-v="9" data-alpha="0.05" data-tails="2" data-t="2.9"></div> */
 (function () {
@@ -108,7 +109,15 @@
     const need = Math.max(4.5, 1.3 * (isFinite(crit) ? crit : 0), t != null && isFinite(t) ? 1.3 * Math.abs(t) : 0);
     return Math.min(16, need);
   }
-  const core = { lgamma, betai, normCdf, tPdf, tCdf, tInv, critical, pValue, decide, halfWidth };
+  // MF19 prints the t table for these rows and these columns p (the normal table has the same columns)
+  const MF19_NU = [].concat(Array.from({ length: 30 }, (_, i) => i + 1), [40, 60, 120]);
+  const MF19_P = [0.75, 0.9, 0.95, 0.975, 0.99, 0.995, 0.9975, 0.999, 0.9995];
+  function inMF19(nu, p) {
+    // is the critical value for this nu and column p printed in MF19? (nu = Infinity is the normal row)
+    const rowOk = !isFinite(nu) ? nu === Infinity : MF19_NU.indexOf(nu) >= 0;
+    return rowOk && MF19_P.some((q) => Math.abs(q - p) < 1e-9);
+  }
+  const core = { lgamma, betai, normCdf, tPdf, tCdf, tInv, critical, pValue, decide, halfWidth, inMF19 };
   if (typeof module !== 'undefined' && module.exports) module.exports = core;
   if (!W) return;
 
@@ -215,7 +224,7 @@
     }
     function describe() {
       const s = state();
-      return `Density of the t-distribution with ${vLabel(nu)} degrees of freedom (solid) and of the normal (dashed). Significance level ${alpha * 100} per cent, ${tails === 1 ? 'one-tailed' : 'two-tailed'}: critical value ${n3(s.crit)}${tails === 2 ? ' and its negative' : ''}, shaded. ${tStat == null ? '' : 'The test statistic ' + n3(tStat) + (s.dec ? ' is in the critical region.' : ' is not in the critical region.')}`;
+      return `Density of the t-distribution with ${vLabel(nu)} degrees of freedom (solid) and of the normal (dashed). Significance level ${alpha * 100} per cent, ${tails === 1 ? 'one-tailed' : 'two-tailed'}: critical value ${n3(s.crit)}${tails === 2 ? ' and its negative' : ''}${inMF19(nu, s.col) ? '' : ' (computed, not in MF19)'}, shaded. ${tStat == null ? '' : 'The test statistic ' + n3(tStat) + (s.dec ? ' is in the critical region.' : ' is not in the critical region.')}`;
     }
     function update() {
       const s = state();
@@ -224,9 +233,12 @@
       nuS.input.disabled = !isFinite(nu);
       aG.refresh(); tG.refresh();
       legend.textContent = 'Dashed curve: N(0, 1). Solid curve: t with ν = ' + vLabel(nu) + '. Shaded: the critical region' + (tails === 2 ? ', in both tails.' : ', in the upper tail.');
-      R.set('col', `p = ${s.col.toFixed(s.col * 1000 % 1 === 0 ? 3 : 4).replace(/0+$/, '').replace(/\.$/, '')} (ν = ${vLabel(nu)})`);
-      R.set('crit', (tails === 2 ? '±' : '') + n3(s.crit));
-      R.set('norm', (tails === 2 ? '±' : '') + n3(s.normCrit));
+      const pTxt = s.col.toFixed(s.col * 1000 % 1 === 0 ? 3 : 4).replace(/0+$/, '').replace(/\.$/, '');
+      const onTable = inMF19(nu, s.col), normOnTable = inMF19(Infinity, s.col);
+      R.set('col', onTable ? `p = ${pTxt} (ν = ${vLabel(nu)})`
+        : `not in MF19: ${normOnTable ? 'there is no row ν = ' + vLabel(nu) + ' (rows are 1 to 30, 40, 60, 120, ∞)' : 'there is no column p = ' + pTxt}`);
+      R.set('crit', (tails === 2 ? '±' : '') + n3(s.crit) + (onTable ? '' : ' (computed, not in MF19)'));
+      R.set('norm', (tails === 2 ? '±' : '') + n3(s.normCrit) + (normOnTable ? '' : ' (computed, not in MF19)'));
       if (tStat == null) { R.set('p', 'type a statistic to see it'); R.set('dec', '—'); }
       else {
         R.set('p', pFmt(s.p));

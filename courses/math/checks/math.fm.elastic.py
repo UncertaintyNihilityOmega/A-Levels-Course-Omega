@@ -184,8 +184,17 @@ eq("series", 0.6 / 30 + 0.4 / 20, 0.04); eq("series lam", 1.0 / 0.04, 25)
 eq("q1", T(40, 2, 0.5), 10); eq("q1 bad", 40 * 2.5 / 2, 50); eq("q1 bad2", 40 * 0.5, 20)
 eq("q6", 20 * 0.2 / 0.5, 8)
 
+# Exam-style: released from O, l = 2, lambda = 24, m = 1.2
+for x in (0.4, 1.0, 2.5):
+    v2 = (1.2 * 10 * (2 + x) - 24 * x * x / (2 * 2)) / 0.6
+    assert abs(v2 - (-10 * (x * x - 2 * x - 4))) < 1e-9, x
+E_ = 1 + 5 ** 0.5; assert abs(E_ * E_ - 2 * E_ - 4) < 1e-9 and round(E_, 2) == 3.24
+assert abs(24 * 1 / 2 - 1.2 * 10) < 1e-12
+assert abs((-10 * (1 - 2 - 4)) - 50) < 1e-12 and round(50 ** 0.5, 2) == 7.07
+
 # Mark totals of the exam-style answers (also counted by the kit)
 assert 2 + 4 + 3 == 9              # slope example
 assert 2 + 3 + 4 + 4 == 13         # spring example
 assert 1 + 1 + 1 + 1 + 1 + 1 + 1 == 7   # friction example
+assert 3 + 1 + 2 == 6             # hanging-vertically release-from-O example
 print("ok")

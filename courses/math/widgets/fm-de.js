@@ -82,6 +82,9 @@
     return out;
   }
   const expo = (m) => Math.abs(m) < 5e-4 ? '' : Math.abs(m - 1) < 5e-4 ? 'e^x' : Math.abs(m + 1) < 5e-4 ? 'e^(' + MINUS + 'x)' : 'e^(' + num3(m) + 'x)';
+  // 'e^(−x)' and 'e^x' as HTML for the displayed formulas; the same text with the powers spoken for the picture's label
+  const supHtml = (t) => t.replace(/e\^\(([^)]*)\)/g, 'e<sup>$1</sup>').replace(/e\^x/g, 'e<sup>x</sup>');
+  const spoken = (t) => t.replace(/e\^\(([^)]*)\)/g, 'e to the power $1').replace(/e\^x/g, 'e to the power x');
   function polyStr(a, b, c) {
     const part = (k, v) => (Math.abs(k - 1) < 5e-4 && v ? v : num3(Math.abs(k)) + v);
     let s = part(a, 'm²');
@@ -190,13 +193,16 @@
       else R.set('roots', `m = ${num3(model.p)} ± ${num3(model.q)}i  (complex)`);
       R.set('cf', cfText(model));
       R.set('sol', solText(model));
+      // print the exponents as superscripts (the readout is plain text first, so a missing table is harmless)
+      const cells = R.el.querySelectorAll('td');
+      if (cells.length === 5) { cells[2].innerHTML = supHtml(cfText(model)); cells[3].innerHTML = supHtml(solText(model)); }
       R.set('case', describeSolution(model));
       note.textContent = view.capped ? 'The solution grows without bound, so the vertical range is capped and the curve leaves the picture.' : '';
       cv.redraw();
     }
     function describe() {
       if (!model) return 'No picture yet.';
-      return `Graph of y against x from 0 to 10 for ${describeSolution(model)}. It starts at y = ${num3(y0)} with gradient ${num3(v0)}. ${solText(model)}.${view && view.capped ? ' It grows without bound, so the vertical range is capped.' : ''}`;
+      return `Graph of y against x from 0 to 10 for ${describeSolution(model)}. It starts at y = ${num3(y0)} with gradient ${num3(v0)}. ${spoken(solText(model))}.${view && view.capped ? ' It grows without bound, so the vertical range is capped.' : ''}`;
     }
 
     function draw(ctx, w, h, col) {

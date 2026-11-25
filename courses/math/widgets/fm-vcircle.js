@@ -107,6 +107,7 @@
       const x = parseNum(o.u, u[mode], uMin[mode], uMax[mode], 'data-u', warn);
       u[mode] = x;
     }
+    const start = { mode, u: Object.assign({}, u) };   // what Reset returns to: the embed's mode and speeds
     let theta = 0;
     let sim = null;           // the running motion
     let playing = false;
@@ -401,7 +402,14 @@
       playing = true; play.textContent = 'Pause'; lastTs = null;
       anim.start();
     });
-    reset.addEventListener('click', () => { stopAll(); sim = null; theta = 0; thS.set(0); update(false); });
+    reset.addEventListener('click', () => {
+      stopAll(); sim = null; theta = 0; mode = start.mode;
+      MODES.forEach(([k]) => {
+        u[k] = start.u[k]; uS[k].set(u[k]);
+        tabBtns[k].setAttribute('aria-pressed', String(k === mode)); uS[k].el.style.display = k === mode ? '' : 'none';
+      });
+      thS.set(0); setNote(); update(true);
+    });
     function setMode(k) {
       stopAll(); sim = null; mode = k; theta = 0;
       MODES.forEach(([kk]) => { tabBtns[kk].setAttribute('aria-pressed', String(kk === mode)); uS[kk].el.style.display = kk === mode ? '' : 'none'; });

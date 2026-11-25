@@ -174,6 +174,27 @@ If a question gives you the CDF with an unknown constant, use the facts that \(F
 \[P(2 < X < 3) = F(3) - F(2) = \frac{4}{9} - \frac19 = \frac13\]
 :::
 
+:::eg (Exam style) The continuous random variable \(X\) has cumulative distribution function
+\[F(x) = \begin{cases} 0 & x < 0 \\ \dfrac{x^2}{8} & 0 \le x \le 2 \\ a + x - \dfrac{x^2}{8} & 2 < x \le b \\ 1 & x > b \end{cases}\]
+where \(a\) and \(b\) are constants. (a) Verify that the median of \(X\) is 2. (b) Show that \(a = -1\) and find the value of \(b\). (c) Find the probability density function of \(X\). (d) Find \(\mathrm{E}\left(\dfrac1X\right)\). [9 marks]
+**(a)** \(F(2) = \dfrac{2^2}{8} = \dfrac12\), so the median is 2. [B1]
+
+**(b)** \(F\) is continuous at \(x = 2\), so the two pieces agree there:
+\[\frac{2^2}{8} = a + 2 - \frac{2^2}{8}\] [M1]
+\[\frac12 = a + 2 - \frac12 \quad\Rightarrow\quad a = -1\] [A1]
+\(F(b) = 1\):
+\[-1 + b - \frac{b^2}{8} = 1 \quad\Rightarrow\quad b^2 - 8b + 16 = 0 \quad\Rightarrow\quad (b - 4)^2 = 0\]
+So \(b = 4\). [A1]
+
+**(c)** Differentiate each piece:
+\[f(x) = \begin{cases} \dfrac{x}{4} & 0 \le x \le 2 \\ 1 - \dfrac{x}{4} & 2 < x \le 4 \\ 0 & \text{otherwise} \end{cases}\] [B1 B1]
+
+**(d)** \(\mathrm{E}\left(\dfrac1X\right) = \displaystyle\int \frac1x f(x)\,dx\):
+\[\int_0^2 \frac1x \cdot \frac{x}{4}\,dx + \int_2^4 \frac1x\left(1 - \frac{x}{4}\right)dx = \int_0^2 \frac14\,dx + \int_2^4 \left(\frac1x - \frac14\right)dx\] [M1]
+\[= \frac12 + \left[\ln x - \frac{x}{4}\right]_2^4 = \frac12 + \left(\ln 4 - 1\right) - \left(\ln 2 - \frac12\right)\] [A1]
+\[= \ln 2\] [A1]
+:::
+
 ## Median, quartiles and percentiles
 
 The \(p\)-th **percentile** is the value below which \(p\%\) of the distribution lies. Because \(F(x)\) is exactly the probability of being below \(x\), you find it by solving an equation.

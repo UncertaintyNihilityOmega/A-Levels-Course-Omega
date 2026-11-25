@@ -327,4 +327,16 @@ med = bisect(lambda x: Fm_(x) - 0.5, 0.5, 0.9)
 eq("sm median", sf(med, 3), 0.614)
 assert 0.6 < med < 0.65 and med > 3 / 5 and 2 / 3 > med
 
+# Exam-style example: two-piece CDF with constants a, b
+Fx = lambda x, a=-1: x * x / 8 if x <= 2 else a + x - x * x / 8
+eq("ex median", Fx(2), 0.5)
+a_ = 0.5 - 2 + 0.5; eq("ex a", a_, -1)               # x^2/8 = a + x - x^2/8 at x = 2
+eq("ex b disc", 8 ** 2 - 4 * 16, 0); eq("ex F(4)", Fx(4), 1)   # b^2 - 8b + 16 = 0, b = 4
+fx = lambda x: x / 4 if x <= 2 else 1 - x / 4
+eq("ex pdf = F'", (Fx(1.3 + 1e-6) - Fx(1.3 - 1e-6)) / 2e-6, fx(1.3), 1e-6)
+eq("ex pdf = F' 2", (Fx(3.1 + 1e-6) - Fx(3.1 - 1e-6)) / 2e-6, fx(3.1), 1e-6)
+eq("ex area", simpson(fx, 0, 2) + simpson(fx, 2, 4), 1, 1e-9)
+eq("ex E(1/X)", simpson(lambda x: fx(x) / x if x else 0.25, 0, 2) + simpson(lambda x: fx(x) / x, 2, 4), log(2), 1e-8)
+assert 1 + 3 + 2 + 3 == 9
+
 print("ok")

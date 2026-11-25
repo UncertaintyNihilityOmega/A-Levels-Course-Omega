@@ -220,6 +220,22 @@ Energy from \(O\) to this point (fallen 1.25 m):
 So \(v^2 = 22.5\) and \(v = 4.74\) m s⁻¹.
 :::
 
+:::eg (Exam style) A particle \(P\) of mass 1.2 kg is attached to one end of a light elastic string of natural length 2 m and modulus of elasticity 24 N. The other end of the string is attached to a fixed point \(O\). \(P\) is released from rest at \(O\). When the string has extension \(x\) m, the speed of \(P\) is \(v\) m s⁻¹. Take \(g = 10\). (a) Show that \(v^2 = -10(x^2 - 2x - 4)\) for \(0 < x < E\), where \(E\) is the greatest extension. (b) Find the value of \(E\). (c) Find the greatest speed of \(P\). [6 marks]
+**(a)** When the extension is \(x\), \(P\) has fallen \(2 + x\) below \(O\), and the elastic potential energy is
+\[\text{EPE} = \frac{24x^2}{2 \times 2} = 6x^2\] [B1]
+Energy, from rest at \(O\):
+\[\tfrac12 \times 1.2\,v^2 + 6x^2 = 1.2 \times 10 \times (2 + x)\] [M1]
+\[0.6v^2 = 24 + 12x - 6x^2\]
+\[v^2 = 40 + 20x - 10x^2 = -10(x^2 - 2x - 4)\] [A1]
+
+**(b)** The greatest extension is where \(v = 0\): \(x^2 - 2x - 4 = 0\), so \(x = 1 \pm \sqrt5\). Only the positive root is possible:
+\[E = 1 + \sqrt5 = 3.24\] [B1]
+
+**(c)** The speed is greatest when the acceleration is zero, where the tension equals the weight:
+\[\frac{24x}{2} = 1.2 \times 10 \quad\Rightarrow\quad x = 1\] [B1]
+Then \(v^2 = -10(1 - 2 - 4) = 50\), so the greatest speed is \(v = 7.07\) m s⁻¹. [B1]
+:::
+
 ### Maximum speed: where the acceleration is zero
 
 A particle on a string speeds up while the pull towards the equilibrium position is still ahead of it, and slows down once it has passed that position. So its speed is greatest **at the equilibrium position**, where the resultant force is zero. That position comes from a force balance, never from "the middle". Then an energy equation from the start gives the speed. This is the standard "greatest speed" question.

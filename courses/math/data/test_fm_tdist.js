@@ -55,5 +55,13 @@ for (let v = 1; v <= 60; v++) for (const t of [1, 2]) {
   let prev = 0;
   for (const a of [0.1, 0.05, 0.02, 0.01]) { const c = core.critical(a, t, v); yes(isFinite(c) && c > prev, `monotone nu=${v} tails=${t} alpha=${a}`); prev = c; }
 }
+// off-table values are flagged: MF19 rows are nu = 1-30, 40, 60, 120, infinity; columns include 0.975, 0.99 but not 0.98
+yes(core.inMF19(9, 0.975) === true, 'inMF19 9, 0.975');
+yes(core.inMF19(30, 0.99) === true && core.inMF19(40, 0.95) === true && core.inMF19(60, 0.995) === true && core.inMF19(120, 0.9) === true, 'inMF19 rows 30, 40, 60, 120');
+yes(core.inMF19(Infinity, 0.975) === true, 'inMF19 infinity');
+for (const v of [31, 35, 39, 41, 50, 59]) yes(core.inMF19(v, 0.99) === false, 'not inMF19 nu=' + v);
+yes(core.inMF19(10, 0.98) === false && core.inMF19(Infinity, 0.98) === false, 'not inMF19 p=0.98');
+for (let v = 1; v <= 30; v++) yes(core.inMF19(v, 0.95) === true, 'inMF19 nu=' + v);
+near(Math.round(core.critical(0.02, 2, 35) * 1000) / 1000, 2.438, 5e-4, 'computed value at nu = 35, column p = 0.99 (not an MF19 row)');
 console.log(fails ? `${fails} FAILED of ${cases}` : `ok: ${cases} cases`);
 process.exit(fails ? 1 : 0);

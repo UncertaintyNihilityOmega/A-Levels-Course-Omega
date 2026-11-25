@@ -175,6 +175,21 @@ l = 1.0; eq("peg d", 3 / 5 * l, 0.6); eq("peg ineq", 2 * l - 5 * (l - 0.6), 0)
 # Quiz
 eq("q3 top v2", 4.5 - 4, 0.5)
 
+# Exam-style symbolic example: u^2 = 3ag, string of length a (a = 1.7, m = 0.9 as a numeric test)
+a_, m_ = 1.7, 0.9
+for th in (0.3, 1.1, 1.9):
+    v2 = 3 * a_ * G - 2 * G * a_ * (1 - cos(th))
+    eq("sym v2", v2, a_ * G * (1 + 2 * cos(th)), 1e-9)
+    eq("sym T", m_ * v2 / a_ + m_ * G * cos(th), m_ * G * (1 + 3 * cos(th)), 1e-9)
+c_ = -1 / 3
+v2s = a_ * G * (1 + 2 * c_); eq("sym slack v2", v2s, a_ * G / 3)
+eq("sym T=0", 1 + 3 * c_, 0)
+vv = v2s * (1 - (1 / 3) ** 2); eq("sym vert2", vv, a_ * G / 3 * 8 / 9)
+eq("sym rise", vv / (2 * G), 4 * a_ / 27)
+eq("sym slack height", a_ * (1 - c_), 4 * a_ / 3)
+eq("sym greatest", 4 * a_ / 3 + 4 * a_ / 27, 40 * a_ / 27)
+assert 4 + 5 == 9                # symbolic string example: M1 A1 B1 A1 | M1 A1 M1 M1 A1
+
 # Mark totals (also counted by the kit)
 assert 2 + 5 + 2 == 9 and 2 + 5 + 3 == 10 and 5 + 2 + 2 == 9
 print("ok")
