@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-20 · WRITE P27 · math.fm.de (3861 words, 13 eg, 4 Exam style, 58 marks), math.fm.de2 (4441 words, 16 eg, 4 Exam style, 63 marks); check and phone pass; widget fm-de (exact CF cases, envelope, capped growth; data/test_fm_de.js vs RK4 6348 checks; probe clean incl. bad attributes). Reviewer: slopefield embedded in de at start (-1,0.25) (slopefield needs start y > x); de2 trig-PI examples use PI with both cos and sin; shots of fm-de light/phone looked at, dark only probed.
+Last: 2026-11-25 · WRITE P29 · math.fm.elastic (5692 words), math.fm.circular (4595), math.fm.vertical (5020); widget fm-vcircle (probe clean; node test data/test_fm_vcircle.js 373 cases). Reviewer: press Play in each mode of fm-vcircle and Tab through it, look at dark mode; figures checked once in light only; no June 2026 9231/31 read, shapes follow June 2025 Q3, Q5, Q7.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -32,9 +32,9 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P25: reviewed 2026-11-20
 - P26: reviewed 2026-11-20
 - P27: written 2026-11-20
-- P28: open
-- P29: open
-- P30: open
+- P28: writing 2026-11-25
+- P29: written 2026-11-25
+- P30: writing 2026-11-25
 - P31: open
 - P32: open
 - P33: open
