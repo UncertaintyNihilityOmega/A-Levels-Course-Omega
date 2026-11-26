@@ -223,3 +223,35 @@ Assumed: where sum x^2 = n(variance + mean^2) comes from; why the alternating pa
 ## math.mixed.stats2
 Taught: nothing new (29 mixed Statistics 2 questions with mark schemes, each naming the chapter to revise).
 Assumed: the improper integral to infinity written without a limit although the Paper 6 guide lists that as a lost mark; the two substitutions of a definite integral in the pdf median/probability parts; how cumulative Poisson values such as P(X <= 9) are found (see math.s2.poisson).
+
+## math.fm.overview
+Taught: what 9231 is and who it suits; the four papers (times, marks, weights) and the AS, A Level and staged routes; which 9709 chapters each Further paper uses; the 39 topic chapters grouped by paper with study hours; AO1 45% and AO2 55%; what MF19 gives and omits for Further Mathematics; calculator and accuracy rules; the 2028 to 2030 syllabus; study order and pace plan; A* habits; an eight-question readiness quiz.
+Assumed: nothing beyond math.overview and the 9709 chapters it names.
+
+## math.fm.roots
+Taught: root, coefficient, degree; alpha, beta, gamma, delta for roots; sigma notation for symmetric sums of roots; roots and coefficients of a quadratic, cubic and quartic (alternating signs, missing terms count as 0); symmetric functions of two and three roots (sum alpha^2, sum 1/alpha, sum alpha^2 beta^2, sum 1/alpha^2); a quadratic from its sum and product; sums of powers S_n from the equation itself; the "missing root" trick and (k - alpha)(k - beta)(k - gamma) = p(k); unknown coefficients from an AP, a GP, a root equal to the sum of the others or a complex root; a negative sum alpha^2 shows non-real roots; substitution to form an equation with related roots (linear, reciprocal, square, sums of pairs); dependent method mark and FT.
+Assumed: why a cubic always has a real root; the identity for sum alpha^3 (used in a Check before it is given); S with a negative index.
+
+## math.fm.series
+Taught: sigma notation and the general term u_r; rules for sums (constant, split, start at r = m); the standard results for sum r, sum r^2, sum r^3 (MF19) with proofs of the first two; related sums and sums to 2n; the method of differences with f(r) - f(r + k), 2k surviving terms and the routine of writing the first three and last two lines; partial fractions, factorials, surds and logs as differences; S_n, convergent and divergent series, the sum to infinity; terms tending to 0 do not guarantee convergence.
+Assumed: how a three-factor partial fraction regroups into two differences; dividing top and bottom by the highest power of n to find a limit.
+
+## math.fm.matrices
+Taught: matrix, entries, order m by n, square, equal matrices; adding and scaling; zero and identity matrices; the product, when it exists and its order; associative, distributive, not commutative; powers of a square matrix; determinant of a 2 by 2; singular and non-singular; inverse of a 2 by 2; minors and cofactors, 3 by 3 determinant along any row or column; det(kA) = k^n det A and det(AB) = det A det B; transpose and adjugate, inverse of a 3 by 3; (AB)^-1 = B^-1 A^-1; solving AX = B and XA = B; simultaneous equations as Mx = b.
+Assumed: "symmetric" matrix; that a matrix X with AX = I is the inverse (used in the A^2 = pA + qI example before the inverse is defined); bold lowercase letters for column matrices.
+
+## math.fm.transform
+Taught: a 2 by 2 matrix as a transformation of position vectors, image; the columns are the images of (1, 0) and (0, 1); matrices for rotation about O, reflection in y = x tan theta, enlargement, stretch and shear; splitting a matrix into two named transformations; AB means B first, then A; inverse transformations; area scale factor |det M|, orientation reversed when det < 0, singular matrix flattens the plane; invariant point, line of invariant points, invariant line; Mx = x; invariant lines through O (b m^2 + (a - d) m - c = 0, y-axis when b = 0); invariant lines not through O.
+Assumed: the shoelace formula and the vector product (used for areas); why a reflection sends angle phi to 2 theta - phi; an enlargement with a negative scale factor.
+
+## math.fm.induction
+Taught: proof by induction (base case, assumption, inductive step, conclusion; B1 B1 M1 A1 A1), P(n), P(k), P(k + 1); proving sums, divisibility (f(k + 1) - f(k), f(k + 1) - m f(k)), formulae for terms of a recurrence relation, powers of a 2 by 2 matrix; conjecture then prove; the nth derivative; why a pattern is not a proof; a base case other than 1 and a two-term assumption (stretch).
+Assumed: the notation for the nth derivative; why M^k M = M M^k.
+
+## math.fm.rational
+Taught: rational function; vertical asymptotes and the sign test; horizontal asymptote by comparing degrees; which side of an asymptote the curve lies (the remainder term); oblique asymptotes by division; intercepts and turning points (quotient rule or the divided form); even function symmetry; holes; crossing an asymptote by solving f(x) = b; the set of values taken by the discriminant method (outside the roots, the special value); the sketching routine; a minimum-average-cost context.
+Assumed: the notation x tends to a from below or above (a-minus, a-plus); "monotonic".
+
+## math.fm.graphs
+Taught: y = |f(x)|, y = f(|x|), y = 1/f(x) and y^2 = f(x) from a sketch of y = f(x); corners; false roots; invariant points where f = 1 or -1; vertical tangent of y^2 = f(x); solving modulus equations and inequalities by a sketch; rational inequalities in exact form (one fraction, critical values, sign table); never multiplying by an expression of unknown sign; counting solutions of |f(x)| = k.
+Assumed: "simple zero" and "pole"; asymptotes of y^2 = f(x); what an asymptote y = 0 of f gives for 1/f (stated unclearly).
