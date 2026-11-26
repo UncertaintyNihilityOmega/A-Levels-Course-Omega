@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-26 · WRITE P34 · math.fm.overview (3321 words, readiness quiz), exam.fp1 (3180), exam.fp2 (3216), exam.fm (3345), exam.fs (3860); 2 Exam-style layouts per guide; no widgets or figures; check and phone pass; links to P36 chapters are plain text until P36
+Last: 2026-11-26 · WRITE P36 · math.fm.mock.p3 (2166 words, 7 Qs, 50 marks), math.fm.mock.p4 (1973 words, 6 Qs, 50 marks), math.fm.mixed.applied (4748 words, 32 Qs); check and phone pass; no widgets. Notes for reviewer: mocks have no figures or links box (as mock.p1); all critical values recomputed from exact t/chi2/Wilcoxon counts; mock P3 Q6 is the outside of a sphere.
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -40,6 +40,6 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P33: written 2026-11-25
 - P34: written 2026-11-26
 - P35: written 2026-11-25
-- P36: writing 2026-11-26
+- P36: written 2026-11-26
 - READER: done 2026-11-13
 - FINAL: open
