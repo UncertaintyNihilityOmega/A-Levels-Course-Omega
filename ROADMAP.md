@@ -8,9 +8,10 @@
   copies; recorded in courses/math/FACTS.md.
   Run of Nov 26 afternoon (preview server allowed by the user): P34 (guides) and P36 (applied mocks) written, so all
   36 packages are written (math 112/112 chapters). REVIEW P32–P36 done (3 FIX items; 9231 test marks now follow the
-  June 2025 9231/41 scheme). Running: FIX of those items, READER batch 1 (math.fm.overview to math.fm.graphs); 46 fm
-  chapters to read in all. Then FIX of the reader items, REVIEW FINAL, assembly. Writers: never run old scripts in
-  courses/math/scratch/.
+  June 2025 9231/41 scheme) and its FIX closed. READER batches 1–2 (math.fm.overview to math.fm.rectangles,
+  16 chapters) read; their 39 items fixed. Next: READER batch 3 from math.fm.arclength (30 fm chapters left), FIX
+  every ~25 items, REVIEW FINAL, assembly. Writers: never run old scripts in courses/math/scratch/.
+  Waiting for the reset at 18:40 UTC Nov 26 (5-hour window 72%, weekly 33%).
 - Usage gate: weekly limit 95% for every launch (AGENT-RUN.md "Usage gate").
 - Name: "Zero to A* Ω" (titles, installed app, shared links). Top bar and Home heading: the hand-drawn wordmark "Log end"
   (`engine/wordmark.py --shell` writes it into shell.html; colours in style.css `.wm-*`).
