@@ -173,7 +173,7 @@ Now put \(\mathbf{n} = \begin{pmatrix}a\\b\\c\end{pmatrix}\) and \(\mathbf{r} = 
 For a plane through the point \(A\) with normal \(\mathbf{n} = a\mathbf{i} + b\mathbf{j} + c\mathbf{k}\):
 \[\mathbf{r}\cdot\mathbf{n} = p \qquad\text{where } p = \mathbf{a}\cdot\mathbf{n}\]
 \[ax + by + cz = d \qquad\text{where } d = p\]
-The coefficients of \(x\), \(y\), \(z\) in the Cartesian form are the components of a normal vector. Multiplying the whole equation by a non-zero number gives the same plane (with a different normal of the same direction).
+Here plain \(a\), \(b\), \(c\) are the numbers (components) of \(\mathbf{n}\), not to be confused with the bold \(\mathbf{a}\), the position vector of \(A\). The coefficients of \(x\), \(y\), \(z\) in the Cartesian form are the components of a normal vector. Multiplying the whole equation by a non-zero number gives the same plane (with a different normal of the same direction).
 :::
 
 :::eg Find the vector and Cartesian equations of the plane through \(A(1, -2, 4)\) with normal vector \(\mathbf{n} = 2\mathbf{i} + 3\mathbf{j} - \mathbf{k}\).
@@ -192,13 +192,15 @@ For \(Q(2, -1, 1)\): \(2 + 2 + 4 = 8\), so \(Q\) is in the plane.
 
 ### How far is the plane from the origin?
 
-The plane \(\mathbf{r}\cdot\mathbf{n} = p\) is a fixed distance from \(O\). If \(\mathbf{n}\) is a **unit** vector, that distance is \(|p|\): the scalar product \(\mathbf{r}\cdot\hat{\mathbf{n}}\) is the length of the part of \(\mathbf{r}\) along the normal, and it is the same for every point of the plane. If \(\mathbf{n}\) is not a unit vector, divide through by \(|\mathbf{n}|\).
+The plane \(\mathbf{r}\cdot\mathbf{n} = p\) is a fixed distance from \(O\). If \(\mathbf{n}\) is a **unit** vector, that distance is \(|p|\): the scalar product \(\mathbf{r}\cdot\hat{\mathbf{n}}\) is the length of the part of \(\mathbf{r}\) along the normal, and it is the same for every point of the plane. To see why, let \(\theta\) be the angle between \(\mathbf{r}\) and the unit vector \(\hat{\mathbf{n}}\): then \(\mathbf{r}\cdot\hat{\mathbf{n}} = |\mathbf{r}|\cos\theta\), which is the length of the projection of \(\mathbf{r}\) on \(\hat{\mathbf{n}}\) (the shadow of \(\mathbf{r}\) on the line of the normal). Every point of the plane has the same value, \(p\), of \(\mathbf{r}\cdot\mathbf{n}\), so the same projection on the normal. If \(\mathbf{n}\) is not a unit vector, divide through by \(|\mathbf{n}|\).
 
 :::key Distance of a plane from the origin
 The plane \(\mathbf{r}\cdot\mathbf{n} = p\), that is \(ax + by + cz = d\), is at distance
 \[\frac{|p|}{|\mathbf{n}|} = \frac{|d|}{\sqrt{a^2 + b^2 + c^2}}\]
 from the origin. The foot of the perpendicular from \(O\) to the plane is \(\dfrac{p}{|\mathbf{n}|^2}\mathbf{n}\).
 :::
+
+Why the foot is there: it lies on the line through \(O\) along the normal, so it is \(t\mathbf{n}\) for some number \(t\), and it is in the plane, so \((t\mathbf{n})\cdot\mathbf{n} = p\). Since \(\mathbf{n}\cdot\mathbf{n} = |\mathbf{n}|^2\), \(t|\mathbf{n}|^2 = p\) and \(t = \dfrac{p}{|\mathbf{n}|^2}\). Its distance from \(O\) is \(|t||\mathbf{n}| = \dfrac{|p|}{|\mathbf{n}|}\), which is the distance in the box.
 
 :::eg Find the distance from the origin to the plane \(2x + 3y - z = -8\), and the foot of the perpendicular from \(O\).
 \(|\mathbf{n}| = \sqrt{4 + 9 + 1} = \sqrt{14}\), so the distance is \(\dfrac{|-8|}{\sqrt{14}} = \dfrac{8}{\sqrt{14}} = 2.14\) (3 s.f.).
@@ -253,7 +255,7 @@ Going the other way, from a Cartesian equation to a parametric one, you need a p
 
 :::steps
 1. Find any point on the plane by choosing two coordinates and solving for the third (for example, \(y = z = 0\)).
-2. Find two non-parallel vectors with \(\mathbf{b}\cdot\mathbf{n} = 0\) (put a zero in one place and swap and negate the other two entries of \(\mathbf{n}\)), or use the differences of three points of the plane.
+2. Find two non-parallel vectors with \(\mathbf{b}\cdot\mathbf{n} = 0\) (put a zero in one place, swap the other two entries of \(\mathbf{n}\) and change the sign of one of them: for example, for \(\mathbf{n} = (3, -2, 1)\) with the zero in the middle, \((3, \cdot, 1)\) gives \((1, 0, -3)\), and \(3 \times 1 + 1 \times (-3) = 0\)), or use the differences of three points of the plane.
 3. Write \(\mathbf{r} = \mathbf{a} + \lambda\mathbf{b} + \mu\mathbf{c}\).
 4. Check that \(\mathbf{b}\) and \(\mathbf{c}\) are not parallel and that \(\mathbf{b}\cdot\mathbf{n} = \mathbf{c}\cdot\mathbf{n} = 0\).
 :::

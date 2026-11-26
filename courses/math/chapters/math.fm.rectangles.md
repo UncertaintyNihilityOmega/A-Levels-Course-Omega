@@ -192,7 +192,7 @@ The two bounds differ by \(\sqrt n\), a small fraction of the size of the sum wh
 
 ## Other sums
 
-The same method works for any monotonic function. Here are three more, each showing a different use.
+The same method works for any function that is increasing throughout the interval or decreasing throughout it. Here are three more, each showing a different use.
 
 ### A sum that converges: \(\displaystyle\sum\frac{1}{r^2}\)
 
@@ -212,7 +212,7 @@ Add the first ten terms: \(1.549768 + 0.090909 = 1.640677\) and \(1.549768 + 0.1
 **Check**: the sum to infinity is \(\dfrac{\pi^2}{6} = 1.6449\), inside the bounds.
 :::
 
-A small \(N\) gives a neat bound. With \(N = 1\) the upper bound says \(\sum_{r=2}^n\dfrac{1}{r^2} < 1 - \dfrac1n\), so \(\sum_{r=1}^n\dfrac{1}{r^2} < 2 - \dfrac1n < 2\) for every \(n\). A sum of positive terms that never passes 2 must converge.
+A small \(N\) gives a neat bound. With \(N = 1\) the upper bound says \(\sum_{r=2}^n\dfrac{1}{r^2} < 1 - \dfrac1n\), so \(\sum_{r=1}^n\dfrac{1}{r^2} < 2 - \dfrac1n < 2\) for every \(n\). A sum of positive terms that never passes 2 must converge: the partial sums keep increasing (each new term is positive) and never pass 2, so they must settle to a limit (accept this as a fact).
 
 To reach a stated accuracy, notice the width of the bracket: it is \(\dfrac1N - \dfrac{1}{N+1} = \dfrac{1}{N(N+1)}\), which is below 0.001 as soon as \(N \ge 32\), so the tail is pinned to within 0.001 after 32 exact terms.
 
@@ -295,7 +295,7 @@ So \(f(x) = \dfrac{1}{1 + x^2}\) and the limits are 0 and 1. [A1]
 **Check** with \(n = 100\): the sums are \(0.6907\) and \(0.7829\), close to \(\ln 2 = 0.6931\) and \(\tfrac\pi4 = 0.7854\). The error is about \(\dfrac{1}{2n}\) times the change in \(f\).
 :::
 
-When the sum runs from \(r = 1\) to \(2n\), the largest value of \(\dfrac rn\) is 2, and the limits become 0 and 2. When it runs from \(r = n+1\) to \(2n\) (for example \(\sum_{r=n+1}^{2n}\dfrac1r\)), change the index: put \(r = n + s\) with \(s = 1, \dots, n\), then \(\dfrac1r = \dfrac1n \times \dfrac{1}{1 + s/n}\), which is part (a) again. The answer \(\ln 2\) says that \(\dfrac1{n+1} + \dots + \dfrac1{2n}\) tends to \(\ln 2\): in the language of the earlier section, \(H_{2n} - H_n \to \ln 2\).
+When the sum runs from \(r = 1\) to \(2n\), the largest value of \(\dfrac rn\) is 2, and the limits become 0 and 2. When it runs from \(r = n+1\) to \(2n\) (for example \(\sum_{r=n+1}^{2n}\dfrac1r\)), change the index: put \(r = n + s\) with \(s = 1, \dots, n\), then \(\dfrac1r = \dfrac1n \times \dfrac{1}{1 + s/n}\), which is part (a) again. The answer \(\ln 2\) says that \(\dfrac1{n+1} + \dots + \dfrac1{2n}\) tends to \(\ln 2\): in the language of the earlier section, write \(H_n = 1 + \tfrac12 + \dots + \dfrac1n\) (the sum of the first \(n\) terms of \(\dfrac1r\)), and then \(H_{2n} - H_n \to \ln 2\).
 
 :::eg Find \(\displaystyle\lim_{n\to\infty}\frac1n\sum_{r=1}^{2n}\frac rn\).
 Here \(\dfrac rn\) runs from near 0 up to \(\dfrac{2n}{n} = 2\), so the limits of the integral are 0 and 2, and \(f(x) = x\):

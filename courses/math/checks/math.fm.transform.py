@@ -309,4 +309,9 @@ assert det(M([[1, 0], [0, -1]])) == -1
 assert det(M([[2, 0], [0, 3]])) == 6
 assert img(M([[0, 1], [1, 0]]), (3, 5)) == (5, 3)
 assert img(M([[1, 0], [0, 2]]), (3, 5)) == (3, 10)
+# Reader FIX: bounding rectangle (a+b)(c+d) minus corners = ad - bc; triangle check from image vertex (3, 7)
+for a, b, c, d in product(range(1, 6), repeat=4):
+    if a * d > b * c:
+        assert (a + b) * (c + d) - (a * c + b * d + 2 * b * c) == a * d - b * c
+assert F(1, 2) * abs(6 * 8 - 2 * 9) == 15
 print("ok")

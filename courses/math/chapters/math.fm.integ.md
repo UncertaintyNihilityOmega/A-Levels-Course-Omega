@@ -321,7 +321,7 @@ Three things go wrong. Forgetting \(dx = a\cosh u\,du\) leaves an integral in \(
 
 ## Harder integrals: 9709 techniques again
 
-Any integration question in 9231 can need the methods of [Integration techniques: parts, substitution and partial fractions](#math.p3.inttech) in a harder form. Three appear again and again.
+Any integration question in 9231 can need the methods of [Integration techniques: parts, substitution and partial fractions](#math.p3.inttech) in a harder form. Three appear again and again; the first two are 9709 methods, and the third, \(t = \tan\frac x2\), is new in this chapter.
 
 **Parts twice.** When the integrand is \(e^{ax}\) times \(\sin bx\) or \(\cos bx\), integrate by parts twice. The original integral reappears, and you solve for it.
 
@@ -345,7 +345,7 @@ For the last integral let \(w = x^2 + 1\), \(dw = 2x\,dx\): \(\displaystyle\int\
 Since \(\sinh^{-1}1 = \ln\left(1 + \sqrt2\right)\), this is \(\ln\left(1 + \sqrt2\right) + 1 - \sqrt2 = 0.467\).
 :::
 
-**The substitution \(t = \tan\frac x2\).** This converts \(\sin x\) and \(\cos x\) to rational functions of \(t\). MF19 gives \(\sin x = \dfrac{2t}{1 + t^2}\) and \(\cos x = \dfrac{1 - t^2}{1 + t^2}\). You must also write \(dx\): from \(t = \tan\frac x2\), \(\dfrac{dt}{dx} = \tfrac12\left(1 + t^2\right)\), so \(dx = \dfrac{2\,dt}{1 + t^2}\).
+**The substitution \(t = \tan\frac x2\)** (this one is new here: it was not in the 9709 chapters). It converts \(\sin x\) and \(\cos x\) to rational functions of \(t\). MF19 gives \(\sin x = \dfrac{2t}{1 + t^2}\) and \(\cos x = \dfrac{1 - t^2}{1 + t^2}\). To see where they come from, use the double-angle formulae with the angle \(\tfrac x2\): \(\sin x = 2\sin\tfrac x2\cos\tfrac x2 = 2t\cos^2\tfrac x2\) and \(\cos x = \cos^2\tfrac x2 - \sin^2\tfrac x2 = (1 - t^2)\cos^2\tfrac x2\), and \(\cos^2\tfrac x2 = \dfrac{1}{1 + \tan^2\frac x2} = \dfrac{1}{1 + t^2}\). You must also write \(dx\): differentiating \(t = \tan\frac x2\) gives \(\dfrac{dt}{dx} = \tfrac12\sec^2\tfrac x2 = \tfrac12\left(1 + \tan^2\tfrac x2\right) = \tfrac12\left(1 + t^2\right)\), so \(dx = \dfrac{2\,dt}{1 + t^2}\).
 
 :::eg (Exam style) Use the substitution \(t = \tan\frac x2\) to show that \(\displaystyle\int_0^{\pi/2}\frac{1}{2 + \cos x}\,dx = \frac{\pi}{3\sqrt3}\).
 \(\cos x = \dfrac{1 - t^2}{1 + t^2}\) and \(dx = \dfrac{2\,dt}{1 + t^2}\). Then

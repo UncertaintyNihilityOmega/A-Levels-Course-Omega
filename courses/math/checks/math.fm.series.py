@@ -265,4 +265,10 @@ for k in (1, 2, 3, 4):
     for r in range(1, 20):
         assert F(1, r * (r + k)) == F(1, k) * (F(1, r) - F(1, r + k))
 
+# Reader FIX: regrouping of 1/(r(r+1)(r+2)) and the divide-by-highest-power example (3n+1)/(n+2) -> 3
+for r in range(1, 30):
+    assert F(1, r * (r + 1) * (r + 2)) == F(1, 2) * (F(1, r) - F(1, r + 1)) - F(1, 2) * (F(1, r + 1) - F(1, r + 2))
+    assert F(1, r) - F(1, r + 1) == F(1, r * (r + 1))
+assert abs((3 * 10 ** 6 + 1) / (10 ** 6 + 2) - 3) < 1e-5
+
 print("ok")

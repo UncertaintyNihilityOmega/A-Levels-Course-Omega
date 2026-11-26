@@ -9,14 +9,14 @@
 Differentiation tells you how a function changes at a point. Repeating it tells you almost everything about the function near that point: its value, slope, curvature, and so on. A Maclaurin series packs all of that into a polynomial that you can evaluate by hand, which is how calculators and computers find \(\sin x\) and \(e^x\) in the first place. The first half of this chapter adds the new derivatives you need; the second half uses them to build series, and shows why \(\cosh\) of a small number looks like a parabola.
 :::
 
-**Before you start**, you need the chain, product and quotient rules and implicit and parametric first derivatives from [Further differentiation](#math.p3.diff), the hyperbolic functions and their inverses from [Hyperbolic functions](#math.fm.hyperbolic), and the binomial series for rational powers from [Modulus and polynomials](#math.p3.algebra).
+**Before you start**, you need the chain, product and quotient rules and implicit and parametric first derivatives from [Further differentiation](#math.p3.diff), the hyperbolic functions and their inverses from [Hyperbolic functions](#math.fm.hyperbolic), and the binomial series for rational powers from [Partial fractions and the binomial series](#math.p3.partial).
 
 :::try Warm-up
 Q: Differentiate \(x^2e^{3x}\). (from [Further differentiation](#math.p3.diff))
 A: Product rule: \(2xe^{3x} + 3x^2e^{3x} = xe^{3x}(2 + 3x)\).
 Q: A curve has \(x = t^2\) and \(y = 2t\). Find \(\dfrac{dy}{dx}\). (from [Further differentiation](#math.p3.diff))
 A: \(\dfrac{dy}{dx} = \dfrac{dy/dt}{dx/dt} = \dfrac{2}{2t} = \dfrac1t\).
-Q: Expand \((1 + x)^{-1/2}\) as far as \(x^2\). (from [Modulus and polynomials](#math.p3.algebra))
+Q: Expand \((1 + x)^{-1/2}\) as far as \(x^2\). (from [Partial fractions and the binomial series](#math.p3.partial))
 A: \(1 + \left(-\tfrac12\right)x + \dfrac{\left(-\frac12\right)\left(-\frac32\right)}{2}x^2 = 1 - \tfrac12 x + \tfrac38 x^2\).
 :::
 
@@ -273,7 +273,7 @@ e^x &= 1 + x + \frac{x^2}{2!} + \dots + \frac{x^r}{r!} + \dots && \text{all } x 
 \cosh x &= 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \dots + \frac{x^{2r}}{(2r)!} + \dots && \text{all } x \\
 \tanh^{-1}x &= x + \frac{x^3}{3} + \frac{x^5}{5} + \dots + \frac{x^{2r+1}}{2r + 1} + \dots && -1 < x < 1
 \end{aligned}\]
-The binomial series \((1 + x)^n\) (\(\lvert x \rvert < 1\) for non-integer \(n\)) is also given, from [Modulus and polynomials](#math.p3.algebra). Series for \(\tan x\), \(\sec x\), \(\sin^{-1}x\), \(\tanh x\), \(\sinh^{-1}x\) and combinations are **not** given: derive them.
+The binomial series \((1 + x)^n\) (\(\lvert x \rvert < 1\) for non-integer \(n\)) is also given, from [Partial fractions and the binomial series](#math.p3.partial). Series for \(\tan x\), \(\sec x\), \(\sin^{-1}x\), \(\tanh x\), \(\sinh^{-1}x\) and combinations are **not** given: derive them.
 :::
 
 Compare the \(\sinh\) and \(\sin\) series: the same terms, but the hyperbolic one has no alternating signs. The same goes for \(\cosh\) and \(\cos\), and \(\tanh^{-1}\) and \(\tan^{-1}\).

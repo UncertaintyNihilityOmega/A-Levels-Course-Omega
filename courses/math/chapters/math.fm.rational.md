@@ -93,7 +93,7 @@ To see which side of the asymptote the curve is on, look at \(f(x) - b\) for lar
 | \(\tfrac12 < x < 3\) | \(+\) | \(+\) | \(-\) | \(-\) |
 | \(x > 3\) | \(+\) | \(+\) | \(+\) | \(+\) |
 
-So the curve goes to \(-\infty\) as \(x \to -1^-\) and to \(+\infty\) as \(x \to -1^+\), then to \(-\infty\) as \(x \to 3^-\) and to \(+\infty\) as \(x \to 3^+\). For large \(|x|\) it is below the \(x\)-axis on the left and above it on the right.
+The notation \(x \to a^-\) means that \(x\) approaches \(a\) from below (through values less than \(a\)), and \(x \to a^+\) means that \(x\) approaches \(a\) from above (through values greater than \(a\)); the same signs are used for \(x = a^-\) and \(x = a^+\) when we want a value just either side of \(a\). So the curve goes to \(-\infty\) as \(x \to -1^-\) and to \(+\infty\) as \(x \to -1^+\), then to \(-\infty\) as \(x \to 3^-\) and to \(+\infty\) as \(x \to 3^+\). For large \(|x|\) it is below the \(x\)-axis on the left and above it on the right.
 
 **Axes.** \(x = 0\) gives \(y = \tfrac13\). \(y = 0\) gives \(x = \tfrac12\).
 
@@ -162,7 +162,7 @@ Setting this to zero gives \((x - 1)^2 = 4\), so \(x = 3\) or \(x = -1\). Then \
 --f "(x**2-3*x+6)/(x-1)" --f "x-2" --label "y = (x² − 3x + 6)/(x − 1)" --label "y = x − 2" --x -7 9 --y -14 14 --vline 1 --xstep 4 --pt "3,3,minimum (3, 3)@se" --pt "-1,-5,maximum (−1, −5)@nw" --pt "0,-6,(0, −6)@e" --legend tl
 :::
 
-Slide \(k\) in the graph below. The curve is \(y = \dfrac{x^2 - 3x + k}{x - 1}\). The numerator at \(x = 1\) is \(k - 2\), so this is the value of the remainder \(R\). For \(k > 2\) the curve has two turning points; for \(k < 2\) it has none, because \(R\) is negative and each branch is monotonic; at \(k = 2\) the numerator is \((x - 1)(x - 2)\), the fraction cancels and you get the line \(y = x - 2\) with a hole at \(x = 1\).
+Slide \(k\) in the graph below. The curve is \(y = \dfrac{x^2 - 3x + k}{x - 1}\). The numerator at \(x = 1\) is \(k - 2\), so this is the value of the remainder \(R\). For \(k > 2\) the curve has two turning points; for \(k < 2\) it has none, because \(R\) is negative, so \(\dfrac{dy}{dx} = 1 - \dfrac{R}{(x - 1)^2} > 0\) and each branch is always increasing; at \(k = 2\) the numerator is \((x - 1)(x - 2)\), the fraction cancels and you get the line \(y = x - 2\) with a hole at \(x = 1\).
 
 :::html
 <div class="widget" data-w="graph" data-fns="(x^2 - 3*x + k)/(x - 1)" data-x="-6,8" data-y="-12,12" data-params="k=6,-2,10,0.5" data-labels="y = (x² − 3x + k)/(x − 1)"></div>

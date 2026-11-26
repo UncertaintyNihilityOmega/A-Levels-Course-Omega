@@ -126,7 +126,9 @@ The asymptotes are \(y = 3\) (as \(x \to \infty\)) and \(y = -1\) (as \(x \to -\
 At \(x = 0\), \(y = 1 + 2\tanh 0 = 1\): the \(y\)-intercept is \((0, 1)\). [B1]
 
 For the \(x\)-intercept solve \(1 + 2\tanh x = 0\):
-\[\tanh x = -\tfrac12\ \Rightarrow\ x = -\tanh^{-1}\tfrac12 = -\tfrac12\ln 3\] [M1 A1]
+\[\tanh x = -\tfrac12\] Multiply top and bottom of \(\tanh x = \dfrac{\mathrm{e}^x - \mathrm{e}^{-x}}{\mathrm{e}^x + \mathrm{e}^{-x}}\) by \(\mathrm{e}^x\) to get \(\tanh x = \dfrac{\mathrm{e}^{2x} - 1}{\mathrm{e}^{2x} + 1}\), so \(\dfrac{\mathrm{e}^{2x} - 1}{\mathrm{e}^{2x} + 1} = -\tfrac12\), \(2\mathrm{e}^{2x} - 2 = -\mathrm{e}^{2x} - 1\), \(\mathrm{e}^{2x} = \tfrac13\) and
+\[x = \tfrac12\ln\tfrac13 = -\tfrac12\ln 3\] [M1 A1]
+(This is \(-\tanh^{-1}\tfrac12\): the inverse function \(\tanh^{-1}\) is defined later in this chapter.)
 The curve is increasing throughout, so it crosses the axes once each. The \(x\)-intercept is \(\left(-\tfrac12\ln 3,\ 0\right) = (-0.549, 0)\).
 :::
 
@@ -198,7 +200,7 @@ Divide by 4:
 \[\frac{2e^{A+B} - 2e^{-(A+B)}}{4} = \frac{e^{A+B} - e^{-(A+B)}}{2} = \sinh(A + B)\] [A1]
 :::
 
-The other compound-angle results follow the same way, or from this one. For example, dividing the formulas for \(\sinh(A + B)\) and \(\cosh(A + B)\) and then dividing top and bottom by \(\cosh A\cosh B\) gives \(\tanh(A + B)\).
+The other compound-angle results follow the same way, or from this one. For example, dividing the formulas for \(\sinh(A + B)\) and \(\cosh(A + B)\) and then dividing top and bottom by \(\cosh A\cosh B\) gives \(\tanh(A + B)\). Put \(B = A\) to get the double-angle forms, and use \(\cosh^2 x - \sinh^2 x = 1\) for the other forms of \(\cosh 2x\) (for example \(\cosh^2 x + \sinh^2 x = 2\cosh^2 x - 1\)). The \(A - B\) versions follow by replacing \(B\) with \(-B\), since \(\sinh(-B) = -\sinh B\) and \(\cosh(-B) = \cosh B\).
 
 :::eg (Exam style) Prove that \(\tanh(A + B) \equiv \dfrac{\tanh A + \tanh B}{1 + \tanh A\tanh B}\), using the compound-angle formulas for \(\sinh\) and \(\cosh\).
 \[\tanh(A + B) = \frac{\sinh(A + B)}{\cosh(A + B)} = \frac{\sinh A\cosh B + \cosh A\sinh B}{\cosh A\cosh B + \sinh A\sinh B}\] [M1]
@@ -597,7 +599,7 @@ Divide top and bottom by \(\cosh^2\tfrac{x}{2}\): \(\sinh x = \dfrac{2t}{1 - t^2
 - \(\sinh 2x \equiv 2\sinh x\cosh x\); \(\cosh 2x \equiv \cosh^2 x + \sinh^2 x \equiv 2\cosh^2 x - 1 \equiv 1 + 2\sinh^2 x\). Compound angles: \(\cosh(A + B)\) has a plus where \(\cos(A + B)\) has a minus.
 - Osborn's rule: replace each function and change the sign of any product of two sines. A checking tool only.
 - Solve \(a\cosh x + b\sinh x = c\) with \(t = e^x\) (reject \(t \le 0\)); otherwise use an identity to get one function.
-- \(\sinh^{-1} x = \ln\left(x + \sqrt{x^2 + 1}\right)\); \(\cosh^{-1} x = \ln\left(x + \sqrt{x^2 - 1}\right)\) for \(x \ge 1\) (and \(\ge 0\)); \(\tanh^{-1} x = \frac12\ln\frac{1 + x}{1 - x}\) for \(\lvert x \rvert < 1\). Derive them by solving a quadratic in \(e^y\).
+- \(\sinh^{-1} x = \ln\left(x + \sqrt{x^2 + 1}\right)\); \(\cosh^{-1} x = \ln\left(x + \sqrt{x^2 - 1}\right)\) for \(x \ge 1\), with \(\cosh^{-1} x \ge 0\); \(\tanh^{-1} x = \frac12\ln\frac{1 + x}{1 - x}\) for \(\lvert x \rvert < 1\). Derive them by solving a quadratic in \(e^y\).
 - Solving \(\cosh x = k\) gives \(x = \pm\cosh^{-1} k\); \(\cosh^{-1} k\) itself is only the positive value.
 :::
 

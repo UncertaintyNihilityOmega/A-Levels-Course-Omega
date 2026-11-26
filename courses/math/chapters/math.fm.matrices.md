@@ -24,7 +24,7 @@ A: \(k = 1\) is a root, so \((k - 1)\) is a factor: \(k^3 - 7k + 6 = (k - 1)(k^2
 
 A **matrix** is a rectangular array of numbers in brackets. The plural is matrices. Here are three:
 \[\mathbf{A} = \begin{pmatrix} 2 & -1 \\ 3 & 4 \end{pmatrix} \qquad \mathbf{B} = \begin{pmatrix} 1 & 0 & 2 \\ -1 & 3 & 1 \end{pmatrix} \qquad \mathbf{c} = \begin{pmatrix} 5 \\ -2 \\ 7 \end{pmatrix}\]
-Matrices are named with bold capital letters. The syllabus uses matrices with at most three rows and three columns.
+Matrices are named with bold capital letters; a single column (or a single row) is usually named with a bold lowercase letter such as \(\mathbf{c}\), \(\mathbf{x}\) or \(\mathbf{b}\). The syllabus uses matrices with at most three rows and three columns.
 
 :::def Order of a matrix
 A matrix with \(m\) rows and \(n\) columns has order \(m \times n\) ("\(m\) by \(n\)"). Rows come first. A matrix with the same number of rows and columns is **square**. The numbers inside are its **entries** (or elements).
@@ -157,8 +157,8 @@ A matrix can satisfy an equation of its own, which is a favourite exam idea beca
 \[= \begin{pmatrix} 5 & 5 \\ 5 & 10 \end{pmatrix}\] [A1]
 **(b)** Compare with \(p\mathbf{A} + q\mathbf{I} = \begin{pmatrix} 2p + q & p \\ p & 3p + q \end{pmatrix}\). The off-diagonal entries give \(p = 5\), and then \(2p + q = 5\) gives \(q = -5\). [M1]
 Check the last entry: \(3(5) - 5 = 10\). So \(\mathbf{A}^2 = 5\mathbf{A} - 5\mathbf{I}\). [A1]
-**(c)** Rearrange: \(\mathbf{A}^2 - 5\mathbf{A} = -5\mathbf{I}\), so \(\mathbf{A}(\mathbf{A} - 5\mathbf{I}) = -5\mathbf{I}\). [M1]
-Divide by \(-5\):
+**(c)** The inverse \(\mathbf{A}^{-1}\) of \(\mathbf{A}\) is the matrix \(\mathbf{X}\) with \(\mathbf{A}\mathbf{X} = \mathbf{I}\) (so a matrix \(\mathbf{X}\) with \(\mathbf{A}\mathbf{X} = \mathbf{I}\) is the inverse of \(\mathbf{A}\)). Rearrange: \(\mathbf{A}^2 - 5\mathbf{A} = -5\mathbf{I}\), so \(\mathbf{A}(\mathbf{A} - 5\mathbf{I}) = -5\mathbf{I}\). [M1]
+Divide by \(-5\), so that \(\mathbf{A}\) times a matrix gives \(\mathbf{I}\):
 \[\mathbf{A}^{-1} = -\tfrac15(\mathbf{A} - 5\mathbf{I}) = -\tfrac15\begin{pmatrix} -3 & 1 \\ 1 & -2 \end{pmatrix} = \tfrac15\begin{pmatrix} 3 & -1 \\ -1 & 2 \end{pmatrix}\] [A1]
 **Check**: the first row of \(\mathbf{A}\) times the first column of \(\tfrac15\begin{pmatrix} 3 & -1 \\ -1 & 2 \end{pmatrix}\) is \(\tfrac15(6 - 1) = 1\), as it should be.
 :::
@@ -260,7 +260,7 @@ For an \(n \times n\) matrix, \(\det(k\mathbf{A}) = k^n \det \mathbf{A}\), becau
 The 2×2 rule is a special case of a general method: write down the cofactors, transpose, divide by the determinant.
 
 :::def Transpose
-The **transpose** \(\mathbf{M}^{T}\) of a matrix is found by writing its rows as columns. If \(\mathbf{M}\) is \(m \times n\), then \(\mathbf{M}^{T}\) is \(n \times m\).
+The **transpose** \(\mathbf{M}^{T}\) of a matrix is found by writing its rows as columns. If \(\mathbf{M}\) is \(m \times n\), then \(\mathbf{M}^{T}\) is \(n \times m\). A square matrix that equals its own transpose, \(\mathbf{M}^{T} = \mathbf{M}\), is called **symmetric**: the entries are a mirror image in the leading diagonal (top left to bottom right).
 :::
 
 :::steps

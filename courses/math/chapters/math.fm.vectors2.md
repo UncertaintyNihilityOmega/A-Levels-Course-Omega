@@ -66,16 +66,16 @@ The **foot of the perpendicular** from a point \(P\) to a plane is the point \(F
 :::
 
 :::steps
-1. Write the line through \(P\) with direction \(\mathbf{n}\): \(\mathbf{r} = \mathbf{p} + t\mathbf{n}\).
+1. Write the line through \(P\) with direction \(\mathbf{n}\), where \(\mathbf{q}\) is the position vector of \(P\): \(\mathbf{r} = \mathbf{q} + t\mathbf{n}\).
 2. Substitute its coordinates into the equation of the plane and solve for \(t\).
 3. Put \(t\) back to get the foot \(F\). The distance is \(PF = |t||\mathbf{n}|\).
-4. For the **reflection** of \(P\) in the plane, go twice as far: the image is \(\mathbf{p} + 2t\mathbf{n}\), so that \(F\) is the midpoint of \(P\) and its image.
+4. For the **reflection** of \(P\) in the plane, go twice as far: the image is \(\mathbf{q} + 2t\mathbf{n}\), so that \(F\) is the midpoint of \(P\) and its image.
 :::
 
 Doing this once with letters gives a formula for the distance that is quick when only the distance is wanted. It is not on MF19, so it is worth deriving to see where it comes from.
 
 :::eg Derive the distance of the point \(P(x_1, y_1, z_1)\) from the plane \(ax + by + cz = d\).
-Let \(\mathbf{n} = (a, b, c)\) and \(\mathbf{p} = (x_1, y_1, z_1)\). The perpendicular through \(P\) is \(\mathbf{r} = \mathbf{p} + t\mathbf{n}\), with coordinates \((x_1 + ta,\ y_1 + tb,\ z_1 + tc)\). It meets the plane when
+Let \(\mathbf{n} = (a, b, c)\) and \(\mathbf{q} = (x_1, y_1, z_1)\). The perpendicular through \(P\) is \(\mathbf{r} = \mathbf{q} + t\mathbf{n}\), with coordinates \((x_1 + ta,\ y_1 + tb,\ z_1 + tc)\). It meets the plane when
 \[\begin{aligned}
 a(x_1 + ta) + b(y_1 + tb) + c(z_1 + tc) &= d \\
 (ax_1 + by_1 + cz_1) + t(a^2 + b^2 + c^2) &= d \\
@@ -88,7 +88,7 @@ The distance from \(P\) to the foot is \(|t||\mathbf{n}|\), and \(|\mathbf{n}|^2
 :::key Distance from a point to a plane
 The distance of \(P(x_1, y_1, z_1)\) from the plane \(ax + by + cz = d\) is
 \[\frac{|ax_1 + by_1 + cz_1 - d|}{\sqrt{a^2 + b^2 + c^2}}\]
-In vector form, for the plane \(\mathbf{r}\cdot\mathbf{n} = p\), it is \(\dfrac{|\mathbf{p}\cdot\mathbf{n} - p|}{|\mathbf{n}|}\). The sign of the number inside the modulus tells you which side of the plane \(P\) is on.
+In vector form, for the plane \(\mathbf{r}\cdot\mathbf{n} = p\) and \(P\) with position vector \(\mathbf{q}\), it is \(\dfrac{|\mathbf{q}\cdot\mathbf{n} - p|}{|\mathbf{n}|}\). The sign of the number inside the modulus tells you which side of the plane \(P\) is on.
 :::
 
 :::eg Find the foot of the perpendicular from \(P(3, -1, 4)\) to the plane \(2x + 3y - z = -8\), the distance of \(P\) from the plane, and the reflection of \(P\) in the plane.
@@ -102,13 +102,13 @@ So \(t = -\tfrac12\), and the foot is \(F = \left(3 - 1,\ -1 - \tfrac32,\ 4 + \t
 
 The distance is \(|t||\mathbf{n}| = \tfrac12\sqrt{14} = 1.87\) (3 s.f.). The formula agrees: \(\dfrac{|6 - 3 - 4 + 8|}{\sqrt{14}} = \dfrac{7}{\sqrt{14}} = 1.87\).
 
-The reflection goes twice as far: \(\mathbf{p} + 2t\mathbf{n} = (3, -1, 4) - (2, 3, -1) = (1, -4, 5)\). **Check**: the midpoint of \((3, -1, 4)\) and \((1, -4, 5)\) is \((2, -2.5, 4.5) = F\). ✓
+The reflection goes twice as far: \(\mathbf{q} + 2t\mathbf{n} = (3, -1, 4) - (2, 3, -1) = (1, -4, 5)\). **Check**: the midpoint of \((3, -1, 4)\) and \((1, -4, 5)\) is \((2, -2.5, 4.5) = F\). ✓
 :::
 
 The distance from a point to a plane gives the distance between two **parallel** planes: take any point of one plane and find its distance from the other. The planes \(2x + 3y - z = -8\) and \(2x + 3y - z = 5\) are a distance \(\dfrac{|{-8} - 5|}{\sqrt{14}} = \dfrac{13}{\sqrt{14}} = 3.47\) apart, because the difference of the constants over \(|\mathbf{n}|\) is all that matters. It also gives the distance between a line and a plane parallel to it, using any point of the line.
 
 :::eg A drone is at the point \(D(3, 3, 8)\), with coordinates in metres and \(z\) the height. A roof is the plane \(2z - y = 6\). Find the shortest distance from the drone to the roof, and the point of the roof directly nearest to it.
-Write the roof as \(0x - y + 2z = 6\), with normal \((0, -1, 2)\) and \(|\mathbf{n}| = \sqrt5\). Then \(\mathbf{n}\cdot\mathbf{d} = -3 + 16 = 13\), and the distance is
+Write the roof as \(0x - y + 2z = 6\), with normal \((0, -1, 2)\) and \(|\mathbf{n}| = \sqrt5\). With \(\mathbf{q} = (3, 3, 8)\) the position vector of \(D\), \(\mathbf{n}\cdot\mathbf{q} = -3 + 16 = 13\), and the distance is
 \[\frac{|13 - 6|}{\sqrt5} = \frac{7}{\sqrt5} = 3.13\ \mathrm{m}\]
 The perpendicular is \((3,\ 3 - t,\ 8 + 2t)\). Substituting: \(-(3 - t) + 2(8 + 2t) = 13 + 5t = 6\), so \(t = -\tfrac75\). The nearest point of the roof is \((3,\ 4.4,\ 5.2)\).
 
@@ -180,7 +180,7 @@ The point is \((1, -2, 0)\). [A1]
 
 ## The angle between two planes
 
-The angle between two planes is the angle between their normals. Draw the two planes edge-on and the normals are at right angles to each, so the angle between the normals equals the angle between the planes. A plane has two normal directions (\(\mathbf{n}\) and \(-\mathbf{n}\)), so the angle can come out acute or obtuse: take the acute one.
+The angle between two planes is the angle between their normals. Look along the line where the two planes meet (their line of intersection): each plane is then seen edge-on, as a line through one point, and the angle between the two planes is the angle between those two lines. Both normals lie in the page you are looking at (each is perpendicular to the line of intersection), and each normal is at right angles to its own plane's edge-on line. Turning both lines through \(90^\circ\) turns them into the normals, so the angle between the normals equals the angle between the planes. A plane has two normal directions (\(\mathbf{n}\) and \(-\mathbf{n}\)), so the angle can come out acute or obtuse: take the acute one.
 
 :::key Angle between two planes
 For planes with normals \(\mathbf{n}_1\) and \(\mathbf{n}_2\), the acute angle \(\theta\) between them satisfies
@@ -260,7 +260,7 @@ Lines that are not parallel and do not meet are **skew** ([Vectors](#math.p3.vec
 The **common perpendicular** of two skew lines is the unique line that meets both and is perpendicular to both. The part of it between the two lines has the shortest length of any segment joining a point of one line to a point of the other.
 :::
 
-Let \(l_1\) be \(\mathbf{r} = \mathbf{a}_1 + s\mathbf{b}_1\) and \(l_2\) be \(\mathbf{r} = \mathbf{a}_2 + t\mathbf{b}_2\). The common perpendicular has the direction of \(\mathbf{n} = \mathbf{b}_1 \times \mathbf{b}_2\), which is perpendicular to both directions. Now take any two points, \(A_1\) on \(l_1\) and \(A_2\) on \(l_2\). The length of the shortest distance is the part of the vector \(\overrightarrow{A_1A_2}\) that points along \(\mathbf{n}\): its scalar product with the **unit** vector \(\hat{\mathbf{n}}\).
+Let \(l_1\) be \(\mathbf{r} = \mathbf{a}_1 + s\mathbf{b}_1\) and \(l_2\) be \(\mathbf{r} = \mathbf{a}_2 + t\mathbf{b}_2\). The common perpendicular has the direction of \(\mathbf{n} = \mathbf{b}_1 \times \mathbf{b}_2\), which is perpendicular to both directions. Now take any two points, \(A_1\) on \(l_1\) and \(A_2\) on \(l_2\). The length of the shortest distance is the part of the vector \(\overrightarrow{A_1A_2}\) that points along \(\mathbf{n}\): its scalar product with the **unit** vector \(\hat{\mathbf{n}}\). (If \(\theta\) is the angle between a vector \(\mathbf{v}\) and a unit vector \(\hat{\mathbf{u}}\), then \(\mathbf{v}\cdot\hat{\mathbf{u}} = |\mathbf{v}|\cos\theta\) is the length of the part of \(\mathbf{v}\) along \(\hat{\mathbf{u}}\), the shadow of \(\mathbf{v}\) on that direction; it is positive or negative, so take the modulus.)
 
 :::key Shortest distance between skew lines
 \[d = \frac{|(\mathbf{a}_2 - \mathbf{a}_1)\cdot(\mathbf{b}_1 \times \mathbf{b}_2)|}{|\mathbf{b}_1 \times \mathbf{b}_2|}\]

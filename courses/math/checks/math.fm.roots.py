@@ -279,4 +279,6 @@ assert rel([1, 0, -3, 0, 7])[3] == 7
 
 # Marks totals of the exam-style answers (also counted by the kit)
 assert 3 + 4 + 4 + 3 + 5 + 5 + 8 + 9 == 41
+# Reader FIX: n = -1 relation a S2 + b S1 + c S0 + d S_-1 = 0 for x^3 - 2x^2 + 4x + 3 (S2 = -4, S1 = 2, S0 = 3)
+assert 1 * (-4) + (-2) * 2 + 4 * 3 + 3 * F(-4, 3) == 0
 print("ok")

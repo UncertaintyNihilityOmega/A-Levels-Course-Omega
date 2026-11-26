@@ -290,7 +290,9 @@ Partial fractions give \(\dfrac{1}{r(r+2)} = \dfrac12\left(\dfrac1r - \dfrac{1}{
 Three factors in the denominator use partial fractions with three terms, which you then regroup into two differences.
 
 :::eg Find \(\displaystyle\sum_{r=1}^{n} \dfrac{1}{r(r+1)(r+2)}\).
-Partial fractions: \(\dfrac{1}{r(r+1)(r+2)} = \dfrac{1/2}{r} - \dfrac{1}{r+1} + \dfrac{1/2}{r+2}\). Regroup the three pieces into two differences:
+Partial fractions: \(\dfrac{1}{r(r+1)(r+2)} = \dfrac{1/2}{r} - \dfrac{1}{r+1} + \dfrac{1/2}{r+2}\). Split the middle term \(-\dfrac{1}{r+1}\) into two halves and regroup the pieces into two differences:
+\[\frac{1}{r(r+1)(r+2)} = \frac12\left(\frac1r - \frac{1}{r+1}\right) - \frac12\left(\frac{1}{r+1} - \frac{1}{r+2}\right)\]
+Each bracket is a single fraction: \(\dfrac1r - \dfrac{1}{r+1} = \dfrac{1}{r(r+1)}\) and \(\dfrac{1}{r+1} - \dfrac{1}{r+2} = \dfrac{1}{(r+1)(r+2)}\). So
 \[\frac{1}{r(r+1)(r+2)} = \frac12\left[\frac{1}{r(r+1)} - \frac{1}{(r+1)(r+2)}\right]\]
 (The two fractions in the bracket over a common denominator give \(\dfrac{(r+2) - r}{r(r+1)(r+2)} = \dfrac{2}{r(r+1)(r+2)}\).) This is \(\tfrac12\left[f(r) - f(r+1)\right]\) with \(f(r) = \dfrac{1}{r(r+1)}\), so
 \[\sum_{r=1}^{n} \frac{1}{r(r+1)(r+2)} = \frac12\left[f(1) - f(n+1)\right] = \frac12\left[\frac12 - \frac{1}{(n+1)(n+2)}\right]\]
@@ -334,7 +336,7 @@ A series **converges** if its sum to \(n\) terms \(S_n\) approaches a fixed fini
 
 :::key Finding a sum to infinity
 1. Find \(S_n\) as an expression in \(n\) (standard results or differences).
-2. Let \(n \to \infty\). Terms such as \(\dfrac1n\), \(\dfrac{1}{n+1}\), \(\dfrac{1}{2n+3}\) and \(\dfrac{1}{n^2}\) tend to 0, and so does \(\left(\tfrac12\right)^n\).
+2. Let \(n \to \infty\). Terms such as \(\dfrac1n\), \(\dfrac{1}{n+1}\), \(\dfrac{1}{2n+3}\) and \(\dfrac{1}{n^2}\) tend to 0, and so does \(\left(\tfrac12\right)^n\). If \(S_n\) is a fraction in which top and bottom both grow, divide top and bottom by the highest power of \(n\) in the denominator first: for example \(\dfrac{3n+1}{n+2} = \dfrac{3 + 1/n}{1 + 2/n} \to 3\), because \(1/n\) and \(2/n\) tend to 0.
 3. If \(S_n\) tends to a finite number, the series converges and that number is \(S_\infty\). If \(S_n\) grows without bound, or keeps changing between values, the series diverges.
 :::
 

@@ -414,4 +414,7 @@ eq("q5 c", dot(n, (0, 1, 2)), 0)
 eq("q5 third point", dot(n, (1, 0, 0)), 3)
 assert parallel((1, 0, -3), (2, 0, -6))
 
+# Reader FIX: perpendicular to n = (3, -2, 1) with a zero in the middle: (1, 0, -3)
+assert 3 * 1 + (-2) * 0 + 1 * (-3) == 0
+
 print("ok")

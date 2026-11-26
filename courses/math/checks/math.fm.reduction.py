@@ -294,4 +294,7 @@ eq("I2 3sf", sf(pi / 4, 2), 0.79)
 for n in (2, 4, 8):
     assert simp(lambda x: sin(x) ** n, 0, pi / 2) < simp(lambda x: sin(x) ** (n // 2), 0, pi / 2)
 
+# Reader FIX: J_1 = [ln(sec x + tan x)] from 0 to pi/4 = ln(1 + sqrt 2)
+assert isclose(log(1 / cos(pi / 4) + tan(pi / 4)) - log(1), log(1 + sqrt(2)))
+
 print("ok")

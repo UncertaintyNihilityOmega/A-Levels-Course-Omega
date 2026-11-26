@@ -310,4 +310,8 @@ eq("q y1", sf(2 * cosh(log(3 + sqrt(6))), 3), 5.63)
 eq("q y2", sf(2 * cosh(log(3 - sqrt(6))), 3), 2.37)
 eq("q half", 1 / 2, 0.5)
 
+# Reader FIX: tanh x = -1/2 solved by e^{2x} = 1/3
+eq("tanh intercept", log(1 / 3) / 2, -0.5 * log(3))
+eq("tanh at intercept", tanh(-0.5 * log(3)), -0.5)
+
 print("ok")

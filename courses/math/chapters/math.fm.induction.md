@@ -219,7 +219,7 @@ which is the formula with \(n = k + 1\).
 
 ## Powers of a matrix
 
-For a square matrix, \(\mathbf{M}^{k+1} = \mathbf{M}^k\mathbf{M}\) (or \(\mathbf{M}\mathbf{M}^k\); both orders give the same matrix, because powers of one matrix commute). The assumption is a formula for \(\mathbf{M}^k\); multiply it by \(\mathbf{M}\) and simplify each entry ([Matrices: algebra, determinants and inverses](#math.fm.matrices)).
+For a square matrix, \(\mathbf{M}^{k+1} = \mathbf{M}^k\mathbf{M}\) (or \(\mathbf{M}\mathbf{M}^k\); both orders give the same matrix, because matrix multiplication is associative: \(\mathbf{M}^k\mathbf{M} = \mathbf{M}\mathbf{M}^k = \mathbf{M}^{k+1}\), each being \(k + 1\) copies of \(\mathbf{M}\) multiplied together, however they are bracketed. This is not the \(\mathbf{A}\mathbf{B} \ne \mathbf{B}\mathbf{A}\) problem, which needs two different matrices). The assumption is a formula for \(\mathbf{M}^k\); multiply it by \(\mathbf{M}\) and simplify each entry ([Matrices: algebra, determinants and inverses](#math.fm.matrices)).
 
 :::eg (Exam style) The matrix \(\mathbf{M} = \begin{pmatrix} 2 & 1 \\ 0 & 2 \end{pmatrix}\). Prove by induction that \(\mathbf{M}^n = \begin{pmatrix} 2^n & n2^{n-1} \\ 0 & 2^n \end{pmatrix}\) for all positive integers \(n\).
 **Base case**, \(n = 1\): the formula gives \(\begin{pmatrix} 2 & 1 \\ 0 & 2 \end{pmatrix}\) (since \(1 \times 2^0 = 1\)), which is \(\mathbf{M}\). True. [B1]
@@ -264,7 +264,7 @@ This is the formula with \(n = k + 1\).
 **Conclusion**: true for \(n = 1\) and true for \(k\) implies true for \(k + 1\), so \(S_n = (n + 1)! - 1\) for all positive integers \(n\) by induction.
 :::
 
-The same approach works for derivatives. The first few derivatives show a pattern, and the inductive step differentiates the assumed formula once more.
+The same approach works for derivatives. The first few derivatives show a pattern, and the inductive step differentiates the assumed formula once more. The notation \(\dfrac{d^ny}{dx^n}\) means differentiate \(y\) with respect to \(x\) a total of \(n\) times (so \(\dfrac{d^3y}{dx^3}\) is the third derivative).
 
 :::eg (Exam style) Find the first three derivatives of \(y = x\mathrm{e}^x\), conjecture a formula for the \(n\)th derivative \(\dfrac{d^ny}{dx^n}\), and prove it by induction.
 By the product rule,

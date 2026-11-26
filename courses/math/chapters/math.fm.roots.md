@@ -144,7 +144,8 @@ The identities extend to three roots. Squaring the sum gives every square once a
 \textstyle\sum \frac{1}{\alpha} &= \frac{\sum \alpha\beta}{\alpha\beta\gamma} \\
 \textstyle\sum \alpha^2\beta^2 &= \left(\textstyle\sum \alpha\beta\right)^2 - 2\alpha\beta\gamma\textstyle\sum \alpha
 \end{aligned}\]
-For \(\sum \alpha^3\) and higher powers, use the equation itself (next section).
+\[\textstyle\sum \alpha^3 = \left(\textstyle\sum \alpha\right)^3 - 3\textstyle\sum \alpha \textstyle\sum \alpha\beta + 3\alpha\beta\gamma\]
+The last identity is easy to misremember. For \(\sum \alpha^3\) and higher powers it is safer to use the equation itself (next section).
 :::
 
 The second identity comes from a common denominator:
@@ -158,7 +159,7 @@ Every root satisfies the equation. If \(\alpha\) is a root of \(x^3 - 2x^2 + 4x 
 Write \(S_n = \alpha^n + \beta^n + \gamma^n\), so \(S_0 = 3\), \(S_1 = \sum \alpha\) and \(S_2 = \sum \alpha^2\). For the roots of \(ax^3 + bx^2 + cx + d = 0\),
 \[aS_{n+3} + bS_{n+2} + cS_{n+1} + dS_n = 0\]
 With \(n = 0\): \(aS_3 + bS_2 + cS_1 + 3d = 0\). Remember \(S_0 = 3\), not 1: the constant \(d\) appears once for each root.
-The same idea works for any degree: for a quartic \(S_0 = 4\) and the relation has five terms. With \(n = -1\) it gives \(S_{-1} = \sum \dfrac{1}{\alpha}\) as well.
+The same idea works for any degree: for a quartic \(S_0 = 4\) and the relation has five terms. Putting \(n = -1\) gives \(aS_2 + bS_1 + cS_0 + dS_{-1} = 0\), where \(S_{-1} = \alpha^{-1} + \beta^{-1} + \gamma^{-1} = \sum \dfrac{1}{\alpha}\), so this relation finds \(\sum \dfrac{1}{\alpha}\) as well.
 :::
 
 :::eg (Exam style) The cubic equation \(x^3 - 2x^2 + 4x + 3 = 0\) has roots \(\alpha\), \(\beta\), \(\gamma\). Find the values of (a) \(\alpha^2 + \beta^2 + \gamma^2\), (b) \(\dfrac{1}{\alpha} + \dfrac{1}{\beta} + \dfrac{1}{\gamma}\), (c) \(\alpha^3 + \beta^3 + \gamma^3\).
@@ -173,10 +174,10 @@ From the coefficients: \(\sum \alpha = 2\), \(\sum \alpha\beta = 4\), \(\alpha\b
 **(c)** Each root satisfies \(x^3 = 2x^2 - 4x - 3\). Add the three equations:
 \[S_3 = 2S_2 - 4S_1 - 3 \times 3\] [M1 A1]
 \[S_3 = 2(-4) - 4(2) - 9 = -25\] [A1]
-**Check** with an identity: \(\left(\sum \alpha\right)^3 - 3\sum \alpha \sum \alpha\beta + 3\alpha\beta\gamma = 8 - 24 - 9 = -25\).
+**Check** with the identity \(\sum \alpha^3\) in the box above: \(\left(\sum \alpha\right)^3 - 3\sum \alpha \sum \alpha\beta + 3\alpha\beta\gamma = 8 - 24 - 9 = -25\).
 :::
 
-The answer to (a) is negative, so the roots cannot all be real. A cubic always has at least one real root (its graph must cross the x-axis), so this one has one real root and two complex conjugate roots.
+The answer to (a) is negative, so the roots cannot all be real: the square of a real number is never negative, so three real roots would give \(\sum \alpha^2 \ge 0\). At least two roots are therefore non-real. Non-real roots of a real cubic come in conjugate pairs, so there is exactly one pair and the third root is real. (A cubic always has at least one real root anyway: its graph goes to \(+\infty\) at one end and \(-\infty\) at the other, so it must cross the x-axis.) So this cubic has one real root and two complex conjugate roots.
 
 :::exam Using the equation versus long identities
 The identity \(\sum \alpha^3 = \left(\sum \alpha\right)^3 - 3\sum \alpha \sum \alpha\beta + 3\alpha\beta\gamma\) is easy to get wrong in an exam. The "add the equations" method needs nothing to be memorised, and mark schemes accept either. Show the line \(S_3 = \dots\) with letters before numbers: that line earns the method mark.

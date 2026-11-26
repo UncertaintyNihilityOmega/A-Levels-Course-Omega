@@ -213,7 +213,7 @@ Here the formula has a **plus** sign between the two integrals. You subtract to 
 In harder cases the question hands you the idea. The syllabus example is \(\displaystyle\int_0^{\pi/4}\sec^nx\,dx\), "by considering \(\dfrac{d}{dx}\left(\tan x\sec^{n-2}x\right)\)". The method is always the same: differentiate the expression you are given, simplify, integrate between the limits, and rearrange.
 
 :::eg (Exam style) Let \(J_n = \displaystyle\int_0^{\pi/4}\sec^nx\,dx\). (a) Show that \(\dfrac{d}{dx}\left(\tan x\sec^{n-2}x\right) = (n-1)\sec^nx - (n-2)\sec^{n-2}x\). (b) Hence show that \((n-1)J_n = 2^{\frac{n-2}{2}} + (n-2)J_{n-2}\) for \(n \ge 2\). (c) Find the exact value of \(\displaystyle\int_0^{\pi/4}\sec^6x\,dx\).
-**(a)** Use the product rule, with \(\dfrac{d}{dx}\sec^{n-2}x = (n-2)\sec^{n-2}x\tan x\):
+**(a)** First the derivative of a power of \(\sec x\). Since \(\sec x = (\cos x)^{-1}\), the chain rule gives \(\dfrac{d}{dx}\sec x = -(\cos x)^{-2}(-\sin x) = \sec x\tan x\). Then, with \(\sec^{n-2}x = (\sec x)^{n-2}\), the chain rule again gives \(\dfrac{d}{dx}\sec^{n-2}x = (n-2)\sec^{n-3}x \cdot \sec x\tan x = (n-2)\sec^{n-2}x\tan x\). Now use the product rule:
 \[\begin{aligned}
 \frac{d}{dx}\left(\tan x\sec^{n-2}x\right) &= \sec^2x \cdot \sec^{n-2}x + \tan x \cdot (n-2)\sec^{n-2}x\tan x \\
 &= \sec^nx + (n-2)\tan^2x\sec^{n-2}x
@@ -344,7 +344,7 @@ The same working for \(\int_0^\pi x^n\cos x\,dx\) gives a similar formula with t
 :::
 
 :::exam Wording, accuracy and method marks
-"Show that" means every line of the derivation is marked, so write the by-parts choice (\(u = \dots\), \(\dfrac{dv}{dx} = \dots\)), the boundary term with both ends, and the rearrangement. "Hence" means you must use the formula you have just proved. Give exact answers (fractions, \(\pi\), \(e\), \(\ln 2\)) unless asked for a decimal. None of these formulae is on MF19: you must derive or learn them. Never "fudge" towards a printed answer: if your result disagrees with the given one, look for the slip, because examiners see a sign that changes from nowhere.
+The mark token **DM1** is a method mark that depends on the previous M1: it is earned only if that M1 was earned. "Show that" means every line of the derivation is marked, so write the by-parts choice (\(u = \dots\), \(\dfrac{dv}{dx} = \dots\)), the boundary term with both ends, and the rearrangement. "Hence" means you must use the formula you have just proved. Give exact answers (fractions, \(\pi\), \(e\), \(\ln 2\)) unless asked for a decimal. None of these formulae is on MF19: you must derive or learn them. Never "fudge" towards a printed answer: if your result disagrees with the given one, look for the slip, because examiners see a sign that changes from nowhere.
 :::
 
 :::board
@@ -377,7 +377,7 @@ A: Take \(u = x^n\), \(v = \tfrac13e^{3x}\): \(U_n = \left[\tfrac13x^ne^{3x}\rig
 Q: Let \(T_n = \displaystyle\int_0^{\pi/4}\tan^nx\,dx\). Use \(T_n + T_{n-2} = \dfrac{1}{n-1}\) to find \(T_6\) exactly.
 A: \(T_0 = \tfrac\pi4\). \(T_2 = 1 - \tfrac\pi4\), \(T_4 = \tfrac13 - T_2 = \tfrac\pi4 - \tfrac23\), \(T_6 = \tfrac15 - T_4 = \tfrac{13}{15} - \tfrac\pi4\).
 Q: Use \(2J_3 = \sqrt2 + J_1\), from \((n-1)J_n = 2^{\frac{n-2}{2}} + (n-2)J_{n-2}\), and \(J_1 = \ln\left(1 + \sqrt2\right)\) to find \(\displaystyle\int_0^{\pi/4}\sec^3x\,dx\) to 3 s.f.
-A: \(J_3 = \tfrac12\left(\sqrt2 + \ln\left(1 + \sqrt2\right)\right) = \tfrac12(1.4142 + 0.8814) = 1.15\).
+A: The value \(J_1 = \displaystyle\int_0^{\pi/4}\sec x\,dx = \Big[\ln\left|\sec x + \tan x\right|\Big]_0^{\pi/4} = \ln\left(\sqrt2 + 1\right)\) uses the standard integral of \(\sec x\), which is in MF19. Then \(J_3 = \tfrac12\left(\sqrt2 + \ln\left(1 + \sqrt2\right)\right) = \tfrac12(1.4142 + 0.8814) = 1.15\).
 Q: With \(L_n = \displaystyle\int_1^e(\ln x)^n\,dx\) and \(L_n = e - nL_{n-1}\), find \(L_5\) exactly, given \(L_3 = 6 - 2e\).
 A: \(L_4 = e - 4L_3 = 9e - 24\), then \(L_5 = e - 5L_4 = 120 - 44e\).
 Q: With \(K_n = \displaystyle\int_0^1x^n\sqrt{1-x}\,dx\) and \(K_n = \dfrac{2n}{2n+3}K_{n-1}\), find \(K_4\), given \(K_3 = \dfrac{32}{315}\).

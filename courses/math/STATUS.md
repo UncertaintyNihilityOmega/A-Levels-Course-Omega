@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-26 · FIX · P32-P36 review: pgf rational PGF in t^2 exam example (6 marks) + checks; wilcoxon exam-practice marks to the 9231/41 scheme (no table-value mark, M1 comparison, A1 conclusion); fm-chisq density label moved to top right
+Last: 2026-11-26 · FIX · READER items closed (39) on fm.overview..fm.rectangles: roots, series, matrices, transform (elementary area proof), induction, rational, graphs, polar, vectors, vectors2, hyperbolic, diff (binomial links to p3.partial), integ, reduction, rectangles; checks files extended
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

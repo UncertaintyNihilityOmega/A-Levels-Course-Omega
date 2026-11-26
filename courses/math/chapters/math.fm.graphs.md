@@ -101,7 +101,9 @@ The reciprocal turns large values into small ones and small values into large on
 - **Same sign.** \(\dfrac{1}{f}\) is positive where \(f\) is positive and negative where \(f\) is negative. It is not defined where \(f = 0\).
 - **Zeros of \(f\)** become **vertical asymptotes** of \(\dfrac{1}{f}\). Which way it goes: \(f \to 0^+\) gives \(\dfrac{1}{f} \to +\infty\); \(f \to 0^-\) gives \(-\infty\).
 - **Vertical asymptotes of \(f\)** (where \(f \to \pm\infty\)) become points where \(\dfrac{1}{f} \to 0\): the curve meets the \(x\)-axis there.
-- **Large \(|f|\)** (including a horizontal or oblique asymptote with \(|f| \to \infty\)) gives \(\dfrac{1}{f} \to 0\): the \(x\)-axis becomes an asymptote. A horizontal asymptote \(y = b\) (\(b \neq 0\)) of \(f\) gives \(y = \dfrac1b\). An asymptote \(y = 0\) of \(f\) gives a curve that goes to \(\pm\infty\).
+- **\(f \to \pm\infty\)** (as \(x\) grows, for example along an oblique asymptote) gives \(\dfrac{1}{f} \to 0\): the \(x\)-axis becomes an asymptote.
+- **\(f \to b\) with \(b \neq 0\)** (a horizontal asymptote \(y = b\) of \(f\)) gives \(\dfrac{1}{f} \to \dfrac1b\): the curve has the horizontal asymptote \(y = \dfrac1b\).
+- **\(f \to 0\) as \(x \to \pm\infty\)** (the asymptote \(y = 0\) of \(f\)) makes \(\left|\dfrac{1}{f}\right|\) large: the curve goes to \(+\infty\) or \(-\infty\), according to the sign of \(f\).
 - **Maxima and minima swap.** Where \(f\) has a local minimum or maximum at height \(m \neq 0\), \(\dfrac{1}{f}\) has a stationary point at the same \(x\), of height \(\dfrac1m\), of the opposite type. If \(f\) is increasing, \(\dfrac{1}{f}\) is decreasing, and vice versa.
 - **Invariant points.** Where \(f(x) = 1\) or \(f(x) = -1\) the two graphs meet, because \(\dfrac{1}{1} = 1\) and \(\dfrac{1}{-1} = -1\).
 :::
@@ -152,6 +154,7 @@ Writing \(y^2 = f(x)\) says the **square** of \(y\) is \(f(x)\). Because a squar
 - Where \(f(x) = 0\) the curve meets the \(x\)-axis. If \(f\) cuts the axis there with a non-zero gradient, the curve has a **vertical tangent** (the "nose" of the curve), because \(2y\dfrac{dy}{dx} = f'(x)\) and \(y \to 0\).
 - Where \(f\) has a turning point at height \(h > 0\), the curve has points of greatest or least \(|y|\), equal to \(\sqrt{h}\), at the same \(x\).
 - Where \(0 < f < 1\), \(\sqrt{f} > f\); where \(f > 1\), \(\sqrt{f} < f\). The curve \(y^2 = f\) is flatter than \(y = f\) when \(f\) is large.
+- **Sloping asymptotes.** If \(f\) is a quadratic, complete the square and take the square root for large \(|x|\): for example \(y^2 = x^2 - 6x + 5 = (x - 3)^2 - 4\), and for large \(|x|\) the \(-4\) is small beside \((x - 3)^2\), so \(y \approx \pm(x - 3)\). The lines \(y = x - 3\) and \(y = -(x - 3)\) are asymptotes of the curve.
 :::
 
 :::eg Describe the graph of \(y^2 = x^2 - 4\) and of \(y^2 = 4 - x^2\).
@@ -247,7 +250,7 @@ Move everything to one side and combine:
 \end{aligned}\] [M1] [A1]
 The numerator is zero when \(x = \dfrac{3 \pm \sqrt{9 + 24}}{4} = \dfrac{3 \pm \sqrt{33}}{4}\), that is \(-0.686\) and \(2.186\). The denominator is zero at \(x = -3\) and \(x = 1\).
 
-The four critical values in order are \(-3\), \(\dfrac{3 - \sqrt{33}}{4}\), \(1\), \(\dfrac{3 + \sqrt{33}}{4}\). [B1] For large \(x\) the fraction is positive (the numerator's leading coefficient and the denominator's are both positive). The sign changes at every critical value, since each is a simple zero or a simple pole.
+The four critical values in order are \(-3\), \(\dfrac{3 - \sqrt{33}}{4}\), \(1\), \(\dfrac{3 + \sqrt{33}}{4}\). [B1] For large \(x\) the fraction is positive (the numerator's leading coefficient and the denominator's are both positive). The sign changes at every critical value, since each comes from a single (unsquared) factor of the numerator or of the denominator, so the fraction changes sign there.
 
 | Interval | Sign of the fraction |
 |---|---|
@@ -299,7 +302,7 @@ As \(x \to \pm\infty\), \(|f| \to \infty\), so \(\dfrac{1}{f} \to 0\): the \(x\)
 
 Minima at \((2, 0)\) and \((-2, 0)\), and a peak with a corner at \((0, 4)\). [B1]
 
-There is no vertical asymptote now (\(x = -1\) was on the deleted part, and \(x = 1\) is not an asymptote). The oblique asymptotes are \(y = x - 5\) for large positive \(x\) and \(y = -x - 5\) for large negative \(x\). [B1]
+There is no vertical asymptote now: the only vertical asymptote of \(f\) is \(x = -1\), which lies in the deleted part \(x < 0\), so \(y = f(|x|)\) has none. The oblique asymptotes are \(y = x - 5\) for large positive \(x\) and \(y = -x - 5\) for large negative \(x\). [B1]
 
 **(c)** Find where \(f(x) = 2\) (this applies on the right branch, where \(f \geq 0\)):
 \[\begin{aligned}

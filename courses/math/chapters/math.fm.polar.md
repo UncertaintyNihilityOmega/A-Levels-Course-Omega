@@ -28,7 +28,7 @@ On a map you can give a place two ways: "3 km east and 4 km north" (Cartesian) o
 Fix a point \(O\), the **pole**, and a half-line from it, the **initial line** (drawn along the positive \(x\)-axis). A point \(P\) has polar coordinates \((r, \theta)\), where \(r\) is the distance \(OP\) and \(\theta\) is the angle from the initial line to \(OP\), measured **anticlockwise** and in **radians**. The pole itself has \(r = 0\) and no definite angle.
 :::
 
-In 9231 the convention \(r \geq 0\) is used: a distance is never negative. Angles are given in either \(0 \leq \theta < 2\pi\) or \(-\pi < \theta \leq \pi\), and adding \(2\pi\) to \(\theta\) gives the same point.
+In 9231 the convention \(r \geq 0\) is used: a distance is never negative. (Some books allow a negative \(r\): it means going \(|r|\) from the pole in the opposite direction, so \((-r, \theta)\) is the same point as \((r, \theta + \pi)\). In 9231 a curve is drawn only where \(r \geq 0\), and you never have to plot such points; they are mentioned only so you can see why some curves look different in other books.) Angles are given in either \(0 \leq \theta < 2\pi\) or \(-\pi < \theta \leq \pi\), and adding \(2\pi\) to \(\theta\) gives the same point.
 
 :::html
 <figure class="fig small"><svg viewBox="10 62 305 178" role="img" aria-label="A point P at distance r from the pole O along a ray making angle theta with the initial line. The perpendicular from P to the initial line shows x equals r cos theta along the initial line and y equals r sin theta up to P.">
@@ -123,7 +123,7 @@ To sketch \(r = f(\theta)\), let \(\theta\) turn and watch the point sweep out t
 | \(\theta = \alpha\) | half-line through the pole |
 | \(r = a\sec\theta\), \(r = a\operatorname{cosec}\theta\) | the lines \(x = a\) and \(y = a\) |
 | \(r = 2a\cos\theta\), \(r = 2a\sin\theta\) | circles through the pole, diameter \(2a\) along the initial line or along \(\theta = \dfrac\pi2\) |
-| \(r = a(1 + \cos\theta)\) | **cardioid**: heart shape with a cusp at the pole |
+| \(r = a(1 + \cos\theta)\) | **cardioid**: heart shape with a cusp at the pole (a **cusp** is a point where the curve turns back on itself sharply) |
 | \(r = a + b\cos\theta\) | **limaçon**: no loop if \(a > b > 0\) |
 | \(r = a\cos n\theta\) or \(a\sin n\theta\) | **rose** with petals |
 | \(r = a\theta\) | **spiral** (Archimedean), \(\theta \geq 0\) |
@@ -196,7 +196,7 @@ The distance of a point from the initial line is \(y = r\sin\theta\), and its di
 :::key Greatest distances for \(r = f(\theta)\)
 - Greatest distance from the initial line: maximise \(y = r\sin\theta = f(\theta)\sin\theta\), so solve \(\dfrac{dy}{d\theta} = 0\).
 - Furthest left or right: maximise or minimise \(x = f(\theta)\cos\theta\).
-- The tangent is **parallel to the initial line** where \(\dfrac{dy}{d\theta} = 0\), and **perpendicular** to it (parallel to \(\theta = \dfrac\pi2\)) where \(\dfrac{dx}{d\theta} = 0\).
+- The tangent is **parallel to the initial line** where \(\dfrac{dy}{d\theta} = 0\), and **perpendicular** to it (parallel to \(\theta = \dfrac\pi2\)) where \(\dfrac{dx}{d\theta} = 0\). The reason: with \(x = r\cos\theta\) and \(y = r\sin\theta\) the curve is parametric in \(\theta\), so \(\dfrac{dy}{dx} = \dfrac{dy/d\theta}{dx/d\theta}\) (parametric differentiation, from [Further differentiation](#math.p3.diff)), which is 0 where \(\dfrac{dy}{d\theta} = 0\) (and \(\dfrac{dx}{d\theta} \neq 0\)), and the tangent is vertical where \(\dfrac{dx}{d\theta} = 0\) (and \(\dfrac{dy}{d\theta} \neq 0\)).
 - Greatest and least \(r\): solve \(\dfrac{dr}{d\theta} = 0\) (or use the range of the trigonometric function).
 :::
 
@@ -289,6 +289,8 @@ A &= \frac12\int_0^\pi a^2\theta^2\,d\theta \\
 For a region between two curves, first find where the curves meet (equate the two values of \(r\)); then work out which curve is farther from the pole between those angles; then integrate \(\tfrac12\left(r_{\text{outer}}^2 - r_{\text{inner}}^2\right)\). A sketch with both curves is essential.
 
 :::eg The circle \(r = 3\cos\theta\) and the cardioid \(r = 1 + \cos\theta\) are drawn for \(-\dfrac\pi2 \leq \theta \leq \dfrac\pi2\). Find the exact area of the region inside the circle and outside the cardioid.
+**Sketch.** The circle \(r = 3\cos\theta\) passes through the pole and \((3, 0)\), with that line as a diameter. The cardioid passes through \((2, 0)\), curves round the pole and has its cusp at the pole. Near \(\theta = 0\) the circle is the outer curve, and the region wanted is the crescent between the two curves on the right of the pole. Near \(\theta = \pm\dfrac\pi2\) the circle shrinks to the pole while the cardioid is still at distance 1, so there the cardioid is the outer curve (for \(\dfrac\pi3 < |\theta| < \dfrac\pi2\)) and there is no region to find.
+
 **Intersections.** \(3\cos\theta = 1 + \cos\theta\), so \(\cos\theta = \dfrac12\) and \(\theta = \pm\dfrac\pi3\). At these points \(r = \dfrac32\).
 
 **Which is outside?** At \(\theta = 0\) the circle has \(r = 3\) and the cardioid \(r = 2\). So for \(-\dfrac\pi3 \leq \theta \leq \dfrac\pi3\) the circle is outside, and the required region lies between the two curves there. Both curves are symmetric about the initial line, so the area is twice the area for \(0 \leq \theta \leq \dfrac\pi3\):
@@ -473,7 +475,7 @@ Total area \(= a^2\). [A1]
 (c) \(y^2 = r^2\sin^2\theta = a^2(1 - 2s)s\) with \(s = \sin^2\theta\). [M1]
 \(\dfrac{d(y^2)}{ds} = a^2(1 - 4s) = 0\) gives \(s = \tfrac14\). [M1]
 \(y^2 = a^2 \times \tfrac12 \times \tfrac14 = \dfrac{a^2}{8}\), so the greatest distance is \(\dfrac{a}{2\sqrt2}\). [A1]
-Q: [8 marks] ★★★ The spiral \(S\) has polar equation \(r = a\theta\) for \(\theta \geq 0\). Let \(R_1\) be the region bounded by the first turn of \(S\) (\(0 \leq \theta \leq 2\pi\)) and the initial line. (a) Find the area of \(R_1\). (b) Show that the area of \(R_1\) is one third of the area of the circle with centre the pole and radius \(2\pi a\). (c) Let \(R_2\) be the region between the first turn and the second turn, bounded by the curve for \(0 \leq \theta \leq 2\pi\) and by the curve for \(2\pi \leq \theta \leq 4\pi\), and the initial line. Show that the area of \(R_2\) is six times the area of \(R_1\).
+Q: [8 marks] ★★★ The spiral \(S\) has polar equation \(r = a\theta\) for \(\theta \geq 0\). Let \(R_1\) be the region bounded by the first turn of \(S\) (\(0 \leq \theta \leq 2\pi\)) and the initial line. (a) Find the area of \(R_1\). (b) Show that the area of \(R_1\) is one third of the area of the circle with centre the pole and radius \(2\pi a\). (c) Let \(R_2\) be the region between the first turn and the second turn, bounded by the first turn (\(0 \leq \theta \leq 2\pi\)), the second turn (\(2\pi \leq \theta \leq 4\pi\)) and the part of the initial line from \(r = 2\pi a\) to \(r = 4\pi a\). Show that the area of \(R_2\) is six times the area of \(R_1\).
 H: For (c), along the direction \(\varphi\) (with \(0 \leq \varphi \leq 2\pi\)), the inner radius is \(a\varphi\) and the outer radius is \(a(\varphi + 2\pi)\).
 H: Expand \((\varphi + 2\pi)^2 - \varphi^2 = 4\pi\varphi + 4\pi^2\).
 A: (a) \(A_1 = \tfrac12\int_0^{2\pi}a^2\theta^2\,d\theta\) [M1] \(= \dfrac{a^2}{2} \times \dfrac{8\pi^3}{3} = \dfrac{4\pi^3a^2}{3}\). [A1]
