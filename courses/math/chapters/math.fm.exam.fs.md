@@ -79,11 +79,11 @@ The June 2026 paper (9231/41) had 6 questions worth 7, 10, 6, 9, 8 and 10 marks,
 | Question | Marks | Topic of the question |
 |---|---|---|
 | 1 | 7 | why a Wilcoxon signed-rank test is not appropriate (1), then a sign test for a median from a stem-and-leaf diagram of 15 values (6) |
-| 2 | 10 | a \(\chi^2\) test of independence on a \(2 \times 3\) table (8), and which company is the most unreliable from the contributions (2) |
+| 2 | 10 | a \(\chi^2\) test of independence on a \(3 \times 3\) table with one expected frequency below 5, so two rows (or two columns) had to be combined (8), and which company is the most unreliable from the contributions (2) |
 | 3 | 6 | a pooled two-sample 95% confidence interval from \(\sum x\), \(\sum x^2\), \(\sum y\), \(\sum y^2\) (sample sizes 7 and 9; normal, equal variances assumed) |
 | 4 | 9 | a piecewise CDF (a cubic piece, then a quadratic piece) with constants: verify a median (1), find \(a\) and \(b\) (3), the PDF (2), \(\mathrm{E}(1/X)\) (3) |
 | 5 | 8 | a paired t-test from a before-and-after table of 8 pairs, with \(H_0: \mu_d = 5\) against \(H_1: \mu_d > 5\) at the 10% level (7), and an assumption (1) |
-| 6 | 10 | a PGF of the form \(kt(at + 1)^2\) with \(\mathrm{E}(X)\) given: \(a\) and \(k\) (5), \(\mathrm{Var}(X)\) (2), \(P(Y = 0)\) for the sum of three observations (3) |
+| 6 | 10 | a PGF of the form \(kt^{-1}(at + 1)^2\) (so \(X\) takes the values \(-1\), 0 and 1) with \(\mathrm{E}(X)\) given: \(a\) and \(k\) (5), \(\mathrm{Var}(X)\) (2), \(P(Y = 0)\) for the sum of three observations (3) |
 
 Two things to take from these papers, and only these. First, each paper has **several tests and a couple of continuous random variable or PGF questions**, and most of the marks in the test questions are for the layout and the wording. Second, the topics a paper contains change from series to series, so these two papers are not a forecast: revise every chapter.
 
@@ -252,7 +252,7 @@ Four phrases cost marks: "no evidence", "proves", a conclusion with no context a
 
 ## Reading the marks
 
-Mark schemes for 9231 use M1, A1, B1, DM1 and DB1 (marks that depend on an earlier starred mark), A1 FT and B1 FT (follow-through from your own earlier wrong value, so a wrong critical value still earns the conclusion mark if the conclusion matches it), and abbreviations such as SOI (seen or implied), AWRT (answer which rounds to), OE (or equivalent) and ISW (ignore subsequent working). Marks are awarded positively and are not deducted for errors, so write every line. A mark scheme may allow a conclusion in either of two forms, so use the one you are sure of.
+Mark schemes for 9231 use M1, A1, B1, DM1 and DB1 (marks that depend on an earlier starred mark), A1 FT and B1 FT (follow-through from your own earlier wrong value; in a test the comparison M1 is for "their" statistic against the correct critical value, and the final A1 is for a correct conclusion from correct working, so a wrong critical value usually costs both and is never followed through), and abbreviations such as SOI (seen or implied), AWRT (answer which rounds to), OE (or equivalent) and ISW (ignore subsequent working). Marks are awarded positively and are not deducted for errors, so write every line. A mark scheme may allow a conclusion in either of two forms, so use the one you are sure of.
 
 ## How to practise
 

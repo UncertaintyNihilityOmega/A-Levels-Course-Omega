@@ -90,6 +90,11 @@ every outcome listed for your chapter, and nothing marked "Not:" except in a cle
   "[M1 for two correct]"). The tokens in each answer add up to its `[n marks]`; in Spot the error, name each mark of
   the scheme once, so the marks shown, the `[n marks]` and the "scores k out of n" sentence agree. When you add to a
   chapter, recount the marks of its older examples too.
+- 9231 hypothesis tests (real schemes 9231/41 June 2025 Q3, Q5 and June 2026 Q1, Q2): B1 hypotheses (in words name
+  the model or both variables; "population median" for non-parametric tests) … M1 A1 for the statistic … then
+  **M1** for comparing it with the critical value (no separate mark for ν or the table value) and saying reject or
+  not, and **A1** for a correct conclusion in context from correct working ("sufficient/insufficient evidence";
+  never "no evidence"), not A1 FT. A wrong ν costs the A1 (and usually the M1).
 
 ### Phone width
 - Inline \( … \) does not wrap on phones: one relation per inline piece (about 30 characters), "\(a = b\), so

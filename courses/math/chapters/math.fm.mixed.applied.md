@@ -376,8 +376,8 @@ Every expected frequency is at least 5, so no classes need combining:
 [M1]
 \[X^2 = 0.468 + 0.054 + 0.393 + 0.000 + 0.284 = 1.20\]
 [A1]
-There are 5 classes. The mean was estimated from the data, so \(\nu = 5 - 1 - 1 = 3\), and the 5% critical value is \(7.815\). [B1]
-\(1.20 < 7.815\), so do not reject \(H_0\). There is insufficient evidence, at the 5% level, that a Poisson distribution with mean \(1.7\) is not a suitable model for the number of faults per length. [A1]
+There are 5 classes. The mean was estimated from the data, so \(\nu = 5 - 1 - 1 = 3\), and the 5% critical value is \(7.815\).
+\(1.20 < 7.815\), so do not reject \(H_0\). [M1] There is insufficient evidence, at the 5% level, that a Poisson distribution with mean \(1.7\) is not a suitable model for the number of faults per length. [A1]
 Q: [9 marks] (#math.fm.inference) ★★★ The masses, in grams, of a random sample of 10 apples from an orchard are summarised by \(\sum x = 520\) and \(\sum x^2 = 27148\). The masses are assumed to be normally distributed. The grower claims that the mean mass is \(50\) g.
 
 (a) Calculate the sample mean and an unbiased estimate of the population variance. [2]
@@ -476,8 +476,8 @@ Combine the bus and cycle columns (they are similar kinds of travel, and each ex
 [M1]
 \[X^2 = 7.14\]
 [A1]
-There are now 2 rows and 2 columns, so \(\nu = (2 - 1)(2 - 1) = 1\), and the 5% critical value is \(3.841\). [B1]
-\(7.14 > 3.841\), so reject \(H_0\). There is sufficient evidence, at the 5% level, of an association between the method of travel to work and where the person lives. [A1]
+There are now 2 rows and 2 columns, so \(\nu = (2 - 1)(2 - 1) = 1\), and the 5% critical value is \(3.841\).
+\(7.14 > 3.841\), so reject \(H_0\). [M1] There is sufficient evidence, at the 5% level, of an association between the method of travel to work and where the person lives. [A1]
 
 (b) The village people using a bus or a bicycle contribute \(2.380\), the largest: more village workers use a bus or cycle (30) than the 22.66 expected if the method of travel were independent of where they live. [B1]
 Q: [10 marks] (#math.fm.vertical) ★★★ A particle \(P\) of mass \(m\) moves on the smooth inner surface of a fixed hollow sphere of centre \(O\) and radius \(a\). It is projected horizontally from the lowest point \(A\) with speed \(\sqrt{3ag}\). When \(OP\) makes an angle \(\theta\) with the downward vertical, the normal reaction on \(P\) is \(R\).

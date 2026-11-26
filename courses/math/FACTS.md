@@ -154,11 +154,11 @@ FM LEAD, 20 Nov 2026. Outcome ids (1.1a …) are ours, in the syllabus's order; 
 - 9231/41 June 2026 (read by the P27–P31 REVIEW, 25 Nov 2026, from the question paper and mark scheme in
   scratch/papers): front page as 9231/31 (no g line); 1 h 30, total 50, 6 questions (7, 10, 6, 9, 8, 10): why a
   Wilcoxon signed-rank test is not appropriate [1], sign test for a median from a stem-and-leaf sample of 15 [6]; χ²
-  test of independence on a 2×3 table [8], which company is most unreliable from the contributions [2]; pooled
+  test of independence on a 3×3 table (on time, late, cancelled by company A, B, C) [8], which company is most unreliable from the contributions [2]; pooled
   two-sample 95% confidence interval from Σx, Σx², Σy, Σy² (n = 7, 9; normal, equal variances assumed) [6];
   piecewise CDF (cubic then quadratic) with constants: verify the median [1], find a and b [3], the PDF [2], E(1/X)
   [3]; paired t-test from a before/after table of 8, H0: μd = 5 against H1: μd > 5 at 10% (critical value 1.415) [7],
-  an assumption [1]; PGF kt(at + 1)² with E(X) given: a and k [5], Var(X) [2], P(Y = 0) for the sum of three
+  an assumption [1]; PGF kt⁻¹(at + 1)² (X takes −1, 0, 1) with E(X) = 1/3 given: a and k [5], Var(X) [2], P(Y = 0) for the sum of three
   observations [3]. Mark scheme conclusions: "sufficient evidence to support/suggest …" or "insufficient evidence
   …", in context, with a level of uncertainty; "No evidence" is not accepted; "accept H0" and "do not reject H0" both
   allowed.

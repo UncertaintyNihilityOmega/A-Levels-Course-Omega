@@ -241,7 +241,7 @@ Use the unrounded \(\hat p = \dfrac{1.465}{6}\): the rounded 0.2442 would give 5
 
 **(c)** \(H_0\): the number of faulty components in a box follows \(\mathrm{B}(6, p)\). \(H_1\): it does not. [B1]
 
-The expected frequencies for 4, 5 and 6 faulty components are 6.09, 0.79 and 0.04. The last two are below 5, so combine classes 4, 5 and 6: \(E = 6.92\) and \(O = 10 + 5 + 1 = 16\). [M1]
+The expected frequencies for 4, 5 and 6 faulty components are 6.09, 0.79 and 0.04. The last two are below 5, so combine classes 4, 5 and 6: \(E = 6.92\) and \(O = 10 + 5 + 1 = 16\).
 
 | \(x\) | 0 | 1 | 2 | 3 | 4 or more |
 |---|---|---|---|---|---|
@@ -250,9 +250,9 @@ The expected frequencies for 4, 5 and 6 faulty components are 6.09, 0.79 and 0.0
 
 \[X^2 = \frac{(55 - 37.29)^2}{37.29} + \frac{(62 - 72.28)^2}{72.28} + \dots + \frac{(16 - 6.92)^2}{6.92}\] [M1]
 \[= 8.41 + 1.46 + 5.17 + 0.03 + 11.91 = 27.0\] [A1]
-There are 5 classes and \(p\) was estimated, so \(\nu = 5 - 1 - 1 = 3\). The 5% critical value is 7.815. [B1]
+There are 5 classes and \(p\) was estimated, so \(\nu = 5 - 1 - 1 = 3\). The 5% critical value is 7.815.
 
-Since \(27.0 > 7.815\), reject \(H_0\): there is sufficient evidence, at the 5% level, that the number of faulty components does not follow a binomial distribution. [A1 FT]
+Since \(27.0 > 7.815\), reject \(H_0\): there is sufficient evidence, at the 5% level, that the number of faulty components does not follow a binomial distribution. [M1 A1]
 
 **(d)** Components made one after another on the same machine may share a fault, so whether they are faulty may not be independent. Equally, the probability of a fault may differ from box to box (for example between shifts). [B1]
 
@@ -290,9 +290,9 @@ X^2 &= \frac{(20 - 11.08)^2}{11.08} + \frac{(22 - 24.38)^2}{24.38} + \frac{(20 -
 &\quad + \frac{(14 - 19.66)^2}{19.66} + \frac{(10 - 10.82)^2}{10.82} + \frac{(14 - 7.25)^2}{7.25}
 \end{aligned}\] [M1]
 \[= 7.18 + 0.23 + 1.73 + 1.63 + 0.06 + 6.29 = 17.1\] [A1]
-There are 6 classes and \(\lambda\) was estimated from the data, so \(\nu = 6 - 1 - 1 = 4\). The critical value is 9.488. [B1]
+There are 6 classes and \(\lambda\) was estimated from the data, so \(\nu = 6 - 1 - 1 = 4\). The critical value is 9.488.
 
-Since \(17.1 > 9.488\), reject \(H_0\): there is sufficient evidence, at the 5% level, that the number of calls does not follow \(\mathrm{Po}(2.2)\). [A1 FT]
+Since \(17.1 > 9.488\), reject \(H_0\): there is sufficient evidence, at the 5% level, that the number of calls does not follow \(\mathrm{Po}(2.2)\). [M1 A1]
 
 **(c)** The variance is
 \[\frac{0 + 22 + 80 + 126 + 160 + 200 + 216}{100} - 2.2^2 = 8.04 - 4.84 = 3.2\] [B1]
@@ -389,7 +389,7 @@ When a model is not rejected, say so carefully. The test has not shown that the 
 ### Wording the conclusion
 
 :::exam How the marks are earned
-Hypotheses first (in words: "the data fit the model", not just symbols), then the statistic, then \(\nu\) and the critical value as separate marks, then the conclusion, which earns a follow-through mark if it is consistent with your own critical value. Write the conclusion in context with "evidence" language: "there is sufficient evidence, at the 5% level, that the number of calls does not follow a Poisson distribution", or "there is insufficient evidence ... that the die is biased". Do not write "the data prove the model", "accept \(H_1\)" or "the model is wrong". In the June 2026 Paper 4 test of independence, the hypotheses had to name both variables, and the mark scheme did not accept "no evidence" for a non-significant result: write "insufficient evidence" or "not enough evidence". That scheme also gave no mark for \(\nu\) on its own: the method mark was for comparing the statistic with the correct critical value, so a wrong \(\nu\) cost the comparison and the conclusion. Write \(\nu\) down anyway. The \(\chi^2\) table is printed in MF19, so you read the critical value from it. The formula \(X^2 = \sum \dfrac{(O - E)^2}{E}\) and the rule \(\nu = n - 1 - k\) are not printed: learn them.
+The June 2025 Paper 4 goodness-of-fit test (a binomial model, [5]) was marked B1 for the hypotheses in words, naming the distribution and the data; M1 for an expression of the right form with the classes correctly combined; A1 for the value of \(X^2\); M1 for comparing it with the critical value (printed in the scheme, with no separate mark) and stating reject or do not reject; and A1 for a correct conclusion in context from correct working. So \(\nu\) and the critical value earn nothing on their own, but a wrong \(\nu\) costs the final mark. When the expected frequencies are not given, finding them earns M1 A1 as well, as in the June 2026 test for independence. Write the conclusion in context with "evidence" language: "there is sufficient evidence, at the 5% level, that the number of calls does not follow a Poisson distribution", or "there is insufficient evidence ... that the die is biased". Do not write "the data prove the model", "accept \(H_1\)" or "the model is wrong". In the June 2026 Paper 4 test of independence, the hypotheses had to name both variables, and the mark scheme did not accept "no evidence" for a non-significant result: write "insufficient evidence" or "not enough evidence". Write \(\nu\) down anyway: it shows the examiner which critical value you meant. The \(\chi^2\) table is printed in MF19, so you read the critical value from it. The formula \(X^2 = \sum \dfrac{(O - E)^2}{E}\) and the rule \(\nu = n - 1 - k\) are not printed: learn them.
 :::
 
 :::eg (Exam style) A four-sided spinner has faces numbered 1 to 4. It is claimed that the probability of scoring \(r\) is \(P(X = r) = kr\), where \(k\) is a constant. The spinner is spun 150 times and the scores 1, 2, 3 and 4 occur 22, 27, 41 and 60 times. (a) Show that \(k = 0.1\). (b) Test the claim at the 10% significance level.
@@ -404,9 +404,9 @@ The expected frequencies are \(150 \times 0.1r\):
 All are at least 5, and no parameter was estimated from the data.
 \[X^2 = \frac{(22 - 15)^2}{15} + \frac{(27 - 30)^2}{30} + \frac{(41 - 45)^2}{45} + \frac{(60 - 60)^2}{60}\] [M1]
 \[= 3.267 + 0.300 + 0.356 + 0 = 3.92\] [A1]
-\(\nu = 4 - 1 = 3\), and the critical value for 10% (the column \(p = 0.9\)) is 6.251. [B1]
+\(\nu = 4 - 1 = 3\), and the critical value for 10% (the column \(p = 0.9\)) is 6.251.
 
-Since \(3.92 < 6.251\), do not reject \(H_0\): there is insufficient evidence, at the 10% level, that the scores do not follow this distribution. [A1 FT]
+Since \(3.92 < 6.251\), do not reject \(H_0\): there is insufficient evidence, at the 10% level, that the scores do not follow this distribution. [M1 A1]
 :::
 
 :::board
@@ -419,15 +419,15 @@ A student wrote this answer.
 Line 1: \(H_0\): the number of seeds germinating follows \(\mathrm{B}(4, p)\). \(H_1\): it does not. [B1]
 Line 2: \(\bar x = \dfrac{162}{120} = 1.35\), \(\hat p = 0.3375\). Expected frequencies 23.12, 47.11, 36.00, 12.23, 1.56. Combine the last two: 13.78, with \(O = 20\). [M1 A1]
 Line 3: \(X^2 = 1.497 + 0.358 + 1.776 + 2.805 = 6.44\) [M1 A1]
-Line 4: \(\nu = 4 - 1 = 3\), critical value 7.815 [B0]
-Line 5: \(6.44 < 7.815\), so do not reject \(H_0\): there is insufficient evidence that the binomial model is unsuitable. [A1 FT]
+Line 4: \(\nu = 4 - 1 = 3\), critical value 7.815
+Line 5: \(6.44 < 7.815\), so do not reject \(H_0\): there is insufficient evidence that the binomial model is unsuitable. [M1 A0]
 
 Lines 1 to 3 are correct and earn all five of their marks.
 
-**Line 4 loses the mark for \(\nu\).** The student forgot that \(p\) was estimated from the data, so there is a second degree of freedom to subtract. The conclusion in line 5 follows through from the wrong critical value, so it keeps its follow-through mark. The student scores 6 out of 7.
+**Line 4 uses the wrong \(\nu\).** The student forgot that \(p\) was estimated from the data, so there is a second degree of freedom to subtract. No mark is printed against \(\nu\) itself, but the conclusion mark is for a correct conclusion from correct working, so line 5 loses it. The comparison keeps its method mark only because the real 9231 schemes allow a comparison with the critical value that this common slip produces; a comparison with some other wrong value would lose that mark as well. The student scores 6 out of 7.
 
-Correct line 4: \(\nu = 4 - 1 - 1 = 2\), critical value 5.991. [B1]
-Correct line 5: \(6.44 > 5.991\), so reject \(H_0\): there is sufficient evidence, at the 5% level, that the number of seeds germinating does not follow a binomial distribution. The wrong \(\nu\) reversed the conclusion.
+Correct line 4: \(\nu = 4 - 1 - 1 = 2\), critical value 5.991.
+Correct line 5: \(6.44 > 5.991\), so reject \(H_0\): there is sufficient evidence, at the 5% level, that the number of seeds germinating does not follow a binomial distribution. [M1 A1] The wrong \(\nu\) reversed the conclusion.
 :::
 
 :::try Start easy, finish at exam standard
@@ -451,8 +451,8 @@ A: \(\sum O^2 = 576 + 324 + 484 + 225 + 441 = 2050\), so \(\dfrac{2050}{20} - 10
 Q: [5 marks] ★ A spinner has 5 equal sectors and is spun 100 times. The sectors come up 27, 15, 22, 18 and 18 times. Test, at the 5% significance level, whether the spinner is fair.
 A: \(H_0\): the spinner is fair. \(H_1\): it is not fair. [B1]
 \(E = 20\) for each sector, and \(X^2 = \dfrac{49 + 25 + 4 + 4 + 4}{20} = 4.3\). [M1 A1]
-\(\nu = 4\), critical value 9.488. [B1]
-\(4.3 < 9.488\), so do not reject \(H_0\): insufficient evidence, at the 5% level, that the spinner is unfair. [A1 FT]
+\(\nu = 4\), critical value 9.488.
+\(4.3 < 9.488\), so do not reject \(H_0\): insufficient evidence, at the 5% level, that the spinner is unfair. [M1 A1]
 Q: [4 marks] ★ A \(\mathrm{Po}(\lambda)\) distribution, with \(\lambda\) estimated from a sample of 100, gives expected frequencies 3.9, 14.6, 25.8, 27.4, 17.6, 7.4 and 3.3 for \(0, 1, 2, \dots, 5\) and "6 or more". Combine classes so that each expected frequency is at least 5, state the resulting number of classes and the degrees of freedom, and find the 5% critical value.
 A: The first class (3.9) joins the second: \(3.9 + 14.6 = 18.5\); the last (3.3) joins the one before: \(7.4 + 3.3 = 10.7\). [M1]
 The classes are 18.5, 25.8, 27.4, 17.6 and 10.7, so 5 classes. [A1]
@@ -468,8 +468,8 @@ A: \(H_0\): the number of throws follows \(\mathrm{Geo}(0.3)\). \(H_1\): it does
 &0.533 + 0.048 + 0.197 + 0.284 \\
 &\quad + 0.006 + 0.000 + 0.650 = 1.72
 \end{aligned}\] [A1]
-7 classes, no estimated parameter: \(\nu = 6\), critical value 12.592. [B1]
-\(1.72 < 12.592\), so do not reject \(H_0\): insufficient evidence, at the 5% level, that the number of throws does not follow \(\mathrm{Geo}(0.3)\). [A1 FT]
+7 classes, no estimated parameter: \(\nu = 6\), critical value 12.592.
+\(1.72 < 12.592\), so do not reject \(H_0\): insufficient evidence, at the 5% level, that the number of throws does not follow \(\mathrm{Geo}(0.3)\). [M1 A1]
 Q: [8 marks] ★★ A continuous random variable \(X\) has PDF \(f(x) = \dfrac{3x^2}{8}\) for \(0 \leq x \leq 2\), according to a model. A sample of 160 observations has 3, 19, 44 and 94 values in the classes \(0 \leq x < 0.5\), \(0.5 \leq x < 1\), \(1 \leq x < 1.5\) and \(1.5 \leq x \leq 2\). Test the model at the 5% level.
 H: The probability of a class from \(a\) to \(b\) is \(\dfrac{b^3 - a^3}{8}\).
 A: \(H_0\): \(X\) has the stated PDF. \(H_1\): it does not. [B1]
@@ -478,8 +478,8 @@ The class probabilities are \(\dfrac{b^3 - a^3}{8}\): \(\tfrac{1}{64}\), \(\tfra
 The first class has \(E < 5\), so combine the first two: \(E = 20\), \(O = 22\). [M1]
 \[X^2 = \frac{(22 - 20)^2}{20} + \frac{(44 - 47.5)^2}{47.5} + \frac{(94 - 92.5)^2}{92.5}\] [M1]
 \[= 0.200 + 0.258 + 0.024 = 0.482\] [A1]
-3 classes: \(\nu = 2\), critical value 5.991. [B1]
-\(0.482 < 5.991\), so do not reject \(H_0\): insufficient evidence, at the 5% level, that the sample does not come from this distribution. [A1 FT]
+3 classes: \(\nu = 2\), critical value 5.991.
+\(0.482 < 5.991\), so do not reject \(H_0\): insufficient evidence, at the 5% level, that the sample does not come from this distribution. [M1 A1]
 Q: [7 marks] ★★ The lengths of 120 metal bars are grouped. The model is \(\mathrm{N}(\mu, \sigma^2)\), where \(\mu = 50\) and \(\sigma = 6\) are the sample mean and standard deviation. The numbers of bars with lengths \(x < 44\), \(44 \leq x < 50\), \(50 \leq x < 56\) and \(x \geq 56\) are 25, 36, 42 and 17. Test at the 5% level whether the model fits.
 H: The boundaries are \(\mu - \sigma\), \(\mu\) and \(\mu + \sigma\).
 H: Two parameters were estimated.
@@ -491,8 +491,8 @@ X^2 &= \frac{(25 - 19.04)^2}{19.04} + \frac{(36 - 40.96)^2}{40.96} \\
 &\quad + \frac{(42 - 40.96)^2}{40.96} + \frac{(17 - 19.04)^2}{19.04}
 \end{aligned}\] [M1]
 \[= 1.867 + 0.601 + 0.026 + 0.218 = 2.71\] [A1]
-4 classes, 2 parameters estimated: \(\nu = 4 - 1 - 2 = 1\), critical value 3.841. [B1]
-\(2.71 < 3.841\), so do not reject \(H_0\): insufficient evidence, at the 5% level, that the lengths do not follow this normal distribution. [A1 FT]
+4 classes, 2 parameters estimated: \(\nu = 4 - 1 - 2 = 1\), critical value 3.841.
+\(2.71 < 3.841\), so do not reject \(H_0\): insufficient evidence, at the 5% level, that the lengths do not follow this normal distribution. [M1 A1]
 Q: [3 marks] ★ A technician records, for each of 150 batches of 10 sensors from one production line, the number \(X\) of sensors that fail a test, and models \(X \sim \mathrm{B}(10, p)\). State two conditions needed for the model, in the context of the sensors, and give one reason why the model may fail.
 A: The sensors fail independently of each other. [B1]
 The probability of failing is the same for every sensor. [B1]
@@ -509,8 +509,8 @@ X^2 &= \frac{(40 - 39.54)^2}{39.54} + \frac{(55 - 52.72)^2}{52.72} + \frac{(31 -
 &\quad + \frac{(15 - 15.62)^2}{15.62} + \frac{(9 - 6.97)^2}{6.97}
 \end{aligned}\] [M1]
 \[= 0.005 + 0.099 + 0.489 + 0.025 + 0.589 = 1.21\] [A1]
-5 classes, \(\lambda\) estimated: \(\nu = 5 - 1 - 1 = 3\), critical value 7.815. [B1]
-\(1.21 < 7.815\), so do not reject \(H_0\): insufficient evidence, at the 5% level, that the number of errors does not follow a Poisson distribution. [A1 FT]
+5 classes, \(\lambda\) estimated: \(\nu = 5 - 1 - 1 = 3\), critical value 7.815.
+\(1.21 < 7.815\), so do not reject \(H_0\): insufficient evidence, at the 5% level, that the number of errors does not follow a Poisson distribution. [M1 A1]
 Q: [10 marks] (#math.s1.drv) ★★★ The number \(X\) of seeds that germinate in each of 120 packets of 5 seeds is recorded: 4, 20, 46, 32, 14 and 4 packets have 0, 1, 2, 3, 4 and 5 germinating. It is suggested that \(X \sim \mathrm{B}(5, p)\). (a) Find the estimate of \(p\) from the data, giving the sample mean. (b) Show that the expected frequency for \(X = 0\) is 4.86, to 3 s.f. (c) Combine classes where necessary and test the suggestion at the 5% level.
 H: \(\hat p = \dfrac{\bar x}{5}\).
 H: Two classes at each end have an expected frequency below 5 or close to it: check them one at a time.
@@ -525,8 +525,8 @@ X^2 &= \frac{(24 - 26.71)^2}{26.71} + \frac{(46 - 39.28)^2}{39.28} \\
 &\quad + \frac{(32 - 35.30)^2}{35.30} + \frac{(18 - 18.71)^2}{18.71}
 \end{aligned}\] [M1]
 \[= 0.276 + 1.151 + 0.308 + 0.027 = 1.76\] [A1]
-4 classes, \(p\) estimated: \(\nu = 4 - 1 - 1 = 2\), critical value 5.991. [B1]
-\(1.76 < 5.991\), so do not reject \(H_0\): insufficient evidence, at the 5% level, that the number of seeds germinating does not follow a binomial distribution. [A1 FT]
+4 classes, \(p\) estimated: \(\nu = 4 - 1 - 1 = 2\), critical value 5.991.
+\(1.76 < 5.991\), so do not reject \(H_0\): insufficient evidence, at the 5% level, that the number of seeds germinating does not follow a binomial distribution. [M1 A1]
 :::
 
 :::try Stretch for A*

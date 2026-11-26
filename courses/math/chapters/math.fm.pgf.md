@@ -138,7 +138,7 @@ which is the ordinary binomial probability, found this way.
 :::
 
 :::plot The PGF of \(B(6, 0.3)\), \(G(t) = (0.7 + 0.3t)^6\), passes through \((1, 1)\). Its tangent there, labelled in the key, has gradient \(G'(1) = np = 1.8\), the mean. The curve starts at \(G(0) = 0.7^6 = 0.118 = \mathrm{P}(X = 0)\).
---f "(0.7+0.3*x)**6" --f "1+1.8*(x-1)" --label "G(t)" --label "tangent at t = 1" --x 0 1.2 --y 0 2.2 --pt "1,1,(1, 1)@se" --legend tl
+--f "(0.7+0.3*x)**6" --f "1+1.8*(x-1)" --label "G(t)" --label "tangent at t = 1" --x 0 1.2 --y 0 2.2 --pt "1,1,(1, 1)@se" --legend tl --xlabel "t"
 :::
 
 The widget shows each of the four distributions as a bar chart of \(\mathrm{P}(X = x)\) next to the graph of \(G(t)\) for \(0 \le t \le 1.2\), with the tangent at \(t = 1\). Try the binomial first, then change \(p\): the tangent's gradient is \(\mathrm{E}(X)\), which you will prove in the next section. The "sum of two" switch multiplies the PGF by a second independent copy.

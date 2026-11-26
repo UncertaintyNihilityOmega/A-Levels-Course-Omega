@@ -115,7 +115,7 @@ since \(\cosh(\ln 2) = \tfrac12\left(2 + \tfrac12\right) = \tfrac54\). [A1]
 :::
 
 :::try
-Q: [10 marks] (#math.fm.rectangles) (a) By sketching the graph of \(y = x^{-1/2}\) for \(x \ge 1\) and considering the areas of suitable rectangles of unit width, show that
+Q: [10 marks] (#math.fm.rectangles) (a) By sketching the graph of \(y = x^{-1/2}\) for \(x \ge 1\) and considering the areas of suitable rectangles of unit width, show that, for \(n \ge 2\),
 \[\sum_{r=1}^{n}\frac{1}{\sqrt r} < 2\sqrt n - 1.\]
 [5]
 

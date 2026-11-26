@@ -6,11 +6,11 @@
 - Queue item 10, Further Mathematics (math.fm, 50 chapters, P19–P36, plan in courses/math/FURTHER.md): LEAD done
   Nov 20 (gold math.fm.roots); P19–P24 written (16 chapters; widgets fm-matrix, fm-polar, fm-planes, fm-maclaurin);
   P25–P33 and P35 written, P19–P31 reviewed, every FIX item closed (math 104/112 chapters).
-  Run of Nov 25 afternoon: REVIEW P27–P31 and its 8 FIX items; P32 (fm-chisq), P33 (fm-pgf), P35 (Pure mocks, mixed
-  pure). June 2026 9231/31 and 9231/41 papers and mark schemes (user download) in courses/math/scratch/papers/ with
-  .txt copies; recorded in courses/math/FACTS.md.
-  Waiting for the reset at 17:40 UTC Nov 25 (5-hour window 76%, weekly 23%). Next: WRITE P34 (guides; P33 is done)
-  and P36 (applied mocks), then REVIEW P32–P36. Notes for that review: math.fm.pgf is short (3898 words; judge
+  June 2026 9231/31 and 9231/41 papers and mark schemes (user download) in courses/math/scratch/papers/ with .txt
+  copies; recorded in courses/math/FACTS.md.
+  Run of Nov 26 afternoon (preview server allowed by the user): P34 (guides) and P36 (applied mocks) written, so all
+  36 packages are written (math 112/112 chapters). REVIEW P32–P36 running; then its FIX, READER batches for the fm
+  chapters, FIX, REVIEW FINAL. Notes for that review: math.fm.pgf is short (3898 words; judge
   depth); compare the Wilcoxon tables (computed) with printed MF19; P32's goodness-of-fit mark layout is unconfirmed
   against a scheme (June 2026 had no GOF question). Writers: never run old scripts in courses/math/scratch/.
 - Usage gate: weekly limit 95% for every launch (AGENT-RUN.md "Usage gate").

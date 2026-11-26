@@ -231,7 +231,7 @@
       const s = state();
       const mv = meanVarFromG(s.d[0], s.d[1]);
       const lab = sumOn ? 'X + Y' : 'X';
-      note.textContent = sumOn ? 'Showing S = X + Y, where X and Y are independent copies of the ' + dist + ' distribution with the parameters above.' : 'Showing X ~ ' + name(dist, params[dist]) + (dist === 'geometric' ? ' (the number of trials up to the first success).' : '.');
+      note.textContent = sumOn ? 'Showing S = X + Y, where X and Y are independent ' + (dist === 'poisson' ? 'Poisson' : dist) + ' variables with the first and second parameters above.' : 'Showing X ~ ' + name(dist, params[dist]) + (dist === 'geometric' ? ' (the number of trials up to the first success).' : '.');
       R.set('G', s.G);
       R.set('G1', 'G(1) = ' + num(s.f(1), 3));
       R.set('G12', 'G′(1) = ' + num(s.d[0], 3) + ', G″(1) = ' + num(s.d[1], 3));

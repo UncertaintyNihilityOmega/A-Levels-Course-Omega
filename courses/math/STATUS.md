@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-26 · WRITE P36 · math.fm.mock.p3 (2166 words, 7 Qs, 50 marks), math.fm.mock.p4 (1973 words, 6 Qs, 50 marks), math.fm.mixed.applied (4748 words, 32 Qs); check and phone pass; no widgets. Notes for reviewer: mocks have no figures or links box (as mock.p1); all critical values recomputed from exact t/chi2/Wilcoxon counts; mock P3 Q6 is the outside of a sphere.
+Last: 2026-11-26 · REVIEW P32, P33, P34, P35, P36 · 3 items (pgf: rational PGF in t^2 exam-style eg, June 2025 Q6 shape; wilcoxon exam-practice test-mark layout; fm-chisq density label at nu 1-2). Fixed: chisq GOF mark layout to the real 9231/41 June 2025 Q3 scheme (fetched; M1 compare + A1 from correct working, no nu mark, no FT) in examples, practice, spot-the-error, exam box; Wilcoxon/sign-test examples to June 2025 Q5 scheme; mock.p4 Q3/Q5 and mixed.applied tests same; exam.fs June 2026 table 3x3 and PGF kt^-1(at+1)^2, wrong FT sentence; mock.p2 Q5 n>=2; fm-pgf sum caption; pgf plot t axis; COURSE.md rule for 9231 test marks. Wilcoxon tables match MF19; mocks, chain and links verified. FACTS.md 2026 /41 Q2 and Q6 wording wrong (not edited).
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -36,10 +36,10 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P29: reviewed 2026-11-25
 - P30: reviewed 2026-11-25
 - P31: reviewed 2026-11-25
-- P32: written 2026-11-25
-- P33: written 2026-11-25
-- P34: written 2026-11-26
-- P35: written 2026-11-25
-- P36: written 2026-11-26
+- P32: reviewed 2026-11-26
+- P33: reviewed 2026-11-26
+- P34: reviewed 2026-11-26
+- P35: reviewed 2026-11-26
+- P36: reviewed 2026-11-26
 - READER: done 2026-11-13
 - FINAL: open

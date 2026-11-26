@@ -138,12 +138,12 @@ The differences \(d = x - 60\) and the ranks of \(|d|\) are
 |---|---|---|---|---|---|---|---|---|
 | rank of \(\lvert d\rvert\) | 4 | 1 | 7 | 2 | 3 | 8 | 5 | 6 |
 
-[M1 A1]
-The positive differences have ranks 1 and 2, so \(P = 3\) (and \(Q = 36 - 3 = 33\)). \(H_1\) says the median is smaller, so we expect few positive differences and \(T = P = 3\). [M1]
+[M1 M1] (differences, then signed ranks)
+The positive differences have ranks 1 and 2, so \(P = 3\) (and \(Q = 36 - 3 = 33\)). \(H_1\) says the median is smaller, so we expect few positive differences and \(T = P = 3\). [A1]
 
-For \(n = 8\), a one-tailed test at 5%, MF19 gives 5. [B1]
+For \(n = 8\), a one-tailed test at 5%, MF19 gives 5.
 
-Since \(3 \le 5\), reject \(H_0\). There is sufficient evidence at the 5% level that the median egg mass is less than 60 g. [A1]
+Since \(3 \le 5\), reject \(H_0\). [M1] There is sufficient evidence at the 5% level that the median egg mass is less than 60 g. [A1]
 :::
 
 ## Matched pairs
@@ -171,16 +171,16 @@ Differences \(d\) (before \(-\) after) and the ranks of \(|d|\):
 | \(d\) | 14 | 9 | \(-3\) | 22 | 7 | 18 | \(-5\) | 11 | 25 | 16 |
 | rank of \(\lvert d\rvert\) | 6 | 4 | 1 | 9 | 3 | 8 | 2 | 5 | 10 | 7 |
 
-[M1 A1]
-\(H_1\) predicts mostly positive differences, so the relevant sum is that of the negative differences: \(Q = 1 + 2 = 3\) (and \(P = 55 - 3 = 52\)). \(T = 3\). [M1]
+[M1 M1] (differences, then signed ranks)
+\(H_1\) predicts mostly positive differences, so the relevant sum is that of the negative differences: \(Q = 1 + 2 = 3\) (and \(P = 55 - 3 = 52\)). \(T = 3\). [A1]
 
-For \(n = 10\), one-tailed 5%, MF19 gives 10. [B1]
+For \(n = 10\), one-tailed 5%, MF19 gives 10.
 
-Since \(3 \le 10\), reject \(H_0\). There is sufficient evidence at the 5% level that the course reduces the median reaction time. [A1]
+Since \(3 \le 10\), reject \(H_0\). [M1] There is sufficient evidence at the 5% level that the course reduces the median reaction time. [A1]
 
 (b) Let \(S\) be the number of positive differences, \(S \sim B(10, \tfrac12)\) under \(H_0\). There are 2 negative differences, and for \(H_1\) we need
-\[P(\text{at most 2 negative}) = \frac{1 + 10 + 45}{1024} = 0.0547\] [M1 A1]
-Since \(0.0547 > 0.05\), do not reject \(H_0\): the sign test finds insufficient evidence at 5%, so the two tests **disagree**. [B1]
+\[P(\text{at most 2 negative}) = \frac{1 + 10 + 45}{1024} = 0.0547\] [B1]
+Since \(0.0547 > 0.05\), do not reject \(H_0\) [M1]: the sign test finds insufficient evidence at 5%, so the two tests **disagree**. [A1]
 
 (c) The sign test uses only the number of drivers who got slower (2 of 10). The Wilcoxon test also uses the sizes: the two drivers who got slower did so by the smallest amounts (3 ms and 5 ms), while the improvements are large. That extra information makes the Wilcoxon test more powerful, so it detects the effect. [B1] [B1]
 :::
@@ -296,9 +296,9 @@ Machine Y has ranks 1, 2, 3, 5, 8, 10, so \(R_m = 29\). [A1]
 
 \(m(n + m + 1) - R_m = 6 \times 15 - 29 = 61\), so \(W = \min(29, 61) = 29\). [M1]
 
-For \(m = 6\), \(n = 8\), a two-tailed test at 5% (one-tailed 2.5%), MF19 gives 29. [B1]
+For \(m = 6\), \(n = 8\), a two-tailed test at 5% (one-tailed 2.5%), MF19 gives 29.
 
-Since \(29 \le 29\), reject \(H_0\). There is sufficient evidence at the 5% level that the median fill times of the machines differ (Y is quicker). [A1]
+Since \(29 \le 29\), reject \(H_0\). [M1] There is sufficient evidence at the 5% level that the median fill times of the machines differ (Y is quicker). [A1]
 :::
 
 :::warn Equality counts as rejection
@@ -373,9 +373,9 @@ Line 1: \(H_0: m = 0\), \(H_1: m > 0\)
 Line 2: Order the differences: \(-9, -3, +1, +2, +4, +5, +6\), with ranks 1 to 7. The negative differences have ranks 1 and 2, so \(Q = 3\).
 Line 3: For \(n = 7\), one-tailed 5%, the table value is 3. \(3 \le 3\), so reject \(H_0\).
 
-Line 1 is correct. [B1] The table value in line 3 is correct. [B1]
+Line 1 is correct. [B1] Line 3 compares the student's own \(T\) with the correct table value and draws the matching conclusion, which earns the comparison method mark. [M1]
 
-**Line 2 ranks the signed differences, not their absolute values.** A negative difference is not "small": its **size** is what is ranked. This is a wrong method, so the method mark and the accuracy mark are lost. [M0] [A0] The conclusion that follows is wrong. [A0] The student scores 2 out of 5.
+**Line 2 ranks the signed differences, not their absolute values.** A negative difference is not "small": its **size** is what is ranked. This is a wrong method, so the ranking mark and the mark for \(T\) are lost. [M0] [A0] The conclusion in context needs correct working, so it is lost too. [A0] The student scores 2 out of 5.
 
 Correct line 2: ranking \(|d|\): 1, 2, 3, 4, 5, 6, 9 gives ranks 1, 2, 3, 4, 5, 6, 7. The negative differences, \(-9\) and \(-3\), have ranks 7 and 3, so \(Q = 10\) (and \(P = 18\)). \(10 > 3\), so do not reject \(H_0\): there is not sufficient evidence at the 5% level that the median is greater than 0.
 :::

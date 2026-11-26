@@ -111,7 +111,7 @@ A: (a) Expected frequencies for \(\mathrm{B}(4, 0.3)\) in 150 boxes:
 [A1] (both values; \(150 - 36.015 - 61.74 - 39.69 = 12.555\) is a check on their sum)
 
 (b) \(H_0\): \(\mathrm{B}(4, 0.3)\) is a suitable model for the number of faulty bulbs per box. \(H_1\): it is not a suitable model. [B1]
-The expected frequency for 4 faulty bulbs is less than 5, so combine the last two classes (3 or more faulty bulbs): \(O = 22\), \(E = 12.555\). There are now 4 classes. [B1]
+The expected frequency for 4 faulty bulbs is less than 5, so combine the last two classes (3 or more faulty bulbs): \(O = 22\), \(E = 12.555\). There are now 4 classes. [M1]
 
 | Faulty bulbs | 0 | 1 | 2 | 3 or more |
 |---|---|---|---|---|
@@ -123,8 +123,9 @@ The expected frequency for 4 faulty bulbs is less than 5, so combine the last tw
 [M1]
 \[X^2 = 12.3\]
 [A1] (awrt 12.3)
-No parameter was estimated, so \(\nu = 4 - 1 = 3\), and the 5% critical value is \(7.815\). [B1]
-\(12.3 > 7.815\), so reject \(H_0\). There is sufficient evidence, at the 5% level, that \(\mathrm{B}(4, 0.3)\) is not a suitable model for the number of faulty bulbs in a box. [A1]
+No parameter was estimated, so \(\nu = 4 - 1 = 3\), and the 5% critical value is \(7.815\).
+\(12.3 > 7.815\), so reject \(H_0\). [M1] (compare with the critical value for the right \(\nu\), and say reject or do not reject)
+There is sufficient evidence, at the 5% level, that \(\mathrm{B}(4, 0.3)\) is not a suitable model for the number of faulty bulbs in a box. [A1] (correct conclusion in context from correct working; "no evidence" is not accepted)
 (The largest contributions are from 0 faulty bulbs, observed far below expectation, and from 3 or more, observed far above: the faults are more common than 30% per bulb.)
 :::
 
@@ -183,16 +184,14 @@ The differences (after \(-\) before) and the ranks of their absolute values:
 | \(d\) | 9 | 14 | \(-3\) | 11 | 6 | \(-5\) | 13 | 7 | 15 |
 | rank of \(\lvert d\rvert\) | 5 | 8 | 1 | 6 | 3 | 2 | 7 | 4 | 9 |
 
-[M1 A1]
-\(H_1\) predicts mostly positive differences, so the test statistic is the sum of the ranks of the negative differences: \(T = 1 + 2 = 3\) (and the positive ranks sum to \(45 - 3 = 42\)). The critical value for \(n = 9\), one-tailed at 5%, is \(8\) (MF19). [B1]
-\(3 \le 8\), so reject \(H_0\). There is sufficient evidence, at the 5% level, that the revision course increases the median score. [A1]
+[M1] (differences and an attempt at signed ranks)
+\(H_1\) predicts mostly positive differences, so the test statistic is the sum of the ranks of the negative differences: \(T = 1 + 2 = 3\) (and the positive ranks sum to \(45 - 3 = 42\)). [A1] The critical value for \(n = 9\), one-tailed at 5%, is \(8\) (MF19).
+\(3 \le 8\), so reject \(H_0\). [M1] (their \(T\) compared with 8) There is sufficient evidence, at the 5% level, that the revision course increases the median score. [A1]
 
 (b) Let \(S\) be the number of students whose score increased. Under \(H_0\), \(S \sim \mathrm{B}(9, \tfrac12)\), and \(S = 7\) was observed. For \(H_1: p > \tfrac12\) the \(p\)-value is
-\[\mathrm{P}(S \ge 7) = \frac{36 + 9 + 1}{512}\]
-[M1]
-\[= 0.0898\]
-[A1]
-\(0.0898 > 0.05\), so do not reject \(H_0\): there is insufficient evidence, at the 5% level, that the course increases the median score. [A1]
+\[\mathrm{P}(S \ge 7) = \frac{36 + 9 + 1}{512} = 0.0898\]
+[B1]
+\(0.0898 > 0.05\), so do not reject \(H_0\). [M1] There is insufficient evidence, at the 5% level, that the course increases the median score: the opposite conclusion to part (a). [A1]
 
 (c) The sign test uses only the number of students who improved (7 of 9). The Wilcoxon test also uses the sizes of the differences: the two students whose score fell did so by the two smallest amounts (3 and 5 marks), so the Wilcoxon test makes use of more information and is more powerful. [B1]
 :::
