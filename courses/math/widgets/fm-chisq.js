@@ -190,7 +190,7 @@
       const YM = yMax(nu);
       if (!(XM > 0) || !isFinite(XM) || !(YM > 0)) return;
       const view = { x0: 0, x1: XM, y0: 0, y1: YM };
-      const ax = W.axes(ctx, w, h, view, col, { xlabel: 'x', ylabel: 'density', ny: 3, fy: () => '' });
+      const ax = W.axes(ctx, w, h, view, col, { xlabel: 'x', ylabel: '', ny: 3, fy: () => '' });
       if (!ax || !ax.X || !ax.Y) return;
       const { X, Y } = ax;
       const left = X(0), right = X(XM), top = Y(YM), base = Y(0);
@@ -226,6 +226,8 @@
       const halo = (txt, x, y, align) => {
         ctx.textAlign = align; ctx.lineWidth = 3; ctx.strokeStyle = col.card; ctx.strokeText(txt, x, y); ctx.fillStyle = col.ink; ctx.fillText(txt, x, y);
       };
+      // the vertical-axis label sits at the top right, clear of the curve (for v = 1 and 2 the curve fills the top left)
+      halo('density', right - 6, top + 14, 'right');
       if (s.crit <= XM) {
         const t = n3(s.crit);
         const half = ctx.measureText(t).width / 2 + 4;

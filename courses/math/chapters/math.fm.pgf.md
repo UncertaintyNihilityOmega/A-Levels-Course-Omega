@@ -241,6 +241,20 @@ We need the coefficient of \(t^1\), so the coefficient of \(t^4\) in \((1 + 3t)^
 **Check**: \(\mathrm{E}(Y) = 3 \times \tfrac12 = \tfrac32\) and \(\mathrm{P}(Y = 3) = \left(\tfrac9{16}\right)^3 = 0.178\), which is plausible beside 0.297 for the next value down.
 :::
 
+:::eg (Exam style) The discrete random variable \(Y\) takes the values 0, 2, 4, \(\dots\) and has PGF \(G_Y(t) = \dfrac{k}{3 - at^2}\), where \(0 < a < 3\). (a) Find \(k\) in terms of \(a\). (b) Show that \(\mathrm{P}(Y = 2) = \dfrac{a(3 - a)}{9}\). (c) Given that \(a = 1\), find \(\mathrm{E}(Y)\).
+(a) Using \(G_Y(1) = 1\):
+\[\frac{k}{3 - a} = 1 \quad\Rightarrow\quad k = 3 - a\] [B1]
+(b) Write the PGF as a series in \(t^2\):
+\[G_Y(t) = \frac{k}{3}\left(1 - \frac{at^2}{3}\right)^{-1} = \frac{k}{3}\left(1 + \frac{at^2}{3} + \frac{a^2t^4}{9} + \cdots\right)\] [M1]
+The coefficient of \(t^2\) is \(\dfrac{k}{3} \times \dfrac{a}{3} = \dfrac{ka}{9}\). [DM1]
+\[\mathrm{P}(Y = 2) = \frac{(3 - a)\,a}{9} = \frac{a(3 - a)}{9}\] [A1]
+(c) Differentiate with the chain rule:
+\[G_Y'(t) = \frac{2akt}{\left(3 - at^2\right)^2}\] [M1]
+With \(a = 1\) we have \(k = 2\), so \(G_Y'(1) = \dfrac{2 \times 1 \times 2 \times 1}{(3 - 1)^2} = 1\), and \(\mathrm{E}(Y) = 1\). [A1]
+
+**Check**: for \(a = 1\), \(\mathrm{P}(Y = 2j) = \tfrac23 \left(\tfrac13\right)^j\), a geometric series on the even values, and \(\mathrm{E}(Y) = 2 \times \tfrac23 \times \dfrac{1/3}{(2/3)^2} = 1\).
+:::
+
 :::warn Mean given, not the probabilities
 When the question says "\(\mathrm{E}(X) = \tfrac12\)" it is giving you \(G'(1) = \tfrac12\), not \(G(1)\). Always write \(G(1) = 1\) as well: it is a free equation and is usually the first mark.
 :::

@@ -4,15 +4,13 @@
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
 - Queue item 10, Further Mathematics (math.fm, 50 chapters, P19–P36, plan in courses/math/FURTHER.md): LEAD done
-  Nov 20 (gold math.fm.roots); P19–P24 written (16 chapters; widgets fm-matrix, fm-polar, fm-planes, fm-maclaurin);
-  P25–P33 and P35 written, P19–P31 reviewed, every FIX item closed (math 104/112 chapters).
-  June 2026 9231/31 and 9231/41 papers and mark schemes (user download) in courses/math/scratch/papers/ with .txt
+  Nov 20 (gold math.fm.roots); P19–P36 written and reviewed. June 2026 9231/31 and 9231/41 papers and mark schemes (user download) in courses/math/scratch/papers/ with .txt
   copies; recorded in courses/math/FACTS.md.
   Run of Nov 26 afternoon (preview server allowed by the user): P34 (guides) and P36 (applied mocks) written, so all
-  36 packages are written (math 112/112 chapters). REVIEW P32–P36 running; then its FIX, READER batches for the fm
-  chapters, FIX, REVIEW FINAL. Notes for that review: math.fm.pgf is short (3898 words; judge
-  depth); compare the Wilcoxon tables (computed) with printed MF19; P32's goodness-of-fit mark layout is unconfirmed
-  against a scheme (June 2026 had no GOF question). Writers: never run old scripts in courses/math/scratch/.
+  36 packages are written (math 112/112 chapters). REVIEW P32–P36 done (3 FIX items; 9231 test marks now follow the
+  June 2025 9231/41 scheme). Running: FIX of those items, READER batch 1 (math.fm.overview to math.fm.graphs); 46 fm
+  chapters to read in all. Then FIX of the reader items, REVIEW FINAL, assembly. Writers: never run old scripts in
+  courses/math/scratch/.
 - Usage gate: weekly limit 95% for every launch (AGENT-RUN.md "Usage gate").
 - Name: "Zero to A* Ω" (titles, installed app, shared links). Top bar and Home heading: the hand-drawn wordmark "Log end"
   (`engine/wordmark.py --shell` writes it into shell.html; colours in style.css `.wm-*`).

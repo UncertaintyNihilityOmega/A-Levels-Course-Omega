@@ -161,6 +161,24 @@ eq("P(Y=1)", sf(G3[1], 3), 0.297, 1e-12)
 eq("P(Y=3)", sf(F(9, 16) ** 3, 3), 0.178, 1e-12)
 assert G3[3] == F(9, 16) ** 3
 
+# rational PGF in t^2: G_Y(t) = k/(3 - a t^2), k = 3 - a (exam-style example)
+for a in (F(1), F(1, 2), F(5, 2), F(2)):
+    k = 3 - a
+    assert k / (3 - a) == 1  # G(1) = 1
+    ser = {2 * j: (k / 3) * (a / 3) ** j for j in range(0, 80)}  # (k/3)(1 - a t^2/3)^-1 expanded
+    assert ser[0] == k / 3 and ser[2] == k * a / 9 == a * (3 - a) / 9
+    fa, fk = float(a), float(k)
+    fser = {j: (fk / 3) * (fa / 3) ** j for j in range(0, 600)}
+    assert abs(sum(fser.values()) - 1) < 1e-9
+    # derivative G'(t) = 2akt/(3 - a t^2)^2 against the series
+    t = 0.5
+    assert abs(sum(2 * j * x * t ** (2 * j - 1) for j, x in fser.items() if j) - 2 * fa * fk * t / (3 - fa * t * t) ** 2) < 1e-9
+a, k = F(1), F(2)
+assert 2 * a * k * 1 / (3 - a) ** 2 == 1
+assert abs(float(sum(2 * j * (k / 3) * (a / 3) ** j for j in range(1, 200))) - 1) < 1e-9
+assert F(2, 3) * F(1, 3) == F(2, 9)
+assert 2 * F(2, 3) * (F(1, 3) / (F(2, 3)) ** 2) == 1
+
 # dice
 die = {x: F(1, 6) for x in range(1, 7)}
 two = mul(die, die)

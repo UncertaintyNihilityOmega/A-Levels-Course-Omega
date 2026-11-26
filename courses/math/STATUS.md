@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-26 · REVIEW P32, P33, P34, P35, P36 · 3 items (pgf: rational PGF in t^2 exam-style eg, June 2025 Q6 shape; wilcoxon exam-practice test-mark layout; fm-chisq density label at nu 1-2). Fixed: chisq GOF mark layout to the real 9231/41 June 2025 Q3 scheme (fetched; M1 compare + A1 from correct working, no nu mark, no FT) in examples, practice, spot-the-error, exam box; Wilcoxon/sign-test examples to June 2025 Q5 scheme; mock.p4 Q3/Q5 and mixed.applied tests same; exam.fs June 2026 table 3x3 and PGF kt^-1(at+1)^2, wrong FT sentence; mock.p2 Q5 n>=2; fm-pgf sum caption; pgf plot t axis; COURSE.md rule for 9231 test marks. Wilcoxon tables match MF19; mocks, chain and links verified. FACTS.md 2026 /41 Q2 and Q6 wording wrong (not edited).
+Last: 2026-11-26 · FIX · P32-P36 review: pgf rational PGF in t^2 exam example (6 marks) + checks; wilcoxon exam-practice marks to the 9231/41 scheme (no table-value mark, M1 comparison, A1 conclusion); fm-chisq density label moved to top right
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

@@ -404,27 +404,27 @@ Q: [5 marks] ★ A magazine claims the median time to charge a certain phone is 
 A: \(H_0: m = 250\), \(H_1: m \ne 250\). [B1]
 \(d = -7, +11, -12, +5, -3, -14, +9, -1\). Ranks of \(|d|\): 4, 6, 7, 3, 2, 8, 5, 1. [M1]
 \(P = 6 + 3 + 5 = 14\), \(Q = 22\), \(T = 14\). [A1]
-Two-tailed 5%, \(n = 8\): table value 3. [B1]
-\(14 > 3\): do not reject \(H_0\). There is not sufficient evidence at the 5% level that the median charge time is not 250 minutes. [A1]
+Two-tailed 5%, \(n = 8\): table value 3.
+\(14 > 3\): do not reject \(H_0\). [M1] There is not sufficient evidence at the 5% level that the median charge time is not 250 minutes. [A1]
 Q: [5 marks] ★ Two independent samples of a plant's mass in grams are A: 9, 12, 10, 8 and B: 14, 15, 17, 22, 18, 11. Use a rank-sum test at the 5% level to test whether the median mass of A is less than that of B.
 A: \(H_0\): the populations are identical; \(H_1\): the median mass of A is less than that of B. [B1]
 \(m = 4\) (A), \(n = 6\). Combined ranks: 8 (1), 9 (2), 10 (3), 11 (4), 12 (5), 14 (6), 15 (7), 17 (8), 18 (9), 22 (10). [M1]
 \(R_m = 1 + 2 + 3 + 5 = 11\); the other sum is \(4 \times 11 - 11 = 33\); \(W = 11\). [A1]
-One-tailed 5%, \(m = 4\), \(n = 6\): table value 13. [B1]
-\(11 \le 13\): reject \(H_0\). There is sufficient evidence at the 5% level that the median mass of A is less than that of B. [A1]
+One-tailed 5%, \(m = 4\), \(n = 6\): table value 13.
+\(11 \le 13\): reject \(H_0\). [M1] There is sufficient evidence at the 5% level that the median mass of A is less than that of B. [A1]
 Q: [6 marks] ★★ Nine students sit two tests. Test 1: 82, 75, 91, 68, 77, 85, 72, 88, 79. Test 2: 78, 77, 83, 65, 70, 86, 60, 79, 73. The differences (test 1 minus test 2) are from a symmetrical population. Use a Wilcoxon matched-pairs signed-rank test at the 5% level to test whether the median scores on the two tests are different.
 A: \(H_0: m = 0\), \(H_1: m \ne 0\), where \(m\) is the median of the differences. [B1]
 \(d = 4, -2, 8, 3, 7, -1, 12, 9, 6\). [M1]
 Ranks of \(|d|\): 4, 2, 7, 3, 6, 1, 9, 8, 5. [M1]
 \(Q = 2 + 1 = 3\) (negative differences), \(P = 42\), \(T = 3\). [A1]
-Two-tailed 5%, \(n = 9\): table value 5. [B1]
-\(3 \le 5\): reject \(H_0\). There is sufficient evidence at the 5% level that the median scores differ. [A1]
+Two-tailed 5%, \(n = 9\): table value 5.
+\(3 \le 5\): reject \(H_0\). [M1] There is sufficient evidence at the 5% level that the median scores differ. [A1]
 Q: [6 marks] ★★ A random sample of 5 values from population A is 31, 25, 26, 29, 34, and an independent random sample of 7 values from population B is 27, 36, 42, 33, 40, 45, 39. Use a rank-sum test at the 5% level to test whether the populations are identical.
 A: \(H_0\): the populations are identical, \(H_1\): they are not. [B1]
 \(m = 5\) (the sample from A), \(n = 7\). Ranks of the combined values: 25 (1), 26 (2), 27 (3), 29 (4), 31 (5), 33 (6), 34 (7), 36 (8), 39 (9), 40 (10), 42 (11), 45 (12). [M1]
 \(R_m = 1 + 2 + 4 + 5 + 7 = 19\). [A1] The other sum is \(5 \times 13 - 19 = 46\), so \(W = 19\). [M1]
-Two-tailed 5%, \(m = 5\), \(n = 7\): table value 20. [B1]
-\(19 \le 20\): reject \(H_0\). There is sufficient evidence at the 5% level that the populations differ. [A1]
+Two-tailed 5%, \(m = 5\), \(n = 7\): table value 20.
+\(19 \le 20\): reject \(H_0\). [M1] There is sufficient evidence at the 5% level that the populations differ. [A1]
 Q: [5 marks] ★★ A symmetrical population has median \(m\). To test \(H_0: m = 100\) against \(H_1: m < 100\), 30 values are ranked by their distance from 100, and the sum of the ranks of those above 100 is 150. Use a normal approximation to test at the 5% level.
 A: \(H_0: m = 100\), \(H_1: m < 100\); the statistic is \(P = 150\). [B1]
 Mean \(\dfrac{30 \times 31}{4} = 232.5\) [B1], variance \(\dfrac{30 \times 31 \times 61}{24} = 2363.75\). [B1]
@@ -437,8 +437,8 @@ H: For (c), compare what the two tests use from the data.
 A: (a) Let \(m\) be the population median of (before) \(-\) (after). \(H_0: m = 0\), \(H_1: m > 0\). [B1]
 \(d = 6, -2, 9, 4, -1, 11, 7, 3, 12\). [M1] Ranks of \(|d|\): 5, 2, 7, 4, 1, 8, 6, 3, 9. [M1]
 \(Q = 2 + 1 = 3\), \(P = 42\), and \(T = Q = 3\). [A1]
-One-tailed 5%, \(n = 9\): table value 8. [B1]
-\(3 \le 8\): reject \(H_0\). There is sufficient evidence at the 5% level that the course reduces the median number of errors. [A1]
+One-tailed 5%, \(n = 9\): table value 8.
+\(3 \le 8\): reject \(H_0\). [M1] There is sufficient evidence at the 5% level that the course reduces the median number of errors. [A1]
 (b) There are 2 negative differences out of 9, \(S \sim B(9, \tfrac12)\). \(P(S \le 2) = \dfrac{1 + 9 + 36}{512} = 0.0898\). [M1 A1]
 \(0.0898 > 0.05\): do not reject \(H_0\). [A1]
 (c) The two negative differences are the smallest in size (1 and 2). The Wilcoxon test uses this through the ranks, and the sign test only counts them, so the Wilcoxon test is the more powerful. [B1] [B1]
