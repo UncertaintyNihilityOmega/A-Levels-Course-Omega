@@ -255,3 +255,35 @@ Assumed: the notation x tends to a from below or above (a-minus, a-plus); "monot
 ## math.fm.graphs
 Taught: y = |f(x)|, y = f(|x|), y = 1/f(x) and y^2 = f(x) from a sketch of y = f(x); corners; false roots; invariant points where f = 1 or -1; vertical tangent of y^2 = f(x); solving modulus equations and inequalities by a sketch; rational inequalities in exact form (one fraction, critical values, sign table); never multiplying by an expression of unknown sign; counting solutions of |f(x)| = k.
 Assumed: "simple zero" and "pole"; asymptotes of y^2 = f(x); what an asymptote y = 0 of f gives for 1/f (stated unclearly).
+
+## math.fm.polar
+Taught: pole, initial line, polar coordinates (r, theta) with r >= 0 and theta in radians; conversion both ways with the quadrant check; converting equations (multiply by r, substitute x, y, r^2); sketching routine (where r >= 0, symmetry, greatest and least r, tangent at the pole, meeting the initial line); circle, line, cardioid, limacon, rose, Archimedean and equiangular spiral, lemniscate; greatest distance from the initial line by maximising r sin theta; area 1/2 integral of r^2 d theta, areas between two curves and with a line, symmetry and double-angle identities, parts for spirals; the three lost marks (radians, counting twice, the 1/2 and the square).
+Assumed: what a point with negative r is ("inner loop", "four-petal rose" with negative r allowed); why dy/d theta = 0 means a tangent parallel to the initial line; the word "cusp"; a figure for the circle-and-cardioid area example.
+
+## math.fm.vectors
+Taught: vector product (definition with the right-hand rule, components, determinant layout and cover-up, properties, perpendicularity check); area of a parallelogram and a triangle; plane, normal vector; r.n = p and ax + by + cz = d; distance of a plane from the origin and the foot; parallel planes; parametric form r = a + lambda b + mu c and conversion between the three forms; plane through three points, through a line and a point, through two meeting lines, perpendicular bisector of two points; point in a plane.
+Assumed: how to choose a direction perpendicular to n (negate one entry, not both); "the part of r along the normal" (component along a unit vector); the same letter a for a vector and for a coefficient.
+
+## math.fm.vectors2
+Taught: line and plane (meet, parallel, lie in it); foot of the perpendicular, distance point to plane, reflection in a plane, distance between parallel planes; angle between a line and a plane (sine) and between two planes (cosine); line of intersection of two planes; shortest distance between skew lines (formula and general-point method) and the common perpendicular; distance from a point to a line by the vector product; a given distance fixing an unknown with two answers.
+Assumed: the part of a vector along n (scalar projection); two planes seen edge-on at once; the same letter p for a position vector and a constant, and d for a position and a distance.
+
+## math.fm.hyperbolic
+Taught: sinh, cosh, tanh, sech, cosech, coth from e^x; e^(+-x) = cosh +- sinh; even and odd; graphs, domains, ranges, asymptotes; cosh^2 - sinh^2 = 1 and the other identities, double and compound angle formulae, Osborn's rule as a check only; proofs from the definitions; solving a cosh x + b sinh x = c with t = e^x, and equations by an identity; sinh^-1, cosh^-1, tanh^-1 with domains and the logarithmic forms (derived); contexts (cable, terminal speed, wave speed).
+Assumed: tanh^-1 and its log form (used in the y = 1 + 2 tanh x sketch before they are taught); that the double-angle forms come from the compound formulae with B = A.
+
+## math.fm.diff
+Taught: derivatives of the six hyperbolic functions; derivatives of sin^-1, cos^-1, sinh^-1, cosh^-1, tanh^-1 (and tan^-1) by dx/dy; second derivatives of implicit and parametric curves (divide by dx/dt); Maclaurin series from derivatives at 0 (proof of the coefficients), range of validity, standard series (e^x, ln(1 + x), sin, cos, tan^-1, sinh, cosh, tanh^-1), substitution and multiplication of series, series for sec x, sinh^-1 x by integrating the derivative, successive differentiation (tan x from y' = 1 + y^2); estimates, errors and limits of 0/0.
+Assumed: the binomial series for rational powers (the page sends the student to math.p3.algebra, but it is taught in math.p3.partial).
+
+## math.fm.integ
+Taught: integrals of sinh, cosh, sech^2, cosech^2, tanh, coth; sinh^2 and cosh^2 by identities, odd powers by u = cosh x or sinh x; the standard integrals giving sin^-1, sinh^-1, cosh^-1 (with coefficient of x^2 not 1); log forms and tan^-1 forms; completing the square and a linear numerator; substitutions x = a sin theta, a sinh u, a cosh u and the integrals of the three square roots; parts twice, parts for an inverse function, t = tan(x/2) with dx = 2 dt/(1 + t^2); a given substitution; areas, volumes and cable/window/tower contexts; choosing a method.
+Assumed: that t = tan(x/2) was met in 9709 (no earlier chapter teaches it); why sin x = 2t/(1 + t^2) and dt/dx = (1 + t^2)/2.
+
+## math.fm.reduction
+Taught: reduction formula and the I_n notation; steps (name the family, parts, both boundary terms, collect I_n, state the range of n, base case); x^n e^(-x), sin^n and cos^n on 0 to pi/2 (and other limits), tan^n by identity, sec^n from a given derivative, (ln x)^n, x^n sqrt(1 - x), cosh^n, sinh^n, x^n sin x; the chain of indices; use after a substitution and in a volume; testing a formula on small n.
+Assumed: d/dx sec^k x = k sec^k x tan x (the derivative of sec is not taught); integral of sec x (J_1 is given in a Try question); the mark token DM1.
+
+## math.fm.rectangles
+Taught: left and right rectangles, upper and lower bounds for increasing and decreasing curves, the gap h|f(b) - f(a)|; unit rectangles giving bounds for sums (1/r, sqrt r, 1/r^2, e^(-r), ln r with ln(n!)), matching the limits of sum and integral, counting rectangles; how many terms for a given size; the limit of (1/n) sum f(r/n) as an integral, rewriting sums such as 1/(n + r); the proof that the two sums squeeze the integral; bounding a tail.
+Assumed: "monotonic"; the notation H_n for the sum of 1/r (first used before it is defined); that a bounded sum of positive terms converges.
