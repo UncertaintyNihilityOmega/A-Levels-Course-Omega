@@ -34,7 +34,7 @@ Two questions decide everything.
 | Independent, large samples, variances unknown | **Normal test** with estimated variances | \(z = \dfrac{(\bar x_1 - \bar x_2) - \delta_0}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}\) | \(N(0, 1)\) |
 | Independent, population variances known | **Normal test** with the true variances | as above with \(\sigma_1^2, \sigma_2^2\) | \(N(0, 1)\) |
 
-Here \(\delta_0\) is the difference claimed by \(H_0\) (most often 0).
+Here \(\delta_0\) is the difference claimed by \(H_0\) (most often 0). \(s_p\) (the pooled standard deviation) and \(s_d\) (the standard deviation of the differences) are defined in the sections below.
 :::
 
 :::html
@@ -193,7 +193,9 @@ Since \(2.121 > 1.415\), reject \(H_0\): there is sufficient evidence, at the 10
 **(b)** The differences are normally distributed. [B1]
 :::
 
-:::eg Treating the same data as two independent samples (wrongly) shows what pairing is worth. The two samples have means 49.625 and 47.0, and pooled variance 53.13.
+:::eg Treating the eight puzzle times above (before and after practice) as two independent samples (wrongly) shows what pairing is worth. The "before" times have mean 49.625 and \(S_{xx} = 20\,129 - \dfrac{397^2}{8} = 427.875\); the "after" times have mean 47.0 and \(S_{xx} = 17\,988 - \dfrac{376^2}{8} = 316\). The pooled variance is
+\[s_p^2 = \frac{427.875 + 316}{8 + 8 - 2} = \frac{743.875}{14} = 53.13\]
+Then
 \[t = \frac{49.625 - 47.0}{\sqrt{53.13\left(\frac18 + \frac18\right)}} = \frac{2.625}{3.645} = 0.720\]
 with \(\nu = 14\) and critical value 1.761. The statistic is nowhere near significant. The people vary a lot from each other (the within-sample variance 53 is large), which hides the steady improvement of about 2.6 seconds each. The paired test removes the person-to-person variation and finds a clear effect: it is much more sensitive for paired data.
 :::
@@ -303,7 +305,7 @@ Q: \(n_1 = 40\), \(\bar x_1 = 15.2\), \(s_1^2 = 6\); \(n_2 = 50\), \(\bar x_2 = 
 A: \(z = \dfrac{1.1}{\sqrt{6/40 + 8/50}} = \dfrac{1.1}{0.5568} = 1.976\).
 Q: A 95% confidence interval for \(\mu_1 - \mu_2\) is \((-1.2, 4.6)\). What does this say about a test of \(H_0: \mu_1 = \mu_2\) at 5%? Find \(\bar x_1 - \bar x_2\).
 A: 0 is inside, so \(H_0\) is not rejected at the 5% level. The difference of means is the midpoint, 1.7.
-Q: Explain why a test that treats paired data as independent has less power.
+Q: Explain why a test that treats paired data as independent is less likely to detect a real difference.
 A: The between-subject variation inflates the variance estimate and hides the within-pair difference. Pairing removes the between-subject variation.
 :::
 
@@ -349,7 +351,7 @@ Reject \(H_0\): sufficient evidence at 5% that the scheme reduces the mean time.
 \(\nu = 14\), critical value 1.761: do not reject \(H_0\). [A1]
 (c) The athletes differ a lot in speed (variance between athletes about 0.9) but each improved by a similar small amount (variance of the differences about 0.08). The independent test lets the large between-athlete spread hide the effect. [B1]
 The samples are paired (the same athletes), so the paired test in (a) is the correct one. [B1]
-Q: [8 marks] ★★★ The independent samples in the table are taken from normal populations. Sample P: \(n = 9\), \(\sum x = 118.8\), \(\sum x^2 = 1583.28\). Sample Q: \(n = 12\), \(\sum x = 131.4\), \(\sum x^2 = 1447.26\). Find the pooled estimate of variance and test, at the 10% level, whether \(\mu_P - \mu_Q\) differs from 2.
+Q: [8 marks] ★★★ The independent samples below are taken from normal populations. Sample P: \(n = 9\), \(\sum x = 118.8\), \(\sum x^2 = 1583.28\). Sample Q: \(n = 12\), \(\sum x = 131.4\), \(\sum x^2 = 1447.26\). Find the pooled estimate of variance and test, at the 10% level, whether \(\mu_P - \mu_Q\) differs from 2.
 H: Two-tailed at 10%: \(p = 0.95\).
 H: \(S_{xx} = \sum x^2 - \dfrac{(\sum x)^2}{n}\) for each sample, then add.
 A: \(S_{xxP} = 1583.28 - \dfrac{118.8^2}{9} = 15.12\), \(S_{xxQ} = 1447.26 - \dfrac{131.4^2}{12} = 8.43\). [M1] [A1]

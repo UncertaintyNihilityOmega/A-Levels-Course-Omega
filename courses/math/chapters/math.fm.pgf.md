@@ -78,7 +78,7 @@ By the binomial theorem \(\left(\tfrac12 + \tfrac12 t\right)^3 = \tfrac18\left(1
 
 \[G'(t) = \frac{1}{(2 - t)^2} \qquad G''(t) = \frac{2}{(2 - t)^3}\]
 \[\mathrm{P}(X = 1) = G'(0) = \tfrac14 \qquad \mathrm{P}(X = 2) = \frac{G''(0)}{2!} = \frac{2/8}{2} = \tfrac18\]
-**Check**: \(\dfrac{1}{2 - t} = \tfrac12\left(1 - \tfrac t2\right)^{-1} = \tfrac12 + \tfrac14 t + \tfrac18 t^2 + \dots\), the same three coefficients. This is the number of failures before the first success when \(p = \tfrac12\).
+**Check**: \(\dfrac{1}{2 - t} = \tfrac12\left(1 - \tfrac t2\right)^{-1} = \tfrac12 + \tfrac14 t + \tfrac18 t^2 + \dots\), the same three coefficients. (This is a geometric distribution that starts at 0: the number of failures before the first success when \(p = \tfrac12\); see the Stretch questions.)
 :::
 
 ## PGFs of the standard distributions
@@ -192,7 +192,10 @@ using \(p - 1 = -q\).
 \[\mathrm{Var}(X) = \lambda^2 + \lambda - \lambda^2 = \lambda\]
 :::
 
-For the uniform distribution on \(1, \dots, n\), use the sum form (the closed form is "0 over 0" at \(t = 1\)): \(G'(1) = \tfrac1n\sum x = \dfrac{n + 1}{2}\) and \(G''(1) = \tfrac1n\sum x(x - 1) = \dfrac{(n - 1)(n + 1)}{3}\), so \(\mathrm{Var}(X) = \dfrac{n^2 - 1}{12}\).
+For the uniform distribution on \(1, \dots, n\), use the sum form (the closed form is "0 over 0" at \(t = 1\)): \(G'(1) = \tfrac1n\sum x = \dfrac{n + 1}{2}\) and \(G''(1) = \tfrac1n\sum x(x - 1)\). The sum is
+\[\sum x(x - 1) = \sum x^2 - \sum x = \frac{n(n + 1)(2n + 1)}{6} - \frac{n(n + 1)}{2} = \frac{n(n + 1)(n - 1)}{3}\]
+so \(G''(1) = \dfrac{(n - 1)(n + 1)}{3}\). Then
+\[\mathrm{Var}(X) = \frac{n^2 - 1}{3} + \frac{n + 1}{2} - \frac{(n + 1)^2}{4} = \frac{4(n^2 - 1) + 6(n + 1) - 3(n + 1)^2}{12} = \frac{n^2 - 1}{12}\]
 
 :::eg (Exam style) The PGF of \(X\) is \(G(t) = k(2 + t^2)(1 + 3t^2)\), where \(k\) is a constant. (a) Show that \(k = \tfrac1{12}\). (b) Find \(\mathrm{E}(X)\) and \(\mathrm{Var}(X)\). (c) Write down the distribution of \(X\) in a table.
 (a) The probabilities add to 1, so \(G(1) = 1\). [B1]
@@ -252,7 +255,7 @@ The coefficient of \(t^2\) is \(\dfrac{k}{3} \times \dfrac{a}{3} = \dfrac{ka}{9}
 \[G_Y'(t) = \frac{2akt}{\left(3 - at^2\right)^2}\] [M1]
 With \(a = 1\) we have \(k = 2\), so \(G_Y'(1) = \dfrac{2 \times 1 \times 2 \times 1}{(3 - 1)^2} = 1\), and \(\mathrm{E}(Y) = 1\). [A1]
 
-**Check**: for \(a = 1\), \(\mathrm{P}(Y = 2j) = \tfrac23 \left(\tfrac13\right)^j\), a geometric series on the even values, and \(\mathrm{E}(Y) = 2 \times \tfrac23 \times \dfrac{1/3}{(2/3)^2} = 1\).
+**Check**: for \(a = 1\), \(\mathrm{P}(Y = 2j) = \tfrac23 \left(\tfrac13\right)^j\), a geometric series on the even values. The probabilities add to \(\tfrac23 + \tfrac29 + \tfrac2{27} + \cdots = \dfrac{2/3}{1 - 1/3} = 1\), as they should. For the mean, the terms \(2j \times \mathrm{P}(Y = 2j)\) for \(j = 1\) to 5 are \(0.444, 0.296, 0.148, 0.066, 0.027\), which already add to 0.982 and are heading for \(\mathrm{E}(Y) = 1\).
 :::
 
 :::warn Mean given, not the probabilities

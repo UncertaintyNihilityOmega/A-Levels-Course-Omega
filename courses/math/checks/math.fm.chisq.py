@@ -99,6 +99,8 @@ e = [200 * p for p in pm]
 for got, want in zip(e, [65.536, 81.92, 40.96, 10.24, 1.28, 0.064]):
     eq("binG E", got, want, 1e-9)
 eq("binG 3+", sum(e[3:]), 11.584)
+eq("binG 4+5", sum(e[4:]), 1.344, 1e-9)
+assert sum(e[4:]) < 5 < e[3]
 oc = [60, 88, 40, 12]
 assert sum(oc) == 200 and 10 + 2 + 0 == 12 and 60 + 88 + 40 + 10 + 2 == 200
 ec = e[:3] + [sum(e[3:])]
@@ -128,6 +130,8 @@ ec = e[:4] + [sum(e[4:])]
 assert oc[-1] == 16
 eq("binA comb E", ec[-1], 6.92, 5e-3)
 assert e[4] > 5 and e[5] < 5 and e[6] < 5 and e[5] + e[6] + e[4] > 5
+eq("binA tail 5+6", 0.79 + 0.04, 0.83, 1e-9)
+assert e[5] + e[6] < 5  # so 5 and 6 together must still join class 4
 eq("binA comb E (rounded)", 6.09 + 0.79 + 0.04, 6.92, 1e-9)
 for got, want in zip(contrib(oc, ec), [8.41, 1.46, 5.17, 0.03, 11.91]):
     eq("binA contrib", got, want, 6e-3)
@@ -158,6 +162,8 @@ for got, want in zip(contrib(oc, ec), [7.18, 0.23, 1.73, 1.63, 0.06, 6.29]):
 eq("po x2", sf(X2(oc, ec)), 17.1)
 eq("po x2 sum", 7.18 + 0.23 + 1.73 + 1.63 + 0.06 + 6.29, 17.12, 1e-9)
 assert X2(oc, ec) > CV(0.95, 4) == 9.488
+assert X2(oc, ec) > CV(0.95, 5) == 11.070  # if lambda were stated by the hypothesis (nu = 6 - 1 = 5)
+assert e[5] < 5 and e[6] < 5 and e[5] + e[6] < 7.3 and abs(100 * exp(-lam) * lam ** 6 / factorial(6) - 1.74) < 0.01  # "6 or more" is not P(X = 6)
 eq("po var", sum(i * i * f for i, f in enumerate(o)) / n - lam ** 2, 3.2)
 assert sum(i * i * f for i, f in enumerate(o)) == 804 and 0 + 22 + 80 + 126 + 160 + 200 + 216 == 804
 eq("po 8.04-4.84", 8.04 - 4.84, 3.2)

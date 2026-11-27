@@ -14,7 +14,7 @@ Many real data sets are not normal: waiting times, incomes, reaction times and r
 :::try Warm-up
 Q: \(X \sim B(10, \tfrac12)\). Find \(P(X \le 2)\). (from [Discrete random variables: binomial and geometric](#math.s1.drv))
 A: \(P(X \le 2) = \dfrac{1 + 10 + 45}{1024} = \dfrac{56}{1024} = 0.0547\) (3 s.f.), because \(P(X = r) = \binom{10}{r}\left(\tfrac12\right)^{10}\).
-Q: Under \(H_0\), \(X \sim B(20, 0.3)\). A sample gives \(X = 2\), and \(H_1: p < 0.3\). Find the \(p\)-value and state the conclusion at the 5% level. (from [Hypothesis testing](#math.s2.hypothesis))
+Q: Under \(H_0\), \(X \sim B(20, 0.3)\). A sample gives \(X = 2\), and \(H_1: p < 0.3\). Find the probability of a result at least this extreme (the \(p\)-value) and state the conclusion at the 5% level. (from [Hypothesis testing](#math.s2.hypothesis))
 A: \(P(X \le 2) = 0.0355 < 0.05\), so reject \(H_0\): there is sufficient evidence at the 5% level that \(p < 0.3\).
 Q: \(X \sim B(50, \tfrac12)\). Use a normal approximation to estimate \(P(X \ge 30)\). (from [The normal distribution](#math.s1.normal))
 A: \(X \approx Y \sim N(25, 12.5)\). With a continuity correction, \(P(Y > 29.5)\): \(z = \dfrac{4.5}{\sqrt{12.5}} = 1.273\), so the probability is \(1 - 0.8984 = 0.102\).
@@ -244,7 +244,7 @@ When the t-test's assumption is believable, it will reject a false \(H_0\) more 
 Key: 2 \| 3 represents 23 drinks.
 
 (a) Suggest a reason why a Wilcoxon signed-rank test might not be appropriate. (b) Use a sign test at the 5% level to investigate the owner's belief.
-(a) The data contain an outlier (86) and are skewed, so the population may not be symmetrical. [B1] (A repeated value such as the two 12s would give tied ranks, which is also an accepted comment.)
+(a) The Wilcoxon signed-rank test (the next chapter) ranks the sizes of the differences and needs the population to be roughly symmetrical, so an outlier or heavy skew rules it out. The data contain an outlier (86) and are skewed, so the population may not be symmetrical. [B1] (A repeated value such as the two 12s would give tied ranks, which is also an accepted comment, although 9231 never asks you to rank tied values.)
 
 (b) \(H_0\): the population median is 8. \(H_1\): the population median is greater than 8. [B1]
 

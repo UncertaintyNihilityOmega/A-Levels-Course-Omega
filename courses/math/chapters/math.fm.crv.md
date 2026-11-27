@@ -43,6 +43,8 @@ A PDF may be defined by several rules, for example
 - To find a probability, split the integral at every boundary that lies inside the interval.
 :::
 
+A **uniform** distribution on an interval \([p, q]\) is the simplest PDF of all: \(f(x) = \dfrac{1}{q - p}\) (a constant) for \(p \le x \le q\) and 0 otherwise, so every stretch of the interval of the same length is equally likely.
+
 :::eg A random variable \(X\) has PDF \(f(x) = kx\) for \(0 \le x < 2\), \(f(x) = 2k\) for \(2 \le x \le 5\), and 0 otherwise. Find \(k\) and \(P(1 < X < 3)\).
 The total area is 1. The first piece is a triangle and the second a rectangle:
 \[\int_0^2 kx\,dx + \int_2^5 2k\,dx = 2k + 6k = 8k = 1\]
@@ -79,7 +81,7 @@ When constants are hidden in the formulas, every piece of information gives one 
 **(a)** Continuity at \(x = 2\) gives \(2a = b\); continuity at \(x = 5\) gives \(b = 2c\). [B1] [B1]
 The total area is 1:
 \[\int_0^2 ax\,dx + \int_2^5 b\,dx + \int_5^7 c(7 - x)\,dx = 2a + 3b + 2c = 1\] [M1]
-Substitute \(b = 2a\) and \(c = a\):
+Since \(b = 2a\) and \(b = 2c\), we get \(c = \tfrac b2 = a\). Substitute \(b = 2a\) and \(c = a\):
 \[2a + 6a + 2a = 10a = 1\] [A1]
 So \(a = \tfrac1{10}\), \(b = \tfrac15\) and \(c = \tfrac1{10}\). [A1]
 **(b)** Split at \(x = 5\):
@@ -217,7 +219,7 @@ m &= 4 \pm \sqrt{6}
 \end{aligned}\]
 Only \(m = 4 - \sqrt{6} = 1.55\) lies in \([1, 4]\); the other root, 6.45, is outside the range.
 
-**Lower quartile.** \(F(1) = \tfrac14\) exactly, so \(Q_1 = 1\). (If you wrongly solve \(\tfrac{x^2}{4} = \tfrac14\) you still get 1, but only because the boundary was lucky.)
+**Lower quartile.** \(F(1) = \tfrac14\) exactly, so \(Q_1 = 1\). (The first piece, \(\tfrac{x^2}{4} = \tfrac14\), gives the same value.)
 
 **Upper quartile.**
 \[\begin{aligned}

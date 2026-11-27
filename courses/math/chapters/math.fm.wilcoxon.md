@@ -60,8 +60,10 @@ Suppose the population is symmetrical about the median \(m_0\) claimed in \(H_0\
 If the population (or, for matched pairs, the population of differences) is **symmetrical** about the hypothesised median, then under \(H_0\) each of the ranks \(1, 2, \dots, n\) of the sizes \(|d|\) is equally likely to belong to a positive or a negative difference, independently. The sum of the ranks of the positive differences, \(P\), is then the sum of a random subset of \(\{1, \dots, n\}\), whose distribution can be counted exactly.
 :::
 
+A note on letters. In 9231, \(P\) is the sum of the ranks of the positive differences and \(Q\) is the sum of the ranks of the negative differences. They are sums of ranks, not probabilities. So that the sum \(P\) is never confused with probability, a probability that involves the sum \(P\) is written \(\mathrm{Pr}(\dots)\) in this chapter (for example \(\mathrm{Pr}(P \le 3)\)).
+
 :::warn Wilcoxon needs symmetry, the sign test does not
-"The sign test does not need symmetry" is a mark in the exam. If the differences are clearly skewed (a histogram with a long tail on one side, or one huge difference), say that the Wilcoxon signed-rank test is not appropriate and use the sign test, which needs only independence. The rank-sum test and the signed-rank test are both valid only for symmetrical distributions, so check the shape when you can.
+"The sign test does not need symmetry" is a mark in the exam. If the differences are clearly skewed (a histogram with a long tail on one side, or one huge difference), say that the Wilcoxon signed-rank test is not appropriate and use the sign test, which needs only independence. The signed-rank test (single sample or matched pairs) needs the population, or the population of differences, to be symmetrical about the median. The rank-sum test compares two independent samples, and its null hypothesis is that the two populations are identical, so it assumes they have the same shape (in 9231, symmetrical). Check the shapes when you can.
 :::
 
 ## The signed-rank test for one sample
@@ -71,7 +73,7 @@ If the population (or, for matched pairs, the population of differences) is **sy
 2. Find each difference \(d = x - m_0\) (all non-zero in 9231).
 3. Rank the **absolute values** \(|d|\): smallest \(|d|\) gets rank 1.
 4. Add the ranks of the positive differences, \(P\), and of the negative differences, \(Q\). Check \(P + Q = \dfrac{n(n + 1)}{2}\).
-5. Take \(T = \min(P, Q)\), the smaller of the two.
+5. Two-tailed: \(T = \min(P, Q)\), the smaller of the two. One-tailed: \(T = Q\) if \(H_1\) is \(m > m_0\), and \(T = P\) if \(H_1\) is \(m < m_0\) (see the warning below the first example). In a one-tailed test, if that sum is the larger of \(P\) and \(Q\), \(H_0\) cannot be rejected.
 6. From the MF19 table, find the largest value of \(T\) that leads to rejection, for your \(n\), level and number of tails. **Reject \(H_0\) if \(T\) is less than or equal to it.**
 7. Conclude in context.
 :::
@@ -106,7 +108,7 @@ To see where a table value comes from, take \(n = 4\) and list the 16 equally li
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | ways | 1 | 1 | 1 | 2 | 2 | 2 | 2 | 2 | 1 | 1 | 1 |
 
-(For example \(P = 3\) happens for \(\{3\}\) and \(\{1, 2\}\).) So \(P(P \le 1) = \tfrac{2}{16} = 0.125\) and \(P(P \le 0) = \tfrac1{16}\). For larger \(n\) the same counting gives the table.
+(For example \(P = 3\) happens for \(\{3\}\) and \(\{1, 2\}\).) So \(\mathrm{Pr}(P \le 1) = \tfrac{2}{16} = 0.125\) and \(\mathrm{Pr}(P \le 0) = \tfrac1{16}\). For larger \(n\) the same counting gives the table.
 
 :::eg A manufacturer claims that the median standby time of a phone battery is 50 hours. The standby times of 9 randomly chosen batteries, in hours, are 44, 48, 51, 43, 41, 53, 46, 42, 45. Assuming the population is symmetrical, test at the 5% level whether the median is different from 50 hours.
 Let \(m\) be the population median standby time. \(H_0: m = 50\) and \(H_1: m \ne 50\).
@@ -151,7 +153,7 @@ Since \(3 \le 5\), reject \(H_0\). [M1] There is sufficient evidence at the 5% l
 When each subject gives a pair of readings, find the difference for each pair and run the single-sample signed-rank test on the differences, with \(m_0 = 0\). The population of differences must be symmetrical (the two populations themselves need not be).
 
 :::key Wilcoxon matched-pairs signed-rank test
-For pairs \((x_i, y_i)\) let \(d_i = x_i - y_i\) and let \(m\) be the population median of the differences. To test whether the populations are identical, \(H_0: m = 0\). Rank \(|d_i|\), find \(P\) and \(Q\), and take \(T = \min(P, Q)\) for a two-tailed test. Reject \(H_0\) if \(T\) is less than or equal to the MF19 value for \(n\) pairs.
+For pairs \((x_i, y_i)\) let \(d_i = x_i - y_i\) and let \(m\) be the population median of the differences. To test whether the populations are identical, \(H_0: m = 0\). Rank \(|d_i|\), find \(P\) and \(Q\), and take \(T = \min(P, Q)\) for a two-tailed test (for a one-tailed test use the sum that \(H_1\) says should be small, as in the single-sample test). Reject \(H_0\) if \(T\) is less than or equal to the MF19 value for \(n\) pairs.
 :::
 
 :::eg (Exam style) Ten drivers have their reaction time, in milliseconds, measured before and after a driving-awareness course.
@@ -196,7 +198,7 @@ The table stops at \(n = 20\). For larger \(n\) (and "where appropriate") the su
 :::key Normal approximation for the signed-rank statistic
 For \(n\) differences, under \(H_0\), the sum of the positive ranks \(P\) (and likewise \(Q\) and \(T\) when you use them as the statistic) has
 \[\text{mean } \frac{n(n + 1)}{4} \qquad \text{variance } \frac{n(n + 1)(2n + 1)}{24}\]
-and for large \(n\), \(P \approx N\left(\dfrac{n(n + 1)}{4}, \dfrac{n(n + 1)(2n + 1)}{24}\right)\). Use a continuity correction, because \(P\) takes whole-number values: for a lower tail \(P(P \le t) \approx P(Y < t + 0.5)\).
+and for large \(n\), \(P \approx N\left(\dfrac{n(n + 1)}{4}, \dfrac{n(n + 1)(2n + 1)}{24}\right)\). Use a continuity correction, because \(P\) takes whole-number values: for a lower tail \(\mathrm{Pr}(P \le t) \approx \mathrm{Pr}(Y < t + 0.5)\).
 :::
 
 :::proof Why the mean and variance are \(\tfrac{n(n+1)}{4}\) and \(\tfrac{n(n+1)(2n+1)}{24}\)
@@ -215,13 +217,13 @@ Since \(n = 24 > 20\) the table cannot be used. Under \(H_0\),
 \[\text{mean} = \frac{24 \times 25}{4} = 150, \qquad \text{variance} = \frac{24 \times 25 \times 49}{24} = 1225\] [B1 B1]
 so \(P \approx Y \sim N(150, 35^2)\).
 
-\[P(P \le 88) \approx P(Y < 88.5)\] [M1]
-\[z = \frac{88.5 - 150}{35} = -1.757 \qquad P(Z < -1.757) = 0.0394\] [A1]
+\[\mathrm{Pr}(P \le 88) \approx \mathrm{Pr}(Y < 88.5)\] [M1]
+\[z = \frac{88.5 - 150}{35} = -1.757 \qquad \mathrm{Pr}(Z < -1.757) = 0.0394\] [A1]
 Since \(0.0394 < 0.05\) (equivalently \(-1.757 < -1.645\)), reject \(H_0\). There is sufficient evidence at the 5% level that the median is less than 35. [A1]
 :::
 
 :::warn Continuity correction goes the right way
-For a lower tail \(P(P \le 88)\), the boundary is \(88.5\) (add 0.5), as the whole of the value 88 must be included. Using 87.5 gives \(z = -1.786\), a different answer. For an upper tail \(P(P \ge a)\) use \(a - 0.5\).
+For a lower tail \(\mathrm{Pr}(P \le 88)\), the boundary is \(88.5\) (add 0.5), as the whole of the value 88 must be included. Using 87.5 gives \(z = -1.786\), a different answer. For an upper tail \(\mathrm{Pr}(P \ge a)\) use \(a - 0.5\).
 :::
 
 ## The rank-sum test for two independent samples
@@ -338,7 +340,13 @@ Five tests compare medians or means in this part of the course. The choice depen
 |---|---|---|---|
 | One sample, test a centre | one-sample t-test (mean) | Wilcoxon signed-rank (median) | sign test (median) |
 | Paired samples | paired t-test (mean of differences) | Wilcoxon matched-pairs signed-rank | paired sign test |
-| Two independent samples | two-sample t-test, or a normal test for large samples | Wilcoxon rank-sum | (Wilcoxon rank-sum is the usual non-parametric choice) |
+| Two independent samples | two-sample t-test, or a normal test for large samples | Wilcoxon rank-sum | none of the five is fully suitable: the rank-sum test is the usual choice if the two shapes are alike |
+
+What each test needs:
+- t-tests: a normal population (for the paired t-test, normal differences).
+- Wilcoxon signed-rank and matched-pairs tests: a symmetrical population (for matched pairs, symmetrical differences).
+- Wilcoxon rank-sum test: two independent random samples from populations with the same shape (in 9231, symmetrical), which is what "identical populations" in \(H_0\) means.
+- Sign test: no assumption about the shape. It applies only to one sample or to paired data (the differences); it cannot compare two independent samples.
 
 - Paired data (the same subjects twice, or matched subjects) use a paired test on the differences. Independent samples of different sizes, with no pairing, use the two-sample tests. Never use the rank-sum test on paired data.
 - The sign test uses the fewest assumptions and the least information; the t-test the most of both; the Wilcoxon tests are in between.
@@ -459,8 +467,8 @@ There is sufficient evidence at the 10% level that the populations differ. [A1]
 Q: [7 marks] ★★★ (a) Show that a two-tailed signed-rank test at the 5% level cannot reject \(H_0\) when \(n = 5\) but can when \(n = 6\). (b) For \(n = 7\), list the sets of ranks whose sum is at most 2 and hence confirm the MF19 value 2 for a one-tailed test at the 2.5% level.
 H: The smallest possible value of \(P\) is 0, which happens for exactly one of the \(2^n\) sign patterns.
 H: Each tail of a two-tailed 5% test must have probability at most 0.025.
-A: (a) \(P(P = 0) = \dfrac{1}{2^n}\). For \(n = 5\) this is \(\dfrac1{32} = 0.03125 > 0.025\), so even the most extreme result cannot be in the critical region. [M1 A1] For \(n = 6\), \(P(P \le 0) = \dfrac1{64} = 0.0156 \le 0.025\) but \(P(P \le 1) = \dfrac{2}{64} = 0.03125 > 0.025\), so the table value is 0. [A1]
-(b) Sets with sum at most 2: \(\{\}\) (sum 0), \(\{1\}\), \(\{2\}\). [B1] So \(P(P \le 2) = \dfrac{3}{128} = 0.0234 \le 0.025\). [M1] The set \(\{3\}\) and \(\{1, 2\}\) both have sum 3, giving \(P(P \le 3) = \dfrac{5}{128} = 0.039 > 0.025\), so the largest value that leads to rejection is 2. [A1 A1]
+A: (a) \(\mathrm{Pr}(P = 0) = \dfrac{1}{2^n}\). For \(n = 5\) this is \(\dfrac1{32} = 0.03125 > 0.025\), so even the most extreme result cannot be in the critical region. [M1 A1] For \(n = 6\), \(\mathrm{Pr}(P \le 0) = \dfrac1{64} = 0.0156 \le 0.025\) but \(\mathrm{Pr}(P \le 1) = \dfrac{2}{64} = 0.03125 > 0.025\), so the table value is 0. [A1]
+(b) Sets with sum at most 2: \(\{\}\) (sum 0), \(\{1\}\), \(\{2\}\). [B1] So \(\mathrm{Pr}(P \le 2) = \dfrac{3}{128} = 0.0234 \le 0.025\). [M1] The set \(\{3\}\) and \(\{1, 2\}\) both have sum 3, giving \(\mathrm{Pr}(P \le 3) = \dfrac{5}{128} = 0.039 > 0.025\), so the largest value that leads to rejection is 2. [A1 A1]
 Q: [6 marks] ★★★ Samples of sizes \(m\) and \(n\) are ranked together, giving ranks \(1, \dots, m + n\). (a) Show that if the ranking is reversed (the largest value gets rank 1), the sum of the ranks of the sample of size \(m\) becomes \(m(m + n + 1) - R_m\). (b) Hence explain why \(W = \min(R_m, m(m + n + 1) - R_m)\) is a sensible statistic for a two-tailed test. (c) For \(m = n = 3\), show that a two-tailed test at the 5% level can never reject, but a one-tailed test at 5% rejects when \(R_m \le 6\).
 H: A value of rank \(r\) becomes rank \(m + n + 1 - r\).
 H: In (c), list the \(\binom{6}{3} = 20\) equally likely sets of ranks; how many have sum 6 or less?

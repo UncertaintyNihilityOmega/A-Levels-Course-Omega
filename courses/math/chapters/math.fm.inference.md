@@ -125,13 +125,13 @@ Let \(\mu\) be the population mean running time in hours. \(H_0: \mu = 50\), \(H
 
 \[\bar x = \frac{477.3}{10} = 47.73\]
 \[s^2 = \frac{1}{9}\left(22\,818.73 - \frac{477.3^2}{10}\right) = \frac{37.201}{9} = 4.133\]
-so \(s = 2.033\) and the standard error is \(\dfrac{s}{\sqrt{10}} = 0.6429\). Then
+so \(s = 2.033\) and the standard error (the standard deviation of the sample mean, estimated by \(\dfrac{s}{\sqrt{n}}\)) is \(\dfrac{s}{\sqrt{10}} = 0.6429\). Then
 \[t = \frac{47.73 - 50}{0.6429} = -3.531\]
 with \(\nu = 9\). The lower-tail critical value for 5% comes from the \(p = 0.95\) column: \(-1.833\).
 
 Since \(-3.531 < -1.833\), the statistic is in the critical region: reject \(H_0\). There is sufficient evidence, at the 5% level, that the mean running time is less than 50 hours.
 
-(The value \(-3.531\) is beyond \(-3.250\), the point for \(p = 0.995\), so the test would also reject at the 0.5% level. The table cannot give an exact \(p\)-value: you can only say between which two columns the statistic lies.)
+(The value \(-3.531\) is beyond \(-3.250\), the point for \(p = 0.995\), so the test would also reject at the 0.5% level. The table cannot give the exact probability of a result this extreme: you can only say between which two columns the statistic lies.)
 :::
 
 When the data come as a list, find \(\bar x\) and \(s\) with your calculator's statistics mode (the \(s_x\) or \(\sigma_{n-1}\) key); the statistic and the critical value are then the same.
@@ -230,7 +230,7 @@ The ends of the interval are random, because they depend on the sample. Substitu
 :::
 
 :::eg The heights, in centimetres, of 9 seedlings chosen at random after 10 days are 12.4, 13.1, 11.8, 12.9, 13.6, 12.2, 12.7, 13.3, 12.5. Assuming normality, find a 95% confidence interval for the mean height.
-\(n = 9\): \(\bar x = 12.72\), \(s = 0.5652\), so \(\dfrac{s}{\sqrt{9}} = 0.1884\).
+\(n = 9\): \(\bar x = 12.722\) (12.72 to 4 s.f.; keep 12.722 in the working), \(s = 0.5652\), so \(\dfrac{s}{\sqrt{9}} = 0.1884\).
 
 \(\nu = 8\), 95% interval: \(p = 0.975\), \(t = 2.306\).
 \[12.722 \pm 2.306 \times 0.1884 = 12.722 \pm 0.4344\]

@@ -178,6 +178,16 @@ assert 2 * a * k * 1 / (3 - a) ** 2 == 1
 assert abs(float(sum(2 * j * (k / 3) * (a / 3) ** j for j in range(1, 200))) - 1) < 1e-9
 assert F(2, 3) * F(1, 3) == F(2, 9)
 assert 2 * F(2, 3) * (F(1, 3) / (F(2, 3)) ** 2) == 1
+# check line: P(Y = 2j) = (2/3)(1/3)^j sums to 1; first five terms of E(Y)
+assert F(2, 3) / (1 - F(1, 3)) == 1
+terms = [2 * j * F(2, 3) * F(1, 3) ** j for j in range(1, 6)]
+for got, want in zip(terms, [0.444, 0.296, 0.148, 0.066, 0.027]):
+    eq("EY term", float(got), want, 5e-4)
+eq("EY partial", float(sum(terms)), 0.982, 5e-4)
+# uniform variance algebra: sum x(x-1) = n(n+1)(n-1)/3 and 4(n^2-1) + 6(n+1) - 3(n+1)^2 = n^2 - 1
+for n in range(1, 30):
+    assert sum(x * (x - 1) for x in range(1, n + 1)) == n * (n + 1) * (n - 1) // 3
+    assert 4 * (n * n - 1) + 6 * (n + 1) - 3 * (n + 1) ** 2 == n * n - 1
 
 # dice
 die = {x: F(1, 6) for x in range(1, 7)}

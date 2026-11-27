@@ -63,10 +63,10 @@ If the model is right, \(X^2\) is not zero: chance alone gives a positive value 
 --f "exp(-x/2)/2" --f "x**2*exp(-x/2)/16" --label "ν = 2" --label "ν = 6" --x 0 16 --y 0 0.6 --legend tr
 :::
 
-A badly fitting model makes \(X^2\) large, so the test is **one-tailed, in the upper tail**: you reject the model only when \(X^2\) is bigger than a critical value. The MF19 table of the \(\chi^2\) distribution gives, for each \(\nu\), the value \(x\) with \(P(X \le x) = p\). For a test at the 5% level you want 5% in the upper tail, so you read the column \(p = 0.95\). The columns you can use for a test at each level are in the next box.
+A badly fitting model makes \(X^2\) large, so the test is **one-tailed, in the upper tail**: you reject the model only when \(X^2\) is bigger than a critical value. The MF19 table of the \(\chi^2\) distribution gives, for each \(\nu\), the value \(x\) with \(P(W \le x) = p\), where \(W\) stands for any variable with the \(\chi^2_\nu\) distribution (it is a different letter from the data variable \(X\) and from the statistic \(X^2\)). For a test at the 5% level you want 5% in the upper tail, so you read the column \(p = 0.95\). The columns you can use for a test at each level are in the next box.
 
 :::key Reading the \(\chi^2\) table
-The table prints the value \(x\) with \(P(X \le x) = p\) for nine values of \(p\) (0.01, 0.025, 0.05, 0.9, 0.95, 0.975, 0.99, 0.995 and 0.999) and for \(\nu = 1\) to 25, then 30, 40, 50 and so on up to 100.
+The table prints the value \(x\) with \(P(W \le x) = p\), for \(W \sim \chi^2_\nu\), for nine values of \(p\) (0.01, 0.025, 0.05, 0.9, 0.95, 0.975, 0.99, 0.995 and 0.999) and for \(\nu = 1\) to 25, then 30, 40, 50 and so on up to 100.
 
 | Significance level (upper tail) | Column \(p\) |
 |---|---|
@@ -141,7 +141,7 @@ The chi-squared distribution is only an approximation to the true distribution o
 
 - Combine **adjacent** classes, normally at a tail. Classes such as "0", "1", "2" and "3 or more" merge from the end. Do not merge the first class with the last.
 - Combine **before** you calculate \(X^2\): add the \(E\) values and add the \(O\) values of the merged classes, then use the merged classes.
-- Combine only as much as you need. A class with \(E = 5.04\) stays alone.
+- Combine only as much as you need. A class with \(E = 5.04\) stays alone. But if the small classes at the end of the table still add up to less than 5, they must all join the next class in, however large it is (see the two binomial examples below).
 - \(\nu\) uses the **new** number of classes.
 
 :::warn The three lost marks that come up again and again
@@ -150,7 +150,7 @@ The chi-squared distribution is only an approximation to the true distribution o
 
 ## Fitting a model: from hypothesis to expected frequencies
 
-Outcome 4.3a is the skill of turning a hypothesis into expected frequencies. Whatever the model, the recipe is: list the classes, find the probability of each class under \(H_0\), and multiply by \(N\). The last class is often open-ended ("6 or more"), and its probability is \(1 - \) (the sum of the others), which also makes the expected frequencies add up to \(N\) automatically.
+The skill of turning a hypothesis into expected frequencies is the heart of every goodness-of-fit question. Whatever the model, the recipe is: list the classes, find the probability of each class under \(H_0\), and multiply by \(N\). The last class is often open-ended ("6 or more"), and its probability is \(1 - \) (the sum of the others), which also makes the expected frequencies add up to \(N\) automatically.
 
 ### A uniform distribution and given ratios
 
@@ -209,7 +209,7 @@ because \(E(X) = mp\). The hat means "estimate of".
 | \(O\) | 60 | 88 | 40 | 10 | 2 | 0 |
 | \(E\) | 65.536 | 81.92 | 40.96 | 10.24 | 1.28 | 0.064 |
 
-The last three \(E\) values are 10.24, 1.28 and 0.064, so combine classes 3, 4 and 5 into "3 or more": \(E = 10.24 + 1.28 + 0.064 = 11.584\) and \(O = 10 + 2 + 0 = 12\). That leaves four classes.
+The last three \(E\) values are 10.24, 1.28 and 0.064, so combine classes 3, 4 and 5 into "3 or more". Classes 4 and 5 together give only \(1.28 + 0.064 = 1.344\), still below 5, so they must join class 3 even though its own \(E = 10.24\) is above 5. Then \(E = 10.24 + 1.28 + 0.064 = 11.584\) and \(O = 10 + 2 + 0 = 12\). That leaves four classes.
 
 | Faulty | 0 | 1 | 2 | 3 or more |
 |---|---|---|---|---|
@@ -241,7 +241,7 @@ Use the unrounded \(\hat p = \dfrac{1.465}{6}\): the rounded 0.2442 would give 5
 
 **(c)** \(H_0\): the number of faulty components in a box follows \(\mathrm{B}(6, p)\). \(H_1\): it does not. [B1]
 
-The expected frequencies for 4, 5 and 6 faulty components are 6.09, 0.79 and 0.04. The last two are below 5, so combine classes 4, 5 and 6: \(E = 6.92\) and \(O = 10 + 5 + 1 = 16\).
+The expected frequencies for 4, 5 and 6 faulty components are 6.09, 0.79 and 0.04. The last two are below 5, and together they give only \(0.79 + 0.04 = 0.83\), still below 5, so they must join class 4 even though \(6.09\) is above 5 on its own. Combine classes 4, 5 and 6: \(E = 6.92\) and \(O = 10 + 5 + 1 = 16\).
 
 | \(x\) | 0 | 1 | 2 | 3 | 4 or more |
 |---|---|---|---|---|---|
@@ -271,28 +271,28 @@ For \(X \sim \mathrm{Po}(\lambda)\), the classes are \(0, 1, 2, \dots\), with a 
 |---|---|---|---|---|---|---|---|
 | Intervals | 20 | 22 | 20 | 14 | 10 | 8 | 6 |
 
-No interval had more than 6 calls. (a) Show that the mean number of calls is 2.2. (b) A manager suggests the number of calls follows a Poisson distribution with mean 2.2. Test this at the 5% level. (c) Calculate the variance of the data and use it to say why the Poisson model is not suitable.
+No interval had more than 6 calls. (a) Show that the mean number of calls is 2.2. (b) A manager suggests that the number of calls follows a Poisson distribution. Using the mean found in (a) as the estimate of \(\lambda\), test this at the 5% level. (c) Calculate the variance of the data and use it to say why the Poisson model is not suitable.
 **(a)**
 \[\bar x = \frac{0 + 22 + 40 + 42 + 40 + 40 + 36}{100} = \frac{220}{100} = 2.2\] [M1 A1]
 
-**(b)** \(H_0\): the number of calls follows \(\mathrm{Po}(2.2)\). \(H_1\): it does not. [B1]
+**(b)** \(H_0\): the number of calls follows a Poisson distribution (with \(\lambda\) estimated by 2.2). \(H_1\): it does not. [B1]
 
-\(E_r = 100 \times \dfrac{\mathrm{e}^{-2.2}\,2.2^r}{r!}\), and the last class is \(N\) minus the others:
+\(E_r = 100 \times \dfrac{\mathrm{e}^{-2.2}\,2.2^r}{r!}\), and the last class ("6 or more") is \(N\) minus the others:
 
-| Calls | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+| Calls | 0 | 1 | 2 | 3 | 4 | 5 | 6 or more |
 |---|---|---|---|---|---|---|---|
 | \(E\) | 11.08 | 24.38 | 26.81 | 19.66 | 10.82 | 4.76 | 2.49 |
 
-Classes 5 and 6 have \(E < 5\), so combine them: \(O = 8 + 6 = 14\) and \(E = 4.76 + 2.49 = 7.25\). [M1 A1]
+Classes 5 and "6 or more" have \(E < 5\), so combine them: \(O = 8 + 6 = 14\) and \(E = 4.76 + 2.49 = 7.25\). [M1 A1]
 
 \[\begin{aligned}
 X^2 &= \frac{(20 - 11.08)^2}{11.08} + \frac{(22 - 24.38)^2}{24.38} + \frac{(20 - 26.81)^2}{26.81} \\
 &\quad + \frac{(14 - 19.66)^2}{19.66} + \frac{(10 - 10.82)^2}{10.82} + \frac{(14 - 7.25)^2}{7.25}
 \end{aligned}\] [M1]
 \[= 7.18 + 0.23 + 1.73 + 1.63 + 0.06 + 6.29 = 17.1\] [A1]
-There are 6 classes and \(\lambda\) was estimated from the data, so \(\nu = 6 - 1 - 1 = 4\). The critical value is 9.488.
+There are 6 classes and \(\lambda\) was estimated from the data, so \(\nu = 6 - 1 - 1 = 4\). The critical value is 9.488. (If a question had instead stated \(\lambda = 2.2\) as part of the hypothesis, \(\nu\) would be \(6 - 1 = 5\), with critical value 11.070; the statistic is the same and the conclusion is the same here.)
 
-Since \(17.1 > 9.488\), reject \(H_0\): there is sufficient evidence, at the 5% level, that the number of calls does not follow \(\mathrm{Po}(2.2)\). [M1 A1]
+Since \(17.1 > 9.488\), reject \(H_0\): there is sufficient evidence, at the 5% level, that the number of calls does not follow a Poisson distribution. [M1 A1]
 
 **(c)** The variance is
 \[\frac{0 + 22 + 80 + 126 + 160 + 200 + 216}{100} - 2.2^2 = 8.04 - 4.84 = 3.2\] [B1]
@@ -389,7 +389,18 @@ When a model is not rejected, say so carefully. The test has not shown that the 
 ### Wording the conclusion
 
 :::exam How the marks are earned
-The June 2025 Paper 4 goodness-of-fit test (a binomial model, [5]) was marked B1 for the hypotheses in words, naming the distribution and the data; M1 for an expression of the right form with the classes correctly combined; A1 for the value of \(X^2\); M1 for comparing it with the critical value (printed in the scheme, with no separate mark) and stating reject or do not reject; and A1 for a correct conclusion in context from correct working. So \(\nu\) and the critical value earn nothing on their own, but a wrong \(\nu\) costs the final mark. When the expected frequencies are not given, finding them earns M1 A1 as well, as in the June 2026 test for independence. Write the conclusion in context with "evidence" language: "there is sufficient evidence, at the 5% level, that the number of calls does not follow a Poisson distribution", or "there is insufficient evidence ... that the die is biased". Do not write "the data prove the model", "accept \(H_1\)" or "the model is wrong". In the June 2026 Paper 4 test of independence, the hypotheses had to name both variables, and the mark scheme did not accept "no evidence" for a non-significant result: write "insufficient evidence" or "not enough evidence". Write \(\nu\) down anyway: it shows the examiner which critical value you meant. The \(\chi^2\) table is printed in MF19, so you read the critical value from it. The formula \(X^2 = \sum \dfrac{(O - E)^2}{E}\) and the rule \(\nu = n - 1 - k\) are not printed: learn them.
+The June 2025 Paper 4 goodness-of-fit test (a binomial model, [5]) was marked:
+- B1 for the hypotheses in words, naming the distribution and the data;
+- M1 for an expression of the right form with the classes correctly combined;
+- A1 for the value of \(X^2\);
+- M1 for comparing it with the critical value (printed in the scheme, with no separate mark) and stating reject or do not reject;
+- A1 for a correct conclusion in context from correct working.
+
+So \(\nu\) and the critical value earn nothing on their own, but a wrong \(\nu\) costs the final mark. When the expected frequencies are not given, finding them earns M1 A1 as well.
+- Write the conclusion in context with "evidence" language: "there is sufficient evidence, at the 5% level, that the number of calls does not follow a Poisson distribution", or "there is insufficient evidence ... that the die is biased".
+- Do not write "the data prove the model", "accept \(H_1\)" or "the model is wrong", and do not write "no evidence" for a non-significant result: write "insufficient evidence" or "not enough evidence".
+- Write \(\nu\) down anyway: it shows the examiner which critical value you meant.
+- The \(\chi^2\) table is printed in MF19, so you read the critical value from it. The formula \(X^2 = \sum \dfrac{(O - E)^2}{E}\) and the rule \(\nu = n - 1 - k\) are not printed: learn them.
 :::
 
 :::eg (Exam style) A four-sided spinner has faces numbered 1 to 4. It is claimed that the probability of scoring \(r\) is \(P(X = r) = kr\), where \(k\) is a constant. The spinner is spun 150 times and the scores 1, 2, 3 and 4 occur 22, 27, 41 and 60 times. (a) Show that \(k = 0.1\). (b) Test the claim at the 10% significance level.
@@ -424,7 +435,7 @@ Line 5: \(6.44 < 7.815\), so do not reject \(H_0\): there is insufficient eviden
 
 Lines 1 to 3 are correct and earn all five of their marks.
 
-**Line 4 uses the wrong \(\nu\).** The student forgot that \(p\) was estimated from the data, so there is a second degree of freedom to subtract. No mark is printed against \(\nu\) itself, but the conclusion mark is for a correct conclusion from correct working, so line 5 loses it. The comparison keeps its method mark only because the real 9231 schemes allow a comparison with the critical value that this common slip produces; a comparison with some other wrong value would lose that mark as well. The student scores 6 out of 7.
+**Line 4 uses the wrong \(\nu\).** The student forgot that \(p\) was estimated from the data, so there is a second degree of freedom to subtract. No mark is printed against \(\nu\) itself, but the conclusion mark is for a correct conclusion from correct working, so line 5 loses it. Line 5 still earns its method mark, because the student compared the statistic with the critical value they had found; only the accuracy mark (a correct conclusion) is lost. The student scores 6 out of 7.
 
 Correct line 4: \(\nu = 4 - 1 - 1 = 2\), critical value 5.991.
 Correct line 5: \(6.44 > 5.991\), so reject \(H_0\): there is sufficient evidence, at the 5% level, that the number of seeds germinating does not follow a binomial distribution. [M1 A1] The wrong \(\nu\) reversed the conclusion.
@@ -498,12 +509,12 @@ A: The sensors fail independently of each other. [B1]
 The probability of failing is the same for every sensor. [B1]
 A reason: sensors made one after another on the same line may share a fault (or the probability may drift between batches as the machine wears), so independence or constant \(p\) fails. [B1]
 Q: [9 marks] (#math.s2.poisson) ★★★ A proofreader records the number of errors on each of 150 pages: 40, 55, 31, 15, 7 and 2 pages have 0, 1, 2, 3, 4 and 5 errors. (a) Show that the mean number of errors per page is \(\tfrac43\). (b) Test, at the 5% level, whether the number of errors per page follows a Poisson distribution.
-H: Use \(\lambda = \tfrac43\) and \(P(X = r) = \dfrac{\mathrm{e}^{-\lambda}\lambda^r}{r!}\); the last class is "4 or more".
+H: Use \(\lambda = \tfrac43\) and \(P(X = r) = \dfrac{\mathrm{e}^{-\lambda}\lambda^r}{r!}\). The data table has classes 0 to 5, and the last class is "5 or more" (its \(E\) is \(150\) minus the other five \(E\) values); after combining, the last class is "4 or more".
 H: Look for expected frequencies below 5 at the end.
 H: \(\nu\) reflects that \(\lambda\) was estimated.
 A: (a) \(\sum xf = 0 + 55 + 62 + 45 + 28 + 10 = 200\), so \(\bar x = \dfrac{200}{150} = \dfrac43\). [M1 A1]
 (b) \(H_0\): the number of errors per page follows a Poisson distribution. \(H_1\): it does not. [B1]
-With \(\lambda = \tfrac43\): \(E = 150P(X = r)\) gives 39.54, 52.72, 35.15 and 15.62 for 0 to 3; classes 4 and 5 have \(E = 150 - (\text{the rest}) = 5.21\) and \(1.77\), so combine them: \(E = 6.97\) (for "4 or more") and \(O = 9\). [M1 A1]
+With \(\lambda = \tfrac43\): \(E = 150P(X = r)\) gives 39.54, 52.72, 35.15 and 15.62 for 0 to 3; \(E\) for 4 errors is 5.21; \(E\) for 5 errors (taken as the last class, "5 or more") is 150 minus the other five \(E\) values, which is 1.77. Since 1.77 is below 5, combine 4 and 5: \(E = 6.97\) (for "4 or more") and \(O = 7 + 2 = 9\). [M1 A1]
 \[\begin{aligned}
 X^2 &= \frac{(40 - 39.54)^2}{39.54} + \frac{(55 - 52.72)^2}{52.72} + \frac{(31 - 35.15)^2}{35.15} \\
 &\quad + \frac{(15 - 15.62)^2}{15.62} + \frac{(9 - 6.97)^2}{6.97}
@@ -519,7 +530,7 @@ A: (a) \(\bar x = \dfrac{0 + 20 + 92 + 96 + 56 + 20}{120} = \dfrac{284}{120} = 2
 \(\hat p = \dfrac{2.3667}{5} = 0.4733\) [A1]
 (b) \(E_0 = 120(1 - \hat p)^5\) [M1] \(= 120 \times 0.5267^5 = 4.86\) [A1]
 (c) \(H_0\): the number of seeds germinating follows \(\mathrm{B}(5, p)\). \(H_1\): it does not. [B1]
-The other expected frequencies are 21.85, 39.28, 35.30, 15.86 and 2.85. The first (4.86) and last (2.85) are below 5, so combine classes 0 and 1 (\(E = 26.71\), \(O = 24\)) and classes 4 and 5 (\(E = 18.71\), \(O = 18\)). [M1]
+The other expected frequencies are 21.85, 39.28, 35.30, 15.86 and 2.85. The first (4.86) and last (2.85) are below 5, so each joins its neighbour: classes 0 and 1 (\(E = 26.71\), \(O = 24\)) and classes 4 and 5 (\(E = 18.71\), \(O = 18\)); both merged values are above 5, so nothing more is needed. [M1]
 \[\begin{aligned}
 X^2 &= \frac{(24 - 26.71)^2}{26.71} + \frac{(46 - 39.28)^2}{39.28} \\
 &\quad + \frac{(32 - 35.30)^2}{35.30} + \frac{(18 - 18.71)^2}{18.71}

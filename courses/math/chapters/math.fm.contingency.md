@@ -186,7 +186,7 @@ The contributions are 0.067, 0.512, 0.647; 0.303, 0.425, 1.036; 0.817, 2.191, 3.
 The new table has 3 rows and 3 columns: \(\nu = (3 - 1)(3 - 1) = 4\), with critical value 9.488. Since \(9.99 > 9.488\), reject \(H_0\): there is sufficient evidence, at the 5% level, of an association between age group and the usual way to travel. The largest contributions are in the last row: people aged 50 and over use the bus less (14 against 20.74) and the car more (44 against 32.59) than independence predicts.
 :::
 
-Notice the trap in the working: if you had kept the four rows and used \(\nu = (4 - 1)(3 - 1) = 6\), you would have got a smaller statistic and a larger critical value (12.592), and not rejected. The rule of 5 is not a technicality: it can change the conclusion.
+Notice the trap in the working: if you had kept the four rows and used \(\nu = (4 - 1)(3 - 1) = 6\), you would have got a slightly larger statistic (about 10.96), but with \(\nu = 6\) the critical value is 12.592, so you would not have rejected. The rule of 5 is not a technicality: it can change the conclusion.
 
 ## Which cells matter
 
@@ -264,7 +264,7 @@ The table went from 4 columns to 3, so \(\nu\) is \((3 - 1)(3 - 1) = 4\) rather 
 :::
 
 :::exam What the June 2026 Paper 4 question showed
-The June 2026 Paper 4 included an 8-mark test of independence on a \(3 \times 3\) table with one small expected frequency (3.50). Its marks went to: both hypotheses, naming the two variables (B1); the expected frequencies seen (M1, then A1 for all correct to 3 significant figures); combining rows or columns (M1); the contributions, with at least two correct expressions (M1) and the statistic (A1); comparing with the correct critical value (M1); a conclusion in context (A1). A solution that did not combine could earn at most 5 of the 8 marks. A two-mark part then asked which company was least reliable and why, by comparing observed and expected frequencies. In the conclusion the scheme accepted "association" for "not independent", did not accept "no evidence", and wanted "insufficient evidence" (or "not enough evidence") for a non-significant result. The MF19 table is printed, so you read the critical value from it; the rule \(E = \dfrac{RC}{N}\), \(X^2 = \sum \dfrac{(O - E)^2}{E}\) and \(\nu = (r - 1)(c - 1)\) must be learned.
+The June 2026 Paper 4 included an 8-mark test of independence on a \(3 \times 3\) table of three bus companies (A, B and C) against whether a journey was on time, late or cancelled, with one small expected frequency (3.50). Its marks went to: both hypotheses, naming the two variables (B1); the expected frequencies seen (M1, then A1 for all correct to 3 significant figures); combining rows or columns (M1); the contributions, with at least two correct expressions (M1) and the statistic (A1); comparing with the correct critical value (M1); a conclusion in context (A1). A solution that did not combine could earn at most 5 of the 8 marks. A two-mark part then asked which of the three companies was least reliable and why, by comparing observed and expected frequencies. In the conclusion the scheme accepted "association" for "not independent", did not accept "no evidence", and wanted "insufficient evidence" (or "not enough evidence") for a non-significant result. The MF19 table is printed, so you read the critical value from it; the rule \(E = \dfrac{RC}{N}\), \(X^2 = \sum \dfrac{(O - E)^2}{E}\) and \(\nu = (r - 1)(c - 1)\) must be learned.
 :::
 
 :::board
@@ -345,7 +345,7 @@ A: (a) \(a = 60 - 18 - 22 = 20\) [M1], \(b = 50 - 22 = 28\), \(c = 50 - 20 = 30\
 \(X^2 = \dfrac{4}{20} + \dfrac{4}{20} + 0 + \dfrac{4}{30} + \dfrac{4}{30} + 0\) [M1] \(= 0.667\) [A1]
 \(\nu = (2 - 1)(3 - 1) = 2\), critical value 5.991; \(0.667 < 5.991\). [M1]
 Do not reject \(H_0\): insufficient evidence, at the 5% level, of an association between year group and venue. [A1]
-Q: [5 marks] ★★ For the table in the first question (revision hours and grade; rows 70, 80, 80), the test statistic is \(X^2 = 25.4\), and the cell contributions are
+Q: [5 marks] ★★ 230 students are classified by weekly revision (under 5 hours, 5 to 10 hours, over 10 hours; row totals 70, 80, 80) and grade (C or below, B, A or above; column totals 60, 80, 90). The test statistic is \(X^2 = 25.4\), and the cell contributions are
 
 | | C or below | B | A or above |
 |---|---|---|---|
@@ -353,7 +353,7 @@ Q: [5 marks] ★★ For the table in the first question (revision hours and grad
 | 5 to 10 hours | 0.04 | 0.17 | 0.05 |
 | Over 10 hours | 5.66 | 0.29 | 5.99 |
 
-(a) Carry out the test at the 1% level. (b) Identify the two largest contributions among the cells for "under 5 hours" and "over 10 hours" and describe what they show. The observed frequencies are 30 and 10 (C or below) and 15 and 45 (A or above), with expected 18.3, 20.9, 27.4 and 31.3.
+(a) Carry out the test at the 1% level. (b) Identify the two largest contributions in the table (they are two of the four corner cells) and describe what they show. The four corner cells have: under 5 hours, C or below: \(O = 30\), \(E = 18.3\); over 10 hours, C or below: \(O = 10\), \(E = 20.9\); under 5 hours, A or above: \(O = 15\), \(E = 27.4\); over 10 hours, A or above: \(O = 45\), \(E = 31.3\).
 A: (a) \(\nu = 4\), 1% critical value 13.277. [B1] \(25.4 > 13.277\) [M1], so reject \(H_0\): sufficient evidence, at the 1% level, of an association between revision hours and grade. [A1]
 (b) Under 5 hours with C or below (7.55): 30 against 18.3 expected, so students who revise little are more often at the lower grade than independence predicts. [B1]
 Over 10 hours with A or above (5.99): 45 against 31.3 expected, so students who revise a lot more often reach A or above. [B1]
