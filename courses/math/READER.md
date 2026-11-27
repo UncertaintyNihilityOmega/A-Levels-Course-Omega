@@ -287,3 +287,35 @@ Assumed: d/dx sec^k x = k sec^k x tan x (the derivative of sec is not taught); i
 ## math.fm.rectangles
 Taught: left and right rectangles, upper and lower bounds for increasing and decreasing curves, the gap h|f(b) - f(a)|; unit rectangles giving bounds for sums (1/r, sqrt r, 1/r^2, e^(-r), ln r with ln(n!)), matching the limits of sum and integral, counting rectangles; how many terms for a given size; the limit of (1/n) sum f(r/n) as an integral, rewriting sums such as 1/(n + r); the proof that the two sums squeeze the integral; bounding a tail.
 Assumed: "monotonic"; the notation H_n for the sum of 1/r (first used before it is defined); that a bounded sum of positive terms converges.
+
+## math.fm.arclength
+Taught: arc length as the limit of chords (delta s^2 = delta x^2 + delta y^2); the four formulae (y(x), x(y), parametric, polar r^2 + (dr/d theta)^2) with proofs, the speed reading of the parametric form; spotting a perfect square under the root (1 + sinh^2 = cosh^2, sin^2 + cos^2 = 1, 1 - cos t = 2 sin^2 (t/2)); the root of a square is a modulus and the sign must be justified; checking a length against the chord; surface area 2 pi integral of (distance from the axis) ds about either axis, tested on a sphere and a cone; polar surfaces are not examined.
+Assumed: "p" in p/2 - 1/(2p) as a placeholder expression; the integral of sec x (used in a Try answer); the idea of r d theta as the arc of a small circle (quiz explanation only).
+
+## math.fm.complex
+Taught: de Moivre's theorem for every integer (induction proof for positive n, reciprocal for negative n), principal argument, multiplying by z as scaling and rotation; one value of a rational power; powers of a complex number by modulus and argument with the quadrant check; cos n theta, sin n theta and tan n theta from the real and imaginary parts of (c + is)^n; z^n + z^-n = 2 cos n theta and z^n - z^-n = 2i sin n theta; powers of sin and cos as multiple angles and their integrals; exact values from a multiple-angle identity with sum and product of roots.
+Assumed: "modulo" in 15n = 180 (mod 360); why only three angles in 0 to pi solve cos 3 theta = 1/2; tan 15 degrees = 2 - sqrt3; the mean value of a function over a period.
+
+## math.fm.complex2
+Taught: nth roots of unity (2 pi k, n distinct roots, regular polygon), omega and its powers, the sum is zero (geometric series), cube roots of unity identities; solving z^n = w with n consecutive k; rotating one root by omega, polygons about any centre (side 2R sin(pi/n), area n/2 R^2 sin(2 pi/n)); factorising z^n - 1 into real quadratics z^2 - 2 cos(alpha) z + 1, exact cos(2 pi/5); equations such as (z + 1)^n = z^n by u = (z + 1)/z; the C + iS method with geometric and binomial series, the half-angle step e^(i alpha) -+ 1, infinite series with |ratio| < 1.
+Assumed: the chord formula |e^(i alpha) - 1| = 2 sin(alpha/2) (used before the section that shows it); omega as the frequency in the wave example (clash with the root of unity); complex roots of a real polynomial come in conjugate pairs.
+
+## math.fm.systems
+Taught: three equations as Ax = b and back; each equation is a plane with normal a row of A; det not 0 gives x = A^-1 b and a point; singular matrix: consistent or inconsistent, the row relation row 3 = p row 1 + q row 2 tested on the constants; sheaf, triangular prism, two parallel planes and a third, three parallel planes, coincident planes; one free parameter and a vector equation of the line of solutions; a letter k in the matrix or the right-hand side; Ax = 0 (non-zero solutions iff det = 0); planes given as r.n = p.
+Assumed: scalar triple product and parallelepiped (used in the reason for det not 0); the count of "five pictures" against the four drawn and the seven in the table; why a direction parallel to all three planes exists when det = 0.
+
+## math.fm.matrices2
+Taught: eigenvector and eigenvalue (Ae = lambda e, e not zero, any multiple works), characteristic equation det(A - lambda I) = 0, trace and determinant checks (2 by 2 and 3 by 3 with the sum of minors), eigenvectors from (A - lambda I) e = 0 and by the vector product of two rows; eigenvalues of A^n, kA, A + kI, A^-1 and polynomials in A with proofs (induction); A = QDQ^-1, A^n = QD^n Q^-1, order of columns and diagonal; Cayley-Hamilton (2 by 2 proof) for inverses and powers; 9231 uses real distinct eigenvalues only.
+Assumed: complex eigenvalues of a rotation (named in the widget text); the auxiliary equation of a recurrence relation (used in an Exam practice hint); the theory behind Q having an inverse for distinct eigenvalues (stretch only).
+
+## math.fm.de
+Taught: first order linear equation dy/dx + Py = Q, integrating factor e^(int P dx), the five steps (divide first, no constant in int P, +c at the integration step), proof; equations already d/dx(product); fitting an initial condition to the whole solution; y = ux for homogeneous equations; z = 1/y (and z = y^-2) to reach a linear equation; mixing tanks, cooling, circuits, harvesting; transient and steady part; choosing a method.
+Assumed: "slope field" and how to read it (the widget text); the meaning of a transient before it is named in the cooling example.
+
+## math.fm.de2
+Taught: second order linear equations with constant coefficients; CF + PI and why it gives every solution; the auxiliary equation and its three cases (distinct real, repeated, complex) with proof for xe^(mx) and for the complex case; fitting y and y' at a point; trial forms for the PI (polynomial, e^(bx), cos and sin together) and multiplying by x when the form is in the CF; given trial forms and resonance; first order equations by CF + PI; x = e^t giving x dy/dx = dy/dt and x^2 d2y/dx2 = d2y/dt2 - dy/dt; damping (light, critical, heavy) and transient plus steady response.
+Assumed: the dot notation for time derivatives and the letters m and c of the spring equation reused (m for the root, c for the constant); a polynomial trial form that clashes with the CF when 0 is a root of the auxiliary equation.
+
+## math.fm.projectiles
+Taught: the projectile model (particle, weight only, no air resistance, flat ground, g = 10); horizontal steady, vertical a = -g; components, speed and direction at a time; H, T, R on level ground and the complementary angles; speed at height v^2 = V^2 - 2gy; launching from a height, choosing the root, roofs and horizontal launches; the Cartesian trajectory (derived, on MF19) as a quadratic in tan theta, two angles, an unknown speed or angle; a plane struck by the particle (velocity at 90 - alpha to the horizontal when it hits at right angles); assumptions and their effects.
+Assumed: why a perpendicular to a rising plane is 90 - alpha below the horizontal (no figure), and the equation of a plane sloping down (used in Exam practice); what "clears the wall" means as a condition on the height at x = 30.
