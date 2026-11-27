@@ -17,7 +17,7 @@ interactive widgets, paper guides and full mock papers, plus a study roadmap and
 
 | Course | Syllabus | State |
 |---|---|---|
-| Mathematics | Cambridge International 9709 | complete (Further Mathematics planned) |
+| Mathematics | Cambridge International 9709 and Further Mathematics 9231 | complete |
 | Physics | Cambridge International 9702 | complete |
 | Chemistry | Cambridge International 9701 | complete |
 | Biology | Cambridge International 9700 | complete |

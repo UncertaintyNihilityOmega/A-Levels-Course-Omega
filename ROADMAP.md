@@ -3,15 +3,8 @@
 ## Now
 - Automatic runs on: app scheduled task `zta-agent-run` (every 2 hours, Auto mode; prompt in
   `~/.claude/scheduled-tasks/zta-agent-run/SKILL.md`), fresh Organizer session per run, lock `.run/run.lock`.
-- Queue item 10, Further Mathematics (math.fm, 50 chapters, P19–P36, plan in courses/math/FURTHER.md): LEAD done
-  Nov 20 (gold math.fm.roots); P19–P36 written and reviewed. June 2026 9231/31 and 9231/41 papers and mark schemes (user download) in courses/math/scratch/papers/ with .txt
-  copies; recorded in courses/math/FACTS.md.
-  Run of Nov 26 afternoon (preview server allowed by the user): P34 (guides) and P36 (applied mocks) written, so all
-  36 packages are written (math 112/112 chapters). REVIEW P32–P36 done (3 FIX items; 9231 test marks now follow the
-  June 2025 9231/41 scheme) and its FIX closed. READER batches 1–2 (math.fm.overview to math.fm.rectangles,
-  16 chapters) read; their 39 items fixed. Next: READER batch 3 from math.fm.arclength (30 fm chapters left), FIX
-  every ~25 items, REVIEW FINAL, assembly. Writers: never run old scripts in courses/math/scratch/.
-  Waiting for the reset at 18:40 UTC Nov 26 (5-hour window 72%, weekly 33%).
+- Next: queue item 11, Engineering (`eng`, 0/24 chapters): Specialist LEAD first. Waiting for the reset at
+  11:00 UTC Nov 27 (5-hour window 72%, weekly 43%; the gate sum for a LEAD would be 90).
 - Usage gate: weekly limit 95% for every launch (AGENT-RUN.md "Usage gate").
 - Name: "Zero to A* Ω" (titles, installed app, shared links). Top bar and Home heading: the hand-drawn wordmark "Log end"
   (`engine/wordmark.py --shell` writes it into shell.html; colours in style.css `.wm-*`).
@@ -42,9 +35,6 @@
   as full courses). GitHub Releases start at v1 and go up in whole numbers.
 
 ## Queue
-10. **Further Mathematics** (`math.fm.*`, an extension of the Maths course): LEAD for the extension
-   (`courses/math/FURTHER.md`) → packages P19+ → reviews → READER for the new chapters → FIX → REVIEW FINAL.
-   Before its LEAD, set math STATUS.md `FINAL` back to `open` and rewrite courses/math/COURSE.md as rules (30 KB).
 11. **Engineering** (`eng`).
 12. **Business** (`bus`), then **Economics** (`econ`), then **Accounting** (`acc`): shared-topic owners in their COURSE.md
    (Business pages that use an Economics widget or link show a placeholder or plain text until Economics is written).
@@ -78,6 +68,9 @@ Since 0.6.0 (Nov 13 2026). Earlier work: CHANGELOG.md; what readers see of the i
   `tools.l.cs` and a Computer Science section on the resources page. Left as they are: cs.assembly's 16-bit
   instruction format (6 + 10) is the chapter's own (real papers give no bit layout; the chapter says so);
   `ico.org.uk/for-organisations/` shows a bot check to scripts but is live.
+- 10 Further Mathematics, 9231 (Nov 27 2026): 50 chapters inside the Maths course (math 112 chapters), four mocks
+  matching the June 2026 papers; 154 review and reader items closed; its links are on `tools.l.math` (linkSheets
+  takes the whole math course). The June 2026 9231 papers stay in courses/math/scratch/papers/ (git-ignored).
 
 ## For the user
 Things only you can do. None of them stops the automatic runs.
