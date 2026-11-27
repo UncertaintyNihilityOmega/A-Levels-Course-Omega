@@ -277,4 +277,19 @@ for (m1, m2) in [(1, 4), (3, 7), (2, 5)]:
 v1, v2 = hit(2, 6, 1, 0, 0)
 eq("q5", v1, 4)
 eq("q3", 4 * 0.25, 1)
+# ---- proof of KE lost: the decomposition about the mass-weighted mean velocity V
+for (m1, m2, u1, u2, e) in [(2, 6, 5, -1, 0.5), (1, 3, 8, 0, 0.6), (4, 1, 3, 7, 0.9)]:
+    M = m1 + m2
+    V = (m1 * u1 + m2 * u2) / M
+    a1, a2 = hit(m1, u1, m2, u2, e)
+    eq("proof V same after", (m1 * a1 + m2 * a2) / M, V)
+    eq("proof identity", 0.5 * m1 * u1 ** 2 + 0.5 * m2 * u2 ** 2,
+       0.5 * M * V ** 2 + 0.5 * m1 * (u1 - V) ** 2 + 0.5 * m2 * (u2 - V) ** 2)
+    w = u1 - u2
+    eq("proof u1-V", u1 - V, m2 * w / M); eq("proof u2-V", u2 - V, -m1 * w / M)
+    eq("proof v1-V", a1 - V, -e * m2 * w / M); eq("proof v2-V", a2 - V, e * m1 * w / M)
+    eq("proof KE lost", ke((m1, u1), (m2, u2)) - ke((m1, a1), (m2, a2)), m1 * m2 / (2 * M) * (1 - e * e) * w * w)
+# up and back takes 2w/g
+w0 = sqrt(40) * 0.6
+eq("up and back", 2 * w0 / G, 1.2 * sqrt(0.4))
 print("ok")

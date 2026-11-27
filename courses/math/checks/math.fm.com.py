@@ -263,7 +263,7 @@ eq("q6 sample", sy, 49 / 12, 0.02)
 yb = 30 / (pi + 2)
 eq("q7 y", sf(yb, 3), 5.83); eq("q7 form", 450 / (15 * pi + 30), yb)
 eq("q7 arc", sf(30 / pi, 4), 9.549, 1e-3)
-eq("q7 phi", sf(degrees(atan(yb / 15)), 3), 21.3); eq("q7 tan", sf(yb / 15, 4), 0.3889, 1e-4)
+eq("q7 phi", sf(degrees(atan(yb / 15)), 3), 21.3); eq("q7 horizontal", sf(90 - degrees(atan(yb / 15)), 3), 68.7); eq("q7 horizontal2", sf(degrees(atan(15 / yb)), 3), 68.7); eq("q7 tan", sf(yb / 15, 4), 0.3889, 1e-4)
 eq("q7 length", 15 * pi + 30, 15 * pi + 30)
 
 # stretch

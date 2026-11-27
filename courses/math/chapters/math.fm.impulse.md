@@ -147,13 +147,11 @@ The lost energy has a neat general formula, which you can use to check a calcula
 
 :::proof The kinetic energy lost in a direct impact
 Let the spheres have masses \(m_1, m_2\), velocities \(u_1, u_2\) before and \(v_1, v_2\) after. Write \(w = u_1 - u_2\) for the velocity of approach and \(M = m_1 + m_2\).
-1. From momentum and the law, the velocity of the centre of mass is unchanged: \(V = \dfrac{m_1u_1 + m_2u_2}{M} = \dfrac{m_1v_1 + m_2v_2}{M}\).
-2. Relative to the centre of mass, the speeds before are \(u_1 - V = \dfrac{m_2w}{M}\) and \(u_2 - V = -\dfrac{m_1w}{M}\).
-3. After the impact the relative velocity is \(e\) times as large and reversed, so \(v_1 - V = -\dfrac{em_2w}{M}\) and \(v_2 - V = \dfrac{em_1w}{M}\).
-4. The kinetic energy is \(\tfrac12 MV^2\) plus the energy relative to the centre of mass. The first part is the same before and after.
-5. Relative energy before: \(\tfrac12 m_1\dfrac{m_2^2w^2}{M^2} + \tfrac12 m_2\dfrac{m_1^2w^2}{M^2} = \tfrac12\dfrac{m_1m_2}{M}w^2\).
-6. After, every speed is multiplied by \(e\), so the relative energy is \(e^2\) times as large.
-7. Energy lost \(= \tfrac12\dfrac{m_1m_2}{m_1 + m_2}(1 - e^2)(u_1 - u_2)^2\).
+1. Define \(V = \dfrac{m_1u_1 + m_2u_2}{M}\), the mass-weighted average of the two velocities. (It is the velocity of the centre of mass, the point whose position you found in [Centres of mass](#math.fm.com) in the same way.) Momentum says \(m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2\), so \(V = \dfrac{m_1v_1 + m_2v_2}{M}\) as well: \(V\) is the same before and after.
+2. For any two velocities, \(\tfrac12m_1u_1^2 + \tfrac12m_2u_2^2 = \tfrac12MV^2 + \tfrac12m_1(u_1 - V)^2 + \tfrac12m_2(u_2 - V)^2\). (Expand the right side: the cross terms give \(-V(m_1u_1 + m_2u_2) = -MV^2\), which with \(+\tfrac12MV^2\) twice leaves exactly the left side.) The same holds after the impact with \(v_1, v_2\). So the kinetic energy is \(\tfrac12MV^2\) plus the energy "relative to \(V\)", and the first part is the same before and after.
+3. Before the impact, \(u_1 - V = \dfrac{m_2w}{M}\) and \(u_2 - V = -\dfrac{m_1w}{M}\). The relative energy before is \(\tfrac12 m_1\dfrac{m_2^2w^2}{M^2} + \tfrac12 m_2\dfrac{m_1^2w^2}{M^2} = \tfrac12\dfrac{m_1m_2}{M}w^2\).
+4. After the impact the velocity of separation is \(e\) times the velocity of approach, so \(v_1 - V = -\dfrac{em_2w}{M}\) and \(v_2 - V = \dfrac{em_1w}{M}\): every term of step 3 is multiplied by \(e\), so the relative energy is \(e^2\) times as large.
+5. Energy lost \(= \tfrac12\dfrac{m_1m_2}{m_1 + m_2}(1 - e^2)(u_1 - u_2)^2\).
 :::
 
 :::key Kinetic energy lost
@@ -185,7 +183,7 @@ The impulse of \(A\) on \(B\) equals the change of momentum of \(B\), \(3m(v_B -
 A smooth wall is a very large mass that does not move: it is like \(m_2 \to \infty\) with \(u_2 = v_2 = 0\). Momentum is **not** conserved, because the wall (and the ground it is fixed to) takes some. But Newton's experimental law still holds, and it simplifies.
 
 :::key Direct impact with a fixed surface
-A sphere hits a fixed smooth surface directly with speed \(u\). After the impact it moves in the opposite direction with speed
+In this box \(u\) and \(v\) are **speeds** (both positive), not signed velocities. A sphere hits a fixed smooth surface directly with speed \(u\). After the impact it moves in the opposite direction with speed
 \[v = eu\]
 The impulse of the wall on the sphere is \(m(v + u) = m(1 + e)u\), along the normal and away from the wall. Kinetic energy lost is \(\tfrac12m(1 - e^2)u^2\).
 :::
@@ -220,7 +218,7 @@ By the same argument each height is \(e^2 = 0.36\) times the one before, so \(h_
 The bracket is a geometric series with first term 0.72 and ratio 0.36:
 \[D = 2 + \frac{2 \times 0.72}{1 - 0.36} = 2 + 2.25 = 4.25\ \text{m}\] [M1 A1]
 **(c)** The first fall takes \(t_0 = \sqrt{\dfrac{2 \times 2}{10}} = \sqrt{0.4}\) s. [B1]
-After the first impact the ball leaves with speed \(0.6\sqrt{40}\), so it takes \(\dfrac{2 \times 0.6\sqrt{40}}{10} = 1.2t_0\) s to go up and come down. Every later up-and-down takes 0.6 times as long as the one before, so the times form a geometric sequence with ratio 0.6:
+A ball thrown up with speed \(w\) takes \(\dfrac{w}{g}\) to stop rising (its speed falls by \(g\) each second) and the same time to fall back, so **up and back takes \(\dfrac{2w}{g}\)**. After the first impact the ball leaves with speed \(0.6\sqrt{40}\), so it takes \(\dfrac{2 \times 0.6\sqrt{40}}{10} = 1.2t_0\) s to go up and come down. Every later up-and-down takes 0.6 times as long as the one before, so the times form a geometric sequence with ratio 0.6:
 \[T = t_0 + \frac{1.2t_0}{1 - 0.6}\] [M1]
 \[T = t_0(1 + 3) = 4\sqrt{0.4} = 2.53\ \text{s}\] [A1]
 :::

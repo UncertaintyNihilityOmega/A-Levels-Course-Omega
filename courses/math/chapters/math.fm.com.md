@@ -188,7 +188,7 @@ For a shape that is not symmetric both coordinates need working, and the figure 
 :::
 
 :::eg (Exam style) A uniform lamina \(ABCDEF\) is in the shape of an L, with \(A = (0, 0)\), \(B = (8, 0)\), \(C = (8, 3)\), \(D = (3, 3)\), \(E = (3, 7)\), \(F = (0, 7)\), lengths in centimetres (the figure above). Find the distance of the centre of mass from (a) \(AF\), (b) \(AB\).
-Split along the dashed line into rectangle \(ABCX\) (\(8 \times 3\)) and rectangle \(XDEF\) (\(3 \times 4\)), where \(X = (0, 3)\). Areas are proportional to masses.
+Split along the dashed line (from \((0, 3)\) to \(D\)) into the lower rectangle (\(8 \times 3\)) and the upper rectangle (\(3 \times 4\)), whose corners are \((0, 3)\), \(D\), \(E\), \(F\). Areas are proportional to masses.
 \[\text{areas: } 24 \text{ and } 12, \text{ total } 36\] [B1]
 The centres of the rectangles are at \((4, 1.5)\) and \((1.5, 5)\). [B1]
 
@@ -385,7 +385,7 @@ Q: A uniform solid cone has height \(20\) cm. How far is its centre of mass from
 A: From the vertex \(\tfrac34 \times 20 = 15\) cm; from the base \(5\) cm.
 Q: A uniform circular arc of radius \(9\) cm subtends an angle of \(120^\circ\) at the centre. Find the distance of its centre of mass from the centre of the circle.
 A: \(2\alpha = 120^\circ = \tfrac{2\pi}{3}\), so \(\alpha = \tfrac\pi3\). Distance \(\dfrac{r\sin\alpha}{\alpha} = \dfrac{9 \times 0.8660}{1.0472} = 7.44\) cm.
-Q: A uniform lamina is a rectangle \(6 \times 4\) with a smaller rectangle \(2 \times 2\) removed from one corner. Find the centre of mass if the large rectangle has corners \((0,0)\) and \((6,4)\) and the removed one is \([4,6] \times [2,4]\).
+Q: A uniform lamina is a rectangle \(6 \times 4\) with a smaller rectangle \(2 \times 2\) removed from one corner. Find the centre of mass if the large rectangle has corners \((0,0)\) and \((6,4)\) and the removed one has corners \((4, 2)\), \((6, 2)\), \((6, 4)\), \((4, 4)\).
 A: Areas \(24\) and \(-4\); centres \((3, 2)\) and \((5, 3)\). \(\bar x = \dfrac{72 - 20}{20} = 2.6\), \(\bar y = \dfrac{48 - 12}{20} = 1.8\).
 Q: A uniform lamina is a rectangle \(6\) cm wide and \(4\) cm tall with an isosceles triangle of base \(6\) cm and height \(3\) cm on one \(6\) cm side. Find the distance of the centre of mass from the opposite side.
 A: Rectangle: area \(24\) at \(2\). Triangle: area \(9\) at \(4 + 1 = 5\). \(\bar y = \dfrac{48 + 45}{33} = 2.82\) cm.
@@ -425,13 +425,14 @@ By symmetry \(G\) is \(3\) cm from \(AD\). [B1]
 (c) The shape is symmetric about the axis through the midpoints of \(AB\) and \(CD\), so the angle is again \(36.3^\circ\). [B1]
 Q: [7 marks] (#math.p1.circular) ★★★ A uniform wire of length \(15\pi + 30\) cm is bent into a semicircular arc of radius \(15\) cm, with a straight piece of wire joining its ends along the diameter \(AB\). The framework hangs freely from \(A\). Find the angle that \(AB\) makes with the horizontal.
 H: The arc has length \(15\pi\) and the diameter \(30\). Use the arc formula with \(\alpha = \tfrac\pi2\).
-H: \(G\) is vertically below \(A\): \(AG\) is vertical, and \(AB\) makes an angle \(\varphi\) with the horizontal with \(\tan\varphi = \dfrac{\bar y}{15}\), where \(\bar y\) is the distance of \(G\) from \(AB\).
+H: \(G\) is vertically below \(A\), so the line \(AG\) is the vertical. Let \(\varphi\) be the angle between \(AB\) and \(AG\) (the vertical): \(\tan\varphi = \dfrac{\bar y}{15}\), where \(\bar y\) is the distance of \(G\) from \(AB\). The angle with the horizontal is \(90^\circ - \varphi\).
 A: Lengths: arc \(15\pi\), diameter \(30\). [B1]
 The arc's centre of mass is \(\dfrac{2r}{\pi} = \dfrac{30}{\pi}\) from the diameter. [B1]
 \[(15\pi + 30)\bar y = 15\pi \times \frac{30}{\pi} + 30 \times 0 = 450\] [M1]
 \[\bar y = \frac{450}{15\pi + 30} = \frac{30}{\pi + 2} = 5.83\ \text{cm}\] [A1]
-\(G\) is vertically below \(A\) and is \(15\) cm along \(AB\) from \(A\) (by symmetry) and \(\bar y\) from it. [B1]
-\(\tan\varphi = \dfrac{5.834}{15}\) [M1] so \(\varphi = 21.3^\circ\). [A1]
+\(G\) is vertically below \(A\), so \(AG\) is vertical. By symmetry \(G\) is \(15\) cm along \(AB\) from \(A\) (level with the centre of the diameter) and \(\bar y\) from \(AB\). [B1]
+The angle \(\varphi\) between \(AB\) and the vertical \(AG\) has \(\tan\varphi = \dfrac{5.834}{15}\) [M1], so \(\varphi = 21.3^\circ\).
+\(AB\) makes \(90^\circ - 21.3^\circ = 68.7^\circ\) with the horizontal. [A1]
 :::
 
 :::try Stretch for A*

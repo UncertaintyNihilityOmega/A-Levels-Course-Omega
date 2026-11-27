@@ -28,8 +28,8 @@ A particle is in equilibrium when the forces on it have no resultant. A body of 
 A body whose shape does not change under the forces on it: its particles stay the same distance apart. All the bodies in this chapter (rods, ladders, blocks, laminas) are modelled as rigid.
 :::
 
-:::key Equilibrium of a rigid body under coplanar forces
-A rigid body acted on by coplanar forces is in equilibrium if and only if
+:::key Equilibrium of a rigid body under coplanar forces (all in one plane)
+A rigid body acted on by coplanar forces (forces all in one plane) is in equilibrium if and only if
 1. the **vector sum of the forces is zero**: resolve in two perpendicular directions and the sum in each is \(0\);
 2. the **sum of the moments of the forces about any point is zero**.
 The converse is true too: if both conditions hold, the body stays at rest (or moves with constant velocity). There are three independent equations, so a problem can have **three unknowns**. The moment condition holds about *every* point, so you may choose the most convenient one.
@@ -198,15 +198,38 @@ With \(\mu_1 = 0.5\), \(\mu_2 = 0.25\): \(\tan\theta = \dfrac{1 - 0.125}{1} = 0.
 
 When a rod rests on a smooth peg or edge, or against a smooth surface, the reaction is **perpendicular to the rod** at the point of contact (the rod's side is the surface it touches). This is the same rule as for any smooth contact, but a student who draws the reaction vertically instead of perpendicular to the rod loses everything after it.
 
+:::html
+<figure class="fig small"><svg viewBox="20 10 240 240" role="img" aria-label="A uniform rod AB rises to the right at 60 degrees from rough horizontal ground, with its lower end A on the ground. A smooth peg C touches the underside of the rod. At A the ground gives a normal reaction R upwards and a friction force F horizontally to the right. At C the peg gives a reaction S perpendicular to the rod, pointing up and to the left. The weight 100 N acts downwards at the midpoint G.">
+  <path class="ln thick" d="M30 225H250"/>
+  <path class="ln thick" d="M60 225L168 37.9"/>
+  <circle class="f1 s-acc sw2" cx="105" cy="155" r="4"/>
+  <path class="c1" d="M60 225V185" marker-end="url(#ah-math)"/>
+  <path class="c1" d="M60 225H94" marker-end="url(#ah-math)"/>
+  <path class="c1" d="M101.6 153L66.9 133" marker-end="url(#ah-math)"/>
+  <path class="ln" d="M114 131.5V185.5" marker-end="url(#ah)"/>
+  <circle class="fi" cx="114" cy="131.5" r="3.5"/>
+  <path class="ln-m thin" d="M88 225A28 28 0 0 0 74 200.8"/>
+  <text class="tl halo" x="54" y="181" text-anchor="end">R</text>
+  <text class="tl" x="94" y="241">F</text>
+  <text class="tl halo" x="62.9" y="133" text-anchor="end">S</text>
+  <text class="tl" x="120" y="181.5">100 N</text>
+  <text class="tl" x="96" y="215">60°</text>
+  <text class="tl" x="54" y="241" text-anchor="end">A</text>
+  <text class="tl" x="176" y="41.9">B</text>
+  <text class="tl" x="86" y="166" text-anchor="end">C</text>
+  <text class="tl" x="124" y="125.5">G</text>
+</svg><figcaption>The rod \(AB\) rests with \(A\) on rough ground and touches the smooth peg \(C\) from below. The peg's reaction \(S\) is perpendicular to the rod, up and to the left. The ground gives \(R\) upwards and friction \(F\) to the right. The weight acts at the midpoint \(G\). Not to scale.</figcaption></figure>
+:::
+
 :::eg A uniform rod \(AB\) of length \(6\) m and weight \(100\) N rests with \(A\) on rough horizontal ground and touches a smooth horizontal peg \(C\), \(2\) m above the ground. The rod makes \(60^\circ\) with the horizontal. Find the least coefficient of friction between the rod and the ground for the rod to stay at rest.
 The peg is smooth, so the reaction \(S\) at \(C\) is perpendicular to the rod. The distance \(AC = \dfrac{2}{\sin 60^\circ} = 2.309\) m.
 
 Moments about \(A\) (the unknown ground forces have no moment):
 \[S \times 2.309 = 100 \times 3\cos 60^\circ\]
 \[S = 64.95\ \text{N}\]
-The reaction \(S\) is at \(60^\circ\) to the vertical, perpendicular to the rod: it has horizontal component \(S\sin 60^\circ\) and vertical component \(S\cos 60^\circ\).
+The rod slopes up to the right, so \(S\) pushes **up and to the left**, perpendicular to the rod (see the figure). It is at \(60^\circ\) to the vertical, so it has horizontal component \(S\sin 60^\circ\) (to the left) and vertical component \(S\cos 60^\circ\) (upwards). The leftward push would drive the foot \(A\) to the left, so friction \(F\) at \(A\) acts **to the right**, and the ground reaction \(R\) acts upwards.
 
-Horizontally: \(F = S\sin 60^\circ = 56.25\) N. Vertically: \(R + S\cos 60^\circ = 100\), so \(R = 100 - 32.48 = 67.52\) N.
+Horizontally, \(F\) balances the leftward part of \(S\): \(F = S\sin 60^\circ = 56.25\) N. Vertically: \(R + S\cos 60^\circ = 100\), so \(R = 100 - 32.48 = 67.52\) N.
 \[\mu \ge \frac{F}{R} = \frac{56.25}{67.52} = 0.833\]
 The least coefficient of friction is \(0.833\).
 :::
@@ -270,12 +293,33 @@ Place a solid on a rough plane inclined at angle \(\alpha\) and increase \(\alph
 - As \(\alpha\) increases from \(0\), the **smaller** critical angle is reached first and decides what happens. Always compare \(\tan^{-1}\mu\) with \(\tan^{-1}\dfrac{a}{h}\).
 :::
 
+:::html
+<figure class="fig small"><svg viewBox="20 15 250 290" role="img" aria-label="A solid on a plane that rises to the right at angle alpha to the horizontal. O is the lower left edge of its base. G is the centre of mass, at distance a up the slope from O along the base and at height h above the base, measured perpendicular to the plane. At the point of toppling the vertical line through G, along which the weight W acts, passes through O.">
+  <path class="ln thick" d="M60 290.4L260 175"/>
+  <polygon class="fm s-acc sw2" points="130,250 223.5,196 130,34 36.5,88"/>
+  <path class="ln-m thin dash" d="M130 142V250"/>
+  <path class="ln-m thin dash" d="M176.8 223L130 142"/>
+  <path class="ln-m thin dash" d="M130 250H90"/>
+  <path class="ln-m thin" d="M134 257L180.8 230"/>
+  <path class="ln" d="M130 142V190" marker-end="url(#ah)"/>
+  <path class="ln-m thin" d="M100 250A30 30 0 0 0 104 265"/>
+  <circle class="fi" cx="130" cy="142" r="3.5"/>
+  <circle class="fi" cx="130" cy="250" r="3"/>
+  <text class="tl" x="138" y="136">G</text>
+  <text class="tl halo" x="124" y="172" text-anchor="end">W</text>
+  <text class="tl" x="162" y="184">h</text>
+  <text class="tl" x="162" y="252">a</text>
+  <text class="tl" x="136" y="270">O</text>
+  <text class="tl" x="84" y="266">α</text>
+</svg><figcaption>A solid on a plane at angle \(\alpha\). \(O\) is the lower edge of the base, \(G\) is \(a\) from \(O\) along the slope and \(h\) above the plane. At the point of toppling the weight, which acts vertically through \(G\), passes through \(O\). Not to scale.</figcaption></figure>
+:::
+
 :::proof Why the critical angle for toppling is \(\tan^{-1}(a/h)\) (not examined)
 At the point of toppling the plane exerts its whole reaction (normal \(R\) and friction \(F\)) at the lower edge of the base, so these forces have no moment about that edge. The only other force is the weight \(W\) at \(G\), so its moment about the edge must also be zero: its line of action passes through the edge.
 
-Let \(O\) be the lower edge of the base. The centre of mass \(G\) is at distance \(a\) from \(O\) measured up the slope and at height \(h\) above the plane. Split the weight \(W\) into a component \(W\cos\alpha\) into the plane and a component \(W\sin\alpha\) down the slope.
+The plane rises to the right in the figure, so \(O\) is the lower edge of the base, on the left. The centre of mass \(G\) is at distance \(a\) from \(O\) measured up the slope and at height \(h\) above the plane (\(h\) is measured perpendicular to the plane). Split the weight \(W\) into a component \(W\cos\alpha\) into the plane and a component \(W\sin\alpha\) down the slope.
 
-The component into the plane acts at distance \(a\) along the slope from \(O\), so it turns the solid back against the plane, with moment \(W\cos\alpha \times a\). The component down the slope acts at height \(h\) above \(O\)'s line, so it turns the solid over the edge, with moment \(W\sin\alpha \times h\). The solid is about to topple when the two are equal:
+The component into the plane acts at distance \(a\) along the slope from \(O\), so it turns the solid back against the plane, with moment \(W\cos\alpha \times a\). The component down the slope acts at height \(h\) above the plane, so it turns the solid over the edge \(O\), with moment \(W\sin\alpha \times h\). The solid is about to topple when the two are equal:
 \[W\cos\alpha \times a = W\sin\alpha \times h \quad\Rightarrow\quad \tan\alpha = \frac ah\]
 For a larger angle the turning moment over the edge wins, so it topples.
 :::
@@ -331,7 +375,7 @@ Line 1 is correct. [B1] The student takes moments about the right point, with th
 
 Correct line 2: \(R_2 \times 5\sin 70^\circ = 200 \times 2.5\cos 70^\circ\), so \(R_2 = \dfrac{100}{\tan 70^\circ} = 36.4\) N.
 
-**Check**: this ladder is steep, so the wall only needs to push gently: \(36.4\) N is far less than the \(100\) N the slip would have given. ✓
+**Check**: this ladder is steep, so the wall only needs to push gently: \(36.4\) N is far less than the \(100\) N the student found. ✓
 :::
 
 :::try Start easy, finish at exam standard
@@ -461,7 +505,7 @@ Moments about \(A\): \(R \times 2a\sin\theta = W \times a\cos\theta\) [M1 A1], s
 :::
 
 :::recap
-- A rigid body is in equilibrium iff the vector sum of the forces is zero and the sum of moments about any point is zero.
+- A rigid body is in equilibrium if and only if the vector sum of the forces is zero and the sum of moments about any point is zero.
 - Smooth contact: one reaction, perpendicular to the surface (perpendicular to the rod at a peg). Rough contact: \(R\) and \(F\), \(F \le \mu R\), with \(F = \mu R\) at limiting equilibrium. Hinge: two components.
 - Resolve twice, take moments once about the point where most unknowns act; use perpendicular distances (horizontal for vertical forces, vertical for horizontal forces).
 - Ladder at angle \(\theta\), smooth wall: \(R_2 = \tfrac12W\cot\theta\) for a uniform ladder, and friction at the foot is \(R_2\).

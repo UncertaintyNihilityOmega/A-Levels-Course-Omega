@@ -47,8 +47,8 @@ The same equation holds for \(\theta > 90^\circ\) with \(\cos\theta\) negative: 
 
 :::key The radial equation (towards the centre)
 \[T - mg\cos\theta = \frac{mv^2}{r}\]
-With the energy equation, eliminate \(v^2\):
-\[T = m\left(\frac{u^2}{r} - 2g + 3g\cos\theta\right)\]
+With the energy equation, eliminate \(v^2\). The radial equation gives \(T = mg\cos\theta + \dfrac{mv^2}{r}\), and the energy equation gives \(v^2 = u^2 - 2gr(1 - \cos\theta)\), so
+\[T = mg\cos\theta + \frac{m}{r}\left(u^2 - 2gr + 2gr\cos\theta\right) = m\left(\frac{u^2}{r} - 2g + 3g\cos\theta\right)\]
 At the lowest point (\(\cos\theta = 1\)): \(T = m\left(\dfrac{u^2}{r} + g\right)\). At the highest point (\(\cos\theta = -1\)): \(T = m\left(\dfrac{u^2}{r} - 5g\right)\). For a particle on the inside of a sphere or tube, write \(R\) for \(T\): the same equations hold.
 :::
 
@@ -134,8 +134,31 @@ So \(\theta = 134.0^\circ\) (3 s.f.), and \(v^2 = 12 \times \tfrac{25}{36} = 8.3
 
 After the string goes slack, the only force is gravity, so the particle is a projectile with the velocity it had at the slack point, directed along the tangent to the circle. This is the link with [Projectiles](#math.fm.projectiles).
 
+To use the projectile formulas you need the angle of the velocity. At the slack point \(P\) above the level of \(O\), let \(\varphi\) be the angle between the radius \(OP\) and the **upward** vertical (\(\varphi = 180^\circ - \theta\)). The tangent is perpendicular to the radius, and the horizontal is perpendicular to the vertical. Turning both the radius and the vertical through \(90^\circ\) keeps the angle between them, so **the tangent makes the same angle \(\varphi\) with the horizontal**. The vertical component of the velocity is then \(v\sin\varphi\) and the horizontal one is \(v\cos\varphi\).
+
+:::html
+<figure class="fig small"><svg viewBox="60 10 200 190" role="img" aria-label="A vertical circle with centre O and a point P above the level of O where the string goes slack. The radius OP makes an angle phi with the upward vertical through O. At P the velocity v is along the tangent, which is perpendicular to the radius, pointing up and to the left. A dashed horizontal line through P shows that the tangent makes the same angle phi with the horizontal.">
+  <path class="ln-m thin dash" d="M80 110A80 80 0 1 0 240 110A80 80 0 1 0 80 110Z"/>
+  <path class="ln-m thin dash" d="M160 190V24"/>
+  <path class="ln-m thin dash" d="M247 54.4H146"/>
+  <path class="c3" d="M160 110L217.5 54.4"/>
+  <path class="c4 thick" d="M217.5 54.4L182.8 18.5" marker-end="url(#ah)"/>
+  <path class="ln-m thin dash" d="M217.5 54.4L241.9 79.6"/>
+  <path class="ln thin" d="M210.3 61.4L203.4 54.2L210.5 47.2"/>
+  <path class="ln thin" d="M160 82A28 28 0 0 1 180.1 90.5"/>
+  <path class="ln thin" d="M193.5 54.4A24 24 0 0 1 200.9 37.2"/>
+  <circle class="f1 s-acc sw2" cx="217.5" cy="54.4" r="5"/>
+  <circle class="f2 s-acc sw2" cx="160" cy="110" r="3"/>
+  <text class="tl" x="152" y="106" text-anchor="end">O</text>
+  <text class="tl" x="224" y="46">P</text>
+  <text class="tl" x="165" y="76">φ</text>
+  <text class="tl halo" x="186" y="50" text-anchor="end">φ</text>
+  <text class="tl" x="190" y="20">v</text>
+</svg><figcaption>The string has just gone slack at \(P\). The radius \(OP\) is \(\varphi\) from the upward vertical, so the velocity \(v\), along the tangent and at right angles to \(OP\), is \(\varphi\) from the horizontal. Not to scale.</figcaption></figure>
+:::
+
 :::eg Continue the previous example. Find the greatest height above the lowest point that the particle reaches. Does it reach the top of the circle?
-At the slack point the radius makes an angle \(\varphi\) with the **upward** vertical, where \(\cos\varphi = \tfrac{25}{36}\), so \(\sin\varphi = \sqrt{1 - \tfrac{625}{1296}} = 0.7195\). The tangent makes the same angle \(\varphi\) with the horizontal, so the vertical component of the velocity is
+At the slack point the radius makes an angle \(\varphi\) with the **upward** vertical, where \(\cos\varphi = \tfrac{25}{36}\), so \(\sin\varphi = \sqrt{1 - \tfrac{625}{1296}} = 0.7195\). The tangent makes the same angle \(\varphi\) with the horizontal (the figure above), so the vertical component of the velocity is
 \[v\sin\varphi = 2.887 \times 0.7195 = 2.077\ \mathrm{m\,s^{-1}}\]
 The further rise is \(\dfrac{2.077^2}{2 \times 10} = 0.2157\) m. The height of the slack point above the lowest point is \(1.2(1 - \cos\theta) = 1.2\left(1 + \tfrac{25}{36}\right) = 2.033\) m.
 
@@ -153,7 +176,7 @@ The component of the weight along the string, away from \(O\), is \(mg\cos\theta
 **(b)** The string goes slack when \(T = 0\):
 \[1 + 3\cos\theta = 0 \quad\Rightarrow\quad \cos\theta = -\tfrac13\] [M1]
 Then \(v^2 = ag\left(1 - \tfrac23\right) = \tfrac13 ag\). [A1]
-The radius \(OP\) makes an angle \(\varphi\) with the **upward** vertical, where \(\cos\varphi = \tfrac13\) and \(\sin^2\varphi = \tfrac89\). The velocity is along the tangent, at \(\varphi\) to the horizontal, so the vertical component of the velocity satisfies
+The radius \(OP\) makes an angle \(\varphi\) with the **upward** vertical, where \(\cos\varphi = \tfrac13\) and \(\sin^2\varphi = \tfrac89\). The velocity is along the tangent, which is perpendicular to \(OP\), so it is at \(\varphi\) to the horizontal (the figure above), and the vertical component of the velocity satisfies
 \[(v\sin\varphi)^2 = \frac{ag}{3} \times \frac89 = \frac{8ag}{27}\] [M1]
 P then moves freely, and rises a further
 \[\frac{(v\sin\varphi)^2}{2g} = \frac{4a}{27}\] [M1]
@@ -214,7 +237,7 @@ At that point \(\cos\theta = 1 - \dfrac{0.45}{0.5} = 0.1\), so the reaction is \
 \[R + mg\cos\varphi = \frac{mv^2}{r}\] [M1]
 \[R = 0.3\left(\frac{12}{0.8} - 5\right) = 3\ \mathrm{N}\] [A1]
 The reaction decreases as \(P\) rises, and it is still positive at \(B\), so \(P\) stays on the surface all the way. [B1]
-**(c)** At \(B\) the radius makes \(60^\circ\) with the vertical, so the tangent (the direction of motion) makes \(60^\circ\) with the horizontal. The vertical component of the velocity is
+**(c)** At \(B\) the radius makes \(60^\circ\) with the vertical, so the tangent (the direction of motion, perpendicular to the radius) makes \(60^\circ\) with the horizontal, as in the figure for the slack point. The vertical component of the velocity is
 \[v\sin 60^\circ,\quad\text{so}\quad (v\sin 60^\circ)^2 = 12 \times \tfrac34 = 9\] [M1]
 The further rise is \(\dfrac{9}{2 \times 10} = 0.45\) m. [M1]
 Greatest height above \(A\): \(1.2 + 0.45 = 1.65\) m. [A1]

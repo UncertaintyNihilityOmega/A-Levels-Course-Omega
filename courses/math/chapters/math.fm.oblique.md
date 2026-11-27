@@ -101,14 +101,37 @@ The law for oblique impact is therefore a statement about the **component along 
 
 ### Two walls: a particle in a corner
 
-When a particle hits one barrier and then another, treat the impacts one after the other. The velocity after the first impact is the velocity before the second, and the angle with the second barrier depends on how the barriers are placed. The simplest case is two walls at right angles.
+When a particle hits one barrier and then another, treat the impacts one after the other. The velocity after the first impact is the velocity before the second, and the angle with the second barrier depends on how the barriers are placed. The simplest case is two walls at right angles. The figure is a view from above.
+
+:::html
+<figure class="fig small"><svg viewBox="0 0 340 205" role="img" aria-label="A view from above of two walls meeting at right angles in a corner. Wall 1 runs horizontally along the bottom and wall 2 runs vertically on the right. The x axis points along wall 1 towards wall 2 and the y axis points towards wall 1. A ball comes in from the upper left at 30 degrees to wall 1 with speed 10, hits wall 1 at P, rebounds up and to the right, hits wall 2 at Q and rebounds up and to the left.">
+  <path class="ln thick" d="M20 170H250"/>
+  <path class="ln thick" d="M250 170V20"/>
+  <path class="c1 thick" d="M73.4 120L160 170" marker-end="url(#ah)"/>
+  <path class="c2 thick" d="M160 170L250 128.4" marker-end="url(#ah)"/>
+  <path class="c4 thick" d="M250 128.4L194.9 77.5" marker-end="url(#ah)"/>
+  <path class="ln thin" d="M130 170A30 30 0 0 1 134 155"/>
+  <path class="ln thin" d="M30 30H72" marker-end="url(#ah)"/>
+  <path class="ln thin" d="M30 30V72" marker-end="url(#ah)"/>
+  <circle class="fi" cx="160" cy="170" r="3.5"/>
+  <circle class="fi" cx="250" cy="128.4" r="3.5"/>
+  <text class="tl" x="78" y="24">x</text>
+  <text class="tl" x="38" y="80">y</text>
+  <text class="tl" x="68" y="112" text-anchor="end">10 m s⁻¹</text>
+  <text class="tl" x="94" y="164">30°</text>
+  <text class="tl" x="156" y="188" text-anchor="middle">P</text>
+  <text class="tl" x="258" y="132">Q</text>
+  <text class="tl" x="30" y="188">wall 1</text>
+  <text class="tl" x="258" y="40">wall 2</text>
+</svg><figcaption>The ball hits wall 1 at \(P\) and then wall 2 at \(Q\). \(x\) points along wall 1 towards wall 2 and \(y\) points towards wall 1, so the ball starts with both components positive. Not to scale.</figcaption></figure>
+:::
 
 :::eg A smooth ball moves on a smooth horizontal floor in a corner formed by two vertical walls at right angles. It hits the first wall at 10 m s⁻¹, its path making an angle of 30° with that wall. It then hits the second wall. The coefficients of restitution with the first and second walls are 0.8 and 0.5. Find the speed of the ball after the second impact.
-Take axes along the first wall (\(x\)) and perpendicular to it (\(y\)). Before the first impact the velocity components are \(u_x = 10\cos 30° = 8.660\) (along the wall) and \(u_y = 10\sin 30° = 5\) (towards the wall).
+Take axes along the first wall (\(x\), positive **towards the second wall**) and perpendicular to it (\(y\), positive **towards the first wall**), as in the figure. Before the first impact the velocity components are \(u_x = 10\cos 30° = 8.660\) (along the wall, towards the second wall) and \(u_y = 10\sin 30° = 5\) (towards the first wall).
 
 First wall: the component along the wall is unchanged; the component towards the wall becomes \(-0.8 \times 5 = -4\). So the velocity is \((8.660, -4)\).
 
-The second wall is perpendicular to the first, so its normal is along \(x\). The component along \(x\) is perpendicular to the second wall and becomes \(-0.5 \times 8.660 = -4.330\). The component along \(y\) is parallel to the second wall and is unchanged: \(-4\).
+The second wall is perpendicular to the first, so its normal is along \(x\). The component along \(x\) is \(+8.660\), towards the second wall and perpendicular to it, so it is multiplied by \(-0.5\) (reversed, away from the second wall) and becomes \(-0.5 \times 8.660 = -4.330\). The component along \(y\) is parallel to the second wall and is unchanged: \(-4\).
 
 The velocity after the second impact is \((-4.330, -4)\), a speed of
 \[\sqrt{4.330^2 + 4^2} = \sqrt{18.75 + 16} = 5.89\ \text{m s}^{-1}\]

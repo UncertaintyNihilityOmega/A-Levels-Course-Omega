@@ -33,7 +33,7 @@ The amount \(x\) by which an elastic string or spring is longer than its natural
 :::
 
 :::def Modulus of elasticity
-The constant \(\lambda\) in Hooke's law (the Greek letter lambda). It is measured in newtons and measures how stiff the material is for strings of any length: a larger \(\lambda\) needs a larger force for the same strain \(x/l\). A string is **light** when its mass is negligible, so the tension is the same all along it.
+The constant \(\lambda\) in Hooke's law (the Greek letter lambda). It is measured in newtons and measures how stiff the material is for strings of any length: a larger \(\lambda\) needs a larger force for the same extension per unit natural length, \(x/l\). A string is **light** when its mass is negligible, so the tension is the same all along it.
 :::
 
 :::key Hooke's law
@@ -210,7 +210,7 @@ When a particle falls on a string, the string is slack for the first part of the
 \end{aligned}\]
 The extension is positive, so \(x = 1\) m. Reject \(x = -\tfrac12\).
 
-(b) The speed is greatest when the acceleration is zero, where the tension equals the weight:
+(b) While the string is slack or its tension is less than the weight, the resultant force is downwards and the particle speeds up; once the tension is greater than the weight the resultant is upwards and it slows down. So the speed is greatest when the acceleration is zero, where the tension equals the weight (the full argument is in "Maximum speed" below):
 \[5 = \frac{20x}{1} \quad\Rightarrow\quad x = 0.25\ \mathrm{m}\]
 Energy from \(O\) to this point (fallen 1.25 m):
 \[\begin{aligned}

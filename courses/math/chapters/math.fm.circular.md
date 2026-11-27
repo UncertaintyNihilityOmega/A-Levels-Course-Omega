@@ -33,8 +33,8 @@ One full turn is \(2\pi\) radians. So the **period** (the time for one revolutio
 In time \(t\) the particle moves a distance \(r \times \omega t\) round the arc (arc length \(= r\theta\)), so its **speed** is \(r\omega\).
 
 :::key Angular speed and speed
-\[v = r\omega \qquad T = \frac{2\pi}{\omega} \qquad \omega\ (\mathrm{rad\,s^{-1}}) = \frac{2\pi \times \mathrm{rpm}}{60}\]
-\(v\) is the speed along the circle in m s⁻¹, \(r\) the radius in m, \(\omega\) the angular speed in rad s⁻¹ and \(T\) the period in seconds. \(v = r\omega\) is **not** on MF19: learn it.
+\[v = r\omega \qquad \text{period} = \frac{2\pi}{\omega} \qquad \omega\ (\mathrm{rad\,s^{-1}}) = \frac{2\pi \times \mathrm{rpm}}{60}\]
+\(v\) is the speed along the circle in m s⁻¹, \(r\) the radius in m, \(\omega\) the angular speed in rad s⁻¹ and the period is in seconds. (The period has no letter of its own here, because \(T\) later means the tension.) \(v = r\omega\) is **not** on MF19: learn it.
 :::
 
 :::eg A turntable rotates at 45 revolutions per minute. (a) Find its angular speed. (b) Find the speed of a point 0.4 m from the centre. (c) Find the angular speed of a wheel turning at 12 rad s⁻¹, in rpm.
@@ -197,8 +197,28 @@ L &= 0.8
 
 Now the surface pushes on the particle. A smooth surface pushes at right angles to itself, so the normal reaction has a vertical component that holds the particle up and a horizontal one that provides the force towards the axis. Everything else is the same.
 
+:::html
+<figure class="fig small"><svg viewBox="0 0 320 225" role="img" aria-label="A hollow cone with its vertex V at the bottom and its axis vertical, drawn as a vertical section. The surface makes 30 degrees with the vertical axis. A particle P on the inside of the right-hand surface is at height h above V and distance r from the axis. The normal reaction R acts on P perpendicular to the surface, pointing up and towards the axis at 30 degrees above the horizontal. The weight mg acts downwards.">
+  <path class="ln-m thin dash" d="M150 205V30"/>
+  <path class="ln thick" d="M65 52.8L150 200L235 52.8"/>
+  <path class="ln-m thin dash" d="M225 70H150"/>
+  <path class="ln-m thin" d="M150 200V70"/>
+  <path class="ln-m thin" d="M150 130A70 70 0 0 1 185 139.4"/>
+  <circle class="f1 s-acc sw2" cx="225" cy="70" r="6"/>
+  <path class="c1 thick" d="M225 70L186.1 47.5" marker-end="url(#ah-math)"/>
+  <path class="ln thick" d="M225 70V112" marker-end="url(#ah)"/>
+  <text class="tl" x="156" y="124">30°</text>
+  <text class="tl" x="136" y="136" text-anchor="end">h</text>
+  <text class="tl" x="188" y="85" text-anchor="middle">r</text>
+  <text class="tl halo" x="178" y="44" text-anchor="middle">R</text>
+  <text class="tl" x="232" y="110">mg</text>
+  <text class="tl" x="238" y="76">P</text>
+  <text class="tl" x="140" y="216" text-anchor="end">V</text>
+</svg><figcaption>A vertical section through the hollow cone. The surface is \(30^\circ\) from the vertical axis, so the normal reaction \(R\), which is perpendicular to the surface, is \(30^\circ\) above the horizontal and points towards the axis. Not to scale.</figcaption></figure>
+:::
+
 :::eg A smooth hollow cone has its axis vertical and its vertex downwards, with semi-vertical angle \(30^\circ\) (the surface makes \(30^\circ\) with the axis). A particle of mass 0.3 kg moves in a horizontal circle on the inside surface, at a height 0.45 m above the vertex. Find the normal reaction and the speed of the particle. Take \(g = 10\).
-The surface makes \(30^\circ\) with the vertical, so the normal reaction \(R\) makes \(30^\circ\) with the horizontal. Its vertical component is \(R\sin 30^\circ\) and its horizontal component, towards the axis, is \(R\cos 30^\circ\).
+The surface makes \(30^\circ\) with the vertical. The normal reaction \(R\) is perpendicular to the surface, so it is turned \(90^\circ\) from the surface: it makes \(90^\circ - 60^\circ = 30^\circ\) with the horizontal (the figure; the surface is \(60^\circ\) from the horizontal). Its vertical component is \(R\sin 30^\circ\) and its horizontal component, towards the axis, is \(R\cos 30^\circ\).
 \[\begin{aligned}
 R\sin 30^\circ &= mg = 3 \quad\Rightarrow\quad R = 6\ \mathrm{N} \\
 R\cos 30^\circ &= \frac{mv^2}{r}

@@ -9,7 +9,7 @@
 A parachutist, a car braking against air resistance, a spacecraft leaving a planet and a boat gliding to a halt all feel forces that change as they move. The constant acceleration formulas cannot describe any of them. A differential equation can: Newton's second law says the acceleration is the force divided by the mass, and if you know how the force depends on time, position or speed, you can integrate your way to the motion. The same method gives the limit a body approaches (its terminal speed) and whether a rocket ever comes back.
 :::
 
-**Before you start**, you need Newton's second law from [Newton's laws of motion](#math.m.newton), the link between velocity and acceleration from [Kinematics: describing motion](#math.m.kinematics), and separable differential equations from [Differential equations](#math.p3.diffeq). The integrals use partial fractions ([Partial fractions](#math.p3.partial)) and integration by parts ([Integration techniques](#math.p3.inttech)). You may also use [Hyperbolic functions](#math.fm.hyperbolic) once, to name a result.
+**Before you start**, you need Newton's second law from [Newton's laws of motion](#math.m.newton), the link between velocity and acceleration from [Kinematics: describing motion](#math.m.kinematics), power as force times speed from [Work, energy and power](#math.m.energy), and separable differential equations from [Differential equations](#math.p3.diffeq). The integrals use partial fractions ([Partial fractions](#math.p3.partial)) and integration by parts ([Integration techniques](#math.p3.inttech)). You may also use [Hyperbolic functions](#math.fm.hyperbolic) once, to name a result.
 
 :::try Warm-up
 Q: Solve \(\dfrac{dy}{dx} = 3y\), given that \(y = 2\) when \(x = 0\). (from [Differential equations](#math.p3.diffeq))
@@ -22,7 +22,7 @@ A: \(9 - v^2 = (3 - v)(3 + v)\), and \(\dfrac{1}{9 - v^2} = \dfrac{1}{6}\left(\d
 
 ## Newton's second law when the force varies
 
-With constant forces you used \(F = ma\) and the five constant-acceleration formulas. Now the force depends on something that changes, so \(a\) changes too. The law \(F = ma\) still holds at every instant; what changes is that you can no longer solve it with algebra alone. You write \(a\) as a derivative and the law becomes a differential equation.
+With constant forces you used \(F = ma\) and the four constant-acceleration equations ([Kinematics: describing motion](#math.m.kinematics)). Now the force depends on something that changes, so \(a\) changes too. The law \(F = ma\) still holds at every instant; what changes is that you can no longer solve it with algebra alone. You write \(a\) as a derivative and the law becomes a differential equation.
 
 :::def Variable force
 A force whose magnitude is not constant, because it depends on the time \(t\), on the particle's position \(x\), or on its speed \(v\). Examples: a force \(6t\) that grows as time passes, the gravitational pull \(\dfrac{k}{x^2}\) that weakens with distance, and air resistance \(kv^2\) that grows with speed.
