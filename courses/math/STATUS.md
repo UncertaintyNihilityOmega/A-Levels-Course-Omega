@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-27 · FIX · READER items closed (20) on fm.arclength..fm.projectiles: p defined and sec x integral and r dθ picture (arclength); modulo, 3θ range, tan 15°, mean value (complex); ω renamed k in waves, chord proof moved up (complex2); plane arrangements counts, edge-on reason, triple product defined (systems); complex eigenvalue note, recurrence hint (matrices2); slope field explained (de); m/c/λ and dot notation, polynomial clash rule (de2); perpendicular to plane, downward plane, clears wording (projectiles)
+Last: 2026-11-27 · READER · 18 reader items
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -41,5 +41,5 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P34: reviewed 2026-11-26
 - P35: reviewed 2026-11-26
 - P36: reviewed 2026-11-26
-- READER: done 2026-11-13
+- READER: done 2026-11-27
 - FINAL: open

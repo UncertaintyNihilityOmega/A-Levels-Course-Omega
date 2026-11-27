@@ -383,3 +383,28 @@ Assumed: nothing beyond the sign-test chapter; the letter P is used for the sum 
 ## math.fm.pgf
 Taught: probability generating function G(t) = E(t^X) = sum P(X = x) t^x (coefficients are probabilities, G(1) = 1, G(0) = P(X = 0), P(X = r) = G^(r)(0)/r!); PGFs of the discrete uniform, binomial, geometric and Poisson distributions (derived); E(X) = G'(1) and Var(X) = G''(1) + G'(1) - {G'(1)}^2 (proof) and the means and variances of the four distributions from them; unknown constants from G(1) = 1 and a given mean or probability; negative powers of t; PGF of a sum of independent variables is the product (with the proof that means and variances add), sums within the binomial (same p) and Poisson families; recognising a distribution from its PGF; PGF of aX + b is t^b G(t^a).
 Assumed: the number of failures before the first success as a distribution (named in a Check, never defined); the sum of j r^j (used in a Check); E(XY) = E(X)E(Y) for independent X, Y (stated as the step needing independence); the algebra for G''(1) of the uniform distribution (not shown).
+
+
+## math.fm.exam.fp1
+Taught: Paper 1 format (2 h, 75 marks, 60% of AS and 30% of A Level, all compulsory, MF19 supplied and no separate tables), the front-page rules, 1.4 minutes per mark on a first pass leaving 15 minutes to check, the June 2025 and specimen question shapes, what MF19 gives (sum r, r^2, r^3, the scalar product, the 9709 list) and what to learn, the topic list with chapters, the induction and method-of-differences layouts with their marks, layouts for the other question types, the marks lost most often by topic, the mark labels (M1 A1 B1 DM1 FT SOI AWRT ISW), how to practise, a final-week checklist.
+Assumed: which roots the new equation has after a substitution written x = (y - 1)/2 (they are 2 alpha + 1, etc.); "twice the time" (twice what); the problem behind "setting a coordinate to 0 when the direction has a zero component".
+
+## math.fm.exam.fp2
+Taught: Paper 2 format (2 h, 75 marks, 30% of A Level, A Level only, assumes Paper 1), the June 2025 and June 2026 question shapes, what MF19 gives (Maclaurin series, hyperbolic identities and log forms, derivatives and integrals of inverse forms) and what to learn, a recognition table from wording to chapter, layouts for hyperbolic proofs, de Moivre multiple angles, a reduction formula (parts twice, chain of indices) and a second order DE with initial conditions, the marks lost most often by topic, a final-week checklist.
+Assumed: "the five geometries" of three planes (only three outcomes are named just above); what "taking sinh x = +- a value when x > 0 decides the sign" and "+- inside cosh^-1" mean; the equation behind "P = -4/x, not -4"; the value of the second boundary term in the reduction example.
+
+## math.fm.exam.fm
+Taught: Paper 3 format (1 h 30, 50 marks, 40% of AS and 20% of A Level, g = 10), the front-page rules, 1.6 minutes per mark on a first pass leaving 10 minutes, the June 2025 and June 2026 question shapes, what MF19 gives (trajectory, T = lambda x / l, E = lambda x^2 / 2l, circular acceleration, centres of mass, the four constant-acceleration formulae) and what to learn, a recognition table, the diagram routine, the modelling words (smooth, light, inextensible, just taut, limiting, about to topple, leaves the surface), two worked layouts (a vertical circle going slack, an elastic string with a falling particle), the marks lost most often by topic, a final-week checklist.
+Assumed: the ladder and the wall behind "the wall reaction acts at height 6 sin(theta), not 6"; "twice the time" (twice what); whether a cone's centre of mass is 1/4 h from the base or 3/4 h from the vertex.
+
+## math.fm.exam.fs
+Taught: Paper 4 format (1 h 30, 50 marks, 40% of AS and 20% of A Level, tables inside MF19), the June 2025 and June 2026 question shapes, what MF19 gives (pooled variance, PGF results, normal, t, chi-squared and both Wilcoxon tables) and what to learn, which table column (p = 1 - alpha one-tailed, 1 - alpha/2 two-tailed or interval, chi-squared upper tail), a recognition table, choosing the test from the data, the seven-line layout of a test and the wording of a conclusion ("sufficient" or "insufficient evidence", never "no evidence"), worked t-test and chi-squared independence layouts, layouts for CRV, CI, goodness of fit, sign, Wilcoxon and PGF questions, the marks lost most often, a final-week checklist.
+Assumed: what to do when the population variance is known (no row in the choosing table); whether a wrong critical value is followed through (the page says both yes and no).
+
+## math.fm.mixed.pure
+Taught: nothing new (31 mixed Further Pure questions with mark schemes, each naming the chapter to revise).
+Assumed: the question numbers (the intro and the "Where the questions come from" table count 1 to 31 but the page numbers each block from 1); why a boundary value of y gives a stationary point (question on y = (x^2 + 1)/(x - 1)); how "non-zero solutions" fits an answer that lists x = 0.
+
+## math.fm.mixed.applied
+Taught: nothing new (32 mixed Further Mechanics and Statistics questions with mark schemes, each naming the chapter to revise).
+Assumed: the question numbers (the intro and the table count 1 to 32 but the page numbers each block from 1); which dimension of the L-shaped lamina is horizontal (no figure); why bus and cycle are the columns joined in the commuting table (adjacent columns are not mentioned).
