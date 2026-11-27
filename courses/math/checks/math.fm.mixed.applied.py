@@ -51,10 +51,12 @@ assert set(c.split(".")[-1] for c in chap) == fm | fs, "every chapter of the two
 assert stars[:14] == [1] * 5 + [2] * 5 + [3] * 4 and stars[14:28] == [1] * 5 + [2] * 5 + [3] * 4
 # the table at the end lists every question under its chapter
 table = text.split("## Where the questions come from")[1].split(":::recap")[0]
+labels = [f"{nm} {j}" for nm, cnt in (("Mechanics warm-up", 5), ("Mechanics exam standard", 5), ("Mechanics stretch", 4), ("Statistics warm-up", 5), ("Statistics exam standard", 5), ("Statistics stretch", 4), ("mixed set", 4)) for j in range(1, cnt + 1)]
+assert len(labels) == len(chap) == 32
 for i, c in enumerate(chap, 1):
     row = [ln for ln in table.splitlines() if f"(#{c})" in ln]
     assert row, c
-    assert str(i) in re.split(r"[,\s]+", row[0].split("|")[2].strip()), f"question {i} missing from the table row for {c}"
+    assert labels[i - 1] in [x.strip() for x in row[0].split("|")[2].split(",")], f"question {labels[i - 1]} missing from the table row for {c}"
 g = 10
 
 # ---- 1 projectile ----
@@ -351,4 +353,11 @@ Gy = lambda y: Fx(exp(y))
 eq("q32d G", Gy(0.7), 4 / 3 * (1 - exp(-0.7)), 1e-12)
 eq("q32d g", (Gy(0.7 + 1e-6) - Gy(0.7 - 1e-6)) / 2e-6, 4 / 3 * exp(-0.7), 1e-6)
 eq("q32d top", Gy(log(4)), 1, 1e-12); eq("q32d g area", simpson(lambda y: 4 / 3 * exp(-y), 0, log(4)), 1, 1e-9)
+# travel table: combining rail and bus would leave the cycle column below 5
+_rows = (78, 50); _cols = (70, 52, 6)
+eq("cycle expected town", 78 * 6 / 128, 3.65625, 1e-9)
+assert all(r * c / 128 < 5 for r in (78, 50) for c in (6,)) and 50 * 6 / 128 < 5
+assert all(r * c / 128 >= 5 for r in _rows for c in (52 + 6, 70))
+# L-shaped lamina: base 6 wide, 2 high; upright 2 wide, 5 high on top at the left end
+eq("L xbar", (12 * 3 + 10 * 1) / 22, 23 / 11); eq("L ybar", (12 * 1 + 10 * 4.5) / 22, 57 / 22)
 print("ok")

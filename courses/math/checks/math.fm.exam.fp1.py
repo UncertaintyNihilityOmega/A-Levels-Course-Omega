@@ -46,4 +46,8 @@ eq("marks of differences example", 1 + 1 + 1 + 1 + 1, 5)
 
 # the roots warning example: x^3 - 7x + 6 = 0 has sum of roots 0
 eq("sum roots", 0, -(0) / 1)
+# timing rule 3: twice the planned time for a 5-mark question at 1.4 min per mark
+eq("twice planned time, 5 marks", 2 * 5 * 1.4, 14)
+# roots of 2a+1: y = 2x + 1 gives x = (y - 1)/2
+eq("x from y", (7 - 1) / 2, 3)
 print("ok")

@@ -57,4 +57,13 @@ eq("marks of DE example", 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1, 8)
 # auxiliary roots
 for m in (-1, -3):
     assert m * m + 4 * m + 3 == 0
+# reduction formula boundary terms: I_n = n (pi/2)^(n-1) - n(n-1) I_(n-2), checked numerically for n = 2..5
+import math as _m
+def _I(n, N=20000):
+    h = (_m.pi / 2) / N
+    return sum((k * h) ** n * _m.sin(k * h) * (1 if k in (0, N) else (4 if k % 2 else 2)) for k in range(N + 1)) * h / 3
+for _n in range(2, 6):
+    eq("reduction n=%d" % _n, _I(_n), _n * (_m.pi / 2) ** (_n - 1) - _n * (_n - 1) * _I(_n - 2), 1e-7)
+# x dy/dx - 4y = x^3 -> dy/dx - (4/x) y = x^2: P = -4/x, integrating factor x^-4
+eq("IF check", _m.exp(-4 * _m.log(2.0)), 2.0 ** -4)
 print("ok")

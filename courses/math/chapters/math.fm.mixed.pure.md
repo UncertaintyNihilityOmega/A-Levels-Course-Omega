@@ -3,14 +3,14 @@
 @level guide
 @paper CAIE 9231 Papers 1 and 2
 @time 4–6 hours
-@summary Thirty-one short questions that mix every topic of Further Pure Mathematics 1 and 2: series, roots, matrices and transformations, induction, rational functions and graphs, polar curves, vectors and planes, then hyperbolic functions, Maclaurin series, integration, reduction formulae, arc length, de Moivre, systems, eigenvalues and differential equations. The first half is Paper 1 only, the second half mixes both papers, and the order goes from ★ to ★★★. Each answer is a mark scheme, and each question names the chapter to revise.
+@summary Thirty-one short questions that mix every topic of Further Pure Mathematics 1 and 2: series, roots, matrices and transformations, induction, rational functions and graphs, polar curves, vectors and planes, then hyperbolic functions, Maclaurin series, integration, reduction formulae, arc length, de Moivre, systems, eigenvalues and differential equations. The first two blocks are Paper 1 only, the last two mix both papers, and the order goes from ★ to ★★★. Each answer is a mark scheme, and each question names the chapter to revise.
 
 :::why
 In the exam you are not told which chapter a question comes from. Practising one topic at a time trains the method but not the first step, which is recognising what the question needs: a "show that" with a method of differences, a plane and a skew line, a differential equation that wants an integrating factor. This page is mixed on purpose. No two neighbouring questions come from the same chapter, so each one starts with the real task: working out which tool to pick up.
 :::
 
 :::tip How to use this page
-Do the questions in order, a few at a time, on paper, and mark yourself with the scheme. Questions 1 to 15 are Further Pure 1 only (the Paper 1 content, which Paper 2 also assumes); from question 16 the questions mix Paper 1 and Paper 2 content. ★ questions are one idea (2 to 4 marks), ★★ questions are one part of an exam question, ★★★ questions need two or more ideas in one answer. When you lose a mark, follow the chapter link in brackets and redo one worked example there before moving on. MF19 is available for every question: it gives the sums of \(r\), \(r^2\) and \(r^3\), the Maclaurin series, the hyperbolic identities and the standard derivatives and integrals, but not reduction formulae, the arc length and surface area formulae, de Moivre's theorem, the vector product or the matrix methods, which you must know. Give non-exact answers to 3 significant figures and angles in degrees to 1 decimal place.
+Do the questions in order, a few at a time, on paper, and mark yourself with the scheme. The page has four blocks: Further Pure 1 warm-up, Further Pure 1 exam standard, Mixed Further Pure 1 and 2, and Stretch. **Each block numbers its questions from 1**, so this page refers to a question by its block and number (for example "exam standard 4" is question 4 of the Further Pure 1 exam standard block). The first two blocks are Further Pure 1 only (the Paper 1 content, which Paper 2 also assumes); the last two mix Paper 1 and Paper 2 content. ★ questions are one idea (2 to 4 marks), ★★ questions are one part of an exam question, ★★★ questions need two or more ideas in one answer. When you lose a mark, follow the chapter link in brackets and redo one worked example there before moving on. MF19 is available for every question: it gives the sums of \(r\), \(r^2\) and \(r^3\), the Maclaurin series, the hyperbolic identities and the standard derivatives and integrals, but not reduction formulae, the arc length and surface area formulae, de Moivre's theorem, the vector product or the matrix methods, which you must know. Give non-exact answers to 3 significant figures and angles in degrees to 1 decimal place.
 :::
 
 :::try Further Pure 1 warm-up ★
@@ -145,7 +145,7 @@ This is the result with \(n = k + 1\). The result is true for \(n = 1\), and tru
 :::try Mixed Further Pure 1 and 2 ★★
 Q: [5 marks] (#math.fm.hyperbolic) ★★ (a) Prove that \(\sinh 2x \equiv 2\sinh x\cosh x\). [3]
 
-(b) Hence solve the equation \(\sinh 2x = 3\sinh x\), giving non-zero solutions correct to 3 significant figures. [2]
+(b) Hence solve the equation \(\sinh 2x = 3\sinh x\), giving any solutions that are not exact correct to 3 significant figures. [2]
 A: (a) Use the definitions \(\sinh x = \tfrac12\left(e^x - e^{-x}\right)\) and \(\cosh x = \tfrac12\left(e^x + e^{-x}\right)\):
 \[2\sinh x\cosh x = 2 \times \tfrac12\left(e^x - e^{-x}\right) \times \tfrac12\left(e^x + e^{-x}\right)\]
 [M1]
@@ -296,7 +296,7 @@ For real \(x\) the discriminant is non-negative:
 [A1]
 The roots of \(y^2 - 4y - 4 = 0\) are \(y = 2 \pm 2\sqrt2\), so \(y \le 2 - 2\sqrt2\) or \(y \ge 2 + 2\sqrt2\). [A1]
 
-(b) The two boundary values \(y = 2 \pm 2\sqrt2\) are where the discriminant is zero, so each is given by a repeated root \(x = \dfrac y2 = 1 \pm \sqrt2\). [M1]
+(b) The two boundary values \(y = 2 \pm 2\sqrt2\) are where the discriminant is zero, so each is given by a repeated root \(x = \dfrac y2 = 1 \pm \sqrt2\). The curve reaches the height \(y = 2 \pm 2\sqrt2\) at one value of \(x\) only, so it touches that horizontal line there: a stationary point. [M1]
 The stationary points are \(\left(1 + \sqrt2,\ 2 + 2\sqrt2\right)\) and \(\left(1 - \sqrt2,\ 2 - 2\sqrt2\right)\). [A1]
 Q: [7 marks] (#math.fm.complex2) ★★★ (a) Solve the equation \(z^3 = 8i\), giving the roots in the form \(re^{i\theta}\) where \(r > 0\) and \(-\pi < \theta \le \pi\). [4]
 
@@ -342,35 +342,37 @@ This is the formula with \(n = k + 1\). The formula is true for \(n = 1\), and t
 
 ## Where the questions come from
 
-| Chapter | Questions |
+Each block restarts at question 1, so a question is named by its block and number.
+
+| Chapter | Questions (block and number) |
 |---|---|
-| [Roots of polynomial equations](#math.fm.roots) | 3, 12 |
-| [Summation of series](#math.fm.series) | 1, 11, 17 |
-| [Matrices: algebra, determinants and inverses](#math.fm.matrices) | 2, 14 |
-| [Matrices as transformations](#math.fm.transform) | 8, 19 |
-| [Proof by induction](#math.fm.induction) | 7, 15, 31 |
-| [Rational functions and their graphs](#math.fm.rational) | 6, 28 |
-| [Graphs related to y = f(x)](#math.fm.graphs) | 9 |
-| [Polar coordinates](#math.fm.polar) | 4, 13 |
-| [Vectors: the vector product and planes](#math.fm.vectors) | 5 |
-| [Vectors: intersections, angles and distances](#math.fm.vectors2) | 10, 25 |
-| [Hyperbolic functions](#math.fm.hyperbolic) | 16 |
-| [Further differentiation and Maclaurin series](#math.fm.diff) | 23 |
-| [Further integration: hyperbolic and inverse forms](#math.fm.integ) | 18 |
-| [Reduction formulae](#math.fm.reduction) | 26 |
-| [Arc length and surface area](#math.fm.arclength) | 30 |
-| [De Moivre's theorem and trigonometry](#math.fm.complex) | 20 |
-| [Roots of unity and complex series](#math.fm.complex2) | 29 |
-| [Three equations, three planes](#math.fm.systems) | 22 |
-| [Eigenvalues and eigenvectors](#math.fm.matrices2) | 24 |
-| [First order differential equations](#math.fm.de) | 21 |
-| [Second order differential equations](#math.fm.de2) | 27 |
+| [Roots of polynomial equations](#math.fm.roots) | warm-up 3, exam standard 4 |
+| [Summation of series](#math.fm.series) | warm-up 1, exam standard 3, mixed 2 |
+| [Matrices: algebra, determinants and inverses](#math.fm.matrices) | warm-up 2, exam standard 6 |
+| [Matrices as transformations](#math.fm.transform) | warm-up 8, mixed 4 |
+| [Proof by induction](#math.fm.induction) | warm-up 7, exam standard 7, stretch 7 |
+| [Rational functions and their graphs](#math.fm.rational) | warm-up 6, stretch 4 |
+| [Graphs related to y = f(x)](#math.fm.graphs) | exam standard 1 |
+| [Polar coordinates](#math.fm.polar) | warm-up 4, exam standard 5 |
+| [Vectors: the vector product and planes](#math.fm.vectors) | warm-up 5 |
+| [Vectors: intersections, angles and distances](#math.fm.vectors2) | exam standard 2, stretch 1 |
+| [Hyperbolic functions](#math.fm.hyperbolic) | mixed 1 |
+| [Further differentiation and Maclaurin series](#math.fm.diff) | mixed 8 |
+| [Further integration: hyperbolic and inverse forms](#math.fm.integ) | mixed 3 |
+| [Reduction formulae](#math.fm.reduction) | stretch 2 |
+| [Arc length and surface area](#math.fm.arclength) | stretch 6 |
+| [De Moivre's theorem and trigonometry](#math.fm.complex) | mixed 5 |
+| [Roots of unity and complex series](#math.fm.complex2) | stretch 5 |
+| [Three equations, three planes](#math.fm.systems) | mixed 7 |
+| [Eigenvalues and eigenvectors](#math.fm.matrices2) | mixed 9 |
+| [First order differential equations](#math.fm.de) | mixed 6 |
+| [Second order differential equations](#math.fm.de2) | stretch 3 |
 
 Rectangles and bounds ([Sums, rectangles and bounds](#math.fm.rectangles)) has no question here: practise it with Question 5 of [Mock Paper 2](#math.fm.mock.p2).
 
 :::recap
 - Mixed practice trains the first step: read the question, name the chapter, then choose the method. Do a few questions at a time and keep a list of the chapters you had to look up.
-- Questions 1 to 15 are Paper 1 content; Paper 2 assumes all of it, so a Paper 2 question can start from a plane, a matrix or a method of differences.
+- The warm-up and exam standard blocks are Paper 1 content; Paper 2 assumes all of it, so a Paper 2 question can start from a plane, a matrix or a method of differences.
 - Every lost mark has a name: a method mark you did not show, an accuracy mark lost in the algebra, or a given result you did not reach honestly. Write the name next to the question and fix that habit first.
 - When the questions feel easy, sit [Mock Paper 1](#math.fm.mock.p1) and [Mock Paper 2](#math.fm.mock.p2) under exam conditions.
 :::

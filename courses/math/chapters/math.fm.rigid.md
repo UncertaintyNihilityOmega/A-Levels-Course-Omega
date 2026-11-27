@@ -212,7 +212,7 @@ When a rod rests on a smooth peg or edge, or against a smooth surface, the react
   <text class="tl halo" x="54" y="181" text-anchor="end">R</text>
   <text class="tl" x="94" y="241">F</text>
   <text class="tl halo" x="62.9" y="133" text-anchor="end">S</text>
-  <text class="tl" x="120" y="181.5">100 N</text>
+  <text class="tl" x="128" y="181.5">100 N</text>
   <text class="tl" x="96" y="215">60°</text>
   <text class="tl" x="54" y="241" text-anchor="end">A</text>
   <text class="tl" x="176" y="41.9">B</text>

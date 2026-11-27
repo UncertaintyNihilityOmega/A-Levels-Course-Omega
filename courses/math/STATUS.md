@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-27 · FIX · READER items closed (20) on fm.com..fm.oblique: com hanging-arc framework recomputed (page was wrong: AB is 68.7 deg to horizontal, 21.3 deg to vertical; hint, working, answer, checks fixed), L-lamina X and Start-easy corners reworded; rigid coplanar/iff/slip wording, peg and toppling figures; elastic strain and max-speed reason; circular period letter and cone figure; vertical slack-point figure and T elimination line; variable four formulas and energy link; impulse KE proof rewritten with V defined, fixed-surface speeds, 2w/g stated; oblique corner figure and signs
+Last: 2026-11-27 · FIX · READER items closed (18) on fm.exam.*, fm.mixed.*; rigid peg label: 100 N moved right of the weight arrow (x 120 to 128)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.

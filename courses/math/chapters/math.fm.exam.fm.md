@@ -59,7 +59,7 @@ Rules of thumb:
 
 1. **Read first, for 2 minutes.** Mechanics questions are verbal: a good picture of each one before you start saves time inside it.
 2. **Draw before you write.** A large diagram with every force, the positive direction and the unknowns takes a minute and prevents most lost marks. Two-part questions often reuse it.
-3. **Split the marks as you go.** A 4-mark part is two ideas (an equation and its solution); a 9-mark question is about three. If you have used twice the time, leave a gap.
+3. **Split the marks as you go.** A 4-mark part is two ideas (an equation and its solution); a 9-mark question is about three. If you have used twice the time in the table, leave a gap.
 4. **Use "show that" results.** A given result such as \(v^2 = \dots\) can be used in the next part even if you could not prove it.
 5. **Check units and reasonableness in the last 10 minutes:** a speed of \(300\ \mathrm{m\,s^{-1}}\) for a ball, a tension that is negative, an angle above \(90^\circ\) for a projectile.
 
@@ -206,8 +206,8 @@ Notice: the fall is \(l + x\), not \(x\), because the particle starts at the fix
 These come from the warning boxes in the Paper 3 chapters.
 
 - **Projectiles:** giving only one of the two angles when the target can be reached twice, and not checking that the other root is in range.
-- **Centres of mass:** using the heights of the parts as if they were masses; measuring from different points; the cone's centre of mass is \(\tfrac14h\) from the base, not from the vertex.
-- **Rigid bodies:** using the length of the ladder where a perpendicular distance is needed (the wall reaction acts at height \(6\sin\theta\), not 6); finding only one critical value and not saying which of topple or slide happens first.
+- **Centres of mass:** using the heights of the parts as if they were masses; measuring from different points; the cone's centre of mass is \(\tfrac34h\) from the vertex (MF19), which is \(\tfrac14h\) from the base; the slip is to measure \(\tfrac14h\) from the vertex.
+- **Rigid bodies:** using the length of the ladder where a perpendicular distance is needed (for a ladder of length 6 m at angle \(\theta\) to the ground, the smooth wall's reaction acts at height \(6\sin\theta\) above the ground, not 6); finding only one critical value and not saying which of topple or slide happens first.
 - **Elastic strings:** writing the length where the extension belongs; counting EPE when the string is slack; forgetting the natural length in the drop (a particle falling from the fixed end falls \(l + x\)).
 - **Horizontal circles:** an outward "centrifugal force" in the equation; the radius is \(l\sin\theta\), not \(l\).
 - **Vertical circles:** the wrong height (\(r(1 - \cos\theta)\), and \(2r\) at the top); two different angle conventions in one solution.

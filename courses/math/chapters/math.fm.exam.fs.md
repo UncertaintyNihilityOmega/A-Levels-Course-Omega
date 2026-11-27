@@ -57,7 +57,7 @@ Rules of thumb:
 
 1. **Read first, for 2 minutes.** Mark which questions are tests (they need the layout), which are algebra and calculus (continuous random variables, PGFs), and which are tables.
 2. **The wording marks are cheap.** Hypotheses, a stated assumption and a conclusion in context are one or two marks each and do not depend on getting the number right. Write them even when you are unsure of the statistic.
-3. **Do not skip table work.** Reading the right table value is quick, and the comparison and conclusion follow your own critical value for follow-through marks.
+3. **Do not skip table work.** Reading the right table value is quick: the comparison and conclusion are marked on your own test statistic against the **correct** critical value, so a wrong critical value is not followed through (see "Reading the marks"). Check the degrees of freedom, the column and the tail before you compare.
 4. **Use "show that" and "verify" results.** A given value (such as a median to verify, or a given \(\mathrm{E}(X)\)) may be used later even if you could not do the part.
 5. **Check in the last 10 minutes:** probabilities between 0 and 1, a variance that is positive, degrees of freedom that match the table row, a CDF that reaches 1.
 
@@ -142,8 +142,10 @@ This is the decision the questions test most. Ask in order: what is the data, ho
 |---|---|---|
 | a mean, one small sample, \(\sigma^2\) unknown | one-sample t, \(\nu = n - 1\) | the population is normal |
 | a mean, one large sample | normal test, with \(s^2\) in place of \(\sigma^2\) | none beyond the central limit theorem |
+| a mean, population variance given (even for a small sample) | normal test (\(z\)) with \(\sigma^2\), not a t-test | the population is normal |
 | two independent small samples, equal variances | pooled two-sample t, \(\nu = n_1 + n_2 - 2\) | both populations normal with a common variance |
 | two independent large samples | normal test with \(\dfrac{s_1^2}{n_1} + \dfrac{s_2^2}{n_2}\) | none beyond the central limit theorem |
+| two independent samples, both population variances given | normal test with \(\dfrac{\sigma_1^2}{n_1} + \dfrac{\sigma_2^2}{n_2}\), even for small samples | both populations normal |
 | paired data (the same units twice, or matched) | t-test on the differences, \(\nu = n - 1\) | the differences are normal |
 | a median, any distribution | sign test | a random sample; independent observations |
 | a median or paired differences, symmetric distribution | Wilcoxon signed-rank | the distribution is symmetric |

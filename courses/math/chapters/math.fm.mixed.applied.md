@@ -6,11 +6,11 @@
 @summary Thirty-two short questions that mix every topic of Further Mechanics (Paper 3) and Further Probability and Statistics (Paper 4): projectiles, centres of mass, rigid bodies, elastic strings, horizontal and vertical circles, variable force, direct and oblique impact, then continuous random variables, t and normal tests, chi-squared tests, sign and Wilcoxon tests and probability generating functions. Each half goes from one star to three, and a final mixed set alternates mechanics and statistics. Each answer is a mark scheme, and each question names the chapter to revise.
 
 :::why
-In the exam you are not told which chapter a question comes from, and on these two papers the first step is nearly always the whole battle: is this a vertical circle or a projectile, a paired test or a two-sample test, a goodness-of-fit table or a contingency table? Practising one topic at a time trains the method but not that first decision. This page is mixed on purpose. No two neighbouring questions come from the same chapter, so each one starts with the real task: working out which tool to pick up. Mechanics comes first, statistics second, and the last four questions alternate between the two papers.
+In the exam you are not told which chapter a question comes from, and on these two papers the first step is nearly always the whole battle: is this a vertical circle or a projectile, a paired test or a two-sample test, a goodness-of-fit table or a contingency table? Practising one topic at a time trains the method but not that first decision. This page is mixed on purpose. No two neighbouring questions come from the same chapter, so each one starts with the real task: working out which tool to pick up. Mechanics comes first, statistics second, and the last block, the mixed set, alternates between the two papers.
 :::
 
 :::tip How to use this page
-Do the questions in order, a few at a time, on paper, and mark yourself with the scheme. Questions 1 to 14 are Further Mechanics (Paper 3), questions 15 to 28 are Further Probability and Statistics (Paper 4), and questions 29 to 32 alternate between the two. In each half the stars rise: ★ questions are one idea (3 to 5 marks), ★★ questions are one part of an exam question, ★★★ questions need two or more ideas in one answer and are the size of a real question (8 to 10 marks). When you lose a mark, follow the chapter link in brackets and redo one worked example there before moving on. MF19 is available for every question: it gives the trajectory equation, \(T = \lambda x/l\) and the elastic energy \(\lambda x^2/(2l)\), the acceleration \(r\omega^2\) or \(v^2/r\), the centres of mass of the standard solids, the pooled variance, the mean and variance from a probability generating function, and the normal, \(t\), \(\chi^2\) and Wilcoxon tables. It does not give \(v = r\omega\), the law of restitution, \(\sum (O - E)^2/E\), the \(t\)-test statistic or the sign-test rules, which you must know. Take \(g = 10\) in mechanics, and give non-exact answers to 3 significant figures and angles in degrees to 1 decimal place.
+Do the questions in order, a few at a time, on paper, and mark yourself with the scheme. The page has seven blocks: Further Mechanics warm-up, exam standard and stretch (Paper 3), Further Statistics warm-up, exam standard and stretch (Paper 4), and a final mixed set that alternates between the two papers. **Each block numbers its questions from 1**, so this page refers to a question by its block and number (for example "Mechanics exam standard 2" is question 2 of the Further Mechanics exam standard block). In each half the stars rise: ★ questions are one idea (3 to 5 marks), ★★ questions are one part of an exam question, ★★★ questions need two or more ideas in one answer and are the size of a real question (8 to 10 marks). When you lose a mark, follow the chapter link in brackets and redo one worked example there before moving on. MF19 is available for every question: it gives the trajectory equation, \(T = \lambda x/l\) and the elastic energy \(\lambda x^2/(2l)\), the acceleration \(r\omega^2\) or \(v^2/r\), the centres of mass of the standard solids, the pooled variance, the mean and variance from a probability generating function, and the normal, \(t\), \(\chi^2\) and Wilcoxon tables. It does not give \(v = r\omega\), the law of restitution, \(\sum (O - E)^2/E\), the \(t\)-test statistic or the sign-test rules, which you must know. Take \(g = 10\) in mechanics, and give non-exact answers to 3 significant figures and angles in degrees to 1 decimal place.
 :::
 
 :::try Further Mechanics warm-up ★
@@ -29,7 +29,7 @@ A: (a) The vertical component of the initial velocity is \(20\sin30^\circ = 10\)
 The horizontal component is \(20\cos30^\circ\), so the range is
 \[20\cos30^\circ \times 2 = 34.6\ \text{m}\]
 [A1]
-Q: [3 marks] (#math.fm.com) ★ A uniform lamina is L-shaped. It is made of a rectangle measuring 6 cm by 2 cm (the base) and a second rectangle 2 cm wide and 5 cm high standing on the base at its left-hand end, with the left edges in line. Find the distances of the centre of mass of the lamina from the left-hand edge and from the bottom edge.
+Q: [3 marks] (#math.fm.com) ★ A uniform lamina is L-shaped. It is made of a rectangle (the base) that is 6 cm wide and 2 cm high, and a second rectangle 2 cm wide and 5 cm high standing on top of the base at its left-hand end, with the left edges in line. Find the distances of the centre of mass of the lamina from the left-hand edge and from the bottom edge.
 A: Take the bottom left corner as the origin. The base has area \(12\) and its centre of mass is at \((3, 1)\); the upright part has area \(10\) and its centre of mass is at \((1, 4.5)\). The mass is proportional to the area. [M1]
 \[22\bar x = 12(3) + 10(1) = 46 \quad\text{so}\quad \bar x = \frac{23}{11} = 2.09\ \text{cm}\]
 [A1]
@@ -465,7 +465,7 @@ Q: [8 marks] (#math.fm.contingency) ★★★ A survey asks 128 people from town
 (b) Which cell of your final table contributes most to the test statistic, and what does it show? [1]
 A: (a) \(H_0\): the method of travel is independent of where the person lives. \(H_1\): the method of travel and the place of residence are associated. [B1]
 The row totals are \(78\) and \(50\), and the column totals are \(70, 52, 6\). Expected frequency \(= \dfrac{\text{row} \times \text{column}}{128}\): the cycle column gives \(3.66\) and \(2.34\), both less than 5. [M1]
-Combine the bus and cycle columns (they are similar kinds of travel, and each expected frequency is then at least 5). [B1]
+Only adjacent columns may be combined, and cycle is next to bus; combining them leaves every expected frequency at least 5 (combining rail and bus would leave the cycle column below 5). So combine the bus and cycle columns. [B1]
 
 | | Rail | Bus or cycle |
 |---|---|---|
@@ -545,25 +545,27 @@ with \(\mathrm{F}(x) = 0\) for \(x < 1\) and \(\mathrm{F}(x) = 1\) for \(x > 4\)
 
 ## Where the questions come from
 
-| Chapter | Questions |
+Each block restarts at question 1, so a question is named by its block and number. "Mechanics" and "Statistics" stand for the Further Mechanics and Further Statistics blocks.
+
+| Chapter | Questions (block and number) |
 |---|---|
-| [Projectiles](#math.fm.projectiles) | 1, 11 |
-| [Centres of mass](#math.fm.com) | 2, 12 |
-| [Equilibrium of a rigid body](#math.fm.rigid) | 6 |
-| [Hooke's law and elastic energy](#math.fm.elastic) | 4, 10, 29 |
-| [Circular motion: horizontal circles](#math.fm.circular) | 5, 13 |
-| [Circular motion: vertical circles](#math.fm.vertical) | 7, 31 |
-| [Linear motion under a variable force](#math.fm.variable) | 3, 14 |
-| [Direct impact and restitution](#math.fm.impulse) | 8 |
-| [Oblique impact](#math.fm.oblique) | 9 |
-| [Continuous random variables](#math.fm.crv) | 15, 23, 32 |
-| [The t-distribution: one-sample tests and intervals](#math.fm.inference) | 16, 24, 27 |
-| [Comparing two means](#math.fm.twosample) | 20 |
-| [Chi-squared goodness of fit](#math.fm.chisq) | 17, 26 |
-| [Chi-squared tests for independence](#math.fm.contingency) | 21, 30 |
-| [Non-parametric tests: the sign test](#math.fm.nonpar) | 18 |
-| [Wilcoxon tests](#math.fm.wilcoxon) | 22, 28 |
-| [Probability generating functions](#math.fm.pgf) | 19, 25 |
+| [Projectiles](#math.fm.projectiles) | Mechanics warm-up 1, Mechanics stretch 1 |
+| [Centres of mass](#math.fm.com) | Mechanics warm-up 2, Mechanics stretch 2 |
+| [Equilibrium of a rigid body](#math.fm.rigid) | Mechanics exam standard 1 |
+| [Hooke's law and elastic energy](#math.fm.elastic) | Mechanics warm-up 4, Mechanics exam standard 5, mixed set 1 |
+| [Circular motion: horizontal circles](#math.fm.circular) | Mechanics warm-up 5, Mechanics stretch 3 |
+| [Circular motion: vertical circles](#math.fm.vertical) | Mechanics exam standard 2, mixed set 3 |
+| [Linear motion under a variable force](#math.fm.variable) | Mechanics warm-up 3, Mechanics stretch 4 |
+| [Direct impact and restitution](#math.fm.impulse) | Mechanics exam standard 3 |
+| [Oblique impact](#math.fm.oblique) | Mechanics exam standard 4 |
+| [Continuous random variables](#math.fm.crv) | Statistics warm-up 1, Statistics exam standard 4, mixed set 4 |
+| [The t-distribution: one-sample tests and intervals](#math.fm.inference) | Statistics warm-up 2, Statistics exam standard 5, Statistics stretch 3 |
+| [Comparing two means](#math.fm.twosample) | Statistics exam standard 1 |
+| [Chi-squared goodness of fit](#math.fm.chisq) | Statistics warm-up 3, Statistics stretch 2 |
+| [Chi-squared tests for independence](#math.fm.contingency) | Statistics exam standard 2, mixed set 2 |
+| [Non-parametric tests: the sign test](#math.fm.nonpar) | Statistics warm-up 4 |
+| [Wilcoxon tests](#math.fm.wilcoxon) | Statistics exam standard 3, Statistics stretch 4 |
+| [Probability generating functions](#math.fm.pgf) | Statistics warm-up 5, Statistics stretch 1 |
 
 :::recap
 - Mixed practice trains the first step: read the question, name the chapter, then choose the method. Do a few questions at a time and keep a list of the chapters you had to look up.

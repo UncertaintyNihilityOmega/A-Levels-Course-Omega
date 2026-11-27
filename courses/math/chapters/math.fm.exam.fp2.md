@@ -128,7 +128,7 @@ Work through the topics in the sidebar order. For each, the "know cold" line is 
 | Arc length and surface | [Arc length and surface area](#math.fm.arclength) | \(\sqrt{1 + (dy/dx)^2}\), parametric \(\sqrt{\dot x^2 + \dot y^2}\), the factor \(2\pi\times\)distance from the axis |
 | De Moivre | [De Moivre's theorem and trigonometry](#math.fm.complex) | the theorem, \(z^n + z^{-n} = 2\cos n\theta\), expanding with the binomial theorem |
 | Roots and series | [Roots of unity and complex series](#math.fm.complex2) | \(z^n = w\) with \(+2\pi k\), the \(C + \mathrm{i}S\) method |
-| Three planes | [Three equations, three planes](#math.fm.systems) | consistency, determinant zero is not "no solution", the five geometries |
+| Three planes | [Three equations, three planes](#math.fm.systems) | consistency, determinant zero is not "no solution", the pictures of three planes (sheaf, triangular prism, parallel planes, coincident planes) |
 | Eigenvalues | [Eigenvalues and eigenvectors](#math.fm.matrices2) | \(\det(\mathbf{A} - \lambda\mathbf{I}) = 0\), eigenvectors, \(\mathbf{QDQ}^{-1}\), Cayley–Hamilton |
 | First order DEs | [First order differential equations](#math.fm.de) | divide first, integrating factor, \(+c\) before dividing |
 | Second order DEs | [Second order differential equations](#math.fm.de2) | CF from the auxiliary equation, PI trial form (with the clash rule), conditions on CF + PI |
@@ -166,11 +166,12 @@ Paper 2 asks you to **derive** things, and the layout earns the marks.
 :::eg (Exam style) Let \(I_n = \displaystyle\int_0^{\pi/2} x^n\sin x\,dx\) for \(n \ge 0\). (a) Show that \(I_n = n\left(\dfrac{\pi}{2}\right)^{n-1} - n(n - 1)I_{n-2}\) for \(n \ge 2\). (b) Hence find the exact value of \(I_2\).
 (a) Take \(u = x^n\) and \(\dfrac{dv}{dx} = \sin x\), so \(\dfrac{du}{dx} = nx^{n-1}\) and \(v = -\cos x\): [M1]
 \[I_n = \Big[-x^n\cos x\Big]_0^{\pi/2} + n\int_0^{\pi/2} x^{n-1}\cos x\,dx\] [A1]
-The boundary term is 0 at \(x = \tfrac\pi2\) (because \(\cos\tfrac\pi2 = 0\)) and 0 at \(x = 0\) (because \(n \ge 2\) makes \(x^n = 0\)). Integrate by parts again with \(u = x^{n-1}\) and \(\dfrac{dv}{dx} = \cos x\): [M1]
+The boundary term \(\big[-x^n\cos x\big]\) is 0 at both ends: at \(x = \tfrac\pi2\) because \(\cos\tfrac\pi2 = 0\), and at \(x = 0\) because \(x^n = 0\). Integrate by parts again with \(u = x^{n-1}\) and \(\dfrac{dv}{dx} = \cos x\): [M1]
 \[\begin{aligned}
 I_n &= n\Big[x^{n-1}\sin x\Big]_0^{\pi/2} - n(n - 1)\int_0^{\pi/2} x^{n-2}\sin x\,dx \\
 &= n\left(\frac\pi2\right)^{n-1} - n(n - 1)I_{n-2}
 \end{aligned}\] [A1] [A1]
+The second boundary term \(n\big[x^{n-1}\sin x\big]\) is 0 at \(x = 0\) (because \(n \ge 2\) makes \(x^{n-1} = 0\)) and \(n\left(\tfrac\pi2\right)^{n-1}\) at \(x = \tfrac\pi2\) (because \(\sin\tfrac\pi2 = 1\)).
 (b) With \(n = 2\): \(I_2 = 2\left(\dfrac\pi2\right) - 2I_0\), and \(I_0 = \displaystyle\int_0^{\pi/2}\sin x\,dx = \big[-\cos x\big]_0^{\pi/2} = 1\). [M1]
 So \(I_2 = \pi - 2\). [A1]
 :::
@@ -204,7 +205,7 @@ Two habits matter here: add the PI **before** you differentiate for the second c
 
 These come from the warning boxes in the Paper 2 chapters.
 
-- **Hyperbolic:** taking \(\sinh x = \pm\) a value when \(x > 0\) decides the sign; \(\cosh 2x \equiv \cosh^2x - \sinh^2x\) is wrong (that is always 1); writing \(\pm\) inside \(\cosh^{-1}\) instead of when you solve \(\cosh x = c\).
+- **Hyperbolic:** if \(x > 0\) is given, \(\sinh x = -2\) is impossible (\(\sinh x\) is positive for \(x > 0\)), so keep only the positive value; \(\cosh 2x \equiv \cosh^2x - \sinh^2x\) is wrong (that is always 1); solve \(\cosh x = c\) as \(x = \pm\cosh^{-1}c\), and do not write \(\cosh^{-1}(\pm c)\).
 - **Differentiation and Maclaurin:** the derivative of \(\cosh x\) is \(+\sinh x\); \(\dfrac{d^2y}{dx^2}\) is not \(\dfrac{d^2y/dt^2}{d^2x/dt^2}\); dividing by \(3\) instead of \(3!\); dropping terms too early in a product of series.
 - **Integration:** using \(\sin^{-1}\) when the root has a plus sign; keeping the old limits after a substitution; mixing the signs of \(\sinh^2u\) and \(\sin^2\theta\) integrals.
 - **Reduction formulae:** forgetting the second end of a boundary term; stepping by 1 when the formula steps by 2 (the chain \(6 \to 4 \to 2 \to 0\)).
@@ -214,7 +215,7 @@ These come from the warning boxes in the Paper 2 chapters.
 - **Roots of unity:** writing \(n\theta = 0\) instead of \(n\theta = 2\pi k\) and losing \(n - 1\) roots; carrying \(\omega\) from one question to another.
 - **Systems of planes:** writing "no solution" because the determinant is zero; calling a common line a triangular prism.
 - **Eigenvalues:** an eigenvector is a direction (any non-zero multiple); \(\det(\mathbf{A} - \lambda\mathbf{I})\) starts with \(-\lambda^3\) for a 3 × 3 matrix; the eigenvalues of \(\mathbf{A} + \mathbf{B}\) are not the sums; \(\mathbf{D}\) and \(\mathbf{Q}\) in different orders.
-- **First order DEs:** not dividing by the coefficient of \(\dfrac{dy}{dx}\) first; \(P = -\dfrac4x\), not \(-4\); a missing \(+c\) before dividing by the integrating factor.
+- **First order DEs:** not dividing by the coefficient of \(\dfrac{dy}{dx}\) first; for \(x\dfrac{dy}{dx} - 4y = x^3\), divide by \(x\) first: \(\dfrac{dy}{dx} - \dfrac4x y = x^2\), so \(P = -\dfrac4x\), not \(-4\); a missing \(+c\) before dividing by the integrating factor.
 - **Second order DEs:** a trial form with the cosine but no sine; using the conditions on the CF alone; an unnoticed clash with the CF (multiply by \(x\)).
 
 :::warn Check the last line

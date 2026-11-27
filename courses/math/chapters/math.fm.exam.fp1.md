@@ -58,7 +58,7 @@ Rules of thumb for the paper:
 
 1. **Spend the first 3 minutes reading.** Read every question stem and the parts. Mark the ones you can start at once. The paper is not in order of difficulty, so a later question may be easier for you than an earlier one.
 2. **Do your strongest topics first** if that settles you, but come back to every question: a missed question costs far more than a long one.
-3. **Stop at about twice the time** for a question you cannot finish. Leave a gap, write "see later" and move on. Method marks are awarded for a correct start, so write the first lines of any question you attempt.
+3. **Stop when you have used about twice the planned time in the table** (for example 14 minutes on a 5-mark question) on a question you cannot finish. Leave a gap, write "see later" and move on. Method marks are awarded for a correct start, so write the first lines of any question you attempt.
 4. **Use "hence" and "deduce".** These words say that the next part uses the previous one. If you cannot do a part, but a later part says "hence", use the result printed in the earlier part: when it is a "show that" result, you may use it even if you could not prove it.
 5. **Keep 15 minutes** for returning to gaps, and for the checks listed in the final-week checklist (a determinant by a second method, a root by substitution, \(n = 1\) in a series).
 
@@ -186,7 +186,7 @@ Check with \(n = 1\): the formula gives \(\tfrac34 - \tfrac{5}{12} = \tfrac13\),
 
 These come from the warning boxes in the Paper 1 chapters.
 
-- **Roots:** the sum and the product carry a minus sign and the pairs do not; a missing power has coefficient 0 (so \(\sum\alpha = 0\) for \(x^3 - 7x + 6 = 0\)); a negative \(\sum\alpha^2\) shows non-real roots but a positive one proves nothing; substituting \(x = \dfrac{y - 1}{2}\), not \(2x + 1\).
+- **Roots:** the sum and the product carry a minus sign and the pairs do not; a missing power has coefficient 0 (so \(\sum\alpha = 0\) for \(x^3 - 7x + 6 = 0\)); a negative \(\sum\alpha^2\) shows non-real roots but a positive one proves nothing; to find the equation with roots \(2\alpha + 1, 2\beta + 1, \ldots\), put \(y = 2x + 1\), so \(x = \dfrac{y - 1}{2}\); do not replace \(x\) by \(2x + 1\).
 - **Series:** to start at \(r = m\), subtract the sum to \(m - 1\), not \(m\); writing out only the first lines and guessing the end; losing a surviving term when the gap is 2 or 3; forgetting a factor such as \(\tfrac12\); deciding convergence from the terms instead of from \(S_n\).
 - **Matrices:** swapping the order of a product; \(\det(k\mathbf{A}) = k^n\det\mathbf{A}\) for an \(n \times n\) matrix; a missing transpose or division by the determinant when inverting.
 - **Transformations:** "A followed by B" is \(\mathbf{BA}\), with the second transformation on the left; confusing an invariant line with a line of invariant points.
@@ -194,7 +194,7 @@ These come from the warning boxes in the Paper 1 chapters.
 - **Rational functions:** writing "horizontal asymptote \(y = 0\)" when the numerator is one degree higher, instead of dividing for the oblique asymptote; the direction of the discriminant inequality (outside the roots, not between); an unexamined special value.
 - **Graph relations:** moving the \(x\)-coordinate instead of the height for \(y = 1/f\); drawing a curve for \(y^2 = f\) where \(f < 0\); multiplying an inequality by a quantity of unknown sign.
 - **Polar:** using the calculator's \(\tan^{-1}\) without checking the quadrant; degrees in \(\tfrac12\int r^2\,d\theta\); counting a curve twice; forgetting the \(\tfrac12\) or integrating \(r\) instead of \(r^2\).
-- **Vectors:** using \(\sin\theta\) from the vector product to find an angle (it cannot say acute from obtuse, so use the scalar product); two parallel directions in a plane equation; the line-plane angle with \(\cos\) instead of \(\sin\); setting a coordinate to 0 when the direction has a zero component.
+- **Vectors:** using \(\sin\theta\) from the vector product to find an angle (it cannot say acute from obtuse, so use the scalar product); two parallel directions in a plane equation; the line-plane angle with \(\cos\) instead of \(\sin\); when finding a point on the line of intersection of two planes, setting \(x = 0\) fails if the direction of the line has \(x\)-component 0, because the line never reaches \(x = 0\): choose another coordinate.
 
 :::warn Method before arithmetic
 In all of these, the slip is cheap and the lost mark is large. Slow down on the first line of each question, write the formula before you substitute and check the sign of every answer before you move on.

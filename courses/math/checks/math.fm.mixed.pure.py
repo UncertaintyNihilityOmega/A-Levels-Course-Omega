@@ -42,10 +42,12 @@ assert all(c.split(".")[-1] in fp1 for c in chap[:15]), "questions 1 to 15 must 
 assert any(c.split(".")[-1] not in fp1 for c in chap[15:])
 # the table at the end lists every question under its chapter
 table = text.split("## Where the questions come from")[1].split(":::recap")[0]
+labels = [f"{nm} {j}" for nm, cnt in (("warm-up", 8), ("exam standard", 7), ("mixed", 9), ("stretch", 7)) for j in range(1, cnt + 1)]
+assert len(labels) == len(chap) == 31
 for i, c in enumerate(chap, 1):
     row = [ln for ln in table.splitlines() if f"(#{c})" in ln]
     assert row, c
-    assert str(i) in re.split(r"[,\s]+", row[0].split("|")[2].strip()), f"question {i} missing from the table row for {c}"
+    assert labels[i - 1] in [x.strip() for x in row[0].split("|")[2].split(",")], f"question {labels[i - 1]} missing from the table row for {c}"
 
 # ---- 1 series ----
 eq("q1", sum(r * r + 3 * r for r in range(1, 13)), 884)
@@ -262,4 +264,11 @@ for n in range(1, 15):
 for k in range(1, 15):
     Mk = [[1 + 2 * k, -2 * k], [2 * k, 1 - 2 * k]]
     assert mm2(Mk, Mm) == [[3 + 2 * k, -2 - 2 * k], [2 + 2 * k, -1 - 2 * k]]
+# stretch rational question: y = (x^2+1)/(x-1) has stationary points at x = 1 +- sqrt2, y = 2 +- 2 sqrt2 (derivative zero, y = x/ 1 repeated root x = y/2)
+import math as _m
+for _s in (1, -1):
+    _x = 1 + _s * _m.sqrt(2); _y = 2 + _s * 2 * _m.sqrt(2)
+    eq("rational y", (_x ** 2 + 1) / (_x - 1), _y)
+    eq("rational x=y/2", _x, _y / 2)
+    eq("rational dy/dx", (2 * _x * (_x - 1) - (_x ** 2 + 1)) / (_x - 1) ** 2, 0)
 print("ok")
