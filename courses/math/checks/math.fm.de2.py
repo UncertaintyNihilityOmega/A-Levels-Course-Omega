@@ -335,4 +335,11 @@ eq("ep6", 10, 2 + 4 + 4)
 eq("ep7", 10, 3 + 3 + 4)
 eq("s1", 7, 4 + 3)
 eq("s2", 6, 3 + 3)
+# reader items: y'' + 2y' = 4x has PI y = x^2 - x (roots 0 and -2)
+for x in (0.5, 2.0):
+    y1 = 2 * x - 1
+    eq("de2 PI", 2 + 2 * y1, 4 * x)
+eq("de2 roots", (0) ** 2 + 2 * 0, 0)
+eq("de2 roots2", (-2) ** 2 + 2 * (-2), 0)
+
 print("ok")

@@ -184,7 +184,7 @@ Each step multiplies the distance from \(O\) by 1.1 and turns the point through 
 
 (a) The angle is \(24 \times 15^\circ = 360^\circ\), a full turn, so the point is on the positive real axis, at a distance \(1.1^{24} = 9.85\) (3 s.f.). The position is \(9.85\).
 
-(b) The point is on the negative real axis when \(15n \equiv 180\) modulo 360, and the first such \(n\) is \(n = 12\). The distance is \(1.1^{12} = 3.14\) (3 s.f.), so the point is at \(-3.14\).
+(b) The point is on the negative real axis when the angle \(15n\) degrees is \(180\) plus a multiple of \(360\), and the first such \(n\) is \(n = 12\). The distance is \(1.1^{12} = 3.14\) (3 s.f.), so the point is at \(-3.14\).
 
 (c) We need \(1.1^n > 100\), so \(n > \dfrac{\ln100}{\ln1.1} = 48.3\). The first whole number is \(n = 49\). Check the neighbours: \(1.1^{48} = 97.0 < 100\) and \(1.1^{49} = 107 > 100\).
 :::
@@ -243,7 +243,7 @@ A tangent is a ratio, so write \(\tan n\theta = \dfrac{\sin n\theta}{\cos n\thet
 :::eg Use de Moivre's theorem to express \(\tan3\theta\) in terms of \(t = \tan\theta\).
 From the expansion above, \(\sin3\theta = 3c^2s - s^3\) and \(\cos3\theta = c^3 - 3cs^2\). Divide the numerator and the denominator by \(c^3\):
 \[\tan3\theta = \frac{3c^2s - s^3}{c^3 - 3cs^2} = \frac{3t - t^3}{1 - 3t^2}\]
-**Check** with \(\theta = \dfrac\pi{12}\): \(\tan\dfrac\pi4 = 1\), and with \(t = 2 - \sqrt3\) the right side is \(\dfrac{3t - t^3}{1 - 3t^2} = 1\).
+**Check** with \(\theta = \dfrac\pi{12}\) (that is \(15^\circ\), and \(\tan15^\circ = \tan(45^\circ - 30^\circ) = \dfrac{1 - 1/\sqrt3}{1 + 1/\sqrt3} = 2 - \sqrt3\)): \(\tan\dfrac\pi4 = 1\), and with \(t = 2 - \sqrt3\) the right side is \(\dfrac{3t - t^3}{1 - 3t^2} = 1\).
 :::
 
 :::eg (Exam style) (a) Use de Moivre's theorem to show that \(\tan5\theta = \dfrac{5t - 10t^3 + t^5}{1 - 10t^2 + 5t^4}\), where \(t = \tan\theta\). [4] (b) Hence find the exact value of \(\tan^2\dfrac\pi5\). [4]
@@ -359,7 +359,7 @@ Here \(\sin\dfrac{5\pi}{2} = 1\), \(\sin\dfrac{3\pi}{2} = -1\) and \(\sin\dfrac\
 :::
 
 :::eg The voltage across a resistor is \(V = 4\cos^2 t\) volts, so the power in it is proportional to \(V^2 = 16\cos^4 t\). Find the mean value of \(V^2\) over one full period, \(0 \leq t \leq 2\pi\).
-Use \(\cos^4t = \dfrac{\cos4t + 4\cos2t + 3}{8}\), so \(V^2 = 2\cos4t + 8\cos2t + 6\). The mean over a period is \(\dfrac{1}{2\pi}\displaystyle\int_0^{2\pi}V^2\,dt\):
+Use \(\cos^4t = \dfrac{\cos4t + 4\cos2t + 3}{8}\), so \(V^2 = 2\cos4t + 8\cos2t + 6\). The mean value of a function \(f\) over an interval of length \(L\) is \(\dfrac1L\displaystyle\int f\,dt\) (the area under the graph divided by the width), and here \(L = 2\pi\), so the mean is \(\dfrac{1}{2\pi}\displaystyle\int_0^{2\pi}V^2\,dt\):
 \[\frac{1}{2\pi}\left[\frac{\sin4t}{2} + 4\sin2t + 6t\right]_0^{2\pi} = \frac{1}{2\pi} \times 12\pi = 6\]
 Every cosine term integrates to zero over whole periods, so only the constant 6 is left. The mean of \(V^2\) is 6 (in volts squared).
 :::
@@ -375,7 +375,7 @@ A multiple-angle identity turns a trigonometric equation into a polynomial one. 
 
 So \(x^3 - 3x - 1 = 0\) becomes \(2\cos3\theta = 1\), that is \(\cos3\theta = \dfrac12\). [M1]
 
-Then \(3\theta = \dfrac\pi3, \dfrac{5\pi}{3}, \dfrac{7\pi}{3}\), giving \(\theta = \dfrac\pi9, \dfrac{5\pi}{9}, \dfrac{7\pi}{9}\), and these three angles have different cosines. [A1]
+Take \(0 \leq \theta \leq \pi\), so \(0 \leq 3\theta \leq 3\pi\); in this range \(\cos3\theta = \dfrac12\) has the solutions \(3\theta = \dfrac\pi3, \dfrac{5\pi}{3}, \dfrac{7\pi}{3}\) (the next ones, \(\dfrac{11\pi}{3}\) and beyond, are past \(3\pi\)). That gives \(\theta = \dfrac\pi9, \dfrac{5\pi}{9}, \dfrac{7\pi}{9}\), and \(\cos\theta\) takes a different value for each \(\theta\) from 0 to \(\pi\), so these three angles give three different values of \(x\). [A1]
 
 A cubic has at most three roots, so these are all of them: \(2\cos\dfrac\pi9\), \(2\cos\dfrac{5\pi}{9}\), \(2\cos\dfrac{7\pi}{9}\). [A1]
 **(c)** The product of the roots of \(x^3 - 3x - 1 = 0\) is \(-\dfrac{d}{a} = 1\):

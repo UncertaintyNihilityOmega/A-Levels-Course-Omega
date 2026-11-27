@@ -192,7 +192,7 @@ The other roots are \((1 + \mathrm{i})\omega\) and \((1 + \mathrm{i})\omega^2\),
 
 If the centre of the polygon is a point \(c\) other than the origin, rotate about \(c\): the vertices are \(c + (z_0 - c)\omega^k\). The distance from the centre to a vertex is \(R = |z_0 - c|\), and two neighbouring vertices are
 \[|z_1 - z_0| = R\left|\omega - 1\right| = 2R\sin\frac\pi n\]
-apart, because \(\left|\mathrm{e}^{\mathrm{i}\alpha} - 1\right| = 2\sin\dfrac\alpha2\) for \(0 < \alpha < 2\pi\) (shown in the \(C + \mathrm{i}S\) section below). The polygon has area \(\dfrac n2R^2\sin\dfrac{2\pi}{n}\): it is \(n\) triangles, each with two sides \(R\) and angle \(\dfrac{2\pi}{n}\) between them.
+apart, because \(\left|\mathrm{e}^{\mathrm{i}\alpha} - 1\right| = 2\sin\dfrac\alpha2\) for \(0 < \alpha < 2\pi\). The proof takes two lines: \(\mathrm{e}^{\mathrm{i}\alpha} - 1 = \mathrm{e}^{\mathrm{i}\alpha/2}\left(\mathrm{e}^{\mathrm{i}\alpha/2} - \mathrm{e}^{-\mathrm{i}\alpha/2}\right) = 2\mathrm{i}\sin\dfrac\alpha2\,\mathrm{e}^{\mathrm{i}\alpha/2}\), and \(\mathrm{e}^{\mathrm{i}\alpha/2}\) has modulus 1, so the modulus is \(2\sin\dfrac\alpha2\) (positive because \(0 < \dfrac\alpha2 < \pi\)). The polygon has area \(\dfrac n2R^2\sin\dfrac{2\pi}{n}\): it is \(n\) triangles, each with two sides \(R\) and angle \(\dfrac{2\pi}{n}\) between them.
 
 :::eg An equilateral triangle \(ABC\) has its centre at the point \(1 + 2\mathrm{i}\) in the Argand diagram and one vertex, \(A\), at \(4 + 6\mathrm{i}\). Find the other two vertices and the area of the triangle.
 The centre is \(c = 1 + 2\mathrm{i}\), and \(A - c = 3 + 4\mathrm{i}\), so \(R = 5\). The other vertices are \(c + (3 + 4\mathrm{i})\omega\) and \(c + (3 + 4\mathrm{i})\omega^2\), with \(\omega = -\dfrac12 + \dfrac{\sqrt3}{2}\mathrm{i}\):
@@ -367,10 +367,10 @@ and the imaginary part is \(S = \dfrac{2\sin\theta}{5 - 4\cos\theta}\).
 **Check**: for \(\theta = 0\) the sum is \(1 + \tfrac12 + \tfrac14 + \dots = 2\), and \(C = \dfrac{2}{1} = 2\). For \(\theta = \pi\) it is \(1 - \tfrac12 + \tfrac14 - \dots = \tfrac23\), and \(C = \dfrac{6}{9} = \tfrac23\).
 :::
 
-:::eg Five identical sources send out waves that are each \(\theta\) out of phase with the one before, so the waves are \(\cos(\omega t + r\theta)\) for \(r = 0, 1, 2, 3, 4\). The resultant is the real part of \(\mathrm{e}^{\mathrm{i}\omega t}\displaystyle\sum_{r=0}^4\mathrm{e}^{\mathrm{i}r\theta}\), and its amplitude is the modulus of that sum, \(\left|\dfrac{\sin\frac{5\theta}{2}}{\sin\frac\theta2}\right|\). Find the amplitude of the resultant when (a) \(\theta = 30^\circ\), (b) \(\theta = 72^\circ\).
+:::eg Five identical sources send out waves that are each \(\theta\) out of phase with the one before, so the waves are \(\cos(kt + r\theta)\) for \(r = 0, 1, 2, 3, 4\), where \(k\) is the angular frequency (a number of radians per second, not a root of unity). The resultant is the real part of \(\mathrm{e}^{\mathrm{i}kt}\displaystyle\sum_{r=0}^4\mathrm{e}^{\mathrm{i}r\theta}\), and its amplitude is the modulus of that sum, \(\left|\dfrac{\sin\frac{5\theta}{2}}{\sin\frac\theta2}\right|\). Find the amplitude of the resultant when (a) \(\theta = 30^\circ\), (b) \(\theta = 72^\circ\).
 (a) \(\dfrac{\sin75^\circ}{\sin15^\circ} = \dfrac{0.9659}{0.2588} = 3.73\) (3 s.f.). The waves reinforce each other (five equal waves in step would give 5).
 
-(b) \(\theta = 72^\circ = \dfrac{2\pi}{5}\), so \(\dfrac{5\theta}{2} = 180^\circ\) and \(\sin180^\circ = 0\). The amplitude is 0: the waves cancel completely. This is the sum of the fifth roots of unity, \(1 + \omega + \omega^2 + \omega^3 + \omega^4 = 0\): the five phasors form a regular pentagon and return to the start.
+(b) \(\theta = 72^\circ = \dfrac{2\pi}{5}\), so \(\dfrac{5\theta}{2} = 180^\circ\) and \(\sin180^\circ = 0\). The amplitude is 0: the waves cancel completely. This is the sum of the fifth roots of unity, \(1 + \omega + \omega^2 + \omega^3 + \omega^4 = 0\), with \(\omega = \mathrm{e}^{\mathrm{i}\theta} = \mathrm{e}^{2\pi\mathrm{i}/5}\): the five phasors form a regular pentagon and return to the start.
 :::
 
 :::exam What MF19 gives you, and what it does not

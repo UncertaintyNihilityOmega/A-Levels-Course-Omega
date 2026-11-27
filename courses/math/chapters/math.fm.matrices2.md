@@ -38,7 +38,7 @@ for some number \(\lambda\). The number \(\lambda\) is the **eigenvalue** of \(\
 
 The word "eigen" is German for "own" or "characteristic". An eigenvector is a direction that belongs to the matrix. The eigenvalue says what the matrix does along that direction: it multiplies lengths by \(\lambda\). A negative eigenvalue flips the vector to point the opposite way, and an eigenvalue of 0 collapses it to the origin.
 
-Try the matrix in the tool below. The two directions that it only stretches are drawn, and the panel lists the eigenvalues and eigenvector directions. Then try the presets. A shear has only one direction that does not move, and a rotation has none, so its eigenvalues are not real.
+Try the matrix in the tool below. The two directions that it only stretches are drawn, and the panel lists the eigenvalues and eigenvector directions. Then try the presets. A shear has only one direction that does not move, and a rotation has none, so its eigenvalues are not real numbers (this course does not need them, and you will not be asked for them: see the note on the syllabus below).
 
 :::html
 <div class="widget" data-w="fm-matrix" data-m="3,1,2,2" data-shape="triangle" data-show="grid,det,invariant,eigen" data-presets="rotation,reflection,shear,stretch,enlargement"></div>
@@ -405,7 +405,7 @@ and setting this to 0 gives \(\lambda^3 - 2\lambda^2 - 5\lambda + 6 = 0\).
 (b) \((1 - \lambda)(\lambda - 3)(\lambda + 2) = 0\) [M1] so \(\lambda = 1\), \(3\) or \(-2\). [A1]
 (c) For \(\lambda = 3\), \(\mathbf{A} - 3\mathbf{I} = \begin{pmatrix} -2 & 2 & 2 \\ -3 & -2 & 3 \\ 3 & 2 & -3 \end{pmatrix}\). [M1] The vector product of the first two rows is \(\begin{pmatrix} 10 \\ 0 \\ 10 \end{pmatrix}\) [M1], so an eigenvector is \(\begin{pmatrix} 1 \\ 0 \\ 1 \end{pmatrix}\). [A1]
 Q: [9 marks] ★★★ The sequence \(a_n\) is defined by \(a_0 = 0\), \(a_1 = 1\) and \(a_{n+2} = 5a_{n+1} - 6a_n\). Let \(\mathbf{M} = \begin{pmatrix} 5 & -6 \\ 1 & 0 \end{pmatrix}\), so that \(\begin{pmatrix} a_{n+1} \\ a_n \end{pmatrix} = \mathbf{M}\begin{pmatrix} a_n \\ a_{n-1} \end{pmatrix}\). (a) Find the eigenvalues and eigenvectors of \(\mathbf{M}\). (b) Write \(\mathbf{M}\) as \(\mathbf{QDQ}^{-1}\). (c) Hence find a formula for \(a_n\).
-H: The characteristic equation of \(\mathbf{M}\) is the same as the auxiliary equation of the recurrence.
+H: Find the characteristic equation of \(\mathbf{M}\) directly: \(\det(\mathbf{M} - \lambda\mathbf{I}) = 0\).
 H: \(\begin{pmatrix} a_{n+1} \\ a_n \end{pmatrix} = \mathbf{M}^n\begin{pmatrix} a_1 \\ a_0 \end{pmatrix} = \mathbf{M}^n\begin{pmatrix} 1 \\ 0 \end{pmatrix}\).
 H: Use \(\mathbf{Q}^{-1}\begin{pmatrix} 1 \\ 0 \end{pmatrix}\) first, then multiply by \(\mathbf{D}^n\), then by \(\mathbf{Q}\).
 A: (a) \(\det(\mathbf{M} - \lambda\mathbf{I}) = (5 - \lambda)(-\lambda) + 6 = 0\) [M1] so \(\lambda^2 - 5\lambda + 6 = 0\). [A1] \(\lambda = 2\) or \(3\). [A1]

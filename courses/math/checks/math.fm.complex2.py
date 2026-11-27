@@ -438,4 +438,9 @@ eq("n=6", sin(pi / 6) * sin(2 * pi / 6) * sin(3 * pi / 6) * sin(4 * pi / 6) * si
 assert F(6, 32) == F(3, 16)
 assert 3 + 2 + 3 == 8 and 4 == 1 + 1 + 1 + 1
 
+# reader items: |e^{ia} - 1| = 2 sin(a/2); five-wave amplitude uses omega = e^{2 pi i/5}
+for a in (0.4, 1.7, 3.0, 5.5):
+    eq("chord", abs(cmath.exp(1j * a) - 1), 2 * sin(a / 2) if a < 2 * pi else 0, 1e-12)
+eq("5 waves th=72", abs(sum(cmath.exp(1j * r * radians(72)) for r in range(5))), 0, 1e-12)
+
 print("ok")

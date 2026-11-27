@@ -94,7 +94,7 @@ Substitute \(u = 1 + \tfrac94x\), so \(du = \tfrac94dx\). The limits become \(u 
 **Check**: the straight line from \((0, 0)\) to \((4, 8)\) has length \(\sqrt{80} = 8.94\), and a curve is longer than the straight line joining its ends; the path along the axes, \(4 + 8 = 12\), is longer than the curve. And \(8.94 < 9.07 < 12\).
 :::
 
-An awkward root that will not simplify is rare in exams. The curves are chosen so that \(1 + \left(\dfrac{dy}{dx}\right)^2\) is a **perfect square** (or becomes one through an identity), and the root disappears. A quick test: if \(\dfrac{dy}{dx}\) is of the form \(\dfrac{p}{2} - \dfrac{1}{2p}\) or \(\sinh\) of something, expect \(1 + \left(\dfrac{dy}{dx}\right)^2 = \left(\dfrac{p}{2} + \dfrac{1}{2p}\right)^2\) or \(\cosh^2\).
+An awkward root that will not simplify is rare in exams. The curves are chosen so that \(1 + \left(\dfrac{dy}{dx}\right)^2\) is a **perfect square** (or becomes one through an identity), and the root disappears. A quick test: if \(\dfrac{dy}{dx}\) is of the form \(\dfrac{p}{2} - \dfrac{1}{2p}\) or \(\sinh\) of something, expect \(1 + \left(\dfrac{dy}{dx}\right)^2 = \left(\dfrac{p}{2} + \dfrac{1}{2p}\right)^2\) or \(\cosh^2\). Here \(p\) stands for any expression (the next example has \(p = x\)). The reason is that \(\left(\dfrac p2 - \dfrac{1}{2p}\right)^2 + 1 = \left(\dfrac p2 + \dfrac{1}{2p}\right)^2\): squaring either bracket gives \(\dfrac{p^2}{4} + \dfrac{1}{4p^2}\) with a cross term of \(\mp\dfrac12\), and adding 1 turns \(-\dfrac12\) into \(+\dfrac12\).
 
 :::eg (Exam style) The curve \(C\) has equation \(y = \dfrac{x^2}{4} - \tfrac12\ln x\) for \(x > 0\). (a) Show that \(1 + \left(\dfrac{dy}{dx}\right)^2 = \left(\dfrac x2 + \dfrac{1}{2x}\right)^2\). (b) Find the exact length of \(C\) from \(x = 1\) to \(x = e\).
 **(a)** \(\dfrac{dy}{dx} = \dfrac x2 - \dfrac{1}{2x}\). [B1]
@@ -193,6 +193,8 @@ Take \(\theta\) as the parameter, with \(x = r\cos\theta\) and \(y = r\sin\theta
 4. Since \(\cos^2\theta + \sin^2\theta = 1\), this is \(r^2 + r'^2\).
 5. Put it into the parametric formula: \(s = \displaystyle\int\sqrt{r^2 + \left(\dfrac{dr}{d\theta}\right)^2}\,d\theta\).
 :::
+
+The formula also has a picture behind it. As \(\theta\) grows by a small \(d\theta\), the point moves a distance \(r\,d\theta\) round a circle of radius \(r\) (the circular part of the motion) and a distance \(dr\) along the radius, and these two are at right angles, so Pythagoras gives \(ds^2 = (r\,d\theta)^2 + dr^2\), which is the same formula.
 
 A check on the formula: a circle \(r = a\) has \(\dfrac{dr}{d\theta} = 0\), so \(s = \displaystyle\int_0^{2\pi}a\,d\theta = 2\pi a\), the circumference. Also remember that the polar **arc length** formula has \(r^2 + (r')^2\) under a root, while the polar **area** formula from [Polar coordinates](#math.fm.polar) is \(\tfrac12\int r^2\,d\theta\). Do not mix them.
 
@@ -333,7 +335,7 @@ Correct lines 3 and 4: \(s = \tfrac12\displaystyle\int_4^8\sqrt u\,du = \tfrac13
 Q: Find the exact length of \(y = \tfrac13\left(x^2 + 2\right)^{3/2}\) from \(x = 0\) to \(x = 3\).
 A: \(\dfrac{dy}{dx} = x\sqrt{x^2 + 2}\), so \(1 + \left(\dfrac{dy}{dx}\right)^2 = 1 + x^2\left(x^2 + 2\right) = \left(x^2 + 1\right)^2\). Then \(s = \displaystyle\int_0^3\left(x^2 + 1\right)dx = \left[\tfrac{x^3}{3} + x\right]_0^3 = 12\).
 Q: Find the length of \(y = \ln\cos x\) from \(x = 0\) to \(x = \tfrac\pi3\), to 3 s.f.
-A: \(\dfrac{dy}{dx} = -\tan x\), so \(1 + \tan^2x = \sec^2x\) and \(s = \displaystyle\int_0^{\pi/3}\sec x\,dx = \left[\ln\left(\sec x + \tan x\right)\right]_0^{\pi/3} = \ln\left(2 + \sqrt3\right) = 1.32\).
+A: \(\dfrac{dy}{dx} = -\tan x\), so \(1 + \tan^2x = \sec^2x\) and \(s = \displaystyle\int_0^{\pi/3}\sec x\,dx = \left[\ln\left(\sec x + \tan x\right)\right]_0^{\pi/3} = \ln\left(2 + \sqrt3\right) = 1.32\). The integral \(\displaystyle\int\sec x\,dx = \ln\left(\sec x + \tan x\right)\) is a standard result given in MF19 (check by differentiating: \(\dfrac{\sec x\tan x + \sec^2x}{\sec x + \tan x} = \sec x\)).
 Q: Find the length of the curve \(x = e^t\cos t\), \(y = e^t\sin t\) for \(0 \le t \le 1\), to 3 s.f.
 A: \(\dfrac{dx}{dt} = e^t(\cos t - \sin t)\), \(\dfrac{dy}{dt} = e^t(\sin t + \cos t)\), so the sum of squares is \(2e^{2t}\) and \(s = \displaystyle\int_0^1\sqrt2\,e^t\,dt = \sqrt2(e - 1) = 2.43\).
 Q: Find the exact length of \(x = 3t^2\), \(y = 2t^3\) for \(0 \le t \le 1\).
@@ -430,7 +432,7 @@ For \(0 \le \theta \le 3\pi\), \(\sin\dfrac\theta3 \ge 0\), so the root is \(a\s
 - \(\displaystyle\int\tfrac12r^2\,d\theta\)
 - \(\displaystyle\int\sqrt{1 + \left(\dfrac{dr}{d\theta}\right)^2}\,d\theta\)
 - \(\displaystyle\int r\,d\theta\)
-> The second option is the area of a sector, a different quantity. The third forgets that the circular part of the motion has size \(r\,d\theta\). The fourth is the length only when \(r\) is constant, and it fails for every other curve.
+> The second option is the area of a sector, a different quantity. The third forgets that the circular part of the motion has size \(r\,d\theta\) (see the picture in the polar section), so \(r^2\) is missing under the root. The fourth is the length only when \(r\) is constant, and it fails for every other curve.
 ? The curve \(y = x^3\) for \(0 \le x \le 1\) is rotated about the \(y\)-axis. Which integral gives the surface area?
 + \(2\pi\displaystyle\int_0^1x\sqrt{1 + 9x^4}\,dx\)
 - \(2\pi\displaystyle\int_0^1x^3\sqrt{1 + 9x^4}\,dx\)

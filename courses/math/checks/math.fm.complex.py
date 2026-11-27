@@ -343,4 +343,12 @@ assert 4 + 2 == 6
 # ---- the figure: arc and ray angles
 eq("fig angle step", 3 * 50, 150)
 
+# ---- reader items: tan 15 degrees, 3theta range, mean value of V^2
+eq("tan 15", tan(radians(15)), 2 - sqrt(3))
+eq("tan 15 via 45-30", (1 - 1 / sqrt(3)) / (1 + 1 / sqrt(3)), 2 - sqrt(3))
+sols = sorted(a for a in (pi / 3 + 2 * pi * k for k in range(3)) if a <= 3 * pi) + sorted(a for a in (-pi / 3 + 2 * pi * k for k in range(1, 3)) if a <= 3 * pi)
+assert [round(s / pi * 3) for s in sorted(sols)] == [1, 5, 7]
+assert 11 * pi / 3 > 3 * pi
+eq("15n deg", (12 * 15) % 360, 180)
+
 print("ok")

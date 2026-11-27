@@ -74,7 +74,7 @@ Divide by \(e^{-2x}\):
 **Check**: \(\dfrac{dy}{dx} = -\tfrac12 + 2ce^{2x}\), so \(\dfrac{dy}{dx} - 2y = -\tfrac12 + x + \tfrac12 = x\). The \(c\) terms cancel, as they must.
 :::
 
-The solution is a family of curves, one for each \(c\). In the slope field below the equation is \(\dfrac{dy}{dx} = 2y + x\). The starting point \((-1, 0.25)\) lies on the line \(y = -\tfrac12x - \tfrac14\) (the member with \(c = 0\)), and the curve drawn through it is that straight line. Click above and below that line to start other curves: every other member of the family runs away exponentially, upwards for \(c > 0\) and downwards for \(c < 0\).
+The solution is a family of curves, one for each \(c\). The picture below is a **slope field**. At each point \((x, y)\) a short line segment is drawn with gradient \(\dfrac{dy}{dx}\), here \(2y + x\), so the segments show which way a solution would be heading at that point; a solution curve is a curve that follows the segments. In the field below the equation is \(\dfrac{dy}{dx} = 2y + x\), and clicking sets a starting point from which the curve is drawn. The starting point \((-1, 0.25)\) lies on the line \(y = -\tfrac12x - \tfrac14\) (the member with \(c = 0\)), and the curve drawn through it is that straight line. Click above and below that line to start other curves: every other member of the family runs away exponentially, upwards for \(c > 0\) and downwards for \(c < 0\).
 
 :::html
 <div class="widget" data-w="slopefield" data-f="2*y+x" data-x="-3,3" data-y="-4,4" data-start="-1,0.25"></div>

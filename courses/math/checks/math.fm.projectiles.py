@@ -274,4 +274,9 @@ eq("s2 drop", 2.5 - 0.9, 1.6)
 eq("quiz complement", 90 - 30, 60)
 eq("quiz sin", sin(radians(60)), sin(radians(120)))
 
+# reader items: plane sloping down at 45 deg, horizontal projection at 8 m/s
+eq("down plane t", 8 / 5, 1.6)
+eq("down plane hit", -5 * 1.6 ** 2, -8 * 1.6)
+eq("perp to 30 deg plane", 90 - 30, 60)
+
 print("ok")

@@ -147,7 +147,7 @@ The complementary function solves the "unforced" equation. To solve the full equ
 | cos, sin or both | \(\lambda\cos px + \mu\sin px\), **both** terms, always |
 | a sum of these | the sum of the trial forms |
 For a quadratic, for example, try \(\lambda x^2 + \mu x + \nu\), even if \(f\) has no \(x\) term.
-If the trial form is already part of the complementary function, it gives 0 on the left and cannot work. Multiply it by \(x\) (by \(x^2\) if \(e^{bx}\) corresponds to a repeated root). In 9231 questions the form is given when this happens: for example "show that \(kx\cos 2x\) is a particular integral".
+If the trial form is already part of the complementary function, it gives 0 on the left and cannot work. Multiply it by \(x\) (by \(x^2\) if \(e^{bx}\) corresponds to a repeated root). The same happens with a polynomial trial form when \(0\) is a root of the auxiliary equation (that is, \(c = 0\) in \(ay'' + by' + cy = f\)): a constant is then already in the CF, so multiply the polynomial trial form by \(x\). For example, for \(y'' + 2y' = 4x\) the roots are \(0\) and \(-2\), the CF is \(A + Be^{-2x}\), and the trial form \(\lambda x + \mu\) clashes with the constant \(A\), so try \(y = \lambda x^2 + \mu x\) instead (this gives \(\lambda = 1\), \(\mu = -1\), so \(y = x^2 - x\)). In 9231 questions the form is given when this happens: for example "show that \(kx\cos 2x\) is a particular integral".
 :::
 
 :::steps
@@ -273,7 +273,7 @@ When \(x = 0\), \(\dfrac{dy}{dx} = 1\): \(-2A + 3B + 2 = 1\), so \(-4 + 3B + 2 =
 
 A mass on a spring, with a damper (like a car's shock absorber) and perhaps a driving force, has displacement \(x\) at time \(t\) satisfying
 \[m\frac{d^2x}{dt^2} + c\frac{dx}{dt} + kx = F(t)\]
-Newton's second law gives the left side: \(m\ddot{x}\) is mass times acceleration; the spring pulls back with a force proportional to the displacement; the damper resists with a force proportional to the speed. The details of the spring (Hooke's law) come in [Hooke's law and elastic energy](#math.fm.elastic); here the equation is given.
+Newton's second law gives the left side: \(m\ddot{x}\) is mass times acceleration; the spring pulls back with a force proportional to the displacement; the damper resists with a force proportional to the speed. A dot means a derivative with respect to time: \(\dot{x} = \dfrac{dx}{dt}\) and \(\ddot{x} = \dfrac{d^2x}{dt^2}\). In this section \(m\) is the mass and \(c\) the damping constant; when the auxiliary equation is written below, its unknown is still called \(m\) as in the rest of the chapter, so \(m\) there is the **root**, not the mass. The details of the spring (Hooke's law) come in [Hooke's law and elastic energy](#math.fm.elastic); here the equation is given.
 
 With no forcing (\(F = 0\)) the roots of the auxiliary equation describe the motion:
 
@@ -284,7 +284,7 @@ With no forcing (\(F = 0\)) the roots of the auxiliary equation describe the mot
 | real, distinct, negative | returns to rest slowly, no oscillation | heavy damping |
 
 :::eg A mass of 2 kg on a spring is damped, so that its displacement \(x\) metres after \(t\) seconds satisfies \(2\dfrac{d^2x}{dt^2} + 8\dfrac{dx}{dt} + 26x = 0\). The mass is released from rest at \(x = 0.5\). Find \(x\) in terms of \(t\), and the period of the oscillation.
-Divide by 2: \(\ddot{x} + 4\dot{x} + 13x = 0\). AE: \(m^2 + 4m + 13 = 0\), so \(m = -2 \pm 3\mathrm{i}\) and
+Divide by 2: \(\ddot{x} + 4\dot{x} + 13x = 0\). AE (here \(m\) is the root, not the mass): \(m^2 + 4m + 13 = 0\), so \(m = -2 \pm 3\mathrm{i}\) and
 \[x = e^{-2t}(A\cos 3t + B\sin 3t)\]
 Released from rest at \(x = 0.5\) means \(x(0) = 0.5\) and \(\dot{x}(0) = 0\). So \(A = 0.5\). The derivative at \(t = 0\) is \(-2A + 3B\), so \(-1 + 3B = 0\) and \(B = \tfrac13\):
 \[x = e^{-2t}\left(\tfrac12\cos 3t + \tfrac13\sin 3t\right)\]

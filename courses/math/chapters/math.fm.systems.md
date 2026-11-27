@@ -3,7 +3,7 @@
 @level fm
 @paper CAIE 9231 Paper 2 · AQA/OCR/Edexcel Further Maths Core Pure
 @time 4–6 hours
-@summary Three linear equations in three unknowns are one matrix equation, and each equation is a plane. You will solve the system when the matrix is non-singular, decide what happens when it is singular (a common line, or no common point), tell the five pictures of three planes apart from the equations alone, solve consistent systems with a parameter, and find the values of an unknown that change the picture.
+@summary Three linear equations in three unknowns are one matrix equation, and each equation is a plane. You will solve the system when the matrix is non-singular, decide what happens when it is singular (a common line, or no common point), tell the arrangements of three planes apart from the equations alone, solve consistent systems with a parameter, and find the values of an unknown that change the picture.
 
 :::why
 Three equations in three unknowns turn up whenever three quantities are linked by three measurements: prices, currents in a circuit, amounts of ingredients. Sometimes the equations fix a single answer, sometimes they leave a whole line of answers, and sometimes they contradict each other. A matrix tells you which case you are in before you start, and the picture of three planes tells you what the answer means. The same ideas, with right-hand sides of zero, lead straight to the eigenvalues in the next chapter.
@@ -77,7 +77,7 @@ If \(\det \mathbf{A} \ne 0\), then \(\mathbf{A}^{-1}\) exists, and multiplying \
 If \(\det \mathbf{A} \ne 0\), the system \(\mathbf{Ax} = \mathbf{b}\) has exactly one solution, \(\mathbf{x} = \mathbf{A}^{-1}\mathbf{b}\), for every \(\mathbf{b}\). Geometrically, the three planes meet at a single point.
 :::
 
-There is a geometric reason. The determinant of the matrix whose rows are the three normals equals the scalar triple product \(\mathbf{n}_1 \cdot (\mathbf{n}_2 \times \mathbf{n}_3)\), the volume of the parallelepiped on the three normals. If it is non-zero, the normals do not lie in one plane, so no direction is parallel to all three planes, and the planes must cross at one point.
+There is a geometric reason. The determinant of the matrix whose rows are the three normals equals the scalar triple product \(\mathbf{n}_1 \cdot (\mathbf{n}_2 \times \mathbf{n}_3)\). Its size is the volume of the slanted box (a parallelepiped) with the three normals as edges, and it is zero exactly when the box is flat, that is, when the three normals lie in one plane. If the determinant is non-zero, the normals do not lie in one plane, so no direction is parallel to all three planes, and the planes must cross at one point.
 
 :::eg (Exam style) The matrix \(\mathbf{M} = \begin{pmatrix} 2 & 1 & 3 \\ -1 & -1 & 0 \\ -1 & -2 & -1 \end{pmatrix}\). (a) Find \(\det \mathbf{M}\). (b) Find \(\mathbf{M}^{-1}\). (c) Hence solve \(2x + y + 3z = 9\), \(-x - y = 1\), \(-x - 2y - z = 0\), and describe the three planes geometrically.
 **(a)** Expand along the first row:
@@ -144,9 +144,9 @@ No two normals are parallel, since \(\begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix}\
 **Check** the direction of the line with the vector product of the first two normals: \(\begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} \times \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix} = \begin{pmatrix} 5 \\ -5 \\ -5 \end{pmatrix}\), which is \(-5\) times the direction found.
 :::
 
-### The five pictures
+### The arrangements of three planes
 
-Looking at three planes along the direction in which they are all parallel to a line, each plane shows up as a line. The four pictures below, drawn that way, are the cases with \(\det \mathbf{A} = 0\) in which no two planes are identical. (The fifth case, a single common point, is the "corner of a room" in the widget above.)
+When \(\det \mathbf{A} = 0\), the three normals lie in one plane, so there is a direction at right angles to all three normals, and that direction is parallel to all three planes. Look along it and each plane is edge-on, so it shows up as a line. The figure below shows the four cases drawn that way with \(\det \mathbf{A} = 0\) and no two planes coinciding. The table after it lists all seven arrangements: the "corner of a room", a single common point (the case \(\det \mathbf{A} \ne 0\), in the widget above), the four in the figure, and the two where planes coincide.
 
 :::def Sheaf
 Three planes that share exactly one common line, like the pages of a book meeting at its spine. The system is consistent with a one-parameter family of solutions.
@@ -439,7 +439,7 @@ A: (a) \(\begin{pmatrix} 1 & -1 & -1 \\ 5 & 2 & 0 \\ 0 & 2 & -k \end{pmatrix}\be
 - [ ] I can write three linear equations in three unknowns as \(\mathbf{Ax} = \mathbf{b}\), and write a matrix equation back as three equations.
 - [ ] I can solve a system with a non-singular matrix using the inverse, or by elimination, and say that the planes meet at a point.
 - [ ] I can state that a singular matrix gives either no solution or infinitely many, and decide which by finding the relation between the rows.
-- [ ] I can define consistent and inconsistent, and describe the five arrangements of three planes with the algebra of each.
+- [ ] I can define consistent and inconsistent, and describe the seven arrangements of three planes with the algebra of each.
 - [ ] I can solve a consistent singular system with a parameter and write the solution as a line.
 - [ ] I can find the values of an unknown that make the matrix singular, and decide consistency for each.
 - [ ] I can interpret the geometry: common point, common line (sheaf), triangular prism, parallel planes.

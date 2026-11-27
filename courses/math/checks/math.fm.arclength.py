@@ -289,4 +289,10 @@ for t in (0.8, 4.0):
     eq("q7 ds2", r7(t) ** 2 + dr ** 2, a_ ** 2 * sin(t / 3) ** 4, 1e-9)
     eq("q7 dr", d(r7, t), dr, 1e-6)
 
+# reader items: d/dx ln(sec x + tan x) = sec x; (p/2 - 1/(2p))^2 + 1 = (p/2 + 1/(2p))^2
+for x in (0.3, 1.0):
+    eq("sec integral", d(lambda t: log(1 / cos(t) + tan(t)), x), 1 / cos(x), 1e-6)
+for p in (0.7, 2.5):
+    eq("p identity", (p / 2 - 1 / (2 * p)) ** 2 + 1, (p / 2 + 1 / (2 * p)) ** 2, 1e-12)
+
 print("ok")

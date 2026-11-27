@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-26 · FIX · READER items closed (39) on fm.overview..fm.rectangles: roots, series, matrices, transform (elementary area proof), induction, rational, graphs, polar, vectors, vectors2, hyperbolic, diff (binomial links to p3.partial), integ, reduction, rectangles; checks files extended
+Last: 2026-11-27 · FIX · READER items closed (20) on fm.arclength..fm.projectiles: p defined and sec x integral and r dθ picture (arclength); modulo, 3θ range, tan 15°, mean value (complex); ω renamed k in waves, chord proof moved up (complex2); plane arrangements counts, edge-on reason, triple product defined (systems); complex eigenvalue note, recurrence hint (matrices2); slope field explained (de); m/c/λ and dot notation, polynomial clash rule (de2); perpendicular to plane, downward plane, clears wording (projectiles)
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
