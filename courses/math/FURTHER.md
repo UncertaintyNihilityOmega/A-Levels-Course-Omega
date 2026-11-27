@@ -153,7 +153,7 @@ Use only these URLs (or ones already in a 9709 chapter's links box). Kinds and t
 - practise: [FP1 practice papers](https://madasmaths.com/archive_iygb_practice_papers_fp1_practice_papers.html) · MadAsMaths · full UK-style papers [unofficial]
 - practise: [Roots of polynomials exam questions (Edexcel)](https://www.savemyexams.com/a-level/further-maths/edexcel/17/core-pure/topic-questions/further-algebra-and-functions/roots-of-polynomials/exam-questions/) · Save My Exams [paid]
 - practise: [Matrices](https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:matrices) · Khan Academy
-- practise: [Polar coordinates](https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:polar) · Khan Academy
+- practise: [Parametric equations, polar coordinates, and vector-valued functions](https://www.khanacademy.org/math/ap-calculus-bc/bc-advanced-functions-new) · Khan Academy · polar tangents and areas (the old precalculus polar unit is gone, 27 Nov 2026)
 - practise: [Linear algebra](https://www.khanacademy.org/math/linear-algebra) · Khan Academy
 - practise: [Differential equations](https://www.khanacademy.org/math/differential-equations) · Khan Academy
 - practise: [Significance tests, one sample](https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample) · Khan Academy

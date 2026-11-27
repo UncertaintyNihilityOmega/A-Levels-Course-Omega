@@ -159,3 +159,5 @@ so \(R\cos\alpha = 5\) and \(R\sin\alpha = 12\).
 The expression is greatest when the denominator is least: the greatest value is \(\dfrac11 = 1\). [A1]
 It is least when the denominator is greatest: the least value is \(\dfrac{1}{27}\). [A1]
 :::
+
+Next: [Mixed practice: Mechanics](#math.mixed.mech)

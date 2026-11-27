@@ -549,10 +549,10 @@ A: (a) \(A_1 = \tfrac12\int_0^{2\pi}a^2\theta^2\,d\theta\) [M1] \(= \dfrac{a^2}{
 - read: [Polar coordinates](https://tutorial.math.lamar.edu/Classes/CalcII/PolarCoordinates.aspx) · Paul's Online Notes · conversions and sketching standard curves
 - read: [Area with polar coordinates](https://tutorial.math.lamar.edu/Classes/CalcII/PolarArea.aspx) · Paul's Online Notes · areas of loops and between curves
 - watch: [Area bounded by a polar curve](https://www.examsolutions.net/tutorials/area-bounded-polar-curve/) · ExamSolutions · a worked area question
-- practise: [Polar coordinates](https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:polar) · Khan Academy · conversions and graphs
+- practise: [Parametric equations, polar coordinates, and vector-valued functions](https://www.khanacademy.org/math/ap-calculus-bc/bc-advanced-functions-new) · Khan Academy · polar coordinates, tangents and areas bounded by polar curves
 - explore: [Desmos graphing calculator](https://www.desmos.com/calculator) · Desmos · type r = 1 + cos(theta) and other polar equations
 - papers: [9231 Paper 1 past papers](https://www.physicsandmathstutor.com/a-level-maths-papers/cie-fp1/) · Physics & Maths Tutor · real Paper 1 questions with mark schemes [unofficial]
 
-Links checked 20 November 2026.
+Links checked 27 November 2026.
 :::
 Next: [Vectors: the vector product and planes](#math.fm.vectors) extends vectors to three dimensions with the vector product and the equation of a plane.

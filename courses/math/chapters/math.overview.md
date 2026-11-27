@@ -65,7 +65,7 @@ Paper 3 includes every topic of Paper 2 except the trapezium rule, so a student 
 | Exam preparation | [Your calculator](#math.calc); [Writing maths for marks](#math.exam.skills); paper guides for [Paper 1](#math.exam.p1), [Papers 2 and 3](#math.exam.p23), [Paper 4](#math.exam.p4), [Paper 5](#math.exam.p5) and [Paper 6](#math.exam.p6) |
 | Mixed practice | [Pure 1](#math.mixed.pure1); [Pure 2 and 3](#math.mixed.pure3); [Mechanics](#math.mixed.mech); [Statistics 1](#math.mixed.stats1); [Statistics 2](#math.mixed.stats2) |
 | Mock papers | [Pure 1](#math.mock.p1a); [Pure 2](#math.mock.p2a); [Pure 3](#math.mock.p3a); [Mechanics](#math.mock.p4a); [Statistics 1](#math.mock.p5a); [Statistics 2](#math.mock.p6a) |
-| After A Level | [Further Mathematics](#math.further) |
+| Further Mathematics (9231) | [A guided tour](#math.further); the full 9231 course (Further Pure 1 and 2, Further Mechanics, Further Probability and Statistics, paper guides, mixed practice and four mocks) starts at [Further Mathematics: the course map](#math.fm.overview) |
 
 The P2 and P3 chapters mark their Paper 3-only parts clearly. In integration, Paper 2 has only the standard integrals, such as \(e^{2x+1}\) and \(\sin 3x\), integrals that use a trigonometric identity, and the trapezium rule. Paper 3 adds differentiating \(\tan^{-1} x\), partial fractions, the binomial series for any rational power, integration by substitution and by parts, vectors, differential equations and complex numbers.
 
@@ -184,4 +184,4 @@ Start with the official syllabus and past papers; [The best resources by subject
 
 Links checked 3 October 2026.
 :::
-Next: start with [Numbers, fractions and percentages](#math.f.numbers), or go straight to [Quadratics](#math.p1.quadratics) if the foundations feel secure. If you love the subject, [Further Mathematics: a guided tour](#math.further) shows what comes after.
+Next: start with [Numbers, fractions and percentages](#math.f.numbers), or go straight to [Quadratics](#math.p1.quadratics) if the foundations feel secure. If you love the subject, [Further Mathematics: a guided tour](#math.further) shows what comes after, and [Further Mathematics: the course map](#math.fm.overview) starts the full 9231 course.

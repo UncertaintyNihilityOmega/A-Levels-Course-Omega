@@ -12,8 +12,8 @@ Real quantities are built from other quantities. The mass of a parcel is the mas
 **Before you start**, you need \(E(X)\) and \(\mathrm{Var}(X)\) from [Discrete random variables](#math.s1.drv), the normal distribution from [The normal distribution](#math.s1.normal) and the Poisson distribution from [The Poisson distribution](#math.s2.poisson).
 
 :::try Warm-up
-Q: \(X\) takes the values 1, 2, 4 with probabilities 0.5, 0.3, 0.2. Find \(E(X)\) and \(\mathrm{Var}(X)\). (from [Discrete random variables](#math.s1.drv))
-A: \(E(X) = 0.5 + 0.6 + 0.8\) \(= 1.9\). \(E(X^2) = 0.5 + 1.2 + 3.2\) \(= 4.9\). \(\mathrm{Var}(X) = 4.9 - 1.9^2 = 1.29\).
+Q: \(X\) takes the values 1, 2, 4 with probabilities 0.6, 0.1, 0.3. Find \(E(X)\) and \(\mathrm{Var}(X)\). (from [Discrete random variables](#math.s1.drv))
+A: \(E(X) = 0.6 + 0.2 + 1.2\) \(= 2\). \(E(X^2) = 0.6 + 0.4 + 4.8\) \(= 5.8\). \(\mathrm{Var}(X) = 5.8 - 2^2 = 1.8\).
 Q: \(X \sim N(30, 5^2)\). Find \(P(25 < X < 40)\). (from [The normal distribution](#math.s1.normal))
 A: \(z\) runs from \(-1\) to \(2\), so the probability is \(\Phi(2) - \Phi(-1)\) \(= 0.9772 - 0.1587 = 0.819\).
 Q: \(X \sim \mathrm{Po}(3.5)\). Find \(P(X \le 2)\). (from [The Poisson distribution](#math.s2.poisson))

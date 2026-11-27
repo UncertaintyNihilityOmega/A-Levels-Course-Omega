@@ -169,3 +169,5 @@ Then \(P\) slows: \(0 = \sqrt3 - 5t_2\), so \(t_2 = 0.3464\) s, and the total ti
 | 7 | 4 | Smooth slide and rough floor | [Work, energy and power](#math.m.energy) |
 | 8 | 8 | Rough inclined plane | [Newton's laws and connected particles](#math.m.newton) |
 | 9 | 11 | Connected particles, plane and pulley | [Newton's laws and connected particles](#math.m.newton) |
+
+Next: [Mock paper: Probability and Statistics 1 (A)](#math.mock.p5a)

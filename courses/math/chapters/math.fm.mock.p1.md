@@ -267,3 +267,5 @@ The cubic is negative for \(0 < x < 1\) and for \(x > 5\), and zero at \(x = 0\)
 | 5 | 13 | A polar loop, area, intersection with a circle | [Polar coordinates](#math.fm.polar) |
 | 6 | 16 | Plane, angle between planes, distance between skew lines | [Vectors: the vector product and planes](#math.fm.vectors) and [Vectors: intersections, angles and distances](#math.fm.vectors2) |
 | 7 | 15 | Oblique asymptote, turning points, \(y^2 = f(x)\), an inequality | [Rational functions and their graphs](#math.fm.rational) and [Graphs related to y = f(x)](#math.fm.graphs) |
+
+Next: [Mock Paper 2: Further Pure Mathematics 2](#math.fm.mock.p2)

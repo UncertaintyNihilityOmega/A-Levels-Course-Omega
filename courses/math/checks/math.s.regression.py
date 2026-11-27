@@ -58,7 +58,7 @@ eq("t10 a", sf(12 - (220 / 190) * 9, 3), 1.58); eq("t10 b3", sf(220 / 190, 3), 1
 # ---- P14 additions ----
 from math import sqrt as _s
 # warm-up
-eq("w1", 4 * 2 - 3, 5); eq("w2", 2516 - 140 ** 2 / 10, 556)
+eq("w1", 4 * 2 - 3, 5); eq("w2", 2100 - 150 ** 2 / 12, 225)
 # proof check: x = 1,2,3  y = 2,3,7
 _x = [1, 2, 3]; _y = [2, 3, 7]
 _sxy = sum(a * b for a, b in zip(_x, _y)) - sum(_x) * sum(_y) / 3; _sxx = sum(a * a for a in _x) - sum(_x) ** 2 / 3

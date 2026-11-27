@@ -435,7 +435,7 @@ Line 5: \(6.44 < 7.815\), so do not reject \(H_0\): there is insufficient eviden
 
 Lines 1 to 3 are correct and earn all five of their marks.
 
-**Line 4 uses the wrong \(\nu\).** The student forgot that \(p\) was estimated from the data, so there is a second degree of freedom to subtract. No mark is printed against \(\nu\) itself, but the conclusion mark is for a correct conclusion from correct working, so line 5 loses it. Line 5 still earns its method mark, because the student compared the statistic with the critical value they had found; only the accuracy mark (a correct conclusion) is lost. The student scores 6 out of 7.
+**Line 4 uses the wrong \(\nu\).** The student forgot that \(p\) was estimated from the data, so there is a second degree of freedom to subtract. No mark is printed against \(\nu\) itself, but the conclusion mark is for a correct conclusion from correct working, so line 5 loses it. Line 5 still earns its method mark here, but only because this slip (one degree of freedom too many) is so common that the real 9231 schemes name its critical value as an allowed comparison (June 2025 Paper 4 did); in general the comparison mark needs the correct critical value. Only the accuracy mark (a correct conclusion) is lost. The student scores 6 out of 7.
 
 Correct line 4: \(\nu = 4 - 1 - 1 = 2\), critical value 5.991.
 Correct line 5: \(6.44 > 5.991\), so reject \(H_0\): there is sufficient evidence, at the 5% level, that the number of seeds germinating does not follow a binomial distribution. [M1 A1] The wrong \(\nu\) reversed the conclusion.

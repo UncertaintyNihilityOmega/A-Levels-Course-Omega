@@ -239,8 +239,8 @@ Q: A 5 kg block is pulled across a rough horizontal floor by a horizontal force 
 A: \(30 - 10 = 5a\), so \(a = 4\ \mathrm{m\,s^{-2}}\). \(v = 4 \times 6 = 24\ \mathrm{m\,s^{-1}}\).
 Q: A woman of mass 60 kg stands in a lift that accelerates downwards at \(2\ \mathrm{m\,s^{-2}}\). Find the force between her and the floor. Take \(g = 10\).
 A: \(60 \times 10 - R = 60 \times 2\), so \(R = 600 - 120 = 480\) N.
-Q: A 4 kg particle is on a rough plane inclined at \(30^\circ\) to the horizontal with coefficient of friction 0.2. Find its acceleration when it slides down. Take \(g = 10\).
-A: \(R = 40\cos 30^\circ = 34.64\) N, \(F = 0.2 \times 34.64 = 6.93\) N. \(40\sin 30^\circ - 6.93 = 4a\), so \(20 - 6.93 = 4a\) and \(a = 3.27\ \mathrm{m\,s^{-2}}\).
+Q: A 4 kg particle is on a rough plane inclined at \(30^\circ\) to the horizontal with coefficient of friction 0.25. Find its acceleration when it slides down. Take \(g = 10\).
+A: \(R = 40\cos 30^\circ = 34.64\) N, \(F = 0.25 \times 34.64 = 8.66\) N. \(40\sin 30^\circ - 8.66 = 4a\), so \(20 - 8.66 = 4a\) and \(a = 2.83\ \mathrm{m\,s^{-2}}\).
 Q: Particles of mass 4 kg and 6 kg are joined by a light string over a smooth pulley and released from rest. Find the acceleration and the tension. Take \(g = 10\).
 A: \(60 - T = 6a\) and \(T - 40 = 4a\). Adding: \(20 = 10a\), so \(a = 2\ \mathrm{m\,s^{-2}}\). \(T = 40 + 8 = 48\) N.
 Q: A 5 kg block is on a smooth horizontal table and is joined by a light string over a smooth pulley at the edge to a 3 kg block hanging freely. Find the acceleration and the tension. Take \(g = 10\).
@@ -251,8 +251,8 @@ Q: Explain why the tension in a light string passing over a smooth pulley is the
 A: A light string has no mass, so the net force on any piece of it must be zero for it to have the acceleration it does. A smooth pulley exerts no friction along the string, so nothing changes the tension as the string passes over it.
 Q: (Exam style) Particles \(A\) (mass 6 kg) and \(B\) (mass 2 kg) are joined by a light string over a smooth pulley. \(A\) is held at rest 1.6 m above the floor, with both parts of the string vertical, and then released. (a) Find the acceleration of \(A\) and the tension in the string. (b) Find the speed with which \(A\) hits the floor. (c) Find the greatest height of \(B\) above its starting position. Take \(g = 10\). [9 marks]
 A: (a) \(A\): \(60 - T = 6a\). \(B\): \(T - 20 = 2a\). [M1 A1 A1] Adding: \(40 = 8a\), so \(a = 5\ \mathrm{m\,s^{-2}}\), and \(T = 20 + 10 = 30\) N. [A1] (b) \(v^2 = 2 \times 5 \times 1.6 = 16\), so \(v = 4\ \mathrm{m\,s^{-1}}\). [M1 A1] (c) After \(A\) lands the string is slack and \(B\) decelerates at 10: \(0 = 16 - 20s\), so \(s = 0.8\) m. [M1 A1] The greatest height above the start is \(1.6 + 0.8 = 2.4\) m. [A1]
-Q: (Exam style) A 4 kg block is on a rough horizontal floor. A string at \(\theta\) above the horizontal, with \(\sin\theta = \tfrac35\), pulls it with tension \(T\). The coefficient of friction is 0.3. Find the least \(T\) for which the block is about to move. Take \(g = 10\). [6 marks]
-A: Vertically: \(R = 40 - T\sin\theta = 40 - 0.6T\). [M1 A1] Limiting friction: \(F = 0.3R\). Horizontally: \(T\cos\theta = F\), so \(0.8T = 0.3(40 - 0.6T)\). [M1 A1] \(0.8T = 12 - 0.18T\), so \(0.98T = 12\) and \(T = 12.2\) N. [M1 A1]
+Q: (Exam style) A 4 kg block is on a rough horizontal floor. A string at \(\theta\) above the horizontal, with \(\sin\theta = \tfrac35\), pulls it with tension \(T\). The coefficient of friction is 0.4. Find the least \(T\) for which the block is about to move. Take \(g = 10\). [6 marks]
+A: Vertically: \(R = 40 - T\sin\theta = 40 - 0.6T\). [M1 A1] Limiting friction: \(F = 0.4R\). Horizontally: \(T\cos\theta = F\), so \(0.8T = 0.4(40 - 0.6T)\). [M1 A1] \(0.8T = 16 - 0.24T\), so \(1.04T = 16\) and \(T = 15.4\) N. [M1 A1]
 :::
 
 :::try Exam practice ★ to ★★★

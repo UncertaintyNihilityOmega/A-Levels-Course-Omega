@@ -254,7 +254,7 @@ Four phrases cost marks: "no evidence", "proves", a conclusion with no context a
 
 ## Reading the marks
 
-Mark schemes for 9231 use M1, A1, B1, DM1 and DB1 (marks that depend on an earlier starred mark), A1 FT and B1 FT (follow-through from your own earlier wrong value; in a test the comparison M1 is for "their" statistic against the correct critical value, and the final A1 is for a correct conclusion from correct working, so a wrong critical value usually costs both and is never followed through), and abbreviations such as SOI (seen or implied), AWRT (answer which rounds to), OE (or equivalent) and ISW (ignore subsequent working). Marks are awarded positively and are not deducted for errors, so write every line. A mark scheme may allow a conclusion in either of two forms, so use the one you are sure of.
+Mark schemes for 9231 use M1, A1, B1, DM1 and DB1 (marks that depend on an earlier starred mark), A1 FT and B1 FT (follow-through from your own earlier wrong value; in a test the comparison M1 is for "their" statistic against the correct critical value, and the final A1 is for a correct conclusion from correct working, so a wrong critical value usually costs both and is not followed through; a scheme sometimes names one common slip as allowed for the comparison mark, such as the critical value for the other tail or for one degree of freedom too many, but never just any value of your own), and abbreviations such as SOI (seen or implied), AWRT (answer which rounds to), OE (or equivalent) and ISW (ignore subsequent working). Marks are awarded positively and are not deducted for errors, so write every line. A mark scheme may allow a conclusion in either of two forms, so use the one you are sure of.
 
 ## How to practise
 

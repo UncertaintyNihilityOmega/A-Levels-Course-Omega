@@ -146,3 +146,5 @@ So the critical region is \(\bar X < 498.68\) (accept 498.7). [A1]
 | 7 | 6 | Unbiased estimates, confidence interval for a proportion | [Sampling and estimation](#math.s2.sampling) |
 | 8 | 5 | Hypothesis test for a Poisson mean | [Hypothesis testing](#math.s2.hypothesis) |
 | 9 | 10 | Test for a mean, critical region, Type II error | [Hypothesis testing](#math.s2.hypothesis) |
+
+Next: [Further Mathematics: the course map](#math.fm.overview) starts the Further Mathematics (9231) part of the course.

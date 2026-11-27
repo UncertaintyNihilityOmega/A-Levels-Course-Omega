@@ -38,7 +38,7 @@ eq("T2", sf(1 - P(1.5)), 0.0668); eq("T3 z", round(inv(.25), 4), -0.6745); eq("T
 eq("T4a", round(inv(.1), 4), -1.2816); eq("T4b", round(inv(.7), 4), 0.5244)
 eq("T5", sf(40 + 1.5 * 6), 49.0); eq("T5 p", sf(P(-1.5)), 0.0668)
 z1 = inv(.1); z2 = inv(.8); eq("T6 z2", round(z2, 4), 0.8416); s = 10 / (z2 - z1); eq("T6 sum", round(z2 - z1, 4), 2.1232); eq("T6 s", sf(s), 4.71); eq("T6 mu", sf(20 - z1 * s), 26.0)
-eq("T7 mu", 20, 50 * .4); eq("T7 var", 12, 50 * .4 * .6); eq("T7 z", round(4.5 / sqrt(12), 3), 1.299); eq("T7", sf(P(4.5 / sqrt(12))), 0.903)
+eq("T7 mu", 21, 60 * .35); eq("T7 var", 13.65, 60 * .35 * .65, 1e-9); eq("T7 sd", round(sqrt(13.65), 3), 3.695); eq("T7 z", round(4.5 / sqrt(13.65), 3), 1.218); eq("T7", sf(P(4.5 / sqrt(13.65))), 0.888)
 eq("T8 z", round(5.5 / sqrt(15), 3), 1.420); eq("T8", sf(1 - P(5.5 / sqrt(15))), 0.0778)
 z = inv(.85); eq("T9 z", round(z, 4), 1.0364); s = 8 / z; eq("T9 s", sf(s), 7.72); eq("T9 z2", round(-7 / 7.72, 3), -0.907); eq("T9 p", sf(P(-7 / s)), 0.182)
 # quiz

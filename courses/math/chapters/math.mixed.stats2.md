@@ -279,3 +279,5 @@ New Type II: \(P(X \le 5 \mid \lambda = 4) = 0.785\). [A1]
 
 (d) The probability of a Type I error has fallen (from 0.0527 to 0.0166) but the probability of a Type II error has risen (from 0.629 to 0.785): making the test stricter reduces one error and increases the other. [B1]
 :::
+
+Next: [Mock paper: Pure 1 (A)](#math.mock.p1a)

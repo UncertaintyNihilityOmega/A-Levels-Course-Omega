@@ -218,7 +218,7 @@ When a rod rests on a smooth peg or edge, or against a smooth surface, the react
   <text class="tl" x="176" y="41.9">B</text>
   <text class="tl" x="86" y="166" text-anchor="end">C</text>
   <text class="tl" x="124" y="125.5">G</text>
-</svg><figcaption>The rod \(AB\) rests with \(A\) on rough ground and touches the smooth peg \(C\) from below. The peg's reaction \(S\) is perpendicular to the rod, up and to the left. The ground gives \(R\) upwards and friction \(F\) to the right. The weight acts at the midpoint \(G\). Not to scale.</figcaption></figure>
+</svg><figcaption>The rod \(AB\) rests with \(A\) on rough ground and lies on the smooth peg \(C\), which touches the underside of the rod. The peg's reaction \(S\) is perpendicular to the rod, up and to the left. The ground gives \(R\) upwards and friction \(F\) to the right. The weight acts at the midpoint \(G\). Not to scale.</figcaption></figure>
 :::
 
 :::eg A uniform rod \(AB\) of length \(6\) m and weight \(100\) N rests with \(A\) on rough horizontal ground and touches a smooth horizontal peg \(C\), \(2\) m above the ground. The rod makes \(60^\circ\) with the horizontal. Find the least coefficient of friction between the rod and the ground for the rod to stay at rest.

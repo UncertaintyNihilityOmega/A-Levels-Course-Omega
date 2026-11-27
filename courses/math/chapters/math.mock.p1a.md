@@ -195,3 +195,5 @@ So \(V = \pi\big(72.9 - \tfrac{11}{30}\big) = \tfrac{1088}{15}\pi = 228\) (3 s.f
 | 9 | 9 | Arc, sector, segment | [Circular measure](#math.p1.circular) |
 | 10 | 10 | Optimisation | [Differentiation](#math.p1.diff) |
 | 11 | 11 | Area and volume | [Integration](#math.p1.integ) |
+
+Next: [Mock paper: Pure 2 (A)](#math.mock.p2a)

@@ -195,3 +195,5 @@ The iterates have settled at 2.33 to 3 s.f., so the root is 2.33. [A1]
 | 9 | 8 | Lines in three dimensions | [Vectors](#math.p3.vectors) |
 | 10 | 12 | Partial fractions, expansion, integration | [Partial fractions and the binomial series](#math.p3.partial) |
 | 11 | 11 | \(\tan^{-1}x\), root-finding, \(\dfrac{1}{x^2 + a^2}\) | [Numerical solution of equations](#math.p3.numerical) and [Further differentiation](#math.p3.diff) |
+
+Next: [Mock paper: Mechanics (A)](#math.mock.p4a)

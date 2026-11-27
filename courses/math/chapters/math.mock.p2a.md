@@ -138,3 +138,5 @@ So the area is \(-\big(-32 + \tfrac{15}{2}\big) = \tfrac{49}{2}\). [A1]
 | 7 | 5 | Trapezium rule | [Further integration](#math.p3.integ) |
 | 8 | 8 | Locating a root, iteration | [Numerical solution of equations](#math.p3.numerical) |
 | 9 | 11 | Exponential curve: stationary point, area | [Further differentiation](#math.p3.diff) and [Further integration](#math.p3.integ) |
+
+Next: [Mock paper: Pure 3 (A)](#math.mock.p3a)

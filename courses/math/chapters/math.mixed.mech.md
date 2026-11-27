@@ -228,3 +228,5 @@ During deceleration the acceleration is \(-2\): \(R - 700 = 70(-2)\), so \(R = 5
 \[ \tfrac12(4)(4) + 4 \times 8 + \tfrac12(4)(2) = 8 + 32 + 4 = 44\ \text{m} \]
 [A1]
 :::
+
+Next: [Mixed practice: Statistics 1](#math.mixed.stats1)

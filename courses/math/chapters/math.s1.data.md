@@ -26,8 +26,8 @@ Q: A class of 40 students has 7 left-handed students. What percentage is that? (
 A: \(\dfrac{7}{40} = 0.175\), so \(17.5\%\).
 Q: Rearrange \(\bar x = \dfrac{\sum x}{n}\) to find \(\sum x\) when \(\bar x = 12.5\) and \(n = 8\). (from [Algebra from scratch](#math.f.algebra))
 A: Multiply both sides by \(n\): \(\sum x = n\bar x = 8 \times 12.5 = 100\).
-Q: Find the gradient of the straight line through \((10, 12)\) and \((20, 42)\). (from [Graphs from scratch](#math.f.graphs))
-A: \(\dfrac{42 - 12}{20 - 10} = 3\). You will use this idea to read a median from a cumulative frequency graph.
+Q: Find the gradient of the straight line through \((5, 14)\) and \((25, 54)\). (from [Graphs from scratch](#math.f.graphs))
+A: \(\dfrac{54 - 14}{25 - 5} = 2\). You will use this idea to read a median from a cumulative frequency graph.
 :::
 
 ## Types of data and choosing a diagram

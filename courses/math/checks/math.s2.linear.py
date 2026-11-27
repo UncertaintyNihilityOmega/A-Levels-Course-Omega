@@ -63,9 +63,9 @@ from math import comb
 def po(l, r): return exp(-l) * l ** r / factorial(r)
 def cdf(l, r): return sum(po(l, k) for k in range(r + 1))
 # warm-up
-w = {1: 0.5, 2: 0.3, 4: 0.2}
+w = {1: 0.6, 2: 0.1, 4: 0.3}
 m = sum(k * q for k, q in w.items()); m2 = sum(k * k * q for k, q in w.items())
-eq("w1 E", m, 1.9); eq("w1 E2", m2, 4.9); eq("w1 Var", m2 - m * m, 1.29)
+eq("w1 E", m, 2); eq("w1 E2", m2, 5.8); eq("w1 Var", m2 - m * m, 1.8)
 eq("w2", sf(Phi(2) - Phi(-1)), 0.819); eq("w3 coef", 1 + 3.5 + 3.5 ** 2 / 2, 10.625); eq("w3", sf(cdf(3.5, 2)), 0.321)
 # proofs: aX+b and variance formula on the table 1,2,3 / 0.2,0.5,0.3
 eq("proof 3X-2 values", sum((3 * k - 2) * q for k, q in p.items()), 4.3)

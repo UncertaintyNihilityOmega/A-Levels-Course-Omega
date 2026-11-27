@@ -14,8 +14,8 @@ Does more revision mean higher marks? Do hotter days use less gas? Many real que
 :::try Warm-up
 Q: Find the equation of the line through \((2, 3)\) with gradient 4. (from [Coordinate geometry](#math.p1.coord))
 A: \(y - 3 = 4(x - 2)\), so \(y = 4x - 5\).
-Q: A data set has \(n = 10\), \(\sum x = 140\) and \(\sum x^2 = 2516\). Find \(\sum x^2 - \dfrac{(\sum x)^2}{n}\). (from [Representing and summarising data](#math.s1.data))
-A: \(2516 - \dfrac{140^2}{10}\) \(= 2516 - 1960 = 556\). This is \(n\) times the variance of the \(x\) values.
+Q: A data set has \(n = 12\), \(\sum x = 150\) and \(\sum x^2 = 2100\). Find \(\sum x^2 - \dfrac{(\sum x)^2}{n}\). (from [Representing and summarising data](#math.s1.data))
+A: \(2100 - \dfrac{150^2}{12}\) \(= 2100 - 1875 = 225\). This is \(n\) times the variance of the \(x\) values.
 Q: A test of \(H_0: p = 0.4\) against \(H_1: p < 0.4\) gives a probability of 0.031. Write the conclusion at the 5% significance level. (from [Hypothesis testing](#math.s2.hypothesis))
 A: \(0.031 < 0.05\), so reject \(H_0\). There is sufficient evidence at the 5% level to suggest that \(p\) is less than 0.4, where \(p\) is stated in context.
 :::

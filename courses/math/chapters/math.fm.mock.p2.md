@@ -258,3 +258,5 @@ So \(a = -\tfrac12\), \(b = 1\), \(c = \tfrac12\). [A1]
 | 6 | 10 | Second order differential equation with initial conditions | [Second order differential equations](#math.fm.de2) |
 | 7 | 10 | Roots of unity, exact values of \(\cos\tfrac25\pi\) | [Roots of unity and complex series](#math.fm.complex2) (and [De Moivre's theorem and trigonometry](#math.fm.complex)) |
 | 8 | 14 | Eigenvalues, diagonalisation, Cayley–Hamilton | [Eigenvalues and eigenvectors](#math.fm.matrices2) |
+
+Next: [Mock Paper 3: Further Mechanics](#math.fm.mock.p3)

@@ -197,3 +197,5 @@ With a continuity correction: [M1]
 | 7 | 5 | Geometric distribution | [Discrete random variables: binomial and geometric](#math.s1.drv) |
 | 8 | 7 | Counting probability, distribution of a count | [Probability](#math.s1.prob) and [Discrete random variables: binomial and geometric](#math.s1.drv) |
 | 9 | 10 | Normal, binomial and the normal approximation | [The normal distribution](#math.s1.normal) |
+
+Next: [Mock paper: Probability and Statistics 2 (A)](#math.mock.p6a)

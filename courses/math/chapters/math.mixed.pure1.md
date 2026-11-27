@@ -146,3 +146,5 @@ A: Use \(\cos^2x = 1 - \sin^2x\): \(6 - 6\sin^2x + \sin x - 5 = 0\). [M1]
 \(\sin x = \tfrac12\) gives \(x = 30^\circ\) or \(150^\circ\). [A1]
 \(\sin x = -\tfrac13\): the reference angle is \(19.5^\circ\), and \(\sin x\) is negative in the third and fourth quadrants, so \(x = 180^\circ + 19.5^\circ = 199.5^\circ\) [A1] or \(360^\circ - 19.5^\circ = 340.5^\circ\). [A1]
 :::
+
+Next: [Mixed practice: Pure 2 and 3](#math.mixed.pure3)

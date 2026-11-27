@@ -1,6 +1,6 @@
 # STATUS: Mathematics
 
-Last: 2026-11-27 · FIX · READER items closed (18) on fm.exam.*, fm.mixed.*; rigid peg label: 100 N moved right of the weight arrow (x 120 to 128)
+Last: 2026-11-27 · REVIEW FINAL · Further Maths extension: 112 chapters pass check and phone with no notes, preview 0 errors; 14 READER FIX items recomputed and correct; fixed chisq/exam.fs critical-value M1 rule (per 9231/41 schemes), Next chain (math.further loop, Next lines on mixed and mocks), overview and further now link math.fm.overview, dead Khan polar link, rigid peg caption, 10 try-number notes in 9709 chapters; mocks match FACTS.md; 0 open items
 
 ## Steps
 The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them by hand.
@@ -42,4 +42,4 @@ The kit writes these lines (`node kit/zta.js claim` and `done`). Never edit them
 - P35: reviewed 2026-11-26
 - P36: reviewed 2026-11-26
 - READER: done 2026-11-27
-- FINAL: open
+- FINAL: done 2026-11-27

@@ -243,8 +243,8 @@ Q: \(X \sim N(\mu, 6^2)\) and \(P(X < 40) = 0.0668\). Find \(\mu\).
 A: \(z = -1.5\), so \(\dfrac{40 - \mu}{6} = -1.5\) and \(\mu = 49.0\).
 Q: \(X \sim N(\mu, \sigma^2)\) with \(P(X < 20) = 0.1\) and \(P(X > 30) = 0.2\). Find \(\mu\) and \(\sigma\).
 A: \(\dfrac{20 - \mu}{\sigma} = -1.2816\) and \(\dfrac{30 - \mu}{\sigma} = 0.8416\). Subtract: \(\dfrac{10}{\sigma} = 2.1232\), so \(\sigma = 4.71\) and \(\mu = 20 + 1.2816\times 4.71 = 26.0\).
-Q: \(X \sim B(50, 0.4)\). Use a normal approximation to find \(P(X \le 24)\).
-A: \(np = 20\), \(npq = 12\), so \(Y \sim N(20, 12)\). \(P(Y < 24.5)\): \(z = \dfrac{4.5}{3.464} = 1.299\), so \(P = 0.903\).
+Q: \(X \sim B(60, 0.35)\). Use a normal approximation to find \(P(X \le 25)\).
+A: \(np = 21\), \(npq = 13.65\), so \(Y \sim N(21, 13.65)\). \(P(Y < 25.5)\): \(z = \dfrac{4.5}{3.695} = 1.218\), so \(P = 0.888\).
 Q: \(X \sim B(60, 0.5)\). Use a normal approximation to find \(P(X > 35)\).
 A: \(Y \sim N(30, 15)\). \(P(Y > 35.5)\): \(z = \dfrac{5.5}{3.873} = 1.420\), so \(P = 1 - \Phi(1.420) = 0.0778\).
 Q: (Exam style) Heights of adult men in a town are normally distributed with mean 172 cm. 15% of men are taller than 180 cm. Find the standard deviation, and then the proportion of men shorter than 165 cm. [6 marks]

@@ -287,3 +287,5 @@ A: (a) There are \(\binom{10}{3} = 120\) equally likely selections: [M1]
 \[ P(Y = 2) = \binom82(0.3)^2(0.7)^6 \]
 [M1] \(= 0.296\). [A1]
 :::
+
+Next: [Mixed practice: Statistics 2](#math.mixed.stats2)

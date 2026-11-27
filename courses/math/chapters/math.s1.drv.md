@@ -246,8 +246,8 @@ Correct working: \(P(X \ge 3) = 1 - P(X \le 2)\) [M1] \(= 1 - 0.3907 = 0.609\). 
 :::try Start easy, finish at exam standard
 Q: \(P(X = x) = k(5 - x)\) for \(x = 1, 2, 3, 4\). Find \(k\), \(E(X)\) and \(\mathrm{Var}(X)\).
 A: \(k(4 + 3 + 2 + 1) = 1\), so \(k = 0.1\) and the probabilities are 0.4, 0.3, 0.2, 0.1. \(E(X) = 0.4 + 0.6 + 0.6 + 0.4 = 2\). \(E(X^2) = 0.4 + 1.2 + 1.8 + 1.6 = 5\). \(\mathrm{Var}(X) = 5 - 4 = 1\).
-Q: \(X\) takes the values 2, 4, 6, 8 with probabilities 0.1, 0.4, 0.3, 0.2. Find \(E(X)\) and the standard deviation.
-A: \(E(X) = 0.2 + 1.6 + 1.8 + 1.6 = 5.2\). \(E(X^2) = 0.4 + 6.4 + 10.8 + 12.8\) \(= 30.4\). \(\mathrm{Var}(X) = 30.4 - 27.04 = 3.36\); standard deviation \(1.83\).
+Q: \(X\) takes the values 2, 4, 6, 8 with probabilities 0.05, 0.45, 0.35, 0.15. Find \(E(X)\) and the standard deviation.
+A: \(E(X) = 0.1 + 1.8 + 2.1 + 1.2 = 5.2\). \(E(X^2) = 0.2 + 7.2 + 12.6 + 9.6\) \(= 29.6\). \(\mathrm{Var}(X) = 29.6 - 27.04 = 2.56\); standard deviation \(1.6\).
 Q: \(X \sim B(6, 0.5)\). Find \(P(X = 2)\) and \(P(X \ge 5)\).
 A: \(P(X = 2) = \dfrac{15}{64} = 0.234\). \(P(X \ge 5) = \dfrac{6 + 1}{64} = 0.109\).
 Q: \(X \sim B(15, 0.4)\). Find \(P(X \le 6)\), \(P(X = 6)\), the mean and the variance.
@@ -265,8 +265,8 @@ A: \(X \sim B(12, 0.25)\). [B1] \(P(X = 4)\) \(= \dbinom{12}{4}(0.25)^4(0.75)^8\
 :::
 
 :::try Exam practice ★ to ★★★
-Q: [4 marks] ★ The random variable \(X\) takes the values 1, 2, 3, 4 with probabilities 0.2, 0.4, \(k\) and 0.1. (a) Find \(k\). (b) Find \(E(X)\).
-A: (a) The probabilities sum to 1: \(0.2 + 0.4 + k + 0.1 = 1\). [M1] So \(k = 0.3\). [A1] (b) \(E(X)\) \(= 1(0.2) + 2(0.4) + 3(0.3) + 4(0.1)\) [M1] \(= 0.2 + 0.8 + 0.9 + 0.4 = 2.3\). [A1]
+Q: [4 marks] ★ The random variable \(X\) takes the values 1, 2, 3, 4 with probabilities 0.15, 0.35, \(k\) and 0.25. (a) Find \(k\). (b) Find \(E(X)\).
+A: (a) The probabilities sum to 1: \(0.15 + 0.35 + k + 0.25 = 1\). [M1] So \(k = 0.25\). [A1] (b) \(E(X)\) \(= 1(0.15) + 2(0.35) + 3(0.25) + 4(0.25)\) [M1] \(= 0.15 + 0.7 + 0.75 + 1 = 2.6\). [A1]
 Q: [4 marks] ★ \(X \sim B(8, 0.4)\). Find \(P(X = 3)\), \(E(X)\) and \(\mathrm{Var}(X)\).
 A: \(P(X = 3) = \dbinom83(0.4)^3(0.6)^5\) [M1] \(= 56 \times 0.064 \times 0.07776\) \(= 0.279\). [A1] \(E(X) = 8 \times 0.4 = 3.2\). [B1] \(\mathrm{Var}(X)\) \(= 8 \times 0.4 \times 0.6 = 1.92\). [B1]
 Q: [4 marks] ★ \(X \sim \mathrm{Geo}(0.15)\). Find \(P(X = 4)\), \(P(X > 6)\) and \(E(X)\).

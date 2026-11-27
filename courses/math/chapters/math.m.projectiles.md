@@ -229,8 +229,8 @@ Q: A projectile has speed \(20\ \mathrm{m\,s^{-1}}\). Find the greatest possible
 A: \(R = \dfrac{u^2\sin 2\alpha}{g}\) is greatest when \(\sin 2\alpha = 1\): \(R = \dfrac{400}{10} = 40\) m at \(\alpha = 45^\circ\).
 Q: A ball is projected at \(20\ \mathrm{m\,s^{-1}}\) at \(45^\circ\) from the ground. Use the trajectory \(y = x - \dfrac{x^2}{40}\) to find its height when \(x = 30\) m.
 A: \(y = 30 - \dfrac{900}{40} = 30 - 22.5 = 7.5\) m.
-Q: A projectile is launched at \(20\ \mathrm{m\,s^{-1}}\) and lands on level ground 30 m away. Find the two possible angles of projection. Take \(g = 10\).
-A: \(30 = \dfrac{400\sin 2\alpha}{10}\), so \(\sin 2\alpha = 0.75\). \(2\alpha = 48.6^\circ\) or \(131.4^\circ\), so \(\alpha = 24.3^\circ\) or \(65.7^\circ\).
+Q: A projectile is launched at \(25\ \mathrm{m\,s^{-1}}\) and lands on level ground 40 m away. Find the two possible angles of projection. Take \(g = 10\).
+A: \(40 = \dfrac{625\sin 2\alpha}{10}\), so \(\sin 2\alpha = 0.64\). \(2\alpha = 39.8^\circ\) or \(140.2^\circ\), so \(\alpha = 19.9^\circ\) or \(70.1^\circ\).
 Q: A child of mass 25 kg sits 1.8 m from the pivot of a balanced see-saw. Where must a child of mass 30 kg sit on the other side? Take \(g = 10\).
 A: \(250 \times 1.8 = 300 \times d\), so \(d = 1.5\) m.
 Q: A uniform rod of length 3 m and mass 4 kg is hinged at one end \(A\) and held horizontal by a vertical string at a point \(C\), 2 m from \(A\). Find the tension in the string and the vertical force at the hinge. Take \(g = 10\).

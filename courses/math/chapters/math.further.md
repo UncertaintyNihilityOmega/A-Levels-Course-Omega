@@ -36,6 +36,8 @@ The AS Further Mathematics qualification is **Paper 1 plus Paper 3, or Paper 1 p
 - **Further Pure** (Papers 1 and 2) covers the topics in this tour. They continue the algebra, calculus and complex numbers of 9709 Pure at a more abstract level.
 - **Further Mechanics** and **Further Probability & Statistics** extend the ideas in [Mechanics](#math.m.forces) and [Probability and statistics](#math.s1.data).
 
+This tour is a taste. The whole of 9231, all four papers with paper guides, mixed practice and four mock papers, is taught later in this course, after the 9709 exam preparation: it starts at [Further Mathematics: the course map](#math.fm.overview).
+
 :::tip Who should take Further Mathematics?
 Take it if you enjoy proving things and solving problems that have no template, if you are strong in A Level Mathematics, and if your target degree (or your ambition) is in a mathematical subject. It adds a heavy workload, so check with your school how it is timetabled and how it is combined with your other subjects.
 :::
@@ -362,4 +364,4 @@ A: \(A = \tfrac12\int_0^{\pi/2}\sin^2 2\theta\,d\theta\). [M1] Since \(\sin^2 2\
 
 Links checked 3 October 2026.
 :::
-Next: [Mathematics: the course map](#math.overview) to plan your path.
+Next: [Your calculator: exam skills](#math.calc) starts the exam preparation for 9709; the full Further Mathematics course follows it, from [Further Mathematics: the course map](#math.fm.overview).
